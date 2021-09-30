@@ -1,15 +1,15 @@
 ---
-user-guide-title: Operatives Playbook für Commerce
+user-guide-title: Operatives Playbook
 user-guide-description: Erfahren Sie, wie Sie Ihre Unternehmen betriebsbereit für die Ausführung einer erfolgreichen E-Commerce-Site machen.
-source-git-commit: 6eeb6547d06d416c50fcf97cb07cbc94729ebcd0
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 
-# Operatives Playbook für Commerce {#operational-playbook}
+# Operatives Playbook {#operational-playbook}
 
 - [Übersicht](overview.md)
 - Commerce {#intro}

@@ -1,7 +1,7 @@
 ---
-title: Operationelles Playbook
+title: Operatives Playbook
 description: Ziel des Operationellen Handelsbuchs
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%

@@ -1,0 +1,54 @@
+---
+title: Übersicht über die Cloud-Infrastruktur
+description: Erfahren Sie mehr über Adobe Commerce in der Cloud-Infrastruktur.
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
+
+---
+
+
+# Übersicht
+
+Eine der beliebtesten verwalteten Hosting-Optionen für Adobe Commerce auf AWS wird von Adobe Commerce selbst angeboten. Adobe Commerce in Cloud-Infrastruktur ist eine vollständig verwaltete automatisierte Hosting-Plattform für die Adobe Commerce-Software.
+
+Adobe Commerce in Cloud-Infrastruktur ist ein plattformunabhängiges Service-Angebot, das eine schnelle Bereitstellung vollständig anpassbarer, sicherer und skalierbarer Web-Storefronts sowie einer führenden Hosting- und Managed Services-Infrastruktur ermöglicht. Es bietet zwei Pläne mit unterschiedlichen Infrastrukturen. Adobe Commerce Starter eignet sich am besten für kleinere Geschäfte mit weniger Komplexität und kleineren Katalogen. Adobe Commerce Pro ist für größere Geschäfte mit größerer Komplexität, größeren Produktkatalogen oder Traffic mit Spitzen konzipiert. Adobe Commerce ermittelt die geeignete Architektur mit den Inputs von Partnern.
+
+Adobe Commerce ist Cloud-fähig mit einer vollständig redundanten Multi-Cloud-Hosting-Infrastruktur, die eine optimierte Leistung, Ausfallsicherheit und elastische Skalierbarkeit bietet. Sie können Ihre Commerce-Plattform effizient im Content Delivery Network (CDN) von Fastly ausführen. Mit New Relic für Überwachung und Verwaltung können Sie Ihre Store-Umgebung reibungslos laufen lassen.
+
+Adobe Commerce bietet alle Vorteile des modernen Cloud-Computing, das am häufigsten mit SaaS-Lösungen in Verbindung gebracht wird: Elastische Skalierbarkeit, hohe Ausfallsicherheit und Verfügbarkeit, PCI-Compliance, globale Verfügbarkeit und automatisiertes Patchen bei gleichzeitiger Beibehaltung der Flexibilität bei der Softwareanpassung, die unsere Händler benötigen.
+
+![Abbildung architektonischer Elemente von Adobe Commerce in Cloud-Infrastruktur](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
+
+## Vorteile
+
+Weitere Vorteile von Adobe Commerce sind:
+
+- **Optimiert für Adobe Commerce**. Adobe Commerce-entwickelte Build-Skripte und Dienstkonfigurationen stellen sicher, dass jede Instanz korrekt abgestimmt und für eine optimale Händlerleistung konfiguriert ist.
+
+- **Konsistente, sichere Versionen**. Alle Code-Bereitstellungen sind Git-basiert für Konsistenz und Wiederholbarkeit mit schreibgeschützten Produktionsumgebungen für strengere Sicherheit.
+
+- **Flexibilität für Partner**. Eine vollständige REST-API und eine skriptfähige Befehlszeilenschnittstelle sorgen für eine einfache Integration in externe Systeme und Kompatibilität mit vorhandenen Code-Management-Workflows.
+
+- **Flexible Bereitstellungswerkzeuge**. Sie können unbegrenzte Umgebungen nach Belieben für Entwicklungsaufgaben, QA-Tests oder Produktionsdiagnosen schnell aufspalten, zusammenführen, klonen und zerreißen.
+
+- **Kontinuierliche Cloud-Bereitstellung**. Mit Konfidenz von der Entwicklung zur UAT zur Produktion wechseln, kontinuierlich über Codezweige und Entwicklungsteams hinweg.
+
+## Dienstleistungen von Drittanbietern
+
+Sehen wir uns auch die Software an, die die Vorteile von Adobe Commerce Wirklichkeit werden lässt.
+
+![Abbildung des Adobe Commerce auf dem Cloud-Infrastruktur-Technologiestapel](../../../assets/playbooks/cloud-tech-stack.svg)
+
+- Fastly CDN: Wenn Kunden auf Ihre Site und Ihre Stores zugreifen, drücken Sie schnell die Anforderungen, um zwischengespeicherte Seiten schneller zu laden. Fastly WAF bietet auch einen DDoS-Schutz.
+
+- New Relic gibt Ihnen einen vollständigen Überblick über Ihre Anwendungen und Betriebsumgebungen. Sie können damit Schlüsselmetriken aus mobilen und Browser-Anwendungen mit unterstützenden Diensten, Datenspeichern und Hosts kombinieren, damit Sie die Leistung ganzheitlich optimieren und den Erfolg jeder Initiative sicherstellen können.
+
+- Der Composer verwaltet Abhängigkeiten und Upgrades in Adobe Commerce und bietet Kontext zu den enthaltenen Packages, was die Pakete tun und wie sie zusammenpassen.
+
+- Git ist Ihr Code in Repositorys. Es ermöglicht lokales Verzweigen, bequeme Staging-Bereiche und mehrere Workflows mit automatischem Erstellen und Bereitstellen für eine effiziente schnelle Entwicklung und kontinuierliche Bereitstellung.
+
+- Platform-as-a-Service (PaaS) bietet eine vorkonfigurierte Infrastruktur, die PHP-, MySQL-, Redis-, RabbitMQ- und Elasticsearch-Technologien umfasst.
+
+- Das Cloud-Hosting von AWS oder Azure basiert auf Infrastruktur-as-a-Service (IAAs), das eine skalierbare und sichere Umgebung für Online-Verkäufe und -Einzelhandel bietet.
