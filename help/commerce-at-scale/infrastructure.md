@@ -1,7 +1,7 @@
 ---
 title: Ausrichtung von Adobe Commerce und Adobe Experience Manager-Infrastruktur
 description: Stellen Sie in Ihrer Adobe Commerce- und Adobe Experience Manager-Infrastruktur akzeptable Timeouts und Verbindungsgrenzen ein.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
@@ -25,11 +25,11 @@ Wenn es in der Infrastruktur einen AWS-Anwendungs-Lastenausgleich und mehrere Di
 
 1. Die Konsistenzprüfungen des Herausgebers sollten überprüft werden, um zu verhindern, dass Dispatcher unnötig früh aus dem Dienst aussteigen. Die Timeout-Einstellungen der Konsistenzprüfung des Lastenausgleichs sollten mit den Timeout-Einstellungen des Herausgebers übereinstimmen.
 
-   ![Screenshot mit Konsistenzprüfungen AEM Lastenausgleichs](../assets/commerce-at-scale/health-checks.svg)
+   ![Screenshot mit Konsistenzprüfungen AEM Lastenausgleichs](../assets/commerce-at-scale/health-checks.png)
 
 1. Die Treue der Dispatcher-Zielgruppe kann deaktiviert werden und der Round Robin-Lastenausgleich-Algorithmus kann verwendet werden. Dies setzt voraus, dass keine AEM spezifischen Funktionen oder AEM Benutzersitzungen verwendet werden, für die die Sitzungsstickigkeit festgelegt werden muss. Es wird davon ausgegangen, dass die Benutzeranmeldung und Sitzungsverwaltung nur über GraphQL in Adobe Commerce erfolgt.
 
-   ![Screenshot mit AEM Sitzungs-Stickiness-Attributen](../assets/commerce-at-scale/session-stickiness.svg)
+   ![Screenshot mit AEM Sitzungs-Stickiness-Attributen](../assets/commerce-at-scale/session-stickiness.png)
 
 1. Beachten Sie bitte, wenn Sie die Sitzungsstickigkeit aktivieren, dies kann dazu führen, dass Anforderungen an Schnell nicht zwischengespeichert werden, da standardmäßig keine Seiten mit dem Set-Cookies-Header zwischengespeichert werden. Adobe Commerce setzt Cookies auch auf zwischenspeicherbaren Seiten (TTL > 0), aber der standardmäßige Fastly VCL entfernt diese Cookies auf zwischenspeicherbaren Seiten, damit das schnelle Zwischenspeichern funktioniert. Wenn die Seiten nicht zwischengespeichert werden, überprüfen Sie die möglicherweise von Ihnen verwendeten benutzerdefinierten Cookies, laden Sie auch den Fastly VCL hoch und überprüfen Sie erneut die Site.
 
@@ -49,8 +49,8 @@ Der Wert für HTTP-Verbindungs-Timeout und HTTP-Socket-Timeout sollte auf einen 
 
 Die folgende Abbildung zeigt das Magento CIF GraphQL Client Configuration Factory. Die hier gezeigten Einstellungen sind nur Beispiele und müssen von Fall zu Fall angepasst werden:
 
-![Screenshot der Konfigurationseinstellungen des Commerce-Integrations-Frameworks](../assets/commerce-at-scale/cif-config.svg)
+![Screenshot der Konfigurationseinstellungen des Commerce-Integrations-Frameworks](../assets/commerce-at-scale/cif-config.png)
 
 Die folgenden Abbildungen zeigen die Fastly-Backend-Konfigurationen. Die hier gezeigten Einstellungen sind nur Beispiele und müssen von Fall zu Fall angepasst werden:
 
-![Screenshot der Commerce Admin-Konfigurationseinstellungen für Fastly](../assets/commerce-at-scale/cif-config-advanced.svg)
+![Screenshot der Commerce Admin-Konfigurationseinstellungen für Fastly](../assets/commerce-at-scale/cif-config-advanced.png)

@@ -1,7 +1,7 @@
 ---
-title: Vorbereiten auf Launch
+title: Tipps zum Leistungstest
 description: Erfahren Sie, wie Sie KPIs für den Start Ihrer Adobe Commerce- und Adobe Experience Manager-Lösung festlegen.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Starten vorbereiten
+# Tipps zu Leistungstests
 
 Um die Effektivität aller oben genannten Änderungen zu bewerten, sollten vor der Live-Schaltung und vor künftigen umfangreichen Bereitstellungen in Ihren Produktionsumgebungen gründliche Leistungstests durchgeführt werden. Bei der Planung Ihrer Belastungstests ist es wichtig, den realen Traffic von Verbrauchern so weit wie möglich zu simulieren.
 

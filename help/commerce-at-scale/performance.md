@@ -1,9 +1,9 @@
 ---
-title: Leistungsoptimierung
+title: AEM Leistungsoptimierung
 description: Optimieren Sie Ihre standardmäßige Adobe Experience Manager-Konfiguration, um eine hohe Belastung von Adobe Commerce zu unterstützen.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '2252'
+source-wordcount: '2253'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Jede Ordnerebene hätte eine &quot;stat-Ebene&quot;- wie in der obigen Tabelle a
 
 | Inhalt (Basisverzeichnis) | E-Commerce | us | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 1 | 2 | 1 | 4 | - |
+| 0 | 3 | 2 | 3 | 4 | - |
 
 Wenn Sie in diesem Fall die statfilelevel-Eigenschaft auf den Standardwert &quot;0&quot;gesetzt hatten und die Vorlage &quot;product-page.html&quot;aktualisiert und aktiviert wurde, wodurch eine Invalidierung ausgelöst wird, wird jede STAT-Datei vom Basisverzeichnis auf Ebene 4 berührt und Dateien werden invalidiert, wodurch eine weitere Anfrage von den AEM Veröffentlichungsinstanzen für alle Seiten der Site (einschließlich anderer Websites, Länder und Sprachen) von dieser Änderung verursacht wird.
 
