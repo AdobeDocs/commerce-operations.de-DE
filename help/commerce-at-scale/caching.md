@@ -1,9 +1,9 @@
 ---
 title: Effektive Cacheplanung
 description: Informationen zum erfolgreichen Laden Ihrer Site finden Sie unter den empfohlenen Benchmarks für die Zwischenspeicherung .
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 41c0ba17b3d731a82ad6ecd8b16fac151a597e75
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Planen effektiver Zwischenspeicherung für E-Commerce-Erfolg unter Last
 
-Die Bereitstellung eines Verkaufserlebnisses unter Last erfordert eine zuvor geplante Cachestrategie. Während die Anfrage von geschäftlichen Stakeholdern zunächst darin bestehen kann, Kunden immer Echtzeit-Produktdaten zu präsentieren, ist dies keine optimale Nutzung von Systemressourcen, und die Auswirkungen der Site-Performance von Endbenutzern würden die Vorteile einer konsistenten Anzeige von Echtzeitinformationen deutlich überwiegen.
+Die Bereitstellung eines Einkaufserlebnisses beim Laden erfordert eine gut geplante Cachestrategie. Während die Anfrage von geschäftlichen Stakeholdern zunächst darin bestehen kann, Kunden immer Echtzeit-Produktdaten zu präsentieren, ist dies keine optimale Nutzung von Systemressourcen, und die Auswirkungen der Site-Performance von Endbenutzern würden die Vorteile einer konsistenten Anzeige von Echtzeitinformationen deutlich überwiegen.
 
 Der erste Schritt bei der Cachestrategie sollte daher darin bestehen, mit den relevanten Interessenträgern eine Matrix zulässiger Zwischenspeicherzeiten für die verschiedenen Bereiche der Site zu definieren, z. B.:
 
