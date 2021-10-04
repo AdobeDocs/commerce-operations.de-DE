@@ -1,13 +1,13 @@
 ---
 title: Tipps zum Leistungstest
 description: Erfahren Sie, wie Sie KPIs für den Start Ihrer Adobe Commerce- und Adobe Experience Manager-Lösung festlegen.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: 4b0d9c4f-e611-452d-a80f-27f82705935d
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Tipps zu Leistungstests
 

@@ -1,10 +1,9 @@
 ---
 user-guide-title: Bereitstellung von Commerce-Erlebnissen im Maßstab
 user-guide-description: Erfahren Sie, wie Sie mit Adobe Commerce mit Adobe Experience Manager Erlebnisse bedarfsgerecht bereitstellen können.
-hide: true
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '43'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,8 +13,8 @@ ht-degree: 0%
 
 - [Übersicht](overview.md)
 - [Planen effektiver Zwischenspeicherung](caching.md)
-- [Optimieren der Adobe Experience Manager-Leistung](performance.md)
+- [AEM Leistungsoptimierung](performance.md)
 - [Infrastruktur ausrichten](infrastructure.md)
-- [Optimieren der Adobe Commerce-Leistung](default-settings.md)
+- [Leistungsoptimierung von Adobe Commerce](default-settings.md)
 - [Tipps zu Leistungstests](launch.md)
 - [Schlussfolgerung](conclusion.md)

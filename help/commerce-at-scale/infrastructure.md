@@ -1,13 +1,13 @@
 ---
 title: Ausrichtung von Adobe Commerce und Adobe Experience Manager-Infrastruktur
 description: Stellen Sie in Ihrer Adobe Commerce- und Adobe Experience Manager-Infrastruktur akzeptable Timeouts und Verbindungsgrenzen ein.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Infrastrukturausrichtungen (Zeitüberschreitungen und Verbindungsbeschränkungen)
 

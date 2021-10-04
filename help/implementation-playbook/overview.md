@@ -1,19 +1,19 @@
 ---
 title: Implementierungs-Playbook
 description: Ziel des Playbook für die Commerce-Implementierung
-source-git-commit: bb7dbf2a9d7f2fca1ecc7714f8f1ea53e4fcf067
+exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Implementierungs-Playbook
 
 Dieses Playbook soll den ganzheitlichsten Überblick über eine typische Adobe Commerce-Implementierung bieten.
 
-Von den frühen Phasen des Projekt-Scoping über Entwicklung und Integrationen bis hin zur Bereitstellung und kontinuierlichen Unterstützung gibt es viele Methoden und Best Practices, die Sie für den erfolgreichen Start eines Commerce-Projekts berücksichtigen müssen.
+Von den frühen Phasen des Projektumfangs über Entwicklung, Integrationen und Bereitstellung bis hin zum laufenden Support gibt es viele Methoden und Best Practices, die Sie für den erfolgreichen Start eines Adobe Commerce-Projekts berücksichtigen müssen.
 
 Darüber hinaus gelten diese Verfahren und Überlegungen für alle Adobe Commerce-Projekte:
 
