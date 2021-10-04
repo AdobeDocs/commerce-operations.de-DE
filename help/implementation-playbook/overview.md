@@ -2,9 +2,9 @@
 title: Implementierungs-Playbook
 description: Ziel des Playbook für die Commerce-Implementierung
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Darüber hinaus gelten diese Verfahren und Überlegungen für alle Adobe Commerc
 - Rollouts im Binnenmarkt oder auf mehreren Märkten
 - Umfangreiche Integrationen mit oder ohne Middleware
 
-Wir hoffen, dass dieses Playbook Einblicke und Anleitungen für eine Vielzahl von Interessengruppen bietet, die normalerweise an einer E-Commerce-Projektinitiative beteiligt wären, z. B.:
+Wir hoffen, dass dieses Playbook Einblicke und Anleitungen für eine Vielzahl von Interessengruppen bietet, die normalerweise an einer E-Commerce-Projektinitiative beteiligt wären, darunter:
 
 - Geschäftsführer und allgemeine Geschäftsführung, die eine solide Vorstellung davon haben sollten, was ein E-Commerce-Rollout bedeutet
 - CMOs und Digital Manager, die mit Unternehmensbenutzern auf der Plattform selbst zusammenarbeiten
