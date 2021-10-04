@@ -4,7 +4,7 @@ description: Bereiten Sie Ihr Adobe Commerce-Projekt auf die Verwendung von Adob
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
