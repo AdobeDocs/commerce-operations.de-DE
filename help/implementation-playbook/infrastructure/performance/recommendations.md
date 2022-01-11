@@ -2,7 +2,7 @@
 title: Performance Optimization Recommendations
 description: Optimieren Sie die Leistung Ihrer Adobe Commerce-Implementierung, indem Sie diese Empfehlungen befolgen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
+source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Es gibt einen separaten Abschnitt, in dem beschrieben wird, was [Headless](../..
 
 ### Adobe Commerce aktualisieren
 
-Adobe Commerce bietet immer eine bessere Leistung bei der Ausführung der neuesten Version. Auch wenn es nicht möglich ist, Adobe Commerce nach jeder neuen Version auf dem neuesten Stand zu halten, wird dennoch empfohlen, [Upgrade](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) wenn Adobe Commerce erhebliche Leistungsoptimierungen einführt.
+Adobe Commerce bietet immer eine bessere Leistung bei der Ausführung der neuesten Version. Auch wenn es nicht möglich ist, Adobe Commerce nach jeder neuen Version auf dem neuesten Stand zu halten, wird dennoch empfohlen, [Upgrade](../../../upgrade/overview.md) wenn Adobe Commerce erhebliche Leistungsoptimierungen einführt.
 
 Beispielsweise veröffentlichte Adobe 2020 eine Optimierung für die Redis-Ebene, mit der eine Menge Ineffizienzen, Verbindungsprobleme und unnötiger Datenübertragungen zwischen Redis und Adobe Commerce behoben wurden. Die Gesamtleistung zwischen 2.3 und 2.4 ist Nacht und Tag und wir haben deutliche Verbesserungen beim Warenkorb, Checkout und gleichzeitigen Benutzern gesehen, nur aufgrund der Redis-Optimierung.
 
