@@ -1,9 +1,9 @@
 ---
 title: Funktionsweise von Patches
 description: Erfahren Sie mehr über die verschiedenen Arten von Patches für Adobe Commerce und Magento Open Source und deren Funktionsweise.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Es gibt viele Möglichkeiten, benutzerdefinierte Patch-Dateien zu erstellen. Das
 So erstellen Sie einen benutzerdefinierten Patch:
 
 1. Erstellen Sie eine `patches/composer` in Ihrem lokalen Projekt.
-1. Identifizieren Sie die GitHub-Commit- oder Pull-Anforderung, die für den Patch verwendet werden soll. In diesem Beispiel wird die [`2d31571`](https://github.com/magento/magento2/commit/) Commit, verknüpft mit GitHub-Problem [#6474](https://github.com/magento/magento2/issues/6474).
+1. Identifizieren Sie die GitHub-Commit- oder Pull-Anforderung, die für den Patch verwendet werden soll. In diesem Beispiel wird die [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) Commit, verknüpft mit GitHub-Problem [#6474](https://github.com/magento/magento2/issues/6474).
 1. Anhängen der `.patch` oder `.diff` Erweiterungen der Commit-URL. Verwendung `.diff` für eine kleinere Dateigröße. Beispiel: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. Speichern Sie die Seite als Datei im `patches/composer` Verzeichnis. Beispiel: `github-issue-6474.diff`.
 1. Datei bearbeiten und entfernen `app/code/<VENDOR>/<PACKAGE>` aus allen Pfaden, sodass sie relativ zum `vendor/<VENDOR>/<PACKAGE>` Verzeichnis.
@@ -78,11 +78,12 @@ index c8a6fef58d31..7d01c195791e 100644
 +++ b/view/frontend/web/js/view/payment/iframe.js
 @@ -154,6 +154,7 @@ define(
               */
-              clearTimeout: function () {
-                  clearTimeout(this.timeoutId);
-                  this.fail();
-                  return this;
-            },
+             clearTimeout: function () {
+                 clearTimeout(this.timeoutId);
++                this.fail();
+ 
+                 return this;
+             },
 ```
 
 ## Anwenden von Patches
