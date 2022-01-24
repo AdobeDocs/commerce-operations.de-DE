@@ -1,31 +1,31 @@
 ---
-title: Übersicht über das Upgrade-Kompatibilitätstool
-description: Erfahren Sie mehr über das Upgrade-Kompatibilitätstool und wie es Ihnen bei Ihrem Adobe Commerce-Projekt helfen kann.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: Übersicht über die [!DNL Upgrade Compatibility Tool]
+description: Erfahren Sie mehr über die [!DNL Upgrade Compatibility Tool] und wie es Ihnen bei Ihrem Adobe Commerce-Projekt helfen kann.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
 
-# Übersicht über das Upgrade-Kompatibilitätstool
+# Übersicht über die [!DNL Upgrade Compatibility Tool]
 
 >[!NOTE]
 >
->Das Upgrade-Kompatibilitätstool ist nur für Adobe Commerce-Instanzen verfügbar.
+>Die [!DNL Upgrade Compatibility Tool] ist nur für Adobe Commerce-Instanzen verfügbar.
 
-Das Upgrade-Kompatibilitätstool ist ein Befehlszeilen-Tool, das eine benutzerdefinierte Adobe Commerce-Instanz anhand einer bestimmten Version prüft, indem alle darin installierten Module und der darin installierte Core-Code analysiert werden. Es wird eine Liste kritischer Probleme, Fehler und Warnungen zurückgegeben, die behoben werden müssen, bevor auf die neueste Version von Adobe Commerce aktualisiert wird. Außerdem werden potenzielle Probleme identifiziert, die in Ihrem Code behoben werden müssen, bevor ein Upgrade auf eine neuere Version von Adobe Commerce durchgeführt werden kann.
+Die [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das eine benutzerdefinierte Adobe Commerce-Instanz anhand einer bestimmten Version überprüft, indem alle Module und der darin installierte Core-Code analysiert werden. Es wird eine Liste kritischer Probleme, Fehler und Warnungen zurückgegeben, die behoben werden müssen, bevor auf die neueste Version von Adobe Commerce aktualisiert wird. Außerdem werden potenzielle Probleme identifiziert, die in Ihrem Code behoben werden müssen, bevor ein Upgrade auf eine neuere Version von Adobe Commerce durchgeführt werden kann.
 
-Mit dem Upgrade-Kompatibilitätstool können Sie erkennen, wann Kerncode-Änderungen an benutzerdefinierten Funktionen vorgenommen wurden. Siehe [Tool ausführen](../upgrade-compatibility-tool/run.md) für weitere Informationen.
+Die [!DNL Upgrade Compatibility Tool] können Sie erkennen, wann Änderungen am Kerncode an benutzerdefinierten Funktionen vorgenommen wurden. Siehe [Tool ausführen](../upgrade-compatibility-tool/run.md) für weitere Informationen.
 
 Es wird als Composer-Paket mit jeder Version einer Adobe Commerce-Version bereitgestellt. Siehe [Entwickler](../upgrade-compatibility-tool/developer.md) für weitere Informationen.
 
-Siehe Abschnitt [Installieren](../upgrade-compatibility-tool/install.md) für die ersten Schritte mit dem Upgrade-Kompatibilitätstool.
+Siehe Abschnitt [Installieren](../upgrade-compatibility-tool/install.md) für die ersten Schritte mit der [!DNL Upgrade Compatibility Tool].
 
-## Verbessern des Upgrade-Kompatibilitätstools
+## Verbessern der [!DNL Upgrade Compatibility Tool]
 
-Kontaktieren Sie uns im Engineering Slack-Kanal, um mit dem Upgrade-Kompatibilitätstool-Team in Kontakt zu treten [Upgrade-Kompatibilitätstool](https://magentocommeng.slack.com/archives/C019Y143U9F).
+So stellen Sie eine Verbindung zu [!DNL Upgrade Compatibility Tool] Team, kontaktieren Sie uns im Engineering Slack-Kanal [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F).
 
 >[!NOTE]
 >

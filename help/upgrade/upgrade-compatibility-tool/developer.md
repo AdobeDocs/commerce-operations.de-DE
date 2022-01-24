@@ -1,17 +1,17 @@
 ---
-title: Entwicklerinformationen für das Upgrade-Kompatibilitätstool
-description: Passen Sie das Upgrade-Kompatibilitätstool mithilfe der API-Indexintegration an.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Entwicklerinformationen'
+description: Anpassen der [!DNL Upgrade Compatibility Tool] Verwendung der API-Indexintegration.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 
-# Entwicklerinformationen für das Upgrade-Kompatibilitätstool
+# [!DNL Upgrade Compatibility Tool] Entwicklerinformationen
 
-Dieses Thema enthält Informationen für Entwickler, die eng mit dem Adobe Commerce-Code zusammenarbeiten und detaillierte Informationen zum Upgrade-Kompatibilitätstool erhalten möchten. Sie können dieses Wissen verwenden, um die Komponenten des Tools anzupassen.
+Dieses Thema enthält Informationen für Entwickler, die eng mit dem Adobe Commerce-Code zusammenarbeiten und detaillierte Informationen über die [!DNL Upgrade Compatibility Tool]. Sie können dieses Wissen verwenden, um die Komponenten des Tools anzupassen.
 
 ## Adobe Commerce API-Indexintegration
 
@@ -29,7 +29,7 @@ Bearbeiten Sie diese Datei, um die Antwort entsprechend Ihrer Installation anzup
 
 `sut\Domain\MRay\MRayInterface : "@sut_mray_mock"`
 
-Im vorherigen Beispiel verwendet das Upgrade-Kompatibilitätstool `@sut_mray_mock` als `MRayInterface` Implementierung. Die Antworten der `api()` und `modules()` -Methoden stammen aus den folgenden Dateien:
+Im vorherigen Beispiel wurde die [!DNL Upgrade Compatibility Tool] uses `@sut_mray_mock` als `MRayInterface` Implementierung. Die Antworten der `api()` und `modules()` -Methoden stammen aus den folgenden Dateien:
 
 - `dev/mray_mock_files/api.json`
 - `dev/mray_mock_files/modules.json`
@@ -117,7 +117,7 @@ Diese Punktzahl basiert auf den Analyseergebnissen:
 - Anzahl der festgestellten Probleme
 - Schweregrad der festgestellten Probleme
 
-Das Upgrade-Kompatibilitätstool berechnet diesen Wert anhand der unten stehenden Komplexitätsbewertungsformel.
+Die [!DNL Upgrade Compatibility Tool] berechnet diesen Wert anhand der unten stehenden Formel für den Komplexitätswert.
 
 ### Formel für Komplexitätsbewertung
 

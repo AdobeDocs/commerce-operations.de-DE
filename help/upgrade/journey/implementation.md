@@ -1,9 +1,9 @@
 ---
 title: Upgrade der Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung von Upgrades für Adobe Commerce- und Magento Open Source-Projekte.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '877'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
 
 - **Umfang der Zielversion**—Dokumentation zu [Commerce DevDocs](https://devdocs.magento.com) und Informationen aus Webinaren zur Partnerversion enthalten alle Details, die Sie über Ihr Target-Upgrade wissen müssen.
 
-- **Ergebnisse des Upgrade-Kompatibilitätstools**—Dieses Tool ermöglicht eine schnellere und einfachere Aktualisierung, indem Sie Ihren aktuellen Code mit dem Code der Zielversion vergleichen und einen Bericht mit allen zu behebenden Problemen erstellen. Siehe [Upgrade-Kompatibilitätstool](../upgrade-compatibility-tool/overview.md). Zu den wichtigsten Details des Berichts gehören:
+- **[!DNL Upgrade Compatibility Tool]Ergebnisse**—Dieses Tool ermöglicht eine schnellere und einfachere Aktualisierung, indem Sie Ihren aktuellen Code mit dem Code der Zielversion vergleichen und einen Bericht mit allen zu behebenden Problemen erstellen. Siehe [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Zu den wichtigsten Details des Berichts gehören:
 
    - Aktuelle installierte Version
    - Upgrade der Zielversion

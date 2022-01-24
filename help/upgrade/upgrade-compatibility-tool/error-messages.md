@@ -1,17 +1,17 @@
 ---
-title: Fehlermeldungen des Aktualisierungs-Kompatibilitätstools
-description: Erfahren Sie mehr über Fehlermeldungen, die bei der Verwendung des Upgrade-Kompatibilitätstools für Ihr Adobe Commerce-Projekt auftreten.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Fehlermeldungen'
+description: Erfahren Sie mehr über Fehlermeldungen, die bei der Verwendung der [!DNL Upgrade Compatibility Tool] in Ihrem Adobe Commerce-Projekt.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '3747'
 ht-degree: 0%
 
 ---
 
 
-# Fehlermeldungen des Upgrade-Kompatibilitätstools
+# [!DNL Upgrade Compatibility Tool] Fehlermeldungen
 
-Diese Fehlermeldungsreferenz enthält Informationen zu Fehlern, die beim Ausführen des Aktualisierungskompatibilitätstools auftreten können.
+Diese Fehlernachrichten-Referenz enthält Informationen zu Fehlern, die beim Ausführen der [!DNL Upgrade Compatibility Tool].
 
 Fehlermeldungen werden nach Ebene (kritische Probleme, Fehler und Warnungen) und Typ (Kerncode, benutzerspezifischer Code und GraphQL-Schemas) kategorisiert. Jeder Typ enthält die folgenden Informationen:
 

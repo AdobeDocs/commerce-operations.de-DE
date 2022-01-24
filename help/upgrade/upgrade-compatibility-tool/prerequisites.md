@@ -1,19 +1,19 @@
 ---
-title: Upgrade-Kompatibilitätstool - Voraussetzungen
-description: 'Stellen Sie sicher, dass Ihr System die Anforderungen erfüllt, die zum Ausführen des Upgrade-Kompatibilitätstools für Ihr Adobe Commerce-Projekt erforderlich sind. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Voraussetzungen'
+description: 'Stellen Sie sicher, dass Ihr System die zum Ausführen des [!DNL Upgrade Compatibility Tool] für Ihr Adobe Commerce-Projekt. '
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '137'
 ht-degree: 0%
 
 ---
 
 
-# Voraussetzungen für das Upgrade-Kompatibilitätstool
+# [!DNL Upgrade Compatibility Tool] Voraussetzungen
 
-Das Ausführen des Upgrade-Kompatibilitätstools hilft Ihnen dabei, die erforderlichen Schritte zu ermitteln **before** Upgrade Ihrer Adobe Commerce-Version.
+Ausführen der [!DNL Upgrade Compatibility Tool] hilft Ihnen dabei, das zu identifizieren, was Sie tun müssen **before** Upgrade Ihrer Adobe Commerce-Version.
 
-Die Mindestanforderungen für die Ausführung des Upgrade-Kompatibilitätstools sind:
+Die Mindestanforderungen für die Ausführung der [!DNL Upgrade Compatibility Tool] sind:
 
 | **Voraussetzungen** | **Einschränkungen** |
 |----------------|-----------------|
@@ -24,6 +24,6 @@ Die Mindestanforderungen für die Ausführung des Upgrade-Kompatibilitätstools 
 | Zugriffsschlüssel für Adobe Commerce | Keine |
 | Adobe Commerce (Open Source oder Unternehmen) | Keine |
 
-Sie können das Upgrade-Kompatibilitätstool in jedem beliebigen Betriebssystem ausführen. Es ist nicht erforderlich, das Upgrade-Kompatibilitätstool dort auszuführen, wo sich Ihre Adobe Commerce-Instanz befindet.
+Sie können die [!DNL Upgrade Compatibility Tool] in allen Betriebssystemen. Es ist nicht erforderlich, die [!DNL Upgrade Compatibility Tool] wo sich Ihre Adobe Commerce-Instanz befindet.
 
-Das Upgrade-Kompatibilitätstool muss Zugriff auf den Quellcode der Adobe Commerce-Instanz haben. Sie können es beispielsweise auf einem Server installieren und auf eine andere Adobe Commerce-Installation verweisen. Siehe Abschnitt [install](../upgrade-compatibility-tool/install.md) für weitere Informationen.
+Es ist notwendig, [!DNL Upgrade Compatibility Tool] , um Zugriff auf den Quellcode der Adobe Commerce-Instanz zu erhalten. Sie können es beispielsweise auf einem Server installieren und auf eine andere Adobe Commerce-Installation verweisen. Siehe Abschnitt [install](../upgrade-compatibility-tool/install.md) für weitere Informationen.

@@ -1,9 +1,9 @@
 ---
 title: Aktualisierungsumfang verstehen
 description: Erfahren Sie mehr über abwärtskompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce- oder Magento Open Source-Module oder Drittanbieter-Erweiterungen auswirken können.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher
 
 Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, auf die Sie ein Upgrade durchführen möchten. Dies ist der zeitintensivste und ressourcenintensivste Aktualisierungsprozess. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtskompatiblen Änderungen suchen und sich über neue Vorgehensweisen, wie z. B. die Aufhebung der Controller-Zusammensetzung, informieren. Weitere Informationen hierzu finden Sie im Abschnitt [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Stellen Sie außerdem sicher, dass Sie [Best Practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) für die Modulentwicklung.
 
-## Upgrade-Kompatibilitätstool
+## [!DNL Upgrade Compatibility Tool]
 
-Das Upgrade-Kompatibilitätstool ist ein Befehlszeilenwerkzeug, das Ihre Instanz auf potenzielle Upgrade-Probleme analysiert. Es sucht nach Problemen zwischen der aktuellen Version, die Sie installiert haben, und der Version, auf die Sie ein Upgrade durchführen möchten.
+Die [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das Ihre Instanz auf potenzielle Aktualisierungsprobleme hin analysiert. Es sucht nach Problemen zwischen der aktuellen Version, die Sie installiert haben, und der Version, auf die Sie ein Upgrade durchführen möchten.
 
 Die Verwendung dieses Tools reduziert den Aufwand Ihres Teams, den Umfang und die Auswirkungen eines Upgrades zu verstehen. Dies hilft Ihnen, gängige Code-Probleme beim Aktualisieren zu vermeiden, und gibt eine klare Anleitung dazu, wie identifizierte Probleme gelöst werden können. Darüber hinaus hilft es, die wichtigsten Probleme zu priorisieren, die für eine erfolgreiche Aktualisierung erforderlich sind. So sparen Sie Zeit und Kosten bei der Aktualisierung.
 
-In den folgenden Abschnitten erfahren Sie, wie Sie mit dem Upgrade-Kompatibilitätstool beginnen. Siehe Upgrade-Kompatibilitätstool [Handbuch](../upgrade-compatibility-tool/overview.md) für weitere technische Details und erweiterte Anwendungsfälle.
+In den folgenden Abschnitten erhalten Sie die ersten Schritte mit dem [!DNL Upgrade Compatibility Tool]. Siehe [!DNL Upgrade Compatibility Tool] [Handbuch](../upgrade-compatibility-tool/overview.md) für weitere technische Details und erweiterte Anwendungsfälle.
 
 ### Tool herunterladen
 
@@ -78,7 +78,7 @@ Einige weitere Optionen, die mit diesem Befehl verwendet werden können:
 
 ### Analyse der Ausgabe
 
-Das Upgrade-Kompatibilitätstool exportiert eine JSON-Datei, die den betroffenen Code oder die betroffenen Module, den Schweregrad und eine Beschreibung des Problems für jedes auftretende Problem enthält. Außerdem wird ein Zusammenfassungsbericht mit einem Komplexitätswert ausgegeben, der es Ihrem Team ermöglicht, ungefähr zu verstehen, was für die Aktualisierung auf die neueste Version erforderlich ist. Je niedriger der Komplexitätswert ist, desto einfacher ist es, das Upgrade durchzuführen.
+Die [!DNL Upgrade Compatibility Tool] exportiert eine JSON-Datei, die den betroffenen Code oder die betroffenen Module, den Schweregrad und eine Beschreibung des Problems für jedes auftretende Problem enthält. Außerdem wird ein Zusammenfassungsbericht mit einem Komplexitätswert ausgegeben, der es Ihrem Team ermöglicht, ungefähr zu verstehen, was für die Aktualisierung auf die neueste Version erforderlich ist. Je niedriger der Komplexitätswert ist, desto einfacher ist es, das Upgrade durchzuführen.
 
 Die folgende Ausgabe zeigt einen Beispielzusammenfassungsbericht:
 
@@ -111,4 +111,4 @@ Es wird empfohlen, die Ergebnisse jedes Aktualisierungsprojekts zu speichern, da
 
 Wir empfehlen Ihnen außerdem, das Tool regelmäßig während der Arbeit an der Aktualisierung auszuführen, um einen Überblick über Ihren Fortschritt zu erhalten. Die Anzahl der Probleme sollte mit der Korrektur verringert werden. Dies hilft Ihrem Team auch bei der Entscheidung über den besten Ansatz zur Verteilung der Arbeit.
 
-Künftige Versionen des Tools werden Kompatibilitätstests und Autofixes für PHP 8.1 beinhalten, um Ihnen dabei zu helfen, Probleme so schnell wie möglich zu beheben.
+Die [!DNL Upgrade Compatibility Tool] wird auch weiterhin verbessert und zukünftige Versionen enthalten Funktionen wie Autofixes, die Ihnen helfen, Probleme so schnell wie möglich zu beheben. Die im Januar 2022 veröffentlichten neuesten Verbesserungen umfassen Kompatibilitätstests für PHP 8.1 und HTML-Visualisierungsfunktionen, mit denen Sie schnell Bereiche ermitteln können, die möglicherweise ein größeres Upgrade erfordern.
