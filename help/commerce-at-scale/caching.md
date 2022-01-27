@@ -2,9 +2,9 @@
 title: Effektive Cacheplanung
 description: Informationen zum erfolgreichen Laden Ihrer Site finden Sie unter den empfohlenen Benchmarks für die Zwischenspeicherung .
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Der erste Schritt bei der Cachestrategie sollte daher darin bestehen, mit den re
 
 | Caching-Bereich | Wie oft ändert sich? | Auswirkungen auf veraltete Inhalte, die aus dem Cache bereitgestellt werden | Zulässige Caching-Time-to-Live (TTL)? |
 |---------------------------------------------------------------|--------------------|-------------------------------------------|-----------------------------------------------------|
-| HTML-Seiten für Site-Inhalt, aktualisiert über CMS | selten | Niedrig | 1 Tag |
+| Seiten mit Site-Content-HTML, aktualisiert über CMS | selten | Niedrig | 1 Tag |
 | Site-Inhaltsvorlage Medien/Assets - Logo, CSS-Design, Bilder | selten | Niedrig | 1 Woche |
 | Produktlistenseiten (PLP) | selten | Mittel | 1 Tag |
 | Produktdetailseite (PDP) | Manchmal | Mittel | 1 Stunde |
@@ -31,4 +31,4 @@ Der erste Schritt bei der Cachestrategie sollte daher darin bestehen, mit den re
 
 Nach Abschluss dieser ersten Planung kann die technische Konfiguration eingerichtet werden, um Caches entsprechend diesen Anforderungen zu konfigurieren.
 
-Selbst wenn der Inhalt aktualisiert wird und in der Caching-TTL live geschaltet werden muss, ist es in den meisten Fällen möglich, die Caches für den AEM Dispatcher- und Adobe Commerce-Cache selektiv für diesen Inhalt manuell zu löschen, was bedeutet, dass dringende Änderungen sofort übernommen werden. Der Prozess zum manuellen Cache-Löschen sollte ebenfalls im Voraus geplant und getestet werden, sodass, wenn es notwendig ist, ein Update für einige Inhalte manuell zu erzwingen, es in einem Runbook für Site-Vorgänge dokumentiert wird und klar ist, wie und wer beteiligt werden muss, um dies zu tun. Hier wird ein manueller Cache-Leerungsvorgang für AEM und Adobe Commerce gezeigt.
+Selbst wenn der Inhalt aktualisiert wird und in der Caching-TTL live geschaltet werden muss, ist es in den meisten Fällen möglich, die Caches für die [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) und [Adobe Commerce](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) selektiv für diesen Inhalt zwischenspeichern, was bedeutet, dass dringende Änderungen sofort übernommen werden. Der Prozess zum manuellen Cache-Löschen sollte ebenfalls im Voraus geplant und getestet werden, sodass, wenn es notwendig ist, ein Update für einige Inhalte manuell zu erzwingen, es in einem Runbook für Site-Vorgänge dokumentiert wird und klar ist, wie und wer beteiligt werden muss, um dies zu tun.
