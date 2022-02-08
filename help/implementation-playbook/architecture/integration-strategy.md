@@ -1,17 +1,17 @@
 ---
 title: Adobe Commerce-Integrationsstrategie
-description: Überprüfen Sie Integrationsstrategien und -optionen für Ihre Adobe Commerce-Implementierung.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Überprüfen Sie die Integrationsstrategien und -optionen für Ihre Adobe Commerce-Implementierung.
+exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Commerce-Integrationsstrategie
 
-The ability to integrate your platform is “non-negotiable.” Die Unternehmen wollen, dass ihre E-Commerce-Plattformen von verschiedenen Touchpoints aus zugänglich sind und nahtlos in ihre Technologiesysteme integriert werden, insbesondere in ihr ERP. Customizability, global scalability, and affordability also play a role in final platform purchase.
+Die Integration Ihrer Plattform ist &quot;nicht verhandelbar&quot;. Die Unternehmen wollen, dass ihre E-Commerce-Plattformen von verschiedenen Touchpoints aus zugänglich sind und nahtlos in ihre Technologiesysteme integriert werden, insbesondere in ihr ERP. Anpassungsfähigkeit, globale Skalierbarkeit und Erschwinglichkeit spielen auch beim endgültigen Kauf der Plattform eine Rolle.
 
 Ein ganzheitlicher Integrationsansatz für Storefront- und Backend-Systeme wird von leistungsstarken GraphQL-APIs, umfassenden REST-APIs und dem Batch-Dateiimport zwischen Adobe Commerce und anderen Systemen oder Diensten unterstützt.
 
@@ -21,12 +21,12 @@ Die Adobe Commerce GraphQL-API bietet eine umfassende Storefront-Abdeckung, die 
 - Content Management Systeme (CMS) wie Drupal und WordPress
 - Moderne benutzerdefinierte Storefront-Anwendung wie Adobe Commerce, PWA Studio und Vue Storefront
 
-GraphQL bietet eine effiziente, kanalspezifische Antwort, kein übermäßiges Abrufen von Daten und eine agile Implementierung neuer Touchpoint-Funktionen. Oft wird auch die Integration in Vertriebskanäle wie mobile native Apps, POS, IoT, soziale Kanäle und livestream-Commerce-Kanäle wie Facebook, Google, Instagram, WeChat und TikTok gewählt.
+GraphQL bietet eine effiziente, kanalspezifische Antwort, kein übermäßiges Abrufen von Daten und eine agile Implementierung neuer Touchpoint-Funktionen. Es wird auch oft ausgewählt, um eine Integration mit Vertriebskanälen wie mobilen nativen Apps, POS, IoT, Social-Kanälen und livestream-Commerce-Kanälen wie Facebook, Google, Instagram, WeChat und TikTok zu ermöglichen.
 
 Die Adobe Commerce REST API bietet umfassende Systemkonfigurationsfunktionen und Datenverwaltungsfunktionen, einschließlich Produkt- und Katalogfunktionen. Warenkorb, Anführungszeichen und Checkout; Kunden, Konten und Unternehmen; und bestellt und zurückgibt. REST-APIs unterstützen Massenvorgänge, mehrere Authentifizierungsmodi und die granulare Autorisierung, sodass REST-APIs häufig zur Integration in Unternehmenssysteme ausgewählt werden, darunter:
 
-- Enterprise resource planning (ERP) systems like SAP
-- Product information management (PIM) systems likeAkeneo
+- Enterprise Resource Planning (ERP)-Systeme wie SAP
+- PIM-Systeme (Product Information Management) wie Akeneo
 - CRM-Systeme (Customer Relationship Management) wie Salesforce
 - Order Management Systems (OMS) wie MOM, Manhattan und SAP
 - Warehouse Management System (WMS) oder Drittanbieter-Logistik (3PL) wie Oracle, NetSuite und SAP WM
@@ -41,10 +41,10 @@ Adobe Commerce bietet drei flexible Integrationsoptionen:
 
 - Direkte Integration von System zu System mit vordefinierten Connectoren. Einige Systeme verfügen möglicherweise bereits über Adobe Commerce-Erweiterungen auf dem Adobe Commerce Marketplace oder ihrer eigenen Website.
 
-- System-to-system integration through custom middleware. Die bereitgestellte benutzerdefinierte Middleware-Lösung wird für die Zuordnung, Übersetzung und Verwaltung von Prozessdaten verwendet.
+- Integration von System zu System durch benutzerdefinierte Middleware. Die bereitgestellte benutzerdefinierte Middleware-Lösung wird für die Zuordnung, Übersetzung und Verwaltung von Prozessdaten verwendet.
 
 - Integration von System zu System über iPaaS (Integration Platform-as-a-Service), auch als EAI (Enterprise Application Integration Platform) bezeichnet, z. B. Mulesoft, Boomi und Software AG.
 
-![Integrationsoptionen für Adobe Commerce](../../assets/playbooks/integration-options.svg)
+![Adobe Commerce-Integrationsoptionen](../../assets/playbooks/integration-options.svg)
 
-Auch wenn Echtzeit-Integrationen normalerweise gewünscht werden, ist dies für einige Szenarien nicht erforderlich. Adobe Commerce unterstützt nativ RabbitMQ als den Message-Bus zur Aktivierung asynchroner Prozesse. Dies wird für einige Daten empfohlen, die nicht in Echtzeit ausgetauscht werden müssen, sondern zur asynchronen Verarbeitung mit der Batch-Dateiaustausch- oder REST-Batch-Datenverarbeitungs-API.
+Auch wenn Echtzeit-Integrationen normalerweise gewünscht werden, ist dies für einige Szenarien nicht erforderlich. Adobe Commerce unterstützt nativ RabbitMQ als Message-Bus zur Aktivierung asynchroner Prozesse. Dies wird für einige Daten empfohlen, die nicht in Echtzeit ausgetauscht werden müssen, sondern zur asynchronen Verarbeitung mit der Batch-Dateiaustausch- oder REST-Batch-Datenverarbeitungs-API.

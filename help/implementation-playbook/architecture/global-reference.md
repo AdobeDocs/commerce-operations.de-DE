@@ -1,13 +1,13 @@
 ---
-title: Adobe Commerce - Allgemeine Referenzarchitektur
+title: Globale Referenzarchitektur von Adobe Commerce
 description: Nutzen Sie eine globale Referenzarchitektur, um Ihre Adobe Commerce-Implementierung optimal zu nutzen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: a18529a3-da9b-4e1b-8048-0a906e65c740
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Globale Referenzarchitektur (GRA)
 
@@ -46,4 +46,3 @@ GRA-Auswirkungen:
 - Wie neue Märkte aktiviert werden
 
    - Vereinfacht die Freigabe mehrerer Kanäle und Märkte, die sonst erheblich mehr Zeit und Geld kosten würden.
-

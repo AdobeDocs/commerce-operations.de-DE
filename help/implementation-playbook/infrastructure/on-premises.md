@@ -1,19 +1,19 @@
 ---
 title: Vor-Ort-Infrastruktur
-description: Erfahren Sie mehr über die On-Premise-Infrastruktur von Adobe Commerce und Cloud-Services von Drittanbietern.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Erfahren Sie mehr über die lokale Adobe Commerce-Infrastruktur und Cloud-Services von Drittanbietern.
+exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
+# Vor-Ort-Infrastruktur von Adobe Commerce
 
-# Adobe Handel vor Ort - Infrastruktur
+Die Gründe für die Einführung einer neuen Adobe Commerce-Implementierung oder die Umstellung einer bestehenden Adobe Commerce-Implementierung vor Ort auf die Cloud sind vielfältig. Die gängigsten strategischen Faktoren sind jedoch die Senkung der Investitionsausgaben, die Senkung der laufenden Kosten, die Verbesserung der Skalierbarkeit und Elastizität, die Verbesserung der Markteinführungszeit und die Verbesserung der Sicherheit und Einhaltung der Vorschriften.
 
-Die Motive für die Einführung einer neuen Adobe Commerce-Implementierung oder die Umstellung einer bestehenden On-Premise-Adobe Commerce-Implementierung auf die Cloud sind vielfältig. Die gängigsten strategischen Faktoren sind jedoch die Reduzierung der Investitionsausgaben, die Senkung laufender Kosten, die Verbesserung der Skalierbarkeit und Elastizität, die Verbesserung der Time-to-Market und die Verbesserung der Sicherheit und Compliance.
-
-Das folgende Diagramm zeigt die Referenzarchitektur für die Bereitstellung von Adobe Commerce in lokalen AWS-Infrastrukturen. Andere Cloud-Anbieter wie Azure, Google Cloud und Alibaba Cloud nutzen ein ähnliches Infrastrukturdesign und homologe Dienste.
+Das folgende Diagramm zeigt die Referenzarchitektur für die Bereitstellung von Adobe Commerce vor Ort in der AWS-Infrastruktur. Andere Cloud-Anbieter wie Azure, Google Cloud und Alibaba Cloud nutzen ein ähnliches Infrastrukturdesign und homologe Dienste.
 
 ![Abbildung einer selbstgehosteten Adobe Commerce-Infrastruktur auf Cloud-Services von Drittanbietern](../../assets/playbooks/on-premises-infrastructure.svg)
 
@@ -21,13 +21,13 @@ Im Folgenden werden die Rollen und Funktionen der einzelnen Aspekte der oben gez
 
 1. Amazon Route 53 bietet eine DNS-Konfiguration.
 
-1. AWS WAF ist eine Webanwendungs-Firewall, die Adobe Commerce vor häufigen Web-Exploits schützt.
+1. AWS WAF ist eine Web-Anwendungs-Firewall, die Adobe Commerce vor häufigen Web-Exploits schützt.
 
 1. Amazon CloudFront ist ein CDN (Fast Content Delivery Network), das die Verteilung statischer und dynamischer Webinhalte beschleunigt.
 
-1. Der erste Elastic Load Balancing application load balancer verteilt Traffic auf verschiedene Instanzen in einer AWS Auto Scaling Gruppe in mehreren Verfügbarkeitszonen.
+1. Der erste Elastic Load Balancing Application Lastenausgleich verteilt den Traffic in einer AWS-Gruppe mit automatischer Skalierung in mehreren Verfügbarkeitszonen auf verschiedene Instanzen.
 
-1. Der Varnish-Cache ist ein Webanwendungsbeschleuniger, der HTTP-Reverse-Proxy zwischenspeichert. Die Unternehmensversion, die über den AWS-Marketplace verfügbar ist, wird empfohlen, da sie bessere Funktionen zur Unterstützung von Cloud-Backends und Cache-Bereinigung über dynamische Hosts hinweg bietet.
+1. Der Varnish-Cache ist ein Webanwendungsbeschleuniger, der HTTP-Reverse-Proxy zwischenspeichert. Die Unternehmensversion, die über AWS Marketplace verfügbar ist, wird empfohlen, da sie bessere Funktionen zur Unterstützung von Cloud-Backends und Cache-Bereinigung über dynamische Hosts hinweg bietet.
 
 1. Der zweite Elastic Load Balancing application load balancer verteilt Traffic aus Varnish Cache auf die AWS Auto Scaling-Gruppe von Adobe Commerce-Instanzen in mehreren Verfügbarkeitszonen.
 
@@ -41,16 +41,16 @@ Im Folgenden werden die Rollen und Funktionen der einzelnen Aspekte der oben gez
 
 1. EFSMount Target erleichtert die Zuordnung des Amazon Elastic File System (AmazonEFS) zu Varnish- und Adobe Commerce-Instanzen.
 
-1. Verwenden Sie Amazon EFS, um auf die freigegebene Konfiguration über verschiedene und freigegebene Medien-Assets in Adobe Commerce-Instanzen hinweg zuzugreifen.
+1. Verwenden Sie Amazon EFS, um auf die freigegebene Konfiguration in verschiedenen und freigegebenen Medien-Assets in Adobe Commerce-Instanzen zuzugreifen.
 
 ## Cloud Services
 
-AWS bietet nicht nur eine unterstützende Technologieplattform für die Aktivierung von DevOps-Prozessen auf AWS in Ihrer Adobe Commerce-Umgebung, sondern bietet auch eine Reihe von Diensten, die (falls nicht vorhanden) Ihre bestehenden Software Configuration Management (SCM)-Lösungen (Software Configuration Management) bereitstellen oder ergänzen können. Dazu gehören AWSCodeCommit, AWSCodeBuild, AWSCodePipeline und AWSCodeDeploy, die eine verwaltete Quellsteuerung, einen Build, eine kontinuierliche Integration/kontinuierliche Bereitstellung (CI/CD) und Bereitstellungsdienste ermöglichen.
+Zusätzlich zur Bereitstellung einer unterstützenden Technologieplattform für die Aktivierung von DevOps-Prozessen in AWS in Ihrer Adobe Commerce-Umgebung bietet AWS eine Reihe von Diensten, die (bei Fehlen von) Ihre bestehenden Software Configuration Management (SCM)-Lösungen bereitstellen oder ergänzen können. Dazu gehören AWSCodeCommit, AWSCodeBuild, AWSCodePipeline und AWSCodeDeploy, die eine verwaltete Quellsteuerung, einen Build, eine kontinuierliche Integration/kontinuierliche Bereitstellung (CI/CD) und Bereitstellungsdienste ermöglichen.
 
 ## Cloud-Migration
 
-Das Wertversprechen für die Migration von Adobe Commerce auf AWS wird durch die Verfügbarkeit verschiedener Dienste, die operative Einblicke und Agilität bieten, weiter verbessert. Wir meinen operative Einblicke in die Plattform nicht nur aus technischer Sicht (z. B. Anforderungen pro Stunde), sondern auch aus betrieblicher Sicht (z. B. Bestellungen pro Stunde), insbesondere wenn die beiden Datensätze verheiratet werden können. Dies bietet einen nahezu echtzeitbasierten Überblick über die Kampagnenleistung, die Betriebskosten der Plattform und eine nahezu unendliche Anzahl anderer Indikatoren.
+Das Wertversprechen für die Migration von Adobe Commerce zu AWS wird durch verschiedene Dienste weiter verbessert, die operative Einblicke und Flexibilität bieten. Was wir meinen, ist ein operativer Einblick in die Plattform nicht nur aus technischer Sicht (z. B. Anforderungen pro Stunde), sondern auch aus betrieblicher Sicht (z. B. Bestellungen pro Stunde), insbesondere wenn die beiden Datensätze verheiratet werden können. Dies bietet einen nahezu echtzeitbasierten Überblick über die Kampagnenleistung, die Betriebskosten der Plattform und eine nahezu unendliche Anzahl anderer Indikatoren.
 
-Die Einrichtung von Adobe Commerce auf AWS kann bestimmte Anwendungsabhängigkeiten durch vollständig verwaltete Alternativen ersetzen, die in der Cloud verfügbar sind. Anstatt beispielsweise eine relationale Datenbank direkt auf EC2-Instanzen zu hosten, kann die Datenbank für viele Anwendungen einfach durch den Amazon Relational Database Service (AmazonRDS) ersetzt werden. Der Vorteil dieser Strategie besteht darin, dass die operative Verantwortung nicht differenzierter Komponenten auf AWS übertragen werden kann, ohne dass wesentliche Änderungen an der Kernanwendung erforderlich sind.
+Die Einrichtung von Adobe Commerce in AWS kann bestimmte Anwendungsabhängigkeiten durch vollständig verwaltete Alternativen ersetzen, die in der Cloud verfügbar sind. Anstatt beispielsweise eine relationale Datenbank direkt auf EC2-Instanzen zu hosten, kann die Datenbank für viele Anwendungen einfach durch den Amazon Relational Database Service (AmazonRDS) ersetzt werden. Der Vorteil dieser Strategie besteht darin, dass die Betriebsverantwortung nicht differenzierter Komponenten auf AWS übertragen werden kann, ohne dass die Kernanwendung wesentlich geändert werden muss.
 
-Für die Ausführung von Adobe Commerce (Magento Open Source- und Adobe Commerce-Versionen) auf AWS stehen verschiedene Bereitstellungsoptionen zur Verfügung. Die beste Wahl hängt von Ihren Anforderungen an Kosten, Umfang, Verfügbarkeit und Flexibilität sowie den AWS- und Adobe-Commerce-Kompetenzen Ihrer Organisation ab.
+Es stehen verschiedene Bereitstellungsoptionen für die Ausführung von Adobe Commerce (Magento Open Source- und Adobe Commerce-Versionen) in AWS zur Verfügung. Die beste Wahl hängt von Ihren Anforderungen an Kosten, Umfang, Verfügbarkeit und Flexibilität sowie von den Fertigkeiten Ihrer Organisation in AWS und Adobe Commerce ab.

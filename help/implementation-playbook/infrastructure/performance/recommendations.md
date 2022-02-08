@@ -2,7 +2,7 @@
 title: Performance Optimization Recommendations
 description: Optimieren Sie die Leistung Ihrer Adobe Commerce-Implementierung, indem Sie diese Empfehlungen befolgen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Bei der DNS-Suche wird ermittelt, zu welcher IP-Adresse der Domänenname gehört
 
 ### CDN (Content Delivery Network)
 
-Verwenden Sie ein CDN, um die Leistung beim Herunterladen von Assets zu optimieren. Adobe Commerce verwendet Fastly. Wenn Sie eine lokale Implementierung von Adobe Commerce haben, sollten Sie auch erwägen, eine CDN-Ebene hinzuzufügen.
+Verwenden Sie ein CDN, um die Leistung beim Herunterladen von Assets zu optimieren. Adobe Commerce verwendet Fastly. Wenn Sie über eine lokale Implementierung von Adobe Commerce verfügen, sollten Sie auch erwägen, eine CDN-Ebene hinzuzufügen.
 
 ### Weblatenz
 
@@ -111,7 +111,7 @@ Elasticsearch ist ab Adobe Commerce-Version 2.4 erforderlich, es empfiehlt sich 
 
 ## Betriebssystem
 
-Neben den zuvor erwähnten Empfehlungen zur Optimierung der gemeinsamen Infrastruktur gibt es auch Ansätze zur Leistungsverbesserung für bestimmte Geschäftsmodi und Skalierungen. Dieses Dokument enthält keine detaillierten Tuning-Anweisungen für alle, da jedes Szenario unterschiedlich ist. Wir können jedoch einige allgemeine Optionen für Ihre Referenz bereitstellen.
+Neben den bereits erwähnten Empfehlungen zur Optimierung der gemeinsamen Infrastruktur gibt es auch Ansätze zur Leistungsverbesserung für bestimmte Geschäftsmodi und Skalierungen. Dieses Dokument enthält keine detaillierten Tuning-Anweisungen für alle, da jedes Szenario unterschiedlich ist. Wir können jedoch einige allgemeine Optionen für Ihre Referenz bereitstellen.
 
 ### Headless-Architektur
 

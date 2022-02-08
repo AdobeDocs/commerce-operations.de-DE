@@ -1,18 +1,18 @@
 ---
-title: Adobe Commerce Extensibility Strategy
-description: 'Erfahren Sie, wie Sie mit dem Erweiterungsmodell von Adobe Commerce Ihre Implementierung anpassen können. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+title: Adobe Commerce-Erweiterungsstrategie
+description: Erfahren Sie, wie Sie mit dem Adobe Commerce-Erweiterungsmodell Ihre Implementierung anpassen können.
+exl-id: fac4630d-8a41-40dc-899a-01eabceaa61e
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '48'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
 # Erweiterungsstrategie
 
-Die Erweiterbarkeitsplattform von Adobe Commerce ermöglicht es Marken, Prozesse effizient anzupassen, Systeme zu integrieren und neue Funktionen bereitzustellen, während eine saaS-ähnliche Upgrade-Funktion beibehalten wird.
+Die Erweiterbarkeitsplattform von Adobe Commerce ermöglicht es Marken, Prozesse effizient anzupassen, Systeme zu integrieren und neue Funktionen bereitzustellen, während die SaaS-ähnliche Upgrade-Funktion erhalten bleibt.
 
-![Strategiediagramm zur Adobe Commerce-Erweiterbarkeit](../../assets/playbooks/extensibility-strategy-1.svg)
+![Strategiediagramm zur Adobe Commerce-Erweiterung](../../assets/playbooks/extensibility-strategy-1.svg)
 
-![Adobe Commerce extensibility strategy diagram](../../assets/playbooks/extensibility-strategy-2.svg)
+![Strategiediagramm zur Adobe Commerce-Erweiterung](../../assets/playbooks/extensibility-strategy-2.svg)

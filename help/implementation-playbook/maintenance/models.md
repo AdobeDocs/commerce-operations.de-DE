@@ -1,13 +1,13 @@
 ---
 title: Wartungs- und Support-Modelle
-description: 'Verwenden Sie diese gängigen Wartungs- und Support-Modelle, um Ihre Adobe Commerce-Implementierung reibungslos laufen zu lassen. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Verwenden Sie diese gängigen Wartungs- und Supportmodelle, um die Adobe Commerce-Implementierung reibungslos zu führen.
+exl-id: 44469b83-a10b-44c2-8721-9a7daa2733d3
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Wartungs- und Supportmodelle
 

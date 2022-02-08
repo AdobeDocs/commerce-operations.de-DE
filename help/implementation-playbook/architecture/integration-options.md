@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerce-Integrationsoptionen
 description: Erfahren Sie mehr über Ihre Möglichkeiten zur Integration anderer Systeme in Ihre Adobe Commerce-Implementierung.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 10de70d2-ff3b-4f10-b370-01d805b745dc
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Typische Integrationspunkte und Datenflüsse
 
@@ -23,13 +23,13 @@ Im folgenden Diagramm wird ein monolithischer Ansatz beschrieben, bei dem Adobe 
 
 Im folgenden Diagramm wird ein Headless-Ansatz beschrieben, bei dem Adobe Commerce als Backend-System verwendet wird, das in eine DXP/CMS/benutzerdefinierte Anwendung als Storefront-Anwendung integriert ist:
 
-![Headless-Diagramm Adobe Commerce](../../assets/playbooks/integration-headless.svg)
+![Adobe Commerce Headless-Diagramm](../../assets/playbooks/integration-headless.svg)
 
-Der einzige Unterschied zwischen dem monolithischen und Headless-Ansatz besteht in der Storefront-Integration, die sich auf das Benutzererlebnis für Kunden auswirkt. Monolithic verwendet Adobe Commerce-Storefront direkt zur Integration mit Drittanbieterdiensten, während Headless von seiner eigenen Storefront abhängt, um die gleichen Dienste anzupassen und zu integrieren. Einige Dienste wie Bezahlung und Single Sign-on (SSO) benötigen sowohl eine Storefront- als auch eine Adobe Commerce-Anpassung, um den Integrationsfluss abzuschließen.
+Der einzige Unterschied zwischen dem monolithischen und Headless-Ansatz besteht in der Storefront-Integration, die sich auf das Benutzererlebnis für Kunden auswirkt. Monolithic verwendet die Adobe Commerce-Storefront direkt zur Integration mit Drittanbieterdiensten, während Headless von seiner eigenen Storefront abhängt, um die gleichen Dienste anzupassen und zu integrieren. Einige Dienste wie Zahlung und Single Sign-on (SSO) benötigen sowohl eine Storefront- als auch eine Adobe Commerce-Anpassung, um den Integrationsfluss abzuschließen.
 
 ## Drittanbietersysteme
 
-Einige beliebte Dienste verfügen bereits über großartige Erweiterungen zur Unterstützung von Adobe Commerce- oder beliebten Storefront-Lösungen wie PWA Studio, Adobe Experience Manager und Vue Storefront, die über ihren Erweiterungs-Marketplace oder über zugehörige Drittanbieter-Websites zu finden sind. Selbst wenn es keine Erweiterung gibt, sind die Bemühungen zur Implementierung der Integration zwischen Adobe Commerce und anderen Headless Storefronts ähnlich. Alle Dienste von Drittanbietern verfügen in der Regel über Dokumente, die erklären, wie sie mit ihnen integriert werden können. Diese Dienste sind nur einige Beispiele. verschiedene Länder und Märkte können unterschiedliche Wahlmöglichkeiten haben.
+Einige beliebte Dienste verfügen bereits über großartige Erweiterungen zur Unterstützung von Adobe Commerce- oder beliebten Storefront-Lösungen wie PWA Studio, Adobe Experience Manager und Vue Storefront, die über ihren Erweiterungs-Marketplace oder über zugehörige Drittanbieter-Websites zu finden sind. Selbst wenn es keine vorhandene Erweiterung gibt, sind die Bemühungen zur Implementierung der Integration zwischen Adobe Commerce und anderen Headless Storefronts ähnlich. Alle Dienste von Drittanbietern verfügen in der Regel über Dokumente, die erklären, wie sie mit ihnen integriert werden können. Diese Dienste sind nur einige Beispiele. verschiedene Länder und Märkte können unterschiedliche Wahlmöglichkeiten haben.
 
 ## Enterprise-Integrationen
 
@@ -41,6 +41,6 @@ Produktkatalog, Metadaten und Marketinginhalte können separat von jedem Vertrie
 
 Zu den Bestelldaten gehören Auftrags-, Anführungszeichen- (B2B), Versand-, Rückgabe- und Austauschdaten, die normalerweise über ein zentralisiertes OMS- und WMS-System verwaltet werden. Die Bestelldaten sollten so bald wie möglich synchronisiert werden, sodass die REST-API normalerweise die beste Option ist. Für eine bessere Leistung sollten Sie erwägen, die Anzahl der API-Aufrufe zu reduzieren. Ziehen Sie für den Bestellstatus, die Sendungen, die Rückgabe und den Austausch von Daten in Erwägung, die REST-Batch-Aktualisierungs-APIs in Stunden oder Minuten zu planen.
 
-B2B-Daten werden in der Regel über ein zentralisiertes CRM verwaltet. Eine Echtzeit-API wird verwendet, um bestehende Kunden zu überprüfen und neue Kunden zu erstellen. Für B2B kann es erforderlich sein, mehr APIs einzuführen, um verschiedene Mitarbeiter, Gruppen und Preislisten im Unternehmen zwischen Adobe Commerce und Ihrem CRM- oder CPQ-System zu synchronisieren.
+B2B-Daten werden in der Regel über ein zentralisiertes CRM verwaltet. Eine Echtzeit-API wird verwendet, um bestehende Kunden zu überprüfen und neue Kunden zu erstellen. Für B2B ist möglicherweise die Einführung weiterer APIs erforderlich, um verschiedene Mitarbeiter, Gruppen und Preislisten des Unternehmens zwischen Adobe Commerce und Ihrem CRM- oder CPQ-System zu synchronisieren.
 
 Es gibt einige andere Systemintegrationen wie eDM für E-Mail-Marketing und Business Intelligence für die Geschäftsdatenanalyse. Diese werden normalerweise über die REST-API oder den Dateiexport/-import durchgeführt, der normalerweise von vorhandenen Erweiterungen unterstützt wird.

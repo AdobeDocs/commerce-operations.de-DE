@@ -1,13 +1,13 @@
 ---
 title: Verantwortung und Eigentum
-description: Definieren Sie Projektrollen und Zuständigkeiten, um eine erfolgreiche Implementierung des Adobe Commerce sicherzustellen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Definieren Sie Projektrollen und Zuständigkeiten, um eine erfolgreiche Implementierung der Adobe Commerce sicherzustellen.
+exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # Verantwortung und Eigenverantwortung
 
@@ -18,6 +18,6 @@ Dies geschieht oft aufgrund mangelnder Klarheit über die Projektrollen und Zust
 
 ## Wie kooperieren wir gemeinsam?
 
-Eine verantwortliche, verantwortliche, verantwortliche, konsultierte und informierte (RACI) Matrix - wie wir im Abschnitt [Projekt-Scoping](../project-scope/deliverables.md) erwähnt haben - ist ein nützliches Tool, das die Eigentümerschaft und Verantwortung in jeder Phase des Projekts definiert und dokumentiert. Innerhalb der Matrix wird jede Aufgabe, jeder Meilenstein und jede Entscheidung im Projekt bestimmten Rollen oder Einzelpersonen zugeordnet. Es unterstützt das Projektmanagement bei der Optimierung der Prozesse, indem sichergestellt wird, dass jedes Team-Mitglied und jeder Stakeholder seine spezifischen Rollen versteht. Dies sollte in der Planungsphase des Projekts festgelegt und von jedem Beteiligten akzeptiert werden.
+Eine verantwortungsvolle, verantwortliche, konsultierte und informierte (RACI) Matrix, wie wir in der [Projektumfang](../project-scope/deliverables.md) section - ist ein nützliches Tool, das die Eigentümerschaft und Verantwortung in jeder Phase des Projekts definiert und dokumentiert. Innerhalb der Matrix wird jede Aufgabe, jeder Meilenstein und jede Entscheidung im Projekt bestimmten Rollen oder Einzelpersonen zugeordnet. Es unterstützt das Projektmanagement bei der Optimierung der Prozesse, indem sichergestellt wird, dass jedes Team-Mitglied und jeder Stakeholder seine spezifischen Rollen versteht. Dies sollte in der Planungsphase des Projekts festgelegt und von jedem Beteiligten akzeptiert werden.
 
 ![Tabelle mit dem RACI-Framework](../../assets/playbooks/raci.svg)

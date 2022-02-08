@@ -1,13 +1,13 @@
 ---
 title: Wissen ist Macht
-description: Erfahren Sie, warum es so wichtig ist, dass jeder in Ihrem Unternehmen in Ihre Adobe Commerce-Implementierung investiert.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Erfahren Sie, warum es so wichtig ist, dass alle Mitarbeiter in Ihrer Organisation in Ihre Adobe Commerce-Implementierung investieren.
+exl-id: a3929586-5ad2-4b30-8bc4-84da8f8b9eb5
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Wissen ist Macht
 

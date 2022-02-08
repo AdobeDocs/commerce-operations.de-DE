@@ -1,13 +1,13 @@
 ---
 title: Checklisten für Anforderungen
-description: Verwenden Sie diese umfassende Fragenliste, um Sie bei der Vorbereitung auf eine Adobe Commerce-Implementierung zu unterstützen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Verwenden Sie diese Liste umfassender Fragen, um Sie bei der Vorbereitung auf eine Adobe Commerce-Implementierung zu unterstützen.
+exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
-
 
 # Checklisten für Anforderungen
 
@@ -55,11 +55,11 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 - Wo sehen Sie das zukünftige Wachstum in Ihrem Unternehmen?
 
-- Welche Rolle spielt der digitale Handel in Ihrer Geschäftsstrategie? Welches sind Ihre Hauptziele bei der Einrichtung dieser eCommerce-Plattform?
+- Welche Rolle spielt der digitale Handel in Ihrer Geschäftsstrategie? Welches sind Ihre Hauptziele für die Einrichtung dieser E-Commerce-Plattform?
 
 - Haben Sie Marken/Unternehmen, die Sie als Referenz für Ihr Omnichannel-Geschäft nehmen?
 
-- Welche Teams oder Einzelpersonen steuern die Commerce-Strategie? Beschreiben Sie die relevanten Positionen.
+- Welche Teams oder Einzelpersonen sind für die E-Commerce-Strategie verantwortlich? Beschreiben Sie die relevanten Positionen.
 
 ## Aktuelle Plattform
 
@@ -139,7 +139,7 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 - Ist dies in erster Linie eine B2C- oder B2B-Site? Gibt es ein B2B2B- oder B2B2C-Element?
 
-- Gibt es ein vorhandenes Design, das angepasst wird, oder wird die Plattform von Grund auf neu entworfen?
+- Gibt es ein vorhandenes Design, das angepasst wird oder wird die Plattform von Grund auf neu entworfen?
 
 - Gibt es eine Anforderung an Headless Commerce (separate Frontend- und Backend-Ebenen)?
 
@@ -149,7 +149,7 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 - Welche spezifischen Browser sollten getestet werden (mit Ausnahme der Standardbrowser IE9+, Firefox, Chrome, Safari)?
 
-- Welche Sprache(n) haben die Frontend? Sind die übersetzten Inhalte verfügbar oder wird Unterstützung benötigt?
+- Welche Sprache(n) haben die einzelnen Frontend? Sind die übersetzten Inhalte verfügbar oder wird Unterstützung benötigt?
 
 - Gibt es mehrere Websites? Wenn ja, können Kunden ihre Anmeldeinformationen auf allen Sites verwenden?
 
@@ -163,7 +163,7 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 ## Integrationen
 
-- Welches CMS-System wird mit Adobe Commerce integriert? (Beispiele: WordPress, Drupal, Conkret5)
+- Welches CMS-System wird in Adobe Commerce integriert? (Beispiele: WordPress, Drupal, Conkret5)
 
 Gibt es vorhandene APIs, die verwendet werden können?
 
@@ -171,9 +171,9 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Welches ERP-System wird in Adobe Commerce integriert? (Beispiele: SAP, MS Dynamics NAV)
 
-- Welches Versandunternehmen-System wird mit Adobe Commerce integriert?
+- Welche Reedereisysteme werden in Adobe Commerce integriert?
 
-- Welches Steuersoftwaresystem wird in Adobe Commerce integriert? (Beispiel: Taxware)
+- Welche Steuersoftware wird in Adobe Commerce integriert? (Beispiel: Taxware)
 
 - Von welchem System werden Produktdaten in Adobe Commerce importiert?
 
@@ -183,7 +183,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Häufigkeit der Ladevorgänge von exportierten Produktdaten?
 
-- Von welchem System werden die Bestelldaten in Adobe Commerce importiert?
+- Von welchem System werden Daten in Adobe Commerce importiert?
 
 - Häufigkeit des Ladens importierter Bestelldaten?
 
@@ -205,7 +205,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Welches Auftragsverwaltungssystem wird in Adobe Commerce integriert? (Beispiele: Microsoft Dynamics, SAP, Retail Pro)
 
-- Welches Produktinventarverwaltungssystem wird mit Adobe Commerce integriert? (Beispiele: Akeneo, InRiver, Bluestone)
+- Welches Produktbestandsmanagementsystem wird in Adobe Commerce integriert? (Beispiele: Akeneo, InRiver, Bluestone)
 
 - Welches Customer Relationship Management-System wird in Adobe Commerce integriert? (Beispiele: Hubspot, Salesforce, Klaviyo)
 
@@ -231,7 +231,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Benötigen Sie eine Content-Staging-Website?
 
-- Sollte es Kunden gestattet sein, ein Website-Konto zu erstellen
+- Sollen Kunden die Möglichkeit erhalten, ein Website-Konto zu erstellen?
 
 - Verwenden Sie eindeutige Rabattgutscheine für Promotions?
 
@@ -257,7 +257,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Erlauben Sie einem Kunden, die Rückgabe von Artikeln von der Website zu initiieren?
 
-- Gibt Adobe Commerce eine RMA zurück?
+- Wird Adobe Commerce eine RMA ausgeben?
 
 - Erfassen von Erstattungsinformationen in Adobe Commerce?
 
@@ -285,7 +285,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Prämienpunkte
 
-- &quot;Bill Me Later&quot;- häufiger als &quot;Buy Now, Pay Later&quot;, da es sofort in Rechnung gestellt, aber noch nicht bezahlt wird
+- &quot;Bill Me Later&quot;- häufiger als &quot;Buy Now, Pay Later&quot;, da er sofort in Rechnung gestellt, aber noch nicht bezahlt wurde
 
 - Wird es auf verschiedenen Websites unterschiedliche Produktpreise geben?
 
@@ -309,7 +309,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Produkte: Bestseller, bestellte Produkte, am häufigsten angezeigt, niedriger Bestand, Downloads
 
-- Kunden: Neue Konten,Kunden nach Bestellsumme,Kunden nach Anzahl der Bestellungen,Kundensegmente,Kundenbewertungen
+- Kunden: Neue Konten, Kunden nach Gesamtbestellungen, Kunden nach Anzahl der Bestellungen, Kundensegmente, Kundenbewertungen
 
 - Produktprüfungen
 
@@ -319,11 +319,11 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Einladungen: Allgemein, Kunden, Bestellkonversionsrate
 
-- Benötigen Sie Adobe Commerce, um Berichte basierend auf Couponbenutzungsdaten zu erstellen?
+- Benötigen Sie Adobe Commerce, Berichte basierend auf Couponbenutzungsdaten zu erstellen?
 
 - Benötigen Sie Adobe Commerce, um Berichte auf der Grundlage von Verkaufsdaten zu erstellen?
 
-- Benötigen Sie benutzerdefinierte Adobe Commerce-Ports?
+- Benötigen Sie benutzerdefinierte Adobe Commerce-Berichte?
 
 - Wie lautet Ihre aktuelle SEO-Strategie?
 
