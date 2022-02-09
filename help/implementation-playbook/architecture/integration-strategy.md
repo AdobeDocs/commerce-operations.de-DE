@@ -2,9 +2,9 @@
 title: Adobe Commerce-Integrationsstrategie
 description: Überprüfen Sie die Integrationsstrategien und -optionen für Ihre Adobe Commerce-Implementierung.
 exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 1e545d8d5554e73f522469e526ed098395db9075
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
