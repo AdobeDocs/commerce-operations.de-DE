@@ -1,7 +1,7 @@
 ---
 title: Funktionsweise von Patches
 description: Erfahren Sie mehr über die verschiedenen Arten von Patches für Adobe Commerce und Magento Open Source und deren Funktionsweise.
-source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
+source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
 workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 0%
@@ -91,8 +91,8 @@ index c8a6fef58d31..7d01c195791e 100644
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
 - [Werkzeug für Qualitätsmuster](https://devdocs.magento.com/quality-patches/tool.html)
-- [Befehlszeile](../patches/apply.md#command-line)
-- [Verfasser](../patches/apply.md#composer)
+- [Befehlszeile](/help/upgrade/patches/apply.md#command-line)
+- [Verfasser](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
