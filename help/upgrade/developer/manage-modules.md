@@ -1,9 +1,9 @@
 ---
 title: Module und Erweiterungen verwalten
 description: Verwalten Sie Adobe Commerce- und Magento Open Source-Module und -Erweiterungen über die Befehlszeilenschnittstelle und den Composer-Paketmanager.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,7 @@ Beitragen Sie Entwickler zur Aktualisierung von Modulen und Erweiterungen, indem
 
 Sie können entweder eine `require` Abschnitt `composer.json` oder Sie können die `composer require` -Befehl wie folgt:
 
-1. Melden Sie sich bei Ihrem Server an.
-1. Wechseln Sie zu [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Wechseln Sie zu dem Ordner, in dem Sie die Anwendung geklont haben. Beispiel:
-
-   ```bash
-   cd /var/www/magento2
-   ```
+{{$include /help/_includes/server-login.md}}
 
 Sie haben die folgenden Optionen:
 

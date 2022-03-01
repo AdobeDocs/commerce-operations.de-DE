@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Entwicklerinformationen"'
 description: Anpassen der [!DNL Upgrade Compatibility Tool] Verwendung der API-Indexintegration.
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] Entwicklerinformationen
+
+{{commerce-only}
 
 Dieses Thema enthält Informationen für Entwickler, die eng mit dem Adobe Commerce-Code zusammenarbeiten und detaillierte Informationen über die [!DNL Upgrade Compatibility Tool]. Sie können dieses Wissen verwenden, um die Komponenten des Tools anzupassen.
 
