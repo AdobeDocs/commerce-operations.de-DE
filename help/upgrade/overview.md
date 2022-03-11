@@ -1,7 +1,7 @@
 ---
 title: Überblick über den Aktualisierungsprozess
 description: Erfahren Sie, wie Sie durch die Aktualisierung Ihres Adobe Commerce- und Magento Open Source-Projekts die Sicherheit und Effizienz Ihrer Storefront gewährleisten können.
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Das anhaltende Wachstum des digitalen Handels hat den Druck auf die Unternehmen 
 
 Adobe veröffentlicht eine [Release-Zeitplan](https://devdocs.magento.com/release/) jährlich, um die Planung der Händler zu erleichtern, und empfiehlt, jeden Patch-Release-Zyklus zu aktualisieren. Um PCI-konform zu bleiben, müssen Händler auf dem neuesten Patch oder Sicherheits-Patch installiert sein. Die folgende Zeitleiste zeigt die wichtigsten Release- und EOL-Ereignisse im Jahr 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.jpg)
+![](../assets/upgrade-guide/2022-release-timeline.png)
 
 Zu den wichtigen Ereignissen gehören:
 
