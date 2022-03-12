@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Operative Adobe Commerce-Handbücher
 
-Auf dieser Seite finden Sie Links zu allen Handbüchern für Adobe Commerce und Magento Open Source.
-
-## Neue Funktionen
-
-Die folgende Tabelle enthält aktuelle Änderungen, von denen Sie unserer Meinung nach wissen möchten, wie neue Themen und wichtige Aktualisierungen vorhandener Themen:
-
-| Beschreibung | Typ |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Hinzugefügt [Informationen](../upgrade/upgrade-compatibility-tool/overview.md) Informationen dazu, wie Regeln für das Upgrade-Kompatibilitätstool definiert werden. | Wichtige Aktualisierung |
-| Das veraltete Upgrade-Kompatibilitätstool wurde entfernt [Fehlercodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
-
-## Handbücher
+Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Practices zur Entwicklung, Bereitstellung und Wartung von Commerce-Projekten, die auf Adobe Commerce- und Magento Open Source-Plattformen bereitgestellt werden.
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ Die folgende Tabelle enthält aktuelle Änderungen, von denen Sie unserer Meinun
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Upgrade" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="Upgrade" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
@@ -129,3 +118,12 @@ Die folgende Tabelle enthält aktuelle Änderungen, von denen Sie unserer Meinun
   </td>
 </tr>
 </table>
+
+## Neue Funktionen
+
+Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
+
+| Änderung | Typ |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Hinzugefügt [Informationen](../upgrade/upgrade-compatibility-tool/overview.md) Informationen dazu, wie Regeln für das Upgrade-Kompatibilitätstool definiert werden. | Wichtige Aktualisierung |
+| Das veraltete Upgrade-Kompatibilitätstool wurde entfernt [Fehlercodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
