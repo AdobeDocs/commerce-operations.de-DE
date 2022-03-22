@@ -1,13 +1,13 @@
 ---
 title: Über Adobe Commerce
-description: Beschreibung der Adobe Commerce
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Beschreibung von Adobe Commerce
+exl-id: a9ebd4a6-87b4-47b9-8ae8-72d99e1797eb
+source-git-commit: 219cbe839e40afa19b3754a9d5929074ed238920
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Über Adobe Commerce
 
@@ -15,7 +15,7 @@ Adobe Commerce bietet Händlern die Möglichkeit, einzigartige und ansprechende 
 
 ## Aussagekräftige Commerce-Erlebnisse bereitstellen
 
-Durch die Verknüpfung von Inhalten mit Commerce, um die Kundenanforderungen an einwandfreie Markeninteraktionen zu erfüllen, entwickeln sich die Funktionen von Adobe Commerce immer mit dem Kundengedanken. Adobe Commerce ermöglicht es Marken, das Kundenerlebnis zu besitzen, personalisierte Inhalte und Promotions zu erstellen und über die folgenden Funktionen einen reibungslosen Kaufpfad bereitzustellen:
+Durch die Verknüpfung von Inhalten mit Commerce, um die Kundenanforderungen an einwandfreie Markeninteraktionen zu erfüllen, entwickeln sich die Funktionen von Adobe Commerce immer mit Blick auf den Verbraucher. Adobe Commerce ermöglicht es Marken, das Kundenerlebnis zu besitzen, personalisierte Inhalte und Promotions zu erstellen und über die folgenden Funktionen einen reibungslosen Kaufpfad bereitzustellen:
 
 - Page Builder
 - Produkt-Recommendations
@@ -26,7 +26,7 @@ Durch die Verknüpfung von Inhalten mit Commerce, um die Kundenanforderungen an 
 
 ## Durchführen von nahtlosen Einkäufen überall
 
-Das Wachstum des Handels wird gefördert, indem die Bedürfnisse Ihrer Kunden überall dort bedient werden, wo sie sich befinden. Erweitern Sie Ihre Reichweite und erweitern Sie sich zu neuen Kanälen, geografischen Standorten und verkaufen Sie online sowohl an Unternehmen als auch an Verbraucher auf einer Plattform. Bringen Sie Ihren Kunden Commerce an, wo, wann und wo sie es bevorzugen, einzukaufen.
+Das Wachstum des Handels wird durch die Erfüllung der Bedürfnisse Ihrer Kunden gefördert. Erweitern Sie Ihre Reichweite und erweitern Sie sich zu neuen Kanälen, geografischen Standorten und verkaufen Sie online sowohl an Unternehmen als auch an Verbraucher auf einer Plattform. Bringen Sie Ihren Kunden Commerce an, wo, wann und wo sie es bevorzugen, einzukaufen.
 
 - Mobile Commerce
 - B2B-E-Commerce
@@ -42,7 +42,7 @@ Effizienz, Automatisierung und Datenzugriff sind erforderlich, um in der moderne
 
 - Business Intelligence
 - Versand
-- Lagerbestandsverwaltung
+- Inventory management
 - Auftragsverwaltung und Kundendienst
 
 ## Konfidenzniveau
