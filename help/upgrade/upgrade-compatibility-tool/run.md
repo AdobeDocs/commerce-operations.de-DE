@@ -1,9 +1,9 @@
 ---
 title: Führen Sie die [!DNL Upgrade Compatibility Tool]
 description: Führen Sie die folgenden Schritte aus, um [!DNL Upgrade Compatibility Tool] in Ihrem Adobe Commerce-Projekt.
-source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
+source-git-commit: ba077f5d5429f2971dfbca8edd8ebd5ea44922c8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
@@ -73,10 +73,10 @@ Verfügbar `--help` Optionen für `upgrade:check` command:
 
 - `-m, --module-path[=MODULE-PATH]`: Pfad der zu analysierenden Module
 - `-a, --current-version[=CURRENT-VERSION]`: Aktuelle Adobe Commerce-Version, Version der Adobe Commerce-Installation wird verwendet, wenn sie weggelassen wird.
-- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce-Version, wird die neueste veröffentlichte Version von Adobe Commerce verwendet, wenn sie weggelassen wird.
+- `-c, --coming-version[=COMING-VERSION]`: Target Adobe Commerce-Version, wird die neueste veröffentlichte Version von Adobe Commerce verwendet, wenn sie weggelassen wird. Bietet eine Liste aller verfügbaren Adobe Commerce-Versionen.
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Pfad der Datei, in die die Ausgabe im JSON-Format exportiert wird.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Pfad der Datei, in die die Ausgabe im HTML-Format exportiert wird.
-- `--min-issue-level`: Minimale Problemstufe, die im Bericht angezeigt wird. Der Standardwert ist [WARNUNG].
+- `--min-issue-level`: Minimale Problemstufe, die im Bericht angezeigt wird. Die Standardebene ist [WARNUNG].
 - `-i, --ignore-current-version-compatibility-issues`: Verwenden Sie diese Option, wenn Sie bekannte kritische Probleme, Fehler und Warnungen nicht in Ihre [!DNL Upgrade Compatibility Tool] Bericht.
 - `--context=CONTEXT`: Ausführungskontext. Diese Option dient Integrationszwecken und hat keine Auswirkungen auf das Ausführungsergebnis.
 - `-h, --help`: Zeigen Sie Hilfe für diesen spezifischen Befehl an. Wenn kein Befehl bereitgestellt wird, `list` -Befehl ist das Standardergebnis.
@@ -267,6 +267,10 @@ Sie müssen die Version als Parameter angeben, wenn Sie den Befehl ausführen:
 ```bash
 bin/uct upgrade:check <dir> -c 2.4.3
 ```
+
+>[!NOTE]
+>
+>Dieser Parameter enthält eine Liste aller verfügbaren Adobe Commerce-Versionen.
 
 Dabei gilt:
 
