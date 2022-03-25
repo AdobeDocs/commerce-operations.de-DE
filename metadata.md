@@ -2,10 +2,10 @@
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-operations.de-DE
 index: true
-solution: Commerce,Adobe Commerce
+solution: Commerce
 product: magento
 type: Documentation
-source-git-commit: 4130362ef8fa34b5f7de98fb7823ee533a8f925a
+source-git-commit: f6483e5d305f1d585ab1e43b308170e78ddefa5a
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
