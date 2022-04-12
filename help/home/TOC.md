@@ -1,9 +1,9 @@
 ---
-user-guide-title: Betriebsleitfäden
-user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihrer Adobe Commerce- oder Magento Open Source-Anwendung.
-source-git-commit: ee7867a6d428643ca1ee57b0f3d782b2a78efa2e
+user-guide-title: Betriebshandbücher
+user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihres Adobe Commerce- oder Magento Open Source-Programms.
+source-git-commit: e2809a3af0c87175b28693636f9b986df24e3ff3
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 - [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=en)
 - [Erweiterungen](https://devdocs.magento.com/extensions/)
 - [Best Practices für die Leistung](https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html)
-- [Instrumente](https://devdocs.magento.com/quality-patches/tool.html)
+- [Instrumente](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en)
 - [Befehlszeilenwerkzeuge](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html)
 - [Implementierungs-Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html?lang=en)
 - [Operatives Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html?lang=en)
