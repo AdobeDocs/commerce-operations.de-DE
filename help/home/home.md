@@ -2,10 +2,10 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: 29b8d64cd700531f04166ad20694fa342ea0e186
+source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -127,3 +127,4 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
 | Hinzugefügt [Informationen](../upgrade/upgrade-compatibility-tool/overview.md) Informationen dazu, wie Regeln für das Upgrade-Kompatibilitätstool definiert werden. | Wichtige Aktualisierung |
 | Das veraltete Upgrade-Kompatibilitätstool wurde entfernt [Fehlercodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
+| Verschieben [Handbuch zum Site-weiten Analyse-Tool](../tools/site-wide-analysis-tool/intro.md) von [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) in die Experience League. | Neu |
