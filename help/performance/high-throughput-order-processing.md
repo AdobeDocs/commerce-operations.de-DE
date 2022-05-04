@@ -1,9 +1,9 @@
 ---
 title: Verarbeitung hoher Durchsatzmengen
 description: Optimieren Sie die Auftragsplatzierung und das Checkout-Erlebnis für Ihre Adobe Commerce- oder Magento Open Source-Bereitstellung.
-source-git-commit: 0a902d7fe967bbcee5019fea83e5be66ce2aefd0
+source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,10 @@ ht-degree: 0%
 Sie können die Bestellplatzierung und das Checkout-Erlebnis optimieren, indem Sie die folgenden Module für **Verarbeitung hoher Durchsatzaufträge**:
 
 - [AsyncOrder](#asynchronous-order-placement)—Asynchron verarbeitet Bestellungen mithilfe einer Warteschlange.
-- [NegotiableQuoteAsyncOrder](#negotiable-quote-asyn-order)—Asynchron verarbeitet NegotiableQuote Speicheraufträge.
-- [DeferredTotalCalculation](#deferred-total-calculation)—Verschiebt Berechnungen für die Bestellsummen bis zum Start des Checkouts.
+- [Zurückgestellte Gesamtberechnung](#deferred-total-calculation)—Verschiebt Berechnungen für die Bestellsummen bis zum Start des Checkouts.
+- [Inventarprüfung beim Anführungszeichenladevorgang](#disable-inventory-check)—Entscheiden Sie, die Bestandsvalidierung von Warenkorbelementen zu überspringen.
 
-Alle Funktionen funktionieren unabhängig. Sie können alle Funktionen gleichzeitig verwenden oder Funktionen in jeder beliebigen Kombination aktivieren und deaktivieren.
-
-Verwenden Sie die Befehlszeilenschnittstelle, um diese Funktionen zu aktivieren, oder bearbeiten Sie die `app/etc/env.php` Datei entsprechend den entsprechenden README-Dateien, die in der Datei [_Modulreferenz-Handbuch_][mrg].
+Alle Funktionen - AsyncOrder, verzögerte Gesamtberechnung und Bestandsüberprüfung - funktionieren unabhängig voneinander. Sie können alle drei Funktionen gleichzeitig verwenden oder Funktionen in jeder beliebigen Kombination aktivieren und deaktivieren.
 
 ## Asynchrone Bestellplatzierung
 
@@ -30,7 +28,9 @@ Ein Kunde fügt beispielsweise ein Produkt zum Warenkorb hinzu und wählt **[!UI
 - **Produkt verfügbar**—Der Bestellstatus ändert sich in _Ausstehend_, wird die Produktmenge angepasst, eine E-Mail mit Bestelldetails wird an den Kunden gesendet und die erfolgreichen Bestelldetails können im **Bestellungen und Rückgaben** Liste mit ausführbaren Optionen, z. B. Neuanordnung.
 - **Produkt nicht vorrätig oder nur wenig**—Der Bestellstatus ändert sich in _Zurückgewiesen_, wird die Produktmenge nicht angepasst, eine E-Mail mit Bestelldetails zum Problem wird an den Kunden gesendet und die zurückgewiesenen Bestelldetails werden im **Bestellungen und Rückgaben** Liste ohne ausführbare Optionen.
 
-So aktivieren Sie AsyncOrder:
+Verwenden Sie die Befehlszeilenschnittstelle, um diese Funktionen zu aktivieren, oder bearbeiten Sie die `app/etc/env.php` Datei entsprechend den entsprechenden README-Dateien, die in der Datei [_Modulreferenz-Handbuch_][mrg].
+
+**Aktivieren von AsyncOrder**:
 
 Sie können AsyncOrder über die Befehlszeilenschnittstelle aktivieren:
 
@@ -49,7 +49,7 @@ Die `set` -Befehl schreibt Folgendes in die `app/etc/env.php` Datei:
 
 Siehe [AsyncOrder] im _Modulreferenz-Handbuch_.
 
-So deaktivieren Sie AsyncOrder:
+**So deaktivieren Sie AsyncOrder**:
 
 >[!WARNING]
 >
@@ -109,7 +109,7 @@ Wenn das AsyncOrder-Modul aktiviert ist, werden die folgenden REST-Endpunkte und
 
 Entwickler können bestimmte Zahlungsmethoden explizit von der Platzierung asynchroner Aufträge ausschließen, indem sie sie zum `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` Array. Bestellungen, die ausgeschlossene Zahlungsmethoden verwenden, werden synchron verarbeitet.
 
-## Negotiatives Anführungszeichen - Asynchrone Reihenfolge
+### Negotiatives Anführungszeichen - Asynchrone Reihenfolge
 
 Die _Negotiatives Anführungszeichen - Asynchrone Reihenfolge_ Mit dem B2B-Modul können Sie Bestellelemente asynchron für die `NegotiableQuote` Funktionalität. Sie müssen AsyncOrder und NegotiableQuote aktiviert haben.
 
@@ -117,9 +117,9 @@ Die _Negotiatives Anführungszeichen - Asynchrone Reihenfolge_ Mit dem B2B-Modul
 
 Die _Zurückgestellte Gesamtberechnung_ -Modul optimiert den Checkout-Prozess, indem die Gesamtberechnung aufgeschoben wird, bis sie für den Warenkorb oder während der letzten Checkout-Schritte angefordert wird. Wenn diese Option aktiviert ist, wird nur die Zwischensumme berechnet, da ein Kunde Produkte zum Warenkorb hinzufügt.
 
-DeferredTotalCalculation is **disabled** Standardmäßig.
+DeferredTotalCalculation is **disabled** Standardmäßig. Verwenden Sie die Befehlszeilenschnittstelle, um diese Funktionen zu aktivieren, oder bearbeiten Sie die `app/etc/env.php` Datei entsprechend den entsprechenden README-Dateien, die in der Datei [_Modulreferenz-Handbuch_][mrg].
 
-So aktivieren Sie DeferredTotalCalculation:
+**So aktivieren Sie DeferredTotalCalculation**:
 
 Sie können DeferredTotalCalculation über die Befehlszeilenschnittstelle aktivieren:
 
@@ -136,7 +136,7 @@ Die `set` -Befehl schreibt Folgendes in die `app/etc/env.php` Datei:
    ]
 ```
 
-So deaktivieren Sie DeferredTotalCalculation:
+**So deaktivieren Sie DeferredTotalCalculation**:
 
 Sie können DeferredTotalCalculation über die Befehlszeilenschnittstelle deaktivieren:
 
@@ -165,9 +165,7 @@ Die _Aktivieren des Lagerbestands beim Laden des Warenkorbs_ Die globale Einstel
 
 Wenn diese Option deaktiviert ist, wird beim Hinzufügen eines Produkts zum Warenkorb keine Bestandsüberprüfung durchgeführt. Wenn diese Bestandsüberprüfung übersprungen wird, können einige nicht vorrätige Szenarien andere Fehlertypen auslösen. Bestandsüberprüfung _always_ tritt beim Bestellplatzierungsschritt auf, auch wenn deaktiviert.
 
-&quot;Bestand im Warenkorb laden&quot;aktivieren ist **enabled** Standardmäßig.
-
-Um die Bestandsüberprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** nach `No` in der Admin-Benutzeroberfläche. Siehe [Globale Optionen konfigurieren][global] und [Katalogbestand][inventory] im _Benutzerhandbuch_.
+**Inventarüberprüfung beim Laden des Warenkorbs aktivieren** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsüberprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** nach `No` in der Admin-Benutzeroberfläche **Stores** > **Konfiguration** > **Katalog** > **Bestand** > **Lageroptionen** Abschnitt. Siehe [Globale Optionen konfigurieren][global] und [Katalogbestand][inventory] im _Benutzerhandbuch_.
 
 <!-- link definitions -->
 
