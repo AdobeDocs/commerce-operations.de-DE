@@ -1,7 +1,7 @@
 ---
 title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung mithilfe dieser Best Practices.
-source-git-commit: 09c4d0e09354230c8779b930f085d8c7c131b85b
+source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
