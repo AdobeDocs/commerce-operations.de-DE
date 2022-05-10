@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Fehlermeldungen"'
 description: Erfahren Sie mehr über Fehlermeldungen, die bei der Verwendung der [!DNL Upgrade Compatibility Tool] in Ihrem Adobe Commerce-Projekt.
-source-git-commit: 9bdf64177b4cecab5dd3562fef0bcc507a57ccf0
+source-git-commit: d62299d23d73b8566ed1c9b9739ca59fb0535d6f
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3756'
 ht-degree: 4%
 
 ---
@@ -141,16 +141,6 @@ Benutzerdefinierte Code-Fehler werden ausgelöst, wenn benutzerdefinierter Code 
 | 5026 | Nicht anwenden `"text/javascript"` type attribute | Verwenden Sie nur öffentliche Mitglieder. |
 | 5028 | Zugang zu geschützten und privaten Mitgliedern `Block` -Klasse ist in PHP-Vorlagen veraltet | Verwenden Sie nur öffentliche Mitglieder. |
 | 5031 | Enthält veraltete Methode | Verwendung `getConnection()` -Methode. |
-| 5032 | `loadLayout` -Methode veraltet ist | Verwendung `\Magento\Framework\View\Layout\Builder::build` anstatt. |
-| 5033 | `renderLayout` -Methode veraltet ist | Verwendung `\Magento\Framework\Controller\ResultInterface::renderResult` anstatt. |
-| 5034 | `_redirect` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Redirect::render` anstatt. |
-| 5035 | `_forward` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Forward::forward` anstatt. |
-| 5036 | `_setActiveMenu` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Page::setActiveMenu` anstatt. |
-| 5037 | `_addBreadcrumb` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Page::addBreadcrumb` anstatt. |
-| 5038 | `_addContent` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Page::addContent` anstatt. |
-| 5039 | `_addLeft` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Page::addLeft` anstatt. |
-| 5040 | `_addJs` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Page::addJs` anstatt. |
-| 5041 | `_moveBlockToContainer` -Methode veraltet ist | Verwendung `\Magento\Backend\Model\View\Result\Page::moveBlockToContainer` anstatt. |
 | 5042 | Falsches Format der PHP-Klassenreferenz | Vergewissern Sie sich, dass nur mit Binnenmajuskeln (camelCased letters, numbers) und ohne vorangestellten Schrägstrich auf die Klasse verwiesen wird. |
 | 5043 | Falsches Format der Modulreferenz | Vergewissern Sie sich, dass nur mit Buchstaben, Zahlen, Unterstrichen und einem vorangestellten Schrägstrich auf das Modul verwiesen wird. |
 | 5044 | Klasse `Zend_Db_Select` ist eingeschränkt | Vorgeschlagene Ersetzung: `\Magento\Framework\DB\Select`. |
