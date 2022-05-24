@@ -1,9 +1,9 @@
 ---
-title: Installieren Sie die [!DNL Upgrade Compatibility Tool]
+title: Laden Sie die [!DNL Upgrade Compatibility Tool]
 description: Führen Sie die folgenden Schritte aus, um die [!DNL Upgrade Compatibility Tool] für Ihr Adobe Commerce-Projekt.
-source-git-commit: 218b099caa883f66ddda48407fb789e51fedc203
+source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 
 Die [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das eine benutzerdefinierte Adobe Commerce-Instanz anhand einer bestimmten Version prüft, indem alle darin installierten Module analysiert werden. Es wird eine Liste mit Fehlern und Warnungen zurückgegeben, die behoben werden müssen, bevor auf die neueste Version von Adobe Commerce aktualisiert wird.
 
+## Voraussetzungen
+
+So installieren Sie die [!DNL Upgrade Compatibility Tool], müssen Sie die erforderlichen Voraussetzungen installieren.
+
+Siehe [Voraussetzungen](../upgrade-compatibility-tool/prerequisites.md) für weitere Informationen.
+
 ## Laden Sie die [!DNL Upgrade Compatibility Tool]
 
 So laden Sie die [!DNL Upgrade Compatibility Tool], führen Sie den folgenden Befehl aus:
@@ -22,18 +28,6 @@ So laden Sie die [!DNL Upgrade Compatibility Tool], führen Sie den folgenden Be
 ```bash
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
-
-## Installieren
-
-So installieren Sie die [!DNL Upgrade Compatibility Tool], müssen Sie die erforderlichen Voraussetzungen installieren:
-
-* Adobe Commerce-Zugriffsschlüssel
-* Verfasser
-* Node.js
-
-## Voraussetzungen
-
-Siehe [Voraussetzungen](../upgrade-compatibility-tool/prerequisites.md) für weitere Informationen.
 
 ### Adobe Commerce-Zugriffsschlüssel
 
@@ -58,11 +52,11 @@ Die **öffentlicher Schlüssel** entspricht _Benutzername_ in der Erwägung, das
 
 ### Verfasser
 
-Klonen Sie die [!DNL Upgrade Compatibility Tool] Repository und Ausführung `composer install` in Ihrem Terminal, um Abhängigkeiten zu installieren.
+Laden Sie die [!DNL Upgrade Compatibility Tool] Repository und Ausführung `composer install` in Ihrem Terminal, um Abhängigkeiten zu installieren.
 
 >[!WARNING]
 >
->Wenn die Variable **Adobe Commerce-Zugriffsschlüssel** nicht korrekt konfiguriert sind, wird die [!DNL Upgrade Compatibility Tool] wird nicht installiert und Sie erhalten Fehler beim Ausführen von `composer install` Befehl.
+>Wenn die Variable **Adobe Commerce-Zugriffsschlüssel** nicht korrekt konfiguriert sind, können Sie die [!DNL Upgrade Compatibility Tool] und beim Ausführen von `composer create-project` -Befehl schlägt fehl.
 
 ### Node.js
 
