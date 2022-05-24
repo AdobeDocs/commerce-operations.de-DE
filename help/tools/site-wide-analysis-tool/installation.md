@@ -1,9 +1,9 @@
 ---
 title: Installationshandbuch
 description: Verwenden Sie dieses Installationshandbuch [!DNL Site-Wide Analysis Tool] für Ihre Website
-source-git-commit: de2fb829def2cf94c452a06a219d7f29885c8f9f
+source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Wir haben eine [Shell-Skript](https://github.com/magento-swat/install-agent-help
 1. Überprüfen Sie die Installation.
 
    ```bash
-   scheduler -v
+   ./scheduler -v
    ```
 
    ```bash
@@ -253,7 +253,7 @@ Es wird empfohlen, den Agenten für die Ausführung als Dienst zu konfigurieren.
 
 ### Diensleistung {#service}
 
-1. Erstellen einer Datei mit einer systemd-Einheit `(/etc/systemd/system/scheduler.service)` durch die folgende Konfiguration (ersetzen Sie `<filesystemowner>` mit dem Unix-Benutzer, der Eigentümer des Ordners ist, in dem der Agent installiert ist).
+1. Erstellen einer Datei mit einer systemd-Einheit `(/etc/systemd/system/scheduler.service)` durch die folgende Konfiguration (ersetzen Sie `<filesystemowner>` mit dem Unix-Benutzer, der Eigentümer des Ordners ist, in dem der Agent und die Adobe Commerce-Software installiert sind). Wenn Sie den Agenten als Stammbenutzer heruntergeladen haben, ändern Sie den Ordner und den Eigentümer der verschachtelten Dateien.
 
    ```config
    [Unit]
