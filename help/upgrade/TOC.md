@@ -1,10 +1,10 @@
 ---
 user-guide-title: Aktualisierungshandbuch
 user-guide-description: Erfahren Sie, warum die Aktualisierung Ihres Adobe Commerce- oder Magento Open Source-Programms so wichtig ist und wie Sie ein Upgrade erfolgreich planen und durchführen können.
-source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '145'
+ht-degree: 19%
 
 ---
 
@@ -32,13 +32,16 @@ ht-degree: 20%
    - [Funktionsweise von Patches](patches/overview.md)
    - [Anwenden von Patches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [[!DNL Upgrade Compatibility Tool] Übersicht](upgrade-compatibility-tool/overview.md)
+   - [Übersicht](upgrade-compatibility-tool/overview.md)
    - [Voraussetzungen](upgrade-compatibility-tool/prerequisites.md)
-   - [Installieren](upgrade-compatibility-tool/install.md)
-   - [Tool ausführen](upgrade-compatibility-tool/run.md)
+   - Verwenden Sie die [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+      - [Führen Sie das Tool in einer Befehlszeilenschnittstelle aus](upgrade-compatibility-tool/run.md)
+      - [Integrieren mit der [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Führen Sie das Tool im Magento PHPStorm-Plugin aus.](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - Berichterstellung {#reporting}
+      - [Berichte](upgrade-compatibility-tool/reports.md)
+      - [Fehlermeldungen](upgrade-compatibility-tool/error-messages.md)
    - [Verwandte Tools](upgrade-compatibility-tool/related-tools.md)
-   - [Integrieren Sie die [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [Fehlermeldungen](upgrade-compatibility-tool/error-messages.md)
 - Beitragende Entwickler {#developer}
    - [Aktualisierung einer Git-basierten Installation](developer/git-installs.md)
    - [Module verwalten](developer/manage-modules.md)
