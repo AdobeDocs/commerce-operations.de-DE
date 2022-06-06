@@ -1,7 +1,7 @@
 ---
 title: Registerkarten "Funktionen"
 description: Informationen zu den verschiedenen Funktionen finden Sie auf den Registerkarten im [!DNL Site-Wide Analysis Tool]
-source-git-commit: cd62420f4ccff5a47473e2232357125eef37af25
+source-git-commit: c4eca6568dc507a7ba746ac059b1959929815a5e
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
