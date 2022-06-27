@@ -1,9 +1,9 @@
 ---
 title: Funktionsweise von Patches
 description: Erfahren Sie mehr über die verschiedenen Arten von Patches für Adobe Commerce und Magento Open Source und deren Funktionsweise.
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Patch-Dateien (oder diff-Dateien) sind Textdateien, die Folgendes beachten:
 - Die Zeilennummer, die mit der Änderung beginnen soll, und die Anzahl der zu ändernden Zeilen.
 - Der neue Code, der ausgetauscht werden soll.
 
-Wenn die [Patch](https://en.wikipedia.org/wiki/Patch_(Unix)) -Programm ausgeführt, diese Datei gelesen und die angegebenen Änderungen an den Dateien vorgenommen werden.
+Wenn das Patch-Programm ausgeführt wird, wird diese Datei gelesen und die angegebenen Änderungen werden an den Dateien vorgenommen.
 
 Es gibt drei Arten von Patches:
 
@@ -62,7 +62,7 @@ So erstellen Sie einen benutzerdefinierten Patch:
 1. Erstellen Sie eine `patches/composer` in Ihrem lokalen Projekt.
 1. Identifizieren Sie die GitHub-Commit- oder Pull-Anforderung, die für den Patch verwendet werden soll. In diesem Beispiel wird die [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) Commit, verknüpft mit GitHub-Problem [#6474](https://github.com/magento/magento2/issues/6474).
 1. Anhängen der `.patch` oder `.diff` Erweiterungen der Commit-URL. Verwendung `.diff` für eine kleinere Dateigröße. Beispiel: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. Speichern Sie die Seite als Datei im `patches/composer` Verzeichnis. Beispiel: `github-issue-6474.diff`.
+1. Speichern Sie die Seite als Datei im `patches/composer` Verzeichnis. Beispiel, `github-issue-6474.diff`.
 1. Datei bearbeiten und entfernen `app/code/<VENDOR>/<PACKAGE>` aus allen Pfaden, sodass sie relativ zum `vendor/<VENDOR>/<PACKAGE>` Verzeichnis.
 
    >[!NOTE]
