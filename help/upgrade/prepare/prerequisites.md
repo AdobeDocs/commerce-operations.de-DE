@@ -1,7 +1,7 @@
 ---
 title: Vollständige Voraussetzungen
 description: Bereiten Sie Ihr Adobe Commerce- oder Magento Open Source-Projekt auf ein Upgrade vor, indem Sie diese erforderlichen Schritte ausführen.
-source-git-commit: ea5de44ab40b873fa30393359dd714534bd789e3
+source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
 workflow-type: tm+mt
 source-wordcount: '1477'
 ht-degree: 0%
@@ -176,7 +176,7 @@ So legen Sie die Umgebungsvariable fest:
 1. Legen Sie die Variable fest:
 
    ```bash
-   export DATA_CONVERTER_BATCH_SIZE 100000
+   export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
    >[!NOTE]
