@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] reports"'
 description: Führen Sie die folgenden Schritte aus, um [!DNL Upgrade Compatibility Tool] in Ihrem Adobe Commerce-Projekt.
 source-git-commit: 1ce02c3215b01f64e86383938a257514f0e4257c
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Berichte
 
-{{commerce-only}
+{{commerce-only}}
 
 Die Analyse hat ergeben, dass die [!DNL Upgrade Compatibility Tool] kann einen Bericht mit einer Liste von Problemen für jede Datei exportieren, in dem der Schweregrad, der Fehlercode und die Fehlerbeschreibung angegeben sind. Die [!DNL Upgrade Compatibility Tool] exportiert den Bericht in zwei verschiedene Formate:
 
@@ -127,7 +127,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 
 Wenn die Argumente wie folgt lauten:
 
-- `<dir>`: {{site.data.var.ee}} Installationsordner.
+- `<dir>`: {{site.data.var.ee}} Installationsverzeichnis.
 - `[=HTML-OUTPUT-PATH]`: Pfad-Verzeichnis zum Exportieren `.html` Ausgabedatei.
 
 >[!NOTE]

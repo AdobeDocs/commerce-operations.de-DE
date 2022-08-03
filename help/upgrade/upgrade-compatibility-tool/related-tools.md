@@ -3,7 +3,7 @@ title: '"[!DNL Upgrade Compatibility Tool] Verwandte Tools"'
 description: Erfahren Sie mehr über zugehörige Tools für die [!DNL Upgrade Compatibility Tool] in Ihrem Adobe Commerce-Projekt.
 source-git-commit: 5ff08d231269ea0bcb69f8c80aa546b171a5e4a0
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Upgrade Compatibility Tool] verwandte Tools
 
-{{commerce-only}
+{{commerce-only}}
 
 Es gibt Tools für die [!DNL Upgrade Compatibility Tool], die für ähnliche Ergebnisse verwendet werden kann oder auf eine Ausführung der [!DNL Upgrade Compatibility Tool].
 
