@@ -3,8 +3,8 @@ title: Module und Erweiterungen verwalten (Entwickler)
 description: Verwalten Sie Adobe Commerce- und Magento Open Source-Module und -Erweiterungen über die Befehlszeilenschnittstelle und den Composer-Paketmanager.
 source-git-commit: 3432ba8640a82269cb725b8b15854f20c270b1e3
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
