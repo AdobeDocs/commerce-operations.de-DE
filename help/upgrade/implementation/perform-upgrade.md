@@ -1,9 +1,9 @@
 ---
 title: Durchführen eines Upgrades
 description: Führen Sie diese Schritte aus, um ein Adobe Commerce- oder Magento Open Source-Projekt zu aktualisieren.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3c3966a904b0568e0255020d8880d348c357ea95
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,28 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
    ```
 
    Siehe [Wartungsmodus aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) für zusätzliche Optionen. Optional können Sie eine [Benutzerdefinierte Wartungsmodusseite](https://devdocs.magento.com/guides/v2.4/comp-mgr/trouble/cman/maint-mode.html).
+
+1. Der Start des Aktualisierungsprozesses während der Ausführung asynchroner Prozesse, z. B. von Verbrauchern in der Nachrichtenwarteschlange, kann zu Datenbeschädigungen führen. Um Datenbeschädigungen zu vermeiden, deaktivieren Sie alle Cron-Aufträge.
+
+   _Adobe Commerce über Cloud-Infrastruktur:_
+
+   ```bash
+   ./vendor/bin/ece-tools cron:disable
+   ```
+
+   _Magento Open Source:_
+
+   ```bash
+   bin/magento cron:remove
+   ```
+
+1. Starten Sie alle Verbraucher in der Nachrichtenwarteschlange manuell, um sicherzustellen, dass alle Nachrichten verbraucht werden.
+
+   ```bash
+   bin/magento cron:run --group=consumers
+   ```
+
+   Warten Sie, bis der Cron-Auftrag abgeschlossen ist. Sie können den Status des Auftrags mit einem Prozess-Viewer überwachen oder die `ps aux | grep 'bin/magento queue'` mehrmals zu beenden, bis alle Prozesse abgeschlossen sind.
 
 1. Erstellen Sie eine Sicherungskopie des `composer.json` -Datei.
 
@@ -86,7 +108,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
 
    - `<product>` —(Erforderlich) Das zu aktualisierende Paket. Bei ortsansässigen Anlagen muss dieser Wert `product-community-edition` oder `product-enterprise-edition`.
 
-   - `<version>` —(Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel: `2.4.3`.
+   - `<version>` —(Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel, `2.4.3`.
 
    - `--no-update` —(Erforderlich) Deaktiviert die automatische Aktualisierung der Abhängigkeiten.
 
