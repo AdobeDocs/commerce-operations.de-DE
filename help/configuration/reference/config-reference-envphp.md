@@ -1,9 +1,9 @@
 ---
 title: env.php-Referenz
 description: Sehen Sie sich eine Liste der Werte für die Datei env.php an.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ Die `env.php` -Datei enthält die folgenden Abschnitte:
 | `cron` | Aktivieren oder Deaktivieren von Cron-Aufträgen |
 | `crypt` | Der Verschlüsselungsschlüssel für kryptografische Funktionen |
 | `db` | Einstellungen für die Datenbankverbindung |
+| `default_connection` | Standardverbindung für Nachrichtenwarteschlangen |
 | `directories` | Zuordnungseinstellungen für Commerce-Ordner |
 | `downloadable_domains` | Liste der herunterladbaren Domains |
 | `install` | Installationsdatum |
@@ -168,6 +169,19 @@ Alle Datenbankkonfigurationen sind in diesem Knoten verfügbar.
   ]
 ]
 ```
+
+## default_connection
+
+Definiert die Standardverbindung für Nachrichtenwarteschlangen. Der Wert kann `db`, `amqp`oder ein benutzerdefiniertes Warteschlangensystem wie `redismq`. Wenn Sie einen anderen Wert als `db`muss die Nachrichtenwarteschlangensoftware zuerst installiert und konfiguriert werden. Andernfalls werden Nachrichten nicht korrekt verarbeitet.
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+Wenn `queue/default_connection` im System angegeben ist `env.php` -Datei, wird diese Verbindung für alle Nachrichtenwarteschlangen über das System verwendet, es sei denn, eine bestimmte Verbindung ist in einer `queue_topology.xml`, `queue_publisher.xml` oder `queue_consumer.xml` -Datei.
+Wenn beispielsweise `queue/default_connection` is `amqp` in `env.php` aber ein `db` -Verbindung wird in den XML-Dateien der Warteschlangenkonfiguration eines Moduls angegeben. Das Modul verwendet MySQL als Nachrichtenbroker.
 
 ## Verzeichnisse
 
