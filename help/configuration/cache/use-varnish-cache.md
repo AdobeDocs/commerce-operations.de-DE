@@ -1,9 +1,9 @@
 ---
 title: Cache-Leerung mit Varnish
 description: Erfahren Sie, wie das Cache-Leeren mit Varnish funktioniert und wie Sie es als Web-Caching-Beschleuniger für die Adobe Commerce-Anwendung verwenden.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfigurier
 
 ## Konfigurieren von Commerce zur Bereinigung von Varnish
 
-Commerce bereinigt verschiedene Hosts, nachdem Sie verschiedene Hosts mithilfe der [`magento setup:config:set`](https://devdocs.magento.com/guides/2.4/install-gde/install/cli/install-cli-subcommands-deployment.html) Befehl.
+Commerce bereinigt verschiedene Hosts, nachdem Sie verschiedene Hosts mithilfe der [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) Befehl.
 
 Sie können den optionalen Parameter verwenden `--http-cache-hosts` -Parameter, um eine kommagetrennte Liste unterschiedlicher Hosts und Listen-Ports anzugeben. Konfigurieren Sie alle gemischten Hosts, unabhängig davon, ob Sie einen oder mehrere Hosts haben. (Trennen Sie Hosts nicht durch Leerzeichen.)
 
@@ -57,4 +57,4 @@ Sie können dann beim Aktualisieren des Commerce-Zwischenspeichers (auch als *Re
 
 Um den Cache mit dem Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools > **Cacheverwaltung** Klicken Sie auf **Magento-Cache leeren** oben auf der Seite. (Sie können auch einzelne Cache-Typen aktualisieren.)
 
-Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise das [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als [Dateisysteminhaber](https://devdocs.magento.com/guides/2.4/install-gde/prereq/file-sys-perms-over.html).
+Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise das [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).

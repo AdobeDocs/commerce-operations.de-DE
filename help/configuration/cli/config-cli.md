@@ -1,9 +1,9 @@
 ---
 title: Befehlszeilen-Tool
 description: Verwenden Sie das Befehlszeilen-Tool Commerce , um Installations- und Konfigurationsaufgaben auszuführen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Weitere Vorteile:
 - Die CLI ist erweiterbar, sodass Entwickler von Drittanbietern sie &quot;einbinden&quot;können. Dies hat den zusätzlichen Vorteil, dass die Lernkurve der Benutzer entfernt wird.
 - Befehle für deaktivierte Module werden nicht angezeigt.
 
-In diesem Thema wird die Konfiguration der Adobe Commerce- und Magento Open Source-Software mithilfe der CLI erläutert. Informationen zur Installation von Commerce finden Sie unter [Installationsübersicht](https://devdocs.magento.com/guides/2.4/install-gde/bk-install-guide.html) im _Installationshandbuch_.
+In diesem Thema wird die Konfiguration der Adobe Commerce- und Magento Open Source-Software mithilfe der CLI erläutert. Informationen zur Installation von Commerce finden Sie unter [Installationsfluss](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) im _Installationshandbuch_.
 
 ## Voraussetzungen
 

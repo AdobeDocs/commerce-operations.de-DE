@@ -1,7 +1,7 @@
 ---
 title: Software Recommendations
 description: Überprüfen Sie eine Liste der empfohlenen Software im Zusammenhang mit der optimalen Leistung von Adobe Commerce- und Magento Open Source-Implementierungen.
-source-git-commit: 1d5956ce22c1a159336e9e7d64064b618fc2e63f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Sie sollten auch die Anzahl der Threads für die Verarbeitung von Eingabeanfrage
 | Webserver | Attributname | Standort | Verwandte Informationen |
 |--- | --- | --- | ---|
 | Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Optimierung von NGINX für Leistung](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache-Leistungsoptimierung](http://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache-Leistungsoptimierung](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Gemeinsame Richtlinien für Apache MPM](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]

@@ -1,9 +1,9 @@
 ---
 title: Cachetypen
 description: Verknüpfen Sie Cache-Frontends mit Cache-Typen.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,11 @@ Die Konfigurationsoptionen für den Frontend- und Backend-Cache können in `env.
 
 where
 
-- `<frontend_type>` ist der Typ des Frontend-Cache auf niedriger Ebene. Geben Sie den Namen einer Klasse an, die mit [Zend\Cache\Core](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Core.html).
-
-   Wenn Sie weglassen `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) verwendet.
+- `<frontend_type>` ist der Typ des Frontend-Cache auf niedriger Ebene. Geben Sie den Namen einer Klasse an, die mit `Zend\Cache\Core`.
+Wenn Sie weglassen `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) verwendet.
 
 - `<frontend_option>`, `<frontend_option_value>` sind der Name und der Wert der Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array an den Frontend-Cache übergibt.
-- `<backend_type>` ist der Backend-Cache-Typ der unteren Ebene. Geben Sie den Namen einer Klasse an, die mit [zend_cache_backend](https://framework.zend.com/apidoc/1.7/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend.html) und die [zend_cache_backend_interface](https://framework.zend.com/apidoc/1.6/Zend_Cache/Zend_Cache_Backend/Zend_Cache_Backend_Interface.html).
+- `<backend_type>` ist der Backend-Cache-Typ der unteren Ebene. Geben Sie den Namen einer Klasse an, die mit `Zend_Cache_Backend` und die `Zend_Cache_Backend_Interface`.
 - `<backend_option>` und `<backend_option_value>` sind der Name und der Wert der Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array übergibt, um den Cache zu sichern.
+
+Siehe [Laminatdokumentation](https://docs.laminas.dev/) für die neuesten Zend-Informationen.

@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Nachrichtenwarteschlangen
 description: Erfahren Sie mehr über das Nachrichtenwarteschlange-Framework und dessen Funktionsweise mit der Adobe Commerce- und Magento Open Source-Anwendung.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Übersicht über Nachrichtenwarteschlangen
 
-Das Message Queue Framework (MQF) ist ein System, das eine [Modul](https://glossary.magento.com/module) , um Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten. Der MQF verwendet [RabbitMQ](http://www.rabbitmq.com) als Messaging Broker, der eine skalierbare Plattform für den Versand und Empfang von Nachrichten bietet. Es enthält auch einen Mechanismus zum Speichern nicht zugestellter Nachrichten. RabbitMQ basiert auf der AMQP-Spezifikation 0.9.1 (Advanced Message Queuing Protocol).
+Das Message Queue Framework (MQF) ist ein System, das eine [Modul](https://glossary.magento.com/module) , um Nachrichten in Warteschlangen zu veröffentlichen. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron erhalten. Der MQF verwendet [RabbitMQ](https://www.rabbitmq.com) als Messaging Broker, der eine skalierbare Plattform für den Versand und Empfang von Nachrichten bietet. Es enthält auch einen Mechanismus zum Speichern nicht zugestellter Nachrichten. RabbitMQ basiert auf der AMQP-Spezifikation 0.9.1 (Advanced Message Queuing Protocol).
 
 Das folgende Diagramm zeigt das Message Queue Framework:
 
