@@ -1,9 +1,9 @@
 ---
 title: Verarbeitung hoher Durchsatzmengen
 description: Optimieren Sie die Auftragsplatzierung und das Checkout-Erlebnis für Ihre Adobe Commerce- oder Magento Open Source-Bereitstellung.
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ Die _Aktivieren des Lagerbestands beim Laden des Warenkorbs_ Die globale Einstel
 Wenn diese Option deaktiviert ist, wird beim Hinzufügen eines Produkts zum Warenkorb keine Bestandsüberprüfung durchgeführt. Wenn diese Bestandsüberprüfung übersprungen wird, können einige nicht vorrätige Szenarien andere Fehlertypen auslösen. Bestandsüberprüfung _always_ tritt beim Bestellplatzierungsschritt auf, auch wenn deaktiviert.
 
 **Inventarüberprüfung beim Laden des Warenkorbs aktivieren** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsüberprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** nach `No` in der Admin-Benutzeroberfläche **Stores** > **Konfiguration** > **Katalog** > **Bestand** > **Lageroptionen** Abschnitt. Siehe [Globale Optionen konfigurieren][global] und [Katalogbestand][inventory] im _Benutzerhandbuch_.
+
+## Lastenausgleich
+
+Sie können den Lastenausgleich über verschiedene Knoten hinweg unterstützen, indem Sie für die MySQL-Datenbank und die Redis-Instanz sekundäre Verbindungen aktivieren.
+
+Adobe Commerce kann mehrere Datenbanken oder Redis-Instanzen asynchron lesen. Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, können Sie die sekundären Verbindungen konfigurieren, indem Sie die [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) und [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) -Werte in `.magento.env.yaml` -Datei. Nur ein Knoten muss Lese- und Schreibvorgänge-Traffic verarbeiten, sodass die Variablen auf `true` führt zu einer sekundären Verbindung für schreibgeschützten Traffic. Legen Sie die Werte auf `false` , um ein vorhandenes schreibgeschütztes Verbindungs-Array aus dem `env.php` -Datei.
+
+Beispiel der `.magento.env.yaml` Datei:
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
