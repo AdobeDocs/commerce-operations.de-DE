@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Fehlermeldungen"'
 description: Erfahren Sie mehr über Fehlermeldungen, die bei der Verwendung der [!DNL Upgrade Compatibility Tool] in Ihrem Adobe Commerce-Projekt.
-source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '3781'
+source-wordcount: '4140'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,17 @@ Kritische Fehler werden ausgelöst, wenn der benutzerspezifische Code auf Entit�
 | 5072 | Mögliche Verletzung des Designs in Magento 2. Typische Konstruktion von Magento 1.x erkannt | Aktualisierung der Konstruktion auf Magento 2-Standards. |
 | 5076 | Kann nicht im Namespace verwendet werden, da er seit PHP 7 reserviert ist | Ersetzen Sie das reservierte Wort im Namespace durch ein nicht reserviertes Schlüsselwort. |
 | 5077 | Kann nicht als Klassenname verwendet werden, da er seit PHP 7 reserviert ist | Ersetzen Sie den reservierten Klassennamen durch einen nicht reservierten Namen. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### DB-Schema
+
+Kritische Probleme mit DB-Schemas werden gemeldet, wenn entfernte Kerntabellen oder -spalten durch benutzerdefinierte Begrenzungen referenziert werden.
+
+| Fehler-Code | Fehlerbeschreibung | Vorgeschlagene Aktion |
+| --- | --- | --- |
+| 7009 | Benutzerdefinierte Beschränkung bezieht sich auf eine Kerntabelle, die in der Zielversion entfernt wurde | Entfernen Sie die Einschränkungs- oder Aktualisierungsattribute referenceTable und referenceColumn |
+| 7010 | Benutzerdefinierte Beschränkung bezieht sich auf eine Kernspalte, die in der Zielversion entfernt wurde | Entfernen Sie die Einschränkung oder aktualisieren Sie das Attribut referenceColumn |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -199,6 +210,23 @@ Benutzerdefinierte Code-Fehler werden ausgelöst, wenn benutzerdefinierter Code 
 | 6009 | `jQuery.isArray()` veraltet ist | Verwenden Sie stattdessen die native Array.isArray -Methode. |
 | 6009 | `jQuery.parseJSON()` veraltet ist | Um JSON-Zeichenfolgen zu analysieren, verwenden Sie stattdessen die native Methode JSON.parse . |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) ist veraltet | Verwenden Sie stattdessen jQuery.expr.pseudos . |
+
+{style=&quot;table-layout:auto&quot;}
+
+### DB-Schema
+
+DB-Schemafehler werden ausgelöst, wenn Datenbanktabellen, -spalten, -indizes oder -begrenzungen, die in der Adobe Commerce-Zielversion hinzugefügt oder entfernt werden, zu Konflikten mit dem benutzerdefinierten Datenbankschema führen können.
+
+| Fehler-Code | Fehlerbeschreibung | Vorgeschlagene Aktion |
+| --- | --- | --- |
+| 7001 | Die Zielversion führt eine Tabelle mit demselben Namen wie eine Tabelle ein, die von einem benutzerdefinierten Modul deklariert wurde | Verwenden Sie die neue Kerntabelle (falls zutreffend) oder benennen Sie die benutzerdefinierte Tabelle um |
+| 7002 | Die Kerntabelle, die durch ein benutzerdefiniertes Modul erweitert wird, wurde in der Zielversion entfernt | Alle entfernten Kerntabellenverweise sollten aus der Codebase entfernt werden |
+| 7003 | Mit der Zielversion wird eine Spalte mit demselben Namen wie eine von einem benutzerdefinierten Modul deklarierte Spalte eingefügt | Verwenden Sie die neue Kernspalte (falls zutreffend) oder benennen Sie die benutzerdefinierte Spalte um. |
+| 7004 | Die Kernspalte, die durch ein benutzerdefiniertes Modul erweitert wurde, wurde in der Zielversion entfernt | Alle entfernten Kernspaltenverweise sollten aus der Codebase entfernt werden |
+| 7005 | Die Zielkernversion führt einen Index mit derselben referenceId ein, der von einem benutzerdefinierten Modul deklariert wurde | Entfernen (bei Duplizierung des eingeführten Kernindex) oder Umbenennen des benutzerdefinierten Index |
+| 7006 | Der durch ein benutzerdefiniertes Modul erweiterte Core-Index wurde in der Zielversion entfernt | Alle entfernten Core-Indexverweise sollten aus der Codebase entfernt werden |
+| 7007 | Die Ziel-Core-Version führt eine Beschränkung mit demselben Namen wie eine von einem benutzerdefinierten Modul deklarierte Beschränkung ein | Entfernen (bei Duplizierung der eingeführten Kernbegrenzung) oder Umbenennen der benutzerdefinierten Beschränkung |
+| 7008 | Die durch ein benutzerdefiniertes Modul erweiterte Kernbeschränkung wurde in der Zielversion entfernt | Verwenden Sie die neue Kernbeschränkung (falls zutreffend) oder benennen Sie die benutzerdefinierte Einschränkung um. |
 
 {style=&quot;table-layout:auto&quot;}
 
