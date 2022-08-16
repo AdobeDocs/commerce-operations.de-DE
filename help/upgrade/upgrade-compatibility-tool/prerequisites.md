@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Anforderungen"'
 description: 'Stellen Sie sicher, dass Ihr System die zum Ausführen der [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt. '
-source-git-commit: 7ec999f9122eb0707ac6c37b7b49f9c423945318
+source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,31 @@ Die Mindestanforderungen für die Verwendung der [!DNL Upgrade Compatibility Too
 | Verfasser | keine bekannten Anforderungen. |
 | Node.js | Node.js-Versionen `^12.22.0`, `^14.17.0`oder `>=16.0.0` (siehe [Installieren von Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
 | Speicherbeschränkungen | Mindestens 2 GB RAM. |
+
+[!DNL Upgrade Compatibility Tool] erfordert [PCNTL](https://www.php.net/manual/en/book.pcntl.php) und anderen PHP-Erweiterungen für die Ausführung. Überprüfen Sie die erforderlichen PHP-Erweiterungen mit `composer check-platform-reqs` command:
+
+```bash
+# Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
+
+$ composer check-platform-reqs
+Checking platform requirements for packages in the vendor dir
+ext-ctype     *         success provided by symfony/polyfill-ctype
+ext-dom       20031129  success
+ext-filter    7.4.30    success
+ext-json      7.4.30    success
+ext-libxml    7.4.30    success
+ext-mbstring  *         success provided by symfony/polyfill-mbstring
+ext-openssl   7.4.30    success
+ext-pcntl     7.4.30    success
+ext-pcre      7.4.30    success
+ext-phar      7.4.30    success
+ext-simplexml 7.4.30    success
+ext-tokenizer 7.4.30    success
+ext-xml       7.4.30    success
+ext-xmlwriter 7.4.30    success
+ext-zip       1.15.6    success
+php           7.4.30    success
+```
 
 Adobe Commerce wird nur unter Linux-Betriebssystemen unterstützt. Sie können die [!DNL Upgrade Compatibility Tool] in einem Linux-Betriebssystem. Sie müssen die [!DNL Upgrade Compatibility Tool] wo sich Ihre Adobe Commerce-Instanz befindet.
 
