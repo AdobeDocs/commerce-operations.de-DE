@@ -1,7 +1,7 @@
 ---
 title: Sensible und systemspezifische Pfade
 description: Sehen Sie sich eine Liste systemspezifischer und sensibler Konfigurationswerte an.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 019d638403f2dc3e170a56842335da203126d8a6
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 0%
@@ -144,9 +144,9 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Solr Server Path | `catalog/search/solr_server_path` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Hostname des Elasticsearch-Servers | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch-Server-Port | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearch-Indexpräfix | `catalog/search/elasticsearch_index_prefix` | !<!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Elasticsearch-Indexpräfix | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Aktivieren der Elasticsearch-HTTP-Autorisierung | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
-| Elasticsearch HTTP-Benutzername | `catalog/search/elasticsearch_username` | !<!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP-Benutzername | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch-HTTP-Kennwort | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch Server Timeout | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 
@@ -711,7 +711,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | SFTP-Anmeldedaten |
 | SFTP-Anmeldedaten | `payment_nz/paypal_group_all_in_one/wps_other/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | SFTP-Anmeldedaten | `payment_nz/paypal_payment_gateways/paypal_payflowpro_nz/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| API-Anmelde-ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | !![Commerce-only]([enc] |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| API-Anmelde-ID | `payment_nz/authorizenet_directpost/login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Händler MD5 | `payment_nz/authorizenet_directpost/trans_md5` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Email Customer | `payment_nz/authorizenet_directpost/email_customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | E-Mail des Händlers | `payment_nz/authorizenet_directpost/merchant_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
