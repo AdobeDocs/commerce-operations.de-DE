@@ -1,9 +1,9 @@
 ---
 title: '"Führen Sie die [!DNL Upgrade Compatibility Tool]"'
 description: Führen Sie die folgenden Schritte aus, um [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt.
-source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
+source-git-commit: c10afb6632fa4e77f46b540c2b89f54b9cab430c
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,6 @@ bin/uct --help
 Gibt eine Liste mit allen verfügbaren `help` Optionen für [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle:
 
 ```terminal
-- -m, --module-path[=MODULE-PATH]: Path of the modules to be analysed
 - -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
 - -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
@@ -260,13 +259,3 @@ Die [!DNL Upgrade Compatibility Tool] liefert einen Bericht mit Ergebnissen, in 
 - Option verwenden `--ignore-current-version-compatibility-issues` wenn Sie nur neue Probleme erhalten möchten, die mit der Aktualisierung von Ihrer aktuellen Version auf die Zielversion in Ihrer [!DNL Upgrade Compatibility Tool] Bericht.
 - Hinzufügen der `--min-issue-level` festlegen, können Sie mit dieser Einstellung das minimale Problem-Level festlegen, damit nur die wichtigsten Probleme bei Ihrem Upgrade priorisiert werden.
 - Die [!DNL Upgrade Compatibility Tool] erfordert mindestens 2 GB RAM für die Ausführung. Diese Einstellung wird empfohlen, um Probleme aufgrund einer geringen Speicherbegrenzung zu vermeiden. Die [!DNL Upgrade Compatibility Tool] zeigt eine Frage an, wenn Sie die `upgrade:check` -Befehl mit einer niedrigen `memory_limit` -Einstellung.
-- Wenn Sie nur ein bestimmtes Anbieter, Modul oder Verzeichnis analysieren möchten, können Sie auch den Pfad als Option angeben. Führen Sie die `bin` -Befehl mit der hinzugefügten Option `-m`. Dies ermöglicht die [!DNL Upgrade Compatibility Tool] , um ein bestimmtes Modul unabhängig zu analysieren, und hilft bei Speicherproblemen, die auftreten können, wenn das [!DNL Upgrade Compatibility Tool]. Geben Sie die `-m` -Option, um das Tool für ein bestimmtes Modul auszuführen:
-
-   ```bash
-   bin/uct upgrade:check <dir> -m[=MODULE-PATH]
-   ```
-
-Wenn die Argumente wie folgt lauten:
-
-- `<dir>`: Installationsordner von Adobe Commerce.
-- `[=MODULE-PATH]`: Spezifisches Modulpfadverzeichnis.
