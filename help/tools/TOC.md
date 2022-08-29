@@ -1,9 +1,9 @@
 ---
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
-source-git-commit: 1b9f57460f5b336c4ccacef01709c696acbc8316
+source-git-commit: 2ad429bf3676055f3ae199450f75906afc6542e5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -46,3 +46,26 @@ ht-degree: 0%
    - [Die Registerkarte Sicherheit](observation-for-adobe-commerce/security-tab.md)
    - [Registerkarte &quot;Infra&quot;](observation-for-adobe-commerce/oac-infra.md)
    - [Verwendung von Observation für Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
+- Datenmigrationswerkzeug {#data-migration}
+   - [Funktionsweise der Migration](data-migration-tool/how-migration-works.md)
+   - [Best Practices](data-migration-tool/best-practices.md)
+   - [Unterstützte Versionen](data-migration-tool/supported-versions.md)
+   - Grundlagen {#basics}
+      - [Plan erstellen](data-migration-tool/create-plan.md)
+      - [Voraussetzungen](data-migration-tool/prerequisites.md)
+      - [Installieren](data-migration-tool/install.md)
+      - [Upgrade](data-migration-tool/upgrade.md)
+      - [Konfigurieren](data-migration-tool/configure.md)
+      - [Anpassen](data-migration-tool/customize.md)
+      - [Technische Spezifikation](data-migration-tool/technical-specification.md)
+   - Daten migrieren {#migrate-data}
+      - [Übersicht](data-migration-tool/migrate-data/overview.md)
+      - [Einstellungen](data-migration-tool/migrate-data/settings.md)
+      - [Daten](data-migration-tool/migrate-data/data.md)
+      - [Änderungen](data-migration-tool/migrate-data/delta.md)
+      - [Folgemaßnahmen](data-migration-tool/migrate-data/follow-up.md)
+      - [Daten, die eine manuelle Migration erfordern](data-migration-tool/migrate-data/manual.md)
+      - [Schritte zur Migration nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
+   - Ressourcen {#resources}
+      - [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360033020451)
+      - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
