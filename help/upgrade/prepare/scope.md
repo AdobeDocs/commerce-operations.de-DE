@@ -1,9 +1,9 @@
 ---
 title: Aktualisierungsumfang verstehen
 description: Erfahren Sie mehr über abwärtskompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce- oder Magento Open Source-Module oder Drittanbieter-Erweiterungen auswirken können.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher
 
 ## Benutzerdefinierte Module
 
-Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, auf die Sie ein Upgrade durchführen möchten. Dies ist der zeitintensivste und ressourcenintensivste Aktualisierungsprozess. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtskompatiblen Änderungen suchen und sich über neue Vorgehensweisen, wie z. B. die Aufhebung der Controller-Zusammensetzung, informieren. Weitere Informationen hierzu finden Sie im Abschnitt [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Stellen Sie außerdem sicher, dass Sie [Best Practices](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) für die Modulentwicklung.
+Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, auf die Sie ein Upgrade durchführen möchten. Dies ist der zeitintensivste und ressourcenintensivste Aktualisierungsprozess. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtskompatiblen Änderungen suchen und sich über neue Vorgehensweisen, wie z. B. die Aufhebung der Controller-Zusammensetzung, informieren. Weitere Informationen hierzu finden Sie im Abschnitt [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Stellen Sie außerdem sicher, dass Sie [Best Practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) für die Modulentwicklung.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -107,7 +107,7 @@ Alle Probleme, die das identifizierte Tool hat, werden im Bericht mit spezifisch
 
 Verwenden Sie den Bericht, um den Aufwand für die Aktualisierung Ihres Codes für die Aktualisierung zu schätzen. Basierend auf Ihren Erfahrungen können Sie den erforderlichen Aktualisierungsaufwand anhand der Gesamtzahl der festgestellten Probleme und der Schwere der Probleme schätzen. Da es sich um ein Befehlszeilen-Tool handelt, können Sie dieses in automatisierte Test- und Code-Check-Suites einbinden und die JSON-Ausgabe verwenden, um Ihre Berichte zu generieren.
 
-Es wird empfohlen, die Ergebnisse jedes Aktualisierungsprojekts zu speichern, damit Sie zukünftige Upgrade-Ergebnisse mit früheren Ergebnissen vergleichen können. Mit fortgesetzter Verwendung entwickeln Sie ein gutes Gefühl dafür, wie aufwändig es ist, ein Upgrade auf die nächste Version durchzuführen, nur ausgehend vom Zusammenfassungsbericht, der vom Tool bereitgestellt wird.
+Es wird empfohlen, die Ergebnisse jedes Aktualisierungsprojekts zu speichern, damit Sie zukünftige Upgrade-Ergebnisse mit früheren Ergebnissen vergleichen können. Wenn Sie dieses Tool weiterhin verwenden, entwickeln Sie ein gutes Gefühl dafür, wie aufwändig es ist, ein Upgrade auf die nächste Version durchzuführen, und zwar nur ausgehend vom Zusammenfassungsbericht, der vom Tool bereitgestellt wird.
 
 Wir empfehlen Ihnen außerdem, das Tool regelmäßig während der Arbeit an der Aktualisierung auszuführen, um einen Überblick über Ihren Fortschritt zu erhalten. Die Anzahl der Probleme sollte mit der Korrektur verringert werden. Dies hilft Ihrem Team auch bei der Entscheidung über den besten Ansatz zur Verteilung der Arbeit.
 

@@ -1,9 +1,9 @@
 ---
 title: Mehrere Websites mit Nginx einrichten
 description: In diesem Tutorial erfahren Sie, wie Sie mehrere Websites mit Nginx einrichten.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Durch Verwendung von nur einer [nginx virtual host file](#step-2-create-nginx-vi
 
 **So erstellen Sie einen virtuellen Host** (vereinfacht):
 
-Diese Konfiguration erweitert auf [Nginx-Konfiguration](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html).
+Diese Konfiguration erweitert auf [nginx-Konfiguration](../../installation/prerequisites/web-server/nginx.md).
 
 1. Öffnen Sie den Texteditor und fügen Sie die folgenden Inhalte zu einer neuen Datei mit dem Namen `/etc/nginx/sites-available/magento`:
 

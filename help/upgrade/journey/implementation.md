@@ -1,9 +1,9 @@
 ---
 title: Upgrade der Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung von Upgrades für Adobe Commerce- und Magento Open Source-Projekte.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
    - Upgrade der Zielversion
    - Anzahl und Details der festgestellten kritischen Fehler
 
-- Upgrade der Dienste zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzulegen, welche Dienste Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) um zu bestimmen, was zum _Upgrade auf_ Spalte.
+- Upgrade der Dienste zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzulegen, welche Dienste Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zum _Upgrade auf_ Spalte.
 
 
    | Diensleistung | Aktuelle Version | Upgrade auf | Hinweise |
@@ -64,7 +64,7 @@ Darüber hinaus können Partner an der [Adobe Commerce Beta-Programm](https://de
 
 ## Entwicklung und Qualitätssicherung
 
-Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zeit benötigt wird. Daher sollte dieser Prozess so automatisiert wie möglich sein. Die _[Handbuch zum Anwendungstest](https://devdocs.magento.com/guides/v2.4/test/testing.html)_ enthält Details zur Einrichtung und Verwendung von Tools für Plattform- und Systemtests für eine schnellere Qualitätssicherung. Verwenden Sie eine Staging-Umgebung, um Ihre Aktualisierung zu testen und zu validieren, bevor Sie zur Produktion wechseln.
+Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zeit benötigt wird. Daher sollte dieser Prozess so automatisiert wie möglich sein. Die _[Handbuch zum Anwendungstest](https://developer.adobe.com/commerce/testing/guide/)_ enthält Details zur Einrichtung und Verwendung von Tools für Plattform- und Systemtests für eine schnellere Qualitätssicherung. Verwenden Sie eine Staging-Umgebung, um Ihre Aktualisierung zu testen und zu validieren, bevor Sie zur Produktion wechseln.
 
 ## UAT &amp; Vorbereitung des Launches
 

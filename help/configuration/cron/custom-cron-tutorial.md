@@ -1,9 +1,9 @@
 ---
 title: Benutzerdefinierten Cron-Auftrag und eine Cron-Gruppe konfigurieren (Tutorial)
 description: Verwenden Sie dieses Schritt-für-Schritt-Tutorial, um einen benutzerdefinierten Cron-Auftrag zu erstellen.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In diesem Tutorial gehen wir von Folgendem aus:
 
 - Die Commerce-Anwendung ist in `/var/www/html/magento2`
 - Ihr Benutzername und Kennwort für die Commerce-Datenbank sind beide `magento`
-- Sie führen alle Aktionen als [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
+- Sie führen alle Aktionen als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md)
 
 ## Schritt 1: Beispielmodul abrufen
 
@@ -31,7 +31,7 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
 
 **So rufen Sie ein Beispielmodul ab**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie in einen Ordner, der sich nicht im Stammordner Ihrer Commerce-Anwendung befindet (z. B. in Ihrem Basisverzeichnis).
 1. Klonen Sie die [`magento2-samples` Repository][samples].
 

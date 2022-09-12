@@ -1,9 +1,9 @@
 ---
 title: Verwalten des Cache
 description: Verwalten Sie Cachetypen und zeigen Sie den Cache-Status an.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Mit diesem Befehl können Sie alle oder nur die angegebenen Cache-Typen aktivier
 
 >[!INFO]
 >
->Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Bevor Sie dies tun, müssen Sie manuell `<magento_root>/app/etc/env.php` schreibbar durch [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Bevor Sie dies tun, müssen Sie manuell `<magento_root>/app/etc/env.php` schreibbar durch [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 
 Sie können reinigen (auch als _flush_ oder _Aktualisieren_) Cache-Typen, die entweder die Befehlszeile oder den Admin verwenden.
 

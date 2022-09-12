@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren und Ausführen von Cron-Aufträgen
 description: Erfahren Sie, wie Sie Cron-Aufträge verwalten.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Die Commerce-Anwendung verwendet Cron-Aufgaben, die mit verschiedenen Konfigurat
 
 >[!WARNING]
 >
->- Um Probleme während der Installation und Aktualisierung zu vermeiden, empfehlen wir dringend, die gleichen PHP-Einstellungen sowohl auf die PHP-Befehlszeilenkonfiguration als auch auf die Konfiguration des PHP-Webserver-Plug-ins anzuwenden. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- Um Probleme während der Installation und Aktualisierung zu vermeiden, empfehlen wir dringend, die gleichen PHP-Einstellungen sowohl auf die PHP-Befehlszeilenkonfiguration als auch auf die Konfiguration des PHP-Webserver-Plug-ins anzuwenden. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](../../installation/prerequisites/php-settings.md).
 >- In einem System mit mehreren Knoten kann crontab nur auf einem Knoten ausgeführt werden. Dies gilt nur für Sie, wenn Sie aus Gründen der Leistung oder Skalierbarkeit mehr als einen Webknoten einrichten.
 
 
@@ -58,7 +58,7 @@ Die Registerkarte &quot;Commerce&quot;befindet sich in `#~ MAGENTO START` und `#
 
 So erstellen Sie die Registerkarte &quot;Commerce&quot;:
 
-1. Melden Sie sich bei der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich bei der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie zum Installationsverzeichnis für Commerce.
 1. Geben Sie den folgenden Befehl ein:
 
@@ -100,7 +100,7 @@ Sie sollten die Registerkarte &quot;Commerce&quot;nur entfernen, bevor Sie die C
 
 So entfernen Sie die Commerce-Registerkarte:
 
-1. Melden Sie sich als an oder wechseln Sie zu [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich als an oder wechseln Sie zu [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie zum Installationsverzeichnis für Commerce.
 1. Geben Sie den folgenden Befehl ein:
 

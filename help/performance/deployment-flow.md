@@ -1,9 +1,9 @@
 ---
 title: Bereitstellungsfluss
-description: 'Erfahren Sie mehr über die erforderlichen Schritte für die Bereitstellung von Adobe Commerce oder Magento Open Source in einer Produktionsumgebung. '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: Erfahren Sie mehr über die erforderlichen Schritte für die Bereitstellung von Adobe Commerce oder Magento Open Source in einer Produktionsumgebung.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## Aktualisieren des Autoloaders
 
-Bestätigen Sie nach Abschluss der Kompilierung Folgendes: [APCu ist aktiviert](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) und aktualisieren Sie den Autoloader:
+Bestätigen Sie nach Abschluss der Kompilierung Folgendes: [APCu ist aktiviert](../performance/software.md#php-settings) und aktualisieren Sie den Autoloader:
 
 So aktualisieren Sie den Autoloader:
 
@@ -82,7 +82,7 @@ Bereitstellen von statischem Inhalt verursacht [!DNL Commerce] um die folgenden 
 
 Wenn Ihr statischer Inhalt nicht bereitgestellt wird, [!DNL Commerce] führt alle aufgelisteten Vorgänge direkt durch, was zu einer erheblichen Verlängerung der Reaktionszeit führt.
 
-Sie können verschiedene Optionen verwenden, um Bereitstellungsvorgänge basierend auf der Speichergröße und den Anforderungen an die Erfüllung anzupassen. Am häufigsten ist die kompakte Bereitstellungsstrategie. Siehe [Bereitstellungsstrategien für statische Dateien](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+Sie können verschiedene Optionen verwenden, um Bereitstellungsvorgänge basierend auf der Speichergröße und den Anforderungen an die Erfüllung anzupassen. Am häufigsten ist die kompakte Bereitstellungsstrategie. Siehe [Bereitstellungsstrategien für statische Dateien](../configuration/cli/static-view-file-strategy.md)
 
 So stellen Sie statischen Inhalt bereit:
 

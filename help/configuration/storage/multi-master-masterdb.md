@@ -1,9 +1,9 @@
 ---
 title: Automatische Konfiguration Übergeordneter Datenbanken
 description: Siehe Anleitungen zum automatischen Konfigurieren der geteilten Datenbanklösung.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ In diesem Thema werden die ersten Schritte mit der geteilten Datenbanklösung du
 
 ## Installieren der Adobe Commerce-Software
 
-Sie können die Aufspaltung von Datenbanken jederzeit nach der Installation der Adobe Commerce-Software aktivieren. Sie können also geteilte Datenbanken zu einem Adobe Commerce-System hinzufügen, das bereits über Kasse- und Bestelldaten verfügt. Verwenden Sie die Anweisungen in Adobe Commerce README oder dem [Installationshandbuch](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) , um die Adobe Commerce-Software mit einer einzigen Übergeordneten Datenbank zu installieren.
+Sie können die Aufspaltung von Datenbanken jederzeit nach der Installation der Adobe Commerce-Software aktivieren. Sie können also geteilte Datenbanken zu einem Adobe Commerce-System hinzufügen, das bereits über Kasse- und Bestelldaten verfügt. Verwenden Sie die Anweisungen in Adobe Commerce README oder dem [Installationshandbuch](../../installation/overview.md) , um die Adobe Commerce-Software mit einer einzigen Übergeordneten Datenbank zu installieren.
 
 ## Einrichten zusätzlicher Übergeordneter Datenbanken
 

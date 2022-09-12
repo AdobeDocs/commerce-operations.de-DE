@@ -1,9 +1,9 @@
 ---
 title: Module und Erweiterungen verwalten
 description: Verwenden Sie die Befehlszeilenschnittstelle zum Aktivieren, Deaktivieren und Deinstallieren von Adobe Commerce- und Magento Open Source-Modulen und -Erweiterungen.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '76'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Sie müssen die Befehlszeile zum Verwalten von Adobe Commerce- und Magento Open 
 
 ## Modul aktivieren oder deaktivieren
 
-Informationen zum Aktivieren oder Deaktivieren eines Moduls finden Sie unter [Module aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+Informationen zum Aktivieren oder Deaktivieren eines Moduls finden Sie unter [Module aktivieren oder deaktivieren](../../installation/tutorials/manage-modules.md).
 
 ## Modul deinstallieren
 
-Informationen zum Deinstallieren eines Moduls finden Sie unter [Module deinstallieren](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Informationen zum Deinstallieren eines Moduls finden Sie unter [Module deinstallieren](../../installation/tutorials/uninstall-modules.md).
 
-Um ein Design zu deinstallieren, verwenden Sie die [`theme:uninstall`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-theme-uninstall.html) Befehl.
+Um ein Design zu deinstallieren, verwenden Sie die [`theme:uninstall`](../../installation/tutorials/themes.md) Befehl.

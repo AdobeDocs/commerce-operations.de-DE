@@ -1,9 +1,9 @@
 ---
 title: Befehlszeilen-Tool
 description: Verwenden Sie das Befehlszeilen-Tool Commerce , um Installations- und Konfigurationsaufgaben auszuführen.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Weitere Vorteile:
 - Die CLI ist erweiterbar, sodass Entwickler von Drittanbietern sie &quot;einbinden&quot;können. Dies hat den zusätzlichen Vorteil, dass die Lernkurve der Benutzer entfernt wird.
 - Befehle für deaktivierte Module werden nicht angezeigt.
 
-In diesem Thema wird die Konfiguration der Adobe Commerce- und Magento Open Source-Software mithilfe der CLI erläutert. Informationen zur Installation von Commerce finden Sie unter [Installationsfluss](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) im _Installationshandbuch_.
+In diesem Thema wird die Konfiguration der Adobe Commerce- und Magento Open Source-Software mithilfe der CLI erläutert. Informationen zur Installation von Commerce finden Sie unter [Installationsfluss](../../installation/overview.md) im _Installationshandbuch_.
 
 ## Voraussetzungen
 
 Bevor Sie mit der Verwendung der CLI beginnen, stellen Sie Folgendes sicher:
 
-1. Ihr System erfüllt die in [Systemanforderungen](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) im _Installationshandbuch_.
-1. Sie alle erforderlichen Aufgaben abgeschlossen haben, die unter [Voraussetzungen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/prereq-overview.html) im _Installationshandbuch_.
-1. Nachdem Sie sich beim Commerce-Server angemeldet haben, wechseln Sie zu einem Benutzer, der über Schreibberechtigungen für das Commerce-Dateisystem verfügt. Siehe [Wechseln zum Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) im _Installationshandbuch_.
+1. Ihr System erfüllt die in [Systemanforderungen](../../installation/system-requirements.md) im _Installationshandbuch_.
+1. Sie alle erforderlichen Aufgaben abgeschlossen haben, die unter [Voraussetzungen](../../installation/prerequisites/overview.md) im _Installationshandbuch_.
+1. Nachdem Sie sich beim Commerce-Server angemeldet haben, wechseln Sie zu einem Benutzer, der über Schreibberechtigungen für das Commerce-Dateisystem verfügt. Siehe [Wechseln zum Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) im _Installationshandbuch_.
 
 ## Ausführen von Befehlen
 

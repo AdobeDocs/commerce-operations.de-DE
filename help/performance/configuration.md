@@ -1,9 +1,9 @@
 ---
 title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung mithilfe dieser Best Practices.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Commerce bietet viele Einstellungen und Tools, mit denen Sie die Reaktionszeit a
 
 ## Cron-Aufträge
 
-Alle asynchronen Vorgänge in [!DNL Commerce] werden mit Linux ausgeführt `cron` Befehl. Siehe [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) , um sie korrekt zu konfigurieren.
+Alle asynchronen Vorgänge in [!DNL Commerce] werden mit Linux ausgeführt `cron` Befehl. Siehe [Cron konfigurieren und ausführen](../configuration/cli/configure-cron-jobs.md) , um sie korrekt zu konfigurieren.
 
 ## Indexer
 
@@ -40,7 +40,7 @@ Es kann vorkommen, dass intensive Verkäufe an eine Storefront gleichzeitig mit 
 
 >[!WARNING]
 >
->Die **[!UICONTROL Developer]** Registerkarten und Optionen sind nur in [Entwicklermodus](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe Commerce auf Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt nicht `Developer` -Modus.
+>Die **[!UICONTROL Developer]** Registerkarten und Optionen sind nur in [Entwicklermodus](../configuration/cli/set-mode.md). [Adobe Commerce auf Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt nicht `Developer` -Modus.
 
 ## Zurückgestellte Bestandsaktualisierung
 
@@ -66,7 +66,7 @@ So verbessern Sie die Reaktionsfähigkeit Ihrer Storefront [!DNL Commerce] Wechs
 
 >[!INFO]
 >
->Die **[!UICONTROL Developer]** Registerkarten und Optionen sind nur in [Entwicklermodus](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html). [Adobe [!DNL Commerce] zur Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt nicht `Developer` -Modus.
+>Die **[!UICONTROL Developer]** Registerkarten und Optionen sind nur in [Entwicklermodus](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] zur Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt nicht `Developer` -Modus.
 
 Wenn Sie die **[!UICONTROL Enable [!DNL JavaScript] Bundling]** können Sie Commerce alle JS-Ressourcen in einem oder mehreren Bundles zusammenführen, die in Storefront-Seiten geladen werden. Das Bundling von JS führt zu weniger Anforderungen an den Server, was die Seitenleistung verbessert. Es hilft auch dem Browser, JS-Ressourcen beim ersten Aufruf zwischenzuspeichern und sie für alle weiteren Browser wiederzuverwenden. Diese Option bringt auch eine verzögerte Auswertung mit sich, da alle JS als Text geladen werden. Sie initiiert die Analyse und Auswertung von Code erst, nachdem bestimmte Aktionen auf der Seite ausgelöst wurden. Diese Einstellung wird jedoch nicht für Stores empfohlen, bei denen die erste Seitenladezeit äußerst wichtig ist, da der gesamte JS-Inhalt beim ersten Aufruf geladen wird.
 

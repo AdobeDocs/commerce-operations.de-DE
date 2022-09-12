@@ -1,9 +1,9 @@
 ---
 title: Cache-Leerung mit Varnish
 description: Erfahren Sie, wie das Cache-Leeren mit Varnish funktioniert und wie Sie es als Web-Caching-Beschleuniger für die Adobe Commerce-Anwendung verwenden.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ Sie können dann beim Aktualisieren des Commerce-Zwischenspeichers (auch als *Re
 
 Um den Cache mit dem Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools > **Cacheverwaltung** Klicken Sie auf **Magento-Cache leeren** oben auf der Seite. (Sie können auch einzelne Cache-Typen aktualisieren.)
 
-Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise das [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise das [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).

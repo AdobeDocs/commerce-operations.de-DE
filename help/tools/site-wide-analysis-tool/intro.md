@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Site-Wide Analysis Tool]"'
+title: "[!DNL Site-Wide Analysis Tool]"
 description: Erfahren Sie mehr über die [!DNL Site-Wide Analysis] Tool, seine Verwendung, der Installationsprozess und wie der Zugriff abgerufen werden kann
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Zeigen Sie alle wichtigen Einblicke in Ihre Site an einem Ort an. [!DNL Site-Wid
 
 - [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Bietet Adobe Commerce- und Magento-Open-Source-Kunden Echtzeiteinblicke in den Sicherheitsstatus ihres Stores, indem sie proaktiv Malware erkennen und ihnen mitteilen, ob ihr Speicher gefährdet ist.
 
-- [**[!DNL Upgrade Compatability Tool]**](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) - Führt die benutzerdefinierte Instanz von Adobe Commerce mit der Ziel-Upgrade-Version aus und gibt eine Zusammenfassung kritischer Probleme, Fehler und Warnungen zurück, die behoben werden müssen, wodurch der Prozess der Upgrade-Analyse einfacher, schneller und billiger wird.
+- [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Führt die benutzerdefinierte Instanz von Adobe Commerce mit der Ziel-Upgrade-Version aus und gibt eine Zusammenfassung kritischer Probleme, Fehler und Warnungen zurück, die behoben werden müssen, wodurch der Prozess der Upgrade-Analyse einfacher, schneller und billiger wird.
 
 - [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) - Überwachung mehrerer Metriken, um die Leistung der Plattform proaktiv zu verfolgen und spezifische Anweisungen zur Problembehebung bereitzustellen, damit Händler kritische Ausfallzeiten vermeiden und über CPU, Anwendungsleistung, Datenträger, Speicher und Datenbank auf dem Laufenden bleiben können.
 

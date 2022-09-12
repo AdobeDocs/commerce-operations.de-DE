@@ -1,9 +1,9 @@
 ---
-title: '"Die [!UICONTROL Summary] tab"'
+title: "Die [!UICONTROL Summary] tab"
 description: Erfahren Sie mehr über die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
-source-wordcount: '2650'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Die **[!UICONTROL Deployment State]** frame facets bestimmte Bereitstellungssät
 
 ![IP-Häufigkeit](../../assets/tools/ip-frequency.jpg)
 
-Die **[!UICONTROL IP Frequency]** frame zählt die (&quot;MISS&quot;- und &quot;PASS&quot;-Status für jede IP-Adresse aus der [!DNL Fastly] Protokolle. Webanfragen mit diesen Status erreichen den Herkunftsserver und fügen dem Server Ladevorgänge hinzu. Er zeigt die zwanzig häufigsten Adressen in der Häufigkeit. Dieser Frame kann verwendet werden, um IP-Angriffe oder Quellen hoher Belastung auf einer Website zu erkennen.
+Die **[!UICONTROL IP Frequency]** frame zählt die Status (&#39;MISS&#39; und &#39;PASS&#39;) für jede IP aus der [!DNL Fastly] Protokolle. Webanfragen mit diesen Status erreichen den Herkunftsserver und fügen dem Server Ladevorgänge hinzu. Er zeigt die zwanzig häufigsten Adressen in der Häufigkeit. Dieser Frame kann verwendet werden, um IP-Angriffe oder Quellen hoher Belastung auf einer Website zu erkennen.
 
 ## [!UICONTROL IP Response – top 20 URLs in duration]
 
@@ -152,7 +152,7 @@ Manchmal ist es schwierig festzustellen, welche IP-Adresse die meisten Anforderu
 
 ![potenzielle Bots](../../assets/tools/potential-bots.jpg)
 
-Die **[!UICONTROL Potential Bots]** frame untersucht Anforderungen mit einem request_user_agent-Namen wie NULL oder &quot;%bot%&quot;. Normalerweise folgt der request_user_agent &quot;%bot%&quot;der Richtlinieneinrichtung in `robots.txt` -Datei.
+Die **[!UICONTROL Potential Bots]** frame betrachtet Anforderungen mit einem request_user_agent-Namen wie NULL oder &#39;%bot%&#39;. Normalerweise folgt der request_user_agent von &#39;%bot%&#39; der Richtlinieneinrichtung in `robots.txt` -Datei.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -181,7 +181,7 @@ Die **[!UICONTROL Nginx access by node]** frame betrachtet die Anzahl der `acces
 * &#39;%self-leave%&#39;) als &#39;susp_node&#39;
 * &#39;%member = 3/3 (join/total)%&#39;) as &#39;3of3&#39;
 * &#39;%members = 2/3 (join/total)%&#39;) as &#39;2of3&#39;
-* &#39;%members = 2/2%&#39;) as &#39;2of2&#39; ・ &#39;%members = 1/2%&#39;) as &#39;1of2&#39; ・ &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
+* &#39;%members = 2/2%&#39;) as &#39;2of2&#39; * &#39;%members = 1/2%&#39;) as &#39;1of2&#39; * &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
 * &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
 * &#39;%\[Hinweis\] /usr/sbin/mysqld (mysqld 10.%&#39;) als &#39;sql_restart&#39;
 * &#39;%Quorum: Kein Knoten mit vollständigem Status:%&#39;) als &#39;no_node_count&#39;
@@ -190,7 +190,7 @@ Die **[!UICONTROL Nginx access by node]** frame betrachtet die Anzahl der `acces
 * &#39;%WSREP: Mitglied 2%&quot;) als &quot;mem2&quot;
 * &#39;%WSREP: Mit Gruppe synchronisiert, bereit für Verbindungen%&#39;) als &#39;bereit&#39;
 * &#39;%/usr/sbin/mysqld, Version:%&#39;) als &#39;mysql_restart_mysql.slow&#39;
-* &quot;%\[Hinweis\] WSREP: Neue Cluster-Ansicht: globaler Status:%&#39;) als &#39;galera_cluster_view_chng&#39;
+* &#39;%\[Hinweis\] WSREP: Neue Cluster-Ansicht: globaler Status:%&#39;) als &#39;galera_cluster_view_chng&#39;
 
 Diese Signale können auf Speicher-, Speicher- oder Abfrageprobleme hinweisen, wenn sich der Status häufig ändert.
 
@@ -228,7 +228,7 @@ Diese Signale können auf Speicher-, Speicher- oder Abfrageprobleme hinweisen, w
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
 * &#39;%\[Hinweis\] WSREP: Speicherkarte auf Festplatte leeren ...%&quot;) als &quot;mem_map_flush&quot;
 * &#39;%Interner MariaDB-Fehlercode: 1146%&quot;) als &quot;sql_1146&quot;
-* &#39;%Interner MariaDB-Fehlercode: 1062%&#39;) als &#39;sql_1062&#39; ・ &#39;%1062 \[Warning\] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Interner MariaDB-Fehlercode: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062 \[Warning\] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
 * &#39;%Interner MariaDB-Fehlercode: 1064%&quot;) als &quot;sql_1064&quot;
 * &#39;%InnoDB: Assertionsfehler in Datei%&quot;) als &quot;assertion_err&quot;
 * &#39;%mysqld_safe Anzahl der jetzt ausgeführten Prozesse: 0%&quot;) als &quot;mysql_oom&quot;
@@ -289,7 +289,7 @@ Wie sich PHP-Prozesse verhalten, hängt davon ab [Konfiguration](https://www.php
 
 ![PHP-Fehler](../../assets/tools/php-errors.jpg)
 
-Die **[!UICONTROL PHP errors]** frame zeigt die Anzahl von PHP-Fehlern mit Workern während des ausgewählten Zeitrahmens an. Weitere Informationen finden Sie unter [Adobe Commerce PHP-Einstellungen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+Die **[!UICONTROL PHP errors]** frame zeigt die Anzahl von PHP-Fehlern mit Workern während des ausgewählten Zeitrahmens an. Weitere Informationen finden Sie unter [Adobe Commerce PHP-Einstellungen](../../installation/prerequisites/php-settings.md).
 
 **PHP-Fehler und -Meldungen**
 
@@ -309,7 +309,7 @@ Die **[!UICONTROL PHP errors]** frame zeigt die Anzahl von PHP-Fehlern mit Worke
 
 ![PHP-Prozesse](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] verwendet von [!DNL Nginx]. Informationen zu den Systemanforderungen finden Sie unter [Den Adobe Commerce-Versionen zugeordnete PHP-Versionsanforderungen](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). Die **[!UICONTROL PHP processes]** frame zeigt die Anzahl von PHP-Prozessen an, die zu einem bestimmten Zeitpunkt in der ausgewählten Timeline ausgeführt werden.
+[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] verwendet von [!DNL Nginx]. Informationen zu den Systemanforderungen finden Sie unter [Den Adobe Commerce-Versionen zugeordnete PHP-Versionsanforderungen](../../installation/system-requirements.md). Die **[!UICONTROL PHP processes]** frame zeigt die Anzahl von PHP-Prozessen an, die zu einem bestimmten Zeitpunkt in der ausgewählten Timeline ausgeführt werden.
 
 ## [!UICONTROL Secondary processes]
 
@@ -321,7 +321,7 @@ Sekundäre Prozesse können sich auf die Antwort der Site auswirken. Die **[!UIC
 
 ![im Vergleich zu vor Woche](../../assets/tools/traffic-vs-week-ago.jpg)
 
-Die **[!UICONTROL Traffic vs Week Ago]** frame betrachtet den Website-Traffic (Anforderungen) von der [!DNL Fastly] Protokolle mit Cache-Status (&quot;MISS&quot;, &quot;PASS&quot;). Diese Anforderungen erhöhen die Auslastung der Herkunftsserver. In diesem Frame wird das Volumen der Webanfrage im Vergleich zu einer Woche im selben Zeitraum angezeigt.
+Die **[!UICONTROL Traffic vs Week Ago]** frame betrachtet den Website-Traffic (Anforderungen) von der [!DNL Fastly] Protokolle mit Cache-Status (&#39;MISS&#39;, &#39;PASS&#39;). Diese Anforderungen erhöhen die Auslastung der Herkunftsserver. In diesem Frame wird das Volumen der Webanfrage im Vergleich zu einer Woche im selben Zeitraum angezeigt.
 
 ## [!UICONTROL Fastly Cache]
 
@@ -402,7 +402,7 @@ Die **[!UICONTROL Cron view]** frame betrachtet das Cron-Log auf einen Ausgleich
 * &#39;%Sperre für Cron-Auftrag konnte nicht erworben werden%&#39; als &#39;cron_lock&#39;
 * &#39;%Allgemeiner Fehler: MySQL Server 2006 ist weg%&#39; als &#39;mysql_has_away_away&#39;
 * &#39;%error%&#39; as &#39;error&#39;
-* &#39;%Allgemeiner Fehler: 1205 Zeitüberschreitung der Sperrwartezeit überschritten%&quot;als sql_1205_cron
+* &#39;%Allgemeiner Fehler: 1205 Zeitüberschreitung der Sperrwartezeit überschritten%&#39; als sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 

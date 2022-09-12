@@ -1,9 +1,9 @@
 ---
 title: Aufspaltung der Datenbankleistung
 description: Erfahren Sie mehr über die geteilte Datenbanklösung für Adobe Commerce und Magento Open Source.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Dies bedeutet auch, dass Sie Folgendes tun können:
 
    >[!WARNING]
    >
-   >Sie müssen die beiden zusätzlichen Datenbankinstanzen manuell sichern. Commerce sichert nur die Hauptdatenbankinstanz. Die [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) -Befehl und Admin-Optionen sichern die zusätzlichen Tabellen nicht.
+   >Sie müssen die beiden zusätzlichen Datenbankinstanzen manuell sichern. Commerce sichert nur die Hauptdatenbankinstanz. Die [`magento setup:backup --db`](../../installation/tutorials/backup.md) -Befehl und Admin-Optionen sichern die zusätzlichen Tabellen nicht.
 
 ## Voraussetzungen
 

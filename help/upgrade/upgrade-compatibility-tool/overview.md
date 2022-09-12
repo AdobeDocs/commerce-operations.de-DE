@@ -1,9 +1,9 @@
 ---
-title: '"Überblick über die [!DNL Upgrade Compatibility Tool]"'
+title: "Überblick über die [!DNL Upgrade Compatibility Tool]"
 description: Erfahren Sie mehr über die [!DNL Upgrade Compatibility Tool] und wie es Ihnen bei Ihrem Adobe Commerce-Projekt helfen kann.
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -45,15 +45,15 @@ Verwenden Sie die folgenden Ressourcen, wenn Sie Informationen benötigen oder F
 
 So stellen Sie eine Verbindung zu [!DNL Upgrade Compatibility Tool] Team, kontaktieren Sie uns im Engineering Slack-Kanal [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F). Wir möchten Ihr Feedback, Ihre Probleme und Anregungen hören, um uns bei der Verbesserung des Tools zu unterstützen.
 
-Die [!DNL Upgrade Compatibility Tool] verwendet Regeln, die in unserer [Kodierungsstandards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) , um sicherzustellen, dass Ihr Projekt die Best Practices von Adobe Commerce befolgt, und um Sie bei der Verbesserung und Erweiterung der [!DNL Upgrade Compatibility Tool].
+Die [!DNL Upgrade Compatibility Tool] verwendet Regeln, die in unserer [Kodierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/) , um sicherzustellen, dass Ihr Projekt die Best Practices von Adobe Commerce befolgt, und um Sie bei der Verbesserung und Erweiterung der [!DNL Upgrade Compatibility Tool].
 
-Siehe Abschnitt [Beitragen](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) Thema für weitere Informationen zum Thema beitragende Kodierungsstandards.
+Siehe Abschnitt [Beitragen](https://developer.adobe.com/commerce/php/coding-standards/contributing/) Thema für weitere Informationen zum Thema beitragende Kodierungsstandards.
 
 ## Ressourcen
 
 In den folgenden Ressourcen finden Sie Informationen zu Adobe Commerce-Upgrades:
 
-- Die [Upgrade-Handbuch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) bietet einen Überblick über die typischen Journey und Best Practices für die Aktualisierung von Adobe Commerce oder Magento Open Source, die auf diesem Journey folgen.
+- Die [Upgrade-Handbuch](../overview.md) bietet einen Überblick über die typischen Journey und Best Practices für die Aktualisierung von Adobe Commerce oder Magento Open Source, die auf diesem Journey folgen.
 - Die [Bevorstehende Versionen](https://devdocs.magento.com/release/) auf der Seite finden Sie die Daten für geplante und bevorstehende Versionen.
 - Die [Community-Ressourcen](https://developer.adobe.com/commerce/contributor/community/) -Seite, um Diskussionen zu beginnen oder weitere Informationen zu finden.
 - Überprüfen Sie die [verwandte Tools](../upgrade-compatibility-tool/related-tools.md) für nützliche Tools in Ihrer typischen Upgrade-Journey.

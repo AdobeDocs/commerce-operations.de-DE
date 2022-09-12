@@ -1,9 +1,9 @@
 ---
 title: Übergeordnete Datenbanken manuell konfigurieren
 description: Siehe Anleitungen zum manuellen Konfigurieren der geteilten Datenbanklösung.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe empfiehlt dringend, Ihre aktuelle Datenbank und Ihr Dateisystem zu sichern
 
 **Sichern des Systems**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Geben Sie die folgenden Befehle ein:
 
    ```bash
@@ -476,7 +476,7 @@ Der letzte Schritt bei der manuellen Aufspaltung von Datenbanken besteht darin, 
 
 So aktualisieren Sie die Bereitstellungskonfiguration:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Sichern Sie Ihre Bereitstellungskonfiguration:
 
    ```bash

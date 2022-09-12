@@ -1,9 +1,9 @@
 ---
 title: Einzelmaschinenimplementierung
 description: Erfahren Sie, wie Sie mithilfe der Befehlszeile Updates für Commerce auf einem Produktionsserver bereitstellen.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -91,6 +91,6 @@ Dieses Thema enthält Anweisungen zur Bereitstellung von Aktualisierungen für C
 
 <!-- link definitions -->
 
-[install]: https://devdocs.magento.com/guides/v2.4/install-gde/install/prepare-install.html
-[composer]: https://devdocs.magento.com/guides/v2.4/install-gde/composer.html
-[file-owner]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html#magento-file-system-owner
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[composer]: ../../installation/composer.md
+[file-owner]: ../../installation/prerequisites/file-system/overview.md

@@ -1,9 +1,9 @@
 ---
 title: Datenmigrationseinstellungen
 description: Erfahren Sie, wie Sie mit der Migration der Einstellungen von Magento 1 zu Magento 2 beginnen. [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Die `Settings` -Modus migriert Stores, Websites und Systemkonfigurationen wie Ve
 
 Bevor Sie beginnen, bereiten Sie die folgenden Schritte vor:
 
-1. Melden Sie sich mit Ihrer Magento 2-Instanz als [der Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich beim Anwendungsserver als [Dateisysteminhaber](../../../installation/prerequisites/file-system/overview.md).
 
-1. Änderung an Magento 2 `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem System-PATH hinzugefügt wird.
+1. Änderung an `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem System hinzugefügt wird. `PATH`.
 
 >[!NOTE]
 >
@@ -53,15 +53,15 @@ Die `Migration completed` wird angezeigt, nachdem die Einstellungen erfolgreich 
 
 Sie können die Systemkonfigurationen beim Migrieren von Einstellungen ignorieren, umbenennen oder ändern. Geben Sie dazu Ihre benutzerdefinierten Regeln im `settings.xml` -Datei.
 
-1. Melden Sie sich mit Ihrer Magento 2-Instanz als Server an oder wechseln Sie zu der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich beim Anwendungsserver als an oder wechseln Sie zu der [Dateisysteminhaber](../../../installation/prerequisites/file-system/overview.md).
 
 1. Wechseln Sie in den folgenden Ordner:
 
    ```bash
-   cd <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
+   cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
-   Wenn beispielsweise Magento 2 in `/var/www/html`, die `settings.xml.dist` -Datei sich in einem der folgenden Verzeichnisse befindet:
+   Wenn das Programm beispielsweise in `/var/www/html`, die `settings.xml.dist` -Datei sich in einem der folgenden Verzeichnisse befindet:
 
    * `/var/www/html/vendor/magento/data-migration-tool/etc/opensource-to-commerce`
 

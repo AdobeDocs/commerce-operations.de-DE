@@ -1,9 +1,9 @@
 ---
 title: Installationshandbuch
 description: Verwenden Sie dieses Installationshandbuch [!DNL Site-Wide Analysis Tool] für Ihre Website
-source-git-commit: a694de861fcc681d864ffb2c405b2366b32bba41
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1063'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ bin/magento module:status Magento_ServicesConnector
 
 Wenn Sie die Erweiterung installiert und mit einem vorhandenen API-Schlüssel für einen anderen Dienst konfiguriert haben, haben Sie **MUSS API-Schlüssel neu generieren** und aktualisieren Sie sie im Adobe Commerce-Admin für den Agenten.
 
-1. Website in [Wartungsmodus](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+1. Website in [Wartungsmodus](../../installation/tutorials/maintenance-mode.md).
 
 1. Anmelden [accounts.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 

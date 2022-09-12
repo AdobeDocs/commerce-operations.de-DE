@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren von Suchbegriffen
 description: Erfahren Sie, wie Sie mithilfe von CSV-Dateien Stoppwörter für Adobe Commerce verwalten.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Standardlebensdauer für Stoppwörter-Dateien [cache](https://glossary.magento.c
 
 **So bearbeiten Sie Stoppwörter**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Verwenden Sie einen Texteditor, um eine Stoppwortdatei im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis.
 
    CSV-Dateien verwenden die Namenskonvention `stopwords_<locale_code>.csv`. Die deutsche Stoppwortdatei heißt beispielsweise `stopwords_de_DE.csv`.
@@ -60,7 +60,7 @@ Standardlebensdauer für Stoppwörter-Dateien [cache](https://glossary.magento.c
 
 **So fügen Sie Stoppwörter für ein Gebietsschema hinzu**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 
 1. Verwenden Sie einen Texteditor, um eine Stoppwortdatei mit dem Namen `stopwords_<locale_code>.csv` im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis.
 
@@ -125,7 +125,7 @@ Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie d
 
 ## So ändern Sie den Ordner von Ihrem Modul aus
 
-1. [Modul erstellen](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/module-file-structure.html)
+1. [Modul erstellen](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. In Ihrem Modul `etc/di.xml` Anweisungen hinzufügen:
 
    ```xml

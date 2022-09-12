@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren und Verwenden von Varnish
 description: Erfahren Sie, wie Varnish Dateien speichert und den HTTP-Traffic verbessert.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%
@@ -144,7 +144,7 @@ Wenn sich der Inhalt auf dem Server ändert, lädt der Client das statische Asse
 
 <!-- Link Definitions -->
 
-[Datenbank]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/cache/partial-caching/database-caching.html
+[Datenbank]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [Der große arnistische Bild]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Varnish Cache]: https://varnish-cache.org
 [Varnish-Startoptionen]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

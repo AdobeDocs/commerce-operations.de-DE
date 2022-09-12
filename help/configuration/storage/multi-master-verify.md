@@ -1,9 +1,9 @@
 ---
 title: Geteilte Datenbank überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob eine Commerce-geteilte Datenbankkonfiguration ordnungsgemäß funktioniert.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Nach der Konfiguration werden die Übergeordneten Datenbanken wie folgt konfigur
 - Handel [Anführungszeichen](https://glossary.magento.com/quote) Datenbank: 11 Tabellen
 - Commerce-Verkaufsdatenbank: 55 Tabellen
 
-Um sicherzustellen, dass Ihre geteilten Datenbanken ordnungsgemäß funktionieren, führen Sie die folgenden Aufgaben aus und überprüfen Sie mithilfe eines Datenbank-Tools wie [phpmyadmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Um sicherzustellen, dass Ihre geteilten Datenbanken ordnungsgemäß funktionieren, führen Sie die folgenden Aufgaben aus und überprüfen Sie mithilfe eines Datenbank-Tools wie [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | Was zu überprüfen ist | Überprüfen |
 | -------------- | ------------- |
@@ -30,4 +30,4 @@ Um sicherzustellen, dass Ihre geteilten Datenbanken ordnungsgemäß funktioniere
 
 >[!WARNING]
 >
->Sie müssen die beiden zusätzlichen Datenbankinstanzen manuell sichern. Commerce sichert nur die Hauptdatenbankinstanz. Die [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) -Befehl und Admin-Optionen sichern die zusätzlichen Tabellen nicht.
+>Sie müssen die beiden zusätzlichen Datenbankinstanzen manuell sichern. Commerce sichert nur die Hauptdatenbankinstanz. Die [`magento setup:backup --db`](../../installation/tutorials/backup.md) -Befehl und Admin-Optionen sichern die zusätzlichen Tabellen nicht.

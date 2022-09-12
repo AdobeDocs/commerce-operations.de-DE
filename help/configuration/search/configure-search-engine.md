@@ -1,9 +1,9 @@
 ---
 title: Suchmaschinenkonfiguration
 description: Konfigurieren Sie eine Suchmaschine mit Adobe Commerce und Magento Open Source.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Sofern Sie die Servereinstellungen Ihrer Suchmaschine nicht geändert haben, sol
 
    Fahren Sie fort mit:
 
-   - [Konfigurieren von Apache für Ihre Suchmaschine](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html)
-   - [Konfigurieren von nginx für Ihre Suchmaschine](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html)
+   - [Konfigurieren von Apache für Ihre Suchmaschine](../../installation/prerequisites/search-engine/configure-apache.md)
+   - [Konfigurieren von nginx für Ihre Suchmaschine](../../installation/prerequisites/search-engine/configure-nginx.md)
 
    oder Sie sehen:
 
@@ -53,7 +53,7 @@ Wenn ja, versuchen Sie Folgendes:
 - Stellen Sie sicher, dass der Suchmaschinenserver ausgeführt wird.
 - Wenn sich der Server auf einem anderen Host als Commerce befindet, melden Sie sich beim Commerce-Server an und pingen Sie den Suchmaschinen-Host. Beheben Sie Probleme mit der Netzwerkverbindung und testen Sie die Verbindung erneut.
 - Überprüfen Sie das Befehlsfenster, in dem Sie Elasticsearch gestartet haben, oder OpenSearch auf Stacktraces und Ausnahmen. Sie müssen diese auflösen, bevor Sie fortfahren. Stellen Sie insbesondere sicher, dass Sie Ihre Suchmaschine als Benutzer mit `root` Berechtigungen.
-- Stellen Sie sicher, dass [UNIX-Firewall und SELinux](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#firewall-selinux) sind beide deaktiviert oder legen Regeln fest, mit denen Ihre Suchmaschine und Ihr Commerce miteinander kommunizieren können.
+- Stellen Sie sicher, dass [UNIX-Firewall und SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sind beide deaktiviert oder legen Regeln fest, mit denen Ihre Suchmaschine und Ihr Commerce miteinander kommunizieren können.
 - Überprüfen Sie den Wert der **Hostname des Elasticsearch-Servers** -Feld. Stellen Sie sicher, dass der Server verfügbar ist. Sie können stattdessen die IP-Adresse des Servers ausprobieren.
 - Verwenden Sie die `netstat -an | grep <listen-port>` -Befehl, um zu überprüfen, ob der im **Elasticsearch-Server-Port** nicht von einem anderen Prozess verwendet wird.
 
@@ -85,7 +85,7 @@ So leeren Sie den Cache mit der Befehlszeile: [`bin/magento cache:clean`](../cli
 
 So fügen Sie eine Neuindizierung mithilfe der Befehlszeile ein:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Geben Sie einen der folgenden Befehle ein:
 
    Geben Sie den folgenden Befehl ein, um nur den Katalogsuchindex neu zu indizieren:

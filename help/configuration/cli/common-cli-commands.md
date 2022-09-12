@@ -1,9 +1,9 @@
 ---
 title: Allgemeine Befehle
 description: Sehen Sie sich ein Beispiel für gängige Commerce-CLI-Befehle und -Verwendung an.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,10 @@ Befehle werden nur in Form einer Zusammenfassung angezeigt. Klicken Sie für wei
 | [`magento dev:tests:run`](../cli/unit-tests.md) | Führt automatisierte Tests aus |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Aktualisieren Sie Ihre Layout-XML-Dateien entsprechend dem neuen XSLT-Stylesheet (Extensible Stylesheet Language Transformations) |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Generieren Sie Daten zur Verwendung für Leistungstests. |
-| [`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html) | Installiert optionale Beispieldaten nach der Installation der Commerce-Anwendung.<br><br>Weitere Informationen zu Musterdaten finden Sie unter [Optionale Musterdaten](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installiert optionale Beispieldaten nach der Installation der Commerce-Anwendung.<br><br>Weitere Informationen zu Musterdaten finden Sie unter [Optionale Musterdaten](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Verwalten von Backend-Konfigurationen |
-| [`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html) | Erstellt/bearbeitet/entsperrt Administratorbenutzer. |
-| [`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html) | Aktiviert/deaktiviert Hinweise zu Entwicklervorlagen. |
+| [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Erstellt/bearbeitet/entsperrt Administratorbenutzer. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Aktiviert/deaktiviert Hinweise zu Entwicklervorlagen. |
 
 ## Allgemeine Argumente
 

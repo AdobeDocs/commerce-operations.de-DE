@@ -1,7 +1,7 @@
 ---
 title: Layout-Dateien konvertieren
 description: Konvertieren Sie XML-Layoutdateien.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Verwenden Sie diesen Befehl, um Ihre XML-Dateien zu aktualisieren, wenn Sie das entsprechende XSLT-Stylesheet (Extensible Stylesheet Language Transformations) aktualisieren.
 
-- [Layout-Anweisungen](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-instructions.html)
-- [Layout-Dateitypen](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html)
+- [Layout-Anweisungen](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [Layout-Dateitypen](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 Befehlsoptionen:
 

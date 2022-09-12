@@ -1,9 +1,9 @@
 ---
 title: Suchmaschinenübersicht
 description: Überblick über Suchmaschinenoptionen für Adobe Commerce und Magento Open Source.
-source-git-commit: 52c472bf80942339b511292243b5da9babf829d9
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,9 @@ Nach der Installation und Integration Ihrer Suchmaschine in Adobe Commerce müss
 
 <!-- Link Definitions -->
 
-[Voraussetzungen für Suchmaschinen]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html
-[Konfigurieren von nginx für Ihre Suchmaschine]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html
-[Konfigurieren von Apache für Ihre Suchmaschine]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html
+[Voraussetzungen für Suchmaschinen]: ../../installation/prerequisites/search-engine/overview.md
+[Konfigurieren von nginx für Ihre Suchmaschine]: ../../installation/prerequisites/search-engine/configure-nginx.md
+[Konfigurieren von Apache für Ihre Suchmaschine]: ../../installation/prerequisites/search-engine/configure-apache.md
 [Elasticsearch]: https://www.elastic.co
-[Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-[Commerce-Software installieren]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-install.html
+[Commerce-Software installieren]: ../../installation/composer.md
 [OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/

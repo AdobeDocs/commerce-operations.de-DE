@@ -1,9 +1,9 @@
 ---
 title: Best Practices
 description: Verwenden Sie von der Adobe empfohlene Best Practices, um den Aktualisierungsprozess für Ihre Adobe Commerce- und Magento Open Source-Projekte zu verwalten.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Wenn Ihr Projekt live ist, empfehlen wir Ihnen, eine Prüfung durchzuführen, um
 
 Ab dem Moment, in dem Sie mit der Arbeit an einem Projekt beginnen, sollten Sie überlegen, wie sich zukünftige Upgrades durch Ihre aktuelle Arbeit auswirken werden. Befolgen Sie stets die Best Practices für die Entwicklung von Adobe Commerce, wie hier beschrieben:
 
-- [Best Practices für die Entwicklung](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [Kodierungsstandards](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [Best Practices für die Entwicklung](https://developer.adobe.com/commerce/php/best-practices/)
+- [Kodierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Beginnen Sie mit der Übernahme der Adobe Commerce Extensibility-Plattform, falls noch nicht geschehen. Die Plattform ermöglicht es Ihnen, Prozesse effizient anzupassen, Systeme zu integrieren und neue Funktionen bereitzustellen und gleichzeitig eine SaaS-ähnliche Upgrade-Funktion zu erhalten. Zu den Funktionen gehören:
 
@@ -80,7 +80,7 @@ Prüfen Sie die für die Aktualisierung erforderliche Arbeit:
 
 ### Tests nach der Aktualisierung
 
-Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zeit benötigt wird. Daher sollte dieser Prozess so automatisiert wie möglich sein. Sie können von der Verwendung der Kerntestwerkzeuge profitieren. Die [Handbuch zum Anwendungstest](https://devdocs.magento.com/guides/v2.4/test/testing.html) enthält Details.
+Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zeit benötigt wird. Daher sollte dieser Prozess so automatisiert wie möglich sein. Sie können von der Verwendung der Kerntestwerkzeuge profitieren. Die [Handbuch zum Anwendungstest](https://developer.adobe.com/commerce/testing/guide/) enthält Details.
 
 Verwenden Sie eine Staging-Umgebung, um Ihre Aktualisierung zu testen und zu validieren, bevor Sie zur Produktion wechseln.
 

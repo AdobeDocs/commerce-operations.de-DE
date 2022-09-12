@@ -1,9 +1,9 @@
 ---
 title: Erweiterte Einrichtung
 description: Lesen Sie Best Practices und Empfehlungen für große Unternehmenssysteme, die für die Verarbeitung großer Datenmengen entwickelt wurden.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Wenn Sie beispielsweise ein Profil ausführen, das B2B Medium ähnelt, können S
 
 Eine große Anzahl von Produkt-SKUs, Websites, Kundengruppen oder freigegebenen Katalogen wirkt sich auf die Laufzeit der Indexer für Produktpreise und Katalogregeln aus. Dies liegt daran, dass alle Websites standardmäßig allen Kundengruppen (freigegebenen Katalogen) zugewiesen sind.
 
-Um die Indexierungszeit zu verkürzen, können Sie [Ausschluss bestimmter Websites von Kundengruppen (freigegebene Kataloge)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+Um die Indexierungszeit zu verkürzen, können Sie [Ausschluss bestimmter Websites von Kundengruppen (freigegebene Kataloge)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Einrichten von Redis
 
@@ -56,7 +56,7 @@ Magento Open Source und Adobe [!DNL Commerce] Unterstützen von Nachrichtenwarte
 
 >[!WARNING]
 >
->Die Funktion der geteilten Datenbank war [veraltet](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in Version 2.4.2 von Adobe Commerce. Siehe [Aus einer geteilten Datenbank in eine einzige Datenbank zurücksetzen](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>Die Funktion der geteilten Datenbank war [veraltet](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) in Version 2.4.2 von Adobe Commerce. Siehe [Aus einer geteilten Datenbank in eine einzige Datenbank zurücksetzen](../configuration/storage/revert-split-database.md).
 
 Mit Adobe Commerce können Sie skalierbaren Datenbankspeicher konfigurieren, um den Anforderungen eines wachsenden Unternehmens gerecht zu werden. Sie können drei separate Übergeordnete Datenbanken einrichten, die bestimmte Domänen bedienen:
 
@@ -95,7 +95,7 @@ Dieser Befehl führt Konfigurationsänderungen durch, konfiguriert jedoch nicht 
 Nachdem Sie Ihre Übergeordnete Datenbank geteilt und Slave-Datenbanken eingerichtet haben, [!DNL Commerce] reguliert automatisch Verbindungen zu einer bestimmten Datenbank, trifft Entscheidungen basierend auf dem Anforderungstyp (POST, PUT, GET usw.) und der Datenressource. Wenn [!DNL Commerce] Wenn die Erweiterungen Schreibvorgänge für eine GET-Anfrage ausführen, wechselt das System automatisch die Verbindung von Slave zu Übergeordneter Datenbank. Dies funktioniert auf die gleiche Weise mit Übergeordneten Datenbanken: Wenn Sie mit einer Checkout-Tabelle arbeiten, leitet das System alle Abfragen an eine bestimmte Datenbank weiter. In der Zwischenzeit werden alle katalogbezogenen Abfragen an die Hauptdatenbank gesendet.
 
 Weitere Informationen zur Konfiguration und zu den Vorteilen einer Übergeordneten/Slave-Konfiguration finden Sie unter
-[Aufspaltung der Datenbankleistung](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[Aufspaltung der Datenbankleistung](../configuration/storage/multi-master.md).
 
 ## Bereitstellen von Medieninhalten
 

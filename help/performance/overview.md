@@ -1,9 +1,9 @@
 ---
 title: Übersicht
 description: Befolgen Sie diese Best Practices, um die Leistung Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung zu optimieren.
-source-git-commit: 4baa58b440eab0d33a86388198670292a4119381
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ Die _Best Practices für die Leistung_ -Handbuch enthält Empfehlungen und Anwei
 
 ## Annahmen
 
-* Sie haben Adobe Commerce oder Magento Open Source mit [Verfasser](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+* Sie haben Adobe Commerce oder Magento Open Source mit [Verfasser](../installation/composer.md).
 * Mit dieser Installation führen Sie eine Live-Produktionsinstanz von Adobe Commerce oder Magento Open Source aus.

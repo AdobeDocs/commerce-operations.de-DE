@@ -1,9 +1,9 @@
 ---
 title: Code-Compiler
 description: Erfahren Sie, wie Sie den Code-Compiler über die Befehlszeile ausführen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ In einigen Fällen möchten Sie möglicherweise Code kompilieren, bevor Sie die 
 
    Verwenden Sie die `[-c|--clear-static-content]` Option zum Löschen [statische Inhalte](https://glossary.magento.com/static-content). Dies ist erforderlich, wenn Sie zuvor Module aktiviert oder deaktiviert haben und den zuvor für sie generierten statischen Inhalt löschen müssen.
 
-   Siehe [Module aktivieren](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-enable.html).
+   Siehe [Module aktivieren](../../installation/tutorials/manage-modules.md).
 
 1. Kompilieren Sie den Code.
 

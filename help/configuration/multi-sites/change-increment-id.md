@@ -1,9 +1,9 @@
 ---
 title: Inkrement-ID ändern
 description: Ändern Sie die Inkrement-ID für eine Commerce-Datenbankentität.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Commerce-
 
 - Adobe Commerce (vor Ort): 2.x.x
 - Adobe Commerce über Cloud-Infrastruktur: 2.x.x
-- MySQL: [Jede unterstützte Version]
+- MySQL: [Jede unterstützte Version](../../installation/prerequisites/database/mysql.md)
 
 ## Wann müssen Sie die Inkrement-ID ändern?
 
@@ -75,4 +75,4 @@ Vor der Ausführung des `ALTER TABLE` in einer Produktionsumgebung von Adobe Com
 
 [PayPal Gateway Anfrage abgelehnt - Problem mit doppelten Rechnungen]: https://support.magento.com/hc/en-us/articles/115002457473
 [DB-Backup erstellen]: https://support.magento.com/hc/en-us/articles/360003254334
-[Jede unterstützte Version]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html
+[Jede unterstützte Version]

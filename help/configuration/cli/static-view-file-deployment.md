@@ -1,9 +1,9 @@
 ---
 title: Bereitstellen von statischen Ansichtsdateien
 description: Erfahren Sie, wie Sie im Produktionsmodus statische Dateien in das Commerce-Dateisystem schreiben.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Sie müssen statische Ansichtsdateien manuell in das Commerce-Dateisystem schrei
 
 >[!WARNING]
 >
->_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layouts usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie können generierte statische Ansichtsdateien auf verschiedene Arten bereinigen. Siehe [Thema zum Zwischenspeichern statischer Dateien mit Details bereinigen](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) für weitere Informationen.
+>_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layouts usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie können generierte statische Ansichtsdateien auf verschiedene Arten bereinigen. Siehe [Thema zum Zwischenspeichern statischer Dateien mit Details bereinigen](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) für weitere Informationen.
 
 **So stellen Sie statische Ansichtsdateien bereit**:
 
-1. Melden Sie sich beim Commerce-Server als oder an. [Wechseln zum Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Melden Sie sich beim Commerce-Server als oder an. [Wechseln zum Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Löschen Sie den Inhalt von `<magento_root>/pub/static`, mit Ausnahme der `.htaccess` -Datei. Löschen Sie diese Datei nicht.
 1. Implementierungstool für statische Ansichtsdateien ausführen `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Fehlerbehebung für das Bereitstellungswerkzeug für statische Ansichtsdateien
 
-[Installieren Sie zuerst die Commerce-Software](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); Andernfalls können Sie das Bereitstellungswerkzeug für statische Ansichtsdateien nicht ausführen.
+[Installieren Sie zuerst die Commerce-Software](../../installation/overview.md); Andernfalls können Sie das Bereitstellungswerkzeug für statische Ansichtsdateien nicht ausführen.
 
 **Symptom**: Der folgende Fehler wird angezeigt, wenn Sie das Bereitstellungswerkzeug für statische Ansichtsdateien ausführen:
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Führen Sie die folgenden Schritte aus:
 
-1. Installieren Sie die Commerce-Software mit dem [Befehlszeile](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Melden Sie sich beim Commerce-Server als oder an. [Switch zu](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), der Dateisysteminhaber.
-1. Löschen Sie den Inhalt von `<magento_root>/pub/static` Verzeichnis, mit Ausnahme der `.htaccess` -Datei. Löschen Sie diese Datei nicht.
+1. Installieren Sie die Commerce-Software mit dem [Befehlszeile](../../installation/composer.md).
+1. Melden Sie sich beim Anwendungsserver als [Switch zu](../../installation/prerequisites/file-system/overview.md), der Dateisysteminhaber.
+1. Löschen Sie den Inhalt von `<app_root>/pub/static` Verzeichnis, mit Ausnahme der `.htaccess` -Datei. Löschen Sie diese Datei nicht.
 1. Statische Ansichtsdateien bereitstellen: `bin/magento setup:static-content:deploy`
 
 ## Tipp für Entwickler, die das Werkzeug zur Bereitstellung statischer Inhalte anpassen

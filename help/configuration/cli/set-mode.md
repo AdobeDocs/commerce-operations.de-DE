@@ -1,9 +1,9 @@
 ---
 title: Betriebsmodus festlegen
 description: Erfahren Sie mehr über das Festlegen der Adobe Commerce-Betriebsmodi.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Ausnahmen:
 
 ## Anzeigen des aktuellen Modus
 
-Am einfachsten ist es, diesen Befehl als [Dateisysteminhaber](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). Wenn Sie das Hosting freigegeben haben, ist dies der Benutzer, den Ihr Provider Ihnen zur Anmeldung beim Server bereitstellt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
+Am einfachsten ist es, diesen Befehl als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md). Wenn Sie das Hosting freigegeben haben, ist dies der Benutzer, den Ihr Provider Ihnen zur Anmeldung beim Server bereitstellt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
 
 Befehlsverwendung:
 

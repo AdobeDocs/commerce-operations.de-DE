@@ -1,9 +1,9 @@
 ---
 title: Entwicklungsumgebung - Recommendations
 description: Erfahren Sie mehr über Leistungsempfehlungen zum Einrichten Ihrer lokalen Adobe Commerce- oder Magento Open Source-Entwicklungsumgebung.
-source-git-commit: 87b353b408ecd7f55cea5b4775a0c8523952abc0
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ Wenn Sie auf einer VM entwickeln und das Laden einer Magento-Seite länger als 2
 
 <!-- Link definitions -->
 
-[Caches bereinigen]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[Deaktivieren der Caches]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[Caches bereinigen]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[Deaktivieren der Caches]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

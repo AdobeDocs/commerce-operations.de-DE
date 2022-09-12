@@ -2,10 +2,10 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 1%
+source-wordcount: '156'
+ht-degree: 2%
 
 ---
 
@@ -25,27 +25,27 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+    <a href="../installation/overview.md">
       <img alt="Installation" src="../assets/icons/servers.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Installation</strong></a>
+      <a href="../installation/overview.md"><strong>Installation</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html">
+    <a href="../configuration/overview.md">
       <img alt="Konfiguration" src="../assets/icons/settings.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html"><strong>Konfiguration</strong></a>
+      <a href="../configuration/overview.md"><strong>Konfiguration</strong></a>
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
+    <a href="../tools/data-migration-tool/how-migration-works.md">
       <img alt="Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>Migration</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migration</strong></a>
     </div>
   </td>
 </tr>
@@ -75,11 +75,11 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
+    <a href="../tools/overview.md">
        <img alt="Instrumente" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html?lang=en"><strong>Instrumente</strong></a>
+      <a href="../tools/overview.md"><strong>Instrumente</strong></a>
     </div>
   </td>
 </tr>

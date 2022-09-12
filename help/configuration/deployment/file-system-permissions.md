@@ -1,9 +1,9 @@
 ---
 title: Zugriffsberechtigungen für Dateisysteme
 description: Erfahren Sie, wie Sie den Eigentümer des Commerce-Anwendungs-Dateisystems für ein Entwicklungs- und Produktionssystem einrichten.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Zugriffsberechtigungen für Dateisysteme
 
-In diesem Abschnitt wird beschrieben, wie Sie den Eigentümer des Commerce-Dateisystems für ein Entwicklungs- und Produktionssystem einrichten. Bevor Sie fortfahren, sollten Sie die unter [Übersicht über die Eigentümerschaft und Berechtigungen des Dateisystems](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+In diesem Abschnitt wird beschrieben, wie Sie den Eigentümer des Commerce-Dateisystems für ein Entwicklungs- und Produktionssystem einrichten. Bevor Sie fortfahren, sollten Sie die unter [Übersicht über die Eigentümerschaft und Berechtigungen des Dateisystems](../../installation/prerequisites/file-system/overview.md).
 
-Dieses Thema konzentriert sich auf Commerce-Entwicklungs- und Produktionssysteme. Wenn Sie Commerce installieren, lesen Sie [Festlegen von Eigentümern und Berechtigungen vor der Installation](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+Dieses Thema konzentriert sich auf Commerce-Entwicklungs- und Produktionssysteme. Wenn Sie Commerce installieren, lesen Sie [Festlegen von Eigentümern und Berechtigungen vor der Installation](../../installation/prerequisites/file-system/configure-permissions.md).
 
 In den folgenden Abschnitten werden die Anforderungen für einen oder zwei Dateisysteminhaber besprochen. Das bedeutet:
 
@@ -103,7 +103,7 @@ Damit Dateien und Ordner schreibbar sind, können Sie Komponenten aktualisieren 
 
 ### Optional festgelegt `magento_umask`
 
-Siehe [Festlegen einer Umfrage](https://devdocs.magento.com/guides/v2.4/install-gde/install/post-install-umask.html) im _Installationshandbuch_.
+Siehe [Festlegen einer Umfrage](../../installation/next-steps/set-umask.md) im _Installationshandbuch_.
 
 ## Eigentümerschaft des Produktionsdateisystems für privates Hosting (zwei Benutzer)
 
@@ -121,7 +121,7 @@ Wenn Sie Ihren eigenen Server verwenden (einschließlich des privaten Server-Set
    >
    >Der Befehlszeilenbenutzer wird auch als _Dateisysteminhaber_.
 
-Da diese Benutzer Zugriff auf dieselben Dateien benötigen, empfehlen wir, eine [freigegebene Gruppe](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) denen sie beide angehören. Die folgenden Verfahren setzen voraus, dass Sie dies bereits getan haben.
+Da diese Benutzer Zugriff auf dieselben Dateien benötigen, empfehlen wir, eine [freigegebene Gruppe](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) denen sie beide angehören. Die folgenden Verfahren setzen voraus, dass Sie dies bereits getan haben.
 
 Siehe einen der folgenden Abschnitte:
 

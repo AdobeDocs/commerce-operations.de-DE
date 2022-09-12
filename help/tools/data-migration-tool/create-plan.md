@@ -1,9 +1,9 @@
 ---
 title: Erstellen eines Datenmigrationsplans
 description: Führen Sie diese Schritte aus, um einen Datenmigrationsplan zu erstellen, um eine erfolgreiche Aktualisierung von Magento 1 auf Magento 2 sicherzustellen.
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,6 @@ Nachdem Ihre Magento 2-Site mit Magento 1 auf dem neuesten Stand ist und normal 
 1. Der Store Magento 2 kann jetzt verwendet werden. Sie und Ihre Kunden können alle Aktivitäten fortsetzen.
 
 <!-- LINK ADDRESSES -->
-[Systemanforderungen von Magentos]: https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html
+[Systemanforderungen von Magentos]: ../../installation/system-requirements.md
 [Commerce Marketplace]: https://marketplace.magento.com
-[Konfigurationshandbuch]: https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html
+[Konfigurationshandbuch]: ../../configuration/cli/manage-indexers.md

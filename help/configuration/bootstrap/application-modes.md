@@ -1,9 +1,9 @@
 ---
 title: Anwendungsmodi
 description: Die Commerce-Anwendung kann je nach Bedarf in verschiedenen Modi eingesetzt werden. Zeigen Sie eine detaillierte Liste der verfügbaren Anwendungsmodi an.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,6 @@ Im Produktionsmodus:
 
 Führen Sie die Commerce-Anwendung im Wartungsmodus aus, um Ihre Site offline zu schalten, während Sie Wartungs-, Upgrade- oder Konfigurationsaufgaben ausführen. Im Wartungsmodus leitet die Site Besucher zu einem Standard- `Service Temporarily Unavailable` Seite.
 
-Sie können eine [benutzerspezifische Wartungsseite](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html), aktivieren und deaktivieren Sie den Wartungsmodus manuell und konfigurieren Sie den Wartungsmodus, damit Besucher von autorisierten IP-Adressen den Speicher normal anzeigen können. Siehe [Aktivieren und Deaktivieren des Wartungsmodus](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+Sie können eine [benutzerspezifische Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md), aktivieren und deaktivieren Sie den Wartungsmodus manuell und konfigurieren Sie den Wartungsmodus, damit Besucher von autorisierten IP-Adressen den Speicher normal anzeigen können. Siehe [Aktivieren und Deaktivieren des Wartungsmodus](../../installation/tutorials/maintenance-mode.md).
 
 Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Nach erfolgreichem Abschluss der Bereitstellung kehrt die Commerce-Anwendung im Produktionsmodus zur Ausführung zurück. Siehe [Bereitstellungshinweise](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) im _Commerce Cloud-Handbuch_.

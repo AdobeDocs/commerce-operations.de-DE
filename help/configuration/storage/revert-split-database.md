@@ -1,9 +1,9 @@
 ---
 title: Geteilte Datenbank wiederherstellen
 description: Kehren Sie von einer veralteten Implementierung der geteilten Datenbank zu einer einzigen Datenbankimplementierung zurück.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ In diesem Beispiel melden wir uns bei allen drei Datenbanken an, die auf demselb
 
 ## Überprüfen der Arbeit
 
-Um sicherzustellen, dass Ihre Implementierung der einzelnen Datenbank ordnungsgemäß funktioniert, führen Sie die folgenden Aufgaben aus und vergewissern Sie sich, dass Daten zum `magento_main` Datenbanktabellen mithilfe eines Datenbank-Tools wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Um sicherzustellen, dass Ihre Implementierung der einzelnen Datenbank ordnungsgemäß funktioniert, führen Sie die folgenden Aufgaben aus und vergewissern Sie sich, dass Daten zum `magento_main` Datenbanktabellen mithilfe eines Datenbank-Tools wie [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Überprüfen Sie, ob Fremdschlüssel wiederhergestellt wurden. Beispiel: die `QUOTE_STORE_ID_STORE_STORE_ID` Schlüssel in der `quote` Datenbanktabelle.
 1. Stellen Sie sicher, dass Kunden Bestellungen über die Storefront tätigen können.
