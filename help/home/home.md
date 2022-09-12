@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 64e697a357e10005d02abeca13bd09c8a823bc00
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '155'
 ht-degree: 2%
 
 ---
@@ -42,10 +42,10 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
   </td>
   <td valign="top">
     <a href="../tools/data-migration-tool/how-migration-works.md">
-      <img alt="Migration" src="../assets/icons/move-to.svg" width="40" height="40"/>
+      <img alt="Datenmigration" src="../assets/icons/move-to.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migration</strong></a>
+      <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Datenmigration</strong></a>
     </div>
   </td>
 </tr>
@@ -117,6 +117,5 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
 
 | Änderung | Typ |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Hinzugefügt [Informationen](../upgrade/upgrade-compatibility-tool/overview.md) Informationen dazu, wie Regeln für das Upgrade-Kompatibilitätstool definiert werden. | Wichtige Aktualisierung |
-| Das veraltete Upgrade-Kompatibilitätstool wurde entfernt [Fehlercodes](../upgrade/upgrade-compatibility-tool/error-messages.md). | Technisch |
-| Verschieben [Handbuch zum Site-weiten Analyse-Tool](../tools/site-wide-analysis-tool/intro.md) von [devdocs.magento.com](https://devdocs.magento.com/tools/site-wide-analysis.html) in die Experience League. | Neu |
+| Verschieben Sie die [Handbuch zur Installation vor Ort](../installation/overview.md) von [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html) in die Experience League. | Neu |
+| Verschieben Sie die [Anleitung zur Datenmigration](../tools/data-migration-tool/how-migration-works.md) von [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html) in die Experience League. | Neu |
