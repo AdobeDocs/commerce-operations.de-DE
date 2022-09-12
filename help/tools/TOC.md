@@ -1,9 +1,9 @@
 ---
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
-source-git-commit: 2ad429bf3676055f3ae199450f75906afc6542e5
+source-git-commit: 653e2deb96672625c37ccec2b2022b767b8879bd
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 0%
    - [Erweiterungen](site-wide-analysis-tool/extensions.md)
    - [Warnhinweise](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
+- Werkzeug für Qualitätsmuster {#quality-patches-tool}
+   - [Nutzung](quality-patches-tool/usage.md)
 - Beobachtung für Adobe Commerce {#observation-for-adobe-commerce}
    - [Einführung](observation-for-adobe-commerce/intro.md)
    - [Zugriff](observation-for-adobe-commerce/access.md)
