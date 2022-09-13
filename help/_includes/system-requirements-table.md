@@ -1,20 +1,24 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: 34c7fca1ee676f1eb96256c55121771370702410
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 57%
+source-wordcount: '226'
+ht-degree: 65%
 
 ---
 # Systemanforderungen
 
-<table>
+<table style="table-layout:auto">
   <thead>
     <tr>
       <th>
         Softwareabhängigkeiten
       </th>
+      <th>2.4.5-p1</th>
       <th>2,4,5</th>
+      <th>2.4.4-p2</th>
+      <th>2.4.4-p1</th>
       <th>2,4,4</th>
+      <th>2.4.3-p3</th>
       <th>2.4.3-p2</th>
       <th>2,4,3</th>
       <th>2,4,2</th>
@@ -29,7 +33,19 @@ ht-degree: 57%
             2,2
       </td>
       <td>
+            2,2
+      </td>
+      <td>
             2,1
+      </td>
+      <td>
+            2,1
+      </td>
+      <td>
+            2,1
+      </td>
+      <td>
+            1
       </td>
       <td>
             1
@@ -53,6 +69,18 @@ ht-degree: 57%
             7,17
       </td>
       <td>
+            7,17
+      </td>
+      <td>
+            7,16
+      </td>
+      <td>
+            7,16
+      </td>
+      <td>
+            7,16
+      </td>
+      <td>
             7,16
       </td>
       <td>
@@ -73,6 +101,18 @@ ht-degree: 57%
     </tr>
     <tr>
       <td>OpenSearch</td>
+      <td>
+            1,2
+      </td>
+      <td>
+            1,2
+      </td>
+      <td>
+            1,2
+      </td>
+      <td>
+            1,2
+      </td>
       <td>
             1,2
       </td>
@@ -116,11 +156,35 @@ ht-degree: 57%
             Artikel 10 Absatz 4
       </td>
       <td>
+            Artikel 10 Absatz 4
+      </td>
+      <td>
+            Artikel 10 Absatz 4
+      </td>
+      <td>
+            Artikel 10 Absatz 4
+      </td>
+      <td>
+            Artikel 10 Absatz 4
+      </td>
+      <td>
             10.2, 10.3, 10.4
       </td>
     </tr>
     <tr>
       <td>MySQL</td>
+      <td>
+            8,0
+      </td>
+      <td>
+            8,0
+      </td>
+      <td>
+            8,0
+      </td>
+      <td>
+            8,0
+      </td>
       <td>
             8,0
       </td>
@@ -152,6 +216,18 @@ ht-degree: 57%
             8,1
       </td>
       <td>
+            8,1
+      </td>
+      <td>
+            8,1
+      </td>
+      <td>
+            8,1
+      </td>
+      <td>
+            7,4
+      </td>
+      <td>
             7,4
       </td>
       <td>
@@ -174,6 +250,18 @@ ht-degree: 57%
       </td>
       <td>
             3,9
+      </td>
+      <td>
+            3,9
+      </td>
+      <td>
+            3,9
+      </td>
+      <td>
+            3,9
+      </td>
+      <td>
+            3,8
       </td>
       <td>
             3,8
@@ -200,6 +288,18 @@ ht-degree: 57%
             6,2
       </td>
       <td>
+            6,2
+      </td>
+      <td>
+            6,2
+      </td>
+      <td>
+            6,2
+      </td>
+      <td>
+            6,0
+      </td>
+      <td>
             6,0
       </td>
       <td>
@@ -224,6 +324,18 @@ ht-degree: 57%
             7,0
       </td>
       <td>
+            7,0
+      </td>
+      <td>
+            7,0
+      </td>
+      <td>
+            7,0
+      </td>
+      <td>
+            6,5
+      </td>
+      <td>
             6,5
       </td>
       <td>
@@ -241,6 +353,18 @@ ht-degree: 57%
     </tr>
     <tr>
       <td>Apache</td>
+      <td>
+            2,4
+      </td>
+      <td>
+            2,4
+      </td>
+      <td>
+            2,4
+      </td>
+      <td>
+            2,4
+      </td>
       <td>
             2,4
       </td>
@@ -286,11 +410,35 @@ ht-degree: 57%
       <td>
             1,18
       </td>
+      <td>
+            1,18
+      </td>
+      <td>
+            1,18
+      </td>
+      <td>
+            1,18
+      </td>
+      <td>
+            1,18
+      </td>
     </tr>
     <tr>
       <td>AWS Aurora (MySQL)</td>
       <td>
             8,0
+      </td>
+      <td>
+            8,0
+      </td>
+      <td>
+            5,7
+      </td>
+      <td>
+            5,7
+      </td>
+      <td>
+            5,7
       </td>
       <td>
             5,7
@@ -329,6 +477,18 @@ ht-degree: 57%
             ✔️
       </td>
       <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
           —
       </td>
       <td>
@@ -339,6 +499,18 @@ ht-degree: 57%
       <td>AWS MQ</td>
       <td>
             3,9,13
+      </td>
+      <td>
+            3,9,13
+      </td>
+      <td>
+            3,8,11
+      </td>
+      <td>
+            3,8,11
+      </td>
+      <td>
+            3,8,11
       </td>
       <td>
             3,8,11
@@ -361,6 +533,18 @@ ht-degree: 57%
     </tr>
     <tr>
       <td>AWS ElastiCache</td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
       <td>
             Redis 6
       </td>
@@ -398,6 +582,18 @@ ht-degree: 57%
             7,9
       </td>
       <td>
+            7,9
+      </td>
+      <td>
+            7,9
+      </td>
+      <td>
+            7,9
+      </td>
+      <td>
+            7,9
+      </td>
+      <td>
           —
       </td>
       <td>
@@ -411,6 +607,18 @@ ht-degree: 57%
       <td>AWS OpenSearch</td>
       <td>
             1,2
+      </td>
+      <td>
+            1,2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
       </td>
       <td>
           —
@@ -434,7 +642,6 @@ ht-degree: 57%
   </tbody>
 </table>
 
->[!INFO]
+>[!NOTE]
 >
 >Die Unterstützung der Elasticsearch-Version und die Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur werden durch Dienstversionen bestimmt, die in der Cloud-Infrastruktur bereitgestellt werden. In seltenen Fällen kann die Unterstützung von Versionen durch Adobe Commerce-On-Premise-Implementierungen abweichen.
-
