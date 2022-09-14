@@ -1,17 +1,17 @@
 ---
-source-git-commit: 3fcc6d98509da4fcb8705ea69e708ad8e038b65c
+source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 5%
 
 ---
-# Benutzerdokumentation zu Adobe Commerce
+# Adobe Commerce-Benutzerdokumentation
 
 Wir freuen uns über Beiträge von unserer Community sowie von Adobe-Mitarbeitern von außerhalb der Dokumentationsteams.
 
 ## Adobe Open Source-Verhaltenskodex
 
-Für dieses Projekt gilt der Open Source-Verhaltenskodex der Adobe ](code-of-conduct.md) oder der [.NET Foundation-Verhaltenskodex](https://dotnetfoundation.org/code-of-conduct). [ Weitere Informationen finden Sie im Artikel [Contributing](contributing.md) .
+Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.md) bzw. den [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
 
 ## Informationen zu Ihren Beiträgen zu Adobe-Inhalten
 
@@ -21,7 +21,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 ### Geringfügige Änderungen
 
-Wenn Sie aus reiner Freundlichkeit kleinere Aktualisierungen vornehmen möchten, rufen Sie den Artikel auf und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) .
+Wenn Sie aus reiner Herzlichkeit kleinere Updates beitragen möchten, besuchen Sie den Artikel und klicken Sie auf die Schaltfläche **Bearbeiten** -Link im Artikel, der zur GitHub-Quelle für den Artikel führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Siehe Allgemein . [Adobe Docs-Mitarbeiter-Handbuch](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) für weitere Informationen.
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentationen und Codebeispiele in diesem Repository einreichen, werden von den Nutzungsbedingungen der Adobe abgedeckt.
 
@@ -35,7 +35,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Wesentliche Änderungen von Adobe-Mitarbeitern
 
-Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihr Auftrag ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
+Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihr Auftrag ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +43,7 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams
 
 Community-Mitarbeiter können die GitHub-Benutzeroberfläche für die grundlegende Bearbeitung verwenden oder das Repository abspalten, um wichtige Beiträge zu leisten.
 
-Weitere Informationen finden Sie im [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) .
+Siehe [Adobe Docs Contributor Guide](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html) für Details.
 
 ## Verwenden von Markdown zum Formatieren Ihres Themas
 
@@ -57,4 +57,30 @@ Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie m
 Im öffentlichen Repository werden Pull-Anfragen automatisierte Beschriftungen zugewiesen, damit wir den Workflow für Pull-Anforderungen verwalten und Ihnen mitteilen können, was mit Ihrer Pull-Anforderung passiert:
 
 * **Änderung an Autor gesendet**: Der Autor wurde über die ausstehende Pull-Anfrage informiert.
-* **ready-to-merge**: Bereit zur Überprüfung durch unser Überprüfungsteam für Pull-Anforderungen.
+* **Bereit zum Zusammenführen**: Bereit zur Überprüfung durch unser Überprüfungsteam für Pull-Anforderungen.
+
+## Vorlagen
+
+Die `_jekyll` -Verzeichnis enthält vorlagenbezogene Themen und erforderliche Assets.
+Die Vorlagen, die die Vorlagensprache Liquid verwenden, befinden sich im `_jekyll` als HTML-Dateien.
+Die `_jekyll/_data` enthält Dateien mit den Daten, die zum Rendern der Vorlagen verwendet werden.
+
+So rendern Sie alle Vorlagen:
+
+1. Navigieren Sie zum `_jekyll` Verzeichnis.
+
+   cd_jekyll
+
+1. Führen Sie das Rendering-Skript aus.
+
+```
+_scripts/render
+```
+
+> **HINWEIS:** Sie müssen das Skript über die `_jekyll` Verzeichnis.
+> **HINWEIS:** Ruby muss installiert sein, um dieses Skript ausführen zu können.
+
+Das Skript führt das Rendering aus, schreibt gerenderte Dateien in die `_jekyll/_rendered` als HTML-Dateien zu speichern und sie in die `help/_includes` directory as `.md` Dateien.
+
+
+Weitere Informationen finden Sie in der Jekyll-Dokumentation . [Datendateien](https://jekyllrb.com/docs/datafiles, [Flüssige Filter](https://jekyllrb.com/docs/liquid/filters/)und anderen Funktionen.
