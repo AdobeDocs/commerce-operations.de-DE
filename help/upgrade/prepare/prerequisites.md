@@ -1,9 +1,9 @@
 ---
 title: Vollständige Voraussetzungen
 description: Bereiten Sie Ihr Adobe Commerce- oder Magento Open Source-Projekt auf ein Upgrade vor, indem Sie diese erforderlichen Schritte ausführen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ So legen Sie die ulimit über die Befehlszeile fest:
 1. Setzen Sie die ulimit auf `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > Die Syntax für Open Files ulimit hängt von der verwendeten UNIX Shell ab. Die vorherige Einstellung sollte mit CentOS und Ubuntu mit der Bash-Shell funktionieren. Für Mac OS ist die richtige Einstellung jedoch ulimit -S 65532. Weitere Informationen finden Sie auf einer Manpage oder in der Betriebssystemreferenz.
 
 So legen Sie den Wert in Ihrer Bash-Shell fest:
 
@@ -111,7 +107,7 @@ So legen Sie den Wert in Ihrer Bash-Shell fest:
 1. Fügen Sie die folgende Zeile hinzu:
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. Speichern Sie Ihre Änderungen in der `.bashrc` und beenden Sie den Texteditor.
