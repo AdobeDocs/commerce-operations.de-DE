@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von statischen Ansichtsdateien
 description: Erfahren Sie, wie Sie im Produktionsmodus statische Dateien in das Commerce-Dateisystem schreiben.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
