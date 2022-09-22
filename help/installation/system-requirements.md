@@ -1,7 +1,7 @@
 ---
 title: Systemanforderungen
 description: Verwenden Sie diese Referenz, um erforderliche Softwareabhängigkeiten zu identifizieren, die mit Adobe Commerce- und Magento Open Source-Versionen getestet wurden.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Diese Tabelle zeigt Versionen von Softwareabhängigkeiten von Drittanbietern, di
 
 Beispielsweise ist 2.4.3 vollständig mit MariaDB 10.4 getestet. Adobe empfiehlt ein Upgrade auf MariaDB 10.4, bevor Sie auf 2.4.3 aktualisieren.
 
-{{$include /help/_includes/system-requirements-table.md}}
+{{$include /help/_includes/templated/system-requirements-table.md}}
 
 ## Sonstiges
 

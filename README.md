@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '538'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Im öffentlichen Repository werden Pull-Anfragen automatisierte Beschriftungen z
 ## Vorlagen
 
 Die `_jekyll` -Verzeichnis enthält vorlagenbezogene Themen und erforderliche Assets.
-Die Vorlagen, die die Vorlagensprache Liquid verwenden, befinden sich im `_jekyll` als HTML-Dateien.
+Die Vorlagen, die die Vorlagensprache Liquid verwenden, befinden sich im `_jekyll/templated` als HTML-Dateien.
 Die `_jekyll/_data` enthält Dateien mit den Daten, die zum Rendern der Vorlagen verwendet werden.
 
 So rendern Sie alle Vorlagen:
@@ -80,7 +80,6 @@ _scripts/render
 > **HINWEIS:** Sie müssen das Skript über die `_jekyll` Verzeichnis.
 > **HINWEIS:** Ruby muss installiert sein, um dieses Skript ausführen zu können.
 
-Das Skript führt das Rendering aus, schreibt gerenderte Dateien in die `_jekyll/_rendered` als HTML-Dateien zu speichern und sie in die `help/_includes` directory as `.md` Dateien.
-
+Das Skript führt das Rendern aus und schreibt gerenderte Vorlagen in die `help/_includes/templated` Verzeichnis.
 
 Weitere Informationen finden Sie in der Jekyll-Dokumentation . [Datendateien](https://jekyllrb.com/docs/datafiles, [Flüssige Filter](https://jekyllrb.com/docs/liquid/filters/)und anderen Funktionen.
