@@ -1,9 +1,9 @@
 ---
 title: PHP-Einstellungen
 description: Führen Sie diese Schritte aus, um erforderliche PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Unter CentOS: [zusätzliche Schritte erforderlich sein können](https://wiki.cen
 
 Für Adobe Commerce und Magento Open Source ist die Installation einer Reihe von Erweiterungen erforderlich.
 
-{{$include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/templated/php-extensions.md}}
 
 Überprüfen installierter Erweiterungen:
 
