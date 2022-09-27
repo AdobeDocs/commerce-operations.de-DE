@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Varnish-Konfiguration
 description: Konfigurieren Sie erweiterte Funktionen für die Färbung, einschließlich Konsistenzprüfung, Grazie und Heiligkeitsmodi.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Die `vcl_hit` subroutinemäßig definiert, wie Varnish auf eine Anforderung für
 
 ### Wenn das Commerce-Backend gesund ist
 
-Wenn die Konsistenzprüfungen feststellen, dass das Commerce-Backend gesund ist, prüft Varnish, ob die Zeit in der Übergangsphase verbleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, ein Händler kann jedoch den Wert aus dem [Admin](https://glossary.magento.com/admin) wie in [Konfigurieren von Commerce für die Verwendung von Varnish](config-varnish-magento.md). Wenn die Übergangsphase nicht abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt synchron vom Commerce-Backend.
+Wenn die Konsistenzprüfungen feststellen, dass das Commerce-Backend gesund ist, prüft Varnish, ob die Zeit in der Übergangsphase verbleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, ein Händler kann jedoch den Wert aus dem [Admin](https://glossary.magento.com/admin) wie in [Konfigurieren von Commerce für die Verwendung von Varnish](configure-varnish-commerce.md). Wenn die Übergangsphase nicht abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt synchron vom Commerce-Backend.
 
 Die maximale Zeit, die Varnish für ein altes Objekt bereitstellt, ist die Summe der Übergangsphase (standardmäßig 300 Sekunden) und des TTL-Werts (standardmäßig 86400 Sekunden).
 

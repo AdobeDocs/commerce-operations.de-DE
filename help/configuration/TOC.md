@@ -1,7 +1,7 @@
 ---
 user-guide-title: Konfigurationshandbuch
 user-guide-description: Konfigurieren Sie die Funktionen und Dienste Ihrer Adobe Commerce- oder Magento Open Source-Anwendung.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -44,7 +44,7 @@ ht-degree: 0%
       - [Übersicht über Varnish](cache/config-varnish.md)
       - [Installieren von Varnish](cache/config-varnish-install.md)
       - [Webserver](cache/config-varnish-server.md)
-      - [Commerce-Anwendung konfigurieren](cache/config-varnish-magento.md)
+      - [Commerce-Anwendung konfigurieren](cache/configure-varnish-commerce.md)
       - [Erweiterte Varnish-Konfiguration](cache/config-varnish-advanced.md)
       - [Cache-Leerung](cache/use-varnish-cache.md)
       - [Cache-Leeren mehrerer verschiedener Instanzen](cache/use-multiple-varnish-cache.md)
