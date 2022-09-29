@@ -1,9 +1,9 @@
 ---
 title: L2-Cache-Konfiguration
 description: Erfahren Sie, wie Sie den L2-Cache konfigurieren.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: e5e4cf0b3979a457e706823dd16c88508ec4abd8
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -76,8 +76,81 @@ Adobe empfiehlt die Verwendung der [`cache preload`](redis-pg-cache.md#redis-pre
 
 ## Optionen für veralteten Cache
 
-Einstieg in [!DNL Commerce] 2.4. `stale_cache` -Option kann die Leistung in bestimmten Fällen verbessern.
+Einstieg in [!DNL Commerce] 2.4. `use_stale_cache` -Option kann die Leistung in bestimmten Fällen verbessern.
 
 Im Allgemeinen ist der Kompromiss mit der Sperrwartung von der Leistungsseite aus akzeptabel, aber je größer die Anzahl der Blöcke oder des Cache des Händlers ist, desto mehr Zeit wird für das Warten auf Sperren benötigt. In einigen Szenarien können Sie einen **Anzahl der Schlüssel** \* **Lookup-Timeout** Zeitdauer für den Prozess. In einigen seltenen Fällen kann der Händler Hunderte von Schlüsseln im `Block/Config` zwischenspeichern, sodass selbst ein kleiner Timeout beim Suchen für das Sperren Sekunden kosten kann.
 
 Der alte Cache funktioniert nur mit einem L2-Cache. Mit einem veralteten Cache können Sie einen veralteten Cache senden, während ein neuer in einem parallelen Prozess generiert wird. Um veralteten Cache zu aktivieren, fügen Sie `'use_stale_cache' => true` , um die Konfiguration des L2-Caches zu beenden.
+
+Adobe empfiehlt, die `use_stale_cache` -Option nur für Cache-Typen, die am meisten davon profitieren, einschließlich:
+
+- `block_html`
+- `config_integration_api`
+- `config_integration`
+- `full_page`
+- `layout`
+- `reflection`
+- `translate`
+
+Der folgende Code zeigt eine Beispielkonfiguration:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => false,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ],
+         'stale_cache_enabled' => [
+            'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+            'backend_options' => [
+                'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                'remote_backend_options' => [
+                    'persistent' => 0,
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'compress_data' => '1',
+                ],
+                'local_backend' => 'Cm_Cache_Backend_File',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/'
+                ],
+                'use_stale_cache' => true,
+            ],
+            'frontend_options' => [
+                'write_control' => false,
+            ],
+        ]
+    ],
+    'type' => [
+        'default' => ['frontend' => 'default'],
+        'layout' => ['frontend' => 'stale_cache_enabled'],
+        'block_html' => ['frontend' => 'stale_cache_enabled'],
+        'reflection' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+        'full_page' => ['frontend' => 'stale_cache_enabled'],
+        'translate' => ['frontend' => 'stale_cache_enabled']
+    ],
+],
+```
