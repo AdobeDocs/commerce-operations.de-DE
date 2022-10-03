@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: 8605fa5c791a48c112efa997b14d7bffe5f3028c
+source-git-commit: e247b0bd2765e425da033f32ab99f79cfe6cc0b2
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '174'
 ht-degree: 2%
 
 ---
@@ -17,11 +17,11 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
 <table>
 <tr>
   <td valign="top">
-    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
       <img alt="Versionsinformationen" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>Versionsinformationen</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Versionsinformationen</strong></a>
     </div>
   </td>
   <td valign="top">
@@ -117,6 +117,7 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
 
 | Änderung | Typ |
 |----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Verschieben Sie die [Handbuch zu Versionshinweisen](../release/roadmap.md) von [devdocs.magento.com](https://devdocs.magento.com/release/versions.html). | Neu |
 | Verschieben Sie die [Befehlszeilen-Tools-Referenz](../reference/commerce.md) von [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html). | Neu |
 | Verschieben Sie die [Handbuch zur Installation vor Ort](../installation/overview.md) von [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html). | Neu |
 | Verschieben Sie die [Anleitung zur Datenmigration](../tools/data-migration-tool/how-migration-works.md) von [devdocs.magento.com](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html). | Neu |

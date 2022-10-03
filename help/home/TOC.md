@@ -1,7 +1,7 @@
 ---
 user-guide-title: Betriebshandbücher
 user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihres Adobe Commerce- oder Magento Open Source-Programms.
-source-git-commit: abcf7a500169e5726197c23ebbc4c4eb7749d5be
+source-git-commit: 14379c68e319104336f3aa8c79255ea67a57c62b
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 19%
@@ -12,7 +12,7 @@ ht-degree: 19%
 # Operative Adobe Commerce-Handbücher {#operational-guides}
 
 - [Startseite](home.md)
-- [Versionsinformationen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
+- [Versionsinformationen](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
 - [Installation](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
 - [Konfiguration](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Datenmigration](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)
