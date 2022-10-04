@@ -1,7 +1,7 @@
 ---
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 
 >[!INFO]
 >
->Siehe [Anwenden von Patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [Verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) im Handbuch für Softwareaktualisierungen , um eine vollständige Liste der veröffentlichten Patches zu lesen.
+>Siehe [Anwenden von Patches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [Verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Handbuch für Softwareaktualisierungen , um eine vollständige Liste der veröffentlichten Patches zu lesen.
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ Kleinere Fehlerbehebungen für Patch-Versionen
 * **MDVA-30052** (*für Adobe Commerce >=2.3.2-p2 &lt;2.3.5*) - Behebung des Problems, bei dem private Inhalte (lokaler Speicher) nicht ordnungsgemäß ausgefüllt wurden, was zu Leistungsproblemen führte.
 * **MDVA-30131** (*für Adobe Commerce >=2.3.4 &lt;2.3.6 | 2.4.0*) - Behebt das Problem mit mehrschichtiger Navigation, bei dem die *Nein* Wert für boolesche Produktattribute wurde nicht in die mehrteilige Navigation einbezogen, wenn [!DNL Elasticsearch] wurde als Suchmaschine verwendet.
 * **MDVA-35514** (*für Adobe Commerce >=2.4.0 &lt;2.4.1*) - Behebung des Problems beim Erstellen eines Versandtitels und Hinzufügen bestellter Produkte zu einem Paket im modalen Fenster Pakete erstellen .
-

@@ -1,7 +1,7 @@
 ---
 title: Nutzung
 description: Erfahren Sie, wie Sie die [!DNL Quality Patches Tool].
-source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
+source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
 workflow-type: tm+mt
 source-wordcount: '872'
 ht-degree: 0%
@@ -14,8 +14,8 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 
 
 >[!INFO]
-> 
->Siehe [Anwenden einzelner Patches](#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [Verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) , um eine vollständige Liste der veröffentlichten Patches zu überprüfen.
+>
+>Siehe [Anwenden einzelner Patches](#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [Verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) , um eine vollständige Liste der veröffentlichten Patches zu überprüfen.
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 ## Installieren
 
 >[!INFO]
-> 
+>
 >Wenn es noch nicht installiert ist, müssen Sie [[!DNL Git]](https://github.com/git-guides/install-git) oder [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) vor der Installation [!DNL Quality Patches Tool]. Fügen Sie die `magento/quality-patches` Composer-Paket zu Ihrem `composer.json` Datei:
 
 ```bash
@@ -72,7 +72,7 @@ Die Statustabelle enthält:
    - `Recommended replacement` — Das Patch, das als Ersatz für ein veraltetes Patch empfohlen wird.
 
 >[!INFO]
-> 
+>
 >Nach dem Upgrade auf eine neue Version von Adobe Commerce oder Magento Open Source müssen Sie Patches erneut anwenden, wenn die Patches nicht in der neuen Version enthalten sind. Siehe [Erneutes Anwenden von Patches nach einem Upgrade](#re-apply-patches-after-an-upgrade).
 
 ## Anwenden einzelner Patches {#apply-individual-patches}
