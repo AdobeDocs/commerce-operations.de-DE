@@ -1,9 +1,9 @@
 ---
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [Die Registerkarte &quot;Redis&quot;](observation-for-adobe-commerce/redis-tab.md)
    - [Registerkarte &quot;MySQL&quot;](observation-for-adobe-commerce/mysql-tab.md)
    - [Registerkarte &quot;PHP&quot;](observation-for-adobe-commerce/php-tab.md)
+   - [Die Registerkarte &quot;Bots&quot;](observation-for-adobe-commerce/bots.md)
    - [Registerkarte &quot;Bereitstellen&quot;](observation-for-adobe-commerce/deploy-tab.md)
    - [Registerkarte &quot;Warnungen&quot;](observation-for-adobe-commerce/alerts-tab.md)
    - [Registerkarte &quot;WAF&quot;](observation-for-adobe-commerce/waf-tab.md)
