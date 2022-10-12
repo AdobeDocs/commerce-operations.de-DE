@@ -1,7 +1,7 @@
 ---
 title: Anwenden von Patches
 description: Erfahren Sie mehr über die Methoden zum Anwenden von Patches auf ein Adobe Commerce- oder Magento Open Source-Projekt.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
-- [Werkzeug für Qualitätsmuster](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [Befehlszeile](../patches/apply.md#command-line)
 - [Verfasser](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ Sie können Patches mit einer der folgenden Methoden anwenden:
 
 >[!IMPORTANT]
 >
->Verwenden Sie die [Werkzeug für Qualitätsmuster](https://devdocs.magento.com/quality-patches/tool.html). Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+>Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
 
 So wenden Sie einen benutzerdefinierten Patch mit Composer an:
 
