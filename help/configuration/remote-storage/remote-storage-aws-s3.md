@@ -1,16 +1,16 @@
 ---
 title: Konfigurieren des AWS S3-Buckets für Remote-Speicher
 description: Konfigurieren Sie Ihr Commerce-Projekt für die Verwendung des AWS S3-Speicherdienstes für Remote-Speicher.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
 # Konfigurieren des AWS S3-Buckets für Remote-Speicher
 
-Die [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicherdienst, der branchenführende Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung bietet. Der AWS S3-Dienst verwendet Behälter oder Container für die Datenspeicherung. Für diese Konfiguration müssen Sie eine _privat_ Eimer.
+Die [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicherdienst, der branchenführende Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung bietet. Der AWS S3-Dienst verwendet Behälter oder Container für die Datenspeicherung. Für diese Konfiguration müssen Sie eine _privat_ Eimer. Informationen zu Adobe Commerce zur Cloud-Infrastruktur finden Sie unter [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md).
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ Die [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicherdi
 
 ## Nginx konfigurieren
 
-Nginx benötigt eine zusätzliche Konfiguration, um eine Authentifizierung mit der `proxy_pass` Richtlinie. Fügen Sie die folgenden Proxy-Informationen zum `nginx.conf` Datei:
+Nginx erfordert eine zusätzliche Konfiguration, um die Authentifizierung mit dem `proxy_pass` Richtlinie. Fügen Sie die folgenden Proxy-Informationen zum `nginx.conf` Datei:
 
 >nginx.conf
 
@@ -63,15 +63,14 @@ Wenn Sie Zugriff- und geheime Schlüssel anstelle von [AWS IAM] -Rollen, müssen
 
 ### Berechtigungen
 
-Die S3-Integration beruht auf der Möglichkeit, zwischengespeicherte Bilder im lokalen Dateisystem zu generieren und zu speichern. Daher können Ordnerberechtigungen für `pub/media` und ähnliche Ordner sind für S3 identisch mit denen bei der Verwendung des lokalen Speichers.
+Die S3-Integration beruht auf der Möglichkeit, zwischengespeicherte Bilder im lokalen Dateisystem zu generieren und zu speichern. Daher sind Ordnerberechtigungen für `pub/media` und ähnliche Ordner sind für S3 identisch mit denen bei der Verwendung des lokalen Speichers.
 
 ### Dateivorgänge
 
-Es wird dringend empfohlen, [!DNL Commerce] Dateiadaptermethoden in Ihrer Kodierung oder Erweiterungsentwicklung, unabhängig vom Dateityp. Verwenden Sie bei Verwendung von S3 zum Speichern keine nativen I/O-Vorgänge für PHP-Dateien, z. B. `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Siehe [DriverInterface.php] für Codebeispiele.
+Es wird dringend empfohlen, [!DNL Commerce] Dateiadaptermethoden in Ihrer Kodierung oder Erweiterungsentwicklung, unabhängig vom Dateityp. Verwenden Sie bei Verwendung von S3 zum Speichern keine nativen I/O-Vorgänge für PHP-Dateien, z. B. `copy`, `rename`oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Siehe [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) für Codebeispiele.
 
 <!-- link definitions -->
 
 [AWS S3]: https://aws.amazon.com/s3
 [AWS IAM]: https://aws.amazon.com/iam/
 [ngx repo]: https://github.com/anomalizer/ngx_aws_auth
-[DriverInterface.php]: https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18

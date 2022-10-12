@@ -1,30 +1,30 @@
 ---
 title: Remote Storage konfigurieren
 description: Erfahren Sie, wie Sie das Remote-Speichermodul für die lokale Commerce-Anwendung konfigurieren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Remote Storage konfigurieren
 
-Das Remote-Speichermodul bietet die Möglichkeit, Mediendateien zu speichern und Importe/Exporte mithilfe eines Speicherdienstes wie AWS S3 in einem beständigen Remote-Speicher-Container zu planen. Standardmäßig wird die [!DNL Commerce] -Anwendung speichert Mediendateien im selben Dateisystem, das die Anwendung enthält. Dies ist bei komplexen Konfigurationen mit mehreren Servern ineffizient und kann bei der Freigabe von Ressourcen zu einer beeinträchtigten Leistung führen. Mit dem Remote Storage-Modul können Sie Mediendateien im `pub/media` Ordner- und Import-/Exportdateien im `var` Verzeichnis des Remote-Objektspeichers, um die serverseitige Bildgröße zu nutzen.
+Das Remote-Speichermodul bietet die Möglichkeit, Mediendateien zu speichern und Importe und Exporte mithilfe eines Speicherdienstes wie AWS S3 in einem beständigen Remote-Speicher-Container zu planen. Standardmäßig speichert die Adobe Commerce-Anwendung Mediendateien im selben Dateisystem, das die Anwendung enthält. Dies ist bei komplexen Konfigurationen mit mehreren Servern ineffizient und kann bei der Freigabe von Ressourcen zu einer beeinträchtigten Leistung führen. Mit dem Remote Storage-Modul können Sie Mediendateien im `pub/media` Ordner- und Import-/Exportdateien im `var` Verzeichnis des Remote-Objektspeichers, um die serverseitige Bildgröße zu nutzen.
 
 >[!INFO]
 >
->Remote-Speicher ist nur in Version 2.4.2 und höher verfügbar. Siehe [2.4.2 - Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>Remote-Speicher ist nur für Commerce-Versionen 2.4.2 und höher verfügbar. Siehe [2.4.2 - Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->Das Remote-Speichermodul verfügt über _begrenzt_ Unterstützung von Adobe Commerce für Cloud-Infrastruktur. Adobe kann keine vollständige Fehlerbehebung beim Speicheradapterdienst von Drittanbietern durchführen.
+>Das Remote-Speichermodul verfügt über _begrenzt_ Unterstützung von Adobe Commerce für Cloud-Infrastruktur. Adobe kann keine vollständige Fehlerbehebung beim Speicheradapterdienst von Drittanbietern durchführen. Siehe [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md) für Anleitungen zur Implementierung von Remote-Speicher für Cloud-Projekte.
 
 ![Schemabild](../../assets/configuration/remote-storage-schema.png)
 
 ## Remote-Speicheroptionen
 
-Sie können den Remote-Speicher mit dem `remote-storage` mit der Option [`setup` CLI, Befehl][setup]. Die `remote-storage` -Option verwendet die folgende Syntax:
+Sie können den Remote-Speicher mit dem `remote-storage` mit der Option [`setup` CLI, Befehl](../../installation/tutorials/deployment.md). Die `remote-storage` -Option verwendet die folgende Syntax:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
@@ -49,21 +49,23 @@ Der standardmäßige Speicherort befindet sich im lokalen Dateisystem. A _Speich
 
 ## Remote-Speicher aktivieren
 
-Sie können den Remote-Speicher während einer neuen [!DNL Commerce] Installation oder Hinzufügen zu einer vorhandenen Commerce-Instanz mithilfe von `remote-storage` Name-Wert-Paare von Parametern mit `setup` CLI-Befehle. Minimal müssen Sie den Speicher bereitstellen `driver`, `bucket`und `region`.
+Sie können den Remote-Speicher während einer Adobe Commerce-Installation installieren oder einer bestehenden Commerce-Instanz Remote-Speicher hinzufügen. Die folgenden Beispiele zeigen die einzelnen Methoden anhand eines Satzes von `remote-storage` Parameter mit Commerce `setup` CLI-Befehle. Minimal müssen Sie den Speicher bereitstellen `driver`, `bucket`und `region`.
 
-Die folgenden Beispiele ermöglichen den Remote-Speicher mit einem AWS S3-Speicheradapter in den USA:
-
-- Neu installieren [!DNL Commerce] mit Remote-Speicher
+- Beispiel: Installieren von Commerce mit Remote-Speicher
 
    ```bash
    bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
 
-- Remote-Speicher auf bereits vorhandene aktivieren [!DNL Commerce]
+- Beispiel: Remote-Speicher für vorhandenen Commerce aktivieren
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
    ```
+
+>[!TIP]
+>
+>Informationen zu Adobe Commerce zur Cloud-Infrastruktur finden Sie unter [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md).
 
 ## Einschränkungen
 
@@ -75,7 +77,7 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 Die Aktivierung des Remote-Speichers kann sich auf Ihr bestehendes Entwicklungs-Erlebnis auswirken. Beispielsweise funktionieren bestimmte PHP-Dateifunktionen möglicherweise nicht erwartungsgemäß. Die Verwendung von Commerce Framework für Dateivorgänge muss erzwungen werden.
 
-Die Liste der verbotenen nativen PHP-Funktionen ist in verfügbar. [Magento Coding Standard] Repository.
+Die Liste der verbotenen nativen PHP-Funktionen ist in verfügbar. [Magento-coding-standard-Repository][code-standard].
 
 ## Migrieren von Inhalten
 
@@ -92,5 +94,4 @@ Nachdem Sie den Remote-Speicher für einen bestimmten Adapter aktiviert haben, k
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[Magento Coding Standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php
-[setup]: ../../installation/tutorials/deployment.md
+[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php

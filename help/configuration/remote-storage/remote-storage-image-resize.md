@@ -1,24 +1,28 @@
 ---
 title: Bildgröße für Remote-Speicher konfigurieren
 description: Optimieren Sie die Festplattenressourcen, indem Sie die Größe des serverseitigen Bildes konfigurieren.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
 
 # Bildgröße für Remote-Speicher konfigurieren
 
-Standardmäßig [!DNL Commerce] unterstützt die Größenanpassung von Bildern auf der Anwendungsseite. Durch Aktivierung des Remote Storage-Moduls können Sie jedoch Nginx verwenden, um die Größe des Bildes auf die Server-Seite zu verschieben, wo Sie Festplattenressourcen sparen und die Festplattenauslastung optimieren können.
+Standardmäßig unterstützt Adobe Commerce die Größenanpassung von Bildern auf der Anwendungsseite. Durch Aktivierung des Remote Storage-Moduls können Sie jedoch Nginx verwenden, um die Größe des Bildes auf die Server-Seite zu verschieben, wo Sie Festplattenressourcen sparen und die Festplattenauslastung optimieren können.
 
 Das folgende Diagramm zeigt, wie Nginx Bilder im Cache abruft, in der Größe ändert und speichert. Die Größenanpassung wird durch die in der URL enthaltenen Parameter bestimmt, z. B. Höhe und Breite.
 
 ![Bildgröße](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## Konfigurieren des URL-Formats in [!DNL Commerce]
+>[!TIP]
+>
+>Informationen zu Adobe Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md)
 
-Um die Größe von Bildern serverseitig zu ändern, müssen Sie Commerce so konfigurieren, dass Argumente für die Höhe, Breite und Position (URL) des Bildes angegeben werden.
+## Konfigurieren des URL-Formats in Adobe Commerce
+
+Um die Größe von Bildern serverseitig zu ändern, müssen Sie Adobe Commerce so konfigurieren, dass Argumente für die Höhe, Breite und Position (URL) des Bildes angegeben werden.
 
 **So konfigurieren Sie Commerce für die serverseitige Bildgröße**:
 
