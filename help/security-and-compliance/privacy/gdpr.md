@@ -1,9 +1,9 @@
 ---
 title: Die Datenschutz-Grundverordnung (DSGVO)
 description: Erfahren Sie mehr über die Datenschutz-Grundverordnung (DSGVO), eine Rechtsvorschrift, die den Datenschutz und die Privatsphäre aller Personen in der Europäischen Union und im Europäischen Wirtschaftsraum regelt.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Die Europäische Union (EU) hat [Die Datenschutz-Grundverordnung](https://ec.europa.eu/info/law/law-topic/data-protection_en) (DSGVO), um den Bürgern mehr Kontrolle über ihre personenbezogenen Daten zu geben. Die DSGVO gilt für alle Organisationen, die innerhalb der EU tätig sind. Sie gilt auch für Organisationen außerhalb der EU, die Waren oder Dienstleistungen für Kunden oder Unternehmen in der EU anbieten.
 
-Systemintegratoren können die Datenflussdiagramme und Datenbankinformationen in der Referenz zu personenbezogenen Daten verwenden, um Skripte zu erstellen, um Anwendungsfälle ähnlich den folgenden zu lösen:
+Systemintegratoren können die Datenflussdiagramme und Datenbankinformationen in der Personal Information Reference verwenden, um Skripte zu erstellen, um Anwendungsfälle ähnlich den folgenden zu lösen:
 
 - Ein Käufer fordert eine Kopie der Daten an, die er über ihn gespeichert hat
 - Ein Käufer fordert auf, seine Informationen zu löschen

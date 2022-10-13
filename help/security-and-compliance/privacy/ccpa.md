@@ -1,7 +1,7 @@
 ---
 title: California Consumer Privacy Act (CCPA)
 description: Erfahren Sie mehr über den California Consumer Privacy Act (CCPA), der die Rechte von Verbrauchern in Kalifornien erweitert, um zu bestimmen, wie ihre personenbezogenen Daten erfasst, gespeichert und verwendet werden.
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Der CCPA verleiht den Verbrauchern die folgenden neuen Rechte:
 - **Recht auf Abmeldung** des Verkaufs ihrer personenbezogenen Daten.
 - **Recht auf Nichtdiskriminierung** in Bezug auf den Preis oder die Dienstleistung, die für die Ausübung eines Datenschutzrechts im Rahmen des CCPA gewährt wurde.
 
-## CCPA-Compliance-Handbuch
+## CCPA-Konformität
 
 Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte Anstrengungen. Wir ermutigen Händler, ein funktionsübergreifendes Team zusammenzustellen, und folgen dem in [CCPA-Compliance-Handbuch](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) ihre Unternehmen mit der Verordnung in Einklang zu bringen. Als Entwickler können Sie eingeladen werden, als Verantwortlicher teilzunehmen, wobei der Schwerpunkt auf den Schritten 2 bis 5 des Prozesses liegt. Siehe [CCPA-Compliance-Handbuch](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) für weitere Informationen.
 
@@ -48,5 +48,5 @@ Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte
 
 Technische Informationen finden Sie in den Datenflussdiagrammen und Zuordnungen von Datenbankentitäten in der Referenz zu personenbezogenen Daten, die für jede von Ihnen unterstützte Version von Adobe Commerce oder Magento Open Source gilt.
 
-- [Referenz zu personenbezogenen Daten (Version 2.x)](data-m2.md)
-- [Referenz zu personenbezogenen Daten (Version 1.x)](data-m1.md)
+- [Referenz zu personenbezogenen Daten des Kunden (Version 2.x)](data-m2.md)
+- [Referenz zu personenbezogenen Daten des Kunden (Version 1.x)](data-m1.md)

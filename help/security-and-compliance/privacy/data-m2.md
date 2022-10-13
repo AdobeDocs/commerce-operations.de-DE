@@ -1,9 +1,9 @@
 ---
 title: Referenz zu personenbezogenen Daten des Kunden (Version 2.x)
 description: Erfahren Sie mehr über Datenflussdiagramme und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden in Adobe Commerce und Magento Open Source 2.x.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Dies ist eines von mehreren Themen, die Kaufleuten und Entwicklern von Adobe Commerce und Magento Open Source bei der Vorbereitung auf die Einhaltung von Datenschutzbestimmungen helfen. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
 
-Verwenden Sie die folgenden Datenflussdiagramme und Zuordnungen von Datenbankentitäten als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen wie:
+Verwenden Sie die folgenden Datenflussdiagramme und Datenbankentitätszuordnungen als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen wie:
 
 - [DSGVO](gdpr.md)
 - [CCPA](ccpa.md)
