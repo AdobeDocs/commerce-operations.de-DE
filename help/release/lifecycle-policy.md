@@ -1,7 +1,7 @@
 ---
 title: Software Lifecycle Policy
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Softwareunterstützung für Adobe Commerce-Versionen.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Für Adobe Commerce 2.4 und nachfolgende Versionen:
 
-- Um unsere Lebenszyklusrichtlinie besser zu vereinfachen, bietet Adobe Qualitätsverbesserungen für die Version 2.4 bis zum Ende des Supportzeitraums der PHP-Version, auf der sie basiert. Ein Kunde kann über [Adobe Commerce-Support](https://developer.adobe.com/commerce/contributor/community/support/) oder über den Self-Service [Werkzeug für Qualitätsmuster](https://devdocs.magento.com/quality-patches/tool.html) wenn ihre Version weiterhin für Qualitätsunterstützung infrage kommt. Die Daten zum Ende der Software-Unterstützung für Adobe Commerce-Release-Zeilen finden Sie in der folgenden Tabelle.
+- Um unsere Lebenszyklusrichtlinie besser zu vereinfachen, bietet Adobe Qualitätsverbesserungen für die Version 2.4 bis zum Ende des Supportzeitraums der PHP-Version, auf der sie basiert. Ein Kunde kann über [Adobe Commerce-Support](https://developer.adobe.com/commerce/contributor/community/support/) oder über den Self-Service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} , wenn ihre Version weiterhin Qualitätsunterstützung erhält. Die Daten zum Ende der Software-Unterstützung für Adobe Commerce-Release-Zeilen finden Sie in der folgenden Tabelle.
 
 - Adobe bietet nur die neueste Patch- oder Sicherheits-Patch-Version mit Sicherheitskorrekturen, auch wenn die Version eines Kunden weiterhin Qualitätsunterstützung in Anspruch nimmt. Im Gegensatz zu Qualitätskorrekturen können Sicherheitskorrekturen nicht in früheren Nebenversionen oder früheren Patch-Versionen innerhalb unterstützter Nebenversionen rückportiert werden.
 
