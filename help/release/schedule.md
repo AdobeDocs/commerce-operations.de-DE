@@ -1,9 +1,9 @@
 ---
 title: Veröffentlichungszeitplan
 description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce für die Beta-, Vorab-Release- und allgemeine Verfügbarkeit geplant sind.
-source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
+source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
 | Juni 2022<br>Feature Release | \-\- | \-\- | \-\- | 21. Juni 2022 |
 | August 2022<br>Feature + Patch-Version + Sicherheits-Patch-Version | 2,4,5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26. Juli 2022 | 9. August 2022 |
 | Oktober 2022<br>Feature + Sicherheits-Patch-Version | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27. September 2022 | 11. Oktober 2022 |
+| Januar 2023<br>Feature Release | \-\- | \-\- | \-\- | 17. Januar 2023 |
+| März 2023<br>Feature + Patch-Version + Sicherheits-Patch-Version | 2,4,6<br>2.4.5-p2<br>2.4.4-p3 | Januar 2023 | 28. Februar 2023 | 14. März 2023 |
 
 <sup>\-\ - Zeigt Elemente an, die nicht auf diese Version anwendbar sind.</sup><br>
 <sup>1 Dies ist die letzte Patch-Version für die Version 2.3.x. Die Version 2.3.x erreicht das Ende der Unterstützung (EOS) im September 2022.</sup><br>
@@ -32,10 +34,6 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
 >[!TIP]
 >
 >Patch- und Security Patch-Versionen bieten die Möglichkeit, die Core-Codebase zu aktualisieren, um Ihre Plattform sicher, zuverlässig und leistungsfähig zu halten. Funktionsveröffentlichungen werden alle zwei Monate vorgenommen. Feature Releases sind unabhängig von der Core-Codebase und stehen über externe Module oder Erweiterungen zur Verfügung. Aktualisierungen vorhandener unabhängiger Funktionen werden während der Funktionsveröffentlichungen veröffentlicht und nicht automatisch vorgenommen, wenn die Funktion bereits implementiert wurde.
-
->[!NOTE]
->
->Wir haben eine [neue Politik](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) , die für unsere unterstützten Release-Zeilen gilt. Weitere Informationen über die neue Strategie für den Veröffentlichungskalender und die Lebenszykluspolitik 2022 finden Sie in unserer [blog](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
 
 ## Frühzeitiger Zugriff
 
