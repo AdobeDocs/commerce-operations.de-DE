@@ -1,11 +1,11 @@
 ---
 user-guide-title: Implementierungs-Playbook
-user-guide-description: Erfahren Sie mehr über Strategien zur Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
+user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 0def7f131883428f4d959071e36200644b73b7c2
+source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 0%
+source-wordcount: '128'
+ht-degree: 12%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Implementierungs-Playbook {#implementation-playbook}
 
 - [Übersicht](overview.md)
-- Commerce {#intro}
+- Handel {#intro}
    - [Über Adobe Commerce](intro/about-commerce.md)
    - [Grundsätze der Plattformentwicklung](intro/platform-development.md)
 - Projektumfang {#project-scope}
@@ -65,7 +65,4 @@ ht-degree: 0%
    - [Schritte nach dem Start](launch/post-launch-steps.md)
 - Wartung und Support {#maintenance}
    - [Übersicht](maintenance/overview.md)
-   - [Modelle](maintenance/models.md)
-   - [Dienstebenen](maintenance/service-level-agreements.md)
-   - [Metriken](maintenance/metrics.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
