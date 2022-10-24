@@ -1,7 +1,7 @@
 ---
-source-git-commit: d36beb2e963a28d7a98d61dab94ddc67cb2f40ab
+source-git-commit: d1f1f08a6c42f9d1900d37b5cdeb11fbccd2b92e
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1899'
 ht-degree: 0%
 
 ---
@@ -815,6 +815,73 @@ ht-degree: 0%
       <td>Kompatibel</span>
       </td>
       <td>Unterstützt</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="15">Kanal-Manager</th>
+    </tr>
+    <tr>
+      <td>Kanal-Manager 1.1.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Kanal-Manager 1.0.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
       </td>
     </tr>
   </tbody>
