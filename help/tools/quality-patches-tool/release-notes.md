@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.3) - Behebt die _Versuch, auf den Array-Versatz für den Wert des Typs &quot;bool&quot;zuzugreifen_ Fehler beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte auf PHP 7.4.
+* **ACSD-47332** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebung des Problems, bei dem Cron mit einem Fehler fehlschlägt, der nur bei Ausführung zwischen 00:00 und 00:59 UTC gemeldet wird.
+* **ACSD-47280** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebung des Problems, bei dem das Deaktivieren der Funktion für freigegebene Kataloge in einem bestimmten Bereich nicht ordnungsgemäß funktioniert.
+* **ACSD-47106** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.6) - Behebung des Problems, bei dem ein Wert nicht in einem neuen benutzerdefinierten Attribut auf einer Seite zur Unternehmenserstellung gespeichert werden kann.
+* Aktualisierter Patch: ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
