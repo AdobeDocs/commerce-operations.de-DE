@@ -1,11 +1,13 @@
 ---
-source-git-commit: d36beb2e963a28d7a98d61dab94ddc67cb2f40ab
+source-git-commit: e413ad8fb31b2151a03557320505f8ce95e8ff1a
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '166'
 ht-degree: 9%
 
 ---
 # Commerce-Funktionen
+
+<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Then, run the rendering script (_scripts/render) to generate the new compatibility table as described in the README instructions.-->
 
 <table style="table-layout:auto">
   <tbody>
@@ -74,6 +76,14 @@ ht-degree: 9%
       <td>+</td>
     </tr>
     <tr>
+      <td>Kanal-Manager (Walmart Marketplace)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
       <td>B2B-fähige Funktionen und APIs (weitere Informationen finden Sie im Informationsblatt von B2B)</td>
       <td></td>
       <td></td>
@@ -125,6 +135,14 @@ ht-degree: 9%
     </tr>
     <tr>
       <td>Online-Abholung im Store (BOPIS) kaufen</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Store Fulfillment (Advanced Omnichannel fulfillment)</td>
       <td></td>
       <td></td>
       <td></td>
