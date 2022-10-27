@@ -2,7 +2,7 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: 441bbcf15901b9ca547780eb6f3a20efc8025d91
+source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 2%
@@ -126,4 +126,4 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
 | Änderung | Typ |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
 | Verschieben Sie die [Sicherheits- und Compliance-Anleitung](../security-and-compliance/overview.md) von [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Neu |
-| Verschieben Sie die [Handbuch zu Versionshinweisen](../release/roadmap.md) von [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Neu |
+| Verschieben Sie die [Handbuch zu Versionshinweisen](../release/release-notes/overview.md) von [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Neu |

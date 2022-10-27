@@ -1,9 +1,9 @@
 ---
 title: Veröffentlichungszeitplan
 description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce für die Beta-, Vorab-Release- und allgemeine Verfügbarkeit geplant sind.
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Veröffentlichungszeitplan
 
-Adobe bemüht sich ständig um die richtige Balance zwischen der einfachen und vorhersehbaren Bereitstellung von Produktaktualisierungen und der schnelleren Bereitstellung von Verbesserungen und neuen Funktionen für frühe Anwender. Im vergangenen Jahr haben wir die Bereitstellung von Software zur Stützung dieses Gleichgewichts verfeinert. Weitere Informationen finden Sie in unserer [Versionsrichtlinie](policy.md).
+Adobe bemüht sich ständig um die richtige Balance zwischen der einfachen und vorhersehbaren Bereitstellung von Produktaktualisierungen und der schnelleren Bereitstellung von Verbesserungen und neuen Funktionen für frühe Anwender. Im vergangenen Jahr haben wir die Bereitstellung von Software zur Stützung dieses Gleichgewichts verfeinert. Weitere Informationen finden Sie in unserer [Versionierungsrichtlinie](versioning-policy.md).
 
 Adobe veröffentlicht Sicherheits- und Funktions-Patches für jede unterstützte Release-Zeile von Adobe Commerce und Magento Open Source.
 
