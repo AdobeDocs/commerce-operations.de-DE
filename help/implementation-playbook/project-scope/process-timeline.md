@@ -1,15 +1,16 @@
 ---
-title: Prozess und Timeline
+title: Implementierungsprozess und Timeline
 description: Beispiele für typische Zeitpläne und Zeitleistenaktivitäten der Adobe Commerce-Implementierung.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Typischer Prozess und Timeline
+
+# Typischer Implementierungsprozess und Timeline
 
 Viele Organisationen bereiten sich auf eine Commerce-Transformation vor, indem sie eine Anfrage für einen Vorschlag (RFP) erstellen. Dazu gehören detaillierte Anforderungen, aktuelle Datensatzsysteme, ein Geschäftsfall und spezifische Ziele (z. B. Umsatz, Konversion, durchschnittlicher Bestellwert) zur Definition des Erfolgs. Die Marke nähert sich dann zwei bis drei verschiedenen Commerce-Systemintegratoren oder digitalen Agenturen an, um Schätzungen und Vorschläge zu bewerten, zu überprüfen, ein Unternehmen auszuwählen und mit der Arbeit an einem geplanten Zeitplan für die Einführung zu beginnen.
 
