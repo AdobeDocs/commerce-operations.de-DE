@@ -1,9 +1,9 @@
 ---
 title: Installationshandbuch
 description: Verwenden Sie dieses Installationshandbuch [!DNL Site-Wide Analysis Tool] für Ihre Website
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 434fb9eb9570f183d9bf9d4b56b8e56a69e8005d
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1067'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Ihre lokale Infrastruktur muss die folgenden Anforderungen erfüllen, bevor der 
 
 ## [!DNL Commerce Services Connector]
 
-Der Agent benötigt die [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) Erweiterung, die auf Ihrem System installiert werden soll, und [konfiguriert](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) mit API-Schlüsseln. Um zu überprüfen, ob die Erweiterung installiert ist, führen Sie den folgenden Befehl aus:
+Der Agent benötigt die [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) Erweiterung, die auf Ihrem System installiert werden soll, und [konfiguriert](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) mit API-Schlüsseln. Um zu überprüfen, ob die Erweiterung installiert ist, führen Sie den folgenden Befehl aus:
 
 ```bash
 bin/magento module:status Magento_ServicesConnector
@@ -83,7 +83,7 @@ Wenn Sie die Erweiterung installiert und mit einem vorhandenen API-Schlüssel f�
 
 1. Klicken **[!UICONTROL Delete]** neben dem vorhandenen API-Schlüssel.
 
-1. [Konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) einen neuen API-Schlüssel.
+1. [Konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) einen neuen API-Schlüssel.
 
 >[!IMPORTANT]
 >
@@ -109,7 +109,7 @@ Wenn die Erweiterung nicht installiert ist, installieren Sie sie mit den folgend
    bin/magento setup:upgrade
    ```
 
-1. [API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) , um die Erweiterung mit Ihrem System zu verbinden.
+1. [API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) , um die Erweiterung mit Ihrem System zu verbinden.
 
 ## Installieren des Agenten
 

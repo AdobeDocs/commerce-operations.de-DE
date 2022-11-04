@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise zu Adobe Commerce und Magento Open Source
 description: Erfahren Sie, wo Sie Informationen zu bestimmten Adobe Commerce- und Magento Open Source-Versionen finden.
-source-git-commit: 3096f6820589fc7830d6439b4a76228ee47cd9d3
+source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Zahlungsdienste</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Produkt-Recommendations</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html?lang=en">Quick Checkout</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Services Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Services Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Store Fulfillment</a></li>
           </ul>
         </td>
