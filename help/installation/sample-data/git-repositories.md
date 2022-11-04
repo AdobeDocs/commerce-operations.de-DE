@@ -1,9 +1,9 @@
 ---
 title: Beispieldaten-Git-Repositorys klonen
 description: Führen Sie diese Schritte aus, um Adobe Commerce und Magento Open Source-Beispieldaten zu installieren, indem Sie Git-Repositorys klonen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ So klonen Sie das GitHub-Beispielrepository mit dem SSH-Protokoll:
 
    Wenn Sie die `2.4-develop` Verzweigung des Magento Open Source GitHub-Repositorys, sollte die Verzweigung Beispieldaten `2.4-develop`.
 
-   Wenn Sie die `2.4.3` Verzweigung des Magento Open Source GitHub-Repositorys, sollte die Verzweigung Beispieldaten `2.4.3`.
-
-   Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldatenrepository aus (vorausgesetzt, Sie benötigen die `2.4.3` Verzweigung):
+   Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldatenrepository aus (vorausgesetzt, Sie benötigen die `2.4-develop` Verzweigung):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Ändern Sie `<app_root>`.
@@ -129,12 +127,10 @@ So klonen Sie das GitHub-Beispielrepository mit dem HTTPS-Protokoll:
 
    Wenn Sie die `2.4-develop` Verzweigung des Magento Open Source GitHub-Repositorys, sollte die Verzweigung Beispieldaten `2.4-develop`.
 
-   Wenn Sie die `2.4.3` Verzweigung des Magento Open Source GitHub-Repositorys, sollte die Verzweigung Beispieldaten `2.4.3`.
-
-   Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldatenrepository aus (vorausgesetzt, Sie benötigen die `2.4.3` Verzweigung):
+   Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldatenrepository aus (vorausgesetzt, Sie benötigen die `2.4-develop` Verzweigung):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Ändern Sie `<magento_root>`.
