@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
-source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
+source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
 workflow-type: tm+mt
-source-wordcount: '9581'
+source-wordcount: '9752'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,18 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebung des Problems, bei dem ein Administrator mit eingeschränktem Zugriff auf einen bestimmten Bereich Produktüberprüfungen nicht löschen kann.
+* **ACSD-47107** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.5) - Behebung des Problems, bei dem der Rabatt auf die Katalogpreisregel auf benutzerdefinierte Produktoptionen angewendet wird.
+* **ACSD-47232** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebung des Problems, bei dem Gutscheine mit Gesamtgewichtsbedingungen nicht im Admin angewendet werden können.
+* **ACSD-46519** (für Adobe Commerce und Magento Open Source >=2.4.1 &lt;2.4.6) - Behebung des Problems, bei dem die GraphQL categoryList-Anfrage eine falsche product_count für eine Ankerkategorie zurückgibt.
+* **ACSD-47027** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.6) - Behebt eine langsame updateCompanyRole GraphQL-Anfrage.
+* **ACSD-47666** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebung des Problems, bei dem die Filterfunktion im Raster Admin > System > Berechtigungen > Benutzerrollen > Rolle > Rollenbenutzer nicht funktioniert.
+* **ACSD-47497** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebung des Problems, bei dem die Registerkarte &quot;Dienste&quot;nicht in der Konfiguration unter dem Admin angezeigt wird.
+* Aktualisierter Patch: ACSD-47743.
+* Ersetzte Patches: MDVA-42807.
 
 ## v1.1.22 {#v1-1-22}
 
