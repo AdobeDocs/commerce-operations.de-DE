@@ -1,5 +1,5 @@
 ---
-source-git-commit: e413ad8fb31b2151a03557320505f8ce95e8ff1a
+source-git-commit: c6b2c0715ae7ddd1a5f64facba6fbd2919875850
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 9%
@@ -7,7 +7,8 @@ ht-degree: 9%
 ---
 # Commerce-Funktionen
 
-<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Then, run the rendering script (_scripts/render) to generate the new compatibility table as described in the README instructions.-->
+<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content: 
+https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
 
 <table style="table-layout:auto">
   <tbody>

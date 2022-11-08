@@ -1,5 +1,5 @@
 ---
-source-git-commit: 27779307682b7fb4f4abd597772a25700f6bf132
+source-git-commit: c6b2c0715ae7ddd1a5f64facba6fbd2919875850
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 <!--This include content is automatically generated using the compatibility-mde.html
 template and the "_data/release/mde.yml" data file. To update the content,
 add new information to the data file. Follow the instructions in the README instructions to generate
-the updated content: https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates-->
+the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
 
 **Unterstützt** - Version, die von Adobe vollständig getestet und unterstützt wurde.
 
