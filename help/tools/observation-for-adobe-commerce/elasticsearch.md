@@ -1,9 +1,9 @@
 ---
-title: '"Die [!UICONTROL Elasticsearch] tab"'
+title: "Die [!UICONTROL Elasticsearch] tab"
 description: Erfahren Sie mehr über die [!UICONTROL Elasticsearch] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 2427a18ea67833bc50912ef78be29d4320b5b205
+source-git-commit: b3cc9033eb9445af3edafd8c7ae9809dbb8174fc
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ![Cluster-Statuszusammenfassung](../../assets/tools/cluster-status-summary.jpg)
 
-Im ausgewählten Zeitraum wird die **[!UICONTROL Cluster Status Summary]** Rahmen zeigt den Farbstatus an, den die [!DNL Elasticsearch] Cluster durchlaufen. In diesem Beispiel befand sich der Cluster während des ausgewählten Zeitrahmens einmal im Grünen Status und während des ausgewählten Zeitrahmens einmal im Gelben Status.
+Im ausgewählten Zeitraum wird die **[!UICONTROL Cluster Status Summary]** Rahmen zeigt den Farbstatus an, den die [!DNL Elasticsearch] Cluster durchlaufen. In diesem Beispiel befand sich der Cluster während des ausgewählten Zeitrahmens einmal im Grün-Status und während des ausgewählten Zeitrahmens einmal im Gelb-Status.
 
 ## [!UICONTROL Active Primary Shards]
 
 ![Aktive Primäre Shards](../../assets/tools/active-primary-shards.jpg)
 
-Die **[!UICONTROL Active Primary Shards]** -Frame zeigt unterschiedliche Zahlen in Abhängigkeit von der Anzahl der aktiven primären Shards für das ausgewählte Konto an. [!DNL Elasticsearch] Dienst.
+Die **[!UICONTROL Active Primary Shards]** frame zeigt die unterschiedlichen Zahlen in Abhängigkeit von der Anzahl der aktiven primären Shards für die [!DNL Elasticsearch] Dienst.
 
 Von [!DNL Elasticsearch]: Der endgültige Leitfaden [2.x]:
 
@@ -33,31 +33,31 @@ Wenn ein Index erstellt wird, werden mehrere Shards mit diesem Index erstellt. S
 
 ![Aktive Shards im Cluster](../../assets/tools/active-shards-in-cluster.jpg)
 
-**[!UICONTROL Active Shards in Cluster]** - ALLE Primär- und Replikatshirme in einem [!DNL Elasticsearch] Cluster.
+Die **[!UICONTROL Active Shards in Cluster]** frame zeigt die Gesamtzahl der primären und replikatösen Shards in einem [!DNL Elasticsearch] Cluster.
 
 ## [!UICONTROL Index health - this will show the index name and color status]
 
 ![Indexkonsistenz](../../assets/tools/index-health.jpg)
 
-Dieser Frame zeigt den Indexnamen und die Anzahl der Indexfarbstatus. Wenn Sie die Tabelle nach unten scrollen, sehen Sie denselben Indexnamen mit den Status Gelb und Rot . Die Zahl, die auf den 27 Indexnamen folgt, entspricht der Anzahl der Statusfarbe. Wenn es null ist, gab es während dieser ausgewählten Zeitrahmen keine Instanzen des Index, der sich in diesem Farbstatus befanden.
+Dieser Rahmen zeigt den Indexnamen und die Anzahl der Indexfarbstatus. Wenn Sie die Tabelle nach unten scrollen, sehen Sie denselben Indexnamen mit den Status Gelb und Rot . Die Zahl, die auf den 27 Indexnamen folgt, entspricht der Anzahl der Statusfarbe. Wenn es null ist, gab es während der ausgewählten Zeitrahmen keine Instanzen des Index, der sich in diesem Farbstatus befanden.
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
 ![Elasticsearch-Status](../../assets/tools/elasticsearch-status-by-node.jpg)
 
-Die **[!UICONTROL Elasticsearch Status by node information]** -Frame zeigt die [!DNL Elasticsearch] Clusterstatus nach Farbe, nach Knoten. Dies hilft bei der Angabe des Knotens im [!DNL Elasticsearch] Der Cluster gibt den Status während des ausgewählten Zeitrahmens zurück.
+Die **[!UICONTROL Elasticsearch Status by node information]** -Frame zeigt die [!DNL Elasticsearch] Clusterstatus nach Farbe und Knoten. Auf diese Weise können Sie angeben, welcher Knoten im [!DNL Elasticsearch] Der Cluster gibt den Status während des ausgewählten Zeitrahmens zurück.
 
 ## [!UICONTROL Elasticsearch index information]
 
 ![Elasticsearch-Indexinformationen](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
-Diese **[!UICONTROL Elasticsearch index information]** -Tabelle zeigt den Indexnamen, den Knoten, auf dem sie sich befindet, die Anzahl der indizierten Dokumente, die Indexkonsistenz und die Indexgröße in MB zu einem bestimmten Zeitpunkt.
+Die **[!UICONTROL Elasticsearch index information]** -Tabelle zeigt den Indexnamen, den Knoten, auf dem sie sich befindet, die Anzahl der indizierten Dokumente, die Indexkonsistenz und die Indexgröße in MB zu einem bestimmten Zeitpunkt.
 
 ## [!UICONTROL Elasticsearch process CPU %]
 
 ![Elasticsearch Process CPU](../../assets/tools/elasticsearch-process-cpu.jpg)
 
-Die **[!UICONTROL Elasticsearch process CPU %]** frame zeigt die Prozess-CPU% durch die [!DNL Elasticsearch] über den ausgewählten Zeitraum hinweg verarbeitet werden.
+Die **[!UICONTROL Elasticsearch process CPU %]** frame zeigt den Prozess-CPU-Prozentsatz nach [!DNL Elasticsearch] über den ausgewählten Zeitraum hinweg verarbeitet werden.
 
 ## [!UICONTROL Elasticsearch Memory garbage collection]
 

@@ -1,7 +1,7 @@
 ---
 title: "[!DNL Observation for Adobe Commerce]"
 description: Informationen zu [!DNL Observation for Adobe Commerce], verwendet, wann und wie der Zugriff erfolgt.
-source-git-commit: 6523372cd5fe3219dc582123471cc85f3c47f37d
+source-git-commit: c40d78d37dc37b5ce38f61b46bcfb4d439a51ac2
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Dieser Leitfaden bietet einen ganzheitlichen Überblick über [!DNL Observation 
 
 Wenn Probleme auftreten, kann es zeitaufwendig sein, herauszufinden, wo das Problem wurzelt, und über die nötigen Kenntnisse zu verfügen, um es zu beheben. Die Adobe-Support-Organisation hat Stammeswissen gesammelt, das auf jahrelanger Suche nach Protokollen und Befehlszeilenausgängen bei der Fehlerbehebung von Problemen basiert. Das Tool nutzt dieses Wissen, um wichtige Signale anhand eines gemeinsamen Zeitplans zu identifizieren. Die Zeitleiste kann erweitert oder mit Verträgen versehen werden, sodass Sie Ihre Protokolldaten visualisieren können, um die Leistungsverwaltung und Problembehebung zu unterstützen.
 
-Verwenden [!DNL Observation]können Sie komplexe Probleme analysieren, auf die der Support stößt, um die eigentlichen Ursachen zu identifizieren. Anstatt unterschiedliche Daten zu verfolgen, können Sie Ihre Zeit damit verbringen, Ereignisse und Fehler zu korrelieren, um tiefgründige Einblicke in die Ursachen von Leistungsengpässen zu erhalten. Das Tool soll Ihnen einen besseren Überblick über einige der Probleme geben, die bei Sites auftreten, um Ihnen zu helfen, potenzielle Ursachen für Probleme zu identifizieren und die Leistung von Sites optimal zu halten. Dazu gehört auch die Identifizierung, ob und was [!DNL bots] verursacht Site-Probleme.
+Verwenden [!DNL Observation for Adobe Commerce]können Sie komplexe Probleme analysieren, auf die der Support stößt, um die eigentlichen Ursachen zu identifizieren. Anstatt unterschiedliche Daten zu verfolgen, können Sie Ihre Zeit damit verbringen, Ereignisse und Fehler zu korrelieren, um tiefgründige Einblicke in die Ursachen von Leistungsengpässen zu erhalten. Das Tool soll Ihnen einen besseren Überblick über einige der Probleme geben, die bei Sites auftreten, um Ihnen zu helfen, potenzielle Ursachen für Probleme zu identifizieren und Ihre Sites optimal zu gestalten. Dazu gehört auch die Identifizierung, ob und was [!DNL bots] verursacht Site-Probleme.
 
 ## Für wen ist dieser Leitfaden?
 

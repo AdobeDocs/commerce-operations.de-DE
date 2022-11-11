@@ -1,9 +1,9 @@
 ---
-title: '"Die [!UICONTROL PHP] tab"'
-description: Erfahren Sie mehr über die [!UICONTROL PHP] Registerkarte [!DNS Observation for Adobe Commerce].
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+title: "Die [!UICONTROL PHP] tab"
+description: Erfahren Sie mehr über die [!UICONTROL PHP] Tab von [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Die **[!UICONTROL PHP active process details]** frame zeigt die PHP-Prozesse, ei
 
 ![Laden von PHP-Prozessen](../../assets/tools/php-process-load.jpg)
 
-Dieser Frame zeigt die CPU-Last von PHP-FPM-Prozessen während des ausgewählten Zeitrahmens.
+Die **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** frame zeigt die CPU-Last von PHP-FPM-Prozessen über den ausgewählten Zeitraum hinweg an.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -35,7 +35,7 @@ Die **[!UICONTROL PHP Memory detail]** frame zeigt die Speichernutzung von PHP-P
 
 ![PHP CPU-Auslastung](../../assets/tools/php-cpu-utilization.jpg)
 
-Die **[!UICONTROL PHP CPU Utilization]** frame zeigt die CPU-Auslastung von PHP-Prozessen über den ausgewählten Zeitraum hinweg.
+Die **[!UICONTROL PHP CPU Utilization]** frame zeigt die CPU-prozentuale Auslastung von PHP-Prozessen über den ausgewählten Zeitrahmen.
 
 ## [!UICONTROL PHP Process states]
 
@@ -106,7 +106,7 @@ Die **[!UICONTROL Database Errors]** frame zeigt Datenbankfehler über den ausge
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
 * &#39;%[Hinweis] WSREP: Speicherkarte auf Festplatte leeren ...%&quot;) als &quot;mem_map_flush&quot;
 * &#39;%Interner MariaDB-Fehlercode: 1146%&quot;) als &quot;sql_1146&quot;
-* &#39;%Interner MariaDB-Fehlercode: 1062%&quot;) als &#39;sql_1062&#39; ・ &#39;%1062&#39; [Warnung] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Interner MariaDB-Fehlercode: 1062%&quot;) als &#39;sql_1062&#39; * &#39;%1062&#39; [Warnung] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
 * &#39;%Interner MariaDB-Fehlercode: 1064%&quot;) als &quot;sql_1064&quot;
 * &#39;%InnoDB: Assertionsfehler in Datei%&quot;) als &quot;assertion_err&quot;
 * &#39;%mysqld_safe Anzahl der jetzt ausgeführten Prozesse: 0%&quot;) als &quot;mysql_oom&quot;

@@ -1,7 +1,7 @@
 ---
-title: '"Die [!UICONTROL Deploy] tab"'
+title: "Die [!UICONTROL Deploy] tab"
 description: Erfahren Sie mehr über die [!UICONTROL Deploy] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Die **[!UICONTROL Post Deploy Log Detail]** frame zeigt die Protokolldetails nac
 
 ![Cloud-Protokolldetails](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-Die **[!UICONTROL Cloud Log Detail]** frame zeigt die Cloud-Protokolldetails an, die während des ausgewählten Zeitrahmens aufgetreten sind. Die folgenden Zeichenfolgen werden geparst und mit der nachfolgenden Bezeichnung &quot;AS&quot;zurückgegeben:
+Die **[!UICONTROL Cloud Log Detail]** frame zeigt die Cloud-Protokolldetails an, die während des ausgewählten Zeitrahmens aufgetreten sind. Die folgenden Zeichenfolgen werden geparst und mit der folgenden &quot;AS&quot;-Beschriftung zurückgegeben:
 
 * &#39;%DEBUG: /bin/bash -c &quot;set -o pipefail&quot;; php ./bin/magento setup:upgrade%&#39;) als &#39;start_update&#39;
 * &#39;%Schemaerstellung/-aktualisierungen:%&#39;) als &#39;schema_updates&#39;

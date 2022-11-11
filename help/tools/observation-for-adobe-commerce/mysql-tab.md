@@ -1,7 +1,7 @@
 ---
-title: '"Die [!UICONTROL MySQL] tab"'
+title: "Die [!UICONTROL MySQL] tab"
 description: Erfahren Sie mehr über die [!UICONTROL MySQL] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ![MySQL% freier Speicher nach Knoten](../../assets/tools/observation-for-adobe-commerce/mysql-tab-1.jpg)
 
-Viele Probleme werden dadurch verursacht, dass MySQL nicht mehr im Speicher für MySQL gespeichert ist (`datadir` MySQL-Konfigurationseinstellung, Standard ist `/data/mysql`) oder der `tmpdir` Der Platz ist knapp. Die Standardeinstellung `tmpdir` (MySQL-Einstellung) ist `/tmp`. Dieser Rahmen betrachtet die `/, /tmp` (sofern als separate Bereitstellung definiert) und die `/data/mysql` % der freien Lagerung. Ab MySQL Version 5.7 (MariaDB Version 10.2) werden unkomprimierte TMP-Tabellen in einen tmp-Tablespace im `/data/mysql` in der Datei (ibtmp1). Diese Datei wird automatisch ohne Begrenzung erweitert. Da es sich um einen Tablespace handelt, nimmt die Größe nicht ab und wird beim Neustart von MySQL auf 12 MB zurückgesetzt.
+Viele Probleme werden dadurch verursacht, dass MySQL nicht mehr im Speicher für MySQL gespeichert ist (`datadir` MySQL-Konfigurationseinstellung, Standard ist `/data/mysql`) oder der `tmpdir` Der Platz ist knapp. Die Standardeinstellung `tmpdir` (MySQL-Einstellung) ist `/tmp`. Die **[!UICONTROL MySQL% free storage by node]** Frame betrachtet die `/, /tmp` (sofern als separate Bereitstellung definiert) und die `/data/mysql` Prozentsatz der freien Lagerung. Ab MySQL Version 5.7 (MariaDB Version 10.2) unkomprimiert `tmp` Tabellen werden in eine `tmp` Tablespace im `/data/mysql` in der Datei (ibtmp1). Diese Datei wird standardmäßig automatisch ohne Begrenzung erweitert. Da es sich um einen Tablespace handelt, nimmt die Größe nicht ab und wird beim Neustart von MySQL auf 12 MB zurückgesetzt.
 
 ## [!UICONTROL MySQL Connections by Node]
 
@@ -38,7 +38,7 @@ Die **[!UICONTROL Galera Number of Nodes in cluster]** frame zeigt Informationen
 
 ![MySQL-Downloads und -Starts](../../assets/tools/observation-for-adobe-commerce/mysql-tab-5.jpg)
 
-Die **[!UICONTROL MySQL shutdowns and starts]** frame erkennt, wenn ein Knoten heruntergefahren wird. [!DNL Galera] -Knoten entfernt und aus der [!DNL Galera] Knoten. Dies führt normalerweise zu einem Neustart des MySQL-Dienstes.
+Die **[!UICONTROL MySQL shutdowns and starts]** frame erkennt, wenn ein Knoten heruntergefahren wird. Die [!DNL Galera] -Knoten entfernt und aus der [!DNL Galera] Knoten. Dies führt normalerweise zu einem Neustart des MySQL-Dienstes.
 
 ## [!UICONTROL Galera log]
 
@@ -55,8 +55,8 @@ Die **[!UICONTROL Galera log]** frame zeigt die Anzahl bestimmter Signale aus de
 * &#39;%members = 2/3 (join/total)%&#39;) as&#39;2of3&#39;
 * &#39;%members = 2/2%&#39;) als &#39;2of2&#39;
 * &#39;%members = 1/2%&#39;) as &#39;1of2&#39;
-* &quot;%members = 1/3%&quot;) als &#39;1of3&#39;
-* &quot;%members = 1/1%&quot;) als &#39;1of1&#39;
+* &#39;%members = 1/3%&#39;) as &#39;1of3&#39;
+* &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
 * &#39;%\[Hinweis\] /usr/sbin/mysqld (mysqld 10.%&#39;) as&#39;sql_restart&#39;
 * &#39;%Quorum: Kein Knoten mit vollständigem Status:%&#39;) als &#39;no_node_count&#39;
 * &#39;%WSREP: Mitglied 0%&#39;) als &quot;mem_0&quot;
@@ -102,7 +102,7 @@ Die **[!UICONTROL Cron_schedule table updates]** frame zeigt die maximale Dauer 
 
 ![Langsame Abfragespuren](../../assets/tools/observation-for-adobe-commerce/mysql-tab-11.jpg)
 
-Die **[!UICONTROL Slow Query Traces]** frame zeigt die Tabelle und den Anfragetyp an, in denen langsame Abfragespuren vorhanden sind. Für Abfragetransaktionen, die länger als 5 Sekunden dauern, wird eine langsame Abfrage erstellt. Wichtig für diesen Frame sind die Aktualisierungs-Abfragen. Wenn eine Tabelle aktualisiert wird von `UPDATE`, `DELETE`und `INSERT` -Anweisungen verwenden, können sie Tabellen für einen bestimmten Zeitraum sperren.
+Die **[!UICONTROL Slow Query Traces]** frame zeigt die Tabelle und den Anfragetyp an, in denen langsame Abfragespuren vorhanden sind. Für Abfragetransaktionen, die länger als fünf Sekunden dauern, wird eine langsame Abfrage erstellt. Wichtig für diesen Frame sind die Aktualisierungs-Abfragen. Wenn eine Tabelle aktualisiert wird von `UPDATE`, `DELETE`und `INSERT` -Anweisungen verwenden, können sie Tabellen für einen bestimmten Zeitraum sperren.
 
 Sogar `SELECT` -Anweisungen können Zeilen sperren, wenn sie mit FÜR UPDATE verwendet werden.
 
@@ -120,7 +120,7 @@ Die **[!UICONTROL Cron table change]** frame sucht nach Fehlermeldungen, die &qu
 
 ![Deadlocks](../../assets/tools/observation-for-adobe-commerce/mysql-tab-14.jpg)
 
-Die **[!UICONTROL Deadlocks]** frame sucht nach den folgenden Zeichenfolgen, die aus den MySQL-Protokollen geparst werden.
+Die **[!UICONTROL Deadlocks]** frame untersucht die folgenden aus den MySQL-Protokollen geparsten Zeichenfolgen:
 
 * &#39;%PHP Fatal error: Zulässige Speichergröße von%&#39;) als php_mem_error
 * &#39;%get lock; versucht, die Transaktion neu zu starten, war die Abfrage: DELETE VON \`cron_schedule%&#39;) als cron_sched_lock_del
@@ -198,7 +198,7 @@ Die **[!UICONTROL DB Statistics]** frame zeigt Löschvorgänge, Schreibvorgänge
 
 ![Datenbankfehler](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-Die **[!UICONTROL Database Errors]** frame zeigt eine Vielzahl von Datenbanken an [Warnungen und Fehler](https://mariadb.com/kb/en/mariadb-error-codes/).
+Die **[!UICONTROL Database Errors]** frame zeigt eine Vielzahl von Datenbanken an [Warnungen und Fehler](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * &#39;%Speichergröße, die für die temporäre Tabelle zugewiesen wird, beträgt mehr als 20 % von innodb_buffer_pool_size%&#39; als &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&quot;) als &quot;rbr_write_fail&quot;
@@ -225,9 +225,9 @@ Die **[!UICONTROL Database Errors]** frame zeigt eine Vielzahl von Datenbanken a
 * &#39;%SQLSTATE[HY000]: Allgemeiner Fehler: 2014%&quot;) als &quot;sql_2014&quot;
 * &#39;%1927 Connection was kill%&#39;) as &#39;sql_1927&#39;
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
-* &#39;%[Hinweis] WSREP: Speicherkarte auf Festplatte leeren ...%&quot;) als &quot;mem_map_flush&quot;
+* &#39;&#39;%[Hinweis] WSREP: Speicherkarte auf Festplatte leeren ...%&quot;) als &quot;mem_map_flush&quot;
 * &#39;%Interner MariaDB-Fehlercode: 1146%&quot;) als &quot;sql_1146&quot;
-* &#39;%Interner MariaDB-Fehlercode: 1062%&quot;) als &#39;sql_1062&#39; ・ &#39;%1062&#39; [Warnung] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Interner MariaDB-Fehlercode: 1062%&quot;) als &#39;sql_1062&#39; * &#39;%1062&#39; [Warnung] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
 * &#39;%Interner MariaDB-Fehlercode: 1064%&quot;) als &quot;sql_1064&quot;
 * &#39;%InnoDB: Assertionsfehler in Datei%&quot;) als &quot;assertion_err&quot;
 * &#39;%mysqld_safe Anzahl der jetzt ausgeführten Prozesse: 0%&quot;) als &quot;mysql_oom&quot;

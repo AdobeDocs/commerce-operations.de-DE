@@ -1,9 +1,9 @@
 ---
 title: "Die [!UICONTROL Summary] tab"
 description: Erfahren Sie mehr über die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
+source-git-commit: 5058441eb64d59b3e1aa329603a87f75c826996e
 workflow-type: tm+mt
-source-wordcount: '2637'
+source-wordcount: '2655'
 ht-degree: 0%
 
 ---
@@ -23,29 +23,29 @@ Die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce] ist dazu 
 
 ### Arten von Transaktionen:
 
-**Web:** Transaktionen werden mit einer HTTP-Anfrage initiiert. Für die meisten Unternehmen stellen diese kundenorientierte Interaktionen dar und sind daher die wichtigsten zu überwachenden Transaktionen.
+**Web:** Webtransaktionen werden mit einer HTTP-Anfrage initiiert. Für die meisten Unternehmen stellen diese kundenorientierte Interaktionen dar und sind daher die wichtigsten zu überwachenden Transaktionen.
 
 **Nicht Web:** Nicht-Web-Transaktionen werden nicht mit einer Webanfrage initiiert. Sie können Prozesse außerhalb des Webworkers, Hintergrundprozesse, Skripte, Nachrichtenwarteschlangenaktivitäten und andere Aufgaben umfassen.
 
-Sehen Sie sich die **[!UICONTROL Transaction Overview]** Es gab fast 53.000 Transaktionen mit einem durchschnittlichen APDEX-Wert von 0,76, und 95 % dieser Transaktionen erfolgten in weniger als 2,313 Sekunden. Dies wäre ein Zeitraum, in dem ein engerer Zeitrahmen Abweichungen von diesem aktuellen Durchschnitt anzeigen kann, wenn innerhalb eines kurzen Zeitrahmens ein APDEX-Treffer vorliegt.
+Wenn Sie sich die **[!UICONTROL Transaction Overview]** obigen Bild waren fast 53.000 Transaktionen mit einem durchschnittlichen APDEX-Wert von 0,76 und 95 % dieser Transaktionen erfolgten in weniger als 2,313 Sekunden. Dies wäre ein Zeitraum, in dem ein engerer Zeitrahmen Abweichungen von diesem aktuellen Durchschnitt anzeigen kann, wenn innerhalb eines kurzen Zeitrahmens ein APDEX-Treffer vorliegt.
 
 ## [!UICONTROL 404 page errors frame]
 
 ![404-Seiten-Fehler-Frame](../../assets/tools/404-page-errors.jpg)
 
-Die **[!UICONTROL 404 page errors]** frame listet die [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) und die Anzahl von 404 Seitenfehlern während des ausgewählten Zeitraums.
+Die **[!UICONTROL 404 page errors]** frame listet die [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) und die Anzahl von 404 Seitenfehlern für einen ausgewählten Zeitraum.
 
 ## [!UICONTROL % of Storage Free frame]
 
 ![Prozent des speicherfreien Rahmens](../../assets/tools/percent-of-storage-free.jpg)
 
-Die **[!UICONTROL % of Storage Free]** frame zeigt den durchschnittlichen Anteil an freien Speicherbergen auf allen Knoten Ihres Clusters an. Wenn Sie beispielsweise über einen Cluster mit drei Knoten verfügen, zeigt dies den&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. Dieser Frame kann trügerisch sein, wenn eine Abweichung zwischen drei Knoten besteht. Ein Beispiel für eine Varianz wäre, wenn die Variable `/data/mysql` Der Bereitstellungspunkt &quot;frei&quot;war ein anderer Wert im Cluster mit drei Knoten. Unter dem [!UICONTROL MySQL] Registerkarte, die die Einhängepunkte nach Knotennamen facettiert, um genauer zu sehen, was die `/data/mysql` Speicher frei auf jedem Knoten tatsächlich ist.
+Die **[!UICONTROL % of Storage Free]** frame zeigt den durchschnittlichen prozentualen Anteil an freien Speicherbergen auf allen Knoten Ihres Clusters an. Wenn Sie beispielsweise über einen Cluster mit drei Knoten verfügen, zeigt der Frame den \&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. Dieser Frame kann trügerisch sein, wenn eine Abweichung zwischen drei Knoten besteht. Ein Beispiel für eine Varianz wäre, wenn die Variable `/data/mysql` Der Bereitstellungspunkt &quot;frei&quot;war ein anderer Wert im Cluster mit drei Knoten. Unter dem [!UICONTROL MySQL] Registerkarte, die die Einhängepunkte nach Knotennamen facettiert, um genauer zu sehen, was die `/data/mysql` Speicher frei auf jedem Knoten tatsächlich ist.
 
 ## [!UICONTROL % of system memory that is free frame]
 
 ![Prozentsatz des Systemspeichers, der frei ist](../../assets/tools/percent-of-system-memory-that-is-free.jpg)
 
-Dieser Frame zeigt nach Knoten die Menge an Systemspeicher an, die auf jedem Knoten frei ist.
+Die **% des freien Systemspeichers** frame zeigt nach Knoten die Menge an Systemspeicher an, die auf jedem Knoten frei ist.
 
 ## [!UICONTROL Swap memory free in bytes]
 
@@ -57,7 +57,7 @@ Die **[!UICONTROL Swap memory free in bytes]** frame zeigt nach Knoten die Menge
 
 ![CPU-Prozentsatz nach Host](../../assets/tools/cpu-percent-by-host.jpg)
 
-Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** Rahmen. Sie sollten die Auswahl der Nicht-Produktionsumgebungen aufheben. Sie sollten alle Instanzen beachten, in denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Dieser Artikel gibt Tipps zur hohen CPU-Auslastung: [Fehlerbehebung bei der Leistung mit New Relic on Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042149832#high_cpu_usage).
+Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** Rahmen. Sie sollten die Auswahl der Nicht-Produktionsumgebungen aufheben. Beachten Sie auch alle Fälle, in denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Weitere Tipps zur hohen CPU-Auslastung finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic on Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -69,7 +69,7 @@ Die **[!UICONTROL Alerts during timeframe]** zeigt alle Warnhinweise an, einschl
 
 ![CPU-Auslastung](../../assets/tools/cpu-usage.jpg)
 
-Wenn die Variable **[!UICONTROL CPU Usage]** Rahmen leer ist, ist dies ein Indikator dafür, dass die Infrastrukturanwendung von [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn Ihre Site auf Pro basiert, öffnen Sie bitte ein Support-Ticket, damit Sie [!DNL New Relic Infrastructure] aktiviert für Ihre Site.
+Wenn die Variable **[!UICONTROL CPU Usage]** Rahmen leer ist, ist dies ein Hinweis darauf, dass die Infrastrukturanwendung [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn Ihre Site auf Pro basiert, öffnen Sie eine [Support-Ticket](https://experienceleague.corp.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) müssen [!DNL New Relic Infrastructure] aktiviert für Ihre Site.
 
 ## [!UICONTROL Average Response Time]
 
@@ -87,13 +87,13 @@ Die **[!UICONTROL cron_schedule]** -Tabelle wird am Anfang und Ende von Cron-Auf
 
 ![Antwort-Code](../../assets/tools/response-code.jpg)
 
-Die **[!UICONTROL Response Code]** frame ist ein guter Indikator für Web-Traffic und den Antwort-Code von Anfragen. Es ist [!DNL New Relic] Transaktionsdaten, und sie werden von der `httpResponseCode` zurückgegeben.
+Die **[!UICONTROL Response Code]** frame ist ein guter Indikator für Web-Traffic und den Antwort-Code von Anfragen. Es ist [!DNL New Relic's] Transaktionsdaten, und sie werden von der `httpResponseCode` zurückgegeben.
 
 ## [!UICONTROL Web Traffic volume compared with one week ago Magento Managed Alerts Information]
 
 ![Web-Traffic-Volumen im Vergleich zu vor einer Woche](../../assets/tools/web-traffic-volume-compared.jpg)
 
-In diesem Frame wird das Web-Traffic-Volumen von vor einer Woche im Vergleich zum aktuellen Volumen angezeigt.
+Dieser Frame zeigt das vergleichende Web-Traffic-Volumen der letzten und der aktuellen Woche an.
 
 ## [!UICONTROL Deployment Log Entries]
 
@@ -105,9 +105,9 @@ Die **[!UICONTROL Deployment Log Entries]** frame zeigt die Anzahl der Implement
 
 ![Bereitstellungsstatus](../../assets/tools/deployment-state.jpg)
 
-Die **[!UICONTROL Deployment State]** frame facets bestimmte Bereitstellungssätze aus den Bereitstellungsprotokollen. Im Folgenden finden Sie Beispiele für Ausdrücke, die im Protokoll und im Facettennamen gezählt werden:
+Die **[!UICONTROL Deployment State]** frame erfasst bestimmte Bereitstellungsphasen aus den Bereitstellungsprotokollen. Im Folgenden finden Sie einige Beispiele für Phasen, die im Protokoll und im Facettennamen gezählt werden:
 
-**Bereitstellungsprotokollausdrücke:**
+**Implementierungsprotokoll-Phasen:**
 
 * &#39;%Starting generate command%&#39;) as &#39;start_gen&#39;
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;) als &#39;apply_patches&#39;
@@ -128,7 +128,7 @@ Die **[!UICONTROL IP Frequency]** frame zählt die Status (&#39;MISS&#39; und &#
 
 ![IP-Antwort - Top 20 URLs mit Dauer](../../assets/tools/ip-response-top-20-urls.jpg)
 
-In diesem Frame werden die URLs mit der längsten Antwortdauer angezeigt. Sie kann auf große Bilddateien, Seiten, API oder Seiten mit der längsten Reaktionsdauer hinweisen.
+Die **[!UICONTROL IP Response – top 20 URLs in duration]** Frame zeigt die URLs mit der längsten Reaktionsdauer an. Sie kann auf große Bilddateien, Seiten, API oder Seiten mit der längsten Reaktionsdauer hinweisen.
 
 ## [!UICONTROL API Calls by IP]
 
@@ -164,13 +164,13 @@ Die **[!UICONTROL Transaction Errors]** frame zeigt die Anzahl der Transaktionsf
 
 ![nginx-Zugriff nach Knoten](../../assets/tools/nginx-access-by-node.jpg)
 
-Die **[!UICONTROL Nginx access by node]** frame betrachtet die Anzahl der `access.log` nach Knoten. Es ist hilfreich zu sehen, ob die Last gleichmäßig verteilt ist. Es wird oft angezeigt, wenn ein Knoten fällt. Dadurch wird auch das Laden auf der gesamten Site angezeigt.
+Die **[!UICONTROL Nginx access by node]** frame betrachtet die Anzahl der `access.log` nach Knoten. Es ist hilfreich zu sehen, ob die Last gleichmäßig verteilt ist. Es wird oft angezeigt, wenn ein Knoten fällt. Der Rahmen zeigt auch die Belastung der gesamten Site an.
 
 ## [!UICONTROL Galera Log]
 
 ![Galera-Protokoll](../../assets/tools/galera-log.jpg)
 
-[Galera](https://galeracluster.com/library/galera-documentation.pdf) wird für den Datenbankcluster verwendet. Dieser Rahmen konzentriert sich auf bestimmte Signale aus dem [!UICONTROL Galera] Cluster. Diese Signale konzentrieren sich auf Knoten, die den Cluster aufrufen und beenden. Dies ist ein normales Verhalten zur Wahrung der Integrität der Datenbankdaten. Die Knoten werden als [!UICONTROL Galera] Änderungen am Clusterstatus.
+[[!DNL Galera]](https://galeracluster.com/library/galera-documentation.pdf) wird für den Datenbankcluster verwendet. Dieser Rahmen konzentriert sich auf bestimmte Signale aus dem [!UICONTROL Galera] Cluster. Die Signale konzentrieren sich auf Knoten, die den Cluster aufrufen und beenden. Dies ist ein normales Verhalten zur Wahrung der Integrität der Datenbankdaten. Die Knoten werden als [!UICONTROL Galera] Änderungen am Clusterstatus.
 
 **Liste der [!UICONTROL Galera] Statusänderungen:**
 
@@ -256,9 +256,9 @@ Die **[!UICONTROL Database mysql-slow.log]** frame zählt Einträge im [mysql-sl
 
 ![Weitersynchronisierung aus Protokoll](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[Redis](https://redis.io/docs/about/) ist ein Open Source-Datenstrukturspeicher (BSD lizenziert), der als Datenbank-, Cache- und Nachrichtenbroker verwendet wird. Es kann Datenbank- und Sitzungszwischenspeicherung durchführen, sofern konfiguriert. Die **[!UICONTROL Redis synchronization from Log]** Frame konzentriert sich auf [Wiederholungssynchronisierung](https://redis.io/docs/manual/replication/). Je größer die [!DNL Redis] -Datensatz, umso wahrscheinlicher sind Synchronisierungsprobleme (mehr zu synchronisierende Daten).
+[[!DNL Redis]](https://redis.io/docs/about/) ist ein Open Source-Datenstrukturspeicher (BSD lizenziert), der als Datenbank-, Cache- und Nachrichtenbroker verwendet wird. Es kann Datenbank- und Sitzungszwischenspeicherung durchführen, sofern konfiguriert. Die **[!UICONTROL Redis synchronization from Log]** Frame konzentriert sich auf [[!DNL Redis] Synchronisierung](https://redis.io/docs/manual/replication/). Je größer die [!DNL Redis] -Datensatz, umso wahrscheinlicher ist, dass es Probleme mit der Synchronisierung gibt (mehr Daten werden synchronisiert).
 
-**[!DNL Redis]Fehler und Nachrichten**
+**[!DNL Redis]Fehler und Meldungen:**
 
 * &#39;%SLAVE-Synchronisation: Kein Speicherplatz auf Gerät%&#39;) als &quot;Leerzeichen&quot;
 * &#39;%Server started, Redis version%&#39;) as &#39;serv_start&#39;
@@ -283,7 +283,7 @@ Die **[!UICONTROL Database mysql-slow.log]** frame zählt Einträge im [mysql-sl
 
 ![PHP-Prozessstatus](../../assets/tools/php-process-states.jpg)
 
-Wie sich PHP-Prozesse verhalten, hängt davon ab [Konfiguration](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex und umfasst viele Variablen und Optionen. Die **[!UICONTROL PHP process states]** frame hilft zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
+Wie sich PHP-Prozesse verhalten, hängt von der [Konfiguration](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex und umfasst viele Variablen und Optionen. Die **[!UICONTROL PHP process states]** frame hilft Ihnen zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
 
 ### [!UICONTROL PHP errors]
 
@@ -291,7 +291,7 @@ Wie sich PHP-Prozesse verhalten, hängt davon ab [Konfiguration](https://www.php
 
 Die **[!UICONTROL PHP errors]** frame zeigt die Anzahl von PHP-Fehlern mit Workern während des ausgewählten Zeitrahmens an. Weitere Informationen finden Sie unter [Adobe Commerce PHP-Einstellungen](../../installation/prerequisites/php-settings.md).
 
-**PHP-Fehler und -Meldungen**
+**PHP-Fehler und -Meldungen:**
 
 * &#39;%worker_connections are not genug%&#39;) as &#39;worker&#39;
 * &#39;%PHP Fatal error: Zulässige Speichergröße!%&quot;) als &quot;mem_size&quot;
@@ -309,31 +309,31 @@ Die **[!UICONTROL PHP errors]** frame zeigt die Anzahl von PHP-Fehlern mit Worke
 
 ![PHP-Prozesse](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] verwendet von [!DNL Nginx]. Informationen zu den Systemanforderungen finden Sie unter [Den Adobe Commerce-Versionen zugeordnete PHP-Versionsanforderungen](../../installation/system-requirements.md). Die **[!UICONTROL PHP processes]** frame zeigt die Anzahl von PHP-Prozessen an, die zu einem bestimmten Zeitpunkt in der ausgewählten Timeline ausgeführt werden.
+[PHP-FPM](https://php-fpm.org/) ist [!UICONTROL FastCGI Process Manager] verwendet von [!DNL Nginx]. Informationen zu den Systemanforderungen finden Sie unter [Den Adobe Commerce-Versionen zugeordnete PHP-Versionsanforderungen](../../installation/system-requirements.md). Die **[!UICONTROL PHP processes]** frame zeigt die Anzahl von PHP-Prozessen an, die zu einem bestimmten Zeitpunkt in der ausgewählten Timeline ausgeführt werden.
 
 ## [!UICONTROL Secondary processes]
 
 ![Sekundärprozesse](../../assets/tools/secondary-processes.jpg)
 
-Sekundäre Prozesse können sich auf die Antwort der Site auswirken. Die **[!UICONTROL Secondary processes]** frame kann einen Prozess oder Prozesse angeben, der die Site belasten kann. Die Datenbank verfügt in erster Linie über die am häufigsten ausgeführten Prozesse.
+Sekundäre Prozesse können sich auf die Antwort der Site auswirken. Die **[!UICONTROL Secondary processes]** frame zeigt einen Prozess oder Prozesse an, die der Site Last hinzufügen können. Die Datenbank verfügt in erster Linie über die am häufigsten ausgeführten Prozesse.
 
 ## [!UICONTROL Traffic vs Week Ago]
 
 ![im Vergleich zu vor Woche](../../assets/tools/traffic-vs-week-ago.jpg)
 
-Die **[!UICONTROL Traffic vs Week Ago]** frame betrachtet den Website-Traffic (Anforderungen) von der [!DNL Fastly] Protokolle mit Cache-Status (&#39;MISS&#39;, &#39;PASS&#39;). Diese Anforderungen erhöhen die Auslastung der Herkunftsserver. In diesem Frame wird das Volumen der Webanfrage im Vergleich zu einer Woche im selben Zeitraum angezeigt.
+Die **[!UICONTROL Traffic vs Week Ago]** frame betrachtet den Website-Traffic (Anforderungen) von der [!DNL Fastly] Protokolle mit Cache-Status (&#39;MISS&#39;, &#39;PASS&#39;). Diese Anforderungen erhöhen die Auslastung der Herkunftsserver. Dieser Rahmen zeigt das vergleichende Web-Anforderungsvolumen der aktuellen Woche und der letzten Woche im selben Zeitraum an.
 
 ## [!UICONTROL Fastly Cache]
 
 ![Schneller Cache](../../assets/tools/fastly-cache.jpg)
 
-Die **[!UICONTROL Fastly Cache]** frame zeigt eine aggregierte Ansicht des Cache-Status von Anforderungen aus den Fastly-Protokollen. Wenn Sie auf FEHLER klicken, wird der Prozentsatz der Fehler in den Anforderungen angezeigt. Dies nimmt in der Regel zu, wenn der Herkunftsserver nicht schnell genug auf Seitenanforderungen reagiert.
+Die **[!UICONTROL Fastly Cache]** frame zeigt eine aggregierte Ansicht des Cache-Status von Anforderungen aus dem [!DNL Fastly] Protokolle. Wenn Sie FEHLER auswählen, wird der Prozentsatz der Fehler in den Anforderungen angezeigt. Dies erhöht sich normalerweise, wenn der Herkunftsserver nicht schnell genug auf Seitenanforderungen reagiert.
 
 ## [!UICONTROL Page Rendering]
 
 ![Seiten-Rendering](../../assets/tools/page-rendering.jpg)
 
-Die **[!UICONTROL Page Rendering]** frame zeigt die durchschnittliche Seitenrendering-Dauer aus der Seitenansichtsquelle von [!DNL New Relic] im Vergleich zum selben Zeitraum der Vorwoche.
+Die **[!UICONTROL Page Rendering]** frame zeigt die durchschnittliche Seitenwiedergabedauer der aktuellen Woche aus der Seitenansichtsquelle von [!DNL New Relic] im Vergleich zur Vorwoche im selben Zeitraum.
 
 ## [!UICONTROL Page loading detail]
 
@@ -359,7 +359,7 @@ Die **[!UICONTROL Admin Activities]** frame identifiziert Transaktionen mit eine
 
 ![Zahlungsvorgänge](../../assets/tools/order-transactions-default.jpg)
 
-Die **[!UICONTROL Order transactions (default?)]** frame sucht nach Transaktionen `request.headers.host` von Transaktionen, bei denen der Name = &#39;WebTransaction/Action/Checkout/onepage/success&#39; ist. Wenn die Erfolgs-URL der Bestellung unterschiedlich ist, enthält dieser Frame keine Daten.
+Die **[!UICONTROL Order transactions (default?)]** frame sucht nach Transaktionen `request.headers.host` aus Transaktionen, wobei der Name = `WebTransaction/Action/checkout/onepage/success`. Wenn die Erfolgs-URL der Bestellung unterschiedlich ist, enthält dieser Frame keine Daten.
 
 ## [!UICONTROL Elasticsearch Index information]
 
