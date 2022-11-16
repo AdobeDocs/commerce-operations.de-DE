@@ -2,9 +2,9 @@
 title: Grundsätze der Plattformentwicklung
 description: Grundlegende Prinzipien der Plattformentwicklung bei der Arbeit mit Adobe Commerce
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ Adobe Commerce on Cloud Infrastructure ist eine verwaltete, automatisierte Hosti
 
 ![Infografiken zu Adobe Commerce-Komponenten](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce on Cloud Infrastructure bietet eine vorkonfigurierte Infrastruktur mit PHP-, MySQL-, Redis-, RabbitMQ- und Elasticsearch-Technologien. einen Git-basierten Workflow mit automatischen Build- und Bereitstellungsvorgängen für eine effiziente schnelle Entwicklung und kontinuierliche Bereitstellung jedes Mal, wenn Code-Änderungen in eine Platform as a Service-Umgebung (PaaS) gepusht werden; hochgradig anpassbare Umgebungskonfigurationsdateien und -werkzeuge; und AWS-Hosting, das eine skalierbare und sichere Umgebung für Online-Verkäufe und -Einzelhandel bietet.
+Adobe Commerce on Cloud Infrastructure bietet eine vorkonfigurierte Infrastruktur mit PHP, MySQL, Redis, [!DNL RabbitMQ], und Elasticsearch-Technologien; einen Git-basierten Workflow mit automatischen Build- und Bereitstellungsvorgängen für eine effiziente schnelle Entwicklung und kontinuierliche Bereitstellung jedes Mal, wenn Code-Änderungen in eine Platform as a Service-Umgebung (PaaS) gepusht werden; hochgradig anpassbare Umgebungskonfigurationsdateien und -werkzeuge; und AWS-Hosting, das eine skalierbare und sichere Umgebung für Online-Verkäufe und -Einzelhandel bietet.
 
 ![Infografiken zu Adobe Commerce-Komponenten](../../assets/playbooks/cloud-tech-stack.svg)

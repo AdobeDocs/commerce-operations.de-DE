@@ -1,9 +1,9 @@
 ---
 title: Anwendung konfigurieren
 description: Erfahren Sie mehr über die Konfiguration nach der Installation, die für Adobe Commerce und die Magento Open Source vor Ort erforderlich ist.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Elasticsearch oder OpenSearch ist ab 2.4.0 für alle Installationen erforderlich
 
 Seit Version 2.3.0 verfügen Adobe Commerce und Magento Open Source über Funktionen für die Nachrichtenwarteschlange. In früheren Versionen ist er nur für Adobe Commerce verfügbar.
 
-* [RabbitMQ](../../configuration/queues/message-queue-framework.md)
+* [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 
 ## Nur Einstellungen für Adobe Commerce
 

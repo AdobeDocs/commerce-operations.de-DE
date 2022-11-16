@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '235'
 ht-degree: 63%
 
 ---
@@ -244,7 +244,7 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>RabbitMQ</td>
+      <td>[!DNL RabbitMQ]</td>
       <td>
             3,9
       </td>

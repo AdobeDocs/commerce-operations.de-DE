@@ -1,9 +1,9 @@
 ---
 title: Erweiterte Installation vor Ort
 description: Erfahren Sie mehr über erweiterte Installationsszenarios für Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2339'
+source-wordcount: '2327'
 ht-degree: 0%
 
 ---
@@ -170,16 +170,16 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 | `--elasticsearch-username` | Die Benutzer-ID zur Authentifizierung der Suchmaschine | Nein, sofern die Authentifizierung nicht aktiviert ist |
 | `--elasticsearch-password` | Das Kennwort zur Authentifizierung der Suchmaschine | Nein, sofern die Authentifizierung nicht aktiviert ist |
 
-**RabbitMQ-Konfigurationsoptionen:**
+**[!DNL RabbitMQ]Konfigurationsoptionen:**
 
 | Name | Wert | Erforderlich? |
 |--- |--- |--- |
-| `--amqp-host` | Verwenden Sie nicht das `--amqp` Optionen, es sei denn, Sie haben bereits eine Installation von RabbitMQ eingerichtet. Weitere Informationen zur Installation und Konfiguration von RabbitMQ finden Sie unter RabbitMQ-Installation .<br><br>Der Hostname, auf dem RabbitMQ installiert ist. | Nein |
-| `--amqp-port` | Der für die Verbindung mit RabbitMQ zu verwendende Port. Der Standardwert ist 5672. | Nein |
-| `--amqp-user` | Der Benutzername für die Verbindung mit RabbitMQ. Verwenden Sie nicht den Standardbenutzer `guest`. | Nein |
-| `--amqp-password` | Das Kennwort für die Verbindung mit RabbitMQ. Verwenden Sie nicht das Standardkennwort `guest`. | Nein |
-| `--amqp-virtualhost` | Der virtuelle Host für die Verbindung mit RabbitMQ. Der Standardwert ist `/`. | Nein |
-| `--amqp-ssl` | Gibt an, ob eine Verbindung zu RabbitMQ hergestellt werden soll. Der Standardwert ist `false`. Informationen zum Einrichten von SSL für RabbitMQ finden Sie unter RabbitMQ . | Nein |
+| `--amqp-host` | Verwenden Sie nicht das `--amqp` Optionen, es sei denn, Sie haben bereits eine Installation von [!DNL RabbitMQ]. Siehe [!DNL RabbitMQ] Installation für weitere Informationen zur Installation und Konfiguration [!DNL RabbitMQ].<br><br>Der Hostname, in dem [!DNL RabbitMQ] installiert ist. | Nein |
+| `--amqp-port` | Der Anschluss, mit dem die Verbindung hergestellt werden soll [!DNL RabbitMQ]. Der Standardwert ist 5672. | Nein |
+| `--amqp-user` | Der Benutzername für die Verbindung mit [!DNL RabbitMQ]. Verwenden Sie nicht den Standardbenutzer `guest`. | Nein |
+| `--amqp-password` | Das Kennwort für die Verbindung zu [!DNL RabbitMQ]. Verwenden Sie nicht das Standardkennwort `guest`. | Nein |
+| `--amqp-virtualhost` | Der virtuelle Host für die Verbindung zu [!DNL RabbitMQ]. Der Standardwert ist `/`. | Nein |
+| `--amqp-ssl` | Gibt an, ob eine Verbindung hergestellt werden soll [!DNL RabbitMQ]. Der Standardwert ist `false`. Siehe [!DNL RabbitMQ] Informationen zum Einrichten von SSL für [!DNL RabbitMQ]. | Nein |
 | `--consumers-wait-for-messages` | Sollten Verbraucher auf eine Nachricht aus der Warteschlange warten? 1 - Ja, 0 - Nein | Nein |
 
 **Konfigurationsoptionen sperren:**

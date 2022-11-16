@@ -1,9 +1,9 @@
 ---
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
-source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    - [Registerkarte &quot;Warnungen&quot;](observation-for-adobe-commerce/alerts-tab.md)
    - [Registerkarte &quot;WAF&quot;](observation-for-adobe-commerce/waf-tab.md)
    - [Registerkarte &quot;CDN&quot;](observation-for-adobe-commerce/cdn-tab.md)
-   - [Registerkarte &quot;RabbitMQ&quot;](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [Die [!DNL RabbitMQ] tab](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Registerkarte &quot;Cron&quot;](observation-for-adobe-commerce/cron-tab.md)
    - [Die Registerkarte Indizierung](observation-for-adobe-commerce/indexing-tab.md)
    - [Registerkarte &quot;QuickView&quot;](observation-for-adobe-commerce/oac-quickview-tab.md)

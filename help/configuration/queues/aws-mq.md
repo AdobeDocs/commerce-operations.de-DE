@@ -1,9 +1,9 @@
 ---
 title: Einrichten der Amazon-Nachrichtenwarteschlange
 description: Erfahren Sie, wie Sie Commerce für die Verwendung des AWS MQ-Dienstes konfigurieren.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -65,20 +65,20 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-Die Standardkonfiguration für `InventoryCatalog` veröffentlicht keine Nachrichten in RabbitMQ; Das Standardverhalten besteht darin, die Aktion im selben Benutzer-Thread durchzuführen. Zu sagen `InventoryCatalog` zum Veröffentlichen von Nachrichten aktivieren `cataloginventory/bulk_operations/async`. Wechseln Sie vom Administrator zu **Stores** > Konfiguration > **Katalog** > **Bestand** > Massenvorgänge für Administratoren und Festlegen  `Run asynchronously`nach **Ja**.
+Die Standardkonfiguration für `InventoryCatalog` veröffentlicht keine Nachrichten in [!DNL RabbitMQ]; Das Standardverhalten besteht darin, die Aktion im selben Benutzer-Thread durchzuführen. Zu sagen `InventoryCatalog` zum Veröffentlichen von Nachrichten aktivieren `cataloginventory/bulk_operations/async`. Wechseln Sie vom Administrator zu **Stores** > Konfiguration > **Katalog** > **Bestand** > Massenvorgänge für Administratoren und Festlegen  `Run asynchronously`nach **Ja**.
 
 ## Nachrichtenwarteschlange testen
 
-So testen Sie den Nachrichtenversand von Commerce an RabbitMQ:
+So testen Sie den Nachrichtenversand an [!DNL RabbitMQ]:
 
-1. Melden Sie sich bei der Webkonsole von RabbitMQ in AWS an, um Warteschlangen zu überwachen.
+1. Melden Sie sich bei der [!DNL RabbitMQ] Webkonsole in AWS, um Warteschlangen zu überwachen.
 1. Erstellen Sie in Admin ein Produkt.
 1. Erstellen Sie eine Inventarquelle.
 1. Aktivieren **Stores** > Konfiguration > **Katalog** > **Bestand** > Massenvorgänge für Administratoren > Asynchron ausführen.
 1. Navigieren Sie zu **Katalog** > Produkte. Wählen Sie im Raster das oben erstellte Produkt aus und klicken Sie auf **Inventarquelle zuweisen**.
 1. Klicken **Speichern und schließen** , um den Prozess abzuschließen.
 
-   In der Webkonsole von RabbitMQ sollten jetzt Meldungen angezeigt werden.
+   Sie sollten jetzt sehen, dass Meldungen im [!DNL RabbitMQ] Web-Konsole.
 
 1. Starten Sie die `async.operations.all` Benutzer der Nachrichtenwarteschlange.
 
@@ -86,5 +86,5 @@ So testen Sie den Nachrichtenversand von Commerce an RabbitMQ:
    bin/magento queue:consumers:start async.operations.all
    ```
 
-Sie sollten nun sehen, dass die in die Warteschlange gestellte Nachricht in der Webkonsole von RabbitMQ verarbeitet wird.
+Jetzt sollte die in der Warteschlange befindliche Nachricht im [!DNL RabbitMQ] Web-Konsole.
 Stellen Sie sicher, dass sich die Inventarquellen für das Produkt in der Admin-Konsole geändert haben.

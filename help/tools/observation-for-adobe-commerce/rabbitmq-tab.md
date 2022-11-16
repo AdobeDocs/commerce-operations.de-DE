@@ -1,22 +1,22 @@
 ---
-title: '"Die [!UICONTROL RabbitMQ] tab"'
-description: Erfahren Sie mehr über die [!UICONTROL RabbitMQ] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+title: "Die [!UICONTROL [!DNL RabbitMQ]] tab"
+description: Erfahren Sie mehr über die [!UICONTROL [!DNL RabbitMQ]] Registerkarte von [!DNL Observation for Adobe Commerce].
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# Die [!UICONTROL RabbitMQ] tab
+# Die [!UICONTROL [!DNL RabbitMQ]] tab
 
-Die **[!UICONTROL RabbitMQ]** -Tab enthält Informationen, die sich auf [!DNL RabbitMQ] Signale.
+Die **[!UICONTROL [!DNL RabbitMQ]]** -Tab enthält Informationen, die sich auf [!DNL RabbitMQ] Signale.
 
-## [!UICONTROL RabbitMQ Infrastructure events]
+## [!UICONTROL [!DNL RabbitMQ] Infrastructure events]
 
-![RabbitMQ-Infrastrukturereignisse](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
+![[!DNL RabbitMQ] Infrastrukturereignisse](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-1.jpeg)
 
-Die **[!UICONTROL RabbitMQ Infrastructure events]** frame zeigt Infrastrukturereignisse, die Folgendes beinhalten: [!DNL RabbitMQ] die während des ausgewählten Zeitrahmens aufgetreten sind:
+Die **[!UICONTROL [!DNL RabbitMQ] Infrastructure events]** frame zeigt Infrastrukturereignisse, die Folgendes beinhalten: [!DNL RabbitMQ] die während des ausgewählten Zeitrahmens aufgetreten sind:
 
 * %Antwort [error] für Knoten [rabbit@host1]: unerwartete http-Antwort von%&#39;) als &#39;unerwartetes_resp_node1&#39;
 * &#39;%Response [error] für Knoten [rabbit@host2]: unerwartete HTTP-Antwort von%&#39;) als &#39;unerwarteter_resp_node2&#39;
@@ -37,18 +37,18 @@ Die **[!UICONTROL RabbitMQ Infrastructure events]** frame zeigt Infrastrukturere
 * &#39;%Entität geändert: version/management%&#39;) als &#39;rmq_entity_modified_ver_mgt&#39;
 * &#39;%Entität geändert: version/management%&#39;) als &#39;rmq_entity_modified_ver_mgt&#39;
 
-## [!UICONTROL RabbitMQ service start/stop signals]
+## [!UICONTROL [!DNL RabbitMQ] service start/stop signals]
 
-![Start-/Stopp-Signale des RabbitMQ-Dienstes](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
+![[!DNL RabbitMQ] Start-/Stopp-Signale des Dienstes](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-2.jpeg)
 
 Dieser Rahmen zeigt [!DNL RabbitMQ] Start-/Stopp-Signale des Dienstes, die während des ausgewählten Zeitrahmens aufgetreten sind:
 
-* &#39;%RabbitMQ wird gebeten zu stoppen...%&#39;) as &#39;rabbitmq_stop&#39;
-* &#39;%Starting RabbitMQ%&#39;) as &#39;rabbitmq_start&#39;
+* &#39;%[!DNL RabbitMQ] wird gebeten zu stoppen...%&#39;) as &#39;rabbitmq_stop&#39;
+* &#39;%Starting [!DNL RabbitMQ]%&#39;) als &#39;rabbitmq_start&#39;
 
-## [!UICONTROL RabbitMQ errors]
+## [!UICONTROL [!DNL RabbitMQ] errors]
 
-![RabbitMQ-Fehler](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
+![[!DNL RabbitMQ] errors](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-3.jpeg)
 
 Dieser Rahmen zeigt [!DNL RabbitMQ] Fehler, die während des ausgewählten Zeitrahmens aufgetreten sind:
 
@@ -58,9 +58,9 @@ Dieser Rahmen zeigt [!DNL RabbitMQ] Fehler, die während des ausgewählten Zeitr
 * &#39;%Verbindungsversuch von unzulässigem Knoten%&#39;) als &#39;disallowed_node&#39;
 * &#39;%schließend AMQP connection%&#39;) as &#39;rmq_err_amqp_conn&#39;
 
-## [!UICONTROL RabbitMQ node status]
+## [!UICONTROL [!DNL RabbitMQ] node status]
 
-![Status des Knotens &quot;RabbitMQ&quot;](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
+![[!DNL RabbitMQ] Knotenstatus](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-4.jpeg)
 
 * &#39;%rabbit on node rabbit@host1 down%&#39;) as &#39;rmq_node1_down&#39;
 * &#39;%rabbit on node rabbit@host2 down%&#39;) as &#39;rmq_node2_down&#39;
@@ -69,47 +69,47 @@ Dieser Rahmen zeigt [!DNL RabbitMQ] Fehler, die während des ausgewählten Zeitr
 * &#39;%rabbit on node rabbit@host2 up%&#39;) as &#39;rmq_node2_up&#39;
 * &#39;%rabbit on node rabbit@host3 up%&#39;) as &#39;rmq_node3_up&#39;
 
-## [!UICONTROL RabbitMQ Message High-Level Summary status by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]
 
-![RabbitMQ-Nachricht Übergeordneter Zusammenfassungsstatus nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
+![[!DNL RabbitMQ] Message High Level Summary status by Queue](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-5.jpeg)
 
-Die **[!UICONTROL RabbitMQ Message High-Level Summary status by Queue]** Das Diagramm zeigt die Anzahl der veröffentlichten Nachrichten nach [!DNL RabbitMQ] Warteschlange für den ausgewählten Zeitrahmen.
+Die **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** Das Diagramm zeigt die Anzahl der veröffentlichten Nachrichten nach [!DNL RabbitMQ] Warteschlange für den ausgewählten Zeitrahmen.
 
-## [!UICONTROL RabbitMQ Message Detail Summary]
+## [!UICONTROL [!DNL RabbitMQ] Message Detail Summary]
 
-![Übersicht über die RabbitMQ-Nachrichtendetails](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
+![[!DNL RabbitMQ] Zusammenfassung der Nachrichtendetails](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-6.jpeg)
 
 * &#39;%report.ERROR: Cron Job consumer_runner hat einen Fehler: NOT_FOUND - no queue%&#39;) as &#39;queue_err&#39;
 * &#39;%report.ERROR: Cron Job consumer_runner hat einen Fehler: NOT_FOUND - no queue%&#39;) as &#39;queue_err&#39;
 * &#39;%authenticated and allowed access to vhost%&#39;) as &#39;auth&#39;
 * &#39;%schließend AMQP connection%&#39;) als &#39;close_conn&#39;
 
-## [!UICONTROL RabbitMQ Queue Consumption MB]
+## [!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]
 
-![RabbitMQ Queue-Verbrauch MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
+![[!DNL RabbitMQ] Warteschlangenverbrauch MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-Die **[!UICONTROL RabbitMQ Queue Consumption MB]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
 
-## [!UICONTROL RabbitMQ Published Messages by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
-![RabbitMQ Veröffentlichte Nachrichten nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
+![[!DNL RabbitMQ] Veröffentlichte Nachrichten nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-Die **[!UICONTROL RabbitMQ Published Messages by Queue]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
 
-## [!UICONTROL RabbitMQ Published Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
-![RabbitMQ Veröffentlichter Nachrichtendurchsatz nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
+![[!DNL RabbitMQ] Veröffentlichter Nachrichtendurchsatz nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-Die **[!UICONTROL RabbitMQ Published Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Anzahl der veröffentlichten Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Anzahl der veröffentlichten Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
 
-## [!UICONTROL RabbitMQ Total Message Throughput by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
-![RabbitMQ Gesamtdurchsatz der Nachrichten nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
+![[!DNL RabbitMQ] Gesamtdurchsatz der Nachrichten nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-Die **[!UICONTROL RabbitMQ Total Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtzahl der Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtzahl der Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
 
-## [!UICONTROL RabbitMQ Consumers by Queue]
+## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
-![RabbitMQ-Verbraucher nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
+![[!DNL RabbitMQ] Verbraucher nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-Die **[!UICONTROL RabbitMQ Consumers by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtanzahl der Verbraucher nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtanzahl der Verbraucher nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.

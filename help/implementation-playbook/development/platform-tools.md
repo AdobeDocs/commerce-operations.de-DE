@@ -2,9 +2,9 @@
 title: Plattform-Tools
 description: Wählen Sie die empfohlenen Plattformtools für Ihre Adobe Commerce-Implementierung aus.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Die folgende Tabelle enthält Lösungen, die wir empfehlen und innerhalb von Ado
 | Webserver | Nginx, Apache |
 | Caching-Dienste | Redis, Varnish |
 | Suchdienste | Elasticsearch |
-| Nachrichtenwarteschlangendienste | RabbitMQ |
+| Nachrichtenwarteschlangendienste | [!DNL RabbitMQ] |
 | Sicherheitsscan-Tool | SonarQube, ZAP |
 
 ## Datenbank
@@ -61,7 +61,7 @@ Für Adobe Commerce Version 2.4 und höher müssen alle Installationen so konfig
 
 ## Nachrichtenwarteschlangendienste
 
-Nachrichtenwarteschlangen bieten einen asynchronen Kommunikationsmechanismus, bei dem sich Absender und Empfänger einer Nachricht nicht miteinander in Verbindung setzen. RabbitMQ ist ein Open-Source-Nachrichtenbroker, der ein zuverlässiges, hochverfügbares, skalierbares und portables Messaging-System bietet.
+Nachrichtenwarteschlangen bieten einen asynchronen Kommunikationsmechanismus, bei dem sich Absender und Empfänger einer Nachricht nicht miteinander in Verbindung setzen. [!DNL RabbitMQ] ist ein Open-Source-Message-Broker, der ein zuverlässiges, hochverfügbares, skalierbares und portables Messaging-System bietet.
 
 ## Sicherheitswerkzeuge
 

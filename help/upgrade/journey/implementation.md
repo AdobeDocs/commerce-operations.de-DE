@@ -1,9 +1,9 @@
 ---
 title: Upgrade der Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung von Upgrades für Adobe Commerce- und Magento Open Source-Projekte.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
    |-----------------|-----------------|------------|----------------------------------------------------------|
    | PHP | 7,2,33 | 8,1 |  |
    | Redis | 5,05 | 6,0 |  |
-   | RabbitMQ | 3,7 | 3,8 | Derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
+   | [!DNL RabbitMQ] | 3,7 | 3,8 | Derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
    | MariaDB (Cloud) | 10.2.33 | Artikel 10 Absatz 4 |  |
    | MySQL | 8,0 |  |  |
    | Verfasser | 1,9,2 | 2,0 |  |

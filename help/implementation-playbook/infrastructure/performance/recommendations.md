@@ -2,9 +2,9 @@
 title: Performance Optimization Recommendations
 description: Optimieren Sie die Leistung Ihrer Adobe Commerce-Implementierung, indem Sie diese Empfehlungen befolgen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Obwohl die Invalidierung des gesamten Seitenspeichers effektiv ist, empfehlen wi
 
 ### Nachrichtenwarteschlangen
 
-Das Message Queue Framework (MQF) ist ein System, mit dem ein Modul Nachrichten in Warteschlangen veröffentlichen kann. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron empfangen. Adobe Commerce unterstützt RabbitMQ als Messaging-Broker, der eine skalierbare Plattform zum Senden und Empfangen von Nachrichten bietet.
+Das Message Queue Framework (MQF) ist ein System, mit dem ein Modul Nachrichten in Warteschlangen veröffentlichen kann. Außerdem werden die Verbraucher definiert, die die Nachrichten asynchron empfangen. Adobe Commerce unterstützt [!DNL RabbitMQ] als Messaging Broker, der eine skalierbare Plattform für den Versand und Empfang von Nachrichten bietet.
 
 ### Leistungstests und -überwachung
 

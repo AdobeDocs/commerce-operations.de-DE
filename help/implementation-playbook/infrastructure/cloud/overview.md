@@ -2,9 +2,9 @@
 title: Übersicht über die Cloud-Infrastruktur
 description: Erfahren Sie mehr über Adobe Commerce in der Cloud-Infrastruktur.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ Sehen wir uns auch die Software an, die die Vorteile von Adobe Commerce Wirklich
 
 - Git ist Ihr Code in Repositorys. Es ermöglicht lokales Verzweigen, bequeme Staging-Bereiche und mehrere Workflows mit automatischem Erstellen und Bereitstellen für eine effiziente schnelle Entwicklung und kontinuierliche Bereitstellung.
 
-- Platform-as-a-Service (PaaS) bietet eine vorkonfigurierte Infrastruktur, die PHP-, MySQL-, Redis-, RabbitMQ- und Elasticsearch-Technologien umfasst.
+- Platform-as-a-Service (PAs) bietet eine vorkonfigurierte Infrastruktur, die PHP, MySQL, Redis, [!DNL RabbitMQ]und Elasticsearch-Technologien.
 
 - Das Cloud-Hosting von AWS oder Azure basiert auf Infrastruktur-as-a-Service (IAAS), das eine skalierbare und sichere Umgebung für Online-Verkäufe und -Einzelhandel bietet.
