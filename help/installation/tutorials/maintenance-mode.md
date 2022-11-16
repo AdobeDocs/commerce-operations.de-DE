@@ -1,9 +1,9 @@
 ---
 title: Wartungsmodus aktivieren oder deaktivieren
 description: Führen Sie diese Schritte aus, um anzupassen, was Kunden sehen, wenn Ihre Adobe Commerce- oder Magento Open Source-Bereitstellung zur Wartung heruntergefahren ist.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,10 @@ Die `--none` löscht die Option die Liste.
 
 ## Multi-Store-Setups
 
-Um mehrere Stores mit jeweils unterschiedlichem Layout und lokalisierten Inhalten einzurichten, erstellen Sie jeweils eine Skin und legen Sie sie in `pub/errors/{name}` where `{name}` ist der Store-Code. Um zwischen Geschäften und Websites mit derselben Instanz zu unterscheiden, verwenden Sie `pub/errors/{type}-{name}` where `{type}` ist `store` oder `website` und entspricht dem `MAGE_RUN_TYPE` in Ihrer Serverkonfiguration.
+<!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
+<!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-Eine weitere Option besteht darin, die `$_GET['skin']` auf den vorgesehenen Prozessor. Diese Methode erfordert eine bestimmte Konfiguration auf Ihrem Server.
+Wenn Sie mehrere Stores mit jeweils unterschiedlichem Layout und lokalisierten Inhalten einrichten möchten, übergeben Sie die `$_GET['skin']` auf den vorgesehenen Prozessor.
 
 Im folgenden Beispiel verwenden wir eine `503` Typ der Fehlervorlagendatei, die lokalisierten Inhalt erfordert.
 
