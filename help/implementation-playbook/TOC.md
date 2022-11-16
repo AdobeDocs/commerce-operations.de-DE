@@ -2,10 +2,10 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
+source-git-commit: 86149bbe268a573f94e8bdb34974403459e46909
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '244'
+ht-degree: 6%
 
 ---
 
@@ -88,6 +88,7 @@ ht-degree: 0%
       - [Promotions](best-practices/planning/product-cart-promotions.md)
       - [Erweiterungen](best-practices/planning/extensions.md)
       - [Partnereskalationen](best-practices/planning/partner-escalation.md)
+      - [Verarbeitung der Zahlungsspeicherung](best-practices/planning/payment-processing-storage.md)
    - Entwicklung {#development}
       - [Übersicht](best-practices/development/overview.md)
       - [Bildoptimierung](best-practices/development/image-optimization.md)

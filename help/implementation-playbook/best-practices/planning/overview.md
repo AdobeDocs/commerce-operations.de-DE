@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices bei der Implementierung für
 role: Developer, Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -67,13 +67,14 @@ In den folgenden Themen werden die Best Practices zur Leistungsoptimierung für 
 
 ## **Vertrieb und Marketing**
 
-- [Best Practices für die &#x200B; des Warenkorbs](product-cart.md)
+- [Best Practices für die Beschränkung des Warenkorbs](product-cart.md)
 - [Best Practices zum Konfigurieren von Promotions](product-cart-promotions.md)
 
 ## **Projektumfang**
 
 - [Partnereskalationen](partner-escalation.md)
+- [Verarbeitung der Zahlungsspeicherung](payment-processing-storage.md)
 
 ## **Kauferweiterungen**
 
-- [Best Practices für die Verwendung von Erweiterungen von Drittanbietern in Adobe Commerce &#x200B;](extensions.md)
+- [Best Practices für die Verwendung von Erweiterungen von Drittanbietern in Adobe Commerce](extensions.md)
