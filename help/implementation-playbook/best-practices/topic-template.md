@@ -2,41 +2,48 @@
 title: Best Practices-Thementitel
 description: Erfahren Sie, wie Sie ...
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: b74279181bbb90713cb3c15832c744e3698b960a
+source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '74'
+source-wordcount: '78'
 ht-degree: 0%
 
 ---
 
 
-<!--
+<!-- Template Instructions: 
 
-Remove hide settings for best practices topics. These values are to hide this template from the TOC and search indexing.
+When you create a new best practices topic from this template, remove the hide metadata tags. These values hide this template from the TOC and search indexing.
 
 Metadata values configured in ExL:
 Available roles: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/role.yml
 
-Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml 
-
-Hide values are set to yes for the template so it is not included in ExL. You can remove those tags for best practices topics you add. -->
+Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/metadata-values/feature.yml  -->
 
 # Titel
 
-<!--Add one or two sentences to summarize the overall contents of this best practice topic-->
+<!--Template instruction:  Add one or two sentences to summarize the overall contents of this best practice topic-->
 
 ## Betroffene Produkte und Versionen
 
-<!-- When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
+<!-- Template comment: When we have the ability to tag content by versions, we might be able to remove this explicit header in favor of using tags for versions and editions.-->
 
-<!--Add details for the product and versions where the best practice info is relevant. Below are examples, adjust as needed. If info applies specifically to B2B or B2C, include that information -->
+<!--Template instruction: Add details for the product and versions where the best practice info is relevant. Below are two examples, adjust and delete unneeded info per best practice requirements. If info applies specifically to B2B or B2C, include that information -->
 
-Adobe Commerce vor Ort, [alle unterstützten Versionen](../../release/versions.md) &lt;!>—Wenn der Inhalt nur für bestimmte Versionen gilt, geben Sie an, dass anstelle von [alle unterstützten Versionen]> Adobe Commerce auf Cloud-Infrastruktur
-<!-- Business type: B2C and B2B -- specify only if needed?)-->
+<!-- Example 1: -->
+
+[Alle unterstützten Versionen](../../../release/versions.md) von:
+
+- Adobe Commerce auf Cloud-Infrastruktur
+- Adobe Commerce vor Ort
+
+<!-- Example 2: -->
+
+Adobe Commerce auf Cloud-Infrastruktur mit Adobe Commerce-Version 2.3.4 oder früher und MariaDB-Version 10.0 oder früher.
+
+<!-- Business type: B2C and B2B -- specify only if needed/)-->
 
 ## Kopfzeile ...
 
@@ -52,3 +59,5 @@ Verwenden Sie nur so viele Abschnitte wie nötig
 
 - Thema 1
 - Thema 2
+
+<!-- Template instruction:  Remove all template comments and instructions from the best practices article before committing your changes. -->
