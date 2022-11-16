@@ -1,7 +1,7 @@
 ---
 title: env.php-Referenz
 description: Sehen Sie sich eine Liste der Werte für die Datei env.php an.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Wenn beispielsweise `queue/default_connection` is `amqp` in `env.php` aber ein `
 
 ## Verzeichnisse
 
-Optionale Ordnerzuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver für die Bereitstellung der Commerce-App über die `/pub` Verzeichnis für [verbesserte Sicherheit][change-docroot-to-pub].
+Optionale Ordnerzuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver für die Bereitstellung der Commerce-App über die `/pub` Verzeichnis für [verbesserte Sicherheit](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -219,7 +219,7 @@ Das Installationsdatum der Commerce-Anwendung.
 
 Die Einstellungen des Sperranbieters werden mithilfe der Variablen `lock` Knoten.
 
-Weitere Informationen [Anbieterkonfiguration sperren][lock-provider-config].
+Weitere Informationen [Anbieterkonfiguration sperren](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -299,6 +299,4 @@ Weitere Informationen finden Sie unter [env-php-config-set](../cli/set-configura
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
