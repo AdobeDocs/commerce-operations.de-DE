@@ -1,7 +1,7 @@
 ---
 title: Software Recommendations
 description: Überprüfen Sie eine Liste der empfohlenen Software im Zusammenhang mit der optimalen Leistung von Adobe Commerce- und Magento Open Source-Implementierungen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8572cc8702d6f7e9c40b64110a9ba18aa5784f44
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -34,13 +34,15 @@ Betriebssystemkonfigurationen und -optimierungen sind für [!DNL Commerce] im Ve
 >
 >Die Aktivierung von net.ipv4.tcp_tw_reuse hat keine Auswirkungen auf eingehende Verbindungen.
 
-```terminal
+```text
 net.ipv4.tcp_tw_reuse = 1
 ```
 
 Der Kernelparameter `net.core.somaxconn` steuert die maximale Anzahl offener Sockets, die auf Verbindungen warten. Dieser Wert kann sicher auf 1024 erhöht werden, sollte jedoch mit der Fähigkeit des Servers korreliert werden, diesen Betrag zu verarbeiten. Um diesen Kernel-Parameter zu aktivieren, legen Sie den folgenden Wert in `/etc/sysctl.conf`:
 
-`net.core.somaxconn = 1024`
+```text
+net.core.somaxconn = 1024
+```
 
 ## PHP
 
@@ -121,7 +123,9 @@ Das Hinzufügen weiterer Erweiterungen verlängert die Ladezeiten von Bibliothek
 
 Gewährleistung der erfolgreichen Ausführung aller [!DNL Commerce] Instanzen ohne Daten- oder Code-Dumping auf die Festplatte zu laden, legen Sie die Speicherbegrenzung wie folgt fest:
 
-`memory_limit=1G`
+```text
+memory_limit=1G
+```
 
 Erhöhen Sie zum Debugging diesen Wert auf 2G.
 
