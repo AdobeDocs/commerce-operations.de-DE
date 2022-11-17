@@ -1,9 +1,9 @@
 ---
 title: Entwicklungsphase der Implementierung
 description: Erfahren Sie mehr über Best Practices bei der Implementierung für die Entwicklungsphase von Adobe Commerce-Projekten.
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: c717d45525c7893fa2c38183326534e0fa4ee0c6
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,4 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 - [CSS- und JS-Dateien optimieren](optimize-css-js-files.md)
 - [Bilder für eine reaktionsfähigere Site optimieren](image-optimization.md)
 - [Fehlerbehebung für Best Practices für Adobe Commerce in &#x200B; Cloud-Infrastruktur](troubleshooting.md)
+- [Erfahren Sie, wann und wie Sie Datenbanktabellen ändern &#x200B;](modifying-core-and-third-party-tables.md)

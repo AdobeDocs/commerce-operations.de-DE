@@ -2,10 +2,10 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 86149bbe268a573f94e8bdb34974403459e46909
+source-git-commit: e856fd2a6a5bde96896f624fc0914e990d20d4cc
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,6 +96,7 @@ ht-degree: 6%
       - [CSS- und JS-Dateien optimieren](best-practices/development/optimize-css-js-files.md)
       - [Private Inhaltsbausteine](best-practices/development/private-content-block-configuration.md)
       - [Statische Inhaltsbereitstellung](best-practices/development/static-content-deployment.md)
+      - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
    - Launch {#launch}
       - [Übersicht](best-practices/launch/overview.md)
       - [Adobe Security Notification Service](best-practices/launch/security-notification-service.md)
