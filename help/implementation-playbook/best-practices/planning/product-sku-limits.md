@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Best Practices zum Konfigurieren von Produk
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Best Practices für die Produkt-SKU-Konfiguration
 
-Um die Leistung zu maximieren, wird für effektive Bestandseinheiten (SKUs) der empfohlene Höchstwert von 10 Millionen empfohlen. Dieser Produkthöchstwert wird wie folgt berechnet:
+Um die Leistung zu maximieren, wird für effektive Bestandseinheiten (SKUs) eine maximale Anzahl von 242 Millionen empfohlen. Dieser Produkthöchstwert wird wie folgt berechnet:
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 Wenn mehr als die maximale Anzahl effektiver SKUs vorhanden ist, wird der Abruf von Produktdaten verlangsamt und die Zeit zum Ausführen von Admin-Vorgängen erhöht.
 
