@@ -1,7 +1,7 @@
 ---
 title: Installationshandbuch
-description: Verwenden Sie dieses Installationshandbuch [!DNL Site-Wide Analysis Tool] für Ihre Website
-source-git-commit: 23ad424a913c5ee58f4092aae008a47fe37b5382
+description: "Verwenden Sie dieses Handbuch zur Installation [!DNL Site-Wide Analysis Tool] für Ihre Website"
+source-git-commit: bfcedda38f91f5dba8880bb1593ad40a6e3f8041
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
