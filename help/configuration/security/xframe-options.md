@@ -1,9 +1,9 @@
 ---
 title: X-Frame-Options-Kopfzeile
 description: Verwenden Sie X-Frame-Options zum Steuern von Seiten-Renderings.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,13 @@ Die `X-Frame-Options` -Kopfzeile ermöglicht Ihnen anzugeben, ob ein Browser ein
 
 ## Implementierung `X-Frame-Options`
 
-Legen Sie einen Wert für `X-Frame-Options` in `<magento_root>/app/etc/env.php`. Der Standardwert lautet:
+Legen Sie einen Wert für `X-Frame-Options` in `<project-root>/app/etc/env.php`. Der Standardwert wird wie folgt festgelegt:
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
+
+Stellen Sie für alle Änderungen am `env.php` zu aktivieren.
 
 >[!TIP]
 >
@@ -40,14 +42,12 @@ Legen Sie einen Wert für `X-Frame-Options` in `<magento_root>/app/etc/env.php`.
 
 ## Überprüfen Sie die Einstellung für `X-Frame-Options`
 
-Um Ihre Einstellung zu überprüfen, zeigen Sie HTTP-Header auf jeder Storefront-Seite an. Dazu gibt es mehrere Möglichkeiten, einschließlich der Verwendung eines Webbrowser-Inspektors.
+Um Ihre Einstellung zu überprüfen, zeigen Sie die HTTP-Header auf jeder Storefront-Seite an. Dazu gibt es mehrere Möglichkeiten, einschließlich der Verwendung eines Webbrowser-Inspektors.
 
 Im folgenden Beispiel wird curl verwendet, das Sie von jedem Computer aus ausführen können, der über das HTTP-Protokoll eine Verbindung zu Ihrem Commerce-Server herstellen kann.
 
-Verwenden Sie den folgenden Befehl:
-
 ```bash
-curl -I -v --location-trusted '<your storefront URL>'
+curl -I -v --location-trusted '<storefront-URL>'
 ```
 
 Suchen Sie nach `X-Frame-Options` -Wert in den Kopfzeilen.
