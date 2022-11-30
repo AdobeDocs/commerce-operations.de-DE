@@ -1,9 +1,9 @@
 ---
 title: Suchmaschinenkonfiguration
 description: Konfigurieren Sie eine Suchmaschine mit Adobe Commerce und Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie zum Testen von Elasticsearch oder OpenSearch mit Adobe Commerce und Magento Open Source auswählen müssen. Ab den Versionen 2.4.4 und 2.4.3-p2 werden alle Felder mit der Beschriftung **Elasticsearch** gilt auch für OpenSearch.
 
-Weitere Informationen zum Konfigurieren der Suchmaschine finden Sie in der [Benutzerhandbuch](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+Weitere Informationen zum Konfigurieren der Suchmaschine finden Sie in der [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Konfigurieren der Suchmaschine über den Administrator
 
