@@ -1,9 +1,9 @@
 ---
 title: Vollständige Voraussetzungen
 description: Bereiten Sie Ihr Adobe Commerce- oder Magento Open Source-Projekt auf ein Upgrade vor, indem Sie diese erforderlichen Schritte ausführen.
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,7 @@ Nachdem Sie die Systemanforderungen überprüft haben, müssen Sie die folgenden
 
 - Alle Software aktualisieren
 - Überprüfen, ob eine unterstützte Suchmaschine installiert ist
+- Tabellenformat der Datenbank konvertieren
 - Legen Sie die Grenze für geöffnete Dateien fest
 - Überprüfen, ob Cron-Aufträge ausgeführt werden
 - Satz `DATA_CONVERTER_BATCH_SIZE`
@@ -30,7 +31,11 @@ Die [Systemanforderungen](../../installation/system-requirements.md) Beschreiben
 
 Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihrer Umgebung aktualisiert haben. Siehe PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php)und [erforderliche PHP-Einstellungen](../../installation/prerequisites/php-settings.md#php-settings).
 
-## Überprüfen der Installation einer unterstützten Suchmaschine
+>[!NOTE]
+>
+>Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie eine [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) Ticket zum Installieren oder Aktualisieren von Diensten in Staging- und Produktionsumgebungen. Geben Sie die erforderlichen Dienständerungen an und fügen Sie Ihre aktualisierte `.magento.app.yaml` und `services.yaml` Dateien und PHP-Version im Ticket. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Dienste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+
+## Überprüfen, ob eine unterstützte Suchmaschine installiert ist
 
 Adobe Commerce und Magento Open Source erfordern die Installation von Elasticsearch oder OpenSearch, um die Software nutzen zu können.
 
@@ -63,7 +68,7 @@ Sie müssen entweder Elasticsearch 7.6 oder höher oder OpenSearch 1.2 installie
 
 Siehe [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
 
-Elasticsearch erfordert JDK 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) um zu überprüfen, welche Version von JDK installiert ist.
+Elasticsearch erfordert Java Development Kit (JDK) 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) um zu überprüfen, welche Version von JDK installiert ist.
 
 [Elasticsearch konfigurieren](../../configuration/search/configure-search-engine.md) beschreibt die Aufgaben, die Sie nach der Aktualisierung von Elasticsearch 2 auf eine unterstützte Version ausführen müssen.
 
@@ -79,11 +84,15 @@ Sie können [von Elasticsearch zu OpenSearch migrieren](opensearch-migration.md)
 
 OpenSearch erfordert JDK 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) um zu überprüfen, welche Version von JDK installiert ist.
 
-[Magento für die Verwendung von Elasticsearch konfigurieren](../../configuration/search/configure-search-engine.md) beschreibt die Aufgaben, die Sie nach dem Ändern von Suchmaschinen ausführen müssen.
+[Suchmaschinenkonfiguration](../../configuration/search/configure-search-engine.md) beschreibt die Aufgaben, die Sie nach dem Ändern von Suchmaschinen ausführen müssen.
 
 ### Drittanbietererweiterungen
 
 Wir empfehlen Ihnen, sich an Ihren Suchmaschinenanbieter zu wenden, um festzustellen, ob Ihre Erweiterung vollständig mit Version 2.4 kompatibel ist.
+
+## Tabellenformat der Datenbank konvertieren
+
+Sie müssen das Format aller Datenbanktabellen aus `COMPACT` nach `DYNAMIC`. Sie müssen außerdem den Speicher-Engine-Typ von `MyISAM` nach `InnoDB`. Siehe [Best Practices](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Legen Sie die Grenze für geöffnete Dateien fest
 
@@ -118,7 +127,7 @@ So legen Sie den Wert in Ihrer Bash-Shell fest:
 
 ## Überprüfen, ob Cron-Aufträge ausgeführt werden
 
-Die UNIX-Aufgabenplanung `cron` ist von entscheidender Bedeutung für den laufenden Betrieb von Adobe Commerce und Magento Open Source. Es werden Dinge wie Neuindizierung, Newsletter, E-Mails, Sitemaps usw. geplant. Mehrere Funktionen erfordern mindestens einen Cron-Auftrag, der als Dateisysteminhaber ausgeführt wird.
+Die UNIX-Aufgabenplanung `cron` ist von entscheidender Bedeutung für den laufenden Betrieb von Adobe Commerce und Magento Open Source. Er plant Dinge wie Neuindizierung, Newsletter, E-Mails und Sitemaps. Mehrere Funktionen erfordern mindestens einen Cron-Auftrag, der als Dateisysteminhaber ausgeführt wird.
 
 Um sicherzustellen, dass Ihr Cron-Auftrag ordnungsgemäß eingerichtet ist, überprüfen Sie die Registerkarte &quot;crontab&quot;, indem Sie den folgenden Befehl als Dateisysteminhaber eingeben:
 
@@ -191,7 +200,7 @@ Aus Sicherheitsgründen erfordern Adobe Commerce und Magento Open Source bestimm
 
 Verzeichnisse im Dateisystem müssen von der [des Dateisysteminhabers](../../installation/prerequisites/file-system/overview.md) hinzugefügt.
 
-Um sicherzustellen, dass Ihre Dateisystemberechtigungen richtig festgelegt sind, melden Sie sich entweder beim Anwendungsserver an oder verwenden Sie die Dateiverwaltungsanwendung Ihres Hosting-Providers.
+Um zu überprüfen, ob Ihre Dateisystemberechtigungen richtig eingerichtet sind, melden Sie sich entweder beim Anwendungsserver an oder verwenden Sie die Dateiverwaltungsanwendung Ihres Hosting-Providers.
 
 Geben Sie beispielsweise den folgenden Befehl ein, wenn die Anwendung in `/var/www/html/magento2`:
 
