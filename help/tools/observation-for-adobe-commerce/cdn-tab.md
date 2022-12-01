@@ -1,9 +1,9 @@
 ---
-title: '"Die [!UICONTROL CDN] tab"'
+title: "Die [!UICONTROL CDN] tab"
 description: Erfahren Sie mehr über die [!UICONTROL CDN] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Die **[!UICONTROL Error Percentage]** zeigt den Wert des ERROR-Prozentsatzes der
 
 ![Schneller Cache-Durchschnittliche Antwort für den ausgewählten Zeitraum in Sekunden](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-Dieser Frame zeigt die Dauer der zwischenspeicherbaren Anforderungen in Sekunden, d. h. wenn ein `cache_response` MISS ist, zeigt es den Durchschnitt für ausgelassene zwischengespeicherte Antworten für die ausgewählte Zeit an.
+Dieser Frame zeigt die Dauer der zwischenspeicherbaren Anforderungen in Sekunden, d. h. wenn ein `cache_response` ist [!UICONTROL MISS], zeigt sie den Durchschnitt für ausgelassene zwischengespeicherte Antworten während der ausgewählten Zeit an.
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -70,7 +70,7 @@ Dieser Frame zeigt die Dauer der zwischenspeicherbaren Anforderungen in Sekunden
 
 ![Anforderungen - Seit dem ausgewählten Zeitraum im Vergleich zu einer Woche](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-Dieser Rahmen ähnelt dem Zusammenfassungsfeld für Gesamtanforderungen oben, zeigt jedoch die Anzahl der vorherigen Wochen-Anfragen an. Dies sind alle Anforderungen, nicht nur zwischenspeicherbare Anforderungen (wobei `is_cacheable` ist wahr).
+Dieser Frame ähnelt dem Zusammenfassungsfeld für [!UICONTROL Total Requests] oben, zeigt jedoch die Anzahl der Anfragen der letzten Wochen an. Dies sind alle Anforderungen, nicht nur zwischenspeicherbare Anforderungen (wobei `is_cacheable` ist wahr).
 
 ## [!UICONTROL Response Count]
 
@@ -126,4 +126,4 @@ Die **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]
 
 ![IP-Häufigkeit](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-Die **[!UICONTROL IP Frequency]** frame zählt die (&quot;MISS&quot;- und &quot;PASS&quot;-Status für jede IP-Adresse aus der [!DNL Fastly] Protokolle. Webanfragen mit diesen Status erreichen den Herkunftsserver und fügen dem Server Ladevorgänge hinzu. Er zeigt die zwanzig häufigsten Adressen in der Häufigkeit. Dieser Frame kann verwendet werden, um IP-Angriffe oder Quellen hoher Belastung auf einer Website zu erkennen. Dieses Diagramm ist auch auf der Registerkarte &quot;Zusammenfassung&quot;vorhanden und wird hier platziert, um einen einfachen Vergleich mit weiteren Details zum [!DNL Fastly] Protokollinformationen, die auf dieser Registerkarte angezeigt werden.
+Die **[!UICONTROL IP Frequency]** frame zählt die Status (&#39;MISS&#39; und &#39;PASS&#39;) für jede IP aus der [!DNL Fastly] Protokolle. Webanfragen mit diesen Status erreichen den Herkunftsserver und fügen dem Server Ladevorgänge hinzu. Er zeigt die zwanzig häufigsten Adressen in der Häufigkeit. Dieser Frame kann verwendet werden, um IP-Angriffe oder Quellen hoher Belastung auf einer Website zu erkennen. Dieses Diagramm ist auch auf der Registerkarte &quot;Zusammenfassung&quot;vorhanden und wird hier platziert, um einen einfachen Vergleich mit weiteren Details zum [!DNL Fastly] Protokollinformationen, die auf dieser Registerkarte angezeigt werden.
