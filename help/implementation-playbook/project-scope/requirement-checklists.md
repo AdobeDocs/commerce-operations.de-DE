@@ -2,7 +2,7 @@
 title: Checklisten für Anforderungen
 description: Verwenden Sie diese Liste umfassender Fragen, um Sie bei der Vorbereitung auf eine Adobe Commerce-Implementierung zu unterstützen.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -205,7 +205,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Welches Auftragsverwaltungssystem wird in Adobe Commerce integriert? (Beispiele: Microsoft Dynamics, SAP, Retail Pro)
 
-- Welches Produktbestandsmanagementsystem wird in Adobe Commerce integriert? (Beispiele: Akeneo, InRiver, Bluestone)
+- Welches Produktinformationsmanagementsystem wird in Adobe Commerce integriert? (Beispiele: Akeneo, InRiver, Bluestone)
 
 - Welches Customer Relationship Management-System wird in Adobe Commerce integriert? (Beispiele: Hubspot, Salesforce, Klaviyo)
 
