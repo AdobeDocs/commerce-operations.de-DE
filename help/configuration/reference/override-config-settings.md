@@ -1,9 +1,9 @@
 ---
 title: Konfigurationseinstellungen überschreiben
 description: Erfahren Sie, wie Sie Umgebungsvariablen verwenden, um Konfigurationseinstellungen zu überschreiben.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Sie können den Wert von _any_ Konfigurationseinstellung mithilfe von Umgebungsv
 
 >[!TIP]
 >
->Sehen Sie sich die [Umgebungen konfigurieren](https://devdocs.magento.com/cloud/env/variables-intro.html) Thema im _Commerce Cloud-Handbuch_ Weitere Informationen zum Arbeiten mit Variablen in Adobe Commerce in der Cloud-Infrastruktur.
+>Sehen Sie sich die [Umgebungen konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) Thema im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 ## Umgebungsvariablen
 
@@ -253,6 +253,6 @@ Ein Beispiel mit einer schrittweisen Anleitung finden Sie unter [Festlegen von K
 >
 >- So verwenden Sie Werte, die Sie in der Variablen `$_ENV` Array, müssen Sie `variables_order = "EGPCS"`(Umgebung, Get, Post, Cookie und Server) in Ihrer `php.ini` -Datei. Weitere Informationen finden Sie unter [PHP-Dokumentation](https://www.php.net/manual/en/ini.core.php).
 >
->- Wenn Sie bei Adobe Commerce in der Cloud-Infrastruktur versuchen, Konfigurationseinstellungen mit der [Projekt-Webschnittstelle](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), müssen Sie dem Variablennamen `env:`. Beispiel:
+>- Wenn Sie bei Adobe Commerce in der Cloud-Infrastruktur versuchen, Konfigurationseinstellungen mit der [Projekt-Webschnittstelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), müssen Sie dem Variablennamen `env:`. Beispiel:
 >
->![Beispiel für Umgebungsvariable](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![Beispiel für Umgebungsvariable](../../assets/configuration/cloud-console-envvariable.png)

@@ -1,9 +1,9 @@
 ---
 title: L2-Cache-Konfiguration
 description: Erfahren Sie, wie Sie den L2-Cache konfigurieren.
-source-git-commit: 2ef8b48fab84221c8e6423f41126bbee37706809
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Commerce speichert die gehashte Datenversion in Redis, wobei das Suffix &quot;:h
 
 >[!INFO]
 >
->Für Adobe Commerce in der Cloud-Infrastruktur können Sie [Bereitstellungsvariablen](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) für die L2-Cache-Konfiguration.
+>Für Adobe Commerce in der Cloud-Infrastruktur können Sie [Bereitstellungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) für die L2-Cache-Konfiguration.
 
 ## Konfigurationsbeispiel
 

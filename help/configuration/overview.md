@@ -1,9 +1,9 @@
 ---
 title: Übersicht über das Konfigurationshandbuch
 description: Erfahren Sie mehr über alle konfigurierbaren Funktionen und Dienste für Ihre Adobe Commerce- oder Magento Open Source-Anwendung.
-source-git-commit: 573b407bf29fd4dea2c0e9a52593f65fa64ffa2d
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Es gibt entsprechende Themen im [Benutzerhandbuch für Commerce](https://docs.ma
 
 ## Cloud-Konfiguration
 
-[!DNL Commerce on cloud infrastructure] verwendet eine [Satz von Konfigurationsdateien](https://devdocs.magento.com/cloud/env/environments.html) , um die [!DNL Commerce] Anwendungsfunktionen und -dienste in den gehosteten Umgebungen. Aufgrund der einzigartigen Natur der Cloud-gehosteten Umgebungen von Adobe sollten Sie immer die [Cloud-Handbuch](https://devdocs.magento.com/cloud/bk-cloud.html) für zusätzliche Konfigurationsanforderungen.
+[!DNL Commerce on cloud infrastructure] verwendet eine [Satz von Konfigurationsdateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) , um die Commerce-Anwendungsfunktionen und -Dienste in den gehosteten Umgebungen zu aktualisieren. Aufgrund der Einzigartigkeit der Cloud-gehosteten Adobe-Umgebungen sollten Sie immer die [Cloud-Handbuch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) für zusätzliche Konfigurationsanforderungen.

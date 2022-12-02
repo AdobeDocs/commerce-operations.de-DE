@@ -1,9 +1,9 @@
 ---
 title: Anwendungsmodi
 description: Die Commerce-Anwendung kann je nach Bedarf in verschiedenen Modi eingesetzt werden. Zeigen Sie eine detaillierte Liste der verfügbaren Anwendungsmodi an.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Sie können die Commerce-Anwendung in einem der folgenden _Modi_:
 
 >[!INFO]
 >
->[Adobe Commerce auf Cloud-Infrastruktur](https://devdocs.magento.com/cloud/bk-cloud.html) unterstützt nur die Produktions- und Wartungsmodi.
+>[Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) unterstützt nur die Produktions- und Wartungsmodi.
 
 ## Standardmodus
 
@@ -71,4 +71,4 @@ Führen Sie die Commerce-Anwendung im Wartungsmodus aus, um Ihre Site offline zu
 
 Sie können eine [benutzerspezifische Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md), aktivieren und deaktivieren Sie den Wartungsmodus manuell und konfigurieren Sie den Wartungsmodus, damit Besucher von autorisierten IP-Adressen den Speicher normal anzeigen können. Siehe [Aktivieren und Deaktivieren des Wartungsmodus](../../installation/tutorials/maintenance-mode.md).
 
-Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Nach erfolgreichem Abschluss der Bereitstellung kehrt die Commerce-Anwendung im Produktionsmodus zur Ausführung zurück. Siehe [Bereitstellungshinweise](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) im _Commerce Cloud-Handbuch_.
+Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Nach erfolgreichem Abschluss der Bereitstellung kehrt die Commerce-Anwendung im Produktionsmodus zur Ausführung zurück. Siehe [Bereitstellungshinweise](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) im _Leitfaden zu Commerce on Cloud Infrastructure_.

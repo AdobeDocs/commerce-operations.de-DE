@@ -1,9 +1,9 @@
 ---
 title: Remote-Speicher für Commerce in Cloud-Infrastruktur
 description: Siehe Anleitungen zum Einrichten von Remote-Speicher für Adobe Commerce in der Cloud-Infrastruktur.
-source-git-commit: 9a5993c9a65ad210f1a9682734730f235bbc3d44
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Wenn Sie die Remote-Speicherlösung mit einem Adobe Commerce-Projekt in der Cloud-Infrastruktur verwenden möchten, verwenden Sie die [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) Leitlinien _Fastly_ Dokumentation, um sicherzustellen, dass die Fastly-Bildoptimierung mit AWS S3 funktioniert.
 
-Seien Sie auf Ihre [Schnelle Anmeldeinformationen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds). Verwenden Sie in Pro-Projekten SSH, um eine Verbindung zu Ihrem Server herzustellen und die Fastly-Anmeldeinformationen von der `/mnt/shared/fastly_tokens.txt` -Datei. Staging- und Produktionsumgebungen verfügen über eindeutige Anmeldeinformationen. Sie müssen die Anmeldeinformationen für jede Umgebung abrufen.
+Seien Sie auf Ihre [Schnelle Anmeldeinformationen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). Verwenden Sie in Pro-Projekten SSH, um eine Verbindung zu Ihrem Server herzustellen und die Fastly-Anmeldeinformationen von der `/mnt/shared/fastly_tokens.txt` -Datei. Staging- und Produktionsumgebungen verfügen über eindeutige Anmeldeinformationen. Sie müssen die Anmeldeinformationen für jede Umgebung abrufen.
 
 Fahren Sie mit den folgenden Aufgaben mit der Einrichtung des Remote-Speichers für Cloud-Projekte fort:
 

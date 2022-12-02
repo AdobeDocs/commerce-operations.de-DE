@@ -1,9 +1,9 @@
 ---
 title: Einrichten mehrerer Websites mit Apache
 description: In diesem Tutorial erfahren Sie, wie Sie mehrere Websites mit Apache einrichten.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Falls erforderlich, kopieren Sie die vorhandene `index.php` Einstiegspunktskript
 
    Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
 
-   Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) im _Commerce Cloud-Handbuch_.
+   Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 - Sie verwenden einen virtuellen Host pro Website. Die Konfigurationsdatei des virtuellen Hosts lautet `/etc/httpd/httpd.conf`
 
@@ -95,8 +95,8 @@ Sofern kein DNS für die URLs Ihrer Stores eingerichtet ist, müssen Sie eine st
 1. Fügen Sie die statische Route im Format hinzu:
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. Rufen Sie eine der folgenden URLs in Ihrem Browser auf:
@@ -110,7 +110,7 @@ Sofern kein DNS für die URLs Ihrer Stores eingerichtet ist, müssen Sie eine st
 >[!INFO]
 >
 >- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
->- Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. see [Einrichten mehrerer Cloud-Websites oder -Stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) im _Commerce Cloud-Handbuch_.
+>- Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. see [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 
 ### Fehlerbehebung

@@ -1,9 +1,9 @@
 ---
 title: Indexer verwalten
 description: Sehen Sie sich Beispiele für das Anzeigen und Verwalten von Commerce-Indizes an.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Bevor Sie den Indexmodus wechseln, empfehlen wir, Ihre Website auf [Wartung](../../installation/tutorials/maintenance-mode.md) Modus und [Deaktivieren von Cron-Aufträgen](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). Dadurch wird sichergestellt, dass Sie nicht unter Datenbanksperren leiden.
+>Bevor Sie den Indexmodus wechseln, empfehlen wir, Ihre Website auf [Wartung](../../installation/tutorials/maintenance-mode.md) Modus und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Dadurch wird sichergestellt, dass Sie nicht unter Datenbanksperren leiden.
 
 So legen Sie die Indexkonfiguration fest:
 

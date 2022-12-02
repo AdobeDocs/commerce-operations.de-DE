@@ -1,9 +1,9 @@
 ---
 title: Mehrere Websites mit Nginx einrichten
 description: In diesem Tutorial erfahren Sie, wie Sie mehrere Websites mit Nginx einrichten.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '962'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Wir gehen davon aus, dass
 
    Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
 
-   Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) im _Commerce Cloud-Handbuch_.
+   Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 - Sie akzeptieren mehrere Domänen in einer Virtual-Host-Datei oder verwenden einen virtuellen Host pro Website. die Konfigurationsdateien des virtuellen Hosts befinden sich unter `/etc/nginx/sites-available`.
 - Sie verwenden die `nginx.conf.sample` von Commerce bereitgestellt werden, wobei nur die in diesem Tutorial behandelten Änderungen enthalten sind.
@@ -265,8 +265,8 @@ Sofern kein DNS für die URLs Ihrer Stores eingerichtet ist, müssen Sie eine st
 1. Fügen Sie die statische Route im Format hinzu:
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. Rufen Sie eine der folgenden URLs in Ihrem Browser auf:
@@ -280,7 +280,7 @@ Sofern kein DNS für die URLs Ihrer Stores eingerichtet ist, müssen Sie eine st
 >[!INFO]
 >
 >- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
->- Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. see [Einrichten mehrerer Cloud-Websites oder -Stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html) im _Commerce Cloud-Handbuch_.
+>- Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. see [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 
 ### Fehlerbehebung

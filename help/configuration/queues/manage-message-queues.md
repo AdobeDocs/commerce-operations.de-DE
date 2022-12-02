@@ -1,9 +1,9 @@
 ---
 title: Verwalten von Nachrichtenwarteschlangen
 description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen über die Befehlszeile für Adobe Commerce verwalten können.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Sie können auch einen Prozessmanager wie [Supervisor](http://supervisord.org/in
 
 >[!INFO]
 >
->Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, verwenden Sie die [`CRON_CONSUMERS_RUNNER`](https://devdocs.magento.com/cloud/env/variables-deploy.html#cron_consumers_runner) , um die `consumers_runner` Cron-Auftrag.
+>Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, verwenden Sie die [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) , um die `consumers_runner` Cron-Auftrag.
 
 ### Spezifische Konfiguration
 
@@ -82,6 +82,6 @@ Bearbeiten Sie die `/app/etc/env.php` Datei zum Konfigurieren des Cron-Auftrags 
 
    >[!INFO]
    >
-   >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, verwenden Sie die [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://devdocs.magento.com/cloud/env/variables-deploy.html#consumers_wait_for_max_messages) um zu konfigurieren, wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
+   >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, verwenden Sie die [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) um zu konfigurieren, wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
 
 Siehe [Starten von Nachrichtenwarteschlangen-Verbrauchern](../cli/start-message-queues.md).
