@@ -1,7 +1,7 @@
 ---
 title: Festlegen von Konfigurationswerten
 description: Erfahren Sie, wie Sie Konfigurationswerte festlegen und Werte ändern, die in Admin gesperrt sind.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -133,8 +133,8 @@ Die folgende Tabelle beschreibt die `set` Befehlsparameter:
 | --- | --- |
 | `--scope` | Der Umfang der Konfiguration. Die möglichen Werte sind `default`, `website`oder `store`. Der Standardwert ist `default`. |
 | `--scope-code` | Der Code der Konfiguration (Website-Code oder Code der Store-Ansicht) |
-| `-le or --lock-env` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/env.php` -Datei. |
-| `-lc or --lock-config` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/config.php` -Datei. Die `--lock-config` Optionsüberschreibungen `--lock-env` , wenn Sie beide Optionen angeben. |
+| `-e or --lock-env` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/env.php` -Datei. |
+| `-c or --lock-config` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/config.php` -Datei. Die `--lock-config` Optionsüberschreibungen `--lock-env` , wenn Sie beide Optionen angeben. |
 | `path` | _Erforderlich_. Der Konfigurationspfad |
 | `value` | _Erforderlich_. Der -Wert der Konfiguration |
 
