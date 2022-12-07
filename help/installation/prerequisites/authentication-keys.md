@@ -1,9 +1,9 @@
 ---
 title: Abrufen der Authentifizierungsschlüssel
 description: Führen Sie diese Schritte aus, um Anmeldeinformationen für den Zugriff auf Adobe Commerce- und Magento Open Source Composer-Pakete auf repo.magento.com abzurufen.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 Die `repo.magento.com` Repository ist der Speicherort, an dem Adobe Commerce- und Magento Open Source- sowie Drittanbieter-Composer-Pakete gespeichert werden und Authentifizierung erfordern. Verwenden Sie Ihr Commerce Marketplace-Konto, um ein 32-stelliges Paar zu generieren. *Authentifizierungsschlüssel* , um auf das Repository zuzugreifen.
 
->[!NOTE]
+Für die Zugriffsberechtigung auf Adobe Commerce- und Magento Open Source-Packages müssen Sie Schlüssel verwenden, die mit einem MAGEID verknüpft sind, dem Zugriff auf diese Packages gewährt wurde. Die MAGEID ist in der Regel der Primäre Ansprechpartner für das Adobe Commerce-Konto und ist möglicherweise nicht immer Projektinhaber des Adobe Commerce-Projekts für Cloud-Infrastruktur.
+
+>[!TIP]
 >
->Für die Zugriffsberechtigung auf Adobe Commerce- und Magento Open Source-Packages müssen Sie Schlüssel verwenden, die mit einem MAGEID verknüpft sind, dem Zugriff auf diese Packages gewährt wurde. Der MAGEID ist normalerweise der **Rechnungskontakte** auf dem Adobe Commerce-Konto und möglicherweise nicht immer der **Projektinhaber** des Adobe Commerce-Projekts zur Cloud-Infrastruktur. Bei Auftreten von [errors](https://support.magento.com/hc/en-us/articles/360040296392), haben Sie möglicherweise keine Berechtigung für den Zugriff auf das Paket oder die Zugriffsberechtigung ist aufgrund einer ausstehenden Rechnung auf dem Konto abgelaufen. Kontakt [Adobe Commerce-Support](https://support.magento.com/hc/en-us) für Unterstützung bei Ihrer MAGEID.
+>Bei Auftreten von [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), haben Sie möglicherweise keine Berechtigung für den Zugriff auf das Paket oder die Zugriffsberechtigung ist aufgrund einer ausstehenden Rechnung auf Ihrem Konto abgelaufen.
+>
+>* Wenn Sie die Primäre Kontaktperson im Konto sind, stellen Sie sicher, dass auf dem Konto keine ausstehende Rechnung aufgeführt ist.
+>* Wenn die von der Primären Kontaktperson bereitgestellten Schlüssel nicht funktionieren und auf dem Konto keine ausstehenden Rechnungen vorliegen, wenden Sie sich an [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) für Unterstützung bei der Verwendung der MAGEID des Primären Kontakts.
+
 
 So erstellen Sie Authentifizierungsschlüssel:
 
