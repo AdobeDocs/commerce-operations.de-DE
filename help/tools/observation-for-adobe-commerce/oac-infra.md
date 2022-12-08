@@ -1,17 +1,17 @@
 ---
-title: '"Die [!UICONTROL Infra] tab"'
-description: Die [!UICONTROL Infra] -Registerkarte isoliert Probleme und Ursachen von Infrastrukturproblemen.
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: "Die [!DNL Infra] tab"
+description: Die [!DNL Infra] -Registerkarte isoliert Probleme und Ursachen von Infrastrukturproblemen.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 
-# Die [!UICONTROL Infra] tab
+# Die [!DNL Infra] tab
 
-Die **[!UICONTROL Infra]** -Registerkarte isoliert Probleme und Ursachen von Infrastrukturproblemen. Weitere Informationen finden Sie in den Frames, die Sie auf der Registerkarte sehen können.
+Die **[!DNL Infra]** -Registerkarte isoliert Probleme und Ursachen von Infrastrukturproblemen. Weitere Informationen finden Sie in den Frames, die Sie auf der Registerkarte sehen können.
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ Die **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]*
 
 ![Verwendung des Knotens durch Bereinigung](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-Die **[!UICONTROL Inode usage by mount]** frame zeigt die Nutzung des Indes durch die Bereitstellung über den ausgewählten Zeitrahmen hinweg an. Auch wenn es viel Speicherplatz gibt, der frei ist, zeigt ein Knoten, wenn ihm die Inodes ausgehen, einen Mangel an verfügbarem Speicher. Durch das Entfernen von Dateien (insbesondere kleinen) wird sowohl Speicherplatz freigesetzt als auch die Verfügbarkeit von Inodes gewährleistet.
+Die **[!UICONTROL Inode usage by mount]** Frame-Displays [!DNL inode] Verwendung durch Einhängung über den ausgewählten Zeitrahmen hinweg. Auch wenn ausreichend Speicherplatz zur Verfügung steht, wenn einem Knoten die [!DNL inodes], wird es einen Mangel an verfügbarem Speicher zeigen. Durch das Entfernen von Dateien (insbesondere kleinen) wird sowohl Speicherplatz freigesetzt als auch [!DNL inodes] verfügbar.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

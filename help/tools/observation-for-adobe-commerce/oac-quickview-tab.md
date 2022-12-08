@@ -1,15 +1,15 @@
 ---
-title: '"Die [!UICONTROL QuickView] tab"'
-description: Im Tab QuickView werden die verschiedenen Warnhinweistypen erläutert, einschließlich der Warnungstypen mit geringem Festplattenspeicher und Serverauslastung.
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: "Die [!DNL QuickView] tab"
+description: Die [!DNL QuickView] in diesem Tab werden die verschiedenen Warnhinweistypen beschrieben, einschließlich der Warnungen, die sich auf wenig Festplattenspeicher und Servernutzung beziehen.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# Die [!UICONTROL QuickView] tab
+# Die [!DNL QuickView] tab
 
 Die **[!UICONTROL QuickView]** in diesem Tab werden die verschiedenen Warnhinweistypen beschrieben, einschließlich der Warnungen, die sich auf wenig Festplattenspeicher und Servernutzung beziehen. Außerdem werden die Frames der Registerkarte beschrieben.
 
