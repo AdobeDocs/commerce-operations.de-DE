@@ -1,9 +1,9 @@
 ---
-title: '"Die [!UICONTROL Security] tab"'
+title: "Die [!UICONTROL Security] tab"
 description: Erfahren Sie mehr über die [!UICONTROL Security] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 5e4babd14bb918db7f894b7ca6a0344a4652704c
+source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -33,24 +33,24 @@ Die **[!UICONTROL Create Account access]** frame zeigt die Anzahl neuer Kontoakt
 
 ## [!UICONTROL POST activities]
 
-Die **[!UICONTROL POST activities]** frame zeigt die Aktivitäten der POST für die Site, facettiert auf client_ip aus der [!DNL Fastly] Protokolle. Er zeigt auch die URL an, auf die die IP-Adresse zugreift.
+Die **[!UICONTROL POST activities]** -Frame zeigt die `POST` Aktivitäten für die Site, facettiert auf `client_ip` von [!DNL Fastly] Protokolle. Er zeigt auch die URL an, auf die die IP-Adresse zugreift.
 
 ![POST-Aktivitäten](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-Die **Übersichtstabelle der POST-Aktivitäten** frame zeigt die zusammengefassten Aktivitäten zur POST der Site, facettiert auf client_ip aus der [!DNL Fastly] Protokolle. Er zeigt auch die Anzahl der URLs an, auf die die IP-Adresse zugreift. Die Anzahl bezieht sich auf den ausgewählten Zeitraum.
+Die **[!UICONTROL POST activities summary table]** frame zeigt die Zusammenfassung `POST` Aktivitäten für die Site, facettiert auf `client_ip` von [!DNL Fastly] Protokolle. Er zeigt auch die Anzahl der URLs an, auf die die IP-Adresse zugreift. Die Anzahl bezieht sich auf den ausgewählten Zeitraum.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
-Die **[!UICONTROL POST activities details table]** frame zeigt die POST für die Site von der [!DNL Fastly] Protokolle. Außerdem werden alle Details aus dem [!DNL Fastly] protokollieren. Sie ist auf die letzten Anfragen aus dem Jahr 2000 beschränkt.
+Die **[!UICONTROL POST activities details table]** -Frame zeigt die `POST` Aktivitäten für die Site von der [!DNL Fastly] Protokolle. Außerdem werden alle Details aus dem [!DNL Fastly] protokollieren. Sie ist auf die letzten Anfragen aus dem Jahr 2000 beschränkt.
 ![POST-activities-details](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 
-Die **[!UICONTROL Guest Carts activities]** frame zeigt die Anzahl der Warenkorbaktivitäten in einem ausgewählten Zeitraum, facettiert nach IP-Adresse und aufgerufener URL. Der Warenkorb kann bei einem Warenkorbattest verwendet werden. Dieser Rahmen zeigt die Gesamtzahl der Anfragen, bei denen auf die URLs des Gastwagens zugegriffen wird.
+Die **[!UICONTROL Guest Carts activities]** frame zeigt die Anzahl der Warenkorbaktivitäten in einem ausgewählten Zeitraum, facettiert nach IP-Adresse und aufgerufener URL. Der Warenkorb kann bei einem Warenkorbattest verwendet werden. Dieser Rahmen zeigt die Gesamtzahl der Anfragen, bei denen auf die URLs der Warenkorb zugegriffen wird.
 
 ![Guest-Warenkorb-activities](../../assets/tools/observation-for-adobe-commerce/guest-carts-activities.jpg)
 
