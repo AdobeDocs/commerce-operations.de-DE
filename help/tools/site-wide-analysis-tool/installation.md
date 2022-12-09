@@ -1,9 +1,9 @@
 ---
 title: Installationshandbuch
 description: "Verwenden Sie dieses Handbuch zur Installation [!DNL Site-Wide Analysis Tool] für Ihre Website"
-source-git-commit: 5603d0feee6ec9dd5e8b534a0e64df274d7ab84d
+source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Ihre lokale Infrastruktur muss die folgenden Anforderungen erfüllen, bevor der 
 Der Agent benötigt die [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) Erweiterung, die auf Ihrem System installiert werden soll, und [konfiguriert](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) mit API-Schlüsseln. Um zu überprüfen, ob die Erweiterung installiert ist, führen Sie den folgenden Befehl aus:
 
 ```bash
-bin/magento module:status Magento_ServicesConnector
+bin/magento module:status Magento_ServicesId
 ```
 
 Wenn Sie die Erweiterung installiert und mit einem vorhandenen API-Schlüssel für einen anderen Dienst konfiguriert haben, haben Sie **MUSS API-Schlüssel neu generieren** und aktualisieren Sie sie im Adobe Commerce-Admin für den Agenten.
@@ -102,19 +102,25 @@ Wenn die Erweiterung nicht installiert ist, installieren Sie sie mit den folgend
 1. Fügen Sie die Erweiterung zu Ihrer `composer.json` und installieren Sie sie.
 
    ```bash
-   composer require magento/services-connector:1.*
+   composer require magento/services-id
    ```
 
 1. Aktivieren Sie die Erweiterung.
 
    ```bash
-   bin/magento module:enable Magento_ServicesConnector
+   bin/magento module:enable Magento_ServicesId
    ```
 
 1. Aktualisieren Sie das Datenbankschema.
 
    ```bash
    bin/magento setup:upgrade
+   ```
+
+1. Löschen Sie den Cache.
+
+   ```bash
+   bin/magento cache:clean
    ```
 
 1. [API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) , um die Erweiterung mit Ihrem System zu verbinden.
