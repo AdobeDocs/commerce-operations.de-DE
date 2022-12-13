@@ -1,9 +1,9 @@
 ---
 title: Remote-Speicher für Commerce in Cloud-Infrastruktur
 description: Siehe Anleitungen zum Einrichten von Remote-Speicher für Adobe Commerce in der Cloud-Infrastruktur.
-source-git-commit: 0653d90d92e264b62fcc648f2b1307c013e9be54
+source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Legen Sie die `REMOTE_STORAGE` als [Variable auf Umgebungsebene](https://experie
 magento-cloud variable:create --level environment --name REMOTE_STORAGE --json true --inheritable false --value '{"driver":"aws-s3","prefix":"uat","config":{"bucket":"aws-bucket-id","region":"eu-west-1","key":"optional-key","secret":"optional-secret"}}'
 ```
 
-Dadurch wird eine `REMOTE_STORAGE` mit der angegebenen JSON-Konfiguration. Die `REMOTE_STORAGE` verwendet eine JSON-Zeichenfolge, um den Remote-Speicher zu konfigurieren. Nachstehend finden Sie ein Beispiel für eine JSON-Konfiguration.
+Dadurch wird eine `REMOTE_STORAGE` mit der angegebenen JSON-Konfiguration. Die `REMOTE_STORAGE` verwendet eine JSON-Zeichenfolge, um den Remote-Speicher zu konfigurieren. Im Folgenden finden Sie ein Beispiel für eine JSON-Konfiguration:
 
 ```json
 {
