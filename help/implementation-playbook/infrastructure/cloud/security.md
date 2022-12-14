@@ -2,9 +2,9 @@
 title: Sicherheit der Cloud-Infrastruktur
 description: Erfahren Sie, wie wir Adobe Commerce in der Cloud-Infrastruktur sicher halten.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1644'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Linux-, Anwendungs
 
 Vertrauliche Daten können entweder personenbezogene Daten von Verbrauchern oder vertrauliche Daten von Managed Services-Kunden umfassen. Der Schutz sensibler Kunden- und Verbraucherdaten ist eine wichtige Verpflichtung für Adobe Commerce Managed Services. Sowohl Managed Services als auch unsere Kunden haben rechtliche Verpflichtungen in Bezug auf personenbezogene Daten. Zusätzlich zu den Sicherheitsfunktionen der Architektur gibt es weitere Steuerelemente, um die Verteilung und den Zugriff auf vertrauliche Daten zu beschränken.
 
-Kunden besitzen ihre Daten und haben die Kontrolle darüber, wo sich diese Daten befinden. Der Kunde gibt den Speicherort an, an dem sich seine Produktions- und Entwicklungsinstanzen befinden. Sie geben außerdem an, welcher Speicherort in Verbindung mit Commerce für die Magento Business Intelligence-Umgebung (MBI) verwendet wird und ob diese MBI-Anwendung Zugriff auf persönlich identifizierbare Informationen hat oder nicht. Produktionsinstanzen können in den meisten AWS-Regionen angesiedelt sein, während Entwicklungs- und MBI-Umgebungen derzeit entweder in den USA oder in der Europäischen Union stattfinden können.
+Kunden besitzen ihre Daten und haben die Kontrolle darüber, wo sich diese Daten befinden. Der Kunde gibt den Speicherort an, an dem sich seine Produktions- und Entwicklungsinstanzen befinden. Sie geben außerdem an, welcher Speicherort in der Adobe Commerce-Reporting-Umgebung in Verbindung mit Commerce verwendet wird und ob diese Adobe Commerce Reporting-Anwendung Zugriff auf persönlich identifizierbare Informationen hat oder nicht. Produktionsinstanzen können in den meisten AWS-Regionen lokalisiert werden, während Entwicklungs- und Adobe Commerce-Reporting-Umgebungen derzeit entweder in den USA oder in der Europäischen Union zu finden sind.
 
 Sensible Daten können über das Fastly CDN-Server-Netzwerk übermittelt werden, werden jedoch nicht im Fastly-Netzwerk gespeichert. Alle in der Adobe Commerce Managed Services enthaltenen Partner, die ein Angebot anbieten, haben vertragliche Verpflichtungen, den Schutz sensibler Daten sicherzustellen. Managed Services verschiebt keine sensiblen Kunden- oder Verbraucherdaten von den vom Kunden angegebenen Speicherorten.
 
