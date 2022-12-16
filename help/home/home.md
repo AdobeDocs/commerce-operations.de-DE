@@ -2,9 +2,9 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: 80163ec1c40a19ea4eb138c3753b08daa231dc41
+source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -124,6 +124,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
 Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
 
 | Änderung | Typ |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| Verschieben Sie die [Sicherheits- und Compliance-Anleitung](../security-and-compliance/overview.md) von [devdocs.magento.com](https://devdocs.magento.com/security/security-and-compliance.html). | Neu |
-| Verschieben Sie die [Handbuch zu Versionshinweisen](../release/release-notes/overview.md) von [devdocs.magento.com](https://devdocs.magento.com/release/released-versions.html). | Neu |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Es wurde ein neues Thema hinzugefügt, in dem alle [Nachrichtenwarteschlangen-Verbraucher](../configuration/queues/consumers.md). | Neu |
+| Hinzugefügt [instructions](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) zum Konvertieren des Datenbanktabellenspeicherformats für Adobe Commerce in Cloud Infrastructure Pro-Projekten. | Aktualisiert |
+| Hinzugefügt [instructions](../configuration/remote-storage/cloud-support.md) zur Aktivierung des Remote-Speichers für Adobe Commerce in Cloud-Infrastrukturprojekten. | Aktualisiert |
