@@ -1,7 +1,7 @@
 ---
 title: Starten von Nachrichtenwarteschlangen-Verbrauchern
 description: Erfahren Sie, wie Sie eine Nachrichtenwarteschlange für Verbraucher starten.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Sie müssen einen Nachrichtenwarteschlange-Benutzer starten, um asynchrone Vorgänge wie Massenaktionen in Inventory management sowie REST-Massen- und asynchrone Endpunkte zu aktivieren. Um B2B-Funktionen zu aktivieren, müssen Sie mehrere Verbraucher starten. Für Drittanbietermodule ist möglicherweise auch das Starten eines benutzerdefinierten Verbrauchers erforderlich.
+Sie müssen eine [Nachrichtenwarteschlange für Verbraucher](../queues/consumers.md) , um asynchrone Vorgänge wie Massenaktionen in Inventory management sowie REST-Massen- und asynchrone Endpunkte zu aktivieren. Um B2B-Funktionen zu aktivieren, müssen Sie mehrere Verbraucher starten. Für Drittanbietermodule ist möglicherweise auch das Starten eines benutzerdefinierten Verbrauchers erforderlich.
 
 So zeigen Sie eine Liste aller Verbraucher an:
 
