@@ -1,9 +1,9 @@
 ---
 title: Installationshandbuch
 description: "Verwenden Sie dieses Handbuch zur Installation [!DNL Site-Wide Analysis Tool] für Ihre Website"
-source-git-commit: 696f1624fe43fdd637b374b880667d35daca04de
+source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -381,27 +381,27 @@ Wenn Sie den Agenten so konfiguriert haben, dass er stattdessen mit cron ausgef�
    rm -rf swat-agent
    ```
 
-## Konfigurationsdatei überschreiben
+## Fehlerbehebung
 
-Mithilfe von Umgebungsvariablen können Sie die Werte überschreiben, die Sie während der Installation in der Konfigurationsdatei angegeben haben. Dadurch wird die Abwärtskompatibilität mit früheren Versionen des Agenten beibehalten. In der folgenden Tabelle finden Sie empfohlene Werte:
+### Zugriffsschlüssel nicht ordnungsgemäß analysiert
 
-| EIGENSCHAFT | BESCHREIBUNG |
-| --- | --- |
-| `SWAT_AGENT_APP_NAME` | Firma oder Site-Name, den Sie bei der Installation des Agenten angegeben haben |
-| `SWAT_AGENT_APPLICATION_PHP_PATH` | Pfad zu Ihrem PHP CLI-Interpreter (in der Regel `/usr/bin/php`) |
-| `SWAT_AGENT_APPLICATION_MAGENTO_PATH` | Stammordner, in dem Ihre Adobe Commerce-Anwendung installiert ist (normalerweise `/var/www/html`) |
-| `SWAT_AGENT_APPLICATION_DB_USER` | Datenbankbenutzer für Ihre Adobe Commerce-Installation |
-| `SWAT_AGENT_APPLICATION_DB_PASSWORD` | Datenbankkennwort für den angegebenen Benutzer für Ihre Adobe Commerce-Installation |
-| `SWAT_AGENT_APPLICATION_DB_HOST` | Datenbankhost für Ihre Adobe Commerce-Installation |
-| `SWAT_AGENT_APPLICATION_DB_NAME` | Datenbankname für Ihre Adobe Commerce-Installation |
-| `SWAT_AGENT_APPLICATION_DB_PORT` | Datenbankanschluss für Ihre Adobe Commerce-Installation (in der Regel `3306`) |
-| `SWAT_AGENT_APPLICATION_DB_TABLE_PREFIX` | Tabellenpräfix für Ihre Adobe Commerce-Installation (Standardwert: `empty`) |
-| `SWAT_AGENT_APPLICATION_DB_REPLICATED` | Gibt an, ob Ihre Adobe Commerce-Installation über eine sekundäre Datenbankinstanz verfügt (normalerweise `false`) |
-| `SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH` | Temporärer Ordner für den Agenten (in der Regel `/usr/local/swat-agent/tmp`) |
-| `SWAT_AGENT_RUN_CHECKS_ON_START` | Daten beim ersten Start erfassen (in der Regel `1`) |
-| `SWAT_AGENT_LOG_LEVEL` | Bestimmt, welche Ereignisse basierend auf dem Schweregrad protokolliert werden (in der Regel `error`) |
-| `SWAT_AGENT_ENABLE_AUTO_UPGRADE` | Aktiviert die automatische Aktualisierung (Neustart nach einer Aktualisierung erforderlich); Der Agent prüft nicht auf Aktualisierungen, wenn die Option deaktiviert ist. `true` oder `false`) |
-| `SWAT_AGENT_IS_SANDBOX=false` | Aktivieren des Sandbox-Modus zur Verwendung des Agenten in der Staging-Umgebung |
+Wenn Ihre Zugriffsschlüssel nicht richtig analysiert werden, wird möglicherweise der folgende Fehler angezeigt:
+
+```terminal
+ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
+FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+```
+
+Um diesen Fehler zu beheben, führen Sie die folgenden Schritte aus:
+
+1. Führen Sie einen [Skriptinstallation](#scripted), speichern Sie die Ausgabe und überprüfen Sie die Ausgabe auf Fehler.
+1. Überprüfen Sie die generierten `config.yaml` und überprüfen Sie, ob der Pfad zu Ihrer Commerce-Instanz und PHP korrekt ist.
+1. Stellen Sie sicher, dass sich der Benutzer, der die Planung ausführt, im [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) Unix-Gruppe oder ist derselbe Benutzer wie der Eigentümer des Dateisystems.
+1. Stellen Sie sicher, dass die Variable [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) -Schlüssel korrekt installiert sind und versuchen, sie zu aktualisieren, um die Erweiterung mit Ihrem System zu verbinden.
+1. [Deinstallieren](#uninstall) Der Agent nach dem Aktualisieren der Schlüssel und Neuinstallation mithilfe der [Installationsskript](#scripted).
+1. Führen Sie den Planer aus und überprüfen Sie, ob Sie immer noch denselben Fehler erhalten.
+1. Wenn Sie immer noch denselben Fehler erhalten, erhöhen Sie die Protokollebene im `config.yaml` , um ein Support-Ticket zu debuggen und zu öffnen.
+
 
 >[!INFO]
 >
