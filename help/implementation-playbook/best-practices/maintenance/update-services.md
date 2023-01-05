@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce auf dem neuesten Stand de
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Aktualisieren Sie die von Adobe Commerce verwendeten Dienste und Komponenten, be
 
 Kunden mit Starter-Plänen können sich selbst für Service-Upgrades bedienen. Siehe [Dienstversion ändern](https://devdocs.magento.com/cloud/project/services.html#change-service-version) für weitere Informationen.
 
-Kunden mit Pro-Plänen können sich nur selbst für Service-Upgrades in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). Für Service-Upgrades in der Produktion müssen Sie [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) das Upgrade anfordern.
+Kunden mit Pro-Plänen können sich nur selbst für Service-Upgrades in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Für Service-Upgrades in der Produktion müssen Sie [Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) das Upgrade anfordern.
 
 >[!WARNING]
 >

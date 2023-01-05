@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Zahlungsdetails sicher verarbeiten und speich
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Best Practices für die Verarbeitung und Speicherung von Zahlungen
 
-Eines der wichtigsten Grundsätze bei der Aufrechterhaltung [PCI-Compliance](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) hat eine Strategie, Kreditkartenzahlungen ordnungsgemäß zu verarbeiten und zu speichern.
+Eines der wichtigsten Grundsätze bei der Aufrechterhaltung [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) hat eine Strategie, Kreditkartenzahlungen ordnungsgemäß zu verarbeiten und zu speichern.
 
 Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und dies könnte einen Verstoß gegen Ihre Verpflichtungen als Händler im Rahmen des Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen über unser gemeinsames Verantwortungsmodell und die Richtlinien für Handelsverpflichtungen finden Sie in unserer [Handbuch zur gemeinsamen Verantwortung für Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) im Adobe Trust Center.
 

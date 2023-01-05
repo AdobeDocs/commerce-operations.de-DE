@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Datenbank- und Anwendungseinstellungen konfig
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,6 @@ Siehe [Aktivieren der Archivierung](https://experienceleague.adobe.com/docs/comm
 
 ## Zusätzliche Informationen
 
-- [Was sind die Hauptunterschiede zwischen InnoDB und MYISAM?](http://www.expertphp.in/article/what-are-the-main-differences-between-innodb-and-myisam)
+- [MySQL-Speichermaschinen](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Voraussetzungen für das Adobe Commerce 2.3.5-Upgrade für MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
 - [Best Practices zur Lösung von Problemen mit der Datenbankleistung](../maintenance/resolve-database-performance-issues.md)

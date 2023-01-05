@@ -4,9 +4,9 @@ description: Behalten und optimieren Sie die Site-Leistung, indem Sie Best Pract
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ Um die Site-Leistung zu maximieren, befolgen Sie die folgenden Best Practices f�
 - Überprüfen Sie die Indexkonfiguration.
 - Legen Sie die Indexer auf _[!UICONTROL Update on Schedule]_für große Sites und Sites mit häufigen Aktualisierungen und hohem Traffic. Siehe [Indexverwaltung](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 - Folgen [Best Practices für die Leistung](../../../performance/configuration.md) für die Verwaltung von Indizes.
+
+>[!IMPORTANT]
+>
+>Die [!DNL Customer Grid] kann nur mit der [!UICONTROL Update on Save] -Option. Dieser Index unterstützt die `Update by Schedule` -Option.
 
 ## Zusätzliche Informationen
 

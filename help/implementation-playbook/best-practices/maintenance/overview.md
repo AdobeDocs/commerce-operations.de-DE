@@ -1,9 +1,9 @@
 ---
 title: Wartungsphase der Implementierung
 description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Wartungsphase von Adobe Commerce-Projekten.
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Wart
 - [Leistung des Frontend überprüfen](frontend-performance.md)
 - [Bereit, Festlegen, Verwalten](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Verwenden Sie das SWAT-Tool, um die Sicherheit und Bedienbarkeit von Adobe Commerce sicherzustellen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - CTAG-Deck
-- Neuer Relikt
-- Protokolle
-- Speicherplatz
+- [Verwenden Sie New Relic- und Statusbenachrichtigungen, um Leistung, Speicherplatz und Protokolle für Adobe Commerce-Sites zu überwachen, die in der Cloud-Infrastruktur bereitgestellt werden.](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## Datenbankverwaltung
 
@@ -53,14 +51,15 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Wart
 - [Neuindizierung](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Best Practices für die Konfiguration von Indexern &#x200B;](indexer-configuration.md)
 - [Best Practices für die Auftragsverarbeitung konfigurieren](order-processing-configuration.md)
-- CTAG-Deck
-- Planen von Upsights für geplante Traffic-Zunahmen während Werbeaktionen oder Feiertagen - CTAG-Decksinhalt
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## Konfiguration
 
 - [Planen von Admin-Aktualisierungen auf Produktions-Sites](scheduling-admin-updates-in-production.md)
 
-- Planung für die Hochsaison und Werbezeiten (Hochskalierung) - CTAG-Decksinhalt
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## Fehlerbehebungen
 
