@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von statischen Ansichtsdateien
 description: Erfahren Sie, wie Sie im Produktionsmodus statische Dateien in das Commerce-Dateisystem schreiben.
-source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
@@ -53,7 +53,7 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 
 | Option | Beschreibung | Erforderlich? |
 | ------ | ----------- | --------- |
-| `<languages>` | Durch Leerzeichen getrennte Liste von [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) Sprachcodes, für die statische Ansichtsdateien ausgegeben werden sollen. (Der Standardwert ist `en_US`.<br>Suchen Sie die Liste, indem Sie Folgendes ausführen: `bin/magento info:language:list` | Nein |
+| `<languages>` | Durch Leerzeichen getrennte Liste von [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) Sprachcodes, für die statische Ansichtsdateien ausgegeben werden sollen. (Der Standardwert ist `en_US`.<br>Suchen Sie die Liste, indem Sie Folgendes ausführen: `bin/magento info:language:list` | Nein |
 | `--language (-l)` | Generieren Sie Dateien nur für die angegebenen Sprachen. Standardmäßig werden Dateien für alle ISO-639-Sprachcodes generiert, ohne dass eine Option angegeben ist. Sie können den Namen eines Sprachcodes gleichzeitig angeben. Der Standardwert ist **all**.<br>Beispiel: `--language en_US --language es_ES` | Nein |
 | `--exclude-language` | Generieren Sie Dateien für die angegebenen Sprachcodes. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Sie können den Namen eines Sprachcodes oder eine kommagetrennte Liste von Sprachcodes angeben. Der Standardwert ist **Keine**. | Nein |
 | `--theme <theme>` | Designs, für die statische Inhalte bereitgestellt werden sollen. Der Standardwert ist **all**.<br>Beispiel: `--theme Magento/blank --theme Magento/luma` | Nein |

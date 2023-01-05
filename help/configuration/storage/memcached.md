@@ -1,7 +1,7 @@
 ---
 title: Verwenden Sie gecacht für die Sitzungsspeicherung
 description: Erfahren Sie mehr über die Verwendung von Memcached für die Commerce-Sitzungsspeicherung.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Das gecachete Speichersystem ist ein allgemeines Speicherzwischenspeichersystem. Es wird häufig verwendet, um dynamische datenbankbasierte Websites zu beschleunigen, indem Daten und Objekte im RAM zwischengespeichert werden, um die Häufigkeit zu reduzieren, mit der eine externe Datenquelle (z. B. eine Datenbank oder API) gelesen werden muss.
 
-Die zwischengespeicherten Dateien bieten eine große Hash-Tabelle, die auf mehrere Computer verteilt werden kann. Wenn die Tabelle voll ist, führen nachfolgende Einfügungen dazu, dass ältere Daten in der zuletzt verwendeten Reihenfolge (LRU) gelöscht werden. Dieser Hash-Tisch ist oft sehr groß. (Quelle: [memcached.org](http://memcached.org/))
+Die zwischengespeicherten Dateien bieten eine große Hash-Tabelle, die auf mehrere Computer verteilt werden kann. Wenn die Tabelle voll ist, führen nachfolgende Einfügungen dazu, dass ältere Daten in der zuletzt verwendeten Reihenfolge (LRU) gelöscht werden. Dieser Hash-Tisch ist oft sehr groß. (Quelle: [memcached.org](https://www.memcached.org/))
 
 Commerce verwendet die Zwischenspeicherung für die Sitzungsspeicherung, nicht aber für die Seiten-Zwischenspeicherung. Für die Zwischenspeicherung von Seiten wird empfohlen [Redis](../cache/redis-pg-cache.md) oder [Varnisch](../cache/config-varnish.md).
 
@@ -39,7 +39,7 @@ Commerce verwendet die Zwischenspeicherung für die Sitzungsspeicherung, nicht a
    ),
    ```
 
-   gecacht hat optionale Startparameter, die über den Rahmen dieses Handbuchs hinausgehen. Weitere Informationen finden Sie im Abschnitt [zwischengespeichert](https://php.net/manual/en/memcached.sessions.php) Dokumentation, Quellcode und Änderungen.
+   gecacht hat optionale Startparameter, die über den Rahmen dieses Handbuchs hinausgehen. Weitere Informationen finden Sie im Abschnitt [zwischengespeichert](https://www.php.net/manual/en/memcached.sessions.php) Dokumentation, Quellcode und Änderungen.
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
@@ -80,5 +80,5 @@ Commerce verwendet die Zwischenspeicherung für die Sitzungsspeicherung, nicht a
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
    
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```

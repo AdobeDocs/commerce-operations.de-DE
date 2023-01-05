@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren von Redis
 description: Verschaffen Sie sich einen Überblick über die Redis-Funktionen und starten Sie Ihre Redis-Konfiguration.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Sie können auch die Optionen RDB und AOF gleichzeitig aktivieren. Weitere Infor
 
 Richten Sie die Instanz für die Cacheinstanz so ein, dass sie groß genug ist, um Ihren gesamten Commerce-Cache zu speichern. Die Größenanforderungen hängen von verschiedenen Faktoren ab, wie der Anzahl der Produkte und der Store-Ansichten. Als Ausgangspunkt können Sie die Größe des Cache-Ordners in Ihrem Dateisystem verwenden. Wenn beispielsweise die Variable `var/cache` -Ordner in Ihrem Dateisystem 5 GB beträgt, richten Sie Ihre Redis-Instanz mit mindestens 5 GB ein, um zu starten. Für die Cache-Instanz ist keine Persistenz erforderlich, da der Commerce-Cache wiederhergestellt werden kann. Siehe [Handbuch zum Redis-Cache](https://redis.io/docs/manual/eviction/).
 
-Zur Leistungsoptimierung können Sie auch die folgenden Einstellungen für das asynchrone Löschen aktivieren. Diese Einstellungen ändern das Verhalten von Redis nicht. Siehe auch [Neuigkeiten](http://antirez.com/news/93) für Details zum asynchronen Löschen.
+Zur Leistungsoptimierung können Sie die folgenden Einstellungen für das asynchrone Löschen aktivieren. Diese Einstellungen ändern das Verhalten von Redis nicht.
 
 ```ini
 lazyfree-lazy-eviction yes
