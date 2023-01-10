@@ -1,10 +1,10 @@
 ---
 title: Veröffentlichungszeitplan
-description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce für die Beta-, Vorab-Release- und allgemeine Verfügbarkeit geplant sind.
+description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce für die Beta-Freigabe, die Vorabfreigabe und allgemeine Verfügbarkeit geplant sind.
 source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

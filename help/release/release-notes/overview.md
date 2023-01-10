@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise zu Adobe Commerce und Magento Open Source
-description: Erfahren Sie, wo Sie Informationen zu bestimmten Adobe Commerce- und Magento Open Source-Versionen finden.
+description: Erfahren Sie, wo Sie Informationen zu bestimmten Versionen von Adobe Commerce und Magento Open Source finden.
 source-git-commit: d63d1dd03cbf166f6fbce1df7113d1e861363f28
 workflow-type: tm+mt
 source-wordcount: '400'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 

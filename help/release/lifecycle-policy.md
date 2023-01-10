@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über wichtige Daten für das Ende der Softwareun
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
@@ -63,20 +63,20 @@ Für Adobe Commerce 2.4 und nachfolgende Versionen:
   </tr>
   <tr>
     <td>2.4.0 - 2.4.3</td>
-    <td style="text-align:center">7,4</td>
+    <td style="text-align:center">7.4</td>
     <td colspan="3" style="background-color:#67ac68;"></td>
     <td style="background-color:#cd3c3c;">Nov</td>
     <td colspan="8" ></td>
   </tr>
   <tr>
-    <td>2,4,4</td>
-    <td rowspan="2" style="text-align:center">8,1</td>
+    <td>2.4.4</td>
+    <td rowspan="2" style="text-align:center">8.1</td>
     <td></td>
     <td colspan="10" style="background-color:#67ac68;">Mar</td>
     <td rowspan="2" style="background-color:#cd3c3c;">Nov</td>
   </tr>
   <tr>
-    <td>2,4,5</td>
+    <td>2.4.5</td>
     <td colspan="2"></td>
     <td colspan="9" style="background-color:#67ac68;">Aug</td>
   </tr>
