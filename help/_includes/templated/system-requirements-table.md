@@ -1,7 +1,7 @@
 ---
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 9f6110d359ffb31b04ebef369b82c25d4d0b9058
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '236'
 ht-degree: 63%
 
 ---
@@ -14,35 +14,35 @@ ht-degree: 63%
         Softwareabhängigkeiten
       </th>
       <th>2.4.5-p1</th>
-      <th>2,4,5</th>
+      <th>2.4.5</th>
       <th>2.4.4-p2</th>
       <th>2.4.4-p1</th>
-      <th>2,4,4</th>
+      <th>2.4.4</th>
       <th>2.4.3-p3</th>
       <th>2.4.3-p2</th>
-      <th>2,4,3</th>
-      <th>2,4,2</th>
-      <th>2,4,1</th>
-      <th>2,4,0</th>
+      <th>2.4.3</th>
+      <th>2.4.2</th>
+      <th>2.4.1</th>
+      <th>2.4.0</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Verfasser</td>
+      <td><span class="uicontrol">Verfasser</span></td>
       <td>
-            2,2
+            2.2
       </td>
       <td>
-            2,2
+            2.2
       </td>
       <td>
-            2,1
+            2.1
       </td>
       <td>
-            2,1
+            2.1
       </td>
       <td>
-            2,1
+            2.1
       </td>
       <td>
             1
@@ -64,579 +64,579 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
-      <td>Elasticsearch</td>
+      <td><span class="uicontrol">Elasticsearch</span></td>
       <td>
-            7,17
+            7.17
       </td>
       <td>
-            7,17
+            7.17
       </td>
       <td>
-            7,16
+            7.16
       </td>
       <td>
-            7,16
+            7.16
       </td>
       <td>
-            7,16
+            7.16
       </td>
       <td>
-            7,16
+            7.16
       </td>
       <td>
-            7,16
+            7.16
       </td>
       <td>
-            7,10
+            7.10
       </td>
       <td>
-            7,9
+            7.9
       </td>
       <td>
-            7,7
+            7.7
       </td>
       <td>
-            7,6
-      </td>
-    </tr>
-    <tr>
-      <td>OpenSearch</td>
-      <td>
-            1,2
-      </td>
-      <td>
-            1,2
-      </td>
-      <td>
-            1,2
-      </td>
-      <td>
-            1,2
-      </td>
-      <td>
-            1,2
-      </td>
-      <td>
-            1,2
-      </td>
-      <td>
-            1,2
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+            7.6
       </td>
     </tr>
     <tr>
-      <td>MariaDB</td>
+      <td><span class="uicontrol">OpenSearch</span></td>
       <td>
-            Artikel 10 Absatz 4
+            1.2
       </td>
       <td>
-            Artikel 10 Absatz 4
+            1.2
       </td>
       <td>
-            Artikel 10 Absatz 4
+            1.2
       </td>
       <td>
-            Artikel 10 Absatz 4
+            1.2
       </td>
       <td>
-            Artikel 10 Absatz 4
+            1.2
       </td>
       <td>
-            Artikel 10 Absatz 4
+            1.2
       </td>
       <td>
-            Artikel 10 Absatz 4
+            1.2
       </td>
       <td>
-            Artikel 10 Absatz 4
+          —
       </td>
       <td>
-            Artikel 10 Absatz 4
+          --
       </td>
       <td>
-            Artikel 10 Absatz 4
+          --
+      </td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">MariaDB</span></td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
       </td>
       <td>
             10.2, 10.3, 10.4
       </td>
     </tr>
     <tr>
-      <td>MySQL</td>
+      <td><span class="uicontrol">MySQL</span></td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
-            8,0
+            8.0
       </td>
       <td>
             5.7, 8.0
       </td>
     </tr>
     <tr>
-      <td>PHP</td>
+      <td><span class="uicontrol">PHP</span></td>
       <td>
-            8,1
+            8.1
       </td>
       <td>
-            8,1
+            8.1
       </td>
       <td>
-            8,1
+            8.1
       </td>
       <td>
-            8,1
+            8.1
       </td>
       <td>
-            8,1
+            8.1
       </td>
       <td>
-            7,4
+            7.4
       </td>
       <td>
-            7,4
+            7.4
       </td>
       <td>
-            7,4
+            7.4
       </td>
       <td>
-            7,4
+            7.4
       </td>
       <td>
-            7,4
+            7.4
       </td>
       <td>
             7.3, 7.4
       </td>
     </tr>
     <tr>
-      <td>[!DNL RabbitMQ]</td>
+      <td><span class="uicontrol">RabbitMQ</span></td>
       <td>
-            3,9
+            3.9
       </td>
       <td>
-            3,9
+            3.9
       </td>
       <td>
-            3,9
+            3.9
       </td>
       <td>
-            3,9
+            3.9
       </td>
       <td>
-            3,9
+            3.9
       </td>
       <td>
-            3,8
+            3.8
       </td>
       <td>
-            3,8
+            3.8
       </td>
       <td>
-            3,8
+            3.8
       </td>
       <td>
-            3,8
+            3.8
       </td>
       <td>
-            3,8
+            3.8
       </td>
       <td>
-            3,8
-      </td>
-    </tr>
-    <tr>
-      <td>Redis</td>
-      <td>
-            6,2
-      </td>
-      <td>
-            6,2
-      </td>
-      <td>
-            6,2
-      </td>
-      <td>
-            6,2
-      </td>
-      <td>
-            6,2
-      </td>
-      <td>
-            6,0
-      </td>
-      <td>
-            6,0
-      </td>
-      <td>
-            6,0
-      </td>
-      <td>
-            6,0
-      </td>
-      <td>
-            5,0
-      </td>
-      <td>
-            5,0
+            3.8
       </td>
     </tr>
     <tr>
-      <td>Varnisch</td>
+      <td><span class="uicontrol">Redis</span></td>
       <td>
-            7,0
+            6.2
       </td>
       <td>
-            7,0
+            6.2
       </td>
       <td>
-            7,0
+            6.2
       </td>
       <td>
-            7,0
+            6.2
       </td>
       <td>
-            7,0
+            6.2
       </td>
       <td>
-            6,5
+            6.0
       </td>
       <td>
-            6,5
+            6.0
       </td>
       <td>
-            6,5
+            6.0
       </td>
       <td>
-            6,4
+            6.0
       </td>
       <td>
-            6,2
+            5.0
+      </td>
+      <td>
+            5.0
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">Varnisch</span></td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            6.5
+      </td>
+      <td>
+            6.5
+      </td>
+      <td>
+            6.5
+      </td>
+      <td>
+            6.4
+      </td>
+      <td>
+            6.2
       </td>
       <td>
             6
       </td>
     </tr>
     <tr>
-      <td>Apache</td>
+      <td><span class="uicontrol">Apache</span></td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
+            2.4
       </td>
       <td>
-            2,4
-      </td>
-    </tr>
-    <tr>
-      <td>nginx</td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
-      </td>
-      <td>
-            1,18
+            2.4
       </td>
     </tr>
     <tr>
-      <td>AWS Aurora (MySQL)</td>
+      <td><span class="uicontrol">nginx</span></td>
       <td>
-            8,0
+            1.18
       </td>
       <td>
-            8,0
+            1.18
       </td>
       <td>
-            5,7
+            1.18
       </td>
       <td>
-            5,7
+            1.18
       </td>
       <td>
-            5,7
+            1.18
       </td>
       <td>
-            5,7
+            1.18
       </td>
       <td>
-            5,7
+            1.18
       </td>
       <td>
-            5,7
+            1.18
       </td>
       <td>
-          —
+            1.18
       </td>
       <td>
-          —
+            1.18
       </td>
       <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td>AWS S3</td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-            ✔️
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+            1.18
       </td>
     </tr>
     <tr>
-      <td>AWS MQ</td>
+      <td><span class="uicontrol">AWS Aurora (MySQL)</span></td>
       <td>
-            3,9,13
+            8.0
       </td>
       <td>
-            3,9,13
+            8.0
       </td>
       <td>
-            3,8,11
+            5.7
       </td>
       <td>
-            3,8,11
+            5.7
       </td>
       <td>
-            3,8,11
+            5.7
       </td>
       <td>
-            3,8,11
+            5.7
       </td>
       <td>
-            3,8,11
+            5.7
       </td>
       <td>
-            3,8,11
+            5.7
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td>AWS ElastiCache</td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-            Redis 6
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>AWS Elasticsearch</td>
+      <td><span class="uicontrol">AWS S3</span></td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-            7,9
+            ✔️
       </td>
       <td>
-          —
+            ✔️
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
     </tr>
     <tr>
-      <td>AWS OpenSearch</td>
+      <td><span class="uicontrol">AWS MQ</span></td>
       <td>
-            1,2
+            3.9.13
       </td>
       <td>
-            1,2
+            3.9.13
       </td>
       <td>
-          —
+            3.8.11
       </td>
       <td>
-          —
+            3.8.11
       </td>
       <td>
-          —
+            3.8.11
       </td>
       <td>
-          —
+            3.8.11
       </td>
       <td>
-          —
+            3.8.11
       </td>
       <td>
-          —
+            3.8.11
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
       </td>
       <td>
-          —
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">AWS ElastiCache</span></td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">AWS Elasticsearch</span></td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+            7.9
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">AWS OpenSearch</span></td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
+          --
       </td>
     </tr>
   </tbody>
