@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce-Datenbank für die Aktual
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
+source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Sie können Tabellen auf einem Knoten im Cluster konvertieren. Die Änderungen w
 1. Identifizieren Sie Tabellen, die von einem kompakten in ein dynamisches Format konvertiert werden sollen.
 
    ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
 1. Legen Sie die Tabellengrößen fest, damit Sie die Konvertierungsarbeit planen können.
