@@ -1,9 +1,9 @@
 ---
 user-guide-title: Installationsanleitung
 user-guide-description: Erfahren Sie, wie Sie Adobe Commerce und Magento Open Source für lokale Bereitstellungen installieren.
-source-git-commit: 949ef8d2036ceeef3cc892a5063ddecc2586a6a9
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -66,3 +66,4 @@ ht-degree: 0%
    - [Commerce deinstallieren oder neu installieren](tutorials/uninstall.md)
    - [Designs deinstallieren](tutorials/themes.md)
    - [Datenbankschema aktualisieren](tutorials/database-upgrade.md)
+- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
