@@ -2,10 +2,10 @@
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
 description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '109'
+ht-degree: 3%
 
 ---
 
@@ -119,12 +119,4 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
 </tr>
 </table>
 
-## Neue Funktionen
-
-Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
-
-| Änderung | Typ |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Es wurde ein neues Thema hinzugefügt, in dem alle [Nachrichtenwarteschlangen-Verbraucher](../configuration/queues/consumers.md). | Neu |
-| Hinzugefügt [instructions](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) zum Konvertieren des Datenbanktabellenspeicherformats für Adobe Commerce in Cloud Infrastructure Pro-Projekten. | Aktualisiert |
-| Hinzugefügt [instructions](../configuration/remote-storage/cloud-support.md) zur Aktivierung des Remote-Speichers für Adobe Commerce in Cloud-Infrastrukturprojekten. | Aktualisiert |
+{{$include /help/_includes/templated/whats-new.md}}
