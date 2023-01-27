@@ -1,9 +1,9 @@
 ---
 title: Veröffentlichte Versionen
 description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce veröffentlicht wurden.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: 71fad9e3005d8b27f9265b2741ae7e2cb463b7fc
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '38'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 # Veröffentlichte Versionen
 
-Diese Liste der veröffentlichten Versionen gilt sowohl für Magento Open Source als auch für Adobe Commerce. Es enthält Veröffentlichungsdaten für jede kleinere und Patch-Version sowie das Ende der Unterstützung. Weitere Informationen finden Sie im Abschnitt [Lebenszyklusrichtlinie](lifecycle-policy.md).
+Auf dieser Seite werden veröffentlichte Versionen von Adobe Commerce aufgelistet. Sie enthält Veröffentlichungstermine für alle kleineren, Patch- und Sicherheits-Releases sowie das Ende der Unterstützung. Siehe [Lebenszyklusrichtlinie](lifecycle-policy.md).
 
 {{$include /help/_includes/templated/release/core-releases.md}}

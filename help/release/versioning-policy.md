@@ -1,9 +1,9 @@
 ---
 title: Versionsrichtlinie
 description: Erfahren Sie mehr über die verschiedenen Arten von Adobe Commerce-Versionen, einschließlich kleineren Versionen, Patch, Sicherheits-Patch, Funktion, Hotfix, individuellem Patch und benutzerdefiniertem Patch.
-source-git-commit: f9bbfb86d2197ee7252602edba455ebcae5a2b18
+source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,11 @@ Verwendung von Adobe Commerce und Magento Open Source [Semantische Versionierung
 
 - **MAJOR-Version**—2
 - **KLEINE Version**—2.4
-- **PATCH-Version**—2.4.1
-   - **Sicherheits-Patch-Version**—2.4.1-p1
+- **PATCH-Version**—2.4.5
+   - **Sicherheits-Patch-Version**—2.4.5-p1
       - Sicherheitsfehlerbehebung
       - Sicherheitsverbesserung
+- **BETA Patch-Version**—2.4.7-beta1
 - **Feature Release**
 - **Hotfix**
 - **Individuelles Pflaster**
@@ -43,43 +44,23 @@ Die folgenden Richtlinien gelten für Patch-Versionen:
 - Änderungen, die Erweiterungen oder Codekompatibilität beeinträchtigen könnten, werden vermieden. Beispielsweise sollte Code, der für Version 2.2.0 geschrieben wurde, weiterhin für Version 2.2.7 verwendet werden.
 - In Ausnahmefällen können brechende Änderungen oder zusätzliche Patches oder Hotfixes veröffentlicht werden, um Sicherheits- oder Compliance-Probleme und Qualitätsprobleme mit hoher Auswirkung zu beheben. Auf Modulebene handelt es sich dabei hauptsächlich um Änderungen auf PATCH-Ebene. manchmal Änderungen auf MINODER-Ebene.
 
-## Sicherheits-Patch-Version
+### Sicherheits-Patch-Version
 
 **Fehlerbehebung bei der Sicherheit**: Eine Änderung des Software-Codes, die ein festgestelltes Sicherheitsproblem behebt und erwartete Ergebnisse in einem betroffenen Produktbereich liefert. Diese Korrekturen sind im Allgemeinen abwärtskompatibel.
 
 **Verbesserung der Sicherheit**: Eine Software-Verbesserung oder Konfigurationsänderung, um die Sicherheit innerhalb der Anwendung proaktiv zu verbessern. Diese Sicherheitsverbesserungen helfen bei der Behebung von Sicherheitsrisiken, die sich auf die Sicherheitsstellung der Adobe Commerce-Anwendung auswirken, aber abwärtskompatibel sein können.
 
-Mit Sicherheits-Patch-Versionen können Sie Ihre Site sicherer halten, ohne zusätzliche Qualitätsverbesserungen und -verbesserungen anzuwenden, die in einer vollständigen vierteljährlichen Patch-Version enthalten sind. Sicherheits-Patch-Versionen werden mit &quot;-pN&quot;angehängt, wobei N die inkrementelle Patch-Version ist, die mit 1 beginnt (z. B. 2.3.5-p1). Sicherheits-Patch-Versionen können auch Hotfixes enthalten, die erforderlich sind, um wichtige Probleme zu beheben, die sich auf die Adobe Commerce-Anwendung auswirken.
+Mit Sicherheits-Patch-Versionen können Sie Ihre Site sicherer halten, ohne zusätzliche Qualitätsverbesserungen und -verbesserungen anzuwenden, die in einer vollständigen Patch-Version enthalten sind. Sicherheits-Patch-Versionen werden mit &quot;-pN&quot;angehängt, wobei N die inkrementelle Patch-Version ist, die mit 1 beginnt (z. B. 2.3.5-p1). Sicherheits-Patch-Versionen können auch Hotfixes enthalten, die erforderlich sind, um wichtige Probleme zu beheben, die sich auf die Adobe Commerce-Anwendung auswirken.
 
 Jede Sicherheits-Patch-Version basiert auf der vorherigen vollständigen Patch-Version. Es enthält Qualitäts- und Sicherheitskorrekturen aus früheren Patch-Versionen und Sicherheitskorrekturen, die zwischen der vorherigen vollständigen Patch-Version und der Sicherheits-Patch-Version erstellt wurden.
 
-Mit der Ankündigung unserer [Neue Veröffentlichungsstrategie und aktualisierte Lebenszyklusrichtlinie](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy) (16.09.2021), werden unsere Sicherheits-Patch-Versionen danach unterschieden, ob sie auf die neueste unterstützte Nebenversion oder einen Teil einer noch unterstützten früheren Nebenversion anwendbar sind:
+Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [Schnellstart-Installation](../installation/composer.md#example---security-patch).
 
-- **Sicherheits-Patch-Versionen für die neueste unterstützte Nebenversion**:
+## BETA Patch-Version
 
-   - Die Sicherheits-Patch-Version für die neueste unterstützte Nebenversion (derzeit Adobe Commerce 2.4) umfasst:
+Vorabversionen von Adobe Commerce-Funktionen werden allen Adobe Commerce-Kunden und Adobe-Partnern öffentlich zugänglich gemacht. Es ermöglicht Ihnen mehr Zeit, bevor die allgemeine Verfügbarkeit den Code und die betroffenen Komponenten überprüft.
 
-      - Sicherheitsfehlerbehebungen, die seit der vorherigen vollständigen Patch-Version erstellt wurden.
-
-      - Diese Sicherheits-Patch-Versionen können auch Hotfixes enthalten, die erforderlich sind, um wichtige Probleme zu beheben, die sich auf die Adobe Commerce-Anwendung auswirken können.
-   - Die Sicherheits-Patch-Version für die neueste unterstützte Nebenversion (derzeit Adobe Commerce 2.4) umfasst in der Regel keine Sicherheitsverbesserungen. Stattdessen sind diese in der vollständigen umfassenden Patch-Version für die neueste unterstützte Nebenversion enthalten.
-
-
-- **Sicherheits-Patch-Versionen für unterstützte frühere Nebenversionen**:
-
-   - Die Sicherheits-Patch-Version für eine frühere Nebenversion, die weiterhin unterstützt wird (derzeit Adobe Commerce 2.3), umfasst:
-
-      - Sicherheitsfehlerbehebungen, die seit der vorherigen Patch- oder Sicherheits-Patch-Version erstellt wurden, sowie neue Sicherheitsverbesserungen.
-
-      - Diese Sicherheits-Patch-Versionen können auch Hotfixes enthalten, die erforderlich sind, um wichtige Probleme zu beheben, die sich auf die Adobe Commerce-Anwendung auswirken.
-
-      |  | Sicherheitsfehler | Verbesserung der Sicherheit |
-      |--------------------------------------------------------------------------------|--------------|----------------------|
-      | Sicherheits-Patch-Versionen für die neueste unterstützte Nebenversion (derzeit 2.4) | X |  |
-      | Sicherheits-Patch-Versionen für vorherige, unterstützte Nebenversionen (derzeit 2.3) | X | X |
-
-
-Allgemeine Informationen zu Sicherheitsfreigaben finden Sie unter [Einführung der neuen reinen Sicherheits-Patch-Version](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [Schnellstart-Installation](../installation/composer.md).
+Beta-Versionen können Mängel enthalten und werden ohne Gewährleistung jeglicher Art &quot;AS IS&quot; bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen (über Adobe Support Services oder anderweitig). Kunden wird empfohlen, Vorsicht walten zu lassen und sich nicht auf die korrekte Funktionsweise oder Leistung der Beta-Versionen und/oder der zugehörigen Dokumentation oder Materialien zu verlassen. Dementsprechend erfolgt die Nutzung der Beta-Versionen auf eigenes Risiko des Kunden.
 
 ## Feature Release
 
@@ -107,7 +88,6 @@ Wird von Mitarbeitern ohne Adobe erstellt, um ein Problem zu beheben oder den Ad
 
 ## Verwandte Themen
 
-- [Planung und Budget für Commerce-Aktualisierungszyklen](https://magento.com/sites/default/files8/2019-08/Magento-Release-Cycle-Infosheet_Aug_2019.pdf)
 - [Versionierung](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Bevorstehende Versionen](schedule.md)
 - [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
