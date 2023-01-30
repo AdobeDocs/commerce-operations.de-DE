@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Zwischenspeicherleistung verbessern könn
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ Weitere Informationen finden Sie unter [Bereitstellen von Variablen > `REDIS_BAC
 >[!NOTE]
 >
 > Überprüfen Sie die in Ihrer lokalen Cloud-Umgebung installierte Version der ece-Tools über die Befehlszeile mit dem `composer show magento/ece-tools` Befehl. Falls erforderlich, [Aktualisieren der ece-tools-Version](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>Do _not_ Konfigurieren einer Redis-Slave-Verbindung für Cloud-Infrastrukturprojekte mit einer [skalierte Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Dies führt zu Redis-Verbindungsfehlern. Siehe [Anleitung zur Konfiguration von Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) im _Handel mit Cloud-Infrastruktur_ Handbuch.
+
 
 ### Konfiguration für lokale Bereitstellungen
 
