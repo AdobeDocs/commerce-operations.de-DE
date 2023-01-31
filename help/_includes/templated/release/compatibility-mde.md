@@ -1,7 +1,7 @@
 ---
-source-git-commit: da1cbeba30059be1b71c18ef08dd1f7ab4674a78
+source-git-commit: a72453e2d16932be7fb84232f584231b8584239e
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -1969,18 +1969,297 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Zahlungsdienste</th>
     </tr>
     <tr>
+      <td>Zahlungsdienste 1.5.4</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.5.3</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.5.2</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.5.1</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.5.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.4.1</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.4.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.3.1</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
       <td>Zahlungsdienste 1.3.0</td>
       <td>Unterstützt</span>
       </td>
       <td>Unterstützt</span>
       </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Zahlungsdienste 1.2.0</td>
       <td>Unterstützt</span>
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -2005,13 +2284,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -2036,13 +2315,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
