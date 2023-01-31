@@ -1,9 +1,9 @@
 ---
 title: Remote-Speicher für Commerce in Cloud-Infrastruktur
 description: Siehe Anleitungen zum Einrichten von Remote-Speicher für Adobe Commerce in der Cloud-Infrastruktur.
-source-git-commit: 2080950852e3c4e6da556733e56f68e0e8005530
+source-git-commit: 4c89ef65ffb559ad4ad3f3fc45bd73079fbacd1b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Alternativ können Sie die Variable über die Projekt-Webschnittstelle zur entsp
 
 1. Klicken **Variable hinzufügen**.
 
-1. Im _Name_ Feld, eingeben `env:REMOTE_STORAGE`
+1. Im _Name_ Feld, eingeben `REMOTE_STORAGE`
 
 1. Im _Wert_ -Feld die JSON-Konfiguration hinzu.
 
