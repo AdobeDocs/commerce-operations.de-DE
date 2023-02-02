@@ -1,10 +1,10 @@
 ---
 title: Einzelmaschinenimplementierung
 description: Erfahren Sie, wie Sie mithilfe der Befehlszeile Updates für Commerce auf einem Produktionsserver bereitstellen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ Dieses Thema enthält Anweisungen zur Bereitstellung von Aktualisierungen für C
 
 ## Annahmen
 
-- Sie haben Commerce mithilfe von installiert. [Verfasser].
+- Sie haben Commerce mithilfe von installiert. [Verfasser](../../installation/composer.md).
 - Sie wenden Aktualisierungen direkt auf den Server an.
 
 >[!WARNING]
@@ -24,7 +24,7 @@ Dieses Thema enthält Anweisungen zur Bereitstellung von Aktualisierungen für C
 
 ## Implementierungsschritte
 
-1. Melden Sie sich bei Ihrem Produktionsserver an oder wechseln Sie zu dem [Dateisysteminhaber][file-owner].
+1. Melden Sie sich bei Ihrem Produktionsserver an oder wechseln Sie zu dem [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 
 1. Wechseln Sie zum Basisverzeichnis &quot;Commerce&quot;:
 
@@ -92,5 +92,3 @@ Dieses Thema enthält Anweisungen zur Bereitstellung von Aktualisierungen für C
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md
