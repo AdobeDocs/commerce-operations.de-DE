@@ -4,19 +4,19 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce-Datenbank für die Aktual
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
+source-git-commit: bc38dd658401d3cd4c64159b1b2b2efe89979a93
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 
-# Voraussetzungen für die Aktualisierung auf Adobe Commerce 2.3.5
+# Upgrade-Voraussetzungen für MariaDB
 
-In diesem Artikel wird beschrieben, wie Sie Ihre Datenbank vorbereiten, wenn Sie von Version 2.3.4 oder früher auf Adobe Commerce 2.3.5 aktualisieren.
+Die Aktualisierung von Adobe Commerce 2.3.4 oder früher auf eine neuere Version erfordert die Aktualisierung des MariaDB-Diensts auf der Cloud-Infrastruktur von Version 10.0 oder 10.2 auf Version 10.3 oder 10.4. MariaDB-Version 10.3 und höher erfordert die Verwendung des dynamischen Tabellenzeilenformats durch die Datenbank und Adobe Commerce erfordert die Verwendung der InnoDB-Speicher-Engine für Tabellen. In diesem Artikel wird beschrieben, wie Sie Ihre Datenbank aktualisieren, um diese MariaDB-Anforderungen zu erfüllen.
 
-Für dieses Upgrade muss das Supportteam MariaDB auf der Cloud-Infrastruktur von MariaDB 10.0 auf 10.2 aktualisieren, um die Anforderungen für Adobe Commerce-Version 2.3.5 und höher zu erfüllen.
+Nachdem Sie die Datenbank vorbereitet haben, senden Sie ein Adobe Commerce-Supportticket, um die MariaDB-Dienstversion in Ihrer Cloud-Infrastruktur zu aktualisieren, bevor Sie mit dem Adobe Commerce-Upgrade-Prozess fortfahren.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Adobe Commerce auf Cloud-Infrastruktur mit Adobe Commerce-Version 2.3.4 oder fr�
 Bereiten Sie Ihre Datenbank vor Beginn des Aktualisierungsprozesses durch Konvertieren Ihrer Datenbanktabellen vor:
 
 - Konvertieren des Zeilenformats aus `COMPACT` nach `DYNAMIC`
-- Konvertieren der Speicher-Engine aus `MyISAM` nach `InnoDB`
+- Ändern Sie die Speicher-Engine von `MyISAM` nach `InnoDB`
 
 Beachten Sie beim Planen und Planen der Konvertierung die folgenden Überlegungen:
 
@@ -137,6 +137,12 @@ Die Konvertierung des Speicherformats unterscheidet sich bei Adobe Commerce Star
 
 1. Wenn Tabellen zurückgesetzt wurden, wiederholen Sie die Schritte zum Ändern des Tabellenzeilenformats und der Speicher-Engine.
 
+## Speicher-Engine ändern
+
+Siehe [Konvertieren von MyISAM-Tabellen in InnoDB](../planning/database-on-cloud.md).
+
 ## Zusätzliche Informationen
 
-[Best Practices für Datenbanken mit Adobe Commerce in Cloud-Infrastruktur](../planning/database-on-cloud.md)
+- [Best Practices für Datenbanken mit Adobe Commerce in Cloud-Infrastruktur](../planning/database-on-cloud.md)
+- [Aktualisieren von MariaDB von 10.0 auf 12.0 für Adobe Commerce on Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
+
