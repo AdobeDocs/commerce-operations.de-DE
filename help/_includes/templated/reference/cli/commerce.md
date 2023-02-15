@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
 workflow-type: tm+mt
-source-wordcount: '19853'
+source-wordcount: '29783'
 ht-degree: 0%
 
 ---
@@ -10,9 +10,9 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 1,40,0
+**Version**: 1,42,0
 
-Diese Referenz enthält 129 Befehle, die über das `magento-cloud` Befehlszeilen-Tool.
+Diese Referenz enthält 134 Befehle, die über das `magento-cloud` Befehlszeilen-Tool.
 Die anfängliche Liste wird automatisch mit der Variablen `magento-cloud list` -Befehl an der Edition.
 
 >[!NOTE]
@@ -83,13 +83,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -106,14 +99,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -144,13 +165,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -167,14 +181,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -208,13 +250,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -231,14 +266,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -281,13 +344,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -304,14 +360,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -322,7 +406,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Zeigt Hilfe für einen Befehl an
 
 ```bash
-help [--format FORMAT] [--raw] [--] [<command_name>]
+magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 
@@ -354,13 +438,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -377,14 +454,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -412,13 +517,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -435,17 +533,45 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
 
 - Standard: `false`
 - Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptieren Sie keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Antwort &quot;Nein&quot; auf Bestätigungsfragen; Akzeptieren Sie den Standardwert für andere Fragen; Interaktion deaktivieren
 
-- Standard: `false`
-- Akzeptiert keinen Wert
+- Standardmäßig: `false`
+- Akzeptieren Sie keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
+
+- Standardmäßig: `false`
+- Akzeptieren Sie keinen Wert
 
 
 ## `list`
@@ -453,9 +579,15 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Listet Befehle auf
 
 ```bash
-list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
+magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
+
+### `command`
+
+Der auszuführende Befehl
+
+- Erforderlich
 
 ### `namespace`
 
@@ -476,13 +608,83 @@ Das Ausgabeformat (txt, xml, json oder md)
 - Standard: `txt`
 - Erfordert einen Wert
 
+### `--all`
+
+Alle Befehle anzeigen, einschließlich ausgeblendeter Befehle
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--help`, `-h`
+
+Diese Hilfemeldung anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Die Ausführlichkeit von Nachrichten erhöhen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--yes`, `-y`
+
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no`, `-n`
+
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
 
 ## `multi`
 
 Ausführen eines Befehls für mehrere Projekte
 
 ```bash
-magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd>
+magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
 ```
 
 
@@ -490,7 +692,10 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 Der auszuführende Befehl
 
+- Standard: `[]`
+
 - Erforderlich
+- Array
 
 ### `--projects`, `-p`
 
@@ -526,13 +731,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -549,14 +747,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -567,7 +793,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Öffnen Sie die Web-Benutzeroberfläche
 
 ```bash
-magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--browser`
@@ -591,7 +817,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -604,13 +830,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -631,14 +850,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -659,13 +906,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -682,14 +922,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -710,13 +978,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -733,14 +994,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -751,7 +1040,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Aktivität abbrechen
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -762,14 +1051,14 @@ Die Aktivitäts-ID. Die Standardeinstellung ist die neueste stornierbare Aktivit
 
 ### `--type`
 
-Filtern nach Typ (bei Auswahl einer Standardaktivität). Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern nach Typ (bei Auswahl einer Standardaktivität). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter für den Typ verwendet werden, z. B. &#39;%var%&#39; zur Auswahl variablenbezogener Aktivitäten.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--exclude-type`
 
-Nach Typ ausschließen (bei Auswahl einer Standardaktivität). Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Nach Typ ausschließen (bei Auswahl einer Standardaktivität). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter zum Ausschließen von Typen verwendet werden.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -789,7 +1078,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -802,13 +1091,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -829,14 +1111,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -847,7 +1157,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Detaillierte Informationen zu einer einzelnen Aktivität anzeigen
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -864,21 +1174,21 @@ Die anzuzeigende Eigenschaft
 
 ### `--type`
 
-Filtern nach Typ (bei Auswahl einer Standardaktivität). Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern nach Typ (bei Auswahl einer Standardaktivität). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter für den Typ verwendet werden, z. B. &#39;%var%&#39; zur Auswahl variablenbezogener Aktivitäten.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--exclude-type`
 
-Nach Typ ausschließen (bei Auswahl einer Standardaktivität). Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Nach Typ ausschließen (bei Auswahl einer Standardaktivität). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter zum Ausschließen von Typen verwendet werden.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--state`
 
-Filtern nach Status (bei Auswahl einer Standardaktivität): in_progress, ausstehend, vollständig oder abgebrochen. Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern nach Status (bei Auswahl einer Standardaktivität): in_progress, ausstehend, vollständig oder abgebrochen. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -911,7 +1221,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -923,14 +1233,14 @@ Die Umgebungs-ID
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -956,13 +1266,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -979,14 +1282,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -997,7 +1328,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste der Aktivitäten für eine Umgebung oder ein Projekt abrufen
 
 ```bash
-magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -1012,14 +1343,14 @@ act
 
 ### `--type`, `-t`
 
-Aktivitäten nach Typ filtern Wenn ein einzelner Wert angegeben ist, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Aktivitäten nach Typ filtern Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter für den Typ verwendet werden, z. B. &#39;%var%&#39; zur Auswahl variablenbezogener Aktivitäten.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--exclude-type`, `-x`
 
-Aktivitäten nach Typ ausschließen Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Aktivitäten nach Typ ausschließen Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter zum Ausschließen von Typen verwendet werden.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -1039,7 +1370,7 @@ Es werden nur Aktivitäten aufgelistet, die vor diesem Datum erstellt wurden
 
 ### `--state`
 
-Filtern von Aktivitäten nach Status: in_progress, ausstehend, vollständig oder abgebrochen. Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern von Aktivitäten nach Status: in_progress, ausstehend, vollständig oder abgebrochen. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -1066,14 +1397,14 @@ Aktivitäten in allen Umgebungen auflisten
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: id*, created*, description*, progress*, state*, result*, completed, environment, type (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -1100,7 +1431,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -1113,13 +1444,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1140,14 +1464,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1158,7 +1510,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Protokoll für eine Aktivität anzeigen
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -1183,21 +1535,21 @@ Zeitstempel neben jeder Nachricht anzeigen
 
 ### `--type`
 
-Filtern nach Typ (bei Auswahl einer Standardaktivität). Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern nach Typ (bei Auswahl einer Standardaktivität). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter für den Typ verwendet werden, z. B. &#39;%var%&#39; zur Auswahl variablenbezogener Aktivitäten.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--exclude-type`
 
-Nach Typ ausschließen (bei Auswahl einer Standardaktivität). Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Nach Typ ausschließen (bei Auswahl einer Standardaktivität). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter zum Ausschließen von Typen verwendet werden.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--state`
 
-Filtern nach Status (bei Auswahl einer Standardaktivität): in_progress, ausstehend, vollständig oder abgebrochen. Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern nach Status (bei Auswahl einer Standardaktivität): in_progress, ausstehend, vollständig oder abgebrochen. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -1237,7 +1589,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -1250,13 +1602,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1277,14 +1622,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1295,7 +1668,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Ausführen einer authentifizierten cURL-Anfrage für die Magento Cloud-API
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
 
@@ -1313,6 +1686,12 @@ Die zu verwendende Anforderungsmethode
 ### `--data`, `-d`
 
 Zu sendende Daten
+
+- Erfordert einen Wert
+
+### `--json`
+
+Zu sendende JSON-Daten
 
 - Erfordert einen Wert
 
@@ -1365,13 +1744,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -1388,14 +1760,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1406,7 +1806,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Konfiguration einer App anzeigen
 
 ```bash
-magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--property`, `-P`
@@ -1430,7 +1830,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -1459,13 +1859,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -1482,14 +1875,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1500,7 +1921,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Auflisten von Apps im Projekt
 
 ```bash
-magento-cloud apps [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -1523,7 +1944,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -1535,14 +1956,14 @@ Die Umgebungs-ID
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: name*, type*, disk, path, size (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -1556,7 +1977,56 @@ Geben Sie die Tabellenüberschrift nicht aus
 
 ### `--help`, `-h`
 
-Diese Hilfemeldung anzeigen
+Anzeigen diese Hilfemeldung
+
+- Standardmäßig: `false`
+- Akzeptieren Sie keinen Wert
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Steigerung der Verbogenheit von Nachrichten
+
+- Standardmäßig: `false`
+- Akzeptieren Sie keinen Wert
+
+### `--version`, `-V`
+
+Anzeigen dieser Applikation Version
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--yes`, `-y`
+
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no`, `-n`
+
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1564,34 +2034,6 @@ Diese Hilfemeldung anzeigen
 ### `--quiet`, `-q`
 
 Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Die Ausführlichkeit von Nachrichten erhöhen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--version`, `-V`
-
-Diese Anwendungsversion anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--yes`, `-y`
-
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--no`, `-n`
-
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1612,13 +2054,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -1635,14 +2070,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1688,13 +2151,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -1711,14 +2167,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1729,7 +2213,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Kontoinformationen anzeigen
 
 ```bash
-magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
 
@@ -1760,14 +2244,14 @@ Ob der Cache aktualisiert werden soll
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -1782,13 +2266,6 @@ Geben Sie die Tabellenüberschrift nicht aus
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1809,14 +2286,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1856,13 +2361,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -1879,14 +2377,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1912,13 +2438,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -1935,14 +2454,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1953,19 +2500,26 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Abrufen eines OAuth 2-Zugriffs-Tokens für Anfragen an Magento Cloud-APIs
 
 ```bash
-magento-cloud auth:token
+magento-cloud auth:token [-H|--header] [-W|--no-warn]
 ```
 
-### `--help`, `-h`
+### `--header`, `-H`
 
-Diese Hilfemeldung anzeigen
+Setzen Sie dem Token das Präfix &quot;Authorization: Träger &quot;, um einen RFC 6750-Header zu erstellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
+### `--no-warn`, `-W`
 
-Keine Nachricht ausgeben
+Unterdrücken Sie die Warnung, die standardmäßig auf &quot;stderr&quot;gedruckt wird. Diese Option wird gegenüber einem Weiterleitungs-String bevorzugt, da dadurch andere potenziell nützliche Nachrichten ausgeblendet werden.
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--help`, `-h`
+
+Diese Hilfemeldung anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1986,14 +2540,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2004,7 +2586,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Einrichten der Blackfire.io-Integration für das Projekt
 
 ```bash
-magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--server_id`
@@ -2027,7 +2609,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -2052,9 +2634,92 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Die Ausführlichkeit von Nachrichten erhöhen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--yes`, `-y`
+
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no`, `-n`
+
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
 ### `--quiet`, `-q`
 
 Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+
+## `blue-green:conclude`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Blau/Grün-Implementierung abschließen
+
+```bash
+magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--project`, `-p`
+
+Die Projekt-ID oder URL
+
+- Erfordert einen Wert
+
+### `--host`
+
+Veraltete Option, nicht mehr verwendet
+
+- Erfordert einen Wert
+
+### `--environment`, `-e`
+
+Die Umgebungs-ID
+
+- Erfordert einen Wert
+
+### `--help`, `-h`
+
+Diese Hilfemeldung anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2075,14 +2740,236 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+
+## `blue-green:deploy`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Blau/Grün-Implementierung durchführen
+
+```bash
+magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`
+
+Einstellen des Routing-Prozentsatzes der aktuellen Version
+
+- Standard: `100`
+- Erfordert einen Wert
+
+### `--project`, `-p`
+
+Die Projekt-ID oder URL
+
+- Erfordert einen Wert
+
+### `--host`
+
+Veraltete Option, nicht mehr verwendet
+
+- Erfordert einen Wert
+
+### `--environment`, `-e`
+
+Die Umgebungs-ID
+
+- Erfordert einen Wert
+
+### `--help`, `-h`
+
+Diese Hilfemeldung anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Die Ausführlichkeit von Nachrichten erhöhen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--yes`, `-y`
+
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no`, `-n`
+
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+
+## `blue-green:enable`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Blau/Grün-Implementierungen aktivieren
+
+```bash
+magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`, `-%`
+
+Einstellen des Routing-Prozentsatzes der aktuellen Version
+
+- Standard: `100`
+- Erfordert einen Wert
+
+### `--project`, `-p`
+
+Die Projekt-ID oder URL
+
+- Erfordert einen Wert
+
+### `--host`
+
+Veraltete Option, nicht mehr verwendet
+
+- Erfordert einen Wert
+
+### `--environment`, `-e`
+
+Die Umgebungs-ID
+
+- Erfordert einen Wert
+
+### `--help`, `-h`
+
+Diese Hilfemeldung anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Die Ausführlichkeit von Nachrichten erhöhen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--yes`, `-y`
+
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no`, `-n`
+
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2093,7 +2980,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Hinzufügen eines SSL-Zertifikats zum Projekt
 
 ```bash
-magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--cert`
@@ -2123,7 +3010,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -2148,13 +3035,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -2171,14 +3051,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2189,7 +3097,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Zertifikat aus dem Projekt löschen
 
 ```bash
-magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <id>
+magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
 ```
 
 
@@ -2207,7 +3115,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -2232,13 +3140,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -2255,14 +3156,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2273,7 +3202,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Zertifikat anzeigen
 
 ```bash
-magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] <id>
+magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
 ```
 
 
@@ -2304,20 +3233,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2338,14 +3260,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2356,7 +3306,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Projektzertifikate auflisten
 
 ```bash
-magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -2438,14 +3388,14 @@ Das Datumsformat (als PHP-Datumsformat-Zeichenfolge)
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: erstellt, Domänen, läuft, ID, Emittent. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -2465,20 +3415,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2499,14 +3442,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2517,7 +3488,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Commit-Details anzeigen
 
 ```bash
-magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<commit>]
+magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2542,7 +3513,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -2586,13 +3557,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -2609,14 +3573,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2627,7 +3619,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Auflisten von Commits
 
 ```bash
-magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2656,7 +3648,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -2668,14 +3660,14 @@ Die Umgebungs-ID
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: author, date, sha, summary. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -2701,13 +3693,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -2724,14 +3709,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2742,7 +3755,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Lokalen Dump der Remote-Datenbank erstellen
 
 ```bash
-magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -2829,7 +3842,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -2864,13 +3877,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -2887,14 +3893,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2905,7 +3939,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Schätzen der Festplattenauslastung einer Datenbank
 
 ```bash
-magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--bytes`, `-B`
@@ -2930,7 +3964,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -2954,14 +3988,14 @@ Die zu verwendende Dienstbeziehung
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: max, percent_used, used Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -2986,13 +4020,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3009,14 +4036,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3027,7 +4082,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 SQL auf der Remote-Datenbank ausführen
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -3067,7 +4122,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -3102,13 +4157,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3125,14 +4173,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3143,7 +4219,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Hinzufügen einer neuen Domäne zum Projekt
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3180,7 +4256,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -3205,13 +4281,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3228,14 +4297,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3246,7 +4343,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Eine Domäne aus dem Projekt löschen
 
 ```bash
-magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3264,7 +4361,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -3289,13 +4386,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3312,14 +4402,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Antwort &quot;Ja&quot; auf Bestätigungsfragen; Akzeptieren Sie den Standardwert für andere Fragen; Interaktion deaktivieren
+
+- Standardmäßig: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3330,7 +4448,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Detaillierte Informationen für eine Domäne anzeigen
 
 ```bash
-magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -3347,14 +4465,14 @@ Die anzuzeigende Domäneneigenschaft
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -3381,20 +4499,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3415,14 +4526,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3433,7 +4572,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste aller Domänen abrufen
 
 ```bash
-magento-cloud domains [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -3443,14 +4582,14 @@ domains
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: name*, ssl*, created_at*, updated_at (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -3470,20 +4609,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3504,14 +4636,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3522,7 +4682,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Domain aktualisieren
 
 ```bash
-magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3559,7 +4719,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -3584,13 +4744,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3607,14 +4760,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3625,7 +4806,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Aktivieren einer Umgebung
 
 ```bash
-magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -3651,7 +4832,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -3682,13 +4863,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3705,14 +4879,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3723,7 +4925,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Verzweigung einer Umgebung
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
 
@@ -3776,7 +4978,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -3813,13 +5015,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3836,14 +5031,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3881,13 +5104,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -3904,14 +5120,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3922,7 +5166,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Ausführen einer authentifizierten cURL-Anfrage für die API einer Umgebung
 
 ```bash
-magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -3940,6 +5184,12 @@ Die zu verwendende Anforderungsmethode
 ### `--data`, `-d`
 
 Zu sendende Daten
+
+- Erfordert einen Wert
+
+### `--json`
+
+Zu sendende JSON-Daten
 
 - Erfordert einen Wert
 
@@ -3993,7 +5243,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4006,13 +5256,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4033,14 +5276,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4048,10 +5319,10 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 
 ## `environment:delete`
 
-Löschen einer Umgebung
+Löschen einer oder mehrerer Umgebungen
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -4062,7 +5333,7 @@ environment:deactivate
 
 ### `environment`
 
-Die zu löschenden Umgebungen. Das Zeichen % kann als Platzhalter verwendet werden. Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Die zu löschenden Umgebungen. Das Zeichen % kann als Platzhalter verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 
@@ -4070,52 +5341,59 @@ Die zu löschenden Umgebungen. Das Zeichen % kann als Platzhalter verwendet werd
 
 ### `--delete-branch`
 
-Löschen Sie die Remote-Git-Zweige.
+Löschen von Git-Zweigen (inaktive Umgebungen)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-delete-branch`
 
-Löschen Sie die Remote-Git-Verzweigungen nicht.
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--inactive`
-
-Alle inaktiven Umgebungen löschen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--merged`
-
-Alle zusammengeführten Umgebungen löschen
+Löschen Sie keine Git-Verzweigungen (inaktive Umgebungen)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--type`
 
-Umgebungstyp(en), von dem/denen gelöscht werden soll Wenn ein einzelner Wert angegeben ist, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Löschen Sie alle Umgebungen eines Typs (Hinzufügung von anderen ausgewählten Umgebungen). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
+
+- Standard: `[]`
+- Erfordert einen Wert
+
+### `--only-type`, `-t`
+
+Löschen Sie nur Umgebungen eines bestimmten Typs. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--exclude`
 
-Umgebung(en), die nicht gelöscht werden soll. Das Zeichen % kann als Platzhalter verwendet werden. Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Umgebung(en), die nicht gelöscht werden soll. Das Zeichen % kann als Platzhalter verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--exclude-type`
 
-Umgebungstyp(en), dessen Inhalt nicht gelöscht werden soll Wenn ein einzelner Wert angegeben ist, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Umgebungstyp(en), dessen Inhalt nicht gelöscht werden soll. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
+
+### `--inactive`
+
+Alle inaktiven Umgebungen löschen (Hinzufügung zu allen anderen ausgewählten Umgebungen)
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--merged`
+
+Löschen Sie alle zusammengeführten Umgebungen (Hinzufügen zu allen anderen ausgewählten Umgebungen)
+
+- Standard: `false`
+- Akzeptiert keinen Wert
 
 ### `--project`, `-p`
 
@@ -4125,7 +5403,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4156,13 +5434,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -4179,14 +5450,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4197,7 +5496,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Aktualisieren von HTTP-Zugriffseinstellungen für eine Umgebung
 
 ```bash
-magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -4233,7 +5532,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4264,13 +5563,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -4287,14 +5579,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4305,7 +5625,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Eigenschaften für eine Umgebung lesen oder festlegen
 
 ```bash
-magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -4340,14 +5660,14 @@ Das Datumsformat (als PHP-Datumsformat-Zeichenfolge)
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -4367,7 +5687,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4398,13 +5718,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -4421,14 +5734,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4439,7 +5780,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Initialisieren einer Umgebung aus einem öffentlichen Git-Repository
 
 ```bash
-magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
+magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
 
@@ -4463,7 +5804,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4494,13 +5835,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -4517,14 +5851,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4535,7 +5897,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste der Umgebungen abrufen
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -4585,21 +5947,21 @@ Sortieren in umgekehrter (absteigender) Reihenfolge
 
 ### `--type`
 
-Filtern Sie die Liste nach Umgebungstyp(en). Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern Sie die Liste nach Umgebungstyp(en). Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: id*, title*, status*, type*, created, machine_name, updated (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -4619,20 +5981,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4653,14 +6008,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4671,7 +6054,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Protokolle einer Umgebung lesen
 
 ```bash
-magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -4712,7 +6095,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4734,16 +6117,15 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4764,14 +6146,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4782,7 +6192,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Zusammenführen einer Umgebung
 
 ```bash
-magento-cloud merge [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -4804,7 +6214,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4835,13 +6245,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -4858,14 +6261,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4876,7 +6307,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Push-Code in eine Umgebung
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -4974,7 +6405,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -4997,13 +6428,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -5020,14 +6444,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5038,7 +6490,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Bereitstellung einer Umgebung
 
 ```bash
-magento-cloud redeploy [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -5054,7 +6506,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5085,13 +6537,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -5108,14 +6553,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5126,7 +6599,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Anzeigen der Beziehungen einer Umgebung
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -5161,7 +6634,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5190,13 +6663,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -5213,14 +6679,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5231,7 +6725,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Kopieren von Dateien in und aus der aktuellen Umgebung mithilfe von scp
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -5263,7 +6757,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5285,6 +6779,12 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--identity-file`, `-i`
 
 Eine SSH-Identität (privater Schlüssel) zur Verwendung
@@ -5294,13 +6794,6 @@ Eine SSH-Identität (privater Schlüssel) zur Verwendung
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5321,14 +6814,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5361,13 +6882,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -5384,14 +6898,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5402,7 +6944,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 SSH in die aktuelle Umgebung
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -5441,7 +6983,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5463,6 +7005,12 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--identity-file`, `-i`
 
 Eine SSH-Identität (privater Schlüssel) zur Verwendung
@@ -5472,13 +7020,6 @@ Eine SSH-Identität (privater Schlüssel) zur Verwendung
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5499,14 +7040,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5517,7 +7086,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Synchronisieren des Codes und/oder der Daten einer Umgebung von der übergeordneten Umgebung
 
 ```bash
-magento-cloud sync [--rebase] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -5549,7 +7118,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5580,13 +7149,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -5603,14 +7165,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5621,7 +7211,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Abrufen der öffentlichen URLs einer Umgebung
 
 ```bash
-magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -5657,7 +7247,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5670,13 +7260,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5697,14 +7280,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5715,7 +7326,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Öffnen Sie einen Tunnel zu Xdebug in der Umgebung
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -5738,7 +7349,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5760,6 +7371,12 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--identity-file`, `-i`
 
 Eine SSH-Identität (privater Schlüssel) zur Verwendung
@@ -5769,13 +7386,6 @@ Eine SSH-Identität (privater Schlüssel) zur Verwendung
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5796,14 +7406,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5814,7 +7452,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Detaillierte Informationen zu einer einzelnen Integrationsaktivität anzeigen
 
 ```bash
-magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -5842,7 +7480,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -5854,14 +7492,14 @@ Der API-Hostname des Projekts
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -5887,13 +7525,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -5910,14 +7541,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5928,7 +7587,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste der Aktivitäten für eine Integration abrufen
 
 ```bash
-magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -5949,14 +7608,14 @@ Eine Integrations-ID. Leer lassen, um aus einer Liste auszuwählen.
 
 ### `--type`
 
-Filtern von Aktivitäten nach Typ. Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern von Aktivitäten nach Typ. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--exclude-type`, `-x`
 
-Aktivitäten nach Typ ausschließen Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Aktivitäten nach Typ ausschließen Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt. Das Zeichen % kann als Platzhalter zum Ausschließen von Typen verwendet werden.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -5976,7 +7635,7 @@ Es werden nur Aktivitäten aufgelistet, die vor diesem Datum erstellt wurden
 
 ### `--state`
 
-Filtern von Aktivitäten nach Status. Wenn ein einzelner Wert angegeben wird, wird er durch Kommas oder Leerzeichen aufgeteilt.
+Filtern von Aktivitäten nach Status. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -5987,16 +7646,23 @@ Aktivitäten nach Ergebnis filtern
 
 - Erfordert einen Wert
 
+### `--incomplete`, `-i`
+
+Nur unvollständige Aktivitäten auflisten
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: id*, created*, description*, type*, state*, result*, completed (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -6023,7 +7689,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -6036,13 +7702,6 @@ Der API-Hostname des Projekts
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6063,14 +7722,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6081,7 +7768,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Protokoll für eine Integrationsaktivität anzeigen
 
 ```bash
-magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -6117,7 +7804,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -6134,13 +7821,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -6157,14 +7837,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6175,12 +7883,12 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Hinzufügen einer Integration zum Projekt
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
 
-Der Integrationstyp (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pageruty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;).
+Der Integrationstyp (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pageruty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;).
 
 - Erfordert einen Wert
 
@@ -6198,7 +7906,7 @@ Der Benutzername des Bitbucket-Servers
 
 ### `--token`
 
-Ein Zugriffstoken für die Integration
+Ein Authentifizierungs- oder Zugriffstoken für die Integration
 
 - Erfordert einen Wert
 
@@ -6211,6 +7919,12 @@ Ein Bitbucket OAuth-Verbraucherschlüssel
 ### `--secret`
 
 Ein Bitbucket OAuth-Kundengeheimnis
+
+- Erfordert einen Wert
+
+### `--license-key`
+
+Der New Relic Logs-Lizenzschlüssel
 
 - Erfordert einen Wert
 
@@ -6298,7 +8012,7 @@ Löschen von Zweigen, die nicht auf der Remote-Site vorhanden sind
 
 ### `--url`
 
-Webhook: eine URL zum Empfangen von JSON-Daten
+Die URL oder der API-Endpunkt für die Integration
 
 - Erfordert einen Wert
 
@@ -6367,6 +8081,77 @@ Der PagerDuty-Routing-Schlüssel
 
 - Erfordert einen Wert
 
+### `--category`
+
+Die Kategorie Sumo Logic , die zum Filtern verwendet wird
+
+- Erfordert einen Wert
+
+### `--index`
+
+Splunk-Index
+
+- Erfordert einen Wert
+
+### `--sourcetype`
+
+Quelltyp des Splunk-Ereignisses
+
+- Erfordert einen Wert
+
+### `--protocol`
+
+Syslog-Transportprotokoll (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+
+- Standard: `tls`
+- Erfordert einen Wert
+
+### `--syslog-host`
+
+Syslog-Relais/Collector-Host
+
+- Erfordert einen Wert
+
+### `--syslog-port`
+
+Syslog Relais/Collector Port
+
+- Erfordert einen Wert
+
+### `--facility`
+
+Syslog-Einrichtung
+
+- Standard: `1`
+- Erfordert einen Wert
+
+### `--message-format`
+
+Syslog-Nachrichtenformat (&#39;rfc3164&#39; oder &#39;rfc5424&#39;)
+
+- Standard: `rfc5424`
+- Erfordert einen Wert
+
+### `--auth-mode`
+
+Authentifizierungsmodus (&#39;prefix&#39; oder &#39;structured_data&#39;)
+
+- Standard: `prefix`
+- Erfordert einen Wert
+
+### `--auth-token`
+
+Authentifizierungstoken
+
+- Erfordert einen Wert
+
+### `--verify-tls`
+
+Ob die HTTPS-Zertifikatüberprüfung aktiviert werden soll (empfohlen)
+
+- Standard: `true`
+- Erfordert einen Wert
+
 ### `--project`, `-p`
 
 Die Projekt-ID oder URL
@@ -6375,7 +8160,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -6400,13 +8185,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -6423,14 +8201,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6441,7 +8247,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Integration aus einem Projekt löschen
 
 ```bash
-magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6458,7 +8264,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -6483,13 +8289,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -6506,14 +8305,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6524,7 +8351,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Details einer Integration anzeigen
 
 ```bash
-magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6541,14 +8368,14 @@ Die anzuzeigende Integrationseigenschaft
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -6568,20 +8395,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6602,14 +8422,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6620,7 +8468,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste der Projektintegration(n) anzeigen
 
 ```bash
-magento-cloud integrations [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -6630,14 +8478,14 @@ integrations
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: id, summary, type. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -6657,20 +8505,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6691,14 +8532,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6709,7 +8578,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Integration aktualisieren
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6720,7 +8589,7 @@ Die ID der zu aktualisierenden Integration
 
 ### `--type`
 
-Der Integrationstyp (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pageruty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;).
+Der Integrationstyp (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;webhook&#39;, &#39;health.email&#39;, &#39;health.pageruty&#39;, &#39;health.slack&#39;, &#39;health.webhook&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;).
 
 - Erfordert einen Wert
 
@@ -6738,7 +8607,7 @@ Der Benutzername des Bitbucket-Servers
 
 ### `--token`
 
-Ein Zugriffstoken für die Integration
+Ein Authentifizierungs- oder Zugriffstoken für die Integration
 
 - Erfordert einen Wert
 
@@ -6751,6 +8620,12 @@ Ein Bitbucket OAuth-Verbraucherschlüssel
 ### `--secret`
 
 Ein Bitbucket OAuth-Kundengeheimnis
+
+- Erfordert einen Wert
+
+### `--license-key`
+
+Der New Relic Logs-Lizenzschlüssel
 
 - Erfordert einen Wert
 
@@ -6838,7 +8713,7 @@ Löschen von Zweigen, die nicht auf der Remote-Site vorhanden sind
 
 ### `--url`
 
-Webhook: eine URL zum Empfangen von JSON-Daten
+Die URL oder der API-Endpunkt für die Integration
 
 - Erfordert einen Wert
 
@@ -6907,6 +8782,77 @@ Der PagerDuty-Routing-Schlüssel
 
 - Erfordert einen Wert
 
+### `--category`
+
+Die Kategorie Sumo Logic , die zum Filtern verwendet wird
+
+- Erfordert einen Wert
+
+### `--index`
+
+Splunk-Index
+
+- Erfordert einen Wert
+
+### `--sourcetype`
+
+Quelltyp des Splunk-Ereignisses
+
+- Erfordert einen Wert
+
+### `--protocol`
+
+Syslog-Transportprotokoll (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+
+- Standard: `tls`
+- Erfordert einen Wert
+
+### `--syslog-host`
+
+Syslog-Relais/Collector-Host
+
+- Erfordert einen Wert
+
+### `--syslog-port`
+
+Syslog Relais/Collector Port
+
+- Erfordert einen Wert
+
+### `--facility`
+
+Syslog-Einrichtung
+
+- Standard: `1`
+- Erfordert einen Wert
+
+### `--message-format`
+
+Syslog-Nachrichtenformat (&#39;rfc3164&#39; oder &#39;rfc5424&#39;)
+
+- Standard: `rfc5424`
+- Erfordert einen Wert
+
+### `--auth-mode`
+
+Authentifizierungsmodus (&#39;prefix&#39; oder &#39;structured_data&#39;)
+
+- Standard: `prefix`
+- Erfordert einen Wert
+
+### `--auth-token`
+
+Authentifizierungstoken
+
+- Erfordert einen Wert
+
+### `--verify-tls`
+
+Ob die HTTPS-Zertifikatüberprüfung aktiviert werden soll (empfohlen)
+
+- Standard: `true`
+- Erfordert einen Wert
+
 ### `--project`, `-p`
 
 Die Projekt-ID oder URL
@@ -6915,7 +8861,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -6940,13 +8886,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -6963,14 +8902,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6981,7 +8948,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Bestehende Integration validieren
 
 ```bash
-magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6998,20 +8965,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7032,14 +8992,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7177,13 +9165,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -7200,14 +9181,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7253,13 +9262,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -7276,14 +9278,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7315,9 +9345,169 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Die Ausführlichkeit von Nachrichten erhöhen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--yes`, `-y`
+
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no`, `-n`
+
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
 ### `--quiet`, `-q`
 
 Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+
+## `metrics:disk-usage`
+
+Anzeigen der Festplattenauslastung eines Dienstes
+
+```bash
+magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+
+```bash
+disk
+```
+
+### `--service`, `-s`
+
+Der Dienstname
+
+- Erfordert einen Wert
+
+### `--type`
+
+Der Diensttyp (wenn der Dienstname nicht angegeben ist), z. B. mysql, pgsql, mongodb usw. Die Typversion ist nicht erforderlich.
+
+- Erfordert einen Wert
+
+### `--range`, `-r`
+
+Der Zeitraum. Metriken werden für diese Dauer bis zur Endzeit (—to) geladen. Sie können Einheiten angeben: Stunden (h), Minuten (m) oder Sekunden (s). Minimum &lt;comment>5 Min.&lt;/comment>, maximum &lt;comment>8 h&lt;/comment> oder mehr (je nach Projekt), Standardeinstellung &lt;comment>10 Min.&lt;/comment>.
+
+- Erfordert einen Wert
+
+### `--interval`, `-i`
+
+Das Zeitintervall. Die Standardeinstellung ist eine Division des Bereichs. Sie können Einheiten angeben: Stunden (h), Minuten (m) oder Sekunden (s). Minimum &lt;comment>1 m&lt;/comment>, maximum &lt;comment>1 h&lt;/comment>.
+
+- Erfordert einen Wert
+
+### `--to`
+
+Endzeit. Die Standardeinstellung ist jetzt.
+
+- Erfordert einen Wert
+
+### `--bytes`, `-B`
+
+Größen in Byte anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--latest`, `-1`
+
+Nur den neuesten Datenpunkt anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--project`, `-p`
+
+Die Projekt-ID oder URL
+
+- Erfordert einen Wert
+
+### `--host`
+
+Veraltete Option, nicht mehr verwendet
+
+- Erfordert einen Wert
+
+### `--environment`, `-e`
+
+Die Umgebungs-ID
+
+- Erfordert einen Wert
+
+### `--format`
+
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
+
+- Standard: `table`
+- Erfordert einen Wert
+
+### `--columns`, `-c`
+
+Anzuzeigende Spalten. Verfügbare Spalten: timestamp*, used*, limit*, percent*, ipercent*, ilimit, interval, iused (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
+
+- Standard: `[]`
+- Erfordert einen Wert
+
+### `--no-header`
+
+Geben Sie die Tabellenüberschrift nicht aus
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--date-fmt`
+
+Das Datumsformat (als PHP-Datumsformat-Zeichenfolge)
+
+- Standard: `c`
+- Erfordert einen Wert
+
+### `--help`, `-h`
+
+Diese Hilfemeldung anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7338,14 +9528,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7356,7 +9574,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Herunterladen von Dateien von einem Rich-Rich-Rsync-Server
 
 ```bash
-magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--all`, `-a`
@@ -7421,7 +9639,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -7443,6 +9661,12 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--identity-file`, `-i`
 
 Eine SSH-Identität (privater Schlüssel) zur Verwendung
@@ -7452,13 +9676,6 @@ Eine SSH-Identität (privater Schlüssel) zur Verwendung
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7479,14 +9696,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7497,7 +9742,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste der Reittiere abrufen
 
 ```bash
-magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 
@@ -7521,14 +9766,14 @@ Ob der Cache aktualisiert werden soll
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: Definition, Pfad. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -7548,7 +9793,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -7570,16 +9815,15 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7600,14 +9844,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7618,7 +9890,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Überprüfen Sie die Festplattenauslastung der Bereitstellungen.
 
 ```bash
-magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--bytes`, `-B`
@@ -7637,14 +9909,14 @@ Cache aktualisieren
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: available, max, mounts, percent_used, size, used. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -7670,7 +9942,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -7692,16 +9964,15 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7722,14 +9993,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7740,7 +10039,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Hochladen von Dateien in eine -Bereitstellung mithilfe von Rsync
 
 ```bash
-magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--source`
@@ -7791,7 +10090,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -7813,6 +10112,12 @@ Arbeitername
 
 - Erfordert einen Wert
 
+### `--instance`, `-I`
+
+Instanz-ID
+
+- Erfordert einen Wert
+
 ### `--identity-file`, `-i`
 
 Eine SSH-Identität (privater Schlüssel) zur Verwendung
@@ -7826,13 +10131,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -7849,14 +10147,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7867,7 +10193,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Löschen des Build-Cache eines Projekts
 
 ```bash
-magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
+magento-cloud project:clear-build-cache [-p|--project PROJECT]
 ```
 
 ### `--project`, `-p`
@@ -7878,20 +10204,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7912,14 +10231,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7930,7 +10277,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Ausführen einer authentifizierten cURL-Anfrage für die API eines Projekts
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
 ```
 
 
@@ -7948,6 +10295,12 @@ Die zu verwendende Anforderungsmethode
 ### `--data`, `-d`
 
 Zu sendende Daten
+
+- Erfordert einen Wert
+
+### `--json`
+
+Zu sendende JSON-Daten
 
 - Erfordert einen Wert
 
@@ -8001,20 +10354,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8035,14 +10381,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8053,7 +10427,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Lokales Klonen eines Projekts
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--host HOST] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -8099,7 +10473,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -8112,13 +10486,6 @@ Eine SSH-Identität (privater Schlüssel) zur Verwendung
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8139,14 +10506,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8157,7 +10552,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Eigenschaften für ein Projekt lesen oder festlegen
 
 ```bash
-magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -8192,14 +10587,14 @@ Das Datumsformat (als PHP-Datumsformat-Zeichenfolge)
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -8219,7 +10614,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -8244,13 +10639,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -8267,14 +10655,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8285,7 +10701,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste aller aktiven Projekte abrufen
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 
@@ -8300,7 +10716,7 @@ pro
 
 ### `--pipe`
 
-Geben Sie eine einfache Liste von Projekt-IDs aus. Dadurch wird die Paginierung deaktiviert.
+Geben Sie eine einfache Liste von Projekt-IDs aus. Deaktiviert die Paginierung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8347,27 +10763,26 @@ Sortieren in umgekehrter (absteigender) Reihenfolge
 
 ### `--page`
 
-Seitenzahl (beginnend bei 1)
+Seitenzahl. Dies ermöglicht die Paginierung, trotz Konfiguration oder —count. Wird ignoriert, wenn —pipe angegeben ist.
 
-- Standard: `1`
 - Erfordert einen Wert
 
-### `--count`
+### `--count`, `-c`
 
-Die Anzahl der Projekte, die pro Seite angezeigt werden sollen. Die Standardeinstellung basiert auf der Terminal-Höhe. Verwenden Sie 0, um die Paginierung zu deaktivieren.
+Die Anzahl der Projekte, die pro Seite angezeigt werden sollen. Verwenden Sie 0, um die Paginierung zu deaktivieren. Wird ignoriert, wenn —page angegeben ist.
 
 - Erfordert einen Wert
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
 ### `--columns`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -8393,13 +10808,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -8416,14 +10824,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8450,13 +10886,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -8473,14 +10902,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8491,7 +10948,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VERALTET ]&lt;/> Variable aus einem Projekt löschen
 
 ```bash
-magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -8509,7 +10966,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -8534,13 +10991,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -8557,14 +11007,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8575,7 +11053,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VERALTET ]&lt;/> Anzeigen von Variablen für ein Projekt
 
 ```bash
-magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -8608,14 +11086,14 @@ Nur den vollständigen Variablenwert ausgeben (ein &quot;Name&quot;muss angegebe
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -8635,20 +11113,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8669,14 +11140,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8687,7 +11186,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VERALTET ]&lt;/> Variable für ein Projekt festlegen
 
 ```bash
-magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -8737,7 +11236,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -8762,13 +11261,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -8785,14 +11277,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8803,7 +11323,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Datei im Projekt-Repository lesen
 
 ```bash
-magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] <path>
+magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
 
@@ -8827,7 +11347,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -8840,13 +11360,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8867,14 +11380,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8885,7 +11426,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Auflisten von Dateien im Projekt-Repository
 
 ```bash
-magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -8929,7 +11470,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -8942,13 +11483,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8969,14 +11503,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8987,7 +11549,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Ordner oder Datei im Projekt-Repository lesen
 
 ```bash
-magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -9015,7 +11577,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -9028,13 +11590,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9055,14 +11610,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9073,7 +11656,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Detaillierte Informationen zu einer Route anzeigen
 
 ```bash
-magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
+magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
 
@@ -9123,7 +11706,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -9152,13 +11735,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -9175,14 +11751,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9193,7 +11797,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Alle Routen für eine Umgebung auflisten
 
 ```bash
-magento-cloud routes [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -9221,14 +11825,14 @@ Den Zwischenspeicher von Routen umgehen
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: route*, type*, to*, url (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -9248,7 +11852,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -9261,13 +11865,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9288,14 +11885,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9327,13 +11952,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -9350,14 +11968,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9387,14 +12033,14 @@ Ergebnisse pro Seite (max.: 100)
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
 ### `--columns`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: Asset, Datum, Downloads, Version. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -9420,13 +12066,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -9443,14 +12082,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9514,13 +12181,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -9537,14 +12197,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9555,7 +12243,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Auflisten von Diensten im Projekt
 
 ```bash
-magento-cloud services [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -9578,7 +12266,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -9590,14 +12278,14 @@ Die Umgebungs-ID
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: Disk, Name, Größe, Typ. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -9612,13 +12300,6 @@ Geben Sie die Tabellenüberschrift nicht aus
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9639,14 +12320,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9657,7 +12366,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Erstellen eines binären Archivierungs-Dump von Daten aus MongoDB
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9705,7 +12414,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -9728,13 +12437,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -9751,14 +12453,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9769,7 +12499,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Daten aus MongoDB exportieren
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9823,7 +12553,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -9846,13 +12576,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -9869,14 +12592,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9887,7 +12638,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Wiederherstellen eines binären Archivierungs-Dump von Daten in MongoDB
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9921,7 +12672,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -9944,13 +12695,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -9967,14 +12711,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9985,7 +12757,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 MongoDB-Shell verwenden
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -10019,7 +12791,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -10042,13 +12814,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10065,14 +12830,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10083,7 +12876,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Zugriff auf die Redis-CLI
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -10117,7 +12910,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -10140,13 +12933,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10163,14 +12949,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10197,13 +13011,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10220,14 +13027,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10238,7 +13073,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Schnappschuss einer Umgebung erstellen
 
 ```bash
-magento-cloud backup [--live] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -10277,7 +13112,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -10301,16 +13136,16 @@ Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--help`, `-h`
+### `--unsafe`
 
-Diese Hilfemeldung anzeigen
+Veraltete Option: Verwenden Sie stattdessen —live
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
+### `--help`, `-h`
 
-Keine Nachricht ausgeben
+Diese Hilfemeldung anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10331,14 +13166,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10349,7 +13212,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Verfügbare Momentaufnahmen einer Umgebung auflisten
 
 ```bash
-magento-cloud snapshots [--limit LIMIT] [--start START] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -10369,7 +13232,7 @@ backup:list
 
 ### `--limit`
 
-Anzahl der aufzulistenden Momentaufnahmen begrenzen
+[Veraltet] - Diese Option wird nicht verwendet
 
 - Erfordert einen Wert
 
@@ -10381,14 +13244,14 @@ Anzahl der aufzulistenden Momentaufnahmen begrenzen
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -10415,7 +13278,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -10428,13 +13291,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10455,14 +13311,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10473,7 +13357,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Wiederherstellen eines Umgebungs-Snapshots
 
 ```bash
-magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 
@@ -10512,7 +13396,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -10543,13 +13427,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10566,14 +13443,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10584,7 +13489,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ BETA ]&lt;/> Quellvorgang ausführen
 
 ```bash
-magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
 ```
 
 
@@ -10609,7 +13514,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -10640,13 +13545,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10663,14 +13561,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10711,13 +13637,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10734,14 +13653,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10783,13 +13730,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10806,14 +13746,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10846,13 +13814,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10869,14 +13830,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10903,13 +13892,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -10926,14 +13908,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10944,7 +13954,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Abrufen einer Liste von SSH-Schlüsseln in Ihrem Konto
 
 ```bash
-magento-cloud ssh-keys [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -10954,14 +13964,14 @@ ssh-keys
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: id*, title*, path*, fingerprint (* = Standardspalten). Das Zeichen &quot;+&quot;kann als Platzhalter für die Standardspalten verwendet werden. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -10980,13 +13990,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -11003,14 +14006,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11021,7 +14052,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Abonnementeigenschaften lesen und ändern
 
 ```bash
-magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<property>] [<value>]
+magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
 ```
 
 
@@ -11050,14 +14081,14 @@ Das Datumsformat (als PHP-Datumsformat-Zeichenfolge)
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -11077,20 +14108,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11111,14 +14135,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11129,7 +14181,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 SSH-Tunnel schließen
 
 ```bash
-magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--all`, `-a`
@@ -11147,7 +14199,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11170,13 +14222,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -11193,14 +14238,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11211,7 +14284,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Anzeigen von Beziehungsinformationen für SSH-Tunnel
 
 ```bash
-magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
 ### `--property`, `-P`
@@ -11235,7 +14308,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11253,14 +14326,14 @@ Der Name der Remote-Anwendung
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
 ### `--columns`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -11275,13 +14348,6 @@ Geben Sie die Tabellenüberschrift nicht aus
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11302,14 +14368,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11320,7 +14414,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 SSH-Tunnel auflisten
 
 ```bash
-magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -11343,7 +14437,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11361,14 +14455,14 @@ Der Name der Remote-Anwendung
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -11383,13 +14477,6 @@ Geben Sie die Tabellenüberschrift nicht aus
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11410,14 +14497,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11428,7 +14543,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 SSH-Tunnel für die Beziehungen einer App öffnen
 
 ```bash
-magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--gateway-ports`, `-g`
@@ -11446,7 +14561,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11475,13 +14590,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -11498,14 +14606,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11516,7 +14652,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Öffnen eines einzelnen SSH-Tunnels für eine App-Beziehung
 
 ```bash
-magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -11540,7 +14676,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11575,13 +14711,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -11598,14 +14727,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11616,7 +14773,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Einen Benutzer zum Projekt hinzufügen
 
 ```bash
-magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -11640,7 +14797,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11665,13 +14822,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -11688,14 +14838,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11706,7 +14884,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Benutzer aus dem Projekt löschen
 
 ```bash
-magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <email>
+magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 ```
 
 
@@ -11724,7 +14902,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11749,13 +14927,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -11772,14 +14943,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11790,7 +14989,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Benutzerrollen anzeigen
 
 ```bash
-magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
+magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
 
@@ -11825,7 +15024,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -11862,13 +15061,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -11885,14 +15077,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11903,7 +15123,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Projektbenutzer auflisten
 
 ```bash
-magento-cloud users [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -11913,14 +15133,14 @@ users
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: E-Mail, ID, Name, Rolle. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -11940,20 +15160,13 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11974,14 +15187,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -11992,7 +15233,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Benutzerrollen in einem Projekt aktualisieren
 
 ```bash
-magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -12016,7 +15257,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12024,26 +15265,19 @@ Der API-Hostname des Projekts
 
 Warten Sie nicht, bis der Vorgang abgeschlossen ist.
 
-- Standard: `false`
-- Akzeptiert keinen Wert
+- Standardmäßig: `false`
+- Akzeptieren Sie keinen Wert
 
 ### `--wait`
 
 Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 
-- Standard: `false`
-- Akzeptiert keinen Wert
+- Standardmäßig: `false`
+- Akzeptieren Sie keinen Wert
 
 ### `--help`, `-h`
 
-Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
+Anzeigen diese Hilfemeldung
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12064,14 +15298,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12082,7 +15344,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Variable erstellen
 
 ```bash
-magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 
@@ -12165,7 +15427,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12196,13 +15458,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -12219,14 +15474,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12237,7 +15520,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Variable löschen
 
 ```bash
-magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12261,7 +15544,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12292,13 +15575,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -12315,14 +15591,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12333,7 +15637,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VERALTET ]&lt;/> Eine aktivierte Umgebungsvariable deaktivieren
 
 ```bash
-magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12351,7 +15655,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12382,13 +15686,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -12405,14 +15702,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12423,7 +15748,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VERALTET ]&lt;/> Aktiviert eine deaktivierte Variable auf Umgebungsebene
 
 ```bash
-magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12441,7 +15766,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12472,13 +15797,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -12495,14 +15813,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12513,7 +15859,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Anzeigen von Variablen
 
 ```bash
-magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -12541,14 +15887,14 @@ Die Variablenebene (&quot;Projekt&quot;, &quot;Umgebung&quot;, &quot;p&quot;oder
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -12568,7 +15914,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12592,13 +15938,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -12615,14 +15954,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12633,7 +16000,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Listenvariablen
 
 ```bash
-magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -12654,14 +16021,14 @@ Die Variablenebene (&quot;Projekt&quot;, &quot;Umgebung&quot;, &quot;p&quot;oder
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: is_enabled, level, name, value. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -12681,7 +16048,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12694,13 +16061,6 @@ Die Umgebungs-ID
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12721,14 +16081,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12739,7 +16127,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ VERALTET ]&lt;/> Variable für eine Umgebung festlegen
 
 ```bash
-magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -12782,7 +16170,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12813,13 +16201,6 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Die Ausführlichkeit von Nachrichten erhöhen
@@ -12836,14 +16217,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12854,7 +16263,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Variable aktualisieren
 
 ```bash
-magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12925,7 +16334,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -12956,9 +16365,118 @@ Diese Hilfemeldung anzeigen
 - Standard: `false`
 - Akzeptiert keinen Wert
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Die Ausführlichkeit von Nachrichten erhöhen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--yes`, `-y`
+
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no`, `-n`
+
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
 ### `--quiet`, `-q`
 
 Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+
+## `version:list`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Auflisten von Umgebungsversionen
+
+```bash
+magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+
+```bash
+versions
+```
+
+### `--project`, `-p`
+
+Die Projekt-ID oder URL
+
+- Erfordert einen Wert
+
+### `--host`
+
+Veraltete Option, nicht mehr verwendet
+
+- Erfordert einen Wert
+
+### `--environment`, `-e`
+
+Die Umgebungs-ID
+
+- Erfordert einen Wert
+
+### `--format`
+
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
+
+- Standard: `table`
+- Erfordert einen Wert
+
+### `--columns`, `-c`
+
+Anzuzeigende Spalten. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
+
+- Standard: `[]`
+- Erfordert einen Wert
+
+### `--no-header`
+
+Geben Sie die Tabellenüberschrift nicht aus
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--help`, `-h`
+
+Diese Hilfemeldung anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12979,14 +16497,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -12997,7 +16543,7 @@ Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
 Liste aller entsandten Arbeitskräfte abrufen
 
 ```bash
-magento-cloud workers [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -13020,7 +16566,7 @@ Die Projekt-ID oder URL
 
 ### `--host`
 
-Der API-Hostname des Projekts
+Veraltete Option, nicht mehr verwendet
 
 - Erfordert einen Wert
 
@@ -13032,14 +16578,14 @@ Die Umgebungs-ID
 
 ### `--format`
 
-Das Ausgabeformat (&quot;table&quot;, &quot;csv&quot;, &quot;tsv&quot;oder &quot;plain&quot;)
+Das Ausgabeformat: Tabelle, CSV, TSV oder einfach
 
 - Standard: `table`
 - Erfordert einen Wert
 
-### `--columns`
+### `--columns`, `-c`
 
-Anzuzeigende Spalten (kommagetrennte Liste oder mehrere Werte)
+Anzuzeigende Spalten. Verfügbare Spalten: Befehle, Name, Typ. Wenn eine Liste als einzelner Wert angegeben wird (z. B. &quot;a,b,c&quot;) wird es durch Kommas und/oder Leerzeichen aufgeteilt.
 
 - Standard: `[]`
 - Erfordert einen Wert
@@ -13054,13 +16600,6 @@ Geben Sie die Tabellenüberschrift nicht aus
 ### `--help`, `-h`
 
 Diese Hilfemeldung anzeigen
-
-- Standard: `false`
-- Akzeptiert keinen Wert
-
-### `--quiet`, `-q`
-
-Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -13081,14 +16620,42 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antworten Sie auf alle Ja-/Nein-Fragen mit &quot;Ja&quot;; Deaktivieren der Interaktion
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`
+
+keine interaktiven Fragen stellen; Standardwerte akzeptieren. Entspricht der Verwendung der Umgebungsvariablen: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;nein&quot; auf alle Ja/Nein-Fragen; Deaktivieren der Interaktion
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
