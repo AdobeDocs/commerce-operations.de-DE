@@ -1,11 +1,10 @@
 ---
 title: system.xml-Referenz
 description: Erfahren Sie, wie die XML-Systemdatei die Konfiguration der Commerce-Anwendung verwaltet.
-contributor_name: David Lambauer
-contributor_link: https://github.com/DavidLambauer
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+badge: label="Contributated by David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2685'
 ht-degree: 0%
 
 ---
@@ -385,7 +384,7 @@ Die folgenden Validierungsregeln sind verfügbar:
 | `integer` | Ermöglicht eine positive oder negative nicht-Dezimalzahl. |
 | `ipv4` | Ermöglicht eine gültige IP-v4-Adresse. |
 | `ipv6` | Ermöglicht eine gültige IP v6-Adresse. |
-| `letters-only` | Ermöglicht nur Briefe. Beispiel, `abcABC`. |
+| `letters-only` | Ermöglicht nur Briefe. Beispiel: `abcABC`. |
 | `letters-with-basic-punc` | Ermöglicht nur Briefe oder Satzzeichen.<br>Muss den folgenden Ausdruck übergeben: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | Ermöglicht eine (UK)-Mobiltelefonnummer. |
 | `no-marginal-whitespace` | Deaktiviert Leerzeichen am Anfang oder Ende des Werts. |

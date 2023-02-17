@@ -1,11 +1,10 @@
 ---
 title: Varnischer ESI-Block
 description: Erfahren Sie mehr über Edge Side Includes und wie Sie sie zum Einbetten von Webseiten verwenden können.
-contributor_name: Goivvy LLC
-contributor_link: https://www.goivvy.com/magento-optimization-service
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
+source-git-commit: 90544452f5f0834e096ead6ea3df64dcb5eaea11
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---

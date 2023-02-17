@@ -1,11 +1,10 @@
 ---
 title: Security.txt
 description: Erfahren Sie, wie Sie Informationen bereitstellen, die Sicherheitsexperten bei der Meldung von Sicherheitslücken unterstützen.
-contributor_name: Kalpesh Mehta from Corra
-contributor_link: https://partners.magento.com/portal/details/partner/id/70/
-source-git-commit: 27c3914540a0574fa4ff58df50d5cd2c71fb6670
+badge: label="Contributed by Kalpesh Mehta from Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
+source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
