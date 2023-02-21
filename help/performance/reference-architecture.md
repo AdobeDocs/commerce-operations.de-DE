@@ -1,7 +1,7 @@
 ---
 title: Referenzarchitektur
 description: Überprüfen Sie Diagramme der empfohlenen Referenzarchitektur für Adobe Commerce- und Magento Open Source-Implementierungen.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Die folgenden Abschnitte enthalten Empfehlungen und Überlegungen zu jedem Absch
 * Erwägen Sie die Verwendung einer Slave-DB, um eine schnelle Wiederherstellung und Datensicherungen zu ermöglichen
 * Sites mit geringem Traffic können Bilder in der DB speichern
 
-### Suche
+### Suche {#search-heading}
 
 * Anzahl der Instanzen auf Grundlage des Suchverkehrs anpassen
 
