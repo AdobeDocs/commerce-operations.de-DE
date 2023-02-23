@@ -1,7 +1,7 @@
 ---
-source-git-commit: 608c98818243557fe9c1f7dffceb23641b858fa5
+source-git-commit: 9b27ce148570b9480c4a1373c6b82c401742fd88
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -828,18 +828,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Catalog Service</th>
     </tr>
     <tr>
+      <td>Catalog Service 1.4</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Catalog Service 1.3</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
       <td>Catalog Service 1.1</td>
       <td>Unterstützt</span>
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -864,13 +926,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -1401,18 +1463,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Live Search</th>
     </tr>
     <tr>
+      <td>Live Search 2.0.5</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 2.0.4</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
       <td>Live Search 2.0.3</td>
       <td>Unterstützt</span>
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -1437,13 +1561,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -2377,18 +2501,173 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Quick Checkout</th>
     </tr>
     <tr>
+      <td>Quick Checkout 1.7.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Quick Checkout 1.6.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Quick Checkout 1.5.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Quick Checkout 1.4.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Quick Checkout 1.3.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
       <td>Quick Checkout 1.2.0</td>
       <td>Unterstützt</span>
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -2511,34 +2790,65 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Produkt-Recommendations</th>
     </tr>
     <tr>
+      <td>Produkt Recommendations 4.0.1</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
       <td>Product Recommendations 4.0.0</td>
       <td>Unterstützt</span>
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
-      <td>Unterstützt</span>
+      <td>Nicht unterstützt</span>
       </td>
     </tr>
     <tr>
