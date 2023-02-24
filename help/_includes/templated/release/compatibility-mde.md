@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9b27ce148570b9480c4a1373c6b82c401742fd88
+source-git-commit: 2bb3c8545e271cbc7ba16f7f8bdf027fad4da936
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2444'
 ht-degree: 0%
 
 ---
@@ -833,13 +833,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -864,13 +864,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -895,13 +895,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -926,13 +926,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -1468,13 +1468,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -1499,13 +1499,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -1530,13 +1530,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -1561,13 +1561,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -2795,13 +2795,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
@@ -2826,13 +2826,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
-      <td>Nicht unterstützt</span>
+      <td>Kompatibel</span>
       </td>
       <td>Nicht unterstützt</span>
       </td>
