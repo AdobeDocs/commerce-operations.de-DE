@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
-source-git-commit: 76ff1bbcc3a1ca8f73dfdd2ba4f516a201986f62
+source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
 workflow-type: tm+mt
-source-wordcount: '10848'
+source-wordcount: '11145'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.28 {#v1-1-28}
+
+* **ACSD-48204** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.3) - Behebung des Problems, bei dem eine auf dem Attribut Ja/Nein basierende Katalogpreisregel den ausgewählten Umfang nicht berücksichtigt.
+* **ACSD-47704** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem das gebündelte Produkt nur den Preis von in Lagerprodukten anzeigt.
+* **ACSD-49370** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem die *Datum/Uhrzeit* Das Produktattribut enthält *FilterMatchTypeInput* in das GraphQL-Schema ein.
+* **ACSD-48807** (für Adobe Commerce und Magento Open Source >=2.4.1 &lt;2.4.7) - Behebung des Problems, bei dem Kundenproduktüberprüfungen nicht durch die Storeübersicht über GraphQL gefiltert werden.
+* **ACSD-49433** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem der Standardbetrag als Zwischensumme im Warenkorb für Geschenkkarten mit einem offenen Betrag angezeigt wird.
+* **ACSD-48866** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem ein Fehler auftritt, wenn RSS-Dienste für Kategorien angefordert werden.
+* **ACSD-48784** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem die Kundensegmentpreise fälschlicherweise zwischen Kundengruppen zwischengespeichert wurden.
+* **ACSD-48857** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem ein Benutzer nach der Bearbeitung mit Page Builder keine Änderungen speichern kann.
+* **ACSD-49065** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Anführungselemente im Admin nicht sichtbar sind, wenn sie nur dem benutzerdefinierten Lager zugewiesen sind.
+* **ACSD-49179** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem im Bestellbericht falsche Beträge angezeigt werden, wenn verschiedene Währungen für verschiedene Geschäfte verwendet werden.
+* **ACSD-49286** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem ein Produkt einem Warenkorb zweimal hinzugefügt wird, wenn mehrere Produkt-Widgets auf der Seite vorhanden sind.
+* **ACSD-49574** (für Adobe Commerce >=2.4.4 &lt;2.4.7) - Fügt Funktionen hinzu, um GitCard-Produktupdates in einem Warenkorb über GraphQL zu unterstützen.
+* Aktualisierter Patch: ACSD-48694.
 
 ## v1.1.27 {#v1-1-27}
 
