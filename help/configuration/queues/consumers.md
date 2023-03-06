@@ -1,9 +1,9 @@
 ---
 title: Verbraucher in der Nachrichtenwarteschlange
 description: Erfahren Sie mehr über die Kunden von Adobe Commerce- und Magento Open Source-Nachrichten-Warteschlangen, einschließlich der damit verbundenen Funktionen und Systemkonfigurationseinstellungen.
-source-git-commit: 2eecaab32b090cfd3c1a8e8832027d3531cf0edc
+source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -71,5 +71,7 @@ In der folgenden Tabelle werden alle Verbraucher in der Nachrichtenwarteschlange
 | Aktualisiert den Preis für jedes Produkt in einem freigegebenen Katalog. Erforderlich, wenn die [**[!UICONTROL Shared Catalogs]**](https://docs.magento.com/user-guide/catalog/catalog-shared.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |  |  |  |
 | `quoteItemCleaner` | + | + |  |
 | Löscht ungültige oder inaktive Preisangebote, wenn ein Produkt aus dem Katalog gelöscht oder aus dem Warenkorb entfernt wird. Erforderlich, wenn die [**[!UICONTROL Quotes]**](https://docs.magento.com/user-guide/sales/quotes.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |  |  |  |
+| `sales.rule.quote.trigger.recollect` | + | + | + |
+| Aktualisiert aktive Warenkörbe, um die Änderungen der Preisregel für den Warenkorb widerzuspiegeln. Erforderlich für die Aktualisierung [**[!UICONTROL Catalog price rules]**](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog.html). |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
