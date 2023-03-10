@@ -1,9 +1,9 @@
 ---
 title: Systemanforderungen
 description: Verwenden Sie diese Referenz, um erforderliche Softwareabhängigkeiten zu identifizieren, die mit Adobe Commerce- und Magento Open Source-Versionen getestet wurden.
-source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
+source-git-commit: 61a477ec6118e4a228ddbb956e613fa3bec9c91c
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -67,15 +67,15 @@ Die Aktualisierung der Anwendungen und Erweiterungen, die Sie über das Commerce
 
 Adobe Commerce und Magento Open Source benötigen für einige Vorgänge die folgenden Systemwerkzeuge:
 
-- [Bash](https://www.gnu.org/software/bash/)
-- [gzip](https://www.gzip.org/)
-- [lsof](https://linux.die.net/man/8/lsof)
-- [mysql](https://www.mysql.com/)
-- [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
-- [nett](https://linux.die.net/man/1/nice)
-- [php](https://www.php.net/)
-- [sed](https://www.gnu.org/software/sed/manual/sed.html)
-- [tar](https://linux.die.net/man/1/tar)
+- [[!DNL bash]](https://www.gnu.org/software/bash/)
+- [[!DNL gzip]](https://www.gzip.org/)
+- [[!DNL lsof]](https://linux.die.net/man/8/lsof)
+- [[!DNL mysql]](https://www.mysql.com/)
+- [[!DNL mysqldump]](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)
+- [[!DNL nice]](https://linux.die.net/man/1/nice)
+- [[!DNL php]](https://www.php.net/)
+- [[!DNL sed]](https://www.gnu.org/software/sed/manual/sed.html)
+- [[!DNL tar]](https://linux.die.net/man/1/tar)
 
 ### SSL
 
