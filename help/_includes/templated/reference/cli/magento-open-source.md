@@ -1,7 +1,7 @@
 ---
-source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
+source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
 workflow-type: tm+mt
-source-wordcount: '17239'
+source-wordcount: '17238'
 ht-degree: 0%
 
 ---
@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 2.4.6-beta2
+**Version**: 2,4,6
 
 Diese Referenz enthält 114 Befehle, die über das `bin/magento` Befehlszeilen-Tool.
 Die anfängliche Liste wird automatisch mit der Variablen `bin/magento list` -Befehl an der Edition.
