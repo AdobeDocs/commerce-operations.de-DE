@@ -1,9 +1,9 @@
 ---
 title: Sensible und systemspezifische Pfade
 description: Sehen Sie sich eine Liste systemspezifischer und sensibler Konfigurationswerte an.
-source-git-commit: 019d638403f2dc3e170a56842335da203126d8a6
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3702'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Nur HTTP verwenden | `web/cookie/cookie_httponly` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Cookie-Einschränkungsmodus | `web/cookie/cookie_restriction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Währungseinrichtung - sensible und systemspezifische Pfade
 
@@ -63,7 +63,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Fehler-E-Mail-Empfänger | `currency/import/error_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### E-Mail-Adressen-sensible und systemspezifische Pfade speichern
 
@@ -82,7 +82,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Absendername | `trans_email/ident_custom2/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Absender-E-Mail | `trans_email/ident_custom2/email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Kontaktaufnahme mit sensiblen und systemspezifischen Pfaden
 
@@ -94,22 +94,22 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Email Sender | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Email Template | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Neue für die Berichterstattung sensible und systemspezifische Pfade
+### New Relic meldet sensible und systemspezifische Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Neue zuverlässige Berichterstellung**.
+Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **New Relic Reporting**.
 
 | Name | Konfigurationspfad | Nur Commerce? | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
-| Neue reine Konto-ID | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Neue relative Anwendungs-ID | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Neuer relativer API-Schlüssel | `newrelicreporting/general/api` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| New Relic-Konto-ID | `newrelicreporting/general/account_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| New Relic-Anwendungs-ID | `newrelicreporting/general/app_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| New Relic API-Schlüssel | `newrelicreporting/general/api` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Insights-API-Schlüssel | `newrelicreporting/general/insights_insert_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Neue relative API-URL | `newrelicreporting/general/api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| New Relic API-URL | `newrelicreporting/general/api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Insights-API-URL | `newrelicreporting/general/insights_api_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kunden haben kategoriesensitive und systemspezifische Pfade
 
@@ -123,7 +123,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Standard-E-Mail-Domain | `customer/create_account/email_domain` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Katalogkategorie
 
@@ -149,8 +149,22 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Elasticsearch HTTP-Benutzername | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch-HTTP-Kennwort | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch Server Timeout | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP-Benutzername | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Elasticsearch-HTTP-Kennwort | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Elasticsearch Server Timeout | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| Hostname des OpenSearch-Servers | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch-Server-Port | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch-Indexpräfix | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| OpenSearch HTTP Auth aktivieren | `catalog/search/opensearch_enable_auth` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| OpenSearch HTTP-Benutzername | `catalog/search/opensearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| OpenSearch HTTP-Kennwort | `catalog/search/opensearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
+| OpenSearch Server-Timeout | `catalog/search/opensearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> |  | !![Sys-specific]({{ site.baseurl }}/common/images/cloud_env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
+
+>[!NOTE]
+>
+>In Adobe Commerce 2.4.6 wurden OpenSearch-Einstellungen eingeführt.
 
 ### Bestandsbezogene und systemspezifische Pfade
 
@@ -160,7 +174,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Google-API-Schlüssel | `cataloginventory/source_selection_distance_based_google/api_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### XML-Sitemap-sensible und systemspezifische Pfade
 
@@ -170,7 +184,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Fehler-E-Mail-Empfänger | `sitemap/generate/error_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verkaufskategorie
 
@@ -190,7 +204,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Straße, Adresszeile 2 | `shipping/origin/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Live-Konto | `carriers/ups/is_account_live` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### E-Mails für Vertrieb - sensible und systemspezifische Pfade
 
@@ -208,7 +222,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | E-Mail-Kopie für Kommentar-Benachrichtigung an senden | `sales_email/creditmemo_comment/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Abruf bereit-E-Mail-Kopie senden an | `sales_email/temando_pickup/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Auschecken sensibler und systemspezifischer Pfade
 
@@ -218,7 +232,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Zahlungsfehler bei E-Mail-Kopie an senden | `checkout/payment_failed/copy_to` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Von der Google API abhängige und systemspezifische Pfade
 
@@ -228,7 +242,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Container-ID | `google/analytics/container_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Versandmethoden - sensible und systemspezifische Pfade
 
@@ -259,7 +273,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Gateway-URL | `carriers/dhl/gateway_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Sandbox-Modus | `carriers/fedex/sandbox_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Verkaufssensitive und systemspezifische Pfade
 
@@ -279,7 +293,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | RMA-Kommentar-E-Mail-Kopie an senden | `sales_email/magento_rma_comment/copy_to` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | RMA-Kommentar-E-Mail-Kopie an senden | `sales_email/magento_rma_customer_comment/copy_to` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Google API-Pfade
 
@@ -289,7 +303,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Kontonummer | `google/analytics/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Erweiterte Kategorie
 
@@ -304,7 +318,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Benutzerdefinierte Admin-URL | `admin/url/custom` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Benutzerdefinierter Admin-Pfad | `admin/url/custom_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Systembezogene und systemspezifische Pfade
 
@@ -316,7 +330,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Zugriffsliste | `system/full_page_cache/varnish/access_list` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Fehler-E-Mail-Absender | `system/magento_scheduled_import_export_log/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Entwicklerbezogene und systemspezifische Pfade
 
@@ -326,7 +340,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Zulässige IP-Adressen (durch Kommas getrennt) | `dev/restrict/allow_ips` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Erweiterte Kategorie
 
@@ -343,7 +357,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Backend-Host | `system/full_page_cache/varnish/backend_host` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Backend-Port | `system/full_page_cache/varnish/backend_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Entwicklerpfade
 
@@ -353,7 +367,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | JS-Fehler beim Sitzungsspeicherschlüssel protokollieren | `dev/js/session_storage_key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Zahlungskritische und systemspezifische Pfade
 
@@ -365,7 +379,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 |--------------|--------------|--------------|--------------|
 | Handelsland | `paypal/general/merchant_country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!INFO]
 >
@@ -386,7 +400,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Debug-Modus | `payment/paypal_billing_agreement/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | SFTP-Anmeldedaten | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payflow Pro - sensible und systemspezifische Pfade
 
@@ -405,7 +419,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | SFTP-Anmeldedaten | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/settings_paypal_payflow_advanced/paypal_payflow_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Kreditkarteneinstellungen | `payment_all_paypal/paypal_payflowpro/settings_paypal_payflow/heading_cc` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payflow Link - sensible und systemspezifische Pfade
 
@@ -422,7 +436,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Debug-Modus | `payment/payflow_express/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | SFTP-Anmeldedaten | `payment_all_paypal/payflow_link/settings_payflow_link/settings_payflow_link_advanced/payflow_link_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payments Pro - sensible und systemspezifische Pfade
 
@@ -437,7 +451,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Sandbox-Modus | `paypal/wpp/sandbox_flag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | SFTP-Anmeldedaten | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### PayPal Payments Pro Gehostete sensible und systemspezifische Pfade
 
@@ -447,7 +461,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | SFTP-Anmeldedaten | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | SFTP-Anmeldedaten | `payment_au/paypal_group_all_in_one/payments_pro_hosted_solution_au/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_sftp` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Braintree- und systemspezifische Pfade
 
@@ -462,7 +476,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Telefon | `payment/braintree/descriptor_phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | URL | `payment/braintree/descriptor_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Überprüfen/Money-Bestellpfade
 
@@ -471,7 +485,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Prüfung senden an | `payment/checkmo/mailing_address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Prüfung senden an | `payment_us/checkmo/mailing_address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Internationale Pfade
 
@@ -864,4 +878,4 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Remote Admin Installation ID | `payment_it/worldpay/admin_installation_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | MD5-Geheimnis für Transaktionen | `payment_it/worldpay/md5_secret` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

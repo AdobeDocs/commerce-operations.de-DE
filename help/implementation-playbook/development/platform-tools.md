@@ -2,9 +2,9 @@
 title: Plattform-Tools
 description: Wählen Sie die empfohlenen Plattformtools für Ihre Adobe Commerce-Implementierung aus.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Es wird dringend empfohlen, Varnish als vollseitigen Cache-Server für Ihren Sto
 
 ## Suchdienste
 
-Für Adobe Commerce Version 2.4 und höher müssen alle Installationen so konfiguriert sein, dass Elasticsearch als Katalogsuchlösung verwendet wird. Elasticsearch bietet eine schnelle und erweiterte Suche nach Produkten im Katalog. Elasticsearch ist für Versionen vor 2.4 optional, wird jedoch empfohlen.
+Für Adobe Commerce Version 2.4 und höher müssen alle Installationen so konfiguriert sein, dass Elasticsearch oder OpenSearch als Katalogsuchlösung verwendet wird. Elasticsearch bietet eine schnelle und erweiterte Suche nach Produkten im Katalog. Elasticsearch ist für Versionen vor 2.4 optional, wird jedoch empfohlen.
 
 ## Nachrichtenwarteschlangendienste
 

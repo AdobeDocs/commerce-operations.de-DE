@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie eine Checkliste für Upgrades erstellen und v
 role: Leader
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 644970b350c7591896f7c00d4c94661c76495c73
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 ▢
 
-- Partner nimmt an [Beta](../../../release/beta-program.md)
+- Partner nimmt an [Beta](../../../release/beta.md)
 - Versionshinweise zur Beta-Version
 
 ▢ Einigung über Budget, Zeitplan und Umfang.

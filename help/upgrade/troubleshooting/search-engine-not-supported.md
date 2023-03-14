@@ -1,9 +1,9 @@
 ---
 title: Aktuelle Suchmaschine wird nicht unterstützt
 description: Führen Sie eine Fehlerbehebung bei Ihrem Adobe Commerce- oder Magento Open Source-Upgrade durch, nachdem ein Fehler bezüglich einer nicht unterstützten Suchmaschine aufgetreten ist.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Verwenden Sie den folgenden Befehl, um die aktuelle Suchmaschine zu überprüfen
 bin/magento config:show catalog/search/engine
 ```
 
-Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql` oder `elasticsearch`.
+Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql`, `elasticsearch`oder `elasticsearch6`.
 
 >[!WARNING]
 >
@@ -44,7 +44,7 @@ Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql` oder `elasticsearch`
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Wo `<version>` ist die Version des Magentos, das Sie ausgeführt haben **before** das Upgrade. Beispiel, `2.3.5`.
+>Wo `<version>` ist die Version des Magentos, das Sie ausgeführt haben **before** das Upgrade. Beispiel: `2.3.5`.
 
 Befolgen Sie die in den folgenden Abschnitten beschriebenen Richtlinien, um sich von einem inkonsistenten Zustand zu erholen.
 
@@ -54,14 +54,14 @@ Vor 2.4 war MySQL die Standard-Katalogsuchmaschine, aber MySQL wird in dieser Ei
 
 Verwenden Sie die folgenden Ressourcen, um Sie durch diesen Prozess zu führen:
 
-- [Installieren und Konfigurieren von Elasticsearch](../../configuration/search/overview-search.md)
-- [Installieren von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Konfigurieren von Elasticsearch für die Verwendung mit [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) oder [Apache](../../installation/prerequisites/search-engine/configure-apache.md)
-- [Elasticsearch konfigurieren](../../configuration/search/configure-search-engine.md)
+- [Installieren und Konfigurieren des Suchsystems](../../configuration/search/overview-search.md)
+- [Suchmaschinenkonfiguration](../../configuration/search/configure-search-engine.md)
 
 Nachdem Sie die Suchmaschine und die Neuindizierung konfiguriert haben, können Sie auf Version 2.4 aktualisieren.
 
 ## Wenn Ihre Suchmaschine `elasticsearch`
+
+Elasticsearch 6 und frühere Versionen werden nicht mehr unterstützt.
 
 Ein Wert von `elasticsearch` zeigt an, dass Ihre heruntergestufte Version von Adobe Commerce oder Magento Open Source für die Verwendung von Elasticsearch 2.x konfiguriert ist. Diese Version von Elasticsearch wird nicht mehr unterstützt.
 

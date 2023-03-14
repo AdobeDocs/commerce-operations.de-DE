@@ -2,9 +2,9 @@
 title: Übersicht über die Cloud-Infrastruktur
 description: Erfahren Sie mehr über Adobe Commerce in der Cloud-Infrastruktur.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Eine der beliebtesten Managed Hosting-Optionen für Adobe Commerce auf AWS wird 
 
 Adobe Commerce on Cloud Infrastructure ist ein Plattform-as-a-Service-Angebot, das eine schnelle Bereitstellung vollständig anpassbarer, sicherer und skalierbarer Web-Storefronts sowie einer führenden Hosting- und Managed Services-Infrastruktur ermöglicht. Es bietet zwei Pläne mit unterschiedlichen Infrastrukturen. Adobe Commerce Starter eignet sich am besten für kleinere Geschäfte mit weniger Komplexität und kleineren Katalogen. Adobe Commerce Pro wurde für größere Geschäfte mit größerer Komplexität, größeren Produktkatalogen oder Traffic mit Spitzenwerten entwickelt. Adobe Commerce wird die geeignete Architektur mit den Beiträgen von Partnern bestimmen.
 
-Adobe Commerce ist Cloud-fähig mit einer vollständig redundanten Multi-Cloud-Hosting-Infrastruktur, die optimale Leistung, Ausfallsicherheit und elastische Skalierbarkeit bietet. Sie können Ihre Commerce-Plattform effizient im Content Delivery Network (CDN) von Fastly ausführen. Mit New Relic für Überwachung und Verwaltung können Sie Ihre Store-Umgebung reibungslos laufen lassen.
+Adobe Commerce ist Cloud-fähig mit einer vollständig redundanten Multi-Cloud-Hosting-Infrastruktur, die optimale Leistung, Ausfallsicherheit und elastische Skalierbarkeit bietet. Sie können Ihre Commerce-Plattform effizient über das Content Delivery Network (CDN) von Fastly ausführen. Mit New Relic für die Überwachung und Verwaltung können Sie Ihre Store-Umgebung reibungslos laufen lassen.
 
 Adobe Commerce bietet alle Vorteile des modernen Cloud-Computing, das am häufigsten mit SaaS-Lösungen in Verbindung gebracht wird: Elastische Skalierbarkeit, hohe Ausfallsicherheit und Verfügbarkeit, PCI-Compliance, globale Verfügbarkeit und automatisiertes Patchen bei gleichzeitiger Beibehaltung der Flexibilität bei der Softwareanpassung, die unsere Händler benötigen.
 
@@ -43,12 +43,12 @@ Sehen wir uns auch die Software an, die die Vorteile von Adobe Commerce Wirklich
 
 - Fastly CDN: Wenn Kunden auf Ihre Site und Ihre Stores zugreifen, drücken Sie schnell die Anforderungen, um zwischengespeicherte Seiten schneller zu laden. Fastly WAF bietet auch einen DDoS-Schutz.
 
-- New Relic gibt Ihnen einen vollständigen Überblick über Ihre Anwendungen und Betriebsumgebungen. Sie können damit Schlüsselmetriken aus mobilen und Browser-Anwendungen mit unterstützenden Diensten, Datenspeichern und Hosts kombinieren, damit Sie die Leistung ganzheitlich optimieren und den Erfolg jeder Initiative sicherstellen können.
+- New Relic bietet Ihnen einen vollständigen Überblick über Ihre Anwendungen und Betriebsumgebungen. Sie können damit Schlüsselmetriken aus mobilen und Browser-Anwendungen mit unterstützenden Diensten, Datenspeichern und Hosts kombinieren, damit Sie die Leistung ganzheitlich optimieren und den Erfolg jeder Initiative sicherstellen können.
 
 - Der Composer verwaltet Abhängigkeiten und Aktualisierungen in Adobe Commerce und bietet Kontext zu den enthaltenen Paketen, was die Pakete tun und wie sie zusammenpassen.
 
 - Git ist Ihr Code in Repositorys. Es ermöglicht lokales Verzweigen, bequeme Staging-Bereiche und mehrere Workflows mit automatischem Erstellen und Bereitstellen für eine effiziente schnelle Entwicklung und kontinuierliche Bereitstellung.
 
-- Platform-as-a-Service (PAs) bietet eine vorkonfigurierte Infrastruktur, die PHP, MySQL, Redis, [!DNL RabbitMQ]und Elasticsearch-Technologien.
+- Platform-as-a-Service (PAs) bietet eine vorkonfigurierte Infrastruktur, die PHP, MySQL, Redis, [!DNL RabbitMQ], und OpenSearch- oder Elasticsearch-Technologien.
 
 - Das Cloud-Hosting von AWS oder Azure basiert auf Infrastruktur-as-a-Service (IAAS), das eine skalierbare und sichere Umgebung für Online-Verkäufe und -Einzelhandel bietet.

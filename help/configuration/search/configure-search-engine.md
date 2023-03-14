@@ -1,9 +1,9 @@
 ---
 title: Suchmaschinenkonfiguration
-description: Konfigurieren Sie eine Suchmaschine mit Adobe Commerce und Magento Open Source.
-source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
+description: Konfigurieren Sie eine Suchmaschine für lokale Bereitstellungen von Adobe Commerce und Magento Open Source.
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -11,29 +11,38 @@ ht-degree: 0%
 
 # Suchmaschinenkonfiguration
 
-In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie zum Testen von Elasticsearch oder OpenSearch mit Adobe Commerce und Magento Open Source auswählen müssen. Ab den Versionen 2.4.4 und 2.4.3-p2 werden alle Felder mit der Beschriftung **Elasticsearch** gilt auch für OpenSearch.
+In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie zum Testen von Elasticsearch oder OpenSearch mit lokalen Implementierungen von Adobe Commerce und Magento Open Source auswählen müssen.
+
+>[!TIP]
+>
+>In den Versionen 2.4.4 und 2.4.3-p2 werden alle Felder mit der Beschriftung **Elasticsearch** gilt auch für OpenSearch.
+>Als die Unterstützung für Elasticsearch 8.x in Version 2.4.6 eingeführt wurde, wurden neue Bezeichnungen erstellt, um zwischen Elasticsearch- und OpenSearch-Konfigurationen zu unterscheiden.
 
 Weitere Informationen zum Konfigurieren der Suchmaschine finden Sie in der [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Konfigurieren der Suchmaschine über den Administrator
 
+>[!TIP]
+>
+>Anweisungen zum Upgrade auf eine neue Suchmaschinenversion finden Sie unter [Upgrade-Voraussetzungen](../../upgrade/prepare/prerequisites.md).
+
 So konfigurieren Sie Ihr System für die Verwendung von Elasticsearch oder OpenSearch:
 
 1. Melden Sie sich bei Admin als Administrator an.
-1. Klicken **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Katalog** > **Katalogsuche**.
-1. Aus dem **Suchmaschine** die entsprechende Version Ihrer Suchmaschine auswählen. Wenn Sie OpenSearch verwenden, müssen Sie Elasticsearch7 auswählen.
+1. Klicken **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
+1. Aus dem **[!UICONTROL Search Engine]** auswählen, wählen Sie die entsprechende Version Ihrer Suchmaschine aus.
 
-   In der folgenden Tabelle sind die erforderlichen Konfigurationsoptionen zum Konfigurieren und Testen der Verbindung mit Commerce aufgeführt.
-Sofern Sie die Servereinstellungen Ihrer Suchmaschine nicht geändert haben, sollten die Standardeinstellungen funktionieren. Fahren Sie mit dem nächsten Schritt fort.
+   In der folgenden Tabelle sind die erforderlichen Optionen zum Konfigurieren und Testen der Verbindung mit Commerce aufgeführt. Sofern Sie die Servereinstellungen Ihrer Suchmaschine nicht geändert haben, sollten die Standardeinstellungen funktionieren. Fahren Sie mit dem nächsten Schritt fort.
 
    | Option | Beschreibung |
    |--- |--- |
-   | **Hostname des Elasticsearch-Servers** | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce über Cloud-Infrastruktur: Rufen Sie diesen Wert von Ihrem Integrationssystem ab. |
-   | **Elasticsearch-Server-Port** | Geben Sie den Proxyanschluss des Webservers ein. Der Standardwert ist 9200.<br>Adobe Commerce über Cloud-Infrastruktur: Rufen Sie diesen Wert von Ihrem Integrationssystem ab. |
-   | **Elasticsearch-Indexpräfix** | Geben Sie das Suchmaschinen-Indexpräfix ein. Wenn Sie eine einzelne Instanz für mehr als eine Commerce-Installation verwenden (Staging- und Produktionsumgebungen), müssen Sie für jede Installation ein eindeutiges Präfix angeben. Andernfalls können Sie das standardmäßige Präfix magento2 verwenden. |
-   | **Aktivieren der Elasticsearch-HTTP-Autorisierung** | Klicken **Ja** nur dann, wenn Sie die Authentifizierung für Ihren Suchmaschinenserver aktiviert haben. Wenn ja, geben Sie in den angegebenen Feldern einen Benutzernamen und ein Kennwort ein. |
+   | **[!UICONTROL Server Hostname]** | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce über Cloud-Infrastruktur: Rufen Sie diesen Wert von Ihrem Integrationssystem ab. |
+   | **[!UICONTROL Server Port]** | Geben Sie den Proxyanschluss des Webservers ein. Der Standardwert ist 9200.<br>Adobe Commerce über Cloud-Infrastruktur: Rufen Sie diesen Wert von Ihrem Integrationssystem ab. |
+   | **[!UICONTROL Index Prefix]** | Geben Sie das Suchmaschinen-Indexpräfix ein. Wenn Sie eine einzelne Instanz für mehr als eine Commerce-Installation verwenden (Staging- und Produktionsumgebungen), müssen Sie für jede Installation ein eindeutiges Präfix angeben. Andernfalls können Sie das standardmäßige Präfix magento2 verwenden. |
+   | **[!UICONTROL Enable HTTP Auth]** | Klicken **[!UICONTROL Yes]** nur dann, wenn Sie die Authentifizierung für Ihren Suchmaschinenserver aktiviert haben. Wenn ja, geben Sie in den angegebenen Feldern einen Benutzernamen und ein Kennwort ein. |
+   | **[!UICONTROL Server Timeout]** | Geben Sie die Wartezeit (in Sekunden) ein, wenn Sie versuchen, eine Verbindung zum Elasticsearch- oder OpenSearch-Server herzustellen. |
 
-1. Klicken **Verbindung testen**.
+1. Klicken **[!UICONTROL Test Connection]**.
 
    Beispielantwort:
 
@@ -54,8 +63,8 @@ Wenn ja, versuchen Sie Folgendes:
 - Wenn sich der Server auf einem anderen Host als Commerce befindet, melden Sie sich beim Commerce-Server an und pingen Sie den Suchmaschinen-Host. Beheben Sie Probleme mit der Netzwerkverbindung und testen Sie die Verbindung erneut.
 - Überprüfen Sie das Befehlsfenster, in dem Sie Elasticsearch gestartet haben, oder OpenSearch auf Stacktraces und Ausnahmen. Sie müssen diese auflösen, bevor Sie fortfahren. Stellen Sie insbesondere sicher, dass Sie Ihre Suchmaschine als Benutzer mit `root` Berechtigungen.
 - Stellen Sie sicher, dass [UNIX-Firewall und SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sind beide deaktiviert oder legen Regeln fest, mit denen Ihre Suchmaschine und Ihr Commerce miteinander kommunizieren können.
-- Überprüfen Sie den Wert der **Hostname des Elasticsearch-Servers** -Feld. Stellen Sie sicher, dass der Server verfügbar ist. Sie können stattdessen die IP-Adresse des Servers ausprobieren.
-- Verwenden Sie die `netstat -an | grep <listen-port>` -Befehl, um zu überprüfen, ob der im **Elasticsearch-Server-Port** nicht von einem anderen Prozess verwendet wird.
+- Überprüfen Sie den Wert der **[!UICONTROL Server Hostname]** -Feld. Stellen Sie sicher, dass der Server verfügbar ist. Sie können stattdessen die IP-Adresse des Servers ausprobieren.
+- Verwenden Sie die `netstat -an | grep <listen-port>` -Befehl, um zu überprüfen, ob der im **[!UICONTROL Server Port]** nicht von einem anderen Prozess verwendet wird.
 
    Um beispielsweise zu sehen, ob Ihre Suchmaschine an ihrem Standardanschluss ausgeführt wird, verwenden Sie den folgenden Befehl:
 
@@ -69,15 +78,15 @@ Wenn ja, versuchen Sie Folgendes:
    `tcp        0      0 :::9200            :::-         LISTEN`
    ```
 
-## Neuindizieren der Katalogsuche und Aktualisieren des gesamten Seiten-Caches
+## Neuindizieren der Katalogsuche und Aktualisieren des gesamten Seiten-Cache
 
 Nachdem Sie die Suchmaschinenkonfiguration geändert haben, müssen Sie den Katalogsuchindex neu indizieren und den gesamten Seiten-Cache mit der Admin- oder Befehlszeile aktualisieren.
 
 So aktualisieren Sie den Cache mit dem Admin:
 
-1. Klicken Sie im Admin auf **System** > **Cacheverwaltung**.
-1. Aktivieren Sie das Kontrollkästchen neben **Seiten-Cache**.
-1. Aus dem **Aktionen** Liste oben rechts, klicken Sie auf **Aktualisieren**.
+1. Klicken Sie im Admin auf **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Page Cache]**.
+1. Aus dem **[!UICONTROL Actions]** Liste oben rechts, klicken Sie auf **Aktualisieren**.
 
    ![Cacheverwaltung](../../assets/configuration/refresh-cache.png)
 

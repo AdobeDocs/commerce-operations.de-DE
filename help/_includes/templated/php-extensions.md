@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9f6110d359ffb31b04ebef369b82c25d4d0b9058
+source-git-commit: 0feb0124cfa375a8ebfd17ad88b1b1eaec99e0e5
 workflow-type: tm+mt
 source-wordcount: '15'
 ht-degree: 0%
@@ -14,6 +14,7 @@ Adobe Commerce erfordert:
 - `ext-curl`
 - `ext-dom`
 - `ext-fileinfo`
+- `ext-filter`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -33,8 +34,8 @@ Adobe Commerce erfordert:
 - `ext-xmlwriter`
 - `ext-xsl`
 - `ext-zip`
+- `ext-zlib`
 - `lib-libxml`
-- `lib-openssl`
 
 B2B für Adobe Commerce erfordert:
 
@@ -43,6 +44,7 @@ B2B für Adobe Commerce erfordert:
 - `ext-curl`
 - `ext-dom`
 - `ext-fileinfo`
+- `ext-filter`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -62,8 +64,8 @@ B2B für Adobe Commerce erfordert:
 - `ext-xmlwriter`
 - `ext-xsl`
 - `ext-zip`
+- `ext-zlib`
 - `lib-libxml`
-- `lib-openssl`
 
 Magento Open Source erfordert:
 
@@ -72,6 +74,7 @@ Magento Open Source erfordert:
 - `ext-curl`
 - `ext-dom`
 - `ext-fileinfo`
+- `ext-filter`
 - `ext-gd`
 - `ext-hash`
 - `ext-iconv`
@@ -90,5 +93,5 @@ Magento Open Source erfordert:
 - `ext-xmlwriter`
 - `ext-xsl`
 - `ext-zip`
+- `ext-zlib`
 - `lib-libxml`
-- `lib-openssl`

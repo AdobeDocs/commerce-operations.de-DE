@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
+source-git-commit: 177f301802e1ab1d0560ee98594b8128440efa7c
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -23,19 +23,20 @@ Magento Open Source verwendet Composer zur Verwaltung von PHP-Paketen.
 
 Die `composer.json` -Datei deklariert die Liste der Pakete, während die `composer.lock` -Datei speichert eine vollständige Liste der Pakete (eine Vollversion jedes Pakets und seiner Abhängigkeiten), die zum Erstellen einer Installation von Adobe Commerce oder Magento Open Source verwendet werden.
 
-Die folgende Referenzdokumentation wird aus der `composer.lock` -Datei und umfasst die erforderlichen Pakete, die in Magento Open Source 2.4.5 enthalten sind.
+Die folgende Referenzdokumentation wird aus der `composer.lock` -Datei, und es umfasst erforderliche Pakete, die in Magento Open Source 2.4.6-beta2 enthalten sind.
 
 ## Abhängigkeiten
 
-`magento/product-community-edition 2.4.5` weist die folgenden Abhängigkeiten auf:
+`magento/product-community-edition 2.4.6-beta2` weist die folgenden Abhängigkeiten auf:
 
 ```config
-colinmollenhour/cache-backend-file: ~1.4.1
-colinmollenhour/cache-backend-redis: 1.14.2
-colinmollenhour/credis: 1.13.0
-colinmollenhour/php-redis-session-abstract: ~1.4.5
-composer/composer: ^1.9 || ^2.0, !=2.2.16
-elasticsearch/elasticsearch: ~7.17.0
+adobe-commerce/adobe-ims-metapackage: ^2.2
+colinmollenhour/cache-backend-file: ^1.4
+colinmollenhour/cache-backend-redis: ^1.14
+colinmollenhour/credis: ^1.13
+colinmollenhour/php-redis-session-abstract: ^1.5
+composer/composer: ^2.0, !=2.2.16
+elasticsearch/elasticsearch: ^7.17||^8.5
 ext-bcmath: *
 ext-ctype: *
 ext-curl: *
@@ -53,37 +54,41 @@ ext-sodium: *
 ext-xsl: *
 ext-zip: *
 ezyang/htmlpurifier: ^4.14
-guzzlehttp/guzzle: ^7.4.2
+guzzlehttp/guzzle: ^7.5
 laminas/laminas-captcha: ^2.12
-laminas/laminas-code: ~4.5.0
-laminas/laminas-db: ^2.15.0
-laminas/laminas-dependency-plugin: ^2.2.0
-laminas/laminas-di: ^3.7.0
-laminas/laminas-escaper: ~2.10.0
-laminas/laminas-eventmanager: ^3.5.0
-laminas/laminas-feed: ^2.17.0
-laminas/laminas-http: ^2.15.0
-laminas/laminas-mail: ^2.16.0
-laminas/laminas-mime: ^2.9.1
-laminas/laminas-modulemanager: ^2.11.0
-laminas/laminas-mvc: ^3.3.3
-laminas/laminas-servicemanager: ^3.11.0
-laminas/laminas-soap: ^2.10.0
-laminas/laminas-stdlib: ^3.7.1
-laminas/laminas-uri: ^2.9.1
-laminas/laminas-validator: ^2.17.0
-league/flysystem: ~2.4.5
-league/flysystem-aws-s3-v3: ^2.4.3
+laminas/laminas-code: ^4.5
+laminas/laminas-db: ^2.15
+laminas/laminas-di: ^3.7
+laminas/laminas-escaper: ^2.10
+laminas/laminas-eventmanager: ^3.5
+laminas/laminas-feed: ^2.17
+laminas/laminas-file: ^2.11
+laminas/laminas-filter: ^2.17
+laminas/laminas-http: ^2.15
+laminas/laminas-i18n: ^2.17
+laminas/laminas-mail: ^2.16
+laminas/laminas-mime: ^2.9
+laminas/laminas-modulemanager: ^2.11
+laminas/laminas-mvc: ^3.3
+laminas/laminas-oauth: ^2.4
+laminas/laminas-permissions-acl: ^2.10
+laminas/laminas-servicemanager: ^3.16
+laminas/laminas-soap: ^2.10
+laminas/laminas-stdlib: ^3.11
+laminas/laminas-uri: ^2.9
+laminas/laminas-validator: ^2.23
+league/flysystem: ^2.4
+league/flysystem-aws-s3-v3: ^2.4
 lib-libxml: *
-magento/adobe-stock-integration: 2.1.4
-magento/composer: ~1.8.0
-magento/composer-dependency-version-audit-plugin: ~0.1
-magento/framework: 103.0.5
-magento/framework-amqp: 100.4.3
-magento/framework-bulk: 101.0.1
-magento/framework-message-queue: 100.4.5
+magento/adobe-stock-integration: 2.1.5-beta2
+magento/composer: ^1.9.0-beta2
+magento/composer-dependency-version-audit-plugin: ^0.1
+magento/framework: 103.0.6-beta2
+magento/framework-amqp: 100.4.4-beta2
+magento/framework-bulk: 101.0.2-beta2
+magento/framework-message-queue: 100.4.6-beta2
 magento/google-shopping-ads: 4.0.1
-magento/inventory-metapackage: 1.2.5
+magento/inventory-metapackage: 1.2.6-beta2
 magento/language-de_de: 100.4.0
 magento/language-en_us: 100.4.0
 magento/language-es_es: 100.4.0
@@ -91,242 +96,245 @@ magento/language-fr_fr: 100.4.0
 magento/language-nl_nl: 100.4.0
 magento/language-pt_br: 100.4.0
 magento/language-zh_hans_cn: 100.4.0
-magento/magento-composer-installer: >=0.3.0
-magento/magento2-base: 2.4.5
-magento/module-admin-adobe-ims: 100.4.0
-magento/module-admin-analytics: 100.4.4
-magento/module-admin-notification: 100.4.4
-magento/module-adobe-ims: 2.1.4
-magento/module-adobe-ims-api: 2.1.2
-magento/module-advanced-pricing-import-export: 100.4.5
-magento/module-advanced-search: 100.4.3
-magento/module-amqp: 100.4.2
-magento/module-analytics: 100.4.5
-magento/module-asynchronous-operations: 100.4.5
-magento/module-authorization: 100.4.5
-magento/module-aws-s3: 100.4.3
-magento/module-backend: 102.0.5
-magento/module-backup: 100.4.5
-magento/module-bundle: 101.0.5
-magento/module-bundle-graph-ql: 100.4.5
-magento/module-bundle-import-export: 100.4.4
-magento/module-cache-invalidate: 100.4.3
-magento/module-captcha: 100.4.5
-magento/module-cardinal-commerce: 100.4.3
-magento/module-catalog: 104.0.5
-magento/module-catalog-analytics: 100.4.2
-magento/module-catalog-cms-graph-ql: 100.4.1
-magento/module-catalog-customer-graph-ql: 100.4.4
-magento/module-catalog-graph-ql: 100.4.5
-magento/module-catalog-import-export: 101.1.5
-magento/module-catalog-inventory: 100.4.5
-magento/module-catalog-inventory-graph-ql: 100.4.2
-magento/module-catalog-rule: 101.2.5
-magento/module-catalog-rule-configurable: 100.4.4
-magento/module-catalog-rule-graph-ql: 100.4.2
-magento/module-catalog-search: 102.0.5
-magento/module-catalog-url-rewrite: 100.4.5
-magento/module-catalog-url-rewrite-graph-ql: 100.4.3
-magento/module-catalog-widget: 100.4.5
-magento/module-checkout: 100.4.5
-magento/module-checkout-agreements: 100.4.4
-magento/module-checkout-agreements-graph-ql: 100.4.1
-magento/module-cms: 104.0.5
-magento/module-cms-graph-ql: 100.4.2
-magento/module-cms-url-rewrite: 100.4.4
-magento/module-cms-url-rewrite-graph-ql: 100.4.3
-magento/module-compare-list-graph-ql: 100.4.1
-magento/module-config: 101.2.5
-magento/module-configurable-import-export: 100.4.3
-magento/module-configurable-product: 100.4.5
-magento/module-configurable-product-graph-ql: 100.4.5
-magento/module-configurable-product-sales: 100.4.2
-magento/module-contact: 100.4.4
-magento/module-cookie: 100.4.5
-magento/module-cron: 100.4.5
-magento/module-csp: 100.4.4
-magento/module-currency-symbol: 100.4.3
-magento/module-customer: 103.0.5
-magento/module-customer-analytics: 100.4.2
-magento/module-customer-downloadable-graph-ql: 100.4.1
-magento/module-customer-graph-ql: 100.4.5
-magento/module-customer-import-export: 100.4.5
-magento/module-deploy: 100.4.5
-magento/module-developer: 100.4.5
-magento/module-dhl: 100.4.4
-magento/module-directory: 100.4.5
-magento/module-directory-graph-ql: 100.4.3
-magento/module-downloadable: 100.4.5
-magento/module-downloadable-graph-ql: 100.4.5
-magento/module-downloadable-import-export: 100.4.4
-magento/module-eav: 102.1.5
-magento/module-eav-graph-ql: 100.4.2
-magento/module-elasticsearch: 101.0.5
-magento/module-elasticsearch-6: 100.4.5
-magento/module-elasticsearch-7: 100.4.5
-magento/module-email: 101.1.5
-magento/module-encryption-key: 100.4.3
-magento/module-fedex: 100.4.3
-magento/module-gift-message: 100.4.4
-magento/module-gift-message-graph-ql: 100.4.3
-magento/module-google-adwords: 100.4.2
-magento/module-google-analytics: 100.4.1
-magento/module-google-gtag: 100.4.0
-magento/module-google-optimizer: 100.4.4
-magento/module-graph-ql: 100.4.5
-magento/module-graph-ql-cache: 100.4.2
-magento/module-grouped-catalog-inventory: 100.4.2
-magento/module-grouped-import-export: 100.4.3
-magento/module-grouped-product: 100.4.5
-magento/module-grouped-product-graph-ql: 100.4.5
-magento/module-import-export: 101.0.5
-magento/module-indexer: 100.4.5
-magento/module-instant-purchase: 100.4.4
-magento/module-integration: 100.4.5
-magento/module-jwt-framework-adapter: 100.4.1
-magento/module-jwt-user-token: 100.4.0
-magento/module-layered-navigation: 100.4.5
-magento/module-login-as-customer: 100.4.5
-magento/module-login-as-customer-admin-ui: 100.4.5
-magento/module-login-as-customer-api: 100.4.4
-magento/module-login-as-customer-assistance: 100.4.4
-magento/module-login-as-customer-frontend-ui: 100.4.4
-magento/module-login-as-customer-graph-ql: 100.4.2
-magento/module-login-as-customer-log: 100.4.3
-magento/module-login-as-customer-page-cache: 100.4.4
-magento/module-login-as-customer-quote: 100.4.3
-magento/module-login-as-customer-sales: 100.4.4
-magento/module-marketplace: 100.4.3
-magento/module-media-content: 100.4.3
-magento/module-media-content-api: 100.4.4
-magento/module-media-content-catalog: 100.4.3
-magento/module-media-content-cms: 100.4.3
-magento/module-media-content-synchronization: 100.4.4
-magento/module-media-content-synchronization-api: 100.4.3
-magento/module-media-content-synchronization-catalog: 100.4.2
-magento/module-media-content-synchronization-cms: 100.4.2
-magento/module-media-gallery: 100.4.4
-magento/module-media-gallery-api: 101.0.4
-magento/module-media-gallery-catalog: 100.4.2
-magento/module-media-gallery-catalog-integration: 100.4.2
-magento/module-media-gallery-catalog-ui: 100.4.2
-magento/module-media-gallery-cms-ui: 100.4.2
-magento/module-media-gallery-integration: 100.4.4
-magento/module-media-gallery-metadata: 100.4.3
-magento/module-media-gallery-metadata-api: 100.4.2
-magento/module-media-gallery-renditions: 100.4.3
-magento/module-media-gallery-renditions-api: 100.4.2
-magento/module-media-gallery-synchronization: 100.4.4
-magento/module-media-gallery-synchronization-api: 100.4.3
-magento/module-media-gallery-synchronization-metadata: 100.4.1
-magento/module-media-gallery-ui: 100.4.4
-magento/module-media-gallery-ui-api: 100.4.3
-magento/module-media-storage: 100.4.4
-magento/module-message-queue: 100.4.5
-magento/module-msrp: 100.4.4
-magento/module-msrp-configurable-product: 100.4.2
-magento/module-msrp-grouped-product: 100.4.2
-magento/module-multishipping: 100.4.5
-magento/module-mysql-mq: 100.4.3
-magento/module-new-relic-reporting: 100.4.3
-magento/module-newsletter: 100.4.5
-magento/module-newsletter-graph-ql: 100.4.2
-magento/module-offline-payments: 100.4.3
-magento/module-offline-shipping: 100.4.4
-magento/module-page-cache: 100.4.5
-magento/module-payment: 100.4.5
-magento/module-payment-graph-ql: 100.4.0
-magento/module-paypal: 101.0.5
-magento/module-paypal-captcha: 100.4.2
-magento/module-paypal-graph-ql: 100.4.3
-magento/module-persistent: 100.4.5
-magento/module-product-alert: 100.4.4
-magento/module-product-video: 100.4.5
-magento/module-quote: 101.2.5
-magento/module-quote-analytics: 100.4.4
-magento/module-quote-bundle-options: 100.4.1
-magento/module-quote-configurable-options: 100.4.1
-magento/module-quote-downloadable-links: 100.4.1
-magento/module-quote-graph-ql: 100.4.5
-magento/module-related-product-graph-ql: 100.4.2
-magento/module-release-notification: 100.4.3
-magento/module-remote-storage: 100.4.3
-magento/module-reports: 100.4.5
-magento/module-require-js: 100.4.1
-magento/module-review: 100.4.5
-magento/module-review-analytics: 100.4.2
-magento/module-review-graph-ql: 100.4.1
-magento/module-robots: 101.1.1
-magento/module-rss: 100.4.3
-magento/module-rule: 100.4.4
-magento/module-sales: 103.0.5
-magento/module-sales-analytics: 100.4.2
-magento/module-sales-graph-ql: 100.4.5
-magento/module-sales-inventory: 100.4.2
-magento/module-sales-rule: 101.2.5
-magento/module-sales-sequence: 100.4.2
-magento/module-sample-data: 100.4.3
-magento/module-search: 101.1.5
-magento/module-security: 100.4.5
-magento/module-send-friend: 100.4.3
-magento/module-send-friend-graph-ql: 100.4.1
-magento/module-shipping: 100.4.5
-magento/module-sitemap: 100.4.4
-magento/module-store: 101.1.5
-magento/module-store-graph-ql: 100.4.3
-magento/module-swagger: 100.4.4
-magento/module-swagger-webapi: 100.4.1
-magento/module-swagger-webapi-async: 100.4.1
-magento/module-swatches: 100.4.5
-magento/module-swatches-graph-ql: 100.4.3
-magento/module-swatches-layered-navigation: 100.4.1
-magento/module-tax: 100.4.5
-magento/module-tax-graph-ql: 100.4.1
-magento/module-tax-import-export: 100.4.4
-magento/module-theme: 101.1.5
-magento/module-theme-graph-ql: 100.4.2
-magento/module-translation: 100.4.5
-magento/module-ui: 101.2.5
-magento/module-ups: 100.4.5
-magento/module-url-rewrite: 102.0.4
-magento/module-url-rewrite-graph-ql: 100.4.4
-magento/module-user: 101.2.5
-magento/module-usps: 100.4.4
-magento/module-variable: 100.4.3
-magento/module-vault: 101.2.5
-magento/module-vault-graph-ql: 100.4.1
-magento/module-version: 100.4.2
-magento/module-webapi: 100.4.4
-magento/module-webapi-async: 100.4.3
-magento/module-webapi-security: 100.4.2
-magento/module-weee: 100.4.5
-magento/module-weee-graph-ql: 100.4.2
-magento/module-widget: 101.2.5
-magento/module-wishlist: 101.2.5
-magento/module-wishlist-analytics: 100.4.3
-magento/module-wishlist-graph-ql: 100.4.5
-magento/page-builder: 1.7.2
-magento/security-package: 1.1.4
-magento/theme-adminhtml-backend: 100.4.5
-magento/theme-frontend-blank: 100.4.5
-magento/theme-frontend-luma: 100.4.5
-magento/zendframework1: ~1.15.0
+magento/magento-composer-installer: >=0.4.0-beta1
+magento/magento2-base: 2.4.6-beta2
+magento/module-admin-analytics: 100.4.5-beta2
+magento/module-admin-notification: 100.4.5-beta2
+magento/module-advanced-pricing-import-export: 100.4.6-beta2
+magento/module-advanced-search: 100.4.4-beta2
+magento/module-amqp: 100.4.3-beta2
+magento/module-analytics: 100.4.6-beta2
+magento/module-asynchronous-operations: 100.4.6-beta2
+magento/module-authorization: 100.4.6-beta2
+magento/module-aws-s3: 100.4.4-beta2
+magento/module-backend: 102.0.6-beta2
+magento/module-backup: 100.4.6-beta2
+magento/module-bundle: 101.0.6-beta2
+magento/module-bundle-graph-ql: 100.4.6-beta2
+magento/module-bundle-import-export: 100.4.5-beta2
+magento/module-cache-invalidate: 100.4.4-beta2
+magento/module-captcha: 100.4.6-beta2
+magento/module-cardinal-commerce: 100.4.4-beta2
+magento/module-catalog: 104.0.6-beta2
+magento/module-catalog-analytics: 100.4.3-beta2
+magento/module-catalog-cms-graph-ql: 100.4.2-beta2
+magento/module-catalog-customer-graph-ql: 100.4.5-beta2
+magento/module-catalog-graph-ql: 100.4.6-beta2
+magento/module-catalog-import-export: 101.1.6-beta2
+magento/module-catalog-inventory: 100.4.6-beta2
+magento/module-catalog-inventory-graph-ql: 100.4.3-beta2
+magento/module-catalog-rule: 101.2.6-beta2
+magento/module-catalog-rule-configurable: 100.4.5-beta2
+magento/module-catalog-rule-graph-ql: 100.4.3-beta2
+magento/module-catalog-search: 102.0.6-beta2
+magento/module-catalog-url-rewrite: 100.4.6-beta2
+magento/module-catalog-url-rewrite-graph-ql: 100.4.4-beta2
+magento/module-catalog-widget: 100.4.6-beta2
+magento/module-checkout: 100.4.6-beta2
+magento/module-checkout-agreements: 100.4.5-beta2
+magento/module-checkout-agreements-graph-ql: 100.4.2-beta2
+magento/module-cms: 104.0.6-beta2
+magento/module-cms-graph-ql: 100.4.3-beta2
+magento/module-cms-url-rewrite: 100.4.5-beta2
+magento/module-cms-url-rewrite-graph-ql: 100.4.4-beta2
+magento/module-compare-list-graph-ql: 100.4.2-beta2
+magento/module-config: 101.2.6-beta2
+magento/module-configurable-import-export: 100.4.4-beta2
+magento/module-configurable-product: 100.4.6-beta2
+magento/module-configurable-product-graph-ql: 100.4.6-beta2
+magento/module-configurable-product-sales: 100.4.3-beta2
+magento/module-contact: 100.4.5-beta2
+magento/module-cookie: 100.4.6-beta2
+magento/module-cron: 100.4.6-beta2
+magento/module-csp: 100.4.5-beta2
+magento/module-currency-symbol: 100.4.4-beta2
+magento/module-customer: 103.0.6-beta2
+magento/module-customer-analytics: 100.4.3-beta2
+magento/module-customer-downloadable-graph-ql: 100.4.2-beta2
+magento/module-customer-graph-ql: 100.4.6-beta2
+magento/module-customer-import-export: 100.4.6-beta2
+magento/module-deploy: 100.4.6-beta2
+magento/module-developer: 100.4.6-beta2
+magento/module-dhl: 100.4.5-beta2
+magento/module-directory: 100.4.6-beta2
+magento/module-directory-graph-ql: 100.4.4-beta2
+magento/module-downloadable: 100.4.6-beta2
+magento/module-downloadable-graph-ql: 100.4.6-beta2
+magento/module-downloadable-import-export: 100.4.5-beta2
+magento/module-eav: 102.1.6-beta2
+magento/module-eav-graph-ql: 100.4.3-beta2
+magento/module-elasticsearch: 101.0.6-beta2
+magento/module-elasticsearch-7: 100.4.6-beta2
+magento/module-elasticsearch-8: 100.4.0-beta2
+magento/module-email: 101.1.6-beta2
+magento/module-encryption-key: 100.4.4-beta2
+magento/module-fedex: 100.4.4-beta2
+magento/module-gift-message: 100.4.5-beta2
+magento/module-gift-message-graph-ql: 100.4.4-beta2
+magento/module-google-adwords: 100.4.3-beta2
+magento/module-google-analytics: 100.4.2-beta2
+magento/module-google-gtag: 100.4.1-beta2
+magento/module-google-optimizer: 100.4.5-beta2
+magento/module-graph-ql: 100.4.6-beta2
+magento/module-graph-ql-cache: 100.4.3-beta2
+magento/module-grouped-catalog-inventory: 100.4.3-beta2
+magento/module-grouped-import-export: 100.4.4-beta2
+magento/module-grouped-product: 100.4.6-beta2
+magento/module-grouped-product-graph-ql: 100.4.6-beta2
+magento/module-import-export: 101.0.6-beta2
+magento/module-indexer: 100.4.6-beta2
+magento/module-instant-purchase: 100.4.5-beta2
+magento/module-integration: 100.4.6-beta2
+magento/module-jwt-framework-adapter: 100.4.2-beta2
+magento/module-jwt-user-token: 100.4.1-beta2
+magento/module-layered-navigation: 100.4.6-beta2
+magento/module-login-as-customer: 100.4.6-beta2
+magento/module-login-as-customer-admin-ui: 100.4.6-beta2
+magento/module-login-as-customer-api: 100.4.5-beta2
+magento/module-login-as-customer-assistance: 100.4.5-beta2
+magento/module-login-as-customer-frontend-ui: 100.4.5-beta2
+magento/module-login-as-customer-graph-ql: 100.4.3-beta2
+magento/module-login-as-customer-log: 100.4.4-beta2
+magento/module-login-as-customer-page-cache: 100.4.5-beta2
+magento/module-login-as-customer-quote: 100.4.4-beta2
+magento/module-login-as-customer-sales: 100.4.5-beta2
+magento/module-marketplace: 100.4.4-beta2
+magento/module-media-content: 100.4.4-beta2
+magento/module-media-content-api: 100.4.5-beta2
+magento/module-media-content-catalog: 100.4.4-beta2
+magento/module-media-content-cms: 100.4.4-beta2
+magento/module-media-content-synchronization: 100.4.5-beta2
+magento/module-media-content-synchronization-api: 100.4.4-beta2
+magento/module-media-content-synchronization-catalog: 100.4.3-beta2
+magento/module-media-content-synchronization-cms: 100.4.3-beta2
+magento/module-media-gallery: 100.4.5-beta2
+magento/module-media-gallery-api: 101.0.5-beta2
+magento/module-media-gallery-catalog: 100.4.3-beta2
+magento/module-media-gallery-catalog-integration: 100.4.3-beta2
+magento/module-media-gallery-catalog-ui: 100.4.3-beta2
+magento/module-media-gallery-cms-ui: 100.4.3-beta2
+magento/module-media-gallery-integration: 100.4.5-beta2
+magento/module-media-gallery-metadata: 100.4.4-beta2
+magento/module-media-gallery-metadata-api: 100.4.3-beta2
+magento/module-media-gallery-renditions: 100.4.4-beta2
+magento/module-media-gallery-renditions-api: 100.4.3-beta2
+magento/module-media-gallery-synchronization: 100.4.5-beta2
+magento/module-media-gallery-synchronization-api: 100.4.4-beta2
+magento/module-media-gallery-synchronization-metadata: 100.4.2-beta2
+magento/module-media-gallery-ui: 100.4.5-beta2
+magento/module-media-gallery-ui-api: 100.4.4-beta2
+magento/module-media-storage: 100.4.5-beta2
+magento/module-message-queue: 100.4.6-beta2
+magento/module-msrp: 100.4.5-beta2
+magento/module-msrp-configurable-product: 100.4.3-beta2
+magento/module-msrp-grouped-product: 100.4.3-beta2
+magento/module-multishipping: 100.4.6-beta2
+magento/module-mysql-mq: 100.4.4-beta2
+magento/module-new-relic-reporting: 100.4.4-beta2
+magento/module-newsletter: 100.4.6-beta2
+magento/module-newsletter-graph-ql: 100.4.3-beta2
+magento/module-offline-payments: 100.4.4-beta2
+magento/module-offline-shipping: 100.4.5-beta2
+magento/module-open-search: 100.4.0-beta2
+magento/module-page-cache: 100.4.6-beta2
+magento/module-payment: 100.4.6-beta2
+magento/module-payment-graph-ql: 100.4.1-beta2
+magento/module-paypal: 101.0.6-beta2
+magento/module-paypal-captcha: 100.4.3-beta2
+magento/module-paypal-graph-ql: 100.4.4-beta2
+magento/module-persistent: 100.4.6-beta2
+magento/module-product-alert: 100.4.5-beta2
+magento/module-product-video: 100.4.6-beta2
+magento/module-quote: 101.2.6-beta2
+magento/module-quote-analytics: 100.4.5-beta2
+magento/module-quote-bundle-options: 100.4.2-beta2
+magento/module-quote-configurable-options: 100.4.2-beta2
+magento/module-quote-downloadable-links: 100.4.2-beta2
+magento/module-quote-graph-ql: 100.4.6-beta2
+magento/module-related-product-graph-ql: 100.4.3-beta2
+magento/module-release-notification: 100.4.4-beta2
+magento/module-remote-storage: 100.4.4-beta2
+magento/module-reports: 100.4.6-beta2
+magento/module-require-js: 100.4.2-beta2
+magento/module-review: 100.4.6-beta2
+magento/module-review-analytics: 100.4.3-beta2
+magento/module-review-graph-ql: 100.4.2-beta2
+magento/module-robots: 101.1.2-beta2
+magento/module-rss: 100.4.4-beta2
+magento/module-rule: 100.4.5-beta2
+magento/module-sales: 103.0.6-beta2
+magento/module-sales-analytics: 100.4.3-beta2
+magento/module-sales-graph-ql: 100.4.6-beta2
+magento/module-sales-inventory: 100.4.3-beta2
+magento/module-sales-rule: 101.2.6-beta2
+magento/module-sales-sequence: 100.4.3-beta2
+magento/module-sample-data: 100.4.4-beta2
+magento/module-search: 101.1.6-beta2
+magento/module-security: 100.4.6-beta2
+magento/module-send-friend: 100.4.4-beta2
+magento/module-send-friend-graph-ql: 100.4.2-beta2
+magento/module-shipping: 100.4.6-beta2
+magento/module-sitemap: 100.4.5-beta2
+magento/module-store: 101.1.6-beta2
+magento/module-store-graph-ql: 100.4.4-beta2
+magento/module-swagger: 100.4.5-beta2
+magento/module-swagger-webapi: 100.4.2-beta2
+magento/module-swagger-webapi-async: 100.4.2-beta2
+magento/module-swatches: 100.4.6-beta2
+magento/module-swatches-graph-ql: 100.4.4-beta2
+magento/module-swatches-layered-navigation: 100.4.2-beta2
+magento/module-tax: 100.4.6-beta2
+magento/module-tax-graph-ql: 100.4.2-beta2
+magento/module-tax-import-export: 100.4.5-beta2
+magento/module-theme: 101.1.6-beta2
+magento/module-theme-graph-ql: 100.4.3-beta2
+magento/module-translation: 100.4.6-beta2
+magento/module-ui: 101.2.6-beta2
+magento/module-ups: 100.4.6-beta2
+magento/module-url-rewrite: 102.0.5-beta2
+magento/module-url-rewrite-graph-ql: 100.4.5-beta2
+magento/module-user: 101.2.6-beta2
+magento/module-usps: 100.4.5-beta2
+magento/module-variable: 100.4.4-beta2
+magento/module-vault: 101.2.6-beta2
+magento/module-vault-graph-ql: 100.4.2-beta2
+magento/module-version: 100.4.3-beta2
+magento/module-webapi: 100.4.5-beta2
+magento/module-webapi-async: 100.4.4-beta2
+magento/module-webapi-security: 100.4.3-beta2
+magento/module-weee: 100.4.6-beta2
+magento/module-weee-graph-ql: 100.4.3-beta2
+magento/module-widget: 101.2.6-beta2
+magento/module-wishlist: 101.2.6-beta2
+magento/module-wishlist-analytics: 100.4.4-beta2
+magento/module-wishlist-graph-ql: 100.4.6-beta2
+magento/page-builder: 1.7.3-beta2
+magento/security-package: 1.1.5-beta2
+magento/theme-adminhtml-backend: 100.4.6-beta2
+magento/theme-frontend-blank: 100.4.6-beta2
+magento/theme-frontend-luma: 100.4.6-beta2
+magento/zend-cache: ^1.16
+magento/zend-db: ^1.16
+magento/zend-pdf: ^1.16
 monolog/monolog: ^2.7
-paypal/module-braintree: 4.4.0
-pelago/emogrifier: ^6.0.0
-php: ~7.4.0||~8.1.0
-php-amqplib/php-amqplib: ~3.2.0
-phpseclib/mcrypt_compat: ~2.0.2
-phpseclib/phpseclib: ~3.0.13
-ramsey/uuid: ~4.2.0
-symfony/console: ~4.4.0
-symfony/process: ~4.4.0
-tedivm/jshrink: ~1.4.0
+opensearch-project/opensearch-php: ^1.0 || ^2.0, <2.0.1
+paypal/module-braintree: 4.5.0-beta2
+pelago/emogrifier: ^7.0
+php: ~8.1.0||~8.2.0
+php-amqplib/php-amqplib: ^3.2
+phpseclib/mcrypt_compat: ^2.0
+phpseclib/phpseclib: ^3.0
+ramsey/uuid: ^4.2
+symfony/console: ^5.4
+symfony/intl: ^5.4
+symfony/process: ^5.4
+symfony/string: ^5.4
+tedivm/jshrink: ^1.4
 temando/module-shipping: 2.0.0
-tubalmartin/cssmin: 4.1.1
-web-token/jwt-framework: ^v2.2.7
-webonyx/graphql-php: ~14.11.6
-wikimedia/less.php: ^3.0.0
+tubalmartin/cssmin: ^4.1
+web-token/jwt-framework: ^3.1
+webonyx/graphql-php: ^15.0
+wikimedia/less.php: ^3.2
 ```
 
 ## Drittanbieterlizenzen
@@ -344,10 +352,17 @@ wikimedia/less.php: ^3.0.0
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/elastic/elasticsearch-php.git">elasticsearch/elasticsearch</a>
+      elasticsearch/elasticsearch
     </td>
     <td>Bibliothek</td>
     <td>PHP Client für Elasticsearch</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/opensearch-project/opensearch-php.git">opensearch-project/opensearch-php</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>PHP Client für OpenSearch</td>
   </tr>
   </tbody>
 </table>
@@ -396,7 +411,7 @@ wikimedia/less.php: ^3.0.0
       <a href="https://github.com/wikimedia/less.php.git">wikimedia/less.php</a>
     </td>
     <td>Bibliothek</td>
-    <td>PHP-Port der JavaScript-Version von LESS http://lesscss.org (ursprünglich von Josh Schmidt gepflegt)</td>
+    <td>PHP-Port des LESS-Prozessors</td>
   </tr>
   </tbody>
 </table>
@@ -463,13 +478,6 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
-    </td>
-    <td>Magento-Modul</td>
-    <td>Zend_Cache-Backend mit Redis mit voller Unterstützung für Tags.</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/colinmollenhour/php-redis-session-abstract.git">colinmollenhour/php-redis-session-abstract</a>
     </td>
     <td>Bibliothek</td>
@@ -505,17 +513,17 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/laminas/laminas-crypt.git">laminas/laminas-crypt</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Starke Verschlüsselungs-Tools und Passwort-Hashing</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/laminas/laminas-db.git">laminas/laminas-db</a>
     </td>
     <td>Bibliothek</td>
     <td>Abstraktionsebene der Datenbank, SQL-Abstraktion, Abstraktion der Ergebnismenge und Implementierung von RowDataGateway und TableDataGateway</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-dependency-plugin.git">laminas/laminas-dependency-plugin</a>
-    </td>
-    <td>Composer-plugin</td>
-    <td>Ersetzen Sie zendframework- und zfcampus-Pakete durch ihre Laminas Project-Entsprechungen.</td>
   </tr>
   <tr>
     <td>
@@ -547,10 +555,31 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/laminas/laminas-file.git">laminas/laminas-file</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>PHP-Klassendateien suchen</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-filter.git">Laminas/Lamina-Filter</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Daten und Dateien programmgesteuert filtern und normalisieren</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/laminas/laminas-http.git">Laminas/Laminas-http</a>
     </td>
     <td>Bibliothek</td>
     <td>Bietet eine einfache Schnittstelle für die Ausführung von HTTP (Hyper-Text Transfer Protocol)-Anfragen</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-i18n.git">Laminas/Laminas-i18n</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Übersetzungen für Ihre Anwendung bereitstellen sowie internationalisierte Werte filtern und validieren</td>
   </tr>
   <tr>
     <td>
@@ -575,6 +604,13 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/laminas/laminas-math.git">laminas/laminas-math</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Erstellen kryptografisch sicherer Pseudo-Zufallszahlen und Verwalten großer Ganzzahlen</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/laminas/laminas-mime.git">Lamina/Lamina-mime</a>
     </td>
     <td>Bibliothek</td>
@@ -593,6 +629,20 @@ wikimedia/less.php: ^3.0.0
     </td>
     <td>Bibliothek</td>
     <td>Die ereignisgesteuerte MVC-Schicht von Laminas, einschließlich MVC-Anwendungen, Controller und Plugins</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-oauth.git">Laminas/Laminas-Oauth</a>
+    </td>
+    <td>Bibliothek</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Bietet eine einfache und flexible ACL-Implementierung (Access Control List) für die Berechtigungsverwaltung</td>
   </tr>
   <tr>
     <td>
@@ -702,6 +752,27 @@ wikimedia/less.php: ^3.0.0
   </tbody>
 </table>
 
+### BSD-3-Clause-Modification
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Typ</th>
+      <th>Beschreibung</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>
+      <a href="https://github.com/colinmollenhour/Cm_Cache_Backend_Redis.git">colinmollenhour/cache-backend-redis</a>
+    </td>
+    <td>Magento-Modul</td>
+    <td>Zend_Cache-Backend mit Redis mit voller Unterstützung für Tags.</td>
+  </tr>
+  </tbody>
+</table>
+
 ### LGPL-2.1-oder-höher
 
 <table>
@@ -785,6 +856,13 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/composer/class-map-generator.git">Composer/class-map-generator</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Hilfsprogramme zum Scannen von PHP-Code und Generieren von Klassenkarten.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/composer/composer.git">Verfasser/Verfasser</a>
     </td>
     <td>Bibliothek</td>
@@ -845,13 +923,6 @@ wikimedia/less.php: ^3.0.0
     </td>
     <td>Bibliothek</td>
     <td>Gabel von guzzle/RingPHP (aufgegeben) zur Verwendung mit elasticsearch-php</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/fgrosse/PHPASN1.git">fgrosse/phpasn1</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Ein PHP Framework, mit dem Sie beliebige ASN.1-Strukturen mithilfe der ITU-T X.690-Kodierungsregeln kodieren und dekodieren können.</td>
   </tr>
   <tr>
     <td>
@@ -1058,6 +1129,13 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/Seldaek/signal-handler.git">seld/signal-handler</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Einfacher Unix-Signalhandler, der bei fehlender Unterstützung von Signalen für einfache plattformübergreifende Entwicklung leise fehlschlägt</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/Spomky-Labs/aes-key-wrap.git">spomky-labs/aes-key-wrap</a>
     </td>
     <td>Bibliothek</td>
@@ -1065,17 +1143,17 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/Spomky-Labs/base64url.git">spomky-labs/base64url</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Base 64 URL Safe Encoding/Decoding PHP Library</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/Spomky-Labs/otphp.git">spomky-labs/otphp</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine PHP-Bibliothek zum Generieren einmaliger Passwörter gemäß RFC 4226 (HOTP-Algorithmus) und RFC 6238 (TOTP-Algorithmus) und kompatibel mit Google Authenticator</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/Spomky-Labs/pki-framework.git">spomky-labs/pki-framework</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Ein PHP-Framework für die Verwaltung von Public Key-Infrastrukturen. Sie umfasst X.509 Public-Key-Zertifikate, Attributzertifikate, Zertifizierungsanfragen und die Validierung des Zertifizierungspfads.</td>
   </tr>
   <tr>
     <td>
@@ -1097,13 +1175,6 @@ wikimedia/less.php: ^3.0.0
     </td>
     <td>Bibliothek</td>
     <td>Konvertiert CSS-Selektoren in XPath-Ausdrücke</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/debug.git">symfony/debug</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Bietet Tools zur Vereinfachung des Debuggens von PHP-Code</td>
   </tr>
   <tr>
     <td>
@@ -1156,13 +1227,6 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-contract</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Allgemeine Abstraktionen in Bezug auf HTTP-Clients</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/symfony/http-foundation.git">symfony/http-foundation</a>
     </td>
     <td>Bibliothek</td>
@@ -1177,10 +1241,24 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/intl.git">symfony/intl</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Stellt eine PHP-Ersetzungsschicht für die C intl-Erweiterung bereit, die zusätzliche Daten aus der ICU-Bibliothek enthält</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/polyfill-ctype.git">symfony/polyfill-type</a>
     </td>
     <td>Bibliothek</td>
     <td>Symfony polyfill für Typfunktionen</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-intl-grapheme.git">symfony/polyfill-intl-grapheme</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Symfony polyfill für intl's grapheme_*-Funktionen</td>
   </tr>
   <tr>
     <td>
@@ -1247,10 +1325,24 @@ wikimedia/less.php: ^3.0.0
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/string.git">symfony/string</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Bietet eine objektorientierte API für Zeichenfolgen und behandelt Bytes, UTF-8-Codepunkte und Graphem-Cluster einheitlich</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/var-dumper.git">symfony/var-dumper</a>
     </td>
     <td>Bibliothek</td>
     <td>Bietet Mechanismen, um beliebige PHP-Variablen zu durchlaufen</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/var-exporter.git">symfony/var-exporting</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Exportiert jede serialisierbare PHP-Datenstruktur in reinen PHP-Code</td>
   </tr>
   <tr>
     <td>

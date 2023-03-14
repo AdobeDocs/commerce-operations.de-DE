@@ -1,9 +1,9 @@
 ---
 title: MySQL-Richtlinien
 description: Führen Sie diese Schritte aus, um MySQL und MariaDB für lokale Installationen von Adobe Commerce und Magento Open Source zu installieren und zu konfigurieren.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe _stark_ empfiehlt bei der Einrichtung der Datenbank die Einhaltung des fol
 
 >[!WARNING]
 >
->Adobe Commerce und Magento Open Source verwenden derzeit `CREATE TEMPORARY TABLE` Anweisungen innerhalb von Transaktionen, die [inkompatibel](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) bei Datenbankimplementierungen die GTID-basierte Replikation verwenden, z. B. [Instanzen der zweiten Generation von Google Cloud SQL](https://cloud.google.com/sql/docs/features#differences). Betrachten Sie als Alternative MySQL für Cloud SQL 8.0.
+>Adobe Commerce verwendet derzeit `CREATE TEMPORARY TABLE` Anweisungen innerhalb von Transaktionen, die [inkompatibel](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) bei Datenbankimplementierungen die GTID-basierte Replikation verwenden, z. B. [Instanzen der zweiten Generation von Google Cloud SQL](https://cloud.google.com/sql/docs/features#differences). Betrachten Sie als Alternative MySQL für Cloud SQL 8.0.
 
 >[!NOTE]
 >
@@ -198,7 +198,4 @@ So konfigurieren Sie eine MySQL-Datenbankinstanz:
 >
 >Für Adobe Commerce bei Cloud-Infrastrukturprojekten muss die `explicit_defaults_for_timestamp` -Einstellung für MySQL (MariaDB) standardmäßig auf _OFF_.
 
-Die Neuindizierung auf MariaDB 10.4 nimmt im Vergleich zu anderen MariaDB- oder MySQL-Versionen mehr Zeit in Anspruch. Um die Neuindizierung zu beschleunigen, empfehlen wir, diese MariaDB-Konfigurationsparameter festzulegen:
-
-* optimizer_switch=&#39;rowid_filter=off&#39;
-* optimizer_use_condition_selectivity = 1
+{{$include /help/_includes/maria-db-config.md}}

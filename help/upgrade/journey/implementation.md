@@ -1,9 +1,9 @@
 ---
 title: Upgrade der Implementierung
-description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung von Upgrades für Adobe Commerce- und Magento Open Source-Projekte.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung der Aktualisierung für Adobe Commerce-Projekte.
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Die Analyse ist wohl der wichtigste Teil des Aktualisierungsprozesses. Eine gut 
 
 Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen möchten:
 
-- **Umfang der Zielversion**—Dokumentation zu [Commerce DevDocs](https://devdocs.magento.com) und Informationen aus Webinaren zur Partnerversion enthalten alle Details, die Sie über Ihr Target-Upgrade wissen müssen.
+- **Umfang der Zielversion**—Dokumentation zu [Experience League](../../release/release-notes/overview.md) und Informationen aus Webinaren zur Partnerversion enthalten alle Details, die Sie über Ihr Target-Upgrade wissen müssen.
 
 - **[!DNL Upgrade Compatibility Tool]Ergebnisse**—Dieses Tool ermöglicht eine schnellere und einfachere Aktualisierung, indem Sie Ihren aktuellen Code mit dem Code der Zielversion vergleichen und einen Bericht mit allen zu behebenden Problemen erstellen. Siehe [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Zu den wichtigsten Details des Berichts gehören:
 
@@ -38,13 +38,13 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
 
    | Diensleistung | Aktuelle Version | Upgrade auf | Hinweise |
    |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7,2,33 | 8,1 |  |
-   | Redis | 5,05 | 6,0 |  |
-   | [!DNL RabbitMQ] | 3,7 | 3,8 | Derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
-   | MariaDB (Cloud) | 10.2.33 | Artikel 10 Absatz 4 |  |
-   | MySQL | 8,0 |  |  |
-   | Verfasser | 1,9,2 | 2,0 |  |
-   | Elasticsearch | 7,7 | 7,10 |  |
+   | PHP | 7.4 | 8.1 |  |
+   | Redis | 6.0 | 6.2 |  |
+   | [!DNL RabbitMQ] | 3.8 | 3.9 | Derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
+   | MariaDB (Cloud) | 10.4 | 10.6 |  |
+   | MySQL | 8.0 | -/-/ |  |
+   | Verfasser | 1.9.2 | 2.2 |  |
+   | Elasticsearch | 7.10 | 7.17 |  |
 
 - **Erweiterungen und Module von Drittanbietern**—Verwenden Sie diese Tabellenvorlage, um den Status Ihrer Erweiterungen und Anpassungen zu verstehen, sodass Sie strategische Entscheidungen treffen und Aktionen definieren können. Dies bietet die Möglichkeit, alle Erweiterungen zu ersetzen, die möglicherweise nativ für Adobe Commerce oder Magento Open Source sind, um die Komplexität Ihres Projekts zu minimieren. Verwenden Sie die `bin/magento module:status` -Befehl, um eine Liste von Modulen und Erweiterungen anzuzeigen.
 
@@ -60,7 +60,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
 
 - **Composer-Pakete und -Abhängigkeiten in Composer.json, die eine Aktualisierung erfordern.**
 
-Darüber hinaus können Partner an der [Adobe Commerce Beta-Programm](https://devdocs.magento.com/release/beta-program.html) und nutzen Sie Vorabversionschancen, um frühzeitig auf den Code für eine bevorstehende Version zugreifen zu können. Durch frühzeitigen Zugriff auf den Code können Entwickler sich auf ausreichend Zeit vorbereiten, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum (GA) abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorversionen werden zwei Wochen im Voraus veröffentlicht. Für Version 2.4.4 begann Adobe fünf Monate vor dem GA-Datum (8. März 2022) mit der Veröffentlichung des Beta-Codes. Partner können nun mit der Vorbereitung auf dieses Upgrade beginnen, indem sie [Anmeldung für das Programm](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310).
+Darüber hinaus können Partner an [Beta-Versionen von Adobe Commerce](../../release/beta.md) und nutzen Sie Vorabversionschancen, um frühzeitig auf den Code für eine bevorstehende Version zugreifen zu können. Durch frühzeitigen Zugriff auf den Code können Entwickler sich auf ausreichend Zeit vorbereiten, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum (GA) abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorversionen werden zwei Wochen im Voraus veröffentlicht.
 
 ## Entwicklung und Qualitätssicherung
 
@@ -84,4 +84,4 @@ Sprechen Sie schließlich mit Ihrem Team, um die gelernten Erfahrungen und Falls
 
 Überprüfen Sie nach dem Start Ihrer Site die Analysedaten, die Google-Suchkonsole und andere Ressourcen, um sicherzustellen, dass keine unerwarteten Probleme auftreten und alles erwartungsgemäß funktioniert.
 
-Es ist immer eine gute Idee, die Leistung durch gut entwickelte Überwachungstools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Wählen Sie daher unbedingt eines aus, das sich gut mit Ihrer Organisation verbindet. Wir empfehlen Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, die Vorteile von Diensten wie [Neuer Relikt](https://devdocs.magento.com/cloud/project/new-relic.html) zur Überwachung der Site-Leistung.
+Es ist immer eine gute Idee, die Leistung durch gut entwickelte Überwachungstools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Wählen Sie daher unbedingt eines aus, das sich gut mit Ihrer Organisation verbindet. Wir empfehlen Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, die Vorteile von Diensten wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) zur Überwachung der Site-Leistung.

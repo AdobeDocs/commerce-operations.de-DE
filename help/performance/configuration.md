@@ -1,9 +1,9 @@
 ---
 title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung mithilfe dieser Best Practices.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,9 @@ Alle asynchronen Vorgänge in [!DNL Commerce] werden mit Linux ausgeführt `cron
 
 Ein Indexer kann in **[!UICONTROL Update on Save]** oder **[!UICONTROL Update on Schedule]** -Modus. Die **[!UICONTROL Update on Save]** sofort indiziert werden, wenn sich Ihr Katalog oder andere Daten ändern. Dieser Modus setzt eine geringe Intensität von Aktualisierungs- und Browsing-Vorgängen in Ihrem Store voraus. Dies kann zu beträchtlichen Verzögerungen und zu einer Nichtverfügbarkeit der Daten bei hohen Lasten führen. Wir empfehlen, **Planmäßig aktualisieren** -Modus in der Produktion verwendet werden, da dort Informationen über Datenaktualisierungen gespeichert werden und die Indizierung anhand von Teilen im Hintergrund über einen bestimmten Cron-Auftrag durchgeführt wird. Sie können den Modus der einzelnen [!DNL Commerce] Indexer separat auf der  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** Konfigurationsseite.
 
-Die Neuindizierung auf MariaDB 10.4 nimmt im Vergleich zu anderen MariaDB mehr Zeit in Anspruch. [!DNL MySQL] Versionen. Als Problemumgehung empfehlen wir, die standardmäßige MariaDB-Konfiguration zu ändern und die folgenden Parameter festzulegen:
-
-* [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+>[!TIP]
+>
+>Die Neuindizierung auf MariaDB 10.4 und 10.6 nimmt im Vergleich zu anderen MariaDB mehr Zeit in Anspruch. [!DNL MySQL] Versionen. Wir empfehlen, die standardmäßige MariaDB-Konfigurationseinstellung zu ändern, die im Abschnitt [Installationsvoraussetzungen](../installation/prerequisites/database/mysql.md).
 
 ## Caches
 
@@ -49,6 +48,10 @@ In Zeiten intensiver Verkäufe, [!DNL Commerce] kann Lageraktualisierungen im Zu
 >[!INFO]
 >
 >Diese Option ist nur verfügbar, wenn **[!UICONTROL Backorder with any mode]** aktiviert ist.
+
+>[!INFO]
+>
+>Diese Option funktioniert auch mit [Asynchrone Bestellplatzierung](high-throughput-order-processing.md#asynchronous-order-placement) in Kombination mit [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html).
 
 ## Einstellungen zur clientseitigen Optimierung
 
@@ -80,6 +83,18 @@ Wenn Sie die **[!UICONTROL Enable [!DNL JavaScript] Bundling]** können Sie Comm
 * Die Aktivierung des HTTP2-Protokolls kann eine gute Alternative zur Verwendung des JS-Bundles sein. Das Protokoll bietet fast die gleichen Vorteile.
 * Es wird empfohlen, keine veralteten Einstellungen wie das Zusammenführen von JS- und CSS-Dateien zu verwenden, da diese nur für synchron geladene JS im HEAD-Abschnitt der Seite entwickelt wurden. Die Verwendung dieser Technik kann dazu führen, dass die Logik &quot;Bundling&quot;und &quot;requireJS&quot;fehlerhaft funktioniert.
 
+## Validierung von Kundensegmenten
+
+Händler mit einer großen Anzahl von [Kundensegmente](https://docs.magento.com/user-guide/marketing/customer-segments.html) kann die Leistung durch Kundenaktionen wie Kundenanmeldung und Hinzufügen von Produkten zum Warenkorb erheblich beeinträchtigen.
+
+Kundenaktionen Trigger eines Validierungsprozesses für Kundensegmente, der zu Leistungsbeeinträchtigungen führen kann. Standardmäßig validiert Adobe Commerce jedes Segment in Echtzeit, um zu definieren, welche Kundensegmente abgeglichen werden und welche nicht.
+
+Um eine Leistungsbeeinträchtigung zu vermeiden, können Sie die **[!UICONTROL Real-time Check if Customer is Matched by Segment]** Systemkonfigurationsoption zu **Nein** , um Kundensegmente anhand einer einzigen kombinierten Bedingungs-SQL-Abfrage zu validieren.
+
+Um diese Optimierung zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
+
+Diese Einstellung verbessert die Leistung der Validierung von Kundensegmenten, wenn das System viele Kundensegmente enthält. Es funktioniert jedoch nicht mit [Aufspaltungsdatenbank](../configuration/storage/multi-master.md) -Implementierungen oder wenn keine registrierten Kunden vorhanden sind.
+
 ## Zeitplan für die Datenbankwartung {#database}
 
 Es wird empfohlen, regelmäßige Datenbanksicherungen für Ihre Staging- und Produktionsinstanzen durchzuführen. Aufgrund der I/O-intensiven Natur von Sicherungsvorgängen können Sie auf langsamere Backups und potenzielle Probleme stoßen. Das gleichzeitige Ausführen von Datenbankprozessen für mehrere Umgebungen kann aufgrund von Konflikten um verfügbare Ressourcen möglicherweise langsamer ablaufen.
@@ -87,3 +102,24 @@ Es wird empfohlen, regelmäßige Datenbanksicherungen für Ihre Staging- und Pro
 Planen Sie für eine bessere Leistung nacheinander die Ausführung Ihrer Sicherungen zu Zeiten außerhalb der Spitzenzeiten. Diese Methode vermeidet E/A-Konflikte und verkürzt die Fertigstellungszeit, insbesondere für kleinere Instanzen, größere Datenbanken usw.
 
 Beispielsweise wird empfohlen, eine Sicherung Ihrer Produktionsdatenbank und danach die Staging-Datenbank zu planen, wenn Ihre Stores auf geringere Besuche stoßen.
+
+## Anzahl der Produkte im Raster begrenzen
+
+Um die Leistung des Produktrasters für große Kataloge zu verbessern, empfehlen wir, die Anzahl der Produkte im Raster mit der **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** Systemkonfigurationseinstellungen.
+
+Diese Systemkonfigurationseinstellung ist standardmäßig deaktiviert. Durch Aktivierung dieser Option können Sie die Anzahl der Produkte im Raster auf einen bestimmten Wert begrenzen. **[!UICONTROL Records Limit]** ist eine anpassbare Einstellung mit einem Standardwert von `20000`.
+Wenn die **[!UICONTROL Limit Number of Products in Grid]** aktiviert ist und die Anzahl der Produkte im Raster größer als die Datensatzgrenze ist, wird die begrenzte Sammlung von Datensätzen zurückgegeben. Bei Erreichen des Grenzwerts werden die gefundenen Datensätze insgesamt, die Anzahl der ausgewählten Datensätze und die Paginierungselemente aus dem Rasterheader ausgeblendet.
+
+Wenn die Gesamtanzahl der Produkte im Raster begrenzt ist, wirkt sich dies nicht auf Massenaktionen im Produktraster aus. Dies betrifft nur die Darstellungsschicht des Produktraster. Beispielsweise gibt es eine begrenzte Anzahl von `20000` -Produkte im Raster, klickt der Benutzer auf **[!UICONTROL Select All]**, wählt die **[!UICONTROL Update attributes]** Massenaktion und Aktualisierung einiger Attribute. Daher werden alle Produkte aktualisiert, nicht die begrenzte Sammlung von `20000` Datensätze.
+
+Die Produktrasterbegrenzung betrifft nur Produktsammlungen, die von Benutzeroberflächen-Komponenten verwendet werden. Daher sind nicht alle Produktraster von dieser Einschränkung betroffen. Nur diejenigen, die `Magento\Catalog\Ui\DataProvider\Product\ProductCollection`.
+Sie können Produktraster-Sammlungen nur auf den folgenden Seiten einschränken:
+
+* Katalog-Produktraster
+* Hinzufügen von verknüpften/Up-Sell-/Cross-Sell-Produkten-Raster
+* Produkte zum Bundle-Produkt hinzufügen
+* Produkte zum Gruppenprodukt hinzufügen
+* Admin-Bestellseite erstellen
+
+Wenn Sie nicht möchten, dass Ihr Produktraster eingeschränkt wird, empfehlen wir Ihnen, Filter präziser zu verwenden, damit die Ergebnissammlung weniger Elemente enthält als **[!UICONTROL Records Limit]**.
+

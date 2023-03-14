@@ -1,9 +1,9 @@
 ---
 title: Upgrade-Module und -Erweiterungen
 description: Verwenden Sie die Befehlszeilenschnittstelle und den Composer, um Adobe Commerce- und Magento Open Source-Module und -Erweiterungen zu aktualisieren.
-source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ So aktualisieren oder aktualisieren Sie ein Modul oder eine Erweiterung:
 
 Adobe entfernt alle [VBEs](https://devdocs.magento.com/extensions/vendor/) in 2.4.4. Anbieter unterstützen diese Erweiterungen weiterhin auf dem Adobe Commerce Marketplace.
 
-Wenn Sie diese Erweiterungen weiterhin mit Adobe Commerce und Magento Open Source 2.4.4 und höher verwenden möchten, müssen Sie die entsprechenden Paketabhängigkeiten in Ihrer `composer.json` file _before_ Aktualisierung auf 2.4.4. Wenden Sie sich an den Anbieter, um den Paketnamen und die zu verwendende Version zu erhalten.
+Wenn Sie diese Erweiterungen weiterhin mit Adobe Commerce 2.4.4 und höher verwenden möchten, müssen Sie die entsprechenden Paketabhängigkeiten in Ihrer `composer.json` file _before_ Aktualisierung auf 2.4.4. Wenden Sie sich an den Anbieter, um den Paketnamen und die zu verwendende Version zu erhalten.
 
 Weitere Informationen finden Sie in den folgenden Adobe Commerce Marketplace-Listen:
 

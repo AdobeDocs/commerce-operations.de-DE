@@ -1,10 +1,10 @@
 ---
 title: Vor-Ort-Installationsvoraussetzungen
 description: Erfahren Sie mehr über die Softwareabhängigkeiten, die für lokale Installationen von Adobe Commerce und Magento Open Source erforderlich sind.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -100,7 +100,15 @@ Eingabe `exit` im `mysql>` zum Beenden auffordern.
 
 Informationen zum Installieren oder Aktualisieren von MySQL finden Sie unter [MySQL](database/mysql.md).
 
-### Elasticsearch oder OpenSearch
+### Suchmaschine
+
+Überprüfen der OpenSearch-Installation:
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+Überprüfen der Installation des Elasticsearchs:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

@@ -1,10 +1,10 @@
 ---
 title: Veröffentlichungszeitplan
-description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce für die Beta-Freigabe, die Vorabfreigabe und allgemeine Verfügbarkeit geplant sind.
-source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
+description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce für die Beta-, Vorab-Release- und allgemeine Verfügbarkeit geplant sind.
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
 | August 2023 Feature + Sicherheits-Patch-Version | 2.4.6-p2<br>2.4.5-p4<br>2.4.4-p5 | 25. Juli 2023 | 8. August 2023 |
 | Oktober 2023 Feature + Beta Patch-Version + Sicherheits-Patch-Version | 2.4.7-beta2<br>2.4.6-p3<br>2.4.5-p5<br>2.4.4-p6 | 26. September 2023 | 10. Oktober 2023 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 <sup>\-\ - Zeigt Elemente an, die nicht auf diese Version anwendbar sind.</sup><br>
 <sup>1 Beta für Januar 2023 geplant</sup><br>
@@ -39,7 +39,7 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
 
 Die Vorabversion ist der allgemeine Verfügbarkeitscode, der zwei Wochen vor der allgemeinen Verfügbarkeit für Adobe Commerce-Händler und alle Partner verfügbar ist. Dies ermöglicht eine schnellere Bereitstellung von Code vor der allgemeinen Verfügbarkeit.
 
-Weitere Informationen finden Sie im Abschnitt [Beta-Programm](beta-program.md).
+Weitere Informationen finden Sie unter [Beta-Versionen](beta.md).
 
 ## Versionstypen
 

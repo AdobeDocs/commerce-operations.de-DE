@@ -1,8 +1,8 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 1%
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 # Sichere Kommunikation
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## Konfigurieren der einfachen HTTP-Authentifizierung in der Admin-Konsole
 
-Führen Sie dieselben Aufgaben wie unter [Suchmaschinenkonfiguration](../configuration/search/configure-search-engine.md) *Ausnahme* click **[!UICONTROL Yes]** von **[!UICONTROL Enable Elasticsearch HTTP Auth]** und geben Sie Ihren Benutzernamen und Ihr Passwort in die entsprechenden Felder ein.
+Führen Sie dieselben Aufgaben wie unter [Suchmaschinenkonfiguration](../configuration/search/configure-search-engine.md) *Ausnahme* click **[!UICONTROL Yes]** von **[!UICONTROL Enable HTTP Auth]** und geben Sie Ihren Benutzernamen und Ihr Passwort in die entsprechenden Felder ein.
 
 Klicken **[!UICONTROL Test Connection]** , um sicherzustellen, dass sie funktioniert, und klicken Sie dann auf **[!UICONTROL Save Config]**.
 
-Sie müssen den Magento-Cache und die Neuindizierung leeren, bevor Sie fortfahren.
+Sie müssen den Cache und die Neuindizierung leeren, bevor Sie fortfahren.

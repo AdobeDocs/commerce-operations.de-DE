@@ -1,9 +1,9 @@
 ---
 title: Aktualisierungsumfang verstehen
 description: Erfahren Sie mehr über abwärtskompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce- oder Magento Open Source-Module oder Drittanbieter-Erweiterungen auswirken können.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> Die `<dir>` -Argument ist das Verzeichnis, in dem Ihre Codebasis gespeichert ist. Die `-c` vergleicht Ihre Codebasis mit der angegebenen Version (z. B. 2.4.4).
+> Die `<dir>` -Argument ist das Verzeichnis, in dem Ihre Codebasis gespeichert ist. Die `-c` vergleicht Ihre Codebasis mit der angegebenen Version.
 
 So identifizieren Sie die wichtigsten Probleme, die Ihr Team lösen sollte:
 

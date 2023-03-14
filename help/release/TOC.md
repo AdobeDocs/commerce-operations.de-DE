@@ -1,9 +1,9 @@
 ---
 user-guide-title: Versionsinformationen
-user-guide-description: Erfahren Sie mehr über Adobe Commerce- und Magento Open Source-Versionen.
-source-git-commit: 841c6861c6b7a7341f334ba449b6270b31a34e94
+user-guide-description: Greifen Sie auf alle Versionsinformationen für Adobe Commerce-Patches und -Dienste an einem Ort zu.
+source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '92'
 ht-degree: 15%
 
 ---
@@ -43,8 +43,7 @@ ht-degree: 15%
 - [Veröffentlichte Versionen](versions.md)
 - [Funktionen nach Version](features.md)
 - [Produktverfügbarkeit](product-availability.md)
-- [Produkt-Roadmap](product-roadmap.md)
-- [Beta-Programm](beta-program.md)
+- [Beta-Versionen](beta.md)
 - Planung und Strategien {#planning}
    - [Lebenszyklusrichtlinie](lifecycle-policy.md)
    - [Versionierungsrichtlinie](versioning-policy.md)

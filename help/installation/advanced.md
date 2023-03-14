@@ -1,9 +1,9 @@
 ---
 title: Erweiterte Installation vor Ort
 description: Erfahren Sie mehr über erweiterte Installationsszenarios für Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2406'
 ht-degree: 0%
 
 ---
@@ -161,14 +161,21 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 
 | Name | Wert | Erforderlich? |
 |--- |--- |--- |
-| `--search-engine` | Die Version von Elasticsearch oder OpenSearch, die als Suchmaschine verwendet werden soll. Mögliche Werte sind `elasticsearch7`, `elasticsearch6`und `elasticsearch5`. Der Standardwert ist `elasticsearch7`. Um OpenSearch zu verwenden, geben Sie `elasticsearch7`. Elasticsearch 5 ist veraltet und wird nicht empfohlen. | Nein |
-| `--elasticsearch-host` | Der Hostname oder die IP-Adresse, unter der die Suchmaschine ausgeführt wird. Der Standardwert ist `localhost`. | Nein |
-| `--elasticsearch-port` | Der Port für eingehende HTTP-Anforderungen. Der Standardwert ist `9200`. | Nein |
-| `--elasticsearch-index-prefix` | Ein Präfix, das den Suchmaschinenindex angibt. Der Standardwert ist `magento2`. | Nein |
+| `--search-engine` | Die Version von Elasticsearch oder OpenSearch, die als Suchmaschine verwendet werden soll. Der Standardwert ist `elasticsearch7`. Elasticsearch 5 ist veraltet und wird nicht empfohlen. | Nein |
+| `--elasticsearch-host` | Der Hostname oder die IP-Adresse, unter der Elasticsearch ausgeführt wird. Der Standardwert ist `localhost`. | Nein |
+| `--elasticsearch-port` | Der Elasticsearch-Port für eingehende HTTP-Anforderungen. Der Standardwert ist `9200`. | Nein |
+| `--elasticsearch-index-prefix` | Ein Präfix, das den Suchindex des Elasticsearchs angibt. Der Standardwert ist `magento2`. | Nein |
 | `--elasticsearch-timeout` | Die Anzahl der Sekunden, bevor das System eine Zeitüberschreitung aufweist. Der Standardwert ist `15`. | Nein |
-| `--elasticsearch-enable-auth` | Aktiviert die Authentifizierung auf dem Suchmaschinenserver. Der Standardwert ist `false`. | Nein |
-| `--elasticsearch-username` | Die Benutzer-ID zur Authentifizierung der Suchmaschine | Nein, sofern die Authentifizierung nicht aktiviert ist |
-| `--elasticsearch-password` | Das Kennwort zur Authentifizierung der Suchmaschine | Nein, sofern die Authentifizierung nicht aktiviert ist |
+| `--elasticsearch-enable-auth` | Aktiviert die Authentifizierung auf dem Elasticsearch-Server. Der Standardwert ist `false`. | Nein |
+| `--elasticsearch-username` | Die Benutzer-ID für die Authentifizierung beim Elasticsearch-Server. | Nein, sofern die Authentifizierung nicht aktiviert ist |
+| `--elasticsearch-password` | Das Kennwort für die Authentifizierung beim Elasticsearchserver. | Nein, sofern die Authentifizierung nicht aktiviert ist |
+| `--opensearch-host` | Der Hostname oder die IP-Adresse, unter der OpenSearch ausgeführt wird. Der Standardwert ist `localhost`. | Nein |
+| `--opensearch-port` | Der OpenSearch-Port für eingehende HTTP-Anforderungen. Der Standardwert ist `9200`. | Nein |
+| `--opensearch-index-prefix` | Ein Präfix, das den OpenSearch-Suchindex angibt. Der Standardwert ist `magento2`. | Nein |
+| `--opensearch-timeout` | Die Anzahl der Sekunden, bevor das System eine Zeitüberschreitung aufweist. Der Standardwert ist `15`. | Nein |
+| `--opensearch-enable-auth` | Aktiviert die Authentifizierung auf dem OpenSearch-Server. Der Standardwert ist `false`. | Nein |
+| `--opensearch-username` | Die Benutzer-ID für die Authentifizierung beim OpenSearch-Server. | Nein, sofern die Authentifizierung nicht aktiviert ist |
+| `--opensearch-password` | Das Kennwort für die Authentifizierung beim OpenSearch-Server. | Nein, sofern die Authentifizierung nicht aktiviert ist |
 
 **[!DNL RabbitMQ]Konfigurationsoptionen:**
 
@@ -231,7 +238,7 @@ Im folgenden Beispiel wird Adobe Commerce oder Magento Open Source mit den folge
 * Standardsprache ist `en_US` (US-Englisch)
 * Die Standardwährung ist US-Dollar.
 * Die standardmäßige Zeitzone ist US Central (Amerika/Chicago).
-* OpenSearch 1.2 ist auf installiert. `es-host.example.com` und Verbindungen an Port 9200
+* OpenSearch 1.2 ist auf installiert. `os-host.example.com` und Verbindungen an Port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -239,8 +246,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 Meldungen, die der folgenden Anzeige ähneln, zeigen eine erfolgreiche Installation an:
@@ -261,8 +268,8 @@ Sie können Adobe Commerce oder Magento Open Source installieren, ohne den Admin
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 Meldungen wie die folgende werden bei erfolgreicher Installation angezeigt:
@@ -303,7 +310,7 @@ Im folgenden Beispiel wird Adobe Commerce oder Magento Open Source mit den folge
 * Sie können das Präfix zur Erhöhung der Verkaufsaufträge verwenden `ORD$` (da es ein Sonderzeichen enthält) [`$`], muss der Wert in doppelte Anführungszeichen gesetzt werden.)
 * Sitzungsdaten werden in der Datenbank gespeichert
 * Verwendet Server-Neuschreibungen
-* Elasticsearch 7 ist auf installiert. `es-host.example.com` und Verbindungen an Port 9200
+* OpenSearch ist auf installiert. `os-host.example.com` und Verbindungen an Port 9200
 
 ```bash
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
@@ -312,8 +319,8 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --admin-user=admin --admin-password=admin123 --language=en_US \
 --currency=USD --timezone=America/Chicago --cleanup-database \
 --sales-order-increment-prefix="ORD$" --session-save=db --use-rewrites=1 \
---search-engine=elasticsearch7 --elasticsearch-host=es-host.example.com \
---elasticsearch-port=9200
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200
 ```
 
 >[!NOTE]
