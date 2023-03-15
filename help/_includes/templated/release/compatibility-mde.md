@@ -1,7 +1,7 @@
 ---
-source-git-commit: dbfb4dadf5033eb580d3d47e9b2055ddeb316461
+source-git-commit: f918da5f205b23a2e11faaa06fb0572ca72cdaa4
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -1139,6 +1139,25 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="9">Quick Checkout</th>
+    </tr>
+    <tr>
+      <td>Quick Checkout 1.8.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Kompatibel</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
     </tr>
     <tr>
       <td>Quick Checkout 1.7.0</td>
