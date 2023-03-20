@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
+source-git-commit: 4117662e4b3686388d578ae3e620ee6478216a98
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 70%
@@ -78,7 +78,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.4
+            8.4, 7.17
       </td>
       <td>
             7.17
@@ -258,7 +258,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+            8.1, 8.2
       </td>
       <td>
             8.1
