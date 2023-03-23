@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
-source-git-commit: f1c6c816695e01fc30d0ab0a7a9c43122a130cb5
+source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
 workflow-type: tm+mt
-source-wordcount: '11145'
+source-wordcount: '11561'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,27 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.29 {#v1-1-29}
+
+* **ACSD-49389** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem eine gebrauchsfertige E-Mail per API gesendet wird, wenn die Bestellung nicht abgeholt werden kann.
+* **ACSD-49822** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Aktualisierungen in der [!UICONTROL Requisition List] -Seite nicht auf der Seite [!UICONTROL Print Requisition List].
+* **ACSD-48771** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebt das Problem mit der Aktualisierung des Spaltenblock-Inhaltstyps von älteren [!DNL Page Builder] Versionen.
+* **ACSD-49464** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Rechnungen, Sendungen und Credit Memos nicht aus dem Archiv verschoben werden, wenn die orderId unterschiedlich ist.
+* **ACSD-49773** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.6) - Behebung des Problems, bei dem der Produktexport fehlschlägt, wenn AWS S3 als Remote-Speicher verwendet wird.
+* **ACSD-49748** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Einladungen nicht gesendet werden können.
+* **ACSD-49502** (für Adobe Commerce >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem der herunterladbare Link nach der Anwendung eines Staging-Updates auf das herunterladbare Produkt nicht ordnungsgemäß aktualisiert wird.
+* **ACSD-49527** (für Adobe Commerce >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem die Seitenumbrüche in GraphQL-Unternehmensrollen nicht korrekt angezeigt werden.
+* **ACSD-49706** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem der Standardwert für ein visuelles Farbfeldattribut gespeichert wird, wenn kein Wert ausgewählt ist.
+* **ACSD-49835** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem der Wert des Kontrollkästchens &quot;Use default&quot;nicht ordnungsgemäß auf Store-Ebene für ein Attribut mit Mehrfachauswahl gespeichert wurde.
+* **ACSD-49898** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.6) - Behebung des Problems, bei dem das Produktnetz eine Ausnahme auslöst, wenn ein gebündeltes Produkt einen Sonderpreis von mehr als 1000 aufweist.
+* **ACSD-50234** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.5) - Behebt das Problem mit dem falschen Kundennamen in der Bestätigungs-E-Mail, wenn eine Bestellung mit [!DNL PayPal].
+* **ACSD-49960** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem das Filtern nach Datum für das Kundenbestellungsraster nicht funktioniert.
+* **ACSD-49849** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.6) - Behebung des Problems, bei dem die E-Mail von Kunden durch ersetzt wurde [!DNL PayPal] E-Mail beim Einfügen einer Bestellung mit [!DNL PayPal Express] über GraphQL.
+* **ACSD-49839** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem die gemeinsame Katalogpreisstruktur und -struktur in Admin einen Fehler auslöst, wenn Produkte einfache oder doppelte Anführungszeichen in der SKU enthalten.
+* **ACSD-49970** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebt fehlerhafte Handhabung von GraphQL-Fehlern bei [!DNL New Relic] Die Berichterstellung ist aktiviert.
+* **ACSD-50260** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem die GraphQL-Produktsuchergebnisse nur auf 10.000 Ergebnisse beschränkt sind.
+* **ACSD-48813** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem bei der Suche keine relevanten Ergebnisse basierend auf der Suchgewichtung der Attribute angezeigt werden.
 
 ## v1.1.28 {#v1-1-28}
 
