@@ -1,9 +1,9 @@
 ---
 title: Referenz zu Katalogkonfigurationspfaden
 description: Eine Liste der Katalogkonfigurationswerte anzeigen.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Recommendations-Anzahl durchsuchen | `catalog/search/search_recommendations_count` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Ergebnisanzahl für jede Empfehlung anzeigen | `catalog/search/search_recommendations_count_results_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mindestens passende Begriffe | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| URL-Neuschreibungen für &quot;Kategorie/Produkt&quot;generieren | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Beliebte Suchbegriffe | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Produkt-URL-Suffix | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Kategorie-URL-Suffix | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +116,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Upsell-Produkte anzeigen | `catalog/magento_targetrule/upsell_position_behavior` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Rotationsmodus für Produkte in der Upsell-Produktliste | `catalog/magento_targetrule/upsell_rotation_mode` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Lagerpfade
 
@@ -145,7 +146,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Berechnungsmodus | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Wert | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Visual Merchandising-Pfade
 
@@ -158,7 +159,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Farbattribut-Code | `visualmerchandiser/options/color_attribute_code` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Farbreihenfolge | `visualmerchandiser/options/color_order` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## XML-Sitemap-Pfade
 
@@ -182,7 +183,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Maximale Dateigröße | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren der Übermittlung an Robots.txt | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## RSS-Feed-Pfade
 
@@ -198,7 +199,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Kategorie der obersten Ebene | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Benachrichtigung zum Status von Kundenbestellungen | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## E-Mail an Freunde-Pfade
 
@@ -213,4 +214,4 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Maximale Anzahl an in 1 Stunde gesendeten Produkten | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Senden begrenzen nach | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
