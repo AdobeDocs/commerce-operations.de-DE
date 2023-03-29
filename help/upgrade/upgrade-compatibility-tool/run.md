@@ -1,9 +1,9 @@
 ---
 title: "Führen Sie die [!DNL Upgrade Compatibility Tool]"
 description: Führen Sie die folgenden Schritte aus, um [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt.
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Verfügbare Befehle für [!DNL Upgrade Compatibility Tool] in einer Befehlszeile
 | `dbschema:diff` | Dieser Befehl zeigt alle Unterschiede zwischen zwei angegebenen Adobe Commerce-Versionen des Datenbankschemas an. |
 | `core:code:changes` | Dieser Befehl vergleicht Ihre aktuelle Adobe Commerce-Installation mit einer sauberen Vanilla-Installation. |
 | `refactor` | Dieser Befehl behebt automatisch eine reduzierte Anzahl von Problemen. |
-| `graphql:compare` | Dieser Befehl bietet die Möglichkeit, zwei GraphQL-Endpunkte zu überprüfen und ihre Schemas zu vergleichen. |
+| `graphql:compare` | Dieser Befehl bietet die Möglichkeit, zwei GraphQL-Endpunkte zu untersuchen und ihre Schemas zu vergleichen. |
 | `list` | Dieser Befehl gibt eine Liste aller [!DNL Upgrade Compatibility Tool] verfügbare Befehle. |
 | `help` | Dieser Befehl gibt alle verfügbaren `help`Optionen für [!DNL Upgrade Compatibility Tool]. Dieser Befehl kann ebenso ausgeführt werden wie eine Option mit den vorherigen Befehlen. |
 
@@ -207,7 +207,7 @@ So geben Sie eine Liste der [!DNL Upgrade Compatibility Tool] verfügbare Befehl
 bin/uct list
 ```
 
-## Verwenden Sie die `--help` command
+## Verwenden Sie die `help` command
 
 So zeigen Sie die [!DNL Upgrade Compatibility Tool] allgemeine Optionen und Hilfe, ausführen:
 
@@ -260,6 +260,7 @@ Dadurch werden bestimmte Optionen zurückgegeben, die für die `upgrade:check` c
 - Vermeiden Sie es, zwei Module mit demselben Namen zu haben.
 - Folgen Sie Adobe Commerce [Codierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Upgrade-Handbuch](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) Best Practices.
+- Führen Sie die [!DNL Upgrade Compatibility Tool] von [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) für [Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} Projekte.
 
 ## Ergebnisse optimieren
 
