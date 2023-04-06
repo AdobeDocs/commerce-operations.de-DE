@@ -1,9 +1,9 @@
 ---
 title: Aufspaltung der Datenbankleistung
 description: Erfahren Sie mehr über die geteilte Datenbanklösung für Adobe Commerce und Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce verwendet drei Übergeordnete Datenbanken und eine konfigurierbar
 Aufgrund der Art und Weise, wie die aufgespaltete Datenbank-Performance-Lösung entworfen wird, Ihr benutzerdefinierter Code und die installierten Komponenten _cannot_ Führen Sie einen der folgenden Schritte aus:
 
 - Direktes Schreiben in die Datenbank (stattdessen müssen Sie die Adobe Commerce-Datenbankschnittstelle verwenden)
-- Verwenden von JOINs, die sich auf den Verkauf oder [Anführungszeichen](https://glossary.magento.com/quote) Datenbanken
+- Verwenden von JOINs, die sich auf die Verkaufs- oder Kursdatenbanken auswirken
 - Fremdschlüssel für Tabellen in den Kasse-, Verkaufs- oder Hauptdatenbanken verwenden
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Dies bedeutet auch, dass Sie Folgendes tun können:
 
 Für die geteilte Datenbank müssen Sie drei Übergeordnete MySQL-Datenbanken auf einem beliebigen Host einrichten (alle drei auf dem Commerce-Server, jede Datenbank auf einem separaten Server usw.). Dies sind die _Übergeordnet_ Datenbanken und werden wie folgt verwendet:
 
-- Eine Übergeordnete Datenbank für [Kasse](https://glossary.magento.com/checkout) Tabellen
+- Eine Übergeordnete Datenbank für Checkout-Tabellen
 - Eine Übergeordnete Datenbank für Verkaufstabellen (auch als _Order Management System_ oder _OMS_, Tabellen)
 - Eine Übergeordnete Datenbank für die restlichen Commerce 2-Anwendungstabellen
 

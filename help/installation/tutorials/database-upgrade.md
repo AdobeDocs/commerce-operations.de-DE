@@ -1,9 +1,9 @@
 ---
 title: Datenbankschema und Daten aktualisieren
 description: Führen Sie diese Schritte aus, um Ihr Adobe Commerce- oder Magento Open Source-Datenbankschema zu aktualisieren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Bevor Sie diesen Befehl verwenden, müssen Sie [Installieren des Programms](../a
 
 ## Datenbankschema und Daten aktualisieren
 
-Jedes Mal, wenn Sie eine Aktion ausführen, die die [Datenbankschema](https://glossary.magento.com/database-schema) oder Daten, die geändert werden sollen, müssen Sie sie aktualisieren, indem Sie den in diesem Abschnitt beschriebenen Befehl ausführen. Es folgt eine teilweise Liste der Gründe:
+Jedes Mal, wenn Sie eine Aktion ausführen, die eine Änderung des Datenbankschemas oder der Daten bewirkt, müssen Sie diese aktualisieren, indem Sie den in diesem Abschnitt beschriebenen Befehl ausführen. Es folgt eine teilweise Liste der Gründe:
 
 * Sie haben das Programm mithilfe der Befehlszeile aktualisiert.
 * Sie haben eine Komponente mithilfe der Befehlszeile installiert oder aktualisiert.

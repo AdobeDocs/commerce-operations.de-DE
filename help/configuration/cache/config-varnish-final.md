@@ -1,9 +1,9 @@
 ---
 title: Endgültige Überprüfung
 description: Stellen Sie sicher, dass Ihre Varnish-Konfiguration ordnungsgemäß für die Verwendung mit der Adobe Commerce-Anwendung eingerichtet ist.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ X-Magento-Cache-Debug: MISS
 
 ## Überprüfen der Seitenladezeiten
 
-Wenn Varnish funktioniert, sollte jede Commerce-Seite mit zwischenspeicherbaren Bausteinen in weniger als 150 ms geladen werden. Beispiele für solche Seiten sind die Haustür und [storefront](https://glossary.magento.com/storefront) [category](https://glossary.magento.com/category) Seiten.
+Wenn Varnish funktioniert, sollte jede Commerce-Seite mit zwischenspeicherbaren Bausteinen in weniger als 150 ms geladen werden. Beispiele für solche Seiten sind die Kategorieseiten &quot;Haustür&quot;und &quot;Storefront&quot;.
 
 Verwenden Sie einen Browser-Inspektor, um die Seitenladezeiten zu messen.
 
@@ -66,7 +66,7 @@ So verwenden Sie beispielsweise den Chrome-Inspektor:
 
 Stellen Sie sicher, dass `<magento_root>/var/page_cache` Verzeichnis ist leer:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](https://glossary.magento.com/magento-file-system-owner).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zum Dateisysteminhaber.
 1. Geben Sie den folgenden Befehl ein:
 
    ```bash

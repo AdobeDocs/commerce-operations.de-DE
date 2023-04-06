@@ -1,9 +1,9 @@
 ---
 title: Optionale Software
 description: Erfahren Sie mehr über optionale Software, die Sie installieren können, um lokale Installationen von Adobe Commerce und Magento Open Source zu unterstützen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ So installieren und konfigurieren Sie NTP:
    yum search ntp
    ```
 
-1. Wählen Sie ein zu installierendes Paket aus. Beispiel, `ntp.x86_64`.
+1. Wählen Sie ein zu installierendes Paket aus. Beispiel: `ntp.x86_64`.
 
 1. Installieren Sie das Paket.
 
@@ -99,7 +99,7 @@ Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, e
 
 ## Erstellen von phpinfo.php
 
-Die [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) -Datei eine große Menge an Informationen zu [PHP](https://glossary.magento.com/php) und deren Erweiterungen.
+Die [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) zeigt eine große Menge an Informationen über PHP und seine Erweiterungen an.
 
 >[!NOTE]
 >
@@ -115,7 +115,7 @@ phpinfo();
 
 Weitere Informationen finden Sie unter [phpinfo-manuelle Seite](https://www.php.net/manual/en/function.phpinfo.php).
 
-Geben Sie Folgendes ein, um die Ergebnisse anzuzeigen [URL](https://glossary.magento.com/url) in das Adressfeld Ihres Browsers:
+Um die Ergebnisse anzuzeigen, geben Sie die folgende URL in das Adressfeld Ihres Browsers ein:
 
 ```http
 http://<web server host or IP>/phpinfo.php

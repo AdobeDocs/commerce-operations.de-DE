@@ -1,9 +1,9 @@
 ---
 title: In Ubuntu zwischengespeicherte Einrichtung einrichten
 description: Installieren und konfigurieren Sie gecacht auf Ubuntu.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ So überprüfen Sie, ob die zwischengespeicherten Daten vom Webserver erkannt we
 
 ### Überprüfen, ob zwischengespeicherte Daten zwischengespeichert werden können
 
-Dieser Test verwendet ein PHP-Skript, um zu überprüfen, ob zwischengespeicherte Dateien speichern und abrufen können [cache](https://glossary.magento.com/cache) Daten.
+Dieser Test verwendet ein PHP-Skript, um zu überprüfen, ob zwischengespeicherte Cachedaten speichern und abrufen können.
 
 Weitere Informationen zu diesem Test finden Sie unter [Tutorial zur Installation und Verwendung von Memcache auf Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 

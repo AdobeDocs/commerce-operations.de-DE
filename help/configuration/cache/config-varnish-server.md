@@ -1,9 +1,9 @@
 ---
 title: Webserver konfigurieren
 description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung mit Varnish konfigurieren.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## Überprüfen von HTTP-Antwortheadern
 
-Jetzt können Sie überprüfen, ob Varnish Seiten bereitstellt, indem Sie [HTML](https://glossary.magento.com/html) Antwortheader, die von einer beliebigen Seite zurückgegeben werden.
+Jetzt können Sie überprüfen, ob Varnish Seiten bereitstellt, indem Sie sich die HTML-Antwort-Header ansehen, die von einer beliebigen Seite zurückgegeben werden.
 
 Bevor Sie Kopfzeilen anzeigen können, müssen Sie Commerce für den Entwicklermodus festlegen. Es gibt mehrere Möglichkeiten, dies zu tun, am einfachsten ist es, `.htaccess` im Commerce-Anwendungsstamm. Sie können auch die [`magento deploy:mode:set`](../cli/set-mode.md) Befehl.
 
@@ -235,7 +235,7 @@ Wenn solche Header _not_ anzeigen, Varnish stoppen, überprüfen Sie Ihre `defau
 
 ### HTML-Antwort-Header
 
-Es gibt mehrere Möglichkeiten, Antwortheader anzuzeigen, einschließlich der Verwendung eines Browsers [Plug-in](https://glossary.magento.com/plug-in) oder einem Browser-Inspektor.
+Es gibt mehrere Möglichkeiten, Antwortheader anzuzeigen, einschließlich der Verwendung eines Browser-Plug-ins oder eines Browser-Inspektors.
 
 Das folgende Beispiel verwendet `curl`. Sie können diesen Befehl von jedem Computer aus eingeben, der über HTTP auf den Commerce-Server zugreifen kann.
 

@@ -1,9 +1,9 @@
 ---
 title: Systemanforderungen
 description: Verwenden Sie diese Referenz, um erforderliche Softwareabhängigkeiten zu identifizieren, die mit Adobe Commerce- und Magento Open Source-Versionen getestet wurden.
-source-git-commit: 61a477ec6118e4a228ddbb956e613fa3bec9c91c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Adobe Commerce und Magento Open Source benötigen für einige Vorgänge die folg
 
 ### SSL
 
-- Eine gültige [Sicherheitszertifikat](https://glossary.magento.com/security-certificate) ist für HTTPS erforderlich.
+- Für HTTPS ist ein gültiges Sicherheitszertifikat erforderlich.
 - Selbstsignierte SSL-Zertifikate werden nicht unterstützt.
 - Transport Layer Security (TLS)-Anforderung - PayPal und `repo.magento.com` beide erfordern TLS 1.2 oder höher.
 

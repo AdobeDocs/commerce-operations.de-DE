@@ -1,9 +1,9 @@
 ---
 title: Cache-Leerung mit Varnish
 description: Erfahren Sie, wie das Cache-Leeren mit Varnish funktioniert und wie Sie es als Web-Caching-Beschleuniger für die Adobe Commerce-Anwendung verwenden.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ In diesem Thema werden die Grundlagen der Verwendung von Varnish als Web-Caching
 
 ## Abfallbereinigung
 
-Gemäß [Varnish-Dokumentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *Bereinigung* was passiert, wenn Sie ein Objekt aus der [cache](https://glossary.magento.com/cache) und verwerfen sie mit ihren Varianten.&quot; Eine Bereinigung ähnelt einem Befehl zum Bereinigen des Caches (oder Klicken auf **Magento-Cache leeren** im Admin).
+Gemäß [Varnish-Dokumentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *Bereinigung* ist das, was passiert, wenn Sie ein Objekt aus dem Cache auswählen und zusammen mit seinen Varianten verwerfen.&quot; Eine Bereinigung ähnelt einem Befehl zum Bereinigen des Caches (oder Klicken auf **Magento-Cache leeren** im Admin).
 
 Wenn Sie den Commerce-Cache bereinigen, leeren oder aktualisieren, wird auch der Vorgang &quot;Varnish&quot;bereinigt.
 
 Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfiguriert haben, können die folgenden Aktionen zu einer Bereinigung des Abstands führen:
 
-- Wartung einer [website](https://glossary.magento.com/website).
+- Pflegen einer Website.
 
    Alles, was Sie beispielsweise im Admin in tun:
 

@@ -1,9 +1,9 @@
 ---
 title: Konfigurationseinstellungen überschreiben
 description: Erfahren Sie, wie Sie Umgebungsvariablen verwenden, um Konfigurationseinstellungen zu überschreiben.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ So suchen Sie beispielsweise einen Website- oder Store-Ansichtsbereichswert in d
 
 So rufen Sie diese Werte aus der Datenbank ab:
 
-1. Melden Sie sich bei Ihrem Entwicklungssystem als [Dateisysteminhaber](https://glossary.magento.com/magento-file-system-owner) wenn Sie dies noch nicht getan haben.
+1. Melden Sie sich bei Ihrem Entwicklungssystem als Eigentümer des Dateisystems an, falls Sie dies noch nicht getan haben.
 1. Geben Sie den folgenden Befehl ein:
 
    ```bash

@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices zum Konfigurieren privater I
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Wenn ein privater Inhaltsbaustein die Variable `_isScopePrivate` nicht zwischenspeicherbar ist. Da der private Block nicht zwischengespeichert wird, muss Adobe Commerce für jede Kundenanfrage dieselben Daten abrufen, was die Serverlast erhöht.
 
-Statt die `_isScopePrivate` für privaten Inhalt erstellen Sie einen Block und eine Vorlage, um benutzeragnostische Daten anzuzeigen. Diese Daten werden von der Adobe Commerce durch benutzerspezifische Daten ersetzt [UI-Komponente](https://glossary.magento.com/ui-component/), die die Vorab-Rendering-Daten effizienter verarbeitet. Anweisungen finden Sie unter [Private Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) im _[!DNL Commerce PHP Extensions Guide]_.
+Statt die `_isScopePrivate` für privaten Inhalt erstellen Sie einen Block und eine Vorlage, um benutzeragnostische Daten anzuzeigen. Diese Daten werden durch benutzerspezifische Daten durch die Adobe Commerce-UI-Komponente ersetzt, die die Vorab-Rendering-Daten effizienter verarbeitet. Anweisungen finden Sie unter [Private Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) im _[!DNL Commerce PHP Extensions Guide]_.
 
 ## Betroffene Produkte und Versionen
 

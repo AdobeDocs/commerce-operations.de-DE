@@ -1,9 +1,9 @@
 ---
 title: Voraussetzungen für Suchmaschinen
 description: Führen Sie diese Schritte aus, um unterstützte Suchmaschinensoftware für lokale Installationen von Adobe Commerce und Magento Open Source zu installieren und zu konfigurieren.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Voraussetzungen für Suchmaschinen
 
-Ab Adobe Commerce und Magento Open Source 2.4 müssen alle Installationen für die Verwendung von [Elasticsearch](https://www.elastic.co) oder [OpenSearch](https://opensearch.org/) als [Katalog](https://glossary.magento.com/catalog) Suchlösung.
+Ab Adobe Commerce und Magento Open Source 2.4 müssen alle Installationen für die Verwendung von [Elasticsearch](https://www.elastic.co) oder [OpenSearch](https://opensearch.org/) als Katalogsuchlösung.
 
 >[!NOTE]
 >

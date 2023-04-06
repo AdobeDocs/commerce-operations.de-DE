@@ -1,9 +1,9 @@
 ---
 title: Übersetzungswörterbücher und Sprachpakete
 description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete erstellen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Siehe [Übersetzungen - Übersicht].
 
 ## Übersetzungswörterbuch erstellen
 
-Sie können eine [Übersetzungswörterbuch] um vorhandene Zeichenfolgen anzupassen, Wörter und Ausdrücke in einem benutzerdefinierten Modul zu übersetzen, ein Design zu lokalisieren oder zu erstellen [Sprachpakete](https://glossary.magento.com/language-package).
+Sie können eine [Übersetzungswörterbuch] um vorhandene Zeichenfolgen anzupassen, Wörter und Ausdrücke in einem benutzerdefinierten Modul zu übersetzen, ein Design zu lokalisieren oder Sprachpakete zu erstellen.
 
 Um mit der Übersetzung zu beginnen, verwenden Sie einen Befehl, um eine Wörterbuch-CSV-Datei mit einer Liste aller vorhandenen Ausdrücke und Wörter zu generieren.
 
@@ -139,7 +139,7 @@ So erstellen Sie diese Dateien:
 
 Beim Deklarieren eines Sprachpakets im `language.xml` Konfigurationsdatei, müssen Sie die Reihenfolge der Sprachvererbung für dieses Paket angeben.
 
-Durch die Sprachvererbung können Sie eine Übersetzung erstellen, die als _child_ basierend auf einer vorhandenen Übersetzung, die als _parent_. Die untergeordneten Übersetzungen überschreiben die übergeordnete. Wenn die untergeordnete Übersetzung jedoch nicht hochgeladen oder angezeigt werden kann oder eine Wortgruppe oder ein Wort fehlt, verwendet Commerce die übergeordnete [locale](https://glossary.magento.com/locale). [Beispiele für die Vererbung von Sprachpaketen](#example-of-language-inheritance).
+Durch die Sprachvererbung können Sie eine Übersetzung erstellen, die als _child_ basierend auf einer vorhandenen Übersetzung, die als _parent_. Die untergeordneten Übersetzungen überschreiben die übergeordnete. Wenn die untergeordnete Übersetzung jedoch nicht hochgeladen oder angezeigt werden kann oder eine Wortgruppe oder ein Wort fehlt, verwendet Commerce das übergeordnete Gebietsschema. [Beispiele für die Vererbung von Sprachpaketen](#example-of-language-inheritance).
 
 Geben Sie die folgenden Informationen an, um ein Package zu deklarieren:
 

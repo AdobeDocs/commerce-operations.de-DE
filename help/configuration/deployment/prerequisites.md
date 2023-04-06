@@ -1,9 +1,9 @@
 ---
 title: Voraussetzungen für die Bereitstellung
 description: Sehen Sie sich eine Liste der Voraussetzungen für die Bereitstellung von Commerce in einem Entwicklungs-, Build- oder Produktionssystem an.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Dateiberechtigungen und -besitz müssen in Entwicklungs-, Build- und Produktions
 
 - Folgendes:
 
-   - Richten Sie dasselbe ein [Dateisysteminhaber](https://glossary.magento.com/magento-file-system-owner) Benutzername auf allen Systemen
+   - Richten Sie auf allen Systemen denselben Benutzernamen des Dateisysteminhabers ein.
    - Stellen Sie sicher, dass der Webserver auf allen Systemen als derselbe Benutzer ausgeführt wird.
    - Stellen Sie sicher, dass sich der Eigentümer des Dateisystems in der Gruppe der Webserver auf allen Systemen befindet.
 

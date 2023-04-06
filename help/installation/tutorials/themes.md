@@ -1,9 +1,9 @@
 ---
 title: Designs deinstallieren
 description: Führen Sie diese Schritte aus, um ein Adobe Commerce- oder Magento Open Source-Design zu deinstallieren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Designs deinstallieren
 
-Bevor Sie diesen Befehl verwenden, müssen Sie den relativen Pfad zu Ihrem Design kennen. Designs befinden sich in einem Unterverzeichnis von `<magento_root>/app/design/<area name>`. Sie müssen den Pfad zum Thema angeben, beginnend mit dem Bereich, der entweder `frontend` (für Storefront-Designs) oder `adminhtml` (für [Admin](https://glossary.magento.com/magento-admin) Themen).
+Bevor Sie diesen Befehl verwenden, müssen Sie den relativen Pfad zu Ihrem Design kennen. Designs befinden sich in einem Unterverzeichnis von `<magento_root>/app/design/<area name>`. Sie müssen den Pfad zum Thema angeben, beginnend mit dem Bereich, der entweder `frontend` (für Storefront-Designs) oder `adminhtml` (für Admin-Designs).
 
-Beispielsweise der Pfad zum Luma [Design](https://glossary.magento.com/theme) mit Adobe Commerce und Magento Open Source bereitgestellt wird `frontend/Magento/luma`.
+Beispielsweise lautet der Pfad zum Luma-Design, das mit Adobe Commerce und Magento Open Source bereitgestellt wird: `frontend/Magento/luma`.
 
 Weitere Informationen zu Designs finden Sie unter [Designstruktur](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -21,7 +21,7 @@ Weitere Informationen zu Designs finden Sie unter [Designstruktur](https://devel
 
 In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Designs deinstallieren, optional einschließlich des Designcodes aus dem Dateisystem. Sie können zunächst Sicherungen erstellen, damit Sie die Daten später wiederherstellen können.
 
-Dieser Befehl deinstalliert *only* Designs, die in `composer.json`; mit anderen Worten: Themen, die als [Verfasser](https://glossary.magento.com/composer) Packages. Wenn Ihr Design kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie:
+Dieser Befehl deinstalliert *only* Designs, die in `composer.json`; d. h. Themen, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Design kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie:
 
 * Aktualisieren der `parent` Knoteninformationen in `theme.xml` , um Verweise auf das Design zu entfernen.
 * Entfernen des Design-Codes aus dem Dateisystem.
@@ -61,7 +61,7 @@ Der Befehl führt die folgenden Aufgaben aus:
 
 1. Entfernt Designs aus der `theme` Datenbanktabelle.
 1. Entfernen Sie Designs aus der Codebasis mit `composer remove`.
-1. Bereinigt die [cache](https://glossary.magento.com/cache).
+1. Löscht den Cache.
 1. Bereinigt generierte Klassen
 1. Wenn `--clear-static-content` spezifiziert ist, cleans [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
 
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->So deinstallieren Sie eine [Admin](https://glossary.magento.com/admin) -Design verwenden, müssen Sie es auch aus dem [Abhängigkeitsinjektion](https://glossary.magento.com/dependency-injection) Konfiguration, `<component root directory>/etc/di.xml`.
+>Um ein Admin-Design zu deinstallieren, müssen Sie es auch aus der Konfiguration für die Injektion von Abhängigkeiten Ihrer Komponente entfernen. `<component root directory>/etc/di.xml`.

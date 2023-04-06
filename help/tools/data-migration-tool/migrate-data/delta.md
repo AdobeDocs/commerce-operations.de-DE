@@ -1,9 +1,9 @@
 ---
 title: Migrieren von Änderungen
 description: Erfahren Sie, wie Sie nur Daten migrieren, die sich seit der Datenmigration aus dem letzten Magento 1 geändert haben, mit der [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 Das Tool für die inkrementelle Migration installiert Deltalog-Tabellen (mit Präfix `m2_cl_*`) und Triggern (zur Nachverfolgung von Änderungen in der Datenbank von Magento 1 während der [Datenmigration](data.md). Diese Dialogfeldtabellen und -Trigger sind unverzichtbar, um sicherzustellen, dass Sie nur die Änderungen migrieren, die seit der letzten Datenmigration in Magento 1 vorgenommen wurden. Diese Änderungen sind:
 
-* Daten, die Kunden über hinzugefügt haben [storefront](https://glossary.magento.com/storefront) (erstellte Bestellungen, Überprüfungen und Änderungen in Kundenprofilen)
+* Daten, die Kunden über Storefront hinzugefügt haben (erstellte Bestellungen, Rezensionen und Änderungen in Kundenprofilen)
 
-* Alle Vorgänge mit Bestellungen, Produkten und Kategorien im [Admin](https://glossary.magento.com/magento-admin) panel
+* Alle Vorgänge mit Bestellungen, Produkten und Kategorien im Admin Panel
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Dabei gilt:
 
 Im `Delta` -Modus, die [!DNL Data Migration Tool] migriert Daten, die nur von den eigenen Modulen von Magento erstellt wurden, und ist nicht für den Code oder die Erweiterungen von Drittanbieterentwicklern verantwortlich. Wenn diese Erweiterungen Daten in der Storefront-Datenbank erstellt haben und der Händler diese Daten in Magento 2 — Konfigurationsdateien des [!DNL Data Migration Tool] sollte entsprechend erstellt und geändert werden.
 
-Wenn eine [Erweiterung](https://glossary.magento.com/extension) verfügt über eigene Tabellen. Sie müssen die Änderungen für die Delta-Migration verfolgen und die folgenden Schritte ausführen:
+Wenn eine Erweiterung über eigene Tabellen verfügt und Sie ihre Änderungen für die Delta-Migration verfolgen müssen, führen Sie die folgenden Schritte aus:
 
 1. Fügen Sie die zu verfolgenden Tabellen zum `deltalog.xml` file
 1. Erstellen Sie eine zusätzliche Delta-Klasse, die die `Migration\App\Step\AbstractDelta`

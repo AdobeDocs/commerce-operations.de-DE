@@ -1,9 +1,9 @@
 ---
 title: In CentOS zwischengespeicherte Einrichtung einrichten
 description: Installieren und konfigurieren Sie gecacht auf CentOS.
-source-git-commit: 65060d067bbbfe139736df3800688ce897cb17be
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Wenn memcache nicht angezeigt wird, starten Sie den Webserver neu und aktualisie
 
 ### Erstellen Sie einen Memcache-Test, der aus einer MySQL-Datenbank und einem PHP-Skript besteht.
 
-Der Test verwendet eine MySQL-Datenbank, eine Tabelle und Daten, um zu überprüfen, ob Sie die Datenbankdaten abrufen und in memcache speichern können. Ein PHP-Skript durchsucht zunächst die [cache](https://glossary.magento.com/cache). Wenn das Ergebnis nicht vorhanden ist, fragt das Skript die Datenbank ab. Nachdem die Abfrage von der ursprünglichen Datenbank erfüllt wurde, speichert das Skript das Ergebnis in memcache, indem es die `set` Befehl.
+Der Test verwendet eine MySQL-Datenbank, eine Tabelle und Daten, um zu überprüfen, ob Sie die Datenbankdaten abrufen und in memcache speichern können. Ein PHP-Skript durchsucht zunächst den Cache. Wenn das Ergebnis nicht vorhanden ist, fragt das Skript die Datenbank ab. Nachdem die Abfrage von der ursprünglichen Datenbank erfüllt wurde, speichert das Skript das Ergebnis in memcache, indem es die `set` Befehl.
 
 [Weitere Informationen zu diesem Test](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

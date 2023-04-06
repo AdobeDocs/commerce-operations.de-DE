@@ -1,9 +1,9 @@
 ---
 title: Konfigurationsdateien für die Bereitstellung
 description: Erfahren Sie, wie die Konfigurationsdateien für die Installation der Commerce-Anwendung funktionieren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Auf der obersten Ebene dieses Arrays finden Sie _Konfigurationssegmente_. Ein Se
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) bietet lediglich Zugriff auf diese Abschnitte, lässt jedoch keine Erweiterung zu.
 
-Auf der nächsten Hierarchieebene werden die Elemente in jedem Segment nach dem [Modul](https://glossary.magento.com/module) Sequenzdefinition, die durch Zusammenführen der Konfigurationsdateien aller Module mit Ausnahme deaktivierter Module abgerufen wird.
+Auf der nächsten Hierarchieebene werden Elemente in jedem Segment gemäß der Modulsequenzdefinition geordnet, die durch Zusammenführen der Konfigurationsdateien aller Module mit Ausnahme deaktivierter Module abgerufen wird.
 
 In den folgenden Abschnitten werden Struktur und Inhalt der Bereitstellungskonfiguration beschrieben:
 
@@ -78,6 +78,6 @@ return array (
 
 Der Wert `1` oder `0` gibt an, ob ein Modul aktiviert oder deaktiviert ist.
 
-Deaktivierte Module werden von der Commerce-Anwendung nicht erkannt. Mit anderen Worten, sie nehmen nicht an der Zusammenführung von Konfiguration, Abhängigkeitsinjektion, Ereignissen, Plug-ins usw. teil. Deaktivierte Module ändern die [storefront](https://glossary.magento.com/storefront) oder [Admin](https://glossary.magento.com/admin) und sich nicht auf das Routing auswirken.
+Deaktivierte Module werden von der Commerce-Anwendung nicht erkannt. Mit anderen Worten, sie nehmen nicht an der Zusammenführung von Konfiguration, Abhängigkeitsinjektion, Ereignissen, Plug-ins usw. teil. Deaktivierte Module ändern weder die Storefront noch den Administrator und beeinflussen das Routing nicht.
 
 Der einzige praktische Unterschied zwischen einem deaktivierten Modul und einem fehlenden Modul in der Codebasis besteht darin, dass ein deaktiviertes Modul vom Autoloader gefunden wird und seine Klassen und Konstanten für die Wiederverwendung in anderem Code verfügbar sind.

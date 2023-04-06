@@ -1,9 +1,9 @@
 ---
 title: Einrichten mehrerer Websites mit Apache
 description: In diesem Tutorial erfahren Sie, wie Sie mehrere Websites mit Apache einrichten.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Wir gehen davon aus, dass
 
-Falls erforderlich, kopieren Sie die vorhandene `index.php` Einstiegspunktskript für Ihre Website oder [Store-Ansicht](https://glossary.magento.com/store-view) und fügen Sie Folgendes hinzu:
+Falls erforderlich, kopieren Sie die vorhandene `index.php` Einstiegspunkt-Skript für Ihre Website- oder Store-Ansicht und fügen Sie Folgendes hinzu:
 
 - Sie arbeiten an einer Entwicklungsmaschine (Laptop, virtuelle Maschine usw.)
 

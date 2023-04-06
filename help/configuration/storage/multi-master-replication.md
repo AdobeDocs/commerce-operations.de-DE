@@ -1,9 +1,9 @@
 ---
 title: Datenbankreplikation
 description: Erfahren Sie mehr über die Vorteile der Konfiguration der Datenbankreplikation.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Die folgenden Informationen sind weiter gefasst und dienen nur Ihren Information
 
 ## Leistungsverbesserung
 
-Um die Leistung der Übergeordneten Slave-Replikation zu verbessern, können Sie einige Tabellen nach Slave-Instanzen filtern. Es wird empfohlen, alle temporären Tabellen mit Namensmustern zu filtern `search\_tmp\_%` die für [Katalog](https://glossary.magento.com/catalog) suchen.
+Um die Leistung der Übergeordneten Slave-Replikation zu verbessern, können Sie einige Tabellen nach Slave-Instanzen filtern. Es wird empfohlen, alle temporären Tabellen mit Namensmustern zu filtern `search\_tmp\_%` die für die Katalogsuche verwendet werden.
 
 Fügen Sie dazu die folgende Zeile zu Ihrer `my.cnf` Datei auf Ihren Slave-Instanzen:
 

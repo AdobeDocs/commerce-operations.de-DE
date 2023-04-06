@@ -1,9 +1,9 @@
 ---
 title: Sprachpakete deinstallieren
 description: Führen Sie die folgenden Schritte aus, um ein Sprachpaket für Adobe Commerce oder Magento Open Source zu deinstallieren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Sprachpakete deinstallieren, einschließlich des Codes der Sprachpakete vom Dateisystem. Sie können zunächst Sicherungen erstellen, damit Sie die Daten später wiederherstellen können.
 
-Dieser Befehl deinstalliert *only* Sprachpakete, die in `composer.json`; mit anderen Worten: Sprachpakete, die als [Verfasser](https://glossary.magento.com/composer) Packages. Wenn [Sprachpaket](https://glossary.magento.com/language-package) kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie den Sprachpaketcode aus dem Dateisystem entfernen.
+Dieser Befehl deinstalliert *only* Sprachpakete, die in `composer.json`; mit anderen Worten Sprachpakete, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Sprachpaket kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie den Sprachpaketcode aus dem Dateisystem entfernen.
 
 Sie können Backups jederzeit mithilfe des [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) Befehl.
 
@@ -31,7 +31,7 @@ Der Befehl zum Deinstallieren des Sprachpakets führt die folgenden Aufgaben aus
 
 1. Wenn `--backup code` angegeben ist, sichern Sie das Dateisystem (außer `var` und `pub/static` Verzeichnissen) in `var/backups/<timestamp>_filesystem.tgz`
 1. Entfernt Sprachpaketdateien aus der Codebase mit `composer remove`.
-1. Bereinigt die [cache](https://glossary.magento.com/cache).
+1. Löscht den Cache.
 
 Wenn Sie beispielsweise versuchen, ein Sprachpaket zu deinstallieren, von dem ein anderes Sprachpaket abhängig ist, wird die folgende Meldung angezeigt:
 

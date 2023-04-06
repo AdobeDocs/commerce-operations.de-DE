@@ -1,9 +1,9 @@
 ---
 title: Mehrere Websites mit Nginx einrichten
 description: In diesem Tutorial erfahren Sie, wie Sie mehrere Websites mit Nginx einrichten.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Siehe [Einrichten mehrerer Websites, Stores und Speichern von Ansichten in der A
 
 ## Schritt 2: Erstellen nginx virtueller Hosts
 
-In diesem Schritt wird beschrieben, wie Sie Websites auf der [storefront](https://glossary.magento.com/storefront). Sie können entweder Websites oder Ansichten speichern. Wenn Sie Store-Ansichten verwenden, müssen Sie die Parameterwerte entsprechend anpassen. Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `sudo` Berechtigungen.
+In diesem Schritt wird beschrieben, wie Sie Websites in die Storefront laden. Sie können entweder Websites oder Ansichten speichern. Wenn Sie Store-Ansichten verwenden, müssen Sie die Parameterwerte entsprechend anpassen. Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `sudo` Berechtigungen.
 
 Durch Verwendung von nur einer [nginx virtual host file](#step-2-create-nginx-virtual-hosts), können Sie Ihre nginx-Konfiguration einfach und sauber halten. Durch die Verwendung mehrerer virtueller Host-Dateien können Sie jeden Store anpassen (um einen benutzerdefinierten Speicherort für `french.mysite.mg` z. B. ).
 

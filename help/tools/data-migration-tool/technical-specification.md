@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Data Migration Tool] technische Spezifikation"
 description: "Erfahren Sie mehr über die Implementierungsdetails des [!DNL Data Migration Tool] und wie die Datenübertragung zwischen Magento 1 und Magento 2 erweitert werden kann."
-source-git-commit: c56cc6d97f69770aa718333c02514ab3cfce774c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Das folgende Diagramm stellt die Verzeichnisstruktur von [!DNL Data Migration To
 │       │   ├── Data.php
 │       │   ├── Delta.php
 │       │   └── Settings.php
-│       ├── ResourceModel                   --- contains [adapter](https://glossary.magento.com/adapter) for connection to data storage and classes to work with structured data
+│       ├── ResourceModel                   --- contains adapter for connection to data storage and classes to work with structured data
 │       │   ├── Adapter
 │       │   │   └── Mysql.php
 │       │   ├── AbstractCollection.php
@@ -75,7 +75,7 @@ Das folgende Diagramm stellt die Verzeichnisstruktur von [!DNL Data Migration To
 │       │   ├── Source.php
 │       │   └── Structure.php
 │       ├── Config.php
-│       ├── [Exception](https://glossary.magento.com/exception).php
+│       ├── Exception.php
 │       └── Step                            --- functionality for migrating specific data
 │           ├── Eav
 │           │   ├── Data.php
@@ -342,7 +342,7 @@ In diesem Modus werden die meisten Daten migriert. Vor der Datenmigration werden
 
 #### Map Step
 
-Der Zuordnungsschritt ist für die Übertragung der meisten Daten von Magento 1 auf Magento 2 verantwortlich. Dieser Schritt liest Anweisungen aus der Datei &quot;map.xml&quot;(im `etc/` Verzeichnis). In der Datei werden die Unterschiede zwischen den Datenstrukturen der Quelle (Magento 1) und des Ziels (Magento 2) beschrieben. Wenn Magento 1 Tabellen oder Felder enthält, die zu einigen [Erweiterung](https://glossary.magento.com/extension) , die in Magento 2 nicht vorhanden ist, können diese Entitäten hier platziert werden, um sie durch &quot;Map Step&quot;zu ignorieren. Andernfalls wird eine Fehlermeldung angezeigt.
+Der Zuordnungsschritt ist für die Übertragung der meisten Daten von Magento 1 auf Magento 2 verantwortlich. Dieser Schritt liest Anweisungen aus der Datei &quot;map.xml&quot;(im `etc/` Verzeichnis). In der Datei werden die Unterschiede zwischen den Datenstrukturen der Quelle (Magento 1) und des Ziels (Magento 2) beschrieben. Wenn Magento 1 Tabellen oder Felder enthält, die zu einer Erweiterung gehören, die in Magento 2 nicht vorhanden ist, können diese Entitäten hier platziert werden, um sie durch &quot;Map Step&quot;zu ignorieren. Andernfalls wird eine Fehlermeldung angezeigt.
 
 Die Zuordnungsdatei hat das folgende Format:
 
@@ -464,7 +464,7 @@ Im Folgenden finden Sie ein Klassendiagramm dieser Klassen:
 
 ## Protokollierung
 
-Um die Ausgabe des Migrationsprozesses zu implementieren und alle möglichen Ebenen zu steuern, wird der in Magento verwendete PSR-Logger angewendet. `\Migration\Logger\Logger` -Klasse implementiert wurde, um Protokollierungsfunktionen bereitzustellen. Um den Logger zu verwenden, sollten Sie ihn über den Konstruktor einfügen [Abhängigkeitsinjektion](https://glossary.magento.com/dependency-injection).
+Um die Ausgabe des Migrationsprozesses zu implementieren und alle möglichen Ebenen zu steuern, wird der in Magento verwendete PSR-Logger angewendet. `\Migration\Logger\Logger` -Klasse implementiert wurde, um Protokollierungsfunktionen bereitzustellen. Um den Logger zu verwenden, sollten Sie ihn über eine Injektion der Abhängigkeit des Konstruktors injizieren.
 
 ```php
 class SomeClass

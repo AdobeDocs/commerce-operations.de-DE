@@ -1,9 +1,9 @@
 ---
 title: Mehrere Websites oder Stores
 description: Erfahren Sie, wie Sie mehrere Websites starten oder Store-Ansichten mit verschiedenen Optionen, Domänen und Inhalten implementieren können.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Mit einer einzelnen Instanz der Adobe Commerce-Software können Sie mehrere Webs
 - Produkte
 - Währungen
 
-Diese flexible Lösung ermöglicht eine Commerce-Codebase und [Admin](https://glossary.magento.com/magento-admin) um verschiedene Geschäfte zu verwalten und anzuzeigen. Sie konfigurieren die Websites, Stores und speichern Ansichten in der Admin-Konsole. Verwenden Sie bestimmte Variablen in virtuellen Hosts, um die Commerce-Anwendung mit diesen Websites oder Store-Ansichten zu starten.
+Diese flexible Lösung ermöglicht es einer Commerce-Codebase und einem Administrator, verschiedene Stores zu verwalten und anzuzeigen. Sie konfigurieren die Websites, Stores und speichern Ansichten in der Admin-Konsole. Verwenden Sie bestimmte Variablen in virtuellen Hosts, um die Commerce-Anwendung mit diesen Websites oder Store-Ansichten zu starten.
 
 Eine typische Verwendung besteht darin, Geschäfte mit verschiedenen Optionen in verschiedenen Domänen einzurichten. Sie könnten beispielsweise eine Gruppe von Kategorien und Produkten auf einer Domäne und eine andere Gruppe von Kategorien und Produkten auf einer separaten Domäne in einer anderen Sprache haben.
 
-Sie konfigurieren die Websites, Stores und Store-Ansichten im Commerce [Admin](https://glossary.magento.com/admin). Verwenden Sie die `MAGE_RUN_TYPE` und `MAGE_RUN_CODE` Variablen in virtuellen Hosts verwenden, um die Commerce-Anwendung mit diesen Websites oder Store-Ansichten zu starten.
+Sie konfigurieren die Websites, Stores und speichern Ansichten im Commerce Admin. Verwenden Sie die `MAGE_RUN_TYPE` und `MAGE_RUN_CODE` Variablen in virtuellen Hosts verwenden, um die Commerce-Anwendung mit diesen Websites oder Store-Ansichten zu starten.
 
 Beachten Sie die folgenden Begriffe:
 

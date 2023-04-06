@@ -1,9 +1,9 @@
 ---
 title: Erweiterte Varnish-Konfiguration
 description: Konfigurieren Sie erweiterte Funktionen für die Färbung, einschließlich Konsistenzprüfung, Grazie und Heiligkeitsmodi.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Commerce definiert die folgende standardmäßige Konsistenzprüfung:
     }
 ```
 
-Alle 5 Sekunden ruft diese Konsistenzprüfung die `pub/health_check.php` Skript. Dieses Skript überprüft die Verfügbarkeit des Servers, jeder Datenbank und von Redis (falls installiert). Das Skript muss innerhalb von 2 Sekunden eine Antwort zurückgeben. Wenn das Skript feststellt, dass eine dieser Ressourcen ausgefallen ist, wird ein HTTP-Fehlercode 500 zurückgegeben. Wenn dieser Fehlercode in sechs von zehn Versuchen empfangen wird, wird die [Backend](https://glossary.magento.com/backend) wird als ungesund betrachtet.
+Alle 5 Sekunden ruft diese Konsistenzprüfung die `pub/health_check.php` Skript. Dieses Skript überprüft die Verfügbarkeit des Servers, jeder Datenbank und von Redis (falls installiert). Das Skript muss innerhalb von 2 Sekunden eine Antwort zurückgeben. Wenn das Skript feststellt, dass eine dieser Ressourcen ausgefallen ist, wird ein HTTP-Fehlercode 500 zurückgegeben. Wenn dieser Fehlercode in sechs von zehn Versuchen empfangen wird, gilt das Backend als ungesund.
 
 Die `health_check.php` Das Skript befindet sich im `pub` Verzeichnis. Wenn Ihr Commerce-Stammordner `pub`, dann vergewissern Sie sich, dass Sie den Pfad im `url` Parameter aus `/pub/health_check.php` nach `health_check.php`.
 
@@ -39,7 +39,7 @@ Weitere Informationen finden Sie unter [Tiergesundheitskontrollen](https://varni
 
 ## Übergangmodus
 
-Der Übergangmodus ermöglicht Varnish, ein Objekt im [cache](https://glossary.magento.com/cache) über den TTL-Wert hinaus. Varnish kann dann den abgelaufenen (veralteten) Inhalt bereitstellen, während es eine neue Version abruft. Dadurch wird der Traffic-Fluss verbessert und die Ladezeiten verkürzt. Es wird in den folgenden Situationen verwendet:
+Der Übergangmodus ermöglicht es Varnish, ein Objekt über seinen TTL-Wert hinaus im Cache zu belassen. Varnish kann dann den abgelaufenen (veralteten) Inhalt bereitstellen, während es eine neue Version abruft. Dadurch wird der Traffic-Fluss verbessert und die Ladezeiten verkürzt. Es wird in den folgenden Situationen verwendet:
 
 - Wenn das Commerce-Backend gesund ist, eine Anforderung jedoch länger dauert als normal
 - Wenn das Commerce-Backend nicht gesund ist.
@@ -48,7 +48,7 @@ Die `vcl_hit` subroutinemäßig definiert, wie Varnish auf eine Anforderung für
 
 ### Wenn das Commerce-Backend gesund ist
 
-Wenn die Konsistenzprüfungen feststellen, dass das Commerce-Backend gesund ist, prüft Varnish, ob die Zeit in der Übergangsphase verbleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, ein Händler kann jedoch den Wert aus dem [Admin](https://glossary.magento.com/admin) wie in [Konfigurieren von Commerce für die Verwendung von Varnish](configure-varnish-commerce.md). Wenn die Übergangsphase nicht abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt synchron vom Commerce-Backend.
+Wenn die Konsistenzprüfungen feststellen, dass das Commerce-Backend gesund ist, prüft Varnish, ob die Zeit in der Übergangsphase verbleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, ein Händler kann den Wert jedoch vom Administrator festlegen, wie unter [Konfigurieren von Commerce für die Verwendung von Varnish](configure-varnish-commerce.md). Wenn die Übergangsphase nicht abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt synchron vom Commerce-Backend.
 
 Die maximale Zeit, die Varnish für ein altes Objekt bereitstellt, ist die Summe der Übergangsphase (standardmäßig 300 Sekunden) und des TTL-Werts (standardmäßig 86400 Sekunden).
 
@@ -74,7 +74,7 @@ Benennen Sie eine Maschine als primäre Installation. Installieren Sie auf diese
 
 Auf allen anderen Computern muss die Commerce-Instanz Zugriff auf die mySQL-Datenbank des primären Computers haben. Die sekundären Maschinen sollten auch Zugriff auf die Dateien der primären Commerce-Instanz haben.
 
-Alternativ: [statische Dateien](https://glossary.magento.com/static-files) Die Versionierung kann auf allen Computern deaktiviert werden. Der Zugriff darauf erfolgt über den Administrator unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Entwickler** > **Einstellungen für statische Dateien** > **Statische Dateien unterschreiben** = **Nein**.
+Alternativ kann die Versionierung statischer Dateien auf allen Computern deaktiviert werden. Der Zugriff darauf erfolgt über den Administrator unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Entwickler** > **Einstellungen für statische Dateien** > **Statische Dateien unterschreiben** = **Nein**.
 
 Schließlich müssen sich alle Commerce-Instanzen im Produktionsmodus befinden. Bevor Varnish gestartet wird, löschen Sie den Cache auf jeder Instanz. Navigieren Sie im Admin zu **System** > Tools > **Cacheverwaltung** und klicken Sie auf **Magento-Cache leeren**. Sie können auch den folgenden Befehl ausführen, um den Cache zu löschen:
 
@@ -89,7 +89,7 @@ Der Saint-Modus ist nicht Teil des Varnish-Hauptpakets. Es handelt sich um eine 
 - [Installieren von Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Installieren von Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
-Nachdem Sie die Datei neu kompiliert haben, können Sie den Saint-Modus installieren [Modul](https://glossary.magento.com/module). Gehen Sie im Allgemeinen wie folgt vor:
+Nach der Neukompilierung können Sie das Modul Saint-Modus installieren. Gehen Sie im Allgemeinen wie folgt vor:
 
 1. Quellcode abrufen von [Varnish-Module](https://github.com/varnish/varnish-modules). Klonen Sie die Git-Version (Übergeordnete Version), da die Versionen 0.9.x einen Quellcode-Fehler enthalten.
 1. Erstellen Sie den Quellcode mit autotools:

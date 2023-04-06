@@ -1,9 +1,9 @@
 ---
 title: Anwendungsinitialisierung und Bootstrap
 description: Erfahren Sie mehr über die Initialisierung und Bootstrap-Logik für die Commerce-Anwendung.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Wenn die Anfrage an den Einstiegspunkt umgeleitet wird, analysiert die Commerce-
 
 ### Einstiegspunkt für Medienressourcen
 
-[Magento\MediaStorage\App\Media][media] ruft Medienressourcen (d. h. alle Dateien, die in den Medienspeicher hochgeladen wurden) aus der Datenbank ab. Sie wird immer dann verwendet, wenn die Datenbank als [Medienspeicher](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] ruft Medienressourcen (d. h. alle Dateien, die in den Medienspeicher hochgeladen wurden) aus der Datenbank ab. Sie wird immer dann verwendet, wenn die Datenbank als Medienspeicher konfiguriert ist.
 
 `\Magento\Core\App\Media` versucht, die Mediendatei im konfigurierten Datenbankspeicher zu finden und in die `pub/static` und geben dann seinen Inhalt zurück. Bei Fehler wird ein HTTP-Statuscode 404 (Nicht gefunden) im Header ohne Inhalt zurückgegeben.
 

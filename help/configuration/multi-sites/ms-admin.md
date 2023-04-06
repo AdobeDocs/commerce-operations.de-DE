@@ -1,9 +1,9 @@
 ---
 title: Einrichten mehrerer Websites, Stores und Speichern von Ansichten in der Admin-Konsole
 description: Konfigurieren Sie zusätzliche Websites, Stores und Store-Ansichten im Commerce Admin.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Für diese Aufgabe müssen Sie für jeden Store eine Stammkategorie (und ggf. zu
 
 ## Schritt 1: Erstellen von Stammkategorien
 
-Das Erstellen einer Root-Kategorie ist optional. In diesem Tutorial zeigen wir jedoch, wie dies funktioniert, im [event](https://glossary.magento.com/event) Sie möchten, dass jede Website über eine eindeutige Stammkategorie verfügt. Sie können bei Bedarf weitere Kategorien erstellen.
+Das Erstellen einer Stammkategorie ist optional. Wir zeigen jedoch in diesem Tutorial, wie Sie dies durchführen können, falls Sie möchten, dass jede Website über eine eindeutige Stammkategorie verfügt. Sie können bei Bedarf weitere Kategorien erstellen.
 
 So erstellen Sie eine Stammkategorie:
 

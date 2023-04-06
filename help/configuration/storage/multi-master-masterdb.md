@@ -1,9 +1,9 @@
 ---
 title: Automatische Konfiguration Übergeordneter Datenbanken
 description: Siehe Anleitungen zum automatischen Konfigurieren der geteilten Datenbanklösung.
-source-git-commit: d029d1ac66bff2ac34b22b2d3b8aafbfc062e082
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 In diesem Thema werden die ersten Schritte mit der geteilten Datenbanklösung durch folgende Schritte erläutert:
 
 1. Installieren von Adobe Commerce mit einer einzigen Übergeordneten Datenbank (mit dem Namen `magento`)
-1. Erstellen von zwei zusätzlichen Übergeordneten Datenbanken für [Kasse](https://glossary.magento.com/checkout) und OMS (mit dem Namen `magento_quote` und `magento_sales`)
+1. Erstellen von zwei zusätzlichen Übergeordneten Datenbanken für den Checkout und OMS (mit dem Namen `magento_quote` und `magento_sales`)
 1. Konfigurieren von Adobe Commerce für die Verwendung der Checkout- und Verkaufsdatenbanken
 
 >[!INFO]

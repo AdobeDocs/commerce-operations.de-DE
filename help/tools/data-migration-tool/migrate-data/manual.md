@@ -1,9 +1,9 @@
 ---
 title: Daten, die eine manuelle Migration erfordern
-description: 'Erfahren Sie mehr über Daten, die bei der Datenmigration aus dem Magento 1 nach Magento 2 manuell migriert werden müssen, und wie Sie dies durchführen können. '
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+description: Erfahren Sie mehr über Daten, die bei der Datenmigration aus dem Magento 1 nach Magento 2 manuell migriert werden müssen, und wie Sie dies durchführen können.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Es gibt vier Arten von Daten, die manuell migriert werden müssen:
 
 * Medien
 
-* [Storefront](https://glossary.magento.com/storefront) Design
+* Storefront-Design
 
-* [Admin](https://glossary.magento.com/admin) Benutzerkonten
+* Admin-Benutzerkonten
 
 * Zugriffssteuerungslisten (ACLs)
 
@@ -40,7 +40,7 @@ Dieser Abschnitt gilt für Sie *only* , wenn Sie Mediendateien in der Magento-Da
 
 1. Scrollen Sie im rechten Bereich zu **Speicherkonfiguration für Medien**.
 
-1. Aus dem **Mediendatenbank auswählen** und klicken Sie auf den Namen Ihrer [Medienspeicher](https://glossary.magento.com/media-storage) Datenbank.
+1. Aus dem **Mediendatenbank auswählen** klicken Sie auf den Namen Ihrer Medienspeicherdatenbank.
 
 1. Klicken **Synchronisieren**.
 
@@ -48,15 +48,15 @@ Wiederholen Sie dann dieselben Schritte in Ihrem Magento 2 Admin-Bedienfeld.
 
 ### Mediendateien im Dateisystem
 
-Alle Mediendateien (Bilder für Produkte, Kategorien, [WYSIWYG](https://glossary.magento.com/wysiwyg) Editor usw.) manuell aus kopiert werden `<your Magento 1 install dir>/media` nach `<your Magento 2 install dir>/pub/media`.
+Alle Mediendateien (Bilder für Produkte, Kategorien, den WYSIWYG-Editor usw.) sollten manuell aus kopiert werden `<your Magento 1 install dir>/media` nach `<your Magento 2 install dir>/pub/media`.
 
 Führen Sie jedoch *not* Kopieren Sie die `.htaccess` Dateien im Magento 1 `media` Ordner. Magento 2 hat eigene `.htaccess` die beibehalten werden sollen.
 
 ## Storefront-Design
 
-* Design in Dateien (CSS, JS, Vorlagen) [XML](https://glossary.magento.com/xml) layouts) ihre Position und ihr Format geändert
+* Das Design in Dateien (CSS, JS, Vorlagen, XML-Layouts) hat seinen Speicherort und sein Format geändert
 
-* [Layout](https://glossary.magento.com/layout) In der Datenbank gespeicherte Aktualisierungen. Platziert über Magento 1 Admin in [CMS](https://glossary.magento.com/cms) Seiten, CMS-Widgets, [Kategorie](https://glossary.magento.com/category) Seiten und Produktseiten
+* In der Datenbank gespeicherte Layout-Aktualisierungen. Platziert über Magento 1 Admin in CMS-Seiten, CMS-Widgets, Kategorieseiten und Produktseiten
 
 ## Zugriffssteuerungslisten (ACLs)
 

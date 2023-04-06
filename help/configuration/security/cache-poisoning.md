@@ -1,9 +1,9 @@
 ---
 title: Cache-Vergiftung verhindern
 description: Erfahren Sie, wie Sie eine Vergiftung des Seiten-Cache für Ihre Commerce-Storefront verhindern können.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Cache-Vergiftung verhindern
 
-In diesem Thema wird erläutert, wie Sie [cache](https://glossary.magento.com/cache) Vergiftung bei Verwendung des Microsoft Internet Information Server (IIS)-Webservers. _Cache-Vergiftung_ ist eine Methode zum Ändern des Cache-Inhalts, um verschiedene Seiten von derselben Site einzuschließen. Beispielsweise ist es möglich, anstelle einer gutartigen Seite (z. B. der [storefront](https://glossary.magento.com/storefront) Startseite), was zu einer potenziellen DoS-Diensteverweigerung führen kann. Die bösartigen Seiten-URLs werden von Varnish oder Redis zwischengespeichert, daher der Name _Seitencache-Vergiftung_.
+In diesem Thema wird erläutert, wie Sie eine Cache-Vergiftung verhindern können, wenn Sie den Microsoft Internet Information Server (IIS)-Webserver verwenden. _Cache-Vergiftung_ ist eine Methode zum Ändern des Cache-Inhalts, um verschiedene Seiten von derselben Site einzuschließen. Beispielsweise ist es möglich, anstelle einer gutartigen Seite (z. B. der Storefront-Startseite) eine HTTP 404 (Not Found)-Fehlerseite einzufügen, was zu einer potenziellen DoS (Denial-of-Service) führen kann. Die bösartigen Seiten-URLs werden von Varnish oder Redis zwischengespeichert, daher der Name _Seitencache-Vergiftung_.
 
 Diese Arten von Angriffen können schwierig zu erkennen sein, da sie nicht zu Fehlern in Webserver-Protokollen führen.
 

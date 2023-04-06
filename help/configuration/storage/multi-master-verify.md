@@ -1,9 +1,9 @@
 ---
 title: Geteilte Datenbank überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob eine Commerce-geteilte Datenbankkonfiguration ordnungsgemäß funktioniert.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Nach der Konfiguration werden die Übergeordneten Datenbanken wie folgt konfiguriert:
 
 - Wichtigste Commerce-Datenbank: 369 Tabellen
-- Handel [Anführungszeichen](https://glossary.magento.com/quote) Datenbank: 11 Tabellen
+- Commerce-Anführungsdatenbank: 11 Tabellen
 - Commerce-Verkaufsdatenbank: 55 Tabellen
 
 Um sicherzustellen, dass Ihre geteilten Datenbanken ordnungsgemäß funktionieren, führen Sie die folgenden Aufgaben aus und überprüfen Sie mithilfe eines Datenbank-Tools wie [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):

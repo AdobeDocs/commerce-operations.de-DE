@@ -1,9 +1,9 @@
 ---
 title: Festlegen von Konfigurationswerten
 description: Erfahren Sie, wie Sie Konfigurationswerte festlegen und Werte ändern, die in Admin gesperrt sind.
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Sie können Werte zu folgenden Zeiten festlegen:
 
 - Vor der Installation von Commerce können Sie Konfigurationswerte nur für den Standardbereich festlegen, da dies der einzige gültige Bereich ist.
 
-- Nach der Installation von Commerce können Sie Konfigurationswerte für jede Website oder [Store-Ansicht](https://glossary.magento.com/store-view) Umfang.
+- Nach der Installation von Commerce können Sie Konfigurationswerte für beliebige Website- oder Store-Ansichtsbereiche festlegen.
 
 Verwenden Sie die folgenden Befehle:
 

@@ -1,9 +1,9 @@
 ---
 title: Erstellen, Bearbeiten oder Entsperren eines Administratorkontos
 description: Führen Sie die folgenden Schritte aus, um das Administratorkonto Ihrer Adobe Commerce- oder Magento Open Source Admin-Anwendung zu verwalten.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Bevor Sie diesen Befehl verwenden können, müssen Sie Folgendes tun:
 
 - [Erstellen der Bereitstellungskonfiguration](deployment.md)
 - [Mindestens die Module Magento_Authorization und Magento_User aktivieren](manage-modules.md)
-- Erstellen Sie die [Datenbankschema](https://glossary.magento.com/database-schema)
+- Datenbankschema erstellen
 
 >[!NOTE]
 >

@@ -1,9 +1,9 @@
 ---
 title: Code-Compiler
 description: Erfahren Sie, wie Sie den Code-Compiler über die Befehlszeile ausführen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 Die Codekompilierung umfasst Folgendes (in keiner bestimmten Reihenfolge):
 
 - Generierung von Anwendungscode (Fabriken, Proxys)
-- Aggregation der Bereichskonfiguration (optimiert) [Abhängigkeitsinjektion](https://glossary.magento.com/dependency-injection) Konfigurationen pro Bereich)
+- Aggregation der Bereichskonfiguration (optimierte Konfigurationen für die Abhängigkeitsinjektion pro Bereich)
 - Generierung von Interceptoren (optimierte Codegenerierung von Interceptoren)
 - Generierung des Abhörcache
 - Code-Generierung von Repositorys (generierter Code für APIs)
-- Generierung von Dienstdatenattributen (generiert) [Erweiterung](https://glossary.magento.com/extension) Klassen für Datenobjekte)
+- Generierung von Dienstdatenattributen (generierte Erweiterungsklassen für Datenobjekte)
 
 Sie finden Code-Kompilierungsklassen in der [\Magento\Setup\Module\Di\App\Task\Operation][operation] Namespace.
 
@@ -44,7 +44,7 @@ In einigen Fällen möchten Sie möglicherweise Code kompilieren, bevor Sie die 
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Verwenden Sie die `[-c|--clear-static-content]` Option zum Löschen [statische Inhalte](https://glossary.magento.com/static-content). Dies ist erforderlich, wenn Sie zuvor Module aktiviert oder deaktiviert haben und den zuvor für sie generierten statischen Inhalt löschen müssen.
+   Verwenden Sie die `[-c|--clear-static-content]` Option zum Löschen von statischem Inhalt. Dies ist erforderlich, wenn Sie zuvor Module aktiviert oder deaktiviert haben und den zuvor für sie generierten statischen Inhalt löschen müssen.
 
    Siehe [Module aktivieren](../../installation/tutorials/manage-modules.md).
 

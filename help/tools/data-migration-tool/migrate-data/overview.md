@@ -1,9 +1,9 @@
 ---
 title: Migrationsübersicht
 description: Erfahren Sie, wie Sie mit der Migration von Daten aus Magento 1 zu Magento 2 beginnen können. [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Befolgen Sie während des Migrationsprozesses die folgenden allgemeinen Regeln f
 
 1. **Nicht** Änderungen am Magento 1 Admin vorzunehmen, mit Ausnahme der Auftragsverwaltung (Versand, Erstellung von Rechnungen und Kreditkarten)
 1. **Nicht** Code ändern
-1. **Nicht** Änderungen in Magento 2 Admin vornehmen und [storefront](https://glossary.magento.com/storefront)
+1. **Nicht** Änderungen an Magento 2 Admin und Storefront vornehmen
 
 >[!TIP]
 >

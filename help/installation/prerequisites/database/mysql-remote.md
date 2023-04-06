@@ -1,9 +1,9 @@
 ---
 title: Eine Remote-Verbindung zur MySQL-Datenbank einrichten
 description: Führen Sie diese Schritte aus, um eine Remote-Datenbankverbindung für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Wenn Ihr Webserver in einem Cluster gespeichert ist, geben Sie den Befehl auf je
 
 Bei der Installation von Adobe Commerce oder Magento Open Source müssen Sie Folgendes angeben:
 
-* Die Basis [URL](https://glossary.magento.com/url) (auch als *Store-Adresse*) gibt den Hostnamen oder die IP-Adresse der *Webknoten*
+* Die Basis-URL (auch als *Store-Adresse*) gibt den Hostnamen oder die IP-Adresse der *Webknoten*
 * Der Datenbankhost ist der *Remote-Datenbankserver* IP-Adresse (oder Lastenausgleich, wenn der Datenbankserver im Cluster ist)
 * Der Benutzername der Datenbank ist *lokaler Webknoten* Datenbankbenutzer, dem Sie Zugriff gewährt haben
 * Das Datenbankkennwort ist das Kennwort des lokalen Webknotenbenutzers

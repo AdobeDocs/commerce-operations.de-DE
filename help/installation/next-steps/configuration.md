@@ -1,9 +1,9 @@
 ---
 title: Anwendung konfigurieren
 description: Erfahren Sie mehr über die Konfiguration nach der Installation, die für Adobe Commerce und die Magento Open Source vor Ort erforderlich ist.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Wenn Sie den Apache-Webserver verwenden, müssen Sie Serverumschreibungen aktivi
 
 Wenn Sie mehrere Webknoten haben, *cannot* die standardmäßige Dateizwischenspeicherung des Programms verwenden, da keine Synchronisierung zwischen Webknoten erfolgt. Anders ausgedrückt: Die Aktivität auf einem Webknoten wird nur in das Dateisystem dieses Webknotens geschrieben. Eine nachfolgende Aktivität, die auf einem anderen Webknoten ausgeführt wird, kann dazu führen, dass unnötige Dateien geschrieben werden, oder zu Fehlern führen.
 
-Verwenden Sie stattdessen [Redis](../../configuration/cache/config-redis.md) für beide Standardwerte [cache](https://glossary.magento.com/cache) und den Seiten-Cache.
+Verwenden Sie stattdessen [Redis](../../configuration/cache/config-redis.md) sowohl für den Standard-Cache als auch für den Seiten-Cache.
 
 ## Servereinstellungen
 

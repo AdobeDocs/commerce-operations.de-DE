@@ -1,9 +1,9 @@
 ---
 title: Module aktivieren oder deaktivieren
 description: Führen Sie diese Schritte aus, um Adobe Commerce- oder Magento Open Source-Module zu verwalten.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Wo
 
 * `--enabled` listet alle aktivierten Module auf.
 * `--disabled` listet alle deaktivierten Module auf.
-* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen zur Statusprüfung. Wenn [Modul](https://glossary.magento.com/module) name enthält Sonderzeichen, die den Namen in einfache oder doppelte Anführungszeichen setzen.
+* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen zur Statusprüfung. Wenn ein Modulname Sonderzeichen enthält, fügen Sie den Namen in einfache oder doppelte Anführungszeichen ein.
 
 ## Modul aktivieren, deaktivieren
 
@@ -41,7 +41,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 Wo
 
-* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen, die aktiviert oder deaktiviert werden sollen. Wenn [Modul](https://glossary.magento.com/module) name enthält Sonderzeichen, die den Namen in einfache oder doppelte Anführungszeichen setzen.
+* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen, die aktiviert oder deaktiviert werden sollen. Wenn ein Modulname Sonderzeichen enthält, fügen Sie den Namen in einfache oder doppelte Anführungszeichen ein.
 * `--all` um alle Module gleichzeitig zu aktivieren oder zu deaktivieren.
 * `-f` oder `--force` , um zu erzwingen, dass ein Modul trotz von Abhängigkeiten aktiviert oder deaktiviert wird. Bevor Sie diese Option verwenden, lesen Sie [Informationen zum Aktivieren und Deaktivieren von Modulen](#about-enabling-and-disabling-modules).
 * `-c` oder `--clear-static-content` cleans [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).

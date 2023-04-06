@@ -1,9 +1,9 @@
 ---
 title: Durchführen eines Upgrades
 description: Führen Sie diese Schritte aus, um ein Adobe Commerce- oder Magento Open Source-Projekt zu aktualisieren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Sie können Ihre Adobe Commerce- oder Magento Open Source-Anwendung über die Befehlszeile aktualisieren, wenn Sie die Software installiert haben, indem Sie:
 
-- Herunterladen der [metapackage](https://glossary.magento.com/metapackage) mithilfe der `composer create-project` Befehl.
+- Herunterladen des Metapakets mit dem `composer create-project` Befehl.
 - Installieren des komprimierten Archivs.
 
 >[!NOTE]
@@ -108,7 +108,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
 
    - `<product>` —(Erforderlich) Das zu aktualisierende Paket. Bei ortsansässigen Anlagen muss dieser Wert `product-community-edition` oder `product-enterprise-edition`.
 
-   - `<version>` —(Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel, `2.4.3`.
+   - `<version>` —(Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel: `2.4.3`.
 
    - `--no-update` —(Erforderlich) Deaktiviert die automatische Aktualisierung der Abhängigkeiten.
 

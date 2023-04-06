@@ -1,9 +1,9 @@
 ---
 title: PHP-Einstellungen
 description: Führen Sie diese Schritte aus, um erforderliche PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # PHP-Einstellungen
 
-In diesem Thema wird beschrieben, wie Sie die erforderlichen [PHP](https://glossary.magento.com/php) Optionen.
+In diesem Thema wird beschrieben, wie Sie die erforderlichen PHP-Optionen festlegen.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Die meisten Versionen von Linux haben PHP standardmäßig installiert. Dieses Th
 php -v
 ```
 
-Wenn [PHP](https://glossary.magento.com/php) installiert ist, wird eine Meldung ähnlich der folgenden angezeigt:
+Wenn PHP installiert ist, wird eine Meldung ähnlich der folgenden angezeigt:
 
 ```terminal
 PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )

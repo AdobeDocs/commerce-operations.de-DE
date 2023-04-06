@@ -1,9 +1,9 @@
 ---
 title: Optionen für den Wartungsmodus für die Aktualisierung
-description: 'Erstellen Sie eine benutzerdefinierte Seite für den Wartungsmodus, die Ihre Kunden auf Ihrer Adobe Commerce- oder Magento Open Source-Storefront sehen, während Sie ein Upgrade durchführen. '
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+description: Erstellen Sie eine benutzerdefinierte Seite für den Wartungsmodus, die Ihre Kunden auf Ihrer Adobe Commerce- oder Magento Open Source-Storefront sehen, während Sie ein Upgrade durchführen.
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsse
 
 So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
 
-1. Verwenden Sie einen Texteditor, um [nginx](https://glossary.magento.com/nginx) Konfigurationsdatei, die Ihren Serverblock enthält.
+1. Verwenden Sie einen Texteditor, um die nginx-Konfigurationsdatei zu öffnen, die Ihren Serverblock enthält.
 1. Fügen Sie dem Serverblock Folgendes hinzu (`server` nur aus Gründen der Klarheit angezeigt wird; keinen zweiten Serverblock hinzufügen).
 
    Im Folgenden werden die IP-Adressen 192.0.2.110 und 192.0.2.115 auf einem System auf die Zulassungsliste gesetzt, auf dem Magento in installiert ist. `/var/www/html/magento2`:

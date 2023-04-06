@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren Sie die [!DNL Data Migration Tool]
 description: Erfahren Sie mehr über die beiden Methoden zum Konfigurieren der [!DNL Data Migration Tool] zur Übertragung von Daten zwischen Magento 1 und Magento 2.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Zuordnungsdateien für unterstützte Magento-Versionen befinden sich in Unterver
 
 So verwenden Sie die Zuordnungsdateien:
 
-1. Kopieren Sie sie aus `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` nach `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` und entfernen Sie die `.dist` [Erweiterung](https://glossary.magento.com/extension).
+1. Kopieren Sie sie aus `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>/` nach `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/<ce or version>/` und entfernen Sie die `.dist` -Erweiterung.
 
 1. Aktualisieren Sie den Pfad zur neu kopierten Datei im `<options>` Knoten von `config.xml`. Der aktualisierte Pfad sollte einer der folgenden sein:
 

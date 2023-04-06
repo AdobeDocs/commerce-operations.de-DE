@@ -1,9 +1,9 @@
 ---
 title: Einrichten des Produktionssystems
 description: Erfahren Sie, wie Sie ein Produktionssystem für die Commerce-Anwendung einrichten.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Sie können ein Produktionssystem haben. Folgendes muss zutreffen:
 
 So richten Sie einen Produktionsrechner ein:
 
-1. Nachdem Sie Commerce installiert oder aus der Quell-Code-Verwaltung abgerufen haben, melden Sie sich beim Produktionsserver als an oder wechseln Sie zu dem [Dateisysteminhaber](https://glossary.magento.com/magento-file-system-owner).
+1. Melden Sie sich nach der Installation von Commerce oder dem Abruf von der Quell-Code-Verwaltung beim Produktionsserver als Eigentümer des Dateisystems an oder wechseln Sie zu diesem.
 1. Erstellen `~/.ssh/.composer/auth.json` wenn Sie dies noch nicht getan haben.
 
    Erstellen Sie den Ordner:

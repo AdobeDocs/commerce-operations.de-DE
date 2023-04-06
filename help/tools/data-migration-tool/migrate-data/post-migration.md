@@ -1,9 +1,9 @@
 ---
 title: Schritte zur Migration nach der Datenmigration
 description: Erfahren Sie, welche Schritte nach der Verwendung des [!DNL Data Migration Tool] , um Daten aus Magento 1 in Magento 2 zu migrieren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '74'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nachdem Sie die Migration abgeschlossen und Ihre neue Magento 2-Site gründlich getestet haben, führen Sie die folgenden Schritte aus:
 
-* Magento 1 in den Wartungsmodus versetzen und alle Elemente dauerhaft anhalten [Admin](https://glossary.magento.com/admin) activities
+* Magento 1 in den Wartungsmodus versetzen und alle Admin-Aktivitäten dauerhaft beenden
 
 * Start von Magento 2-Cron-Aufträgen
 

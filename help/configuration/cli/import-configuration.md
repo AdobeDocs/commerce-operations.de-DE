@@ -1,9 +1,9 @@
 ---
 title: Daten aus Konfigurationsdateien importieren
 description: Importieren Sie die Adobe Commerce-Konfigurationseinstellungen aus Konfigurationsdateien.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ In den folgenden Abschnitten wird ausführlich beschrieben, welche Daten importi
 
 Commerce verwendet direkt Werte in der `system` -Array im `config.php` oder `env.php` -Dateien, anstatt sie in die Datenbank zu importieren, da sie einige Vorab- und Nachbearbeitungsaktionen erfordern.
 
-Beispielsweise der Wert des Konfigurationspfads `web/secure/base_url` muss mit [Backend](https://glossary.magento.com/backend) Modelle.
+Beispielsweise der Wert des Konfigurationspfads `web/secure/base_url` muss mit Backend-Modellen validiert werden.
 
 #### Backend-Modelle
 
@@ -94,7 +94,7 @@ Die vorangehenden Konfigurationen können in den folgenden Modi importiert werde
 
 >[!INFO]
 >
->Wir importieren nicht den Stamm [category](https://glossary.magento.com/category) mit Stores verknüpft sind. Sie müssen mithilfe von Commerce eine Stammkategorie mit einem Store verknüpfen [Admin](https://glossary.magento.com/admin).
+>Die mit Stores verknüpfte Stammkategorie wird nicht importiert. Sie müssen mit dem Commerce Admin eine Stammkategorie mit einem Store verknüpfen.
 
 ### Designkonfiguration
 
@@ -104,8 +104,8 @@ Die Designkonfiguration umfasst alle Designs, die in Ihrem Commerce-System regis
 
 Der Schlüssel des Arrays ist der vollständige Designpfad: `area` + `theme path`
 
-Beispiel, `frontend/Magento/luma`.
-`frontend` ist und `Magento/luma` is [Design](https://glossary.magento.com/theme) Pfad.
+Beispiel: `frontend/Magento/luma`.
+`frontend` ist und `Magento/luma` ist der Designpfad.
 
 Der Wert des Arrays ist Daten zum Design: Code, Titel, Pfad, übergeordnete ID
 

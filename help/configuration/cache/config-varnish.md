@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren und Verwenden von Varnish
 description: Erfahren Sie, wie Varnish Dateien speichert und den HTTP-Traffic verbessert.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In der obigen Abbildung führen HTTP-Anfragen von Benutzern über das Internet z
 
 Wenn der Webserver Assets zurückgibt, werden zwischenspeicherbare Assets in &quot;Varnish&quot;gespeichert. Alle nachfolgenden Anfragen für diese Assets werden von Varnish erfüllt (d. h. die Anfragen erreichen den Webserver nicht). Varnish gibt zwischengespeicherten Inhalt extrem schnell zurück. Die Ergebnisse sind schnellere Antwortzeiten, um den Inhalt an Benutzer zurückzugeben, und eine geringere Anzahl von Anforderungen, die von Commerce erfüllt werden müssen.
 
-Von Varnish zwischengespeicherte Assets laufen in einem konfigurierbaren Intervall ab oder werden durch neuere Versionen derselben Assets ersetzt. Sie können den Cache auch manuell löschen, indem Sie entweder [Admin](https://glossary.magento.com/magento-admin) oder [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) Befehl.
+Von Varnish zwischengespeicherte Assets laufen in einem konfigurierbaren Intervall ab oder werden durch neuere Versionen derselben Assets ersetzt. Sie können den Cache auch manuell löschen, indem Sie entweder den Administrator oder die [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) Befehl.
 
 ## Prozessübersicht
 
@@ -97,7 +97,7 @@ Dieses Thema behandelt nur die Standardoptionen in der vorherigen Liste. Es gibt
 
 Bei der ersten Browser-Anforderung werden zwischenspeicherbare Assets aus &quot;Varnish&quot;an den Client-Browser gesendet und im Browser zwischengespeichert.
 
-Darüber hinaus verwendet Varnish eine [Entität](https://glossary.magento.com/entity) Tag (ETag) für statische Assets. Mit dem ETag können Sie bestimmen, wann [statische Dateien](https://glossary.magento.com/static-files) auf dem Server ändern. Daher werden statische Assets an den Client gesendet, wenn sie sich auf dem Server ändern - entweder bei einer neuen Anforderung eines Browsers oder beim Aktualisieren des Browser-Caches durch den Client, normalerweise durch Drücken von F5 oder Strg+F5.
+Darüber hinaus verwendet Varnish ein Entitäts-Tag (ETag) für statische Assets. Das ETag bietet eine Möglichkeit, festzustellen, wann sich statische Dateien auf dem Server ändern. Daher werden statische Assets an den Client gesendet, wenn sie sich auf dem Server ändern - entweder bei einer neuen Anforderung eines Browsers oder beim Aktualisieren des Browser-Caches durch den Client, normalerweise durch Drücken von F5 oder Strg+F5.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten.
 

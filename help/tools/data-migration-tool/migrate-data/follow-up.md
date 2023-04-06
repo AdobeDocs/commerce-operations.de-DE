@@ -1,9 +1,9 @@
 ---
 title: Folgemaßnahmen zur Datenmigration
 description: Erfahren Sie, wie Sie überprüfen können, ob die Datenmigration von Magento 1 nach Magento 2 erfolgreich war und ob alle Funktionen erwartungsgemäß funktionieren.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Referenznummern für Bestellungen, Rechnungen, Sendungen, Credit Memos und RMA m
 
 ### Kundensegmente erneut speichern [Nur Adobe Commerce]
 
-Nach der Migration müssen Kundensegmente aus dem [Admin](https://glossary.magento.com/admin) Bedienfeld zum Einrichten und Ausführen.
+Nach der Migration müssen Kundensegmente aus dem Admin Panel entfernt werden, damit sie ausgeführt werden können.
 
 ### Zeitzone konfigurieren
 

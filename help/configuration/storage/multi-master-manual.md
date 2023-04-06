@@ -1,9 +1,9 @@
 ---
 title: Übergeordnete Datenbanken manuell konfigurieren
 description: Siehe Anleitungen zum manuellen Konfigurieren der geteilten Datenbanklösung.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Wenn die Commerce-Anwendung bereits in Produktion ist oder Sie bereits benutzerd
 
 Die manuelle Aufspaltung von Datenbanken beinhaltet:
 
-- Erstellen Sie die [Kasse](https://glossary.magento.com/checkout) und Datenbanken des Bestellmanagementsystems (OMS)
+- Erstellen Sie die Datenbanken des Checkout- und Order Management Systems (OMS).
 - Führen Sie eine Reihe von SQL-Skripten aus, die:
 
    - Fremdschlüssel ablegen
@@ -62,7 +62,7 @@ Adobe empfiehlt dringend, Ihre aktuelle Datenbank und Ihr Dateisystem zu sichern
 
 ## Einrichten zusätzlicher Übergeordneter Datenbanken
 
-In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkäufe erstellen und [Anführungszeichen](https://glossary.magento.com/quote) -Tabellen.
+In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkaufs- und Anführungstabellen erstellen.
 
 **So erstellen Sie Verkaufs- und OMS-Anführungsdatenbanken**:
 
@@ -549,7 +549,7 @@ Suchen Sie den Block, der mit `'resource'` und hinzufügen `'checkout'` und `'sa
 
 ## Referenzskripte
 
-In diesem Abschnitt finden Sie Skripte, mit denen Sie eine vollständige Liste der betroffenen Tabellen drucken können, ohne Aktionen daran vornehmen zu müssen. Sie können sie verwenden, um zu sehen, welche Tabellen betroffen sind, bevor Sie Datenbanken manuell aufteilen. Dies kann nützlich sein, wenn Sie Erweiterungen verwenden, die die [Datenbankschema](https://glossary.magento.com/database-schema).
+In diesem Abschnitt finden Sie Skripte, mit denen Sie eine vollständige Liste der betroffenen Tabellen drucken können, ohne Aktionen daran vornehmen zu müssen. Sie können sie verwenden, um zu sehen, welche Tabellen betroffen sind, bevor Sie Datenbanken manuell aufteilen. Dies kann nützlich sein, wenn Sie Erweiterungen verwenden, die das Datenbankschema anpassen.
 
 So verwenden Sie diese Skripte:
 

@@ -1,9 +1,9 @@
 ---
 title: Überprüfen des Datenbankstatus
 description: Führen Sie diese Schritte aus, um den Status Ihrer Adobe Commerce- oder Magento Open Source-Datenbank zu überprüfen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '108'
 ht-degree: 2%
 
 ---
@@ -35,4 +35,4 @@ Der Befehl gibt einen der folgenden Ausstiegscodes zurück:
 |--------------|--------------|---------------|
 | 0 | Normal | Keines |
 | 1 | Einige Module verwenden Codeversionen, die neuer oder älter als die Datenbank sind | Ausführen [`magento setup:upgrade`](database-upgrade.md) , um das Datenbankschema zu aktualisieren und `composer update` aus dem Stammverzeichnis der Anwendung, um Komponentenabhängigkeiten zu aktualisieren |
-| 2 | `magento setup:upgrade` ist erforderlich | [`magento setup:upgrade`](database-upgrade.md) , um die [Datenbankschema](https://glossary.magento.com/database-schema) |
+| 2 | `magento setup:upgrade` ist erforderlich | [`magento setup:upgrade`](database-upgrade.md) Aktualisierung des Datenbankschemas |

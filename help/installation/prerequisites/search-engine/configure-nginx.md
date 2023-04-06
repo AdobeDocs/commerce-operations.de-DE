@@ -1,9 +1,9 @@
 ---
 title: Konfigurieren von Nginx für Ihre Suchmaschine
 description: Führen Sie diese Schritte aus, um eine Suchmaschine mit dem Nginx-Webserver für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ include /etc/nginx/conf.d/*.conf;
 
 ### Einrichten von Nginx als Proxy
 
-In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf die [nginx](https://glossary.magento.com/nginx) Server.
+In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den nginx-Server zugreifen kann.
 
 1. Verwenden eines Texteditors zum Erstellen einer Datei `/etc/nginx/conf.d/magento_es_auth.conf` mit folgendem Inhalt:
 

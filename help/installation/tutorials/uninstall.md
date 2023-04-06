@@ -1,9 +1,9 @@
 ---
 title: Adobe Commerce deinstallieren oder neu installieren
 description: Führen Sie diese Schritte aus, um Vor-Ort-Installationen von Adobe Commerce und Magento Open Source zu deinstallieren und neu zu installieren.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Die folgende Meldung wird angezeigt, um eine erfolgreiche Deinstallation zu best
 
 Standardmäßig `bin/magento setup:upgrade` löscht kompilierten Code und den Cache. In der Regel verwenden Sie `bin/magento setup:upgrade` um Komponenten zu aktualisieren und jede Komponente kann unterschiedliche kompilierte Klassen erfordern.
 
-In einigen Situationen (insbesondere bei der Bereitstellung in der Produktion) möchten Sie jedoch möglicherweise vermeiden, kompilierten Code zu löschen, da dies einige Zeit in Anspruch nehmen kann. (Die [cache](https://glossary.magento.com/cache) wird noch gelöscht.) So aktualisieren Sie die [Datenbankschema](https://glossary.magento.com/database-schema) und Daten *without* den kompilierten Code zu löschen, geben Sie Folgendes ein:
+In einigen Situationen (insbesondere bei der Bereitstellung in der Produktion) möchten Sie jedoch möglicherweise vermeiden, kompilierten Code zu löschen, da dies einige Zeit in Anspruch nehmen kann. (Der Cache wird weiterhin gelöscht.) Aktualisieren des Datenbankschemas und der Daten *without* den kompilierten Code zu löschen, geben Sie Folgendes ein:
 
 ```bash
 bin/magento setup:upgrade --keep-generated

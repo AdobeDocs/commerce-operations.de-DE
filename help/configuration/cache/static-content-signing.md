@@ -1,9 +1,9 @@
 ---
 title: Statischer Inhalts-Cache
 description: Hier erhalten Sie Informationen zum Signieren statischer Inhalte und zum Aktivieren oder Deaktivieren der Funktion.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ Festlegen der `Expires` -Kopfzeile einer statischen Ressource weist den Browser 
 Dies ist eine häufige [Best Practice](https://developer.yahoo.com/performance/rules.html#expires=) zum Zwischenspeichern statischer Ressourcen.
 
 Wenn der Browser eine statische Ressource zwischenspeichert und diese Ressource auf dem Server geändert wird, müssen Sie den Browser-Cache löschen, damit die neue Version heruntergeladen werden kann.
-Das manuelle Löschen des Browser-Cache funktioniert, wenn Sie [website](https://glossary.magento.com/website) Administrator, aber dies ist keine geeignete Anfrage an Ihre Benutzer, wenn Sie möchten, dass sie neue Versionen einer statischen Ressource herunterladen.
+Das manuelle Löschen des Browser-Cache funktioniert, wenn Sie ein Website-Administrator sind. Dies ist jedoch keine geeignete Anfrage an Ihre Benutzer, wenn Sie möchten, dass sie neue Versionen einer statischen Ressource herunterladen.
 
 ## Statische Inhaltssignatur
 
-[Statischer Inhalt](https://glossary.magento.com/static-content) Beim Signieren handelt es sich um eine Commerce-Funktion, mit der Sie den Browsercache für statische Ressourcen ungültig machen können.
-Commerce erreicht dies durch Hinzufügen einer Implementierungsversion zur URL von [statische Dateien](https://glossary.magento.com/static-files).
+Statische Inhaltssignatur ist eine Commerce-Funktion, mit der Sie den Browser-Cache für statische Ressourcen ungültig machen können.
+Commerce erreicht dies durch Hinzufügen einer Bereitstellungsversion zur URL statischer Dateien.
 
 Im Folgenden finden Sie ein Beispiel für eine URL, die mit einer Version signiert wurde:
 

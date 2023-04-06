@@ -1,9 +1,9 @@
 ---
 title: Basisverzeichnis zur Verbesserung der Sicherheit ändern
 description: Verhindern des nicht autorisierten browserbasierten Zugriffs auf Adobe Commerce oder die Magento Open Source des lokalen Dateisystems.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,9 +165,9 @@ Der Wechsel zwischen den Modi ist ein wichtiger Schritt, um zu überprüfen, ob 
 
 ## 5. Überprüfen der Storefront
 
-Navigieren Sie zu [storefront](https://glossary.magento.com/storefront) in einem Webbrowser, um zu überprüfen, ob alles funktioniert.
+Gehen Sie in die Storefront eines Webbrowsers, um zu überprüfen, ob alles funktioniert.
 
-1. Öffnen Sie einen Webbrowser und geben Sie den Hostnamen oder die IP-Adresse Ihres Servers in die Adressleiste ein. Beispiel, `http://192.168.33.10`.
+1. Öffnen Sie einen Webbrowser und geben Sie den Hostnamen oder die IP-Adresse Ihres Servers in die Adressleiste ein. Beispiel: `http://192.168.33.10`.
 
    Die folgende Abbildung zeigt eine Beispiel-Storefront-Seite. Wenn es wie folgt angezeigt wird, war Ihre Installation ein Erfolg!
 

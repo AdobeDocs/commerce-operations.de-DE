@@ -1,9 +1,9 @@
 ---
 title: Installieren einer Erweiterung
 description: Führen Sie diese Schritte aus, um eine Adobe Commerce- oder Magento Open Source-Erweiterung zu installieren.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -16,12 +16,12 @@ Code, der das Adobe Commerce- und Magento Open Source-Verhalten erweitert oder a
 Zu den Erweiterungen gehören:
 
 - Module (Adobe Commerce- und Magento Open Source-Funktionen erweitern)
-- Designs (ändern Sie das Erscheinungsbild Ihrer [storefront](https://glossary.magento.com/storefront) und Admin)
+- Designs (ändern Sie das Erscheinungsbild Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Storefront und Admin lokalisieren)
 
 >[!TIP]
 >
->In diesem Thema wird erläutert, wie Sie mit der Befehlszeile Erweiterungen installieren können, die Sie über das Commerce Marketplace erwerben. Sie können dieselbe Vorgehensweise bei der Installation von _any_ Erweiterung; benötigen Sie lediglich die [Verfasser](https://glossary.magento.com/composer) Name und Version. Um sie zu finden, öffnen Sie die `composer.json` -Datei und notieren Sie die Werte für `"name"` und `"version"`.
+>In diesem Thema wird erläutert, wie Sie mit der Befehlszeile Erweiterungen installieren können, die Sie über das Commerce Marketplace erwerben. Sie können dieselbe Vorgehensweise bei der Installation von _any_ Erweiterung; benötigen Sie lediglich den Composer-Namen und die Version der Erweiterung. Um sie zu finden, öffnen Sie die `composer.json` -Datei und notieren Sie die Werte für `"name"` und `"version"`.
 
 Vor der Installation sollten Sie Folgendes tun:
 

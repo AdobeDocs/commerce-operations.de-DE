@@ -1,9 +1,9 @@
 ---
 title: Bereitstellen von statischen Ansichtsdateien
 description: Erfahren Sie, wie Sie im Produktionsmodus statische Dateien in das Commerce-Dateisystem schreiben.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie [statische Dateien](https://glossary.magento.com/static-files) in das Commerce-Dateisystem, wenn die Commerce-Software für [Produktionsmodus](../bootstrap/application-modes.md#production-mode).
+Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für [Produktionsmodus](../bootstrap/application-modes.md#production-mode).
 
 Der Begriff _statische Ansichtsdatei_ bezieht sich auf Folgendes:
 
@@ -57,7 +57,7 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 | `--language (-l)` | Generieren Sie Dateien nur für die angegebenen Sprachen. Standardmäßig werden Dateien für alle ISO-639-Sprachcodes generiert, ohne dass eine Option angegeben ist. Sie können den Namen eines Sprachcodes gleichzeitig angeben. Der Standardwert ist **all**.<br>Beispiel: `--language en_US --language es_ES` | Nein |
 | `--exclude-language` | Generieren Sie Dateien für die angegebenen Sprachcodes. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Sie können den Namen eines Sprachcodes oder eine kommagetrennte Liste von Sprachcodes angeben. Der Standardwert ist **Keine**. | Nein |
 | `--theme <theme>` | Designs, für die statische Inhalte bereitgestellt werden sollen. Der Standardwert ist **all**.<br>Beispiel: `--theme Magento/blank --theme Magento/luma` | Nein |
-| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **Keine**.<br>Beispiel, `--exclude-theme Magento/blank` | Nein |
+| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **Keine**.<br>Beispiel: `--exclude-theme Magento/blank` | Nein |
 | `--area (-a)` | Generieren Sie Dateien nur für die angegebenen Bereiche. Standardmäßig werden Dateien für alle Bereiche generiert, ohne dass eine Option angegeben ist. Gültige Werte sind `adminhtml` und `frontend`. Der Standardwert ist **all**.<br>Beispiel: `--area adminhtml` | Nein |
 | `--exclude-area` | Generieren Sie keine Dateien für die angegebenen Bereiche. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Der Standardwert ist **Keine**. | Nein |
 | `--jobs (-j)` | Aktivieren Sie die parallele Verarbeitung mit der angegebenen Anzahl von Aufträgen. Der Standardwert ist 0 (nicht in parallelen Prozessen ausgeführt). Der Standardwert ist **0**. | Nein |

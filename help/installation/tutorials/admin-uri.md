@@ -1,9 +1,9 @@
 ---
 title: Anzeigen oder Ändern des Admin-URI
 description: Führen Sie diese Schritte aus, um den URI Ihrer Adobe Commerce- oder Magento Open Source Admin-Anwendung anzuzeigen und zu ändern.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Bevor Sie diesen Befehl ausführen, müssen Sie [Erstellen oder Aktualisieren de
 
 ## Anzeigen des Admin-URI
 
-In diesem Abschnitt wird beschrieben, wie Sie mit der Befehlszeile die [Admin](https://glossary.magento.com/admin) Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+In diesem Abschnitt wird beschrieben, wie Sie mit der Befehlszeile die Admin Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 Befehlsoptionen:
 

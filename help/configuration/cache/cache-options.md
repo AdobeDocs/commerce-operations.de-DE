@@ -1,16 +1,16 @@
 ---
 title: Cacheoptionen
 description: Konfigurieren Sie den Zugriff auf den Cache-Speicher auf niedriger Ebene.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---
 
 # Optionen für den Cache auf niedriger Ebene
 
-Die Commerce-Anwendung verwendet eine einfache [cache](https://glossary.magento.com/cache) [frontend](https://glossary.magento.com/frontend) und [Backend](https://glossary.magento.com/backend) , um Zugriff auf den Cache-Speicher zu gewähren.
+Die Commerce-Anwendung verwendet ein Cache-Frontend und -Backend niedriger Ebene, um Zugriff auf den Cache-Speicher zu gewähren.
 
 ## Frontend-Cache auf niedriger Ebene
 

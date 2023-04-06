@@ -1,9 +1,9 @@
 ---
 title: Konfigurationstypen
 description: Erstellen oder erweitern Sie Konfigurationstypen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Erweitern von Konfigurationstypen
 
-Um einen vorhandenen Konfigurationstyp zu erweitern, müssen Sie nur eine Konfigurationsdatei in Ihrer [Modul](https://glossary.magento.com/module).
+Um einen vorhandenen Konfigurationstyp zu erweitern, müssen Sie nur eine Konfigurationsdatei in Ihrem -Modul erstellen.
 
 Um beispielsweise einen Ereignisbeobachter hinzuzufügen, erstellen Sie `app/code/{VendorName}/{ModuleName}/etc/events.xml` und deklarieren Sie einen neuen Beobachter.
 
@@ -29,11 +29,11 @@ Um einen Konfigurationstyp zu erstellen, müssen Sie mindestens Folgendes hinzuf
 - XSD-Validierungsschema
 - XML-Konfigurationsdateien
 
-So können Sie beispielsweise eine [Adapter](https://glossary.magento.com/adapter) Erstellen Sie für einen neuen Suchserver, mit dem Erweiterungen konfigurieren können, wie seine Entitäten in diesem Server indiziert werden:
+Um beispielsweise einen Adapter für einen neuen Suchserver einzuführen, mit dem Erweiterungen konfigurieren können, wie seine Entitäten in diesem Server indiziert werden, erstellen Sie:
 
 - Lader
 - Eine XSD-Schemadatei
-- Eine entsprechend benannte Konfigurationsdatei. Beispiel, `search.xml`. Diese Datei wird anhand Ihres Schemas gelesen und validiert.
+- Eine entsprechend benannte Konfigurationsdatei. Beispiel: `search.xml`. Diese Datei wird anhand Ihres Schemas gelesen und validiert.
 - Alle anderen Klassen, die für Ihre Arbeit erforderlich sind.
 
 >[!INFO]

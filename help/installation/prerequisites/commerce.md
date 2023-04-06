@@ -1,9 +1,9 @@
 ---
 title: Herunterladen der Adobe Commerce-Software
 description: Erfahren Sie, wie Sie die Adobe Commerce- und Magento Open Source-Software herunterladen.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -62,4 +62,4 @@ UNIX-Systeme erfordern `root` Berechtigungen zum Installieren und Konfigurieren 
 
 Do *not* Installieren Sie die Anwendung im Basisverzeichnis des Webservers als `root` -Benutzer, da der Webserver möglicherweise nicht mit diesen Dateien interagieren kann.
 
-Sie benötigen `root` Berechtigungen zum Erstellen der [Dateisysteminhaber](file-system/overview.md) und fügen Sie diesen Eigentümer zur Gruppe des Webservers hinzu. Sie verwenden die [Dateisysteminhaber](https://glossary.magento.com/magento-file-system-owner) zum Ausführen `bin/magento` -Befehle über die Befehlszeile und zum Einrichten von Cron-Aufträgen, die Aufgaben für Sie planen.
+Sie benötigen `root` Berechtigungen zum Erstellen der [Dateisysteminhaber](file-system/overview.md) und fügen Sie diesen Eigentümer zur Gruppe des Webservers hinzu. Sie verwenden den Dateisysteminhaber zum Ausführen von `bin/magento` -Befehle über die Befehlszeile und zum Einrichten von Cron-Aufträgen, die Aufgaben für Sie planen.

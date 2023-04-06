@@ -1,9 +1,9 @@
 ---
 title: Zwischenspeicherung konfigurieren
 description: Erfahren Sie mehr über das Zwischenspeichern und wie Sie Cache-Mechanismen für die Adobe Commerce- und Magento Open Source-Anwendung konfigurieren.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 [!DNL Commerce] ermöglicht es Ihnen, Alternativen zum standardmäßigen Dateisystem-Caching zu konfigurieren. In diesem Handbuch werden einige dieser Alternativen erläutert. nämlich
 
-- Richten Sie Folgendes ein: [cache](https://glossary.magento.com/cache) Mechanismen in [!DNL Commerce] Konfiguration:
+- Richten Sie die folgenden Cache-Mechanismen im [!DNL Commerce] Konfiguration:
 
    - [Datenbank](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
    - [Redis](config-redis.md)
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 - Ändern der bereitgestellten `default` cache frontend—
 
-   Sie ändern nur die `<magento_root>/app/etc/di.xml` -Datei, der globalen [Abhängigkeitsinjektion](https://glossary.magento.com/dependency-injection) Konfiguration.
+   Sie ändern nur die `<magento_root>/app/etc/di.xml` -Datei, die globale Konfiguration für die Abhängigkeitsinjektion der Commerce-Anwendung.
 
 - Benutzerdefiniertes Cache-Frontend konfigurieren -
 
