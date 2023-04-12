@@ -1,9 +1,9 @@
 ---
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
-source-git-commit: b71819d123856d03dab872a1652b325ffe7178a6
+source-git-commit: ef501b34947f24f8028bd5876bd4a167551e03ec
 workflow-type: tm+mt
-source-wordcount: '11561'
+source-wordcount: '11914'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,25 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.30 {#v1-1-30}
+
+* **ACSD-50336** (für Adobe Commerce und Magento Open Source >=2.4.4-p1 &lt;2.4.4-p3) - Behebung des Problems, bei dem E-Mails zur Produktwarnung nicht gesendet werden, wenn ein Produkt wieder vorrätig ist oder der Preis geändert wird.
+* **ACSD-50367** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem der Export von Kundenadressen nicht funktioniert, wenn ein Attribut mit mehreren ausgewählten Kundenadressen ohne Werte erstellt wird.
+* **ACSD-49877** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem die automatische Videowiedergabe auf einem Mobilgerät nicht funktioniert [!DNL Safari] wenn das Video direkt mit einer Remote-Videodatei und nicht mit einem Streaming-Dienst verknüpft ist.
+* **ACSD-50165** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebt den Fehler *Die Datei kann nicht gelöscht werden. Warning!unlink: Keine solche Datei oder Verzeichnis* beim Leeren des JS/CSS-Cache vom Administrator.
+* **ACSD-49737** (für Adobe Commerce und Magento Open Source >=2.4.1-p1 &lt;2.4.7) - Behebung des Problems, bei dem ein Gutschein fälschlicherweise als nach einer fehlgeschlagenen Kartenzahlung als verwendet markiert wurde.
+* **ACSD-50814** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem ein Admin-Benutzer kein Kreditmemo erstellen kann.
+* **ACSD-50116** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem ein Admin-Benutzer keine URL-Neufassung für Unterkategorien der Stufe 3 oder niedriger erstellen kann.
+* **ACSD-49513** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.5) - Behebung des Problems, bei dem die Synchronisation von Remote-Speicher aufgrund von 0-Byte-Dateien fehlschlägt.
+* **ACSD-46683** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem der Versandpreis anzeigt *Noch nicht berechnet*.
+* **ACSD-49129** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.6) - Behebung des Problems, bei dem die *[!UICONTROL content]* -Attribut (Bildcode base64) wird nicht zurückgegeben in `rest/V1/products/sku/media` API-Antworten für Produktmedien.
+* **ACSD-50276** (für Adobe Commerce >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem das Formular zur Kundenregistrierung auf der Storefront nicht funktioniert, wenn ein Kundenattribut mit Mehrfachauswahl erstellt wird.
+* **ACSD-50527** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebt den Fehler, der beim Speichern einer Seite mit einem leeren dynamischen Block auftritt.
+* **ACSD-49973** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.5) - Verbessert die Leistung beim Abrufen gebündelter Produkte über GraphQL.
+* **BB2B-2598** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Hinzufügen der Caching-Funktion zum [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency]und [!UICONTROL storeConfig] GraphQL-Abfragen.
+* Es wurden neue Versionen für MDVA-42806, ACSD-48627, ACSD-46815 hinzugefügt.
+* Die Patchmetadaten für ACSD-49773, ACSD-47179, ACSD-48300 wurden aktualisiert.
 
 ## v1.1.29 {#v1-1-29}
 
