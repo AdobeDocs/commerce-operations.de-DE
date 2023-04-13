@@ -1,9 +1,9 @@
 ---
 title: Indexer verwalten
 description: Sehen Sie sich Beispiele für das Anzeigen und Verwalten von Commerce-Indizes an.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Sie können die folgenden Indizes im Parallelmodus ausführen:
 - `Category Product` kann von Store-Ansichten parallelisiert werden.
 - `Catalog Price` kann von Website- und Kundengruppen parallelisiert werden.
 - `Catalog Permissions` kann von Kundengruppen parallelisiert werden.
+
+>[!INFO]
+>
+>Die Parallelisierung für Volltext der Katalogsuche und Kategorieprodukt ist standardmäßig aktiviert.
 
 Um die Parallelisierung zu verwenden, legen Sie einen der verfügbaren Dimensionsmodi für den Produktpreisindex fest:
 
