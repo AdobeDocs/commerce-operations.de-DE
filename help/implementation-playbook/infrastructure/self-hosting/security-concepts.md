@@ -7,7 +7,7 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
 source-wordcount: '1571'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Die folgenden Konzepte sind in keiner bestimmten Reihenfolge aufgeführt. Sie so
 
 ## Schreibgeschütztes Dateisystem
 
-Das reine Dateisystemkonzept wurde von [Adobe Commerce in Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Dadurch wird ein wichtiger Bereich, der von einem schlechten Schauspieler genutzt wird, vollständig entfernt. Viele Exploits haben davon profitiert, eine Datei zu ändern, die sich voraussichtlich in der Commerce-Anwendung befindet, um die Erkennung zu vermeiden. Anstatt eine zu erstellen, ändert der fehlerhafte Akteur den Inhalt einer vorhandenen Datei, um eine unerwartete Aktion auszuführen. Durch das schreibgeschützte Dateisystem wird dieser Angriffsvektor erheblich reduziert.
+Das reine Dateisystemkonzept wurde von [Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Dadurch wird ein wichtiger Bereich, der von einem schlechten Schauspieler genutzt wird, vollständig entfernt. Viele Exploits haben davon profitiert, eine Datei zu ändern, die sich voraussichtlich in der Commerce-Anwendung befindet, um die Erkennung zu vermeiden. Anstatt eine zu erstellen, ändert der fehlerhafte Akteur den Inhalt einer vorhandenen Datei, um eine unerwartete Aktion auszuführen. Durch das schreibgeschützte Dateisystem wird dieser Angriffsvektor erheblich reduziert.
 
 ## Verwenden von zwei Faktor-Authentifizierungs- und Passwort-Managern
 

@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Bevor Sie nicht verwendete Module deaktivieren, stellen Sie sicher, dass Sie kei
 
 ## Adobe Commerce- und PHP-Codierungsstandards für jede Pull-Anforderung einhalten
 
-Adobe Commerce verfügt über eine Reihe von [Kodierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Diese helfen sicherzustellen, dass ein ähnliches Muster, Stil und erwartetes Design unabhängig vom Typ der Softwareentwicklung befolgt werden. Hierbei handelt es sich um eine Lösungsanforderung, die befolgt werden muss, wenn ein Beitrag zur Adobe Commerce-Codebasis geleistet wird. Die Anwendung dieser Methode für die benutzerdefinierte Entwicklung ist jedoch auch ein solider Eckpfeiler für alle Entwickler, die aktuell und zukünftig arbeiten werden. Wenn alle Pull-Anforderungen dazu angehalten werden, einen Code-Standard zu übergeben, hilft dies sicherzustellen, dass alle die gleichen konsistenten Entwicklungsmuster verstehen und erwarten können.
+Adobe Commerce verfügt über eine Reihe von [Kodierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Diese helfen sicherzustellen, dass ein ähnliches Muster, Stil und erwartetes Design unabhängig vom Typ der Softwareentwicklung befolgt werden. Wenn Sie zur Adobe Commerce-Codebase beitragen, ist dies eine Anforderung. Sollten Sie sich jedoch dafür entscheiden, diese Methode für die benutzerdefinierte Entwicklung zu befolgen, wird ein solider Eckpfeiler für alle Entwickler, sowohl für die aktuelle als auch für die Zukunft, geschaffen. Wenn alle Pull-Anforderungen dazu angehalten werden, einen Code-Standard zu übergeben, hilft dies sicherzustellen, dass alle die gleichen konsistenten Entwicklungsmuster verstehen und erwarten können.
 
 Um die Adobe Commerce-Kodierungsstandards zu begleiten, wird als weiteres Fundament PHP-Basis verwendet. Es sollte in Ihren Entwicklerhandbüchern klar definiert sein, welche Standards Sie einhalten müssen und welche Abweichungen akzeptabel sind. Ein Fallback sollte jedoch dem öffentlich gepflegten Leitfaden unter [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 
