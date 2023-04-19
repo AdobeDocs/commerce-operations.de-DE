@@ -1,7 +1,7 @@
 ---
 title: "Die [!UICONTROL Summary] tab"
 description: Erfahren Sie mehr über die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
+source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Die **[!UICONTROL Swap memory free in bytes]** frame zeigt nach Knoten die Menge
 
 ![CPU-Prozentsatz nach Host](../../assets/tools/cpu-percent-by-host.jpg)
 
-Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** Rahmen. Sie sollten die Auswahl der Nicht-Produktionsumgebungen aufheben. Beachten Sie auch alle Fälle, in denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Weitere Tipps zur hohen CPU-Auslastung finden Sie unter [Fehlerbehebung bei der Leistung mit New Relic on Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** Rahmen. Sie sollten die Auswahl der Nicht-Produktionsumgebungen aufheben. Beachten Sie auch alle Fälle, in denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Weitere Tipps zur hohen CPU-Auslastung finden Sie unter [Fehlerbehebung bei der Leistung von New Relic auf Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -363,7 +363,7 @@ Die **[!UICONTROL Order transactions (default?)]** frame sucht nach Transaktione
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![elasticsearch-Indexinformationen](../../assets/tools/elasticsearch-index-information.jpg)
+![elasticsearch-Indexinformationen](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[Elasticsearch-Status:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
