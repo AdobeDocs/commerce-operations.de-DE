@@ -1,17 +1,17 @@
 ---
 title: "[!DNL Dashboard]"
 description: Erfahren Sie mehr über die [!DNL Dashboard] im [!DNL Site-Wide Analysis Tool], -Elemente, Verwendungszeitpunkt, Vorteile und Best Practices.
-source-git-commit: d176b6a82fbea2f3c611be0fbea85814086feed9
+source-git-commit: 78cc20b7a65bff641f6849f6c2566cf5ad2afbd1
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL Dashboard]
 
-Die [!UICONTROL Dashboard] Seite zeigt einen Überblick [!DNL widgets] , die eine &quot;Einzelne Glasansicht&quot;des Gesundheitszustands und des aktuellen Status Ihrer Adobe Commerce-Website bieten. Diese [!DNL widgets] enthalten jeweils einen Link zum Zugriff auf die Seite der einzelnen Funktionen, zu jedem Tool selbst oder zu Berichten (je nach [!DNL widget]).
-Es gibt auch eine Liste von [!UICONTROL External Resources] Links für Adobe Commerce, einschließlich der [Support-Info-Center für Adobe Commerce (Help Center)](https://support.magento.com/), [Adobe Commerce-Entwicklerdokumentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}, [Sicherheitszentrum](https://magento.com/security)und [Beobachtung für Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+Die [!UICONTROL Dashboard] Seite zeigt einen Überblick [!DNL widgets] , die eine &quot;Einzelne Glasansicht&quot;des Gesundheitszustands und des aktuellen Status Ihrer Adobe Commerce-Website bieten. Jeder [!DNL widget] enthält einen Link zum Zugriff auf die Seite jeder Funktion, zu jedem Tool selbst oder zu Berichten (je nach [!DNL widget]).
+Es gibt auch eine Liste von [!UICONTROL External Resources] Links für Adobe Commerce, einschließlich der [Support-Info-Center für Adobe Commerce (Help Center)](https://support.magento.com/), [Adobe Commerce-Entwicklerdokumentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Sicherheitszentrum](https://magento.com/security)und [Beobachtung für Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
 
 ## Elemente
 
@@ -21,24 +21,26 @@ Recommendations umfasst Beschreibungen, Empfehlungen, Site-Auswirkungen, Stammur
 * **[!UICONTROL Upgrade Compatibility Tool]**: Überprüft eine benutzerdefinierte Adobe Commerce-Instanz auf eine bestimmte Version, indem alle darin installierten Module und der darin installierte Core-Code analysiert werden. Es wird eine Liste kritischer Probleme, Fehler und Warnungen zurückgegeben, die behoben werden müssen, bevor auf die neueste Version von Adobe Commerce aktualisiert wird. Außerdem werden potenzielle Probleme identifiziert, die in Ihrem Code behoben werden müssen, bevor ein Upgrade auf eine neuere Version von Adobe Commerce durchgeführt werden kann.
 Die [!UICONTROL Upgrade Compatibility Tool] können Sie erkennen, wann Änderungen am Kerncode an benutzerdefinierten Funktionen vorgenommen wurden.
 
-* **[!UICONTROL Security Scan Tool]**: Überwachen von Adobe Commerce-Sites auf Sicherheitsrisiken. Es kann proaktiv und effizient Malware in Händlern erkennen und Händler darüber informieren, ob Sicherheitsrisiken, Malware oder Bedrohungen bestehen, und fehlende Adobe Commerce-Patches und -Updates identifizieren.
+* **[!UICONTROL Security Center Widget]**: Zeigt Sicherheitseinblicke für Ihre Site an.
+Zu den angezeigten Sicherheitsinformationen gehören [Tech [!DNL Stack] Versionskonformität [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), and [[!DNL Site-Wide Analysis Tool] Best Practice Security Recommendations](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html).<br>
+Die [[!UICONTROL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) überwacht Adobe Commerce-Sites auf Sicherheitsrisiken. Es kann proaktiv und effizient Malware in Händlern erkennen und Händler darüber informieren, ob Sicherheitsrisiken, Malware oder Bedrohungen bestehen, und fehlende Adobe Commerce-Patches und -Updates identifizieren.
 
 * **[!UICONTROL Extensions]**: Zeigt die derzeit auf Ihrer Adobe Commerce-Instanz installierten Erweiterungen an. [Adobe Commerce Marketplace](https://marketplace.magento.com/extensions.html) soweit verfügbar, werden Informationen für die dort aufgeführten Erweiterungen bereitgestellt.
 
-* **[!UICONTROL Alerts]**: Zeigt die neueste [!DNL New Relic Managed Alerts] für die Adobe Commerce-Instanz. Weitere Informationen [Verwaltete Warnhinweise für Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) und wie [Zugriff auf neue relationale Dienste](https://support.magento.com/hc/en-us/articles/360039127712) in der Wissensdatenbank der Adobe Commerce-Support.
+* **[!UICONTROL Alerts]**: Zeigt die neueste [!DNL New Relic Managed Alerts] für die Adobe Commerce-Instanz. Weitere Informationen [Verwaltete Warnhinweise für Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) und wie [Zugriff auf New Relic-Dienste](https://support.magento.com/hc/en-us/articles/360039127712) in der Wissensdatenbank der Adobe Commerce-Support.
 
 * **[!UICONTROL Non-recommended software in use]**: Zeigt die nicht empfohlene Software an, die Ihre Adobe Commerce-Instanz derzeit verwendet. Diese basiert auf Ihrer Adobe Commerce-Version. Die nicht empfohlene Software wird von [!UICONTROL Name], [!UICONTROL Installed Version]und [!UICONTROL Recommended Version].
 
-* **[!UICONTROL Recommended Patches]**: Zeigt eine kurze Liste aller empfohlenen Patches auf der Basis von Patches an, die Sie bereits installiert haben, und der Adobe Commerce-Version. Die vollständige Liste der empfohlenen Patches finden Sie im **[!UICONTROL Patches]** Registerkarte &quot;Funktion&quot;, die sich ebenfalls im [!DNL Site-Wide Analysis Tool]. Die Patches werden von der [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Alle aufgelisteten Patches sind mit Ihrer aktuellen Adobe Commerce-Instanz kompatibel.
+* **[!UICONTROL Recommended Patches]**: Zeigt eine kurze Liste aller empfohlenen Patches auf der Basis von Patches an, die Sie bereits installiert haben, und der Adobe Commerce-Version. Die vollständige Liste der empfohlenen Patches finden Sie im **[!UICONTROL Patches]** Registerkarte &quot;Funktion&quot;, die sich ebenfalls im [!DNL Site-Wide Analysis Tool]. Die Patches werden von der [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Alle aufgelisteten Patches sind mit Ihrer aktuellen Adobe Commerce-Instanz kompatibel.
 Wenn es keine empfohlenen Patches für Ihre Adobe Commerce-Instanz gibt, wird dies [!DNL widget] wird angezeigt, **[!UICONTROL No Recommended Patches]**.
 
 ## Verwendungsbereiche
 
-Die **[!UICONTROL Dashboard]** Seite ist Ihr naheliegendes Befehlszentrum im [!DNL Site-Wide Analysis Tool] , um nicht nur einfach das &quot;große Bild&quot;der Gesundheit Ihrer Site als Ganzes anzuzeigen, sondern auch spezifische Tools, Empfehlungen und Berichte für Ihre Adobe Commerce-Website zu sehen und darauf zuzugreifen. [!DNL widget].
+Die **[!UICONTROL Dashboard]** Seite ist Ihr naheliegendes Befehlszentrum im [!DNL Site-Wide Analysis Tool] , um nicht nur einfach das &quot;Gesamtbild&quot;der Gesundheit Ihrer Site als Ganzes anzuzeigen, sondern auch spezifische Tools, Empfehlungen und Berichte für Ihre Adobe Commerce-Website zu sehen und darauf zuzugreifen. [!DNL widget].
 
 ## Vorteile
 
-* Die [!DNL widgets] für [!UICONTROL Recommendations], [!UICONTROL Extensions]und [!UICONTROL Security Scan] Alle verwenden einfach zu lesende, farbcodierte interaktive Kreisdiagramme mit Diagrammlegenden an der Seite und zählen die Summen in der Mitte, um anzugeben, wie viele [!UICONTROL Recommendations], [!UICONTROL Extensions]und [!UICONTROL Security Scan Tool] Elemente, die jede Funktion enthält. [!UICONTROL Recommendations] und [!UICONTROL Security Scan Tool] -Diagramme sind durch Schweregrad getrennt. [!UICONTROL Extensions] werden in vier Klassifizierungen unterteilt: aktuelle Version, alte Version, deaktiviert und unbekannt.
+* Die [!DNL widgets] für [!UICONTROL Security Center], [!UICONTROL Recommendations], [!UICONTROL Extensions]und [!UICONTROL Security Scan] Alle verwenden einfach zu lesende, farbcodierte interaktive Kreisdiagramme mit Diagrammlegenden an der Seite und zählen die Summen in der Mitte, um anzugeben, wie viele [!UICONTROL Recommendations], [!UICONTROL Extensions]und [!UICONTROL Security Scan Tool] Elemente, die jede Funktion enthält. [!UICONTROL Recommendations] und [!UICONTROL Security Scan Tool] -Diagramme sind durch Schweregrad getrennt. [!UICONTROL Extensions] werden in vier Klassifizierungen unterteilt: aktuelle Version, alte Version, deaktiviert und unbekannt.
 
 * [!DNL New Relic Alerts] werden mit dem neuesten Warnhinweis oben aufgelistet, einschließlich einer kurzen Beschreibung und der Dauer des Warnhinweises.
 
@@ -50,8 +52,8 @@ Die **[!UICONTROL Dashboard]** Seite ist Ihr naheliegendes Befehlszentrum im [!D
 
 ## Best Practices für die Verwendung der [!UICONTROL Dashboard]
 
-* Klicken Sie auf jeden [!DNL widget] , um auf die detaillierten Daten zuzugreifen, die es bietet, um Einblicke in die Gesundheit, Empfehlungen und Best Practices Ihrer Website zu erhalten und diese zu verbessern.
+* Klicken Sie auf jeden [!DNL widget] , um auf die detaillierten Daten zuzugreifen, die es bietet, um Einblicke in die Sicherheit, den Gesundheitszustand, Empfehlungen und Best Practices Ihrer Website zu erhalten und diese zu verbessern.
 
 * Navigieren Sie zu [!UICONTROL Security Scan Tool] [!DNL widget] und klicken Sie auf [!UICONTROL View Report] zum Anzeigen einer [!UICONTROL Recommendations] Berichte für Ihre Site erstellen.
 
-* Verwenden Sie die [!DNL External Resources] Links, über die Sie entweder mehr Informationen erfahren, aktuelle Informationen zu Sicherheits-Patches, -Updates und -Best Practices erhalten oder die Vorteile der [Support-Info-Center für Adobe Commerce (Help Center)](https://support.magento.com/), [Adobe Commerce-Entwicklerdokumentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}, [Sicherheitszentrum](https://helpx.adobe.com/security.html)und [Beobachtung für Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+* Verwenden Sie die [!DNL External Resources] Links, über die Sie entweder mehr Informationen erfahren, aktuelle Informationen zu Sicherheits-Patches, -Updates und -Best Practices erhalten oder die Vorteile der [Support-Info-Center für Adobe Commerce (Help Center)](https://support.magento.com/), [Adobe Commerce-Entwicklerdokumentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Sicherheitszentrum](https://helpx.adobe.com/security.html)und [Beobachtung für Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
