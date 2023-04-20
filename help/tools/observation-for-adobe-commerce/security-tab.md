@@ -1,7 +1,7 @@
 ---
 title: "Die [!UICONTROL Security] tab"
 description: Erfahren Sie mehr über die [!UICONTROL Security] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 297c3fed4c0f7ad1a3cb40addef1d33fa8d41525
+source-git-commit: 5e4ab9e62f395b0967c3a632659c70a22770e9db
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
