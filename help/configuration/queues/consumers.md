@@ -1,9 +1,9 @@
 ---
 title: Verbraucher in der Nachrichtenwarteschlange
 description: Erfahren Sie mehr über die Kunden von Adobe Commerce- und Magento Open Source-Nachrichten-Warteschlangen, einschließlich der damit verbundenen Funktionen und Systemkonfigurationseinstellungen.
-source-git-commit: 1006a5761849b1d455469c6dfcb79a66cb90ec40
+source-git-commit: f9db986510a3ec8e62b9d628da40fdfd9741479f
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ In der folgenden Tabelle werden alle Verbraucher in der Nachrichtenwarteschlange
 | Erstellt Nachrichten für jede einzelne Aufgabe eines [Massenvorgang](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/), wie z. B. die Ein- oder Ausfuhr von Waren, die Änderung der Preise in großem Maßstab und die Zuteilung von Erzeugnissen an ein Lager. Erforderlich, wenn die [**[!UICONTROL Admin bulk operations]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html?#admin-bulk-operations) ist auf **[!UICONTROL Run asynchronously]**in den Konfigurationseinstellungen des Admin-Systems. |  |  |  |
 | `codegeneratorProcessor` | + | + | + |
 | Generiert asynchron Gutscheine im Hintergrund. Erforderlich für die Verwendung der [Batch-Gutscheingenerierung](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) Funktion. |  |  |  |
+| `commerce.eventing.event.publish` | + | + |  |
+| Prüft Ereignisse, die als Priorität in [Adobe I/O-Ereignisse für Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
 | Verhindert Verbindungszeitüberschreitungen während der [export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) von großen Datensätzen (z. B. 200.000 Produkte). |  |  |  |
 | `inventoryQtyCounter` | + | + |  |
