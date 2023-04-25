@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4117662e4b3686388d578ae3e620ee6478216a98
+source-git-commit: 20ebf9dc6c7a1aac1d183ed31b1a80a674d633f1
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 70%
@@ -483,28 +483,28 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
-            1.18
+            1.22
       </td>
       <td>
             1.18
