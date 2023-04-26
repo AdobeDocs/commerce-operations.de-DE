@@ -1,9 +1,10 @@
 ---
 title: Instrumente
 description: Optimieren Sie Ihren Adobe Commerce Store mit diesen Tools.
-source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
+exl-id: e2770019-d879-4685-bcbe-791550f49cf0
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '69'
 ht-degree: 0%
 
 ---
@@ -19,6 +20,6 @@ Dieses Handbuch richtet sich an Händler, Entwickler und Integratoren, um die op
 ## Was ist in der Anleitung enthalten?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+* [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 * [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

@@ -1,9 +1,10 @@
 ---
 title: Registerkarten "Funktionen"
 description: Informationen zu den verschiedenen Funktionen finden Sie auf den Registerkarten im [!DNL Site-Wide Analysis Tool]
-source-git-commit: 4f34d7db04229ef511cddbedce6ed08b75028831
+exl-id: 23fc0311-82aa-430b-b11b-e287bea23d7b
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 Die folgenden Funktionsregisterkarten werden am oberen Ende der [!DNL Site-Wide Analysis Tool] angezeigt.
 
-**[!UICONTROL Dashboard]**: Die [!UICONTROL Dashboard] auf der Seite werden Widgets angezeigt, die die aktuelle Recommendations, Upgrade-Kompatibilität, Sicherheitsscan, Erweiterungen und [!DNL NewRelic Alerts] für den aktuellen Status Ihrer Adobe Commerce-Website. Es gibt auch eine Liste von [!UICONTROL External Resources] Links für Adobe Commerce, einschließlich der [Support-Info-Center für Adobe Commerce (Help Center)](https://support.magento.com/), [Adobe Commerce-Entwicklerdokumentation (DevDocs)](https://devdocs.magento.com/), [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}, [Sicherheitszentrum](https://magento.com/security)und [Beobachtung für Adobe Commerce (OAC)](https://support.magento.com/hc/en-us/articles/4402379845901-Use-Observation-for-Adobe-Commerce).
+**[!UICONTROL Dashboard]**: Die [!UICONTROL Dashboard] auf der Seite werden Widgets angezeigt, die die aktuelle Recommendations, Upgrade-Kompatibilität, Sicherheitsscan, Erweiterungen und [!DNL NewRelic Alerts] für den aktuellen Status Ihrer Adobe Commerce-Website. Es gibt auch eine Liste von [!UICONTROL External Resources] Links für Adobe Commerce, einschließlich der [Support-Info-Center für Adobe Commerce (Help Center)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html), [Adobe Commerce-Entwicklerdokumentation (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Sicherheitszentrum](https://helpx.adobe.com/security.html)und [Beobachtung für Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).
 
 **[!UICONTROL Information]**: Die [!UICONTROL Information] Seite zeigt Übersichtsinformationen zur Site an.
 Die [!UICONTROL General Information] -Bereich zeigt die Basisdaten der Händler-Site an, zeigt den Eigentümer des Kontakts an, [!DNL Jira] Probleme (nur interne Verwendung) und Abschnitte &quot;Berichtstickets&quot;.
@@ -26,6 +27,6 @@ Zu den Ausnahmeinformationen gehören &quot;Letztes erkanntes Datum (UTC)&quot;,
 
 **[!UICONTROL Extensions]**: Die [!UICONTROL Extensions] auf der Seite werden die derzeit auf Ihrer Adobe Commerce-Instanz installierten Erweiterungen angezeigt. Informationen zu Adobe Commerce Marketplace werden, soweit verfügbar, für dort aufgeführte Erweiterungen bereitgestellt.
 
-**[!UICONTROL Alerts]**: Die [!UICONTROL Alerts] Seite zeigt die neueste [!DNL NewRelic Managed Alerts] für die Adobe Commerce-Instanz. Weitere Informationen [Verwaltete Warnhinweise für Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832) und wie [Zugriff auf neue Relic-Dienste](https://support.magento.com/hc/en-us/articles/360039127712) in der Wissensdatenbank der Adobe Commerce-Support.
+**[!UICONTROL Alerts]**: Die [!UICONTROL Alerts] Seite zeigt die neueste [!DNL NewRelic Managed Alerts] für die Adobe Commerce-Instanz. Weitere Informationen [Verwaltete Warnhinweise für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce.html) und wie [Zugriff auf neue Relic-Dienste](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html) in der Wissensdatenbank der Adobe Commerce-Support.
 
-**[!UICONTROL Patches]**: Die [!UICONTROL Patches] zeigt alle aktuellen Patches aus der [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} kompatibel mit der Adobe Commerce-Instanzversion des Händlers. Weitere Informationen zum [[!DNL Quality Patches Tool]](https://support.magento.com/hc/en-us/articles/360047139492) in der Wissensdatenbank der Adobe Commerce-Support.
+**[!UICONTROL Patches]**: Die [!UICONTROL Patches] zeigt alle aktuellen Patches aus der [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} mit der Adobe Commerce-Instanzversion des Händlers kompatibel. Weitere Informationen zum [[!DNL Quality Patches Tool]: neues Tool zur Selbstbedienung von Qualitätspatches](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html) in der Wissensdatenbank der Adobe Commerce-Support.

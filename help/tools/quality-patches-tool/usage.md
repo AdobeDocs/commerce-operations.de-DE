@@ -1,9 +1,10 @@
 ---
 title: Nutzung
 description: Erfahren Sie, wie Sie die [!DNL Quality Patches Tool].
-source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Sehen Sie sich dies an [technisches Video](https://experienceleague.adobe.com/do
 
 >[!INFO]
 >
->Siehe [Anwenden einzelner Patches](#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [Verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) , um eine vollständige Liste der veröffentlichten Patches zu überprüfen.
+>Siehe [Anwenden einzelner Patches](#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) , um eine vollständige Liste der veröffentlichten Patches zu überprüfen.
 
 >[!WARNING]
 >
@@ -60,7 +61,7 @@ Adobe Commerce 2.3.5.
 Die Statustabelle enthält:
 
 - **Typ**:
-   - `Optional` — Alle Patches der [!DNL Quality Patches Tool] und [Cloud-Patches](https://devdocs.magento.com/cloud/project/project-patch.html) Das -Paket ist für Installationen von Adobe Commerce und Magento Open Source optional.
+   - `Optional` — Alle Patches der [!DNL Quality Patches Tool] und [Commerce on Cloud Infrastructure Guide > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) Das -Paket ist für Installationen von Adobe Commerce und Magento Open Source optional.
    - `Deprecated` — Adobe hat das einzelne Pflaster veraltet. Wenn Sie den Patch angewendet haben, empfehlen wir Ihnen, ihn zurückzusetzen. Der Vorgang &quot;Reverse&quot;entfernt auch den Patch aus der Statustabelle.
 
 - **Status**:
@@ -81,7 +82,7 @@ Die Statustabelle enthält:
 
 >[!WARNING]
 >
->Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird auch empfohlen, Ihre Daten vor dem Anwenden eines Patches zu sichern. Siehe [Sichern und Zurücksetzen des Dateisystems](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird auch empfohlen, Ihre Daten vor dem Anwenden eines Patches zu sichern. Siehe [Backup und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Um einen einzelnen Patch anzuwenden, führen Sie den folgenden Befehl aus, wobei `MAGETWO-XXXX` ist die Patch-ID, die in der Statustabelle angegeben ist:
 
@@ -109,7 +110,7 @@ Sie müssen den Cache nach dem Anwenden von Patches bereinigen, um Änderungen i
 
 >[!WARNING]
 >
->Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird auch empfohlen, Ihre Daten vor dem Anwenden eines Patches zu sichern. Siehe [Sichern und Zurücksetzen des Dateisystems](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird auch empfohlen, Ihre Daten vor dem Anwenden eines Patches zu sichern. Siehe [Backup und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Um einen einzelnen Patch wiederherzustellen, führen Sie den folgenden Befehl aus, wobei `MAGETWO-XXXX` ist die Patch-ID, die in der Statustabelle angegeben ist:
 
