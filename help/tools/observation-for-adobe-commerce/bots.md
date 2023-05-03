@@ -1,9 +1,10 @@
 ---
-title: "Die [!UICONTROL bots] tab"
+title: Die [!UICONTROL bots] tab
 description: Erfahren Sie mehr über die [!UICONTROL bots] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: e135b8ab8b4f13de614299dd3c41c0cab52fefb2
+exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
+source-git-commit: 043389dc6d86228e459ac2c3592f391e85aa8f68
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -150,3 +151,11 @@ Diese Registerkarte enthält Informationen, die erklären, wie Sie feststellen k
 ![Die Seitenansichtslatenz wird in diesem Diagramm als Spitzen angezeigt:](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
 * Die **[!UICONTROL Pageview Latency will show as spikes on this graph:]** frame zeigt die Latenz von Seitenladevorgang/API-Antwort an, die mit der [!DNL bot] Traffic.
+
+## [!UICONTROL Experimental Potential Malicious Bots] frame
+
+![Experimentelles potenzielles bösartiges Bots-Frame](../../assets/tools/observation-for-adobe-commerce/experimental-potential-malicious-bots-frame.jpg)
+
+Die **[!UICONTROL Experimental Potential Malicious Bots]** Frame führt zehn separate, komplexe Abfragen aus. Er erkennt böswillige IP-Anforderungssignaturen und aggregiert dann die Ergebnisse, fasst sie zusammen und sortiert sie nach Anzahl in absteigender Reihenfolge. Die Abfragen enthalten eine Vielzahl von Datensignaturen von CVE-Exploits und anderen böswilligen Anfragen. Selbst wenn die Exploits durch Sicherheitskorrekturen/Patches blockiert werden und keine Bedrohung für die Site darstellen, muss die Anfrage noch von der Website bearbeitet werden. Das Volumen der Anfragen kann in kurzer Zeit sehr bedeutend werden. Dieser Rahmen zeigt nicht die Gesamtanforderungen der IP-Adresse, sondern die Anforderungen, die Signale enthalten, die darauf hinweisen, dass die Anforderungen eine verdächtige Absicht hatten.
+
+Stellen Sie sicher, dass der Traffic verdächtig ist und der Traffic nicht von einer CDN-Adresse (Content Distributed Network) stammt, die möglicherweise auch gültige Anfragen sendet. Wenn festgestellt wird, dass die Anfragen von einer CDN-IP-Adresse stammen, wenden Sie sich an diesen Dienstanbieter, um bei der Blockierung des verdächtigen Traffics über sein Netzwerk zu helfen. Informationen zum Blockieren der Adresse oder der Anforderungs-URL finden Sie unter [Blockieren von schädlichem Traffic für Adobe Commerce in [!DNL Fastly] level](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level.html) in der Knowledge Base zur Adobe Commerce-Unterstützung.
