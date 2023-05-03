@@ -1,13 +1,13 @@
 ---
 title: Empfohlene Informationen für Upgrades
 description: Lesen Sie die empfohlenen Informationen zur Planung Ihres Adobe Commerce-Upgrades.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # Empfohlene Informationen für die Upgrade-Planung
 
