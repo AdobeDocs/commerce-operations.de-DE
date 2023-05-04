@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8bf5cb032671bbb1cd6ff05d4a26c699592d33db
+source-git-commit: 0b9213db01cce14938e560ae576cf8ea543e4da7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
+
+### 20. April 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Der <code class="language-plaintext highlighter-rouge">commerce.eventing.event.publish</code> Nachrichtenwarteschlange des Verbrauchers an <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html">Referenztabelle</a>.</p>
+</td>
+      <td>technisch</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2f9bfcf9a8232cbe659062a9b1bc88eda3d9158c">2f9bfc</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 19. April 2023
 
