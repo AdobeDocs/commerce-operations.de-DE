@@ -1,7 +1,8 @@
 ---
 user-guide-title: Upgrade-Handbuch
 user-guide-description: Erfahren Sie, warum die Aktualisierung Ihrer Adobe Commerce-Anwendung so wichtig ist und wie Sie eine Aktualisierung erfolgreich planen und durchführen können.
-source-git-commit: 6965e8213a7293f55c9b51e3e556715ccdad9daf
+feature: Upgrade
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%
