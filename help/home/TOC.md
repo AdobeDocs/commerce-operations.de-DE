@@ -1,10 +1,10 @@
 ---
-user-guide-title: Betriebshandbücher
-user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihres Adobe Commerce- oder Magento Open Source-Programms.
-source-git-commit: 035c60de7234e15c0ace3ffbf60aa771587c432c
+user-guide-title: Betriebsleitfäden
+user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihrer Adobe Commerce- oder Magento Open Source-Anwendung.
+source-git-commit: 6291b6c9e062509e9bb2069050d455783fb06c7a
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 17%
+ht-degree: 0%
 
 ---
 
@@ -22,5 +22,5 @@ ht-degree: 17%
 - [Befehlszeilenwerkzeuge](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
 - [Implementierungs-Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Operatives Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
-- [Handel im Maßstab](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
+- [Handel im Maßstab](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
 - [Sicherheit und Compliance](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
