@@ -1,18 +1,18 @@
 ---
 keywords: Adobe Commerce; Startseite; beliebte Themen
 title: Startseite
-description: Durchsuchen Sie einen Index der Dokumentation für das operationelle Adobe Commerce-Produkt.
-source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
+description: Durchsuchen Sie einen Index der Systemadministration und der Dokumentation der operationellen Produkte von Adobe Commerce.
+exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
+source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 3%
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
-
 # Operative Adobe Commerce-Handbücher
 
-Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Practices zur Entwicklung, Bereitstellung und Wartung von Commerce-Projekten, die auf Adobe Commerce- und Magento Open Source-Plattformen bereitgestellt werden.
+Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Practices zur Entwicklung, Bereitstellung und Wartung von Adobe Commerce-Projekten.
 
 <table>
 <tr>
@@ -22,6 +22,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Versionsinformationen</strong></a>
+      <p>Überprüfen Sie alle Versionsinformationen für Adobe Commerce-Patches und -Dienste.</p>
     </div>
   </td>
   <td valign="top">
@@ -30,6 +31,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Installation</strong></a>
+      <p>Erfahren Sie, wie Sie Adobe Commerce für lokale Bereitstellungen installieren.</p>
     </div>
   </td>
   <td valign="top">
@@ -38,6 +40,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../configuration/overview.md"><strong>Konfiguration</strong></a>
+      <p>Konfigurieren Sie Funktionen und Dienste für Ihre Adobe Commerce-Anwendung.</p>
     </div>
   </td>
   <td valign="top">
@@ -46,6 +49,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Datenmigration</strong></a>
+      <p>Erfahren Sie mehr über den Datenmigrationsprozess zwischen Magento 1 und Magento 2.</p>
     </div>
   </td>
 </tr>
@@ -56,6 +60,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Upgrade</strong></a>
+      <p>Erfahren Sie, wie Sie Ihr Adobe Commerce-Projekt aktualisieren, um die Sicherheit und den effizienten Betrieb Ihrer Storefront zu gewährleisten.</p>
     </div>
   </td>
   <td valign="top">
@@ -64,6 +69,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Befehlszeilentools-Referenz</strong></a>
+      <p>Erfahren Sie mehr über Befehle, Argumente und Optionen für die Befehlszeilen-Tools von Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -72,6 +78,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../performance/overview.md"><strong>Best Practices für die Leistung</strong></a>
+      <p>Verwenden Sie diese Empfehlungen, um die Leistung Ihrer Adobe Commerce-Implementierung zu optimieren.</p>
     </div>
   </td>
   <td valign="top">
@@ -80,6 +87,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../tools/overview.md"><strong>Instrumente</strong></a>
+      <p>Erfahren Sie mehr über die Tools, die Sie mit Adobe Commerce verwenden können.</p>
     </div>
   </td>
 </tr>
@@ -90,6 +98,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Implementierungs-Playbook</strong></a>
+      <p>Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.</p>
     </div>
   </td>
   <td valign="top">
@@ -98,6 +107,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Operatives Playbook</strong></a>
+      <p>Erfahren Sie, wie Sie Ihre Unternehmen betriebsbereit für die Ausführung einer erfolgreichen E-Commerce-Site machen.</p>
     </div>
   </td>
   <td valign="top">
@@ -106,6 +116,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Handel im Maßstab</strong></a>
+      <p>Erfahren Sie, wie Sie mit Adobe Commerce mit Adobe Experience Manager Erlebnisse bedarfsgerecht bereitstellen können.</p>
     </div>
   </td>
   <td valign="top">
@@ -114,6 +125,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Sicherheit und Compliance</strong></a>
+      <p>Erfahren Sie, wie Adobe Commerce-Händler für die Wartung einer sicheren Umgebung verantwortlich sind.</p>
     </div>
   </td>
 </tr>
