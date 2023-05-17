@@ -1,13 +1,13 @@
 ---
 title: Konfigurationsdateien für die Bereitstellung
 description: Erfahren Sie, wie die Konfigurationsdateien für die Installation der Commerce-Anwendung funktionieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
+source-git-commit: dd990800551dd2ba35ebc7d2bc04edeb1b183d6f
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurationsdateien für die Bereitstellung
 
@@ -17,9 +17,6 @@ Adobe Commerce bietet Konfigurationsdateien, mit denen Sie eine Komponente einfa
 Diese Datei enthält die Liste der installierten Module, Designs und Sprachpakete. und freigegebenen Konfigurationseinstellungen.
 
    Checken Sie diese Datei in die Quell-Code-Verwaltung ein und verwenden Sie sie in Ihren Entwicklungs-, Staging- und Produktionssystemen.
-
-   Ab Version 2.2 `app/etc/config.php` -Datei ist kein Eintrag mehr in der `.gitignore` -Datei.
-Dies wurde erleichtert [Pipeline-Bereitstellung](../deployment/technical-details.md).
 
 - `app/etc/env.php` enthält Einstellungen, die für die Installationsumgebung spezifisch sind.
 
