@@ -1,13 +1,13 @@
 ---
 title: Verwalten von Nachrichtenwarteschlangen
 description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen über die Befehlszeile für Adobe Commerce verwalten können.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Verwalten von Nachrichtenwarteschlangen
 
@@ -74,7 +74,7 @@ Bearbeiten Sie die `/app/etc/env.php` Datei zum Konfigurieren des Cron-Auftrags 
 - `cron_run` - Ein boolean -Wert, der die `consumers_runner` Cron-Auftrag (Standard = `true`).
 - `max_messages` - Die maximale Anzahl von Nachrichten, die jeder Verbraucher vor dem Beenden verarbeiten muss (Standard = `10000`). Obwohl wir es nicht empfehlen, können Sie 0 verwenden, um zu verhindern, dass der Verbraucher beendet wird. Siehe [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) um zu konfigurieren, wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
 - `consumers` - Ein Array von Zeichenfolgen, die angeben, welche Verbraucher ausgeführt werden sollen. Ein leeres Array wird ausgeführt *all* Verbraucher.
-- `multiple_processes` - Ein Array von Schlüssel-Wert-Paaren, die angeben, welcher Verbraucher in wie vielen Prozessen ausgeführt werden soll.
+- `multiple_processes` - Ein Array von Schlüssel-Wert-Paaren, die angeben, welcher Verbraucher in wie vielen Prozessen ausgeführt werden soll. Unterstützt in Commerce 2.4.4 oder höher.
 
    >[!INFO]
    >
