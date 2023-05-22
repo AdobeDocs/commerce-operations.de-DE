@@ -1,10 +1,12 @@
 ---
 title: Bildgröße für Remote-Speicher konfigurieren
 description: Optimieren Sie die Festplattenressourcen, indem Sie die Größe des serverseitigen Bildes konfigurieren.
-source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
+feature: Configuration, Storage
+exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 

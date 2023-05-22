@@ -1,13 +1,14 @@
 ---
 title: Übergeordnete Datenbanken manuell konfigurieren
 description: Siehe Anleitungen zum manuellen Konfigurieren der geteilten Datenbanklösung.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+recommendations: noCatalog
+exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '1379'
 ht-degree: 0%
 
 ---
-
 
 # Übergeordnete Datenbanken manuell konfigurieren
 

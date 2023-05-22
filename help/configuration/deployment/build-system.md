@@ -1,13 +1,14 @@
 ---
 title: System-Setup erstellen
 description: Erfahren Sie, wie Sie Commerce in einem Build-System bereitstellen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Build, Deploy
+exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # Einrichten von Systemen
 

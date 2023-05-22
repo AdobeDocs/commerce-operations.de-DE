@@ -1,13 +1,14 @@
 ---
 title: Sensible und systemspezifische Pfade
 description: Sehen Sie sich eine Liste systemspezifischer und sensibler Konfigurationswerte an.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+feature: Configuration, System
+exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 0%
 
 ---
-
 
 # Sensible und systemspezifische Einstellungen
 

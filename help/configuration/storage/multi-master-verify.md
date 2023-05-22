@@ -1,13 +1,14 @@
 ---
 title: Geteilte Datenbank überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob eine Commerce-geteilte Datenbankkonfiguration ordnungsgemäß funktioniert.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+recommendations: noCatalog
+exl-id: 36295240-6521-4f3e-9ea3-f35b73de672d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
 
 ---
-
 
 # Geteilte Datenbank überprüfen
 

@@ -1,14 +1,15 @@
 ---
 title: system.xml-Referenz
 description: Erfahren Sie, wie die XML-Systemdatei die Konfiguration der Commerce-Anwendung verwaltet.
+feature: Configuration, System
 badge: label="Contributated by David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
-source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
+exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 0%
 
 ---
-
 
 # system.xml-Referenz
 

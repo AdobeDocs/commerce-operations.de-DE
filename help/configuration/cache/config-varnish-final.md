@@ -1,13 +1,14 @@
 ---
 title: Endgültige Überprüfung
 description: Stellen Sie sicher, dass Ihre Varnish-Konfiguration ordnungsgemäß für die Verwendung mit der Adobe Commerce-Anwendung eingerichtet ist.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
-
 
 # Abschließende Überprüfung der tierischen Konfiguration
 
@@ -82,4 +83,4 @@ Stellen Sie sicher, dass `<magento_root>/var/page_cache` Verzeichnis ist leer:
 
 >[!TIP]
 >
->Wenn Sie 503-Fehler (Backend-Abruf fehlgeschlagen) feststellen, lesen Sie [Fehlerbehebung für Fehler in 503 (Dienst nicht verfügbar)](https://support.magento.com/hc/en-us/articles/360034631211) im _Adobe Commerce Help Center_.
+>Wenn Sie 503-Fehler (Backend-Abruf fehlgeschlagen) feststellen, lesen Sie [Fehlerbehebung für Fehler in 503 (Dienst nicht verfügbar)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) im _Adobe Commerce Help Center_.

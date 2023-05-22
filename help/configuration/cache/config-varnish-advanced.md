@@ -1,13 +1,14 @@
 ---
 title: Erweiterte Varnish-Konfiguration
 description: Konfigurieren Sie erweiterte Funktionen für die Färbung, einschließlich Konsistenzprüfung, Grazie und Heiligkeitsmodi.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 0%
 
 ---
-
 
 # Erweiterte Varnish-Konfiguration
 

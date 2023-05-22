@@ -1,13 +1,14 @@
 ---
 title: Cache-Leerung mit mehreren Varnish-Instanzen
 description: Erfahren Sie, wie das Löschen des Caches mit mehreren Instanzen vom Typ "Varnish"funktioniert.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Configuration, Cache
+exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Cache-Leeren mehrerer verschiedener Instanzen
 

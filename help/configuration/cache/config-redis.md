@@ -1,7 +1,9 @@
 ---
 title: Konfigurieren von Redis
 description: Verschaffen Sie sich einen Überblick über die Redis-Funktionen und starten Sie Ihre Redis-Konfiguration.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+feature: Configuration, Cache
+exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

@@ -1,13 +1,14 @@
 ---
 title: In CentOS zwischengespeicherte Einrichtung einrichten
 description: Installieren und konfigurieren Sie gecacht auf CentOS.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache, Storage
+exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
 
 ---
-
 
 # In CentOS zwischengespeicherte Einrichtung einrichten
 

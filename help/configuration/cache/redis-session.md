@@ -1,13 +1,14 @@
 ---
 title: Verwenden von Redizes für die Sitzungsspeicherung
 description: Erfahren Sie, wie Sie Redis für die Sitzungsspeicherung konfigurieren.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+feature: Configuration, Cache
+exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
 
 ---
-
 
 # Verwenden von Redizes für die Sitzungsspeicherung
 
@@ -35,7 +36,7 @@ where
 | session-save-redis-host | Host | Vollständig qualifizierter Hostname, IP-Adresse oder absoluter Pfad bei Verwendung von UNIX-Sockets. | localhost |
 | session-save-reds-port | port | Redis Server-Überwachungsanschluss. | 6379 |
 | session-save-redis-password | password | Gibt ein Kennwort an, wenn für Ihren Redis-Server eine Authentifizierung erforderlich ist. | leer |
-| session-save-redis-timeout | timeout | Zeitüberschreitung der Verbindung in Sekunden. | 2,5 |
+| session-save-redis-timeout | timeout | Zeitüberschreitung der Verbindung in Sekunden. | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | Eindeutige Zeichenfolge zum Aktivieren persistenter Verbindungen (z. B. sess-db0).<br>[Bekannte Probleme mit Phpredis und php-fpm](https://github.com/phpredis/phpredis/issues/70). |
 | session-save-redis-db | Datenbank | Eindeutige Redis-Datenbanknummer, die zum Schutz vor Datenverlust empfohlen wird.<br><br>**Wichtig**: Wenn Sie Redis für mehr als eine Art der Zwischenspeicherung verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer auf 0, die Datenbank-Nummer der Seitenspeicherung auf 1 und die Datenbanknummer der Sitzungsspeicherung auf 2 zuzuweisen. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | Auf 0 setzen, um die Komprimierung zu deaktivieren (empfohlen, wenn `suhosin.session.encrypt = On`).<br>[Bekanntes Problem mit Zeichenfolgen mit mehr als 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
@@ -133,4 +134,3 @@ Wenn beide Befehle erfolgreich waren, wird Redis ordnungsgemäß eingerichtet.
 ### Überprüfen komprimierter Daten
 
 Um komprimierte Sitzungsdaten und Seiten-Cache zu untersuchen, muss die [RESP.app](https://flathub.org/apps/details/app.resp.RESP) unterstützt die automatische Dekomprimierung von Commerce 2 Session- und Page-Cache und zeigt PHP-Sitzungsdaten in einer für Menschen lesbaren Form an.
-

@@ -1,13 +1,14 @@
 ---
 title: Verwenden von Redizes für den Standard-Cache
 description: Erfahren Sie, wie Sie Redis als Standardcache für Adobe Commerce und Magento Open Source konfigurieren.
-source-git-commit: 47d513e7ca51ad7dbc149d0f1e076f673452918c
+feature: Configuration, Cache
+exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%
 
 ---
-
 
 # Verwenden von Redizes für den Standard-Cache
 

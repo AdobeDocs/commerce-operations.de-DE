@@ -1,13 +1,14 @@
 ---
 title: Installieren von Varnish
 description: Siehe Ratschläge zur Installation von Varnish.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+feature: Configuration, Cache
+exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
-
 
 # Installieren von Varnish
 

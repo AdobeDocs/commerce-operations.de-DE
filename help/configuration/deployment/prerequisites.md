@@ -1,13 +1,14 @@
 ---
 title: Voraussetzungen für die Bereitstellung
 description: Sehen Sie sich eine Liste der Voraussetzungen für die Bereitstellung von Commerce in einem Entwicklungs-, Build- oder Produktionssystem an.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Deploy
+exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
 
 ---
-
 
 # Voraussetzungen für Entwicklungs-, Build- und Produktionssysteme
 

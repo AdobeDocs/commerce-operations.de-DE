@@ -1,13 +1,14 @@
 ---
 title: Verwenden Sie gecacht für die Sitzungsspeicherung
 description: Erfahren Sie mehr über die Verwendung von Memcached für die Commerce-Sitzungsspeicherung.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+feature: Configuration, Cache, Storage
+exl-id: 24077929-e732-4579-8d7d-717a4902fc64
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # Verwenden Sie gecacht für die Sitzungsspeicherung
 

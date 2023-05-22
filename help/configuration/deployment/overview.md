@@ -1,13 +1,14 @@
 ---
 title: Implementierungsübersicht
 description: Erfahren Sie mehr über Implementierungsstrategien für die Commerce-Anwendung.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Deploy
+exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 0%
 
 ---
-
 
 # Implementierungsübersicht
 
@@ -55,7 +56,7 @@ Optional können Sie auch andere Bereitstellungsmethoden verwenden, darunter:
 
 ## Konfiguration verwalten
 
-Modellierung nach [Faktor 3 im 12-Faktor-App-Design](https://12factor.net/config), speichert Commerce jetzt die Konfiguration für jedes System im System selbst. (Die Entwicklungs-Konfigurationseinstellungen werden im Entwicklungssystem gespeichert, die Produktionseinstellungen werden im Produktionssystem gespeichert.)
+Modellierung nach [Faktor 3 im 12-Faktor-App-Design](https://12factor.net/config), speichert Commerce nun die Konfiguration für jedes System im System selbst. (Die Entwicklungs-Konfigurationseinstellungen werden im Entwicklungssystem gespeichert, die Produktionseinstellungen werden im Produktionssystem gespeichert.)
 
 Wir bieten eine Möglichkeit, die Konfiguration Ihrer Systeme zu synchronisieren:
 

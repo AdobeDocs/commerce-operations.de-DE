@@ -1,7 +1,9 @@
 ---
 title: Zwischenspeicherung konfigurieren
 description: Erfahren Sie mehr über das Zwischenspeichern und wie Sie Cache-Mechanismen für die Adobe Commerce- und Magento Open Source-Anwendung konfigurieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: 6effa069-c043-411a-b161-01210be17391
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%

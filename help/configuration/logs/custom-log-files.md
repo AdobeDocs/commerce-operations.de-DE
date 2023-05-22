@@ -1,14 +1,15 @@
 ---
 title: Schreiben in eine benutzerdefinierte Protokolldatei
 description: Erfahren Sie, wie Sie benutzerdefinierte Protokolldateien einrichten.
+feature: Configuration, Logs
 badge: label="Contributed by Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
-source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
+exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
-
 
 # Schreiben in eine benutzerdefinierte Protokolldatei
 

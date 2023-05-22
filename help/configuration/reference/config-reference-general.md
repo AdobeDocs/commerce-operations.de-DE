@@ -1,13 +1,14 @@
 ---
 title: Referenz zu allgemeinen Konfigurationspfaden
 description: Sehen Sie sich eine Liste mit allgemeinen und erweiterten Konfigurationswerten an.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+feature: Configuration, Observability, Roles/Permissions, System
+exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '965'
 ht-degree: 0%
 
 ---
-
 
 # Referenz zu allgemeinen und erweiterten Konfigurationspfaden
 
@@ -54,7 +55,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | MwSt.-Nummer | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 | Einzelspeichermodus aktivieren | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Webpfade
 
@@ -86,7 +87,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Hinweis anzeigen, wenn JavaScript deaktiviert ist | `web/browser_capabilities/javascript` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Hinweis anzeigen, wenn der lokale Speicher deaktiviert ist | `web/browser_capabilities/local_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Währungs-Einrichtungspfade
 
@@ -111,7 +112,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Fehler-E-Mail-Absender | `currency/import/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fehler-E-Mail-Vorlage | `currency/import/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Kontaktpfade
 
@@ -124,7 +125,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Email Sender | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email Template | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Berichtpfade
 
@@ -135,7 +136,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Start im Jahr | `reports/dashboard/ytd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktuelle Monatsstarts | `reports/dashboard/mtd_start` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Content-Management-Pfade
 
@@ -149,19 +150,19 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Hierarchiemetadaten aktivieren | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardlayout für Hierarchiemenü | `cms/hierarchy/menu_layout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
-### Neue Pfade für relationale Berichte
+### New Relic-Berichtspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Neue zuverlässige Berichterstellung**.
+Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **New Relic Reporting**.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
-| Neue reine Integration aktivieren | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Neuer relativer Anwendungsname | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| New Relic-Integration aktivieren | `newrelicreporting/general/enable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| New Relic-Anwendungsname | `newrelicreporting/general/app_name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cron aktivieren | `newrelicreporting/cron/enable_cron` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Erweiterte Kategorie
 
@@ -203,7 +204,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Groß-/Kleinschreibung | `admin/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivierte Aktionen | `admin/magento_logging/actions` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Systempfade
 
@@ -271,7 +272,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Häufigkeit | `system/magento_scheduled_import_export_log/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fehler-E-Mail-Vorlage | `system/magento_scheduled_import_export_log/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Entwicklerpfade
 
@@ -301,4 +302,4 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Asynchrone Indizierung | `dev/grid/async_indexing` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Benutzerdefinierte Attribute zwischenspeichern | `dev/caching/cache_user_defined_attributes` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

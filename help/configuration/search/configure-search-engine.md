@@ -1,13 +1,14 @@
 ---
 title: Suchmaschinenkonfiguration
 description: Konfigurieren Sie eine Suchmaschine für lokale Bereitstellungen von Adobe Commerce und Magento Open Source.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+feature: Configuration, Search
+exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
+source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # Suchmaschinenkonfiguration
 
@@ -114,4 +115,3 @@ So fügen Sie eine Neuindizierung mithilfe der Befehlszeile ein:
    >[!INFO]
    >
    >Im Gegensatz zum Cache werden Indexer durch einen Cron-Auftrag aktualisiert. Stellen Sie sicher [cron ist aktiviert](../cli/configure-cron-jobs.md) bevor Sie mit der Verwendung Ihrer Suchmaschine beginnen.
-

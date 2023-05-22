@@ -1,13 +1,14 @@
 ---
 title: Anwendungsinitialisierung und Bootstrap
 description: Erfahren Sie mehr über die Initialisierung und Bootstrap-Logik für die Commerce-Anwendung.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Install, Media
+exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
+source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 0%
 
 ---
-
 
 # Übersicht über Initialisierung und Bootstrap
 

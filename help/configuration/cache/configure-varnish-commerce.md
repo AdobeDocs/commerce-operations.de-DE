@@ -1,13 +1,14 @@
 ---
 title: Konfigurieren der Variante für Commerce
 description: Erfahren Sie, wie Sie Ihre Varnish-Konfigurationsdatei für die Commerce-Anwendung aktualisieren und verwalten.
-source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
+feature: Configuration, Cache, SCD
+exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurieren der Commerce-Anwendung für die Verwendung von Varnish
 

@@ -1,13 +1,14 @@
 ---
 title: Protokollierung aktivieren
 description: Erfahren Sie, wie Sie Protokollierungstypen aktivieren und deaktivieren.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Logs
+exl-id: 78b0416a-5bad-42a9-a918-603600e98928
+source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # Protokollierung aktivieren
 

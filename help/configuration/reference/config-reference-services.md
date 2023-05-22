@@ -1,13 +1,14 @@
 ---
 title: Referenz zu Dienstkonfigurationspfaden
 description: Eine Liste der Dienstkonfigurationswerte anzeigen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Services
+exl-id: 77818c54-21ae-4a66-81bf-468bd7d09cda
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '156'
 ht-degree: 0%
 
 ---
-
 
 # Referenz zu Dienstkonfigurationspfaden
 
@@ -24,7 +25,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Standard-Antwortcharset | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anonymen Gastzugang zulassen | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## OAuth-Pfade
 
@@ -40,4 +41,4 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | OAuth-Kundenanmeldeinformationen HTTP Post-Maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | OAuth-Kundenanmeldeinformationen HTTP Post-Timeout | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

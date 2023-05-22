@@ -1,13 +1,14 @@
 ---
 title: Sicheres cron-PHP
 description: Beschränken Sie, wer die Datei cron.php in einem Browser ausführen kann.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+feature: Configuration, Security
+exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # Sicheres cron-PHP
 
@@ -38,7 +39,7 @@ Sie können einen Cron-Auftrag wie folgt ausführen:
 In diesem Abschnitt wird beschrieben, wie Sie Cron mit der HTTP Basic-Authentifizierung mit Apache sichern. Diese Anweisungen basieren auf Apache 2.2 mit CentOS 6. Weitere Informationen finden Sie in einer der folgenden Ressourcen:
 
 - [Tutorial zur Authentifizierung und Autorisierung von Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
-- [Tutorial zur Authentifizierung und Autorisierung von Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [Tutorial zur Authentifizierung und Autorisierung in Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 ### Kennwortdatei erstellen
 

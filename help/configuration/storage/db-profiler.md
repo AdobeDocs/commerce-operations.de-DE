@@ -1,14 +1,15 @@
 ---
 title: Datenbank-Profiler konfigurieren
 description: Sehen Sie sich ein Beispiel für die Konfiguration der Ausgabe für den Datenbank-Profiler an.
+feature: Configuration, Storage
 badge: label="Contributated by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Datenbank-Profiler konfigurieren
 

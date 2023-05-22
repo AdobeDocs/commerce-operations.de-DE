@@ -1,7 +1,9 @@
 ---
 title: L2-Cache-Konfiguration
 description: Erfahren Sie, wie Sie den L2-Cache konfigurieren.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+feature: Configuration, Cache
+exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

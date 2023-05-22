@@ -1,13 +1,14 @@
 ---
 title: Bereitstellungsstrategien für statische Ansichtsdateien
 description: Erfahren Sie mehr über Implementierungsstrategien für die Commerce-Anwendung.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+feature: Configuration, Deploy, Extensions
+exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
+source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
-
 
 # Bereitstellungsstrategien für statische Ansichtsdateien
 

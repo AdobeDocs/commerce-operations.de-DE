@@ -1,13 +1,14 @@
 ---
 title: Referenz zu Zahlungskonfigurationspfaden
 description: Sehen Sie sich eine Liste der konfigurierbaren Werte für Zahlungsmethoden an.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Payments
+exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '4133'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
-
 
 # Referenz zu Zahlungskonfigurationspfaden
 
@@ -84,7 +85,7 @@ Die Einstellungen werden weiter nach Zahlungsmethode organisiert.
 | Geplantes Abrufen | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | PayPal Merchant Pages Style | `payment_all_paypal/express_checkout/settings_ec/settings_ec_advanced/express_checkout_frontend/paypal_pages` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal Payments Pro
 
@@ -95,7 +96,7 @@ Die Einstellungen werden weiter nach Zahlungsmethode organisiert.
 | Geplantes Abrufen | `payment_all_paypal/payments_pro_hosted_solution/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Geplantes Abrufen | `payment_all_paypal/payments_pro_hosted_solution_without_bml/pphs_settings/pphs_settings_advanced/pphs_settlement_report/heading_schedule` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Payments Pro Hosted Solution (Vereinigtes Königreich)
 
@@ -112,7 +113,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Von den Ländern beantragte Zahlung | `payment/hosted_pro/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | SSL-Verifizierung aktivieren | `payment/hosted_pro/verify_peer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal Payflow Pro
 
@@ -154,7 +155,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | CVV-Einstieg erforderlich | `payment/payflow_advanced/csc_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-Mail-Bestätigung senden | `payment/payflow_advanced/email_confirmation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## PayPal-Payflow-Link
 
@@ -176,7 +177,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Sortierreihenfolge | `payment/payflow_link/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zahlungsaktion | `payment/payflow_link/payment_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Null Zwischensummen Checkout-Pfade
 
@@ -190,7 +191,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Zahlungen aus bestimmten Ländern | `payment/free/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sortierreihenfolge | `payment/free/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Cash on Delivery Payment Pfade
 
@@ -206,7 +207,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Maximale Bestellsumme | `payment/cashondelivery/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sortierreihenfolge | `payment/cashondelivery/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Zahlungspfade für Banküberweisungen
 
@@ -222,7 +223,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Maximale Bestellsumme | `payment/banktransfer/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sortierreihenfolge | `payment/banktransfer/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Überprüfen oder Money Order Pfade
 
@@ -238,7 +239,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Maximale Bestellsumme | `payment/checkmo/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sortierreihenfolge | `payment/checkmo/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Bestellpfade
 
@@ -253,7 +254,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Maximale Bestellsumme | `payment/purchaseorder/max_order_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sortierreihenfolge | `payment/purchaseorder/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Internationale Pfade
 
@@ -1401,4 +1402,4 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Zahlungen aus bestimmten Ländern | `payment_us/eway/specificcountry` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Sortierreihenfolge | `payment_us/eway/sort_order` |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

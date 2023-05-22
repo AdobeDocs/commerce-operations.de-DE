@@ -1,13 +1,14 @@
 ---
 title: Logger-Benutzeroberfläche
 description: Erste Schritte mit der Logger-Oberfläche.
-source-git-commit: f489c3e68c91c6f2e16bff233cf59472ed684b5c
+feature: Configuration, Logs
+exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
-
 
 # Logger-Benutzeroberfläche
 

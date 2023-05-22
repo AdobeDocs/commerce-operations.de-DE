@@ -1,13 +1,14 @@
 ---
 title: Referenz zu Konfigurationspfaden für B2B-Erweiterungen
 description: Siehe eine Liste der B2B-bezogenen Konfigurationswerte.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+feature: Configuration, B2B, Companies, Payments, Quotes
+exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
-
 
 # Referenz zu Konfigurationspfaden für B2B-Erweiterungen
 
@@ -44,7 +45,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > 
 | Anwendbare Zahlungsmethoden | `btob/default_b2b_payment_methods/applicable_payment_methods` |  |  |  |
 | Zahlungsmethoden | `btob/default_b2b_payment_methods/available_payment_methods` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Kundenkategorie
 
@@ -88,7 +89,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > 
 | Zurückerstattete E-Mail-Vorlage | `company/email/credit_refunded_email_template` |  |  |  |
 | Zurückgegebene E-Mail-Vorlage | `company/email/credit_reverted_email_template` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Pfade für Anforderungslisten
 
@@ -98,7 +99,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | -------------- | -------------- | -------------- | -------------- | -------------- |
 | Anzahl der Anforderungslisten | `requisitionlist/general/number_requisition_lists` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Verkaufskategorie
 
@@ -121,7 +122,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Anführungszeichen als E-Mail-Kopie senden | `sales_email/quote/copy_to` |  |  | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Anführungsmethode für E-Mail-Kopie senden | `sales_email/quote/copy_method` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Anführungspfade
 
@@ -140,7 +141,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Dateiformate für den Upload | `quote/attached_files/file_formats` |  |  |  |
 | Maximale Dateigröße | `quote/attached_files/maximum_file_size` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Zahlungsmethodenpfade
 
@@ -257,4 +258,4 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Maximale Bestellsumme | `payment/it/companycredit/max_order_total` |  |  |  |
 | Sortierreihenfolge | `payment/it/companycredit/sort_order` |  |  |  |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

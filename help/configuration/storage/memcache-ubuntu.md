@@ -1,13 +1,14 @@
 ---
 title: In Ubuntu zwischengespeicherte Einrichtung einrichten
 description: Installieren und konfigurieren Sie gecacht auf Ubuntu.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache, Storage
+exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # In Ubuntu zwischengespeicherte Einrichtung einrichten
 

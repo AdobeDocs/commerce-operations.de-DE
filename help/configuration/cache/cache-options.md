@@ -1,7 +1,9 @@
 ---
 title: Cacheoptionen
 description: Konfigurieren Sie den Zugriff auf den Cache-Speicher auf niedriger Ebene.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Configuration, Cache
+exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%

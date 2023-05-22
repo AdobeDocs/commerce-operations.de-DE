@@ -1,13 +1,14 @@
 ---
 title: Aktivität "Logdatenbank"
 description: Konfigurieren Sie Commerce, um die Datenbankaktivität über die Logger-Oberfläche zu protokollieren.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+feature: Configuration, Logs, Storage
+exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
 
 ---
-
 
 # Aktivität &quot;Logdatenbank&quot;
 

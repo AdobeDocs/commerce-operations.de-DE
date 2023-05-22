@@ -1,13 +1,14 @@
 ---
 title: Referenz zu Kundenkonfigurationspfaden
 description: Sehen Sie sich eine Liste der Konfigurationswerte für Kunden an.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Customers
+exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
-
 
 # Referenz zu Kundenkonfigurationspfaden
 
@@ -30,7 +31,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Abmelde-E-Mail-Absender | `newsletter/subscription/un_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Abmelde-E-Mail-Vorlage | `newsletter/subscription/un_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Benutzerkonfigurationspfade
 
@@ -100,7 +101,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | In CAPTCHA verwendete Symbole | `customer/captcha/symbols` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Groß-/Kleinschreibung | `customer/captcha/case_sensitive` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Wunschlistenpfade
 
@@ -117,7 +118,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Längenbeschränkung für E-Mail-Text | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zusammenfassung für Wunschlisten anzeigen | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Einladungspfade
 
@@ -134,7 +135,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Einladungs-E-Mail-Absender des Kunden | `magento_invitation/email/identity` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Vorlage für Einladungs-E-Mail für Kunden | `magento_invitation/email/template` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Trefferpunkte
 
@@ -168,7 +169,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Warn-E-Mail zum Ablauf von Rewards-Punkten | `magento_reward/notification/expiry_warning_template` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Verfallswarnung vor (Tage) | `magento_reward/notification/expiry_day_before` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Promotions-Pfade
 
@@ -190,7 +191,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Code-Suffix | `promo/auto_generated_coupon_codes/suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Alle x Zeichen streichen | `promo/auto_generated_coupon_codes/dash` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Gift-Registrierungspfade
 
@@ -208,7 +209,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Email Template | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email Sender | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Persistente Einkaufswagenpfade
 
@@ -229,4 +230,4 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Vor Kurzem aufgerufene Produkte beibehalten | `persistent/options/recently_viewed` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Beibehalten der Kundengruppenmitgliedschaft und Segmentierung | `persistent/options/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

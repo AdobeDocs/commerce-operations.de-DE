@@ -1,13 +1,14 @@
 ---
 title: Referenz zu Speicherkonfigurationspfaden
 description: Sehen Sie sich eine Liste der Verkaufskonfigurationswerte an.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
+exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
-
 
 # Referenz zu Speicherkonfigurationspfaden
 
@@ -66,7 +67,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | RMA auf Produktebene aktivieren | `sales/magento_rma/enabled_on_product` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Store-Adresse verwenden | `sales/magento_rma/use_store_address` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## E-Mail-Pfade für Vertrieb
 
@@ -139,7 +140,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Anzeigen der Auftrags-ID in der Kopfzeile | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anzeigen der Auftrags-ID in der Kopfzeile | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Steuerpfade
 
@@ -188,7 +189,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Steuern auf FPT anwenden | `tax/weee/apply_vat` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | FPT in Zwischensumme einschließen | `tax/weee/include_in_subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Checkout-Pfade
 
@@ -213,7 +214,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Vorlage für Zahlung fehlgeschlagen | `checkout/payment_failed/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Vorgang &quot;Send Payment Failed Email Copy&quot; | `checkout/payment_failed/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Versandeinstellungspfade
 
@@ -224,7 +225,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Benutzerdefinierte Versandrichtlinie anwenden | `shipping/shipping_policy/enable_shipping_policy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Versandpolitik | `shipping/shipping_policy/shipping_policy_content` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Mehrere Einstellungspfade
 
@@ -235,7 +236,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Versand an mehrere Adressen zulassen | `multishipping/options/checkout_multiple` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale zulässige Menge für den Versand an mehrere Adressen | `multishipping/options/checkout_multiple_maximum_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Versandmethoden-Pfade
 
@@ -381,7 +382,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Methode anzeigen, falls nicht zutreffend | `carriers/dhl/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sortierreihenfolge | `carriers/dhl/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Google API-Pfade
 
@@ -397,7 +398,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Listeneigenschaft für den Up-Sell-Block | `google/analytics/upsell_block_list_value` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Listeneigenschaft für den zugehörigen Produktblock | `google/analytics/related_block_list_value` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Listeneigenschaft für die Suchergebnisseite | `google/analytics/search_page_list_value` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| ’Interne Promotions’ für das Feld &quot;Promotions&quot;. | `google/analytics/promotions_list_value` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| &#39;Interne Promotions&#39; für das Feld &quot;Promotions&quot;. | `google/analytics/promotions_list_value` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Aktivieren | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Konversions-ID | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Konversionssprache | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -407,7 +408,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Konversionswerttyp | `google/adwords/conversion_value_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Konversionswert | `google/adwords/conversion_value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Gift-Karten-Pfade
 
@@ -432,4 +433,4 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Neue Poolgröße | `giftcard/giftcardaccount_general/pool_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Niedriger Code-Pool-Schwellenwert | `giftcard/giftcardaccount_general/pool_threshold` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

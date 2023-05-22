@@ -1,13 +1,14 @@
 ---
 title: Benutzerdefinierte Protokollierung
 description: Erfahren Sie, wie Sie mithilfe der benutzerdefinierten Protokollierung Fehler untersuchen können.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+feature: Configuration, Logs
+exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
+source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
-
 
 # Übersicht über die benutzerdefinierte Protokollierung
 
