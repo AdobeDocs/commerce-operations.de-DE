@@ -1,5 +1,5 @@
 ---
-source-git-commit: aa37cc2dff54825f21b0358be540cb954dd5c598
+source-git-commit: 8f7171680779cb940701a1912b1944b381a75df9
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 0%
@@ -1503,7 +1503,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Kompatibel</span>
+      <td>Unterstützt</span>
       </td>
       <td>Kompatibel</span>
       </td>
@@ -1522,7 +1522,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Kompatibel</span>
+      <td>Unterstützt</span>
       </td>
       <td>Kompatibel</span>
       </td>
@@ -1541,7 +1541,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Unterstützt</span>
       </td>
-      <td>Kompatibel</span>
+      <td>Unterstützt</span>
       </td>
       <td>Kompatibel</span>
       </td>
