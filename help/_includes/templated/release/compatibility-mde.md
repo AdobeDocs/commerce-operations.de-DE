@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8f7171680779cb940701a1912b1944b381a75df9
+source-git-commit: 2663f59480d05e945d092caa4c93783fc209d25e
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -1474,7 +1474,145 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="9">Experience Platform Connector</th>
     </tr>
     <tr>
+      <td>Experience Platform Connector 2.2.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.1.1</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.1.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.0.1</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Platform Connector 2.0.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
       <td>Experience Platform Connector 1.0.0</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <th colspan="9">Audience Activation</th>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.0.1</td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+      <td>Nicht unterstützt</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Audience Activation 1.0.0</td>
       <td>Unterstützt</span>
       </td>
       <td>Unterstützt</span>
