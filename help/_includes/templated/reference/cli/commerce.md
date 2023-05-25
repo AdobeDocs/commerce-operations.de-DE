@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Version**: 1,42,0
 
 Diese Referenz enthält 134 Befehle, die über das `magento-cloud` Befehlszeilen-Tool.
-Die anfängliche Liste wird automatisch mit der Variablen `magento-cloud list` -Befehl an der Edition.
+Die anfängliche Liste wird automatisch mit der Variablen `magento-cloud list` in Adobe Commerce in der Cloud-Infrastruktur.
 
 >[!NOTE]
 >
@@ -557,21 +557,21 @@ ANSI-Ausgabe erzwingen
 ANSI-Ausgabe deaktivieren
 
 - Standard: `false`
-- Akzeptieren Sie keinen Wert
+- Akzeptiert keinen Wert
 
 ### `--no`, `-n`
 
-Antwort &quot;Nein&quot; auf Bestätigungsfragen; Akzeptieren Sie den Standardwert für andere Fragen; Interaktion deaktivieren
+Beantwortung von Bestätigungsfragen mit &quot;Nein&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
 
-- Standardmäßig: `false`
-- Akzeptieren Sie keinen Wert
+- Standard: `false`
+- Akzeptiert keinen Wert
 
 ### `--quiet`, `-q`
 
 Keine Nachricht ausgeben
 
-- Standardmäßig: `false`
-- Akzeptieren Sie keinen Wert
+- Standard: `false`
+- Akzeptiert keinen Wert
 
 
 ## `list`
@@ -1977,21 +1977,21 @@ Geben Sie die Tabellenüberschrift nicht aus
 
 ### `--help`, `-h`
 
-Anzeigen diese Hilfemeldung
+Diese Hilfemeldung anzeigen
 
-- Standardmäßig: `false`
-- Akzeptieren Sie keinen Wert
+- Standard: `false`
+- Akzeptiert keinen Wert
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Steigerung der Verbogenheit von Nachrichten
+Die Ausführlichkeit von Nachrichten erhöhen
 
-- Standardmäßig: `false`
-- Akzeptieren Sie keinen Wert
+- Standard: `false`
+- Akzeptiert keinen Wert
 
 ### `--version`, `-V`
 
-Anzeigen dieser Applikation Version
+Diese Anwendungsversion anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4402,9 +4402,9 @@ Diese Anwendungsversion anzeigen
 
 ### `--yes`, `-y`
 
-Antwort &quot;Ja&quot; auf Bestätigungsfragen; Akzeptieren Sie den Standardwert für andere Fragen; Interaktion deaktivieren
+Beantworten Sie Bestätigungsfragen mit &quot;Ja&quot;; den Standardwert für andere Fragen anzunehmen; Deaktivieren der Interaktion
 
-- Standardmäßig: `false`
+- Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`
@@ -15265,19 +15265,19 @@ Veraltete Option, nicht mehr verwendet
 
 Warten Sie nicht, bis der Vorgang abgeschlossen ist.
 
-- Standardmäßig: `false`
-- Akzeptieren Sie keinen Wert
+- Standard: `false`
+- Akzeptiert keinen Wert
 
 ### `--wait`
 
 Warten Sie, bis der Vorgang abgeschlossen ist (Standard)
 
-- Standardmäßig: `false`
-- Akzeptieren Sie keinen Wert
+- Standard: `false`
+- Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Anzeigen diese Hilfemeldung
+Diese Hilfemeldung anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert

@@ -1,5 +1,5 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
 source-wordcount: '19443'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 **Version**: 2,4,6
 
 Diese Referenz enthält 130 Befehle, die über das `bin/magento` Befehlszeilen-Tool.
-Die anfängliche Liste wird automatisch mit der Variablen `bin/magento list` -Befehl an der Edition.
+Die anfängliche Liste wird automatisch mit der Variablen `bin/magento list` -Befehl in Adobe Commerce.
 Verwenden Sie die [&quot;Hinzufügen von CLI-Befehlen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) Anleitung zum Hinzufügen eines benutzerdefinierten CLI-Befehls.
 
 >[!NOTE]
