@@ -1,7 +1,7 @@
 ---
-source-git-commit: f33946c77f378fc54b7fa06d3a2fd6a5108cf846
+source-git-commit: f7302ddd61b354eec4da8c9a1596ca18f38ba7b3
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,26 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
+
+### 25. Mai 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Der <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/uct.html"><code class="language-plaintext highlighter-rouge">bin/uct</code> CLI-Referenz</a>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d00e8cb4ebce9cbda0218ef75f44d2ff0ec45bad">d00e8c</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 12. Mai 2023
 
