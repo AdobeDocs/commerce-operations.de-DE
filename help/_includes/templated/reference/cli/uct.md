@@ -1,5 +1,5 @@
 ---
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -728,3 +728,4 @@ Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
+
