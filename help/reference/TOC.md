@@ -1,9 +1,9 @@
 ---
 user-guide-title: Referenz zu Befehlszeilen-Tools
 user-guide-description: Erfahren Sie mehr über alle verfügbaren Befehle, Argumente und Optionen für Adobe Commerce- und Magento Open Source-Befehlszeilen-Tools.
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: 254c3910a97f9b085889c002b536df302fa2f040
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '42'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,6 @@ ht-degree: 0%
 
 # Befehlszeilentools-Referenz {#reference}
 
-- [Adobe Commerce auf Cloud-Infrastruktur](commerce.md)
 - [Adobe Commerce (vor Ort)](commerce-on-premises.md)
 - [Magento Open Source](magento-open-source.md)
 - [Upgrade-Kompatibilitätstool](uct.md)
