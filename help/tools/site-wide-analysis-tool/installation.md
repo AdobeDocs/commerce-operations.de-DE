@@ -1,9 +1,10 @@
 ---
 title: Installationshandbuch
-description: "Verwenden Sie dieses Handbuch zur Installation [!DNL Site-Wide Analysis Tool] für Ihre Website"
-source-git-commit: 0c27d4cf5854161e14a482912941cd144ca654f7
+description: Verwenden Sie dieses Installationshandbuch [!DNL Site-Wide Analysis Tool] für Ihre Website
+exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
+source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -183,7 +184,7 @@ Wenn Sie die [Shell-Skript](https://github.com/magento-swat/install-agent-helper
    1. Laden Sie das Starterarchiv herunter.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. Entpacken Sie das Starterarchiv.
@@ -196,7 +197,7 @@ Wenn Sie die [Shell-Skript](https://github.com/magento-swat/install-agent-helper
    1. Laden Sie das Starterarchiv herunter.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. Entpacken Sie das Starterarchiv.
@@ -389,7 +390,7 @@ Wenn Ihre Zugriffsschlüssel nicht richtig analysiert werden, wird möglicherwei
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 Um diesen Fehler zu beheben, führen Sie die folgenden Schritte aus:
@@ -402,6 +403,12 @@ Um diesen Fehler zu beheben, führen Sie die folgenden Schritte aus:
 1. Führen Sie den Planer aus und überprüfen Sie, ob Sie immer noch denselben Fehler erhalten.
 1. Wenn Sie immer noch denselben Fehler erhalten, erhöhen Sie die Protokollebene im `config.yaml` , um ein Support-Ticket zu debuggen und zu öffnen.
 
+### *SIGFAULT* Fehler
+
+Wenn eine *SIGFAULT* beim Ausführen der Binärdatei nicht als Dateiinhaber von Adobe Commerce- und Agentendateien ausgeführt werden.
+Um dieses Problem zu beheben, überprüfen Sie, ob alle Dateien im Agentenverzeichnis, die denselben Benutzer wie der Dateiinhaber haben, den Adobe Commerce-Dateien haben, und die Binärdatei auch unter diesem Benutzer ausgeführt werden sollen.
+Sie können die `chown` -Befehl, um den Dateiinhaber zu ändern und zum entsprechenden Benutzer zu wechseln.
+Stellen Sie sicher, dass Ihr Daemonisierungsmechanismus (Cron oder System.d) den Prozess unter dem entsprechenden Benutzer ausführt.
 
 >[!INFO]
 >
