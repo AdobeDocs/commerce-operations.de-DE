@@ -2,9 +2,9 @@
 title: Verwalten von Nachrichtenwarteschlangen
 description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen über die Befehlszeile für Adobe Commerce verwalten können.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
+source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Das folgende Beispiel zeigt die `crontab` Konfiguration für laufende Verbrauche
 >
 >Siehe [Cron konfigurieren und ausführen](../cli/configure-cron-jobs.md) Weitere Informationen zur Verwendung von `cron` mit Commerce.
 
-Sie können auch einen Prozessmanager wie [Supervisor](http://supervisord.org/index.html) zur Überwachung des Status von Prozessen. Der Manager kann die Befehlszeile verwenden, um die Prozesse nach Bedarf neu zu starten.
+Sie können auch einen Prozessmanager wie [Supervisor](https://supervisord.readthedocs.io/en/latest/) zur Überwachung des Status von Prozessen. Der Manager kann die Befehlszeile verwenden, um die Prozesse nach Bedarf neu zu starten.
 
 ## Konfiguration
 
@@ -76,12 +76,12 @@ Bearbeiten Sie die `/app/etc/env.php` Datei zum Konfigurieren des Cron-Auftrags 
 - `consumers` - Ein Array von Zeichenfolgen, die angeben, welche Verbraucher ausgeführt werden sollen. Ein leeres Array wird ausgeführt *all* Verbraucher.
 - `multiple_processes` - Ein Array von Schlüssel-Wert-Paaren, die angeben, welcher Verbraucher in wie vielen Prozessen ausgeführt werden soll. Unterstützt in Commerce 2.4.4 oder höher.
 
-   >[!INFO]
-   >
-   >Es wird nicht empfohlen, mehrere Benutzer in einer MySQL-Warteschlange auszuführen. Siehe [Nachrichtenwarteschlange von MySQL in AMQP ändern](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) für weitere Informationen.
+  >[!INFO]
+  >
+  >Es wird nicht empfohlen, mehrere Benutzer in einer MySQL-Warteschlange auszuführen. Siehe [Nachrichtenwarteschlange von MySQL in AMQP ändern](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) für weitere Informationen.
 
-   >[!INFO]
-   >
-   >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, verwenden Sie die [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) um zu konfigurieren, wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
+  >[!INFO]
+  >
+  >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, verwenden Sie die [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) um zu konfigurieren, wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
 
 Siehe [Starten von Nachrichtenwarteschlangen-Verbrauchern](../cli/start-message-queues.md).
