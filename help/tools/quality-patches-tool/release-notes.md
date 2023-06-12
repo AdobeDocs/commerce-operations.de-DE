@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
+source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
 workflow-type: tm+mt
-source-wordcount: '12066'
+source-wordcount: '12426'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem die [!UICONTROL Page Builder's] mehrere Fehler verhindern, dass Administratoren ein Produkt ohne Inhaltsberechtigungen speichern.
+* **ACSD-51305** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem konfigurierbare nicht vorrätige Kinderprodukte in der GraphQL-Antwort nicht verfügbar sind.
+* **ACSD-50621** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem [!UICONTROL Tier Prices] für verschiedene Websites im freigegebenen Katalog nicht sichtbar sind, wenn versucht wird, sie in einer Umgebung mit mehreren Websites zu bearbeiten.
+* **ACSD-51041** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.0) || >=2.4.1 &lt;2.4.6) - Verbessert die Leistung des Preisindexers.
+* **ACSD-51379** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Änderungen am Seitentext über vorgenommen wurden [!UICONTROL Page Builder] nicht gespeichert werden.
+* **ACSD-49480** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.6) - Behebung des Problems, bei dem nur eine Warenkorbpreisregel auf den Warenkorb angewendet wird.
+* **ACSD-51230** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem das Konto für die Geschenkkarte gelöscht wird, wenn eine teilweise Rückerstattung eines einfachen Produkts aus einer Bestellung verarbeitet wird.
+* **ACSD-51238** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems, bei dem die Inventarquelle beim Aktualisieren konfigurierbarer Produkte und Bearbeiten des Preises entfernt wird.
+* **ACSD-50794** (für Adobe Commerce >=2.4.1 &lt;2.4.7) - Behebung des Problems, bei dem die Geschenkgutachten oder Geschenkverpackungsdetails nicht in der Datenbank aktualisiert werden, wenn sie über GraphQL entfernt werden.
+* **ACSD-51528** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem die *x_forwarded_for* -Spalte enthält Null-Werte in *sales_order* Tabelle.
+* **ACSD-50849** (für Adobe Commerce >=2.4.4 &lt;2.4.6) - Behebung des Problems, bei dem das Hinzufügen eines neuen Produkts zur Kategorie nach dem Löschen des Caches zu einer Inkongruenz zwischen Positionen und Auswahl der vorhandenen Produkte führt.
+* **ACSD-51294** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem GTM/GA-Preis, -Menge, -Steuer, -Versand und -Umsatz als Zeichenfolge an gesendet werden [!DNL Google Analytics] und GTM.
+* **ACSD-51204** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem ein vollständig verkauftes Produkt nach der Erstellung eines Kreditmemos nicht wieder auf Lager ist.
+* **ACSD-51291** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.4-p4 || >=2.4.5 &lt;2.4.5-p3) - Behebung des Problems, bei dem eingeschränkte Administratoren mit Zugriff auf eine Website dem Produkt, das mehreren Websites zugewiesen ist, Bilder/Videos hinzufügen können.
+* Es wurden neue Versionen für ACSD-50336 hinzugefügt.
+* Ersetzt Patches ACSD-49970.
 
 ## v1.1.31 {#v1-1-31}
 
@@ -329,7 +348,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 * **MDVA-42507** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.5*) - Behebung des Problems, bei dem der vollständige Seiten-Cache nach dem Anwenden eines Staging-Updates für die Warenkorbregel bereinigt wird.
 * **MDVA-39163** (*für Adobe Commerce und Magento Open Source >=2.3.5 &lt;2.4.5*) - Behebung des Problems, bei dem Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert wird und Produkte im Warenkorb aus der Gastsitzung stammen.
 * **MDVA-38626** (*für Adobe Commerce und Magento Open Source >=2.3.3 &lt;2.4.5*) - Behebung des Problems, bei dem der Administrator mithilfe der [!DNL PayPal Payflow Pro] Zahlung.
-* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Administrator die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
+* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Admin-Benutzer die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
 * **MDVA-38526** (*für Adobe Commerce und Magento Open Source >=2.4.1 &lt;2.4.4*) - Behebung des Problems, bei dem der Admin-Benutzer nicht auf die [!DNL Site-Wide Analysis tool].
 * Aktualisierte Patches: MDVA-40101.
 
