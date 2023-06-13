@@ -1,13 +1,13 @@
 ---
 title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung mithilfe dieser Best Practices.
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1448'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices bei der Konfiguration
 
@@ -40,6 +40,31 @@ Es kann vorkommen, dass intensive Verkäufe an eine Storefront gleichzeitig mit 
 >[!WARNING]
 >
 >Die **[!UICONTROL Developer]** Registerkarten und Optionen sind nur in [Entwicklermodus](../configuration/cli/set-mode.md). [Adobe Commerce auf Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt nicht `Developer` -Modus.
+
+## Asynchrone Konfiguration speichern [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta1 verfügbar"}
+
+Bei Projekten mit einer großen Anzahl von Konfigurationen auf Store-Ebene kann das Speichern einer Store-Konfiguration eine übermäßige Zeit in Anspruch nehmen oder zu einem Timeout führen. Die _Asynchrone Konfiguration_ ermöglicht asynchrone Konfigurationseinstellungen, indem ein Cron-Auftrag ausgeführt wird, der mithilfe eines Verbrauchers das Speichern in einer Nachrichtenwarteschlange verarbeitet. AsyncConfig ist **disabled** Standardmäßig.
+
+Sie können AsyncConfig über die Befehlszeilenschnittstelle aktivieren:
+
+```bash
+bin/magento setup:config:set --config-async 1
+```
+
+Die `set` -Befehl schreibt Folgendes in die `app/etc/env.php` Datei:
+
+```conf
+...
+   'config' => [
+       'async' => 1
+   ]
+```
+
+Starten Sie den folgenden Kunden, um die Verarbeitung der Nachrichten in der Warteschlange auf der Basis des First-in-First-Out zu starten:
+
+```bash
+bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
+```
 
 ## Zurückgestellte Bestandsaktualisierung
 
@@ -122,4 +147,3 @@ Sie können Produktraster-Sammlungen nur auf den folgenden Seiten einschränken:
 * Admin-Bestellseite erstellen
 
 Wenn Sie nicht möchten, dass Ihr Produktraster eingeschränkt wird, empfehlen wir Ihnen, Filter präziser zu verwenden, damit die Ergebnissammlung weniger Elemente enthält als **[!UICONTROL Records Limit]**.
-

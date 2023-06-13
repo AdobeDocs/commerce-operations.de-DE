@@ -1,7 +1,7 @@
 ---
 user-guide-title: Betriebsleitfäden
 user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihrer Adobe Commerce- oder Magento Open Source-Anwendung.
-source-git-commit: 6291b6c9e062509e9bb2069050d455783fb06c7a
+source-git-commit: dbd13fd60ae20576e4499ad2a17d5490cf8c7bc3
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 - [Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [Best Practices für die Leistung](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
 - [Instrumente](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [Befehlszeilenwerkzeuge](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
+- [Befehlszeilenwerkzeuge](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
 - [Implementierungs-Playbook](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
 - [Operatives Playbook](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Handel im Maßstab](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
