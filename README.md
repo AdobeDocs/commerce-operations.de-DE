@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
+source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 0%
@@ -75,4 +75,4 @@ _scripts/render
 
 Das Skript führt das Rendern aus und schreibt gerenderte Vorlagen in die `help/_includes/templated` Verzeichnis.
 
-Weitere Informationen finden Sie in der Jekyll-Dokumentation . [Datendateien](https://jekyllrb.com/docs/datafiles, [Flüssige Filter](https://jekyllrb.com/docs/liquid/filters/)und anderen Funktionen.
+Weitere Informationen finden Sie in der Jekyll-Dokumentation . [Datendateien](https://jekyllrb.com/docs/datafiles), [Flüssige Filter](https://jekyllrb.com/docs/liquid/filters/)und anderen Funktionen.
