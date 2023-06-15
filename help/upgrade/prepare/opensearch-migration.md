@@ -1,13 +1,14 @@
 ---
 title: Migration von Elasticsearch zu OpenSearch
 description: Erfahren Sie mehr über die Ersetzung der Suchmaschine, die für lokale Installationen von Adobe Commerce und Magento Open Source verwendet wird.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+feature: Upgrade, Search
+exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
-
 
 # Migration zu OpenSearch
 

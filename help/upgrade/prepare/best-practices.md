@@ -1,13 +1,14 @@
 ---
 title: Best Practices
 description: Verwenden Sie von der Adobe empfohlene Best Practices, um den Aktualisierungsprozess für Ihre Adobe Commerce- und Magento Open Source-Projekte zu verwalten.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Upgrade, Best Practices
+exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Aktualisierung
 

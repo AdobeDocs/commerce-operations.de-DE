@@ -1,13 +1,14 @@
 ---
 title: Module und Erweiterungen verwalten
 description: Verwenden Sie die Befehlszeilenschnittstelle zum Aktivieren, Deaktivieren und Deinstallieren von Adobe Commerce- und Magento Open Source-Modulen und -Erweiterungen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Upgrade, Extensions
+exl-id: a71de7c6-395a-4734-b3ad-b2879809be0b
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
 
 ---
-
 
 # Module und Erweiterungen verwalten
 

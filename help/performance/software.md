@@ -1,13 +1,14 @@
 ---
 title: Software Recommendations
 description: Überprüfen Sie eine Liste der empfohlenen Software im Zusammenhang mit der optimalen Leistung von Adobe Commerce- und Magento Open Source-Implementierungen.
-source-git-commit: 8572cc8702d6f7e9c40b64110a9ba18aa5784f44
+feature: Best Practices, Install
+exl-id: b091a733-7655-4e91-a988-93271872c5d5
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
 
 ---
-
 
 # Software-Empfehlungen
 
@@ -196,7 +197,7 @@ Es wurden viele Verbesserungen an [!DNL MySQL] 5.7.9 Wir sind zuversichtlich, da
 | Parameter | Standard | Beschreibung |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | Der Standardwert ist auf 8 gesetzt, um Probleme mit mehreren Threads zu vermeiden, die versuchen, auf dieselbe Instanz zuzugreifen. |
-| `innodb_buffer_pool_size` | 128 MB | In Kombination mit den oben beschriebenen mehreren Poolinstanzen bedeutet dies eine standardmäßige Speicherzuweisung von 1024 MB. Die Gesamtgröße wird auf alle Pufferpools aufgeteilt. Geben Sie für eine optimale Effizienz eine Kombination aus `innodb_buffer_pool_instances` und `innodb_buffer_pool_size` sodass jede Pufferpool-Instanz mindestens 1 GB beträgt. |
+| `innodb_buffer_pool_size` | 128MB | In Kombination mit den oben beschriebenen mehreren Poolinstanzen bedeutet dies eine standardmäßige Speicherzuweisung von 1024 MB. Die Gesamtgröße wird auf alle Pufferpools aufgeteilt. Geben Sie für eine optimale Effizienz eine Kombination aus `innodb_buffer_pool_instances` und `innodb_buffer_pool_size` sodass jede Pufferpool-Instanz mindestens 1 GB beträgt. |
 | `max_connections` | 150 | Der Wert der `max_connections` sollte mit der Gesamtanzahl der im Anwendungsserver konfigurierten PHP-Threads korrelieren. Eine allgemeine Empfehlung wäre 300 für eine kleine und 1 000 für eine mittlere Umwelt. |
 | `innodb_thread_concurrency` | 0 | Der beste Wert für diese Konfiguration sollte anhand der Formel berechnet werden: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 

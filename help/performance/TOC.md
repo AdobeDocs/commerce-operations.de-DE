@@ -1,7 +1,8 @@
 ---
 user-guide-title: Best Practices für die Leistung
 user-guide-description: Optimieren Sie die Leistung Ihrer Adobe Commerce- oder Magento Open Source-Produktionsimplementierung anhand unserer Empfehlungen.
-source-git-commit: c61f33a7159424e5f9018ebf37b9d17072246536
+feature: Best Practices
+source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%

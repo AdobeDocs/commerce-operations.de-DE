@@ -1,13 +1,14 @@
 ---
 title: Aktuelle Suchmaschine wird nicht unterstützt
 description: Führen Sie eine Fehlerbehebung bei Ihrem Adobe Commerce- oder Magento Open Source-Upgrade durch, nachdem ein Fehler bezüglich einer nicht unterstützten Suchmaschine aufgetreten ist.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+feature: Upgrade, Search
+exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Aktuelle Suchmaschine wird nicht unterstützt
 
@@ -34,13 +35,11 @@ Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql`, `elasticsearch`oder
 >
 >Wenn Sie diesen Fehler erhalten haben, befindet sich Ihre Installation in einem inkonsistenten Zustand und Sie können nicht auf den Administrator zugreifen. Es wird empfohlen, zur vorherigen Version zurückzukehren, während Sie diesen Fehler beheben. Führen Sie dazu einen der folgenden Befehle aus:
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

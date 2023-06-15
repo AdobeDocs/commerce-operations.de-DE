@@ -1,13 +1,14 @@
 ---
 title: Verarbeitung hoher Durchsatzmengen
 description: Optimieren Sie die Auftragsplatzierung und das Checkout-Erlebnis für Ihre Adobe Commerce- oder Magento Open Source-Bereitstellung.
-source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
+feature: Best Practices, Orders
+exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
 
 ---
-
 
 # Verarbeitung hoher Durchsatzaufträge
 
