@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
+source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
 workflow-type: tm+mt
-source-wordcount: '12426'
+source-wordcount: '12912'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.33 {#v1-1-33}
+
+* **ACSD-50478** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.5) - Behebt den Datenbankrollback-Befehl für einen Fall, in dem der DB-Dump Trigger und einen *delimiter* SQL-Befehl.
+* **ACSD-50512** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebt die *Fehler: Der herunterladbare Link steht nicht im Zusammenhang mit dem Produkt. Überprüfen Sie den Link und versuchen Sie es erneut.* Fehler, der beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update auftritt.
+* **ACSD-50949** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem der Preisfilter in der erweiterten Suche keine richtigen Ergebnisse zurückgibt, wenn er entlang des SKU-Filters verwendet wird.
+* **ACSD-51645** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebt den Fehler, der beim Speichern einer neuen Warenkorbpreisregel ausgegeben wird, wenn die Erweiterung `Magento_OfflineShipping` deaktiviert ist.
+* **ACSD-50895** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem [!DNL Google Analytics] 3 GTM-Tags werden nicht ausgelöst, wenn [!DNL Google Analytics] 4 GTM ist nicht konfiguriert.
+* **ACSD-51102** (für Adobe Commerce >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem eine Katalogregel, die auf eine große Anzahl von Produkten angewendet wird, nicht richtig indiziert wird, wenn die Regel durch eine geplante Aktualisierung aktiviert wird.
+* **ACSD-50368** (für Adobe Commerce und Magento Open Source >= 2.4.3 &lt;2.4.5) - Behebung des Problems, bei dem der `group_id` wird ignoriert, wenn ein Kunde über die asynchrone REST-API oder die asynchrone Bulk-REST-API erstellt wird.
+* **ACSD-51497** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.0) || >= 2.4.1 &lt;2.4.7) - Behebung des Problems, bei dem ein Kunde eine Katalogseite nicht nach benutzerdefiniertem Attribut des Dropdown-Typs sortieren kann.
+* **ACSD-51408** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt; 2.4.7) - Behebung des Problems, bei dem der Bestellelementstatus fälschlicherweise auf *[!UICONTROL Backordered]*.
+* **ACSD-51735** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.5) - Behebung des Problems, bei dem der Bestellelementstatus fälschlicherweise auf *[!UICONTROL Ordered]* wenn der Produktbestand *0*.
+* **ACSD-51792** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.6) - Behebung des Problems, bei dem eine Seite nicht über das Impressionsereignis verfügt, wenn [!DNL Google Tag Manager] 4 ist aktiviert.
+* **ACSD-51471** (für Adobe Commerce >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem ein Admin-Benutzer ein geplantes Update für ein gebündeltes Produkt, das ein einfaches Produkt verwendet, das selbst über eine geplante Aktualisierung verfügt, nicht speichern kann.
+* **ACSD-51700** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebt den Fehler, der beim Wechseln von Store-Ansichten auf einer herunterladbaren Produktebearbeitungsseite im Admin auftritt.
+* **ACSD-51120** (für Adobe Commerce >=2.3.7 &lt;2.4.3) - Behebung des Problems, bei dem der GraphQL GET-Anforderungscache für CMS-Seiten mit CMS-Bausteinen, die über ein Staging-Update aktualisiert werden, nicht gelöscht wird.
+* **ACSD-51240** (für Adobe Commerce >=2.4.4 &lt;2.4.6) - Behebung des Problems, bei dem die hochgeladene Datei fehlt, wenn die Registrierung über das Registrierungsformular für das Unternehmen erfolgt.
+* **ACSD-51907** (für Adobe Commerce >=2.4.2 &lt;2.4.3) - Behebung des Problems, bei dem ein eingeschränkter Administrator kein Kreditmemo mit Offline-Rückerstattung erstellen kann.
+* **ACSD-52148** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.4) - Behebung des Problems, bei dem die [!DNL Google V3 reCAPTCHA] Die Administratoranmeldung schlägt gelegentlich fehl.
+* **ACSD-51431** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem der Indexstatus angezeigt wird *Arbeit* auch wenn es keine neuen Einträge in der changelog gibt.
+* **ACSD-51892** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Leistungsproblems, bei dem Konfigurationsdateien während der Bereitstellung mehrmals geladen werden.
+* Veraltete ACSD-51114.
 
 ## v1.1.32 {#v1-1-32}
 
@@ -348,7 +371,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 * **MDVA-42507** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.5*) - Behebung des Problems, bei dem der vollständige Seiten-Cache nach dem Anwenden eines Staging-Updates für die Warenkorbregel bereinigt wird.
 * **MDVA-39163** (*für Adobe Commerce und Magento Open Source >=2.3.5 &lt;2.4.5*) - Behebung des Problems, bei dem Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert wird und Produkte im Warenkorb aus der Gastsitzung stammen.
 * **MDVA-38626** (*für Adobe Commerce und Magento Open Source >=2.3.3 &lt;2.4.5*) - Behebung des Problems, bei dem der Administrator mithilfe der [!DNL PayPal Payflow Pro] Zahlung.
-* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Admin-Benutzer die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
+* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Administrator die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
 * **MDVA-38526** (*für Adobe Commerce und Magento Open Source >=2.4.1 &lt;2.4.4*) - Behebung des Problems, bei dem der Admin-Benutzer nicht auf die [!DNL Site-Wide Analysis tool].
 * Aktualisierte Patches: MDVA-40101.
 
