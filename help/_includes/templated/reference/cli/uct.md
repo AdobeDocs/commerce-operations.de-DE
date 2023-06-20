@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Die Version des Fertigstellungsskripts
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -126,7 +126,7 @@ Fertigstellungs-Debug-Protokoll verfolgen
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -205,7 +205,7 @@ Ausgabe der Rohbefehl-Hilfe
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -289,7 +289,7 @@ Das Ausgabeformat (txt, xml, json oder md)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -353,7 +353,7 @@ Pfad zum Beheben von Problemen in.
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -428,7 +428,7 @@ Pfad der Datei, in die die Ausgabe exportiert wird (JSON-Format)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -499,7 +499,7 @@ Zielversion (z. B. 2.4.5).
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -575,7 +575,7 @@ Pfad der Datei, in die die Ausgabe exportiert wird (JSON-Format)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -683,7 +683,7 @@ Ausführungskontext. Diese Option dient Integrationszwecken und hat keine Auswir
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert

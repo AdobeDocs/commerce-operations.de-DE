@@ -1,5 +1,5 @@
 ---
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '17239'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Die Version des Fertigstellungsskripts
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -129,7 +129,7 @@ Fertigstellungs-Debug-Protokoll verfolgen
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -208,7 +208,7 @@ Ausgabe der Rohbefehl-Hilfe
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -292,7 +292,7 @@ Das Ausgabeformat (txt, xml, json oder md)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -349,7 +349,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -430,7 +430,7 @@ Legen Sie den Client-Geheimnis für die Adobe IMS-Konfiguration fest. Erforderli
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -487,7 +487,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -544,7 +544,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -637,7 +637,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -701,7 +701,7 @@ Der Benutzername des Administrators, der entsperrt werden soll
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -767,7 +767,7 @@ Durch Leerzeichen getrennte Liste von Konfigurationstypen oder Auslassungen zum 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -824,7 +824,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -881,7 +881,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -962,7 +962,7 @@ Passwort
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1034,7 +1034,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1106,7 +1106,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1178,7 +1178,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1250,7 +1250,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1313,7 +1313,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1384,7 +1384,7 @@ Verarbeiten Sie keine Bilder, die auf der Produktseite als ausgeblendet markiert
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1441,7 +1441,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1505,7 +1505,7 @@ y\n
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1594,7 +1594,7 @@ Code für die Konfiguration, standardmäßig leere Zeichenfolge
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1698,7 +1698,7 @@ Veraltet, verwenden Sie stattdessen die Option —lock-env .
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1775,7 +1775,7 @@ Scope-Code (nur erforderlich, wenn der Bereich nicht `default`)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1846,7 +1846,7 @@ Installieren Sie nur die nicht optionalen (Standard-) Aufgaben
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1903,7 +1903,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1972,7 +1972,7 @@ Hinzufügen oder Überschreiben von Parametern des Bootstrap
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2029,7 +2029,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2100,7 +2100,7 @@ Der festzulegende Anwendungsmodus. Verfügbare Optionen sind &quot;Entwickler&qu
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2157,7 +2157,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2221,7 +2221,7 @@ Klassenname
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2278,7 +2278,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2335,7 +2335,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2392,7 +2392,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2455,7 +2455,7 @@ Profiltyp
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2512,7 +2512,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2590,7 +2590,7 @@ Aufrufstapel einschließen. [true\|false]
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2684,7 +2684,7 @@ Design: [Anbieter/Design]
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2741,7 +2741,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2798,7 +2798,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2855,7 +2855,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2927,7 +2927,7 @@ Zusätzliche Argumente für PHPUnit. Beispiel: &quot;-c&#39;—filter=MyTest&#39
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2998,7 +2998,7 @@ Format, in dem der Katalog erstellt wird. Unterstützt: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3075,7 +3075,7 @@ XML-Datei überschreiben
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3141,7 +3141,7 @@ Domänenname
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3207,7 +3207,7 @@ Domänennamen
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3264,7 +3264,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3321,7 +3321,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3397,7 +3397,7 @@ Verwenden Sie den Parameter —magento , um die aktuelle Magento-Codebase zu ana
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3481,7 +3481,7 @@ Verwenden Sie den Parameter —allow-duplicates , um das Speichern von Dubletten
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3555,7 +3555,7 @@ Sichern von Code- und Konfigurationsdateien (ohne temporäre Dateien)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3612,7 +3612,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3678,7 +3678,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwend
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3744,7 +3744,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwend
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3812,7 +3812,7 @@ Indexdimensionsmodi catalog_product_price none,website,customer_group,website_an
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3883,7 +3883,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwend
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3949,7 +3949,7 @@ Durch Leerzeichen getrennte Liste von Indextypen oder Auslassungen, die auf alle
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4015,7 +4015,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwend
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4081,7 +4081,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwend
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4138,7 +4138,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4195,7 +4195,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4252,7 +4252,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4316,7 +4316,7 @@ Berichtsdateiname
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4380,7 +4380,7 @@ Berichtsdateiname
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4444,7 +4444,7 @@ Berichtsdateiname
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4501,7 +4501,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4558,7 +4558,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4616,7 +4616,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `compensations`
 
-Liste der Ausgleichsargumente im Format &quot;&lt;order_increment_id>:&lt;sku>:&lt;quantity>:&lt;stock-id>&quot;
+Liste der Ausgleichsargumente im Format &quot;\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
 
 - Standard: `[]`
 
@@ -4631,7 +4631,7 @@ Rohausgabe
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4716,7 +4716,7 @@ Rohausgabe
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4783,7 +4783,7 @@ Liste der zu importierenden Ländercodes
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4869,7 +4869,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4939,7 +4939,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5009,7 +5009,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5072,7 +5072,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5129,7 +5129,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5186,7 +5186,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5243,7 +5243,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5336,7 +5336,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5429,7 +5429,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5515,7 +5515,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5630,7 +5630,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5710,7 +5710,7 @@ Revision
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5767,7 +5767,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5824,7 +5824,7 @@ bin/magento queue:consumers:restart
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5925,7 +5925,7 @@ Der Dateipfad zum Speichern der PID (diese Option ist veraltet, verwenden Sie st
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5982,7 +5982,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6046,7 +6046,7 @@ Aktualisieren von Composer.json ohne Ausführen der Komponentenaktualisierung
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6110,7 +6110,7 @@ Aktualisieren von Composer.json ohne Ausführen der Komponentenaktualisierung
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6167,7 +6167,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6224,7 +6224,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6281,7 +6281,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6351,7 +6351,7 @@ Geheimnis
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6408,7 +6408,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6478,7 +6478,7 @@ Provider-Code
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6562,7 +6562,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7134,7 +7134,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7197,7 +7197,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7281,7 +7281,7 @@ Finden Sie heraus, welcher Patch-Typ generiert werden soll. Verfügbare Werte: `
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7345,7 +7345,7 @@ Name des Moduls, für das eine Whitelist generiert wird
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7415,7 +7415,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7478,7 +7478,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7535,7 +7535,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8346,7 +8346,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8417,7 +8417,7 @@ Neuindizierung überspringen
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8498,7 +8498,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8724,7 +8724,7 @@ Kompilieren Sie keine übergeordneten Designs. Wird nur in schnellen und standar
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8841,7 +8841,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8904,7 +8904,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9000,7 +9000,7 @@ Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos 
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9057,7 +9057,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9114,7 +9114,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9195,7 +9195,7 @@ Löschen Sie die generierten statischen Ansichtsdateien.
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9293,7 +9293,7 @@ Pfad zur Datei, in die vcl geschrieben werden soll
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, zeigen Sie Hilfe für die &lt;info>Liste&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
 
 - Standard: `false`
 - Akzeptiert keinen Wert
