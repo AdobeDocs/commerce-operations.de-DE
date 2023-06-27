@@ -1,13 +1,14 @@
 ---
 title: Anzeigen oder Ändern des Admin-URI
 description: Führen Sie diese Schritte aus, um den URI Ihrer Adobe Commerce- oder Magento Open Source Admin-Anwendung anzuzeigen und zu ändern.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Configuration
+exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 0%
 
 ---
-
 
 # Anzeigen oder Ändern des Admin-URI
 

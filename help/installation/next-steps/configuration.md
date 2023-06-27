@@ -1,13 +1,14 @@
 ---
 title: Anwendung konfigurieren
 description: Erfahren Sie mehr über die Konfiguration nach der Installation, die für Adobe Commerce und die Magento Open Source vor Ort erforderlich ist.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Configuration
+exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
 
 ---
-
 
 # Anwendung konfigurieren
 

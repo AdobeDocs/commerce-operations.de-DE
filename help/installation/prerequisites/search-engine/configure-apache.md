@@ -1,13 +1,14 @@
 ---
 title: Konfigurieren von Apache für Ihre Suchmaschine
 description: Führen Sie diese Schritte aus, um eine Suchmaschine mit dem Apache-Webserver für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: d3cfd97450164d38fd340b538099739601573d64
+feature: Install, Search
+exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurieren von Apache für Ihre Suchmaschine
 
@@ -85,7 +86,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
 
 In diesem Abschnitt wird beschrieben, wie Sie die Kommunikation zwischen Apache und der Suchmaschine mit [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) Authentifizierung mit Apache. Weitere Optionen finden Sie in einer der folgenden Ressourcen:
 
-* [Tutorial zur Authentifizierung und Autorisierung von Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Tutorial zur Authentifizierung und Autorisierung in Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Siehe einen der folgenden Abschnitte:
 
@@ -131,10 +132,9 @@ Wo
 
    * Einrichten von Cron: der Webserver-Benutzer oder ein anderer Benutzer.
 
-   In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Wahl des Benutzers liegt bei Ihnen.
+  In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Wahl des Benutzers liegt bei Ihnen.
 
    * Einrichten des Elasticsearchs: der Benutzer `magento_elasticsearch` in diesem Beispiel
-
 
 * `<password file name>` muss eine ausgeblendete Datei sein (beginnt mit `.`) und sollte den Namen des Benutzers widerspiegeln. Weitere Informationen finden Sie in den Beispielen weiter unten in diesem Abschnitt .
 

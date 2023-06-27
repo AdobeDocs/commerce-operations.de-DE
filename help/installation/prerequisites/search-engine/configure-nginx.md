@@ -1,13 +1,14 @@
 ---
 title: Konfigurieren von Nginx für Ihre Suchmaschine
 description: Führen Sie diese Schritte aus, um eine Suchmaschine mit dem Nginx-Webserver für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Search
+exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurieren von Nginx für Ihre Suchmaschine
 

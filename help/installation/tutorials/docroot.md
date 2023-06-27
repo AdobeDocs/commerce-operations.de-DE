@@ -1,13 +1,14 @@
 ---
 title: Basisverzeichnis zur Verbesserung der Sicherheit ändern
 description: Verhindern des nicht autorisierten browserbasierten Zugriffs auf Adobe Commerce oder die Magento Open Source des lokalen Dateisystems.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Security
+exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
 
 ---
-
 
 # Basisverzeichnis zur Verbesserung der Sicherheit ändern
 

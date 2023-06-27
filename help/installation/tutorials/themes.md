@@ -1,13 +1,14 @@
 ---
 title: Designs deinstallieren
 description: Führen Sie diese Schritte aus, um ein Adobe Commerce- oder Magento Open Source-Design zu deinstallieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Themes
+exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
 
 ---
-
 
 # Designs deinstallieren
 
@@ -26,7 +27,7 @@ Dieser Befehl deinstalliert *only* Designs, die in `composer.json`; d. h. Themen
 * Aktualisieren der `parent` Knoteninformationen in `theme.xml` , um Verweise auf das Design zu entfernen.
 * Entfernen des Design-Codes aus dem Dateisystem.
 
-   [Weitere Informationen zur Vererbung von Designs](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Weitere Informationen zur Vererbung von Designs](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Designs deinstallieren
 

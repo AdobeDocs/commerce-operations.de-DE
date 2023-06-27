@@ -1,13 +1,14 @@
 ---
 title: Festlegen einer Umfrage (optional)
 description: Verbessern Sie die Sicherheitsbereitschaft Ihrer Adobe Commerce- oder Magento Open Source-Installation vor Ort, indem Sie die Dateisystemberechtigungen einschränken.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+feature: Install, Configuration
+exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Festlegen einer Umfrage (optional)
 

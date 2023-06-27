@@ -1,13 +1,14 @@
 ---
 title: PHP-Einstellungen
 description: Führen Sie diese Schritte aus, um erforderliche PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Configuration
+exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
-
 
 # PHP-Einstellungen
 
@@ -73,7 +74,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Setzen Sie das PHP-Speicherlimit.
 
-   Unsere detaillierten Empfehlungen sind:
+  Unsere detaillierten Empfehlungen sind:
 
    - Kompilieren von Code oder Bereitstellen von statischen Assets, `1G`
    - Debugging, `2G`
@@ -81,18 +82,18 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Erhöhen Sie die Werte für PHP `realpath_cache_size` und `realpath_cache_ttl` zu den empfohlenen Einstellungen:
 
-   ```conf
-   realpath_cache_size=10M
-   realpath_cache_ttl=7200
-   ```
+  ```conf
+  realpath_cache_size=10M
+  realpath_cache_ttl=7200
+  ```
 
-   Diese Einstellungen ermöglichen es PHP-Prozessen, Pfade zu Dateien zwischenzuspeichern, anstatt sie bei jedem Laden einer Seite zu suchen. Siehe [Leistungsoptimierung](https://www.php.net/manual/en/ini.core.php) in der PHP-Dokumentation.
+  Diese Einstellungen ermöglichen es PHP-Prozessen, Pfade zu Dateien zwischenzuspeichern, anstatt sie bei jedem Laden einer Seite zu suchen. Siehe [Leistungsoptimierung](https://www.php.net/manual/en/ini.core.php) in der PHP-Dokumentation.
 
 - Aktivieren [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), was für Adobe Commerce und Magento Open Source 2.1 und höher erforderlich ist.
 
-   Es wird empfohlen, die [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) aus Leistungsgründen. Der OPcache ist in vielen PHP-Distributionen aktiviert.
+  Es wird empfohlen, die [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) aus Leistungsgründen. Der OPcache ist in vielen PHP-Distributionen aktiviert.
 
-   Adobe Commerce und Magento Open Source 2.1 und höher verwenden PHP-Code-Kommentare zur Codegenerierung.
+  Adobe Commerce und Magento Open Source 2.1 und höher verwenden PHP-Code-Kommentare zur Codegenerierung.
 
 >[!NOTE]
 >
@@ -126,15 +127,15 @@ Verwenden Sie die folgenden Richtlinien, um sie zu finden:
 
 - Apache-Webserver:
 
-   Für Ubuntu mit Apache befinden sich die OPcache-Einstellungen normalerweise im `php.ini` -Datei.
+  Für Ubuntu mit Apache befinden sich die OPcache-Einstellungen normalerweise im `php.ini` -Datei.
 
-   Bei CentOS mit Apache oder nginx befinden sich die OPcache-Einstellungen normalerweise in `/etc/php.d/opcache.ini`
+  Bei CentOS mit Apache oder nginx befinden sich die OPcache-Einstellungen normalerweise in `/etc/php.d/opcache.ini`
 
-   Wenn nicht, suchen Sie mit dem folgenden Befehl:
+  Wenn nicht, suchen Sie mit dem folgenden Befehl:
 
-   ```bash
-   sudo find / -name 'opcache.ini'
-   ```
+  ```bash
+  sudo find / -name 'opcache.ini'
+  ```
 
 - nginx-Webserver mit PHP-FPM: `/etc/php/7.2/fpm/php.ini`
 

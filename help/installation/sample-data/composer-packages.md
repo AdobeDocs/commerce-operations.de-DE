@@ -1,13 +1,14 @@
 ---
 title: Beispieldaten-Composer-Pakete herunterladen
 description: Führen Sie diese Schritte aus, um mit dem PHP Package Manager von Composer Beispieldaten für Adobe Commerce und Magento Open Source zu installieren.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+feature: Install, Deploy
+exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # Beispieldaten-Composer-Pakete herunterladen
 
@@ -15,7 +16,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Beispieldaten installieren, wenn S
 
 * Herunterladen eines komprimierten Archivs aus `https://magento.com/tech-resources/download`.
 
-   Wenn Sie ein Archiv von GitHub heruntergeladen haben, funktioniert diese Methode nicht, da die `composer.json` enthält nicht die `repo.magento.com` URL.
+  Wenn Sie ein Archiv von GitHub heruntergeladen haben, funktioniert diese Methode nicht, da die `composer.json` enthält nicht die `repo.magento.com` URL.
 
 * Verwendet `composer create-project`
 

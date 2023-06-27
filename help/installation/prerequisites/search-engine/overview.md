@@ -1,13 +1,14 @@
 ---
 title: Voraussetzungen für Suchmaschinen
 description: Führen Sie diese Schritte aus, um unterstützte Suchmaschinensoftware für lokale Installationen von Adobe Commerce und Magento Open Source zu installieren und zu konfigurieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+feature: Install, Search
+exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
 
 ---
-
 
 # Voraussetzungen für Suchmaschinen
 
@@ -40,15 +41,15 @@ Das vorhergehende Diagramm zeigt Folgendes:
 
 * Die Commerce-Anwendung und die Suchmaschine werden auf verschiedenen Hosts installiert.
 
-   Für das Ausführen auf separaten Hosts muss die Proxy-Funktion ausgeführt werden. (Das Clustering der Suchmaschine geht über den Rahmen dieses Handbuchs hinaus, Sie finden jedoch weitere Informationen im Abschnitt [Dokumentation zu Elasticsearch-Clustering](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).
+  Für das Ausführen auf separaten Hosts muss die Proxy-Funktion ausgeführt werden. (Das Clustering der Suchmaschine geht über den Rahmen dieses Handbuchs hinaus, Sie finden jedoch weitere Informationen im Abschnitt [Dokumentation zu Elasticsearch-Clustering](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).
 
 * Jeder Host verfügt über einen eigenen Webserver. die Webserver müssen nicht identisch sein.
 
-   Beispielsweise kann die Commerce-Anwendung Apache ausführen und die Suchmaschine nginx ausführen.
+  Beispielsweise kann die Commerce-Anwendung Apache ausführen und die Suchmaschine nginx ausführen.
 
 * Beide Webserver verwenden Transport Layer Security (TLS).
 
-   Die Einrichtung von TLS geht über den Rahmen unserer Dokumentation hinaus.
+  Die Einrichtung von TLS geht über den Rahmen unserer Dokumentation hinaus.
 
 Suchanforderungen werden wie folgt verarbeitet:
 

@@ -1,13 +1,14 @@
 ---
 title: Hausinterne Installationssicherheit
 description: Erfahren Sie mehr über Möglichkeiten, die Sicherheitsbereitschaft Ihrer Adobe Commerce- oder Magento Open Source-Installation vor Ort zu verbessern.
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+feature: Install, Security
+exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Hausinterne Installationssicherheit
 
