@@ -7,13 +7,14 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 63fddb20673399bae397238a8dda866e1d740e6f
+exl-id: 728e9439-63d0-4481-b014-7ba2ce97b9d0
+feature: Install, Logs, Observability
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
-
 
 # Self-Hosting von Adobe Commerce Monitoring-Telemetrie und -Tools
 

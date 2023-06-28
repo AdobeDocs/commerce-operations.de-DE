@@ -1,17 +1,18 @@
 ---
 title: Leistungsoptimierung
-description: Erfahren Sie mehr über die Leistungsoptimierung und die Schritte, die zur Leistungsüberprüfung Ihrer Adobe Commerce-Implementierung durchgeführt werden müssen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Erfahren Sie mehr über die Leistungsoptimierung und die Schritte, die zur Überprüfung der Leistung Ihrer Adobe Commerce-Implementierung unternommen werden müssen.
+exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
 # Leistungsoptimierung
 
-Leistung ist ein großes Thema. Wenn Benutzer eine langsame oder nicht responsive Site erleben, wirkt sich dies auf die Konversion aus. Es wird empfohlen, die folgenden Schritte auszuführen, um die Leistung Ihres Adobe Commerce bei der Implementierung der Cloud-Infrastruktur zu optimieren:
+Leistung ist ein großes Thema. Wenn Benutzer eine langsame oder nicht responsive Site erleben, wirkt sich dies auf die Konversion aus. Es wird empfohlen, die folgenden Schritte auszuführen, um die Leistung Ihrer Adobe Commerce bei der Implementierung der Cloud-Infrastruktur zu optimieren:
 
 - Bewertung des Problems
 - Leistung messen
@@ -41,7 +42,7 @@ High Time-to-First-Byte (TTFB) wird normalerweise als Indikator betrachtet, der 
 
 Ressourcen mit langsamem Laden werden normalerweise als Indikator betrachtet, der die statische Ressource definiert (CSS, JavaScript, Bilder, Videos, Ajax-Aufrufantwort von Drittanbietern).
 
-Adobe Commerce kann mit seinen Funktionen skaliert werden:
+Adobe Commerce kann mit seinen Funktionen skalieren:
 
 ![Abbildung der skalierbaren Funktionen von Adobe Commerce](../../../assets/playbooks/scalable-capabilities.svg)
 
@@ -56,4 +57,4 @@ Es gibt auch wichtige Faktoren, die den Maßstab im Handel antreiben, was sich a
 
 Für skalierbare, übereinander liegende Architekturen können Sie dieses Diagramm als Referenz verwenden.
 
-![Abbildung der Verwendung der Adobe Commerce GraphQL-API in einer zwischenspeicherbaren Architektur](../../../assets/playbooks/cacheable-architecture.svg)
+![Abbildung der Verwendung der Adobe Commerce GraphQL API in einer zwischenspeicherbaren Architektur](../../../assets/playbooks/cacheable-architecture.svg)

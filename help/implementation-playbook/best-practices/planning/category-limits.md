@@ -3,14 +3,13 @@ title: Best Practices bei der Kategoriekonfiguration
 description: Lernen Sie Best Practices kennen, um die Site-Leistung zu maximieren, indem Sie die Anzahl der Kategorien im Katalog einschränken.
 role: Admin
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: c6834b32-9ee8-4a4a-932c-9726f3feee3f
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für Kategoriekonfiguration
 

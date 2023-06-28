@@ -1,17 +1,18 @@
 ---
-title: Project Management Tools
+title: Projektmanagement-Tools
 description: Wählen Sie die empfohlenen Projektmanagement-Tools für Ihre Adobe Commerce-Implementierung aus.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+feature: System
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
+# Projektmanagement-Tools
 
-# Project management tools
-
-Moving out of the actual Adobe Commerce environment, but equally important, are the tools and solutions that make collaboration and the entire development process as smooth as possible.
+Aus der eigentlichen Adobe Commerce-Umgebung herauszukommen, aber ebenso wichtig sind die Tools und Lösungen, die die Zusammenarbeit und den gesamten Entwicklungsprozess so reibungslos wie möglich gestalten.
 
 Die folgende Tabelle enthält empfohlene Tools für das Projektmanagement:
 
@@ -31,9 +32,9 @@ Jira Service Management ermöglicht Entwicklungs- und Betriebsteams die Zusammen
 
 ## Dokumentenverwaltung
 
-Zusammenspiel ist ein großartiges Werkzeug, um Arbeit an einem Ort zu bauen, zu organisieren und zu kooperieren. Confluence ist mit Best-Practice-Vorlagen ausgestattet, sodass Sie das Rad nicht neu erfinden müssen. Machen Sie sich mit den ersten Schritten vertraut und bewahren Sie Konsistenz über Teams und Projekte hinweg.
+Zusammenspiel ist ein großartiges Werkzeug, um Arbeit an einem Ort zu bauen, zu organisieren und zu kooperieren. Die Zusammenhänge sind mit Best-Practice-Vorlagen ausgestattet, sodass Sie das Rad nicht neu erfinden müssen. Machen Sie sich mit den ersten Schritten vertraut und bewahren Sie Konsistenz über Teams und Projekte hinweg.
 
-## Ticket Management
+## Ticketverwaltung
 
 Jira ist ein Ticket-Tracking- und -Verwaltungssystem (einschließlich Versionsverwaltung und Versionsverwaltung) mit leistungsstarken Funktionen wie:
 
@@ -44,9 +45,9 @@ Jira ist ein Ticket-Tracking- und -Verwaltungssystem (einschließlich Versionsve
 
 ## Quellcodeverwaltung
 
-Bitbucket ist mehr als nur Git-Code-Verwaltung. Mit Bitbucket können Teams Projekte planen, an Code zusammenarbeiten, testen und bereitstellen. Mithilfe von Bitbucket können Sie Code-Überprüfungen mit Pull-Anforderungen effizienter genehmigen. You can also create a merged checklist with designated approvers and hold discussions right in the source code with inline comments.
+Bitbucket ist mehr als nur Git-Code-Verwaltung. Mit Bitbucket können Teams Projekte planen, an Code zusammenarbeiten, testen und bereitstellen. Mithilfe von Bitbucket können Sie Code-Überprüfungen mit Pull-Anforderungen effizienter genehmigen. Sie können auch eine zusammengeführte Checkliste mit bestimmten Genehmigern erstellen und Diskussionen direkt im Quellcode mit Inline-Kommentaren speichern.
 
-GitHub is similar to Bitbucket, which is also used in some projects.
+GitHub ähnelt Bitbucket, das auch in einigen Projekten verwendet wird.
 
 ## Kommunikation
 

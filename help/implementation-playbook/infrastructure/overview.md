@@ -2,7 +2,8 @@
 title: Übersicht über Infrastruktur und Bereitstellung
 description: Verschaffen Sie sich einen Überblick darüber, was wir Ihnen bisher über die Adobe Commerce-Lösung beigebracht haben.
 exl-id: 8767bb83-9175-4a54-8c5c-c6af0931917c
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Cloud, Deploy, Install
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%

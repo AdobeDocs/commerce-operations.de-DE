@@ -2,15 +2,14 @@
 title: Best Practices für die Konfiguration von Produktattributen
 description: Erfahren Sie, wie Sie die Leistung von Adobe Commerce optimieren können, indem Sie die Anzahl der Produktattribute, Attributoptionen und Attributsätze einschränken.
 role: User, Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+feature: Best Practices, Catalogs
+exl-id: 81783a4c-bc82-4733-bee3-0154cf03079a
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Produktattributkonfiguration
 
@@ -21,7 +20,6 @@ ht-degree: 0%
    - Für Adobe Commerce-Version 2.4.2 und höher konfigurieren Sie bis zu 1500 Produktattribute
 - **Produktattributoptionen**-Konfigurieren Sie bis zu 100 Attributoptionen für jedes Attribut.
 - **Produktattributsätze**-Konfigurieren von maximal 1000 Attributsätzen _
-
 >[!NOTE]
 >
 >Produktattribute geben Funktionen an, die global für alle Produkte gelten. Produktattributoptionen sind Anpassungen, um Funktionen anzugeben, die für bestimmte Produkte gelten.
@@ -96,4 +94,3 @@ Konfigurieren vieler **Attributoptionen** kann die Site-Leistung wie folgt beein
 - [Attributsätze](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-sets.html)
 - [Produkt erstellen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/product-create.html)
 - [Tutorials zum Anpassen > Formular zur Produkterstellung anpassen](https://developer.adobe.com/commerce/php/tutorials/admin/custom-product-creation-form/)
-

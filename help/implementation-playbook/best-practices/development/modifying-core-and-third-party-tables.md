@@ -3,11 +3,11 @@ title: Best Practices für die Änderung von Datenbanktabellen
 description: Erfahren Sie, wie und wann Adobe Commerce- und Drittanbieter-Datenbanktabellen geändert werden.
 role: Developer, Architect
 feature: Best Practices
-feature-set: Commerce
 last-substantial-update: 2022-11-15T00:00:00Z
-source-git-commit: 570fa4877f578f636736f0404169ed215fd06b24
+exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Migration von [!DNL Magento 1] und anderen E-Commerce-Plattformen oder mit Modul
 
 Der Hauptgrund für die Vermeidung von Änderungen an Kerntabellen besteht darin, dass Adobe Commerce die zugrunde liegende Logik mit SQL-Rohabfragen enthält. Änderungen an der Tabellenstruktur können zu unerwarteten Nebenwirkungen führen, die schwer zu beheben sind. Die Änderung kann sich auch auf DDL-Vorgänge (Data Definition Language) auswirken und unvorhersehbare Auswirkungen auf die Leistung haben.
 
-Ein weiterer Grund, die Änderung der Datenbanktabellenstruktur zu vermeiden, besteht darin, dass Ihre Änderungen Probleme verursachen können, wenn das Kernentwicklungsteam oder Entwickler von Drittanbietern die Struktur ihrer Datenbanktabellen ändern. Beispielsweise gibt es einige Kerndatenbanktabellen mit einer Spalte namens `additional_data`. Dies war immer eine `text` Spaltentyp. Aus Leistungsgründen kann das Kernteam die Spalte jedoch in `longtext`. Dieser Spaltentyp ist ein Alias für JSON. Durch die Konvertierung in diesen Spaltentyp werden dieser Spalte Leistungsverbesserungen und Suchmöglichkeiten hinzugefügt, die nicht als `text` Typ. Weitere Informationen zu diesem Thema finden Sie unter [JSON-Datentyp](https://mariadb.com/kb/en/json-data-type/){target=&quot;_blank&quot;}.
+Ein weiterer Grund, die Änderung der Datenbanktabellenstruktur zu vermeiden, besteht darin, dass Ihre Änderungen Probleme verursachen können, wenn das Kernentwicklungsteam oder Entwickler von Drittanbietern die Struktur ihrer Datenbanktabellen ändern. Beispielsweise gibt es einige Kerndatenbanktabellen mit einer Spalte namens `additional_data`. Dies war immer eine `text` Spaltentyp. Aus Leistungsgründen kann das Kernteam die Spalte jedoch in `longtext`. Dieser Spaltentyp ist ein Alias für JSON. Durch die Konvertierung in diesen Spaltentyp werden dieser Spalte Leistungsverbesserungen und Suchmöglichkeiten hinzugefügt, die nicht als `text` Typ. Weitere Informationen zu diesem Thema finden Sie unter [JSON-Datentyp](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
 ## Ermitteln, wann Daten gespeichert oder entfernt werden
 
@@ -36,13 +36,13 @@ In diesem Fall muss die Datenbank auf einen Server migriert werden, der entweder
 
 Eine andere Möglichkeit, die Daten außerhalb des Handels zu halten, sie jedoch in Echtzeit zu verwenden, wäre die Nutzung anderer Tools wie GraphQL-Gitter. Diese Option kombiniert verschiedene Datenquellen und gibt sie als einzelne Antwort zurück.
 
-Sie können beispielsweise `stitch` zusammen alte Bestellungen aus einer externen Datenbank, vielleicht die alte Magento 1-Site, die eingestellt wird. Zeigen Sie sie dann mithilfe des GraphQL-Gitters als Teil des Auftragsverlaufs der Kunden an. Diese alten Bestellungen können mit den Bestellungen Ihrer aktuellen [!DNL Adobe Commerce] Umgebung.
+Sie können beispielsweise `stitch` zusammen alte Bestellungen aus einer externen Datenbank, vielleicht die alte Magento 1-Site, die eingestellt wird. Zeigen Sie sie dann mithilfe des GraphQL-Gitters als Teil des Bestellverlaufs der Kunden an. Diese alten Bestellungen können mit den Bestellungen Ihrer aktuellen [!DNL Adobe Commerce] Umgebung.
 
-Weitere Informationen zur Verwendung des API-Gitters mit GraphQL finden Sie unter [Was ist API-Mesh?](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target=&quot;_blank&quot;}) und [GraphQL-Mesh-Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}.
+Weitere Informationen zur Verwendung von API-Gittern mit GraphQL finden Sie unter [Was ist API-Mesh?](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migrieren von Legacy-Daten mit Erweiterungsattributen
 
-Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in gespeichert werden müssen [!DNL Adobe Commerce]empfiehlt Adobe die Verwendung von [Erweiterungsattribute](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target=&quot;_blank&quot;}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
+Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in gespeichert werden müssen [!DNL Adobe Commerce]empfiehlt Adobe die Verwendung von [Erweiterungsattribute](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
 
 - Sie können die beizubehaltenden Daten und die Datenbankstruktur steuern, um sicherzustellen, dass die Daten mit dem richtigen Spaltentyp und den richtigen Indizes gespeichert werden.
 - Die meisten Entitäten in [!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützt die Verwendung von Erweiterungsattributen.
@@ -52,9 +52,9 @@ Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Entsch
 
 ### Andere Alternativen in Betracht ziehen
 
-Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce] -Umgebung, z. B. GraphQL-Gitter und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten beizubehalten, wirken sich jedoch nicht auf die Commerce-Hauptanwendung oder die zugrunde liegenden Datenbanktabellen aus. Bei diesem Ansatz stellen Sie Ihre Daten über eine API bereit. Fügen Sie dann Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mit GraphQL-Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erstellen, wie in [Legacy-Daten](#legacy-data).
+Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce] -Umgebung, z. B. GraphQL-Gitter und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten beizubehalten, wirken sich jedoch nicht auf die Commerce-Hauptanwendung oder die zugrunde liegenden Datenbanktabellen aus. Bei diesem Ansatz stellen Sie Ihre Daten über eine API bereit. Fügen Sie dann Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mit GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erstellen, wie in [Legacy-Daten](#legacy-data).
 
-Weitere Informationen zum GraphQL-Gitter finden Sie unter [GraphQL-Mesh-Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target=&quot;_blank&quot;}. Informationen zum Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target=&quot;_blank&quot;}.
+Weitere Informationen zum GraphQL-Gitter finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Ändern von Kerntabellen oder Drittanbietertabellen
 
@@ -73,11 +73,11 @@ Adobe empfiehlt, die folgenden Schritte auszuführen, wenn Sie eine Spalte zu ei
 
    Beispiel: `app/code/YourCompany/Customer`
 
-1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Modul erstellen](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target=&quot;_blank&quot;}.
+1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Modul erstellen](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Erstellen Sie eine Datei mit dem Namen `db_schema.xml` im `etc` und nehmen Sie die entsprechenden Änderungen vor.
 
-   Falls zutreffend, generieren Sie eine `db_schema_whitelist.json` -Datei. Siehe [Deklaratives Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target=&quot;_blank&quot;} für weitere Informationen.
+   Falls zutreffend, generieren Sie eine `db_schema_whitelist.json` -Datei. Siehe [Deklaratives Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} für weitere Informationen.
 
 ### Potenzielle Auswirkungen
 

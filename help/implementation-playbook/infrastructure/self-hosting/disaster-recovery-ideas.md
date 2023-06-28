@@ -7,13 +7,14 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 6e361169889c8fe1c176d3a3283d52699dfa3b85
+exl-id: cab6213b-da44-498f-b5c1-e7f89e95038e
+feature: Install
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 0%
 
 ---
-
 
 # Self-Hosting von Adobe Commerce Disaster Recovery-Ideen
 

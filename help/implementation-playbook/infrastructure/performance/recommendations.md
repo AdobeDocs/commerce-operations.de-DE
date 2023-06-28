@@ -2,7 +2,9 @@
 title: Performance Optimization Recommendations
 description: Optimieren Sie die Leistung Ihrer Adobe Commerce-Implementierung, indem Sie diese Empfehlungen befolgen.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
+feature: Cloud
+topic: Performance
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -107,7 +109,7 @@ Es wird immer empfohlen, Leistungstests vor jeder Produktionsversion durchzufüh
 
 ### Suche {#search-heading}
 
-Elasticsearch (oder OpenSearch) ist ab Adobe Commerce-Version 2.4 erforderlich, es empfiehlt sich jedoch auch, es für Versionen vor 2.4 zu aktivieren.
+Elasticsearch (oder OpenSearch) ist ab Adobe Commerce-Version 2.4 erforderlich. Es empfiehlt sich jedoch auch, es für Versionen vor 2.4 zu aktivieren.
 
 ## Betriebssystem
 

@@ -2,7 +2,8 @@
 title: Übersicht über Wartung und Support
 description: Ordnungsgemäße Wartung und Unterstützung der neu gestarteten Adobe Commerce-Implementierung.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
-source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
+feature: Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

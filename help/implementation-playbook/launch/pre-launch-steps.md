@@ -1,13 +1,14 @@
 ---
 title: Schritte vor dem Start
-description: Verwenden Sie unsere Checklisten vor dem Start, um eine reibungslose Implementierung der Commerce-Site in Adobe sicherzustellen.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Verwenden Sie unsere Checklisten vor dem Start, um eine reibungslose Implementierung der Adobe Commerce-Site sicherzustellen.
+exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
+feature: Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # Schritte vor dem Start
 
@@ -23,21 +24,21 @@ Die Checkliste vor dem Start muss vor dem Start überprüft werden. Sie enthält
 - E-Mail-Dienste sind gut konfiguriert und funktionieren für Transaktions-E-Mails
 - CDN ist für Staging-/Produktionsumgebungen konfiguriert
 - Sicherheitssuche für Staging-/Produktionsumgebungen einrichten
-   - Adobe Commerce-Sicherheitsprüfung
+   - Adobe Commerce-Sicherheitsüberprüfung
 - Führen Sie eine Leistungsbewertung durch
    - JMeter
    - Belagung
    - Webseitentest
-   - Google-Seitengeschwindigkeit
+   - Seitengeschwindigkeit von Google
 - Validieren Sie alle Drittanbieterintegrationen, die in der Anwendung funktionieren (OMS, CRM).
 - Leistungsüberwachungs-Tool aktivieren (Neue Eigenschaften)
 - Aktivitäten zur Datenmigration in der Probe (falls vorhanden)
 
 ![Abbildung der Phase 1 des Startvorgangs](../../assets/playbooks/launch-steps-1.svg)
 
-Die Hauptunterschiede zwischen lokalen Adobe Commerce- und Cloud-Implementierungen sind die Bereitstellungsskripte und -werkzeuge sowie die Einrichtung für SSL, Mail-Dienst und CDN. Der Prozess ist jedoch immer noch derselbe.
+Die Hauptunterschiede zwischen lokalen Implementierungen von Adobe Commerce und Cloud-Implementierungen sind die Bereitstellungsskripte und -werkzeuge sowie die Einrichtung für SSL, Mail-Dienst und CDN. Der Prozess ist jedoch immer noch derselbe.
 
-Für das SSL-(TLS-)Zertifikat stellt Adobe Commerce in der Cloud-Infrastruktur ein Fastly-Platzhalterzertifikat bereit. Um sie verwenden zu können, müssen Sie die Validierung bestehen: Fügen Sie den Fastly TXT-Eintrag in Ihre DNS-Einstellungen zum apex-Domänennamen hinzu. Der Fastly TXT-Eintrag befindet sich im On-boarding-Arbeitsblatt. Andernfalls müssen Sie ein Ticket senden, um es zu erhalten. Ersetzen Sie diesen Text durch Ihre Fragen/Kommentare hier. Wenn Sie Ihr eigenes SSL(TLS)-Zertifikat anstelle eines Wildcard-Zertifikats verwenden, senden Sie ein Supportticket mit Ihrem Zertifikat, das an das Setup angehängt ist.
+Für SSL(TLS)-Zertifikate stellt Adobe Commerce on Cloud Infrastructure ein Fastly-Platzhalterzertifikat bereit. Um sie verwenden zu können, müssen Sie die Validierung bestehen: Fügen Sie den Fastly TXT-Eintrag in Ihre DNS-Einstellungen zum apex-Domänennamen hinzu. Der Fastly TXT-Eintrag befindet sich im On-boarding-Arbeitsblatt. Andernfalls müssen Sie ein Ticket senden, um es zu erhalten. Ersetzen Sie diesen Text durch Ihre Fragen/Kommentare hier. Wenn Sie Ihr eigenes SSL(TLS)-Zertifikat anstelle eines Wildcard-Zertifikats verwenden, senden Sie ein Supportticket mit Ihrem Zertifikat, das an das Setup angehängt ist.
 
 Adobe Commerce in der Cloud-Infrastruktur bietet die Funktion SendGrid Mail für Ihre Transaktions-E-Mails. Für Pro-Pläne müssen Sie Ihren DNS-Einstellungen SendGrid-Einträge hinzufügen. SendGrid-Datensätze finden Sie im On-Boarding-Arbeitsblatt. Andernfalls sollten SI oder Händler Support-Tickets einreichen, um sie zu erhalten. Zunächst müssen Sie keine Änderungen am DNS vornehmen. SendGrid ist für Sie vorkonfiguriert.
 

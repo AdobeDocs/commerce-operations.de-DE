@@ -2,7 +2,8 @@
 title: Sicherheit der Cloud-Infrastruktur
 description: Erfahren Sie, wie wir Adobe Commerce in der Cloud-Infrastruktur sicher halten.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
+feature: Cloud, Security
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%

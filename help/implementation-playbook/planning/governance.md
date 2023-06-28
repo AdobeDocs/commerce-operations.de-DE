@@ -1,13 +1,14 @@
 ---
 title: Projektverwaltung
 description: Wenden Sie unsere Empfehlungen zur Projektverwaltung auf Ihre Adobe Commerce-Implementierung an.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
-
 
 # Projektverwaltung
 

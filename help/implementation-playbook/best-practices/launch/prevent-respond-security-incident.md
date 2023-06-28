@@ -2,15 +2,14 @@
 title: Verhindern und Reagieren auf einen Sicherheitsvorfall
 description: Erfahren Sie mehr über Best Practices zur Vermeidung und Reaktion auf Sicherheitsvorfälle in Ihrer Adobe Commerce im Rahmen eines Cloud-Infrastrukturprojekts.
 role: Admin, Developer, Leader, User
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: bb9b8cc9993a70ea50667f08c8260759ab0f91dc
+exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices zur Verhinderung und Reaktion auf einen Sicherheitsvorfall
 
@@ -62,10 +61,10 @@ Der Bericht &quot;Aktionsprotokolle&quot;zeigt einen detaillierten Datensatz all
 - Analysieren Sie Ereignisse mit der [Beobachtung des Adobe Commerce-Tools](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=en).
 Mit dem Tool &quot;Beobachtung für Adobe Commerce&quot;können Sie komplexe Probleme analysieren, um Ursachen zu identifizieren. Anstatt unterschiedliche Daten zu verfolgen, können Sie Ihre Zeit damit verbringen, Ereignisse und Fehler zu korrelieren, um tiefere Einblicke in die Ursachen von Leistungsengpässen zu erhalten.
 Das Tool soll einen klaren Überblick über einige potenzielle Site-Probleme geben, damit Sie die Ursache identifizieren und die Site optimal funktionieren. Klicken Sie auf den Link zur Dokumentation zum Tool &quot;Beobachtung für Adobe Commerce&quot;, um auf die Dokumentation zu diesem Tool zuzugreifen. In der Dokumentation finden Sie einen Abschnitt mit allen Informationen, die Sie auf der **Sicherheit** Registerkarte.
-- Analysieren von Protokollen mit [Neue Relische Protokolle](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Adobe Commerce on Cloud Infrastructure Pro-Projekte umfassen [Neue Relische Protokolle](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) Dienst. Der Dienst ist so vorkonfiguriert, dass alle Protokolldaten aus Ihren Staging- und Produktionsumgebungen aggregiert werden, um sie in einem zentralen Protokollverwaltungs-Dashboard anzuzeigen.
-Sie können den Dienst Neue Relische Protokolle verwenden, um die folgenden Aufgaben auszuführen:
-   - Verwendung [Neue Relische Abfragen](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) , um aggregierte Protokolldaten zu durchsuchen.
-   - Visualisieren Sie Protokolldaten über die Anwendung Neue Relic Logs .
+- Analysieren von Protokollen mit [New Relic-Protokolle](https://devdocs.magento.com/cloud/project/new-relic.html#new-relic-logs). Adobe Commerce on Cloud Infrastructure Pro-Projekte umfassen [New Relic-Protokolle](https://docs.newrelic.com/docs/logs/new-relic-logs/get-started/introduction-new-relic-logs) Dienst. Der Dienst ist so vorkonfiguriert, dass alle Protokolldaten aus Ihren Staging- und Produktionsumgebungen aggregiert werden, um sie in einem zentralen Protokollverwaltungs-Dashboard anzuzeigen.
+Sie können den New Relic Logs-Dienst verwenden, um die folgenden Aufgaben auszuführen:
+   - Verwendung [New Relic-Abfragen](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) , um aggregierte Protokolldaten zu durchsuchen.
+   - Visualisieren Sie Protokolldaten über die New Relic Logs-Anwendung.
 
 ## Zusätzliche Informationen
 

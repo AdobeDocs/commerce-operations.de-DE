@@ -3,8 +3,8 @@ title: Best Practices für private Inhaltsbausteine
 description: Erfahren Sie mehr über Best Practices zum Konfigurieren privater Inhaltsbausteine zur Optimierung der Storefront-Leistung.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -32,5 +32,3 @@ Sites mit privaten Inhaltsbausteinen, die die `_isScopePrivate` Variablen Trigge
 
 - [Private Inhalte](../../../performance/configuration.md#client-side-optimization-settings)
 - [Hohe Durchsatzraten AJAX Anforderungen führen zu schlechter Leistung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
-
-

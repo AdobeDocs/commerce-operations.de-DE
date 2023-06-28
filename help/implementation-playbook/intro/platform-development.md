@@ -2,7 +2,8 @@
 title: Grundsätze der Plattformentwicklung
 description: Grundlegende Prinzipien der Plattformentwicklung bei der Arbeit mit Adobe Commerce
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

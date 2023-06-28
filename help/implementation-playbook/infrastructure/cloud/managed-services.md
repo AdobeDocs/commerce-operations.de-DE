@@ -2,9 +2,10 @@
 title: Managed Services
 description: Überprüfen Sie die Zuständigkeiten von Adobe Managed Services, Kunden und Cloud Service-Anbietern für Ihre Adobe Commerce in Bezug auf die Implementierung der Cloud-Infrastruktur.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Cloud, Services
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---

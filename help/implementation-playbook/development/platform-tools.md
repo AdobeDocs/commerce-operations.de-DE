@@ -2,7 +2,8 @@
 title: Plattform-Tools
 description: Wählen Sie die empfohlenen Plattformtools für Ihre Adobe Commerce-Implementierung aus.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: ea912c48176fb060e48654d05ae6b533436a2432
+feature: Configuration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 0%

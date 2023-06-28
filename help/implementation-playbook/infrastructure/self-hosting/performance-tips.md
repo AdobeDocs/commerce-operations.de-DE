@@ -7,13 +7,14 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
+exl-id: 95ff0c79-21d0-4514-991c-d88f616db68f
+feature: Install
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
 
 ---
-
 
 # Tipps zur Leistung von Adobe Commerce selbst hosten
 

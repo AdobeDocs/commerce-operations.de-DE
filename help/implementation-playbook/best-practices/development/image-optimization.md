@@ -3,14 +3,13 @@ title: Bilder für eine reaktionsfähigere Site optimieren
 description: Erfahren Sie mehr über die Schritte zur Bildoptimierung und zur Verwendung der Fastly-Bildoptimierung zur Optimierung der Reaktionszeit auf Ihren Adobe Commerce-Sites.
 role: Developer, Admin
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
-
 
 # Bilder für eine reaktionsfähigere Site optimieren
 

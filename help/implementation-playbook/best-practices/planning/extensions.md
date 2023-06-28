@@ -2,15 +2,14 @@
 title: Best Practices für Erweiterungen
 description: Erfahren Sie, wie Sie Leistungsprobleme vermeiden, die durch Adobe Commerce-Erweiterungen von Drittanbietern verursacht werden.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+feature: Best Practices, Extensions
+exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für Erweiterungen
 

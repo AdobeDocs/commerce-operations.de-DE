@@ -2,15 +2,14 @@
 title: Best Practices zum Konfigurieren von Dateien "robots.txt"und "sitemap.xml"
 description: Erfahren Sie, wie Sie Anweisungen über Ihre Adobe Commerce-Website an Webcrawler weitergeben.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Konfiguration `robots.txt` und `sitemap.xml` files
 
@@ -38,27 +37,27 @@ Befolgen Sie diese Best Practices bei der Konfiguration der `robots.txt` und `si
 - Vergewissern Sie sich, dass Ihr Projekt [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html) Version 2002.0.12 oder höher.
 - Verwenden Sie die Admin-Anwendung, um Inhalte zur `robots.txt` -Datei.
 
-   >[!TIP]
-   >
-   >Automatisch generierte anzeigen `robots.txt` -Datei für Ihren Store unter `<domain.your.project>/robots.txt`.
+  >[!TIP]
+  >
+  >Automatisch generierte anzeigen `robots.txt` -Datei für Ihren Store unter `<domain.your.project>/robots.txt`.
 
 - Verwenden Sie die Admin-Anwendung, um eine `sitemap.xml` -Datei.
 
-   >[!IMPORTANT]
-   >
-   >Aufgrund des schreibgeschützten Dateisystems in Adobe Commerce für Cloud-Infrastrukturprojekte müssen Sie die `pub/media` Pfad vor dem Generieren der Datei.
+  >[!IMPORTANT]
+  >
+  >Aufgrund des schreibgeschützten Dateisystems in Adobe Commerce für Cloud-Infrastrukturprojekte müssen Sie die `pub/media` Pfad vor dem Generieren der Datei.
 
 - Verwenden Sie ein benutzerdefiniertes Fastly VCL-Snippet, um vom Stamm Ihrer Site zur `pub/media/` Speicherort für beide Dateien:
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path ~ \"^/?sitemap.xml$\" ) { set req.url = \"pub/media/sitemap.xml\"; } else if (req.url.path ~ \"^/?robots.txt$\") { set req.url = \"pub/media/robots.txt\";}"
+  }
+  ```
 
 - Testen Sie die Umleitung, indem Sie die Dateien in einem Webbrowser anzeigen. Beispiel: `<domain.your.project>/robots.txt` und `<domain.your.project>/sitemap.xml`. Stellen Sie sicher, dass Sie den Stammpfad verwenden, für den Sie die Umleitung konfiguriert haben, und keinen anderen Pfad.
 
@@ -81,15 +80,15 @@ Die gleichen Best Practices für die Konfiguration der `robots.txt` und `sitemap
 
 - Verwenden Sie ein geringfügig modifiziertes benutzerdefiniertes Fastly VCL-Snippet, um vom Stamm Ihrer Sites zum `pub/media` Speicherort für beide Dateien Ihrer Sites:
 
-   ```vcl
-   {
-     "name": "sitemaprobots_rewrite",
-     "dynamic": "0",
-     "type": "recv",
-     "priority": "90",
-     "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
-   }
-   ```
+  ```vcl
+  {
+    "name": "sitemaprobots_rewrite",
+    "dynamic": "0",
+    "type": "recv",
+    "priority": "90",
+    "content": "if ( req.url.path == \"/robots.txt\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) { set req.url = \"pub/media/\" re.group.1 \"_robots.txt\"; }} else if ( req.url.path == \"/sitemap.xml\" ) { if ( req.http.host ~ \"(domainone|domaintwo).com$\" ) {  set req.url = \"pub/media/\" re.group.1 \"_sitemap.xml\"; }}"
+  }
+  ```
 
 ## Adobe Commerce vor Ort
 

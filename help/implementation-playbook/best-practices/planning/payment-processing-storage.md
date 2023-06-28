@@ -2,15 +2,14 @@
 title: Best Practices für die Verarbeitung und Speicherung von Zahlungen
 description: Erfahren Sie, wie Sie Zahlungsdetails sicher verarbeiten und speichern können.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Verarbeitung und Speicherung von Zahlungen
 

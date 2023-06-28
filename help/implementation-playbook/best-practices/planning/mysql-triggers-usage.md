@@ -2,15 +2,14 @@
 title: Verwendung von MySQL-Triggern
 description: Erfahren Sie, wie Sie MySQL-Trigger effektiv mit Adobe Commerce verwenden können.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
-source-git-commit: 79a825a094a80892cf1a30aa7f5c61bd351c69f5
+exl-id: acac3e47-67c8-4eea-80e3-e26f2854391a
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Verwendung von MySQL-Triggern
 

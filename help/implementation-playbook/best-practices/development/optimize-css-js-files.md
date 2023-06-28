@@ -3,8 +3,8 @@ title: CSS- und JS-Ressourcendateien optimieren
 description: Erfahren Sie, wie Sie CSS- und JavaScript (JS)-Dateien für Adobe Commerce-Projekte über die Admin-Befehlszeile oder die Befehlszeile zusammenführen und minimieren können.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: e6e8a2d7ef059265dbcbfcd6be117828a639f6d6
+exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -94,4 +94,3 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 - [Benutzerhandbuch: Optimieren von Ressourcendateien](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [Frontend-Entwicklerhandbuch: CSS-Zusammenführung, Minimierung und Site-Leistung](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Erweitertes JavaScript-Bundling](../../../performance/advanced-js-bundling.md)
-

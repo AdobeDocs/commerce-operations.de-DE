@@ -1,13 +1,14 @@
 ---
 title: Entwicklung von Headless mit Adobe Commerce
 description: Erfahren Sie mehr über die Entwicklung der Headless-Architektur-Unterstützung von Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 991f0530-c596-46c5-9eb0-fa109f848165
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 0%
 
 ---
-
 
 # Entwicklung von Headless mit Adobe Commerce
 

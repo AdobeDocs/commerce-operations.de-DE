@@ -2,7 +2,8 @@
 title: Leistungs-Benchmarks
 description: Überprüfen Sie die Performance-Benchmark-Ergebnisse für Adobe Commerce-Implementierungen, die auf der Adobe Cloud-Infrastruktur gehostet werden.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ Leistungsmessungen basieren auf simulierten täglichen Store-Aktivitäten für K
    - 3000 gleichzeitige Benutzer auf der Storefront
    - Auf CDN-Cache-Trefferrate von 30 % festlegen
 
-      Die effektive Nutzung der Cache-Ebene erhöht die Anzahl der Seitenansichten pro Stunde.
+     Die effektive Nutzung der Cache-Ebene erhöht die Anzahl der Seitenansichten pro Stunde.
 
 - **GraphQL-API**
    - 250 gleichzeitige Threads
    - Setzen Sie die CDN-Cache-Trefferrate auf 0 %
 
-      Die Reaktionszeiten werden durch eine Zwischenspeicherschicht vor GraphQL erheblich verbessert.
+     Die Reaktionszeiten werden durch eine Zwischenspeicherschicht vor GraphQL erheblich verbessert.
 
 - **Admin Web**
    - 500 gleichzeitige Benutzer

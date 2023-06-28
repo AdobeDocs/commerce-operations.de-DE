@@ -1,13 +1,14 @@
 ---
 title: Startzeitphase der Implementierung
 description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Anfangsphase von Adobe Commerce-Projekten.
-source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
+exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
-
 
 # Launch-Phase
 

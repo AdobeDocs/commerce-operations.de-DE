@@ -3,14 +3,13 @@ title: Best Practices zum Konfigurieren von Sites, Stores und Store-Ansichten
 description: Erfahren Sie Best Practices zum Konfigurieren von Sites, Stores und Store-Ansichten, um die Site-Leistung zu maximieren.
 role: Admin
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices zum Konfigurieren von Sites, Stores und Store-Ansichten
 
@@ -48,4 +47,3 @@ Websites und Stores sind Multiplikatoren für Katalogdaten, sodass viele Website
 
 - [Grundlegendes zu Websites, Geschäften und Store-Ansichten](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Einrichten mehrerer Websites oder Stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html)
-

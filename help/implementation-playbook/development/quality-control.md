@@ -1,13 +1,14 @@
 ---
 title: Qualitätskontrolle
 description: Erfahren Sie mehr über Adobe Commerce-Qualitätskontrollprozesse im Zusammenhang mit Implementierungsprojekten.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+feature: Build
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
-
 
 # Qualitätskontrollprozess und -werkzeuge
 
@@ -142,7 +143,7 @@ Der im vorangehenden Diagramm beschriebene Qualitätskontrollprozess kann kurz w
 </tbody>
 </table>
 
-Ähnlich wie bei [tools](project-management-tools.md), die wir für den Entwicklungsprozess identifiziert haben, haben wir eine Handvoll von Auswahllösungen und Plattformen ausgewählt, die wir oft für Qualitätskontrolltests verwenden.
+Ähnlich wie bei [tools](project-management-tools.md) Wir haben für den Entwicklungsprozess eine Handvoll von Auswahllösungen und Plattformen ausgewählt, die wir oft für Qualitätskontrolltests verwenden.
 
 | Zweck | Tool |
 |---------------------------|---------------------------------------------------|
@@ -172,13 +173,13 @@ OWASPZAP (Zed Attack Proxy) soll sowohl von den neuen Anwendungssicherheitsexper
 
 ## UI-Tests
 
-Perfect Pixel ermöglicht es Entwicklern und Markup-Designern, eine halbtransparente Bildüberlagerung über den entwickelten HTML-Code zu platzieren und einen pixelgenauen Vergleich zwischen ihnen durchzuführen.
+Perfect Pixel ermöglicht es Entwicklern und Markup-Designern, eine halbtransparente Bildüberlagerung über die entwickelte HTML zu platzieren und einen pixelgenauen Vergleich vorzunehmen.
 
 BrowserStack ist eine Cloud-Web- und mobile Testplattform, mit der Entwickler ihre Websites und mobilen Anwendungen über On-Demand-Browser, Betriebssysteme und reale Mobilgeräte hinweg testen können.
 
 ## API-Tests
 
-Postman ist die Kooperationsplattform für die API-Entwicklung. Postman vereinfacht jeden Schritt beim Erstellen einer API und optimiert die Zusammenarbeit, sodass Sie bessere APIs erstellen können.
+Postman ist die Kooperationsplattform für die API-Entwicklung. Postman vereinfacht die Erstellung von APIs und optimiert die Zusammenarbeit, sodass Sie bessere APIs erstellen können.
 
 SoapUI ist eine Open-Source-Webdienst-Testanwendung für Simple Object Access Protocol (SOAP) und Repräsentationsstatusübertragungen (REST). Die Funktion umfasst die Überprüfung von Webdiensten. Aufrufen, Entwickeln, Simulieren und Modellieren; Funktionstests; Belastungs- und Kompatibilitätstests.
 

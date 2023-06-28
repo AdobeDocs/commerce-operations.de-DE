@@ -3,14 +3,13 @@ title: Umsetzungsplanung
 description: Erfahren Sie mehr über Best Practices bei der Implementierung für die Planungsphase von Adobe Commerce-Projekten.
 role: Developer, Admin, User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 78308f9cb3d2ebe8af41c42f9bb146409367ab6c
+exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Planungsphase
 

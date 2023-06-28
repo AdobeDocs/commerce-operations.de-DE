@@ -1,13 +1,14 @@
 ---
 title: Projektimplementierungsmethode
 description: Machen Sie sich mit der Funktionsweise der Bereitstellung von Adobe Commerce-Software vertraut.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 579cd083-8b12-49ff-bc8a-8db1ca588d74
+feature: Build, Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # Projektimplementierungsmethode
 

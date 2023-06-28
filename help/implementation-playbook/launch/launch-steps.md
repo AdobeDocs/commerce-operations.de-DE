@@ -1,13 +1,14 @@
 ---
 title: Launch-Schritte
-description: Verwenden Sie unsere Checkliste für den Start, um eine reibungslose Implementierung der Commerce-Site zu gewährleisten.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Verwenden Sie unsere Checkliste für den Start, um eine reibungslose Implementierung der Adobe Commerce-Site sicherzustellen.
+exl-id: d7807b2f-85c0-4e3e-a473-c65dbec44d28
+feature: Configuration, Deploy
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
 
 ---
-
 
 # Launch-Schritte
 
@@ -27,6 +28,6 @@ Die Mitarbeiter des Adobe Commerce-Supports arbeiten während des gesamten Proze
    - Überprüfen aller integrierten Drittanbieterdienste
    - Überprüfen aller Drittanbietersysteme
 
-- Kontaktieren Sie die Adobe Commerce-Hotline, falls Probleme die Live-Schaltung blockieren.
+- Wenden Sie sich an die Adobe Commerce-Hotline, falls Probleme die Live-Schaltung blockieren.
 
 ![Abbildung der Phase 3 des Startvorgangs](../../assets/playbooks/launch-steps-3.svg)

@@ -2,7 +2,8 @@
 title: Verantwortung und Eigentum
 description: Definieren Sie Projektrollen und Zuständigkeiten, um eine erfolgreiche Implementierung der Adobe Commerce sicherzustellen.
 exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%

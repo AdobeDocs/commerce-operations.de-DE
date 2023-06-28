@@ -1,17 +1,18 @@
 ---
 title: Lieferziele
 description: Erfahren Sie mehr über die verschiedenen Lieferziele, die mit einer Adobe Commerce-Implementierung verbunden sind.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-
 # Lieferziele
 
-Der Erkennungsvorgang identifiziert spezifische Adobe Commerce-Implementierungen. Weitere Informationen finden Sie in den folgenden Abschnitten.
+Der Erkennungsvorgang identifiziert spezifische Adobe Commerce-Implementierungs-Lieferziele. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 ## Geschäftsanforderungen
 
@@ -31,7 +32,7 @@ Ein Dokument zur Datenzuordnung umfasst Kategorien, Produkte, Empfehlungen, Prei
 
 ## Flussdiagramm
 
-Zeigt die Benutzerflüsse für kritische und/oder eindeutige Prozesse an, insbesondere bei der Anpassung an das standardmäßige Commerce-Verhalten von Adoben.
+Zeigt die Benutzerflüsse für kritische und/oder eindeutige Prozesse an, insbesondere bei der Anpassung an das Standardverhalten von Adobe Commerce.
 
 ## Umfang und Anbieter
 
@@ -43,4 +44,4 @@ Eine Übersicht über die bestehenden Produkte, Preise und Bestandsdaten eines U
 
 ## Projektplan
 
-In einem Projektplan werden die allgemeinen Aufgaben und Zeitpläne im Zusammenhang mit der Implementierungsinitiative beschrieben, einschließlich überlappender Integrationen und Drittanbieterabhängigkeiten. Der Plan kann auch eine Aufgabenmatrix oder ein Diagramm [RACI](../planning/ownership.md) enthalten, aus dem hervorgeht, wer verantwortlich, verantwortlich, konsultiert und informiert ist.
+In einem Projektplan werden die allgemeinen Aufgaben und Zeitpläne im Zusammenhang mit der Implementierungsinitiative beschrieben, einschließlich überlappender Integrationen und Drittanbieterabhängigkeiten. Der Plan kann auch eine Aufgabenmatrix umfassen oder [RACI](../planning/ownership.md), ein Diagramm, das zeigt, wer verantwortlich, rechenschaftspflichtig, konsultiert und informiert ist.

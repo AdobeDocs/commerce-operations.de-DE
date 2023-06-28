@@ -3,14 +3,13 @@ title: Best Practices für die Partnereskalation
 description: Erfahren Sie, wie Sie sich auf die Eskalation eines Partnerproblems mit einem Adobe Adobe Account Team vorbereiten oder wie Sie eine Eskalation vermeiden können.
 role: User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 10d65d3453e260e105c1e90acbdfe678ca15c4e3
+exl-id: 9ead032b-93f5-4327-9f01-5320270025ce
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Partnereskalation
 

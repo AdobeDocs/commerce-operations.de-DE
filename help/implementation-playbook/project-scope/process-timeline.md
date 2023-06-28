@@ -2,7 +2,8 @@
 title: Implementierungsprozess und Timeline
 description: Beispiele für typische Zeitpläne und Zeitleistenaktivitäten der Adobe Commerce-Implementierung.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

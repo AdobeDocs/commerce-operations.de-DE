@@ -1,17 +1,18 @@
 ---
 title: Schlüsselakteure
 description: Überprüfen Sie die wichtigsten Projektbeteiligten, die an einer Adobe Commerce-Implementierung beteiligt sind und für die verschiedene Projektaspekte verantwortlich sind.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
 # Wichtige Interessengruppen
 
-Viele Unternehmen haben 2021 erkannt, dass eine &quot;pandemische Absicherung&quot;direkt mit der digitalen Stärke einer Organisation zusammenhängt. Auf der Grundlage von Forrester-Daten stellte[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)fest, dass der E-Commerce in nur drei Monaten ein Wachstum von 10 Jahren verzeichnete, wobei das Wachstum durch die Notwendigkeit angetrieben wurde, eine digitale Verbindung mit den Kunden herzustellen, während Ziegeltüren verschlossen waren.
+Viele Unternehmen haben 2021 erkannt, dass eine &quot;pandemische Absicherung&quot;direkt mit der digitalen Stärke einer Organisation zusammenhängt. Basierend auf Forrester-Daten,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)festgestellt hat, dass der E-Commerce in nur drei Monaten ein Wachstum von zehn Jahren verzeichnete, wobei das Wachstum durch die Notwendigkeit angetrieben wurde, eine digitale Verbindung mit den Kunden herzustellen, während Ziegeltüren verschlossen waren.
 
 Wenn die Entscheidung getroffen wird, in eine Commerce-Transformation zu investieren, ist einer der wichtigsten Schritte die Bestimmung, wer von der Organisation an dem Prozess beteiligt ist. Für kleinere Unternehmen ist das E-Commerce- oder Digital-Team manchmal nur eine Handvoll Menschen, sodass das gesamte Team die Aufgabe übernimmt. Für größere Unternehmen besteht jedoch ein Ansatz darin, diese in drei verschiedene Bereiche zu unterteilen, darunter:
 
@@ -31,7 +32,7 @@ Dies ist die Person oder das Team in der Organisation, die bzw. das die aktuelle
 
 ## Wem gehört die Technologie?
 
-Die meisten Commerce-Implementierungen erfordern mehrere verschiedene Plattformen, um vor und zurück zu kommunizieren und vollständig zu integrieren, z. B. ein Bestellverwaltungssystem, eine Kundendienstplattform oder ein ERP-System. Back-Office-Systeme, die auf eine Commerce-Transformation vorbereitet sind, bestimmen häufig den Zeitplan für eine Implementierung. Daher ist es unerlässlich, von Anfang an Kontakte von dem IT-Team eines Unternehmens zu haben, um die Initiative zu unterstützen. Diese Gruppe umfasst häufig:
+Die meisten Commerce-Implementierungen erfordern mehrere verschiedene Plattformen, um vor und zurück zu kommunizieren und vollständig zu integrieren, z. B. ein Bestellverwaltungssystem, eine Kundendienstplattform oder ein ERP-System. Back-Office-Systeme, die auf eine Commerce-Transformation vorbereitet sind, bestimmen häufig den Zeitplan für eine Implementierung. Daher ist es unerlässlich, von Anfang an Kontakte vom IT-Team eines Unternehmens zu haben, um die Initiative zu unterstützen. Diese Gruppe umfasst häufig:
 
 - IT Systems Manager, CTO und internes Technikteam
 - ERP-Ingenieur (oder Back-Office)

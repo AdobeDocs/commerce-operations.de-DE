@@ -2,7 +2,8 @@
 title: Adobe Managed Services
 description: Erfahren Sie, wie Adobe Managed Services bei der Unterstützung und Wartung Ihrer Adobe Commerce-Implementierung helfen kann.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
-source-git-commit: 2affc555c2e719d0f8b8de06df3a8c080effb425
+feature: Services
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -371,7 +372,7 @@ Adobe bietet eine Reihe von Diensten rund um die Bereitstellung, Entwicklung, St
 
 Der Adobe Security Stack für Managed Services baut Sicherheit in auf allen Ebenen mithilfe von Automatisierung und Konsistenz auf, um menschliche Fehler zu reduzieren. Entwicklungs- und Betriebsteams übernehmen automatisch Sicherheitskontrollen von verschiedenen Ebenen des Stapels.
 
-Plattformpartner wie Amazon Web Services und Microsoft Azure stellen bei der Anwendung von Plattformanpassungen eine maximale Sicherheitsabdeckung sicher, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Scannen und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Siehe [Adobe Commerce-Sicherheit](https://business.adobe.com/products/magento/secure-ecommerce.html) für weitere Informationen.
+Plattformpartner wie Amazon Web Services und Microsoft Azure stellen bei der Anwendung von Plattformanpassungen eine maximale Sicherheitsabdeckung sicher, während das Managed Services-Team der Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Scannen und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Siehe [Adobe Commerce-Sicherheit](https://business.adobe.com/products/magento/secure-ecommerce.html) für weitere Informationen.
 
 Das folgende Diagramm zeigt den Stapel der Sicherheitstechnologie von Adobe Managed Services:
 

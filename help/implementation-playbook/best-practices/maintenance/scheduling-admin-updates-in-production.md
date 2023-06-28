@@ -3,14 +3,13 @@ title: Planen von Admin-Aktualisierungen auf Produktions-Sites
 description: Erfahren Sie mehr über Best Practices für die Planung kritischer Aktualisierungen an Adobe Commerce, um zu verhindern, dass die Leistung verlangsamt wird und Ausfälle auftreten.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Planung von Admin-Aktualisierungen auf Produktions-Sites
 
@@ -36,4 +35,3 @@ Kritische Aktionen führen zu Cache-Invalidierungs- und Neuindizierungsvorgänge
 - [Privater Inhalt: Invalidierung privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-Empfehlungen: Caches](../../../performance/hardware.md#caches)
 - [Erweitertes Setup: Einrichten von Redis](../../../performance/advanced-setup.md#set-up-redis)
-
