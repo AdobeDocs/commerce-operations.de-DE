@@ -1,13 +1,14 @@
 ---
-title: "Die [!DNL Infra] tab"
+title: Die [!DNL Infra] tab
 description: Die [!DNL Infra] -Registerkarte isoliert Probleme und Ursachen von Infrastrukturproblemen.
-source-git-commit: 5e4ab9e62f395b0967c3a632659c70a22770e9db
+exl-id: 45f24177-3264-4848-99bc-951be32c1f7b
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # Die [!DNL Infra] tab
 

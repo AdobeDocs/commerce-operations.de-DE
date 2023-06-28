@@ -1,13 +1,14 @@
 ---
 title: Promotions
 description: Erstellen Sie eine Marketingstrategie, um Ihre Produkte für Ihre Kunden zu bewerben.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
+feature: Best Practices, Promotions/Events
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
-
 
 # Promotions
 

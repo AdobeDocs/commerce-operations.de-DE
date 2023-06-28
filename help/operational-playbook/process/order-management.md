@@ -1,18 +1,18 @@
 ---
 title: Auftragsverwaltung
 description: Erfahren Sie, wie ein Bestellmanagement-System für Ihr E-Commerce-Geschäft von entscheidender Bedeutung ist.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 62edc895-d725-4252-9a43-e03427579444
+feature: Best Practices, Orders, Shipping/Delivery
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Auftragsverwaltung
 
-Für brandneue Unternehmen sind die Bestellmengen niedrig und es ist einfacher,
-Bestellungen zu geringeren Kosten abzuschließen. Wenn jedoch die Nachfrage steigt und es schwierig wird, Bestellungen mit einem kleinen Team oder von Ihnen selbst zu geringeren Kosten zu bearbeiten. Je nach Art des Unternehmens benötigen Sie möglicherweise eine größere Anlage, z. B. ein Lager oder mehr als ein Lager, was kostspielig sein kann und mehr Personal erfordert. Hier kommt die Auftragsverwaltung ins Spiel.
+Für brandneue Unternehmen sind die Bestellmengen niedrig und es ist einfacher, Bestellungen zu geringeren Kosten abzuschließen. Wenn jedoch die Nachfrage steigt und es schwierig wird, Bestellungen mit einem kleinen Team oder von Ihnen selbst zu geringeren Kosten zu bearbeiten. Je nach Art des Unternehmens benötigen Sie möglicherweise eine größere Anlage, z. B. ein Lager oder mehr als ein Lager, was kostspielig sein kann und mehr Personal erfordert. Hier kommt die Auftragsverwaltung ins Spiel.
 
 Das Auftragsmanagement hilft bei der Erfüllung der sich ändernden betrieblichen Anforderungen für das Management von Nachfrage, Inventar, Verpackung und Versand. Die Integration eines Auftragsverwaltungssystems in die Plattform kann Unternehmen dabei unterstützen, die sich ändernden Anforderungen zu erfüllen und die Kundenzufriedenheit, Kundenbindung, höhere Konversionsraten und Markentreue zu steigern. All diese Faktoren wirken sich direkt und indirekt auf die Performance und das Umsatzwachstum Ihres Unternehmens aus.
 

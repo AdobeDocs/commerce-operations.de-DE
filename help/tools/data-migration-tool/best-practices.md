@@ -1,13 +1,15 @@
 ---
 title: Best Practices für die Datenmigration
 description: Befolgen Sie diese Best Practices für die Datenmigration, um eine erfolgreiche Aktualisierung von Magento 1 auf Magento 2 sicherzustellen.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
+feature: Best Practices, Configuration
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Datenmigration
 
@@ -23,9 +25,9 @@ Zu diesen Daten können Protokolle, Bestellangebote, kürzlich aufgerufene oder 
 
 * So steigern Sie die Leistung: **aktivieren Sie die `direct_document_copy` option** in `config.xml` Datei:
 
-   ```xml
-   <direct_document_copy>1</direct_document_copy>
-   ```
+  ```xml
+  <direct_document_copy>1</direct_document_copy>
+  ```
 
 >[!NOTE]
 >

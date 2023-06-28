@@ -1,13 +1,14 @@
 ---
 title: Datenmigrationseinstellungen
 description: Erfahren Sie, wie Sie mit der Migration der Einstellungen von Magento 1 zu Magento 2 beginnen. [!DNL Data Migration Tool].
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
-
 
 # Datenmigrationseinstellungen
 

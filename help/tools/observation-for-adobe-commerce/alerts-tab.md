@@ -1,7 +1,9 @@
 ---
-title: '"Die [!UICONTROL Alerts] tab"'
+title: Die [!UICONTROL Alerts] tab
 description: Erfahren Sie mehr über die [!UICONTROL Alerts] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 2a82a5e232de3efa3adb76aee2334e198b929947
+exl-id: e9305576-6ed2-48f3-baec-36e081b0d04b
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -35,4 +37,3 @@ Die **[!UICONTROL Critical Alert Details]** frame zeigt die Anzahl der Details d
 ![Hinweise zur Infrastruktur](../../assets/tools/observation-for-adobe-commerce/alerts-tab-4.jpg)
 
 Die **[!UICONTROL Infrastructure Alert Details]** frame zeigt Anwendungen, Hosts und andere Infrastrukturereignisse über den ausgewählten Zeitraum an.
-

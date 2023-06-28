@@ -1,13 +1,14 @@
 ---
 title: Schritte zur Migration nach der Datenmigration
 description: Erfahren Sie, welche Schritte nach der Verwendung des [!DNL Data Migration Tool] , um Daten aus Magento 1 in Magento 2 zu migrieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 0%
 
 ---
-
 
 # Schritte zur Migration nach der Datenmigration
 

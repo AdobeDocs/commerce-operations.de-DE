@@ -1,13 +1,14 @@
 ---
 title: Auftragsverwaltungssysteme
 description: Vervollständigen Sie Ihr E-Commerce-Projekt mit einem System für Verpackung, Versand und Rückgabe.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2a5f19fa-e8fe-452b-9ab6-65428dda691d
+feature: Best Practices, Orders
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
 
 ---
-
 
 # Order Management System (OMS)
 
@@ -19,13 +20,13 @@ Eine OMS ermöglicht die Integration und Automatisierung über die Journey des K
 
 Eine OMS ist für eine E-Commerce-Site wichtig, da sie Marken zum Wachstum verhilft. Kunden haben hohe Erwartungen, sodass kein Raum für Fehler bleibt. Einige der Gründe, warum eine OMS wichtig ist, sind:
 
-- **Schnellere Auslieferung** - In einer Zeit des nächsten Tages oder des 2-tägigen Versands müssen Unternehmen nach Wegen suchen, um ihre Bestellungen schneller abzuwickeln, da das Fenster zum Abschließen von Bestellungen immer enger wird. Ein OMS wird sofort benachrichtigt, wenn eine Bestellung aufgegeben wird, und das OMS kann das nächstgelegene Warehouse zum Bestellziel auswählen, um den Versand zu beschleunigen. Die OMS sendet automatisierte Bestellinformationen an das Lagerteam, um die Bestellung mithilfe einer kostengünstigen Versandmethode vorzubereiten und zu verpacken.
+- **Schnellere Bereitstellung**- In einer Zeit des nächsten Tages oder des 2-tägigen Versands müssen Unternehmen nach Wegen suchen, um ihre Bestellungen schneller abzuwickeln, da das Zeitfenster für die Auftragsabwicklung immer enger wird. Ein OMS wird sofort benachrichtigt, wenn eine Bestellung aufgegeben wird, und das OMS kann das nächstgelegene Warehouse zum Bestellziel auswählen, um den Versand zu beschleunigen. Die OMS sendet automatisierte Bestellinformationen an das Lagerteam, um die Bestellung mithilfe einer kostengünstigen Versandmethode vorzubereiten und zu verpacken.
 
 - **Eingeschränkte Fehler**: Ein OMS hilft, menschliche Fehler zu reduzieren. Diese Fehler können zeitaufwendig und teuer sein. Ein OMS benachrichtigt das Team, wenn die Lagerbestände niedrig sind, ein Produkt nicht verkauft wird oder welches Produkt die höchste Rendite aufweist. Dies hilft dem Unternehmen, Versandfehler zu korrigieren und den Grund für die Rückgabe zu analysieren.
 
-- **Erhöhte Skalierbarkeit** - Im Gegensatz zu älteren manuellen Systemen wird eine OMS entsprechend den Anforderungen des Unternehmens skaliert. OMS-Software gibt Unternehmen die Möglichkeit, mit dem Markt zu skalieren.
+- **Erhöhte Skalierbarkeit**—Eine OMS skaliert entsprechend den Anforderungen des Unternehmens, im Gegensatz zu älteren manuellen Systemen. OMS-Software gibt Unternehmen die Möglichkeit, mit dem Markt zu skalieren.
 
-- **Mehr kanalübergreifende Möglichkeiten**: In einer Zeit, in der mehrere Kanäle über Websites, Marketplace oder Partnerschaften (Facebook und Instagram) hinweg verkauft werden, können Tracking-Bestellungen komplex sein, da sie mithilfe einer oder mehrerer Versandmethoden an mehrere Standorte versandt werden. Eine OMS bringt sie zusammen und steigert das Kundenerlebnis.
+- **Mehr Möglichkeiten für mehrere Kanäle**—In einer Zeit, in der mehrere Kanäle über Websites, Marketplace oder Partnerschaften (Facebook und Instagram) hinweg verkauft werden, können Tracking-Bestellungen komplex sein, da sie mithilfe einer oder mehrerer Versandmethoden an mehrere Standorte versandt werden. Eine OMS bringt sie zusammen und steigert das Kundenerlebnis.
 
 ## Wichtigste Funktionen
 

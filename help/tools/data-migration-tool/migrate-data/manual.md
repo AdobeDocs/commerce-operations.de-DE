@@ -1,13 +1,14 @@
 ---
 title: Daten, die eine manuelle Migration erfordern
 description: Erfahren Sie mehr über Daten, die bei der Datenmigration aus dem Magento 1 nach Magento 2 manuell migriert werden müssen, und wie Sie dies durchführen können.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
 
 ---
-
 
 # Daten, die eine manuelle Migration erfordern
 

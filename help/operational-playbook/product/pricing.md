@@ -1,13 +1,14 @@
 ---
 title: Preise
 description: Erfahren Sie mehr über verschiedene elektronische Zahlungsmethoden und die Vorteile von Online-Zahlungen im Allgemeinen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: d2dd1a6d-0a75-433e-88cd-74bffcc47594
+feature: Best Practices, Payments
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Preise
 

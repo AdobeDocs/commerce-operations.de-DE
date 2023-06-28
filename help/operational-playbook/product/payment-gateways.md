@@ -1,13 +1,14 @@
 ---
 title: ZahlungsGateways
 description: Wählen Sie je nach den Anforderungen Ihres Unternehmens einen Payment Gateway Provider für Ihr E-Commerce-Projekt aus.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: eab50191-0744-41da-99ba-2e06ea61da27
+feature: Best Practices, Payments
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # ZahlungsGateways
 
@@ -36,14 +37,13 @@ Es gibt einige Einschränkungen bei ZahlungsGateways, die Sie kennen müssen, da
 - Einige Zahlungsoptionen stehen internationalen Käufern möglicherweise nicht zur Verfügung.
 - Sicherheitslücken im Payment Gateway. Kunden zögern aus Sicherheitsgründen, Online-Bestellungen zu tätigen.
 
-Wenn ein Unternehmen beschließt, ein Payment Gateway mit seiner Plattform zu integrieren, ist es immer besser zu sehen, wie es in der Storefront erscheint, welche Erlebnisse es den Kunden bietet und ob es benutzerfreundlich ist. Stellen Sie außerdem sicher, dass die Sicherheit der Zahlung nicht beeinträchtigt werden kann. Ein gutes, sicheres funktionierendes Zahlungsportal bietet ein besseres Kundenerlebnis.
+Wenn ein Unternehmen beschließt, ein Payment Gateway mit seiner Plattform zu integrieren, ist es immer besser zu sehen, wie es auf der Storefront erscheint, welche Erlebnisse es den Kunden bietet und ob es benutzerfreundlich ist. Stellen Sie außerdem sicher, dass die Sicherheit der Zahlung nicht beeinträchtigt werden kann. Ein gutes, sicheres funktionierendes Zahlungsportal bietet ein besseres Kundenerlebnis.
 
 ## Überlegungen zu B2B und B2C
 
 B2B- und B2C-Unternehmen verfügen über ähnliche Zahlungssysteme, aber B2B-Unternehmen verfügen über mehr Vorschriften, Vorschriften und Prozesse. B2B-Unternehmen vertreiben im Vergleich zu B2C-Unternehmen in der Regel größere Mengen.
 
-B2C-Kunden kaufen Produkte oder Dienstleistungen für den individuellen Gebrauch. Kunden zahlen in der Regel den gleichen Preis wie andere Kunden und es gibt keine Verhandlungen. B2B-Kunden umfassen verschiedene
-Interessengruppen, wodurch die Genehmigung komplexer und teurer wird.
+B2C-Kunden kaufen Produkte oder Dienstleistungen für den individuellen Gebrauch. Kunden zahlen in der Regel den gleichen Preis wie andere Kunden und es gibt keine Verhandlungen. B2B-Kunden umfassen verschiedene Interessengruppen, was die Genehmigung komplexer und teurer macht.
 
 B2B-Kunden haben unterschiedliche Bestellungen und Anforderungen, die vom Vertriebsmitarbeiter oder einem Vertriebsmitarbeiter bearbeitet und genehmigt werden müssen, müssen einbezogen werden, wenn ein Kunde online über eine Anfrage zur Einreichung von Vorschlägen (RFP) oder einen Bestellauftrag (PO) einkauft.
 

@@ -2,7 +2,8 @@
 title: Nutzung
 description: Erfahren Sie, wie Sie die [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
-source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
+feature: Configuration, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 0%

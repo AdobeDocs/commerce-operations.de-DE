@@ -1,7 +1,9 @@
 ---
-title: "Die [!UICONTROL MySQL] tab"
+title: Die [!UICONTROL MySQL] tab
 description: Erfahren Sie mehr über die [!UICONTROL MySQL] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 8c9753fe5b9038978859cc101d53f897267ecfe9
+exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2030'
 ht-degree: 0%
@@ -76,7 +78,7 @@ Die **[!UICONTROL Galera Log by Host]** frame ist mit dem **[!UICONTROL Galera l
 
 ![Datenbankleistung](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-Die **[!UICONTROL Database performance]** frame zeigt die Datenbankleistung bei bestimmten Anforderungen an. Sie können jede Metrik sehen, indem Sie in den farbigen Symbolen unter dem Diagramm auf sie klicken. Viele der Metriken, die in [Überwachen der Leistung der MySQL-Datenbank mit neuem Relic](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) in diesem Frame gefunden werden.
+Die **[!UICONTROL Database performance]** frame zeigt die Datenbankleistung bei bestimmten Anforderungen an. Sie können jede Metrik sehen, indem Sie in den farbigen Symbolen unter dem Diagramm auf sie klicken. Viele der Metriken, die in [Überwachen der Leistung der MySQL-Datenbank mit New Relic](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) in diesem Frame gefunden werden.
 
 * average(query.queriesPerSecond)
 * average(query.slowQueriesPerSecond)
@@ -280,4 +282,3 @@ Die **[!UICONTROL MySQL mem used by node]** frame zeigt die Knotennutzung des Sp
 ![Datenbank mysql-slow.log](../../assets/tools/observation-for-adobe-commerce/mysql-tab-24.jpg)
 
 Die **[!UICONTROL Database mysql-slow.log]** frame zeigt die Typen der Abfrageanweisungen an, die sich im `mysql-slow.log` -Datei über den ausgewählten Zeitrahmen hinweg.
-

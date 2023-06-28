@@ -1,9 +1,11 @@
 ---
-title: "Die [!UICONTROL focus] tabs"
+title: Auswählen der [!UICONTROL focus] Tabs
 description: Erfahren Sie, wie Sie die [!UICONTROL focus] Registerkarten, um Bereiche zu beobachten, die Probleme verursachen.
-source-git-commit: bcb0746f3428a29a6ef03ca2dcf29347fa1b7dbd
+exl-id: 6c0a7d81-09cf-49ce-888a-9ecaaad2b7ae
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---

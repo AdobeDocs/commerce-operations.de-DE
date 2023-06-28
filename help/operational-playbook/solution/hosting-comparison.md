@@ -1,13 +1,14 @@
 ---
 title: Vergleich von Commerce-Hosting
 description: Treffen Sie die beste Entscheidung über das Hosting für Ihr E-Commerce-Projekt, indem Sie sich diese Vergleichstabelle ansehen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
+feature: Best Practices, Cloud, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
 
 ---
-
 
 # Cloud vs. lokal
 
@@ -106,7 +107,7 @@ In der folgenden Tabelle werden die Vor- und Nachteile von Cloud- gegenüber lok
         <tr>
             <td>IT-Support</td>
             <td>Infrastruktur- und Anwendungs-Know-how ist jederzeit verfügbar</td>
-            <td>Speziell bei Anwendungen, die auf die individuellen Anforderungen eines Unternehmens zugeschnitten sind, ist ein spezielles IT-Team erforderlich.</td>
+            <td>Ein spezielles IT-Team ist notwendig, insbesondere wenn Anwendungen auf die individuellen Anforderungen eines Unternehmens zugeschnitten sind.</td>
             <td>Die Vorsicht bei der Größenanpassung aufgrund von Cloud-Implementierungen bedeutet, dass die IT-Unterstützung mit weniger Zeit und Aufwand mehr verwalten kann.</td>
             <td>Die Lernkurve für Cloud ist bedeutend und angemessen geschultes Personal ist teuer</td>
         </tr>

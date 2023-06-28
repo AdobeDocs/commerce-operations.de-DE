@@ -1,13 +1,14 @@
 ---
 title: Inhaltsstrategie
 description: Nutzen Sie Ihre Inhalte, um ansprechende Kampagnen zu erstellen, die Ihre Kunden ansprechen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
+feature: Best Practices, Page Content
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Inhaltsstrategie
 
@@ -37,10 +38,10 @@ Unabhängig davon, ob Sie grundlegende Webinhalte oder Inhalte verwalten, die in
 
 Adobe Experience Manager kombiniert eine Reihe von Funktionen auf Infrastruktur- und Anwendungsebene in einem einzigen integrierten Paket. Die Angebotsinhalte:
 
-- **Sites** - Erstellen und liefern Sie schnell relevante Websites und mobile Apps und aktualisieren Sie den Inhalt jederzeit, ohne die IT-Abteilung zu belasten.
-- **Assets** - Einfaches Verwalten von Bildern, Videos und anderen Assets in allen digitalen Kanälen, um personalisierte Kundenerlebnisse bereitzustellen.
-- **Communities** - Erstellen Sie blühende Gemeinschaften und binden Sie Unterhaltungen über all Ihre sozialen Eigenschaften hinweg ein, damit Sie neue Lernstufen und Kundentreue inspirieren können.
-- **Forms**: Integrieren Sie Formulare auf Unternehmensebene in Ihre Websites und mobilen Erlebnisse und vereinfachen Sie die Erstellung von Formularen und den Abschluss von Transaktionen.
-- **Apps** - Erstellen und liefern Sie mobile Apps mit einer Lösung, die die Lücke zwischen Marketingexperten und IT schließt, sodass Marketing-Experten Inhalte einfach (auch nach dem Start) aktualisieren können.
+- **Sites**—Erstellen und liefern Sie schnell relevante Websites und mobile Apps und aktualisieren Sie den Inhalt jederzeit, ohne die IT-Abteilung zu belasten.
+- **Assets**- Einfaches Verwalten von Bildern, Videos und anderen Assets in allen digitalen Kanälen, um personalisierte Kundenerlebnisse bereitzustellen.
+- **Communities**—Erstellen Sie blühende Communities und interaktive Unterhaltungen in all Ihren sozialen Eigenschaften, damit Sie neue Lernstufen und Kundentreue inspirieren können.
+- **Forms**—Integrieren Sie Formulare auf Unternehmensebene in Ihre Websites und mobilen Erlebnisse und vereinfachen Sie die Erstellung von Formularen und den Abschluss von Transaktionen.
+- **Apps**- Erstellen und liefern Sie mobile Apps mit einer Lösung, die die Lücke zwischen Marketingexperten und IT schließt, damit Marketing-Experten Inhalte einfach aktualisieren können (auch nach dem Start).
 
 ![Framework-Diagramm für Inhaltsstrategie](../../assets/playbooks/content-strategy-framework2.png)

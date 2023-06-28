@@ -2,7 +2,8 @@
 title: Effektive Cacheplanung
 description: Informationen zum erfolgreichen Laden Ihrer Site finden Sie unter den empfohlenen Benchmarks für die Zwischenspeicherung .
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+feature: Integration, Cache
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%

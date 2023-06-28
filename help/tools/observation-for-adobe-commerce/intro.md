@@ -1,9 +1,11 @@
 ---
-title: "[!DNL Observation for Adobe Commerce]"
+title: '[!DNL Observation for Adobe Commerce]'
 description: Informationen zu [!DNL Observation for Adobe Commerce], verwendet, wann und wie der Zugriff erfolgt.
-source-git-commit: c40d78d37dc37b5ce38f61b46bcfb4d439a51ac2
+exl-id: a787be0f-5dd8-4acc-adbf-5cedd96b08d6
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---

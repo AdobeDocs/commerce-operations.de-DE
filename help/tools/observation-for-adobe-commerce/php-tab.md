@@ -1,13 +1,14 @@
 ---
-title: "Die [!UICONTROL PHP] tab"
+title: Die [!UICONTROL PHP] tab
 description: Erfahren Sie mehr über die [!UICONTROL PHP] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
+exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
 
 ---
-
 
 # Die [!UICONTROL PHP] tab
 

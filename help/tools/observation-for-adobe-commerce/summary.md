@@ -1,13 +1,14 @@
 ---
-title: "Die [!UICONTROL Summary] tab"
+title: Die [!UICONTROL Summary] tab
 description: Erfahren Sie mehr über die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
+exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
 
 ---
-
 
 # Die [!UICONTROL Summary] tab
 

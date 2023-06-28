@@ -1,13 +1,14 @@
 ---
 title: Commerce Platform-Dienste
 description: Überprüfen Sie die Vor- und Nachteile der Verwendung von PaaS-Lösungen für Ihre Hosting-Infrastruktur, um festzustellen, was für Ihr E-Commerce-Projekt richtig ist.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
+feature: Best Practices, Paas
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # Platform-as-a-Service (PageS)
 
@@ -17,9 +18,9 @@ PaaS wird als auf der Infrastruktur des Providers gehosteter Dienst bereitgestel
 
 PaaS funktioniert in privaten, öffentlichen und hybriden Clouds:
 
-- **Private Cloud** - PaaS wird aus Sicherheitsgründen in der Firewall des Kunden bereitgestellt, in der die Daten vor Ort gespeichert werden.
-- **Öffentliche Cloud** - Der Client steuert die Bereitstellungen und der Provider ist für alle anderen Komponenten wie Netzwerk und Betriebssystem verantwortlich.
-- **Hybrid-Cloud** - Hybrid kombiniert die Funktionen von privat und öffentlich, sodass der Client flexibel sein kann.
+- **Private Cloud**—PaaS wird aus Sicherheitsgründen innerhalb der Firewall des Kunden bereitgestellt, wo die Daten vor Ort gespeichert werden.
+- **Öffentliche Cloud**—Der Client hat die Kontrolle über die Bereitstellungen und der Provider ist für alle anderen Komponenten wie Netzwerk und Betriebssystem verantwortlich.
+- **Hybrid-Cloud**—Hybrid kombiniert die Funktionen von privat und öffentlich, sodass der Client flexibel sein kann.
 
 ## Vorteile
 
@@ -39,8 +40,7 @@ PaaS funktioniert in privaten, öffentlichen und hybriden Clouds:
 
 - Kann zu einer Sicherheitsbedrohung führen, da alles in der Cloud gespeichert ist
 - Abhängig vom Dienstleister
-- Wenn der Provider eine Ausfallzeit erfährt, wäre dies ein Problem für die
-client
+- Wenn der Provider eine Ausfallzeit erfährt, wäre dies ein Problem für den Client
 - Ermöglicht einfache und schnelle Aktualisierungen
 
 Wenn der Client PaaS in E-Commerce verwendet, muss er das System und die Betriebssystem-Software nicht verwalten. Dem Kunden steht eine Plattform zur Verfügung, mit der er seine E-Commerce-Site einrichten kann, auf der er Inhalte, Code-Daten und Produkte erstellt und konfiguriert. , die von der Administrationsseite der Dinge im Zusammenhang mit PaaS getrennt ist.

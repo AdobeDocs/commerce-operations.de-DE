@@ -2,8 +2,7 @@
 title: Erlebnisse skaliert bereitstellen
 description: Erfahren Sie, wie Sie mit Adobe Commerce und Adobe Experience Manager Erlebnisse bedarfsgerecht bereitstellen können.
 exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
-debug: true
-source-git-commit: 442bb3f2c448de2ed70a3033d399025cc39e8744
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -30,6 +29,6 @@ E-Commerce-Seiten wie Produktdetailseiten (PDPs) und Produktlistenseiten (PLPs) 
 
 ## Client-seitiges Rendering
 
-Wenn dynamischere Attribute wie Lagerbestände, Verfügbarkeit oder Preis angezeigt werden, z. B. auf Produktdetailseiten (Produktdetailseiten, PDPs), können clientseitige Komponenten verwendet werden. Während die Vorlagenseite mithilfe des oben beschriebenen serverseitigen Rendering-Ansatzes erstellt und im Dispatcher zwischengespeichert werden kann, kann es auf der statischen Seite selbst dynamische Client-seitige Webkomponenten geben. Diese dynamischen Komponenten können Daten direkt im Client-Browser über GraphQL-APIs aus Adobe Commerce abrufen, um z. B. den aktuellen Preis oder das Lagerbestand in Echtzeit auf der Produktdetailseite zu überprüfen. Dadurch wird sichergestellt, dass Inhalte, die normalerweise in Echtzeit angezeigt werden müssen, beim Laden der Seite immer abgerufen werden. Beispiele dafür finden Sie in den roten Feldern des obigen Beispiels.
+Wenn dynamischere Attribute wie Lagerbestände, Verfügbarkeit oder Preis angezeigt werden, z. B. auf Produktdetailseiten (Produktdetailseiten, PDPs), können clientseitige Komponenten verwendet werden. Während die Vorlagenseite mithilfe des oben beschriebenen serverseitigen Rendering-Ansatzes erstellt und im Dispatcher zwischengespeichert werden kann, kann es auf der statischen Seite selbst dynamische Client-seitige Webkomponenten geben. Diese dynamischen Komponenten können Daten direkt im Client-Browser über GraphQL-APIs aus Adobe Commerce abrufen, um beispielsweise den aktuellen Preis oder das Lagerbestand in Echtzeit auf der Produktdetailseite zu überprüfen. Dadurch wird sichergestellt, dass Inhalte, die normalerweise in Echtzeit angezeigt werden müssen, beim Laden der Seite immer abgerufen werden. Beispiele dafür finden Sie in den roten Feldern des obigen Beispiels.
 
 Während des Checkout-Prozesses kann auch eine Kombination aus AEM Vorlagen und Client-seitigem Rendering verwendet werden: Client-seitige Warenkorbkomponenten rendern den Warenkorb, das Kassenformular und die Integration mit dem Zahlungsdienstleister. Dieser Hybridansatz kann auch für die Kontoverwaltungsfunktionen von Adobe Commerce verwendet werden, z. B. zum Erstellen von Konten, zum Anmelden von Konten und für vergessene Passwörter.

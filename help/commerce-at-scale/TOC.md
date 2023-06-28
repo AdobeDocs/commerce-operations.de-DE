@@ -1,15 +1,16 @@
 ---
-user-guide-title: Bereitstellung von Commerce-Erlebnissen in großem Maßstab
-user-guide-description: Erfahren Sie, wie Sie unter Verwendung von Adobe Commerce mit Adobe Experience Manager Erlebnisse in großem Maßstab bereitstellen können.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+user-guide-title: Bereitstellung von Commerce-Erlebnissen im Maßstab
+user-guide-description: Erfahren Sie, wie Sie mit Adobe Commerce mit Adobe Experience Manager Erlebnisse bedarfsgerecht bereitstellen können.
+feature: Integration
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '51'
-ht-degree: 47%
+ht-degree: 0%
 
 ---
 
 
-# Bereitstellung von Commerce-Erlebnissen in großem Maßstab {#deliver-commerce-at-scale}
+# Bereitstellung von Commerce-Erlebnissen im Maßstab {#deliver-commerce-at-scale}
 
 - [Übersicht](overview.md)
 - [Planen effektiver Zwischenspeicherung](caching.md)

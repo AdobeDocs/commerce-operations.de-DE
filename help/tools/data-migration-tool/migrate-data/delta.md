@@ -1,13 +1,14 @@
 ---
 title: Migrieren von Änderungen
 description: Erfahren Sie, wie Sie nur Daten migrieren, die sich seit der Datenmigration aus dem letzten Magento 1 geändert haben, mit der [!DNL Data Migration Tool].
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # Migrieren von Änderungen
 

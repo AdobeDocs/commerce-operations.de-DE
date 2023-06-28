@@ -1,18 +1,18 @@
 ---
 title: Hosting von On-Premises in Commerce
 description: Cloud-basierte Hosting-Lösungen sind sehr beliebt, doch das Hosting vor Ort kann für Ihr E-Commerce-Projekt sinnvoll sein.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
+feature: Best Practices, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-
 # Hosting vor Ort
 
-Cloud-basierte Hosting-Lösungen sind äußerst beliebt und dienen mit Sicherheit als
-Eine wichtige Rolle in vielen Organisationen spielt jedoch weiterhin eine geeignete Infrastruktur für einige Organisationen und Händler.
+Cloud-basierte Hosting-Lösungen sind äußerst beliebt und spielen in vielen Unternehmen eine wichtige Rolle. Vor Ort jedoch ist die Infrastruktur für einige Organisationen und Händler noch immer eine geeignete Option.
 
 Vor der Auswahl des Hosting vor Ort müssen Sie mehrere Faktoren berücksichtigen, darunter erhebliche Sunkkosten, ein leicht verfügbarer Pool an kompetenter/kosteneffektiver IT-Kompetenz und die Tatsache, dass On-Premise-Anwendungen häufig leichter auf die Bedürfnisse einer Organisation zugeschnitten und an diese angepasst werden können.
 

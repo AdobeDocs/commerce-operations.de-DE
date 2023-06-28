@@ -1,7 +1,9 @@
 ---
 title: "Beginnen Sie mit: Konto und Zeitrahmen auswählen"
 description: Erfahren Sie, wie Sie mit der Verwendung des [!DNL Observation for Adobe Commerce] durch Auswahl des Kontos und Zeitrahmens.
-source-git-commit: 86e990e18955cce8ed0917c72ddbe99d8cb3f333
+exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%

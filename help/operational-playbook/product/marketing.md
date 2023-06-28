@@ -1,13 +1,14 @@
 ---
 title: Marketing
 description: Fördern Sie Ihre Produkte und gewinnen Sie Kunden durch E-Commerce-Marketingkampagnen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
+feature: Best Practices, Promotions/Events
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
-
 
 # E-Mail-Marketing
 

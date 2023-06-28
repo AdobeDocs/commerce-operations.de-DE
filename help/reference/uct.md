@@ -3,7 +3,8 @@ title: bin/uct (Upgrade-Kompatibilitätstool)
 description: Erfahren Sie mehr über alle verfügbaren Befehle, Argumente und Optionen für das Befehlszeilen-Tool bin/uct .
 mini-toc-levels: 1
 exl-id: ce59da80-db74-4700-a116-21671d430cf2
-source-git-commit: 9c0810f21f72c5e50db22e13e29b5b7fc4db2946
+recommendations: noDisplay, noCatalog
+source-git-commit: 3b8b9d88e72722e5c72ab94f7d3e61b78a2cb136
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 0%

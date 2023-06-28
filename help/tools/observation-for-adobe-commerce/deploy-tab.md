@@ -1,7 +1,9 @@
 ---
-title: "Die [!UICONTROL Deploy] tab"
+title: Die [!UICONTROL Deploy] tab
 description: Erfahren Sie mehr über die [!UICONTROL Deploy] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 27ebd472dc4e81e58b36bf5fac529461beae4be1
+exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
@@ -158,4 +160,3 @@ Die **[!UICONTROL Count of modules imported during deploy]** frame zeigt die Anz
 ![Liste bereitgestellter Module](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
 Die **[!UICONTROL Deployed module list]** frame zeigt bereitgestellte Module über den ausgewählten Zeitrahmen hinweg an.
-

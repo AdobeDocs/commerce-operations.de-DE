@@ -1,13 +1,14 @@
 ---
-title: Kampagnenverwaltung
+title: Campaign Management
 description: Strukturieren Sie Ihre E-Commerce-Kampagnen entsprechend Ihren Geschäftsanforderungen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
+feature: Best Practices, Promotions/Events
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
 
 ---
-
 
 # Kampagnenverwaltung
 
@@ -34,10 +35,10 @@ Das gesamte E-Commerce-Modell wird auf der Website festgelegt, was bedeutet, das
 
 Unterschiede zwischen B2B- und B2C-Kampagnenverwaltung:
 
-- **Beziehungen entwickeln** - B2B nutzt Kampagnenverwaltung, um langfristige Beziehungen zu knüpfen, während B2C das Kampagnenmanagement nutzt, um kurzfristige Beziehungen zu knüpfen.
+- **Beziehung entwickeln**—B2B nutzt Kampagnenverwaltung, um langfristige Beziehungen aufzubauen, während B2C das Kampagnenmanagement nutzt, um kurzfristige Beziehungen aufzubauen.
 
-- **Branding** - Das Management von B2B-Kampagnen konzentriert sich mehr auf die Generierung von Leads, während B2C sich auf den Markenwert konzentriert
+- **Branding**—Das Kampagnenmanagement von B2B konzentriert sich stärker auf die Erstellung von Leads, während B2C sich auf den Markenwert konzentriert.
 
-- **Entscheidungsfindung** - B2B-Kampagnenentscheidungen sind logisch, während B2C-Kampagnenentscheidungen emotional sind
+- **Entscheidungsfindung**—B2B-Kampagnenentscheidungen sind logisch, während B2C-Kampagnenentscheidungen emotional sind
 
-- **Zielgruppe** - Das Management von B2B-Kampagnen umfasst mehrere Interessengruppen, während das Management von B2C-Kampagnen auf einzelne Endbenutzer ausgerichtet ist
+- **Zielgruppe**—Das B2B-Kampagnenmanagement umfasst mehrere Stakeholder, während das B2C-Kampagnenmanagement auf einzelne Endbenutzer ausgerichtet ist.

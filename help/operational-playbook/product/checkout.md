@@ -1,13 +1,14 @@
 ---
 title: Checkout-Fluss und -Prozess
 description: Steigern Sie die Konversionsraten, indem Sie Ihren Kunden ein nahtloses Checkout-Erlebnis bieten.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
+feature: Best Practices, Checkout
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
 
 ---
-
 
 # Auschecken von Flüssen und Prozessen
 
@@ -68,7 +69,7 @@ Erzwingen Sie für den Benutzer nicht einen Optionstyp.
 
 Einzelhändler sollten unterschiedliche Versandmethoden anbieten, um den Bedürfnissen verschiedener Kunden gerecht zu werden.
 
-Neben den Zahlungsoptionen können Einzelhändler auch Optionen wie [Klicken und sammeln](click-collect.md) bereitstellen.
+Neben Zahlungsoptionen können Einzelhändler auch Optionen wie [Klicken und sammeln](click-collect.md).
 
 ## Zahlungsdetails
 

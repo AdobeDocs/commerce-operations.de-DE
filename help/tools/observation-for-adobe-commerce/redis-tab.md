@@ -1,7 +1,9 @@
 ---
-title: "Die [!UICONTROL Redis] tab"
+title: Die [!UICONTROL Redis] tab
 description: Erfahren Sie mehr über die [!UICONTROL Redis] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: f4379d0b89a6ea6d2f2a5a02c505581d4d54708f
+exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%

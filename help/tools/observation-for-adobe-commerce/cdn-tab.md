@@ -1,7 +1,9 @@
 ---
-title: "Die [!UICONTROL CDN] tab"
+title: Die [!UICONTROL CDN] tab
 description: Erfahren Sie mehr über die [!UICONTROL CDN] Tab von [!DNL Observation for Adobe Commerce].
-source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
+exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 0%
