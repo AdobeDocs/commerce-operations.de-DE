@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 28358ee2ebadfcbf12c67e667cbbd27599a28a80
+source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
 workflow-type: tm+mt
-source-wordcount: '12912'
+source-wordcount: '13230'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.34 {#v1-1-34}
+
+* **ACSD-52277** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem ein Admin-Benutzer nicht ordnungsgemäß weitergeleitet wird, nachdem eine Store-Ansicht beim Erstellen einer neuen Bestellung in Admin ausgewählt wurde.
+* **ACSD-50813** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem Admin keine gebündelten Produkte hinzufügen konnte, die einen Schrägstrich in der SKU enthielten, mit der [!UICONTROL Add Products by SKU] -Funktion auf die Admin-Bestellung hinzu.
+* **ACSD-51630** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem eine große Anzahl von Systemnachrichten das Herunterladen von Administrationsseiten verlangsamt.
+* **ACSD-51853** (für Adobe Commerce und Magento Open Source >=2.4.1 &lt;2.4.7) - Behebt das Problem, dass kopierte Textstile bei Verwendung der [!UICONTROL Page Builder].
+* **ACSD-52160** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems, bei dem das Ergebnis der Produktvalidierung für die Warenkorbpreisregel nicht ordnungsgemäß anhand der Regelbedingung &#39;Wenn ein Artikel im Warenkorb mit Alle/Beliebige dieser Bedingungen gefunden/NICHT GEFUNDEN wurde&#39; ausgewertet wurde.
+* **ACSD-51636** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem der Unternehmensadministrator keine neuen Benutzer aus dem Abschnitt &quot;Kundenkonto&quot;hinzufügen kann, obwohl er über alle erforderlichen Rollen und Berechtigungen verfügt.
+* **ACSD-51739** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem ein Fehler zurückgegeben wird, wenn die Variable `structure_id` wird in einer GraphQL-Anfrage von CompanyTeam angefordert.
+* **ACSD-51857** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem die langsame Leistung der `aggregate_sales_report_bestsellers_data` Cron-Bericht zu &quot;large sales_order&quot;und `sales_order_item` Datenbanktabellen waren auf die Art und Weise zurückzuführen, wie die Hauptdatenabfrage geschrieben wurde.
+* **ACSD-48448** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebt das Problem, dass bei einem Race-Condition-Problem während der Auftragsabbrüche ein Fehler auftritt, der zu einem doppelten Eintrag in der `inventory_reservation` Tabelle.
+* **ACSD-52689** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.6) - Behebung des Problems, bei dem Bilder nicht mit der REST-API in den Amazon S3-Speicher hochgeladen werden können.
+* **B2B-2674** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Fügen Sie der GraphQL-Abfrage 1customAttributeMetadata1 eine Caching-Funktion hinzu.
+* Es wurden neue Versionen für ACSD-44938 hinzugefügt.
+* Anforderungen für ACSD-46988 hinzugefügt.
 
 ## v1.1.33 {#v1-1-33}
 
@@ -371,7 +387,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 * **MDVA-42507** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.5*) - Behebung des Problems, bei dem der vollständige Seiten-Cache nach dem Anwenden eines Staging-Updates für die Warenkorbregel bereinigt wird.
 * **MDVA-39163** (*für Adobe Commerce und Magento Open Source >=2.3.5 &lt;2.4.5*) - Behebung des Problems, bei dem Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert wird und Produkte im Warenkorb aus der Gastsitzung stammen.
 * **MDVA-38626** (*für Adobe Commerce und Magento Open Source >=2.3.3 &lt;2.4.5*) - Behebung des Problems, bei dem der Administrator mithilfe der [!DNL PayPal Payflow Pro] Zahlung.
-* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Administrator die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
+* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Admin-Benutzer die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
 * **MDVA-38526** (*für Adobe Commerce und Magento Open Source >=2.4.1 &lt;2.4.4*) - Behebung des Problems, bei dem der Admin-Benutzer nicht auf die [!DNL Site-Wide Analysis tool].
 * Aktualisierte Patches: MDVA-40101.
 
