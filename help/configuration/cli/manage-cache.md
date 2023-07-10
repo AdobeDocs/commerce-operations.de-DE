@@ -1,13 +1,13 @@
 ---
 title: Verwalten des Cache
 description: Verwalten Sie Cachetypen und zeigen Sie den Cache-Status an.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
-
 
 # Verwalten des Cache
 
@@ -119,15 +119,19 @@ Beispielergebnis:
 
 ## Cache-Typen bereinigen und leeren
 
+>[!NOTE]
+>
+>Der Cache mehrerer Seiten kann gleichzeitig und automatisch ungültig gemacht werden **_without_** diese Entitäten bearbeiten. Wenn beispielsweise ein beliebiges Produkt im Katalog einer Kategorie zugewiesen ist oder [!UICONTROL related product rule] geändert.
+
 Um veraltete Elemente aus dem Cache zu löschen, können Sie _clean_ oder _flush_ Cache-Typen:
 
 - Beim Löschen eines Cache-Typs werden nur alle Elemente aus aktivierten Commerce-Cache-Typen gelöscht. Mit anderen Worten: Diese Option wirkt sich nicht auf andere Prozesse oder Anwendungen aus, da sie nur den von Commerce verwendeten Cache löscht.
 
-   Deaktivierte Cache-Typen werden nicht bereinigt.
+  Deaktivierte Cache-Typen werden nicht bereinigt.
 
-   >[!TIP]
-   >
-   >Bereinigen Sie den Cache immer, nachdem Sie die Versionen von Magento Open Source oder Adobe Commerce aktualisiert, von Magento Open Source auf Adobe Commerce aktualisiert oder B2B für Adobe Commerce oder ein beliebiges Modul installiert haben.
+  >[!TIP]
+  >
+  >Bereinigen Sie den Cache immer, nachdem Sie die Versionen von Magento Open Source oder Adobe Commerce aktualisiert, von Magento Open Source auf Adobe Commerce aktualisiert oder B2B für Adobe Commerce oder ein beliebiges Modul installiert haben.
 
 - Beim Löschen eines Cache-Typs wird der Cache-Speicher geleert, was sich möglicherweise auf andere Prozessanwendungen auswirkt, die denselben Speicher verwenden.
 
