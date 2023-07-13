@@ -1,15 +1,15 @@
 ---
-source-git-commit: 835978334ed5b481744b8eb8d28716e3b41826db
+source-git-commit: 760e03cbeebbd7b457703e224093c233f7b6bab3
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 86%
+source-wordcount: '284'
+ht-degree: 87%
 
 ---
 # Systemanforderungen
 
 >[!NOTE]
 >
-><sup>*</sup>Versionen 2.4.5 und früher unterstützen nur MySQL 8.0.28 und früher.
+><sup>*</sup>Die Versionen 2.4.4 und 2.4.5 unterstützen nur MySQL 8.0.0 bis 8.0.28.
 
 <table style="table-layout:auto">
   <thead>
@@ -278,9 +278,6 @@ ht-degree: 86%
             8.0
       </td>
       <td>
-            8.0
-      </td>
-      <td>
             8.0*
       </td>
       <td>
@@ -290,7 +287,10 @@ ht-degree: 86%
             8.0*
       </td>
       <td>
-            8.0
+            8.0*
+      </td>
+      <td>
+            8.0*
       </td>
       <td>
             8.0*
