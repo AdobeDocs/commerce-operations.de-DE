@@ -1,13 +1,13 @@
 ---
 title: Festlegen von Konfigurationswerten
 description: Erfahren Sie, wie Sie Konfigurationswerte festlegen und Werte ändern, die in Admin gesperrt sind.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
+source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
-
 
 # Festlegen von Konfigurationswerten
 
@@ -45,7 +45,7 @@ Um einen Konfigurationswert festzulegen, müssen Sie mindestens einen der folgen
 - Der Konfigurationspfad
 - Um einen Konfigurationswert für einen bestimmten Bereich festzulegen, müssen Sie den Scope-Code kennen.
 
-   Um einen Konfigurationswert für den Standardbereich festzulegen, müssen Sie nichts unternehmen.
+  Um einen Konfigurationswert für den Standardbereich festzulegen, müssen Sie nichts unternehmen.
 
 ### Suchen Sie den Konfigurationspfad
 
@@ -289,3 +289,8 @@ Ergebnis:
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>Der Gültigkeitscode kann nur Buchstaben (a-z oder A-Z), Zahlen (0-9) und Unterstriche (_) enthalten. Außerdem muss das erste Zeichen ein Brief sein. Wenn bei der Erstellung einer neuen Website- oder Store-Ansicht Groß- und Kleinschreibung verwendet werden, wird bei der Übereinstimmung intern nicht zwischen Groß- und Kleinschreibung unterschieden, damit Konfigurationseinstellungen über Umgebungsvariablen außer Kraft gesetzt werden können. Siehe [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables).
+
