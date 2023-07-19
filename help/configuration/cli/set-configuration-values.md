@@ -2,9 +2,9 @@
 title: Festlegen von Konfigurationswerten
 description: Erfahren Sie, wie Sie Konfigurationswerte festlegen und Werte ändern, die in Admin gesperrt sind.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
+source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -289,8 +289,3 @@ Ergebnis:
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
-
->[!INFO]
->
->Der Gültigkeitscode kann nur Buchstaben (a-z oder A-Z), Zahlen (0-9) und Unterstriche (_) enthalten. Außerdem muss das erste Zeichen ein Brief sein. Wenn bei der Erstellung einer neuen Website- oder Store-Ansicht Groß- und Kleinschreibung verwendet werden, wird bei der Übereinstimmung intern nicht zwischen Groß- und Kleinschreibung unterschieden, damit Konfigurationseinstellungen über Umgebungsvariablen außer Kraft gesetzt werden können. Siehe [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables).
-

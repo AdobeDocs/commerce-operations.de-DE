@@ -2,9 +2,9 @@
 title: Einrichten mehrerer Websites, Stores und Speichern von Ansichten in der Admin-Konsole
 description: Konfigurieren Sie zusätzliche Websites, Stores und Store-Ansichten im Commerce Admin.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 5860f5327003372909c425c13c6d03166288d903
+source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -172,8 +172,3 @@ So ändern Sie die Standard-URL der Store-Ansichtsbasis:
    >Wenn Sie eine Basis-URL für Adobe Commerce in der Cloud-Infrastruktur einrichten, müssen Sie den ersten Punkt durch drei Bindestriche ersetzen. Wenn Ihre Basis-URL beispielsweise `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, eingeben `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Klicken **Konfiguration speichern**.
-
-
->[!INFO]
->
->Der Code für die Website-, Store- und Store-Ansicht kann nur Buchstaben (a-z oder A-Z), Zahlen (0-9) und Unterstriche (_) enthalten. Außerdem muss das erste Zeichen ein Brief sein. Wenn Groß- oder Kleinschreibung verwendet wird, wird bei der Übereinstimmung intern nicht zwischen Groß- und Kleinschreibung unterschieden, damit Konfigurationseinstellungen über Umgebungsvariablen außer Kraft gesetzt werden können. Siehe [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables).
