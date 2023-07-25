@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
+source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
 workflow-type: tm+mt
-source-wordcount: '13230'
+source-wordcount: '13737'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,32 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem die standardmäßige Versandadresse im Checkout-Versandschritt automatisch mit einer zuvor ausgewählten In-Store-Abholadresse gefüllt wird.
+* **ACSD-52041** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems, bei dem die Fehlermeldung angezeigt wird: *[FEHLER] [!DNL Page Builder] 5 Sekunden lang gerendert wurde, ohne Sperren freizugeben.* wird im Chrome-Browser angezeigt, wenn Inhalt gespeichert wird, der mit [!DNL Page Builder].
+* **ACSD-52095** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.6) - Behebung des Problems, bei dem die `manage_stock` wurde in der CSV-Datei nach dem Produktexport fälschlicherweise auf 0 gesetzt.
+* **ACSD-51358** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem das Entfernen einer geplanten Aktualisierung ohne Enddatum dazu führt, dass andere geplante Aktualisierungen für dieselbe Entität entfernt werden.
+* **ACSD-48070** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem beim Bearbeiten einer geplanten Aktualisierung eine Ausnahme Trigger auftrat.
+* **ACSD-51890** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem die [!UICONTROL Submit review] -Schaltfläche kann mehrmals ohne [!DNL Google reCAPTCHA] Validierung von v3.
+* **ACSD-51984** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem die Option deaktiviert war *[!UICONTROL Use Default Value]* und *[!UICONTROL non-default product field]* -Werte werden nicht für die zweite Website-, Store- und Store-Ansicht gespeichert.
+* **ACSD-52398** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebt den Fehler *Die angeforderte Menge ist nicht verfügbar* tritt auf, wenn versucht wird, die Menge eines gebündelten Produkts im Warenkorb auf der Storefront zu aktualisieren.
+* **ACSD-52786** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.6) - Behebung des Problems, bei dem eine Bedingung für Katalogregeln auftritt *SKU ist* gilt für alle Produkte, die mit der jeweiligen SKU beginnen.
+* **ACSD-52921** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem ein interner Fehler auftritt, wenn von GraphQL Warenkorbdetails angefordert werden, wenn ein nicht vorrätig konfigurierbares Produkt im Warenkorb vorhanden ist.
+* **ACSD-51683** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem eine anpassbare Option nicht mit GraphQL zum Warenkorb hinzugefügt werden kann.
+* **ACSD-52133** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem ein Kundenkonto nach einem Upgrade nicht gespeichert werden kann.
+* **ACSD-52202** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem sich die verkaufbare Menge des Standardbestands fälschlicherweise auf 0 ändert, wenn ein nicht standardmäßiges Lager bei Bestellerfüllung auf 0 qty geändert wird.
+* **ACSD-51265** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebt das Problem mit `catalog_product_price` Neuindizierungsleistung bei zu vielen gebündelten Produkten im System.
+* **ACSD-52831** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Kunden keine begebbaren Anführungsaufträge platzieren können, wenn [!DNL Google reCAPTCHA v3 Invisible] aktiviert ist.
+* **ACSD-51845** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems, bei dem nachfolgende Produkte mit Stufenpreisen und verschiedenen Attributsätzen nicht über die asynchrone Massen-REST-API aktualisiert werden können.
+* **ACSD-52815** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem die Eingabe für das Mengenfeld einer nicht standardmäßigen Quelle nur bis zu 6 Stellen unterstützt, im Gegensatz zu 8 für ein Standardbestand.
+* **ACSD-51149** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem &quot;Geplanter ImportExport mit aktivierten Katalogberechtigungen&quot;Indexer ungültig macht und dann Cache-Leerungen nach Cron löscht.
+* **ACSD-50815** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.6) - Behebung des Problems, bei dem die Dezimalzahl für ein einfaches Produkt nicht für eine neue Option &quot;Gebündeltes Produkt&quot;verwendet werden kann.
+* Aktualisierte Versionen für ACSD-47803.
+* Der Titel für ACSD-51892 wurde aktualisiert.
+* ACSD-51379 aktualisiert.
+* ACSD-49970-v2 wurde aktualisiert.
 
 ## v1.1.34 {#v1-1-34}
 
@@ -387,7 +413,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 * **MDVA-42507** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.5*) - Behebung des Problems, bei dem der vollständige Seiten-Cache nach dem Anwenden eines Staging-Updates für die Warenkorbregel bereinigt wird.
 * **MDVA-39163** (*für Adobe Commerce und Magento Open Source >=2.3.5 &lt;2.4.5*) - Behebung des Problems, bei dem Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert wird und Produkte im Warenkorb aus der Gastsitzung stammen.
 * **MDVA-38626** (*für Adobe Commerce und Magento Open Source >=2.3.3 &lt;2.4.5*) - Behebung des Problems, bei dem der Administrator mithilfe der [!DNL PayPal Payflow Pro] Zahlung.
-* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Admin-Benutzer die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
+* **MDVA-38666** (*für Adobe Commerce und Magento Open Source >=2.3.2 &lt;2.3.6*) - Behebung des Problems, bei dem der Administrator die konfigurierbaren Produktoptionen im Warenkorb des Kunden nicht ändern kann.
 * **MDVA-38526** (*für Adobe Commerce und Magento Open Source >=2.4.1 &lt;2.4.4*) - Behebung des Problems, bei dem der Admin-Benutzer nicht auf die [!DNL Site-Wide Analysis tool].
 * Aktualisierte Patches: MDVA-40101.
 
