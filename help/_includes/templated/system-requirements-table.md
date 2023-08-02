@@ -1,5 +1,5 @@
 ---
-source-git-commit: 760e03cbeebbd7b457703e224093c233f7b6bab3
+source-git-commit: 77a4ad2b6cf2a59cade5ac79584c795a112cabe1
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 87%
@@ -278,46 +278,46 @@ ht-degree: 87%
             8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
-            8.0*
+            8.0
       </td>
       <td>
             5.7, 8.0
