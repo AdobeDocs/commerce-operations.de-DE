@@ -3,9 +3,9 @@ title: Basisverzeichnis zur Verbesserung der Sicherheit ändern
 description: Verhindern des nicht autorisierten browserbasierten Zugriffs auf Adobe Commerce oder die Magento Open Source des lokalen Dateisystems.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ server {
 
 ## Bevor Sie beginnen
 
-Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionierende Installation, die auf einer [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)) stack:
+Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionierende Installation, die auf einem LAMP-Stapel ausgeführt wird:
 
 - Linux
 - Apache (2.4+)
@@ -60,7 +60,7 @@ Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionieren
 
 >[!NOTE]
 >
->Siehe [Voraussetzungen](../prerequisites/overview.md) und [Installationsanleitung](../overview.md) für weitere Informationen.
+>Siehe Abschnitt [Voraussetzungen](../prerequisites/overview.md) und [Installationsanleitung](../overview.md) für weitere Informationen.
 
 ## 1. Bearbeiten der Serverkonfiguration
 
@@ -98,7 +98,7 @@ Der Name und der Speicherort Ihrer Virtual-Host-Datei hängt davon ab, welche Ve
 
 ## 2. Aktualisieren der Basis-URL
 
-Wenn Sie einen Ordnernamen an den Hostnamen oder die IP-Adresse Ihres Servers angehängt haben, um die Basis-URL zu erstellen, wenn Sie die Anwendung installiert haben (z. B. `http://192.168.33.10/magento2`), müssen Sie sie entfernen.
+Wenn Sie beim Installieren der Anwendung einen Ordnernamen an den Hostnamen oder die IP-Adresse Ihres Servers angehängt haben, um die Basis-URL zu erstellen (z. B. `http://192.168.33.10/magento2`), müssen Sie sie entfernen.
 
 >[!NOTE]
 >
