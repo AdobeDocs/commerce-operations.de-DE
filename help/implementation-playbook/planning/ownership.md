@@ -3,7 +3,7 @@ title: Verantwortung und Eigentum
 description: Definieren Sie Projektrollen und Zuständigkeiten, um eine erfolgreiche Implementierung der Adobe Commerce sicherzustellen.
 exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 87c1570e8d215d6eaf233d50fc7e3432f66290fc
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -15,7 +15,6 @@ ht-degree: 0%
 Bei der Ausführung eines großen Projekts scheint es oft, dass alles anfangs gut läuft. Der Projektfahrplan ist detailliert und umfassend mit klaren Meilensteinen. Ressourcenpläne und Verpflichtungen der Interessenträger sind vorhanden. Es kann jedoch schon bald vorkommen, dass die Dinge mit verpassten Terminen und vergessenen Aufgaben auseinanderfallen.
 
 Dies geschieht oft aufgrund mangelnder Klarheit über die Projektrollen und Zuständigkeiten. Klare Rollen und Verantwortlichkeiten sind ein wichtiger Erfolgsfaktor für jedes Projekt. Ohne sie können Projekte schnell ins Leere geraten, und die Stakeholder werden weiterhin versucht, mit außergewöhnlichen Methoden und mit überlaufenen Zeit- und Haushaltsmitteln zu arbeiten.
-
 
 ## Wie kooperieren wir gemeinsam?
 

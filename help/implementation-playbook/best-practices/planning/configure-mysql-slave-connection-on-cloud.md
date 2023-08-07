@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die MySQL-Slave-Verbindung für Adobe Commerc
 role: Developer
 feature: Best Practices
 exl-id: d65bc80a-c4ec-4ea4-aff1-110592838201
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3532480e2172c39ceb4ec55c9819d5271fd1fcdb
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -15,19 +15,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieser Artikel enthält branchenübliche Softwarebegriffe, die einige als rassistisch, sexistisch oder unterdrückend empfinden und die dazu führen können, dass sich der Leser verletzt, traumatisiert oder unerwünscht fühlt. Adobe arbeitet daran, diese Begriffe aus unserem Code, unserer Dokumentation und unseren Benutzererlebnissen zu entfernen.
+>Dieser Artikel enthält branchenübliche Softwarebegriffe, die einige als rassistisch, sexistisch oder unterdrückend empfinden und die dazu führen können, dass sich der Leser verletzt, traumatisiert oder unerwünscht fühlt. Adobe arbeitet daran, diese Begriffe aus Code, Dokumentation und Benutzererlebnissen zu entfernen.
 
-Für Adobe Commerce-Sites, die in der Cloud Infrastructure Pro-Architektur bereitgestellt werden, empfiehlt Adobe standardmäßig die Aktivierung der MYSQL-Slave-Verbindung für die Datenbank.
+Adobe Commerce kann mehrere Datenbanken asynchron lesen. Wenn Sie eine hohe Belastung der MySQL-Datenbank einer Commerce-Site erwarten, die in der Cloud Infrastructure Pro-Architektur bereitgestellt wird, empfiehlt Adobe die Aktivierung der MYSQL-Slave-Verbindung.
 
-Adobe Commerce kann mehrere Datenbanken asynchron lesen. Wenn Sie die MYSQL-Slave-Verbindung aktivieren, verwendet Adobe Commerce eine schreibgeschützte Verbindung zur Datenbank, um schreibgeschützten Traffic auf einem nicht Übergeordneten Knoten zu empfangen. Die Leistung verbessert sich durch den Lastenausgleich, wenn nur ein Knoten Lese- und Schreibvorgänge-Traffic verarbeitet.
+Wenn Sie die MYSQL-Slave-Verbindung aktivieren, verwendet Adobe Commerce eine schreibgeschützte Verbindung zur Datenbank, um schreibgeschützten Traffic auf einem nicht Übergeordneten Knoten zu empfangen. Die Leistung verbessert sich durch den Lastenausgleich, wenn nur ein Knoten Lese- und Schreibvorgänge-Traffic verarbeitet.
 
 ## Betroffene Versionen
 
-Adobe Commerce in Cloud-Infrastruktur, Pro-Architektur
+Adobe Commerce in Cloud-Infrastruktur, nur Pro-Architektur
 
 ## MySQL-Slave-Verbindung konfigurieren
 
-In der Cloud-Infrastruktur von Adobe Commerce können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung außer Kraft setzen, indem Sie die [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) -Variable. Setzen Sie diese Variable auf &quot;true&quot;, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
+In der Cloud-Infrastruktur von Adobe Commerce können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung außer Kraft setzen, indem Sie die [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) -Variable. Setzen Sie diese Variable auf `true` , um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
 
 **Aktivieren der MySQL-Slave-Verbindung**:
 
@@ -45,9 +45,8 @@ In der Cloud-Infrastruktur von Adobe Commerce können Sie die Standardkonfigurat
 
    Nach erfolgreichem Abschluss der Bereitstellung wird die MySQL-Slave-Verbindung für die Cloud-Umgebung aktiviert.
 
-Erfahren Sie mehr über das Anpassen der Cloud-Umgebung durch Überschreiben Ihrer bestehenden Commerce-Konfiguration mit [Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html#environment-variables) im _Handbuch zur Cloud-Infrastruktur für Adobe Commerce_.
-
 ## Zusätzliche Informationen
 
-- [Engpässe bei hoher MySQL-Auslastung in Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
-- [Best Practices für Datenbanken mit Adobe Commerce in Cloud-Infrastruktur](database-on-cloud.md)
+Erfahren Sie mehr über das Anpassen der Cloud-Umgebung durch Überschreiben Ihrer bestehenden Commerce-Konfiguration mit [Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html#environment-variables) im _Handbuch zur Cloud-Infrastruktur für Adobe Commerce_.
+
+Siehe [Engpässe bei hoher MySQL-Auslastung in Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html) im _Support-Wissensdatenbank_.
