@@ -3,9 +3,9 @@ title: Sicherheit der Cloud-Infrastruktur
 description: Erfahren Sie, wie wir Adobe Commerce in der Cloud-Infrastruktur sicher halten.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d05629ef21608a017cfbbfcf05e9507375689fa2
 workflow-type: tm+mt
-source-wordcount: '1644'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -24,9 +24,9 @@ Fastly bietet einen CDN- und verteilten Denial of Service (DDoS)-Schutz. Das Fas
 
 ## Webanwendungs-Firewall (WAF)
 
-Die Fastly Web Application Firewall (WAF) wird verwendet, um zusätzlichen Schutz zu bieten. Die Cloud-basierte WAF von Fastly verwendet Drittanbieterregeln aus kommerziellen und Open-Source-Quellen wie dem OWASP-Kernregelsatz. Darüber hinaus werden Adobe Commerce-spezifische Regeln angewendet. Kunden sind vor wichtigen Angriffen auf Anwendungsebene geschützt, einschließlich Injizierungsangriffen und böswilligen Eingaben, Cross-Site-Scripting, Datenexfiltration, HTTP-Protokollverletzungen und anderen OWASP Top 10-Bedrohungen.
+Die Fastly Web Application Firewall (WAF) wird verwendet, um zusätzlichen Schutz zu bieten. Die Cloud-basierte WAF von Fastly verwendet Drittanbieterregeln aus kommerziellen und Open-Source-Quellen wie dem OWASP-Kernregelsatz. Darüber hinaus werden Adobe Commerce-spezifische Regeln angewendet. Kunden sind vor wichtigen Angriffen auf Anwendungsebene geschützt, einschließlich Injizierungsangriffen und schädlichen Eingaben, Cross-Site-Scripting, Datenexfiltration, HTTP-Protokollverletzungen und anderen Bedrohungen durch OWASP Top 10.
 
-Die WAF-Regeln werden von Adobe Commerce aktualisiert, wenn neue Schwachstellen erkannt werden, die es Managed Services ermöglichen, Sicherheitsprobleme vor Softwarepatches zu &quot;virtuell zu patchen&quot;. Die Fastly WAF bietet keine Ratenbegrenzungs- oder Bot-Erkennungsdienste an. Bei Bedarf können Kunden einen Drittanbieter-Bot-Erkennungsdienst lizenzieren, der mit Fastly kompatibel ist.
+Die WAF-Regeln werden von Adobe Commerce aktualisiert, wenn neue Schwachstellen erkannt werden, die es Managed Services ermöglichen, Sicherheitsprobleme vor Softwarepatches zu &quot;virtuell zu patchen&quot;. Die Fastly WAF bietet keine Dienste zur Ratenbegrenzung oder Bot-Erkennung. Bei Bedarf können Kunden einen Drittanbieter-Bot-Erkennungsdienst lizenzieren, der mit Fastly kompatibel ist.
 
 ## Virtual Private Cloud (VPC)
 
@@ -39,6 +39,10 @@ Kunden können SSH-Tunnel verwenden, um die Kommunikation mit der Anwendung zu s
 Amazon Elastic Block Store (EBS) wird für die Speicherung verwendet. Alle EBS-Volumes werden mit dem AES-265-Algorithmus verschlüsselt. Dies bedeutet, dass die Daten während der Ruhezeit verschlüsselt werden. Das System verschlüsselt auch Daten während der Übertragung zwischen dem CDN und dem Herkunftsserver sowie zwischen den Herkunftsservern. Kundenkennwörter werden als Hashes gespeichert. Sensible Anmeldeinformationen, einschließlich der für das Payment Gateway, werden mit dem SHA-256-Algorithmus verschlüsselt.
 
 Die Adobe Commerce-Anwendung unterstützt keine Verschlüsselung oder Verschlüsselung auf Spalten- oder Zeilenebene, wenn sich die Daten nicht im Ruhezustand befinden oder sich nicht im Durchlauf zwischen Servern befinden. Der Kunde kann Verschlüsselungsschlüssel innerhalb der Anwendung verwalten. Die vom System verwendeten Schlüssel werden im Schlüsselverwaltungssystem von AWS gespeichert und müssen von Managed Services verwaltet werden, um Teile des Dienstes bereitzustellen.
+
+## Endpunkterkennung und -antwort
+
+[!DNL CrowdStrike Falcon], ein leichtgewichtiger Agent für die Erkennung und Reaktion von Endpunkten der nächsten Generation (EDR), der auf allen Endpunkten (einschließlich Servern) innerhalb von Adobe installiert ist, schützt unsere Daten und Systeme mit einer kontinuierlichen Echtzeit-Überwachung und -Erfassung, die es uns ermöglicht, Bedrohungen schnell zu identifizieren und auf sie zu reagieren.
 
 ## Penetrationstests
 
@@ -115,4 +119,4 @@ In den letzten 24 Stunden werden stündlich Sicherungen durchgeführt. Nach Abla
 
 Dadurch wird ein unabhängiges Backup des redundanten Speichers erstellt. Da die EBS-Volumes verschlüsselt sind, werden die Backups ebenfalls verschlüsselt. Darüber hinaus führt Managed Services On-Demand-Backups auf Kundenwunsch durch.
 
-Ihr Sicherungs- und Wiederherstellungsansatz für Adobe Commerce Managed Services verwendet eine hochverfügbare Architektur in Kombination mit Vollsystemsicherungen. Jedes Projekt - alle Daten, Code und Assets - wird in drei verschiedenen AWS-Verfügbarkeitszonen repliziert. jede Zone mit einem separaten Rechenzentrum.
+Ihr Sicherungs- und Wiederherstellungsansatz für Adobe Commerce Managed Services verwendet eine hochverfügbare Architektur in Kombination mit Vollsystemsicherungen. Jedes Projekt - alle Daten, Code und Assets - wird über drei separate AWS-Verfügbarkeitszonen repliziert, wobei jeder Bereich über ein eigenes Rechenzentrum verfügt.
