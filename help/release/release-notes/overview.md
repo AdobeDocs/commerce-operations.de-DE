@@ -2,7 +2,7 @@
 title: Versionshinweise zu Adobe Commerce und Magento Open Source
 description: Erfahren Sie, wo Sie Informationen zu bestimmten Adobe Commerce- und Magento Open Source-Versionen finden.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 073eec9ce841febf7653c82543eac57068576d03
+source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
@@ -15,7 +15,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
 
 >[!TIP]
 >
->Weitere Informationen zu Upgrades finden Sie unter [empfohlene Lese- und Lesestufe](../../upgrade/resources/recommended-reading.md).
+>Weitere Informationen zu Upgrades finden Sie unter [empfohlene Lese- und Lesegenehmigung](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>
@@ -24,9 +24,9 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
         <p>Erfahren Sie mehr über die neuesten Verbesserungen in Adobe Commerce und Magento Open Source, einschließlich Verbesserungen, Sicherheit, Fehlerbehebungen und bekannten Problemen.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Abwärtskompatible Änderungen</a></li>
-            <li><a href="commerce/2-4-7.md">Adobe Commerce</a></li>
-            <li><a href="open-source/2-4-7.md">Magento Open Source</a></li>
-            <li><a href="security/2-4-6-p1.md">Sicherheits-Patches</a></li>
+            <li><a href="commerce/overview.md">Adobe Commerce</a></li>
+            <li><a href="open-source/overview.md">Magento Open Source</a></li>
+            <li><a href="security/overview.md">Sicherheitspatches</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Sicherheitsbulletin für Adoben</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B für Adobe Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>

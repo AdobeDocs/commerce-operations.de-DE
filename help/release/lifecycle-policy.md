@@ -2,10 +2,10 @@
 title: Software Lifecycle Policy
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Softwareunterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 10%
+source-wordcount: '326'
+ht-degree: 12%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
 
-- Um unsere Lebenszykluspolitik zu optimieren und die geschäftskritischen Anforderungen von Adobe Commerce-Kunden zu unterstützen, erweitern wir unser Support-Fenster auf drei Jahre ab dem Datum der allgemeinen Verfügbarkeit (GA) für Adobe Commerce 2.4.4 und höher. Adobe bietet Qualitätsverbesserungen für die Versionen 2.4.4 und höher für einen Zeitraum von drei Jahren. Kunden können über [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) oder über den Self-Service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenn ihre Version weiterhin für Qualitätsunterstützung infrage kommt. In der folgenden Tabelle finden Sie die Daten zum Ende der Software-Unterstützung für Adobe Commerce-Release-Zeilen.
+- Um unsere Lebenszykluspolitik zu optimieren und die geschäftskritischen Anforderungen von Adobe Commerce-Kunden zu unterstützen, erweitern wir unser Support-Fenster auf drei Jahre ab dem Datum der allgemeinen Verfügbarkeit (GA) für Adobe Commerce 2.4.4 und höher. Adobe bietet Qualitätsverbesserungen für die Versionen 2.4.4 und höher für einen Zeitraum von drei Jahren an. Kunden können über [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) oder über den Self-Service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenn ihre Version weiterhin für Qualitätsunterstützung infrage kommt. In der folgenden Tabelle finden Sie die Daten zum Ende der Software-Unterstützung für Adobe Commerce-Release-Zeilen.
 
 - Adobe bietet Sicherheitskorrekturen durch eine Sicherheits-Patch-Version für die dreijährige Supportzeit.
 
@@ -22,10 +22,11 @@ Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
 ## Ende der Software-Unterstützung
 
 | Version | Allgemeine Verfügbarkeit | Ende der Software-Unterstützung<sup>1</sup> | Abhängige PHP-Version |
-|----------------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | PHP 8.1 |
-| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | PHP 8.1 |
-| Adobe Commerce 2.4.6 | 14. März 2023 | 14. März 2026 | PHP 8.1 und PHP 8.2 |
+|----------------------|----------------------|-------------------------------------|-----------------------|
+| Adobe Commerce 2.4.7 | 19. April 2024 | 19. April 2027 | 8.2 und 8.3 |
+| Adobe Commerce 2.4.6 | 14. März 2023 | 14. März 2026 | 8.1 und 8.2 |
+| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 8.1 |
+| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 8.1 |
 
 {style="table-layout:auto"}
 
@@ -44,6 +45,7 @@ Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
     <th colspan="4">2024</th>
     <th colspan="4">2025</th>
     <th colspan="4">2026</th>
+    <th colspan="4">2027</th>
   </tr>
 </thead>
 <tbody>
@@ -70,32 +72,49 @@ Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
     <td>Q2</td>
     <td>Q3</td>
     <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.4</td>
     <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="6"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="5"></td>
+    <td colspan="9"></td>
   </tr>
   <tr>
     <td rowspan="2">2.4.6</td>
     <td>8.1</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
+    <td colspan="8"></td>
   </tr>
   <tr>
     <td>8.2</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="8"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">2.4.7</td>
+    <td>8.2</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td>8.3</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
 </tbody>

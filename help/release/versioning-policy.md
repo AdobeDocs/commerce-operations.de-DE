@@ -1,35 +1,35 @@
 ---
 title: Versionsrichtlinie
 description: Erfahren Sie mehr über die verschiedenen Arten von Adobe Commerce-Versionen, einschließlich kleineren Versionen, Patch, Sicherheits-Patch, Funktion, Hotfix, individuellem Patch und benutzerdefiniertem Patch.
-source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
+exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce-Versionsrichtlinie
 
 Verwendung von Adobe Commerce und Magento Open Source [Semantische Versionierung](https://semver.org/) auf der einzelnen Modulebene (z. B. `magento/framework 101.1.1`), jedoch nicht für die Marketing-Versionsnummer. Beispiel:
 
 - **MAJOR-Version**—2
-- **KLEINE Version**—2.4
+- **Geringfügige Version**—2.4
 - **PATCH-Version**—2.4.5
    - **Sicherheits-Patch-Version**—2.4.5-p1
       - Sicherheitsfehlerbehebung
       - Sicherheitsverbesserung
 - **BETA Patch-Version**—2.4.7-beta1
-- **Feature Release**
+- **Erweiterbarkeit, Infrastruktur und Freigabe von Diensten**
 - **Hotfix**
 - **Individuelles Pflaster**
 - **Benutzerdefinierter Patch**
 
-## KLEINE Version
+## Geringfügige Version
 
 Die folgenden Richtlinien gelten für Nebenversionen:
 
-- Wesentliche Änderungen sind möglich. Für Adobe Commerce 2.2.x geschriebener Code funktioniert möglicherweise nicht mehr mit Adobe Commerce 2.3.x. Beispielsweise können Nebenversionen Unterstützung für wichtige Systemanforderungen und Abhängigkeiten wie PHP einführen.
+- Umfassende Änderungen sind möglich. Für Adobe Commerce 2.2.x geschriebener Code funktioniert möglicherweise nicht mehr mit Adobe Commerce 2.3.x. Beispielsweise können Nebenversionen Unterstützung für wichtige Systemanforderungen und Abhängigkeiten wie PHP einführen.
 - Modulversionen können variieren. Beispielsweise werden einige Moduländerungen in einem neuen Patch eingeführt, während andere in einer kleineren Version eingeführt werden.
 - Nebenversionen können neue Funktionen enthalten, die möglicherweise zusätzliche Arbeit von Ihnen oder Ihrem Lösungspartner während der Aktualisierung erfordern, um die Kompatibilität sicherzustellen.
 - Nebenversionen können Fehlerbehebungen für Sicherheits- und Qualitätsprobleme enthalten.
@@ -42,11 +42,11 @@ Die folgenden Richtlinien gelten für Patch-Versionen:
 
 - Die neueste unterstützte Nebenversion erhält vollständige Fehlerbehebungen und Verbesserungen in funktionaler Qualität.
 - Änderungen, die Erweiterungen oder Codekompatibilität beeinträchtigen könnten, werden vermieden. Beispielsweise sollte Code, der für Version 2.2.0 geschrieben wurde, weiterhin für Version 2.2.7 verwendet werden.
-- In Ausnahmefällen können brechende Änderungen oder zusätzliche Patches oder Hotfixes veröffentlicht werden, um Sicherheits- oder Compliance-Probleme und Qualitätsprobleme mit hoher Auswirkung zu beheben. Auf Modulebene handelt es sich dabei hauptsächlich um Änderungen auf PATCH-Ebene. manchmal Änderungen auf MINODER-Ebene.
+- In Ausnahmefällen können brechende Änderungen oder zusätzliche Patches oder Hotfixes veröffentlicht werden, um Sicherheits- oder Compliance-Probleme und Qualitätsprobleme mit hoher Auswirkung zu beheben. Auf Modulebene handelt es sich dabei hauptsächlich um Änderungen auf PATCH-Ebene, manchmal aber auch um Änderungen auf MINOR-Ebene.
 
 ### Sicherheits-Patch-Version
 
-**Fehlerbehebung bei der Sicherheit**: Eine Änderung des Software-Codes, die ein festgestelltes Sicherheitsproblem behebt und erwartete Ergebnisse in einem betroffenen Produktbereich liefert. Diese Korrekturen sind im Allgemeinen abwärtskompatibel.
+**Fehlerbehebung bei der Sicherheit**: Eine Software-Codeänderung, die ein festgestelltes Sicherheitsproblem behebt und erwartete Ergebnisse in einem betroffenen Produktbereich liefert. Diese Korrekturen sind im Allgemeinen abwärtskompatibel.
 
 **Verbesserung der Sicherheit**: Eine Software-Verbesserung oder Konfigurationsänderung, um die Sicherheit innerhalb der Anwendung proaktiv zu verbessern. Diese Sicherheitsverbesserungen helfen bei der Behebung von Sicherheitsrisiken, die sich auf die Sicherheitsstellung der Adobe Commerce-Anwendung auswirken, aber abwärtskompatibel sein können.
 
@@ -62,9 +62,9 @@ Vorabversionen von Adobe Commerce-Funktionen werden allen Adobe Commerce-Kunden 
 
 Beta-Versionen können Mängel enthalten und werden ohne Gewährleistung jeglicher Art &quot;AS IS&quot; bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen (über Adobe Support Services oder anderweitig). Kunden wird empfohlen, Vorsicht walten zu lassen und sich nicht auf die korrekte Funktionsweise oder Leistung der Beta-Versionen und/oder der zugehörigen Dokumentation oder Materialien zu verlassen. Dementsprechend erfolgt die Nutzung der Beta-Versionen auf eigenes Risiko des Kunden.
 
-## Feature Release
+## Erweiterbarkeit, Infrastruktur und Freigabe von Diensten
 
-Feature Releases enthalten neue Funktionen und Funktionsaktualisierungen, die separat von den Patch-Versionen als unabhängige Dienste bereitgestellt werden. Beispiele sind Dienste wie Product Recommendations und Live Search, unabhängige Module wie PWA Studio und Inventory management (MSI) sowie Aktualisierungen unserer Cloud-Services und -Infrastruktur.
+Funktionsversionen, die neue Funktionen und Funktionsaktualisierungen enthalten, die separat von Patch-Versionen als unabhängige Dienste bereitgestellt werden. Beispiele sind Erweiterbarkeitstechnologien wie API Mesh und Eventing, SaaS-Produkte wie Product Recommendations und Live Search, unabhängige Module wie B2B und PWA Studio sowie Aktualisierungen unserer Cloud-Hosting-Dienste und -Infrastruktur.
 
 ## Hotfix
 
