@@ -2,7 +2,7 @@
 title: Software Lifecycle Policy
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Softwareunterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: c1f490d98dd74bd5f33f35c5ff7bedeeb0e6f7e4
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 12%
@@ -23,7 +23,7 @@ Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
 
 | Version | Allgemeine Verfügbarkeit | Ende der Software-Unterstützung<sup>1</sup> | Abhängige PHP-Version |
 |----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | 19. April 2024 | 19. April 2027 | 8.2 und 8.3 |
+| Adobe Commerce 2.4.7 | 9. April 2024 | 9. April 2027 | 8.2 und 8.3 |
 | Adobe Commerce 2.4.6 | 14. März 2023 | 14. März 2026 | 8.1 und 8.2 |
 | Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 8.1 |
 | Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 8.1 |
