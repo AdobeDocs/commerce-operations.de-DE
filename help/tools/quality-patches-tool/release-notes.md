@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: aa52895b45363ca0fb3585f603bfe66a73803427
+source-git-commit: da0c85a9f1b0ac0a3176ca5f6ef5904834e8d37e
 workflow-type: tm+mt
-source-wordcount: '13735'
+source-wordcount: '13965'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.36 {#v1-1-36}
+
+* **ACSD-53239** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt; 2.4.6) - Behebung des Problems, bei dem der Inventarindexer alle Caches im Modus Auf Zeitplan aktualisieren löscht.
+* **ACSD-50887** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem die Produktattributeigenschaft *[!UICONTROL Use in Search Results Layered Navigation]* kann auf *Ja* ohne *[!UICONTROL Use in search]* Option auf *Ja*.
+* **ACSD-51846** (für Adobe Commerce und Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Behebt die *Interner Fehler* -Problem auftritt, da nicht alle Ebenen der REST-API-Payload validiert werden.
+* **ACSD-52906** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden, die zum selben Kundensegment gehören, falsch gesetzt wurde und bei einigen Seiten zu unsachgemäßem Zwischenspeichern führte.
+* **ACSD-52736** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.6) - Behebung des Problems, bei dem ein *Preisregel für Warenkorb* , die Anforderungen für konfigurierbare Produktmengen enthält, funktioniert nicht erwartungsgemäß.
+* **ACSD-47875** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Admin-Benutzer für einen bestimmten Umfang der Store-Ansicht mit Lagerbestandsverwaltung kein Produkt aus dem Admin zum Warenkorb hinzufügen können.
+* **ACSD-53176** (für Adobe Commerce >=2.3.7 &lt;2.4.5) - Behebung des Problems, bei dem *Verwandte Produktregel* mit *ist einer von* -Bedingung stimmt nicht mit Produkten überein.
+* **ACSD-51666** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebt den Fehler *Die Sitzung ist abgelaufen. Melden Sie sich bitte erneut an.* Dies geschieht, nachdem ein Kunde versucht hat, sich anzumelden.
+* Es wurden neue Versionen für MDVA-39305-v2 hinzugefügt.
+* Die Anforderungen für ACSD-19640 wurden aktualisiert.
 
 ## v1.1.35 {#v1-1-35}
 
