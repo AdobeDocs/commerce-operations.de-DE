@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichungszeitplan
-description: Erfahren Sie, wann Adobe die Veröffentlichung von wesentlichen neuen Funktionen für Adobe Commerce bekannt geben möchte.
+description: Erfahren Sie, wann Adobe plant, die Veröffentlichung von wesentlichen neuen Funktionen für Adobe Commerce bekannt zu geben.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Veröffentlichungszeitplan
 
-Adobe bemüht sich kontinuierlich darum, das richtige Gleichgewicht zu finden, um Produktaktualisierungen einfach und vorhersehbar zu gestalten und gleichzeitig Verbesserungen und neue Funktionen schneller für frühe Anwender bereitzustellen (siehe [Versionierungsrichtlinie](versioning-policy.md)). Mit diesem Zeitplan sollen Termine für die Bekanntgabe wesentlicher neuer Funktionen durch die Adobe festgelegt werden. Diese Merkmale können sich im Laufe des Jahres unterscheiden. Adobe veröffentlicht jedoch zwischen den auf dieser Seite angegebenen Daten regelmäßig und kontinuierlich Verbesserungen für Erweiterbarkeits-Tools, -Infrastruktur und SaaS-Produkte (Dienste).
+Adobe bemüht sich kontinuierlich darum, das richtige Gleichgewicht zu finden zwischen der Vereinfachung und Vorhersehbarkeit von Produktaktualisierungen und der schnelleren Bereitstellung von Verbesserungen und neuen Funktionen für frühe Anwender (siehe [Versionierungsrichtlinie](versioning-policy.md)). Diese Planung dient dazu, Termine für die Ankündigung der Veröffentlichung wesentlicher neuer Funktionen durch die Adobe anzugeben. Diese Merkmale können sich im Laufe des Jahres unterscheiden. Adobe veröffentlicht jedoch zwischen den auf dieser Seite angegebenen Daten regelmäßig und kontinuierlich Verbesserungen für Erweiterbarkeits-Tools, Infrastruktur und SaaS-Produkte (Dienste).
 
-Adobe-Versionen [Patches](versioning-policy.md#patch-release) für jede unterstützte Release-Zeile der Adobe Commerce-PHP-Kernanwendung. Patch-Versionen bieten die Möglichkeit, die Core-Codebase zu aktualisieren, um Ihre Plattform sicher, zuverlässig und leistungsfähig zu halten. Funktionen sind unabhängig von der Core-Codebase und verfügbar über [externes Modul, Erweiterung, Tool oder Webdienst](versioning-policy.md#extensibility-infrastructure-and-services-release).
+Adobe-Releases [Patches](versioning-policy.md#patch-release) für jede unterstützte Release-Zeile der Adobe Commerce-PHP-Kernanwendung. Patch-Versionen bieten die Möglichkeit, die Core-Codebase zu aktualisieren, um Ihre Plattform sicher, zuverlässig und leistungsfähig zu halten. Funktionen sind unabhängig von der Core-Codebase und verfügbar über [externes Modul, Erweiterung, Tool oder Webdienst](versioning-policy.md#extensibility-infrastructure-and-services-release).
 
 >[!NOTE]
 >
->Ab 2024 bietet Adobe keinen Vorabversionszugriff mehr auf Patches. Stattdessen können Adobe Commerce-Kunden für Version 2.4.7 und höher Folgendes verwenden: [Beta-Versionen](beta.md) für den Zugriff auf den vorallgemeinen Verfügbarkeitscode für Test- und Entwicklungszwecke. Der Zugriff auf die Vorabversion ist weiterhin für die folgenden Versionen aus dem Jahr 2023 geplant:
+>Ab 2024 bietet Adobe keinen &quot;Pre-Release&quot;-Zugriff mehr auf Patches. Stattdessen können Adobe Commerce-Kunden für Version 2.4.7 und höher Folgendes verwenden: [Beta-Versionen](beta.md) für den Zugriff auf den vorallgemeinen Verfügbarkeitscode für Test- und Entwicklungszwecke. Der Zugriff auf die Vorabversion ist weiterhin für die folgenden Versionen aus dem Jahr 2023 geplant:
 >
 > - Der Zugriff auf die Vorabversion vom 8. August 2023 ist der 25. Juli 2023.
 > - Der Zugriff auf die Vorabversion vom 10. Oktober 2023 ist der 26. September 2023
