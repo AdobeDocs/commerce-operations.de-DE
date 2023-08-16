@@ -1,13 +1,13 @@
 ---
 title: Projekt-Workshops
 description: Erfahren Sie mehr über die verschiedenen Arten von Management-Workshops, die für E-Commerce-Projekte häufig sind.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 72e465a0-b965-46a7-b0d0-0ed8a59a4bab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
 
 ---
-
 
 # Gemeinsame Projekt-Workshops
 
@@ -29,7 +29,7 @@ Es gibt einige Phasen des Projektstarts:
 
 - Vorbereitung
 - Teilnahme
-- Zu behandelnde Themen
+- Zu berücksichtigende Themen
 - Nächste Schritte
 
 ### Vorbereitung
@@ -42,7 +42,7 @@ Um Überraschungen zu vermeiden, muss ein Präsentationsdeck, eine geplante Agen
 
 Es ist wichtig, die Teilnehmer für den Projektstart zu beschreiben. Ein großes Team, das alle Entwickler und Benutzer umfasst, wird den Kick-off nur verkomplizieren. Es ist wichtig, von der Kundenseite aus wichtige Akteure wie Projektsponsoren, C-Level und Projektleiter aufzurufen. Nehmen Sie vom Projektteam aus den Projektleiter, den funktionalen Architekten, den technischen Architekten und den Interaktionsleiter auf.
 
-### Zu behandelnde Themen
+### Zu berücksichtigende Themen
 
 Themen, die Sie im Projektstart behandeln müssen, hängen von der Projektgröße, den Anforderungen und der Technologie ab. Häufige Themen sind:
 
@@ -51,7 +51,7 @@ Themen, die Sie im Projektstart behandeln müssen, hängen von der Projektgröß
 - Zeitpläne
 - Lieferziele
 - Milestones
-- Vorgeschlagene Daten
+- Vorgeschlagene Datumsangaben
 - Kommunikationsmodus
 - Schulung
 - Test
@@ -81,7 +81,7 @@ Der Zweck des Design-Workshops besteht darin, das Gehirn zu bilden, wie der Kund
 - Ergebnisse definieren
 - Sketch Sketch Sketch!
 - Teams auf Kundenseite zusammenstellen, um Feedback zur Arbeit der jeweils anderen zu erhalten
-- Beachten Sie die &quot;Gefällt mir&quot;-Klicks und &quot;Gefällt mir&quot;-Klicks
+- Beachten Sie die &quot;Gefällt mir&quot;- und &quot;Gefällt mir&quot;-Klicks
 - Tracking-Zeit
 
 ## Technisch
@@ -90,7 +90,7 @@ Der Zweck eines technischen Workshops besteht darin, die Details der technischen
 
 - Teamkompetenz intern
 - Integration
-- Programmiersprache
+- Codierungssprache
 - Order Management System (OMS)
 - Enterprise Resource Planning (ERP)
 - Aktuelle oder neue Plattform
@@ -103,7 +103,7 @@ Das Einrichten einer E-Commerce-Site ist komplex und erfordert einen strengen Te
 
 - Browserkompatibilität
 - Seitenanzeige
-- Verwendbarkeit
+- Benutzerfreundlichkeit
 - Inhalt
 - Verfügbarkeit
 - Produkte

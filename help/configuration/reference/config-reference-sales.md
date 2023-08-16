@@ -98,7 +98,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | E-Mail-Kopiermethode für Rechnungskommentare senden | `sales_email/invoice_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert | `sales_email/shipment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Versand-E-Mail-Absender | `sales_email/shipment/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| VersandEmail-Vorlage | `sales_email/shipment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Versand-E-Mail-Vorlage | `sales_email/shipment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Versand-E-Mail-Vorlage für Gast | `sales_email/shipment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Versandversand-E-Mail-Kopiermethode | `sales_email/shipment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert | `sales_email/shipment_comment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -112,7 +112,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Email-Vorlage für Credit Memo für Gastbenutzer | `sales_email/creditmemo/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-Mail-Kopiermethode &quot;Credit Memo senden&quot; | `sales_email/creditmemo/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert | `sales_email/creditmemo_comment/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Credit Memo Kommentar E-Mail-Absender | `sales_email/creditmemo_comment/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Credit Memo Kommentar E-Mail-Sender | `sales_email/creditmemo_comment/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-Mail-Vorlage für Kommentar zu Credit Memo | `sales_email/creditmemo_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-Mail-Vorlage für Kommentar-Kommentar für Gastbenutzer | `sales_email/creditmemo_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-Mail-Kopiermethode für Credit Memo-Kommentare senden | `sales_email/creditmemo_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -152,7 +152,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Steuerklasse für Geschenkoptionen | `tax/classes/wrapping_tax_class` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Standardsteuerklasse für das Produkt | `tax/classes/default_product_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardsteuerklasse für Kunden | `tax/classes/default_customer_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Berechnungsmethode für Steuern | `tax/calculation/algorithm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Steuerberechnungsmethode basierend auf | `tax/calculation/algorithm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Steuerberechnung auf der Grundlage | `tax/calculation/based_on` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Katalogpreise | `tax/calculation/price_includes_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Versandkosten | `tax/calculation/shipping_includes_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -162,7 +162,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Grenzüberschreitenden Handel aktivieren | `tax/calculation/cross_border_trade_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardland | `tax/defaults/country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardstatus | `tax/defaults/region` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Standardpostcode | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Standard-Postleitzahl | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anzeigen von Produktpreisen im Katalog | `tax/display/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Versandpreise anzeigen | `tax/display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anzeigepreise | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -249,13 +249,13 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Name der Methode | `carriers/flatrate/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Typ | `carriers/flatrate/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Preis | `carriers/flatrate/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Berechnete Bearbeitungsgebühr | `carriers/flatrate/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Berechnete Bereitstellungsgebühr | `carriers/flatrate/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bearbeitungsgebühr | `carriers/flatrate/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Angezeigte Fehlermeldung | `carriers/flatrate/specificerrmsg` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schiff in die betreffenden Länder | `carriers/flatrate/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schiff in bestimmte Länder | `carriers/flatrate/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Methode anzeigen, falls nicht zutreffend | `carriers/flatrate/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sortierreihenfolge | `carriers/flatrate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sortierfolge | `carriers/flatrate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert | `carriers/freeshipping/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Titel | `carriers/freeshipping/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Name der Methode | `carriers/freeshipping/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -264,7 +264,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Schiff in die betreffenden Länder | `carriers/freeshipping/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schiff in bestimmte Länder | `carriers/freeshipping/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Methode anzeigen, falls nicht zutreffend | `carriers/freeshipping/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sortierreihenfolge | `carriers/freeshipping/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sortierfolge | `carriers/freeshipping/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert | `carriers/tablerate/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Titel | `carriers/tablerate/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Name der Methode | `carriers/tablerate/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -272,13 +272,13 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Virtual Products in Preisberechnung einbeziehen | `carriers/tablerate/include_virtual_price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Export | `carriers/tablerate/export` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Import | `carriers/tablerate/import` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Berechnete Bearbeitungsgebühr | `carriers/tablerate/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Berechnete Bereitstellungsgebühr | `carriers/tablerate/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bearbeitungsgebühr | `carriers/tablerate/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Angezeigte Fehlermeldung | `carriers/tablerate/specificerrmsg` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schiff in die betreffenden Länder | `carriers/tablerate/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schiff in bestimmte Länder | `carriers/tablerate/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Methode anzeigen, falls nicht zutreffend | `carriers/tablerate/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sortierreihenfolge | `carriers/tablerate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sortierfolge | `carriers/tablerate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für Kasse | `carriers/ups/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für RMA | `carriers/ups/active_rma` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | UPS-Typ | `carriers/ups/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -294,7 +294,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Maximale Paketgewichtung (Bitte konsultieren Sie Ihren Versandunternehmen für maximal unterstützte Versandgewichtung) | `carriers/ups/max_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Abnahmemethode | `carriers/ups/pickup` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mindestpaketgewichtung (Bitte konsultieren Sie Ihren Versandunternehmen für ein Mindestunterstütztes Versandgewicht) | `carriers/ups/min_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Berechnete Bearbeitungsgebühr | `carriers/ups/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Berechnete Bereitstellungsgebühr | `carriers/ups/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Handhabung angewendeter | `carriers/ups/handling_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bearbeitungsgebühr | `carriers/ups/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zulässige Methoden | `carriers/ups/allowed_methods` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -305,7 +305,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Schiff in die betreffenden Länder | `carriers/ups/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schiff in bestimmte Länder | `carriers/ups/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Methode anzeigen, falls nicht zutreffend | `carriers/ups/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sortierreihenfolge | `carriers/ups/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sortierfolge | `carriers/ups/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für Kasse | `carriers/usps/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für RMA | `carriers/usps/active_rma` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Modus | `carriers/usps/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -318,7 +318,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Mädchen | `carriers/usps/girth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Machbar | `carriers/usps/machinable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale Paketgewichtung (Bitte konsultieren Sie Ihren Versandunternehmen für maximal unterstützte Versandgewichtung) | `carriers/usps/max_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Berechnete Bearbeitungsgebühr | `carriers/usps/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Berechnete Bereitstellungsgebühr | `carriers/usps/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Handhabung angewendeter | `carriers/usps/handling_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bearbeitungsgebühr | `carriers/usps/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zulässige Methoden | `carriers/usps/allowed_methods` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -330,7 +330,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Schiff in bestimmte Länder | `carriers/usps/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Debuggen | `carriers/usps/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Methode anzeigen, falls nicht zutreffend | `carriers/usps/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sortierreihenfolge | `carriers/usps/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sortierfolge | `carriers/usps/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für Kasse | `carriers/fedex/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für RMA | `carriers/fedex/active_rma` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Titel | `carriers/fedex/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -341,7 +341,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Dropoff | `carriers/fedex/dropoff` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gewichtseinheit | `carriers/fedex/unit_of_measure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale Paketgewichtung (Bitte konsultieren Sie Ihren Versandunternehmen für maximal unterstützte Versandgewichtung) | `carriers/fedex/max_package_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Berechnete Bearbeitungsgebühr | `carriers/fedex/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Berechnete Bereitstellungsgebühr | `carriers/fedex/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Handhabung angewendeter | `carriers/fedex/handling_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bearbeitungsgebühr | `carriers/fedex/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bereitstellung von Wohnraum | `carriers/fedex/residence_delivery` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -355,12 +355,12 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Schiff in bestimmte Länder | `carriers/fedex/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Debuggen | `carriers/fedex/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Methode anzeigen, falls nicht zutreffend | `carriers/fedex/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sortierreihenfolge | `carriers/fedex/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sortierfolge | `carriers/fedex/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für Kasse | `carriers/dhl/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert für RMA | `carriers/dhl/active_rma` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Titel | `carriers/dhl/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Content-Typ | `carriers/dhl/content_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Berechnete Bearbeitungsgebühr | `carriers/dhl/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Berechnete Bereitstellungsgebühr | `carriers/dhl/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Handhabung angewendeter | `carriers/dhl/handling_action` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bearbeitungsgebühr | `carriers/dhl/handling_fee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gewichtung der Teilungsreihenfolge | `carriers/dhl/divide_order_weight` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -380,7 +380,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Schiff in die betreffenden Länder | `carriers/dhl/sallowspecific` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schiff in bestimmte Länder | `carriers/dhl/specificcountry` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Methode anzeigen, falls nicht zutreffend | `carriers/dhl/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sortierreihenfolge | `carriers/dhl/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Sortierfolge | `carriers/dhl/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
 

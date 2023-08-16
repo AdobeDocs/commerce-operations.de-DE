@@ -214,13 +214,13 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 Die Verwendung von Umgebungsvariablen hilft Ihnen dabei, bestimmte Werte festzulegen, die für jede Umgebung geändert werden können und sollten. Sie können beispielsweise für jede Umgebung eine andere Admin-URL verwenden. Wenn Sie diesen Wert als Umgebungsvariable festlegen, können Sie dies konfigurieren und bei Bedarf auch schnell über die Cloud-Benutzeroberfläche auf diesen Wert verweisen.
 
-Weitere Informationen zu diesem Thema finden Sie in Experience League [Commerce in Cloud-Infrastruktur-Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+Weitere Informationen zu diesem Thema finden Sie unter Experience League [Commerce in Cloud-Infrastruktur-Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
 
 ## Scanwerkzeuge für Software-Sicherheitsrisiken
 
 Die CI/CD-Pipeline kann ein leistungsstarkes Tool sein und dazu beitragen, einige Aufgaben zu automatisieren. Insbesondere die Möglichkeit für einen Entwickler, Code zu übertragen, der ausnutzbar sein kann, ist immer eine reale Möglichkeit. Peer-Code-Rezensionen fangen solche Artikel normalerweise, aber weil es ein menschliches Element ist, treten Fehler auf. Die automatisierte Codescan reduziert die Möglichkeit unerwarteter Sicherheitslücken in einer neu eingeführten Funktion. Diese Tools können sogar eingesetzt werden, um das Zusammenführen von Code in die Live-Codebasis zu verhindern. Es gibt viele Möglichkeiten und Werkzeuge, um automatisierte Code-Sicherheits- und Qualitätsscans zu bieten. Es kann robuste benutzerdefinierte Tools geben, die jedoch ständig aktualisiert und angepasst werden müssen. Eine Alternative besteht darin, proaktiv aktualisierte Tools wie synk.io und den Code-Inspektor von Amazon anzuwenden.
 
-## Web Application Firewall
+## Web-Anwendungs-Firewall
 
 Eine Webanwendungs-Firewall oder eine WAF, wie häufig verwendet wird, wenn Sie mit DevOps oder einem Hosting-Anbieter sprechen.
 

@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >OpenSearch-Unterstützung wurde in Version 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Siehe [Migrieren des Elasticsearchs zu OpenSearch](../../../upgrade/prepare/opensearch-migration.md) für weitere Informationen.
 
-In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsecure* , damit Adobe Commerce eine Suchmaschine verwenden kann, die auf diesem Server ausgeführt wird. In diesem Abschnitt wird die Einrichtung der einfachen HTTP-Authentifizierung nicht beschrieben. wird in [Sichere Kommunikation mit Apache](#secure-communication-with-apache).
+In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsecure* , damit Adobe Commerce eine Suchmaschine verwenden kann, die auf diesem Server ausgeführt wird. In diesem Abschnitt wird die Einrichtung der einfachen HTTP-Authentifizierung nicht besprochen, wie hier beschrieben: [Sichere Kommunikation mit Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
 
 In diesem Abschnitt wird beschrieben, wie Sie die Kommunikation zwischen Apache und der Suchmaschine mit [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) Authentifizierung mit Apache. Weitere Optionen finden Sie in einer der folgenden Ressourcen:
 
-* [Tutorial zur Authentifizierung und Autorisierung in Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Tutorial zur Authentifizierung und Autorisierung von Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Siehe einen der folgenden Abschnitte:
 
@@ -95,7 +95,7 @@ Siehe einen der folgenden Abschnitte:
 
 ### Kennwort erstellen
 
-Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle außerhalb des Basisverzeichnisses des Webservers suchen. In diesem Beispiel wird gezeigt, wie die Kennwortdatei in einem neuen Verzeichnis gespeichert wird.
+Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle außerhalb des Basisverzeichnisses für Ihren Webserver finden. In diesem Beispiel wird gezeigt, wie die Kennwortdatei in einem neuen Verzeichnis gespeichert wird.
 
 #### Installieren Sie bei Bedarf htpasswd
 
@@ -107,7 +107,7 @@ Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle
    which htpasswd
    ```
 
-   Wenn ein Pfad angezeigt wird, wird er installiert. wenn der Befehl keine Ausgabe zurückgibt, `htpasswd` nicht installiert ist.
+   Wenn ein Pfad angezeigt wird, wird er installiert. Wenn der Befehl keine Ausgabe zurückgibt, `htpasswd` nicht installiert ist.
 
 1. Installieren Sie bei Bedarf `htpasswd`:
 
@@ -134,7 +134,7 @@ Wo
 
   In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Wahl des Benutzers liegt bei Ihnen.
 
-   * Einrichten des Elasticsearchs: der Benutzer `magento_elasticsearch` in diesem Beispiel
+   * Einrichten eines Elasticsearchs: Der Benutzer hat den Namen `magento_elasticsearch` in diesem Beispiel
 
 * `<password file name>` muss eine ausgeblendete Datei sein (beginnt mit `.`) und sollte den Namen des Benutzers widerspiegeln. Weitere Informationen finden Sie in den Beispielen weiter unten in diesem Abschnitt .
 
@@ -143,7 +143,7 @@ Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benu
 #### Beispiele
 
 **Beispiel 1: cron**
-Sie müssen die Authentifizierung für nur einen Benutzer für Cron einrichten. in diesem Beispiel verwenden wir den Webserver-Benutzer. Geben Sie die folgenden Befehle ein, um eine Kennwortdatei für den Webserver-Benutzer zu erstellen:
+Sie müssen die Authentifizierung nur für einen Benutzer für Cron einrichten. In diesem Beispiel verwenden wir den Webserver-Benutzer. Geben Sie die folgenden Befehle ein, um eine Kennwortdatei für den Webserver-Benutzer zu erstellen:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Beispiel 2: Elasticsearch**
-Sie müssen die Authentifizierung für zwei Benutzer einrichten: eine mit Zugriff auf nginx und eine mit Zugriff auf Elasticsearch. Geben Sie die folgenden Befehle ein, um Kennwortdateien für diese Benutzer zu erstellen:
+Sie müssen die Authentifizierung für zwei Benutzer einrichten: einen mit Zugriff auf nginx und einen mit Zugriff auf Elasticsearch. Geben Sie die folgenden Befehle ein, um Kennwortdateien für diese Benutzer zu erstellen:
 
 ```bash
 mkdir -p /usr/local/apache/password

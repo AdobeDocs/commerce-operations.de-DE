@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Konfigurieren von Redis
 
-Zu den Redivfunktionen gehören:
+Zu den Redis-Funktionen gehören:
 
 - PHP-Sitzungsspeicher
 - Tag-basierte Cache-Bereinigung ohne `foreach` Schleifen
-- On-Disk speichert und Übergeordnet-/Slave-Replikation
+- On-Disk speichert und Master-/Slave-Replikation
 
 ## Installieren von Redis
 
@@ -33,11 +33,11 @@ Abhängig von Ihrer Installation finden Sie Ihre Redis-Konfiguration in der Rege
 
 Um die Redis-Instanz für Ihre Anforderungen zu optimieren, erzielen Sie die besten Ergebnisse, indem Sie eine dedizierte Instanz für jede Sitzung, jeden Commerce-Cache und jeden FPC verwenden.
 
-Für Sitzungen empfiehlt Adobe, dass Sie die Persistenz aktivieren, um Redis-Daten mithilfe einer der folgenden Persistenzoptionen auf die Festplatte zu kopieren: reguläre Redis Database Backup (RDB)-Momentaufnahmen oder Persistenzprotokolle &quot;Append Only File&quot;(AOF).
+Für Sitzungen empfiehlt Adobe, dass Sie die Persistenz aktivieren, um Redis-Daten mithilfe einer der folgenden Persistenzoptionen auf die Festplatte zu kopieren: reguläre Redis Database Backup (RDB)-Snapshots oder Persistenzprotokolle &quot;Append Only File&quot;(AOF).
 
 - **Redis Database Backup** (RDB) Momentaufnahmen speichern die gesamte Datenbank nach einer bestimmten Zeit in einer Dump-Datei, wenn sich seit der letzten Speicherung eine Mindestanzahl von Schlüsseln geändert hat. Verwenden Sie die `save` -Einstellung in der `redis.conf` -Datei, um diese Einstellung zu konfigurieren.
 
-- **Nur Datei anhängen** (AOF) speichert jeden Schreibvorgang, der an Redis gesendet wird, in einer Journaldatei. Redis liest diese Datei nur beim Neustart und verwendet sie zum Wiederherstellen des ursprünglichen Datensatzes.
+- **Nur anhängen-Datei** (AOF) speichert jeden Schreibvorgang, der an Redis gesendet wird, in einer Journaldatei. Redis liest diese Datei nur beim Neustart und verwendet sie zum Wiederherstellen des ursprünglichen Datensatzes.
 
 Sie können auch die Optionen RDB und AOF gleichzeitig aktivieren. Weitere Informationen, einschließlich der Vor- und Nachteile der Persistenzoptionen, finden Sie im Abschnitt [Dokumentation zur Redis-Persistenz](https://redis.io/topics/persistence).
 

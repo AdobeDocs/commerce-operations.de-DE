@@ -1,13 +1,13 @@
 ---
 title: Einrichten des Entwicklungssystems
 description: Erfahren Sie, wie Sie ein Entwicklungssystem für die Commerce-Anwendung einrichten.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 242e9a38-2eb2-4090-8f59-3fd588f7ad3a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
-
 
 # Einrichten des Entwicklungssystems
 
@@ -24,6 +24,6 @@ Sie können über eine beliebige Anzahl von Entwicklungssystemen verfügen, sofe
    - `pub/static` Verzeichnis (und Unterverzeichnisse)
    - `app/etc/env.php` file
 
-- Stellen Sie sicher `app/etc/config.php` is _enthalten_ in der Quell-Code-Verwaltung
+- Stellen Sie sicher `app/etc/config.php` is _enthalten_ in der Quellcodeverwaltung
 
 Wenn Sie Git verwenden, wird die `.gitignore` -Datei stellt die meisten der vorangehenden bereit. Siehe [`.gitignore` reference](../reference/config-reference-gitignore.md).

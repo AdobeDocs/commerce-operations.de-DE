@@ -1,13 +1,13 @@
 ---
 title: Projektmanagement
 description: Wenden Sie bekannte Frameworks an, um Ihr E-Commerce-Projekt zu verwalten.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 514e2317-f409-4079-bdee-1596f6635467
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # Projektmanagement
 
@@ -15,9 +15,9 @@ Projektmanagement ist die Anwendung von Wissen, Fähigkeiten, Werkzeugen und Tec
 
 Im folgenden Diagramm werden die fünf Phasen des Projektmanagements und der Lebenszyklus des Projektmanagements beschrieben:
 
-![Lebenszyklusdiagramm für das Projekt-Management](../../assets/playbooks/project-management-lifecycle.png)
+![Lebenszyklus-Diagramm des Projektmanagements](../../assets/playbooks/project-management-lifecycle.png)
 
-Der Lebenszyklus des Projektmanagements bietet einen zeitnahen und kontrollierten Bereitstellungsprozess, der für einen Vorteil ist. Projektbeteiligte. Der erste Schritt bei der Bereitstellung eines erfolgreichen E-Commerce-Projekts ist das Projektmanagement. Der richtige Ansatz und die richtige Methodik sind erforderlich, damit das Team das Projekt effizient und effizient durchführen kann.
+Der Lebenszyklus des Projektmanagements bietet einen zeitnahen und kontrollierten Bereitstellungsprozess, von dem die Projektbeteiligten profitieren. Der erste Schritt bei der Bereitstellung eines erfolgreichen E-Commerce-Projekts ist das Projektmanagement. Der richtige Ansatz und die richtige Methodik sind erforderlich, damit das Team das Projekt effizient und effizient durchführen kann.
 
 
 Einige Teams wählen für ihre E-Commerce-Projekte die Scrum-Projektmanagement-Methode. Die unten aufgeführten Scrum-Funktionen helfen bei der Vereinfachung und Verwaltung des Projekts:
@@ -28,7 +28,7 @@ Einige Teams wählen für ihre E-Commerce-Projekte die Scrum-Projektmanagement-M
 - Planen der Sitzung für jeden Sprint
 - Sprint-Retrospektiven
 
-![Abbildung eines Agile Lebenszyklusdiagramms](../../assets/playbooks/scrum-lifecycle.png)
+![Abbildung eines agilen Lebenszyklus](../../assets/playbooks/scrum-lifecycle.png)
 
 Scrum unterstützt Sie bei der Verwaltung von Änderungen während des Projekts, ermöglicht es Teams, schnelle Ergebnisse anzuzeigen, ist flexibel und erhöht die Zusammenarbeit.
 
@@ -36,17 +36,17 @@ Scrum unterstützt Sie bei der Verwaltung von Änderungen während des Projekts,
 
 Ein grundlegender E-Commerce-Projektmanagementplan umfasst:
 
-- **Analyse** - In der Anfangsphase eines Projekts muss das Unternehmen eine Analyse durchführen, einschließlich einer Analyse des Marktes und der Konkurrentengeschäftes, um die Stärken und Schwächen des Unternehmens zu verstehen.
+- **Analyse**—In der Anfangsphase eines Projekts muss das Unternehmen eine Analyse durchführen, einschließlich einer Analyse der Märkte und Konkurrenten, um die Stärken und Schwächen des Unternehmens zu verstehen.
 
-- **Anforderungen** - Definieren Sie detaillierte Anforderungen daran, was die Organisation am Ende des Projekts möchte, um vorhandene Fähigkeiten zu verbessern und/oder neue Funktionen und/oder Integrationen zu implementieren.
+- **Voraussetzungen**—Definieren Sie detaillierte Anforderungen, die die Organisation am Ende des Projekts hinsichtlich der Verbesserung vorhandener Fähigkeiten und/oder der Implementierung neuer Funktionen und/oder Integrationen benötigt.
 
-- **Drittanbieter**: In dieser Phase ordnen Sie die erforderlichen Drittanbieterintegrationen (z. B. Zahlung, Versand, Bewertungen und Überprüfungen) zu.
+- **Drittanbieter**—In dieser Phase ordnen Sie die erforderlichen Drittanbieterintegrationen (z. B. Zahlung, Versand, Bewertungen und Überprüfungen) zu.
 
-- **Design** - Brainstorm-Designspezifische Anforderungen für Vorlagen und das Markenbuch des Unternehmens.
+- **Design**—Brainstorm designspezifische Anforderungen für Vorlagen und das Markenbuch des Unternehmens.
 
-- **Migration** - Planen Sie die Schritte für die Migration von Inhalten und Daten.
+- **Migration**—Planen Sie die Schritte für die Migration von Inhalten und Daten.
 
-- **E-Commerce-Plattform** - Analysieren und Fertigstellen der Plattform, die für das Unternehmen zur Erfüllung der Anforderungen erforderlich ist.
+- **E-Commerce-Plattform**—Analysieren und Fertigstellen der Plattform, die für das Unternehmen zur Erfüllung der Anforderungen erforderlich ist.
 
 ## Best Practices
 

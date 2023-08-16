@@ -30,7 +30,7 @@ Sie können über ein Buildsystem verfügen, das die folgenden Anforderungen erf
 
 >[!WARNING]
 >
->Die Datenbankverbindung ist nicht erforderlich, wenn sie bereits in `config.php`; see [Konfiguration exportieren](../cli/export-configuration.md). Andernfalls ist die Datenbankverbindung erforderlich.
+>Die Datenbankverbindung ist nicht erforderlich, wenn sie bereits in `config.php`; siehe [Konfiguration exportieren](../cli/export-configuration.md). Andernfalls ist die Datenbankverbindung erforderlich.
 
 >[!INFO]
 >
@@ -75,7 +75,7 @@ Installieren Sie PHP auf [CentOS] oder [Ubuntu].
 
 ### Einrichten des Build-Systems
 
-So richten Sie das Build-System ein:
+Einrichten des Build-Systems:
 
 1. Melden Sie sich beim Build-System als Eigentümer des Dateisystems an oder wechseln Sie zu ihm.
 1. Rufen Sie den Commerce-Code aus der Quell-Code-Verwaltung ab.

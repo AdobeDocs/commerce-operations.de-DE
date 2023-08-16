@@ -16,7 +16,7 @@ Die Bedeutung des E-Commerce nimmt rapide zu. Die Verbraucher kaufen lieber onli
 
 ## ZahlungsGateways
 
-Es gibt viele Zahlungskanäle von Drittanbietern, wie z. B. Braintree, Stripe und Square, die die Verarbeitung von Online-Transaktionen für Unternehmen verwalten. Unternehmen können mit Payment Gateway Providern zusammenarbeiten, um ihre Transaktionen zu verwalten.
+Es gibt viele Zahlungskanäle von Drittanbietern, wie Braintree, Stripe und Square, die die Verarbeitung von Online-Transaktionen für Unternehmen verwalten. Unternehmen können mit Payment Gateway Providern zusammenarbeiten, um ihre Transaktionen zu verwalten.
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Auf dem Markt gibt es verschiedene Zahlungsmethoden, darunter:
 
 - Kredit- und Debitkarten (Mastercard, Visa und American Express)
 - Elektronische Brieftaschen (Apple Pay, Google Pay, PayPal und Afterpay)
-- Interbankenüberweisungen
+- Überweisungen
 - Mobile Zahlungen
 - Geschenkkarten
 - Abonnements

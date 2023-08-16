@@ -25,7 +25,7 @@ Bei der DNS-Suche wird ermittelt, zu welcher IP-Adresse der Domänenname gehört
 
 ### CDN (Content Delivery Network)
 
-Verwenden Sie ein CDN, um die Leistung beim Herunterladen von Assets zu optimieren. Adobe Commerce verwendet Fastly. Wenn Sie über eine lokale Implementierung von Adobe Commerce verfügen, sollten Sie auch erwägen, eine CDN-Ebene hinzuzufügen.
+Verwenden Sie ein CDN zur Optimierung der Leistung beim Herunterladen von Assets. Adobe Commerce verwendet Fastly. Wenn Sie über eine lokale Implementierung von Adobe Commerce verfügen, sollten Sie auch erwägen, eine CDN-Ebene hinzuzufügen.
 
 ### Weblatenz
 
@@ -109,7 +109,7 @@ Es wird immer empfohlen, Leistungstests vor jeder Produktionsversion durchzufüh
 
 ### Suche {#search-heading}
 
-Elasticsearch (oder OpenSearch) ist ab Adobe Commerce-Version 2.4 erforderlich. Es empfiehlt sich jedoch auch, es für Versionen vor 2.4 zu aktivieren.
+Elasticsearch (oder OpenSearch) ist ab Adobe Commerce-Version 2.4 erforderlich, es empfiehlt sich jedoch auch, es für Versionen vor 2.4 zu aktivieren.
 
 ## Betriebssystem
 

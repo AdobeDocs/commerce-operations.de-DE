@@ -1,13 +1,13 @@
 ---
 title: Code-Compiler
 description: Erfahren Sie, wie Sie den Code-Compiler über die Befehlszeile ausführen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '174'
 ht-degree: 0%
 
 ---
-
 
 # Code-Compiler
 
@@ -58,7 +58,7 @@ In einigen Fällen möchten Sie möglicherweise Code kompilieren, bevor Sie die 
    Generated code and dependency injection configuration successfully.
    ```
 
-Informationen zum Kompilieren von Code ohne Datenbank finden Sie unter [Bereitstellen von statischen Ansichtsdateien ohne Installation von Magento](../cli/static-view-file-deployment.md).
+Informationen zum Kompilieren von Code ohne Datenbank finden Sie unter [Bereitstellen von statischen Ansichtsdateien ohne Installieren von Magento](../cli/static-view-file-deployment.md).
 
 <!-- link definitions -->
 

@@ -1,13 +1,13 @@
 ---
 title: Operatives Playbook
-description: Ziel des Operationellen Handelsbuchs
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Ziel des Operationellen Handbuchs für den Handel
+exl-id: f072f6ca-3654-4bd2-a32e-000358bb67b3
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Operationelles Playbook
 
@@ -17,7 +17,7 @@ Wir haben dieses Playbook für alle Branchen und Kunden (B2C und B2B) erstellt, 
 
 Dieses Playbook soll Ihnen helfen, einige häufige Fehler zu vermeiden, die wir bei weniger erfolgreichen E-Commerce-Website-Management- und Bereitstellungsteams identifiziert haben. Die Empfehlungen und Best Practices in diesem Playbook sollen parallel zu Ihrer Technologielösung auf alle Branchen und Unternehmen angewendet werden, um sicherzustellen, dass Ihr Unternehmen in der Lage ist, aus Ihrer Investition Nutzen zu ziehen und die Plattform durchgängig zu nutzen.
 
-Die Bücher in dieser Reihe verwenden eine gemeinsame Digital-Governance-Struktur, die sich auf die Schlüsselbereiche Führung, Strategie, Personen, Lösung, Produkt und Prozess konzentriert, um einen robusten Ansatz für die Überprüfung Ihres Unternehmens bereitzustellen, unabhängig davon, ob Sie eine neue Funktion auf Ihrer Plattform bereitstellen oder einen robusten E-Commerce-Fahrplan für den Handel mit Adoben planen.
+Die Bücher in dieser Reihe verwenden eine gemeinsame digitale Governance-Struktur, die sich auf die Schlüsselbereiche Führung, Strategie, Personen, Lösung, Produkt und Prozess konzentriert, um einen robusten Ansatz für die Überprüfung Ihres Unternehmens bereitzustellen, unabhängig davon, ob Sie eine neue Funktion auf Ihrer Plattform bereitstellen oder einen robusten E-Commerce-Fahrplan für Adobe Commerce planen.
 
 Die Zielgruppe für dieses Playbook enthält:
 
@@ -30,19 +30,19 @@ Die Zielgruppe für dieses Playbook enthält:
 
 ## Über dieses Playbook
 
-Dieses Dokument basiert auf einer Struktur, die Ihnen dabei hilft, die wichtigsten Schwerpunktbereiche zu verstehen, um aus Ihren Investitionen in Adobe Commerce einen maximalen Nutzen zu ziehen. Diese Struktur basiert auf dem Deloitte and Adobe Commerce Governance Framework, das die geeignete Geschäftsumgebung für den Erfolg digitaler Vorgänge und Umwandlungen schafft. Er umfasst:
+Dieses Dokument basiert auf einer Struktur, die Ihnen dabei hilft, die wichtigsten Schwerpunktbereiche zu verstehen, um maximalen Nutzen aus Ihrer Investition in Adobe Commerce zu ziehen. Diese Struktur basiert auf dem Deloitte- und Adobe Commerce Governance Framework, das die geeignete Geschäftsumgebung für den Erfolg digitaler Vorgänge und Umwandlungen schafft. Er umfasst:
 
-- **Führung**: Executive Buy-In und Unterstützung für die erfolgreiche Verwaltung einer E-Commerce-Plattform.
+- **Führung**—Executive Buy-in und Unterstützung für die erfolgreiche Verwaltung einer E-Commerce-Plattform.
 
-- **Strategie** - Klarheit und Ausrichtung der wichtigsten Geschäftsziele zur Bewertung der digitalen Leistung und des E-Commerce-Betriebs.
+- **Strategie**—Klarheit und Ausrichtung der wichtigsten Geschäftsziele für die Bewertung der digitalen Leistung und des E-Commerce-Betriebs.
 
-- **Lösung** - Hosting und Bewertung der Infrastruktur für unterschiedliche Geschäfts- und E-Commerce-Anforderungen.
+- **Lösung**—Hosting- und Infrastrukturbewertung für unterschiedliche Anforderungen an Unternehmen und E-Commerce.
 
-- **Personen** - Ressourcen, Fachwissen und die entsprechende Teamstruktur, um E-Commerce-Vorgänge effektiv durchzuführen.
+- **Personen**- Ressourcen, Fachwissen und die entsprechende Teamstruktur, um E-Commerce-Vorgänge effektiv durchzuführen.
 
-- **Prozess** - Verfahren, Projekt-Management und Workflows für die effektive Verwaltung einer E-Commerce-Site.
+- **Prozess**—Verfahren, Projekt-Management und Workflows für die effektive Verwaltung einer E-Commerce-Site.
 
-- **Produkt**: Allgemeine E-Commerce-Lösungen, allgemeine Integrationen und Automatisierungen.
+- **Produkt**—Allgemeine E-Commerce-Lösungen, allgemeine Integrationen und Automatisierungen.
 
 >[!NOTE]
 >

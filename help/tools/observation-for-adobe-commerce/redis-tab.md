@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL Redis] tab
-description: Erfahren Sie mehr über die [!UICONTROL Redis] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL Redis] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -58,10 +58,10 @@ Die **[!UICONTROL Redis used memory]** frame zeigt die Knotennutzung des Speiche
 
 ![Ändert Änderungen seit dem letzten db-Speichern](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] ist speicherspeicherresidenz und speichert die Informationen für die Speicherung. Die **[!UICONTROL Redis changes since last db save]** frame gibt die Anzahl der Speicheränderungen an, die seit dem Speichern der letzten Datenbank vorgenommen wurden. Siehe [Redis persistence](https://redis.io/docs/manual/persistence/) Weitere Informationen zu [!DNL Redis's] Persistenz.
+[!DNL Redis] ist speicherspeicherresidenz und speichert die Informationen für die Speicherung. Die **[!UICONTROL Redis changes since last db save]** frame gibt die Anzahl der Speicheränderungen an, die seit dem Speichern der letzten Datenbank vorgenommen wurden. Siehe Abschnitt [Redis persistence](https://redis.io/docs/manual/persistence/) Weitere Informationen zu [!DNL Redis's] Persistenz.
 
 ## [!UICONTROL Redis synchronization from Log]
 
 ![Redivensynchronisation aus Protokoll](../../assets/tools/observation-for-adobe-commerce/redis-tab-9.jpg)
 
-Die **[!UICONTROL Redis synchronization from Log]** frame konzentriert sich auf Fehler, die während [!DNL Redis] Synchronisation oder Fehler, die aufgrund von Synchronisierungsproblemen auftreten. Weitere Informationen finden Sie unter [!DNL Redis], siehe [[!DNL Redis] Dokumentation](https://redis.io/docs/).
+Die **[!UICONTROL Redis synchronization from Log]** frame konzentriert sich auf Fehler, die während [!DNL Redis] Synchronisation oder Fehler, die aufgrund von Synchronisierungsproblemen auftreten. Weitere Informationen unter [!DNL Redis], siehe [[!DNL Redis] Dokumentation](https://redis.io/docs/).

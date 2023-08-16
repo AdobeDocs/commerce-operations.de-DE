@@ -42,11 +42,11 @@ Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, kön
    * Siehe [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) Dokumentation.
 1. Führen Sie je nach den gefundenen Problemen Schritte aus, um die Abfrage zu korrigieren, damit sie schneller ausgeführt werden kann.
 
-## Stellen Sie sicher, dass alle Tabellen über einen Primärschlüssel verfügen.
+## Überprüfen, ob alle Tabellen über einen Primärschlüssel verfügen
 
 Die Definition von Primärschlüsseln ist eine Voraussetzung für ein gutes Datenbank- und Tabellendesign. Mit Primären Schlüsseln können Sie eine Zeile in einer beliebigen Tabelle eindeutig identifizieren.
 
-Wenn Tabellen ohne Primärschlüssel vorhanden sind, verwendet die standardmäßige Datenbank-Engine für Adobe Commerce (InnoDB) den ersten eindeutigen Schlüssel (nicht den Nullschlüssel) als Primärschlüssel. Wenn kein eindeutiger Schlüssel verfügbar ist, erstellt InnoDB einen ausgeblendeten Primärschlüssel (6 Byte). Das Problem mit einem implizit definierten Primärschlüssel besteht darin, dass Sie keine Kontrolle darüber haben. Darüber hinaus wird der implizite Wert für alle Tabellen ohne Primärschlüssel global zugewiesen. Diese Konfiguration kann bei gleichzeitigen Schreibvorgängen für diese Tabellen zu Konflikten führen. Dies kann zu Leistungsproblemen führen, da die Tabellen auch die Indexinkrementierung des globalen ausgeblendeten Primärschlüssels gemeinsam nutzen.
+Wenn Sie über Tabellen ohne Primärschlüssel verfügen, verwendet die standardmäßige Datenbank-Engine für Adobe Commerce (InnoDB) den ersten eindeutigen Schlüssel (nicht den Nullschlüssel) als Primärschlüssel. Wenn kein eindeutiger Schlüssel verfügbar ist, erstellt InnoDB einen ausgeblendeten Primärschlüssel (6 Byte). Das Problem mit einem implizit definierten Primärschlüssel besteht darin, dass Sie keine Kontrolle darüber haben. Darüber hinaus wird der implizite Wert für alle Tabellen ohne Primärschlüssel global zugewiesen. Diese Konfiguration kann bei gleichzeitigen Schreibvorgängen für diese Tabellen zu Konflikten führen. Dies kann zu Leistungsproblemen führen, da die Tabellen auch die Indexinkrementierung des globalen ausgeblendeten Primärschlüssels gemeinsam nutzen.
 
 Vermeiden Sie diese Probleme, indem Sie einen Primärschlüssel für Tabellen definieren, die keine haben.
 

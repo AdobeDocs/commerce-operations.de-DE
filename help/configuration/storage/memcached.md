@@ -44,7 +44,7 @@ Commerce verwendet die Zwischenspeicherung für die Sitzungsspeicherung, nicht a
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
-**Überprüfen der zwischengespeicherten Funktionsweise mit Commerce**:
+**So überprüfen Sie die zwischengespeicherten Arbeiten mit Commerce**:
 
 1. Löschen Sie den Inhalt der folgenden Ordner unter Ihrem Commerce-Installationsordner:
 

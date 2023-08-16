@@ -16,18 +16,18 @@ In diesem Abschnitt finden Sie Anweisungen zur Installation von gecacht auf Ubun
 
 >[!INFO]
 >
->Adobe empfiehlt die Verwendung der zwischengespeicherten Version 3.0.5 oder neuer.
+>Adobe empfiehlt die Verwendung der gespeicherten Version 3.0.5 oder neuer.
 
 Da PHP keine native Unterstützung für Memcache hat, müssen Sie eine Erweiterung für PHP installieren, um sie zu verwenden. Es sind zwei PHP-Erweiterungen verfügbar, und es ist wichtig, zu dekodieren, welche verwendet werden sollen:
 
 - `memcache` (_n d_) - eine ältere, aber beliebte Erweiterung, die nicht regelmäßig gepflegt wird.
 Die `memcache` Erweiterung derzeit _nicht_ arbeitet mit PHP 7. Siehe [PHP-Dokumentation für memcache](https://www.php.net/manual/en/book.memcache.php).
 
-   Der genaue Name lautet `php5-memcache` für Ubuntu.
+  Der genaue Name lautet `php5-memcache` für Ubuntu.
 
 - `memcached` (_mit`d`_) - eine neuere und gepflegte Erweiterung, die mit PHP 7 kompatibel ist. Siehe [PHP-Dokumentation für zwischengespeicherte](https://www.php.net/manual/en/book.memcached.php).
 
-   Der genaue Name lautet `php5-memcached` für Ubuntu.
+  Der genaue Name lautet `php5-memcached` für Ubuntu.
 
 ## Installieren und konfigurieren Sie gecached auf Ubuntu
 
@@ -46,9 +46,9 @@ Die `memcache` Erweiterung derzeit _nicht_ arbeitet mit PHP 7. Siehe [PHP-Dokume
 1. Ändern Sie die Einstellung der zwischengespeicherten Konfiguration für `CACHESIZE` und `-l`:
 
    1. Öffnen `/etc/memcached.conf` in einem Texteditor.
-   1. Suchen Sie die `-m` Parameter.
+   1. Suchen Sie die `-m` -Parameter.
    1. Ändern Sie den Wert auf mindestens `1GB`
-   1. Suchen Sie die `-l` Parameter.
+   1. Suchen Sie die `-l` -Parameter.
    1. Ändern Sie den Wert in `127.0.0.1` oder `localhost`
    1. Speichern Sie Ihre Änderungen in `memcached.conf` und beenden Sie den Texteditor.
    1. Starten Sie die Zwischenspeicherung neu.
@@ -63,7 +63,7 @@ Die `memcache` Erweiterung derzeit _nicht_ arbeitet mit PHP 7. Siehe [PHP-Dokume
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
-## Überprüfen Sie die zwischengespeicherten Vorgänge, bevor Sie Magento installieren.
+## Überprüfen Sie die zwischengespeicherten Vorgänge vor der Installation von Magento
 
 Adobe empfiehlt, gecachete Tests durchzuführen, um sicherzustellen, dass sie funktionieren, bevor Sie Commerce installieren. Dies dauert nur wenige Minuten und kann die Fehlerbehebung später vereinfachen.
 
@@ -91,7 +91,7 @@ So überprüfen Sie, ob die zwischengespeicherten Daten vom Webserver erkannt we
 
    Vergewissern Sie sich, dass Sie die zwischengespeicherte Version 3.0.5 oder höher verwenden.
 
-   Wenn die zwischengespeicherte Seite nicht angezeigt wird, starten Sie den Webserver neu und aktualisieren Sie die Browserseite. Wenn es immer noch nicht angezeigt wird, überprüfen Sie, ob die `php-pecl-memcached` -Erweiterung.
+   Wenn die zwischengespeicherte Seite nicht angezeigt wird, starten Sie den Webserver neu und aktualisieren Sie die Browserseite. Wenn es immer noch nicht angezeigt wird, überprüfen Sie, ob Sie die `php-pecl-memcached` -Erweiterung.
 
 ### Überprüfen, ob zwischengespeicherte Daten zwischengespeichert werden können
 

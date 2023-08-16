@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL Security] tab
-description: Erfahren Sie mehr über die [!UICONTROL Security] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL Security] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: b567e4a4-534e-4151-b6f6-bf59b1bd4028
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -34,13 +34,13 @@ Die **[!UICONTROL Create Account access]** frame zeigt die Anzahl neuer Kontoakt
 
 ## [!UICONTROL POST activities]
 
-Die **[!UICONTROL POST activities]** -Frame zeigt die `POST` Aktivitäten für die Site, facettiert auf `client_ip` von [!DNL Fastly] Protokolle. Er zeigt auch die URL an, auf die die IP-Adresse zugreift.
+Die **[!UICONTROL POST activities]** -Frame zeigt die `POST` Aktivitäten für die Site, facettiert auf `client_ip` aus dem [!DNL Fastly] Protokolle. Er zeigt auch die URL an, auf die die IP-Adresse zugreift.
 
 ![POST-Aktivitäten](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
-Die **[!UICONTROL POST activities summary table]** frame zeigt die Zusammenfassung `POST` Aktivitäten für die Site, facettiert auf `client_ip` von [!DNL Fastly] Protokolle. Er zeigt auch die Anzahl der URLs an, auf die die IP-Adresse zugreift. Die Anzahl bezieht sich auf den ausgewählten Zeitraum.
+Die **[!UICONTROL POST activities summary table]** frame zeigt die Zusammenfassung `POST` Aktivitäten für die Site, facettiert auf `client_ip` aus dem [!DNL Fastly] Protokolle. Er zeigt auch die Anzahl der URLs an, auf die die IP-Adresse zugreift. Die Anzahl bezieht sich auf den ausgewählten Zeitraum.
 
 ![POST-activities-summary](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 

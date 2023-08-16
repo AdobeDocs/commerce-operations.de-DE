@@ -1,6 +1,6 @@
 ---
 title: Best Practices für die Verarbeitung und Speicherung von Zahlungen
-description: Erfahren Sie, wie Sie Zahlungsdetails sicher verarbeiten und speichern können.
+description: Erfahren Sie, wie Sie Zahlungsdetails sicher verarbeiten und speichern können
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
@@ -53,4 +53,4 @@ Die empfohlene Methode zur Verarbeitung von Karteninhaberdaten besteht darin, di
 
 ## Zusätzliche Informationen
 
-Wenn Sie nach empfohlenen Zahlungslösungen pro Adobe suchen, beachten Sie bitte [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Wenn Sie nach empfohlenen Zahlungslösungen durch Adobe suchen, beachten Sie bitte [Adobe-Zahlungsdienste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).

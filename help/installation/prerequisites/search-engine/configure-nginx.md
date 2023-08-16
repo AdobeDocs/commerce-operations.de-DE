@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 >OpenSearch-Unterstützung wurde in Version 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Siehe [Migrieren des Elasticsearchs zu OpenSearch](../../../upgrade/prepare/opensearch-migration.md) für weitere Informationen.
 
-In diesem Abschnitt wird beschrieben, wie Sie nginx als *unsecure* , damit Adobe Commerce eine Suchmaschine verwenden kann, die auf diesem Server ausgeführt wird. In diesem Abschnitt wird die Einrichtung der einfachen HTTP-Authentifizierung nicht beschrieben. wird in [Sichere Kommunikation mit nginx](#secure-communication-with-nginx).
+In diesem Abschnitt wird beschrieben, wie Sie nginx als *unsecure* , damit Adobe Commerce eine Suchmaschine verwenden kann, die auf diesem Server ausgeführt wird. In diesem Abschnitt wird die Einrichtung der einfachen HTTP-Authentifizierung nicht besprochen, wie hier beschrieben: [Sichere Kommunikation mit nginx](#secure-communication-with-nginx).
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 * [Erstellen von Kennwörtern](#create-a-password)
 * [Zugriff auf nginx einrichten](#set-up-access-to-nginx)
 * [Einrichten eines eingeschränkten Kontexts für die Suchmaschine](#set-up-a-restricted-context-for-the-search-engine)
-* [Sicherstellen, dass die Kommunikation sicher ist](#secure-communication-with-nginx)
+* [Sicherstellen der Kommunikation](#secure-communication-with-nginx)
 
 ### Kennwort erstellen
 
@@ -110,7 +110,7 @@ So erstellen Sie ein Kennwort:
    which htpasswd
    ```
 
-   Wenn ein Pfad angezeigt wird, wird er installiert. wenn der Befehl keine Ausgabe zurückgibt, `htpasswd` nicht installiert ist.
+   Wenn ein Pfad angezeigt wird, wird er installiert. Wenn der Befehl keine Ausgabe zurückgibt, `htpasswd` nicht installiert ist.
 
 1. Installieren Sie bei Bedarf `htpasswd`:
 
@@ -129,7 +129,7 @@ So erstellen Sie ein Kennwort:
 
    >[!WARNING]
    >
-   >Aus Sicherheitsgründen `<filename>` sollte ausgeblendet werden; Das heißt, es muss mit einem Punkt beginnen.
+   >Aus Sicherheitsgründen `<filename>` sollte ausgeblendet werden, d. h. sie muss mit einem Punkt beginnen.
 
 1. *(Optional).* Um Ihrer Kennwortdatei einen weiteren Benutzer hinzuzufügen, geben Sie denselben Befehl ohne die `-c` (Erstellen):
 
@@ -147,7 +147,7 @@ In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den nginx-Serve
 >
 >Das folgende Beispiel zeigt eine *unsecure* Proxy. Um einen sicheren Proxy zu verwenden, fügen Sie Ihrem sicheren Serverblock den folgenden Inhalt (mit Ausnahme des Überwachungsanschlusses) hinzu.
 
-Verwenden Sie einen Texteditor, um entweder `/etc/nginx/conf.d/magento_es_auth.conf` (unsecure) oder Ihrem sicheren Serverblock mit folgendem Inhalt:
+Verwenden Sie einen Texteditor, um entweder `/etc/nginx/conf.d/magento_es_auth.conf` (unsecure) oder Ihrem sicheren Server-Block mit folgendem Inhalt:
 
 ```conf
 server {

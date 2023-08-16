@@ -35,7 +35,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Alle Produkte pro Seite zulassen | `catalog/frontend/list_allow_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Einfache Katalogkategorie verwenden | `catalog/frontend/flat_catalog_category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Einfache Katalogprodukte verwenden | `catalog/frontend/flat_catalog_product` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Muster pro Produkt | `catalog/frontend/swatches_per_product` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Farbfelder pro Produkt | `catalog/frontend/swatches_per_product` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Schreiben von Bewertungen | `catalog/review/allow_guest` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Warnhinweis zulassen, wenn sich der Produktpreis ändert | `catalog/productalert/allow_price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Preiswarnungs-E-Mail-Vorlage | `catalog/productalert/email_price_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -44,14 +44,14 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Warnhinweis-E-Mail-Absender | `catalog/productalert/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Häufigkeit | `catalog/productalert_cron/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Startzeit | `catalog/productalert_cron/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Fehler-E-Mail-Absender | `catalog/productalert_cron/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Fehler-E-Mail-Sender | `catalog/productalert_cron/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fehler-E-Mail-Vorlage | `catalog/productalert_cron/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktuell anzeigen | `catalog/recently_products/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardanzahl kürzlich angezeigter Produkte | `catalog/recently_products/viewed_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardanzahl kürzlich vergleichbarer Produkte | `catalog/recently_products/compared_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Grundlegendes Autostart-Video | `catalog/product_video/play_if_base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verknüpftes Video anzeigen | `catalog/product_video/show_related` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Auto-Neustart-Video | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Auto-Neustart | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Katalogpreisumfang | `catalog/price/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardproduktpreis | `catalog/price/default_product_price` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Produktanzahl anzeigen | `catalog/layered_navigation/display_product_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -102,7 +102,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | JavaScript-Kalender verwenden | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Reihenfolge der Datumsfelder | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zeitformat | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Jahr | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Jahresbereich | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren der Funktion &quot;Katalogereignisse&quot; | `catalog/magento_catalogevent/enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Aktivieren des Widgets &quot;Katalogereignis&quot;auf der Storefront | `catalog/magento_catalogevent/lister_output` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Anzahl der Ereignisse, die im Widget &quot;Event Slider&quot;angezeigt werden | `catalog/magento_catalogevent/lister_widget_limit` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -125,7 +125,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
-| Reduzieren des Lagerbestands bei platzierter Bestellung | `cataloginventory/options/can_subtract` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Lagern bei Bestellung reduzieren | `cataloginventory/options/can_subtract` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Festlegen des Status von Elementen auf &quot;Auf Lager&quot;, wenn die Bestellung abgebrochen wird | `cataloginventory/options/can_back_in_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Nicht vorrätige Produkte anzeigen | `cataloginventory/options/show_out_of_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Nur X linke Schwelle | `cataloginventory/options/stock_threshold_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -158,7 +158,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Sichtbare Attribute für Kategorieregeln | `visualmerchandiser/options/smart_attributes` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mindestwert-Schwelle | `visualmerchandiser/options/minimum_stock_threshold` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Farbattribut-Code | `visualmerchandiser/options/color_attribute_code` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Farbreihenfolge | `visualmerchandiser/options/color_order` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Farbauftrag | `visualmerchandiser/options/color_order` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
@@ -178,7 +178,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Aktiviert | `sitemap/generate/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Startzeit | `sitemap/generate/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Häufigkeit | `sitemap/generate/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Fehler-E-Mail-Absender | `sitemap/generate/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Fehler-E-Mail-Sender | `sitemap/generate/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fehler-E-Mail-Vorlage | `sitemap/generate/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale Anzahl von URLs pro Datei | `sitemap/limit/max_lines` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale Dateigröße | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -202,7 +202,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 {style="table-layout:auto"}
 
-## E-Mail an Freunde-Pfade
+## Email an Freunde-Pfade
 
 Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **E-Mail an einen Freund**.
 

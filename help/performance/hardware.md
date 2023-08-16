@@ -30,11 +30,11 @@ Magento hat unterschiedliche PHP-Speicheranforderungen, je nachdem, wie Ihr Syst
 
 Szenarien und erwartete PHP-Speicheranforderungen:
 
-* Webnode - nur Storefront-Seiten bereitstellen: 256 MB
-* Webnode zur Bereitstellung von Admin-Seiten mit einem großen Katalog: 1 GB
-* [!DNL Commerce] Cron-Indizierung einer Site mit einem großen Katalog: > 256 MB (siehe [advanced-setup](../performance/advanced-setup.md) , um eine optimale Leistung zu erzielen.)
+* Webnode nur für Storefront-Seiten: 256 MB
+* Webnode für Admin-Seiten mit großem Katalog: 1 GB
+* [!DNL Commerce] Cron-Indizierung einer Site mit einem großen Katalog: >256 MB (siehe [advanced-setup](../performance/advanced-setup.md) , um eine optimale Leistung zu erzielen.)
 * [!DNL Commerce] Kompilieren und Bereitstellen von statischen Assets: 756 MB
-* [!DNL Commerce] Profilerstellung für Leistungs-Toolkit: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE-Einstellungen
+* [!DNL Commerce] Profilgenerierung des Leistungs-Toolkits: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE-Einstellungen
 
 ### [!DNL MySQL]
 
@@ -42,11 +42,11 @@ Die [!DNL Commerce] -Datenbank (sowie jede andere Datenbank) auf die zum Speiche
 
 ### Caches
 
-Wenn Sie mehrere [!DNL Commerce] und unter Verwendung von Redis oder [!DNL Varnish] Beachten Sie für Ihre Caches die folgenden Grundsätze:
+Wenn Sie mehrere [!DNL Commerce] und mit Redis oder [!DNL Varnish] Beachten Sie für Ihre Caches die folgenden Grundsätze:
 
 * [!DNL Varnish] Die Invalidierung des gesamten Seitenspeichers ist wirksam. Empfehlen Sie genügend Arbeitsspeicher, der zugewiesen wird, um [!DNL Varnish] um Ihre beliebtesten Seiten im Speicher zu speichern
 * Sitzungs-Cache ist ein guter Kandidat, um eine separate Instanz von Redis zu konfigurieren.  Die Speicherkonfiguration für diesen Cache-Typ sollte die Strategie des Warenkorbabbruchs auf der Site berücksichtigen und berücksichtigen, wie lange eine Sitzung voraussichtlich im Cache verbleibt
-* Für Redis sollte ausreichend Speicher zur Verfügung stehen, damit alle anderen Caches im Speicher gespeichert werden können, um eine optimale Leistung zu erzielen.  Der Block-Cache ist der Schlüsselfaktor bei der Bestimmung des Speicherbedarfs, der konfiguriert werden muss.  Der Block-Cache wächst relativ zur Anzahl der Seiten auf einer Site (Anzahl der Stunden x Anzahl der Store-Ansichten)
+* Für Redis sollte ausreichend Speicher zur Verfügung stehen, damit alle anderen Caches im Speicher gespeichert werden können, um eine optimale Leistung zu erzielen.  Der Block-Cache ist der Schlüsselfaktor bei der Bestimmung des Speicherbedarfs, der konfiguriert werden muss.  Der Block-Cache wächst relativ zur Anzahl der Seiten auf einer Site (Anzahl der Stunden x Anzahl der Store-Ansichten).
 
 ## Netzwerkbandbreite
 

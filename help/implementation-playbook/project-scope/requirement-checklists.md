@@ -64,7 +64,7 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 ## Aktuelle Plattform
 
-- Wie wird die aktuelle Plattform gehostet? Intern, Hosting-Anbieter, private Cloud-Server oder gehostete Cloud-Server?
+- Wie wird die aktuelle Plattform gehostet: intern, Hosting-Anbieter, private Cloud-Server oder gehostete Cloud-Server?
 
 - Welche Umgebungen hat die aktuelle Plattform: Entwicklung, Qualitätssicherung, Vorproduktion, Produktion?
 
@@ -86,7 +86,7 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 - Durchschnittliche Besucher pro Tag?
 
-- Durchschnittliche gleichzeitige Sitzungen pro Stunde?
+- Durchschnittliche gleichzeitige Sitzungen pro Stunde
 
 - Durchschnittliche Seitenansichten pro Tag?
 
@@ -96,7 +96,7 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 - Welche Adobe Commerce-Version werden Sie verwenden?
 
-- Wie wird die künftige Plattform gehostet werden? Intern, Hosting-Anbieter, private Cloud-Server oder gehostete Cloud-Server?
+- Wie wird die künftige Plattform gehostet: intern, Hosting-Anbieter, private Cloud-Server oder gehostete Cloud-Server?
 
 - Welche Umgebungen werden die künftige Plattform haben: Entwicklung, Qualitätssicherung, Vorproduktion, Produktion?
 
@@ -148,7 +148,7 @@ Die folgenden Fragen können als Ausgangspunkt dienen, um zu sehen, welche Infor
 
 - Gibt es eine Anforderung für eine mobile App? Sollte PWA für das mobile Frontend genutzt werden?
 
-- Welche spezifischen Browser sollten getestet werden (mit Ausnahme der Standardbrowser IE9+, Firefox, Chrome, Safari)?
+- Gibt es bestimmte Browser, die getestet werden sollen (mit Ausnahme der Standardbrowser IE9+, Firefox, Chrome, Safari)?
 
 - Welche Sprache(n) haben die einzelnen Frontend? Sind die übersetzten Inhalte verfügbar oder wird Unterstützung benötigt?
 
@@ -174,7 +174,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Welche Reedereisysteme werden in Adobe Commerce integriert?
 
-- Welche Steuersoftware wird in Adobe Commerce integriert? (Beispiel: Taxware)
+- Welches Steuersoftwaresystem wird in Adobe Commerce integriert? (Beispiel: Taxware)
 
 - Von welchem System werden Produktdaten in Adobe Commerce importiert?
 
@@ -258,7 +258,7 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Erlauben Sie einem Kunden, die Rückgabe von Artikeln von der Website zu initiieren?
 
-- Wird Adobe Commerce eine RMA ausgeben?
+- Wird Adobe Commerce eine Rückgabe-RMA ausstellen?
 
 - Erfassen von Erstattungsinformationen in Adobe Commerce?
 
@@ -304,11 +304,11 @@ Gibt es vorhandene APIs, die verwendet werden können?
 
 - Ermöglicht es Ihnen Kunden, ein Produkt zu empfehlen?
 
-- Vertrieb: Bestellungen, Steuern, Rechnungsstellung, Versand, Erstattungen, Gutscheine, PayPal-Vergleichsberichte
+- Verkauf: Bestellungen, Steuern, Fakturiert, Versand, Erstattungen, Gutscheine, PayPal-Vergleichsberichte
 
-- Warenkorb: Warenkorb, verlassene Kunst
+- Warenkorb: Produkte in Warenkorb, verlassene Kunst
 
-- Produkte: Bestseller, bestellte Produkte, am häufigsten angezeigt, niedriger Bestand, Downloads
+- Produkte: Bestseller, bestellte, am häufigsten angezeigte Produkte, niedriger Bestand, Downloads
 
 - Kunden: Neue Konten, Kunden nach Gesamtbestellungen, Kunden nach Anzahl der Bestellungen, Kundensegmente, Kundenbewertungen
 

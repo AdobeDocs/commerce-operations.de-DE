@@ -14,8 +14,8 @@ ht-degree: 0%
 
 In diesem Thema wird erläutert, wie Sie ermitteln können, wo Ihre Sitzungsdateien gespeichert sind. Das System verwendet die folgende Logik zum Speichern von Sitzungsdateien:
 
-- Wenn Sie die Zwischenspeicherung konfiguriert haben, werden Sitzungen im RAM gespeichert. see [Verwenden Sie gecacht für die Sitzungsspeicherung](memcached.md).
-- Wenn Sie Redis konfiguriert haben, werden Sitzungen auf dem Redis-Server gespeichert. see [Verwenden von Redizes für die Sitzungsspeicherung](../cache/redis-session.md).
+- Wenn Sie die Zwischenspeicherung konfiguriert haben, werden Sitzungen im RAM gespeichert; siehe [Verwenden Sie gecacht für die Sitzungsspeicherung](memcached.md).
+- Wenn Sie Redis konfiguriert haben, werden Sitzungen auf dem Redis-Server gespeichert, siehe [Verwenden von Redizes für die Sitzungsspeicherung](../cache/redis-session.md).
 - Wenn Sie den standardmäßigen dateibasierten Sitzungsspeicher verwenden, werden Sitzungen an den folgenden Speicherorten in der angegebenen Reihenfolge gespeichert:
 
    1. Verzeichnis definiert in [`env.php`](#example-in-envphp)

@@ -6,7 +6,7 @@ feature: Cloud, Integration, Inventory, Orders, Security, Staging, Shipping/Deli
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ Durch die Verknüpfung von Inhalten mit Commerce, um die Kundenanforderungen an 
 - Sofortiger Kauf
 - Merchandising
 
-## Durchführen von nahtlosen Einkäufen überall
+## Nahtloses Einkaufen überall
 
 Das Wachstum des Handels wird durch die Erfüllung der Bedürfnisse Ihrer Kunden gefördert. Erweitern Sie Ihre Reichweite und erweitern Sie sich zu neuen Kanälen, geografischen Standorten und verkaufen Sie online sowohl an Unternehmen als auch an Verbraucher auf einer Plattform. Bringen Sie Ihren Kunden Commerce an, wo, wann und wo sie es bevorzugen, einzukaufen.
 

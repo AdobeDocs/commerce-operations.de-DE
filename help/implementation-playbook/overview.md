@@ -19,7 +19,7 @@ Von den frühen Phasen des Projektumfangs über Entwicklung, Integrationen und B
 Darüber hinaus gelten diese Prozesse und Überlegungen für alle Arten von Adobe Commerce-Projekten:
 
 - Kleine, mittlere oder große Implementierungen
-- B2C-, B2B- und B2B2C-Geschäftsmodelle
+- Geschäftsmodelle B2C, B2B und B2B2C
 - Monolithische oder Headless-Architekturen
 - Rollouts im Binnenmarkt oder auf mehreren Märkten
 - Umfangreiche Integrationen mit oder ohne Middleware
@@ -37,7 +37,7 @@ Während der Erfolg eines IT-Projekts stark von den Erfahrungen und dem Fachwiss
 
 Die Struktur dieses Playbooks folgt dem typischen Lebenszyklus eines Adobe Commerce-Implementierungsprojekts. Dies vereinfacht die Navigation in diesem Dokument, da Leser sofort alle relevanten Informationen zum entsprechenden Abschnitt eines Projekts überspringen können.
 
-- **Projektumfang**—Eine Aufschlüsselung der wichtigsten Stakeholder, Prozesse, Zeitpläne und Anforderungen, die für Marken wichtig sind, um sie zu verstehen und für eine erfolgreiche Implementierung abzuschließen.
+- **Projektumfang**—Eine Aufschlüsselung der wichtigsten Interessengruppen, Prozesse, Zeitpläne und Anforderungen, die für Marken wichtig sind, um sie zu verstehen und für eine erfolgreiche Implementierung abzuschließen.
 
 - **Entwicklung und Qualitätssicherung**- Werfen Sie einen Blick auf die Tools, Lösungen, Prozesse und Methoden, die in einer Reihe von Adobe Commerce-Implementierungen getestet und perfektioniert wurden, sowie auf unsere Empfehlungen, für die Lösungen am besten für spezifische Geschäftsanforderungen und -ziele geeignet sind.
 

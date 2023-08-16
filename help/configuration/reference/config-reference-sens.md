@@ -255,9 +255,9 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Secure Gateway URL | `carriers/usps/gateway_secure_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Titel | `carriers/usps/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Benutzer-ID | `carriers/usps/userid` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `carriers/usps/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `carriers/usps/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Benutzer-ID | `carriers/ups/username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `carriers/ups/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `carriers/ups/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Zugriffslizenznummer | `carriers/ups/access_license_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Tracking XML URL | `carriers/ups/tracking_xml_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Gateway XML URL | `carriers/ups/gateway_xml_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
@@ -266,9 +266,9 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Konto-ID | `carriers/fedex/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Schlüssel | `carriers/fedex/key` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Zähleranzahl | `carriers/fedex/meter_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `carriers/fedex/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `carriers/fedex/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Zugriffs-ID | `carriers/dhl/id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `carriers/dhl/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `carriers/dhl/password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Debuggen | `carriers/dhl/debug` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Kontonummer | `carriers/dhl/account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Gateway-URL | `carriers/dhl/gateway_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
@@ -393,7 +393,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Mit PayPal-Handelskonto verknüpfte E-Mail (optional) | `paypal/general/business_account` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Merchant Account ID | `payment/paypal_express/merchant_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Herausgeberkennung | `payment/paypal_express_bml/publisher_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `paypal/fetch_reports/ftp_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `paypal/fetch_reports/ftp_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Anmelden | `paypal/fetch_reports/ftp_login` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Hostname oder IP-Adresse des benutzerdefinierten Endpunkts | `paypal/fetch_reports/ftp_ip` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Sandbox-Modus | `paypal/fetch_reports/ftp_sandbox` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
@@ -408,10 +408,10 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Name | Konfigurationspfad | Nur Commerce? | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Benutzer | `payment/payflow_advanced/user` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `payment/payflow_advanced/pwd` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `payment/payflow_advanced/pwd` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Benutzerdefinierter Pfad | `paypal/fetch_reports/ftp_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Benutzer | `payment/payflowpro/user` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `payment/payflowpro/pwd` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `payment/payflowpro/pwd` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Testmodus | `payment/payflowpro/sandbox_flag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Partner | `payment/payflowpro/partner` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Proxy-Host | `payment/payflowpro/proxy_host` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
@@ -427,7 +427,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 | Name | Konfigurationspfad | Nur Commerce? | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 |--------------|--------------|--------------|--------------|--------------|--------------|
 | Benutzer | `payment/payflow_link/user` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Passwort | `payment/payflow_link/pwd` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Kennwort | `payment/payflow_link/pwd` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Testmodus | `payment/payflow_link/sandbox_flag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Proxy verwenden | `payment/payflow_link/use_proxy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Proxy-Host | `payment/payflow_link/proxy_host` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
@@ -464,7 +464,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 
 {style="table-layout:auto"}
 
-### Braintree- und systemspezifische Pfade
+### Braintree sensitiver und systemspezifischer Pfade
 
 | Name | Konfigurationspfad | Nur Commerce? | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 |--------------|--------------|--------------|--------------|--------------|--------------|

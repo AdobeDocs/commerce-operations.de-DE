@@ -74,8 +74,8 @@ Standardmäßig schreibt Commerce die Aktivitätsprotokolle der Datenbank in die
 
 ## Cron-Protokollierung
 
-Mit Version 2.3.1 erstellt Commerce jetzt eine separate `cron` log. \
-Der Handel hat die Cron-Protokollierung vor kurzem ausführlicher gestaltet, was zwar mehr Informationen lieferte, aber die `system.log` beträchtlich.
+Mit Version 2.3.1 erstellt Commerce jetzt eine separate `cron` protokollieren. \
+Der Commerce hat die Cron-Protokollierung vor kurzem ausführlicher gestaltet, was zwar mehr Informationen bereitstellte, aber die `system.log` beträchtlich.
 Verschieben `cron` Informationen in ein dediziertes Protokoll vereinfachen das Lesen beider Protokolle.
 
 Standardmäßig schreibt Commerce `cron` Informationen zum `<install-directory>/var/log/cron.log` -Datei.

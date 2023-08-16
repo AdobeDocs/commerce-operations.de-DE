@@ -1,13 +1,13 @@
 ---
 title: Modernisierung Ihrer Plattform mit Adobe Commerce
 description: Lesen Sie die Empfehlungen zur Planung Ihres Adobe Commerce-Upgrades.
-source-git-commit: 4a78c2d2a215d1b58b2f07b7a961849321f82318
+exl-id: f776b000-0085-4b77-860f-623837c3c902
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
 
 ---
-
 
 # Empfohlene Aktualisierungspfade
 
@@ -16,13 +16,13 @@ Eine E-Commerce-Implementierung ist eine Weiterentwicklung - sie ist nie wirklic
 - Schnellerer Zugriff auf innovative Funktionen, die als SaaS-Dienste bereitgestellt werden
 - Einfachere und kostengünstigere Wartung und Upgrades
 - Kontinuierliche Flexibilität und Anpassung zur Erfüllung individueller Geschäftsanforderungen
-- Erhebliche Steigerungen der Leistung und Skalierbarkeit
+- Erhebliche Verbesserungen bei Leistung und Skalierbarkeit
 - Verbesserte Entwicklererfahrung und -werkzeuge
 - Möglichkeit einer tieferen Integration mit anderen Adobe Experience Cloud-Anwendungen
 
-Um unseren Händlern mehr Flexibilität bei der Planung von Upgrades zu bieten, haben wir kürzlich die Adobe Commerce aktualisiert [Release-Zeitplan](../../release/schedule.md), verlängerte das Datum des 2.3 Ende des Supports (EOS) und kündigte neue erweiterte Support-Optionen für ausgewählte Versionen unserer Software an. Weitere Informationen zu diesen Aktualisierungen finden Sie unter [Erweiterte Unterstützung für Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+Um unseren Händlern mehr Flexibilität bei der Planung von Upgrades zu bieten, haben wir kürzlich die Adobe Commerce aktualisiert [Veröffentlichungszeitplan](../../release/schedule.md), verlängerte das Datum des 2.3 Ende des Supports (EOS) und kündigte neue erweiterte Support-Optionen für ausgewählte Versionen unserer Software an. Weitere Informationen zu diesen Aktualisierungen finden Sie unter [Erweiterte Unterstützung für Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
-Im Folgenden finden Sie von Adobe Commerce empfohlene Aktualisierungspfade, um die Sicherheit und Leistung Ihrer Site beim Upgrade auf eine der neuesten Versionen zu gewährleisten.
+Im Folgenden finden Sie die von Adobe Commerce empfohlenen Aktualisierungspfade, um die Sicherheit und Leistung Ihrer Site beim Upgrade auf eine der neuesten Versionen zu gewährleisten.
 
 ## Upgrade von 2.3.7
 

@@ -16,7 +16,7 @@ Commerce bietet viele Einstellungen und Tools, mit denen Sie die Reaktionszeit a
 
 ## Cron-Aufträge
 
-Alle asynchronen Vorgänge in [!DNL Commerce] werden mit Linux ausgeführt `cron` Befehl. Siehe [Cron konfigurieren und ausführen](../configuration/cli/configure-cron-jobs.md) , um sie korrekt zu konfigurieren.
+Alle asynchronen Vorgänge in [!DNL Commerce] werden unter Verwendung von Linux ausgeführt `cron` Befehl. Siehe [Cron konfigurieren und ausführen](../configuration/cli/configure-cron-jobs.md) , um sie korrekt zu konfigurieren.
 
 ## Indexer
 
@@ -28,7 +28,7 @@ Ein Indexer kann in **[!UICONTROL Update on Save]** oder **[!UICONTROL Update on
 
 ## Caches
 
-Wenn Sie Ihren Store in Produktion starten, aktivieren Sie alle Caches aus dem **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Cache Management]** Seite. Es wird dringend empfohlen, [!DNL Varnish], da es sich um eine effiziente Lösung für den Zwischenspeicher von Produktionsseiten handelt.
+Wenn Sie Ihren Store in Produktion starten, aktivieren Sie alle Caches aus dem **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Cache Management]** Seite. Wir empfehlen dringend, [!DNL Varnish], da es sich um eine effiziente Lösung für den Zwischenspeicher von Produktionsseiten handelt.
 
 ## Asynchrone E-Mail-Benachrichtigungen
 
@@ -42,7 +42,7 @@ Es kann vorkommen, dass intensive Verkäufe an eine Storefront gleichzeitig mit 
 >
 >Die **[!UICONTROL Developer]** Registerkarten und Optionen sind nur in [Entwicklermodus](../configuration/cli/set-mode.md). [Adobe Commerce auf Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt nicht `Developer` -Modus.
 
-## Asynchrone Konfiguration speichern [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta1 verfügbar"}
+## Speichern Sie die asynchrone Konfiguration [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta1 verfügbar"}
 
 Bei Projekten mit einer großen Anzahl von Konfigurationen auf Store-Ebene kann das Speichern einer Store-Konfiguration eine übermäßige Zeit in Anspruch nehmen oder zu einem Timeout führen. Die _Asynchrone Konfiguration_ ermöglicht asynchrone Konfigurationseinstellungen, indem ein Cron-Auftrag ausgeführt wird, der mithilfe eines Verbrauchers das Speichern in einer Nachrichtenwarteschlange verarbeitet. AsyncConfig ist **disabled** Standardmäßig.
 
@@ -81,7 +81,7 @@ In Zeiten intensiver Verkäufe, [!DNL Commerce] kann Lageraktualisierungen im Zu
 
 ## Einstellungen zur clientseitigen Optimierung
 
-So verbessern Sie die Reaktionsfähigkeit Ihrer Storefront [!DNL Commerce] Wechseln Sie im Modus Standard oder Entwickler zum Admin und ändern Sie die folgenden Einstellungen:
+So verbessern Sie die Reaktionsfähigkeit Ihrer Storefront [!DNL Commerce] Wechseln Sie im Standard- oder Entwicklermodus zum Admin und ändern Sie die folgenden Einstellungen:
 
 **[!UICONTROL Stores]-> [!UICONTROL Configuration] -> [!UICONTROL Advanced] -> [!UICONTROL Developer]:**
 
@@ -105,19 +105,19 @@ Wenn Sie die **[!UICONTROL Enable [!DNL JavaScript] Bundling]** können Sie Comm
 
 ### Bundle-Tipps
 
-* Wir empfehlen die Verwendung von Drittanbieter-Tools für die Minimierung und das Bundling (wie [r.js](https://requirejs.org/)). [!DNL Commerce] integrierte Mechanismen sind nicht optimal und werden als Ausweichalternativen bereitgestellt.
+* Wir empfehlen die Verwendung von Drittanbieter-Tools für die Minimierung und das Bundling (z. B. [r.js](https://requirejs.org/)). [!DNL Commerce] integrierte Mechanismen sind nicht optimal und werden als Ausweichalternativen bereitgestellt.
 * Die Aktivierung des HTTP2-Protokolls kann eine gute Alternative zur Verwendung des JS-Bundles sein. Das Protokoll bietet fast die gleichen Vorteile.
 * Es wird empfohlen, keine veralteten Einstellungen wie das Zusammenführen von JS- und CSS-Dateien zu verwenden, da diese nur für synchron geladene JS im HEAD-Abschnitt der Seite entwickelt wurden. Die Verwendung dieser Technik kann dazu führen, dass die Logik &quot;Bundling&quot;und &quot;requireJS&quot;fehlerhaft funktioniert.
 
 ## Validierung von Kundensegmenten
 
-Händler mit einer großen Anzahl von [Kundensegmente](https://docs.magento.com/user-guide/marketing/customer-segments.html) kann die Leistung durch Kundenaktionen wie Kundenanmeldung und Hinzufügen von Produkten zum Warenkorb erheblich beeinträchtigen.
+Merchants mit einer großen Anzahl von [Kundensegmente](https://docs.magento.com/user-guide/marketing/customer-segments.html) kann die Leistung durch Kundenaktionen wie Kundenanmeldung und Hinzufügen von Produkten zum Warenkorb erheblich beeinträchtigen.
 
 Kundenaktionen Trigger eines Validierungsprozesses für Kundensegmente, der zu Leistungsbeeinträchtigungen führen kann. Standardmäßig validiert Adobe Commerce jedes Segment in Echtzeit, um zu definieren, welche Kundensegmente abgeglichen werden und welche nicht.
 
 Um eine Leistungsbeeinträchtigung zu vermeiden, können Sie die **[!UICONTROL Real-time Check if Customer is Matched by Segment]** Systemkonfigurationsoption zu **Nein** , um Kundensegmente anhand einer einzigen kombinierten Bedingungs-SQL-Abfrage zu validieren.
 
-Um diese Optimierung zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
+Gehen Sie zur Aktivierung dieser Optimierung zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Customers] > [!UICONTROL Customer Configuration] > [!UICONTROL Customer Segments] >[!UICONTROL Real-time Check if Customer is Matched by Segment]**.
 
 Diese Einstellung verbessert die Leistung der Validierung von Kundensegmenten, wenn das System viele Kundensegmente enthält. Es funktioniert jedoch nicht mit [Aufspaltungsdatenbank](../configuration/storage/multi-master.md) -Implementierungen oder wenn keine registrierten Kunden vorhanden sind.
 
@@ -134,7 +134,7 @@ Beispielsweise wird empfohlen, eine Sicherung Ihrer Produktionsdatenbank und dan
 Um die Leistung des Produktrasters für große Kataloge zu verbessern, empfehlen wir, die Anzahl der Produkte im Raster mit der **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Admin] > [!UICONTROL Admin Grids] >[!UICONTROL Limit Number of Products in Grid]** Systemkonfigurationseinstellungen.
 
 Diese Systemkonfigurationseinstellung ist standardmäßig deaktiviert. Durch Aktivierung dieser Option können Sie die Anzahl der Produkte im Raster auf einen bestimmten Wert begrenzen. **[!UICONTROL Records Limit]** ist eine anpassbare Einstellung mit einem Standardwert von `20000`.
-Wenn die **[!UICONTROL Limit Number of Products in Grid]** aktiviert ist und die Anzahl der Produkte im Raster größer als die Datensatzgrenze ist, wird die begrenzte Sammlung von Datensätzen zurückgegeben. Bei Erreichen des Grenzwerts werden die gefundenen Datensätze insgesamt, die Anzahl der ausgewählten Datensätze und die Paginierungselemente aus dem Rasterheader ausgeblendet.
+Wenn die Variable **[!UICONTROL Limit Number of Products in Grid]** aktiviert ist und die Anzahl der Produkte im Raster größer als die Datensatzgrenze ist, wird die begrenzte Sammlung von Datensätzen zurückgegeben. Bei Erreichen des Grenzwerts werden die gefundenen Datensätze insgesamt, die Anzahl der ausgewählten Datensätze und die Paginierungselemente aus dem Rasterheader ausgeblendet.
 
 Wenn die Gesamtanzahl der Produkte im Raster begrenzt ist, wirkt sich dies nicht auf Massenaktionen im Produktraster aus. Dies betrifft nur die Darstellungsschicht des Produktraster. Beispielsweise gibt es eine begrenzte Anzahl von `20000` -Produkte im Raster, klickt der Benutzer auf **[!UICONTROL Select All]**, wählt die **[!UICONTROL Update attributes]** Massenaktion und Aktualisierung einiger Attribute. Daher werden alle Produkte aktualisiert, nicht die begrenzte Sammlung von `20000` Datensätze.
 

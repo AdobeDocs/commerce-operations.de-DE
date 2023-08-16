@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe Commerce kann mehrere Datenbanken asynchron lesen. Wenn Sie eine hohe Belastung der MySQL-Datenbank einer Commerce-Site erwarten, die in der Cloud Infrastructure Pro-Architektur bereitgestellt wird, empfiehlt Adobe die Aktivierung der MYSQL-Slave-Verbindung.
 
-Wenn Sie die MYSQL-Slave-Verbindung aktivieren, verwendet Adobe Commerce eine schreibgeschützte Verbindung zur Datenbank, um schreibgeschützten Traffic auf einem nicht Übergeordneten Knoten zu empfangen. Die Leistung verbessert sich durch den Lastenausgleich, wenn nur ein Knoten Lese- und Schreibvorgänge-Traffic verarbeitet.
+Wenn Sie die MYSQL-Slave-Verbindung aktivieren, verwendet Adobe Commerce eine schreibgeschützte Verbindung zur Datenbank, um schreibgeschützten Traffic auf einem Nicht-Master-Knoten zu empfangen. Die Leistung verbessert sich durch den Lastenausgleich, wenn nur ein Knoten Lese- und Schreibvorgänge-Traffic verarbeitet.
 
 ## Betroffene Versionen
 

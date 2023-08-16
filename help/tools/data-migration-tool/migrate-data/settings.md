@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Datenmigrationseinstellungen
 
-Die `Settings` -Modus migriert Stores, Websites und Systemkonfigurationen wie Versand-, Zahlungs- und Steuereinstellungen. Gemäß unserer Datenmigration [order](overview.md#migration-order), sollten Sie die Einstellungen zuerst migrieren.
+Die `Settings` -Modus migriert Stores, Websites und Systemkonfigurationen wie Versand-, Zahlungs- und Steuereinstellungen. Gemäß unserer Datenmigration [bestellen](overview.md#migration-order), sollten Sie die Einstellungen zuerst migrieren.
 
 Bevor Sie beginnen, bereiten Sie die folgenden Schritte vor:
 
 1. Melden Sie sich beim Anwendungsserver als [Dateisysteminhaber](../../../installation/prerequisites/file-system/overview.md).
 
-1. Änderung an `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem System hinzugefügt wird. `PATH`.
+1. Ändern Sie die `/bin` Verzeichnis oder stellen Sie sicher, dass es Ihrem System hinzugefügt wird. `PATH`.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Magento 2 in `default` -Modus. Der Entwicklermodus kann Überprüfungsfehler im Migrationstool verursachen.
+>Stellen Sie sicher, dass Magento 2 in bereitgestellt wird `default` -Modus. Der Entwicklermodus kann Überprüfungsfehler im Migrationstool verursachen.
 
 
 Siehe [Erste Schritte](overview.md#first-steps) für weitere Details.
@@ -41,11 +41,11 @@ Dabei gilt:
 
 * `[-a|--auto]` ist ein optionales Argument, das verhindert, dass die Migration angehalten wird, wenn bei der Integritätsprüfung Fehler auftreten.
 
-* `{<path to config.xml>}` ist der absolute Dateisystempfad zum Migrationstool [`config.xml`](../configure.md#configure-migration-in-vendor-folder) Datei; Dieses Argument ist erforderlich.
+* `{<path to config.xml>}` ist der absolute Dateisystempfad zum Migrationstool [`config.xml`](../configure.md#configure-migration-in-vendor-folder) -Datei; dieses Argument ist erforderlich.
 
 >[!NOTE]
 >
->Dieser Befehl migriert nicht alle Konfigurationseinstellungen. Überprüfen Sie alle Einstellungen in Magento 2 Admin , bevor Sie fortfahren.
+>Dieser Befehl migriert nicht alle Konfigurationseinstellungen. Überprüfen Sie alle Einstellungen in Magento 2 Admin, bevor Sie fortfahren.
 
 
 Die `Migration completed` wird angezeigt, nachdem die Einstellungen erfolgreich übertragen wurden.

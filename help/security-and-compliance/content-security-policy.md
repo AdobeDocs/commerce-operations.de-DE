@@ -1,13 +1,13 @@
 ---
 title: Übersicht über die Inhaltssicherheitsrichtlinie
 description: Erfahren Sie, wie Sie mithilfe einer Content Security-Richtlinie die Sicherheitsstufe Ihres Adobe Commerce- oder Magento Open Source-Stores verbessern können.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Übersicht über die Inhaltssicherheitsrichtlinie
 
@@ -19,7 +19,7 @@ CSP bietet einen standardisierten Satz von Direktiven, die dem Browser mitteilen
 
 Um eine Störung des Site-Betriebs zu vermeiden, kann CSP in Phasen implementiert werden. CSP verfügt über zwei grundlegende Betriebsarten: `report-only mode` und `restrict mode`. Die Veröffentlichung von Adobe Commerce 2.3.5 markiert die erste Phase unserer Implementierung und stellt CSP in der `report-only mode` Standardmäßig. In einer zukünftigen Version `restrict mode` ist standardmäßig für zusätzlichen nativen Schutz aktiviert.
 
-**Nur-Bericht-Modus**: Der Browser wird angewiesen, Richtlinienverletzungen zu melden, diese jedoch nicht durchzusetzen. Jedes Mal, wenn eine angeforderte Ressource CSP verletzt, protokolliert der Browser die resultierenden Fehler in der Konsole. Das Konsolenprotokoll kann dann verwendet werden, um die Ursache jedes Verstoßes zu untersuchen.
+**Nur-Bericht-Modus**: Der Browser wird angewiesen, Richtlinienverletzungen zu melden, aber nicht durchzusetzen. Jedes Mal, wenn eine angeforderte Ressource CSP verletzt, protokolliert der Browser die resultierenden Fehler in der Konsole. Das Konsolenprotokoll kann dann verwendet werden, um die Ursache jedes Verstoßes zu untersuchen.
 
 Es ist wichtig, alle CSP-Fehler zu überprüfen, sobald sie auftreten, und die Richtlinien zu verfeinern, bis alle erforderlichen Ressourcen auf die Whitelist gesetzt sind. Es ist sicher, zu `restrict mode` wenn keine Fehler mehr auftreten. Andernfalls kann eine schlecht konfigurierte CSP dazu führen, dass der Browser eine leere Seite mit zahlreichen Konsolenfehlern anzeigt. Eine ordnungsgemäß konfigurierte CSP ermöglicht die Bereitstellung von Inhalten aus der Whitelist, ohne dass die Leistung beeinträchtigt wird.
 

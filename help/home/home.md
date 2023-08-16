@@ -6,7 +6,7 @@ exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -49,7 +49,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Datenmigration</strong></a>
-      <p>Erfahren Sie mehr über den Datenmigrationsprozess zwischen Magento 1 und Magento 2.</p>
+      <p>Erfahren Sie mehr über die Datenmigration zwischen Magento 1 und Magento 2.</p>
     </div>
   </td>
 </tr>
@@ -107,7 +107,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Operatives Playbook</strong></a>
-      <p>Erfahren Sie, wie Sie Ihre Unternehmen betriebsbereit für die Ausführung einer erfolgreichen E-Commerce-Site machen.</p>
+      <p>Erfahren Sie, wie Sie Ihr Unternehmen auf den Betrieb einer erfolgreichen E-Commerce-Website vorbereiten können.</p>
     </div>
   </td>
   <td valign="top">
@@ -116,7 +116,7 @@ Erhalten Sie praktische Informationen zu Konzepten, Prozessen, Tools und Best Pr
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Handel im Maßstab</strong></a>
-      <p>Erfahren Sie, wie Sie mit Adobe Commerce mit Adobe Experience Manager Erlebnisse bedarfsgerecht bereitstellen können.</p>
+      <p>Erfahren Sie, wie Sie unter Verwendung von Adobe Commerce mit Adobe Experience Manager Erlebnisse in großem Maßstab bereitstellen können.</p>
     </div>
   </td>
   <td valign="top">

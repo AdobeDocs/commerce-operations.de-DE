@@ -21,7 +21,7 @@ Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
 
 Dabei gilt:
 
-- N steht für die Anzahl der Artikel dieser Kategorie
+- N steht für die Anzahl der Artikel für diese Kategorie
 - Kundengruppen enthalten freigegebene Kataloge, da sie eine zusätzliche Kundengruppe erstellen.
 
 Wenn mehr als die maximale Anzahl effektiver SKUs vorhanden ist, wird der Abruf von Produktdaten verlangsamt und die Zeit zum Abschließen von Vorgängen oder Indizierungen im Admin-Bedienfeld erhöht.
@@ -35,7 +35,7 @@ Wenn mehr als die maximale Anzahl effektiver SKUs vorhanden ist, wird der Abruf 
 
 ## Verringerung der Produktanzahl
 
-Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte (SKUs) zu reduzieren:
+Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte zu reduzieren:
 
 - Minimieren von Multiplikatoren—
    - Durch die Konsolidierung von Websites wird der Multiplikator reduziert. Wenn Sie 50.000 SKUs, zehn Websites und zehn Kundengruppen haben, beträgt die effektive Anzahl der SKUs 5 Millionen. Wenn fünf Kundengruppen entfernt werden, werden die effektiven SKUs auf 2,5 Millionen reduziert.

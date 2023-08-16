@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Lieferziele
 
-Der Erkennungsvorgang identifiziert spezifische Adobe Commerce-Implementierungs-Lieferziele. Weitere Informationen finden Sie in den folgenden Abschnitten.
+Der Erkennungsvorgang identifiziert spezifische Adobe Commerce-Implementierungsanforderungen. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 ## Geschäftsanforderungen
 

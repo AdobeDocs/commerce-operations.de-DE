@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Die folgenden Schritte zeigen, wie Sie das Cache-Frontend mit einem Cache-Typ verknüpfen.
 
-## Schritt 1: Cache-Frontend definieren
+## Schritt 1: Definieren eines Cache-Frontend
 
 Die Commerce-Anwendung verfügt über eine `default` Cache-Frontend, das Sie für beliebige [Cache-Typ](../cli/manage-cache.md#clean-and-flush-cache-types). In diesem Abschnitt wird beschrieben, wie Sie optional ein Cache-Frontend mit einem anderen Namen definieren, was bei der erwarteten Anpassung Ihres Frontend vorzuziehen ist.
 
@@ -73,7 +73,7 @@ where
 Wenn Sie weglassen `<frontend_type>`, [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) verwendet.
 
 - `<frontend_option>`, `<frontend_option_value>` sind der Name und der Wert der Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array an den Frontend-Cache übergibt.
-- `<backend_type>` ist der Backend-Cache-Typ der unteren Ebene. Geben Sie den Namen einer Klasse an, die mit `Zend_Cache_Backend` und die `Zend_Cache_Backend_Interface`.
+- `<backend_type>` ist der Backend-Cache-Typ der unteren Ebene. Geben Sie den Namen einer Klasse an, die mit `Zend_Cache_Backend` und die implementiert `Zend_Cache_Backend_Interface`.
 - `<backend_option>` und `<backend_option_value>` sind der Name und der Wert der Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array übergibt, um den Cache zu sichern.
 
 Siehe [Laminatdokumentation](https://docs.laminas.dev/) für die neuesten Zend-Informationen.

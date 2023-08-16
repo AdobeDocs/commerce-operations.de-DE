@@ -27,9 +27,9 @@ Wenn diese Option aktiviert ist, bewertet der Dispatcher die Antwortheader aus d
 
 ## Browser-Zwischenspeicherung
 
-Der oben beschriebene Dispatcher-TTL-Ansatz reduziert die Anforderungen und lädt auf den Publisher. Es gibt jedoch einige Assets, die sich sehr wahrscheinlich nicht ändern werden. Daher können sogar Anforderungen an den Dispatcher reduziert werden, indem relevante Dateien lokal im Browser eines Benutzers zwischengespeichert werden. Beispielsweise muss das Logo der Site, das auf jeder Seite der Site in der Site-Vorlage angezeigt wird, nicht jedes Mal an den Dispatcher angefordert werden. Dies kann stattdessen im Browsercache des Benutzers gespeichert werden. Die Verringerung der Bandbreitenanforderungen für jedes Laden von Seiten hätte einen großen Einfluss auf die Reaktionsschnelligkeit der Website und die Seitenladezeiten.
+Der oben beschriebene Dispatcher-TTL-Ansatz reduziert die Anforderungen und lädt auf den Publisher. Es gibt jedoch einige Assets, die sich sehr wahrscheinlich nicht ändern werden. Daher können sogar Anforderungen an den Dispatcher reduziert werden, indem relevante Dateien lokal im Browser eines Benutzers zwischengespeichert werden. Beispielsweise muss das Logo der Site, das auf jeder Seite der Site in der Site-Vorlage angezeigt wird, nicht jedes Mal an den Dispatcher angefordert werden. Dies kann stattdessen im Browser-Cache des Benutzers gespeichert werden. Die Verringerung der Bandbreitenanforderungen für jedes Laden von Seiten hätte einen großen Einfluss auf die Reaktionsschnelligkeit der Website und die Seitenladezeiten.
 
-Die Zwischenspeicherung auf Browserebene erfolgt normalerweise über die &quot;Cache-Control: max-age=&quot; Antwort-Header. Die Maxage-Einstellung teilt dem Browser mit, für wie viele Sekunden die Datei zwischengespeichert werden soll, bevor er versucht, sie erneut zu &quot;überprüfen&quot;oder von der Site anzufordern. Dieses Konzept der Cache-Maximaldauer wird häufig als &quot;Cache Expiration&quot;oder TTL (&quot;Time to Live&quot;) bezeichnet. Skaliertes Bereitstellen von Commerce-Erlebnissen - Mit Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
+Die Zwischenspeicherung auf Browserebene erfolgt normalerweise über den Antwortheader &quot;Cache-Control: max-age=&quot;. Die Maxage-Einstellung teilt dem Browser mit, für wie viele Sekunden die Datei zwischengespeichert werden soll, bevor er versucht, sie erneut zu &quot;überprüfen&quot;oder von der Site anzufordern. Dieses Konzept der Cache-Maximaldauer wird häufig als &quot;Cache Expiration&quot;oder TTL (&quot;Time to Live&quot;) bezeichnet. Skaliertes Bereitstellen von Commerce-Erlebnissen - Mit Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
 
 Zu den Bereichen einer AEM/CIF/Adobe Commerce-Site, die im Browser des Kunden zwischengespeichert werden können, gehören:
 
@@ -42,17 +42,17 @@ Zu den Bereichen einer AEM/CIF/Adobe Commerce-Site, die im Browser des Kunden zw
 
 Die standardmäßige Dispatcher-Konfiguration verwendet die Einstellung /statfilelevel &quot;0&quot;. Das bedeutet, dass eine einzelne &quot;.stat&quot;-Datei im Stammverzeichnis von htdocs (Basisverzeichnis des Dokuments) gespeichert wird. Wenn eine Seite oder Datei in AEM geändert wird, wird die Änderungszeit dieser einzelnen stat-Datei auf den Zeitpunkt der Änderung aktualisiert. Wenn die Zeit kürzer ist als die Bearbeitungszeit der Ressource, berücksichtigt der Dispatcher, dass alle Ressourcen invalidiert wurden und jede nachfolgende Anforderung einer invalidierten Ressource einen Aufruf an die Veröffentlichungsinstanz Trigger. Mit dieser Einstellung wird also bei jeder Aktivierung der gesamte Cache invalidiert.
 
-Für jede Site, insbesondere Commerce-Sites mit hoher Auslastung, würde dies eine unnötige Menge an Last auf die AEM-Veröffentlichungsstufe bringen, damit die gesamte Site-Struktur mit nur einer einzelnen Seitenaktualisierung ungültig gemacht wird.
+Für jede Site, insbesondere Commerce-Sites mit hoher Auslastung, würde dies eine unnötige Menge an Last auf die AEM Veröffentlichungsstufe bringen, damit die gesamte Site-Struktur mit nur einer einzelnen Seitenaktualisierung invalidiert wird.
 
 Stattdessen kann die Einstellung statfilelevel in einen höheren Wert geändert werden, der der Tiefe der Unterverzeichnisse im htdocs-Verzeichnis aus dem Basisverzeichnis des Dokuments entspricht. Wenn eine Datei auf einer bestimmten Ebene invalidiert wird, werden nur Dateien auf dieser .stat-Ordnerebene und darunter aktualisiert.
 
-Beispiel: Nehmen wir an, Sie haben eine Produktseitenvorlage unter:
+Beispiel: Angenommen, Sie haben eine Produktseitenvorlage unter:
 
 ```
 content/ecommerce/us/en/products/product-page.html
 ```
 
-Jede Ordnerebene hätte &quot;stat-Ebene&quot;- wie in der obigen Tabelle aufgeschlüsselt dargestellt.
+Jede Ordnerebene hätte &quot;stat-Ebene&quot;- wie in der obigen Tabelle dargestellt.
 
 | Inhalt (Basisverzeichnis) | E-Commerce | us | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
@@ -100,7 +100,7 @@ Die obigen Zwischenspeicherungsoptionen können mithilfe der AEM OSGi-Konfigurat
 
 ## Hybrides Caching - clientseitige GraphQL-Anforderungen innerhalb zwischengespeicherter Dispatcher-Seiten
 
-Es ist auch möglich, einen hybriden Ansatz zum Zwischenspeichern von Seiten zu wählen: Es ist möglich, dass eine CIF-Seite Komponenten enthält, die immer die neuesten Informationen von Adobe Commerce direkt vom Browser des Kunden anfordern. Dies kann für bestimmte Bereiche der Seite innerhalb einer Vorlage nützlich sein, die mit Echtzeitinformationen auf dem neuesten Stand gehalten werden müssen: Produktpreise innerhalb einer Produktdetailseite, z. B. Wenn sich die Preise aufgrund eines dynamischen Preisabgleichs häufig ändern, können diese Informationen so konfiguriert werden, dass sie nicht auf dem Dispatcher zwischengespeichert werden. Stattdessen können die Preise im Kundenbrowser direkt über GraphQL-APIs mit AEM CIF-Webkomponenten aus Adobe Commerce abgerufen werden.
+Es ist auch möglich, beim Zwischenspeichern von Seiten einen hybriden Ansatz zu wählen: Eine CIF-Seite kann Komponenten enthalten, die immer die neuesten Informationen von Adobe Commerce direkt vom Browser des Kunden anfordern. Dies kann für bestimmte Bereiche der Seite innerhalb einer Vorlage nützlich sein, die unbedingt mit Echtzeitinformationen aktualisiert werden müssen: Produktpreise innerhalb einer Produktdetailseite, z. B. Wenn sich die Preise aufgrund eines dynamischen Preisabgleichs häufig ändern, können diese Informationen so konfiguriert werden, dass sie nicht auf dem Dispatcher zwischengespeichert werden. Stattdessen können die Preise im Kundenbrowser direkt über GraphQL-APIs mit AEM CIF-Webkomponenten aus Adobe Commerce abgerufen werden.
 
 Dies kann über die Einstellungen der AEM-Komponenten konfiguriert werden. Informationen zu Preisen auf Produktlistenseiten finden Sie in der Produktlistenvorlage. Wählen Sie dazu die Produktlistenkomponente in den Seiteneinstellungen aus und aktivieren Sie die Option &quot;Preise laden&quot;. Derselbe Ansatz würde für die Lagerbestände funktionieren.
 
@@ -116,7 +116,7 @@ GraphQL-Abfrageergebnisse sollten nicht für angemeldete Kunden zwischengespeich
 
 E-Commerce-Sites können den Traffic zu ihrer Site über PPC-Suchanzeigen oder Social-Media-Kampagnen lenken.
 
-Durch die Verwendung dieser Medien wird dem ausgehenden Link von dieser Plattform aus eine Tracking-ID hinzugefügt. Beispielsweise fügt Facebook der URL eine Facebook-Klick-ID (fbclid) hinzu, Google-Anzeigen fügen eine Google-Klick-ID (gclid) hinzu. Dadurch werden eingehende Links zu Ihrem AEM Frontend wie unten dargestellt:
+Durch die Verwendung dieser Medien wird dem ausgehenden Link von dieser Plattform aus eine Tracking-ID hinzugefügt. Beispielsweise fügt Facebook der URL eine Facebook-Klick-ID (fbclid) hinzu, Google Adverts fügt eine Google-Klick-ID (gclid) hinzu. Dadurch werden eingehende Links zu Ihrem AEM Frontend wie unten dargestellt:
 
 ```
 https://www.adobe.com/?gclid=oirhgj34y43yowiahg9u3t
@@ -128,7 +128,7 @@ Bei einem Aufprallereignis kann dies sogar dazu führen, dass die AEM Publisher 
 
 >[!NOTE]
 >
->Weitere Informationen über die Bedeutung der Festlegung `ignoreUrlParams` ist im Abschnitt [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub-Repository.
+>Weitere Informationen über die Bedeutung der Festlegung `ignoreUrlParams` finden Sie im Abschnitt [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub-Repository.
 
 Es sollte daher so konfiguriert werden, dass alle Parameter standardmäßig in &quot;ignoreUrlParams&quot;ignoriert werden, es sei denn, es wird ein GET-Parameter verwendet, der die Seitenstruktur ändert. Ein Beispiel hierfür wäre eine Suchseite, auf der der Suchbegriff als GET-Parameter in der URL enthalten ist. In diesem Fall sollten Sie dann manuell ignoreUrlParams konfigurieren, um Parameter wie gclid, fbclid und andere Tracking-Parameter, die Ihre Werbekanäle verwenden, zu ignorieren, wobei die für normale Site-Vorgänge erforderlichen GET Parameter unberührt bleiben.
 

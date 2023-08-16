@@ -1,17 +1,17 @@
 ---
-user-guide-title: Upgrade-Handbuch
+user-guide-title: Aktualisierungshandbuch
 user-guide-description: Erfahren Sie, warum die Aktualisierung Ihrer Adobe Commerce-Anwendung so wichtig ist und wie Sie eine Aktualisierung erfolgreich planen und durchführen können.
 feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
 
-# Upgrade-Handbuch {#upgrade-guide}
+# Aktualisierungshandbuch {#upgrade-guide}
 
 - [Übersicht über den Aktualisierungsprozess](overview.md)
 - Journey aktualisieren {#journey}
@@ -52,6 +52,6 @@ ht-degree: 0%
    - [Zurücksetzen nach einem Fehler bei der Modulaktualisierung](troubleshooting/roll-back-after-update-failure.md)
    - [Optionen für den Wartungsmodus für die Aktualisierung](troubleshooting/maintenance-mode-options.md)
 - Ressourcen {#resources}
-   - [Empfohlener Text](resources/recommended-reading.md)
+   - [Empfohlene Lesbarkeit](resources/recommended-reading.md)
    - [Modernisierung Ihrer Plattform mit Adobe Commerce](resources/recommended-upgrade-paths.md)
 - [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

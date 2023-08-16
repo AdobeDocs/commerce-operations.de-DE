@@ -1,7 +1,8 @@
 ---
-title: '"[!DNL Extensions]"'
-description: Erfahren Sie mehr über die [!DNL Extensions] im [!DNL Site-Wide Analysis Tool], wann sie verwendet werden sollte, deren Vorteile und Best Practices.
-source-git-commit: 8b14dc7e30f4dd487fdb37bb9984346021fcba14
+title: '[!DNL Extensions]'
+description: Informationen zum [!DNL Extensions] im [!DNL Site-Wide Analysis Tool], wann sie verwendet werden sollte, deren Vorteile und Best Practices.
+exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
@@ -31,4 +32,3 @@ Die [!DNL Extensions] im [!DNL Site-Wide Analysis Tool] enthält Informationen z
 * Wenn Sie Ihren Drittanbieter nicht halten können [!DNL extensions] auf dem neuesten Stand der neuesten Versionen, sollten Sie verschiedene [!DNL extensions].
 
 * Um potenzielle Probleme zu vermeiden, laden Sie Drittanbieter herunter/erwerben Sie diese. [!DNL extensions] aus einer vertrauenswürdigen Quelle, z. B. [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
-

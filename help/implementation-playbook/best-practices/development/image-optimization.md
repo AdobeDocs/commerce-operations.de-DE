@@ -28,7 +28,7 @@ Bevor Sie Bilder auf Ihre Commerce-Sites hochladen, optimieren und komprimieren 
 
 - Das PNG-Format liefert Bilder mit kleinerer Größe für Bilder mit großen einfarbigen Bereichen.
 
-- Das JPEG-Format liefert kleinere Bilder für alle anderen Bildtypen. Verwenden Sie die höchste Komprimierung (ohne spürbaren Abbau). Das sind normalerweise 60 bis 80 Prozent.
+- Das JPEG-Format liefert kleinere Bilder für alle anderen Bildtypen. Verwenden Sie die höchste Komprimierung (ohne spürbaren Abbau). Das sind in der Regel 60 bis 80 Prozent.
 
 ## Fastly-Bildoptimierung aktivieren und konfigurieren
 

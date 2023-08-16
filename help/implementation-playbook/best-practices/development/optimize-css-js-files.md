@@ -68,7 +68,7 @@ Im *Admin* Seitenleiste, navigieren Sie zu **Stores** > **Einstellungen** > **Ko
 
 ### Befehlszeile verwenden
 
-So aktivieren Sie die JS-Minimierung in Adobe Commerce in der Cloud-Infrastruktur:
+Aktivieren der JS-Minimierung in Adobe Commerce in der Cloud-Infrastruktur:
 
 1. Führen Sie diesen Befehl lokal aus:
 
@@ -91,6 +91,6 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 ## Zusätzliche Informationen
 
 - [Clientseitige Optimierungseinstellungen](../../../performance/configuration.md#client-side-optimization-settings)
-- [Benutzerhandbuch: Optimieren von Ressourcendateien](https://docs.magento.com/user-guide/system/file-optimization.html)
+- [Benutzerhandbuch: Optimierung von Ressourcendateien](https://docs.magento.com/user-guide/system/file-optimization.html)
 - [Frontend-Entwicklerhandbuch: CSS-Zusammenführung, Minimierung und Site-Leistung](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Erweitertes JavaScript-Bundling](../../../performance/advanced-js-bundling.md)

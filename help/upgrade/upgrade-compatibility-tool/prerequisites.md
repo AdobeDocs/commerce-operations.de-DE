@@ -1,25 +1,25 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] Anforderungen"
+title: '[!DNL Upgrade Compatibility Tool] Anforderungen'
 description: Stellen Sie sicher, dass Ihr System die zum Ausführen der [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt.
-source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
+exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
 
 ---
 
-
 # Adobe Commerce-Zugriffsschlüssel
 
 {{commerce-only}}
 
-Sie müssen [Adobe Commerce-Zugriffsschlüssel](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) zum Herunterladen und Verwenden der [!DNL Upgrade Compatibility Tool]. Fügen Sie Ihre Adobe Commerce-Zugriffsschlüssel zu Ihren `auth.json` Datei, die sich unter `~/.composer` Standardmäßig.
+Sie müssen [Adobe Commerce-Zugriffsschlüssel](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) zum Herunterladen und Verwenden der [!DNL Upgrade Compatibility Tool]. Fügen Sie Ihre Adobe Commerce-Zugriffsschlüssel zu Ihren `auth.json` -Datei, die sich unter `~/.composer` Standardmäßig.
 
 >[!NOTE]
 >
 >Überprüfen Sie Ihre **COMPOSER_HOME** Umgebungsvariable, um zu sehen, wo die `auth.json` -Datei befindet.
 
-Die **öffentlicher Schlüssel** entspricht _Benutzername_ in der Erwägung, dass **privater Schlüssel** ist die _password_:
+Die **öffentlicher Schlüssel** entspricht _Benutzername_ in der Erwägung, **privater Schlüssel** ist die _password_:
 
 ## Beispiel für Adobe Commerce-Zugriffsschlüssel
 
@@ -74,10 +74,10 @@ ext-zip       1.15.6    success
 php           7.4.30    success
 ```
 
-Adobe Commerce wird nur unter Linux-Betriebssystemen unterstützt. Sie können die [!DNL Upgrade Compatibility Tool] in einem Linux-Betriebssystem. Sie müssen die [!DNL Upgrade Compatibility Tool] wo sich Ihre Adobe Commerce-Instanz befindet.
+Adobe Commerce wird nur unter Linux-Betriebssystemen unterstützt. Sie können die [!DNL Upgrade Compatibility Tool] in einem Linux-Betriebssystem. Sie müssen nicht die [!DNL Upgrade Compatibility Tool] wo sich Ihre Adobe Commerce-Instanz befindet.
 
-Es ist notwendig, [!DNL Upgrade Compatibility Tool] , um Zugriff auf den Quellcode der Adobe Commerce-Instanz zu erhalten. Sie können es beispielsweise auf einem Server installieren und auf eine andere Adobe Commerce-Installation verweisen.
+Es ist notwendig, die [!DNL Upgrade Compatibility Tool] , um Zugriff auf den Quellcode der Adobe Commerce-Instanz zu erhalten. Sie können es beispielsweise auf einem Server installieren und auf eine andere Adobe Commerce-Installation verweisen.
 
 Wenn Sie die [!DNL Upgrade Compatibility Tool] Bei einer Adobe Commerce-Instanz mit großen Modulen und Dateien erfordert das Tool möglicherweise eine hohe RAM-Menge (mindestens 2 GB).
 
-Führen Sie die [!DNL Upgrade Compatibility Tool] von [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) für [Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} Projekte.
+Führen Sie die [!DNL Upgrade Compatibility Tool] aus dem [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) für [Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} Projekte.

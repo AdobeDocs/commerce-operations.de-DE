@@ -1,13 +1,13 @@
 ---
 title: Adobe Commerce deinstallieren oder neu installieren
 description: Führen Sie diese Schritte aus, um Vor-Ort-Installationen von Adobe Commerce und Magento Open Source zu deinstallieren und neu zu installieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Commerce deinstallieren oder neu installieren
 
@@ -20,7 +20,7 @@ So aktualisieren Sie die Anwendung:
 * Wenn Sie die Software aus einem Archiv installiert haben oder &quot;Composer-create-project&quot;verwendet haben, lesen Sie den Abschnitt [Upgrade-Handbuch](../../upgrade/overview.md).
 * Wenn Sie ein Entwickler sind (d. h., Sie haben `git clone`), siehe [Anwendung aktualisieren](../../upgrade/developer/git-installs.md).
 
-## Installieren Sie die Anwendung
+## Installieren Sie die Anwendung.
 
 Wie Sie die Anwendung über die Befehlszeile neu installieren, hängt von Ihrer Rolle ab:
 
@@ -45,9 +45,9 @@ Die folgende Meldung wird angezeigt, um eine erfolgreiche Deinstallation zu best
 
 ## Optional generierte Dateien beibehalten
 
-Standardmäßig `bin/magento setup:upgrade` löscht kompilierten Code und den Cache. In der Regel verwenden Sie `bin/magento setup:upgrade` um Komponenten zu aktualisieren und jede Komponente kann unterschiedliche kompilierte Klassen erfordern.
+Standardmäßig ist `bin/magento setup:upgrade` löscht den kompilierten Code und den Cache. In der Regel verwenden Sie `bin/magento setup:upgrade` um Komponenten zu aktualisieren, und jede Komponente kann unterschiedliche kompilierte Klassen erfordern.
 
-In einigen Situationen (insbesondere bei der Bereitstellung in der Produktion) möchten Sie jedoch möglicherweise vermeiden, kompilierten Code zu löschen, da dies einige Zeit in Anspruch nehmen kann. (Der Cache wird weiterhin gelöscht.) Aktualisieren des Datenbankschemas und der Daten *without* den kompilierten Code zu löschen, geben Sie Folgendes ein:
+In einigen Situationen (insbesondere bei der Bereitstellung in der Produktion) möchten Sie jedoch möglicherweise vermeiden, kompilierten Code zu löschen, da dies einige Zeit in Anspruch nehmen kann. (Der Cache wird weiterhin gelöscht.) Aktualisieren des Datenbankschemas und der Daten *without* den kompilierten Code löschen,
 
 ```bash
 bin/magento setup:upgrade --keep-generated

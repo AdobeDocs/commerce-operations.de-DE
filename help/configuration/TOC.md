@@ -125,10 +125,10 @@ ht-degree: 0%
    + [Kennwort-Hashing](security/password-hashing.md)
    + [Cache-Vergiftung](security/cache-poisoning.md)
    + [Sicheres cron-PHP](security/secure-cron-php.md)
-   + [Sicherheits-TXT](security/security-txt.md)
+   + [Security TXT](security/security-txt.md)
    + [X-Frame-Options-Kopfzeile](security/xframe-options.md)
 + Speicherung {#storage}
-   + [Datenbank-Profiler](storage/db-profiler.md)
+   + [Datenbankprofil](storage/db-profiler.md)
    + Remote-Speicher {#remote-storage}
       + [Remote-Speichermodul](remote-storage/remote-storage.md)
       + [AWS S3-Bucket](remote-storage/remote-storage-aws-s3.md)

@@ -18,7 +18,7 @@ In diesem Playbook werden einige der wichtigsten Entwicklungsstandards von Adobe
 - Best Practices für die Entwicklung, die mit der MVC-Architektur abgestimmt sind
 - Architektonische Aspekte, einschließlich GRA
 - Sicherheitsstandards gegen Scripting und Exploits
-- Best Practices für die Entwicklung von Erweiterungen
+- Best Practices für die Erweiterungsentwicklung
 - Web-API-Integrationen mit REST, SOAP und GraphQL
 - Leistungsverbesserungen bei Codierung und Infrastruktur
 - Testwerkzeuge, -strategien und -methoden
@@ -33,6 +33,6 @@ Adobe Commerce on Cloud Infrastructure ist eine verwaltete, automatisierte Hosti
 
 ![Infografiken zu Adobe Commerce-Komponenten](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce on Cloud Infrastructure bietet eine vorkonfigurierte Infrastruktur mit PHP, MySQL, Redis, [!DNL RabbitMQ], und Elasticsearch-Technologien; einen Git-basierten Workflow mit automatischen Build- und Bereitstellungsvorgängen für eine effiziente schnelle Entwicklung und kontinuierliche Bereitstellung jedes Mal, wenn Code-Änderungen in eine Platform as a Service-Umgebung (PaaS) gepusht werden; hochgradig anpassbare Umgebungskonfigurationsdateien und -werkzeuge; und AWS-Hosting, das eine skalierbare und sichere Umgebung für Online-Verkäufe und -Einzelhandel bietet.
+Adobe Commerce on Cloud Infrastructure bietet eine vorkonfigurierte Infrastruktur, die PHP, MySQL, Redis, [!DNL RabbitMQ], und Elasticsearch-Technologien; ein Git-basierter Workflow mit automatischen Build- und Bereitstellungsvorgängen für eine effiziente, schnelle Entwicklung und kontinuierliche Bereitstellung jedes Mal, wenn Code-Änderungen in einer Platform as a Service-Umgebung übertragen werden; hochgradig anpassbare Umgebungskonfigurationsdateien und -werkzeuge; und AWS-Hosting, das eine skalierbare und sichere Umgebung für Online-Vertrieb und -Einzelhandel bietet.
 
 ![Infografiken zu Adobe Commerce-Komponenten](../../assets/playbooks/cloud-tech-stack.svg)

@@ -25,7 +25,7 @@ Während der Migration wird die Variable [Map Step](technical-specification.md#m
 
 In den meisten Fällen wird die [Map Step](technical-specification.md#map-step) hinreichend löst kleinere Datenformat- und Strukturänderungen mithilfe der folgenden Methoden im `map.xml` Datei:
 
-- Tabelle oder Feldnamen mit Zuordnungsregeln ändern
+- Ändern von Tabellen- oder Feldnamen mit Zuordnungsregeln
 - Transformieren von Datenformaten mit vorhandenen Handlern oder einem benutzerdefinierten Handler
 
 Im Folgenden finden Sie ein Beispiel für die Verwendung sowohl von Zuordnungsregeln als auch von Handlern. In diesem Beispiel wird eine hypothetische Magento 1-Erweiterung namens &quot;GreatBlog&quot;verwendet, die für Magento 2 verbessert wurde.
@@ -72,17 +72,17 @@ Im Folgenden finden Sie ein Beispiel für die Verwendung sowohl von Zuordnungsre
 ```
 
 - Migrieren Sie keine unnötigen Daten aus dem `great_blog_index` Indextabelle.
-- Die Tabelle `great_blog_publication` wurde in umbenannt. `great_blog_post` in Magento 2, sodass Daten in die neue Tabelle migriert werden.
+- Die Tabelle `great_blog_publication` wurde in `great_blog_post` in Magento 2, sodass Daten in die neue Tabelle migriert werden.
    - Die `summary` wurde in umbenannt. `title`, sodass Daten in das neue Feld migriert werden.
    - Die `priority` wurde entfernt und ist in Magento 2 nicht mehr vorhanden.
    - Die Daten im `body` hat das Format geändert und sollte vom benutzerdefinierten Handler verarbeitet werden: `\Migration\Handler\GreatBlog\NewFormat`.
 - Für die Erweiterung &quot;GreatBlog&quot;wurde in Magento 2 eine neue Bewertungsfunktion entwickelt.
-   - Eine neue `great_blog_rating` -Tabelle erstellt wurde.
+   - Eine neue `great_blog_rating` wurde erstellt.
    - Eine neue `great_blog_post.rating` wurde erstellt.
 
 ### Erweitern der Zuordnung in anderen Schritten
 
-Andere Schritte unterstützen das Mapping, z. B. die [EAV-Schritt](technical-specification.md#eav-step) und im Schritt Kundenattribute . Diese Schritte migrieren eine vordefinierte Liste von Magento-Tabellen. Angenommen, die Erweiterung &quot;GreatBlog&quot;enthält ein zusätzliches Feld im `eav_attribute` und der Name in Magento 2 geändert. Da die Tabelle von der [EAV-Schritt](technical-specification.md#eav-step), sollten Zuordnungsregeln für die `map-eav.xml` -Datei. Die `map.xml` und `map-eav.xml` -Dateien verwenden dasselbe `map.xsd` -Schema verwenden, sodass die Zuordnungsregeln unverändert bleiben.
+Andere Schritte unterstützen das Mapping, z. B. die [EAV-Schritt](technical-specification.md#eav-step) und im Schritt Kundenattribute . Diese Schritte migrieren eine vordefinierte Liste von Magento-Tabellen. Angenommen, die Erweiterung &quot;GreatBlog&quot;enthält ein zusätzliches Feld im `eav_attribute` -Tabelle und der Name wurde in Magento 2 geändert. Da die Tabelle von der [EAV-Schritt](technical-specification.md#eav-step), sollten Zuordnungsregeln für die `map-eav.xml` -Datei. Die `map.xml` und `map-eav.xml` -Dateien verwenden dasselbe `map.xsd` -Schema verwenden, sodass die Zuordnungsregeln unverändert bleiben.
 
 ## Größere Datenformat- und Strukturänderungen
 
@@ -98,9 +98,9 @@ Erstellen Sie für umfangreiche Datenformat- und Strukturänderungen einen benut
 
 ### Erstellen eines benutzerdefinierten Schritts
 
-Angenommen, die Erweiterung enthält in Magento 1 eine Tabelle, wurde jedoch neu gestaltet und enthält in Magento 2 zwei Tabellen.
+Angenommen, die Erweiterung enthält eine Tabelle in Magento 1, wurde aber neu gestaltet, um zwei Tabellen in Magento 2 zu haben.
 
-In Magento 1 gab es eine `greatblog_post` table:
+In Magento 1 gab es eine einzige `greatblog_post` table:
 
 ```text
 | Field     | Type     |
@@ -122,7 +122,7 @@ In Magento 2 eine neue Tabelle für Tags `greatblog_post_tags` eingeführt wurde
 | sort_order | SMALLINT |
 ```
 
-Magento 2 `greatblog_post` -Tabelle sieht nun wie folgt aus:
+MAGENTO 2 `greatblog_post` -Tabelle sieht nun wie folgt aus:
 
 ```text
 | Field     | Type     |
@@ -153,7 +153,7 @@ Um alle Daten aus der alten Tabellenstruktur in eine neue zu migrieren, können 
 </steps>
 ```
 
-Das Tool führt die Schritte entsprechend ihrer Position im `config.xml` Datei; von oben nach unten. In unserem Beispiel wird die `GreatBlog Step` wird zuletzt ausgeführt.
+Das Tool führt die Schritte entsprechend ihrer Position im `config.xml` -Datei; von oben nach unten. In unserem Beispiel wird die `GreatBlog Step` wird zuletzt ausgeführt.
 
 Schritte können vier Arten von Klassen umfassen:
 
@@ -164,7 +164,7 @@ Schritte können vier Arten von Klassen umfassen:
 
 >[!NOTE]
 >
->Siehe [Konfiguration](technical-specification.md#configuration), [Schrittinternals](technical-specification.md#step-internals), [Phasen](technical-specification.md#step-stages)und [Ausführungsmodi](technical-specification.md#running-modes) für weitere Informationen.
+>Siehe Abschnitt [Konfiguration](technical-specification.md#configuration), [Schrittinternals](technical-specification.md#step-internals), [Phasen](technical-specification.md#step-stages), und [Ausführungsmodi](technical-specification.md#running-modes) für weitere Informationen.
 
 
 Innerhalb dieser Klassen können komplexe SQL-Abfragen zusammengestellt werden, um Daten abzurufen und zu migrieren. Außerdem sollten diese Tabellen im [Map Step](technical-specification.md#map-step) weil es alle vorhandenen Tabellen scannt und versucht, die Daten zu migrieren, es sei denn, sie befinden sich im `<ignore>` -Tag `map.xml` -Datei.
@@ -406,10 +406,10 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-Nach der in den Beispielen angegebenen Implementierung eines benutzerdefinierten Schritts nimmt das System Daten aus der einzelnen Tabelle Magento 1 entgegen und verarbeitet sie mithilfe von `Vendor\Migration\Step\GreatBlog\Data` und speichern Sie die Daten in zwei Magento 2-Tabellen. Neue und geänderte Datensätze werden bei der Delta-Migration mithilfe der Variablen `Vendor\Migration\Step\GreatBlog\Delta` -Klasse.
+Nach der in den Beispielen angegebenen Implementierung eines benutzerdefinierten Schritts nimmt das System Daten aus der einzelnen Magento 1-Tabelle auf und verarbeitet sie mithilfe von `Vendor\Migration\Step\GreatBlog\Data` -Klasse und speichern Sie die Daten in zwei Magento 2-Tabellen. Neue und geänderte Datensätze werden bei der Delta-Migration mithilfe der Variablen `Vendor\Migration\Step\GreatBlog\Delta` -Klasse.
 
 ## Verbotene Erweiterungsmethoden
 
-Seit [!DNL Data Migration Tool] und Magento 2 sich ständig weiterentwickeln, können sich bestehende Schritte und Handler ändern. Es wird dringend empfohlen, das Verhalten von Schritten wie dem [Map Step](technical-specification.md#map-step), [URL-Neuschreibungsschritt](technical-specification.md#url-rewrite-step), und Handler durch Erweitern ihrer Klassen.
+Seit [!DNL Data Migration Tool] und Magento 2 entwickeln sich ständig weiter, bestehende Schritte und Handler können sich ändern. Es wird dringend empfohlen, das Verhalten von Schritten wie dem [Map Step](technical-specification.md#map-step), [URL-Neuschreibungsschritt](technical-specification.md#url-rewrite-step), und Handler durch Erweitern ihrer Klassen.
 
 Einige Schritte unterstützen keine Zuordnung und können nicht geändert werden, ohne den Code zu ändern. Sie können entweder einen zusätzlichen Schritt schreiben, der Daten nach der Migration ändert, oder eine [GitHub-Problem](https://github.com/magento/data-migration-tool/issues) und fordern Sie einen neuen Erweiterungspunkt für den vorhandenen Schritt an.

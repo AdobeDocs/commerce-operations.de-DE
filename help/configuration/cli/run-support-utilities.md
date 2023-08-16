@@ -1,13 +1,13 @@
 ---
 title: Führen Sie die Hilfsprogramme aus
 description: Fehlerbehebung für Ihr Commerce-Projekt mithilfe des integrierten Support-Dienstprogramms.
-source-git-commit: 2c12c6ea6e7b6ffeb07bbda17ded34e39de6656a
+exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # Führen Sie die Hilfsprogramme aus
 
@@ -77,7 +77,7 @@ Dabei gilt:
 - **`--name`** gibt den Dateinamen der Dump-Datei an (optional). Wenn Sie diesen Parameter weglassen, wird die Dump-Datei mit dem Zeitstempel und dem Datumsstempel versehen.
 - **`-o|--output=<path>` ist der absolute Dateisystempfad zum Speichern der Sicherung (erforderlich).
 - **`-l|--logs`** enthält Protokolldateien (optional).
-- **`-i|--ignore-sanitize`** bedeutet, dass Daten beibehalten werden; Setzen Sie das Flag beim Erstellen der Sicherung auf die in der Datenbank gespeicherten Hash-vertraulichen Daten (optional).
+- **`-i|--ignore-sanitize`** bedeutet, dass die Daten beibehalten werden; bei der Erstellung der Sicherung darf das Flag nicht für in der Datenbank gespeicherte Hash-sensible Daten verwendet werden (optional).
 
 Sensible Daten umfassen Kundeninformationen aus den folgenden Datenbanktabellen:
 
@@ -96,7 +96,7 @@ Sensible Daten umfassen Kundeninformationen aus den folgenden Datenbanktabellen:
 
 Stellen Sie nach Abschluss des Befehls die Datenbanksicherung für den Adobe Commerce-Support bereit.
 
-## Fehlerbehebung: Anzeigen von Dienstprogrammen und Pfaden
+## Fehlerbehebung: Anzeigeprogramme und Pfade
 
 Wir stellen Befehle bereit, die Pfade zu Dienstprogrammen anzeigen, die für die Datenerfassung und die Befehlszeile erforderlich sind. Sie können diese Befehle beispielsweise verwenden, wenn Fehler wie die folgende in der Admin- oder Befehlszeile angezeigt werden:
 
@@ -117,7 +117,7 @@ Führen Sie die folgenden Befehle in der angezeigten Reihenfolge aus, um die Pfa
 1. `bin/magento support:utility:paths` erstellt `<magento_root>/var/support/Paths.php`, der die Pfade zu allen vom Dienstprogramm verwendeten Anwendungen auflistet.
 1. `bin/magento support:utility:check` zeigt die Dateisystempfade an.
 
-Beispiel:
+Ein Beispiel:
 
 ```terminal
    gzip => /bin/gzip

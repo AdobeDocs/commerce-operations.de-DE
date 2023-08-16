@@ -92,7 +92,7 @@ Wenn Sie die Erweiterung installiert und mit einem vorhandenen API-Schlüssel f�
 
 1. Klicken **[!UICONTROL API Portal]**.
 
-1. Klicken **[!UICONTROL Delete]** neben dem vorhandenen API-Schlüssel.
+1. Klicks **[!UICONTROL Delete]** neben dem vorhandenen API-Schlüssel.
 
 1. [Konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) einen neuen API-Schlüssel.
 
@@ -130,7 +130,7 @@ Wenn die Erweiterung nicht installiert ist, installieren Sie sie mit den folgend
 
 ## Installieren des Agenten
 
-Wir haben eine [Shell-Skript](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) um die Installation zu vereinfachen. Es wird empfohlen, das Shell-Skript zu verwenden. Sie können jedoch dem [manuelle Installation](#manual) -Methode.
+Wir haben eine [Shell-Skript](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) zur Vereinfachung der Installation. Es wird empfohlen, das Shell-Skript zu verwenden. Sie können jedoch dem [manuelle Installation](#manual) -Methode, falls erforderlich.
 
 >[!INFO]
 >
@@ -159,9 +159,9 @@ Wir haben eine [Shell-Skript](https://github.com/magento-swat/install-agent-help
    Success exit.
    ```
 
-1. Nach dem Herunterladen und Installieren des Agenten, [konfigurieren, um](#run-the-agent) Verwendung einer der folgenden Methoden:
+1. Nach dem Herunterladen und Installieren des Agenten, [konfigurieren, um sie auszuführen](#run-the-agent) Verwendung einer der folgenden Methoden:
 
-   - [Diensleistung](#service) (empfohlen, wenn Sie Stammzugriff haben)
+   - [Dienst](#service) (empfohlen, wenn Sie Stammzugriff haben)
 
    - [Cron](#cron)
 
@@ -225,7 +225,7 @@ Wenn Sie die [Shell-Skript](https://github.com/magento-swat/install-agent-helper
    shasum -a 512 -c launcher.checksum
    ```
 
-1. Erstellen Sie die `config.yaml` mit dem folgenden Inhalt.
+1. Erstellen Sie die `config.yaml` -Datei mit dem folgenden Inhalt.
 
    ```yaml
    project:
@@ -258,9 +258,9 @@ Wenn Sie die [Shell-Skript](https://github.com/magento-swat/install-agent-helper
    Success exit.
    ```
 
-1. Nach dem Herunterladen und Installieren des Agenten müssen Sie [konfigurieren, um](#run-the-agent) Verwendung einer der folgenden Methoden:
+1. Nach dem Herunterladen und Installieren des Agenten müssen Sie [konfigurieren, um sie auszuführen](#run-the-agent) Verwendung einer der folgenden Methoden:
 
-   - [Diensleistung](#service) (empfohlen, wenn Sie Stammzugriff haben)
+   - [Dienst](#service) (empfohlen, wenn Sie Stammzugriff haben)
 
    - [Cron](#cron)
 
@@ -268,7 +268,7 @@ Wenn Sie die [Shell-Skript](https://github.com/magento-swat/install-agent-helper
 
 Es wird empfohlen, den Agenten für die Ausführung als Dienst zu konfigurieren. Wenn Sie eingeschränkten Zugriff auf Ihre Infrastruktur haben und keine Root-Berechtigungen haben, müssen Sie [cron](#cron) anstatt.
 
-### Diensleistung {#service}
+### Dienst {#service}
 
 1. Erstellen einer Datei mit einer systemd-Einheit `(/etc/systemd/system/scheduler.service)` durch die folgende Konfiguration (ersetzen Sie `<filesystemowner>` mit dem UNIX®-Benutzer, der Eigentümer des Ordners ist, in dem der Agent und die Adobe Commerce-Software installiert sind). Wenn Sie den Agenten als Stammbenutzer heruntergeladen haben, ändern Sie den Ordner und den Eigentümer der verschachtelten Dateien.
 
@@ -364,7 +364,7 @@ Führen Sie die folgenden Befehle aus, um den Dienst aus Ihrem System zu deinsta
    rm /usr/local/bin/scheduler
    ```
 
-Wenn Sie den Agenten so konfiguriert haben, dass er stattdessen mit cron ausgeführt wird, verwenden Sie die folgenden Anweisungen:
+Wenn Sie den Agenten für die Ausführung mit cron konfiguriert haben, verwenden Sie die folgenden Anweisungen:
 
 1. Entfernen Sie den Agenten aus der Liste der Kronen.
 
@@ -400,7 +400,7 @@ Um diesen Fehler zu beheben, führen Sie die folgenden Schritte aus:
 1. Führen Sie einen [Skriptinstallation](#scripted), speichern Sie die Ausgabe und überprüfen Sie die Ausgabe auf Fehler.
 1. Überprüfen Sie die generierten `config.yaml` und überprüfen Sie, ob der Pfad zu Ihrer Commerce-Instanz und PHP korrekt ist.
 1. Stellen Sie sicher, dass sich der Benutzer, der die Planung ausführt, im [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) Unix-Gruppe oder ist derselbe Benutzer wie der Eigentümer des Dateisystems.
-1. Stellen Sie sicher, dass die Variable [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) -Schlüssel korrekt installiert sind und versuchen, sie zu aktualisieren, um die Erweiterung mit Ihrem System zu verbinden.
+1. Stellen Sie sicher, dass die Variable [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) -Schlüssel korrekt installiert sind, und versuchen Sie, sie zu aktualisieren, um die Erweiterung mit Ihrem System zu verbinden.
 1. [Deinstallieren](#uninstall) Der Agent nach dem Aktualisieren der Schlüssel und Neuinstallation mithilfe der [Installationsskript](#scripted).
 1. Führen Sie den Planer aus und überprüfen Sie, ob Sie immer noch denselben Fehler erhalten.
 1. Wenn Sie immer noch denselben Fehler erhalten, erhöhen Sie die Protokollebene im `config.yaml` , um ein Support-Ticket zu debuggen und zu öffnen.

@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Upgrade Compatibility Tool] reports"
+title: '[!DNL Upgrade Compatibility Tool] reports'
 description: Führen Sie die folgenden Schritte aus, um [!DNL Upgrade Compatibility Tool] in Ihrem Adobe Commerce-Projekt.
-source-git-commit: 147ecbc66eaf370e7ffaad0b6fce8b41f40b70df
+exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
 
 ---
-
 
 # Berichte
 
@@ -31,11 +31,11 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 
 Dieser Bericht enthält auch eine detaillierte Zusammenfassung, die Folgendes zeigt:
 
-- *Aktuelle Version*: die derzeit installierte Version.
+- *Aktuelle Version*: die aktuell installierte Version.
 - *Zielversion*: die Version, auf die Sie aktualisieren möchten.
-- *Ausführungszeit*: die Zeit, die die Analyse für die Erstellung des Berichts benötigte (mm:ss).
+- *Ausführungszeit*: die Zeit, die die Analyse für die Erstellung des Berichts benötigt hat (mm:ss).
 - *Module, die aktualisiert werden müssen*: der Prozentsatz der Module, die Kompatibilitätsprobleme enthalten und aktualisiert werden müssen.
-- *Dateien, die aktualisiert werden müssen*: den Prozentsatz der Dateien, die Kompatibilitätsprobleme enthalten und aktualisiert werden müssen.
+- *Dateien, die aktualisiert werden müssen*: der Prozentsatz der Dateien, die Kompatibilitätsprobleme enthalten und aktualisiert werden müssen.
 - *Kritische Fehler insgesamt*: die Anzahl der gefundenen kritischen Fehler.
 - *Fehler insgesamt*: die Anzahl der gefundenen Fehler.
 - *Warnhinweise insgesamt*: die Anzahl der gefundenen Warnungen.
@@ -59,14 +59,14 @@ Siehe folgendes Beispiel für die Befehlszeilenschnittstelle:
 
 ## JSON-Datei
 
-Sie können die JSON-Dateiausgabe abrufen, während Sie die [!DNL Upgrade Compatibility Tool] auf einer Befehlszeilenschnittstelle. Die `JSON` enthält genau die gleichen Informationen, die auf der [!DNL Upgrade Compatibility Tool] Ausgabe:
+Sie können die JSON-Dateiausgabe beim Ausführen der [!DNL Upgrade Compatibility Tool] auf einer Befehlszeilenschnittstelle. Die `JSON` enthält genau die gleichen Informationen, die auf der Seite [!DNL Upgrade Compatibility Tool] Ausgabe:
 
 - Eine Liste der festgestellten Probleme.
 - Eine Zusammenfassung der Analyse.
 
 Für jedes aufgetretene Problem enthält der Bericht detaillierte Informationen wie den Schweregrad und die Beschreibung des Problems.
 
-Exportieren `JSON` in einen anderen Ausgabeordner:
+So exportieren Sie diese `JSON` in einen anderen Ausgabeordner:
 
 ```bash
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
@@ -75,7 +75,7 @@ bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 Wenn die Argumente wie folgt lauten:
 
 - `<dir>`: Installationsordner von Adobe Commerce.
-- `[=JSON-OUTPUT-PATH]`: Pfad-Verzeichnis zum Exportieren `JSON` Ausgabedatei.
+- `[=JSON-OUTPUT-PATH]`: Pfad-Verzeichnis, das exportiert werden soll `JSON` Ausgabedatei
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Der HTML-Bericht enthält außerdem vier verschiedene Diagramme:
 
 - **Schweregrad von Modulen nach Problem**: Zeigt die Schweregrad-Verteilung nach Modulen an.
 - **Schweregrad der Dateien nach Problem**: Zeigt die Schweregrad-Verteilung nach Dateien an.
-- **Nach Gesamtanzahl der Probleme sortierte Module**: Zeigt die 10 am stärksten kompromittierten Module unter Berücksichtigung von Warnungen, Fehlern und kritischen Fehlern an.
+- **Nach Gesamtanzahl der Probleme sortierte Module**: Zeigt die 10 am stärksten gefährdeten Module unter Berücksichtigung von Warnungen, Fehlern und kritischen Fehlern an.
 - **Module mit relativen Größen und Problemen**: Je mehr Dateien ein Modul enthält, desto größer ist sein Kreis. Je mehr Probleme ein Modul hat, desto roter erscheint sein Kreis.
 
 In diesen Diagrammen können Sie ermitteln, welche Module am stärksten gefährdet sind und welche die Durchführung eines Upgrades erfordern.
@@ -115,7 +115,7 @@ In diesen Diagrammen können Sie ermitteln, welche Module am stärksten gefährd
 
 Die HTML-Berichtsdiagramme werden ebenfalls entsprechend aktualisiert, mit Ausnahme der `Modules with relative sizes and issues`, der mit der `min-issue-level` das ursprünglich eingerichtet wurde.
 
-Wenn Sie unterschiedliche Ergebnisse für die `Modules with relative sizes and issues` -Diagramm verwenden, müssen Sie den Befehl erneut ausführen und einen anderen Wert für die `--min-issue-level` -Option.
+Wenn Sie für die Variable `Modules with relative sizes and issues` -Diagramm verwenden, müssen Sie den Befehl erneut ausführen und einen anderen Wert für die `--min-issue-level` -Option.
 
 ![HTML-Bericht - Punktdiagramm](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
@@ -128,7 +128,7 @@ bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 Wenn die Argumente wie folgt lauten:
 
 - `<dir>`: Installationsordner von Adobe Commerce.
-- `[=HTML-OUTPUT-PATH]`: Pfad-Verzeichnis zum Exportieren `.html` Ausgabedatei.
+- `[=HTML-OUTPUT-PATH]`: Pfad-Verzeichnis, das exportiert werden soll `.html` Ausgabedatei
 
 >[!NOTE]
 >

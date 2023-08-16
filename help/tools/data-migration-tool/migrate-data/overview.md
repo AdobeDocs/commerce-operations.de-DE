@@ -1,6 +1,6 @@
 ---
 title: Migrationsübersicht
-description: Erfahren Sie, wie Sie mit der Migration von Daten aus Magento 1 zu Magento 2 beginnen können. [!DNL Data Migration Tool].
+description: Erfahren Sie, wie Sie mit der Migration von Daten von Magento 1 auf Magento 2 beginnen können. [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Migrationsübersicht
 
-Bevor Sie mit der Migration beginnen, beenden Sie alle Cron-Aufträge für Magento 1.
+Bevor Sie mit der Migration beginnen, beenden Sie alle Magento 1 Cron-Aufträge.
 
 Befolgen Sie während des Migrationsprozesses die folgenden allgemeinen Regeln für eine erfolgreiche Migration:
 
-1. **Nicht** Änderungen am Magento 1 Admin vorzunehmen, mit Ausnahme der Auftragsverwaltung (Versand, Erstellung von Rechnungen und Kreditkarten)
+1. **Nicht** Änderungen an der Magento 1 Admin vorzunehmen, mit Ausnahme der Auftragsverwaltung (Versand, Erstellung von Rechnungen und Kreditkarten)
 1. **Nicht** Code ändern
 1. **Nicht** Änderungen an Magento 2 Admin und Storefront vornehmen
 
 >[!TIP]
 >
->Alle Vorgänge in der Storefront von Magento 1 sind zulässig.
+>Alle Vorgänge in der Magento 1 Storefront sind erlaubt.
 
 ## Führen Sie die [!DNL Data Migration Tool]
 
@@ -73,7 +73,7 @@ Dabei gilt:
 - `<mode>` kann sein: [`settings`](settings.md), [`data`](data.md)oder [`delta`](delta.md)
 - `[-r|--reset]` ist ein optionales Argument, das die Migration von Anfang an startet. Sie können dieses Argument zum Testen der Migration verwenden.
 - `[-a|--auto]` ist ein optionales Argument, das verhindert, dass die Migration angehalten wird, wenn bei der Integritätsprüfung Fehler auftreten.
-- `{<path to config.xml>}` ist der absolute Dateisystempfad zu `config.xml`; Dieses Argument ist erforderlich.
+- `{<path to config.xml>}` ist der absolute Dateisystempfad zu `config.xml`; dieses Argument ist erforderlich.
 
 >[!NOTE]
 >
@@ -88,4 +88,4 @@ Bei der Erstellung der [!DNL Data Migration Tool]wurde die folgende Datenübertr
 1. [Daten](data.md)
 1. [Änderungen](delta.md)
 
-Wir empfehlen dringend, Daten in derselben Reihenfolge zu migrieren.
+Es wird dringend empfohlen, Daten in derselben Reihenfolge zu migrieren.

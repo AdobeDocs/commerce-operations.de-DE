@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Übersicht über die benutzerdefinierte Protokollierung
 
-Protokolle bieten Einblick in die Systemprozesse. z. B. Debugging von Informationen, die Sie dabei unterstützen, zu verstehen, wann ein Fehler aufgetreten ist oder was zu dem Fehler geführt hat.
+Protokolle bieten Einblicke in Systemprozesse, z. B. Debugging-Informationen, die Ihnen dabei helfen zu verstehen, wann ein Fehler aufgetreten ist oder was zu dem Fehler geführt hat.
 
 Dieses Thema konzentriert sich auf die dateibasierte Protokollierung, obwohl Commerce die Flexibilität bietet, Protokolle auch in der Datenbank zu speichern.
 
@@ -22,9 +22,9 @@ Adobe empfiehlt aus folgenden Gründen die Verwendung der zentralisierten Anwend
 
 - Die Verarbeitung von Protokolldaten wird durch die Verwendung spezieller Tools effizienter, z. B. [Logstash], [Logplex]oder [fließend]—ohne Auswirkungen auf einen Produktionsserver.
 
-   >[!INFO]
-   >
-   >Adobe empfiehlt keine bestimmte Protokollierungslösung oder befürwortet sie.
+  >[!INFO]
+  >
+  >Adobe empfiehlt oder unterstützt keine bestimmte Protokollierungslösung.
 
 ## PSR-3-Konformität
 

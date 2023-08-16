@@ -40,7 +40,7 @@ Kuratierte E-Mails sind eine der besten Formen von E-Mails, da Abonnenten dadurc
 
 Kunden können E-Mails leicht übersehen. Wenn E-Mails jedoch als Interaktions-E-Mails gesendet werden, ist die Wahrscheinlichkeit, dass ein Kunde sie löscht, ohne sie anzusehen, geringer. Interaktions-E-Mails können in Form einer Kampagne gesendet werden, die Benutzern eine Promotion bietet, z. B. kostenlosen Versand.
 
-![Interaktionsnachrichten](../../assets/playbooks/marketing-email-engagement.png)
+![Beispiel für eine Interaktionsmarketing-E-Mail](../../assets/playbooks/marketing-email-engagement.png)
 
 ## Referenz-E-Mail
 
@@ -52,7 +52,7 @@ Mundpropaganda ist eine der besten Marketingstrategien. Senden von Verweisnachri
 
 Rabatte per E-Mail anzubieten ist eine effektive Marketingstrategie. Sie sollten Abonnenten Rabatte anbieten, um ihre Treue zu wahren.
 
-![Beispiel für eine Rabatt-Marketing-E-Mail](../../assets/playbooks/marketing-email-discount.png)
+![Beispiel für eine Rabattmarketemail](../../assets/playbooks/marketing-email-discount.png)
 
 ## Abbruch-E-Mail
 

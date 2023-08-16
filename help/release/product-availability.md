@@ -5,7 +5,7 @@ exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 source-git-commit: aadccd57794e5e1b07f6d863c2627f2a771509fc
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -17,24 +17,24 @@ Dienste und Erweiterungen werden mit der neuesten Version von Commerce zum Zeitp
 
 Unterstützte Versionen wurden von Adobe vollständig getestet. Unterstützte Versionen stehen dem Support zur Verfügung. Ältere Versionen funktionieren möglicherweise ordnungsgemäß, werden jedoch nicht offiziell unterstützt.
 
-## Von Adobe erstellte Erweiterungen
+## Adobe - Erstellte Erweiterungen
 
-Diese Adobe Commerce-Erweiterungen wurden von der Core-Adobe Commerce-Codebase entkoppelt. Dies ermöglicht es der Adobe, Iterationen dieser Erweiterungen schneller für Händler freizugeben, die bereit sind, ein geringes Risiko im Austausch für einen früheren Zugriff auf neue Funktionen zu übernehmen.
+Diese Adobe Commerce-Erweiterungen wurden von der Core-Adobe Commerce-Codebase entkoppelt. Dies ermöglicht es Adobe, Iterationen dieser Erweiterungen schneller für Händler freizugeben, die bereit sind, ein kleines Risiko im Austausch für einen früheren Zugriff auf neue Funktionen zu übernehmen.
 
 Die folgende Tabelle zeigt die Versionsunterstützung für jede Erweiterung in Bezug auf die Adobe Commerce-Version.
 
 | **Adobe Commerce-Versionen** | 2.4.7-beta1 | 2.4.6 | 2.4.5 | 2.4.4 | 2.4.3 |                                                                                                                                                                                                                                          |
 |----------------------------------------|-------------|--------|--------|--------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _Adobe I/O-Ereignisse für Adobe Commerce_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [Verfasser](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[Versionshinweise](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
+| _Adobe I/O von Ereignissen für Adobe Commerce_ | 1.2.2 | 1.2.2 | 1.2.2 | 1.2.2 | - | [Verfasser](https://developer.adobe.com/commerce/events/get-started/installation/) <br/>[Versionshinweise](https://developer.adobe.com/commerce/events/get-started/release-notes/) |
 | _B2B_ | 1.4.0+ | 1.3.5+ | 1.3.4 | 1.3.3 | 1.3.2 | [Verfasser](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html) <br/> [Versionshinweise](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html) |
 | _Kanal-Manager_ | - | 2.0.0 | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-channel-manager.html)<br/> [Versionshinweise](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html) |
 | _Amazon Sales Channel_ | - | 4.1.0+ | 4.3.0+ | 4.3.0+ | 4.3.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-module-amazon.html)<br/> [Versionshinweise](https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html) |
-| _Experience Platform Connector_ | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Versionshinweise](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
-| _Store Fulfillment for Adobe Commerce_ | - | 1.4.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Versionshinweise](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
+| _Experience Platform-Connector_ | 3.0.0-beta1 | 1.0.0+ | 1.0.0+ | 1.0.0+ | 1.0.0+ | [Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html)<br/>[Versionshinweise](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html) |
+| _Store-Erfüllung für Adobe Commerce_ | - | 1.4.0 | 1.2.0+ | 1.2.0+ | 1.2.0+ | [Marketplace](https://commercemarketplace.adobe.com/store-fulfillment-magento-walmart.html)<br/> [Versionshinweise](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html) |
 
 ## Commerce-Services
 
-[Commerce-Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) sind eine Suite von Funktionen, die von Adoben gehostet werden und zusammen mit Ihrer Commerce-Instanz robuste Funktionen und schnelle Reaktionszeiten bieten.
+[Commerce-Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) sind eine Suite von auf Adobe gehosteten Funktionen, die zusammen mit Ihrer Commerce-Instanz robuste Funktionen und schnelle Reaktionszeiten bieten.
 
 Es wird empfohlen, dass Händler die neueste Version eines Dienstes verwenden, um die höchste Stabilität und Funktionalität sicherzustellen. In der Dokumentation wird die derzeit veröffentlichte Version beschrieben.
 

@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL Indexing] tab
-description: Erfahren Sie mehr über die [!UICONTROL Indexing] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL Indexing] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Die [!UICONTROL Indexing] tab
 
-Die **[!UICONTROL Indexing]** -Tab versucht, Probleme mit der Indizierung zu erklären und mögliche Ursachen zu identifizieren.
+Die **[!UICONTROL Indexing]** -Tab versucht, Probleme mit der Indizierung zu erklären und potenzielle Ursachen zu identifizieren.
 
 ## [!UICONTROL Core index invalidated]
 

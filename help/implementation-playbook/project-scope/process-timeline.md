@@ -23,4 +23,4 @@ Dies kann ein erfolgreicher Ansatz sein. Eine Empfehlung, die das Risiko reduzie
 
 ## Beispiel-Timeline-Aktivitäten
 
-![Beispielaktivitäten der Commerce-Implementierungs-Timeline](../../assets/playbooks/timeline-activities-example.svg)
+![Beispielaktivitäten der Commerce-Implementierungszeitleiste](../../assets/playbooks/timeline-activities-example.svg)

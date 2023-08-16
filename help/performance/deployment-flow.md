@@ -1,6 +1,6 @@
 ---
 title: Bereitstellungsfluss
-description: Erfahren Sie mehr über die erforderlichen Schritte für die Bereitstellung von Adobe Commerce oder Magento Open Source in einer Produktionsumgebung.
+description: Erfahren Sie mehr über die Schritte, die für die Bereitstellung von Adobe Commerce oder Magento Open Source in einer Produktionsumgebung erforderlich sind.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
@@ -97,7 +97,7 @@ Mit diesem Befehl kann Composer die Zuordnung zu Projektdateien neu erstellen, d
 
 >[!INFO]
 >
->Wird der Modus automatisch auf die Produktion eingestellt, wird dies automatisch ausgeführt `setup:di:compile` und `setup:static-content:deploy`.
+>Wird der Produktionsmodus automatisch eingestellt, wird dies automatisch ausgeführt `setup:di:compile` und `setup:static-content:deploy`.
 
 Schließlich müssen Sie Ihren Store im Produktionsmodus platzieren. Der Produktionsmodus ist speziell für die maximale Leistung Ihres Stores optimiert. Außerdem werden alle entwicklerspezifischen Funktionen deaktiviert. Dies kann in Ihrer `.htaccess` oder `nginx.conf` Datei:
 

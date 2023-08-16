@@ -1,13 +1,13 @@
 ---
 title: Progressive Web Application (PWA)
 description: Erfahren Sie mehr über den Webtechnologiestandard der nächsten Generation für E-Commerce-Websites.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: aa968642-bf8b-4b3d-8f1d-7ced5973f331
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
 
 ---
-
 
 # Progressive Webanwendung (PWA)
 

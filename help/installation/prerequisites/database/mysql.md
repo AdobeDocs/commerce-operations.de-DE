@@ -1,13 +1,13 @@
 ---
 title: MySQL-Richtlinien
 description: Führen Sie diese Schritte aus, um MySQL und MariaDB für lokale Installationen von Adobe Commerce und Magento Open Source zu installieren und zu konfigurieren.
-source-git-commit: c65217cd277be5226681ef239d6a3cf34c251a9f
+exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
 
 ---
-
 
 # Allgemeine MySQL-Richtlinien
 
@@ -18,7 +18,7 @@ Adobe _stark_ empfiehlt bei der Einrichtung der Datenbank die Einhaltung des fol
 * Verwendung von Adobe Commerce und Magento Open Source [MySQL-Datenbank-Trigger](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) , um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexmodus auf [Zeitplan](../../../configuration/cli/manage-indexers.md#configure-indexers). Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce- und Magento Open Source-Versionen verursachen können.
 * Machen Sie sich mit [Diese möglichen Einschränkungen für MySQL Trigger](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) bevor Sie fortfahren.
 * Aktivieren Sie zur Erhöhung der Datenbanksicherheit die [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL-Modus, um zu verhindern, dass ungültige Datenwerte gespeichert werden, was zu unerwünschten Datenbankinteraktionen führen kann.
-* Adobe Commerce und Magento Open Source _not_ Unterstützung der auf MySQL-Anweisungen basierenden Replikation. Vergewissern Sie sich, dass Sie _only_ [Zeilenbasierte Replikation](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* Adobe Commerce und Magento Open Source _not_ Unterstützung der auf MySQL-Anweisungen basierenden Replikation. Stellen Sie sicher, dass Sie _only_ [row-basierte Replikation](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
@@ -28,7 +28,7 @@ Adobe _stark_ empfiehlt bei der Einrichtung der Datenbank die Einhaltung des fol
 >
 >Wenn sich Ihr Webserver und Ihr Datenbankserver auf unterschiedlichen Hosts befinden, führen Sie die in diesem Thema beschriebenen Aufgaben auf dem Datenbankserverhost aus. Informationen dazu finden Sie unter [Eine Remote-Verbindung zur MySQL-Datenbank einrichten](mysql-remote.md).
 
-## MySQL auf Ubuntu installieren
+## Installieren von MySQL auf Ubuntu
 
 Adobe Commerce und Magento Open Source 2.4 erfordern eine saubere Installation von MySQL 8.0. Folgen Sie den unten stehenden Links, um Anweisungen zur Installation von MySQL auf Ihrem Computer zu erhalten.
 
@@ -58,7 +58,7 @@ In diesem Abschnitt werden wichtige Änderungen an MySQL 8 beschrieben, die Entw
 
 ### Die Breite für ganzzahlige Typen wurde entfernt (Umrandung)
 
-Die Spezifikation der Anzeigebreite für ganzzahlige Datentypen (TINYINT, SMALLINT, MEDIUMINT, INT, BIGINT) ist in MySQL 8.0.17 veraltet. Anweisungen, die Datentypdefinitionen in ihrer Ausgabe enthalten, zeigen nicht mehr die Anzeigebreite für ganzzahlige Typen an, mit Ausnahme von TINYINT(1). MySQL Connectors gehen davon aus, dass die TINYINT(1)-Spalten als BOOLEAN-Spalten stammen. Diese Ausnahme ermöglicht es ihnen, diese Annahme fortzusetzen.
+Die Spezifikation der Anzeigebreite für ganzzahlige Datentypen (TINYINT, SMALLINT, MEDIUMINT, INT, BIGINT) ist in MySQL 8.0.17 nicht mehr enthalten. Anweisungen, die Datentypdefinitionen in ihrer Ausgabe enthalten, zeigen die Anzeigebreite für ganzzahlige Typen nicht mehr an, mit Ausnahme von TINYINT(1). MySQL Connectors gehen davon aus, dass die TINYINT(1)-Spalten als BOOLEAN-Spalten stammen. Diese Ausnahme ermöglicht es ihnen, diese Annahme fortzusetzen.
 
 #### Beispiel
 
@@ -67,15 +67,15 @@ Beschreiben Sie admin_user unter mysql 8.19
 | Feld | Typ | Null | Schlüssel | Standard | Extra |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | NO | PRI | `NULL` | `auto_increment` |
-| `firstname` | `varchar(32)` | JA |  | `NULL` |  |
-| `lastname` | `varchar(32`) | JA |  | `NULL` |  |
-| `email` | `varchar(128)` | JA |  | `NULL` |  |
-| `username` | `varchar(40)` | JA | UNI | `NULL` |  |
-| `password` | `varchar(255)` | NO |  | `NULL` |  |
-| `created` | `timestamp` | NO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | NO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` bei Aktualisierung `CURRENT_TIMESTAMP` |
-| `logdate` | `timestamp` | JA |  | `NULL` |  |
-| `lognum` | `smallint unsigned` | NO |  | `0` |  |
+| `firstname` | `varchar(32)` | JA | | `NULL` | |
+| `lastname` | `varchar(32`) | JA | | `NULL` | |
+| `email` | `varchar(128)` | JA | | `NULL` | |
+| `username` | `varchar(40)` | JA | UNI | `NULL` | |
+| `password` | `varchar(255)` | NO | | `NULL` | |
+| `created` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` bei Aktualisierung `CURRENT_TIMESTAMP` |
+| `logdate` | `timestamp` | JA | | `NULL` | |
+| `lognum` | `smallint unsigned` | NO | | `0` | |
 
 Außer für _TINYINT(1)_, sollten alle Ganzzahlabstände (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) aus dem `db_schema.xml` -Datei.
 
@@ -102,7 +102,7 @@ Adobe Commerce und Magento Open Source haben das reguläre Validierungsverhalten
 
 Um MySQL ordnungsgemäß von Version 5.7 auf Version 8 zu aktualisieren, müssen Sie die folgenden Schritte ausführen, um die richtige Reihenfolge zu wählen:
 
-1. Aktualisieren Sie Adobe Commerce oder die Magento Open Source auf Version 2.4.0. Testen Sie alles und stellen Sie sicher, dass Ihr System wie erwartet funktioniert.
+1. Aktualisieren Sie Adobe Commerce oder Magento Open Source auf Version 2.4.0. Testen Sie alles und stellen Sie sicher, dass Ihr System wie erwartet funktioniert.
 1. Wartungsmodus aktivieren:
 
    ```bash
@@ -133,7 +133,7 @@ Um MySQL ordnungsgemäß von Version 5.7 auf Version 8 zu aktualisieren, müssen
 
 In diesem Abschnitt wird beschrieben, wie Sie eine Datenbankinstanz für Adobe Commerce oder Magento Open Source erstellen. Obwohl empfohlen wird, eine neue Datenbankinstanz zu installieren, können Sie optional Adobe Commerce oder Magento Open Source mit einer vorhandenen Datenbankinstanz installieren.
 
-So konfigurieren Sie eine MySQL-Datenbankinstanz:
+Konfigurieren einer MySQL-Datenbankinstanz:
 
 1. Melden Sie sich bei Ihrem Datenbankserver als ein beliebiger Benutzer an.
 1. Wechseln Sie zu einer MySQL-Eingabeaufforderung:
@@ -188,7 +188,7 @@ So konfigurieren Sie eine MySQL-Datenbankinstanz:
    * [MySQL 5.7](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
    * [MariaDB](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
 
-   Wenn diese Einstellung nicht aktiviert ist, `bin/magento setup:db:status` meldet immer, dass `Declarative Schema is not up to date`.
+   Wenn diese Einstellung nicht aktiviert ist, `bin/magento setup:db:status` meldet immer, dass die `Declarative Schema is not up to date`.
 
 >[!NOTE]
 >

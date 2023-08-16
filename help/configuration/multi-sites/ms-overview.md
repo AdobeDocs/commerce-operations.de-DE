@@ -1,13 +1,13 @@
 ---
 title: Mehrere Websites oder Stores
 description: Erfahren Sie, wie Sie mehrere Websites starten oder Store-Ansichten mit verschiedenen Optionen, Domänen und Inhalten implementieren können.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
-
 
 # Mehrere Websites oder Stores
 
@@ -21,7 +21,7 @@ Mit einer einzelnen Instanz der Adobe Commerce-Software können Sie mehrere Webs
 
 Diese flexible Lösung ermöglicht es einer Commerce-Codebase und einem Administrator, verschiedene Stores zu verwalten und anzuzeigen. Sie konfigurieren die Websites, Stores und speichern Ansichten in der Admin-Konsole. Verwenden Sie bestimmte Variablen in virtuellen Hosts, um die Commerce-Anwendung mit diesen Websites oder Store-Ansichten zu starten.
 
-Eine typische Verwendung besteht darin, Geschäfte mit verschiedenen Optionen in verschiedenen Domänen einzurichten. Sie könnten beispielsweise eine Gruppe von Kategorien und Produkten auf einer Domäne und eine andere Gruppe von Kategorien und Produkten auf einer separaten Domäne in einer anderen Sprache haben.
+Eine typische Verwendung besteht darin, Stores mit verschiedenen Optionen in verschiedenen Domänen einzurichten. Sie könnten beispielsweise eine Gruppe von Kategorien und Produkten auf einer Domäne und eine andere Gruppe von Kategorien und Produkten auf einer separaten Domäne in einer anderen Sprache haben.
 
 Sie konfigurieren die Websites, Stores und speichern Ansichten im Commerce Admin. Verwenden Sie die `MAGE_RUN_TYPE` und `MAGE_RUN_CODE` Variablen in virtuellen Hosts verwenden, um die Commerce-Anwendung mit diesen Websites oder Store-Ansichten zu starten.
 
@@ -29,19 +29,19 @@ Beachten Sie die folgenden Begriffe:
 
 - **Webseite**- ist der Container auf oberster Ebene für Sites, Versandmethoden, Zahlungsmethoden und mehr. Um vollständig separate Sites zu erstellen, die keinen Warenkorb, keine Versandmethoden oder andere verwenden, müssen Sie separate Websites erstellen.
 
-   Website-Kundenkonten können auf mehreren Websites innerhalb einer einzelnen Commerce-Instanz freigegeben werden. Eine Website enthält mindestens einen Store. Die Katalogpreise sollten auf Website-Ebene verwaltet werden.
+  Website-Kundenkonten können auf mehreren Websites innerhalb einer einzelnen Commerce-Instanz freigegeben werden. Eine Website enthält mindestens einen Store. Die Katalogpreise sollten auf Website-Ebene verwaltet werden.
 
 - **Store**—ist von einer Website enthalten. Ein Store enthält wiederum mindestens ein *Store-Ansicht*.
 
-   Mehrere Stores können Warenkorb, Benutzersitzungen, Zahlungskanäle und mehr gemeinsam nutzen, sie verfügen jedoch über separate Katalogstrukturen und einen separaten Katalogpreis.
+  Mehrere Stores können Warenkorb, Benutzersitzungen, Zahlungskanäle und mehr gemeinsam nutzen, sie verfügen jedoch über separate Katalogstrukturen und einen separaten Katalogpreis.
 
-   Katalogmenge (Inventar) kann nicht auf der Store-Ebene verwaltet werden. Das Inventar wird nur auf Website- oder globaler Ebene verwaltet.
+  Katalogmenge (Inventar) kann nicht auf der Store-Ebene verwaltet werden. Das Inventar wird nur auf Website- oder globaler Ebene verwaltet.
 
-   Store-Ansichten ändern die Darstellung von Seiten und werden normalerweise verwendet, um einen Store mit verschiedenen Layouts oder Sprachen anzuzeigen. Sie können verschiedene Währungen pro Store-Ansicht verwalten.
+  Store-Ansichten ändern die Darstellung von Seiten und werden normalerweise verwendet, um einen Store mit verschiedenen Layouts oder Sprachen anzuzeigen. Sie können verschiedene Währungen pro Store-Ansicht verwalten.
 
-   Jede Website und jede Store-Ansicht muss über eine eindeutige Kennung verfügen. Diese Kennung ist erforderlich, um die `MAGE_RUN_TYPE` und `MAGE_RUN_CODE` Variablen wie folgt:
+  Jede Website und jede Store-Ansicht muss über eine eindeutige Kennung verfügen. Diese Kennung ist erforderlich, um die `MAGE_RUN_TYPE` und `MAGE_RUN_CODE` Variablen wie folgt:
 
-- `MAGE_RUN_TYPE` kann `store` oder `website`
+- `MAGE_RUN_TYPE` kann entweder `store` oder `website`
 
    - Verwendung `website` , um eine Website in Ihre Storefront zu laden.
    - Verwendung `store` , um eine beliebige Store-Ansicht in Ihre Storefront zu laden.

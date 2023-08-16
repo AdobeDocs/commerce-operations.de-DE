@@ -1,13 +1,13 @@
 ---
 title: Modulausgabe deaktivieren
 description: Erfahren Sie, wie Sie die Modulausgabe deaktivieren.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # Modulausgabe deaktivieren
 
@@ -21,7 +21,7 @@ Beispiel: die `Customer` -Modul hängt von der `Review` -Modul, also die `Review
 
 Die Deaktivierung der Ausgabe erfolgt in folgenden Klassen:
 
-- [\Magento\Framework\View\Element\AbstractBlock::toHtml](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
+- [\Magento\Framework\View\Element\AbstractBlock::toHTML](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
 - [\Magento\Backend\Block\Template::isOutputEnabled](https://github.com/magento/magento2/blob/0c786907ffe03d0e2990612eec16ee58b00379c5/app/code/Magento/Backend/Block/Template.php#L96)
 
 >[!WARNING]
@@ -100,5 +100,5 @@ Die Deaktivierung der Modulausgabe in einer einzelnen Instanz von Commerce ist e
      ),
    ```
 
-In diesem Beispiel wird die Ausgabe für die `Magento_Review` -Modul deaktiviert wurde und Kunden keine Produkte mehr überprüfen können.
+In diesem Beispiel wird die Ausgabe für `Magento_Review` -Modul deaktiviert wurde und Kunden keine Produkte mehr überprüfen können.
 Um die Ausgabe erneut zu aktivieren, setzen Sie den Wert auf `0`.

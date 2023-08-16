@@ -1,13 +1,13 @@
 ---
 title: Einrichten der Amazon-Nachrichtenwarteschlange
 description: Erfahren Sie, wie Sie Commerce für die Verwendung des AWS MQ-Dienstes konfigurieren.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # Einrichten der Amazon-Nachrichtenwarteschlange
 
@@ -37,8 +37,8 @@ AWS Message Queue erfordert eine SSL-/TLS-Verbindung.
 
 Dabei gilt:
 
-- `host`—Die URL für den AMQP-Endpunkt; verfügbar, indem Sie in AWS auf den Namen des Brokers klicken (Entfernen Sie &quot;https://&quot;und die nachfolgende Portnummer)
-- `user`—Der Benutzername, der beim Erstellen des AWS MQ-Brokers eingegeben wurde
+- `host`—Die URL für den AMQP-Endpunkt, verfügbar durch Klicken auf den Brokernamen in AWS (Entfernen Sie &quot;https://&quot;und die nachfolgende Portnummer)
+- `user`—Der beim Erstellen des AWS MQ-Brokers angegebene Benutzername
 - `password`—Der bei der Erstellung des AWS MQ-Brokers eingegebene Kennwortwert
 
 >[!INFO]
@@ -65,18 +65,18 @@ async.V1.inventory.bulk-product-source-unassign.POST
 async.V1.inventory.bulk-product-source-transfer.POST
 ```
 
-Die Standardkonfiguration für `InventoryCatalog` veröffentlicht keine Nachrichten in [!DNL RabbitMQ]; Das Standardverhalten besteht darin, die Aktion im selben Benutzer-Thread durchzuführen. Zu sagen `InventoryCatalog` zum Veröffentlichen von Nachrichten aktivieren `cataloginventory/bulk_operations/async`. Wechseln Sie vom Administrator zu **Stores** > Konfiguration > **Katalog** > **Bestand** > Massenvorgänge für Administratoren und Festlegen  `Run asynchronously`nach **Ja**.
+Die Standardkonfiguration für `InventoryCatalog` veröffentlicht keine Nachrichten in [!DNL RabbitMQ]; das Standardverhalten besteht darin, die Aktion im selben Benutzer-Thread durchzuführen. Zu sagen `InventoryCatalog` zum Veröffentlichen von Nachrichten aktivieren `cataloginventory/bulk_operations/async`. Wechseln Sie vom Administrator zu **Stores** > Konfiguration > **Katalog** > **Bestand** > Massenvorgänge für Administratoren und Festlegen  `Run asynchronously`nach **Ja**.
 
 ## Nachrichtenwarteschlange testen
 
 So testen Sie den Nachrichtenversand an [!DNL RabbitMQ]:
 
-1. Melden Sie sich bei der [!DNL RabbitMQ] Webkonsole in AWS, um Warteschlangen zu überwachen.
+1. Melden Sie sich bei [!DNL RabbitMQ] Webkonsole in AWS, um Warteschlangen zu überwachen.
 1. Erstellen Sie in Admin ein Produkt.
 1. Erstellen Sie eine Inventarquelle.
 1. Aktivieren **Stores** > Konfiguration > **Katalog** > **Bestand** > Massenvorgänge für Administratoren > Asynchron ausführen.
 1. Navigieren Sie zu **Katalog** > Produkte. Wählen Sie im Raster das oben erstellte Produkt aus und klicken Sie auf **Inventarquelle zuweisen**.
-1. Klicken **Speichern und schließen** , um den Prozess abzuschließen.
+1. Klicks **Speichern und schließen** , um den Prozess abzuschließen.
 
    Sie sollten jetzt sehen, dass Meldungen im [!DNL RabbitMQ] Web-Konsole.
 

@@ -1,23 +1,23 @@
 ---
 title: Module deinstallieren
 description: Führen Sie diese Schritte aus, um ein Adobe Commerce- oder Magento Open Source-Modul zu deinstallieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 0%
 
 ---
 
-
 # Module deinstallieren
 
 In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Module deinstallieren. Bei der Deinstallation können Sie optional den Code, das Datenbankschema und die Datenbankdaten der Module entfernen. Sie können zunächst Backups erstellen, um die Daten später wiederherzustellen.
 
-Sie sollten ein Modul nur deinstallieren, wenn Sie sicher sind, dass Sie es nicht verwenden werden. Anstatt ein Modul zu deinstallieren, können Sie es deaktivieren, wie hier beschrieben: [Module aktivieren oder deaktivieren](manage-modules.md).
+Sie sollten ein Modul nur deinstallieren, wenn Sie sicher sind, dass Sie es nicht verwenden werden. Anstatt ein Modul zu deinstallieren, können Sie es wie unter [Module aktivieren oder deaktivieren](manage-modules.md).
 
 >[!NOTE]
 >
->Dieser Befehl überprüft, ob nur Abhängigkeiten in der `composer.json` -Datei. Wenn Sie ein Modul deinstallieren, das _not_ definiert im `composer.json` -Datei, deinstalliert dieser Befehl das -Modul, ohne nach Abhängigkeiten zu suchen. Dieser Befehl _not_, entfernen Sie jedoch den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystemwerkzeuge verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie [disable](manage-modules.md) Nicht-Composer-Module.
+>Dieser Befehl überprüft, ob nur Abhängigkeiten in der `composer.json` -Datei. Wenn Sie ein Modul deinstallieren, das _not_ definiert im `composer.json` -Datei, deinstalliert dieser Befehl das -Modul, ohne nach Abhängigkeiten zu suchen. Dieser Befehl _not_, entfernen Sie jedoch den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystemwerkzeuge verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie [disable](manage-modules.md) Nicht-Composer-Module
 
 Befehlsverwendung:
 
@@ -45,7 +45,7 @@ Der Befehl zur Deinstallation des Moduls führt die folgenden Aufgaben aus:
    | Option | Bedeutung | Name und Speicherort der Sicherungsdatei |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
    | `--backup-code` | Sichern Sie das Dateisystem (außer `var` und `pub/static` Verzeichnissen). | `var/backups/<timestamp>_filesystem.tgz` |
-   | `--backup-media` | Sichert das Verzeichnis &quot;pub/media&quot;. | `var/backups/<timestamp>_filesystem_media.tgz` |
+   | `--backup-media` | Sichert das Verzeichnis pub/media . | `var/backups/<timestamp>_filesystem_media.tgz` |
    | `--backup-db` | Sichert die Datenbank. | `var/backups/<timestamp>_db.gz` |
 
 1. Wenn `--remove-data` festgelegt ist, entfernen Sie das Datenbankschema und die Daten, die im `Uninstall` Klassen.
@@ -58,12 +58,12 @@ Der Befehl zur Deinstallation des Moduls führt die folgenden Aufgaben aus:
 
    >[!NOTE]
    >
-   >Deinstallieren eines Moduls _always_ läutet `composer remove`. Die `--remove-data` entfernt die durch die `Uninstall` -Klasse.
+   >Deinstallieren eines Moduls _always_ läutet `composer remove`. Die `--remove-data` Option entfernt Datenbankdaten und Schemata, die durch die `Uninstall` -Klasse.
 
 1. Löscht den Cache.
 1. Aktualisierungen generierter Klassen.
 1. Wenn `--clear-static-content` spezifiziert ist, cleans [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
-1. Der Speicher wird aus dem Wartungsmodus entfernt.
+1. Der Speicher wird nicht mehr im Wartungsmodus ausgeführt.
 
 Wenn Sie beispielsweise versuchen, ein Modul zu deinstallieren, von dem ein anderes Modul abhängig ist, wird die folgende Meldung angezeigt:
 
@@ -130,7 +130,7 @@ Wo `<filename>` ist der Name der Sicherungsdatei im `<app_root>/var/backups` Ver
 
 >[!WARNING]
 >
->Mit diesem Befehl werden die angegebenen Dateien oder die Datenbank gelöscht, bevor sie wiederhergestellt werden. Beispiel: die `--media-file` Option löscht Medien-Assets unter `pub/media` vor dem Wiederherstellen aus der angegebenen Rollback-Datei. Stellen Sie sicher, dass Sie das Dateisystem oder die Datenbank, die Sie beibehalten möchten, nicht geändert haben, bevor Sie diesen Befehl verwenden.
+>Mit diesem Befehl werden die angegebenen Dateien oder die Datenbank gelöscht, bevor sie wiederhergestellt werden. Beispiel: die `--media-file` Option löscht Medien-Assets unter `pub/media` vor dem Wiederherstellen aus der angegebenen Rollback-Datei. Vergewissern Sie sich, dass Sie das Dateisystem oder die Datenbank, die Sie beibehalten möchten, nicht geändert haben, bevor Sie diesen Befehl verwenden.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Dieser Befehl führt die folgenden Aufgaben aus:
 1. Überprüft den Namen der Sicherungsdatei.
 1. Wenn Sie eine Code-Rollback-Datei angeben:
 
-   a. Überprüft, ob die Rollback-Zielorte schreibbar sind (beachten Sie, dass die Variable `pub/static` und `var` -Ordner werden ignoriert).
+   a) Stellt sicher, dass die Rollback-Zielspeicherorte schreibbar sind (beachten Sie, dass die Variable `pub/static` und `var` -Ordner werden ignoriert).
 
    b. Löscht alle Dateien und Ordner im Installationsverzeichnis der Anwendung.
 
@@ -156,38 +156,38 @@ Dieser Befehl führt die folgenden Aufgaben aus:
 
 1. Wenn Sie eine Medien-Rollback-Datei angeben:
 
-   a. Überprüft, ob die Rollback-Zielspeicherorte schreibbar sind.
+   a. Stellt sicher, dass die Rollback-Zielspeicherorte schreibbar sind.
 
    b. Löscht alle Dateien und Ordner unter `pub/media`
 
    c. Extrahiert die Archivdatei an die Zielspeicherorte.
 
-1. Der Speicher wird aus dem Wartungsmodus entfernt.
+1. Der Speicher wird nicht mehr im Wartungsmodus ausgeführt.
 
 Um beispielsweise eine Sicherung des Codes (d. h. des Dateisystems) wiederherzustellen, geben Sie die folgenden Befehle in der angegebenen Reihenfolge ein:
 
 * Liste der Backups anzeigen:
 
-   ```bash
-   magento info:backups:list
-   ```
+  ```bash
+  magento info:backups:list
+  ```
 
-* Wiederherstellen einer Dateisicherung mit dem Namen `1433876616_filesystem.tgz`:
+* Wiederherstellen einer Dateisicherung namens `1433876616_filesystem.tgz`:
 
-   ```bash
-   magento setup:rollback --code-file="1433876616_filesystem.tgz"
-   ```
+  ```bash
+  magento setup:rollback --code-file="1433876616_filesystem.tgz"
+  ```
 
-   Meldungen, die der folgenden Anzeige ähneln:
+  Meldungen, die der folgenden Anzeige ähneln:
 
-   ```terminal
-   Enabling maintenance mode
-   Code rollback is starting ...
-   Code rollback filename: 1433876616_filesystem.tgz
-   Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
-   [SUCCESS]: Code rollback has completed successfully.
-   Disabling maintenance mode
-   ```
+  ```terminal
+  Enabling maintenance mode
+  Code rollback is starting ...
+  Code rollback filename: 1433876616_filesystem.tgz
+  Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
+  [SUCCESS]: Code rollback has completed successfully.
+  Disabling maintenance mode
+  ```
 
 >[!NOTE]
 >

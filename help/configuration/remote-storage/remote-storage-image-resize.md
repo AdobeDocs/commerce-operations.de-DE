@@ -6,7 +6,7 @@ exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -38,13 +38,13 @@ Um die Größe von Bildern serverseitig zu ändern, müssen Sie Adobe Commerce s
 
 1. Klicken **[!UICONTROL Save Config]**.
 
-1. Fahren Sie mit dem [Nginx-Konfiguration](#configure-nginx).
+1. Fahren Sie mit [Nginx-Konfiguration](#configure-nginx).
 
 ## Nginx konfigurieren
 
 Um mit der Konfiguration der serverseitigen Bildgröße fortzufahren, müssen Sie die `nginx.conf` und stellen Sie eine `proxy_pass` -Wert für den gewählten Adapter.
 
-**So aktivieren Sie Nginx für die Größenanpassung von Bildern**:
+**So aktivieren Sie Nginx, um die Bildgröße zu ändern**:
 
 1. Installieren Sie die [Nginx-Bildfiltermodul][nginx-module].
 

@@ -1,6 +1,6 @@
 ---
 title: Leistungs-Benchmarks
-description: Überprüfen Sie die Performance-Benchmark-Ergebnisse für Adobe Commerce-Implementierungen, die auf der Adobe Cloud-Infrastruktur gehostet werden.
+description: Überprüfen Sie die Performance-Benchmark-Ergebnisse für Adobe Commerce-Implementierungen, die auf der Adobe-Cloud-Infrastruktur gehostet werden.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 feature: Cloud
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -36,7 +36,7 @@ Basierend auf Testkriterien, die eine B2C-Organisation eines Unternehmens imitie
 - **Seitenansichten**—Es wurden über 2 Millionen Seitenansichten pro Stunde verarbeitet, während die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden blieben.
 - **Effektive SKUs**—Das Kundenprofil umfasste 242 Millionen verschiedene Preisvarianten (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>) für 250.000 Produkte.
 - **GraphQL-Anforderungen**—Das System wurde auf 10.500 nicht zwischengespeicherte Anfragen pro Minute skaliert, wobei die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen.
-- **Gleichzeitige Admin-Benutzer**—Das System wurde skaliert, um 500 gleichzeitige Admin-Benutzer zu unterstützen, während die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen.
+- **Gleichzeitige Administratoren**—Das System wurde skaliert, um 500 gleichzeitige Admin-Benutzer zu unterstützen, während die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen.
 
 ## Testumgebung
 

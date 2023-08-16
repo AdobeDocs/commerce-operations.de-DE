@@ -1,19 +1,19 @@
 ---
 title: Sprachpakete deinstallieren
 description: Führen Sie die folgenden Schritte aus, um ein Sprachpaket für Adobe Commerce oder Magento Open Source zu deinstallieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
 
 ---
 
-
 # Sprachpakete deinstallieren
 
-In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Sprachpakete deinstallieren, einschließlich des Codes der Sprachpakete vom Dateisystem. Sie können zunächst Sicherungen erstellen, damit Sie die Daten später wiederherstellen können.
+In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Sprachpakete deinstallieren, einschließlich des Codes der Sprachpakete vom Dateisystem. Sie können zunächst Backups erstellen, um die Daten später wiederherzustellen.
 
-Dieser Befehl deinstalliert *only* Sprachpakete, die in `composer.json`; mit anderen Worten Sprachpakete, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Sprachpaket kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie den Sprachpaketcode aus dem Dateisystem entfernen.
+Dieser Befehl deinstalliert *only* Sprachpakete, die in `composer.json`; also Sprachpakete, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Sprachpaket kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie den Sprachpaketcode aus dem Dateisystem entfernen.
 
 Sie können Backups jederzeit mithilfe des [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) Befehl.
 
@@ -25,7 +25,7 @@ bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {langu
 
 Der Befehl zum Deinstallieren des Sprachpakets führt die folgenden Aufgaben aus:
 
-1. Prüfungen auf Abhängigkeiten; Wenn ja, wird der Befehl beendet.
+1. Prüft auf Abhängigkeiten; wenn ja, wird der Befehl beendet.
 
    Um dies zu umgehen, können Sie entweder alle abhängigen Sprachpakete gleichzeitig deinstallieren oder die abhängigen Sprachpakete zuerst deinstallieren.
 

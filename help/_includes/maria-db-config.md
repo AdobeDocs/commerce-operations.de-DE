@@ -2,7 +2,7 @@
 source-git-commit: 631735eceb3609edd743c682291f373f6b01b399
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # MariaDB-Konfigurationseinstellungen
@@ -12,7 +12,7 @@ Die Neuindizierung auf MariaDB 10.4 und 10.6 nimmt im Vergleich zu früheren Mar
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-Wenn die Leistung nach der Aktualisierung auf MariaDB 10.6 nicht mit der Indexierung in Zusammenhang steht, sollten Sie die Option [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) -Einstellung. Beispiel: `--query-cache-type=ON`.
+Wenn die Leistung nach der Aktualisierung auf MariaDB 10.6 nicht mit der Indexierung in Zusammenhang steht, sollten Sie die Option [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) -Einstellung. Beispiel, `--query-cache-type=ON`.
 
 Zusätzlich zu diesen Empfehlungen sollten Sie sich an Ihren Datenbankadministrator wenden, um die folgenden Parameter zu konfigurieren:
 

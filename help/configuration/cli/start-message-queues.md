@@ -1,13 +1,13 @@
 ---
 title: Starten von Nachrichtenwarteschlangen-Verbrauchern
 description: Erfahren Sie, wie Sie eine Nachrichtenwarteschlange für Verbraucher starten.
-source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
+exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
-
 
 # Starten von Nachrichtenwarteschlangen-Verbrauchern
 
@@ -37,4 +37,4 @@ Siehe [queue:consumers:start](https://devdocs.magento.com/guides/v2.4/reference/
 
 >[!INFO]
 >
->Die `--multi-process` ist in der `queue:consumers:start` -Befehl, aber um Verbraucher mit parallelen Prozessen auszuführen, konfigurieren Sie die [`multiple_processes`](../queues/manage-message-queues.md#configuration) Option in `/app/etc/env.php`. Wenn andernfalls `queue:consumers:start` wird mit der `--multi-process` -Option, funktioniert sie nur in einem einzigen Thread.
+>Die `--multi-process` ist in der `queue:consumers:start` -Befehl, aber um Verbraucher mit parallelen Prozessen auszuführen, konfigurieren Sie die [`multiple_processes`](../queues/manage-message-queues.md#configuration) -Option in `/app/etc/env.php`. Andernfalls, wenn `queue:consumers:start` wird mit der `--multi-process` -Option, funktioniert sie nur in einem einzigen Thread.

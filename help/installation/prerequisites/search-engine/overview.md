@@ -43,7 +43,7 @@ Das vorhergehende Diagramm zeigt Folgendes:
 
   Für das Ausführen auf separaten Hosts muss die Proxy-Funktion ausgeführt werden. (Das Clustering der Suchmaschine geht über den Rahmen dieses Handbuchs hinaus, Sie finden jedoch weitere Informationen im Abschnitt [Dokumentation zu Elasticsearch-Clustering](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).
 
-* Jeder Host verfügt über einen eigenen Webserver. die Webserver müssen nicht identisch sein.
+* Jeder Host verfügt über einen eigenen Webserver. Die Webserver müssen nicht identisch sein.
 
   Beispielsweise kann die Commerce-Anwendung Apache ausführen und die Suchmaschine nginx ausführen.
 
@@ -87,7 +87,7 @@ Um Regeln einzurichten, die die Kommunikation mit der Firewall oder SELinux erm�
 * [Einführung in SELinux (CentOS.org)](https://www.centos.org)
 * [SELinux-Anleitungswiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
-### Installieren des Java Software Development Kits
+### Java Software Development Kit installieren
 
 Geben Sie den folgenden Befehl ein, um festzustellen, ob Java bereits installiert ist:
 
@@ -100,7 +100,7 @@ Wenn die Nachricht `java: command not found` angezeigt, müssen Sie das Java-SDK
 Siehe einen der folgenden Abschnitte:
 
 * [Installieren Sie das neueste JDK auf CentOS](#install-the-jdk-on-centos)
-* [Installieren Sie das neueste JDK auf Ubuntu](#install-the-jdk-on-ubuntu)
+* [Installieren des neuesten JDK auf Ubuntu](#install-the-jdk-on-ubuntu)
 
 #### JDK auf CentOS installieren
 
@@ -134,7 +134,7 @@ Weitere Optionen finden Sie unter [Oracle-Dokumentation](https://docs.oracle.com
 
 Folgen [Installieren von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) oder [Installieren und Konfigurieren von OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) für Ihre plattformspezifischen Schritte.
 
-Um zu überprüfen, ob das Elasticsearch funktioniert, geben Sie den folgenden Befehl auf dem Server ein, auf dem es ausgeführt wird:
+Geben Sie den folgenden Befehl auf dem Server ein, auf dem das Elasticsearch ausgeführt wird:
 
 ```bash
 curl -XGET '<host>:9200/_cat/health?v&pretty'
@@ -159,9 +159,9 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Upgrade von Elasticsearch
 
-Siehe [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
+Siehe Abschnitt [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
 
-Elasticsearch erfordert JDK 1.8 oder höher. Siehe [Installieren des Java Software Development Kits](#install-the-java-software-development-kit) um zu überprüfen, welche Version von JDK installiert ist.
+Elasticsearch erfordert JDK 1.8 oder höher. Siehe [Java Software Development Kit installieren](#install-the-java-software-development-kit) , um zu überprüfen, welche Version von JDK installiert ist.
 
 ## Zusätzliche Ressourcen
 

@@ -28,7 +28,7 @@ Verwenden Sie diesen Befehl, um einen Administrator zu erstellen oder einen vorh
 
 >[!NOTE]
 >
->Wenn Sie einen Administrator bearbeiten, wird nur der `first name`, `last name`und `password` kann bearbeitet werden.
+>Wenn Sie einen Administrator bearbeiten, wird nur der `first name`, `last name`, und `password` kann bearbeitet werden.
 
 Befehlsverwendung:
 
@@ -44,7 +44,7 @@ Wobei die folgende Tabelle Parameter und Werte definiert:
 | `--admin-lastname` | Nachname des Administratorbenutzers. | Ja |
 | `--admin-email` | E-Mail-Adresse des Administrators. | Ja |
 | `--admin-user` | Administrator-Benutzername. | Ja |
-| `--admin-password` | Administratorkennwort. Das Kennwort muss mindestens 7 Zeichen lang sein und mindestens ein alphabetisches und ein numerisches Zeichen enthalten. <br><br>Wir empfehlen ein längeres, komplexeres Passwort. Wenn die Kennwortzeichenfolge Sonderzeichen enthält, die eine wörtliche Interpretation erfordern (z. B. umgekehrte Schrägstriche oder Leerzeichen), fügen Sie das Kennwort in einfache Anführungszeichen ein. | Ja |
+| `--admin-password` | Administratorkennwort. Das Kennwort muss mindestens 7 Zeichen lang sein und mindestens ein alphabetisches und ein numerisches Zeichen enthalten. <br><br>Wir empfehlen ein längeres, komplexeres Passwort. Wenn die Kennwortzeichenfolge Sonderzeichen enthält, die eine wörtliche Interpretation erfordern (wie umgekehrte Schrägstriche oder Leerzeichen), fügen Sie das Kennwort in einfache Anführungszeichen ein. | Ja |
 | `--magento-init-params` | Zu jedem Befehl hinzufügen, um die Initialisierungsparameter der Anwendung anzupassen<br/><br/>Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Nein |
 
 Anwendungsbeispiel:
@@ -75,7 +75,7 @@ Admin last name: Doe Young
 Created Magento administrator user named John
 ```
 
-Die folgenden Beispielaktualisierungen `first name`, `last name`und `password` von `j.doe` Admin-Benutzer:
+Die folgenden Beispielaktualisierungen `first name`, `last name`, und `password` von `j.doe` Admin-Benutzer:
 
 ```bash
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567

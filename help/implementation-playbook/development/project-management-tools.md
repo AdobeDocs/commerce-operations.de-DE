@@ -21,7 +21,7 @@ Die folgende Tabelle enthält empfohlene Tools für das Projektmanagement:
 | Ticketverwaltung | Atlassian JIRA |
 | SLA-Management | Atlassian JIRA Service Management |
 | Dokumentenverwaltung | Atlassischer Zusammenfluss |
-| Quellcodeverwaltung | Atlassian Bitbucket, GitHub |
+| Quellcode-Verwaltung | Atlassian Bitbucket, GitHub |
 | Continuous Integration (CI)/Continuous Delivery (CD) | Jenkins |
 | Kommunikation | E-Mail, Microsoft Teams, Telefon, Slack |
 | Sitzung | Zoom, Microsoft Teams |
@@ -51,12 +51,12 @@ GitHub ähnelt Bitbucket, das auch in einigen Projekten verwendet wird.
 
 ## Kommunikation
 
-Für verschiedene Kunden können wir verschiedene Kommunikationsmittel einsetzen: E-Mail, Microsoft Teams und Slack sind gemeinsame Werkzeuge, die wir für projektbezogene Kommunikation genutzt haben.
+Für verschiedene Kunden können wir eine Vielzahl von Kommunikationswerkzeugen verwenden: E-Mail, Microsoft Teams und Slack sind allesamt gängige Werkzeuge, die wir für projektbezogene Kommunikation genutzt haben.
 
 ## Sitzung
 
 Microsoft Teams und Zoom sind die häufigsten Werkzeuge zum Einrichten von Online-Meetings.
 
-## Kontinuierliche Integration (CI)/ Kontinuierliche Bereitstellung (CD)
+## Kontinuierliche Integration (CI)/kontinuierliche Bereitstellung (CD)
 
 Jenkins ist die führende Open-Source-Automatisierungslösung und bietet Hunderte von Plug-ins zur Unterstützung der Erstellung, Bereitstellung und Automatisierung von Projekten. Jenkins kann als einfacher CI-Server oder als CD-Hub für jedes Projekt verwendet werden.

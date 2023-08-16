@@ -20,9 +20,9 @@ In der folgenden Tabelle werden alle Verbraucher in der Nachrichtenwarteschlange
 | `codegeneratorProcessor` | + | + | + |
 | Generiert asynchron Gutscheine im Hintergrund. Erforderlich für die Verwendung der [Batch-Gutscheingenerierung](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html#method-2%3A-generate-a-batch-of-coupons) Funktion. |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
-| Prüft Ereignisse, die als Priorität in [Adobe I/O-Ereignisse für Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/). |
+| Prüft die Ereignisse, die als Priorität in [Adobe I/O von Ereignissen für Adobe Commerce](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
-| Verhindert Verbindungszeitüberschreitungen während der [export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) von großen Datensätzen (z. B. 200.000 Produkte). |                |                         |                     |
+| Verhindert Verbindungszeitüberschreitungen während der [export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html) große Datensätze (z. B. 200.000 Produkte). |                |                         |                     |
 | `inventoryQtyCounter` | + | + |                     |
 | Korrigiert den Aktienindex asynchron, nachdem eine Bestellung platziert oder ein Produkt entfernt wurde. Erforderlich, wenn die [**[!UICONTROL Use deferred stock update]**](https://docs.magento.com/user-guide/configuration/catalog/inventory.html#product-stock-options) in den Admin-Konfigurationseinstellungen aktiviert ist. Siehe [Best Practices für die Leistung](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/configuration.html#deferred-stock-update). |                |                         |                     |
 | `inventory.source.items.cleanup` | + | + | + |
@@ -60,7 +60,7 @@ In der folgenden Tabelle werden alle Verbraucher in der Nachrichtenwarteschlange
 | `product_alert` | + | + | + |
 | Sendet Benachrichtigungs-E-Mails über Produktpreise und Bestandsänderungen an Kunden. Erforderlich, wenn erforderlich, wenn die Variable [**[!UICONTROL Product Alerts]**](https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
 | `purchaseorder.toorder` |                | + |                     |
-| Konvertiert eine Bestellung in [order](https://docs.magento.com/user-guide/stores/b2b-purchase-order-flow.html#approval-rules). Erforderlich, wenn die [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
+| Konvertiert eine Bestellung in [bestellen](https://docs.magento.com/user-guide/stores/b2b-purchase-order-flow.html#approval-rules). Erforderlich, wenn die [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
 | `purchaseorder.transactional.email` |                | + |                     |
 | Sendet Bestellungs-E-Mails. Erforderlich, wenn die [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |

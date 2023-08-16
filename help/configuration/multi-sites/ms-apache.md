@@ -1,13 +1,13 @@
 ---
 title: Einrichten mehrerer Websites mit Apache
 description: In diesem Tutorial erfahren Sie, wie Sie mehrere Websites mit Apache einrichten.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
 
 ---
-
 
 # Einrichten mehrerer Websites mit Apache
 
@@ -17,13 +17,13 @@ Falls erforderlich, kopieren Sie die vorhandene `index.php` Einstiegspunkt-Skrip
 
 - Sie arbeiten an einer Entwicklungsmaschine (Laptop, virtuelle Maschine usw.)
 
-   Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
+  Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Wenden Sie sich diesbezüglich an Ihren Hosting-Provider.
 
-   Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
+  Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 - Sie verwenden einen virtuellen Host pro Website. Die Konfigurationsdatei des virtuellen Hosts lautet `/etc/httpd/httpd.conf`
 
-   Verschiedene Versionen von Apache unter verschiedenen Betriebssystemen richten virtuelle Hosts unterschiedlich ein. Lesen Sie die [Apache-Dokumentation](https://httpd.apache.org/docs/2.4/vhosts) oder einem Netzwerkadministrator, wenn Sie nicht sicher sind, wie ein virtueller Host eingerichtet wird.
+  Verschiedene Versionen von Apache unter verschiedenen Betriebssystemen richten virtuelle Hosts unterschiedlich ein. Lesen Sie die [Apache-Dokumentation](https://httpd.apache.org/docs/2.4/vhosts) oder einem Netzwerkadministrator, wenn Sie nicht sicher sind, wie ein virtueller Host eingerichtet wird.
 
 - Die Commerce-Software ist in `/var/www/html/magento2`
 - Sie haben zwei andere Websites als die Standardwebsite:
@@ -40,7 +40,7 @@ Das Einrichten mehrerer Stores umfasst die folgenden Aufgaben:
 
 ## Schritt 1: Erstellen von Websites, Geschäften und Speichern von Ansichten in der Admin-Konsole
 
-Siehe [Einrichten mehrerer Websites, Stores und Speichern von Ansichten in der Admin-Konsole](ms-admin.md).
+Siehe [Einrichten mehrerer Websites, Stores und Speichern von Ansichten im Admin](ms-admin.md).
 
 ## Schritt 2: Erstellen von virtuellen Apache-Hosts
 
@@ -53,7 +53,7 @@ Weitere Informationen finden Sie unter `SetEnvIf`, siehe:
 
 **So erstellen Sie virtuelle Apache-Hosts**:
 
-1. Als Benutzer mit `root` -Berechtigungen, öffnen Sie die Konfigurationsdatei des virtuellen Hosts in einem Texteditor.
+1. Als Benutzer mit `root` -Berechtigungen verwenden, öffnen Sie die Konfigurationsdatei des virtuellen Hosts in einem Texteditor.
 
    Öffnen Sie beispielsweise `/etc/httpd/conf/httpd.conf`
 
@@ -109,12 +109,11 @@ Sofern kein DNS für die URLs Ihrer Stores eingerichtet ist, müssen Sie eine st
 
 >[!INFO]
 >
->- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
->- Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. see [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
-
+>- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Wenden Sie sich diesbezüglich an Ihren Hosting-Provider.
+>- Weitere Aufgaben sind erforderlich, um Adobe Commerce in der Cloud-Infrastruktur einzurichten, siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 ### Fehlerbehebung
 
-- Wenn Ihre französischen und deutschen Sites 404 s zurückgeben, Ihr Admin jedoch geladen wird, stellen Sie sicher, dass Sie [Schritt 6: Fügen Sie den Store-Code zur Basis-URL hinzu.](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Wenn Ihre französischen und deutschen Sites 404 s zurückgeben, Ihr Admin jedoch geladen wird, stellen Sie sicher, dass Sie [Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Wenn alle URLs 404 s zurückgeben, stellen Sie sicher, dass Sie Ihren Webserver neu starten.
 - Wenn der Administrator nicht ordnungsgemäß funktioniert, stellen Sie sicher, dass Sie Ihre virtuellen Hosts ordnungsgemäß eingerichtet haben.

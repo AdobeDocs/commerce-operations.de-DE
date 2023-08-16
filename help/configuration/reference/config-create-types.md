@@ -1,13 +1,13 @@
 ---
 title: Konfigurationstypen
 description: Erstellen oder erweitern Sie Konfigurationstypen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurationstypen
 
@@ -19,7 +19,7 @@ Um beispielsweise einen Ereignisbeobachter hinzuzufügen, erstellen Sie `app/cod
 
 Da der Ereignistyp in Commerce vorhanden ist, werden der Ladeprogramm und die `events.xsd` Validierungsschema ist bereits vorhanden und funktionsfähig.
 
-Neue `events.xml` wird automatisch von Ihrem Modul erfasst und mit anderen zusammengeführt `events.xml` Dateien für andere Module.
+Ihr neues `events.xml` wird automatisch von Ihrem Modul erfasst und mit anderen zusammengeführt `events.xml` Dateien für andere Module.
 
 ## Erstellen von Konfigurationstypen
 
@@ -33,7 +33,7 @@ Um beispielsweise einen Adapter für einen neuen Suchserver einzuführen, mit de
 
 - Lader
 - Eine XSD-Schemadatei
-- Eine entsprechend benannte Konfigurationsdatei. Beispiel: `search.xml`. Diese Datei wird anhand Ihres Schemas gelesen und validiert.
+- Eine entsprechend benannte Konfigurationsdatei. Beispiel, `search.xml`. Diese Datei wird anhand Ihres Schemas gelesen und validiert.
 - Alle anderen Klassen, die für Ihre Arbeit erforderlich sind.
 
 >[!INFO]
@@ -78,9 +78,9 @@ So erstellen Sie einen Konfigurationstyp:
 
    - Der erste Typknoten legt den Dateinamen des Readers fest, der `Converter` und `SchemaLocator` Klassen.
    - Anschließend wird die `pdfConfigDataStorage` Der virtuelle Typknoten hängt die Leserklasse an eine Instanz von [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
-   - Und schließlich hängt der Knoten des letzten Typs diesen virtuellen Konfigurationstyp an den [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) -Klasse, die zum tatsächlichen Lesen von Werten in [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) Dateien.
+   - Und schließlich hängt der Knoten des letzten Typs diesen virtuellen Konfigurationstyp an den [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) -Klasse, die zum tatsächlichen Lesen von Werten in [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) -Dateien.
 
-1. Leser durch Erweiterung definieren [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) und schreiben Sie die folgenden Parameter neu:
+1. Leser durch Erweiterung definieren [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) -Klasse und schreiben Sie die folgenden Parameter neu:
 
    ```php
    $_idAttributes // Array of node attribute IDs.
@@ -121,7 +121,7 @@ Nachdem Sie Ihren Leser definiert haben, verwenden Sie ihn zum Erfassen, Zusamme
 
 ## Validieren eines Konfigurationstyps
 
-Jede Konfigurationsdatei wird anhand eines für ihren Konfigurationstyp spezifischen Schemas validiert. Beispiel: -Ereignisse, die in früheren Commerce-Versionen unter `config.xml`, jetzt konfiguriert in `events.xml`.
+Jede Konfigurationsdatei wird anhand eines für ihren Konfigurationstyp spezifischen Schemas validiert. Beispiel: Ereignisse, die in früheren Commerce-Versionen in konfiguriert wurden. `config.xml`, jetzt konfiguriert in `events.xml`.
 
 Konfigurationsdateien können sowohl vor (optional) als auch nach jeder Zusammenführung mehrerer Dateien überprüft werden, die sich auf denselben Konfigurationstyp auswirken. Sofern die Validierungsregeln für die einzelnen und die zusammengeführten Dateien nicht identisch sind, sollten Sie zwei Schemas zur Validierung der Konfigurationsdateien bereitstellen:
 

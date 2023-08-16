@@ -2,11 +2,11 @@
 title: Schreiben in eine benutzerdefinierte Protokolldatei
 description: Erfahren Sie, wie Sie benutzerdefinierte Protokolldateien einrichten.
 feature: Configuration, Logs
-badge: label="Contributed by Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
+badge: label="Beitragt von Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
    </virtualType>
    ```
 
-1. Spritzen Sie die `MyCustomLogger` [virtueller Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) im `Magento\Payment\Model\Method\Logger` -Objekt:
+1. Injizieren Sie die `MyCustomLogger` [virtueller Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) im `Magento\Payment\Model\Method\Logger` -Objekt:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
    </type>
    ```
 
-1. Die virtuelle Klasse `Magento\Payment\Model\Method\MyCustomDebug` wird in die `debug` Handler der `$logger` -Eigenschaft in `Magento\Payment\Model\Method\Logger` -Klasse.
+1. Die virtuelle Klasse `Magento\Payment\Model\Method\MyCustomDebug` wird in die `debug` Handler der `$logger` -Eigenschaft in der `Magento\Payment\Model\Method\Logger` -Klasse.
 
    ```xml
    ...
@@ -81,7 +81,7 @@ Ausnahmemeldungen werden bei der `/var/log/payment.log` -Datei.
 
 ## Einrichten einer benutzerdefinierten Protokolldatei in der Logger-Handler-Klasse
 
-In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klasse zur Protokollierung verwendet wird `error` Nachrichten in eine bestimmte Protokolldatei.
+In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klasse zur Protokollierung verwendet wird `error` Meldungen in eine bestimmte Protokolldatei eintragen.
 
 1. Erstellen Sie eine Klasse, die Daten protokolliert. In diesem Beispiel wird die Klasse definiert in `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
 
@@ -193,7 +193,7 @@ In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klas
    }
    ```
 
-1. Die Klasse `Vendor\ModuleName\Logger\Handler\ErrorHandler` wird in die `error` Handler der `$logger` -Eigenschaft in `Vendor\ModuleName\Observer\MyObserver`.
+1. Die Klasse `Vendor\ModuleName\Logger\Handler\ErrorHandler` wird in die `error` Handler der `$logger` -Eigenschaft in der `Vendor\ModuleName\Observer\MyObserver`.
 
    ```xml
    ...

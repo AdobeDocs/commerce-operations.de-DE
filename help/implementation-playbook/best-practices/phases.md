@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Best Practices bei der Implementierung
 
-Es gibt viele Möglichkeiten, ein Adobe Commerce-Projekt zu implementieren. Die in diesem Abschnitt bereitgestellten Best Practices beschreiben, wie die Adobe von Kunden und Partnern erwartet, dass sie bestimmte Anwendungsfälle implementieren. Diese Empfehlungen sollen dazu beitragen, allgemeine Probleme und potenzielle Probleme im Zusammenhang mit der Site-Konfiguration und -Anpassung, -Bereitstellung, dem Betrieb, der Leistung und den Upgrades zu vermeiden.
+Es gibt viele Möglichkeiten, ein Adobe Commerce-Projekt zu implementieren. Die in diesem Abschnitt bereitgestellten Best Practices beschreiben, wie Adobe von Kunden und Partnern erwartet, dass sie bestimmte Anwendungsfälle implementieren. Diese Empfehlungen sollen dazu beitragen, allgemeine Probleme und potenzielle Probleme im Zusammenhang mit der Site-Konfiguration und -Anpassung, -Bereitstellung, dem Betrieb, der Leistung und den Upgrades zu vermeiden.
 
 Diese Best Practices sind nach Implementierungsphase geordnet, sodass Sie die Empfehlungen finden, die für Ihren Anwendungsfall gelten.
 
@@ -35,7 +35,7 @@ Diese Best Practices sind nach Implementierungsphase geordnet, sodass Sie die Em
     <div>
     <a href="development/overview.md"><strong>Entwicklung</strong></a>
     </div>
-    Einrichtung der lokalen und Staging-Umgebung, Fehlerbehebung, Code-Management, Sprint-Planung, Sprint-Überprüfung, Akzeptanztests und Kundenabmeldung
+    Einrichtung der lokalen und Staging-Umgebung, Fehlerbehebung, Code-Management, Sprint-Planung, Sprint-Überprüfung, Akzeptanztests und Abmeldung von Kunden
     <br>
   </td>
   <td>

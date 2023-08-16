@@ -2,10 +2,10 @@
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-# Sichere Kommunikation
+# Sicherstellen der Kommunikation
 
 In diesem Abschnitt werden zwei Möglichkeiten erläutert, um zu überprüfen, ob die HTTP Basic-Authentifizierung funktioniert:
 
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## Konfigurieren der einfachen HTTP-Authentifizierung in der Admin-Konsole
 
-Führen Sie dieselben Aufgaben wie unter [Suchmaschinenkonfiguration](../configuration/search/configure-search-engine.md) *Ausnahme* click **[!UICONTROL Yes]** von **[!UICONTROL Enable HTTP Auth]** und geben Sie Ihren Benutzernamen und Ihr Passwort in die entsprechenden Felder ein.
+Führen Sie dieselben Aufgaben wie unter [Suchmaschinenkonfiguration](../configuration/search/configure-search-engine.md) *Außer* click **[!UICONTROL Yes]** aus dem **[!UICONTROL Enable HTTP Auth]** und geben Sie Ihren Benutzernamen und Ihr Passwort in die entsprechenden Felder ein.
 
-Klicken **[!UICONTROL Test Connection]** , um sicherzustellen, dass sie funktioniert, und klicken Sie dann auf **[!UICONTROL Save Config]**.
+Klicks **[!UICONTROL Test Connection]** , um sicherzustellen, dass sie funktioniert, klicken Sie auf **[!UICONTROL Save Config]**.
 
 Sie müssen den Cache und die Neuindizierung leeren, bevor Sie fortfahren.

@@ -106,7 +106,7 @@ ht-degree: 87%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          --
+          —
       </td>
       <td>
           --

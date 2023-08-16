@@ -1,13 +1,13 @@
 ---
 title: Befehlszeilen-Tool
 description: Verwenden Sie das Befehlszeilen-Tool Commerce , um Installations- und Konfigurationsaufgaben auszuführen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
-
 
 # Befehlszeilen-Tool
 
@@ -21,9 +21,9 @@ Commerce verfügt über eine Befehlszeilenschnittstelle (CLI)—`<magento_root>/
 - Bereitstellen von statischen Ansichtsdateien
 - Erstellen von CSS aus weniger
 
-Weitere Vorteile:
+Weitere Vorteile sind:
 
-- Ein einzelner Befehl (`<magento_root>/bin/magento list`) listet alle verfügbaren Installations- und Konfigurationsbefehle auf.
+- Ein einzelner Befehl (`<magento_root>/bin/magento list`) enthält alle verfügbaren Installations- und Konfigurationsbefehle.
 - Konsistente Benutzeroberfläche basierend auf Symfony.
 - Die CLI ist erweiterbar, sodass Entwickler von Drittanbietern sie &quot;einbinden&quot;können. Dies hat den zusätzlichen Vorteil, dass die Lernkurve der Benutzer entfernt wird.
 - Befehle für deaktivierte Module werden nicht angezeigt.

@@ -46,7 +46,7 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 ## Budget und Zeit
 
-▢ Verwenden der Adobe Commerce [Release-Zeitplan](../../../release/schedule.md) , um Ihr nächstes Upgrade zu planen und vorzeitig vorzubereiten.
+▢ Verwenden der Adobe Commerce [Veröffentlichungszeitplan](../../../release/schedule.md) , um Ihr nächstes Upgrade zu planen und vorzeitig vorzubereiten.
 
 ▢ Diskutieren Sie, welche Version Sie Ihrer Meinung nach basierend auf den erwarteten Anforderungen übernehmen werden (vollständig oder sicherheitsspezifisch).
 
@@ -77,11 +77,11 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 ▢ Wartungsfenster planen, wenn Ausfallzeiten erwartet werden.
 
-▢ die Prüfstrategie überprüfen und genehmigen; die Verwendung der Adobe Commerce in Erwägung zu ziehen [Test-Framework](https://developer.adobe.com/commerce/testing/) oder einer Automationssuite eines Drittanbieters.
+▢ die Teststrategie überprüfen und genehmigen; erwägen Sie die Verwendung der Adobe Commerce [Test-Framework](https://developer.adobe.com/commerce/testing/) oder einer Automationssuite eines Drittanbieters.
 
 ▢ Bestätigen Sie, dass alle Erweiterungen und Anpassungen kompatibel sind.
 
-▢ das Playbook für die Zeit nach dem Start überprüfen und aktualisieren; verwendet werden, wenn während oder nach der Aktualisierung Probleme auftreten.
+▢ Überprüfen und aktualisieren Sie das Playbook für die Zeit nach dem Start. Wird verwendet, wenn während oder nach dem Upgrade Probleme auftreten.
 
 ## Nach der Bereitstellung
 
@@ -91,4 +91,4 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 ▢ Führen Sie eine Retrospektive mit allen Interessenträgern durch und dokumentieren Sie, was gut gelaufen ist, was nicht gelaufen ist und wie sich verbessern lässt.
 
-▢ Ändern Sie Ihren Plan für das nächste Upgrade mit den gelernten Lektionen.
+▢ Ändern Sie Ihren Plan für das nächste Upgrade mit den gewonnenen Erfahrungen.

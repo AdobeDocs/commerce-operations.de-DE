@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Aktivität &quot;Logdatenbank&quot;
 
-Das folgende Beispiel zeigt, wie die Aktivität Datenbank mithilfe der [`Magento\Framework\DB\LoggerInterface`][interface], der über zwei Implementierungen verfügt:
+Im folgenden Beispiel wird gezeigt, wie die Aktivität der Datenbank mithilfe der [`Magento\Framework\DB\LoggerInterface`][interface], der über zwei Implementierungen verfügt:
 
 - Protokolliert nichts (Standard): [`Magento\Framework\DB\Logger\Quiet`][quiet]
 - Protokolle zum `var/log` directory: [`Magento\Framework\DB\Logger\File`][file]

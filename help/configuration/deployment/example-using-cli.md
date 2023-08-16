@@ -1,13 +1,13 @@
 ---
 title: Beispiel mit CLI-Befehlen
 description: Sehen Sie sich ein Beispiel dafür an, wie Sie mithilfe der Befehlszeile in Ihrem Entwicklungssystem gemeinsame, systemspezifische und sensible Werte festlegen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
 
 ---
-
 
 # Beispiel mit CLI-Befehlen
 
@@ -16,23 +16,23 @@ Dies geschieht mithilfe einer Kombination aus freigegebenen Konfigurationen, der
 
 In diesem Beispiel werden die folgenden Konfigurationseinstellungen verwendet:
 
-- **MwSt.-Nummer** und **Speichername** für die freigegebenen Konfigurationseinstellungen.
+- **Umsatznummer** und **Speichername** für die freigegebenen Konfigurationseinstellungen.
 
-   Diese finden Sie unter **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+  Diese finden Sie unter **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
 
 - **E-Mails an senden** für den sensiblen Konfigurationswert.
 
-   Dies finden Sie unter **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Kontakte**.
+  Dies finden Sie unter **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Kontakte**.
 
 - **Standard-E-Mail-Domain** für den systemspezifischen Konfigurationswert.
 
-   Dies finden Sie unter **Stores** > Einstellungen > **Konfiguration** > Kunden > **Kundenkonfiguration** > **Neue Kontooptionen erstellen**.
+  Dies finden Sie unter **Stores** > Einstellungen > **Konfiguration** > Kunden > **Kundenkonfiguration** > **Neue Kontooptionen erstellen**.
 
 Sie können das gleiche Verfahren wie in diesem Beispiel verwenden, um Einstellungen in den folgenden Referenzen zu konfigurieren:
 
 - [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md)
 - [Referenz zu Zahlungskonfigurationspfaden](../reference/config-reference-payment.md)
-- [Andere Konfigurationspfade](../reference/config-reference-general.md)
+- [Andere Konfigurationspfade - Referenz](../reference/config-reference-general.md)
 - [Referenz zu den Konfigurationspfaden für Commerce Enterprise B2B-Erweiterungen](../reference/config-reference-b2b.md)
 
 ## Bevor Sie beginnen
@@ -45,7 +45,7 @@ Dieses Thema enthält ein Beispiel für die Änderung der Konfiguration des Prod
 
 Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 
-- Verwenden Sie die Git-Quellsteuerung
+- Verwenden Sie die Git-Quellsteuerung.
 - Das Entwicklungssystem ist in einem Git-Remote-Repository mit dem Namen `mconfig`
 - Ihre Git-Arbeitsverzweigung heißt `m2.2_deploy`
 
@@ -54,21 +54,21 @@ Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 So legen Sie die standardmäßige Gebietsschema- und Gewichtseinheiten in Ihrem Entwicklungssystem fest:
 
 1. Melden Sie sich beim Administrator an.
-1. Klicken **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
-1. Wenn Sie mehr als eine Website zur Verfügung haben, verwenden Sie die **Store-Ansicht** in der oberen linken Ecke, um zu einer anderen Website zu wechseln, wie in der folgenden Abbildung dargestellt.
+1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Wenn mehrere Websites verfügbar sind, verwenden Sie die **Store-Ansicht** in der oberen linken Ecke, um zu einer anderen Website zu wechseln, wie in der folgenden Abbildung dargestellt.
 
    ![Wechseln von Websites](../../assets/configuration/split-deploy-switch-website.png)
 
 1. Erweitern Sie im rechten Bereich **Store-Informationen**.
-1. Falls erforderlich, löschen Sie die **Use Default** Kontrollkästchen neben dem **MwSt.-Nummer** und **Speichername** -Felder.
-1. Geben Sie eine Zahl in das Feld ein (z. B. `12345`).
+1. Falls erforderlich, löschen Sie die **Use Default** Kontrollkästchen neben dem **MwSt. Nummer** und **Speichername** -Felder.
+1. Geben Sie eine Zahl in das Feld ein (beispielsweise `12345`).
 1. Im **Speichername** ein Wert eingeben (wie `My Store`).
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 1. Klicken Sie im linken Navigationsbereich unter &quot;General&quot;auf **Kontakte**.
 1. Erweitern Sie im rechten Bereich **E-Mail-Optionen**.
 1. Falls erforderlich, löschen Sie die **Use Default** Kontrollkästchen neben dem **E-Mails an senden** -Feld.
 1. Geben Sie eine E-Mail-Adresse in das Feld ein.
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 1. Verwenden Sie die **Store-Ansicht** Liste zur Auswahl der **Standardkonfiguration** wie in der folgenden Abbildung dargestellt.
 
    ![Zur Standardkonfiguration wechseln](../../assets/configuration/split-deploy-default-config.png)
@@ -77,7 +77,7 @@ So legen Sie die standardmäßige Gebietsschema- und Gewichtseinheiten in Ihrem 
 1. Erweitern Sie im rechten Bereich **Neue Kontooptionen erstellen**.
 1. Falls erforderlich, löschen Sie die **Systemwert verwenden** Kontrollkästchen neben dem **Standard-E-Mail-Domain** -Feld.
 1. Geben Sie einen Domänennamen in das Feld ein.
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 1. Wenn Sie dazu aufgefordert werden, leeren Sie den Cache.
 
 ## Schritt 2: Konfiguration aktualisieren
@@ -89,7 +89,7 @@ Nachdem Sie die Konfiguration in Admin geändert haben, schreiben Sie die freige
 Auch `app/etc/env.php` (die systemspezifische Konfiguration) aktualisiert wurde, checken Sie sie nicht in die Quell-Code-Verwaltung ein.
 Sie werden später in diesem Verfahren dieselben Konfigurationseinstellungen für Ihr Produktionssystem erstellen.
 
-## Schritt 3: Build-System aktualisieren und Dateien generieren
+## Schritt 3: Aktualisieren Sie Ihr Build-System und generieren Sie Dateien.
 
 Nachdem Sie Ihre Änderungen an der freigegebenen Konfiguration an die Quell-Code-Verwaltung übertragen haben, können Sie diese Änderungen in Ihr Build-System übernehmen, den Code kompilieren und statische Dateien generieren.
 
@@ -108,20 +108,20 @@ Um die sensiblen und systemspezifischen Einstellungen mithilfe von Umgebungsvari
 
 - Umfang der einzelnen Einstellungen
 
-   Wenn Sie die Anweisungen in Schritt 1 befolgt haben, wird der Umfang für **E-Mails an senden** ist Website und der Umfang für **Standard-E-Mail-Domain** ist global (d. h. der Standardkonfig-Umfang).
+  Wenn Sie die Anweisungen in Schritt 1 befolgt haben, wird der Umfang für **E-Mails an senden** ist Website und der Umfang für **Standard-E-Mail-Domain** ist global (d. h. der Standardkonfig-Umfang).
 
-   Sie benötigen den Website-Code, um die **E-Mails an senden** Konfigurationswert.
+  Sie benötigen den Website-Code, um die **E-Mails an senden** Konfigurationswert.
 
-   Weitere Informationen zum Auffinden dieses Werts finden Sie unter: [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables).
+  Weitere Informationen zum Auffinden dieses Werts finden Sie unter: [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables).
 
 - Konfigurationspfade für die in diesem Beispiel verwendeten Einstellungen:
 
-   | Einstellungsname | Konfigurationspfad |
-   | -------------------- | -------------------------------------- |
-   | E-Mails an senden | `contact/email/recipient_email` |
-   | Standard-E-Mail-Domain | `customer/create_account/email_domain` |
+  | Einstellungsname | Konfigurationspfad |
+  | -------------------- | -------------------------------------- |
+  | E-Mails an senden | `contact/email/recipient_email` |
+  | Standard-E-Mail-Domain | `customer/create_account/email_domain` |
 
-   Alle sensiblen und systemspezifischen Konfigurationspfade finden Sie unter: [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md).
+  Alle sensiblen und systemspezifischen Konfigurationspfade finden Sie unter: [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md).
 
 ### Variablen mithilfe von CLI-Befehlen festlegen
 
@@ -157,7 +157,7 @@ In diesem Abschnitt wird beschrieben, wie Sie alle Änderungen, die Sie an Ihren
 Überprüfen der Konfigurationseinstellungen:
 
 1. Melden Sie sich beim Administrator Ihres Produktionssystems an.
-1. Klicken **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
 1. Verwenden Sie die **Store-Ansicht** Liste oben links, um zu einer anderen Website zu wechseln.
 
    Die freigegebenen Konfigurationsoptionen, die Sie im Entwicklungssystem festlegen, werden ähnlich wie die folgenden angezeigt.
@@ -166,7 +166,7 @@ In diesem Abschnitt wird beschrieben, wie Sie alle Änderungen, die Sie an Ihren
 
    >[!INFO]
    >
-   >Die **Speichername** -Feld im Website-Bereich bearbeitbar ist, aber wenn Sie zum Bereich Standardkonfiguration wechseln, kann er nicht bearbeitet werden. Dies ist das Ergebnis der Festlegung der Optionen im Entwicklungssystem. Der Wert von **MwSt.-Nummer** im Website-Umfang nicht bearbeitbar ist.
+   >Die **Speichername** -Feld im Website-Bereich bearbeitbar ist, aber wenn Sie zum Bereich &quot;Standardkonfiguration&quot;wechseln, kann er nicht bearbeitet werden. Dies ist das Ergebnis der Festlegung der Optionen im Entwicklungssystem. Der Wert von **MwSt. Nummer** im Website-Umfang nicht bearbeitbar ist.
 
 1. Wechseln Sie, falls noch nicht geschehen, zum Bereich Standardkonfiguration .
 1. Klicken Sie im linken Navigationsbereich unter &quot;General&quot;auf **Kontakte**.

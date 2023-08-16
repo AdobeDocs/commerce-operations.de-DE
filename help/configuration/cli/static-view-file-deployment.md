@@ -1,13 +1,13 @@
 ---
 title: Bereitstellen von statischen Ansichtsdateien
 description: Erfahren Sie, wie Sie im Produktionsmodus statische Dateien in das Commerce-Dateisystem schreiben.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 51954738-b999-4982-954b-70f7a70c5a17
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
 
 ---
-
 
 # Bereitstellen von statischen Ansichtsdateien
 
@@ -24,14 +24,14 @@ Statische Ansichtsdateien befinden sich im `<magento_root>/pub/static` und einig
 
 Die Bereitstellung von statischen Ansichtsdateien wird wie folgt von den Anwendungsmodi beeinflusst:
 
-- [Standard](../bootstrap/application-modes.md#default-mode) und [Entwickler](../bootstrap/application-modes.md#developer-mode) Modi: Commerce generiert sie nach Bedarf, aber der Rest wird in einer Datei zwischengespeichert, um den Zugriff zu beschleunigen.
+- [Standard](../bootstrap/application-modes.md#default-mode) und [Entwickler](../bootstrap/application-modes.md#developer-mode) Modi: Commerce erstellt sie nach Bedarf, der Rest wird jedoch in einer Datei zwischengespeichert, um den Zugriff zu beschleunigen.
 - [Produktion](../bootstrap/application-modes.md#production-mode) mode: Statische Dateien sind _not_ generiert oder zwischengespeichert.
 
-Sie müssen statische Ansichtsdateien manuell in das Commerce-Dateisystem schreiben, indem Sie den in diesem Thema beschriebenen Befehl verwenden. Danach können Sie die Berechtigungen einschränken, um Ihre Schwachstellen zu begrenzen und ein versehentliches oder bösartiges Überschreiben von Dateien zu verhindern.
+Sie müssen statische Ansichtsdateien manuell in das Commerce-Dateisystem schreiben, indem Sie den in diesem Thema besprochenen Befehl verwenden. Danach können Sie die Berechtigungen einschränken, um Ihre Sicherheitslücken zu begrenzen und ein versehentliches oder bösartiges Überschreiben von Dateien zu verhindern.
 
 >[!WARNING]
 >
->_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layouts usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie können generierte statische Ansichtsdateien auf verschiedene Arten bereinigen. Siehe [Thema zum Zwischenspeichern statischer Dateien mit Details bereinigen](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) für weitere Informationen.
+>_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layouts usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie können generierte statische Ansichtsdateien auf verschiedene Arten bereinigen. Siehe Abschnitt [Thema zum Zwischenspeichern statischer Dateien mit Details bereinigen](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) für weitere Informationen.
 
 **So stellen Sie statische Ansichtsdateien bereit**:
 
@@ -57,7 +57,7 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 | `--language (-l)` | Generieren Sie Dateien nur für die angegebenen Sprachen. Standardmäßig werden Dateien für alle ISO-639-Sprachcodes generiert, ohne dass eine Option angegeben ist. Sie können den Namen eines Sprachcodes gleichzeitig angeben. Der Standardwert ist **all**.<br>Beispiel: `--language en_US --language es_ES` | Nein |
 | `--exclude-language` | Generieren Sie Dateien für die angegebenen Sprachcodes. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Sie können den Namen eines Sprachcodes oder eine kommagetrennte Liste von Sprachcodes angeben. Der Standardwert ist **Keine**. | Nein |
 | `--theme <theme>` | Designs, für die statische Inhalte bereitgestellt werden sollen. Der Standardwert ist **all**.<br>Beispiel: `--theme Magento/blank --theme Magento/luma` | Nein |
-| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **Keine**.<br>Beispiel: `--exclude-theme Magento/blank` | Nein |
+| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **Keine**.<br>Beispiel, `--exclude-theme Magento/blank` | Nein |
 | `--area (-a)` | Generieren Sie Dateien nur für die angegebenen Bereiche. Standardmäßig werden Dateien für alle Bereiche generiert, ohne dass eine Option angegeben ist. Gültige Werte sind `adminhtml` und `frontend`. Der Standardwert ist **all**.<br>Beispiel: `--area adminhtml` | Nein |
 | `--exclude-area` | Generieren Sie keine Dateien für die angegebenen Bereiche. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Der Standardwert ist **Keine**. | Nein |
 | `--jobs (-j)` | Aktivieren Sie die parallele Verarbeitung mit der angegebenen Anzahl von Aufträgen. Der Standardwert ist 0 (nicht in parallelen Prozessen ausgeführt). Der Standardwert ist **0**. | Nein |
@@ -158,7 +158,7 @@ Gehen Sie dazu wie folgt vor:
 
 ## Fehlerbehebung für das Bereitstellungswerkzeug für statische Ansichtsdateien
 
-[Installieren Sie zuerst die Commerce-Software](../../installation/overview.md); Andernfalls können Sie das Bereitstellungswerkzeug für statische Ansichtsdateien nicht ausführen.
+[Installieren Sie zuerst die Commerce-Software](../../installation/overview.md); andernfalls können Sie das Bereitstellungswerkzeug für statische Ansichtsdateien nicht ausführen.
 
 **Symptom**: Der folgende Fehler wird angezeigt, wenn Sie das Bereitstellungswerkzeug für statische Ansichtsdateien ausführen:
 

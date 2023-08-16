@@ -1,19 +1,19 @@
 ---
 title: Varnischer ESI-Block
 description: Erfahren Sie mehr über Edge Side Includes und wie Sie sie zum Einbetten von Webseiten verwenden können.
-badge: label="Contributed by Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
+badge: label="Beitrag von Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
 # Varnischer ESI-Block
 
-Edge Side Includes (ESI) sind spezielle Anweisungen, mit denen Sie Webseiten in andere Webseiten einbeziehen können.
+Edge Side Includes (ESI) sind spezielle Anweisungen, mit denen Sie Webseiten in andere Webseiten einbinden können.
 
 Beispiel:
 
@@ -25,7 +25,7 @@ Beispiel:
 
 Varnish ruft Inhalt aus `http://domain.com/index.php/page_cache/block/esi/blocks` und ersetzen Sie die `<esi>` -Tag.
 
-## Handel und Viehwirtschaft ESI
+## Handel und Viehzucht-ESI
 
 Das Commerce-Framework erstellt ein ESI-Tag, wenn die folgenden Bedingungen erfüllt sind:
 

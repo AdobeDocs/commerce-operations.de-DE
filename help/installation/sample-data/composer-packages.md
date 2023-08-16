@@ -26,7 +26,7 @@ Sie können diese Methode zum Abrufen von Beispieldaten für Adobe Commerce und 
 >
 >Wenn Fehler auftreten, z. B. `Could not find package...` oder `...no matching package found...`, stellen Sie sicher, dass Ihr Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, haben Sie möglicherweise keinen Zugriff auf die richtigen Composer-Repositorys, insbesondere wenn Sie Adobe Commerce verwenden. Kontakt [Adobe Commerce-Support](https://support.magento.com/hc/en-us) für Hilfe.
 
-Sie können Composer verwenden, um Beispieldaten vor oder nach der Installation der Anwendung zu installieren. kann jedoch [zusätzliche Aufgaben](remove-or-update.md).
+Sie können Composer verwenden, um Beispieldaten entweder vor oder nach der Installation der Anwendung zu installieren. Es kann jedoch vorkommen, dass [zusätzliche Aufgaben](remove-or-update.md).
 
 Wenn Sie ein Entwickler sind, lesen Sie [Installation durch Klonen von Repositorys](git-repositories.md).
 

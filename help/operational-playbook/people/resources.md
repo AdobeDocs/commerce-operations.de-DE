@@ -1,13 +1,13 @@
 ---
 title: Ressourcen
 description: Erfahren Sie mehr über interne, externe und hybride Ressourcen, die Ihre E-Commerce-Teams unterstützen können.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8c5067ed-6dbe-4306-b825-959606d1b254
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
 
 ---
-
 
 # Ressourcen
 
@@ -57,7 +57,7 @@ Zu den externen Teams gehören Berater, Zahlungskanäle, SEO/SEM-bezogene Aktivi
 
 - Externe Teammitglieder sind erfahrener. Plattformexperten kennen alle Plattformfunktionen und können Best Practices vorschlagen, mit denen das Unternehmen die Plattform optimal nutzen kann.
 
-- Beratungsunternehmen setzen sich dafür ein, ihre Ressourcen im Hinblick auf Technologie- und Branchentrends auf dem neuesten Stand zu halten. Berater haben einen flexiblen Arbeitsstil und haben viel zu bieten. Nicht nur in Bezug auf Wissen und Erfahrung, sondern auch Kultur.
+- Beratungsunternehmen setzen sich dafür ein, ihre Ressourcen im Hinblick auf Technologie- und Branchentrends auf dem neuesten Stand zu halten. Berater haben einen flexiblen Arbeitsstil und haben viel zu bieten, nicht nur in Bezug auf Wissen und Erfahrung, sondern auch in Bezug auf Kultur.
 
 - Drittanbieter können Personen für die Arbeit an einem Projekt zur Verfügung stellen, wenn sich der Ressourcenbedarf ändert, was ein skalierbareres Team ermöglicht.
 
@@ -69,7 +69,7 @@ Zu den externen Teams gehören Berater, Zahlungskanäle, SEO/SEM-bezogene Aktivi
 
 ### Zu den Vorteilen eines externen Teams zählen:
 
-- Kann langfristig ziemlich teuer sein.
+- Kann auf lange Sicht ziemlich teuer sein.
 
 - Die Projektzeitleiste konnte zurückfallen oder die erforderliche Erwartung nicht erfüllen.
 

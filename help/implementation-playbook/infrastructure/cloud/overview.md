@@ -18,7 +18,7 @@ Adobe Commerce on Cloud Infrastructure ist ein Plattform-as-a-Service-Angebot, d
 
 Adobe Commerce ist Cloud-fähig mit einer vollständig redundanten Multi-Cloud-Hosting-Infrastruktur, die optimale Leistung, Ausfallsicherheit und elastische Skalierbarkeit bietet. Sie können Ihre Commerce-Plattform effizient über das Content Delivery Network (CDN) von Fastly ausführen. Mit New Relic für die Überwachung und Verwaltung können Sie Ihre Store-Umgebung reibungslos laufen lassen.
 
-Adobe Commerce bietet alle Vorteile des modernen Cloud-Computing, das am häufigsten mit SaaS-Lösungen in Verbindung gebracht wird: Elastische Skalierbarkeit, hohe Ausfallsicherheit und Verfügbarkeit, PCI-Compliance, globale Verfügbarkeit und automatisiertes Patchen bei gleichzeitiger Beibehaltung der Flexibilität bei der Softwareanpassung, die unsere Händler benötigen.
+Adobe Commerce bietet alle Vorteile des modernen Cloud-Computing, das am häufigsten mit SaaS-Lösungen in Verbindung gebracht wird: elastische Skalierbarkeit, hohe Ausfallsicherheit und Verfügbarkeit, PCI-Compliance, globale Verfügbarkeit und automatisiertes Patchen bei gleichzeitiger Wahrung der Flexibilität bei der Softwareanpassung, die unsere Händler benötigen.
 
 ![Abbildung architektonischer Elemente von Adobe Commerce in der Cloud-Infrastruktur](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
 
@@ -42,7 +42,7 @@ Sehen wir uns auch die Software an, die die Vorteile von Adobe Commerce Wirklich
 
 ![Abbildung von Adobe Commerce auf dem Technologiestapel der Cloud-Infrastruktur](../../../assets/playbooks/cloud-tech-stack.svg)
 
-- Fastly CDN: Wenn Kunden auf Ihre Site und Ihre Stores zugreifen, drücken Sie schnell die Anforderungen, um zwischengespeicherte Seiten schneller zu laden. Fastly WAF bietet auch einen DDoS-Schutz.
+- Schnelles CDN: Wenn Kunden auf Ihre Site und Ihre Stores zugreifen, werden die Anforderungen schnell getroffen, um zwischengespeicherte Seiten schneller zu laden. Fastly WAF bietet auch einen DDoS-Schutz.
 
 - New Relic bietet Ihnen einen vollständigen Überblick über Ihre Anwendungen und Betriebsumgebungen. Sie können damit Schlüsselmetriken aus mobilen und Browser-Anwendungen mit unterstützenden Diensten, Datenspeichern und Hosts kombinieren, damit Sie die Leistung ganzheitlich optimieren und den Erfolg jeder Initiative sicherstellen können.
 

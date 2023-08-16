@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Planen effektiver Zwischenspeicherung für E-Commerce-Erfolg unter Last
 
-Die Bereitstellung eines Einkaufserlebnisses unter Last erfordert eine gut geplante Cachestrategie. Während die Anfrage von geschäftlichen Stakeholdern zunächst darin bestehen kann, Kunden immer Echtzeit-Produktdaten zu präsentieren, ist dies keine optimale Nutzung von Systemressourcen, und die Auswirkungen der Site-Performance von Endbenutzern würden die Vorteile einer konsistenten Anzeige von Echtzeitinformationen deutlich überwiegen.
+Die Bereitstellung eines Einkaufserlebnisses unter Last erfordert eine gut geplante Cachestrategie. Während die Anfrage von geschäftlichen Stakeholdern zunächst darin bestehen kann, Kunden immer Echtzeit-Produktdaten zu präsentieren, ist dies keine optimale Nutzung von Systemressourcen, und die Auswirkungen der Site-Performance von Endbenutzern würden die Vorteile einer konsistenten Anzeige von Echtzeit-Informationen deutlich überwiegen.
 
 Der erste Schritt bei der Cachestrategie sollte daher darin bestehen, mit den relevanten Interessenträgern eine Matrix zulässiger Zwischenspeicherzeiten für die verschiedenen Bereiche der Site zu definieren, z. B.:
 

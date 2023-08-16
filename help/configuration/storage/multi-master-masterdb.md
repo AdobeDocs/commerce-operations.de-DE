@@ -1,16 +1,16 @@
 ---
-title: Automatische Konfiguration Übergeordneter Datenbanken
+title: Automatische Konfiguration von Master-Datenbanken
 description: Siehe Anleitungen zum automatischen Konfigurieren der geteilten Datenbanklösung.
 recommendations: noCatalog
 exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Automatische Konfiguration Übergeordneter Datenbanken
+# Automatische Konfiguration von Master-Datenbanken
 
 {{ee-only}}
 
@@ -18,21 +18,21 @@ ht-degree: 0%
 
 In diesem Thema werden die ersten Schritte mit der geteilten Datenbanklösung durch folgende Schritte erläutert:
 
-1. Installieren von Adobe Commerce mit einer einzigen Übergeordneten Datenbank (mit dem Namen `magento`)
-1. Erstellen von zwei zusätzlichen Übergeordneten Datenbanken für den Checkout und OMS (mit dem Namen `magento_quote` und `magento_sales`)
+1. Installieren von Adobe Commerce mit einer Master-Datenbank (mit dem Namen `magento`)
+1. Erstellen von zwei zusätzlichen Master-Datenbanken für Checkout und OMS (mit dem Namen `magento_quote` und `magento_sales`)
 1. Konfigurieren von Adobe Commerce für die Verwendung der Checkout- und Verkaufsdatenbanken
 
 >[!INFO]
 >
->In diesem Handbuch wird davon ausgegangen, dass sich alle drei Datenbanken auf demselben Host wie die Commerce-Anwendung befinden und dass sie `magento`, `magento_quote`und `magento_sales`. Sie können jedoch selbst entscheiden, wo die Datenbanken zu finden sind und wie sie benannt sind. Wir hoffen, dass unsere Beispiele die Befolgung der Anweisungen erleichtern.
+>In diesem Handbuch wird davon ausgegangen, dass sich alle drei Datenbanken auf demselben Host wie die Commerce-Anwendung befinden und dass sie `magento`, `magento_quote`, und `magento_sales`. Sie können jedoch selbst entscheiden, wo die Datenbanken zu finden sind und wie sie benannt sind. Wir hoffen, dass unsere Beispiele die Befolgung der Anweisungen erleichtern.
 
 ## Installieren der Adobe Commerce-Software
 
-Sie können die Aufspaltung von Datenbanken jederzeit nach der Installation der Adobe Commerce-Software aktivieren. Sie können also geteilte Datenbanken zu einem Adobe Commerce-System hinzufügen, das bereits über Kasse- und Bestelldaten verfügt. Verwenden Sie die Anweisungen in Adobe Commerce README oder dem [Installationshandbuch](../../installation/overview.md) , um die Adobe Commerce-Software mit einer einzigen Übergeordneten Datenbank zu installieren.
+Sie können die Aufspaltung von Datenbanken jederzeit aktivieren, nachdem Sie die Adobe Commerce-Software installiert haben. Mit anderen Worten, Sie können Aufspaltungsdatenbanken zu einem Adobe Commerce-System hinzufügen, das bereits über Kasse- und Bestelldaten verfügt. Verwenden Sie die Anweisungen in Adobe Commerce README oder dem [Installationshandbuch](../../installation/overview.md) , um die Adobe Commerce-Software mit einer einzigen Master-Datenbank zu installieren.
 
-## Einrichten zusätzlicher Übergeordneter Datenbanken
+## Einrichten zusätzlicher Master-Datenbanken
 
-Erstellen Sie die Übergeordneten Datenbanken Checkout und OMS wie folgt:
+Erstellen Sie wie folgt Checkout- und OMS-Master-Datenbanken:
 
 1. Melden Sie sich bei Ihrem Datenbankserver als ein beliebiger Benutzer an.
 1. Geben Sie den folgenden Befehl ein, um zu einer MySQL-Eingabeaufforderung zu gelangen:
@@ -86,9 +86,9 @@ Erstellen Sie die Übergeordneten Datenbanken Checkout und OMS wie folgt:
 
    Wenn der MySQL-Monitor angezeigt wird, haben Sie die Datenbank ordnungsgemäß erstellt. Wenn ein Fehler angezeigt wird, wiederholen Sie die vorherigen Befehle.
 
-## Konfigurieren von Commerce für die Verwendung Übergeordneter Datenbanken
+## Konfigurieren von Commerce für die Verwendung von Master-Datenbanken
 
-Nachdem Sie insgesamt drei Übergeordnete Datenbanken eingerichtet haben, konfigurieren Sie über die Befehlszeile Commerce für deren Verwendung. (Der Befehl richtet Datenbankverbindungen ein und verteilt Tabellen auf die Übergeordneten Datenbanken.)
+Nachdem Sie insgesamt drei Master-Datenbanken eingerichtet haben, konfigurieren Sie über die Befehlszeile Commerce für deren Verwendung. (Der Befehl richtet Datenbankverbindungen ein und verteilt Tabellen auf die Master-Datenbanken.)
 
 ### Erste Schritte
 

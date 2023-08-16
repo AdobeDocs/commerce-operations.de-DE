@@ -85,7 +85,7 @@ Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-T
 Indexer wechseln generiert [!DNL data definition language] (DDL)-Anweisungen zum Erstellen von Triggern, die Datenbanksperren verursachen können. Sie können dieses Problem verhindern, indem Sie Ihre Website in den Wartungsmodus versetzen und Cron-Aufträge deaktivieren, bevor Sie die Konfiguration ändern.
 Anweisungen finden Sie unter [Indexer konfigurieren](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) im *Adobe Commerce-Konfigurationshandbuch*.
 
-## Führen Sie keine DDL-Anweisungen in der Produktion aus.
+## Führen Sie keine DDL-Anweisungen in der Produktion aus
 
 Vermeiden Sie das Ausführen von DDL-Anweisungen in der Produktionsumgebung, um Konflikte (wie Tabellenänderungen und -erstellungen) zu vermeiden. Die `setup:upgrade` -Prozess ist eine Ausnahme.
 

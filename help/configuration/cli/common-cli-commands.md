@@ -1,13 +1,13 @@
 ---
 title: Allgemeine Befehle
 description: Sehen Sie sich ein Beispiel für gängige Commerce-CLI-Befehle und -Verwendung an.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Allgemeine Befehle
 
@@ -19,7 +19,7 @@ Im Folgenden werden einige der verfügbaren Befehle zusammengefasst.
 bin/magento list
 ```
 
-Beispiel-Hilfebefehl:
+Beispiel für einen Hilfebefehl:
 
 ```bash
 bin/magento help <command>
@@ -29,14 +29,14 @@ bin/magento help <command>
 bin/magento help cache:enable
 ```
 
-Befehle werden nur in Form einer Zusammenfassung angezeigt. Klicken Sie für weitere Informationen zu einem Befehl auf den Link in der Spalte &quot;Befehl&quot;.
+Befehle werden nur in der Zusammenfassung angezeigt. Klicken Sie für weitere Informationen zu einem Befehl auf den Link in der Spalte &quot;Befehl&quot;.
 
 | Befehl | Beschreibung |
 |--- |--- |
 | [`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md) | Verwalten des Cache |
-| [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | Verwalten der Indexer |
+| [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | Verwaltet die Indexer |
 | [`magento cron:run`](../cli/configure-cron-jobs.md) | Führt Commerce-Cron-Aufträge aus |
-| [`magento setup:di:compile`](../cli/code-compiler.md) | Kompiliert alle nicht vorhandenen Proxys und Fabriken; und kompiliert Klassendefinitionen, Vererbungsinformationen und Plug-in-Definitionen für einen Store und eine Website vorab. |
+| [`magento setup:di:compile`](../cli/code-compiler.md) | Kompiliert alle nicht vorhandenen Proxys und Fabriken und erstellt eine Vorkompilierung von Klassendefinitionen, Vererbungsinformationen und Plug-in-Definitionen für einen Store und eine Website. |
 | [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | Modulabhängigkeiten, zirkuläre Abhängigkeiten und Commerce-Framework-Abhängigkeiten. |
 | [`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md) | Erstellt ein Übersetzungswörterbuch oder ein Übersetzungspaket |
 | [`magento setup:static-content:deploy`](../cli/static-view-file-deployment.md) | Stellt statische Ansichtsdateien bereit |
@@ -56,7 +56,7 @@ Die folgenden Argumente gelten für alle Befehle. Diese Befehle können vor oder
 | Lange Version | Kurzversion | Bedeutung |
 |--- |--- |--- |
 | `--help` | `-h` | Erhalten Sie Hilfe für jeden Befehl. Beispiel: `./magento help setup:install` oder `./magento help setup:config:set`. |
-| `--quiet` | `-q` | Ruhezustand; keine Ausgabe. |
+| `--quiet` | `-q` | Ruhig, keine Ausgabe. |
 | `--no-interaction` | `-n` | Keine interaktiven Fragen. |
 | `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbosity level. Beispiel: `--verbose=3` oder `-vvv` zeigt Debug-Ausführlichkeit an, die die ausführlichste Ausgabe ist. Der Standardwert ist `--verbose=1` oder `-v`. |
 | `--version` | `-V` | Diese Anwendungsversion anzeigen |

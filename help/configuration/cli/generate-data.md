@@ -6,7 +6,7 @@ exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
 source-wordcount: '749'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
@@ -26,7 +26,7 @@ Die folgende Abbildung zeigt, wie ein Produkt in der Storefront mit der _klein_ 
 
 ![Beispiel-Storefront mit generierten Daten](../../assets/configuration/generate-data.png)
 
-Die folgende Tabelle enthält Details zu den Datengenerierungsprofilen: klein, mittel, groß und extra groß.
+Die folgende Tabelle enthält Details zu den Profilen des Datengenerators: klein, mittel, groß und extra groß.
 
 | Parameter | Wenig Profil | Mittleres Profil | Mittleres Profil für mehrere Sites | Großes Profil | Großes Profil |
 | --- | --- | --- | --- | --- | --- |
@@ -50,7 +50,7 @@ Die folgende Tabelle enthält Details zu den Datengenerierungsprofilen: klein, m
 
 >[!WARNING]
 >
->Deaktivieren Sie vor dem Ausführen des Datengenerators alle Cron-Aufträge, die auf dem Server ausgeführt werden. Das Deaktivieren von Cron-Aufträgen verhindert, dass der Datengenerator Aktionen ausführt, die mit aktiven Cron-Aufträgen in Konflikt stehen, und vermeidet unnötige Fehler.
+>Deaktivieren Sie vor dem Ausführen des Datengenerators alle auf dem Server ausgeführten Cron-Aufträge. Das Deaktivieren von Cron-Aufträgen verhindert, dass der Datengenerator Aktionen ausführt, die mit aktiven Cron-Aufträgen in Konflikt stehen, und vermeidet unnötige Fehler.
 
 Führen Sie den Befehl wie in diesem Abschnitt beschrieben aus. Nachdem der Befehl ausgeführt wurde, müssen Sie [Neuindizieren aller Indexer](../cli/manage-indexers.md).
 
@@ -99,7 +99,7 @@ Generating simple products...  done in <time>
 
 ## Leistungsverbesserungen
 
-### Admin-Benutzer
+### Admin Users
 
 Erstellt Admin-Benutzer. XML-Profilknoten:
 
@@ -123,7 +123,7 @@ Generiert Attributsätze mit der angegebenen Konfiguration. XML-Profilknoten:
 <product_attribute_sets_attributes_values>{int}</product_attribute_sets_attributes_values>
 ```
 
-### Bundle-Produkte
+### Paketprodukte
 
 Generiert Bundle-Produkte. Generierte Bundle-Auswahlen werden nicht einzeln im Katalog angezeigt. Produkte werden einheitlich nach Kategorien und Websites verteilt. Wenn  `assign_entities_to_all_websites` aus dem Profil auf `1`. Produkte werden allen Websites zugewiesen.
 
@@ -163,7 +163,7 @@ Erstellt Regeln zu Katalogpreisen. XML-Profilknoten:
 
 ### Kategorien
 
-Erzeugt Kategorien. Wenn `assign_entities_to_all_websites` auf `0`sind alle Kategorien gleichmäßig auf die Stammkategorien verteilt; ansonsten werden alle Kategorien einer Stammkategorie zugeordnet.
+Erzeugt Kategorien. Wenn `assign_entities_to_all_websites` auf `0`festgelegt ist, werden alle Kategorien gleichmäßig pro Stammkategorien verteilt. Andernfalls werden alle Kategorien einer Stammkategorie zugeordnet.
 
 XML-Profilknoten:
 
@@ -201,106 +201,106 @@ Die folgenden XML-Knotenformate werden unterstützt:
 
 - Verteilung nach Standard- und vordefinierten Attributsätzen:
 
-   ```xml
-   <!-- Number of configurable products -->
-   <configurable_products>{int}</configurable_products>
-   ```
+  ```xml
+  <!-- Number of configurable products -->
+  <configurable_products>{int}</configurable_products>
+  ```
 
 - Generieren Sie Produkte basierend auf einem vorhandenen Attributsatz:
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-               <!-- Existing attribute set name -->
-               <attributeSet>{string}</attributeSet>
-   
-               <!-- Configurable sku pattern with %s -->
-               <sku>{string}</sku>
-   
-               <!-- Number of configurable products -->
-               <products>{int}</products>
-   
-               <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-               <category>[{string}]</category>
-   
-               <!-- Type of Swatch attribute e.g. color|image -->
-               <swatches>{string}</swatches>
-       </config>
-   
-   <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+              <!-- Existing attribute set name -->
+              <attributeSet>{string}</attributeSet>
+  
+              <!-- Configurable sku pattern with %s -->
+              <sku>{string}</sku>
+  
+              <!-- Number of configurable products -->
+              <products>{int}</products>
+  
+              <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+              <category>[{string}]</category>
+  
+              <!-- Type of Swatch attribute e.g. color|image -->
+              <swatches>{string}</swatches>
+      </config>
+  
+  <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 - Generieren Sie Produkte basierend auf einem dynamisch erstellten Attributsatz mit einer bestimmten Anzahl von Attributen und Optionen:
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <!-- Number of attributes in configurable product -->
-           <attributes>{int}</attributes>
-   
-           <!-- Number of options per attribute -->
-           <options>{int}</options>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-   
-           <!-- Type of Swatch attribute e.g. color|image -->
-           <swatches>{string}</swatches>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <!-- Number of attributes in configurable product -->
+          <attributes>{int}</attributes>
+  
+          <!-- Number of options per attribute -->
+          <options>{int}</options>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+  
+          <!-- Type of Swatch attribute e.g. color|image -->
+          <swatches>{string}</swatches>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 - Generieren Sie Produkte basierend auf einem dynamisch erstellten Attribut, das mit einer bestimmten Konfiguration für jedes Attribut festgelegt wurde:
 
-   ```xml
-   <configurable_products>
-   
-       <config>
-           <attributes>
-               <!-- Configuration for a first attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-   
-                   <!-- Type of Swatch attribute -->
-                   <swatches>{string}</swatches>
-               </attribute>
-   
-               <!-- Configuration for a second attribute -->
-               <attribute>
-                   <!-- Amount of options per attribute -->
-                   <options>{int}</options>
-               </attribute>
-           </attributes>
-   
-           <!-- Configurable sku pattern with %s -->
-           <sku>{string}</sku>
-   
-           <!-- Number of configurable products -->
-           <products>{int}</products>
-   
-           <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
-           <category>[{string}]</category>
-       </config>
-   
-       <!-- ... more entries ... -->
-   </configurable_products>
-   ```
+  ```xml
+  <configurable_products>
+  
+      <config>
+          <attributes>
+              <!-- Configuration for a first attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+  
+                  <!-- Type of Swatch attribute -->
+                  <swatches>{string}</swatches>
+              </attribute>
+  
+              <!-- Configuration for a second attribute -->
+              <attribute>
+                  <!-- Amount of options per attribute -->
+                  <options>{int}</options>
+              </attribute>
+          </attributes>
+  
+          <!-- Configurable sku pattern with %s -->
+          <sku>{string}</sku>
+  
+          <!-- Number of configurable products -->
+          <products>{int}</products>
+  
+          <!-- Category Name. Optional. By default, the category name from Categories fixture will be used -->
+          <category>[{string}]</category>
+      </config>
+  
+      <!-- ... more entries ... -->
+  </configurable_products>
+  ```
 
 ### Kunden
 
-Erzeugt Kunden. Kunden verfügen über eine normale Verteilung auf alle verfügbaren Websites. Jeder Kunde verfügt über die gleichen Daten, mit Ausnahme von Kunden-E-Mail, Kundengruppen und Kundenadressen.
+Erzeugt Kunden. Kunden verfügen über eine normale Verteilung auf alle verfügbaren Websites. Jeder Kunde verfügt über die gleichen Daten, außer Kunden-E-Mail, Kundengruppe und Kundenadressen.
 
 XML-Profilknoten:
 
@@ -446,4 +446,4 @@ Erzeugt Steuersätze. XML-Profilknoten:
 
 - `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Kleine Anzahl von Suchbegriffen in kurze und vollständige Beschreibungen
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Größere Anzahl von Suchbegriffen, die in einer kurzen und vollständigen Beschreibung verwendet werden sollen.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Größere Anzahl von Suchbegriffen, die kurz und vollständig verwendet werden sollen.

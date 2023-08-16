@@ -1,13 +1,13 @@
 ---
 title: Abhängigkeitsberichte
 description: Erstellen Sie Berichte, die die Summen für Modul-, Rundschreiben- und Framework-Abhängigkeiten anzeigen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
-
 
 # Abhängigkeitsberichte
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 Sie können die folgenden Berichtstypen ausführen:
 
 - **Modulabhängigkeiten**: Zeigt die Gesamtanzahl der Abhängigkeiten zwischen Modulen und ob die Abhängigkeiten hart oder weich sind.
-- **Zirkuläre Abhängigkeiten**: Zeigt die Gesamtzahl der Abhängigkeitsketten sowie die Anzahl und Liste der zirkulären Abhängigkeiten für jedes Modul an.
+- **Zirkuläre Abhängigkeiten**: Zeigt die Gesamtanzahl der Abhängigkeitsketten sowie die Anzahl und Liste der zirkulären Abhängigkeiten für jedes Modul an.
 - **Framework-Abhängigkeiten**: Zeigt die Gesamtanzahl der Abhängigkeiten vom Commerce-Framework nach Modul an (einschließlich der Gesamtanzahl der Framework-Einträge für jede Bibliothek).
 
 Eine Abhängigkeit in einem Kommentar ist auch eine Abhängigkeit.

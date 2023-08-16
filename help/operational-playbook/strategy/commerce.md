@@ -1,32 +1,32 @@
 ---
 title: Commerce-Strategie
 description: Entsperren Sie die Kernfunktionen des E-Commerce mithilfe unseres vorgeschlagenen Strategiahmens.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
-
 # Commerce-Strategie
 
-Der digitale Handel ist eine sich rasch entwickelnde Kraft, die sich jedes Jahr schnell weiterentwickelt. Dies kann zwar für Einzelpersonen aufregend sein, aber es bringt auch viele Herausforderungen für Organisationen mit sich, die versuchen, durch die Landschaft zu navigieren, die E-Commerce ist.
+Der digitale Handel ist eine sich rasch entwickelnde Kraft, die sich jedes Jahr schnell weiterentwickelt. Dies kann zwar für Einzelpersonen aufregend sein, aber auch für Organisationen, die versuchen, in der Umgebung des E-Commerce-Geländes zu navigieren, sind viele Herausforderungen verbunden.
 
-Da sich der E-Commerce sowohl im B2B- als auch im B2C-Bereich weiterentwickelt, erleben Unternehmen drastische Veränderungen im Kundenverhalten und bei den Erwartungen. von der Art, wie sie ein Produkt/eine Dienstleistung recherchieren, einen Kauf in Betracht ziehen und abschließen oder einer Marke Treue zeigen, bis hin zur Art und Weise, wie sie all dies ihren Kollegen kommunizieren. Das Kundenverhalten und die Erwartungen können sich sofort ändern, und Unternehmen können Schwierigkeiten haben, sich an neue Markttrends anzupassen und eine digitale Strategie zu entwickeln, die sowohl realistisch als auch erreichbar ist.
+Während sich der E-Commerce sowohl in B2B als auch in B2C weiterentwickelt, erleben Unternehmen drastische Veränderungen im Kundenverhalten und bei den Erwartungen: von der Art, wie sie ein Produkt/eine Dienstleistung erforschen, einen Kauf in Betracht ziehen und abschließen oder einer Marke Loyalität zeigen, bis hin dazu, wie sie all dies ihren Kollegen kommunizieren. Das Kundenverhalten und die Erwartungen können sich sofort ändern, und Unternehmen können Schwierigkeiten haben, sich an neue Markttrends anzupassen und eine digitale Strategie zu entwickeln, die sowohl realistisch als auch erreichbar ist.
 
 Daher ist die Umsetzung und Planung einer digitalen Strategie für jedes erfolgreiche E-Commerce-Geschäft von entscheidender Bedeutung.
 
 Die allgemeine E-Commerce-Strategie jedes Unternehmens ist einzigartig und hängt von der Reife, der Teamgröße und den Ressourcen ab. In den folgenden Abschnitten werden Strategien zum Entsperren Ihrer Commerce-Kernfunktionen beschrieben, darunter:
 
 - Bewusstsein
-- Überlegungen
+- Betrachtung
 - Kauf
 - Support
 
 ## Bewusstsein
 
-- Verwaltung von Produktkatalogen
+- Produktkatalogverwaltung
 - Produktvergleich
 - Produktsuche und -navigation
 - Produktinformationen
@@ -34,7 +34,7 @@ Die allgemeine E-Commerce-Strategie jedes Unternehmens ist einzigartig und häng
 - Verwaltung von Produktpaketen
 - Promotions
 
-## Überlegungen
+## Betrachtung
 
 - Unterstützung und Empfehlungen zur Produktauswahl
 - Kundenspezifische Preise Produktverfügbarkeit und -bestand
@@ -48,7 +48,7 @@ Die allgemeine E-Commerce-Strategie jedes Unternehmens ist einzigartig und häng
 - Auftragserstellung
 - Warenkorb und Checkout-Marketplace
 - Anführungszeichen zur Bestellkonversion
-- An-/Abmeldedienst
+- Abonnementdienste
 - Online-Bestellung und Zahlungsrechnung online
 - Integrierte Bestellung &quot;NextGen B2B&quot;(z. B. Punchout)
 - Beschaffungs-Workflow und -Integration
@@ -56,7 +56,7 @@ Die allgemeine E-Commerce-Strategie jedes Unternehmens ist einzigartig und häng
 ## Support
 
 - Bestellverwaltungsstatus und -verfolgung
-- Versand- und Versandstatus
+- Versandstatus
 - Rechnungen abrufen (Auftragsverlauf)
 - Neuanordnung mit einem Klick
 - Rückgabeverwaltung

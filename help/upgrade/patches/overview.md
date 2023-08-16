@@ -25,7 +25,7 @@ Wenn das Patch-Programm ausgeführt wird, wird diese Datei gelesen und die angeg
 
 Es gibt drei Arten von Patches:
 
-- **Hotfixes**—Patches, die von Adobe im [Sicherheitszentrum](https://magento.com/security/patches).
+- **Hotfixes**—Patches, die von Adobe auf der [Sicherheitszentrum](https://magento.com/security/patches).
 - **Einzelne Patches**—Patches, die der Adobe Commerce-Support individuell erstellt und verteilt.
 - **Benutzerdefinierte Patches**—Unoffizielle Patches, die Sie aus einem Git-Commit erstellen können.
 
@@ -51,7 +51,7 @@ Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.c
 
 ## Benutzerdefinierte Patches
 
-Manchmal dauert es eine Weile, bis das Adobe Engineering-Team eine Fehlerbehebung für GitHub in eine Adobe Commerce- oder Magento Open Source Composer-Version einbezieht. In der Zwischenzeit können Sie einen Patch von GitHub erstellen und die [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) -Plug-in, um es auf Ihre Composer-basierte Installation anzuwenden.
+Manchmal dauert es eine Weile, bis das Adobe Engineering-Team eine Fehlerbehebung auf GitHub in eine Adobe Commerce- oder Magento Open Source Composer-Version einbezieht. In der Zwischenzeit können Sie einen Patch von GitHub erstellen und die [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) -Plug-in, um es auf Ihre Composer-basierte Installation anzuwenden.
 
 Verwenden Sie die [Befehlszeile](apply.md#command-line) oder [Verfasser](apply.md#composer) , um benutzerdefinierte Patches anzuwenden.
 
@@ -62,7 +62,7 @@ So erstellen Sie einen benutzerdefinierten Patch:
 1. Erstellen Sie eine `patches/composer` in Ihrem lokalen Projekt.
 1. Identifizieren Sie die GitHub-Commit- oder Pull-Anforderung, die für den Patch verwendet werden soll. In diesem Beispiel wird die [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) Commit, verknüpft mit GitHub-Problem [#6474](https://github.com/magento/magento2/issues/6474).
 1. Hängen Sie die `.patch` oder `.diff` Erweiterungen der Commit-URL. Verwendung `.diff` für eine kleinere Dateigröße. Beispiel: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
-1. Speichern Sie die Seite als Datei im `patches/composer` Verzeichnis. Beispiel: `github-issue-6474.diff`.
+1. Speichern Sie die Seite als Datei im `patches/composer` Verzeichnis. Beispiel, `github-issue-6474.diff`.
 1. Datei bearbeiten und entfernen `app/code/<VENDOR>/<PACKAGE>` aus allen Pfaden, sodass sie relativ zum `vendor/<VENDOR>/<PACKAGE>` Verzeichnis.
 
    >[!NOTE]

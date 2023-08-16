@@ -15,7 +15,7 @@ Sie können Nachrichtenwarteschlangen über die Befehlszeile mit Cron-Aufträgen
 
 ## Prozessverwaltung
 
-Cron-Aufträge sind der Standardmechanismus zum Neustart von Verbrauchern. Von `cron` nutzen Sie die angegebene Anzahl von Nachrichten und beenden Sie sie. Wiederholen `cron` startet den Verbraucher neu.
+Cron-Aufträge sind der Standardmechanismus zum Neustart von Verbrauchern. Prozesse, die von `cron` nutzen Sie die angegebene Anzahl von Nachrichten und beenden Sie sie. Wiederholen `cron` startet den Verbraucher neu.
 
 Das folgende Beispiel zeigt die `crontab` Konfiguration für laufende Verbraucher:
 
@@ -33,7 +33,7 @@ Das folgende Beispiel zeigt die `crontab` Konfiguration für laufende Verbrauche
 >
 >Wie oft Sie Nachrichtenwarteschlangen überprüfen, hängt von Ihrer Geschäftslogik und den verfügbaren Systemressourcen ab. Im Allgemeinen möchten Sie möglicherweise öfter nach neuen Kunden suchen und Begrüßungs-E-Mails senden als einen ressourcenintensiveren Prozess, z. B. die Aktualisierung Ihres Katalogs. Sie sollten `cron` Zeitpläne entsprechend Ihren Geschäftsanforderungen.
 >
->Sie kann unter Admin Stores > Einstellungen > Konfiguration > Erweitert > System > Cron-Konfigurationsoptionen für die Gruppe konfiguriert werden: Verbraucher.
+>Die Konfiguration erfolgt über Admin Stores > Einstellungen > Konfiguration > Erweitert > System > Cron-Konfigurationsoptionen für die Gruppe Consumer.
 >
 >Siehe [Cron konfigurieren und ausführen](../cli/configure-cron-jobs.md) Weitere Informationen zur Verwendung von `cron` mit Commerce.
 

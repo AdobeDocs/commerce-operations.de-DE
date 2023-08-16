@@ -17,7 +17,7 @@ So verhindern Sie [Clickjacking](https://owasp.org/www-community/attacks/Clickja
 Die `X-Frame-Options` -Kopfzeile ermöglicht Ihnen anzugeben, ob ein Browser eine Seite in einem `<frame>`, `<iframe>`oder `<object>` wie folgt:
 
 - `DENY`: Seite kann nicht in einem Frame angezeigt werden.
-- `SAMEORIGIN`: (Standard) Die Seite kann nur in einem Frame mit derselben Herkunft wie die Seite selbst angezeigt werden.
+- `SAMEORIGIN`: (Standard) Seite kann nur in einem Frame mit demselben Ursprung wie die Seite selbst angezeigt werden.
 
 >[!WARNING]
 >
@@ -35,7 +35,7 @@ Legen Sie einen Wert für `X-Frame-Options` in `<project-root>/app/etc/env.php`.
 'x-frame-options' => 'SAMEORIGIN',
 ```
 
-Stellen Sie für alle Änderungen am `env.php` zu aktivieren.
+Stellen Sie für alle Änderungen am `env.php` -Datei zu aktivieren.
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Stellen Sie für alle Änderungen am `env.php` zu aktivieren.
 
 ## Überprüfen Sie die Einstellung für `X-Frame-Options`
 
-Um Ihre Einstellung zu überprüfen, zeigen Sie die HTTP-Header auf jeder Storefront-Seite an. Dazu gibt es mehrere Möglichkeiten, einschließlich der Verwendung eines Webbrowser-Inspektors.
+Um Ihre Einstellung zu überprüfen, sehen Sie sich die HTTP-Header auf jeder Storefront-Seite an. Dazu gibt es mehrere Möglichkeiten, einschließlich der Verwendung eines Webbrowser-Inspektors.
 
 Im folgenden Beispiel wird curl verwendet, das Sie von jedem Computer aus ausführen können, der über das HTTP-Protokoll eine Verbindung zu Ihrem Commerce-Server herstellen kann.
 

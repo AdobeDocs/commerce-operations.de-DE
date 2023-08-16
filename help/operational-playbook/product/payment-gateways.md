@@ -20,7 +20,7 @@ Ein Payment Gateway ist ein Dienstleister, der Zahlungen für E-Commerce-Website
 
 ## Prüfanforderungen
 
-Einzelhändler müssen das beste Zahlungsportal auswählen, das ihren Anforderungen entspricht. Auf dem Markt gibt es viele Zahlungstüren, wie Braintree und Stripe, aber bevor Sie sich für ein Zahlungsportal entscheiden, stellen Sie sich die folgenden Fragen:
+Einzelhändler müssen das beste Zahlungsportal auswählen, das ihren Anforderungen entspricht. Es gibt viele Zahlungskanäle auf dem Markt, wie Braintree und Stripe, aber bevor Sie sich für ein Zahlungsportal entscheiden, stellen Sie sich die folgenden Fragen:
 
 - Was ist meine Geschäftsanforderung?
 - Ist es in meinem Haushalt?
@@ -37,7 +37,7 @@ Es gibt einige Einschränkungen bei ZahlungsGateways, die Sie kennen müssen, da
 - Einige Zahlungsoptionen stehen internationalen Käufern möglicherweise nicht zur Verfügung.
 - Sicherheitslücken im Payment Gateway. Kunden zögern aus Sicherheitsgründen, Online-Bestellungen zu tätigen.
 
-Wenn ein Unternehmen beschließt, ein Payment Gateway mit seiner Plattform zu integrieren, ist es immer besser zu sehen, wie es auf der Storefront erscheint, welche Erlebnisse es den Kunden bietet und ob es benutzerfreundlich ist. Stellen Sie außerdem sicher, dass die Sicherheit der Zahlung nicht beeinträchtigt werden kann. Ein gutes, sicheres funktionierendes Zahlungsportal bietet ein besseres Kundenerlebnis.
+Wenn ein Unternehmen beschließt, ein Payment Gateway mit seiner Plattform zu integrieren, ist es immer besser zu sehen, wie es in der Storefront erscheint, welche Erlebnisse es den Kunden bietet und ob es benutzerfreundlich ist. Stellen Sie außerdem sicher, dass die Sicherheit der Zahlung nicht beeinträchtigt werden kann. Ein gutes, sicheres funktionierendes Zahlungsportal bietet ein besseres Kundenerlebnis.
 
 ## Überlegungen zu B2B und B2C
 

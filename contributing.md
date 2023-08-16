@@ -24,9 +24,9 @@ Siehe [Mitarbeiter-Handbuch](https://experienceleague.adobe.com/docs/contributor
 
 Melden Sie zunächst ein Problem. Die vorhandenen Projektverantwortlichen arbeiten daran, einen Konsens über die Projektausrichtung zu erzielen und Problemlösungen innerhalb von Problem-Threads zu erarbeiten (falls zutreffend).
 
-## Lizenzvereinbarung für Mitwirkende
+## Lizenzvereinbarung für Mitarbeiter
 
-Für alle Drittanbieter-Beiträge zu diesem Projekt muss eine unterzeichnete Lizenzvereinbarung für Mitwirkende (Contributor License Agreement, CLA) vorliegen. Dadurch erhält Adobe die Erlaubnis, Ihre Beiträge im Rahmen des Projekts zu veröffentlichen. [Unterschreiben Sie unsere CLA](http://opensource.adobe.com/cla.html). Sie müssen nur einmal eine Adobe-CLA übermitteln. Wenn Sie also bereits eine übermittelt haben, können Sie loslegen!
+Für alle Drittanbieter-Beiträge zu diesem Projekt muss eine unterzeichnete Lizenzvereinbarung für Mitwirkende (Contributor License Agreement, CLA) vorliegen. Dadurch erhält Adobe die Erlaubnis, Ihre Beiträge im Rahmen des Projekts zu veröffentlichen. [Unterschreiben Sie unsere CLA](http://opensource.adobe.com/cla.html). Sie müssen nur einmal eine Adobe CLA einreichen. Wenn Sie also bereits eine eingereicht haben, können Sie loslegen!
 
 ## Codeüberprüfungen
 
@@ -43,4 +43,4 @@ Wir lieben Beiträge von unserer Community! Wenn Sie einen Schritt weiter gehen 
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten nicht über diesen Problem-Tracker gemeldet werden. Stattdessen [ein Problem bei unseren Sicherheitsexperten einreichen](https://helpx.adobe.com/security/alertus.html)
+Sicherheitsprobleme sollten nicht über diesen Problem-Tracker gemeldet werden. stattdessen [ein Problem bei unseren Sicherheitsexperten einreichen](https://helpx.adobe.com/security/alertus.html)

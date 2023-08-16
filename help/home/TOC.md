@@ -1,11 +1,11 @@
 ---
-user-guide-title: Betriebsleitfäden
-user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihrer Adobe Commerce- oder Magento Open Source-Anwendung.
+user-guide-title: Betriebshandbücher
+user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihres Adobe Commerce- oder Magento Open Source-Programms.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: e8b41f25cfd5b707d701016e65db43826a7f26d6
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 

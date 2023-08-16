@@ -1,13 +1,13 @@
 ---
 title: Technische Details
 description: Erfahren Sie mehr über die technischen Details der Pipeline-Bereitstellung, die Arten von Konfigurationen und die empfohlenen Workflows.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+exl-id: a396d241-f895-4414-92af-3abf3511e62a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 0%
 
 ---
-
 
 # Technische Details
 
@@ -38,7 +38,7 @@ Wie das Diagramm zeigt, werden die Konfigurationswerte in der folgenden Reihenfo
 
 Die freigegebene Konfiguration wird in `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte.
 
-Legen Sie die freigegebene Konfiguration in Admin in Ihrer Entwicklung fest (oder Adobe Commerce in der Cloud-Infrastruktur). _Integration_) und schreiben Sie die Konfiguration in `config.php` mithilfe der [`magento app:config:dump` command](../cli/export-configuration.md).
+Legen Sie die freigegebene Konfiguration in Admin in Ihrer Entwicklung fest (oder in Adobe Commerce in der Cloud-Infrastruktur). _Integration_) und schreiben Sie die Konfiguration in `config.php` mithilfe der [`magento app:config:dump` command](../cli/export-configuration.md).
 
 ### Systemspezifische Konfiguration verwalten
 
@@ -59,8 +59,8 @@ Sie können die vertrauliche Konfiguration auf eine der folgenden Arten verwalte
 
 ### In Admin gesperrte Konfigurationseinstellungen
 
-Alle Konfigurationseinstellungen in `config.php` oder `env.php` sind in der Admin gesperrt; Das heißt, diese Einstellungen können nicht im Admin geändert werden.
-Verwenden Sie die [`magento config:set` oder `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) -Befehl zum Ändern der Einstellungen im `config.php` oder `env.php` Dateien.
+Alle Konfigurationseinstellungen in `config.php` oder `env.php` in Admin gesperrt sind, d. h. diese Einstellungen können nicht im Admin geändert werden.
+Verwenden Sie die [`magento config:set` oder `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) -Befehl zum Ändern der Einstellungen im `config.php` oder `env.php` -Dateien.
 
 ## Der Commerce-Administrator
 
@@ -76,15 +76,15 @@ Der Administrator weist im Produktionsmodus folgendes Verhalten auf:
    - Wie zuvor erläutert, werden alle Konfigurationseinstellungen in `config.php` oder `env.php` ist gesperrt und kann nicht in Admin bearbeitet werden.
    - Sie können das Gebietsschema &quot;Admin&quot;nur in Sprachen ändern, die von bereitgestellten Designs verwendet werden
 
-      Die folgende Abbildung zeigt ein Beispiel der **Kontoeinstellungen** > **Gebietsschema der Benutzeroberfläche** Liste im Admin mit nur zwei bereitgestellten Gebietsschemas:
+     Die folgende Abbildung zeigt ein Beispiel der **Kontoeinstellungen** > **Gebietsschema der Benutzeroberfläche** Liste im Admin mit nur zwei bereitgestellten Gebietsschemas:
 
-      ![Sie können das Admin-Gebietsschema nur in bereitgestellte Gebietsschemata ändern](../../assets/configuration/split-deploy-admin-locale.png)
+     ![Sie können das Admin-Gebietsschema nur in bereitgestellte Gebietsschemata ändern](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Mit dem Admin können Sie die Gebietsschemakonfigurationen für keinen Bereich ändern.
 
-   Es wird empfohlen, diese Änderungen vorzunehmen, bevor Sie in den Produktionsmodus wechseln.
+  Es wird empfohlen, diese Änderungen vorzunehmen, bevor Sie in den Produktionsmodus wechseln.
 
-   Sie können das Gebietsschema weiterhin mit Umgebungsvariablen oder der `config:set` CLI-Befehl mit dem Pfad `general/locale/code`.
+  Sie können das Gebietsschema weiterhin mit Umgebungsvariablen oder der `config:set` CLI-Befehl mit dem Pfad `general/locale/code`.
 
 ## Installieren und Entfernen von Cron
 
@@ -110,10 +110,10 @@ Auf Ihrem Entwicklungssystem:
 
 1. Verwenden Sie die `magento app:config:dump` -Befehl, um die Konfiguration in das Dateisystem zu schreiben.
 
-   - `app/etc/config.php` ist die freigegebene Konfiguration, die alle Einstellungen enthält _Ausnahme_ vertrauliche und systemspezifische Einstellungen. Diese Datei sollte sich in der Quell-Code-Verwaltung befinden.
+   - `app/etc/config.php` ist die freigegebene Konfiguration, die alle Einstellungen enthält _Außer_ vertrauliche und systemspezifische Einstellungen. Diese Datei sollte sich in der Quell-Code-Verwaltung befinden.
    - `app/etc/env.php` ist die systemspezifische Konfiguration, die Einstellungen enthält, die für ein bestimmtes System eindeutig sind (z. B. Hostnamen und Portnummern). Diese Datei sollte _not_ sich in der Quell-Code-Verwaltung befinden.
 
-1. Fügen Sie den geänderten Code und die freigegebene Konfiguration der Quell-Code-Verwaltung hinzu.
+1. Fügen Sie den modifizierten Code und die freigegebene Konfiguration zur Quell-Code-Verwaltung hinzu.
 
 1. Führen Sie die folgenden Befehle aus, um während der Entwicklung generierten PHP-Code und statische Asset-Dateien zu entfernen:
 
@@ -131,7 +131,7 @@ Nachdem Sie die Befehle zum Löschen der Assets ausgeführt haben, generiert Com
 
 ### Build-System
 
-Das Build-System kompiliert Code und generiert statische Ansichtsdateien für Designs, die in Commerce registriert sind. Es ist keine Verbindung zur Commerce-Datenbank erforderlich. Es benötigt nur die Commerce-Codebase.
+Das Build-System kompiliert Code und generiert statische Ansichtsdateien für Designs, die in Commerce registriert sind. Es ist keine Verbindung zur Commerce-Datenbank erforderlich, sondern nur die Commerce-Codebase.
 
 Auf Ihrem Build-System:
 
@@ -150,7 +150,7 @@ Auf Ihrem Produktionssystem (d. h. Ihrem Live Store) rufen Sie generierte Assets
 
 In Ihrem Produktionssystem:
 
-1. Starten Sie den Wartungsmodus.
+1. Wartungsmodus starten
 1. Rufen Sie Code- und Konfigurationsaktualisierungen aus der Quell-Code-Verwaltung ab.
 1. Wenn Sie Adobe Commerce verwenden, beenden Sie die Warteschlangenarbeiter.
 1. Verwenden Sie die `magento app:config:import` -Befehl, um Konfigurationsänderungen in das Produktionssystem zu importieren.
@@ -167,7 +167,7 @@ Wir stellen die folgenden Befehle bereit, um Sie bei der Verwaltung der Konfigur
 - [`magento app:config:dump`](../cli/export-configuration.md) , um Admin-Konfigurationseinstellungen in `config.php` und `env.php` (außer bei sensiblen Einstellungen)
 - [`magento config:set`](../cli/set-configuration-values.md) , um die Werte systemspezifischer Einstellungen im Produktionssystem festzulegen.
 
-   Verwenden Sie das optionale `--lock` Option zum Sperren der Option in Admin (d. h., die Einstellung kann nicht bearbeitet werden). Wenn eine Einstellung bereits gesperrt ist, verwenden Sie die `--lock` -Option, um die Einstellung zu ändern.
+  Verwenden Sie das optionale `--lock` Option zum Sperren der Option in Admin (d. h., die Einstellung kann nicht bearbeitet werden). Wenn eine Einstellung bereits gesperrt ist, verwenden Sie die `--lock` -Option, um die Einstellung zu ändern.
 
 - [`magento config:sensitive:set`](../cli/set-configuration-values.md) , um die Werte der sensiblen Einstellungen im Produktionssystem festzulegen.
 - [`magento app:config:import`](../cli/import-configuration.md) um Konfigurationsänderungen aus zu importieren `config.php` und `env.php` in das Produktionssystem.
@@ -178,7 +178,7 @@ In diesem Abschnitt finden Sie Beispiele für die Verwaltung der Konfiguration, 
 
 ### Standardgebietsschema ändern
 
-Dieser Abschnitt zeigt die Änderung an `config.php` wenn Sie die Standardgewichtseinheit mithilfe des Administrators (**Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein** > **Gebietsschemaoptionen**).
+Dieser Abschnitt zeigt die Änderung an `config.php` wenn Sie die Standardgewichtseinheit mithilfe des Administrators ändern (**Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein** > **Gebietsschemaoptionen**).
 
 Nachdem Sie die Änderung im Admin vorgenommen haben, führen Sie `bin/magento app:config:dump` , um den Wert in `config.php`. Der Wert wird in die `general` Array unter `locale` als folgendes Snippet aus `config.php` zeigt an:
 
@@ -202,7 +202,7 @@ In diesem Abschnitt werden die folgenden Konfigurationsänderungen besprochen:
 - Standardmäßige E-Mail-Domain ändern (**Stores** > Einstellungen > **Konfiguration** > Kunden > **Kundenkonfiguration**)
 - PayPal API-Benutzername und -API-Kennwort festlegen (**Stores** > Einstellungen > **Konfiguration** > Vertrieb > **Zahlungsmethoden** > **PayPal** > **Erforderliche PayPal-Einstellungen**)
 
-Nachdem Sie die Änderung im Admin vorgenommen haben, führen Sie `bin/magento app:config:dump` auf Ihrem Entwicklungssystem. Diesmal werden nicht alle Ihre Änderungen in `config.php`; Tatsächlich werden nur die Website-, Store- und Store-Ansicht in diese Datei geschrieben, wie die folgenden Snippets zeigen.
+Nachdem Sie die Änderung im Admin vorgenommen haben, führen Sie `bin/magento app:config:dump` auf Ihrem Entwicklungssystem. Diesmal werden nicht alle Ihre Änderungen in `config.php`; tatsächlich werden nur die Website-, Store- und Store-Ansicht in diese Datei geschrieben, wie die folgenden Snippets zeigen.
 
 ### config.php
 
@@ -285,7 +285,7 @@ Nachdem Sie die Änderung im Admin vorgenommen haben, führen Sie `bin/magento a
 
 Die standardmäßige systemspezifische Konfigurationseinstellung der E-Mail-Domain wird in `app/etc/env.php`.
 
-Die PayPal-Einstellungen werden in keine der beiden Dateien geschrieben, da die `bin/magento app:config:dump` -Befehl schreibt keine sensiblen Einstellungen. Sie müssen die PayPal-Einstellungen im Produktionssystem mit den folgenden Befehlen festlegen:
+Die PayPal-Einstellungen werden in beide Dateien geschrieben, da die `bin/magento app:config:dump` -Befehl schreibt keine sensiblen Einstellungen. Sie müssen die PayPal-Einstellungen im Produktionssystem mit den folgenden Befehlen festlegen:
 
 ```bash
 bin/magento config:sensitive:set paypal/wpp/api_username <username>

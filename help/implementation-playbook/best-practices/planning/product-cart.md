@@ -44,7 +44,7 @@ Verwenden Sie die folgenden Strategien, um die Anzahl der Artikel im Warenkorb z
 Wenn Sie mehr als die empfohlene maximale Anzahl von Produkten im Warenkorb haben, kann sich dies auf die Site-Leistung wie folgt auswirken:
 
 - Erhöhte Reaktionszeit für Datenabruffunktionen, Validierung von Warenkorbelementen, Überprüfung der Anwendung von Preisregeln sowie Steuer- und Gesamtberechnungen.
-- Erhöhte Reaktionszeit für Minicart-Rendering, einschließlich Rendering von Warenkorbansichten, Checkout-Fluss und Ausführung.
+- Verbesserte Reaktionszeit für Minicart-Rendering, einschließlich Darstellung von Warenkorbansichten, Checkout-Fluss und Ausführung.
 - Erhöhte Ladezeit für alle Seiten der Site, auf denen das Minicart vorhanden ist.
 
 ## Zusätzliche Informationen

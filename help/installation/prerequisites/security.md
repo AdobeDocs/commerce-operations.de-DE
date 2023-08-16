@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe hat keine Empfehlung zur Verwendung von SELinux. Sie können sie bei Bedarf für eine höhere Sicherheit verwenden. Wenn Sie SELinux verwenden, müssen Sie es ordnungsgemäß konfigurieren, oder die Adobe Commerce und Magento Open Source können unvorhersehbar funktionieren. Wenn Sie sich für die Verwendung von SELinux entscheiden, konsultieren Sie eine Ressource wie die [CentOS-Wiki](https://wiki.centos.org/HowTos/SELinux) , um Regeln für die Aktivierung der Kommunikation festzulegen.
+>Adobe hat keine Empfehlung zur Verwendung von SELinux; Sie können es für eine höhere Sicherheit verwenden, wenn Sie möchten. Wenn Sie SELinux verwenden, müssen Sie es ordnungsgemäß konfigurieren, oder die Adobe Commerce und Magento Open Source können unvorhersehbar funktionieren. Wenn Sie SELinux verwenden, konsultieren Sie eine Ressource wie die [CentOS-Wiki](https://wiki.centos.org/HowTos/SELinux) , um Regeln für die Aktivierung der Kommunikation festzulegen.
 
 ## Vorschläge für die Installation mit Apache
 
@@ -42,7 +42,7 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
-Die vorherigen Befehle funktionieren nur mit dem Apache-Webserver. Aufgrund der unterschiedlichen Konfigurationen und Sicherheitsanforderungen garantieren wir nicht, dass diese Befehle in allen Situationen funktionieren. Weitere Informationen finden Sie unter:
+Die vorherigen Befehle funktionieren nur mit dem Apache-Webserver. Aufgrund der unterschiedlichen Konfigurationen und Sicherheitsanforderungen garantieren wir nicht, dass diese Befehle in allen Situationen funktionieren. Weitere Informationen finden Sie unter
 
 * [Manpage](https://linux.die.net/man/8/httpd_selinux)
 * [Server-Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
@@ -65,7 +65,7 @@ So aktivieren Sie Apache, um eine Verbindung zu einem anderen Host mit aktiviert
 
 ## Öffnen von Ports in Ihrer Firewall
 
-Je nach Ihren Sicherheitsanforderungen kann es erforderlich sein, Port 80 und andere Ports in Ihrer Firewall zu öffnen. Aufgrund der Sensibilität der Netzwerksicherheit empfiehlt Adobe dringend, sich mit Ihrer IT-Abteilung in Verbindung zu setzen, bevor Sie fortfahren. Im Folgenden finden Sie einige empfohlene Verweise:
+Je nach Ihren Sicherheitsanforderungen kann es erforderlich sein, Port 80 und andere Ports in Ihrer Firewall zu öffnen. Aufgrund der sensiblen Eigenschaften der Netzwerksicherheit empfiehlt Adobe dringend, sich mit Ihrer IT-Abteilung in Verbindung zu setzen, bevor Sie fortfahren. Im Folgenden finden Sie einige empfohlene Verweise:
 
 * Ubuntu: [Ubuntu-Dokumentationsseite](https://help.ubuntu.com/community/IptablesHowTo)
 * CentOS: [CentOS-Anleitung](https://wiki.centos.org/HowTos/Network/IPTables).

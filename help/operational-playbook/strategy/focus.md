@@ -1,13 +1,13 @@
 ---
 title: Fokus
 description: Definieren Sie grundlegende Metriken, damit Sie datengesteuerte Entscheidungen treffen können.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5b946cce-25cd-4a69-b565-235acb16cad4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Allgemeine Commerce-Metriken
 

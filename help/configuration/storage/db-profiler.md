@@ -2,11 +2,11 @@
 title: Datenbank-Profiler konfigurieren
 description: Sehen Sie sich ein Beispiel für die Konfiguration der Ausgabe für den Datenbank-Profiler an.
 feature: Configuration, Storage
-badge: label="Contributated by Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+badge: label="Verfasst von Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -55,12 +55,12 @@ Ein Beispiel:
 
 ## Schritt 2: Ausgabe konfigurieren
 
-Konfigurieren Sie die Ausgabe in der Bootstrap-Datei Ihrer Commerce-Anwendung. dies `<magento_root>/pub/index.php` oder sich in einer virtuellen Host-Konfiguration des Webservers befinden.
+Konfigurieren Sie die Ausgabe in der Bootstrap-Datei Ihrer Commerce-Anwendung. Dies kann `<magento_root>/pub/index.php` oder sich in einer virtuellen Host-Konfiguration des Webservers befinden.
 
 Im folgenden Beispiel werden die Ergebnisse in einer Tabelle mit drei Spalten angezeigt:
 
 - Gesamtzeit (zeigt die Gesamtdauer an, die zum Ausführen aller Abfragen auf der Seite erforderlich ist)
-- SQL (zeigt alle SQL-Abfragen an; Die Kopfzeile der Zeile zeigt die Anzahl der Abfragen an)
+- SQL (zeigt alle SQL-Abfragen an; der Zeilenheader zeigt die Anzahl der Abfragen an)
 - Abfrageparameter (zeigt die Parameter für jede SQL-Abfrage an)
 
 Um die Ausgabe zu konfigurieren, fügen Sie Folgendes nach dem `$bootstrap->run($app);` in Ihrer Bootstrap-Datei:
@@ -89,6 +89,6 @@ echo "</table>";
 
 ## Schritt 3: Ergebnisse anzeigen
 
-Navigieren Sie zu einer beliebigen Seite in Ihrer Storefront oder in Ihrem Administrator, um die Ergebnisse anzuzeigen. Beispiel:
+Navigieren Sie zu einer beliebigen Seite in Ihrer Storefront oder in Ihrem Administrator, um die Ergebnisse anzuzeigen. Ein Beispiel:
 
 ![Beispiele für Datenbank-Profilergebnisse](../../assets/configuration/db-profiler-results.png)

@@ -26,13 +26,13 @@ Um die Commerce-Anwendung auszuführen, werden die folgenden Aktionen in impleme
 1. Initialisiert den Fehler-Handler.
 1. Erstellt die [Objektmanager][object] und allgemeine gemeinsame Dienste, die überall verwendet werden und von der Umgebung betroffen sind. Die Umgebungsparameter werden ordnungsgemäß in diese Objekte eingefügt.
 1. Stellt fest, dass der Wartungsmodus _not_ aktiviert; andernfalls wird beendet.
-1. Stellt sicher, dass die Commerce-Anwendung installiert ist; andernfalls wird beendet.
+1. Stellt sicher, dass die Commerce-Anwendung installiert ist, andernfalls wird beendet.
 1. Startet die Commerce-Anwendung.
 
    Jede nicht abgefangene Ausnahme während des Anwendungsstarts wird automatisch an Commerce im Abschnitt `catchException()` -Methode, die Sie zur Verarbeitung der Ausnahme verwenden können. Letztere müssen entweder `true` oder `false`:
 
-   - Wenn `true`: Der Handel hat Ausnahmefehler erfolgreich gehandhabt. Es ist nicht notwendig, etwas Anderes zu tun.
-   - Wenn `false`: (oder ein anderes leeres Ergebnis) Commerce hat die Ausnahme nicht behandelt. Das Bootstrap-Objekt führt die standardmäßige UnterRoutine für die Ausnahmebehandlung aus.
+   - Wenn `true`: Commerce hat Ausnahmefehler erfolgreich verarbeitet. Es ist nicht notwendig, etwas Anderes zu tun.
+   - Wenn `false`: (oder ein anderes leeres Ergebnis) Commerce hat die Ausnahme nicht verarbeitet. Das Bootstrap-Objekt führt die standardmäßige UnterRoutine für die Ausnahmebehandlung aus.
 
 1. Sendet die Antwort, die vom Anwendungsobjekt bereitgestellt wird.
 
@@ -62,7 +62,7 @@ Um die Commerce-Anwendung auszuführen, werden die folgenden Aktionen in impleme
 Das bootstrap -Objekt gibt an, wie die Commerce-Anwendung nicht abgefangene Ausnahmen wie folgt handhabt:
 
 - In [Entwicklermodus](../bootstrap/application-modes.md#developer-mode), zeigt die Ausnahme unverändert an.
-- In jedem anderen Modus versucht, eine Ausnahme zu protokollieren und eine allgemeine Fehlermeldung anzuzeigen.
+- In jedem anderen Modus versucht, Ausnahmefehler zu protokollieren und eine allgemeine Fehlermeldung anzuzeigen.
 - Beendet Commerce mit Fehlercode `1`
 
 ## Einstiegspunktanwendungen
@@ -76,7 +76,7 @@ Wir verfügen über die folgenden Einstiegspunktanwendungen (d. h. von Commerce 
 1. Bestimmt die [Anwendungsgebiet](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 1. Startet die Front-Controller- und Routing-Systeme, um eine Controller-Aktion zu finden und auszuführen.
 1. Verwendet ein HTTP-Antwortobjekt, um ein Ergebnis zurückzugeben, das von der Controller-Aktion abgerufen wurde.
-1. Umgang mit Fehlern (in der folgenden Prioritätsreihenfolge):
+1. Fehlerbehandlung (in der folgenden Prioritätsreihenfolge):
 
    1. Wenn Sie [Entwicklermodus](../bootstrap/application-modes.md#developer-mode):
       - Wenn die Commerce-Anwendung nicht installiert ist, führen Sie eine Umleitung zum Einrichtungs-Assistenten durch.
@@ -101,7 +101,7 @@ Wenn die Anfrage an den Einstiegspunkt umgeleitet wird, analysiert die Commerce-
 - In [Entwickler](application-modes.md#developer-mode) -Modus wird der Inhalt der Datei zurückgegeben, sodass der zurückgegebene Inhalt bei jeder Anforderung der Ressource auf dem neuesten Stand ist.
 - In [default](application-modes.md#default-mode) -Modus wird die abgerufene Ressource veröffentlicht, sodass sie über die zuvor angeforderte URL zugänglich ist.
 
-   Alle zukünftigen Anforderungen für die statische Ressource werden vom Server genauso verarbeitet wie statische Dateien. das heißt, ohne den Einstiegspunkt einzubeziehen. Wenn es erforderlich ist, veröffentlichte Dateien mit Original-Dateien zu synchronisieren, wird die `pub/static` -Verzeichnis entfernt werden; Daher werden Dateien mit der nächsten Anfrage automatisch erneut veröffentlicht.
+  Alle zukünftigen Anforderungen für die statische Ressource werden vom Server genauso verarbeitet wie statische Dateien, d. h. ohne den Einstiegspunkt zu berücksichtigen. Wenn es erforderlich ist, veröffentlichte Dateien mit Original-Dateien zu synchronisieren, wird die `pub/static` -Ordner entfernt werden. Daher werden Dateien automatisch mit der nächsten Anfrage erneut veröffentlicht.
 
 ### Einstiegspunkt für Medienressourcen
 

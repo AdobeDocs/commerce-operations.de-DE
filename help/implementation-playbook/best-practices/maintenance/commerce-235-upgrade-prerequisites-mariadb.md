@@ -23,7 +23,7 @@ Adobe Commerce auf Cloud-Infrastruktur mit MariaDB-Version 10.3 oder früher.
 
 ## Vorbereiten Ihrer Datenbank auf die Aktualisierung
 
-Bereiten Sie Ihre Datenbank vor Beginn des Aktualisierungsprozesses durch Konvertieren Ihrer Datenbanktabellen vor:
+Bevor das Adobe Commerce-Supportteam mit dem Upgrade-Prozess beginnt, bereiten Sie Ihre Datenbank vor, indem Sie Ihre Datenbanktabellen konvertieren:
 
 - Konvertieren des Zeilenformats aus `COMPACT` nach `DYNAMIC`
 - Ändern Sie die Speicher-Engine von `MyISAM` nach `InnoDB`
@@ -46,7 +46,7 @@ Sie können Tabellen auf einem Knoten im Cluster konvertieren. Die Änderungen w
 
 1. Melden Sie sich bei MariaDB an.
 
-1. Identifizieren Sie Tabellen, die von einem kompakten in ein dynamisches Format konvertiert werden sollen.
+1. Identifizieren Sie Tabellen, die vom kompakten in das dynamische Format konvertiert werden sollen.
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';

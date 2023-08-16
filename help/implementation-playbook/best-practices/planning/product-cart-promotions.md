@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Best Practices zum Konfigurieren von Promotions
 
-Um eine optimale Leistung zu erzielen, befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in einem Warenkorb zu konfigurieren:
+Befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in einem Warenkorb zu konfigurieren:
 
-- **Verkaufsregeln (Regeln für Warenkorbpreise)**-Konfigurieren Sie nicht mehr als 1000 Warenkorbpreisregeln für alle Websites.
+- **Verkaufsregeln (Regeln für den Warenkorbpreis)**-Konfigurieren Sie nicht mehr als 1000 Warenkorbpreisregeln für alle Websites.
    - Nicht verwendete Regeln verwalten und entfernen
    - Fügen Sie strenge Regelbedingungen (wie Attribut- oder Kategoriefilter) hinzu, um eine optimale Übereinstimmung zu erzielen.
 - **Coupons**—

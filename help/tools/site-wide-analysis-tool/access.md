@@ -24,7 +24,7 @@ Die [!DNL Site-Wide Analysis Tool] -Dienst verfügbar unter [Produktionsmodus](h
 ![Dashboard für Site-weite Analysen](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]Dashboard*
 
-## Option 1: Anmelden bei Ihrer [!DNL Site-Wide Analysis Tool Dashboard] direkt aus dem [!DNL Site-Wide Analysis Tool] Domäne (nur für Adobe Commerce auf Cloud-Infrastruktur)
+## Option 1: Anmeldung bei Ihrer [!DNL Site-Wide Analysis Tool Dashboard] direkt aus dem [!DNL Site-Wide Analysis Tool] Domäne (nur für Adobe Commerce auf Cloud-Infrastruktur)
 
 Ein **[!DNL Adobe ID]ist erforderlich** für den Zugriff auf [!DNL Commerce] -Konto.
 Wenn Sie bereits über eine [!DNL Commerce] -Konto, Sie haben jedoch keine [!DNL Adobe ID], können Sie eine während des Anmeldeprozesses erstellen.
@@ -41,7 +41,7 @@ Wenn Sie bereits über eine [!DNL Commerce] -Konto, Sie haben jedoch keine [!DNL
 1. **<u>Hinweis</u>:** Ihr Konto sollte berechtigt sein, **[!DNL Support Permissions]** für den Zugriff [!DNL Site-Wide Analysis Tool Dashboard].
 Weitere Informationen finden Sie unter [Freigeben von [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in unserem Benutzerhandbuch.
 
-## Option 2: Anmelden bei Ihrer [!DNL Site-Wide Analysis Tool Dashboard] aus dem Geschäft [!DNL Admin Panel]
+## Option 2: Anmeldung bei Ihrer [!DNL Site-Wide Analysis Tool Dashboard] aus dem Geschäft [!DNL Admin Panel]
 
 ### Schritt 1: Berechtigungen überprüfen
 
@@ -51,7 +51,7 @@ Stellen Sie sicher, dass [!DNL Admin] Das Benutzerkonto hat Zugriff auf die [!DN
 >
 >Die [!DNL Site-Wide Analysis Tool] Benutzerressource (Berechtigung) ist **not** automatisch zugewiesen. Sie MUSS für die Benutzerrolle und die Rolle aktiviert werden, die jedem Benutzerkonto im [!UICONTROL Admin].
 
-Für die benutzerdefinierte Rolle, die benötigt wird [!DNL Site-Wide Analysis Tool] -Zugriff verwenden, führen Sie folgende Schritte aus:
+Für die benutzerdefinierte Rolle [!DNL Site-Wide Analysis Tool] -Zugriff verwenden, führen Sie folgende Schritte aus:
 
 1. Wählen Sie die **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]** Rolle.
 
@@ -71,9 +71,9 @@ Für die benutzerdefinierte Rolle, die benötigt wird [!DNL Site-Wide Analysis T
 1. Im *[!UICONTROL Admin]* Seitenleiste, navigieren Sie zu **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**.
 
    ![Dashboard für Site-weite Analysen](../../assets/tools/ac-admin-panel-marked.jpg)
-   *[!DNL Site-Wide Analysis Tool]im [!DNL Admin Panel] in Adobe Commerce*
+   *[!DNL Site-Wide Analysis Tool]-Position im [!DNL Admin Panel] in Adobe Commerce*
 
-1. Lesen Sie die *Nutzungsbedingungen* für [!DNL Site-Wide Analysis Tool] und klicken Sie auf **[!UICONTROL Accept]** , um fortzufahren.
+1. Lesen Sie die *Nutzungsbedingungen* für die [!DNL Site-Wide Analysis Tool] und klicken **[!UICONTROL Accept]** , um fortzufahren.
 
    Jeder Benutzer muss die Nutzungsbedingungen für die Sitzung akzeptieren. Dieser Schritt wird für jede angemeldete Sitzung wiederholt.
 
@@ -85,9 +85,9 @@ Für die benutzerdefinierte Rolle, die benötigt wird [!DNL Site-Wide Analysis T
 
 ## Erstellen Sie Berichte aus dem [!DNL Site-Wide Analysis Tool Dashboard]
 
-1. Klicken Sie in der rechten oberen Ecke des Dashboards auf **[!UICONTROL Generate Report]**.
+1. Klicken Sie oben rechts im Dashboard auf **[!UICONTROL Generate Report]**.
 
-1. Aktivieren Sie für jede **[!UICONTROL Type]** und **[!UICONTROL Priority]** festlegen, die Sie in den Bericht aufnehmen möchten.
+1. Aktivieren Sie das Kontrollkästchen für jede **[!UICONTROL Type]** und **[!UICONTROL Priority]** festlegen, die Sie in den Bericht aufnehmen möchten.
 
 1. Klicken **[!UICONTROL Generate Report]**.
 

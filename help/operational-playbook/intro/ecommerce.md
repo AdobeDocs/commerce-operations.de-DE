@@ -1,13 +1,13 @@
 ---
 title: Was ist E-Commerce?
 description: Beschreibung des E-Commerce
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # Was ist E-Commerce?
 
@@ -22,7 +22,7 @@ Hier finden Sie eine kurze Zusammenfassung der Arten von E-Commerce-Geschäften,
 Hier finden Sie die verschiedenen E-Commerce-Geschäftsmodelle:
 
 - B2B (Business-to-Business)
-- B2C (Business-to-Consumer)
+- B2C
 - Consumer-to-Consumer (C2C)
 - Consumer-to-Business (C2B)
 
@@ -47,7 +47,7 @@ E-Commerce ermöglicht es den Menschen, die Türen ihrer eigenen virtuellen Stor
 
 ### Vorteile
 
-- Der E-Commerce-Aufwand ist im Vergleich zu Steinen und Mörtel gering
+- Der E-Commerce-Overhead ist im Vergleich zu Steinen und Mörtel gering
 - Online-Stores sind rund um die Uhr geöffnet
 - Der Kauf ist unmittelbar
 - Personalisierung und benutzerspezifische Erlebnisse
@@ -55,7 +55,7 @@ E-Commerce ermöglicht es den Menschen, die Türen ihrer eigenen virtuellen Stor
 
 ### Nachteile
 
-- Online-Wettbewerb ist heftig
+- Online-Wettbewerb ist hart
 - Versand kann unvorhersehbar sein
 
 Die Vorteile überwiegen die Nachteile, weshalb Markt, Einzelhändler und Handelseinnahmen rasch steigen.

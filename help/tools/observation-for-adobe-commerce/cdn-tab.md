@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL CDN] tab
-description: Erfahren Sie mehr über die [!UICONTROL CDN] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL CDN] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Die [!UICONTROL CDN] tab
 
-Diese Registerkarte enthält Informationen, die sich auf die [!DNL content delivery network (CDN)]. Im Fall von Adobe Commerce Cloud ist dies die [!DNL Fastly] Dienst.
+Diese Registerkarte enthält Informationen, die sich auf die [!DNL content delivery network (CDN)]. Im Fall von Adobe Commerce Cloud ist dies die [!DNL Fastly] -Dienst.
 
 ## [!UICONTROL HIT rate]
 
@@ -38,7 +38,7 @@ Diese **[!UICONTROL MISS rate]** zeigt die Anzahl an Fehlern zwischenspeicherbar
 
 ## [!UICONTROL HIT Ratio]
 
-![Trefferverhältnis](../../assets/tools/observation-for-adobe-commerce/cdn-tab-5.png)
+![HIT-Verhältnis](../../assets/tools/observation-for-adobe-commerce/cdn-tab-5.png)
 
 ## [!UICONTROL Error Percentage]
 
@@ -128,4 +128,4 @@ Die **[!UICONTROL Duration by Response status, top 25 client IP, non 200 status]
 
 ![IP-Häufigkeit](../../assets/tools/observation-for-adobe-commerce/cdn-tab-22.jpeg)
 
-Die **[!UICONTROL IP Frequency]** frame zählt die Status (&#39;MISS&#39; und &#39;PASS&#39;) für jede IP aus der [!DNL Fastly] Protokolle. Webanfragen mit diesen Status erreichen den Herkunftsserver und fügen dem Server Ladevorgänge hinzu. Er zeigt die zwanzig häufigsten Adressen in der Häufigkeit. Dieser Frame kann verwendet werden, um IP-Angriffe oder Quellen hoher Belastung auf einer Website zu erkennen. Dieses Diagramm ist auch auf der Registerkarte &quot;Zusammenfassung&quot;vorhanden und wird hier platziert, um einen einfachen Vergleich mit weiteren Details zum [!DNL Fastly] Protokollinformationen, die auf dieser Registerkarte angezeigt werden.
+Die **[!UICONTROL IP Frequency]** frame zählt die Status (&#39;MISS&#39; und &#39;PASS&#39;) für jede IP aus der [!DNL Fastly] Protokolle. Webanfragen mit diesen Status erreichen den Herkunftsserver und fügen dem Server Ladevorgänge hinzu. Er zeigt die zwanzig häufigsten Adressen in der Häufigkeit. Dieser Frame kann verwendet werden, um IP-Angriffe oder Quellen hoher Belastung auf einer Website zu erkennen. Dieses Diagramm ist auch auf der Registerkarte &quot;Zusammenfassung&quot;vorhanden und wird hier platziert, um einen einfachen Vergleich mit weiteren Details zum [!DNL Fastly] auf dieser Registerkarte angezeigte Protokollinformationen.

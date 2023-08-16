@@ -1,6 +1,6 @@
 ---
 title: Die [!DNL WAF] tab
-description: Erfahren Sie mehr über die [!DNL WAF] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!DNL WAF] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: e36986d7-d903-4154-bb09-6962b99ae35f
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Die [!DNL WAF] tab
 
-Die **[!DNL WAF]** -Tab zeigt Traffic an, der von der [!DNL firewall].
+Die **[!DNL WAF]** zeigt Traffic an, der von der [!DNL firewall].
 
 ## [!DNL WAF traffic summary]
 

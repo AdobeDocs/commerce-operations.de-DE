@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [Varnish Cache] ist ein Open-Source-Beschleuniger für Webanwendungen (auch als _HTTP-Beschleuniger_ oder _Zwischenspeichern von HTTP-Reverse-Proxy_). Variabel speichert (oder speichert) Dateien oder Dateifragmente im Speicher, was es Varnish ermöglicht, die Antwortzeit und den Verbrauch an Netzwerkbandbreite bei zukünftigen, äquivalenten Anforderungen zu reduzieren. Im Gegensatz zu Webservern wie Apache und Nginx wurde Varnish ausschließlich für die Verwendung mit dem HTTP-Protokoll entwickelt.
 
-Commerce 2.4.2 wird mit Version 6.4 getestet. Commerce 2.4.x ist mit Varnish 6.x kompatibel.
+Commerce 2.4.2 wird mit Version 6.4 getestet. Commerce 2.4.x ist mit Version 6.x kompatibel.
 
 >[!WARNING]
 >
@@ -52,9 +52,10 @@ Der Prozess kann wie folgt zusammengefasst werden:
    Wenn nichts in Ihrer `<magento_root>/var/page_cache` Verzeichnis, haben Sie Varnish erfolgreich mit Commerce konfiguriert!
 
 >[!NOTE]
-- Sofern nicht angegeben, müssen Sie alle in diesem Thema behandelten Befehle als Benutzer mit `root` Berechtigungen.
-- Dieses Thema wurde für Varnish unter CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, können einige Befehle unterschiedlich sein. Weitere Informationen finden Sie in der Dokumentation zu Varnish .
-
+>
+- Sofern nicht angegeben, müssen Sie alle in diesem Thema behandelten Befehle als Benutzer mit `root` -Berechtigungen.
+>
+- Dieses Thema wurde für Varnish auf CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, können einige Befehle unterschiedlich sein. Weitere Informationen finden Sie in der Dokumentation zu Varnish .
 
 ## Bekannte Probleme
 
@@ -62,43 +63,44 @@ Wir kennen die folgenden Probleme mit Varnish:
 
 - [Varnish unterstützt SSL nicht]
 
-   Verwenden Sie alternativ SSL-Terminierung oder einen SSL-Terminierungsproxy.
+  Verwenden Sie alternativ SSL-Terminierung oder einen SSL-Terminierungsproxy.
 
 - Wenn Sie den Inhalt der `<magento_root>/var/cache` Verzeichnis, müssen Sie Varnish neu starten.
 
 - Mögliche Fehler bei der Installation von Commerce:
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   Wenn dieser Fehler auftritt, bearbeiten Sie `default.vcl` und fügen Sie dem `backend` Stanza wie folgt:
+  Wenn dieser Fehler auftritt, bearbeiten Sie `default.vcl` und fügen Sie dem `backend` Stanza wie folgt:
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## Übersicht über die Zwischenspeicherung in verschiedenen Sprachen
 
 Die Varnish-Zwischenspeicherung funktioniert mit Commerce mithilfe von:
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) aus dem Magento 2-GitHub-Repository
-- `.htaccess` verteilte Konfigurationsdatei für Apache, die mit Commerce bereitgestellt wird
-- `default.vcl` Konfiguration der mithilfe der [Admin](../cache/configure-varnish-commerce.md)
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) aus dem Magento 2 GitHub-Repository
+- `.htaccess` verteilte Konfigurationsdatei für Apache mit Commerce
+- `default.vcl` Konfiguration der mithilfe der Variablen [Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
-Dieses Thema behandelt nur die Standardoptionen in der vorherigen Liste. Es gibt viele andere Möglichkeiten, die Zwischenspeicherung in komplexen Szenarien zu konfigurieren (z. B. mithilfe eines Content Delivery Network). diese Methoden über den Rahmen dieses Leitfadens hinausgehen.
+>
+Dieses Thema behandelt nur die Standardoptionen in der vorherigen Liste. Es gibt viele andere Möglichkeiten, die Zwischenspeicherung in komplexen Szenarien zu konfigurieren (z. B. mithilfe eines Content Delivery Network). Diese Methoden werden nicht in dieses Handbuch einbezogen.
 
 Bei der ersten Browser-Anforderung werden zwischenspeicherbare Assets aus &quot;Varnish&quot;an den Client-Browser gesendet und im Browser zwischengespeichert.
 
-Darüber hinaus verwendet Varnish ein Entitäts-Tag (ETag) für statische Assets. Das ETag bietet eine Möglichkeit, festzustellen, wann sich statische Dateien auf dem Server ändern. Daher werden statische Assets an den Client gesendet, wenn sie sich auf dem Server ändern - entweder bei einer neuen Anforderung eines Browsers oder beim Aktualisieren des Browser-Caches durch den Client, normalerweise durch Drücken von F5 oder Strg+F5.
+Darüber hinaus verwendet Varnish ein Entity-Tag (ETag) für statische Assets. Das ETag bietet eine Möglichkeit, festzustellen, wann sich statische Dateien auf dem Server ändern. Daher werden statische Assets an den Client gesendet, wenn sie sich auf dem Server ändern - entweder bei einer neuen Anforderung eines Browsers oder beim Aktualisieren des Browser-Caches durch den Client, normalerweise durch Drücken von F5 oder Strg+F5.
 
 Weitere Informationen finden Sie in den folgenden Abschnitten.
 
@@ -117,6 +119,7 @@ Die folgende Abbildung zeigt ein Beispiel für die Verwendung eines Browser-Insp
 Das obige Beispiel zeigt eine Anforderung für die Hauptseite der Storefront (`m2_ce_my`). CSS- und JavaScript-Assets werden im Client-Browser zwischengespeichert.
 
 >[!NOTE]
+>
 Die meisten statischen Assets verfügen über einen HTTP-Statuscode 200 (OK), der angibt, dass das Asset vom Server abgerufen wurde.
 
 ### Zweite Browser-Anfrage
@@ -139,7 +142,7 @@ Darüber hinaus werden statische Assets mit dem HTTP-Statuscode 304 (Nicht geän
 
 ![Der HTTP-Antwortcode 304 (Nicht geändert) zeigt an, dass das statische Asset im lokalen Cache mit dem auf dem Server identisch ist](../../assets/configuration/varnish-304.png)
 
-Der Statuscode 304 tritt auf, da der Benutzer seinen lokalen Cache invalidiert hat und sich der Inhalt auf dem Server nicht geändert hat. Aufgrund des 304-Status-Codes wird das statische Asset _content_ nicht übertragen wird; Nur HTTP-Header werden in den Browser heruntergeladen.
+Der Statuscode 304 tritt auf, da der Benutzer seinen lokalen Cache invalidiert hat und sich der Inhalt auf dem Server nicht geändert hat. Aufgrund des 304-Status-Codes wird das statische Asset _content_ wird nicht übertragen; nur HTTP-Header werden in den Browser heruntergeladen.
 
 Wenn sich der Inhalt auf dem Server ändert, lädt der Client das statische Asset mit einem HTTP-Statuscode 200 (OK) und einem neuen ETag herunter.
 

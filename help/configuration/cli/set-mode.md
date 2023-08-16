@@ -1,13 +1,13 @@
 ---
 title: Betriebsmodus festlegen
 description: Erfahren Sie mehr über das Festlegen der Adobe Commerce-Betriebsmodi.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
 
 ---
-
 
 # Betriebsmodus festlegen
 
@@ -19,7 +19,7 @@ Der Produktionsmodus bietet eine bessere Leistung, da statische Ansichtsdateien 
 
 >[!INFO]
 >
->In Version 2.0.6 und höher legt Commerce beim Wechsel zwischen Standard-, Entwicklungs- und Produktionsmodi keine expliziten Datei- oder Ordnerberechtigungen fest. Im Gegensatz zu anderen Modi werden Entwickler- und Produktionsmodi in der Variablen `env.php` -Datei. Adobe Commerce in der Cloud-Infrastruktur unterstützt nur Produktions- und Wartungsmodi.
+>In Version 2.0.6 und höher legt Commerce beim Wechsel zwischen Standard-, Entwicklungs- und Produktionsmodi keine expliziten Datei- oder Ordnerberechtigungen fest. Im Gegensatz zu anderen Modi werden Entwickler- und Produktionsmodi im `env.php` -Datei. Adobe Commerce on Cloud Infrastructure unterstützt nur Produktions- und Wartungsmodi.
 >
 >Siehe [Eigentum und Berechtigungen für Entwicklung und Produktion im Handel](../deployment/file-system-permissions.md).
 
@@ -36,11 +36,11 @@ pub/static
 Ausnahmen:
 
 - `.htaccess` Dateien werden nicht entfernt
-- `pub/static` enthält eine Datei, die die Version des statischen Inhalts angibt; Diese Datei wird nicht entfernt
+- `pub/static` enthält eine Datei, die die Version des statischen Inhalts angibt. Diese Datei wird nicht entfernt
 
 >[!INFO]
 >
->Standardmäßig verwendet Commerce die `var` -Ordner zum Speichern des Cache, der Protokolle und des kompilierten Codes. Sie können dieses Verzeichnis anpassen. In diesem Handbuch wird jedoch davon ausgegangen, dass `var`.
+>Standardmäßig verwendet Commerce die `var` -Ordner zum Speichern des Cache, der Protokolle und des kompilierten Codes. Sie können dieses Verzeichnis anpassen. In diesem Handbuch wird jedoch angenommen, dass `var`.
 
 ## Anzeigen des aktuellen Modus
 
@@ -60,7 +60,7 @@ Current application mode: {mode}. (Note: Environment variables may override this
 
 wobei:
 
-- **`{mode}`** kann `default`, `developer`oder `production`
+- **`{mode}`** kann entweder `default`, `developer`oder `production`
 
 ## Änderungsmodi
 
@@ -72,9 +72,9 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 wobei:
 
-- **`{mode}`** erforderlich ist; kann `developer` oder `production`
+- **`{mode}`** ist erforderlich; es kann entweder `developer` oder `production`
 
-- **`--skip-compilation`** ist ein optionaler Parameter, den Sie zum Überspringen verwenden können [Codekompilierung](../cli/code-compiler.md) wenn Sie in den Produktionsmodus wechseln.
+- **`--skip-compilation`** ist ein optionaler Parameter, den Sie zum Überspringen [Codekompilierung](../cli/code-compiler.md) wenn Sie in den Produktionsmodus wechseln.
 
 Es folgen Beispiele.
 
@@ -129,7 +129,7 @@ Enabled production mode.
 
 Wenn Sie von der Produktion in den Entwicklermodus wechseln, sollten Sie generierte Klassen und Objekt-Manager-Entitäten wie Proxys löschen, um unerwartete Fehler zu vermeiden. Danach können Sie die Modi ändern. Führen Sie die folgenden Schritte aus:
 
-1. Wenn Sie vom Produktionsmodus zum Entwicklermodus wechseln, löschen Sie den Inhalt der `generated/code` und `generated/metadata` Verzeichnisse:
+1. Wenn Sie den Produktionsmodus in den Entwicklermodus wechseln, löschen Sie den Inhalt der `generated/code` und `generated/metadata` Verzeichnisse:
 
    ```bash
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*

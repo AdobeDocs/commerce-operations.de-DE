@@ -1,13 +1,13 @@
 ---
 title: Teams
 description: Erfahren Sie mehr über die verschiedenen Teamtypen, die E-Commerce-Projekte zum Erfolg führen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 0%
 
 ---
-
 
 # Teams
 
@@ -29,11 +29,11 @@ Es gibt viele Tipps und Tricks, mit denen Sie Ihre Marke online vermarkten könn
 
 Das Marketing-Team ist ein integraler Bestandteil des E-Commerce, genau wie die anderen Teams. Sie halten SEO, SEM, Treueprogramme, Belohnungen und andere damit verbundene Aufgaben am Laufen. Durch die Koordination mit dem Marketing-Team können Sie die Konversionsrate auf der Site steigern.
 
-Wenn es keine Kommunikation oder Zusammenarbeit gibt, kann es Probleme geben, die auftauchen. Wenn beispielsweise das Lagerbestandsniveau für einen bestimmten Artikel in der Lagerhaltung niedrig ist und das Marketing-Team eine Werbe-E-Mail zu diesem Produkt sendet, könnte das Unternehmen mit einigen wütenden Kunden konfrontiert sein, was sich wiederum negativ auf den Markennamen und die Kundenloyalität auswirken würde. Es gibt einen Versuch, wenn es um E-Commerce geht und es muss perfekt sein.
+Wenn es keine Kommunikation oder Zusammenarbeit gibt, kann es zu Problemen kommen. Wenn beispielsweise das Lagerbestandsniveau für einen bestimmten Artikel in der Lagerhaltung niedrig ist und das Marketing-Team eine Werbe-E-Mail zu diesem Produkt sendet, könnte das Unternehmen mit einigen wütenden Kunden konfrontiert sein, was sich wiederum negativ auf den Markennamen und die Kundenloyalität auswirken würde. Es gibt einen Versuch, wenn es um E-Commerce geht und es muss perfekt sein.
 
 ## IT
 
-Einige Unternehmen übernehmen das IT-Team (technisches Team), an dem die Entwickler - Frontend, Backend und Tester - beteiligt sind, als Teil des E-Commerce-Teams, während einige Unternehmen sie getrennt halten. Manche Unternehmen bevorzugen es, das gesamte IT-Team aus Sicherheitsgründen, Kosten, Kultur, Umwelt oder Produktmanagement im Hause zu haben.
+Einige Unternehmen übernehmen das IT-Team (das technische Team), an dem die Entwickler - Frontend, Backend und Tester - beteiligt sind, als Teil des E-Commerce-Teams, während einige Unternehmen sie getrennt halten. Manche Unternehmen bevorzugen es, das gesamte IT-Team aus Sicherheitsgründen, Kosten, Kultur, Umwelt oder Produktmanagement im Hause zu haben.
 
 Alternativ dazu bevorzugen einige Unternehmen, das IT-(Entwicklungs-)Team an Beratungsunternehmen zu überlassen, die über mehr Fachwissen in diesem Bereich verfügen und dazu beitragen können, das interne Team effektiver zu gestalten. Außerdem bevorzugen einige Unternehmen eine Mischung aus beiden.
 
@@ -87,8 +87,8 @@ Wenn Sie ein E-Commerce-Projekt starten, sollten Sie die C-Level und das Geschä
 
 Es gibt weitere Teams, die entweder Teil eines vorhandenen Teams oder eigenständig sind, darunter:
 
-- **Content-Team**: Sie müssen mit allen Teams abgestimmt sein, um effektive Inhalte zu erstellen. Inhalte auf der Site müssen regelmäßig aktualisiert werden. Das Content-Team ist für die Einrichtung von Inhalten auf der Produktseite, Kategorieseiten, Blog und Fußzeile verantwortlich, die Site-Traffic anzieht und Ihre Konversionsrate erhöht.
+- **Inhaltsteam**- Sie müssen mit allen Teams abgestimmt sein, um effektive Inhalte zu erstellen. Inhalte auf der Site müssen regelmäßig aktualisiert werden. Das Content-Team ist für die Einrichtung von Inhalten auf der Produktseite, Kategorieseiten, Blog und Fußzeile verantwortlich, die Site-Traffic anzieht und Ihre Konversionsrate erhöht.
 
-- **Datenteam**: E-Commerce-Sites generieren viele Daten, die Sie erfassen und analysieren können, einschließlich Kundeninformationen, Ausgabebestimmungen, beliebte Produkte und Zeit, zu der die Site den meisten Traffic hat. Das Data-Team verarbeitet alle diese Informationen, um Einblicke in die Funktionsweise der Site und darüber zu geben, wo die Site verbessert werden muss. Das Data-Team kann empfehlen, welche Trends bevorstehen und wo sich das Unternehmen konzentrieren muss.
+- **Datenteam**—E-Commerce-Sites generieren eine Vielzahl von Daten, die Sie sammeln und analysieren können, einschließlich Kundeninformationen, Ausgabebesuchen, beliebte Produkte und Zeit, die die Site den meisten Traffic hat. Das Data-Team verarbeitet alle diese Informationen, um Einblicke in die Funktionsweise der Site und darüber zu geben, wo die Site verbessert werden muss. Das Data-Team kann empfehlen, welche Trends bevorstehen und wo sich das Unternehmen konzentrieren muss.
 
-- **Finanz- und Buchhaltungsteam** - Einige Unternehmen verfügen über ein kleines Finanz- und Buchhaltungsteam, das entweder intern oder extern sein kann. Sie konzentrieren sich auf Budgetierung, Prognosen und das Management des finanziellen Aspekts der Einrichtung und des Betriebs einer E-Commerce-Website.
+- **Finanz- und Buchhaltungsteam**—Einige Unternehmen verfügen über ein kleines Finanz- und Buchhaltungsteam, das entweder intern oder extern sein kann. Sie konzentrieren sich auf Budgetierung, Prognosen und das Management des finanziellen Aspekts der Einrichtung und des Betriebs einer E-Commerce-Website.

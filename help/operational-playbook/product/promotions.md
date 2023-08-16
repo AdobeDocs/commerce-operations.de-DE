@@ -23,9 +23,9 @@ Da der Großteil der Bevölkerung zum Online-Einkauf übergeht, müssen die Einz
 
 Jede der sechs Ps ist gleichermaßen wichtig, aber für die Vermarktung von Produkten müssen Einzelhändler Promotions als Taktik verwenden, um den Traffic auf der Site zu steigern und höhere Konversionsraten zu erzielen. Promotions helfen, Produkte und Dienstleistungen zu vermarkten, die von der Marke angeboten werden. Es gibt verschiedene Werbestufen, wie z. B. Versand, Produkt und Bestellung.
 
-![Beispielwerbung](../../assets/playbooks/promotion-example.png)
+![Beispielwerbung für Werbeaktionen](../../assets/playbooks/promotion-example.png)
 
-## Promotions
+## Arten von Promotions
 
 Jede dieser Promotionsstufen verfügt über verschiedene Promotions, darunter:
 
@@ -40,7 +40,7 @@ Jede dieser Promotionsstufen verfügt über verschiedene Promotions, darunter:
 - Bundles
 - Produktgruppen
 - Coupons
-- Werbe-E-Mails
+- Werbe-Mails
 - Kostenloser Versand
 - Rabatt auf den Versand
 

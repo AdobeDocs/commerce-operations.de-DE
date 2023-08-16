@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Viele Unternehmen arbeiten aus dem Jahreshaushalt und aus Fahrplänen. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über Ihre Strategie für Gesundheit, Ausrichtung und Aktualisierung der Plattform für das Jahr sprechen und erläutern, wie sie in die allgemeinen Ziele und wichtigen Leistungsindikatoren (KPIs) des Unternehmens passt.
 
-Im Folgenden [Release-Zeitplan](https://devdocs.magento.com/release/), weisen Sie Budget- und Freigabefenster für Upgrades zu, vermeiden Sie Feiertage, Unternehmensschließungen und Spitzenzeiten. Indem Sie den Veröffentlichungsplan der Adobe verstehen und über die Änderungen und Verbesserungen in den einzelnen Versionen auf dem Laufenden bleiben, [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)können Sie Ihr Jahr besser planen.
+Im Folgenden [Veröffentlichungszeitplan](https://devdocs.magento.com/release/), weisen Sie Budget- und Freigabefenster für Upgrades zu, vermeiden Sie Feiertage, Unternehmensschließungen und Spitzenzeiten. Indem Sie den Adobe-Release-Zeitplan verstehen und über die Änderungen und Verbesserungen in jeder Version informiert bleiben, [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)können Sie Ihr Jahr besser planen.
 
 Bei der Planung können Sie sich fragen:
 

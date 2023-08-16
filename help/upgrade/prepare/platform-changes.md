@@ -1,13 +1,13 @@
 ---
 title: Plattformänderungen überprüfen
 description: Machen Sie sich mit den wichtigsten Plattformänderungen in einer Version vertraut, während Sie sich auf die Aktualisierung Ihres Adobe Commerce-Projekts vorbereiten.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: 08af5786-8d16-46da-90d4-5cc201288b1f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
 
 ---
-
 
 # Überprüfen Sie die Plattformänderungen vor der Aktualisierung.
 
@@ -17,4 +17,4 @@ Adobe Commerce-Kunden und -Partner können auch auf [Beta-Versionen von Adobe Co
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 ist die letzte Version, die das Beta-Programm unterstützt. Ab Juni 2023 wird Adobe öffentliche Betas für Adobe Commerce veröffentlichen. Siehe [Release-Zeitplan](../../release/schedule.md) für eine Liste der öffentlichen Beta-Veröffentlichungstermine.
+>Adobe Commerce 2.4.6 ist die letzte Version, die das Beta-Programm unterstützt. Ab Juni 2023 wird Adobe öffentliche Betas für Adobe Commerce veröffentlichen. Siehe [Veröffentlichungszeitplan](../../release/schedule.md) für eine Liste der öffentlichen Beta-Veröffentlichungstermine.

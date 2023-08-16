@@ -20,6 +20,6 @@ Dieses Handbuch richtet sich an Händler, Entwickler und Integratoren, um die op
 ## Was ist in der Anleitung enthalten?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
-* [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+* [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [[!DNL Observation for Adobe Commerce]](../tools/observation-for-adobe-commerce/intro.md)
 * [[!DNL Data Migration Tool]](data-migration-tool/how-migration-works.md)

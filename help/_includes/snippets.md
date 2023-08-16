@@ -57,4 +57,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Obwohl der in diesen Versionshinweisen beschriebene Code für Verbesserungen und Fehlerbehebungen mit Adobe Commerce gebündelt ist, werden mehrere dieser Projekte (z. B. B2B, Page Builder und Progressive Web Application (PWA) Studio) ebenfalls unabhängig voneinander veröffentlicht. Fehlerbehebungen für diese Projekte werden in den separaten, projektspezifischen Versionsinformationen dokumentiert, die in der Dokumentation für jedes Projekt verfügbar sind. Siehe [Produktversion - Übersicht](/help/release/release-notes/overview.md).
+>Obwohl der in diesen Versionshinweisen beschriebene Code für Verbesserungen und Fehlerkorrekturen mit Adobe Commerce gebündelt ist, werden mehrere dieser Projekte (z. B. B2B, Page Builder und Progressiven Webs Application (PWA) Studio) ebenfalls unabhängig voneinander veröffentlicht. Fehlerbehebungen für diese Projekte werden in den separaten, projektspezifischen Versionsinformationen dokumentiert, die in der Dokumentation für jedes Projekt verfügbar sind. Siehe [Produktversion - Übersicht](/help/release/release-notes/overview.md).

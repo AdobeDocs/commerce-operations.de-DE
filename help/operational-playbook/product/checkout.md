@@ -42,7 +42,7 @@ Zeigen Sie einen visuellen Checkout-Fluss an, in dem die Käufer die Vorschau de
 
 Entfernen Sie zusätzliche Informationen wie den Minibag, die Suche und/oder die Navigationsleiste. Dies hilft dem Kunden, sich auf den Checkout-Prozess zu konzentrieren, anstatt zu einer anderen Seite zu navigieren.
 
-Verwenden Sie saubere und fette CTA-Schaltflächen mit einem einfachen Seitendesign.
+Verwenden Sie saubere und fett gedruckte CTA-Schaltflächen mit einem einfachen Seitendesign.
 
 ## Vertrauen
 
@@ -57,7 +57,7 @@ Kunden, die online einkaufen, machen sich immer Sorgen um die Sicherheit. Um Kun
 
 ## Optionen zum Auschecken
 
-Stellen Sie verschiedene Checkout-Optionen bereit, z. B.:
+Stellen Sie verschiedene Checkout-Optionen bereit, wie:
 
 - Gastbenutzer
 - Registrierter Benutzer
@@ -77,7 +77,7 @@ Zahlungsdetails sollten am Ende platziert werden, direkt vor der Bestätigung, d
 
 Geben Sie eine einfache Möglichkeit an, Zahlungsdetails wie den Namen auf der Karte und die Kartennummer einzugeben.
 
-Geben Sie dem Benutzer eine Option an, seine Kreditdaten für den nächsten Kauf zu speichern.
+Geben Sie eine Option an, mit der der Benutzer seine Kreditdaten für den nächsten Kauf speichern kann.
 
 ## Bestellübersicht
 

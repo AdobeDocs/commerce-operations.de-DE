@@ -16,7 +16,7 @@ Die aktuelle standardmäßige Bereitstellungsoption für die meisten kommerziell
 
 - 100 % Funktionsunterstützung für B2B und B2C
 - Reife Referenzthemen (Luma), die schnell bereitgestellt/angepasst werden können
-- Matutes SI-Partnerimplementierungs-Know-how
+- Matutes SI-Partnerimplementierungs-Expertise
 - Vollständig kompatibel mit Commerce-Funktionen wie Page Builder oder Staging und Vorschau
 - Umfassende Kompatibilität mit Erweiterungen in Adobe Commerce Marketplace
 
@@ -28,7 +28,7 @@ Die aktuelle standardmäßige Bereitstellungsoption für die meisten kommerziell
 
 - **Nicht PWA**—Obwohl das Design responsiv ist, liegt die Site-Performance weit hinter dem erstklassigen PWA zurück.
 
-- **Frontend-Architektur (Adobe Commerce-Benutzeroberflächen-Komponenten)**—Adobe Commerce-/PHP-Spezialisten, um auf der alten Storefront aufzubauen.
+- **Frontend-Architektur (Komponenten der Adobe Commerce-Benutzeroberfläche)**—Adobe Commerce-/PHP-Spezialisten, um auf der alten Storefront aufzubauen.
 
 Bevor wir in Headless-Optionen einsteigen, fangen wir mit der vertrauteren Storefront-Architektur an. Wenn Headless entkoppelt wird, wäre dies die gekoppelte Storefront-Architektur, die am häufigsten mit unseren Luma-Demos zu sehen ist.
 

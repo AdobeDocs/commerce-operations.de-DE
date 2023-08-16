@@ -1,13 +1,13 @@
 ---
 title: Apache
 description: Führen Sie diese Schritte aus, um den Apache-Webserver für lokale Installationen von Adobe Commerce und Magento Open Source zu installieren und zu konfigurieren.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
 
 ---
-
 
 # Apache
 
@@ -72,7 +72,6 @@ Adobe Commerce und Magento Open Source verwenden Server-Neuschreibungen und `.ht
    >
    >- Wenn Sie von einer früheren Apache-Version aktualisiert haben, suchen Sie zunächst nach `<Directory "/var/www/html">` oder `<Directory "/var/www">` in `000-default.conf`.
    >- Sie müssen den Wert von `AllowOverride` in der Anweisung für den Ordner, in dem Sie die Adobe Commerce- oder Magento Open Source-Software installieren. Um beispielsweise im Basisverzeichnis des Webservers zu installieren, bearbeiten Sie die Anweisung in `<Directory /var/www>`.
-
 
 >[!NOTE]
 >
@@ -187,7 +186,7 @@ So aktualisieren Sie auf Apache 2.4:
 
 Adobe Commerce und Magento Open Source erfordern Apache-Anwendungsserverumschreibungen. Sie müssen auch den Typ der Direktiven angeben, die in `.htaccess`, die die Anwendung verwendet, um Neuschreibungsregeln anzugeben.
 
-Die Installation und Konfiguration von Apache umfasst im Wesentlichen drei Schritte: Installieren der Software, Aktivieren von Neuschreibungen und Angeben `.htaccess` Richtlinien.
+Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Installieren Sie die Software, aktivieren Sie Neuschreibungen und geben Sie `.htaccess` Richtlinien.
 
 ### Installieren von Apache
 
@@ -308,7 +307,7 @@ Wenn Sie beim Zugriff auf die Site auf 403 Verbotene Fehler stoßen, können Sie
 
 ### Beheben von 403 Verbotenen Fehlern für Apache 2.4
 
-Verwenden Sie einen der [Richtlinien erforderlich](https://httpd.apache.org/docs/2.4/howto/access.html).
+Um Website-Besuchern den Zugriff auf Ihre Site zu ermöglichen, verwenden Sie einen der [Richtlinien erforderlich](https://httpd.apache.org/docs/2.4/howto/access.html).
 
 Beispiel:
 

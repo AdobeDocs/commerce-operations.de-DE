@@ -1,19 +1,19 @@
 ---
 title: Daten aus Konfigurationsdateien importieren
 description: Importieren Sie die Adobe Commerce-Konfigurationseinstellungen aus Konfigurationsdateien.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
-
 # Konfigurationseinstellungen importieren
 
 {{file-system-owner}}
 
-Wenn Sie ein Produktionssystem mit Commerce 2.2 einrichten [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md), müssen Sie _importieren_ Konfigurationseinstellungen aus `config.php` und `env.php` in die Datenbank.
+Wenn Sie ein Produktionssystem mit Commerce 2.2 einrichten [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md)müssen Sie _importieren_ Konfigurationseinstellungen aus `config.php` und `env.php` in die Datenbank ein.
 Zu diesen Einstellungen gehören Konfigurationspfade und -werte, Websites, Stores, Store-Ansichten und Designs.
 
 Nach dem Import von Websites, Geschäften, Ansichten und Designs können Sie Produktattribute erstellen und auf Websites, Stores und Store-Ansichten im Produktionssystem anwenden.
@@ -82,15 +82,15 @@ Beim Importieren von Backend-Modellen werden die Konfigurationswerte nicht gespe
 Wir importieren die folgenden Arten von Konfigurationen.
 (Diese Konfigurationen befinden sich unter der `scopes` Array in `config.php`.
 
-- `websites`: Website-bezogene Konfiguration
-- `groups`: Speichert verwandte Konfiguration
-- `stores`: Konfiguration von Store-Ansichten
+- `websites`: Websites-bezogene Konfiguration
+- `groups`: speichert die zugehörige Konfiguration
+- `stores`: Konfiguration zur Store-Ansicht
 
 Die vorangehenden Konfigurationen können in den folgenden Modi importiert werden:
 
 - `create`: `config.php` enthält neue Entitäten (`websites`, `groups`, `stores`), die in der Produktionsumgebung fehlen
 - `update`: `config.php` enthält Entitäten (`websites`, `groups`, `stores`), die sich von der Produktionsumgebung unterscheiden
-- `delete`: `config.php` does _not_ enthält Entitäten (`websites`, `groups`, `stores`), die in der Produktionsumgebung vorhanden sind
+- `delete`: `config.php` does _not_ enthält Entitäten (`websites`, `groups`, `stores`) in der Produktionsumgebung vorhanden sind
 
 >[!INFO]
 >
@@ -98,16 +98,16 @@ Die vorangehenden Konfigurationen können in den folgenden Modi importiert werde
 
 ### Designkonfiguration
 
-Die Designkonfiguration umfasst alle Designs, die in Ihrem Commerce-System registriert sind. Die Daten stammen direkt aus dem `theme` Datenbanktabelle. (Die Designkonfiguration befindet sich im Abschnitt `themes` Array in `config.php`.
+Die Designkonfiguration umfasst alle in Ihrem Commerce-System registrierten Designs. Die Daten stammen direkt aus dem `theme` Datenbanktabelle. (Die Designkonfiguration befindet sich im Abschnitt `themes` Array in `config.php`.
 
 #### Struktur der Designdaten
 
 Der Schlüssel des Arrays ist der vollständige Designpfad: `area` + `theme path`
 
-Beispiel: `frontend/Magento/luma`.
-`frontend` ist und `Magento/luma` ist der Designpfad.
+Beispiel, `frontend/Magento/luma`.
+`frontend` ist ein Bereich und `Magento/luma` ist der Designpfad.
 
-Der Wert des Arrays ist Daten zum Design: Code, Titel, Pfad, übergeordnete ID
+Der Wert des Arrays ist Daten zum Thema: Code, Titel, Pfad, übergeordnete ID
 
 Vollständiges Beispiel:
 
@@ -128,4 +128,3 @@ Vollständiges Beispiel:
 >
 >- _Themenregistrierung_. Wenn Designdaten definiert sind in `config.php` Der Quellcode des Designs ist jedoch nicht im Dateisystem vorhanden, das Design wird ignoriert (d. h. nicht registriert).
 >- _Designlöschung_. Wenn ein Design nicht in `config.php` , der Quellcode jedoch im Dateisystem vorhanden ist, wird das Design nicht entfernt.
-

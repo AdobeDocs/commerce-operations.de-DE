@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL [!DNL RabbitMQ]] tab
-description: Erfahren Sie mehr über die [!UICONTROL [!DNL RabbitMQ]] Registerkarte von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL [!DNL RabbitMQ]] Registerkarte von [!DNL Observation for Adobe Commerce].
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -90,28 +90,28 @@ Die **[!UICONTROL [!DNL RabbitMQ] Message High-Level Summary status by Queue]** 
 
 ![[!DNL RabbitMQ] Warteschlangenverbrauch MB](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-7.jpeg)
 
-Die **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Queue Consumption MB]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitrahmen.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]
 
 ![[!DNL RabbitMQ] Veröffentlichte Nachrichten nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-8.jpeg)
 
-Die **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Published Messages by Queue]** gibt die Anzahl der Bytes an, die von jedem [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitrahmen.
 
 ## [!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] Veröffentlichter Nachrichtendurchsatz nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-9.jpeg)
 
-Die **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Anzahl der veröffentlichten Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Published Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Anzahl der veröffentlichten Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitrahmen.
 
 ## [!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]
 
 ![[!DNL RabbitMQ] Gesamtdurchsatz der Nachrichten nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-10.jpeg)
 
-Die **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtzahl der Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Total Message Throughput by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtzahl der Nachrichten pro Sekunde nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitrahmen.
 
 ## [!UICONTROL [!DNL RabbitMQ] Consumers by Queue]
 
 ![[!DNL RabbitMQ] Verbraucher nach Warteschlange](../../assets/tools/observation-for-adobe-commerce/rabbitmq-tab-11.jpeg)
 
-Die **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtanzahl der Verbraucher nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitraum.
+Die **[!UICONTROL [!DNL RabbitMQ] Consumers by Queue]** Das Diagramm zeigt die durchschnittliche Gesamtanzahl der Verbraucher nach [!DNL RabbitMQ] Warteschlange über den ausgewählten Zeitrahmen.

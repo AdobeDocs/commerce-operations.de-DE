@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Die Analyse und Bestimmung der Art der technischen und wirtschaftlichen Ressourcen, die eine Organisation für jeden der folgenden Bereiche bereitstellen möchte, ermöglicht es Händlern, taktvolle Entscheidungen darüber zu treffen, welche Hostinglösung für ihr Geschäft am besten geeignet ist.
 
-In der folgenden Tabelle werden die Vor- und Nachteile von Cloud- gegenüber lokalen Lösungen erläutert:
+In der folgenden Tabelle werden die Vor- und Nachteile von Cloud- und On-Premise-Lösungen erläutert:
 
 <table>
     <thead>
@@ -37,9 +37,9 @@ In der folgenden Tabelle werden die Vor- und Nachteile von Cloud- gegenüber lok
         <tr>
             <td>Kosten</td>
             <td>Langfristig möglicherweise kostengünstiger</td>
-            <td>Erhebliche Vorkosten für Hardware und Software (cap-ex).</td>
+            <td>Erhebliche Vorkosten für Hardware und Software (Cap-ex).</td>
             <td>Vorhersehbare Abonnementpreise.</td>
-            <td>Eine langfristige Kostenprojektion ist erforderlich.</td>
+            <td>Es ist eine langfristige Kostenprojektion erforderlich.</td>
         </tr>
         <tr>
             <td></td>
@@ -66,7 +66,7 @@ In der folgenden Tabelle werden die Vor- und Nachteile von Cloud- gegenüber lok
             <td>Skalierbarkeit</td>
             <td>Die physische Kontrolle über die Hardware bedeutet, dass Upgrades streng kontrolliert werden können</td>
             <td>Sie müssen rechtzeitig vor Nachfrageänderungen planen, da die Zeit für die Erforschung, Rechtfertigung, Bestellung und Bereitstellung von Hardware erforderlich ist.</td>
-            <td>Cloud-Ressourcen können schnell an spezifische Anforderungen angepasst werden</td>
+            <td>Cloud-Ressourcen können schnell an die jeweilige Nachfrage angepasst werden</td>
             <td>Kosten eskalieren, wenn die Cloud-Infrastruktur nicht ordnungsgemäß verwaltet und verfolgt wird</td>
         </tr>
         <tr>
@@ -99,7 +99,7 @@ In der folgenden Tabelle werden die Vor- und Nachteile von Cloud- gegenüber lok
         </tr>
         <tr>
             <td>Bereitstellungen</td>
-            <td>Technologie kann auf der Grundlage einzigartiger IT-Infrastruktur- und Anwendungsanforderungen bereitgestellt werden</td>
+            <td>Technologie kann basierend auf einzigartigen IT-Infrastrukturen und Anwendungsanforderungen bereitgestellt werden</td>
             <td>Komplexität kann lange und schwierige Bereitstellungen bedeuten</td>
             <td>SaaS ist zuverlässig und leicht auszuführen.</td>
             <td>Normalerweise wird SaaS auf einen kleinsten gemeinsamen Nenner implementiert, was manchmal zu eingeschränkter Funktionalität führen kann</td>
@@ -107,7 +107,7 @@ In der folgenden Tabelle werden die Vor- und Nachteile von Cloud- gegenüber lok
         <tr>
             <td>IT-Support</td>
             <td>Infrastruktur- und Anwendungs-Know-how ist jederzeit verfügbar</td>
-            <td>Ein spezielles IT-Team ist notwendig, insbesondere wenn Anwendungen auf die individuellen Anforderungen eines Unternehmens zugeschnitten sind.</td>
+            <td>Speziell bei Anwendungen, die auf die individuellen Anforderungen eines Unternehmens zugeschnitten sind, ist ein spezielles IT-Team erforderlich.</td>
             <td>Die Vorsicht bei der Größenanpassung aufgrund von Cloud-Implementierungen bedeutet, dass die IT-Unterstützung mit weniger Zeit und Aufwand mehr verwalten kann.</td>
             <td>Die Lernkurve für Cloud ist bedeutend und angemessen geschultes Personal ist teuer</td>
         </tr>

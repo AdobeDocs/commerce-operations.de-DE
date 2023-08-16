@@ -1,19 +1,19 @@
 ---
 title: Eine Remote-Verbindung zur MySQL-Datenbank einrichten
 description: Führen Sie diese Schritte aus, um eine Remote-Datenbankverbindung für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 0%
 
 ---
 
-
 # Eine Remote-Verbindung zur MySQL-Datenbank einrichten
 
 Manchmal möchten Sie die Datenbank auf einem separaten Server hosten, anstatt den Datenbankserver und den Webserver auf demselben Computer auszuführen.
 
-Adobe bietet eine Möglichkeit, auf einem anderen Computer eine Verbindung zu einem MySQL-Server herzustellen. Ab Adobe Commerce und Magento Open Source 2.4.3 können Sie die Anwendung auch so konfigurieren, dass eine Amazon Web Services (AWS) Aurora-Datenbank ohne Codeänderungen verwendet wird.
+Adobe bietet eine Möglichkeit, eine Verbindung zu einem MySQL-Server auf einem anderen Computer herzustellen. Ab Adobe Commerce und Magento Open Source 2.4.3 können Sie die Anwendung auch so konfigurieren, dass eine Amazon Web Services (AWS) Aurora-Datenbank ohne Codeänderungen verwendet wird.
 
 Aurora ist ein leistungsstarker, vollständig kompatibler MySQL-Server, der auf AWS gehostet wird.
 
@@ -48,9 +48,9 @@ Bevor Sie beginnen, müssen Sie:
 Verwenden Sie die folgenden Richtlinien, um Remote-Datenbankverbindungen zu konfigurieren, wenn Ihr Webserver oder Datenbankserver in Clustern zusammengefasst ist:
 
 * Sie müssen für jeden Webserverknoten eine Verbindung konfigurieren.
-* In der Regel konfigurieren Sie eine Datenbankverbindung zum Datenbank-Lastenausgleich. Das Datenbank-Clustering kann jedoch komplex sein und muss von Ihnen konfiguriert werden. Adobe gibt keine spezifischen Empfehlungen für das Datenbank-Clustering aus.
+* In der Regel konfigurieren Sie eine Datenbankverbindung zum Datenbank-Lastenausgleich. Das Datenbank-Clustering kann jedoch komplex sein und von Ihnen konfiguriert werden. Adobe gibt keine spezifischen Empfehlungen für das Datenbank-Clustering aus.
 
-   Weitere Informationen finden Sie unter [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Weitere Informationen finden Sie unter [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Beheben von Verbindungsproblemen
 
@@ -97,6 +97,7 @@ So erstellen Sie eine Remote-Verbindung:
    * CentOS: `service mysqld restart`
 
    * Ubuntu: `service mysql restart`
+
    >[!NOTE]
    >
    >Wenn MySQL nicht gestartet werden kann, suchen Sie in syslog nach der Quelle des Problems. Beheben Sie das Problem mit [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) oder einer anderen maßgeblichen Quelle.
@@ -135,7 +136,7 @@ Geben Sie auf Ihrem Webknotenhost den folgenden Befehl ein, um zu überprüfen, 
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Wenn der MySQL-Monitor wie folgt angezeigt wird, ist die Datenbank für Adobe Commerce oder Magento Open Source bereit:
+Wenn der MySQL-Monitor wie folgt angezeigt wird, ist die Datenbank für Adobe Commerce oder die Magento Open Source bereit:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.

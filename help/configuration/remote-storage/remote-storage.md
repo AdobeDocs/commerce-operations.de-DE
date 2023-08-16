@@ -20,7 +20,7 @@ Das Remote-Speichermodul bietet die Möglichkeit, Mediendateien zu speichern und
 
 >[!INFO]
 >
->Das Remote-Speichermodul verfügt über _begrenzt_ Unterstützung von Adobe Commerce für Cloud-Infrastruktur. Adobe kann keine vollständige Fehlerbehebung beim Speicheradapterdienst von Drittanbietern durchführen. Siehe [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md) für Anleitungen zur Implementierung von Remote-Speicher für Cloud-Projekte.
+>Das Remote-Speichermodul verfügt über _begrenzt_ Unterstützung von Adobe Commerce für Cloud-Infrastruktur. Adobe kann keine vollständige Fehlerbehebung für den Speicheradapterdienst von Drittanbietern durchführen. Siehe [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md) für Anleitungen zur Implementierung von Remote-Speicher für Cloud-Projekte.
 
 ![Schemabild](../../assets/configuration/remote-storage-schema.png)
 
@@ -36,8 +36,8 @@ Die `parameter-name` bezieht sich auf den spezifischen Parameternamen des Remote
 
 | Befehlszeilenparameter | Parametername | Beschreibung | Standardwert |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | Treiber | Adaptername<br>Mögliche Werte:<br>**file**: Deaktiviert Remote-Speicher und verwendet das lokale Dateisystem <br>**aws-s3**: Verwenden Sie die [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | Keine |
-| `remote-storage-bucket` | Behälter | Objektspeicherung oder Containername | Keine |
+| `remote-storage-driver` | Treiber | Adaptername<br>Mögliche Werte:<br>**file**: Deaktiviert den Remote-Speicher und verwendet das lokale Dateisystem.<br>**aws-s3**: Verwenden Sie die [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | Keine |
+| `remote-storage-bucket` | Bucket | Objektspeicherung oder Containername | Keine |
 | `remote-storage-prefix` | prefix | Optionales Präfix (Speicherort innerhalb des Objektspeichers) | leer |
 | `remote-storage-region` | region | Regionsname | Keine |
 | `remote-storage-key` | Zugriffsschlüssel | Optionaler Zugriffsschlüssel | leer |
@@ -51,19 +51,19 @@ Der standardmäßige Speicherort befindet sich im lokalen Dateisystem. A _Speich
 
 ## Remote-Speicher aktivieren
 
-Sie können den Remote-Speicher während einer Adobe Commerce-Installation installieren oder einer bestehenden Commerce-Instanz Remote-Speicher hinzufügen. Die folgenden Beispiele zeigen die einzelnen Methoden anhand eines Satzes von `remote-storage` Parameter mit Commerce `setup` CLI-Befehle. Minimal müssen Sie den Speicher bereitstellen `driver`, `bucket`und `region`.
+Sie können während einer Adobe Commerce-Installation Remote-Speicher installieren oder einer bestehenden Commerce-Instanz Remote-Speicher hinzufügen. Die folgenden Beispiele zeigen die einzelnen Methoden anhand eines Satzes von `remote-storage` Parameter mit Commerce `setup` CLI-Befehle. Minimal müssen Sie den Speicher bereitstellen `driver`, `bucket`, und `region`.
 
-- Beispiel: Installieren von Commerce mit Remote-Speicher
+- Beispiel: Commerce mit Remote-Speicher installieren
 
-   ```bash
-   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 - Beispiel: Remote-Speicher für vorhandenen Commerce aktivieren
 
-   ```bash
-   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 >[!TIP]
 >
@@ -71,7 +71,7 @@ Sie können den Remote-Speicher während einer Adobe Commerce-Installation insta
 
 ## Einschränkungen
 
-Sie können nicht gleichzeitig sowohl Remote-Speicher als auch Datenbankspeicher aktivieren. Deaktivieren Sie den Datenbankspeicher, wenn Sie Remote-Speicher verwenden.
+Es ist nicht möglich, sowohl Remote-Speicher als auch Datenbankspeicher gleichzeitig zu aktivieren. Deaktivieren Sie den Datenbankspeicher, wenn Sie Remote-Speicher verwenden.
 
 ```bash
 bin/magento config:set system/media_storage_configuration/media_database 0

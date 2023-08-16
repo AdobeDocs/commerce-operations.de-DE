@@ -34,8 +34,8 @@ Mit den folgenden Parametern:
 | ------------------------------ | --------- | ------- | ------------- |
 | `cache-backend-redis-server` | server | Vollständig qualifizierter Hostname, IP-Adresse oder absoluter Pfad zu einem UNIX-Socket. Der Standardwert 127.0.0.1 zeigt an, dass Redis auf dem Commerce-Server installiert ist. | `127.0.0.1` |
 | `cache-backend-redis-port` | port | Überwachungsanschluss des Redis-Servers | `6379` |
-| `cache-backend-redis-db` | Datenbank | Erforderlich, wenn Sie Redis sowohl für den Standard- als auch für den Vollseitencache verwenden. Sie müssen die Datenbanknummer eines der Caches angeben. Der andere Cache verwendet standardmäßig 0.<br><br>**Wichtig**: Wenn Sie Redis für mehr als eine Art der Zwischenspeicherung verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer auf 0, die Datenbank-Nummer der Seitenspeicherung auf 1 und die Datenbanknummer der Sitzungsspeicherung auf 2 zuzuweisen. | `0` |
-| `cache-backend-redis-password` | password | Durch die Konfiguration eines Redis-Kennworts wird eine der integrierten Sicherheitsfunktionen aktiviert: die `auth` -Befehl, für den Clients sich für den Zugriff auf die Datenbank authentifizieren müssen. Das Kennwort wird direkt in der Konfigurationsdatei von Redis konfiguriert: `/etc/redis/redis.conf` |  |
+| `cache-backend-redis-db` | Datenbank | Erforderlich, wenn Sie Redis sowohl für den Standard- als auch für den Vollseitencache verwenden. Sie müssen die Datenbanknummer eines der Caches angeben. Der andere Cache verwendet standardmäßig 0.<br><br>**Wichtig**: Wenn Sie Redis für mehr als eine Art der Zwischenspeicherung verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer auf 0, die Datenbank-Nummer für die Seitenspeicherung auf 1 und die Datenbanknummer für die Sitzungsspeicherung auf 2 zuzuweisen. | `0` |
+| `cache-backend-redis-password` | password | Durch die Konfiguration eines Kennworts für Redis wird eine der integrierten Sicherheitsfunktionen aktiviert: die `auth` -Befehl, für den Clients sich für den Zugriff auf die Datenbank authentifizieren müssen. Das Kennwort wird direkt in der Konfigurationsdatei von Redis konfiguriert: `/etc/redis/redis.conf` | |
 
 ### Beispiel, Befehl
 
@@ -63,8 +63,8 @@ Mit den folgenden Parametern:
 | ------------------------------ | --------- | ------- | ------------- |
 | `page-cache-redis-server` | server | Vollständig qualifizierter Hostname, IP-Adresse oder absoluter Pfad zu einem UNIX-Socket. Der Standardwert 127.0.0.1 zeigt an, dass Redis auf dem Commerce-Server installiert ist. | `127.0.0.1` |
 | `page-cache-redis-port` | port | Überwachungsanschluss des Redis-Servers | `6379` |
-| `page-cache-redis-db` | Datenbank | Erforderlich, wenn Sie Redis sowohl für den standardmäßigen als auch für den vollständigen Seiten-Cache verwenden. Sie müssen die Datenbanknummer eines der Caches angeben. Der andere Cache verwendet standardmäßig 0.<br/>**Wichtig**: Wenn Sie Redis für mehr als eine Art der Zwischenspeicherung verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer auf 0, die Datenbank-Nummer der Seitenspeicherung auf 1 und die Datenbanknummer der Sitzungsspeicherung auf 2 zuzuweisen. | `0` |
-| `page-cache-redis-password` | password | Durch die Konfiguration eines Redis-Kennworts wird eine der integrierten Sicherheitsfunktionen aktiviert: die `auth` -Befehl, für den Clients sich für den Zugriff auf die Datenbank authentifizieren müssen. Konfigurieren Sie das Kennwort in der Redis-Konfigurationsdatei: `/etc/redis/redis.conf` |  |
+| `page-cache-redis-db` | Datenbank | Erforderlich, wenn Sie Redis sowohl für den standardmäßigen als auch für den vollständigen Seiten-Cache verwenden. Sie müssen die Datenbanknummer eines der Caches angeben. Der andere Cache verwendet standardmäßig 0.<br/>**Wichtig**: Wenn Sie Redis für mehr als eine Art der Zwischenspeicherung verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer auf 0, die Datenbank-Nummer für die Seitenspeicherung auf 1 und die Datenbanknummer für die Sitzungsspeicherung auf 2 zuzuweisen. | `0` |
+| `page-cache-redis-password` | password | Durch die Konfiguration eines Kennworts für Redis wird eine der integrierten Sicherheitsfunktionen aktiviert: die `auth` -Befehl, für den Clients sich für den Zugriff auf die Datenbank authentifizieren müssen. Konfigurieren Sie das Kennwort in der Redis-Konfigurationsdatei: `/etc/redis/redis.conf` | |
 
 ### Beispiel, Befehl
 
@@ -120,21 +120,21 @@ Nachher [Einrichten eines Redis-Clusters in AWS](https://aws.amazon.com/getting-
    - Öffnen Sie eine SSH-Verbindung zu Ihrer EC2-Instanz.
    - Installieren Sie auf der EC2-Instanz den Redis-Client:
 
-      ```bash
-      sudo apt-get install redis
-      ```
+     ```bash
+     sudo apt-get install redis
+     ```
 
    - Fügen Sie der Sicherheitsgruppe EC2 eine eingehende Regel hinzu: Typ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Fügen Sie der Sicherheitsgruppe ElastiCache Cluster eine eingehende Regel hinzu: Typ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Stellen Sie eine Verbindung zur Redis-CLI her:
 
-      ```bash
-      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-      ```
+     ```bash
+     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
+     ```
 
 ### Commerce für die Verwendung des Clusters konfigurieren
 
-Commerce unterstützt mehrere Arten von Caching-Konfigurationen. Im Allgemeinen werden die Zwischenspeicherkonfigurationen zwischen Frontend und Backend aufgeteilt. Frontend-Zwischenspeicherung wird als `default`, wird für jeden Cache-Typ verwendet. Sie können Caches auf niedrigerer Ebene anpassen oder aufteilen, um eine bessere Leistung zu erzielen. Eine allgemeine Redis-Konfiguration trennt den Standard-Cache und den Seiten-Cache von der eigenen Redis-Datenbank (RDB).
+Commerce unterstützt mehrere Arten von Caching-Konfigurationen. Im Allgemeinen werden die Cachekonfigurationen zwischen Frontend und Backend aufgeteilt. Frontend-Zwischenspeicherung wird als `default`, wird für jeden Cache-Typ verwendet. Sie können Caches auf niedrigerer Ebene anpassen oder aufteilen, um eine bessere Leistung zu erzielen. Eine allgemeine Redis-Konfiguration trennt den Standard-Cache und den Seiten-Cache von der eigenen Redis-Datenbank (RDB).
 
 Ausführen `setup` -Befehle zum Angeben der Redis-Endpunkte.
 
@@ -192,7 +192,7 @@ Ab Commerce 2.3.5 wird empfohlen, die erweiterte Redis-Cache-Implementierung zu 
 
 Da Commerce Konfigurationsdaten im Cache &quot;Redis&quot;speichert, können wir Daten, die zwischen Seiten wiederverwendet werden, vorab laden. Um Schlüssel zu finden, die vorgeladen werden müssen, analysieren Sie Daten, die von Redis an Commerce übertragen werden. Wir empfehlen, Daten vorab zu laden, die auf jeder Seite geladen werden, z. B. `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
-Redis verwendet die `pipeline` , um Ladeanforderungen zu kombinieren. Schlüssel sollten das Datenbankpräfix enthalten. z. B. wenn das Datenbankpräfix `061_`, sieht der Preload-Schlüssel wie folgt aus: `061_SYSTEM_DEFAULT`
+Redis verwendet die `pipeline` , um Ladeanforderungen zu kombinieren. Schlüssel sollten das Datenbankpräfix enthalten, z. B. wenn das Datenbankpräfix `061_`, sieht der Preload-Schlüssel wie folgt aus: `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -235,7 +235,7 @@ Wenn Sie die Funktion zum Vorausfüllen mit dem L2-Cache verwenden, sollten Sie 
 
 ## Parallele Erzeugung
 
-Ab Version 2.4.0 haben wir die `allow_parallel_generation` für die Benutzer, die auf Sperren warten möchten.
+Ab Version 2.4.0 haben wir die `allow_parallel_generation` -Option für die Benutzer, die auf Sperren warten möchten.
 Er ist standardmäßig deaktiviert. Wir empfehlen, ihn zu deaktivieren, bis Sie über übermäßige Konfigurationen und/oder Blöcke verfügen.
 
 **Aktivieren der parallelen Generierung**:
@@ -316,4 +316,4 @@ Wenn beide Befehle erfolgreich waren, wird Redis ordnungsgemäß eingerichtet.
 
 ### Überprüfen komprimierter Daten
 
-Um komprimierte Sitzungsdaten und Seiten-Cache zu untersuchen, muss die [RESP.app](https://flathub.org/apps/details/app.resp.RESP) unterstützt die automatische Dekomprimierung von Commerce 2 Session- und Page-Cache und zeigt PHP-Sitzungsdaten in einer für Menschen lesbaren Form an.
+Um komprimierte Sitzungsdaten und Seiten-Cache zu untersuchen, muss die [RESP.app](https://flathub.org/apps/details/app.resp.RESP) unterstützt die automatische Dekomprimierung von Commerce 2 Session und Page Cache und zeigt PHP-Sitzungsdaten in einer für Menschen lesbaren Form an.

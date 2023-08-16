@@ -6,7 +6,7 @@ exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ Dieses Thema enthält Anweisungen zur Bereitstellung von Aktualisierungen für C
 
 ## Annahmen
 
-- Sie haben Commerce mithilfe von installiert. [Verfasser](../../installation/composer.md).
+- Sie haben Commerce mithilfe von [Verfasser](../../installation/composer.md).
 - Sie wenden Aktualisierungen direkt auf den Server an.
 
 >[!WARNING]

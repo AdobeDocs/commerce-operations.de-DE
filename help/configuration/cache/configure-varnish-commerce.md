@@ -15,19 +15,19 @@ ht-degree: 0%
 So konfigurieren Sie Commerce für die Verwendung von Varnish:
 
 1. Melden Sie sich bei Admin als Administrator an.
-1. Klicken **[!UICONTROL Stores]** > Einstellungen > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache**.
-1. Aus dem **[!UICONTROL Caching Application]** Liste, klicken Sie auf **Varnish-Zwischenspeicherung**.
+1. Klicks **[!UICONTROL Stores]** > Einstellungen > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache**.
+1. Aus dem **[!UICONTROL Caching Application]** Liste, klicken Sie **Varnish-Zwischenspeicherung**.
 1. Geben Sie im Feld **[!UICONTROL TTL for public content]** -Feld.
 1. Erweitern **[!UICONTROL Varnish Configuration]** und geben Sie folgende Informationen ein:
 
    | Feld | Beschreibung |
    | ----- | ----------- |
-   | Zugriffsliste | Geben Sie den vollständig qualifizierten Hostnamen und die IP-Adresse ein oder [Classless Inter-Domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) -IP-Adressbereich, für den Inhalte ungültig gemacht werden sollen. Siehe [Bereinigen des Cache](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Backend-Host | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse ein und überwachen Sie den Port des Varnish _Backend_ oder _Ursprungsserver_; Das heißt, der Server, der den Inhalt bereitstellt Varnish beschleunigt. Normalerweise ist dies Ihr Webserver. Siehe [Varnish-Cache-Backend-Server](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Zugriffsliste | Geben Sie den vollständig qualifizierten Hostnamen und die IP-Adresse ein oder [Classless Inter-Domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) -IP-Adressbereich, für den Inhalte ungültig gemacht werden sollen. Siehe [Bereinigen des Zwischenspeichers](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Backend-Host | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse ein und überwachen Sie den Port des Varnish _Backend_ oder _Ursprungsserver_; d. h. der Server, der den Inhalt bereitstellt, beschleunigt Varnish. Normalerweise ist dies Ihr Webserver. Siehe [Varnish-Cache-Backend-Server](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Backend-Port | Listener Port des Herkunftsservers. |
    | Übergangsphase | Die Übergangsphase bestimmt, wie lange Varnish veraltete Inhalte bereitstellt, wenn das Backend nicht responsiv ist. Der Standardwert ist 300 Sekunden. |
 
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 
 Mit dem Befehlszeilen-Tool C können Sie auch die Option Varnish über die Befehlszeile aktivieren, anstatt sich beim Administrator anzumelden:
 
@@ -37,7 +37,7 @@ bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/cac
 
 ## Varnish-Konfigurationsdatei exportieren
 
-So exportieren Sie eine Varnish-Konfigurationsdatei aus dem Admin:
+So exportieren Sie eine Varnish-Konfigurationsdatei aus dem Administrator:
 
 1. Klicken Sie auf eine der Exportschaltflächen, um eine `varnish.vcl` können Sie mit Varnish verwenden.
 
@@ -61,7 +61,7 @@ So exportieren Sie eine Varnish-Konfigurationsdatei aus dem Admin:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe empfehlen, zu öffnen `default.vcl` und ändern Sie den Wert von `acl purge` an die IP-Adresse des &quot;Varnish&quot;-Hosts. (Sie können mehrere Hosts in separaten Zeilen angeben oder auch die CIDR-Notation verwenden.)
+1. Adobe empfehlen, zu öffnen `default.vcl` und den Wert von `acl purge` an die IP-Adresse des &quot;Varnish&quot;-Hosts. (Sie können mehrere Hosts in separaten Zeilen angeben oder auch die CIDR-Notation verwenden.)
 
    Beispiel:
 

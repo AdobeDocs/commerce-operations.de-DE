@@ -1,6 +1,6 @@
 ---
 title: Die [!DNL Cron] tab
-description: Erfahren Sie mehr über die [!DNL Cron] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!DNL Cron] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: 66f5ffd6-4118-4534-b2d6-09c7a30e5e13
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -18,7 +18,7 @@ Auf dieser Registerkarte werden Probleme und Ursachen von [!DNL cron] Probleme.
 
 ![Cron-Transaktionsdauer in Sekunden](../../assets/tools/observation-for-adobe-commerce/cron-tab-1.jpg)
 
-Die **[!UICONTROL Cron transaction duration in seconds]** Frame Displays [!DNL crons] Transaktionsdauer in Sekunden. Dadurch werden Transaktionen angezeigt, die über lange Laufzeiten verfügen. Durch einen tieferen Einblick in APM werden weitere Details zur Abfrage angezeigt, die die Transaktion/der Vorgang ausführen kann.
+Die **[!UICONTROL Cron transaction duration in seconds]** Frame-Displays [!DNL crons] Transaktionsdauer in Sekunden. Dadurch werden Transaktionen angezeigt, die über lange Laufzeiten verfügen. Durch einen tieferen Einblick in APM werden weitere Details zur Abfrage angezeigt, die die Transaktion/der Vorgang ausführen kann.
 
 ## [!UICONTROL MySQL Non-Sleeping Threads by Node]
 
@@ -28,7 +28,7 @@ Die **[!UICONTROL MySQL Non-Sleeping Threads by Node]** frame zeigt die MySQL-Ni
 
 ## [!UICONTROL SQL Trace count by path]
 
-![SQL Trace-Anzahl nach Pfad](../../assets/tools/observation-for-adobe-commerce/cron-tab-3.jpg)
+![SQL-Trace-Anzahl nach Pfad](../../assets/tools/observation-for-adobe-commerce/cron-tab-3.jpg)
 
 Die **[!UICONTROL SQL Trace count by path]** frame betrachtet die Anzahl der MySQL-Trace nach Pfad, was dazu beitragen kann, SQL-Anweisungen über einen ausgewählten Zeitraum hinweg zu verfolgen.
 
@@ -54,11 +54,11 @@ Die **[!UICONTROL Cron schedule clean cron fired]** frame betrachtet die Anzahl 
 
 ![Ausführungstabelle zu Cron-Zeitplan für saubere Datensätze](../../assets/tools/observation-for-adobe-commerce/cron-tab-7.jpg)
 
-Die **[!UICONTROL Cron schedule clean records details table]** -Tabelle enthält Details zum Auftrag zum Bereinigen von Datensätzen aus der `cron_schedule` -Tabelle über einen ausgewählten Zeitraum hinweg.
+Die **[!UICONTROL Cron schedule clean records details table]** -Tabelle enthält Details zum Auftrag zum Bereinigen von Datensätzen aus der `cron_schedule` -Tabelle über einen ausgewählten Zeitrahmen hinweg.
 
 ## [!UICONTROL cron_schedule table updates]
 
-![Aktualisierungen der Tabelle cron_schedule](../../assets/tools/observation-for-adobe-commerce/cron-tab-8.jpg)
+![Aktualisierungen der cron_schedule-Tabelle](../../assets/tools/observation-for-adobe-commerce/cron-tab-8.jpg)
 
 Die **[!UICONTROL cron_schedule table updates]** frame betrachtet die Anzahl der [!DNL cron] Geplante Tabellen werden über einen ausgewählten Zeitraum hinweg aktualisiert. Eine hohe Aktivität beim Löschen oder Aktualisieren dieser Tabelle kann auf ein Problem mit [!DNL crons]. Außerdem [!DNL crons] Aktualisieren Sie diese Tabelle, wenn sie ausgeführt und abgeschlossen wird. Wenn diese Tabelle also keine Aktivität enthält und [!DNL crons] konfiguriert ist, kann es ein Problem mit [!DNL crons].
 
@@ -66,4 +66,4 @@ Die **[!UICONTROL cron_schedule table updates]** frame betrachtet die Anzahl der
 
 ![Tabellen mit Datenspeichervorgängen](../../assets/tools/observation-for-adobe-commerce/cron-tab-9.jpg)
 
-Die **[!UICONTROL Datastore Operations Tables]** betrachtet Datenbanktabellenvorgänge, einschließlich `SELECT`, `DELETE`und `UPDATE` über einen ausgewählten Zeitraum hinweg. Dieser Rahmen zeigt die Datenbanktabellen mit der höchsten Betriebsfrequenz an.
+Die **[!UICONTROL Datastore Operations Tables]** betrachtet Datenbanktabellenvorgänge, einschließlich `SELECT`, `DELETE`, und `UPDATE` über einen ausgewählten Zeitraum hinweg. Dieser Rahmen zeigt die Datenbanktabellen mit der höchsten Betriebsfrequenz an.

@@ -18,14 +18,14 @@ Wenn Sie Commerce auf einem einzelnen Computer bereitstellen und einige Ausfallz
 
 ## Pipeline-Bereitstellung
 
-Mit Commerce-Version 2.2 wurde die Adobe eingeführt _Pipeline-Bereitstellung_ als neue Methode zur Bereitstellung in der Produktion mit minimalen Ausfallzeiten. Dieser Implementierungsprozess erfolgt auf verschiedenen Systemen und bietet eine Möglichkeit, konsistente Konfigurationen für alle Pipelinebereitstellungssysteme zu erhalten. Es handelt sich dabei um ein einfaches, aber leistungsstarkes Modell, mit dem Sie normale Konfigurationseinstellungen von systemspezifischen Einstellungen (wie Host und Port) oder vertraulichen Einstellungen (wie Namen und Passwörter) trennen können.
+Mit Commerce-Version 2.2 führte Adobe ein _Pipeline-Bereitstellung_ als neue Methode zur Bereitstellung in der Produktion mit minimalen Ausfallzeiten. Dieser Implementierungsprozess erfolgt auf verschiedenen Systemen und bietet eine Möglichkeit, konsistente Konfigurationen für alle Pipelinebereitstellungssysteme zu erhalten. Es handelt sich dabei um ein einfaches, aber leistungsstarkes Modell, mit dem Sie normale Konfigurationseinstellungen von systemspezifischen Einstellungen (wie Host und Port) oder vertraulichen Einstellungen (wie Namen und Passwörter) trennen können.
 
-Zur Verwendung der Pipeline-Bereitstellung geht Adobe davon aus, dass Sie:
+Um die Pipeline-Bereitstellung zu verwenden, geht Adobe davon aus, dass Sie:
 
 - Ein erfahrener Systemintegrator mit hervorragenden Kenntnissen der Adobe Commerce-Konfigurationsoptionen.
 - Verwalten einer großen Commerce-Site (Tausende von Bestandseinheiten (SKUs)) und Minimieren der Ausfallzeiten von Produktionsstandorten.
 - Kenntnisse über PHP-Programmierung.
-- Erfahrung mit Quellcodeverwaltungsmethoden.
+- Erfahren Sie mehr über die Methoden der Quellcodeverwaltung.
 - Ihr Code befindet sich in einem Quellcodeverwaltungs-Repository. In diesem Handbuch gehen wir davon aus, dass Sie ein Git-basiertes Repository verwenden.
 
 ### Geringere Ausfallzeiten
@@ -34,13 +34,13 @@ Wenn Sie statische Assets bereitstellen und Code auf einem anderen Computer als 
 
 ## Bereitstellungssysteme
 
-Wir verwenden die folgenden Begriffe, um die mit der Implementierung verbundenen Systeme zu beschreiben.
+Wir verwenden die folgenden Begriffe, um die Systeme zu beschreiben, die mit der Implementierung verbunden sind.
 
-- **Entwicklungssystem**—Maschine, auf der Entwickler Code anpassen; und installieren Sie Erweiterungen, Designs und Sprachpakete aus Commerce Marketplace. Darüber hinaus nehmen Sie alle Konfigurationsänderungen auf Ihrem Entwicklungssystem vor. Sie können viele Entwicklungssysteme haben.
+- **Entwicklungssystem**—Rechner, auf dem Entwickler Code anpassen und Erweiterungen, Designs und Sprachpakete von Commerce Marketplace installieren. Darüber hinaus nehmen Sie alle Konfigurationsänderungen auf Ihrem Entwicklungssystem vor. Sie können viele Entwicklungssysteme haben.
 
 - **Build-System**—Ein System, auf dem Sie statische Assets bereitstellen und Code für Ihr Produktionssystem kompilieren. Da Sie diese Assets auf einem System erstellen, das sich nicht in der Produktion befindet, wird die Ausfallzeit Ihres Produktionssystems minimiert.
 
-   Auf Ihrem Build-System muss Commerce nicht installiert sein. Es ist nur der Commerce-Code erforderlich, es ist jedoch keine Datenbankverbindung erforderlich. Außerdem muss Ihr Build-System kein physisch separater Server sein.
+  Auf Ihrem Build-System muss Commerce nicht installiert sein. Es ist nur der Commerce-Code erforderlich, es ist jedoch keine Datenbankverbindung erforderlich. Außerdem muss Ihr Build-System kein physisch separater Server sein.
 
 - **Staging-System**—_Optional_. Sie können optional ein Staging-System einrichten, das zum endgültigen Testen des gesamten integrierten Codes einschließlich UAT (User Acceptance Testing) verwendet wird. Richten Sie ein Staging-System auf die gleiche Weise ein wie ein Produktionssystem. Mit Ausnahme der Tatsache, dass Staging nicht Ihr Live Store ist und keine Bestellungen von Kunden verarbeitet, ist es identisch mit der Produktion.
 
@@ -56,21 +56,21 @@ Optional können Sie auch andere Bereitstellungsmethoden verwenden, darunter:
 
 ## Konfiguration verwalten
 
-Modellierung nach [Faktor 3 im 12-Faktor-App-Design](https://12factor.net/config), speichert Commerce nun die Konfiguration für jedes System im System selbst. (Die Entwicklungs-Konfigurationseinstellungen werden im Entwicklungssystem gespeichert, die Produktionseinstellungen werden im Produktionssystem gespeichert.)
+Modellierung nach [Faktor 3 im 12-Faktor-App-Design](https://12factor.net/config), speichert Commerce jetzt die Konfiguration für jedes System im System selbst. (Die Entwicklungs-Konfigurationseinstellungen werden im Entwicklungssystem gespeichert, die Produktionseinstellungen im Produktionssystem.)
 
 Wir bieten eine Möglichkeit, die Konfiguration Ihrer Systeme zu synchronisieren:
 
 - **Freigegebene Konfiguration**—Einstellungen, die weder systemspezifisch noch vertraulich sind.
 
-   Freigegebene Einstellungen sind Einstellungen, die auf Entwicklungs- und Produktionssystemen konsistent sein sollen. Legen Sie die freigegebene Konfiguration in Admin in Ihrer Entwicklung fest (oder Adobe Commerce in der Cloud-Infrastruktur). _Integration_).
+  Freigegebene Einstellungen sind Einstellungen, die auf Entwicklungs- und Produktionssystemen konsistent sein sollen. Legen Sie die freigegebene Konfiguration in Admin in Ihrer Entwicklung fest (oder in Adobe Commerce in der Cloud-Infrastruktur). _Integration_).
 
-   die freigegebene Konfigurationsdatei, `app/etc/config.php`, sollte in die Quell-Code-Verwaltung aufgenommen werden, damit sie von Entwicklungs-, Build- und Produktionssystemen gemeinsam genutzt werden kann.
+  die freigegebene Konfigurationsdatei, `app/etc/config.php`, sollte in die Quell-Code-Verwaltung aufgenommen werden, damit sie von Entwicklungs-, Build- und Produktionssystemen gemeinsam genutzt werden kann.
 
 - **Systemspezifische Konfiguration**—Einstellungen, die je nach System variieren, z. B. Hostnamen und Ports von Suchmaschinen.
 
 - **Sensible Konfiguration**—Einstellungen, die _not_ die Quell-Code-Verwaltung nutzen, da sie persönlich identifizierbare Informationen (PII) oder Einstellungen wie API-Schlüssel oder Kennwörter verfügbar machen.
 
-   Die systemspezifische Konfigurationsdatei, `app/etc/env.php`, sollte _not_ in die Quell-Code-Verwaltung aufgenommen oder anderweitig zwischen Systemen freigegeben werden. Verwenden Sie stattdessen die [`magento config:set` und `magento:sensitive:set` commands](../cli/set-configuration-values.md) um Werte für diese Einstellungen in Ihrem Produktionssystem bereitzustellen.
+  Die systemspezifische Konfigurationsdatei, `app/etc/env.php`, sollte _not_ in die Quell-Code-Verwaltung aufgenommen oder anderweitig zwischen Systemen freigegeben werden. Verwenden Sie stattdessen die [`magento config:set` und `magento:sensitive:set` commands](../cli/set-configuration-values.md) um Werte für diese Einstellungen in Ihrem Produktionssystem bereitzustellen.
 
 >[!INFO]
 >

@@ -119,7 +119,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Erweiterte Mediengalerie und Asset-Verwaltung</td>
+      <td>Verbesserte Mediengalerie und Asset-Verwaltung</td>
       <td></td>
       <td></td>
       <td></td>
@@ -159,7 +159,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Inventory management mit mehreren Quellen</td>
+      <td>Multi-Source-Inventory management</td>
       <td></td>
       <td></td>
       <td></td>
@@ -289,7 +289,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Adobe I/O-Ereignisse für Adobe Commerce</td>
+      <td>Adobe I/O von Ereignissen für Adobe Commerce</td>
       <td></td>
       <td></td>
       <td></td>

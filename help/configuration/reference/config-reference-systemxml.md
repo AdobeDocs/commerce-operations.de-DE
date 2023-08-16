@@ -2,11 +2,11 @@
 title: system.xml-Referenz
 description: Erfahren Sie, wie die XML-Systemdatei die Konfiguration der Commerce-Anwendung verwaltet.
 feature: Configuration, System
-badge: label="Contributated by David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
+badge: label="Beitrag von David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -35,14 +35,14 @@ Das folgende Code-Snippet zeigt das leere Skelett der Datei:
 Im `system.xml` -Datei können vier verschiedene Entitätstypen definiert werden, die miteinander verbunden sind. Im folgenden Abschnitt wird die Beziehung zwischen Registerkarten, Abschnitten, Gruppen und Feldern beschrieben. Im folgenden Screenshot wird die Commerce 2-Systemkonfiguration im Admin-Backend angezeigt.
 Die roten Quadrate markieren die verschiedenen Typen, die in der Variablen `system.xml` Datei:
 
-![Screenshot mit einem konfigurierten Abschnitt in der Admin-Konsole.](../../assets/configuration/magento2-system-configuration.png)
+![Screenshot mit einem konfigurierten Abschnitt im Admin.](../../assets/configuration/magento2-system-configuration.png)
 
 Registerkarten werden verwendet, um verschiedene Konfigurationsbereiche semantisch zu teilen. Jede Registerkarte kann einen oder mehrere Abschnitte enthalten, die auch als Untermenüs referenziert werden können. Ein Abschnitt enthält eine oder mehrere Gruppen.
 Jede Gruppe listet ein oder mehrere Felder auf. Sie können auch eine Gruppe verwenden, um eine allgemeine Beschreibung für die folgenden Felder hinzuzufügen. Wie bereits erwähnt, kann jede Gruppe über ein oder mehrere Felder verfügen. Felder sind die kleinste Entität im Systemkonfigurationskontext.
 
 ## Registerkarten
 
-A `<tab>`-Tag-Verweise auf eine vorhandene oder eine neue Registerkarte in der Systemkonfiguration.
+A `<tab>`-Tag verweist auf eine vorhandene oder eine neue Registerkarte in der Systemkonfiguration.
 
 ### Registerattributreferenz
 
@@ -53,7 +53,7 @@ A `<tab>`-Tag kann die folgenden Attribute aufweisen:
 | `id` | Definiert die Kennung, mit der auf den Abschnitt verwiesen wird. | `typeId` | erforderlich |
 | `translate` | Definiert das zu übersetzende Feld. Bereitstellung `label` um den Titel übersetzbar zu machen. | `string` | optional |
 | `type` | Definiert den Eingabetyp des gerenderten HTML-Elements - standardmäßig `text`. | `string` | optional |
-| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Durch hohe Zahlen wird der Abschnitt an den unteren Rand der Seite verschoben. niedrige Zahlen drücken den Abschnitt nach oben. | `float` | optional |
+| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Hohe Zahlen führen dazu, dass der Abschnitt am Ende der Seite platziert wird, niedrige Zahlen drücken den Abschnitt an den Anfang. | `float` | optional |
 | `class` | Fügt dem gerenderten tab-HTML-Element eine definierte CSS-Klasse hinzu. | `string` | optional |
 
 ### Registerknotenreferenz
@@ -86,7 +86,7 @@ Die `sortOrder`-Attribut mit dem Wert von `10` definiert die Position der Regist
 
 A `<section>`-Tag-Verweise auf einen vorhandenen oder einen neuen Abschnitt in der Systemkonfiguration.
 
-### Referenz zum Abschnittsattribut
+### Abschnittsattributreferenz
 
 A `<section>`-Tag kann die folgenden Attribute aufweisen:
 
@@ -95,7 +95,7 @@ A `<section>`-Tag kann die folgenden Attribute aufweisen:
 | `id` | Definiert die Kennung, mit der auf den Abschnitt verwiesen wird. | `typeId` | erforderlich |
 | `translate` | Definiert das zu übersetzende Feld. Bereitstellung `label` um den Titel übersetzbar zu machen. | `string` | optional |
 | `type` | Definiert den Eingabetyp des gerenderten HTML-Elements. Standardwert ist `text`. | `string` | optional |
-| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Durch hohe Zahlen wird der Abschnitt an den unteren Rand der Seite verschoben. niedrige Zahlen drücken den Abschnitt nach oben. | `float` | optional |
+| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Durch hohe Zahlen wird der Abschnitt an den unteren Rand der Seite verschoben. Niedrige Zahlen führen dazu, dass der Abschnitt nach oben verschoben wird. | `float` | optional |
 | `showInDefault` | Definiert, ob der Abschnitt im standardmäßigen Konfigurationsbereich angezeigt wird. Angeben `1` , um den Abschnitt anzuzeigen, und `0` um den Abschnitt auszublenden. | `int` | optional |
 | `showInStore` | Definiert, ob der Abschnitt auf Store-Ebene angezeigt wird. Angeben `1` , um den Abschnitt anzuzeigen, und `0` um den Abschnitt auszublenden. | `int` | optional |
 | `showInWebsite` | Definiert, ob der Abschnitt auf Website-Ebene angezeigt wird. Angeben `1` , um den Abschnitt anzuzeigen, und `0` um den Abschnitt auszublenden. | `int` | optional |
@@ -116,9 +116,9 @@ A `<section>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 | `resource` | Verweist auf eine ACL-Ressource, um Berechtigungseinstellungen für diesen Abschnitt bereitzustellen. | `typeAclResourceId` |
 | `group` | Definieren Sie eine oder mehrere Untergruppen. | `typeGroup` |
 | `frontend_model` | Gibt ein anderes Frontend-Modell an, um das Rendering zu ändern und die Ausgabe zu ändern. | `typeModel` |
-| `include` | Wird verwendet, um zusätzliche `system_include.xsd` kompatible Dateien. Wird normalerweise verwendet, um eine große `system.xml` Dateien. | `includeType` |
+| `include` | Wird verwendet, um zusätzliche `system_include.xsd` kompatible Dateien. Wird normalerweise verwendet, um eine große `system.xml` -Dateien. | `includeType` |
 
-### Beispiel: Erstellen eines Abschnitts und Zuweisen zu einer Registerkarte
+### Beispiel: Erstellen Sie einen Abschnitt und weisen Sie ihn einer Registerkarte zu
 
 Das folgende Codefragment zeigt die grundlegende Verwendung der Erstellung eines neuen Abschnitts.
 
@@ -154,7 +154,7 @@ A `<group>`-Tag kann die folgenden Attribute aufweisen:
 | `id` | Definiert die Kennung, mit der auf die Gruppe verwiesen wird. | `typeId` | erforderlich |
 | `translate` | Definiert die zu übersetzenden Felder. Bereitstellung `label` um den Titel übersetzbar zu machen. Mehrere Felder sollten durch ein Leerzeichen getrennt werden. | `string` | optional |
 | `type` | Definiert den Eingabetyp des gerenderten HTML-Elements. Standardwert ist `text`. | `string` | optional |
-| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Durch hohe Zahlen wird der Abschnitt an den unteren Rand der Seite verschoben. niedrige Zahlen drücken den Abschnitt nach oben. | `float` | optional |
+| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Durch hohe Zahlen wird der Abschnitt an den unteren Rand der Seite verschoben. Niedrige Zahlen führen dazu, dass der Abschnitt nach oben verschoben wird. | `float` | optional |
 | `showInDefault` | Definiert, ob die Gruppe im standardmäßigen Konfigurationsbereich angezeigt wird. Angeben `1` um die Gruppe anzuzeigen und `0` um die Gruppe auszublenden. | `int` | optional |
 | `showInStore` | Definiert, ob die Gruppe auf Store-Ebene angezeigt wird. Angeben `1` um die Gruppe anzuzeigen und `0` um die Gruppe auszublenden. | `int` | optional |
 | `showInWebsite` | Definiert, ob die Gruppe auf Website-Ebene angezeigt wird. Angeben `1` um die Gruppe anzuzeigen und `0` um die Gruppe auszublenden. | `int` | optional |
@@ -182,7 +182,7 @@ A `<group>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 | `group` | Definieren Sie eine oder mehrere Untergruppen. | `unbounded` |
 | `depends` | Kann verwendet werden, um Abhängigkeiten von anderen Feldern zu deklarieren. Wird verwendet, um bestimmte Felder/Gruppen nur anzuzeigen, wenn ein bestimmtes Feld den Wert `1`. Dieser Knoten erwartet eine `section/group/field`-string. | `depends` |
 | `attribute` | Benutzerdefinierte Attribute können von Frontend-Modellen verwendet werden. Wird normalerweise verwendet, um ein bestimmtes Frontend-Modell dynamischer zu gestalten. | `attribute` |
-| `include` | Wird verwendet, um zusätzliche `system_include.xsd` kompatible Dateien. Wird normalerweise verwendet, um eine große `system.xml` Dateien. | `includeType` |
+| `include` | Wird verwendet, um zusätzliche `system_include.xsd` kompatible Dateien. Wird normalerweise verwendet, um eine große `system.xml` -Dateien. | `includeType` |
 
 >[!WARNING]
 >
@@ -218,7 +218,7 @@ Die oben beschriebene Gruppe definiert die ID `A_UNIQUE_GROUP_ID`, ist in der st
 
 ## Felder
 
-Die `<field>`-Tag wird innerhalb von `<group>`-Tags , um bestimmte Konfigurationswerte zu definieren.
+Die `<field>`-Tag wird innerhalb von `<group>`-Tags zum Definieren bestimmter Konfigurationswerte.
 
 ### Feldattributreferenz
 
@@ -229,7 +229,7 @@ A `<field>`-Tag kann die folgenden Attribute aufweisen:
 | `id` | Definiert die Kennung, mit der auf das Feld verwiesen wird. | `typeId` | erforderlich |
 | `translate` | Definiert die zu übersetzenden Felder. Bereitstellung `label` um den Titel übersetzbar zu machen. Mehrere Felder sollten durch ein Leerzeichen getrennt werden. | `string` | optional |
 | `type` | Definiert den Eingabetyp des gerenderten HTML-Elements. Standardwert ist `text`. | `string` | optional |
-| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Durch hohe Zahlen wird der Abschnitt an den unteren Rand der Seite verschoben. niedrige Zahlen drücken den Abschnitt nach oben. | `float` | optional |
+| `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Hohe Zahlen führen dazu, dass der Abschnitt am Ende der Seite platziert wird, niedrige Zahlen drücken den Abschnitt an den Anfang. | `float` | optional |
 | `showInDefault` | Definiert, ob das Feld im standardmäßigen Konfigurationsbereich angezeigt wird. Angeben `1` zum Anzeigen des Felds und `0` um das Feld auszublenden. | `int` | optional |
 | `showInStore` | Definiert, ob das Feld auf Store-Ebene angezeigt wird. Angeben `1` zum Anzeigen des Felds und `0` um das Feld auszublenden. | `int` | optional |
 | `showInWebsite` | Definiert, ob das Feld auf Website-Ebene angezeigt wird. Angeben `1` zum Anzeigen des Felds und `0` um das Feld auszublenden. | `int` | optional |
@@ -247,7 +247,7 @@ A `<field>`-Tag kann die folgenden Werte für die `type=""` Attribut:
 | `textarea` | Textblock |
 | `select` | Normale Dropdown-Liste erfordert möglicherweise einen benutzerdefinierten `source_model`. Wird auch für `Yes/No` Auswahlen. Siehe `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` für ein Beispiel. |
 | `multiselect` | liken `select` mehrere Optionen sind jedoch gültig. |
-| `button` | Eine Schaltfläche, mit der ein sofortiges Ereignis Trigger wird. Erfordert ein benutzerdefiniertes Frontend-Modell, um den Schaltflächentext und die Aktion zu definieren. Siehe `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` für ein Beispiel. |
+| `button` | Eine Schaltfläche, die ein sofortiges Ereignis Trigger. Erfordert ein benutzerdefiniertes Front-End-Modell, um den Schaltflächentext und die Aktion zu definieren. Siehe `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` für ein Beispiel. |
 | `obscure` | Ein Textfeld mit dem verschlüsselten Wert, der als `****`. Wenn Sie den Typ mit &quot;Inspect Element&quot;im Browser ändern, wird der Wert nicht angezeigt. |
 | `password` | liken `obscure` , außer dass der ausgeblendete Wert nicht verschlüsselt ist und eine erzwungene Änderung des Typs mit &quot;Inspect Element&quot;im Browser den Wert anzeigt. |
 | `file` | Ermöglicht das Hochladen einer Datei zur Verarbeitung. |
@@ -257,7 +257,7 @@ A `<field>`-Tag kann die folgenden Werte für die `type=""` Attribut:
 | `image` | Ermöglicht das Hochladen eines Bildes. |
 | `note` | Ermöglicht das Hinzufügen einer informativen Notiz zur Seite. Dieser Typ erfordert eine `frontend_model` , um die Notiz zu rendern. |
 
-Sie können auch einen benutzerdefinierten Feldtyp erstellen. Dies geschieht oft, wenn eine spezielle Schaltfläche mit einer Aktion erforderlich ist. Dazu sind zwei Hauptelemente erforderlich:
+Es ist auch möglich, einen benutzerdefinierten Feldtyp zu erstellen. Dies geschieht oft, wenn eine spezielle Schaltfläche mit einer Aktion erforderlich ist. Dazu sind zwei Hauptelemente erforderlich:
 
 - Bausteine im `adminhtml` area
 - Festlegen der `type=""` zum Pfad dieses Bausteins
@@ -307,7 +307,7 @@ A `<field>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 >
 >Die Knoten `more_url`, `demo_url`, `requires` und `options` werden durch ein anderes Kernzahlungsmodell definiert und nur einmal verwendet. Diese Knoten können nicht wiederverwendet werden.
 
-### Beispiel: Erstellen von zwei Feldern in einer bestimmten Gruppe
+### Beispiel: Erstellen Sie zwei Felder in einer bestimmten Gruppe
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
@@ -350,7 +350,7 @@ A `<field>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 
 Im obigen Beispiel werden zwei Felder erstellt, die sowohl standardmäßig als auch in der Store-Ansicht sichtbar/konfigurierbar sind. Beide Felder verfügen über einen Kommentar und eine QuickInfo, um den Zweck für den Benutzer zu beschreiben. Die `label`-node kann übersetzt werden.
 Das Feld mit der Kennung `ANOTHER_UNIQUE_FIELD_ID` ist sichtbar, wenn das angegebene Modul im `if_module_enabled` global aktiviert ist. Das Feld validiert seinen Wert auch anhand der Regeln `required-entry` und `no-whitespace`.
-Das Feld mit der Kennung `A_UNIQUE_FIELD_ID` definiert ein anderes Quellmodell, das diese Werte bereitstellt `Yes` und `No`.
+Das Feld mit der Kennung `A_UNIQUE_FIELD_ID` definiert ein anderes Quellmodell, das die Werte `Yes` und `No`.
 
 ### Allgemeine Quellmodelle
 
@@ -381,21 +381,21 @@ Die folgenden Validierungsregeln sind verfügbar:
 
 | Regel | Beschreibung |
 |---------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| `alphanumeric` | Ermöglicht nur Buchstaben, Zahlen, Leerzeichen oder Unterstriche. |
+| `alphanumeric` | Nur Buchstaben, Zahlen, Leerzeichen oder Unterstriche zulässig. |
 | `integer` | Ermöglicht eine positive oder negative nicht-Dezimalzahl. |
 | `ipv4` | Ermöglicht eine gültige IP-v4-Adresse. |
 | `ipv6` | Ermöglicht eine gültige IP v6-Adresse. |
-| `letters-only` | Ermöglicht nur Briefe. Beispiel: `abcABC`. |
+| `letters-only` | Ermöglicht nur Briefe. Beispiel, `abcABC`. |
 | `letters-with-basic-punc` | Ermöglicht nur Briefe oder Satzzeichen.<br>Muss den folgenden Ausdruck übergeben: `/^[a-z\-.,()\u0027\u0022\s]+$/i`. |
 | `mobileUK` | Ermöglicht eine (UK)-Mobiltelefonnummer. |
 | `no-marginal-whitespace` | Deaktiviert Leerzeichen am Anfang oder Ende des Werts. |
 | `no-whitespace` | Unterbricht Leerzeichen. |
 | `phoneUK` | Ermöglicht eine Telefonnummer (UK). |
 | `phoneUS` | Ermöglicht eine Telefonnummer (US). |
-| `required-entry` | Blendet einen leeren Wert aus (äquivalente Validierung als `validate-no-empty`).<br>Validierungsfehlermeldung: &quot;Dies ist ein erforderliches Feld.&quot; |
+| `required-entry` | Blendet einen leeren Wert aus (entsprechende Validierung als `validate-no-empty`).<br>Validierungsfehlermeldung: &quot;Dies ist ein erforderliches Feld.&quot; |
 | `time` | Ermöglicht eine gültige Uhrzeit im 24-Stunden-Format zwischen 00:00 und 23:59 Uhr. Beispiel `15`, `15:05` oder `15:05:48`. |
 | `time12h` | Ermöglicht eine gültige Zeit im 12-Stunden-Format zwischen 12:00 und 11 Uhr:59:17 Uhr Beispiel `3 am`, `11:30 pm`, `02:15:00 pm`. |
-| `validate-admin-password` | Ermöglicht 7 oder mehr Zeichen, wobei sowohl numerische als auch alphabetische Zeichen verwendet werden. |
+| `validate-admin-password` | Ermöglicht 7 oder mehr Zeichen unter Verwendung von numerischen und alphabetischen Zeichen. |
 | `validate-alphanum-with-spaces` | Ermöglicht die Verwendung von Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Leerzeichen. |
 | `validate-clean-url` | Ermöglicht eine gültige URL. Beispiel: `https://www.example.com` oder `www.example.com`. |
 | `validate-currency-dollar` | Ermöglicht einen gültigen (Dollar-)Betrag. Beispiel: 100,00 $. |
@@ -404,7 +404,7 @@ Die folgenden Validierungsregeln sind verfügbar:
 | `validate-email` | Ermöglicht eine gültige E-Mail-Adresse. Beispiel: johndoe@domain.com. |
 | `validate-emailSender` | Ermöglicht eine gültige E-Mail-Adresse. Beispiel: johndoe@domain.com. |
 | `validate-fax` | Ermöglicht eine gültige Faxnummer. Beispiel: 123-456-7890. |
-| `validate-no-empty` | Blendet einen leeren Wert aus (äquivalente Validierung als `requried-entry`).<br>Validierungsfehlermeldung: &quot;Leerer Wert&quot;. |
+| `validate-no-empty` | Blendet einen leeren Wert aus (entsprechende Validierung als `requried-entry`).<br>Überprüfungsfehlermeldung: &quot;Leerer Wert&quot;. |
 | `validate-no-html-tags` | Deaktiviert die Verwendung von HTML-Tags. |
 | `validate-password` | Ermöglicht 6 oder mehr Zeichen. Leerstellen am Anfang und am Ende werden ignoriert. |
 | `validate-phoneLax` | Ermöglicht eine gültige Telefonnummer. Beispiel: (123) 456-7890 oder 123-456-7890. |

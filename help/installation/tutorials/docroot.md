@@ -168,7 +168,7 @@ Der Wechsel zwischen den Modi ist ein wichtiger Schritt, um zu überprüfen, ob 
 
 Gehen Sie in die Storefront eines Webbrowsers, um zu überprüfen, ob alles funktioniert.
 
-1. Öffnen Sie einen Webbrowser und geben Sie den Hostnamen oder die IP-Adresse Ihres Servers in die Adressleiste ein. Beispiel: `http://192.168.33.10`.
+1. Öffnen Sie einen Webbrowser und geben Sie den Hostnamen oder die IP-Adresse Ihres Servers in die Adressleiste ein. Beispiel, `http://192.168.33.10`.
 
    Die folgende Abbildung zeigt eine Beispiel-Storefront-Seite. Wenn es wie folgt angezeigt wird, war Ihre Installation ein Erfolg!
 

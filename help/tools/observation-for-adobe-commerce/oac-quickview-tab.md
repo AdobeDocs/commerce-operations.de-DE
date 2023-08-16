@@ -18,7 +18,7 @@ Die **[!UICONTROL QuickView]** in diesem Tab werden die verschiedenen Warnhinwei
 
 ![Warnhinweise](../../assets/tools/observation-for-adobe-commerce/quickview_alerts.jpg)
 
-Die **[!UICONTROL Alerts]** Frame zeigt unterschiedliche Warnungen an, einschließlich Warnungen bezüglich Festplattenspeicherplatz und Warnhinweisen zur Server-Nutzung innerhalb eines ausgewählten Zeitraums. In diesem Frame werden Datenbanktabellenvorgänge einschließlich `SELECT`, `DELETE`und `UPDATE` über einen ausgewählten Zeitraum hinweg.
+Die **[!UICONTROL Alerts]** Frame zeigt unterschiedliche Warnungen an, einschließlich Warnungen bezüglich Festplattenspeicherplatz und Warnhinweisen zur Server-Nutzung innerhalb eines ausgewählten Zeitraums. In diesem Frame werden Datenbanktabellenvorgänge einschließlich `SELECT`, `DELETE`, und `UPDATE` über einen ausgewählten Zeitraum hinweg.
 
 ## [!UICONTROL Upsize / Downsize by node]
 

@@ -27,11 +27,11 @@ sudo apt -y install nginx
 
 Sie können auch [Build-Nginx aus Quelle](https://www.armanism.com/blog/install-nginx-on-ubuntu)
 
-Nachdem Sie die folgenden Abschnitte abgeschlossen und die Anwendung installiert haben, verwenden wir eine Beispielkonfigurationsdatei für [nginx konfigurieren](#configure-nginx).
+Nach Abschluss der folgenden Abschnitte und Installation der Anwendung wird eine Beispielkonfigurationsdatei für [nginx konfigurieren](#configure-nginx).
 
 ### php-fpm installieren und konfigurieren
 
-Adobe Commerce und Magento Open Source erfordern mehrere [PHP-Erweiterungen](../php-settings.md) , um ordnungsgemäß zu funktionieren. Zusätzlich zu diesen Erweiterungen müssen Sie auch die `php-fpm` -Erweiterung, wenn Sie nginx verwenden.
+Adobe Commerce und Magento Open Source erfordern mehrere [PHP-Erweiterungen](../php-settings.md) ordnungsgemäß funktionieren. Zusätzlich zu diesen Erweiterungen müssen Sie auch die `php-fpm` -Erweiterung, wenn Sie nginx verwenden.
 
 Installieren und Konfigurieren `php-fpm`:
 
@@ -65,7 +65,7 @@ Installieren und Konfigurieren `php-fpm`:
 
    >[!NOTE]
    >
-   >Es wird empfohlen, die Speicherbegrenzung beim Testen von Adobe Commerce und Magento Open Source auf 2 G festzulegen. Siehe [Erforderliche PHP-Einstellungen](../php-settings.md) für weitere Informationen.
+   >Es wird empfohlen, die Speicherbegrenzung beim Testen von Adobe Commerce und Magento Open Source auf 2 G festzulegen. Siehe Abschnitt [Erforderliche PHP-Einstellungen](../php-settings.md) für weitere Informationen.
 
 1. Speichern und beenden Sie den Editor.
 
@@ -77,7 +77,7 @@ Installieren und Konfigurieren `php-fpm`:
 
 ### MySQL installieren und konfigurieren
 
-Siehe [MySQL](../database/mysql.md) für weitere Informationen.
+Siehe Abschnitt [MySQL](../database/mysql.md) für weitere Informationen.
 
 ### Installieren und Konfigurieren
 
@@ -117,7 +117,7 @@ Dieses Beispiel zeigt eine Composer-basierte Installation mithilfe der Befehlsze
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Geben Sie bei Aufforderung Ihre [Authentifizierungsschlüssel](../authentication-keys.md). Ihre _öffentlicher Schlüssel_ ist Ihr Benutzername; Ihre _privater Schlüssel_ ist Ihr Passwort.
+   Geben Sie bei Aufforderung Ihre [Authentifizierungsschlüssel](../authentication-keys.md). Ihre _öffentlicher Schlüssel_ ist Ihr Benutzername; Ihr _privater Schlüssel_ ist Ihr Passwort.
 
 1. Legen Sie Lese- und Schreibberechtigungen für die Webservergruppe fest, bevor Sie die Anwendung installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
@@ -141,7 +141,7 @@ Dieses Beispiel zeigt eine Composer-basierte Installation mithilfe der Befehlsze
    chmod u+x bin/magento
    ```
 
-1. Installieren Sie aus dem [Befehlszeile](../../advanced.md). In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee`, die `db-host` auf demselben Computer (`localhost`) und dass die `db-name`, `db-user`und `db-password` alle `magento`:
+1. Installieren Sie aus dem [Befehlszeile](../../advanced.md). In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee`, die `db-host` auf demselben Computer (`localhost`) und dass die `db-name`, `db-user`, und `db-password` alle `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -231,7 +231,7 @@ Diese Anweisungen gehen davon aus, dass Sie den Standardspeicherort von Ubuntu f
 
 ### Installation überprüfen
 
-Öffnen Sie einen Webbrowser und navigieren Sie zur Basis-URL Ihrer Site zu [Installation überprüfen](../../next-steps/verify.md).
+Öffnen Sie einen Webbrowser und navigieren Sie zur Basis-URL Ihrer Site zu [die Installation überprüfen](../../next-steps/verify.md).
 
 ## CentOS 7
 
@@ -283,7 +283,7 @@ Adobe Commerce und Magento Open Source erfordern mehrere [PHP](../php-settings.m
 
    >[!NOTE]
    >
-   >Es wird empfohlen, die Speicherbegrenzung beim Testen von Adobe Commerce oder Magento Open Source auf 2 G festzulegen. Siehe [Erforderliche PHP-Einstellungen](../php-settings.md) für weitere Informationen.
+   >Es wird empfohlen, die Speicherbegrenzung beim Testen von Adobe Commerce oder Magento Open Source auf 2 G festzulegen. Siehe Abschnitt [Erforderliche PHP-Einstellungen](../php-settings.md) für weitere Informationen.
 
 1. Heben Sie den Kommentar für den Sitzungspfadordner auf und legen Sie den Pfad fest:
 
@@ -356,7 +356,7 @@ Adobe Commerce und Magento Open Source erfordern mehrere [PHP](../php-settings.m
 
 ### MySQL installieren und konfigurieren
 
-Siehe [MySQL](..//database/mysql.md) für weitere Informationen.
+Siehe Abschnitt [MySQL](..//database/mysql.md) für weitere Informationen.
 
 ### Installieren und Konfigurieren
 
@@ -396,7 +396,7 @@ Dieses Beispiel zeigt eine Composer-basierte Installation mithilfe der Befehlsze
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Geben Sie bei Aufforderung Ihre [Authentifizierungsschlüssel](../authentication-keys.md). Ihre _öffentlicher Schlüssel_ ist Ihr Benutzername; Ihre _privater Schlüssel_ ist Ihr Passwort.
+   Geben Sie bei Aufforderung Ihre [Authentifizierungsschlüssel](../authentication-keys.md). Ihre _öffentlicher Schlüssel_ ist Ihr Benutzername; Ihr _privater Schlüssel_ ist Ihr Passwort.
 
 1. Legen Sie Lese- und Schreibberechtigungen für die Webservergruppe fest, bevor Sie die Anwendung installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
@@ -420,7 +420,7 @@ Dieses Beispiel zeigt eine Composer-basierte Installation mithilfe der Befehlsze
    chmod u+x bin/magento
    ```
 
-1. Installieren Sie aus dem [Befehlszeile](../../advanced.md). In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee`, die `db-host` auf demselben Computer (`localhost`) und dass die `db-name`, `db-user`und `db-password` alle `magento`:
+1. Installieren Sie aus dem [Befehlszeile](../../advanced.md). In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee`, die `db-host` auf demselben Computer (`localhost`) und dass die `db-name`, `db-user`, und `db-password` alle `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -455,7 +455,7 @@ Dieses Beispiel zeigt eine Composer-basierte Installation mithilfe der Befehlsze
 
 Es wird empfohlen, nginx mit der `nginx.conf.sample` Konfigurationsdatei, die im Installationsverzeichnis und nginx virtual host bereitgestellt wird.
 
-Bei diesen Anweisungen wird davon ausgegangen, dass Sie den Standardspeicherort von CentOS für den nginx-virtuellen Host verwenden (z. B. `/etc/nginx/conf.d`) und dem Standard-Basisverzeichnis (z. B. `/usr/share/nginx/html`) können Sie diese Speicherorte jedoch an Ihre Umgebung anpassen.
+Diese Anweisungen setzen voraus, dass Sie den Standardspeicherort von CentOS für den nginx-virtuellen Host verwenden (z. B. `/etc/nginx/conf.d`) und dem Standard-Basisverzeichnis (z. B. `/usr/share/nginx/html`) können Sie diese Speicherorte jedoch an Ihre Umgebung anpassen.
 
 1. Erstellen Sie einen neuen virtuellen Host für Ihre Site:
 
@@ -569,4 +569,4 @@ So konfigurieren Sie SELinux und firewalld:
 
 ### Installation überprüfen
 
-Öffnen Sie einen Webbrowser und navigieren Sie zur Basis-URL Ihrer Site zu [Installation überprüfen](../../next-steps/verify.md).
+Öffnen Sie einen Webbrowser und navigieren Sie zur Basis-URL Ihrer Site zu [die Installation überprüfen](../../next-steps/verify.md).

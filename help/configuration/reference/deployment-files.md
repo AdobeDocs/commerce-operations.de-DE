@@ -15,9 +15,9 @@ ht-degree: 0%
 Adobe Commerce bietet Konfigurationsdateien, mit denen Sie eine Komponente einfach anpassen und Konfigurationstypen erstellen können, um die Standardfunktion zu erweitern. Der Bereitstellungsprozess besteht aus der freigegebenen und systemspezifischen Konfiguration für Ihre Installation. Die Implementierungskonfiguration von Commerce ist unterteilt in [`app/etc/config.php`](../reference/config-reference-configphp.md) und [`app/etc/env.php`](../reference/config-reference-envphp.md).
 
 - `app/etc/config.php` ist die _shared_ Konfigurationsdatei.
-Diese Datei enthält die Liste der installierten Module, Designs und Sprachpakete. und freigegebenen Konfigurationseinstellungen.
+Diese Datei enthält die Liste der installierten Module, Designs und Sprachpakete sowie die freigegebenen Konfigurationseinstellungen.
 
-   Checken Sie diese Datei in die Quell-Code-Verwaltung ein und verwenden Sie sie in Ihren Entwicklungs-, Staging- und Produktionssystemen.
+  Checken Sie diese Datei in die Quell-Code-Verwaltung ein und verwenden Sie sie in Ihren Entwicklungs-, Staging- und Produktionssystemen.
 
 - `app/etc/env.php` enthält Einstellungen, die für die Installationsumgebung spezifisch sind.
 
@@ -41,10 +41,10 @@ Auf der nächsten Hierarchieebene werden Elemente in jedem Segment gemäß der M
 
 In den folgenden Abschnitten werden Struktur und Inhalt der Bereitstellungskonfiguration beschrieben:
 
-- Verwalten installierter Module
+- Installierte Module verwalten
 - Systemspezifische Konfiguration
 
-## Verwalten installierter Module
+## Installierte Module verwalten
 
 Die `config.php` enthält eine Liste der installierten Module. Adobe Commerce bietet sowohl Befehlszeilen- als auch webbasierte Dienstprogramme zum Verwalten von Modulen (Installieren, Deinstallieren, Aktivieren, Deaktivieren oder Aktualisieren).
 
@@ -76,6 +76,6 @@ return array (
 
 Der Wert `1` oder `0` gibt an, ob ein Modul aktiviert oder deaktiviert ist.
 
-Deaktivierte Module werden von der Commerce-Anwendung nicht erkannt. Mit anderen Worten, sie nehmen nicht an der Zusammenführung von Konfiguration, Abhängigkeitsinjektion, Ereignissen, Plug-ins usw. teil. Deaktivierte Module ändern weder die Storefront noch den Administrator und beeinflussen das Routing nicht.
+Deaktivierte Module werden von der Commerce-Anwendung nicht erkannt, d. h. sie beteiligen sich nicht an der Zusammenführung von Konfigurationen, an der Injektion von Abhängigkeiten, Ereignissen, Plug-ins usw. Deaktivierte Module beeinflussen weder die Storefront noch den Administrator und wirken sich nicht auf das Routing aus.
 
 Der einzige praktische Unterschied zwischen einem deaktivierten Modul und einem fehlenden Modul in der Codebasis besteht darin, dass ein deaktiviertes Modul vom Autoloader gefunden wird und seine Klassen und Konstanten für die Wiederverwendung in anderem Code verfügbar sind.

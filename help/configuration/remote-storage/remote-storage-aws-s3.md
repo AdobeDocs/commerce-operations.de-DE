@@ -16,7 +16,7 @@ Die [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicherdi
 
 >[!WARNING]
 >
->Adobe rät dringend von der Verwendung öffentlicher Buckets ab, da sie ein ernsthaftes Sicherheitsrisiko darstellt.
+>Adobe rät dringend von der Verwendung öffentlicher Buckets ab, da dies ein ernsthaftes Sicherheitsrisiko darstellt.
 
 **So aktivieren Sie Remote-Speicher mit dem AWS S3-Adapter**:
 
@@ -36,7 +36,7 @@ Die [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicherdi
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
-1. Synchronisieren Sie Mediendateien mit Remote-Speicher.
+1. Mediendateien mit Remote-Speicher synchronisieren.
 
    ```bash
    bin/magento remote-storage:sync

@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Skalierte Bereitstellung von Erlebnissen mit Adobe Commerce, Commerce Integration Framework und Adobe Experience Manager
 
-Ein empfohlenes Integrationsmuster zwischen AEM und Adobe Commerce, das CIF als Connector verwendet, besteht darin, dass AEM Eigentümer der Präsentationsschicht (das &quot;Glas&quot;) und Adobe Commerce ist, um das Commerce-Backend als Headless-Backend zu nutzen. Dieser Integrationsansatz nutzt die Stärken jeder Anwendung: die Authoring-, Personalisierungs- und Omnichannel-Funktionen für AEM- und E-Commerce-Vorgänge von Adobe Commerce.
+Ein empfohlenes Integrationsmuster zwischen AEM und Adobe Commerce, das CIF als Connector verwendet, besteht darin, dass AEM Eigentümer der Präsentationsschicht (das &quot;Glas&quot;) und Adobe Commerce ist, um das Commerce-Backend als &quot;Headless&quot;-Backend zu nutzen. Dieser Integrationsansatz nutzt die Stärken jeder Anwendung: die Authoring-, Personalisierungs- und Omnichannel-Funktionen von AEM- und E-Commerce-Operationen von Adobe Commerce.
 
 In einer AEM/CIF/Adobe Commerce-Umgebung gelangen die Besucher der E-Commerce-Site zunächst zu AEM. AEM prüft, ob die angeforderte Seite im Dispatcher-Cache verfügbar ist. Wenn die Seite vorhanden ist, wird diese zwischengespeicherte Seite dem Besucher bereitgestellt und es ist keine weitere Verarbeitung erforderlich. Wenn der Dispatcher die angeforderte Seite nicht enthält oder abgelaufen ist, fordert der Dispatcher den AEM-Herausgeber auf, die Seite zu erstellen, wobei der Herausgeber Adobe Commerce für E-Commerce-Daten aufruft, um die Seite bei Bedarf zu erstellen. Die erstellte Seite wird dann an den Dispatcher weitergeleitet, um für den Besucher bereitzustellen. Anschließend wird sie zwischengespeichert, was verhindert, dass weitere Ladevorgänge von anderen Besuchern auf den Servern bei nachfolgenden Anfragen an dieselbe Seite platziert werden.
 
 ![Übersichtsdiagramm zur Architektur von Adobe Experience Manager und Adobe Commerce](../assets/commerce-at-scale/overview.png)
 
-Eine Kombination aus Server-seitigem Rendering und Client-seitigem Rendering kann im AEM/CIF/Adobe Commerce-Modell verwendet werden: Server-seitiges Rendering zur Bereitstellung von statischem Inhalt und Client-seitigem Rendering, um häufig wechselnde oder persönliche dynamische Inhalte bereitzustellen, indem Adobe Commerce für bestimmte Komponenten direkt aus dem Browser des Benutzers heraus aufgerufen wird.
+Eine Kombination aus Server-seitigem Rendering und Client-seitigem Rendering kann im AEM/CIF/Adobe Commerce-Modell verwendet werden: Server-seitiges Rendering zur Bereitstellung von statischen Inhalten und Client-seitigem Rendering, um häufig wechselnde oder persönliche dynamische Inhalte bereitzustellen, indem Adobe Commerce direkt für bestimmte Komponenten aus dem Browser des Benutzers heraus aufgerufen wird.
 
 Ein Beispiel für die verschiedenen Komponenten auf einer Produktdetailseite in einem Beispiel AEM E-Commerce-Storefront finden Sie im folgenden Beispiel:
 

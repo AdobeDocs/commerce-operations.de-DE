@@ -1,13 +1,13 @@
 ---
 title: Organisatorische Struktur
 description: Siehe ein Beispiel für eine typische Organisationsstruktur für ein E-Commerce-Projekt.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: f82da314-a168-4d16-8679-827a44375769
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
 
 ---
-
 
 # Organisatorische Struktur
 

@@ -1,13 +1,13 @@
 ---
 title: Übersicht über das Konfigurationshandbuch
 description: Erfahren Sie mehr über alle konfigurierbaren Funktionen und Dienste für Ihre Adobe Commerce- oder Magento Open Source-Anwendung.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurationshandbuch
 
@@ -16,7 +16,7 @@ Die _Konfiguration_ Das Handbuch bietet Referenzmaterial und eingeschränkte Anl
 - [Installation](../configuration/bootstrap/initialization.md)
 - [Bereitstellungsmethoden](../configuration/deployment/overview.md)
 - [Zwischenspeicheroptionen](../configuration/cache/caching-overview.md)
-- [Verwaltung von Cron-Aufträgen](../configuration/cron/custom-cron.md)
+- [Cron-Auftragsverwaltung](../configuration/cron/custom-cron.md)
 - [Befehlszeilenverwendung](../configuration/cli/config-cli.md)
 - [Protokollanpassung](../configuration/logs/custom-logging.md)
 - [Sicherheitsoptionen](../configuration/security/overview.md)
@@ -29,4 +29,4 @@ Es gibt entsprechende Themen im [Benutzerhandbuch für Commerce](https://docs.ma
 
 ## Cloud-Konfiguration
 
-[!DNL Commerce on cloud infrastructure] verwendet eine [Satz von Konfigurationsdateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) , um die Commerce-Anwendungsfunktionen und -Dienste in den gehosteten Umgebungen zu aktualisieren. Aufgrund der Einzigartigkeit der Cloud-gehosteten Adobe-Umgebungen sollten Sie immer die [Cloud-Handbuch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) für zusätzliche Konfigurationsanforderungen.
+[!DNL Commerce on cloud infrastructure] verwendet eine [Satz von Konfigurationsdateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) , um die Commerce-Anwendungsfunktionen und -Dienste in den gehosteten Umgebungen zu aktualisieren. Aufgrund der Einzigartigkeit der Adobe-Cloud-gehosteten Umgebungen sollten Sie immer die [Cloud-Handbuch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) für zusätzliche Konfigurationsanforderungen.

@@ -6,7 +6,7 @@ exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Beispiel:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-Sie können dann alle leeren Hosts löschen, wenn Sie den Commerce-Cache aktualisieren (auch als _Reinigung_ den Cache) im Admin oder über die Befehlszeile verwenden.
+Sie können dann alle leeren Hosts bereinigen, wenn Sie den Commerce-Cache aktualisieren (auch als _Reinigung_ den Cache) im Admin oder über die Befehlszeile verwenden.
 
 Um den Cache mit dem Admin zu aktualisieren, klicken Sie auf **SYSTEM** > Tools > **Cacheverwaltung** Klicken Sie auf **Magento-Cache leeren** oben auf der Seite. (Sie können auch einzelne Cache-Typen aktualisieren.)
 

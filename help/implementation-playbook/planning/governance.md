@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Die Projektverwaltung ist eine Aufsichtsfunktion, die mit der Leitungsstruktur der Organisation abgestimmt ist und den Projektlebenszyklus umfasst. Es bietet dem Projektmanager und dem Team Struktur, Prozesse, Entscheidungsmodelle und Tools für die Verwaltung und Kontrolle des Projekts und gewährleistet gleichzeitig die erfolgreiche Bereitstellung des Projekts. Die Projektverwaltung ist ein wesentliches Element, insbesondere für komplexe und strategische Projekte.
 
-Das Governance-Modell definiert, dokumentiert und kommuniziert benutzerdefinierte und effektive Vorgehensweisen, um eine umfassende Methode zur Steuerung des Projekts und zur Gewährleistung des Erfolgs auf allen Ebenen regelmäßige Sichtbarkeit zu bieten. Er enthält einen Rahmen für die Beschlussfassung. Definition von Rollen, Verantwortlichkeiten und Verbindlichkeiten für die Durchführung des Projekts; und bestimmen die Effektivität. Die Governance-Struktur erstreckt sich vom Ausführungsteam bis hin zum Executive Management und definiert die Aktivitäten, Berichte, Eskalationen und den Informationsfluss.
+Das Governance-Modell definiert, dokumentiert und kommuniziert benutzerdefinierte und effektive Vorgehensweisen, um eine umfassende Methode zur Steuerung des Projekts und zur Gewährleistung des Erfolgs auf allen Ebenen regelmäßige Sichtbarkeit zu bieten. Es enthält einen Rahmen für die Entscheidungsfindung, definiert Rollen, Verantwortlichkeiten und Verbindlichkeiten für die Durchführung des Projekts und bestimmt die Wirksamkeit. Die Governance-Struktur erstreckt sich vom Ausführungsteam bis hin zum Executive Management und definiert die Aktivitäten, Berichte, Eskalationen und den Informationsfluss.
 
 ![Infografik zur Projektverwaltung](../../assets/playbooks/project-governance.svg)
 
@@ -73,7 +73,7 @@ Herausforderungen oder Änderungen treten während der gesamten Dauer eines Proj
 <table>
 <thead>
   <tr>
-    <th>Leistungsmessung</th>
+    <th>Schlüsselleistungsmessung</th>
     <th>Maßeinheit</th>
     <th>Gemeldete Metriken</th>
   </tr>

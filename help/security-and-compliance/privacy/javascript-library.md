@@ -1,17 +1,17 @@
 ---
-title: Privacy JavaScript Library
+title: Datenschutz-JavaScript-Bibliothek
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Tools auf personenbezogene Daten von Adobe Commerce und Magento Open Source zugreifen und diese löschen können.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-
 <!-- TODO: Remove this topic and redirect to the adobe-privacy-javascript-library.md when the Adobe privacy library has been integrated with Commerce. -->
 
-# Privacy JavaScript Library
+# Datenschutz-JavaScript-Bibliothek
 
 Die Datenschutz-JavaScript-Bibliothek ist eine Reihe von Tools, mit denen Sie einen Prozess für den Zugriff auf und das Löschen von durch Adobe Commerce und Magento Open Source erfassten privaten Daten erstellen können.
 

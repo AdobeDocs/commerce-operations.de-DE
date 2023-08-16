@@ -1,15 +1,15 @@
 ---
-title: Konfigurieren des Sperranbieters
+title: Sperranbieter konfigurieren
 description: Führen Sie diese Schritte aus, um zu verhindern, dass die doppelten Cron-Aufträge und Cron-Gruppen auf Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung ausgeführt werden.
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
-
-# Konfigurieren des Sperranbieters
+# Sperranbieter konfigurieren
 
 Bevor Sie diesen Befehl ausführen, müssen Sie Folgendes tun: *oder* Sie müssen [Installieren des Programms](../advanced.md):
 

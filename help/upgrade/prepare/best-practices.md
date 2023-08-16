@@ -1,6 +1,6 @@
 ---
 title: Best Practices
-description: Verwenden Sie von der Adobe empfohlene Best Practices, um den Aktualisierungsprozess für Ihre Adobe Commerce- und Magento Open Source-Projekte zu verwalten.
+description: Verwenden Sie die von Adobe empfohlenen Best Practices, um den Aktualisierungsprozess für Ihre Adobe Commerce- und Magento Open Source-Projekte zu verwalten.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
@@ -16,7 +16,7 @@ In diesem Thema werden die Maßnahmen aufgelistet, die Sie ergreifen sollten, um
 
 >[!TIP]
 >
->Diese Empfehlungen basieren auf Best Practices, die durch Beweise für ihre Wirkung und Wirksamkeit von Partnern, Händlern, Experten für Adoben und der Community untermauert werden.
+>Diese Empfehlungen basieren auf Best Practices, die durch Beweise für ihre Wirkung und Wirksamkeit von Partnern, Händlern, Adobe-Experten und der Community unterstützt werden.
 
 ## Welche Auswirkungen hat ein Upgrade?
 
@@ -24,7 +24,7 @@ Es ist wichtig, die Variablen zu verstehen, die die Komplexität eines Upgrades 
 
 Der Aufwand für die Aktualisierung Ihrer Adobe Commerce-Instanz hängt von folgenden Faktoren ab:
 
-- **Wie haben Sie Ihre Site erstellt?** Der Umfang der benutzerdefinierten Arbeit und die Anzahl der installierten Module von Drittanbietern wirken sich stark auf die Komplexität einer Aktualisierung aus. Die Qualität der benutzerdefinierten Arbeit und der Module kann bestimmen, ob eine Aktualisierung reibungslos verläuft.
+- **Wie haben Sie Ihre Site erstellt?** Der Umfang der benutzerdefinierten Arbeit und die Anzahl der installierten Module von Drittanbietern wirken sich stark auf die Komplexität eines Upgrades aus. Die Qualität der benutzerdefinierten Arbeit und der Module kann bestimmen, ob eine Aktualisierung reibungslos verläuft.
 
 - **Überspringen Sie mehrere Versionen?** Das Überspringen von Versionen macht das nächste Upgrade komplexer. Ein Upgrade von aufeinander folgenden Versionen macht den Prozess einfacher und billiger.
 
@@ -49,15 +49,15 @@ Beginnen Sie mit der Übernahme der Adobe Commerce Extensibility-Plattform, fall
 
 - **UI-Erweiterung**. Erweitern und Entwickeln Sie Ihre Storefront unabhängig von Backend und Middleware mit [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **API-Erweiterung**. Verwendung [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) Erweiterung der Web-API-Schicht durch Weiterentwicklung des Diagrammdatenmodells und Ausführung von Lambda-Funktionen direkt von der Diagrammebene aus.
+- **API-Erweiterung**. Verwendung [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) Erweiterung der Web-API-Schicht durch Weiterentwicklung des Diagrammdatenmodells und Ausführung von Lambda-Funktionen direkt von der Diagrammschicht aus.
 
-- **Adobe I/O Middleware und Dienstleistungen**. Verbinden Sie Ihre Systeme mit Adobe Commerce mithilfe der Middleware-Software von Adobe und einer auf [Adobe I/O](https://www.adobe.io/). Darüber hinaus können Sie die Kernplattformfunktionen erweitern, indem Sie das Standardverhalten mit Ihrer eigenen Geschäftslogik überschreiben, die auf Adobe I/O ausgeführt wird.
+- **Adobe I/O Middleware und Dienstleistungen**. Verbinden Sie Ihre Systeme mit Adobe Commerce mithilfe von Adobe Middleware und einer Suite von App-Verbindungen, die auf [Adobe I/O](https://www.adobe.io/). Darüber hinaus können Sie die Kernplattformfunktionen erweitern, indem Sie das Standardverhalten mit Ihrer eigenen Geschäftslogik überschreiben, die auf Adobe I/O ausgeführt wird.
 
 ### Planen von Upgrades
 
 Da wir die Funktionen von Adobe Commerce kontinuierlich erweitern, ist es wichtig, dass Sie die neueste Version entwickeln und eine Upgrade-Strategie in Ihre Projektpläne aufnehmen. Auf diese Weise können Sie sicher, konform und auf dem neuesten Stand der neuesten Verbesserungen bleiben, mit denen Sie Ihre Umsätze schneller steigern, effizienter arbeiten und Ihrem Wettbewerb jetzt und in die Zukunft voraus bleiben können.
 
-Um Ihnen bei der Planung und dem Budget von Upgrades zu helfen, sollten Sie unsere [Release-Zeitplan](https://devdocs.magento.com/release). Planen Sie die Aktualisierungsaufgaben im Rückstand Ihres Teams vor der Zeit. Ziel ist es, diese Arbeit mit GA abzuschließen.
+Um Ihnen bei der Planung und dem Budget von Upgrades zu helfen, sollten Sie unsere [Veröffentlichungszeitplan](https://devdocs.magento.com/release). Planen Sie die Aktualisierungsaufgaben im Rückstand Ihres Teams vor der Zeit. Ziel ist es, diese Arbeit mit GA abzuschließen.
 
 - Verwenden Sie die Vorabversion, um mehr über jede neue Version zu erfahren. Die Vorabversion ist der allgemeine Verfügbarkeitscode, der zwei Wochen vor der allgemeinen Verfügbarkeit für Adobe Commerce-Händler und alle Partner verfügbar ist. Wenn Sie über mehrere Stores verfügen, verwenden Sie die Vorabversion in Ihrem Basisspeicher und stellen Sie sicher, dass Ihre benutzerdefinierten Module und Designs mit ihr kompatibel sind.
 
@@ -85,4 +85,4 @@ Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zei
 
 Verwenden Sie eine Staging-Umgebung, um Ihre Aktualisierung zu testen und zu validieren, bevor Sie zur Produktion wechseln.
 
-Verwenden Sie eine **Wartungsseite**. Durch die vorzeitige Vorbereitung dieser Seite können Sie mit Ihren Kunden kommunizieren und ihnen mitteilen, dass die Arbeit im Hintergrund stattfindet. Diese Seite sollte einige Minuten lang sichtbar sein. Wenn jedoch ein Problem auftritt, müssen Sie sie möglicherweise länger verwenden. Wenn Sie über die entsprechenden Inhalte und Designs für Ihre Wartungsseite verfügen, erhalten Ihre Benutzer ein gutes Erlebnis, selbst wenn Ihr Store nicht verfügbar ist.
+Verwenden Sie eine **Wartungsseite**. Wenn Sie diese Seite vorab vorbereiten, können Sie mit Ihren Kunden kommunizieren und ihnen mitteilen, dass die Arbeit im Hintergrund stattfindet. Diese Seite sollte einige Minuten lang sichtbar sein. Wenn jedoch ein Problem auftritt, müssen Sie sie möglicherweise länger verwenden. Wenn Sie über die entsprechenden Inhalte und Designs für Ihre Wartungsseite verfügen, erhalten Ihre Benutzer ein gutes Erlebnis, selbst wenn Ihr Store nicht verfügbar ist.

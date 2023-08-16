@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Installieren von Varnish
 
-Die Installation der Varnish-Software geht über den Rahmen dieses Handbuchs hinaus. Weitere Informationen zur Installation von Varnish finden Sie unter:
+Die Installation der Varnish-Software geht über diesen Leitfaden hinaus. Weitere Informationen zur Installation von Varnish finden Sie unter:
 
 - [Installationshandbuch](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Anleitungen zur Installation von Vars](https://www.varnish-cache.org/docs)
@@ -20,7 +20,7 @@ Die Installation der Varnish-Software geht über den Rahmen dieses Handbuchs hin
 
 >[!INFO]
 >
->Dieses Thema wurde für Varnish unter CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, sind einige Befehle wahrscheinlich anders. Weitere Informationen finden Sie in der vorherigen Dokumentation .
+>Dieses Thema wurde für Varnish auf CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, sind einige Befehle wahrscheinlich anders. Weitere Informationen finden Sie in der vorherigen Dokumentation .
 >
 >Wenn Sie Varnish-Module (vmods) installieren möchten, z. B. den Saint-Modus, sollten Sie Varnish installieren, indem Sie den Code kompilieren, anstatt über ein Paket zu installieren. Siehe [Saint-Modus](config-varnish-advanced.md#saint-mode) für weitere Details.
 
@@ -32,7 +32,7 @@ Die Installation der Varnish-Software geht über den Rahmen dieses Handbuchs hin
 varnishd -V
 ```
 
-Beispiel:
+Ein Beispiel:
 
 ```terminal
 varnishd (varnish-6.3.2 revision 199de9b)

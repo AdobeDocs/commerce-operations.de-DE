@@ -1,13 +1,13 @@
 ---
 title: Durchführen eines Upgrades
 description: Führen Sie diese Schritte aus, um ein Adobe Commerce- oder Magento Open Source-Projekt zu aktualisieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
 
 ---
-
 
 # Durchführen eines Upgrades
 
@@ -42,7 +42,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
    bin/magento maintenance:enable
    ```
 
-   Siehe [Wartungsmodus aktivieren oder deaktivieren](../../installation/tutorials/maintenance-mode.md) für zusätzliche Optionen. Optional können Sie eine [Benutzerdefinierte Wartungsmodusseite](../troubleshooting/maintenance-mode-options.md).
+   Siehe [Aktivieren oder Deaktivieren des Wartungsmodus](../../installation/tutorials/maintenance-mode.md) für zusätzliche Optionen. Optional können Sie eine [Benutzerdefinierte Wartungsmodusseite](../troubleshooting/maintenance-mode-options.md).
 
 1. Der Start des Aktualisierungsprozesses während der Ausführung asynchroner Prozesse, z. B. von Verbrauchern in der Nachrichtenwarteschlange, kann zu Datenbeschädigungen führen. Um Datenbeschädigungen zu vermeiden, deaktivieren Sie alle Cron-Aufträge.
 
@@ -88,15 +88,15 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
 
    - _Adobe Commerce:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
+     ```
 
    - _Magento Open Source:_
 
-      ```bash
-      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
-      ```
+     ```bash
+     composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
+     ```
 
 1. Aktualisieren Sie Ihre Instanz mithilfe der folgenden `composer require-commerce` Befehlssyntax:
 
@@ -106,9 +106,9 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
 
    Zu den Befehlsoptionen gehören:
 
-   - `<product>` —(Erforderlich) Das zu aktualisierende Paket. Bei ortsansässigen Anlagen muss dieser Wert `product-community-edition` oder `product-enterprise-edition`.
+   - `<product>` —(Erforderlich) Das zu aktualisierende Paket. Bei ortsansässigen Anlagen muss dieser Wert entweder `product-community-edition` oder `product-enterprise-edition`.
 
-   - `<version>` —(Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel: `2.4.3`.
+   - `<version>` —(Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel, `2.4.3`.
 
    - `--no-update` —(Erforderlich) Deaktiviert die automatische Aktualisierung der Abhängigkeiten.
 
@@ -117,7 +117,8 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
    - `--force-root-updates` —(Optional) Überschreibt alle in Konflikt stehenden benutzerdefinierten Werte mit den erwarteten Magento-Werten.
 
    - `--help` —(Optional) Bietet Nutzungsdetails zum Plug-in.
-   Wenn `--interactive-root-conflicts` nor `--force-root-updates` festgelegt sind, behält der Befehl die vorhandenen Werte bei, die sich in einem Konflikt befinden, und zeigt eine Warnmeldung an. Weitere Informationen zum Plug-in finden Sie im Abschnitt [Plug-in Usage README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+
+   Wenn `--interactive-root-conflicts` nor `--force-root-updates` festgelegt sind, behält der Befehl die vorhandenen Werte bei, die in Konflikt stehen, und zeigt eine Warnmeldung an. Weitere Informationen zum Plug-in finden Sie im Abschnitt [Plug-in Usage README](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Aktualisieren Sie die Abhängigkeiten.
 
@@ -197,7 +198,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## Aktualisieren von Metadaten
 
-1. Aktualisieren Sie die `"name"`, `"version"`und `"description"` -Felder in `composer.json` Datei nach Bedarf.
+1. Aktualisieren Sie die `"name"`, `"version"`, und `"description"` -Felder in der `composer.json` Datei nach Bedarf.
 
    >[!NOTE]
    >
@@ -227,7 +228,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
    >
    >Wenn Sie einen anderen Cache-Speicher als das Dateisystem verwenden, z. B. Redis oder Memcached, müssen Sie den Cache auch dort manuell löschen.
 
-1. Aktualisieren Sie das Datenbankschema und die Daten.
+1. Datenbankschema und Daten aktualisieren.
 
    ```bash
    bin/magento setup:upgrade
@@ -253,7 +254,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 Wenn die Anwendung mit einer  `We're sorry, an error has occurred while generating this email.` error:
 
-1. Zurücksetzen [Eigentümer und Berechtigungen des Dateisystems](../../installation/prerequisites/file-system/configure-permissions.md) als Benutzer mit `root` Berechtigungen.
+1. Zurücksetzen [Eigentümer und Berechtigungen des Dateisystems](../../installation/prerequisites/file-system/configure-permissions.md) als Benutzer mit `root` -Berechtigungen.
 1. Löschen Sie die folgenden Ordner:
    - `var/cache/`
    - `var/page_cache/`

@@ -1,13 +1,13 @@
 ---
 title: Übersetzungswörterbücher und Sprachpakete
 description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete erstellen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 0%
 
 ---
-
 
 # Lokalisierung
 
@@ -47,13 +47,13 @@ In der folgenden Tabelle werden Parameter und Werte erläutert:
 
 | Parameter | Wert | Erforderlich? |
 |--- |--- |--- |
-| `<path to directory to translate>` | Pfad zu einem Verzeichnis mit übersetzbarem Code; d. h. PHP-, PHTML- oder XML-Dateien mit zu übersetzenden Ausdrücken.<br><br>Das Tool beginnt mit der Suche nach dem Pfad, den Sie eingeben, und durchsucht alle darin enthaltenen Dateien und Unterverzeichnisse.<br><br>Verwenden Sie diesen Parameter nicht, wenn Sie `-m --magento`. | Ja (Wörterbücher), nein (Pakete). |
-| `-m --magento` | Erforderlich zum Erstellen eines Sprachpakets aus diesem Übersetzungswörterbuch. Durchsucht bei Verwendung die Verzeichnisse, die bin/magento enthalten. Mit dieser Option werden Designs oder Module zu jeder Zeile im Wörterbuch hinzugefügt.<br><br>Beispiel:<br><br>&quot;Keine Elemente gefunden&quot;, &quot;Keine Elemente gefunden&quot;, Modul, Magento_Wishlist | Nein |
+| `<path to directory to translate>` | Pfad zu einem Verzeichnis mit übersetzbarem Code, also PHP-, PHTML- oder XML-Dateien, die zu übersetzende Phrasen enthalten.<br><br>Das Tool sucht nach dem Pfad, den Sie eingeben, und durchsucht alle darin enthaltenen Dateien und Unterverzeichnisse.<br><br>Verwenden Sie diesen Parameter nicht, wenn Sie `-m --magento`. | Ja (Wörterbücher), nein (Pakete). |
+| `-m --magento` | Erforderlich zum Erstellen eines Sprachpakets aus diesem Übersetzungswörterbuch. Durchsucht bei Verwendung die Verzeichnisse, die bin/magento enthalten. Mit dieser Option werden Designs oder Module zu jeder Zeile im Wörterbuch hinzugefügt.<br><br>Ein Beispiel:<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | Nein |
 | `-o --output="<path>"` | Gibt den absoluten Dateisystempfad und Dateinamen der zu erstellenden CSV-Datei des Übersetzungswörterbuchs an. Beim eingegebenen Wert wird zwischen Groß- und Kleinschreibung unterschieden. Der Name der CSV-Datei muss genau mit dem Gebietsschema-Namen übereinstimmen, einschließlich der Groß-/Kleinschreibung der Zeichen.<br><br>Wenn Sie diesen Parameter weglassen, wird die Ausgabe zum &quot;stdout&quot;weitergeleitet. | Nein |
 
 >[!INFO]
 >
->Um ein Sprachpaket aus einem Übersetzungswörterbuch zu erstellen, müssen Sie _must_ die `-m|--magento` -Option.
+>Um ein Sprachpaket aus einem Übersetzungswörterbuch zu erstellen, _must_ die `-m|--magento` -Option.
 
 ### Übersetzungsrichtlinien
 
@@ -63,7 +63,7 @@ Beachten Sie beim Übersetzen von Wörtern und Ausdrücken die folgenden Richtli
 - Verwenden Sie beim Erstellen von Wörterbüchern für Gebietsschemata die standardmäßigen Commerce-Zeichenfolgen.
 - Achten Sie beim Übersetzen auf Platzhalter: `%1`, `%2`
 
-Commerce verwendet die Platzhalter zum Einfügen von Kontextwerten. , _not_ wird für Übersetzungen verwendet. Beispiel:
+Commerce verwendet die Platzhalter zum Einfügen von Kontextwerten. Sie sind _not_ wird für Übersetzungen verwendet. Beispiel:
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -75,7 +75,7 @@ Füllt mit einem Wert:
 Product 'Multimeter-2000' has been added to shopping cart.
 ```
 
-Der resultierende Satz muss mindestens einen von jedem Platzhalter enthalten. Angenommen, es gibt Platzhalter von `%1` nach `%3` im ursprünglichen Satz. Die Übersetzung kann beliebig viele dieser Platzhalter enthalten, es muss jedoch mindestens ein Vorkommen von `%1`, `%2`und `%3`. Die Übersetzung darf keine Platzhalterwerte enthalten, die nicht im ursprünglichen Wert vorhanden sind (z. B. `%4`, `%5`usw.).
+Der resultierende Satz muss mindestens einen von jedem Platzhalter enthalten. Angenommen, es gibt Platzhalter von `%1` nach `%3` im ursprünglichen Satz. Die Übersetzung kann beliebig viele dieser Platzhalter enthalten, es muss jedoch mindestens ein Vorkommen von `%1`, `%2`, und `%3`. Die Übersetzung darf keine Platzhalterwerte enthalten, die nicht im ursprünglichen Wert vorhanden sind (z. B. `%4`, `%5`usw.).
 
 Beispiel für die Übersetzung einer Wortgruppe:
 
@@ -109,7 +109,7 @@ In der folgenden Tabelle werden die Parameter und Werte für den Sprachpaket-Bef
 | `<source>` | Absoluter Dateisystempfad und Dateiname einer CSV-Datei, die das kombinierte Übersetzungswörterbuch und die für die Aufschlüsselung in ein Sprachpaket erforderlichen Metainformationen enthält.<br><br>Verwendung [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) , um die CSV-Datei zu erstellen, und erstellen Sie dann das Sprachpaket, wie hier beschrieben: [Erstellen von Ordnern und Dateien](#m2devgde-xlate-files). | Ja |
 | `<locale>` | [ISO 639-1] (Sprache) und [ISO 3166] (country) Die Kennung der Sprache, die als Dateiname für alle resultierenden CSV-Dateien verwendet wird. Beispiele: `de_DE`, `pt_PT`, `pt_BR`. | Ja |
 | `-m --mode` | Wenn eine Zieldatei vorhanden ist, gibt an, ob das vorhandene Sprachpaket ersetzt oder mit dem neuen Sprachpaket zusammengeführt werden soll. Die Zusammenführung überschreibt alle vorhandenen Ausdrücke und fügt neue hinzu.<br><br>Werte: Zusammenführen oder Ersetzen (Standard). | Nein |
-| `-d --allow-duplicates` | Fügen Sie diese Option hinzu, um Duplikate im Sprachpaket zuzulassen. Andernfalls schlägt der Befehl mit einem Fehler fehl, wenn in mehreren Einträgen mit unterschiedlichen Übersetzungen dieselbe Wortgruppe vorkommt. | Nein |
+| `-d --allow-duplicates` | Fügen Sie diese Option hinzu, um Duplikate in das Sprachpaket zuzulassen. Andernfalls schlägt der Befehl mit einem Fehler fehl, wenn in mehreren Einträgen mit unterschiedlichen Übersetzungen dieselbe Wortgruppe vorkommt. | Nein |
 
 ### Erstellen von Ordnern und Dateien
 
@@ -117,7 +117,7 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 - Erforderliche Lizenzdateien
 - `composer.json`
-- `registration.php` dass [Register] Sprachpaket
+- `registration.php` dass [Register] das Sprachpaket
 - [`language.xml`](#language-package-languagexml) Meta-Informationsdatei
 
 >[!INFO]
@@ -137,7 +137,7 @@ So erstellen Sie diese Dateien:
 
 #### Sprachpaket language.xml
 
-Beim Deklarieren eines Sprachpakets im `language.xml` Konfigurationsdatei, müssen Sie die Reihenfolge der Sprachvererbung für dieses Paket angeben.
+Wenn Sie ein Sprachpaket im `language.xml` Konfigurationsdatei, müssen Sie die Reihenfolge der Sprachvererbung für dieses Paket angeben.
 
 Durch die Sprachvererbung können Sie eine Übersetzung erstellen, die als _child_ basierend auf einer vorhandenen Übersetzung, die als _parent_. Die untergeordneten Übersetzungen überschreiben die übergeordnete. Wenn die untergeordnete Übersetzung jedoch nicht hochgeladen oder angezeigt werden kann oder eine Wortgruppe oder ein Wort fehlt, verwendet Commerce das übergeordnete Gebietsschema. [Beispiele für die Vererbung von Sprachpaketen](#example-of-language-inheritance).
 
@@ -160,7 +160,7 @@ Dabei gilt:
 - `vendor`—Name des Anbieters des Moduls (erforderlich)
 - `package`—Name des Sprachpakets (erforderlich)
 - `sort_order`—Priorität beim Hochladen eines Pakets, wenn mehrere Sprachpakete für einen Store verfügbar sind
-- `use`—Übergeordnetes Sprachpaket-Gebietsschema, aus dem Wörterbücher geerbt werden sollen
+- `use`—Übergeordnetes Sprachpaket-Gebietsschema, aus dem Wörterbücher übernommen werden sollen
 
 Bei Bedarf können Sie mehrere übergeordnete Pakete angeben. Die übergeordneten Pakete werden auf der ersten aufgelisteten, zuerst verwendeten Basis angewendet.
 

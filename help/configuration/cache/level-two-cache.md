@@ -78,13 +78,13 @@ Adobe empfiehlt die Verwendung der [`cache preload`](redis-pg-cache.md#redis-pre
 
 ## Optionen für veralteten Cache
 
-Einstieg in [!DNL Commerce] 2.4. `use_stale_cache` -Option kann die Leistung in bestimmten Fällen verbessern.
+Einstieg in [!DNL Commerce] 2.4, die `use_stale_cache` -Option kann die Leistung in bestimmten Fällen verbessern.
 
 Im Allgemeinen ist der Kompromiss mit der Sperrwartung von der Leistungsseite aus akzeptabel, aber je größer die Anzahl der Blöcke oder des Cache des Händlers ist, desto mehr Zeit wird für das Warten auf Sperren benötigt. In einigen Szenarien können Sie einen **Anzahl der Schlüssel** \* **Lookup-Timeout** Zeitdauer für den Prozess. In einigen seltenen Fällen kann der Händler Hunderte von Schlüsseln im `Block/Config` zwischenspeichern, sodass selbst ein kleiner Timeout beim Suchen für das Sperren Sekunden kosten kann.
 
 Der alte Cache funktioniert nur mit einem L2-Cache. Mit einem veralteten Cache können Sie einen veralteten Cache senden, während ein neuer in einem parallelen Prozess generiert wird. Um veralteten Cache zu aktivieren, fügen Sie `'use_stale_cache' => true` , um die Konfiguration des L2-Caches zu beenden.
 
-Adobe empfiehlt, die `use_stale_cache` -Option nur für Cache-Typen, die am meisten davon profitieren, einschließlich:
+Adobe empfiehlt die Aktivierung der `use_stale_cache` -Option nur für Cache-Typen, die am meisten davon profitieren, einschließlich:
 
 - `block_html`
 - `config_integration_api`

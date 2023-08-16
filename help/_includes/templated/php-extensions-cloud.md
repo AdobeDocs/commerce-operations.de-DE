@@ -88,7 +88,7 @@ ht-degree: 0%
                 raphf<br>
                 Knoten<br>
                 Reds<br>
-                Shmop Sockets<br>
+                Shmop-Sockel<br>
                 Natrium<br>
                 ssh2<br>
                 Aufräumen<br>

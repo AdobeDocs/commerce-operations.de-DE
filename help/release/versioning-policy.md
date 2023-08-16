@@ -68,7 +68,7 @@ Funktionsversionen, die neue Funktionen und Funktionsaktualisierungen enthalten,
 
 ## Hotfix
 
-Hotfixes sind Patches, die umfassende Sicherheits- oder Qualitätsreparaturen enthalten, z. B. Fehlerbehebungen für null Tage-Schwachstellen, die viele Händler betreffen. Adobe gibt bei Bedarf Hotfixes für Adobe Commerce-Versionen heraus, die weiterhin unterstützt werden und von kritischen Sicherheits- oder Qualitätsproblemen betroffen sind. Hotfixes werden im [Abschnitt &quot;Bekannte Probleme&quot;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) unserer Wissensdatenbank. Diese Fehlerbehebungen sind in der nächsten geplanten Patch-Version enthalten.
+Hotfixes sind Patches, die umfassende Sicherheits- oder Qualitätsreparaturen enthalten, z. B. Fehlerbehebungen für null Tage-Schwachstellen, die viele Händler betreffen. Adobe gibt Hotfixes für Adobe Commerce-Versionen frei, die weiterhin unterstützt werden und von kritischen Sicherheits- oder Qualitätsproblemen betroffen sind. Hotfixes werden im [Abschnitt &quot;Bekannte Probleme&quot;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) unserer Wissensdatenbank. Diese Fehlerbehebungen sind in der nächsten geplanten Patch-Version enthalten.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Einzelne Patches enthalten Korrekturen mit geringer Auswirkung auf die Qualität
 
 ## Benutzerdefinierter Patch
 
-Wird von Mitarbeitern ohne Adobe erstellt, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über die [Werkzeug für Qualitätsmuster](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Wird von Nicht-Adobe-Mitarbeitern erstellt, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über die [Werkzeug für Qualitätsmuster](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 
 ## Verwandte Themen
 

@@ -26,7 +26,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 * **ACSD-53239** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt; 2.4.6) - Behebung des Problems, bei dem der Inventarindexer alle Caches im Modus Auf Zeitplan aktualisieren löscht.
 * **ACSD-50887** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem die Produktattributeigenschaft *[!UICONTROL Use in Search Results Layered Navigation]* kann auf *Ja* ohne *[!UICONTROL Use in search]* Option auf *Ja*.
 * **ACSD-51846** (für Adobe Commerce und Magento Open Source >=2.4.3-p2 &lt;2.4.6) - Behebt die *Interner Fehler* -Problem auftritt, da nicht alle Ebenen der REST-API-Payload validiert werden.
-* **ACSD-52906** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden, die zum selben Kundensegment gehören, falsch gesetzt wurde und bei einigen Seiten zu unsachgemäßem Zwischenspeichern führte.
+* **ACSD-52906** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden, die zum selben Kundensegment gehören, falsch gesetzt wurde, was bei einigen Seiten zu unsachgemäßem Caching führte.
 * **ACSD-52736** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.6) - Behebung des Problems, bei dem ein *Preisregel für Warenkorb* , die Anforderungen für konfigurierbare Produktmengen enthält, funktioniert nicht erwartungsgemäß.
 * **ACSD-47875** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem Admin-Benutzer für einen bestimmten Umfang der Store-Ansicht mit Lagerbestandsverwaltung kein Produkt aus dem Admin zum Warenkorb hinzufügen können.
 * **ACSD-53176** (für Adobe Commerce >=2.3.7 &lt;2.4.5) - Behebung des Problems, bei dem *Verwandte Produktregel* mit *ist einer von* -Bedingung stimmt nicht mit Produkten überein.
@@ -633,7 +633,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 ## v1.0.16 {#v1-0-16}
 
 * **MDVA-33453** (*für Adobe Commerce >=2.3.6 &lt;2.4.3*) - Behebung des Problems, bei dem die Vorschau des Inhaltstyps von Page Builder-Produkten beschädigt wird, wenn übereinstimmende Produkte für jede Website unterschiedliche Preise haben.
-* **MDVA-32634** (*für Adobe Commerce ^2.3.1*) - Behebt das Problem, bei dem der `url_path` Die Kategorie, die allen Stores zugewiesen ist, bleibt nach dem Verschieben der Kategorie in der Hierarchie unverändert.
+* **MDVA-32634** (*für Adobe Commerce ^2.3.1*) - Behebt das Problem, bei dem der `url_path` der Kategorie, die allen Stores zugewiesen ist, bleibt nach dem Verschieben der Kategorie in der Hierarchie unverändert.
 * **MDVA-33344** (*für Adobe Commerce ^2.3.0*) - Behebt das Problem, bei dem hartcodiert wurde. `rma_item` Die standardmäßige Entitätsattributsatz-ID wird anstelle des Werts aus der Datenbank verwendet.
 * **MDVA-34192** (*für Adobe Commerce >=2.3.4 &lt;2.4.3*) - Behebung des Problems, bei dem es nicht möglich ist, das Geburtsdatum des Kunden im TT/MM/JJJJ-Format zu ändern/anzugeben.
 * **MDVA-34847** (*für Adobe Commerce ^2.3.0*) - Behebt die Konvertierung des Stores-IDs-Typs in Integer für SQL-Bedingung in Admin-Sammlungen für Admin-Benutzer mit benutzerdefinierten Berechtigungen.

@@ -1,13 +1,13 @@
 ---
 title: Aktualisierungsumfang verstehen
-description: Erfahren Sie mehr über abwärtskompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce- oder Magento Open Source-Module oder Drittanbieter-Erweiterungen auswirken können.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+description: Erfahren Sie mehr über abwärtsinkompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce- oder Magento Open Source-Module oder Drittanbieter-Erweiterungen auswirken können.
+exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
 
 ---
-
 
 # den Umfang der Aktualisierung verstehen
 
@@ -32,7 +32,7 @@ Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, a
 
 Die [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das Ihre Instanz auf potenzielle Aktualisierungsprobleme hin analysiert. Es sucht nach Problemen zwischen der aktuellen Version, die Sie installiert haben, und der Version, auf die Sie ein Upgrade durchführen möchten.
 
-Die Verwendung dieses Tools reduziert den Aufwand Ihres Teams, den Umfang und die Auswirkungen eines Upgrades zu verstehen. Dies hilft Ihnen, gängige Code-Probleme beim Aktualisieren zu vermeiden, und gibt eine klare Anleitung dazu, wie identifizierte Probleme gelöst werden können. Darüber hinaus hilft es, die wichtigsten Probleme zu priorisieren, die für eine erfolgreiche Aktualisierung erforderlich sind. So sparen Sie Zeit und Kosten bei der Aktualisierung.
+Die Verwendung dieses Tools reduziert den Aufwand Ihres Teams, den Umfang und die Auswirkungen eines Upgrades zu verstehen. Dies hilft Ihnen, gängige Code-Probleme beim Aktualisieren zu vermeiden, und gibt eine klare Anleitung dazu, wie identifizierte Probleme gelöst werden. Darüber hinaus hilft es, die wichtigsten Probleme zu priorisieren, die für eine erfolgreiche Aktualisierung erforderlich sind. So sparen Sie Zeit und Kosten bei der Aktualisierung.
 
 In den folgenden Abschnitten erhalten Sie die ersten Schritte mit dem [!DNL Upgrade Compatibility Tool]. Siehe [!DNL Upgrade Compatibility Tool] [Handbuch](../upgrade-compatibility-tool/overview.md) für weitere technische Details und erweiterte Anwendungsfälle.
 
@@ -72,9 +72,9 @@ Einige weitere Optionen, die mit diesem Befehl verwendet werden können:
 
 - `--vanilla-dir`—Ermöglicht es Ihnen, den Kerncode auf eine nicht standardmäßige Implementierung von Funktionen oder Anpassungen zu überprüfen. Es ist wichtig, dass diese im Vorfeld bereinigt werden. Eine Vanilla-Instanz Ihrer Version wird automatisch zur Referenz heruntergeladen.
 
-   >[!NOTE]
-   >
-   > Dies kann auch mit der `core:code:changes` -Befehl im Tool).
+  >[!NOTE]
+  >
+  > Dies kann auch mit der `core:code:changes` -Befehl im Tool).
 
 ### Analyse der Ausgabe
 
@@ -103,7 +103,7 @@ Die folgende Ausgabe zeigt einen Beispielzusammenfassungsbericht:
 
 ### Tipps und Hinweise
 
-Alle Probleme, die das identifizierte Tool hat, werden im Bericht mit spezifischen Fehlercodes aufgeführt. Verwenden Sie die [Fehlermeldungsreferenz](../upgrade-compatibility-tool/error-messages.md) , um weitere Details zu den einzelnen Problemen zu erhalten. Adobe bietet auch Vorschläge zur Behebung der einzelnen Problemtypen, sodass Sie Ihre Behebungsschritte planen können.
+Alle Probleme, die das identifizierte Tool hat, werden im Bericht mit spezifischen Fehlercodes aufgeführt. Verwenden Sie die [Fehlermeldungsreferenz](../upgrade-compatibility-tool/error-messages.md) , um weitere Details zu den einzelnen Problemen zu erhalten. Adobe bietet außerdem Vorschläge zur Behebung jedes Problems, damit Sie Ihre Behebungsschritte planen können.
 
 Verwenden Sie den Bericht, um den Aufwand für die Aktualisierung Ihres Codes für die Aktualisierung zu schätzen. Basierend auf Ihren Erfahrungen können Sie den erforderlichen Aktualisierungsaufwand anhand der Gesamtzahl der festgestellten Probleme und der Schwere der Probleme schätzen. Da es sich um ein Befehlszeilen-Tool handelt, können Sie dieses in automatisierte Test- und Code-Check-Suites einbinden und die JSON-Ausgabe verwenden, um Ihre Berichte zu generieren.
 

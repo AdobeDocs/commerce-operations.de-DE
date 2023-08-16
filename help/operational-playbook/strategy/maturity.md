@@ -1,13 +1,13 @@
 ---
-title: Laufzeit
+title: Fälligkeit
 description: Beurteilen Sie anhand dieses Laufzeitmodells, in welchem Stadium Ihr Unternehmen tätig ist.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # Laufzeitmodell
 
@@ -19,7 +19,7 @@ Das folgende Diagramm fasst die verschiedenen Bedürfnisse über die Laufzeitstu
 
 ![Bedarf über das Laufzeitebenendiagramm](../../assets/playbooks/maturity-levels.png)
 
-## Laufzeiten
+## Laufzeitniveau
 
 Die folgende Tabelle fasst die unterschiedlichen Laufzeitstufen zusammen:
 
@@ -29,7 +29,7 @@ Die folgende Tabelle fasst die unterschiedlichen Laufzeitstufen zusammen:
 | Walk | Auf dieser Ebene beginnen Unternehmen, bisherige Kundendaten aus verschiedenen Quellen zu nutzen, was eine Zusammenarbeit mehrerer Abteilungen erfordert.  Organisationen auf dieser Ebene können das gesamte Potenzial von Kampagnen nutzen, die von Personen verwaltet werden, und über ausgereifte Best Practices, Prozesse und Entwicklungsstreams verfügen. |
 | Ausführen | Höchste Reife ermöglicht Kampagnen auf verschiedenen Kanälen mit KI-Unterstützung und nutzt eine prädiktive Lagerverwaltung, um Abwanderungs- und Produktinformationsmanagement-Tools zur Anreicherung von Produkten zu verhindern. Sie wird am besten von Organisationen mit einer weiterentwickelten Datenkultur, Entwicklungskompetenz und Prozessen im Haus- und Offshore-Bereich erreicht. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Crawl
 
@@ -59,11 +59,11 @@ Unternehmen können komplexe Funktionen einfach implementieren, da sie bereits M
 
 ## Elemente eines Laufzeitmodells
 
-In diesem Abschnitt werden die Bereiche eines E-Commerce-Laufzeitmodells beschrieben, die Unternehmen im Rahmen ihrer Gesamtstrategie in Betracht ziehen würden.
+In diesem Abschnitt werden die Bereiche eines E-Commerce-Laufzeitmodells beschrieben, die Unternehmen im Rahmen ihrer Gesamtstrategie berücksichtigen würden.
 
 ### Aktion
 
-Die vorhandenen Marketingaktivitäten:
+Die vorhandenen Marketing-Aktivitäten:
 
 - Web-Ebene der ersten Sitzung
 - Personalisierte Empfehlungen auf der Website
@@ -107,7 +107,7 @@ Ressourcen, Teamgröße und Prozesse:
 
 Haben Sie die Optimierung und den Wissensaustausch kontinuierlich unterstützt?
 
-- Das Marketing-Team kümmert sich um Kampagnen mit Unterstützung des E-Commerce-Teams
+- Das Marketing-Team übernimmt Kampagnen mit Unterstützung des E-Commerce-Teams
 - Häufige Anwendungsfälle sind dokumentiert
 - Unternehmensweite Programme zur Ideenerstellung
 
@@ -119,5 +119,5 @@ Nutzen Sie das Kundenerlebnis als Gegenleistung für die personenbezogenen Daten
 
 - Datenschutzrichtlinien online
 - Zugeordnete Datenflussprozesse
-- Kunden können ihre getrackten Daten bearbeiten und erweitern
+- Kunden können ihre verfolgten Daten bearbeiten und erweitern
 - Hosting-Optimierungen

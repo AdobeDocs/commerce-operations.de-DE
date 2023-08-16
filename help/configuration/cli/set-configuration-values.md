@@ -19,7 +19,7 @@ In diesem Thema werden erweiterte Konfigurationsbefehle erläutert, die Sie für
 - Optional können Sie jede Konfigurationsoption sperren, sodass deren Wert im Admin nicht geändert werden kann
 - Konfigurationsoption ändern, die in der Admin-Konsole gesperrt ist
 
-Sie können diese Befehle verwenden, um die Commerce-Konfiguration manuell oder mithilfe von Skripten festzulegen. Sie können Konfigurationsoptionen mithilfe eines _Konfigurationspfad_, die `/`-getrennte Zeichenfolge, die diese Konfigurationsoption eindeutig identifiziert. Sie finden Konfigurationspfade in den folgenden Referenzen:
+Sie können diese Befehle verwenden, um die Commerce-Konfiguration manuell oder mithilfe von Skripten festzulegen. Sie können Konfigurationsoptionen mithilfe eines _Konfigurationspfad_, was eine `/`-getrennte Zeichenfolge, die diese Konfigurationsoption eindeutig identifiziert. Sie finden Konfigurationspfade in den folgenden Referenzen:
 
 - [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md)
 - [Referenz zu Zahlungskonfigurationspfaden](../reference/config-reference-payment.md)
@@ -53,7 +53,7 @@ Siehe die folgenden Referenzen:
 
 - [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md)
 - [Referenz zu Zahlungskonfigurationspfaden](../reference/config-reference-payment.md)
-- [Andere Konfigurationspfade](../reference/config-reference-general.md)
+- [Andere Konfigurationspfade - Referenz](../reference/config-reference-general.md)
 - [Referenz zu den Konfigurationspfaden für Commerce Enterprise B2B-Erweiterungen](../reference/config-reference-b2b.md)
 
 ### Suchen des Perimeter-Codes
@@ -63,7 +63,7 @@ Sie finden den Perimeter-Code entweder in der Commerce-Datenbank oder im Commerc
 **So suchen Sie den Scope-Code in der Admin-Konsole**:
 
 1. Melden Sie sich bei Admin als Benutzer an, der Websites anzeigen und Ansichten speichern kann.
-1. Klicken **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL All Stores]**.
+1. Klicks **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL All Stores]**.
 1. Klicken Sie im rechten Bereich auf den Namen der Website- oder Store-Ansicht, um deren Code anzuzeigen.
 
    Die folgende Abbildung zeigt einen Beispiel-Website-Code.
@@ -76,7 +76,7 @@ Sie finden den Perimeter-Code entweder in der Commerce-Datenbank oder im Commerc
 
 Der Perimeter-Code für Websites und Store-Ansichten wird in der Commerce-Datenbank im `store_website` und `store` -Tabellen.
 
-1. Stellen Sie eine Verbindung zur Commerce-Datenbank her.
+1. Verbindung zur Commerce-Datenbank herstellen.
 
    ```bash
    mysql -u <Commerce database username> -p
@@ -127,7 +127,7 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 ```
 
-Die folgende Tabelle beschreibt die `set` Befehlsparameter:
+Die folgende Tabelle beschreibt die `set` -Befehlsparameter:
 
 | Parameter | Beschreibung |
 | --- | --- |
@@ -142,7 +142,7 @@ Die folgende Tabelle beschreibt die `set` Befehlsparameter:
 >
 >Ab Commerce 2.2.4 wird die `--lock-env` und `--lock-config` ersetzen die Optionen `--lock` -Option.
 >
->Wenn Sie `--lock-env` oder `--lock-config` -Option zum Festlegen oder Ändern eines Werts verwenden Sie die [`bin/magento app:config:import` command](../cli/import-configuration.md) , um die Einstellung zu importieren, bevor Sie auf die Admin- oder Storefront zugreifen.
+>Wenn Sie die `--lock-env` oder `--lock-config` -Option zum Festlegen oder Ändern eines Werts verwenden Sie die [`bin/magento app:config:import` command](../cli/import-configuration.md) , um die Einstellung zu importieren, bevor Sie auf die Admin- oder Storefront zugreifen.
 
 Wenn Sie einen falschen Konfigurationspfad eingeben, gibt dieser Befehl einen Fehler zurück
 
@@ -181,7 +181,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 ### Festlegen von Konfigurationswerten, die nicht im Admin bearbeitet werden können
 
-Wenn Sie `--lock-env`  wie folgt, speichert der Befehl den Konfigurationswert in `<Commerce base dir>/app/etc/env.php` und deaktiviert das Feld zum Bearbeiten dieses Werts im Admin.
+Wenn Sie die `--lock-env`  wie folgt, speichert der Befehl den Konfigurationswert in `<Commerce base dir>/app/etc/env.php` und deaktiviert das Feld zum Bearbeiten dieses Werts im Admin.
 
 ```bash
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
@@ -193,7 +193,7 @@ Sie können die `--lock-env` -Option, um Konfigurationswerte festzulegen, wenn C
 >
 >Die `env.php` -Datei systemspezifisch ist. Sie sollten es nicht auf ein anderes System übertragen. Sie können damit Konfigurationswerte aus der Datenbank überschreiben. Sie können beispielsweise einen Datenbank-Dump von einem anderen System aus erstellen und die `base_url` und anderen Werten, sodass Sie die Datenbank nicht ändern müssen.
 
-Wenn Sie `--lock-config` wie folgt, wird der Konfigurationswert unter `<Commerce base dir>/app/etc/config.php`. Das Feld zum Bearbeiten dieses Werts im Admin ist deaktiviert.
+Wenn Sie die `--lock-config` wie folgt, wird der Konfigurationswert unter `<Commerce base dir>/app/etc/config.php`. Das Feld zum Bearbeiten dieses Werts im Admin ist deaktiviert.
 
 ```bash
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
@@ -225,7 +225,7 @@ where
 
 ### Beispiele
 
-**So zeigen Sie alle gespeicherten Konfigurationen an**:
+**Alle gespeicherten Konfigurationen anzeigen**:
 
 ```bash
 bin/magento config:show
@@ -241,7 +241,7 @@ catalog/category/root_id - 2
 analytics/subscription/enabled - 1
 ```
 
-**So zeigen Sie alle gespeicherten Konfigurationen für `base` website**:
+**Anzeigen aller gespeicherten Konfigurationen für `base` website**:
 
 ```bash
 bin/magento config:show --scope=websites --scope-code=base

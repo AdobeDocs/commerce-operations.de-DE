@@ -1,6 +1,6 @@
 ---
 title: Umsetzungsplanung
-description: Erfahren Sie mehr über Best Practices bei der Implementierung für die Planungsphase von Adobe Commerce-Projekten.
+description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Planungsphase von Adobe Commerce-Projekten.
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
@@ -42,7 +42,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
 
 - **Dienstkonfiguration**
    - [Schnelles Einrichten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
-   - [New Relic - Konfigurieren von Benachrichtigungskanälen](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
+   - [New Relic - Benachrichtigungskanäle konfigurieren](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels)
    - [Best Practices für die Konfiguration des Redis-Dienstes &#x200B;](redis-service-configuration.md)
    - [Best Practice für die Cache-Größe von realpath](realpath-cache-size.md)
 
@@ -51,7 +51,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
 <!--Asset not yet integrated
 - [GRA Architecture examples](https://wiki.corp.adobe.com/x/kD4ykw)
 -->
-- [Grundlegendes zur globalen Referenzarchitektur](../../../implementation-playbook/architecture/global-reference.md)
+- [Die globale Referenzarchitektur verstehen](../../../implementation-playbook/architecture/global-reference.md)
 
 ## **Katalogdesign**
 

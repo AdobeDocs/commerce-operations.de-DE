@@ -1,13 +1,13 @@
 ---
 title: Wert der Bootstrap-Parameter festlegen
 description: Erfahren Sie, wie Sie Bootstrap-Parameter für die Commerce-Anwendung festlegen.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 1%
 
 ---
-
 
 # Bootstrap-Parameter
 
@@ -24,7 +24,6 @@ In der folgenden Tabelle werden die Bootstrap-Parameter erläutert, die Sie fest
 >
 >- Nicht alle Bootstrap-Parameter werden dokumentiert.
 >- Sie legen nun den Anwendungsmodus (Entwickler, Standard, Produktion) mithilfe der [`magento deploy:mode:set {mode}`](../cli/set-mode.md) Befehl.
-
 
 ## Festlegen von Parametern mithilfe einer Umgebungsvariablen
 
@@ -52,7 +51,7 @@ export MAGE_PROFILER=firebug
 >
 >Wenn eine `PHP Fatal error` im Browser angezeigt wird, nachdem Sie einen Profiler-Wert festgelegt haben, starten Sie Ihren Webserver neu. Der Grund könnte mit dem PHP Bytecode-Caching zusammenhängen, das Bytecodes und PHP-Klassenbilder zwischenspeichert.
 
-## Parameter für Apache oder Nginx festlegen
+## Festlegen von Parametern für Apache oder Nginx
 
 In diesem Abschnitt wird beschrieben, wie Sie den Modus für Apache oder Nginx festlegen.
 
@@ -62,7 +61,7 @@ Siehe [Nginx-Beispielkonfiguration] on _GitHub_.
 
 ### Zugriffseinstellung für Apache .html
 
-Eine Möglichkeit, den Anwendungsmodus festzulegen, besteht darin, `.htaccess`. Auf diese Weise müssen Sie keine Apache-Einstellungen ändern.
+Eine Möglichkeit, den Anwendungsmodus festzulegen, besteht darin, den `.htaccess`. Auf diese Weise müssen Sie keine Apache-Einstellungen ändern.
 
 Sie können `.htaccess` an einem der folgenden Speicherorte, je nach Einstiegspunkt in die Commerce-Anwendung:
 
@@ -79,7 +78,7 @@ Sie können `.htaccess` an einem der folgenden Speicherorte, je nach Einstiegspu
    #   SetEnv MAGE_PROFILER firebug
    ```
 
-1. Legen Sie den Wert von `MAGE_PROFILER` auf einen der folgenden Werte:
+1. Wert von einstellen `MAGE_PROFILER` auf einen der folgenden Werte:
 
    ```terminal
    firebug
@@ -95,11 +94,11 @@ Der Apache-Webserver unterstützt das Festlegen des Anwendungsmodus mithilfe von
 
 Der Apache `mod_env` -Direktive unterscheidet sich geringfügig von [Apache-Version 2.2] und [Apache-Version 2.4].
 
-Die folgenden Verfahren zeigen, wie der Anwendungsmodus in einem virtuellen Apache-Host festgelegt wird. Dies ist nicht die einzige Möglichkeit, `mod_env` Richtlinien; Weitere Informationen finden Sie in der Apache-Dokumentation .
+Die folgenden Verfahren zeigen, wie der Anwendungsmodus in einem virtuellen Apache-Host festgelegt wird. Dies ist nicht die einzige Möglichkeit, `mod_env` Anweisungen; weitere Informationen finden Sie in der Apache-Dokumentation .
 
 >[!TIP]
 >
->Im folgenden Abschnitt wird davon ausgegangen, dass Sie Ihren virtuellen Host bereits eingerichtet haben. Wenn nicht, konsultieren Sie eine Ressource wie [dieses DigitalOcean-Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
+>Im folgenden Abschnitt wird davon ausgegangen, dass Sie Ihren virtuellen Host bereits eingerichtet haben. Ist dies nicht der Fall, konsultieren Sie eine Ressource wie [dieses DigitalOcean-Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts).
 
 **So legen Sie eine Bootstrap-Variable für Apache auf Ubuntu fest**:
 
@@ -110,7 +109,7 @@ Die folgenden Verfahren zeigen, wie der Anwendungsmodus in einem virtuellen Apac
    - Apache 2.4: `vim /etc/apache2/sites-available/my.magento.conf`
    - Apache 2.2: `vim /etc/apache2/sites-available/my.magento`
 
-1. Fügen Sie an beliebiger Stelle in der Konfiguration des virtuellen Hosts die folgende Zeile hinzu:
+1. Fügen Sie in der Konfiguration des virtuellen Hosts die folgende Zeile hinzu:
 
    ```conf
    SetEnv "<variable name>" "<variable value>"
@@ -142,13 +141,13 @@ Die folgenden Verfahren zeigen, wie der Anwendungsmodus in einem virtuellen Apac
 
 >[!TIP]
 >
->In diesem Abschnitt wird davon ausgegangen, dass Sie Ihren virtuellen Host bereits eingerichtet haben. Wenn nicht, konsultieren Sie eine Ressource wie [dieses DigitalOcean-Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
+>In diesem Abschnitt wird davon ausgegangen, dass Sie Ihren virtuellen Host bereits eingerichtet haben. Ist dies nicht der Fall, konsultieren Sie eine Ressource wie [dieses DigitalOcean-Tutorial](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-centos-6).
 
 **So legen Sie eine Bootstrap-Variable für Apache unter CentOS fest**:
 
 1. Als Benutzer mit `root` Berechtigungen, öffnen `/etc/httpd/conf/httpd.conf` in einem Texteditor.
 
-1. Fügen Sie an beliebiger Stelle in der Konfiguration des virtuellen Hosts die folgende Zeile hinzu:
+1. Fügen Sie in der Konfiguration des virtuellen Hosts die folgende Zeile hinzu:
 
    ```conf
    SetEnv "<variable name>" "<variable value>"

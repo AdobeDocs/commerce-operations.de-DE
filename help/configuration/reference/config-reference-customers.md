@@ -44,9 +44,9 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Automatische Zuweisung zur Kundengruppe aktivieren | `customer/create_account/auto_group_assign` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Steuerberechnung auf der Grundlage | `customer/create_account/tax_calculation_address_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardgruppe | `customer/create_account/default_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Gruppe für gültige MwSt-ID - inländisch | `customer/create_account/viv_domestic_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Gruppe für gültige MwSt-ID - national | `customer/create_account/viv_domestic_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Gruppe für gültige MwSt-ID - Intra-Union | `customer/create_account/viv_intra_union_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Gruppe für ungültige Mehrwertsteuer-ID | `customer/create_account/viv_invalid_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Gruppe für ungültige MwSt-ID | `customer/create_account/viv_invalid_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Validierungsfehlergruppe | `customer/create_account/viv_error_group` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bei jeder Transaktion validieren | `customer/create_account/viv_on_each_transaction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardwert für &quot;Automatische Gruppenänderungen basierend auf der MwSt-ID deaktivieren&quot; | `customer/create_account/viv_disable_auto_group_assign_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -57,7 +57,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Bestätigung von E-Mails erforderlich | `customer/create_account/confirm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Bestätigungslink-E-Mail | `customer/create_account/email_confirmation_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Willkommens-E-Mail | `customer/create_account/email_confirmed_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Generieren einer benutzerfreundlichen Kunden-ID | `customer/create_account/generate_human_friendly_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Benutzerfreundliche Kunden-ID generieren | `customer/create_account/generate_human_friendly_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Kennwortrücksetzschutz | `customer/password/password_reset_protection_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale Anzahl von Anforderungen zum Zurücksetzen von Passwörtern | `customer/password/max_number_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Min. Zeit zwischen Kennwortrücksetzanforderungen | `customer/password/min_time_between_password_reset_requests` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -66,7 +66,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Kennwortvorlage zurücksetzen | `customer/password/reset_password_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Kennwortvorlage E-Mail-Sender | `customer/password/forgot_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ablaufzeitraum des Wiederherstellungslinks (Stunden) | `customer/password/reset_link_expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Automatische Vervollständigung bei Anmeldedaten/vergessenen Kennwortformularen aktivieren | `customer/password/autocomplete_on_storefront` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Automatische Vervollständigung bei Anmelde-/Kennwortformularen aktivieren | `customer/password/autocomplete_on_storefront` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anzahl der erforderlichen Zeichenklassen | `customer/password/required_character_classes_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale Anmeldefehler beim Sperren des Kontos | `customer/password/lockout_failures` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mindestlänge des Kennworts | `customer/password/minimum_password_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -82,8 +82,8 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Geschlecht anzeigen | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren der Funktion &quot;Store Credit&quot; | `customer/magento_customerbalance/is_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Anzeigen des Store-Kreditverlaufs für Kunden | `customer/magento_customerbalance/show_history` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Gutschrift für Erstattungsspeicher automatisch zurückerstatten | `customer/magento_customerbalance/refund_automatically` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Update-E-Mail-Absender von Transaktionsnachrichten | `customer/magento_customerbalance/email_identity` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Automatische Rückerstattungsgeschäfte | `customer/magento_customerbalance/refund_automatically` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Update der E-Mail-Adresse für Transaktionsnachrichten | `customer/magento_customerbalance/email_identity` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | E-Mail-Vorlage zum Speichern von Guthaben | `customer/magento_customerbalance/email_template` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Umleiten des Kunden zum Konto-Dashboard nach der Anmeldung | `customer/startup/redirect_dashboard` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Text | `customer/address_templates/text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -103,7 +103,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 {style="table-layout:auto"}
 
-## Wunschlistenpfade
+## Listen-Pfade wünschen
 
 Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Wunschliste**.
 
@@ -113,7 +113,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Aktivieren mehrerer Wunschlisten | `wishlist/general/multiple_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Anzahl der Wunschlisten | `wishlist/general/multiple_wishlist_number` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Email Sender | `wishlist/email/email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Email Template | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| E-Mail-Vorlage | `wishlist/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximale Anzahl an gesendeten E-Mails | `wishlist/email/number_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Längenbeschränkung für E-Mail-Text | `wishlist/email/text_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zusammenfassung für Wunschlisten anzeigen | `wishlist/wishlist_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -126,13 +126,13 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
-| Aktiviert die Funktion &quot;Einladungen&quot; | `magento_invitation/general/enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Aktiviert die Einladungsfunktion | `magento_invitation/general/enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Einladungen in Storefront aktivieren | `magento_invitation/general/enabled_on_front` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Referrer-Kundengruppe | `magento_invitation/general/registration_use_inviter_group` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Registrierung neuer Konten | `magento_invitation/general/registration_required_invitation` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Kunden erlauben, benutzerdefinierte Nachrichten zur Einladungs-E-Mail hinzuzufügen | `magento_invitation/general/allow_customer_message` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Maximale Anzahl an Einladungen, die gleichzeitig gesendet werden dürfen | `magento_invitation/general/max_invitation_amount_per_send` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Einladungs-E-Mail-Absender des Kunden | `magento_invitation/email/identity` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Einladungs-E-Mail-Absender | `magento_invitation/email/identity` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Vorlage für Einladungs-E-Mail für Kunden | `magento_invitation/email/template` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
@@ -151,7 +151,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Bonuspunkte laufen in (Tagen) ab | `magento_reward/general/expiration_days` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Berechnung des Ablaufs der Rewards-Punkte | `magento_reward/general/expiry_calculation` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Rückerstattungs-Prämienpunkte automatisch | `magento_reward/general/refund_automatically` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Prämienpunkte aus Erstattungsbetrag automatisch abziehen | `magento_reward/general/deduct_automatically` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Absetzen von Prämienpunkten aus Erstattungsbetrag automatisch | `magento_reward/general/deduct_automatically` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Landingpage | `magento_reward/general/landing_page` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Kauf | `magento_reward/points/order` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Registrierung | `magento_reward/points/register` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -171,13 +171,13 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 {style="table-layout:auto"}
 
-## Promotions-Pfade
+## Promotionpfade
 
 Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Promotions**.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
-| Reminder-E-Mails aktivieren | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Erinnerungsnachrichten aktivieren | `promo/magento_reminder/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Häufigkeit | `promo/magento_reminder/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Intervall | `promo/magento_reminder/interval` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Minute der Stunde | `promo/magento_reminder/minutes` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -199,14 +199,14 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
-| Geschenkregistrierung aktivieren | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Aktivierung der Geschenkregistrierung | `magento_giftregistry/general/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Max. Anzahl Registrierungen | `magento_giftregistry/general/max_registrant` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Email Template | `magento_giftregistry/owner_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| E-Mail-Vorlage | `magento_giftregistry/owner_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email Sender | `magento_giftregistry/owner_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Email Template | `magento_giftregistry/sharing_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| E-Mail-Vorlage | `magento_giftregistry/sharing_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email Sender | `magento_giftregistry/sharing_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maximaler Schwellenwert für gesendete E-Mails | `magento_giftregistry/sharing_email/send_limit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Email Template | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| E-Mail-Vorlage | `magento_giftregistry/update_email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email Sender | `magento_giftregistry/update_email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
@@ -217,7 +217,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
-| Persistenz aktivieren | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Aktivieren der Persistenz | `persistent/options/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Lebensdauer der Persistenz (Sekunden) | `persistent/options/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren Sie &quot;Angaben speichern&quot; | `persistent/options/remember_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardwert &quot;Angaben speichern&quot; | `persistent/options/remember_default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

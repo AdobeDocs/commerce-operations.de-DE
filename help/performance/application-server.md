@@ -2,9 +2,10 @@
 title: Anwendungsserver für GraphQL-APIs
 description: Befolgen Sie diese Anweisungen zum Aktivieren des Anwendungsservers für GraphQL-APIs in Ihrer Adobe Commerce-Bereitstellung.
 badgeCoreBeta: label="2.4.7-beta1" type="informative"
-source-git-commit: 28bfc54e0f15ba4f4f941acc7d1fb4825702cdf3
+exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
+source-git-commit: f085c0a77fe59ff3b2d76abbd6965b6bc8ee69db
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 Der Commerce-Anwendungsserver für GraphQL-APIs ermöglicht Adobe Commerce, den Status zwischen Commerce GraphQL-API-Anfragen beizubehalten, und verkürzt die Bootstrapping-Zeit für jede Anfrage. Durch die gemeinsame Nutzung des Anwendungszustands zwischen den Prozessen werden API-Anfragen deutlich effizienter.
 
-Diese Betaversion von Application Server ist nur für lokale Bereitstellungen verfügbar, die PHP 8.1 oder 8.2 ausführen. Cloud-basierte Implementierungen werden nicht unterstützt. B2B GraphQL-Funktionen werden noch nicht unterstützt. GraphQL-Anfragen funktionieren möglicherweise nicht wie erwartet in lokalen Implementierungen, wenn diese Version des PHP-Anwendungsservers konfiguriert ist.
+Diese Betaversion von Application Server ist nur für lokale Bereitstellungen verfügbar, die PHP 8.1 oder 8.2 ausführen. Cloud-basierte Implementierungen werden nicht unterstützt. B2B GraphQL wird noch nicht unterstützt. GraphQL-Anfragen funktionieren möglicherweise nicht wie erwartet in lokalen Implementierungen, wenn diese Version des PHP-Anwendungsservers konfiguriert ist.
 
 ## Wer kann Application Server verwenden?
 
@@ -62,7 +63,7 @@ bin/magento server:run
 
 Dieser Befehl startet einen HTTP-Anschluss auf 9501. Sobald der Anwendungsserver gestartet wird, wird Port 9501 zu einem HTTP-Proxyserver für alle GraphQL-Abfragen.
 
-## Beispiel: Installieren von Open Source (OSX)
+## Beispiel: Open Swoole (OSX) installieren
 
 Dieses Verfahren zeigt, wie die Open Swoole-Erweiterung auf PHP 8.2 für OSX-basierte Systeme installiert wird. Es ist eine von mehreren Möglichkeiten, die Open Swoole-Erweiterung zu installieren.
 
@@ -70,13 +71,13 @@ Sie können sowohl die Open Swoole-Erweiterung für PHP (v22) als auch die Compo
 
 ### Open Swoole installieren
 
-Eingabe:
+Geben Sie ein:
 
 ```bash
 pecl install openswoole-22.0.0 | composer require openswoole/core:22.1.1
 ```
 
-Während der Installation zeigt Adobe Commerce die Aufforderung an, den Support für `openssl`, `mysqlnd`, `sockets`, `http2`und `postgres`. Eingabe `yes` für alle Optionen außer `postgres`.
+Während der Installation zeigt Adobe Commerce Aufforderungen an, um den Support für `openssl`, `mysqlnd`, `sockets`, `http2`, und `postgres`. Eingabe `yes` für alle Optionen außer `postgres`.
 
 ### Installation von Open Swoole bestätigen
 
@@ -84,9 +85,9 @@ Ausführen `php -m | grep openswoole` , um zu bestätigen, dass die Erweiterung 
 
 ### Häufige Fehler bei der Open Swoole-Installation
 
-Fehler, die während der Open Swoolinstallation auftreten, treten normalerweise während der `pecl` Installationsphase. Typische Fehler beinhalten fehlende `openssl.h` und `pcre2.h` Dateien. Um diese Fehler zu beheben, stellen Sie sicher, dass diese beiden Pakete in Ihrem lokalen System installiert sind.
+Fehler, die während der Open Swoolinstallation auftreten, treten normalerweise während der `pecl` Installationsphase. Typische Fehler beinhalten fehlende `openssl.h` und `pcre2.h` -Dateien. Um diese Fehler zu beheben, stellen Sie sicher, dass diese beiden Pakete in Ihrem lokalen System installiert sind.
 
-* Standort überprüfen `openssl` durch Ausführen:
+* Speicherort von überprüfen `openssl` durch Ausführen:
 
 ```bash
 openssl version -d
@@ -94,7 +95,7 @@ openssl version -d
 
 Dieser Befehl zeigt den Pfad, in dem `openssl` installiert ist.
 
-* Standort überprüfen `pcre2` durch Ausführen:
+* Speicherort von überprüfen `pcre2` durch Ausführen:
 
 ```bash
 pcre2-config --prefix 
@@ -112,7 +113,7 @@ brew install pcre2
 
 #### Beheben von Problemen mit openssl
 
-Beheben von Problemen im Zusammenhang mit `openssl`, ausführen:
+Beheben von Problemen im Zusammenhang mit `openssl`, führen Sie aus:
 
 ```bash
 export LDFLAGS="-L/opt/homebrew/etc/openssl@3/lib" export CPPFLAGS="-I/opt/homebrew/etc/openssl@3/include"
@@ -131,4 +132,3 @@ pecl install openswoole-22.0.0
 #### Beheben von Problemen mit pcre2.h
 
 Beheben von Problemen im Zusammenhang mit `pcre2.h`, verknüpfen Sie die `pcre2.h` Pfad zu Ihrem installierten PHP-Erweiterungsverzeichnis. Ihre spezifische installierte Version von PHP und `pcr2.h` bestimmt die jeweilige Version des Befehls, den Sie verwenden sollten.
-

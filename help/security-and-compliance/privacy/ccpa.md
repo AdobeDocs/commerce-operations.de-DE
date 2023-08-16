@@ -1,13 +1,13 @@
 ---
 title: California Consumer Privacy Act (CCPA)
 description: Erfahren Sie mehr über den California Consumer Privacy Act (CCPA), der die Rechte von Verbrauchern in Kalifornien erweitert, um zu bestimmen, wie ihre personenbezogenen Daten erfasst, gespeichert und verwendet werden.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
 
 ---
-
 
 # California Consumer Privacy Act (CCPA)
 
@@ -28,7 +28,7 @@ Der CCPA verleiht den Verbrauchern die folgenden neuen Rechte:
 
 Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte Anstrengungen. Wir ermutigen Händler, ein funktionsübergreifendes Team zusammenzustellen, und folgen dem in [CCPA-Compliance-Handbuch](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) ihre Unternehmen mit der Verordnung in Einklang zu bringen. Als Entwickler können Sie eingeladen werden, als Verantwortlicher teilzunehmen, wobei der Schwerpunkt auf den Schritten 2 bis 5 des Prozesses liegt. Siehe [CCPA-Compliance-Handbuch](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) für weitere Informationen.
 
-1. Stellen Sie ein funktionsübergreifendes Team zusammen, um die CCPA-Konformität zu beheben.
+1. Stellen Sie ein funktionsübergreifendes Team zusammen, um die CCPA-Compliance zu verbessern.
 
 1. **Bestandsaufnahme digitaler Eigenschaften.**
 

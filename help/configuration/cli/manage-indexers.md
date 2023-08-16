@@ -4,7 +4,7 @@ description: Sehen Sie sich Beispiele für das Anzeigen und Verwalten von Commer
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Befehlsoptionen:
 bin/magento indexer:status [indexer]
 ```
 
-Wo `[indexer]` ist eine durch Leerzeichen getrennte Liste von Indexern. Omit `[indexer]` um den Status aller Indexer anzuzeigen.
+Wo `[indexer]` ist eine durch Leerzeichen getrennte Liste von Indexern. Omit `[indexer]` , um den Status aller Indexer anzuzeigen.
 
 Beispielergebnis:
 
@@ -73,7 +73,7 @@ Beispielergebnis:
 +----------------------+------------------+-----------+---------------------+---------------------+
 ```
 
-## Neuindizierung
+## Reindex
 
 Verwenden Sie diesen Befehl, um alle oder ausgewählte Indexer nur einmal neu zu indizieren.
 
@@ -111,9 +111,9 @@ Catalog Search index has been rebuilt successfully in <time>
 
 ### Neuindizierung im Parallelmodus
 
-Indexer werden in einem Umfang und mit mehreren Threads angezeigt, um die Neuindizierung im Parallelmodus zu unterstützen. Sie wird anhand der Dimension des Indexers parallelisiert und über mehrere Threads hinweg ausgeführt, was die Verarbeitungszeit verkürzt.
+Indexer werden in einem Umfang und mit mehreren Threads angezeigt, um die Neuindizierung im Parallelmodus zu unterstützen. Sie wird anhand der Dimension des Indexers parallelisiert und wird über mehrere Threads hinweg ausgeführt, wodurch die Verarbeitungszeit verkürzt wird.
 
-In diesem Zusammenhang `dimension` ist der Umfang der Neuindizierung, z. B. ein `website` oder nur bestimmte `customer_group`.
+In diesem Zusammenhang `dimension` ist der Umfang der Neuindizierung, z. B. ein `website` oder nur eine bestimmte `customer_group`.
 
 Die Indexparallelisierung betrifft nur Scoped-Indexer. Das bedeutet, dass Commerce die Daten mithilfe des Indexers in mehrere Tabellen aufteilt, anstatt alle Daten in einer Tabelle zu speichern.
 
@@ -227,7 +227,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Bevor Sie den Indexmodus wechseln, empfehlen wir, Ihre Website auf [Wartung](../../installation/tutorials/maintenance-mode.md) Modus und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Dadurch wird sichergestellt, dass Sie nicht unter Datenbanksperren leiden.
+>Bevor Sie den Indexmodus wechseln, empfehlen wir, Ihre Website auf [Wartung](../../installation/tutorials/maintenance-mode.md) Modus und [Cron-Aufträge deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Dadurch wird sichergestellt, dass Sie nicht unter Datenbanksperren leiden.
 
 So legen Sie die Indexkonfiguration fest:
 
@@ -237,7 +237,7 @@ bin/magento indexer:set-mode {realtime|schedule} [indexer]
 
 Dabei gilt:
 
-- `realtime`—Legt die ausgewählten Indexer fest, die beim Speichern aktualisiert werden sollen.
+- `realtime`—Legt die beim Speichern zu aktualisierenden ausgewählten Indexer fest.
 - `schedule`—Legt die angegebenen Indexer fest, die gemäß dem Cron-Zeitplan gespeichert werden sollen.
 - `indexer`—Eine durch Leerzeichen getrennte Liste von Indexern. Omit `indexer` um alle Indexer auf die gleiche Weise zu konfigurieren.
 

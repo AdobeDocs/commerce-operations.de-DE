@@ -1,13 +1,13 @@
 ---
 title: Einrichten des Produktionssystems
 description: Erfahren Sie, wie Sie ein Produktionssystem für die Commerce-Anwendung einrichten.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
 
 ---
-
 
 # Einrichten des Produktionssystems
 
@@ -42,7 +42,7 @@ So richten Sie einen Produktionsrechner ein:
 
    `auth.json` muss enthalten: [Authentifizierungsschlüssel](../../installation/prerequisites/authentication-keys.md).
 
-   Beispiel:
+   Ein Beispiel:
 
    ```json
    {
@@ -58,7 +58,7 @@ So richten Sie einen Produktionsrechner ein:
 1. Speichern Sie Ihre Änderungen in `auth.json`.
 1. Kopieren `<Commerce root dir>/app/etc/env.php` von Ihrem Entwicklungssystem zu Ihrem Produktionssystem.
 1. Öffnen `env.php` in einem Texteditor verwenden und die erforderlichen Werte ändern (z. B. Informationen zur Datenbankverbindung).
-1. Führen Sie die [`magento config:set`](../cli/set-configuration-values.md) oder [`magento config:set-sensitive`](../cli/set-configuration-values.md) -Befehl, um die Werte aller systemspezifischen oder sensiblen Konfigurationswerte festzulegen.
+1. Führen Sie die [`magento config:set`](../cli/set-configuration-values.md) oder [`magento config:set-sensitive`](../cli/set-configuration-values.md) -Befehl, um die Werte aller systemspezifischen bzw. sensiblen Konfigurationswerte festzulegen.
 
    Im folgenden Abschnitt finden Sie ein Beispiel.
 

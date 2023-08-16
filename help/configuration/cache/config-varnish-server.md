@@ -74,11 +74,11 @@ So konfigurieren Sie Varnish minimal:
    }
    ```
 
-1. Ersetzen Sie den Wert von `.host` mit dem vollständig qualifizierten Hostnamen oder der IP-Adresse und Abhörador des Varnish _Backend_ oder _Ursprungsserver_; Das heißt, der Server, der den Inhalt bereitstellt, wird sich beschleunigen.
+1. Wert von ersetzen `.host` mit dem vollständig qualifizierten Hostnamen oder der IP-Adresse und Abhörador des Landes _Backend_ oder _Ursprungsserver_; das heißt, der Server, der den Inhalt bereitstellt, wird sich beschleunigen.
 
    Normalerweise ist dies Ihr Webserver. Siehe [Backend-Server](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) im _Varnish-Handbuch_.
 
-1. Ersetzen Sie den Wert von `.port` mit dem Listener-Port des Webservers (in diesem Beispiel 8080).
+1. Wert von ersetzen `.port` mit dem Listener-Port des Webservers (in diesem Beispiel 8080).
 
    Beispiel: Apache wird auf dem Host 192.0.2.55 installiert und Apache wartet auf Port 8080:
 
@@ -125,7 +125,7 @@ Führen Sie die in den folgenden Abschnitten beschriebenen Aufgaben in der angeg
 
 ### Start Varnish
 
-Eingabe: `service varnish start`
+Geben Sie ein: `service varnish start`
 
 Wenn Varnish nicht als Dienst gestartet werden kann, starten Sie ihn wie folgt über die Befehlszeile:
 

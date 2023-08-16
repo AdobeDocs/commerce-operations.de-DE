@@ -1,13 +1,13 @@
 ---
 title: Zurücksetzen nach einem Fehler bei der Modulaktualisierung
 description: Fehlerbehebung bei der Aktualisierung von Adobe Commerce oder Magento Open Source nach Auftreten eines Modulaktualisierungsfehlers.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%
 
 ---
-
 
 # Zurücksetzen nach einem Fehler bei der Modulaktualisierung
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Festlegen einer Umfrage (optional)
 
-Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Sie möchten jedoch möglicherweise eine höhere Sicherheit, insbesondere in der Produktion. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe eines [umfragen](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
+Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Sie können jedoch eine strengere Sicherheit insbesondere in der Produktion wünschen. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe eines [umfragen](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
 Unsere Lösung besteht darin, Ihnen die Möglichkeit zu geben, optional eine Datei mit dem Namen `magento_umask` in Ihrem Stammverzeichnis der Anwendung, das die Berechtigungen für die Webservergruppe und alle anderen einschränkt.
 
@@ -22,14 +22,14 @@ Unsere Lösung besteht darin, Ihnen die Möglichkeit zu geben, optional eine Dat
 
 Standardumfrage (ohne `magento_umask` specified) `002`, was bedeutet:
 
-* 775 für Verzeichnisse, was bedeutet volle Kontrolle durch den Benutzer, volle Kontrolle durch die Gruppe, und ermöglicht jedem, das Verzeichnis zu durchlaufen. Diese Berechtigungen sind normalerweise für freigegebene Hosting-Anbieter erforderlich.
+* 775 für Verzeichnisse, was bedeutet volle Kontrolle durch den Benutzer, volle Kontrolle durch die Gruppe, und ermöglicht jedem, das Verzeichnis zu durchlaufen. Diese Berechtigungen sind normalerweise von freigegebenen Hosting-Anbietern erforderlich.
 
 * 664 für Dateien, was bedeutet, dass der Benutzer schreiben kann, von der Gruppe geschrieben werden kann, und schreibgeschützt für alle anderen
 
-Ein häufiger Vorschlag besteht darin, den Wert `022` im `magento_umask` -Datei, d. h.:
+Ein häufiger Vorschlag besteht darin, den Wert `022` im `magento_umask` -Datei, d. h.
 
 * 755 für Verzeichnisse: volle Kontrolle für den Benutzer, und alle anderen können Verzeichnisse durchlaufen.
-* 644 für Dateien: Lese- und Schreibberechtigungen für den Benutzer und Schreibzugriff für alle anderen Benutzer.
+* 644 für Dateien: Lese- und Schreibberechtigungen für den Benutzer und schreibgeschützt für alle anderen.
 
 Zum Festlegen `magento_umask`:
 

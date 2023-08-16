@@ -1,13 +1,13 @@
 ---
 title: Die Datenschutz-Grundverordnung (DSGVO)
 description: Erfahren Sie mehr über die Datenschutz-Grundverordnung (DSGVO), eine Rechtsvorschrift, die den Datenschutz und die Privatsphäre aller Personen in der Europäischen Union und im Europäischen Wirtschaftsraum regelt.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
 
 ---
-
 
 # Die Datenschutz-Grundverordnung (DSGVO)
 
@@ -15,11 +15,11 @@ ht-degree: 0%
 >
 >Dies ist eines von mehreren Themen, die Händlern und Entwicklern von Adobe Commerce und Magento Open Sourcen dabei helfen, die Auswirkungen der Datenschutz-Grundverordnung (DSGVO) zu verstehen. Die Informationen dienen nur zu Informationszwecken und sollten nicht als Rechtsberatung ausgelegt werden. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
 
-Die Europäische Union (EU) hat [Die Datenschutz-Grundverordnung](https://ec.europa.eu/info/law/law-topic/data-protection_en) (DSGVO), um den Bürgern mehr Kontrolle über ihre personenbezogenen Daten zu geben. Die DSGVO gilt für alle Organisationen, die innerhalb der EU tätig sind. Sie gilt auch für Organisationen außerhalb der EU, die Waren oder Dienstleistungen für Kunden oder Unternehmen in der EU anbieten.
+Die Europäische Union hat [Die Datenschutz-Grundverordnung](https://ec.europa.eu/info/law/law-topic/data-protection_en) (DSGVO), um den Bürgern mehr Kontrolle über ihre personenbezogenen Daten zu geben. Die DSGVO gilt für alle Organisationen, die innerhalb der EU tätig sind. Sie gilt auch für Organisationen außerhalb der EU, die Waren oder Dienstleistungen für Kunden oder Unternehmen in der EU anbieten.
 
 Systemintegratoren können die Datenflussdiagramme und Datenbankinformationen in der Personal Information Reference verwenden, um Skripte zu erstellen, um Anwendungsfälle ähnlich den folgenden zu lösen:
 
-- Ein Käufer fordert eine Kopie der Daten an, die er über ihn gespeichert hat
+- Ein Käufer fordert eine Kopie der Daten an, die der Händler über ihn gespeichert hat
 - Ein Käufer fordert auf, seine Informationen zu löschen
 
 ## Hinweis zu personenbezogenen Daten

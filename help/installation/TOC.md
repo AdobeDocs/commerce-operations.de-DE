@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -47,17 +47,17 @@ ht-degree: 0%
       - [Herunterladen von Composer-Paketen](sample-data/composer-packages.md)
       - [Git-Repositorys klonen](sample-data/git-repositories.md)
       - [Module entfernen oder aktualisieren](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- -Tutorials{#tutorials}
    - [Backup und Rollback des Dateisystems, der Medien und der Datenbank](tutorials/backup.md)
    - [Überprüfen des Datenbankstatus](tutorials/database-status.md)
    - [Verbraucherverhalten von Nachrichten konfigurieren](tutorials/message-consumers.md)
-   - [Konfigurieren des Sperranbieters](tutorials/lock-provider.md)
+   - [Sperranbieter konfigurieren](tutorials/lock-provider.md)
    - [Konfigurieren des Stores](tutorials/store.md)
    - [Admin-Konten erstellen, bearbeiten oder entsperren](tutorials/admin.md)
    - [Erstellen oder Aktualisieren der Bereitstellungskonfiguration](tutorials/deployment.md)
    - [Datenbankschema erstellen](tutorials/database.md)
    - [Anzeigen oder Ändern des Admin-URI](tutorials/admin-uri.md)
-   - [Wartungsmodus aktivieren oder deaktivieren](tutorials/maintenance-mode.md)
+   - [Aktivieren oder Deaktivieren des Wartungsmodus](tutorials/maintenance-mode.md)
    - [Module aktivieren oder deaktivieren](tutorials/manage-modules.md)
    - [Installieren einer Erweiterung](tutorials/extensions.md)
    - [Commerce installieren](tutorials/install.md)

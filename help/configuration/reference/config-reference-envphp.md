@@ -1,13 +1,13 @@
 ---
 title: env.php-Referenz
 description: Sehen Sie sich eine Liste der Werte für die Datei env.php an.
-source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
+exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
 
 ---
-
 
 # env.php-Referenz
 
@@ -15,11 +15,11 @@ Die `env.php` -Datei enthält die folgenden Abschnitte:
 
 | Name | Beschreibung |
 |-------------------------------|-----------------------------------------------------------------|
-| `backend` | Einstellungen für den Admin-Bereich |
+| `backend` | Einstellungen für den Administratorbereich |
 | `cache` | Umleitungsseite und Standardcache konfigurieren |
 | `cache_types` | Cachespeichereinstellungen |
 | `consumers_wait_for_messages` | Konfigurieren, wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten |
-| `cron` | Aktivieren oder Deaktivieren von Cron-Aufträgen |
+| `cron` | Cron-Aufträge aktivieren oder deaktivieren |
 | `crypt` | Der Verschlüsselungsschlüssel für kryptografische Funktionen |
 | `db` | Einstellungen für die Datenbankverbindung |
 | `default_connection` | Standardverbindung für Nachrichtenwarteschlangen |
@@ -112,17 +112,17 @@ Geben Sie an, ob Verbraucher die Abfrage von Nachrichten fortsetzen sollen, wenn
 
 Die folgenden Optionen sind verfügbar:
 
-- `1`—Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis sie die `max_messages` Wert, der in der Variablen `env.php` -Datei vor dem Schließen der TCP-Verbindung und dem Beenden des Verbraucherprozesses. Wenn die Warteschlange vor dem Erreichen der `max_messages` -Wert, wartet der Verbraucher auf mehr Nachrichten.
+- `1`—Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis sie die `max_messages` Wert, der in der Variablen `env.php` -Datei vor dem Schließen der TCP-Verbindung und dem Beenden des Verbraucherprozesses. Wenn die Warteschlange vor dem Erreichen der `max_messages` -Wert, wartet der Verbraucher auf mehr Nachrichten, die eintreffen.
 
-   Wir empfehlen diese Einstellung für große Händler, da ein konstanter Nachrichtenfluss erwartet wird und Verzögerungen bei der Verarbeitung unerwünscht sind.
+  Wir empfehlen diese Einstellung für große Händler, da ein konstanter Nachrichtenfluss erwartet wird und Verzögerungen bei der Verarbeitung unerwünscht sind.
 
 - `0`—Verbraucher verarbeiten verfügbare Nachrichten in der Warteschlange, schließen die TCP-Verbindung und beenden sie. Die Verbraucher warten nicht darauf, dass zusätzliche Nachrichten in die Warteschlange gelangen, selbst wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als die Anzahl der `max_messages` Wert, der in der Variablen `env.php` -Datei. Dies kann dazu beitragen, Probleme mit Cron-Aufträgen zu verhindern, die durch lange Verzögerungen bei der Verarbeitung von Nachrichtenwarteschlangen verursacht werden.
 
-   Wir empfehlen diese Einstellung für kleinere Händler, die keinen konstanten Nachrichtenfluss erwarten und im Gegenzug für geringfügige Verarbeitungsverzögerungen Rechenressourcen sparen möchten, wenn es für Tage keine Nachrichten geben könnte.
+  Wir empfehlen diese Einstellung für kleinere Händler, die keinen konstanten Nachrichtenfluss erwarten und im Gegenzug für geringfügige Verarbeitungsverzögerungen Rechenressourcen sparen möchten, wenn es für Tage keine Nachrichten geben könnte.
 
 ## cron
 
-Aktivieren oder deaktivieren Sie Cron-Aufträge für die Commerce-Anwendung. Standardmäßig sind Cron-Aufträge aktiviert. Um sie zu deaktivieren, fügen Sie die `cron` -Konfiguration `env.php` und setzen Sie den Wert auf `0`.
+Aktivieren oder deaktivieren Sie Cron-Aufträge für die Commerce-Anwendung. Standardmäßig sind Cron-Aufträge aktiviert. Fügen Sie die `cron` -Konfiguration `env.php` und setzen Sie den Wert auf `0`.
 
 ```conf
 'cron' => [

@@ -1,13 +1,13 @@
 ---
 title: Installieren einer Erweiterung
 description: Führen Sie diese Schritte aus, um eine Adobe Commerce- oder Magento Open Source-Erweiterung zu installieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
-
 
 # Installieren einer Erweiterung
 
@@ -21,7 +21,7 @@ Zu den Erweiterungen gehören:
 
 >[!TIP]
 >
->In diesem Thema wird erläutert, wie Sie mit der Befehlszeile Erweiterungen installieren können, die Sie über das Commerce Marketplace erwerben. Sie können dieselbe Vorgehensweise bei der Installation von _any_ Erweiterung; benötigen Sie lediglich den Composer-Namen und die Version der Erweiterung. Um sie zu finden, öffnen Sie die `composer.json` -Datei und notieren Sie die Werte für `"name"` und `"version"`.
+>In diesem Thema wird erläutert, wie Sie mit der Befehlszeile die von Ihnen erworbenen Erweiterungen über die Commerce Marketplace installieren können. Sie können dieselbe Vorgehensweise bei der Installation von _any_ Erweiterung; benötigen Sie lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie zum Suchen die `composer.json` -Datei und notieren Sie die Werte für `"name"` und `"version"`.
 
 Vor der Installation sollten Sie Folgendes tun:
 
@@ -34,8 +34,8 @@ Vor der Installation sollten Sie Folgendes tun:
 
 Um eine Erweiterung zu installieren, müssen Sie:
 
-1. Rufen Sie eine Erweiterung vom Commerce Marketplace oder einem anderen Erweiterungsentwickler ab.
-1. Wenn Sie eine Erweiterung aus dem Commerce Marketplace installieren, stellen Sie sicher, dass die Variable `repo.magento.com` Repository vorhanden ist in `composer.json` Datei:
+1. Rufen Sie eine Erweiterung von der Commerce Marketplace oder einem anderen Erweiterungsentwickler ab.
+1. Wenn Sie eine Erweiterung über das Commerce Marketplace installieren, stellen Sie sicher, dass die Variable `repo.magento.com` Repository vorhanden ist in `composer.json` Datei:
 
    ```bash
    "repositories": [
@@ -55,7 +55,7 @@ Um eine Erweiterung zu installieren, müssen Sie:
 
 Wenn Sie den Namen und die Version des Komponentenprogramms der Erweiterung bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit [Aktualisieren Sie Ihre `composer.json` file](#update-your-composer-file).
 
-So rufen Sie den Namen und die Version des Composers der Erweiterung vom Commerce Marketplace ab:
+So rufen Sie den Composer-Namen und die Version der Erweiterung von der Commerce Marketplace ab:
 
 1. Anmelden bei [Commerce Marketplace](https://marketplace.magento.com) mit dem Benutzernamen und dem Passwort, die Sie zum Kauf der Erweiterung verwendet haben.
 
@@ -63,17 +63,17 @@ So rufen Sie den Namen und die Version des Composers der Erweiterung vom Commerc
 
    ![Zugriff auf Ihr Marketplace-Konto](../../assets/installation/marketplace-my-profile.png)
 
-1. Klicken **Meine Käufe**.
+1. Klicks **Meine Käufe**.
 
    ![Kaufverlauf für Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
-1. Suchen Sie die Erweiterung, die Sie installieren möchten, und klicken Sie auf **Technische Details**.
+1. Suchen Sie die zu installierende Erweiterung und klicken Sie auf **Technische Details**.
 
    ![Technische Details zeigen den Namen des Komponisten der Erweiterung an](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->Alternativ können Sie den Namen und die Version des Composers finden _any_ -Erweiterung (unabhängig davon, ob Sie sie auf dem Commerce Marketplace oder an einer anderen Stelle erworben haben) in der `composer.json` -Datei.
+>Alternativ können Sie den Namen und die Version des Composers finden. _any_ -Erweiterung (unabhängig davon, ob Sie sie auf Commerce Marketplace oder an einer anderen Stelle erworben haben) in der `composer.json` -Datei.
 
 ## Aktualisieren der Composer-Datei
 
@@ -91,7 +91,7 @@ Fügen Sie den Namen und die Version der Erweiterung zu Ihrem `composer.json` Da
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Geben Sie Ihre [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername. Ihr privater Schlüssel ist Ihr Passwort.
+1. Geben Sie Ihre [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername, Ihr privater Schlüssel ist Ihr Passwort.
 
 1. Warten Sie, bis der Composer die Aktualisierung Ihrer Projektabhängigkeiten abgeschlossen hat, und stellen Sie sicher, dass keine Fehler vorliegen:
 
@@ -117,7 +117,7 @@ Standardmäßig ist die Erweiterung wahrscheinlich deaktiviert:
 Module is disabled
 ```
 
-Der Erweiterungsname hat das Format `<VendorName>_<ComponentName>`; Dies ist ein anderes Format als der Composer-Name. Verwenden Sie dieses Format, um die Erweiterung zu aktivieren. Wenn Sie sich nicht sicher sind, welchen Namen die Erweiterung hat, führen Sie Folgendes aus:
+Der Erweiterungsname hat das Format `<VendorName>_<ComponentName>`: Dies ist ein anderes Format als der Name des Composers. Verwenden Sie dieses Format, um die Erweiterung zu aktivieren. Wenn Sie sich nicht sicher sind, welchen Namen die Erweiterung hat, führen Sie Folgendes aus:
 
 ```bash
 bin/magento module:status
@@ -153,7 +153,7 @@ Einige Erweiterungen funktionieren nur dann ordnungsgemäß, wenn Sie zuvor gene
    bin/magento setup:upgrade
    ```
 
-1. Erstellen Sie Ihr Projekt neu: Im Produktionsmodus erhalten Sie möglicherweise eine Meldung mit der Meldung &quot;Magento-Kompilierungsbefehl erneut ausführen&quot;. Die Anwendung fordert Sie nicht auf, den Befehl &quot;Kompilieren&quot;im Entwicklermodus auszuführen.
+1. Kompilieren Sie Ihr Projekt neu: Im Produktionsmodus erhalten Sie möglicherweise eine Meldung mit der Meldung &quot;Magento-Kompilierungsbefehl erneut ausführen&quot;. Die Anwendung fordert Sie nicht auf, den Befehl &quot;Kompilieren&quot;im Entwicklermodus auszuführen.
 
    ```bash
    bin/magento setup:di:compile

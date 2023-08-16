@@ -1,13 +1,13 @@
 ---
 title: Datenbankschema erstellen
 description: Führen Sie die folgenden Schritte aus, um eine Datenbank für Ihre Adobe Commerce oder Magento Open Source zu erstellen.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
-
 
 # Datenbankschema erstellen
 

@@ -5,7 +5,7 @@ feature: Configuration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [Warnhinweise](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 - Werkzeug für Qualitätsmuster {#quality-patches-tool}
-   - [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
 - Beobachtung für Adobe Commerce {#observation-for-adobe-commerce}
@@ -43,7 +43,7 @@ ht-degree: 0%
    - [Die Registerkarte &quot;Bots&quot;](observation-for-adobe-commerce/bots.md)
    - [Registerkarte &quot;Bereitstellen&quot;](observation-for-adobe-commerce/deploy-tab.md)
    - [Registerkarte &quot;Warnungen&quot;](observation-for-adobe-commerce/alerts-tab.md)
-   - [Registerkarte &quot;WAF&quot;](observation-for-adobe-commerce/waf-tab.md)
+   - [Registerkarte WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Registerkarte &quot;CDN&quot;](observation-for-adobe-commerce/cdn-tab.md)
    - [Die [!DNL RabbitMQ] tab](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Registerkarte &quot;Cron&quot;](observation-for-adobe-commerce/cron-tab.md)

@@ -30,7 +30,7 @@ Commerce 2 verfügt über die folgenden Cache-Typen:
 | Reflektion | Reflexion | Entfernt eine Abhängigkeit zwischen dem Webapi-Modul und dem Kundenmodul. |
 | Übersetzungen | translate | Nach dem Zusammenführen von Übersetzungen aus allen Modulen wird der Fusion-Cache bereinigt. |
 | Integrationskonfiguration | config_integration | Kompilierte Integrationen. Löschen oder leeren Sie diesen Cache, nachdem Sie Integrationen geändert oder hinzugefügt haben. |
-| Konfiguration der Integrations-API | config_integration_api | Konfiguration der kompilierten Integrations-APIs der Store-Integrationen. |
+| Integration API-Konfiguration | config_integration_api | Konfiguration der kompilierten Integrations-APIs der Store-Integrationen. |
 | Konfiguration von Webdiensten | config_webservice | Zwischenspeichern der Web-API-Struktur. |
 | Kundenbenachrichtigung | customer_notification | Vorübergehende Benachrichtigungen, die in der Benutzeroberfläche angezeigt werden. |
 
@@ -44,7 +44,7 @@ Um den Cache-Status anzuzeigen, geben Sie
 
 <!-- where `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md) and values. -->
 
-Beispiel:
+Ein Beispiel:
 
 ```terminal
 Current status:
@@ -71,7 +71,7 @@ Mit diesem Befehl können Sie alle oder nur die angegebenen Cache-Typen aktivier
 
 >[!INFO]
 >
->Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Bevor Sie dies tun, müssen Sie manuell `<magento_root>/app/etc/env.php` schreibbar durch [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+>Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Dazu müssen Sie zuvor manuell `<magento_root>/app/etc/env.php` schreibbar durch [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 
 Sie können reinigen (auch als _flush_ oder _Aktualisieren_) Cache-Typen, die entweder die Befehlszeile oder den Admin verwenden.
 
@@ -115,9 +115,9 @@ Beispielergebnis:
 
 >[!INFO]
 >
->Ab Version 2.3.4 speichert Commerce alle System-EAV-Attribute beim Abrufen zwischen. Das Zwischenspeichern von EAV-Attributen auf diese Weise verbessert die Leistung, da dadurch die Anzahl der Einfüge-/Auswahlanfragen an die DB verringert wird. Es erhöht jedoch auch die Größe des Cache-Netzwerks. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie die `bin/magento config:set dev/caching/cache_user_defined_attributes 1` Befehl. Dies kann auch vom Administrator während der [Entwicklermodus](../bootstrap/application-modes.md) durch Festlegen von **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Benutzerdefinierte Attribute zwischenspeichern** nach **Ja**.
+>Ab Version 2.3.4 speichert Commerce alle System-EAV-Attribute beim Abrufen zwischen. Das Zwischenspeichern von EAV-Attributen auf diese Weise verbessert die Leistung, da dadurch die Anzahl der Einfüge-/Auswahlanfragen an die DB verringert wird. Es erhöht jedoch auch die Größe des Cache-Netzwerks. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie die `bin/magento config:set dev/caching/cache_user_defined_attributes 1` Befehl. Dies kann auch vom Administrator während der [Entwicklermodus](../bootstrap/application-modes.md) durch Festlegen **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Benutzerdefinierte Attribute zwischenspeichern** nach **Ja**.
 
-## Cache-Typen bereinigen und leeren
+## Cache-Typen leeren
 
 >[!NOTE]
 >

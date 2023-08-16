@@ -38,10 +38,10 @@ where
 | session-save-redis-password | password | Gibt ein Kennwort an, wenn für Ihren Redis-Server eine Authentifizierung erforderlich ist. | leer |
 | session-save-redis-timeout | timeout | Zeitüberschreitung der Verbindung in Sekunden. | 2.5 |
 | session-save-redis-persistent-id | persistent_identifier | Eindeutige Zeichenfolge zum Aktivieren persistenter Verbindungen (z. B. sess-db0).<br>[Bekannte Probleme mit Phpredis und php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | Datenbank | Eindeutige Redis-Datenbanknummer, die zum Schutz vor Datenverlust empfohlen wird.<br><br>**Wichtig**: Wenn Sie Redis für mehr als eine Art der Zwischenspeicherung verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer auf 0, die Datenbank-Nummer der Seitenspeicherung auf 1 und die Datenbanknummer der Sitzungsspeicherung auf 2 zuzuweisen. | 0 |
+| session-save-redis-db | Datenbank | Eindeutige Redis-Datenbanknummer, die zum Schutz vor Datenverlust empfohlen wird.<br><br>**Wichtig**: Wenn Sie Redis für mehr als eine Art der Zwischenspeicherung verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer auf 0, die Datenbank-Nummer für die Seitenspeicherung auf 1 und die Datenbanknummer für die Sitzungsspeicherung auf 2 zuzuweisen. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | Auf 0 setzen, um die Komprimierung zu deaktivieren (empfohlen, wenn `suhosin.session.encrypt = On`).<br>[Bekanntes Problem mit Zeichenfolgen mit mehr als 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Optionen: gzip, lzf, lz4 oder snappy. | gzip |
-| session-save-redis-log-level | log_level | Legen Sie einen der folgenden Werte fest, die in der Reihenfolge von &quot;am wenigsten ausführlich&quot;bis &quot;am ausführlichsten&quot;aufgeführt sind:<ul><li>0 (Notfall: nur die schwerwiegendsten Fehler)<li>1 (Warnhinweis: Sofortmaßnahmen erforderlich)<li>2 (kritisch: Anwendungskomponente nicht verfügbar<li>3 (Fehler: Laufzeitfehler, nicht kritisch, aber überwacht werden müssen)<li>4 (Warnung: zusätzliche Informationen, empfohlen)<li>5 (Hinweis: normaler, aber signifikanter Zustand)<li>6 (Info: Informationsnachrichten)<li>7 (debug: die meisten Informationen nur für Entwicklung oder Tests)</ul> | 1 |
+| session-save-redis-log-level | log_level | Legen Sie einen der folgenden Werte fest, die in der Reihenfolge von &quot;am wenigsten ausführlich&quot;bis &quot;am ausführlichsten&quot;aufgeführt sind:<ul><li>0 (Notfall: nur die schwersten Fehler)<li>1 (Warnhinweis: sofortiges Handeln erforderlich)<li>2 (kritisch: Anwendungskomponente nicht verfügbar)<li>3 (Fehler: Laufzeitfehler, nicht kritisch, sondern muss überwacht werden)<li>4 (Warnung: zusätzliche Informationen, empfohlen)<li>5 (Hinweis: normal, aber signifikant)<li>6 (Info: Informationsmeldungen)<li>7 (debug: die meisten Informationen nur für Entwicklung oder Tests)</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | Maximale Anzahl von Prozessen, die auf eine Sperrung für eine Sitzung warten können. Setzen Sie dies bei großen Produktionsclustern auf mindestens 10 % der Anzahl an PHP-Prozessen. | 6 |
 | session-save-redis-break-after-frontend | break_after_frontend | Anzahl der Sekunden, die gewartet werden muss, bevor versucht wird, die Sperre für die Frontend-Sitzung (d. h. Storefront) zu unterbrechen. | 5 |
 | session-save-redis-break-after-adminhtml | break_after_adminhtml | Anzahl der Sekunden, die gewartet werden muss, bevor versucht wird, die Sperre für eine Admin-Sitzung zu unterbrechen (d. h. Admin-Sitzung). | 30 |
@@ -51,9 +51,9 @@ where
 | session-save-redis-disable-locking | disable_locking | Die Sitzungssperrung kann vollständig deaktiviert werden. | 0 (false) |
 | session-save-redis-min-lifetime | min_lifetime | Mindestdauer der Sitzung in Sekunden. | 60 |
 | session-save-redis-max-lifetime | max_lifetime | Maximale Sitzungslebensdauer in Sekunden. | 2592000 (720 Stunden) |
-| session-save-redis-sentinel-Übergeordnet | sentinel_Übergeordnet | Redis Sentinel Übergeordnet name | leer |
+| session-save-redis-sentinel-master | sentinel_master | Redis Sentinel Master Name | leer |
 | session-save-redis-sentinel-servers | sentinel_servers | Liste der Sentinel-Server von Redis, durch Kommas getrennt | leer |
-| session-save-redis-sentinel-verify-Übergeordnet | sentinel_verify_Übergeordnet | Statuskennzeichnung von Redis Sentinel Übergeordnet überprüfen | 0 (false) |
+| session-save-redis-sentinel-verify-master | sentinel_verify_master | Überprüfung des Master-Statusmarkierungen von Redis Sentinel | 0 (false) |
 | session-save-redis-sentinel-connect-retries | sentinel_connect_retries | Verbindungsversuche für Sentinels | 5 |
 
 ## Beispiel
@@ -110,7 +110,7 @@ Um sicherzustellen, dass Redis und Commerce zusammen funktionieren, melden Sie s
 redis-cli monitor
 ```
 
-Beispielausgabe für Sitzungsspeicher:
+Beispielausgabe für die Sitzungsspeicherung:
 
 ```terminal
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
@@ -133,4 +133,4 @@ Wenn beide Befehle erfolgreich waren, wird Redis ordnungsgemäß eingerichtet.
 
 ### Überprüfen komprimierter Daten
 
-Um komprimierte Sitzungsdaten und Seiten-Cache zu untersuchen, muss die [RESP.app](https://flathub.org/apps/details/app.resp.RESP) unterstützt die automatische Dekomprimierung von Commerce 2 Session- und Page-Cache und zeigt PHP-Sitzungsdaten in einer für Menschen lesbaren Form an.
+Um komprimierte Sitzungsdaten und Seiten-Cache zu untersuchen, muss die [RESP.app](https://flathub.org/apps/details/app.resp.RESP) unterstützt die automatische Dekomprimierung von Commerce 2 Session und Page Cache und zeigt PHP-Sitzungsdaten in einer für Menschen lesbaren Form an.

@@ -40,7 +40,7 @@ Adobe Experience Manager kombiniert eine Reihe von Funktionen auf Infrastruktur-
 
 - **Sites**—Erstellen und liefern Sie schnell relevante Websites und mobile Apps und aktualisieren Sie den Inhalt jederzeit, ohne die IT-Abteilung zu belasten.
 - **Assets**- Einfaches Verwalten von Bildern, Videos und anderen Assets in allen digitalen Kanälen, um personalisierte Kundenerlebnisse bereitzustellen.
-- **Communities**—Erstellen Sie blühende Communities und interaktive Unterhaltungen in all Ihren sozialen Eigenschaften, damit Sie neue Lernstufen und Kundentreue inspirieren können.
+- **Communities**—Erstellen Sie blühende Communities und interaktive Unterhaltungen in all Ihren sozialen Eigenschaften, damit Sie neue Lernstufen und Kundenloyalität inspirieren können.
 - **Forms**—Integrieren Sie Formulare auf Unternehmensebene in Ihre Websites und mobilen Erlebnisse und vereinfachen Sie die Erstellung von Formularen und den Abschluss von Transaktionen.
 - **Apps**- Erstellen und liefern Sie mobile Apps mit einer Lösung, die die Lücke zwischen Marketingexperten und IT schließt, damit Marketing-Experten Inhalte einfach aktualisieren können (auch nach dem Start).
 

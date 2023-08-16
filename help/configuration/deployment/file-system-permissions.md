@@ -20,9 +20,9 @@ In den folgenden Abschnitten werden die Anforderungen für einen oder zwei Datei
 
 - **Ein Benutzer**—In der Regel bei freigegebenen Hosting-Anbietern erforderlich, die den Zugriff auf nur einen Benutzer auf dem Server ermöglichen. Dieser Benutzer kann sich anmelden und Dateien über FTP übertragen. Außerdem führt dieser Benutzer den Webserver aus.
 
-- **Zwei Benutzer**—Wir empfehlen zwei Benutzer, wenn Sie Ihren eigenen Commerce-Server ausführen: eine, um Dateien zu übertragen und Befehlszeilen-Dienstprogramme auszuführen, und ein separater Benutzer für die Webserver-Software. Wenn möglich, ist dies vorzuziehen, da es sicherer ist.
+- **Zwei Benutzer**—Wir empfehlen zwei Benutzer, wenn Sie Ihren eigenen Commerce-Server betreiben: einen, um Dateien zu übertragen und Befehlszeilen-Dienstprogramme auszuführen, und einen separaten Benutzer für die Webserver-Software. Wenn möglich, ist dies vorzuziehen, da es sicherer ist.
 
-   Stattdessen haben Sie separate Benutzer:
+  Stattdessen haben Sie separate Benutzer:
 
    - Der Webserver-Benutzer, der den Administrator und die Storefront ausführt.
 
@@ -72,7 +72,7 @@ So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe de
 
 1. Wechseln Sie zum Installationsverzeichnis für Commerce.
 
-1. Wechsel zum Produktionsmodus.
+1. Wechseln Sie in den Produktionsmodus.
 
    ```bash
    bin/magento deploy:mode:set production
@@ -112,21 +112,21 @@ Wenn Sie Ihren eigenen Server verwenden (einschließlich des privaten Server-Set
 
 - Die **Webserver-Benutzer**, wodurch Admin und Storefront ausgeführt werden.
 
-   Linux-Systeme bieten für diesen Benutzer normalerweise keine Shell. Sie können sich nicht beim Commerce-Server als Webserver-Benutzer anmelden oder zu ihm wechseln.
+  Linux-Systeme bieten für diesen Benutzer normalerweise keine Shell. Sie können sich nicht beim Commerce-Server als Webserver-Benutzer anmelden oder zu ihm wechseln.
 
 - Die **Befehlszeilenbenutzer**, bei dem Sie sich bei Ihrem Commerce-Server als anmelden oder zu wechseln.
 
-   Commerce verwendet diesen Benutzer zum Ausführen von CLI-Befehlen und Cron.
+  Commerce verwendet diesen Benutzer zum Ausführen von CLI-Befehlen und Cron.
 
-   >[!INFO]
-   >
-   >Der Befehlszeilenbenutzer wird auch als _Dateisysteminhaber_.
+  >[!INFO]
+  >
+  >Der Befehlszeilenbenutzer wird auch als _Dateisysteminhaber_.
 
 Da diese Benutzer Zugriff auf dieselben Dateien benötigen, empfehlen wir, eine [freigegebene Gruppe](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) denen sie beide angehören. Die folgenden Verfahren setzen voraus, dass Sie dies bereits getan haben.
 
 Siehe einen der folgenden Abschnitte:
 
-- Zwei Dateisysteminhaber im Entwickler- oder Standardmodus
+- Zwei Dateisysteminhaber oder Standardmodus
 - Zwei Dateisysteminhaber im Produktionsmodus
 
 ### Einrichten von zwei Eigentümern für den Standard- oder Entwicklermodus

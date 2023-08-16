@@ -1,5 +1,5 @@
 ---
-title: Best Practices für die Paginierung von Produktauflistungen
+title: Best Practices für die Paginierung von Produktlisten
 description: Erfahren Sie, wie Sie die Leistung von Adobe Commerce optimieren können, indem Sie die Anzahl der Produkte verwalten, die auf jeder Seite des Storefront-Katalogs angezeigt werden.
 role: User, Admin
 feature: Best Practices, Catalogs
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Best Practices für die Paginierung von Produktauflistungen
+# Best Practices für die Paginierung von Produktlisten
 
 Um die beste Leistung zu erzielen, zeigen Sie maximal 48 Produkte pro Seite an.
 

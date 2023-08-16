@@ -1,13 +1,13 @@
 ---
 title: Anwendungsmodi
 description: Die Commerce-Anwendung kann je nach Bedarf in verschiedenen Modi eingesetzt werden. Zeigen Sie eine detaillierte Liste der verfügbaren Anwendungsmodi an.
-source-git-commit: e7c325aef90d4135218b984cc57df2c8d1d921d2
+exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
 
 ---
-
 
 # Anwendungsmodi
 
@@ -24,7 +24,7 @@ Siehe [Betriebsmodus festlegen](../cli/set-mode.md) , um zu erfahren, wie Sie di
 
 ## Cloud-Unterstützung
 
-Es ist nicht erforderlich, die Anwendungsmodi für ein Cloud-Infrastrukturprojekt zu verwalten. Aufgrund des schreibgeschützten Dateisystems können Sie die Modi in den Remote-Cloud-Umgebungen nicht ändern. Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung automatisch in aus _Wartung_ -Modus während einer Bereitstellung verwenden, wodurch Ihre Site offline geschaltet wird, bis die Bereitstellung abgeschlossen ist. Andernfalls bleibt die Anwendung in _production_ -Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) im _Leitfaden zu Commerce on Cloud Infrastructure_.
+Die Anwendungsmodi für ein Cloud-Infrastrukturprojekt müssen nicht verwaltet werden. Aufgrund des schreibgeschützten Dateisystems können Sie die Modi in den Remote-Cloud-Umgebungen nicht ändern. Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung automatisch in aus _Wartung_ -Modus während einer Bereitstellung verwenden, wodurch Ihre Site offline geschaltet wird, bis die Bereitstellung abgeschlossen ist. Andernfalls bleibt die Anwendung in _production_ -Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 Wenn Sie Cloud Docker für Commerce als Entwicklungstool verwenden, können Sie Ihr Cloud-Infrastrukturprojekt in einer Docker-Umgebung in _Entwickler_ Modus, aber die Leistung ist aufgrund zusätzlicher Dateisynchronisierungsvorgänge langsamer. Siehe [Docker-Umgebung bereitstellen](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) im _Handbuch zu Cloud Docker für Commerce_.
 
@@ -57,7 +57,7 @@ Im Entwicklermodus:
 
 Die _production_ Der -Modus eignet sich am besten für die Bereitstellung der Commerce-Anwendung in einem Produktionssystem. Nach der Optimierung der Serverumgebung, z. B. der Datenbank und des Webservers, sollten Sie die [Bereitstellungswerkzeug für statische Ansichtsdateien](../cli/static-view-file-deployment.md) , um statische Ansichtsdateien in die `pub/static` Verzeichnis. Dies verbessert die Leistung, indem alle erforderlichen statischen Dateien bei der Bereitstellung bereitgestellt werden, anstatt die Commerce-Anwendung zu zwingen, statische Dateien während der Laufzeit dynamisch zu lokalisieren und zu kopieren (materialisieren).
 
-Einige Felder, wie z. B. die Abschnitte Erweiterte Systemkonfiguration und Entwicklerkonfiguration im Admin, sind nicht im Produktionsmodus verfügbar. Beispiel: Sie _cannot_ Aktivieren oder deaktivieren Sie Cache-Typen mit dem Admin. Sie können Cache-Typen aktivieren und deaktivieren _only_ mithilfe der [Befehlszeile](../cli/manage-cache.md#config-cli-subcommands-cache-en).
+Einige Felder, wie z. B. die Abschnitte Erweiterte Systemkonfiguration und Entwicklerkonfiguration im Admin, sind nicht im Produktionsmodus verfügbar. Beispiel: Sie _cannot_ Aktivieren oder deaktivieren Sie die Cache-Typen mit dem Admin. Sie können Cache-Typen aktivieren und deaktivieren _only_ mithilfe der [Befehlszeile](../cli/manage-cache.md#config-cli-subcommands-cache-en).
 
 Im Produktionsmodus:
 
@@ -75,6 +75,6 @@ Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwend
 
 Im Wartungsmodus:
 
-- Site-Besucher werden zu einer Standardeinstellung umgeleitet `Service Temporarily Unavailable` page
-- Die `var/` enthält `.maintenance.flag` file
+- Site-Besucher werden zu einer Standardeinstellung umgeleitet. `Service Temporarily Unavailable` page
+- Die `var/` Verzeichnis enthält `.maintenance.flag` file
 - Sie können den Besucherzugriff anhand von IP-Adressen einschränken

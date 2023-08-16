@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # AWS OpenSearch
 
-Adobe Commerce und Magento Open Source 2.4.5 unterstützen die Verwendung von Amazon OpenSearch Service-Clustern. Dieser Dienst ist der Nachfolger von Amazon Elasticsearch Service. Hier wird beschrieben, wie Sie Commerce für die Verwendung von AWS OpenSearch konfigurieren und Daten von einem lokalen Elasticsearch oder einer OpenSearch-Instanz in einen AWS OpenSearch-Cluster migrieren.
+Adobe Commerce und Magento Open Source 2.4.5 unterstützen die Verwendung von Amazon OpenSearch Service-Clustern. Dieser Dienst ist der Nachfolger von Amazon Elasticsearch Service. Hier wird beschrieben, wie Sie Commerce für die Verwendung von AWS OpenSearch konfigurieren und Daten von einer lokalen Elasticsearch- oder OpenSearch-Instanz in einen AWS OpenSearch-Cluster migrieren.
 
 ## Erstellen einer AWS OpenSearch-Dienstdomäne
 
@@ -41,7 +41,7 @@ Die Schritte zum Konfigurieren von OpenSearch werden im Abschnitt [Erweiterte In
 
 Um zu testen, ob die neue Konfiguration funktioniert, testen Sie den OpenSearch-Endpunkt direkt:
 
-1. Erstellen Sie ein Produkt in der Admin-Konsole (z. B.: sku=&quot;testproduct1&quot;).
+1. Erstellen Sie ein Produkt in der Admin-Konsole (z. B. sku=&quot;testproduct1&quot;).
 1. Neuindizieren über den Administrator.
 1. Abfragen des OpenSearch-Endpunkts (in der AWS-Benutzeroberfläche):
 

@@ -18,27 +18,27 @@ In diesem Thema werden die Grundlagen der Verwendung von Varnish als Web-Caching
 
 Gemäß [Varnish-Dokumentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *Bereinigung* ist das, was passiert, wenn Sie ein Objekt aus dem Cache auswählen und zusammen mit seinen Varianten verwerfen.&quot; Eine Bereinigung ähnelt einem Befehl zum Bereinigen des Caches (oder Klicken auf **Magento-Cache leeren** im Admin).
 
-Wenn Sie den Commerce-Cache bereinigen, leeren oder aktualisieren, wird auch der Vorgang &quot;Varnish&quot;bereinigt.
+Wenn Sie den Commerce-Zwischenspeicher bereinigen, leeren oder aktualisieren, wird auch der Bereinigungsvorgang durchgeführt.
 
 Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfiguriert haben, können die folgenden Aktionen zu einer Bereinigung des Abstands führen:
 
 - Pflegen einer Website.
 
-   Alles, was Sie beispielsweise im Admin in tun:
+  Alles, was Sie beispielsweise im Admin in tun:
 
    - **SPEICHER** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **Allgemein**
    - **SPEICHER** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **Währungseinstellungen**
    - **SPEICHER** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **E-Mail-Adressen speichern**
 
-   Wenn Commerce eine solche Änderung feststellt, wird eine Meldung angezeigt, die Sie auffordert, den Cache zu aktualisieren.
+  Wenn Commerce eine solche Änderung feststellt, wird eine Meldung angezeigt, die Sie auffordert, den Cache zu aktualisieren.
 
 - Wartung eines Stores (z. B. Hinzufügen oder Bearbeiten von Kategorien, Preisen, Produkten und Preisregeln für Werbeaktionen).
 
-   Die Bereinigung erfolgt automatisch, wenn Sie eine dieser Aufgaben ausführen.
+  Die Bereinigung erfolgt automatisch, wenn Sie eine dieser Aufgaben ausführen.
 
 - Pflege des Quellcodes.
 
-   Sie sollten den Cache aktualisieren und auch regelmäßig alle Elemente in `generated/code` und `generated/metadata` Verzeichnissen. Informationen zum Aktualisieren des Caches finden Sie im nächsten Abschnitt.
+  Sie sollten den Cache aktualisieren und auch regelmäßig alle Elemente in `generated/code` und `generated/metadata` Verzeichnissen. Informationen zum Aktualisieren des Caches finden Sie im nächsten Abschnitt.
 
 ## Konfigurieren von Commerce zur Bereinigung von Varnish
 

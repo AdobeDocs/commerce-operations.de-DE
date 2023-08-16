@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Konfigurieren von Suchbegriffen
 
-Im Allgemeinen _Stoppwörter_ sind häufig verwendete Wörter, die von Suchmaschinen nach der Textverarbeitung herausgefiltert werden. Ursprünglich, als Festplattenspeicher und Speicher extrem begrenzt waren, bedeutete jeder gespeicherte Kilobyte eine deutliche Leistungsverbesserung. Daher erzielten Suchmaschinen Leistungssteigerungen, indem sie bestimmte Wörter ignorieren und den Index klein halten.
+Im Allgemeinen _Stoppwörter_ sind häufig verwendete Wörter, die von Suchmaschinen nach der Textverarbeitung herausgefiltert werden. Ursprünglich, als Festplattenspeicher und Speicher extrem begrenzt waren, bedeutete jeder eingesparte Kilobyte eine deutliche Leistungsverbesserung. Daher erzielten Suchmaschinen Leistungssteigerungen, indem sie bestimmte Wörter ignorieren und den Index klein halten.
 
 Obwohl wir heute über mehr Speicher verfügen, ist die Leistung weiterhin wichtig. Elasticsearch und OpenSearch verwenden wie andere Suchmaschinen weiterhin Stoppwörter, um die Leistung zu verbessern.
 
-Sie müssen Ihre Stoppwörter mithilfe von CSV-Dateien verwalten, die sich im Abschnitt `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` oder `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` -Verzeichnis, abhängig davon, wie Sie die Commerce-Software installiert haben.
+Sie müssen Ihre Stoppwörter mithilfe von CSV-Dateien verwalten, die sich im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis oder `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` -Verzeichnis, abhängig davon, wie Sie die Commerce-Software installiert haben.
 
 Weitere Informationen dazu, wie Elasticsearch und OpenSearch Stoppwörter verwenden, finden Sie in den folgenden Ressourcen:
 
@@ -47,19 +47,19 @@ Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträg
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 1. Bereinigen Sie den Konfigurations-Cache.
 
-   - Admin: **System** > Tools > **Cacheverwaltung**. Wählen Sie die **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicken **Einsenden** , um die Aktion abzuschließen.
+   - Admin: **System** > Tools > **Cacheverwaltung**. Wählen Sie die **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicks **Einsenden** , um die Aktion abzuschließen.
 
    - Befehlszeile: Geben Sie als Eigentümer des Dateisystems den folgenden Befehl ein:
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
 1. Überprüfen Sie die Ergebnisse, indem Sie nach Begriffen in Ihrer Storefront suchen.
 
 ### Erstellen von Stoppwörtern für ein neues Gebietsschema
 
-**So fügen Sie Stoppwörter für ein Gebietsschema hinzu**:
+**Hinzufügen von Stoppwörtern für ein Gebietsschema**:
 
 1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 
@@ -85,13 +85,13 @@ Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträg
 1. Speichern Sie die Änderungen in `esconfig.xml` und beenden Sie den Texteditor.
 1. Bereinigen Sie den Konfigurations-Cache.
 
-   - Admin: **System** > Tools > **Cacheverwaltung**. Wählen Sie die **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicken **Einsenden** , um die Aktion abzuschließen.
+   - Admin: **System** > Tools > **Cacheverwaltung**. Wählen Sie die **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicks **Einsenden** , um die Aktion abzuschließen.
 
    - Befehlszeile: Geben Sie als Eigentümer des Dateisystems den folgenden Befehl ein:
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
 1. Überprüfen Sie die Ergebnisse, indem Sie nach Begriffen in Ihrer Storefront suchen.
 
@@ -102,7 +102,7 @@ In diesem Abschnitt wird beschrieben, wie Sie optional das standardmäßige stop
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie das GitHub-Repository von Magento 2 geklont haben, befindet sich der Pfad unter `app/code`. Wenn Sie ein komprimiertes Archiv oder ein Metapaket installiert haben, befindet sich der Pfad unter `vendor`.
+Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie das Magento 2 GitHub-Repository geklont haben, befindet sich der Pfad unter `app/code`. Wenn Sie ein komprimiertes Archiv oder ein Metapaket installiert haben, befindet sich der Pfad unter `vendor`.
 
 **So ändern Sie den Ordner**:
 

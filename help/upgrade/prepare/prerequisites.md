@@ -1,13 +1,13 @@
 ---
 title: Vollständige Voraussetzungen
 description: Bereiten Sie Ihr Adobe Commerce-Projekt auf ein Upgrade vor, indem Sie diese erforderlichen Schritte ausführen.
-source-git-commit: 5f86717d79569cac3f95a4c10a55b48f92858466
+exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
 
 ---
-
 
 # Vollständige Upgrade-Voraussetzungen
 
@@ -29,7 +29,7 @@ Nachdem Sie die Systemanforderungen überprüft haben, müssen Sie die folgenden
 
 Die [Systemanforderungen](../../installation/system-requirements.md) Beschreiben Sie genau, welche Versionen von Drittanbietersoftware mit Adobe Commerce-Versionen getestet wurden.
 
-Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihrer Umgebung aktualisiert haben. Siehe PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php)und [erforderliche PHP-Einstellungen](../../installation/prerequisites/php-settings.md#php-settings).
+Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihrer Umgebung aktualisiert haben. Siehe PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php), und [erforderliche PHP-Einstellungen](../../installation/prerequisites/php-settings.md#php-settings).
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihr
 
 Adobe Commerce erfordert die Installation von Elasticsearch oder OpenSearch, um die Software verwenden zu können.
 
-**Wenn Sie ein Upgrade von 2.3.x auf 2.4 durchführen** müssen Sie überprüfen, ob Sie MySQL, Elasticsearch oder eine Drittanbietererweiterung als Ihre Katalogsuchmaschine in Ihrer 2.3.x-Instanz verwenden. Das Ergebnis bestimmt, was Sie tun müssen _before_ Aktualisierung auf 2.4.
+**Wenn Sie von 2.3.x auf 2.4 aktualisieren** müssen Sie überprüfen, ob Sie MySQL, Elasticsearch oder eine Drittanbietererweiterung als Ihre Katalogsuchmaschine in Ihrer 2.3.x-Instanz verwenden. Das Ergebnis bestimmt, was Sie tun müssen _before_ Aktualisierung auf 2.4.
 
 **Wenn Sie ein Upgrade der Patch-Versionen in den Release-Zeilen 2.3.x oder 2.4.x durchführen** Wenn Elasticsearch 7.x bereits installiert ist, können Sie optional [zu OpenSearch migrieren](opensearch-migration.md).
 
 Sie können die Befehlszeile oder den Admin verwenden, um Ihre Katalogsuchmaschine zu bestimmen:
 
-* Geben Sie die `bin/magento config:show catalog/search/engine` Befehl. Der Befehl gibt den Wert `mysql`, `elasticsearch` (dies zeigt an, dass Elasticsearch 2 konfiguriert ist), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`oder einen benutzerdefinierten Wert, der angibt, dass Sie eine Suchmaschine eines Drittanbieters installiert haben. Für Versionen vor 2.4.6 verwenden Sie die `elasticsearch7` -Wert für die Elasticsearch 7- oder OpenSearch-Engine. Verwenden Sie für Version 2.4.6 und höher den `opensearch` -Wert für die OpenSearch-Engine.
+* Geben Sie die `bin/magento config:show catalog/search/engine` Befehl. Der Befehl gibt den Wert `mysql`, `elasticsearch` (dies zeigt an, dass Elasticsearch 2 konfiguriert ist), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`oder einen benutzerdefinierten Wert, der angibt, dass Sie eine Suchmaschine eines Drittanbieters installiert haben. Für Versionen vor 2.4.6 verwenden Sie die Variable `elasticsearch7` -Wert für die Elasticsearch 7- oder OpenSearch-Engine. Verwenden Sie für Version 2.4.6 und höher den `opensearch` -Wert für die OpenSearch-Engine.
 
 * Überprüfen Sie im Admin den Wert der **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** -Feld.
 
@@ -68,11 +68,11 @@ Einige Katalogsuchmaschinen von Drittanbietern werden über der Adobe Commerce-S
 
 ### Suchmaschine
 
-Sie müssen entweder Elasticsearch 7.6 oder höher oder OpenSearch 1.2 installieren und konfigurieren, bevor Sie auf 2.4.0 aktualisieren. Adobe unterstützt nicht mehr Elasticsearch 2.x, 5.x und 6.x. [Suchmaschinenkonfiguration](../../configuration/search/configure-search-engine.md) im _Konfigurationshandbuch_ beschreibt die Aufgaben, die Sie nach dem Upgrade von Elasticsearch auf eine unterstützte Version ausführen müssen.
+Sie müssen Elasticsearch 7.6 oder höher oder OpenSearch 1.2 installieren und konfigurieren, bevor Sie auf 2.4.0 aktualisieren. Adobe unterstützt Elasticsearch 2.x, 5.x und 6.x nicht mehr. [Suchmaschinenkonfiguration](../../configuration/search/configure-search-engine.md) im _Konfigurationshandbuch_ beschreibt die Aufgaben, die Sie nach dem Upgrade von Elasticsearch auf eine unterstützte Version ausführen müssen.
 
-Siehe [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
+Siehe Abschnitt [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
 
-Elasticsearch erfordert Java Development Kit (JDK) 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) um zu überprüfen, welche Version von JDK installiert ist.
+Elasticsearch erfordert Java Development Kit (JDK) 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) , um zu überprüfen, welche Version von JDK installiert ist.
 
 #### OpenSearch
 
@@ -84,9 +84,9 @@ OpenSearch ist eine Open-Source-Abspaltung von Elasticsearch 7.10.2 nach der Liz
 * 2.4.3-p2
 * 2.3.7-p3
 
-Sie können [von Elasticsearch zu OpenSearch migrieren](opensearch-migration.md) nur dann, wenn Sie auf eine oben aufgeführte (oder höhere) Version von Adobe Commerce aktualisieren.
+Sie können [Migration von Elasticsearch zu OpenSearch](opensearch-migration.md) nur dann, wenn Sie auf eine oben aufgeführte (oder höhere) Version von Adobe Commerce aktualisieren.
 
-OpenSearch erfordert JDK 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) um zu überprüfen, welche Version von JDK installiert ist.
+OpenSearch erfordert JDK 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) , um zu überprüfen, welche Version von JDK installiert ist.
 
 [Suchmaschinenkonfiguration](../../configuration/search/configure-search-engine.md) beschreibt die Aufgaben, die Sie nach dem Ändern von Suchmaschinen ausführen müssen.
 
@@ -108,7 +108,7 @@ Die Unterstützung für Elasticsearch 8.x wurde in Adobe Commerce 2.4.6 eingefü
    >
    >Um Elasticsearch 8.x zu unterstützen, deaktiviert Adobe Commerce 2.4.6 die `indices.id_field_data` -Eigenschaft standardmäßig verwendet und `_id` im Feld `docvalue_fields` -Eigenschaft.
 
-1. Aktualisieren Sie im Stammverzeichnis Ihres Adobe Commerce-Projekts Ihre Composer-Abhängigkeiten, um die `Magento_Elasticsearch7` -Modul und installieren Sie die `Magento_Elasticsearch8` -Modul.
+1. Aktualisieren Sie im Stammverzeichnis Ihres Adobe Commerce-Projekts Ihre Composer-Abhängigkeiten, um die `Magento_Elasticsearch7` und installieren Sie das `Magento_Elasticsearch8` -Modul.
 
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
@@ -176,7 +176,7 @@ Sie müssen das Format aller Datenbanktabellen aus `COMPACT` nach `DYNAMIC`. Sie
 
 ## Legen Sie die Grenze für geöffnete Dateien fest
 
-Das Festlegen der Grenze für offene Dateien (ulimit) kann dabei helfen, Fehler durch mehrere rekursive Aufrufe langer Abfragezeichenfolgen oder Probleme mit der Verwendung der `bin/magento setup:rollback` Befehl. Dieser Befehl unterscheidet sich für verschiedene UNIX-Shells. Lesen Sie Ihren individuellen Geschmack, um mehr über die `ulimit` Befehl.
+Das Festlegen der Grenze für offene Dateien (ulimit) kann dazu beitragen, Fehler durch mehrere rekursive Aufrufe langer Abfragezeichenfolgen oder Probleme bei der Verwendung der `bin/magento setup:rollback` Befehl. Dieser Befehl unterscheidet sich für verschiedene UNIX-Shells. Lesen Sie Ihren individuellen Geschmack, um mehr über die `ulimit` Befehl.
 
 Adobe empfiehlt, die geöffneten Dateien festzulegen [ulimit](https://ss64.com/bash/ulimit.html) auf einen Wert von `65536` oder mehr, Sie können jedoch bei Bedarf einen größeren Wert verwenden. Sie können die ulimit in der Befehlszeile festlegen oder sie zu einer permanenten Einstellung für die Shell des Benutzers machen.
 
@@ -203,7 +203,7 @@ So legen Sie den Wert in Ihrer Bash-Shell fest:
 
 >[!IMPORTANT]
 >
->Es wird empfohlen, die Festlegung eines Werts für `pcre.recursion_limit` -Eigenschaft in `php.ini` -Datei, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
+>Es wird empfohlen, die Festlegung eines Werts für `pcre.recursion_limit` -Eigenschaft in der `php.ini` -Datei, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
 
 ## Überprüfen, ob Cron-Aufträge ausgeführt werden
 
@@ -231,7 +231,7 @@ Ein weiteres Symptom dafür, dass Cron nicht ausgeführt wird, ist der folgende 
 
 ![](../../assets/upgrade-guide/cron-not-running.png)
 
-Um den Fehler anzuzeigen, klicken Sie auf **Systemmeldungen** am oberen Rand des Fensters wie folgt:
+Um den Fehler anzuzeigen, klicken Sie auf **Systemmeldungen** oben im Fenster wie folgt:
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
@@ -266,7 +266,7 @@ So legen Sie die Umgebungsvariable fest:
 
    >[!NOTE]
    >
-   > `DATA_CONVERTER_BATCH_SIZE` Speicher benötigt; vermeiden Sie, den Wert auf einen großen Wert (ca. 1 GB) festzulegen, ohne ihn zuerst zu testen.
+   > `DATA_CONVERTER_BATCH_SIZE` erfordert Arbeitsspeicher; vermeiden Sie, ihn auf einen großen Wert (ca. 1 GB) festzulegen, ohne ihn zuerst zu testen.
 
 1. Nach Abschluss des Upgrades können Sie die -Variable deaktivieren:
 
@@ -276,7 +276,7 @@ So legen Sie die Umgebungsvariable fest:
 
 ## Überprüfen der Dateisystemberechtigungen
 
-Aus Sicherheitsgründen erfordert Adobe Commerce bestimmte Berechtigungen für das Dateisystem. Berechtigungen unterscheiden sich von _[Eigentum](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Der Inhaber bestimmt, wer Aktionen im Dateisystem durchführen kann. -Berechtigungen bestimmen, was der Benutzer tun kann.
+Aus Sicherheitsgründen erfordert Adobe Commerce bestimmte Berechtigungen für das Dateisystem. Berechtigungen unterscheiden sich von _[Eigentum](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Die Eigentümerschaft bestimmt, wer Aktionen im Dateisystem durchführen kann. Durch Berechtigungen wird festgelegt, was der Benutzer tun kann.
 
 Verzeichnisse im Dateisystem müssen von der [des Dateisysteminhabers](../../installation/prerequisites/file-system/overview.md) hinzugefügt.
 

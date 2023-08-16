@@ -1,20 +1,20 @@
 ---
 title: Upgrade der Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung der Aktualisierung für Adobe Commerce-Projekte.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 1%
 
 ---
 
-
 # Upgrade der Implementierung
 
 Die Upgrade-Implementierung besteht aus fünf Phasen:
 
 - Upgrade-Analyse
-- Entwicklung und Qualitätssicherung (QA)
+- Entwicklung und Qualitätssicherung (QS)
 - Anwenderakzeptanztests (UAT) und Vorbereitung auf den Start
 - Launch
 - Nach dem Start
@@ -31,32 +31,32 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
 
    - Aktuelle installierte Version
    - Upgrade der Zielversion
-   - Anzahl und Details der festgestellten kritischen Fehler
+   - Anzahl und Details der gefundenen kritischen Fehler
 
 - Upgrade der Dienste zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzulegen, welche Dienste Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zum _Upgrade auf_ Spalte.
 
 
-   | Diensleistung | Aktuelle Version | Upgrade auf | Hinweise |
-   |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.4 | 8.1 |  |
-   | Redis | 6.0 | 6.2 |  |
-   | [!DNL RabbitMQ] | 3.8 | 3.9 | Derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
-   | MariaDB (Cloud) | 10.4 | 10.6 |  |
-   | MySQL | 8.0 | -/-/ |  |
-   | Verfasser | 1.9.2 | 2.2 |  |
-   | Elasticsearch | 7.10 | 7.17 |  |
+  | Dienst | Aktuelle Version | Upgrade auf | Hinweise |
+  |-----------------|-----------------|------------|----------------------------------------------------------|
+  | PHP | 7.4 | 8.1 |                                                          |
+  | Redis | 6.0 | 6.2 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 3.9 | Derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
+  | MariaDB (Cloud) | 10.4 | 10.6 |                                                          |
+  | MySQL | 8.0 | -/-/ |                                                          |
+  | Verfasser | 1.9.2 | 2.2 |                                                          |
+  | Elasticsearch | 7.10 | 7.17 |                                                          |
 
 - **Erweiterungen und Module von Drittanbietern**—Verwenden Sie diese Tabellenvorlage, um den Status Ihrer Erweiterungen und Anpassungen zu verstehen, sodass Sie strategische Entscheidungen treffen und Aktionen definieren können. Dies bietet die Möglichkeit, alle Erweiterungen zu ersetzen, die möglicherweise nativ für Adobe Commerce oder Magento Open Source sind, um die Komplexität Ihres Projekts zu minimieren. Verwenden Sie die `bin/magento module:status` -Befehl, um eine Liste von Modulen und Erweiterungen anzuzeigen.
 
-   | # | Erweiterung/<br>Modulname | Composer-Paket | Anbieter | Aktuelle Version | Funktionalität | Kompatibel mit der neuesten<br>Commerce-Version? | Probleme | Nativ für Commerce? | Aktion | Hinweise |
-   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
-   | 1 | Name und Link der Erweiterung | extension/<br>extensionx-magento-2 | Name des Anbieters | Version installiert | Geschäftsanforderungen | Ja/Nein | Auflisten identifizierter Probleme mit dieser Erweiterung | Ja/Nein | Keep/Replace/<br>Entfernen |  |
+  | # | Erweiterung/<br>Modulname | Composer-Paket | Anbieter | Aktuelle Version | Funktionalität | Kompatibel mit der neuesten<br>Commerce-Version? | Probleme | Nativ für Commerce? | Aktion | Hinweise |
+  |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
+  | 1 | Name und Link der Erweiterung | extension/<br>extensionx-magento-2 | Name des Anbieters | Version installiert | Geschäftsanforderungen | Ja/Nein | Auflisten identifizierter Probleme mit dieser Erweiterung | Ja/Nein | Keep/Replace/<br>Entfernen |       |
 
 - **Benutzerdefinierte Module**—Ähnlich wie bei der Tabelle mit Modulen von Drittanbietern hilft Ihnen diese Vorlage, den Status und die Aktionen zu verfolgen und zu verstehen, die für die Aktualisierung benutzerdefinierter Module erforderlich sind.
 
-   | # | Modulname | Funktionalität | Erforderlich? | Nativ für Commerce? | Aktion | Hinweise |
-   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
-   | 1 | Modulname | Geschäftsanforderungen | Ja/Nein | Ja/Nein | Behalten/Ersetzen/Entfernen |  |
+  | # | Modulname | Funktionalität | Erforderlich? | Nativ für Commerce? | Aktion | Hinweise |
+  |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
+  | 1 | Modulname | Geschäftsanforderungen | Ja/Nein | Ja/Nein | Behalten/Ersetzen/Entfernen |       |
 
 - **Composer-Pakete und -Abhängigkeiten in Composer.json, die eine Aktualisierung erfordern.**
 
@@ -74,7 +74,7 @@ Da sich das Bereitstellungsdatum nähert, ist Kommunikation unerlässlich. Wenn 
 
 ## Launch
 
-Führen Sie das Upgrade durch, indem Sie es in der Produktion bereitstellen und die Erweiterungen aktualisieren. Stellen Sie sicher, dass Sie kritische Pfadflüsse mit simulierten Bestellungen testen. Sehen Sie sich diese an [Best Practices](../prepare/best-practices.md) für einige Tipps zum Starten mit minimalen Problemen.
+Führen Sie das Upgrade durch, indem Sie es in der Produktion bereitstellen und die Erweiterungen aktualisieren. Stellen Sie sicher, dass Sie kritische Pfadflüsse mit simulierten Bestellungen testen. Sehen Sie sich diese [Best Practices](../prepare/best-practices.md) für einige Tipps zum Starten mit minimalen Problemen.
 
 Befolgen Sie Ihren Kommunikationsplan und stellen Sie sicher, dass alle Beteiligten über das Upgrade informiert und umfassend für dessen Unterstützung geschult sind.
 

@@ -224,7 +224,7 @@ ht-degree: 13%
 | Sean van Zuidam | [#30062](https://github.com/magento/magento2/pull/30062) | [30063](https://github.com/magento/magento2/issues/30063), [30066](https://github.com/magento/magento2/issues/30066) |
 | Tu Nguyen | [#29773](https://github.com/magento/magento2/pull/29773) | [29778](https://github.com/magento/magento2/issues/29778) |
 | Pieter Cappelle | [#26713](https://github.com/magento/magento2/pull/26713) | [14398](https://github.com/magento/magento2/issues/14398), [21885](https://github.com/magento/magento2/issues/21885) |
-| Bartłomiej Szubert | [#30320](https://github.com/magento/magento2/pull/30320) | [1175](https://github.com/magento/magento2/issues/11175) |
+| Bartłomiej Szubert | [#30320](https://github.com/magento/magento2/pull/30320) | [11175](https://github.com/magento/magento2/issues/11175) |
 | Bas van Poppel | [#30167](https://github.com/magento/magento2/pull/30167) | [30169](https://github.com/magento/magento2/issues/30169) |
 | Ihor Sviziev | [#30023](https://github.com/magento/magento2/pull/30023) | [30025](https://github.com/magento/magento2/issues/30025) |
 | Ihor Sviziev | [#30002](https://github.com/magento/magento2/pull/30002) | [30005](https://github.com/magento/magento2/issues/30005) |

@@ -1,6 +1,6 @@
 ---
 title: Managed Services
-description: Überprüfen Sie die Zuständigkeiten von Adobe Managed Services, Kunden und Cloud Service-Anbietern für Ihre Adobe Commerce in Bezug auf die Implementierung der Cloud-Infrastruktur.
+description: Überprüfen Sie die Zuständigkeiten von Adobe Managed Services, Kunden und Cloud-Service-Anbietern für Ihre Adobe Commerce in Bezug auf die Implementierung der Cloud-Infrastruktur.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 feature: Cloud, Services
 source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
@@ -22,26 +22,26 @@ Adobe Commerce Pro-Pläne basieren auf einem Sicherheitsmodell mit gemeinsamer V
 
 ![Abbildung des Modells für die gemeinsame Verantwortung von Adobe Commerce](../../../assets/playbooks/shared-responsibility.svg)
 
-### Verantwortlichkeiten für Adobe Managed Services
+### Adobe Managed Services-Zuständigkeiten
 
 Adobe Managed Services ist für die Sicherheit und Verfügbarkeit der Adobe Commerce Pro-Cloud-Umgebung, des Core-Adobe Commerce Pro-Anwendungscodes und der internen Commerce-Systeme verantwortlich. Dazu gehören unter anderem:
 
 - Patchen auf Serverebene
 - Betrieb der erforderlichen Dienste zur Bereitstellung von Adobe Commerce Pro-Plänen
-- Schwachstellentests
+- Schwachstellen-Tests
 - Protokollierung und Überwachung von Sicherheitsereignissen
 - Incident Management
 - Operative Überwachung
 - Unterstützung rund um die Uhr
 - Sicherstellung, dass die Kundeninfrastruktur gemäß SLAs verfügbar ist
 
-Adobe Managed Services ist auch für die Verwaltung von Server-Firewall-Konfigurationen (iptables) und Firewall-Konfigurationen (Sicherheitsgruppen) zuständig. Adobe kann in regelmäßigen Abständen auch Sicherheitsupdates für die Kernanwendung veröffentlichen. Es liegt in der Verantwortung der Kunden, diese Patches anzuwenden. Diese Bereiche werden alle von der PCI-Zertifizierung der Adobe Commerce für Cloud-Infrastruktursysteme abgedeckt.
+Adobe Managed Services ist auch für die Verwaltung von Server-Firewall-Konfigurationen (iptables) und von Firewall-Konfigurationen (Sicherheitsgruppen) verantwortlich. Adobe kann in regelmäßigen Abständen auch Sicherheitsupdates für die Kernanwendung veröffentlichen. Es liegt in der Verantwortung der Kunden, diese Patches anzuwenden. Diese Bereiche werden alle von der PCI-Zertifizierung der Adobe Commerce für Cloud-Infrastruktursysteme abgedeckt.
 
 ### AWS-Zuständigkeiten
 
 Adobe Managed Services verwendet Amazon Web Services (AWS) für die Cloud-Server-Infrastruktur. AWS ist für die Sicherheit des Netzwerks verantwortlich, einschließlich Routing, Switching und Reichweitennetzsicherheit über Firewall-Systeme und IDS (Intrusion Detection Systems). AWS ist für die physische Sicherheit der Rechenzentren zuständig, in denen die Cloud-Umgebungen von Adobe Commerce verwaltet werden, sowie für die Umgebungssicherheit, um sicherzustellen, dass geeignete Strom-, Kühlungs- und Mechanismen zur Verfügung stehen.
 
-Adobe Commerce Pro plant die Verwendung von:
+Adobe Commerce Pro-Pläne:
 
 - Amazon Elastic Compute Cloud (EC2)
 - Amazon Simple Storage Service (S3)
@@ -54,7 +54,7 @@ Amazon verfügt über ein umfangreiches Compliance-Programm, das PCI DSS-, SOC 2
 
 ### Verantwortlichkeiten des Lösungspartners/Kunden
 
-Der Kunde ist in erster Linie für die Sicherheit seiner angepassten Implementierung der Adobe Commerce-Anwendung verantwortlich, die in der Adobe Commerce Pro-Plan-Cloud-Umgebung ausgeführt wird. Dazu gehören:
+Der Kunde ist in erster Linie für die Sicherheit seiner angepassten Implementierung der Adobe Commerce-Anwendung verantwortlich, die in der Adobe Commerce Pro-Planungs-Cloud-Umgebung ausgeführt wird. Dazu gehören:
 
 - Sicherstellen einer sicheren Konfiguration und Codierung der Anwendungs- und Sicherheitsüberwachungsaktivitäten, einschließlich Penetrationstests und regelmäßiger Verwundbarkeits-Scans.
 

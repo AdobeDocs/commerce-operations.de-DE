@@ -19,7 +19,7 @@ Der im vorangehenden Diagramm beschriebene Qualitätskontrollprozess kann kurz w
 <table>
 <thead>
   <tr>
-    <th>Softwareentwicklungsprozess</th>
+    <th>Software-Entwicklungsprozess</th>
     <th>QC-Workflow</th>
     <th>QC</th>
     <th>QC Leader</th>
@@ -64,7 +64,7 @@ Der im vorangehenden Diagramm beschriebene Qualitätskontrollprozess kann kurz w
   </tr>
   <tr>
     <td>Interne Tests</td>
-    <td>Testimplementierung und -ausführung</td>
+    <td>Implementierung und Ausführung von Tests</td>
     <td>Implementiert Tests, führt sie aus und protokolliert sie.</td>
     <td>Überwachung der Implementierung und Durchführung der Tests</td>
   </tr>
@@ -88,7 +88,7 @@ Der im vorangehenden Diagramm beschriebene Qualitätskontrollprozess kann kurz w
   </tr>
   <tr>
     <td></td>
-    <td>Evaluieren und Reporting</td>
+    <td>Bewertung und Berichterstellung</td>
     <td>Berichtstest-Fortschritt für QC-Lead und PM</td>
     <td>Bewerten von Testergebnissen und Fortschritt</td>
   </tr>
@@ -181,7 +181,7 @@ BrowserStack ist eine Cloud-Web- und mobile Testplattform, mit der Entwickler ih
 
 Postman ist die Kooperationsplattform für die API-Entwicklung. Postman vereinfacht die Erstellung von APIs und optimiert die Zusammenarbeit, sodass Sie bessere APIs erstellen können.
 
-SoapUI ist eine Open-Source-Webdienst-Testanwendung für Simple Object Access Protocol (SOAP) und Repräsentationsstatusübertragungen (REST). Die Funktion umfasst die Überprüfung von Webdiensten. Aufrufen, Entwickeln, Simulieren und Modellieren; Funktionstests; Belastungs- und Kompatibilitätstests.
+SoapUI ist eine Open-Source-Webdienst-Testanwendung für Simple Object Access Protocol (SOAP) und Repräsentationsstatusübertragungen (REST). Die Funktionen umfassen Webdienstabnahme, Aufrufen, Entwicklung, Simulation und Modellierung, Funktionstests, Belastungs- und Compliance-Tests.
 
 ## Automatisierungstests
 

@@ -37,7 +37,7 @@ ht-degree: 0%
 | LyraGhost | [magento/magento2#33948](https://github.com/magento/magento2/pull/33948) | [magento/magento2#34338](https://github.com/magento/magento2/issues/34338) |
 | DmitryFurs | [magento/magento2#33922](https://github.com/magento/magento2/pull/33922) | [magento/magento2#33924](https://github.com/magento/magento2/issues/33924) |
 | ihor-sviziev | [magento/magento2#33903](https://github.com/magento/magento2/pull/33903) | [magento/magento2#33928](https://github.com/magento/magento2/issues/33928) [magento/magento2#23324](https://github.com/magento/magento2/issues/23324) |
-| Rüstungen | [magento/magento2#33886](https://github.com/magento/magento2/pull/33886) | [magento/magento2#33680](https://github.com/magento/magento2/issues/33680) [magento/magento2#33755](https://github.com/magento/magento2/issues/33755) [magento/magento2#33945](https://github.com/magento/magento2/issues/33945) |
+| Rüstungswesen | [magento/magento2#33886](https://github.com/magento/magento2/pull/33886) | [magento/magento2#33680](https://github.com/magento/magento2/issues/33680) [magento/magento2#33755](https://github.com/magento/magento2/issues/33755) [magento/magento2#33945](https://github.com/magento/magento2/issues/33945) |
 | NetStorm84 | [magento/magento2#33874](https://github.com/magento/magento2/pull/33874) | [magento/magento2#34008](https://github.com/magento/magento2/issues/34008) [Magento/merchdocs#1686](https://github.com/magento/merchdocs/issues/1686) |
 | vovayatsyuk | [magento/magento2#33851](https://github.com/magento/magento2/pull/33851) | [magento/magento2#34483](https://github.com/magento/magento2/issues/34483) |
 | AnnaAPak | [magento/magento2#33727](https://github.com/magento/magento2/pull/33727) | [magento/magento2#33747](https://github.com/magento/magento2/issues/33747) |
@@ -66,7 +66,7 @@ ht-degree: 0%
 | bradleybrecher | [magento/magento2#33067](https://github.com/magento/magento2/pull/33067) | [magento/magento2#33075](https://github.com/magento/magento2/issues/33075) |
 | engcom-Foxtrot | [magento/magento2#33001](https://github.com/magento/magento2/pull/33001) | [magento/magento2#32596](https://github.com/magento/magento2/issues/32596) |
 | DmitryTsymal | [magento/magento2#32986](https://github.com/magento/magento2/pull/32986) | [magento/magento2#32991](https://github.com/magento/magento2/issues/32991) |
-| Filter | [magento/magento2#32891](https://github.com/magento/magento2/pull/32891) | [magento/magento2#32885](https://github.com/magento/magento2/issues/32885) |
+| mficker | [magento/magento2#32891](https://github.com/magento/magento2/pull/32891) | [magento/magento2#32885](https://github.com/magento/magento2/issues/32885) |
 | blage | [magento/magento2#32818](https://github.com/magento/magento2/pull/32818) | [magento/magento2#33434](https://github.com/magento/magento2/issues/33434) |
 | MJTheOne | [magento/magento2#32814](https://github.com/magento/magento2/pull/32814) | [magento/magento2#32819](https://github.com/magento/magento2/issues/32819) |
 | ihor-sviziev | [magento/magento2#32808](https://github.com/magento/magento2/pull/32808) | [magento/magento2#32954](https://github.com/magento/magento2/issues/32954) |

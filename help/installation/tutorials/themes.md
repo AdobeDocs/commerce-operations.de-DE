@@ -20,14 +20,14 @@ Weitere Informationen zu Designs finden Sie unter [Designstruktur](https://devel
 
 ## Überblick über die Deinstallation von Designs
 
-In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Designs deinstallieren, optional einschließlich des Designcodes aus dem Dateisystem. Sie können zunächst Sicherungen erstellen, damit Sie die Daten später wiederherstellen können.
+In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Designs deinstallieren, optional einschließlich des Designcodes aus dem Dateisystem. Sie können zunächst Backups erstellen, um die Daten später wiederherzustellen.
 
-Dieser Befehl deinstalliert *only* Designs, die in `composer.json`; d. h. Themen, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Design kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie:
+Dieser Befehl deinstalliert *only* Designs, die in `composer.json`; also Themen, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Design kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie:
 
 * Aktualisieren der `parent` Knoteninformationen in `theme.xml` , um Verweise auf das Design zu entfernen.
 * Entfernen des Design-Codes aus dem Dateisystem.
 
-  [Weitere Informationen zur Vererbung von Designs](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Weitere Informationen zur Themenvererbung](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Designs deinstallieren
 
@@ -45,16 +45,16 @@ Wo
 
 Der Befehl führt die folgenden Aufgaben aus:
 
-1. Stellt sicher, dass die angegebenen Design-Pfade vorhanden sind; Wenn nicht, wird der Befehl beendet.
-1. Stellt sicher, dass das Design ein Composer-Paket ist; Wenn nicht, wird der Befehl beendet.
+1. Stellt sicher, dass die angegebenen Design-Pfade vorhanden sind, andernfalls wird der Befehl beendet.
+1. Überprüft, ob das Design ein Composer-Paket ist. Andernfalls wird der Befehl beendet.
 1. Prüft auf Abhängigkeiten und beendet den Befehl, wenn es nicht erfüllte Abhängigkeiten gibt.
 
    Um dies zu umgehen, können Sie entweder alle Designs gleichzeitig deinstallieren oder die Datei je nach Design zuerst deinstallieren.
 
-1. Stellt sicher, dass das Design nicht verwendet wird; Wenn sie verwendet wird, wird der Befehl beendet.
-1. Stellt sicher, dass das Design nicht die Grundlage des virtuellen Designs ist; Wenn es die Basis eines virtuellen Designs ist, wird der Befehl beendet.
+1. Stellt sicher, dass das Design nicht verwendet wird. Wenn es verwendet wird, wird der Befehl beendet.
+1. Stellt sicher, dass das Design nicht die Basis des virtuellen Designs ist. Wenn es die Basis eines virtuellen Designs ist, wird der Befehl beendet.
 1. Setzt den Speicher in den Wartungsmodus.
-1. Wenn `--backup-code` angegeben ist, sichern Sie die Codebase, mit Ausnahme der `pub/static`, `pub/media`und `var` Verzeichnissen.
+1. Wenn `--backup-code` angegeben ist, sichern Sie die Codebase, mit Ausnahme der `pub/static`, `pub/media`, und `var` Verzeichnissen.
 
    Der Name der Sicherungsdatei lautet `var/backups/<timestamp>_filesystem.tgz`
 

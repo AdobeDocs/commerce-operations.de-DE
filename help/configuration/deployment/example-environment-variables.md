@@ -1,19 +1,19 @@
 ---
 title: Beispiel mit Umgebungsvariablen
 description: Sehen Sie sich ein Beispiel dafür an, wie Sie mithilfe von Umgebungsvariablen gemeinsame, systemspezifische und sensible Werte in Ihrem Entwicklungssystem festlegen.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
 
 ---
 
-
 # Beispiel mit Umgebungsvariablen
 
 In diesem Beispiel wird gezeigt, wie Sie in Ihrem Entwicklungssystem gemeinsame, systemspezifische und vertrauliche Werte festlegen und dann alle Werte in Ihrem Produktionssystem mithilfe einer Kombination der freigegebenen Konfiguration festlegen. `config.php`und PHP-Umgebungsvariablen.
 
-Diese Konfigurationseinstellungen können zwischen Entwicklungs- und Produktionssystemen freigegeben werden:
+Diese Konfigurationseinstellungen können von Entwicklungs- und Produktionssystemen gemeinsam verwendet werden:
 
 MwSt.-Nummer und Store-Name von **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**
 
@@ -39,7 +39,7 @@ Dieses Thema enthält ein Beispiel für die Änderung der Konfiguration des Prod
 
 Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 
-- Verwenden Sie die Git-Quellsteuerung
+- Verwenden Sie die Git-Quellsteuerung.
 - Das Entwicklungssystem ist in einem Git-Remote-Repository mit dem Namen `mconfig`
 - Ihre Git-Arbeitsverzweigung heißt `m2.2_deploy`
 
@@ -48,16 +48,16 @@ Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 So legen Sie die standardmäßige Gebietsschema- und Gewichtseinheiten in Ihrem Entwicklungssystem fest:
 
 1. Melden Sie sich beim Administrator an.
-1. Klicken **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
-1. Wenn Sie mehr als eine Website zur Verfügung haben, verwenden Sie die **Store-Ansicht** in der oberen linken Ecke, um zu einer anderen Website zu wechseln, wie in der folgenden Abbildung dargestellt.
+1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Wenn mehrere Websites verfügbar sind, verwenden Sie die **Store-Ansicht** in der oberen linken Ecke, um zu einer anderen Website zu wechseln, wie in der folgenden Abbildung dargestellt.
 
    ![Wechseln von Websites](../../assets/configuration/split-deploy-switch-website.png)
 
 1. Erweitern Sie im rechten Bereich **Store-Informationen**.
-1. Falls erforderlich, löschen Sie die **Use Default** Kontrollkästchen neben dem **MwSt.-Nummer** -Feld.
-1. Geben Sie eine Zahl in das Feld ein (z. B. `12345`).
+1. Falls erforderlich, löschen Sie die **Use Default** Kontrollkästchen neben dem **MwSt. Nummer** -Feld.
+1. Geben Sie eine Zahl in das Feld ein (beispielsweise `12345`).
 1. Im **Speichername** ein Wert eingeben (wie `My Store`).
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 1. Verwenden Sie die **Store-Ansicht** Liste zur Auswahl der **Standardkonfiguration** wie in der folgenden Abbildung dargestellt.
 
    ![Zur Standardkonfiguration wechseln](../../assets/configuration/split-deploy-default-config.png)
@@ -65,12 +65,12 @@ So legen Sie die standardmäßige Gebietsschema- und Gewichtseinheiten in Ihrem 
 1. Klicken Sie im linken Navigationsbereich unter &quot;General&quot;auf **Kontakte**.
 1. Löschen Sie die **Use Default** Kontrollkästchen neben dem **E-Mails an senden** -Feld.
 1. Geben Sie eine E-Mail-Adresse in das Feld ein.
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 1. Klicken Sie im linken Bereich auf Customers > **Kundenkonfiguration**.
 1. Erweitern Sie im rechten Bereich **Neue Kontooptionen erstellen**.
 1. Löschen Sie die **Systemwert verwenden** Kontrollkästchen neben dem **Standard-E-Mail-Domain** -Feld.
 1. Geben Sie einen Domänennamen in das Feld ein.
-1. Klicken **Konfiguration speichern**.
+1. Klicks **Konfiguration speichern**.
 1. Wenn Sie dazu aufgefordert werden, leeren Sie den Cache.
 
 ## Schritt 2: Konfiguration aktualisieren
@@ -81,7 +81,7 @@ Nachdem Sie die Konfiguration in Admin geändert haben, schreiben Sie die freige
 
 Beachten Sie Folgendes: `app/etc/env.php` (die systemspezifische Konfiguration) aktualisiert wurde, checken Sie sie nicht in die Quell-Code-Verwaltung ein. Sie werden später in diesem Verfahren dieselben Konfigurationseinstellungen für Ihr Produktionssystem erstellen.
 
-## Schritt 3: Build-System aktualisieren und Dateien generieren
+## Schritt 3: Aktualisieren Sie Ihr Build-System und generieren Sie Dateien.
 
 Nachdem Sie Ihre Änderungen an der freigegebenen Konfiguration an die Quell-Code-Verwaltung übertragen haben, können Sie diese Änderungen in Ihrem Build-System abrufen, Code kompilieren und statische Dateien generieren. Der letzte Schritt besteht darin, diese Änderungen in Ihr Produktionssystem zu übernehmen.
 
@@ -100,20 +100,20 @@ Um die sensiblen und systemspezifischen Einstellungen mithilfe von Umgebungsvari
 
 - Umfang der einzelnen Einstellungen
 
-   Wenn Sie die Anweisungen in Schritt 1 befolgt haben, ist der Bereich für das Senden von E-Mails an global (d. h. der Bereich Standardkonfiguration ) und der Bereich für die Standard-E-Mail-Domäne ist website.
+  Wenn Sie die Anweisungen in Schritt 1 befolgt haben, ist der Bereich für das Senden von E-Mails an global (d. h. der Bereich Standardkonfiguration ) und der Bereich für die Standard-E-Mail-Domäne ist website.
 
-   Sie müssen den Code der Website kennen, um den Konfigurationswert Standard-E-Mail-Domäne festzulegen. Siehe [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables) für weitere Informationen zum Auffinden.
+  Sie müssen den Code der Website kennen, um den Konfigurationswert Standard-E-Mail-Domäne festzulegen. Siehe [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables) für weitere Informationen zum Auffinden.
 
 - Konfigurationspfad für jede Einstellung
 
-   Die in diesem Beispiel verwendeten Konfigurationspfade lauten wie folgt:
+  Die in diesem Beispiel verwendeten Konfigurationspfade:
 
-   | Einstellungsname | Konfigurationspfad |
-   |--------------|--------------|
-   | E-Mails an senden | `contact/email/recipient_email` |
-   | Standard-E-Mail-Domain | `customer/create_account/email_domain` |
+  | Einstellungsname | Konfigurationspfad |
+  |--------------|--------------|
+  | E-Mails an senden | `contact/email/recipient_email` |
+  | Standard-E-Mail-Domain | `customer/create_account/email_domain` |
 
-   Alle sensiblen und systemspezifischen Konfigurationspfade finden Sie in [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md).
+  Alle sensiblen und systemspezifischen Konfigurationspfade finden Sie in [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md).
 
 #### Konvertieren von Konfigurationspfaden in Variablennamen
 
@@ -125,9 +125,9 @@ Wie in [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen ve
 
 Der Wert von `<SCOPE>` is `CONFIG__DEFAULT__` für globalen Umfang oder `CONFIG__WEBSITES__<WEBSITE CODE>` für den Website-Bereich.
 
-So finden Sie den Wert von `<SYSTEM__VARIABLE__NAME>`ersetzen Sie jeden `/` im Konfigurationspfad mit zwei Unterstrichen.
+So finden Sie den Wert von `<SYSTEM__VARIABLE__NAME>`, ersetzen Sie jeden `/` im Konfigurationspfad mit zwei Unterstrichen.
 
-Die Variablennamen lauten wie folgt:
+Die Variablennamen folgen:
 
 | Name | Konfigurationspfad | Variablenname |
 |--------------|--------------|--------------|
@@ -173,7 +173,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationseinstellungen in
 **Überprüfen der Konfigurationseinstellungen**:
 
 1. Melden Sie sich beim Administrator Ihres Produktionssystems an.
-1. Klicken **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
 1. Verwenden Sie die **Store-Ansicht** Liste oben links, um zu einer anderen Website zu wechseln.
 
    Die freigegebenen Konfigurationsoptionen, die Sie im Entwicklungssystem festlegen, werden in etwa wie folgt angezeigt:
@@ -182,7 +182,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationseinstellungen in
 
    >[!INFO]
    >
-   >Die **Speichername** -Feld im Website-Bereich bearbeitbar ist, aber wenn Sie zum Bereich Standardkonfiguration wechseln, kann er nicht bearbeitet werden. Dies ist das Ergebnis der Festlegung der Optionen im Entwicklungssystem. Der Wert von **MwSt.-Nummer** im Website-Umfang nicht bearbeitbar ist.
+   >Die **Speichername** -Feld im Website-Bereich bearbeitbar ist, aber wenn Sie zum Bereich &quot;Standardkonfiguration&quot;wechseln, kann er nicht bearbeitet werden. Dies ist das Ergebnis der Festlegung der Optionen im Entwicklungssystem. Der Wert von **MwSt. Nummer** im Website-Umfang nicht bearbeitbar ist.
 
 1. Wechseln Sie, falls noch nicht geschehen, zum Bereich Standardkonfiguration .
 1. Klicken Sie im linken Navigationsbereich unter &quot;General&quot;auf **Kontakte**.

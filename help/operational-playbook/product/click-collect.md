@@ -1,13 +1,13 @@
 ---
 title: Klicken und sammeln
 description: Befolgen Sie diese zehn Tipps, um Ihren Kunden ein angenehmes Klickerlebnis bereitzustellen und zu sammeln.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
 
 ---
-
 
 # Klicken und sammeln
 
@@ -34,13 +34,13 @@ Unternehmen sollten diese zehn Tipps befolgen, um einen guten Klick bereitzustel
 
 Bei der Entscheidung, Klick- und Datenerfassung zu implementieren, müssen Unternehmen überlegen, wie sie Klick- und Datenerfassung für Kunden bereitstellen möchten, z. B. Servicetypen:
 
-- **Online-Zahlung und Abholung im Geschäft** - Der Benutzer zahlt online für das Produkt, und nachdem die Zahlung bestätigt wurde, benachrichtigt der Store den Kunden, wenn das Produkt zur Abholung auf der Grundlage der Kundenspeicherauswahl bereit ist. Die Bezahlung hilft zunächst, das Produkt zu reservieren.
+- **Online-Zahlung und Abholung im Geschäft**- Der Benutzer bezahlt das Produkt online und nachdem die Zahlung bestätigt wurde, benachrichtigt der Store den Kunden, wenn das Produkt auf der Grundlage der Kundenspeicherauswahl gesammelt werden kann. Die Bezahlung hilft zunächst, das Produkt zu reservieren.
 
-- **Reservieren Sie Ihr Produkt online, bezahlen Sie und sammeln Sie es im Geschäft** - In diesem Servicetyp zahlt der Kunde nicht online, wenn er ein Produkt reserviert. Bei dieser Art von Service kann der Kunde seine Meinung ändern und das Produkt möglicherweise nicht erwerben.
+- **Produkt online reservieren, bezahlen und sammeln**—In diesem Service-Typ zahlt der Kunde nicht online, wenn er ein Produkt reserviert. Bei dieser Art von Service kann der Kunde seine Meinung ändern und das Produkt möglicherweise nicht erwerben.
 
-- **Integration** - Nach Auswahl des Versandtyps müssen Unternehmen über die Integrationsstruktur entscheiden (wo die Bestellungen gesendet werden und wo die Bestellungen eingegangen sind). Der Lagerbestand kann entweder von einem zentralen Lager oder direkt von einzelnen Geschäften erfüllt werden.
+- **Integration**- Nach Auswahl des Versandtyps müssen Unternehmen über die Integrationsstruktur entscheiden (wo die Bestellungen gesendet werden, wo die Bestellungen eingegangen sind). Der Lagerbestand kann entweder von einem zentralen Lager oder direkt von einzelnen Geschäften erfüllt werden.
 
-- **Rückgaben**: Die Rückgaben können komplex sein. Unternehmen müssen über eine klare Strategie verfügen, um die Renditen für gelieferte Produkte und Produkte zu verwalten, die mithilfe von Klick- und Datenerfassung bestellt werden. Unternehmen müssen es Kunden ermöglichen, Produkte, die sie durch Klick und Abruf bestellen, zurückzugeben, um einen End-to-End-Kundendienst zu bieten.
+- **Rückgabe**—Rückgaben können komplex sein. Unternehmen müssen über eine klare Strategie verfügen, um die Renditen für gelieferte Produkte und Produkte zu verwalten, die mithilfe von Klick- und Datenerfassung bestellt werden. Unternehmen müssen es Kunden ermöglichen, Produkte, die sie durch Klick und Abruf bestellen, zurückzugeben, um einen End-to-End-Kundendienst zu bieten.
 
 ## Promotion
 
@@ -68,7 +68,7 @@ Wenn alle Produkte, die ein Unternehmen auf der Website verkauft, nicht für Kli
 
 ## Bestellstatus
 
-Kommunikation ist auch beim Klick- und Sammeln von Kundendiensten wichtig. Es ist wichtig, den Bestellstatus nach dem Kauf mitzuteilen, z. B. wo und wann sie ihre Bestellung abholen sollen und ob sie persönliche Identifikation mitbringen müssen, um ihre Bestellung zu sammeln. Der Status sollte nicht nur über SMS oder E-Mail kommuniziert werden, sondern auch über die Website in der Tracking-Reihenfolge.
+Kommunikation ist auch beim Klick- und Sammeln von Kundendiensten von entscheidender Bedeutung. Es ist wichtig, den Bestellstatus nach dem Kauf mitzuteilen, z. B. wo und wann sie ihre Bestellung abholen sollen und ob sie persönliche Identifikation mitbringen müssen, um ihre Bestellung zu sammeln. Der Status sollte nicht nur über SMS oder E-Mail kommuniziert werden, sondern auch über die Website in der Tracking-Reihenfolge.
 
 ## Zusätzliche Kosten
 
@@ -76,6 +76,6 @@ Einige Marken berechnen zusätzliche Servicekosten, wenn die Bestellung für Kli
 
 ## Sammlung im Store
 
-Unabhängig davon, ob es sich um B2B- oder B2C-Geschäfte handelt, muss es den besten Kundenservice bieten. Es ist wichtig, Kunden Informationen im Geschäft bereitzustellen, z. B. wo sich der Sammelpunkt im Laden befindet. Benennen Sie einen Abschnitt im Store zum Klicken und Erfassen. Stellen Sie sicher, dass Kunden nicht lange warten müssen, um ihre Bestellung abzuholen. Einige Marken bieten auch Klick und sammeln Parkplätze, wo der Benutzer die Details für Klick eingibt und Parkplätze abholt und die Mitarbeiter des Stores ihnen ihre Bestellung mitbringen.
+Unabhängig davon, ob es sich um B2B- oder B2C-Geschäfte handelt, muss es den besten Kundenservice anbieten. Es ist wichtig, Kunden Informationen im Geschäft bereitzustellen, z. B. wo sich der Sammelpunkt im Laden befindet. Benennen Sie einen Abschnitt im Store zum Klicken und Erfassen. Stellen Sie sicher, dass Kunden nicht lange warten müssen, um ihre Bestellung abzuholen. Einige Marken bieten auch Klick und sammeln Parkplätze, wo der Benutzer die Details für Klick eingibt und Parkplätze abholt und die Mitarbeiter des Stores ihnen ihre Bestellung mitbringen.
 
 Dies sind nur einige Beispiele für Personalisierung. Es gibt unzählige weitere Funktionen, die entsprechend den Anforderungen des Unternehmens erforscht werden können. Es kann schwierig sein, mit sich ständig verändernden Markttrends Schritt zu halten, aber es hilft, das Kundenerlebnis insgesamt zu verbessern.

@@ -11,9 +11,9 @@ In diesem Dokument wird der Benutzer-Workflow beschrieben, mit dem Änderungen o
 
 ## Wer kann eine Anforderung erstellen?
 
-Die Adobe akzeptiert sowohl interne als auch externe Interessengruppen, insbesondere aber nicht nur Einzelpersonen in den folgenden Gruppen:
+Adobe akzeptiert sowohl interne als auch externe Interessengruppen, einschließlich, aber nicht beschränkt auf Einzelpersonen in den folgenden Gruppen:
 
-- Adobe Partner
+- Adobe Partners
 - Adobe CTAG (Customer Technical Advisory Group), Kundensupport, Kundenerfolg, Engineering-Teams
 
 ## Wie erstelle ich eine Anforderung?
@@ -41,7 +41,7 @@ Wenn in einer Anfrage nicht genügend Informationen angegeben sind, fordert das 
 
 Nachdem ein Artikel genehmigt wurde, kann die Pull-Anforderung mit der Produktionsverzweigung zusammengeführt werden. Die Zusammenführung sollte vom Autor vorgenommen werden. Nachdem ein Thema zusammengeführt wurde, kann es sofort mithilfe eines manuellen Prozesses oder automatisch beim nächsten Ausführen des Veröffentlichungsauftrags in der Produktion veröffentlicht werden. Veröffentlichungsaufträge werden normalerweise alle zwei Stunden ausgeführt.
 
-**Benachrichtigung zu neuen Inhalten**-Adobe bietet eine *Neue Funktionen* im Abschnitt [Best Practices - Überblick](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) Thema, um Benutzer über kürzlich veröffentlichte oder aktualisierte Themen auf dem Laufenden zu halten. Adobe wird auch neue Best Practices-Inhalte über bestehende Kanäle wie Marketing und interne Kommunikation fördern.
+**Benachrichtigung zu neuen Inhalten**-Adobe stellt eine *Neue Funktionen* im Abschnitt [Best Practices - Überblick](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) Thema, um Benutzer über kürzlich veröffentlichte oder aktualisierte Themen auf dem Laufenden zu halten. Adobe fördert außerdem neue Best Practices-Inhalte über bestehende Kanäle wie Marketing und interne Kommunikation.
 
 ## Backlog und Kanban Board
 

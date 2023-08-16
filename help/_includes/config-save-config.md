@@ -25,7 +25,7 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-1. Vergewissern Sie sich, dass `app/etc/config.php` aktualisiert wurde.
+1. Bestätigen Sie, dass `app/etc/config.php` aktualisiert wurde.
 
    ```bash
    git status

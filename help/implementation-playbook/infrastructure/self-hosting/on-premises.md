@@ -39,7 +39,7 @@ Im Folgenden werden die Rollen und Funktionen der einzelnen Aspekte der oben gez
 
 1. Amazon ElastiCache for Redis bietet eine Zwischenspeicherschicht für die Datenbank.
 
-1. Verwenden Sie Amazon Aurora oder AmazonRDS, um die Datenbankverwaltung zu vereinfachen (einschließlich hoher Verfügbarkeit und Übergeordneter Multikonfiguration).
+1. Verwenden Sie Amazon Aurora oder AmazonRDS, um die Datenbankverwaltung zu vereinfachen (einschließlich hoher Verfügbarkeit und Multi-Master-Konfiguration).
 
 1. EFSMount Target erleichtert die Zuordnung des Amazon Elastic File System (AmazonEFS) zu Varnish- und Adobe Commerce-Instanzen.
 

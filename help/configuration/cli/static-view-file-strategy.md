@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Bei der Bereitstellung statischer Ansichtsdateien können Sie eine der drei verfügbaren Strategien auswählen. Jeder von ihnen liefert optimale Implementierungsergebnisse für verschiedene Anwendungsfälle:
 
-- [Standard](#standard-strategy): den regulären Bereitstellungsprozess.
+- [Standard](#standard-strategy): der reguläre Bereitstellungsprozess.
 - [Quick](#quick-strategy) (_default_): minimiert die für die Bereitstellung erforderliche Zeit, wenn Dateien für mehr als ein Gebietsschema bereitgestellt werden.
 - [Kompakt](#compact-strategy): minimiert den Speicherplatz, der von den veröffentlichten Ansichtsdateien belegt wird.
 
@@ -66,7 +66,7 @@ Der in der kompakten Strategie verwendete Bereitstellungsansatz bedeutet, dass D
 - `map.php`
 - `requirejs-map.js`
 
-Die `map.php` -Datei verwendet von [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) , um die richtigen URLs zu erstellen.
+Die `map.php` -Datei verwendet von [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) um korrekte URLs zu erstellen.
 
 Die `requirejs-map.js` wird von der `baseUrlResolver` Plug-in für RequireJS.
 

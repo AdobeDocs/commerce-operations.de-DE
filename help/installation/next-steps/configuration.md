@@ -43,19 +43,19 @@ Wenn Sie den Apache-Webserver verwenden, müssen Sie Serverumschreibungen aktivi
 
 Wenn Sie mehrere Webknoten haben, *cannot* die standardmäßige Dateizwischenspeicherung des Programms verwenden, da keine Synchronisierung zwischen Webknoten erfolgt. Anders ausgedrückt: Die Aktivität auf einem Webknoten wird nur in das Dateisystem dieses Webknotens geschrieben. Eine nachfolgende Aktivität, die auf einem anderen Webknoten ausgeführt wird, kann dazu führen, dass unnötige Dateien geschrieben werden, oder zu Fehlern führen.
 
-Verwenden Sie stattdessen [Redis](../../configuration/cache/config-redis.md) sowohl für den Standard-Cache als auch für den Seiten-Cache.
+stattdessen [Redis](../../configuration/cache/config-redis.md) sowohl für den Standard-Cache als auch für den Seiten-Cache.
 
 ## Servereinstellungen
 
-In diesem Abschnitt werden kurz die Einstellungen erläutert, die Sie für den Server berücksichtigen sollten, auf dem die Anwendung ausgeführt wird. Einige dieser Einstellungen beziehen sich nicht direkt auf die Anwendung. diese werden nur als Vorschläge bereitgestellt.
+In diesem Abschnitt werden kurz die Einstellungen erläutert, die Sie für den Server berücksichtigen sollten, auf dem die Anwendung ausgeführt wird. Einige dieser Einstellungen beziehen sich nicht direkt auf die Anwendung. Sie werden nur als Vorschläge bereitgestellt.
 
 ### Protokollrotation
 
-UNIX `logrotate` -Dienstprogramm ermöglicht die Verwaltung von Systemen, die eine große Anzahl von Protokolldateien generieren. Dies ermöglicht das automatische Rotieren, Komprimieren, Entfernen und Versenden von Protokolldateien. Jede Protokolldatei kann täglich, wöchentlich, monatlich oder bei Überschreiten einer angegebenen Größe verarbeitet werden.
+UNIX `logrotate` -Dienstprogramm ermöglicht die Verwaltung von Systemen, die eine große Anzahl von Protokolldateien generieren. Dies ermöglicht das automatische Rotieren, Komprimieren, Entfernen und Versenden von Protokolldateien. Jede Protokolldatei kann täglich, wöchentlich, monatlich oder dann verarbeitet werden, wenn die Protokolldatei eine bestimmte Größe überschreitet.
 
 Weitere Informationen finden Sie unter einer der folgenden Themen:
 
-* [Gewusst wie: Tutorial zum ultimativen Rotieren von Protokollen mit zehn Beispielen](https://www.thegeekstuff.com/2010/07/logrotate-examples)
+* [HowTo: Das ultimative Tutorial zum Rotieren des Protokolls mit zehn Beispielen](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` Manpage](https://linuxconfig.org/logrotate-8-manual-page)
 
@@ -70,7 +70,7 @@ Weitere Informationen:
 
 ### Verbesserte Sicherheitsregeln für Linux (SELinux)
 
-Wir haben keine Empfehlung, ob Sie SELinux verwenden. Wenn Sie sie jedoch verwenden, müssen Sie Dienste so konfigurieren, dass sie miteinander kommunizieren, ähnlich wie beim Konfigurieren von iptables.
+Wir haben keine Empfehlung dafür, ob Sie SELinux verwenden. Wenn Sie es jedoch verwenden, müssen Sie Dienste so konfigurieren, dass sie miteinander kommunizieren, ähnlich wie beim Konfigurieren von iptables.
 
 Weitere Informationen:
 

@@ -1,5 +1,5 @@
 ---
-title: Verarbeitung hoher Durchsatzmengen
+title: Verarbeitung hoher Durchsatzreihenfolgen
 description: Optimieren Sie die Auftragsplatzierung und das Checkout-Erlebnis für Ihre Adobe Commerce- oder Magento Open Source-Bereitstellung.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
@@ -22,12 +22,12 @@ Alle Funktionen - AsyncOrder, verzögerte Gesamtberechnung und Bestandsüberprü
 
 ## Asynchrone Bestellplatzierung
 
-Die _Asynchrone Reihenfolge_ -Modul aktiviert die asynchrone Bestellplatzierung, die die Bestellung als `received`, platziert die Bestellung in eine Warteschlange und verarbeitet die Bestellungen aus der Warteschlange auf der Basis des &quot;first-in-first-out&quot;-Vorgangs. AsyncOrder is **disabled** Standardmäßig.
+Die _Asynchrone Reihenfolge_ -Modul aktiviert die asynchrone Bestellplatzierung, die die Bestellung als `received`, platziert die Bestellung in eine Warteschlange und verarbeitet die Bestellungen aus der Warteschlange auf der Basis des &quot;first-in-first-out&quot;. AsyncOrder is **disabled** Standardmäßig.
 
 Ein Kunde fügt beispielsweise ein Produkt zum Warenkorb hinzu und wählt **[!UICONTROL Proceed to Checkout]**. Sie füllen die **[!UICONTROL Shipping Address]** Formular, wählen Sie die gewünschten **[!UICONTROL Shipping Method]**, wählen Sie eine Zahlungsmethode aus und geben Sie die Bestellung ein. Der Warenkorb wird gelöscht, die Bestellung wird als **[!UICONTROL Received]**, aber die Produktmenge wird noch nicht angepasst und auch keine E-Mail zum Verkauf an den Kunden gesendet. Die Bestellung wird empfangen, aber die Bestelldetails sind noch nicht verfügbar, da die Bestellung noch nicht vollständig verarbeitet wurde. Er verbleibt in der Warteschlange, bis der `placeOrderProcess` Verbraucher beginnt, überprüft die Bestellung mit der [Bestandskontrolle](#disable-inventory-check) -Funktion (standardmäßig aktiviert) und aktualisiert die Reihenfolge wie folgt:
 
 - **Produkt verfügbar**—Der Bestellstatus ändert sich in _Ausstehend_, wird die Produktmenge angepasst, eine E-Mail mit Bestelldetails wird an den Kunden gesendet und die erfolgreichen Bestelldetails können im **Bestellungen und Rückgaben** Liste mit ausführbaren Optionen, z. B. Neuanordnung.
-- **Produkt nicht vorrätig oder nur wenig**—Der Bestellstatus ändert sich in _Zurückgewiesen_, wird die Produktmenge nicht angepasst, eine E-Mail mit Bestelldetails zum Problem wird an den Kunden gesendet und die zurückgewiesenen Bestelldetails werden im **Bestellungen und Rückgaben** Liste ohne ausführbare Optionen.
+- **Produkt nicht vorrätig oder nur wenig**—Der Bestellstatus ändert sich in _Abgelehnt_, wird die Produktmenge nicht angepasst, eine E-Mail mit Bestelldetails zum Problem wird an den Kunden gesendet und die zurückgewiesenen Bestelldetails werden im **Bestellungen und Rückgaben** Liste ohne ausführbare Optionen.
 
 Verwenden Sie die Befehlszeilenschnittstelle, um diese Funktionen zu aktivieren, oder bearbeiten Sie die `app/etc/env.php` Datei entsprechend den entsprechenden README-Dateien, die in der Datei [_Modulreferenz-Handbuch_][mrg].
 
@@ -78,12 +78,12 @@ AsyncOrder unterstützt eine begrenzte Anzahl von [!DNL Commerce] Funktionen.
 | Kategorie | Unterstützte Funktion |
 |------------------|--------------------------------------------------------------------------|
 | Checkout-Typen | OnePage Checkout<br>Standard-Checkout<br>B2B Negotiatives Zitat |
-| Zahlungsmethoden | Überprüfen/Money-Bestellung<br>Zustellbare Barmittel<br>Braintree<br>PayPal PayFlow Pro |
+| Zahlungsmethoden | Überprüfen/Money Order<br>Zustellbare Barmittel<br>Braintree<br>PayPal PayFlow Pro |
 | Versandmethoden | Alle Versandmethoden werden unterstützt. |
 
 Die folgenden Funktionen sind **not** unterstützt von AsyncOrder, aber weiterhin synchron funktionieren:
 
-- Zahlungsmethoden, die nicht in der Liste der unterstützten Funktionen enthalten sind
+- Zahlungsmethoden sind nicht in der Liste der unterstützten Funktionen enthalten
 - Checkout für mehrere Adressen
 - Erstellung von Admin-Bestellungen
 
@@ -166,7 +166,7 @@ Die _Aktivieren des Lagerbestands beim Laden des Warenkorbs_ Die globale Einstel
 
 Wenn diese Option deaktiviert ist, wird beim Hinzufügen eines Produkts zum Warenkorb keine Bestandsüberprüfung durchgeführt. Wenn diese Bestandsüberprüfung übersprungen wird, können einige nicht vorrätige Szenarien andere Fehlertypen auslösen. Bestandsüberprüfung _always_ tritt beim Bestellplatzierungsschritt auf, auch wenn deaktiviert.
 
-**Inventarüberprüfung beim Laden des Warenkorbs aktivieren** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsüberprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** nach `No` in der Admin-Benutzeroberfläche **Stores** > **Konfiguration** > **Katalog** > **Bestand** > **Lageroptionen** Abschnitt. Siehe [Globale Optionen konfigurieren][global] und [Katalogbestand][inventory] im _Benutzerhandbuch_.
+**Aktivieren der Lagerbestandsüberprüfung beim Laden des Warenkorbs** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsüberprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** nach `No` in der Admin-Benutzeroberfläche **Stores** > **Konfiguration** > **Katalog** > **Bestand** > **Lageroptionen** Abschnitt. Siehe [Globale Optionen konfigurieren][global] und [Katalog-Inventar][inventory] im _Benutzerhandbuch_.
 
 ## Lastenausgleich
 

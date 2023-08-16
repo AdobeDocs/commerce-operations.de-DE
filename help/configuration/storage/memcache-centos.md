@@ -16,18 +16,18 @@ In diesem Abschnitt finden Sie Anweisungen zur Installation des gecachten Progra
 
 >[!INFO]
 >
->Adobe empfiehlt die Verwendung der neuesten stabilen zwischengespeicherten Version (derzeit 3.1.3 für zwischengespeicherte Version).
+>Adobe empfiehlt die Verwendung der neuesten stabilen zwischengespeicherten Version (derzeit 3.1.3 für memcached).
 
 Da PHP keine native Unterstützung für Memcache hat, müssen Sie eine Erweiterung für PHP installieren, um sie zu verwenden. Es sind zwei PHP-Erweiterungen verfügbar, und es ist wichtig, zu dekodieren, welche verwendet werden sollen:
 
 - `memcache` (_n d_) - eine ältere, aber beliebte Erweiterung, die nicht regelmäßig gepflegt wird.
 Die `memcache` Erweiterung derzeit _nicht_ arbeitet mit PHP 7. Siehe [PHP-Dokumentation für memcache](https://www.php.net/manual/en/book.memcache.php).
 
-   Der genaue Name lautet `php-pecl-memcache` für CentOS.
+  Der genaue Name lautet `php-pecl-memcache` für CentOS.
 
 - `memcached` (_mit`d`_) - eine neuere und gepflegte Erweiterung, die mit PHP 7 kompatibel ist. Siehe [PHP-Dokumentation für zwischengespeicherte](https://www.php.net/manual/en/book.memcached.php).
 
-   Der genaue Name lautet `php-pecl-memcached` für CentOS.
+  Der genaue Name lautet `php-pecl-memcached` für CentOS.
 
 ## Installieren und konfigurieren Sie gecacht auf CentOS
 
@@ -110,9 +110,9 @@ So überprüfen Sie, ob die zwischengespeicherten Daten vom Webserver erkannt we
 
 Vergewissern Sie sich, dass Sie die zwischengespeicherte Version 3.0.5 oder höher verwenden.
 
-Wenn memcache nicht angezeigt wird, starten Sie den Webserver neu und aktualisieren Sie die Browserseite. Wenn es immer noch nicht angezeigt wird, überprüfen Sie, ob die `php-pecl-memcache` -Erweiterung.
+Wenn memcache nicht angezeigt wird, starten Sie den Webserver neu und aktualisieren Sie die Browserseite. Wenn es immer noch nicht angezeigt wird, überprüfen Sie, ob Sie die `php-pecl-memcache` -Erweiterung.
 
-### Erstellen Sie einen Memcache-Test, der aus einer MySQL-Datenbank und einem PHP-Skript besteht.
+### Erstellen Sie einen Memcache-Test, der aus einer MySQL-Datenbank und einem PHP-Skript besteht
 
 Der Test verwendet eine MySQL-Datenbank, eine Tabelle und Daten, um zu überprüfen, ob Sie die Datenbankdaten abrufen und in memcache speichern können. Ein PHP-Skript durchsucht zunächst den Cache. Wenn das Ergebnis nicht vorhanden ist, fragt das Skript die Datenbank ab. Nachdem die Abfrage von der ursprünglichen Datenbank erfüllt wurde, speichert das Skript das Ergebnis in memcache, indem es die `set` Befehl.
 

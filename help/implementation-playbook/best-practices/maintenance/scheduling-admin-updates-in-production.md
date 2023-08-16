@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Best Practices für die Planung von Admin-Aktualisierungen auf Produktions-Sites
+# Best Practices für die Planung von Admin-Aktualisierungen auf Produktionssites
 
 Planen Sie wichtige Aktualisierungen und Vorgänge auf Ihren Adobe Commerce-Sites außerhalb der Spitzenzeiten, um zu verhindern, dass die Leistung und der Ausfall von Produktionsstandorten verlangsamt werden.
 
@@ -32,6 +32,6 @@ Kritische Aktionen führen zu Cache-Invalidierungs- und Neuindizierungsvorgänge
 ## Zusätzliche Informationen
 
 - [Best Practices für die Zwischenspeicherung](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [Privater Inhalt: Invalidierung privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Privater Inhalt: Ungültigmachen privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-Empfehlungen: Caches](../../../performance/hardware.md#caches)
-- [Erweitertes Setup: Einrichten von Redis](../../../performance/advanced-setup.md#set-up-redis)
+- [Erweiterte Einrichtung: Redis einrichten](../../../performance/advanced-setup.md#set-up-redis)

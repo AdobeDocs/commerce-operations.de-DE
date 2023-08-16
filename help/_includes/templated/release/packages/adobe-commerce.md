@@ -239,7 +239,7 @@ wikimedia/less.php: ^3.2
       elasticsearch/elasticsearch
     </td>
     <td>Bibliothek</td>
-    <td>PHP Client für Elasticsearch</td>
+    <td>PHP-Client für Elasticsearch</td>
   </tr>
   <tr>
     <td>
@@ -376,7 +376,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/google/recaptcha.git">google/recaptcha</a>
+      <a href="https://github.com/google/recaptcha.git">Google/Recaptcha</a>
     </td>
     <td>Bibliothek</td>
     <td>Client-Bibliothek für reCAPTCHA, einen kostenlosen Service, der Websites vor Spam und Missbrauch schützt.</td>
@@ -439,7 +439,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-feed.git">Lamina/Lamina-Feed</a>
+      <a href="https://github.com/laminas/laminas-feed.git">Laminas/Laminatfeed</a>
     </td>
     <td>Bibliothek</td>
     <td>bietet Funktionen zum Erstellen und Verwenden von RSS- und Atom-Feeds.</td>
@@ -533,7 +533,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-permissions-acl.git">laminas/laminas-permissions-acl</a>
     </td>
     <td>Bibliothek</td>
-    <td>Bietet eine einfache und flexible ACL-Implementierung (Access Control List) für die Berechtigungsverwaltung</td>
+    <td>Bietet eine einfache und flexible ACL-Implementierung (Access Control List) für die Verwaltung von Berechtigungen</td>
   </tr>
   <tr>
     <td>
@@ -680,7 +680,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlfilter</a>
     </td>
     <td>Bibliothek</td>
-    <td>Standardkonformer HTML-Filter, geschrieben in PHP</td>
+    <td>Standardkonformer HTML-Filter in PHP</td>
   </tr>
   <tr>
     <td>
@@ -768,7 +768,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/pcre.git">Composer/pcre</a>
+      <a href="https://github.com/composer/pcre.git">Composer/PC</a>
     </td>
     <td>Bibliothek</td>
     <td>PCRE-Wrapping-Bibliothek, die typsichere preg_*-Ersetzungen bietet.</td>
@@ -820,7 +820,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/endroid/qr-code.git">endroid/qr-code</a>
     </td>
     <td>Bibliothek</td>
-    <td>Endroid QR Code</td>
+    <td>Endroid-QR-Code</td>
   </tr>
   <tr>
     <td>
@@ -1020,7 +1020,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/reactphp/promise.git">response/promise</a>
+      <a href="https://github.com/reactphp/promise.git">react/promise</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine einfache Implementierung von CommonJS Promises/A für PHP</td>
@@ -1317,7 +1317,7 @@ wikimedia/less.php: ^3.2
       temando/module-shipping-remover
     </td>
     <td>magento2-module</td>
-    <td>Entfernt die Versanderweiterung "Temando Multi-Carrier"aus Magento 2</td>
+    <td>Entfernt Temando-Erweiterung für den Transport mehrerer Frachtschiffe von Magento 2</td>
   </tr>
   </tbody>
 </table>
@@ -1338,7 +1338,7 @@ wikimedia/less.php: ^3.2
       temando/module-shipping
     </td>
     <td>metapackage</td>
-    <td>Temando-Erweiterung für die Schifffahrt mit mehreren Luftfahrtunternehmen für Magento 2</td>
+    <td>Temando-Erweiterung für die Schifffahrt mit mehreren Betreibern für Magento 2</td>
   </tr>
   </tbody>
 </table>
@@ -1394,7 +1394,7 @@ wikimedia/less.php: ^3.2
       paypal/module-braintree-core
     </td>
     <td>magento2-module</td>
-    <td>Verzweigung aus dem Modul Magento Braintree 2.2.0 von Gene Commerce für PayPal.</td>
+    <td>Fork vom Magento Braintree 2.2.0-Modul von Gene Commerce für PayPal.</td>
   </tr>
   </tbody>
 </table>

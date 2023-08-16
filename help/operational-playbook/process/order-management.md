@@ -20,8 +20,8 @@ Mit Bestellmanagementsystemen können Sie alle wichtigen Daten in einem System z
 
 Die Auftragsverwaltung ist in jedem E-Commerce-Geschäft von wesentlicher Bedeutung, da sie eine Kette bildet und alle Faktoren miteinander verknüpft, sodass das Unternehmen Folgendes tun kann:
 
-- Lagerbestand kontrollieren, sei es in mehreren Lagern
-- Beibehalten der Lagerbestände, auf die sie für Werbeaktionen oder Verkaufszeiten vorbereitet sind
+- Lagerbestand in mehreren Lagern kontrollieren
+- Beibehalten der Lagerbestände, auf die sie für beliebige Werbeaktionen oder Verkaufszeiten vorbereitet sind
 - Bereitstellung mehrerer Zahlungsmethoden für den Kunden zur Verbesserung des Kundenerlebnisses
 - Führen Sie ein Tracking der Bestellungen durch, um es dem Kunden zu erleichtern, den Bestellstatus zu überprüfen, und dem internen Kundenservice-Team, alle Anfragen schnell zu beantworten.
 - Unterstützen Sie alle Abteilungen des Unternehmens, sodass niemand falsch ausgerichtet ist.

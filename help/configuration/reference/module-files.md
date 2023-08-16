@@ -1,13 +1,13 @@
 ---
 title: Modulkonfigurationsdateien
 description: Erfahren Sie, wie Sie ein Modul mithilfe von Konfigurationstypen anpassen.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '2024'
 ht-degree: 0%
 
 ---
-
 
 # Überblick über die Modulkonfigurationsdateien
 
@@ -21,7 +21,7 @@ In diesem Thema werden häufig Begriffe verwendet:
 
 - **Konfigurationsobjekt**—Die Commerce-Bibliothek oder -Klasse, die für die Definition und Validierung des Konfigurationstyps zuständig ist. Beispielsweise das Konfigurationsobjekt für `config.xml` is [Magento\Framework\App\Config](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config.php).
 
-- **Konfigurationsphase**—Phasen sind definiert als _primary_, _global_ und _area_. Jede Phase bestimmt, wann der Konfigurationstyp geladen und mit denselben benannten Konfigurationstypen zusammengeführt wird. Beispiel: `module.xml` Dateien mit anderen zusammengeführt werden `module.xml` Dateien.
+- **Konfigurationsphase**—Phasen sind definiert als _primary_, _global_, und _area_. Jede Phase bestimmt, wann der Konfigurationstyp geladen und mit denselben benannten Konfigurationstypen zusammengeführt wird. Beispiel: `module.xml` Dateien mit anderen zusammengeführt werden `module.xml` -Dateien.
 
 - **Konfigurationsbereich**—Ergänzend zu den Konfigurationsphasen definiert ein Perimeter das Konfigurationstypmodell. Beispiel: `adminhtml` ist ein Bereichsbereich, der im Moment mit anderen Modulen geladen wird. `adminhtml` -Konfigurationen. Weitere Informationen finden Sie unter [Module und Bereiche](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 
@@ -40,22 +40,22 @@ Commerce lädt Konfigurationsdateien in der folgenden Reihenfolge (alle Pfade be
 where
 
 - `<your component base dir>` ist das Basisverzeichnis, in dem sich Ihre Komponente befindet. Typische Werte sind `app/code` oder `vendor` relativ zum Installationsordner von Commerce.
-- `<vendorname>` der Name des Anbieters der Komponente; Der Name des Anbieters in Commerce lautet beispielsweise `magento`.
+- `<vendorname>` ist der Name des Anbieters der Komponente. Der Name des Anbieters in Commerce lautet beispielsweise `magento`.
 - `<component-type>` ist einer der folgenden Werte:
 
    - `module-`: Eine Erweiterung oder ein Modul.
-   - `theme-`: Thema.
+   - `theme-`: Design.
    - `language-`: Sprachpaket.
 
 >[!INFO]
 >
 >Derzeit befinden sich die Designs unter `<magento_root>/app/design/frontend` oder `<magento_root>/app/design/adminhtml`.
 
-- `<component-name>`: Name der Komponente gemäß Definition in [composer.json](https://github.com/magento/magento2/blob/2.4/composer.json).
+- `<component-name>`: Name der Komponente, wie definiert in [composer.json](https://github.com/magento/magento2/blob/2.4/composer.json).
 
 ### Zusammenführen von Konfigurationsdateien
 
-Knoten in Konfigurationsdateien werden basierend auf ihren vollständig qualifizierten XPaths zusammengeführt, wobei ein spezielles Attribut definiert ist in `$idAttributes` als Kennung deklarierten Array. Diese Kennung muss für alle Knoten eindeutig sein, die unter demselben übergeordneten Knoten verschachtelt sind.
+Knoten in Konfigurationsdateien werden basierend auf ihren vollständig qualifizierten XPaths zusammengeführt, wobei ein spezielles Attribut definiert ist in `$idAttributes` -Array, das als Kennung deklariert ist. Diese Kennung muss für alle Knoten eindeutig sein, die unter demselben übergeordneten Knoten verschachtelt sind.
 
 Commerce-Anwendungszusammenführungsalgorithmus:
 
@@ -67,7 +67,7 @@ Nachdem die Konfigurationsdateien zusammengeführt wurden, enthält das resultie
 
 >[!INFO]
 >
->Sie können [\Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) -Klasse zum Debuggen und Verständnis der Logik hinter [Ladeprogramm für Konfigurationsdateien](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L125) und [Zusammenführungskonfigurationen](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L144) Prozess.
+>Sie können [\Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) -Klasse zum Debuggen und Verständnis der Logik hinter [Ladeprogramm für Konfigurationsdateien](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L125) und [Zusammenführungskonfigurationen](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php#L144) -Prozess.
 
 ## Konfigurationstypen, -objekte und -schnittstellen
 
@@ -79,7 +79,7 @@ In der folgenden Tabelle sind alle Konfigurationstypen und das Commerce-Konfigur
 
 | Konfigurationsdatei | Beschreibung | Staging | Konfigurationsobjekt |
 | --- | --- | --- | --- |
-| `address_formats.xml` | Adressformat-Deklaration | primary, global | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
+| `address_formats.xml` | Adressenformatdeklaration | primary, global | [\Magento\Customer\Model\Address\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/Model/Address/Config.php) |
 | `acl.xml` | [Zugriffssteuerungsliste](https://developer.adobe.com/commerce/webapi/get-started/authentication/#relationship-between-aclxml-and-webapixml) | global | [\Magento\Framework\Acl\AclResource\Provider](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Acl/AclResource/Provider.php) |
 | `analytics.xml` | [Erweiterte Berichterstellung](https://devdocs.magento.com/guides/v2.4/advanced-reporting/data-collection.html) | primary, global | [\Magento\Analytics\Model\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/Model/Config/Reader.php) |
 | `cache.xml` | Cache-Typdeklaration | primary, global | [\Magento\Framework\Cache\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Config/Data.php) |
@@ -128,16 +128,16 @@ In der folgenden Tabelle sind alle Konfigurationstypen und das Commerce-Konfigur
 
 ### Konfigurationsoberflächen
 
-Sie können mit Konfigurationsdateien über Schnittstellen unter interagieren. [Magento\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config).
+Sie können mit Konfigurationsdateien über Schnittstellen unter interagieren [Magento\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config).
 
-Sie können diese Schnittstellen verwenden, wenn Sie [Erstellen eines Konfigurationstyps](../reference/config-create-types.md#create-configuration-types).
+Sie können diese Schnittstellen verwenden, wenn Sie [Konfigurationstyp erstellen](../reference/config-create-types.md#create-configuration-types).
 
 `Magento\Framework\Config` stellt die folgenden Schnittstellen bereit:
 
 - [Framework\Config\ConverterInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ConverterInterface.php), wodurch die XML in eine speicherinterne Array-Darstellung der Konfigurationen konvertiert wird.
 - [Framework\Config\DataInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/DataInterface.php), der die Konfigurationsdaten in einem bestimmten Umfang abruft.
 - [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php), der den Speicherort der Dateien angibt, die von gelesen werden sollen [Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
-- [Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php), der die Konfigurationsdaten aus dem Speicher liest und den Speicher auswählt, aus dem sie gelesen werden.
+- [Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php), der die Konfigurationsdaten aus dem Speicher liest und den Speicher auswählt, von dem aus sie gelesen werden.
 
 Das heißt, das Dateisystem, die Datenbank und der andere Speicher führen die Konfigurationsdateien gemäß den Zusammenführungsregeln zusammen und validieren die Konfigurationsdateien mit den Validierungsschemas.
 

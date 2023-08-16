@@ -1,25 +1,25 @@
 ---
 title: Dynamisches Preismanagement
 description: Verschaffen Sie sich einen Wettbewerbsvorteil, indem Sie eine Strategie entwickeln, um die Produktpreise dynamisch auf der Grundlage der Marktbedingungen zu ändern.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
-
 # Dynamisches Preismanagement
 
-Dynamische Preisgestaltung ist eine responsive Preisstrategie, bei der sich der Preis in Echtzeit basierend auf Nachfrage, Angebot, Trend und Wettbewerb ändert. Es handelt sich nicht um ein neues Konzept; Es gibt sie schon seit einer Weile, aber sie übernimmt sicherlich E-Commerce. Dynamische Preisgestaltung gibt Einzelhändlern die Möglichkeit, die Preise zu ändern, um einen Wettbewerbsvorteil zu erzielen. Sie können beispielsweise versuchen, den Preis eines Produkts zu senken, das nicht gut verkauft wird, um zu versuchen, den Umsatz zu steigern.
+Dynamische Preisgestaltung ist eine responsive Preisstrategie, bei der sich der Preis in Echtzeit basierend auf Nachfrage, Angebot, Trend und Wettbewerb ändert. Es ist kein neues Konzept; es gibt es schon seit einer Weile, aber es übernimmt sicherlich den E-Commerce. Dynamische Preisgestaltung gibt Einzelhändlern die Möglichkeit, die Preise zu ändern, um einen Wettbewerbsvorteil zu erzielen. Sie können beispielsweise versuchen, den Preis eines Produkts zu senken, das nicht gut verkauft wird, um zu versuchen, den Umsatz zu steigern.
 
 Es gibt drei Faktoren, die die dynamische Preisgestaltung beeinflussen:
 
-- **Branche**: Einzelhändler müssen überprüfen, welcher der grundlegendste Preis eines Produkts unter anderen Marken ist.
+- **Branche**—Einzelhändler müssen überprüfen, welcher der grundlegendste Preis eines Produkts unter anderen Marken ist.
 
-- **Markt** - Was ist das aktuelle Angebot und die aktuelle Nachfrage? Was ist das prognostizierte Angebot und die vorhergesagte Nachfrage?
+- **Markt**—Wie sieht das aktuelle Angebot und die aktuelle Nachfrage aus? Was ist das prognostizierte Angebot und die vorhergesagte Nachfrage?
 
-- **Kunden** - Welches Kaufverhalten hat der Kunde? Wie hoch ist der Preis, den der Kunde für ein Produkt zu zahlen bereit ist.
+- **Kunden**- Wie verhält sich der Kunde beim Einkauf? Wie hoch ist der Preis, den der Kunde für ein Produkt zu zahlen bereit ist.
 
 Bei der Erarbeitung einer dynamischen Preisstrategie müssen Sie jeden Aspekt berücksichtigen.
 

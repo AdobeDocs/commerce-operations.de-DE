@@ -59,7 +59,7 @@ Befolgen Sie diese Best Practices bei der Konfiguration der `robots.txt` und `si
   }
   ```
 
-- Testen Sie die Umleitung, indem Sie die Dateien in einem Webbrowser anzeigen. Beispiel: `<domain.your.project>/robots.txt` und `<domain.your.project>/sitemap.xml`. Stellen Sie sicher, dass Sie den Stammpfad verwenden, für den Sie die Umleitung konfiguriert haben, und keinen anderen Pfad.
+- Testen Sie die Umleitung, indem Sie die Dateien in einem Webbrowser anzeigen. Beispiel: `<domain.your.project>/robots.txt` und `<domain.your.project>/sitemap.xml`. Vergewissern Sie sich, dass Sie den Stammpfad verwenden, für den Sie die Umleitung konfiguriert haben, und nicht einen anderen Pfad.
 
 >[!INFO]
 >
@@ -72,7 +72,7 @@ Sie können mehrere Stores mit einer einzigen Implementierung von Adobe Commerce
 
 Die gleichen Best Practices für die Konfiguration der `robots.txt` und `sitemap.xml` Dateien für [Storefronts mit nur einer Site](#single-site-storefronts) gilt für Storefronts mit mehreren Sites mit zwei wichtigen Unterschieden:
 
-- Stellen Sie sicher, dass die Variable `robots.txt` und `sitemap.xml` Dateinamen enthalten die Namen der entsprechenden Sites. Beispiel:
+- Stellen Sie sicher, dass die Variable `robots.txt` und `sitemap.xml` -Dateinamen enthalten die Namen der entsprechenden Sites. Beispiel:
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
@@ -100,9 +100,9 @@ Verwenden Sie die Admin-Anwendung, um die `robots.txt` und `sitemap.xml` Dateien
 
 ## Sicherheit
 
-Geben Sie Ihren Admin-Pfad nicht in Ihrer `robots.txt` -Datei. Der Admin-Pfad offen zu legen ist eine Schwachstelle für das Site-Hacking und einen möglichen Datenverlust. Entfernen Sie den Administratorpfad aus dem `robots.txt` -Datei.
+Geben Sie Ihren Admin-Pfad nicht in Ihrer `robots.txt` -Datei. Der Admin-Pfad offen zu legen ist eine Schwachstelle für das Site-Hacking und einen möglichen Datenverlust. Entfernen Sie den Admin-Pfad aus dem `robots.txt` -Datei.
 
-Schritte zum Bearbeiten der `robots.txt` und alle Einträge des Admin-Pfads entfernen, siehe [Marketing-Benutzerhandbuch > SEO und Suche > Suchmaschinen-Roboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+Für die Schritte zum Bearbeiten der `robots.txt` und entfernen Sie alle Einträge des Admin-Pfads, siehe [Marketing-Benutzerhandbuch > SEO und Suche > Suchmaschinen-Roboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
 
 >[!TIP]
 >

@@ -1,11 +1,11 @@
 ---
 user-guide-title: Operatives Playbook
-user-guide-description: Erfahren Sie, wie Sie Ihre Unternehmen betriebsbereit für die Ausführung einer erfolgreichen E-Commerce-Site machen.
+user-guide-description: Erfahren Sie, wie Sie Ihr Unternehmen auf den Betrieb einer erfolgreichen E-Commerce-Website vorbereiten können.
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
    - [Commerce-Strategie](strategy/commerce.md)
    - [Fokus](strategy/focus.md)
    - [Inhaltsstrategie](strategy/content.md)
-   - [Laufzeit](strategy/maturity.md)
+   - [Fälligkeit](strategy/maturity.md)
 - Prozess {#process}
    - [Auftragsverwaltung](process/order-management.md)
    - [Projektplan](process/project-plan.md)

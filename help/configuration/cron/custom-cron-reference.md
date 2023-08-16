@@ -1,13 +1,13 @@
 ---
 title: Benutzerdefinierter Cron-Auftrag und Cron-Gruppenreferenz
 description: Erfahren Sie, wie Sie Crons mithilfe von Cron-Gruppen anpassen können.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
-
 
 # Anpassen der ECrons-Referenz
 
@@ -23,7 +23,7 @@ Einen Überblick über Cron-Aufträge finden Sie unter [Konfigurieren von Cron-A
 
 In diesem Abschnitt wird beschrieben, wie Sie optional eine Cron-Gruppe für ein benutzerdefiniertes Modul erstellen. Wenn Sie dies nicht benötigen, fahren Sie mit dem nächsten Abschnitt fort.
 
-A _Cron-Gruppe_ ist eine logische Gruppe, mit der Sie Cron für mehrere Prozesse gleichzeitig einfach ausführen können. Die meisten Commerce-Module verwenden `default` Cron-Gruppe; Einige Module verwenden die `index` hinzugefügt.
+A _Cron-Gruppe_ ist eine logische Gruppe, mit der Sie Cron für mehrere Prozesse gleichzeitig einfach ausführen können. Die meisten Commerce-Module verwenden `default` Cron-Gruppe; einige Module verwenden die `index` hinzugefügt.
 
 Wenn Sie Cron für ein benutzerdefiniertes Modul implementieren, können Sie die `default` oder einer anderen Gruppe.
 
@@ -117,9 +117,9 @@ Dabei gilt:
 | `schedule_ahead_for` | Zeit (in Minuten) im Voraus, zu der Zeitpläne in die Variable `cron_schedule` Tabelle. |
 | `schedule_lifetime` | Zeitfenster (in Minuten), in dem ein Cron-Auftrag gestartet werden muss oder der Cron-Auftrag als verpasst gilt (&quot;zu spät&quot; für die Ausführung). |
 | `history_cleanup_every` | Uhrzeit (in Minuten), zu der der Cron-Verlauf in der Datenbank beibehalten wird. |
-| `history_success_lifetime` | Zeit (in Minuten), zu der der Datensatz mit erfolgreich abgeschlossenen Cron-Aufträgen in der Datenbank beibehalten wird. |
+| `history_success_lifetime` | Zeit (in Minuten), zu der der Datensatz mit erfolgreich abgeschlossenen Cron-Aufträgen in der Datenbank gespeichert wird. |
 | `history_failure_lifetime` | Zeit (in Minuten), in der der Datensatz mit fehlgeschlagenen Cron-Aufträgen in der Datenbank gespeichert wird. |
-| `use_separate_process` | Führen Sie die Aufträge dieser Cron-Gruppe in einem separaten PHP-Prozess aus. |
+| `use_separate_process` | Führen Sie die Aufträge dieser Cron-Gruppe in einem separaten PHP-Prozess aus |
 
 ## Cron-Auftrag deaktivieren
 

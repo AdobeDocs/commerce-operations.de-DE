@@ -36,11 +36,11 @@ Die Checkliste vor dem Start muss vor dem Start überprüft werden. Sie enthält
 
 ![Abbildung der Phase 1 des Startvorgangs](../../assets/playbooks/launch-steps-1.svg)
 
-Die Hauptunterschiede zwischen lokalen Implementierungen von Adobe Commerce und Cloud-Implementierungen sind die Bereitstellungsskripte und -werkzeuge sowie die Einrichtung für SSL, Mail-Dienst und CDN. Der Prozess ist jedoch immer noch derselbe.
+Die Hauptunterschiede zwischen lokalen Implementierungen von Adobe Commerce und Cloud-Implementierungen sind die Bereitstellungsskripte und -werkzeuge sowie die Einrichtung für SSL, Mail-Dienst und CDN. Der Prozess ist jedoch weiterhin identisch.
 
-Für SSL(TLS)-Zertifikate stellt Adobe Commerce on Cloud Infrastructure ein Fastly-Platzhalterzertifikat bereit. Um sie verwenden zu können, müssen Sie die Validierung bestehen: Fügen Sie den Fastly TXT-Eintrag in Ihre DNS-Einstellungen zum apex-Domänennamen hinzu. Der Fastly TXT-Eintrag befindet sich im On-boarding-Arbeitsblatt. Andernfalls müssen Sie ein Ticket senden, um es zu erhalten. Ersetzen Sie diesen Text durch Ihre Fragen/Kommentare hier. Wenn Sie Ihr eigenes SSL(TLS)-Zertifikat anstelle eines Wildcard-Zertifikats verwenden, senden Sie ein Supportticket mit Ihrem Zertifikat, das an das Setup angehängt ist.
+Für SSL(TLS)-Zertifikate stellt Adobe Commerce on Cloud Infrastructure ein Fastly-Platzhalterzertifikat bereit. Um sie zu verwenden, müssen Sie die Validierung durchlaufen: Fügen Sie den Fastly TXT-Eintrag zum Apex-Domänennamen in Ihren DNS-Einstellungen hinzu. Der Fastly TXT-Eintrag befindet sich im On-boarding-Arbeitsblatt. Andernfalls müssen Sie ein Ticket senden, um es zu erhalten. Ersetzen Sie diesen Text durch Ihre Fragen/Kommentare hier. Wenn Sie Ihr eigenes SSL(TLS)-Zertifikat anstelle eines Wildcard-Zertifikats verwenden, senden Sie ein Supportticket mit Ihrem Zertifikat, das an das Setup angehängt ist.
 
-Adobe Commerce in der Cloud-Infrastruktur bietet die Funktion SendGrid Mail für Ihre Transaktions-E-Mails. Für Pro-Pläne müssen Sie Ihren DNS-Einstellungen SendGrid-Einträge hinzufügen. SendGrid-Datensätze finden Sie im On-Boarding-Arbeitsblatt. Andernfalls sollten SI oder Händler Support-Tickets einreichen, um sie zu erhalten. Zunächst müssen Sie keine Änderungen am DNS vornehmen. SendGrid ist für Sie vorkonfiguriert.
+Adobe Commerce in der Cloud-Infrastruktur bietet die Funktion SendGrid Mail für Ihre Transaktions-E-Mails. Für Pro-Pläne müssen Sie Ihren DNS-Einstellungen SendGrid-Einträge hinzufügen. SendGrid-Datensätze finden Sie im On-Boarding-Arbeitsblatt. Andernfalls sollten SI oder Händler Support-Tickets einreichen, um sie zu erhalten. Zunächst müssen Sie keine DNS-Änderungen vornehmen. SendGrid ist für Sie vorkonfiguriert.
 
 ## Checkliste vor dem Start abschließen
 

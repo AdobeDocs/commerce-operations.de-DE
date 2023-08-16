@@ -10,7 +10,7 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Version**: 3,0,3
+**Version**: 3.0.3
 
 Diese Referenz enthält 9 Befehle, die über die `bin/uct` Befehlszeilen-Tool.
 Die anfängliche Liste wird automatisch mit der Variablen `bin/uct list` -Befehl in Adobe Commerce.
@@ -19,7 +19,7 @@ Weitere Informationen zum Tool finden Sie unter [Übersicht](/help/upgrade/upgra
 
 >[!NOTE]
 >
->Diese Referenz wird aus der Anwendungs-Codebase generiert. Um den Inhalt zu ändern, können Sie den Quellcode für die entsprechende Befehlsimplementierung im [codebase](https://github.com/magento) Repository erstellen und Ihre Änderungen zur Überprüfung einreichen. Eine andere Möglichkeit besteht darin, _Feedback geben_ (finden Sie den Link oben rechts). Beitragsrichtlinien finden Sie unter [Codebeiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Diese Referenz wird aus der Anwendungs-Codebase generiert. Um den Inhalt zu ändern, können Sie den Quellcode für die entsprechende Befehlsimplementierung im [codebase](https://github.com/magento) Repository erstellen und Ihre Änderungen zur Überprüfung einreichen. Eine andere Möglichkeit ist, _Feedback geben_ (finden Sie den Link oben rechts). Beitragsrichtlinien finden Sie unter [Codebeiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -70,7 +70,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -105,7 +105,7 @@ Interaktive Fragen stellen
 
 ## `completion`
 
-Dump des Shell-Abschlussskripts
+Dump des Shell-Fertigstellungsskripts
 
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
@@ -114,7 +114,7 @@ bin/uct completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-Der Shell-Typ (z. B. &quot;bash&quot;), wird der Wert der &quot;$SHELL&quot; env var verwendet, wenn dies nicht angegeben wird.
+Der Shell-Typ (z. B. &quot;bash&quot;), der Wert der env var &quot;$SHELL&quot; wird verwendet, wenn dies nicht angegeben wird.
 
 
 ### `--debug`
@@ -140,7 +140,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -219,7 +219,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -254,7 +254,7 @@ Interaktive Fragen stellen
 
 ## `list`
 
-Auflisten von Befehlen
+Listen-Befehle
 
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
@@ -303,7 +303,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -367,7 +367,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -442,7 +442,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -478,7 +478,7 @@ Interaktive Fragen stellen
 ## `dbschema:diff`
 
 Zulassen der Auflistung von Adobe Commerce DB-Schemaunterschieden zwischen zwei ausgewählten Versionen.
-Verfügbare Versionen: 2,3,0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2.4.6
+Verfügbare Versionen: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.5-p2 | 2.4.6
 
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
@@ -513,7 +513,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -589,7 +589,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -639,13 +639,13 @@ Installationsordner von Adobe Commerce.
 
 ### `--current-version`, `-a`
 
-Aktuelle Adobe Commerce-Version, Version der Adobe Commerce-Installation wird verwendet, wenn sie weggelassen wird.
+Die aktuelle Adobe Commerce-Version und die Version der Adobe Commerce-Installation werden verwendet, wenn sie weggelassen werden.
 
 - Akzeptiert einen Wert
 
 ### `--coming-version`, `-c`
 
-Target Adobe Commerce-Version, wird die neueste veröffentlichte Version von Adobe Commerce verwendet, wenn sie weggelassen wird. Verfügbare Adobe Commerce-Versionen: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2| 4.5-p1 \| 2.4.4-p3 \| 2.4.5-p2 \| 2.4.6
+Target Adobe Commerce-Version, wird die neueste veröffentlichte Version von Adobe Commerce verwendet, wenn sie weggelassen wird. Verfügbare Adobe Commerce-Versionen: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.5 \| 2.4-p2 \| 2.4.5-p1 \| 2.4.4-p3 \| 2.4.5-p2 \| 2.4.6
 
 - Akzeptiert einen Wert
 
@@ -697,7 +697,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert

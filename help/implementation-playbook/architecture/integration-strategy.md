@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Adobe Commerce-Integrationsstrategie
 
-Die Integration Ihrer Plattform ist &quot;nicht verhandelbar&quot;. Die Unternehmen wollen, dass ihre E-Commerce-Plattformen von verschiedenen Touchpoints aus zugänglich sind und nahtlos in ihre Technologiesysteme integriert werden, insbesondere in ihr ERP. Anpassungsfähigkeit, globale Skalierbarkeit und Erschwinglichkeit spielen auch beim endgültigen Kauf der Plattform eine Rolle.
+Die Möglichkeit, Ihre Plattform zu integrieren, ist &quot;nicht verhandelbar&quot;. Die Unternehmen wollen, dass ihre E-Commerce-Plattformen von verschiedenen Touchpoints aus zugänglich sind und nahtlos in ihre Technologiesysteme integriert werden, insbesondere in ihr ERP. Anpassungsfähigkeit, globale Skalierbarkeit und Erschwinglichkeit spielen auch beim endgültigen Kauf der Plattform eine Rolle.
 
 Ein ganzheitlicher Integrationsansatz für Storefront- und Backend-Systeme wird von leistungsstarken GraphQL-APIs, umfassenden REST-APIs und dem Batch-Dateiimport zwischen Adobe Commerce und anderen Systemen oder Services unterstützt.
 
@@ -24,7 +24,7 @@ Die Adobe Commerce GraphQL-API bietet eine umfassende Storefront-Abdeckung, mit 
 
 GraphQL bietet eine effiziente, kanalspezifische Antwort, kein übermäßiges Abrufen von Daten und eine agile Implementierung neuer Touchpoint-Funktionen. Es wird auch oft ausgewählt, um eine Integration mit Vertriebskanälen wie mobilen nativen Apps, POS, IoT, Social-Kanälen und livestream-Commerce-Kanälen wie Facebook, Google, Instagram, WeChat und TikTok zu ermöglichen.
 
-Die Adobe Commerce REST API bietet umfassende Systemkonfigurationsfunktionen und Datenverwaltungsfunktionen, einschließlich Produkt- und Katalogfunktionen. Warenkorb, Anführungszeichen und Checkout; Kunden, Konten und Unternehmen; und bestellt und zurückgibt. REST-APIs unterstützen Massenvorgänge, mehrere Authentifizierungsmodi und die granulare Autorisierung, sodass REST-APIs häufig zur Integration in Unternehmenssysteme ausgewählt werden, darunter:
+Die Adobe Commerce REST API bietet umfassende Systemkonfigurations- und Datenverwaltungsfunktionen, einschließlich Produkt und Katalog, Warenkorb, Angebot und Kasse, Kunden, Konten und Unternehmen sowie Bestellungen und Rückgaben. REST-APIs unterstützen Massenvorgänge, mehrere Authentifizierungsmodi und die granulare Autorisierung, sodass REST-APIs häufig zur Integration in Unternehmenssysteme ausgewählt werden, darunter:
 
 - Enterprise Resource Planning (ERP)-Systeme wie SAP
 - PIM-Systeme (Product Information Management) wie Akeneo

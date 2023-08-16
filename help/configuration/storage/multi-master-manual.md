@@ -1,5 +1,5 @@
 ---
-title: Übergeordnete Datenbanken manuell konfigurieren
+title: Manuelles Konfigurieren von Master-Datenbanken
 description: Siehe Anleitungen zum manuellen Konfigurieren der geteilten Datenbanklösung.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Übergeordnete Datenbanken manuell konfigurieren
+# Manuelles Konfigurieren von Master-Datenbanken
 
 {{ee-only}}
 
@@ -36,11 +36,11 @@ Dieses Thema verwendet die folgenden Benennungskonventionen:
 - Der Name der Hauptdatenbank lautet `magento` und sein Benutzername und Kennwort beide `magento`
 - Der Name der Anführungsdatenbank lautet `magento_quote` und sein Benutzername und Kennwort beide `magento_quote`
 
-   Die Angebotsdatenbank wird auch als _Kasse_ Datenbank.
+  Die Angebotsdatenbank wird auch als _Kasse_ Datenbank.
 
 - Der Name der Verkaufsdatenbank lautet `magento_sales` und sein Benutzername und Kennwort beide `magento_sales`
 
-   Die Verkaufsdatenbank wird auch als OMS-Datenbank bezeichnet.
+  Die Verkaufsdatenbank wird auch als OMS-Datenbank bezeichnet.
 
 >[!INFO]
 >
@@ -48,7 +48,7 @@ Dieses Thema verwendet die folgenden Benennungskonventionen:
 
 ## Sichern des Commerce-Systems
 
-Adobe empfiehlt dringend, Ihre aktuelle Datenbank und Ihr Dateisystem zu sichern, damit Sie diese wiederherstellen können, wenn während des Vorgangs Probleme auftreten.
+Adobe empfiehlt dringend, dass Sie Ihre aktuelle Datenbank und Ihr Dateisystem sichern, damit Sie diese wiederherstellen können, wenn während des Vorgangs Probleme auftreten.
 
 **Sichern des Systems**:
 
@@ -61,7 +61,7 @@ Adobe empfiehlt dringend, Ihre aktuelle Datenbank und Ihr Dateisystem zu sichern
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
-## Einrichten zusätzlicher Übergeordneter Datenbanken
+## Einrichten zusätzlicher Master-Datenbanken
 
 In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkaufs- und Anführungstabellen erstellen.
 
@@ -126,13 +126,13 @@ Tabellennamen der Verkaufsdatenbank beginnen mit:
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- Die `magento_customercustomattributes_sales_flat_order` ebenfalls betroffen
+- Die `magento_customercustomattributes_sales_flat_order` ebenfalls betroffen ist
 
 >[!INFO]
 >
 >Dieser Abschnitt enthält Skripte mit bestimmten Datenbanktabellennamen. Wenn Sie Anpassungen vorgenommen haben oder eine vollständige Liste der Tabellen anzeigen möchten, bevor Sie Aktionen daran durchführen, lesen Sie [Referenzskripte](#reference-scripts).
 
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie unter
 
 - [SQL-Scripts für Verkaufsdatenbank erstellen](#create-sales-database-sql-scripts)
 - [Verkaufsdaten sichern](#back-up-sales-data)
@@ -297,7 +297,7 @@ Wo
 
 - `<your sales DB name>` mit dem Namen Ihrer Verkaufsdatenbank.
 
-   In diesem Thema lautet der Beispiel-Datenbankname `magento_sales`.
+  In diesem Thema lautet der Beispiel-Datenbankname `magento_sales`.
 
 - `<root username>` mit Ihrem MySQL-Stammbenutzernamen
 - `<root user password>` mit dem Kennwort des Benutzers
@@ -559,10 +559,10 @@ So verwenden Sie diese Skripte:
 
    In diesem Thema lautet der Beispiel-Datenbankname `magento`.
 
-1. Führen Sie jedes Skript aus dem `mysql>` Eingabeaufforderung `source <script name>`
+1. Führen Sie jedes Skript aus dem `mysql>` an `source <script name>`
 1. Überprüfen Sie die Ausgabe.
 1. Kopieren Sie das Ergebnis jedes Skripts in ein anderes SQL-Skript und entfernen Sie die Pipe-Zeichen (`|`).
-1. Führen Sie jedes Skript aus dem `mysql>` Eingabeaufforderung `source <script name>`.
+1. Führen Sie jedes Skript aus dem `mysql>` an `source <script name>`.
 
    Beim Ausführen dieses zweiten Skripts werden die Aktionen in Ihrer Haupt-Commerce-Datenbank ausgeführt.
 

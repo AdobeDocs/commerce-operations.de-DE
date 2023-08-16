@@ -34,7 +34,7 @@ Commerce definiert die folgende standardmäßige Konsistenzprüfung:
 
 Alle 5 Sekunden ruft diese Konsistenzprüfung die `pub/health_check.php` Skript. Dieses Skript überprüft die Verfügbarkeit des Servers, jeder Datenbank und von Redis (falls installiert). Das Skript muss innerhalb von 2 Sekunden eine Antwort zurückgeben. Wenn das Skript feststellt, dass eine dieser Ressourcen ausgefallen ist, wird ein HTTP-Fehlercode 500 zurückgegeben. Wenn dieser Fehlercode in sechs von zehn Versuchen empfangen wird, gilt das Backend als ungesund.
 
-Die `health_check.php` Das Skript befindet sich im `pub` Verzeichnis. Wenn Ihr Commerce-Stammordner `pub`, dann vergewissern Sie sich, dass Sie den Pfad im `url` Parameter aus `/pub/health_check.php` nach `health_check.php`.
+Die `health_check.php` befindet sich im `pub` Verzeichnis. Wenn Ihr Commerce-Stammordner `pub`, dann vergewissern Sie sich, dass Sie den Pfad im `url` Parameter aus `/pub/health_check.php` nach `health_check.php`.
 
 Weitere Informationen finden Sie unter [Tiergesundheitskontrollen](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) Dokumentation.
 
@@ -53,7 +53,7 @@ Wenn die Konsistenzprüfungen feststellen, dass das Commerce-Backend gesund ist,
 
 Die maximale Zeit, die Varnish für ein altes Objekt bereitstellt, ist die Summe der Übergangsphase (standardmäßig 300 Sekunden) und des TTL-Werts (standardmäßig 86400 Sekunden).
 
-So ändern Sie die standardmäßige Übergangsphase von innerhalb der `default.vcl` die folgende Zeile in der Datei `vcl_hit` Subroutine:
+So ändern Sie die standardmäßige Übergangsphase von innerhalb der `default.vcl` die folgende Zeile im `vcl_hit` Subroutine:
 
 ```conf
 if (obj.ttl + 300s > 0s) {
@@ -61,7 +61,7 @@ if (obj.ttl + 300s > 0s) {
 
 ### Wenn das Commerce-Backend nicht gesund ist
 
-Wenn das Commerce-Backend nicht responsiv ist, stellt Varnish veraltete Inhalte aus dem Cache drei Tage lang bereit (oder wie in `beresp.grace`) und die verbleibende TTL (die standardmäßig einen Tag beträgt), es sei denn, der zwischengespeicherte Inhalt wird manuell bereinigt.
+Wenn das Commerce-Backend nicht responsiv ist, stellt Varnish veraltete Inhalte aus dem Cache drei Tage lang bereit (oder wie in `beresp.grace`) und die verbleibende TTL (die standardmäßig einen Tag beträgt), es sei denn, der zwischengespeicherte Inhalt wird manuell gelöscht.
 
 ## Saint-Modus
 
@@ -77,7 +77,7 @@ Auf allen anderen Computern muss die Commerce-Instanz Zugriff auf die mySQL-Date
 
 Alternativ kann die Versionierung statischer Dateien auf allen Computern deaktiviert werden. Der Zugriff darauf erfolgt über den Administrator unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Entwickler** > **Einstellungen für statische Dateien** > **Statische Dateien unterschreiben** = **Nein**.
 
-Schließlich müssen sich alle Commerce-Instanzen im Produktionsmodus befinden. Bevor Varnish gestartet wird, löschen Sie den Cache auf jeder Instanz. Navigieren Sie im Admin zu **System** > Tools > **Cacheverwaltung** und klicken Sie auf **Magento-Cache leeren**. Sie können auch den folgenden Befehl ausführen, um den Cache zu löschen:
+Schließlich müssen sich alle Commerce-Instanzen im Produktionsmodus befinden. Bevor Varnish gestartet wird, löschen Sie den Cache auf jeder Instanz. Navigieren Sie im Admin zu **System** > Tools > **Cacheverwaltung** und klicken **Magento-Cache leeren**. Sie können auch den folgenden Befehl ausführen, um den Cache zu löschen:
 
 ```bash
 bin/magento cache:flush
@@ -92,7 +92,7 @@ Der Saint-Modus ist nicht Teil des Varnish-Hauptpakets. Es handelt sich um eine 
 
 Nach der Neukompilierung können Sie das Modul Saint-Modus installieren. Gehen Sie im Allgemeinen wie folgt vor:
 
-1. Quellcode abrufen von [Varnish-Module](https://github.com/varnish/varnish-modules). Klonen Sie die Git-Version (Übergeordnete Version), da die Versionen 0.9.x einen Quellcode-Fehler enthalten.
+1. Quellcode abrufen von [Varnish-Module](https://github.com/varnish/varnish-modules). Klonen Sie die Git-Version (Master-Version), da die Versionen 0.9.x einen Quellcode-Fehler enthalten.
 1. Erstellen Sie den Quellcode mit autotools:
 
    ```bash
@@ -108,7 +108,7 @@ Siehe [Varnish-Modulsammlung](https://github.com/varnish/varnish-modules) für I
 
 ### VCL-Beispieldatei
 
-Das folgende Codebeispiel zeigt den Code, der zu Ihrer VCL-Datei hinzugefügt werden muss, um den Farbmodus zu aktivieren. Platzieren Sie die `import` und `backend` -Definitionen am Anfang der Datei.
+Das folgende Codebeispiel zeigt den Code, der zu Ihrer VCL-Datei hinzugefügt werden muss, um den Farbmodus zu aktivieren. Platzieren Sie die `import` und `backend` -Definitionen am Anfang der -Datei.
 
 ```cpp
 import saintmode;

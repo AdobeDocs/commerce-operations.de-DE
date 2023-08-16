@@ -20,7 +20,7 @@ Die Launch-Phase umfasst die folgenden Aktivitäten:
 - Dienstüberprüfung
 - Leistungsüberwachung
 
-Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Startphase.
+Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Launch-Phase.
 
 ## Sicherheitskonfiguration
 

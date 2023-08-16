@@ -1,13 +1,13 @@
 ---
 title: Sicherheit und Einhaltung
 description: Erfahren Sie mehr über Sicherheits-, Datenschutz- und branchenspezifische Compliance-Ressourcen für Ihr Adobe Commerce- oder Magento Open Source-Projekt.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
-
 
 # Sicherheit und Einhaltung
 
@@ -15,8 +15,8 @@ Dieser Abschnitt enthält Informationen zur Sicherheit, zum Datenschutz und zur 
 
 ## Sicherheit
 
-- [Adobe Product Security](https://helpx.adobe.com/security.html): Die neuesten Patches, Sicherheitsupdates und Best Practices für Adobe Commerce.
-- [Adobe Trust Center](https://www.adobe.com/trust.html): Die neuesten verfügbaren Informationen zu Betriebszustand, Betriebssicherheit, Datenschutz und Compliance von Adobe Cloud Services.
+- [Adobe-Produktsicherheit](https://helpx.adobe.com/security.html): Die neuesten Patches, Sicherheitsupdates und Best Practices für Adobe Commerce.
+- [Adobe Trust Center](https://www.adobe.com/trust.html): Die neuesten verfügbaren Informationen zu Betriebszustand, Sicherheit, Datenschutz und Compliance von Adobe Cloud-Diensten.
 
 ## Compliance
 
@@ -29,4 +29,4 @@ Diese Dokumentation enthält die technischen Informationen, mit denen sichergest
 
 ## Compliance-Tools
 
-- [Privacy JavaScript Library](privacy/javascript-library.md)
+- [Datenschutz-JavaScript-Bibliothek](privacy/javascript-library.md)

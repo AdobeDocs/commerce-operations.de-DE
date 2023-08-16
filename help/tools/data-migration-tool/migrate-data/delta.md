@@ -1,6 +1,6 @@
 ---
 title: Migrieren von Änderungen
-description: Erfahren Sie, wie Sie nur Daten migrieren, die sich seit der Datenmigration aus dem letzten Magento 1 geändert haben, mit der [!DNL Data Migration Tool].
+description: Erfahren Sie, wie Sie nur Daten migrieren, die sich seit der letzten Magento 1-Datenmigration geändert haben, mit der [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Migrieren von Änderungen
 
-Das Tool für die inkrementelle Migration installiert Deltalog-Tabellen (mit Präfix `m2_cl_*`) und Triggern (zur Nachverfolgung von Änderungen in der Datenbank von Magento 1 während der [Datenmigration](data.md). Diese Dialogfeldtabellen und -Trigger sind unverzichtbar, um sicherzustellen, dass Sie nur die Änderungen migrieren, die seit der letzten Datenmigration in Magento 1 vorgenommen wurden. Diese Änderungen sind:
+Das Tool für die inkrementelle Migration installiert Deltalog-Tabellen (mit Präfix `m2_cl_*`) und Triggern (zur Nachverfolgung von Änderungen in der Magento 1-Datenbank während der [Datenmigration](data.md). Diese Deltalog-Tabellen und -Trigger sind unverzichtbar, um sicherzustellen, dass Sie nur die Änderungen migrieren, die seit der letzten Datenmigration in Magento 1 vorgenommen wurden. Diese Änderungen sind:
 
 * Daten, die Kunden über Storefront hinzugefügt haben (erstellte Bestellungen, Rezensionen und Änderungen in Kundenprofilen)
 
@@ -26,7 +26,7 @@ Das Tool für die inkrementelle Migration installiert Deltalog-Tabellen (mit Pr�
 Bevor Sie beginnen, bereiten Sie die folgenden Schritte vor:
 
 1. Melden Sie sich beim Anwendungsserver als [der Dateisysteminhaber](../../../installation/prerequisites/file-system/overview.md).
-1. Änderung an `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem System hinzugefügt wird. `PATH`.
+1. Ändern Sie die `/bin` Verzeichnis oder stellen Sie sicher, dass es Ihrem System hinzugefügt wird. `PATH`.
 
 Siehe [Erste Schritte](overview.md#first-steps) für weitere Details.
 
@@ -44,16 +44,16 @@ Dabei gilt:
 
 * `[-a|--auto]` ist ein optionales Argument, das verhindert, dass die Migration angehalten wird, wenn bei der Integritätsprüfung Fehler auftreten.
 
-* `{<path to config.xml>}` ist der absolute Dateisystempfad zu `config.xml`; Dieses Argument ist erforderlich.
+* `{<path to config.xml>}` ist der absolute Dateisystempfad zu `config.xml`; dieses Argument ist erforderlich.
 
 >[!NOTE]
 >
->Die inkrementelle Migration ist ein kontinuierlicher Prozess. wird automatisch alle 5 Sekunden neu gestartet. Verwenden Sie STRG-C, um den Migrationsprozess abzubrechen.
+>Die inkrementelle Migration ist ein kontinuierlicher Prozess, der automatisch alle 5 Sekunden neu gestartet wird. Verwenden Sie STRG-C, um den Migrationsprozess abzubrechen.
 
 
 ## Migrieren von Daten, die von Drittanbietererweiterungen erstellt wurden
 
-Im `Delta` -Modus, die [!DNL Data Migration Tool] migriert Daten, die nur von den eigenen Modulen von Magento erstellt wurden, und ist nicht für den Code oder die Erweiterungen von Drittanbieterentwicklern verantwortlich. Wenn diese Erweiterungen Daten in der Storefront-Datenbank erstellt haben und der Händler diese Daten in Magento 2 — Konfigurationsdateien des [!DNL Data Migration Tool] sollte entsprechend erstellt und geändert werden.
+Im `Delta` -Modus [!DNL Data Migration Tool] migriert Daten, die nur von Magento-eigenen Modulen erstellt wurden, und ist nicht für den Code oder die Erweiterungen von Drittanbieterentwicklern verantwortlich. Wenn diese Erweiterungen Daten in der Storefront-Datenbank erstellt haben und der Händler diese Daten in Magento 2 — Konfigurationsdateien des [!DNL Data Migration Tool] sollte entsprechend erstellt und geändert werden.
 
 Wenn eine Erweiterung über eigene Tabellen verfügt und Sie ihre Änderungen für die Delta-Migration verfolgen müssen, führen Sie die folgenden Schritte aus:
 

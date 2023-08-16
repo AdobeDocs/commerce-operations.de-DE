@@ -10,6 +10,6 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce Journey zu Headless
+# Adobe Commerce-Journey zu Headless
 
 ![Zeitablauf der Journey von Adobe Commerce zu einer Headless-Architektur](../../../assets/playbooks/journey-to-headless.svg)

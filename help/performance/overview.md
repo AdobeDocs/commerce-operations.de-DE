@@ -1,13 +1,13 @@
 ---
 title: Übersicht
 description: Befolgen Sie diese Best Practices, um die Leistung Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung zu optimieren.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
-
 
 # Best Practices bei der Leistung
 

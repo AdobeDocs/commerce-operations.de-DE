@@ -1,20 +1,20 @@
 ---
-title: Vor-Ort-Installationsvoraussetzungen
+title: Vor-Ort-Installation
 description: Erfahren Sie mehr über die Softwareabhängigkeiten, die für lokale Installationen von Adobe Commerce und Magento Open Source erforderlich sind.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: dd4694e7-5437-440c-bb67-804ae36149de
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-
-# Vor-Ort-Installationsvoraussetzungen
+# Vor-Ort-Installation
 
 Vor der Installation von Adobe Commerce oder Magento Open Source müssen Sie Folgendes tun:
 
 * Richten Sie einen oder mehrere Hosts ein, die dem [Systemanforderungen](../system-requirements.md).
-* Wenn Sie mehr als einen Webknoten mit Lastenausgleich einrichten, richten Sie diesen Teil Ihres Systems ein und testen Sie ihn. _before_ Installieren Sie die Anwendung.
+* Wenn Sie mehr als einen Webknoten mit Lastenausgleich einrichten, richten Sie diesen Teil Ihres Systems ein und testen Sie ihn _before_ Installieren Sie die Anwendung.
 * Stellen Sie sicher, dass Sie Ihr gesamtes System an verschiedenen Stellen während der Installation sichern können, damit Sie es bei Problemen zurücksetzen können.
 
 >[!NOTE]
@@ -27,23 +27,23 @@ Geben Sie die folgenden Befehle als Benutzer mit `root` -Berechtigungen:
 
 * Ubuntu
 
-   ```bash
-   apt-get update
-   ```
+  ```bash
+  apt-get update
+  ```
 
-   ```bash
-   apt-get upgrade
-   ```
+  ```bash
+  apt-get upgrade
+  ```
 
 * CentOS
 
-   ```bash
-   yum -y update
-   ```
+  ```bash
+  yum -y update
+  ```
 
-   ```bash
-   yum -y upgrade
-   ```
+  ```bash
+  yum -y upgrade
+  ```
 
 ## Voraussetzungsprüfung
 

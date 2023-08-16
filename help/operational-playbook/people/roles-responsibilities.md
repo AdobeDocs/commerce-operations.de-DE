@@ -1,13 +1,13 @@
 ---
 title: Rollen und Zuständigkeiten
 description: Erfahren Sie mehr über die verschiedenen Rollen und Verantwortlichkeiten, die bei einem erfolgreichen E-Commerce-Projekt involviert sind.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 0%
 
 ---
-
 
 # Rollen und Zuständigkeiten
 
@@ -43,16 +43,16 @@ Die Ziele eines Marketing-Managers umfassen:
 
 - Traffic zur Site anziehen
 - Marketingstrategien erstellen
-- Aktuell zu Branchentrends
+- Aktuell zu Branchen-Trends
 - Fokus auf Konversionsrate, Warenkorb und Promotions zur Steigerung des ROI der Organisation
 
-E-Commerce-Unternehmen benötigen Marketing in verschiedenen Formen, wie E-Mail, Druck, Web, soziale Medien, Einflussnehmer usw. Es liegt in der Verantwortung des Marketing-Managers, diese Formulare effektiv zu verwenden.
+E-Commerce-Unternehmen benötigen Marketing in verschiedenen Formen, z. B. E-Mail, Druck, Web, soziale Medien, Einflussnehmer usw. Es liegt in der Verantwortung des Marketing-Managers, diese Formulare effektiv zu verwenden.
 
 Der Marketing-Manager eines Digital-Implementierungsprojekts muss sich auch auf SEO- und SEM-Aufgaben konzentrieren, die entweder intern oder von einem Drittanbieter verarbeitet werden können.
 
 Ein Marketing-Manager sollte ständig mit dem Leiter der Digital-Marketing-Abteilung , dem E-Commerce-Manager, dem Customer Service-Team und dem Warehouse-Team kommunizieren, um Kampagnen und Promotions aufeinander abzustimmen. Wenn ein Marketing-Manager eine Promotion für ein Produkt plant und sendet, das einen niedrigen Lagerbestand aufweist, kann es zu einer Menge verstörter Kunden kommen und die Arbeitslast des Customer Service-Teams erhöhen. Es ist wichtig, dass alle Teams aufeinander abgestimmt sind.
 
-Marketing-Manager müssen außerdem verschiedene Methoden des Kundendienstes einbeziehen, um das Kundenerlebnis und die Kundenloyalität zu verbessern, darunter auch, aber nicht beschränkt auf:
+Marketing-Manager müssen außerdem verschiedene Methoden des Kundendienstes einbeziehen, um das Kundenerlebnis und die Kundenloyalität zu verbessern, darunter auch folgende:
 
 - Treue
 - Prämienpunkte
@@ -102,7 +102,7 @@ Die Hauptverantwortung des Logistics Managers liegt darin, sicherzustellen, dass
 
 ### Inventarmanager
 
-Der Inventarmanager muss das Inventar in einem oder mehreren Lagern überwachen, um sicherzustellen, dass die von den Kunden bestellten Produkte die Produkte sind, die versandt werden. Sie sind für die Überwachung der korrekten Produktverpackung verantwortlich. Kein Unternehmen möchte, dass seine Kunden Produkte in einem unbefriedigenden Zustand erhalten. Präsentation ist wichtig.
+Der Inventarmanager muss das Inventar in einem oder mehreren Lagern überwachen, um sicherzustellen, dass die von den Kunden bestellten Produkte die Produkte sind, die versandt werden. Sie sind für die Überwachung der korrekten Produktverpackung verantwortlich. Kein Unternehmen möchte, dass seine Kunden Produkte in einem unbefriedigenden Zustand erhalten; die Präsentation ist von entscheidender Bedeutung.
 
 ## Kundendienstteam
 
@@ -112,7 +112,7 @@ Kundendienstteams verwenden verschiedene Tools, um mit Kunden zu kommunizieren, 
 
 - Anrufe beantworten
 - Live-Chat verwenden
-- Verwalten von Chatbots
+- Verwalten von Bots
 
 Das Team des Kundendienstes ist auch für Folgendes zuständig:
 
@@ -122,7 +122,7 @@ Das Team des Kundendienstes ist auch für Folgendes zuständig:
 - Überprüfen des Bestellstatus mit dem Warehouse
 - Überprüfen von Promotions mit Marketing
 
-Das Team des Kundendienstes kann anderen Team-Mitgliedern anhand von Feedback, Fragen und Anliegen von Kunden detaillierte Einblicke bieten, die das Unternehmen zur Verbesserung und Verbesserung des Kundenerlebnisses nutzen kann.
+Das Team des Kundendienstes kann anderen Team-Mitgliedern anhand von Feedback, Fragen und Anliegen von Kunden detaillierte Einblicke geben, die das Unternehmen zur Verbesserung und Verbesserung des Kundenerlebnisses nutzen kann.
 
 ## Inhaltsteam
 
@@ -130,12 +130,12 @@ Das Content-Team befindet sich entweder im Marketing-Team, im E-Commerce-Team od
 
 Das Inhaltsteam ist für Folgendes zuständig:
 
-- **Organisieren des Inhalts**: Elemente, URLs, Navigation und Seitenstruktur müssen unkompliziert und benutzerfreundlich sein. Wenn die Site zu kompliziert ist, gehen Kunden verloren.
+- **Inhalt organisieren**—Elemente, URLs, Navigation und Seitenstruktur müssen unkompliziert und benutzerfreundlich sein. Wenn die Site zu kompliziert ist, gehen Kunden verloren.
 
-- **Fehlerbehebung für fehlerhafte Inhalte**: Beschädigte Bilder, Seiten, fehlende Seiten, defekte Kassenvorgänge und Fehlermeldungen führen dazu, dass Kunden Ihre Site verlassen und eine negative Impression hinterlassen.
+- **Fehlerhaften Inhalt reparieren**—Beschädigte Bilder, Seiten, fehlende Seiten, defekte Kassenvorgänge und Fehlermeldungen machen Kunden dazu, Ihre Site zu verlassen und eine negative Impression zu hinterlassen.
 
-- **Aktualisieren von Inhalten**: Die Inhalte auf der Website müssen auf dem neuesten Stand sein. Wenn die Site aus veralteten Inhalten besteht, wirkt sich dies auf das Kundenerlebnis aus und erhöht die Arbeitslast für das Team des Kundendienstes. Beispielsweise müssen sie Kundenfragen beantworten, die von Inhalten auf der Website beantwortet werden sollten.
+- **Inhalt aktualisieren**—Der Inhalt auf der Website muss auf dem neuesten Stand sein. Wenn die Site aus veralteten Inhalten besteht, wirkt sich dies auf das Kundenerlebnis aus und erhöht die Arbeitslast für das Team des Kundendienstes. Beispielsweise müssen sie Kundenfragen beantworten, die von Inhalten auf der Website beantwortet werden sollten.
 
-- **Vereinfachen von Inhalten** - Das Content-Team muss einfache und unkomplizierte Inhalte erstellen. Einfache Sprache funktioniert am besten bei der Interaktion mit Kunden.
+- **Vereinfachen von Inhalten**- Das Content-Team muss einfache und unkomplizierte Inhalte erstellen. Einfache Sprache funktioniert am besten bei der Interaktion mit Kunden.
 
 Das Content-Team erstellt, testet, verwaltet und optimiert alle Inhalte auf der Website, was den ROI bringt.

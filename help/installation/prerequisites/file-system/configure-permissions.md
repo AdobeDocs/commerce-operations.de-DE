@@ -1,15 +1,15 @@
 ---
-title: Konfigurieren des Eigentums an Dateien und der Berechtigungen
+title: Konfigurieren von Dateieigentum und Berechtigungen
 description: Führen Sie diese Schritte aus, um Dateisystemberechtigungen für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
 
 ---
 
-
-# Konfigurieren des Eigentums an Dateien und der Berechtigungen
+# Konfigurieren von Dateieigentum und Berechtigungen
 
 In diesem Thema wird beschrieben, wie Sie Lese- und Schreibberechtigungen für die Webservergruppe festlegen, bevor Sie Adobe Commerce oder Magento Open Source installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
@@ -85,11 +85,11 @@ Führen Sie die folgenden Aufgaben in der angegebenen Reihenfolge aus:
 
 Damit der Webserver Dateien und Ordner im Dateisystem schreiben kann, aber auch pflegen kann *Eigentum* durch den Dateisysteminhaber festgelegt ist, müssen sich beide Benutzer in derselben Gruppe befinden. Dies ist erforderlich, damit beide Benutzer den Zugriff auf Dateien (einschließlich Dateien, die mit Admin oder anderen webbasierten Dienstprogrammen erstellt wurden) freigeben können.
 
-In diesem Abschnitt wird beschrieben, wie Sie einen Dateisysteminhaber erstellen und diesen Benutzer in die Gruppe des Webservers setzen. Sie können bei Bedarf ein vorhandenes Benutzerkonto verwenden. Wir empfehlen, dass der Benutzer aus Sicherheitsgründen über ein sicheres Kennwort verfügt.
+In diesem Abschnitt wird beschrieben, wie Sie einen Dateisysteminhaber erstellen und diesen Benutzer in die Gruppe des Webservers setzen. Sie können bei Bedarf ein bestehendes Benutzerkonto verwenden. Wir empfehlen dem Benutzer aus Sicherheitsgründen, über ein sicheres Kennwort zu verfügen.
 
 >[!NOTE]
 >
->Zu [Suchen Sie die Webserver-Benutzergruppe](#find-the-web-server-user-group) , wenn Sie ein bestehendes Benutzerkonto verwenden möchten.
+>Zu überspringen [Suchen Sie die Webserver-Benutzergruppe](#find-the-web-server-user-group) , wenn Sie ein bestehendes Benutzerkonto verwenden möchten.
 
 ### Erstellen Sie den Dateisysteminhaber und geben Sie dem Benutzer ein sicheres Kennwort.
 
@@ -111,7 +111,7 @@ Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benu
 
 >[!WARNING]
 >
->Wenn Sie `root` -Berechtigungen auf Ihrem Anwendungsserver verwenden, können Sie ein anderes lokales Benutzerkonto verwenden. Vergewissern Sie sich, dass der Benutzer über ein sicheres Kennwort verfügt, und fahren Sie mit dem [Legen Sie den Dateisysteminhaber in die Webservergruppe](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Wenn Sie `root` -Berechtigungen auf Ihrem Anwendungsserver verwenden, können Sie ein anderes lokales Benutzerkonto verwenden. Vergewissern Sie sich, dass der Benutzer über ein sicheres Kennwort verfügt, und fahren Sie mit [Legen Sie den Dateisysteminhaber in die Webservergruppe](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
 Um beispielsweise einen Benutzer mit dem Namen `magento_user` und geben Sie dem Benutzer ein Kennwort ein:
 
@@ -133,15 +133,15 @@ So suchen Sie die Gruppe des Webserver-Benutzers:
 
 * CentOS:
 
-   ```bash
-   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
-   oder
+  oder
 
-   ```bash
-   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
 In der Regel sind der Benutzer- und Gruppenname `apache`.
 
@@ -158,9 +158,9 @@ Um den Dateisysteminhaber in die primäre Gruppe des Webservers aufzunehmen (aus
 
 >[!NOTE]
 >
->Die `-a -G` -Optionen sind wichtig, da sie `apache` oder `www-data` as a *Sekundär* dem Benutzerkonto zugeordnet werden, wodurch die *primary* hinzugefügt. Das Hinzufügen einer sekundären Gruppe zu einem Benutzerkonto hilft dabei, [Beschränken des Eigentums an Dateien und der Berechtigungen](#set-ownership-and-permissions-for-two-users) , um sicherzustellen, dass Mitglieder einer gemeinsamen Gruppe nur Zugriff auf bestimmte Dateien haben.
+>Die `-a -G` -Optionen sind wichtig, da sie `apache` oder `www-data` as a *Sekundär* dem Benutzerkonto zugeordnet werden, wodurch die *primary* hinzugefügt. Das Hinzufügen einer sekundären Gruppe zu einem Benutzerkonto hilft [Beschränken des Eigentums an Dateien und der Berechtigungen](#set-ownership-and-permissions-for-two-users) , um sicherzustellen, dass Mitglieder einer gemeinsamen Gruppe nur Zugriff auf bestimmte Dateien haben.
 
-So fügen Sie beispielsweise den Benutzer hinzu `magento_user` der `apache` primäre Gruppe unter CentOS:
+Beispiel: Hinzufügen des Benutzers `magento_user` der `apache` primäre Gruppe unter CentOS:
 
 ```bash
 sudo usermod -a -G apache magento_user
@@ -189,7 +189,7 @@ Starten Sie den Webserver neu, um die Aufgabe abzuschließen:
 
 ### Software abrufen
 
-Wenn Sie dies noch nicht getan haben, können Sie die Software auf eine der folgenden Arten abrufen:
+Wenn Sie dies noch nicht getan haben, rufen Sie die Software auf eine der folgenden Arten auf:
 
 * [Composer-Metapaket](../../composer.md)
 * [Repository klonen (nur beitragende Entwickler)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)

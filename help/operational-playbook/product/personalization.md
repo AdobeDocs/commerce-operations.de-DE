@@ -44,4 +44,4 @@ Beispiele für Personalisierung:
 
 ![Beispiel für personalisierte Produkte](../../assets/playbooks/personalization-example.png)
 
-Dies sind nur einige Beispiele für Personalisierung. Es gibt unzählige weitere Funktionen, die entsprechend den Anforderungen des Unternehmens erforscht werden können. Es kann schwierig sein, mit ständig wechselnden Markttrends Schritt zu halten, aber es hilft, das Kundenerlebnis insgesamt zu verbessern.
+Dies sind nur einige Beispiele für Personalisierung. Es gibt unzählige weitere Funktionen, die entsprechend den Anforderungen des Unternehmens erforscht werden können. Es kann schwierig sein, mit sich ständig verändernden Markttrends Schritt zu halten, aber es hilft, das Kundenerlebnis insgesamt zu verbessern.

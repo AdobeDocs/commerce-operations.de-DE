@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL bots] tab
-description: Erfahren Sie mehr über die [!UICONTROL bots] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL bots] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -17,15 +17,15 @@ Diese Registerkarte enthält Informationen, die erklären, wie Sie feststellen k
 ## Allgemeine Übersicht [!DNL bots]:
 
 * A [!DNL bot] ist eine Software, die sich wiederholende automatisierte Aufgaben ausführt. Mit künstlicher Intelligenz und Evolution des maschinellen Lernens, den Aufgaben, Methoden und Interaktionen von [!DNL bots] sich ändern. Es gibt *good* [!DNL bots] , die Websites durch Crawling und das Hinzufügen zu Internet-Suchmaschinen begünstigen. Dies führt dazu, dass Internetnutzer durch Suchmaschinenergebnisse zur Site geleitet werden. A *good* [!DNL bot] berücksichtigt normalerweise die Begrenzungen, die auf der [!DNL bot] durch `robots.txt` -Datei oder -Einstellungen in einer Suchmaschinenkonsole. Grenzen können den Zugriff auf die Site oder Teile davon einschränken.
-* bösartig [!DNL bots] ignorieren Sie die `robots.txt` Datei oder sie können eine gute [!DNL bot] über das Feld &quot;Request user agent&quot;der HTTP-Anfragedaten. Manche schädliche Dinge [!DNL bots] do:
+* bösartig [!DNL bots] ignorieren Sie die `robots.txt` Datei oder sie können eine gute [!DNL bot] über das Feld &quot;Request user agent&quot;der HTTP-Anfragedaten. Manche böswillige Dinge [!DNL bots] do:
    * Fügen Sie einer Site Ladevorgänge hinzu, um legitimen Benutzern den Zugriff auf die Site zu verweigern.
    * Inhalte ohne Berechtigung erstellen und wiederverwenden.
    * Registrieren Sie gefälschte Konten, um E-Mail-Dienste oder -Adressen zu überschwemmen oder auf andere Sites umzuleiten ([!DNL SPAM bots]).
    * Erstellen Sie falsche Ansichten ([!DNL Viewbots]).
    * Produkte oder Tickets kaufen ([!DNL Focused bots]).
 * Verwalten [!DNL bots]
-   * [!DNL Observation for Adobe Commerce] hat Ansichten zu [!DNL bot] Traffic:
-      * Er zeigt die Gesamtzahl an, die nicht zwischengespeichert wurde [!DNL bot] -Aktivität, die die Last anzeigt, die ein [!DNL bot] fügt zu einer Site hinzu und wenn dieses Laden stattfindet.
+   * [!DNL Observation for Adobe Commerce] hat Ansichten zu [!DNL bot] traffic:
+      * Er zeigt die Gesamtzahl an, die nicht zwischengespeichert wurde [!DNL bot] -Aktivität, die die von [!DNL bot] fügt zu einer Site hinzu und wenn dieses Laden stattfindet.
       * Sie zeigt die [!DNL bots] die Fehler erzeugen. Wenn eine [!DNL bot] das Hinzufügen von Last, die Site-Probleme verursacht, dass [!DNL bot] oder die IP-Adresse die höchste Fehlerhäufigkeit hat.
       * Er zeigt [!DNL bot] Namen (Benutzeragenten-Feldwerte anfordern) und IP-Adressen, die wie folgt verwaltet werden sollen:
          * [!DNL Fastly] (Ratenbegrenzung oder [!DNL VCLs] IP-Adressen, -Bereiche oder [!DNL bots] nach Namenswert).
@@ -42,7 +42,7 @@ Vergewissern Sie sich, dass der Traffic verdächtig ist und nicht von einem [!DN
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 
-![Rate der HTTP-Anforderung pro Sekunde (Top 25) im angeforderten Zeitraum](../../assets/tools/observation-for-adobe-commerce/rate-of-http-request-per-second.jpg)
+![Rate der HTTP-Anforderung pro Sekunde (Top 25) während des angeforderten Zeitraums](../../assets/tools/observation-for-adobe-commerce/rate-of-http-request-per-second.jpg)
 
 Die **[!UICONTROL Rate of HTTP request per second (top 25) during requested time period]** frame zeigt die höchsten Anforderungen pro Sekunde IP-Adressen während des ausgewählten Zeitraums an. Wenn sich diese Adressen auch in der obigen Tabelle befinden, stellen Sie sicher, dass sie keine CDN-Adressen und böswillig sind, und blockieren Sie sie über [!DNL Fastly].
 
@@ -50,7 +50,7 @@ Die **[!UICONTROL Rate of HTTP request per second (top 25) during requested time
 
 ![Bot-Traffic insgesamt nach Bot-Name im ausgewählten Zeitraum:](../../assets/tools/observation-for-adobe-commerce/total-bot-traffic-bot-name.png)
 
-Die **[!UICONTROL Total Bot traffic by bot name during selected time period]** -Tabelle enthält die aggregierte Anzahl nicht zwischengespeicherter Anforderungen, wobei die [!UICONTROL request_user_agent] -Feld hat eine Zeichenfolge von [!DNL bots] im Wert. Dies kann der Name [!DNL bot] als [!UICONTROL request_user_agent] -Feldwert kann gespoolt werden. Der Wert unter dem [!UICONTROL Count] ist die wichtigste Spalte.
+Die **[!UICONTROL Total Bot traffic by bot name during selected time period]** -Tabelle enthält die aggregierte Anzahl nicht zwischengespeicherter Anforderungen, wobei die [!UICONTROL request_user_agent] -Feld hat eine Zeichenfolge von [!DNL bots] im Wert. Dies kann der Name [!DNL bot] als [!UICONTROL request_user_agent] -Feldwert kann gespoolt werden. Der Wert unter dem [!UICONTROL Count] -Spalte ist die wichtigste.
 
 ## [!UICONTROL Total Bot Traffic by Bot name/IP address]
 
@@ -82,11 +82,11 @@ Wenn IP-Adressen eine hohe Fehlerrate erzeugen, fragen Sie, was sie tun. Die **[
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![5XX-Statusverteilung über IP-Adressen (die 200 wichtigsten Adressen) Blockieren des Bot-Traffics auf der schnellsten Ebene ODER Verwalten von Bots über Ihre robots.txt-Datei Best Practices für Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![5XX-Statusverteilung über IP-Adressen (die 200 wichtigsten Adressen) Blockieren des Bot-Traffics auf schneller Ebene ODER Verwalten von Bots über Ihre robots.txt-Datei Best Practices für Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
 Die **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** frame ist leistungsstark. Es werden die IP-Adressen angezeigt, die während des ausgewählten Zeitraums über 50 HTTP-Status-Codes verfügen. Wenn eine IP-Adresse eine hohe Anzahl von Anfragen sendet und die Site so stark beeinflusst wird, dass sie den Traffic nicht verarbeiten kann, haben die IP-Adressen, die die höchste Häufigkeit von Anfragen stellen, in der Regel das höchste Fehlervolumen. 5XX HTTP-Status-Codes zeigen normalerweise eine Site an, die Schwierigkeiten hat, auf Anfragen zu reagieren.
 
-Je größer der Balken, desto größer ist der prozentuale Anteil der Fehler, die die IP-Adresse in der Gesamtzahl der 5xx-Fehler während dieses Zeitraums aufweist. Hinweis: Eine IP-Adresse kann mehrere Segmente im Diagramm enthalten, wenn sie mehrere HTTP-Status-Codes (z. B. 502- und 503-HTTP-Status) aufweist.
+Je größer der Balken, desto größer ist der prozentuale Anteil der Fehler, die die IP-Adresse in der Gesamtzahl der 5xx-Fehler während dieses Zeitraums aufweist. Hinweis: Eine IP-Adresse kann mehrere Segmente im Diagramm enthalten, wenn sie mehrere HTTP-Status-Codes aufweist (z. B. HTTP-Status 502 und 503).
 
 Die typische Verteilung wird rechts in der Leiste angezeigt, wo die IP-Adressen die gleiche Breite aufweisen, oder es gibt einige breite Balken mit sehr niedrigen Zahlen.
 
@@ -128,7 +128,7 @@ Die **[!UICONTROL Graph - Bot traffic by Bot name during selected time period]**
 
 ![Die 250 beliebtesten Bot-Namen und IP-Adressen im ausgewählten Zeitraum Anleitung zum Blockieren des Bot-Traffics auf schneller Ebene ODER zum Verwalten von Bots über Ihre robots.txt-Datei Best Practices für Adobe Commerce-Roboter.txt](../../assets/tools/observation-for-adobe-commerce/top-250-bot-names-ip-addresses.png)
 
-Die **[!UICONTROL Graph - Top 250 Bot Names and IP addresses during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** Frame zeigt dieselben Daten wie die Gesamtsumme an [!DNL Bot] Traffic nach Bot-Name/IP-Adresse während der ausgewählten Zeitraumtabelle oben auf der Registerkarte. Sie zeigt die Daten über die Timeline an und facettiert sie nach IP-Adresse. Dies zeigt an, wann die Anforderungen von [!DNL bots] erstellt werden, welche IP Anfragen stellt und die Verteilung der Anfragen.
+Die **[!UICONTROL Graph - Top 250 Bot Names and IP addresses during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** Frame zeigt dieselben Daten wie die Gesamtsumme an [!DNL Bot] Traffic nach Bot-Name/IP-Adresse während der ausgewählten Zeitraumtabelle oben auf der Registerkarte. Sie zeigt die Daten über die Timeline an und facettiert sie nach IP-Adresse. Dies zeigt an, wann die Anforderungen von der [!DNL bots] erstellt werden, welche IP Anfragen stellt und die Verteilung der Anfragen.
 
 ## [!UICONTROL Blocked Bot name / IP addresses (in Fastly)]
 
@@ -170,4 +170,4 @@ Die **[!UICONTROL Top 5 with non-200 status codes showing cache_status]** -Tabel
 
 ![Die Seitenansichtslatenz wird in diesem Diagramm als Spitzen angezeigt:](../../assets/tools/observation-for-adobe-commerce/pageview-latency.png)
 
-Die **[!UICONTROL Pageview Latency will show as spikes on this graph:]** frame zeigt die Latenz der Seitenladevorgänge/API-Antworten an, die mit der [!DNL bot] Traffic.
+Die **[!UICONTROL Pageview Latency will show as spikes on this graph:]** frame zeigt die Latenz der Seitenladevorgänge/API-Antworten an, die mit der [!DNL bot] Traffic

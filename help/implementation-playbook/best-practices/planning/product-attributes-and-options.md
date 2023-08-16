@@ -46,7 +46,7 @@ Für eine optimale Leistung bei der Verwaltung von Produkten über den Administr
 Für eine optimale Leistung bei der Verwaltung von Produkten über den Administrator und beim Abrufen von Produktdaten im Storefront:
 
 - Verwenden Sie verschiedene Variantenmechanismen, um Produkte zu erstellen: komplexe Produkte, benutzerdefinierte Optionen als Quelle für Produktvarianten.
-- Erstellen Sie spezifische Produktvorlagen mit Zielgruppenattributen und Optionen, um allgemeine Produktvorlagen und Optionscontainer zu vermeiden.
+- Erstellen Sie spezifische Produktvorlagen mit Zielgruppenattributen und Optionen, um generalisierte Produktvorlagen und Optionscontainer zu vermeiden.
 - Verwalten Sie eine Liste der tatsächlichen Attributoptionen.
 - Verwalten Sie Produktinformationen über ein externes Produktverwaltungssystem (PMS).
 
@@ -68,7 +68,7 @@ Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
 ## Mögliche Leistungseinbußen
 
-Konfigurieren vieler **Produktattribute** erhöht die Produktvorlagengröße für jedes Produkt (EAV-Struktur) und die Menge der Daten, die abgerufen werden müssen. Dieser Anstieg wirkt sich auf Vorgänge wie folgt aus:
+Viele Konfigurationen **Produktattribute** erhöht die Produktvorlagengröße für jedes Produkt (EAV-Struktur) und die Menge der Daten, die abgerufen werden müssen. Dieser Anstieg wirkt sich auf Vorgänge wie folgt aus:
 
 - Erhöhung des Traffics von SQL-Abfragen im Zusammenhang mit dem Abrufen von EAV-Daten und der Menge der verarbeiteten Daten, was zu einem geringeren DB-Durchsatz führt
 - Deutliche Vergrößerung der Adobe Commerce-Indizes und des Volltextsuchindex
@@ -81,7 +81,7 @@ Erhöhungen von Produktdaten und Indexgrößen können die Site-Performance auf 
 - Die Funktion für Massenaktionen von Produkten kann blockiert werden.
 - Die Neuerstellungszeit von Indizes für mittelgroße und große Kataloge kann aufgrund langer Ausführungszeiten nicht täglich ausgeführt werden.
 
-Konfigurieren vieler **Attributoptionen** kann die Site-Leistung wie folgt beeinflussen:
+Viele Konfigurationen **Attributoptionen** kann die Site-Leistung wie folgt beeinflussen:
 
 - Lange Anforderungs- und Wiedergabezeiten für Produktdetails (PDP) und Kategorieseiten mit komplexen Produkten.
 - Die Reaktionszeit von Vorgängen zur Produktspeicherung für Administratoren erhöht sich über den optimalen Leistungszielen.

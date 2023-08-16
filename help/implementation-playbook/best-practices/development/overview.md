@@ -1,6 +1,6 @@
 ---
 title: Entwicklungsphase der Implementierung
-description: Erfahren Sie mehr über Best Practices bei der Implementierung für die Entwicklungsphase von Adobe Commerce-Projekten.
+description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Entwicklungsphase von Adobe Commerce-Projekten.
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9

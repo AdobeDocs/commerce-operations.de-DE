@@ -1,17 +1,17 @@
 ---
 title: Projektumfang
 description: Geben Sie die Projektanforderungen an und definieren Sie Rollen und Zuständigkeiten in Ihrem Projektplan.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 57a68f7b-adef-4b87-b9f3-3e184d8accf4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-
 # Projektumfang
 
-Der Projektumfang ist integraler Bestandteil eines Projektplans, in dem Ziele, Ergebnisse, Kosten, Aufgaben und Fristen skizziert werden. Der Projektumfang definiert die Projektbeschränkungen, die Verantwortlichkeiten der einzelnen Teammitglieder und legt das Verfahren für die Ausführung des Projektplans fest.
+Der Projektumfang ist integraler Bestandteil eines Projektplans, in dem Ziele, Ergebnisse, Kosten, Aufgaben und Fristen skizziert werden. Der Projektumfang definiert die Projektgrenzen, die Verantwortlichkeiten der einzelnen Teammitglieder und legt das Verfahren für die Ausführung des Projektplans fest.
 
 Im Projektumfang sind Elemente im Umfang und außerhalb des Umfangs definiert, was Ihnen hilft, zwischen genehmigten Anforderungen und dem Umfang zu unterscheiden. Die Einhaltung der im Umfang erfassten Elemente hilft dem Projekt, auf dem Laufenden zu bleiben und die Lieferziele rechtzeitig zu übergeben, indem es innerhalb des Budgets bleibt. Der Projektumfang hilft Teams auch dabei, Entscheidungen über Änderungen zu treffen, die während des Projekts vorgenommen werden. Änderungen werden zwangsläufig eintreten, wenn das Projekt im Gange ist und wenn das Projekt am Anfang gut durchdacht ist, ist es einfacher, Änderungen später zu verwalten.
 

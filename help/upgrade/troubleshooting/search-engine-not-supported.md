@@ -43,7 +43,7 @@ Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql`, `elasticsearch`oder
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Wo `<version>` ist die Version des Magentos, das Sie ausgeführt haben **before** das Upgrade. Beispiel: `2.3.5`.
+>Wo `<version>` ist die Magento-Version, die Sie ausgeführt haben **before** das Upgrade. Beispiel, `2.3.5`.
 
 Befolgen Sie die in den folgenden Abschnitten beschriebenen Richtlinien, um sich von einem inkonsistenten Zustand zu erholen.
 
@@ -66,11 +66,11 @@ Ein Wert von `elasticsearch` zeigt an, dass Ihre heruntergestufte Version von Ad
 
 Sie müssen die folgenden Aufgaben ausführen, bevor Sie auf 2.4 aktualisieren:
 
-1. Aktualisieren Sie auf eine Elasticsearch-Version, die von Commerce unterstützt wird. Siehe [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
+1. Aktualisieren Sie auf eine Elasticsearch-Version, die von Commerce unterstützt wird. Siehe Abschnitt [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
 
    >[!NOTE]
    >
-   >Elasticsearch erfordert JDK 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) um zu überprüfen, welche Version von JDK installiert ist.
+   >Elasticsearch erfordert JDK 1.8 oder höher. Siehe [Java Software Development Kit (JDK) installieren](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) , um zu überprüfen, welche Version von JDK installiert ist.
 
 1. [Elasticsearch konfigurieren](../../configuration/search/configure-search-engine.md) und reindex.
 

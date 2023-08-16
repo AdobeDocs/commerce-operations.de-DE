@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL Summary] tab
-description: Erfahren Sie mehr über die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Die [!UICONTROL Summary] tab
 
-Die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce] ist dazu gedacht, schnell einige der Probleme zu sehen, die von Sites auftreten, um Ihnen zu helfen, potenzielle Ursachen für Site-Probleme automatisch zu beheben oder zu identifizieren. Die zusätzlichen Registerkarten bieten tiefere Informationen zu Komponentendiensten, Datenbank, Infrastruktur und Prozessstatus.
+Die [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce] ist dazu gedacht, schnell einige der Probleme zu sehen, die von Sites auftreten, um Ihnen zu helfen, potenzielle Ursachen für Site-Probleme automatisch zu beheben oder zu identifizieren. Die zusätzlichen Registerkarten bieten umfassendere Informationen zu Komponentendiensten, Datenbank, Infrastruktur und Prozessstatus.
 
 ## [!UICONTROL Transaction Overview]
 
@@ -40,7 +40,7 @@ Die **[!UICONTROL 404 page errors]** frame listet die [URI](https://en.wikipedia
 
 ![Prozent des speicherfreien Rahmens](../../assets/tools/percent-of-storage-free.jpg)
 
-Die **[!UICONTROL % of Storage Free]** frame zeigt den durchschnittlichen prozentualen Anteil an freien Speicherbergen auf allen Knoten Ihres Clusters an. Wenn Sie beispielsweise über einen Cluster mit drei Knoten verfügen, zeigt der Frame den \&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. Dieser Frame kann trügerisch sein, wenn eine Abweichung zwischen drei Knoten besteht. Ein Beispiel für eine Varianz wäre, wenn die Variable `/data/mysql` Der Bereitstellungspunkt &quot;frei&quot;war ein anderer Wert im Cluster mit drei Knoten. Unter dem [!UICONTROL MySQL] Registerkarte, die die Einhängepunkte nach Knotennamen facettiert, um genauer zu sehen, was die `/data/mysql` Speicher frei auf jedem Knoten tatsächlich ist.
+Die **[!UICONTROL % of Storage Free]** frame zeigt den durchschnittlichen prozentualen Anteil an freien Speicherbergen auf allen Knoten Ihres Clusters an. Wenn Sie beispielsweise über einen Cluster mit drei Knoten verfügen, zeigt der Frame den \&lt;mount point=&quot;&quot;>, \&lt;environment name=&quot;&quot;>. Dieser Frame kann trügerisch sein, wenn eine Abweichung zwischen drei Knoten besteht. Ein Beispiel für eine Varianz wäre die `/data/mysql` Der Bereitstellungspunkt &quot;frei&quot;war ein anderer Wert im Cluster mit drei Knoten. Unter dem [!UICONTROL MySQL] Registerkarte, die die Einhängepunkte nach Knotennamen facettiert, um genauer zu sehen, was die `/data/mysql` Speicher frei auf jedem Knoten tatsächlich ist.
 
 ## [!UICONTROL % of system memory that is free frame]
 
@@ -70,7 +70,7 @@ Die **[!UICONTROL Alerts during timeframe]** zeigt alle Warnhinweise an, einschl
 
 ![CPU-Auslastung](../../assets/tools/cpu-usage.jpg)
 
-Wenn die Variable **[!UICONTROL CPU Usage]** Rahmen leer ist, ist dies ein Hinweis darauf, dass die Infrastrukturanwendung [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn Ihre Site auf Pro basiert, öffnen Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) müssen [!DNL New Relic Infrastructure] aktiviert für Ihre Site.
+Wenn die Variable **[!UICONTROL CPU Usage]** Rahmen leer ist, ist dies ein Hinweis darauf, dass die Infrastrukturanwendung [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn Ihre Site auf Pro basiert, öffnen Sie eine [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) müssen [!DNL New Relic Infrastructure] für Ihre Site aktiviert wurde.
 
 ## [!UICONTROL Average Response Time]
 
@@ -112,11 +112,11 @@ Die **[!UICONTROL Deployment State]** frame erfasst bestimmte Bereitstellungspha
 
 * &#39;%Starting generate command%&#39;) as &#39;start_gen&#39;
 * &#39;%git apply /app/vendor/magento/ece-tools/patches%&#39;) als &#39;apply_patches&#39;
-* &#39;%Set flag: .static_content_deploy%&#39;) als &#39;SCD&#39;
-* &#39;%NOTICE: Generieren von Befehl completed%&#39;) als &#39;gen_compl&#39;
-* &#39;%NOTICE: Implementierung abgeschlossen%&#39;) als &#39;deploy_compl&#39;
-* &#39;%NOTICE: Starten nach der Bereitstellung.%&#39;) als &#39;start_pdeploy&#39;
-* &#39;%NOTICE: Nach der Bereitstellung ist abgeschlossen%&#39;) als &quot;pdeploy&quot;
+* &#39;%Set flag: .static_content_deploy%&#39;) as &#39;SCD&#39;
+* &#39;%NOTICE: Generate command completed%&#39;) as &#39;gen_compl&#39;
+* &#39;%NOTICE: Deployment completed%&#39;) as &#39;deploy_compl&#39;
+* &#39;%NOTICE: Starten Sie nach der Bereitstellung.%&#39;) als &#39;start_pdeploy&#39;
+* &#39;%NOTICE: Post-deploy is complete%&#39;) als &#39;pdeploy&#39;
 * &#39;%deploy-complete%&#39;) als &#39;cl_deploy_compl&#39;
 
 ## [!UICONTROL IP Frequency]
@@ -129,7 +129,7 @@ Die **[!UICONTROL IP Frequency]** frame zählt die Status (&#39;MISS&#39; und &#
 
 ![IP-Antwort - Top 20 URLs mit Dauer](../../assets/tools/ip-response-top-20-urls.jpg)
 
-Die **[!UICONTROL IP Response – top 20 URLs in duration]** Frame zeigt die URLs mit der längsten Reaktionsdauer an. Sie kann auf große Bilddateien, Seiten, API oder Seiten mit der längsten Reaktionsdauer hinweisen.
+Die **[!UICONTROL IP Response – top 20 URLs in duration]** Frame zeigt die URLs mit der längsten Reaktionsdauer an. Sie kann auf große Bilddateien, Seiten, APIs oder Seiten mit der längsten Reaktionsdauer hinweisen.
 
 ## [!UICONTROL API Calls by IP]
 
@@ -176,9 +176,9 @@ Die **[!UICONTROL Nginx access by node]** frame betrachtet die Anzahl der `acces
 **Liste der [!UICONTROL Galera] Statusänderungen:**
 
 * &#39;%1047 WSREP hat den Knoten noch nicht für die Anwendung vorbereitet (use%&#39;) als &#39;node_not_prep_for_use&#39;
-* &#39;%\[ERROR\] WSREP: Fehlgeschlagen aus: wsrep_sst_xtrabackup-v2%&#39;) als &#39;xtrabackup_read_fail&#39;
+* &#39;%\[ERROR\] WSREP: Failed read from: wsrep_sst_xtrabackup-v2%&#39;) as &#39;xtrabackup_read_fail&#39;
 * &#39;%\[ERROR\] WSREP: Prozess abgeschlossen mit Fehler: wsrep_sst_xtrabackup-v2 %&#39;) als &#39;xtrabackup_compl_w_err&#39;
-* &#39;%\[ERROR\] WSREP: rbr write fail%&quot;) als &quot;rbr_write_fail&quot;
+* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) as &#39;rbr_write_fail&#39;
 * &#39;%self-leave%&#39;) als &#39;susp_node&#39;
 * &#39;%member = 3/3 (join/total)%&#39;) as &#39;3of3&#39;
 * &#39;%members = 2/3 (join/total)%&#39;) as &#39;2of3&#39;
@@ -186,12 +186,12 @@ Die **[!UICONTROL Nginx access by node]** frame betrachtet die Anzahl der `acces
 * &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
 * &#39;%\[Hinweis\] /usr/sbin/mysqld (mysqld 10.%&#39;) als &#39;sql_restart&#39;
 * &#39;%Quorum: Kein Knoten mit vollständigem Status:%&#39;) als &#39;no_node_count&#39;
-* &#39;%WSREP: Mitglied 0%&#39;) als &quot;mem_0&quot;
-* &#39;%WSREP: Mitglied 1,0%&quot;) als &quot;mem_1&quot;
-* &#39;%WSREP: Mitglied 2%&quot;) als &quot;mem2&quot;
-* &#39;%WSREP: Mit Gruppe synchronisiert, bereit für Verbindungen%&#39;) als &#39;bereit&#39;
+* &#39;%WSREP: Member 0%&#39;) as &#39;mem_0&#39;
+* &#39;%WSREP: Member 1.0%&#39;) as &#39;mem_1&#39;
+* &#39;%WSREP: Member 2%&#39;) as &#39;mem2&#39;
+* &#39;%WSREP: Synchronisiert mit Gruppe, bereit für Verbindungen%&#39;) als &#39;bereit&#39;
 * &#39;%/usr/sbin/mysqld, Version:%&#39;) als &#39;mysql_restart_mysql.slow&#39;
-* &#39;%\[Hinweis\] WSREP: Neue Cluster-Ansicht: globaler Status:%&#39;) als &#39;galera_cluster_view_chng&#39;
+* &#39;%\[Hinweis\] WSREP: Neue Cluster-Ansicht: global state:%&#39;) as &#39;galera_cluster_view_chng&#39;
 
 Diese Signale können auf Speicher-, Speicher- oder Abfrageprobleme hinweisen, wenn sich der Status häufig ändert.
 
@@ -202,44 +202,44 @@ Diese Signale können auf Speicher-, Speicher- oder Abfrageprobleme hinweisen, w
 **Liste der erkannten Datenbankfehler oder -meldungen:**
 
 * &#39;%Speichergröße, die für die temporäre Tabelle zugewiesen wird, ist mehr als 20% von innodb_buffer_pool_size%&#39;) als &#39;temp_tbl_buff_pool&#39;
-* &#39;%\[ERROR\] WSREP: rbr write fail%&quot;) als &quot;rbr_write_fail&quot;
-* &#39;%mysqld: Disk full%&#39;) als &#39;disk_full&#39;
+* &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) as &#39;rbr_write_fail&#39;
+* &#39;%mysqld: Disk full%&#39;) as &#39;disk_full&#39;
 * &#39;%Fehlernummer 28%&#39;) als &#39;err_28&#39;
 * &#39;%Rollback%&#39;) als &#39;Rollback&#39;
-* &#39;%Fremdschlüsseleinschränkung schlägt für table% fehl&#39;) als &#39;external_key_constraint&#39;
-* &#39;%Error_code: 1114%&quot;) als &quot;sql_1114_full&quot;
-* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2006\] MySQL-Server ist weg%&#39;) als &#39;sql_go&#39;
+* &#39;%Fremdschlüsseleinschränkung schlägt für table% fehl&#39;) als &#39;Fremdschlüssel-Einschränkung&#39;
+* &#39;%Error_code: 114%&#39;) as &#39;sql_1114_full&#39;
+* &#39;%CRITICAL: SQLSTATE\[HY000\] \[2006\] MySQL Server has away%&#39;) as &#39;sql_go&#39;
 * &#39;%SQLSTATE\[HY000\] \[1040\] Zu viele Verbindungen%&#39;) als &#39;sql_1040&#39;
 * &#39;%CRITICAL: SQLSTATE\[HY000\] \[2002\]%&#39;) as &#39;sql_2002&#39;
 * &#39;%SQLSTATE\[08S01\]:%&#39;) as &#39;sql_1047&#39;
 * &#39;%\[Warnung\] Abgebrochene Verbindung%&#39;) als &#39;aborted_conn&#39;
-* &#39;%SQLSTATE\[23000\]: Integrationsbeschränkungsverletzung:%&#39;) als &#39;sql_23000&#39;
+* &#39;%SQLSTATE\[23000\]: Integrity constraint verletzungen:%&#39;) as &#39;sql_23000&#39;
 * &#39;%1205 Lock wait timeout%&#39;) als &#39;sql_1205&#39;
 * &#39;%SQLSTATE\[HY000\] \[1049\] Unbekannte Datenbank%&#39;) als &#39;sql_1049&#39;
 * &#39;%SQLSTATE\[42S02\]: Basistabelle oder -ansicht nicht gefunden:%&#39;) als &#39;sql_42S02&#39;
-* &#39;%Allgemeiner Fehler: 1114%&quot;) als &quot;sql_1114&quot;
+* &#39;%Allgemeiner Fehler: 114%&#39;) als &#39;sql_1114&#39;
 * &#39;%SQLSTATE\[40001\]%&#39;) as &#39;sql_1213&#39;
-* &#39;%SQLSTATE\[42S22\]: Spalte nicht gefunden: 1054 Unbekannte Spalte%&#39;) als &#39;sq1_1054&#39;
+* &#39;%SQLSTATE\[42S22\]: Column not found: 1054 Unknown column%&#39;) as &#39;sq1_1054&#39;
 * &#39;%SQLSTATE\[42000\]: Syntaxfehler oder Zugriffsverletzung:%&#39;) als &#39;sql_42000&#39;
-* &#39;%SQLSTATE\[21000\]: Kardinalitätsverstoß:%&#39;) als &#39;sql_1241&#39;
+* &#39;%SQLSTATE\[21000\]: Kardinalverletzung:%&#39;) als &#39;sql_1241&#39;
 * &#39;%SQLSTATE\[22003\]:%&#39;) as &#39;sql_22003&#39;
 * &#39;%SQLSTATE\[HY000\] \[9000\] Client mit IP-Adresse%&#39;) als &#39;sql_9000&#39;
-* &#39;%SQLSTATE\[HY000\]: Allgemeiner Fehler: 2014%&quot;) als &quot;sql_2014&quot;
+* &#39;%SQLSTATE\[HY000\]: Allgemeiner Fehler: 2014%&#39;) als &#39;sql_2014&#39;
 * &#39;%1927 Connection was kill%&#39;) as &#39;sql_1927&#39;
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) as &#39;sql_1062_e&#39;
-* &#39;%\[Hinweis\] WSREP: Speicherkarte auf Festplatte leeren ...%&quot;) als &quot;mem_map_flush&quot;
-* &#39;%Interner MariaDB-Fehlercode: 1146%&quot;) als &quot;sql_1146&quot;
-* &#39;%Interner MariaDB-Fehlercode: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062 \[Warning\] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
-* &#39;%Interner MariaDB-Fehlercode: 1064%&quot;) als &quot;sql_1064&quot;
-* &#39;%InnoDB: Assertionsfehler in Datei%&quot;) als &quot;assertion_err&quot;
-* &#39;%mysqld_safe Anzahl der jetzt ausgeführten Prozesse: 0%&quot;) als &quot;mysql_oom&quot;
+* &#39;%\[Hinweis\] WSREP: Speicherzuordnung auf Festplatte leeren..%&#39;) als &#39;mem_map_flush&#39;.
+* &#39;%Interner MariaDB-Fehlercode: 1146%&#39;) als &#39;sql_1146&#39;
+* &#39;%Interner MariaDB-Fehlercode: 1062%&#39;) als &#39;sql_1062&#39; * &#39;%1062 \[Warnung\] InnoDB:%&#39;) als &#39;sql_1062_w&#39;
+* &#39;%Interner MariaDB-Fehlercode: 1064%&#39;) als &#39;sql_1064&#39;
+* &#39;%InnoDB: Assertion failure in file%&#39;) as &#39;assertion_err&#39;
+* &#39;%mysqld_safe Anzahl der jetzt ausgeführten Prozesse: 0%&#39;) als &#39;mysql_oom&#39;
 * &#39;%\[ERROR\] mysqld hat signal%&#39;) as &#39;mysql_sigterm&#39;
 * &#39;%1452 Cannot add%&#39;) as &#39;sql_1452&#39;
 * &#39;%ERROR 1698%&#39;) als &#39;sql_1698&#39;
-* &#39;%SQLSTATE\[HY000\]: Allgemeiner Fehler: 3%&#39;) als &#39;cnt_wrt_tmp&#39;
-* &#39;%Allgemeiner Fehler: 1 %&quot;) als &quot;sql_syntax&quot;
+* &#39;%SQLSTATE\[HY000\]: General error: 3%&#39;) as &#39;cnt_wrt_tmp&#39;
+* &#39;%Allgemeiner Fehler: 1 %&#39;) als &#39;sql_syntax&#39;
 * &#39;%42S22%&#39;) als &#39;sql_42S22&#39;
-* &#39;%InnoDB: Fehler (Duplikatschlüssel)%&#39;) als &#39;innodb_dup_key&#39;
+* &#39;%InnoDB: Error (Duplicate key)%&#39;) as &#39;innodb_dup_key&#39;
 
 ## [!UICONTROL Database traces]
 
@@ -251,7 +251,7 @@ Die **[!UICONTROL Database traces]** Frame betrachtet Daten aus dem [sql trace](
 
 ![database mysql-slow.log](../../assets/tools/database-mysql-slow-log.jpg)
 
-Die **[!UICONTROL Database mysql-slow.log]** frame zählt Einträge im [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) nach Abfrageanforderungstyp. Es isoliert visuell die Zeitrahmen, die in der Datei mysql-slow.log (langsames Abfrageprotokoll) von Interesse sein könnten. Abfragen von Tabellen ohne Indizes oder Abfragen, die große Tabellen aktualisieren, können andere Abfragen blockieren.
+Die **[!UICONTROL Database mysql-slow.log]** frame zählt Einträge im [mysql-slow.log](https://dev.mysql.com/doc/refman/5.7/en/slow-query-log.html) nach Abfrageanforderungstyp. Dadurch werden Zeitrahmen visuell isoliert, die in der Datei mysql-slow.log (langsames Abfrageprotokoll) von Interesse sein könnten. Abfragen von Tabellen ohne Indizes oder Abfragen, die große Tabellen aktualisieren, können andere Abfragen blockieren.
 
 ## [!UICONTROL Redis synchronization from Log]
 
@@ -261,22 +261,22 @@ Die **[!UICONTROL Database mysql-slow.log]** frame zählt Einträge im [mysql-sl
 
 **[!DNL Redis]Fehler und Meldungen:**
 
-* &#39;%SLAVE-Synchronisation: Kein Speicherplatz auf Gerät%&#39;) als &quot;Leerzeichen&quot;
+* &#39;%SLAVE-Synchronisation: Kein Speicherplatz auf Gerät%&#39;) als &#39;Leerzeichen&#39;
 * &#39;%Server started, Redis version%&#39;) as &#39;serv_start&#39;
 * &#39;%Der Server ist jetzt bereit, Verbindungen zu akzeptieren%&#39;) als &#39;bereit&#39;
-* &#39;%Verbindung mit Übergeordneten verloren.%&quot;) als &quot;mstr_lost&quot;
+* &#39;%Verbindung mit Master verloren.%&quot;) als &quot;mstr_lost&quot;
 * &#39;%+sdown sentinel%&#39;) als &#39;+sentinal&#39;
 * &#39;% sdown sentinel%&#39;) als &#39;-sentinal&#39;
 * &#39;%-sdown slave%&#39;) als &#39;-slave&#39;, &#39;%+sdown slave%&#39;) als &#39;+slave&#39;
-* &#39;%-failover-abort-not-selected Übergeordnet mymaster%&#39;) als &#39;-failover&#39;
-* &#39;%+failover-abort-not-selected Übergeordnet mymaster%&#39;) als &#39;+failover&#39;
-* &#39;%Teilweise Resynchronisierung nicht möglich (kein Übergeordneter Cache)%&#39;) als &#39;part_sync_err&#39;
-* &#39;%ÜBERGEORDNET abgebrochene Replikation mit Fehler: ERR Can%&#39;) als &#39;mstr_sync_err&#39;
-* &#39;%Übergeordnet unterstützt PSYNC nicht oder befindet sich im Fehlerstatus%&#39;) als &#39;mstr_psync_err&#39;
-* &#39;%SLAVE sync: Abgeschlossen mit success%&#39;) als &#39; slv_sync_suc&#39;
-* &#39;%ÜBERGEORDNET abgebrochene Replikation mit Fehler: ERR Can%&#39;) als &#39;mstr_sync_err,coun&#39;
+* &#39;%-failover-abort-not-selected master mymaster%&#39;) as &#39;-failover&#39;
+* &#39;%+failover-abort-not-selected master mymaster%&#39;) as &#39;+failover&#39;
+* &#39;%Teilweise Resynchronisierung nicht möglich (kein zwischengespeicherter Master)%&#39;) als &#39;part_sync_err&#39;
+* &#39;%MASTER abortierte Replikation mit einem Fehler: ERR Can%&#39;) als &#39;mstr_sync_err&#39;
+* &#39;%Master unterstützt PSYNC nicht oder befindet sich im Fehlerstatus%&#39;) als &#39;mstr_psync_err&#39;
+* &#39;%SLAVE sync: Finished with success%&#39;) as &#39; slv_sync_suc&#39;
+* &#39;%MASTER hat die Replikation mit einem Fehler abgebrochen: ERR Can%&#39;) als &#39;mstr_sync_err,coun&#39;
 * &#39;%OOM command not allowed when used memory%&#39;) as &#39; max_mem_err&#39;
-* &#39;%CredisException(code: 0): Lesefehler bei Verbindung%&#39;) als &#39;credis_read_error&#39;
+* &#39;%CredisException(code: 0): read error on connection%&#39;) as &#39;credis_read_error&#39;
 * &#39;%Uncaught RedisException:%&#39;) as &#39;reredis_excp_err&#39;
 * &#39;%psync geplant, um ASAP zur Überwindung des Ausgabepuffers% zu schließen&#39;) als &#39;output_buf_err&#39;
 
@@ -284,7 +284,7 @@ Die **[!UICONTROL Database mysql-slow.log]** frame zählt Einträge im [mysql-sl
 
 ![PHP-Prozessstatus](../../assets/tools/php-process-states.jpg)
 
-Wie sich PHP-Prozesse verhalten, hängt von der [Konfiguration](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex und umfasst viele Variablen und Optionen. Die **[!UICONTROL PHP process states]** frame hilft Ihnen zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
+Wie sich PHP-Prozesse verhalten, hängt von der [Konfiguration](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex und verfügt über viele Variablen und Optionen. Die **[!UICONTROL PHP process states]** frame hilft Ihnen zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
 
 ### [!UICONTROL PHP errors]
 
@@ -295,16 +295,16 @@ Die **[!UICONTROL PHP errors]** frame zeigt die Anzahl von PHP-Fehlern mit Worke
 **PHP-Fehler und -Meldungen:**
 
 * &#39;%worker_connections are not genug%&#39;) as &#39;worker&#39;
-* &#39;%PHP Fatal error: Zulässige Speichergröße!%&quot;) als &quot;mem_size&quot;
+* &#39;%PHP Fatal error: Allowed memory size!%&quot;) als &quot;mem_size&quot;
 * &#39;%exited on signal 11 (SIGSEGV)%&#39;) as &#39;sig_11&#39;
 * &#39;%exited on signal 7 (SIGBUS)%&#39;) as &#39;sig_7&#39;
 * &#39;%increase pm.start_servers%&#39;) as &#39;pmstart_serv&#39;
 * &#39;%max_children%&#39;) als &#39;max_children_cnt&#39;
-* &#39;%PHP Fatal error: Zulässige Speichergröße von%&quot;) als &quot;mem_exhst_coun&quot;
+* &#39;%PHP Fatal error: Allowed memory size of%&#39;) as &#39;mem_exhst_coun&#39;
 * &#39;%Arbeitsspeicher für pool%&#39;) nicht als &#39;opc_mem_count&#39; zuordnen
-* &#39;%Warning Interner Zeichenfolgenpuffer overflow%&#39;) als &#39;opc_str_buf&#39;
+* &#39;%Warning Interne Zeichenfolge Pufferüberlauf%&#39;) als &#39;opc_str_buf&#39;
 * &#39;%Illegal string offsetl%&#39;) as &#39;opc_sv_comments&#39;
-* &#39;%PHP Fatal error: Uncaught RedisException: Lesefehler bei Verbindung%&#39;) als &#39;php_exc&#39;
+* &#39;%PHP Fatal error: Uncaught RedisException: read error on connection%&#39;) as &#39;php_exc&#39;
 
 ## [!UICONTROL PHP processes]
 
@@ -332,7 +332,7 @@ Die **[!UICONTROL Fastly Cache]** frame zeigt eine aggregierte Ansicht des Cache
 
 ## [!UICONTROL Page Rendering]
 
-![Seiten-Rendering](../../assets/tools/page-rendering.jpg)
+![Seitenrendering](../../assets/tools/page-rendering.jpg)
 
 Die **[!UICONTROL Page Rendering]** frame zeigt die durchschnittliche Seitenwiedergabedauer der aktuellen Woche aus der Seitenansichtsquelle von [!DNL New Relic] im Vergleich zur Vorwoche im selben Zeitraum.
 
@@ -346,7 +346,7 @@ Die **[!UICONTROL Page loading detail]** frame beschreibt die Ladeereignisse der
 
 ## [!UICONTROL Transactions – Avg, Max, Min]
 
-![Transaktionen - Durchschn., max., min.](../../assets/tools/transactions-avg-max-min.jpg)
+![Transaktionen - durchschnittl, max. min.](../../assets/tools/transactions-avg-max-min.jpg)
 
 Die Transaktionsdauer beträgt in Sekunden. Abhängig von der Transaktion kann es sich auf andere Transaktionen auswirken, wenn diese langfristig laufen. Die unter Name und Dauer aufgelisteten Transaktionen beziehen sich auf den jeweiligen Zeitraum. Wenn es einen kurzen Zeitrahmen für das Problem gibt, ändern Sie die Größe der [!DNL Observation for Adobe Commerce] Datums-/Uhrzeitauswahl auf diesen engen Zeitrahmen fest.
 
@@ -370,7 +370,7 @@ Die **[!UICONTROL Order transactions (default?)]** frame sucht nach Transaktione
 
 * Grün: Alle Shards werden zugewiesen.
 * Gelb: Alle primären Shards werden zugewiesen, aber eine oder mehrere Replikatshards werden nicht zugewiesen. Wenn ein Knoten im Cluster fehlschlägt, sind einige Daten möglicherweise nicht verfügbar, bis dieser Knoten repariert wurde.
-* Rot: Die Zuweisung von einem oder mehreren primären Shards wird aufgehoben, sodass einige Daten nicht verfügbar sind. Dies kann beim Starten des Clusters kurz auftreten, da primäre Shards zugewiesen sind.
+* Rot: Die Zuweisung von einem oder mehreren primären Shards wird aufgehoben, sodass einige Daten nicht verfügbar sind. Dies kann kurz während des Starts des Clusters auftreten, da primäre Shards zugewiesen sind.
 
 ## [!UICONTROL Elasticsearch Errors]
 
@@ -380,9 +380,9 @@ Die **[!UICONTROL Order transactions (default?)]** frame sucht nach Transaktione
 
 * &#39;%alle Shards failed%&#39; als &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; as &#39;no_alive_nodes&#39;
-* &#39;%PHP Fatal error: Uncaught Error: Falsche Parameter für Elasticsearch% als &#39;falscher_param&#39;
+* &#39;%PHP Fatal error: Uncaught Error: Frong parameters for Elasticsearch%&#39; as &#39;right_param&#39;
 * &#39;%Sie können dieses Problem beheben, indem Sie den Elasticsearch-Dienst in Ihrer Magento Cloud-Infrastruktur auf Version%&#39; als &#39;ver_err&#39; aktualisieren.
-* &#39;%Cluster-Gesundheitsstatus geändert von \[YELLOW\] in \[RED\] (Grund:%&#39; als &#39;yel_red&#39;)
+* &#39;%Cluster-Gesundheitsstatus geändert von \[GELB\] in \[RED\] (Grund:%&#39; als &#39;yel_red&#39;)
 * &#39;%Kein Speicherplatz auf Gerät%&#39; als &#39;no_space&#39;
 * &#39;% Failed to execute [SearchRequest{searchType=%&#39; as &#39;failed_query&#39;
 
@@ -400,14 +400,14 @@ Die **[!UICONTROL Cron view]** frame betrachtet das Cron-Log auf einen Ausgleich
 **Cron-Fehler von cron.log:**
 
 * &#39;%_stg%&#39; als &#39;stg_crons&#39;
-* &#39;%Sperre für Cron-Auftrag konnte nicht erworben werden%&#39; als &#39;cron_lock&#39;
+* &#39;%Lock für Cron Job%&#39; konnte nicht als &#39;cron_lock&#39; erworben werden
 * &#39;%Allgemeiner Fehler: MySQL Server 2006 ist weg%&#39; als &#39;mysql_has_away_away&#39;
 * &#39;%error%&#39; as &#39;error&#39;
-* &#39;%Allgemeiner Fehler: 1205 Zeitüberschreitung der Sperrwartezeit überschritten%&#39; als sql_1205_cron
+* &#39;%Allgemeiner Fehler: 1205 Lock wait timeout exceeded%&#39; as sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 
-![Aktualisierungen der Tabelle cron_schedule](../../assets/tools/cron-schedule-table-updates.jpg)
+![Aktualisierungen der cron_schedule-Tabelle](../../assets/tools/cron-schedule-table-updates.jpg)
 
 Die **[!UICONTROL cron_schedule table updates]** frame untersucht die maximale Dauer in Sekunden, in denen Aktualisierungen von Datenspeichervorgängen die Tabelle cron_schedule beinhalten. Sie wird vom SQL-Anfragetyp erfasst.
 

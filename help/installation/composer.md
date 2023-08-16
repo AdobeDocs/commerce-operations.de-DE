@@ -1,13 +1,13 @@
 ---
 title: Schnellstart für die Installation vor Ort
 description: Führen Sie diese Schritte aus, um Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur zu installieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
 
 ---
-
 
 # Schnellstart für die Installation vor Ort
 
@@ -15,7 +15,7 @@ Wir verwenden [Verfasser](https://getcomposer.org/) um Adobe Commerce- und Magen
 
 - Wiederverwenden von Bibliotheken von Drittanbietern ohne Bundle mit Quellcode
 - Reduzieren von Erweiterungskonflikten und Kompatibilitätsproblemen durch Verwendung einer komponentenbasierten Architektur mit robuster Abhängigkeitsverwaltung
-- Einhaltung von [Interoperabilitätsgruppe PHP-Framework (FIG)](https://www.php-fig.org/) Standards
+- Treten Sie bei [Interoperabilitätsgruppe PHP-Framework (FIG)](https://www.php-fig.org/) Standards
 - Magento Open Source mit anderen Komponenten umpacken
 - Verwenden der Adobe Commerce- oder Magento Open Source-Software in einer Produktionsumgebung
 
@@ -91,7 +91,7 @@ So rufen Sie das Adobe Commerce- oder Magento Open Source-Metapaket ab:
 
    Wenn Fehler auftreten, z. B. `Could not find package...` oder `...no matching package found`, stellen Sie sicher, dass Ihr Befehl keine Tippfehler enthält. Sollten dennoch Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Kontakt [Adobe Commerce-Support](https://support.magento.com/hc/en-us) für Hilfe.
 
-   Siehe [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360033818091) für Hilfe bei mehr Fehlern.
+   Siehe [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360033818091) für weitere Fehlermeldungen.
 
    >[!NOTE]
    >
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 Sie müssen die Befehlszeile verwenden, um Adobe Commerce oder Magento Open Source zu installieren.
 
-In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee`, die `db-host` auf demselben Computer (`localhost`) und dass die `db-name`, `db-user`und `db-password` alle `magento`:
+In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee`, die `db-host` auf demselben Computer (`localhost`) und dass die `db-name`, `db-user`, und `db-password` alle `magento`:
 
 ```bash
 bin/magento setup:install \
@@ -196,7 +196,7 @@ bin/magento help setup:install
 bin/magento help cache:enable
 ```
 
-Die folgende Tabelle fasst die verfügbaren Befehle zusammen. Befehle werden nur in der Zusammenfassung angezeigt. Weitere Informationen zu einem Befehl erhalten Sie, wenn Sie in der Spalte &quot;Befehl&quot;auf den Link klicken.
+Die folgende Tabelle fasst die verfügbaren Befehle zusammen. Befehle werden nur in der Zusammenfassung angezeigt. Weitere Informationen zu einem Befehl erhalten Sie, wenn Sie in der Spalte Befehl auf den Link klicken.
 
 | Befehl | Beschreibung | Voraussetzungen |
 |--- |--- |--- |
@@ -221,7 +221,7 @@ Die folgenden Argumente gelten für alle Befehle. Diese Befehle können vor oder
 | Lange Version | Kurzversion | Bedeutung |
 |--- |--- |--- |
 | `--help` | `-h` | Erhalten Sie Hilfe für jeden Befehl. Beispiel: `./magento help setup:install` oder `./magento help setup:config:set`. |
-| `--quiet` | `-q` | Ruhezustand; keine Ausgabe. |
+| `--quiet` | `-q` | Ruhig, keine Ausgabe. |
 | `--no-interaction` | `-n` | Keine interaktiven Fragen. |
 | `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbosity level. Beispiel: `--verbose=3` oder `-vvv` zeigt Debug-Ausführlichkeit an, die die ausführlichste Ausgabe ist. Der Standardwert ist `--verbose=1` oder `-v`. |
 | `--version` | `-V` | Diese Anwendungsversion anzeigen |

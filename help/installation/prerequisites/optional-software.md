@@ -1,19 +1,19 @@
 ---
 title: Optionale Software
 description: Erfahren Sie mehr über optionale Software, die Sie installieren können, um lokale Installationen von Adobe Commerce und Magento Open Source zu unterstützen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
-
 # Optionale Software
 
 Es wird dringend empfohlen, NTP zu installieren, um sicherzustellen, dass Cron-bezogene Aufgaben ordnungsgemäß ausgeführt werden. (Serverdaten können beispielsweise in der Vergangenheit oder Zukunft liegen.)
 
-Die anderen in diesem Thema behandelten optionalen Hilfsprogramme können Ihnen bei Ihrer Installation helfen. Sie müssen jedoch nicht Adobe Commerce oder Magento Open Source installieren oder verwenden.
+Die anderen in diesem Thema behandelten optionalen Hilfsprogramme können Ihnen bei Ihrer Installation helfen. Sie müssen jedoch weder Adobe Commerce noch Magento Open Source installieren oder verwenden.
 
 ## Installieren und Konfigurieren des Network Time Protocol (NTP)
 
@@ -41,7 +41,7 @@ So installieren und konfigurieren Sie NTP:
    yum search ntp
    ```
 
-1. Wählen Sie ein zu installierendes Paket aus. Beispiel: `ntp.x86_64`.
+1. Wählen Sie ein zu installierendes Paket aus. Beispiel, `ntp.x86_64`.
 
 1. Installieren Sie das Paket.
 
@@ -73,7 +73,7 @@ Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, e
 
 1. Ersetzen Sie diese Zeilen oder fügen Sie zusätzliche Zeilen hinzu, die Ihren NTP-Poolserver oder andere NTP-Server angeben. Es empfiehlt sich, mehr als eine zu spezifizieren.
 
-1. Ein Beispiel für die Verwendung von drei NTP-Servern auf Basis der USA:
+1. Ein Beispiel für die Verwendung von drei auf den USA basierenden NTP-Servern:
 
    ```conf
    server 0.us.pool.ntp.org
@@ -126,9 +126,9 @@ Wenn der Fehler 404 (Nicht gefunden) angezeigt wird, überprüfen Sie Folgendes:
 * Starten Sie bei Bedarf den Webserver.
 * Stellen Sie sicher, dass Ihre Firewall Traffic auf Port 80 zulässt.
 
-   [Hilfe für Ubuntu](https://help.ubuntu.com/community/UFW)
+  [Hilfe für Ubuntu](https://help.ubuntu.com/community/UFW)
 
-   [Hilfe für CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
+  [Hilfe für CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
 
 ## phpMyAdmin
 

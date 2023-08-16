@@ -1,13 +1,13 @@
 ---
 title: Referenzarchitektur
 description: Überprüfen Sie Diagramme der empfohlenen Referenzarchitektur für Adobe Commerce- und Magento Open Source-Implementierungen.
-source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
+exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Referenzarchitektur
 
@@ -33,12 +33,12 @@ Die folgenden Abschnitte enthalten Empfehlungen und Überlegungen zu jedem Absch
 
 * A [!DNL Varnish] Cluster kann auf den Traffic einer Site skaliert werden
 * Die Größe der Instanz basierend auf der Anzahl der benötigten Cache-Seiten anpassen
-* Verwenden Sie auf einer Site mit hohem Traffic einen [!DNL Varnish] Übergeordnet, um sicherzustellen, dass im Cache eine Anforderung (höchstens) pro Webstufe geleert wird
+* Verwenden Sie auf einer Site mit hohem Traffic einen [!DNL Varnish] Master, um sicherzustellen, dass im Cache eine Anforderung (höchstens) pro Webstufe geleert wird
 
 ### Web
 
 * Aktivieren der Skalierung von Knoten für Traffic und Redundanz
-* Ein Knoten ist Übergeordnet und führt Cron aus
+* Ein Knoten ist Master und führt Cron aus
 * Alternativ können Sie einen dedizierten Admin- und Worker-Knoten verwenden
 
 ### Cache
@@ -72,4 +72,4 @@ Für Sites, die keine hohe Verfügbarkeit erfordern, empfehlen wir die Verwendun
 
 Für Sites, für die eine hohe Verfügbarkeit erforderlich ist, empfehlen wir die Verwendung einer 2-Tier- [!DNL Varnish] Konfiguration mit einem SSL-Terminierungslastausgleich.
 
-![Zweistufige hohe Verfügbarkeit [!DNL Varnish] Konfiguration mit SSL-terminiertem Lastenausgleich](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![Zweistufige hohe Verfügbarkeit [!DNL Varnish] Konfiguration mit SSL-Terminierung des Lastenausgleichs](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

@@ -1,13 +1,13 @@
 ---
 title: Mehrere Websites mit Nginx einrichten
 description: In diesem Tutorial erfahren Sie, wie Sie mehrere Websites mit Nginx einrichten.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
 
 ---
-
 
 # Mehrere Websites mit Nginx einrichten
 
@@ -15,11 +15,11 @@ Wir gehen davon aus, dass
 
 - Sie arbeiten an einer Entwicklungsmaschine (Laptop, virtuelle Maschine oder Ähnliches).
 
-   Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
+  Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Wenden Sie sich diesbezüglich an Ihren Hosting-Provider.
 
-   Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
+  Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema behandelten Aufgaben abgeschlossen haben, lesen Sie [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
-- Sie akzeptieren mehrere Domänen in einer Virtual-Host-Datei oder verwenden einen virtuellen Host pro Website. die Konfigurationsdateien des virtuellen Hosts befinden sich unter `/etc/nginx/sites-available`.
+- Sie akzeptieren mehrere Domänen in einer Virtual-Host-Datei oder verwenden einen virtuellen Host pro Website. Die Konfigurationsdateien des virtuellen Hosts befinden sich unter `/etc/nginx/sites-available`.
 - Sie verwenden die `nginx.conf.sample` von Commerce bereitgestellt werden, wobei nur die in diesem Tutorial behandelten Änderungen enthalten sind.
 - Die Commerce-Software ist in `/var/www/html/magento2`.
 - Sie haben zwei andere Websites als die Standardwebsite:
@@ -30,30 +30,30 @@ Wir gehen davon aus, dass
 
 >[!TIP]
 >
->Siehe [Websites erstellen](ms-admin.md#step-2-create-websites) und [Erstellen von Store-Ansichten](ms-admin.md#step-4-create-store-views) für Hilfe bei der Suche nach diesen Werten.
+>Siehe Abschnitt [Erstellen von Websites](ms-admin.md#step-2-create-websites) und [Erstellen von Store-Ansichten](ms-admin.md#step-4-create-store-views) für Hilfe bei der Suche nach diesen Werten.
 
-Im Folgenden finden Sie eine Roadmap zum Einrichten mehrerer Websites mit nginx:
+Im Folgenden finden Sie eine Roadmap für die Einrichtung mehrerer Websites mit nginx:
 
 1. [Einrichten von Websites, Geschäften und Speichern von Ansichten](ms-admin.md) im Admin.
 1. Erstellen Sie eine [Nginx-virtueller Host](#step-2-create-nginx-virtual-hosts)), um viele Websites oder einen virtuellen Nginx-Host pro Commerce-Website zuzuordnen (siehe folgende Schritte).
-1. Übergeben Sie die Werte der [MAGE-Variablen](ms-overview.md) `$MAGE_RUN_TYPE` und `$MAGE_RUN_CODE` nginx mit dem bereitgestellten Magento `nginx.conf.sample` (siehe folgende Schritte).
+1. Übergeben Sie die Werte der [MAGE-Variablen](ms-overview.md) `$MAGE_RUN_TYPE` und `$MAGE_RUN_CODE` zu nginx mithilfe der Magento bereitgestellt `nginx.conf.sample` (siehe folgende Schritte).
 
-   - `$MAGE_RUN_TYPE` kann `store` oder `website`:
+   - `$MAGE_RUN_TYPE` kann entweder `store` oder `website`:
 
       - Verwendung `website` , um Ihre Website in Ihre Storefront zu laden.
       - Verwendung `store` , um eine beliebige Store-Ansicht in Ihre Storefront zu laden.
-   - `$MAGE_RUN_CODE` ist der eindeutige Website- oder Store-Ansichtscode, der `$MAGE_RUN_TYPE`.
 
+   - `$MAGE_RUN_CODE` ist der eindeutige Website- oder Store-Ansichtscode, der `$MAGE_RUN_TYPE`.
 
 1. Aktualisieren Sie die Basis-URL-Konfiguration auf dem Commerce-Administrator.
 
 ## Schritt 1: Erstellen von Websites, Geschäften und Speichern von Ansichten in der Admin-Konsole
 
-Siehe [Einrichten mehrerer Websites, Stores und Speichern von Ansichten in der Admin-Konsole](ms-admin.md).
+Siehe [Einrichten mehrerer Websites, Stores und Speichern von Ansichten im Admin](ms-admin.md).
 
-## Schritt 2: Erstellen nginx virtueller Hosts
+## Schritt 2: Erstellen von nginx-virtuellen Hosts
 
-In diesem Schritt wird beschrieben, wie Sie Websites in die Storefront laden. Sie können entweder Websites oder Ansichten speichern. Wenn Sie Store-Ansichten verwenden, müssen Sie die Parameterwerte entsprechend anpassen. Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `sudo` Berechtigungen.
+In diesem Schritt wird beschrieben, wie Sie Websites in die Storefront laden. Sie können entweder Websites oder Store-Ansichten verwenden. Wenn Sie Store-Ansichten verwenden, müssen Sie die Parameterwerte entsprechend anpassen. Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `sudo` -Berechtigungen.
 
 Durch Verwendung von nur einer [nginx virtual host file](#step-2-create-nginx-virtual-hosts), können Sie Ihre nginx-Konfiguration einfach und sauber halten. Durch die Verwendung mehrerer virtueller Host-Dateien können Sie jeden Store anpassen (um einen benutzerdefinierten Speicherort für `french.mysite.mg` z. B. ).
 
@@ -87,7 +87,7 @@ Diese Konfiguration erweitert auf [nginx-Konfiguration](../../installation/prere
    nginx -t
    ```
 
-1. Bei Erfolg wird die folgende Meldung angezeigt:
+1. Bei erfolgreicher Ausführung wird die folgende Meldung angezeigt:
 
    ```terminal
    nginx: configuration file /etc/nginx/nginx.conf test is successful
@@ -124,7 +124,7 @@ Weitere Informationen zur Zuordnungsrichtlinie finden Sie unter [nginx-Dokumenta
    }
    ```
 
-1. Erstellen Sie eine weitere Datei mit dem Namen `german.mysite.mg` im selben Verzeichnis mit folgendem Inhalt:
+1. Erstellen Sie eine weitere Datei namens `german.mysite.mg` im selben Verzeichnis mit folgendem Inhalt:
 
    ```conf
    server {
@@ -145,7 +145,7 @@ Weitere Informationen zur Zuordnungsrichtlinie finden Sie unter [nginx-Dokumenta
    nginx -t
    ```
 
-1. Bei Erfolg wird die folgende Meldung angezeigt:
+1. Bei erfolgreicher Ausführung wird die folgende Meldung angezeigt:
 
    ```terminal
    nginx: configuration file /etc/nginx/nginx.conf test is successful
@@ -153,7 +153,7 @@ Weitere Informationen zur Zuordnungsrichtlinie finden Sie unter [nginx-Dokumenta
 
    Wenn Fehler angezeigt werden, überprüfen Sie die Syntax Ihrer Konfigurationsdateien für virtuelle Hosts.
 
-1. Erstellen Sie symbolische Verknüpfungen in der `/etc/nginx/sites-enabled` directory:
+1. Erstellen Sie symbolische Verknüpfungen im `/etc/nginx/sites-enabled` directory:
 
    ```bash
    cd /etc/nginx/sites-enabled
@@ -167,11 +167,11 @@ Weitere Informationen zur Zuordnungsrichtlinie finden Sie unter [nginx-Dokumenta
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
-## Schritt 3: Ändern Sie nginx.conf.sample.
+## Schritt 3: Ändern Sie nginx.conf.sample
 
 >[!TIP]
 >
->Bearbeiten Sie nicht die `nginx.conf.sample` Datei; Es handelt sich um eine Commerce-Kerndatei, die mit jeder neuen Version aktualisiert werden kann. Kopieren Sie stattdessen die `nginx.conf.sample` -Datei, benennen Sie sie um und bearbeiten Sie dann die kopierte Datei.
+>Bearbeiten Sie nicht die `nginx.conf.sample` -Datei; es handelt sich um eine Commerce-Kerndatei, die mit jeder neuen Version aktualisiert werden kann. Kopieren Sie stattdessen die `nginx.conf.sample` -Datei, benennen Sie sie um und bearbeiten Sie dann die kopierte Datei.
 
 **Bearbeiten des PHP-Einstiegspunkts für die Hauptanwendung**:
 
@@ -237,17 +237,17 @@ Sie müssen die Basis-URL für die `french` und `german` Websites in der Commerc
 
 1. Melden Sie sich beim Commerce-Administrator an und navigieren Sie zu **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Web**.
 1. Ändern Sie die _Konfigurationsbereich_ der `french` Website.
-1. Erweitern **Basis-URLs** und aktualisieren Sie die **Basis-URL** und **Basis-Link-URL** Wert zu `http://french.magento24.com/`.
-1. Erweitern **Basis-URLs (sicher)** und aktualisieren Sie die **Sichere Basis-URL** und **Sichere Basis-Link-URL** Wert zu `https://french.magento24.com/`.
-1. Klicken **Konfiguration speichern** und speichern Sie die Konfigurationsänderungen.
+1. Erweitern **Basis-URLs** und aktualisieren Sie die **Basis-URL** und **Base Link URL** Wert zu `http://french.magento24.com/`.
+1. Erweitern **Basis-URLs (sicher)** und aktualisieren Sie die **Sichere Basis-URL** und **Sichere Basis-URL** Wert zu `https://french.magento24.com/`.
+1. Klicks **Konfiguration speichern** und speichern Sie die Konfigurationsänderungen.
 
 ### Aktualisieren der deutschen Website-Basis-URL
 
 1. Melden Sie sich beim Commerce-Administrator an und navigieren Sie zu **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Web**.
 1. Ändern Sie die _Konfigurationsbereich_ der `german` Website.
-1. Erweitern **Basis-URLs** und aktualisieren Sie die **Basis-URL** und **Basis-Link-URL** Wert zu `http://german.magento24.com/`.
-1. Erweitern **Basis-URLs (sicher)** und aktualisieren Sie die **Sichere Basis-URL** und **Sichere Basis-Link-URL** Wert zu `https://german.magento24.com/`.
-1. Klicken **Konfiguration speichern** und speichern Sie die Konfigurationsänderungen.
+1. Erweitern **Basis-URLs** und aktualisieren Sie die **Basis-URL** und **Base Link URL** Wert zu `http://german.magento24.com/`.
+1. Erweitern **Basis-URLs (sicher)** und aktualisieren Sie die **Sichere Basis-URL** und **Sichere Basis-URL** Wert zu `https://german.magento24.com/`.
+1. Klicks **Konfiguration speichern** und speichern Sie die Konfigurationsänderungen.
 
 ### Cache leeren
 
@@ -279,12 +279,11 @@ Sofern kein DNS für die URLs Ihrer Stores eingerichtet ist, müssen Sie eine st
 
 >[!INFO]
 >
->- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie von Ihrem Hosting-Provider.
->- Für die Einrichtung von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. see [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
-
+>- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Wenden Sie sich diesbezüglich an Ihren Hosting-Provider.
+>- Weitere Aufgaben sind erforderlich, um Adobe Commerce in der Cloud-Infrastruktur einzurichten, siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 ### Fehlerbehebung
 
-- Wenn Ihre französischen und deutschen Sites 404 s zurückgeben, Ihr Admin jedoch geladen wird, stellen Sie sicher, dass Sie [Schritt 6: Fügen Sie den Store-Code zur Basis-URL hinzu.](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Wenn Ihre französischen und deutschen Sites 404 s zurückgeben, Ihr Admin jedoch geladen wird, stellen Sie sicher, dass Sie [Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Wenn alle URLs 404 s zurückgeben, stellen Sie sicher, dass Sie Ihren Webserver neu starten.
 - Wenn der Administrator nicht ordnungsgemäß funktioniert, stellen Sie sicher, dass Sie Ihre virtuellen Hosts ordnungsgemäß eingerichtet haben.

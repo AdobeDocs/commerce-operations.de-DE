@@ -1,13 +1,13 @@
 ---
 title: Konfigurieren und Ausführen von Cron-Aufträgen
 description: Erfahren Sie, wie Sie Cron-Aufträge verwalten.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurieren von Cron-Aufträgen
 
@@ -30,7 +30,7 @@ Mehrere Commerce-Funktionen erfordern mindestens einen Cron-Auftrag, der Aktivit
 
 >[!INFO]
 >
->Für viele wichtige Systemfunktionen, einschließlich Indizierung, hängt der Handel von der richtigen Cron-Auftragskonfiguration ab. Wird sie nicht ordnungsgemäß eingerichtet, funktioniert Commerce nicht erwartungsgemäß.
+>Für viele wichtige Systemfunktionen, einschließlich Indizierung, hängt der Handel von der richtigen Cron-Auftragskonfiguration ab. Wird sie nicht ordnungsgemäß eingerichtet, bedeutet dies, dass Commerce nicht erwartungsgemäß funktioniert.
 
 UNIX-Systeme planen Aufgaben, die von bestimmten Benutzern mit einer _crontab_, eine Datei, die Anweisungen für den Cron-Daemon enthält, der dem Daemon tatsächlich anweist, diesen Befehl zu diesem Zeitpunkt an diesem Datum auszuführen. Jeder Benutzer verfügt über eine eigene Registerkarte und Befehle in jeder beliebigen Registerkarte werden als der Benutzer ausgeführt, dem die Registerkarte gehört.
 
@@ -40,7 +40,7 @@ Informationen zum Ausführen von Cron in einem Webbrowser finden Sie unter [Sich
 
 In diesem Abschnitt wird beschrieben, wie Sie Ihre Commerce-Crontab (d. h. die Konfiguration für Commerce-Cron-Aufträge) erstellen oder entfernen.
 
-Die _crontab_ ist die Konfiguration, die zum Ausführen von Cron-Aufträgen verwendet wird.
+Die _crontab_ ist die Konfiguration zum Ausführen von Cron-Aufträgen.
 
 Die Commerce-Anwendung verwendet Cron-Aufgaben, die mit verschiedenen Konfigurationen ausgeführt werden können. Die PHP-Befehlszeilenkonfiguration steuert den allgemeinen Cron-Auftrag, der Indexer neu indiziert, E-Mails generiert, die Sitemap generiert und so weiter.
 
@@ -48,7 +48,6 @@ Die Commerce-Anwendung verwendet Cron-Aufgaben, die mit verschiedenen Konfigurat
 >
 >- Um Probleme während der Installation und Aktualisierung zu vermeiden, empfehlen wir dringend, die gleichen PHP-Einstellungen sowohl auf die PHP-Befehlszeilenkonfiguration als auch auf die Konfiguration des PHP-Webserver-Plug-ins anzuwenden. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](../../installation/prerequisites/php-settings.md).
 >- In einem System mit mehreren Knoten kann crontab nur auf einem Knoten ausgeführt werden. Dies gilt nur für Sie, wenn Sie aus Gründen der Leistung oder Skalierbarkeit mehr als einen Webknoten einrichten.
-
 
 ### Erstellen der Commerce-Registerkarte
 
@@ -73,14 +72,13 @@ Verwendung `--force` , um eine vorhandene Registerkarte neu zu schreiben.
 >- `magento cron:install` schreibt keine vorhandene Registerkarte in `#~ MAGENTO START` und `#~ MAGENTO END` Kommentare in der Registerkarte &quot;Kronen&quot;.
 >- `magento cron:install --force` hat keine Auswirkungen auf Cron-Aufträge außerhalb der Commerce-Kommentare.
 
-
 Um die Registerkarte &quot;crontab&quot;anzuzeigen, geben Sie den folgenden Befehl als Dateisysteminhaber ein:
 
 ```bash
 crontab -l
 ```
 
-Beispiel:
+Ein Beispiel:
 
 ```terminal
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -138,11 +136,11 @@ Informationen zum Einrichten von benutzerdefinierten Cron-Aufträgen und -Gruppe
 
 >[!INFO]
 >
->Sie müssen cron zweimal ausführen: das erste Mal, um Aufgaben zu entdecken und das zweite Mal, um die Aufgaben selbst auszuführen. Der zweite Cron-Run muss auf oder nach der `scheduled_at` Zeit für jede Aufgabe.
+>Sie müssen Cron zweimal ausführen: das erste Mal, um Aufgaben zu entdecken, und das zweite Mal, um die Aufgaben selbst auszuführen. Der zweite Cron-Run muss auf oder nach dem `scheduled_at` Zeit für jede Aufgabe.
 
 ## Protokollierung
 
-Alle `cron` Auftragsinformationen wurden verschoben von `system.log` in eine separate `cron.log`.
+Alle `cron` Auftragsinformationen wurden verschoben von `system.log` in einen gesonderten `cron.log`.
 Standardmäßig finden Sie die Cron-Informationen unter `<install_directory>/var/log/cron.log`.
 Alle Ausnahmen von Cron-Aufträgen werden von `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
 

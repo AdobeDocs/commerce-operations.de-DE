@@ -1,19 +1,19 @@
 ---
 title: Referenz zu personenbezogenen Daten des Kunden (Version 2.x)
 description: Erfahren Sie mehr über Datenflussdiagramme und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden in Adobe Commerce und Magento Open Source 2.x.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
-
 # Referenz zu personenbezogenen Daten des Kunden (Version 2.x)
 
 >[!NOTE]
 >
->Dies ist eines von mehreren Themen, die Kaufleuten und Entwicklern von Adobe Commerce und Magento Open Source bei der Vorbereitung auf die Einhaltung von Datenschutzbestimmungen helfen. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
+>Dies ist eines von mehreren Themen, die Kaufleuten und Entwicklern von Adobe Commerce und Magento Open Source dabei helfen, sich auf die Einhaltung von Datenschutzbestimmungen vorzubereiten. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
 
 Verwenden Sie die folgenden Datenflussdiagramme und Datenbankentitätszuordnungen als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen wie:
 
@@ -134,7 +134,7 @@ Adobe Commerce und Magento Open Source speichern die folgenden Kundenattribute:
 - Bundesland/Provinz
 - Bundesland/Provinz-ID
 - Straße
-- MwSt.-Nummer
+- MwSt. Nummer
 - Postleitzahl
 
 #### `customer_address_entity` und `customer_address_entity` Verweise
@@ -195,7 +195,7 @@ Die folgenden Spalten in der `sales_order` -Tabelle enthält Kundeninformationen
 
 #### `sales_order_address` table
 
-Die `sales_order_address` enthält die Kundenadresse.
+Die `sales_order_address` -Tabelle enthält die Adresse des Kunden.
 
 | Spalte | Datentyp |
 | --------------------- | ------------ |

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best Practices für private Inhaltsbausteine
 
-Wenn ein privater Inhaltsbaustein die Variable `_isScopePrivate` nicht zwischenspeicherbar ist. Da der private Block nicht zwischengespeichert wird, muss Adobe Commerce für jede Kundenanfrage dieselben Daten abrufen, was die Serverlast erhöht.
+Wenn ein privater Inhaltsbaustein die `_isScopePrivate` nicht zwischenspeicherbar ist. Da der private Block nicht zwischengespeichert wird, muss Adobe Commerce für jede Kundenanfrage dieselben Daten abrufen, was die Serverlast erhöht.
 
 Statt die `_isScopePrivate` für privaten Inhalt erstellen Sie einen Block und eine Vorlage, um benutzeragnostische Daten anzuzeigen. Diese Daten werden durch benutzerspezifische Daten durch die Adobe Commerce-UI-Komponente ersetzt, die die Vorab-Rendering-Daten effizienter verarbeitet. Anweisungen finden Sie unter [Private Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) im _[!DNL Commerce PHP Extensions Guide]_.
 
@@ -26,7 +26,7 @@ Statt die `_isScopePrivate` für privaten Inhalt erstellen Sie einen Block und e
 
 ## Potenzielle Auswirkung auf die Leistung
 
-Sites mit privaten Inhaltsbausteinen, die die `_isScopePrivate` Variablen Trigger AJAX Anforderungen zum Abrufen der gleichen Daten für jede Kundenanfrage. Dies erhöht die Reaktionszeit und verwendet zusätzliche Ressourcen, die für geschäftskritische Storefront-Vorgänge wie Kundenregistrierung, Warenkorbaktualisierungen, Bestellübermittlung und Zahlungsvorgänge verwendet werden können.
+Sites mit privaten Inhaltsbausteinen, die `_isScopePrivate` Variablen Trigger AJAX Anforderungen zum Abrufen der gleichen Daten für jede Kundenanfrage. Dies erhöht die Reaktionszeit und verwendet zusätzliche Ressourcen, die für geschäftskritische Storefront-Vorgänge wie Kundenregistrierung, Warenkorbaktualisierungen, Bestellübermittlung und Zahlungsvorgänge verwendet werden können.
 
 ## Zusätzliche Informationen
 

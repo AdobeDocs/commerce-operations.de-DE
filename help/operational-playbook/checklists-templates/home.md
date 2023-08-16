@@ -1,13 +1,13 @@
 ---
 title: Commerce-Checklisten
 description: Finden Sie nützliche Checklisten, um Ihr E-Commerce-Projekt zu organisieren.
-source-git-commit: 9901503a124011ea8ada6b77a6947b5c5dbadbdf
+exl-id: 4b5e5bca-7b5b-46e7-b3eb-ef6289d238ed
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
 
 ---
-
 
 # Checklisten und Vorlagen für Commerce
 
@@ -17,7 +17,7 @@ Verwenden Sie die Vorlagen und Checklisten auf dieser Seite, um Ihr Commerce-Pro
 
 Klicken Sie auf einen Link, um eine Checkliste herunterzuladen:
 
-- [Laufzeit](../../assets/playbooks/checklists/maturity.pptx)
+- [Fälligkeit](../../assets/playbooks/checklists/maturity.pptx)
 - [Live-Schaltung](../../assets/playbooks/checklists/go-live.pptx)
 - [Leistung](../../assets/playbooks/checklists/performance.pptx)
 - [Migration von Commerce-Plattformen](../../assets/playbooks/checklists/commerce-platform-migration.pptx)
@@ -30,5 +30,5 @@ Klicken Sie auf einen Link, um eine Vorlage herunterzuladen:
 - [Dokument zur Handelsstrategie](../../assets/playbooks/templates/commerce-strategy-document.pptx)
 - [Einsatzbereitschaft des E-Commerce](../../assets/playbooks/templates/ecommerce-operational-readiness.pptx)
 - [Funktionen der E-Commerce-Plattform](../../assets/playbooks/templates/ecommerce-platform-features.pptx)
-- [Eigene-site-Bewertung von Händlern](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
+- [Eigene-site-Bewertung für Händler](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)
 - [Anwendungsfall](../../assets/playbooks/templates/use-case.pptx)

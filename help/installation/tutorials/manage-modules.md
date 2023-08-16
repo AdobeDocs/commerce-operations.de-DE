@@ -1,13 +1,13 @@
 ---
 title: Module aktivieren oder deaktivieren
 description: Führen Sie diese Schritte aus, um Adobe Commerce- oder Magento Open Source-Module zu verwalten.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 0%
 
 ---
-
 
 # Module aktivieren oder deaktivieren
 
@@ -46,11 +46,11 @@ Wo
 * `-f` oder `--force` , um zu erzwingen, dass ein Modul trotz von Abhängigkeiten aktiviert oder deaktiviert wird. Bevor Sie diese Option verwenden, lesen Sie [Informationen zum Aktivieren und Deaktivieren von Modulen](#about-enabling-and-disabling-modules).
 * `-c` oder `--clear-static-content` cleans [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
 
-   Wenn statische Ansichtsdateien nicht gelöscht werden, kann dies zu Problemen führen, wenn mehrere Dateien mit demselben Namen vorhanden sind und Sie nicht alle löschen.
+  Wenn statische Ansichtsdateien nicht gelöscht werden, kann dies zu Problemen führen, wenn mehrere Dateien mit demselben Namen vorhanden sind und Sie nicht alle löschen.
 
-   Mit anderen Worten, wegen der [Fallback statischer Dateien](../../configuration/cli/static-view-file-deployment.md) Regeln, wenn Sie statische Dateien nicht löschen und mehr als eine Datei mit dem Namen `logo.svg` die sich unterscheiden, kann die Fallback-Funktion dazu führen, dass die falsche Datei angezeigt wird.
+  Mit anderen Worten, wegen der [Fallback statischer Dateien](../../configuration/cli/static-view-file-deployment.md) Regeln, wenn Sie statische Dateien nicht löschen und mehr als eine Datei mit dem Namen `logo.svg` die sich unterscheiden, kann die Fallback-Funktion dazu führen, dass die falsche Datei angezeigt wird.
 
-Um beispielsweise die `Magento_Weee` -Modul, geben Sie ein:
+So deaktivieren Sie beispielsweise die `Magento_Weee` -Modul, geben Sie ein:
 
 ```bash
 bin/magento module:disable Magento_Weee
@@ -74,7 +74,7 @@ bin/magento cache:clean
 
 ## Informationen zum Aktivieren und Deaktivieren von Modulen
 
-Mit Adobe Commerce und Magento Open Source können Sie die derzeit verfügbaren Module aktivieren oder deaktivieren. mit anderen Worten: alle von Adoben bereitgestellten Module oder Drittanbietermodule, die derzeit verfügbar sind.
+Adobe Commerce und Magento Open Source ermöglichen es Ihnen, die derzeit verfügbaren Module zu aktivieren bzw. zu deaktivieren, d. h. alle vom Adobe bereitgestellten Module oder Drittanbietermodule, die derzeit verfügbar sind.
 
 Bestimmte Module haben Abhängigkeiten zu anderen Modulen. In diesem Fall können Sie ein Modul möglicherweise nicht aktivieren oder deaktivieren, da es Abhängigkeiten zu anderen Modulen aufweist.
 
@@ -88,9 +88,9 @@ Beispiele:
 
 * Modul A steht in Konflikt mit Modul B. Sie können Modul A und Modul B deaktivieren oder eines der beiden Module deaktivieren, Sie jedoch *cannot* Modul A und Modul B gleichzeitig aktivieren.
 
-* Abhängigkeiten werden im `require` -Feld in Adobe Commerce und Magento Open Source `composer.json` -Datei für jedes Modul. Konflikte werden im `conflict` -Feld in Modulen&quot; `composer.json` Dateien. Diese Informationen werden zum Erstellen eines Abhängigkeitsdiagramms verwendet: `A->B` bedeutet, dass Modul A von Modul B abhängig ist.
+* Abhängigkeiten werden im `require` -Feld in Adobe Commerce und Magento Open Source `composer.json` -Datei für jedes Modul. Konflikte werden im `conflict` -Feld in Modulen&quot; `composer.json` -Dateien. Diese Informationen werden zum Erstellen eines Abhängigkeitsdiagramms verwendet: `A->B` bedeutet, dass Modul A von Modul B abhängig ist.
 
-* A *Abhängigkeitskette* ist der Pfad von einem Modul zu einem anderen. Wenn beispielsweise Modul A von Modul B und Modul B von Modul C abhängig ist, ist die Abhängigkeitskette `A->B->C`.
+* A *Abhängigkeitskette* ist der Pfad von einem Modul zu einem anderen. Wenn beispielsweise Modul A von Modul B und Modul B von Modul C abhängig ist, dann ist die Abhängigkeitskette `A->B->C`.
 
 Wenn Sie versuchen, ein Modul zu aktivieren oder zu deaktivieren, das von anderen Modulen abhängig ist, wird in der Fehlermeldung das Abhängigkeitsdiagramm angezeigt.
 

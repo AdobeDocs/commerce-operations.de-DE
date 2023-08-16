@@ -6,7 +6,7 @@ exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
 source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Beitragen Sie Entwickler zur Aktualisierung von Modulen und Erweiterungen, indem Sie ihre Versionen in der Adobe Commerce oder Magento Open Source angeben `composer.json` -Datei. Wenn Sie kein Entwickler sind, lesen Sie [Durchführen eines Upgrades](../implementation/perform-upgrade.md).
 
-Sie können entweder eine `require` Abschnitt `composer.json` oder Sie können die `composer require` -Befehl wie folgt:
+Sie können entweder eine `require` im Abschnitt `composer.json` oder Sie können die `composer require` -Befehl wie folgt:
 
 {{$include /help/_includes/server-login.md}}
 
@@ -50,7 +50,7 @@ composer require example/module:1.0.0
 
 Warten Sie, während Composer Abhängigkeiten aktualisiert und das Modul installiert.
 
-## Hinzufügen einer `require` Abschnitt zur Datei &quot;composer.json&quot;hinzu.
+## Hinzufügen einer `require` Abschnitt zur Datei &quot;composer.json&quot;hinzu
 
 1. Öffnen Sie die `composer.json` in einem Texteditor.
 

@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren Sie die [!DNL Data Migration Tool]
-description: Erfahren Sie mehr über die beiden Methoden zum Konfigurieren der [!DNL Data Migration Tool] zur Übertragung von Daten zwischen Magento 1 und Magento 2.
+description: Erfahren Sie mehr über die beiden Methoden zum Konfigurieren der [!DNL Data Migration Tool] um Daten zwischen Magento 1 und Magento 2 zu übertragen.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -144,7 +144,7 @@ So konfigurieren Sie die [!DNL Data Migration Tool] für die Migration:
    </options>
    ```
 
-   Die &lt;crypt_key> -Tag muss einen Wert enthalten. Sie finden sie im `<key>` -Tag, das sich in der Datei app/etc/local.xml auf Ihrer Magento 1-Instanz befindet.
+   Die &lt;crypt_key> -Tag muss einen Wert enthalten. Sie finden sie in der `<key>` -Tag, das sich in der Datei app/etc/local.xml auf Ihrer Magento 1-Instanz befindet.
 
    Optionale Parameter:
 
@@ -167,7 +167,7 @@ So konfigurieren Sie die [!DNL Data Migration Tool] für die Migration:
    </options>
    ```
 
-Speichern Sie abschließend Ihre Änderungen in `config.xml` und beenden Sie den Texteditor.
+Wenn Sie fertig sind, speichern Sie Ihre Änderungen in `config.xml` und beenden Sie den Texteditor.
 
 ### Verbindung mit dem TLS-Protokoll herstellen
 
@@ -208,9 +208,9 @@ So verwenden Sie die Zuordnungsdateien:
 
 1. Aktualisieren Sie den Pfad zur neu kopierten Datei im `<options>` Knoten von `config.xml`. Der aktualisierte Pfad sollte einer der folgenden sein:
 
-   1. Absoluter Dateipfad, z. B. g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Absoluter Dateipfad, z. B. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. magento/data-migration-tool-Modul relativer Dateipfad: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Magento-Stammverzeichnis-relativer Dateipfad: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Magento root-relative Dateipfad: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 Die `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` und `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` -Verzeichnisse enthalten die folgenden Konfigurationsdateien:
 
@@ -219,9 +219,9 @@ Auch wenn Sie mit der `map.xml.dist` meistens werden in der folgenden Tabelle al
 | Dateinamen zuordnen | Beschreibung |
 | --- | --- |
 | `class-map.xml.dist` | Wörterbuch der Klassenzuordnungen zwischen Magento 1 und Magento 2 |
-| `config.xml.dist` | Hauptkonfigurationsdatei, die die Datenbankkonfigurationen für Magento 1 und Magento 2, die Schrittkonfiguration und die Links zu Zuordnungsdateien angibt |
+| `config.xml.dist` | Hauptkonfigurationsdatei, die die Datenbankkonfigurationen für Magento 1 und Magento 2, Schrittkonfiguration und Links zu Zuordnungsdateien angibt |
 | *Nur Adobe Commerce*. `customer-attr-document-groups.xml.dist` | Liste der Tabellen, die im Schritt für benutzerdefinierte Kundenattribute verwendet werden. |
-| *Nur Adobe Commerce*. `customer-attr-map.xml.dist` | Zuordnungsdatei, die im Schritt &quot;Benutzerdefinierte Kundenattribute&quot;verwendet wird. |
+| *Nur Adobe Commerce*. `customer-attr-map.xml.dist` | Zuordnungsdatei, die im Schritt Benutzerdefinierte Kundenattribute verwendet wird. |
 | `deltalog.xml.dist` | Enthält die Liste der Tabellen, die für die Einrichtung von Datenbankroutinen erforderlich sind. |
 | `eav-attribute-groups.xml.dist` | Enthält eine Liste der Attribute, die in jedem Schritt verwendet werden. |
 | `eav-document-groups.xml.dist` | Enthält eine Liste der Tabellen, die in jedem Schritt verwendet werden. |
@@ -231,8 +231,8 @@ Auch wenn Sie mit der `map.xml.dist` meistens werden in der folgenden Tabelle al
 | *Nur Adobe Commerce*. `map-sales.xml.dist` | Zuordnungsdatei, die im SalesOrder-Schritt verwendet wird. |
 | `map.xml.dist` | Zuordnungsdatei, die für den Schritt &quot;Zuordnung&quot;erforderlich ist. |
 | `settings.xml.dist` | Festlegen der Konfigurationsdatei für die Migration, die die für die Migration der `core_config_data` Tabelle. |
-| `customer-attribute-groups.xml.dist` | Enthält eine Liste der Attribute, die im Schritt &quot;Kundenattribute&quot;verwendet werden. |
-| `customer-document-groups.xml.dist` | Enthält eine Liste der Tabellen, die im Schritt &quot;Kundenattribute&quot;verwendet werden. |
+| `customer-attribute-groups.xml.dist` | Enthält eine Liste der Attribute, die im Schritt Kundenattribute verwendet werden. |
+| `customer-document-groups.xml.dist` | Enthält eine Liste der Tabellen, die im Schritt Kundenattribute verwendet werden. |
 | `map-customer.xml.dist` | Zuordnungsdatei, die im Schritt &quot;Kundenattribute&quot;verwendet wird. |
 | `order-grids-document-groups.xml.dist` | Enthält eine Liste der Tabellen, die im Schritt &quot;OrderGrids&quot;verwendet werden. |
 | `map-document-groups.xml.dist` | Definiert, welche Felder aktualisiert werden, wenn beim Einfügen von Daten Duplikate auftreten |

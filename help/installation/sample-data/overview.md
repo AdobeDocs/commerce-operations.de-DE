@@ -1,13 +1,13 @@
 ---
 title: Übersicht über Beispieldaten
 description: Erfahren Sie mehr über die Verwendung von Beispieldaten für Adobe Commerce- und Magento Open Source-Projekte.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # Übersicht über Beispieldaten
 

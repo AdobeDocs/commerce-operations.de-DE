@@ -1,19 +1,19 @@
 ---
-title: Herunterladen der Adobe Commerce-Software
+title: Adobe Commerce-Software herunterladen
 description: Erfahren Sie, wie Sie die Adobe Commerce- und Magento Open Source-Software herunterladen.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
-
-# Herunterladen der Adobe Commerce-Software
+# Adobe Commerce-Software herunterladen
 
 Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere E-Commerce-Software setzen. Wir haben einige Informationen gesammelt, die Ihnen bei den ersten Schritten mit Ihrer Installation helfen.
 
-## Software abrufen
+## Wie Sie die Software erhalten
 
 Überprüfen Sie die Verfügbarkeit aufregender neuer Funktionen und Versionen und erfahren Sie, wie Sie sie in unserer [Seite zur Produktverfügbarkeit](https://devdocs.magento.com/release/availability.html).
 
@@ -31,8 +31,8 @@ In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten mit de
         <td><p>Integrator, Packager</p></td>
         <td><p>Möchte die vollständige Kontrolle über alle installierten Komponenten erhalten, hat Zugriff auf den Anwendungsserver, hochtechnisch, kann die Magento Open Source mit anderen Komponenten umverpacken.</p>
         </td>
-        <td><ol><li>Erstellt einen Composer <em>Projekt</em> , die die Liste der zu verwendenden Komponenten enthält.</li>
-            <li>Verwendet Composer zum Aktualisieren von Paketabhängigkeiten; uses <code>composer create-project</code> , um das Composer-Metapaket abzurufen.</li>
+        <td><ol><li>Erstellt einen Verfasser <em>Projekt</em> , die die Liste der zu verwendenden Komponenten enthält.</li>
+            <li>Verwendet Composer zum Aktualisieren von Paketabhängigkeiten; verwendet <code>composer create-project</code> , um das Composer-Metapaket abzurufen.</li>
             <li>Installiert die Anwendung mit dem <a href="../advanced.md">Befehlszeile</a>.</li>
         <li>Aktualisieren Sie die Anwendung und die Erweiterungen mithilfe des  <a href="../../upgrade/implementation/perform-upgrade.md">Befehlszeile</a>.</li></ol></td>
         <td><p><a href="../composer.md">Metapaket abrufen</a></p></td>
@@ -41,7 +41,7 @@ In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten mit de
         <td><p>Beitragende Entwickler</p></td>
         <td><p>trägt zur Magento Open Source-Codebase, zu Dateifehlern bei und passt die Anwendung an. Hochtechnisch, hat einen eigenen Entwicklungsserver, versteht Composer und GitHub.</p>
             <p>You <em>cannot</em> die Anwendung in einer Produktionsumgebung verwenden.</p>
-      <p>Sie müssen ein Upgrade mit <a href="../../upgrade/developer/git-installs.md">Composer- und Git-Befehle</a>.</p></td>
+      <p>Sie müssen ein Upgrade durchführen mit <a href="../../upgrade/developer/git-installs.md">Composer- und Git-Befehle</a>.</p></td>
         <td><ol><li>Klont das GitHub-Repository.</li>
             <li>Verwendet Composer zum Aktualisieren von Paketabhängigkeiten.</li>
             <li>Installiert das Programm mit <a href="../advanced.md">Befehlszeile</a>.</li>

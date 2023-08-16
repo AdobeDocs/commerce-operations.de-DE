@@ -5,7 +5,7 @@ feature: Security
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 0%
 - Datenschutzbestimmungen {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [DSGVO](privacy/gdpr.md)
-   - [JavaScript-Bibliothek zum Datenschutz in Adoben](privacy/adobe-javascript-library.md)
-   - [Privacy JavaScript Library](privacy/javascript-library.md)
+   - [JavaScript-Bibliothek zum Adobe Datenschutz](privacy/adobe-javascript-library.md)
+   - [Datenschutz-JavaScript-Bibliothek](privacy/javascript-library.md)
 - Referenz {#reference}
    - [Persönliche Daten des Kunden (Version 2.x)](privacy/data-m2.md)
    - [Persönliche Daten des Kunden (Version 1.x)](privacy/data-m1.md)

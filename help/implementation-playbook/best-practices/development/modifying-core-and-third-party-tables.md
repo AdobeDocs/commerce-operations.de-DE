@@ -24,50 +24,50 @@ Der Hauptgrund für die Vermeidung von Änderungen an Kerntabellen besteht darin
 
 Ein weiterer Grund, die Änderung der Datenbanktabellenstruktur zu vermeiden, besteht darin, dass Ihre Änderungen Probleme verursachen können, wenn das Kernentwicklungsteam oder Entwickler von Drittanbietern die Struktur ihrer Datenbanktabellen ändern. Beispielsweise gibt es einige Kerndatenbanktabellen mit einer Spalte namens `additional_data`. Dies war immer eine `text` Spaltentyp. Aus Leistungsgründen kann das Kernteam die Spalte jedoch in `longtext`. Dieser Spaltentyp ist ein Alias für JSON. Durch die Konvertierung in diesen Spaltentyp werden dieser Spalte Leistungsverbesserungen und Suchmöglichkeiten hinzugefügt, die nicht als `text` Typ. Weitere Informationen zu diesem Thema finden Sie unter [JSON-Datentyp](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
-## Ermitteln, wann Daten gespeichert oder entfernt werden
+## Datum zum Speichern oder Entfernen von Daten
 
-Adobe empfiehlt, zunächst zu ermitteln, ob diese Daten gespeichert werden müssen. Wenn Sie Daten aus einem Legacy-System verschieben, sparen Ihnen alle Daten, die Sie entfernen können, Zeit und Mühe während der Migration. (Es gibt Möglichkeiten, Daten zu archivieren, wenn sie später aufgerufen werden müssen.) Damit Sie die Anwendung und Leistung gut steuern können, können Sie eine Anforderung zum Speichern zusätzlicher Daten anfechten. Ihr Ziel besteht darin sicherzustellen, dass das Speichern der Daten eine Voraussetzung ist, um eine geschäftliche Anforderung zu erfüllen, die nicht auf andere Weise ausgefüllt werden kann.
+Adobe empfiehlt, dass Sie zuerst bestimmen, ob Sie diese Daten speichern müssen. Wenn Sie Daten aus einem Legacy-System verschieben, sparen Ihnen alle Daten, die Sie entfernen können, Zeit und Mühe während der Migration. (Es gibt Möglichkeiten, Daten zu archivieren, wenn sie später aufgerufen werden müssen.) Damit Sie die Anwendung und Leistung gut steuern können, können Sie eine Anforderung zum Speichern zusätzlicher Daten anfechten. Ihr Ziel besteht darin sicherzustellen, dass das Speichern der Daten eine Voraussetzung ist, um eine geschäftliche Anforderung zu erfüllen, die nicht auf andere Weise ausgefüllt werden kann.
 
 ### Alte Daten
 
-Wenn Ihr Projekt veraltete Daten wie alte Bestellungen oder Kundendatensätze enthält, sollten Sie eine alternative Suchmethode in Erwägung ziehen. Wenn das Unternehmen beispielsweise nur gelegentlich Zugriff auf die Daten benötigt, sollten Sie eine externe Suche der alten Datenbank implementieren, die außerhalb der Commerce-Plattform gehostet wird, anstatt alte Daten zu migrieren. [!DNL Adobe Commerce].
+Wenn Ihr Projekt veraltete Daten wie alte Bestellungen oder Kundendatensätze enthält, sollten Sie eine alternative Suchmethode in Erwägung ziehen. Wenn das Unternehmen beispielsweise nur gelegentlich Zugriff auf die Daten benötigt, sollten Sie eine externe Suche der alten Datenbank implementieren, die außerhalb der Commerce-Plattform gehostet wird, anstatt alte Daten zu migrieren [!DNL Adobe Commerce].
 
 In diesem Fall muss die Datenbank auf einen Server migriert werden, der entweder eine Webschnittstelle zum Lesen der Daten anbietet oder vielleicht eine Schulung in der Verwendung von MySQL Workbench oder ähnlichen Tools. Das Ausschließen dieser Daten aus der neuen Datenbank beschleunigt die Migration, da das Entwicklungsteam sich auf die neue Site konzentrieren kann, anstatt Probleme mit der Datenmigration zu beheben.
 
 Eine andere Möglichkeit, die Daten außerhalb des Handels zu halten, sie jedoch in Echtzeit zu verwenden, wäre die Nutzung anderer Tools wie GraphQL-Gitter. Diese Option kombiniert verschiedene Datenquellen und gibt sie als einzelne Antwort zurück.
 
-Sie können beispielsweise `stitch` zusammen alte Bestellungen aus einer externen Datenbank, vielleicht die alte Magento 1-Site, die eingestellt wird. Zeigen Sie sie dann mithilfe des GraphQL-Gitters als Teil des Bestellverlaufs der Kunden an. Diese alten Bestellungen können mit den Bestellungen Ihrer aktuellen [!DNL Adobe Commerce] Umgebung.
+Sie können beispielsweise `stitch` zusammen alte Bestellungen aus einer externen Datenbank, vielleicht die alte Magento 1-Site, die stillgelegt wird. Zeigen Sie sie dann mithilfe des GraphQL-Gitters als Teil des Bestellverlaufs der Kunden an. Diese alten Bestellungen können mit den Bestellungen Ihrer aktuellen [!DNL Adobe Commerce] Umgebung.
 
 Weitere Informationen zur Verwendung von API-Gittern mit GraphQL finden Sie unter [Was ist API-Mesh?](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) and [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
-## Migrieren von Legacy-Daten mit Erweiterungsattributen
+## Migrieren älterer Daten mit Erweiterungsattributen
 
-Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in gespeichert werden müssen [!DNL Adobe Commerce]empfiehlt Adobe die Verwendung von [Erweiterungsattribute](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
+Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in gespeichert werden müssen [!DNL Adobe Commerce]empfiehlt Adobe, die [Erweiterungsattribute](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
 
 - Sie können die beizubehaltenden Daten und die Datenbankstruktur steuern, um sicherzustellen, dass die Daten mit dem richtigen Spaltentyp und den richtigen Indizes gespeichert werden.
 - Die meisten Entitäten in [!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützt die Verwendung von Erweiterungsattributen.
 - Erweiterungsattribute sind ein speicherunabhängiger Mechanismus, der die Flexibilität bietet, die Daten an einem optimalen Speicherort für Ihr Projekt zu speichern.
 
-Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Entscheidend bei der Auswahl eines Standorts ist, ob der Standort eine zusätzliche Komplexität bringt oder sich auf die Leistung auswirkt.
+Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Entscheidend bei der Auswahl eines Standorts ist, ob der Standort eine zusätzliche Komplexität einbringt oder sich auf die Leistung auswirkt.
 
 ### Andere Alternativen in Betracht ziehen
 
-Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce] -Umgebung, z. B. GraphQL-Gitter und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten beizubehalten, wirken sich jedoch nicht auf die Commerce-Hauptanwendung oder die zugrunde liegenden Datenbanktabellen aus. Bei diesem Ansatz stellen Sie Ihre Daten über eine API bereit. Fügen Sie dann Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mit GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erstellen, wie in [Legacy-Daten](#legacy-data).
+Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce] -Umgebung, z. B. GraphQL-Gitter und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten beizubehalten, wirken sich jedoch nicht auf die Commerce-Hauptanwendung oder die zugrunde liegenden Datenbanktabellen aus. Bei diesem Ansatz stellen Sie Ihre Daten über eine API bereit. Fügen Sie dann Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mithilfe von GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erstellen, wie in [Legacy Data](#legacy-data).
 
 Weitere Informationen zum GraphQL-Gitter finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. For information about the Adobe App Builder,  see [Introducing App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
-## Ändern von Kerntabellen oder Drittanbietertabellen
+## Ändern einer Kerntabelle oder Drittanbietertabelle
 
 Wenn Sie Daten speichern möchten, indem Sie einen Kern ändern [!DNL Adobe Commerce] Verwenden Sie die folgenden Richtlinien, um die Auswirkungen auf Stabilität und Leistung zu minimieren.
 
-- Fügen Sie nur neue Spalten hinzu.
+- Nur neue Spalten hinzufügen.
 - Ändern Sie nie die _type_ Wert einer vorhandenen Spalte. Ändern Sie beispielsweise nicht die `integer` zu `varchar` um Ihren individuellen Anwendungsfall zu erfüllen.
 - Vermeiden Sie das Hinzufügen von Spalten zu EAV-Attributtabellen. Diese Tabellen sind bereits mit Logik und Verantwortung überlastet.
 - Bestimmen Sie vor dem Anpassen einer Tabelle deren Größe. Das Ändern großer Tabellen wirkt sich auf die Bereitstellung aus, was zu Minuten oder Stunden Verzögerung bei der Anwendung von Änderungen führen kann.
 
 ## Best Practices zum Ändern einer externen Datenbanktabelle
 
-Adobe empfiehlt, die folgenden Schritte auszuführen, wenn Sie eine Spalte zu einer Kerndatenbanktabelle oder einer Drittanbietertabelle hinzufügen:
+Adobe empfiehlt die folgenden Schritte, wenn Sie eine Spalte zu einer Kerndatenbanktabelle oder einer Drittanbieter-Tabelle hinzufügen:
 
 1. Erstellen Sie ein Modul mit einem Namen in Ihrem Namespace, der das darstellt, was Sie aktualisieren.
 

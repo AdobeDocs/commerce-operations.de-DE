@@ -1,13 +1,13 @@
 ---
-title: "Führen Sie die [!DNL Upgrade Compatibility Tool]"
+title: Führen Sie die [!DNL Upgrade Compatibility Tool]
 description: Führen Sie die folgenden Schritte aus, um [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt.
-source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
+exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1116'
 ht-degree: 0%
 
 ---
-
 
 # Laden Sie die [!DNL Upgrade Compatibility Tool]
 
@@ -41,7 +41,7 @@ Verfügbare Befehle für [!DNL Upgrade Compatibility Tool] in einer Befehlszeile
 | `refactor` | Dieser Befehl behebt automatisch eine reduzierte Anzahl von Problemen. |
 | `graphql:compare` | Dieser Befehl bietet die Möglichkeit, zwei GraphQL-Endpunkte zu untersuchen und ihre Schemas zu vergleichen. |
 | `list` | Dieser Befehl gibt eine Liste aller [!DNL Upgrade Compatibility Tool] verfügbare Befehle. |
-| `help` | Dieser Befehl gibt alle verfügbaren `help`Optionen für [!DNL Upgrade Compatibility Tool]. Dieser Befehl kann ebenso ausgeführt werden wie eine Option mit den vorherigen Befehlen. |
+| `help` | Dieser Befehl gibt alle verfügbaren zurück `help`Optionen für [!DNL Upgrade Compatibility Tool]. Dieser Befehl kann ebenso ausgeführt werden wie eine Option mit den vorherigen Befehlen. |
 
 ## Verwenden Sie die `upgrade:check` command
 
@@ -59,9 +59,9 @@ Verfügbare Optionen für `upgrade:check` command:
 
 | **Befehl** | **Verfügbare Optionen** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: Gibt alle verfügbaren Optionen zurück.</li><li>—current-version: Aktuelle Adobe Commerce-Version. Dieser Parameter ist erforderlich und muss immer verwendet werden.</li><li>—min-issue-level: Sie können Probleme nach der minimalen Problemstufe filtern (der Standardwert lautet WARNING).</li><li>—ignore-current-version-compatibility-issues (oder -i): Wenn Sie kritische Probleme, Fehler und Warnungen aus der aktuellen Version nicht in Ihren Bericht aufnehmen möchten.</li><li>—coming-version (oder -c): Targeting einer bestimmten Adobe Commerce-Version. Die jeweils aktuellste Version wird verwendet, wenn sie weggelassen wird.</li></ul> |
+| `upgrade:check` | <ul><li>—help: Gibt alle verfügbaren Optionen zurück.</li><li>—current-version: Aktuelle Adobe Commerce-Version. Dieser Parameter ist erforderlich und muss immer verwendet werden.</li><li>—min-issue-level: Sie können Probleme nach der minimalen Problemstufe filtern (Standardwert ist WARNING).</li><li>—ignore-current-version-compatibility-issues (oder -i): Wenn Sie keine kritischen Probleme, Fehler und Warnungen aus der aktuellen Version in Ihren Bericht aufnehmen möchten.</li><li>—Bevorstehende Version (oder -c): Targeting einer bestimmten Adobe Commerce-Version. Die jeweils aktuellste Version wird verwendet, wenn sie weggelassen wird.</li></ul> |
 
-Die [!DNL Upgrade Compatibility Tool] ermöglicht Ihnen, die `upgrade:check` -Befehl mit einer `--ignore-current-version-compatibility-issues` -Option. Verwenden Sie diese Option, wenn Sie nur neue Probleme erhalten möchten, die mit der Aktualisierung von Ihrer aktuellen Version auf die Zielversion in Ihrer [!DNL Upgrade Compatibility Tool] Bericht:
+Die [!DNL Upgrade Compatibility Tool] ermöglicht es Ihnen, die `upgrade:check` -Befehl mit einer `--ignore-current-version-compatibility-issues` -Option. Verwenden Sie diese Option, wenn Sie nur neue Probleme erhalten möchten, die mit der Aktualisierung von Ihrer aktuellen Version auf die Zielversion in Ihrer [!DNL Upgrade Compatibility Tool] Bericht:
 
 ```bash
 bin/uct upgrade:check --ignore-current-version-compatibility-issues <dir>
@@ -86,7 +86,7 @@ Wo `-c, --coming-version[=COMING-VERSION]` bezieht sich auf die Zielversion von 
 Es gibt einige Einschränkungen bei der Ausführung der `--coming-version`:
 
 - Dieser Parameter bezieht sich auf alle Tags, die eine bestimmte Version von Adobe Commerce identifizieren.
-- Es ist eine Pflicht, dies explizit anzugeben. Die Bereitstellung nur des Werts funktioniert nicht.
+- Es ist eine Anforderung, diese explizit anzugeben; nur der Wert davon funktioniert nicht.
 - Geben Sie die Tag-Version ohne Anführungszeichen an (weder Einzel- noch Doppelpunkt): ~~&quot;2.4.1-develop&quot;~~.
 - Sie sollten KEINE älteren Versionen als die derzeit installierten bereitstellen und auch nicht ältere als 2.3, die derzeit die älteste Version ist, die unterstützt wird.
 
@@ -100,7 +100,7 @@ bin/uct dbschema:diff <current-version> <target-version>
 
 Wenn die Argumente wie folgt lauten:
 
-- `<current-version>`: alle Adobe Commerce-Versionen zum Vergleich.
+- `<current-version>`: eine beliebige Adobe Commerce-Version zum Vergleich.
 - `<target-version>`: auch eine beliebige Adobe Commerce-Version zum Vergleich.
 
 Anwendungsbeispiel:
@@ -163,7 +163,7 @@ Siehe [Vanilla-Instanz bereitstellen](https://developer.adobe.com/commerce/contr
 Die [!DNL Upgrade Compatibility Tool] hat die Möglichkeit, einen reduzierten Satz von Problemen automatisch zu beheben:
 
 - Funktionen, die verwendet werden dürfen, ohne ein -Argument zu übergeben, aber mit einer solchen Verwendung sind jetzt veraltet.
-- Verwendung `$this` in Magento-Vorlagen.
+- Verwendung der `$this` in Magento-Vorlagen.
 - Verwendung des PHP-Suchbegriffs `final` in privaten Methoden.
 
 Führen Sie dazu die `refactor` command:
@@ -229,7 +229,7 @@ Gibt eine Liste mit allen verfügbaren `help` Optionen für [!DNL Upgrade Compat
 - -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 ```
 
-Es ist möglich, `--help` als Option beim Ausführen eines bestimmten Befehls. Gibt `--help` Optionen für den angegebenen Befehl.
+Es ist möglich `--help` als Option beim Ausführen eines bestimmten Befehls. Gibt `--help` Optionen für den angegebenen Befehl.
 
 Beispiel der `upgrade:check` Befehl mit `--help` Option:
 
@@ -260,12 +260,12 @@ Dadurch werden bestimmte Optionen zurückgegeben, die für die `upgrade:check` c
 - Vermeiden Sie es, zwei Module mit demselben Namen zu haben.
 - Folgen Sie Adobe Commerce [Codierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Upgrade-Handbuch](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) Best Practices.
-- Führen Sie die [!DNL Upgrade Compatibility Tool] von [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) für [Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} Projekte.
+- Führen Sie die [!DNL Upgrade Compatibility Tool] aus dem [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) für [Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} Projekte.
 
 ## Ergebnisse optimieren
 
 Die [!DNL Upgrade Compatibility Tool] liefert einen Bericht mit Ergebnissen, in dem alle in Ihrem Projekt identifizierten Probleme standardmäßig aufgeführt sind. Sie können die Ergebnisse optimieren, um sich auf die Probleme zu konzentrieren, die Sie beheben müssen, um das Upgrade abzuschließen:
 
-- Option verwenden `--ignore-current-version-compatibility-issues` wenn Sie nur neue Probleme erhalten möchten, die mit der Aktualisierung von Ihrer aktuellen Version auf die Zielversion in Ihrer [!DNL Upgrade Compatibility Tool] Bericht.
+- Verwenden Sie die Option `--ignore-current-version-compatibility-issues` wenn Sie nur neue Probleme erhalten möchten, die mit der Aktualisierung von Ihrer aktuellen Version auf die Zielversion in Ihrer [!DNL Upgrade Compatibility Tool] Bericht.
 - Hinzufügen der `--min-issue-level` festlegen, können Sie mit dieser Einstellung das minimale Problem-Level festlegen, damit nur die wichtigsten Probleme bei Ihrem Upgrade priorisiert werden.
 - Die [!DNL Upgrade Compatibility Tool] erfordert mindestens 2 GB RAM für die Ausführung. Diese Einstellung wird empfohlen, um Probleme aufgrund einer geringen Speicherbegrenzung zu vermeiden. Die [!DNL Upgrade Compatibility Tool] zeigt eine Frage an, wenn Sie die `upgrade:check` -Befehl mit einer niedrigen `memory_limit` -Einstellung.

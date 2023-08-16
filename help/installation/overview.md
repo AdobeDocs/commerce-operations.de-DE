@@ -1,13 +1,13 @@
 ---
 title: Übersicht über die Vor-Ort-Installation
 description: Erfahren Sie mehr über den Installationsprozess für lokale Bereitstellungen von Adobe Commerce und Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
 
 ---
-
 
 # Übersicht über die Vor-Ort-Installation
 
@@ -29,11 +29,10 @@ Der allgemeine Installationsfluss sieht wie folgt aus:
 
    * (Empfohlen) Rufen Sie die [Composer-Metapaket](composer.md) um Module und ihre Abhängigkeiten zu verwalten.
 
-   * Wenn Sie zur Magento Open Source-Codebase beitragen oder die Anwendung anpassen möchten, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) das GitHub-Repository. Diese Methode erfordert die Kenntnis von GitHub und Composer.
+   * Wenn Sie zur Magento Open Source-Codebase beitragen oder die Anwendung anpassen möchten, [clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) das GitHub-Repository. Diese Methode erfordert die Vertrautheit mit GitHub und Composer.
 
 1. Installieren Sie das Programm über die Befehlszeile.
 
    Wenn der Schritt fehlschlägt, weil die erforderliche Software nicht richtig eingerichtet ist, überprüfen Sie die [Voraussetzungen](prerequisites/overview.md).
 
 1. [Überprüfen](next-steps/verify.md) die Installation durch Anzeige Ihrer Storefront und des Administrators.
-

@@ -20,7 +20,7 @@ Die Architektur von Adobe Commerce on Cloud Infrastructure Pro unterstützt Umge
 
 - **Produktion**—Bietet eine einzige Umgebungsverzweigung, die für dedizierte Infrastruktur-as-a-Service-Container (IAAs) bereitgestellt wird.
 
-- **Globales Übergeordnetes**—Stellt eine Übergeordnete Verzweigung bereit, die in Platform-as-a-Service-Containern (PageS) bereitgestellt wird.
+- **Globaler Master**—Stellt eine Masterverzweigung bereit, die in Platform-as-a-Service-Containern (PageS) bereitgestellt wird.
 
 ![Abbildung der Beziehung zwischen Adobe Commerce-Cloud-Umgebungen](../../../assets/playbooks/environment-diagram.svg)
 

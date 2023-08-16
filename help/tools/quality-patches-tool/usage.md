@@ -19,17 +19,17 @@ Sehen Sie sich dies an [technisches Video](https://experienceleague.adobe.com/do
 
 >[!INFO]
 >
->Siehe [Anwenden einzelner Patches](#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) , um eine vollständige Liste der veröffentlichten Patches zu überprüfen.
+>Siehe [Anwenden einzelner Patches](#apply-individual-patches) für Anweisungen zum Anwenden von Patches auf Ihre Adobe Commerce- oder Magento Open Source-Projekte. Siehe [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) , um eine vollständige Liste der veröffentlichten Patches zu überprüfen.
 
 >[!WARNING]
 >
->Es wird nicht empfohlen, die [!DNL Quality Patches Tool] , um eine große Anzahl von Patches anzuwenden, da dies die Komplexität Ihres Codes erhöht und die Aktualisierung auf eine neue Version erschwert.
+>Die Verwendung der [!DNL Quality Patches Tool] , um eine große Anzahl von Patches anzuwenden, da dies die Komplexität Ihres Codes erhöht und die Aktualisierung auf eine neue Version erschwert.
 
 ## Installieren
 
 >[!INFO]
 >
->Wenn es noch nicht installiert ist, müssen Sie [[!DNL Git]](https://github.com/git-guides/install-git) oder [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) vor der Installation [!DNL Quality Patches Tool]. Fügen Sie die `magento/quality-patches` Composer-Paket zu Ihrem `composer.json` Datei:
+>Wenn es noch nicht installiert ist, müssen Sie [[!DNL Git]](https://github.com/git-guides/install-git) oder [Patch](https://man7.org/linux/man-pages/man1/patch.1.html) vor der Installation der [!DNL Quality Patches Tool]. Fügen Sie die `magento/quality-patches` Composer-Paket zu Ihrem `composer.json` Datei:
 
 ```bash
 composer require magento/quality-patches
@@ -50,7 +50,7 @@ Sie sehen die Ausgabe ähnlich der folgenden:
 | MAGECLOUD-5069 | FPC wird während der Bereitstellung deaktiviert | Optional | Nicht angewendet | Betroffene Komponenten:<br> - magento/module-page-cache |
 | MCLOUD-5650 | Halten Sie die Bereitstellungskonfiguration fest, nachdem Sie die Datei gelesen haben | Optional | Nicht angewendet | Betroffene Komponenten:<br> - Magento/Framework |
 | MCLOUD-5684 | Paginierung funktioniert nicht - product_list_limit=all | Optional | Nicht angewendet | Betroffene Komponenten: - magento/module-elasticsearch |
-| MCLOUD-5837 | Problem mit dem Lastenausgleich beheben | Veraltet | Angewandt | Empfohlener Ersatz: MC-1 <br> Betroffene Komponenten: - Magento/Framework |
+| MCLOUD-5837 | Problem mit dem Lastenausgleich beheben | Veraltet | Angewandt | Empfohlene Ersetzung: MC-1 <br> Betroffene Komponenten: - magento/framework |
 | BUNDLE-2554 | Fehler mit Zahlungsinformationen festlegen | Optional | Nicht angewendet | Betroffene Komponenten: <br>- amzn/amazon-pay-module |
 | MC-1 | Behebungsfehler 1 | Optional | Angewandt | Betroffene Komponenten: <br> - magento/module-cms |
 | MC-2 | Behebungsfehler 2 | Optional | Nicht angewendet | Betroffene Komponenten: <br> - magento/module-cms |
@@ -63,7 +63,7 @@ Die Statustabelle enthält:
 
 - **Typ**:
    - `Optional` — Alle Patches der [!DNL Quality Patches Tool] und [Commerce on Cloud Infrastructure Guide > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) Das -Paket ist für Installationen von Adobe Commerce und Magento Open Source optional.
-   - `Deprecated` — Adobe hat das einzelne Pflaster veraltet. Wenn Sie den Patch angewendet haben, empfehlen wir Ihnen, ihn zurückzusetzen. Der Vorgang &quot;Reverse&quot;entfernt auch den Patch aus der Statustabelle.
+   - `Deprecated` — Adobe hat das einzelne Patch veraltet. Wenn Sie den Patch angewendet haben, empfehlen wir Ihnen, ihn zurückzusetzen. Der Vorgang &quot;Reverse&quot;entfernt auch den Patch aus der Statustabelle.
 
 - **Status**:
    - `Applied` — Das Pflaster wurde aufgebracht.
@@ -157,7 +157,7 @@ Zeigen Sie die hinzugefügten Patches an:
 
 ## Erneutes Anwenden von Patches nach einem Upgrade {#re-apply-patches-after-an-upgrade}
 
-Beim Upgrade auf eine neue Version von Adobe Commerce oder Magento Open Source müssen Sie Patches erneut anwenden, wenn die Patches nicht in der neuen Version enthalten sind.
+Wenn Sie auf eine neue Version von Adobe Commerce oder Magento Open Source aktualisieren, müssen Sie Patches erneut anwenden, wenn die Patches nicht in der neuen Version enthalten sind.
 
 So wenden Sie Patches erneut an:
 

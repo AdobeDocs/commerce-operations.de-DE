@@ -1,13 +1,13 @@
 ---
 title: Kommunikationsprozess und -instrumente
 description: Nutzen Sie die Kommunikationsprozesse und -werkzeuge, die den Anforderungen Ihres E-Commerce-Teams entsprechen.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: e7eca8f1-aec0-4a45-8b57-2851b2df2de0
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 0%
 
 ---
-
 
 # Kommunikation
 
@@ -31,7 +31,7 @@ Im Folgenden werden einige der E-Commerce-Unternehmen des Prozesses aufgeführt,
 
 ## Kommunikationsmittel
 
-Es ist allgemein bekannt, dass eine schlechte Kommunikation innerhalb einer Arbeitsbeziehung Organisationen und Teams beeinträchtigt. Studien haben gezeigt, dass die finanziellen Verluste pro Jahr in den Millionen liegen, weil die Kommunikation zwischen den Beschäftigten unzureichend ist. Es ist wahrscheinlich, dass die Mitarbeiter unterschiedliche Rollen und Verantwortlichkeiten übernehmen, was dazu führt, dass sie in viele Richtungen gezogen werden. Glücklicherweise gibt es eine Reihe von Technologien, die den Menschen helfen, offen zu bleiben und Verbindungen über klare Kommunikationswege herzustellen.
+Es ist allgemein bekannt, dass eine schlechte Kommunikation innerhalb eines Arbeitsverhältnisses Organisationen und Teams schädigt. Studien haben gezeigt, dass die finanziellen Verluste pro Jahr in den Millionen liegen, weil die Kommunikation zwischen den Beschäftigten unzureichend ist. Es ist wahrscheinlich, dass die Mitarbeiter unterschiedliche Rollen und Verantwortlichkeiten übernehmen, was dazu führt, dass sie in viele Richtungen gezogen werden. Glücklicherweise gibt es eine Reihe von Technologien, die den Menschen helfen, offen zu bleiben und Verbindungen über klare Kommunikationswege herzustellen.
 
 Wir werden einige dieser Instrumente untersuchen, die sich in großen und kleinen Organisationen als sehr wirkungsvoll erwiesen haben.
 
@@ -67,7 +67,7 @@ JIRA ermöglicht Teams, detaillierte Aufgaben zu erstellen und zu verfassen, Ber
 
 Commerce-Manager, Marketing- und Entwicklungsteams und sogar Akteure auf C-Ebene können den täglichen, wöchentlichen, monatlichen und jährlichen Fortschritt jeder JIRA-Aufgabe oder jedes JIRA-Projekts verfolgen. Das Projekt-Management-Tool Atlassian ist in drei Versionen erhältlich: JIRA Align, JIRA Core und JIRA Software.
 
-Die Vorteile der Verwendung von JIRA in E-Commerce-Unternehmen bestehen darin, dass mehrere Teams mit einer Plattform zusammenarbeiten können. Oft sind Unternehmen Zeugen der Marketing-, Entwicklungs-, Kreativ- und E-Commerce-Teams, die alle in verschiedenen Silos arbeiten. Ein Projektmanagement-Tool wie JIRA ermöglicht es jedem Team, verschiedene Prioritäten zu repräsentieren. Probleme können alles darstellen, was Teams verfolgen möchten, und sind alle in verschiedenen Projekten enthalten, die aus wiederkehrenden Aufgaben bestehen, die von Teams ausgeführt werden müssen. Jedes Problem durchläuft einen Prozess, der als Workflow bezeichnet wird.
+Die Vorteile der Verwendung von JIRA in E-Commerce-Unternehmen bestehen darin, dass mehrere Teams mit einer Plattform zusammenarbeiten können. Viele Male sind Unternehmen Zeugen der Marketing-, Entwicklungs-, Kreativ- und E-Commerce-Teams, die alle in verschiedenen Silos arbeiten. Ein Projektmanagement-Tool wie JIRA ermöglicht es jedem Team, verschiedene Prioritäten zu repräsentieren. Probleme können alles darstellen, was Teams verfolgen möchten, und sind alle in verschiedenen Projekten enthalten, die aus wiederkehrenden Aufgaben bestehen, die von Teams ausgeführt werden müssen. Jedes Problem durchläuft einen Prozess, der als Workflow bezeichnet wird.
 
 Der richtige Workflow kann Kommunikationslinien erstellen oder umbrechen. Teams können eigene Workflows erstellen, um die Schritte zu definieren, die ein Problem bis zur Fertigstellung durchführt. Jira ermöglicht es Unternehmen, Workflows an ihre Anforderungen und Pflichten anzupassen und gleichzeitig einfach abzugleichen, wie Teams am effizientesten arbeiten.
 
@@ -87,7 +87,7 @@ E-Commerce-Teams können standardisierte Vorlagen und Checklisten für Bereitste
 
 In der Welt der Existenzgründungen wurden Betriebsstätten geboren. Unternehmen verwenden zunehmend Treffen, um ihre Prozesse zu überprüfen. Untersuchungen haben ergeben, dass die Mitarbeiter im Allgemeinen weniger Meetings bevorzugen, aber dass es für den Erfolg jedes Unternehmens und insbesondere des E-Commerce wichtig ist, dass die Menschen gelegentlich zusammenkommen, dass sie einen klaren Kommunikationsfluss und Offenheit haben.
 
-Als eine lockere Alternative zu langwierigen und starren Treffen haben sich Unternehmen aller Größen daher zu einem entspannteren Stand-up-Stil der Besprechung entwickelt. Die Kultur der Standups in jedem E-Commerce-Team ermöglicht kurze und schnelle Diskussionen, in denen alle Mitglieder die Möglichkeit erhalten, zu reden, Ziele gesetzt und starke Teambindungen aufrechterhalten werden.
+Als eine lockere Alternative zu langwierigen und starren Treffen haben sich Unternehmen aller Größen daher zu einem entspannteren Stand-up-Stil der Begegnung entwickelt. Die Kultur der Standups in jedem E-Commerce-Team ermöglicht kurze und schnelle Diskussionen, in denen alle Mitglieder die Möglichkeit erhalten, zu reden, Ziele gesetzt und starke Teambindungen aufrechterhalten werden.
 
 Die Verwendung von Standups innerhalb eines E-Commerce-Teams ist besonders bei der Bereitstellungsplanung, der Verwaltung von Lieferzielen und der Problembehebung nützlich.
 
@@ -100,4 +100,4 @@ Im Folgenden finden Sie Tipps zur Verbesserung der Kommunikation:
 - Halten Sie Ihre Nachrichten klar, verwenden Sie einfache Sprache und bleiben Sie weg vom Jargon. Auch wenn Sie von Ihren Teams erwarten können, dass sie die Terminologie des E-Commerce kennen, kann Jargon das Verständnis dennoch behindern.
 - Treffen Sie Ihr Team dort, wo es sich wohl fühlt, sei es durch herkömmliche geschriebene oder per E-Mail gesendete Videonachrichten.
 - Verwenden Sie JIRA und Confluence für Projektmanagement, Planung und Dokumentation
-- Halten Sie die Standups für das gesamte Team kurz und wirkungsvoll
+- Halten Sie die Standups für das gesamte Team kurz und wirkungsvoll.

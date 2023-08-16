@@ -1,13 +1,13 @@
 ---
-title: "Führen Sie die Konfiguration innerhalb der [!DNL Magento PHPStorm plugin]"
+title: Führen Sie die Konfiguration innerhalb der [!DNL Magento PHPStorm plugin]
 description: Befolgen Sie dieses Handbuch zur Verwendung der [!DNL Upgrade Compatibility Tool] innerhalb der [!DNL Magento PHPStorm plugin].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 8d5a0666-83c0-4249-8601-7d081acb9009
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Magento PHPStorm plugin]
 

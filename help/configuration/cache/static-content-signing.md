@@ -33,7 +33,7 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 Wenn Sie den Befehl ausführen [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) Um statische Inhalte bereitzustellen, ändert Commerce automatisch die Bereitstellungsversion.
 Dadurch wird die URL der statischen Dateien geändert und der Browser wird gezwungen, die neue Version der Dateien zu laden.
 
-Commerce ermöglicht diese Funktion standardmäßig. Adobe empfiehlt, diese Funktion weiterhin zu aktivieren, um Probleme mit Browsern zu vermeiden, die alte statische Ressourcen bereitstellen.
+Commerce ermöglicht diese Funktion standardmäßig, und Adobe empfiehlt, diese Funktion weiterhin zu aktivieren, um Probleme im Zusammenhang mit Browsern zu vermeiden, die alte statische Ressourcen bereitstellen.
 
 Die Konfiguration für diese Funktion finden Sie unter [**[!UICONTROL Stores]**> Einstellungen > Konfiguration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
 
@@ -62,7 +62,7 @@ Wenn ein Browser eine signierte Quelle vom Server anfordert, verwendet der Serve
 
 ## Nutzung während Bereitstellungen
 
-Nach dem Aktualisieren oder Ändern von statischen Ressourcen müssen Sie die `setup:static-content:deploy` -Befehl zum Bereitstellen der Version und Aktualisieren der statischen Inhalte, wodurch der Browser gezwungen wird, die aktualisierten Ressourcen zu laden.
+Nach dem Aktualisieren oder Ändern von statischen Ressourcen müssen Sie die `setup:static-content:deploy` -Befehl, um die Version bereitzustellen und die statischen Inhalte zu aktualisieren, wodurch der Browser gezwungen wird, die aktualisierten Ressourcen zu laden.
 
 Wenn Sie Code auf einem separaten Server bereitstellen und ihn mithilfe eines Code-Repositorys in die Produktion verschieben, um Ausfallzeiten zu reduzieren, müssen Sie auch die Datei hinzufügen `pub/static/deployed_version.txt` zum Repository hinzufügen.
 Diese Datei enthält die neue Version für den bereitgestellten statischen Inhalt.

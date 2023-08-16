@@ -1,7 +1,8 @@
 ---
-title: '"[!DNL Information]"'
-description: Erfahren Sie mehr über die [!UICONTROL Information] im [!DNL Site-Wide Analysis Tool], wann sie verwendet werden sollte, deren Vorteile und Best Practices.
-source-git-commit: 6cbb4b4fef5e1ccc06803b5a3af5dd9f4d0e7df8
+title: '[!DNL Information]'
+description: Informationen zum [!UICONTROL Information] im [!DNL Site-Wide Analysis Tool], wann sie verwendet werden sollte, deren Vorteile und Best Practices.
+exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 0%
@@ -14,7 +15,7 @@ Die [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] zeigt Übersicht
 
 Die [!UICONTROL General Information] -Bereich zeigt die Basisdaten der Händler-Site an, Kontaktinhaber, [!DNL Jira] Probleme (nur interne Verwendung) und Abschnitte &quot;Berichtstickets&quot;.
 
-Der Adobe Commerce-Bereich wird angezeigt [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] &amp; [!UICONTROL Integration links], [!UICONTROL Account]und [!UICONTROL Service and Components] Abschnitte.
+Der Adobe Commerce-Bereich wird angezeigt [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] &amp; [!UICONTROL Integration links], [!UICONTROL Account], und [!UICONTROL Service and Components] Abschnitte.
 
 ## Verwendungsbereiche
 

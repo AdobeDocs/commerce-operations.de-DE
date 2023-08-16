@@ -34,7 +34,7 @@ Das Hybridmodell ermöglicht es Ihnen, die Leistungsfähigkeit der Agile-Methodi
 
 - **Richtige Idee**- Dies ist eine Phase vor der Implementierung, um sicherzustellen, dass die Anforderungen, das Design und die Technologielösung strategisch konzipiert, dokumentiert und von allen Interessengruppen gemeinsam genutzt werden. Der Rückstand bei der Implementierung wird vergrößert und aufgebaut, es werden Entwicklungssperioden geplant und eine sequenzielle Strategie zum Aufbau des Produkts abgeschlossen.
 
-- **Richtige Idee**- Dies ist die Implementierungsphase, in der das Produkt iterativ erstellt, gründlich getestet und entsprechend freigegeben wird. Der erste Schritt besteht darin, den Code durch mehrere Sprints zu entwickeln. Jeder Sprint enthält die Entwicklung und Prüfung in Sprint, gefolgt von Prüfungen der Systemintegration, Leistungs- und Sicherheitstests, Anwenderakzeptanztests und Freigabetätigkeiten.
+- **Die Idee richtig machen**- Dies ist die Implementierungsphase, in der das Produkt iterativ erstellt, gründlich getestet und entsprechend freigegeben wird. Der erste Schritt besteht darin, den Code durch mehrere Sprints zu entwickeln. Jeder Sprint enthält die Entwicklung und Prüfung im Sprint, gefolgt von Prüfungen der Systemintegration, Leistungs- und Sicherheitstests, Anwenderakzeptanztests und Freigabetätigkeiten.
 
 Die Projektplanung ist eine wichtige Aktivität. Er leitet die Projektbeteiligten, Teams, Sponsoren und Projektmanager bei der Überwachung, Verwaltung und Kontrolle von Projektphasen. Sie hilft auch dabei, Ziele zu identifizieren, fehlende Fristen zu vermeiden, wichtige Aufgaben zu priorisieren, Risiken zu reduzieren und die gewünschten Ergebnisse zu erzielen.
 

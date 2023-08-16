@@ -1,13 +1,13 @@
 ---
 title: Nachrichtenbroker
-description: Führen Sie die folgenden Schritte aus, um die erforderliche Message Broker-Software zu installieren und zu konfigurieren (z. B. [!DNL RabbitMQ]) für Vor-Ort-Anlagen von Adobe Commerce und Magento Open Source.
-source-git-commit: 1233d2e1d80a3228626be3e20f1bd826b1283523
+description: Führen Sie die folgenden Schritte aus, um die erforderliche Message Broker-Software (wie [!DNL RabbitMQ]) für Vor-Ort-Anlagen von Adobe Commerce und Magento Open Source.
+exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
 
 ---
-
 
 # Nachrichtenbroker
 
@@ -39,7 +39,7 @@ Wenn Sie eine ältere Version von Ubuntu haben, [!DNL RabbitMQ] empfiehlt die In
 1. Laden Sie das .deb-Paket herunter von [rabbitmq-server](https://www.rabbitmq.com/download.html).
 1. Installieren Sie das Paket mit `dpkg`.
 
-Siehe [Installieren auf Debian/Ubuntu](https://www.rabbitmq.com/install-debian.html) für weitere Informationen.
+Siehe Abschnitt [Installieren auf Debian/Ubuntu](https://www.rabbitmq.com/install-debian.html) für weitere Informationen.
 
 ## Installieren [!DNL RabbitMQ] auf CentOS
 
@@ -57,7 +57,7 @@ Die [!DNL RabbitMQ] -Server ist in CentOS enthalten, aber die -Version ist häuf
 
 Siehe Abschnitt [!DNL RabbitMQ] installieren Seite, um die neueste unterstützte Version zu erhalten. Unterstützung für Adobe Commerce und Magento Open Source 2.3 und 2.4 [!DNL RabbitMQ] 3.8.x.
 
-Siehe [Installieren unter RPM-basiertem Linux](https://www.rabbitmq.com/install-rpm.html) für weitere Informationen.
+Siehe Abschnitt [Installieren unter RPM-basiertem Linux](https://www.rabbitmq.com/install-rpm.html) für weitere Informationen.
 
 ## Konfigurieren [!DNL RabbitMQ]
 
@@ -106,7 +106,7 @@ Wenn Sie bereits Adobe Commerce oder Magento Open Source installiert haben und e
   ),
 ```
 
-Sie können auch [!DNL RabbitMQ] Konfigurationswerte mit `bin/magento setup:config:set` command:
+Sie können auch [!DNL RabbitMQ] Konfigurationswerte mithilfe der `bin/magento setup:config:set` command:
 
 ```bash
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"

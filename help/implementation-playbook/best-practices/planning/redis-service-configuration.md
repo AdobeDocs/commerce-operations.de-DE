@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Erweiterte Redis-Cache-Implementierung
 
-Aktualisieren Sie Ihre Konfiguration, um die erweiterte Redis-Cache-Implementierung zu verwenden. `\Magento\Framework\Cache\Backend\Redis`.
+Aktualisieren Sie Ihre Konfiguration, um die erweiterte Redis-Cache-Implementierung zu verwenden `\Magento\Framework\Cache\Backend\Redis`.
 
 ### Konfigurieren von Cloud-Bereitstellungen
 
@@ -153,5 +153,5 @@ stage:
 
 ## Zusätzliche Informationen
 
-- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
+- [Redis-Seiten-Cache](../../../configuration/cache/redis-pg-cache.md)
 - [Verwenden von Redizes für die Sitzungsspeicherung](../../../configuration/cache/redis-session.md)

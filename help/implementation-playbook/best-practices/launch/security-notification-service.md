@@ -1,6 +1,6 @@
 ---
 title: Adobe Security Notification Service
-description: Erfahren Sie, wie Sie die neuesten Sicherheitsupdates zu Adobe-Produkten erhalten.
+description: Erfahren Sie, wie Sie die neuesten Sicherheitsupdates über Adobe-Produkte erhalten.
 role: User
 feature: Best Practices
 exl-id: 9d9521c3-d429-455a-ae28-f49a486eafe0
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best Practices für Sicherheitsbenachrichtigungen
 
-Sicherheit ist eine unserer obersten Prioritäten, und Adobe versteht, dass Sicherheit auch für unsere Kunden wichtig ist.
+Sicherheit ist eine unserer höchsten Prioritäten, und Adobe versteht, dass Sicherheit auch für unsere Kunden wichtig ist.
 
 Die [!DNL Adobe Security Notification Service] ist ein kostenloser E-Mail-Benachrichtigungsdienst, mit dem Adobe Informationen über die Sicherheit von Adobe-Produkten an Kunden sendet.
 
@@ -25,4 +25,4 @@ Alle
 
 ## Zusätzliche Informationen
 
-[Abonnieren](https://www.adobe.com/subscription/adbeSecurityNotifications.html) zum Adobe Security Notification Service.
+[Abonnieren](https://www.adobe.com/subscription/adbeSecurityNotifications.html) zum Adobe-Sicherheitsbenachrichtigungsdienst.

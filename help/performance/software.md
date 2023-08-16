@@ -39,7 +39,7 @@ Betriebssystemkonfigurationen und -optimierungen sind für [!DNL Commerce] im Ve
 net.ipv4.tcp_tw_reuse = 1
 ```
 
-Der Kernelparameter `net.core.somaxconn` steuert die maximale Anzahl offener Sockets, die auf Verbindungen warten. Dieser Wert kann sicher auf 1024 erhöht werden, sollte jedoch mit der Fähigkeit des Servers korreliert werden, diesen Betrag zu verarbeiten. Um diesen Kernel-Parameter zu aktivieren, legen Sie den folgenden Wert in `/etc/sysctl.conf`:
+Der Kernel-Parameter `net.core.somaxconn` steuert die maximale Anzahl offener Sockets, die auf Verbindungen warten. Dieser Wert kann sicher auf 1024 erhöht werden, sollte jedoch mit der Fähigkeit des Servers korreliert werden, diesen Betrag zu verarbeiten. Um diesen Kernel-Parameter zu aktivieren, legen Sie den folgenden Wert in `/etc/sysctl.conf`:
 
 ```text
 net.core.somaxconn = 1024
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Magento unterstützt PHP 7.3 und 7.4 vollständig. Es gibt verschiedene Faktoren, die bei der Konfiguration von PHP berücksichtigt werden müssen, um maximale Geschwindigkeit und Effizienz bei der Anforderungsverarbeitung zu erzielen.
+Magento unterstützt vollständig PHP 7.3 und 7.4. Es gibt mehrere Faktoren, die bei der Konfiguration von PHP berücksichtigt werden müssen, um maximale Geschwindigkeit und Effizienz bei der Anforderungsverarbeitung zu erreichen.
 
 ### PHP-Erweiterungen
 
@@ -72,7 +72,7 @@ Magento Open Source und Adobe Commerce:
 * ext-pdo_mysql
 * ext-simplexml
 * ext-soap
-* Textsockets
+* ext-sockets
 * ext-natrium
 * ext-tokenizer
 * ext-xmlwriter
@@ -81,7 +81,7 @@ Magento Open Source und Adobe Commerce:
 * lib-libxml
 * lib-openssl
 
-Zusätzlich erfordert Adobe Commerce Folgendes:
+Darüber hinaus erfordert Adobe Commerce Folgendes:
 
 * ext-bcmath
 * ext-ctype
@@ -100,7 +100,7 @@ Zusätzlich erfordert Adobe Commerce Folgendes:
 * ext-pdo_mysql
 * ext-simplexml
 * ext-soap
-* Textsockets
+* ext-sockets
 * ext-natrium
 * ext-spl
 * ext-tokenizer
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Berücksichtigen Sie bei der Feinabstimmung der Speicherzuordnung für opcache die Größe der Codebasis von Magento und all Ihren Erweiterungen. Das Leistungsteam von Magento verwendet zum Testen die Werte aus dem obigen Beispiel, da es genügend Platz in opcache für die durchschnittliche Anzahl der installierten Erweiterungen bereitstellt.
+Berücksichtigen Sie bei der Feinabstimmung der Speicherzuordnung für opcache die Größe der Magento-Codebasis und all Ihre Erweiterungen. Das Magento-Leistungsteam verwendet die Werte aus dem obigen Beispiel zum Testen, da es genügend Platz in opcache für die durchschnittliche Anzahl der installierten Erweiterungen bereitstellt.
 
 Wenn Sie über einen Computer mit geringem Arbeitsspeicher verfügen und nicht viele Erweiterungen oder Anpassungen installiert sind, verwenden Sie die folgenden Einstellungen, um ein ähnliches Ergebnis zu erhalten:
 
@@ -162,7 +162,7 @@ opcache.max_accelerated_files=60000
 
 #### APCU
 
-Es wird empfohlen, die [PHP APCu-Erweiterung](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) und [configuring `composer` Unterstützung](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) , um die maximale Leistung zu optimieren. Diese Erweiterung speichert Dateispeicherorte für geöffnete Dateien zwischen, wodurch die Leistung für [!DNL Commerce] Server-Aufrufe, einschließlich Seiten, Ajax-Aufrufe und Endpunkte.
+Es wird empfohlen, [PHP APCu-Erweiterung](https://getcomposer.org/doc/articles/autoloader-optimization.md#optimization-level-2-b-apcu-cache) und [configuring `composer` Unterstützung](../performance/deployment-flow.md#preprocess-dependency-injection-instructions) zur Optimierung der maximalen Leistung. Diese Erweiterung speichert Dateispeicherorte für geöffnete Dateien zwischen, wodurch die Leistung für [!DNL Commerce] Server-Aufrufe, einschließlich Seiten, Ajax-Aufrufe und Endpunkte.
 
 Bearbeiten Sie Ihre `apcu.ini` -Datei, die Folgendes enthalten soll:
 
@@ -174,7 +174,7 @@ apc.enabled = 1
 
 ## Webserver
 
-Magento unterstützt die Webserver Nginx und Apache vollständig. [!DNL Commerce] bietet Beispieldateien für empfohlene Konfigurationsdateien im  `<magento_home>/nginx.conf.sample` (Nginx) und  `<magento_home>.htaccess.sample` (Apache)-Dateien.  Das Nginx-Beispiel enthält Einstellungen für eine bessere Leistung und ist so konzipiert, dass nur wenig Neukonfiguration erforderlich ist. Zu den wichtigsten in der Beispieldatei definierten Best Practices für die Konfiguration gehören:
+Magento unterstützt vollständig die Nginx- und Apache-Webserver. [!DNL Commerce] bietet Beispieldateien für empfohlene Konfigurationsdateien im  `<magento_home>/nginx.conf.sample` Nginx und  `<magento_home>.htaccess.sample` (Apache).  Das Nginx-Beispiel enthält Einstellungen für eine bessere Leistung und ist so konzipiert, dass nur wenig Neukonfiguration erforderlich ist. Zu den wichtigsten in der Beispieldatei definierten Best Practices für die Konfiguration gehören:
 
 * Einstellungen zum Zwischenspeichern von statischen Inhalten in einem Browser
 * Speicher- und Ausführungszeiteinstellungen für PHP
@@ -210,7 +210,7 @@ Installieren [!DNL Varnish] auf einem separaten Server vor der Webstufe. Es soll
 [!DNL Commerce] verteilt eine Beispielkonfigurationsdatei für [!DNL Varnish] (Versionen 4 und 5), die alle empfohlenen Leistungseinstellungen enthält. Zu den wichtigsten Leistungsmerkmalen zählen:
 
 * **Backend-Konsistenzprüfung** fragt die [!DNL Commerce] -Server, um zu bestimmen, ob er zeitnah reagiert.
-* **Übergangmodus** ermöglicht Ihnen, [!DNL Varnish] , um ein Objekt über den TTL-Zeitraum (Time to Live) hinaus im Cache zu belassen und diesen veralteten Inhalt bereitzustellen, wenn [!DNL Commerce] ist nicht gesund oder wenn frischer Inhalt noch nicht abgerufen wurde.
+* **Übergangmodus** ermöglicht es Ihnen, [!DNL Varnish] , um ein Objekt über den TTL-Zeitraum (Time to Live) hinaus im Cache zu belassen und diesen veralteten Inhalt bereitzustellen, wenn [!DNL Commerce] ist nicht gesund oder wenn frischer Inhalt noch nicht abgerufen wurde.
 * **Saint-Modus** Blacklists ungesund [!DNL Commerce] -Server für einen konfigurierbaren Zeitraum. Ungesunde Backends können daher bei Verwendung von [!DNL Varnish] als Lastenausgleich.
 
 Siehe [Erweitert [!DNL Varnish] Konfiguration](../configuration/cache/config-varnish-advanced.md) Weitere Informationen zur Implementierung dieser Funktionen.
@@ -254,7 +254,7 @@ if (bereq.url !~ "\.(ico|css|js|jpg|jpeg|png|gif|tiff|bmp|gz|tgz|bz2|tbz|mp3|ogg
 
 Starten Sie den [!DNL Varnish] Server zum Leeren zwischengespeicherter Assets beim Aktualisieren Ihrer Site oder Bereitstellen/Aktualisieren von Assets.
 
-## Caching und Sitzungsserver
+## Caching- und Sitzungsserver
 
 Magento bietet eine Reihe von Optionen zum Speichern des Caches und der Sitzungsdaten, einschließlich Redis, Memcache, Dateisystem und Datenbank. Einige dieser Optionen werden nachfolgend beschrieben.
 

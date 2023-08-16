@@ -17,7 +17,7 @@ Es gibt einige Unterschiede in den Abhängigkeiten von Commerce für die Cloud-I
 
 Die folgenden Tabellen zeigen Versionen von Softwareabhängigkeiten von Drittanbietern, die Adobe mit bestimmten Adobe Commerce- und Magento Open Source-Versionen getestet hat.
 
-Adobe unterstützt nur die Kombination von Systemanforderungen, die in den folgenden Tabellen beschrieben wird. Beispielsweise ist 2.4.5 vollständig mit MariaDB 10.4 getestet. Adobe empfiehlt ein Upgrade auf MariaDB 10.4, bevor Sie auf 2.4.5 aktualisieren.
+Adobe unterstützt nur die in den folgenden Tabellen beschriebenen Systemanforderungen. Beispielsweise ist 2.4.5 vollständig mit MariaDB 10.4 getestet. Adobe empfiehlt ein Upgrade auf MariaDB 10.4, bevor Sie auf 2.4.5 aktualisieren.
 
 >[!BEGINTABS]
 
@@ -88,7 +88,7 @@ Die folgende Tabelle zeigt die unterstützten PHP-Erweiterungen bei der Bereitst
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-Siehe [offizielle PHP-Dokumentation](https://www.php.net/manual/en/extensions.php) für Installationsdetails.
+Siehe Abschnitt [offizielle PHP-Dokumentation](https://www.php.net/manual/en/extensions.php) für Installationsdetails.
 
 >[!ENDTABS]
 
@@ -105,9 +105,9 @@ In diesem Abschnitt wird die Unterstützung und Kompatibilität für alle andere
 Storefront und Admin:
 
 - Microsoft Edge (neueste und frühere Hauptversion)
-- Firefox (neueste und frühere Hauptversion) alle Betriebssysteme)
-- Chrome (aktuelle und vorherige Hauptversion) alle Betriebssysteme)
-- Safari (aktuelle und vorherige Hauptversion) Nur macOS)
+- Firefox (neueste und vorherige Hauptversion; beliebige Betriebssysteme)
+- Chrome (neueste und vorherige Hauptversion; jedes Betriebssystem)
+- Safari (neueste und vorherige Hauptversion, nur macOS)
 - Safari Mobile für iPad 2, iPad Mini, iPad mit Retina Display (iOS 12 oder höher), für Desktop-Storefront
 - Safari Mobile für iPhone 6 oder höher; iOS 12 oder höher für mobile Storefront
 - Chrome für Mobilgeräte (neueste und frühere Hauptversion) [Android™ 4 oder höher] für mobile Storefront)
@@ -118,7 +118,7 @@ Mail Transfer Agent (MTA) oder ein SMTP-Server. Commerce in Cloud-Infrastruktur 
 
 ### Speicher
 
-Die Aktualisierung der Anwendungen und Erweiterungen, die Sie über das Commerce Marketplace und andere Quellen erhalten, kann bis zu 2 GB RAM erfordern. Wenn Sie ein System mit weniger als 2 GB RAM verwenden, erstellen Sie eine [Datei tauschen](https://support.magento.com/hc/en-us/articles/360032980432); Andernfalls kann das Upgrade fehlschlagen.
+Die Aktualisierung der Anwendungen und Erweiterungen, die Sie über das Commerce Marketplace und andere Quellen erhalten, kann bis zu 2 GB RAM erfordern. Wenn Sie ein System mit weniger als 2 GB RAM verwenden, erstellen Sie eine [Datei tauschen](https://support.magento.com/hc/en-us/articles/360032980432); andernfalls kann das Upgrade fehlschlagen.
 
 ### Betriebssysteme (Linux x86-64)
 
@@ -146,7 +146,7 @@ Informationen zum Commerce in Cloud-Infrastrukturen finden Sie unter [Schnelle K
 
 ### Xdebug
 
-Verwenden Sie für Adobe Commerce und Magento Open Source [php_xdebug 2.5.x](https://xdebug.org/download) oder höher (nur Entwicklungsumgebungen; kann die Leistung beeinträchtigen).
+Verwenden Sie für Adobe Commerce und Magento Open Source [php_xdebug 2.5.x](https://xdebug.org/download) oder höher (nur Entwicklungsumgebungen; kann sich nachteilig auf die Leistung auswirken).
 
 Informationen zu Adobe Commerce on Cloud finden Sie unter [Xdebug konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) im _Handel mit Cloud-Infrastruktur_ Handbuch.
 

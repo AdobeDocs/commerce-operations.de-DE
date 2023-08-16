@@ -42,7 +42,7 @@ ht-degree: 0%
    kill <PID>
    ```
 
-   Wo `PID` ist die Prozess-ID, die beendet werden soll, z. B.:
+   Wo `PID` die Prozess-ID, die beendet werden soll, beispielsweise:
 
    ```bash
    kill 1234

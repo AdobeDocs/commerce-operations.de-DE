@@ -19,17 +19,17 @@ ht-degree: 0%
 Das Einrichten der Datenbankreplikation bietet die folgenden Vorteile:
 
 - Datensicherung
-- Aktiviert die Datenanalyse ohne Beeinträchtigung der Übergeordneten Datenbank
+- Aktiviert die Datenanalyse ohne Beeinträchtigung der Master-Datenbank
 - Skalierbarkeit
 
-MySQL-Datenbanken replizieren asynchron, was bedeutet, dass Slaves nicht dauerhaft verbunden werden müssen, um Updates von der Übergeordneten zu erhalten.
+MySQL-Datenbanken replizieren asynchron, was bedeutet, dass Slaves nicht dauerhaft verbunden werden müssen, um Updates vom Master zu erhalten.
 
 ## Datenbankreplikation konfigurieren
 
 Eine ausführliche Diskussion über die Datenbankreplikation fällt nicht in diesen Leitfaden. Zur Einrichtung können Sie eine Ressource wie die folgende konsultieren:
 
 - [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Einrichten der Übergeordneten Slave-Replikation in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Einrichten der Master-Slave-Replikation in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
 Commerce bietet Beispiel-MySQL-Konfigurationen für Ihre Slave-Datenbanken. Eine einfache Konfiguration wird mit dem `ResourceConnections` class `README.md`.
 
@@ -122,7 +122,7 @@ Die folgenden Informationen sind weiter gefasst und dienen nur Ihren Information
 
 ## Leistungsverbesserung
 
-Um die Leistung der Übergeordneten Slave-Replikation zu verbessern, können Sie einige Tabellen nach Slave-Instanzen filtern. Es wird empfohlen, alle temporären Tabellen mit Namensmustern zu filtern `search\_tmp\_%` die für die Katalogsuche verwendet werden.
+Um die Leistung der Master-Slave-Replikation zu verbessern, können Sie einige Tabellen auf Slave-Instanzen filtern. Es wird empfohlen, alle temporären Tabellen mit Namensmustern zu filtern `search\_tmp\_%` die für die Katalogsuche verwendet werden.
 
 Fügen Sie dazu die folgende Zeile zu Ihrer `my.cnf` Datei auf Ihren Slave-Instanzen:
 

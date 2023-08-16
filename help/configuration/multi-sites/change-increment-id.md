@@ -1,13 +1,13 @@
 ---
 title: Inkrement-ID ändern
 description: Ändern Sie die Inkrement-ID für eine Commerce-Datenbankentität.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
 
 ---
-
 
 # Inkrement-ID ändern
 
@@ -16,7 +16,7 @@ In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Commerce-
 ## Betroffene Versionen
 
 - Adobe Commerce (vor Ort): 2.x.x
-- Adobe Commerce über Cloud-Infrastruktur: 2.x.x
+- Adobe Commerce in Cloud-Infrastruktur: 2.x.x
 - MySQL: [Jede unterstützte Version](../../installation/prerequisites/database/mysql.md)
 
 ## Wann müssen Sie die Inkrement-ID ändern?
@@ -54,6 +54,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 ```
 
 >[!INFO]
+>
 Wichtig: Der neue Inkrementwert muss größer als der aktuelle sein.
 
 Nach Ausführung der folgenden Abfrage:
@@ -62,7 +63,7 @@ Nach Ausführung der folgenden Abfrage:
 ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ```
 
-Die nächste Bestellung, die im Geschäft mit `ID=1` weist die Kennung &#39;#100002000&#39; auf.
+Die nächste Bestellung, die im Geschäft mit `ID=1` die Kennung &#39;#100002000&#39;.
 
 ## Zusätzliche empfohlene Schritte für Cloud-Produktionsumgebungen
 

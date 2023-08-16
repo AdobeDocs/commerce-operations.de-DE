@@ -27,7 +27,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 {style="table-layout:auto"}
 
-## OAuth-Pfade
+## OAuth-Pfad
 
 Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Dienste** > **OAuth**.
 

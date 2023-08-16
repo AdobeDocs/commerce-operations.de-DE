@@ -32,28 +32,28 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Länder der Europäischen Union | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Top-Ziele | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Status erforderlich für | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Status auswählen lassen, wenn es für Land optional ist | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Zeitzone | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Gebietsschema | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Gewichtseinheit | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Erster Wochentag | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Wochentage | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Zugriffsbeschränkung | `general/restriction/is_active` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |
-| Beschränkungsmodus | `general/restriction/mode` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |
-| Startseite | `general/restriction/http_redirect` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |
-| Landingpage | `general/restriction/cms_page` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |
-| HTTP-Antwort | `general/restriction/http_status` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |  |
-| Speichername | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Telefonnummer speichern | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Betriebsstunden im Speicher | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Land | `general/store_information/country_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Region/Bundesland | `general/store_information/region_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Postleitzahl | `general/store_information/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Ort | `general/store_information/city` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Straße | `general/store_information/street_line1` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Straße, Adresszeile 2 | `general/store_information/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| MwSt.-Nummer | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
-| Einzelspeichermodus aktivieren | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |  |
+| Status auswählen lassen, wenn es für Land optional ist | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Zeitzone | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Gebietsschema | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Gewichtseinheit | `general/locale/weight_unit` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Erster Wochentag | `general/locale/firstday` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Wochentage | `general/locale/weekend` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Zugriffsbeschränkung | `general/restriction/is_active` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | |
+| Beschränkungsmodus | `general/restriction/mode` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | |
+| Startseite | `general/restriction/http_redirect` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | |
+| Landingpage | `general/restriction/cms_page` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | |
+| HTTP-Antwort | `general/restriction/http_status` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | |
+| Speichername | `general/store_information/name` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Telefonnummer des Store | `general/store_information/phone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Betriebsstunden im Speicher | `general/store_information/hours` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Land | `general/store_information/country_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Region/Bundesland | `general/store_information/region_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Postleitzahl | `general/store_information/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Ort | `general/store_information/city` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Straße | `general/store_information/street_line1` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Straße, Adresszeile 2 | `general/store_information/street_line2` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| MwSt. Nummer | `general/store_information/merchant_vat_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Einzelspeichermodus aktivieren | `general/single_store_mode/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 
 {style="table-layout:auto"}
 
@@ -78,7 +78,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Cookie-Lebensdauer | `web/cookie/cookie_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Nur HTTP verwenden | `web/cookie/cookie_httponly` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cookie-Einschränkungsmodus | `web/cookie/cookie_restriction` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Validieren Sie REMOTE_ADDR. | `web/session/use_remote_addr` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| REMOTE_ADDR validieren | `web/session/use_remote_addr` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Validieren von HTTP_VIA | `web/session/use_http_via` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Validieren von HTTP_X_FORWARDED_FOR | `web/session/use_http_x_forwarded_for` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Validieren von HTTP_USER_AGENT | `web/session/use_http_user_agent` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -98,18 +98,18 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Basiswährung | `currency/options/base` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardanzeigewährung | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zulässige Währungen | `currency/options/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Yahoo Finance Exchange | `TBD` |  |
-| Fixer.io | `TBD` |  |
-| Webdienst | `TBD` |  |
+| Yahoo Finance Exchange | `TBD` | |
+| Fixer.io | `TBD` | |
+| Webdienst | `TBD` | |
 | Verbindungs-Timeout in Sekunden | `currency/yahoofinance/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verbindungs-Timeout in Sekunden | `currency/fixerio/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verbindungs-Timeout in Sekunden | `currency/webservicex/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktiviert | `currency/import/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Diensleistung | `currency/import/service` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Dienst | `currency/import/service` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Startzeit | `currency/import/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Häufigkeit | `currency/import/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fehler-E-Mail-Empfänger | `currency/import/error_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Fehler-E-Mail-Absender | `currency/import/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Fehler-E-Mail-Sender | `currency/import/error_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fehler-E-Mail-Vorlage | `currency/import/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
@@ -123,7 +123,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Kontaktaufnahme aktivieren | `contact/contact/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-Mails an senden | `contact/email/recipient_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Email Sender | `contact/email/sender_email_identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Email Template | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| E-Mail-Vorlage | `contact/email/email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}
 
@@ -144,7 +144,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
-| Aktivieren des WYSIWYG-Editors | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| WYSIWYG Editor aktivieren | `cms/wysiwyg/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verwenden von statischen URLs für Medieninhalte in WYSIWYG für Katalog | `cms/wysiwyg/use_static_urls_in_catalog` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren der Hierarchiefunktion | `cms/hierarchy/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Hierarchiemetadaten aktivieren | `cms/hierarchy/metadata_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -168,7 +168,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert**.
 
-### Admin-Pfade
+### Administratorpfade
 
 Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Admin**.
 
@@ -213,7 +213,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
 | Lebensdauer erfolgreicher Nachrichten | `system/mysqlmq/successful_messages_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Nach dem Start laufende Nachrichten erneut versuchen | `system/mysqlmq/retry_inprogress_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Nach dem Start laufende Nachrichten erneut versenden | `system/mysqlmq/retry_inprogress_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Lebensdauer fehlgeschlagener Nachrichten | `system/mysqlmq/failed_messages_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Lebensdauer neuer Nachrichten | `system/mysqlmq/new_messages_lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Alle Zeitpläne erstellen | `system/cron/index/schedule_generate_every` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -245,7 +245,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Separaten Prozess verwenden | `system/cron/catalog/event/use_separate_process` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Separaten Prozess verwenden | `system/cron/default/use_separate_process` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | E-Mail-Kommunikation deaktivieren | `system/smtp/disable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Festlegen des Rückkehrpfads | `system/smtp/set_return_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Set Return-Path | `system/smtp/set_return_path` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Return-Path-E-Mail | `system/smtp/return_path_email` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Installierte Währungen | `system/currency/installed` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | HTTPS zum Abrufen des Feeds verwenden | `system/adminnotification/use_https` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -267,7 +267,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Mediendatenbank auswählen | `system/media_storage_configuration/media_database` (nicht mehr unterstützt in Commerce 2.4.3) | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktualisierungszeit der Umgebung | `system/media_storage_configuration/configuration_update_time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Speichern von Dateien, Tage | `system/magento_scheduled_import_export_log/save_days` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Aktivieren der Bereinigung des geplanten Dateiverlaufs | `system/magento_scheduled_import_export_log/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Aktivieren der Bereinigung des terminierten Dateiverlaufs | `system/magento_scheduled_import_export_log/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Startzeit | `system/magento_scheduled_import_export_log/time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Häufigkeit | `system/magento_scheduled_import_export_log/frequency` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Fehler-E-Mail-Vorlage | `system/magento_scheduled_import_export_log/error_email_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -11,11 +11,11 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Version**: 2,4,6
+**Version**: 2.4.6
 
 Diese Referenz enthält 130 Befehle, die über das `bin/magento` Befehlszeilen-Tool.
 Die anfängliche Liste wird automatisch mit der Variablen `bin/magento list` -Befehl in Adobe Commerce.
-Verwenden Sie die [&quot;Hinzufügen von CLI-Befehlen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) Anleitung zum Hinzufügen eines benutzerdefinierten CLI-Befehls.
+Verwenden Sie die [&quot;CLI-Befehle hinzufügen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) Anleitung zum Hinzufügen eines benutzerdefinierten CLI-Befehls.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Verwenden Sie die [&quot;Hinzufügen von CLI-Befehlen&quot;](https://developer.a
 
 >[!NOTE]
 >
->Diese Referenz wird aus der Anwendungs-Codebase generiert. Um den Inhalt zu ändern, können Sie den Quellcode für die entsprechende Befehlsimplementierung im [codebase](https://github.com/magento) Repository erstellen und Ihre Änderungen zur Überprüfung einreichen. Eine andere Möglichkeit besteht darin, _Feedback geben_ (finden Sie den Link oben rechts). Beitragsrichtlinien finden Sie unter [Codebeiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Diese Referenz wird aus der Anwendungs-Codebase generiert. Um den Inhalt zu ändern, können Sie den Quellcode für die entsprechende Befehlsimplementierung im [codebase](https://github.com/magento) Repository erstellen und Ihre Änderungen zur Überprüfung einreichen. Eine andere Möglichkeit ist, _Feedback geben_ (finden Sie den Link oben rechts). Beitragsrichtlinien finden Sie unter [Codebeiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -74,7 +74,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -109,7 +109,7 @@ Interaktive Fragen stellen
 
 ## `completion`
 
-Dump des Shell-Abschlussskripts
+Dump des Shell-Fertigstellungsskripts
 
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
@@ -118,7 +118,7 @@ bin/magento completion [--debug] [--] [<shell>]
 
 ### `shell`
 
-Der Shell-Typ (z. B. &quot;bash&quot;), wird der Wert der &quot;$SHELL&quot; env var verwendet, wenn dies nicht angegeben wird.
+Der Shell-Typ (z. B. &quot;bash&quot;), der Wert der env var &quot;$SHELL&quot; wird verwendet, wenn dies nicht angegeben wird.
 
 
 ### `--debug`
@@ -144,7 +144,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -223,7 +223,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -258,7 +258,7 @@ Interaktive Fragen stellen
 
 ## `list`
 
-Auflisten von Befehlen
+Listen-Befehle
 
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
@@ -307,7 +307,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -342,7 +342,7 @@ Interaktive Fragen stellen
 
 ## `admin:adobe-ims:disable`
 
-Adobe IMS-Modul deaktivieren
+Deaktivieren des Adobe IMS-Moduls
 
 ```bash
 bin/magento admin:adobe-ims:disable
@@ -364,7 +364,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -445,7 +445,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -480,7 +480,7 @@ Interaktive Fragen stellen
 
 ## `admin:adobe-ims:info`
 
-Informationen zur Konfiguration des Adobe IMS-Moduls
+Informationen zur Adobe IMS-Modulkonfiguration
 
 ```bash
 bin/magento admin:adobe-ims:info
@@ -502,7 +502,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -559,7 +559,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -632,7 +632,7 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -652,7 +652,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -696,7 +696,7 @@ bin/magento admin:user:unlock <username>
 
 ### `username`
 
-Der Benutzername des Administrators, der entsperrt werden soll
+Der Benutzername des Administrators zum Entsperren
 
 - Erforderlich
 
@@ -716,7 +716,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -782,7 +782,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -839,7 +839,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -896,7 +896,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -957,7 +957,7 @@ Datenbank-Benutzername. Muss Lesezugriff haben
 
 ### `--password`
 
-Passwort
+Kennwort
 
 - Erfordert einen Wert
 
@@ -977,7 +977,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1049,7 +1049,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1121,7 +1121,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1193,7 +1193,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1265,7 +1265,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1328,7 +1328,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1363,7 +1363,7 @@ Interaktive Fragen stellen
 
 ## `catalog:images:resize`
 
-Erstellt in der Größe angepasste Produktbilder
+Erstellt Größenangepasste Produktbilder
 
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
@@ -1399,7 +1399,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1456,7 +1456,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1520,7 +1520,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1574,7 +1574,7 @@ Konfigurationswert
 
 ### `--interactive`, `-i`
 
-Aktivieren Sie den interaktiven Modus, um alle sensiblen Variablen festzulegen
+Aktivieren Sie den interaktiven Modus zum Festlegen aller sensiblen Variablen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1609,7 +1609,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1685,7 +1685,7 @@ Sperrwert, der Änderungen im Admin verhindert (wird unter app/etc/env.php gespe
 
 ### `--lock-config`, `-c`
 
-Sperren und Freigeben von Werten für andere Installationen, Vermeidung von Änderungen im Admin (wird unter app/etc/config.php gespeichert)
+Sperren und Freigeben von Werten für andere Installationen verhindern Änderungen im Admin (wird unter app/etc/config.php gespeichert)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1713,7 +1713,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1790,7 +1790,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1861,7 +1861,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1918,7 +1918,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1987,7 +1987,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2044,7 +2044,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2094,7 +2094,7 @@ Der festzulegende Anwendungsmodus. Verfügbare Optionen sind &quot;Entwickler&qu
 
 ### `--skip-compilation`, `-s`
 
-Überspringt das Löschen und Neugenerieren von statischem Inhalt (generierter Code, vorverarbeitetes CSS und Assets in pub/static/)
+Überspringt das Löschen und Neugenerieren statischer Inhalte (generierter Code, vorverarbeitetes CSS und Assets in pub/static/)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2115,7 +2115,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2172,7 +2172,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2236,7 +2236,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2293,7 +2293,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2350,7 +2350,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2407,7 +2407,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2470,7 +2470,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2527,7 +2527,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2584,7 +2584,7 @@ Zeitschwellen der Abfrage.
 
 ### `--include-call-stack`
 
-Aufrufstapel einschließen. [true\|false]
+Include call stack. [true\|false]
 
 - Standard: `true`
 - Akzeptiert einen Wert
@@ -2605,7 +2605,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2699,7 +2699,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2756,7 +2756,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2813,7 +2813,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2870,7 +2870,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2914,7 +2914,7 @@ bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 
 ### `type`
 
-Typ des auszuführenden Tests. Verfügbare Typen: alles, Einheit, Integration, alle Integration, statisch, statisch, Integrität, veraltet, Standard
+Typ des auszuführenden Tests. Verfügbare Typen: all, unit, integration, integration, static, static, static all, integrität, veraltet, Standard
 
 - Standard: `default`
 
@@ -2942,7 +2942,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3013,7 +3013,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3090,7 +3090,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3156,7 +3156,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3222,7 +3222,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3279,7 +3279,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3336,7 +3336,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3371,7 +3371,7 @@ Interaktive Fragen stellen
 
 ## `events:create-event-provider`
 
-Erstellen Sie einen benutzerdefinierten Ereignisanbieter in Adobe I/O Events für diese Instanz. Wenn Sie die Beschriftungs- und Beschreibungsoptionen nicht angeben, müssen diese in der Datei app/etc/event-types.json des Systems definiert werden.
+Erstellen Sie einen benutzerdefinierten Ereignisanbieter unter Adobe I/O-Ereignisse für diese Instanz. Wenn Sie die Beschriftungs- und Beschreibungsoptionen nicht angeben, müssen diese in der Datei app/etc/event-types.json des Systems definiert werden.
 
 ```bash
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]
@@ -3410,7 +3410,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3467,7 +3467,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3538,7 +3538,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3595,7 +3595,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3659,7 +3659,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3716,7 +3716,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3807,7 +3807,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3871,7 +3871,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3935,7 +3935,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4011,7 +4011,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4095,7 +4095,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4169,7 +4169,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4226,7 +4226,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4292,7 +4292,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4358,7 +4358,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4426,7 +4426,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4497,7 +4497,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4563,7 +4563,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4629,7 +4629,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4664,7 +4664,7 @@ Interaktive Fragen stellen
 
 ## `indexer:status`
 
-Zeigt den Status des Indexers an
+Zeigt den Status des Indexers
 
 ```bash
 bin/magento indexer:status [<index>...]
@@ -4695,7 +4695,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4730,7 +4730,7 @@ Interaktive Fragen stellen
 
 ## `info:adminuri`
 
-Zeigt den Magento-Admin-URI an
+Zeigt den Magento Admin-URI an
 
 ```bash
 bin/magento info:adminuri
@@ -4752,7 +4752,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4809,7 +4809,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4866,7 +4866,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4930,7 +4930,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4994,7 +4994,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5058,7 +5058,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5115,7 +5115,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5150,7 +5150,7 @@ Interaktive Fragen stellen
 
 ## `info:timezone:list`
 
-Zeigt die Liste der verfügbaren Zeitzonen an
+Zeigt die Liste der verfügbaren Zeitzonen
 
 ```bash
 bin/magento info:timezone:list
@@ -5172,7 +5172,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5245,7 +5245,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5330,7 +5330,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5397,7 +5397,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5463,7 +5463,7 @@ Hinzufügen der IP-Adresse zur vorhandenen Liste
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -5483,7 +5483,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5533,7 +5533,7 @@ Zulässige IP-Adressen (verwenden Sie &quot;Keine&quot;, um die zulässige IP-Li
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -5553,7 +5553,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5603,7 +5603,7 @@ Zulässige IP-Adressen (verwenden Sie &quot;Keine&quot;, um die zulässige IP-Li
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -5623,7 +5623,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5666,7 +5666,7 @@ bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -5686,7 +5686,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5721,7 +5721,7 @@ Interaktive Fragen stellen
 
 ## `media-content:sync`
 
-Synchronisieren von Inhalten mit Assets
+Inhalt mit Assets synchronisieren
 
 ```bash
 bin/magento media-content:sync
@@ -5743,7 +5743,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5800,7 +5800,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5857,7 +5857,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5930,7 +5930,7 @@ Löschen Sie die generierten statischen Ansichtsdateien. Erforderlich, wenn die 
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -5950,7 +5950,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6023,7 +6023,7 @@ Löschen Sie die generierten statischen Ansichtsdateien. Erforderlich, wenn die 
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -6043,7 +6043,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6109,7 +6109,7 @@ Nur deaktivierte Module drucken
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -6129,7 +6129,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6164,7 +6164,7 @@ Interaktive Fragen stellen
 
 ## `module:uninstall`
 
-Deinstalliert vom Composer installierte Module
+Deinstalliert die vom Composer installierten Module
 
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
@@ -6203,7 +6203,7 @@ Mediensicherung durchführen
 
 ### `--backup-db`
 
-Führen Sie eine vollständige Datenbanksicherung durch.
+Führen Sie eine vollständige Datenbanksicherung durch
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6224,7 +6224,7 @@ Löschen Sie die generierten statischen Ansichtsdateien. Erforderlich, wenn die 
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -6244,7 +6244,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6294,7 +6294,7 @@ Nachricht bereitstellen?
 
 ### `change_log`
 
-Änderungsprotokoll?
+Änderungsprotokoll
 
 - Erforderlich
 
@@ -6324,7 +6324,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6381,7 +6381,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6438,7 +6438,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6539,7 +6539,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6574,7 +6574,7 @@ Interaktive Fragen stellen
 
 ## `remote-storage:sync`
 
-Synchronisieren Sie Mediendateien mit Remote-Speicher.
+Mediendateien mit Remote-Speicher synchronisieren.
 
 ```bash
 bin/magento remote-storage:sync
@@ -6596,7 +6596,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6660,7 +6660,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6724,7 +6724,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6781,7 +6781,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6816,7 +6816,7 @@ Interaktive Fragen stellen
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-Deaktivieren Sie reCAPTCHA für das Kennwortformular für Administratoren, die das Kennwort vergessen haben
+Deaktivieren Sie reCAPTCHA für das Formular für vergessene Administratorrechte
 
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
@@ -6838,7 +6838,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6895,7 +6895,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6965,7 +6965,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7022,7 +7022,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7092,7 +7092,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7149,14 +7149,14 @@ Mediensicherung durchführen
 
 ### `--db`
 
-Führen Sie eine vollständige Datenbanksicherung durch.
+Führen Sie eine vollständige Datenbanksicherung durch
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -7176,7 +7176,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7262,7 +7262,7 @@ Remote-Speicherendpunkt
 
 ### `--remote-storage-bucket`
 
-Remote-Speicher-Bucket
+Remote-Speicherbehälter
 
 - Erfordert einen Wert
 
@@ -7577,7 +7577,7 @@ Gibt die maximale Sitzungslebensdauer in Sekunden zurück.
 
 ### `--session-save-redis-sentinel-master`
 
-Redis Sentinel Übergeordnet
+Redis Sentinel Master
 
 - Erfordert einen Wert
 
@@ -7589,7 +7589,7 @@ Redis Sentinel-Server, durch Kommas getrennt
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifizieren Übergeordnet. Werte: false (Standard), true
+Redis Sentinel verify master. Werte: false (Standard), true
 
 - Erfordert einen Wert
 
@@ -7740,7 +7740,7 @@ Flag zum Anzeigen, ob Pub sich auf dem Stamm befindet, kann nur &quot;true&quot;
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -7760,7 +7760,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7803,7 +7803,7 @@ bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -7823,7 +7823,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7907,7 +7907,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7971,7 +7971,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8047,7 +8047,7 @@ Slave-Verbindungsname
 
 ### `--resource`
 
-Slave-Ressourcenname
+Slave Resource name
 
 - Standard: `default`
 - Akzeptiert einen Wert
@@ -8061,7 +8061,7 @@ Max. zulässige Lag-Slave-Verbindung (in Sekunden)
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -8081,7 +8081,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8162,7 +8162,7 @@ Checkout-Ressourcenname
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -8182,7 +8182,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8263,7 +8263,7 @@ Name der Verkaufsressource
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -8283,7 +8283,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8333,7 +8333,7 @@ Konvertiert alte Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -8353,7 +8353,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8388,7 +8388,7 @@ Interaktive Fragen stellen
 
 ## `setup:db:status`
 
-Prüft, ob für das DB-Schema oder die Daten eine Aktualisierung erforderlich ist
+Prüft, ob ein DB-Schema oder Daten aktualisiert werden muss
 
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -8396,7 +8396,7 @@ bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -8416,7 +8416,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8473,7 +8473,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8559,7 +8559,7 @@ Remote-Speicherendpunkt
 
 ### `--remote-storage-bucket`
 
-Remote-Speicher-Bucket
+Remote-Speicherbehälter
 
 - Erfordert einen Wert
 
@@ -8874,7 +8874,7 @@ Gibt die maximale Sitzungslebensdauer in Sekunden zurück.
 
 ### `--session-save-redis-sentinel-master`
 
-Redis Sentinel Übergeordnet
+Redis Sentinel Master
 
 - Erfordert einen Wert
 
@@ -8886,7 +8886,7 @@ Redis Sentinel-Server, durch Kommas getrennt
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifizieren Übergeordnet. Werte: false (Standard), true
+Redis Sentinel verify master. Werte: false (Standard), true
 
 - Erfordert einen Wert
 
@@ -9043,7 +9043,7 @@ URL, unter der der Store verfügbar sein soll. Veraltet, verwenden Sie config:se
 
 ### `--language`
 
-Standardsprachcode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
+Standardsprachencode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
 
 - Erfordert einen Wert
 
@@ -9085,7 +9085,7 @@ Führen Sie die Admin-Oberfläche mit SSL aus. Veraltet, verwenden Sie config:se
 
 ### `--admin-use-security-key`
 
-Gibt an, ob eine Funktion des &quot;Sicherheitsschlüssels&quot;in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key .
+Gibt an, ob eine Funktion des Typs &quot;Sicherheitsschlüssel&quot;in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key .
 
 - Erfordert einen Wert
 
@@ -9250,7 +9250,7 @@ Konvertiert alte Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.
 
 ### `--interactive`, `-i`
 
-Installation interaktiver Magentos
+Interaktive Magento-Installation
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9276,7 +9276,7 @@ Magento-Installation wird im Trockenlaufmodus ausgeführt
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -9296,7 +9296,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9367,7 +9367,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9402,7 +9402,7 @@ Interaktive Fragen stellen
 
 ## `setup:rollback`
 
-Zurücksetzen von Magento Application Codebase, Media und Datenbank
+Zurücksetzen der Magento Application Codebase, des Mediums und der Datenbank
 
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -9428,7 +9428,7 @@ Name der Datenbanksicherungsdatei in var/backup
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -9448,7 +9448,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9674,7 +9674,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9709,7 +9709,7 @@ Interaktive Fragen stellen
 
 ## `setup:store-config:set`
 
-Installiert die Store-Konfiguration. Veraltet seit 2.2.0. Verwenden Sie stattdessen config:set .
+Installiert die Store-Konfiguration. Seit 2.2.0 veraltet. Verwenden Sie stattdessen config:set
 
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -9723,7 +9723,7 @@ URL, unter der der Store verfügbar sein soll. Veraltet, verwenden Sie config:se
 
 ### `--language`
 
-Standardsprachcode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
+Standardsprachencode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
 
 - Erfordert einen Wert
 
@@ -9765,13 +9765,13 @@ Führen Sie die Admin-Oberfläche mit SSL aus. Veraltet, verwenden Sie config:se
 
 ### `--admin-use-security-key`
 
-Gibt an, ob eine Funktion des &quot;Sicherheitsschlüssels&quot;in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key .
+Gibt an, ob eine Funktion des Typs &quot;Sicherheitsschlüssel&quot;in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key .
 
 - Erfordert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -9791,7 +9791,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9834,7 +9834,7 @@ bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -9854,7 +9854,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9889,7 +9889,7 @@ Interaktive Fragen stellen
 
 ## `setup:upgrade`
 
-Aktualisieren der Magento-Anwendung, DB-Daten und des Schemas
+Magento-Anwendung, DB-Daten und Schema aktualisieren
 
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
@@ -9930,7 +9930,7 @@ Magento-Installation wird im Trockenlaufmodus ausgeführt
 
 ### `--magento-init-params`
 
-Fügen Sie zu jedem Befehl hinzu, um die Initialisierungsparameter des Magentos anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
@@ -9950,7 +9950,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10007,7 +10007,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10064,7 +10064,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10107,7 +10107,7 @@ bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--log
 
 ### `--name`
 
-Dump Name
+Dump-Name
 
 - Akzeptiert einen Wert
 
@@ -10140,7 +10140,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10183,7 +10183,7 @@ bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 
 ### `--name`
 
-Dump Name
+Dump-Name
 
 - Akzeptiert einen Wert
 
@@ -10223,7 +10223,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10287,7 +10287,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10351,7 +10351,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10432,7 +10432,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -10510,7 +10510,7 @@ Die Version der Datei &quot;Varnish&quot;
 
 ### `--output-file`
 
-Pfad zur Datei, in die vcl geschrieben werden soll
+Pfad zur Datei, die vcl schreiben soll
 
 - Erfordert einen Wert
 
@@ -10530,7 +10530,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit von Nachrichten: 1 für normale Ausgabe, 2 für ausführlichere Ausgabe und 3 für Debugging
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert

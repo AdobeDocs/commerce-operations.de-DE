@@ -1,19 +1,19 @@
 ---
 title: Referenz zu personenbezogenen Daten des Kunden (Version 1.x)
-description: Erfahren Sie in Magento 1.x mehr über Datenflüsse und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+description: Erfahren Sie mehr über Datenflüsse und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden in Magento 1.x.
+exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
-
 # Referenz zu personenbezogenen Daten des Kunden (Version 1.x)
 
 >[!NOTE]
 >
->Dies ist eines von mehreren Themen, die Kaufleuten und Entwicklern von Adobe Commerce und Magento Open Source bei der Vorbereitung auf die Einhaltung von Datenschutzbestimmungen helfen. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
+>Dies ist eines von mehreren Themen, die Kaufleuten und Entwicklern von Adobe Commerce und Magento Open Source dabei helfen, sich auf die Einhaltung von Datenschutzbestimmungen vorzubereiten. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
 
 Verwenden Sie die folgenden Datenflussdiagramme und Datenbankentitätszuordnungen als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen wie:
 
@@ -109,7 +109,7 @@ Die folgenden Spalten in der `sales_order` -Tabelle enthält Kundeninformationen
 
 #### `sales_flat_order_address` table
 
-Die `sales_flat_order_address` enthält die Kundenadresse.
+Die `sales_flat_order_address` -Tabelle enthält die Adresse des Kunden.
 
 | Spalte | Datentyp |
 | --- | --- |

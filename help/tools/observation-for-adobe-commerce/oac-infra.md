@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Die [!DNL Infra] tab
 
-Die **[!DNL Infra]** -Registerkarte isoliert Probleme und Ursachen von Infrastrukturproblemen. Weitere Informationen finden Sie in den Frames, die Sie auf der Registerkarte sehen können.
+Die **[!DNL Infra]** -Registerkarte isoliert Probleme und Ursachen von Infrastrukturproblemen. Weitere Informationen zu den Frames, die Sie auf der Registerkarte sehen können.
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
-![Service-Warnhinweise](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
+![Dienstwarnungen](../../assets/tools/observation-for-adobe-commerce/service-alerts.jpg)
 
-Die **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** Das Diagramm zeigt die von der [!DNL New Relic] Infrastrukturagent. Dadurch werden Dienstneustarts angezeigt, von denen viele mit -Implementierungen verbunden sind.
+Die **[!UICONTROL Service Alerts – Infrastructure Alerts by Application name]** zeigt die von der [!DNL New Relic] Infrastrukturagent. Dadurch werden Dienstneustarts angezeigt, von denen viele mit -Implementierungen verbunden sind.
 
 ## [!UICONTROL Inode usage by mount]
 
@@ -30,13 +30,13 @@ Die **[!UICONTROL Inode usage by mount]** Frame-Displays [!DNL inode] Verwendung
 
 ![vCPU-Stufenansicht im Zeitleistensegment GRÖSSER 2 Wochen](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
 
-Die **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** frame zeigt die vCPU-Tier-Ansicht über den ausgewählten Zeitraum von mehr als zwei Wochen an. Dieser Frame untersucht die Anzahl der vCPUs, die der [!DNL New Relic] Anwendungsname angezeigt.
+Die **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** frame zeigt die vCPU-Tier-Ansicht über den ausgewählten Zeitraum von mehr als zwei Wochen an. In diesem Frame wird die Anzahl der vCPUs untersucht, die dem [!DNL New Relic] Anwendungsname angezeigt.
 
 ## [!UICONTROL vCPU tier view over timeline]
 
 ![vCPU-Stufenansicht über Timeline](../../assets/tools/observation-for-adobe-commerce/vcpu-tier-24.jpg)
 
-Die **[!UICONTROL vCPU tier view over timeline]** frame zeigt die vCPU-Tier-Ansicht über den ausgewählten Zeitraum von mehr als 24 Stunden an. Dieser Frame untersucht die Anzahl der vCPUs, die der [!DNL New Relic] Anwendungsname angezeigt. Es werden sowohl Cluster-Uploads als auch -Downloads angezeigt.
+Die **[!UICONTROL vCPU tier view over timeline]** frame zeigt die vCPU-Tier-Ansicht über den ausgewählten Zeitraum von mehr als 24 Stunden an. In diesem Frame wird die Anzahl der vCPUs untersucht, die dem [!DNL New Relic] Anwendungsname angezeigt. Es werden sowohl Cluster-Uploads als auch -Downloads angezeigt.
 
 ## [!UICONTROL vCPU tier view over timeline BY NODE]
 

@@ -15,10 +15,10 @@ ht-degree: 0%
 Leistung ist ein großes Thema. Wenn Benutzer eine langsame oder nicht responsive Site erleben, wirkt sich dies auf die Konversion aus. Es wird empfohlen, die folgenden Schritte auszuführen, um die Leistung Ihrer Adobe Commerce bei der Implementierung der Cloud-Infrastruktur zu optimieren:
 
 - Bewertung des Problems
-- Leistung messen
+- Messen der Leistung
 - Identifizieren Sie Teile des Systems, die für die Leistungsverbesserung wichtig sind.
 - Systemteil ändern, um den Engpass zu entfernen
-- Messen Sie die Leistung nach der Änderung.
+- Messen der Leistung nach der Änderung
 - Nehmen Sie sie gegebenenfalls an oder setzen Sie sie zurück.
 
 ## Typische Leistungsprobleme

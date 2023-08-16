@@ -5,7 +5,7 @@ exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
 source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -19,9 +19,9 @@ Weitere Informationen zu Adobe Commerce- und Magento Open Source-Upgrades finden
       <td><strong>Versionshinweise und Mitteilungen</strong>
         <p>Erfahren Sie mehr über die neuesten Entwicklungen in Adobe Commerce und Magento Open Source, einschließlich Produktstrategie, Sicherheit, Fehlerbehebungen und bekannten Problemen.</p>
           <ul>
-            <li><a href="https://blog.adobe.com/">Adoben-Blog</a></li>
+            <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
-            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Sicherheitsbulletin für Adoben</a></li>
+            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Adobe-Sicherheitsbulletin</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Versionshinweise</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Lösungspartner-Portal</a></li>
@@ -42,7 +42,7 @@ Weitere Informationen zu Adobe Commerce- und Magento Open Source-Upgrades finden
         <p>Überprüfen Sie Details zu Adobe Commerce- und Magento Open Source-Versionen und -Richtlinien.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Häufig gestellte Fragen zum Ende des Supports für Adobe Commerce-Software</a></li>
-            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace Policy</a></li>
+            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace-Richtlinie</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">Häufig gestellte Fragen zur neuen Adobe Commerce-Versionsstrategie, aktualisierten Lebenszyklusrichtlinie und erweiterten Unterstützung</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Lebenszyklusrichtlinie</a></li>
             <li><a href="../../release/schedule.md">Veröffentlichungszeitplan</a></li>
@@ -61,13 +61,13 @@ Weitere Informationen zu Adobe Commerce- und Magento Open Source-Upgrades finden
     </tr>
     <tr>
       <td><strong>Upgrade der Ressourcen</strong>
-        <p>Sichern Sie sich Ihre Storefront und arbeiten Sie effizient. Bereiten Sie sich auf Ihr Adobe Commerce- oder Magento Open Source-Upgrade vor, indem Sie sich die umfangreiche technische Dokumentation von Adobe ansehen.</p>
+        <p>Sichern Sie sich Ihre Storefront und arbeiten Sie effizient. Bereiten Sie sich auf Ihr Adobe Commerce- oder Magento Open Source-Upgrade vor, indem Sie sich die ausführliche technische Dokumentation von Adobe ansehen.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Empfohlene Aktualisierungspfade</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Aufzeichnung des Workshops zum technischen Upgrade</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Zugriff auf Vorabversionen</a></li>
             <li><a href="../../release/beta.md">Übersicht über Beta-Versionen</a></li>
-            <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Abwärtskompatible Entwicklung</a></li>
+            <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Abwärtsinkompatible Entwicklung</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Abwärtskompatible Änderungen</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Checkliste für den Upgrade-Plan</a></li>
             <li><a href="../prepare/best-practices.md">Best Practices beim Upgrade</a></li>

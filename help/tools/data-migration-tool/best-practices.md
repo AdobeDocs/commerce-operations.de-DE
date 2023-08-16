@@ -17,13 +17,13 @@ Dieser Abschnitt enthält die besten Empfehlungen zur Beschleunigung und Vereinf
 
 * **Eine Datenbankkopie aus einer Magento 1-Instanz verwenden** beim Ausführen von Migrationstests. Verwenden Sie nicht die Produktionsinstanz Ihrer Magento 1 Store-Datenbank.
 
-* **Entfernen veralteter und redundanter Daten** vor der Migration aus Ihrer Magento 1-Datenbank migrieren.
+* **Entfernen veralteter und redundanter Daten** vor der Migration aus Ihrer Magento 1-Datenbank.
 
 Zu diesen Daten können Protokolle, Bestellangebote, kürzlich aufgerufene oder verglichene Produkte, Besucher, ereignisspezifische Kategorien und Werberegeln gehören.
 
 * **Befolgen Sie die [allgemeine Regeln für eine erfolgreiche Migration](migrate-data/overview.md#migration-overview)**.
 
-* So steigern Sie die Leistung: **aktivieren Sie die `direct_document_copy` option** in `config.xml` Datei:
+* Zur Leistungssteigerung **aktivieren die `direct_document_copy` option** in `config.xml` Datei:
 
   ```xml
   <direct_document_copy>1</direct_document_copy>
@@ -43,5 +43,5 @@ Adobe hat die Datenmigration auf dem folgenden System getestet:
 ## Leistungsergebnisse
 
 * Migrationszeit der Einstellungen: ca. 10 Minuten
-* Datenmigrationszeit: ~9 Stunden (alle Daten außer URL-Neuschreibungen, ca. 85 % der Gesamtdaten)
-* Schätzung der Site-Ausfallzeiten: einige Minuten Zeit, um die DNS-Einstellungen neu zu indizieren und zu ändern. Zusätzliche Zeit, die zum Aufwärmen des Seiten-Cache erforderlich ist.
+* Datenmigrationszeit: ca. 9 Stunden (alle Daten außer URL-Neuschreibungen, ca. 85 % der Gesamtdaten)
+* Schätzung der Site-Ausfallzeiten: einige Minuten, um die DNS-Einstellungen neu zu indizieren und zu ändern. Zusätzliche Zeit, die zum Aufwärmen des Seiten-Cache erforderlich ist.

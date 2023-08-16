@@ -30,17 +30,17 @@ Weitere Informationen zum Konfigurieren der Suchmaschine finden Sie in der [Benu
 So konfigurieren Sie Ihr System für die Verwendung von Elasticsearch oder OpenSearch:
 
 1. Melden Sie sich bei Admin als Administrator an.
-1. Klicken **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
+1. Klicks **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
 1. Aus dem **[!UICONTROL Search Engine]** auswählen, wählen Sie die entsprechende Version Ihrer Suchmaschine aus.
 
    In der folgenden Tabelle sind die erforderlichen Optionen zum Konfigurieren und Testen der Verbindung mit Commerce aufgeführt. Sofern Sie die Servereinstellungen Ihrer Suchmaschine nicht geändert haben, sollten die Standardeinstellungen funktionieren. Fahren Sie mit dem nächsten Schritt fort.
 
    | Option | Beschreibung |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce über Cloud-Infrastruktur: Rufen Sie diesen Wert von Ihrem Integrationssystem ab. |
-   | **[!UICONTROL Server Port]** | Geben Sie den Proxyanschluss des Webservers ein. Der Standardwert ist 9200.<br>Adobe Commerce über Cloud-Infrastruktur: Rufen Sie diesen Wert von Ihrem Integrationssystem ab. |
+   | **[!UICONTROL Server Hostname]** | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce zur Cloud-Infrastruktur: Nutzen Sie diesen Wert aus Ihrem Integrationssystem. |
+   | **[!UICONTROL Server Port]** | Geben Sie den Proxyanschluss des Webservers ein. Der Standardwert ist 9200.<br>Adobe Commerce zur Cloud-Infrastruktur: Nutzen Sie diesen Wert aus Ihrem Integrationssystem. |
    | **[!UICONTROL Index Prefix]** | Geben Sie das Suchmaschinen-Indexpräfix ein. Wenn Sie eine einzelne Instanz für mehr als eine Commerce-Installation verwenden (Staging- und Produktionsumgebungen), müssen Sie für jede Installation ein eindeutiges Präfix angeben. Andernfalls können Sie das standardmäßige Präfix magento2 verwenden. |
-   | **[!UICONTROL Enable HTTP Auth]** | Klicken **[!UICONTROL Yes]** nur dann, wenn Sie die Authentifizierung für Ihren Suchmaschinenserver aktiviert haben. Wenn ja, geben Sie in den angegebenen Feldern einen Benutzernamen und ein Kennwort ein. |
+   | **[!UICONTROL Enable HTTP Auth]** | Klicks **[!UICONTROL Yes]** nur dann, wenn Sie die Authentifizierung für Ihren Suchmaschinenserver aktiviert haben. Wenn ja, geben Sie in den angegebenen Feldern einen Benutzernamen und ein Kennwort ein. |
    | **[!UICONTROL Server Timeout]** | Geben Sie die Wartezeit (in Sekunden) ein, wenn Sie versuchen, eine Verbindung zum Elasticsearch- oder OpenSearch-Server herzustellen. |
 
 1. Klicken **[!UICONTROL Test Connection]**.
@@ -62,22 +62,22 @@ Wenn ja, versuchen Sie Folgendes:
 
 - Stellen Sie sicher, dass der Suchmaschinenserver ausgeführt wird.
 - Wenn sich der Server auf einem anderen Host als Commerce befindet, melden Sie sich beim Commerce-Server an und pingen Sie den Suchmaschinen-Host. Beheben Sie Probleme mit der Netzwerkverbindung und testen Sie die Verbindung erneut.
-- Überprüfen Sie das Befehlsfenster, in dem Sie Elasticsearch gestartet haben, oder OpenSearch auf Stacktraces und Ausnahmen. Sie müssen diese auflösen, bevor Sie fortfahren. Stellen Sie insbesondere sicher, dass Sie Ihre Suchmaschine als Benutzer mit `root` Berechtigungen.
-- Stellen Sie sicher, dass [UNIX-Firewall und SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sind beide deaktiviert oder legen Regeln fest, mit denen Ihre Suchmaschine und Ihr Commerce miteinander kommunizieren können.
+- Überprüfen Sie das Befehlsfenster, in dem Sie Elasticsearch gestartet haben, oder OpenSearch auf Stacktraces und Ausnahmen. Sie müssen diese auflösen, bevor Sie fortfahren. Stellen Sie insbesondere sicher, dass Sie Ihre Suchmaschine als Benutzer mit `root` -Berechtigungen.
+- Stellen Sie sicher, dass [UNIX-Firewall und SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sind beide deaktiviert oder legen Regeln fest, die es Ihrer Suchmaschine und Ihrem Commerce ermöglichen, miteinander zu kommunizieren.
 - Überprüfen Sie den Wert der **[!UICONTROL Server Hostname]** -Feld. Stellen Sie sicher, dass der Server verfügbar ist. Sie können stattdessen die IP-Adresse des Servers ausprobieren.
 - Verwenden Sie die `netstat -an | grep <listen-port>` -Befehl, um zu überprüfen, ob der im **[!UICONTROL Server Port]** nicht von einem anderen Prozess verwendet wird.
 
-   Um beispielsweise zu sehen, ob Ihre Suchmaschine an ihrem Standardanschluss ausgeführt wird, verwenden Sie den folgenden Befehl:
+  Um beispielsweise zu sehen, ob Ihre Suchmaschine an ihrem Standardanschluss ausgeführt wird, verwenden Sie den folgenden Befehl:
 
-   ```bash
-   netstat -an | grep 9200
-   ```
+  ```bash
+  netstat -an | grep 9200
+  ```
 
-   Wenn sie auf Port 9200 ausgeführt wird, wird sie in etwa wie folgt angezeigt:
+  Wenn sie auf Port 9200 ausgeführt wird, wird sie in etwa wie folgt angezeigt:
 
-   ```terminal
-   `tcp        0      0 :::9200            :::-         LISTEN`
-   ```
+  ```terminal
+  `tcp        0      0 :::9200            :::-         LISTEN`
+  ```
 
 ## Neuindizieren der Katalogsuche und Aktualisieren des gesamten Seiten-Cache
 
@@ -114,4 +114,4 @@ So fügen Sie eine Neuindizierung mithilfe der Befehlszeile ein:
 
    >[!INFO]
    >
-   >Im Gegensatz zum Cache werden Indexer durch einen Cron-Auftrag aktualisiert. Stellen Sie sicher [cron ist aktiviert](../cli/configure-cron-jobs.md) bevor Sie mit der Verwendung Ihrer Suchmaschine beginnen.
+   >Im Gegensatz zum Cache werden Indexer durch einen Cron-Auftrag aktualisiert. Stellen Sie sicher [cron ist aktiviert](../cli/configure-cron-jobs.md) bevor Sie Ihre Suchmaschine verwenden.

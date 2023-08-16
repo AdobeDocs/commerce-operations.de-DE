@@ -1,13 +1,13 @@
 ---
 title: Backup und Rollback des Dateisystems, der Medien und der Datenbank
 description: Führen Sie diese Schritte aus, um Ihre Adobe Commerce- oder Magento Open Source-Anwendung zu sichern und wiederherzustellen.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
 
 ---
-
 
 # Backup und Rollback des Dateisystems, der Medien und der Datenbank
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Hinweis zur Einstellung:**
->Die Sicherungsfunktion ist ab Version 2.1.16, 2.2.7 und 2.3.0 veraltet. Wir empfehlen, zusätzliche Sicherungstechnologien und Binär-Backup-Tools (wie Percona XtraBackup) zu untersuchen.
+>Die Sicherungsfunktion wird ab 2.1.16, 2.2.7 und 2.3.0 nicht mehr unterstützt. Es wird empfohlen, zusätzliche Sicherungstechnologien und Binär-Backup-Tools (wie Percona XtraBackup) zu untersuchen.
 
 ## Legen Sie die Grenze für geöffnete Dateien fest
 
@@ -46,7 +46,7 @@ Manchmal führt eine lange Abfragezeichenfolge dazu, dass der zugewiesene Arbeit
 
 ## Festlegen offener Dateien `ulimit`
 
-Es wird empfohlen, die geöffneten Dateien festzulegen [`ulimit`](https://ss64.com/bash/ulimit.html) für den Dateisystembenutzer auf den Wert `65536` oder mehr.
+Es wird empfohlen, offene Dateien festzulegen [`ulimit`](https://ss64.com/bash/ulimit.html) für den Dateisystembenutzer auf den Wert `65536` oder mehr.
 
 Sie können dies entweder über die Befehlszeile tun oder durch Bearbeiten des Shell-Skripts zu einer dauerhaften Einstellung für den Benutzer machen.
 
@@ -99,7 +99,7 @@ Der Befehl führt die folgenden Aufgaben aus:
    | `--media` | Sichern Sie das Verzeichnis &quot;pub/media&quot;. | `var/backups/<timestamp>/_filesystem_media.tgz` |
    | `--db` | Sichern Sie die Datenbank. | `var/backups/<timestamp>/_db.sql` |
 
-1. Der Speicher wird aus dem Wartungsmodus entfernt.
+1. Der Speicher wird nicht mehr im Wartungsmodus ausgeführt.
 
 Um beispielsweise das Dateisystem und die Datenbank zu sichern,
 

@@ -1,6 +1,6 @@
 ---
 title: Überblick über die Sicherheit
-description: Lesen Sie einen kurzen Überblick über die Sicherheitseinstellungen für Adobe Commerce und Magento Open Source.
+description: Lesen Sie einen kurzen Überblick über die Sicherheitseinstellungen für die Adobe Commerce- und Magento Open Source-Anwendung.
 feature: Configuration, Security
 exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947

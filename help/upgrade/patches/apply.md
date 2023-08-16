@@ -1,19 +1,19 @@
 ---
 title: Anwenden von Patches
 description: Erfahren Sie mehr über die Methoden zum Anwenden von Patches auf ein Adobe Commerce- oder Magento Open Source-Projekt.
-source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
+exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Anwenden von Patches
 
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Befehlszeile](../patches/apply.md#command-line)
 - [Verfasser](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ Sie können Patches mit einer der folgenden Methoden anwenden:
 
 >[!IMPORTANT]
 >
->Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+>Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
 
 So wenden Sie einen benutzerdefinierten Patch mit Composer an:
 
@@ -34,7 +34,7 @@ So wenden Sie einen benutzerdefinierten Patch mit Composer an:
 
 1. Bearbeiten Sie die `composer.json` und fügen Sie den folgenden Abschnitt hinzu, um Folgendes anzugeben:
    - **Modul:** *\&quot;magento/module-payment\&quot;*
-   - **Titel:** *\&quot;MAGETWO-56934: Die Checkout-Seite friert bei der Bestellung mit Authorize.net mit ungültiger Kreditkarte ein\&quot;*
+   - **Titel:** *\&quot;MAGETWO-56934: Checkout-Seite friert bei der Bestellung mit Authorize.net mit ungültiger Kreditkarte ein\&quot;*
    - **Pfad zum Patch:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
    Beispiel:

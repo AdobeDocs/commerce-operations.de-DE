@@ -1,13 +1,13 @@
 ---
 title: Beispiel mit einer freigegebenen Konfiguration
 description: Sehen Sie sich ein Beispiel an, wie Sie Einstellungen in einem Entwicklungssystem mit einer freigegebenen Konfigurationsdatei ändern.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
 
 ---
-
 
 # Beispiel mit einer freigegebenen Konfiguration
 
@@ -20,7 +20,7 @@ Diese Einstellungen sind in Admin verfügbar in **Stores** > Einstellungen > **K
 
 Sie können dasselbe Verfahren verwenden, um nicht vertrauliche, nicht systemspezifische Einstellungen in den folgenden Referenzen zu konfigurieren:
 
-- [Andere Konfigurationspfade](../reference/config-reference-general.md)
+- [Andere Konfigurationspfade - Referenz](../reference/config-reference-general.md)
 - [Referenz zu Zahlungskonfigurationspfaden](../reference/config-reference-payment.md)
 - [Referenz zu den Konfigurationspfaden für Commerce Enterprise B2B-Erweiterungen](../reference/config-reference-b2b.md)
 
@@ -34,7 +34,7 @@ Dieses Thema enthält ein Beispiel für die Änderung der Konfiguration des Prod
 
 Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 
-- Verwenden Sie die Git-Quellsteuerung
+- Verwenden Sie die Git-Quellsteuerung.
 - Das Entwicklungssystem ist in einem Git-Remote-Repository mit dem Namen `mconfig`
 - Ihre Git-Arbeitsverzweigung heißt `m2.2_deploy`
 
@@ -43,26 +43,26 @@ Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 So legen Sie die Zeitzonen- und Gewichtseinheiten in Ihrem Entwicklungssystem fest:
 
 1. Melden Sie sich beim Administrator an.
-1. Klicken **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
 1. Erweitern Sie im rechten Bereich **Gebietsschemaoptionen**.
 
    Die folgende Abbildung zeigt ein Beispiel.
 
    ![Festlegen von Gebietsschemaoptionen im Entwicklungssystem](../../assets/configuration/split-deploy-set-locale.png)
 
-1. Aus dem **Zeitzone** Liste, klicken Sie auf **GMT+00:00 (UTC)**.
+1. Aus dem **Zeitzone** Liste, klicken Sie **GMT+00:00 (UTC)**.
 1. Löschen Sie die **Systemwert verwenden** Kontrollkästchen neben dem **Gewichtseinheit** -Feld.
-1. Aus dem **Gewichtseinheit** Liste, klicken Sie auf **kgs**.
-1. Klicken **Konfiguration speichern**.
+1. Aus dem **Gewichtseinheit** Liste, klicken Sie **kgs**.
+1. Klicks **Konfiguration speichern**.
 1. Wenn Sie dazu aufgefordert werden, leeren Sie den Cache.
 
-## Schritt 2: Aktualisieren der freigegebenen Konfiguration
+## Schritt 2: Aktualisierung der freigegebenen Konfiguration
 
 Generieren Sie die freigegebene Konfigurationsdatei, `app/etc/config.php`, in Ihrem Entwicklungssystem und übertragen Sie es mithilfe der Quell-Code-Verwaltung auf Ihr Build-System, wie in diesem Abschnitt beschrieben.
 
 {{$include /help/_includes/config-save-config.md}}
 
-## Schritt 3: Build-System aktualisieren und Dateien generieren
+## Schritt 3: Aktualisieren Sie Ihr Build-System und generieren Sie Dateien.
 
 Nachdem Sie Ihre Änderungen an der freigegebenen Konfiguration an die Quell-Code-Verwaltung übertragen haben, können Sie diese Änderungen in Ihrem Build-System abrufen, Code kompilieren und statische Dateien generieren. Der letzte Schritt besteht darin, diese Änderungen in Ihr Produktionssystem zu übernehmen. Daher stimmt die Konfiguration Ihres Produktionssystems mit Ihrem Entwicklungssystem überein.
 
@@ -79,12 +79,12 @@ Der letzte Schritt im Prozess besteht darin, Ihr Produktionssystem von der Quell
 **Um sicherzustellen, dass diese Einstellungen in Admin nicht bearbeitet werden können**:
 
 1. Melden Sie sich beim Administrator an.
-1. Klicken **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
 1. Erweitern Sie im rechten Bereich **Gebietsschemaoptionen**.
 
    Die soeben festgelegten Optionen werden wie folgt angezeigt:
 
-   ![Konfigurationsoptionen in Admin nicht bearbeitbar](../../assets/configuration/split-deploy-not-editable.png)
+   ![Konfigurationsoptionen sind in Admin nicht bearbeitbar](../../assets/configuration/split-deploy-not-editable.png)
 
 >[!INFO]
 >

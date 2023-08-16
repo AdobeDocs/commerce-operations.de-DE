@@ -1,13 +1,13 @@
 ---
 title: Datenbankschema und Daten aktualisieren
 description: Führen Sie diese Schritte aus, um Ihr Adobe Commerce- oder Magento Open Source-Datenbankschema zu aktualisieren.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Datenbankschema und Daten aktualisieren
 
@@ -23,7 +23,7 @@ Jedes Mal, wenn Sie eine Aktion ausführen, die eine Änderung des Datenbanksche
 
 >[!NOTE]
 >
->A *component* kann ein Modul, Design oder Sprachpaket sein; Es spielt keine Rolle, ob die Komponente aus dem Commerce Marketplace stammt oder nicht.
+>A *component* kann ein Modul, ein Design oder ein Sprachpaket sein; es spielt keine Rolle, ob die Komponente von der Commerce Marketplace stammt oder nicht.
 
 1. Starten Sie das Upgrade:
 
@@ -31,7 +31,7 @@ Jedes Mal, wenn Sie eine Aktion ausführen, die eine Änderung des Datenbanksche
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Wo `--keep-generated` ist ein optionales Argument, das nicht aktualisiert wird [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md). Dieses optionale Argument ist zur Verwendung vorgesehen. *only* unter begrenzten Umständen von erfahrenen Systemintegratoren. Es sollte *only* in [Produktionsmodus](../../configuration/bootstrap/application-modes.md#production-mode). Es sollte *not* in [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Wo `--keep-generated` ist ein optionales Argument, das nicht aktualisiert wird [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md). Dieses optionale Argument ist zur Verwendung vorgesehen. *only* unter begrenzten Umständen von erfahrenen Systemintegratoren. Es sollte verwendet werden *only* in [Produktionsmodus](../../configuration/bootstrap/application-modes.md#production-mode). Es sollte *not* in [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Cache leeren:
 

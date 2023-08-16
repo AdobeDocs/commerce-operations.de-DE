@@ -1,21 +1,21 @@
 ---
-title: JavaScript-Bibliothek zum Datenschutz in Adoben
+title: JavaScript-Bibliothek zum Adobe Datenschutz
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Tools auf personenbezogene Daten von Adobe Commerce und Magento Open Source zugreifen und diese löschen können.
 hide: true
 hidefromtoc: true
-source-git-commit: 495dfd515759e4df507479de57118586eac14fda
+exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
 
-
-# JavaScript-Bibliothek zum Datenschutz in Adoben
+# JavaScript-Bibliothek zum Adobe Datenschutz
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-Die [JavaScript-Bibliothek zum Datenschutz in Adoben](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) ist eine Reihe von Tools, mit denen Sie einen Prozess für den Zugriff auf und das Löschen von privaten Daten erstellen können.
+Die [JavaScript-Bibliothek zum Adobe Datenschutz](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) ist eine Reihe von Tools, mit denen Sie einen Prozess für den Zugriff auf und das Löschen von privaten Daten erstellen können.
 
 Adobe Commerce- und Magento Open Source-Datenverfolgungsdienste können personenbezogene Daten speichern, die auf Datenschutzbestimmungen wie die [Die Datenschutz-Grundverordnung (DSGVO)](gdpr.md) und [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -35,7 +35,7 @@ Nachdem Sie über die -Datei verfügen, müssen Sie sie einem benutzerdefinierte
 Die AdobePrivacy JS Library bietet verschiedene Funktionen zum Verwalten von im Browser gespeicherten Identitätsdaten.
 
 `retrieveIdentities()`
-: Gibt ein Array von Identitäten aus einem Dienst zusammen mit einem Array von Identitäten zurück, die nicht im Dienst vorhanden sind
+: Gibt ein Array von Identitäten aus einem Dienst zusammen mit einem Array von Identitäten zurück, die nicht im Dienst gefunden werden
 
 `removeIdentities()`
 : Entfernt Identitäten aus dem Browser und gibt ein Array von Identitätsobjekten mit einer `isDeleteClientSide` boolesche Eigenschaft, die angibt, ob die Daten gelöscht wurden.

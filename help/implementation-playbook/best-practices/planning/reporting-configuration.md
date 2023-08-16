@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best Practices für die Berichtskonfiguration
 
-Wenn Ihr Unternehmen keine Reporting- oder dynamische Kundensegmentfunktionalität benötigt, deaktivieren Sie die [Berichtsfunktionen](https://docs.magento.com/user-guide/configuration/general/reports.html) zur Verbesserung der Store-Leistung.
+Wenn Ihr Unternehmen keine Reporting- oder dynamische Kundensegmentfunktionalität benötigt, deaktivieren Sie die [Berichtsfunktionen](https://docs.magento.com/user-guide/configuration/general/reports.html) , um die Store-Leistung zu verbessern.
 
 ## Betroffene Produkte und Versionen
 

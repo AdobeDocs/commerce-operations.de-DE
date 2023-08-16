@@ -26,11 +26,11 @@ Wo `version<n>`...`version<n>` stellt alle Hash-Algorithmusversionen dar, die f�
 a853b06f077b686f8a3af80c98acfca763cf10c0e03597c67e756f1c782d1ab0:8qnyO4H1OYIfGCUb:1:2
 ```
 
-Der erste Teil stellt den Passwort-Hash dar. Die zweite `8qnyO4H1OYIfGCUb` ist das Salz. Die letzten beiden sind die verschiedenen Hash-Algorithmen: 1 ist `SHA256` und 2 `Argon 2ID13`. Das bedeutet, dass das Kennwort des Kunden ursprünglich mit dem Hash-Wert `SHA256` und anschließend wurde der Algorithmus mit `Argon 2ID13` und der Hash wurde mit Argon neu zerschlagen.
+Der erste Teil stellt den Passwort-Hash dar. Die zweite `8qnyO4H1OYIfGCUb` ist das Salz. Die beiden letzten sind die verschiedenen Hash-Algorithmen: 1 ist `SHA256` und 2 `Argon 2ID13`. Das bedeutet, dass das Kennwort des Kunden ursprünglich mit dem Hash-Wert für `SHA256` und anschließend wurde der Algorithmus mit `Argon 2ID13` und der Hash wurde mit Argon neu zerschlagen.
 
-## Hashstrategie aktualisieren
+## Hash-Strategie aktualisieren
 
-Überlegen Sie, wie der Hash-Upgrade-Mechanismus aussieht. Angenommen, ein Kennwort wurde ursprünglich mit einem Hash-Wert `MD5` und dann wurde der Algorithmus mehrmals mit Argon 2ID13 aktualisiert. Das folgende Diagramm zeigt den Hash-Aktualisierungsfluss.
+Überlegen Sie, wie der Hash-Upgrade-Mechanismus aussieht. Angenommen, ein Kennwort wurde ursprünglich mit einem Hash-Wert für `MD5` und dann wurde der Algorithmus mehrmals mit Argon 2ID13 aktualisiert. Das folgende Diagramm zeigt den Hash-Aktualisierungsfluss.
 
 ![Hash-Upgrade-Workflow](../../assets/configuration/hash-upgrade-algorithm.png)
 
@@ -57,8 +57,8 @@ def verify(password, hash):
     return compare(restored, hash)
 ```
 
-Da Commerce alle verwendeten Passwort-Hash-Versionen zusammen mit dem Passwort-Hash speichert, können wir die gesamte Hash-Kette während der Passwortüberprüfung wiederherstellen. Der Hash-Überprüfungsmechanismus ähnelt der Hash-Upgrade-Strategie: Basierend auf den gemeinsam mit dem Kennwort-Hash gespeicherten Versionen generiert der Algorithmus Hashes aus dem bereitgestellten Kennwort und gibt das Vergleichsergebnis zwischen dem Hash-Kennwort und dem in der Datenbank gespeicherten Hash zurück.
+Da Commerce alle verwendeten Passwort-Hash-Versionen zusammen mit dem Passwort-Hash speichert, können wir die gesamte Hash-Kette während der Passwortüberprüfung wiederherstellen. Der Hash-Überprüfungsmechanismus ähnelt der Hash-Upgrade-Strategie: Basierend auf den gemeinsam mit dem Passwort-Hash gespeicherten Versionen generiert der Algorithmus Hashes aus dem bereitgestellten Kennwort und gibt das Vergleichsergebnis zwischen dem Hash-Kennwort und dem in der Datenbank gespeicherten Hash zurück.
 
 ## Implementierung
 
-Die `\Magento\Framework\Encryption\Encryptor` -Klasse ist für die Erstellung und Überprüfung des Kennwort-Hash verantwortlich. Die [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) -Befehl aktualisiert einen Kunden-Passwort-Hash auf den neuesten Hash-Algorithmus.
+Die `\Magento\Framework\Encryption\Encryptor` -Klasse ist für die Erstellung und Überprüfung von Passwort-Hash verantwortlich. Die [`bin/magento customer:hash:upgrade`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#customerhashupgrade) -Befehl aktualisiert einen Kunden-Passwort-Hash auf den neuesten Hash-Algorithmus.

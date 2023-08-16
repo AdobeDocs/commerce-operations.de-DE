@@ -26,7 +26,7 @@ Die meisten Versionen von Linux haben PHP standardmäßig installiert. Dieses Th
 php -v
 ```
 
-Wenn PHP installiert ist, wird eine Meldung ähnlich der folgenden angezeigt:
+Wenn PHP installiert ist, wird eine ähnliche Meldung wie die folgende angezeigt:
 
 ```terminal
 PHP 7.4.0 (cli) (built: Aug 14 2019 16:42:46) ( NTS )
@@ -47,7 +47,7 @@ Für Adobe Commerce und Magento Open Source ist die Installation einer Reihe von
 
 Überprüfen installierter Erweiterungen:
 
-1. Liste der installierten Module.
+1. Liste installierter Module.
 
    ```bash
    php -m
@@ -64,7 +64,7 @@ Für Adobe Commerce und Magento Open Source ist die Installation einer Reihe von
 
 >[!WARNING]
 >
->Wenn Sie PHP 7.4.20 verwenden, setzen Sie `pcre.jit=0` in `php.ini` -Datei. Dies umgibt PHP [Fehler](https://bugs.php.net/bug.php?id=81101) verhindert, dass CSS geladen wird.
+>Wenn Sie PHP 7.4.20 verwenden, setzen Sie `pcre.jit=0` in `php.ini` -Datei. Dies umgeht ein PHP [Fehler](https://bugs.php.net/bug.php?id=81101) verhindert, dass CSS geladen wird.
 
 - Legen Sie die Systemzeitzone für PHP fest. Andernfalls funktionieren Fehler wie die folgende Anzeige während der Installation und zeitbezogene Vorgänge wie Cron möglicherweise nicht:
 
@@ -105,7 +105,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationsdateien finden, 
 
 ### Suchen `php.ini` Konfigurationsdatei
 
-Führen Sie einen [`phpinfo.php` file](optional-software.md#create-phpinfophp) in Ihrem Webbrowser nach `Loaded Configuration File` wie folgt:
+Um die Webserverkonfiguration zu finden, führen Sie einen [`phpinfo.php` file](optional-software.md#create-phpinfophp) in Ihrem Webbrowser nach `Loaded Configuration File` wie folgt:
 
 ![PHP-Infoseite](../../assets/installation/config_phpini-webserver.png)
 
@@ -117,11 +117,11 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Wenn Sie nur eine `php.ini` -Datei, nehmen Sie die Änderungen in dieser Datei vor. Wenn Sie zwei `php.ini` Dateien, nehmen Sie die Änderungen in *all* Dateien. Andernfalls kann die Leistung unvorhersehbar sein.
+>Wenn Sie nur eine `php.ini` -Datei, nehmen Sie die Änderungen in dieser Datei vor. Wenn Sie zwei `php.ini` Dateien, nehmen Sie die Änderungen in *all* -Dateien. Andernfalls kann die Leistung unvorhersehbar sein.
 
 ### OPcache-Konfigurationseinstellungen suchen
 
-PHP OPcache-Einstellungen befinden sich normalerweise entweder in `php.ini` oder `opcache.ini`. Der Speicherort kann von Ihrem Betriebssystem und Ihrer PHP-Version abhängen. Die OPcache-Konfigurationsdatei verfügt möglicherweise über eine `opcache` Abschnitt oder Einstellungen, z. B. `opcache.enable`.
+PHP OPcache-Einstellungen befinden sich normalerweise entweder in `php.ini` oder `opcache.ini`. Der Speicherort kann von Ihrem Betriebssystem und Ihrer PHP-Version abhängen. Die OPcache-Konfigurationsdatei verfügt möglicherweise über eine `opcache` -Abschnitt oder Einstellungen wie `opcache.enable`.
 
 Verwenden Sie die folgenden Richtlinien, um sie zu finden:
 
@@ -143,11 +143,11 @@ Wenn Sie mehr als eine `opcache.ini`, ändern Sie alle.
 
 ## Festlegen von PHP-Optionen
 
-So legen Sie PHP-Optionen fest:
+Festlegen von PHP-Optionen:
 
 1. Öffnen Sie eine `php.ini` in einem Texteditor.
 1. Suchen Sie die Zeitzone Ihres Servers in der verfügbaren [Zeitzoneneinstellungen](https://www.php.net/manual/en/timezones.php)
-1. Suchen Sie die folgende Einstellung und heben Sie die Auskommentierung bei Bedarf auf:
+1. Suchen Sie die folgende Einstellung und heben Sie die Auskommentierung auf, falls erforderlich:
 
    ```conf
    date.timezone =
@@ -191,7 +191,7 @@ Zum Festlegen `opcache.ini` options:
    - `php.ini` (Ubuntu)
    - `/etc/php/7.2/fpm/php.ini` (nginx-Webserver (CentOS oder Ubuntu))
 
-1. Suchen `opcache.save_comments` und entfernen Sie gegebenenfalls die Kommentar.
+1. Suchen `opcache.save_comments` und entfernen Sie bei Bedarf die Kommentar.
 1. Stellen Sie sicher, dass der Wert auf `1`.
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 1. Starten Sie den Webserver neu:

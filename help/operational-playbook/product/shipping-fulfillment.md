@@ -36,7 +36,7 @@ Bevor ein Unternehmen sein Produkt versendet, muss das Unternehmen über Versand
 
 - **Kostenloser Versand**—Kostenloser Versand an Kunden kann das beste Kundenerlebnis sein, das Unternehmen jedoch möglicherweise nicht.
 
-- **Echtzeitraten**—Durch die Zusammenarbeit mit Drittversandanbietern können Einzelhändler die Versandmethode und die Kosten, die von der Reederei derzeit in Rechnung gestellt werden, veröffentlichen. Dadurch können Kunden ihre bevorzugte Versandmethode wählen.
+- **Echtzeit-Raten**—Durch die Zusammenarbeit mit Drittversandanbietern können Einzelhändler die Versandmethode und die Kosten, die von der Reederei derzeit in Rechnung gestellt werden, veröffentlichen. Dadurch können Kunden ihre bevorzugte Versandmethode wählen.
 
 - **Pauschalsatz**—Eine der beliebtesten Versandoptionen. Der Trick dabei ist, sicherzustellen, dass die Einzelhändler die Kunden nicht überlasten oder unterberechnen. Dies funktioniert auch dann, wenn die Einzelhändler über ein Standardprodukt verfügen, sich jedoch erschweren können, wenn die Einzelhändler über eine Vielzahl von Produkten verfügen.
 
@@ -46,7 +46,7 @@ Versand und Erfüllung erforderten Teamkoordinierung sowohl intern als auch exte
 
 ## Best Practices
 
-Verwenden Sie bei der Entscheidung über eine Versand- und Erfüllungsstrategie die folgenden Best Practices:
+Verwenden Sie bei der Entscheidung über eine Versandstrategie die folgenden Best Practices:
 
 - Zusammenstellen des richtigen Teams mit den richtigen Personen mit den richtigen Fähigkeiten
 - Ziele für Teams festlegen
@@ -61,7 +61,7 @@ In der folgenden Tabelle werden die Unterschiede zwischen dem Versand und der Er
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | Die Erfüllung und Lieferung dauert aufgrund der Kosten und der Menge länger. | Kann am selben Tag versandt und/oder kostenlos versandt werden |
 | Erfordert eine Verbindung zwischen dem Unternehmen und dem Client | In der Regel werden Begriffe verwendet |
-| Normalerweise sind langfristige Beziehungen | Unternehmen bietet Treuekarten an, um Kunden zu binden |
+| In der Regel sind langfristige Beziehungen | Unternehmen bietet Treuekarten an, um Kunden zu binden |
 | Prozesse können lang und komplex sein | Angebote für Promotions und Kampagnen für Kunden |
 | Strenge Regeln müssen angewendet werden | Grundlegende Regeln können angewendet werden |
 | Rückgaben können Zeit in Anspruch nehmen | Die Rückgaben können schnell erfolgen |

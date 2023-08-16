@@ -20,7 +20,7 @@ Wenn Sie Unternehmen betreiben, die über mehrere Sites für mehrere Marken auf 
 
 ![Tabelle mit den Kosten für konsolidierte Architektur](../../assets/playbooks/consolidated-architecture.svg)
 
-GRA ist:
+Die GRA lautet:
 
 - Implementierungskonzept
 - Implementierungsstrategie
@@ -42,7 +42,7 @@ GRA-Auswirkungen:
 
    - Konsolidiert Verbindungen zu Unternehmenssystemen nach Marke und/oder Region.
 
-- Entwicklung und Wartung der Anpassung
+- Wie die Anpassung entwickelt und verwaltet wird
 
    - Stellt sicher, dass Anpassungen zentralisiert und domänenspezifisch sind, sodass alle Anpassungsbemühungen aus ganzheitlicher Sicht für das Unternehmen durchgeführt werden.
 

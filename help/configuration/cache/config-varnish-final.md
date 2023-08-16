@@ -18,7 +18,7 @@ Nachdem Sie jetzt die `default.vcl` von Commerce generiert haben, können Sie ei
 
 Verwendung `curl` oder ein anderes Dienstprogramm zum Anzeigen von HTTP-Antwortheadern, wenn Sie eine Commerce-Seite in einem Webbrowser besuchen.
 
-Vergewissern Sie sich zunächst, dass Sie [Entwicklermodus](../cli/set-mode.md#change-to-developer-mode); Andernfalls werden die Kopfzeilen nicht angezeigt.
+Stellen Sie zunächst sicher, dass Sie [Entwicklermodus](../cli/set-mode.md#change-to-developer-mode); andernfalls werden die Kopfzeilen nicht angezeigt.
 
 Beispiel:
 
@@ -59,7 +59,7 @@ So verwenden Sie beispielsweise den Chrome-Inspektor:
 
    Die Seitenladezeit wird neben der Seiten-URL angezeigt. In diesem Fall beträgt die Ladezeit 5 ms. Dies hilft zu bestätigen, dass Varnish die Seite zwischengespeichert hat.
 
-1. Um HTTP-Antwortheader anzuzeigen, klicken Sie auf die Seiten-URL (in der Spalte &quot;Name&quot;).
+1. Um HTTP-Antwortheader anzuzeigen, klicken Sie auf die Seiten-URL (in der Spalte Name ).
 
    Sie können HTTP-Header anzeigen, die im Abschnitt HTTP-Antwortheader überprüfen ausführlicher beschrieben werden.
 

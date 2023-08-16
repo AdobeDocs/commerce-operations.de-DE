@@ -42,7 +42,7 @@ Die Adobe Commerce-Anwendung unterstützt keine Verschlüsselung oder Verschlüs
 
 ## Endpunkterkennung und -antwort
 
-[!DNL CrowdStrike Falcon], ein leichtgewichtiger Agent für die Erkennung und Reaktion von Endpunkten der nächsten Generation (EDR), der auf allen Endpunkten (einschließlich Servern) innerhalb von Adobe installiert ist, schützt unsere Daten und Systeme mit einer kontinuierlichen Echtzeit-Überwachung und -Erfassung, die es uns ermöglicht, Bedrohungen schnell zu identifizieren und auf sie zu reagieren.
+[!DNL CrowdStrike Falcon], ein leichtgewichtiger Endpunktdetektor- und -reaktionsagent der nächsten Generation, der auf allen Endpunkten (einschließlich Servern) innerhalb von Adobe installiert ist, schützt unsere Daten und unsere Systeme mit einer kontinuierlichen Echtzeit-Überwachung und -Erfassung, die es uns ermöglicht, Bedrohungen schnell zu identifizieren und auf sie zu reagieren.
 
 ## Penetrationstests
 
@@ -54,7 +54,7 @@ Adobe Commerce erfordert Payment Gateway-Integrationen, bei denen Kreditkartenda
 
 ## Adobe Commerce-Anwendung
 
-Adobe testet den Kernanwendungscode regelmäßig auf Sicherheitslücken. Patches für Mängel und Sicherheitsprobleme werden den Kunden zur Verfügung gestellt. Das Produktsicherheitsteam validiert Adobe Commerce-Produkte gemäß den Sicherheitsrichtlinien der OWASP-Anwendung. Zur Prüfung und Überprüfung der Einhaltung werden verschiedene Tools zur Bewertung von Sicherheitslücken und externe Anbieter verwendet. Zu den Sicherheitstools gehören:
+Adobe testet regelmäßig den Kernanwendungscode auf Sicherheitslücken. Patches für Mängel und Sicherheitsprobleme werden den Kunden zur Verfügung gestellt. Das Produktsicherheitsteam validiert Adobe Commerce-Produkte gemäß den Sicherheitsrichtlinien der OWASP-Anwendung. Zur Prüfung und Überprüfung der Einhaltung werden verschiedene Tools zur Bewertung von Sicherheitslücken und externe Anbieter verwendet. Zu den Sicherheitstools gehören:
 
 - Statische und dynamische Veracode-Prüfung
 - Quellcode-Scannen von RIPS

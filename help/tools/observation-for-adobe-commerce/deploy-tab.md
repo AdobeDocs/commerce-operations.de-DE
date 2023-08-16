@@ -1,6 +1,6 @@
 ---
 title: Die [!UICONTROL Deploy] tab
-description: Erfahren Sie mehr über die [!UICONTROL Deploy] Tab von [!DNL Observation for Adobe Commerce].
+description: Informationen zum [!UICONTROL Deploy] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
