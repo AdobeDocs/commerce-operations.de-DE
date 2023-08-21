@@ -2,9 +2,9 @@
 title: Best Practices für die Konfiguration von Produktoptionen
 description: Optimieren Sie die Adobe Commerce-Leistung, indem Sie die Anzahl der Produktoptionen einschränken.
 role: Admin
-feature: Best Practices, Catalogs
+feature: Best Practices, Catalog Management
 exl-id: 7571a163-798a-40be-b26f-4a184bceb809
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
