@@ -3,9 +3,9 @@ title: Wartungsphase der Implementierung
 description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Wartungsphase von Adobe Commerce-Projekten.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -73,5 +73,6 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Wart
 
 ### Upgrades
 
+- [Patchen im Maßstab](patching-at-scale.md)
 - [Aktualisierung von Diensten und Komponenten auf die neueste Version &#x200B;](update-services.md)
 - [Checkliste für die Aktualisierung von Adobe Commerce &#x200B;](upgrade-checklist.md)
