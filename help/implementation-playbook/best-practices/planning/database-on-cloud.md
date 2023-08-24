@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Datenbank- und Anwendungseinstellungen konfig
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Trigger werden verwendet, um Änderungen in Audit-Tabellen zu protokollieren. Ad
 - Trigger werden als Code interpretiert und MySQL stellt sie nicht vorkompiliert. Wenn Sie sich auf die Transaktionsplatzierung Ihrer Abfrage konzentrieren, wird der Mehraufwand für jede mit der Tabelle ausgeführte Abfrage zu einem Parser und Interpreter hinzugefügt.
 - Die Trigger teilen sich denselben Transaktionsraum wie die ursprünglichen Abfragen. Während diese Abfragen um Sperren in der Tabelle konkurrieren, konkurrieren die Trigger unabhängig voneinander mit Sperren in einer anderen Tabelle.
 
-Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger finden Sie unter [Verwenden von MySQL-Triggern](mysql-triggers-usage.md) in unserer Wissensdatenbank.
+Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger finden Sie unter [MySQL-Trigger](mysql-configuration.md#triggers).
 
 ## Upgrade [!DNL ECE-Tools] auf Version 2002.0.21 oder höher {#ece-tools-version}
 

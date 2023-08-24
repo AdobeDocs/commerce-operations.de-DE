@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Best Practices für die Implementierung
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
 
 - **Datenbankkonfiguration**
    - [Best Practices für die Datenbankkonfiguration für Cloud-Bereitstellungen &#x200B;](database-on-cloud.md)
-   - [MySQL-Slave-Verbindungskonfiguration &#x200B;](configure-mysql-slave-connection-on-cloud.md)
-   - [Verwendung von MySQL-Triggern](mysql-triggers-usage.md)
+   - [MySQL-&#x200B;](mysql-configuration.md)
 
 - **Dienstkonfiguration**
    - [Schnelles Einrichten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
@@ -57,17 +56,17 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
 
 In den folgenden Themen werden die Best Practices zur Leistungsoptimierung für die Konfiguration Ihres Adobe Commerce-Katalogs beschrieben, einschließlich der empfohlenen Höchstwerte für die Anzahl der Kategorien, produktwirksamen SKUs, Produktvarianten, Produktattribute und Optionen und mehr.
 
-- [Kategoriekonfiguration](category-limits.md)
-- [&#x200B; der Produktkonfiguration](product-sku-limits.md)
-- [Konfiguration von Produktvarianten](product-variations.md)
-- [Konfiguration der Produktoptionen](product-options.md)
-- [&#x200B; der Produktattributkonfiguration](product-attributes-and-options.md)
-- [Paginierungskonfiguration für Produktlisten](product-listing-pagination.md)
+- [Kategoriekonfiguration](catalog-management.md#category-limits)
+- [&#x200B; der Produktkonfiguration](catalog-management.md#product-sku-limits)
+- [Konfiguration von Produktvarianten](catalog-management.md#product-variations)
+- [Konfiguration der Produktoptionen](catalog-management.md#product-options)
+- [&#x200B; der Produktattributkonfiguration](catalog-management.md#product-attributes)
+- [Paginierungskonfiguration für Produktlisten](catalog-management.md#product-listing-pagination)
 
 ## **Vertrieb und Marketing**
 
-- [Best Practices für die Beschränkung des Warenkorbs](product-cart.md)
-- [Best Practices zum Konfigurieren von Promotions](product-cart-promotions.md)
+- [Best Practices für die Beschränkung des Warenkorbs](catalog-management.md#cart-limits)
+- [Best Practices zum Konfigurieren von Promotions](catalog-management.md#promotions)
 
 ## **Projektumfang**
 
