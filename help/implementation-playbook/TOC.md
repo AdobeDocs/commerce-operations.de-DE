@@ -2,9 +2,9 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
+source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 11%
    - Wartung {#maintenance}
       - [Übersicht](best-practices/maintenance/overview.md)
       - [Leistung des Frontend überprüfen](best-practices/maintenance/frontend-performance.md)
+      - [Optimieren der Backend-Leistung](best-practices/maintenance/backend-performance.md)
       - [Indexkonfiguration](best-practices/maintenance/indexer-configuration.md)
       - [Patchen im Maßstab](best-practices/maintenance/patching-at-scale.md)
       - [Bestellverarbeitung](best-practices/maintenance/order-processing-configuration.md)
