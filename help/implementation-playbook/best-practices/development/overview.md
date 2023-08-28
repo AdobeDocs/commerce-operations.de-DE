@@ -3,12 +3,14 @@ title: Entwicklungsphase der Implementierung
 description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Entwicklungsphase von Adobe Commerce-Projekten.
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+role: Developer
+source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
+
 
 # Entwicklungsphase
 
@@ -22,50 +24,54 @@ Die Entwicklungsphase umfasst die folgenden Aktivitäten:
 - Sprint-Überprüfung
 - Kundenabmeldung
 
+>[!TIP]
+>
+>Siehe [Allgemeine Best Practices](general.md) für Empfehlungen auf hoher Ebene zur Gesamtverwaltung des Entwicklungsprozesses.
+
 Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entwicklungsphase.
 
-## Anwendungsentwicklung
+## Code-Management
 
-### Codeüberprüfung, -zusammenführung und -test
+| Best Practice | Beschreibung |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| [Codeüberprüfung](code-review.md) | Empfohlener Validierungsprozess, um sicherzustellen, dass die implementierte Funktionalität die Anforderungen erfüllt |
+| [Composer vs. Git](code-management.md) | Bestimmen Sie, wie Sie benutzerdefinierten Code unter Berücksichtigung der Versionsverwaltung, der Code-Komplexität und der Abhängigkeitsverwaltung verteilen. |
+| [Verzweigungsstrategie](git-branching.md) | Quellcode in Git-Repositorys verwalten |
+| [GRA-Beispiele](../../architecture/global-reference/examples.md) | Grundlegendes zu den gemeinsamen Methoden zur Organisation einer [globale Referenzarchitektur](../../architecture/global-reference/overview.md) Codebasis |
 
-<!--Assets not yet integrated
-- Guidelines and standards
-  - [Development best practices](https://wiki.corp.adobe.com/x/nT4ykw)
-  - [Code Review](https://wiki.corp.adobe.com/x/qT4ykw)
-  - [Debugging Magento 2](https://wiki.corp.adobe.com/x/nz4ykw) (wiki)
--->
-- [CSS- und JS-Dateien optimieren](optimize-css-js-files.md)
-- [Best Practices für private Inhaltsbausteine](private-content-block-configuration.md)
-- [Best Practices für Erweiterungsentwickler](https://developer.adobe.com/commerce/php/best-practices/)
+## Datenbank
 
-<!--Assets not yet integrated
+| Best Practice | Beschreibung |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Tabellenänderung](modifying-core-and-third-party-tables.md) | Bestimmen, wie und wann Adobe Commerce- und Drittanbieter-Datenbanktabellen geändert werden |
 
-  - [Best practices for theme development](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=MAGPS&title=Best+Practices+for+Theme+Development)
-  - [Module basis](https://wiki.corp.adobe.com/x/kz4ykw) (wiki) — Develop custom modules
-  - [Exception Handling](https://wiki.corp.adobe.com/x/nz4ykw)
-  - [Custom code copyrights](https://wiki.corp.adobe.com/x/lj4ykw)
-- Source control and package management - wiki articles
-  - [Code management - Git vs. Composer](https://wiki.corp.adobe.com/x/pz4ykw)
-  - [Git branching strategy](https://wiki.corp.adobe.com/display/MAGPS/Git+Branching+Strategy)
-  - [Composer development](https://wiki.corp.adobe.com/x/mD4ykw)
-  - [Composer patching](https://wiki.corp.adobe.com/x/mj4ykw)
-  - [Composer project structure](https://wiki.corp.adobe.com/x/mT4ykw)
-  - [Composer tips and tricks](https://wiki.corp.adobe.com/x/lz4ykw)
--->
+## Dateioptimierung
+
+| Best Practice | Beschreibung |
+|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| [Größe des Katalogbilds ändern](catalog-image-resizing.md) | Bietet Anleitungen zur Größenanpassung von Bildern, bevor ein Store in die Produktion aufgenommen wird, um eine optimale Leistung zu gewährleisten |
+| [CSS und JS](optimize-css-js-files.md) | Zusammenführen und Minimieren von Cascading Style Sheets (CSS)- und JavaScript (JS)-Dateien aus dem Admin oder der Befehlszeile |
+| [Bilder](image-optimization.md) | Optimieren von Bildern und Verwenden Sie Fastly zur Optimierung der Reaktionszeit. |
+
+## Frontend-Entwicklung
+
+| Best Practice | Beschreibung |
+|----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| [Designentwicklung](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Beschreibt Entwicklungsmuster, um die Kompatibilität zwischen Ihrem Design, zukünftigen Versionen von Adobe Commerce und benutzerdefinierten Erweiterungen sicherzustellen |
+
+## PHP-Entwicklung
+
+| Best Practice | Beschreibung |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Ausnahmebehandlung](exception-handling.md) | Beschreibt empfohlene Methoden für die Protokollierung von Ausnahmen |
+| [Erweiterungen](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Beschreibt Entwicklungsmuster, um die Kompatibilität zwischen Ihrer Erweiterung, zukünftigen Versionen von Adobe Commerce und anderen benutzerdefinierten Erweiterungen sicherzustellen |
+| [Private Inhaltsbausteine](private-content-block-configuration.md) | Konfigurieren privater Inhaltsbausteine zur Optimierung der Storefront-Leistung |
 
 ## Plattform und Dienste
 
-- [Schnelle Verwendung für Bildoptimierung](image-optimization.md)
-
-### Lokale Einrichtung der Staging-Umgebung
-
-- [Entwicklungs-Workflow für Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
-
-## Code, Zusammenführung, Test
-
-- [Best Practices für Builds und Implementierungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
-- [Statische Inhaltsbereitstellung - Cloud](static-content-deployment.md)
-- [CSS- und JS-Dateien optimieren](optimize-css-js-files.md)
-- [Bilder für eine reaktionsfähigere Site optimieren](image-optimization.md)
-- [Fehlerbehebung - Best Practices für Adobe Commerce in der Cloud-Infrastruktur](troubleshooting.md)
-- [Erfahren Sie, wann und wie Sie Datenbanktabellen ändern](modifying-core-and-third-party-tables.md)
+| Best Practice | Beschreibung |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [Builds und Bereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsschritte von Adobe Commerce in Cloud-Infrastrukturprojekten |
+| Debugging | Systematisches und effektives Debugging des Adobe Commerce-Frameworks |
+| [Statische Inhaltsbereitstellung](static-content-deployment.md) | Vermeiden Sie Probleme mit statischem Inhalt, der nicht auf Ihrer Storefront angezeigt wird. |
+| [Fehlerbehebung](troubleshooting.md) | Beheben häufiger Probleme bei der Implementierung von Adobe Commerce |
