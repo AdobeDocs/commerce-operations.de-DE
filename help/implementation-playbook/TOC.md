@@ -2,9 +2,9 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '275'
 ht-degree: 10%
 
 ---
@@ -63,8 +63,6 @@ ht-degree: 10%
       - [Übersicht](infrastructure/cloud/overview.md)
       - [Regionen](infrastructure/cloud/regions.md)
       - [Technologien](infrastructure/cloud/technology.md)
-      - [Umgebungen](infrastructure/cloud/environments.md)
-      - [Managed Services](infrastructure/cloud/managed-services.md)
       - [Sicherheit und Einhaltung](infrastructure/cloud/security.md)
    - Leistungsoptimierung {#performance}
       - [Typische Probleme](infrastructure/performance/optimization.md)

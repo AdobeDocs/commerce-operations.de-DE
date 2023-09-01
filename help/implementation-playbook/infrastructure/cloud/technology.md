@@ -1,43 +1,25 @@
 ---
-title: Cloud-Infrastruktur-Technologien
-description: Informieren Sie sich über die von uns für Adobe Commerce verwendete Technologie zur Cloud-Infrastruktur.
+title: Cloud-Infrastrukturtechnologien
+description: Sehen Sie sich die Sammlung von Technologien an, die Adobe für Adobe Commerce in der Cloud-Infrastruktur verwendet.
 exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
+
 # Technologien
 
-Wie wir bereits erwähnt haben, nutzt Adobe Commerce eine Reihe von Softwarelösungen, um die Plattform zu unterstützen. Insbesondere haben wir im Zusammenhang mit der Produktion einige der technischen Lösungen und Funktionen von Adobe Commerce in der Cloud-Infrastruktur aufgeschlüsselt, die dazu beitragen, Ihre Produktionsumgebung optimal zu nutzen.
+Adobe Commerce in der Cloud-Infrastruktur verwendet mehrere Softwarelösungen, um die Plattform zu unterstützen. Die folgenden Themen finden Sie in der _Cloud-Anleitung_ Weitere Informationen:
 
-![Abbildung der Adobe Commerce zur Cloud-Infrastruktur-Technologie](../../../assets/playbooks/infrastructure-technology.svg)
-
-## Software-Lösungen
-
-- **Nginx**—Webserver mit PHP-FPM. Es gibt eine Instanz mit mehreren Workern.
-
-- **GlusterFS**—Dateiserver für die Verwaltung aller statischen Dateibereitstellungen und Synchronisation mit vier Ordnerbereitstellungen:
-   - `var`
-   - `pub/media`
-   - `pub/static`
-   - `app/etc`
-
-- **Redis**—Ein Server pro VM mit nur einem aktiven und den beiden anderen als Replikate.
-
-- **Elasticsearch**—Suchen Sie nach Adobe Commerce-Version 2.2.x und höher.
-
-- **OpenSearch**—Suchen Sie nach Adobe Commerce-Version 2.4.6 und höher.
-
-- **Galera**—Datenbankcluster mit einer MySQL-Datenbank von MariaDB pro Knoten mit einer automatischen Inkrementierungseinstellung von drei für eindeutige IDs in jeder Datenbank.
+- [Pro-Umgebungs-Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
+- [Architektur der Starterumgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
 
 ## Funktionen und Vorteile
 
-- Mit drei dedizierten Instanzen in einem VPC gibt es einen elastischen Lastenausgleich über drei separate Verfügbarkeitszonen oder Rechenzentren hinweg.
-
-- Höhere Ausfallsicherheit wird bei Ereignissen erzielt, die dazu führen können, dass eine einzelne Instanz fehlschlägt. Beispielsweise ein Ausfall einer gesamten AWS-Verfügbarkeitszone oder eines Rechenzentrums.
-
-- Keine Ausfallzeiten - Skalierung über den gesamten Stapel, einschließlich Web, Zwischenspeicherung, Suche und Datenbank, in weniger als 15 Minuten.
+- Drei dedizierte Instanzen in einer virtuellen privaten Cloud (VPC) mit einem elastischem Lastenausgleich über drei separate Verfügbarkeitszonen oder Rechenzentren hinweg.
+- Höhere Widerstandsfähigkeit gegen Ereignisse, die dazu führen können, dass eine einzelne Instanz fehlschlägt. Beispielsweise ein Ausfall einer gesamten AWS-Verfügbarkeitszone oder eines Rechenzentrums.
+- Keine Ausfallzeiten bei der Skalierung über den gesamten Stapel hinweg, einschließlich Web, Zwischenspeicherung, Suche und Datenbank.
