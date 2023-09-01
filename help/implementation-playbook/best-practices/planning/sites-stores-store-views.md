@@ -4,20 +4,16 @@ description: Erfahren Sie Best Practices zum Konfigurieren von Sites, Stores und
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # Best Practices zum Konfigurieren von Sites, Stores und Store-Ansichten
 
-Um eine optimale Site-Leistung zu erzielen, konfigurieren Sie maximal 50 Sites, 50 Stores und 50 Store-Ansichten für Adobe Commerce in Cloud-Infrastrukturprojekten.
-
->[!NOTE]
->
->Für Adobe Commerce on Cloud Infrastructure gelten die Best Practices speziell für die Produktionsumgebung (und möglicherweise für die Staging on Pro-Architektur, die Ressourcenbeschränkungen unterliegt), die über mehr Ressourcen verfügen als die Integrations- und Entwicklungsumgebungen. Für die Integration (Pro- und Starter-Umgebung) und Staging-Umgebungen (Starter) reduzieren Sie die Anzahl der Store-Ansichten auf weniger als 5 oder 10 (vorbehaltlich einer technischen Überprüfung).
+Für Adobe Commerce on Cloud Infrastructure gelten die Best Practices speziell für die Produktionsumgebung (und möglicherweise für die Staging on Pro-Architektur, die Ressourcenbeschränkungen unterliegt), die über mehr Ressourcen verfügen als die Integrations- und Entwicklungsumgebungen.
 
 ## Betroffene Produkte und Versionen
 

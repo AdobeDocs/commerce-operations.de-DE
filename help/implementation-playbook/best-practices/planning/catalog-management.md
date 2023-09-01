@@ -3,9 +3,9 @@ title: Best Practices für die Katalogverwaltung
 description: Erfahren Sie mehr über Empfehlungen zum Konfigurieren von Warenkorbbeschränkungen und Produktattributen, zum Auflisten von Paginierung, Optionen, Promotions und Varianten.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,7 @@ Die hier beschriebenen Best Practices für die Katalogverwaltung decken eine Rei
 
 ## Begrenzung des Warenkorbs
 
-Um eine optimale Leistung zu erzielen, sollten Sie die folgenden Richtlinien verwenden, um die Einschränkungen des Warenkorbs für Adobe Commerce und Magento Open Source zu verwalten:
-
-- Für die Versionen 2.3.x - 2.4.2 dürfen maximal 100 Produkte in einem Warenkorb enthalten sein.
-- In den Versionen 2.4.3 und höher wurde durch die Verbesserung der Funktionen für Verkaufsregeln der Warenkorb auf maximal 750 erhöht.
-
-Für die Versionen 2.3.x - 2.4.2 lautet die erwartete Leistung basierend auf den Beschränkungen für Warenkorbartikel:
-
-- Bis **100** Produkte in einem Warenkorb - das Produkt funktioniert, indem es Leistungsziele für die Reaktionszeit erfüllt.
-- Bis **300** Produkte in einem Warenkorb - das Produkt funktioniert, aber die Reaktionszeit erhöht sich über den Zielwerten.
-- Oben **500** Produkte in einem Warenkorb - der Warenkorb und die Checkout-Flüsse funktionieren nicht garantiert
+Verwenden Sie die folgenden Richtlinien, um die Einschränkungen des Warenkorbs für Adobe Commerce und Magento Open Source zu verwalten, um eine optimale Leistung zu erzielen.
 
 ### Betroffene Produkte und Versionen
 
@@ -50,20 +41,9 @@ Verwenden Sie die folgenden Strategien, um die Anzahl der Artikel im Warenkorb z
 - Aufteilen von Bestellungen in mehrere kleinere Bestellungen mit einer kleineren Anzahl von Zeilen mithilfe der [!UICONTROL Add Item by SKU] Funktion.
 - Fügen Sie nur die benutzerdefinierte Logik und die Anpassung des Warenkorbs hinzu, die zum Laden einer Liste von Elementen erforderlich sind.
 
-### Potenzielle Auswirkung auf die Leistung
-
-Wenn Sie mehr als die empfohlene maximale Anzahl von Produkten im Warenkorb haben, kann sich dies auf die Site-Leistung wie folgt auswirken:
-
-- Erhöhte Reaktionszeit für Datenabruffunktionen, Validierung von Warenkorbelementen, Überprüfung der Anwendung von Preisregeln sowie Steuer- und Gesamtberechnungen.
-- Verbesserte Reaktionszeit für Minicart-Rendering, einschließlich Darstellung von Warenkorbansichten, Checkout-Fluss und Ausführung.
-- Erhöhte Ladezeit für alle Seiten der Site, auf denen das Minicart vorhanden ist.
-
 ## Kategorienbeschränkungen
 
-Konfigurieren Sie für optimale Leistung nicht mehr als die maximal empfohlene Anzahl von Kategorien für Adobe Commerce-Sites.
-
-- Konfigurieren Sie für Adobe Commerce-Version 2.4.2 und höher maximal 6000 Kategorien.
-- Konfigurieren Sie für die Adobe Commerce-Versionen 2.3.x und 2.4.0 bis 2.4.1-p1 maximal 3000 Kategorien.
+Die Konfiguration einer großen Anzahl von Kategorien kann sich auf die Leistung auswirken.
 
 ### Betroffene Produkte und Versionen
 
@@ -80,25 +60,9 @@ Verwenden Sie die folgenden Strategien, um die Anzahl der Kategorien zu reduzier
 - Inaktive Kategorien entfernen
 - Optimieren der Katalogtiefe in der Navigation
 
-### Potenzielle Auswirkung auf die Leistung
-
-Eine höhere als die empfohlene maximale Anzahl von Kategorien kann die Site-Leistung auf folgende Weise beeinflussen:
-
-- Deutliche Steigerung der Reaktionszeit für nicht zwischengespeicherte Katalogseiten
-- Lange Ausführung und Timeouts bei der Verwaltung von Kategorien über den Administrator
-- Vergrößerung der entsprechenden Datenbanktabellen
-- Größere Indextabellen erhöhen die Zeit, die zum Ausführen von Indizierungsvorgängen für die `[category/product relation index\]`
-- Erhöhte Verarbeitungszeit zum Abschließen der Kategoriestruktur, des Menüabrufs und der Kategorieregelverwaltung
-
 ## Produktattribute
 
-- Für eine optimale Leistung sollten Sie nur die maximal empfohlene Anzahl von Produktattributen oder Produktattributoptionen konfigurieren.
-
-- **Produktattribute**—
-   - Konfigurieren Sie für die Adobe Commerce-Versionen 2.3.x und 2.4.0 bis 2.4.1-p1 maximal 500 Attribute.
-   - Für Adobe Commerce-Version 2.4.2 und höher konfigurieren Sie bis zu 1500 Produktattribute
-- **Produktattributoptionen**-Konfigurieren Sie bis zu 100 Attributoptionen für jedes Attribut.
-- **Produktattributsätze**-Konfigurieren Sie maximal 1000 Attributsätze.
+Das Konfigurieren zu vieler Produktattribute oder Produktattributoptionen kann sich auf die Leistung auswirken.
 
 >[!NOTE]
 >
@@ -170,7 +134,7 @@ Viele Konfigurationen **Attributoptionen** kann die Site-Leistung wie folgt beei
 
 ## Produktoptionen
 
-Konfigurieren Sie für optimale Leistung maximal 100 Produktoptionen pro Produkt.
+Die Konfiguration zu vieler Produktoptionen pro Produkt kann sich auf die Leistung auswirken.
 
 ### Betroffene Produkte und Versionen
 
@@ -181,7 +145,7 @@ Konfigurieren Sie für optimale Leistung maximal 100 Produktoptionen pro Produkt
 
 ### Anzahl der Optionen reduzieren
 
-Verwenden Sie die folgenden Strategien, um die Anzahl der Produktoptionen zu reduzieren, um eine optimale Site-Leistung zu erzielen:
+Verwenden Sie die folgenden Strategien, um die Anzahl der Produktoptionen pro Produkt zu reduzieren:
 
 - Konfigurieren Sie komplexe Produkte und benutzerdefinierte Optionen als Quelle für Produktvarianten.
 - Verwenden Sie anstelle der Erstellung globaler Produktvorlagen und Optionscontainer, die für alle Produkte gelten, Attributsätze, um spezifische Produktvorlagen mit Zielattributen und Optionen zu erstellen.
@@ -202,9 +166,7 @@ Die oben aufgeführten Steigerungen können sich auf die Site-Leistung wie folgt
 
 ## Paginierung von Produktlisten
 
-Um die beste Leistung zu erzielen, zeigen Sie maximal 48 Produkte pro Seite an.
-
-Sie können Adobe Commerce so konfigurieren, dass Käufer alle Kategorieprodukte auf einer Seite anzeigen können. Wenn die Anzahl der Kategorieprodukte deutlich über 48 Produkte liegt, aktualisieren Sie die Katalogkonfiguration für die Steuerelemente für die Storefront-Paginierung.
+Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
@@ -215,24 +177,13 @@ Sie können Adobe Commerce so konfigurieren, dass Käufer alle Kategorieprodukte
 
 ### Aktualisieren der Produktlistenkonfiguration
 
-Wenn Sie mehr als 48 Produkte in einer Kategorie haben, aktualisieren Sie die Storefront-Katalogkonfiguration, um die Option **Alle Produkte pro Seite zulassen**.
+Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Konfiguration des Storefront-Katalogs, um die Option zu deaktivieren, **Alle Produkte pro Seite zulassen**.
 
 Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Steuerelemente für die Storefront-Paginierung, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Paginierungssteuerelemente konfigurieren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Produkt-SKU-Beschränkungen
 
-Um die Leistung zu maximieren, wird für effektive Bestandseinheiten (SKUs) eine maximale Anzahl von 242 Millionen empfohlen. Diese effektive Produkt-SKU-Obergrenze wird wie folgt berechnet:
-
-```text
-Effective SKU = N[SKUs] x N[Stores] x N[Customer groups]
-```
-
-Dabei gilt:
-
-- N steht für die Anzahl der Artikel für diese Kategorie
-- Kundengruppen enthalten freigegebene Kataloge, da sie eine zusätzliche Kundengruppe erstellen.
-
-Wenn mehr als die maximale Anzahl effektiver SKUs vorhanden ist, wird der Abruf von Produktdaten verlangsamt und die Zeit zum Abschließen von Vorgängen oder Indizierungen im Admin-Bedienfeld erhöht.
+Die Konfiguration zu vieler Produkt-SKUs kann die Leistung beeinträchtigen, indem sie das Abrufen von Produktdaten verlangsamt und die Zeit für den Abschluss von Admin-Vorgängen oder -Indizierungen verlängert.
 
 ### Betroffene Produkte und Versionen
 
@@ -246,7 +197,7 @@ Wenn mehr als die maximale Anzahl effektiver SKUs vorhanden ist, wird der Abruf 
 Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte zu reduzieren:
 
 - Minimieren von Multiplikatoren—
-   - Durch die Konsolidierung von Websites wird der Multiplikator reduziert. Wenn Sie 50.000 SKUs, zehn Websites und zehn Kundengruppen haben, beträgt die effektive Anzahl der SKUs 5 Millionen. Wenn fünf Kundengruppen entfernt werden, werden die effektiven SKUs auf 2,5 Millionen reduziert.
+   - Durch die Konsolidierung von Websites wird der Multiplikator reduziert.
    - Verwenden Sie alternative Produktfunktionen für benutzerdefinierte Preise, um freigegebene Katalog- und Kundengruppen-Multiplikatoren zu ersetzen.
    - Sowohl Kundengruppen als auch freigegebene Kataloge fungieren als Multiplikatoren für die Anzahl der effektiven SKUs in einem Geschäft.
 - Neustrukturierung des Katalogs—
@@ -259,7 +210,7 @@ Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte zu reduzieren
 
 ## Produktvarianten
 
-Konfigurieren Sie für optimale Leistung maximal 50 Varianten pro Produkt.
+Die Konfiguration zu vieler Varianten pro Produkt kann sich auf die Leistung auswirken.
 
 ### Betroffene Produkte und Versionen
 
@@ -289,11 +240,10 @@ Eine Überschreitung der empfohlenen Anzahl von Produktvarianten kann die Site-P
 
 Befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in einem Warenkorb zu konfigurieren:
 
-- **Verkaufsregeln (Regeln für den Warenkorbpreis)**-Konfigurieren Sie nicht mehr als 1000 Warenkorbpreisregeln für alle Websites.
+- **Verkaufsregeln (Regeln für den Warenkorbpreis)**
    - Nicht verwendete Regeln verwalten und entfernen
    - Fügen Sie strenge Regelbedingungen (wie Attribut- oder Kategoriefilter) hinzu, um eine optimale Übereinstimmung zu erzielen.
-- **Coupons**—
-   - Stellen Sie sicher, dass die Gesamtzahl der Gutscheine in der Datenbank unter 250.000 liegt.
+- **Coupons**
    - Entfernen Sie nicht verwendete und abgelaufene Gutscheine.
    - Generieren Sie nur die Anzahl der Coupons, die zur Erfüllung der Kampagnenanforderungen erforderlich sind.
 
@@ -312,4 +262,4 @@ Wenn Sie mehr als die empfohlene maximale Anzahl von Regeln oder Gutscheinen fü
 - Die Zeit zum Laden und Rendern des Minicarts wurde verlängert.
 - Die Zeit zum Rendern der Warenkorbseite wurde verlängert.
 - Erhöhte Zeit zum Rendern der **Gesamt** auf der Checkout-Seite.
-- Das Anwenden von Coupons kann mehr als 2 Sekunden dauern.
+
