@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Optimierung der Backend-Leistung von Ad
 badge: label="Von objectsource unterstützt" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 2416357d8cacb5627fd24f92b16c2d9839f91082
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Weitere Informationen zum Testen von Adobe Commerce-Projekten:
 
 ### Ermitteln und Beheben von Leistungsproblemen
 
-Beheben Sie Leistungsprobleme, indem Sie verschiedene Tools wie New Relic und Observation for Adobe Commerce verwenden, um Engpässe zu erkennen und Commerce-Sites effektiv zu optimieren. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) ist in Adobe Commerce in der Cloud-Infrastruktur enthalten und [Beobachtung für Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) ist sowohl für Cloud- als auch für On-Premise-Bereitstellungen enthalten.
+Beheben Sie Leistungsprobleme, indem Sie verschiedene Tools wie New Relic und Observation for Adobe Commerce verwenden, um Engpässe zu erkennen und Commerce-Sites effektiv zu optimieren. [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) ist in Adobe Commerce in der Cloud-Infrastruktur enthalten und [Beobachtung für Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md) ist sowohl für Cloud- als auch für On-Premise-Bereitstellungen enthalten.
 
 Verwenden Sie diese Tools, um die Site-Leistung zu analysieren und Leistungsprobleme im Zusammenhang mit Folgendem zu identifizieren:
 

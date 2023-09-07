@@ -2,9 +2,9 @@
 title: Upgrade der Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung der Aktualisierung für Adobe Commerce-Projekte.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -84,4 +84,4 @@ Sprechen Sie schließlich mit Ihrem Team, um die gelernten Erfahrungen und Falls
 
 Überprüfen Sie nach dem Start Ihrer Site die Analysedaten, die Google-Suchkonsole und andere Ressourcen, um sicherzustellen, dass keine unerwarteten Probleme auftreten und alles erwartungsgemäß funktioniert.
 
-Es ist immer eine gute Idee, die Leistung durch gut entwickelte Überwachungstools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Wählen Sie daher unbedingt eines aus, das sich gut mit Ihrer Organisation verbindet. Wir empfehlen Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, die Vorteile von Diensten wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) zur Überwachung der Site-Leistung.
+Es ist immer eine gute Idee, die Leistung durch gut entwickelte Überwachungstools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Wählen Sie daher unbedingt eines aus, das sich gut mit Ihrer Organisation verbindet. Wir empfehlen Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, die Vorteile von Diensten wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) zur Überwachung der Site-Leistung.

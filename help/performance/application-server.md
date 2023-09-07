@@ -3,7 +3,7 @@ title: Anwendungsserver für GraphQL-APIs
 description: Befolgen Sie diese Anweisungen zum Aktivieren des Anwendungsservers für GraphQL-APIs in Ihrer Adobe Commerce-Bereitstellung.
 badgeCoreBeta: label="2.4.7-beta1" type="informative"
 exl-id: 346cc722-131e-4ed0-bc8c-23c3a1e58258
-source-git-commit: f085c0a77fe59ff3b2d76abbd6965b6bc8ee69db
+source-git-commit: 4f83a2181f6a7880b77dc07729574365def71f1d
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Führen Sie diese beiden Aufgaben aus, bevor Sie die `ApplicationServer` -Modul:
 
 ### Nginx konfigurieren
 
-Ihre spezifische Commerce-Bereitstellung bestimmt, wie Nginx konfiguriert wird. Im Allgemeinen erhält die Nginx-Konfigurationsdatei standardmäßig den Namen `nginx.conf` und wird in einem dieser Verzeichnisse platziert: `/usr/local/nginx/conf`, `/etc/nginx`oder `/usr/local/etc/nginx`. Siehe [Anfängerhandbuch](http://nginx.org/en/docs/beginners_guide.html) für weitere Informationen zur Konfiguration von Nginx.
+Ihre spezifische Commerce-Bereitstellung bestimmt, wie Nginx konfiguriert wird. Im Allgemeinen erhält die Nginx-Konfigurationsdatei standardmäßig den Namen `nginx.conf` und wird in einem dieser Verzeichnisse platziert: `/usr/local/nginx/conf`, `/etc/nginx`oder `/usr/local/etc/nginx`. Siehe [Anfängerhandbuch](https://nginx.org/en/docs/beginners_guide.html) für weitere Informationen zur Konfiguration von Nginx.
 
 Beispiel-Nginx-Konfiguration:
 
