@@ -4,9 +4,9 @@ description: Erfahren Sie, wie die XML-Systemdatei die Konfiguration der Commerc
 feature: Configuration, System
 badge: label="Beitrag von David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`-Tag kann die folgenden Attribute aufweisen:
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | Definiert die Kennung, mit der auf den Abschnitt verwiesen wird. | `typeId` | erforderlich |
 | `translate` | Definiert das zu übersetzende Feld. Bereitstellung `label` um den Titel übersetzbar zu machen. | `string` | optional |
-| `type` | Definiert den Eingabetyp des gerenderten HTML-Elements - standardmäßig `text`. | `string` | optional |
 | `sortOrder` | Definiert die Sortierreihenfolge des Abschnitts. Hohe Zahlen führen dazu, dass der Abschnitt am Ende der Seite platziert wird, niedrige Zahlen drücken den Abschnitt an den Anfang. | `float` | optional |
 | `class` | Fügt dem gerenderten tab-HTML-Element eine definierte CSS-Klasse hinzu. | `string` | optional |
 
