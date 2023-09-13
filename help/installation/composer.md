@@ -2,16 +2,18 @@
 title: Schnellstart für die Installation vor Ort
 description: Führen Sie diese Schritte aus, um Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur zu installieren.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
 # Schnellstart für die Installation vor Ort
 
-Wir verwenden [Verfasser](https://getcomposer.org/) um Adobe Commerce- und Magento Open Source-Komponenten und deren Abhängigkeiten zu verwalten. Die Verwendung von Composer zum Abrufen des Adobe Commerce- und Magento Open Source-Metapakets bietet die folgenden Vorteile:
+Die Anweisungen auf dieser Seite beschreiben, wie Sie Adobe Commerce und Magento Open Source installieren können auf [selbstständig gehostet](../implementation-playbook/infrastructure/self-hosting/overview.md) Infrastruktur. Eine Anleitung zum Aktualisieren einer vorhandenen Installation finden Sie im Abschnitt [_Upgrade-Handbuch_](../upgrade/overview.md).
+
+Adobe verwendet [Verfasser](https://getcomposer.org/) um Adobe Commerce- und Magento Open Source-Komponenten und deren Abhängigkeiten zu verwalten. Die Verwendung von Composer zum Abrufen des Adobe Commerce- und Magento Open Source-Metapakets bietet die folgenden Vorteile:
 
 - Wiederverwenden von Bibliotheken von Drittanbietern ohne Bundle mit Quellcode
 - Reduzieren von Erweiterungskonflikten und Kompatibilitätsproblemen durch Verwendung einer komponentenbasierten Architektur mit robuster Abhängigkeitsverwaltung
@@ -33,7 +35,7 @@ Bevor Sie fortfahren, müssen Sie Folgendes tun:
 
 ## Als Dateisysteminhaber anmelden
 
-Erfahren Sie mehr über Eigentum, Berechtigungen und den Eigentümer des Dateisystems in unserer [Überblick über das Thema &quot;Eigentum und Berechtigungen&quot;](prerequisites/file-system/overview.md).
+Erfahren Sie mehr über Eigentümer, Berechtigungen und den Eigentümer des Dateisystems in der [Überblick über das Thema &quot;Eigentum und Berechtigungen&quot;](prerequisites/file-system/overview.md).
 
 So wechseln Sie zum Dateisysteminhaber:
 
@@ -53,7 +55,7 @@ So wechseln Sie zum Dateisysteminhaber:
 
 1. Um CLI-Befehle aus einem beliebigen Verzeichnis auszuführen, fügen Sie `<app_root>/bin` auf Ihr System `PATH`.
 
-   Da Muscheln eine andere Syntax haben, sollten Sie einen Verweis wie [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Da Muscheln unterschiedliche Syntaxen haben, sollten Sie einen Verweis wie [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Beispiel-Bash-Shell für CentOS:
 
@@ -87,40 +89,36 @@ So rufen Sie das Adobe Commerce- oder Magento Open Source-Metapaket ab:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Geben Sie bei Aufforderung die Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden in Ihrer [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+   Geben Sie bei Aufforderung die Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden in Ihrer [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
    Wenn Fehler auftreten, z. B. `Could not find package...` oder `...no matching package found`, stellen Sie sicher, dass Ihr Befehl keine Tippfehler enthält. Sollten dennoch Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Kontakt [Adobe Commerce-Support](https://support.magento.com/hc/en-us) für Hilfe.
 
    Siehe [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360033818091) für weitere Fehlermeldungen.
 
-   >[!NOTE]
-   >
-   >Adobe Commerce-Kunden können zwei Wochen vor dem Datum der allgemeinen Verfügbarkeit (GA) auf Patches zugreifen. Vorabversionspakete sind nur über Composer verfügbar. Sie können erst auf Vorversionen im Entwicklerportal oder GitHub zugreifen, wenn die allgemeine Verfügbarkeit erreicht ist. Wenn Sie diese Pakete nicht in Composer finden können, wenden Sie sich an den Adobe Commerce-Support.
-
 ### Beispiel - Nebenversion
 
-Nebenversionen enthalten neue Funktionen, Qualitätsverbesserungen und Sicherheitskorrekturen. Verwenden Sie Composer , um eine Nebenversion anzugeben. So legen Sie beispielsweise das Adobe Commerce 2.4.5-Metapaket fest:
+Nebenversionen enthalten neue Funktionen, Qualitätsverbesserungen und Sicherheitskorrekturen. Verwenden Sie Composer , um eine Nebenversion anzugeben. So legen Sie beispielsweise das Adobe Commerce 2.4.6-Metapaket fest:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Beispiel - Qualitäts-Patch
 
-Qualitäts-Patches enthalten in erster Linie Funktionen _und_ Sicherheitskorrekturen. Manchmal können sie jedoch auch neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer , um einen Qualitäts-Patch herunterzuladen. So legen Sie beispielsweise das Adobe Commerce 2.4.5-Metapaket fest:
+Qualitäts-Patches enthalten in erster Linie Funktionen _und_ Sicherheitskorrekturen. Manchmal können sie jedoch auch neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer , um einen Qualitäts-Patch herunterzuladen. So legen Sie beispielsweise das Adobe Commerce 2.4.6-Metapaket fest:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Beispiel - Sicherheits-Patch
 
 Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie sind so konzipiert, dass der Aktualisierungsprozess schneller und einfacher wird.
 
-Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.5-px`. Verwenden Sie Composer, um einen Patch anzugeben. So laden Sie beispielsweise das Metapaket Adobe Commerce 2.4.5-p1 herunter:
+Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.6-px`. Verwenden Sie Composer, um einen Patch anzugeben. So laden Sie beispielsweise das Metapaket Adobe Commerce 2.4.6-p1 herunter:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## Festlegen von Dateiberechtigungen
@@ -166,7 +164,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Sie können den Admin-URI mit dem `--backend-frontname` -Option. Es wird jedoch empfohlen, diese Option wegzulassen und dem Installationsbefehl zu erlauben, automatisch einen zufälligen URI zu generieren. Eine zufällige URI ist für Hacker oder böswillige Software schwieriger zu nutzen. Der URI wird in Ihrer Konsole angezeigt, wenn die Installation abgeschlossen ist.
+>Sie können den Admin-URI mit dem `--backend-frontname` -Option. Adobe empfiehlt jedoch, diese Option wegzulassen und dem Installationsbefehl zu erlauben, automatisch einen zufälligen URI zu generieren. Eine zufällige URI ist für Hacker oder böswillige Software schwieriger zu nutzen. Der URI wird in Ihrer Konsole angezeigt, wenn die Installation abgeschlossen ist.
 
 >[!TIP]
 >
@@ -230,4 +228,4 @@ Die folgenden Argumente gelten für alle Befehle. Diese Befehle können vor oder
 
 >[!NOTE]
 >
->Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Sie benötigen weiterführende Hilfe? Sehen Sie sich unsere [Erweiterte Installation](advanced.md) Handbuch.
+>Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Sie benötigen weiterführende Hilfe? Sehen Sie sich die [Erweiterte Installation](advanced.md) Handbuch.
