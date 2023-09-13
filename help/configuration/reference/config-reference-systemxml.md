@@ -4,9 +4,9 @@ description: Erfahren Sie, wie die XML-Systemdatei die Konfiguration der Commerc
 feature: Configuration, System
 badge: label="Beitrag von David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
+source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -296,7 +296,6 @@ A `<field>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 | `more_url` | Nicht erweiterbar. Siehe unten. | `typeUrl` |
 | `demo_url` | Nicht erweiterbar. Siehe unten. | `typeUrl` |
 | `hide_in_single_store_mode` | Ob die Gruppe im Einzelspeichermodus sichtbar sein soll. `1` blendet die Gruppe aus; `0` zeigt die Gruppe an. | `int` |
-| `source_service` | Dienst zum Ausfüllen von Auswahloptionen. | `complexType` |
 | `options` | Nicht verwendet. Potenziell veraltet. | `complexType` |
 | `depends` | Kann verwendet werden, um Abhängigkeiten zu anderen Feldern zu deklarieren. Wird nur verwendet, um bestimmte Felder/Gruppen anzuzeigen, wenn ein bestimmtes Feld den Wert `1`. Dieser Knoten erwartet eine `section/group/field`-string. | `complexType` |
 | `attribute` | Benutzerdefinierte Attribute können von Frontend-Modellen verwendet werden. Wird normalerweise verwendet, um ein bestimmtes Frontend-Modell dynamischer zu gestalten. | `complexType` |
