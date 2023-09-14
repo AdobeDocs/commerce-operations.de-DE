@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 19d41495f95ae707be1db8446ac77eb5ead6375e
+source-git-commit: 7e6e8f1ed15d88fc79e9a3ad5a4505b612564f71
 workflow-type: tm+mt
-source-wordcount: '14327'
+source-wordcount: '14539'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.38 {#v1-1-38}
+
+* **ACSD-53098** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.4) - Behebung des Problems, bei dem Produkte, die einem freigegebenen Katalog zugeordnet sind, nicht auf der Storefront angezeigt werden, wenn ein partieller Index ausgeführt wird.
+* **ACSD-54018** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.6) - Behebt die Leistungsprobleme mit dem [!UICONTROL Product List] Widget, das ein nicht globales Attribut in der Widget-Bedingung verwendet.
+* **ACSD-54111** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.6) - Behebung des Problems, bei dem die Miniaturansichten des Produkts nicht auf der Storefront angezeigt werden, wenn das Seitenverhältnis des Wasserzeichenbilds nicht mit dem Produktbild übereinstimmt.
+* **ACSD-47669** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.6) - Fehlerbehebungen *Integrationsbeschränkungsverletzung: 1452 Untergeordnete Zeilen können nicht hinzugefügt oder aktualisiert werden: Fremdschlüsseleinschränkung schlägt fehl* Fehler beim Importieren der Produkt-CSV.
+* **ACSD-53347** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebung des Problems, bei dem die Ausführung des Preisindexers zu viel Zeit in Anspruch nimmt.
+* **ACSD-52287** (für Adobe Commerce >=2.3.7 &lt;2.4.7) - Behebt das Problem mit dem falschen Bestellstatus im archivierten Bestellraster, wenn die asynchrone Rasterindizierung aktiviert ist.
+* **ACSD-52929** (für Adobe Commerce und Magento Open Source >=2.3.7 &lt;2.4.7) - Behebt das Problem mit redundanten Anforderungen zur Neuindizierung von Standardquellelementen, wenn der Inventarindexer im asynchronen Modus konfiguriert ist.
+* **ACSD-53824** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems, bei dem `UpdateMultiselectAttributesBackendTypes` MigrationsdatenPatch überschreitet die Größenbeschränkung der Datenbanktransaktionen während der `setup:upgrade`.
 
 ## v1.1.37 {#v1-1-37}
 
