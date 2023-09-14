@@ -1,7 +1,7 @@
 ---
-source-git-commit: 525ac7ae2481be8c52b32471d14ceefba7b855a2
+source-git-commit: 366180602621742c40184192633863c5ce9a8e9f
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
+
+### 11. September 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html">Erweiterungsstrategie</a> mit Informationen zu App Builder, API-Mesh und Adobe I/O-Ereignissen.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f4f420cee5f9241f56107c4218793af394ba1193">f4f420</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 6. September 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.37 Quality Patches Tool (QPT) .</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 28. August 2023
 
@@ -151,66 +191,6 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd3b93aaa79e84d356217b6adfe7181895e84f07">fd3b93</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 27. Juli 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">Produktverfügbarkeit</a> Seite, um Layout und Lesbarkeit zu verbessern.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6ed2a3e42cd0b85aae29652b8e36acbbda1b9e72">6ed2a3</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 25. Juli 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.35 Quality Patches Tool (QPT) .</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac0f04b7a04c5c7d3b3880b8231ffece05718558">ac0f04</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 11. Juli 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde eine Beschreibung eines neuen bekannten Problems hinzugefügt, das sich auf die Beschriftungen von gestaffelten Verkaufsregeln für Adobe Commerce auswirkt. <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2,4,5</a> und <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2,4,6</a>.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9e833dad884fa6146bb5e6ce6dd5ebcb23208b80">9e833d</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
