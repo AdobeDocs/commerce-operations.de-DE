@@ -3,7 +3,7 @@ title: Sicherheit der Cloud-Infrastruktur
 description: Erfahren Sie, wie Adobe Adobe Commerce in der Cloud-Infrastruktur sicher hält.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Kunden können SSH-Tunnel verwenden, um die Kommunikation mit der Anwendung zu s
 
 ## Verschlüsselung
 
-Amazon Elastic Block Store (EBS) wird für die Speicherung verwendet. Alle EBS-Volumes werden mit dem AES-265-Algorithmus verschlüsselt, was bedeutet, dass die Daten im Ruhezustand verschlüsselt werden. Das System verschlüsselt auch Daten während der Übertragung zwischen dem CDN und dem Herkunftsserver sowie zwischen den Herkunftsservern. Kundenkennwörter werden als Hashes gespeichert. Vertrauliche Zugangsdaten, einschließlich Zahlungsdaten-Gateway-Anmeldeinformationen, werden mit dem SHA-256-Algorithmus verschlüsselt.
+Amazon Elastic Block Store (EBS) wird für die Speicherung verwendet. Alle EBS-Volumes werden mit dem AES-256-Algorithmus verschlüsselt, was bedeutet, dass die Daten im Ruhezustand verschlüsselt werden. Das System verschlüsselt auch Daten während der Übertragung zwischen dem CDN und dem Herkunftsserver sowie zwischen den Herkunftsservern. Kundenkennwörter werden als Hashes gespeichert. Vertrauliche Zugangsdaten, einschließlich Zahlungsdaten-Gateway-Anmeldeinformationen, werden mit dem SHA-256-Algorithmus verschlüsselt.
 
 Die Adobe Commerce-Anwendung unterstützt keine Verschlüsselung oder Verschlüsselung auf Spalten- oder Zeilenebene, wenn sich die Daten nicht im Ruhezustand befinden oder sich nicht im Durchlauf zwischen Servern befinden. Der Kunde kann Verschlüsselungsschlüssel innerhalb der Anwendung verwalten. Die vom System verwendeten Schlüssel werden im Schlüsselverwaltungssystem von AWS gespeichert und müssen von Managed Services verwaltet werden, um Teile des Dienstes bereitzustellen.
 
