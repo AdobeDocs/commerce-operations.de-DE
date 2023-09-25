@@ -384,7 +384,7 @@ Die **[!UICONTROL Order transactions (default?)]** frame sucht nach Transaktione
 * &#39;%Sie können dieses Problem beheben, indem Sie den Elasticsearch-Dienst in Ihrer Magento Cloud-Infrastruktur auf Version%&#39; als &#39;ver_err&#39; aktualisieren.
 * &#39;%Cluster-Gesundheitsstatus geändert von \[GELB\] in \[RED\] (Grund:%&#39; als &#39;yel_red&#39;)
 * &#39;%Kein Speicherplatz auf Gerät%&#39; als &#39;no_space&#39;
-* &#39;% Failed to execute [SearchRequest{searchType=%&#39; as &#39;failed_query&#39;
+* &#39;% Failed to execute &lbrack;SearchRequest&lbrace;searchType=%&#39; as &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

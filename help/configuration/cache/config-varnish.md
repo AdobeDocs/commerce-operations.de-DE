@@ -53,9 +53,9 @@ Der Prozess kann wie folgt zusammengefasst werden:
 
 >[!NOTE]
 >
-- Sofern nicht angegeben, müssen Sie alle in diesem Thema behandelten Befehle als Benutzer mit `root` -Berechtigungen.
+>- Sofern nicht angegeben, müssen Sie alle in diesem Thema behandelten Befehle als Benutzer mit `root` -Berechtigungen.
 >
-- Dieses Thema wurde für Varnish auf CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, können einige Befehle unterschiedlich sein. Weitere Informationen finden Sie in der Dokumentation zu Varnish .
+>- Dieses Thema wurde für Varnish auf CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, können einige Befehle unterschiedlich sein. Weitere Informationen finden Sie in der Dokumentation zu Varnish .
 
 ## Bekannte Probleme
 
@@ -96,7 +96,7 @@ Die Varnish-Zwischenspeicherung funktioniert mit Commerce mithilfe von:
 
 >[!INFO]
 >
-Dieses Thema behandelt nur die Standardoptionen in der vorherigen Liste. Es gibt viele andere Möglichkeiten, die Zwischenspeicherung in komplexen Szenarien zu konfigurieren (z. B. mithilfe eines Content Delivery Network). Diese Methoden werden nicht in dieses Handbuch einbezogen.
+>Dieses Thema behandelt nur die Standardoptionen in der vorherigen Liste. Es gibt viele andere Möglichkeiten, die Zwischenspeicherung in komplexen Szenarien zu konfigurieren (z. B. mithilfe eines Content Delivery Network). Diese Methoden werden nicht in dieses Handbuch einbezogen.
 
 Bei der ersten Browser-Anforderung werden zwischenspeicherbare Assets aus &quot;Varnish&quot;an den Client-Browser gesendet und im Browser zwischengespeichert.
 
@@ -120,7 +120,7 @@ Das obige Beispiel zeigt eine Anforderung für die Hauptseite der Storefront (`m
 
 >[!NOTE]
 >
-Die meisten statischen Assets verfügen über einen HTTP-Statuscode 200 (OK), der angibt, dass das Asset vom Server abgerufen wurde.
+>Die meisten statischen Assets verfügen über einen HTTP-Statuscode 200 (OK), der angibt, dass das Asset vom Server abgerufen wurde.
 
 ### Zweite Browser-Anfrage
 

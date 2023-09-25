@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-Wichtig: Der neue Inkrementwert muss größer als der aktuelle sein.
+>Wichtig: Der neue Inkrementwert muss größer als der aktuelle sein.
 
 Nach Ausführung der folgenden Abfrage:
 
