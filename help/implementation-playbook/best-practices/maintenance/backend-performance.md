@@ -4,7 +4,8 @@ description: Erfahren Sie mehr über die Optimierung der Backend-Leistung von Ad
 badge: label="Von objectsource unterstützt" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
+source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -38,7 +39,7 @@ Ein Werkzeug, das Sie für Stresstests verwenden können, ist GTmetrix. Messen S
 
 Erfahren Sie mehr über die Vorbereitung von Commerce-Projekten für Zeiträume mit hohem Traffic-Aufkommen:
 
-- [Urlaubsbereitschaft](https://experienceleague.adobe.com/docs/events/mbi-webinars-recordings/2021/holiday-readiness.html)
+- [Urlaubsbereitschaft](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [Holiday Shopping Analysis](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
 - [Erhöhung der Überlagerungskapazität](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
