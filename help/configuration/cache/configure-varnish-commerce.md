@@ -3,9 +3,9 @@ title: Konfigurieren der Variante für Commerce
 description: Erfahren Sie, wie Sie Ihre Varnish-Konfigurationsdatei für die Commerce-Anwendung aktualisieren und verwalten.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,8 @@ So konfigurieren Sie Commerce für die Verwendung von Varnish:
    | Zugriffsliste | Geben Sie den vollständig qualifizierten Hostnamen und die IP-Adresse ein oder [Classless Inter-Domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) -IP-Adressbereich, für den Inhalte ungültig gemacht werden sollen. Siehe [Bereinigen des Zwischenspeichers](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Backend-Host | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse ein und überwachen Sie den Port des Varnish _Backend_ oder _Ursprungsserver_; d. h. der Server, der den Inhalt bereitstellt, beschleunigt Varnish. Normalerweise ist dies Ihr Webserver. Siehe [Varnish-Cache-Backend-Server](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Backend-Port | Listener Port des Herkunftsservers. |
-   | Übergangsphase | Die Übergangsphase bestimmt, wie lange Varnish veraltete Inhalte bereitstellt, wenn das Backend nicht responsiv ist. Der Standardwert ist 300 Sekunden. |
+   | Übergangsphase | Bestimmt, wie lange Varnish veraltete Inhalte bereitstellt, wenn das Backend nicht reagiert. Der Standardwert ist 300 Sekunden. |
+   | Handles params size  [!BADGE 2.4.7-Beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta verfügbar"} | Gibt die maximale Anzahl von [Layout-Handles](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) zur Verarbeitung in [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP-Endpunkt für die vollständige Zwischenspeicherung. Eine Größenbeschränkung kann die Sicherheit und Leistung verbessern. Der Standardwert ist 100. |
 
 1. Klicks **Konfiguration speichern**.
 

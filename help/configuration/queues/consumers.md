@@ -2,7 +2,7 @@
 title: Verbraucher in der Nachrichtenwarteschlange
 description: Erfahren Sie mehr über die Kunden von Adobe Commerce- und Magento Open Source-Nachrichten-Warteschlangen, einschließlich der damit verbundenen Funktionen und Systemkonfigurationseinstellungen.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -65,7 +65,7 @@ In der folgenden Tabelle werden alle Verbraucher in der Nachrichtenwarteschlange
 | Sendet Bestellungs-E-Mails. Erforderlich, wenn die [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | Validiert die Bestellung für relevante [Validierungsregeln](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). Erforderlich, wenn die [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta1 verfügbar"} | + |                         | + |
+| `saveConfigProcessor` [!BADGE 2.4.7-Beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta verfügbar"} | + |                         | + |
 | Speichert asynchron Änderungen an der Speicherkonfiguration, indem Speicheraufträge in eine Nachrichtenwarteschlange gestellt werden, was die Leistung bei Bereitstellungen mit einer großen Anzahl von Konfigurationen auf Store-Ebene verbessern kann. Erforderlich für die Verwendung der [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) -Modul. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | Verhindert die [Problem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) wobei Einzelbenutzercoupons mehrmals verwendet werden können. |                |                         |                     |

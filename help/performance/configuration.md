@@ -3,7 +3,7 @@ title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung mithilfe dieser Best Practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 62a37d5f83b4cc6efef8bddba16e44151e91a8d0
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1448'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Es kann vorkommen, dass intensive Verkäufe an eine Storefront gleichzeitig mit 
 >
 >Die **[!UICONTROL Developer]** Registerkarten und Optionen sind nur in [Entwicklermodus](../configuration/cli/set-mode.md). [Adobe Commerce auf Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt nicht `Developer` -Modus.
 
-## Speichern Sie die asynchrone Konfiguration [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta1 verfügbar"}
+## Speichern Sie die asynchrone Konfiguration [!BADGE 2.4.7-Beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta verfügbar"}
 
 Bei Projekten mit einer großen Anzahl von Konfigurationen auf Store-Ebene kann das Speichern einer Store-Konfiguration eine übermäßige Zeit in Anspruch nehmen oder zu einem Timeout führen. Die _Asynchrone Konfiguration_ ermöglicht asynchrone Konfigurationseinstellungen, indem ein Cron-Auftrag ausgeführt wird, der mithilfe eines Verbrauchers das Speichern in einer Nachrichtenwarteschlange verarbeitet. AsyncConfig ist **disabled** Standardmäßig.
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
+source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
 workflow-type: tm+mt
-source-wordcount: '19899'
+source-wordcount: '20131'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Version**: 2.4.7-beta1
+**Version**: 2.4.7-beta2
 
-Diese Referenz enthält 132 Befehle, die über das `bin/magento` Befehlszeilen-Tool.
+Diese Referenz enthält 134 Befehle, die über das `bin/magento` Befehlszeilen-Tool.
 Die anfängliche Liste wird automatisch mit der Variablen `bin/magento list` -Befehl in Adobe Commerce.
 Verwenden Sie die [&quot;CLI-Befehle hinzufügen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) Anleitung zum Hinzufügen eines benutzerdefinierten CLI-Befehls.
 
@@ -3756,6 +3756,120 @@ Interaktive Fragen stellen
 - Akzeptiert keinen Wert
 
 
+## `events:provider:info`
+
+Gibt Details zum konfigurierten Ereignisanbieter zurück
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
+
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+Die Option &quot;—ansi&quot;umkehren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`, `-n`
+
+Interaktive Fragen stellen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+
+## `events:registrations:list`
+
+Listet Ereignisregistrierungen in Ihrem App Builder-Projekt auf
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--quiet`, `-q`
+
+Keine Nachricht ausgeben
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--version`, `-V`
+
+Diese Anwendungsversion anzeigen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--ansi`
+
+ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
+
+- Akzeptiert keinen Wert
+
+### `--no-ansi`
+
+Die Option &quot;—ansi&quot;umkehren
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+### `--no-interaction`, `-n`
+
+Interaktive Fragen stellen
+
+- Standard: `false`
+- Akzeptiert keinen Wert
+
+
 ## `events:subscribe`
 
 Abonniert das Ereignis
@@ -7221,7 +7335,7 @@ Interaktive Fragen stellen
 Anwendungsserver ausführen
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7250,6 +7364,13 @@ Anwendungsserverbereich
 magento bootstrap init params
 
 - Standard: &quot;
+- Akzeptiert einen Wert
+
+### `--maxWaitTime`, `-mwt`
+
+wie lange es nach dem Neuladen auf Arbeitnehmer warten kann (z. B. Konfigurationsänderung) vor dem Töten
+
+- Standard: `3600`
 - Akzeptiert einen Wert
 
 ### `--help`, `-h`
@@ -9417,7 +9538,7 @@ Nachname des Administrators
 
 ### `--search-engine`
 
-Suchmaschine. Werte: elasticsearch5, elasticsearch7, elasticsearch8, opensearch
+Suchmaschine. Werte: elasticsearch7, elasticsearch8, opensearch
 
 - Erfordert einen Wert
 

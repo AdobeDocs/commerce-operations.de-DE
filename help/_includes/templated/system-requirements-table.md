@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3f179aa7ca09992df4b1d2dd1abdae06df4b2907
+source-git-commit: 8705e41c64f4f4a62fca0fe089fcfebef99bc2d2
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '380'
 ht-degree: 87%
 
 ---
@@ -17,15 +17,18 @@ ht-degree: 87%
       <th>
         Softwareabhängigkeiten
       </th>
-      <th>2.4.7-beta1</th>
+      <th>2.4.7-beta2</th>
+      <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
       <th>2.4.6-p1</th>
       <th>2.4.6</th>
+      <th>2.4.5-p5</th>
       <th>2.4.5-p4</th>
       <th>2.4.5-p3</th>
       <th>2.4.5-p2</th>
       <th>2.4.5-p1</th>
       <th>2.4.5</th>
+      <th>2.4.4-p6</th>
       <th>2.4.4-p5</th>
       <th>2.4.4-p4</th>
       <th>2.4.4-p3</th>
@@ -45,6 +48,15 @@ ht-degree: 87%
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
             2.5
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
+      </td>
+      <td>
+            2.2
       </td>
       <td>
             2.2
@@ -110,7 +122,10 @@ ht-degree: 87%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.5
+            8.7
+      </td>
+      <td>
+            8.5, 7.17
       </td>
       <td>
             8.5, 7.17
@@ -120,6 +135,12 @@ ht-degree: 87%
       </td>
       <td>
             8.4, 7.17
+      </td>
+      <td>
+            7.17
+      </td>
+      <td>
+            7.17
       </td>
       <td>
             7.17
@@ -188,6 +209,15 @@ ht-degree: 87%
             2.5
       </td>
       <td>
+            2.5
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
             1.2
       </td>
       <td>
@@ -252,6 +282,15 @@ ht-degree: 87%
       </td>
       <td>
             10.6
+      </td>
+      <td>
+            10.6
+      </td>
+      <td>
+            10.4
+      </td>
+      <td>
+            10.4
       </td>
       <td>
             10.4
@@ -368,6 +407,15 @@ ht-degree: 87%
             8.0
       </td>
       <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
             5.7, 8.0
       </td>
     </tr>
@@ -384,6 +432,15 @@ ht-degree: 87%
       </td>
       <td>
             8.2, 8.1
+      </td>
+      <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8.1
+      </td>
+      <td>
+            8.1
       </td>
       <td>
             8.1
@@ -458,6 +515,15 @@ ht-degree: 87%
             3.11, 3.9
       </td>
       <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.11, 3.9
+      </td>
+      <td>
+            3.9
+      </td>
+      <td>
             3.9
       </td>
       <td>
@@ -516,6 +582,15 @@ ht-degree: 87%
       </td>
       <td>
             7.0
+      </td>
+      <td>
+            7.0
+      </td>
+      <td>
+            6.2
+      </td>
+      <td>
+            6.2
       </td>
       <td>
             6.2
@@ -581,7 +656,13 @@ ht-degree: 87%
             7.3
       </td>
       <td>
+            7.3
+      </td>
+      <td>
             7.1
+      </td>
+      <td>
+            7.3
       </td>
       <td>
             7.3
@@ -597,6 +678,9 @@ ht-degree: 87%
       </td>
       <td>
             7.0
+      </td>
+      <td>
+            7.3
       </td>
       <td>
             7.3
@@ -700,11 +784,35 @@ ht-degree: 87%
       <td>
             2.4
       </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
+      <td>
+            2.4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
+            1.24
+      </td>
+      <td>
+            1.24
+      </td>
+      <td>
             1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.22
+      </td>
+      <td>
+            1.24
       </td>
       <td>
             1.22
@@ -722,13 +830,7 @@ ht-degree: 87%
             1.22
       </td>
       <td>
-            1.22
-      </td>
-      <td>
-            1.22
-      </td>
-      <td>
-            1.22
+            1.24
       </td>
       <td>
             1.22
@@ -769,6 +871,15 @@ ht-degree: 87%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
+      <td>
+            8.0
+      </td>
       <td>
             8.0
       </td>
@@ -893,6 +1004,15 @@ ht-degree: 87%
             ✔️
       </td>
       <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
           --
       </td>
       <td>
@@ -902,7 +1022,7 @@ ht-degree: 87%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.10.10
+            3.10.20
       </td>
       <td>
             3.9.16
@@ -912,6 +1032,15 @@ ht-degree: 87%
       </td>
       <td>
             3.9.16
+      </td>
+      <td>
+            3.9.16
+      </td>
+      <td>
+            3.9.13
+      </td>
+      <td>
+            3.9.13
       </td>
       <td>
             3.9.13
@@ -978,6 +1107,15 @@ ht-degree: 87%
       </td>
       <td>
             Redis 6.2
+      </td>
+      <td>
+            Redis 6.2
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
       </td>
       <td>
             Redis 6
@@ -1055,10 +1193,19 @@ ht-degree: 87%
           --
       </td>
       <td>
+          --
+      </td>
+      <td>
+          --
+      </td>
+      <td>
             7.9
       </td>
       <td>
             7.9
+      </td>
+      <td>
+          --
       </td>
       <td>
           --
@@ -1100,7 +1247,16 @@ ht-degree: 87%
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
-            2.3
+            2.5
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
+      </td>
+      <td>
+            1.2
       </td>
       <td>
             1.2
