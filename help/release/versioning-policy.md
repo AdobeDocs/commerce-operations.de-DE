@@ -2,7 +2,7 @@
 title: Versionsrichtlinie
 description: Erfahren Sie mehr über die verschiedenen Arten von Adobe Commerce-Versionen, einschließlich kleineren Versionen, Patch, Sicherheits-Patch, Funktion, Hotfix, individuellem Patch und benutzerdefiniertem Patch.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
+source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Verwendung von Adobe Commerce und Magento Open Source [Semantische Versionierung
    - **Sicherheits-Patch-Version**—2.4.5-p1
       - Sicherheitsfehlerbehebung
       - Sicherheitsverbesserung
-- **BETA Patch-Version**—2.4.7-beta1
+- **BETA Patch-Version**—2.4.7-beta2
 - **Erweiterbarkeit, Infrastruktur und Freigabe von Diensten**
 - **Hotfix**
 - **Individuelles Pflaster**

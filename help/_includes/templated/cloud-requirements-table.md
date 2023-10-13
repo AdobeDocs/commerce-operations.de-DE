@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8705e41c64f4f4a62fca0fe089fcfebef99bc2d2
+source-git-commit: c1f3b19f2199b8c58beeab1b9bf6b69195269dbb
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 87%
+source-wordcount: '145'
+ht-degree: 84%
 
 ---
 # Cloud-Anforderungstabelle
@@ -32,11 +32,7 @@ ht-degree: 87%
       <th>2.4.4-p1</th>
       <th>2.4.4</th>
       <th>2.4.3-p3</th>
-      <th>2.4.3-p2</th>
-      <th>2.4.3</th>
-      <th>2.4.2</th>
-      <th>2.4.1</th>
-      <th>2.4.0</th>
+      <th>2.4.2-p2</th>
     </tr>
   </thead>
   <tbody>
@@ -95,18 +91,6 @@ ht-degree: 87%
       </td>
       <td>
             2.1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
-      </td>
-      <td>
-            1
       </td>
       <td>
             1
@@ -175,19 +159,7 @@ ht-degree: 87%
           --
       </td>
       <td>
-          --
-      </td>
-      <td>
-            7.10
-      </td>
-      <td>
             7.9
-      </td>
-      <td>
-            7.7
-      </td>
-      <td>
-            7.6, 7.7
       </td>
     </tr>
     <tr>
@@ -248,18 +220,6 @@ ht-degree: 87%
       </td>
       <td>
             1.2
-      </td>
-      <td>
-            1.2
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
-      </td>
-      <td>
-          --
       </td>
       <td>
           --
@@ -327,18 +287,6 @@ ht-degree: 87%
       <td>
             10.4
       </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.4
-      </td>
-      <td>
-            10.2, 10.3, 10.4
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
@@ -402,18 +350,6 @@ ht-degree: 87%
       <td>
             7.4
       </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.4
-      </td>
-      <td>
-            7.3, 7.4
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
@@ -470,18 +406,6 @@ ht-degree: 87%
       </td>
       <td>
             3.9
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
-      </td>
-      <td>
-            3.8
       </td>
       <td>
             3.8
@@ -551,18 +475,6 @@ ht-degree: 87%
       </td>
       <td>
             6.0
-      </td>
-      <td>
-            6.0
-      </td>
-      <td>
-            6.0
-      </td>
-      <td>
-            5.0
-      </td>
-      <td>
-            5.0
       </td>
     </tr>
   </tbody>

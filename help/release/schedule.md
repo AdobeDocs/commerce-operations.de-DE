@@ -2,10 +2,10 @@
 title: Veröffentlichungszeitplan
 description: Erfahren Sie, wann Adobe die Veröffentlichung von wesentlichen neuen Funktionen für Adobe Commerce anzukündigen plant.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
+source-git-commit: 7edf6d5a8dfe58a86f27e97816e4d850bc21babc
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 1%
+source-wordcount: '623'
+ht-degree: 2%
 
 ---
 
@@ -17,10 +17,7 @@ Adobe-Releases [Patches](versioning-policy.md#patch-release) für jede unterstü
 
 >[!NOTE]
 >
->Ab 2024 bietet Adobe keinen &quot;Pre-Release&quot;-Zugriff mehr auf Patches. Stattdessen können Adobe Commerce-Kunden für Version 2.4.7 und höher Folgendes verwenden: [Beta-Versionen](beta.md) für den Zugriff auf den vorallgemeinen Verfügbarkeitscode für Test- und Entwicklungszwecke. Der Zugriff auf die Vorabversion ist weiterhin für die folgenden Versionen aus dem Jahr 2023 geplant:
->
-> - Der Zugriff auf die Vorabversion vom 8. August 2023 ist der 25. Juli 2023.
-> - Der Zugriff auf die Vorabversion vom 10. Oktober 2023 ist der 26. September 2023
+>Ab 2024 bietet Adobe keinen &quot;Pre-Release&quot;-Zugriff mehr auf Patches. Stattdessen können Adobe Commerce-Kunden für Version 2.4.7 und höher Folgendes verwenden: [Beta-Versionen](beta.md) für den Zugriff auf den vorallgemeinen Verfügbarkeitscode für Test- und Entwicklungszwecke.
 
 Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben können geändert werden):
 
@@ -46,16 +43,6 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
    </tr>
 </tfoot>
 <tbody>
-  <tr>
-    <td>8. August 2023</td>
-    <td><img alt="Symbol "B2B-Funktion"" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Symbol für Erweiterungsfunktion" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Erweiterbarkeit</a><br><img alt="Symbol für Infrastrukturfunktion" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruktur</a><br><img alt="Symbol für Dienstfunktionen" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Dienste</a></td>
-    <td><img alt="Symbol "Patch Release"" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheitspatches</a>: 2.4.6-p2, 2.4.5-p4, 2.4.4-p5</td>
-  </tr>
-  <tr>
-    <td>10. Oktober 2023</td>
-    <td><img alt="Symbol "B2B-Funktion"" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Symbol für Erweiterungsfunktion" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Erweiterbarkeit</a><br><img alt="Symbol für Infrastrukturfunktion" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruktur</a><br><img alt="Symbol für Dienstfunktionen" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Dienste</a></td>
-    <td><img alt="Symbol "Patch Release"" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta-Patch</a>: 2.4.7-beta2<br> <img alt="Symbol &quot;Patch Release&quot;" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheitspatches</a>: 2.4.6-p3, 2.4.5-p5, 2.4.4-p6</td>
-  </tr>
   <tr>
     <td>13. Februar 2024</td>
     <td><img alt="Symbol "B2B-Funktion"" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Symbol für Erweiterungsfunktion" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Erweiterbarkeit</a><br><img alt="Symbol für Infrastrukturfunktion" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infrastruktur</a><br><img alt="Symbol für Dienstfunktionen" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Dienste</a></td>
