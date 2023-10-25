@@ -2,7 +2,7 @@
 title: Software Lifecycle Policy
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Softwareunterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: c1f490d98dd74bd5f33f35c5ff7bedeeb0e6f7e4
+source-git-commit: e8222bd06b917e21513ede99d46617107dd2d847
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 16%
@@ -107,14 +107,14 @@ Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
   <tr>
     <td rowspan="2">2.4.7</td>
     <td>8.2</td>
-    <td colspan="5"></td>
-    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="9"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
   <tr>
     <td>8.3</td>
-    <td colspan="5"></td>
-    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="9"></td>
+    <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
 </tbody>
