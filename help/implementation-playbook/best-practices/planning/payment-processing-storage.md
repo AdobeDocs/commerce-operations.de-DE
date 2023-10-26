@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Zahlungsdetails sicher verarbeiten und speich
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Eines der wichtigsten Grundsätze bei der Aufrechterhaltung [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) hat eine Strategie, Kreditkartenzahlungen ordnungsgemäß zu verarbeiten und zu speichern.
 
-Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und dies könnte einen Verstoß gegen Ihre Verpflichtungen als Händler im Rahmen des Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen über unser gemeinsames Verantwortungsmodell und die Richtlinien für Handelsverpflichtungen finden Sie in unserer [Handbuch zur gemeinsamen Verantwortung für Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) im Adobe Trust Center.
+Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und dies könnte einen Verstoß gegen Ihre Verpflichtungen als Händler im Rahmen des Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen über das Modell der geteilten Verantwortung und die Leitlinien für Handelsverpflichtungen finden Sie im [Handbuch zum freigegebenen Adobe Commerce-Responsibility-Modell](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
 
-Wir empfehlen, die unten stehenden Best Practices zu befolgen, um sicherzustellen, dass Sie die Zahlungsinformationen auf Ihrer E-Commerce-Site ordnungsgemäß verarbeiten. Weitere Hinweise zu den allgemeinen Best Practices für die Sicherheit finden Sie in unserer [Handbuch zu Best Practices für die Sicherheit von Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) über das Adobe Trust Center
+Befolgen Sie die unten stehenden Best Practices, um sicherzustellen, dass Sie die Zahlungsinformationen auf Ihrer E-Commerce-Site ordnungsgemäß verarbeiten. Weitere Hinweise zu den allgemeinen Best Practices für die Sicherheit finden Sie in unserer [Handbuch zu Best Practices für die Sicherheit von Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) über das Adobe Trust Center
 
 ## Betroffene Produkte und Versionen
 
@@ -32,7 +32,7 @@ Wenn die Speicherung von Karteninhaberdaten erforderlich ist, sollten die Karten
 
 Der Schutz kryptografischer Schlüssel ist für Datenschutzstrategien von entscheidender Bedeutung. Es ist wichtig, über qualifizierte und vertrauenswürdige Kunden zu verfügen, die diese Schlüssel überwachen.
 
-Schließlich muss eine primäre Kontonummer (PAN) während der Speicherung unlesbar sein (z. B. maskiert wie XXX). Dazu gehören tragbare Speicher- und Sicherungsmedien wie Flash-Laufwerke, USB- und externe Festplatten sowie sogar Prüfprotokolle.
+Schließlich muss eine primäre Kontonummer (PAN) während der Speicherung unlesbar sein, z. B. mit `XXX`. Dazu gehören tragbare Speicher- und Sicherungsmedien wie Flash-Laufwerke, USB- und externe Festplatten sowie sogar Prüfprotokolle.
 
 ## Verschlüsseln der Übertragung von Karteninhaberdaten
 
@@ -49,8 +49,8 @@ Der Schutz von Daten während der Übermittlung ist der Schlüssel zum Schutz vo
 * Zugriff auf Daten des Karteninhabers beschränken
 * Der Zugang zu sensiblen Informationen sollte auf der Grundlage des Kenntnisbedarfs beschränkt und nur den autorisierten Personen mit geschäftlichen Bedürfnissen gewährt werden
 
-Die empfohlene Methode zur Verarbeitung von Karteninhaberdaten besteht darin, die primäre Kontonummer (PAN) nicht zu speichern, sondern die Karte mit einem bestimmten Zahlungsdienstleister zu tokenisieren und das Token, den Kartentyp und das verschlüsselte Ablaufdatum zu speichern. Sie können das Token als Berechtigung für die zukünftige Verwendung in der Datei verwenden, da es nur für jeden Händler eindeutig ist. Da das Token eindeutig ist, ist bei einem Sicherheitsproblem das Token in invalidiert, was dazu beiträgt, betrügerische Aktivitäten zu verhindern
+Die empfohlene Methode für die Verarbeitung von Karteninhaberdaten besteht darin, die Daten per Token zu versehen, anstatt sie zu speichern. Token Sie die Karte mit einem bestimmten Zahlungsdienstleister und speichern Sie das Token, den Kartentyp und das verschlüsselte Ablaufdatum. Sie können das Token als Berechtigung für die zukünftige Verwendung in der Datei verwenden, da es nur für jeden Händler eindeutig ist. Da das Token eindeutig ist, kann bei einem Sicherheitsproblem das ungültige Token dazu beitragen, betrügerische Aktivitäten zu verhindern.
 
 ## Zusätzliche Informationen
 
-Wenn Sie nach empfohlenen Zahlungslösungen durch Adobe suchen, beachten Sie bitte [Adobe-Zahlungsdienste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Wenn Sie nach empfohlenen Zahlungslösungen durch Adobe suchen, sollten Sie [Adobe-Zahlungsdienste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
