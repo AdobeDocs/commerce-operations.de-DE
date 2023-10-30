@@ -3,13 +3,13 @@ title: Best Practices bei der Ausnahmebehandlung
 description: Erfahren Sie mehr über die empfohlenen Methoden zur Protokollierung von Ausnahmen bei der Entwicklung von Adobe Commerce-Projekten.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices bei der Ausnahmebehandlung
 
@@ -88,7 +88,7 @@ Die folgenden Beispiele zeigen eine falsche Ausnahmebehandlung.
 
 ### ![falsch](../../../assets/no.svg) Logik vor der Protokollierung
 
-Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder einem schwerwiegenden Fehler führen, der verhindert, dass die Ausnahme protokolliert wird, und durch ersetzt werden sollte. [korrekt example](#correct-logging-always-comes-first).
+Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder einem schwerwiegenden Fehler führen, der verhindert, dass die Ausnahme protokolliert wird, und durch ersetzt werden sollte. [korrekt example](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![falsch](../../../assets/no.svg) Empty `catch`
 
-Empty `catch` -Blöcke können ein Zeichen für eine unbeabsichtigte Mutation sein und sollten durch die [korrekt example](#correct-mute-signals).
+Empty `catch` -Blöcke können ein Zeichen für eine unbeabsichtigte Mutation sein und sollten durch die [korrekt example](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 Durch diesen Ansatz werden Zeilenumbrüche in der Nachricht eingeführt, die nicht mit PSR-3 konform sind. Die Ausnahme, einschließlich Stacktrace, muss Teil des Nachrichtenkontexts sein, um sicherzustellen, dass sie mit der Nachricht in New Relic oder einem anderen monolog-kompatiblen PSR-3-Protokollspeicher korrekt gespeichert wird.
 
-Beheben Sie dieses Problem, indem Sie den Code ersetzen, der den korrekten Beispielen folgt, die unter [In das Ausnahmeprotokoll schreiben](#correct-write-to-the-exception-log) oder [Herabstufungsausnahmen](#correct-downgrade-exceptions).
+Beheben Sie dieses Problem, indem Sie den Code ersetzen, der den korrekten Beispielen folgt, die unter [In das Ausnahmeprotokoll schreiben](#write-to-the-exception-log) oder [Herabstufungsausnahmen](#downgrade-exceptions).
 
 ### ![falsch](../../../assets/no.svg) Herabstufen von Ausnahmen ohne Kontext
 
-Die Ausnahme wird auf einen Fehler herabgestuft, bei dem kein Objekt, sondern nur eine Zeichenfolge übergeben werden darf. Daher wird die `getMessage()`. Dadurch geht die Spur verloren und sollte durch die korrekten Beispiele ersetzt werden, die in [In das Ausnahmeprotokoll schreiben](#correct-write-to-the-exception-log) oder [Herabstufungsausnahmen](#correct-downgrade-exceptions).
+Die Ausnahme wird auf einen Fehler herabgestuft, bei dem kein Objekt, sondern nur eine Zeichenfolge übergeben werden darf. Daher wird die `getMessage()`. Dadurch geht die Spur verloren und sollte durch die korrekten Beispiele ersetzt werden, die in [In das Ausnahmeprotokoll schreiben](#write-to-the-exception-log) oder [Herabstufungsausnahmen](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![falsch](../../../assets/no.svg) Melden Sie nur die Meldung im Ausnahmeprotokoll an.
 
-Anstelle der Übergabe des Objekts `$e`, nur `$e->getMessage()` übergeben wird. Dadurch geht die Spur verloren und sollte durch die richtigen Beispiele ersetzt werden [In das Ausnahmeprotokoll schreiben](#correct-write-to-the-exception-log) oder [Herabstufungsausnahmen](#correct-downgrade-exceptions).
+Anstelle der Übergabe des Objekts `$e`, nur `$e->getMessage()` übergeben wird. Dadurch geht die Spur verloren und sollte durch die richtigen Beispiele ersetzt werden [In das Ausnahmeprotokoll schreiben](#write-to-the-exception-log) oder [Herabstufungsausnahmen](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![falsch](../../../assets/no.svg) Fehlt `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Auslassen der `phpcs:ignore` las Trigger eine Warnung in PHPCS und sollte Ihr CI nicht übergeben. Dies sollte durch das richtige Beispiel ersetzt werden, das in [Schallzeichen](#correct-mute-signals).
+Auslassen der `phpcs:ignore` las Trigger eine Warnung in PHPCS und sollte Ihr CI nicht übergeben. Dies sollte durch das richtige Beispiel ersetzt werden, das in [Schallzeichen](#mute-signals).
 
 ```php
 try {
