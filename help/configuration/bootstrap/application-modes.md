@@ -2,9 +2,9 @@
 title: Anwendungsmodi
 description: Die Commerce-Anwendung kann je nach Bedarf in verschiedenen Modi eingesetzt werden. Zeigen Sie eine detaillierte Liste der verfügbaren Anwendungsmodi an.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 982c478f73bdd1301210db5a89fb09edf69a6c42
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Siehe [Betriebsmodus festlegen](../cli/set-mode.md) , um zu erfahren, wie Sie di
 
 ## Cloud-Unterstützung
 
-Die Anwendungsmodi für ein Cloud-Infrastrukturprojekt müssen nicht verwaltet werden. Aufgrund des schreibgeschützten Dateisystems können Sie die Modi in den Remote-Cloud-Umgebungen nicht ändern. Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung automatisch in aus _Wartung_ -Modus während einer Bereitstellung verwenden, wodurch Ihre Site offline geschaltet wird, bis die Bereitstellung abgeschlossen ist. Andernfalls bleibt die Anwendung in _production_ -Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) im _Leitfaden zu Commerce on Cloud Infrastructure_.
+Die Anwendungsmodi für ein Cloud-Infrastrukturprojekt müssen nicht verwaltet werden. Aufgrund des schreibgeschützten Dateisystems können Sie die Modi in den Remote-Cloud-Umgebungen nicht ändern. Versuchen Sie nicht, die Modi durch Ändern der `app/etc/env.php` -Datei, da die `ece-tools` -Paket überschreibt die Datei basierend auf mehreren Konfigurationsquellen.
+
+Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung automatisch in aus _Wartung_ -Modus während einer Bereitstellung verwenden, wodurch Ihre Site offline geschaltet wird, bis die Bereitstellung abgeschlossen ist. Andernfalls bleibt die Anwendung in _production_ -Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) im _Leitfaden zu Commerce on Cloud Infrastructure_.
 
 Wenn Sie Cloud Docker für Commerce als Entwicklungstool verwenden, können Sie Ihr Cloud-Infrastrukturprojekt in einer Docker-Umgebung in _Entwickler_ Modus, aber die Leistung ist aufgrund zusätzlicher Dateisynchronisierungsvorgänge langsamer. Siehe [Docker-Umgebung bereitstellen](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) im _Handbuch zu Cloud Docker für Commerce_.
 
