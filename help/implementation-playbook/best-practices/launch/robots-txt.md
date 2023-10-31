@@ -1,19 +1,20 @@
 ---
-title: Best Practices zum Konfigurieren von Dateien "robots.txt"und "sitemap.xml"
-description: Erfahren Sie, wie Sie Anweisungen über Ihre Adobe Commerce-Website an Webcrawler weitergeben.
+title: Best Practices für die Konfiguration von Webcrawlern
+description: Erfahren Sie, wie Sie mithilfe von "robots.txt"- und "sitemap.xml"-Dateien Anweisungen über Ihre Adobe Commerce-Website an Webcrawler weitergeben.
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-# Best Practices für die Konfiguration `robots.txt` und `sitemap.xml` files
 
-Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt` und `sitemap.xml` -Dateien in Adobe Commerce, einschließlich Konfiguration und Sicherheit. Diese Dateien weisen Webroboter (typischerweise Suchmaschinen-Roboter) an, wie Seiten auf einer Website durchsucht werden. Die Konfiguration dieser Dateien kann die Site-Leistung und Suchmaschinenoptimierung verbessern.
+# Best Practices für die Konfiguration von Webcrawlern
+
+Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt` und `sitemap.xml` -Dateien in Adobe Commerce, einschließlich Konfiguration und Sicherheit. Diese Dateien weisen Webcrawler (typischerweise Suchmaschinen-Roboter) an, wie Seiten auf einer Website durchsucht werden. Die Konfiguration dieser Dateien kann die Site-Leistung und Suchmaschinenoptimierung verbessern.
 
 >[!NOTE]
 >

@@ -2,10 +2,10 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
+source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 10%
+source-wordcount: '274'
+ht-degree: 11%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 10%
       - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
    - Launch {#launch}
       - [Übersicht](best-practices/launch/overview.md)
-      - [Konfigurieren der Datei &quot;robots.txt&quot;](best-practices/launch/robots-txt.md)
+      - [Webcrawler konfigurieren](best-practices/launch/robots-txt.md)
       - [Verhindern und Reagieren auf Sicherheitsvorfälle](best-practices/launch/prevent-respond-security-incident.md)
    - Wartung {#maintenance}
       - [Übersicht](best-practices/maintenance/overview.md)
