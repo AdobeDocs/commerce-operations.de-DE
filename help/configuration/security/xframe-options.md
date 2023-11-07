@@ -1,18 +1,18 @@
 ---
-title: X-Frame-Options-Kopfzeile
-description: Verwenden Sie X-Frame-Options zum Steuern von Seiten-Renderings.
+title: Verhindern von Clickjacking-Exploits
+description: Verhindern Sie Clickjacking-Exploits, indem Sie die Kopfzeile "X-Frame-Options"verwenden, um Seitenrenderungen zu steuern.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# X-Frame-Options-Kopfzeile
+# Verhindern von Clickjacking-Exploits
 
-So verhindern Sie [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) Exploits verwenden, haben wir eine Option zur Verwendung der [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP-Anfrage-Header in -Anfragen an Ihre Storefront.
+Verhindern [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) Exploits durch Einbeziehung der [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP-Anfrage-Header in -Anfragen an Ihre Storefront.
 
 Die `X-Frame-Options` -Kopfzeile ermöglicht Ihnen anzugeben, ob ein Browser eine Seite in einem `<frame>`, `<iframe>`oder `<object>` wie folgt:
 

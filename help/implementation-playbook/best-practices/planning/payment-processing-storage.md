@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Zahlungsdetails sicher verarbeiten und speich
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Eines der wichtigsten Grundsätze bei der Aufrechterhaltung [PCI-Compliance](htt
 
 Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und dies könnte einen Verstoß gegen Ihre Verpflichtungen als Händler im Rahmen des Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen über das Modell der geteilten Verantwortung und die Leitlinien für Handelsverpflichtungen finden Sie im [Handbuch zum freigegebenen Adobe Commerce-Responsibility-Modell](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
 
-Befolgen Sie die unten stehenden Best Practices, um sicherzustellen, dass Sie die Zahlungsinformationen auf Ihrer E-Commerce-Site ordnungsgemäß verarbeiten. Weitere Hinweise zu den allgemeinen Best Practices für die Sicherheit finden Sie in unserer [Handbuch zu Best Practices für die Sicherheit von Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) über das Adobe Trust Center
+Befolgen Sie die unten stehenden Best Practices, um sicherzustellen, dass Sie die Zahlungsinformationen auf Ihrer E-Commerce-Site ordnungsgemäß verarbeiten. Weitere Anleitungen zu Best Practices für die Sicherheit finden Sie unter [Sichern Ihrer Site und Infrastruktur](../launch/security-best-practices.md).
 
 ## Betroffene Produkte und Versionen
 
