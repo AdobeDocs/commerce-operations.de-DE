@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
+source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 5%
+source-wordcount: '760'
+ht-degree: 3%
 
 ---
 # Technische Dokumentation zu Adobe Commerce
@@ -54,25 +54,75 @@ Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie m
 
 ## Vorlagen
 
-Die `_jekyll` -Verzeichnis enthält vorlagenbezogene Themen und erforderliche Assets.
-Die Vorlagen, die die Vorlagensprache Liquid verwenden, befinden sich im `_jekyll/templated` als HTML-Dateien.
-Die `_jekyll/_data` enthält Dateien mit den Daten, die zum Rendern der Vorlagen verwendet werden.
+Für einige Themen verwenden wir Datendateien und Vorlagen, um veröffentlichte Inhalte zu generieren. Anwendungsbeispiele für diesen Ansatz:
 
-So rendern Sie alle Vorlagen:
+* Veröffentlichen großer Mengen programmatisch generierter Inhalte
+* Bereitstellung einer einzigen &quot;Source of Truth&quot; für Kunden auf mehreren Systemen, die maschinenlesbare Dateiformate wie YAML für die Integration benötigen (z. B. Site-Wide Analysis Tool)
+
+Beispiele für vorlagenbasierte Inhalte sind unter anderem:
+
+* [Referenz zu CLI-Tools](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [Tabellen zur Produktverfügbarkeit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [Systemanforderungen - Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+
+### Vorlageninhalt generieren
+
+Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabellen zur Produktverfügbarkeit und zu den Systemanforderungen hinzufügen. Die Wartung aller anderen Vorlageninhalte wird entweder von einem dedizierten Team-Mitglied automatisiert oder verwaltet. Diese Anweisungen sind für &quot;die meisten&quot;Autoren gedacht.
+
+>**NOTE:**
+>
+>* Das Generieren von Vorlageninhalten erfordert das Arbeiten an der Befehlszeile in einem Terminal.
+>* Ruby muss installiert sein, um das Rendering-Skript ausführen zu können. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
+
+Im Folgenden finden Sie eine Beschreibung der Dateistruktur für Vorlageninhalte:
+
+* `_jekyll`—Enthält vorlagenbasierte Themen und erforderliche Assets
+* `_jekyll/_data`—Enthält die maschinenlesbaren Dateiformate zum Rendern von Vorlagen
+* `_jekyll/templated`—Enthält HTML-basierte Vorlagendateien, die die Sprache Liquid Template verwenden
+* `help/_includes/templated`—Enthält die generierte Ausgabe für den Vorlageninhalt in `.md` Dateiformat, damit es in Experience League-Themen veröffentlicht werden kann; das Rendering-Skript schreibt die generierte Ausgabe automatisch für Sie in dieses Verzeichnis
+
+So aktualisieren Sie Vorlageninhalte:
+
+1. Öffnen Sie in Ihrem Texteditor eine Datendatei im `/jekyll/_data` Verzeichnis. Beispiel:
+
+   * [Tabellen zur Produktverfügbarkeit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [Systemanforderungen - Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+
+1. Verwenden Sie die vorhandene YAML-Struktur, um Einträge zu erstellen.
+
+   Um beispielsweise eine Version von Adobe Commerce zu den Produktenverfügbarkeitstabellen hinzuzufügen, fügen Sie jedem Eintrag in der `extensions` und `services` der `/jekyll/_data/product-availability.yml` Datei (ändern Sie die Versionsnummern nach Bedarf):
+
+   ```
+   support:
+      - core: 1.2.3
+        version: 4.5.6
+   ```
 
 1. Navigieren Sie zum `_jekyll` Verzeichnis.
 
-   cd_jekyll
+   ```
+   cd _jekyll
+   ```
 
-1. Führen Sie das Rendering-Skript aus.
+1. Generieren von Vorlageninhalt und Schreiben der Ausgabe in die `help/_includes/templated` Verzeichnis.
 
-```
-_scripts/render
-```
+   ```
+   rake render
+   ```
 
-> **NOTE:** Sie müssen das Skript über die `_jekyll` Verzeichnis.
-> **NOTE:** Ruby muss installiert sein, um dieses Skript ausführen zu können.
+   >**NOTE:** Sie müssen das Skript über die `_jekyll` Verzeichnis. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie die Ruby-Abhängigkeiten zuerst mit der `bundle install` Befehl.
 
-Das Skript führt das Rendern aus und schreibt gerenderte Vorlagen in die `help/_includes/templated` Verzeichnis.
+1. Überprüfen Sie, ob die erwarteten `help/_includes/templated` -Dateien geändert.
+
+   ```
+   git status
+   ```
+
+   Sie sollten die Ausgabe ähnlich der folgenden sehen:
+
+   ```
+   modified:   _data/product-availability.yml
+   modified:   ../help/_includes/templated/product-availability-extensions.md
+   ```
 
 Weitere Informationen finden Sie in der Jekyll-Dokumentation . [Datendateien](https://jekyllrb.com/docs/datafiles), [Flüssige Filter](https://jekyllrb.com/docs/liquid/filters/)und anderen Funktionen.
