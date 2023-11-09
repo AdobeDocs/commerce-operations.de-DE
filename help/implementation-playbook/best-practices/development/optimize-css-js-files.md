@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie CSS- und JavaScript (JS)-Dateien für Adobe C
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,8 @@ Die Ladezeit von CSS- und JavaScript-Dateien (JS) kann durch Zusammenführen, Mi
 >[!IMPORTANT]
 >
 >Adobe Commerce in der Cloud-Infrastruktur wird immer im Produktionsmodus ausgeführt. Andernfalls ist es nicht möglich, sie festzulegen. Daher müssen Sie die Befehlszeilenmethode verwenden, um das Zusammenführen, Minimieren und Bundling zu ermöglichen.
+
+Führen Sie keine Dateien zusammen oder bündeln Sie sie, wenn Ihre Bereitstellung HTTP2 verwendet. HTTP2 lädt statische Dateien asynchron herunter. Browser müssen eine gesamte zusammengeführte Datei herunterladen, bevor die Dateiinhalte verarbeitet werden.
 
 ### Verwenden von Admin
 
