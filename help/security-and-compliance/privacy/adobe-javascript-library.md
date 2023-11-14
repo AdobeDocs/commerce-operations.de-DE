@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit benutzerdefinierten Tools auf personenbez
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-Die [JavaScript-Bibliothek zum Adobe Datenschutz](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) ist eine Reihe von Tools, mit denen Sie einen Prozess für den Zugriff auf und das Löschen von privaten Daten erstellen können.
+Die [JavaScript-Bibliothek zum Adobe Datenschutz](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) ist eine Reihe von Tools, mit denen Sie einen Prozess für den Zugriff auf und das Löschen von privaten Daten erstellen können.
 
 Adobe Commerce- und Magento Open Source-Datenverfolgungsdienste können personenbezogene Daten speichern, die auf Datenschutzbestimmungen wie die [Die Datenschutz-Grundverordnung (DSGVO)](gdpr.md) und [California Consumer Privacy Act (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ Die AdobePrivacy JS Library bietet verschiedene Funktionen zum Verwalten von im 
 `retrieveThenRemoveIdentities()`
 : Diese Funktion ähnelt der `removeIdentities()` , sodass ein Array von Identitäten abgerufen und aus dem Browser entfernt wird.
 
-Weitere Informationen und Beispiele für die Verwendung dieser Funktionen finden Sie im Abschnitt [Offizielle Bibliotheksdokumentation](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html).
+Weitere Informationen und Beispiele für die Verwendung dieser Funktionen finden Sie im Abschnitt [Offizielle Bibliotheksdokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Initialisierung
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Der Konstruktor akzeptiert ein Konfigurationsobjekt mit Parametern während der Instanziierung.
-Siehe Abschnitt [Offizielle Bibliotheksdokumentation](https://developer.adobe.com/apis/experienceplatform/gdpr/services/allservices.html) für eine Liste dieser Konfigurationsparameter.
+Siehe Abschnitt [Offizielle Bibliotheksdokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) für eine Liste dieser Konfigurationsparameter.

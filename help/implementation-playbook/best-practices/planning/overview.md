@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Best Practices für die Implementierung
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 48ed42e69c5786a10de3426d581e35030412c001
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
     <td>Konfigurieren Sie Sites, Stores und Ansichten, um die Site-Leistung zu maximieren.</td>
   </tr>
   <tr>
-    <td><a href="https://business.adobe.com/blog/how-to/usual-suspects-five-configuration-fixes-maximize-your-peak-sales">Allgemeine Konfigurationsprobleme</a></td>
+    <td><a href="https://business.adobe.com/blog/how-to/the-usual-suspects-5-configuration-issues-to-maximize-your-peak-sales">Allgemeine Konfigurationsprobleme</a></td>
     <td>Beheben und verhindern Sie die fünf häufigsten Konfigurationsprobleme für Adobe Commerce-Sites.</td>
   </tr>
   <tr>

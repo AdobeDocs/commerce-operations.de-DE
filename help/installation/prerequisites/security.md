@@ -3,9 +3,9 @@ title: Hausinterne Installationssicherheit
 description: Erfahren Sie mehr über Möglichkeiten, die Sicherheitsbereitschaft Ihrer Adobe Commerce- oder Magento Open Source-Installation vor Ort zu verbessern.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -68,4 +68,4 @@ So aktivieren Sie Apache, um eine Verbindung zu einem anderen Host mit aktiviert
 Je nach Ihren Sicherheitsanforderungen kann es erforderlich sein, Port 80 und andere Ports in Ihrer Firewall zu öffnen. Aufgrund der sensiblen Eigenschaften der Netzwerksicherheit empfiehlt Adobe dringend, sich mit Ihrer IT-Abteilung in Verbindung zu setzen, bevor Sie fortfahren. Im Folgenden finden Sie einige empfohlene Verweise:
 
 * Ubuntu: [Ubuntu-Dokumentationsseite](https://help.ubuntu.com/community/IptablesHowTo)
-* CentOS: [CentOS-Anleitung](https://wiki.centos.org/HowTos/Network/IPTables).
+* CentOS: [CentOS-Anleitung](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
