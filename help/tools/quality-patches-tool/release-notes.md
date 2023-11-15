@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
+source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
 workflow-type: tm+mt
-source-wordcount: '15346'
+source-wordcount: '15669'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.42 {#v1-1-42}
+
+* **ACSD-53658** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems, bei dem *[!UICONTROL Recently Viewed]* Produktdaten werden in der Store-Ansicht nicht ordnungsgemäß aktualisiert.
+* **ACSD-54626** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem Sie keine neue Bestellregel erstellen können (`createPurchaseOrderApprovalRule`) durch die `NUMBER_OF_SKUS` Attribut über [!DNL GraphQL].
+* **ACSD-53845** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebt die [!DNL MySQL] Verbindungs-Timeout-Problem bei `consumer max_messages` = 0.
+* **ACSD-54890** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem `aggregate_sales_report_bestsellers_data` verursacht [!DNL MySQL] Fehler aufgrund `/tmp` Speicherplatz vergeudet.
+* **ACSD-55112** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem die *[!UICONTROL Submit review]* -Schaltfläche kann mehrmals ohne [!DNL Google reCAPTCHA v3] Validierung.
+* **ACSD-54264** (für Adobe Commerce >=2.4.4-p5 &lt;2.4.5) || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7) - Behebt das Problem, bei dem die Fehlermeldung *&quot;Das angeforderte Attribut kann nicht aktualisiert werden. Zeilen-ID: store_id&quot;* angezeigt, wenn ein Kunde versucht, mit einem verhandelbaren Angebot aus einer anderen Store-Ansicht auszuchecken.
+* **ACSD-54418** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebung des Problems, bei dem ein fester Rabatt fälschlicherweise auf jedes untergeordnete Produkt des dynamisch primierten Bundles angewendet wird.
+* **ACSD-55238** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Fehlerbehebungen zum Speichern des leeren Produkts *[!UICONTROL Meta Description]*.
+* **ACSD-54966** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem ein Couponcode mit begrenzter Verwendung pro Kunde nicht wiederverwendet werden kann, wenn die vorherige Bestellung fehlgeschlagen ist.
+* **ACSD-54060** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem ein eingeschränkter Administrator ein Produkt nicht speichern kann, wenn es ein untergeordnetes Element eines anderen Produkts ist, das einem anderen Bereich zugewiesen ist.
+* **ACSD-48910** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.6) - Es wurde ein Problem behoben, bei dem ein Bundle-Produkt, das mehreren Quellen zugewiesen wurde, nach der Fakturierung und dem Versand einer Bestellung nicht mehr vorrätig war, selbst wenn es noch eine Menge ungleich null hat.
+* **ACSD-55381** (für Adobe Commerce >=2.4.2 &lt;2.4.7) - Behebung eines internen Serverfehlers bei der Abfrage `configurable_product_option_uid` und `configurable_product_option_value_uid` -Felder aus einem [!DNL B2B] *[!UICONTROL Requisition list]* via [!DNL GraphQL].
+* **ACSD-55628** (für Adobe Commerce >=2.4.4-p2 &lt; 2.4.5) || >=2.4.5-p1 &lt; 2.4.6) - Fehlerbehebungen beim Hochladen einer Datei in das Registrierungsformular für das Unternehmen und Ersetzen einer Datei für ein Kundenattribut im Storefront.
+* Aktualisierte Patches: ACSD-51240, ACSD-51890, ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
 
