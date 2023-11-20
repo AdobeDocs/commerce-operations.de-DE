@@ -1,7 +1,7 @@
 ---
-source-git-commit: 965d35bfc4150230d6f4bc3b3a45c951fc13ed2b
+source-git-commit: e6bce0f8e9244d1a7c31f23687474a7dc4586c5d
 workflow-type: tm+mt
-source-wordcount: '532'
+source-wordcount: '613'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,106 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
+
+### 20. November 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde ein neues Thema hinzugefügt, das die <a href="https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/shared-responsibility.html">Sicherheitsmodell für gemeinsame Verantwortung</a> für Adobe Commerce zu Cloud-Infrastrukturprojekten.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b1bf4ffa950bf426c9e769904f5587cad93add15">b1bf4f</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 16. November 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">unterstützende Politik</a> für Dienste von Drittanbietern und Softwareabhängigkeiten.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/010c625d2a00fda022b9e56098e74bb7b690479f">010c62</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 15. November 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.42 Quality Patches Tool (QPT) .</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e89fcf5fb2aa750c34bcc9152be9ae53e673bb5c">e89fcf</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 9. November 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.41 Quality Patches Tool (QPT) .</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fbc090e5fbd70ee4d594b8a813691abdddce9e20">fbc090</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 7. November 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Hinzufügung von <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/launch/security-best-practices.html">Best Practices für die Sicherheit</a> dem Thema <em>Implementierungs-Playbook</em>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2ffda8afd118184f314e8e329a678605ac241007">2ffda8</a> (commit)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 25. Oktober 2023
 
@@ -111,66 +211,6 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21d8d1f26e44d48c84095c539e68b34066854fda">21d8d1</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 14. September 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.38 Quality Patches Tool (QPT) .</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1d1fac956ceb8f869b60accfe0180c593d659ec1">1d1fac</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 11. September 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html">Erweiterungsstrategie</a> mit Informationen zu App Builder, API-Mesh und Adobe I/O-Ereignissen.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f4f420cee5f9241f56107c4218793af394ba1193">f4f420</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 6. September 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.37 Quality Patches Tool (QPT) .</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
