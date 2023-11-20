@@ -1,10 +1,10 @@
 ---
 user-guide-title: Sicherheit und Einhaltung
-user-guide-description: Erfahren Sie, wie Adobe Commerce- und Magento Open Source-Händler für die Aufrechterhaltung eines sicheren Umfelds und die Einhaltung der gesetzlichen Anforderungen und Best Practices für Online-Händler in ihrem jeweiligen Land verantwortlich sind.
+user-guide-description: Erfahren Sie mehr über die Einhaltung gesetzlicher Vorschriften und die Verantwortung der Händler für die Aufrechterhaltung eines sicheren Adobe Commerce-Projekts.
 feature: Security
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '58'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,7 @@ ht-degree: 1%
 # Sicherheit und Compliance {#security-and-compliance}
 
 - [Übersicht](overview.md)
+- [Gemeinsame Verantwortung](shared-responsibility.md)
 - [Content Security-Richtlinie](content-security-policy.md)
 - Datenschutzbestimmungen {#privacy}
    - [CCPA](privacy/ccpa.md)
