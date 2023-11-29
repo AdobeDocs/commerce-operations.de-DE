@@ -2,9 +2,9 @@
 title: Vor-Ort-Installation
 description: Erfahren Sie mehr über die Softwareabhängigkeiten, die für lokale Installationen von Adobe Commerce und Magento Open Source erforderlich sind.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,11 @@ Informationen zum Installieren oder Aktualisieren von Apache finden Sie unter [A
 
 ### PHP
 
-Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen von PHP und [PHP] für PHP-Anforderungen.
+Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen von PHP und [PHP](../system-requirements.md#php-settings) für PHP-Anforderungen.
 
 ### MySQL
+
+Vergewissern Sie sich, dass Sie über eine kompatible Version von MySQL für die Adobe Commerce- oder Magento Open Source-Version verfügen, die Sie installieren. Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -80,7 +82,7 @@ Beispiel:
 mysql -u magento -p
 ```
 
-Vergewissern Sie sich, dass Sie über die richtige MySQL-Version für die Adobe Commerce- oder Magento Open Source-Version verfügen, die Sie installieren ([Hier finden Sie unterstützte Versionen.](../system-requirements.md). Das folgende Ergebnis zeigt die Version, die Sie ausführen.)
+Das folgende Ergebnis zeigt die Version, die Sie ausführen.
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.

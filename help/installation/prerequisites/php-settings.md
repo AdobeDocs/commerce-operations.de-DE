@@ -3,9 +3,9 @@ title: PHP-Einstellungen
 description: Führen Sie diese Schritte aus, um erforderliche PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: aacc4332cecec0cb9b0f5c23d60b7abd1c63feea
+source-git-commit: 9fe0a27346554bca3cb635b2e7ecf175adcec54a
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '812'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ In diesem Thema wird beschrieben, wie Sie die erforderlichen PHP-Optionen festle
 >[!NOTE]
 >
 >Die neueste Version von Adobe Commerce und Magento Open Source erfordert mindestens PHP 8.1. Siehe [Systemanforderungen](../system-requirements.md) für alle unterstützten PHP-Versionen.
+
+Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) im _Handel mit Cloud-Infrastruktur_ Handbuch.
 
 ## Überprüfen, ob PHP installiert ist
 
