@@ -2,9 +2,9 @@
 title: Inkrement-ID ändern
 description: Ändern Sie die Inkrement-ID für eine Commerce-Datenbankentität.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ In diesen Fällen müssen Sie möglicherweise die Inkrement-ID für neue DB-Enti
 
 >[!INFO]
 >
->Sie können auch das Problem mit dem Payment Gateway für PayPal beheben, indem Sie mehrere Zahlungen pro Rechnungskennung in PayPal&#39;s Payment Receiving Preferences zulassen. Siehe [PayPal Gateway Anfrage abgelehnt - Problem mit doppelten Rechnungen] im _Wissensdatenbank_.
+>Sie können auch das Problem mit dem Payment Gateway für PayPal beheben, indem Sie mehrere Zahlungen pro Rechnungskennung in PayPal&#39;s Payment Receiving Preferences zulassen. Siehe [PayPal Gateway Anfrage abgelehnt - Problem mit doppelten Rechnungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) im _Wissensdatenbank_.
 
 ## Erforderliche Schritte
 
@@ -74,6 +74,6 @@ Vor der Ausführung des `ALTER TABLE` in einer Produktionsumgebung von Adobe Com
 
 <!-- Link Definitions -->
 
-[PayPal Gateway Anfrage abgelehnt - Problem mit doppelten Rechnungen]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [DB-Backup erstellen]: https://support.magento.com/hc/en-us/articles/360003254334
 [Jede unterstützte Version]

@@ -3,9 +3,9 @@ title: Remote Storage konfigurieren
 description: Erfahren Sie, wie Sie das Remote-Speichermodul für die lokale Commerce-Anwendung konfigurieren.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Nachdem Sie den Remote-Speicher für einen bestimmten Adapter aktiviert haben, k
 
 >[!INFO]
 >
->Der Synchronisierungsbefehl migriert nur Dateien im `pub/media` Verzeichnis, _not_ die Import-/Exportdateien im `var` Verzeichnis. Siehe [Geplanter Import/Export][import-export] im _Benutzerhandbuch für Commerce 2.4_.
+>Der Synchronisierungsbefehl migriert nur Dateien im `pub/media` Verzeichnis, _not_ die Import-/Exportdateien im `var` Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) im _Benutzerhandbuch für Commerce 2.4_.
 
 <!-- link definitions -->
 
