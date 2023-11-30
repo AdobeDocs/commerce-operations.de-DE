@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
+source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '766'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 ### Geringfügige Änderungen
 
-Wenn Sie aus reiner Herzlichkeit kleinere Updates beitragen möchten, besuchen Sie den Artikel und klicken Sie auf die Schaltfläche **Bearbeiten** -Link im Artikel, der zur GitHub-Quelle für den Artikel führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Siehe Allgemein . [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) für weitere Informationen.
+Wenn Sie kleinere Aktualisierungen vornehmen, rufen Sie den Artikel auf und klicken Sie auf den Feedback-Bereich, der unten im Artikel angezeigt wird. Klicken Sie auf **Detaillierte Feedback-Optionen** und klicken Sie anschließend auf **Vorschlagen und Bearbeiten** , um zur Markdown-Quelldatei auf GitHub zu wechseln. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Siehe Allgemein . [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) für weitere Informationen.
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentationen und Codebeispiele in diesem Repository einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
