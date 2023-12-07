@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Best Practices für die Implementierung
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 ## Dateioptimierung
 
 | Best Practice | Beschreibung |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Größe des Katalogbilds ändern](catalog-image-resizing.md) | Bietet Anleitungen zur Größenanpassung von Bildern, bevor ein Store in die Produktion aufgenommen wird, um eine optimale Leistung zu gewährleisten |
 | [CSS und JS](optimize-css-js-files.md) | Zusammenführen und Minimieren von Cascading Style Sheets (CSS)- und JavaScript (JS)-Dateien aus dem Admin oder der Befehlszeile |
 | [Bilder](image-optimization.md) | Optimieren von Bildern und Verwenden Sie Fastly zur Optimierung der Reaktionszeit. |
@@ -62,10 +62,11 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 ## PHP-Entwicklung
 
 | Best Practice | Beschreibung |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Ausnahmebehandlung](exception-handling.md) | Beschreibt empfohlene Methoden für die Protokollierung von Ausnahmen |
 | [Erweiterungen](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Beschreibt Entwicklungsmuster, um die Kompatibilität zwischen Ihrer Erweiterung, zukünftigen Versionen von Adobe Commerce und anderen benutzerdefinierten Erweiterungen sicherzustellen |
 | [Private Inhaltsbausteine](private-content-block-configuration.md) | Konfigurieren privater Inhaltsbausteine zur Optimierung der Storefront-Leistung |
+| [Ändern des Kern- und Drittanbieter-PHP-Codes](modifying-core-and-third-party-code.md) | Ändern Sie die Funktionalität, das Ergebnis oder die Eingabe von Code, den Sie nicht erstellt haben oder den Sie nicht direkt steuern |
 
 ## Plattform und Dienste
 
