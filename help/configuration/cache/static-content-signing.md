@@ -3,9 +3,9 @@ title: Statischer Inhalts-Cache
 description: Hier erhalten Sie Informationen zum Signieren statischer Inhalte und zum Aktivieren oder Deaktivieren der Funktion.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,10 @@ Dadurch wird die URL der statischen Dateien geändert und der Browser wird gezwu
 
 Commerce ermöglicht diese Funktion standardmäßig, und Adobe empfiehlt, diese Funktion weiterhin zu aktivieren, um Probleme im Zusammenhang mit Browsern zu vermeiden, die alte statische Ressourcen bereitstellen.
 
-Die Konfiguration für diese Funktion finden Sie unter [**[!UICONTROL Stores]**> Einstellungen > Konfiguration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+Die Konfiguration für das Signieren statischer Inhalte befindet sich unter [**[!UICONTROL Stores]**> Einstellungen > Konfiguration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://docs.magento.com/user-guide/system/static-file-signature.html).
+
+- **Nur On-Premises**: Diese Konfiguration ist verfügbar, wenn Ihre Site **not** in [Produktionsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
+- **Cloud**: Diese Konfiguration ist ausgeblendet, da der Produktionsmodus strikt durchgesetzt wird. Daher müssen Sie die Befehlszeile wie unten dargestellt verwenden.
 
 ![Einstellungen für statische Dateien](../../assets/configuration/static-files-settings.png)
 
