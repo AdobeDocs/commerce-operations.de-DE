@@ -2,9 +2,9 @@
 title: Bereitstellen von statischen Ansichtsdateien
 description: Erfahren Sie, wie Sie im Produktionsmodus statische Dateien in das Commerce-Dateisystem schreiben.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -57,10 +57,10 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 | `--language (-l)` | Generieren Sie Dateien nur für die angegebenen Sprachen. Standardmäßig werden Dateien für alle ISO-639-Sprachcodes generiert, ohne dass eine Option angegeben ist. Sie können den Namen eines Sprachcodes gleichzeitig angeben. Der Standardwert ist **all**.<br>Beispiel: `--language en_US --language es_ES` | Nein |
 | `--exclude-language` | Generieren Sie Dateien für die angegebenen Sprachcodes. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Sie können den Namen eines Sprachcodes oder eine kommagetrennte Liste von Sprachcodes angeben. Der Standardwert ist **Keine**. | Nein |
 | `--theme <theme>` | Designs, für die statische Inhalte bereitgestellt werden sollen. Der Standardwert ist **all**.<br>Beispiel: `--theme Magento/blank --theme Magento/luma` | Nein |
-| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **Keine**.<br>Beispiel, `--exclude-theme Magento/blank` | Nein |
+| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **Keine**.<br>Beispiel: `--exclude-theme Magento/blank` | Nein |
 | `--area (-a)` | Generieren Sie Dateien nur für die angegebenen Bereiche. Standardmäßig werden Dateien für alle Bereiche generiert, ohne dass eine Option angegeben ist. Gültige Werte sind `adminhtml` und `frontend`. Der Standardwert ist **all**.<br>Beispiel: `--area adminhtml` | Nein |
 | `--exclude-area` | Generieren Sie keine Dateien für die angegebenen Bereiche. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Der Standardwert ist **Keine**. | Nein |
-| `--jobs (-j)` | Aktivieren Sie die parallele Verarbeitung mit der angegebenen Anzahl von Aufträgen. Der Standardwert ist 0 (nicht in parallelen Prozessen ausgeführt). Der Standardwert ist **0**. | Nein |
+| `--jobs (-j)` | Aktivieren [parallele Verarbeitung](manage-indexers.md#reindexing-in-parallel-mode) unter Verwendung der angegebenen Anzahl von Aufträgen. Der Standardwert ist 0 (nicht in parallelen Prozessen ausgeführt). Der Standardwert ist **0**. | Nein |
 | `--symlink-locale` | Erstellen Sie Symlinks für die Dateien dieser Gebietsschemas, die zur Bereitstellung übergeben werden, aber keine Anpassungen aufweisen. | Nein |
 | `--content-version=CONTENT-VERSION` | Benutzerdefinierte Version von statischem Inhalt kann verwendet werden, wenn die Bereitstellung auf mehreren Knoten ausgeführt wird, um sicherzustellen, dass die statische Inhaltsversion identisch ist und die Zwischenspeicherung ordnungsgemäß funktioniert. | Nein |
 | `--no-javascript` | JavaScript-Dateien nicht bereitstellen | Nein |

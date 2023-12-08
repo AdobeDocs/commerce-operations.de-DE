@@ -2,9 +2,9 @@
 title: Indexer verwalten
 description: Sehen Sie sich Beispiele für das Anzeigen und Verwalten von Commerce-Indizes an.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,8 @@ Catalog Search index has been rebuilt successfully in <time>
 >Die Neuindizierung aller Indexer kann bei Geschäften mit einer großen Anzahl von Produkten, Kunden, Kategorien und Werberegeln lange dauern.
 
 ### Neuindizierung im Parallelmodus
+
+{{php-process-control}}
 
 Indexer werden in einem Umfang und mit mehreren Threads angezeigt, um die Neuindizierung im Parallelmodus zu unterstützen. Sie wird anhand der Dimension des Indexers parallelisiert und wird über mehrere Threads hinweg ausgeführt, wodurch die Verarbeitungszeit verkürzt wird.
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Obwohl der in diesen Versionshinweisen beschriebene Code für Verbesserungen und Fehlerkorrekturen mit Adobe Commerce gebündelt ist, werden mehrere dieser Projekte (z. B. B2B, Page Builder und Progressiven Webs Application (PWA) Studio) ebenfalls unabhängig voneinander veröffentlicht. Fehlerbehebungen für diese Projekte werden in den separaten, projektspezifischen Versionsinformationen dokumentiert, die in der Dokumentation für jedes Projekt verfügbar sind. Siehe [Produktversion - Übersicht](/help/release/release-notes/overview.md).
+
+## PHP Process Control {#php-process-control}
+
+Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie die Unterstützung der Prozesssteuerung aktivieren (`pcntl`) in PHP. Siehe [Installation](https://www.php.net/manual/en/pcntl.installation.php) in der PHP-Dokumentation.
