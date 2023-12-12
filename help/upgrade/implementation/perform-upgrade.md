@@ -1,26 +1,28 @@
 ---
 title: Durchführen eines Upgrades
-description: Führen Sie diese Schritte aus, um ein Adobe Commerce- oder Magento Open Source-Projekt zu aktualisieren.
+description: Führen Sie diese Schritte aus, um lokale Bereitstellungen von Adobe Commerce zu aktualisieren.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
+
 # Durchführen eines Upgrades
 
-Sie können Ihre Adobe Commerce- oder Magento Open Source-Anwendung über die Befehlszeile aktualisieren, wenn Sie die Software installiert haben, indem Sie:
+Sie können _vor Ort_ Bereitstellungen der Adobe Commerce- oder Magento Open Source-Anwendung über die Befehlszeile, wenn Sie die Software installiert haben durch:
 
-- Herunterladen des Metapakets mit dem `composer create-project` Befehl.
+- Herunterladen des Composer-Metapakets mit dem `composer create-project` Befehl.
 - Installieren des komprimierten Archivs.
 
 >[!NOTE]
 >
->Verwenden Sie diese Methode nicht zum Aktualisieren, wenn Sie das GitHub-Repository geklont haben. Siehe stattdessen [Aktualisierung einer Git-basierten Installation](../developer/git-installs.md) für Upgrade-Anweisungen.
+>- Informationen zu Adobe Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Upgrade der Commerce-Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) im Cloud-Handbuch.
+>- Verwenden Sie diese Methode nicht zum Aktualisieren, wenn Sie das GitHub-Repository geklont haben. Siehe [Aktualisierung einer Git-basierten Installation](../developer/git-installs.md).
 
-Die folgenden Anweisungen zeigen Ihnen, wie Sie ein Upgrade mit Composer durchführen. Adobe Commerce 2.4.2 unterstützt Composer 2. Wenn Sie versuchen, von &lt;2.4.1 zu aktualisieren, müssen Sie zunächst mithilfe von Composer 1 auf eine Version aktualisieren, die mit Composer 2 kompatibel ist (z. B. 2.4.2) _before_ Upgrade auf Composer 2 für >2.4.2-Upgrades. Darüber hinaus müssen Sie eine [unterstützte Version](../../installation/system-requirements.md) von PHP.
+Die folgenden Anweisungen zeigen Ihnen, wie Sie ein Upgrade mit dem Composer Package Manager durchführen. Adobe Commerce 2.4.2 unterstützt Composer 2. Wenn Sie versuchen, von &lt;2.4.1 zu aktualisieren, müssen Sie zunächst mithilfe von Composer 1 auf eine Version aktualisieren, die mit Composer 2 kompatibel ist (z. B. 2.4.2) _before_ Upgrade auf Composer 2 für >2.4.2-Upgrades. Darüber hinaus müssen Sie eine [unterstützte Version](../../installation/system-requirements.md) von PHP.
 
 >[!WARNING]
 >
@@ -34,7 +36,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
 
 >[!NOTE]
 >
->In den Beispielen am Ende dieses Abschnitts finden Sie Hilfe zum Festlegen verschiedener Release-Ebenen. Beispielsweise eine kleinere Version, einen Qualitäts-Patch und einen Sicherheits-Patch. Adobe Commerce-Kunden können zwei Wochen vor dem Datum der allgemeinen Verfügbarkeit (GA) auf Patches zugreifen. Vorabversionspakete sind nur über Composer verfügbar. Sie können sie erst im Downloadportal oder GitHub finden. Wenn Sie diese Pakete nicht in Composer finden können, wenden Sie sich an den Adobe Commerce-Support.
+>In den Beispielen am Ende dieses Abschnitts finden Sie Hilfe zum Festlegen verschiedener Release-Ebenen. Beispielsweise Qualitäts-Patches und Sicherheits-Patches. Wenn Sie diese Pakete nicht in Composer finden können, wenden Sie sich an den Adobe Commerce-Support.
 
 1. Wechseln Sie in den Wartungsmodus, um während des Aktualisierungsprozesses den Zugriff auf Ihren Speicher zu verhindern.
 
@@ -108,13 +110,13 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
 
    - `<product>` —(Erforderlich) Das zu aktualisierende Paket. Bei ortsansässigen Anlagen muss dieser Wert entweder `product-community-edition` oder `product-enterprise-edition`.
 
-   - `<version>` —(Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel, `2.4.3`.
+   - `<version>` - (Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel: `2.4.3`.
 
    - `--no-update` —(Erforderlich) Deaktiviert die automatische Aktualisierung der Abhängigkeiten.
 
    - `--interactive-root-conflicts` —(Optional) Ermöglicht die interaktive Ansicht und Aktualisierung von nicht mehr aktuellen Werten aus früheren Versionen oder von benutzerdefinierten Werten, die nicht mit der Version übereinstimmen, auf die Sie aktualisieren.
 
-   - `--force-root-updates` —(Optional) Überschreibt alle in Konflikt stehenden benutzerdefinierten Werte mit den erwarteten Magento-Werten.
+   - `--force-root-updates` —(Optional) Überschreibt alle in Konflikt stehenden benutzerdefinierten Werte mit den erwarteten Commerce-Werten.
 
    - `--help` —(Optional) Bietet Nutzungsdetails zum Plug-in.
 
@@ -142,58 +144,36 @@ _Adobe Commerce_:
 composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 versions
 ```
 
-### Beispiel - Nebenversion
-
-Nebenversionen enthalten neue Funktionen, Qualitätsverbesserungen und Sicherheitskorrekturen. Verwenden Sie Composer , um eine Nebenversion anzugeben. So legen Sie beispielsweise das Metapaket für Magento Open Source 2.4.3 fest:
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.0 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.0 --no-update
-```
-
 ### Beispiel - Qualitäts-Patch
 
-Qualitäts-Patches enthalten in erster Linie Funktionen _und_ Sicherheitskorrekturen. Sie können jedoch manchmal neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer , um einen Qualitäts-Patch herunterzuladen. So legen Sie beispielsweise das Metapaket für Magento Open Source 2.4.1 fest:
+Qualitäts-Patches enthalten in erster Linie Funktionen _und_ Sicherheitskorrekturen. Sie können jedoch manchmal neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer , um einen Qualitäts-Patch herunterzuladen.
+
+_Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6 --no-update
 ```
 
 _Magento Open Source_:
 
 ```bash
-composer require-commerce magento/product-community-edition 2.4.3 --no-update
-```
-
-_Adobe Commerce_:
-
-```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3 --no-update
+composer require-commerce magento/product-community-edition 2.4.6 --no-update
 ```
 
 ### Beispiel - Sicherheits-Patch
 
-Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie sind so konzipiert, dass der Aktualisierungsprozess schneller und einfacher wird.
-
-Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.x-px`. Verwenden Sie Composer, um einen Patch anzugeben.
-
-_Magento Open Source_:
-
-```bash
-composer require-commerce magento/product-community-edition 2.4.3-p1 --no-update
-```
+Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie sind so konzipiert, dass der Aktualisierungsprozess schneller und einfacher wird. Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.x-px`.
 
 _Adobe Commerce_:
 
 ```bash
-composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-update
+composer require-commerce magento/product-enterprise-edition 2.4.6-p3 --no-update
+```
+
+_Magento Open Source_:
+
+```bash
+composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 ```
 
 ## Aktualisieren von Metadaten
@@ -250,7 +230,7 @@ composer require-commerce magento/product-enterprise-edition 2.4.3-p1 --no-updat
 
 ## Überprüfen Sie Ihre Arbeit
 
-Öffnen Sie Ihre Storefront-URL in einem Webbrowser, um zu überprüfen, ob das Upgrade erfolgreich war. Wenn Ihr Upgrade nicht erfolgreich war, wird Ihre Storefront nicht ordnungsgemäß geladen.
+Um zu überprüfen, ob das Upgrade erfolgreich war, öffnen Sie Ihre Storefront-URL in einem Webbrowser. Wenn Ihr Upgrade nicht erfolgreich war, wird Ihre Storefront nicht ordnungsgemäß geladen.
 
 Wenn die Anwendung mit einer  `We're sorry, an error has occurred while generating this email.` error:
 
