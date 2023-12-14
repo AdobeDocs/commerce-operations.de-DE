@@ -2,9 +2,9 @@
 title: Indexer verwalten
 description: Sehen Sie sich Beispiele für das Anzeigen und Verwalten von Commerce-Indizes an.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -225,11 +225,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Indexer konfigurieren
+### Indexmodus festlegen
+
+>[!IMPORTANT]
+>
+>Stellen Sie die [!DNL Customer Grid] mit `realtime` anstelle von `schedule`. Die [!DNL Customer Grid] kann nur mit der [!UICONTROL Update on Save] -Option. Dieser Index unterstützt die `Update by Schedule` -Option. Verwenden Sie die folgende Befehlszeile, um diesen Indexer beim Speichern zu aktualisieren: `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>Siehe [Best Practices für die Indexkonfiguration](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) im _Implementierungs-Playbook_.
 
 >[!INFO]
 >
->Bevor Sie den Indexmodus wechseln, empfehlen wir, Ihre Website auf [Wartung](../../installation/tutorials/maintenance-mode.md) Modus und [Cron-Aufträge deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Dadurch wird sichergestellt, dass Sie nicht unter Datenbanksperren leiden.
+>Bevor Sie den Indexmodus wechseln, setzen Sie Ihre Website auf [Wartung](../../installation/tutorials/maintenance-mode.md) Modus und [Cron-Aufträge deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Dadurch wird sichergestellt, dass Sie nicht unter Datenbanksperren leiden.
 
 So legen Sie die Indexkonfiguration fest:
 
