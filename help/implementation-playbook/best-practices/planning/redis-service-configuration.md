@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Zwischenspeicherleistung verbessern könn
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
+source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,49 @@ Informationen über Vor-Ort-Anlagen finden Sie unter [Konfigurieren des Redis-Se
 >[!NOTE]
 >
 >Überprüfen Sie, ob Sie die neueste Version des `ece-tools` Paket. Wenn nicht, [Aktualisierung auf die neueste Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe der Variablen `composer show magento/ece-tools` CLI-Befehl.
+
+
+### L2-Cache-Speichergröße (Adobe Commerce Cloud)
+
+Der L2-Cache verwendet eine [temporäres Dateisystem](https://en.wikipedia.org/wiki/Tmpfs) als Speichermechanismus. Im Vergleich zu spezialisierten Schlüssel-Wert-Datenbanksystemen verfügt ein temporäres Dateisystem nicht über eine Schlüsselausscheidungsrichtlinie, um die Speicherbelegung zu steuern.
+
+Das Fehlen einer Speicherbelegungskontrolle kann dazu führen, dass die L2-Cache-Speicherbelegung mit der Zeit zunimmt, indem der veraltete Cache akkumuliert wird.
+
+Um zu vermeiden, dass der Speicher von L2-Cache-Implementierungen erschöpft ist, löscht Adobe Commerce den Speicher, wenn ein bestimmter Schwellenwert erreicht wird. Der Standardschwellenwert beträgt 95 %.
+
+Es ist wichtig, die maximale Auslastung des L2-Cache-Speichers basierend auf den Projektanforderungen für den Cache-Speicher anzupassen. Verwenden Sie eine der folgenden Methoden, um die Größe des Arbeitsspeichercache zu konfigurieren:
+
+- Erstellen Sie ein Support-Ticket, um Größenänderungen der `/dev/shm` einhängen.
+- Passen Sie die `cleanup_percentage` -Eigenschaft auf Anwendungsebene verwenden, um den maximalen Füllprozentsatz des Speichers zu begrenzen. Der verbleibende freie Speicher kann von anderen Diensten genutzt werden.
+Sie können die Konfiguration in der Bereitstellungskonfiguration unter der Cache-Konfigurationsgruppe anpassen `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>Die `cleanup_percentage` Die konfigurierbare Option wurde in Adobe Commerce 2.4.4 eingeführt.
+
+Der folgende Code zeigt eine Beispielkonfiguration im `.magento.env.yaml` Datei:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+Die Cache-Anforderungen können je nach Projektkonfiguration und benutzerdefiniertem Drittanbieter-Code variieren. Die Skalierung des L2-Cache-Speichers ermöglicht es, den L2-Cache ohne zu viele Schwellentreffer zu betreiben.
+Idealerweise sollte sich die L2-Cache-Speichernutzung auf einer bestimmten Ebene unterhalb des Schwellenwerts stabilisieren, um häufige Speicherbereinigungen zu vermeiden.
+
+Sie können die Speichernutzung des L2-Cache-Speichers auf jedem Knoten des Clusters mithilfe des folgenden CLI-Befehls überprüfen und nach der `/dev/shm` Linie.
+Die Verwendung kann von Knoten zu Knoten variieren, sollte jedoch zum selben Wert konvertiert werden.
+
+```bash
+df -h
+```
 
 ## Redis-Slave-Verbindung aktivieren
 
