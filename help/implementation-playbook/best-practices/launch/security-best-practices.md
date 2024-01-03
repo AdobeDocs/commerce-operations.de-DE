@@ -2,13 +2,13 @@
 title: Sichern Ihrer Commerce-Site und -Infrastruktur
 description: Erhalten Sie die Sicherheit, indem Sie Best Practices für die Sicherheit beim Einrichten, Konfigurieren und Aktualisieren von Adobe Commerce-Installationen implementieren.
 feature: Best Practices
-source-git-commit: cea5868ee37317ae9adfd8b580cd38c33c19761e
+exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
+source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
-
 
 # Sichern Ihrer Commerce-Site und -Infrastruktur
 
@@ -148,14 +148,15 @@ Adobe hat jedoch festgestellt, dass die meisten Website-Kompromisse nicht auf ei
 Bei den am häufigsten aufgetretenen Angriffen wird bösartiger Code in die absolute Kopf- oder Fußzeile eines Kundenspeichers eingefügt. Dort erfasst der Code Formulardaten, die ein Kunde in das Storefront eingibt, einschließlich Anmeldeinformationen des Kunden und Formulardaten zum Checkout. Anschließend werden diese Daten zu böswilligen Zwecken an einen anderen Speicherort gesendet und nicht an das Commerce-Backend. Außerdem kann Malware den Admin bei der Ausführung von Code, der das ursprüngliche Zahlungsformular ersetzt, durch ein gefälschtes Formular beeinträchtigen, das alle vom Zahlungsdienstleister festgelegten Schutzmaßnahmen außer Kraft setzt.
 
 Client-seitige Kreditkarten-Skimmers sind eine Art Malware, die Code in Commerce-Website-Inhalte einbettet, die im Browser eines Benutzers ausgeführt werden können, wie in der folgenden Abbildung dargestellt.
-Wenn bestimmte Aktionen ausgeführt werden, z. B. ein Benutzer, der ein Formular sendet oder einen Feldwert ändert, serialisiert der Skimmer die Daten und sendet sie an Endpunkte von Drittanbietern. Diese Endpunkte sind normalerweise andere kompromittierte Websites, die als Weiterleitung dienen, um die Daten an ihr endgültiges Ziel zu senden.
 
 ![Datenfluss für Malware-Angriffe auf E-Commerce-Sites](../../../assets/playbooks/malware-data-flow.svg)
 
 Wenn bestimmte Aktionen ausgeführt werden, z. B. ein Benutzer, der ein Formular sendet oder einen Feldwert ändert, serialisiert der Skimmer die Daten und sendet sie an Endpunkte von Drittanbietern. Diese Endpunkte sind normalerweise andere kompromittierte Websites, die als Weiterleitung dienen, um die Daten an ihr endgültiges Ziel zu senden.
 
 
-Wenn die Commerce-Site angegriffen wurde, befolgen Sie die Best Practices von Adobe Commerce für [Reaktion auf einen Sicherheitsvorfall](../maintenance/respond-to-security-incident.md).
+>[!TIP]
+>
+>Wenn eine Commerce-Site von einem Malware-Angriff betroffen ist, befolgen Sie die Adobe Commerce-Best Practices für [Reaktion auf einen Sicherheitsvorfall](../maintenance/respond-to-security-incident.md).
 
 ### Die häufigsten Angriffe kennen
 
