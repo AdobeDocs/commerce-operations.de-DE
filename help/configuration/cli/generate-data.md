@@ -3,10 +3,10 @@ title: Generieren von Daten für Leistungstests
 description: Erfahren Sie, wie Sie eine große Datenmenge für Leistungstests generieren.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '788'
+ht-degree: 8%
 
 ---
 
@@ -33,24 +33,26 @@ Die folgende Tabelle enthält Details zu den Profilen des Datengenerators: klein
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
+| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
 | `configurable_products` | 16 mit 24 Optionen | 640 mit 24 Optionen | 800 mit 24 Optionen &amp; 79 mit 200 Optionen | 8.000 mit 24 Optionen | 16.000 mit 24 Optionen |
 | `product_images` | 100 Bilder/3 Bilder pro Produkt | 1000 Bilder/3 Bilder pro Produkt | 1000 Bilder/3 Bilder pro Produkt | 2000 Bilder/3 Bilder pro Produkt | 2000 Bilder/3 Bilder pro Produkt |
-| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
+| `categories` | 30 | 300 | 100 | 3.000 | 6.000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
-| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
-| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
+| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10.000 |
+| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
+| `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
 
 ### Datengenerator ausführen
 
 >[!WARNING]
 >
 >Deaktivieren Sie vor dem Ausführen des Datengenerators alle auf dem Server ausgeführten Cron-Aufträge. Das Deaktivieren von Cron-Aufträgen verhindert, dass der Datengenerator Aktionen ausführt, die mit aktiven Cron-Aufträgen in Konflikt stehen, und vermeidet unnötige Fehler.
+>
+>Wenn Sie Eventing mit implementieren möchten [!DNL Adobe I/O Events for Adobe Commerce] Führen Sie während des Testens der Leistung diesen Befehl aus, bevor Sie sich anmelden [events](https://developer.adobe.com/commerce/extensibility/events/). Das Abonnieren von Ereignissen zuerst kann zu Fehlern führen.
 
 Führen Sie den Befehl wie in diesem Abschnitt beschrieben aus. Nachdem der Befehl ausgeführt wurde, müssen Sie [Neuindizieren aller Indexer](../cli/manage-indexers.md).
 
