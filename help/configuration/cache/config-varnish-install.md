@@ -3,9 +3,9 @@ title: Installieren von Varnish
 description: Siehe Ratschläge zur Installation von Varnish.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,4 @@ Die Installation der Varnish-Software geht über diesen Leitfaden hinaus. Weiter
 varnishd -V
 ```
 
-Ein Beispiel:
-
-```terminal
-varnishd (varnish-6.3.2 revision 199de9b)
-Copyright (c) 2006 Verdens Gang AS
-Copyright (c) 2006-2019 Varnish Software AS
-```
-
-Stellen Sie sicher, dass die Version 6.x ist, bevor Sie fortfahren. Wenn Sie eine Version unter 6.x ausführen, müssen Sie auf eine unterstützte Version aktualisieren. Weitere Informationen finden Sie in der Dokumentation zur Installation von Varnish .
+Stellen Sie sicher, dass [Adobe Commerce und Magento Open Source unterstützen](../../installation/system-requirements.md) die installierte Version von Varnish , bevor Sie fortfahren. Wenn Sie eine nicht unterstützte Version ausführen, müssen Sie auf eine unterstützte Version aktualisieren. Weitere Informationen finden Sie in der Dokumentation zur Installation von Varnish .

@@ -3,9 +3,9 @@ title: Konfigurieren und Verwenden von Varnish
 description: Erfahren Sie, wie Varnish Dateien speichert und den HTTP-Traffic verbessert.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [Varnish Cache] ist ein Open-Source-Beschleuniger für Webanwendungen (auch als _HTTP-Beschleuniger_ oder _Zwischenspeichern von HTTP-Reverse-Proxy_). Variabel speichert (oder speichert) Dateien oder Dateifragmente im Speicher, was es Varnish ermöglicht, die Antwortzeit und den Verbrauch an Netzwerkbandbreite bei zukünftigen, äquivalenten Anforderungen zu reduzieren. Im Gegensatz zu Webservern wie Apache und Nginx wurde Varnish ausschließlich für die Verwendung mit dem HTTP-Protokoll entwickelt.
 
-Commerce 2.4.2 wird mit Version 6.4 getestet. Commerce 2.4.x ist mit Version 6.x kompatibel.
+[Systemanforderungen](../../installation/system-requirements.md) listet die unterstützten Versionen von Varnish auf.
 
 >[!WARNING]
 >
->Wir _dringend empfehlen_ Sie verwenden Varnish in der Produktion. Die integrierte vollständige Zwischenspeicherung - entweder im Dateisystem oder [Datenbank]—ist viel langsamer als Varnish und Varnish wurde entwickelt, um den HTTP-Traffic zu beschleunigen.
+>Wir _dringend empfehlen_ Sie verwenden Varnish in der Produktion. Die integrierte vollständige Zwischenspeicherung - entweder im Dateisystem oder [Datenbank](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)—ist viel langsamer als Varnish und Varnish wurde entwickelt, um den HTTP-Traffic zu beschleunigen.
 
 Weitere Informationen zu Varnish finden Sie unter:
 
@@ -148,7 +148,6 @@ Wenn sich der Inhalt auf dem Server ändert, lädt der Client das statische Asse
 
 <!-- Link Definitions -->
 
-[Datenbank]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [Der große arnistische Bild]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Varnish Cache]: https://varnish-cache.org
 [Varnish-Startoptionen]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options

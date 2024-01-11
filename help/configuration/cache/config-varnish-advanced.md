@@ -3,9 +3,9 @@ title: Erweiterte Varnish-Konfiguration
 description: Konfigurieren Sie erweiterte Funktionen für die Färbung, einschließlich Konsistenzprüfung, Grazie und Heiligkeitsmodi.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Varnish bietet mehrere Funktionen, die verhindern, dass Kunden lange Verzögerungen und Timeouts erleben, wenn der Commerce-Server nicht ordnungsgemäß funktioniert. Diese Funktionen können im Abschnitt `default.vcl` -Datei. Hier werden die von Commerce in der VCL-Datei (Varnish Configuration Language) bereitgestellten Ergänzungen beschrieben, die Sie vom Administrator herunterladen können.
 
-Siehe [Varnish-Referenzhandbuch](https://varnish-cache.org/docs/6.3/reference/index.html) für Details zur Verwendung der Varnish-Konfigurationssprache.
+Siehe [Varnish-Referenzhandbuch](https://varnish-cache.org/docs/index.html) für Details zur Verwendung der Varnish-Konfigurationssprache.
 
 ## Konsistenzprüfung
 
@@ -36,7 +36,7 @@ Alle 5 Sekunden ruft diese Konsistenzprüfung die `pub/health_check.php` Skript.
 
 Die `health_check.php` befindet sich im `pub` Verzeichnis. Wenn Ihr Commerce-Stammordner `pub`, dann vergewissern Sie sich, dass Sie den Pfad im `url` Parameter aus `/pub/health_check.php` nach `health_check.php`.
 
-Weitere Informationen finden Sie unter [Tiergesundheitskontrollen](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) Dokumentation.
+Weitere Informationen finden Sie unter [Tiergesundheitskontrollen](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) Dokumentation.
 
 ## Übergangmodus
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### Installation
 
-Der Saint-Modus ist nicht Teil des Varnish-Hauptpakets. Es handelt sich um eine separate Version `vmod` die heruntergeladen und installiert werden müssen. Daher sollten Sie Varnish aus der Quelle neu kompilieren, wie in den folgenden Artikeln beschrieben:
-
-- [Installieren von Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Installieren von Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+Der Saint-Modus ist nicht Teil des Varnish-Hauptpakets. Es handelt sich um eine separate Version `vmod` die heruntergeladen und installiert werden müssen. Daher müssen Sie Varnish aus der Quelle neu kompilieren, wie im Abschnitt [Installationsanweisungen](https://varnish-cache.org/docs/index.html) für Ihre Version von Varnish.
 
 Nach der Neukompilierung können Sie das Modul Saint-Modus installieren. Gehen Sie im Allgemeinen wie folgt vor:
 
