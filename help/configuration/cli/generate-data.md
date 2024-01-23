@@ -3,18 +3,14 @@ title: Generieren von Daten für Leistungstests
 description: Erfahren Sie, wie Sie eine große Datenmenge für Leistungstests generieren.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
+source-git-commit: d4a6d5cd181c7c4426914bbe481f4d5d1e828b5e
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 8%
+source-wordcount: '762'
+ht-degree: 9%
 
 ---
 
 # Leistungstestdaten
-
-So verwenden Sie die [Leistungs-Toolkit](https://github.com/magento/magento2/blob/2.4/setup/performance-toolkit) oder einem anderen Tool für Leistungstests verwenden, müssen Sie eine große Datenmenge generieren, z. B. Stores, Kategorien und Produkte.
-
-{{file-system-owner}}
 
 ## Profile
 
@@ -47,6 +43,8 @@ Die folgende Tabelle enthält Details zu den Profilen des Datengenerators: klein
 | `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
 
 ### Datengenerator ausführen
+
+{{file-system-owner}}
 
 >[!WARNING]
 >
