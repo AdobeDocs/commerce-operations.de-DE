@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem ein konfigurierbares Produkt nicht mehr vorrätig ist, wenn eines von zwei untergeordneten Produkten durch eine geplante Aktualisierung deaktiviert wird.
+* **ACSD-56616** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.6) - Behebung des Problems, bei dem gebündelte Produkte wie auf Lager angezeigt werden, wenn ihre einfachen Produkte nicht mehr vorrätig sind.
+* **ACSD-56515** (für Adobe Commerce >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem Administratoren mit Berechtigungen auf Website-Ebene keinen dynamischen Block hinzufügen oder bearbeiten können.
+* **ACSD-56447** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem das Hinzufügen desselben Produkts zum Warenkorb durch parallele REST-Web-API-Anfragen zu zwei separaten Artikeln im Warenkorb führte.
+* **ACSD-56415** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem die partielle Preisindizierung aufgrund einer `DELETE` abfragen, wenn die Datenbank über viele partielle Preisdaten verfügt, die indiziert werden sollen.
+* **ACSD-54965** (für Adobe Commerce >=2.4.5 &lt;2.4.6) - Behebung des Problems, bei dem das Visual Merchandising-Raster nicht das richtige Lager anzeigt, wenn ein Produkt nur einem benutzerdefinierten Lager zugewiesen ist.
+* **ACSD-52824** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem die Schaltflächen PayPal Express, Google Pay und Apple Pay für Unternehmenskunden angezeigt werden, wenn solche Zahlungsmethoden in den Unternehmenseinstellungen deaktiviert sind.
+* Aktualisierte Patches: ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
