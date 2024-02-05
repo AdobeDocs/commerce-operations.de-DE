@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1e1899426416df8526e58a50ad1e58b67d5b4196
+source-git-commit: 4e836797fa021c16b24ca95ab8df096e0cdf5e7e
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 21%
+source-wordcount: '137'
+ht-degree: 6%
 
 ---
 # Produktverfügbarkeit der Commerce-Services
@@ -13,9 +13,9 @@ ht-degree: 21%
     <tr>
       <th>Adobe Commerce-Versionen</th>
       <th>2.4.7-beta2</th>
-      <th>2.4.6</th>
-      <th>2.4.5</th>
-      <th>2.4.4</th>
+      <th>2,4,6</th>
+      <th>2,4,5</th>
+      <th>2,4,4</th>
       <th></th>
     </tr>
   </thead>
@@ -33,10 +33,10 @@ ht-degree: 21%
       </tr>
       <tr>
           <td>Catalog Service für Adobe Commerce</td>
-          <td>1.13</td>
-          <td>1.13</td>
-          <td>1.13</td>
-          <td>1.13</td>
+          <td>1,13</td>
+          <td>1,13</td>
+          <td>1,13</td>
+          <td>1,13</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Übersicht</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Versionshinweise</a><br/>
@@ -45,7 +45,7 @@ ht-degree: 21%
       <tr>
           <td>Kanal-Manager</td>
           <td>2.1.0</td>
-          <td>2.0.0</td>
+          <td>2,0,0</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
@@ -55,10 +55,10 @@ ht-degree: 21%
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
+          <td>4,0,0</td>
+          <td>4,0,0</td>
+          <td>4,0,0</td>
+          <td>4,0,0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Versionshinweise</a><br/>
@@ -66,8 +66,8 @@ ht-degree: 21%
       </tr>
       <tr>
           <td>Zahlungsdienste</td>
-          <td>2.3.0</td>
-          <td>2.2.0</td>
+          <td>2,3,0</td>
+          <td>2,2,0</td>
           <td>2.2.0 (PHP 8.1)</td>
           <td>2.2.0 (PHP 8.1)</td>
           <td>
@@ -77,10 +77,10 @@ ht-degree: 21%
       </tr>
       <tr>
           <td>Produkt-Recommendations</td>
-          <td>5.0.1</td>
-          <td>5.0.1</td>
-          <td>5.0.1</td>
-          <td>5.0.1</td>
+          <td>5,0,1</td>
+          <td>5,0,1</td>
+          <td>5,0,1</td>
+          <td>5,0,1</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Versionshinweise</a><br/>
@@ -100,7 +100,7 @@ ht-degree: 21%
       <tr>
           <td>Store-Erfüllung für Adobe Commerce</td>
           <td>-</td>
-          <td>1.5.0</td>
+          <td>1,5,0</td>
           <td>1.2.0+</td>
           <td>1.2.0+</td>
           <td>
