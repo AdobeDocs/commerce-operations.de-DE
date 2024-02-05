@@ -1,7 +1,7 @@
 ---
-source-git-commit: 903a5b52dd96423b7ac29997082b2feccdd3e10a
+source-git-commit: 5e25ba7151b16706f60c3fb8ffc5dbc6f31f29a6
 workflow-type: tm+mt
-source-wordcount: '84'
+source-wordcount: '105'
 ht-degree: 3%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 3%
 ## Neue Funktionen
 
 Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der vorhandenen Dokumentation.
+
+### 29. Januar 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.45 Quality Patches Tool (QPT) .</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ada0b7f8aaa727aebf86dca8b569eb71d41e5ded">ada0b7</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 19. Januar 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.44 Quality Patches Tool (QPT) .</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6fdce049c64ff7e93bf4de497d7e61ad36b0064b">6fdce0</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 11. Januar 2024
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Quelle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>hinzugefügt <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/overview.html">Klarstellung</a> dass die Beispieldaten nicht für Datenbanktests verwendet werden sollten.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b75884de62f0f4a9000f422a4b68870c5b30d803">b75884</a> (commit)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 3. Januar 2024
 
@@ -27,46 +87,6 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (commit)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group --><!-- month_group -->
-
-### 11. Dezember 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Veröffentlicht <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Paketversion 1.1.43 Quality Patches Tool (QPT) .</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/90447e9b8c00c4901d0d62c9de36f21df55385dc">90447e</a> (commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 7. Dezember 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Quelle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde ein neues Thema mit Best Practices zu <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-code.html">Ändern des Kern- und Drittanbieter-PHP-Codes</a>.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21c0b6faab093bf9db860ce2f4d56072c4cc6e49">21c0b6</a> (commit)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
