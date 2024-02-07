@@ -3,9 +3,9 @@ title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung mithilfe dieser Best Practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 3c53efdaedea075e288d262e247bc9c42b5a2432
+source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Wenn Sie die **[!UICONTROL Enable [!DNL JavaScript] Bundling]** können Sie Comm
 ### Bundle-Tipps
 
 * Wir empfehlen die Verwendung von Drittanbieter-Tools für die Minimierung und das Bundling (z. B. [r.js](https://requirejs.org/)). [!DNL Commerce] integrierte Mechanismen sind nicht optimal und werden als Ausweichalternativen bereitgestellt.
-* Die Aktivierung des HTTP/2-Protokolls kann eine gute Alternative zur Verwendung des JS-Bundles sein. Das Protokoll bietet fast die gleichen Vorteile.
+* Die Aktivierung des HTTP/2-Protokolls kann eine gute Alternative zur Verwendung des JS-Bundles sein. Das Protokoll bietet viele der gleichen Vorteile. Sie ist in Adobe Commerce bei Cloud-Infrastrukturprojekten standardmäßig aktiviert.
 * Es wird empfohlen, keine veralteten Einstellungen wie das Zusammenführen von JS- und CSS-Dateien zu verwenden, da diese nur für synchron geladene JS im HEAD-Abschnitt der Seite entwickelt wurden. Die Verwendung dieser Technik kann dazu führen, dass die Logik &quot;Bundling&quot;und &quot;requireJS&quot;fehlerhaft funktioniert.
 
 ## Validierung von Kundensegmenten
