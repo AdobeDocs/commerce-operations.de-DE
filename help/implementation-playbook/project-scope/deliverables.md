@@ -3,9 +3,9 @@ title: Lieferziele
 description: Erfahren Sie mehr über die verschiedenen Lieferziele, die mit einer Adobe Commerce-Implementierung verbunden sind.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 903c8bfc7c341c46d98026f0a02fbefba22c8f5d
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Der Erkennungsvorgang identifiziert spezifische Adobe Commerce-Implementierungsa
 
 ## Geschäftsanforderungen
 
-In diesem Dokument werden die Genehmigungen für Geschäftsanforderungen für funktionale Spezifikationen und die Benutzerfreundlichkeit des Kundenerlebnisses erfasst. Es wird verwendet, um das Benutzererlebnis, das visuelle Design und detaillierte Testpläne zu fördern.
+In einem Dokument zu Geschäftsanforderungen werden Genehmigungen für funktionale Spezifikationen und die Benutzerfreundlichkeit des Kundenerlebnisses erfasst. Es wird verwendet, um das Benutzererlebnis, das visuelle Design und detaillierte Testpläne zu fördern.
 
 ## Systemdiagramm
 
@@ -24,7 +24,7 @@ Ein Systemdiagramm sollte Daten (z. B. Bestellungen, Produkte, Integrationen von
 
 ## Technische Spezifikationen
 
-In diesem Dokument werden der technische Implementierungsansatz und die anwendbaren Details zu allen Drittanbieterintegrationen und -systemen definiert, die geändert werden müssen. Dies kann APIs umfassen, die derzeit nicht vorhanden sind und entwickelt werden müssen.
+Technische Spezifikationen definieren den Implementierungsansatz und anwendbare Details zu allen Drittanbieterintegrationen und -systemen, die geändert werden müssen. Dies kann APIs umfassen, die derzeit nicht vorhanden sind und entwickelt werden müssen.
 
 ## Datenzuordnung
 
@@ -36,7 +36,7 @@ Zeigt die Benutzerflüsse für kritische und/oder eindeutige Prozesse an, insbes
 
 ## Umfang und Anbieter
 
-Dies ist eine finalisierte Liste benannter Drittanbieter, die in die Adobe Commerce-Lösung integriert werden sollen.
+Ein Dokument zu Umfang und Anbieter sollte eine umfassende Liste benannter Drittanbieter enthalten, die in die Adobe Commerce-Lösung integriert werden sollen.
 
 ## Produktdaten
 
