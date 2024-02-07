@@ -4,9 +4,9 @@ description: Behalten und optimieren Sie die Site-Leistung, indem Sie Best Pract
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce verfügt über zwei Arten von Indexmodi: [!UICONTROL Update on Sa
 
 - **[!UICONTROL Update on Save]** -Modus aktualisiert Indizes sofort, wenn sich Ihr Katalog oder andere Daten ändern. Wenn ein Admin-Benutzer beispielsweise einer Kategorie neue Produkte hinzufügt, wird der Kategorieproduktindex sofort nach dem Speichern der Aktualisierung neu indiziert.
 
-- **[!UICONTROL Update on Schedule]** -Modus speichert Informationen über Datenaktualisierungen. Neuindizierungsvorgänge und Indexaktualisierungen werden von einem Cron-Auftrag verwaltet, der in terminierten Intervallen im Hintergrund ausgeführt wird.
+- **[!UICONTROL Update on Schedule]** -Modus speichert Informationen über Datenaktualisierungen. Neuindizierungsvorgänge und Indexaktualisierungen werden von einem Cron-Auftrag verwaltet, der in terminierten Intervallen im Hintergrund ausgeführt wird. Der Cron-Auftrag führt nicht immer bei jeder Ausführung eine Neuindizierung durch. Er wird nur dann neu indiziert, wenn neue Einträge in den Indexänderungsprotokollen vorhanden sind (z. B. gibt es einen Rückstand bei den Indexern).
 
 Ein großer Speicher mit mehreren Administratoren, die im Backend arbeiten oder über viele Import- und Export-Trigger verfügen, führt häufige Indexaktualisierungen durch. Wenn Ihre Site-Indexkonfiguration auf [!UICONTROL Update on Save] -Modus beeinträchtigt die häufige Neuindizierung die Datenbankleistung, was die Site-Leistung verlangsamt und zu langen Verzögerungen im Neuindizierungsprozess führt, insbesondere bei großen Geschäften.
 
