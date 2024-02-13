@@ -1,8 +1,8 @@
 ---
-source-git-commit: c1f3b19f2199b8c58beeab1b9bf6b69195269dbb
+source-git-commit: 2805ca010942c5a24c35308954c7e2efdef53117
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 85%
+source-wordcount: '473'
+ht-degree: 58%
 
 ---
 # Systemanforderungen
@@ -18,23 +18,26 @@ ht-degree: 85%
         Softwareabhängigkeiten
       </th>
       <th>2.4.7-beta2</th>
+      <th>2.4.6-p4</th>
       <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
       <th>2.4.6-p1</th>
-      <th>2.4.6</th>
+      <th>2,4,6</th>
+      <th>2.4.5-p6</th>
       <th>2.4.5-p5</th>
       <th>2.4.5-p4</th>
       <th>2.4.5-p3</th>
       <th>2.4.5-p2</th>
       <th>2.4.5-p1</th>
-      <th>2.4.5</th>
+      <th>2,4,5</th>
+      <th>2.4.4-p7</th>
       <th>2.4.4-p6</th>
       <th>2.4.4-p5</th>
       <th>2.4.4-p4</th>
       <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
       <th>2.4.4-p1</th>
-      <th>2.4.4</th>
+      <th>2,4,4</th>
       <th>2.4.3-p3</th>
       <th>2.4.2-p2</th>
     </tr>
@@ -43,58 +46,67 @@ ht-degree: 85%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2.5
+            2,5
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.2
+            2,2
       </td>
       <td>
-            2.1
+            2,2
       </td>
       <td>
-            2.1
+            2,2
       </td>
       <td>
-            2.1
+            2,2
+      </td>
+      <td>
+            2,1
+      </td>
+      <td>
+            2,1
+      </td>
+      <td>
+            2,1
       </td>
       <td>
             1
@@ -106,7 +118,10 @@ ht-degree: 85%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.7
+            8,7
+      </td>
+      <td>
+            8.11.7.17
       </td>
       <td>
             8.5, 7.17
@@ -121,109 +136,124 @@ ht-degree: 85%
             8.4, 7.17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.17
+            7,17
       </td>
       <td>
-            7.16
+            7,17
       </td>
       <td>
-            7.16
+            7,17
       </td>
       <td>
-            7.16
+            7,16
       </td>
       <td>
-            7.16
+            7,16
       </td>
       <td>
-            7.9
+            7,16
+      </td>
+      <td>
+            7,16
+      </td>
+      <td>
+            7,9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2.5
+            2,5
       </td>
       <td>
-            2.5
+            2,5
       </td>
       <td>
-            2.5
+            2,5
       </td>
       <td>
-            2.5
+            2,5
       </td>
       <td>
-            2.5
+            2,5
       </td>
       <td>
-            1.2
+            2,5
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
+      </td>
+      <td>
+            1,2
+      </td>
+      <td>
+            1,2
+      </td>
+      <td>
+            1,2
       </td>
       <td>
           —
@@ -232,127 +262,145 @@ ht-degree: 85%
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.6
+            10,6
       </td>
       <td>
-            10.6
+            10,6
       </td>
       <td>
-            10.6
+            10,6
       </td>
       <td>
-            10.6
+            10,6
       </td>
       <td>
-            10.6
+            10,6
       </td>
       <td>
-            10.4
+            10,6
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
       </td>
       <td>
-            10.4
+            10,4
+      </td>
+      <td>
+            10,4
+      </td>
+      <td>
+            10,4
+      </td>
+      <td>
+            10,4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
+      </td>
+      <td>
+            8,0
+      </td>
+      <td>
+            8,0
+      </td>
+      <td>
+            8,0
       </td>
     </tr>
     <tr>
@@ -373,55 +421,64 @@ ht-degree: 85%
             8.2, 8.1
       </td>
       <td>
-            8.1
+            8.2, 8.1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            8.1
+            8,1
       </td>
       <td>
-            7.4
+            8,1
       </td>
       <td>
-            7.4
+            8,1
+      </td>
+      <td>
+            8,1
+      </td>
+      <td>
+            7,4
+      </td>
+      <td>
+            7,4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3.11
+            3,11
       </td>
       <td>
             3.11, 3.9
@@ -445,355 +502,409 @@ ht-degree: 85%
             3.11, 3.9
       </td>
       <td>
-            3.9
+            3.11, 3.9
       </td>
       <td>
-            3.9
+            3.11, 3.9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.9
+            3,9
       </td>
       <td>
-            3.8
+            3,9
       </td>
       <td>
-            3.8
+            3,9
+      </td>
+      <td>
+            3,9
+      </td>
+      <td>
+            3,8
+      </td>
+      <td>
+            3,8
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.0
+            7,0
       </td>
       <td>
-            7.0
+            7,0
       </td>
       <td>
-            7.0
+            7,0
       </td>
       <td>
-            7.0
+            7,0
       </td>
       <td>
-            7.0
+            7,0
       </td>
       <td>
-            6.2
+            7,0
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.2
+            6,2
       </td>
       <td>
-            6.0
+            6,2
       </td>
       <td>
-            6.0
+            6,2
+      </td>
+      <td>
+            6,2
+      </td>
+      <td>
+            6,0
+      </td>
+      <td>
+            6,0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-            7.3
+            7,3
       </td>
       <td>
-            7.3
+            7,3
       </td>
       <td>
-            7.3
+            7,3
       </td>
       <td>
-            7.3
+            7,3
       </td>
       <td>
-            7.1
+            7,3
       </td>
       <td>
-            7.3
+            7,1
       </td>
       <td>
-            7.3
+            7,3
       </td>
       <td>
-            7.3
+            7,3
       </td>
       <td>
-            7.1
+            7,3
       </td>
       <td>
-            7.0
+            7,3
       </td>
       <td>
-            7.0
+            7,1
       </td>
       <td>
-            7.3
+            7,0
       </td>
       <td>
-            7.3
+            7,0
       </td>
       <td>
-            7.3
+            7,3
       </td>
       <td>
-            7.1
+            7,3
       </td>
       <td>
-            7.0
+            7,3
       </td>
       <td>
-            7.0
+            7,3
       </td>
       <td>
-            7.0
+            7,1
       </td>
       <td>
-            6.5
+            7,0
       </td>
       <td>
-            6.4
+            7,0
+      </td>
+      <td>
+            7,0
+      </td>
+      <td>
+            6,5
+      </td>
+      <td>
+            6,4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
       </td>
       <td>
-            2.4
+            2,4
+      </td>
+      <td>
+            2,4
+      </td>
+      <td>
+            2,4
+      </td>
+      <td>
+            2,4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-            1.24
+            1,24
       </td>
       <td>
-            1.24
+            1,24
       </td>
       <td>
-            1.22
+            1,24
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.24
+            1,22
       </td>
       <td>
-            1.22
+            1,24
       </td>
       <td>
-            1.22
+            1,24
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.24
+            1,22
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.22
+            1,24
       </td>
       <td>
-            1.22
+            1,24
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.22
+            1,22
       </td>
       <td>
-            1.18
+            1,22
       </td>
       <td>
-            1.18
+            1,22
+      </td>
+      <td>
+            1,22
+      </td>
+      <td>
+            1,18
+      </td>
+      <td>
+            1,18
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            8.0
+            8,0
       </td>
       <td>
-            5.7
+            8,0
       </td>
       <td>
-            5.7
+            8,0
       </td>
       <td>
-            5.7
+            8,0
       </td>
       <td>
-            5.7
+            5,7
       </td>
       <td>
-          --
+            5,7
+      </td>
+      <td>
+            5,7
+      </td>
+      <td>
+            5,7
+      </td>
+      <td>
+          —
       </td>
     </tr>
     <tr>
@@ -858,68 +969,86 @@ ht-degree: 85%
       <td>
             ✔️
       </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
+      <td>
+            ✔️
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.10.20
+            3,10,20
       </td>
       <td>
-            3.9.16
+            3,9,16
       </td>
       <td>
-            3.9.16
+            3,9,16
       </td>
       <td>
-            3.9.16
+            3,9,16
       </td>
       <td>
-            3.9.16
+            3,9,16
       </td>
       <td>
-            3.9.13
+            3,9,16
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.9.13
+            3,9,13
       </td>
       <td>
-            3.8.11
+            3,9,13
       </td>
       <td>
-            3.8.11
+            3,9,13
       </td>
       <td>
-            3.8.11
+            3,9,13
       </td>
       <td>
-            3.8.11
+            3,8,11
       </td>
       <td>
-          --
+            3,8,11
+      </td>
+      <td>
+            3,8,11
+      </td>
+      <td>
+            3,8,11
+      </td>
+      <td>
+          —
       </td>
     </tr>
     <tr>
@@ -940,7 +1069,7 @@ ht-degree: 85%
             Redis 6.2
       </td>
       <td>
-            Redis 6
+            Redis 6.2
       </td>
       <td>
             Redis 6
@@ -982,133 +1111,160 @@ ht-degree: 85%
             Redis 6
       </td>
       <td>
-          --
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+            Redis 6
+      </td>
+      <td>
+          —
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-            7.9
+          —
       </td>
       <td>
-            7.9
+          —
       </td>
       <td>
-          --
+            7,9
       </td>
       <td>
-          --
+            7,9
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-            7.9
+          —
       </td>
       <td>
-            7.9
+          —
       </td>
       <td>
-            7.9
+          —
       </td>
       <td>
-            7.9
+            7,9
       </td>
       <td>
-          --
+            7,9
+      </td>
+      <td>
+            7,9
+      </td>
+      <td>
+            7,9
+      </td>
+      <td>
+          —
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
-            2.5
+            2,5
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-            1.2
+            1,2
       </td>
       <td>
-          --
+            1,2
       </td>
       <td>
-          --
+            1,2
       </td>
       <td>
-          --
+            1,2
       </td>
       <td>
-          --
+          —
       </td>
       <td>
-          --
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
       </td>
     </tr>
   </tbody>
