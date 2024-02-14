@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Datenbank- und Anwendungseinstellungen konfig
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -100,5 +100,5 @@ Siehe [Aktivieren der Archivierung](https://experienceleague.adobe.com/docs/comm
 ## Zusätzliche Informationen
 
 - [MySQL-Speichermaschinen](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
-- [Voraussetzungen für das Adobe Commerce 2.3.5-Upgrade für MariaDB](../maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+- [Voraussetzungen für das Adobe Commerce 2.3.5-Upgrade für MariaDB](../maintenance/mariadb-upgrade.md)
 - [Best Practices zur Lösung von Problemen mit der Datenbankleistung](../maintenance/resolve-database-performance-issues.md)

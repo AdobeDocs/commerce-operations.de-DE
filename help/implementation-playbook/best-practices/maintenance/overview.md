@@ -3,9 +3,9 @@ title: Wartungsphase der Implementierung
 description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Wartungsphase von Adobe Commerce-Projekten.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 00036391366625ab256a4dc682d1ecbe9e46fa23
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '371'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Wart
 | Best Practice | Beschreibung |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Beheben von Problemen mit der Datenbankleistung &#x200B;](resolve-database-performance-issues.md) | Behebung von Datenbankproblemen, die die Leistung auf Adobe Commerce-Sites verlangsamen, die in der Cloud-Infrastruktur bereitgestellt werden. |
-| [Voraussetzungen für das Adobe Commerce 2.3.5-Upgrade für MariaDB-&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | Bereiten Sie Ihre MariaDB-Datenbank auf ein Upgrade vor. |
+| [Voraussetzungen für das Adobe Commerce-Upgrade für MariaDB-&#x200B;](mariadb-upgrade.md) | Bereiten Sie Ihre MariaDB-Datenbank auf ein Upgrade vor. |
 
 ## Funktionsverbesserungen
 
