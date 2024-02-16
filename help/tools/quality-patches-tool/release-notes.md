@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
+source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
 workflow-type: tm+mt
-source-wordcount: '19799'
+source-wordcount: '19990'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.6) - Behebung des Problems, bei dem die Kategorieseite invalidiert, wenn sich die Lagermenge ändert, selbst wenn das Produkt noch auf Lager ist.
+* **ACSD-54656** (für Adobe Commerce >=2.4.5 &lt;2.4.6) - Behebung des Problems, bei dem das unsichtbare Recaptcha beim Checkout fehlschlägt, wodurch verhindert wurde, dass eine Bestellung platziert wird.
+* **ACSD-55100** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem GraphQL nicht mehr als 10.000 Produkte in den Suchergebnissen zurückgibt.
+* **ACSD-56621** (für Adobe Commerce >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem der aktualisierte Vor- und Nachname nicht im Grußkopfbereich für den Unternehmensadministrator angezeigt wird.
+* **ACSD-56842** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem die verzögerten Proxys und die verzögerten Proxy-Fabriken nach der Ausführung fehlen `setup:di:compile`.
+* **ACSD-57003** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem der Auftragsstatus in geändert wird *[!UICONTROL Complete]* anstatt geändert zu werden in *[!UICONTROL Processing]* wenn eine Bestellung teilweise zurückerstattet und teilweise versandt wird.
+* Aktualisierte Patches: ACSD-50260-v2, ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
