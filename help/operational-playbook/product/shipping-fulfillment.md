@@ -3,9 +3,9 @@ title: Versand und Erfüllung
 description: Bestimmen Sie Versandmethoden und -kosten, bevor Sie Ihr E-Commerce-Projekt abschließen.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
 feature: Best Practices, Shipping/Delivery
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 766bd4e4e6a31157836770270cc3ba310f142161
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ In der folgenden Tabelle werden die Unterschiede zwischen dem Versand und der Er
 | B2B | B2C |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | Die Erfüllung und Lieferung dauert aufgrund der Kosten und der Menge länger. | Kann am selben Tag versandt und/oder kostenlos versandt werden |
-| Erfordert eine Verbindung zwischen dem Unternehmen und dem Client | In der Regel werden Begriffe verwendet |
+| Erfordert eine Verbindung zwischen dem Unternehmen und dem Client | Normalerweise kurzfristige Beziehungen |
 | In der Regel sind langfristige Beziehungen | Unternehmen bietet Treuekarten an, um Kunden zu binden |
 | Prozesse können lang und komplex sein | Angebote für Promotions und Kampagnen für Kunden |
 | Strenge Regeln müssen angewendet werden | Grundlegende Regeln können angewendet werden |
