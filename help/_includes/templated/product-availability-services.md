@@ -1,5 +1,5 @@
 ---
-source-git-commit: 3dc7a979f23e47c94fd6845f0864b8a2adc81f5c
+source-git-commit: a1dc8002b6d261fe6bb648b1ee1c03bb21ce4bb0
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 6%
@@ -33,10 +33,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Catalog Service für Adobe Commerce</td>
-          <td>1,16</td>
-          <td>1,16</td>
-          <td>1,16</td>
-          <td>1,16</td>
+          <td>1,17</td>
+          <td>1,17</td>
+          <td>1,17</td>
+          <td>1,17</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Übersicht</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Versionshinweise</a><br/>
@@ -55,10 +55,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4,0,0</td>
-          <td>4,0,0</td>
-          <td>4,0,0</td>
-          <td>4,0,0</td>
+          <td>4.1.0</td>
+          <td>4.1.0</td>
+          <td>4.1.0</td>
+          <td>4.1.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Versionshinweise</a><br/>
@@ -77,10 +77,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Produkt-Recommendations</td>
-          <td>5,0,1</td>
-          <td>5,0,1</td>
-          <td>5,0,1</td>
-          <td>5,0,1</td>
+          <td>6,0,0</td>
+          <td>6,0,0</td>
+          <td>6,0,0</td>
+          <td>6,0,0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Versionshinweise</a><br/>
