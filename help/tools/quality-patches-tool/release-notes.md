@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
+source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
 workflow-type: tm+mt
-source-wordcount: '19990'
+source-wordcount: '20136'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.47 {#v1-1-47}
+
+* **ACSD-55241** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem *[!UICONTROL Used]* und *[!UICONTROL Times Used]* -Attribute zeigen falsche Werte für generierte Gutscheine an, wenn diese beim Checkout mit mehreren Adressen verwendet werden.
+* **ACSD-56760** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem ein auf eine bestimmte Website beschränkter Admin-Benutzer keine neuen Produkte innerhalb einer Kategorie sortieren oder hinzufügen kann, falls der Webstore über eine eigene Stammkategorie verfügt.
+* **ACSD-56858** (für Adobe Commerce >=2.4.2 &lt;2.4.7) - Behebung des Problems, bei dem die Rollenberechtigungen des B2B-Unternehmens für einen eingeschränkten Unternehmensadministrator falsch angezeigt werden.
+* **ACSD-57074** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem die *Ja/Nein* benutzerdefiniertes Attribut mit `attrbute_code` beginnt mit `price_` funktioniert nicht ordnungsgemäß mit der Indizierung, und Produkte mit solchen Attributen sind nicht auf der Vorderseite verfügbar.
+* Aktualisierte Patches: ACSD-53378, ACSD-51819
 
 ## v1.1.46 {#v1-1-46}
 
