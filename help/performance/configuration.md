@@ -3,9 +3,9 @@ title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce- oder Magento Open Source-Bereitstellung mithilfe dieser Best Practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
+source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Alle asynchronen Vorgänge in [!DNL Commerce] werden unter Verwendung von Linux 
 
 ## Indexer
 
-Ein Indexer kann in **[!UICONTROL Update on Save]** oder **[!UICONTROL Update on Schedule]** -Modus. Die **[!UICONTROL Update on Save]** sofort indiziert werden, wenn sich Ihr Katalog oder andere Daten ändern. Dieser Modus setzt eine geringe Intensität von Aktualisierungs- und Browsing-Vorgängen in Ihrem Store voraus. Dies kann zu beträchtlichen Verzögerungen und zu einer Nichtverfügbarkeit der Daten bei hohen Lasten führen. Wir empfehlen, **Planmäßig aktualisieren** -Modus in der Produktion verwendet werden, da dort Informationen über Datenaktualisierungen gespeichert werden und die Indizierung anhand von Teilen im Hintergrund über einen bestimmten Cron-Auftrag durchgeführt wird. Sie können den Modus der einzelnen [!DNL Commerce] Indexer separat auf der  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** Konfigurationsseite.
+Ein Indexer kann in **[!UICONTROL Update on Save]** oder **[!UICONTROL Update on Schedule]** -Modus. Die **[!UICONTROL Update on Save]** sofort indiziert werden, wenn sich Ihr Katalog oder andere Daten ändern. Dieser Modus setzt eine geringe Intensität von Aktualisierungs- und Browsing-Vorgängen in Ihrem Store voraus. Dies kann zu beträchtlichen Verzögerungen und zu einer Nichtverfügbarkeit der Daten bei hohen Lasten führen. Wir empfehlen, **Planmäßig aktualisieren** zu Leistungszwecken, da sie Informationen über Datenaktualisierungen speichert und die Indizierung nach Abschnitten im Hintergrund durch einen bestimmten Cron-Auftrag durchführt. Sie können den Modus der einzelnen [!DNL Commerce] Indexer separat auf der  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** Konfigurationsseite. Die [!UICONTROL Customer Grid] Der Index muss immer auf die **[!UICONTROL Update on Save]** -Modus.
 
 >[!TIP]
 >
