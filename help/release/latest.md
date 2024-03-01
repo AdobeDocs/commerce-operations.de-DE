@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die neuesten komponierbaren Entwicklungs-To
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: b0cfe0ae73a2d65f205bfe874e080d56f195601b
+source-git-commit: a4738e58d8c17c17426765d6f975a2af0ce11c80
 workflow-type: tm+mt
 source-wordcount: '3076'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Adobe Commerce - Produktankündigungen für Februar
+# Produktankündigungen für Adobe Commerce im Februar
 
 Adobe Commerce arbeitet eng mit Kunden zusammen, um neue, erfahrungsgesteuerte Commerce-Funktionen zu entwickeln, mit denen sie schneller arbeiten und den Umsatz beschleunigen können. Kunden wie Hanesbrands profitieren bereits von schnelleren Sites, höheren Konversionsraten und leistungsfähigeren Kampagnen, die diese neuen Funktionen nutzen. Und Nestle Purina vereinfacht die Komponentenentwicklung mit unserer einheitlichen Entwicklererfahrung. Erfahren Sie mehr über diese neuen Funktionen und die ersten Schritte in dieser Übersicht zur Produktankündigung im Februar.
 
