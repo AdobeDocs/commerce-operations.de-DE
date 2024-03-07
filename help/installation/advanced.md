@@ -2,9 +2,9 @@
 title: Fortgeschrittene Installation vor Ort
 description: Erfahren Sie mehr über erweiterte Installationsszenarios für Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '2406'
+source-wordcount: '2383'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Sie können die folgenden Befehle ausführen, um Werte für einige erforderliche
 
 | Installationsargument | Befehl |
 | ------------------ | ------------------------------- |
-| Sprache | bin/magento info:language:Liste |
-| Währung | bin/magento info:currency:Liste |
-| Zeitzone | bin/magento info:timezone:Liste |
+| Sprache | `bin/magento info:language:list` |
+| Währung | `bin/magento info:currency:list` |
+| Zeitzone | `bin/magento info:timezone:list` |
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Starten von Nachrichtenwarteschlangen-Verbrauchern
 description: Erfahren Sie, wie Sie eine Nachrichtenwarteschlange für Verbraucher starten.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Nach dem Abruf aller verfügbaren Nachrichten wird der Befehl beendet. Sie könn
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-Siehe [queue:consumers:start](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) im Abschnitt &quot;Handel&quot;des _Referenz zu Befehlszeilen-Tools_ für Details zu den Befehlsoptionen, Parametern und Werten.
+Siehe [`queue:consumers:start`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#queueconsumersstart) im Abschnitt &quot;Handel&quot;des _Referenz zu Befehlszeilen-Tools_ für Details zu den Befehlsoptionen, Parametern und Werten.
 
 >[!INFO]
 >
