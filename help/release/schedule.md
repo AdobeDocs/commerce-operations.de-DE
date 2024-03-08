@@ -2,7 +2,7 @@
 title: Veröffentlichungszeitplan
 description: Erfahren Sie, wann Adobe die Veröffentlichung von neuen Funktionen für Adobe Commerce anzukündigen plant.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: a7aa02cd47deaf7aebdfcf0b3e969cce990a962a
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Legende:</strong>
+      <td colspan="3"><strong>Legende</strong>
          <ul>
             <li><strong><img alt="Symbol &quot;B2B-Funktion&quot;" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Neue Funktionen, Verbesserungen und Fehlerbehebungen für die B2B-Erweiterung für Adobe Commerce.</li>
             <li><strong><img alt="Symbol für Erweiterungsfunktion" src="../assets/icons/brackets.svg"></img> Erweiterbarkeit</strong>—Neue Entwicklertools und -dienste für Out-of-Process-Erweiterbarkeit, die unabhängig von Patch-Versionen bereitgestellt werden. Beispielsweise das Admin UI SDK, Adobe I/O Events for Commerce und API Mesh.</li>
