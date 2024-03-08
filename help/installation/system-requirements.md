@@ -2,9 +2,9 @@
 title: Systemanforderungen
 description: Verwenden Sie diese Referenz, um erforderliche Softwareabhängigkeiten zu identifizieren, die mit Adobe Commerce- und Magento Open Source-Versionen getestet wurden.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,8 @@ Storefront und Admin:
 - Firefox (neueste und vorherige Hauptversion; beliebige Betriebssysteme)
 - Chrome (neueste und vorherige Hauptversion; jedes Betriebssystem)
 - Safari (neueste und vorherige Hauptversion, nur macOS)
-- Safari Mobile für iPad 2, iPad Mini, iPad mit Retina Display (iOS 12 oder höher), für Desktop-Storefront
-- Safari Mobile für iPhone 6 oder höher; iOS 12 oder höher für mobile Storefront
-- Chrome für Mobilgeräte (neueste und frühere Hauptversion) [Android™ 4 oder höher] für mobile Storefront)
+- Safari für iOS (neueste und vorherige Hauptversion, für Storefront)
+- Chrome für Android (neueste und vorherige Hauptversion, für Storefront)
 
 ### Mail-Server
 
