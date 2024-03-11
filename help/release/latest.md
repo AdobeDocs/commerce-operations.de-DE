@@ -4,13 +4,13 @@ description: Erfahren Sie mehr über die neuesten komponierbaren Entwicklungs-To
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Produktankündigungen für Adobe Commerce im Februar
 
@@ -22,7 +22,7 @@ Adobe Commerce arbeitet eng mit Kunden zusammen, um neue, erfahrungsgesteuerte C
 
 Nehmen Sie an diesen persönlichen und virtuellen Veranstaltungen teil, um mehr über Adobe Commerce von E-Commerce-Führungskräften und Praktikern zu erfahren:
 
-- **15. März 2024**: Adobe Commerce: Erstellen der Experience-Based Commerce Platform, 10 Uhr PDT/18 Uhr GMT. [Registrieren Sie sich für das Live-Webinar.](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **14. März 2024**: Adobe Commerce: Erstellen der Experience-Based Commerce Platform, 10 Uhr PDT/17 Uhr GMT. [Registrieren Sie sich für das Live-Webinar.](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **26. bis 28. März 2024**: Treffen Sie tausende von E-Commerce-Führern und Praktikern leben auf der Adobe Summit in Las Vegas. Weitere Informationen zu [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) und [Commerce-Track](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) mit Lautsprechern [Marken](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435), [Coca-Cola](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434), [Unilever](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430), und [Nestle Purina](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ Darüber hinaus bieten wir auch ein praktisches Hosting [Laborsitzung](https://r
 
 [!BADGE Jetzt verfügbar]{type=Informative tooltip="Jetzt verfügbar"}
 
-Adobe verfügt über umfassende Erfahrung bei der Bereitstellung von HIPAA-Ready Services für Gesundheitskunden aller Größen. Adobe setzt den Standard für verantwortungsvolles Kundendatenmanagement, von Zahlern bis hin zu Anbietern von pharmazeutischen und mediterranen Produkten. Diese Expertise erstreckt sich nun auf den schnell wachsenden Markt für den elektronischen Handel im Gesundheitswesen mit einer HIPPA-fähigen Version der Adobe Commerce-Cloud-Plattform.
+Adobe verfügt über umfassende Erfahrung bei der Bereitstellung von HIPAA-Ready Services für Gesundheitskunden aller Größen. Adobe setzt den Standard für verantwortungsvolles Kundendatenmanagement, von Zahlern bis hin zu Anbietern von pharmazeutischen und mediterranen Produkten. Diese Expertise erstreckt sich nun auf den schnell wachsenden Markt für den elektronischen Handel im Gesundheitswesen mit einer HIPAA-fähigen Version der Adobe Commerce-Cloud-Plattform.
 
 Das HIPAA-bereite Angebot ist für Kunden von Adobe Commerce Cloud und Managed Service verfügbar. Er enthält zusätzliche Sicherheits- und Datenschutzkontrollen, um den Schutz elektronischer personenbezogener Gesundheitsdaten (ePHI) zu gewährleisten, damit Gesundheits- und Biowissenschaften ihren Compliance-Verpflichtungen leichter nachkommen können. Die Lösung unterstützt eine Reihe von Anwendungsfällen, darunter einen schnellen und bequemen Online-Verkauf von medizinischer Versorgung, Verschreibungen, verschriebenen medizinischen Geräten und medizinischem Zubehör. Adobe Commerce schließt sich jetzt der [Adobe Experience Cloud für das Gesundheitswesen](https://business.adobe.com/solutions/industries/healthcare.html) Suite von Lösungen, die es Kunden ermöglichen, sichere und außergewöhnliche Patientenerlebnisse bereitzustellen und dabei die Präferenzen der Verbraucher zu berücksichtigen.
 
