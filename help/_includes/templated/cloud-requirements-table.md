@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9f85a298574b6343500cdccc54f3dbdad6d2e4a6
+source-git-commit: c59609c0df7b059543d7768ebfe97dc5d30fd357
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 66%
@@ -13,7 +13,7 @@ ht-degree: 66%
       <th>
         Softwareabhängigkeiten
       </th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6-p4</th>
       <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
@@ -42,7 +42,7 @@ ht-degree: 66%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,5
+            2,6
       </td>
       <td>
             2,2
@@ -186,7 +186,7 @@ ht-degree: 66%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2,5
+            2,11
       </td>
       <td>
             2,5
@@ -330,7 +330,7 @@ ht-degree: 66%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.2, 8.1
+            8.3, 8.2
       </td>
       <td>
             8.2, 8.1
@@ -402,7 +402,7 @@ ht-degree: 66%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3,11
+            3,12
       </td>
       <td>
             3.11, 3.9
@@ -474,7 +474,7 @@ ht-degree: 66%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7,0
+            7,2
       </td>
       <td>
             7,0

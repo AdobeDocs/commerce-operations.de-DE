@@ -1,5 +1,5 @@
 ---
-source-git-commit: 2805ca010942c5a24c35308954c7e2efdef53117
+source-git-commit: c59609c0df7b059543d7768ebfe97dc5d30fd357
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 58%
@@ -17,7 +17,7 @@ ht-degree: 58%
       <th>
         Softwareabhängigkeiten
       </th>
-      <th>2.4.7-beta2</th>
+      <th>2.4.7-beta3</th>
       <th>2.4.6-p4</th>
       <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
@@ -46,7 +46,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,5
+            2,6
       </td>
       <td>
             2,2
@@ -118,7 +118,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8,7
+            8,11
       </td>
       <td>
             8.11.7.17
@@ -190,7 +190,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2,5
+            2,11
       </td>
       <td>
             2,5
@@ -406,7 +406,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.2, 8.1
+            8.3, 8.2
       </td>
       <td>
             8.2, 8.1
@@ -478,7 +478,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3,11
+            3,12
       </td>
       <td>
             3.11, 3.9
@@ -550,7 +550,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7,0
+            7,2
       </td>
       <td>
             7,0
@@ -622,7 +622,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-            7,3
+            7,4
       </td>
       <td>
             7,3
@@ -982,7 +982,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3,10,20
+            3,11,20
       </td>
       <td>
             3,9,16
@@ -1198,7 +1198,7 @@ ht-degree: 58%
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
-            2,5
+            2,11
       </td>
       <td>
             1,2

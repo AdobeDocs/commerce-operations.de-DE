@@ -2,7 +2,7 @@
 title: Verwalten des Cache
 description: Verwalten Sie Cachetypen und zeigen Sie den Cache-Status an.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
+source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 ## Cachetypen
 
-Commerce 2 verfügt über die folgenden Cache-Typen:
+Commerce verfügt über die folgenden Cache-Typen:
 
 | Cache type &quot;friendly&quot; name | Codename des Cachetyps | Beschreibung |
-|--- |--- |--- |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfiguration | config | Commerce erfasst die Konfiguration aus allen Modulen, führt sie zusammen und speichert das zusammengeführte Ergebnis im Cache. Dieser Cache enthält auch speicherspezifische Einstellungen, die im Dateisystem und in der Datenbank gespeichert sind. Löschen oder leeren Sie diesen Cache-Typ, nachdem Sie die Konfigurationsdateien geändert haben. |
 | Layout | layout | Kompilierte Seitenlayouts (d. h. die Layoutkomponenten aus allen Komponenten). Löschen oder leeren Sie diesen Cache-Typ, nachdem Sie die Layout-Dateien geändert haben. |
 | Blockausgabe HTML | block_html | HTML von Seitenfragmenten pro Block. Entfernen oder leeren Sie diesen Cache-Typ, nachdem Sie die Ansichtsebene geändert haben. |
@@ -31,10 +31,9 @@ Commerce 2 verfügt über die folgenden Cache-Typen:
 | Übersetzungen | translate | Nach dem Zusammenführen von Übersetzungen aus allen Modulen wird der Fusion-Cache bereinigt. |
 | Integrationskonfiguration | config_integration | Kompilierte Integrationen. Löschen oder leeren Sie diesen Cache, nachdem Sie Integrationen geändert oder hinzugefügt haben. |
 | Integration API-Konfiguration | config_integration_api | Konfiguration der kompilierten Integrations-APIs der Store-Integrationen. |
+| GraphQL Query Resolver Results [!BADGE 2.4.7-Beta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Nur in 2.4.7-Beta verfügbar&quot;} | graphql_query_resolver_result | Die Ergebnisse von GraphQL-Abfrageresolvern werden für Entitäten aus Kunden-, CMS-Seiten-, CMS-Block- und Produktmedien zwischengespeichert. Lassen Sie diesen Cache aktiviert, um die Leistung von GraphQL zu verbessern. |
 | Konfiguration von Webdiensten | config_webservice | Zwischenspeichern der Web-API-Struktur. |
 | Kundenbenachrichtigung | customer_notification | Vorübergehende Benachrichtigungen, die in der Benutzeroberfläche angezeigt werden. |
-| Admin UI SDK-Cache | admin_ui_sdk | Caches Admin-Anpassungen, die mit der [Adobe Commerce Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
-| Webhooks-Antwort-Cache | webhooks_response | Zwischenspeichert Antworten auf [Webhook-Anforderungen](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## Cache-Status anzeigen
 
@@ -63,6 +62,7 @@ Current status:
             config_integration: 1
         config_integration_api: 1
                    target_rule: 1
+ graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
@@ -171,6 +171,7 @@ Beispielergebnis:
    config_integration
    config_integration_api
    full_page
+   graphql_query_resolver_results
    config_webservice
    translate
 ```
