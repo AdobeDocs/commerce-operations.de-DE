@@ -2,7 +2,7 @@
 title: Veröffentlichungszeitplan
 description: Erfahren Sie, wann Adobe die Veröffentlichung von neuen Funktionen für Adobe Commerce anzukündigen plant.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: a7aa02cd47deaf7aebdfcf0b3e969cce990a962a
+source-git-commit: 5d4204b842151c0dac0091ab286ba769e421cdf4
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -49,7 +49,7 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
     <td><img alt="Symbol "Patch Release"" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheitspatches</a>: 2.4.6-p4, 2.4.5-p6, 2.4.4-p7</td>
   </tr>
   <tr>
-    <td>19. März 2024</td>
+    <td>12. März 2024</td>
     <td>—</td>
     <td><img alt="Symbol "Patch Release"" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Beta-Patch</a>: 2.4.7-beta3</td>
   </tr>
