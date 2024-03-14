@@ -31,7 +31,7 @@ Commerce verfügt über die folgenden Cache-Typen:
 | Übersetzungen | translate | Nach dem Zusammenführen von Übersetzungen aus allen Modulen wird der Fusion-Cache bereinigt. |
 | Integrationskonfiguration | config_integration | Kompilierte Integrationen. Löschen oder leeren Sie diesen Cache, nachdem Sie Integrationen geändert oder hinzugefügt haben. |
 | Integration API-Konfiguration | config_integration_api | Konfiguration der kompilierten Integrations-APIs der Store-Integrationen. |
-| GraphQL Query Resolver Results [!BADGE 2.4.7-Beta]{type=Informative url=&quot;/help/release/release-notes/commerce/2-4-7.md&quot; tooltip=&quot;Nur in 2.4.7-Beta verfügbar&quot;} | graphql_query_resolver_result | Die Ergebnisse von GraphQL-Abfrageresolvern werden für Entitäten aus Kunden-, CMS-Seiten-, CMS-Block- und Produktmedien zwischengespeichert. Lassen Sie diesen Cache aktiviert, um die Leistung von GraphQL zu verbessern. |
+| GraphQL Query Resolver Results [!BADGE 2.4.7-Beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta verfügbar"} | graphql_query_resolver_result | Die Ergebnisse von GraphQL-Abfrageresolvern werden für Entitäten aus Kunden-, CMS-Seiten-, CMS-Block- und Produktmedien zwischengespeichert. Lassen Sie diesen Cache aktiviert, um die Leistung von GraphQL zu verbessern. |
 | Konfiguration von Webdiensten | config_webservice | Zwischenspeichern der Web-API-Struktur. |
 | Kundenbenachrichtigung | customer_notification | Vorübergehende Benachrichtigungen, die in der Benutzeroberfläche angezeigt werden. |
 
