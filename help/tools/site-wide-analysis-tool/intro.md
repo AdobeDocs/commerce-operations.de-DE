@@ -2,14 +2,18 @@
 title: '[!DNL Site-Wide Analysis Tool]'
 description: Informationen zum [!DNL Site-Wide Analysis] Tool, seine Verwendung, der Installationsprozess und wie Zugriff erhalten
 exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 516dff47cd616ea0c4d341e431c7098165d2c872
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
 # [!DNL Site-Wide Analysis Tool]
+
+>[!IMPORTANT]
+>
+>Ab dem 23. April 2024 wird die [!DNL Site-Wide Analysis Tool] wird für alle in Adobe Commerce ansässigen Kunden eingestellt.
 
 Dieser Leitfaden bietet einen ganzheitlichen Überblick über die [!DNL Site-Wide Analysis Tool]. Hier werden die Verwendungen, schrittweise Anweisungen für die Installation und der Zugriff auf das Tool beschrieben.
 
