@@ -1,7 +1,7 @@
 ---
-source-git-commit: de1cd617c961bc2808e71e0e91aad02a79a76d56
+source-git-commit: e3c8cceec1cea6a384250c1a9165b8684674e64c
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '141'
 ht-degree: 6%
 
 ---
@@ -66,10 +66,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Zahlungsdienste</td>
-          <td>2,3,0</td>
-          <td>2,2,0</td>
-          <td>2.2.0 (PHP 8.1)</td>
-          <td>2.2.0 (PHP 8.1)</td>
+          <td>2.4.0 (PHP 8.3)</td>
+          <td>2.4.0 (PHP 8.2)</td>
+          <td>2.4.0 (PHP 8.1)</td>
+          <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Versionshinweise</a><br/>
