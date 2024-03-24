@@ -2,10 +2,10 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
@@ -32,10 +32,7 @@ ht-degree: 11%
    - [Verantwortung und Eigenverantwortung](planning/ownership.md)
    - [Projektverwaltung](planning/governance.md)
 - Architektur und Integrationen {#architecture}
-   - [Funktionen](architecture/capabilities.md)
-   - [Integrationsstrategie](architecture/integration-strategy.md)
-   - [Erweiterungsstrategie](architecture/extensibility-strategy.md)
-   - [Integrationsoptionen](architecture/integration-options.md)
+   - [Unternehmensreferenz](architecture/enterprise-blueprint.md)
    - Globale Referenzarchitektur {#global-reference-architecture}
       - [Übersicht](architecture/global-reference/overview.md)
       - [Beispiele](architecture/global-reference/examples.md)
@@ -43,13 +40,6 @@ ht-degree: 11%
          - [Übersicht](architecture/global-reference/composer/overview.md)
          - [Projektstruktur](architecture/global-reference/composer/project-structure.md)
          - [Tipps und Tricks](architecture/global-reference/composer/tips-and-tricks.md)
-   - Headless Commerce {#headless}
-      - [Vorteile](architecture/headless/benefits.md)
-      - [Journey in Headless](architecture/headless/journey-to-headless.md)
-      - [Microservices](architecture/headless/microservices.md)
-      - [Entwicklung von Headless](architecture/headless/evolution.md)
-      - [Architektur von kombinierten Storefront](architecture/headless/legacy-storefront.md)
-      - [Headless-Architektur](architecture/headless/adobe-commerce.md)
 - Infrastruktur und Bereitstellung {#infrastructure}
    - [Übersicht](infrastructure/overview.md)
    - Self-Hosting {#self-hosting}

@@ -4,9 +4,9 @@ description: Optimieren Sie die Leistung Ihrer Adobe Commerce-Implementierung, i
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Neben den bereits erwähnten Empfehlungen zur Optimierung der gemeinsamen Infras
 
 ### Headless-Architektur
 
-Es gibt einen separaten Abschnitt für [Headless](../../architecture/headless/adobe-commerce.md). Zusammenfassend wird die Storefront-Schicht von der Plattform selbst getrennt. Es ist immer noch dasselbe Backend, aber Adobe Commerce verarbeitet Anforderungen nicht mehr direkt und unterstützt stattdessen nur benutzerdefinierte Storefronts über die GraphQL-API.
+Es gibt einen separaten Abschnitt für [Headless](../../architecture/enterprise-blueprint.md#headless-storefront). Zusammenfassend wird die Storefront-Schicht von der Plattform selbst getrennt. Es ist immer noch dasselbe Backend, aber Adobe Commerce verarbeitet Anforderungen nicht mehr direkt und unterstützt stattdessen nur benutzerdefinierte Storefronts über die GraphQL-API.
 
 ### Adobe Commerce aktualisieren
 
