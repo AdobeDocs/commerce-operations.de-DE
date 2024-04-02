@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: c39eb5c9328657083aea07a385531e7ad0df6e14
+source-git-commit: f21891b1be51896efba83d36048c20119ea1edbf
 workflow-type: tm+mt
-source-wordcount: '20136'
+source-wordcount: '20493'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,20 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bi
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches] , die von der Gemeinschaft zur Magento Open Source erstellt wurden, siehe [Versionshinweise](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.48 {#v1-1-48}
+
+* **ACSD-55566** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebung des Problems, bei dem die `mergeCart` Mutation schlägt mit einem &quot;*Interner Server-Fehler*&quot; in der [!DNL GraphQL] Antwort beim Zusammenführen von Quell- und Zielcarts, die dieselben Bundle-Elemente aufweisen.
+* **ACSD-56546** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems, bei dem konfigurierbare und Bundle-Produkte als **Nicht vorrätig** auf der Storefront, wenn die **Anzeigen außerhalb der Produktkonfiguration** is *Behinderte*.
+* **ACSD-56635** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem der importierte Kunde mit derselben E-Mail-Adresse dupliziert wird, wenn ein Import mit **Kontofreigabe** auf *Global*.
+* **ACSD-56741** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebt die Fehlermeldung &quot;*Versuch, auf den Array-Versatz für den Wert des Typs null zuzugreifen*&quot;, das während `setup:upgrade` wenn die Datenbank eine benutzerdefinierte [!DNL MySQL] Trigger, der nicht mit dem Indexierungsmechanismus in Zusammenhang steht, und [!DNL MView].
+* **ACSD-57315** (für Adobe Commerce und Magento Open Source >=2.4.2 &lt;2.4.7) - Behebung des Problems bei der Erstellung einer neuen Transaktion in [!DNL PayPal Payflow Pro] jedes Mal [!UICONTROL Fetch] auf die Schaltfläche **[!UICONTROL View transaction]** im Admin-Bildschirm angezeigt.
+* **ACSD-57337** (für Adobe Commerce >=2.4.4 &lt;2.4.6) - Behebung des Problems, bei dem ein Admin-Benutzer mit Zugriffsbeschränkungen auf bestimmte Websites Unternehmen von allen Websites in der **[!UICONTROL Companies]** Gitter.
+* **ACSD-57394** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebung des Problems der falschen Sortierung nach mehreren Sortierungsfeldern in [!DNL GraphQL].
+* **ACSD-57565** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.7) - Behebung des Problems, bei dem die **[!UICONTROL Order]** -Dashboard zeigt fehlerhafte Bestellinformationen an, bis der Zeitraum aktualisiert wurde. Das Dashboard zeigt nun die richtigen Bestellstatistiken beim ersten Laden an.
+* **ACSD-57854** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebt das Problem beim Produkt [!DNL GraphQL] -Anfragen gaben deaktivierte Kategorien in den Kategorieaggregationen zurück.
+* **ACSD-58008** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Behebung des Problems, bei dem beim Aktualisieren einer geplanten Aktualisierung die vorherige Version eines gestaffelten Elements entfernt wurde, wenn kein Enddatum angegeben wurde.
+* Aktualisierte Patches: MDVA-39305-V2, ACSD-48627, ACSD-54965
 
 ## v1.1.47 {#v1-1-47}
 
