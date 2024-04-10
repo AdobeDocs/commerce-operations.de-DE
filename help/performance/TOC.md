@@ -1,11 +1,11 @@
 ---
 user-guide-title: Best Practices für die Leistung
-user-guide-description: Optimieren Sie die Leistung Ihrer Adobe Commerce- oder Magento Open Source-Produktionsimplementierung anhand unserer Empfehlungen.
+user-guide-description: Optimieren Sie die Performance Ihrer Adobe Commerce- oder Magento Open Source-Produktionsbereitstellung mithilfe unserer Empfehlungen.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: cb843dbb3759d9ce5e94317ae977cfe8acfa4432
+source-git-commit: 51a86a24561e2c21b895dd59b3d784313b52d186
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '54'
 ht-degree: 1%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 1%
 - [Hardware-Empfehlungen](hardware.md)
 - [Software-Empfehlungen](software.md)
 - [Referenzarchitektur](reference-architecture.md)
-- [Empfehlungen zur Entwicklungsumgebung](development-environment.md)
-- [Best Practices bei der Konfiguration](configuration.md)
-- [Implementierungsfluss](deployment-flow.md)
-- [Verarbeitung hoher Durchsatzaufträge](high-throughput-order-processing.md)
+- [Empfehlungen für die Entwicklungsumgebung](development-environment.md)
+- [Best Practices für die Konfiguration](configuration.md)
+- [Bereitstellungsfluss](deployment-flow.md)
+- [Auftragsverarbeitung mit hohem Durchsatz](high-throughput-order-processing.md)
 - Erweiterte Konzepte {#concepts}
-   - [Erweiterte Einrichtung](advanced-setup.md)
-   - [Erweitert [!DNL JavaScript] Bundling](advanced-js-bundling.md)
-   - [Anwendungsserver für GraphQL-APIs](application-server.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+   - [Erweitertes Setup](advanced-setup.md)
+   - [Erweitert [!DNL JavaScript] Bündelung](advanced-js-bundling.md)
+   - [GraphQL-Anwendungsserver](application-server.md)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

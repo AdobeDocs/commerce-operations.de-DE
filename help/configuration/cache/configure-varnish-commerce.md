@@ -1,54 +1,54 @@
 ---
-title: Konfigurieren der Variante für Commerce
-description: Erfahren Sie, wie Sie Ihre Varnish-Konfigurationsdatei für die Commerce-Anwendung aktualisieren und verwalten.
+title: Lackierung für Commerce konfigurieren
+description: Erfahren Sie, wie Sie Ihre Varnish-Konfigurationsdatei für das Commerce-Programm aktualisieren und verwalten.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
-# Konfigurieren der Commerce-Anwendung für die Verwendung von Varnish
+# Konfigurieren des Commerce-Programms für die Verwendung von „Varnish“
 
-So konfigurieren Sie Commerce für die Verwendung von Varnish:
+So konfigurieren Sie Commerce für die Verwendung von „Lack„:
 
 1. Melden Sie sich bei Admin als Administrator an.
-1. Klicks **[!UICONTROL Stores]** > Einstellungen > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache**.
-1. Aus dem **[!UICONTROL Caching Application]** Liste, klicken Sie **Varnish-Zwischenspeicherung**.
-1. Geben Sie im Feld **[!UICONTROL TTL for public content]** -Feld.
-1. Erweitern **[!UICONTROL Varnish Configuration]** und geben Sie folgende Informationen ein:
+1. Klick **[!UICONTROL Stores]** > Einstellungen > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache**.
+1. Aus dem **[!UICONTROL Caching Application]** Liste, klicken Sie auf **Zwischenspeicherung von Lacken**.
+1. Einen Wert in das Feld **[!UICONTROL TTL for public content]** Feld.
+1. Expand **[!UICONTROL Varnish Configuration]** und geben Sie die folgenden Informationen ein:
 
    | Feld | Beschreibung |
    | ----- | ----------- |
-   | Zugriffsliste | Geben Sie den vollständig qualifizierten Hostnamen und die IP-Adresse ein oder [Classless Inter-Domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) -IP-Adressbereich, für den Inhalte ungültig gemacht werden sollen. Siehe [Bereinigen des Zwischenspeichers](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Backend-Host | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse ein und überwachen Sie den Port des Varnish _Backend_ oder _Ursprungsserver_; d. h. der Server, der den Inhalt bereitstellt, beschleunigt Varnish. Normalerweise ist dies Ihr Webserver. Siehe [Varnish-Cache-Backend-Server](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
-   | Backend-Port | Listener Port des Herkunftsservers. |
-   | Übergangsphase | Bestimmt, wie lange Varnish veraltete Inhalte bereitstellt, wenn das Backend nicht reagiert. Der Standardwert ist 300 Sekunden. |
-   | Handles params size  [!BADGE 2.4.7-Beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Nur in 2.4.7-Beta verfügbar"} | Gibt die maximale Anzahl von [Layout-Handles](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) zur Verarbeitung in [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP-Endpunkt für die vollständige Zwischenspeicherung. Eine Größenbeschränkung kann die Sicherheit und Leistung verbessern. Der Standardwert ist 100. |
+   | Auf Liste zugreifen | Geben Sie den vollqualifizierten Hostnamen, die IP-Adresse oder [Classless Inter-Domain Routing (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) IP-Adressbereich der Notation, für den der Inhalt ungültig gemacht werden soll. Siehe [Löschen des Lackcache](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Backend-Host | Geben Sie den vollqualifizierten Hostnamen oder die IP-Adresse ein und überwachen Sie den Port des Lackiermittels. _Backend_ oder _Ursprungs-Server_, d. h. der Server, der den Lackinhalt bereitstellt, wird beschleunigt. Normalerweise ist dies Ihr Webserver. Siehe [Lackieren von Cache-Backend-Servern](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Backend-Port | Listen-Port des Ursprungs-Servers |
+   | Karenzzeit | Legt fest, wie lange Varnish veraltete Inhalte bereitstellt, wenn das Backend nicht responsiv ist. Der Standardwert ist 300 Sekunden. |
+   | Verarbeitet Parameter der Größe | Gibt die maximale Anzahl von [Layout-Griffe](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) zur Verarbeitung am [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) HTTP-Endpunkt für das Zwischenspeichern ganzer Seiten. Eine Größenbeschränkung kann die Sicherheit und Leistung verbessern. Der Standardwert lautet 100. |
 
-1. Klicks **Konfiguration speichern**.
+1. Klick **Konfiguration speichern**.
 
-Mit dem Befehlszeilen-Tool C können Sie auch die Option Varnish über die Befehlszeile aktivieren, anstatt sich beim Administrator anzumelden:
+Sie können Varnish auch über die Befehlszeile aktivieren, anstatt sich beim Administrator anzumelden, indem Sie das Befehlszeilen-Tool C verwenden:
 
 ```bash
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
-## Varnish-Konfigurationsdatei exportieren
+## Exportieren einer Lackkonfigurationsdatei
 
-So exportieren Sie eine Varnish-Konfigurationsdatei aus dem Administrator:
+So exportieren Sie eine Lackkonfigurationsdatei vom Administrator:
 
-1. Klicken Sie auf eine der Exportschaltflächen, um eine `varnish.vcl` können Sie mit Varnish verwenden.
+1. Klicken Sie auf eine der Exportschaltflächen, um eine Datei zu erstellen. `varnish.vcl` Sie können mit Lack verwenden.
 
-   Wenn Sie beispielsweise Varnish 4 haben, klicken Sie auf **VCL für Schweine 4 ausführen**
+   Wenn Sie beispielsweise Varnish 4 haben, klicken Sie auf **VCL für Lack 4 exportieren**
 
    Die folgende Abbildung zeigt ein Beispiel:
 
-   ![Konfigurieren von Commerce zur Verwendung von Varnish in Admin](../../assets/configuration/varnish-admin-22.png)
+   ![Konfigurieren von Commerce für die Verwendung von „Lack“ in der Admin Console](../../assets/configuration/varnish-admin-22.png)
 
-1. Vorhandene sichern `default.vcl`. Benennen Sie dann die `varnish.vcl` Datei, die Sie gerade in `default.vcl`. Kopieren Sie dann die Datei in die `/etc/varnish/` Verzeichnis.
+1. Sichern vorhandener `default.vcl`. Benennen Sie dann um. `varnish.vcl` Die soeben exportierte Datei `default.vcl`. Kopieren Sie dann die Datei nach . `/etc/varnish/` Verzeichnis.
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
@@ -62,7 +62,7 @@ So exportieren Sie eine Varnish-Konfigurationsdatei aus dem Administrator:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe empfehlen, zu öffnen `default.vcl` und den Wert von `acl purge` an die IP-Adresse des &quot;Varnish&quot;-Hosts. (Sie können mehrere Hosts in separaten Zeilen angeben oder auch die CIDR-Notation verwenden.)
+1. Adobe empfehlen, zu öffnen `default.vcl` und den Wert von ändern `acl purge` an die IP-Adresse des Lackhost. (Sie können mehrere Hosts in separaten Zeilen angeben oder auch die CIDR-Notation verwenden.)
 
    Beispiel:
 
@@ -72,7 +72,7 @@ So exportieren Sie eine Varnish-Konfigurationsdatei aus dem Administrator:
     }
    ```
 
-1. Wenn Sie die Vagrant-Konsistenzprüfungen, den Übergangmodus oder die Farbmodus-Konfiguration anpassen möchten, lesen Sie [Erweiterte Varnish-Konfiguration](config-varnish-advanced.md).
+1. Wenn Sie die Konsistenzprüfungen für Vagranten oder den Anmut- bzw. Heiligenmodus anpassen möchten, lesen Sie Folgendes: [Erweiterte Lackkonfiguration](config-varnish-advanced.md).
 
 1. Starten Sie Varnish und Ihren Webserver neu:
 
@@ -84,9 +84,9 @@ So exportieren Sie eine Varnish-Konfigurationsdatei aus dem Administrator:
    service httpd restart
    ```
 
-## Statische Cache-Dateien
+## Statische Dateien zwischenspeichern
 
-Statische Dateien sollten nicht standardmäßig zwischengespeichert werden. Wenn Sie sie jedoch zwischenspeichern möchten, können Sie den Abschnitt bearbeiten `Static files caching` im VCL den folgenden Inhalt aufweisen:
+Statische Dateien sollten nicht standardmäßig zwischengespeichert werden. Wenn Sie sie jedoch zwischenspeichern möchten, können Sie den Abschnitt bearbeiten `Static files caching` in der VCL über folgenden Inhalt verfügen:
 
 ```conf
 # Static files should not be cached by default

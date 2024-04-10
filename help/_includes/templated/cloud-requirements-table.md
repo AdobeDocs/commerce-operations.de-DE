@@ -1,8 +1,8 @@
 ---
-source-git-commit: c59609c0df7b059543d7768ebfe97dc5d30fd357
+source-git-commit: 857b2016056279e348438f63b0cc7f0bd293698b
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 66%
+source-wordcount: '210'
+ht-degree: 65%
 
 ---
 # Cloud-Anforderungstabelle
@@ -11,14 +11,16 @@ ht-degree: 66%
   <thead>
     <tr>
       <th>
-        Softwareabhängigkeiten
+        Software-Abhängigkeiten
       </th>
-      <th>2.4.7-beta3</th>
+      <th>2,4,7</th>
+      <th>2.4.6-p5</th>
       <th>2.4.6-p4</th>
       <th>2.4.6-p3</th>
       <th>2.4.6-p2</th>
       <th>2.4.6-p1</th>
       <th>2,4,6</th>
+      <th>2.4.5-p7</th>
       <th>2.4.5-p6</th>
       <th>2.4.5-p5</th>
       <th>2.4.5-p4</th>
@@ -26,6 +28,7 @@ ht-degree: 66%
       <th>2.4.5-p2</th>
       <th>2.4.5-p1</th>
       <th>2,4,5</th>
+      <th>2.4.4-p8</th>
       <th>2.4.4-p7</th>
       <th>2.4.4-p6</th>
       <th>2.4.4-p5</th>
@@ -42,7 +45,16 @@ ht-degree: 66%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,6
+            2,7
+      </td>
+      <td>
+            2,2
+      </td>
+      <td>
+            2,2
+      </td>
+      <td>
+            2,2
       </td>
       <td>
             2,2
@@ -180,13 +192,25 @@ ht-degree: 66%
           —
       </td>
       <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
             7,9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2,11
+            2,12
+      </td>
+      <td>
+            2,12
       </td>
       <td>
             2,5
@@ -204,7 +228,7 @@ ht-degree: 66%
             2,5
       </td>
       <td>
-            1,2
+            1,3
       </td>
       <td>
             1,2
@@ -223,6 +247,12 @@ ht-degree: 66%
       </td>
       <td>
             1,2
+      </td>
+      <td>
+            1,2
+      </td>
+      <td>
+            1,3
       </td>
       <td>
             1,2
@@ -274,6 +304,15 @@ ht-degree: 66%
       </td>
       <td>
             10,6
+      </td>
+      <td>
+            10,6
+      </td>
+      <td>
+            10,4
+      </td>
+      <td>
+            10,4
       </td>
       <td>
             10,4
@@ -348,6 +387,15 @@ ht-degree: 66%
             8.2, 8.1
       </td>
       <td>
+            8.2, 8.1
+      </td>
+      <td>
+            8,1
+      </td>
+      <td>
+            8,1
+      </td>
+      <td>
             8,1
       </td>
       <td>
@@ -405,31 +453,40 @@ ht-degree: 66%
             3,12
       </td>
       <td>
-            3.11, 3.9
+            3,12, 3,11, 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
+      </td>
+      <td>
+            3,11; 3,9
+      </td>
+      <td>
+            3,11; 3,9
+      </td>
+      <td>
+            3,9
       </td>
       <td>
             3,9
@@ -492,7 +549,10 @@ ht-degree: 66%
             7,0
       </td>
       <td>
-            6,2
+            7,0
+      </td>
+      <td>
+            7,0
       </td>
       <td>
             6,2
@@ -511,6 +571,12 @@ ht-degree: 66%
       </td>
       <td>
             6,2
+      </td>
+      <td>
+            6,2
+      </td>
+      <td>
+            7,0
       </td>
       <td>
             6,2
