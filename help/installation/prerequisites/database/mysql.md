@@ -1,10 +1,10 @@
 ---
 title: MySQL-Richtlinien
-description: Führen Sie diese Schritte aus, um MySQL und MariaDB für lokale Installationen von Adobe Commerce und Magento Open Source zu installieren und zu konfigurieren.
+description: Führen Sie diese Schritte aus, um MySQL und MariaDB für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Siehe [Systemanforderungen](../../system-requirements.md) für unterstützte MyS
 
 Adobe _stark_ empfiehlt bei der Einrichtung der Datenbank die Einhaltung des folgenden Standards:
 
-* Verwendung von Adobe Commerce und Magento Open Source [MySQL-Datenbank-Trigger](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) , um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexmodus auf [Zeitplan](../../../configuration/cli/manage-indexers.md#configure-indexers). Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce- und Magento Open Source-Versionen verursachen können.
+* Adobe Commerce verwendet [MySQL-Datenbank-Trigger](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) , um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexmodus auf [Zeitplan](../../../configuration/cli/manage-indexers.md#configure-indexers). Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce-Versionen verursachen können.
 * Machen Sie sich mit [Diese möglichen Einschränkungen für MySQL Trigger](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) bevor Sie fortfahren.
 * Aktivieren Sie zur Erhöhung der Datenbanksicherheit die [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL-Modus, um zu verhindern, dass ungültige Datenwerte gespeichert werden, was zu unerwünschten Datenbankinteraktionen führen kann.
-* Adobe Commerce und Magento Open Source _not_ Unterstützung der auf MySQL-Anweisungen basierenden Replikation. Stellen Sie sicher, dass Sie _only_ [row-basierte Replikation](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* Adobe Commerce _not_ Unterstützung der auf MySQL-Anweisungen basierenden Replikation. Stellen Sie sicher, dass Sie _only_ [row-basierte Replikation](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ Adobe _stark_ empfiehlt bei der Einrichtung der Datenbank die Einhaltung des fol
 
 ## Installieren von MySQL auf Ubuntu
 
-Adobe Commerce und Magento Open Source 2.4 erfordern eine saubere Installation von MySQL 8.0. Folgen Sie den unten stehenden Links, um Anweisungen zur Installation von MySQL auf Ihrem Computer zu erhalten.
+Für Adobe Commerce 2.4 ist eine saubere Installation von MySQL 8.0 erforderlich. Folgen Sie den unten stehenden Links, um Anweisungen zur Installation von MySQL auf Ihrem Computer zu erhalten.
 
 * [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
 * [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
@@ -53,7 +53,7 @@ Dann [Datenbankinstanz konfigurieren](#configuring-the-database-instance).
 
 ## MySQL 8-Änderungen
 
-Für Adobe Commerce und Magento Open Source 2.4 wurde Unterstützung für MySQL 8 hinzugefügt.
+Für Adobe Commerce 2.4 wurde Unterstützung für MySQL 8 hinzugefügt.
 In diesem Abschnitt werden wichtige Änderungen an MySQL 8 beschrieben, die Entwickler kennen sollten.
 
 ### Die Breite für ganzzahlige Typen wurde entfernt (Umrandung)
@@ -92,11 +92,11 @@ Ab MySQL 8.0.13 wird die veraltete `ASC` oder `DESC` Qualifikatoren für `GROUP 
 
 ## Commerce und MySQL 8
 
-Es wurden einige Änderungen an Adobe Commerce und Magento Open Source vorgenommen, um MySQL 8 ordnungsgemäß zu unterstützen.
+Es wurden einige Änderungen an Adobe Commerce vorgenommen, um MySQL 8 ordnungsgemäß zu unterstützen.
 
 ### Verhalten bei Abfrage und Einfügen
 
-Adobe Commerce und Magento Open Source haben das reguläre Validierungsverhalten deaktiviert, indem SET SQL_MODE=&#39;&#39; in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Wenn die Validierung deaktiviert ist, ist es möglich, dass MySQL Daten abschneidet. In MySQL hat sich das Verhalten der Abfrage geändert: `Select * on my_table where IP='127.0.0.1'` gibt keine Ergebnisse mehr zurück, da die IP-Adresse jetzt ordnungsgemäß als Zeichenfolge und nicht als Ganzzahl betrachtet wird.
+Adobe Commerce hat das reguläre Validierungsverhalten deaktiviert, indem SET SQL_MODE=&#39;&#39; in `/lib/internal/Magento/Framework/DB/Adapter/Pdo/Mysql.php:424.`. Wenn die Validierung deaktiviert ist, ist es möglich, dass MySQL Daten abschneidet. In MySQL hat sich das Verhalten der Abfrage geändert: `Select * on my_table where IP='127.0.0.1'` gibt keine Ergebnisse mehr zurück, da die IP-Adresse jetzt ordnungsgemäß als Zeichenfolge und nicht als Ganzzahl betrachtet wird.
 
 ## Upgrade von MySQL 5.7 auf MySQL 8
 

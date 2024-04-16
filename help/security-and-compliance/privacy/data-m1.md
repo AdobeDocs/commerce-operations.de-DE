@@ -2,9 +2,9 @@
 title: Referenz zu personenbezogenen Daten des Kunden (Version 1.x)
 description: Erfahren Sie mehr über Datenflüsse und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dies ist eines von mehreren Themen, die Kaufleuten und Entwicklern von Adobe Commerce und Magento Open Source dabei helfen, sich auf die Einhaltung von Datenschutzbestimmungen vorzubereiten. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
+>Dies ist eines von mehreren Themen, die Adobe Commerce-Händler und -Entwickler bei der Vorbereitung auf die Einhaltung von Datenschutzbestimmungen unterstützen. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
 
 Verwenden Sie die folgenden Datenflussdiagramme und Datenbankentitätszuordnungen als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen wie:
 

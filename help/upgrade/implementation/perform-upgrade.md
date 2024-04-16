@@ -2,9 +2,9 @@
 title: Durchführen eines Upgrades
 description: Führen Sie diese Schritte aus, um lokale Bereitstellungen von Adobe Commerce zu aktualisieren.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 0cee0ab36274758b583c04dbee8251ce3b78e559
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Die folgenden Anweisungen zeigen Ihnen, wie Sie ein Upgrade mit dem Composer Pac
 
 >[!WARNING]
 >
->Das Verfahren für die Aktualisierung von Adobe Commerce und Magento Open Source wurde geändert. Sie müssen eine neue Version der `magento/composer-root-update-plugin` Paket (siehe [Voraussetzungen](../prepare/prerequisites.md)). Darüber hinaus haben sich die Befehle für die Aktualisierung von `composer require magento/<package_name>` nach `composer require-commerce magento/<package_name>`.
+>Das Upgrade-Verfahren für Adobe Commerce wurde geändert. Sie müssen eine neue Version der `magento/composer-root-update-plugin` Paket (siehe [Voraussetzungen](../prepare/prerequisites.md)). Darüber hinaus haben sich die Befehle für die Aktualisierung von `composer require magento/<package_name>` nach `composer require-commerce magento/<package_name>`.
 
 ## Bevor Sie beginnen
 

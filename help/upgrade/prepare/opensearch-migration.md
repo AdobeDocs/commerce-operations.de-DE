@@ -1,11 +1,11 @@
 ---
 title: Migration von Elasticsearch zu OpenSearch
-description: Erfahren Sie mehr über die Ersetzung der Suchmaschine, die für lokale Installationen von Adobe Commerce und Magento Open Source verwendet wird.
+description: Erfahren Sie mehr über die Ersetzung der Suchmaschine, die für lokale Installationen von Adobe Commerce verwendet wird.
 feature: Upgrade, Search
 exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 OpenSearch ist eine Open-Source-Abspaltung von Elasticsearch 7.10.2, die nach der Lizenzänderung von Elasticsearch erstellt wurde.
 
-Ab 2.4.4, 2.4.3-p2 und 2.3.7-p3 unterstützen Adobe Commerce und Magento Open Source OpenSearch. Vor-Ort-Installationen unterstützen Elasticsearch weiterhin, obwohl es für Adobe Commerce in der Cloud-Infrastruktur nicht mehr unterstützt wird. Ab Version 2.4.6 verfügt OpenSearch über ein eigenes Modul und eigene Felder in den Admin-Konfigurationseinstellungen.
+Ab 2.4.4, 2.4.3-p2 und 2.3.7-p3 unterstützt Adobe Commerce OpenSearch. Vor-Ort-Installationen unterstützen Elasticsearch weiterhin, obwohl es für Adobe Commerce in der Cloud-Infrastruktur nicht mehr unterstützt wird. Ab Version 2.4.6 verfügt OpenSearch über ein eigenes Modul und eigene Felder in den Admin-Konfigurationseinstellungen.
 
 ## Migrationspfad
 

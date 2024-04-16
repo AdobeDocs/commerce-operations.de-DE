@@ -3,9 +3,9 @@ title: Konfigurieren von Suchbegriffen
 description: Erfahren Sie, wie Sie mithilfe von CSV-Dateien Stoppwörter für Adobe Commerce verwalten.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Weitere Informationen dazu, wie Elasticsearch und OpenSearch Stoppwörter verwen
 
 ## Stoppwörter konfigurieren
 
-Stoppwörter befinden sich im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis. Im Lieferumfang von Adobe Commerce und Magento Open Source ist eine CSV-Datei mit Stoppwörtern für Standard-Gebietsschemata und einer zusätzlichen Datei enthalten. `stopwords.csv`, das Stoppwörter für alle Gebietsschemas enthält, die nicht durch eine andere CSV-Datei dargestellt werden.
+Stoppwörter befinden sich im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis. Im Lieferumfang von Adobe Commerce ist eine CSV-Datei mit Stoppwörtern für Standard-Gebietsschemata und einer zusätzlichen Datei enthalten. `stopwords.csv`, das Stoppwörter für alle Gebietsschemas enthält, die nicht durch eine andere CSV-Datei dargestellt werden.
 
 Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträgt 15 Minuten.
 

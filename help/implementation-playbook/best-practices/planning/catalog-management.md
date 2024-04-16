@@ -3,13 +3,13 @@ title: Best Practices für die Katalogverwaltung
 description: Erfahren Sie mehr über Empfehlungen zum Konfigurieren von Warenkorbbeschränkungen und Produktattributen, zum Auflisten von Paginierung, Optionen, Promotions und Varianten.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Katalogverwaltung
 
@@ -25,7 +25,7 @@ Die hier beschriebenen Best Practices für die Katalogverwaltung decken eine Rei
 
 ## Begrenzung des Warenkorbs
 
-Verwenden Sie die folgenden Richtlinien, um die Einschränkungen des Warenkorbs für Adobe Commerce und Magento Open Source zu verwalten, um eine optimale Leistung zu erzielen.
+Um eine optimale Leistung zu erzielen, sollten Sie die folgenden Richtlinien verwenden, um die Einschränkungen des Warenkorbs für Adobe Commerce zu verwalten.
 
 ### Betroffene Produkte und Versionen
 
@@ -262,4 +262,3 @@ Wenn Sie mehr als die empfohlene maximale Anzahl von Regeln oder Gutscheinen fü
 - Die Zeit zum Laden und Rendern des Minicarts wurde verlängert.
 - Die Zeit zum Rendern der Warenkorbseite wurde verlängert.
 - Erhöhte Zeit zum Rendern der **Gesamt** auf der Checkout-Seite.
-

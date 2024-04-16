@@ -1,10 +1,10 @@
 ---
 title: Upgrade-Module und -Erweiterungen
-description: Verwenden Sie die Befehlszeilenschnittstelle und den Composer, um Adobe Commerce- und Magento Open Source-Module und -Erweiterungen zu aktualisieren.
+description: Verwenden Sie die Befehlszeilenschnittstelle und den Composer, um Adobe Commerce-Module und -Erweiterungen zu aktualisieren.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '177'
 ht-degree: 0%
 
 ---

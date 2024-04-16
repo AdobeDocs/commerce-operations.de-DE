@@ -3,9 +3,9 @@ title: Hausinterne Installationssicherheit
 description: Erfahren Sie mehr über Möglichkeiten, die Sicherheitsbereitschaft Ihrer Adobe Commerce- oder Magento Open Source-Installation vor Ort zu verbessern.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe hat keine Empfehlung zur Verwendung von SELinux; Sie können es für eine höhere Sicherheit verwenden, wenn Sie möchten. Wenn Sie SELinux verwenden, müssen Sie es ordnungsgemäß konfigurieren, oder die Adobe Commerce und Magento Open Source können unvorhersehbar funktionieren. Wenn Sie SELinux verwenden, konsultieren Sie eine Ressource wie die [CentOS-Wiki](https://wiki.centos.org/HowTos/SELinux) , um Regeln für die Aktivierung der Kommunikation festzulegen.
+>Adobe hat keine Empfehlung zur Verwendung von SELinux; Sie können es für eine höhere Sicherheit verwenden, wenn Sie möchten. Wenn Sie SELinux verwenden, müssen Sie es ordnungsgemäß konfigurieren oder die Adobe Commerce kann unvorhersehbar funktionieren. Wenn Sie SELinux verwenden, konsultieren Sie eine Ressource wie die [CentOS-Wiki](https://wiki.centos.org/HowTos/SELinux) , um Regeln für die Aktivierung der Kommunikation festzulegen.
 
 ## Vorschläge für die Installation mit Apache
 

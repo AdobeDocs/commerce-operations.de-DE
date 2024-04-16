@@ -1,11 +1,11 @@
 ---
 title: PHP-Einstellungen
-description: Führen Sie diese Schritte aus, um erforderliche PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
+description: Führen Sie diese Schritte aus, um erforderliche PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 87e3109518fc06c655a3fc9446e2ecd648775da1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In diesem Thema wird beschrieben, wie Sie die erforderlichen PHP-Optionen festle
 
 >[!NOTE]
 >
->Die neueste Version von Adobe Commerce und Magento Open Source erfordert mindestens PHP 8.1. Siehe [Systemanforderungen](../system-requirements.md) für alle unterstützten PHP-Versionen.
+>Die neueste Version von Adobe Commerce erfordert mindestens PHP 8.1. Siehe [Systemanforderungen](../system-requirements.md) für alle unterstützten PHP-Versionen.
 
-Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) im _Handel mit Cloud-Infrastruktur_ Handbuch.
+Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) im _Commerce on Cloud Infrastructure_ Handbuch.
 
 ## PHP Process Control
 
@@ -46,7 +46,7 @@ Wenn PHP nicht installiert ist (oder ein Upgrade erforderlich ist), installieren
 
 ## Überprüfen installierter Erweiterungen
 
-Adobe Commerce und Magento Open Source erfordern bestimmte PHP-Erweiterungen. In den folgenden Listen werden die erforderlichen Erweiterungen für jede Commerce-Edition angegeben. Die Listen werden von einer Bereitstellung automatisch generiert, bei der die neueste Version jeder Edition ausgeführt wird.
+Adobe Commerce erfordert bestimmte PHP-Erweiterungen. In den folgenden Listen werden die erforderlichen Erweiterungen für jede Version von Commerce aufgeführt. Die Listen werden von einer Bereitstellung automatisch generiert, bei der die neueste Version jeder Edition ausgeführt wird.
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
@@ -90,11 +90,11 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Diese Einstellungen ermöglichen es PHP-Prozessen, Pfade zu Dateien zwischenzuspeichern, anstatt sie beim Laden der Seite zu suchen. Siehe [Leistungsoptimierung](https://www.php.net/manual/en/ini.core.php) in der PHP-Dokumentation.
 
-- Aktivieren [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), was für Adobe Commerce und Magento Open Source 2.1 und höher erforderlich ist.
+- Aktivieren [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), was für Adobe Commerce 2.1 und höher erforderlich ist.
 
   Adobe empfiehlt die Aktivierung der [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) aus Leistungsgründen. Der OPcache ist in vielen PHP-Distributionen aktiviert.
 
-  Adobe Commerce und Magento Open Source 2.1 und höher verwenden PHP-Code-Kommentare zur Codegenerierung.
+  Adobe Commerce 2.1 und höher verwenden PHP-Code-Kommentare zur Codegenerierung.
 
 >[!NOTE]
 >

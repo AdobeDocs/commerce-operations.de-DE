@@ -3,9 +3,9 @@ title: Grundsätze der Plattformentwicklung
 description: Grundlegende Prinzipien der Plattformentwicklung bei der Arbeit mit Adobe Commerce
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
-source-git-commit: 3c1a49c2dc3dc0d3d47e16c724d4099b6a456c77
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ Wie bei jedem großen IT-Projekt basiert Adobe Commerce auf Kodierungsstandards,
 
 ## Adobe Commerce auf Cloud-Infrastruktur
 
-Adobe Commerce on Cloud Infrastructure ist eine verwaltete, automatisierte Hosting-Plattform für die Adobe Commerce-Software. Adobe Commerce in der Cloud-Infrastruktur verfügt über verschiedene Funktionen, die es von lokalen Implementierungen von Adobe Commerce und Magento Open Source unterscheidet. Siehe [Cloud-Anleitung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce on Cloud Infrastructure ist eine verwaltete, automatisierte Hosting-Plattform für die Adobe Commerce-Software. Adobe Commerce on Cloud Infrastructure verfügt über verschiedene Funktionen, die es von lokalen Adobe Commerce-Implementierungen unterscheidet. Siehe [Cloud-Anleitung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

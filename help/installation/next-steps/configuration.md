@@ -1,11 +1,11 @@
 ---
 title: Anwendung konfigurieren
-description: Erfahren Sie mehr über die Konfiguration nach der Installation, die für Adobe Commerce und die Magento Open Source vor Ort erforderlich ist.
+description: Erfahren Sie mehr über die Konfiguration nach der Installation, die für lokale Adobe Commerce-Implementierungen erforderlich ist.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Nachdem Sie die Installation von Adobe Commerce oder Magento Open Source abgesch
 
 Der UNIX-Task Scheduler (Cron) ist für die laufenden Vorgänge der Anwendung von entscheidender Bedeutung. Er plant Dinge wie Neuindizierung, Newsletter, E-Mails und Sitemaps. A *crontab* ist eine Cron-Konfiguration.
 
-Sie müssen Adobe Commerce- und Magento Open Source-Dienste im *crontab*, oder einige Kernfunktionen (und einige Drittanbietererweiterungen) funktionieren nicht ordnungsgemäß.
+Sie müssen die Adobe Commerce-Dienste im *crontab*, oder einige Kernfunktionen (und einige Drittanbietererweiterungen) funktionieren nicht ordnungsgemäß.
 
 Weitere Informationen zu Cron, einschließlich der Möglichkeit, eine Crontab zu entfernen und Cron über die Befehlszeile auszuführen, finden Sie unter [Cron konfigurieren und ausführen](../../configuration/cli/configure-cron-jobs.md).
 
@@ -79,7 +79,7 @@ Weitere Informationen:
 
 ### E-Mail-Server einrichten
 
-Adobe Commerce und Magento Open Source benötigen einen E-Mail-Server. Wir empfehlen keinen bestimmten Server, Sie können jedoch Folgendes versuchen:
+Adobe Commerce benötigt einen E-Mail-Server. Wir empfehlen keinen bestimmten Server, Sie können jedoch Folgendes versuchen:
 
 * Postfix für CentOS ([Digital Ocean-Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [Dokumentation zu CentOS](https://www.centos.org))
 * Postfix für Ubuntu ([Digital Ocean-Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Ubuntu-Dokumentation](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Elasticsearch oder OpenSearch ist ab 2.4.0 für alle Installationen erforderlich
 
 ### Nachrichtenwarteschlange einrichten
 
-Seit Version 2.3.0 verfügen Adobe Commerce und Magento Open Source über Funktionen für die Nachrichtenwarteschlange. In früheren Versionen ist er nur für Adobe Commerce verfügbar.
+Seit Version 2.3.0 bietet Adobe Commerce Funktionen für die Nachrichtenwarteschlange. In früheren Versionen ist er nur für Adobe Commerce verfügbar.
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

@@ -1,10 +1,10 @@
 ---
 title: Beispieldaten-Git-Repositorys klonen
-description: Führen Sie diese Schritte aus, um Adobe Commerce und Magento Open Source-Beispieldaten zu installieren, indem Sie Git-Repositorys klonen.
+description: Führen Sie diese Schritte aus, um Adobe Commerce-Beispieldaten durch Klonen von Git-Repositorys zu installieren.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---

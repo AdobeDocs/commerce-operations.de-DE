@@ -3,16 +3,16 @@ title: Basisverzeichnis zur Verbesserung der Sicherheit ändern
 description: Verhindern des nicht autorisierten browserbasierten Zugriffs auf Adobe Commerce oder die Magento Open Source des lokalen Dateisystems.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # Basisverzeichnis zur Verbesserung der Sicherheit ändern
 
-Bei einer Standardinstallation mit einem Apache-Webserver werden Adobe Commerce und Magento Open Source im Standardwebstamm installiert: `/var/www/html/magento2`.
+Bei einer Standardinstallation mit einem Apache-Webserver wird Adobe Commerce im Standardwebstamm installiert: `/var/www/html/magento2`.
 
 Die `magento2/` -Verzeichnis enthält Folgendes:
 
@@ -168,7 +168,7 @@ Der Wechsel zwischen den Modi ist ein wichtiger Schritt, um zu überprüfen, ob 
 
 Gehen Sie in die Storefront eines Webbrowsers, um zu überprüfen, ob alles funktioniert.
 
-1. Öffnen Sie einen Webbrowser und geben Sie den Hostnamen oder die IP-Adresse Ihres Servers in die Adressleiste ein. Beispiel, `http://192.168.33.10`.
+1. Öffnen Sie einen Webbrowser und geben Sie den Hostnamen oder die IP-Adresse Ihres Servers in die Adressleiste ein. Beispiel: `http://192.168.33.10`.
 
    Die folgende Abbildung zeigt eine Beispiel-Storefront-Seite. Wenn es wie folgt angezeigt wird, war Ihre Installation ein Erfolg!
 

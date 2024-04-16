@@ -2,9 +2,9 @@
 title: Module aktivieren oder deaktivieren
 description: Führen Sie diese Schritte aus, um Adobe Commerce- oder Magento Open Source-Module zu verwalten.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Informationen zum Aktivieren und Deaktivieren von Modulen
 
-Adobe Commerce und Magento Open Source ermöglichen es Ihnen, die derzeit verfügbaren Module zu aktivieren bzw. zu deaktivieren, d. h. alle vom Adobe bereitgestellten Module oder Drittanbietermodule, die derzeit verfügbar sind.
+Mit Adobe Commerce können Sie derzeit verfügbare Module aktivieren oder deaktivieren, d. h. alle Adobe-bereitgestellten Module oder Drittanbietermodule, die derzeit verfügbar sind.
 
 Bestimmte Module haben Abhängigkeiten zu anderen Modulen. In diesem Fall können Sie ein Modul möglicherweise nicht aktivieren oder deaktivieren, da es Abhängigkeiten zu anderen Modulen aufweist.
 
@@ -92,7 +92,7 @@ Beispiele:
 
 * Modul A steht in Konflikt mit Modul B. Sie können Modul A und Modul B deaktivieren oder eines der beiden Module deaktivieren, Sie jedoch *cannot* Modul A und Modul B gleichzeitig aktivieren.
 
-* Abhängigkeiten werden im `require` -Feld in Adobe Commerce und Magento Open Source `composer.json` -Datei für jedes Modul. Konflikte werden im `conflict` -Feld in Modulen&quot; `composer.json` -Dateien. Diese Informationen werden zum Erstellen eines Abhängigkeitsdiagramms verwendet: `A->B` bedeutet, dass Modul A von Modul B abhängig ist.
+* Abhängigkeiten werden im `require` im Adobe Commerce-Feld `composer.json` -Datei für jedes Modul. Konflikte werden im `conflict` -Feld in Modulen&quot; `composer.json` -Dateien. Diese Informationen werden zum Erstellen eines Abhängigkeitsdiagramms verwendet: `A->B` bedeutet, dass Modul A von Modul B abhängig ist.
 
 * A *Abhängigkeitskette* ist der Pfad von einem Modul zu einem anderen. Wenn beispielsweise Modul A von Modul B und Modul B von Modul C abhängig ist, dann ist die Abhängigkeitskette `A->B->C`.
 

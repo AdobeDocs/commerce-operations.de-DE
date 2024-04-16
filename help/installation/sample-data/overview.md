@@ -1,17 +1,17 @@
 ---
 title: Übersicht über Beispieldaten
-description: Erfahren Sie mehr über die Verwendung von Beispieldaten für Adobe Commerce- und Magento Open Source-Projekte.
+description: Erfahren Sie mehr über die Verwendung von Beispieldaten für Adobe Commerce-Projekte.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
-source-git-commit: decaac76955aaae011c308ed1295198abf791abe
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
 # Übersicht über Beispieldaten
 
-Beispieldaten bieten eine Storefront basierend auf dem Luma-Design, das mit Produkten, Kategorien, Kundenregistrierung usw. ausgestattet ist. Er funktioniert genauso wie eine Commerce-Storefront und Sie können die Preise, Inventar und Preisregeln für Werbeaktionen mithilfe des Administrators ändern.
+Beispieldaten bieten eine Storefront basierend auf dem Luma-Design, das mit Produkten, Kategorien, Kundenregistrierung usw. ausgestattet ist. Es funktioniert genauso wie eine Commerce-Storefront und Sie können mithilfe des Administrators Preise, Inventar und Preisregeln für Werbeaktionen ändern.
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Sie können Beispieldaten entweder vor oder nach der Installation der Commerce-S
 
 >[!WARNING]
 >
->Beispieldaten können nicht deinstalliert werden. Verwenden Sie Beispieldaten nur, um mehr über die Funktionsweise von Adobe Commerce und Magento Open Source zu erfahren. Vermeiden Sie die Entwicklung in einem System, in dem Sie Beispieldaten installiert haben.
+>Beispieldaten können nicht deinstalliert werden. Verwenden Sie nur Beispieldaten, um mehr über die Funktionsweise von Adobe Commerce zu erfahren. Vermeiden Sie die Entwicklung in einem System, in dem Sie Beispieldaten installiert haben.
 
 Sie können optionale Beispieldaten auf eine der folgenden Arten installieren:
 

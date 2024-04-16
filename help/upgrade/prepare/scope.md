@@ -2,9 +2,9 @@
 title: Aktualisierungsumfang verstehen
 description: Erfahren Sie mehr über abwärtsinkompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce- oder Magento Open Source-Module oder Drittanbieter-Erweiterungen auswirken können.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Abwärtskompatible Änderungen
 
-Adobe Commerce- und Magento Open Source-Versionen können abwärtskompatible Änderungen enthalten. Lesen Sie unsere Dokumentation zu rückwärtsinkompatiblen Änderungen. Weitere Informationen finden Sie unter:
+Adobe Commerce-Versionen können abwärtskompatible Änderungen enthalten. Lesen Sie unsere Dokumentation zu rückwärtsinkompatiblen Änderungen. Weitere Informationen finden Sie unter:
 
 - **[Wichtige Veränderungen](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**—Änderungen, die erhebliche Auswirkungen haben und eine detaillierte Erläuterung und spezielle Anweisungen erfordern, um sicherzustellen, dass Module von Drittanbietern weiterhin funktionieren.
 - **[Geringfügige Änderungsreferenz](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**—Referenzdokumentation, die von der Codebasis generiert wurde und kleinere Änderungen an Klassen, API-Mitgliedschaft, Datenbank, Abhängigkeitseinfügung, Schnittstellen, Layouts, System und XSD beschreibt.

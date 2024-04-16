@@ -3,19 +3,18 @@ title: Nutzung
 description: Erfahren Sie, wie Sie die [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # Nutzung
 
-Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bietet individuelle Patches, die von Adobe und der Magento Open Source Community entwickelt wurden. Damit können Sie allgemeine Informationen zu allen einzelnen Patches, die für die installierte Version von Adobe Commerce oder Magento Open Source verfügbar sind, anwenden, wiederherstellen und anzeigen. Sie können Patches auf Adobe Commerce- und Magento Open Source-Projekte anwenden, unabhängig davon, wer den Patch entwickelt hat. Sie können beispielsweise einen von der Community entwickelten Patch auf Adobe Commerce-Projekte anwenden.
+Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) bietet individuelle Patches, die von Adobe und der Magento Open Source Community entwickelt wurden. Damit können Sie allgemeine Informationen zu allen einzelnen Patches, die für die installierte Version von Adobe Commerce oder Magento Open Source verfügbar sind, anwenden, wiederherstellen und anzeigen. Sie können Patches auf Adobe Commerce-Projekte anwenden, unabhängig davon, wer den Patch entwickelt hat. Sie können beispielsweise einen von der Community entwickelten Patch auf Adobe Commerce-Projekte anwenden.
 
-
-Sehen Sie sich dies an [technisches Video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) und erfahren Sie, wie Sie das Tool &quot;Qualitätsmuster&quot;für Adobe Commerce und Magento Open Source verwenden.
+Sehen Sie sich dies an [technisches Video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) und erfahren Sie, wie Sie das Tool &quot;Qualitätsmuster&quot;für Adobe Commerce verwenden.
 
 >[!INFO]
 >
@@ -62,7 +61,7 @@ Adobe Commerce 2.3.5.
 Die Statustabelle enthält:
 
 - **Typ**:
-   - `Optional` — Alle Patches der [!DNL Quality Patches Tool] und [Commerce on Cloud Infrastructure Guide > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) Das -Paket ist für Installationen von Adobe Commerce und Magento Open Source optional.
+   - `Optional` — Alle Patches der [!DNL Quality Patches Tool] und [Commerce on Cloud Infrastructure-Anleitung > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) -Paket ist für Adobe Commerce-Installationen optional.
    - `Deprecated` — Adobe hat das einzelne Patch veraltet. Wenn Sie den Patch angewendet haben, empfehlen wir Ihnen, ihn zurückzusetzen. Der Vorgang &quot;Reverse&quot;entfernt auch den Patch aus der Statustabelle.
 
 - **Status**:

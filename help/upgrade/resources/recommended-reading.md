@@ -2,22 +2,22 @@
 title: Empfohlene Informationen für Upgrades
 description: Lesen Sie die empfohlenen Informationen zur Planung Ihres Adobe Commerce-Upgrades.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 4%
 
 ---
 
 # Empfohlene Informationen für die Upgrade-Planung
 
-Weitere Informationen zu Adobe Commerce- und Magento Open Source-Upgrades finden Sie auf dieser Seite.
+Weitere Informationen zu Adobe Commerce-Upgrades finden Sie auf dieser Seite.
 
 <table>
   <tbody>
     <tr>
       <td><strong>Versionshinweise und Mitteilungen</strong>
-        <p>Erfahren Sie mehr über die neuesten Entwicklungen in Adobe Commerce und Magento Open Source, einschließlich Produktstrategie, Sicherheit, Fehlerbehebungen und bekannten Problemen.</p>
+        <p>Erfahren Sie mehr über die neuesten Entwicklungen in Adobe Commerce, einschließlich Produktstrategie, Sicherheit, Fehlerbehebungen und bekannten Problemen.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Adobe Blog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
@@ -28,7 +28,7 @@ Weitere Informationen zu Adobe Commerce- und Magento Open Source-Upgrades finden
           </ul>
         </td>
       <td><strong>Instrumente</strong>
-        <p>Durchsuchen Sie Tools, die die Suche und Verwendung von Adobe Commerce- und Magento Open Source-Software erleichtern.</p>
+        <p>Durchsuchen Sie Tools, die Ihnen das Auffinden und Verwenden von Adobe Commerce-Software erleichtern.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Upgrade-Kompatibilitätstool PhpStorm-Plug-in</a> (Video)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Upgrade-Kompatibilitätstool</a></li>
@@ -39,7 +39,7 @@ Weitere Informationen zu Adobe Commerce- und Magento Open Source-Upgrades finden
     </tr>
     <tr>
       <td><strong>Kalender und Richtlinien</strong>
-        <p>Überprüfen Sie Details zu Adobe Commerce- und Magento Open Source-Versionen und -Richtlinien.</p>
+        <p>Überprüfen Sie Details zu Adobe Commerce-Versionen und -Richtlinien.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Häufig gestellte Fragen zum Ende des Supports für Adobe Commerce-Software</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace-Richtlinie</a></li>
@@ -50,7 +50,7 @@ Weitere Informationen zu Adobe Commerce- und Magento Open Source-Upgrades finden
           </ul>
         </td>
       <td><strong>Funktionen und unabhängige Dienste</strong>
-        <p>Informieren Sie sich über innovative Commerce-Dienste, die als Adobe Commerce- und Magento Open Source-Erweiterungen verfügbar sind und wo Sie diese erhalten können.</p>
+        <p>Erfahren Sie mehr über innovative Commerce-Dienste, die als Adobe Commerce-Erweiterungen verfügbar sind und wo Sie diese erhalten können.</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>

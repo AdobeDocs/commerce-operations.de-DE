@@ -1,10 +1,10 @@
 ---
 title: Eine Remote-Verbindung zur MySQL-Datenbank einrichten
-description: Führen Sie diese Schritte aus, um eine Remote-Datenbankverbindung für lokale Installationen von Adobe Commerce und Magento Open Source zu konfigurieren.
+description: Führen Sie diese Schritte aus, um eine Remote-Datenbankverbindung für lokale Installationen von Adobe Commerce zu konfigurieren.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Manchmal möchten Sie die Datenbank auf einem separaten Server hosten, anstatt den Datenbankserver und den Webserver auf demselben Computer auszuführen.
 
-Adobe bietet eine Möglichkeit, eine Verbindung zu einem MySQL-Server auf einem anderen Computer herzustellen. Ab Adobe Commerce und Magento Open Source 2.4.3 können Sie die Anwendung auch so konfigurieren, dass eine Amazon Web Services (AWS) Aurora-Datenbank ohne Codeänderungen verwendet wird.
+Adobe bietet eine Möglichkeit, eine Verbindung zu einem MySQL-Server auf einem anderen Computer herzustellen. Ab Adobe Commerce 2.4.3 können Sie die Anwendung auch so konfigurieren, dass eine Amazon Web Services (AWS) Aurora-Datenbank ohne Codeänderungen verwendet wird.
 
 Aurora ist ein leistungsstarker, vollständig kompatibler MySQL-Server, der auf AWS gehostet wird.
 
 ## Herstellen einer Verbindung zu einer AWS Aurora-Datenbank
 
-Die Verwendung von Aurora als Datenbank ist so einfach wie die Angabe der Datenbank in der regulären Adobe Commerce- und Magento Open Source-Setup-Konfiguration mithilfe des standardmäßigen Datenbank-Connectors.
+Die Verwendung von Aurora als Datenbank ist so einfach wie die Angabe der Datenbank in der regulären Adobe Commerce-Setup-Konfiguration mithilfe des standardmäßigen Datenbank-Connectors.
 
 Beim Ausführen `bin/magento setup:install`, verwenden Sie die Aurora-Informationen im `db-` -Felder:
 

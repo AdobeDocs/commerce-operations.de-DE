@@ -1,17 +1,17 @@
 ---
 title: Referenzarchitektur
-description: Überprüfen Sie Diagramme der empfohlenen Referenzarchitektur für Adobe Commerce- und Magento Open Source-Implementierungen.
+description: Überprüfen Sie Diagramme der empfohlenen Referenzarchitektur für Adobe Commerce-Implementierungen.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # Referenzarchitektur
 
-Hier wird eine allgemeine empfohlene Einrichtung für Adobe Commerce- und Magento Open Source-Instanzen beschrieben, die einfache Server verwenden, die physisch in einem Rechenzentrum gehostet werden (nicht virtualisiert) und in denen Ressourcen nicht für andere Benutzer freigegeben werden. Ihr Hosting-Anbieter kann, insbesondere wenn er sich auf Hosting mit hoher Performance in Commerce spezialisiert hat, ein anderes Setup empfehlen, das für Ihre Anforderungen gleichermaßen oder effektiver ist.
+Hier wird eine allgemeine empfohlene Einrichtung für Adobe Commerce-Instanzen beschrieben, die einfache Server verwenden, die physisch in einem Rechenzentrum gehostet werden (nicht virtualisiert) und in denen Ressourcen nicht für andere Benutzer freigegeben werden. Ihr Hosting-Anbieter kann, insbesondere wenn er sich auf Hosting mit hoher Leistung von Commerce spezialisiert hat, eine andere Einrichtung empfehlen, die Ihren Anforderungen gleichermaßen oder effektiver entspricht.
 
 Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie unter [Starterarchitektur](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
@@ -25,9 +25,9 @@ Die Farbe jedes Elements im Diagramm zeigt an, ob das Element Teil von Magento O
 * Graue Elemente sind optional für die Magento Open Source
 * Blaue Elemente sind für Adobe Commerce optional.
 
-![Architekturdiagramm für Commerce-Referenzen](../assets/performance/images/ref-architecture-2.3.png)
+![Referenzarchitekturdiagramm für Commerce](../assets/performance/images/ref-architecture-2.3.png)
 
-Die folgenden Abschnitte enthalten Empfehlungen und Überlegungen zu jedem Abschnitt des Diagramms &quot;Commerce-Referenzarchitektur&quot;.
+Die folgenden Abschnitte enthalten Empfehlungen und Überlegungen zu jedem Abschnitt des Commerce-Referenzarchitektur-Diagramms.
 
 ### [!DNL Varnish]
 

@@ -1,10 +1,10 @@
 ---
 title: Fortgeschrittene Installation vor Ort
-description: Erfahren Sie mehr über erweiterte Installationsszenarios für Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur.
+description: Erfahren Sie mehr über erweiterte Installationsszenarios für Adobe Commerce in Ihrer Infrastruktur.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Befehlszeilenschnittstelle (CLI)
 
-Adobe Commerce und Magento Open Source verfügen über eine einzige Befehlszeilenschnittstelle für Installations- und Konfigurationsaufgaben: `<magento_root>/bin/magento`. Die Oberfläche führt mehrere Aufgaben durch, darunter:
+Adobe Commerce verfügt über eine einzige Befehlszeilenschnittstelle für Installations- und Konfigurationsaufgaben: `<magento_root>/bin/magento`. Die Oberfläche führt mehrere Aufgaben durch, darunter:
 
 * Installation (und damit verbundene Aufgaben wie Erstellen oder Aktualisieren des Datenbankschemas, Erstellen der Bereitstellungskonfiguration).
 * Löschen des Cache

@@ -1,15 +1,16 @@
 ---
-title: Versionshinweise zu Adobe Commerce und Magento Open Source
-description: Erfahren Sie, wo Sie Informationen zu bestimmten Versionen von Adobe Commerce und Magento Open Source finden.
+title: Versionshinweise zu Adobe Commerce
+description: Erfahren Sie, wo Sie Informationen zu bestimmten Adobe Commerce-Versionen finden.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: c371ee59e4f1efcc947d0bbd189a892d8f32a5b7
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 4%
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
-# Versionshinweise für Adobe Commerce und Magento Open Source
+
+# Versionshinweise für Adobe Commerce
 
 In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen zu bestimmten Versionen aller Adobe Commerce-Produkte, -Dienste und -Tools.
 
@@ -20,16 +21,14 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
 <table>
   <tbody>
     <tr>
-      <td><strong>Adobe Commerce und Magento Open Source</strong>
-        <p>Erfahren Sie mehr über die neuesten Verbesserungen in Adobe Commerce und Magento Open Source, einschließlich Verbesserungen, Sicherheit, Fehlerbehebungen und bekannten Problemen.</p>
+      <td><strong>Adobe Commerce</strong>
+        <p>Erfahren Sie mehr über die neuesten Verbesserungen in Adobe Commerce, einschließlich Verbesserungen, Sicherheit, Fehlerbehebungen und bekannten Problemen.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Abwärtskompatible Änderungen</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
-            <li><a href="open-source/overview.md">Magento Open Source</a></li>
             <li><a href="security/overview.md">Sicherheitspatches</a></li>
             <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe-Sicherheitsbulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B für Adobe Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/inventory/release-notes.html">Inventory management</a></li>
           </ul>
         </td>
       <td><strong>Adobe Commerce auf Cloud-Infrastruktur</strong>
@@ -45,7 +44,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
     </tr>
     <tr>
       <td><strong>Dienste für Adobe Commerce</strong>
-        <p>Erfahren Sie mehr über die neuesten Verbesserungen bei innovativen Commerce-Diensten, die als Adobe Commerce- und Magento Open Source-Erweiterungen verfügbar sind.</p>
+        <p>Erfahren Sie mehr über die neuesten Verbesserungen innovativer Merchandising-Dienste für Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
@@ -61,7 +60,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
           </ul>
         </td>
       <td><strong>Instrumente</strong>
-        <p>Erfahren Sie mehr über die neuesten Verbesserungen bei Tools, die die Suche und Verwendung von Adobe Commerce- und Magento Open Source-Software erleichtern.</p>
+        <p>Erfahren Sie mehr über die neuesten Verbesserungen bei Tools, die die Suche und Verwendung von Adobe Commerce-Software erleichtern.</p>
           <ul>
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API-Mesh für Adobe APP Builder-Entwickler</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O von Ereignissen für Adobe Commerce</a></li>
@@ -76,6 +75,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
        <td><strong>Storefront-Erlebnis</strong>
         <p>Erfahren Sie mehr über die neuesten Verbesserungen der Storefront-Technologie, mit denen Sie einzigartige Erlebnisse für Ihre Kunden erstellen können.</p>
           <ul>
+            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>

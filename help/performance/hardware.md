@@ -1,11 +1,11 @@
 ---
 title: Hardware-Recommendations
-description: Überprüfen Sie eine Liste der empfohlenen Hardware im Zusammenhang mit der optimalen Leistung von Adobe Commerce- und Magento Open Source-Implementierungen.
+description: Überprüfen Sie eine Liste der empfohlenen Hardware im Zusammenhang mit der optimalen Leistung von Adobe Commerce-Implementierungen.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---

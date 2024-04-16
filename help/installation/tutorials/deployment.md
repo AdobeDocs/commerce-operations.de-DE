@@ -3,9 +3,9 @@ title: Erstellen oder Aktualisieren der Bereitstellungskonfiguration
 description: Führen Sie diese Schritte aus, um Ihre Adobe Commerce- oder Magento Open Source-Implementierungskonfiguration zu verwalten.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ In der folgenden Tabelle werden die Bedeutungen von Installationsparametern und 
 | `--db-name` | Name der Datenbankinstanz, in der Sie die Datenbanktabellen installieren möchten.<br><br>Der Standardwert ist `magento2`. | Nein |
 | `--db-user` | Benutzername des Eigentümers der Datenbankinstanz.<br><br>Der Standardwert ist `root`. | Nein |
 | `--db-password` | Passwort des Inhabers der Datenbankinstanz. | Nein |
-| `--db-prefix` | Verwenden Sie dies nur, wenn Sie die Datenbanktabellen in einer Datenbankinstanz installieren, in der bereits Adobe Commerce- und Magento Open Source-Tabellen enthalten sind.<br><br>Verwenden Sie in diesem Fall ein Präfix, um die Tabellen für diese Installation zu identifizieren. Einige Kunden haben mehr als eine Adobe Commerce- oder Magento Open Source-Instanz, die auf einem Server mit allen Tabellen in derselben  ausgeführt wird.<br><br>Das Präfix kann maximal fünf Zeichen lang sein. Sie muss mit einem Brief beginnen und darf nur Buchstaben, Zahlen und Unterstriche enthalten.<br><br>Mit dieser Option können diese Kunden den Datenbankserver für mehrere Adobe Commerce- oder Magento Open Source-Installationen freigeben. | Nein |
+| `--db-prefix` | Verwenden Sie dies nur, wenn Sie die Datenbanktabellen in einer Datenbankinstanz installieren, in der bereits Adobe Commerce-Tabellen enthalten sind.<br><br>Verwenden Sie in diesem Fall ein Präfix, um die Tabellen für diese Installation zu identifizieren. Einige Kunden haben mehr als eine Adobe Commerce- oder Magento Open Source-Instanz, die auf einem Server mit allen Tabellen in derselben  ausgeführt wird.<br><br>Das Präfix kann maximal fünf Zeichen lang sein. Sie muss mit einem Brief beginnen und darf nur Buchstaben, Zahlen und Unterstriche enthalten.<br><br>Mit dieser Option können diese Kunden den Datenbankserver für mehrere Adobe Commerce- oder Magento Open Source-Installationen freigeben. | Nein |
 | `--session-save` | Verwenden Sie einen der folgenden Schritte:<br><br>- `db` zum Speichern von Sitzungsdaten im [Datenbank](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Wählen Sie Datenbankspeicher, wenn Sie über eine Clusterdatenbank verfügen. Andernfalls hat der dateibasierte Speicher möglicherweise keinen großen Vorteil.<br><br>- `files` , um Sitzungsdaten im Dateisystem zu speichern. Eine dateibasierte Sitzungsspeicherung ist angemessen, es sei denn, der Dateisystemzugriff ist langsam, Sie haben eine Clusterdatenbank oder Sie möchten Sitzungsdaten in Redis speichern.<br><br>- `redis` zum Speichern von Sitzungsdaten in [Verwenden von Redizes für die Sitzungsspeicherung](../../configuration/cache/config-redis.md). Wenn Sie Redis für Standard- oder Seiten-Caching verwenden, muss Redis bereits installiert sein. | Nein |
 | `--key` | Wenn Sie einen Schlüssel haben, geben Sie einen zu verschlüsselnden Schlüssel an [vertrauliche Daten](#sensitive-data) in der Datenbank. Wenn Sie keine haben, generiert das Programm eine für Sie. | Nein |
 | `--db-init-statements` | Erweiterter MySQL-Konfigurationsparameter. Verwendet Anweisungen zur Datenbankinitialisierung, die beim Herstellen einer Verbindung zur MySQL-Datenbank ausgeführt werden.<br><br>Der Standardwert ist `SET NAMES utf8;`.<br><br>Referenz ähnlich [dieses](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) bevor Sie Werte festlegen. | Nein |
-| `--http-cache-hosts` | Kommagetrennte Liste von HTTP-Cache-Gateway-Hosts, an die Bereinigungsanforderungen gesendet werden sollen. (z. B. &quot;Varnish&quot;-Server.) Verwenden Sie diesen Parameter, um den oder die Hosts anzugeben, die in derselben Anforderung bereinigt werden sollen. (Es spielt keine Rolle, ob Sie nur einen oder mehrere Hosts haben.)<br><br>Format muss `<hostname or ip>:<listen port>`, wo Sie weglassen können `<listen port>` wenn es Port 80 ist. Beispiel, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Trennen Sie Hosts nicht durch Leerzeichen. | Nein |
+| `--http-cache-hosts` | Kommagetrennte Liste von HTTP-Cache-Gateway-Hosts, an die Bereinigungsanforderungen gesendet werden sollen. (z. B. &quot;Varnish&quot;-Server.) Verwenden Sie diesen Parameter, um den oder die Hosts anzugeben, die in derselben Anforderung bereinigt werden sollen. (Es spielt keine Rolle, ob Sie nur einen oder mehrere Hosts haben.)<br><br>Format muss `<hostname or ip>:<listen port>`, wo Sie weglassen können `<listen port>` wenn es Port 80 ist. Beispiel: `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Trennen Sie Hosts nicht durch Leerzeichen. | Nein |
 
 ## Konfigurationsdaten importieren
 

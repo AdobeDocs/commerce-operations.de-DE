@@ -1,16 +1,16 @@
 ---
-title: Sichern Ihrer Commerce-Site und -Infrastruktur
+title: Sichern der Commerce-Site und -Infrastruktur
 description: Erhalten Sie die Sicherheit, indem Sie Best Practices für die Sicherheit beim Einrichten, Konfigurieren und Aktualisieren von Adobe Commerce-Installationen implementieren.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
 
-# Sichern Ihrer Commerce-Site und -Infrastruktur
+# Sichern der Commerce-Site und -Infrastruktur
 
 Die Einrichtung und Pflege einer sicheren Umgebung für Adobe Commerce-Projekte, die in der Cloud-Infrastruktur bereitgestellt werden, ist eine Verantwortung, die von Adobe Commerce-Kunden, Lösungspartnern und Adobe gemeinsam getragen wird. In diesem Handbuch werden Best Practices für die Kundenseite der Gleichung vorgestellt.
 
@@ -49,17 +49,17 @@ Wenn die MFA für ein Projekt aktiviert ist, müssen alle Adobe Commerce-Konten 
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Aktualisierung auf die neueste Version von Adobe Commerce**
 
-Halten Sie den Code aktualisiert von [Upgrade Ihres Commerce-Projekts auf die neueste Version](#upgrade-to-the-latest-release) von Adobe Commerce, Commerce Services und Erweiterungen, einschließlich Sicherheits-Patches, Hotfixes und anderen durch Adobe bereitgestellten Patches.
+Halten Sie den Code aktualisiert von [Aktualisieren Ihres Commerce-Projekts auf die neueste Version](#upgrade-to-the-latest-release) von Adobe Commerce, Commerce Services und Erweiterungen, einschließlich Sicherheits-Patches, Hotfixes und anderen Patches, die von Adobe bereitgestellt werden.
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sichere vertrauliche Konfigurationswerte**
 
 Verwendung [Konfigurationsverwaltung](../../../configuration/cli/set-configuration-values.md) , um kritische Konfigurationswerte zu sperren.
 
-Die `lock config` und `lock env` CLI-Befehle konfigurieren Umgebungsvariablen, um zu verhindern, dass sie vom Administrator aktualisiert werden. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/env.php` -Datei. (Für den Handel mit Cloud-Infrastrukturprojekten siehe [Speicherkonfigurationsverwaltung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).
+Die `lock config` und `lock env` CLI-Befehle konfigurieren Umgebungsvariablen, um zu verhindern, dass sie vom Administrator aktualisiert werden. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/env.php` -Datei. (Informationen zu Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Speicherkonfigurationsverwaltung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Ausführen von Sicherheitsscans**
 
-Verwenden Sie die [Commerce Security Scan-Dienst](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) um alle Adobe Commerce- und Magento Open Source-Sites auf bekannte Sicherheitsrisiken und Malware zu überwachen und sich für Patch-Updates und Sicherheitsbenachrichtigungen anzumelden.
+Verwenden Sie die [Commerce Security Scan-Dienst](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) um alle Adobe Commerce-Sites auf bekannte Sicherheitsrisiken und Malware zu überwachen und sich für Patch-Updates und Sicherheitsbenachrichtigungen anzumelden.
 
 ## Sicherstellen von Erweiterungen und benutzerdefiniertem Code
 
@@ -67,7 +67,7 @@ Wenn Sie Adobe Commerce erweitern, indem Sie Erweiterungen von Drittanbietern au
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Wählen Sie einen Partner oder einen Lösungs-Integrator (SI), der sich gut mit Sicherheit auskennt.**—Sichere Integrationen und sichere Bereitstellung von benutzerdefiniertem Code durch Auswahl von Organisationen, die sichere Entwicklungspraktiken anwenden und über eine solide Übersicht über die Vermeidung und Behebung von Sicherheitsproblemen verfügen.
 
-![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Verwenden sicherer Erweiterungen**—Identifizieren Sie die geeignetsten und sichersten Erweiterungen für Commerce-Implementierungen, indem Sie sich mit Ihrem Lösungsintegrator oder -entwickler in Verbindung setzen und folgende Schritte ausführen. [Best Practices für Adobe-Erweiterungen](../planning/extensions.md).
+![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Verwenden sicherer Erweiterungen**—Identifizieren Sie die geeignetsten und sichersten Erweiterungen für Commerce-Implementierungen, indem Sie sich mit Ihrem Lösungsintegrator oder -entwickler in Verbindung setzen und folgende Schritte ausführen [Best Practices für Adobe-Erweiterungen](../planning/extensions.md).
 
 - Nur Quellerweiterungen vom Adobe Commerce Marketplace oder über den Lösungsintegrator. Wenn die Erweiterung über einen Integrator abgerufen wird, stellen Sie sicher, dass das Eigentum an der Erweiterungslizenz übertragbar ist, falls sich der Integrator ändert.
 
@@ -99,9 +99,9 @@ In den folgenden Ressourcen finden Sie Informationen zu verfügbaren Adobe Comme
 
 ## Entwicklung eines Notfallwiederherstellungsplans
 
-Wenn Ihre Commerce-Site kompromittiert ist, können Sie Schäden vermeiden und den normalen Geschäftsbetrieb schnell wiederherstellen, indem Sie einen umfassenden Notfallwiederherstellungsplan entwickeln und implementieren.
+Wenn Ihr Commerce-Standort gefährdet ist, können Sie durch die Entwicklung und Implementierung eines umfassenden Notfallwiederherstellungsplans Schäden vermeiden und den normalen Geschäftsbetrieb schnell wiederherstellen.
 
-Wenn ein Kunde aufgrund einer Katastrophe die Wiederherstellung einer Commerce-Instanz benötigt, kann Adobe dem Kunden Backup-Dateien bereitstellen. Der Kunde und gegebenenfalls der Lösungsintegrator können die Wiederherstellung durchführen.
+Wenn ein Kunde aufgrund einer Katastrophe die Wiederherstellung einer Commerce-Instanz benötigt, kann Adobe dem Kunden Sicherungsdateien bereitstellen. Der Kunde und gegebenenfalls der Lösungsintegrator können die Wiederherstellung durchführen.
 
 Im Rahmen eines Notfallwiederherstellungsplans empfiehlt Adobe dringend, dass die Kunden [Exportieren der Adobe Commerce-Anwendungskonfiguration](../../../configuration/cli/export-configuration.md) , um die Umverteilung zu erleichtern, wenn dies für die Kontinuität des Geschäftsbetriebs erforderlich ist. Der Hauptgrund für den Export der Konfiguration in das Dateisystem besteht darin, dass die Systemkonfiguration Vorrang vor der Datenbankkonfiguration hat. In einem schreibgeschützten Dateisystem muss die Anwendung neu bereitgestellt werden, um sensible Konfigurationseinstellungen zu ändern und so eine zusätzliche Schutzschicht zu bieten.
 
@@ -145,7 +145,7 @@ Malware-Angriffe, die auf E-Commerce-Sites abzielen, sind allzu häufig, und Bed
 
 Adobe hat jedoch festgestellt, dass die meisten Website-Kompromisse nicht auf einen innovativen Hacker zurückzuführen sind. Stattdessen nutzen Bedrohungsakteure oft vorhandene, ungepatchte Verwundbarkeiten, schlechte Passwörter und schwache Eigentums- und Berechtigungseinstellungen im Dateisystem aus.
 
-Bei den am häufigsten aufgetretenen Angriffen wird bösartiger Code in die absolute Kopf- oder Fußzeile eines Kundenspeichers eingefügt. Dort erfasst der Code Formulardaten, die ein Kunde in das Storefront eingibt, einschließlich Anmeldeinformationen des Kunden und Formulardaten zum Checkout. Anschließend werden diese Daten zu böswilligen Zwecken an einen anderen Speicherort gesendet und nicht an das Commerce-Backend. Außerdem kann Malware den Admin bei der Ausführung von Code, der das ursprüngliche Zahlungsformular ersetzt, durch ein gefälschtes Formular beeinträchtigen, das alle vom Zahlungsdienstleister festgelegten Schutzmaßnahmen außer Kraft setzt.
+Bei den am häufigsten aufgetretenen Angriffen wird bösartiger Code in die absolute Kopf- oder Fußzeile eines Kundenspeichers eingefügt. Dort erfasst der Code Formulardaten, die ein Kunde in das Storefront eingibt, einschließlich Anmeldeinformationen des Kunden und Formulardaten zum Checkout. Anschließend werden diese Daten zu böswilligen Zwecken an einen anderen Ort und nicht an das Commerce-Backend gesendet. Außerdem kann Malware den Admin bei der Ausführung von Code, der das ursprüngliche Zahlungsformular ersetzt, durch ein gefälschtes Formular beeinträchtigen, das alle vom Zahlungsdienstleister festgelegten Schutzmaßnahmen außer Kraft setzt.
 
 Client-seitige Kreditkarten-Skimmers sind eine Art Malware, die Code in Commerce-Website-Inhalte einbettet, die im Browser eines Benutzers ausgeführt werden können, wie in der folgenden Abbildung dargestellt.
 
@@ -164,7 +164,7 @@ Nachstehend finden Sie eine Liste häufiger Angriffe, für die Adobe empfiehlt, 
 
 - **Site-Depression**—Ein Angreifer beschädigt eine Website, indem er das Erscheinungsbild der Website ändert oder eigene Nachrichten hinzufügt. Obwohl der Zugriff auf die Website und die Benutzerkonten kompromittiert wurde, bleiben die Zahlungsinformationen häufig sicher.
 
-- **Botschaften**- Der Commerce-Server des Kunden wird Teil eines Bots, der Spam-E-Mails sendet. Auch wenn Benutzerdaten in der Regel nicht kompromittiert sind, kann der Domänenname des Kunden durch Spam-Filter auf die Blockierungsliste gesetzt werden, was die Bereitstellung von E-Mails aus der Domain verhindert. Alternativ dazu kann die Site des Kunden Teil eines Bootnetzes werden, das einen verteilten Denial-of-Service (DDoS)-Angriff auf eine/mehrere andere Site/s verursacht. Das Botnetz kann den eingehenden IP-Traffic zum Commerce-Server blockieren und so verhindern, dass Kunden Einkäufe tätigen können.
+- **Botschaften**- Der Commerce-Server des Kunden wird Teil eines Bots, der Spam-E-Mails sendet. Auch wenn Benutzerdaten in der Regel nicht kompromittiert sind, kann der Domänenname des Kunden durch Spam-Filter auf die Blockierungsliste gesetzt werden, was die Bereitstellung von E-Mails aus der Domain verhindert. Alternativ dazu kann die Site des Kunden Teil eines Bootnetzes werden, das einen verteilten Denial-of-Service (DDoS)-Angriff auf eine/mehrere andere Site/s verursacht. Das Botnetz blockiert möglicherweise den eingehenden IP-Traffic zum Commerce-Server, was verhindert, dass Kunden einkaufen können.
 
 - **Direkte Serverangriffe**—Die Daten sind kompromittiert, Backdoors und Malware werden installiert und der Betrieb der Website ist betroffen. Zahlungsinformationen, die nicht auf dem Server gespeichert sind, sind durch diese Angriffe weniger wahrscheinlich gefährdet.
 
@@ -176,18 +176,18 @@ Nachstehend finden Sie eine Liste häufiger Angriffe, für die Adobe empfiehlt, 
 
 Brute Force Password Guessing-Angriffe können zu nicht autorisiertem Administratorzugriff führen. Protect Sie Ihre Site vor diesen Angriffen, indem Sie die folgenden Best Practices befolgen:
 
-- Identifizieren und schützen Sie alle Punkte, an denen von außerhalb auf die Commerce-Installation zugegriffen werden kann.
+- Identifizieren und schützen Sie alle Stellen, an denen von außerhalb auf die Commerce-Installation zugegriffen werden kann.
 
   Sie können den Zugriff auf den Administrator sichern, der im Allgemeinen den höchsten Schutz erfordert, indem Sie Adobe befolgen [vorrangige Empfehlungen](#priority-recommendations) beim Konfigurieren Ihres Commerce-Projekts.
 
-- Steuern Sie den Zugriff auf die Commerce-Site, indem Sie eine Zugriffssteuerungsliste einrichten, die nur den Zugriff auf Benutzer ermöglicht, die von einer bestimmten IP-Adresse oder einem bestimmten Netzwerk kommen.
+- Steuern Sie den Zugriff auf die Commerce-Site, indem Sie eine Zugriffssteuerungsliste einrichten, die nur den Zugriff auf Benutzer ermöglicht, die von einer bestimmten IP-Adresse oder einem bestimmten Netzwerk stammen.
 
   Sie können eine Fastly Edge ACL mit einem benutzerdefinierten VCL-Codefragment verwenden, um eingehende Anforderungen zu filtern und den Zugriff nach IP-Adresse zuzulassen. Siehe [Benutzerdefinierte VCL für das Zulassen von Anforderungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 
   >[!TIP]
   >
-  >Wenn Sie Remote-Mitarbeiter beschäftigen, stellen Sie sicher, dass die IP-Adressen von Remote-Mitarbeitern in der Liste der Adressen mit Zugriffsberechtigung auf die Commerce-Site enthalten sind.
+  >Wenn Sie Remote-Mitarbeiter beschäftigen, stellen Sie sicher, dass die IP-Adressen von Remote-Mitarbeitern in der Adressliste mit Zugriffsberechtigung auf die Commerce-Site enthalten sind.
 
 ### Verhindern von Clickjacking-Exploits
 

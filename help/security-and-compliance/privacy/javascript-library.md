@@ -1,10 +1,10 @@
 ---
 title: Datenschutz-JavaScript-Bibliothek
-description: Erfahren Sie, wie Sie mit benutzerdefinierten Tools auf personenbezogene Daten von Adobe Commerce und Magento Open Source zugreifen und diese löschen können.
+description: Erfahren Sie, wie Sie mit benutzerdefinierten Tools auf von Adobe Commerce erfasste personenbezogene Kundendaten zugreifen und diese löschen können.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Datenschutz-JavaScript-Bibliothek
 
-Die Datenschutz-JavaScript-Bibliothek ist eine Reihe von Tools, mit denen Sie einen Prozess für den Zugriff auf und das Löschen von durch Adobe Commerce und Magento Open Source erfassten privaten Daten erstellen können.
+Die Datenschutz-JavaScript-Bibliothek ist eine Reihe von Tools, die Ihnen beim Erstellen eines Prozesses für den Zugriff auf und das Löschen von von Adobe Commerce erfassten privaten Daten helfen.
 
-Tracking-Dienste für Commerce-Daten können private Informationen speichern, die auf Datenschutzbestimmungen wie [Die Datenschutz-Grundverordnung (DSGVO)](gdpr.md) und [California Consumer Privacy Act (CCPA)](ccpa.md).
+Die Commerce-Datenverfolgungsdienste können private Informationen speichern, die auf Datenschutzbestimmungen wie die [Die Datenschutz-Grundverordnung (DSGVO)](gdpr.md) und [California Consumer Privacy Act (CCPA)](ccpa.md).
 
-Diese Bibliothek bietet eine Reihe von Funktionen zum Erstellen von Datenschutzanfragen und zum Erfassen ihrer Antworten. Verwenden Sie diese Bibliothek, um die im Browser von Adobe Commerce und Magento Open Source-Datenverfolgungsdiensten gespeicherten Daten abzurufen und zu entfernen.
+Diese Bibliothek bietet eine Reihe von Funktionen zum Erstellen von Datenschutzanfragen und zum Erfassen ihrer Antworten. Verwenden Sie diese Bibliothek, um die im Browser von Adobe Commerce-Datenverfolgungsdiensten gespeicherten Daten abzurufen und zu entfernen.
 
 >[!NOTE]
 >
->Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Commerce erst dann Verhaltensdaten, wenn der Käufer zustimmt. Wenn [!UICONTROL **Cookie-Einschränkungsmodus**] deaktiviert ist, erfasst Commerce standardmäßig Verhaltensdaten.
+>Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Commerce keine Verhaltensdaten, bis der Käufer zustimmt. Wenn [!UICONTROL **Cookie-Einschränkungsmodus**] deaktiviert ist, erfasst Commerce standardmäßig Verhaltensdaten.
 
 ## Installation
 

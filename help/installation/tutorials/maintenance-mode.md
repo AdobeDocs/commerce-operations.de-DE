@@ -2,9 +2,9 @@
 title: Aktivieren oder Deaktivieren des Wartungsmodus
 description: Führen Sie diese Schritte aus, um anzupassen, was Kunden sehen, wenn Ihre Adobe Commerce- oder Magento Open Source-Bereitstellung zur Wartung heruntergefahren ist.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Das folgende Handbuch bezieht sich auf eine Seite mit dem Standard-Wartungsmodus. Wenn Sie eine benutzerdefinierte Wartungsseite verwenden müssen, lesen Sie [Benutzerdefinierte Wartungsseite erstellen](../../upgrade/troubleshooting/maintenance-mode-options.md) Thema.
 
-Verwendung von Adobe Commerce und Magento Open Source [Wartungsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode) zum Deaktivieren des Bootstrapping. Die Deaktivierung des Bootstrapping ist hilfreich, wenn Sie Ihre Site verwalten, aktualisieren oder neu konfigurieren.
+Adobe Commerce verwendet [Wartungsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode) zum Deaktivieren des Bootstrapping. Die Deaktivierung des Bootstrapping ist hilfreich, wenn Sie Ihre Site verwalten, aktualisieren oder neu konfigurieren.
 
 Das Programm erkennt den Wartungsmodus wie folgt:
 

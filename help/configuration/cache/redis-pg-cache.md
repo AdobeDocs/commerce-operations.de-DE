@@ -1,18 +1,18 @@
 ---
 title: Verwenden von Redizes für den Standard-Cache
-description: Erfahren Sie, wie Sie Redis als Standardcache für Adobe Commerce und Magento Open Source konfigurieren.
+description: Erfahren Sie, wie Sie Redis als Standardcache für Adobe Commerce konfigurieren.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
 
 # Verwenden von Redizes für den Standard-Cache
 
-Commerce bietet Befehlszeilenoptionen zum Konfigurieren der Seite &quot;Redis&quot;und der standardmäßigen Zwischenspeicherung. Sie können die Zwischenspeicherung zwar konfigurieren, indem Sie die `<Commerce-install-dir>app/etc/env.php` -Datei, ist die Verwendung der Befehlszeile die empfohlene Methode, insbesondere für erste Konfigurationen. Die Befehlszeile bietet eine Validierung, um sicherzustellen, dass die Konfiguration syntaktisch korrekt ist.
+Commerce bietet Befehlszeilenoptionen zum Konfigurieren der Seite &quot;Redis&quot;und zum standardmäßigen Caching. Sie können die Zwischenspeicherung zwar konfigurieren, indem Sie die `<Commerce-install-dir>app/etc/env.php` -Datei, ist die Verwendung der Befehlszeile die empfohlene Methode, insbesondere für erste Konfigurationen. Die Befehlszeile bietet eine Validierung, um sicherzustellen, dass die Konfiguration syntaktisch korrekt ist.
 
 Sie müssen [install Redis](config-redis.md#install-redis) vor dem Fortfahren.
 
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Konfigurieren des Redis-Seiten-Caching
 
-Um die Redis-Seiten-Zwischenspeicherung in Commerce zu konfigurieren, führen Sie die `setup:config:set` -Befehl mit zusätzlichen Parametern.
+Um die Redis-Seiten-Zwischenspeicherung auf Commerce zu konfigurieren, führen Sie die `setup:config:set` -Befehl mit zusätzlichen Parametern.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -132,7 +132,7 @@ Nachher [Einrichten eines Redis-Clusters in AWS](https://aws.amazon.com/getting-
      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
      ```
 
-### Commerce für die Verwendung des Clusters konfigurieren
+### Konfigurieren von Commerce für die Verwendung des Clusters
 
 Commerce unterstützt mehrere Arten von Caching-Konfigurationen. Im Allgemeinen werden die Cachekonfigurationen zwischen Frontend und Backend aufgeteilt. Frontend-Zwischenspeicherung wird als `default`, wird für jeden Cache-Typ verwendet. Sie können Caches auf niedrigerer Ebene anpassen oder aufteilen, um eine bessere Leistung zu erzielen. Eine allgemeine Redis-Konfiguration trennt den Standard-Cache und den Seiten-Cache von der eigenen Redis-Datenbank (RDB).
 
@@ -144,7 +144,7 @@ So konfigurieren Sie Commerce for Redis als Standard-Zwischenspeicherung:
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
-So konfigurieren Sie Commerce für Redis-Seiten-Caching:
+So konfigurieren Sie die Zwischenspeicherung von Commerce für Redis:
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
@@ -158,7 +158,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 ### Verbindung überprüfen
 
-**Überprüfen, ob Commerce mit ElastiCache kommuniziert**:
+**Überprüfen, ob Commerce mit ElastiCache spricht**:
 
 1. Öffnen Sie eine SSH-Verbindung zur Commerce EC2-Instanz.
 1. Starten Sie den Redis-Monitor.
@@ -190,7 +190,7 @@ Ab Commerce 2.3.5 wird empfohlen, die erweiterte Redis-Cache-Implementierung zu 
 
 ## Funktion zum Vorausfüllen umkehren
 
-Da Commerce Konfigurationsdaten im Cache &quot;Redis&quot;speichert, können wir Daten, die zwischen Seiten wiederverwendet werden, vorab laden. Um Schlüssel zu finden, die vorgeladen werden müssen, analysieren Sie Daten, die von Redis an Commerce übertragen werden. Wir empfehlen, Daten vorab zu laden, die auf jeder Seite geladen werden, z. B. `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Da Commerce Konfigurationsdaten im Redis-Cache speichert, können wir Daten, die zwischen Seiten wiederverwendet werden, vorab ausfüllen. Um Schlüssel zu finden, die vorgeladen werden müssen, analysieren Sie Daten, die von Redis an Commerce übertragen werden. Wir empfehlen, Daten vorab zu laden, die auf jeder Seite geladen werden, z. B. `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
 Redis verwendet die `pipeline` , um Ladeanforderungen zu kombinieren. Schlüssel sollten das Datenbankpräfix enthalten, z. B. wenn das Datenbankpräfix `061_`, sieht der Preload-Schlüssel wie folgt aus: `061_SYSTEM_DEFAULT`
 
@@ -271,7 +271,7 @@ Da es sich um ein Flag handelt, können Sie es nicht mit einem Befehl deaktivier
 
 ## Rediv-Verbindung überprüfen
 
-Um sicherzustellen, dass Redis und Commerce zusammen funktionieren, melden Sie sich bei dem Server an, auf dem Redis ausgeführt wird, öffnen Sie ein Terminal und verwenden Sie den Befehl Redis Monitor oder den Ping-Befehl.
+Um sicherzustellen, dass Redis und Commerce zusammenarbeiten, melden Sie sich bei dem Server an, auf dem Redis ausgeführt wird, öffnen Sie ein Terminal und verwenden Sie den Befehl Redis Monitor oder den Ping-Befehl.
 
 ### Redis Monitor, Befehl
 
@@ -316,4 +316,4 @@ Wenn beide Befehle erfolgreich waren, wird Redis ordnungsgemäß eingerichtet.
 
 ### Überprüfen komprimierter Daten
 
-Um komprimierte Sitzungsdaten und Seiten-Cache zu untersuchen, muss die [RESP.app](https://flathub.org/apps/details/app.resp.RESP) unterstützt die automatische Dekomprimierung von Commerce 2 Session und Page Cache und zeigt PHP-Sitzungsdaten in einer für Menschen lesbaren Form an.
+Um komprimierte Sitzungsdaten und Seiten-Cache zu untersuchen, muss die [RESP.app](https://flathub.org/apps/details/app.resp.RESP) unterstützt die automatische Dekomprimierung des Commerce 2 Session- und Page-Caches und zeigt PHP-Sitzungsdaten in einer für Menschen lesbaren Form an.

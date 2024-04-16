@@ -2,16 +2,16 @@
 title: Versionsrichtlinie
 description: Erfahren Sie mehr über die verschiedenen Arten von Adobe Commerce-Versionen, einschließlich kleineren Versionen, Patch, Sicherheits-Patch, Funktion, Hotfix, individuellem Patch und benutzerdefiniertem Patch.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce-Versionsrichtlinie
 
-Verwendung von Adobe Commerce und Magento Open Source [Semantische Versionierung](https://semver.org/) auf der einzelnen Modulebene (z. B. `magento/framework 101.1.1`), jedoch nicht für die Marketing-Versionsnummer. Beispiel:
+Adobe Commerce verwendet [Semantische Versionierung](https://semver.org/) auf der einzelnen Modulebene (z. B. `magento/framework 101.1.1`), jedoch nicht für die Marketing-Versionsnummer. Beispiel:
 
 - **MAJOR-Version**—2
 - **Geringfügige Version**—2.4

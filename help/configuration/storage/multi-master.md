@@ -1,11 +1,11 @@
 ---
 title: Aufspaltung der Datenbankleistung
-description: Erfahren Sie mehr über die geteilte Datenbanklösung für Adobe Commerce und Magento Open Source.
+description: Erfahren Sie mehr über die geteilte Datenbanklösung für Adobe Commerce.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,13 @@ Aufgrund der Art und Weise, wie die aufgespaltete Datenbank-Performance-Lösung 
 
 Dies bedeutet auch Folgendes:
 
-- Konfiguration der geteilten Datenbanklösung _before_ Handel in die Produktion einbringen.
+- Konfiguration der geteilten Datenbanklösung _before_ Commerce in Produktion setzen.
 
   Adobe empfiehlt die Konfiguration von geteilten Datenbanken so bald wie möglich nach der Installation der Commerce-Software.
 
 - [Manuelle Konfiguration](multi-master-manual.md) die geteilte Datenbanklösung.
 
-  Sie müssen diese Aufgabe ausführen, wenn Sie bereits Komponenten installiert haben oder wenn Commerce bereits in Produktion ist. (_Nicht_ ein Produktionssystem aktualisieren, die Aktualisierungen in einem Entwicklungssystem vornehmen und die Änderungen synchronisieren, nachdem Sie sie getestet haben.)
+  Sie müssen diese Aufgabe ausführen, wenn Sie bereits Komponenten installiert haben oder Commerce bereits in Produktion ist. (_Nicht_ ein Produktionssystem aktualisieren, die Aktualisierungen in einem Entwicklungssystem vornehmen und die Änderungen synchronisieren, nachdem Sie sie getestet haben.)
 
   >[!WARNING]
   >
@@ -74,11 +74,11 @@ Dies bedeutet auch Folgendes:
 
 ## Voraussetzungen
 
-Für die geteilte Datenbank müssen Sie drei MySQL Master-Datenbanken auf einem beliebigen Host einrichten (alle drei auf dem Commerce-Server, jede Datenbank auf einem separaten Server usw.). Dies sind die _master_ -Datenbanken und werden wie folgt verwendet:
+Für die geteilte Datenbank müssen Sie drei MySQL-Master-Datenbanken auf einem beliebigen Host einrichten (alle drei auf dem Commerce-Server, jede Datenbank auf einem separaten Server usw.). Dies sind die _master_ -Datenbanken und werden wie folgt verwendet:
 
 - Eine Master-Datenbank für Checkout-Tabellen
 - Eine Master-Datenbank für Verkaufstabellen (auch als _Order Management System_ oder _OMS_, Tabellen)
-- Eine Master-Datenbank für den Rest der Commerce 2-Anwendungstabellen
+- Eine Master-Datenbank für die übrigen Commerce 2-Anwendungstabellen
 
 Darüber hinaus können Sie optional eine beliebige Anzahl von _Slave_ Datenbanken, die als Lastenausgleich und Backups dienen.
 

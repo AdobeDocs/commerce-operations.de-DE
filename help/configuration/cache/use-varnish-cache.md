@@ -3,22 +3,22 @@ title: Cache-Leerung mit Varnish
 description: Erfahren Sie, wie das Cache-Leeren mit Varnish funktioniert und wie Sie es als Web-Caching-Beschleuniger für die Adobe Commerce-Anwendung verwenden.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # Cache-Leerung mit Varnish
 
-In diesem Thema werden die Grundlagen der Verwendung von Varnish als Web-Caching-Beschleuniger für Adobe Commerce und Magento Open Source erläutert.
+In diesem Thema werden die Grundlagen der Verwendung von Varnish als Web-Caching-Beschleuniger für Adobe Commerce erläutert.
 
 ## Abfallbereinigung
 
 Gemäß [Varnish-Dokumentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *Bereinigung* ist das, was passiert, wenn Sie ein Objekt aus dem Cache auswählen und zusammen mit seinen Varianten verwerfen.&quot; Eine Bereinigung ähnelt einem Befehl zum Bereinigen des Caches (oder Klicken auf **Magento-Cache leeren** im Admin).
 
-Wenn Sie den Commerce-Zwischenspeicher bereinigen, leeren oder aktualisieren, wird auch der Bereinigungsvorgang durchgeführt.
+Wenn Sie den Commerce-Cache löschen, leeren oder aktualisieren, wird auch der Bereinigungsvorgang durchgeführt.
 
 Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfiguriert haben, können die folgenden Aktionen zu einer Bereinigung des Abstands führen:
 
@@ -40,9 +40,9 @@ Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfigurier
 
   Sie sollten den Cache aktualisieren und auch regelmäßig alle Elemente in `generated/code` und `generated/metadata` Verzeichnissen. Informationen zum Aktualisieren des Caches finden Sie im nächsten Abschnitt.
 
-## Konfigurieren von Commerce zur Bereinigung von Varnish
+## Konfigurieren von Commerce zum Bereinigen von Varnish
 
-Commerce bereinigt verschiedene Hosts, nachdem Sie verschiedene Hosts mithilfe der [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) Befehl.
+Commerce bereinigt verschiedene Hosts, nachdem Sie dänische Hosts mithilfe der [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) Befehl.
 
 Sie können den optionalen Parameter verwenden `--http-cache-hosts` -Parameter, um eine kommagetrennte Liste unterschiedlicher Hosts und Listen-Ports anzugeben. Konfigurieren Sie alle gemischten Hosts, unabhängig davon, ob Sie einen oder mehrere Hosts haben. (Trennen Sie Hosts nicht durch Leerzeichen.)
 
@@ -54,7 +54,7 @@ Beispiel:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-Sie können dann beim Aktualisieren des Commerce-Zwischenspeichers (auch als *Reinigung* den Cache) im Admin oder über die Befehlszeile verwenden.
+Sie können dann beim Aktualisieren des Commerce-Caches (auch als *Reinigung* den Cache) im Admin oder über die Befehlszeile verwenden.
 
 Um den Cache mit dem Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools > **Cacheverwaltung** Klicken Sie auf **Magento-Cache leeren** oben auf der Seite. (Sie können auch einzelne Cache-Typen aktualisieren.)
 

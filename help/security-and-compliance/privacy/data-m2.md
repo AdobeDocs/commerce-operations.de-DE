@@ -1,10 +1,10 @@
 ---
 title: Referenz zu personenbezogenen Daten des Kunden (Version 2.x)
-description: Erfahren Sie mehr über Datenflussdiagramme und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden in Adobe Commerce und Magento Open Source 2.x.
+description: Erfahren Sie mehr über Datenflussdiagramme und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden in Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dies ist eines von mehreren Themen, die Kaufleuten und Entwicklern von Adobe Commerce und Magento Open Source dabei helfen, sich auf die Einhaltung von Datenschutzbestimmungen vorzubereiten. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
+>Dies ist eines von mehreren Themen, die Adobe Commerce-Händler und -Entwickler bei der Vorbereitung auf die Einhaltung von Datenschutzbestimmungen unterstützen. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
 
 Verwenden Sie die folgenden Datenflussdiagramme und Datenbankentitätszuordnungen als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen wie:
 
@@ -32,7 +32,7 @@ Ein Benutzer kann Kunden-, Adressdaten- und Zahlungsinformationen eingeben, wenn
 
 ### Frontend-Datenzugriffspunkte
 
-Adobe Commerce und Magento Open Source laden Kundeninformationen, wenn sich der Kunde anmeldet und mehrere verschiedene Seiten anzeigt oder sich auscheckt.
+Adobe Commerce lädt Kundeninformationen, wenn sich der Kunde anmeldet und mehrere verschiedene Seiten anzeigt oder auscheckt.
 
 ![Frontend-Datenzugriffspunkte](../../assets/security-compliance/frontend-data-access-points.svg)
 
@@ -44,20 +44,20 @@ Ein Händler kann Kundeninformationen, Adressdaten und Zahlungsdaten bei der Ers
 
 ### Backend-Datenzugriffspunkte
 
-Adobe Commerce und Magento Open Source laden Kundeninformationen, wenn ein Händler mehrere Raster anzeigt, auf ein Raster klickt, um detaillierte Informationen anzuzeigen, und verschiedene andere Aufgaben ausführt.
+Adobe Commerce lädt Kundeninformationen, wenn ein Händler mehrere Raster anzeigt, auf ein Raster klickt, um detaillierte Informationen anzuzeigen, und verschiedene andere Aufgaben ausführt.
 
 ![Backend-Datenzugriffspunkte](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Datenbankentitäten
 
-Adobe Commerce und Magento Open Source speichern in erster Linie kundenspezifische Informationen in Kunden-, Adresse-, Bestell-, Kurs- und Zahlungstabellen. Andere Tabellen enthalten Verweise auf die Kunden-ID.
+Adobe Commerce speichert in erster Linie kundenspezifische Informationen in Kunden-, Adressen-, Bestell-, Angebotstabellen und Zahlentabellen. Andere Tabellen enthalten Verweise auf die Kunden-ID.
 
 ### Kundendaten
 
-Adobe Commerce und Magento Open Source können so konfiguriert werden, dass die folgenden Kundenattribute gespeichert werden:
+Adobe Commerce kann so konfiguriert werden, dass die folgenden Kundenattribute gespeichert werden:
 
 - Geburtsdatum
-- Email
+- E-Mail
 - Vorname
 - Geschlecht
 - Nachname
@@ -119,7 +119,7 @@ Die folgenden Spalten in der `customer_grid_flat` -Tabelle enthält Kundeninform
 
 ### Adressdaten
 
-Adobe Commerce und Magento Open Source speichern die folgenden Kundenattribute:
+Adobe Commerce speichert die folgenden Kundenattribute:
 
 - Ort
 - Firma
@@ -295,7 +295,7 @@ Die `sales_order_payment` enthält Kreditkarteninformationen und andere Transakt
 
 ### Einladungsdaten
 
-Adobe Commerce und Magento Open Source können so konfiguriert werden, dass Kunden Einladungen an private Verkaufsstellen und Veranstaltungen senden können.
+Adobe Commerce kann so konfiguriert werden, dass Kunden Einladungen an private Verkaufsstellen und Ereignisse senden können.
 
 #### `magento_invitation` table
 

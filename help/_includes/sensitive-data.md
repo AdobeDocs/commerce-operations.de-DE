@@ -1,19 +1,19 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 0%
+source-wordcount: '64'
+ht-degree: 1%
 
 ---
 # Sensible Daten
 
-Adobe Commerce und Magento Open Source verwenden Ihren Verschlüsselungsschlüssel, um Folgendes zu verschlüsseln:
+Adobe Commerce verschlüsselt Folgendes mit Ihrem Verschlüsselungsschlüssel:
 
 * Kreditkarteninformationen
 * Benutzernamen und Kennwörter, die in der Admin-Konfiguration angegeben sind (z. B. Anmeldungen bei Payment Gateways)
 * CAPTCHA-Werte, die über das Netzwerk gesendet werden
 
-Adobe Commerce und Magento Open Source *not* encrypt:
+Adobe Commerce do *not* encrypt:
 
 * Administrations- und Kundenbenutzernamen und -kennwörter (diese Kennwörter werden gehasht)
 * Adresse

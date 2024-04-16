@@ -1,19 +1,19 @@
 ---
 title: Abrufen der Authentifizierungsschlüssel
-description: Führen Sie diese Schritte aus, um Anmeldeinformationen für den Zugriff auf Adobe Commerce- und Magento Open Source Composer-Pakete unter repo.magento.com abzurufen.
+description: Führen Sie diese Schritte aus, um Anmeldeinformationen für den Zugriff auf Adobe Commerce Composer-Pakete unter repo.magento.com abzurufen.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
 # Abrufen der Authentifizierungsschlüssel
 
-Die `repo.magento.com` Repository ist der Speicherort, an dem Adobe Commerce- und Magento Open Source- sowie Drittanbieter-Composer-Pakete gespeichert werden und Authentifizierung erfordern. Verwenden Sie Ihr Commerce Marketplace-Konto, um ein 32-Zeichen-Paar zu generieren. *Authentifizierungsschlüssel* , um auf das Repository zuzugreifen.
+Die `repo.magento.com` Repository ist der Speicherort, an dem Adobe Commerce- und Drittanbieter-Composer-Pakete gespeichert werden und Authentifizierung erforderlich ist. Verwenden Sie Ihr Commerce Marketplace-Konto, um ein 32-Zeichen-Paar zu generieren. *Authentifizierungsschlüssel* , um auf das Repository zuzugreifen.
 
-Für die Zugriffsberechtigung auf Adobe Commerce- und Magento Open Source-Packages müssen Sie Schlüssel verwenden, die mit einem MAGEID verknüpft sind, dem Zugriff auf diese Packages gewährt wurde. Die MAGEID ist in der Regel der Primäre Ansprechpartner für das Adobe Commerce-Konto und ist möglicherweise nicht immer Projektinhaber des Adobe Commerce-Projekts für Cloud-Infrastruktur.
+Für die Zugriffsberechtigung auf Adobe Commerce-Pakete müssen Sie Schlüssel verwenden, die mit einem MAGEID verknüpft sind, dem Zugriff auf diese Pakete gewährt wurde. Die MAGEID ist in der Regel der Primäre Ansprechpartner für das Adobe Commerce-Konto und ist möglicherweise nicht immer Projektinhaber des Adobe Commerce-Projekts für Cloud-Infrastruktur.
 
 >[!TIP]
 >
@@ -46,7 +46,7 @@ Sie können auch Authentifizierungsschlüssel deaktivieren oder löschen. Beispi
 
 ### SSH-Zugriffstoken verwalten
 
-Um Adobe Commerce- und Magento Open Source-Versionen über SSH herunterzuladen, müssen Sie ein Zugriffstoken für Downloads generieren. So generieren Sie ein Token:
+Um Adobe Commerce-Versionen mit SSH herunterzuladen, müssen Sie ein Zugriffstoken für Downloads generieren. So generieren Sie ein Token:
 
 1. Melden Sie sich bei Ihrer [magento.com account](https://account.magento.com/customer/account/login).
 1. Klicks **Mein Konto** oben auf der Seite.

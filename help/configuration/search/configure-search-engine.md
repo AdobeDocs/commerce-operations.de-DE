@@ -1,18 +1,18 @@
 ---
 title: Suchmaschinenkonfiguration
-description: Konfigurieren Sie eine Suchmaschine für lokale Bereitstellungen von Adobe Commerce und Magento Open Source.
+description: Konfigurieren Sie eine Suchmaschine für lokale Bereitstellungen von Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
 # Suchmaschinenkonfiguration
 
-In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie zum Testen von Elasticsearch oder OpenSearch mit lokalen Implementierungen von Adobe Commerce und Magento Open Source auswählen müssen.
+In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie zum Testen von Elasticsearch oder OpenSearch mit lokalen Implementierungen von Adobe Commerce auswählen müssen.
 
 >[!TIP]
 >
@@ -39,11 +39,11 @@ So konfigurieren Sie Ihr System für die Verwendung von Elasticsearch oder OpenS
    |--- |--- |
    | **[!UICONTROL Server Hostname]** | Geben Sie den vollständig qualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce zur Cloud-Infrastruktur: Nutzen Sie diesen Wert aus Ihrem Integrationssystem. |
    | **[!UICONTROL Server Port]** | Geben Sie den Proxyanschluss des Webservers ein. Der Standardwert ist 9200.<br>Adobe Commerce zur Cloud-Infrastruktur: Nutzen Sie diesen Wert aus Ihrem Integrationssystem. |
-   | **[!UICONTROL Index Prefix]** | Geben Sie das Suchmaschinen-Indexpräfix ein. Wenn Sie eine einzelne Instanz für mehr als eine Commerce-Installation verwenden (Staging- und Produktionsumgebungen), müssen Sie für jede Installation ein eindeutiges Präfix angeben. Andernfalls können Sie das standardmäßige Präfix magento2 verwenden. |
+   | **[!UICONTROL Index Prefix]** | Geben Sie das Suchmaschinen-Indexpräfix ein. Wenn Sie eine Instanz für mehr als eine Commerce-Installation verwenden (Staging- und Produktionsumgebungen), müssen Sie für jede Installation ein eindeutiges Präfix angeben. Andernfalls können Sie das standardmäßige Präfix magento2 verwenden. |
    | **[!UICONTROL Enable HTTP Auth]** | Klicks **[!UICONTROL Yes]** nur dann, wenn Sie die Authentifizierung für Ihren Suchmaschinenserver aktiviert haben. Wenn ja, geben Sie in den angegebenen Feldern einen Benutzernamen und ein Kennwort ein. |
    | **[!UICONTROL Server Timeout]** | Geben Sie die Wartezeit (in Sekunden) ein, wenn Sie versuchen, eine Verbindung zum Elasticsearch- oder OpenSearch-Server herzustellen. |
 
-1. Klicken **[!UICONTROL Test Connection]**.
+1. Klicks **[!UICONTROL Test Connection]**.
 
    Beispielantwort:
 
@@ -63,7 +63,7 @@ Wenn ja, versuchen Sie Folgendes:
 - Stellen Sie sicher, dass der Suchmaschinenserver ausgeführt wird.
 - Wenn sich der Server auf einem anderen Host als Commerce befindet, melden Sie sich beim Commerce-Server an und pingen Sie den Suchmaschinen-Host. Beheben Sie Probleme mit der Netzwerkverbindung und testen Sie die Verbindung erneut.
 - Überprüfen Sie das Befehlsfenster, in dem Sie Elasticsearch gestartet haben, oder OpenSearch auf Stacktraces und Ausnahmen. Sie müssen diese auflösen, bevor Sie fortfahren. Stellen Sie insbesondere sicher, dass Sie Ihre Suchmaschine als Benutzer mit `root` -Berechtigungen.
-- Stellen Sie sicher, dass [UNIX-Firewall und SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) sind beide deaktiviert oder legen Regeln fest, die es Ihrer Suchmaschine und Ihrem Commerce ermöglichen, miteinander zu kommunizieren.
+- Stellen Sie sicher, dass [UNIX-Firewall und SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) deaktiviert sind oder Regeln einrichten, mit denen Ihre Suchmaschine und Commerce miteinander kommunizieren können.
 - Überprüfen Sie den Wert der **[!UICONTROL Server Hostname]** -Feld. Stellen Sie sicher, dass der Server verfügbar ist. Sie können stattdessen die IP-Adresse des Servers ausprobieren.
 - Verwenden Sie die `netstat -an | grep <listen-port>` -Befehl, um zu überprüfen, ob der im **[!UICONTROL Server Port]** nicht von einem anderen Prozess verwendet wird.
 
@@ -95,7 +95,7 @@ So leeren Sie den Cache mit der Befehlszeile: [`bin/magento cache:clean`](../cli
 
 So fügen Sie eine Neuindizierung mithilfe der Befehlszeile ein:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu dem [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 1. Geben Sie einen der folgenden Befehle ein:
 
    Geben Sie den folgenden Befehl ein, um nur den Katalogsuchindex neu zu indizieren:

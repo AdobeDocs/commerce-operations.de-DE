@@ -1,10 +1,10 @@
 ---
 title: Befehlszeilen-Tool
-description: Verwenden Sie das Befehlszeilen-Tool Commerce , um Installations- und Konfigurationsaufgaben auszuführen.
+description: Verwenden Sie das Befehlszeilen-Tool von Commerce, um Installations- und Konfigurationsaufgaben auszuführen.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Commerce verfügt über eine Befehlszeilenschnittstelle (CLI)—`<magento_root>/bin/magento`—die Installations- und Konfigurationsaufgaben ausführt, einschließlich:
 
-- Installation von Commerce (und damit zusammenhängende Aufgaben wie Aktualisierung des Datenbankschemas, Erstellung einer Bereitstellungskonfiguration)
+- Installieren von Commerce (und damit zusammenhängende Aufgaben wie das Aktualisieren des Datenbankschemas, Erstellen einer Bereitstellungskonfiguration)
 - Löschen des Caches
 - Verwalten von Indizes, einschließlich Neuindizierung
 - Erstellen von Übersetzungswörterbüchern und Übersetzungspaketen
@@ -28,7 +28,7 @@ Weitere Vorteile sind:
 - Die CLI ist erweiterbar, sodass Entwickler von Drittanbietern sie &quot;einbinden&quot;können. Dies hat den zusätzlichen Vorteil, dass die Lernkurve der Benutzer entfernt wird.
 - Befehle für deaktivierte Module werden nicht angezeigt.
 
-In diesem Thema wird die Konfiguration der Adobe Commerce- und Magento Open Source-Software mithilfe der CLI erläutert. Informationen zur Installation von Commerce finden Sie unter [Installationsfluss](../../installation/overview.md) im _Installationshandbuch_.
+In diesem Thema wird die Konfiguration der Adobe Commerce-Software mithilfe der CLI erläutert. Informationen zum Installieren von Commerce finden Sie unter [Installationsfluss](../../installation/overview.md) im _Installationshandbuch_.
 
 ## Voraussetzungen
 
@@ -36,7 +36,7 @@ Bevor Sie mit der Verwendung der CLI beginnen, stellen Sie Folgendes sicher:
 
 1. Ihr System erfüllt die in [Systemanforderungen](../../installation/system-requirements.md) im _Installationshandbuch_.
 1. Sie alle erforderlichen Aufgaben abgeschlossen haben, die unter [Voraussetzungen](../../installation/prerequisites/overview.md) im _Installationshandbuch_.
-1. Nachdem Sie sich beim Commerce-Server angemeldet haben, wechseln Sie zu einem Benutzer, der über Schreibberechtigungen für das Commerce-Dateisystem verfügt. Siehe [Wechseln zum Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) im _Installationshandbuch_.
+1. Nachdem Sie sich beim Commerce-Server angemeldet haben, wechseln Sie zu einem Benutzer, der zum Schreiben in das Commerce-Dateisystem berechtigt ist. Siehe [Wechseln zum Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) im _Installationshandbuch_.
 
 ## Ausführen von Befehlen
 

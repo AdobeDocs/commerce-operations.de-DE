@@ -1,10 +1,10 @@
 ---
 title: Dateieigentum und Berechtigungen
-description: Erfahren Sie mehr über die Bedeutung von Dateisystemberechtigungen für die Arbeit mit lokalen Installationen von Adobe Commerce und Magento Open Source.
+description: Erfahren Sie mehr über die Bedeutung von Dateisystemberechtigungen für die Arbeit mit lokalen Installationen von Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Um die Sicherheit insbesondere in einer Produktionsumgebung auf einem gemeinsame
 >
 >Die Sicherheit des Dateisystems ist komplex und wichtig. Es wird dringend empfohlen, sich an einen erfahrenen Systemadministrator oder Netzwerkadministrator zu wenden, bevor Sie die festzulegenden Berechtigungen festlegen. Wir bieten Ihnen einen Mechanismus, den Sie verwenden können, aber die Erstellung einer Berechtigungsstrategie liegt in Ihrer Verantwortung.
 
-Adobe Commerce und Magento Open Source verwenden eine 3-Bit-Standardmaske: `002`. Ziehen Sie die Standardmaske von den UNIX-Standardeinstellungen von 666 für Dateien und 777 für Ordner ab.
+Adobe Commerce verwendet eine 3-Bit-Standardmaske: `002`. Ziehen Sie die Standardmaske von den UNIX-Standardeinstellungen von 666 für Dateien und 777 für Ordner ab.
 
 Beispiel:
 
@@ -53,7 +53,7 @@ Weitere Informationen zum Erstellen eines `magento_umask` -Datei, siehe [Setzen 
 
 ## Berechtigungen, Eigentümer und Anwendungsmodi
 
-Wir empfehlen verschiedene Berechtigungen und Eigentumsrechte, wenn Sie die verschiedenen Anwendungsmodi von Adobe Commerce und Magento Open Source verwenden:
+Wir empfehlen verschiedene Berechtigungen und Eigentumsrechte, wenn Sie die verschiedenen Adobe Commerce-Anwendungsmodi verwenden:
 
 - Standard
 - Entwickler
