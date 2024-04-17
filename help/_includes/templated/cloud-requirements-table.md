@@ -1,5 +1,5 @@
 ---
-source-git-commit: 857b2016056279e348438f63b0cc7f0bd293698b
+source-git-commit: 31d9cee91f6e3e9e0f7a1b8526baf9761c7ca8eb
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 65%
@@ -11,7 +11,7 @@ ht-degree: 65%
   <thead>
     <tr>
       <th>
-        Software-Abhängigkeiten
+        Softwareabhängigkeiten
       </th>
       <th>2,4,7</th>
       <th>2.4.6-p5</th>
@@ -210,22 +210,22 @@ ht-degree: 65%
             2,12
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
             1,3
@@ -453,37 +453,37 @@ ht-degree: 65%
             3,12
       </td>
       <td>
-            3,12, 3,11, 3,9
+            3.12, 3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
-            3,11; 3,9
+            3.11, 3.9
       </td>
       <td>
             3,9
