@@ -3,9 +3,9 @@ title: Die [!UICONTROL Summary] tab
 description: Informationen zum [!UICONTROL Summary] Tab von [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Die **[!UICONTROL Database mysql-slow.log]** frame zählt Einträge im [mysql-sl
 
 ![Weitersynchronisierung aus Protokoll](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) ist ein Open Source-Datenstrukturspeicher (BSD lizenziert), der als Datenbank-, Cache- und Nachrichtenbroker verwendet wird. Es kann Datenbank- und Sitzungszwischenspeicherung durchführen, sofern konfiguriert. Die **[!UICONTROL Redis synchronization from Log]** Frame konzentriert sich auf [[!DNL Redis] Synchronisierung](https://redis.io/docs/manual/replication/). Je größer die [!DNL Redis] -Datensatz, umso wahrscheinlicher ist, dass es Probleme mit der Synchronisierung gibt (mehr Daten werden synchronisiert).
+[[!DNL Redis]](https://redis.io/docs/about/) ist ein Open Source-Datenstrukturspeicher (BSD lizenziert), der als Datenbank-, Cache- und Nachrichtenbroker verwendet wird. Es kann Datenbank- und Sitzungszwischenspeicherung durchführen, sofern konfiguriert. Die **[!UICONTROL Redis synchronization from Log]** Frame konzentriert sich auf [[!DNL Redis] Synchronisierung](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). Je größer die [!DNL Redis] -Datensatz, umso wahrscheinlicher ist, dass es Probleme mit der Synchronisierung gibt (mehr Daten werden synchronisiert).
 
 **[!DNL Redis]Fehler und Meldungen:**
 
@@ -384,7 +384,7 @@ Die **[!UICONTROL Order transactions (default?)]** frame sucht nach Transaktione
 * &#39;%Sie können dieses Problem beheben, indem Sie den Elasticsearch-Dienst in Ihrer Magento Cloud-Infrastruktur auf Version%&#39; als &#39;ver_err&#39; aktualisieren.
 * &#39;%Cluster-Gesundheitsstatus geändert von \[GELB\] in \[RED\] (Grund:%&#39; als &#39;yel_red&#39;)
 * &#39;%Kein Speicherplatz auf Gerät%&#39; als &#39;no_space&#39;
-* &#39;% Failed to execute &lbrack;SearchRequest&lbrace;searchType=%&#39; as &#39;failed_query&#39;
+* &#39;% Failed to execute [SearchRequest{searchType=%&#39; as &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
