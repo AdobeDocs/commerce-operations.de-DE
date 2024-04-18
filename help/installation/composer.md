@@ -1,10 +1,10 @@
 ---
 title: Schnellstart für die Installation vor Ort
-description: Führen Sie diese Schritte aus, um Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur zu installieren.
+description: Führen Sie diese Schritte aus, um Adobe Commerce in Ihrer Infrastruktur zu installieren.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe verwendet [Verfasser](https://getcomposer.org/) um Adobe Commerce-Komponen
 - Reduzieren von Erweiterungskonflikten und Kompatibilitätsproblemen durch Verwendung einer komponentenbasierten Architektur mit robuster Abhängigkeitsverwaltung
 - Treten Sie bei [Interoperabilitätsgruppe PHP-Framework (FIG)](https://www.php-fig.org/) Standards
 - Magento Open Source mit anderen Komponenten umpacken
-- Verwenden der Adobe Commerce- oder Magento Open Source-Software in einer Produktionsumgebung
+- Verwenden der Adobe Commerce-Software in einer Produktionsumgebung
 
 >[!NOTE]
 >
@@ -71,11 +71,11 @@ So wechseln Sie zum Dateisysteminhaber:
 
 ## Metapaket abrufen
 
-So rufen Sie das Adobe Commerce- oder Magento Open Source-Metapaket ab:
+So rufen Sie das Adobe Commerce-Metapaket ab:
 
 1. Melden Sie sich bei Ihrem Anwendungsserver als an oder wechseln Sie zu der [Dateisysteminhaber](prerequisites/file-system/overview.md).
 1. Wechseln Sie zum Basisverzeichnis des Webservers oder zu einem Ordner, den Sie als virtuelles Host-Basisverzeichnis konfiguriert haben.
-1. Erstellen Sie ein Composer-Projekt mit dem Adobe Commerce- oder Magento Open Source-Metapaket.
+1. Erstellen Sie ein Composer-Projekt mit einem Commerce-Metapaket.
 
    **Magento Open Source**
 
@@ -127,7 +127,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ## Festlegen von Dateiberechtigungen
 
-Sie müssen Lese- und Schreibberechtigungen für die Webservergruppe festlegen, bevor Sie Adobe Commerce oder Magento Open Source installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
+Sie müssen Lese- und Schreibberechtigungen für die Webservergruppe festlegen, bevor Sie Adobe Commerce installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
 ```terminal
 cd /var/www/html/<magento install directory>
@@ -139,7 +139,7 @@ chmod u+x bin/magento
 
 ## Installieren des Programms
 
-Sie müssen die Befehlszeile verwenden, um Adobe Commerce oder Magento Open Source zu installieren.
+Sie müssen die Befehlszeile verwenden, um Adobe Commerce zu installieren.
 
 In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee`, die `db-host` auf demselben Computer (`localhost`) und dass die `db-name`, `db-user`, und `db-password` alle `magento`:
 

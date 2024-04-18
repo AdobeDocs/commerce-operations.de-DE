@@ -2,9 +2,9 @@
 title: Eine Remote-Verbindung zur MySQL-Datenbank einrichten
 description: Führen Sie diese Schritte aus, um eine Remote-Datenbankverbindung für lokale Installationen von Adobe Commerce zu konfigurieren.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Bevor Sie beginnen, müssen Sie:
 
 * [MySQL-Server installieren](mysql.md) auf dem Datenbankserver.
 * [Erstellen einer Datenbankinstanz](mysql.md#configuring-the-database-instance) auf dem Datenbankserver.
-* Installieren Sie den MySQL-Client auf Ihrem Adobe Commerce- oder Magento Open Source-Webknoten. Weitere Informationen finden Sie in der MySQL-Dokumentation .
+* Installieren Sie den MySQL-Client auf Ihrem Adobe Commerce-Webknoten. Weitere Informationen finden Sie in der MySQL-Dokumentation .
 
 ### Hohe Verfügbarkeit
 
@@ -136,7 +136,7 @@ Geben Sie auf Ihrem Webknotenhost den folgenden Befehl ein, um zu überprüfen, 
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Wenn der MySQL-Monitor wie folgt angezeigt wird, ist die Datenbank für Adobe Commerce oder die Magento Open Source bereit:
+Wenn der MySQL-Monitor wie folgt angezeigt wird, ist die Datenbank für Adobe Commerce bereit:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Wenn Ihr Webserver in einem Cluster gespeichert ist, geben Sie den Befehl auf jedem Webserver-Host ein.
 
-## Installieren der Adobe Commerce oder Magento Open Source
+## Installieren des Adobe Commerce
 
-Bei der Installation von Adobe Commerce oder Magento Open Source müssen Sie Folgendes angeben:
+Bei der Installation von Adobe Commerce müssen Sie Folgendes angeben:
 
 * Die Basis-URL (auch als *Store-Adresse*) gibt den Hostnamen oder die IP-Adresse der *Webknoten*
 * Der Datenbankhost ist der *Remote-Datenbankserver* IP-Adresse (oder Lastenausgleich, wenn der Datenbankserver im Cluster ist)

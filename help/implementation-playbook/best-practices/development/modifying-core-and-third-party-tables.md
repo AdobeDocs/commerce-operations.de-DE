@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Weitere Informationen zur Verwendung von API-Gittern mit GraphQL finden Sie unte
 Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in gespeichert werden müssen [!DNL Adobe Commerce]empfiehlt Adobe, die [Erweiterungsattribute](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
 
 - Sie können die beizubehaltenden Daten und die Datenbankstruktur steuern, um sicherzustellen, dass die Daten mit dem richtigen Spaltentyp und den richtigen Indizes gespeichert werden.
-- Die meisten Entitäten in [!DNL Adobe Commerce] und [!DNL Magento Open Source] unterstützt die Verwendung von Erweiterungsattributen.
+- Die meisten Entitäten in [!DNL Adobe Commerce] unterstützt die Verwendung von Erweiterungsattributen.
 - Erweiterungsattribute sind ein speicherunabhängiger Mechanismus, der die Flexibilität bietet, die Daten an einem optimalen Speicherort für Ihr Projekt zu speichern.
 
 Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Entscheidend bei der Auswahl eines Standorts ist, ob der Standort eine zusätzliche Komplexität einbringt oder sich auf die Leistung auswirkt.

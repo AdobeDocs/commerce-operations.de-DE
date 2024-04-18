@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die lokale Adobe Commerce-Infrastruktur und
 last-substantial-update: 2023-04-13T00:00:00Z
 exl-id: de1467be-acec-4a0d-8229-e7e87614bc55
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Im Folgenden werden die Rollen und Funktionen der einzelnen Aspekte der oben gez
 
 1. Der zweite Elastic Load Balancing application load balancer verteilt Traffic aus Varnish Cache auf die AWS Auto Scaling-Gruppe von Adobe Commerce-Instanzen in mehreren Verfügbarkeitszonen.
 
-1. Installieren Sie die neueste Version von Magento Open Source oder Adobe Commerce auf Amazon EC2-Instanzen. Die Installation besteht aus der Adobe Commerce-Anwendung, dem Nginx-Webserver und PHP. Erstellen Sie das Amazon Machine Image (AMI), um neue Instanzen in einer Gruppe mit automatischer Skalierung zu starten.
+1. Installieren Sie die neueste Version von Adobe Commerce auf Amazon EC2-Instanzen. Die Installation besteht aus der Adobe Commerce-Anwendung, dem Nginx-Webserver und PHP. Erstellen Sie das Amazon Machine Image (AMI), um neue Instanzen in einer Gruppe mit automatischer Skalierung zu starten.
 
 1. Amazon Elasticsearch Service ist ein verwalteter Elasticsearch-Dienst für die Adobe Commerce-Katalogsuche.
 
@@ -55,6 +55,6 @@ Das Wertversprechen für die Migration von Adobe Commerce zu AWS wird durch vers
 
 Die Einrichtung von Adobe Commerce in AWS kann bestimmte Anwendungsabhängigkeiten durch vollständig verwaltete Alternativen ersetzen, die in der Cloud verfügbar sind. Anstatt beispielsweise eine relationale Datenbank direkt auf EC2-Instanzen zu hosten, kann die Datenbank für viele Anwendungen einfach durch den Amazon Relational Database Service (AmazonRDS) ersetzt werden. Der Vorteil dieser Strategie besteht darin, dass die Betriebsverantwortung nicht differenzierter Komponenten auf AWS übertragen werden kann, ohne dass die Kernanwendung wesentlich geändert werden muss.
 
-Es stehen verschiedene Bereitstellungsoptionen für die Ausführung von Adobe Commerce (Magento Open Source- und Adobe Commerce-Versionen) in AWS zur Verfügung. Die beste Wahl hängt von Ihren Anforderungen an Kosten, Umfang, Verfügbarkeit und Flexibilität sowie von den Fertigkeiten Ihrer Organisation in AWS und Adobe Commerce ab.
+Es stehen verschiedene Bereitstellungsoptionen für die Ausführung von Adobe Commerce auf AWS zur Verfügung. Die beste Wahl hängt von Ihren Anforderungen an Kosten, Umfang, Verfügbarkeit und Flexibilität sowie von den Fertigkeiten Ihrer Organisation in AWS und Adobe Commerce ab.
 
 {{$include /help/_includes/hosting-related-links.md}}

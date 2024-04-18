@@ -1,10 +1,10 @@
 ---
 title: Installation überprüfen
-description: Führen Sie diese Schritte aus, um sicherzustellen, dass Ihre lokale Installation von Adobe Commerce oder Magento Open Source erfolgreich war.
+description: Führen Sie diese Schritte aus, um sicherzustellen, dass Ihre lokale Adobe Commerce-Installation erfolgreich war.
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---

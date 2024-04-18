@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Best Practices für die Implementierung
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
   </tr>
   <tr>
     <td><a href="https://developer.adobe.com/commerce/php/development/cache/page/public-content/">Vollseitenzwischenspeicherung</a></td>
-    <td>Erfahren Sie, wie Sie mit öffentlichen Daten arbeiten, wenn Sie das Caching in Ihrer Adobe Commerce- oder Magento Open Source-Erweiterung implementieren.</td>
+    <td>Erfahren Sie, wie Sie bei der Implementierung von Caching in Ihrer Adobe Commerce-Erweiterung mit öffentlichen Daten arbeiten.</td>
   </tr>
   <tr>
     <td><a href="opcache-memory-size.md">OPcache-Speichergröße</a></td>

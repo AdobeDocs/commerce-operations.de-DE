@@ -1,10 +1,10 @@
 ---
 title: Sicherheit und Einhaltung
-description: Erfahren Sie mehr über Sicherheits-, Datenschutz- und branchenspezifische Compliance-Ressourcen für Ihr Adobe Commerce- oder Magento Open Source-Projekt.
+description: Erfahren Sie mehr über Sicherheits-, Datenschutz- und branchenspezifische Compliance-Ressourcen für Ihr Adobe Commerce-Projekt.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---

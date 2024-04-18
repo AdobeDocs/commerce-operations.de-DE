@@ -2,9 +2,9 @@
 title: Empfohlene Informationen für Upgrades
 description: Lesen Sie die empfohlenen Informationen zur Planung Ihres Adobe Commerce-Upgrades.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '260'
 ht-degree: 4%
 
 ---
@@ -61,7 +61,7 @@ Weitere Informationen zu Adobe Commerce-Upgrades finden Sie auf dieser Seite.
     </tr>
     <tr>
       <td><strong>Upgrade der Ressourcen</strong>
-        <p>Sichern Sie sich Ihre Storefront und arbeiten Sie effizient. Bereiten Sie sich auf Ihr Adobe Commerce- oder Magento Open Source-Upgrade vor, indem Sie sich die ausführliche technische Dokumentation von Adobe ansehen.</p>
+        <p>Sichern Sie sich Ihre Storefront und arbeiten Sie effizient. Bereiten Sie sich auf das Adobe Commerce-Upgrade vor, indem Sie sich die ausführliche technische Dokumentation zu Adobe ansehen.</p>
           <ul>
             <li><a href="recommended-upgrade-paths.md">Empfohlene Aktualisierungspfade</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Aufzeichnung des Workshops zum technischen Upgrade</a></li>

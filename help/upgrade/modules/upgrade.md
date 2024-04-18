@@ -2,9 +2,9 @@
 title: Upgrade-Module und -Erweiterungen
 description: Verwenden Sie die Befehlszeilenschnittstelle und den Composer, um Adobe Commerce-Module und -Erweiterungen zu aktualisieren.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ So aktualisieren oder aktualisieren Sie ein Modul oder eine Erweiterung:
 
 1. Laden Sie die aktualisierte Datei von Marketplace oder einem anderen Erweiterungsentwickler herunter. Notieren Sie sich den Modulnamen und die Version.
 
-1. Exportieren Sie die Inhalte in den Installationsordner des Adobe Commerce- oder Magento Open Source-Stammordners.
+1. Exportieren Sie die Inhalte in den Stammordner der Adobe Commerce-Installation.
 
 1. Wenn für das Modul ein Composer-Paket vorhanden ist, führen Sie einen der folgenden Schritte aus.
 

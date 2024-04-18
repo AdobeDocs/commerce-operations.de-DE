@@ -1,10 +1,10 @@
 ---
 title: Installieren von Adobe Commerce
-description: Führen Sie diese Schritte aus, um Adobe Commerce oder Magento Open Source in Ihrer Infrastruktur zu installieren.
+description: Führen Sie diese Schritte aus, um Adobe Commerce in Ihrer Infrastruktur zu installieren.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2094'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ In Adobe Commerce-Version 2.2.8 und höher können Sie den Admin-Benutzer währe
 | `--db-name` | Name der Datenbankinstanz, in der Sie die Datenbanktabellen installieren möchten.<br><br>Der Standardwert ist `magento2`. | Ja |
 | `--db-user` | Benutzername des Eigentümers der Datenbankinstanz.<br><br>Der Standardwert ist `root`. | Ja |
 | `--db-password` | Passwort des Inhabers der Datenbankinstanz. | Ja |
-| `--db-prefix` | Verwenden Sie dies nur, wenn Sie die Datenbanktabellen in einer Datenbankinstanz installieren, in der bereits Adobe Commerce- oder Magento Open Source-Tabellen enthalten sind.<br><br>Verwenden Sie in diesem Fall ein Präfix, um die Tabellen für diese Installation zu identifizieren. Einige Kunden haben mehrere Adobe Commerce-Instanzen, die auf einem Server mit allen Tabellen in derselben Datenbank ausgeführt werden.<br><br>Das Präfix kann maximal fünf Zeichen lang sein. Sie muss mit einem Brief beginnen und darf nur Buchstaben, Zahlen und Unterstriche enthalten.<br><br>Mit dieser Option können diese Kunden den Datenbankserver für mehrere Installationen freigeben. | Nein |
+| `--db-prefix` | Verwenden Sie dies nur, wenn Sie die Datenbanktabellen in einer Datenbankinstanz installieren, in der bereits Adobe Commerce-Tabellen enthalten sind.<br><br>Verwenden Sie in diesem Fall ein Präfix, um die Tabellen für diese Installation zu identifizieren. Einige Kunden haben mehrere Adobe Commerce-Instanzen, die auf einem Server mit allen Tabellen in derselben Datenbank ausgeführt werden.<br><br>Das Präfix kann maximal fünf Zeichen lang sein. Sie muss mit einem Brief beginnen und darf nur Buchstaben, Zahlen und Unterstriche enthalten.<br><br>Mit dieser Option können diese Kunden den Datenbankserver für mehrere Installationen freigeben. | Nein |
 | `--db-ssl-key` | Pfad zum Client-Schlüssel. | Nein |
 | `--db-ssl-cert` | Pfad zum Client-Zertifikat. | Nein |
 | `--db-ssl-ca` | Pfad zum Serverzertifikat. | Nein |

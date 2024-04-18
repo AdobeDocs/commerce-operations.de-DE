@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie CSS- und JavaScript (JS)-Dateien für Adobe C
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Optimieren von Ressourcendateien
 
-Optimieren Sie für eine reaktionsfähigere Commerce-Site CSS- und JavaScript-Ressourcendateien (JS) und eliminieren Sie Renderer-Blockierungsressourcen.
+Optimieren Sie CSS- und JavaScript (JS)-Ressourcendateien für eine reaktionsfähigere Commerce-Site und eliminieren Sie Renderer-Blockierungsressourcen.
 
 - **CSS- und JS-Dateien optimieren**—Reduzieren Sie die zum Laden von CSS- und JavaScript-Dateien (JS) erforderliche Zeit, indem Sie Adobe Commerce so konfigurieren, dass separate Dateien zusammengeführt, minimiert und in einer Datei zusammengefasst werden.
 - **Renderer-Blocker-Ressourcen beseitigen**—Erwägen Sie die Inline-Bereitstellung kritischer JS- und CSS-Funktionen und die Verschiebung aller nicht kritischen JS-/CSS-Stile. Hinweise finden Sie unter [Renderer-Blocker-Ressourcen beseitigen](https://web.dev/render-blocking-resources/).
@@ -24,7 +24,6 @@ Optimieren Sie für eine reaktionsfähigere Commerce-Site CSS- und JavaScript-Re
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce vor Ort
-- Magento Open Source
 
 ## Zusammenführen oder Minimieren von CSS-Dateien
 

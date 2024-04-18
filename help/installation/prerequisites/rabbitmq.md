@@ -2,9 +2,9 @@
 title: Nachrichtenbroker
 description: Führen Sie die folgenden Schritte aus, um die erforderliche Message Broker-Software (wie [!DNL RabbitMQ]) für Vor-Ort-Anlagen von Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Adobe Commerce verwendet die [!DNL RabbitMQ] Open-Source-Nachrichtenbroker. Es b
 
 Nachrichtenwarteschlangen bieten einen asynchronen Kommunikationsmechanismus, bei dem sich Absender und Empfänger einer Nachricht nicht miteinander in Verbindung setzen. Sie müssen auch nicht gleichzeitig mit der Nachrichtenwarteschlange kommunizieren. Wenn ein Absender eine Nachricht in eine Warteschlange stellt, wird sie so lange gespeichert, bis der Empfänger sie erhält.
 
-Das Meldungswarteschlangesystem muss eingerichtet werden, bevor Sie Adobe Commerce oder Magento Open Source installieren. Die grundlegende Sequenz lautet:
+Das Meldungswarteschlangesystem muss eingerichtet werden, bevor Sie Adobe Commerce installieren. Die grundlegende Sequenz lautet:
 
 1. Installieren [!DNL RabbitMQ] und alle Voraussetzungen.
-1. Verbinden [!DNL RabbitMQ] in Adobe Commerce oder Magento Open Source.
+1. Verbinden [!DNL RabbitMQ] nach Adobe Commerce.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Siehe Abschnitt [Installieren unter RPM-basiertem Linux](https://www.rabbitmq.co
 
 ## Installieren mit [!DNL RabbitMQ] und verbinden
 
-Wenn Sie Adobe Commerce oder Magento Open Source installieren _after_ Installieren [!DNL RabbitMQ]Fügen Sie während der Installation die folgenden Befehlszeilenparameter hinzu:
+Wenn Sie Adobe Commerce installieren _after_ Installieren [!DNL RabbitMQ]Fügen Sie während der Installation die folgenden Befehlszeilenparameter hinzu:
 
 ```bash
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
@@ -90,7 +90,7 @@ Dabei gilt:
 
 ## Verbinden [!DNL RabbitMQ]
 
-Wenn Sie bereits Adobe Commerce oder Magento Open Source installiert haben und eine Verbindung mit [!DNL RabbitMQ], fügen Sie eine `queue` im Abschnitt `<install_directory>/app/etc/env.php` -Datei, sodass sie der folgenden ähnelt:
+Wenn Sie Adobe Commerce bereits installiert haben und eine Verbindung mit [!DNL RabbitMQ], fügen Sie eine `queue` im Abschnitt `<install_directory>/app/etc/env.php` -Datei, sodass sie der folgenden ähnelt:
 
 ```php
 'queue' =>

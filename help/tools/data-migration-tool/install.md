@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die [!DNL Data Migration Tool] um Daten zwisc
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ git branch
 
 Wenn Sie sich derzeit im `develop` Verzweigung, müssen Sie zu einer [freigegebene Verzweigung](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) bevor Sie fortfahren.
 
-Wenn Sie die Adobe Commerce- oder Magento Open Source-Software noch nicht installiert haben, [jetzt installieren](../../installation/prerequisites/commerce.md).
+Wenn Sie die Adobe Commerce-Software noch nicht installiert haben, [jetzt installieren](../../installation/prerequisites/commerce.md).
 Wenn Sie das GitHub-Repository klonen, prüfen Sie unbedingt ein Release-Tag, wie hier beschrieben: [(Mitarbeiter) GitHub-Repository klonen](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Erstellte Versionen von finden [!DNL Data Migration Tool]

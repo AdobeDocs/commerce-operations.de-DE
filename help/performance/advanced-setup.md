@@ -2,9 +2,9 @@
 title: Erweiterte Einrichtung
 description: Lesen Sie Best Practices und Empfehlungen für große Unternehmenssysteme, die für die Verarbeitung großer Datenmengen entwickelt wurden.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Sie können auch einen Redis-Cluster verwenden, der parallele Lese-/Schreibvorg�
 
 ## Einrichten [!DNL RabbitMQ]
 
-Magento Open Source und Adobe [!DNL Commerce] Unterstützen von Nachrichtenwarteschlangen, die über implementiert wurden [!DNL RabbitMQ]. [!DNL Commerce] verwendet diesen Dienst für die Ausführung zahlreicher asynchroner Vorgänge, einschließlich B2B-Katalogoperationen und asynchroner Lageraktualisierungen. Alle Schnittstellen zum Hinzufügen von mehr Aufträgen zum Auftrags-Server werden mit dem Produkt verteilt und sind für die benutzerdefinierte asynchrone Logikimplementierung im Rahmen von Drittanbieter-Erweiterungen verfügbar. Wie bei jeder anderen Integration auch, [!DNL Commerce] stellt eine Beispielkonfigurationsdatei für [!DNL RabbitMQ] , die alle empfohlenen Einstellungen enthält und vollständig für die Produktionsumgebung bereit ist.
+Adobe Commerce unterstützt Nachrichtenwarteschlangen, die über implementiert werden [!DNL RabbitMQ]. [!DNL Commerce] verwendet diesen Dienst für die Ausführung zahlreicher asynchroner Vorgänge, einschließlich B2B-Katalogoperationen und asynchroner Lageraktualisierungen. Alle Schnittstellen zum Hinzufügen von mehr Aufträgen zum Auftrags-Server werden mit dem Produkt verteilt und sind für die benutzerdefinierte asynchrone Logikimplementierung im Rahmen von Drittanbieter-Erweiterungen verfügbar. Wie bei jeder anderen Integration auch, [!DNL Commerce] stellt eine Beispielkonfigurationsdatei für [!DNL RabbitMQ] , die alle empfohlenen Einstellungen enthält und vollständig für die Produktionsumgebung bereit ist.
 
 ## Datenbank aufteilen
 

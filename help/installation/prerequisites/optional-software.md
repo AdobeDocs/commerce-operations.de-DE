@@ -2,9 +2,9 @@
 title: Optionale Software
 description: Erfahren Sie mehr über optionale Software, die Sie installieren können, um lokale Installationen von Adobe Commerce zu unterstützen.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Es wird dringend empfohlen, NTP zu installieren, um sicherzustellen, dass Cron-bezogene Aufgaben ordnungsgemäß ausgeführt werden. (Serverdaten können beispielsweise in der Vergangenheit oder Zukunft liegen.)
 
-Die anderen in diesem Thema behandelten optionalen Hilfsprogramme können Ihnen bei Ihrer Installation helfen. Sie müssen jedoch weder Adobe Commerce noch Magento Open Source installieren oder verwenden.
+Die anderen in diesem Thema behandelten optionalen Hilfsprogramme können Ihnen bei Ihrer Installation helfen. Sie müssen jedoch Adobe Commerce nicht installieren oder verwenden.
 
 ## Installieren und Konfigurieren des Network Time Protocol (NTP)
 
 [NTP](https://www.ntp.org/) ermöglicht Servern die Synchronisierung ihrer Systemuhren mithilfe von [global verfügbare Poolserver](https://www.ntppool.org/en/). Es wird empfohlen, die von Ihnen vertrauenswürdigen NTP-Server zu verwenden, unabhängig davon, ob es sich um dedizierte Hardware-Lösungen für Ihr internes Netzwerk oder externe, öffentliche Server handelt.
 
-Wenn Sie Adobe Commerce oder Magento Open Source auf mehreren Hosts bereitstellen, ist NTP eine einfache Möglichkeit, sicherzustellen, dass alle Uhren synchronisiert werden, unabhängig davon, in welcher Zeitzone sich die Server befinden. Cron-bezogene Aufgaben (wie Indizierung und Transaktions-E-Mails) hängen außerdem von der Genauigkeit der Server-Uhr ab.
+Wenn Sie Adobe Commerce auf mehreren Hosts bereitstellen, ist NTP eine einfache Möglichkeit, sicherzustellen, dass alle Uhren synchronisiert werden, unabhängig von der Zeitzone, in der sich die Server befinden. Cron-bezogene Aufgaben (wie Indizierung und Transaktions-E-Mails) hängen außerdem von der Genauigkeit der Server-Uhr ab.
 
 ### Installieren und Konfigurieren von NTP auf Ubuntu
 

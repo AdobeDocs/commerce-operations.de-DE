@@ -2,9 +2,9 @@
 title: Die Datenschutz-Grundverordnung (DSGVO)
 description: Erfahren Sie mehr über die Datenschutz-Grundverordnung (DSGVO), eine Rechtsvorschrift, die den Datenschutz und die Privatsphäre aller Personen in der Europäischen Union und im Europäischen Wirtschaftsraum regelt.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Systemintegratoren können die Datenflussdiagramme und Datenbankinformationen in
 
 ## Hinweis zu personenbezogenen Daten
 
-Technische Informationen finden Sie in den Datenflussdiagrammen und Zuordnungen von Datenbankentitäten in der Referenz zu personenbezogenen Daten, die für jede von Ihnen unterstützte Version von Adobe Commerce oder Magento Open Source gilt.
+Technische Informationen finden Sie in den Datenflussdiagrammen und Zuordnungen von Datenbankentitäten in der Referenz zu personenbezogenen Daten, die für jede von Ihnen unterstützte Version von Adobe Commerce gilt.
 
 - [Referenz zu personenbezogenen Daten des Kunden (Version 2.x)](data-m2.md)
 - [Referenz zu personenbezogenen Daten des Kunden (Version 1.x)](data-m1.md)

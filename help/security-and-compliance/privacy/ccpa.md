@@ -2,9 +2,9 @@
 title: California Consumer Privacy Act (CCPA)
 description: Erfahren Sie mehr über den California Consumer Privacy Act (CCPA), der die Rechte von Verbrauchern in Kalifornien erweitert, um zu bestimmen, wie ihre personenbezogenen Daten erfasst, gespeichert und verwendet werden.
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte
 
 ## Hinweis zu personenbezogenen Daten
 
-Technische Informationen finden Sie in den Datenflussdiagrammen und Zuordnungen von Datenbankentitäten in der Referenz zu personenbezogenen Daten, die für jede von Ihnen unterstützte Version von Adobe Commerce oder Magento Open Source gilt.
+Technische Informationen finden Sie in den Datenflussdiagrammen und Zuordnungen von Datenbankentitäten in der Referenz zu personenbezogenen Daten, die für jede von Ihnen unterstützte Version von Adobe Commerce gilt.
 
 - [Referenz zu personenbezogenen Daten des Kunden (Version 2.x)](data-m2.md)
 - [Referenz zu personenbezogenen Daten des Kunden (Version 1.x)](data-m1.md)

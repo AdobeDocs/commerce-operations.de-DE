@@ -1,10 +1,10 @@
 ---
 title: Installieren einer Erweiterung
-description: Führen Sie diese Schritte aus, um eine Adobe Commerce- oder Magento Open Source-Erweiterung zu installieren.
+description: Führen Sie diese Schritte aus, um eine Adobe Commerce-Erweiterung zu installieren.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---

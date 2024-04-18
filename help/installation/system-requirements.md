@@ -2,9 +2,9 @@
 title: Systemanforderungen
 description: Verwenden Sie diese Referenz, um erforderliche Softwareabhängigkeiten zu identifizieren, die mit Adobe Commerce-Versionen getestet wurden.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -155,4 +155,4 @@ Informationen zu Adobe Commerce on Cloud finden Sie unter [Xdebug konfigurieren]
 
 >[!NOTE]
 >
->Es gibt ein bekanntes Problem mit `xdebug` , die sich auf Installationen von Adobe Commerce oder Magento Open Sourcen oder den Zugriff auf die Storefront oder den Administrator nach der Installation auswirken können. Siehe [Bekanntes Problem, das sich auf `xdebug` Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) im _Wissensdatenbank zur Commerce-Unterstützung_.
+>Es gibt ein bekanntes Problem mit `xdebug` , die sich auf Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder den Administrator nach der Installation auswirken können. Siehe [Bekanntes Problem, das sich auf `xdebug` Installation](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) im _Wissensdatenbank zur Commerce-Unterstützung_.

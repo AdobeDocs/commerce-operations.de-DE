@@ -2,16 +2,16 @@
 title: Dateieigentum und Berechtigungen
 description: Erfahren Sie mehr über die Bedeutung von Dateisystemberechtigungen für die Arbeit mit lokalen Installationen von Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
 
 # Dateieigentum und Berechtigungen
 
-Es ist wichtig, Ihre Adobe Commerce- oder Magento Open Source-Installation in einer Entwicklungsumgebung zu sichern, um Probleme im Zusammenhang mit nicht autorisierten Personen oder Prozessen zu verhindern, die auf Ihr System zugreifen und möglicherweise Ihr System schädigen. Verwenden Sie zum Schutz Ihrer Installation die folgenden Richtlinien zur Eigentümerschaft des Dateisystems und zu Berechtigungen.
+Es ist wichtig, Ihre Adobe Commerce-Installation in einer Entwicklungsumgebung zu sichern, um Probleme im Zusammenhang mit nicht autorisierten Personen oder Prozessen zu verhindern, die auf Ihr System zugreifen und möglicherweise Ihr System schädigen. Verwenden Sie zum Schutz Ihrer Installation die folgenden Richtlinien zur Eigentümerschaft des Dateisystems und zu Berechtigungen.
 
 ## Dateisysteminhaber
 
@@ -65,4 +65,4 @@ Weitere Informationen zu Berechtigungen finden Sie in [Zugriffsberechtigungen f�
 
 >[!TIP]
 >
->Lesen Sie vor der Installation von Adobe Commerce oder Magento Open Source den Abschnitt [Konfigurieren von Dateieigentum und Berechtigungen](configure-permissions.md).
+>Lesen Sie vor der Installation von Adobe Commerce den Abschnitt [Konfigurieren von Dateieigentum und Berechtigungen](configure-permissions.md).

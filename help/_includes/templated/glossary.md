@@ -1,7 +1,7 @@
 ---
-source-git-commit: 405c1d7073e5936aefc7fb3c6eb1d5dd4d69a066
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '6574'
+source-wordcount: '6363'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ _Begriffsattribute:_
 _noun_
 
 Ein Merkmal oder eine Eigenschaft eines Produkts, das einen Aspekt des Produkts beschreibt.
-Adobe Commerce- oder Magento Open Source-Benutzer können benutzerdefinierte Attribute erstellen, um sie dem standardmäßigen Attributsatz oder einem benutzerdefinierten Attributsatz hinzuzufügen.
+Adobe Commerce-Benutzer können benutzerdefinierte Attribute erstellen, um sie dem standardmäßigen Attributsatz oder einem benutzerdefinierten Attributsatz hinzuzufügen.
 Erstellen Sie diese Attribute über den Administrator oder programmgesteuert.
 Beispiele: Farbe, Größe, Gewicht, Preis, Alter, Geschlecht usw.
 
@@ -913,7 +913,7 @@ _Begriffsattribute:_
 
 _noun_
 
-Beim Erstellen einer Commerce-Seite handelt es sich bei einem Layout um eine Reihe von Bausteinen, die in einer Hierarchie zusammengestellt sind und die Struktur der Seite darstellen.
+Beim Erstellen einer Commerce-Seite handelt es sich bei einem Layout um eine Reihe von Bausteinen, die in einer Hierarchie zusammengestellt sind und die Seitenstruktur darstellen.
 
 Seitenlayoutdateien konzentrieren sich auf die höchste Ebene der Seitenstruktur (Kopf-, Fußzeile, Hauptinhaltsbereich, linke Seitenleiste usw.).
 Layout-Dateien sammeln dann Inhalte (Bausteine) in diese verschiedenen Bereiche auf der Seite.
@@ -1013,7 +1013,7 @@ _Begriffsattribute:_
 _noun_
 
 MFTF ist eine [Funktionstests-Framework](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
-Es bietet ein Test-Framework für Commerce-Entwickler und Software-Ingenieure wie QA-Spezialisten, PHP-Entwickler und Systemintegratoren.
+Es bietet ein Test-Framework für Entwickler und Softwareingenieure von Commerce, wie QS-Spezialisten, PHP-Entwickler und Systemintegratoren.
 Entwickler und QA können Tests schreiben, um Benutzerinteraktionen mit Webanwendungen zu versuchen, die Funktionalität zu überprüfen und Regressionstests zu automatisieren.
 
 _Begriffsattribute:_
@@ -1327,7 +1327,7 @@ _Begriffsattribute:_
 
 _noun_
 
-Die Commerce-Bereichsebene der &quot;Store-Ansicht&quot;bezieht sich auf die dritte Ebene in der Hierarchie der Websites, Stores und Store-Ansichten.
+Der Commerce-Umfang der &quot;Store-Ansicht&quot;bezieht sich auf die dritte Ebene in der Hierarchie der Websites, Stores und Store-Ansichten.
 Store-Ansichten stellen die Storefront normalerweise in einem anderen Gebietsschema und einer anderen Sprache dar.
 Verwenden Sie zum Ändern von Store-Ansichten die Store-Auswahl in der Kopfzeile.
 
@@ -1380,7 +1380,7 @@ Enthält Grafiken und Darstellungsinformationen.
 Passt das Erscheinungsbild des Stores an.
 Adobe Commerce kann Designs in (Composer-)Packages versenden.
 Themen können jedoch unter App/Design platziert werden, das nicht in einem Paket enthalten ist.
-Pakete sind die Download-Einheit für Composer und — über Commerce Marketplace — Commerce-Benutzer können CE oder EE als Paket herunterladen, in dem Pakete Module, Designs oder Sprachpakete enthalten.
+Pakete sind die Download-Einheit für Composer und - über Commerce Marketplace - Commerce-Benutzer können CE oder EE als Paket herunterladen, in dem Pakete Module, Designs oder Sprachpakete enthalten.
 
 _Begriffsattribute:_
 
@@ -1437,8 +1437,8 @@ _Begriffsattribute:_
 
 _noun_
 
-Von Anbietern erstellter Code, der das Commerce-Verhalten erweitert oder anpasst und als Drittanbietererweiterung fungiert, gilt als VBE (Vendor Bundle Extension).
-VBEs werden gründlich getestet und in jeder unterstützten Magento Open Source- und Adobe Commerce-Version enthalten.
+Von Anbietern erstellter Code, der das Verhalten von Commerce erweitert oder anpasst und als Drittanbietererweiterung fungiert, gilt als VBE (Vendor Bundle Extension).
+VBEs werden gründlich getestet und in jeder unterstützten Version von Adobe Commerce enthalten.
 Eine VBE kann Module, Designs und Sprachpakete enthalten.
 
 Weitere Informationen finden Sie unter [Thema &quot;Gebündelte Erweiterung&quot;des Anbieters](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).

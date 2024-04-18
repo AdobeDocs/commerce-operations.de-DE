@@ -2,9 +2,9 @@
 title: Durchführen eines Upgrades
 description: Führen Sie diese Schritte aus, um lokale Bereitstellungen von Adobe Commerce zu aktualisieren.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Durchführen eines Upgrades
 
-Sie können _vor Ort_ Bereitstellungen der Adobe Commerce- oder Magento Open Source-Anwendung über die Befehlszeile, wenn Sie die Software installiert haben durch:
+Sie können _vor Ort_ Bereitstellungen der Adobe Commerce-Anwendung über die Befehlszeile, wenn Sie die Software installiert haben durch:
 
 - Herunterladen des Composer-Metapakets mit dem `composer create-project` Befehl.
 - Installieren des komprimierten Archivs.
@@ -110,7 +110,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) , um Ihre
 
    - `<product>` —(Erforderlich) Das zu aktualisierende Paket. Bei ortsansässigen Anlagen muss dieser Wert entweder `product-community-edition` oder `product-enterprise-edition`.
 
-   - `<version>` - (Erforderlich) Die Version von Adobe Commerce oder Magento Open Source, auf die Sie ein Upgrade durchführen. Beispiel: `2.4.3`.
+   - `<version>` —(Erforderlich) Die Version von Adobe Commerce, auf die Sie aktualisieren. Beispiel: `2.4.3`.
 
    - `--no-update` —(Erforderlich) Deaktiviert die automatische Aktualisierung der Abhängigkeiten.
 

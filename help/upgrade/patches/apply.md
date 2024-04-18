@@ -1,10 +1,10 @@
 ---
 title: Anwenden von Patches
-description: Erfahren Sie mehr über die Methoden zum Anwenden von Patches auf ein Adobe Commerce- oder Magento Open Source-Projekt.
+description: Erfahren Sie mehr über die Methoden zum Anwenden von Patches auf ein Adobe Commerce-Projekt.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---

@@ -2,16 +2,16 @@
 title: Konfigurieren von Dateieigentum und Berechtigungen
 description: Führen Sie diese Schritte aus, um Dateisystemberechtigungen für lokale Installationen von Adobe Commerce zu konfigurieren.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
 
 # Konfigurieren von Dateieigentum und Berechtigungen
 
-In diesem Thema wird beschrieben, wie Sie Lese- und Schreibberechtigungen für die Webservergruppe festlegen, bevor Sie Adobe Commerce oder Magento Open Source installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
+In diesem Thema wird beschrieben, wie Sie Lese- und Schreibberechtigungen für die Webservergruppe festlegen, bevor Sie Adobe Commerce installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
 Je nachdem, ob Sie [freigegebenes Hosting](#set-permissions-for-one-user-on-shared-hosting) und einen Benutzer haben oder wenn Sie eine [privater Server](#set-ownership-and-permissions-for-two-users) und haben zwei Benutzer.
 

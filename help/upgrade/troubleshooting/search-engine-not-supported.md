@@ -1,24 +1,24 @@
 ---
 title: Aktuelle Suchmaschine wird nicht unterstützt
-description: Führen Sie eine Fehlerbehebung bei Ihrem Adobe Commerce- oder Magento Open Source-Upgrade durch, nachdem ein Fehler bezüglich einer nicht unterstützten Suchmaschine aufgetreten ist.
+description: Fehlerbehebung bei Ihrem Adobe Commerce-Upgrade, nachdem ein Fehler bezüglich einer nicht unterstützten Suchmaschine aufgetreten ist.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Aktuelle Suchmaschine wird nicht unterstützt
 
-Die folgende Fehlermeldung weist darauf hin, dass die Adobe Commerce- oder Magento Open Source-Version, von der Sie ein Upgrade durchführen, für die Verwendung einer Katalogsuchmaschine konfiguriert ist, die in der Version, auf die Sie das Upgrade durchführen, nicht unterstützt wird:
+Die folgende Fehlermeldung weist darauf hin, dass die Adobe Commerce-Version, von der Sie ein Upgrade durchführen, für die Verwendung einer Katalogsuchmaschine konfiguriert ist, die in der Version, auf die Sie das Upgrade durchführen, nicht unterstützt wird:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
-Dieser Fehler bedeutet, dass eine der folgenden Bedingungen auf der Abwärtsversion von Adobe Commerce oder Magento Open Source zutrifft:
+Dieser Fehler bedeutet, dass eine der folgenden Bedingungen auf der Abwärtsversion von Adobe Commerce zutrifft:
 
 - Die Suchmaschine ist auf MySQL eingestellt.
 - Die Suchmaschine ist auf eine Version des Elasticsearchs festgelegt, die nicht mehr unterstützt wird.
@@ -43,7 +43,7 @@ Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql`, `elasticsearch`oder
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Wo `<version>` ist die Magento-Version, die Sie ausgeführt haben **before** das Upgrade. Beispiel, `2.3.5`.
+>Wo `<version>` ist die Magento-Version, die Sie ausgeführt haben **before** das Upgrade. Beispiel: `2.3.5`.
 
 Befolgen Sie die in den folgenden Abschnitten beschriebenen Richtlinien, um sich von einem inkonsistenten Zustand zu erholen.
 
@@ -62,11 +62,11 @@ Nachdem Sie die Suchmaschine und die Neuindizierung konfiguriert haben, können 
 
 Elasticsearch 6 und frühere Versionen werden nicht mehr unterstützt.
 
-Ein Wert von `elasticsearch` zeigt an, dass Ihre heruntergestufte Version von Adobe Commerce oder Magento Open Source für die Verwendung von Elasticsearch 2.x konfiguriert ist. Diese Version von Elasticsearch wird nicht mehr unterstützt.
+Ein Wert von `elasticsearch` zeigt an, dass Ihre heruntergestufte Version von Adobe Commerce für die Verwendung von Elasticsearch 2.x konfiguriert ist. Diese Version von Elasticsearch wird nicht mehr unterstützt.
 
 Sie müssen die folgenden Aufgaben ausführen, bevor Sie auf 2.4 aktualisieren:
 
-1. Aktualisieren Sie auf eine Elasticsearch-Version, die von Commerce unterstützt wird. Siehe Abschnitt [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
+1. Aktualisierung auf eine von Commerce unterstützte Elasticsearch-Version. Siehe Abschnitt [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) umfassende Anweisungen zum Sichern Ihrer Daten, zur Erkennung potenzieller Migrationsprobleme und zum Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch ist möglicherweise ein vollständiger Neustart des Clusters erforderlich.
 
    >[!NOTE]
    >

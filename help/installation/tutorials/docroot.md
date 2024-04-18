@@ -1,11 +1,11 @@
 ---
 title: Basisverzeichnis zur Verbesserung der Sicherheit ändern
-description: Verhindern des nicht autorisierten browserbasierten Zugriffs auf Adobe Commerce oder die Magento Open Source des lokalen Dateisystems.
+description: Verhindern des nicht autorisierten browserbasierten Zugriffs auf das lokale Adobe Commerce-Dateisystem.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionieren
 - MySQL (5.7+)
 - PHP (7.4)
 - Elasticsearch (7.x) oder OpenSearch (1.2)
-- Adobe Commerce oder Magento Open Source (2.4+)
+- Adobe Commerce (2.4+)
 
 >[!NOTE]
 >

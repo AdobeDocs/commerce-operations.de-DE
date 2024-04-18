@@ -2,9 +2,9 @@
 title: Nginx
 description: Führen Sie diese Schritte aus, um den Nginx-Webserver für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1110'
 ht-degree: 0%
 
 ---
@@ -97,13 +97,13 @@ Dieses Beispiel zeigt eine Composer-basierte Installation mithilfe der Befehlsze
    cd /var/www/html
    ```
 
-1. Installieren Sie Composer global. Der Composer ist erforderlich, um Abhängigkeiten vor der Installation von Adobe Commerce oder Magento Open Source zu aktualisieren:
+1. Installieren Sie Composer global. Der Composer muss die Abhängigkeiten vor der Installation von Adobe Commerce aktualisieren:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Erstellen Sie ein Composer-Projekt mit der Magento Open Source oder dem Adobe Commerce-Metapaket.
+1. Erstellen Sie ein Composer-Projekt mit dem Adobe Commerce-Metapaket.
 
    **Magento Open Source**
 
@@ -207,7 +207,7 @@ Diese Anweisungen gehen davon aus, dass Sie den Standardspeicherort von Ubuntu f
    >
    >Die `include` -Anweisung muss auf die Beispielkonfigurationsdatei nginx in Ihrem Installationsverzeichnis verweisen.
 
-1. Ersetzen `www.magento-dev.com` mit Ihrem Domänennamen. Diese muss mit der Basis-URL übereinstimmen, die Sie bei der Installation von Adobe Commerce oder Magento Open Source angegeben haben.
+1. Ersetzen `www.magento-dev.com` mit Ihrem Domänennamen. Diese muss mit der Basis-URL übereinstimmen, die Sie bei der Installation von Adobe Commerce angegeben haben.
 
 1. Speichern und beenden Sie den Editor.
 
@@ -283,7 +283,7 @@ Adobe Commerce erfordert mehrere [PHP](../php-settings.md) -Erweiterungen ordnun
 
    >[!NOTE]
    >
-   >Es wird empfohlen, die Speicherbegrenzung beim Testen von Adobe Commerce oder Magento Open Source auf 2 G festzulegen. Siehe Abschnitt [Erforderliche PHP-Einstellungen](../php-settings.md) für weitere Informationen.
+   >Es wird empfohlen, die Speicherbegrenzung beim Testen von Adobe Commerce auf 2 G festzulegen. Siehe Abschnitt [Erforderliche PHP-Einstellungen](../php-settings.md) für weitere Informationen.
 
 1. Heben Sie den Kommentar für den Sitzungspfadordner auf und legen Sie den Pfad fest:
 
@@ -376,13 +376,13 @@ Dieses Beispiel zeigt eine Composer-basierte Installation mithilfe der Befehlsze
    cd /var/www/html
    ```
 
-1. Installieren Sie Composer global. Der Composer ist erforderlich, um Abhängigkeiten vor der Installation von Adobe Commerce oder Magento Open Source zu aktualisieren:
+1. Installieren Sie Composer global. Der Composer muss die Abhängigkeiten vor der Installation von Adobe Commerce aktualisieren:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Erstellen Sie ein Composer-Projekt mit der Magento Open Source oder dem Adobe Commerce-Metapaket.
+1. Erstellen Sie ein Composer-Projekt mit dem Adobe Commerce-Metapaket.
 
    **Magento Open Source**
 

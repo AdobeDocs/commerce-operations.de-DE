@@ -1,10 +1,10 @@
 ---
 title: Module aktivieren oder deaktivieren
-description: Führen Sie diese Schritte aus, um Adobe Commerce- oder Magento Open Source-Module zu verwalten.
+description: Führen Sie diese Schritte aus, um Adobe Commerce-Module zu verwalten.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---

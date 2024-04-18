@@ -2,9 +2,9 @@
 title: Datenschutz-JavaScript-Bibliothek
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Tools auf von Adobe Commerce erfasste personenbezogene Kundendaten zugreifen und diese löschen können.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Diese Bibliothek bietet eine Reihe von Funktionen zum Erstellen von Datenschutza
 
 Die Datenschutz-JavaScript-Bibliothek ist unter folgendem CDN-Speicherort verfügbar: `commerce.adobe.net/magentoprivacy.js`
 
-Nachdem Sie über die -Datei verfügen, müssen Sie sie einem benutzerdefinierten Modul oder Thema hinzufügen, das in Ihrer Adobe Commerce- oder Magento Open Source-Instanz installiert ist. Befolgen Sie die Anweisungen im Abschnitt [Verwenden von benutzerdefiniertem JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) Thema, um diese Aufgabe zu erfüllen.
+Nachdem Sie über die Datei verfügen, müssen Sie sie einem benutzerdefinierten Modul oder Design hinzufügen, das in Ihrer Adobe Commerce-Instanz installiert ist. Befolgen Sie die Anweisungen im Abschnitt [Verwenden von benutzerdefiniertem JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) Thema, um diese Aufgabe zu erfüllen.
 
 ### Initialisierung
 

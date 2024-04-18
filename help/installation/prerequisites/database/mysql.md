@@ -2,9 +2,9 @@
 title: MySQL-Richtlinien
 description: Führen Sie diese Schritte aus, um MySQL und MariaDB für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Adobe Commerce hat das reguläre Validierungsverhalten deaktiviert, indem SET SQ
 
 Um MySQL ordnungsgemäß von Version 5.7 auf Version 8 zu aktualisieren, müssen Sie die folgenden Schritte ausführen, um die richtige Reihenfolge zu wählen:
 
-1. Aktualisieren Sie Adobe Commerce oder Magento Open Source auf Version 2.4.0. Testen Sie alles und stellen Sie sicher, dass Ihr System wie erwartet funktioniert.
+1. Aktualisieren Sie Adobe Commerce auf 2.4.0. Testen Sie alles und stellen Sie sicher, dass Ihr System wie erwartet funktioniert.
 1. Wartungsmodus aktivieren:
 
    ```bash
@@ -131,7 +131,7 @@ Um MySQL ordnungsgemäß von Version 5.7 auf Version 8 zu aktualisieren, müssen
 
 ## Datenbankinstanz konfigurieren
 
-In diesem Abschnitt wird beschrieben, wie Sie eine Datenbankinstanz für Adobe Commerce oder Magento Open Source erstellen. Obwohl empfohlen wird, eine neue Datenbankinstanz zu installieren, können Sie optional Adobe Commerce oder Magento Open Source mit einer vorhandenen Datenbankinstanz installieren.
+In diesem Abschnitt wird beschrieben, wie Sie eine Datenbankinstanz für Adobe Commerce erstellen. Obwohl empfohlen wird, eine neue Datenbankinstanz zu installieren, können Sie optional Adobe Commerce mit einer vorhandenen Datenbankinstanz installieren.
 
 Konfigurieren einer MySQL-Datenbankinstanz:
 
@@ -177,7 +177,7 @@ Konfigurieren einer MySQL-Datenbankinstanz:
 
    * Indexer erfordern höher `tmp_table_size` und `max_heap_table_size` Werte (z. B. 64 M). Wenn Sie die `batch_size` -Parameter können Sie diesen Wert zusammen mit den Einstellungen für die Tabellengröße anpassen, um die Indexleistung zu verbessern. Siehe Abschnitt [Optimierungshandbuch](../../../performance/configuration.md) für weitere Informationen.
 
-   * Um eine optimale Leistung zu erzielen, stellen Sie sicher, dass alle MySQL- und Adobe Commerce- oder Magento Open Source-Indextabellen im Speicher aufbewahrt werden können (konfigurieren Sie beispielsweise `innodb_buffer_pool_size`).
+   * Um eine optimale Leistung zu erzielen, stellen Sie sicher, dass alle MySQL- und Adobe Commerce-Indextabellen im Speicher aufbewahrt werden können (konfigurieren Sie beispielsweise `innodb_buffer_pool_size`).
 
    * Die Neuindizierung auf MariaDB 10.4 nimmt im Vergleich zu anderen MariaDB- oder MySQL-Versionen mehr Zeit in Anspruch. Siehe [Best Practices bei der Konfiguration](../../../performance/configuration.md#indexers).
 

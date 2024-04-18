@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Wir empfehlen Folgendes:
 
 * Ihre Suchmaschine läuft auf demselben Host wie ein Webserver. Das Ausführen der Suchmaschine und des Webservers auf verschiedenen Hosts ist über den Rahmen dieses Themas hinaus möglich.
 
-  Der Vorteil, dass Suchmaschinen und Webserver auf denselben Host gesetzt werden, besteht darin, dass das Abfangen verschlüsselter Kommunikation unmöglich wird. Der Webserver der Suchmaschine muss nicht mit dem Adobe Commerce- oder Magento Open Source-Webserver übereinstimmen. Adobe Commerce kann beispielsweise Apache ausführen und Elasticsearch/OpenSearch kann nginx ausführen.
+  Der Vorteil, dass Suchmaschinen und Webserver auf denselben Host gesetzt werden, besteht darin, dass das Abfangen verschlüsselter Kommunikation unmöglich wird. Der Webserver der Suchmaschine muss nicht mit dem Adobe Commerce-Webserver übereinstimmen. Adobe Commerce kann beispielsweise Apache ausführen und Elasticsearch/OpenSearch kann nginx ausführen.
 
   Wenn die Suchmaschine für das öffentliche Web verfügbar gemacht wird, sollten Sie die Authentifizierung konfigurieren. Wenn Ihre Suchmaschineninstanz in Ihrem Netzwerk geschützt ist, ist dies möglicherweise nicht erforderlich. Arbeiten Sie mit Ihrem Hosting-Provider zusammen, um zu ermitteln, welche Sicherheitsmaßnahmen Sie implementieren sollten, um Ihre Instanz zu schützen.
 
