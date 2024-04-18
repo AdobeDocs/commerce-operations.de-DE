@@ -3,7 +3,7 @@ title: Referenzarchitektur für Unternehmen
 description: Erfahren Sie, wie Sie Adobe Commerce mithilfe der neuesten, zusammenstellbaren Commerce-Technologie von Adobe implementieren.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
+source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Adobe Commerce ist die erfahrungsgesteuerte Plattform, die technische Flexibilität und Benutzerfreundlichkeit auf einzigartige Weise verbindet und damit außergewöhnliche Erlebnisse schafft, die Geschäftsergebnisse vorantreiben.
 
-Der Handel hat sich entwickelt, um die Anforderungen des Unternehmens an Leistung, Größe und Sicherheit zu erfüllen. Die Einführung eines modernen Implementierungsansatzes, der die neueste, zusammenstellbare Commerce-Lösung verwendet, ist von entscheidender Bedeutung für den Erfolg von Unternehmen. Auf dieser Seite wird der moderne Commerce-Implementierungsansatz im technischen Detail beschrieben.
+Commerce hat sich weiterentwickelt, um die Anforderungen des Unternehmens an Leistung, Skalierung und Sicherheit zu erfüllen. Die Einführung eines modernen Implementierungsansatzes, der die neueste, zusammenstellbare Commerce-Lösung verwendet, ist von entscheidender Bedeutung für den Erfolg von Unternehmen. Auf dieser Seite wird der moderne Commerce-Implementierungsansatz im Detail beschrieben.
 
 Das folgende Architekturdiagramm veranschaulicht den Datenfluss zwischen Adobe Commerce und allen Adobe Experience Cloud-Lösungen.
 
-![Architektonisches Diagramm, das zeigt, wie Adobe Commerce eine Verbindung zu Experience Cloud-Lösungen herstellt](../../assets/playbooks/commerce-architecture-v2.svg){zoomable=&quot;yes&quot;}
+![Architektonisches Diagramm, das zeigt, wie Adobe Commerce eine Verbindung zu Experience Cloud-Lösungen herstellt](../../assets/playbooks/commerce-architecture-v3.svg){zoomable=&quot;yes&quot;}
 
 >[!NOTE]
 >
->Die im Diagramm dargestellten Datenflüsse auf hoher Ebene sind bei den meisten Unternehmensimplementierungen konsistent. Die Schlüsselkomponente, die Implementierungen eindeutig machen kann, ist die Art und Weise, wie Sie Ihren Katalog erstellen (insbesondere für B2B). Sie sollten Ihre Katalogarchitektur sorgfältig der [Commerce-Web-APIs](https://developer.adobe.com/commerce/webapi/get-started/).
+>Die im Diagramm dargestellten Datenflüsse auf hoher Ebene sind bei den meisten Unternehmensimplementierungen konsistent. Die Schlüsselkomponente, die Implementierungen eindeutig machen kann, ist die Art und Weise, wie Sie Ihren Katalog erstellen (insbesondere für B2B). Sie sollten Ihre Katalogarchitektur sorgfältig der [Commerce Web APIs](https://developer.adobe.com/commerce/webapi/get-started/).
 
 ## Cloud-Stiftung
 
@@ -59,10 +59,10 @@ Adobe bietet Entwicklern umfassende Erweiterungspunkte und Tools zum Erstellen v
 Adobe bietet die folgenden Entwicklertools zum Erstellen von Integrationen und Anpassungen:
 
 - [**API-Mesh für Adobe Developer App Builder**](https://developer.adobe.com/graphql-mesh-gateway/)—Koordinieren und Kombinieren mehrerer API-, GraphQL-, REST- und anderer Quellen zu einem einzigen, abfraglichen GraphQL-Endpunkt.
-- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Erstellen und implementieren Sie sichere und skalierbare Webanwendungen, die die Commerce-Funktionalität erweitern und in Lösungen von Drittanbietern integrieren.
+- [**App Builder**](https://developer.adobe.com/app-builder/docs/overview/)—Erstellen und implementieren Sie sichere und skalierbare Webanwendungen, die die Funktionalität von Commerce erweitern und in Lösungen von Drittanbietern integrieren.
 - [**Veranstaltungen**](https://developer.adobe.com/commerce/extensibility/events/)—Verwenden Sie benutzerdefinierte Ereignis-Trigger, um mit anderen erweiterbaren Entwicklungstools zu interagieren.
-- [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Verwenden Sie Webhooks, um die Interaktionen zwischen Commerce- und Drittanbietersystemen automatisch Trigger.
-- [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)- Passen Sie den Commerce Admin an und erweitern Sie ihn mit neuen Seiten und Funktionen für Ihre Händler.
+- [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/)—Verwenden Sie Webhooks, um die Interaktionen zwischen Commerce und Drittanbietersystemen automatisch Trigger.
+- [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/)- Passen Sie den Commerce-Administrator an und erweitern Sie ihn mit neuen Seiten und Funktionen für Ihre Händler.
 
 ## Storefront-Dienste
 
