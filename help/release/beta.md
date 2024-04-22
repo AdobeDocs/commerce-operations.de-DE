@@ -2,9 +2,9 @@
 title: Beta-Versionen
 description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und wie Sie teilnehmen können.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 07e616b26784a6e2e8994efc5816a5005619b5bb
+source-git-commit: 1dd4b44c6aa685795e16dccebfaf073dcc0062f2
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Betaprogramme von Adobe Commerce bieten Händlern die Möglichkeit, Zugriff auf Funktionen und Code einer Vorabversion zu erhalten, Feedback zu geben und die Zukunft von Adobe Commerce zu steuern. Es gibt zwei Arten von Beta-Programmen:
 
 - Öffentliche Betaversion: Ein öffentliches Betaprogramm steht allen Adobe Commerce-Kunden und -Partnern zur Verfügung
-- Private Bata: Ein privates Betaprogramm kann eine Genehmigung auf der Grundlage von Qualifikationskriterien verlangen, um teilzunehmen
+- Private Beta: Ein privates Beta-Programm kann eine Genehmigung auf der Grundlage von Qualifikationskriterien erfordern, um teilzunehmen
 
 >[!IMPORTANT]
 >
@@ -70,7 +70,7 @@ Jede Adobe Commerce Foundation Beta-Version enthält alle Änderungen, die bis z
 
 #### Namenskonvention und -zeitplan
 
-Adobe veröffentlicht zweimal jährlich Beta-Patches. Das erste Beta-Patch wird in der Regel drei Monate nach der allgemeinen Verfügbarkeit einer neuen Patch-Version der Kernanwendung veröffentlicht.
+Adobe veröffentlicht normalerweise zweimal jährlich Beta-Patches.
 
 Beta-Release-Pakete haben eine `-betaX` Suffix. Die Beta-Release-Pakete von Adobe Commerce 2.4.7 verwenden beispielsweise die folgende Benennungskonvention:
 
