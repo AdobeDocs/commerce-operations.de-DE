@@ -1,9 +1,9 @@
 ---
 user-guide-title: Versionsinformationen
-user-guide-description: Zugriff auf alle Versionsinformationen für Adobe Commerce-Patches und -Services an einem Ort.
+user-guide-description: Greifen Sie auf alle Versionsinformationen für Adobe Commerce-Patches und -Dienste an einem Ort zu.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: d0304f4060080f70c079fb571210cd015407f1cf
+source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 3%
@@ -16,7 +16,7 @@ ht-degree: 3%
 - [Neueste Version](latest.md)
 - Versionshinweise {#notes}
    - [Übersicht](release-notes/overview.md)
-   - [Abwärtsinkompatible Änderungen](backward-incompatible-changes.md)
+   - [Abwärtskompatible Änderungen](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [Übersicht](release-notes/commerce/overview.md)
       - [2,4,7](release-notes/commerce/2-4-7.md)
@@ -63,16 +63,16 @@ ht-degree: 3%
       - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
       - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
       - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
-- [Veröffentlichte Versionen](versions.md)
-- [Funktionen nach Version](features.md)
 - [Produktverfügbarkeit](product-availability.md)
 - [Beta-Versionen](beta.md)
-- Planung und Richtlinien {#planning}
+- Planung und Strategien {#planning}
    - [Lebenszyklusrichtlinie](lifecycle-policy.md)
    - [Versionierungsrichtlinie](versioning-policy.md)
    - [Veröffentlichungszeitplan](schedule.md)
-- Packages {#packages}
+- [Funktionen nach Version](features.md)
+- [Veröffentlichte Versionen](versions.md)
+- Pakete {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [B2B für Adobe Commerce](packages/adobe-commerce-b2b.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
