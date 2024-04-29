@@ -1,8 +1,9 @@
 ---
 title: Veröffentlichte Versionen
 description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce veröffentlicht wurden.
+recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-source-git-commit: 19d1c4a9c625f090ad5ddf0b7a8be20931238cea
+source-git-commit: 4bcc68890e16e51f0a84ed3d0d47b1f3dbbd52f0
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 0%
