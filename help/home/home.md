@@ -2,7 +2,7 @@
 title: Betriebshandbücher - Startseite
 description: Durchsuchen Sie einen Index der Systemadministration und der Dokumentation der operationellen Produkte von Adobe Commerce.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
+source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 20%
@@ -19,11 +19,11 @@ Verwenden Sie diese folgende Anleitung, um mehr über Systemadministrationskonze
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="../release/release-notes/overview.md">
       <img alt="Versionsinformationen" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>Versionsinformationen</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Versionsinformationen</strong></a>
       <p>Überprüfen Sie alle Versionsinformationen für Adobe Commerce-Patches und -Dienste.</p>
     </div>
   </td>
