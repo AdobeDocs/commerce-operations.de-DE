@@ -1,11 +1,11 @@
 ---
 user-guide-title: Betriebshandbücher
-user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Verwaltung Ihrer Adobe Commerce-Anwendung.
+user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihrer Adobe Commerce-Anwendung.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: 9527ce1983340c6438c33b1d07acf4b4b699ccc8
 workflow-type: tm+mt
 source-wordcount: '48'
-ht-degree: 4%
+ht-degree: 27%
 
 ---
 
