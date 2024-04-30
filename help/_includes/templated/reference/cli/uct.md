@@ -1,7 +1,7 @@
 ---
-source-git-commit: 68ea73d407dd3e6daf880a66de8ef4b7bbef2360
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,12 @@ Weitere Informationen zum Tool finden Sie unter [Übersicht](/help/upgrade/upgra
 
 ## `_complete`
 
-Interner Befehl zum Bereitstellen von Vorschlägen zur Shell-Fertigstellung
-
 ```bash
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
 ```
+
+Interner Befehl zum Bereitstellen von Vorschlägen zur Shell-Fertigstellung
+
 
 ### `--shell`, `-s`
 
@@ -56,7 +57,7 @@ Die Version des Fertigstellungsskripts
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -105,10 +106,40 @@ Interaktive Fragen stellen
 
 ## `completion`
 
-Dump des Shell-Fertigstellungsskripts
-
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
+```
+
+Dump des Shell-Fertigstellungsskripts
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently only bash completion is supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+
+Or dump the script to a local file and source it:
+
+    uct/bin/uct completion bash > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
 ```
 
 
@@ -126,7 +157,7 @@ Fertigstellungs-Debug-Protokoll verfolgen
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -175,10 +206,23 @@ Interaktive Fragen stellen
 
 ## `help`
 
-Hilfe für einen Befehl anzeigen
-
 ```bash
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Hilfe für einen Befehl anzeigen
+
+
+```
+The help command displays help for a given command:
+
+  uct/bin/uct help list
+
+You can also output the help in other formats by using the --format option:
+
+  uct/bin/uct help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -205,7 +249,7 @@ Ausgabe der Rohbefehl-Hilfe
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -254,10 +298,29 @@ Interaktive Fragen stellen
 
 ## `list`
 
-Listen-Befehle
-
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Listen-Befehle
+
+
+```
+The list command lists all commands:
+
+  uct/bin/uct list
+
+You can also display the commands for a specific namespace:
+
+  uct/bin/uct list test
+
+You can also output the information in other formats by using the --format option:
+
+  uct/bin/uct list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  uct/bin/uct list --raw
 ```
 
 
@@ -289,7 +352,7 @@ Das Ausgabeformat (txt, xml, json oder md)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -338,11 +401,12 @@ Interaktive Fragen stellen
 
 ## `refactor`
 
-Behebt Probleme, die automatisch behoben werden können. Der Code im angegebenen Pfad wird aktualisiert.
-
 ```bash
 bin/uct refactor <path>
 ```
+
+Behebt Probleme, die automatisch behoben werden können. Der Code im angegebenen Pfad wird aktualisiert.
+
 
 
 ### `path`
@@ -353,7 +417,7 @@ Pfad zum Beheben von Problemen in.
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -402,11 +466,12 @@ Interaktive Fragen stellen
 
 ## `core:code:changes`
 
-Das Upgrade-Kompatibilitätstool ist ein Befehlszeilenwerkzeug, das eine Adobe Commerce-Instanz anhand einer bestimmten Version prüft, indem alle darin installierten Nicht-Adobe Commerce-Module analysiert werden. Gibt eine Liste mit Fehlern und Warnungen zurück, die Sie vor der Aktualisierung auf eine neue Version des Adobe Commerce-Codes beheben müssen.
-
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
+
+Das Upgrade-Kompatibilitätstool ist ein Befehlszeilenwerkzeug, das eine Adobe Commerce-Instanz anhand einer bestimmten Version prüft, indem alle darin installierten Nicht-Adobe Commerce-Module analysiert werden. Gibt eine Liste mit Fehlern und Warnungen zurück, die Sie vor der Aktualisierung auf eine neue Version des Adobe Commerce-Codes beheben müssen.
+
 
 
 ### `dir`
@@ -428,7 +493,7 @@ Pfad der Datei, in die die Ausgabe exportiert wird (JSON-Format)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -477,11 +542,12 @@ Interaktive Fragen stellen
 
 ## `dbschema:diff`
 
-Zulassen der Auflistung von Adobe Commerce DB-Schemaunterschieden zwischen zwei ausgewählten Versionen. Verfügbare Versionen: 2.3.0 | 2.3.1 | 2,3,2 | 2.3.2-p2 | 2,3,3 | 2.3.3-p1 | 2,3,4 | 2.3.4-p1 | 2.3.4-p2 | 2,3,5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-p1 | 2,4,1 | 2.4.1-p1 | 2,4,2 | 2.4.2-p1 | 2.4.2-p2 | 2,4,3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2,4,6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2,4,7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
-
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
 ```
+
+Zulassen der Auflistung von Adobe Commerce DB-Schemaunterschieden zwischen zwei ausgewählten Versionen. Verfügbare Versionen: 2.3.0 | 2.3.1 | 2,3,2 | 2.3.2-p2 | 2,3,3 | 2.3.3-p1 | 2,3,4 | 2.3.4-p1 | 2.3.4-p2 | 2,3,5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-p1 | 2,4,1 | 2.4.1-p1 | 2,4,2 | 2.4.2-p1 | 2.4.2-p2 | 2,4,3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2,4,6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2,4,7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
+
 
 
 ### `current-version`
@@ -498,7 +564,7 @@ Zielversion (z. B. 2.4.5).
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -547,11 +613,12 @@ Interaktive Fragen stellen
 
 ## `graphql:compare`
 
-Überprüfung der Kompatibilität mit GraphQL-Schemas
-
 ```bash
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
+
+Überprüfung der Kompatibilität mit GraphQL-Schemas
+
 
 
 ### `schema1`
@@ -574,7 +641,7 @@ Pfad der Datei, in die die Ausgabe exportiert wird (JSON-Format)
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -623,11 +690,12 @@ Interaktive Fragen stellen
 
 ## `upgrade:check`
 
-Das Upgrade-Kompatibilitätstool ist ein Befehlszeilen-Tool, das eine benutzerdefinierte Adobe Commerce-Instanz anhand einer bestimmten Version prüft, indem alle darin installierten Module analysiert werden. Gibt eine Liste mit Fehlern und Warnungen zurück, die behoben werden müssen, bevor auf die neueste Version von Adobe Commerce aktualisiert wird.
-
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
+
+Das Upgrade-Kompatibilitätstool ist ein Befehlszeilen-Tool, das eine benutzerdefinierte Adobe Commerce-Instanz anhand einer bestimmten Version prüft, indem alle darin installierten Module analysiert werden. Gibt eine Liste mit Fehlern und Warnungen zurück, die behoben werden müssen, bevor auf die neueste Version von Adobe Commerce aktualisiert wird.
+
 
 
 ### `dir`
@@ -682,7 +750,7 @@ Ausführungskontext. Diese Option dient Integrationszwecken und hat keine Auswir
 
 ### `--help`, `-h`
 
-Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl erhält, wird die Hilfe zur Anzeige des \&lt;info>list\&lt;/info> command
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert

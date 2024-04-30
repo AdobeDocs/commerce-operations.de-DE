@@ -1,7 +1,7 @@
 ---
-source-git-commit: 755ea50a75924cc16f690ff888367abd305565e9
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '18031'
+source-wordcount: '17795'
 ht-degree: 0%
 
 ---
@@ -12,29 +12,30 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **Version**: 2.4.7
 
-Diese Referenz enthält 116 Befehle, die über die `bin/magento` Befehlszeilen-Tool.
-Die anfängliche Liste wird automatisch mit dem `bin/magento list` Befehl bei Magento Open Source.
-Verwenden des [„Hinzufügen von CLI-Befehlen“](https://developer.adobe.com/commerce/php/development/cli-commands/) Anleitung zum Hinzufügen eines benutzerdefinierten CLI-Befehls.
+Diese Referenz enthält 116 Befehle, die über das `bin/magento` Befehlszeilen-Tool.
+Die anfängliche Liste wird automatisch mit der Variablen `bin/magento list` -Befehl in der Magento Open Source.
+Verwenden Sie die [&quot;CLI-Befehle hinzufügen&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) Anleitung zum Hinzufügen eines benutzerdefinierten CLI-Befehls.
 
 >[!NOTE]
 >
->Sie können anrufen `bin/magento` CLI-Befehle mit Tastaturbefehlen anstelle des vollständigen Befehlsnamens. Sie können beispielsweise aufrufen. `bin/magento setup:upgrade` Verwenden von `bin/magento s:up`, `bin/magento s:upg`. Siehe [Shortcut-Syntax](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) , um zu verstehen, wie Tastaturbefehle mit beliebigen CLI-Befehlen verwendet werden.
+>Sie können `bin/magento` CLI-Befehle mit Shortcuts anstelle des vollständigen Befehlsnamens. Beispielsweise können Sie `bin/magento setup:upgrade` using `bin/magento s:up`, `bin/magento s:upg`. Siehe [Kurzsyntax](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) , um zu verstehen, wie Sie Tastaturbefehle mit jedem CLI-Befehl verwenden.
 
 >[!NOTE]
 >
->Dieser Verweis wird aus der Anwendungs-Code-Basis generiert. Um den Inhalt zu ändern, können Sie den Quell-Code für die entsprechende Befehlsimplementierung in der [Codebase](https://github.com/magento) Repository speichern und Ihre Änderungen zur Überprüfung übermitteln. Eine andere Möglichkeit besteht darin, _Geben Sie uns Feedback_ (finden Sie den Link oben rechts). Richtlinien für Beiträge finden Sie unter [Code-Beiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Diese Referenz wird aus der Anwendungs-Codebase generiert. Um den Inhalt zu ändern, können Sie den Quellcode für die entsprechende Befehlsimplementierung im [codebase](https://github.com/magento) Repository erstellen und Ihre Änderungen zur Überprüfung einreichen. Eine andere Möglichkeit ist, _Feedback geben_ (finden Sie den Link oben rechts). Beitragsrichtlinien finden Sie unter [Codebeiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
-
-Interner Befehl zur Bereitstellung von Shell-Fertigstellungsvorschlägen
 
 ```bash
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
+Interner Befehl zum Bereitstellen von Vorschlägen zur Shell-Fertigstellung
+
+
 ### `--shell`, `-s`
 
-Der Schalentyp („bash„, „fish„, „zsh„)
+Der Shell-Typ (&quot;bash&quot;, &quot;fish&quot;, &quot;zsh&quot;)
 
 - Erfordert einen Wert
 
@@ -47,25 +48,25 @@ Ein Array von Eingabe-Token (z. B. COMP_WORDS oder argv)
 
 ### `--current`, `-c`
 
-Der Index des „Eingabe„-Arrays, in dem sich der Cursor befindet (z. B. COMP_CWORD)
+Der Index des &quot;input&quot;-Arrays, in dem sich der Cursor befindet (z. B. COMP_CWORD)
 
 - Erfordert einen Wert
 
 ### `--api-version`, `-a`
 
-Die API-Version des Abschlussskripts
+Die API-Version des Fertigstellungsskripts
 
 - Erfordert einen Wert
 
 ### `--symfony`, `-S`
 
-Veraltet
+veraltet
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -79,7 +80,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -99,14 +100,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -114,28 +115,58 @@ Keine interaktiven Fragen stellen
 
 ## `completion`
 
-Dump des Shell-Fertigstellungsskripts
-
 ```bash
 bin/magento completion [--debug] [--] [<shell>]
+```
+
+Dump des Shell-Fertigstellungsskripts
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently, bash, fish, zsh completion are supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    bin/magento completion  | sudo tee /etc/bash_completion.d/magento
+
+Or dump the script to a local file and source it:
+
+    bin/magento completion  > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/www/html/magento2/bin/magento completion )"
 ```
 
 
 ### `shell`
 
-Der Shell-Typ (z. B. „bash„), der Wert der „$SHELL„-Env-Var wird verwendet, wenn dieser nicht angegeben wird
+Der Shell-Typ (z. B. &quot;bash&quot;), der Wert der env var &quot;$SHELL&quot; wird verwendet, wenn dies nicht angegeben wird.
 
 
 ### `--debug`
 
-Verfolgen Sie den Abschluss des Debug-Protokolls
+Fertigstellungs-Debug-Protokoll verfolgen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -149,7 +180,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -169,14 +200,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -184,10 +215,23 @@ Keine interaktiven Fragen stellen
 
 ## `help`
 
-Anzeigen der Hilfe zu einem Befehl
-
 ```bash
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Hilfe für einen Befehl anzeigen
+
+
+```
+The help command displays help for a given command:
+
+  bin/magento help list
+
+You can also output the help in other formats by using the --format option:
+
+  bin/magento help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -207,14 +251,14 @@ Das Ausgabeformat (txt, xml, json oder md)
 
 ### `--raw`
 
-So geben Sie die Raw-Befehlshilfe aus
+Ausgabe der Rohbefehl-Hilfe
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -228,7 +272,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -248,14 +292,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -263,10 +307,29 @@ Keine interaktiven Fragen stellen
 
 ## `list`
 
-Befehle auflisten
-
 ```bash
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Listen-Befehle
+
+
+```
+The list command lists all commands:
+
+  bin/magento list
+
+You can also display the commands for a specific namespace:
+
+  bin/magento list test
+
+You can also output the information in other formats by using the --format option:
+
+  bin/magento list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  bin/magento list --raw
 ```
 
 
@@ -277,7 +340,7 @@ Der Namespace-Name
 
 ### `--raw`
 
-So geben Sie die unbearbeitete Befehlsliste aus
+So geben Sie die unformatierte Befehlsliste aus
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -291,14 +354,14 @@ Das Ausgabeformat (txt, xml, json oder md)
 
 ### `--short`
 
-So überspringen Sie die Beschreibung der Argumente von Befehlen
+Überspringen der Beschreibung der Befehlsargumente
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -312,7 +375,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -332,14 +395,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -347,15 +410,16 @@ Keine interaktiven Fragen stellen
 
 ## `admin:adobe-ims:disable`
 
-Adobe IMS-Modul deaktivieren
-
 ```bash
 bin/magento admin:adobe-ims:disable
 ```
 
+Deaktivieren des Adobe IMS-Moduls
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -369,7 +433,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -389,14 +453,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -404,39 +468,40 @@ Keine interaktiven Fragen stellen
 
 ## `admin:adobe-ims:enable`
 
-Aktivieren Sie das Adobe IMS-Modul.
-
 ```bash
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
 
+Aktivieren Sie das Adobe IMS-Modul.
+
+
 ### `--organization-id`, `-o`
 
-Festlegen der Organisations-ID für die Adobe IMS-Konfiguration. Erforderlich bei Aktivierung des Moduls
+Legen Sie die Organisations-ID für die Adobe IMS-Konfiguration fest. Erforderlich beim Aktivieren des Moduls
 
 - Akzeptiert einen Wert
 
 ### `--client-id`, `-c`
 
-Legen Sie die Client-ID für die Adobe IMS-Konfiguration fest. Erforderlich bei Aktivierung des Moduls
+Legen Sie die Client-ID für die Adobe IMS-Konfiguration fest. Erforderlich beim Aktivieren des Moduls
 
 - Akzeptiert einen Wert
 
 ### `--client-secret`, `-s`
 
-Legen Sie das Client-Geheimnis für die Adobe IMS-Konfiguration fest. Erforderlich bei Aktivierung des Moduls
+Legen Sie den Client-Geheimnis für die Adobe IMS-Konfiguration fest. Erforderlich beim Aktivieren des Moduls
 
 - Akzeptiert einen Wert
 
 ### `--2fa`, `-t`
 
-Überprüfen Sie, ob 2FA für die Organisation in Adobe Admin Console aktiviert ist. Erforderlich bei Aktivierung des Moduls
+Überprüfen Sie, ob 2FA für die Organisation in Adobe Admin Console aktiviert ist. Erforderlich beim Aktivieren des Moduls
 
 - Akzeptiert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -450,7 +515,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -470,14 +535,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -485,15 +550,16 @@ Keine interaktiven Fragen stellen
 
 ## `admin:adobe-ims:info`
 
-Informationen zur Adobe IMS-Modulkonfiguration
-
 ```bash
 bin/magento admin:adobe-ims:info
 ```
 
+Informationen zur Adobe IMS-Modulkonfiguration
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -507,7 +573,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -527,14 +593,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -542,15 +608,16 @@ Keine interaktiven Fragen stellen
 
 ## `admin:adobe-ims:status`
 
-Status des Adobe IMS-Moduls
-
 ```bash
 bin/magento admin:adobe-ims:status
 ```
 
+Status des Adobe IMS-Moduls
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -564,7 +631,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -584,14 +651,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -599,11 +666,12 @@ Keine interaktiven Fragen stellen
 
 ## `admin:user:create`
 
-Erstellt einen Administrator
-
 ```bash
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Erstellt einen Administrator
+
 
 ### `--admin-user`
 
@@ -637,13 +705,13 @@ bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -657,7 +725,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -677,14 +745,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -692,22 +760,29 @@ Keine interaktiven Fragen stellen
 
 ## `admin:user:unlock`
 
-Admin-Konto entsperren
-
 ```bash
 bin/magento admin:user:unlock <username>
+```
+
+Admin-Konto entsperren
+
+
+```
+This command unlocks an admin account by its username.
+To unlock:
+      bin/magento admin:user:unlock username
 ```
 
 
 ### `username`
 
-Der zu entsperrende Admin-Benutzername
+Der Benutzername des Administrators zum Entsperren
 
 - Erforderlich
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -721,7 +796,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -741,14 +816,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -756,16 +831,17 @@ Keine interaktiven Fragen stellen
 
 ## `app:config:dump`
 
-Erstellen eines Dump der Anwendung
-
 ```bash
 bin/magento app:config:dump [<config-types>...]
 ```
 
+Erstellen einer Sicherungskopie der Anwendung
+
+
 
 ### `config-types`
 
-Durch Leerzeichen getrennte Liste von Konfigurationstypen oder Weglassen, um alle zu sichern [Bereiche, System, Themen, i18n]
+Durch Leerzeichen getrennte Liste von Konfigurationstypen oder Auslassungen zum Ablegen aller [Bereiche, System, Designs, i18n]
 
 - Standard: `[]`
 
@@ -773,7 +849,7 @@ Durch Leerzeichen getrennte Liste von Konfigurationstypen oder Weglassen, um all
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -787,7 +863,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -807,14 +883,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -822,15 +898,16 @@ Keine interaktiven Fragen stellen
 
 ## `app:config:import`
 
-Importieren von Daten aus freigegebenen Konfigurationsdateien in den entsprechenden Datenspeicher
-
 ```bash
 bin/magento app:config:import
 ```
 
+Importieren von Daten aus freigegebenen Konfigurationsdateien in den entsprechenden Datenspeicher
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -844,7 +921,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -864,14 +941,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -879,15 +956,16 @@ Keine interaktiven Fragen stellen
 
 ## `app:config:status`
 
-Prüft, ob die Konfigurationsweitergabe eine Aktualisierung erfordert
-
 ```bash
 bin/magento app:config:status
 ```
 
+Prüft, ob für die Konfigurationsübertragung eine Aktualisierung erforderlich ist
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -901,7 +979,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -921,14 +999,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -936,15 +1014,16 @@ Keine interaktiven Fragen stellen
 
 ## `braintree:migrate`
 
-Migrieren gespeicherter Karten aus einer Magento 1-Datenbank
-
 ```bash
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
 
+Migrieren gespeicherter Karten aus einer Magento 1-Datenbank
+
+
 ### `--host`
 
-Hostname/IP Port ist optional
+Hostname/IP. Port ist optional
 
 - Erfordert einen Wert
 
@@ -956,7 +1035,7 @@ Datenbankname
 
 ### `--username`
 
-Benutzername der Datenbank. Muss Lesezugriff haben
+Datenbank-Benutzername. Muss Lesezugriff haben
 
 - Erfordert einen Wert
 
@@ -968,7 +1047,7 @@ Kennwort
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -982,7 +1061,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1002,14 +1081,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1017,16 +1096,17 @@ Keine interaktiven Fragen stellen
 
 ## `cache:clean`
 
-Löscht den/die Cache-Typ(en)
-
 ```bash
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
+Bereinigt Cache-Typen
+
+
 
 ### `types`
 
-Eine durch Leerzeichen getrennte Liste von Cache-Typen oder eine Auslassung, um sie auf alle Cache-Typen anzuwenden.
+Eine durch Leerzeichen getrennte Liste von Cache-Typen oder das Auslassen, das auf alle Cache-Typen angewendet werden soll.
 
 - Standard: `[]`
 
@@ -1040,7 +1120,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1054,7 +1134,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1074,14 +1154,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1089,16 +1169,17 @@ Keine interaktiven Fragen stellen
 
 ## `cache:disable`
 
-Deaktiviert Cache-Typ(en)
-
 ```bash
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
+Deaktiviert Cache-Typen
+
+
 
 ### `types`
 
-Eine durch Leerzeichen getrennte Liste von Cache-Typen oder eine Auslassung, um sie auf alle Cache-Typen anzuwenden.
+Eine durch Leerzeichen getrennte Liste von Cache-Typen oder das Auslassen, das auf alle Cache-Typen angewendet werden soll.
 
 - Standard: `[]`
 
@@ -1112,7 +1193,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1126,7 +1207,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1146,14 +1227,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1161,16 +1242,17 @@ Keine interaktiven Fragen stellen
 
 ## `cache:enable`
 
-Aktiviert Cache-Typ(en)
-
 ```bash
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
+Aktiviert Cache-Typen
+
+
 
 ### `types`
 
-Eine durch Leerzeichen getrennte Liste von Cache-Typen oder eine Auslassung, um sie auf alle Cache-Typen anzuwenden.
+Eine durch Leerzeichen getrennte Liste von Cache-Typen oder das Auslassen, das auf alle Cache-Typen angewendet werden soll.
 
 - Standard: `[]`
 
@@ -1184,7 +1266,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1198,7 +1280,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1218,14 +1300,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1233,16 +1315,17 @@ Keine interaktiven Fragen stellen
 
 ## `cache:flush`
 
-Leert den von Cache-Typen verwendeten Cache-Speicher
-
 ```bash
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
+Leert Cache-Speicher, der von Cache-Typen verwendet wird
+
+
 
 ### `types`
 
-Eine durch Leerzeichen getrennte Liste von Cache-Typen oder eine Auslassung, um sie auf alle Cache-Typen anzuwenden.
+Eine durch Leerzeichen getrennte Liste von Cache-Typen oder das Auslassen, das auf alle Cache-Typen angewendet werden soll.
 
 - Standard: `[]`
 
@@ -1256,7 +1339,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1270,7 +1353,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1290,14 +1373,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1305,11 +1388,12 @@ Keine interaktiven Fragen stellen
 
 ## `cache:status`
 
-Überprüft den Cache-Status
-
 ```bash
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
+
+Überprüft den Cache-Status
+
 
 ### `--bootstrap`
 
@@ -1319,7 +1403,7 @@ Parameter des Bootstrap hinzufügen oder überschreiben
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1333,7 +1417,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1353,14 +1437,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1368,29 +1452,30 @@ Keine interaktiven Fragen stellen
 
 ## `catalog:images:resize`
 
-Erstellt skalierte Produktbilder.
-
 ```bash
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
 
+Erstellt Größenangepasste Produktbilder
+
+
 ### `--async`, `-a`
 
-Ändern der Bildgröße im asynchronen Modus
+Bildgröße im asynchronen Modus ändern
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--skip_hidden_images`
 
-Keine Bilder verarbeiten, die auf der Produktseite als ausgeblendet markiert sind
+Verarbeiten Sie keine Bilder, die auf der Produktseite als ausgeblendet markiert sind.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1404,7 +1489,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1424,14 +1509,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1439,15 +1524,16 @@ Keine interaktiven Fragen stellen
 
 ## `catalog:product:attributes:cleanup`
 
-Entfernt nicht verwendete Produktattribute.
-
 ```bash
 bin/magento catalog:product:attributes:cleanup
 ```
 
+Entfernt nicht verwendete Produktattribute.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1461,7 +1547,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1481,14 +1567,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1496,22 +1582,23 @@ Keine interaktiven Fragen stellen
 
 ## `cms:wysiwyg:restrict`
 
-Festlegen, ob die Validierung des Benutzerinhalts durch HTML erzwungen oder stattdessen eine Warnung angezeigt werden soll
-
 ```bash
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
 
+Festlegen, ob die Überprüfung von HTML-Inhalten durch den Benutzer erzwungen oder stattdessen eine Warnung angezeigt werden soll
+
+
 
 ### `restrict`
 
-J\n
+y\n
 
 - Erforderlich
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1525,7 +1612,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1545,14 +1632,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1560,16 +1647,17 @@ Keine interaktiven Fragen stellen
 
 ## `config:sensitive:set`
 
-Festlegen sensibler Konfigurationswerte
-
 ```bash
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
 
+Vertrauliche Konfigurationswerte festlegen
+
+
 
 ### `path`
 
-Konfigurationspfad, z. B. group/section/field_name
+Konfigurationspfad zum Beispiel für group/section/field_name
 
 
 ### `value`
@@ -1579,28 +1667,28 @@ Konfigurationswert
 
 ### `--interactive`, `-i`
 
-Interaktiven Modus aktivieren, um alle sensiblen Variablen festzulegen
+Aktivieren Sie den interaktiven Modus zum Festlegen aller sensiblen Variablen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--scope`
 
-Konfigurationsbereich, falls nicht festgelegt, „Standard“ verwenden
+Konfigurationsbereich, falls nicht festgelegt, &quot;Standard&quot;verwenden
 
 - Standard: `default`
 - Akzeptiert einen Wert
 
 ### `--scope-code`
 
-Code-Bereich für Konfiguration, standardmäßig leere Zeichenfolge
+Code für die Konfiguration, standardmäßig leere Zeichenfolge
 
 - Standard: &quot;
 - Akzeptiert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1614,7 +1702,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1634,14 +1722,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1649,16 +1737,17 @@ Keine interaktiven Fragen stellen
 
 ## `config:set`
 
-Systemkonfiguration ändern
-
 ```bash
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
 
+Systemkonfiguration ändern
+
+
 
 ### `path`
 
-Konfigurationspfad im Formatabschnitt/group/field_name
+Konfigurationspfad im Format &quot;section/group/field_name&quot;
 
 - Erforderlich
 
@@ -1670,27 +1759,27 @@ Konfigurationswert
 
 ### `--scope`
 
-Konfigurationsumfang (Standard, Website oder Store)
+Konfigurationsbereich (Standard, Website oder Store)
 
 - Standard: `default`
 - Erfordert einen Wert
 
 ### `--scope-code`
 
-Bereichscode (nur erforderlich, wenn der Bereich nicht „Standard“ ist)
+Code des Umfangs (nur erforderlich, wenn der Umfang nicht &quot;Standard&quot;ist)
 
 - Erfordert einen Wert
 
 ### `--lock-env`, `-e`
 
-Sperrwert, der eine Änderung im Admin verhindert (wird in app/etc/env.php gespeichert)
+Sperrwert, der Änderungen im Admin verhindert (wird unter app/etc/env.php gespeichert)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--lock-config`, `-c`
 
-Wert sperren und für andere Installationen freigeben, Änderungen im Admin verhindern (wird in app/etc/config.php gespeichert)
+Sperren und Freigeben von Werten für andere Installationen verhindern Änderungen im Admin (wird unter app/etc/config.php gespeichert)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1704,7 +1793,7 @@ Veraltet, verwenden Sie stattdessen die Option —lock-env .
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1718,7 +1807,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1738,14 +1827,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1753,11 +1842,12 @@ Keine interaktiven Fragen stellen
 
 ## `config:show`
 
-Zeigt den Konfigurationswert für den angegebenen Pfad an. Wenn kein Pfad angegeben ist, werden alle gespeicherten Werte angezeigt
-
 ```bash
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
+
+Zeigt den Konfigurationswert für den angegebenen Pfad an. Wenn kein Pfad angegeben ist, werden alle gespeicherten Werte angezeigt
+
 
 
 ### `path`
@@ -1767,21 +1857,21 @@ Konfigurationspfad, z. B. section_id/group_id/field_id
 
 ### `--scope`
 
-Konfigurationsbereich: Wenn kein Bereich angegeben ist, wird der Standardbereich verwendet.
+Konfigurationsbereich, falls nicht angegeben, wird der Standardbereich verwendet
 
 - Standard: `default`
 - Akzeptiert einen Wert
 
 ### `--scope-code`
 
-Berechnung des Umfangs (nur erforderlich, wenn der Umfang nicht `default`)
+Scope-Code (nur erforderlich, wenn der Bereich nicht `default`)
 
 - Standard: &quot;
 - Akzeptiert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1795,7 +1885,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1815,14 +1905,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1830,11 +1920,12 @@ Keine interaktiven Fragen stellen
 
 ## `cron:install`
 
-Erzeugt und installiert crontab für den aktuellen Benutzer
-
 ```bash
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
+
+Generiert und installiert die Crontab für den aktuellen Benutzer
+
 
 ### `--force`, `-f`
 
@@ -1845,14 +1936,14 @@ Installationsaufgaben erzwingen
 
 ### `--non-optional`, `-d`
 
-Nur die nicht optionalen (Standard-)Aufgaben installieren
+Installieren Sie nur die nicht optionalen (Standard-) Aufgaben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1866,7 +1957,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1886,14 +1977,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1901,15 +1992,16 @@ Keine interaktiven Fragen stellen
 
 ## `cron:remove`
 
-Entfernt Aufgaben aus der crontab
-
 ```bash
 bin/magento cron:remove
 ```
 
+Entfernt Aufgaben aus der Registerkarte &quot;Crontab&quot;
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1923,7 +2015,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1943,14 +2035,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1958,34 +2050,35 @@ Keine interaktiven Fragen stellen
 
 ## `cron:run`
 
-Führt Aufträge nach Zeitplan aus
-
 ```bash
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
 
+Führt Aufträge nach Zeitplan aus
+
+
 ### `--group`
 
-Aufträge nur von der angegebenen Gruppe ausführen
+Ausführen von Aufträgen nur aus der angegebenen Gruppe
 
 - Erfordert einen Wert
 
 ### `--exclude-group`
 
-Ausschließen von Aufträgen aus der angegebenen Gruppe
+Aufträge aus der angegebenen Gruppe ausschließen
 
 - Standard: `[]`
 - Akzeptiert mehrere Werte
 
 ### `--bootstrap`
 
-Parameter des Bootstrap hinzufügen oder überschreiben
+Hinzufügen oder Überschreiben von Parametern des Bootstrap
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -1999,7 +2092,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2019,14 +2112,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2034,15 +2127,16 @@ Keine interaktiven Fragen stellen
 
 ## `customer:hash:upgrade`
 
-Aktualisieren des Hash-Werts des Kunden gemäß dem neuesten Algorithmus
-
 ```bash
 bin/magento customer:hash:upgrade
 ```
 
+Hash des Kunden gemäß dem neuesten Algorithmus aktualisieren
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2056,7 +2150,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2076,14 +2170,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2091,29 +2185,30 @@ Keine interaktiven Fragen stellen
 
 ## `deploy:mode:set`
 
-Festlegen des Anwendungsmodus
-
 ```bash
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
 
+Anwendungsmodus festlegen.
+
+
 
 ### `mode`
 
-Der festzulegende Anwendungsmodus. Verfügbare Optionen sind „Entwickler“ oder „Produktion“
+Der festzulegende Anwendungsmodus. Verfügbare Optionen sind &quot;Entwickler&quot;oder &quot;Produktion&quot;
 
 - Erforderlich
 
 ### `--skip-compilation`, `-s`
 
-Überspringt das Löschen und die Neuerstellung von statischen Inhalten (generierter Code, vorverarbeitetes CSS und Assets in pub/static/)
+Überspringt das Löschen und Neugenerieren statischer Inhalte (generierter Code, vorverarbeitetes CSS und Assets in pub/static/)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2127,7 +2222,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2147,14 +2242,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2162,15 +2257,16 @@ Keine interaktiven Fragen stellen
 
 ## `deploy:mode:show`
 
-Zeigt den aktuellen Anwendungsmodus an.
-
 ```bash
 bin/magento deploy:mode:show
 ```
 
+Zeigt den aktuellen Anwendungsmodus an.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2184,7 +2280,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2204,14 +2300,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2219,11 +2315,12 @@ Keine interaktiven Fragen stellen
 
 ## `dev:di:info`
 
-Enthält Informationen zur Konfiguration der Injektion von Abhängigkeiten für den Befehl.
-
 ```bash
 bin/magento dev:di:info <class>
 ```
+
+Enthält Informationen zur Konfiguration der Abhängigkeitsinjizierung für den Befehl.
+
 
 
 ### `class`
@@ -2234,7 +2331,7 @@ Klassenname
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2248,7 +2345,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2268,14 +2365,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2283,15 +2380,16 @@ Keine interaktiven Fragen stellen
 
 ## `dev:email:newsletter-compatibility-check`
 
-Durchsucht Newsletter-Vorlagen nach potenziellen Problemen mit der Variablennutzungskompatibilität
-
 ```bash
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
+Überprüft Newsletter-Vorlagen auf potenzielle Kompatibilitätsprobleme bei der Variablennutzung
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2305,7 +2403,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2325,14 +2423,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2340,15 +2438,16 @@ Keine interaktiven Fragen stellen
 
 ## `dev:email:override-compatibility-check`
 
-Überschreibungen von E-Mail-Vorlagen auf mögliche Kompatibilitätsprobleme bei der Variablennutzung überprüfen
-
 ```bash
 bin/magento dev:email:override-compatibility-check
 ```
 
+Überschreibungen von E-Mail-Vorlagen auf potenzielle Kompatibilitätsprobleme bei der Variablennutzung scannen
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2362,7 +2461,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2382,14 +2481,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2397,15 +2496,16 @@ Keine interaktiven Fragen stellen
 
 ## `dev:profiler:disable`
 
-Deaktivieren Sie den Profiler.
-
 ```bash
 bin/magento dev:profiler:disable
 ```
 
+Deaktivieren Sie den Profiler.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2419,7 +2519,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2439,14 +2539,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2454,11 +2554,12 @@ Keine interaktiven Fragen stellen
 
 ## `dev:profiler:enable`
 
-Aktivieren Sie den Profiler.
-
 ```bash
 bin/magento dev:profiler:enable [<type>]
 ```
+
+Aktivieren Sie den Profiler.
+
 
 
 ### `type`
@@ -2468,7 +2569,7 @@ Profiltyp
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2482,7 +2583,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2502,14 +2603,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2517,15 +2618,16 @@ Keine interaktiven Fragen stellen
 
 ## `dev:query-log:disable`
 
-DB-Abfrageprotokollierung deaktivieren
-
 ```bash
 bin/magento dev:query-log:disable
 ```
 
+DB-Abfrageprotokollierung deaktivieren
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2539,7 +2641,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2559,14 +2661,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2574,36 +2676,37 @@ Keine interaktiven Fragen stellen
 
 ## `dev:query-log:enable`
 
-DB-Abfrageprotokollierung aktivieren
-
 ```bash
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
 
+Aktivieren der DB-Abfrageprotokollierung
+
+
 ### `--include-all-queries`
 
-Alle Abfragen protokollieren. [true\|false]
+Protokollieren Sie alle Abfragen. [true\|false]
 
 - Standard: `true`
 - Akzeptiert einen Wert
 
 ### `--query-time-threshold`
 
-Schwellenwerte für Abfragezeiten.
+Zeitschwellen der Abfrage.
 
 - Standard: `0.001`
 - Akzeptiert einen Wert
 
 ### `--include-call-stack`
 
-Aufrufliste einschließen. [true\|false]
+Include call stack. [true\|false]
 
 - Standard: `true`
 - Akzeptiert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2617,7 +2720,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2637,14 +2740,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2652,16 +2755,17 @@ Keine interaktiven Fragen stellen
 
 ## `dev:source-theme:deploy`
 
-Sammelt Quelldateien für Designs und veröffentlicht diese.
-
 ```bash
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
 
+Erfasst Quelldateien für das Design und veröffentlicht sie.
+
+
 
 ### `file`
 
-Dateien zur Vorab-Bearbeitung (Datei sollte ohne Erweiterung angegeben werden)
+Vorab zu verarbeitende Dateien (Datei sollte ohne Erweiterung angegeben werden)
 
 - Standard: `css/styles-mcss/styles-l`
 
@@ -2669,7 +2773,7 @@ Dateien zur Vorab-Bearbeitung (Datei sollte ohne Erweiterung angegeben werden)
 
 ### `--type`
 
-Typ der Quelldateien: [weniger]
+Typ der Quelldateien: [less]
 
 - Standard: `less`
 - Erfordert einen Wert
@@ -2683,7 +2787,7 @@ Gebietsschema: [en_US]
 
 ### `--area`
 
-Bereich: [frontend\|adminHTML]
+Bereich: [frontend\|adminhtml]
 
 - Standard: `frontend`
 - Erfordert einen Wert
@@ -2697,7 +2801,7 @@ Design: [Anbieter/Design]
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2711,7 +2815,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2731,14 +2835,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2746,15 +2850,16 @@ Keine interaktiven Fragen stellen
 
 ## `dev:template-hints:disable`
 
-Deaktivieren Sie Hinweise zu Frontend-Vorlagen. Möglicherweise ist eine Cache-Leerung erforderlich.
-
 ```bash
 bin/magento dev:template-hints:disable
 ```
 
+Deaktivierung von Frontend-Vorlagenhinweisen. Möglicherweise ist eine Cache-Leerung erforderlich.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2768,7 +2873,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2788,14 +2893,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2803,15 +2908,16 @@ Keine interaktiven Fragen stellen
 
 ## `dev:template-hints:enable`
 
-Aktivieren Sie Hinweise zu Frontend-Vorlagen. Möglicherweise ist eine Cache-Leerung erforderlich.
-
 ```bash
 bin/magento dev:template-hints:enable
 ```
 
+Aktivieren Sie Frontend-Vorlagenhinweise. Möglicherweise ist eine Cache-Leerung erforderlich.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2825,7 +2931,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2845,14 +2951,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2860,15 +2966,16 @@ Keine interaktiven Fragen stellen
 
 ## `dev:template-hints:status`
 
-Status der Hinweise zu Frontend-Vorlagen anzeigen.
-
 ```bash
 bin/magento dev:template-hints:status
 ```
 
+Status der Frontend-Vorlagenhinweise anzeigen.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2882,7 +2989,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2902,14 +3009,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2917,30 +3024,31 @@ Keine interaktiven Fragen stellen
 
 ## `dev:tests:run`
 
-Führt Tests durch
-
 ```bash
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
 
+Führt Tests aus
+
+
 
 ### `type`
 
-Typ des auszuführenden Tests. Verfügbare Typen: all, unit, integration, integration-all, static, static-all, integrity, legacy, default
+Typ des auszuführenden Tests. Verfügbare Typen: all, unit, integration, integration, static, static, static all, integrität, veraltet, Standard
 
 - Standard: `default`
 
 
 ### `--arguments`, `-c`
 
-Zusätzliche Argumente für PHPUnit. Beispiel: „-c&#39;—filter=MyTest&#39;“ (keine Leerzeichen)
+Zusätzliche Argumente für PHPUnit. Beispiel: &quot;-c&#39;—filter=MyTest&#39;&quot; (keine Leerzeichen)
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2954,7 +3062,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2974,14 +3082,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -2989,29 +3097,30 @@ Keine interaktiven Fragen stellen
 
 ## `dev:urn-catalog:generate`
 
-Generiert den Katalog der URNs zu *.xsd-Zuordnungen für die IDE zum Hervorheben von XML.
-
 ```bash
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
 
+Generiert den Katalog von URNs zu *.xsd-Zuordnungen, damit die IDE XML hervorhebt.
+
+
 
 ### `path`
 
-Pfad zur auszugebenden Datei des Katalogs. Verwenden Sie für PhpStorm .idea/misc.xml
+Pfad zur Datei, um den Katalog auszugeben. Verwenden Sie für PhpStorm .idea/misc.xml
 
 - Erforderlich
 
 ### `--ide`
 
-Format, in dem der Katalog generiert wird. Unterstützt: [PhpStorm, VSCode]
+Format, in dem der Katalog erstellt wird. Unterstützt: [phpstorm, vscode]
 
 - Standard: `phpstorm`
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3025,7 +3134,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3045,14 +3154,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3060,16 +3169,17 @@ Keine interaktiven Fragen stellen
 
 ## `dev:xml:convert`
 
-Konvertiert eine XML-Datei mithilfe von XSL-Stylesheets
-
 ```bash
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
 
+Konvertiert XML-Dateien mit XSL-Stylesheets
+
+
 
 ### `xml-file`
 
-Pfad zur zu transformierenden XML-Datei
+Pfad zur XML-Datei, die umgewandelt werden soll
 
 - Erforderlich
 
@@ -3088,7 +3198,7 @@ XML-Datei überschreiben
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3102,7 +3212,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3122,14 +3232,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3137,16 +3247,17 @@ Keine interaktiven Fragen stellen
 
 ## `downloadable:domains:add`
 
-Hinzufügen von Domains zur Whitelist für herunterladbare Domains
-
 ```bash
 bin/magento downloadable:domains:add [<domains>...]
 ```
 
+Domänen zur Whitelist für herunterladbare Domänen hinzufügen
+
+
 
 ### `domains`
 
-Domain-Name
+Domänenname
 
 - Standard: `[]`
 
@@ -3154,7 +3265,7 @@ Domain-Name
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3168,7 +3279,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3188,14 +3299,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3203,16 +3314,17 @@ Keine interaktiven Fragen stellen
 
 ## `downloadable:domains:remove`
 
-Entfernen von Domains aus der Whitelist für herunterladbare Domains
-
 ```bash
 bin/magento downloadable:domains:remove [<domains>...]
 ```
 
+Entfernen von Domänen aus der Whitelist der herunterladbaren Domänen
+
+
 
 ### `domains`
 
-Domain-Namen
+Domänennamen
 
 - Standard: `[]`
 
@@ -3220,7 +3332,7 @@ Domain-Namen
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3234,7 +3346,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3254,14 +3366,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3269,15 +3381,16 @@ Keine interaktiven Fragen stellen
 
 ## `downloadable:domains:show`
 
-Whitelist herunterladbarer Domains anzeigen
-
 ```bash
 bin/magento downloadable:domains:show
 ```
 
+Anzeigen einer Whitelist für herunterladbare Domänen
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3291,7 +3404,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3311,14 +3424,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3326,15 +3439,16 @@ Keine interaktiven Fragen stellen
 
 ## `encryption:payment-data:update`
 
-Verschlüsselt verschlüsselte Kreditkartendaten erneut mit der neuesten Verschlüsselungschiffre.
-
 ```bash
 bin/magento encryption:payment-data:update
 ```
 
+Verschlüsselt verschlüsselte Kreditkartendaten mit dem neuesten Verschlüsselungsschlüssel erneut.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3348,7 +3462,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3368,14 +3482,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3383,16 +3497,17 @@ Keine interaktiven Fragen stellen
 
 ## `i18n:collect-phrases`
 
-Erkennt Sätze in der Codebasis
-
 ```bash
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
 
+Erkennt Ausdrücke in der Codebase
+
+
 
 ### `directory`
 
-Zu analysierender Verzeichnispfad. Nicht erforderlich, wenn —magento Flag gesetzt ist
+Pfad zum Analysieren. Nicht erforderlich, wenn die Markierung —magento gesetzt ist
 
 
 ### `--output`, `-o`
@@ -3403,14 +3518,14 @@ Pfad (einschließlich Dateiname) zu einer Ausgabedatei. Wenn keine Datei angegeb
 
 ### `--magento`, `-m`
 
-Verwenden Sie den Parameter —magento, um die aktuelle Magento-Codebasis zu analysieren. Lassen Sie den Parameter weg, wenn ein Verzeichnis angegeben ist.
+Verwenden Sie den Parameter —magento , um die aktuelle Magento-Codebase zu analysieren. Lassen Sie den Parameter aus, wenn ein Verzeichnis angegeben ist.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3424,7 +3539,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3444,14 +3559,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3459,11 +3574,12 @@ Keine interaktiven Fragen stellen
 
 ## `i18n:pack`
 
-Speichert das Sprachpaket
-
 ```bash
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
+
+Speichert das Sprachpaket
+
 
 
 ### `source`
@@ -3474,27 +3590,27 @@ Pfad zur Quellwörterbuchdatei mit Übersetzungen
 
 ### `locale`
 
-Zielgebietsschema für das Wörterbuch, z. B. „de_DE“
+Zielgebietsschema für Wörterbücher, z. B. &quot;de_DE&quot;
 
 - Erforderlich
 
 ### `--mode`, `-m`
 
-Speichermodus für Wörterbuch - „replace“ - Sprachpaket durch neues ersetzen - „merge“ - Sprachpakete zusammenführen, standardmäßig „replace“
+Speichermodus für Wörterbuch - &quot;Ersetzen&quot;- Sprachpaket durch neues ersetzen - &quot;Zusammenführen&quot;- Sprachpakete zusammenführen, standardmäßig &quot;Ersetzen&quot;
 
 - Standard: `replace`
 - Erfordert einen Wert
 
 ### `--allow-duplicates`, `-d`
 
-Verwenden Sie den Parameter —allow-duplicates, um Dubletten der Übersetzung zu speichern. Lassen Sie andernfalls den Parameter weg.
+Verwenden Sie den Parameter —allow-duplicates , um das Speichern von Dubletten der Übersetzung zu ermöglichen. Lassen Sie andernfalls den Parameter weg.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3508,7 +3624,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3528,14 +3644,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3543,11 +3659,12 @@ Keine interaktiven Fragen stellen
 
 ## `i18n:uninstall`
 
-Deinstalliert Sprachpakete
-
 ```bash
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
+
+Deinstalliert Sprachpakete
+
 
 
 ### `package`
@@ -3561,14 +3678,14 @@ Name des Sprachpakets
 
 ### `--backup-code`, `-b`
 
-Code- und Konfigurationsdateien sichern (ohne temporäre Dateien)
+Sichern von Code- und Konfigurationsdateien (ohne temporäre Dateien)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3582,7 +3699,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3602,14 +3719,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3617,15 +3734,16 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:info`
 
-Zeigt zulässige Indexer an
-
 ```bash
 bin/magento indexer:info
 ```
 
+Zeigt zulässige Indexer an
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3639,7 +3757,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3659,14 +3777,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3674,16 +3792,17 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:reindex`
 
-Daten neu indizieren
-
 ```bash
 bin/magento indexer:reindex [<index>...]
 ```
 
+Neuindizierung von Daten
+
+
 
 ### `index`
 
-Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt für alle Indizes.
+Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwendung auf alle Indizes weg.
 
 - Standard: `[]`
 
@@ -3691,7 +3810,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt 
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3705,7 +3824,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3725,14 +3844,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3740,16 +3859,17 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:reset`
 
-Setzt den Indexerstatus auf ungültig zurück
-
 ```bash
 bin/magento indexer:reset [<index>...]
 ```
 
+Setzt den Indexstatus auf ungültig zurück
+
+
 
 ### `index`
 
-Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt für alle Indizes.
+Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwendung auf alle Indizes weg.
 
 - Standard: `[]`
 
@@ -3757,7 +3877,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt 
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3771,7 +3891,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3791,14 +3911,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3806,26 +3926,27 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:set-dimensions-mode`
 
-Festlegen des Indexermodus für Dimensionen
-
 ```bash
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
+Indexer-Dimensionen-Modus festlegen
+
+
 
 ### `indexer`
 
-Indexername [CATALOG_PRODUCT_PRICE]
+Indexname [catalog_product_price]
 
 
 ### `mode`
 
-Indexerdimensionsmodi catalog_product_price, none, website,customer_group,website_and_customer_group
+Indexdimensionsmodi catalog_product_price none,website,customer_group,website_and_customer_group
 
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3839,7 +3960,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3859,14 +3980,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3874,21 +3995,22 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:set-mode`
 
-Legt den Indexmodus-Typ fest
-
 ```bash
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
 
+Legt den Indexmodustyp fest
+
+
 
 ### `mode`
 
-Indexermodus-Typ [Echtzeit|Zeitplan]
+Indexmodustyp [realtime|schedule]
 
 
 ### `index`
 
-Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt für alle Indizes.
+Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwendung auf alle Indizes weg.
 
 - Standard: `[]`
 
@@ -3896,7 +4018,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt 
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3910,7 +4032,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3930,14 +4052,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3945,22 +4067,23 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:set-status`
 
-Legt den angegebenen Indexerstatus fest
-
 ```bash
 bin/magento indexer:set-status <status> [<index>...]
 ```
 
+Legt den angegebenen Indexstatus fest
+
+
 
 ### `status`
 
-Indexerstatustyp [ungültig|ausgesetzt|gültig]
+Indexer-Statustyp [invalid|suspen|valid]
 
 - Erforderlich
 
 ### `index`
 
-Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt für alle Indizes.
+Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwendung auf alle Indizes weg.
 
 - Standard: `[]`
 
@@ -3968,7 +4091,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt 
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -3982,7 +4105,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4002,14 +4125,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4017,16 +4140,17 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:show-dimensions-mode`
 
-Zeigt den Indexermodus der Dimension an
-
 ```bash
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
 
+Zeigt den Indexer-Dimension-Modus an
+
+
 
 ### `indexer`
 
-Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung, um sie auf alle Indizes anzuwenden (CATALOG_PRODUCT_PRICE)
+Durch Leerzeichen getrennte Liste von Indextypen oder Auslassungen, die auf alle Indizes angewendet werden sollen (catalog_product_price)
 
 - Standard: `[]`
 
@@ -4034,7 +4158,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung, um s
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4048,7 +4172,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4068,14 +4192,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4083,16 +4207,17 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:show-mode`
 
-Zeigt den Indexmodus an
-
 ```bash
 bin/magento indexer:show-mode [<index>...]
 ```
 
+Zeigt den Indexmodus an
+
+
 
 ### `index`
 
-Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt für alle Indizes.
+Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwendung auf alle Indizes weg.
 
 - Standard: `[]`
 
@@ -4100,7 +4225,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt 
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4114,7 +4239,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4134,14 +4259,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4149,16 +4274,17 @@ Keine interaktiven Fragen stellen
 
 ## `indexer:status`
 
-Zeigt den Status des Indexers an
-
 ```bash
 bin/magento indexer:status [<index>...]
 ```
 
+Zeigt den Status des Indexers
+
+
 
 ### `index`
 
-Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt für alle Indizes.
+Eine durch Leerzeichen getrennte Liste von Indextypen oder lassen Sie die Anwendung auf alle Indizes weg.
 
 - Standard: `[]`
 
@@ -4166,7 +4292,7 @@ Eine durch Leerzeichen getrennte Liste von Indextypen oder eine Auslassung gilt 
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4180,7 +4306,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4200,14 +4326,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4215,15 +4341,16 @@ Keine interaktiven Fragen stellen
 
 ## `info:adminuri`
 
-Zeigt den Magento-Admin-URI an
-
 ```bash
 bin/magento info:adminuri
 ```
 
+Zeigt den Magento Admin-URI an
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4237,7 +4364,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4257,14 +4384,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4272,15 +4399,16 @@ Keine interaktiven Fragen stellen
 
 ## `info:backups:list`
 
-Druckt die Liste der verfügbaren Sicherungsdateien
-
 ```bash
 bin/magento info:backups:list
 ```
 
+Druckt die Liste der verfügbaren Backup-Dateien
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4294,7 +4422,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4314,14 +4442,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4329,15 +4457,16 @@ Keine interaktiven Fragen stellen
 
 ## `info:currency:list`
 
-Zeigt die Liste der verfügbaren Währungen an
-
 ```bash
 bin/magento info:currency:list
 ```
 
+Zeigt die Liste der verfügbaren Währungen an
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4351,7 +4480,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4371,14 +4500,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4386,11 +4515,12 @@ Keine interaktiven Fragen stellen
 
 ## `info:dependencies:show-framework`
 
-Zeigt die Anzahl der Abhängigkeiten vom Magento-Framework an
-
 ```bash
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
+
+Zeigt die Anzahl der Abhängigkeiten vom Magento-Framework an
+
 
 ### `--output`, `-o`
 
@@ -4401,7 +4531,7 @@ Berichtsdateiname
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4415,7 +4545,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4435,14 +4565,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4450,11 +4580,12 @@ Keine interaktiven Fragen stellen
 
 ## `info:dependencies:show-modules`
 
-Anzahl der Abhängigkeiten zwischen Modulen anzeigen
-
 ```bash
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
+
+Zeigt die Anzahl der Abhängigkeiten zwischen Modulen an
+
 
 ### `--output`, `-o`
 
@@ -4465,7 +4596,7 @@ Berichtsdateiname
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4479,7 +4610,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4499,14 +4630,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4514,11 +4645,12 @@ Keine interaktiven Fragen stellen
 
 ## `info:dependencies:show-modules-circular`
 
-Zeigt die Anzahl der zirkulären Abhängigkeiten zwischen Modulen an
-
 ```bash
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
+
+Zeigt die Anzahl der zirkulären Abhängigkeiten zwischen Modulen an
+
 
 ### `--output`, `-o`
 
@@ -4529,7 +4661,7 @@ Berichtsdateiname
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4543,7 +4675,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4563,14 +4695,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4578,15 +4710,16 @@ Keine interaktiven Fragen stellen
 
 ## `info:language:list`
 
-Zeigt die Liste der verfügbaren Sprachen an
-
 ```bash
 bin/magento info:language:list
 ```
 
+Zeigt die Liste der verfügbaren Sprachgebietsschemata an
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4600,7 +4733,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4620,14 +4753,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4635,15 +4768,16 @@ Keine interaktiven Fragen stellen
 
 ## `info:timezone:list`
 
-Zeigt die Liste der verfügbaren Zeitzonen an
-
 ```bash
 bin/magento info:timezone:list
 ```
 
+Zeigt die Liste der verfügbaren Zeitzonen
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4657,7 +4791,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4677,14 +4811,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4692,16 +4826,17 @@ Keine interaktiven Fragen stellen
 
 ## `inventory:reservation:create-compensations`
 
-Erstellen von Reservierungen durch angegebene Vergütungsargumente
-
 ```bash
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
+Erstellen von Vorbehalten aus den vorgelegten Ausgleichsargumenten
+
+
 
 ### `compensations`
 
-Liste der Kompensationsargumente im Format „\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
+Liste der Ausgleichsargumente im Format &quot;:::&quot;
 
 - Standard: `[]`
 
@@ -4716,7 +4851,7 @@ Rohausgabe
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4730,7 +4865,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4750,14 +4885,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4765,22 +4900,23 @@ Keine interaktiven Fragen stellen
 
 ## `inventory:reservation:list-inconsistencies`
 
-Alle Bestellungen und Produkte mit Inkonsistenzen der verkäuflichen Menge anzeigen
-
 ```bash
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
 
+Alle Bestellungen und Produkte mit Inkonsistenzen bei der Verkaufsmenge anzeigen
+
+
 ### `--complete-orders`, `-c`
 
-Nur Inkonsistenzen bei vollständigen Bestellungen anzeigen
+Nur Inkonsistenzen für vollständige Bestellungen anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--incomplete-orders`, `-i`
 
-Nur Inkonsistenzen bei unvollständigen Bestellungen anzeigen
+Nur Inkonsistenzen für unvollständige Bestellungen anzeigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4801,7 +4937,7 @@ Rohausgabe
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4815,7 +4951,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4835,14 +4971,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4850,11 +4986,12 @@ Keine interaktiven Fragen stellen
 
 ## `inventory-geonames:import`
 
-Herunterladen und Importieren von Geonamen für den Quellenauswahlalgorithmus
-
 ```bash
 bin/magento inventory-geonames:import <countries>...
 ```
+
+Herunterladen und Importieren von Geo-Namen für den Quellauswahlalgorithmus
+
 
 
 ### `countries`
@@ -4868,7 +5005,7 @@ Liste der zu importierenden Ländercodes
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4882,7 +5019,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4902,14 +5039,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4917,11 +5054,12 @@ Keine interaktiven Fragen stellen
 
 ## `maintenance:allow-ips`
 
-Legt IPs mit Ausnahme des Wartungsmodus fest
-
 ```bash
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
+
+Legt IPs ohne Wartungsmodus fest
+
 
 
 ### `ip`
@@ -4934,7 +5072,7 @@ Zulässige IP-Adressen
 
 ### `--none`
 
-Zulässige IP-Adressen löschen
+Löschen zulässiger IP-Adressen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4948,13 +5086,13 @@ Hinzufügen der IP-Adresse zur vorhandenen Liste
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4968,7 +5106,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -4988,14 +5126,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5003,28 +5141,29 @@ Keine interaktiven Fragen stellen
 
 ## `maintenance:disable`
 
-Deaktiviert den Wartungsmodus
-
 ```bash
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Deaktiviert den Wartungsmodus
+
+
 ### `--ip`
 
-Zulässige IP-Adressen (verwenden Sie „none„, um die Liste der zulässigen IP-Adressen zu löschen)
+Zulässige IP-Adressen (verwenden Sie &quot;Keine&quot;, um die zulässige IP-Liste zu löschen)
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5038,7 +5177,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5058,14 +5197,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5073,28 +5212,29 @@ Keine interaktiven Fragen stellen
 
 ## `maintenance:enable`
 
-Aktiviert den Wartungsmodus
-
 ```bash
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Aktiviert den Wartungsmodus
+
+
 ### `--ip`
 
-Zulässige IP-Adressen (verwenden Sie „none„, um die Liste der zulässigen IP-Adressen zu löschen)
+Zulässige IP-Adressen (verwenden Sie &quot;Keine&quot;, um die zulässige IP-Liste zu löschen)
 
 - Standard: `[]`
 - Erfordert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5108,7 +5248,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5128,14 +5268,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5143,21 +5283,22 @@ Keine interaktiven Fragen stellen
 
 ## `maintenance:status`
 
-Zeigt den Wartungsmodus-Status an
-
 ```bash
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Zeigt den Status des Wartungsmodus an
+
+
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5171,7 +5312,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5191,14 +5332,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5206,15 +5347,16 @@ Keine interaktiven Fragen stellen
 
 ## `media-content:sync`
 
-Synchronisieren von Inhalten mit Assets
-
 ```bash
 bin/magento media-content:sync
 ```
 
+Inhalt mit Assets synchronisieren
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5228,7 +5370,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5248,14 +5390,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5263,15 +5405,16 @@ Keine interaktiven Fragen stellen
 
 ## `media-gallery:sync`
 
-Synchronisieren des Medienspeichers und der Medienelemente in der Datenbank
-
 ```bash
 bin/magento media-gallery:sync
 ```
 
+Synchronisieren von Medienspeichern und Medien-Assets in der Datenbank
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5285,7 +5428,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5305,14 +5448,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5320,15 +5463,16 @@ Keine interaktiven Fragen stellen
 
 ## `module:config:status`
 
-Überprüft die Modulkonfiguration in der Datei &quot;app/etc/config.php&quot; und gibt Berichte aus, ob die Module aktuell sind oder nicht
-
 ```bash
 bin/magento module:config:status
 ```
 
+Prüft die Modulkonfiguration in der Datei &quot;app/etc/config.php&quot;und meldet, ob sie aktuell ist oder nicht
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5342,7 +5486,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5362,14 +5506,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5377,16 +5521,17 @@ Keine interaktiven Fragen stellen
 
 ## `module:disable`
 
-Deaktiviert die angegebenen Module
-
 ```bash
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
+Deaktiviert angegebene Module
+
+
 
 ### `module`
 
-Modulname
+Name des Moduls
 
 - Standard: `[]`
 
@@ -5394,7 +5539,7 @@ Modulname
 
 ### `--force`, `-f`
 
-Abhängigkeitsprüfung umgehen
+Prüfung von Abhängigkeiten umgehen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5408,20 +5553,20 @@ Alle Module deaktivieren
 
 ### `--clear-static-content`, `-c`
 
-Erzeugte statische Ansichtsdateien löschen. Erforderlich, wenn die Module statische Ansichtsdateien haben
+Löschen Sie die generierten statischen Ansichtsdateien. Erforderlich, wenn die Module statische Ansichtsdateien haben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5435,7 +5580,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5455,14 +5600,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5470,16 +5615,17 @@ Keine interaktiven Fragen stellen
 
 ## `module:enable`
 
-Aktiviert die angegebenen Module
-
 ```bash
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
+Aktiviert die angegebenen Module
+
+
 
 ### `module`
 
-Modulname
+Name des Moduls
 
 - Standard: `[]`
 
@@ -5487,7 +5633,7 @@ Modulname
 
 ### `--force`, `-f`
 
-Abhängigkeitsprüfung umgehen
+Prüfung von Abhängigkeiten umgehen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5501,20 +5647,20 @@ Alle Module aktivieren
 
 ### `--clear-static-content`, `-c`
 
-Erzeugte statische Ansichtsdateien löschen. Erforderlich, wenn die Module statische Ansichtsdateien haben
+Löschen Sie die generierten statischen Ansichtsdateien. Erforderlich, wenn die Module statische Ansichtsdateien haben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5528,7 +5674,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5548,14 +5694,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5563,11 +5709,12 @@ Keine interaktiven Fragen stellen
 
 ## `module:status`
 
-Zeigt den Status der Module an
-
 ```bash
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
+
+Status der Module anzeigen
+
 
 
 ### `module-names`
@@ -5580,7 +5727,7 @@ Optionaler Modulname
 
 ### `--enabled`
 
-Nur aktivierte Module drucken
+Schreibgeschützte Module
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5594,13 +5741,13 @@ Nur deaktivierte Module drucken
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5614,7 +5761,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5634,14 +5781,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5649,16 +5796,17 @@ Keine interaktiven Fragen stellen
 
 ## `module:uninstall`
 
-Deinstalliert vom Composer installierte Module
-
 ```bash
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
 
+Deinstalliert die vom Composer installierten Module
+
+
 
 ### `module`
 
-Modulname
+Name des Moduls
 
 - Standard: `[]`
 
@@ -5667,55 +5815,55 @@ Modulname
 
 ### `--remove-data`, `-r`
 
-Von Modul(en) installierte Daten entfernen
+Von Modulen installierte Daten entfernen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--backup-code`
 
-Code- und Konfigurationsdateien sichern (ohne temporäre Dateien)
+Sichern von Code- und Konfigurationsdateien (ohne temporäre Dateien)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--backup-media`
 
-Medien-Backup erstellen
+Mediensicherung durchführen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--backup-db`
 
-Erstellen einer vollständigen Datenbanksicherung
+Führen Sie eine vollständige Datenbanksicherung durch
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--non-composer`
 
-Alle Module, die an dieser Stelle eingefügt werden, sind nicht komponentenbasiert
+Alle Module, die hier vorbei sein werden, sind nicht auf Composer basiert
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--clear-static-content`, `-c`
 
-Erzeugte statische Ansichtsdateien löschen. Erforderlich, wenn die Module statische Ansichtsdateien haben
+Löschen Sie die generierten statischen Ansichtsdateien. Erforderlich, wenn die Module statische Ansichtsdateien haben
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5729,7 +5877,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5749,14 +5897,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5764,11 +5912,12 @@ Keine interaktiven Fragen stellen
 
 ## `newrelic:create:deploy-marker`
 
-Überprüfen Sie die Bereitstellungswarteschlange auf Einträge und erstellen Sie eine geeignete Bereitstellungsmarkierung.
-
 ```bash
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
+
+Überprüfen Sie die Bereitstellungswarteschlange auf Einträge und erstellen Sie eine entsprechende Bereitstellungsmarkierung.
+
 
 
 ### `message`
@@ -5779,7 +5928,7 @@ Nachricht bereitstellen?
 
 ### `change_log`
 
-Änderungsprotokoll?
+Änderungsprotokoll
 
 - Erforderlich
 
@@ -5795,7 +5944,7 @@ Revision
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5809,7 +5958,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5829,14 +5978,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5844,15 +5993,20 @@ Keine interaktiven Fragen stellen
 
 ## `queue:consumers:list`
 
-Liste der MessageQueue-Verbraucher
-
 ```bash
 bin/magento queue:consumers:list
 ```
 
+Liste der MessageQueue-Verbraucher
+
+
+```
+This command shows list of MessageQueue consumers.
+```
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5866,7 +6020,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5886,14 +6040,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5901,15 +6055,20 @@ Keine interaktiven Fragen stellen
 
 ## `queue:consumers:restart`
 
-MessageQueue-Verbraucher neu starten
-
 ```bash
 bin/magento queue:consumers:restart
 ```
 
+MessageQueue-Verbraucher neu starten
+
+
+```
+Command put poison pill for MessageQueue consumers and force to restart them after next status check.
+```
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5923,7 +6082,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5943,14 +6102,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -5958,10 +6117,43 @@ Keine interaktiven Fragen stellen
 
 ## `queue:consumers:start`
 
-MessageQueue-Verbraucher starten
-
 ```bash
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
+```
+
+MessageQueue Consumer starten
+
+
+```
+This command starts MessageQueue consumer by its name.
+
+To start consumer which will process all queued messages and terminate execution:
+
+    bin/magento queue:consumers:start someConsumer
+
+To specify the number of messages which should be processed by consumer before its termination:
+
+    bin/magento queue:consumers:start someConsumer --max-messages=50
+
+To specify the number of messages per batch for the batch consumer:
+
+    bin/magento queue:consumers:start someConsumer --batch-size=500
+
+To specify the preferred area:
+
+    bin/magento queue:consumers:start someConsumer --area-code='adminhtml'
+
+To do not run multiple copies of one consumer simultaneously:
+
+    bin/magento queue:consumers:start someConsumer --single-thread
+
+To save PID enter path (This option is deprecated, use --single-thread instead):
+
+    bin/magento queue:consumers:start someConsumer --pid-file-path='/var/someConsumer.pid'
+
+To define the number of processes per consumer:
+
+    bin/magento queue:consumers:start someConsumer --multi-process=4
 ```
 
 
@@ -5973,7 +6165,7 @@ Der Name des zu startenden Verbrauchers.
 
 ### `--max-messages`
 
-Die Anzahl der Nachrichten, die vom Verbraucher vor Beendigung des Prozesses verarbeitet werden sollen. Wenn nicht anders angegeben, wird der Vorgang nach der Verarbeitung aller Nachrichten in der Warteschlange beendet.
+Die Anzahl der Nachrichten, die vom Verbraucher vor der Beendigung des Vorgangs verarbeitet werden. Wenn nicht angegeben - beenden Sie nach der Verarbeitung aller in die Warteschlange gestellten Nachrichten.
 
 - Erfordert einen Wert
 
@@ -5985,7 +6177,7 @@ Die Anzahl der Nachrichten pro Batch. Gilt nur für den Batch-Verbraucher.
 
 ### `--area-code`
 
-Der bevorzugte Bereich (global, adminHTML usw.) ist standardmäßig global.
+Der bevorzugte Bereich (global, adminhtml usw.) ist standardmäßig global.
 
 - Erfordert einen Wert
 
@@ -6010,7 +6202,7 @@ Der Dateipfad zum Speichern der PID (diese Option ist veraltet, verwenden Sie st
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6024,7 +6216,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6044,14 +6236,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6059,15 +6251,16 @@ Keine interaktiven Fragen stellen
 
 ## `remote-storage:sync`
 
-Synchronisieren Sie Mediendateien mit dem Remote-Speicher.
-
 ```bash
 bin/magento remote-storage:sync
 ```
 
+Mediendateien mit Remote-Speicher synchronisieren.
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6081,7 +6274,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6101,14 +6294,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6116,61 +6309,62 @@ Keine interaktiven Fragen stellen
 
 ## `saas:resync`
 
-Synchronisiert Feed-Daten erneut mit dem SaaS-Service.
-
 ```bash
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync]
 ```
 
+Synchronisiert Feed-Daten erneut mit dem SaaS-Dienst.
+
+
 ### `--feed`
 
-Feed-Name zur vollständigen Neusynchronisierung mit dem SaaS-Service. Verfügbare Feeds: Zahlungsdienste-Auftragsproduktion, Zahlungsdienste-Auftrags-Sandbox, Zahlungsdienste-Auftragsstatus Produktion, Zahlungsdienste-Auftragsstatus Sandbox, Zahlungsdienste-Storeproduktion, Zahlungsdienste-Store-Sandbox
+Feed-Name zur vollständigen erneuten Synchronisierung mit dem SaaS-Dienst. Verfügbare Feeds: Payment Services Order Production, Payment Services Order Sandbox, Payment Services Order Status Production, Payment Services Order Status Sandbox, Payment Services Order Status Sandbox, Payment Services Store Production, Payment Services Store Sandbox
 
 - Erfordert einen Wert
 
 ### `--no-reindex`
 
-Führen Sie die erneute Übermittlung von Feed-Daten nur an den SaaS-Service aus. Indiziert nicht neu. (Diese Option gilt nicht für Produkte, Produktüberschreibungen, Preise und Feeds.)
+Führen Sie die erneute Übermittlung von Feed-Daten nur an den SaaS-Dienst aus. Indexiert nicht neu. (Diese Option gilt nicht für die Produkte, Produktoverride und Preisfeeds.)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--cleanup-feed`
 
-Bereinigung der Feed-Indexertabelle vor der Synchronisierung erzwingen
+Feed-Indexertabelle vor der Synchronisierung bereinigen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--dry-run`
 
-Probelauf. Daten werden nicht exportiert. Um die Payload in der Protokolldatei zu speichern, führen Sie var/log/saas-export.log mit der Umgebungsvariablen EXPORTER_EXTENDED_LOG=1 aus.
+Probieren Sie aus. Daten werden nicht exportiert. Zum Speichern der Nutzlast in die Protokolldatei var/log/saas-export.log mit der env-Variablen EXPORTER_EXTENDED_LOG=1 ausführen.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--thread-count`
 
-Anzahl der Synchronisierungs-Threads festlegen.
+Legen Sie die Anzahl der Synchronisierungs-Threads fest.
 
 - Erfordert einen Wert
 
 ### `--batch-size`
 
-Festlegen der Größe eines Synchronisierungs-Batches
+Stapelgröße für die Synchronisierung festlegen
 
 - Erfordert einen Wert
 
 ### `--continue-resync`
 
-Neusynchronisierung von der letzten gespeicherten Position fortsetzen (Diese Option gilt für die Produkte, Produktüberschreibungen, Preise und Feeds)
+Fortsetzen der Synchronisierung von der letzten gespeicherten Position (diese Option gilt für die Produkte, Produktoverrides und Preise-Feeds)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6184,7 +6378,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6204,14 +6398,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6219,22 +6413,23 @@ Keine interaktiven Fragen stellen
 
 ## `sampledata:deploy`
 
-Bereitstellen von Beispieldatenmodulen für Composer-basierte Magento-Installationen
-
 ```bash
 bin/magento sampledata:deploy [--no-update]
 ```
 
+Bereitstellen von Beispieldatenmodulen für Composer-basierte Magento-Installationen
+
+
 ### `--no-update`
 
-Aktualisieren Sie composer.json, ohne das Composer-Update auszuführen
+Aktualisieren von Composer.json ohne Ausführen der Komponentenaktualisierung
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6248,7 +6443,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6268,14 +6463,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6283,22 +6478,23 @@ Keine interaktiven Fragen stellen
 
 ## `sampledata:remove`
 
-Entfernen Sie alle Beispieldatenpakete aus „composer.json“
-
 ```bash
 bin/magento sampledata:remove [--no-update]
 ```
 
+Entfernen Sie alle Beispieldatenpakete aus Composer.json
+
+
 ### `--no-update`
 
-Aktualisieren Sie composer.json, ohne das Composer-Update auszuführen
+Aktualisieren von Composer.json ohne Ausführen der Komponentenaktualisierung
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6312,7 +6508,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6332,14 +6528,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6347,15 +6543,16 @@ Keine interaktiven Fragen stellen
 
 ## `sampledata:reset`
 
-Alle Beispieldatenmodule zur Neuinstallation zurücksetzen
-
 ```bash
 bin/magento sampledata:reset
 ```
 
+Alle Beispieldatenmodule zur Neuinstallation zurücksetzen
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6369,7 +6566,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6389,14 +6586,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6404,15 +6601,16 @@ Keine interaktiven Fragen stellen
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-Deaktivieren von reCAPTCHA für Formular bei vergessenem Kennwort für Admin-Benutzer
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
+Deaktivieren Sie reCAPTCHA für das Formular für vergessene Administratorrechte
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6426,7 +6624,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6446,14 +6644,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6461,15 +6659,16 @@ Keine interaktiven Fragen stellen
 
 ## `security:recaptcha:disable-for-user-login`
 
-Deaktivieren von reCAPTCHA für das Administrator-Benutzeranmeldeformular
-
 ```bash
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
+Deaktivieren Sie reCAPTCHA für das Anmeldeformular für Administratoren
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6483,7 +6682,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6503,14 +6702,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6518,11 +6717,12 @@ Keine interaktiven Fragen stellen
 
 ## `security:tfa:google:set-secret`
 
-Legen Sie die für die OTP-Generierung von Google verwendeten geheimen Daten fest.
-
 ```bash
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
+
+Legen Sie das für die OTP-Generierung von Google verwendete Geheimnis fest.
+
 
 
 ### `user`
@@ -6533,13 +6733,13 @@ Benutzername
 
 ### `secret`
 
-Geheim
+Geheimnis
 
 - Erforderlich
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6553,7 +6753,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6573,14 +6773,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6588,15 +6788,16 @@ Keine interaktiven Fragen stellen
 
 ## `security:tfa:providers`
 
-Alle verfügbaren Anbieter auflisten
-
 ```bash
 bin/magento security:tfa:providers
 ```
 
+Alle verfügbaren Anbieter auflisten
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6610,7 +6811,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6630,14 +6831,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6645,11 +6846,12 @@ Keine interaktiven Fragen stellen
 
 ## `security:tfa:reset`
 
-Konfiguration für einen Benutzer zurücksetzen
-
 ```bash
 bin/magento security:tfa:reset <user> <provider>
 ```
+
+Konfiguration für einen Benutzer zurücksetzen
+
 
 
 ### `user`
@@ -6660,13 +6862,13 @@ Benutzername
 
 ### `provider`
 
-Anbietercode
+Provider-Code
 
 - Erforderlich
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6680,7 +6882,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6700,14 +6902,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6715,42 +6917,43 @@ Keine interaktiven Fragen stellen
 
 ## `setup:backup`
 
-Ermöglicht die Sicherung der Magento-Anwendungs-Code-Basis, des Mediums und der Datenbank
-
 ```bash
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Backup von Magento Application Code-Basis, Medien und Datenbank
+
+
 ### `--code`
 
-Code- und Konfigurationsdateien sichern (ohne temporäre Dateien)
+Sichern von Code- und Konfigurationsdateien (ohne temporäre Dateien)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--media`
 
-Medien-Backup erstellen
+Mediensicherung durchführen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--db`
 
-Erstellen einer vollständigen Datenbanksicherung
+Führen Sie eine vollständige Datenbanksicherung durch
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6764,7 +6967,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6784,14 +6987,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -6799,11 +7002,12 @@ Keine interaktiven Fragen stellen
 
 ## `setup:config:set`
 
-Erstellt oder ändert die Bereitstellungskonfiguration
-
 ```bash
 bin/magento setup:config:set [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Erstellt oder ändert die Bereitstellungskonfiguration
+
 
 ### `--backend-frontname`
 
@@ -6819,7 +7023,7 @@ Debug-Protokollierung aktivieren
 
 ### `--enable-syslog-logging`
 
-Syslog-Protokollierung aktivieren
+Aktivieren der syslog-Protokollierung
 
 - Erfordert einen Wert
 
@@ -6838,13 +7042,13 @@ Remote-Speicherpräfix
 
 ### `--remote-storage-endpoint`
 
-Remote-Speicher-Endpunkt
+Remote-Speicherendpunkt
 
 - Erfordert einen Wert
 
 ### `--remote-storage-bucket`
 
-Remote-Speicher-Bucket
+Remote-Speicherbehälter
 
 - Erfordert einen Wert
 
@@ -6856,82 +7060,82 @@ Remote-Speicherregion
 
 ### `--remote-storage-key`
 
-Remote-Speicherzugriffsschlüssel
+Zugriffsschlüssel für Remote-Speicher
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--remote-storage-secret`
 
-Geheimschlüssel des Remotespeichers
+geheimer Schlüssel für Remote-Speicher
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--remote-storage-path-style`
 
-Remote-Speicherpfadstil
+Pfad für Remote-Speicher - Stil
 
 - Standard: `0`
 - Erfordert einen Wert
 
 ### `--id_salt`
 
-GraphQL-Salz
+GraphQl-Salz
 
 - Erfordert einen Wert
 
 ### `--config-async`
 
-Async Admin Config Speichern aktivieren? 1 - Ja, 0 - Nein
+Asynchrone Admin Config-Speicherung aktivieren? 1 - Ja, 0 - Nein
 
 - Erfordert einen Wert
 
 ### `--amqp-host`
 
-AMQL-Server-Host
+AMQP-Server-Host
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-port`
 
-AMQL-Server-Port
+AMQP-Server-Anschluss
 
 - Standard: `5672`
 - Erfordert einen Wert
 
 ### `--amqp-user`
 
-AMQL-Server-Benutzername
+AMQP-Server-Benutzername
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-password`
 
-AMQL-Serverkennwort
+AMQP-Server-Kennwort
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-virtualhost`
 
-AMQP VirtualHost
+Amqp virtualhost
 
 - Standard: `/`
 - Erfordert einen Wert
 
 ### `--amqp-ssl`
 
-AMQP-SSL
+AMQP SSL
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-ssl-options`
 
-AMQL-SSL-Optionen (JSON)
+AMQP-SSL-Optionen (JSON)
 
 - Standard: &quot;
 - Erfordert einen Wert
@@ -6944,7 +7148,7 @@ Sollten Verbraucher auf eine Nachricht aus der Warteschlange warten? 1 - Ja, 0 -
 
 ### `--queue-default-connection`
 
-Standardverbindung für Nachrichtenwarteschlangen. Kann „db„, „amqp“ oder ein benutzerdefiniertes Warteschlangensystem sein. Das Warteschlangensystem muss installiert und konfiguriert werden, da andernfalls Nachrichten nicht korrekt verarbeitet werden.
+Die Standardverbindung der Nachrichtenwarteschlangen wird festgelegt. Kann &#39;db&#39;, &#39;amqp&#39; oder ein benutzerdefiniertes Warteschlangensystem sein. Das Warteschlangensystem muss installiert und konfiguriert sein, andernfalls werden Nachrichten nicht korrekt verarbeitet.
 
 - Erfordert einen Wert
 
@@ -6968,7 +7172,7 @@ Datenbankname
 
 ### `--db-user`
 
-Benutzername des Datenbank-Servers
+Benutzername des Datenbankservers
 
 - Erfordert einen Wert
 
@@ -6986,7 +7190,7 @@ Datenbankserver-Kennwort
 
 ### `--db-prefix`
 
-Datenbanktabellen-Präfix
+Datenbanktabellenpräfix
 
 - Erfordert einen Wert
 
@@ -6998,13 +7202,13 @@ Datenbanktyp
 
 ### `--db-init-statements`
 
-Anfangssatz der Befehle in der Datenbank
+Grundmenge an Befehlen in der Datenbank
 
 - Erfordert einen Wert
 
 ### `--skip-db-validation`, `-s`
 
-Wenn angegeben, wird die Überprüfung der DB-Verbindung übersprungen.
+Wenn angegeben, wird die Überprüfung der db-Verbindung übersprungen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7017,21 +7221,21 @@ HTTP-Cache-Hosts
 
 ### `--db-ssl-key`
 
-Vollständiger Pfad der Client-Schlüsseldatei zum Aufbau der DB-Verbindung über SSL
+Vollständiger Pfad der Client-Schlüsseldatei, um die DB-Verbindung über SSL herzustellen
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--db-ssl-cert`
 
-Vollständiger Pfad der Client-Zertifikatdatei zum Aufbau der DB-Verbindung über SSL
+Vollständiger Pfad der Client-Zertifikatdatei, um die DB-Verbindung über SSL herzustellen
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--db-ssl-ca`
 
-Vollständiger Pfad der Serverzertifikatdatei, um die DB-Verbindung über SSL herzustellen
+Vollständiger Pfad der Datei mit dem Serverzertifikat, um die DB-Verbindung über SSL herzustellen
 
 - Standard: &quot;
 - Erfordert einen Wert
@@ -7045,19 +7249,19 @@ Serverzertifizierung überprüfen
 
 ### `--session-save`
 
-Session Save Handler
+Sitzungsspeicherhandler
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-host`
 
-Vollqualifizierter Hostname, IP-Adresse oder absoluter Pfad bei Verwendung von UNIX-Sockets
+Vollständig qualifizierter Hostname, IP-Adresse oder absoluter Pfad bei Verwendung von UNIX-Sockets
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
@@ -7069,7 +7273,7 @@ Redis-Serverkennwort
 
 ### `--session-save-redis-timeout`
 
-Verbindungs-Timeout, in Sekunden
+Zeitüberschreitung bei Verbindung in Sekunden
 
 - Erfordert einen Wert
 
@@ -7081,13 +7285,13 @@ Eindeutige Zeichenfolge zum Aktivieren persistenter Verbindungen
 
 ### `--session-save-redis-db`
 
-Redis-Datenbanknummer
+Rediv-Datenbanknummer
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-compression-threshold`
 
-Redis-Komprimierungsschwellenwert
+Schwelle für Rediv-Komprimierung
 
 - Erfordert einen Wert
 
@@ -7099,61 +7303,61 @@ Redis-Komprimierungsbibliothek. Werte: gzip (Standard), lzf, lz4, snappy
 
 ### `--session-save-redis-log-level`
 
-Protokollebene neu angeben. Werte: 0 (am wenigsten ausführlich) bis 7 (am meisten ausführlich)
+Redis log level. Werte: 0 (am wenigsten ausführlich) bis 7 (am ausführlichsten)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-max-concurrency`
 
-Maximale Anzahl von Prozessen, die auf eine Sperre einer Sitzung warten können
+Maximale Anzahl von Prozessen, die auf eine Sperrung einer Sitzung warten können
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-break-after-frontend`
 
-Wartezeit in Sekunden, bevor versucht wird, eine Sperre für die Frontend-Sitzung aufzuheben
+Anzahl der Sekunden, die gewartet werden muss, bevor versucht wird, ein Schloss für die Frontend-Sitzung zu brechen
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-break-after-adminhtml`
 
-Wartezeit in Sekunden, bevor versucht wird, eine Sperre für die Admin-Sitzung aufzuheben
+Anzahl der Sekunden, die gewartet werden muss, bevor versucht wird, eine Sperre für die Admin-Sitzung zu unterbrechen
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-first-lifetime`
 
-Lebensdauer der Sitzung für Nicht-Bots beim ersten Schreiben (0 zum Deaktivieren) in Sekunden
+Lebensdauer (in Sekunden) der Sitzung für Nicht-Bots beim ersten Schreiben (verwenden Sie 0, um zu deaktivieren)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-bot-first-lifetime`
 
-Lebensdauer der Sitzung für Bots beim ersten Schreiben in Sekunden (zur Deaktivierung 0 verwenden)
+Lebensdauer (in Sekunden) der Sitzung für Bots beim ersten Schreiben (verwenden Sie 0 zur Deaktivierung)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-bot-lifetime`
 
-Lebensdauer der Sitzung für Bots bei nachfolgenden Schreibvorgängen (zur Deaktivierung mit 0)
+Lebensdauer der Sitzung für Bots bei nachfolgenden Schreibvorgängen (verwenden Sie 0 zur Deaktivierung)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-disable-locking`
 
-Redis-Sperre deaktivieren. Werte: false (Standard), true
+Redis deaktivieren die Sperrung. Werte: false (Standard), true
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-min-lifetime`
 
-Sitzungslebensdauer in Sekunden ändern
+Redis min session lifetime in seconds
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-max-lifetime`
 
-Maximale Sitzungslebensdauer in Sekunden anpassen
+Gibt die maximale Sitzungslebensdauer in Sekunden zurück.
 
 - Erfordert einen Wert
 
@@ -7165,19 +7369,19 @@ Redis Sentinel Master
 
 ### `--session-save-redis-sentinel-servers`
 
-Redis Sentinel-Server, durch Kommata getrennt
+Redis Sentinel-Server, durch Kommas getrennt
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifizieren Master. Werte: false (Standard), true
+Redis Sentinel verify master. Werte: false (Standard), true
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-sentinel-connect-retries`
 
-Redis Sentinel-Verbindungsversuche.
+Redis Sentinel Connect-Neuversuche.
 
 - Erfordert einen Wert
 
@@ -7201,7 +7405,7 @@ Datenbanknummer für den Cache
 
 ### `--cache-backend-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
@@ -7213,7 +7417,7 @@ Redis-Serverkennwort
 
 ### `--cache-backend-redis-compress-data`
 
-Auf 0 gesetzt, um die Komprimierung zu deaktivieren (Standard ist 1, aktiviert)
+Auf 0 setzen, um die Komprimierung zu deaktivieren (Standard ist 1, aktiviert)
 
 - Erfordert einen Wert
 
@@ -7225,7 +7429,7 @@ Zu verwendende Komprimierungsbibliothek [snappy,lzf,l4z,zstd,gzip] (Leer lassen,
 
 ### `--cache-backend-redis-use-lua`
 
-Auf 1 gesetzt, um LUA zu aktivieren (Standard ist 0, deaktiviert)
+Auf 1 setzen, um lua zu aktivieren (Standard ist 0, deaktiviert)
 
 - Erfordert einen Wert
 
@@ -7237,7 +7441,7 @@ ID-Präfix für Cache-Schlüssel
 
 ### `--allow-parallel-generation`
 
-Generieren von Cache auf nicht blockierende Weise zulassen
+Cache nicht blockieren lassen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7262,7 +7466,7 @@ Datenbanknummer für den Cache
 
 ### `--page-cache-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
@@ -7274,13 +7478,13 @@ Redis-Serverkennwort
 
 ### `--page-cache-redis-compress-data`
 
-Legen Sie hierfür 1 fest, um den vollständigen Seiten-Cache zu komprimieren (verwenden Sie 0, um ihn zu deaktivieren).
+Auf 1 setzen, um den gesamten Seiten-Cache zu komprimieren (verwenden Sie 0, um ihn zu deaktivieren)
 
 - Erfordert einen Wert
 
 ### `--page-cache-redis-compression-lib`
 
-Komprimierungsbibliothek zur Verwendung [snappy,lzf,l4z,zstd,gzip] (Leer lassen, um automatisch zu bestimmen)
+Zu verwendende Komprimierungsbibliothek [snappy,lzf,l4z,zstd,gzip] (Leer lassen, um automatisch zu bestimmen)
 
 - Erfordert einen Wert
 
@@ -7292,43 +7496,43 @@ ID-Präfix für Cache-Schlüssel
 
 ### `--lock-provider`
 
-Anbieternamen sperren
+Name des Anbieters sperren
 
 - Erfordert einen Wert
 
 ### `--lock-db-prefix`
 
-Installationsspezifisches Sperrpräfix zur Vermeidung von Sperrkonflikten
+Installation-spezifisches Sperrpräfix zur Vermeidung von Sperrkonflikten
 
 - Erfordert einen Wert
 
 ### `--lock-zookeeper-host`
 
-Host und Port für die Verbindung mit dem ZooKeeper-Cluster. Beispiel: 127.0.0.1:2181
+Hosten und Anschluss für die Verbindung mit dem Zookeeper-Cluster. Beispiel: 127.0.0.1:2181
 
 - Erfordert einen Wert
 
 ### `--lock-zookeeper-path`
 
-Der Pfad, in dem ZooKeeper Sperren speichert. Der Standardpfad lautet: /magento/locks
+Der Pfad, in dem Zookeeper Sperren speichert. Der Standardpfad lautet: /magento/lock
 
 - Erfordert einen Wert
 
 ### `--lock-file-path`
 
-Der Pfad, unter dem Dateisperren gespeichert werden.
+Der Pfad, in dem Dateisperren gespeichert werden.
 
 - Erfordert einen Wert
 
 ### `--document-root-is-pub`
 
-Markierung, die anzeigt, ob Pub sich im Stammverzeichnis befindet, kann nur „true“ oder „false“ sein.
+Flag zum Anzeigen, ob Pub sich auf dem Stamm befindet, kann nur &quot;true&quot;oder &quot;false&quot;sein
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger`
 
-Handler für den Rückdrucklogger
+Rückdruckprotokollierer
 
 - Erfordert einen Wert
 
@@ -7340,25 +7544,25 @@ Redis-Server
 
 ### `--backpressure-logger-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger-redis-timeout`
 
-Redis-Server-Zeitüberschreitung
+Redis server timeout
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger-redis-persistent`
 
-Redis persistent
+Rediv beständig
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger-redis-db`
 
-Redis-DB-Nummer
+Redis db number
 
 - Erfordert einen Wert
 
@@ -7382,13 +7586,13 @@ ID-Präfix für Schlüssel
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7402,7 +7606,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7422,14 +7626,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7437,21 +7641,22 @@ Keine interaktiven Fragen stellen
 
 ## `setup:db-data:upgrade`
 
-Installiert und aktualisiert Daten in der Datenbank
-
 ```bash
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Installiert und aktualisiert Daten in der DB
+
+
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7465,7 +7670,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7485,14 +7690,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7500,11 +7705,12 @@ Keine interaktiven Fragen stellen
 
 ## `setup:db-declaration:generate-patch`
 
-Erzeugt den Patch und legt ihn in einem bestimmten Ordner ab.
-
 ```bash
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
+
+Erstellen Sie einen Patch und legen Sie ihn in einen bestimmten Ordner.
+
 
 
 ### `module`
@@ -7515,13 +7721,13 @@ Modulname
 
 ### `patch`
 
-Patch-Name
+Patch name
 
 - Erforderlich
 
 ### `--revertable`
 
-Überprüfen, ob das Patch rückgängig gemacht werden kann oder nicht.
+Überprüfen Sie, ob der Patch rückgängig gemacht werden kann oder nicht.
 
 - Standard: `false`
 - Akzeptiert einen Wert
@@ -7535,7 +7741,7 @@ Finden Sie heraus, welcher Patch-Typ generiert werden soll. Verfügbare Werte: `
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7549,7 +7755,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7569,14 +7775,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7584,22 +7790,23 @@ Keine interaktiven Fragen stellen
 
 ## `setup:db-declaration:generate-whitelist`
 
-Generieren einer Whitelist von Tabellen und Spalten, die vom Deklarations-Installationsprogramm bearbeitet werden dürfen
-
 ```bash
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
 
+Generieren einer Whitelist von Tabellen und Spalten, die vom Deklarationinstallationsprogramm bearbeitet werden dürfen
+
+
 ### `--module-name`
 
-Name des Moduls, in dem die Whitelist generiert wird
+Name des Moduls, für das eine Whitelist generiert wird
 
 - Standard: `all`
 - Akzeptiert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7613,7 +7820,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7633,14 +7840,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7648,28 +7855,29 @@ Keine interaktiven Fragen stellen
 
 ## `setup:db-schema:upgrade`
 
-Installiert und aktualisiert das DB-Schema
-
 ```bash
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Installation und Aktualisierung des DB-Schemas
+
+
 ### `--convert-old-scripts`
 
-Ermöglicht die Konvertierung alter Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.xml
+Konvertiert alte Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.xml
 
 - Standard: `false`
 - Akzeptiert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7683,7 +7891,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7703,14 +7911,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7718,21 +7926,22 @@ Keine interaktiven Fragen stellen
 
 ## `setup:db:status`
 
-Prüft, ob DB-Schema oder Daten aktualisiert werden müssen
-
 ```bash
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Prüft, ob ein DB-Schema oder Daten aktualisiert werden muss
+
+
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7746,7 +7955,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7766,14 +7975,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7781,15 +7990,16 @@ Keine interaktiven Fragen stellen
 
 ## `setup:di:compile`
 
-Erzeugt die ID-Konfiguration und alle fehlenden Klassen, die automatisch generiert werden können
-
 ```bash
 bin/magento setup:di:compile
 ```
 
+Generiert ID-Konfiguration und alle fehlenden Klassen, die automatisch generiert werden können
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7803,7 +8013,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7823,14 +8033,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -7838,11 +8048,12 @@ Keine interaktiven Fragen stellen
 
 ## `setup:install`
 
-Installiert die Magento-Anwendung
-
 ```bash
 bin/magento setup:install [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--id_salt ID_SALT] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
+
+Installation der Magento-Anwendung
+
 
 ### `--backend-frontname`
 
@@ -7858,7 +8069,7 @@ Debug-Protokollierung aktivieren
 
 ### `--enable-syslog-logging`
 
-Syslog-Protokollierung aktivieren
+Aktivieren der syslog-Protokollierung
 
 - Erfordert einen Wert
 
@@ -7877,13 +8088,13 @@ Remote-Speicherpräfix
 
 ### `--remote-storage-endpoint`
 
-Remote-Speicher-Endpunkt
+Remote-Speicherendpunkt
 
 - Erfordert einen Wert
 
 ### `--remote-storage-bucket`
 
-Remote-Speicher-Bucket
+Remote-Speicherbehälter
 
 - Erfordert einen Wert
 
@@ -7895,82 +8106,82 @@ Remote-Speicherregion
 
 ### `--remote-storage-key`
 
-Remote-Speicherzugriffsschlüssel
+Zugriffsschlüssel für Remote-Speicher
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--remote-storage-secret`
 
-Geheimschlüssel des Remotespeichers
+geheimer Schlüssel für Remote-Speicher
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--remote-storage-path-style`
 
-Remote-Speicherpfadstil
+Pfad für Remote-Speicher - Stil
 
 - Standard: `0`
 - Erfordert einen Wert
 
 ### `--id_salt`
 
-GraphQL-Salz
+GraphQl-Salz
 
 - Erfordert einen Wert
 
 ### `--config-async`
 
-Async Admin Config Speichern aktivieren? 1 - Ja, 0 - Nein
+Asynchrone Admin Config-Speicherung aktivieren? 1 - Ja, 0 - Nein
 
 - Erfordert einen Wert
 
 ### `--amqp-host`
 
-AMQL-Server-Host
+AMQP-Server-Host
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-port`
 
-AMQL-Server-Port
+AMQP-Server-Anschluss
 
 - Standard: `5672`
 - Erfordert einen Wert
 
 ### `--amqp-user`
 
-AMQL-Server-Benutzername
+AMQP-Server-Benutzername
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-password`
 
-AMQL-Serverkennwort
+AMQP-Server-Kennwort
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-virtualhost`
 
-AMQP VirtualHost
+Amqp virtualhost
 
 - Standard: `/`
 - Erfordert einen Wert
 
 ### `--amqp-ssl`
 
-AMQP-SSL
+AMQP SSL
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--amqp-ssl-options`
 
-AMQL-SSL-Optionen (JSON)
+AMQP-SSL-Optionen (JSON)
 
 - Standard: &quot;
 - Erfordert einen Wert
@@ -7983,7 +8194,7 @@ Sollten Verbraucher auf eine Nachricht aus der Warteschlange warten? 1 - Ja, 0 -
 
 ### `--queue-default-connection`
 
-Standardverbindung für Nachrichtenwarteschlangen. Kann „db„, „amqp“ oder ein benutzerdefiniertes Warteschlangensystem sein. Das Warteschlangensystem muss installiert und konfiguriert werden, da andernfalls Nachrichten nicht korrekt verarbeitet werden.
+Die Standardverbindung der Nachrichtenwarteschlangen wird festgelegt. Kann &#39;db&#39;, &#39;amqp&#39; oder ein benutzerdefiniertes Warteschlangensystem sein. Das Warteschlangensystem muss installiert und konfiguriert sein, andernfalls werden Nachrichten nicht korrekt verarbeitet.
 
 - Erfordert einen Wert
 
@@ -8007,7 +8218,7 @@ Datenbankname
 
 ### `--db-user`
 
-Benutzername des Datenbank-Servers
+Benutzername des Datenbankservers
 
 - Erfordert einen Wert
 
@@ -8025,7 +8236,7 @@ Datenbankserver-Kennwort
 
 ### `--db-prefix`
 
-Datenbanktabellen-Präfix
+Datenbanktabellenpräfix
 
 - Erfordert einen Wert
 
@@ -8037,13 +8248,13 @@ Datenbanktyp
 
 ### `--db-init-statements`
 
-Anfangssatz der Befehle in der Datenbank
+Grundmenge an Befehlen in der Datenbank
 
 - Erfordert einen Wert
 
 ### `--skip-db-validation`, `-s`
 
-Wenn angegeben, wird die Überprüfung der DB-Verbindung übersprungen.
+Wenn angegeben, wird die Überprüfung der db-Verbindung übersprungen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8056,21 +8267,21 @@ HTTP-Cache-Hosts
 
 ### `--db-ssl-key`
 
-Vollständiger Pfad der Client-Schlüsseldatei zum Aufbau der DB-Verbindung über SSL
+Vollständiger Pfad der Client-Schlüsseldatei, um die DB-Verbindung über SSL herzustellen
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--db-ssl-cert`
 
-Vollständiger Pfad der Client-Zertifikatdatei zum Aufbau der DB-Verbindung über SSL
+Vollständiger Pfad der Client-Zertifikatdatei, um die DB-Verbindung über SSL herzustellen
 
 - Standard: &quot;
 - Erfordert einen Wert
 
 ### `--db-ssl-ca`
 
-Vollständiger Pfad der Serverzertifikatdatei, um die DB-Verbindung über SSL herzustellen
+Vollständiger Pfad der Datei mit dem Serverzertifikat, um die DB-Verbindung über SSL herzustellen
 
 - Standard: &quot;
 - Erfordert einen Wert
@@ -8084,19 +8295,19 @@ Serverzertifizierung überprüfen
 
 ### `--session-save`
 
-Session Save Handler
+Sitzungsspeicherhandler
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-host`
 
-Vollqualifizierter Hostname, IP-Adresse oder absoluter Pfad bei Verwendung von UNIX-Sockets
+Vollständig qualifizierter Hostname, IP-Adresse oder absoluter Pfad bei Verwendung von UNIX-Sockets
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
@@ -8108,7 +8319,7 @@ Redis-Serverkennwort
 
 ### `--session-save-redis-timeout`
 
-Verbindungs-Timeout, in Sekunden
+Zeitüberschreitung bei Verbindung in Sekunden
 
 - Erfordert einen Wert
 
@@ -8120,13 +8331,13 @@ Eindeutige Zeichenfolge zum Aktivieren persistenter Verbindungen
 
 ### `--session-save-redis-db`
 
-Redis-Datenbanknummer
+Rediv-Datenbanknummer
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-compression-threshold`
 
-Redis-Komprimierungsschwellenwert
+Schwelle für Rediv-Komprimierung
 
 - Erfordert einen Wert
 
@@ -8138,61 +8349,61 @@ Redis-Komprimierungsbibliothek. Werte: gzip (Standard), lzf, lz4, snappy
 
 ### `--session-save-redis-log-level`
 
-Protokollebene neu angeben. Werte: 0 (am wenigsten ausführlich) bis 7 (am meisten ausführlich)
+Redis log level. Werte: 0 (am wenigsten ausführlich) bis 7 (am ausführlichsten)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-max-concurrency`
 
-Maximale Anzahl von Prozessen, die auf eine Sperre einer Sitzung warten können
+Maximale Anzahl von Prozessen, die auf eine Sperrung einer Sitzung warten können
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-break-after-frontend`
 
-Wartezeit in Sekunden, bevor versucht wird, eine Sperre für die Frontend-Sitzung aufzuheben
+Anzahl der Sekunden, die gewartet werden muss, bevor versucht wird, ein Schloss für die Frontend-Sitzung zu brechen
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-break-after-adminhtml`
 
-Wartezeit in Sekunden, bevor versucht wird, eine Sperre für die Admin-Sitzung aufzuheben
+Anzahl der Sekunden, die gewartet werden muss, bevor versucht wird, eine Sperre für die Admin-Sitzung zu unterbrechen
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-first-lifetime`
 
-Lebensdauer der Sitzung für Nicht-Bots beim ersten Schreiben (0 zum Deaktivieren) in Sekunden
+Lebensdauer (in Sekunden) der Sitzung für Nicht-Bots beim ersten Schreiben (verwenden Sie 0, um zu deaktivieren)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-bot-first-lifetime`
 
-Lebensdauer der Sitzung für Bots beim ersten Schreiben in Sekunden (zur Deaktivierung 0 verwenden)
+Lebensdauer (in Sekunden) der Sitzung für Bots beim ersten Schreiben (verwenden Sie 0 zur Deaktivierung)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-bot-lifetime`
 
-Lebensdauer der Sitzung für Bots bei nachfolgenden Schreibvorgängen (zur Deaktivierung mit 0)
+Lebensdauer der Sitzung für Bots bei nachfolgenden Schreibvorgängen (verwenden Sie 0 zur Deaktivierung)
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-disable-locking`
 
-Redis-Sperre deaktivieren. Werte: false (Standard), true
+Redis deaktivieren die Sperrung. Werte: false (Standard), true
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-min-lifetime`
 
-Sitzungslebensdauer in Sekunden ändern
+Redis min session lifetime in seconds
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-max-lifetime`
 
-Maximale Sitzungslebensdauer in Sekunden anpassen
+Gibt die maximale Sitzungslebensdauer in Sekunden zurück.
 
 - Erfordert einen Wert
 
@@ -8204,19 +8415,19 @@ Redis Sentinel Master
 
 ### `--session-save-redis-sentinel-servers`
 
-Redis Sentinel-Server, durch Kommata getrennt
+Redis Sentinel-Server, durch Kommas getrennt
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-sentinel-verify-master`
 
-Redis Sentinel verifizieren Master. Werte: false (Standard), true
+Redis Sentinel verify master. Werte: false (Standard), true
 
 - Erfordert einen Wert
 
 ### `--session-save-redis-sentinel-connect-retries`
 
-Redis Sentinel-Verbindungsversuche.
+Redis Sentinel Connect-Neuversuche.
 
 - Erfordert einen Wert
 
@@ -8240,7 +8451,7 @@ Datenbanknummer für den Cache
 
 ### `--cache-backend-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
@@ -8252,7 +8463,7 @@ Redis-Serverkennwort
 
 ### `--cache-backend-redis-compress-data`
 
-Auf 0 gesetzt, um die Komprimierung zu deaktivieren (Standard ist 1, aktiviert)
+Auf 0 setzen, um die Komprimierung zu deaktivieren (Standard ist 1, aktiviert)
 
 - Erfordert einen Wert
 
@@ -8264,7 +8475,7 @@ Zu verwendende Komprimierungsbibliothek [snappy,lzf,l4z,zstd,gzip] (Leer lassen,
 
 ### `--cache-backend-redis-use-lua`
 
-Auf 1 gesetzt, um LUA zu aktivieren (Standard ist 0, deaktiviert)
+Auf 1 setzen, um lua zu aktivieren (Standard ist 0, deaktiviert)
 
 - Erfordert einen Wert
 
@@ -8276,7 +8487,7 @@ ID-Präfix für Cache-Schlüssel
 
 ### `--allow-parallel-generation`
 
-Generieren von Cache auf nicht blockierende Weise zulassen
+Cache nicht blockieren lassen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8301,7 +8512,7 @@ Datenbanknummer für den Cache
 
 ### `--page-cache-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
@@ -8313,13 +8524,13 @@ Redis-Serverkennwort
 
 ### `--page-cache-redis-compress-data`
 
-Legen Sie hierfür 1 fest, um den vollständigen Seiten-Cache zu komprimieren (verwenden Sie 0, um ihn zu deaktivieren).
+Auf 1 setzen, um den gesamten Seiten-Cache zu komprimieren (verwenden Sie 0, um ihn zu deaktivieren)
 
 - Erfordert einen Wert
 
 ### `--page-cache-redis-compression-lib`
 
-Komprimierungsbibliothek zur Verwendung [snappy,lzf,l4z,zstd,gzip] (Leer lassen, um automatisch zu bestimmen)
+Zu verwendende Komprimierungsbibliothek [snappy,lzf,l4z,zstd,gzip] (Leer lassen, um automatisch zu bestimmen)
 
 - Erfordert einen Wert
 
@@ -8331,43 +8542,43 @@ ID-Präfix für Cache-Schlüssel
 
 ### `--lock-provider`
 
-Anbieternamen sperren
+Name des Anbieters sperren
 
 - Erfordert einen Wert
 
 ### `--lock-db-prefix`
 
-Installationsspezifisches Sperrpräfix zur Vermeidung von Sperrkonflikten
+Installation-spezifisches Sperrpräfix zur Vermeidung von Sperrkonflikten
 
 - Erfordert einen Wert
 
 ### `--lock-zookeeper-host`
 
-Host und Port für die Verbindung mit dem ZooKeeper-Cluster. Beispiel: 127.0.0.1:2181
+Hosten und Anschluss für die Verbindung mit dem Zookeeper-Cluster. Beispiel: 127.0.0.1:2181
 
 - Erfordert einen Wert
 
 ### `--lock-zookeeper-path`
 
-Der Pfad, in dem ZooKeeper Sperren speichert. Der Standardpfad lautet: /magento/locks
+Der Pfad, in dem Zookeeper Sperren speichert. Der Standardpfad lautet: /magento/lock
 
 - Erfordert einen Wert
 
 ### `--lock-file-path`
 
-Der Pfad, unter dem Dateisperren gespeichert werden.
+Der Pfad, in dem Dateisperren gespeichert werden.
 
 - Erfordert einen Wert
 
 ### `--document-root-is-pub`
 
-Markierung, die anzeigt, ob Pub sich im Stammverzeichnis befindet, kann nur „true“ oder „false“ sein.
+Flag zum Anzeigen, ob Pub sich auf dem Stamm befindet, kann nur &quot;true&quot;oder &quot;false&quot;sein
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger`
 
-Handler für den Rückdrucklogger
+Rückdruckprotokollierer
 
 - Erfordert einen Wert
 
@@ -8379,25 +8590,25 @@ Redis-Server
 
 ### `--backpressure-logger-redis-port`
 
-Redis-Server-Listener-Port
+Überwachungsanschluss des Redis-Servers
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger-redis-timeout`
 
-Redis-Server-Zeitüberschreitung
+Redis server timeout
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger-redis-persistent`
 
-Redis persistent
+Rediv beständig
 
 - Erfordert einen Wert
 
 ### `--backpressure-logger-redis-db`
 
-Redis-DB-Nummer
+Redis db number
 
 - Erfordert einen Wert
 
@@ -8421,31 +8632,31 @@ ID-Präfix für Schlüssel
 
 ### `--base-url`
 
-URL, unter der der Speicher verfügbar sein soll. Veraltet, verwenden Sie config:set mit dem Pfad web/unsecure/base_url
+URL, unter der der Store verfügbar sein soll. Veraltet, verwenden Sie config:set mit dem Pfad web/unsecure/base_url
 
 - Erfordert einen Wert
 
 ### `--language`
 
-Standardsprachcode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
+Standardsprachencode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
 
 - Erfordert einen Wert
 
 ### `--timezone`
 
-Standard-Zeitzonencode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/timezone
+Standardmäßiger Zeitzonen-Code. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/timezone
 
 - Erfordert einen Wert
 
 ### `--currency`
 
-Standard-Währungscode. Veraltet, verwenden Sie config:set mit dem Pfad currency/options/base, currency/options/default und currency/options/allow
+Standardwährungscode. Veraltet, verwenden Sie config:set mit dem Pfad currency/options/base, currency/options/default und currency/options/allow
 
 - Erfordert einen Wert
 
 ### `--use-rewrites`
 
-Verwenden Sie Umschreibungen. Veraltet, verwenden Sie config:set mit dem Pfad web/seo/use_rewrites
+Verwenden Sie Neuschreibungen. Veraltet, verwenden Sie config:set mit dem Pfad web/seo/use_rewrites
 
 - Erfordert einen Wert
 
@@ -8457,19 +8668,19 @@ Verwenden Sie sichere URLs. Aktivieren Sie diese Option nur, wenn SSL verfügbar
 
 ### `--base-url-secure`
 
-Basis-URL für die SSL-Verbindung. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/base_url
+Basis-URL für SSL-Verbindung. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/base_url
 
 - Erfordert einen Wert
 
 ### `--use-secure-admin`
 
-Ausführen der Admin-Benutzeroberfläche mit SSL. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/use_in_adminhtml
+Führen Sie die Admin-Oberfläche mit SSL aus. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/use_in_adminhtml
 
 - Erfordert einen Wert
 
 ### `--admin-use-security-key`
 
-Ob die Funktion „Sicherheitsschlüssel“ in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key
+Gibt an, ob eine Funktion des Typs &quot;Sicherheitsschlüssel&quot;in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key .
 
 - Erfordert einen Wert
 
@@ -8487,7 +8698,7 @@ Administratorkennwort
 
 ### `--admin-email`
 
-Admin Email
+Admin-E-Mail
 
 - Akzeptiert einen Wert
 
@@ -8499,7 +8710,7 @@ Vorname des Administrators
 
 ### `--admin-lastname`
 
-Admin-Nachname
+Nachname des Administrators
 
 - Akzeptiert einen Wert
 
@@ -8517,13 +8728,13 @@ Elasticsearch-Server-Host.
 
 ### `--elasticsearch-port`
 
-Elasticsearch-Server-Port.
+Elasticsearch-Server-Anschluss.
 
 - Erfordert einen Wert
 
 ### `--elasticsearch-enable-auth`
 
-Auf 1 gesetzt, um die Authentifizierung zu aktivieren. (Standard ist 0, deaktiviert)
+Auf 1 setzen, um die Authentifizierung zu aktivieren. (Standardwert ist 0, deaktiviert)
 
 - Erfordert einen Wert
 
@@ -8535,7 +8746,7 @@ Benutzername des Elasticsearchs. Nur anwendbar, wenn HTTP-Authentifizierung akti
 
 ### `--elasticsearch-password`
 
-Elasticsearch-Passwort. Nur anwendbar, wenn HTTP-Authentifizierung aktiviert ist
+Passwort des Elasticsearchs. Nur anwendbar, wenn HTTP-Authentifizierung aktiviert ist
 
 - Erfordert einen Wert
 
@@ -8559,13 +8770,13 @@ OpenSearch-Server-Host.
 
 ### `--opensearch-port`
 
-OpenSearch-Server-Port.
+OpenSearch-Serveranschluss.
 
 - Erfordert einen Wert
 
 ### `--opensearch-enable-auth`
 
-Auf 1 gesetzt, um die Authentifizierung zu aktivieren. (Standard ist 0, deaktiviert)
+Auf 1 setzen, um die Authentifizierung zu aktivieren. (Standardwert ist 0, deaktiviert)
 
 - Erfordert einen Wert
 
@@ -8577,7 +8788,7 @@ OpenSearch-Benutzername. Nur anwendbar, wenn HTTP-Authentifizierung aktiviert is
 
 ### `--opensearch-password`
 
-Kennwort für OpenSearch. Nur anwendbar, wenn HTTP-Authentifizierung aktiviert ist
+OpenSearch-Kennwort. Nur anwendbar, wenn HTTP-Authentifizierung aktiviert ist
 
 - Erfordert einen Wert
 
@@ -8589,7 +8800,7 @@ OpenSearch-Indexpräfix.
 
 ### `--opensearch-timeout`
 
-OpenSearch-Server-Zeitüberschreitung.
+OpenSearch-Server-Timeout.
 
 - Erfordert einen Wert
 
@@ -8602,32 +8813,32 @@ Bereinigen der Datenbank vor der Installation
 
 ### `--sales-order-increment-prefix`
 
-Präfix der Kundenauftragsnummer
+Präfix der Bestellnummer
 
 - Erfordert einen Wert
 
 ### `--use-sample-data`
 
-Verwenden von Beispieldaten
+Beispieldaten verwenden
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--enable-modules`
 
-Liste der kommagetrennten Modulnamen. Dieser muss bei der Installation miteinbezogen werden. Verfügbarer magischer Parameter „all„.
+Liste mit kommagetrennten Modulnamen. Dies muss während der Installation enthalten sein. Verfügbarer Zauberparam &quot;all&quot;.
 
 - Akzeptiert einen Wert
 
 ### `--disable-modules`
 
-Liste der kommagetrennten Modulnamen. Dies muss bei der Installation vermieden werden. Verfügbarer magischer Parameter „all„.
+Liste mit kommagetrennten Modulnamen. Dies muss während der Installation vermieden werden. Verfügbarer Zauberparam &quot;all&quot;.
 
 - Akzeptiert einen Wert
 
 ### `--convert-old-scripts`
 
-Ermöglicht die Konvertierung alter Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.xml
+Konvertiert alte Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.xml
 
 - Standard: `false`
 - Akzeptiert einen Wert
@@ -8641,7 +8852,7 @@ Interaktive Magento-Installation
 
 ### `--safe-mode`
 
-Sichere Installation von Magento mit Dumps bei zerstörerischen Vorgängen, wie Säulenentfernung
+Sichere Installation von Magento mit Dumps auf destruktiven Vorgängen, z. B. Spaltenentfernung
 
 - Akzeptiert einen Wert
 
@@ -8653,20 +8864,20 @@ Wiederherstellen entfernter Daten aus Dumps
 
 ### `--dry-run`
 
-Die Magento-Installation wird im Trockenlauf-Modus ausgeführt
+Magento-Installation wird im Trockenlaufmodus ausgeführt
 
 - Standard: `false`
 - Akzeptiert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8680,7 +8891,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8700,14 +8911,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8715,11 +8926,12 @@ Keine interaktiven Fragen stellen
 
 ## `setup:performance:generate-fixtures`
 
-Erzeugt Vorrichtungen
-
 ```bash
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
+
+Generiert Fehlerbehebungen
+
 
 
 ### `profile`
@@ -8737,7 +8949,7 @@ Neuindizierung überspringen
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8751,7 +8963,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8771,14 +8983,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8786,39 +8998,40 @@ Keine interaktiven Fragen stellen
 
 ## `setup:rollback`
 
-Rollback von Magento-Anwendungs-Codebase, Medien und Datenbank
-
 ```bash
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Zurücksetzen der Magento Application Codebase, des Mediums und der Datenbank
+
+
 ### `--code-file`, `-c`
 
-Basisname der Code-Sicherungsdatei in var/backups
+Name der Code-Sicherungsdatei in var/backup
 
 - Erfordert einen Wert
 
 ### `--media-file`, `-m`
 
-Basisname der Mediensicherungsdatei in var/backups
+Name der Mediensicherungsdatei in var/backup
 
 - Erfordert einen Wert
 
 ### `--db-file`, `-d`
 
-Basisname der Datenbank-Backup-Datei in var/backups
+Name der Datenbanksicherungsdatei in var/backup
 
 - Erfordert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8832,7 +9045,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8852,14 +9065,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8867,11 +9080,12 @@ Keine interaktiven Fragen stellen
 
 ## `setup:static-content:deploy`
 
-Stellt statische Ansichtsdateien bereit
-
 ```bash
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
+
+Stellt statische Ansichtsdateien bereit
+
 
 
 ### `languages`
@@ -8884,14 +9098,14 @@ Durch Leerzeichen getrennte Liste von ISO-639-Sprachcodes, für die statische An
 
 ### `--force`, `-f`
 
-Dateien in jedem Modus bereitstellen.
+Bereitstellen von Dateien in einem beliebigen Modus.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--strategy`, `-s`
 
-Stellen Sie Dateien mithilfe einer angegebenen Strategie bereit.
+Stellen Sie Dateien mithilfe der angegebenen Strategie bereit.
 
 - Standard: `quick`
 - Akzeptiert einen Wert
@@ -8905,7 +9119,7 @@ Generieren Sie Dateien nur für die angegebenen Bereiche.
 
 ### `--exclude-area`
 
-Keine Dateien für die angegebenen Bereiche generieren.
+Generieren Sie keine Dateien für die angegebenen Bereiche.
 
 - Standard: `none`
 - Akzeptiert mehrere Werte
@@ -8919,7 +9133,7 @@ Generieren Sie statische Ansichtsdateien nur für die angegebenen Designs.
 
 ### `--exclude-theme`
 
-Keine Dateien für die angegebenen Designs generieren.
+Generieren Sie keine Dateien für die angegebenen Designs.
 
 - Standard: `none`
 - Akzeptiert mehrere Werte
@@ -8933,7 +9147,7 @@ Generieren Sie Dateien nur für die angegebenen Sprachen.
 
 ### `--exclude-language`
 
-Keine Dateien für die angegebenen Sprachen erzeugen.
+Generieren Sie keine Dateien für die angegebenen Sprachen.
 
 - Standard: `none`
 - Akzeptiert mehrere Werte
@@ -8954,20 +9168,20 @@ Die maximal erwartete Ausführungszeit des statischen Bereitstellungsprozesses (
 
 ### `--symlink-locale`
 
-Erstellen Sie Symlinks für die Dateien dieser Gebietsschemata, die für die Bereitstellung übergeben werden, aber keine Anpassungen aufweisen.
+Erstellen Sie Symlinks für die Dateien dieser Gebietsschemas, die zur Bereitstellung übergeben werden, aber keine Anpassungen aufweisen.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--content-version`
 
-Benutzerdefinierte Versionen statischer Inhalte können verwendet werden, wenn die Bereitstellung auf mehreren Knoten ausgeführt wird, um sicherzustellen, dass die Version statischer Inhalte identisch ist und die Zwischenspeicherung ordnungsgemäß funktioniert.
+Benutzerdefinierte Version von statischem Inhalt kann verwendet werden, wenn die Bereitstellung auf mehreren Knoten ausgeführt wird, um sicherzustellen, dass die statische Inhaltsversion identisch ist und die Zwischenspeicherung ordnungsgemäß funktioniert.
 
 - Erfordert einen Wert
 
 ### `--refresh-content-version-only`
 
-Die Aktualisierung der Version statischer Inhalte kann nur verwendet werden, um statische Inhalte im Browser-Cache und CDN-Cache zu aktualisieren.
+Das Aktualisieren der Version statischer Inhalte kann nur verwendet werden, um statische Inhalte im Browser-Cache und CDN-Cache zu aktualisieren.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -8981,7 +9195,7 @@ Stellen Sie keine JavaScript-Dateien bereit.
 
 ### `--no-js-bundle`
 
-Stellen Sie keine JavaScript-Paketdateien bereit.
+Stellen Sie keine JavaScript-Bundle-Dateien bereit.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9002,28 +9216,28 @@ Stellen Sie keine LESS-Dateien bereit.
 
 ### `--no-images`
 
-Keine Bilder bereitstellen.
+Stellen Sie keine Bilder bereit.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-fonts`
 
-Schriftarten-Dateien nicht bereitstellen.
+Stellen Sie keine Schriftartdateien bereit.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-html`
 
-Keine HTML-Dateien bereitstellen.
+Stellen Sie keine HTML-Dateien bereit.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-misc`
 
-Stellen Sie keine Dateien anderer Typen bereit (MD, JBF, CSV usw.).
+Stellen Sie keine Dateien anderer Typen (.md, .jbf, .csv usw.) bereit.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9037,14 +9251,14 @@ Minimieren Sie keine HTML-Dateien.
 
 ### `--no-parent`
 
-Übergeordnete Designs nicht kompilieren. Wird nur in schnellen und standardmäßigen Strategien unterstützt.
+Kompilieren Sie keine übergeordneten Designs. Wird nur in schnellen und standardmäßigen Strategien unterstützt.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9058,7 +9272,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9078,14 +9292,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9093,39 +9307,40 @@ Keine interaktiven Fragen stellen
 
 ## `setup:store-config:set`
 
-Installiert die Store-Konfiguration. Veraltet seit 2.2.0. Verwenden Sie stattdessen config:set .
-
 ```bash
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Installiert die Store-Konfiguration. Seit 2.2.0 veraltet. Verwenden Sie stattdessen config:set
+
+
 ### `--base-url`
 
-URL, unter der der Speicher verfügbar sein soll. Veraltet, verwenden Sie config:set mit dem Pfad web/unsecure/base_url
+URL, unter der der Store verfügbar sein soll. Veraltet, verwenden Sie config:set mit dem Pfad web/unsecure/base_url
 
 - Erfordert einen Wert
 
 ### `--language`
 
-Standardsprachcode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
+Standardsprachencode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/code
 
 - Erfordert einen Wert
 
 ### `--timezone`
 
-Standard-Zeitzonencode. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/timezone
+Standardmäßiger Zeitzonen-Code. Veraltet, verwenden Sie config:set mit dem Pfad general/locale/timezone
 
 - Erfordert einen Wert
 
 ### `--currency`
 
-Standard-Währungscode. Veraltet, verwenden Sie config:set mit dem Pfad currency/options/base, currency/options/default und currency/options/allow
+Standardwährungscode. Veraltet, verwenden Sie config:set mit dem Pfad currency/options/base, currency/options/default und currency/options/allow
 
 - Erfordert einen Wert
 
 ### `--use-rewrites`
 
-Verwenden Sie Umschreibungen. Veraltet, verwenden Sie config:set mit dem Pfad web/seo/use_rewrites
+Verwenden Sie Neuschreibungen. Veraltet, verwenden Sie config:set mit dem Pfad web/seo/use_rewrites
 
 - Erfordert einen Wert
 
@@ -9137,31 +9352,31 @@ Verwenden Sie sichere URLs. Aktivieren Sie diese Option nur, wenn SSL verfügbar
 
 ### `--base-url-secure`
 
-Basis-URL für die SSL-Verbindung. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/base_url
+Basis-URL für SSL-Verbindung. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/base_url
 
 - Erfordert einen Wert
 
 ### `--use-secure-admin`
 
-Ausführen der Admin-Benutzeroberfläche mit SSL. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/use_in_adminhtml
+Führen Sie die Admin-Oberfläche mit SSL aus. Veraltet, verwenden Sie config:set mit dem Pfad web/secure/use_in_adminhtml
 
 - Erfordert einen Wert
 
 ### `--admin-use-security-key`
 
-Ob die Funktion „Sicherheitsschlüssel“ in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key
+Gibt an, ob eine Funktion des Typs &quot;Sicherheitsschlüssel&quot;in Magento-Admin-URLs und -Formularen verwendet werden soll. Veraltet, verwenden Sie config:set mit dem Pfad admin/security/use_form_key .
 
 - Erfordert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9175,7 +9390,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9195,14 +9410,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9210,21 +9425,22 @@ Keine interaktiven Fragen stellen
 
 ## `setup:uninstall`
 
-Deinstalliert die Magento-Anwendung
-
 ```bash
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Deinstalliert die Magento-Anwendung
+
+
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9238,7 +9454,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9258,14 +9474,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9273,29 +9489,30 @@ Keine interaktiven Fragen stellen
 
 ## `setup:upgrade`
 
-Aktualisiert das Magento-Programm, die DB-Daten und das Schema
-
 ```bash
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
+Magento-Anwendung, DB-Daten und Schema aktualisieren
+
+
 ### `--keep-generated`
 
-Verhindert das Löschen der generierten Dateien. Wir raten von der Verwendung dieser Option ab, es sei denn, sie wird in der Produktion bereitgestellt. Wenden Sie sich an Ihren Systemintegrator oder Administrator, um weitere Informationen zu erhalten.
+Verhindert das Löschen generierter Dateien. Wir empfehlen, diese Option nur bei der Bereitstellung in der Produktion zu verwenden. Weitere Informationen erhalten Sie von Ihrem Systemintegrator oder -administrator.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--convert-old-scripts`
 
-Ermöglicht die Konvertierung alter Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.xml
+Konvertiert alte Skripte (InstallSchema, UpgradeSchema) in das Format db_schema.xml
 
 - Standard: `false`
 - Akzeptiert einen Wert
 
 ### `--safe-mode`
 
-Sichere Installation von Magento mit Dumps bei zerstörerischen Vorgängen, wie Säulenentfernung
+Sichere Installation von Magento mit Dumps auf destruktiven Vorgängen, z. B. Spaltenentfernung
 
 - Akzeptiert einen Wert
 
@@ -9307,20 +9524,20 @@ Wiederherstellen entfernter Daten aus Dumps
 
 ### `--dry-run`
 
-Die Magento-Installation wird im Trockenlauf-Modus ausgeführt
+Magento-Installation wird im Trockenlaufmodus ausgeführt
 
 - Standard: `false`
 - Akzeptiert einen Wert
 
 ### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[Basis][path]=/var/www/example.com&amp;MAGE_DIRS[Cache][path]= /var/tmp/cache“
+Zu jedem Befehl hinzufügen, um Magento-Initialisierungsparameter anzupassen. Beispiel: &quot;MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache&quot;
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9334,7 +9551,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9354,14 +9571,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9369,15 +9586,16 @@ Keine interaktiven Fragen stellen
 
 ## `store:list`
 
-Zeigt die Liste der Stores an
-
 ```bash
 bin/magento store:list
 ```
 
+Zeigt die Liste der Stores an
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9391,7 +9609,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9411,14 +9629,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9426,15 +9644,16 @@ Keine interaktiven Fragen stellen
 
 ## `store:website:list`
 
-Zeigt die Liste der Websites an
-
 ```bash
 bin/magento store:website:list
 ```
 
+Zeigt die Liste der Websites an
+
+
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9448,7 +9667,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9468,14 +9687,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9483,16 +9702,17 @@ Keine interaktiven Fragen stellen
 
 ## `theme:uninstall`
 
-Deinstalliert ein Design
-
 ```bash
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
 
+Deinstalliert das Design
+
+
 
 ### `theme`
 
-Pfad des Designs. Der Designpfad sollte als vollständiger Pfad angegeben werden, der „area/provider/name“ lautet. Beispiel: frontend/Magento/blank
+Pfad des Designs. Der Designpfad sollte als vollständiger Pfad angegeben werden, der sich aus Bereich/Anbieter/Name zusammensetzt. Beispiel: frontend/Magento/blank
 
 - Standard: `[]`
 
@@ -9501,21 +9721,21 @@ Pfad des Designs. Der Designpfad sollte als vollständiger Pfad angegeben werden
 
 ### `--backup-code`
 
-Code-Backup erstellen (ohne temporäre Dateien)
+Codesicherung durchführen (ohne temporäre Dateien)
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--clear-static-content`, `-c`
 
-Erzeugte statische Ansichtsdateien löschen.
+Löschen Sie die generierten statischen Ansichtsdateien.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9529,7 +9749,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9549,14 +9769,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9564,36 +9784,37 @@ Keine interaktiven Fragen stellen
 
 ## `varnish:vcl:generate`
 
-Erzeugt VCL-Lack und überträgt es in die Befehlszeile
-
 ```bash
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
 
+Generiert Varnish VCL und echnet es an die Befehlszeile
+
+
 ### `--access-list`
 
-IP-Zugriffsliste, die Varnish löschen kann
+IP-Zugriffsliste, die &quot;Varnish&quot;bereinigen kann
 
 - Standard: `localhost`
 - Erfordert einen Wert
 
 ### `--backend-host`
 
-Host des Web-Backends
+Host des Web-Backend
 
 - Standard: `localhost`
 - Erfordert einen Wert
 
 ### `--backend-port`
 
-Port des Web-Backends
+Anschluss des Web-Backend
 
 - Standard: `8080`
 - Erfordert einen Wert
 
 ### `--export-version`
 
-Die Version der Lackdatei
+Die Version der Datei &quot;Varnish&quot;
 
 - Standard: `6`
 - Erfordert einen Wert
@@ -9607,19 +9828,19 @@ Die Version der Lackdatei
 
 ### `--input-file`
 
-Eingabedatei, aus der VCL generiert werden soll
+Eingabedatei, aus der vcl generiert werden soll
 
 - Erfordert einen Wert
 
 ### `--output-file`
 
-Pfad zur VCL-Datei
+Pfad zur Datei, die vcl schreiben soll
 
 - Erfordert einen Wert
 
 ### `--help`, `-h`
 
-Zeigt die Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe für \ angezeigt.&lt;info>list\&lt;/info> Befehl
+Zeigen Sie Hilfe für den angegebenen Befehl an. Wenn kein Befehl angegeben wird, wird die Hilfe zum Listenbefehl angezeigt
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9633,7 +9854,7 @@ Keine Nachricht ausgeben
 
 ### `--verbose`, `-v|-vv|-vvv`
 
-Erhöhen Sie die Ausführlichkeit der Meldungen: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlersuche.
+Erhöhen Sie die Ausführlichkeit der Nachrichten: 1 für die normale Ausgabe, 2 für die ausführlichere Ausgabe und 3 für die Fehlerbehebung.
 
 - Standard: `false`
 - Akzeptiert keinen Wert
@@ -9653,14 +9874,14 @@ ANSI-Ausgabe erzwingen (oder deaktivieren —no-ansi)
 
 ### `--no-ansi`
 
-Negieren Sie die Option „—ansi“
+Die Option &quot;—ansi&quot;umkehren
 
 - Standard: `false`
 - Akzeptiert keinen Wert
 
 ### `--no-interaction`, `-n`
 
-Keine interaktiven Fragen stellen
+Interaktive Fragen stellen
 
 - Standard: `false`
 - Akzeptiert keinen Wert
