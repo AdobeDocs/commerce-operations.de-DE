@@ -2,9 +2,9 @@
 title: Sicherheit und Betriebsmodell für gemeinsame Verantwortung
 description: Erfahren Sie mehr über die Sicherheitsaufgaben aller an Ihrem Adobe Commerce-Projekt beteiligten Parteien in Bezug auf Cloud-Infrastrukturprojekte.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
+source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2805'
 ht-degree: 0%
 
 ---
@@ -900,6 +900,6 @@ Merchants sind für die Synchronisierung von Daten zwischen Produktions- und Sta
 | Verfügbarkeit von CPU-Ressourcen, Rechenzentrum, Festplattenspeicher | R |   |
 | Verfügbarkeit und Ausführung von Überlastungskapazitäten oder Notfallvergrößerung | R |   |
 | Anfordern der Übernahmekapazität |     | R |
-| Überwachen der vCPU-Auslastung anhand von Beschränkungen | R |   |
+| Überwachen der vCPU-Auslastung anhand der Grenzwerte | R |   |
 
 {style="table-layout:auto"}
