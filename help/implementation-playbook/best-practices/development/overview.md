@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Best Practices für die Implementierung
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,15 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 | [Codeüberprüfung](code-review.md) | Empfohlener Validierungsprozess, um sicherzustellen, dass die implementierte Funktionalität die Anforderungen erfüllt |
 | [Composer vs. Git](code-management.md) | Bestimmen Sie, wie Sie benutzerdefinierten Code unter Berücksichtigung der Versionsverwaltung, der Code-Komplexität und der Abhängigkeitsverwaltung verteilen. |
 | [Verzweigungsstrategie](git-branching.md) | Quellcode in Git-Repositorys verwalten |
-| [GRA-Beispiele](../../architecture/global-reference/examples.md) | Grundlegendes zu den gemeinsamen Methoden zur Organisation einer [globale Referenzarchitektur](../../architecture/global-reference/overview.md) Codebasis |
+
+## Plattform und Dienste
+
+| Best Practice | Beschreibung |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [Builds und Bereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsschritte von Adobe Commerce in Cloud-Infrastrukturprojekten |
+| Debugging | Systematisches und effektives Debugging des Adobe Commerce-Frameworks |
+| [Statische Inhaltsbereitstellung](static-content-deployment.md) | Vermeiden Sie Probleme mit statischem Inhalt, der nicht auf Ihrer Storefront angezeigt wird. |
+| [Fehlerbehebung](troubleshooting.md) | Beheben häufiger Probleme bei der Implementierung von Adobe Commerce |
 
 ## Datenbank
 
@@ -67,12 +75,3 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 | [Erweiterungen](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Beschreibt Entwicklungsmuster, um die Kompatibilität zwischen Ihrer Erweiterung, zukünftigen Versionen von Adobe Commerce und anderen benutzerdefinierten Erweiterungen sicherzustellen |
 | [Private Inhaltsbausteine](private-content-block-configuration.md) | Konfigurieren privater Inhaltsbausteine zur Optimierung der Storefront-Leistung |
 | [Ändern des Kern- und Drittanbieter-PHP-Codes](modifying-core-and-third-party-code.md) | Ändern Sie die Funktionalität, das Ergebnis oder die Eingabe von Code, den Sie nicht erstellt haben oder den Sie nicht direkt steuern |
-
-## Plattform und Dienste
-
-| Best Practice | Beschreibung |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds und Bereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsschritte von Adobe Commerce in Cloud-Infrastrukturprojekten |
-| Debugging | Systematisches und effektives Debugging des Adobe Commerce-Frameworks |
-| [Statische Inhaltsbereitstellung](static-content-deployment.md) | Vermeiden Sie Probleme mit statischem Inhalt, der nicht auf Ihrer Storefront angezeigt wird. |
-| [Fehlerbehebung](troubleshooting.md) | Beheben häufiger Probleme bei der Implementierung von Adobe Commerce |
