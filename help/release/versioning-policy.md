@@ -2,9 +2,9 @@
 title: Versionsrichtlinie
 description: Erfahren Sie mehr über die verschiedenen Arten von Adobe Commerce-Versionen, einschließlich kleineren Versionen, Patch, Sicherheits-Patch, Funktion, Hotfix, individuellem Patch und benutzerdefiniertem Patch.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -46,15 +46,7 @@ Die folgenden Richtlinien gelten für Patch-Versionen:
 
 ### Sicherheits-Patch-Version
 
-**Fehlerbehebung bei der Sicherheit**: Eine Software-Codeänderung, die ein festgestelltes Sicherheitsproblem behebt und erwartete Ergebnisse in einem betroffenen Produktbereich liefert. Diese Korrekturen sind im Allgemeinen abwärtskompatibel.
-
-**Verbesserung der Sicherheit**: Eine Software-Verbesserung oder Konfigurationsänderung, um die Sicherheit innerhalb der Anwendung proaktiv zu verbessern. Diese Sicherheitsverbesserungen helfen bei der Behebung von Sicherheitsrisiken, die sich auf die Sicherheitsstellung der Adobe Commerce-Anwendung auswirken, aber abwärtskompatibel sein können.
-
-Mit Sicherheits-Patch-Versionen können Sie Ihre Site sicherer halten, ohne zusätzliche Qualitätsverbesserungen und -verbesserungen anzuwenden, die in einer vollständigen Patch-Version enthalten sind. Sicherheits-Patch-Versionen werden mit &quot;-pN&quot;angehängt, wobei N die inkrementelle Patch-Version ist, die mit 1 beginnt (z. B. 2.3.5-p1). Sicherheits-Patch-Versionen können auch Hotfixes enthalten, die erforderlich sind, um wichtige Probleme zu beheben, die sich auf die Adobe Commerce-Anwendung auswirken.
-
-Jede Sicherheits-Patch-Version basiert auf der vorherigen vollständigen Patch-Version. Es enthält Qualitäts- und Sicherheitskorrekturen aus früheren Patch-Versionen und Sicherheitskorrekturen, die zwischen der vorherigen vollständigen Patch-Version und der Sicherheits-Patch-Version erstellt wurden.
-
-Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [Schnellstart-Installation](../installation/composer.md#example---security-patch).
+{{$include /help/_includes/security-patch-release-overview.md}}
 
 ## BETA Patch-Version
 
