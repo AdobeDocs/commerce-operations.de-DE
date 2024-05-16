@@ -2,7 +2,7 @@
 title: Veröffentlichungszeitplan
 description: Erfahren Sie, wann Adobe die Veröffentlichung von neuen Funktionen für Adobe Commerce anzukündigen plant.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ Die folgende Tabelle enthält die Daten für geplante Versionen (Datumsangaben k
    <tr>
       <td colspan="3"><strong>Legende</strong>
          <ul>
-           <li><strong><img alt="Symbol &quot;B2B-Funktion&quot;" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Neue Funktionen, Verbesserungen und Fehlerbehebungen für die B2B-Erweiterung für Adobe Commerce. Weitere Informationen zu Versionen der B2B-Erweiterung finden Sie in den [B2B-Versionshinweisen](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).</li>
+           <li><strong><img alt="Symbol &quot;B2B-Funktion&quot;" src="../assets/icons/enterprise.svg"></img> B2B</strong>—Neue Funktionen, Verbesserungen und Fehlerbehebungen für die B2B-Erweiterung für Adobe Commerce. Weitere Informationen zu Versionen der B2B-Erweiterung finden Sie in den [B2B-Versionshinweisen](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).</li>
             <li><strong><img alt="Symbol für Erweiterungsfunktion" src="../assets/icons/brackets.svg"></img> Erweiterbarkeit</strong>—Neue Entwicklertools und -dienste für Out-of-Process-Erweiterbarkeit, die unabhängig von Patch-Versionen bereitgestellt werden. Zum Beispiel Admin UI SDK, Adobe I/O Events für Commerce und API Mesh.</li>
             <li><strong><img alt="Symbol für Infrastrukturfunktion" src="../assets/icons/servers.svg"></img> Infrastruktur</strong>—Neue Funktionen und Verbesserungen für Adobe Commerce in der Cloud-Infrastruktur und die Cloud Tools Suite für Commerce-Pakete, die für die Bereitstellung und Verwaltung von Adobe Commerce-Installationen und -Upgrades auf der Cloud-Plattform entwickelt wurden.</li>
             <li><strong><img alt="Symbol &quot;Patch Release&quot;" src="../assets/icons/file-code.svg"></img> Patches</strong>—Aktualisierungen der Adobe Commerce-PHP-Hauptanwendung, die Sicherheits-, Compliance-, Leistungs- und Qualitätskorrekturen mit hoher Priorität umfassen.</li>
