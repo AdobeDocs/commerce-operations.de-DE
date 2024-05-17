@@ -1,11 +1,11 @@
 ---
 title: Implementierungs-Playbook
-description: Ziel des Playbook für die Commerce-Implementierung
+description: Ziel des Playbooks für die Commerce-Implementierung
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
 feature: Best Practices, Cloud, Integration
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---

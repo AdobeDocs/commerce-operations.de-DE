@@ -4,7 +4,7 @@ description: Erfahren Sie, wie die Aktualisierung Ihres Adobe Commerce-Projekts 
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
