@@ -2,9 +2,9 @@
 title: Software Lifecycle Policy
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 01e926e3cf36f27f5292a0b9ce7a6209d4960cc2
+source-git-commit: 7df5edf2acba706fb01f58cc3749c4a2bf136fc5
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '426'
 ht-degree: 5%
 
 ---
@@ -22,22 +22,25 @@ Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
 
 - Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Dienste und Softwareabhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während Kunden die dreijährige Supportzeit für Adobe Commerce nutzen. Siehe [Systemanforderungen](../installation/system-requirements.md) eine vollständige Liste der getesteten und unterstützten Drittanbietertechnologien.
 
+- Adobe bietet Kompatibilität mit Drittanbieterdiensten und Softwareabhängigkeiten, während Kunden die dreijährige Supportzeit für Adobe Commerce im Rahmen von reinen Sicherheits-Patch-Versionen nutzen, jedoch nur, wenn dies möglich ist, ohne dass rückwärtskompatible Änderungen vorgenommen werden.
+
 ## Ende der Software-Unterstützung
 
-| Version | Allgemeine Verfügbarkeit | Ende der Software-Unterstützung<sup>1</sup> | Abhängige PHP-Version |
-|----------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.7 | 9. April 2024 | 9. April 2027 | 8.2 und 8.3 |
-| Adobe Commerce 2.4.6 | 14. März 2023 | 14. März 2026 | 8.1 und 8.2 |
-| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 8,1 |
-| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 8,1 |
+| Version | Allgemeine Verfügbarkeit | Ende der Software-Unterstützung<sup>1</sup> | Abhängige PHP-Version | Abhängige MariaDB-Version |
+|----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
+| Adobe Commerce 2.4.7 | 9. April 2024 | 9. April 2027 | 8.2 und 8.3 | 10,6 |
+| Adobe Commerce 2.4.6 | 14. März 2023 | 14. März 2026 | 8.1 und 8.2 | 10,6 |
+| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 8,1 | Artikel 10 Absatz 5<sup>2</sup> |
+| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 8,1 | Artikel 10 Absatz 5<sup>3</sup> |
 
 {style="table-layout:auto"}
 
-<sup>1 Ende der Software-Unterstützung umfasst sowohl das Ende von Qualitätsverbesserungen als auch das Ende von Sicherheitskorrekturen.</sup><br>
-
 >[!NOTE]
 >
->Siehe [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> Das Ende der Software-Unterstützung umfasst sowohl das Ende von Qualitätsverbesserungen als auch das Ende von Sicherheitskorrekturen.
+>- <sup>2</sup> Beginnend mit dem 2.4.5-p8 Sicherheits-Patch.
+>- <sup>3</sup> Beginnend mit dem 2.4.4-p9 Sicherheits-Patch.
+>- Siehe [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
