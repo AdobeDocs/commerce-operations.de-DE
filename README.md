@@ -1,7 +1,7 @@
 ---
-source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
+source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '719'
 ht-degree: 3%
 
 ---
@@ -112,6 +112,12 @@ So aktualisieren Sie Vorlageninhalte:
 
    >**NOTE:** Sie müssen das Skript über die `_jekyll` Verzeichnis. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie die Ruby-Abhängigkeiten zuerst mit der `bundle install` Befehl.
 
+1. Navigieren Sie zurück zum `root` Verzeichnis.
+
+   ```
+   cd ..
+   ```
+
 1. Überprüfen Sie, ob die erwarteten `help/_includes/templated` -Dateien geändert.
 
    ```
@@ -122,7 +128,15 @@ So aktualisieren Sie Vorlageninhalte:
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
+   ```
+
+1. Push deine Änderungen.
+
+   ```
+   git add
+   git commit -m "_descriptive message of the intended commit_"
+   git push
    ```
 
 Weitere Informationen finden Sie in der Jekyll-Dokumentation . [Datendateien](https://jekyllrb.com/docs/datafiles), [Flüssige Filter](https://jekyllrb.com/docs/liquid/filters/)und anderen Funktionen.
