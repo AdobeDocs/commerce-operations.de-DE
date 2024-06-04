@@ -2,9 +2,9 @@
 title: Sicherheit und Einhaltung
 description: Erfahren Sie mehr über Sicherheits-, Datenschutz- und branchenspezifische Compliance-Ressourcen für Ihr Adobe Commerce-Projekt.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f5bcf5c875234875a61664214e50806cc6ba2119
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,9 @@ Dieser Abschnitt enthält Informationen zur Sicherheit, zum Datenschutz und zur 
 
 ## Sicherheit
 
-- [Adobe-Produktsicherheit](https://helpx.adobe.com/security.html): Die neuesten Patches, Sicherheitsupdates und Best Practices für Adobe Commerce.
-- [Adobe Trust Center](https://www.adobe.com/trust.html): Die neuesten verfügbaren Informationen zu Betriebszustand, Sicherheit, Datenschutz und Compliance von Adobe Cloud-Diensten.
+- [Adobe-Produktsicherheit](https://helpx.adobe.com/security.html): Erfahren Sie mehr über die neuesten Patches, Sicherheitsaktualisierungen und Best Practices für Adobe Commerce.
+- [Adobe Trust Center](https://www.adobe.com/trust.html): Greifen Sie auf die neuesten verfügbaren Informationen über den Betriebszustand, die Sicherheit, den Datenschutz und die Compliance aller Adobe-Cloud-Dienste zu.
+- [Site-weites Analyse-Tool](../tools/site-wide-analysis-tool/dashboard.md): Zeigen Sie optimierte Sicherheitseinblicke über Ihre Adobe Commerce-Site an, einschließlich Sicherheitsscans, End-of-Life-Services und Sicherheitsempfehlungen.
 
 ## Compliance
 

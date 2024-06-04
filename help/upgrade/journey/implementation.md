@@ -2,9 +2,9 @@
 title: Upgrade der Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Implementierung der Aktualisierung für Adobe Commerce-Projekte.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a81d2c0b6526c2c8c8c5c4652c83595667985543
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '826'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
    - Aktuelle installierte Version
    - Upgrade der Zielversion
    - Anzahl und Details der gefundenen kritischen Fehler
+
+  >[!TIP]
+  >
+  >Alle diese Informationen (und mehr) sind im Site-weiten Analyse-Tool verfügbar. [Dashboard](../../tools/site-wide-analysis-tool/dashboard.md).
 
 - Upgrade der Dienste zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzulegen, welche Dienste Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zum _Upgrade auf_ Spalte.
 
