@@ -2,7 +2,7 @@
 title: Empfohlene Informationen für Upgrades
 description: Lesen Sie die empfohlenen Informationen zur Planung Ihres Adobe Commerce-Upgrades.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 9542084e6ed1a4ebbbb33373d9c7bc9b463b9d5d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
@@ -42,7 +42,7 @@ Weitere Informationen zu Adobe Commerce-Upgrades finden Sie auf dieser Seite.
         <p>Überprüfen Sie Details zu Adobe Commerce-Versionen und -Richtlinien.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Häufig gestellte Fragen zum Ende des Supports für Adobe Commerce-Software</a></li>
-            <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">Commerce Marketplace-Richtlinie</a></li>
+            <li><a href="https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/requirements/">Commerce Marketplace-Richtlinie</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-release-strategy-lifecycle-policy.html">Häufig gestellte Fragen zur neuen Adobe Commerce-Versionsstrategie, aktualisierten Lebenszyklusrichtlinie und erweiterten Unterstützung</a></li>
             <li><a href="https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf">Lebenszyklusrichtlinie</a></li>
             <li><a href="../../release/schedule.md">Veröffentlichungszeitplan</a></li>
