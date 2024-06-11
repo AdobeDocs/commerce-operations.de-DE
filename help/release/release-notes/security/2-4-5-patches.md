@@ -2,17 +2,27 @@
 title: Versionshinweise zu Adobe Commerce 2.4.5 Sicherheits-Patch
 description: Erfahren Sie mehr über Sicherheitsfehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsrelevante Updates, die in den Sicherheits-Patch-Versionen für Adobe Commerce Version 2.4.5 enthalten sind.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
 
 
-# Versionshinweise für Adobe Commerce 2.4.5-Sicherheitspatches
+# Versionshinweise für Adobe Commerce 2.4.5-Sicherheits-Patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+Die Adobe Commerce-Sicherheitsversion 2.4.5-p7 enthält Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen 2.4.5 identifiziert wurden.
+
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Plattformaktualisierungen
+
+* **MariaDB 10.5-Unterstützung**. Diese Patch-Version führt die Kompatibilität mit MariaDB Version 10.5 ein. Adobe Commerce ist weiterhin mit MariaDB-Version 10.4 kompatibel, Adobe empfiehlt jedoch die Verwendung von Adobe Commerce 2.4.5-p8 und allen kommenden 2.4.5 Sicherheits-Patch-Versionen nur mit MariaDB-Version 10.5, da die MariaDB 10.4-Wartung am 18. Juni 2024 endet. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -107,5 +117,3 @@ Die Adobe Commerce-Sicherheitsversion 2.4.5-p1 enthält Sicherheitsfehlerbehebun
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 Eine der Sicherheitsfehlerbehebungen umfasste die Erstellung einer neuen Konfigurationseinstellung. Die **E-Mail-Bestätigung erforderlich, wenn E-Mail geändert wurde** -Konfigurationseinstellungen ermöglichen es Administratoren, eine E-Mail-Bestätigung zu verlangen, wenn ein Administrator seine E-Mail-Adresse ändert. <!-- AC-6292-->
-
-

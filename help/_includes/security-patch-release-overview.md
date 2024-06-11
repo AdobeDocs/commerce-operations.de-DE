@@ -1,11 +1,11 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
-# Über Adobe Commerce Security Patch Releases
+# Über Adobe Commerce-Sicherheits-Patch-Versionen
 
 **Fehlerbehebung bei der Sicherheit**: Eine Software-Codeänderung, die ein festgestelltes Sicherheitsproblem behebt und erwartete Ergebnisse in einem betroffenen Produktbereich liefert. Diese Korrekturen sind im Allgemeinen abwärtskompatibel.
 

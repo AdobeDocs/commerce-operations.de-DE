@@ -2,23 +2,23 @@
 title: Versionshinweise für Adobe Commerce 2.4.3-Sicherheitspatches
 description: Erfahren Sie mehr über Sicherheitsfehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsrelevante Updates, die in den Sicherheits-Patch-Versionen für Adobe Commerce Version 2.4.3 enthalten sind.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
 
-# Versionshinweise zu Adobe Commerce 2.4.3 Security Patch
+
+# Versionshinweise für Adobe Commerce 2.4.3-Sicherheits-Patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
-Die Sicherheitsversion Adobe Commerce 2.4.3-p3 enthält Sicherheitskorrekturen für Sicherheitslücken, die in der vorherigen Version (Adobe Commerce 2.4.3 und Magento Open Source 2.4.3) identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
+Die Sicherheitsversion Adobe Commerce 2.4.3-p3 enthält Sicherheitskorrekturen für Sicherheitslücken, die in früheren Versionen 2.4.3 identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
-
 
 ### Anwenden `AC-3022.patch` weiterhin DHL als Reederei anbieten
 
@@ -39,7 +39,6 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [
 ### Anwenden `AC-3022.patch` weiterhin DHL als Reederei anbieten
 
 DHL hat die Schemaversion 6.2 eingeführt und wird in naher Zukunft die Schemaversion 6.0 veraltet sein. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Merchants, die diese Versionen bereitstellen, sollten gelten `AC-3022.patch` so schnell wie möglich DHL als Reederei anbieten. Siehe [Wenden Sie einen Patch an, um DHL weiterhin als Versandunternehmen anzubieten.](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Knowledge Base-Artikel für Informationen zum Herunterladen und Installieren des Patches.
-
 
 ### Sicherheitshinweise
 
@@ -65,7 +64,6 @@ Die Adobe Commerce-Sicherheitsversion 2.4.3-p1 enthält Sicherheitsfehlerbehebun
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). Die Patch-Version enthält auch Fehlerbehebungen für die [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html), und [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) von Anbietern entwickelte Erweiterungen.
 
-
 ### Anwenden `AC-3022.patch` weiterhin DHL als Reederei anbieten
 
 DHL hat die Schemaversion 6.2 eingeführt und wird in naher Zukunft die Schemaversion 6.0 veraltet sein. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Merchants, die diese Versionen bereitstellen, sollten gelten `AC-3022.patch` so schnell wie möglich DHL als Reederei anbieten. Siehe [Wenden Sie einen Patch an, um DHL weiterhin als Versandunternehmen anzubieten.](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) Knowledge Base-Artikel für Informationen zum Herunterladen und Installieren des Patches.
@@ -87,4 +85,3 @@ Diese Version enthält den folgenden Hotfix und alle Hotfixes, die für die vorh
 **Schwachstellen beim aktuellen Penetrationstest** wurden in dieser Version behoben. <!-- MC-42431-->
 
 Der nicht unterstützte Quellausdruck `unsafe-inline` wurde aus der Inhaltssicherheitsrichtlinie entfernt `frame-ancestors` Richtlinie. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
-

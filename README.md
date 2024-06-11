@@ -1,5 +1,5 @@
 ---
-source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
+source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # Technische Dokumentation zu Adobe Commerce
 
-Wir freuen uns über Beiträge von unserer Community sowie von Adobe-Mitarbeitern von außerhalb der Dokumentationsteams.
+Wir freuen uns über Beiträge aus der Community sowie von Adobe-Mitarbeitern von außerhalb der Dokumentationsteams.
 
 ## Adobe Open Source-Verhaltenskodex
 
@@ -67,7 +67,7 @@ Beispiele für vorlagenbasierte Inhalte sind unter anderem:
 
 ### Vorlageninhalt generieren
 
-Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabellen zur Produktverfügbarkeit und zu den Systemanforderungen hinzufügen. Die Wartung aller anderen Vorlageninhalte wird entweder von einem dedizierten Team-Mitglied automatisiert oder verwaltet. Diese Anweisungen sind für &quot;die meisten&quot;Autoren gedacht.
+Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabellen zur Produktverfügbarkeit und zu den Systemanforderungen hinzufügen. Die Wartung aller anderen Vorlageninhalte wird entweder von einem dedizierten Team-Mitglied automatisiert oder verwaltet. Diese Anweisungen sind für die meisten Autoren gedacht.
 
 >**NOTE:**
 >
