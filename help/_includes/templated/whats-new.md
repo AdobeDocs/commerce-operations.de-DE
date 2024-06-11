@@ -1,8 +1,8 @@
 ---
-source-git-commit: 050fa7a35bb5f6f87d364e4c381062ca12baecc7
+source-git-commit: 87fa1874f25e58da103efb073078fa8d930b1265
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 3%
+source-wordcount: '140'
+ht-degree: 2%
 
 ---
 # Neue Vorlage
@@ -22,6 +22,24 @@ Erfahren Sie mehr über die neue Dokumentation und wichtige Aktualisierungen der
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><p>Veröffentlichte Versionshinweise für die Sicherheits-Patches vom Juni 2024:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p1</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p6</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p8</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p9</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/000fe5ac88b31e5172c35b629d26423afcca214d">000fe5</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Aktualisiert <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> gemäß der Patch-Version vom Juni 2024. Außerdem wurde die Darstellung der Systemanforderungen-Tabellen geändert.</p>
+</td>
+      <td>technisch</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aef697509227b1dfebb801b0e1e098da90201971">aef697</a> (commit)</td>
+    </tr>
+    <tr>
+      <td><p>Aktualisierte Unterstützung für RabbitMQ in 2.4.5-p7 und 2.4.5-p8 in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a>.</p>
+</td>
+      <td>technisch</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/20823bae109f5b053f352b0a13275acecf991904">20823b</a> (commit)</td>
+    </tr>
     <tr>
       <td><p>Die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">UCT-CLI-Referenz</a>.</p>
 </td>
