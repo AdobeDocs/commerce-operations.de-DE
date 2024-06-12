@@ -2,9 +2,9 @@
 title: Sicherheit und Betriebsmodell für gemeinsame Verantwortung
 description: Erfahren Sie mehr über die Sicherheitsaufgaben aller an Ihrem Adobe Commerce-Projekt beteiligten Parteien in Bezug auf Cloud-Infrastrukturprojekte.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
+source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
 workflow-type: tm+mt
-source-wordcount: '2805'
+source-wordcount: '2802'
 ht-degree: 0%
 
 ---
@@ -605,7 +605,7 @@ In den folgenden Zusammenfassungstabellen werden die operativen Zuständigkeiten
 
 #### Synchronisieren von Umgebungen
 
-Merchants sind für die Synchronisierung von Daten zwischen Produktions- und Staging-Umgebungen verantwortlich.
+Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwortlich.
 
 #### Patchen
 
