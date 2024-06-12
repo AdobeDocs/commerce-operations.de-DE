@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1996'
 ht-degree: 0%
 
 ---
@@ -23,18 +23,18 @@ Adobe Commerce verwendet Composer zur Verwaltung von PHP-Paketen.
 
 Die `composer.json` -Datei deklariert die Liste der Pakete, während die `composer.lock` -Datei speichert eine vollständige Liste der Pakete (eine vollständige Version jedes Pakets und seiner Abhängigkeiten), die zum Erstellen einer Installation von Adobe Commerce verwendet werden.
 
-Die folgende Referenzdokumentation wird aus der `composer.lock` und es umfasst die erforderlichen Pakete, die in Adobe Commerce 2.4.7 enthalten sind.
+Die folgende Referenzdokumentation wird aus der `composer.lock` und es umfasst die erforderlichen Pakete, die in Adobe Commerce 2.4.7-p1 enthalten sind.
 
 ## Abhängigkeiten
 
-`magento/product-enterprise-edition 2.4.7` weist die folgenden Abhängigkeiten auf:
+`magento/product-enterprise-edition 2.4.7-p1` weist die folgenden Abhängigkeiten auf:
 
 ```config
 adobe-commerce/extensions-metapackage: ~2.0
 colinmollenhour/cache-backend-file: ^1.4
 colinmollenhour/cache-backend-redis: ^1.16
 colinmollenhour/credis: ^1.15
-colinmollenhour/php-redis-session-abstract: ^1.5
+colinmollenhour/php-redis-session-abstract: ~1.5.3
 composer/composer: ^2.0, !=2.2.16
 elasticsearch/elasticsearch: ~7.17.0 || ~8.5.0
 ext-bcmath: *
@@ -86,7 +86,7 @@ magento/composer: ^1.10.0-beta1
 magento/composer-dependency-version-audit-plugin: ^0.1
 magento/framework-foreign-key: 100.4.6
 magento/magento-composer-installer: >=0.4.0
-magento/magento2-ee-base: 2.4.7
+magento/magento2-ee-base: 2.4.7-p1
 magento/module-admin-gws: 100.4.7
 magento/module-admin-gws-configurable-product: 100.4.4
 magento/module-admin-gws-staging: 100.4.4
@@ -118,7 +118,7 @@ magento/module-catalog-permissions-graph-ql: 100.4.5
 magento/module-catalog-rule-staging: 100.4.7
 magento/module-catalog-staging: 100.4.7
 magento/module-catalog-staging-graph-ql: 100.4.6
-magento/module-catalog-url-rewrite-staging: 100.4.6
+magento/module-catalog-url-rewrite-staging: 100.4.6-p1
 magento/module-checkout-address-search: 100.4.6
 magento/module-checkout-address-search-gift-registry: 100.4.3
 magento/module-checkout-staging: 100.4.6
@@ -184,7 +184,7 @@ magento/module-reward: 101.2.7
 magento/module-reward-graph-ql: 100.4.6
 magento/module-reward-staging: 100.4.4
 magento/module-rma: 101.2.7
-magento/module-rma-graph-ql: 100.4.6
+magento/module-rma-graph-ql: 100.4.6-p1
 magento/module-rma-staging: 100.4.4
 magento/module-sales-archive: 101.0.5
 magento/module-sales-rule-staging: 100.4.6
@@ -208,9 +208,9 @@ magento/module-website-restriction: 100.4.6
 magento/module-weee-staging: 100.4.4
 magento/module-wishlist-gift-card: 100.4.3
 magento/module-wishlist-gift-card-graph-ql: 100.4.3
-magento/page-builder-commerce: 1.7.4
-magento/product-community-edition: 2.4.7
-magento/security-package-ee: 1.0.2
+magento/page-builder-commerce: 1.7.4-p1
+magento/product-community-edition: 2.4.7-p1
+magento/security-package-ee: 1.0.2-p1
 magento/theme-adminhtml-spectrum: 100.4.2
 magento/zend-cache: ^1.16
 magento/zend-db: ^1.16
@@ -859,7 +859,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/justinrainbow/json-schema.git">justinrainbow/json-schema</a>
+      <a href="https://github.com/jsonrainbow/json-schema.git">justinrainbow/json-schema</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine Bibliothek zum Validieren eines JSON-Schemas.</td>
@@ -957,6 +957,13 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Allgemeine Benutzeroberfläche für das Zwischenspeichern von Bibliotheken</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/php-fig/clock.git">psr/uhr</a>
     </td>
     <td>Bibliothek</td>
@@ -988,7 +995,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/php-fig/http-factory.git">psr/http-factory</a>
     </td>
     <td>Bibliothek</td>
-    <td>Gemeinsame Schnittstellen für PSR-7-HTTP-Nachrichtenfabriken</td>
+    <td>PSR-17: Gemeinsame Schnittstellen für PSR-7 HTTP-Nachrichtenfabriken</td>
   </tr>
   <tr>
     <td>

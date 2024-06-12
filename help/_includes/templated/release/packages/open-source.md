@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 1f8fda87e0d39fdcf2372f72373a0b2ea486d25a
 workflow-type: tm+mt
-source-wordcount: '1986'
+source-wordcount: '1996'
 ht-degree: 0%
 
 ---
@@ -23,18 +23,18 @@ Magento Open Source verwendet Composer zur Verwaltung von PHP-Paketen.
 
 Die `composer.json` -Datei deklariert die Liste der Pakete, während die `composer.lock` -Datei speichert eine vollständige Liste der Pakete (eine Vollversion jedes Pakets und seiner Abhängigkeiten), die zum Erstellen einer Magento Open Source-Installation verwendet werden.
 
-Die folgende Referenzdokumentation wird aus der `composer.lock` -Datei und umfasst die erforderlichen Pakete, die in Magento Open Source 2.4.7 enthalten sind.
+Die folgende Referenzdokumentation wird aus der `composer.lock` -Datei, und es umfasst die erforderlichen Pakete, die in Magento Open Source 2.4.7-p1 enthalten sind.
 
 ## Abhängigkeiten
 
-`magento/product-community-edition 2.4.7` weist die folgenden Abhängigkeiten auf:
+`magento/product-community-edition 2.4.7-p1` weist die folgenden Abhängigkeiten auf:
 
 ```config
 adobe-commerce/os-extensions-metapackage: ~1.0
 colinmollenhour/cache-backend-file: ^1.4
 colinmollenhour/cache-backend-redis: ^1.16
 colinmollenhour/credis: ^1.15
-colinmollenhour/php-redis-session-abstract: ^1.5
+colinmollenhour/php-redis-session-abstract: ~1.5.3
 composer/composer: ^2.0, !=2.2.16
 elasticsearch/elasticsearch: ~7.17.0 || ~8.5.0
 ext-bcmath: *
@@ -83,11 +83,11 @@ league/flysystem-aws-s3-v3: ^2.4
 lib-libxml: *
 magento/composer: ^1.10.0-beta1
 magento/composer-dependency-version-audit-plugin: ^0.1
-magento/framework: 103.0.7
+magento/framework: 103.0.7-p1
 magento/framework-amqp: 100.4.5
 magento/framework-bulk: 101.0.3
 magento/framework-message-queue: 100.4.7
-magento/inventory-metapackage: 1.2.7
+magento/inventory-metapackage: 1.2.7-p1
 magento/language-de_de: 100.4.0
 magento/language-en_us: 100.4.0
 magento/language-es_es: 100.4.0
@@ -96,7 +96,7 @@ magento/language-nl_nl: 100.4.0
 magento/language-pt_br: 100.4.0
 magento/language-zh_hans_cn: 100.4.0
 magento/magento-composer-installer: >=0.4.0
-magento/magento2-base: 2.4.7
+magento/magento2-base: 2.4.7-p1
 magento/module-admin-analytics: 100.4.6
 magento/module-admin-notification: 100.4.6
 magento/module-advanced-pricing-import-export: 100.4.7
@@ -117,7 +117,7 @@ magento/module-bundle-import-export: 100.4.6
 magento/module-cache-invalidate: 100.4.5
 magento/module-captcha: 100.4.7
 magento/module-cardinal-commerce: 100.4.5
-magento/module-catalog: 104.0.7
+magento/module-catalog: 104.0.7-p1
 magento/module-catalog-analytics: 100.4.4
 magento/module-catalog-cms-graph-ql: 100.4.3
 magento/module-catalog-customer-graph-ql: 100.4.6
@@ -151,7 +151,7 @@ magento/module-cookie: 100.4.7
 magento/module-cron: 100.4.7
 magento/module-csp: 100.4.6
 magento/module-currency-symbol: 100.4.5
-magento/module-customer: 103.0.7
+magento/module-customer: 103.0.7-p1
 magento/module-customer-analytics: 100.4.4
 magento/module-customer-downloadable-graph-ql: 100.4.3
 magento/module-customer-graph-ql: 100.4.7
@@ -253,7 +253,7 @@ magento/module-paypal-graph-ql: 100.4.5
 magento/module-persistent: 100.4.7
 magento/module-product-alert: 100.4.6
 magento/module-product-video: 100.4.7
-magento/module-quote: 101.2.7
+magento/module-quote: 101.2.7-p1
 magento/module-quote-analytics: 100.4.6
 magento/module-quote-bundle-options: 100.4.3
 magento/module-quote-configurable-options: 100.4.3
@@ -270,7 +270,7 @@ magento/module-review-graph-ql: 100.4.3
 magento/module-robots: 101.1.3
 magento/module-rss: 100.4.5
 magento/module-rule: 100.4.6
-magento/module-sales: 103.0.7
+magento/module-sales: 103.0.7-p1
 magento/module-sales-analytics: 100.4.4
 magento/module-sales-graph-ql: 100.4.7
 magento/module-sales-inventory: 100.4.4
@@ -299,7 +299,7 @@ magento/module-theme: 101.1.7
 magento/module-theme-graph-ql: 100.4.4
 magento/module-translation: 100.4.7
 magento/module-ui: 101.2.7
-magento/module-ups: 100.4.7
+magento/module-ups: 100.4.7-p1
 magento/module-url-rewrite: 102.0.6
 magento/module-url-rewrite-graph-ql: 100.4.6
 magento/module-user: 101.2.7
@@ -308,7 +308,7 @@ magento/module-variable: 100.4.5
 magento/module-vault: 101.2.7
 magento/module-vault-graph-ql: 100.4.3
 magento/module-version: 100.4.4
-magento/module-webapi: 100.4.6
+magento/module-webapi: 100.4.6-p1
 magento/module-webapi-async: 100.4.5
 magento/module-webapi-security: 100.4.4
 magento/module-weee: 100.4.7
@@ -317,11 +317,11 @@ magento/module-widget: 101.2.7
 magento/module-wishlist: 101.2.7
 magento/module-wishlist-analytics: 100.4.5
 magento/module-wishlist-graph-ql: 100.4.7
-magento/page-builder: 1.7.4
-magento/security-package: 1.1.6
-magento/theme-adminhtml-backend: 100.4.7
-magento/theme-frontend-blank: 100.4.7
-magento/theme-frontend-luma: 100.4.7
+magento/page-builder: 1.7.4-p1
+magento/security-package: 1.1.6-p1
+magento/theme-adminhtml-backend: 100.4.7-p1
+magento/theme-frontend-blank: 100.4.7-p1
+magento/theme-frontend-luma: 100.4.7-p1
 magento/zend-cache: ^1.16
 magento/zend-db: ^1.16
 magento/zend-pdf: ^1.16
@@ -969,7 +969,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/justinrainbow/json-schema.git">justinrainbow/json-schema</a>
+      <a href="https://github.com/jsonrainbow/json-schema.git">justinrainbow/json-schema</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine Bibliothek zum Validieren eines JSON-Schemas.</td>
@@ -1067,6 +1067,13 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-fig/cache.git">psr/cache</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Allgemeine Benutzeroberfläche für das Zwischenspeichern von Bibliotheken</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/php-fig/clock.git">psr/uhr</a>
     </td>
     <td>Bibliothek</td>
@@ -1098,7 +1105,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/php-fig/http-factory.git">psr/http-factory</a>
     </td>
     <td>Bibliothek</td>
-    <td>Gemeinsame Schnittstellen für PSR-7-HTTP-Nachrichtenfabriken</td>
+    <td>PSR-17: Gemeinsame Schnittstellen für PSR-7 HTTP-Nachrichtenfabriken</td>
   </tr>
   <tr>
     <td>
