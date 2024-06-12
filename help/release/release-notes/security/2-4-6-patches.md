@@ -2,9 +2,9 @@
 title: Versionshinweise zu Adobe Commerce 2.4.6 Security Patch
 description: Erfahren Sie mehr über Sicherheitsfehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsrelevante Updates, die in den Sicherheits-Patch-Versionen für Adobe Commerce Version 2.4.6 enthalten sind.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
+source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
 workflow-type: tm+mt
-source-wordcount: '1134'
+source-wordcount: '1137'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 Die Adobe Commerce-Sicherheitsversion 2.4.6-p6 enthält Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen 2.4.6 identifiziert wurden.
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Zusätzliche Sicherheitsverbesserungen
+
+{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ## Adobe Commerce 2.4.6-p5
 
