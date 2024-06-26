@@ -1,9 +1,11 @@
 ---
-title: Vergleich von Commerce-Hosting
+title: Commerce-Hosting-Vergleich
 description: Treffen Sie die beste Entscheidung über das Hosting für Ihr E-Commerce-Projekt, indem Sie sich diese Vergleichstabelle ansehen.
 exl-id: 8d1f0b85-2874-4a4b-9fae-1fb367a7f85e
 feature: Best Practices, Cloud, Paas
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+hide: true
+hidefromtoc: true
+source-git-commit: 26284eea58151929c9ac5e72b0fb6cd5b02a3384
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%
