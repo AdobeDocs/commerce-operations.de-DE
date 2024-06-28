@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7ad815d0191c6cc3df7ea7dfe383f17a40cbde0a
+source-git-commit: 788bf40156376e871280896b6f58f55a20435eb8
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -21,24 +21,24 @@ ht-degree: 0%
   </thead>
   <tbody>
       <tr>
-          <td>Adobe I/O-Ereignisse für Adobe Commerce</td>
+          <td>Adobe I/O von Ereignissen für Adobe Commerce</td>
           <td>1,5+</td>
           <td>1,5+</td>
           <td>1,5+</td>
           <td>1,5+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Komponist</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Verfasser</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
-          <td>Adobe Commerce Admin-Benutzeroberflächen-SDK</td>
-          <td>1.3+</td>
-          <td>1.3+</td>
-          <td>1.3+</td>
+          <td>Adobe Commerce Admin UI SDK</td>
+          <td>1,3+</td>
+          <td>1,3+</td>
+          <td>1,3+</td>
           <td>-</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Komponist</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Verfasser</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Versionshinweise</a><br/>
           </td>
       </tr>
@@ -49,18 +49,18 @@ ht-degree: 0%
           <td>1.2+</td>
           <td>1.2+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Komponist</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Verfasser</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
           <td>B2B</td>
-          <td>1.4.2 (PHP 8.2)</td>
+          <td>1.4.2-p1 (PHP 8.2)</td>
           <td>1.3.5+</td>
           <td>1,3,4</td>
           <td>1,3,3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Komponist</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Verfasser</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Versionshinweise</a><br/>
           </td>
       </tr>
@@ -71,7 +71,7 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marktplatz</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Versionshinweise</a><br/>
           </td>
       </tr>
