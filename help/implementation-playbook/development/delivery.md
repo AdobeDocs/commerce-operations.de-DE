@@ -29,7 +29,7 @@ Continuous Delivery (CD) stellt sofort Quellcode auf dem Server bereit, nachdem 
 
 Da der Build auf dem Build-System ausgeführt wird, minimiert er nicht nur die Bereitstellungsausfälle, sondern verringert auch die Auslastung des Servers. Dadurch sind die QS-Aktivitäten, die auf dem Server stattfinden, weniger betroffen.
 
-![Infografik zum fortlaufenden Versand](../../assets/playbooks/cicd.svg)
+![Infografik zur kontinuierlichen Bereitstellung](../../assets/playbooks/cicd.svg)
 
 Der CI/CD-Prozess im vorherigen Diagramm kann kurz wie folgt beschrieben werden:
 

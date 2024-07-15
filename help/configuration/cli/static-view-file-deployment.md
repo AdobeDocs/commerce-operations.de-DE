@@ -13,35 +13,35 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für [Produktionsmodus](../bootstrap/application-modes.md#production-mode).
+Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für den [Produktionsmodus](../bootstrap/application-modes.md#production-mode) festgelegt ist.
 
 Der Begriff _statische Ansichtsdatei_ bezieht sich auf Folgendes:
 
 - &quot;Statisch&quot;bedeutet, dass sie für eine Site zwischengespeichert werden kann (d. h., die Datei wird nicht dynamisch generiert). Beispiele sind Bilder und CSS, die aus LESS generiert wurden.
 - &quot;Ansicht&quot;bezieht sich auf die Präsentationsschicht (aus MVC).
 
-Statische Ansichtsdateien befinden sich im `<magento_root>/pub/static` und einige werden im `<magento_root>/var/view_preprocessed` -Verzeichnis.
+Statische Ansichtsdateien befinden sich im Verzeichnis `<magento_root>/pub/static` und einige werden auch im Verzeichnis `<magento_root>/var/view_preprocessed` zwischengespeichert.
 
 Die Bereitstellung von statischen Ansichtsdateien wird wie folgt von den Anwendungsmodi beeinflusst:
 
-- [Standard](../bootstrap/application-modes.md#default-mode) und [Entwickler](../bootstrap/application-modes.md#developer-mode) Modi: Commerce erstellt sie nach Bedarf, der Rest wird jedoch in einer Datei zwischengespeichert, um den Zugriff zu beschleunigen.
-- [Produktion](../bootstrap/application-modes.md#production-mode) mode: Statische Dateien sind _not_ generiert oder zwischengespeichert.
+- Die Modi [Standard](../bootstrap/application-modes.md#default-mode) und [Entwickler](../bootstrap/application-modes.md#developer-mode): Commerce generiert sie bei Bedarf, der Rest wird jedoch in einer Datei zwischengespeichert, um den Zugriff zu beschleunigen.
+- Modus [Produktion](../bootstrap/application-modes.md#production-mode) : Statische Dateien werden _nicht_ generiert oder zwischengespeichert.
 
-Sie müssen statische Ansichtsdateien manuell in das Commerce-Dateisystem schreiben, indem Sie den in diesem Thema besprochenen Befehl verwenden. Danach können Sie die Berechtigungen einschränken, um Ihre Sicherheitslücken zu begrenzen und ein versehentliches oder bösartiges Überschreiben von Dateien zu verhindern.
+Sie müssen statische Ansichtsdateien manuell in das Commerce-Dateisystem schreiben, indem Sie den in diesem Thema beschriebenen Befehl verwenden. Danach können Sie die Berechtigungen einschränken, um Ihre Sicherheitslücken zu begrenzen und ein versehentliches oder bösartiges Überschreiben von Dateien zu verhindern.
 
 >[!WARNING]
 >
->_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layouts usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie können generierte statische Ansichtsdateien auf verschiedene Arten bereinigen. Siehe Abschnitt [Thema zum Zwischenspeichern statischer Dateien mit Details bereinigen](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) für weitere Informationen.
+>_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript, CSS, Layouts usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie können generierte statische Ansichtsdateien auf verschiedene Arten bereinigen. Weitere Informationen finden Sie unter [Cache-Thema für statische Dateien bereinigen](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) .
 
-**So stellen Sie statische Ansichtsdateien bereit**:
+**Bereitstellen von statischen Ansichtsdateien**:
 
-1. Melden Sie sich beim Commerce-Server als oder an. [Wechseln zum Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
-1. Löschen Sie den Inhalt von `<magento_root>/pub/static`, mit Ausnahme der `.htaccess` -Datei. Löschen Sie diese Datei nicht.
-1. Implementierungstool für statische Ansichtsdateien ausführen `<magento_root>/bin/magento setup:static-content:deploy`.
+1. Melden Sie sich beim Commerce-Server als an oder wechseln Sie [zum Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Löschen Sie den Inhalt von `<magento_root>/pub/static`, mit Ausnahme der Datei `.htaccess`. Löschen Sie diese Datei nicht.
+1. Führen Sie das Bereitstellungs-Tool für statische Ansichtsdateien `<magento_root>/bin/magento setup:static-content:deploy` aus.
 
    >[!INFO]
    >
-   >Wenn Sie die Zusammenführung von statischen Ansichtsdateien in der Admin-Konsole aktivieren, wird die `pub/static` Verzeichnissystem muss schreibbar sein.
+   >Wenn Sie das Zusammenführen von statischen Ansichtsdateien im Admin aktivieren, muss das Ordnersystem `pub/static` schreibbar sein.
 
    Befehlsoptionen:
 
@@ -53,14 +53,14 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 
 | Option | Beschreibung | Erforderlich? |
 | ------ | ----------- | --------- |
-| `<languages>` | Durch Leerzeichen getrennte Liste von [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) Sprachcodes, für die statische Ansichtsdateien ausgegeben werden sollen. (Der Standardwert ist `en_US`.<br>Suchen Sie die Liste, indem Sie Folgendes ausführen: `bin/magento info:language:list` | Nein |
+| `<languages>` | Durch Leerzeichen getrennte Liste von [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) Sprachcodes, für die statische Ansichtsdateien ausgegeben werden sollen. (Der Standardwert ist `en_US`.)<br>Suchen Sie die Liste durch Ausführen: `bin/magento info:language:list` | Nein |
 | `--language (-l)` | Generieren Sie Dateien nur für die angegebenen Sprachen. Standardmäßig werden Dateien für alle ISO-639-Sprachcodes generiert, ohne dass eine Option angegeben ist. Sie können den Namen eines Sprachcodes gleichzeitig angeben. Der Standardwert ist **all**.<br>Beispiel: `--language en_US --language es_ES` | Nein |
-| `--exclude-language` | Generieren Sie Dateien für die angegebenen Sprachcodes. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Sie können den Namen eines Sprachcodes oder eine kommagetrennte Liste von Sprachcodes angeben. Der Standardwert ist **Keine**. | Nein |
+| `--exclude-language` | Generieren Sie Dateien für die angegebenen Sprachcodes. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Sie können den Namen eines Sprachcodes oder eine kommagetrennte Liste von Sprachcodes angeben. Der Standardwert ist **none**. | Nein |
 | `--theme <theme>` | Designs, für die statische Inhalte bereitgestellt werden sollen. Der Standardwert ist **all**.<br>Beispiel: `--theme Magento/blank --theme Magento/luma` | Nein |
-| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **Keine**.<br>Beispiel: `--exclude-theme Magento/blank` | Nein |
+| `--exclude-theme <theme>` | Themen, die bei der Bereitstellung statischer Inhalte ausgeschlossen werden sollen. Der Standardwert ist **none**.<br>Beispiel: `--exclude-theme Magento/blank` | Nein |
 | `--area (-a)` | Generieren Sie Dateien nur für die angegebenen Bereiche. Standardmäßig werden Dateien für alle Bereiche generiert, ohne dass eine Option angegeben ist. Gültige Werte sind `adminhtml` und `frontend`. Der Standardwert ist **all**.<br>Beispiel: `--area adminhtml` | Nein |
-| `--exclude-area` | Generieren Sie keine Dateien für die angegebenen Bereiche. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Der Standardwert ist **Keine**. | Nein |
-| `--jobs (-j)` | Aktivieren [parallele Verarbeitung](manage-indexers.md#reindexing-in-parallel-mode) unter Verwendung der angegebenen Anzahl von Aufträgen. Der Standardwert ist 0 (nicht in parallelen Prozessen ausgeführt). Der Standardwert ist **0**. | Nein |
+| `--exclude-area` | Generieren Sie keine Dateien für die angegebenen Bereiche. Standardmäßig wird ohne Angabe einer Option nichts ausgeschlossen. Der Standardwert ist **none**. | Nein |
+| `--jobs (-j)` | Aktivieren Sie die [parallele Verarbeitung](manage-indexers.md#reindexing-in-parallel-mode) mit der angegebenen Anzahl von Aufträgen. Der Standardwert ist 0 (nicht in parallelen Prozessen ausgeführt). Der Standardwert ist **0**. | Nein |
 | `--symlink-locale` | Erstellen Sie Symlinks für die Dateien dieser Gebietsschemas, die zur Bereitstellung übergeben werden, aber keine Anpassungen aufweisen. | Nein |
 | `--content-version=CONTENT-VERSION` | Benutzerdefinierte Version von statischem Inhalt kann verwendet werden, wenn die Bereitstellung auf mehreren Knoten ausgeführt wird, um sicherzustellen, dass die statische Inhaltsversion identisch ist und die Zwischenspeicherung ordnungsgemäß funktioniert. | Nein |
 | `--no-javascript` | JavaScript-Dateien nicht bereitstellen | Nein |
@@ -71,13 +71,13 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 | `--no-html` | Stellen Sie keine HTML-Dateien bereit. | Nein |
 | `--no-misc` | Stellen Sie keine anderen Dateitypen bereit: MD, JBF, CSV, JSON, TXT, HTC, SWF | Nein |
 | `--no-html-minify` | Minimieren Sie keine HTML-Dateien. | Nein |
-| `-s <quick\|standard\|compact>` | Definieren Sie die Implementierungsstrategie. Verwenden Sie diese Optionen nur, wenn Sie mehrere lokale Optionen haben.<ul><li>Verwenden Sie die [Schnellstrategie](static-view-file-strategy.md#quick-strategy) um die Bereitstellungszeit zu minimieren. Dies ist die standardmäßige Befehlsoption, falls nicht anders angegeben.</li><li>Verwenden Sie die [Standardstrategie](static-view-file-strategy.md#standard-strategy) , um alle statischen Ansichtsdateien für alle Pakete bereitzustellen.</li><li>Verwenden Sie die [kompakte Strategie](static-view-file-strategy.md#compact-strategy) um Speicherplatz auf dem Server zu sparen.</li></ul> | Nein |
+| `-s <quick\|standard\|compact>` | Definieren Sie die Implementierungsstrategie. Verwenden Sie diese Optionen nur, wenn Sie mehrere lokale Optionen haben.<ul><li>Verwenden Sie die [Schnellstrategie](static-view-file-strategy.md#quick-strategy), um die Bereitstellungszeit zu minimieren. Dies ist die standardmäßige Befehlsoption, falls nicht anders angegeben.</li><li>Verwenden Sie die [Standardstrategie](static-view-file-strategy.md#standard-strategy), um alle statischen Ansichtsdateien für alle Pakete bereitzustellen.</li><li>Verwenden Sie die [Compact Strategy](static-view-file-strategy.md#compact-strategy), um Speicherplatz auf dem Server zu sparen.</li></ul> | Nein |
 | `--no-parent` | Generieren Sie keine Dateien für die übergeordneten Designs des aktuellen Designs. Es wird dringend empfohlen, dieses Flag zu verwenden, wenn Sie nicht explizit das übergeordnete Design des aktuellen Designs verwenden, das Sie bereitstellen möchten. Dies erhöht die Geschwindigkeit des Prozesses erheblich. Dieses Flag ist in Commerce 2.4.2 verfügbar. | Nein |
 | `--force (-f)` | Bereitstellen von Dateien in einem beliebigen Modus. (Standardmäßig kann das Werkzeug zur Bereitstellung statischer Inhalte nur im Produktionsmodus ausgeführt werden. Verwenden Sie diese Option, um sie im Standard- oder Entwicklermodus auszuführen. | Nein |
 
 >[!INFO]
 >
->Wenn Werte für `<languages>` und `--language`, `<languages>` hat Vorrang.
+>Wenn Sie Werte sowohl für `<languages>` als auch für `--language` angeben, hat `<languages>` Vorrang.
 
 ## Beispiele
 
@@ -85,7 +85,7 @@ Im Folgenden finden Sie einige Beispielbefehle.
 
 ### Ausschließen eines Designs und HTML-Minimierung
 
-Der folgende Befehl stellt statische Inhalte für die US-amerikanische Sprache (`en_US`), schließt das mit Commerce bereitgestellte Luma-Design aus und minimiert keine HTML-Dateien.
+Der folgende Befehl stellt statische Inhalte für die US-amerikanische Sprache (`en_US`) bereit, schließt das mit Commerce bereitgestellte Luma-Design aus und minimiert keine HTML-Dateien.
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
@@ -110,7 +110,7 @@ Successful: 1993 files; errors: 0
 ---
 ```
 
-Der folgende Befehl stellt nur JavaScript mit 4 Aufträgen und einer standardmäßigen Bereitstellungsstrategie bereit:
+Mit dem folgenden Befehl wird nur JavaScript mit 4 Aufträgen mit einer standardmäßigen Bereitstellungsstrategie bereitgestellt:
 
 ```bash
 bin/magento setup:static-content:deploy -s standard --no-misc --no-html --no-fonts --no-images --no-less --no-css -j 4
@@ -152,13 +152,13 @@ Möglicherweise möchten Sie den Bereitstellungsprozess in einer separaten, prod
 
 Gehen Sie dazu wie folgt vor:
 
-1. Ausführen [`bin/magento app:config:dump`](../cli/export-configuration.md) , um die Konfiguration aus Ihrem Produktionssystem zu exportieren.
+1. Führen Sie [`bin/magento app:config:dump`](../cli/export-configuration.md) aus, um die Konfiguration aus Ihrem Produktionssystem zu exportieren.
 1. Kopieren Sie die exportierten Dateien in die Nicht-Produktions-Codebasis.
 1. Statische Ansichtsdateien bereitstellen: `bin/magento setup:static-content:deploy`
 
 ## Fehlerbehebung für das Bereitstellungswerkzeug für statische Ansichtsdateien
 
-[Installieren Sie zuerst die Commerce-Software](../../installation/overview.md); andernfalls können Sie das Bereitstellungswerkzeug für statische Ansichtsdateien nicht ausführen.
+[Installieren Sie zuerst die Commerce-Software](../../installation/overview.md). Andernfalls können Sie das Bereitstellungswerkzeug für statische Ansichtsdateien nicht ausführen.
 
 **Symptom**: Der folgende Fehler wird angezeigt, wenn Sie das Bereitstellungswerkzeug für statische Ansichtsdateien ausführen:
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Führen Sie die folgenden Schritte aus:
 
-1. Installieren Sie die Commerce-Software mit dem [Befehlszeile](../../installation/composer.md).
-1. Melden Sie sich beim Anwendungsserver als [Switch zu](../../installation/prerequisites/file-system/overview.md), der Dateisysteminhaber.
-1. Löschen Sie den Inhalt von `<app_root>/pub/static` Verzeichnis, mit Ausnahme der `.htaccess` -Datei. Löschen Sie diese Datei nicht.
+1. Installieren Sie die Commerce-Software mithilfe der [Befehlszeile](../../installation/composer.md).
+1. Melden Sie sich beim Anwendungsserver als Eigentümer des Dateisystems an oder wechseln Sie [zum Dateisysteminhaber.](../../installation/prerequisites/file-system/overview.md)
+1. Löschen Sie den Inhalt des Verzeichnisses &quot;`<app_root>/pub/static`&quot;, mit Ausnahme der Datei &quot;`.htaccess`&quot;. Löschen Sie diese Datei nicht.
 1. Statische Ansichtsdateien bereitstellen: `bin/magento setup:static-content:deploy`
 
 ## Tipp für Entwickler, die das Werkzeug zur Bereitstellung statischer Inhalte anpassen

@@ -26,8 +26,8 @@ Dieses Thema vertieft einige der wichtigsten Entwicklungsstandards von Adobe Com
 
 Einige Lösungsimplementer mögen zwar ihre eigenen Voreinstellungen für Methoden, Prozesse und Tools haben, aber dieses Playbook konzentriert sich auf anerkannte Best Practices und Methoden, die für die meisten Implementierungen freigegeben werden können.
 
-Wie bei jedem großen IT-Projekt basiert Adobe Commerce auf Kodierungsstandards, die Best Practices und Standardisierungen verwenden, sowie auf Standards, die innerhalb der Adobe Commerce festgelegt wurden [Codierungsstandard](https://developer.adobe.com/commerce/php/coding-standards/). Die Einhaltung dieser Standards ist wichtig, um Fehler zu vermeiden und die Qualität und Wartbarkeit von benutzerdefiniertem Code zu verbessern.
+Wie bei jedem großen IT-Projekt basiert Adobe Commerce auf Kodierungsstandards, die Best Practices und Standardisierungen verwenden, sowie auf Standards, die innerhalb des Adobe Commerce [Coding Standard](https://developer.adobe.com/commerce/php/coding-standards/) festgelegt wurden. Die Einhaltung dieser Standards ist wichtig, um Fehler zu vermeiden und die Qualität und Wartbarkeit von benutzerdefiniertem Code zu verbessern.
 
 ## Adobe Commerce auf Cloud-Infrastruktur
 
-Adobe Commerce on Cloud Infrastructure ist eine verwaltete, automatisierte Hosting-Plattform für die Adobe Commerce-Software. Adobe Commerce on Cloud Infrastructure verfügt über verschiedene Funktionen, die es von lokalen Adobe Commerce-Implementierungen unterscheidet. Siehe [Cloud-Anleitung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce on Cloud Infrastructure ist eine verwaltete, automatisierte Hosting-Plattform für die Adobe Commerce-Software. Adobe Commerce on Cloud Infrastructure verfügt über verschiedene Funktionen, die es von lokalen Adobe Commerce-Implementierungen unterscheidet. Siehe [Cloud-Leitfaden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

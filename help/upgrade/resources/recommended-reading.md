@@ -27,7 +27,7 @@ Weitere Informationen zu Adobe Commerce-Upgrades finden Sie auf dieser Seite.
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Lösungspartner-Portal</a></li>
           </ul>
         </td>
-      <td><strong>Instrumente</strong>
+      <td><strong>Tools</strong>
         <p>Durchsuchen Sie Tools, die Ihnen das Auffinden und Verwenden von Adobe Commerce-Software erleichtern.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Upgrade-Kompatibilitätstool PhpStorm-Plug-in</a> (Video)</li>
@@ -66,7 +66,7 @@ Weitere Informationen zu Adobe Commerce-Upgrades finden Sie auf dieser Seite.
             <li><a href="recommended-upgrade-paths.md">Empfohlene Aktualisierungspfade</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Aufzeichnung des Workshops zum technischen Upgrade</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Zugriff auf Vorabversionen</a></li>
-            <li><a href="../../release/beta.md">Übersicht über Beta-Versionen</a></li>
+            <li><a href="../../release/beta.md">Versionshinweise zu Beta</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Abwärtsinkompatible Entwicklung</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Abwärtskompatible Änderungen</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Checkliste für den Upgrade-Plan</a></li>

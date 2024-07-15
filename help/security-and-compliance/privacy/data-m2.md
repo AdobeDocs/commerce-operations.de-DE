@@ -40,7 +40,7 @@ Adobe Commerce lädt Kundeninformationen, wenn sich der Kunde anmeldet und mehre
 
 Ein Händler kann Kundeninformationen, Adressdaten und Zahlungsdaten bei der Erstellung eines Kunden oder einer Bestellung durch den Administrator eingeben.
 
-![Dateneingabepunkte im Backend](../../assets/security-compliance/backend-data-entry-points.svg)
+![Backend-Dateneingabepunkte](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Backend-Datenzugriffspunkte
 
@@ -69,9 +69,9 @@ Adobe Commerce kann so konfiguriert werden, dass die folgenden Kundenattribute g
 >
 >Achten Sie in Übereinstimmung mit den aktuellen Best Practices für Sicherheit und Datenschutz darauf, dass Sie alle potenziellen rechtlichen und sicherheitstechnischen Risiken im Zusammenhang mit der Speicherung des vollständigen Geburtsdatums (Monat, Tag, Jahr) des Kunden sowie anderer persönlicher Identifikatoren wie vollständiger Name kennen, bevor Sie diese Daten erfassen oder verarbeiten.
 
-#### `customer_entity` und &quot;customer_entity&quot;-Verweise
+#### Verweise auf `customer_entity` und &#39;customer_entity&#39;
 
-Die folgenden Spalten in der `customer_entity` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `customer_entity` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ------------ | ------------ |
@@ -84,7 +84,7 @@ Die folgenden Spalten in der `customer_entity` -Tabelle enthält Kundeninformati
 | `dob` | date |
 | `gender` | smallint(5) |
 
-Diese Tabellen verweisen auf `customer_entity` und kann benutzerdefinierte Kundenattribute enthalten:
+Diese Tabellen verweisen auf `customer_entity` und können benutzerdefinierte Kundenattribute enthalten:
 
 | Verzeichnis | Spalte | Datentyp |
 | -------------------------- | ------- | ------------- |
@@ -96,7 +96,7 @@ Diese Tabellen verweisen auf `customer_entity` und kann benutzerdefinierte Kunde
 
 #### `customer_grid_flat` table
 
-Die folgenden Spalten in der `customer_grid_flat` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `customer_grid_flat` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | -------------------- | ------------ |
@@ -137,9 +137,9 @@ Adobe Commerce speichert die folgenden Kundenattribute:
 - MwSt. Nummer
 - Postleitzahl
 
-#### `customer_address_entity` und `customer_address_entity` Verweise
+#### Verweise auf `customer_address_entity` und `customer_address_entity`
 
-Die folgenden Spalten in der `customer_address_entity` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `customer_address_entity` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ------------ | ------------ |
@@ -158,7 +158,7 @@ Die folgenden Spalten in der `customer_address_entity` -Tabelle enthält Kundeni
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-Diese Tabellen verweisen auf `customer_address_entity` und kann benutzerdefinierte Kundenattribute enthalten:
+Diese Tabellen verweisen auf `customer_address_entity` und können benutzerdefinierte Kundenattribute enthalten:
 
 | Verzeichnis | Spalte | Datentyp |
 | ---------------------------------- | ------- | ------------- |
@@ -170,11 +170,11 @@ Diese Tabellen verweisen auf `customer_address_entity` und kann benutzerdefinier
 
 ### Bestelldaten
 
-Die `sales_order` und zugehörige Tabellen enthalten den Kundennamen, die Abrechnungs- und Versandadressen sowie die zugehörigen Daten.
+Die Tabellen `sales_order` und die zugehörigen Tabellen enthalten den Kundennamen, die Abrechnungs- und Versandadressen sowie die zugehörigen Daten.
 
 #### `sales_order` table
 
-Die folgenden Spalten in der `sales_order` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `sales_order` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --------------------- | ------------ |
@@ -195,7 +195,7 @@ Die folgenden Spalten in der `sales_order` -Tabelle enthält Kundeninformationen
 
 #### `sales_order_address` table
 
-Die `sales_order_address` -Tabelle enthält die Adresse des Kunden.
+Die Tabelle `sales_order_address` enthält die Adresse des Kunden.
 
 | Spalte | Datentyp |
 | --------------------- | ------------ |
@@ -218,7 +218,7 @@ Die `sales_order_address` -Tabelle enthält die Adresse des Kunden.
 
 #### `sales_order_grid` table
 
-Die folgenden Spalten in der `sales_order_grid` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `sales_order_grid` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ---------------------- | ------------ |
@@ -237,7 +237,7 @@ Angebote enthalten den Namen, die E-Mail-Adresse, die Adresse und die zugehörig
 
 #### `quote` table
 
-Die folgenden Spalten in der `quote` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `quote` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --------------------- | ------------ |
@@ -254,7 +254,7 @@ Die folgenden Spalten in der `quote` -Tabelle enthält Kundeninformationen:
 
 #### `quote_address` table
 
-Die folgenden Spalten in der `quote_address` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `quote_address` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Die folgenden Spalten in der `quote_address` -Tabelle enthält Kundeninformation
 
 ### Zahlungsdaten
 
-Die `sales_order_payment` enthält Kreditkarteninformationen und andere Transaktionsinformationen.
+Die Tabelle `sales_order_payment` enthält Kreditkarteninformationen und andere Transaktionsinformationen.
 
 | Spalte | Datentyp |
 | ------------------------ | ------------ |
@@ -299,7 +299,7 @@ Adobe Commerce kann so konfiguriert werden, dass Kunden Einladungen an private V
 
 #### `magento_invitation` table
 
-Die `magento_invitation` -Tabelle enthält die Kunden-ID, E-Mail und Verweiskennung.
+Die Tabelle &quot;`magento_invitation`&quot; enthält die Kunden-ID, E-Mail und Verweiskennung.
 
 | Spalte | Datentyp |
 | ------------- | ------------ |
@@ -309,7 +309,7 @@ Die `magento_invitation` -Tabelle enthält die Kunden-ID, E-Mail und Verweiskenn
 
 #### `magento_invitation_track` table
 
-Die `magento_invitation_track` enthält auch Kundeninformationen.
+Die Tabelle `magento_invitation_track` enthält auch Kundeninformationen.
 
 | Spalte | Datentyp |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ Die `magento_invitation_track` enthält auch Kundeninformationen.
 
 ### Verschiedene Tabellen, die auf Kunden verweisen
 
-Die folgenden Tabellen enthalten eine `customer_id` column:
+Die folgenden Tabellen enthalten die Spalte `customer_id` :
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

@@ -15,7 +15,7 @@ Adobe Commerce ist die führende Plattform für Innovationen im Bereich des offe
 
 Es gibt zwei Versionen von [!DNL Commerce]:
 
-_Magento Open Source_ ist die freie Version, die früher als Magento Community bezeichnet wurde. Sie können die Plattform auf Ihren eigenen Server oder Hosting-Provider Ihrer Wahl herunterladen, anpassen und ausführen.
+_Magento Open Source_ ist die freie Version, die zuvor als Magento-Community bezeichnet wurde. Sie können die Plattform auf Ihren eigenen Server oder Hosting-Provider Ihrer Wahl herunterladen, anpassen und ausführen.
 
 Die meisten Händler verwenden Magento Open Source wegen der geringen Kosten und der offenen Natur. Für Entwickler spielt es keine Rolle, ob sie sich auf Magento Open Source oder Adobe Commerce entwickeln. Adobe Commerce verfügt jedoch über mehr integrierte Funktionen, die standardmäßig verwendet werden können.
 

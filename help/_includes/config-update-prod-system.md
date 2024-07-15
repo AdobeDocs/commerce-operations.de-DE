@@ -22,7 +22,7 @@ ht-degree: 0%
 
    Weitere Optionen, wie die Möglichkeit, eine IP-Adressen-Whitelist festzulegen, finden Sie unter [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Beenden Sie alle laufenden Warteschlangen-Sekundäre, indem Sie `cron_run` nach `false` in `app/etc/env.php` wie folgt:
+1. Beenden Sie laufende Warteschlangenarbeitskräfte, indem Sie `cron_run` wie folgt in `app/etc/env.php` auf `false` setzen:
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -42,7 +42,7 @@ ht-degree: 0%
    kill <PID>
    ```
 
-   Wo `PID` die Prozess-ID, die beendet werden soll, beispielsweise:
+   Wobei `PID` die Prozess-ID ist, die beendet werden soll, z. B.:
 
    ```bash
    kill 1234

@@ -13,7 +13,7 @@ ht-degree: 0%
 # Konfigurationshandbuch {#configuration-guide}
 
 + [Übersicht](overview.md)
-+ Allgemeine Einrichtung {#setup}
++ Allgemeines Setup {#setup}
    + [Anwendungsinitialisierung und Bootstrap](bootstrap/initialization.md)
    + [Anwendungsmodi](bootstrap/application-modes.md)
    + [Bootstrap-Parameter](bootstrap/set-parameters.md)
@@ -41,7 +41,7 @@ ht-degree: 0%
       + [Konfigurieren von Redis](cache/config-redis.md)
       + [Verwenden von Redizes für den Standard-Cache](cache/redis-pg-cache.md)
       + [Verwenden von Redizes für die Sitzungsspeicherung](cache/redis-session.md)
-   + Varnisch {#varnish}
+   + Varnish {#varnish}
       + [Übersicht über Varnish](cache/config-varnish.md)
       + [Installieren von Varnish](cache/config-varnish-install.md)
    + [Webserver](cache/config-varnish-server.md)
@@ -127,7 +127,7 @@ ht-degree: 0%
    + [Sicheres cron-PHP](security/secure-cron-php.md)
    + [Security TXT](security/security-txt.md)
    + [Clickjacking-Exploits](security/xframe-options.md)
-+ Speicherung {#storage}
++ Speicher {#storage}
    + [Datenbankprofil](storage/db-profiler.md)
    + Remote-Speicher {#remote-storage}
       + [Remote-Speichermodul](remote-storage/remote-storage.md)
@@ -146,4 +146,4 @@ ht-degree: 0%
       + [Geteilte Datenbank überprüfen](storage/multi-master-verify.md)
       + [Datenbankreplikation](storage/multi-master-replication.md)
       + [Auf einzelne Datenbank zurücksetzen](storage/revert-split-database.md)
-+ [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Implementierungsfluss
 
-Die [!DNL Commerce] Der Produktionsbereitstellungsfluss hilft einem Store, maximale Leistung zu erzielen.
+Der Produktionsbereitstellungsfluss [!DNL Commerce] hilft einem Store, die maximale Leistung zu erreichen.
 
 ## Installieren von Abhängigkeiten
 
-Die `composer.json` und `composer.lock` Dateiverwaltung [!DNL Commerce] Abhängigkeiten erstellen und die entsprechende Version für jedes Paket installieren. Sie müssen die Abhängigkeiten vor [Anweisungen zur Vorverarbeitung der Abhängigkeitseinfügung](#preprocess-dependency-injection-instructions) wenn Sie die [Autoloader](#update-the-autoloader).
+Die Dateien `composer.json` und `composer.lock` verwalten [!DNL Commerce] Abhängigkeiten und installieren die entsprechende Version für jedes Paket. Sie müssen Abhängigkeiten vor [Anweisungen zur Vorverarbeitung der Abhängigkeitsinjektion](#preprocess-dependency-injection-instructions) installieren, wenn Sie planen, den [Autoloader](#update-the-autoloader) zu aktualisieren.
 
-Installieren [!DNL Commerce] dependencies:
+So installieren Sie [!DNL Commerce] -Abhängigkeiten:
 
 ```bash
 composer install --no-dev
@@ -41,13 +41,13 @@ bin/magento setup:di:compile
 
 ## Aktualisieren des Autoloaders
 
-Bestätigen Sie nach Abschluss der Kompilierung Folgendes: [APCu ist aktiviert](../performance/software.md#php-settings) und aktualisieren Sie den Autoloader:
+Bestätigen Sie nach Abschluss der Kompilierung, dass [APCu aktiviert ist](../performance/software.md#php-settings), und aktualisieren Sie den Autoloader:
 
 So aktualisieren Sie den Autoloader:
 
 >[!INFO]
 >
->Die `-o` -Option konvertiert PSR-0/4-Autoloading in Classmap, um einen schnelleren Autoloader zu erhalten. Die `--apcu` -Option verwendet APCu, um gefundene/nicht gefundene Klassen zwischenzuspeichern.
+>Die Option `-o` konvertiert das automatische Laden von PSR-0/4 in Classmap, um einen schnelleren Autoloader zu erhalten. Die Option `--apcu` verwendet APCu, um gefundene/nicht gefundene Klassen zwischenzuspeichern.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## Statischen Inhalt bereitstellen
 
-Bereitstellen von statischem Inhalt verursacht [!DNL Commerce] um die folgenden Aktionen durchzuführen:
+Durch das Bereitstellen von statischem Inhalt führt [!DNL Commerce] die folgenden Aktionen aus:
 
 * Alle statischen Ressourcen analysieren
 * Zusammenführen, Minimieren und Bündeln von Inhalten
@@ -81,7 +81,7 @@ Bereitstellen von statischem Inhalt verursacht [!DNL Commerce] um die folgenden 
 * Fallback zum Thema analysieren
 * Speichern Sie alle verarbeiteten und materialisierten Inhalte in einem bestimmten Ordner für die weitere Verwendung.
 
-Wenn Ihr statischer Inhalt nicht bereitgestellt wird, [!DNL Commerce] führt alle aufgelisteten Vorgänge direkt durch, was zu einer erheblichen Verlängerung der Reaktionszeit führt.
+Wenn Ihr statischer Inhalt nicht bereitgestellt wird, führt [!DNL Commerce] alle aufgelisteten Vorgänge direkt durch, was zu einer erheblichen Zeitsteigerung der Antwort führt.
 
 Sie können verschiedene Optionen verwenden, um Bereitstellungsvorgänge basierend auf der Speichergröße und den Anforderungen an die Erfüllung anzupassen. Am häufigsten ist die kompakte Bereitstellungsstrategie. Siehe [Bereitstellungsstrategien für statische Dateien](../configuration/cli/static-view-file-strategy.md)
 
@@ -97,9 +97,9 @@ Mit diesem Befehl kann Composer die Zuordnung zu Projektdateien neu erstellen, d
 
 >[!INFO]
 >
->Wird der Produktionsmodus automatisch eingestellt, wird dies automatisch ausgeführt `setup:di:compile` und `setup:static-content:deploy`.
+>Wenn Sie den Modus auf &quot;Produktion&quot;einstellen, werden automatisch `setup:di:compile` und `setup:static-content:deploy` ausgeführt.
 
-Schließlich müssen Sie Ihren Store im Produktionsmodus platzieren. Der Produktionsmodus ist speziell für die maximale Leistung Ihres Stores optimiert. Außerdem werden alle entwicklerspezifischen Funktionen deaktiviert. Dies kann in Ihrer `.htaccess` oder `nginx.conf` Datei:
+Schließlich müssen Sie Ihren Store im Produktionsmodus platzieren. Der Produktionsmodus ist speziell für die maximale Leistung Ihres Stores optimiert. Außerdem werden alle entwicklerspezifischen Funktionen deaktiviert. Dies kann in Ihrer `.htaccess` - oder `nginx.conf` -Datei erfolgen:
 
 `SetEnv MAGE_MODE production`
 

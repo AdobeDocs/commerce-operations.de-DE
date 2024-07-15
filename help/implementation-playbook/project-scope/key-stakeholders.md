@@ -5,14 +5,14 @@ exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Wichtige Interessengruppen
 
-Viele Unternehmen haben 2021 erkannt, dass eine &quot;pandemische Absicherung&quot;direkt mit der digitalen Stärke einer Organisation zusammenhängt. Basierend auf Forrester-Daten,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)festgestellt hat, dass der E-Commerce in nur drei Monaten ein Wachstum von zehn Jahren verzeichnete, wobei das Wachstum durch die Notwendigkeit angetrieben wurde, eine digitale Verbindung mit den Kunden herzustellen, während Ziegeltüren verschlossen waren.
+Viele Unternehmen haben 2021 erkannt, dass eine &quot;pandemische Absicherung&quot;direkt mit der digitalen Stärke einer Organisation zusammenhängt. Auf der Grundlage von Forrester-Daten fand[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)heraus, dass der E-Commerce in nur drei Monaten ein zehnjähriges Wachstum verzeichnete, wobei das Wachstum durch die Notwendigkeit angetrieben wurde, eine digitale Verbindung mit den Kunden herzustellen, während Ziegeltüren verschlossen waren.
 
 Wenn die Entscheidung getroffen wird, in eine Commerce-Transformation zu investieren, ist einer der wichtigsten Schritte die Bestimmung, wer von der Organisation an dem Prozess beteiligt ist. Für kleinere Unternehmen ist das E-Commerce- oder Digital-Team manchmal nur eine Handvoll Menschen, sodass das gesamte Team die Aufgabe übernimmt. Für größere Unternehmen besteht jedoch ein Ansatz darin, diese in drei verschiedene Bereiche zu unterteilen, darunter:
 

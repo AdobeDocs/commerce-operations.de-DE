@@ -6,7 +6,7 @@ feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Beispiel:
 </div>
 ```
 
-Varnish ruft Inhalt aus `http://domain.com/index.php/page_cache/block/esi/blocks` und ersetzen Sie die `<esi>` -Tag.
+Varnish ruft Inhalt von `http://domain.com/index.php/page_cache/block/esi/blocks` ab und ersetzt das Tag `<esi>` durch es.
 
-## Handel und Viehzucht-ESI
+## Commerce und Varnisches ESI
 
 Das Commerce-Framework erstellt ein ESI-Tag, wenn die folgenden Bedingungen erf체llt sind:
 
-- Die Caching-Anwendung ist auf `Varnish Cache`
-- Ein XML-Layout `block` -Element mit einer `ttl` attribute
+- Die Caching-Anwendung ist auf `Varnish Cache` eingestellt
+- Ein XML-Layout-Element `block` wird mit dem Attribut `ttl` hinzugef체gt
 
 ### Beispiel
 
@@ -42,7 +42,7 @@ Das Commerce-Framework erstellt ein ESI-Tag, wenn die folgenden Bedingungen erf�
    </referenceContainer>
 ```
 
-Im obigen Beispiel wird die Variable `block` -Element f체gt Inhalt aus dem `esi.phtml` Vorlage auf eine Startseite umstellen und Varnish aktualisiert sie automatisch alle 30 Sekunden.
+Im obigen Beispiel f체gt das Element `block` Inhalte aus der Vorlage `esi.phtml` einer Homepage hinzu und Varnish aktualisiert sie automatisch alle 30 Sekunden.
 
 ## Einschr채nkungen
 

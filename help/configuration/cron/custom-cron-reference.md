@@ -4,18 +4,18 @@ description: Erfahren Sie, wie Sie Crons mithilfe von Cron-Gruppen anpassen kön
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # Anpassen der ECrons-Referenz
 
-Dieses Thema hilft Ihnen beim Einrichten von Registerkarten und optional Cron-Gruppen für benutzerdefinierte Module. Wenn Ihr benutzerdefiniertes Modul Aufgaben periodisch planen muss, müssen Sie eine Kronenregisterkarte für dieses Modul einrichten. A _crontab_ ist eine Cron-Auftragskonfiguration.
+Dieses Thema hilft Ihnen beim Einrichten von Registerkarten und optional Cron-Gruppen für benutzerdefinierte Module. Wenn Ihr benutzerdefiniertes Modul Aufgaben periodisch planen muss, müssen Sie eine Kronenregisterkarte für dieses Modul einrichten. Eine _crontab_ ist eine Cron-Auftragskonfiguration.
 
 Optional können Sie eine benutzerspezifische Gruppe einrichten, mit der Sie unter anderem in dieser Gruppe definierte Cron-Aufträge unabhängig von anderen Cron-Aufträgen ausführen können.
 
-Eine schrittweise Anleitung finden Sie unter [Benutzerdefinierte Cron-Aufträge und Cron-Gruppen konfigurieren (Tutorial)](custom-cron-tutorial.md).
+Eine schrittweise Anleitung finden Sie unter [Konfigurieren von benutzerdefinierten Cron-Aufträgen und Cron-Gruppen (Tutorial)](custom-cron-tutorial.md).
 
 Einen Überblick über Cron-Aufträge finden Sie unter [Konfigurieren von Cron-Aufträgen](../cli/configure-cron-jobs.md).
 
@@ -23,9 +23,9 @@ Einen Überblick über Cron-Aufträge finden Sie unter [Konfigurieren von Cron-A
 
 In diesem Abschnitt wird beschrieben, wie Sie optional eine Cron-Gruppe für ein benutzerdefiniertes Modul erstellen. Wenn Sie dies nicht benötigen, fahren Sie mit dem nächsten Abschnitt fort.
 
-A _Cron-Gruppe_ ist eine logische Gruppe, mit der Sie Cron für mehrere Prozesse gleichzeitig einfach ausführen können. Die meisten Commerce-Module verwenden `default` Cron-Gruppe; einige Module verwenden die `index` hinzugefügt.
+Eine _Cron-Gruppe_ ist eine logische Gruppe, mit der Sie Cron einfach für mehrere Prozesse gleichzeitig ausführen können. Die meisten Commerce-Module verwenden die Cron-Gruppe `default`; einige Module verwenden die Gruppe `index`.
 
-Wenn Sie Cron für ein benutzerdefiniertes Modul implementieren, können Sie die `default` oder einer anderen Gruppe.
+Wenn Sie Cron für ein benutzerdefiniertes Modul implementieren, können Sie die Gruppe `default` oder eine andere Gruppe verwenden.
 
 **So konfigurieren Sie eine Cron-Gruppe für Ihr Modul**:
 
@@ -55,10 +55,10 @@ Dabei gilt:
 | `group_name` | Name der Cron-Gruppe. Der Gruppenname muss nicht eindeutig sein. Sie können Cron für jeweils eine Gruppe ausführen. |
 | `job_name` | Eindeutige ID für diesen Cron-Auftrag. |
 | `classpath` | Zu instanziierende Klasse (Klassenpfad). |
-| `method` | Methode in `classpath` aufrufen. |
+| `method` | Methode in `classpath`, die aufgerufen werden soll. |
 | `time` | Im Cron-Format planen. Lassen Sie diesen Parameter weg, wenn der Zeitplan in der Commerce-Datenbank oder in einem anderen Speicher definiert ist. |
 
-Das Ergebnis `crontab.xml` mit zwei Gruppen können wie folgt aussehen:
+Das resultierende `crontab.xml` mit zwei Gruppen kann wie folgt aussehen:
 
 ```xml
 <?xml version="1.0"?>
@@ -86,13 +86,13 @@ Ein Beispiel finden Sie unter [Magento_Customer crontab.xml](https://github.com/
 
 ### Festlegen von Cron-Gruppenoptionen
 
-Sie können eine neue Gruppe deklarieren und ihre Konfigurationsoptionen (die alle im Bereich der Store-Ansicht ausgeführt werden) über die `cron_groups.xml` -Datei unter:
+Sie können eine neue Gruppe deklarieren und ihre Konfigurationsoptionen (die alle im Bereich der Store-Ansicht ausgeführt werden) über die Datei &quot;`cron_groups.xml`&quot;angeben, die sich unter:
 
 ```text
 <your component base dir>/<vendorname>/module-<name>/etc/cron_groups.xml
 ```
 
-Nachfolgend finden Sie ein Beispiel für die `cron_groups.xml` Datei:
+Nachfolgend finden Sie ein Beispiel für die Datei `cron_groups.xml` :
 
 ```xml
 <?xml version="1.0"?>
@@ -113,8 +113,8 @@ Dabei gilt:
 
 | Option | Beschreibung |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `schedule_generate_every` | Häufigkeit (in Minuten), mit der Zeitpläne in die `cron_schedule` Tabelle. |
-| `schedule_ahead_for` | Zeit (in Minuten) im Voraus, zu der Zeitpläne in die Variable `cron_schedule` Tabelle. |
+| `schedule_generate_every` | Häufigkeit (in Minuten), mit der Zeitpläne in die Tabelle `cron_schedule` geschrieben werden. |
+| `schedule_ahead_for` | Zeit (in Minuten) vor dem Schreiben der Zeitpläne in die Tabelle `cron_schedule`. |
 | `schedule_lifetime` | Zeitfenster (in Minuten), in dem ein Cron-Auftrag gestartet werden muss oder der Cron-Auftrag als verpasst gilt (&quot;zu spät&quot; für die Ausführung). |
 | `history_cleanup_every` | Uhrzeit (in Minuten), zu der der Cron-Verlauf in der Datenbank beibehalten wird. |
 | `history_success_lifetime` | Zeit (in Minuten), zu der der Datensatz mit erfolgreich abgeschlossenen Cron-Aufträgen in der Datenbank gespeichert wird. |
@@ -123,9 +123,9 @@ Dabei gilt:
 
 ## Cron-Auftrag deaktivieren
 
-Cron-Aufträge haben keine `disable` -Funktion, die wir für [Beobachter](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers). Ein Cron-Auftrag kann jedoch mithilfe der folgenden Technik deaktiviert werden: `schedule` Zeit, die ein Datum enthält, das nie eintritt.
+Cron-Aufträge verfügen nicht über eine `disable` -Funktion, wie wir sie für [Beobachter](https://developer.adobe.com/commerce/php/development/components/events-and-observers/#observers) haben. Ein Cron-Auftrag kann jedoch mithilfe der folgenden Technik deaktiviert werden: `schedule` eine Zeit, die ein Datum enthält, das nie eintritt.
 
-Deaktivieren Sie beispielsweise die `visitor_clean` Cron-Auftrag, definiert in `Magento_Customer` -Modul:
+Deaktivieren Sie beispielsweise den Cron-Auftrag `visitor_clean` , der im Modul `Magento_Customer` definiert ist:
 
 ```xml
 ...
@@ -137,7 +137,7 @@ Deaktivieren Sie beispielsweise die `visitor_clean` Cron-Auftrag, definiert in `
 ...
 ```
 
-So deaktivieren Sie die `visitor_clean` Cron-Auftrag, erstellen Sie ein benutzerdefiniertes Modul und schreiben Sie die `visitor_clean` Cron-Auftrag `schedule`:
+Um den Cron-Auftrag `visitor_clean` zu deaktivieren, erstellen Sie ein benutzerdefiniertes Modul und schreiben Sie den `visitor_clean` cron-Auftrag `schedule` neu:
 
 ```xml
 ...
@@ -149,4 +149,4 @@ So deaktivieren Sie die `visitor_clean` Cron-Auftrag, erstellen Sie ein benutzer
 ...
 ```
 
-Nun, die `visitor_clean` Der Cron-Auftrag wird am 30. Februar um 00:00 Uhr ausgeführt - zu dem Datum, das nie eintreten wird.
+Nun wurde der Cron-Auftrag `visitor_clean` so eingestellt, dass er am 30. Februar um 00:00 Uhr ausgeführt wird - zu dem Datum, das nie eintreten wird.

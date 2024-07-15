@@ -20,27 +20,27 @@ Es wird viel Arbeit geleistet, um Kunden das beste Online-Erlebnis zu bieten. Au
 
 Versand und Erfüllung haben einige grundlegende Faktoren, die als Grundlage dienen, darunter:
 
-- **Versandmethoden und -kosten**—Unternehmen müssen die gesamten Versandkosten analysieren und aufteilen und entscheiden, ob sie Versandkosten absorbieren, die Kosten an die Kunden weitergeben oder die Kosten teilen sollen. Wie wird das Unternehmen kostenlose Versand- oder Lieferangebote anbieten? Wie werden die Produkte versandt? Gibt es mehr als eine Versandmethode und Versandkosten?
+- **Versandmethoden und -kosten**: Unternehmen müssen die gesamten Versandkosten analysieren und aufteilen und bestimmen, ob Versandkosten absorbiert, Kosten an Kunden weitergegeben oder die Kosten aufgeteilt werden sollen. Wie wird das Unternehmen kostenlose Versand- oder Lieferangebote anbieten? Wie werden die Produkte versandt? Gibt es mehr als eine Versandmethode und Versandkosten?
 
-- **Produkt**—Jedes Produkt unterscheidet sich hinsichtlich der Anzahl der Artikel, des Gewichts, des Bestimmungsorts und der Beständigkeit. Unternehmen müssen diese Details analysieren, um die Gesamtkosten des Versands zu verstehen, da verschiedene Produkte unterschiedliche Versandkosten haben.
+- **Produkt**: Jedes Produkt unterscheidet sich in Bezug auf die Anzahl der Artikel, die Gewichtung, das Ziel und die Dauerhaftigkeit. Unternehmen müssen diese Details analysieren, um die Gesamtkosten des Versands zu verstehen, da verschiedene Produkte unterschiedliche Versandkosten haben.
 
-- **Verpackung**—Die Verpackung spielt auch eine wichtige Rolle beim Verständnis der Versandmethode und der Kosten. Ist das Produkt beispielsweise zerbrechlich oder wird es als Geschenk verpackt?
+- **Verpacken**: Das Verpacken spielt auch eine wichtige Rolle beim Verständnis der Versandmethode und der Kosten. Ist das Produkt beispielsweise zerbrechlich oder wird es als Geschenk verpackt?
 
-- **Staffel**- Welche Änderungen sollten während der Spitzenzeiten vorgenommen werden, wie Klickrausch und Festivals.
+- **Staffel**: Welche Änderungen sollten während der Spitzenzeiten vorgenommen werden, z. B. Klick-Wut und Festivals.
 
-- **Netzbetreiber**—Welche Drittversandfirma eignet sich am besten für das Unternehmen? Welche Dienstleistungen werden von den Reedereien erbracht? Was kostet das?
+- **Carrier**: Welche Drittversandfirma eignet sich am besten für das Geschäft? Welche Dienstleistungen werden von den Reedereien erbracht? Was kostet das?
 
 ## Versandmethoden
 
 Bevor ein Unternehmen sein Produkt versendet, muss das Unternehmen über Versandmethoden und -kosten entscheiden. Es gibt verschiedene Optionen für Versandmethoden, darunter:
 
-- **Kostenloser Versand**—Kostenloser Versand an Kunden kann das beste Kundenerlebnis sein, das Unternehmen jedoch möglicherweise nicht.
+- **Kostenloser Versand**: Die kostenlose Lieferung an Kunden kann das beste Kundenerlebnis sein, das Unternehmen kann jedoch nicht davon profitieren.
 
-- **Echtzeit-Raten**—Durch die Zusammenarbeit mit Drittversandanbietern können Einzelhändler die Versandmethode und die Kosten, die von der Reederei derzeit in Rechnung gestellt werden, veröffentlichen. Dadurch können Kunden ihre bevorzugte Versandmethode wählen.
+- **Echtzeit-Tarife**: Durch die Zusammenarbeit mit externen Versandunternehmen können Einzelhändler die Versandmethode und die Kosten, die die Versandunternehmen derzeit in Rechnung stellen, veröffentlichen. Dadurch können Kunden ihre bevorzugte Versandmethode wählen.
 
-- **Pauschalsatz**—Eine der beliebtesten Versandoptionen. Der Trick dabei ist, sicherzustellen, dass die Einzelhändler die Kunden nicht überlasten oder unterberechnen. Dies funktioniert auch dann, wenn die Einzelhändler über ein Standardprodukt verfügen, sich jedoch erschweren können, wenn die Einzelhändler über eine Vielzahl von Produkten verfügen.
+- **Pauschalpreis** - Eine der beliebtesten Versandoptionen. Der Trick dabei ist, sicherzustellen, dass die Einzelhändler die Kunden nicht überlasten oder unterberechnen. Dies funktioniert auch dann, wenn die Einzelhändler über ein Standardprodukt verfügen, sich jedoch erschweren können, wenn die Einzelhändler über eine Vielzahl von Produkten verfügen.
 
-- **Kostenloser Versand über einen Betrag**—Einzelhändler können kostenlosen Versand anbieten, wenn der Kunde über einen bestimmten Betrag kauft. Einzelhändler müssen diesen Betrag berechnen, um diesen Dienst bereitstellen zu können.
+- **Kostenloser Versand über einen Betrag** - Einzelhändler können kostenlosen Versand bereitstellen, wenn der Kunde über einen bestimmten Betrag kauft. Einzelhändler müssen diesen Betrag berechnen, um diesen Dienst bereitstellen zu können.
 
 Versand und Erfüllung erforderten Teamkoordinierung sowohl intern als auch extern. Eine Versand- und Erfüllungsstrategie sollte für die gesamte Organisation freigegeben werden, damit sie aufeinander abgestimmt sind. Wenn das Marketing-Team beispielsweise eine Promotion versenden möchte, die kostenlosen Versand umfasst, muss es diese an die Versand- und Erfüllungsstrategie und das -Team anpassen, um negative Kundenerlebnisse zu vermeiden.
 

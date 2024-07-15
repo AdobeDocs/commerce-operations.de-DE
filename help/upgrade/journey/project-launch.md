@@ -13,4 +13,4 @@ ht-degree: 0%
 
 Die Pflege einer gesunden eCommerce-Site ist ebenso entscheidend für den Erfolg Ihres Unternehmens wie Ihr erster Start. Ein wichtiger Aspekt dabei ist die proaktive Planung und Vorbereitung von Upgrades, die Ihnen dabei helfen, Ihre Site so reibungslos wie möglich zu betreiben.
 
-Das NichtFestlegen der richtigen Upgrade-Erwartungen während dieses Zeitraums führt zu künftiger Unzufriedenheit. Vergewissern Sie sich, dass Sie die [Release-Kadenz](https://devdocs.magento.com/release/)und verwenden Sie dieses Handbuch, um festzulegen, wie und wann Upgrades geplant werden.
+Das NichtFestlegen der richtigen Upgrade-Erwartungen während dieses Zeitraums führt zu künftiger Unzufriedenheit. Vergewissern Sie sich, dass Sie die [Veröffentlichungsintervall](https://devdocs.magento.com/release/) kennen und verstehen, und verwenden Sie dieses Handbuch, um Sie bei der Definition von Wie und wann Sie Upgrades planen können.

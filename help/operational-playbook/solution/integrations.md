@@ -16,7 +16,8 @@ Die meisten Unternehmen wissen, dass viele einzigartige Strategien und Prozesse 
 
 Die meisten betrieblichen Anforderungen können mit verschiedenen Software-Plattformen erfüllt werden, darunter ERP, Marketplace, Business Intelligence Tools, Buchhaltungssoftware, Report Suites und vieles mehr. Die zusätzliche Software wird ausgewählt, um Zeit und Aufwand für das Unternehmen zu reduzieren und gleichzeitig das Kundenerlebnis und den Geschäftsbetrieb zu optimieren.
 
-Bei der Auswahl eines Drittanbieters sollten Unternehmen einen einfachen und effektiven Integrationsansatz verwenden, der ihren Anforderungen entspricht. Nachdem Sie die Kundenbedürfnisse verstanden haben, entscheiden Sie mithilfe des Verantwortlichen über einen detaillierten Plan. Richten Sie nach der Entscheidung über den Plan ein Spezifikationsdokument ein, das definiert, wie das System kommuniziert und welche Art von Daten erforderlich sind und an den Dritten weitergegeben werden.
+Bei der Auswahl eines Drittanbieters sollten Unternehmen einen einfachen
+und einen wirksamen Integrationsansatz, der ihren Bedürfnissen entspricht. Nachdem Sie die Kundenbedürfnisse verstanden haben, entscheiden Sie mithilfe des Verantwortlichen über einen detaillierten Plan. Richten Sie nach der Entscheidung über den Plan ein Spezifikationsdokument ein, das definiert, wie das System kommuniziert und welche Art von Daten erforderlich sind und an den Dritten weitergegeben werden.
 
 >[!NOTE]
 >

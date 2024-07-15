@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 unterstützt die Verwendung von Amazon OpenSearch Service-C
 ## Erstellen einer AWS OpenSearch-Dienstdomäne
 
 Sie müssen zunächst eine OpenSearch-Instanz in AWS einrichten.
-Lesen [Erstellen und Verwalten von Amazon OpenSearch Service-Domänen](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) für detaillierte Anweisungen.
+Detaillierte Anweisungen finden Sie unter [Erstellen und Verwalten von Amazon OpenSearch Service-Domänen](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) .
 
 ## Abrufen von Daten zu AWS OpenSearch
 
@@ -33,11 +33,11 @@ Bei größeren Installationen ist es empfehlenswert, ihre Datenindizes von der v
 Sie müssen keine Indizes migrieren, da diese einfach in der AWS-Instanz neu erstellt werden können.
 Stellen Sie jedoch bei der Migration von Datenindizes sicher, dass die Versionen von Elasticsearch/OpenSearch kompatibel sind.
 
-Siehe Amazon [Migrieren zum Amazon OpenSearch-Dienst](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) Anweisungen für weitere Informationen.
+Weitere Informationen finden Sie in den Anweisungen von Amazon für die [Migration zu Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) .
 
 ### Konfigurieren von Commerce für OpenSearch
 
-Die Schritte zum Konfigurieren von OpenSearch werden im Abschnitt [Erweiterte Installation](../../advanced.md) Thema.
+Die Schritte zum Konfigurieren von OpenSearch werden im Thema [Erweiterte Installation](../../advanced.md) beschrieben.
 
 Um zu testen, ob die neue Konfiguration funktioniert, testen Sie den OpenSearch-Endpunkt direkt:
 
@@ -45,12 +45,12 @@ Um zu testen, ob die neue Konfiguration funktioniert, testen Sie den OpenSearch-
 1. Neuindizieren über den Administrator.
 1. Abfragen des OpenSearch-Endpunkts (in der AWS-Benutzeroberfläche):
 
-   Um Indizes abzurufen, hängen Sie Folgendes an: `/_cat/indices/*?v=true` zur URL:
+   Um Indizes zu erhalten, hängen Sie Folgendes an die URL an: `/_cat/indices/*?v=true`:
    `<AWS OS endpoint>/_cat/indices/*?v=true`
 
-Um Produkte aus dem Index zu erhalten, hängen Sie Folgendes an: `/magento2docker_product_1/_search?q=*` zur URL:
+Um Produkte aus dem Index zu erhalten, hängen Sie Folgendes an: `/magento2docker_product_1/_search?q=*` an die URL an:
 `<AWS OS endpoint>/magento2docker_product_1/_search?q=testproduct1`
 
 ## Zusätzliche Ressourcen
 
-Weitere Informationen finden Sie im Abschnitt [OpenSearch AWS-Dokumentation](https://docs.aws.amazon.com/opensearch-service/index.html).
+Weitere Informationen finden Sie in der Dokumentation zu [OpenSearch AWS](https://docs.aws.amazon.com/opensearch-service/index.html) .

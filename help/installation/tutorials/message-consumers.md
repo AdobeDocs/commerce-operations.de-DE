@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Konfigurieren von Nachrichtenbenutzern
 
-Bevor Sie diesen Befehl ausführen, müssen Sie Folgendes tun: *oder* Sie müssen [Installieren des Programms](../advanced.md):
+Bevor Sie diesen Befehl ausführen, müssen Sie die folgenden *oder* ausführen, die Anwendung [installieren](../advanced.md):
 
 * [Erstellen oder Aktualisieren der Bereitstellungskonfiguration](deployment.md)
 * [Datenbankschema erstellen](database.md)

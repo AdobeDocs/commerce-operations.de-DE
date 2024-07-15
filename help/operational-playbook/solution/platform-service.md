@@ -18,9 +18,9 @@ PaaS wird als auf der Infrastruktur des Providers gehosteter Dienst bereitgestel
 
 PaaS funktioniert in privaten, öffentlichen und hybriden Clouds:
 
-- **Private Cloud**—PaaS wird aus Sicherheitsgründen innerhalb der Firewall des Kunden bereitgestellt, wo die Daten vor Ort gespeichert werden.
-- **Öffentliche Cloud**—Der Client hat die Kontrolle über die Bereitstellungen und der Provider ist für alle anderen Komponenten wie Netzwerk und Betriebssystem verantwortlich.
-- **Hybrid-Cloud**—Hybrid kombiniert die Funktionen von privat und öffentlich, sodass der Client flexibel sein kann.
+- **Private Cloud**: PaaS wird aus Sicherheitsgründen in der Firewall des Kunden bereitgestellt, in der die Daten vor Ort gespeichert werden.
+- **Öffentliche Cloud**: Der Client steuert die Bereitstellungen und der Provider ist für alle anderen Komponenten wie Netzwerk und Betriebssystem verantwortlich.
+- **Hybrid-Cloud**: Hybrid kombiniert die Funktionen von privat und öffentlich, sodass der Client flexibel sein kann.
 
 ## Vorteile
 
@@ -40,7 +40,8 @@ PaaS funktioniert in privaten, öffentlichen und hybriden Clouds:
 
 - Kann zu einer Sicherheitsbedrohung führen, da alles in der Cloud gespeichert ist
 - Abhängig vom Dienstleister
-- Wenn der Provider eine Ausfallzeit erfährt, wäre dies ein Problem für den Client
+- Wenn der Provider eine Ausfallzeit erfährt, wäre dies ein Problem für die
+client
 - Ermöglicht einfache und schnelle Aktualisierungen
 
 Wenn der Client PaaS in E-Commerce verwendet, muss er das System und die Betriebssystem-Software nicht verwalten. Dem Kunden steht eine Plattform zur Verfügung, mit der er seine E-Commerce-Site einrichten kann, auf der er Inhalte, Code-Daten und Produkte erstellt und konfiguriert. , die von der Administrationsseite der Dinge im Zusammenhang mit PaaS getrennt ist.

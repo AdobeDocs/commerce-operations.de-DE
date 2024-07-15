@@ -21,7 +21,7 @@ Wenn Sie Unternehmen betreiben, die über mehrere Sites für mehrere Marken auf 
 
 ![Tabelle, die die Kosten der Divergenz in der Architektur erklärt](../../../assets/playbooks/divergent-architecture.svg)
 
-![Tabelle mit den Kosten für konsolidierte Architektur](../../../assets/playbooks/consolidated-architecture.svg)
+![Tabelle, die die Kosten für die Konsolidierung in der Architektur erklärt](../../../assets/playbooks/consolidated-architecture.svg)
 
 Die GRA lautet:
 

@@ -4,14 +4,14 @@ description: Eine Liste der Werte finden Sie in der Datei config.php .
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
 
 # config.php-Referenz
 
-Die `config.php` -Datei enthält die folgenden Abschnitte:
+Die Datei `config.php` enthält die folgenden Abschnitte:
 
 | Name | Beschreibung |
 | --------- | -------------------|
@@ -34,7 +34,7 @@ Enthält ein Array von Modulen und deren Status. Wenn das Modul aktiviert ist, i
 ]
 ```
 
-Weitere Informationen [Module].
+Erfahren Sie mehr über [Module].
 
 ## Bereiche
 
@@ -82,7 +82,7 @@ Enthält ein Array von Bereichskonfigurationswerten. Sie weist die folgenden Unt
 ]
 ```
 
-Weitere Informationen [Commerce-Bereiche][scopes].
+Erfahren Sie mehr über [Commerce-Bereiche][scopes].
 
 ## System
 
@@ -100,7 +100,7 @@ Enthält ein Array von Systemfeldkonfigurationswerten.
 ]
 ```
 
-Weitere Informationen [Systemspezifische Konfigurationen](config-reference-sens.md).
+Erfahren Sie mehr über [Systemspezifische Konfigurationen](config-reference-sens.md).
 
 ## themes
 
@@ -120,7 +120,7 @@ Enthält ein Array von Werten für die Designkonfiguration.
 ]
 ```
 
-Weitere Informationen [Designs].
+Erfahren Sie mehr über [Designs].
 
 <!-- link definitions -->
 

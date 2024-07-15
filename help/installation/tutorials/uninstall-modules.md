@@ -13,11 +13,11 @@ ht-degree: 0%
 
 In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Module deinstallieren. Bei der Deinstallation können Sie optional den Code, das Datenbankschema und die Datenbankdaten der Module entfernen. Sie können zunächst Backups erstellen, um die Daten später wiederherzustellen.
 
-Sie sollten ein Modul nur deinstallieren, wenn Sie sicher sind, dass Sie es nicht verwenden werden. Anstatt ein Modul zu deinstallieren, können Sie es wie unter [Module aktivieren oder deaktivieren](manage-modules.md).
+Sie sollten ein Modul nur deinstallieren, wenn Sie sicher sind, dass Sie es nicht verwenden werden. Anstatt ein Modul zu deinstallieren, können Sie es deaktivieren, wie unter [Module aktivieren oder deaktivieren](manage-modules.md) beschrieben.
 
 >[!NOTE]
 >
->Dieser Befehl überprüft, ob nur Abhängigkeiten in der `composer.json` -Datei. Wenn Sie ein Modul deinstallieren, das _not_ definiert im `composer.json` -Datei, deinstalliert dieser Befehl das -Modul, ohne nach Abhängigkeiten zu suchen. Dieser Befehl _not_, entfernen Sie jedoch den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystemwerkzeuge verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie [disable](manage-modules.md) Nicht-Composer-Module
+>Dieser Befehl überprüft, ob nur Abhängigkeiten in der Datei &quot;`composer.json`&quot;deklariert wurden. Wenn Sie ein Modul deinstallieren, das in der `composer.json` -Datei definiert ist, deinstalliert dieser Befehl das Modul, ohne nach Abhängigkeiten zu suchen. __ Mit diesem Befehl wird _nicht_ ausgeführt, der Code des Moduls wird jedoch aus dem Dateisystem entfernt. Sie müssen Dateisystemwerkzeuge verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie [disable](manage-modules.md) non-Composer-Module deaktivieren.
 
 Befehlsverwendung:
 
@@ -26,13 +26,13 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
   {ModuleName} ... {ModuleName}
 ```
 
-Wo `{ModuleName}` gibt den Modulnamen in `<VendorName>_<ModuleName>` Format. Der Name des Kundenmoduls lautet beispielsweise `Magento_Customer`. Um eine Liste der Modulnamen zu erhalten, geben Sie `magento module:status`
+Dabei gibt `{ModuleName}` den Modulnamen im Format `<VendorName>_<ModuleName>` an. Beispielsweise lautet der Name des Kundenmoduls `Magento_Customer`. Um eine Liste der Modulnamen zu erhalten, geben Sie `magento module:status` ein.
 
 Der Befehl zur Deinstallation des Moduls führt die folgenden Aufgaben aus:
 
 1. Stellt sicher, dass die angegebenen Module in der Codebasis vorhanden sind und Pakete sind, die von Composer installiert werden.
 
-   Dieser Befehl funktioniert _only_ mit Modulen, die als Composer-Pakete definiert sind.
+   Dieser Befehl funktioniert _nur_ mit Modulen, die als Composer-Pakete definiert sind.
 
 1. Prüft mit anderen Modulen auf Abhängigkeiten und beendet den Befehl, wenn es nicht erfüllte Abhängigkeiten gibt.
 
@@ -44,25 +44,25 @@ Der Befehl zur Deinstallation des Moduls führt die folgenden Aufgaben aus:
 
    | Option | Bedeutung | Name und Speicherort der Sicherungsdatei |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-   | `--backup-code` | Sichern Sie das Dateisystem (außer `var` und `pub/static` Verzeichnissen). | `var/backups/<timestamp>_filesystem.tgz` |
+   | `--backup-code` | Sichert das Dateisystem (außer den Verzeichnissen `var` und `pub/static`). | `var/backups/<timestamp>_filesystem.tgz` |
    | `--backup-media` | Sichert das Verzeichnis pub/media . | `var/backups/<timestamp>_filesystem_media.tgz` |
    | `--backup-db` | Sichert die Datenbank. | `var/backups/<timestamp>_db.gz` |
 
-1. Wenn `--remove-data` festgelegt ist, entfernen Sie das Datenbankschema und die Daten, die im `Uninstall` Klassen.
+1. Wenn `--remove-data` angegeben ist, entfernen Sie das Datenbankschema und die Daten, die in den `Uninstall` -Klassen des Moduls definiert sind.
 
-   Ruft für jedes angegebene Modul, das deinstalliert werden soll, die `uninstall` -Methode `Uninstall` -Klasse. Diese Klasse muss von erben [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   Ruft für jedes angegebene Modul, das deinstalliert werden soll, die `uninstall` -Methode in ihrer `Uninstall`-Klasse auf. Diese Klasse muss von [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php) übernehmen.
 
-1. Entfernt die angegebenen Module aus dem `setup_module` Datenbanktabelle.
-1. Entfernt die angegebenen Module aus der Modulliste im [Bereitstellungskonfiguration](../../configuration/reference/deployment-files.md).
-1. Entfernt Code aus der Codebasis mit `composer remove`.
+1. Entfernt die angegebenen Module aus der Datenbanktabelle `setup_module`.
+1. Entfernt die angegebenen Module aus der Modulliste in der [Bereitstellungskonfiguration](../../configuration/reference/deployment-files.md).
+1. Entfernt Code mit `composer remove` aus der Codebasis.
 
    >[!NOTE]
    >
-   >Deinstallieren eines Moduls _always_ läutet `composer remove`. Die `--remove-data` Option entfernt Datenbankdaten und Schemata, die durch die `Uninstall` -Klasse.
+   >Beim Deinstallieren eines Moduls wird _always_ mit `composer remove` ausgeführt. Die Option `--remove-data` entfernt Datenbankdaten und Schemas, die durch die `Uninstall` -Klasse des Moduls definiert sind.
 
 1. Löscht den Cache.
 1. Aktualisierungen generierter Klassen.
-1. Wenn `--clear-static-content` spezifiziert ist, cleans [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
+1. Wenn `--clear-static-content` angegeben ist, löscht [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
 1. Der Speicher wird nicht mehr im Wartungsmodus ausgeführt.
 
 Wenn Sie beispielsweise versuchen, ein Modul zu deinstallieren, von dem ein anderes Modul abhängig ist, wird die folgende Meldung angezeigt:
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-Eine Alternative besteht darin, beide Module nach der Sicherung des Moduldateisystems zu deinstallieren. `pub/media` Dateien und Datenbanktabellen, jedoch _not_ Entfernen des Datenbankschemas oder der Daten des Moduls:
+Eine Alternative besteht darin, beide Module nach dem Sichern des Moduldateisystems, der `pub/media`-Dateien und der Datenbanktabellen zu deinstallieren, wobei das Datenbankschema oder die Daten des Moduls jedoch _nicht_ entfernt werden:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
@@ -126,15 +126,15 @@ Verwenden Sie den folgenden Befehl, um die Codebase in dem Zustand wiederherzust
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
-Wo `<filename>` ist der Name der Sicherungsdatei im `<app_root>/var/backups` Verzeichnis. Um eine Liste der Sicherungsdateien anzuzeigen, geben Sie `magento info:backups:list`
+Wobei `<filename>` der Name der Sicherungsdatei im Verzeichnis `<app_root>/var/backups` ist. Um eine Liste der Sicherungsdateien anzuzeigen, geben Sie `magento info:backups:list` ein.
 
 >[!WARNING]
 >
->Mit diesem Befehl werden die angegebenen Dateien oder die Datenbank gelöscht, bevor sie wiederhergestellt werden. Beispiel: die `--media-file` Option löscht Medien-Assets unter `pub/media` vor dem Wiederherstellen aus der angegebenen Rollback-Datei. Vergewissern Sie sich, dass Sie das Dateisystem oder die Datenbank, die Sie beibehalten möchten, nicht geändert haben, bevor Sie diesen Befehl verwenden.
+>Mit diesem Befehl werden die angegebenen Dateien oder die Datenbank gelöscht, bevor sie wiederhergestellt werden. Beispielsweise löscht die Option `--media-file` Medien-Assets im Verzeichnis `pub/media` , bevor sie aus der angegebenen Rollback-Datei wiederhergestellt werden. Vergewissern Sie sich, dass Sie das Dateisystem oder die Datenbank, die Sie beibehalten möchten, nicht geändert haben, bevor Sie diesen Befehl verwenden.
 
 >[!NOTE]
 >
->Um eine Liste der verfügbaren Backup-Dateien anzuzeigen, geben Sie `magento info:backups:list`
+>Um eine Liste der verfügbaren Backup-Dateien anzuzeigen, geben Sie `magento info:backups:list` ein
 
 Dieser Befehl führt die folgenden Aufgaben aus:
 
@@ -142,7 +142,7 @@ Dieser Befehl führt die folgenden Aufgaben aus:
 1. Überprüft den Namen der Sicherungsdatei.
 1. Wenn Sie eine Code-Rollback-Datei angeben:
 
-   a) Stellt sicher, dass die Rollback-Zielspeicherorte schreibbar sind (beachten Sie, dass die Variable `pub/static` und `var` -Ordner werden ignoriert).
+   a. Stellt sicher, dass die Rollback-Zielspeicherorte schreibbar sind (beachten Sie, dass die Ordner `pub/static` und `var` ignoriert werden).
 
    b. Löscht alle Dateien und Ordner im Installationsverzeichnis der Anwendung.
 
@@ -172,7 +172,7 @@ Um beispielsweise eine Sicherung des Codes (d. h. des Dateisystems) wiederherzus
   magento info:backups:list
   ```
 
-* Wiederherstellen einer Dateisicherung namens `1433876616_filesystem.tgz`:
+* Wiederherstellen einer Dateisicherung mit dem Namen `1433876616_filesystem.tgz`:
 
   ```bash
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
@@ -191,4 +191,4 @@ Um beispielsweise eine Sicherung des Codes (d. h. des Dateisystems) wiederherzus
 
 >[!NOTE]
 >
->So führen Sie die `magento` erneut zu aktivieren, ohne die Verzeichnisse zu ändern, müssen Sie möglicherweise `cd pwd`.
+>Um den Befehl `magento` erneut auszuführen, ohne die Verzeichnisse zu ändern, müssen Sie möglicherweise `cd pwd` eingeben.

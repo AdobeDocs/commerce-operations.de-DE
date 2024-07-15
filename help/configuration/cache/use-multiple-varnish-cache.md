@@ -18,11 +18,11 @@ In diesem Thema werden die Grundlagen zum Konfigurieren mehrerer verschiedener I
 
 ## Konfiguration zum Bereinigen mehrerer verschiedener Instanzen
 
-Commerce bereinigt verschiedene Hosts, nachdem Sie dänische Hosts mithilfe der [`magento setup:config:set`](../../installation/tutorials/deployment.md) Befehl.
+Commerce löscht verschiedene Hosts, nachdem Sie mit dem Befehl [`magento setup:config:set`](../../installation/tutorials/deployment.md) verschiedene Hosts konfiguriert haben.
 
-Sie sollten die `--http-cache-hosts` -Parameter, um eine kommagetrennte Liste unterschiedlicher Hosts und Listen-Ports anzugeben. (Trennen Sie Hosts nicht durch Leerzeichen.)
+Verwenden Sie den Parameter `--http-cache-hosts` , um eine kommagetrennte Liste von &quot;Varnish Hosts&quot;und &quot;Listen Ports&quot;anzugeben. (Trennen Sie Hosts nicht durch Leerzeichen.)
 
-Das Parameterformat muss `<hostname or ip>:<listen port>`, wo Sie weglassen können `<listen port>` wenn es Port 80 ist.
+Das Parameterformat muss `<hostname or ip>:<listen port>` sein, wobei Sie `<listen port>` weglassen können, wenn es Port 80 ist.
 
 Beispiel:
 
@@ -30,8 +30,8 @@ Beispiel:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-Sie können dann alle leeren Hosts löschen, wenn Sie den Commerce-Cache aktualisieren (auch als _Reinigung_ den Cache) im Admin oder über die Befehlszeile verwenden.
+Sie können dann alle entfernten Hosts löschen, wenn Sie den Commerce-Cache (auch als _Bereinigen_ des Caches bezeichnet) im Admin oder über die Befehlszeile aktualisieren.
 
-Um den Cache mit dem Admin zu aktualisieren, klicken Sie auf **SYSTEM** > Tools > **Cacheverwaltung** Klicken Sie auf **Magento-Cache leeren** oben auf der Seite. (Sie können auch einzelne Cache-Typen aktualisieren.)
+Um den Cache mit Admin zu aktualisieren, klicken Sie auf **SYSTEM** > Tools > **Cache-Verwaltung** und dann oben auf der Seite auf **Magento-Cache leeren** . (Sie können auch einzelne Cache-Typen aktualisieren.)
 
-Verwenden Sie zum Aktualisieren des Caches mehrerer Varnish-Instanzen von CLI die [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+Verwenden Sie den Befehl [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als den [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md), um den Cache mehrerer Varnish-Instanzen von cli zu aktualisieren.

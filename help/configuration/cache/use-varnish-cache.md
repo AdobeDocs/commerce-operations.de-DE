@@ -16,7 +16,7 @@ In diesem Thema werden die Grundlagen der Verwendung von Varnish als Web-Caching
 
 ## Abfallbereinigung
 
-Gemäß [Varnish-Dokumentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *Bereinigung* ist das, was passiert, wenn Sie ein Objekt aus dem Cache auswählen und zusammen mit seinen Varianten verwerfen.&quot; Eine Bereinigung ähnelt einem Befehl zum Bereinigen des Caches (oder Klicken auf **Magento-Cache leeren** im Admin).
+Gemäß der [Varnish-Dokumentation](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) &quot;Eine *Bereinigung* ist das, was passiert, wenn Sie ein Objekt aus dem Cache auswählen und zusammen mit seinen Varianten verwerfen.&quot; Eine Bereinigung ähnelt einem Befehl zum Bereinigen des Caches (oder klicken Sie im Admin auf **Magento-Cache leeren** ).
 
 Wenn Sie den Commerce-Cache löschen, leeren oder aktualisieren, wird auch der Bereinigungsvorgang durchgeführt.
 
@@ -26,9 +26,9 @@ Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfigurier
 
   Alles, was Sie beispielsweise im Admin in tun:
 
-   - **SPEICHER** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **Allgemein**
-   - **SPEICHER** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **Währungseinstellungen**
-   - **SPEICHER** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **E-Mail-Adressen speichern**
+   - **STORES** > **settings** > **configuration** > ALLGEMEIN > **general**
+   - **STORES** > **settings** > **configuration** > ALLGEMEIN > **Currency Setup**
+   - **STORES** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **E-Mail-Adressen speichern**
 
   Wenn Commerce eine solche Änderung feststellt, wird eine Meldung angezeigt, die Sie auffordert, den Cache zu aktualisieren.
 
@@ -38,15 +38,15 @@ Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfigurier
 
 - Pflege des Quellcodes.
 
-  Sie sollten den Cache aktualisieren und auch regelmäßig alle Elemente in `generated/code` und `generated/metadata` Verzeichnissen. Informationen zum Aktualisieren des Caches finden Sie im nächsten Abschnitt.
+  Sie sollten den Cache aktualisieren und auch regelmäßig alles in den Verzeichnissen `generated/code` und `generated/metadata` löschen. Informationen zum Aktualisieren des Caches finden Sie im nächsten Abschnitt.
 
 ## Konfigurieren von Commerce zum Bereinigen von Varnish
 
-Commerce bereinigt verschiedene Hosts, nachdem Sie dänische Hosts mithilfe der [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) Befehl.
+Commerce löscht verschiedene Hosts, nachdem Sie mit dem Befehl [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) verschiedene Hosts konfiguriert haben.
 
-Sie können den optionalen Parameter verwenden `--http-cache-hosts` -Parameter, um eine kommagetrennte Liste unterschiedlicher Hosts und Listen-Ports anzugeben. Konfigurieren Sie alle gemischten Hosts, unabhängig davon, ob Sie einen oder mehrere Hosts haben. (Trennen Sie Hosts nicht durch Leerzeichen.)
+Sie können den optionalen Parameter `--http-cache-hosts` verwenden, um eine kommagetrennte Liste von &quot;Varnish Hosts&quot;und &quot;Listen Ports&quot;anzugeben. Konfigurieren Sie alle gemischten Hosts, unabhängig davon, ob Sie einen oder mehrere Hosts haben. (Trennen Sie Hosts nicht durch Leerzeichen.)
 
-Das Parameterformat muss `<hostname or ip>:<listen port>`, wo Sie weglassen können `<listen port>` wenn es Port 80 ist.
+Das Parameterformat muss `<hostname or ip>:<listen port>` sein, wobei Sie `<listen port>` weglassen können, wenn es Port 80 ist.
 
 Beispiel:
 
@@ -54,8 +54,8 @@ Beispiel:
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-Sie können dann beim Aktualisieren des Commerce-Caches (auch als *Reinigung* den Cache) im Admin oder über die Befehlszeile verwenden.
+Sie können dann &quot;Varnish&quot;-Hosts bereinigen, wenn Sie den Commerce-Cache (auch als *Bereinigung* des Caches bezeichnet) im Admin oder über die Befehlszeile aktualisieren.
 
-Um den Cache mit dem Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools > **Cacheverwaltung** Klicken Sie auf **Magento-Cache leeren** oben auf der Seite. (Sie können auch einzelne Cache-Typen aktualisieren.)
+Um den Cache mithilfe von Admin zu aktualisieren, klicken Sie auf &quot;**[!UICONTROL SYSTEM]**&quot;> &quot;Tools&quot;> &quot;**Cache-Verwaltung**&quot;, und klicken Sie dann oben auf der Seite auf &quot;**Magento-Cache leeren&quot;** . (Sie können auch einzelne Cache-Typen aktualisieren.)
 
-Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise das [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise den Befehl [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).

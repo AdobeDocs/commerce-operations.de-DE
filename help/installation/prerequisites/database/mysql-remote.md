@@ -21,26 +21,26 @@ Aurora ist ein leistungsstarker, vollständig kompatibler MySQL-Server, der auf 
 
 Die Verwendung von Aurora als Datenbank ist so einfach wie die Angabe der Datenbank in der regulären Adobe Commerce-Setup-Konfiguration mithilfe des standardmäßigen Datenbank-Connectors.
 
-Beim Ausführen `bin/magento setup:install`, verwenden Sie die Aurora-Informationen im `db-` -Felder:
+Verwenden Sie beim Ausführen von `bin/magento setup:install` die Aurora-Informationen in den `db-` -Feldern:
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-Die `db-host` Wert ist die Aurora-URL mit der `https://` und am Ende `:portnumber`  entfernt.
+Der Wert `db-host` ist die Aurora-URL, wobei die `https://` und die nachfolgende `:portnumber` entfernt sind.
 
 ## Remote-Datenbankverbindung einrichten
 
 >[!NOTE]
 >
->Dies ist ein erweitertes Thema, das nur von einem erfahrenen Netzwerkadministrator oder Datenbankadministrator verwendet werden sollte. Sie müssen `root` Zugriff auf das Dateisystem und Sie müssen sich bei MySQL als `root`.
+>Dies ist ein erweitertes Thema, das nur von einem erfahrenen Netzwerkadministrator oder Datenbankadministrator verwendet werden sollte. Sie benötigen `root` Zugriff auf das Dateisystem und müssen sich als `root` bei MySQL anmelden können.
 
 ### Voraussetzungen
 
 Bevor Sie beginnen, müssen Sie:
 
-* [MySQL-Server installieren](mysql.md) auf dem Datenbankserver.
-* [Erstellen einer Datenbankinstanz](mysql.md#configuring-the-database-instance) auf dem Datenbankserver.
+* [Installieren Sie den MySQL-Server](mysql.md) auf dem Datenbankserver.
+* [Erstellen Sie eine Datenbankinstanz](mysql.md#configuring-the-database-instance) auf dem Datenbankserver.
 * Installieren Sie den MySQL-Client auf Ihrem Adobe Commerce-Webknoten. Weitere Informationen finden Sie in der MySQL-Dokumentation .
 
 ### Hohe Verfügbarkeit
@@ -50,7 +50,7 @@ Verwenden Sie die folgenden Richtlinien, um Remote-Datenbankverbindungen zu konf
 * Sie müssen für jeden Webserverknoten eine Verbindung konfigurieren.
 * In der Regel konfigurieren Sie eine Datenbankverbindung zum Datenbank-Lastenausgleich. Das Datenbank-Clustering kann jedoch komplex sein und von Ihnen konfiguriert werden. Adobe gibt keine spezifischen Empfehlungen für das Datenbank-Clustering aus.
 
-  Weitere Informationen finden Sie unter [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Weitere Informationen finden Sie in der [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Beheben von Verbindungsproblemen
 
@@ -60,7 +60,7 @@ Wenn Sie Probleme beim Herstellen einer Verbindung zu einem der Hosts haben, pin
 
 So erstellen Sie eine Remote-Verbindung:
 
-1. Auf Ihrem Datenbankserver als Benutzer mit `root` -Berechtigungen, öffnen Sie Ihre MySQL-Konfigurationsdatei.
+1. Öffnen Sie auf Ihrem Datenbankserver als Benutzer mit `root` -Berechtigungen Ihre MySQL-Konfigurationsdatei.
 
    Geben Sie den folgenden Befehl ein, um ihn zu finden:
 
@@ -77,19 +77,19 @@ So erstellen Sie eine Remote-Verbindung:
 
    >[!NOTE]
    >
-   >Auf Ubuntu 16 lautet der Pfad normalerweise `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >Auf Ubuntu 16 ist der Pfad normalerweise `/etc/mysql/mysql.conf.d/mysqld.cnf`.
 
-1. Suchen Sie die Konfigurationsdatei nach `bind-address`.
+1. Suchen Sie in der Konfigurationsdatei nach &quot;`bind-address`&quot;.
 
    Falls vorhanden, ändern Sie den Wert wie folgt.
 
-   Wenn sie nicht vorhanden ist, fügen Sie sie dem `[mysqld]` Abschnitt.
+   Wenn es nicht vorhanden ist, fügen Sie es zum Abschnitt `[mysqld]` hinzu.
 
    ```conf
    bind-address = <ip address of your web node>
    ```
 
-   Siehe [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), insbesondere wenn Sie über einen Webserver mit Clustern verfügen.
+   Weitere Informationen finden Sie in der [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html), insbesondere wenn Sie über einen Webserver mit Clustern verfügen.
 
 1. Speichern Sie Ihre Änderungen in der Konfigurationsdatei und beenden Sie den Texteditor.
 1. Starten Sie den MySQL-Dienst neu:
@@ -100,18 +100,18 @@ So erstellen Sie eine Remote-Verbindung:
 
    >[!NOTE]
    >
-   >Wenn MySQL nicht gestartet werden kann, suchen Sie in syslog nach der Quelle des Problems. Beheben Sie das Problem mit [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) oder einer anderen maßgeblichen Quelle.
+   >Wenn MySQL nicht gestartet werden kann, suchen Sie in syslog nach der Quelle des Problems. Beheben Sie das Problem mit der [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) oder einer anderen autorisierten Quelle.
 
 ## Zugriff auf einen Datenbankbenutzer gewähren
 
 Damit Ihr Webknoten eine Verbindung zum Datenbankserver herstellen kann, müssen Sie einem Webknotendatenbankbenutzer Zugriff auf die Datenbank auf dem Remote-Server gewähren.
 
-Dieses Beispiel gewährt dem `root` Datenbankbenutzer vollen Zugriff auf die Datenbank auf dem Remote-Host.
+Mit diesem Beispiel wird dem Datenbankbenutzer `root` uneingeschränkter Zugriff auf die Datenbank auf dem Remote-Host gewährt.
 
 So gewähren Sie Zugriff auf einen Datenbankbenutzer:
 
 1. Melden Sie sich beim Datenbankserver an.
-1. Verbindung zur MySQL-Datenbank als `root` Benutzer.
+1. Stellen Sie eine Verbindung zur MySQL-Datenbank als `root` Benutzer her.
 1. Geben Sie den folgenden Befehl ein:
 
    ```shell
@@ -155,8 +155,8 @@ Wenn Ihr Webserver in einem Cluster gespeichert ist, geben Sie den Befehl auf je
 
 Bei der Installation von Adobe Commerce müssen Sie Folgendes angeben:
 
-* Die Basis-URL (auch als *Store-Adresse*) gibt den Hostnamen oder die IP-Adresse der *Webknoten*
-* Der Datenbankhost ist der *Remote-Datenbankserver* IP-Adresse (oder Lastenausgleich, wenn der Datenbankserver im Cluster ist)
-* Der Benutzername der Datenbank ist *lokaler Webknoten* Datenbankbenutzer, dem Sie Zugriff gewährt haben
+* Die Basis-URL (auch als *Speicheradresse* bezeichnet) gibt den Hostnamen oder die IP-Adresse des *Webknotens* an
+* Der Datenbankhost ist die IP-Adresse des *Remote-Datenbankservers* (oder des Lastenausgleichs, wenn der Datenbankserver geclustert ist).
+* Der Datenbankbenutzername ist der Datenbankbenutzer, auf den Sie Zugriff gewährt haben.**
 * Das Datenbankkennwort ist das Kennwort des lokalen Webknotenbenutzers
 * Datenbankname ist der Name der Datenbank auf dem Remote-Server.

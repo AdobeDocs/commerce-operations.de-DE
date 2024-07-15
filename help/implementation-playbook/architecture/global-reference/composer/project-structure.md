@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Projektstruktur des Composers
 
-In diesem Handbuch wird beschrieben, wie Sie die [Option für separate Pakete](../examples.md#option-1-separate-packages) in den Beispielen der globalen Referenzarchitektur (GRA) beschrieben.
+In diesem Handbuch wird beschrieben, wie Sie die Option [Separate Packages](../examples.md#option-1-separate-packages) einrichten und verwalten, die in den Beispielen der globalen Referenzarchitektur (GRA) beschrieben wird.
 
 ## Voraussetzungen
 
@@ -23,7 +23,7 @@ Bevor Sie beginnen, überprüfen Sie Folgendes:
 
 - Sie verfügen über ein Git-Repository
 - Sie verfügen über ein Composer-Repository (in diesem Thema wird Private Packagist hervorgehoben).
-- Sie haben Ihr Composer-Repository so konfiguriert, dass es den `repo.magento.com` und `packagist.org` Repositorys
+- Sie haben Ihr Composer-Repository so konfiguriert, dass es die Repositorys `repo.magento.com` und `packagist.org` spiegelt
 
 ## Haupt-Git-Projekt-Repository
 
@@ -37,7 +37,7 @@ Das Haupt-Git-Projekt-Repository sollte nur ein Composer-Projekt enthalten. Sie 
 └─ composer.lock
 ```
 
-Fügen Sie dem `.gitignore` Datei:
+Fügen Sie der Datei `.gitignore` den folgenden Inhalt hinzu:
 
 ```tree
 /*
@@ -49,7 +49,7 @@ Fügen Sie dem `.gitignore` Datei:
 
 1. Erstellen Sie ein Git-Repository mit dem Namen `project-<region/country/brand>`.
 
-1. Erstellen `composer.json` und `composer.lock` -Dateien:
+1. Erstellen Sie die Dateien `composer.json` und `composer.lock`:
 
    ```bash
    composer create-project --no-install --repository-url=https://repo.magento.com/ magento/project-enterprise-edition project-<region/country/brand>
@@ -71,13 +71,13 @@ Fügen Sie dem `.gitignore` Datei:
 
 ## Speichern von Nicht-Moduldateien
 
-1. Fügen Sie die `app/etc/config.xml` in das Git-Repository.
+1. Fügen Sie die Datei `app/etc/config.xml` zum Git-Repository hinzu.
 
-   Sie können das Modul verwenden, das Sie erstellen werden, um andere regionsspezifische oder markenspezifische Dateien zu installieren, z. B. `.htaccess`, Google- oder Bing-Authentifizierungstextdateien, ausführbare Dateien oder andere statische Dateien, die nicht von Adobe Commerce-Modulen verwaltet werden.
+   Sie können das Modul verwenden, das Sie erstellen werden, um andere regionsspezifische oder markenspezifische Dateien wie `.htaccess`, Google- oder Bing-Authentifizierungstextdateien, ausführbare Dateien oder andere statische Dateien zu installieren, die nicht von Adobe Commerce-Modulen verwaltet werden.
 
-   Verwendung `magento2-component` Geben Sie Pakete ein, um eine Dateizuordnung zu erstellen, um Dateien in das Git-Haupt-Repository zu kopieren während `composer install` und `composer update` Vorgänge.
+   Verwenden Sie Pakete vom Typ `magento2-component` , um eine Dateizuordnung zu erstellen, damit Dateien während der Vorgänge `composer install` und `composer update` in das Git-Haupt-Repository kopiert werden.
 
-1. Erstellen Sie ein Git-Repository, das der Benennungskonvention entspricht. `component-environment-<region/country/brand>`:
+1. Erstellen Sie ein Git-Repository, das der Benennungsregel `component-environment-<region/country/brand>` folgt:
 
    ```bash
    bin/magento module:enable --all
@@ -94,7 +94,7 @@ Fügen Sie dem `.gitignore` Datei:
    composer config -e
    ```
 
-1. Fügen Sie die `app/etc/config.php` als Zuordnung in der `extra.map` -Attribut Ihres `composer.json` Datei:
+1. Fügen Sie die Datei `app/etc/config.php` als Zuordnung im Attribut `extra.map` Ihrer `composer.json` -Datei hinzu:
 
    ```json
    {
@@ -115,7 +115,7 @@ Fügen Sie dem `.gitignore` Datei:
    }
    ```
 
-1. Validieren Sie Ihre `composer.json` und übertragen Sie sie in das Git-Repository:
+1. Validieren Sie Ihre `composer.json` -Datei und übertragen Sie sie in das Git-Repository:
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ Fügen Sie dem `.gitignore` Datei:
    git push --tags
    ```
 
-1. Überprüfen Sie, ob der Composer die `app/etc/config.php` Datei aus `<client>/component-environment-<region/country/brand>`.
+1. Stellen Sie sicher, dass der Composer die Datei &quot;`app/etc/config.php`&quot; aus &quot;`<client>/component-environment-<region/country/brand>`&quot; kopiert hat.
 
 ## Bereitstellungscode
 
@@ -211,24 +211,24 @@ Auf dem Webserver können Sie Code mithilfe von Composer bereitstellen, das Haup
 
 ## Andere Instanzen und Pakete hinzufügen
 
-Jede Instanz (Region, Marke oder anderweitig eindeutige Adobe Commerce-Installation) sollte eine eigene erhalten **Hauptprojekt** Instanz, **spezifisches Metapaket**, und **Umgebungs-Komponentenpaket**. Die **GRA-Metapaket** sollte **shared** alle Instanzen.
+Jede Instanz (Region, Marke oder anderweitig eindeutige Adobe Commerce-Installation) sollte eine eigene **Hauptprojektinstanz**, ein **spezifisches Metapaket** und ein **Umgebungskomponentenpaket** erhalten. Das **GRA-Metapaket** sollte **shared** für alle Instanzen sein.
 
 Funktionspakete (z. B. Adobe Commerce-Module, Designs, Sprachpakete und Bibliotheken) und Pakete von Drittanbietern sollten erforderlich sein, indem Sie:
 
-- **GRA-Metapaket**—Für die Installation auf _all_ Instanzen
-- **Instanzspezifisches Metapaket**—Für die Installation auf einer einzigen Marke oder Region
+- **GRA-Metapaket** - Für die Installation auf _allen_ -Instanzen
+- **Instanzspezifisches Metapaket** - Zur Installation auf einer einzelnen Marke oder Region
 
 >[!IMPORTANT]
 >
->Sie benötigen keine Pakete im Hauptprojekt `composer.json` -Datei auf `main` oder `release` Verzweigungen.
+>Sie benötigen keine Pakete in der Datei `composer.json` des Hauptprojekts in den Verzweigungen `main` oder `release`.
 
 ## Vorbereitungen für die Entwicklung
 
-Für die Entwicklung installieren Sie `develop` Versionen aller Module, die Sie verwalten.
+Installieren Sie für die Entwicklung `develop` Versionen aller Module, die Sie verwalten.
 
-Abhängig von Ihrer Verzweigungsstrategie haben Sie möglicherweise `develop`, `qa`, `uat`, und `main` Verzweigungen. Jede Verzweigung ist in Composer mit einer `dev-` -Präfix. Also die `develop` Verzweigung kann über Composer als Version erforderlich sein `dev-develop`.
+Abhängig von Ihrer Verzweigungsstrategie können Sie über die Verzweigungen `develop`, `qa`, `uat` und `main` verfügen. Jede Verzweigung ist im Composer mit dem Präfix `dev-` vorhanden. Der Zweig `develop` kann also über den Composer als Version `dev-develop` erforderlich sein.
 
-1. Erstellen `develop` Verzweigungen in allen Modulen und Projekt-Repositorys.
+1. Erstellen Sie `develop` Zweige in allen Modulen und Projektrepositorys.
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ Abhängig von Ihrer Verzweigungsstrategie haben Sie möglicherweise `develop`, `
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   Der vorherige Schritt generiert die folgenden Zeilen in Ihrer `composer.json` Datei:
+   Der vorherige Schritt generiert die folgenden Zeilen in Ihrer `composer.json` -Datei:
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ Abhängig von Ihrer Verzweigungsstrategie haben Sie möglicherweise `develop`, `
 
    >[!IMPORTANT]
    >
-   >**Keine Zusammenführung** diese `composer.json` -Datei in Ihrer Produktionsverzweigung geändert. Installieren Sie nur stabile Versionen von Paketen auf `release` und `main` Verzweigungen. Sie können diese Abhängigkeiten für `qa` Zweige und andere Zweige, die keine Hauptzweige sind.
+   >**Führen Sie diese `composer.json` Dateiänderungen nicht in Ihrer Produktionsverzweigung zusammen.** Installieren Sie nur stabile Versionen von Paketen auf den Verzweigungen `release` und `main` . Sie können diese Abhängigkeiten für `qa` -Zweige und andere Nicht-Haupt-Zweige definieren.

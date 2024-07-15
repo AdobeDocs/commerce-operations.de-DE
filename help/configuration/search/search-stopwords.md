@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Konfigurieren von Suchbegriffen
 
-Im Allgemeinen _Stoppwörter_ sind häufig verwendete Wörter, die von Suchmaschinen nach der Textverarbeitung herausgefiltert werden. Ursprünglich, als Festplattenspeicher und Speicher extrem begrenzt waren, bedeutete jeder eingesparte Kilobyte eine deutliche Leistungsverbesserung. Daher erzielten Suchmaschinen Leistungssteigerungen, indem sie bestimmte Wörter ignorieren und den Index klein halten.
+Im Allgemeinen sind _Stoppwörter_ gängige Wörter, die von Suchmaschinen nach der Textverarbeitung herausgefiltert werden. Ursprünglich, als Festplattenspeicher und Speicher extrem begrenzt waren, bedeutete jeder eingesparte Kilobyte eine deutliche Leistungsverbesserung. Daher erzielten Suchmaschinen Leistungssteigerungen, indem sie bestimmte Wörter ignorieren und den Index klein halten.
 
 Obwohl wir heute über mehr Speicher verfügen, ist die Leistung weiterhin wichtig. Elasticsearch und OpenSearch verwenden wie andere Suchmaschinen weiterhin Stoppwörter, um die Leistung zu verbessern.
 
-Sie müssen Ihre Stoppwörter mithilfe von CSV-Dateien verwalten, die sich im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis oder `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` -Verzeichnis, abhängig davon, wie Sie die Commerce-Software installiert haben.
+Abhängig davon, wie Sie die Commerce-Software installiert haben, müssen Sie die Stoppwörter mithilfe von CSV-Dateien im Ordner &quot;`<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`&quot;oder &quot;`<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`&quot;verwalten.
 
 Weitere Informationen dazu, wie Elasticsearch und OpenSearch Stoppwörter verwenden, finden Sie in den folgenden Ressourcen:
 
@@ -27,7 +27,7 @@ Weitere Informationen dazu, wie Elasticsearch und OpenSearch Stoppwörter verwen
 
 ## Stoppwörter konfigurieren
 
-Stoppwörter befinden sich im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis. Im Lieferumfang von Adobe Commerce ist eine CSV-Datei mit Stoppwörtern für Standard-Gebietsschemata und einer zusätzlichen Datei enthalten. `stopwords.csv`, das Stoppwörter für alle Gebietsschemas enthält, die nicht durch eine andere CSV-Datei dargestellt werden.
+Stoppwörter befinden sich im Verzeichnis `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` . Im Lieferumfang von Adobe Commerce ist eine CSV-Datei mit Stoppwörtern für die Standard-Gebietsschemas und eine zusätzliche Datei, `stopwords.csv`, enthalten, die Stoppwörter für alle Gebietsschemas enthält, die nicht durch eine andere CSV-Datei dargestellt werden.
 
 Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträgt 15 Minuten.
 
@@ -35,10 +35,10 @@ Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträg
 
 **So bearbeiten Sie Stoppwörter**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
-1. Verwenden Sie einen Texteditor, um eine Stoppwortdatei im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis.
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zum [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Verwenden Sie einen Texteditor, um eine Stoppwortdatei im Verzeichnis `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` zu öffnen.
 
-   CSV-Dateien verwenden die Namenskonvention `stopwords_<locale_code>.csv`. Die deutsche Stoppwortdatei heißt beispielsweise `stopwords_de_DE.csv`.
+   CSV-Dateien verwenden die Namenskonvention `stopwords_<locale_code>.csv`. Beispielsweise trägt die deutsche Stoppwortdatei den Namen `stopwords_de_DE.csv`.
 
 1. Fügen Sie Wörter hinzu, entfernen Sie Wörter oder ändern Sie Wörter in der Datei.
 
@@ -47,7 +47,7 @@ Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträg
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 1. Bereinigen Sie den Konfigurations-Cache.
 
-   - Admin: **System** > Tools > **Cacheverwaltung**. Wählen Sie die **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicks **Einsenden** , um die Aktion abzuschließen.
+   - Admin: **System** > Werkzeuge > **Cache-Verwaltung**. Aktivieren Sie das Kontrollkästchen **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicken Sie auf **Senden** , um die Aktion abzuschließen.
 
    - Befehlszeile: Geben Sie als Eigentümer des Dateisystems den folgenden Befehl ein:
 
@@ -61,16 +61,16 @@ Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträg
 
 **Hinzufügen von Stoppwörtern für ein Gebietsschema**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zum [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
 
-1. Verwenden Sie einen Texteditor, um eine Stoppwortdatei mit dem Namen `stopwords_<locale_code>.csv` im `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` Verzeichnis.
+1. Verwenden Sie einen Texteditor, um eine Stoppwortdatei mit dem Namen `stopwords_<locale_code>.csv` im Verzeichnis `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` zu erstellen.
 
-   Um beispielsweise Stoppwörter für das italienische Gebietsschema zu erstellen, geben Sie der Datei einen Namen `stopwords_it_IT.csv`.
+   Um beispielsweise Stoppwörter für das italienische Gebietsschema zu erstellen, benennen Sie die Datei &quot;`stopwords_it_IT.csv`&quot;.
 
 1. Stellen Sie in Ihrer Stoppwortdatei sicher, dass sich jedes Stoppwort in einer separaten Zeile befindet.
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 1. Öffnen Sie im selben Ordner `esconfig.xml` in einem Texteditor.
-1. Zeile hinzufügen zu `esconfig.xml` wie folgt:
+1. Fügen Sie `esconfig.xml` eine Zeile wie folgt hinzu:
 
    ```xml
    <LOCALE_CODE>stopwords_LOCALE_CODE.csv</LOCALE_CODE>
@@ -85,7 +85,7 @@ Die standardmäßige Lebensdauer für den Cache mit Stoppwörter-Dateien beträg
 1. Speichern Sie die Änderungen in `esconfig.xml` und beenden Sie den Texteditor.
 1. Bereinigen Sie den Konfigurations-Cache.
 
-   - Admin: **System** > Tools > **Cacheverwaltung**. Wählen Sie die **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicks **Einsenden** , um die Aktion abzuschließen.
+   - Admin: **System** > Werkzeuge > **Cache-Verwaltung**. Aktivieren Sie das Kontrollkästchen **Konfiguration** und klicken Sie in der Liste darüber auf **Aktualisieren**. Klicken Sie auf **Senden** , um die Aktion abzuschließen.
 
    - Befehlszeile: Geben Sie als Eigentümer des Dateisystems den folgenden Befehl ein:
 
@@ -102,15 +102,15 @@ In diesem Abschnitt wird beschrieben, wie Sie optional das standardmäßige stop
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie das Magento 2 GitHub-Repository geklont haben, befindet sich der Pfad unter `app/code`. Wenn Sie ein komprimiertes Archiv oder ein Metapaket installiert haben, befindet sich der Pfad unter `vendor`.
+Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie das Magento 2-GitHub-Repository geklont haben, befindet sich der Pfad unter `app/code`. Wenn Sie ein komprimiertes Archiv oder ein Metapaket installiert haben, befindet sich der Pfad unter &quot;`vendor`&quot;.
 
 **So ändern Sie den Ordner**:
 
-1. Als Eigentümer des Dateisystems öffnen Sie das Elasticsearch `di.xml` in einem Texteditor.
+1. Als Dateisysteminhaber öffnen Sie das Elasticsearch &quot;`di.xml`&quot; in einem Texteditor.
 
    Wenn Sie das Repository geklont haben, befindet es sich unter `app/code/Magento/Elasticsearch/etc/di.xml`
 
-   Wenn Sie ein Archiv oder das Metapaket erhalten haben, finden Sie es unter `vendor/magento/module-elasticsearch/etc/di.xml`
+   Wenn Sie ein Archiv oder das Metapaket erhalten haben, befindet es sich unter `vendor/magento/module-elasticsearch/etc/di.xml`
 
 1. Ändern Sie den Wert von `stopwordsDirectory` in den gewünschten Ordner:
 
@@ -126,8 +126,8 @@ Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie d
 
 ## So ändern Sie den Ordner von Ihrem Modul aus
 
-1. [Modul erstellen](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
-1. In Ihrem Modul `etc/di.xml` Anweisungen hinzufügen:
+1. [Erstellen eines Moduls](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. Fügen Sie in Ihrem Modul `etc/di.xml` Anweisungen hinzu:
 
    ```xml
    <type name="Magento\Elasticsearch\SearchAdapter\Query\Preprocessor\Stopwords">
@@ -138,6 +138,6 @@ Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie d
    </type>
    ```
 
-1. Erstellen Sie in Ihrem -Modul den Ordner . `etc/stopwords`, mit der entsprechenden CSV-Datei.
+1. Erstellen Sie in Ihrem -Modul das Verzeichnis `etc/stopwords` mit der entsprechenden CSV-Datei.
 
 1. Speichern Sie Ihre Änderungen in `di.xml` und beenden Sie den Texteditor.

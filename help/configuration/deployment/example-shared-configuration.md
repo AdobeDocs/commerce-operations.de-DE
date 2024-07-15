@@ -4,29 +4,29 @@ description: Sehen Sie sich ein Beispiel an, wie Sie Einstellungen in einem Entw
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 # Beispiel mit einer freigegebenen Konfiguration
 
-Dieses Beispiel zeigt, wie Sie die folgenden Einstellungen in Ihrem Entwicklungssystem ändern, die freigegebene Konfigurationsdatei aktualisieren, `config.php`, in Ihrem Build-System und implementieren Sie dieselben Einstellungen in Ihrem Produktionssystem:
+In diesem Beispiel wird gezeigt, wie Sie die folgenden Einstellungen in Ihrem Entwicklungssystem ändern, die freigegebene Konfigurationsdatei `config.php` in Ihrem Build-System aktualisieren und dieselben Einstellungen in Ihr Produktionssystem implementieren:
 
 - Zeitzone
 - Gewichtseinheit
 
-Diese Einstellungen sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+Diese Einstellungen sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein** verfügbar.
 
 Sie können dasselbe Verfahren verwenden, um nicht vertrauliche, nicht systemspezifische Einstellungen in den folgenden Referenzen zu konfigurieren:
 
 - [Andere Konfigurationspfade - Referenz](../reference/config-reference-general.md)
 - [Referenz zu Zahlungskonfigurationspfaden](../reference/config-reference-payment.md)
-- [Referenz zu den Konfigurationspfaden für Commerce Enterprise B2B-Erweiterungen](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B-Erweiterungs-Konfigurationspfade - Referenz](../reference/config-reference-b2b.md)
 
 ## Bevor Sie beginnen
 
-Richten Sie zunächst die Dateisystemberechtigungen und den Eigentümer ein, wie hier beschrieben: [Voraussetzungen für Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md).
+Richten Sie zunächst Dateisystemberechtigungen und -eigentum ein, wie unter [Voraussetzungen für Entwicklung, Build und Produktionssysteme](../deployment/prerequisites.md) beschrieben.
 
 ## Annahmen
 
@@ -35,7 +35,7 @@ Dieses Thema enthält ein Beispiel für die Änderung der Konfiguration des Prod
 Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 
 - Verwenden Sie die Git-Quellsteuerung.
-- Das Entwicklungssystem ist in einem Git-Remote-Repository mit dem Namen `mconfig`
+- Das Entwicklungssystem ist in einem Git-Remote-Repository mit dem Namen `mconfig` verfügbar
 - Ihre Git-Arbeitsverzweigung heißt `m2.2_deploy`
 
 ## Schritt 1: Konfiguration im Entwicklungssystem festlegen
@@ -43,22 +43,22 @@ Für die Zwecke dieses Beispiels gehen wir von Folgendem aus:
 So legen Sie die Zeitzonen- und Gewichtseinheiten in Ihrem Entwicklungssystem fest:
 
 1. Melden Sie sich beim Administrator an.
-1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
-1. Erweitern Sie im rechten Bereich **Gebietsschemaoptionen**.
+1. Klicken Sie auf **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Erweitern Sie im rechten Bereich **Gebietsschema-Optionen**.
 
    Die folgende Abbildung zeigt ein Beispiel.
 
-   ![Festlegen von Gebietsschemaoptionen im Entwicklungssystem](../../assets/configuration/split-deploy-set-locale.png)
+   ![Gebietsschemaoptionen im Entwicklungssystem festlegen](../../assets/configuration/split-deploy-set-locale.png)
 
-1. Aus dem **Zeitzone** Liste, klicken Sie **GMT+00:00 (UTC)**.
-1. Löschen Sie die **Systemwert verwenden** Kontrollkästchen neben dem **Gewichtseinheit** -Feld.
-1. Aus dem **Gewichtseinheit** Liste, klicken Sie **kgs**.
-1. Klicks **Konfiguration speichern**.
+1. Klicken Sie in der Liste **Zeitzone** auf **GMT+00:00 (UTC)**.
+1. Deaktivieren Sie das Kontrollkästchen **Systemwert verwenden** neben dem Feld **Gewichtungseinheit** .
+1. Klicken Sie in der Liste **Gewichtungseinheit** auf **kgs**.
+1. Klicken Sie auf **Konfiguration speichern**.
 1. Wenn Sie dazu aufgefordert werden, leeren Sie den Cache.
 
 ## Schritt 2: Aktualisierung der freigegebenen Konfiguration
 
-Generieren Sie die freigegebene Konfigurationsdatei, `app/etc/config.php`, in Ihrem Entwicklungssystem und übertragen Sie es mithilfe der Quell-Code-Verwaltung auf Ihr Build-System, wie in diesem Abschnitt beschrieben.
+Generieren Sie die freigegebene Konfigurationsdatei &quot;`app/etc/config.php`&quot; in Ihrem Entwicklungssystem und übertragen Sie sie mithilfe der Quell-Code-Verwaltung auf Ihr Build-System, wie in diesem Abschnitt beschrieben.
 
 {{$include /help/_includes/config-save-config.md}}
 
@@ -76,16 +76,16 @@ Der letzte Schritt im Prozess besteht darin, Ihr Produktionssystem von der Quell
 
 ### Überprüfen der Änderungen in der Admin-Konsole
 
-**Um sicherzustellen, dass diese Einstellungen in Admin nicht bearbeitet werden können**:
+**Um sicherzustellen, dass diese Einstellungen in Admin** nicht bearbeitet werden können:
 
 1. Melden Sie sich beim Administrator an.
-1. Klicks **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
-1. Erweitern Sie im rechten Bereich **Gebietsschemaoptionen**.
+1. Klicken Sie auf **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+1. Erweitern Sie im rechten Bereich **Gebietsschema-Optionen**.
 
    Die soeben festgelegten Optionen werden wie folgt angezeigt:
 
-   ![Konfigurationsoptionen sind in Admin nicht bearbeitbar](../../assets/configuration/split-deploy-not-editable.png)
+   ![Konfigurationsoptionen können im Admin nicht bearbeitet werden](../../assets/configuration/split-deploy-not-editable.png)
 
 >[!INFO]
 >
->Um eine Einstellung zu ändern, die im Admin gesperrt ist, verwenden Sie die [`magento config:set --lock` command](../cli/set-configuration-values.md).
+>Um eine Einstellung zu ändern, die in Admin gesperrt ist, verwenden Sie den Befehl [`magento config:set --lock`](../cli/set-configuration-values.md).

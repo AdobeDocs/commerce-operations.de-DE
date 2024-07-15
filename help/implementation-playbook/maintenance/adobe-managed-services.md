@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ Adobe Managed Services bietet gehostete und verwaltete Anwendungen und Infrastru
 
 Adobe Managed Services bietet wesentliche Vorteile gegenüber lokalen und nicht verwalteten Cloud-Implementierungen, darunter:
 
-- **Erweiterte Service-Level-Ziele (SLTs)**—Schnellere Reaktionszeiten als die standardmäßige Adobe Commerce-Unterstützung.
-- **Erweiterte Service Level Agreements (SLAs)**—99,9 % Anwendungsniveau, das reguläre Adobe Commerce auf Cloud-Infrastrukturkunden auf das Infrastrukturniveau von 99,99 % bringen.
-- **Designierte Cloud-Kenntnisse**—Managed Services stellt Kunden einen hierfür vorgesehenen Customer Success Engineer (CSE) zur Verfügung, der als Anwendungs- und Cloud-Infrastrukturexperte fungiert. Der CSE arbeitet mit Kunden und ihren Partnern zusammen und bietet ihnen Best Practices und Anleitungen, um die Markteinführung zu beschleunigen, einschließlich:
+- **Verbesserte Service-Level-Ziele (SLTs)** - Schnellere Reaktionszeiten als die standardmäßige Adobe Commerce-Unterstützung.
+- **Verbesserte Service Level Agreements (SLAs)** - Anwendungsebene von 99,9 %, die reguläre Adobe Commerce für Cloud-Infrastrukturkunden auf das 99,99 %-Infrastrukturniveau erzielen.
+- **Designated Cloud-Expertise**: Managed Services bietet Kunden einen designierten Customer Success Engineer (CSE), der als Experten für Anwendungen und Cloud-Infrastruktur fungiert. Der CSE arbeitet mit Kunden und ihren Partnern zusammen und bietet ihnen Best Practices und Anleitungen, um die Markteinführung zu beschleunigen, einschließlich:
    - Anleitung und Support durch den Onboarding-Prozess
    - Verwaltung der Bereitstellung und Plattformeinrichtung
    - Beratung zu Architekturprinzipien für Integrationen und Anpassungen
@@ -81,7 +81,7 @@ Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwick
             <td>Inhaber</td>
         </tr>
         <tr>
-            <td>Zugriff auf Adobe Commerce-Quellcode</td>
+            <td>Zugriff auf Adobe Commerce Source-Code</td>
             <td></td>
             <td></td>
             <td>Inhaber</td>
@@ -372,15 +372,15 @@ Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwick
 
 Der Adobe-Sicherheits-Stack für Managed Services erstellt Sicherheit in auf allen Ebenen mithilfe von Automatisierung und Konsistenz, um menschliche Fehler zu reduzieren. Entwicklungs- und Betriebsteams übernehmen automatisch Sicherheitskontrollen von verschiedenen Ebenen des Stapels.
 
-Plattformpartner wie Amazon Web Services und Microsoft Azure stellen bei der Anwendung von Plattformanpassungen eine maximale Sicherheitsabdeckung sicher, während das Managed Services-Team zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Scannen und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Siehe [Adobe Commerce-Sicherheit](https://business.adobe.com/products/magento/secure-ecommerce.html) für weitere Informationen.
+Plattformpartner wie Amazon Web Services und Microsoft Azure stellen bei der Anwendung von Plattformanpassungen eine maximale Sicherheitsabdeckung sicher, während das Managed Services-Team zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Scannen und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) .
 
 Das folgende Diagramm zeigt den Adobe Managed Services Security Technology Stack:
 
-![Abbildung eines Adobe Managed Services-Sicherheitsstapels](../../assets/playbooks/managed-services-security-stack.svg)
+![Diagramm mit Adobe Managed Services-Sicherheitsstapel](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Upgrade-Hilfe
 
-Das Managed Services-Team spielt eine aktive Rolle bei der Planung und Unterstützung des Aktualisierungsprozesses. Ihr Customer Success Engineer (CSE) arbeitet mit Ihrem Upgrade-Projektteam zusammen, einschließlich Projektmanagern und Entwicklern (Fachexperten für interne Themen, Adobe-zertifizierte Partner oder Fachkräfte von Adobe Consulting), um Ihrem Team bei der ordnungsgemäßen Planung und Einhaltung der Best Practices während des Upgrades zu helfen.
+Das Managed Services-Team spielt eine aktive Rolle bei der Planung und Unterstützung des Aktualisierungsprozesses. Ihr Customer Success Engineer (CSE) arbeitet mit Ihrem Upgrade-Projektteam zusammen, einschließlich Projektmanagern und Entwicklern (Experten für interne Themen, Adobe-zertifizierte Partner oder Fachkräfte aus Adobe Consulting), um Ihrem Team bei der ordnungsgemäßen Planung und Einhaltung der Best Practices während des Upgrades zu helfen.
 
 Managed Services CSEs haben mit Adobe Commerce-Kunden zusammengearbeitet, um Aktualisierungen in großen Umgebungen auszuführen. Ihr CSE kann Ihnen helfen, Expertenwissen zu nutzen, um den Erfolg der Aktualisierung zu maximieren und gleichzeitig Ausfallzeiten zu minimieren und das Gesamtrisiko zu verringern. Darüber hinaus arbeiten Managed Services-CSEs mit Ihrer dedizierten Staging-Umgebung für die Aktualisierung, damit vorhandene Produktionsprozesse bei der Validierung der Aktualisierung nicht beeinträchtigt werden.
 
@@ -402,16 +402,16 @@ Adobe bietet eine Reihe von Diensten rund um die Bereitstellung, Entwicklung, St
     <td>Upgrade-Projektplan erstellen</td>
     <td>Inhaber</td>
     <td>Mitarbeiter</td>
-    <td>Mitarbeiter<br />CSE bietet eine Upgrade-Vorlage und Beispiele für Upgrade-Pläne. Hier finden Sie Tipps und Best Practices.</td>
+    <td>Contributor<br />CSE bietet eine Upgrade-Vorlage und Beispiele für Aktualisierungspläne. Hier finden Sie Tipps und Best Practices.</td>
   </tr>
   <tr>
     <td>Ermitteln der erforderlichen Infrastrukturänderungen</td>
     <td></td>
     <td>Mitarbeiter</td>
-    <td>Inhaber<br />CSE überprüft die Staging- und Produktionsinfrastruktur, um eine ordnungsgemäße Dimensionierung sicherzustellen.</td>
+    <td>Inhaber<br />CSE überprüft die Staging- und Produktionsinfrastruktur, um eine ordnungsgemäße Größenanpassung sicherzustellen.</td>
   </tr>
   <tr>
-    <td>Bewertung der Komplexität der Aktualisierung<br />Pakete, Probleme und Fehlerbehebungen sowie Module von Drittanbietern und benutzerdefinierten Modulen identifizieren und dokumentieren</td>
+    <td>Bewertung der Upgrade-Komplexität<br />Identifizieren und Dokumentieren von Paketen, Problemen und Fehlerbehebungen sowie von Drittanbieter- und benutzerdefinierten Modulen</td>
     <td>Mitarbeiter</td>
     <td>Inhaber</td>
     <td>Mitarbeiter<br />CSE bietet Berichte und Empfehlungen zum Upgrade-Kompatibilitätstool.</td>
@@ -421,10 +421,10 @@ Adobe bietet eine Reihe von Diensten rund um die Bereitstellung, Entwicklung, St
     <td>Upgrade der Infrastrukturdienste<br />[MariaDB, Redis, Open Search und Rabbit MQ] (Staging und Produktion)</td>
     <td></td>
     <td></td>
-    <td>Inhaber<br />CSE koordiniert Aktualisierungen des Infrastrukturdienstes.<br />CSE plant die Veranstaltung von Konferenzen für Upgrades.<br />CSE unterstützt die Datenmigration von der Produktion in die Staging-Umgebung.</td>
+    <td>Owner<br />CSE koordiniert Aktualisierungen des Infrastrukturdienstes.<br />CSE plant die Veranstaltung eines Konferenztreffens für Upgrades.<br />CSE unterstützt die Datenmigration von der Produktion in die Staging-Umgebung.</td>
   </tr>
   <tr>
-    <td>Aktualisierung der Commerce-Codebasis und -Anpassungen, Neukompilierung von Code und Umgestaltung von Code</td>
+    <td>Aktualisieren der Codebasis und -anpassungen von Commerce; Neukompilierung von Code und Neugestaltung von Code</td>
     <td>Mitarbeiter</td>
     <td>Inhaber</td>
     <td></td>
@@ -433,14 +433,14 @@ Adobe bietet eine Reihe von Diensten rund um die Bereitstellung, Entwicklung, St
     <td>Prüfungen und Fehlerbehebung nach der Aktualisierung durchführen</td>
     <td></td>
     <td>Inhaber</td>
-    <td>Mitarbeiter<br />CSE führt nach der Aktualisierung Runbook aus, um Probleme im Zusammenhang mit der Aktualisierung zu erkennen und zu beheben.</td>
+    <td>Contributor<br />CSE führt nach der Aktualisierung Runbook aus, um Probleme im Zusammenhang mit der Aktualisierung zu erkennen und zu beheben.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT und Launch</td>
     <td>Ausführen von Leistungs- und Sicherheitstests</td>
     <td>Mitarbeiter</td>
     <td>Inhaber</td>
-    <td>Mitarbeiter<br />CSE unterstützt beim Lasttest durch Leistungsüberwachung von Anwendung und Infrastruktur.<br />CSE unterstützt Sie bei der Konfiguration des Commerce Security Scan Tool.</td>
+    <td>Contributor<br />CSE unterstützt beim Lasttest durch die Überwachung der Leistung der Anwendung und Infrastruktur.<br />CSE unterstützt Sie bei der Konfiguration des Commerce Security Scan Tool.</td>
   </tr>
   <tr>
     <td>Benutzerakzeptanztests beim Staging</td>
@@ -452,10 +452,10 @@ Adobe bietet eine Reihe von Diensten rund um die Bereitstellung, Entwicklung, St
     <td>Starten in die Produktion</td>
     <td>Mitarbeiter</td>
     <td>Inhaber</td>
-    <td>Mitarbeiter<br />Die CSE plant die Veranstaltung der Konferenz.</td>
+    <td>Contributor<br />CSE plant die Eröffnung des Konferenz-Meeting-Ereignisses.</td>
   </tr>
   <tr>
-    <td>Nach dem Start</td>
+    <td>Post-Launch</td>
     <td></td>
     <td>Mitarbeiter</td>
     <td>Mitarbeiter</td>

@@ -106,8 +106,8 @@ Die Adobe Commerce-Lösung für Cloud-Infrastruktur verwendet CDN-Anbieter, um d
 
 Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen Adobe, dem Händler und dem Cloud-Dienstleister geteilten Sicherheitsaufgaben anzuzeigen:
 
-**R** — Verantwortlich
-**A** — Rechenschaftslegung
+**R** — verantwortlich
+**A** — Accountable
 **C** — Consulted
 **I** — Informatisiert
 
@@ -132,7 +132,7 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Anwenden von Patches auf unterstützende Dienste<br>(Beispiel: Nginx oder MySQL.)</td>
+    <td>Anwenden von Patches auf unterstützende Dienste<br> (z. B. Nginx oder MySQL)</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Quell-Repository konfigurieren<sup>1</sup></td>
+    <td>Konfigurieren des Quell-Repositorys<sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -440,7 +440,7 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Beheben von Adobe Commerce bei PCI-Scans für Cloud-Infrastruktur<sup>4</sup></td>
+    <td>Beheben von Adobe Commerce auf PCI-Scans für Cloud-Infrastruktur<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -662,7 +662,7 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 | --- | --- | --- |
 | Anwendungskonfiguration |     | R |
 | Hinzufügen von Domänen zur Adobe Commerce-Anwendung (Basis-URLs) |     | R |
-| Konfigurieren von APIs für die Verwendung von Dienstversionen, die von der bereitgestellten Adobe Commerce-Version unterstützt werden<br><br>Beispielsweise sind verschiedene Commerce-Versionen mit bestimmten Versionen von PHP, Redis usw. kompatibel. |     | R |
+| Konfigurieren von APIs für die Verwendung von Dienstversionen, die von der bereitgestellten Adobe Commerce-Version unterstützt werden<br><br>Beispielsweise sind verschiedene Commerce-Versionen mit bestimmten PHP-, Redis- usw. kompatibel. |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 |     | Adobe | Händler |
 | --- | --- | --- |
 | Verfügbarkeit von Galera- und MariaDB-Diensten | R | |
-| Laufende Wartung der Standardeinstellungen für die Datenbank<br><br>(Indizierung und Optimierung von Kerntabellen, Optimierung der standardmäßigen sys-admin-Einstellungen) | R |   |
-| Laufende Pflege von Handelsdaten und geänderte Einstellungen<br><br>(Konfigurieren normalisierter und flacher Tabellen, Indizieren und Optimieren von benutzerdefinierten Tabellen und Tabellen von Drittanbietern, Archivieren oder Entfernen von Daten, Konfigurieren von Systemverwaltungseinstellungen) |     | R |
+| Laufende Wartung der Standardeinstellungen für die Datenbank<br><br> (Indizierung und Optimierung der Kerntabellen, Optimierung der Standardeinstellungen für sys-admin) | R |   |
+| Laufende Pflege von Handelsdaten und geänderten Einstellungen<br><br> (Konfigurieren von normalisierten vs. flachen Tabellen, Indizierung und Optimierung von benutzerdefinierten und Drittanbieter-Tabellen, Archivierung oder Entfernung von Daten, Konfigurieren von Systemverwaltungseinstellungen) |     | R |
 | Konfiguration von Galera und MySQL | R |   |
 | Laufende Qualität und Patching von Galera und MariaDB | R |   |
 | Laufende Optimierung der Infrastruktur | R |   |
@@ -755,7 +755,7 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 | --- | --- | --- |
 | Verfügbarkeit des SendGrid-E-Mail-Diensts und seiner Integration | R |   |
 | Überwachen der SendGrid-Nutzung des Händlers mit Einschränkungen | R |   |
-| Der Händler ist dafür verantwortlich, den Dienst nur für ausgehende Transaktions-E-Mails zu verwenden.<br>Der Dienst unterstützt nicht das Senden von Marketing-E-Mails. |     | R |
+| Der Händler ist für die Verwendung des Dienstes nur für ausgehende Transaktions-E-Mails verantwortlich<br>Der Dienst unterstützt nicht das Senden von Marketing-E-Mails. |     | R |
 | Konfigurieren optionaler E-Mail-Dienste von Drittanbietern |     | R |
 
 {style="table-layout:auto"}
@@ -786,8 +786,8 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 | Verfügbarkeit von Adobe Commerce Business Intelligence-Diensten | R |   |
 | MBI-Datensynchronisierungsprozesse | R |   |
 | MBI-Synchronisierungsprobleme erkennen | R |   |
-| Konfigurieren der MBI-Datensynchronisierung mit Adobe Commerce Cloud Pro, Starter, On-Premises oder Nicht-Adobe Commerce<br>(API, Datenqualität und -formatierung, Händlernetzwerk,<br>DB-Verbindungen innerhalb und außerhalb von Adobe Commerce Cloud DB, über Datenschwellen) |     | R |
-| Konfigurieren der MBI-Datensynchronisierung mit Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud-Datenbankkonfiguration) | R |   |
+| Konfigurieren der MBI-Datensynchronisierung mit Adobe Commerce Cloud Pro, Starter, On-Premises oder Nicht-Adobe Commerce<br>(API, Datenqualität und -formatierung, Händlernetzwerk, <br>DB-Verbindungen innerhalb und außerhalb von Adobe Commerce Cloud DB, über Datenschwellen) |     | R |
+| Konfigurieren der MBI-Datensynchronisierung mit Adobe Commerce Cloud Pro<br> (Adobe Commerce Cloud-Datenbankkonfiguration) | R |   |
 
 {style="table-layout:auto"}
 

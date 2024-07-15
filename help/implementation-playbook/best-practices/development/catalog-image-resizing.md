@@ -3,13 +3,13 @@ title: Best Practices für die Größenanpassung von Katalogbildern
 description: Erfahren Sie, wie Sie eine Leistungsbeeinträchtigung vor dem Start der Adobe Commerce-Site durch die Produktion verhindern können.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die Größenanpassung von Katalogbildern
 
@@ -64,14 +64,14 @@ Es gibt eine andere Möglichkeit, die Größe von Bildern mithilfe des Frontend 
 Zu den Vorteilen dieses Ansatzes zählen:
 
 - Der Prozess ist mehrprozessgestützt
-- Der Prozess erfolgt über mehrere Server (wenn Sie mehrere Webknoten, einen Lastenausgleich und freigegebenen Speicherplatz für die `media/` directory)
+- Der Prozess erfolgt über mehrere Server (wenn Sie mehrere Webknoten, einen Lastenausgleich und freigegebenen Speicherplatz für den Ordner &quot;`media/`&quot;haben).
 - Der Prozess überspringt Bilder, deren Größe bereits geändert wurde
 
 Bei diesem Ansatz wird die Größe von 100.000 Bildern in weniger als 8 Stunden geändert, während der CLI-Befehl 6 Tage dauert.
 
 1. Melden Sie sich beim Server an.
-1. Navigieren Sie zu `pub/media/catalog/product` und notieren Sie sich einen der Hashes (z. B. 0047d83143a5a3a4683afdf1116df680).
-1. Ersetzen Sie in den folgenden Beispielen `www.example.com` durch die Domäne Ihres Stores und ersetzen Sie den Hash durch den von Ihnen verzeichneten.
+1. Navigieren Sie zu &quot;`pub/media/catalog/product`&quot;und notieren Sie sich einen der Hashes (z. B. 0047d83143a5a3a4683afdf116df680).
+1. Ersetzen Sie in den folgenden Beispielen `www.example.com` durch die Domäne Ihres Stores und ersetzen Sie den Hash durch den Hash, den Sie notiert haben.
 
 >[!BEGINTABS]
 
@@ -82,9 +82,9 @@ cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
 
->[!TAB Belagung]
+>[!TAB Belagerung]
 
-Der Nachteil von `siege` ist, dass alle URLs in 10-mal besucht werden, wenn die Parallelität auf 10 festgelegt ist.
+Der Nachteil von `siege` besteht darin, dass alle URLs in den 10-mal aufgerufen werden, wenn die Parallelität auf 10 gesetzt ist.
 
 ```bash
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
@@ -96,25 +96,25 @@ siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser -
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
-Die `-P` -Argument bestimmt die Anzahl der Threads.
+Das Argument `-P` bestimmt die Anzahl der Threads.
 
 >[!TAB Bash One-Liner]
 
-Das Einliner für die `find/curl` Beispiel: Sie können `curl` von demselben Computer aus die Bilder aktiviert sind:
+Das Einliner für das Beispiel `find/curl` , falls Sie `curl` von demselben Computer aus ausführen können, auf dem sich die Bilder befinden:
 
 ```bash
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
-Ersetzen Sie erneut `www.example.com` mit der Domäne Ihrer Website und `-P` auf die Anzahl der Threads, die Ihr Server ohne Abstürze verarbeiten kann.
+Ersetzen Sie erneut `www.example.com` durch die Domäne Ihrer Website und legen Sie `-P` auf die Anzahl der Threads fest, die Ihr Server ohne Abstürze verarbeiten kann.
 
 >[!ENDTABS]
 
-Die Ausgabe gibt eine Liste aller Produktbilder im Store zurück. Sie können die Bilder durchsuchen (mit `siege` oder anderen Crawler) alle Server und Prozessorkerne verwenden, die Ihnen zur Verfügung stehen, und den Größencache mit deutlich höherer Geschwindigkeit als bei anderen Ansätzen generieren.
+Die Ausgabe gibt eine Liste aller Produktbilder im Store zurück. Sie können die Bilder (mit `siege` oder einem anderen Crawler) durchsuchen, indem Sie alle für Sie verfügbaren Server und Prozessorkerne verwenden und den Cache für die Größenanpassung mit deutlich höherer Geschwindigkeit als bei anderen Ansätzen generieren.
 
 Beim Besuch einer Bild-Cache-URL werden alle Bildgrößen im Hintergrund generiert, wenn sie noch nicht vorhanden sind. Außerdem werden Dateien übersprungen, deren Größe bereits geändert wurde.
 
 >[!NOTE]
 >
->- Adobe Commerce in Cloud-Infrastrukturprojekten kann Produktbilder in der Größenanpassung an den Fastly-Dienst abladen. Siehe [Deep-Image-Optimierung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) im _Cloud-Anleitung_.
->- Wenn Sie das Remote-Speichermodul verwenden, können Sie auch versuchen, die Größe des Bildes auf nginx zu verändern. Siehe [Bildgröße für Remote-Speicher konfigurieren](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) im _Konfigurationshandbuch_.
+>- Adobe Commerce in Cloud-Infrastrukturprojekten kann Produktbilder in der Größenanpassung an den Fastly-Dienst abladen. Siehe [Optimierung des tiefen Bildes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) im _Cloud-Handbuch_.
+>- Wenn Sie das Remote-Speichermodul verwenden, können Sie auch versuchen, die Größe des Bildes auf nginx zu verändern. Siehe [Konfigurieren der Bildgröße für Remote-Speicher](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) im _Konfigurationshandbuch_.

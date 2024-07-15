@@ -5,7 +5,7 @@ exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud
 source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Technologien
 
-Adobe Commerce in der Cloud-Infrastruktur verwendet mehrere Softwarelösungen, um die Plattform zu unterstützen. Die folgenden Themen finden Sie in der _Cloud-Anleitung_ Weitere Informationen:
+Adobe Commerce in der Cloud-Infrastruktur verwendet mehrere Softwarelösungen, um die Plattform zu unterstützen. Weitere Informationen finden Sie in den folgenden Themen im _Cloud-Handbuch_:
 
-- [Pro-Umgebungs-Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
+- [Architektur der Pro-Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
 - [Architektur der Starterumgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
 
 ## Funktionen und Vorteile

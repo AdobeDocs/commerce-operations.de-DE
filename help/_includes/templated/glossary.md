@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ### oberhalb der Kante
 
-_adjektiv_
+_adjektive_
 
 In einem Browserfenster wird der Inhalt, der unmittelbar nach dem Laden einer Webseite und vor dem Scrollen eines Benutzers auf der Seite sichtbar ist, angezeigt.
 Verwenden Sie beim Entwerfen Ihres Layouts flexible Formate, um in diesem Bereich Produkte, Funktionen, Verkäufe, Benachrichtigungen, Optionen usw. mit der höchsten Priorität anzuzeigen.
@@ -44,7 +44,7 @@ Beispiele sind Datenbankadapter, Cache-Adapter, Dateisystemadapter, Adapter für
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 
 ### admin
 
@@ -60,7 +60,7 @@ _Begriffsattribute:_
 
 * _Feld: Commerce-Software_
 * _Synonyme: administrator, super user_
-* _Verwandte Begriffe: Commerce-Administrator_
+* _Verwandte Begriffe: Commerce-Admin_
 
 ### Admin-Bereich
 
@@ -136,7 +136,7 @@ Benutzerdefinierte Attribute sind ein Typ des Attributs &quot;Entity-Attribute-V
 
 Bei Integrationen wie Google Shopping Ads Channel und Amazon Sales Channel ordnen Sie Commerce-Attribute Attributen Attributen im Drittanbieter zu, um Produkte ordnungsgemäß anzuzeigen und zu verkaufen, Anzeigen anzuzeigen.
 
-Weitere Informationen: [EAV und Erweiterungsattribute](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
 _Begriffsattribute:_
 
@@ -153,7 +153,7 @@ Eine logische Gruppierung von Attributen innerhalb eines Attributsatzes.
 _Begriffsattribute:_
 
 * _Feld: Commerce-Software_
-* _Verwandte Begriffe: Attribut_
+* _Verwandte Begriffe: attribute_
 
 ### Attributset
 
@@ -165,7 +165,7 @@ Beispiel: Ein T-Shirt-Attributsatz kann Farbe, Größe, Geschlecht und Marke ent
 _Begriffsattribute:_
 
 * _Feld: Commerce-Software, Produkt_
-* _Verwandte Begriffe: Attribut_
+* _Verwandte Begriffe: attribute_
 
 ### durchschnittliche Lagerkosten
 
@@ -194,7 +194,7 @@ Weitere Informationen: [Währung](https://experienceleague.adobe.com/docs/commer
 
 _Begriffsattribute:_
 
-* _Feld: Preise_
+* _Feld: price_
 
 ### Stapelverarbeitung
 
@@ -204,7 +204,7 @@ Um eine Aufgabe auszuführen oder mehrere Elemente gleichzeitig zu ändern, ohne
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Synonyme: Massenvorgänge_
 
 ### block
@@ -216,15 +216,15 @@ Eine Einheit der Seitenausgabe, die bestimmte Inhalte (Informationen, Elemente d
 Blöcke verwenden Vorlagen, um HTML zu generieren.
 Beispiele für Bausteine sind eine Kategorienliste, ein Mini-Warenkorb, Produkt-Tags und die Produktliste.
 
-[Dynamische Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) Inhalte basierend auf Logik bereitstellen, z. B. Preisregeln.
+[Dynamische Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) bieten Inhalte, die auf Logik basieren, wie z. B. Preisregeln.
 
-Page Builder erweitert die Interaktivität und Erstellung von [Bausteine](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) und [dynamische Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
+Der Seitenaufbau erweitert die Interaktivität und Erstellung von [Bausteinen](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) und [dynamischen Bausteinen](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
 
 _Begriffsattribute:_
 
 * _Feld: Commerce-Software_
 * _Synonyme: Dynamische Blöcke_
-* _Verwandte Begriffe: cms block, static block, container, layout_
+* _Verwandte Begriffe: cms-Block, statischer Block, Container, layout_
 
 ### Marke
 
@@ -244,15 +244,15 @@ _Begriffsattribute:_
 
 ### Ziegel und Mörtel
 
-_adjektiv_
+_adjektive_
 
 Ein Einzelhandelsgeschäft mit festem physischen Standort, im Gegensatz zu Unternehmen, die praktisch oder ausschließlich über das Internet funktionieren.
 
-Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) und [Auftragsverwaltung](https://omsdocs.magento.com/getting-started/terminology/), ist dieser Speicher eine Quelle für die Nachverfolgung von Produktmengen, Versandaufträgen und die Unterstützung der In-store-Abholung.
+Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) und [Order Management](https://omsdocs.magento.com/getting-started/terminology/) ist dieser Store eine Quelle zur Verfolgung von Produktmengen, Versandaufträgen und unterstützender In-store-Abholung.
 
 _Begriffsattribute:_
 
-* _Feld: Business, Inventory_
+* _Feld: business, inventory_
 
 ### Massenvorgänge
 
@@ -265,7 +265,7 @@ Weitere Informationen: [Massenvorgänge von DevDocs](https://developer.adobe.com
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 
 ### Paket-Produkt
 
@@ -292,7 +292,7 @@ _Begriffsattribute:_
 
 * _Feld: gebündelte Erweiterung, Erweiterung_
 * _Synonyme: extension_
-* _Verwandte Begriffe: Erweiterung, gebündelte Erweiterung des Anbieters_
+* _Verwandte Begriffe: Erweiterung, vom Anbieter gebündelte Erweiterung_
 
 ## C
 
@@ -306,7 +306,7 @@ Ein Cache der zweiten Ebene, z. B. ein Dateisystem oder ein Redis-Backend, ist l
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Verwandte Begriffe: Backend_
 
 ### Cache-Frontend
@@ -317,7 +317,7 @@ Gibt an, welche Art von Daten im Cache-Backend gespeichert wird.
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Verwandte Begriffe: frontend_
 
 ### Cache-Typ
@@ -349,7 +349,7 @@ Andere Typen können erstellt und definiert werden.
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 
 ### erfassen
 
@@ -371,7 +371,7 @@ Eine Person, die von einem Finanzinstitut befugt ist, auf einem Kreditkartenkont
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Warenkorbregeln
 
@@ -436,17 +436,17 @@ Nachdem der Kunde die Informationen überprüft und die Bestellung übermittelt 
 
 Der Checkout verfügt über zahlreiche Optionen und Konfigurationen, die standardmäßig und über die Erweiterung verfügbar sind.
 
-Weitere Informationen: [Checkout-Tutorial](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
+Weitere Informationen: [Tutorial zum Checkout](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
 _Begriffsattribute:_
 
-* _Bereich: Business, Design, Order, Product, Programmierung_
+* _Feld: Geschäft, Design, Bestellung, Produkt, Programmierung_
 
 ### Cloud-Variablen
 
 _noun_
 
-Cloud-Variablen sind Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisch sind und die **`MAGENTO_CLOUD`** -Präfix.
+Cloud-Variablen sind Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisch sind und das Präfix **`MAGENTO_CLOUD`** verwenden.
 
 Weitere Informationen: [Cloud-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
@@ -458,7 +458,7 @@ _Begriffsattribute:_
 
 _noun_
 
-Eine spezielle Variante von [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) , die nur im Admin erstellt werden können und nicht über Layout-Dateien referenziert werden können.
+Eine spezielle Variante von [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) , die nur im Admin erstellt werden kann und nicht über Layout-Dateien referenziert werden kann.
 
 _Begriffsattribute:_
 
@@ -473,7 +473,7 @@ Daten, die mit mehreren Produktoptionen verknüpft sind.
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 
 ### component
 
@@ -485,7 +485,7 @@ _Begriffsattribute:_
 
 * _Feld: Commerce-Software_
 * _Synonyme: component_
-* _Verwandte Begriffe: ui-Komponente_
+* _Verwandte Begriffe: ui component_
 
 ### konfigurierbares Produkt
 
@@ -516,7 +516,7 @@ Der Prozentsatz der Besucher, die in Käufer umgewandelt werden.
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Skalierung auf der Kernebene
 
@@ -537,7 +537,7 @@ Das Memo gibt dem Konto des Kunden die Mittel wieder.
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Kommentar zur Kreditkarte
 
@@ -547,7 +547,7 @@ Details, warum dem Kunden ein Kreditnachrichtenbetrag gutgeschrieben wurde.
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Credit Memo Item
 
@@ -557,7 +557,7 @@ Ein fakturiertes Element, für das ein Händler ein Kreditmemo erstellt.
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Crosssell
 
@@ -569,8 +569,8 @@ Sie ähneln Impulskäufen, wie Magazinen und Süßigkeiten in den Kassenbüchern
 
 _Begriffsattribute:_
 
-* _Feld: Business, Product_
-* _Verwandte Begriffe: Upsell_
+* _Feld: business, product_
+* _Verwandte Begriffe: upsell_
 
 ### CVM
 
@@ -581,7 +581,7 @@ Eine Möglichkeit, die Identität des Kunden durch Bestätigung eines dreistelli
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 * _Synonyme: Überprüfungsmethode des Karteninhabers_
 * _Verwandte Begriffe: Sicherheitscode_
 
@@ -597,7 +597,7 @@ Ein Modul kann Fragmente des Datenbankschemas enthalten, wenn dieses Modul Daten
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Synonyme: schema_
 
 ### Abhängigkeitsinjektion
@@ -611,7 +611,7 @@ Um Abhängigkeiten für Klassen zu definieren, bearbeiten Sie die Konfigurations
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 
 ### deploy key
 
@@ -677,8 +677,8 @@ Codeformat: media url=&quot;path/to/image.jpg&quot;
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
-* _Verwandte Begriffe: Netzwerk zur Inhaltsbereitstellung, URL_
+* _Feld: programming_
+* _Verwandte Begriffe: Netzwerk zur Inhaltsbereitstellung, url_
 
 ## E
 
@@ -688,7 +688,7 @@ _noun_
 
 Eine Reihe von Skripten und Tools zum Verwalten und Bereitstellen der Commerce-Anwendung. Dieses Paket vereinfacht viele Adobe Commerce-Prozesse für Cloud-Infrastruktur, einschließlich der Bereitstellung in einer Docker-Umgebung, der Verwaltung von Crons, der Überprüfung der Projektkonfiguration und der Anwendung von Adobe-Patches.
 
-Weitere Informationen: [ece-tools-Paket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+Weitere Informationen: [ece-tools package](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
 _Begriffsattribute:_
 
@@ -716,11 +716,11 @@ Speichert die Entitäts-ID, den Attributnamen und den Wert als Dreifach, wodurch
 Bei der Kodierung kann die Anzahl der Attribute, die zur Beschreibung von Entitäten verwendet werden können, stark skaliert werden, aber die Zahl, die für eine bestimmte Entität gilt, wird minimiert.
 Dieses Datenmodell ist flexibel, kann jedoch langsam sein.
 
-Weitere Informationen: [EAV und Erweiterungsattribute](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Synonyme: eav_
 
 ### evergreen content
@@ -770,12 +770,12 @@ FOB kann auf dem Herkunfts- oder Zielort basieren und entweder als Frachtabholun
 
 _Begriffsattribute:_
 
-* _Feld: Geschäft, Bestellung, Preisstruktur_
+* _Feld: Geschäft, Bestellung, Preis_
 * _Synonyme: fob_
 
 ### frontend
 
-_adjektiv_
+_adjektive_
 
 In einer Client-Server-Anwendung gibt es das Backend und das Frontend.
 Die Frontend-Komponente oder der Client ist eine Schnittstelle, über die Benutzer den zugrunde liegenden Backend-Code bearbeiten oder mit ihm interagieren können.
@@ -788,8 +788,8 @@ Hinweis: In der Vergangenheit wurde die Storefront als &quot;Frontend&quot;bezei
 _Begriffsattribute:_
 
 * _Feld: Design, Programmierung_
-* _Synonyme: Client-seitig_
-* _Verwandte Begriffe: Backend, Store, Cache-Frontend_
+* _Synonyme: clientseitig_
+* _Verwandte Begriffe: Backend, Storefront, Cache-Frontend_
 
 ### Frontend-Eigenschaften
 
@@ -877,8 +877,8 @@ Hier ist &quot;frontend&quot;der Bereichsname und &quot;checkout_cart_index&quot
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
-* _Synonyme: Seitengriffe_
+* _Feld: programming_
+* _Synonyme: page handle_
 
 ### horizontale Skalierung
 
@@ -904,7 +904,7 @@ Wenn mehrere Plug-ins für dieselbe Funktion definiert sind, definiert die Konfi
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Verwandte Begriffe: Plug-in_
 
 ## L
@@ -920,8 +920,8 @@ Layout-Dateien sammeln dann Inhalte (Bausteine) in diese verschiedenen Bereiche 
 
 _Begriffsattribute:_
 
-* _Bereich: Design, Commerce-Software_
-* _Verwandte Begriffe: Layoutanleitungen, Block_
+* _Feld: Design, Commerce-Software_
+* _Verwandte Begriffe: Layoutanweisungen, Block_
 
 ### Layoutanleitungen
 
@@ -934,7 +934,7 @@ Layoutanweisungen sind in XML in Layoutdateien kodiert.
 _Begriffsattribute:_
 
 * _Feld: Design, Programmierung_
-* _Verwandte Begriffe: Layout, Block, Container, UI-Komponente_
+* _Verwandte Begriffe: layout, block, container, ui component_
 
 ### Layoutaktualisierung
 
@@ -944,7 +944,7 @@ Wird für Codefragmente verwendet, die hinzugefügt werden, um das XML-Layout zu
 
 _Begriffsattribute:_
 
-* _Bereich: Design, Commerce-Software_
+* _Feld: Design, Commerce-Software_
 
 ### Lizenzinhaber
 
@@ -967,7 +967,7 @@ _noun_
 MAGEID ist normalerweise der Abrechnungskontakt für das Adobe Commerce-Konto (und möglicherweise nicht der Projektinhaber des Adobe Commerce-Projekts für Cloud-Infrastruktur).
 Für die Zugriffsberechtigung auf Adobe Commerce und Adobe Commerce in Cloud-Infrastrukturpaketen müssen Sie Zugriffsschlüssel verwenden, die mit einem MAGEID verknüpft sind, dem Zugriff auf diese Pakete gewährt wurde.
 
-Weitere Informationen: [Abrufen der Authentifizierungsschlüssel](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+Weitere Informationen: [Authentifizierungsschlüssel abrufen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
 _Begriffsattribute:_
 
@@ -978,14 +978,14 @@ _Begriffsattribute:_
 _noun_
 
 In Marketing- und Einzelhandelsgeschäften wird ein Prozentsatz zu den Kosten eines Artikels hinzugefügt, um den Einzelhandelspreis zu ermitteln.
-[Markup konfigurieren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html)oder Markdown für ein Produkt durch anpassbare Produktoptionen.
+[Konfigurieren Sie das Markup](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) oder Markdown eines Produkts über anpassbare Produktoptionen.
 
 In der Entwicklung, eine Computersprache, die die Verarbeitung, Darstellung und Formatierung von Text steuert.
 Markup-Tags sind außerdem Codefragmente, die einer CMS-Seite oder -Blöcken Funktionen oder Inhalte hinzufügen.
 
 _Begriffsattribute:_
 
-* _Bereich: Business, Programmierung_
+* _Feld: business, programming_
 * _Synonyme: Markdown_
 
 ### Master-Umgebung
@@ -1012,14 +1012,14 @@ _Begriffsattribute:_
 
 _noun_
 
-MFTF ist eine [Funktionstests-Framework](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
+MFTF ist ein [Funktionstests-Framework](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
 Es bietet ein Test-Framework für Entwickler und Softwareingenieure von Commerce, wie QS-Spezialisten, PHP-Entwickler und Systemintegratoren.
 Entwickler und QA können Tests schreiben, um Benutzerinteraktionen mit Webanwendungen zu versuchen, die Funktionalität zu überprüfen und Regressionstests zu automatisieren.
 
 _Begriffsattribute:_
 
 * _Feld: Commerce-Software, Programmierung_
-* _Verwandte Begriffe: cms block, static block, container, layout_
+* _Verwandte Begriffe: cms-Block, statischer Block, Container, layout_
 
 ### Modul
 
@@ -1046,7 +1046,7 @@ _Begriffsattribute:_
 
 _noun_
 
-[OMS](https://omsdocs.magento.com) ist Adobe Order Management System.
+[S](https://omsdocs.magento.com) ist das OMOrder Management-Systemangebot.
 
 OMS ist eine flexible und erschwingliche Lösung für das Verwalten, Verkaufen und Erfüllen von Lagerbeständen aus allen Vertriebskanälen.
 OMS bietet ein nahtloses Kundenerlebnis, das den Umsatz steigert und gleichzeitig die Kosten senkt und die Markteinführungszeit verkürzt.
@@ -1058,12 +1058,12 @@ Zu den OMS-Funktionen gehören:
 * Einfacherer und reaktionsfähigerer Kundendienst
 * Besseres Kundenerlebnis und Kundenloyalität
 
-Weitere Informationen: [Erste Schritte mit OMS](https://omsdocs.magento.com/en/getting-started/), [OMS Docs-Site](https://omsdocs.magento.com/en/)
+Weitere Informationen: [Erste Schritte mit OMS](https://omsdocs.magento.com/en/getting-started/), [OMS Docs site](https://omsdocs.magento.com/en/)
 
 _Begriffsattribute:_
 
 * _Feld: Funktion, Commerce-Software, Bestellverwaltung_
-* _Synonyme: Auftragsverwaltung, MOM, Bestellmanagement-System, Magento Order Management_
+* _Synonyme: Auftragsverwaltung, MOM, Bestellverwaltungssystem, Magento Order Management_
 * _Verwandte Begriffe: Auftragsverwaltung_
 
 ### Ursprungsverdeckung
@@ -1072,7 +1072,7 @@ _noun_
 
 Die Ursprungsverschlüsselung ist eine Sicherheitsfunktion, mit der Adobe Commerce in der Cloud-Infrastruktur jeglichen nicht schnellen Traffic blockieren kann, um DDoS-Angriffe zu verhindern und die Cloud-Infrastruktur (Ursprung) zu nutzen.
 
-Weitere Informationen: [Schnell hergestelltes Verdecken](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+Weitere Informationen: [Fastly origin cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
 _Begriffsattribute:_
 
@@ -1090,7 +1090,7 @@ Diese Steuerelemente werden auch als &quot;Inhaltstypen&quot;bezeichnet.
 Merchants können Layouts und Seiten ohne Programmierung erstellen.
 Entwickler können den Seitenaufbau erweitern.
 
-Weitere Informationen: [Benutzerhandbuch für Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [Entwicklungsdokumente für den Seitenaufbau](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Weitere Informationen: [Seiten-Builder-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [Seiten-Builder-Entwicklungsdokumente](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _Begriffsattribute:_
 
@@ -1162,8 +1162,8 @@ Web-APIs können über Konfigurationsdateien an Dienstverträge gebunden werden.
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
-* _Verwandte Begriffe: PHP, Web API_
+* _Feld: programming_
+* _Verwandte Begriffe: php, web api_
 
 ### Abrechnung
 
@@ -1204,7 +1204,7 @@ Mehr als eine Sendung kann mit einer Bestellung verbunden werden.
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Versandpapier
 
@@ -1214,7 +1214,7 @@ Ein Dokument, das eine Sendung begleitet. In dem Dokument werden die Erzeugnisse
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Reederei
 
@@ -1224,7 +1224,7 @@ Ein Unternehmen, das Packages transportiert. Zu den gängigen Netzbetreibern zä
 
 _Begriffsattribute:_
 
-* _Feld: Business, order_
+* _Feld: business, order_
 
 ### Warenkorb
 
@@ -1235,7 +1235,7 @@ Bezieht sich auch auf einen Bereich einer E-Commerce-Site, in dem diese Produkte
 
 _Begriffsattribute:_
 
-* _Bereich: Business, Design, Produkt, Programmierung_
+* _Feld: Geschäft, Design, Produkt, Programmierung_
 * _Synonyme: Warenkorb, Korb_
 * _Verwandte Begriffe: Warenkorbregeln_
 
@@ -1297,13 +1297,13 @@ Benutzergenerierte Inhalte (nicht vom Code generiert), die sich nicht häufig ä
 _Begriffsattribute:_
 
 * _Feld: design_
-* _Verwandte Begriffe: dynamische Inhalte_
+* _Verwandte Begriffe: dynamischer Inhalt_
 
 ### statische Dateien
 
 _noun_
 
-Die Sammlung von Assets wie CSS, Schriftarten, Bildern und JavaScript, die von einem Design verwendet werden.
+Die von einem Design verwendete Sammlung von Assets wie CSS, Schriftarten, Bildern und JavaScript.
 
 _Begriffsattribute:_
 
@@ -1334,7 +1334,7 @@ Verwenden Sie zum Ändern von Store-Ansichten die Store-Auswahl in der Kopfzeile
 _Begriffsattribute:_
 
 * _Feld: Commerce-Software, Produkt_
-* _Verwandte Begriffe: Geschäft, Website_
+* _Verwandte Begriffe: store, website_
 
 ### storefront
 
@@ -1370,7 +1370,7 @@ In den Admin-, E-Mail- und Newsletter-Vorlagen werden Text, Bilder und Variablen
 _Begriffsattribute:_
 
 * _Feld: Commerce-Software_
-* _Verwandte Begriffe: Block_
+* _Verwandte Begriffe: block_
 
 ### Design
 
@@ -1402,18 +1402,18 @@ Die Ziele des UI-Komponentensystems umfassen Folgendes:
 * AJAX zum Aktualisieren von Komponentendaten verwenden
 * Einführung einer neuen DSL zum Erstellen der oben genannten Elemente
 
-Weitere Informationen: [Komponentenleitfaden für UI](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+Weitere Informationen: [Komponentenleitfaden der Benutzeroberfläche](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Seitenaufbau](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Verwandte Begriffe: JavaScript, Layout, Komponente, Seitenaufbau_
 
 ### UPWARD
 
 _noun_
 
-[PWA Studio](https://github.com/magento/pwa-studio) uses [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) in der Entwicklung.
+[PWA Studio](https://github.com/magento/pwa-studio) verwendet [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) in der Entwicklung.
 UPWARD ist ein Akronym für die einheitliche Definition der progressiven Web-App-Antwort.
 Eine UPWARD-Definitionsdatei beschreibt, wie ein Webserver ein Progressive Web Application bereitstellt und unterstützt.
 
@@ -1441,11 +1441,11 @@ Von Anbietern erstellter Code, der das Verhalten von Commerce erweitert oder anp
 VBEs werden gründlich getestet und in jeder unterstützten Version von Adobe Commerce enthalten.
 Eine VBE kann Module, Designs und Sprachpakete enthalten.
 
-Weitere Informationen finden Sie unter [Thema &quot;Gebündelte Erweiterung&quot;des Anbieters](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
+Weitere Informationen finden Sie im Thema [Vendor Bundle Extension](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) .
 
 _Begriffsattribute:_
 
-* _Feld: Commerce-Erweiterung, Lieferantenpaketerweiterung, Erweiterung, VBE_
+* _Feld: Commerce-Erweiterung, vom Anbieter gebündelte Erweiterung, Erweiterung, VBE_
 * _Synonyme: extension, VBE_
 * _Verwandte Begriffe: Erweiterung, gebündelte Erweiterung_
 
@@ -1480,12 +1480,12 @@ _Begriffsattribute:_
 _noun_
 
 Virtuelle Typen sind eine Möglichkeit, verschiedene Abhängigkeiten in bestehende PHP-Klassen zu injizieren, ohne dass andere Klassen betroffen sind und ohne dass eine Klassendatei erstellt werden muss.
-Virtuelle Typen können nur durch Überschreibungen von Argumenten in einer `<type>` -Element in &quot;di.xml&quot;-Dateien, niemals im Quellcode.
+Virtuelle Typen können nur durch Außerkraftsetzungen von Argumenten in einem `<type>` -Element innerhalb von &quot;di.xml&quot;-Dateien referenziert werden, niemals im Quellcode.
 Sie können nicht erweitert werden und sie können keine Referenzen als Abhängigkeiten in einem Klassen-Konstruktor sein.
 
 _Begriffsattribute:_
 
-* _Bereich: Programmierung_
+* _Feld: programming_
 * _Verwandte Begriffe: php_
 
 ## W
@@ -1501,17 +1501,17 @@ Websites können eingerichtet werden, um Kundendaten zu teilen oder keine Daten 
 _Begriffsattribute:_
 
 * _Feld: Commerce-Software, Design, Produkt_
-* _Verwandte Begriffe: Store-, Store-Ansicht_
+* _Verwandte Begriffe: Store, Store-Ansicht_
 
 ### Widget
 
 _noun_
 
-A [Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) ist ein vorbereitetes Codefragment, mit dem Blöcke, Links und dynamische Inhalte an bestimmten Stellen auf Store-Seiten platziert werden können.
+Ein [Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) ist ein vorbereiteter Codeausschnitt, der verwendet werden kann, um Blöcke, Links und dynamischen Inhalt an bestimmten Stellen auf Store-Seiten zu platzieren.
 Sie können Widgets verwenden, um Landingpages für Marketingkampagnen zu erstellen, Werbeinhalte an bestimmten Stellen im gesamten Store anzuzeigen.
 Widgets können auch verwendet werden, um interaktive Elemente und Aktionsblöcke für externe Prüfungssysteme, Videokassetten, Abstimmungs- und Anmeldeformulare hinzuzufügen oder um Navigationselemente für Tag-Clouds und Bild-Slider bereitzustellen.
 
 _Begriffsattribute:_
 
 * _Feld: Geschäft, Commerce-Software, Design_
-* _Verwandte Begriffe: Block_
+* _Verwandte Begriffe: block_

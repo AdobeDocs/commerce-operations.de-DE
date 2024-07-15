@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Cron-Aufträge verwalten.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mehrere Commerce-Funktionen erfordern mindestens einen Cron-Auftrag, der Aktivitäten für die Zukunft plant. Eine teilweise Liste dieser Aktivitäten folgt:
+Für mehrere Commerce-Funktionen ist mindestens ein Cron-Auftrag erforderlich, mit dem zukünftige Aktivitäten geplant werden. Eine teilweise Liste dieser Aktivitäten folgt:
 
 - Katalogpreisregeln
 - Newsletter
@@ -26,21 +26,21 @@ Mehrere Commerce-Funktionen erfordern mindestens einen Cron-Auftrag, der Aktivit
 
 >[!WARNING]
 >
->Sie können `dev/tools/cron.sh` weil das Skript entfernt wurde.
+>Sie können `dev/tools/cron.sh` nicht mehr ausführen, da das Skript entfernt wurde.
 
 >[!INFO]
 >
->Für viele wichtige Systemfunktionen, einschließlich Indizierung, hängt der Handel von der richtigen Cron-Auftragskonfiguration ab. Wird sie nicht ordnungsgemäß eingerichtet, bedeutet dies, dass Commerce nicht erwartungsgemäß funktioniert.
+>Commerce ist für viele wichtige Systemfunktionen, einschließlich Indizierung, von einer ordnungsgemäßen Cron-Auftragskonfiguration abhängig. Wird sie nicht ordnungsgemäß eingerichtet, funktioniert Commerce nicht erwartungsgemäß.
 
-UNIX-Systeme planen Aufgaben, die von bestimmten Benutzern mit einer _crontab_, eine Datei, die Anweisungen für den Cron-Daemon enthält, der dem Daemon tatsächlich anweist, diesen Befehl zu diesem Zeitpunkt an diesem Datum auszuführen. Jeder Benutzer verfügt über eine eigene Registerkarte und Befehle in jeder beliebigen Registerkarte werden als der Benutzer ausgeführt, dem die Registerkarte gehört.
+UNIX-Systeme planen Aufgaben, die von bestimmten Benutzern mit einer _crontab_ ausgeführt werden sollen. Dies ist eine Datei, die Anweisungen für den Cron-Daemon enthält, der dem Daemon anweist, &quot;diesen Befehl zu diesem Zeitpunkt an diesem Datum auszuführen&quot;. Jeder Benutzer verfügt über eine eigene Registerkarte und Befehle in jeder beliebigen Registerkarte werden als der Benutzer ausgeführt, dem die Registerkarte gehört.
 
-Informationen zum Ausführen von Cron in einem Webbrowser finden Sie unter [Sichere cron.php für die Ausführung im Browser](../security/secure-cron-php.md).
+Informationen zum Ausführen von cron in einem Webbrowser finden Sie unter [Sichere cron.php für die Ausführung in einem Browser](../security/secure-cron-php.md).
 
-## Erstellen oder Entfernen der Registerkarte &quot;Commerce&quot;
+## Erstellen oder Entfernen der Commerce-Registerkarte
 
 In diesem Abschnitt wird beschrieben, wie Sie Ihre Commerce-Crontab (d. h. die Konfiguration für Commerce-Cron-Aufträge) erstellen oder entfernen.
 
-Die _crontab_ ist die Konfiguration zum Ausführen von Cron-Aufträgen.
+Die _crontab_ ist die Konfiguration, die zum Ausführen von Cron-Aufträgen verwendet wird.
 
 Die Commerce-Anwendung verwendet Cron-Aufgaben, die mit verschiedenen Konfigurationen ausgeführt werden können. Die PHP-Befehlszeilenkonfiguration steuert den allgemeinen Cron-Auftrag, der Indexer neu indiziert, E-Mails generiert, die Sitemap generiert und so weiter.
 
@@ -49,28 +49,28 @@ Die Commerce-Anwendung verwendet Cron-Aufgaben, die mit verschiedenen Konfigurat
 >- Um Probleme während der Installation und Aktualisierung zu vermeiden, empfehlen wir dringend, die gleichen PHP-Einstellungen sowohl auf die PHP-Befehlszeilenkonfiguration als auch auf die Konfiguration des PHP-Webserver-Plug-ins anzuwenden. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](../../installation/prerequisites/php-settings.md).
 >- In einem System mit mehreren Knoten kann crontab nur auf einem Knoten ausgeführt werden. Dies gilt nur für Sie, wenn Sie aus Gründen der Leistung oder Skalierbarkeit mehr als einen Webknoten einrichten.
 
-### Erstellen der Commerce-Registerkarte
+### Commerce-Registerkarte erstellen
 
-Ab Version 2.2 erstellt Commerce eine Crontab für Sie. Wir fügen die Commerce-Crontab zu jedem konfigurierten Crontab für den Eigentümer des Commerce-Dateisystems hinzu. Wenn Sie also bereits Registerkarten für andere Erweiterungen oder Anwendungen eingerichtet haben, fügen wir die Registerkarte &quot;Commerce&quot;hinzu.
+Ab Version 2.2 erstellt Commerce eine Registerkarte mit der Kronen. Wir fügen die Commerce-Crontab zu jeder konfigurierten Registerkarte für das Commerce-Dateisysteminhaber hinzu. Wenn Sie also bereits Registerkarten für andere Erweiterungen oder Anwendungen eingerichtet haben, fügen wir die Commerce-Kronen hinzu.
 
-Die Registerkarte &quot;Commerce&quot;befindet sich in `#~ MAGENTO START` und `#~ MAGENTO END` Kommentare in der Registerkarte &quot;Kronen&quot;.
+Die Commerce-Crontab befindet sich in den Kommentaren `#~ MAGENTO START` und `#~ MAGENTO END` in Ihrer Crontab.
 
-So erstellen Sie die Registerkarte &quot;Commerce&quot;:
+So erstellen Sie die Commerce-Registerkarte:
 
-1. Melden Sie sich bei der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
-1. Wechseln Sie zum Installationsverzeichnis für Commerce.
+1. Melden Sie sich als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
+1. Wechseln Sie zum Installationsverzeichnis von Commerce.
 1. Geben Sie den folgenden Befehl ein:
 
    ```bash
    bin/magento cron:install [--force]
    ```
 
-Verwendung `--force` , um eine vorhandene Registerkarte neu zu schreiben.
+Verwenden Sie `--force`, um eine vorhandene Registerkarte neu zu schreiben.
 
 >[!INFO]
 >
->- `magento cron:install` schreibt keine vorhandene Registerkarte in `#~ MAGENTO START` und `#~ MAGENTO END` Kommentare in der Registerkarte &quot;Kronen&quot;.
->- `magento cron:install --force` hat keine Auswirkungen auf Cron-Aufträge außerhalb der Commerce-Kommentare.
+>- `magento cron:install` schreibt keine vorhandene Kronregisterkarte in `#~ MAGENTO START` - und `#~ MAGENTO END` -Kommentaren in Ihrer Kronregisterkarte um.
+>- `magento cron:install --force` wirkt sich nicht auf Cron-Aufträge außerhalb der Commerce-Kommentare aus.
 
 Um die Registerkarte &quot;crontab&quot;anzuzeigen, geben Sie den folgenden Befehl als Dateisysteminhaber ein:
 
@@ -88,18 +88,18 @@ Ein Beispiel:
 
 >[!INFO]
 >
->Die `update/cron.php` -Datei in Commerce 2.4.0 entfernt wurde. Wenn diese Datei in Ihrer Installation vorhanden ist, kann sie sicher entfernt werden.
+>Die Datei &quot;`update/cron.php`&quot; wurde in Commerce 2.4.0 entfernt. Wenn diese Datei in Ihrer Installation vorhanden ist, kann sie sicher entfernt werden.
 >
->Jeder Verweis auf `update/cron.php` und `bin/magento setup:cron:run` sollte auch aus dem Crontab entfernt werden.&quot;
+>Jeder Verweis auf `update/cron.php` und `bin/magento setup:cron:run` sollte ebenfalls aus der Registerkarte &quot;Crontab&quot;entfernt werden.
 
-### Entfernen Sie die Registerkarte &quot;Commerce&quot;
+### Entfernen der Commerce-Registerkarte
 
-Sie sollten die Registerkarte &quot;Commerce&quot;nur entfernen, bevor Sie die Commerce-Anwendung deinstallieren.
+Sie sollten die Commerce-Registerkarte nur entfernen, bevor Sie die Commerce-Anwendung deinstallieren.
 
-So entfernen Sie die Commerce-Registerkarte:
+So entfernen Sie die Commerce-Kronregisterkarte:
 
-1. Melden Sie sich als an oder wechseln Sie zu [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
-1. Wechseln Sie zum Installationsverzeichnis für Commerce.
+1. Melden Sie sich als an oder wechseln Sie zum [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Wechseln Sie zum Installationsordner von Commerce.
 1. Geben Sie den folgenden Befehl ein:
 
    ```bash
@@ -108,7 +108,7 @@ So entfernen Sie die Commerce-Registerkarte:
 
 >[!INFO]
 >
->Dieser Befehl hat keine Auswirkungen auf Cron-Aufträge außerhalb der `#~ MAGENTO START` und `#~ MAGENTO END` Kommentare in der Registerkarte &quot;Kronen&quot;.
+>Dieser Befehl hat keine Auswirkungen auf Cron-Aufträge außerhalb der Kommentare `#~ MAGENTO START` und `#~ MAGENTO END` in Ihrer Crontab.
 
 ## Ausführen von cron über die Befehlszeile
 
@@ -118,7 +118,7 @@ Befehlsoptionen:
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
-where `--group` gibt die auszuführende Cron-Gruppe an (diese Option zum Ausführen von Cron für alle Gruppen auslassen)
+wobei `--group` die auszuführende Cron-Gruppe angibt (diese Option zum Ausführen von Cron für alle Gruppen auslassen)
 
 Geben Sie Folgendes ein, um den Indexierungscron-Auftrag auszuführen:
 
@@ -132,29 +132,29 @@ Geben Sie Folgendes ein, um den standardmäßigen Cron-Auftrag auszuführen:
 bin/magento cron:run --group default
 ```
 
-Informationen zum Einrichten von benutzerdefinierten Cron-Aufträgen und -Gruppen finden Sie unter [Benutzerdefinierte Cron-Aufträge und Cron-Gruppen konfigurieren](../cron/custom-cron.md).
+Informationen zum Einrichten von benutzerdefinierten Cron-Aufträgen und -Gruppen finden Sie unter [Konfigurieren von benutzerdefinierten Cron-Aufträgen und Cron-Gruppen](../cron/custom-cron.md).
 
 >[!INFO]
 >
->Sie müssen Cron zweimal ausführen: das erste Mal, um Aufgaben zu entdecken, und das zweite Mal, um die Aufgaben selbst auszuführen. Der zweite Cron-Run muss auf oder nach dem `scheduled_at` Zeit für jede Aufgabe.
+>Sie müssen Cron zweimal ausführen: das erste Mal, um Aufgaben zu entdecken, und das zweite Mal, um die Aufgaben selbst auszuführen. Die zweite Cron-Ausführung muss für jede Aufgabe an oder nach der `scheduled_at`-Zeit erfolgen.
 
 ## Protokollierung
 
-Alle `cron` Auftragsinformationen wurden verschoben von `system.log` in einen gesonderten `cron.log`.
-Standardmäßig finden Sie die Cron-Informationen unter `<install_directory>/var/log/cron.log`.
-Alle Ausnahmen von Cron-Aufträgen werden von `\Magento\Cron\Observer\ProcessCronQueueObserver::execute`.
+Alle `cron` Auftragsinformationen wurden von `system.log` in eine separate `cron.log` verschoben.
+Standardmäßig befinden sich die Cron-Informationen unter `<install_directory>/var/log/cron.log`.
+Alle Ausnahmen von Cron-Aufträgen werden von `\Magento\Cron\Observer\ProcessCronQueueObserver::execute` protokolliert.
 
-Zusätzlich zur Anmeldung `cron.log`:
+Zusätzlich zur Anmeldung in `cron.log`:
 
-- Fehlgeschlagene Aufträge mit `ERROR` und `MISSED` -Status in der `<install_directory>/var/log/support_report.log`.
+- Fehlgeschlagene Aufträge mit den Status `ERROR` und `MISSED` werden bei der `<install_directory>/var/log/support_report.log` protokolliert.
 
-- Aufträge mit einer `ERROR` Status immer protokolliert werden als `CRITICAL` in `<install_directory>/var/log/exception.log`.
+- Aufträge mit dem Status `ERROR` werden immer als `CRITICAL` in `<install_directory>/var/log/exception.log` protokolliert.
 
-- Aufträge mit einer `MISSED` Status werden protokolliert als `INFO` im `<install_directory>/var/log/debug.log` Verzeichnis (nur Entwicklermodus).
+- Aufträge mit dem Status `MISSED` werden als `INFO` im Verzeichnis `<install_directory>/var/log/debug.log` protokolliert (nur Entwicklermodus).
 
 >[!INFO]
 >
->Alle Cron-Daten werden auch in die `cron_schedule` in der Commerce-Datenbank. Die Tabelle enthält einen Verlauf der Cron-Aufträge, einschließlich:
+>Alle Cron-Daten werden auch in die Tabelle `cron_schedule` in der Commerce-Datenbank geschrieben. Die Tabelle enthält einen Verlauf der Cron-Aufträge, einschließlich:
 >
 >- Auftrags-ID und -Code
 >- Status
@@ -163,4 +163,4 @@ Zusätzlich zur Anmeldung `cron.log`:
 >- Ausgeführtes Datum
 >- Enddatum
 >
->Um Datensätze in der Tabelle anzuzeigen, melden Sie sich in der Befehlszeile bei der Commerce-Datenbank an und geben Sie `SELECT * from cron_schedule;`.
+>Um Datensätze in der Tabelle anzuzeigen, melden Sie sich in der Befehlszeile bei der Commerce-Datenbank an und geben Sie `SELECT * from cron_schedule;` ein.

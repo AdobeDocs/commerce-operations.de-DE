@@ -38,7 +38,7 @@ Um eine optimale Leistung zu erzielen, sollten Sie die folgenden Richtlinien ver
 
 Verwenden Sie die folgenden Strategien, um die Anzahl der Artikel im Warenkorb zu verwalten
 
-- Aufteilen von Bestellungen in mehrere kleinere Bestellungen mit einer kleineren Anzahl von Zeilen mithilfe der [!UICONTROL Add Item by SKU] Funktion.
+- Aufteilen von Bestellungen in mehrere kleinere Bestellungen mit einer kleineren Anzahl von Zeilen mithilfe der Funktion [!UICONTROL Add Item by SKU] .
 - Fügen Sie nur die benutzerdefinierte Logik und die Anpassung des Warenkorbs hinzu, die zum Laden einer Liste von Elementen erforderlich sind.
 
 ## Kategorienbeschränkungen
@@ -112,7 +112,7 @@ Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
 ### Potenzielle Auswirkung auf die Leistung
 
-Viele Konfigurationen **Produktattribute** erhöht die Produktvorlagengröße für jedes Produkt (EAV-Struktur) und die Menge der Daten, die abgerufen werden müssen. Dieser Anstieg wirkt sich auf Vorgänge wie folgt aus:
+Durch die Konfiguration vieler **Produktattribute** wird die Produktvorlagengröße für jedes Produkt (EAV-Struktur) und die Datenmenge, die abgerufen werden muss, erhöht. Dieser Anstieg wirkt sich auf Vorgänge wie folgt aus:
 
 - Erhöhung des Traffics von SQL-Abfragen im Zusammenhang mit dem Abrufen von EAV-Daten und der Menge der verarbeiteten Daten, was zu einem geringeren DB-Durchsatz führt
 - Deutliche Vergrößerung der Adobe Commerce-Indizes und des Volltextsuchindex
@@ -125,7 +125,7 @@ Erhöhungen von Produktdaten und Indexgrößen können die Site-Performance auf 
 - Die Funktion für Massenaktionen von Produkten kann blockiert werden.
 - Die Neuerstellungszeit von Indizes für mittelgroße und große Kataloge kann aufgrund langer Ausführungszeiten nicht täglich ausgeführt werden.
 
-Viele Konfigurationen **Attributoptionen** kann die Site-Leistung wie folgt beeinflussen:
+Die Konfiguration vieler **Attributoptionen** kann die Site-Leistung auf folgende Weise beeinflussen:
 
 - Lange Anforderungs- und Wiedergabezeiten für Produktdetails (PDP) und Kategorieseiten mit komplexen Produkten.
 - Die Reaktionszeit von Vorgängen zur Produktspeicherung für Administratoren erhöht sich über den optimalen Leistungszielen.
@@ -155,7 +155,7 @@ Verwenden Sie die folgenden Strategien, um die Anzahl der Produktoptionen pro Pr
 
 Durch die Konfiguration vieler Produktoptionen erhöht sich die Datenmenge, die für jedes Produkt bei allen Lese- und Schreibvorgängen abgerufen wird. Dies führt zu Folgendem:
 
-- Erhöhter SQL-Abfrageverkehr und schwerer `JOIN` -Vorgänge erhöhen den Datenbankdurchsatz.
+- Erhöhter SQL-Abfrage-Traffic und höhere `JOIN`-Vorgänge erhöhen den Datenbankdurchsatz.
 - Erhöhte Größe für Adobe Commerce-Indizes und den Volltextsuchindex.
 
 Die oben aufgeführten Steigerungen können sich auf die Site-Leistung wie folgt auswirken:
@@ -177,7 +177,7 @@ Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 ### Aktualisieren der Produktlistenkonfiguration
 
-Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Konfiguration des Storefront-Katalogs, um die Option zu deaktivieren, **Alle Produkte pro Seite zulassen**.
+Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Storefront-Katalogkonfiguration, um die Option auf **Alle Produkte pro Seite zulassen** zu deaktivieren.
 
 Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Steuerelemente für die Storefront-Paginierung, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Paginierungssteuerelemente konfigurieren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
@@ -205,7 +205,7 @@ Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte zu reduzieren
    - Verringern Sie die Anzahl der SKUs, indem Sie die Anzahl der Websites, Kundengruppen, freigegebenen Kataloge, die Anzahl der Produkte oder die Anzahl der konfigurierbaren Produktoptionen reduzieren.
 - Stellen Sie mehr Produktvarianten bereit, indem Sie benutzerdefinierte Optionen verwenden, anstatt separate Produkte zu erstellen.
 - Unter Berücksichtigung der Tatsache, dass eine effektive SKU eine Reihe potenzieller Preisveränderungen umfassen könnte, da die Preise je Geschäft oder Kundengruppe unterschiedlich angegeben werden können.
-- Deaktivieren oder entfernen Sie nicht verwendete Systemkomponenten wie Module. Siehe  [Module deinstallieren](../../../installation/tutorials/uninstall-modules.md).
+- Deaktivieren oder entfernen Sie nicht verwendete Systemkomponenten wie Module. Siehe [Module deinstallieren](../../../installation/tutorials/uninstall-modules.md).
 - Verwalten Sie Produkte in einem externen Platform Management System (PMS).
 
 ## Produktvarianten
@@ -240,7 +240,7 @@ Eine Überschreitung der empfohlenen Anzahl von Produktvarianten kann die Site-P
 
 Befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in einem Warenkorb zu konfigurieren:
 
-- **Verkaufsregeln (Regeln für den Warenkorbpreis)**
+- **Verkaufsregeln (Regeln für Warenkorbpreise)**
    - Nicht verwendete Regeln verwalten und entfernen
    - Fügen Sie strenge Regelbedingungen (wie Attribut- oder Kategoriefilter) hinzu, um eine optimale Übereinstimmung zu erzielen.
 - **Coupons**
@@ -261,4 +261,4 @@ Wenn Sie mehr als die empfohlene maximale Anzahl von Regeln oder Gutscheinen fü
 - Die Reaktionszeit beim Hinzufügen von Produkten zum Warenkorb wurde verlängert.
 - Die Zeit zum Laden und Rendern des Minicarts wurde verlängert.
 - Die Zeit zum Rendern der Warenkorbseite wurde verlängert.
-- Erhöhte Zeit zum Rendern der **Gesamt** auf der Checkout-Seite.
+- Die Zeit zum Rendern des Bausteins **Gesamt** auf der Checkout-Seite wurde verlängert.

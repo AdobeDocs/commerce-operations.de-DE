@@ -5,7 +5,7 @@ feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ In den folgenden Abschnitten werden die Implementierungsdetails und Funktionen d
 
 ## Standardstrategie
 
-Wenn die Standardstrategie verwendet wird, werden alle statischen Ansichtsdateien für alle Pakete bereitgestellt, d. h. verarbeitet von [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php).
+Wenn die Standardstrategie verwendet wird, werden alle statischen Ansichtsdateien für alle Pakete bereitgestellt, d. h. von [`\Magento\Framework\App\View\Asset\Publisher`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/View/Asset/Publisher.php) verarbeitet.
 
-Weitere Informationen finden Sie unter [Bereitstellen von statischen Ansichtsdateien](../cli/static-view-file-deployment.md).
+Weitere Informationen finden Sie unter [Statische Ansichtsdateien bereitstellen](../cli/static-view-file-deployment.md).
 
 ## Schnellstrategie
 
@@ -38,15 +38,15 @@ Die Schnellstrategie führt die folgenden Aktionen durch:
 
 >[!INFO]
 >
->von _similar_ bedeutet, dass Dateien unabhängig vom Gebietsschema, Thema oder Bereich sind. Diese Dateien können CSS, Bilder und Schriftarten enthalten.
+>Mit _similar_ meinen wir Dateien, die unabhängig vom Gebietsschema, Thema oder Bereich sind. Diese Dateien können CSS, Bilder und Schriftarten enthalten.
 
 Dieser Ansatz minimiert die für mehrere Gebietsschemata erforderliche Bereitstellungszeit, obwohl viele Dateien dupliziert werden.
 
 ## Kompakte Strategie
 
-Die kompakte Strategie vermeidet Dateiduplizierung durch Speichern ähnlicher Dateien in `base` Unterverzeichnisse.
+Die kompakte Strategie vermeidet Dateiduplizierungen, indem ähnliche Dateien in `base` -Unterverzeichnissen gespeichert werden.
 
-Für das am besten optimierte Ergebnis werden drei Bereiche für eine mögliche Ähnlichkeit zugeordnet: Bereich, Thema und Gebietsschema. Die `base` -Unterverzeichnisse werden für alle Kombinationen dieser Bereiche erstellt.
+Für das am besten optimierte Ergebnis werden drei Bereiche für eine mögliche Ähnlichkeit zugeordnet: Bereich, Thema und Gebietsschema. Die Unterverzeichnisse `base` werden für alle Kombinationen dieser Bereiche erstellt.
 
 Die Dateien werden entsprechend den folgenden Mustern in diesen Unterverzeichnissen bereitgestellt.
 
@@ -66,9 +66,9 @@ Der in der kompakten Strategie verwendete Bereitstellungsansatz bedeutet, dass D
 - `map.php`
 - `requirejs-map.js`
 
-Die `map.php` -Datei verwendet von [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) um korrekte URLs zu erstellen.
+Die Datei `map.php` wird von [`Magento\Framework\View\Asset\Repository`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) verwendet, um korrekte URLs zu erstellen.
 
-Die `requirejs-map.js` wird von der `baseUrlResolver` Plug-in für RequireJS.
+Der `requirejs-map.js` wird vom Plug-in `baseUrlResolver` für RequireJS verwendet.
 
 Beispiel für `map.php`:
 
@@ -101,6 +101,6 @@ require.config({
 
 ## Tipps für Erweiterungsentwickler
 
-Verwenden Sie zum Erstellen von URLs für statische Ansichtsdateien [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
+Verwenden Sie zum Erstellen von URLs zu statischen Ansichtsdateien [`\Magento\Framework\View\Asset\Repository::createAsset()`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php#L211-L244).
 
 Verwenden Sie keine URL-Verkettungen, um zu vermeiden, dass Probleme mit statischen Dateien beim Rendern der Seite nicht gefunden und nicht angezeigt werden.

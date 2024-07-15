@@ -1,8 +1,8 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '4030'
-ht-degree: 13%
+source-wordcount: '1759'
+ht-degree: 0%
 
 ---
 # Gemeinschaftsbeiträge

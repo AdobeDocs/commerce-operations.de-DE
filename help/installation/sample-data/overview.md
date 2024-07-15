@@ -17,7 +17,7 @@ Beispieldaten bieten eine Storefront basierend auf dem Luma-Design, das mit Prod
 >
 >Um Datenbank und verschiedene Funktionen zu überprüfen und zu analysieren, sollten Sie anstelle von Beispieldaten echte Daten verwenden. Beispieldaten werden als vorgenerierte Store-Simulation konzipiert, um Designdesign und grundlegendes Storefront-Verhalten zu demonstrieren. Alle Beispieldatenentitäten werden direkt in die Datenbanktabellen geschrieben, während Beispieldaten installiert sind.
 
-Sie können Beispieldaten entweder vor oder nach der Installation der Commerce-Software installieren. Wenn Sie mit den Beispieldaten fertig sind, können Sie sie entweder entfernen oder neu installieren, wie unter [Beispieldatenmodule entfernen oder Beispieldaten aktualisieren](remove-or-update.md).
+Sie können Beispieldaten entweder vor oder nach der Installation der Commerce-Software installieren. Wenn Sie mit den Beispieldaten fertig sind, können Sie sie entweder entfernen oder neu installieren, wie unter [Entfernen von Beispieldatenmodulen oder Aktualisieren von Beispieldaten](remove-or-update.md) beschrieben.
 
 >[!WARNING]
 >
@@ -27,5 +27,5 @@ Sie können optionale Beispieldaten auf eine der folgenden Arten installieren:
 
 | Installationsmethode | Beschreibung | Erforderliche Kompetenz-stufe |
 |--- |--- |--- |
-| Verwenden von Composer | [Ausführen `magento sampledata:deploy` zum Ändern des Stammverzeichnisses der Anwendung `composer.json`](composer-packages.md) um Beispieldatenmodule zu aktivieren. | Erfordert Kenntnisse von Composer und Zugriff auf das Commerce-Dateisystem. |
-| Klonen von Repositorys | [GitHub-Repository klonen](git-repositories.md) und dem Beispieldaten-Repository verknüpfen. | Nur für beitragende Entwickler. Alle anderen sollten eine der vorhergehenden Methoden verwenden. |
+| Verwenden von Composer | [Führen Sie `magento sampledata:deploy` aus, um den Stammordner der Anwendung zu ändern `composer.json`](composer-packages.md), um Beispieldatenmodule zu aktivieren. | Erfordert Kenntnisse von Composer und Zugriff auf das Commerce-Dateisystem. |
+| Klonen von Repositorys | [Klonen Sie das GitHub-Repository](git-repositories.md) und das Beispieldaten-Repository und verknüpfen Sie sie dann miteinander. | Nur für beitragende Entwickler. Alle anderen sollten eine der vorhergehenden Methoden verwenden. |

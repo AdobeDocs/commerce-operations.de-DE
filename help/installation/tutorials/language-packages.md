@@ -13,9 +13,9 @@ ht-degree: 0%
 
 In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Sprachpakete deinstallieren, einschließlich des Codes der Sprachpakete vom Dateisystem. Sie können zunächst Backups erstellen, um die Daten später wiederherzustellen.
 
-Dieser Befehl deinstalliert *only* Sprachpakete, die in `composer.json`; also Sprachpakete, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Sprachpaket kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie den Sprachpaketcode aus dem Dateisystem entfernen.
+Mit diesem Befehl werden Sprachpakete deinstalliert, die in `composer.json` angegeben sind, d. h. Sprachpakete, die als Composer-Pakete bereitgestellt werden. ** Wenn Ihr Sprachpaket kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie den Sprachpaketcode aus dem Dateisystem entfernen.
 
-Sie können Backups jederzeit mithilfe des [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) Befehl.
+Mit dem Befehl [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) können Sie jederzeit Backups wiederherstellen.
 
 Befehlsverwendung:
 
@@ -29,8 +29,8 @@ Der Befehl zum Deinstallieren des Sprachpakets führt die folgenden Aufgaben aus
 
    Um dies zu umgehen, können Sie entweder alle abhängigen Sprachpakete gleichzeitig deinstallieren oder die abhängigen Sprachpakete zuerst deinstallieren.
 
-1. Wenn `--backup code` angegeben ist, sichern Sie das Dateisystem (außer `var` und `pub/static` Verzeichnissen) in `var/backups/<timestamp>_filesystem.tgz`
-1. Entfernt Sprachpaketdateien aus der Codebase mit `composer remove`.
+1. Wenn `--backup code` angegeben ist, sichern Sie das Dateisystem (außer den Verzeichnissen `var` und `pub/static`) auf `var/backups/<timestamp>_filesystem.tgz`.
+1. Entfernt Sprachpaketdateien mit `composer remove` aus der Codebasis.
 1. Löscht den Cache.
 
 Wenn Sie beispielsweise versuchen, ein Sprachpaket zu deinstallieren, von dem ein anderes Sprachpaket abhängig ist, wird die folgende Meldung angezeigt:

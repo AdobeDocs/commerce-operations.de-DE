@@ -5,38 +5,38 @@ feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
 source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
 
 # Remote Storage konfigurieren
 
-Das Remote-Speichermodul bietet die Möglichkeit, Mediendateien zu speichern und Importe und Exporte mithilfe eines Speicherdienstes wie AWS S3 in einem beständigen Remote-Speicher-Container zu planen. Standardmäßig speichert die Adobe Commerce-Anwendung Mediendateien im selben Dateisystem, das die Anwendung enthält. Dies ist bei komplexen Konfigurationen mit mehreren Servern ineffizient und kann bei der Freigabe von Ressourcen zu einer beeinträchtigten Leistung führen. Mit dem Remote Storage-Modul können Sie Mediendateien im `pub/media` Ordner- und Import-/Exportdateien im `var` Verzeichnis des Remote-Objektspeichers, um die serverseitige Bildgröße zu nutzen.
+Das Remote-Speichermodul bietet die Möglichkeit, Mediendateien zu speichern und Importe und Exporte mithilfe eines Speicherdienstes wie AWS S3 in einem beständigen Remote-Speicher-Container zu planen. Standardmäßig speichert die Adobe Commerce-Anwendung Mediendateien im selben Dateisystem, das die Anwendung enthält. Dies ist bei komplexen Konfigurationen mit mehreren Servern ineffizient und kann bei der Freigabe von Ressourcen zu einer beeinträchtigten Leistung führen. Mit dem Remote-Speichermodul können Sie Mediendateien im Ordner &quot;`pub/media`&quot;speichern und Dateien im Ordner &quot;`var`&quot;des Remote-Objektspeichers importieren/exportieren, um von der serverseitigen Bildgröße zu profitieren.
 
 >[!INFO]
 >
->Remote-Speicher ist nur für Commerce-Versionen 2.4.2 und höher verfügbar. Siehe [2.4.2 - Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
+>Remote-Speicher ist nur für Commerce Version 2.4.2 und höher verfügbar. Siehe Versionshinweise zu [2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
 
 >[!INFO]
 >
->Das Remote-Speichermodul verfügt über _begrenzt_ Unterstützung von Adobe Commerce für Cloud-Infrastruktur. Adobe kann keine vollständige Fehlerbehebung für den Speicheradapterdienst von Drittanbietern durchführen. Siehe [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md) für Anleitungen zur Implementierung von Remote-Speicher für Cloud-Projekte.
+>Das Remote-Speichermodul bietet in Adobe Commerce in der Cloud-Infrastruktur _begrenzte_ Unterstützung. Adobe kann keine vollständige Fehlerbehebung für den Speicheradapterdienst von Drittanbietern durchführen. Eine Anleitung zur Implementierung von Remote-Speicher für Cloud-Projekte finden Sie unter [Konfigurieren von Remote-Speicher für Commerce in Cloud-Infrastruktur](cloud-support.md) .
 
 ![Schemabild](../../assets/configuration/remote-storage-schema.png)
 
 ## Remote-Speicheroptionen
 
-Sie können den Remote-Speicher mit dem `remote-storage` mit der Option [`setup` CLI, Befehl](../../installation/tutorials/deployment.md). Die `remote-storage` -Option verwendet die folgende Syntax:
+Sie können den Remote-Speicher mit der Option `remote-storage` mit dem Befehl [`setup` CLI command](../../installation/tutorials/deployment.md) konfigurieren. Die Option `remote-storage` verwendet die folgende Syntax:
 
 ```text
 --remote-storage-<parameter-name>="<parameter-value>"
 ```
 
-Die `parameter-name` bezieht sich auf den spezifischen Parameternamen des Remote-Speichers. In der folgenden Tabelle sind die Parameter aufgeführt, die für die Konfiguration des Remote-Speichers verfügbar sind:
+Der `parameter-name` bezieht sich auf den Namen des spezifischen Remote-Speicherparameters. In der folgenden Tabelle sind die Parameter aufgeführt, die für die Konfiguration des Remote-Speichers verfügbar sind:
 
 | Befehlszeilenparameter | Parametername | Beschreibung | Standardwert |
 |--- |--- |--- |--- |
-| `remote-storage-driver` | Treiber | Adaptername<br>Mögliche Werte:<br>**file**: Deaktiviert den Remote-Speicher und verwendet das lokale Dateisystem.<br>**aws-s3**: Verwenden Sie die [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | Keine |
+| `remote-storage-driver` | Treiber | Adaptername<br>Mögliche Werte:<br>**file**: Deaktiviert den Remote-Speicher und verwendet das lokale Dateisystem <br>**aws-s3**: Verwenden Sie den [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md) | Keine |
 | `remote-storage-bucket` | Bucket | Objektspeicherung oder Containername | Keine |
 | `remote-storage-prefix` | prefix | Optionales Präfix (Speicherort innerhalb des Objektspeichers) | leer |
 | `remote-storage-region` | region | Regionsname | Keine |
@@ -45,21 +45,21 @@ Die `parameter-name` bezieht sich auf den spezifischen Parameternamen des Remote
 
 ### Speicheradapter
 
-Der standardmäßige Speicherort befindet sich im lokalen Dateisystem. A _Speicheradapter_ ermöglicht Ihnen, eine Verbindung zu einem Speicherdienst herzustellen und Ihre Dateien überall zu speichern. [!DNL Commerce] unterstützt die Konfiguration der folgenden Speicherdienste:
+Der standardmäßige Speicherort befindet sich im lokalen Dateisystem. Mit einem _Speicheradapter_ können Sie eine Verbindung zu einem Speicherdienst herstellen und Ihre Dateien an einer beliebigen Stelle speichern. [!DNL Commerce] unterstützt die Konfiguration der folgenden Speicherdienste:
 
 - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
 ## Remote-Speicher aktivieren
 
-Sie können während einer Adobe Commerce-Installation Remote-Speicher installieren oder einer bestehenden Commerce-Instanz Remote-Speicher hinzufügen. Die folgenden Beispiele zeigen die einzelnen Methoden anhand eines Satzes von `remote-storage` Parameter mit Commerce `setup` CLI-Befehle. Minimal müssen Sie den Speicher bereitstellen `driver`, `bucket`, und `region`.
+Sie können den Remote-Speicher während einer Adobe Commerce-Installation installieren oder einer bestehenden Commerce-Instanz Remote-Speicher hinzufügen. In den folgenden Beispielen werden die einzelnen Methoden anhand eines Satzes von `remote-storage` Parametern mit Commerce `setup`-CLI-Befehlen veranschaulicht. Minimal müssen Sie den Speicher `driver`, `bucket` und `region` bereitstellen.
 
-- Beispiel: Commerce mit Remote-Speicher installieren
+- Beispiel: Installieren von Commerce mit Remote-Speicher
 
   ```bash
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
-- Beispiel: Remote-Speicher für vorhandenen Commerce aktivieren
+- Beispiel: Remote-Speicher auf vorhandenem Commerce aktivieren
 
   ```bash
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
@@ -67,7 +67,7 @@ Sie können während einer Adobe Commerce-Installation Remote-Speicher installie
 
 >[!TIP]
 >
->Informationen zu Adobe Commerce zur Cloud-Infrastruktur finden Sie unter [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md).
+>Informationen zu Adobe Commerce in der Cloud-Infrastruktur finden Sie unter [Konfigurieren des Remote-Speichers für Commerce in der Cloud-Infrastruktur](cloud-support.md).
 
 ## Einschränkungen
 
@@ -79,11 +79,11 @@ bin/magento config:set system/media_storage_configuration/media_database 0
 
 Die Aktivierung des Remote-Speichers kann sich auf Ihr bestehendes Entwicklungs-Erlebnis auswirken. Beispielsweise funktionieren bestimmte PHP-Dateifunktionen möglicherweise nicht erwartungsgemäß. Die Verwendung von Commerce Framework für Dateivorgänge muss erzwungen werden.
 
-Die Liste der verbotenen nativen PHP-Funktionen ist in verfügbar. [Magento-coding-standard-Repository][code-standard].
+Die Liste der verbotenen nativen PHP-Funktionen ist im [magento-coding-standard repository][code-standard] verfügbar.
 
 ## Migrieren von Inhalten
 
-Nachdem Sie den Remote-Speicher für einen bestimmten Adapter aktiviert haben, können Sie die CLI verwenden, um vorhandene _media_ Dateien in den Remote-Speicher.
+Nachdem Sie den Remote-Speicher für einen bestimmten Adapter aktiviert haben, können Sie mithilfe der CLI vorhandene _media_-Dateien in den Remote-Speicher migrieren.
 
 ```bash
 ./magento2ce/bin/magento remote-storage:sync
@@ -91,7 +91,7 @@ Nachdem Sie den Remote-Speicher für einen bestimmten Adapter aktiviert haben, k
 
 >[!INFO]
 >
->Der Synchronisierungsbefehl migriert nur Dateien im `pub/media` Verzeichnis, _not_ die Import-/Exportdateien im `var` Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) im _Benutzerhandbuch für Commerce 2.4_.
+>Der Synchronisierungsbefehl migriert nur Dateien im Ordner `pub/media`, nicht jedoch die Import-/Exportdateien im Verzeichnis `var`. __ Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) im _Commerce 2.4-Benutzerhandbuch_.
 
 <!-- link definitions -->
 

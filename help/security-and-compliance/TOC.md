@@ -4,7 +4,7 @@ user-guide-description: Erfahren Sie mehr über die Einhaltung gesetzlicher Vors
 feature: Security
 source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
 workflow-type: tm+mt
-source-wordcount: '58'
+source-wordcount: '53'
 ht-degree: 1%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 1%
 - Datenschutzbestimmungen {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [DSGVO](privacy/gdpr.md)
-   - [JavaScript-Bibliothek zum Adobe Datenschutz](privacy/adobe-javascript-library.md)
-   - [Datenschutz-JavaScript-Bibliothek](privacy/javascript-library.md)
+   - [Adobe Privacy JavaScript Library](privacy/adobe-javascript-library.md)
+   - [Privacy JavaScript Library](privacy/javascript-library.md)
 - Referenz {#reference}
    - [Persönliche Daten des Kunden (Version 2.x)](privacy/data-m2.md)
    - [Persönliche Daten des Kunden (Version 1.x)](privacy/data-m1.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Datenbankschema und Daten aktualisieren
 
-Bevor Sie diesen Befehl verwenden, müssen Sie [Installieren des Programms](../advanced.md).
+Bevor Sie diesen Befehl verwenden, müssen Sie [die Anwendung installieren](../advanced.md).
 
 ## Datenbankschema und Daten aktualisieren
 
@@ -23,7 +23,7 @@ Jedes Mal, wenn Sie eine Aktion ausführen, die eine Änderung des Datenbanksche
 
 >[!NOTE]
 >
->A *component* kann ein Modul, ein Design oder ein Sprachpaket sein; es spielt keine Rolle, ob die Komponente von der Commerce Marketplace stammt oder nicht.
+>Eine *Komponente* kann ein Modul, ein Design oder ein Sprachpaket sein. Es spielt keine Rolle, ob die Komponente vom Commerce Marketplace stammt oder nicht.
 
 1. Starten Sie das Upgrade:
 
@@ -31,7 +31,7 @@ Jedes Mal, wenn Sie eine Aktion ausführen, die eine Änderung des Datenbanksche
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Wo `--keep-generated` ist ein optionales Argument, das nicht aktualisiert wird [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md). Dieses optionale Argument ist zur Verwendung vorgesehen. *only* unter begrenzten Umständen von erfahrenen Systemintegratoren. Es sollte verwendet werden *only* in [Produktionsmodus](../../configuration/bootstrap/application-modes.md#production-mode). Es sollte *not* in [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Wobei `--keep-generated` ein optionales Argument ist, das [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md) nicht aktualisiert. Dieses optionale Argument ist für erfahrene Systemintegratoren zur Verwendung von *nur* unter bestimmten Umständen vorgesehen. Sie sollte *nur* im [Produktionsmodus](../../configuration/bootstrap/application-modes.md#production-mode) verwendet werden. Sie sollte *nicht* im [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode) verwendet werden.
 
 1. Cache leeren:
 

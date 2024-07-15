@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2,4,7
 
-Die Unterstützung für die Version 2.4.7 endet am 9. April 2027.
+Die Unterstützung für die Version 2.4.7 endet am April.  9. Juli 2027.
 
 <table>
   <thead>
@@ -27,9 +27,9 @@ Die Unterstützung für die Version 2.4.7 endet am 9. April 2027.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2,4,7</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7</a>
         </td>
-        <td>9. April 2024</td>
+        <td>April  9. Januar 2024</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -56,7 +56,7 @@ Die Unterstützung für die Version 2.4.6 endet am 14. März 2026.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#adobe-commerce-246-p5">2.4.6-p5</a>
         </td>
-        <td>9. April 2024</td>
+        <td>April  9. Januar 2024</td>
     </tr>
     <tr>
         <td>
@@ -74,7 +74,7 @@ Die Unterstützung für die Version 2.4.6 endet am 14. März 2026.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p2">2.4.6-p2</a>
         </td>
-        <td>8. August 2023</td>
+        <td>August  8. Oktober 2023</td>
     </tr>
     <tr>
         <td>
@@ -84,7 +84,7 @@ Die Unterstützung für die Version 2.4.6 endet am 14. März 2026.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-6">2,4,6</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-6">2.4.6</a>
         </td>
         <td>14. März 2023</td>
     </tr><!-- patch_releases -->
@@ -93,7 +93,7 @@ Die Unterstützung für die Version 2.4.6 endet am 14. März 2026.
 
 ## 2,4,5
 
-Die Unterstützung für die Version 2.4.5 endet am 9. August 2025.
+Die Unterstützung für die Version 2.4.5 endet am August.  9, 2025.
 
 <table>
   <thead>
@@ -113,7 +113,7 @@ Die Unterstützung für die Version 2.4.5 endet am 9. August 2025.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p7">2.4.5-p7</a>
         </td>
-        <td>9. April 2024</td>
+        <td>April  9. Januar 2024</td>
     </tr>
     <tr>
         <td>
@@ -131,7 +131,7 @@ Die Unterstützung für die Version 2.4.5 endet am 9. August 2025.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p4">2.4.5-p4</a>
         </td>
-        <td>8. August 2023</td>
+        <td>August  8. Oktober 2023</td>
     </tr>
     <tr>
         <td>
@@ -153,9 +153,9 @@ Die Unterstützung für die Version 2.4.5 endet am 9. August 2025.
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-5">2,4,5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-5">2.4.5</a>
         </td>
-        <td>9. August 2022</td>
+        <td>August  9. Januar 2022</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -182,7 +182,7 @@ Die Unterstützung für die Version 2.4.4 endet am 24. April 2025.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
         </td>
-        <td>9. April 2024</td>
+        <td>April  9. Januar 2024</td>
     </tr>
     <tr>
         <td>
@@ -200,7 +200,7 @@ Die Unterstützung für die Version 2.4.4 endet am 24. April 2025.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p5">2.4.4-p5</a>
         </td>
-        <td>8. August 2023</td>
+        <td>August  8. Oktober 2023</td>
     </tr>
     <tr>
         <td>
@@ -224,11 +224,11 @@ Die Unterstützung für die Version 2.4.4 endet am 24. April 2025.
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p1">2.4.4-p1</a>
         </td>
-        <td>9. August 2022</td>
+        <td>August  9. Januar 2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-4">2,4,4</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-4">2.4.4</a>
         </td>
         <td>12. April 2022</td>
     </tr><!-- patch_releases -->
@@ -251,7 +251,7 @@ Die Unterstützung für die Release-Zeile 2.4.0-2.4.3 endete am 28. November 202
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p3">2.4.3-p3</a>
         </td>
-        <td>9. August 2022</td>
+        <td>August  9. Januar 2022</td>
     </tr>
     <tr>
         <td>
@@ -267,7 +267,7 @@ Die Unterstützung für die Release-Zeile 2.4.0-2.4.3 endete am 28. November 202
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-3">2,4,3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-3">2.4.3</a>
         </td>
         <td>10. August 2021</td>
     </tr>
@@ -285,19 +285,19 @@ Die Unterstützung für die Release-Zeile 2.4.0-2.4.3 endete am 28. November 202
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-2">2,4,2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-2">2.4.2</a>
         </td>
-        <td>9. Februar 2021</td>
+        <td>Februar  9. Januar 2021</td>
     </tr>
     <tr>
         <td>
           2.4.1-p1
         </td>
-        <td>9. Februar 2021</td>
+        <td>Februar  9. Januar 2021</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-1">2,4,1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-1">2.4.1</a>
         </td>
         <td>15. Oktober 2020</td>
     </tr>
@@ -309,7 +309,7 @@ Die Unterstützung für die Release-Zeile 2.4.0-2.4.3 endete am 28. November 202
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-0">2,4,0</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-0">2.4.0</a>
         </td>
         <td>28. Juli 2020</td>
     </tr><!-- patch_releases -->
@@ -318,7 +318,7 @@ Die Unterstützung für die Release-Zeile 2.4.0-2.4.3 endete am 28. November 202
 
 ## 2,3
 
-Die Unterstützung für die Version 2.3 endete am 8. September 2022.
+Die Unterstützung für die Version 2.3 endete im September.  8, 2022.
 
 <table>
   <thead>
@@ -332,7 +332,7 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
         <td>
           <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html">2.3.7-p4</a>
         </td>
-        <td>9. August 2022</td>
+        <td>August  9. Januar 2022</td>
     </tr>
     <tr>
         <td>
@@ -354,7 +354,7 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2,3,7</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2.3.7</a>
         </td>
         <td>11. Mai 2021</td>
     </tr>
@@ -362,11 +362,11 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
         <td>
           2.3.6-p1
         </td>
-        <td>9. Februar 2021</td>
+        <td>Februar  9. Januar 2021</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2,3,6</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6</a>
         </td>
         <td>15. Oktober 2020</td>
     </tr>
@@ -390,7 +390,7 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2,3,5</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2.3.5</a>
         </td>
         <td>28. April 2020</td>
     </tr>
@@ -402,7 +402,7 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2,3,4</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2.3.4</a>
         </td>
         <td>28. Januar 2020</td>
     </tr>
@@ -410,17 +410,17 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
         <td>
           2.3.2-p2
         </td>
-        <td>9. Oktober 2019</td>
+        <td>Oktober  9. Juli 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2,3,3</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3.1}</a>
         </td>
-        <td>8. Oktober 2019</td>
+        <td>Oktober  8. Juli 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">2,3,2</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">2.3.2</a>
         </td>
         <td>25. Juni 2019</td>
     </tr>
@@ -432,7 +432,7 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">2,3,0</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">2.3.0</a>
         </td>
         <td>28. November 2018</td>
     </tr><!-- patch_releases -->
@@ -441,7 +441,7 @@ Die Unterstützung für die Version 2.3 endete am 8. September 2022.
 
 ## 2,2
 
-Die Unterstützung für die Version 2.2 endete am 1. Dezember 2019.
+Die Unterstützung für die am Dezember beendete Version 2.2  1, 2019.
 
 <table>
   <thead>
@@ -461,7 +461,7 @@ Die Unterstützung für die Version 2.2 endete am 1. Dezember 2019.
         <td>
           2.2.10
         </td>
-        <td>8. Oktober 2019</td>
+        <td>Oktober  8. Juli 2019</td>
     </tr>
     <tr>
         <td>
@@ -497,7 +497,7 @@ Die Unterstützung für die Version 2.2 endete am 1. Dezember 2019.
         <td>
           2,2,4
         </td>
-        <td>2. Mai 2018</td>
+        <td>Mai  2. Juni 2018</td>
     </tr>
     <tr>
         <td>
@@ -515,7 +515,7 @@ Die Unterstützung für die Version 2.2 endete am 1. Dezember 2019.
         <td>
           2.2.1
         </td>
-        <td>7. November 2017</td>
+        <td>November  7. Juli 2017</td>
     </tr>
     <tr>
         <td>
@@ -572,7 +572,7 @@ Die Unterstützung für die Version 2.1 endete am 30. Juni 2019.
         <td>
           2,1,13
         </td>
-        <td>2. Mai 2018</td>
+        <td>Mai  2. Juni 2018</td>
     </tr>
     <tr>
         <td>
@@ -590,7 +590,7 @@ Die Unterstützung für die Version 2.1 endete am 30. Juni 2019.
         <td>
           2.1.10
         </td>
-        <td>7. November 2017</td>
+        <td>November  7. Juli 2017</td>
     </tr>
     <tr>
         <td>
@@ -602,7 +602,7 @@ Die Unterstützung für die Version 2.1 endete am 30. Juni 2019.
         <td>
           2.1.8
         </td>
-        <td>9. August 2017</td>
+        <td>August  9. Juli 2017</td>
     </tr>
     <tr>
         <td>
@@ -626,7 +626,7 @@ Die Unterstützung für die Version 2.1 endete am 30. Juni 2019.
         <td>
           2.1.4
         </td>
-        <td>7. Februar 2017</td>
+        <td>Februar  7. Juli 2017</td>
     </tr>
     <tr>
         <td>
@@ -677,7 +677,7 @@ Die Unterstützung für die Version 2.0 endete am 31. März 2018.
         <td>
           2,0,17
         </td>
-        <td>7. November 2017</td>
+        <td>November  7. Juli 2017</td>
     </tr>
     <tr>
         <td>
@@ -707,7 +707,7 @@ Die Unterstützung für die Version 2.0 endete am 31. März 2018.
         <td>
           2,0,12
         </td>
-        <td>7. Februar 2017</td>
+        <td>Februar  7. Juli 2017</td>
     </tr>
     <tr>
         <td>

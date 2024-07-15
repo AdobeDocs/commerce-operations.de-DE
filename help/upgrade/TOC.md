@@ -5,7 +5,7 @@ feature: Upgrade
 topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '139'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 4%
 # Aktualisierungshandbuch {#upgrade-guide}
 
 - [Übersicht über den Aktualisierungsprozess](overview.md)
-- Journey aktualisieren {#journey}
+- Upgrade-Journey {#journey}
    - [Journey-Phasen](journey/phases.md)
    - [Projektstart](journey/project-launch.md)
    - [Jährliche Planung](journey/annual-planning.md)
@@ -36,9 +36,9 @@ ht-degree: 4%
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
    - [Übersicht](upgrade-compatibility-tool/overview.md)
    - [Systemanforderungen](upgrade-compatibility-tool/prerequisites.md)
-   - Verwenden Sie die [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+   - Verwenden Sie den [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
       - [Führen Sie das Tool in einer Befehlszeilenschnittstelle aus](upgrade-compatibility-tool/run.md)
-      - [Integrieren mit der [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Integrieren mit dem [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Führen Sie das Tool im Magento PHPStorm-Plugin aus.](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
    - Berichterstellung {#reporting}
       - [Berichte](upgrade-compatibility-tool/reports.md)
@@ -54,4 +54,4 @@ ht-degree: 4%
 - Ressourcen {#resources}
    - [Empfohlene Lesbarkeit](resources/recommended-reading.md)
    - [Modernisierung Ihrer Plattform mit Adobe Commerce](resources/recommended-upgrade-paths.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

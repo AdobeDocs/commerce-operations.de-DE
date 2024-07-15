@@ -15,7 +15,7 @@ Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere E-Co
 
 ## Wie Sie die Software erhalten
 
-Überprüfen Sie die Verfügbarkeit aufregender neuer Funktionen und Versionen und erfahren Sie, wie Sie sie in unserer [Seite zur Produktverfügbarkeit](https://devdocs.magento.com/release/availability.html).
+Überprüfen Sie die Verfügbarkeit aufregender neuer Funktionen und Versionen und erfahren Sie, wie Sie diese auf unserer [Seite zur Produktverfügbarkeit](https://devdocs.magento.com/release/availability.html) erhalten können.
 
 In der folgenden Tabelle finden Sie die ersten Schritte zur Installation von Adobe Commerce.
 
@@ -31,22 +31,22 @@ In der folgenden Tabelle finden Sie die ersten Schritte zur Installation von Ado
         <td><p>Integrator, Packager</p></td>
         <td><p>Möchte die vollständige Kontrolle über alle installierten Komponenten erhalten, hat Zugriff auf den Anwendungsserver, hochtechnisch, kann die Magento Open Source mit anderen Komponenten umverpacken.</p>
         </td>
-        <td><ol><li>Erstellt einen Verfasser <em>Projekt</em> , die die Liste der zu verwendenden Komponenten enthält.</li>
-            <li>Verwendet Composer zum Aktualisieren von Paketabhängigkeiten; verwendet <code>composer create-project</code> , um das Composer-Metapaket abzurufen.</li>
-            <li>Installiert die Anwendung mit dem <a href="../advanced.md">Befehlszeile</a>.</li>
-        <li>Aktualisieren Sie die Anwendung und die Erweiterungen mithilfe des  <a href="../../upgrade/implementation/perform-upgrade.md">Befehlszeile</a>.</li></ol></td>
+        <td><ol><li>Erstellt einen Composer <em>project</em>, der die Liste der zu verwendenden Komponenten enthält.</li>
+            <li>Verwendet Composer zum Aktualisieren von Paketabhängigkeiten; verwendet <code>composer create-project</code>, um das Composer-Metapaket zu erhalten.</li>
+            <li>Installiert die Anwendung mit der <a href="../advanced.md">Befehlszeile</a>.</li>
+        <li>Aktualisieren Sie die Anwendung und die Erweiterungen mithilfe der <a href="../../upgrade/implementation/perform-upgrade.md">Befehlszeile</a>.</li></ol></td>
         <td><p><a href="../composer.md">Metapaket abrufen</a></p></td>
     </tr>
     <tr>
         <td><p>Beitragende Entwickler</p></td>
         <td><p>trägt zur Magento Open Source-Codebase, zu Dateifehlern bei und passt die Anwendung an. Hochtechnisch, hat einen eigenen Entwicklungsserver, versteht Composer und GitHub.</p>
-            <p>You <em>cannot</em> die Anwendung in einer Produktionsumgebung verwenden.</p>
-      <p>Sie müssen ein Upgrade durchführen mit <a href="../../upgrade/developer/git-installs.md">Composer- und Git-Befehle</a>.</p></td>
+            <p>Sie können die Anwendung <em> nicht in einer Produktionsumgebung verwenden.</em></p>
+      <p>Sie müssen ein Upgrade mit <a href="../../upgrade/developer/git-installs.md">Composer- und Git-Befehlen</a> durchführen.</p></td>
         <td><ol><li>Klont das GitHub-Repository.</li>
             <li>Verwendet Composer zum Aktualisieren von Paketabhängigkeiten.</li>
-            <li>Installiert das Programm mit <a href="../advanced.md">Befehlszeile</a>.</li>
-            <li>Aktualisieren Sie die Anwendung mit <a href="../../upgrade/developer/git-installs.md">Composer- und Git-Befehle</a>.</li>
-            <li>Passt Code unter dem <code>app/code</code> Verzeichnis.</li></ol></td>
+            <li>Installiert die Anwendung mit der <a href="../advanced.md">Befehlszeile</a>.</li>
+            <li>Aktualisieren Sie die Anwendung mit <a href="../../upgrade/developer/git-installs.md">Composer- und Git-Befehlen</a>.</li>
+            <li>Passt Code im Verzeichnis <code>app/code</code> an.</li></ol></td>
         <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">GitHub-Repository klonen</a></p></td>
     </tr>
     </tbody>
@@ -58,8 +58,8 @@ In der folgenden Tabelle finden Sie die ersten Schritte zur Installation von Ado
 
 ## Erforderliche Serverberechtigungen
 
-UNIX-Systeme erfordern `root` Berechtigungen zum Installieren und Konfigurieren von Software wie einem Webserver, PHP. Wenn Sie diese Software installieren müssen, stellen Sie sicher, dass Sie `root` Zugriff.
+UNIX-Systeme benötigen `root` Berechtigungen, um Software wie einen Webserver, PHP, zu installieren und zu konfigurieren. Wenn Sie diese Software installieren müssen, stellen Sie sicher, dass Sie über `root` Zugriff verfügen.
 
-Do *not* Installieren Sie die Anwendung im Basisverzeichnis des Webservers als `root` -Benutzer, da der Webserver möglicherweise nicht mit diesen Dateien interagieren kann.
+Installieren Sie *nicht* die Anwendung im Basisverzeichnis des Webservers als `root` Benutzer, da der Webserver möglicherweise nicht mit diesen Dateien interagieren kann.
 
-Sie benötigen `root` Berechtigungen zum Erstellen der [Dateisysteminhaber](file-system/overview.md) und fügen Sie diesen Eigentümer zur Gruppe des Webservers hinzu. Sie verwenden den Dateisysteminhaber zum Ausführen von `bin/magento` -Befehle über die Befehlszeile und zum Einrichten von Cron-Aufträgen, die Aufgaben für Sie planen.
+Sie benötigen `root` -Berechtigungen, um den [Dateisysteminhaber](file-system/overview.md) zu erstellen und diesen Inhaber zur Gruppe des Webservers hinzuzufügen. Sie verwenden den Dateisysteminhaber, um `bin/magento`-Befehle über die Befehlszeile auszuführen und Cron-Aufträge einzurichten, die Aufgaben für Sie planen.

@@ -5,7 +5,7 @@ exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
 feature: Cloud
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Benchmark-Zusammenfassung
 
 Die Leistungs-Benchmark-Ergebnisse von Adobe Commerce 2.4.5 spiegeln die Leistung wider, die auf einer Adobe Commerce-Instanz gemessen wird, die mit der folgenden Infrastruktur und zusätzlichen Komponenten bereitgestellt wird.
-- [Pro Cloud-Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) mit [skalierte Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
+- [Pro-Cloud-Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) mit [skalierter Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html)
 - [B2B für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/b2b/introduction.html)
 - [Adobe Commerce Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html)
 - [Adobe Stock](https://experienceleague.adobe.com/docs/commerce-admin/content-design/media/adobe-stock/adobe-stock.html)
@@ -26,23 +26,23 @@ Die folgenden Informationen fassen die Benchmark-Ergebnisse zusammen und liefern
 
 Die folgende Abbildung zeigt die Commerce-Store-Konfiguration für den Leistungs-Benchmark und die wichtigsten Leistungsmetriken aus den Testergebnissen.
 
-![Performance Benchmark JMeter und Produktionsinfrastruktur](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
+![Performance-Benchmark-JMeter und Produktions-Infrastruktur](../../../assets/performance/images/performance-benchmark-kpis-245-cloud.png){width="700" zoomable="yes"}
 
 Basierend auf Testkriterien, die eine B2C-Organisation eines Unternehmens imitieren, kann das System angeforderte Traffic- und Bestellzahlen während Spitzenzeiten bei einem Standardlastfluss verarbeiten.
 
 ### Leistungsmerkmale
 
-- **Bestellungen**—Es wurden 3.481 Bestellungen pro Minute verarbeitet, wobei die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen (99 % der Anfragen wurden mit einer Antwortzeit von weniger als 2 Sekunden bearbeitet).
-- **Seitenansichten**—Es wurden über 2 Millionen Seitenansichten pro Stunde verarbeitet, während die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden blieben.
-- **Effektive SKUs**—Das Kundenprofil umfasste 242 Millionen verschiedene Preisvarianten (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>) für 250.000 Produkte.
-- **GraphQL-Anforderungen**—Das System wurde auf 10.500 nicht zwischengespeicherte Anfragen pro Minute skaliert, wobei die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen.
-- **Gleichzeitige Administratoren**—Das System wurde skaliert, um 500 gleichzeitige Admin-Benutzer zu unterstützen, während die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen.
+- **Bestellungen**: Für das 99. Perzentil wurden 3.481 Bestellungen pro Minute verarbeitet, wobei die Antwortzeiten weniger als 2 Sekunden blieben (99 % der Anfragen wurden mit einer Antwortzeit von weniger als 2 Sekunden bearbeitet).
+- **Seitenansichten**: Über 2 Millionen Seitenansichten pro Stunde wurden verarbeitet, wobei die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen.
+- **Effektive SKUs**: Das Kundenprofil umfasste 242 Millionen verschiedene Preisvarianten (<a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/product-sku-limits.html">eSKUs</a>) für 250.000 Produkte.
+- **GraphQL-Anfragen**: Das System wurde auf 10.500 nicht zwischengespeicherte Anfragen pro Minute skaliert, wobei die Antwortzeiten für das 99. Perzentil auf weniger als 2 Sekunden reduziert werden.
+- **Gleichzeitige Admin-Benutzer** - Das System wurde skaliert, um 500 gleichzeitige Admin-Benutzer zu unterstützen, während die Antwortzeiten für das 99. Perzentil weniger als 2 Sekunden betragen.
 
 ## Testumgebung
 
 Leistungs-Benchmark-Ergebnisse wurden durch Tests mit einer Adobe Commerce 2.4.5-Instanz erzielt, die in einer Pro-Cloud-Umgebung mit skalierter Architektur bereitgestellt wurde. Für die Instanz wurden auch die Adobe Commerce-Integrationsmodule B2B, Inventory management und Adobe Stock installiert, konfiguriert und aktiviert.
 
-Leistungstestdaten für das Testprofil wurden mit der <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Leistungs-Toolkit</a>.
+Leistungstestdaten für das Testprofil wurden mit dem <a href="https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html">Performance Toolkit</a> generiert.
 
 Leistungsmessungen basieren auf simulierten täglichen Store-Aktivitäten für Kunden und Geschäftsbenutzer. Die Werte spiegeln für jeden Fall einen nahezu maximalen Durchsatz wider, spiegeln jedoch keine einzigartigen Geschäftsmodelle wie private Verkäufe oder Flash-Verkäufe wider.
 
@@ -66,7 +66,7 @@ Leistungsmessungen basieren auf simulierten täglichen Store-Aktivitäten für K
 
 Der Lasttest wurde mit JMeter-Lastprofilen abgeschlossen, die für die Adobe Commerce-Instanz ausgeführt wurden. Während des Tests wurden drei Webknoten und drei Dienstknoten verwendet. Die folgende Abbildung zeigt den Einstiegspunkt der JMeter- und Produktionsinfrastruktur.
 
-![Performance Benchmark JMeter und Produktionsinfrastruktur](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
+![Performance-Benchmark-JMeter und Produktions-Infrastruktur](https://git.corp.adobe.com/storage/user/43354/files/4d801e3e-96b7-4193-b94f-12571263b495){width="700" zoomable="yes"}
 
 ### Anwendung
 
@@ -74,9 +74,9 @@ Der Lasttest wurde mit JMeter-Lastprofilen abgeschlossen, die für die Adobe Com
 
 ### Infrastruktur
 
-Für den Performance-Benchmark wurde Adobe Commerce 2.4.5 auf einer [skalierbare Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) mit der folgenden Kapazität.
+Für den Leistungs-Benchmark wurde Adobe Commerce 2.4.5 auf einer [skalierbaren Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html) mit der folgenden Kapazität bereitgestellt.
 
-- **Webknotenspezifikationen**
+- **Spezifikationen für Webknoten**
    - vCPU 216 (72 x 3 Knoten)
    - Speicher 432 GiB (144 x 3 Knoten)
    - Netzwerkbandbreite 768 Gbit/s (256 x 3 Knoten)

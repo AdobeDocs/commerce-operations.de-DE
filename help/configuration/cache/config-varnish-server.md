@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,8 @@ In den folgenden Abschnitten wird als Beispiel Port 8080 verwendet.
 
 **So ändern Sie den Apache 2.4-Überwachungsanschluss**:
 
-1. Öffnen `/etc/httpd/conf/httpd.conf` in einem Texteditor.
-1. Suchen Sie die `Listen` Richtlinie.
+1. Öffnen Sie `/etc/httpd/conf/httpd.conf` in einem Texteditor.
+1. Suchen Sie die Anweisung `Listen` .
 1. Ändern Sie den Wert des Überwachungsanschlusses in `8080`. (Sie können jeden verfügbaren Überwachungsanschluss verwenden.)
 1. Speichern Sie Ihre Änderungen in `httpd.conf` und beenden Sie den Texteditor.
 
@@ -27,7 +27,7 @@ In den folgenden Abschnitten wird als Beispiel Port 8080 verwendet.
 
 So ändern Sie die Varnish-Systemkonfiguration:
 
-1. Als Benutzer mit `root` -Berechtigungen verwenden, öffnen Sie die Konfigurationsdatei &quot;Vanish&quot;in einem Texteditor:
+1. Als Benutzer mit `root` -Berechtigungen öffnen Sie die Konfigurationsdatei &quot;Vanish&quot;in einem Texteditor:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ So ändern Sie die Varnish-Systemkonfiguration:
    VARNISH_LISTEN_PORT=80
    ```
 
-   Stellen Sie für Varnish 4.x sicher, dass DAEMON_OPTS den richtigen Listening-Port für die `-a` Parameter (auch wenn VARNISH_LISTEN_PORT auf den richtigen Wert gesetzt ist):
+   Stellen Sie für Varnish 4.x sicher, dass DAEMON_OPTS den richtigen Listening-Port für den Parameter `-a` enthält (auch wenn VARNISH_LISTEN_PORT auf den richtigen Wert gesetzt ist):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ So ändern Sie die Varnish-Systemkonfiguration:
 
 ### Ändern der standardmäßigen VCL
 
-In diesem Abschnitt wird beschrieben, wie Sie eine minimale Konfiguration bereitstellen, sodass Varnish HTTP-Antwortheader zurückgibt. Dadurch können Sie überprüfen, ob Varnish funktioniert, bevor Sie die [!DNL Commerce] Anwendung zur Verwendung von Varnish.
+In diesem Abschnitt wird beschrieben, wie Sie eine minimale Konfiguration bereitstellen, sodass Varnish HTTP-Antwortheader zurückgibt. Auf diese Weise können Sie überprüfen, ob Varnish funktioniert, bevor Sie die [!DNL Commerce]-Anwendung für die Verwendung von Varnish konfigurieren.
 
 So konfigurieren Sie Varnish minimal:
 
-1. Sichern `default.vcl`:
+1. Sichern Sie `default.vcl`:
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. Öffnen `/etc/varnish/default.vcl` in einem Texteditor.
+1. Öffnen Sie `/etc/varnish/default.vcl` in einem Texteditor.
 1. Suchen Sie den folgenden Stanza:
 
    ```conf
@@ -74,11 +74,11 @@ So konfigurieren Sie Varnish minimal:
    }
    ```
 
-1. Wert von ersetzen `.host` mit dem vollständig qualifizierten Hostnamen oder der IP-Adresse und Abhörador des Landes _Backend_ oder _Ursprungsserver_; das heißt, der Server, der den Inhalt bereitstellt, wird sich beschleunigen.
+1. Ersetzen Sie den Wert von `.host` durch den vollständig qualifizierten Hostnamen oder die IP-Adresse und überwachen Sie den Port des Varnish _backend_ oder _origin server_. Das heißt, der Server, der den Inhalt bereitstellt, beschleunigt sich.
 
    Normalerweise ist dies Ihr Webserver. Siehe [Backend-Server](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) im _Varnish-Handbuch_.
 
-1. Wert von ersetzen `.port` mit dem Listener-Port des Webservers (in diesem Beispiel 8080).
+1. Ersetzen Sie den Wert von `.port` durch den Listener Port des Webservers (in diesem Beispiel 8080).
 
    Beispiel: Apache wird auf dem Host 192.0.2.55 installiert und Apache wartet auf Port 8080:
 
@@ -91,7 +91,7 @@ So konfigurieren Sie Varnish minimal:
 
    >[!INFO]
    >
-   >Wenn Varnish und Apache auf demselben Host ausgeführt werden, empfiehlt Adobe, eine IP-Adresse oder einen Hostnamen zu verwenden und nicht `localhost`.
+   >Wenn Varnish und Apache auf demselben Host ausgeführt werden, empfiehlt Adobe die Verwendung einer IP-Adresse oder eines Hostnamens und nicht von `localhost`.
 
 1. Speichern Sie Ihre Änderungen in `default.vcl` und beenden Sie den Texteditor.
 
@@ -116,7 +116,7 @@ Dadurch sollten Fehlermeldungen angezeigt werden.
 
 ## Überprüfen, ob Varnish funktioniert
 
-In den folgenden Abschnitten wird beschrieben, wie Sie überprüfen können, ob Varnish funktioniert. _without_ Konfiguration von Commerce zur Verwendung. Versuchen Sie dies, bevor Sie Commerce konfigurieren.
+In den folgenden Abschnitten wird beschrieben, wie Sie überprüfen können, ob Varnish funktioniert, aber _ohne_, dass Commerce für die Verwendung konfiguriert ist. Versuchen Sie es, bevor Sie Commerce konfigurieren.
 
 Führen Sie die in den folgenden Abschnitten beschriebenen Aufgaben in der angegebenen Reihenfolge aus:
 
@@ -125,7 +125,7 @@ Führen Sie die in den folgenden Abschnitten beschriebenen Aufgaben in der angeg
 
 ### Start Varnish
 
-Geben Sie ein: `service varnish start`
+Eingabe: `service varnish start`
 
 Wenn Varnish nicht als Dienst gestartet werden kann, starten Sie ihn wie folgt über die Befehlszeile:
 
@@ -137,7 +137,7 @@ Wenn Varnish nicht als Dienst gestartet werden kann, starten Sie ihn wie folgt �
 
 1. Starten Sie den untergeordneten Varnish-Prozess:
 
-   Geben Sie bei Aufforderung ein `start`
+   Geben Sie bei Aufforderung `start` ein.
 
    Die folgenden Meldungen werden angezeigt, um einen erfolgreichen Start zu bestätigen:
 
@@ -168,11 +168,11 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 Die obige Abbildung zeigt Varnish, das auf Port 80 ausgeführt wird, und Apache, das auf Port 8080 ausgeführt wird.
 
-Wenn die Ausgabe für `varnishd`, stellen Sie sicher, dass Varnish ausgeführt wird.
+Wenn die Ausgabe für `varnishd` nicht angezeigt wird, stellen Sie sicher, dass Varnish ausgeführt wird.
 
 Siehe [`netstat` options](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
-## Commerce-Software installieren
+## Installieren der Commerce-Software
 
 Installieren Sie die Commerce-Software, falls noch nicht geschehen. Wenn Sie zur Eingabe einer Basis-URL aufgefordert werden, verwenden Sie den &quot;Varnish&quot;-Host und Port 80 (für &quot;Varnish&quot;), da Varnish alle eingehenden HTTP-Anforderungen erhält.
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Wenn dieser Fehler auftritt, bearbeiten Sie `default.vcl` und fügen Sie dem `backend` Stanza wie folgt:
+Wenn dieser Fehler auftritt, bearbeiten Sie `default.vcl` und fügen Sie dem `backend` -Stanza eine Zeitüberschreitung wie folgt hinzu:
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 Jetzt können Sie überprüfen, ob Varnish Seiten bereitstellt, indem Sie sich die HTML-Antwort-Header ansehen, die von einer beliebigen Seite zurückgegeben werden.
 
-Bevor Sie Kopfzeilen anzeigen können, müssen Sie Commerce für den Entwicklermodus festlegen. Es gibt mehrere Möglichkeiten, dies zu tun, am einfachsten ist es, `.htaccess` im Commerce-Anwendungsstamm. Sie können auch die [`magento deploy:mode:set`](../cli/set-mode.md) Befehl.
+Bevor Sie Kopfzeilen anzeigen können, müssen Sie Commerce für den Entwicklermodus festlegen. Es gibt mehrere Möglichkeiten, dies zu tun. Am einfachsten ist es, `.htaccess` im Commerce-Anwendungsstamm zu ändern. Sie können auch den Befehl [`magento deploy:mode:set`](../cli/set-mode.md) verwenden.
 
-### Festlegen von Commerce für den Entwicklermodus
+### Commerce für den Entwicklermodus festlegen
 
-Um Commerce für den Entwicklermodus festzulegen, verwenden Sie die [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) Befehl.
+Verwenden Sie den Befehl [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) , um Commerce für den Entwicklermodus festzulegen.
 
 ### Sehen Sie sich das Varnish-Protokoll an
 
@@ -232,13 +232,13 @@ Eine lange Liste von Antwortheadern wird in Ihrem Eingabeaufforderungsfenster an
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Wenn solche Header _not_ anzeigen, Varnish stoppen, überprüfen Sie Ihre `default.vcl`und versuchen Sie es erneut.
+Wenn Kopfzeilen wie diese _nicht_ anzeigen, stoppen Sie &quot;Varnish&quot;, überprüfen Sie Ihre `default.vcl` und versuchen Sie es erneut.
 
 ### HTML-Antwort-Header
 
 Es gibt mehrere Möglichkeiten, Antwortheader anzuzeigen, einschließlich der Verwendung eines Browser-Plug-ins oder eines Browser-Inspektors.
 
-Das folgende Beispiel verwendet `curl`. Sie können diesen Befehl von jedem Computer aus eingeben, der über HTTP auf den Commerce-Server zugreifen kann.
+Im folgenden Beispiel wird `curl` verwendet. Sie können diesen Befehl von jedem Computer aus eingeben, der über HTTP auf den Commerce-Server zugreifen kann.
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

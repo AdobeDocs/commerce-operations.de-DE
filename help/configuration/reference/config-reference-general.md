@@ -5,31 +5,31 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # Referenz zu allgemeinen und erweiterten Konfigurationspfaden
 
-Dieses Thema listet allgemeine und erweiterte Konfigurationspfade auf und _not_ [sensible und systemspezifische Werte](config-reference-sens.md). Die [`magento app:config:dump` command](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei, `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte.
+In diesem Thema werden allgemeine und erweiterte Konfigurationspfade sowie _nicht_ [ vertrauliche und systemspezifische Werte](config-reference-sens.md) aufgeführt. Der Befehl [`magento app:config:dump`](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte.
 
-Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](override-config-settings.md#environment-variables).
+Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Verwenden von Umgebungsvariablen zum Außerkraftsetzen von Konfigurationseinstellungen](override-config-settings.md#environment-variables).
 
 ## Allgemeine Kategorie
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Allgemein**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Allgemein** verfügbar sind.
 
 ### Allgemeine Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > Allgemein > **Allgemein** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? | Sensitiv? |
 |--------------|--------------|--------------|--------------|
-| Standardland | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Länder zulassen | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Postleitzahl ist optional für | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Länder der Europäischen Union | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Standardland | `general/country/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
+| Länder zulassen | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
+| Postleitzahl ist optional für | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
+| Länder der Europäischen Union | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
 | Top-Ziele | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Status erforderlich für | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Status auswählen lassen, wenn es für Land optional ist | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
@@ -59,7 +59,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### Webpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Web**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Web** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -91,7 +91,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### Währungs-Einrichtungspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Währungseinrichtung**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Allgemein** > **Währungseinstellungen** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -116,7 +116,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### Kontaktpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Kontakte**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Allgemein** > **Kontakte** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -129,7 +129,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### Berichtpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Berichte**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Allgemein** > **Berichte** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -140,7 +140,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### Content-Management-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Content Management**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **Inhaltsverwaltung** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -154,7 +154,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### New Relic-Berichtspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Allgemein** > **New Relic Reporting**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Allgemein** > **New Relic-Berichterstellung** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -166,11 +166,11 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Erweiterte Kategorie
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert** verfügbar sind.
 
 ### Administratorpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Admin**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Admin** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -208,7 +208,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### Systempfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **System**.
+Diese Konfigurationswerte sind im Admin unter **Speicher** > Einstellungen > **Konfiguration** > **Erweitert** > **System** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -264,7 +264,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Exportkonfiguration | `system/full_page_cache/varnish/export_button_version4` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Im Protokoll gespeicherte Tage | `system/bulk/lifetime` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Medienspeicher | `system/media_storage_configuration/media_storage` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mediendatenbank auswählen | `system/media_storage_configuration/media_database` (nicht mehr unterstützt in Commerce 2.4.3) | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Mediendatenbank auswählen | `system/media_storage_configuration/media_database` (veraltet in Commerce 2.4.3) | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktualisierungszeit der Umgebung | `system/media_storage_configuration/configuration_update_time` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Speichern von Dateien, Tage | `system/magento_scheduled_import_export_log/save_days` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren der Bereinigung des terminierten Dateiverlaufs | `system/magento_scheduled_import_export_log/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -276,7 +276,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ### Entwicklerpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Entwickler**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Entwickler** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -291,7 +291,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Aktiviert für Storefront | `dev/translate_inline/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Für Admin aktiviert | `dev/translate_inline/active_admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zusammenführen von JavaScript-Dateien | `dev/js/merge_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| JavaScript-Bundling aktivieren | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Aktivieren von JavaScript Bundling | `dev/js/enable_js_bundling` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Minimieren von JavaScript-Dateien | `dev/js/minify_files` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Übersetzungsstrategie | `dev/js/translate_strategy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | JS-Fehler im Sitzungsspeicher protokollieren | `dev/js/session_storage_logging` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

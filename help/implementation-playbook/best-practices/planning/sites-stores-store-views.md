@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Websites und Stores sind Multiplikatoren für Katalogdaten, sodass viele Website
 - Die zum Abschluss von Speichervorgängen im Admin erforderliche Zeit nimmt erheblich zu, da die Daten für jede Website separat gespeichert werden.
 
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
-- [Grundlegendes zu Websites, Geschäften und Store-Ansichten](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
+- [Websites, Stores und Ansichten verstehen](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Einrichten mehrerer Websites oder Stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html)

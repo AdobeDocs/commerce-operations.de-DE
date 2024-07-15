@@ -4,8 +4,8 @@ user-guide-description: Erfahren Sie, wie Sie Ihr Unternehmen auf den Betrieb ei
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 13%
+source-wordcount: '138'
+ht-degree: 14%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 13%
 # Operatives Playbook {#operational-playbook}
 
 - [Übersicht](overview.md)
-- Handel {#intro}
+- Commerce {#intro}
    - [Adobe Commerce](intro/commerce.md)
    - [Was ist E-Commerce?](intro/ecommerce.md)
    - [Geschäftsmodell](intro/business-model.md)
-   - [Commerce-Vorgänge](intro/operations.md)
+   - [Vorgänge in Commerce](intro/operations.md)
    - [Commerce-Funktionen](intro/features.md)
 - Führung {#leadership}
    - [Grundsätze](leadership/principles.md)
@@ -74,4 +74,4 @@ ht-degree: 13%
    - [PWA](product/progressive-web-app.md)
 - [Checklisten und Vorlagen](checklists-templates/home.md)
 - [Glossar](glossary.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

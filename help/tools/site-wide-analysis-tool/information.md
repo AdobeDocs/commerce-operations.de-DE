@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Information]'
-description: Informationen zum [!UICONTROL Information] im [!DNL Site-Wide Analysis Tool], wann sie verwendet werden sollte, deren Vorteile und Best Practices.
+description: Erfahren Sie mehr über die Registerkarte [!UICONTROL Information] in der  [!DNL Site-Wide Analysis Tool], wann sie verwendet werden soll, ihre Vorteile und Best Practices.
 exl-id: 5f18b4c1-1812-4e9d-8b81-88cf6b9af860
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # [!DNL Information]
 
-Die [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] zeigt Übersichtsinformationen zu Ihrer Site an. Auf dieser Seite werden außerdem zwei Produktbereiche im linken Navigationsbereich angezeigt: **[!UICONTROL General Information]** und **Adobe Commerce**.
+Auf der Seite [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] werden Übersichtsinformationen zu Ihrer Site angezeigt. Auf dieser Seite werden außerdem zwei Produktbereiche im linken Navigationsbereich angezeigt: **[!UICONTROL General Information]** und **Adobe Commerce**.
 
-Die [!UICONTROL General Information] -Bereich zeigt die Basisdaten der Händler-Site an, Kontaktinhaber, [!DNL Jira] Probleme (nur interne Verwendung) und Abschnitte &quot;Berichtstickets&quot;.
+Im Bereich [!UICONTROL General Information] werden die Basisdaten der Händlern, der Inhaber des Kontakts, [!DNL Jira] Probleme (nur interne Verwendung) und die Abschnitte &quot;Berichtstickets&quot;angezeigt.
 
-Der Adobe Commerce-Bereich wird angezeigt [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] &amp; [!UICONTROL Integration links], [!UICONTROL Account], und [!UICONTROL Service and Components] Abschnitte.
+Im Adobe Commerce-Bereich werden die Abschnitte [!UICONTROL Site Details], [!UICONTROL Products], [!UICONTROL Project] und [!UICONTROL Integration links], [!UICONTROL Account] und [!UICONTROL Service and Components] angezeigt.
 
 ## Verwendungsbereiche
 
-Verwenden Sie die [!UICONTROL Information] Seite, um alle oben genannten Details auf einen Blick anzuzeigen.
+Verwenden Sie die Seite &quot;[!UICONTROL Information]&quot;, um alle oben genannten Details auf einen Blick anzuzeigen.
 
 ## Vorteile
 
@@ -29,4 +29,4 @@ Verwenden Sie die [!UICONTROL Information] Seite, um alle oben genannten Details
 
 ## Best Practices
 
-Seit [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] Seite enthält Übersichtsinformationen für Ihre Site. Denken Sie daran, dass diese Seite schnell auf Ihre Informationen zugreifen kann, um sie für die Planung, Wartung oder Unterstützung Ihres Geschäfts oder Kontos zu nutzen.
+Da auf der Seite [!DNL Site-Wide Analysis Tool’s] [!UICONTROL Information] Übersichtsinformationen für Ihre Site aufgelistet werden, sollten Sie diese Seite so verwenden, dass Sie schnell auf Ihre Informationen zugreifen können, um sie für die Planung, Wartung oder Unterstützung Ihres Stores oder Kontos zu nutzen.

@@ -17,7 +17,7 @@ Erstellen einer benutzerspezifischen Seite, auf die Benutzer umgeleitet werden s
 
 >[!NOTE]
 >
->Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `root` -Berechtigungen. Benutzerdefinierte Wartungsseiten können während des Entwicklermodus nicht festgelegt werden.
+>Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `root` -Berechtigungen ausführen. Benutzerdefinierte Wartungsseiten können während des Entwicklermodus nicht festgelegt werden.
 
 ## Benutzerdefinierte Wartungsseite erstellen
 
@@ -59,7 +59,7 @@ In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsse
 Das Beispiel in diesem Abschnitt zeigt, wie Sie die folgenden Dateien ändern können, um Ihre Wartungsseite einzurichten:
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
-- Apache 2.2: `/etc/apache2/sites-available/default` (Ubuntu) `/etc/httpd/conf/httpd.conf` (CentOS)
+- Apache 2.2: `/etc/apache2/sites-available/default` (Ubuntu), `/etc/httpd/conf/httpd.conf` (CentOS)
 
 So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
 
@@ -94,7 +94,7 @@ So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [System aktualisieren](../implementation/perform-upgrade.md).
+1. [Aktualisieren Sie Ihr System](../implementation/perform-upgrade.md).
 1. Testen Sie Ihre Website, um sicherzustellen, dass sie ordnungsgemäß funktioniert.
 1. Löschen Sie nach Abschluss des Upgrades `maintenance.enable`.
 
@@ -105,9 +105,9 @@ In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsse
 So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
 
 1. Verwenden Sie einen Texteditor, um die nginx-Konfigurationsdatei zu öffnen, die Ihren Serverblock enthält.
-1. Fügen Sie dem Serverblock Folgendes hinzu (`server` wird nur aus Gründen der Klarheit angezeigt. Fügen Sie keinen zweiten Serverblock hinzu.
+1. Fügen Sie dem Serverblock Folgendes hinzu (`server` wird nur aus Gründen der Klarheit angezeigt; fügen Sie keinen zweiten Serverblock hinzu).
 
-   Im Folgenden werden die IP-Adressen 192.0.2.110 und 192.0.2.115 auf einem System auf die Zulassungsliste gesetzt, auf dem Magento installiert ist in `/var/www/html/magento2`:
+   Die IP-Adresse 192.0.2.110 und 192.0.2.115 werden im Folgenden auf einem System auf die Zulassungsliste gesetzt, auf dem Magento in `/var/www/html/magento2` installiert ist:
 
    ```conf
    server {
@@ -154,9 +154,9 @@ So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
    service nginx reload
    ```
 
-1. [System aktualisieren](../implementation/perform-upgrade.md).
+1. [Aktualisieren Sie Ihr System](../implementation/perform-upgrade.md).
 1. Testen Sie Ihre Website, um sicherzustellen, dass sie ordnungsgemäß funktioniert.
-1. Nach Abschluss des Upgrades löschen oder umbenennen `maintenance.enable`
+1. Nachdem das Upgrade abgeschlossen ist, löschen oder umbenennen Sie `maintenance.enable`
 1. Laden Sie die nginx-Konfiguration neu:
 
    ```bash

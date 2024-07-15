@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: c4912f02-0411-466f-8c77-d610de9eb35d
+exl-id: f76a8906-af31-4a61-be68-f5dad87161e2
 feature: Install, Security
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Die folgenden Konzepte sind in keiner bestimmten Reihenfolge aufgeführt. Sie so
 
 ## Schreibgeschütztes Dateisystem
 
-Das reine Dateisystemkonzept wurde von [Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Dadurch wird ein wichtiger Bereich, der von einem schlechten Schauspieler genutzt wird, vollständig entfernt. Viele Exploits haben davon profitiert, eine Datei zu ändern, die sich voraussichtlich in der Commerce-Anwendung befindet, um die Erkennung zu vermeiden. Anstatt eine zu erstellen, ändert der fehlerhafte Akteur den Inhalt einer vorhandenen Datei, um eine unerwartete Aktion auszuführen. Durch das schreibgeschützte Dateisystem wird dieser Angriffsvektor erheblich reduziert.
+Das schreibgeschützte Dateisystemkonzept wurde von [Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} ausgeliehen. Dadurch wird ein wichtiger Bereich, der von einem schlechten Schauspieler genutzt wird, vollständig entfernt. Viele Exploits haben davon profitiert, eine Datei zu ändern, die sich voraussichtlich in der Commerce-Anwendung befindet, um die Erkennung zu vermeiden. Anstatt eine zu erstellen, ändert der fehlerhafte Akteur den Inhalt einer vorhandenen Datei, um eine unerwartete Aktion auszuführen. Durch das schreibgeschützte Dateisystem wird dieser Angriffsvektor erheblich reduziert.
 
 ## Verwenden von zwei Faktor-Authentifizierungs- und Passwort-Managern
 
@@ -36,11 +36,11 @@ Malware-Scans werden normalerweise von einem Hosting-Provider gefunden, der vers
 
 ## Site-weites Analyse-Tool für Commerce
 
-Die [Site-weites Analyse-Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} ist ein proaktives Self-Service-Tool und zentrales Repository mit detaillierten Systemeinblicken und Empfehlungen, um die Sicherheit und Bedienbarkeit Ihrer Adobe Commerce-Installation sicherzustellen. Es bietet rund um die Uhr eine Leistungsüberwachung, Berichte und Beratung in Echtzeit, um potenzielle Probleme zu identifizieren und bessere Sichtbarkeit in Bezug auf Gesundheit, Sicherheit und Anwendungskonfigurationen der Website zu erreichen. Dies trägt zur Verkürzung der Auflösungszeit und zur Verbesserung der Site-Stabilität und -Leistung bei.
+Das [Site-weite Analyse-Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html){target="_blank"} ist ein proaktives Self-Service-Tool und zentrales Repository, das detaillierte Systemeinblicke und Empfehlungen enthält, um die Sicherheit und Bedienbarkeit Ihrer Adobe Commerce-Installation sicherzustellen. Es bietet rund um die Uhr eine Leistungsüberwachung, Berichte und Beratung in Echtzeit, um potenzielle Probleme zu identifizieren und bessere Sichtbarkeit in Bezug auf Gesundheit, Sicherheit und Anwendungskonfigurationen der Website zu erreichen. Dies trägt zur Verkürzung der Auflösungszeit und zur Verbesserung der Site-Stabilität und -Leistung bei.
 
 ## Aktivieren und Überprüfen der Einstellungen für die Admin-Aktionsprotokollierung
 
-Diese finden Sie nach der Anmeldung beim Adobe Commerce-Administrator und Navigieren zu Stores > Konfiguration > Erweitert > Admin > Admin-Aktionsprotokollierung . Dies bietet eine Liste der Ereignisse, die überwacht und aufgezeichnet werden. Es ist nützlich bei der forensischen Analyse auf einer ausgebeuteten Site, wenn der Verdacht besteht, dass sie Zugang zum Commerce-Administrator erhalten. Diese Protokollierung und dieser Bericht können hilfreich sein, um zu sehen, welche Ereignisse der schlechte Schauspieler durchgeführt hat. Wenn die Protokollierung von Admin-Aktionen deaktiviert ist, ist dies ein Hinweis darauf, dass sie von einer Person für die Abdeckung deaktiviert wurde. Entfernen Sie die Protokollierung bei der Ausführung bestimmter Aktionen.
+Diese finden Sie nach der Anmeldung beim Adobe Commerce-Administrator und Navigieren zu Stores > Konfiguration > Erweitert > Admin > Admin-Aktionsprotokollierung . Dies bietet eine Liste der Ereignisse, die überwacht und aufgezeichnet werden. Es ist nützlich bei der forensischen Analyse auf einer ausgebeuteten Site, wenn der Verdacht besteht, dass sie Zugriff auf den Commerce-Administrator erhalten. Diese Protokollierung und dieser Bericht können hilfreich sein, um zu sehen, welche Ereignisse der schlechte Schauspieler durchgeführt hat. Wenn die Protokollierung von Admin-Aktionen deaktiviert ist, ist dies ein Hinweis darauf, dass sie von einer Person für die Abdeckung deaktiviert wurde. Entfernen Sie die Protokollierung bei der Ausführung bestimmter Aktionen.
 
 ## Baseline-Server für SSH-Zugriff
 
@@ -58,7 +58,8 @@ Um unerwünschte oder nicht autorisierte Admin-Benutzererstellungen zu erkennen,
 
 Schränken Sie den Zugriff auf Produktionsdaten ein. Diese benannten Teamkollegen sollten die Möglichkeit haben, Produktionsdatenbanken abzurufen und sie von echten Daten zu bereinigen. Wenn das Entfernen der Daten eine Option ist, schneiden Sie die entsprechenden Tabellen wie Bestellungen, Anführungszeichen und Kunden ab. Manchmal möchten Sie jedoch den vollständigen Datensatz, aber die Werte können anonymisiert werden. Dies trifft normalerweise in einer Staging-Umgebung zu. Dies ist auch vor Upgrades nützlich. Indem Sie das tatsächliche Datenvolumen, aber anonymisiert haben, stellen Sie sicher, dass Sie die Zeit testen und validieren, um eine Bereitstellung für die Aktualisierung ordnungsgemäß auszuführen. Wenn Sie über einen begrenzten Datensatz verfügen, können Sie den Aktualisierungsprozess und die zeitliche Verteilung unterschätzen.
 
-Beispiel für eine Zufälligkeit für Kundeninformationen Hier ist ein Beispiel für das Ändern der E-Mail-Adresse eines Kunden mit einer zufälligen Zeichenfolge und allen Vor- und Nachnamen-Feldern in einigen Standardtabellen, in denen Adobe Commerce Daten speichert. **Denken Sie daran, alle Tabellen auf vertrauliche Daten zu überprüfen. Diese Liste enthält nicht alle Tabellen, in denen Kundendaten gespeichert werden können.**
+Beispiel für +++Kundeninformationen randomisieren
+Im Folgenden finden Sie ein Beispiel dafür, wie Sie die E-Mail-Adresse eines Kunden mit einer zufälligen Zeichenfolge und allen Vor- und Nachnamen-Feldern in einigen Standardtabellen, in denen Adobe Commerce Daten speichert, auswechseln können. **Denken Sie daran, alle Tabellen auf vertrauliche Daten zu überprüfen. Diese Liste ist nicht vollständig in die Tabellen eingeschlossen, in denen Kundendaten gespeichert werden können.**
 
 ```SQL
 SET FOREIGN_KEY_CHECKS=0;
@@ -104,7 +105,8 @@ SET FOREIGN_KEY_CHECKS=1;
 
 +++
 
-+++Informationen vollständig Beispiel Hier ist ein Beispiel für das Entfernen aller Bestellungen, Anführungszeichen, Kreditkarten und mehr vor dem Start oder für eine niedrigere Entwicklungsumgebung
++++Informationen vollständig entfernen, Beispiel
+Hier ist ein Beispiel für das Entfernen aller Bestellungen, Anführungszeichen, Kreditkarten und mehr vor dem Start oder für eine niedrigere Entwicklungsumgebung.
 
 ```SQL
 DELETE FROM `gift_message`;
@@ -214,7 +216,7 @@ ALTER TABLE sequence_shipment_7 AUTO_INCREMENT=1;
 
 Die Verwendung von Umgebungsvariablen hilft Ihnen dabei, bestimmte Werte festzulegen, die für jede Umgebung geändert werden können und sollten. Sie können beispielsweise für jede Umgebung eine andere Admin-URL verwenden. Wenn Sie diesen Wert als Umgebungsvariable festlegen, können Sie dies konfigurieren und bei Bedarf auch schnell über die Cloud-Benutzeroberfläche auf diesen Wert verweisen.
 
-Weitere Informationen zu diesem Thema finden Sie unter Experience League [Commerce in Cloud-Infrastruktur-Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
+Weitere Informationen zu diesem Thema finden Sie unter Experience League [Commerce in den Umgebungsvariablen der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html){target="_blank"}
 
 ## Scanwerkzeuge für Software-Sicherheitsrisiken
 
@@ -232,6 +234,6 @@ Die WAF untersucht den Web- und Admin-Traffic, um verdächtige Aktivitäten zu i
 
 Als Cloud-basierter Service benötigt die WAF keine Hardware oder Software, um zu installieren oder zu warten. Fastly, ein bestehender Technologiepartner, bietet die Software und das Know-how. Ihre hochperformante, immer aktive WAF-Datei befindet sich in jedem Cache-Knoten des globalen Bereitstellungsnetzwerks von Fastly.
 
-Weitere Informationen zu den von Fastly bereitgestellten WAF-Dateien in Adobe Commerce on Cloud finden Sie im [Häufig gestellte Fragen zur Adobe Commerce-Wissensdatenbank](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"}.
+Weitere Informationen zur WAF in der von Fastly bereitgestellten Adobe Commerce on Cloud finden Sie in den [Häufig gestellten Fragen zur Adobe Commerce-Wissensdatenbank](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/web-application-firewall-waf-powered-by-fastly-the-faq.html){target="_blank"} .
 
 {{$include /help/_includes/hosting-related-links.md}}

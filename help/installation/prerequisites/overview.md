@@ -13,17 +13,17 @@ ht-degree: 1%
 
 Vor der Installation von Adobe Commerce müssen Sie Folgendes tun:
 
-* Richten Sie einen oder mehrere Hosts ein, die dem [Systemanforderungen](../system-requirements.md).
-* Wenn Sie mehr als einen Webknoten mit Lastenausgleich einrichten, richten Sie diesen Teil Ihres Systems ein und testen Sie ihn _before_ Installieren Sie die Anwendung.
+* Richten Sie einen oder mehrere Hosts ein, die die [Systemanforderungen](../system-requirements.md) erfüllen.
+* Wenn Sie mehr als einen Webknoten mit Lastenausgleich einrichten, richten Sie den Teil Ihres Systems _vor_ ein und testen Sie ihn, indem Sie die Anwendung installieren.
 * Stellen Sie sicher, dass Sie Ihr gesamtes System an verschiedenen Stellen während der Installation sichern können, damit Sie es bei Problemen zurücksetzen können.
 
 >[!NOTE]
 >
->Wir gehen davon aus, dass Sie die Adobe Commerce in einer **Entwicklungsumgebung**, dass Sie Stammbenutzer-Zugriff auf den Computer haben, **und** dass die Maschine nicht hochsicher sein muss. Wenn Sie einen sichereren Computer einrichten, empfehlen wir dringend, sich an einen Netzwerkadministrator zu wenden, um weitere Unterstützung zu erhalten.
+>Es wird davon ausgegangen, dass Sie die Adobe Commerce in einer **Entwicklungsumgebung** installieren, dass Sie über root-Benutzerzugriff auf den Computer verfügen, **und**, dass der Computer nicht hochgradig sicher sein muss. Wenn Sie einen sichereren Computer einrichten, empfehlen wir dringend, sich an einen Netzwerkadministrator zu wenden, um weitere Unterstützung zu erhalten.
 
-Wir empfehlen Ihnen dringend, Ihre Betriebssystemsoftware zu aktualisieren und zu aktualisieren. Diese Upgrades können Sicherheits- und Software-Korrekturen bieten, die künftige Probleme verhindern können. Wissen Sie nicht, was das bedeutet? Sehen Sie sich unsere [Installationsübersichtsseite](../overview.md).
+Wir empfehlen Ihnen dringend, Ihre Betriebssystemsoftware zu aktualisieren und zu aktualisieren. Diese Upgrades können Sicherheits- und Software-Korrekturen bieten, die künftige Probleme verhindern können. Wissen Sie nicht, was das bedeutet? Sehen Sie sich unsere [Installationsübersichtsseite](../overview.md) an.
 
-Geben Sie die folgenden Befehle als Benutzer mit `root` -Berechtigungen:
+Geben Sie die folgenden Befehle als Benutzer mit `root` -Berechtigungen ein:
 
 * Ubuntu
 
@@ -66,11 +66,11 @@ Informationen zum Installieren oder Aktualisieren von Apache finden Sie unter [A
 
 ### PHP
 
-Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen von PHP und [PHP](../system-requirements.md#php-settings) für PHP-Anforderungen.
+Unter [Systemanforderungen](../system-requirements.md) finden Sie unterstützte Versionen von PHP und unter [PHP](../system-requirements.md#php-settings) für PHP-Anforderungen.
 
 ### MySQL
 
-Vergewissern Sie sich, dass Sie über eine kompatible Version von MySQL für die Adobe Commerce-Version verfügen, die Sie installieren. Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen.
+Vergewissern Sie sich, dass Sie über eine kompatible Version von MySQL für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie unter [Systemanforderungen](../system-requirements.md) .
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -96,9 +96,9 @@ affiliates. Other names may be trademarks of their respective
 owners.
 ```
 
-Typ `help` oder `\h` für Hilfe. Typ `\c` , um die aktuelle Eingabeanweisung zu löschen.
+Geben Sie `help` oder `\h` ein, um Hilfe zu erhalten. Geben Sie `\c` ein, um die aktuelle Eingabeanweisung zu löschen.
 
-Eingabe `exit` im `mysql>` zum Beenden auffordern.
+Geben Sie `exit` an der `mysql>` -Eingabeaufforderung ein, um zu beenden.
 
 Informationen zum Installieren oder Aktualisieren von MySQL finden Sie unter [MySQL](database/mysql.md).
 

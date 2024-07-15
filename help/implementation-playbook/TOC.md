@@ -13,7 +13,7 @@ ht-degree: 12%
 # Implementierungs-Playbook {#implementation-playbook}
 
 - [Übersicht](overview.md)
-- Handel {#intro}
+- Commerce {#intro}
    - [Über Adobe Commerce](intro/about-commerce.md)
    - [Grundsätze der Plattformentwicklung](intro/platform-development.md)
 - Projektumfang {#project-scope}
@@ -44,7 +44,7 @@ ht-degree: 12%
    - [Übersicht](infrastructure/overview.md)
    - Self-Hosting {#self-hosting}
       - [Übersicht](infrastructure/self-hosting/overview.md)
-      - [Vor-Ort-Infrastruktur](infrastructure/self-hosting/on-premises.md)
+      - [Infrastruktur vor Ort](infrastructure/self-hosting/on-premises.md)
       - [Sicherheitskonzepte](infrastructure/self-hosting/security-concepts.md)
       - [Überwachung von Telemetriken und Tools](infrastructure/self-hosting/monitoring-tools.md)
       - [Ideen zur Notfallwiederherstellung](infrastructure/self-hosting/disaster-recovery-ideas.md)
@@ -62,7 +62,7 @@ ht-degree: 12%
    - [Übersicht](launch/overview.md)
    - [Schritte vor dem Start](launch/pre-launch-steps.md)
    - [Launch-Schritte](launch/launch-steps.md)
-   - [Schritte nach dem Start](launch/post-launch-steps.md)
+   - [Post-Startschritte](launch/post-launch-steps.md)
 - Wartung und Support {#maintenance}
    - [Übersicht](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
@@ -96,7 +96,7 @@ ht-degree: 12%
       - [Private Inhaltsbausteine](best-practices/development/private-content-block-configuration.md)
       - [Statische Inhaltsbereitstellung](best-practices/development/static-content-deployment.md)
       - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [Ändern von Kern- und Drittanbietercode](best-practices/development/modifying-core-and-third-party-code.md)
+      - [Ändern des Codes von Kern- und Drittanbietern](best-practices/development/modifying-core-and-third-party-code.md)
    - Launch {#launch}
       - [Übersicht](best-practices/launch/overview.md)
       - [Webcrawler konfigurieren](best-practices/launch/robots-txt.md)
@@ -114,4 +114,4 @@ ht-degree: 12%
       - [Aktualisierungsdienste](best-practices/maintenance/update-services.md)
       - [Checkliste für die Aktualisierung](best-practices/maintenance/upgrade-checklist.md)
       - [Upgrade-Voraussetzungen für MariaDB](best-practices/maintenance/mariadb-upgrade.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -5,14 +5,14 @@ feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
 
 # Logger-Benutzeroberfläche
 
-Um mit einer Protokollfunktion zu arbeiten, müssen Sie eine Instanz von `\Psr\Log\LoggerInterface`. Mit dieser Schnittstelle können Sie die folgenden Funktionen aufrufen, um Daten in Protokolldateien zu schreiben:
+Um mit einer Protokollfunktion zu arbeiten, müssen Sie eine Instanz von `\Psr\Log\LoggerInterface` erstellen. Mit dieser Schnittstelle können Sie die folgenden Funktionen aufrufen, um Daten in Protokolldateien zu schreiben:
 
 - [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
 - [critical()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
@@ -24,7 +24,7 @@ Um mit einer Protokollfunktion zu arbeiten, müssen Sie eine Instanz von `\Psr\L
 - [notice()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
 - [warning()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-Eine Möglichkeit dazu wird im Abschnitt [Aktivität &quot;Logdatenbank&quot;](../logs/database-activity.md) Beispiel.
+Eine Möglichkeit, dies zu tun, wird im Beispiel für die Aktivität [Log database activity](../logs/database-activity.md) erläutert.
 
 Eine andere Möglichkeit:
 
@@ -49,6 +49,6 @@ class SomeModel
  }
 ```
 
-Das obige Beispiel zeigt Folgendes: `SomeModel` empfängt eine `\Psr\Log\LoggerInterface` -Objekt mit Konstruktor-Injektion. In einer Methode `doSomething`, wenn ein Fehler aufgetreten ist, wird er bei einer Methode protokolliert `critical` (`$this->logger->critical($e);`).
+Das obige Beispiel zeigt, dass `SomeModel` ein `\Psr\Log\LoggerInterface` -Objekt mit Konstruktor-Injektion erhält. Wenn in einer Methode `doSomething` ein Fehler aufgetreten ist, wird er bei der Methode `critical` (`$this->logger->critical($e);`) protokolliert.
 
 [RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) definiert acht Protokollebenen (Debugging, Info, Hinweis, Warnung, Fehler, kritisch, Warnhinweis und Notfall).

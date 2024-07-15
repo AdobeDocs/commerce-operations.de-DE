@@ -17,7 +17,7 @@ Die Gründe für die Einführung einer neuen Adobe Commerce-Implementierung oder
 
 Das folgende Diagramm zeigt die Referenzarchitektur für die Bereitstellung von Adobe Commerce vor Ort in der AWS-Infrastruktur. Andere Cloud-Anbieter wie Azure, Google Cloud und Alibaba Cloud nutzen ein ähnliches Infrastrukturdesign und homologe Dienste.
 
-![Abbildung der Self-Hosting-Adobe Commerce-Infrastruktur in Cloud-Services von Drittanbietern](/help/assets/playbooks/on-premises-infrastructure.svg)
+![Diagramm, das die Self-Hosting-Adobe Commerce-Infrastruktur auf Cloud-Services von Drittanbietern anzeigt](/help/assets/playbooks/on-premises-infrastructure.svg)
 
 Im Folgenden werden die Rollen und Funktionen der einzelnen Aspekte der oben gezeigten Infrastruktur genauer erläutert:
 

@@ -5,7 +5,7 @@ feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 Protokolle bieten Einblicke in Systemprozesse, z. B. Debugging-Informationen, die Ihnen dabei helfen zu verstehen, wann ein Fehler aufgetreten ist oder was zu dem Fehler geführt hat.
 
-Dieses Thema konzentriert sich auf die dateibasierte Protokollierung, obwohl Commerce die Flexibilität bietet, Protokolle auch in der Datenbank zu speichern.
+Dieses Thema konzentriert sich auf die dateibasierte Protokollierung. Commerce bietet jedoch auch die Flexibilität, Protokolle in der Datenbank zu speichern.
 
 Adobe empfiehlt aus folgenden Gründen die Verwendung der zentralisierten Anwendungsprotokollierung:
 
 - Dies ermöglicht die Speicherung von Protokollen auf einem anderen Server als dem Anwendungsserver und verringert die I/O-Vorgänge der Festplatte, wodurch die Unterstützung des Anwendungsservers vereinfacht wird.
 
-- Die Verarbeitung von Protokolldaten wird durch die Verwendung spezieller Tools effizienter, z. B. [Logstash], [Logplex]oder [fließend]—ohne Auswirkungen auf einen Produktionsserver.
+- Dadurch wird die Verarbeitung von Protokolldaten effizienter, indem spezielle Tools wie [Logstash], [Logplex] oder [fluentd] verwendet werden, ohne dass dies Auswirkungen auf einen Produktionsserver hat.
 
   >[!INFO]
   >
@@ -28,17 +28,17 @@ Adobe empfiehlt aus folgenden Gründen die Verwendung der zentralisierten Anwend
 
 ## PSR-3-Konformität
 
-Die [PSR-3-Standard][laminas] definiert eine gängige PHP-Schnittstelle für die Protokollierung von Bibliotheken. Das Hauptziel von PSR-3 besteht darin, Bibliotheken das Empfangen von `Psr\Log\LoggerInterface` -Objekt zu erstellen und Protokolle darauf auf einfache und universelle Weise zu schreiben.
+Der [PSR-3-Standard][laminas] definiert eine allgemeine PHP-Schnittstelle für die Protokollierung von Bibliotheken. Das Hauptziel von PSR-3 besteht darin, Bibliotheken zu ermöglichen, ein `Psr\Log\LoggerInterface` -Objekt zu empfangen und Protokolle auf einfache und universelle Weise darauf zu schreiben.
 
 Dadurch kann die Implementierung problemlos ersetzt werden, ohne dass befürchtet wird, dass eine solche Ersetzung den Anwendungs-Code beschädigen könnte. Es garantiert auch, dass eine benutzerdefinierte Komponente auch dann funktioniert, wenn die Log-Implementierung in einer zukünftigen Version des Systems geändert wird.
 
 ## Monolog
 
-Commerce 2 entspricht dem PSR-3-Standard. Standardmäßig verwendet Commerce [Monolog]. Monolog wurde als Präferenz für `Psr\Log\LoggerInterface` in der Commerce-Anwendung [`di.xml`][di].
+Commerce 2 entspricht dem PSR-3-Standard. Standardmäßig verwendet Commerce [Monolog]. Monolog wurde als Voreinstellung für `Psr\Log\LoggerInterface` in der Commerce-Anwendung [`di.xml`][di] implementiert.
 
 Monolog ist eine beliebte PHP-Protokollierungslösung mit einer Vielzahl von Handlern, die es Ihnen ermöglichen, erweiterte Protokollierungsstrategien zu entwickeln. Im Folgenden finden Sie eine Zusammenfassung der Funktionsweise von Monolog.
 
-A Monolog _Logger_ ist ein Kanal mit einem eigenen Satz von _Handler_. Monolog verfügt über viele Handler, darunter:
+Ein Monolog _logger_ ist ein Kanal, der über einen eigenen Satz von _Handlern_ verfügt. Monolog verfügt über viele Handler, darunter:
 
 - Log to files and syslog
 - Warnhinweise und E-Mails senden

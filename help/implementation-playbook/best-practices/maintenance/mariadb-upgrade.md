@@ -21,7 +21,7 @@ Vor der Aktualisierung von Adobe Commerce auf Cloud-Infrastruktur müssen Sie m�
 
 ## Adobe Commerce 2.4.6
 
-Ab MariaDB 10.5.1 werden Spalten mit alten temporalen Formaten mit einem `/* mariadb-5.3 */` Kommentar in der Ausgabe der `SHOW CREATE TABLE`, `SHOW COLUMNS`, `DESCRIBE` sowie in der `COLUMN_TYPE` Spalte `INFORMATION_SCHEMA.COLUMNS` Tabelle. [Siehe MariaDB-Dokumentation](https://mariadb.com/kb/en/datetime/#internal-format).
+Ab MariaDB 10.5.1 werden Spalten mit alten temporalen Formaten in der Ausgabe der Anweisungen `SHOW CREATE TABLE`, `SHOW COLUMNS` und `DESCRIBE` sowie in der Spalte `COLUMN_TYPE` der Tabelle `INFORMATION_SCHEMA.COLUMNS` mit einem `/* mariadb-5.3 */` -Kommentar markiert. [Siehe MariaDB-Dokumentation](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce kann die Datumsspalten aufgrund des MariaDB-Kommentars nicht einem geeigneten Datentyp zuordnen, was zu unerwartetem Verhalten im benutzerspezifischen Code führen kann.
 
@@ -29,7 +29,7 @@ Um unerwartetes Verhalten bei der Aktualisierung von MariaDB von älteren Versio
 
 ### Standardkonfiguration
 
-In MariaDB 10.1.2 wurde ein neues temporales Format von MySQL 5.6 eingeführt. Die `mysql56_temporal_format` Mit der Systemvariable kann die Datenbank das alte Datumsformat automatisch in das neue konvertieren, wenn eine geänderte Tabelle ausgeführt oder die Datenbank importiert wird. Die Standardkonfiguration für `mysql56_temporal_format` in Adobe Commerce in der Cloud-Infrastruktur immer aktiviert ist.
+In MariaDB 10.1.2 wurde ein neues temporales Format von MySQL 5.6 eingeführt. Mit der Systemvariablen `mysql56_temporal_format` kann die Datenbank das alte Datumsformat automatisch in das neue konvertieren, wenn eine geänderte Tabelle ausgeführt oder eine Datenbank importiert wird. Die Standardkonfiguration für `mysql56_temporal_format` ist in Adobe Commerce in der Cloud-Infrastruktur immer aktiviert.
 
 ### Datumsspalten migrieren
 
@@ -47,7 +47,7 @@ SELECT CONCAT( 'ALTER TABLE `', COALESCE(TABLE_NAME), '`', ' MODIFY ', '`', COAL
 
 >[!NOTE]
 >
->Es ist wichtig, die Spalten in das neue interne Datumsformat zu migrieren _before_ Bereitstellung des neuen Codes, um unerwartetes Verhalten zu vermeiden.
+>Es ist wichtig, die Spalten in das neue interne Datumsformat _zu migrieren, bevor_ den neuen Code bereitstellt, um unerwartetes Verhalten zu vermeiden.
 
 ## Adobe Commerce 2.3.5
 
@@ -59,18 +59,18 @@ Nachdem Sie die Datenbank vorbereitet haben, senden Sie ein Adobe Commerce-Suppo
 
 Bevor das Adobe Commerce-Supportteam mit dem Upgrade-Prozess beginnt, bereiten Sie Ihre Datenbank vor, indem Sie Ihre Datenbanktabellen konvertieren:
 
-- Konvertieren des Zeilenformats aus `COMPACT` nach `DYNAMIC`
-- Ändern Sie die Speicher-Engine von `MyISAM` nach `InnoDB`
+- Konvertieren des Zeilenformats von `COMPACT` in `DYNAMIC`
+- Ändern Sie die Speicher-Engine von `MyISAM` in `InnoDB`
 
 Beachten Sie beim Planen und Planen der Konvertierung die folgenden Überlegungen:
 
-- Konvertieren aus `COMPACT` nach `DYNAMIC` -Tabellen können bei einer großen Datenbank mehrere Stunden dauern.
+- Die Konvertierung von `COMPACT` in `DYNAMIC` Tabellen kann bei einer großen Datenbank mehrere Stunden dauern.
 
 - Führen Sie zur Vermeidung von Datenbeschädigung keine Konversionsarbeiten auf einer Live-Site durch.
 
 - Schließen Sie die Konversionsarbeit während eines niedrigen Traffic-Zeitraums auf Ihrer Site ab.
 
-- Wechseln Sie zu [Wartungsmodus](../../../installation/tutorials/maintenance-mode.md) bevor Sie die Befehle zum Konvertieren von Datenbanktabellen ausführen.
+- Wechseln Sie Ihre Site in den [Wartungsmodus](../../../installation/tutorials/maintenance-mode.md) , bevor Sie die Befehle zum Konvertieren von Datenbanktabellen ausführen.
 
 #### Tabellenzeilenformat der Datenbank konvertieren
 
@@ -106,18 +106,18 @@ Sie können Tabellen auf einem Knoten im Cluster konvertieren. Die Änderungen w
 
 Die Konvertierung des Speicherformats unterscheidet sich bei Adobe Commerce Starter- und Adobe Commerce Pro-Projekten.
 
-- Verwenden Sie für die Starter-Architektur MySQL `ALTER` zum Konvertieren des Formats.
-- Verwenden Sie auf Pro-Architektur MySQL `CREATE` und `SELECT` Befehle zum Erstellen einer Datenbanktabelle mit `InnoDB` speichern und kopieren Sie die Daten aus der vorhandenen Tabelle in die neue Tabelle. Diese Methode stellt sicher, dass die Änderungen auf allen Knoten im Cluster repliziert werden.
+- Verwenden Sie für Starter-Architektur den Befehl MySQL `ALTER` , um das Format zu konvertieren.
+- Verwenden Sie in der Pro-Architektur die Befehle MySQL `CREATE` und `SELECT` , um eine Datenbanktabelle mit `InnoDB` Speicher zu erstellen und die Daten aus der vorhandenen Tabelle in die neue Tabelle zu kopieren. Diese Methode stellt sicher, dass die Änderungen auf allen Knoten im Cluster repliziert werden.
 
 **Konvertieren des Tabellenspeicherformats für Adobe Commerce Pro-Projekte**
 
-1. Identifizieren von Tabellen, die `MyISAM` Speicher.
+1. Identifizieren Sie Tabellen, die `MyISAM` Speicher verwenden.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Alle Tabellen in `InnoDB` Speicherformat einzeln.
+1. Konvertieren Sie alle Tabellen einzeln in das Speicherformat `InnoDB`.
 
    - Benennen Sie die vorhandene Tabelle um, um Namenskonflikte zu vermeiden.
 
@@ -125,7 +125,7 @@ Die Konvertierung des Speicherformats unterscheidet sich bei Adobe Commerce Star
      RENAME TABLE <existing_table> <table_old>;
      ```
 
-   - Erstellen Sie eine Tabelle, die `InnoDB` Speicher mithilfe der Daten aus der vorhandenen Tabelle.
+   - Erstellen Sie eine Tabelle, die den `InnoDB`-Speicher verwendet, indem Sie die Daten aus der vorhandenen Tabelle verwenden.
 
      ```mysql
      CREATE TABLE <existing_table> ENGINE=InnoDB SELECT * from <table_old>;
@@ -138,13 +138,13 @@ Die Konvertierung des Speicherformats unterscheidet sich bei Adobe Commerce Star
 
 **Konvertieren des Tabellenspeicherformats für Adobe Commerce Starter-Projekte**
 
-1. Identifizieren von Tabellen, die `MyISAM` Speicher.
+1. Identifizieren Sie Tabellen, die `MyISAM` Speicher verwenden.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';
    ```
 
-1. Konvertieren von Tabellen, die `MyISAM` Speicher in `InnoDB` Speicher.
+1. Konvertieren Sie Tabellen, die den `MyISAM`-Speicher verwenden, in den `InnoDB`-Speicher.
 
    ```mysql
    ALTER TABLE [ table name here ] ENGINE=InnoDB;
@@ -156,13 +156,13 @@ Die Konvertierung des Speicherformats unterscheidet sich bei Adobe Commerce Star
 
 1. Melden Sie sich bei Ihrer Datenbank an.
 
-1. Suchen Sie nach Tabellen, für die noch die Variable `COMPACT` Zeilenformat.
+1. Suchen Sie nach Tabellen, die weiterhin das Zeilenformat `COMPACT` aufweisen.
 
    ```mysql
    SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
-1. Suchen Sie nach Tabellen, die weiterhin die `MyISAM` Speicherformat
+1. Suchen Sie nach Tabellen, die weiterhin das Speicherformat `MyISAM` verwenden.
 
    ```mysql
    SELECT table_name FROM INFORMATION_SCHEMA.TABLES WHERE engine = 'MyISAM';

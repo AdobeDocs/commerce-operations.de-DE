@@ -17,7 +17,7 @@ Die Upgrade-Implementierung besteht aus fünf Phasen:
 - Entwicklung und Qualitätssicherung (QS)
 - Anwenderakzeptanztests (UAT) und Vorbereitung auf den Start
 - Launch
-- Nach dem Start
+- Post-Launch
 
 ## Upgrade-Analyse
 
@@ -25,9 +25,9 @@ Die Analyse ist wohl der wichtigste Teil des Aktualisierungsprozesses. Eine gut 
 
 Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen möchten:
 
-- **Umfang der Zielversion**—Dokumentation zu [Experience League](../../release/release-notes/overview.md) und Informationen aus Webinaren zur Partnerversion enthalten alle Details, die Sie über Ihr Target-Upgrade wissen müssen.
+- **Umfang der Zielversion**: Die Dokumentation zu [Experience League](../../release/release-notes/overview.md) und Informationen aus den Partnerversions-Webinaren enthalten alle Details, die Sie über Ihr Ziel-Upgrade wissen müssen.
 
-- **[!DNL Upgrade Compatibility Tool]Ergebnisse**—Dieses Tool ermöglicht eine schnellere und einfachere Aktualisierung, indem Sie Ihren aktuellen Code mit dem Code der Zielversion vergleichen und einen Bericht mit allen zu behebenden Problemen erstellen. Siehe [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Zu den wichtigsten Details des Berichts gehören:
+- **[!DNL Upgrade Compatibility Tool]Ergebnisse** - Dieses Tool ermöglicht eine schnellere und einfachere Aktualisierung, indem Sie Ihren aktuellen Code mit dem Code der Zielversion vergleichen und einen Bericht mit allen zu behebenden Problemen erstellen. Siehe [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Zu den wichtigsten Details des Berichts gehören:
 
    - Aktuelle installierte Version
    - Upgrade der Zielversion
@@ -35,9 +35,9 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
 
   >[!TIP]
   >
-  >Alle diese Informationen (und mehr) sind im Site-weiten Analyse-Tool verfügbar. [Dashboard](../../tools/site-wide-analysis-tool/dashboard.md).
+  >Alle diese Informationen (und mehr) sind im Site-weiten Analyse-Tool [Dashboard](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
 
-- Upgrade der Dienste zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzulegen, welche Dienste Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zum _Upgrade auf_ Spalte.
+- Upgrade der Dienste zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzulegen, welche Dienste Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md), um zu bestimmen, was zur Spalte _Aktualisierung auf_ hinzugefügt werden soll.
 
 
   | Dienst | Aktuelle Version | Upgrade auf | Hinweise |
@@ -50,13 +50,13 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
   | Verfasser | 1,9,2 | 2,2 |                                                          |
   | Elasticsearch | 7,10 | 7,17 |                                                          |
 
-- **Erweiterungen und Module von Drittanbietern**—Verwenden Sie diese Tabellenvorlage, um den Status Ihrer Erweiterungen und Anpassungen zu verstehen, sodass Sie strategische Entscheidungen treffen und Aktionen definieren können. Dies ist eine Möglichkeit, alle Erweiterungen zu ersetzen, die möglicherweise nativ in Adobe Commerce sind, um die Komplexität Ihres Projekts zu minimieren. Verwenden Sie die `bin/magento module:status` -Befehl, um eine Liste von Modulen und Erweiterungen anzuzeigen.
+- **Erweiterungen und Module von Drittanbietern**: Verwenden Sie diese Tabellenvorlage, um den Status Ihrer Erweiterungen und Anpassungen zu verstehen, sodass Sie strategische Entscheidungen treffen und Aktionen definieren können. Dies ist eine Möglichkeit, alle Erweiterungen zu ersetzen, die möglicherweise nativ in Adobe Commerce sind, um die Komplexität Ihres Projekts zu minimieren. Verwenden Sie den Befehl `bin/magento module:status` , um eine Liste der Module und Erweiterungen anzuzeigen.
 
   | # | Erweiterung/<br>Modulname | Composer-Paket | Anbieter | Aktuelle Version | Funktionalität | Kompatibel mit der neuesten<br>Commerce-Version? | Probleme | Nativ für Commerce? | Aktion | Hinweise |
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
-  | 1 | Name und Link der Erweiterung | extension/<br>extensionx-magento-2 | Name des Anbieters | Version installiert | Geschäftsanforderungen | Ja/Nein | Auflisten identifizierter Probleme mit dieser Erweiterung | Ja/Nein | Keep/Replace/<br>Entfernen |       |
+  | 1 | Name und Link der Erweiterung | extension/<br>extensionx-magento-2 | Name des Anbieters | Version installiert | Geschäftsanforderungen | Ja/Nein | Auflisten identifizierter Probleme mit dieser Erweiterung | Ja/Nein | Behalten/Ersetzen/<br>Entfernen |       |
 
-- **Benutzerdefinierte Module**—Ähnlich wie bei der Tabelle mit Modulen von Drittanbietern hilft Ihnen diese Vorlage, den Status und die Aktionen zu verfolgen und zu verstehen, die für die Aktualisierung benutzerdefinierter Module erforderlich sind.
+- **Benutzerdefinierte Module**: Diese Vorlage ähnelt der Tabelle der Module von Drittanbietern und hilft Ihnen, den Status und die Aktionen zu verfolgen und zu verstehen, die für die Aktualisierung benutzerdefinierter Module erforderlich sind.
 
   | # | Modulname | Funktionalität | Erforderlich? | Nativ für Commerce? | Aktion | Hinweise |
   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
@@ -64,11 +64,11 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse aufnehmen 
 
 - **Composer-Pakete und -Abhängigkeiten in Composer.json, die eine Aktualisierung erfordern.**
 
-Darüber hinaus können Partner an [Beta-Versionen von Adobe Commerce](../../release/beta.md) und nutzen Sie Vorabversionschancen, um frühzeitig auf den Code für eine bevorstehende Version zugreifen zu können. Durch frühzeitigen Zugriff auf den Code können Entwickler sich auf ausreichend Zeit vorbereiten, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum (GA) abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorversionen werden zwei Wochen im Voraus veröffentlicht.
+Darüber hinaus können Partner an [Beta-Versionen von Adobe Commerce](../../release/beta.md) teilnehmen und Vorabversionsmöglichkeiten nutzen, um frühzeitigen Zugriff auf den Code für eine bevorstehende Version zu erhalten. Durch frühzeitigen Zugriff auf den Code können Entwickler sich auf ausreichend Zeit vorbereiten, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum (GA) abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorversionen werden zwei Wochen im Voraus veröffentlicht.
 
 ## Entwicklung und Qualitätssicherung
 
-Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zeit benötigt wird. Daher sollte dieser Prozess so automatisiert wie möglich sein. Die _[Handbuch zum Anwendungstest](https://developer.adobe.com/commerce/testing/guide/)_ enthält Details zur Einrichtung und Verwendung von Tools für Plattform- und Systemtests für eine schnellere Qualitätssicherung. Verwenden Sie eine Staging-Umgebung, um Ihre Aktualisierung zu testen und zu validieren, bevor Sie zur Produktion wechseln.
+Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zeit benötigt wird. Daher sollte dieser Prozess so automatisiert wie möglich sein. Im _[Leitfaden zum Anwendungstest](https://developer.adobe.com/commerce/testing/guide/)_ finden Sie Details zum Einrichten und Verwenden von Plattform- und Systemtestwerkzeugen für eine schnellere Qualitätssicherung. Verwenden Sie eine Staging-Umgebung, um Ihre Aktualisierung zu testen und zu validieren, bevor Sie zur Produktion wechseln.
 
 ## UAT &amp; Vorbereitung des Launches
 
@@ -78,14 +78,14 @@ Da sich das Bereitstellungsdatum nähert, ist Kommunikation unerlässlich. Wenn 
 
 ## Launch
 
-Führen Sie das Upgrade durch, indem Sie es in der Produktion bereitstellen und die Erweiterungen aktualisieren. Stellen Sie sicher, dass Sie kritische Pfadflüsse mit simulierten Bestellungen testen. Sehen Sie sich diese [Best Practices](../prepare/best-practices.md) für einige Tipps zum Starten mit minimalen Problemen.
+Führen Sie das Upgrade durch, indem Sie es in der Produktion bereitstellen und die Erweiterungen aktualisieren. Stellen Sie sicher, dass Sie kritische Pfadflüsse mit simulierten Bestellungen testen. Sehen Sie sich diese [Best Practices](../prepare/best-practices.md) an, um Tipps zum Starten mit minimalen Problemen zu erhalten.
 
 Befolgen Sie Ihren Kommunikationsplan und stellen Sie sicher, dass alle Beteiligten über das Upgrade informiert und umfassend für dessen Unterstützung geschult sind.
 
 Sprechen Sie schließlich mit Ihrem Team, um die gelernten Erfahrungen und Fallstricke zu ermitteln. Diese Retrospektive hilft Ihnen, den Prozess das nächste Mal zu verbessern.
 
-## Nach dem Start
+## Post-Launch
 
 Überprüfen Sie nach dem Start Ihrer Site die Analysedaten, die Google-Suchkonsole und andere Ressourcen, um sicherzustellen, dass keine unerwarteten Probleme auftreten und alles erwartungsgemäß funktioniert.
 
-Es ist immer eine gute Idee, die Leistung durch gut entwickelte Überwachungstools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Wählen Sie daher unbedingt eines aus, das sich gut mit Ihrer Organisation verbindet. Wir empfehlen Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, die Vorteile von Diensten wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) zur Überwachung der Site-Leistung.
+Es ist immer eine gute Idee, die Leistung durch gut entwickelte Überwachungstools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Wählen Sie daher unbedingt eines aus, das sich gut mit Ihrer Organisation verbindet. Wir empfehlen Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, die Vorteile von Diensten wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) zur Überwachung der Site-Leistung zu nutzen.

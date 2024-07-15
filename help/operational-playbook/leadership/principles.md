@@ -15,26 +15,26 @@ Es wird empfohlen, beim Betrieb eines E-Commerce-Projekts einige zentrale Führu
 
 ## Sponsoring
 
-![Hand-Fuß-Herz](../../assets/playbooks/sponsorship.png)
+![Hand-Falten-Herz](../../assets/playbooks/sponsorship.png)
 Ein effektiver Sponsor hilft dem Projekt, maximalen Erfolg zu erzielen. Um wirklich effektiv zu sein, sollte dieser interne geschäftsführende Sponsor über ausreichend Rang und Einfluss innerhalb des Unternehmens verfügen, um sich von anderen Interessenträgern in der gesamten Organisation zu beteiligen. Sie sollten auch ein hohes Maß an Eigeninteresse am Erfolg des Online-Stores haben und eine Leidenschaft für digitale Transformation und E-Commerce haben; es ist auch entscheidend, wirklich daran zu glauben, wie Adobe Commerce das Geschäft umgestalten wird.
 
 Ein effektiver Sponsor sollte die Verwaltung, den Fahrplan und das kontinuierliche Wachstum der E-Commerce-Plattform im Einklang mit der Unternehmensstrategie sicherstellen, sie vor widersprüchlichen Initiativen oder interner Politik schützen und dazu beitragen, begrenzte Faktoren wie Ressourcen, Fachkräftemangel oder Haushaltszwänge anzugehen.
 
 ## Buy-in
 
-![Aus dem Gerät hängender Ticket](../../assets/playbooks/buyin.png)
+![Ticket, das aus dem Computer heraushängt](../../assets/playbooks/buyin.png)
 Entscheidend ist auch, dass das Management-Buy-in in Ihrem Führungsteam erfolgt. Wenn Sie mehrere Änderungsagenten haben, um das Wachstum zu fördern, können Sie das Wachstum einfacher und schneller vorantreiben. Die Verantwortung für das erfolgreiche Management von Adobe Commerce muss vom gesamten Führungsteam getragen werden. Dann ist es die Verantwortung des ausführenden Sponsors, das Executive Team durch die gemeinsame Nutzung von Beispielen zu gewinnen, die den Wert von Adobe Commerce insgesamt belegen. In der Regel konzentriert sich dies auf die Bereitstellung eines besseren Kundenerlebnisses und nachfolgender Vorteile für das Unternehmen.
 
 Bei der Verwaltung von E-Commerce-Sites oder der Implementierung digitaler Projekte wie Adobe Commerce sind Führungskräfte für die Überwachung verschiedener Abteilungen und Teams verantwortlich, die verschiedene Teile der E-Commerce-Initiativen besitzen. Es ist von entscheidender Bedeutung sicherzustellen, dass alle Gruppen eine gemeinsame Strategie zur Erreichung gemeinsamer Ziele verfolgen. Eine interne Roadshow, bei der Führungskräfte Unterstützung erhalten, hilft, das Bewusstsein zu schärfen, Teams auszurichten und die notwendigen Ressourcen für eine optimale Implementierung zu erhalten.
 
 ## Rechenschaftspflicht
 
-![Zahlen um eine Tabelle herum](../../assets/playbooks/accountability.png)
+![Ziffern, die um eine Tabelle geschossen wurden](../../assets/playbooks/accountability.png)
 Die Projektleitung ist der Akt, ein Team zur erfolgreichen Erreichung eines Zielziels zu führen. Es kann oft einer der wichtigsten Bereiche sein, richtig zu gehen, um erfolgreich ein E-Commerce-Projekt bereitzustellen. Erfolgreiche Projektleitung erfordert Fähigkeiten in Management und Leitung, um die richtigen Mitarbeiter zu gewinnen und das Team in die richtige Richtung zu führen.
 
 ## C-Level
 
-![Abbildung von Sternen umgeben](../../assets/playbooks/c-level.png)
+![Abbildung umgeben von Sternen](../../assets/playbooks/c-level.png)
 Führungskräfte auf C-Ebene spielen innerhalb eines Unternehmens eine strategische Rolle. Sie halten Führungspositionen und beeinflussen unternehmensweite Entscheidungen. C steht für &quot;Chef&quot;, daher ist ein Führungsgremium auf C-Ebene häufig für eine ganze Abteilung oder einen Geschäftsbereich zuständig, z. B. für Finanzen, IT oder Vertrieb. Da diese Personen wichtige Interessengruppen innerhalb der Organisation sind, muss sichergestellt werden, dass sie sich der Vorteile des E-Commerce-Projekts für die Organisation bewusst sind.
 
 Genauer gesagt kann es hilfreich sein, die spezifischen Vorteile zu ermitteln, die das Projekt für ihre Abteilung bringt, da dies ein wichtiger Motivationsfaktor sein kann. Die Verknüpfung von materiellen Metriken mit der erfolgreichen Bereitstellung des Projekts kann Ihre Stakeholder auf der C-Ebene dazu motivieren und transformieren, aktive Unterstützer des Digital Transformation-Projekts zu werden.
@@ -43,7 +43,7 @@ In kleineren Unternehmen sind Führungskräfte auf C-Ebene tendenziell stark bet
 
 ## Interessenträger
 
-![Zwei Zahlen](../../assets/playbooks/stakeholders.png)
+![Zwei Ziffern](../../assets/playbooks/stakeholders.png)
 Stakeholder sind diejenigen, die an dem Ergebnis Ihres Projekts interessiert sind. Sie sind normalerweise Mitglieder Ihres Projektteams, Projektmanagern, Führungskräften, Projektsponsoren und schließlich Ihren Endbenutzern. Es ist wichtig, dass alle relevanten Interessengruppen Einkünfte erhalten, um eine wirksame Veränderung zu gewährleisten. Wenn Sie keine Unterstützung von wichtigen Interessengruppen erhalten, die zur endgültigen Entscheidung beitragen, scheitern Projekte oft.
 
 Es ist auch wichtig sicherzustellen, dass Sie über einen effektiven Prozess verfügen, um Benutzer auf den neuen Systemen oder Plattformen zu schulen und weiterzubilden. Menschen können oft ein starkes Hindernis für Veränderungen sein, insbesondere wenn sie mit einem neuen System nicht vertraut sind und welche Auswirkungen dies auf die Prozesse und Workflows in ihrer Umgebung haben kann. Wirksame Änderungs-Management- und Trainingsprozesse können dazu beitragen, dies zu mildern. Darüber hinaus wird durch die Erweiterung der Kenntnisse der Benutzer sichergestellt, dass Sie das System optimal nutzen. Teams, die mit der Plattform gut vertraut sind, können die Plattform für Effektivität optimieren und so sicherstellen, dass Sie den besten Knall für Ihren Buck erhalten.
@@ -72,8 +72,10 @@ Verantwortlich für die Sicherstellung, dass das Projekt sich auf die Erreichung
 
 - Entwirft und ernennt die Projektmanagementteams
 - Überwachung der Entwicklung des Geschäftsfalls und Gewährleistung der strategischen Ausrichtung des Unternehmens
-- Überwachung und Kontrolle der Fortschritte auf strategischer Ebene, insbesondere regelmäßige Überprüfung des Geschäftsszenarios
-- Eskaliert Probleme und Risiken (der Eskalationspunkt für Probleme und Risiken und stellt sicher, dass alle mit dem Geschäftsfall verbundenen Risiken ermittelt, bewertet und kontrolliert werden)
+- Überwachung und Kontrolle der Fortschritte auf strategischer Ebene, insbesondere
+regelmäßige Überprüfung des Geschäftsfalls;
+- Eskaliert Probleme und Risiken (der Eskalationspunkt für Probleme und
+Risiken und gewährleistet, dass alle mit dem Geschäftsfall verbundenen Risiken ermittelt, bewertet und kontrolliert werden.
 - Entscheidungsprozesse zu eskalierten Fragen mit besonderem Augenmerk auf der fortgesetzten Geschäftsbegründung
 - Gewährleistet die allgemeine Geschäftssicherheit des Projekts und stellt sicher, dass es weiterhin auf dem Ziel bleibt, Produkte bereitzustellen, die den erwarteten geschäftlichen Nutzen erzielen.
 
@@ -157,4 +159,5 @@ Für eine effiziente Verwaltung einer E-Commerce-Site muss das Projektmanagement
 
 Um die Organisation an Bord zu nehmen, ist es immer eine gute Idee, die Vision zu teilen und wiederholt zu bekräftigen, warum Ihr Unternehmen in E-Commerce-Technologie investiert, indem es sowohl die Vorteile für Kunden als auch die Vorteile für Unternehmen ausdrückt.
 
-Durch die Freigabe von Dokumentationen, wie z. B. Erfolgsfallstudien zu digitalen Implementierungen, können Sie überprüfen, warum und wie diese Investition die Organisation auf ein neues Niveau bringt. Wenn Sie möchten, dass die Organisation digitale Transformationen nutzt, müssen Sie den Mitarbeitern mitteilen, dass dies eine Priorität ist.
+Freigabe von Dokumentation, z. B. Erfolgsfallstudien für digitale Medien
+-Implementierungen helfen Ihnen bei der Validierung von Grund und warum und wie diese Investition die Organisation auf eine neue Stufe bringt. Wenn Sie möchten, dass die Organisation digitale Transformationen nutzt, müssen Sie den Mitarbeitern mitteilen, dass dies eine Priorität ist.

@@ -1,7 +1,7 @@
 ---
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
@@ -9,10 +9,10 @@ ht-degree: 1%
 
 In diesem Abschnitt werden zwei Möglichkeiten erläutert, um zu überprüfen, ob die HTTP Basic-Authentifizierung funktioniert:
 
-* Verwenden eines `curl` -Befehl, um zu überprüfen, dass Sie einen Benutzernamen und ein Kennwort eingeben müssen, um den Cluster-Status zu erhalten
+* Verwenden eines `curl`-Befehls zur Überprüfung, dass Sie einen Benutzernamen und ein Kennwort eingeben müssen, um den Clusterstatus zu erhalten
 * Konfigurieren der einfachen HTTP-Authentifizierung im Admin
 
-## Verwenden Sie eine `curl` Befehl zum Überprüfen des Clusterstatus
+## Verwenden Sie einen `curl`-Befehl, um den Clusterstatus zu überprüfen.
 
 Geben Sie den folgenden Befehl ein:
 
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## Konfigurieren der einfachen HTTP-Authentifizierung in der Admin-Konsole
 
-Führen Sie dieselben Aufgaben wie unter [Suchmaschinenkonfiguration](../configuration/search/configure-search-engine.md) *Außer* click **[!UICONTROL Yes]** aus dem **[!UICONTROL Enable HTTP Auth]** und geben Sie Ihren Benutzernamen und Ihr Passwort in die entsprechenden Felder ein.
+Führen Sie dieselben Aufgaben wie in der Konfiguration der Suchmaschine ](../configuration/search/configure-search-engine.md) *beschrieben aus, außer* klicken Sie in der Liste **[!UICONTROL Enable HTTP Auth]** auf **[!UICONTROL Yes]** und geben Sie Ihren Benutzernamen und Ihr Kennwort in die angegebenen Felder ein.[
 
-Klicks **[!UICONTROL Test Connection]** , um sicherzustellen, dass sie funktioniert, klicken Sie auf **[!UICONTROL Save Config]**.
+Klicken Sie auf **[!UICONTROL Test Connection]** , um sicherzustellen, dass es funktioniert, und klicken Sie dann auf **[!UICONTROL Save Config]**.
 
 Sie müssen den Cache und die Neuindizierung leeren, bevor Sie fortfahren.

@@ -1,10 +1,10 @@
 ---
 title: Allgemeine Befehle
-description: Sehen Sie sich ein Beispiel für gängige Commerce-CLI-Befehle und -Verwendung an.
+description: Sehen Sie sich ein Beispiel für häufige Commerce-CLI-Befehle und -Verwendungen an.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Befehle werden nur in der Zusammenfassung angezeigt. Klicken Sie für weitere In
 | [`magento dev:tests:run`](../cli/unit-tests.md) | Führt automatisierte Tests aus |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Aktualisieren Sie Ihre Layout-XML-Dateien entsprechend dem neuen XSLT-Stylesheet (Extensible Stylesheet Language Transformations) |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Generieren Sie Daten zur Verwendung für Leistungstests. |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installiert optionale Beispieldaten nach der Installation der Commerce-Anwendung.<br><br>Weitere Informationen zu Musterdaten finden Sie unter [Optionale Musterdaten](../../installation/sample-data/overview.md). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installiert optionale Beispieldaten nach der Installation der Commerce-Anwendung.<br><br>Weitere Informationen zu Musterdaten finden Sie unter [Optionale Beispieldaten](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Verwalten von Backend-Konfigurationen |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Erstellt/bearbeitet/entsperrt Administratorbenutzer. |
 | [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Aktiviert/deaktiviert Hinweise zu Entwicklervorlagen. |
@@ -58,7 +58,7 @@ Die folgenden Argumente gelten für alle Befehle. Diese Befehle können vor oder
 | `--help` | `-h` | Erhalten Sie Hilfe für jeden Befehl. Beispiel: `./magento help setup:install` oder `./magento help setup:config:set`. |
 | `--quiet` | `-q` | Ruhig, keine Ausgabe. |
 | `--no-interaction` | `-n` | Keine interaktiven Fragen. |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbosity level. Beispiel: `--verbose=3` oder `-vvv` zeigt Debug-Ausführlichkeit an, die die ausführlichste Ausgabe ist. Der Standardwert ist `--verbose=1` oder `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbosity level. Beispielsweise zeigt `--verbose=3` oder `-vvv` Debug-Ausführlichkeit an, die die ausführlichste Ausgabe ist. Der Standardwert ist `--verbose=1` oder `-v`. |
 | `--version` | `-V` | Diese Anwendungsversion anzeigen |
 | `--ansi` | Nicht zutreffend | ANSI-Ausgabe erzwingen |
 | `--no-ansi` | Nicht zutreffend | ANSI-Ausgabe deaktivieren |

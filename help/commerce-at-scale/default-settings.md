@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ Um die Latenz zwischen AEM Publisher und Adobe Commerce GraphQL beim Erstellen v
 
 ## GraphQL-Zwischenspeicherung in Adobe Commerce
 
-Wenn der Browser oder AEM Publisher des Benutzers die GraphQL von Adobe Commerce aufruft, werden bestimmte Aufrufe schnell zwischengespeichert. Bei den zwischengespeicherten Abfragen handelt es sich im Allgemeinen um Abfragen, die nicht personenbezogene Daten enthalten und sich wahrscheinlich nicht häufig ändern. Dies sind beispielsweise Kategorien, categoryList und Produkte. Diejenigen, die explizit nicht zwischengespeichert werden, sind diejenigen, die sich regelmäßig ändern und im Cache gespeichert werden, könnten Risiken für personenbezogene Daten und Site-Vorgänge darstellen, z. B. Abfragen wie cart und customerPaymentTokens.
+Wenn der Browser oder AEM Publisher des Benutzers Adobe Commerces GraphQL aufruft, werden bestimmte Aufrufe zwischengespeichert
+in Fastly. Bei den zwischengespeicherten Abfragen handelt es sich im Allgemeinen um Abfragen, die nicht personenbezogene Daten enthalten und sich wahrscheinlich nicht häufig ändern. Dies sind beispielsweise Kategorien, categoryList und Produkte. Diejenigen, die explizit nicht zwischengespeichert werden, sind diejenigen, die sich regelmäßig ändern und im Cache gespeichert werden, könnten Risiken für personenbezogene Daten und Site-Vorgänge darstellen, z. B. Abfragen wie cart und customerPaymentTokens.
 
 Mit GraphQL können Sie mehrere Abfragen in einem einzigen Aufruf durchführen. Beachten Sie, dass Adobe Commerce den Cache für alle Abfragen im -Aufruf umgeht, wenn Sie selbst eine Abfrage angeben, dass Adobe Commerce nicht mit vielen anderen zwischenspeicherbaren Abfragen zwischenspeichert. Dies sollte von Entwicklern bei der Kombination mehrerer Abfragen berücksichtigt werden, um sicherzustellen, dass potenziell zwischenspeicherbare Abfragen nicht unbeabsichtigt übersprungen werden ‡.
 
@@ -43,7 +44,7 @@ Sobald die Fastly-Ursprungs-Shielding aktiviert ist, können Sie damit auch Fast
 
 Die schnelle Bildoptimierung kann durch &quot;Deep-Image-Optimierung aktivieren&quot;in der Fastly-Konfiguration in Admin aktiviert werden, allerdings erst, nachdem Ihr Ursprungsschild aktiviert wurde. Weitere Informationen zu Konfigurationen für die schnelle Bildoptimierung finden Sie in der Adobe Commerce [Entwicklerdokumentation](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
 
-![Screenshot der Fastly-Bildoptimierungseinstellungen in Adobe Commerce Admin](../assets/commerce-at-scale/image-optimization.svg)
+![Screenshot der Einstellungen für die schnelle Bildoptimierung in der Adobe Commerce Admin](../assets/commerce-at-scale/image-optimization.svg)
 
 ## Nicht verwendete Module deaktivieren
 
@@ -57,7 +58,7 @@ Wenn die Adobe Commerce-Instanz eine extreme Auslastung erwartet, hilft die Akti
 
 In Umgebungen mit normaler Belastung verlangsamt die Aktivierung von Slave-Verbindungen die Leistung um 10-15 %. Bei Clustern mit hoher Auslastung und starkem Traffic wird die Leistung jedoch um etwa 10-15 % gesteigert. Daher ist es wichtig, Ihre Umgebung mit dem erwarteten Traffic-Niveau zu testen, um zu beurteilen, ob diese Einstellung für Ihre Leistungszeiten bei Belastung von Vorteil ist.
 
-Um Slave-Verbindungen für MySQL und Umleitungen zu aktivieren/deaktivieren, sollten Sie Ihre `.magento.env.yaml` -Datei, die Folgendes enthalten soll:
+Um Slave-Verbindungen für MySQL und Umleitungen zu aktivieren/deaktivieren, sollten Sie Ihre `.magento.env.yaml`-Datei so bearbeiten, dass sie Folgendes enthält:
 
 ```
 stage:

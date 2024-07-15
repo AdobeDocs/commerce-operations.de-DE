@@ -5,7 +5,7 @@ feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -15,22 +15,22 @@ ht-degree: 0%
 Sie können über ein Buildsystem verfügen, das die folgenden Anforderungen erfüllt:
 
 - Der gesamte Commerce-Code unterliegt der Quell-Code-Kontrolle im selben Repository wie die Entwicklungs- und Produktionssysteme
-- Stellen Sie sicher, dass alle folgenden Elemente _enthalten_ in der Quell-Code-Verwaltung:
+- Stellen Sie sicher, dass alle folgenden Elemente _im Quellcode-Steuerelement enthalten sind:_
 
    - `app/etc/config.php`
-   - `generated` Verzeichnis (und Unterverzeichnisse)
-   - `pub/media` directory
-   - `pub/media/wysiwyg` Verzeichnis (und Unterverzeichnisse)
-   - `pub/static` Verzeichnis (und Unterverzeichnisse)
+   - Ordner `generated` (und Unterverzeichnisse)
+   - Verzeichnis `pub/media`
+   - Ordner `pub/media/wysiwyg` (und Unterverzeichnisse)
+   - Ordner `pub/static` (und Unterverzeichnisse)
 
 - Muss eine kompatible PHP-Version installiert haben
 - Muss Composer installiert haben
-- Sie verfügt über Dateisystemeigentümer und -berechtigungen, wie hier beschrieben: [Voraussetzungen für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/technical-details.md).
+- Sie verfügt über Dateisystemeigentum und -berechtigungen, wie in [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/technical-details.md) beschrieben.
 - Das Build-System muss Commerce nicht installieren, aber der Code muss verfügbar sein.
 
 >[!WARNING]
 >
->Die Datenbankverbindung ist nicht erforderlich, wenn sie bereits in `config.php`; siehe [Konfiguration exportieren](../cli/export-configuration.md). Andernfalls ist die Datenbankverbindung erforderlich.
+>Die Datenbankverbindung ist nicht erforderlich, wenn sie bereits in `config.php` enthalten ist; siehe [Konfiguration exportieren](../cli/export-configuration.md). Andernfalls ist die Datenbankverbindung erforderlich.
 
 >[!INFO]
 >
@@ -55,7 +55,7 @@ Wenn ein Fehler angezeigt wird, führen Sie die folgenden Schritte aus, um Compo
 
 So installieren Sie Composer:
 
-1. Wechseln Sie zu oder erstellen Sie ein leeres Verzeichnis auf Ihrem Commerce-Server.
+1. Wechseln Sie zu einem leeren Verzeichnis auf Ihrem Commerce-Server oder erstellen Sie es.
 
 1. Geben Sie die folgenden Befehle ein:
 
@@ -67,7 +67,7 @@ So installieren Sie Composer:
    mv composer.phar /usr/local/bin/composer
    ```
 
-Weitere Installationsoptionen finden Sie unter [Dokumentation zur Installation von Composer][composer].
+Weitere Installationsoptionen finden Sie in der [Dokumentation zur Installation des Composers][composer].
 
 ### PHP installieren
 
@@ -86,7 +86,7 @@ Einrichten des Build-Systems:
    git clone [-b <branch name>] <repository URL>
    ```
 
-1. Wechseln Sie zum Stammverzeichnis für Commerce und geben Sie Folgendes ein:
+1. Wechseln Sie zum Stammordner von Commerce und geben Sie Folgendes ein:
 
    ```bash
    composer install
@@ -106,7 +106,7 @@ Einrichten des Build-Systems:
    ```
 
 1. Wenn Sie Git verwenden, öffnen Sie `.gitignore` in einem Texteditor.
-1. Beginnen Sie jede der folgenden Zeilen mit einem `#` -Zeichen, um sie herauszukommentieren:
+1. Beginnen Sie jede der folgenden Zeilen mit dem Zeichen `#` , um sie herauszukommentieren:
 
    ```conf
    # app/etc/config.php
@@ -124,15 +124,15 @@ Einrichten des Build-Systems:
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Siehe [`.gitignore` reference](../reference/config-reference-gitignore.md) für weitere Informationen.
+   Weitere Informationen finden Sie unter [`.gitignore` reference](../reference/config-reference-gitignore.md) .
 
-1. Das Build-System sollte [Standardmodus](../bootstrap/application-modes.md#default-mode) oder [Entwicklermodus](../bootstrap/application-modes.md#developer-mode):
+1. Das Build-System sollte den [Standardmodus](../bootstrap/application-modes.md#default-mode) oder den [Entwicklermodus](../bootstrap/application-modes.md#developer-mode) verwenden:
 
    ```bash
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` ist erforderlich. Es kann entweder `default` oder `developer`.
+   `<mode>` ist erforderlich. Es kann entweder `default` oder `developer` sein.
 
 <!-- Link Definitions -->
 

@@ -5,8 +5,8 @@ feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Das folgende Diagramm zeigt, wie Nginx Bilder im Cache abruft, in der Größe ä
 
 >[!TIP]
 >
->Informationen zu Adobe Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Remote-Speicher für Commerce in Cloud-Infrastruktur konfigurieren](cloud-support.md)
+>Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Konfigurieren des Remote-Speichers für Commerce in der Cloud-Infrastruktur](cloud-support.md) .
 
 ## Konfigurieren des URL-Formats in Adobe Commerce
 
@@ -28,31 +28,31 @@ Um die Größe von Bildern serverseitig zu ändern, müssen Sie Adobe Commerce s
 
 **So konfigurieren Sie Commerce für die serverseitige Bildgröße**:
 
-1. Im _Admin_ Bereich, klicken Sie **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. Klicken Sie im Bedienfeld _Admin_ auf **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
-1. Erweitern Sie im rechten Bereich **[!UICONTROL Url options]**.
+1. Erweitern Sie im rechten Bereich den Wert **[!UICONTROL Url options]**.
 
-1. Im _URL-Format für Catalog Media_ Abschnitt löschen **[!UICONTROL Use system value]**.
+1. Löschen Sie im Abschnitt _Catalog Media URL format_ den Wert **[!UICONTROL Use system value]**.
 
-1. Wählen Sie die `Image optimization based on query parameters` URL in der **_URL-Format für Catalog Media_** -Feld.
+1. Wählen Sie die URL `Image optimization based on query parameters` im Feld **_URL-Format der Katalogmedien-URL_** aus.
 
-1. Klicken **[!UICONTROL Save Config]**.
+1. Klicken Sie auf **[!UICONTROL Save Config]**.
 
-1. Fahren Sie mit [Nginx-Konfiguration](#configure-nginx).
+1. Fahren Sie mit der [Nginx-Konfiguration](#configure-nginx) fort.
 
 ## Nginx konfigurieren
 
-Um mit der Konfiguration der serverseitigen Bildgröße fortzufahren, müssen Sie die `nginx.conf` und stellen Sie eine `proxy_pass` -Wert für den gewählten Adapter.
+Um mit der Konfiguration der serverseitigen Bildgröße fortzufahren, müssen Sie die Datei &quot;`nginx.conf`&quot;vorbereiten und einen &quot;`proxy_pass`&quot;-Wert für den ausgewählten Adapter angeben.
 
 **So aktivieren Sie Nginx, um die Bildgröße zu ändern**:
 
-1. Installieren Sie die [Nginx-Bildfiltermodul][nginx-module].
+1. Installieren Sie das [Nginx-Bildfiltermodul][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. Erstellen Sie eine `nginx.conf` -Datei basierend auf der enthaltenen Vorlage `nginx.conf.sample` -Datei. Beispiel:
+1. Erstellen Sie eine `nginx.conf` -Datei basierend auf der eingeschlossenen Vorlage `nginx.conf.sample` . Beispiel:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,7 +69,7 @@ Um mit der Konfiguration der serverseitigen Bildgröße fortzufahren, müssen Si
    }
    ```
 
-1. [_Optional_] Konfigurieren Sie eine `proxy_pass` -Wert für Ihren spezifischen Adapter.
+1. [_Optional_] Konfigurieren Sie einen `proxy_pass` -Wert für Ihren spezifischen Adapter.
 
    - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 

@@ -18,17 +18,17 @@ ht-degree: 1%
 
 In diesem Thema werden die ersten Schritte mit der geteilten Datenbanklösung durch folgende Schritte erläutert:
 
-1. Installieren von Adobe Commerce mit einer Master-Datenbank (mit dem Namen `magento`)
-1. Erstellen von zwei zusätzlichen Master-Datenbanken für Checkout und OMS (mit dem Namen `magento_quote` und `magento_sales`)
+1. Installieren von Adobe Commerce mit einer einzelnen Master-Datenbank (mit dem Namen `magento`)
+1. Erstellen von zwei zusätzlichen Master-Datenbanken für den Checkout und OMS (mit den Namen `magento_quote` und `magento_sales`)
 1. Konfigurieren von Adobe Commerce für die Verwendung der Checkout- und Verkaufsdatenbanken
 
 >[!INFO]
 >
->In diesem Handbuch wird davon ausgegangen, dass sich alle drei Datenbanken auf demselben Host wie die Commerce-Anwendung befinden und dass sie `magento`, `magento_quote`, und `magento_sales`. Sie können jedoch selbst entscheiden, wo die Datenbanken zu finden sind und wie sie benannt sind. Wir hoffen, dass unsere Beispiele die Befolgung der Anweisungen erleichtern.
+>In diesem Handbuch wird davon ausgegangen, dass sich alle drei Datenbanken auf demselben Host wie die Commerce-Anwendung befinden und dass sie `magento`, `magento_quote` und `magento_sales` heißen. Sie können jedoch selbst entscheiden, wo die Datenbanken zu finden sind und wie sie benannt sind. Wir hoffen, dass unsere Beispiele die Befolgung der Anweisungen erleichtern.
 
 ## Installieren der Adobe Commerce-Software
 
-Sie können die Aufspaltung von Datenbanken jederzeit aktivieren, nachdem Sie die Adobe Commerce-Software installiert haben. Mit anderen Worten, Sie können Aufspaltungsdatenbanken zu einem Adobe Commerce-System hinzufügen, das bereits über Kasse- und Bestelldaten verfügt. Verwenden Sie die Anweisungen in Adobe Commerce README oder dem [Installationshandbuch](../../installation/overview.md) , um die Adobe Commerce-Software mit einer einzigen Master-Datenbank zu installieren.
+Sie können die Aufspaltung von Datenbanken jederzeit aktivieren, nachdem Sie die Adobe Commerce-Software installiert haben. Mit anderen Worten, Sie können Aufspaltungsdatenbanken zu einem Adobe Commerce-System hinzufügen, das bereits über Kasse- und Bestelldaten verfügt. Verwenden Sie die Anweisungen im Adobe Commerce README-Handbuch oder im [Installationshandbuch](../../installation/overview.md), um die Adobe Commerce-Software mit einer einzigen Master-Datenbank zu installieren.
 
 ## Einrichten zusätzlicher Master-Datenbanken
 
@@ -41,8 +41,8 @@ Erstellen Sie wie folgt Checkout- und OMS-Master-Datenbanken:
    mysql -u root -p
    ```
 
-1. MySQL eingeben `root` das Kennwort des Benutzers bei Aufforderung.
-1. Geben Sie die folgenden Befehle in der angezeigten Reihenfolge ein, um Datenbankinstanzen mit dem Namen `magento_quote` und `magento_sales` mit denselben Benutzernamen und Kennwörtern:
+1. Geben Sie bei Aufforderung das Kennwort des MySQL `root`-Benutzers ein.
+1. Geben Sie die folgenden Befehle in der angezeigten Reihenfolge ein, um Datenbankinstanzen mit den Namen `magento_quote` und `magento_sales` mit denselben Benutzernamen und Passwörtern zu erstellen:
 
    ```shell
    create database magento_quote;
@@ -60,7 +60,7 @@ Erstellen Sie wie folgt Checkout- und OMS-Master-Datenbanken:
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Eingabe `exit` , um die Eingabeaufforderung zu beenden.
+1. Geben Sie `exit` ein, um die Eingabeaufforderung zu beenden.
 
 1. Überprüfen Sie die Datenbanken einzeln:
 
@@ -92,7 +92,7 @@ Nachdem Sie insgesamt drei Master-Datenbanken eingerichtet haben, konfigurieren 
 
 ### Erste Schritte
 
-Siehe [Ausführen von Befehlen](../cli/config-cli.md#running-commands) um sich anzumelden und CLI-Befehle auszuführen.
+Siehe [Ausführen von Befehlen](../cli/config-cli.md#running-commands) , um sich anzumelden und CLI-Befehle auszuführen.
 
 ### Checkout-Datenbank konfigurieren
 

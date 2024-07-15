@@ -1,13 +1,13 @@
 ---
 name: New topic
 about: Create a request to add missing information
-title: '"Anforderung eines neuen Themas"'
+title: "Anforderung eines neuen Themas"
 labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 8%
 
 ---
 
@@ -24,10 +24,10 @@ ht-degree: 0%
 
 - [ ] Das Thema erläutert, wie ____ funktioniert.
 - [ ] Das Thema enthält Schritte für ____.
-- [ ] Das Thema enthält Code-Beispiele, die _____ zeigen.
-- [ ] Andere (bitte angeben)
+- [ ] Das Thema enthält Codebeispiele, die _____ zeigen.
+- [ ] Sonstige (bitte angeben)
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
 <!-- (OPTIONAL) Any information you already know or other online resources that cover this topic -->
 

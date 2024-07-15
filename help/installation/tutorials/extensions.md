@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Verwalten von Erweiterungen von Drittanbietern
 
-Code, der das Adobe Commerce-Verhalten erweitert oder anpasst, wird als Erweiterung bezeichnet. Optional können Sie Erweiterungen für die [Commerce Marketplace](https://commercemarketplace.adobe.com/) oder einem anderen Verteilungssystem für Erweiterungen.
+Code, der das Adobe Commerce-Verhalten erweitert oder anpasst, wird als Erweiterung bezeichnet. Optional können Sie Erweiterungen auf dem [Commerce Marketplace](https://commercemarketplace.adobe.com/) oder einem anderen Erweiterungsverteilungssystem verpacken und verteilen.
 
 Zu den Erweiterungen gehören:
 
@@ -22,7 +22,7 @@ Zu den Erweiterungen gehören:
 
 >[!TIP]
 >
->In diesem Thema wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Drittanbietererweiterungen verwalten können, die Sie über die Commerce Marketplace erwerben. Sie können dieselbe Vorgehensweise bei der Installation von _any_ Erweiterung; benötigen Sie lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie zum Suchen die `composer.json` -Datei und notieren Sie die Werte für `"name"` und `"version"`.
+>In diesem Thema wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Drittanbietererweiterungen verwalten können, die Sie über die Commerce Marketplace erwerben. Sie können dasselbe Verfahren verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Komponentenprogramms der Erweiterung. Um sie zu finden, öffnen Sie die Datei `composer.json` der Erweiterung und notieren Sie die Werte für `"name"` und `"version"`.
 
 ## Installieren
 
@@ -38,7 +38,7 @@ Vor der Installation sollten Sie Folgendes tun:
 Um eine Erweiterung zu installieren, müssen Sie:
 
 1. Rufen Sie eine Erweiterung von der Commerce Marketplace oder einem anderen Erweiterungsentwickler ab.
-1. Wenn Sie eine Erweiterung über das Commerce Marketplace installieren, stellen Sie sicher, dass die Variable `repo.magento.com` Repository vorhanden ist in `composer.json` Datei:
+1. Wenn Sie eine Erweiterung aus dem Commerce Marketplace installieren, stellen Sie sicher, dass das `repo.magento.com`-Repository in Ihrer `composer.json`-Datei vorhanden ist:
 
    ```bash
    "repositories": [
@@ -50,37 +50,37 @@ Um eine Erweiterung zu installieren, müssen Sie:
    ```
 
 1. Rufen Sie den Namen und die Version des Composers der Erweiterung ab.
-1. Aktualisieren Sie die `composer.json` -Datei in Ihrem Projekt mit dem Namen und der Version der Erweiterung.
+1. Aktualisieren Sie die Datei `composer.json` in Ihrem Projekt mit dem Namen und der Version der Erweiterung.
 1. Überprüfen Sie, ob die Erweiterung ordnungsgemäß installiert ist.
 1. Aktivieren und konfigurieren Sie die Erweiterung.
 
 ### Abrufen von Erweiterungsinformationen
 
-Wenn Sie den Namen und die Version des Komponentenprogramms der Erweiterung bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit [Aktualisieren Sie Ihre `composer.json` file](#update-composer-dependencies).
+Wenn Sie den Namen und die Version des Komponentenprogramms der Erweiterung bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit [Aktualisieren der `composer.json` -Datei](#update-composer-dependencies) fort.
 
 So rufen Sie den Composer-Namen und die Version der Erweiterung von der Commerce Marketplace ab:
 
-1. Anmelden bei [Commerce Marketplace](https://commercemarketplace.adobe.com/) mit dem Benutzernamen und dem Passwort, die Sie zum Kauf der Erweiterung verwendet haben.
+1. Melden Sie sich bei [Commerce Marketplace](https://commercemarketplace.adobe.com/) mit dem Benutzernamen und dem Kennwort an, mit dem Sie die Erweiterung gekauft haben.
 
 1. Klicken Sie oben rechts auf **Ihr Name** > **Mein Profil**.
 
    ![Zugriff auf Ihr Marketplace-Konto](../../assets/installation/marketplace-my-profile.png)
 
-1. Klicks **Meine Käufe**.
+1. Klicken Sie auf **Meine Einkäufe**.
 
-   ![Kaufverlauf für Marketplace](../../assets/installation//marketplace-my-purchases.png)
+   ![Einkaufsverlauf für Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
-1. Suchen Sie die zu installierende Erweiterung und klicken Sie auf **Technische Details**.
+1. Suchen Sie die Erweiterung, die Sie installieren möchten, und klicken Sie auf **Technische Details**.
 
    ![Technische Details zeigen den Namen des Komponisten der Erweiterung an](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->Alternativ können Sie den Namen und die Version des Composers finden. _any_ -Erweiterung (unabhängig davon, ob Sie sie auf Commerce Marketplace oder an einer anderen Stelle erworben haben) in der `composer.json` -Datei.
+>Alternativ können Sie den Namen des Komponisten und die Version der Erweiterung _any_ (unabhängig davon, ob Sie sie auf der Commerce Marketplace oder an einer anderen Stelle erworben haben) in der Datei `composer.json` der Erweiterung finden.
 
 ### Aktualisieren von Composer-Abhängigkeiten
 
-Fügen Sie den Namen und die Version der Erweiterung zu Ihrem `composer.json` Datei:
+Fügen Sie den Namen und die Version der Erweiterung Ihrer `composer.json` -Datei hinzu:
 
 1. Navigieren Sie zu Ihrem Projektverzeichnis und aktualisieren Sie Ihre `composer.json` -Datei.
 
@@ -94,7 +94,7 @@ Fügen Sie den Namen und die Version der Erweiterung zu Ihrem `composer.json` Da
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Geben Sie Ihre [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername, Ihr privater Schlüssel ist Ihr Passwort.
+1. Geben Sie Ihre [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md) ein. Ihr öffentlicher Schlüssel ist Ihr Benutzername, Ihr privater Schlüssel ist Ihr Passwort.
 
 1. Warten Sie, bis der Composer die Aktualisierung Ihrer Projektabhängigkeiten abgeschlossen hat, und stellen Sie sicher, dass keine Fehler vorliegen:
 
@@ -120,7 +120,7 @@ Standardmäßig ist die Erweiterung wahrscheinlich deaktiviert:
 Module is disabled
 ```
 
-Der Erweiterungsname hat das Format `<VendorName>_<ComponentName>`: Dies ist ein anderes Format als der Name des Composers. Verwenden Sie dieses Format, um die Erweiterung zu aktivieren. Wenn Sie sich nicht sicher sind, welchen Namen die Erweiterung hat, führen Sie Folgendes aus:
+Der Name der Erweiterung hat das Format `<VendorName>_<ComponentName>`. Dieses Format unterscheidet sich vom Namen des Composers. Verwenden Sie dieses Format, um die Erweiterung zu aktivieren. Wenn Sie sich nicht sicher sind, welchen Namen die Erweiterung hat, führen Sie Folgendes aus:
 
 ```bash
 bin/magento module:status
@@ -130,7 +130,7 @@ Suchen Sie nach der Erweiterung unter &quot;Liste der deaktivierten Module&quot;
 
 ### Aktivieren
 
-Einige Erweiterungen funktionieren nur dann ordnungsgemäß, wenn Sie zuvor generierte statische Ansichtsdateien löschen. Verwenden Sie die `--clear-static-content` Option zum Löschen von statischen Ansichtsdateien beim Aktivieren einer Erweiterung.
+Einige Erweiterungen funktionieren nur dann ordnungsgemäß, wenn Sie zuvor generierte statische Ansichtsdateien löschen. Verwenden Sie die Option &quot;`--clear-static-content`&quot;, um statische Ansichtsdateien zu löschen, wenn Sie eine Erweiterung aktivieren.
 
 1. Aktivieren Sie die Erweiterung und löschen Sie statische Ansichtsdateien:
 
@@ -232,13 +232,13 @@ Wenden Sie sich an den Erweiterungsanbieter, um Anweisungen zum Entfernen einer 
 
 >[!CAUTION]
 >
->Deinstallationsschritte in einer Nicht-Produktionsumgebung durchführen _first_ und testen Sie gründlich vor der Bereitstellung in Ihrer Produktionsumgebung.
+>Führen Sie die Deinstallationsschritte für eine Nicht-Produktionsumgebung _first_ aus und testen Sie sie gründlich, bevor Sie sie in Ihre Produktionsumgebung übernehmen.
 
 Die folgenden Anweisungen enthalten allgemeine Informationen zum Deinstallieren von Drittanbietererweiterungen:
 
 1. Entfernen Sie die Erweiterung aus Ihrem Adobe Commerce-Projekt-Repository.
 
-   - Entfernen Sie bei Composer-basierten Erweiterungen die Erweiterung aus Ihrem Adobe Commerce `composer.json` -Datei.
+   - Entfernen Sie bei Composer-basierten Erweiterungen die Erweiterung aus Ihrer Adobe Commerce `composer.json` -Datei.
 
      ```bash
      composer remove <package-name>
@@ -250,7 +250,7 @@ Die folgenden Anweisungen enthalten allgemeine Informationen zum Deinstallieren 
      rm -rf app/code/<vendor-name>/<module-name>
      ```
 
-1. Wenn die Variable `config.php` befindet sich in der Quell-Code-Verwaltung Ihres Adobe Commerce-Projekt-Repositorys und entfernen Sie die -Erweiterung aus dem `config.php` -Datei.
+1. Wenn die Datei &quot;`config.php`&quot; in Ihrem Adobe Commerce-Projekt-Repository unter Quellcodeverwaltung steht, entfernen Sie die Erweiterung aus der Datei &quot;`config.php`&quot;.
 
 1. Testen Sie Ihre lokale Datenbank, um sicherzustellen, dass die vom Anbieter bereitgestellten Anweisungen erwartungsgemäß funktionieren.
 

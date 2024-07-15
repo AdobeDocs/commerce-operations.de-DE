@@ -4,20 +4,20 @@ description: Verwenden Sie die Variable MAGE_DIRS , um ein Array absoluter Pfade
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
 # Basisordnerpfade
 
-Die `MAGE_DIRS` Mit der Umgebungsvariablen können Sie benutzerdefinierte Basisordnerpfade und Fragmente von Basis-URLs angeben, die von der Commerce-Anwendung zum Erstellen absoluter Pfade zu verschiedenen Dateien oder zum Generieren von URLs verwendet werden.
+Mit der Umgebungsvariablen `MAGE_DIRS` können Sie benutzerdefinierte Basisordnerpfade und Fragmente von Basis-URLs angeben, die von der Commerce-Anwendung zum Erstellen absoluter Pfade zu verschiedenen Dateien oder zum Generieren von URLs verwendet werden.
 
 ## MAGE_DIRS festlegen
 
-Geben Sie ein assoziatives Array an, aus dem Schlüssel Konstanten sind [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] und -Werte sind absolute Pfade von Verzeichnissen bzw. deren URL-Pfaden.
+Geben Sie ein assoziatives Array an, in dem Schlüssel Konstanten von [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] sind und Werte absolute Pfade von Verzeichnissen bzw. deren URL-Pfaden sind.
 
-Sie können `MAGE_DIRS` auf eine der folgenden Arten:
+Sie können `MAGE_DIRS` auf eine der folgenden Arten festlegen:
 
 - [Wert der Bootstrap-Parameter festlegen](../bootstrap/set-parameters.md)
 - Verwenden Sie ein benutzerdefiniertes Einstiegspunkt-Skript wie das folgende:
@@ -48,7 +48,7 @@ Sie können `MAGE_DIRS` auf eine der folgenden Arten:
   $bootstrap->run($app);
   ```
 
-Im vorherigen Beispiel werden Pfade für `[cache]` und `[media]` Verzeichnisse in `/mnt/nfs/cache` und `/mnt/nfs/media`, bzw.
+Im vorherigen Beispiel werden die Pfade für die Verzeichnisse `[cache]` und `[media]` auf `/mnt/nfs/cache` bzw. `/mnt/nfs/media` gesetzt.
 
 <!-- link definitions -->
 

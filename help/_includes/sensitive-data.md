@@ -13,7 +13,7 @@ Adobe Commerce verschlüsselt Folgendes mit Ihrem Verschlüsselungsschlüssel:
 * Benutzernamen und Kennwörter, die in der Admin-Konfiguration angegeben sind (z. B. Anmeldungen bei Payment Gateways)
 * CAPTCHA-Werte, die über das Netzwerk gesendet werden
 
-Adobe Commerce do *not* encrypt:
+Adobe Commerce verschlüsselt *nicht*:
 
 * Administrations- und Kundenbenutzernamen und -kennwörter (diese Kennwörter werden gehasht)
 * Adresse

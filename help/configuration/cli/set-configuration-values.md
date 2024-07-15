@@ -19,23 +19,23 @@ In diesem Thema werden erweiterte Konfigurationsbefehle erläutert, die Sie für
 - Optional können Sie jede Konfigurationsoption sperren, sodass deren Wert im Admin nicht geändert werden kann
 - Konfigurationsoption ändern, die in der Admin-Konsole gesperrt ist
 
-Sie können diese Befehle verwenden, um die Commerce-Konfiguration manuell oder mithilfe von Skripten festzulegen. Sie können Konfigurationsoptionen mithilfe eines _Konfigurationspfad_, was eine `/`-getrennte Zeichenfolge, die diese Konfigurationsoption eindeutig identifiziert. Sie finden Konfigurationspfade in den folgenden Referenzen:
+Sie können diese Befehle verwenden, um die Commerce-Konfiguration manuell oder mithilfe von Skripten festzulegen. Sie legen Konfigurationsoptionen mit einem _Konfigurationspfad_ fest, bei dem es sich um eine durch `/` getrennte Zeichenfolge handelt, die diese Konfigurationsoption eindeutig identifiziert. Sie finden Konfigurationspfade in den folgenden Referenzen:
 
 - [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md)
 - [Referenz zu Zahlungskonfigurationspfaden](../reference/config-reference-payment.md)
 - [Referenz zu allgemeinen Konfigurationspfaden](../reference/config-reference-general.md)
-- [Referenz zu den Konfigurationspfaden für Commerce Enterprise B2B-Erweiterungen](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B-Erweiterungs-Konfigurationspfade - Referenz](../reference/config-reference-b2b.md)
 
 Sie können Werte zu folgenden Zeiten festlegen:
 
 - Vor der Installation von Commerce können Sie Konfigurationswerte nur für den Standardbereich festlegen, da dies der einzige gültige Bereich ist.
 
-- Nach der Installation von Commerce können Sie Konfigurationswerte für beliebige Website- oder Store-Ansichtsbereiche festlegen.
+- Nach der Installation von Commerce können Sie Konfigurationswerte für beliebige Website- oder Speicheransichtsbereiche festlegen.
 
 Verwenden Sie die folgenden Befehle:
 
-- `bin/magento config:set` legt jeden nicht vertraulichen Konfigurationswert anhand seines Konfigurationspfads fest
-- `bin/magento config:sensitive:set` legt jeden sensiblen Konfigurationswert anhand des Konfigurationspfads fest
+- `bin/magento config:set` legt einen nicht vertraulichen Konfigurationswert anhand seines Konfigurationspfads fest
+- `bin/magento config:sensitive:set` legt einen beliebigen sensiblen Konfigurationswert anhand seines Konfigurationspfads fest
 - `bin/magento config:show` zeigt gespeicherte Konfigurationswerte an; Werte verschlüsselter Einstellungen werden als Sternchen angezeigt
 
 ## Voraussetzungen
@@ -54,27 +54,27 @@ Siehe die folgenden Referenzen:
 - [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](../reference/config-reference-sens.md)
 - [Referenz zu Zahlungskonfigurationspfaden](../reference/config-reference-payment.md)
 - [Andere Konfigurationspfade - Referenz](../reference/config-reference-general.md)
-- [Referenz zu den Konfigurationspfaden für Commerce Enterprise B2B-Erweiterungen](../reference/config-reference-b2b.md)
+- [Commerce Enterprise B2B-Erweiterungs-Konfigurationspfade - Referenz](../reference/config-reference-b2b.md)
 
 ### Suchen des Perimeter-Codes
 
 Sie finden den Perimeter-Code entweder in der Commerce-Datenbank oder im Commerce Admin.
 
-**So suchen Sie den Scope-Code in der Admin-Konsole**:
+**So suchen Sie den Scope-Code im Admin**:
 
 1. Melden Sie sich bei Admin als Benutzer an, der Websites anzeigen und Ansichten speichern kann.
-1. Klicks **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL All Stores]**.
+1. Klicken Sie auf **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL All Stores]**.
 1. Klicken Sie im rechten Bereich auf den Namen der Website- oder Store-Ansicht, um deren Code anzuzeigen.
 
    Die folgende Abbildung zeigt einen Beispiel-Website-Code.
 
-   ![Website- oder Store-Ansichtscode vom Administrator abrufen](../../assets/configuration/website-code.png)
+   ![Abrufen eines Website- oder Store-Ansichtscodes vom Admin](../../assets/configuration/website-code.png)
 
-1. Fahren Sie mit [Werte festlegen](#set-values).
+1. Fahren Sie mit [Festlegen von Werten](#set-values) fort.
 
-**Suchen des Perimeter-Codes in der Datenbank**:
+**So suchen Sie den Perimeter-Code in der Datenbank**:
 
-Der Perimeter-Code für Websites und Store-Ansichten wird in der Commerce-Datenbank im `store_website` und `store` -Tabellen.
+Der Perimeter-Code für Websites und Store-Ansichten wird in der Commerce-Datenbank in den Tabellen `store_website` und `store` gespeichert.
 
 1. Verbindung zur Commerce-Datenbank herstellen.
 
@@ -109,7 +109,7 @@ Der Perimeter-Code für Websites und Store-Ansichten wird in der Commerce-Datenb
    +------------+-------+--------------+------------+------------------+------------+
    ```
 
-   Verwenden Sie den Wert im `code` Spalte.
+   Verwenden Sie den Wert in der Spalte `code` .
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
@@ -127,22 +127,22 @@ bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path value
 ```
 
-Die folgende Tabelle beschreibt die `set` -Befehlsparameter:
+In der folgenden Tabelle werden die Parameter des Befehls `set` beschrieben:
 
 | Parameter | Beschreibung |
 | --- | --- |
-| `--scope` | Der Umfang der Konfiguration. Die möglichen Werte sind `default`, `website`oder `store`. Der Standardwert ist `default`. |
+| `--scope` | Der Umfang der Konfiguration. Die möglichen Werte sind `default`, `website` oder `store`. Der Standardwert ist `default`. |
 | `--scope-code` | Der Code der Konfiguration (Website-Code oder Code der Store-Ansicht) |
-| `-e or --lock-env` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/env.php` -Datei. |
-| `-c or --lock-config` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/config.php` -Datei. Die `--lock-config` Optionsüberschreibungen `--lock-env` , wenn Sie beide Optionen angeben. |
+| `-e or --lock-env` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die Datei &quot;`<Commerce base dir>/app/etc/env.php`&quot;. |
+| `-c or --lock-config` | Entweder wird der Wert gesperrt, damit er nicht im Admin bearbeitet werden kann, oder eine Einstellung, die bereits in Admin gesperrt ist, wird geändert. Der Befehl schreibt den Wert in die Datei &quot;`<Commerce base dir>/app/etc/config.php`&quot;. Die Option `--lock-config` überschreibt `--lock-env`, wenn Sie beide Optionen angeben. |
 | `path` | _Erforderlich_. Der Konfigurationspfad |
 | `value` | _Erforderlich_. Der -Wert der Konfiguration |
 
 >[!INFO]
 >
->Ab Commerce 2.2.4 wird die `--lock-env` und `--lock-config` ersetzen die Optionen `--lock` -Option.
+>Ab Commerce 2.2.4 ersetzen die Optionen `--lock-env` und `--lock-config` die Option `--lock`.
 >
->Wenn Sie die `--lock-env` oder `--lock-config` -Option zum Festlegen oder Ändern eines Werts verwenden Sie die [`bin/magento app:config:import` command](../cli/import-configuration.md) , um die Einstellung zu importieren, bevor Sie auf die Admin- oder Storefront zugreifen.
+>Wenn Sie die Option `--lock-env` oder `--lock-config` verwenden, um einen Wert festzulegen oder zu ändern, müssen Sie den Befehl [`bin/magento app:config:import`](../cli/import-configuration.md) verwenden, um die Einstellung zu importieren, bevor Sie auf die Admin- oder Storefront zugreifen.
 
 Wenn Sie einen falschen Konfigurationspfad eingeben, gibt dieser Befehl einen Fehler zurück
 
@@ -157,7 +157,7 @@ Weitere Informationen finden Sie in einem der folgenden Abschnitte:
 
 ### Festlegen von Konfigurationswerten, die im Admin bearbeitet werden können
 
-Verwendung `bin/magento config:set` _without_ `--lock-env` oder `--lock-config` , um den Wert in die Datenbank zu schreiben. Auf diese Weise festgelegte Werte können in der Admin-Konsole bearbeitet werden.
+Verwenden Sie `bin/magento config:set` _ohne_ `--lock-env` oder `--lock-config`, um den Wert in die Datenbank zu schreiben. Auf diese Weise festgelegte Werte können in der Admin-Konsole bearbeitet werden.
 
 Einige Beispiele zum Festlegen einer Store-Basis-URL:
 
@@ -167,13 +167,13 @@ Legen Sie die Basis-URL für den Standardbereich fest:
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
-Legen Sie die Basis-URL für die `base` Website:
+Legen Sie die Basis-URL für die `base` -Website fest:
 
 ```bash
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
-Legen Sie die Basis-URL für die `test` Store-Ansicht:
+Legen Sie die Basis-URL für die `test` Store-Ansicht fest:
 
 ```bash
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
@@ -181,29 +181,29 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 ### Festlegen von Konfigurationswerten, die nicht im Admin bearbeitet werden können
 
-Wenn Sie die `--lock-env`  wie folgt, speichert der Befehl den Konfigurationswert in `<Commerce base dir>/app/etc/env.php` und deaktiviert das Feld zum Bearbeiten dieses Werts im Admin.
+Wenn Sie die Option `--lock-env` wie folgt verwenden, speichert der Befehl den Konfigurationswert in `<Commerce base dir>/app/etc/env.php` und deaktiviert das Feld zur Bearbeitung dieses Werts im Admin.
 
 ```bash
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
-Sie können die `--lock-env` -Option, um Konfigurationswerte festzulegen, wenn Commerce nicht installiert ist. Sie können jedoch Werte nur für den Standardbereich festlegen.
+Sie können die Option `--lock-env` verwenden, um Konfigurationswerte festzulegen, wenn Commerce nicht installiert ist. Sie können jedoch Werte nur für den Standardbereich festlegen.
 
 >[!INFO]
 >
->Die `env.php` -Datei systemspezifisch ist. Sie sollten es nicht auf ein anderes System übertragen. Sie können damit Konfigurationswerte aus der Datenbank überschreiben. Sie können beispielsweise einen Datenbank-Dump von einem anderen System aus erstellen und die `base_url` und anderen Werten, sodass Sie die Datenbank nicht ändern müssen.
+>Die Datei &quot;`env.php`&quot; ist systemspezifisch. Sie sollten es nicht auf ein anderes System übertragen. Sie können damit Konfigurationswerte aus der Datenbank überschreiben. Sie können beispielsweise einen Datenbank-Dump von einem anderen System erstellen und die Werte `base_url` und andere überschreiben, sodass Sie die Datenbank nicht ändern müssen.
 
-Wenn Sie die `--lock-config` wie folgt, wird der Konfigurationswert unter `<Commerce base dir>/app/etc/config.php`. Das Feld zum Bearbeiten dieses Werts im Admin ist deaktiviert.
+Wenn Sie die Option `--lock-config` wie folgt verwenden, wird der Konfigurationswert in `<Commerce base dir>/app/etc/config.php` gespeichert. Das Feld zum Bearbeiten dieses Werts im Admin ist deaktiviert.
 
 ```bash
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
-Sie können `--lock-config` , um Konfigurationswerte festzulegen, wenn Commerce nicht installiert ist. Sie können jedoch Werte nur für den Standardbereich festlegen.
+Sie können `--lock-config` verwenden, um Konfigurationswerte festzulegen, wenn Commerce nicht installiert ist. Sie können jedoch Werte nur für den Standardbereich festlegen.
 
 >[!INFO]
 >
->Sie können `config.php` in ein anderes System, um dort dieselben Konfigurationswerte zu verwenden. Wenn Sie beispielsweise über ein Testsystem verfügen, verwenden Sie dasselbe `config.php` bedeutet, dass Sie nicht dieselben Konfigurationswerte erneut festlegen müssen.
+>Sie können `config.php` an ein anderes System übertragen, um dort dieselben Konfigurationswerte zu verwenden. Wenn Sie beispielsweise über ein Testsystem verfügen, bedeutet die Verwendung des gleichen `config.php`, dass Sie nicht dieselben Konfigurationswerte erneut festlegen müssen.
 
 ## Wert der Konfigurationseinstellungen anzeigen
 
@@ -215,17 +215,17 @@ bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 
 where
 
-- `--scope` ist der Konfigurationsbereich (Standard, Website, Store). Der Standardwert ist `default`
-- `--scope-code` ist der Code der Konfiguration (Website-Code oder Code der Store-Ansicht)
-- `path` ist der Konfigurationspfad im Format first_part/second_part/third_part/etc (_erforderlich_)
+- `--scope` ist der Umfang der Konfiguration (Standard, Website, Store). Der Standardwert ist `default`
+- `--scope-code` ist der Code für die Konfiguration (Website-Code oder Code für die Store-Ansicht)
+- `path` ist der Konfigurationspfad im Format first_part/second_part/third_part/etc (_required_)
 
 >[!INFO]
 >
->Die `bin/magento config:show` -Befehl zeigt die Werte von [verschlüsselte Werte](../reference/config-reference-sens.md) als eine Reihe von Sternchen: `******`.
+>Der Befehl `bin/magento config:show` zeigt die Werte aller [verschlüsselten Werte](../reference/config-reference-sens.md) als eine Reihe von Sternchen an: `******`.
 
 ### Beispiele
 
-**Alle gespeicherten Konfigurationen anzeigen**:
+**So zeigen Sie alle gespeicherten Konfigurationen an**:
 
 ```bash
 bin/magento config:show
@@ -241,7 +241,7 @@ catalog/category/root_id - 2
 analytics/subscription/enabled - 1
 ```
 
-**Anzeigen aller gespeicherten Konfigurationen für `base` website**:
+**So zeigen Sie alle gespeicherten Konfigurationen für die `base` Website** an:
 
 ```bash
 bin/magento config:show --scope=websites --scope-code=base
@@ -266,7 +266,7 @@ Ergebnis:
 web/unsecure/base_url - http://example.com/
 ```
 
-**So zeigen Sie die Basis-URL für die `base` website**:
+**So zeigen Sie die Basis-URL für die `base` Website** an:
 
 ```bash
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
@@ -278,7 +278,7 @@ Ergebnis:
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
-**So zeigen Sie die Basis-URL für die `default` store**:
+**So zeigen Sie die Basis-URL für den `default` store** an:
 
 ```bash
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
@@ -292,5 +292,5 @@ web/unsecure/base_url - http://example-for-store.com/
 
 >[!INFO]
 >
->Der Gültigkeitscode kann nur Buchstaben (a-z oder A-Z), Zahlen (0-9) und Unterstriche (_) enthalten. Außerdem muss das erste Zeichen ein Brief sein. Wenn bei der Erstellung einer Website- oder Store-Ansicht Groß-/Kleinschreibung oder Kamelzeichen verwendet werden, wird bei der Übereinstimmung intern nicht zwischen Groß- und Kleinschreibung unterschieden, damit Konfigurationseinstellungen über Umgebungsvariablen außer Kraft gesetzt werden können. Siehe [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](../reference/override-config-settings.md#environment-variables).
+>Der Gültigkeitscode kann nur Buchstaben (a-z oder A-Z), Zahlen (0-9) und Unterstriche (_) enthalten. Außerdem muss das erste Zeichen ein Brief sein. Wenn bei der Erstellung einer Website- oder Store-Ansicht Groß-/Kleinschreibung oder Kamelzeichen verwendet werden, wird bei der Übereinstimmung intern nicht zwischen Groß- und Kleinschreibung unterschieden, damit Konfigurationseinstellungen über Umgebungsvariablen außer Kraft gesetzt werden können. Siehe [Umgebungsvariablen verwenden, um Konfigurationseinstellungen zu überschreiben](../reference/override-config-settings.md#environment-variables).
 

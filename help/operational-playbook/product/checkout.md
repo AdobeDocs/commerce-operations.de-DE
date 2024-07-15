@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Der Checkout ist ein wichtiger Bestandteil des Online-Shopping. Hier wird das ec
 
 Der Checkout-Fluss ähnelt der Ziellinie, in der sich Käufer in Kunden umwandeln, die Transaktionen tätigen. Aber selbst ein kleiner Treffer beim Checkout kann einen enormen negativen Einfluss auf die Konversionsrate und den ROI haben, sodass eine Verbesserung der Konversionsrate sogar geringfügig dazu beitragen kann, den ROI massiv zu steigern. Die Verbesserung von Checkout-Flüssen und -Prozessen beginnt bereits vor der Checkout-Seite.
 
-![Checkout-Prozessflussdiagramm](../../assets/playbooks/checkout-diagram.png)
+![Flussdiagramm des Checkout-Prozesses](../../assets/playbooks/checkout-diagram.png)
 
 ## Produktseiten
 
@@ -69,7 +69,7 @@ Erzwingen Sie für den Benutzer nicht einen Optionstyp.
 
 Einzelhändler sollten unterschiedliche Versandmethoden anbieten, um den Bedürfnissen verschiedener Kunden gerecht zu werden.
 
-Neben Zahlungsoptionen können Einzelhändler auch Optionen wie [Klicken und sammeln](click-collect.md).
+Neben den Zahlungsoptionen können Einzelhändler auch Optionen wie [klicken und ](click-collect.md) sammeln.
 
 ## Zahlungsdetails
 

@@ -14,33 +14,33 @@ ht-degree: 5%
 
 Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
 
-- Um die Adobe Commerce-Lebenszyklusrichtlinie zu optimieren und die unternehmenskritischen Anforderungen von Kunden zu unterstützen, wurde das Support-Fenster von Adobe auf drei Jahre ab dem Datum der allgemeinen Verfügbarkeit (GA) für Adobe Commerce 2.4.4 und höher erweitert. Adobe bietet Qualitätsverbesserungen für die Versionen 2.4.4 und höher für einen Zeitraum von drei Jahren an. Kunden können über [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) oder über den Self-Service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenn ihre Version weiterhin für Qualitätsunterstützung infrage kommt. In der folgenden Tabelle finden Sie die Daten zum Ende der Software-Unterstützung für Adobe Commerce-Release-Zeilen.
+- Um die Adobe Commerce-Lebenszyklusrichtlinie zu optimieren und die unternehmenskritischen Anforderungen von Kunden zu unterstützen, wurde das Support-Fenster von Adobe auf drei Jahre ab dem Datum der allgemeinen Verfügbarkeit (GA) für Adobe Commerce 2.4.4 und höher erweitert. Adobe bietet Qualitätsverbesserungen für die Versionen 2.4.4 und höher für einen Zeitraum von drei Jahren an. Kunden können auf Qualitätsverbesserungen zugreifen, indem sie sich an den [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) oder den Self-Service [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenden, wenn ihre Version weiterhin Qualitätsunterstützung erhält. In der folgenden Tabelle finden Sie die Daten zum Ende der Software-Unterstützung für Adobe Commerce-Release-Zeilen.
 
 - Adobe bietet über eine Sicherheits-Patch-Version für die dreijährige Supportzeit Sicherheits-Korrekturen.
 
-- Bei kritischen Sicherheitsproblemen, wie z. B. Schwachstellen ohne Tage, bietet Adobe [Hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) für alle Kunden, die eine unterstützte Version verwenden, auch wenn sie nicht mit der neuesten Patch- oder Sicherheits-Patch-Version arbeiten. Es ist wichtig zu beachten, dass ein Hotfix kein Auffangbehälter ist und nicht alle Sicherheitsprobleme behebt, die durch ein Upgrade auf die neueste Version behoben würden.
+- Bei kritischen Sicherheitsproblemen, wie z. B. null Tage-Sicherheitslücken, stellt Adobe [Hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) für alle Kunden bereit, die eine unterstützte Version verwenden, selbst wenn sie nicht auf der neuesten Patch- oder Sicherheits-Patch-Version stehen. Es ist wichtig zu beachten, dass ein Hotfix kein Auffangbehälter ist und nicht alle Sicherheitsprobleme behebt, die durch ein Upgrade auf die neueste Version behoben würden.
 
-- Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Dienste und Softwareabhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während Kunden die dreijährige Supportzeit für Adobe Commerce nutzen. Siehe [Systemanforderungen](../installation/system-requirements.md) eine vollständige Liste der getesteten und unterstützten Drittanbietertechnologien.
+- Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Dienste und Softwareabhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während Kunden die dreijährige Supportzeit für Adobe Commerce nutzen. Eine vollständige Liste der getesteten und unterstützten Drittanbietertechnologien finden Sie unter [Systemanforderungen](../installation/system-requirements.md) .
 
 - Adobe bietet Kompatibilität mit Drittanbieterdiensten und Softwareabhängigkeiten, während Kunden die dreijährige Supportzeit für Adobe Commerce im Rahmen von reinen Sicherheits-Patch-Versionen nutzen, jedoch nur, wenn dies möglich ist, ohne dass rückwärtskompatible Änderungen vorgenommen werden.
 
 ## Ende der Software-Unterstützung
 
-| Version | Allgemeine Verfügbarkeit | Ende der Software-Unterstützung<sup>1</sup> | Abhängige PHP-Version | Abhängige MariaDB-Version |
+| Version | Allgemeine Verfügbarkeit | Ende der Softwareunterstützung<sup>1</sup> | Abhängige PHP-Version | Abhängige MariaDB-Version |
 |----------------------|----------------------|-------------------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 9. April 2024 | 9. April 2027 | 8.2 und 8.3 | 10,6 |
 | Adobe Commerce 2.4.6 | 14. März 2023 | 14. März 2026 | 8.1 und 8.2 | 10,6 |
-| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 8,1 | Artikel 10 Absatz 5<sup>2</sup> |
-| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 8,1 | Artikel 10 Absatz 5<sup>3</sup> |
+| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 8,1 | 10,5<sup>2</sup> |
+| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 8,1 | 10,5<sup>3</sup> |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->- <sup>1</sup> Das Ende der Software-Unterstützung umfasst sowohl das Ende von Qualitätsverbesserungen als auch das Ende von Sicherheitskorrekturen.
->- <sup>2</sup> Beginnend mit dem 2.4.5-p8 Sicherheits-Patch.
->- <sup>3</sup> Beginnend mit dem 2.4.4-p9 Sicherheits-Patch.
->- Siehe [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+>- <sup>1</sup> Das Ende der Softwareunterstützung umfasst sowohl das Ende von Qualitätsverbesserungen als auch das Ende von Sicherheitskorrekturen.
+>- <sup>2</sup> Beginnend mit dem 2.4.5-p8-Sicherheits-Patch.
+>- <sup>3</sup> Beginnend mit dem 2.4.4-p9-Sicherheits-Patch.
+>- Siehe [Software-Lebenszyklusrichtlinie](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
 <thead>
@@ -109,7 +109,7 @@ Für Adobe Commerce 2.4.4 und nachfolgende Versionen:
 </tbody>
 </table>
 
-**Schlüssel**
+**key**
 
 <table style="table-layout:auto">
  <tbody>

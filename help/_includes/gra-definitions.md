@@ -9,4 +9,4 @@ ht-degree: 0%
 
 - **Globale Referenzarchitektur (GRA)**: Wird auch als White Label Architecture oder Common Code Base bezeichnet. Dies ist die Modulverteilungsarchitektur für eine Einrichtung mit mehreren Instanzen.
 - **Einrichtung mehrerer Instanzen**: Derselbe Client verwendet separate Adobe Commerce-Installationen für verschiedene Regionen oder Marken. Jede Installation verfügt über gemeinsame und eindeutige Module.
-- **Setup einer Einzelinstanz**: Es gibt nur eine Adobe Commerce-Installation. Für verschiedene Testumgebungen können mehrere Kopien des Quellcodes vorhanden sein, es gibt jedoch nur eine Version des Produktionscodes.
+- **Setup einer Instanz**: Es gibt nur eine Adobe Commerce-Installation. Für verschiedene Testumgebungen können mehrere Kopien des Quellcodes vorhanden sein, es gibt jedoch nur eine Version des Produktionscodes.

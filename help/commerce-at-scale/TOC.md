@@ -4,8 +4,8 @@ user-guide-description: Erfahren Sie, wie Sie unter Verwendung von Adobe Commerc
 feature: Integration
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '51'
-ht-degree: 49%
+source-wordcount: '46'
+ht-degree: 54%
 
 ---
 
@@ -19,4 +19,4 @@ ht-degree: 49%
 - [Leistungsoptimierung von Adobe Commerce](default-settings.md)
 - [Tipps zu Leistungstests](launch.md)
 - [Schlussfolgerung](conclusion.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie den Code-Compiler über die Befehlszeile ausf
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Die Codekompilierung umfasst Folgendes (in keiner bestimmten Reihenfolge):
 - Code-Generierung von Repositorys (generierter Code für APIs)
 - Generierung von Dienstdatenattributen (generierte Erweiterungsklassen für Datenobjekte)
 
-Sie finden Code-Kompilierungsklassen in der [\Magento\Setup\Module\Di\App\Task\Operation][operation] Namespace.
+Sie finden Code-Kompilierungsklassen im Namespace [\Magento\Setup\Module\Di\App\Task\Operation][operation] .
 
 So führen Sie den Einzelmandanten-Compiler aus:
 
@@ -44,7 +44,7 @@ In einigen Fällen möchten Sie möglicherweise Code kompilieren, bevor Sie die 
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Verwenden Sie die `[-c|--clear-static-content]` Option zum Löschen von statischem Inhalt. Dies ist erforderlich, wenn Sie zuvor Module aktiviert oder deaktiviert haben und den zuvor für sie generierten statischen Inhalt löschen müssen.
+   Verwenden Sie die Option &quot;`[-c|--clear-static-content]`&quot;, um statischen Inhalt zu löschen. Dies ist erforderlich, wenn Sie zuvor Module aktiviert oder deaktiviert haben und den zuvor für sie generierten statischen Inhalt löschen müssen.
 
    Siehe [Module aktivieren](../../installation/tutorials/manage-modules.md).
 
@@ -58,7 +58,7 @@ In einigen Fällen möchten Sie möglicherweise Code kompilieren, bevor Sie die 
    Generated code and dependency injection configuration successfully.
    ```
 
-Informationen zum Kompilieren von Code ohne Datenbank finden Sie unter [Bereitstellen von statischen Ansichtsdateien ohne Installieren von Magento](../cli/static-view-file-deployment.md).
+Informationen zum Kompilieren von Code ohne Datenbank finden Sie unter [Bereitstellen von statischen Ansichtsdateien ohne Installation von Magento](../cli/static-view-file-deployment.md).
 
 <!-- link definitions -->
 

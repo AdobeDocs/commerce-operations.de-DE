@@ -4,7 +4,7 @@ description: Verschaffen Sie sich einen Wettbewerbsvorteil, indem Sie eine Strat
 exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ Dynamische Preisgestaltung ist eine responsive Preisstrategie, bei der sich der 
 
 Es gibt drei Faktoren, die die dynamische Preisgestaltung beeinflussen:
 
-- **Branche**—Einzelhändler müssen überprüfen, welcher der grundlegendste Preis eines Produkts unter anderen Marken ist.
+- **Branche**: Einzelhändler müssen überprüfen, welcher der grundlegendste Preis eines Produkts unter anderen Marken ist.
 
-- **Markt**—Wie sieht das aktuelle Angebot und die aktuelle Nachfrage aus? Was ist das prognostizierte Angebot und die vorhergesagte Nachfrage?
+- **Markt**: Wie sieht das aktuelle Angebot und die aktuelle Nachfrage aus? Was ist das prognostizierte Angebot und die vorhergesagte Nachfrage?
 
-- **Kunden**- Wie verhält sich der Kunde beim Einkauf? Wie hoch ist der Preis, den der Kunde für ein Produkt zu zahlen bereit ist.
+- **Kunden** - Welches Kaufverhalten hat der Kunde? Wie hoch ist der Preis, den der Kunde für ein Produkt zu zahlen bereit ist.
 
 Bei der Erarbeitung einer dynamischen Preisstrategie müssen Sie jeden Aspekt berücksichtigen.
 

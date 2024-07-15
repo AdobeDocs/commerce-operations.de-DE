@@ -20,14 +20,14 @@ Klicken Sie auf einen Link, um eine Checkliste herunterzuladen:
 - [Fälligkeit](../../assets/playbooks/checklists/maturity.pptx)
 - [Live-Schaltung](../../assets/playbooks/checklists/go-live.pptx)
 - [Leistung](../../assets/playbooks/checklists/performance.pptx)
-- [Migration von Commerce-Plattformen](../../assets/playbooks/checklists/commerce-platform-migration.pptx)
+- [Migration der Commerce-Plattform](../../assets/playbooks/checklists/commerce-platform-migration.pptx)
 
 ## Commerce-Vorlagen
 
 Klicken Sie auf einen Link, um eine Vorlage herunterzuladen:
 
 - [Anforderungen für den Vorworkshop-Fragebogen](../../assets/playbooks/templates/requirements-questionnaire.pptx)
-- [Dokument zur Handelsstrategie](../../assets/playbooks/templates/commerce-strategy-document.pptx)
+- [Commerce-Strategiedokument](../../assets/playbooks/templates/commerce-strategy-document.pptx)
 - [Einsatzbereitschaft des E-Commerce](../../assets/playbooks/templates/ecommerce-operational-readiness.pptx)
 - [Funktionen der E-Commerce-Plattform](../../assets/playbooks/templates/ecommerce-platform-features.pptx)
 - [Eigene-site-Bewertung für Händler](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)

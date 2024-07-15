@@ -14,7 +14,7 @@ ht-degree: 0%
             Standarderweiterungen
         </th>
         <th>
-            Installierte Erweiterungen, die nicht entfernt werden können
+            Installierte Erweiterungen, die nicht deinstalliert werden können
         </th>
         <th>
             Erweiterungen, die bei Bedarf installiert und deinstalliert werden können
@@ -25,83 +25,83 @@ ht-degree: 0%
         <tr>
             <td>
                 bcmath<br>
-                BZ2<br>
-                Kalender<br>
-                Exif<br>
-                GD<br>
-                getText<br>
+                bz2<br>
+                calendar<br>
+                exif<br>
+                gd<br>
+                gettext<br>
                 intl<br>
                 libxml<br>
-                MySQL<br>
+                mysqli<br>
                 opcache<br>
-                Schaukelstuhl<br>
-                PCNTL<br>
+                openswool<br>
+                pcntl<br>
                 pdo_mysql<br>
-                Reflexion<br>
-                Seife<br>
-                Steckdosen<br>
+                Abbildung<br>
+                soap<br>
+                sockets<br>
                 SPL<br>
-                Standard<br>
+                standard<br>
                 sysvmsg<br>
-                System<br>
+                sysvsem<br>
                 sysvshm<br>
-                PLZ<br>
+                zip<br>
                 zlib<br>
             </td>
             <td>
                 ctype<br>
-                Locken drehen<br>
-                Datum<br>
-                DBA<br>
-                DOM<br>
-                fileInfo<br>
-                Filter<br>
-                FTP<br>
-                hacken<br>
-                Iconv<br>
-                JSON<br>
-                MBstring<br>
+                curl<br>
+                date<br>
+                dba<br>
+                dom<br>
+                fileinfo<br>
+                filter<br>
+                ftp<br>
+                hash<br>
+                iconv<br>
+                json<br>
+                mbstring<br>
                 mysqlnd<br>
                 openssl<br>
-                PCRE<br>
-                GUB<br>
+                pcre<br>
+                pdo<br>
                 pdo_sqlite<br>
-                PHAR<br>
+                phar<br>
                 posix<br>
-                Lidlinie<br>
-                Sitzung<br>
+                readline<br>
+                session<br>
                 sqlite3<br>
-                Tokenizer<br>
-                XML<br>
-                xmlReader<br>
-                xmlWriter<br>
+                tokenizer<br>
+                xml<br>
+                xmlreader<br>
+                xmlwriter<br>
             </td>
             <td>
-                GeoIP<br>
-                GMP<br>
-                binär<br>
-                imaginär<br>
-                IMAP<br>
-                LDAP<br>
+                geoip<br>
+                gmp<br>
+                igbinary<br>
+                imagick<br>
+                imap<br>
+                ldap<br>
                 mailparse<br>
                 mcrypt<br>
-                MsgPack<br>
-                MySQL<br>
-                OAuth<br>
+                msgpack<br>
+                mysqli<br>
+                oauth<br>
                 pdo_mysql<br>
-                Profi<br>
-                Zauberwort<br>
-                Graf<br>
-                umkodieren<br>
-                Redis<br>
-                Verkaufsstellen<br>
+                propro<br>
+                pspell<br>
+                raphf<br>
+                recde<br>
+                reds<br>
+                Shmop-Sockets<br>
                 Natrium<br>
-                SSH2<br>
-                aufgeräumt<br>
+                ssh2<br>
+                tidy<br>
                 xdebug<br>
                 xmlrpc<br>
                 xsl<br>
-                YAML<br>
+                yaml<br>
             </td>
         </tr>
     </tbody>

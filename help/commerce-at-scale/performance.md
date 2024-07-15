@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Der AEM Dispatcher ist ein Reverse-Proxy, mit dem eine Umgebung bereitgestellt werden kann, die sowohl schnell als auch dynamisch ist. Es funktioniert als Teil eines statischen HTML-Servers, wie z. B. Apache HTTP Server, mit dem Ziel, einen möglichst großen Teil des Site-Inhalts in Form von statischen Ressourcen zu speichern (oder &quot;zwischenspeichern&quot;). Mit diesem Ansatz soll die Notwendigkeit, so weit wie möglich auf die AEM Seitenrendering-Funktion und den Adobe Commerce GraphQL-Dienst zuzugreifen, minimiert werden. Das Ergebnis der Bereitstellung eines großen Teils der Seiten als statisches HTML, CSS und JS bietet Benutzern Leistungsvorteile und reduziert die Infrastrukturanforderungen in der Umgebung. Jede Seite oder Abfrage, die von Benutzer zu Benutzer mit hoher Wahrscheinlichkeit identisch wiederholt wird, sollte für die Zwischenspeicherung berücksichtigt werden.
 
-Die folgenden Abschnitte zeigen auf hoher Ebene den empfohlenen technischen Fokusbereich, der überprüft werden soll, um eine effektive Zwischenspeicherung in AEM CIF/Adobe Commerce-Umgebung zu ermöglichen.
+Die folgenden Abschnitte zeigen auf hoher Ebene den empfohlenen technischen Fokusbereich, der überprüft werden soll, um eine effektive Zwischenspeicherung in AEM einer CIF/Adobe Commerce-Umgebung zu ermöglichen.
 
 ## TTL-basierte Zwischenspeicherung auf AEM Dispatcher
 
-Das Caching eines möglichst großen Teils der Website auf den Dispatchern ist Best Practice für AEM Projekt. Durch die Verwendung der zeitbasierten Cache-Invalidierung werden serverseitig gerenderte CIF-Seiten für eine bestimmte begrenzte Zeit zwischengespeichert. Nachdem die festgelegte Zeit abgelaufen ist, erstellt die nächste Anfrage die Seite vom AEM Publisher und Adobe Commerce GraphQL neu und speichert sie bis zur nächsten Invalidierung erneut im Dispatcher-Cache.
+Das Caching eines möglichst großen Teils der Website auf den Dispatchern ist Best Practice für AEM Projekt. Durch die Verwendung der zeitbasierten Cache-Invalidierung werden Server-seitig gerenderte CIF für eine bestimmte Dauer zwischengespeichert. Nachdem die festgelegte Zeit abgelaufen ist, erstellt die nächste Anfrage die Seite vom AEM Publisher und Adobe Commerce GraphQL neu und speichert sie bis zur nächsten Invalidierung erneut im Dispatcher-Cache.
 
-Die TTL-Caching-Funktion kann in AEM mit der Verwendung der &quot;Dispatcher TTL&quot;-Komponente innerhalb des ACS AEM Commons-Pakets und der Einstellung /enableTTL &quot;1&quot;in der Konfigurationsdatei dispatcher.any konfiguriert werden.
+Die TTL-Caching-Funktion kann in AEM konfiguriert werden, indem die &quot;Dispatcher TTL&quot;-Komponente innerhalb des ACS AEM Commons-Pakets verwendet und /enableTTL &quot;1&quot; in der Konfigurationsdatei dispatcher.any festgelegt wird.
 
 Wenn diese Option aktiviert ist, bewertet der Dispatcher die Antwortheader aus dem Backend. Wenn sie ein maximales Alter von Cache-Control oder ein Ablaufdatum enthalten, wird eine leere Hilfsdatei neben der Cachedatei erstellt, deren Änderungszeitpunkt dem Ablaufdatum entspricht. Wenn die zwischengespeicherte Datei nach dem Änderungszeitpunkt angefordert wird, wird sie automatisch erneut vom Backend angefordert. Dies bietet einen wirksamen Caching-Mechanismus, der kein manuelles Eingreifen oder keine Wartung erfordert, sobald die Produktaktualisierungsverzögerung (TTL) von den Interessenträgern im Unternehmen anerkannt und akzeptiert wurde.
 
@@ -29,20 +29,20 @@ Wenn diese Option aktiviert ist, bewertet der Dispatcher die Antwortheader aus d
 
 Der oben beschriebene Dispatcher-TTL-Ansatz reduziert die Anforderungen und lädt auf den Publisher. Es gibt jedoch einige Assets, die sich sehr wahrscheinlich nicht ändern werden. Daher können sogar Anforderungen an den Dispatcher reduziert werden, indem relevante Dateien lokal im Browser eines Benutzers zwischengespeichert werden. Beispielsweise muss das Logo der Site, das auf jeder Seite der Site in der Site-Vorlage angezeigt wird, nicht jedes Mal an den Dispatcher angefordert werden. Dies kann stattdessen im Browser-Cache des Benutzers gespeichert werden. Die Verringerung der Bandbreitenanforderungen für jedes Laden von Seiten hätte einen großen Einfluss auf die Reaktionsschnelligkeit der Website und die Seitenladezeiten.
 
-Die Zwischenspeicherung auf Browserebene erfolgt normalerweise über den Antwortheader &quot;Cache-Control: max-age=&quot;. Die Maxage-Einstellung teilt dem Browser mit, für wie viele Sekunden die Datei zwischengespeichert werden soll, bevor er versucht, sie erneut zu &quot;überprüfen&quot;oder von der Site anzufordern. Dieses Konzept der Cache-Maximaldauer wird häufig als &quot;Cache Expiration&quot;oder TTL (&quot;Time to Live&quot;) bezeichnet. Skaliertes Bereitstellen von Commerce-Erlebnissen - Mit Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
+Die Zwischenspeicherung auf Browserebene erfolgt normalerweise über den Antwortheader &quot;Cache-Control: max-age=&quot;. Die Maxage-Einstellung teilt dem Browser mit, für wie viele Sekunden die Datei zwischengespeichert werden soll, bevor er versucht, sie erneut zu &quot;überprüfen&quot;oder von der Site anzufordern. Dieses Konzept der Cache-Maximaldauer wird häufig als &quot;Cache Expiration&quot;oder TTL (&quot;Time to Live&quot;) bezeichnet. Skaliertes Bereitstellen von Commerce-Erlebnissen - Mit Adobe Experience Manager, Commerce integration framework, Adobe Commerce 7
 
 Zu den Bereichen einer AEM/CIF/Adobe Commerce-Site, die im Browser des Kunden zwischengespeichert werden können, gehören:
 
 - Bilder (innerhalb der AEM Vorlage selbst, z. B. Website-Logo und Vorlagen-Design-Bilder - Katalogproduktbilder werden von Adobe Commerce über Fastly abgerufen, die Zwischenspeicherung dieser Bilder wird später besprochen)
 - HTML-Dateien (für selten geänderte Seiten - Seiten mit Nutzungsbedingungen usw.)
 - CSS-Dateien
-- Alle Site-JavaScript-Dateien - einschließlich CIF-JavaScript-Dateien
+- Alle Site-JavaScript-Dateien, einschließlich CIF JavaScript-Dateien
 
-## Optimierung der Dispatcher-Statusebene und Übergangsphase
+## Dispatcher statfilelevel and bd grace period optimize
 
-Die standardmäßige Dispatcher-Konfiguration verwendet die Einstellung /statfilelevel &quot;0&quot;. Das bedeutet, dass eine einzelne &quot;.stat&quot;-Datei im Stammverzeichnis von htdocs (Basisverzeichnis des Dokuments) gespeichert wird. Wenn eine Seite oder Datei in AEM geändert wird, wird die Änderungszeit dieser einzelnen stat-Datei auf den Zeitpunkt der Änderung aktualisiert. Wenn die Zeit kürzer ist als die Bearbeitungszeit der Ressource, berücksichtigt der Dispatcher, dass alle Ressourcen invalidiert wurden und jede nachfolgende Anforderung einer invalidierten Ressource einen Aufruf an die Veröffentlichungsinstanz Trigger. Mit dieser Einstellung wird also bei jeder Aktivierung der gesamte Cache invalidiert.
+Die standardmäßige Dispatcher-Konfiguration verwendet die Einstellung /statfilelevel &quot;0&quot;. Das bedeutet, dass eine einzelne &quot;.stat&quot;-Datei im Stammverzeichnis von htdocs (Basisverzeichnis des Dokuments) gespeichert wird. Wenn eine Seite oder Datei in AEM geändert wird, wird die Änderungszeit dieser einzelnen stat-Datei auf den Zeitpunkt der Änderung aktualisiert. Wenn die Zeit kürzer ist als die Bearbeitungszeit der Ressource, berücksichtigt der Dispatcher, dass alle Ressourcen invalidiert wurden und jede nachfolgende Anforderung einer invalidierten Ressource einen Aufruf an die Publish-Instanz Trigger. Mit dieser Einstellung wird also bei jeder Aktivierung der gesamte Cache invalidiert.
 
-Für jede Site, insbesondere Commerce-Sites mit hoher Auslastung, würde dies eine unnötige Menge an Last auf die AEM Veröffentlichungsstufe bringen, damit die gesamte Site-Struktur mit nur einer einzelnen Seitenaktualisierung invalidiert wird.
+Für jede Site, insbesondere Commerce-Sites mit hoher Auslastung, würde dies eine unnötige Menge an Last auf die Publish-Ebene AEM, damit die gesamte Site-Struktur durch nur eine Seitenaktualisierung invalidiert wird.
 
 Stattdessen kann die Einstellung statfilelevel in einen höheren Wert geändert werden, der der Tiefe der Unterverzeichnisse im htdocs-Verzeichnis aus dem Basisverzeichnis des Dokuments entspricht. Wenn eine Datei auf einer bestimmten Ebene invalidiert wird, werden nur Dateien auf dieser .stat-Ordnerebene und darunter aktualisiert.
 
@@ -68,11 +68,12 @@ Eine weitere Dispatcher-Einstellung, die beim Konfigurieren der statfilelevel-Ei
 
 >[!NOTE]
 >
-> Weitere detaillierte Informationen zu diesem Thema finden Sie im [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) GitHub-Repository.
+> Weitere detaillierte Informationen zu diesem Thema finden Sie im GitHub-Repository [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) .
 
 ## CIF - GraphQL-Zwischenspeicherung über Komponenten
 
-Einzelne Komponenten in AEM können als zwischengespeichert festgelegt werden. Das bedeutet, dass die GraphQL-Anfrage an Adobe Commerce einmal aufgerufen wird und anschließend bis zum konfigurierten Zeitlimit nachfolgende Anforderungen aus dem AEM Cache abgerufen werden und keine weiteren Ladevorgänge für Adobe Commerce durchführen. Beispiele wären eine Site-Navigation basierend auf einem Kategorienbaum, der auf jeder Seite angezeigt wird, und Optionen innerhalb einer facettierten Suchfunktion. Dies sind nur zwei Bereiche, für die ressourcenintensive Abfragen in Adobe Commerce erstellt werden müssen, aber es ist unwahrscheinlich, dass sie sich regelmäßig ändern, und daher wäre eine gute Auswahl für das Caching. Auf diese Weise würde beispielsweise die ressourcenintensive GraphQL-Anforderung für den Navigations-Build Adobe Commerce nicht treffen und aus dem GraphQL-Cache auf AEM CIF abgerufen werden, selbst wenn eine PDP oder PLP vom Publisher neu erstellt wird.
+Einzelne Komponenten in AEM können als zwischengespeichert festgelegt werden, was bedeutet, dass die GraphQL-Anfrage an Adobe gesendet wird.
+Commerce wird einmal aufgerufen und dann werden nachfolgende Anforderungen bis zum konfigurierten Zeitlimit aus dem AEM-Cache abgerufen und nicht weiter in Adobe Commerce geladen. Beispiele wären eine Site-Navigation basierend auf einem Kategorienbaum, der auf jeder Seite angezeigt wird, und Optionen innerhalb einer facettierten Suchfunktion. Dies sind nur zwei Bereiche, für die ressourcenintensive Abfragen in Adobe Commerce erstellt werden müssen, aber es ist unwahrscheinlich, dass sie sich regelmäßig ändern, und daher wäre eine gute Auswahl für das Caching. Auf diese Weise würde beispielsweise die ressourcenintensive GraphQL-Anforderung für den Navigations-Build Adobe Commerce nicht treffen und vom GraphQL-Cache auf AEM CIF abgerufen werden, selbst wenn eine PDP oder PLP vom Publisher neu erstellt wird.
 
 Nachfolgend finden Sie ein Beispiel dafür, dass die Navigationskomponente zwischengespeichert wird, da sie auf allen Seiten der Site dieselbe GraphQL-Abfrage sendet. Die folgende Anfrage speichert die letzten 100 Einträge für 10 Minuten für die Navigationsstruktur zwischen:
 
@@ -88,7 +89,8 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 
 Die Anforderung einschließlich aller benutzerdefinierten HTTP-Header und -Variablen muss exakt übereinstimmen, damit der Cache &quot;Treffer&quot;erhält und ein erneuter Aufruf an Adobe Commerce verhindert wird. Es sollte darauf hingewiesen werden, dass es nach dem Festlegen nicht einfach ist, diesen Cache manuell zu invalidieren. Dies könnte bedeuten, dass beim Hinzufügen einer neuen Kategorie in Adobe Commerce diese erst dann in der Navigation angezeigt wird, wenn die im obigen Cache festgelegte Ablaufzeit abgelaufen ist und die GraphQL-Anforderung aktualisiert wurde. Dasselbe für Suchfacetten. Angesichts der Leistungsvorteile, die durch diese Zwischenspeicherung erzielt werden müssen, ist dies normalerweise ein akzeptabler Kompromiss.
 
-Die obigen Zwischenspeicherungsoptionen können mithilfe der AEM OSGi-Konfigurationskonsole in &quot;GraphQL Client Configuration Factory&quot;festgelegt werden. Jeder Cache-Konfigurationseintrag kann im folgenden Format angegeben werden:
+Die oben genannten Zwischenspeicherungsoptionen können mithilfe der AEM OSGi-Konfigurationskonsole in &quot;GraphQL Client&quot;festgelegt werden
+Konfigurationsfactory&quot;. Jeder Cache-Konfigurationseintrag kann im folgenden Format angegeben werden:
 
 ```
 * NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
@@ -100,7 +102,7 @@ Die obigen Zwischenspeicherungsoptionen können mithilfe der AEM OSGi-Konfigurat
 
 ## Hybrides Caching - clientseitige GraphQL-Anforderungen innerhalb zwischengespeicherter Dispatcher-Seiten
 
-Es ist auch möglich, beim Zwischenspeichern von Seiten einen hybriden Ansatz zu wählen: Eine CIF-Seite kann Komponenten enthalten, die immer die neuesten Informationen von Adobe Commerce direkt vom Browser des Kunden anfordern. Dies kann für bestimmte Bereiche der Seite innerhalb einer Vorlage nützlich sein, die unbedingt mit Echtzeitinformationen aktualisiert werden müssen: Produktpreise innerhalb einer Produktdetailseite, z. B. Wenn sich die Preise aufgrund eines dynamischen Preisabgleichs häufig ändern, können diese Informationen so konfiguriert werden, dass sie nicht auf dem Dispatcher zwischengespeichert werden. Stattdessen können die Preise im Kundenbrowser direkt über GraphQL-APIs mit AEM CIF-Webkomponenten aus Adobe Commerce abgerufen werden.
+Es ist auch möglich, beim Zwischenspeichern von Seiten einen hybriden Ansatz zu wählen: Eine CIF Seite kann Komponenten enthalten, die immer die neuesten Informationen von Adobe Commerce direkt über den Browser des Kunden anfordern. Dies kann für bestimmte Bereiche der Seite innerhalb einer Vorlage nützlich sein, die unbedingt mit Echtzeitinformationen aktualisiert werden müssen: Produktpreise innerhalb einer Produktdetailseite, z. B. Wenn sich die Preise aufgrund eines dynamischen Preisabgleichs häufig ändern, können diese Informationen so konfiguriert werden, dass sie nicht auf dem Dispatcher zwischengespeichert werden. Stattdessen können die Preise im Kundenbrowser direkt über GraphQL-APIs mit AEM Web-Komponenten aus Adobe Commerce abgerufen werden.
 
 Dies kann über die Einstellungen der AEM-Komponenten konfiguriert werden. Informationen zu Preisen auf Produktlistenseiten finden Sie in der Produktlistenvorlage. Wählen Sie dazu die Produktlistenkomponente in den Seiteneinstellungen aus und aktivieren Sie die Option &quot;Preise laden&quot;. Derselbe Ansatz würde für die Lagerbestände funktionieren.
 
@@ -128,12 +130,12 @@ Bei einem Aufprallereignis kann dies sogar dazu führen, dass die AEM Publisher 
 
 >[!NOTE]
 >
->Weitere Informationen über die Bedeutung der Festlegung `ignoreUrlParams` finden Sie im Abschnitt [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) GitHub-Repository.
+>Weitere Informationen zur Wichtigkeit der Festlegung von `ignoreUrlParams` finden Sie im GitHub-Repository [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) .
 
 Es sollte daher so konfiguriert werden, dass alle Parameter standardmäßig in &quot;ignoreUrlParams&quot;ignoriert werden, es sei denn, es wird ein GET-Parameter verwendet, der die Seitenstruktur ändert. Ein Beispiel hierfür wäre eine Suchseite, auf der der Suchbegriff als GET-Parameter in der URL enthalten ist. In diesem Fall sollten Sie dann manuell ignoreUrlParams konfigurieren, um Parameter wie gclid, fbclid und andere Tracking-Parameter, die Ihre Werbekanäle verwenden, zu ignorieren, wobei die für normale Site-Vorgänge erforderlichen GET Parameter unberührt bleiben.
 
 ## Begrenzung der Zahl der MPM-Mitarbeiter auf Dispatcher
 
-Bei den MPM-Worker-Einstellungen handelt es sich um eine erweiterte Apache-HTTP-Serverkonfiguration, die gründliche Tests erfordert, um die Optimierung auf der Grundlage der verfügbaren CPU und RAM Ihres Dispatchers zu ermöglichen. Im Rahmen dieses Whitepaper empfehlen wir jedoch, ServerLimit und MaxRequestWorkers so weit zu erweitern, dass die verfügbare CPU und der verfügbare RAM des Servers unterstützt werden, und anschließend die MinSpareThreads und MaxSpareThreads auf ein Niveau zu erhöhen, das den MaxRequestWorkers entspricht.
+Die MPM-Worker-Einstellungen sind eine erweiterte Apache-HTTP-Serverkonfiguration, die gründliche Tests erfordern würde, um die Optimierung auf der Grundlage der verfügbaren CPU und des verfügbaren RAM-Speichers von Dispatcher zu ermöglichen. Im Rahmen dieses Whitepaper empfehlen wir jedoch, ServerLimit und MaxRequestWorkers so weit zu erweitern, dass die verfügbare CPU und der verfügbare RAM des Servers unterstützt werden, und anschließend die MinSpareThreads und MaxSpareThreads auf ein Niveau zu erhöhen, das den MaxRequestWorkers entspricht.
 
 Bei dieser Konfiguration würde Apache HTTP eine &quot;vollständige Bereitschaftseinstellung&quot;aufweisen, bei der es sich um eine Hochleistungskonfiguration für Server mit beträchtlichem RAM und mehreren CPU-Kernen handelt. Diese Konfiguration erzeugt die bestmöglichen Reaktionszeiten von Apache HTTP, indem persistente offene Verbindungen, die für Anfragen bereit sind, beibehalten werden. Außerdem würde sie Verzögerungen beim Erstellen neuer Prozesse als Reaktion auf plötzliche Traffic-Spitzen, z. B. bei Flash-Verkäufen, beseitigen.

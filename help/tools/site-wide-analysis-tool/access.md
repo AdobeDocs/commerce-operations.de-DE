@@ -1,97 +1,97 @@
 ---
-title: Zugriff [!DNL Site-Wide Analysis Tool]
-description: Erfahren Sie, wie Sie auf die [!DNL Site-Wide Analysis Tool]
+title: Zugriff auf [!DNL Site-Wide Analysis Tool]
+description: Erfahren Sie, wie Sie auf den [!DNL Site-Wide Analysis Tool] zugreifen.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
 source-git-commit: 5f9f81b930a3b23c0b334ccbea94d296338a0048
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
 # Zugriff auf die [!DNL Site-Wide Analysis Tool]
 
-Es gibt zwei Möglichkeiten, auf die [!DNL Site-Wide Analysis Tool Dashboard].
+Es gibt zwei Möglichkeiten, auf den [!DNL Site-Wide Analysis Tool Dashboard] zuzugreifen.
 
-Sie können auf die [!DNL dashboard] von der [[!DNL Site-Wide Analysis Tool] Webseite](https://supportinsights.adobe.com/commerce) directly **(nur für Adobe Commerce auf Cloud-Infrastruktur)** und melden Sie sich mit Ihrer Adobe ID an oder greifen Sie über die [!DNL dashboard] aus dem Geschäft [!DNL Admin Panel].
+Sie können entweder von der [[!DNL Site-Wide Analysis Tool] Website](https://supportinsights.adobe.com/commerce) direkt **(nur für Adobe Commerce in der Cloud-Infrastruktur) aus auf die [!DNL dashboard] zugreifen und sich bei Ihrer Adobe ID anmelden oder über die [!DNL dashboard] von der [!DNL Admin Panel] Ihres Stores aus auf die Datei zugreifen.**
 
-Die [!DNL Site-Wide Analysis Tool] -Dienst verfügbar unter [Produktionsmodus](https://docs.magento.com/user-guide/magento/installation-modes.html) für [!DNL Admin] Benutzer mit Zugriffsberechtigung für Benutzer [Rollenressourcen](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Der Dienst [!DNL Site-Wide Analysis Tool] ist im [Produktionsmodus](https://docs.magento.com/user-guide/magento/installation-modes.html) für [!DNL Admin] -Benutzer mit Zugriffsberechtigung auf Benutzer [Benutzerrollenressourcen](https://docs.magento.com/user-guide/system/permissions-user-roles.html) verfügbar.
 
 >[!NOTE]
 >
->Wenn Sie eine lokale Installation von Adobe Commerce haben, müssen Sie eine [Agent](../site-wide-analysis-tool/installation.md) in Ihrer Infrastruktur, um das Tool zu verwenden.
+>Wenn Sie eine lokale Installation von Adobe Commerce haben, müssen Sie einen [Agenten](../site-wide-analysis-tool/installation.md) in Ihrer Infrastruktur installieren, um das Tool zu verwenden.
 
-![Dashboard für Site-weite Analysen](../../assets/tools/site-wide-analysis-tool-dashboard.png)
+![ Dashboard für eine Site-weite Analyse](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]Dashboard*
 
-## Option 1: Anmeldung bei Ihrer [!DNL Site-Wide Analysis Tool Dashboard] direkt aus dem [!DNL Site-Wide Analysis Tool] Domäne (nur für Adobe Commerce auf Cloud-Infrastruktur)
+## Option 1: Anmeldung bei Ihrem [!DNL Site-Wide Analysis Tool Dashboard] direkt über die Domäne [!DNL Site-Wide Analysis Tool] (nur für Adobe Commerce über die Cloud-Infrastruktur)
 
-Ein **[!DNL Adobe ID]ist erforderlich** für den Zugriff auf [!DNL Commerce] -Konto.
-Wenn Sie bereits über eine [!DNL Commerce] -Konto, Sie haben jedoch keine [!DNL Adobe ID], können Sie eine während des Anmeldeprozesses erstellen.
+Für den Zugriff auf ein [!DNL Commerce] -Konto ist **[!DNL Adobe ID]erforderlich.**
+Wenn Sie bereits über ein [!DNL Commerce] -Konto verfügen, aber nicht über ein [!DNL Adobe ID] verfügen, können Sie während des Anmeldevorgangs eines erstellen.
 
-1. Navigieren Sie zu [https://supportinsights.adobe.com/commerce](https://supportinsights.adobe.com/commerce).
+1. Wechseln Sie zu [https://supportinsights.adobe.com/commerce](https://supportinsights.adobe.com/commerce).
 
-1. Klicken Sie auf **[!UICONTROL Sign in with Adobe ID]** und folgen Sie den Anweisungen.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Sign in with Adobe ID]** und folgen Sie den Anweisungen.
 
-   ![Dashboard für Site-weite Analysen](../../assets/tools/adobe-id-login.jpg)
+   ![ Dashboard für eine Site-weite Analyse](../../assets/tools/adobe-id-login.jpg)
    *[!DNL Adobe ID]Anmeldebildschirm*
 
 1. Akzeptieren Sie die Geschäftsbedingungen.
 
-1. **<u>Hinweis</u>:** Ihr Konto sollte berechtigt sein, **[!DNL Support Permissions]** für den Zugriff [!DNL Site-Wide Analysis Tool Dashboard].
-Weitere Informationen finden Sie unter [Freigeben von [!DNL Commerce] account](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in unserem Benutzerhandbuch.
+1. **<u>Hinweis</u>:** Ihr Konto sollte auf **[!DNL Support Permissions]** berechtigt sein, um auf [!DNL Site-Wide Analysis Tool Dashboard] zuzugreifen.
+Weitere Informationen finden Sie unter [Ein [!DNL Commerce] Konto teilen](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in unserem Benutzerhandbuch.
 
-## Option 2: Anmeldung bei Ihrer [!DNL Site-Wide Analysis Tool Dashboard] aus dem Geschäft [!DNL Admin Panel]
+## Option 2: Anmeldung bei Ihrem [!DNL Site-Wide Analysis Tool Dashboard] von Ihrem Store [!DNL Admin Panel]
 
 ### Schritt 1: Berechtigungen überprüfen
 
-Stellen Sie sicher, dass [!DNL Admin] Das Benutzerkonto hat Zugriff auf die [!DNL Site-Wide Analysis Tool] durch [zugewiesene Benutzerrolle](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Vergewissern Sie sich, dass das [!DNL Admin]-Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] über ihre [zugewiesene Benutzerrolle](https://docs.magento.com/user-guide/system/permissions-user-roles.html) verfügt.
 
 >[!IMPORTANT]
 >
->Die [!DNL Site-Wide Analysis Tool] Benutzerressource (Berechtigung) ist **not** automatisch zugewiesen. Sie MUSS für die Benutzerrolle und die Rolle aktiviert werden, die jedem Benutzerkonto im [!UICONTROL Admin].
+>Die Rolle &quot;[!DNL Site-Wide Analysis Tool]&quot;-Ressource (Berechtigung) ist &quot;**nicht**&quot;, die automatisch zugewiesen wird. Sie MUSS für die Benutzerrolle und die Rolle aktiviert werden, die jedem Benutzerkonto in der [!UICONTROL Admin] einzeln zugewiesen sind.
 
-Für die benutzerdefinierte Rolle [!DNL Site-Wide Analysis Tool] -Zugriff verwenden, führen Sie folgende Schritte aus:
+Gehen Sie wie folgt vor, um die benutzerdefinierte Rolle zu verwenden, auf die [!DNL Site-Wide Analysis Tool] zugreifen muss:
 
-1. Wählen Sie die **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]** Rolle.
+1. Wählen Sie die Rollenressource **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]** aus.
 
-   ![Dashboard für Site-weite Analysen](../../assets/tools/swat-role-access.png)
-   *[!DNL Site-Wide Analysis Tool]für die Rolle ausgewählte Berechtigung*
+   ![ Dashboard für eine Site-weite Analyse](../../assets/tools/swat-role-access.png)
+   *[!DNL Site-Wide Analysis Tool]Berechtigung für die Rolle ausgewählt*
 
-1. Klicken **[!UICONTROL Save Role]**.
+1. Klicken Sie auf **[!UICONTROL Save Role]**.
 
-1. Benachrichtigen Sie alle Benutzer, denen diese Rolle zugewiesen wurde, über die Abmeldung von der [!DNL Admin]und melden Sie sich erneut an.
+1. Benachrichtigen Sie alle Benutzer, denen diese Rolle zugewiesen wurde, über die Abmeldung von der [!DNL Admin] und melden Sie sich erneut an.
 
 >[!NOTE]
 >
->Wenn Sie überprüft haben, ob das Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] und der Benutzer beim Versuch, auf das Tool zuzugreifen, einen 403-Fehler von der [!DNL Admin]festlegen, kann für Ihre Adobe Commerce-Instanz in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Die [!DNL Site-Wide Analysis Tool] Dashboard wird NICHT unterstützt, wenn HTTP Auth aktiviert ist. Weitere Informationen zur Behebung dieses Problems finden Sie in der [Support-Artikel](https://support.magento.com/hc/en-us/articles/360057400172-403-errors-when-accessing-Site-Wide-Analysis-Tool-on-Magento?_ga=2.168901729.117144580.1649172612-1623400270.1640858671).
+>Wenn Sie überprüft haben, ob das Benutzerkonto über die Berechtigung zum Zugriff auf &quot;[!DNL Site-Wide Analysis Tool]&quot;verfügt und der Benutzer beim Versuch, über &quot;[!DNL Admin]&quot;auf das Tool zuzugreifen, einen 403-Fehler erhält, kann für Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Das Dashboard [!DNL Site-Wide Analysis Tool] wird NICHT unterstützt, wenn HTTP Auth aktiviert ist. Weitere Informationen zur Behebung dieses Problems finden Sie in unserem [Support-Artikel](https://support.magento.com/hc/en-us/articles/360057400172-403-errors-when-accessing-Site-Wide-Analysis-Tool-on-Magento?_ga=2.168901729.117144580.1649172612-1623400270.1640858671).
 
-### Schritt 2: Zugriff [!DNL Site-Wide Analysis Tool]
+### Schritt 2: Zugriff auf [!DNL Site-Wide Analysis Tool]
 
-1. Im *[!UICONTROL Admin]* Seitenleiste, navigieren Sie zu **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**.
+1. Gehen Sie auf der *[!UICONTROL Admin]* Seitenleiste zu **[!UICONTROL Reports]** > *[!UICONTROL System Insights]* > **[!UICONTROL Site-Wide Analysis Tool]**.
 
-   ![Dashboard für Site-weite Analysen](../../assets/tools/ac-admin-panel-marked.jpg)
-   *[!DNL Site-Wide Analysis Tool]-Position im [!DNL Admin Panel] in Adobe Commerce*
+   ![ Dashboard für eine Site-weite Analyse](../../assets/tools/ac-admin-panel-marked.jpg)
+   *[!DNL Site-Wide Analysis Tool]Position im [!DNL Admin Panel] in Adobe Commerce*
 
-1. Lesen Sie die *Nutzungsbedingungen* für die [!DNL Site-Wide Analysis Tool] und klicken **[!UICONTROL Accept]** , um fortzufahren.
+1. Lesen Sie die *Nutzungsbedingungen* für die [!DNL Site-Wide Analysis Tool] und klicken Sie auf **[!UICONTROL Accept]** , um fortzufahren.
 
    Jeder Benutzer muss die Nutzungsbedingungen für die Sitzung akzeptieren. Dieser Schritt wird für jede angemeldete Sitzung wiederholt.
 
 
 1. Klicken Sie oben im Dashboard auf die gewünschte Registerkarte.
 
-   ![Dashboard für Site-weite Analysen](../../assets/tools/swat-information-tab.png)
-   *[!DNL Site-Wide Analysis Tool]Informationen*
+   ![ Dashboard für eine Site-weite Analyse](../../assets/tools/swat-information-tab.png)
+   *[!DNL Site-Wide Analysis Tool]information*
 
-## Erstellen Sie Berichte aus dem [!DNL Site-Wide Analysis Tool Dashboard]
+## Generieren von Berichten aus dem [!DNL Site-Wide Analysis Tool Dashboard]
 
-1. Klicken Sie oben rechts im Dashboard auf **[!UICONTROL Generate Report]**.
+1. Klicken Sie in der rechten oberen Ecke des Dashboards auf **[!UICONTROL Generate Report]**.
 
-1. Aktivieren Sie das Kontrollkästchen für jede **[!UICONTROL Type]** und **[!UICONTROL Priority]** festlegen, die Sie in den Bericht aufnehmen möchten.
+1. Aktivieren Sie das Kontrollkästchen für jede Einstellung **[!UICONTROL Type]** und **[!UICONTROL Priority]**, die Sie in den Bericht aufnehmen möchten.
 
-1. Klicken **[!UICONTROL Generate Report]**.
+1. Klicken Sie auf **[!UICONTROL Generate Report]**.
 
-   ![Dashboard für Site-weite Analysen](../../assets/tools/swat-report-settings.png)
+   ![ Dashboard für eine Site-weite Analyse](../../assets/tools/swat-report-settings.png)
    *Berichtseinstellungen*
 
 | TAB | BESCHREIBUNG |
@@ -104,4 +104,4 @@ Für die benutzerdefinierte Rolle [!DNL Site-Wide Analysis Tool] -Zugriff verwen
 
 >[!NOTE]
 >
->Nach Anwendung einer Empfehlung kann es einige Tage dauern, bis sie im [!DNL Site-Wide Analysis Tool Dashboard] oder generierten Bericht.
+>Nach Anwendung einer Empfehlung kann es einige Tage dauern, bis sie im [!DNL Site-Wide Analysis Tool Dashboard] - oder generierten Bericht aktualisiert wird.

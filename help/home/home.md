@@ -61,7 +61,7 @@ Verwenden Sie diese folgende Anleitung, um mehr über Systemadministrationskonze
        <img alt="Aktivitäten" src="../assets/icons/refresh.svg" width="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Operatives Playbook</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Operationelles Playbook</strong></a>
       <p>Erfahren Sie, wie Sie Ihr Unternehmen auf den Betrieb einer erfolgreichen E-Commerce-Website vorbereiten können.</p>
     </div>
   </td>
@@ -113,7 +113,7 @@ Verwenden Sie diese folgende Anleitung, um mehr über Systemadministrationskonze
        <img alt="Instrumente" src="../assets/icons/wrench.svg" width="40"/>
     </a>
     <div>
-      <a href="../tools/overview.md"><strong>Instrumente</strong></a>
+      <a href="../tools/overview.md"><strong>Tools</strong></a>
       <p>Erfahren Sie mehr über die Tools, die Sie mit Adobe Commerce verwenden können.</p>
     </div>
   </td>

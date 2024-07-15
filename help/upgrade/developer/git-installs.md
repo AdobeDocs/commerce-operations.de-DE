@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Aktualisierung einer Git-basierten Installation
 
-In diesem Thema wird erläutert, wie ein beitragender Entwickler Adobe Commerce aktualisieren kann, ohne es erneut zu installieren. Wenn Sie kein Entwickler sind, lesen Sie [Durchführen eines Upgrades](../implementation/perform-upgrade.md).
+In diesem Thema wird erläutert, wie ein beitragender Entwickler Adobe Commerce aktualisieren kann, ohne es erneut zu installieren. Wenn Sie kein Entwickler sind, lesen Sie [Durchführen einer Aktualisierung](../implementation/perform-upgrade.md).
 
 So aktualisieren Sie, wenn Sie ein Entwickler sind:
 
 {{$include /help/_includes/server-login.md}}
 
-1. Speichern Sie alle Änderungen, die Sie an der `composer.json` -Datei, da sie durch die nächsten Schritte überschrieben wird.
+1. Speichern Sie alle Änderungen, die Sie an der Datei `composer.json` vorgenommen haben, da sie bei den nächsten Schritten überschrieben werden.
 
-1. Erstellen Sie eine Sicherungskopie Ihrer `composer.json` -Datei.
+1. Erstellen Sie eine Sicherung Ihrer `composer.json` -Datei.
 
    ```bash
    cp composer.json composer.json.old
@@ -33,11 +33,11 @@ So aktualisieren Sie, wenn Sie ein Entwickler sind:
 
    >[!NOTE]
    >
-   >Wenn `git pull origin develop` schlägt fehl, siehe [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360034229872).
+   >Wenn `git pull origin develop` fehlschlägt, lesen Sie [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360034229872).
 
-1. Diff und Merge Ihre `composer.json.old` -Datei mit der `composer.json` -Datei.
+1. Verwechseln Sie Ihre `composer.json.old`-Datei und führen Sie sie mit der Datei `composer.json` zusammen.
 
-1. Abhängigkeiten auflösen und exakte Versionen in die `composer.lock` -Datei.
+1. Lösen Sie Abhängigkeiten auf und schreiben Sie exakte Versionen in die Datei &quot;`composer.lock`&quot;.
 
    ```bash
    composer update

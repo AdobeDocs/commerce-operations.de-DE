@@ -5,7 +5,7 @@ exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 feature: System
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Die folgende Tabelle enthält empfohlene Tools für das Projektmanagement:
 | Ticketverwaltung | Atlassian JIRA |
 | SLA-Management | Atlassian JIRA Service Management |
 | Dokumentenverwaltung | Atlassischer Zusammenfluss |
-| Quellcode-Verwaltung | Atlassian Bitbucket, GitHub |
+| Source-Codeverwaltung | Atlassian Bitbucket, GitHub |
 | Continuous Integration (CI)/Continuous Delivery (CD) | Jenkins |
 | Kommunikation | E-Mail, Microsoft Teams, Telefon, Slack |
 | Sitzung | Zoom, Microsoft Teams |
@@ -43,7 +43,7 @@ Jira ist ein Ticket-Tracking- und -Verwaltungssystem (einschließlich Versionsve
 - Einfache Ticketvisualisierung und Bewegung mit Agile/Scrum
 - Transparente Informationen zwischen Client-Team und Entwicklungsteam
 
-## Quellcodeverwaltung
+## Source-Codeverwaltung
 
 Bitbucket ist mehr als nur Git-Code-Verwaltung. Mit Bitbucket können Teams Projekte planen, an Code zusammenarbeiten, testen und bereitstellen. Mithilfe von Bitbucket können Sie Code-Überprüfungen mit Pull-Anforderungen effizienter genehmigen. Sie können auch eine zusammengeführte Checkliste mit bestimmten Genehmigern erstellen und Diskussionen direkt im Quellcode mit Inline-Kommentaren speichern.
 

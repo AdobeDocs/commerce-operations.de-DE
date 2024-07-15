@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # Sicherheitsübersicht
 
-Der Abschnitt &quot;Sicherheit&quot;enthält Einstellungen für sicherheitsrelevante Funktionen wie Kennworthashing, Cache-Vergiftung und Sicherung der `cron.php` -Datei.
+Der Abschnitt &quot;Sicherheit&quot;enthält Einstellungen für sicherheitsrelevante Funktionen wie Kennworthashing, Cache-Vergiftung und Sicherung der Datei &quot;`cron.php`&quot;.
 
 ## Sicherheitsressourcen
 
 Die Themen im Abschnitt &quot;Sicherheit&quot;des Konfigurationshandbuchs sind nicht für alle Commerce-Funktionen umfassend. Es gibt viele wichtige sicherheitsbezogene Themen in anderen Commerce-Handbüchern, z. B.:
 
 - [PHP-Entwicklerhandbuch](https://developer.adobe.com/commerce/php/development/security/) für Informationen, die Adobe Commerce-Entwickler verwenden können, um die Sicherheit der von ihnen erstellten Komponenten zu verbessern.
-- [Sicherheits- und Compliance-Handbuch](https://devdocs.magento.com/security/security-and-compliance.html) Informationen über Sicherheit, Datenschutz und Einhaltung von Vorschriften mit Links zu technischen Ressourcen.
+- [Sicherheits- und Compliance-Handbuch](https://devdocs.magento.com/security/security-and-compliance.html) mit Informationen zu Sicherheit, Datenschutz und Einhaltung von Vorschriften sowie Links zu technischen Ressourcen.
 
 Einige sicherheitsbezogene Themen, die gleichzeitig im Konfigurationshandbuch enthalten waren, befinden sich jetzt in den folgenden Handbüchern:
 

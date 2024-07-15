@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: cab6213b-da44-498f-b5c1-e7f89e95038e
+exl-id: cd546571-0241-4619-8696-3c5ebead9939
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Die Verwendung einer sekundären Datenbank kann aus folgenden Gründen nützlich
 * Setzen von mysqldump auf und ermöglichen normale Transaktionen, ohne die Datenbank zu sperren
 * Ermöglicht den Zugriff auf Daten aus einer externen Datenquelle, ohne dass die Websites die Möglichkeit haben, Informationen für Kundenanfragen zu übertragen.
 
-Die sekundäre Datenbank kann als `warm standby`. Dies kann zum Tragen kommen, wenn Sie überlegen, wie Sie sich von einem primären Datenbankfehler erholen können. Die Weiterleitung der sekundären Datenbank auf primär ist weniger komplex als die Neuerstellung und Wiederherstellung einer Datenbank auf einer neu erstellten MySQL-Instanz. Dadurch wird die tatsächliche Ausfallzeit während eines Wiederherstellungsvorgangs reduziert.
+Die sekundäre Datenbank kann als `warm standby` verwendet werden. Dies kann zum Tragen kommen, wenn Sie überlegen, wie Sie sich von einem primären Datenbankfehler erholen können. Die Weiterleitung der sekundären Datenbank auf primär ist weniger komplex als die Neuerstellung und Wiederherstellung einer Datenbank auf einer neu erstellten MySQL-Instanz. Dadurch wird die tatsächliche Ausfallzeit während eines Wiederherstellungsvorgangs reduziert.
 
 Es besteht die Möglichkeit, einige der Anfragen an die sekundäre Datenbank abzuleiten. Wenn diese Methode verwendet wird, wird empfohlen, die sekundäre Datenbank schreibgeschützt zu machen. Indem die Adobe Commerce-Anwendung diese sekundäre Datenbank für Lesevorgänge verwenden kann, hilft sie, einige der Leseanfragen zu übernehmen und die sekundäre Datenbank zu aktivieren. Diese Änderung macht jedoch nur 30-50 % aller Anforderungen aus, aber jede Belastung, die Sie aus der primären Datenbank nehmen können, ist ein Sieg.
 

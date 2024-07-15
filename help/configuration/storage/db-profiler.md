@@ -6,7 +6,7 @@ badge: label="Verfasst von Atish Goswami" type="Informative" url="https://github
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Der Commerce-Datenbank-Profiler zeigt alle auf einer Seite implementierten Abfra
 
 ## Schritt 1: Ändern der Bereitstellungskonfiguration
 
-Ändern `<magento_root>/app/etc/env.php` , um die folgende Referenz zum [Datenbank-Profilklasse](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Ändern Sie `<magento_root>/app/etc/env.php`, um der [Datenbankprofiler-Klasse](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) die folgende Referenz hinzuzufügen:
 
 ```php?start_inline=1
         'profiler' => [
@@ -55,7 +55,7 @@ Ein Beispiel:
 
 ## Schritt 2: Ausgabe konfigurieren
 
-Konfigurieren Sie die Ausgabe in der Bootstrap-Datei Ihrer Commerce-Anwendung. Dies kann `<magento_root>/pub/index.php` oder sich in einer virtuellen Host-Konfiguration des Webservers befinden.
+Konfigurieren Sie die Ausgabe in Ihrer Bootstrap-Datei der Commerce-Anwendung. Dies kann `<magento_root>/pub/index.php` sein oder sich in einer virtuellen Host-Konfiguration des Webservers befinden.
 
 Im folgenden Beispiel werden die Ergebnisse in einer Tabelle mit drei Spalten angezeigt:
 
@@ -63,7 +63,7 @@ Im folgenden Beispiel werden die Ergebnisse in einer Tabelle mit drei Spalten an
 - SQL (zeigt alle SQL-Abfragen an; der Zeilenheader zeigt die Anzahl der Abfragen an)
 - Abfrageparameter (zeigt die Parameter für jede SQL-Abfrage an)
 
-Um die Ausgabe zu konfigurieren, fügen Sie Folgendes nach dem `$bootstrap->run($app);` in Ihrer Bootstrap-Datei:
+Um die Ausgabe zu konfigurieren, fügen Sie Folgendes nach der Zeile `$bootstrap->run($app);` in Ihrer Bootstrap-Datei hinzu:
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -91,4 +91,4 @@ echo "</table>";
 
 Navigieren Sie zu einer beliebigen Seite in Ihrer Storefront oder in Ihrem Administrator, um die Ergebnisse anzuzeigen. Ein Beispiel:
 
-![Beispiele für Datenbank-Profilergebnisse](../../assets/configuration/db-profiler-results.png)
+![ Beispiele für Datenbankprofilergebnisse](../../assets/configuration/db-profiler-results.png)

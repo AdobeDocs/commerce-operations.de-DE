@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Referenz zu Dienstkonfigurationspfaden
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Dienste**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Dienste** verfügbar sind.
 
-Die [`magento app:config:dump` command](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei, `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](override-config-settings.md#environment-variables). Dieses Thema _not_ Liste [sensible und systemspezifische Werte](config-reference-sens.md).
+Der Befehl [`magento app:config:dump`](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Verwenden von Umgebungsvariablen zum Außerkraftsetzen von Konfigurationseinstellungen](override-config-settings.md#environment-variables). Bei diesem Thema werden _nicht_ vertrauliche und systemspezifische Werte [ aufgelistet.](config-reference-sens.md)
 
-## Commerce-Web-API-Pfade
+## Commerce Web API-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Dienste** > **Web-API**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Dienste** > **Web-API** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -29,7 +29,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## OAuth-Pfad
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Dienste** > **OAuth**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Dienste** > **OAuth** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -39,6 +39,6 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Ablaufzeitraum | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Ablaufzeitraum | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | OAuth-Kundenanmeldeinformationen HTTP Post-Maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| OAuth-Kundenanmeldeinformationen HTTP Post-Timeout | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| OAuth-Kundenanmeldeinformationen HTTP Post-Zeitüberschreitung | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}

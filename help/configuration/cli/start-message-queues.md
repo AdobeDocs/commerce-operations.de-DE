@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Sie müssen eine [Nachrichtenwarteschlange für Verbraucher](../queues/consumers.md) , um asynchrone Vorgänge wie Massenaktionen in Inventory management sowie REST-Massen- und asynchrone Endpunkte zu aktivieren. Um B2B-Funktionen zu aktivieren, müssen Sie mehrere Verbraucher starten. Für Drittanbietermodule ist möglicherweise auch das Starten eines benutzerdefinierten Verbrauchers erforderlich.
+Sie müssen einen [Benutzer der Nachrichtenwarteschlange](../queues/consumers.md) starten, um asynchrone Vorgänge wie Inventory management-Massenaktionen und REST-Massen- und asynchrone Endpunkte zu aktivieren. Um B2B-Funktionen zu aktivieren, müssen Sie mehrere Verbraucher starten. Für Drittanbietermodule ist möglicherweise auch das Starten eines benutzerdefinierten Verbrauchers erforderlich.
 
 So zeigen Sie eine Liste aller Verbraucher an:
 
@@ -27,14 +27,14 @@ So starten Sie Verbraucher in der Nachrichtenwarteschlange:
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
-Nach dem Abruf aller verfügbaren Nachrichten wird der Befehl beendet. Sie können den Befehl erneut manuell oder mit einem Cron-Auftrag ausführen. Sie können auch mehrere Instanzen der `magento queue:consumers:start` -Befehl zum Verarbeiten großer Nachrichtenwarteschlangen. Sie können beispielsweise `&` zum Befehl zum Ausführen im Hintergrund, kehren Sie zu einer Eingabeaufforderung zurück und fahren Sie mit der Ausführung der Befehle fort:
+Nach dem Abruf aller verfügbaren Nachrichten wird der Befehl beendet. Sie können den Befehl erneut manuell oder mit einem Cron-Auftrag ausführen. Sie können auch mehrere Instanzen des Befehls `magento queue:consumers:start` ausführen, um große Nachrichtenwarteschlangen zu verarbeiten. Sie können beispielsweise `&` an den Befehl anhängen, um ihn im Hintergrund auszuführen, zu einer Eingabeaufforderung zurückzukehren und mit den folgenden Befehlen fortzufahren:
 
 ```bash
 bin/magento queue:consumers:start <consumer_name> &
 ```
 
-Siehe [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) im Abschnitt Commerce des _Referenz zu Befehlszeilen-Tools_ für Details zu den Befehlsoptionen, Parametern und Werten.
+Weitere Informationen zu den Befehlsoptionen, Parametern und Werten finden Sie unter [`queue:consumers:start`](../../tools/reference/commerce-on-premises.md#queueconsumersstart) im Commerce-Abschnitt der Referenz zu Befehlszeilenwerkzeugen _._
 
 >[!INFO]
 >
->Die `--multi-process` ist in der `queue:consumers:start` -Befehl, aber um Verbraucher mit parallelen Prozessen auszuführen, konfigurieren Sie die [`multiple_processes`](../queues/manage-message-queues.md#configuration) -Option in `/app/etc/env.php`. Andernfalls, wenn `queue:consumers:start` wird mit der `--multi-process` -Option, funktioniert sie nur in einem einzigen Thread.
+>Die Option `--multi-process` ist im Befehl `queue:consumers:start` vorhanden. Um jedoch Verbraucher mit parallelen Prozessen auszuführen, konfigurieren Sie die Option [`multiple_processes`](../queues/manage-message-queues.md#configuration) in `/app/etc/env.php`. Wenn andernfalls `queue:consumers:start` mit der Option `--multi-process` aufgerufen wird, funktioniert dies nur bei einem einzelnen Thread.

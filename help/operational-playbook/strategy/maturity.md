@@ -4,7 +4,7 @@ description: Beurteilen Sie anhand dieses Laufzeitmodells, in welchem Stadium Ih
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Stellen Sie sich ein ausgereiftes Modell als einen robusten Bericht vor, der Ihn
 
 Das folgende Diagramm fasst die verschiedenen Bedürfnisse über die Laufzeitstufen hinweg zusammen:
 
-![Bedarf über das Laufzeitebenendiagramm](../../assets/playbooks/maturity-levels.png)
+![Bedarf über das Laufzeitdiagramm ](../../assets/playbooks/maturity-levels.png)
 
 ## Laufzeitniveau
 

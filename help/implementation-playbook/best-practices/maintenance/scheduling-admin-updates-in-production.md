@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 0%
+source-wordcount: '135'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Kritische Aktionen führen zu Cache-Invalidierungs- und Neuindizierungsvorgänge
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce vor Ort
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
 - [Best Practices für die Zwischenspeicherung](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
-- [Privater Inhalt: Ungültigmachen privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Privater Inhalt: Ungültiger privater Inhalt](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-Empfehlungen: Caches](../../../performance/hardware.md#caches)
 - [Erweiterte Einrichtung: Redis einrichten](../../../performance/advanced-setup.md#set-up-redis)

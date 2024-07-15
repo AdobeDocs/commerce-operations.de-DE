@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Datenbankschema erstellen
 
-Bevor Sie diesen Befehl ausführen, müssen Sie [Erstellen oder Aktualisieren der Bereitstellungskonfiguration](deployment.md).
+Bevor Sie diesen Befehl ausführen, müssen Sie [die Bereitstellungskonfiguration erstellen oder aktualisieren](deployment.md).
 
 ## Datenbank konfigurieren und Daten hinzufügen
 

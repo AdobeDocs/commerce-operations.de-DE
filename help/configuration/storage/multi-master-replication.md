@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Eine ausführliche Diskussion über die Datenbankreplikation fällt nicht in die
 - [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
 - [Einrichten der Master-Slave-Replikation in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce bietet Beispiel-MySQL-Konfigurationen für Ihre Slave-Datenbanken. Eine einfache Konfiguration wird mit dem `ResourceConnections` class `README.md`.
+Commerce stellt Beispiel-MySQL-Konfigurationen für Ihre Slave-Datenbanken bereit. Eine einfache Konfiguration wird mit der `ResourceConnections`-Klasse `README.md` bereitgestellt.
 
 Die folgenden Informationen sind weiter gefasst und dienen nur Ihren Informationen:
 
@@ -122,9 +122,9 @@ Die folgenden Informationen sind weiter gefasst und dienen nur Ihren Information
 
 ## Leistungsverbesserung
 
-Um die Leistung der Master-Slave-Replikation zu verbessern, können Sie einige Tabellen auf Slave-Instanzen filtern. Es wird empfohlen, alle temporären Tabellen mit Namensmustern zu filtern `search\_tmp\_%` die für die Katalogsuche verwendet werden.
+Um die Leistung der Master-Slave-Replikation zu verbessern, können Sie einige Tabellen auf Slave-Instanzen filtern. Es wird empfohlen, alle temporären Tabellen mit dem Namensmuster `search\_tmp\_%` zu filtern, die für die Katalogsuche verwendet werden.
 
-Fügen Sie dazu die folgende Zeile zu Ihrer `my.cnf` Datei auf Ihren Slave-Instanzen:
+Fügen Sie dazu der Datei `my.cnf` in Ihren Slave-Instanzen die folgende Zeile hinzu:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

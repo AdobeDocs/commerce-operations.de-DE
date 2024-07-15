@@ -23,4 +23,4 @@ Wenn die Aktualisierung Ihres Moduls fehlschlägt, werden ähnliche Meldungen im
 
 Im obigen Beispiel gibt es keine Komponentenversion, auf die zurückgegriffen werden kann. Wenden Sie sich an den Komponentenanbieter oder versuchen Sie, das Problem selbst zu beheben.
 
-In der Zwischenzeit können Sie eine frühere Version wiederherstellen, indem Sie auf **Rollback**, wodurch Ihre Daten auch dann abgerufen werden, wenn Sie zuvor keine Sicherung durchgeführt haben.
+In der Zwischenzeit können Sie zu einer früheren Version zurückkehren, indem Sie auf **Rollback** klicken, wodurch Ihre Daten abgerufen werden, selbst wenn Sie zuvor keine Sicherung durchgeführt haben.

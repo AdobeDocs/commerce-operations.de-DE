@@ -1,10 +1,10 @@
 ---
-title: Wartung von Commerce-Projekten
+title: Commerce-Projektwartung
 description: Festlegung hoher Qualitätsstandards und Schaffung von Mechanismen zur Aufrechterhaltung dieser Standards im Laufe der Zeit.
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -31,15 +31,16 @@ Im Folgenden finden Sie eine kurze Liste von Fragen, die Sie bei der Planung des
 
 - **Site-Bereinigung**—Was kann ich behalten und was kann sich ändern? Welche neuen Dinge möchte ich umsetzen? Welche Änderungen möchte ich beispielsweise an der Taxonomie und Produktstruktur oder an Inhaltsänderungen vornehmen?
 
-- **Analytics-Prüfung**—Welche KPIs habe ich aktuell? Welche Daten zeigen mir, wie meine Site verbessert werden kann? Gibt es neue KPIs, die ich für meine neue Site implementieren möchte?
+- **Analytics-Prüfung** - Was sind meine aktuellen KPIs? Welche Daten zeigen mir, wie meine Site verbessert werden kann? Gibt es neue KPIs, die ich für meine neue Site implementieren möchte?
 
-- **Erweiterungen**—Benötige ich sie noch? Welche Drittanbietererweiterungen decken meine Anforderungen ab?
+- **Erweiterungen**: Benötige ich sie noch? Welche Drittanbietererweiterungen decken meine Anforderungen ab?
 
-- **Integrationen**—Mit welchen Drittanbietersystemen wie ERP und Buchhaltung muss ich mich integrieren? Verfügen sie über bestimmte Connectoren oder sind benutzerdefinierte Integrationen erforderlich?
+- **Integrationen**: Mit welchen Drittanbietersystemen, wie ERP und Buchhaltung, muss ich mich integrieren? Verfügen sie über bestimmte Connectoren oder sind benutzerdefinierte Integrationen erforderlich?
 
-- **Schulung**—Verfügt das Upgrade-Team über die richtigen Kenntnisse und Schulungen? Was ist mein Plan, Endanwender darin zu schulen, wie der neue Administrator verwendet werden kann, bevor er live geschaltet wird?
+- **Training**: Verfügt das Upgrade-Team über die richtigen Kenntnisse und Schulungen? Was ist
+mein Plan, Endanwender darin zu schulen, wie der neue Administrator verwendet werden kann, bevor er live geschaltet wird?
 
-- **Upgrade-Team**—Wer ist für das Aktualisierungsprojekt zuständig (sowohl interne als auch externe Experten)? Haben sie die notwendige Unterstützung von Führungskräften und anderen internen Teams?
+- **Upgrade-Team**: Wer ist für das Aktualisierungsprojekt zuständig (interne und externe Experten)? Haben sie die notwendige Unterstützung von Führungskräften und anderen internen Teams?
 
 ## Häufige Fragen zu Upgrades
 
@@ -50,7 +51,7 @@ A: Es hängt von der Plattform und Architektur ab. Es gibt viele Variablen, und 
 
 F: Wie viel kostet ein Upgrade?
 
-A: Auch dies hängt von Ihrer aktuellen Situation und Ihren Anforderungen an Ihre neue Site ab. Die gute Nachricht ist, dass sich die Kosten für Upgrades und Projekte im Allgemeinen verringert haben, da Partner und Entwickler sich besser mit Ihrer Commerce-Plattform vertraut und bestens vertraut gemacht haben. Wir empfehlen Ihnen, sich mit Ihrem Lösungspartner zu beraten, um eine Schätzung zu erhalten.
+A: Auch dies hängt von Ihrer aktuellen Situation und Ihren Anforderungen an Ihre neue Site ab. Die gute Nachricht ist, dass sich die Kosten für Upgrades und Projektreife im Allgemeinen verringert haben, da Partner und Entwickler sich besser mit Ihrer Commerce-Plattform vertraut und mit ihnen vertraut gemacht haben. Wir empfehlen Ihnen, sich mit Ihrem Lösungspartner zu beraten, um eine Schätzung zu erhalten.
 
 F: Sind Adobe Commerce 2-Versionen meiner Adobe Commerce 1-Erweiterungen verfügbar?
 

@@ -5,7 +5,7 @@ exl-id: eab50191-0744-41da-99ba-2e06ea61da27
 feature: Best Practices, Payments
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Es gab eine Zeit, in der Bargeld die Hauptquelle von Transaktionen war, aber die Online-Welt hat übernommen und Online-Zahlungsmethoden ersetzen alte Zahlungsmethoden. Alles ist jetzt online, was die Dinge einfacher und leichter zugänglich macht, einschließlich Kreditkarten, E-Brieftaschen und Banküberweisungen.
 
-![Logos von Payment Gateway Providern](../../assets/playbooks/payment-gateways.png)
+![Logos des Payment Gateway Providers](../../assets/playbooks/payment-gateways.png)
 
 Ein Payment Gateway ist ein Dienstleister, der Zahlungen für E-Commerce-Websites verbindet und verarbeitet. Sie spielen eine wichtige Rolle für das Kundenerlebnis und die Konversionsraten. Komplizierte Zahlungssysteme neigen dazu, Kunden dazu zu bewegen, ihren Warenkorb aufzugeben. Es ist wichtig, Kunden ein einfaches, benutzerfreundliches Zahlungssystem zur Verfügung zu stellen, bei dem sie, selbst wenn eine Zahlungsmethode fehlschlägt, eine alternative Methode haben, um sie zu motivieren, den Kauf abzuschließen.
 
@@ -43,7 +43,8 @@ Wenn ein Unternehmen beschließt, ein Payment Gateway mit seiner Plattform zu in
 
 B2B- und B2C-Unternehmen verfügen über ähnliche Zahlungssysteme, aber B2B-Unternehmen verfügen über mehr Vorschriften, Vorschriften und Prozesse. B2B-Unternehmen vertreiben im Vergleich zu B2C-Unternehmen in der Regel größere Mengen.
 
-B2C-Kunden kaufen Produkte oder Dienstleistungen für den individuellen Gebrauch. Kunden zahlen in der Regel den gleichen Preis wie andere Kunden und es gibt keine Verhandlungen. B2B-Kunden umfassen verschiedene Interessengruppen, was die Genehmigung komplexer und teurer macht.
+B2C-Kunden kaufen Produkte oder Dienstleistungen für den individuellen Gebrauch. Kunden zahlen in der Regel den gleichen Preis wie andere Kunden und es gibt keine Verhandlungen. B2B-Kunden umfassen verschiedene
+Interessengruppen, wodurch die Genehmigung komplexer und teurer wird.
 
 B2B-Kunden haben unterschiedliche Bestellungen und Anforderungen, die vom Vertriebsmitarbeiter oder einem Vertriebsmitarbeiter bearbeitet und genehmigt werden müssen, müssen einbezogen werden, wenn ein Kunde online über eine Anfrage zur Einreichung von Vorschlägen (RFP) oder einen Bestellauftrag (PO) einkauft.
 

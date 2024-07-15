@@ -17,7 +17,7 @@ Die anderen in diesem Thema behandelten optionalen Hilfsprogramme können Ihnen 
 
 ## Installieren und Konfigurieren des Network Time Protocol (NTP)
 
-[NTP](https://www.ntp.org/) ermöglicht Servern die Synchronisierung ihrer Systemuhren mithilfe von [global verfügbare Poolserver](https://www.ntppool.org/en/). Es wird empfohlen, die von Ihnen vertrauenswürdigen NTP-Server zu verwenden, unabhängig davon, ob es sich um dedizierte Hardware-Lösungen für Ihr internes Netzwerk oder externe, öffentliche Server handelt.
+Mit [NTP](https://www.ntp.org/) können Server ihre Systemuhren mithilfe von [global verfügbaren Poolservern](https://www.ntppool.org/en/) synchronisieren. Es wird empfohlen, die von Ihnen vertrauenswürdigen NTP-Server zu verwenden, unabhängig davon, ob es sich um dedizierte Hardware-Lösungen für Ihr internes Netzwerk oder externe, öffentliche Server handelt.
 
 Wenn Sie Adobe Commerce auf mehreren Hosts bereitstellen, ist NTP eine einfache Möglichkeit, sicherzustellen, dass alle Uhren synchronisiert werden, unabhängig von der Zeitzone, in der sich die Server befinden. Cron-bezogene Aufgaben (wie Indizierung und Transaktions-E-Mails) hängen außerdem von der Genauigkeit der Server-Uhr ab.
 
@@ -29,7 +29,7 @@ Geben Sie den folgenden Befehl ein, um NTP zu installieren:
 apt-get install ntp
 ```
 
-Fahren Sie mit [NTP-Poolserver verwenden](#use-ntp-pool-servers).
+Fahren Sie mit [NTP-Poolserver verwenden](#use-ntp-pool-servers) fort.
 
 ### Installieren und Konfigurieren von NTP unter CentOS
 
@@ -59,9 +59,9 @@ So installieren und konfigurieren Sie NTP:
 
 ### NTP-Poolserver verwenden
 
-Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, empfiehlt ntp.org die Verwendung von [Poolserver](https://www.ntppool.org/en/) die sich in der Zeitzone Ihrer Server befinden, wie im Abschnitt [NTP-Pool-Projektseite](https://www.ntppool.org/en/use.html). Wenn Sie über einen privaten NTP-Server verfügen, der für alle Hosts in Ihrer Bereitstellung verfügbar ist, können Sie stattdessen diesen Server verwenden.
+Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, empfiehlt ntp.org die Verwendung von [Poolservern](https://www.ntppool.org/en/), die sich in der Zeitzone Ihrer Server befinden, wie auf der [NTP-Poolprojektseite](https://www.ntppool.org/en/use.html) beschrieben. Wenn Sie über einen privaten NTP-Server verfügen, der für alle Hosts in Ihrer Bereitstellung verfügbar ist, können Sie stattdessen diesen Server verwenden.
 
-1. Öffnen `/etc/ntp.conf` in einem Texteditor.
+1. Öffnen Sie `/etc/ntp.conf` in einem Texteditor.
 
 1. Suchen Sie nach Zeilen, die den folgenden ähneln:
 
@@ -89,21 +89,21 @@ Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, e
 
    * CentOS: `service ntpd restart`
 
-1. Eingabe `date` , um das Datum des Servers zu überprüfen.
+1. Geben Sie `date` ein, um das Datum des Servers zu überprüfen.
 
    Wenn das Datum falsch ist, stellen Sie sicher, dass der NTP-Client-Port (normalerweise UDP 123) in Ihrer Firewall geöffnet ist.
 
-   Probieren Sie die `ntpdate _[pool server hostname]_` Befehl. Wenn es fehlschlägt, suchen Sie nach dem zurückgegebenen Fehler.
+   Versuchen Sie den Befehl `ntpdate _[pool server hostname]_` . Wenn es fehlschlägt, suchen Sie nach dem zurückgegebenen Fehler.
 
    Wenn alles andere fehlschlägt, versuchen Sie, den Server neu zu starten.
 
 ## Erstellen von phpinfo.php
 
-Die [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) zeigt eine große Menge an Informationen über PHP und seine Erweiterungen an.
+Die Datei [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) enthält eine große Menge an Informationen über PHP und seine Erweiterungen.
 
 >[!NOTE]
 >
->Verwendung `phpinfo.php` in einem Entwicklungssystem _only_. Es kann sich um ein Sicherheitsproblem in der Produktion handeln.
+>Verwenden Sie `phpinfo.php` in einem Entwicklungssystem _nur_. Es kann sich um ein Sicherheitsproblem in der Produktion handeln.
 
 Fügen Sie den folgenden Code an einer beliebigen Stelle im Basisverzeichnis Ihres Webservers hinzu:
 
@@ -113,7 +113,7 @@ Fügen Sie den folgenden Code an einer beliebigen Stelle im Basisverzeichnis Ihr
 phpinfo();
 ```
 
-Weitere Informationen finden Sie unter [phpinfo-manuelle Seite](https://www.php.net/manual/en/function.phpinfo.php).
+Weitere Informationen finden Sie auf der [phpinfo-manuellen Seite](https://www.php.net/manual/en/function.phpinfo.php).
 
 Um die Ergebnisse anzuzeigen, geben Sie die folgende URL in das Adressfeld Ihres Browsers ein:
 
@@ -134,13 +134,13 @@ Wenn der Fehler 404 (Nicht gefunden) angezeigt wird, überprüfen Sie Folgendes:
 
 Die phpMyAdmin Anwendung ist ein einfach zu bedienendes, kostenloses Dienstprogramm zur Datenbankverwaltung. Sie können damit den Inhalt Ihrer Datenbank überprüfen und bearbeiten. Sie müssen sich bei phpMyAdmin als Verwaltungsbenutzer der MySQL-Datenbank anmelden.
 
-Weitere Informationen zu phpMyAdmin finden Sie unter [phpMyAdmin-Homepage](https://www.phpmyadmin.net/).
+Weitere Informationen zu phpMyAdmin finden Sie auf der [phpMyAdmin-Homepage](https://www.phpmyadmin.net/).
 
-Weitere Informationen zur Installation finden Sie unter [phpMyAdmin-Installationsdokumentation](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
+Weitere Informationen zur Installation finden Sie in der [phpMyAdmin-Installationsdokumentation](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
 >[!NOTE]
 >
->phpMyAdmin in einem Entwicklungssystem verwenden _only_. Es kann sich um ein Sicherheitsproblem in der Produktion handeln.
+>Verwenden Sie phpMyAdmin in einem Entwicklungssystem _nur_. Es kann sich um ein Sicherheitsproblem in der Produktion handeln.
 
 1. Um phpMyAdmin zu verwenden, geben Sie den folgenden Befehl in das Adressfeld oder Standortfeld Ihres Browsers ein:
 
@@ -148,4 +148,4 @@ Weitere Informationen zur Installation finden Sie unter [phpMyAdmin-Installation
    http://<web server host or IP>/phpmyadmin
    ```
 
-1. Melden Sie sich bei entsprechender Aufforderung mit Ihrer MySQL-Datenbank an `root` oder dem Benutzernamen und Kennwort des Administrationsbenutzers.
+1. Melden Sie sich bei entsprechender Aufforderung mit Ihrer MySQL-Datenbank `root` oder dem Benutzernamen und Kennwort des Administratorbenutzers an.

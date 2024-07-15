@@ -15,15 +15,15 @@ Diese Seite enthält Empfehlungen für Commerce-Entwicklungsumgebungen.
 
 ## Entfernen Sie die Zwischenspeicher, anstatt sie zu deaktivieren.
 
-Viele Entwickler neigen dazu, alle Caches auf ihren Entwicklerinstanzen zu deaktivieren. Es wird empfohlen, nur Caches zu reinigen, ohne alle Caches zu deaktivieren. [!DNL Commerce] effizienter arbeiten, wenn [Caches bereinigen](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) anstatt sie vollständig zu deaktivieren. Die meisten Arten von Caches werden während der Entwicklung selten invalidiert.
+Viele Entwickler neigen dazu, alle Caches auf ihren Entwicklerinstanzen zu deaktivieren. Es wird empfohlen, nur Caches zu reinigen, ohne alle Caches zu deaktivieren. [!DNL Commerce] wird effizienter ausgeführt, wenn Sie [die Caches bereinigen](../configuration/cli/manage-cache.md#clean-and-flush-cache-types), anstatt sie vollständig zu deaktivieren. Die meisten Arten von Caches werden während der Entwicklung selten invalidiert.
 
-Wenn Sie [Deaktivieren der Caches](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), empfehlen wir, nur die Seiten- und Blockierungszwischenspeicher in Entwicklungsinstanzen zu deaktivieren. Denken Sie daran, alle Caches während des Tests zu aktivieren.
+Wenn Sie [die Caches deaktivieren](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), wird empfohlen, die Caches von Seiten und Blöcken nur in Entwicklungsinstanzen zu deaktivieren. Denken Sie daran, alle Caches während des Tests zu aktivieren.
 
 ## Im Entwicklungsmodus zu vermeidende Befehle
 
 Führen Sie im Entwicklungsmodus keine Befehle zur Kompilierung, Codegenerierung und statischen Inhaltsbereitstellung aus. Diese Befehle wurden nur für die Verwendung im Produktionsmodus erstellt.
 
-**Nicht ausführen** Produktionsbefehle im Entwicklungsmodus:
+**Führen Sie keine** Produktionsbefehle im Entwicklungsmodus aus:
 
 * `setup:di:compile` generiert automatisch generierte Klassen und optimierte Konfigurations-Caches.
 
@@ -31,9 +31,9 @@ Führen Sie im Entwicklungsmodus keine Befehle zur Kompilierung, Codegenerierung
   bin/magento setup:di:compile
   ```
 
-  Im Entwicklungsmodus führt Magento die Generierung On-Demand durch. Sie müssen sie nicht ausführen. Wenn Sie eine Signatur einer Klasse geändert haben und deren automatisch generierte `factories/proxies/interceptors`, entfernen Sie diese Klassen oder die _generiert_ Ordner.
+  Im Entwicklungsmodus führt Magento die Generierung On-Demand durch. Sie müssen sie nicht ausführen. Wenn Sie eine Signatur einer Klasse geändert haben und ihre automatisch generierte `factories/proxies/interceptors` neu generieren müssen, entfernen Sie diese Klassen oder den Ordner _generated_ .
 
-* `setup:static-content:deploy` stellt statische Inhalte für einen Store bereit.
+* `setup:static-content:deploy` stellt statischen Inhalt für einen Store bereit.
 
   ```bash
   bin/magento setup:static-content:deploy

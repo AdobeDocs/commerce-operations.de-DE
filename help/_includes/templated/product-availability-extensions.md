@@ -27,7 +27,7 @@ ht-degree: 0%
           <td>1,5+</td>
           <td>1,5+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Verfasser</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Composer</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Versionshinweise</a><br/>
           </td>
       </tr>
@@ -38,7 +38,7 @@ ht-degree: 0%
           <td>1,3+</td>
           <td>-</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Verfasser</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Composer</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Versionshinweise</a><br/>
           </td>
       </tr>
@@ -49,7 +49,7 @@ ht-degree: 0%
           <td>1.2+</td>
           <td>1.2+</td>
           <td>
-              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Verfasser</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Composer</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Versionshinweise</a><br/>
           </td>
       </tr>
@@ -60,7 +60,7 @@ ht-degree: 0%
           <td>1,3,4</td>
           <td>1,3,3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Verfasser</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Versionshinweise</a><br/>
           </td>
       </tr>

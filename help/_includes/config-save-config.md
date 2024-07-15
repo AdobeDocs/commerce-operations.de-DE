@@ -18,7 +18,7 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   Wenn beispielsweise Commerce in installiert ist `/var/www/html/magento2`eingeben:
+   Wenn beispielsweise Commerce in `/var/www/html/magento2` installiert ist, geben Sie Folgendes ein:
 
    ```bash
    cd /var/www/html/magento2
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Do _not_ Änderungen an `generated`, `pub/media`oder `pub/static` Ordner zur Quell-Code-Verwaltung. Sie generieren diese Dateien auf Ihrem Build-System. Das Entwicklungssystem verfügt wahrscheinlich über Code, Designs usw., die nicht für die Verwendung im Produktionssystem bereit sind.
+   >Übermitteln Sie _nicht_ Änderungen an den Verzeichnissen `generated`, `pub/media` oder `pub/static` an die Quell-Code-Verwaltung. Sie generieren diese Dateien auf Ihrem Build-System. Das Entwicklungssystem verfügt wahrscheinlich über Code, Designs usw., die nicht für die Verwendung im Produktionssystem bereit sind.
 
-1. Überprüfen Sie Ihre Änderungen in `app/etc/config.php` nur zur Quell-Code-Verwaltung.
+1. Checken Sie Ihre Änderungen an `app/etc/config.php` nur für die Quell-Code-Verwaltung ein.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

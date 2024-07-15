@@ -1,5 +1,5 @@
 ---
-title: Commerce-Vorgänge
+title: Vorgänge in Commerce
 description: Erfahren Sie, was für eine erfolgreiche operative Strategie für Ihr E-Commerce-Geschäft erforderlich ist.
 exl-id: 21123987-0508-4d52-8af4-837b7a3ba1cb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Commerce-Vorgänge
+# Vorgänge in Commerce
 
-Bei Commerce-Operationen geht es darum, Backend-Vorgänge zu zentralisieren, sodass sie intelligenter, schneller und effizienter funktionieren. Eine erfolgreiche Betriebsstrategie erfordert eine starke IT-Infrastruktur, die in der Lage ist, End-to-End-E-Commerce-Vorgänge, Produktkatalog, Bestandsverwaltung, Checkout und Versand zu unterstützen. E-Commerce-Vorgänge basieren auf verschiedenen Dingen, wie einer benutzerfreundlichen Storefront, einer Vielzahl von Produkten, einer ordnungsgemäßen Bestandsverwaltung, Promotions, einem einfachen Checkout und bequemen Zahlungs- und Versandmethoden.
+Bei Commerce-Vorgängen geht es darum, Backend-Vorgänge zu zentralisieren, damit sie intelligenter, schneller und effizienter funktionieren. Eine erfolgreiche Betriebsstrategie erfordert eine starke IT-Infrastruktur, die in der Lage ist, End-to-End-E-Commerce-Vorgänge, Produktkatalog, Bestandsverwaltung, Checkout und Versand zu unterstützen. E-Commerce-Vorgänge basieren auf verschiedenen Dingen, wie einer benutzerfreundlichen Storefront, einer Vielzahl von Produkten, einer ordnungsgemäßen Bestandsverwaltung, Promotions, einem einfachen Checkout und bequemen Zahlungs- und Versandmethoden.
 
 ## Warum ist die Strategie für den E-Commerce-Betrieb wichtig?
 

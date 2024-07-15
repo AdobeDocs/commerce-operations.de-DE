@@ -14,7 +14,8 @@ ht-degree: 0%
 
 # Hosting vor Ort
 
-Cloud-basierte Hosting-Lösungen sind äußerst beliebt und spielen in vielen Unternehmen eine wichtige Rolle. Vor Ort jedoch ist die Infrastruktur für einige Organisationen und Händler noch immer eine geeignete Option.
+Cloud-basierte Hosting-Lösungen sind äußerst beliebt und dienen mit Sicherheit als
+Eine wichtige Rolle in vielen Organisationen spielt jedoch weiterhin eine geeignete Infrastruktur für einige Organisationen und Händler.
 
 Vor der Auswahl des Hosting vor Ort müssen Sie mehrere Faktoren berücksichtigen, darunter erhebliche Sunkkosten, ein leicht verfügbarer Pool an kompetenter/kosteneffektiver IT-Kompetenz und die Tatsache, dass On-Premise-Anwendungen häufig leichter auf die Bedürfnisse einer Organisation zugeschnitten und an diese angepasst werden können.
 

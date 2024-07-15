@@ -21,7 +21,7 @@ Adobe Commerce auf Cloud-Infrastruktur
 
 ## Alle MyISAM-Tabellen in InnoDB konvertieren
 
-Adobe empfiehlt die Verwendung der InnoDB-Datenbank-Engine. Bei einer standardmäßigen Adobe Commerce-Installation werden alle Datenbanktabellen mithilfe der InnoDB-Engine gespeichert. Einige Module von Drittanbietern (Erweiterungen) können jedoch Tabellen im MyISAM-Format einführen. Überprüfen Sie nach der Installation eines Drittanbietermoduls die Datenbank, um Tabellen in `myisam` formatieren und in konvertieren `innodb` Format.
+Adobe empfiehlt die Verwendung der InnoDB-Datenbank-Engine. Bei einer standardmäßigen Adobe Commerce-Installation werden alle Datenbanktabellen mithilfe der InnoDB-Engine gespeichert. Einige Module von Drittanbietern (Erweiterungen) können jedoch Tabellen im MyISAM-Format einführen. Überprüfen Sie nach der Installation eines Drittanbietermoduls die Datenbank, um Tabellen im Format `myisam` zu identifizieren und sie in das Format `innodb` zu konvertieren.
 
 ### Bestimmen, ob ein Modul MyISAM-Tabellen enthält
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Ändern Sie die Speicher-Engine in InnoDB
 
-Im `db_schema.xml` -Datei, die die Tabelle deklariert, legen Sie die `engine` -Attributwert für die entsprechende `table` Knoten zu `innodb`. Weitere Informationen finden Sie unter [Deklaratives Schema > Tabellenknoten konfigurieren](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in unserer Entwicklerdokumentation.
+Setzen Sie in der Datei `db_schema.xml` , die die Tabelle deklariert, den Attributwert `engine` für den entsprechenden Knoten `table` auf `innodb`. Weitere Informationen finden Sie unter [Konfigurieren des deklarativen Schemas > Tabellenknoten](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in unserer Entwicklerdokumentation.
 
 Das deklarative Schema wurde in Adobe Commerce in der Cloud-Infrastruktur-Version 2.3 eingeführt.
 
@@ -74,20 +74,20 @@ Trigger werden verwendet, um Änderungen in Audit-Tabellen zu protokollieren. Ad
 
 Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger finden Sie unter [MySQL-Trigger](mysql-configuration.md#triggers).
 
-## Upgrade [!DNL ECE-Tools] auf Version 2002.0.21 oder höher {#ece-tools-version}
+## Upgrade von [!DNL ECE-Tools] auf Version 2002.0.21 oder höher {#ece-tools-version}
 
-Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-Tools auf Version 2002.0.21 oder höher. Anweisungen finden Sie unter [Aktualisieren `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in unserer Entwicklerdokumentation.
+Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-Tools auf Version 2002.0.21 oder höher. Anweisungen finden Sie unter [Aktualisieren von `ece-tools` Version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in unserer Entwicklerdokumentation.
 
 ## Indexmodus sicher wechseln
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-Indexer wechseln generiert [!DNL data definition language] (DDL)-Anweisungen zum Erstellen von Triggern, die Datenbanksperren verursachen können. Sie können dieses Problem verhindern, indem Sie Ihre Website in den Wartungsmodus versetzen und Cron-Aufträge deaktivieren, bevor Sie die Konfiguration ändern.
-Anweisungen finden Sie unter [Indexer konfigurieren](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) im *Adobe Commerce-Konfigurationshandbuch*.
+Beim Wechseln von Indexern werden [!DNL data definition language] (DDL)-Anweisungen generiert, um Trigger zu erstellen, die Datenbanksperren verursachen können. Sie können dieses Problem verhindern, indem Sie Ihre Website in den Wartungsmodus versetzen und Cron-Aufträge deaktivieren, bevor Sie die Konfiguration ändern.
+Anweisungen finden Sie unter [Konfigurieren von Indexern](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) im *Adobe Commerce-Konfigurationshandbuch*.
 
 ## Führen Sie keine DDL-Anweisungen in der Produktion aus
 
-Vermeiden Sie das Ausführen von DDL-Anweisungen in der Produktionsumgebung, um Konflikte (wie Tabellenänderungen und -erstellungen) zu vermeiden. Die `setup:upgrade` -Prozess ist eine Ausnahme.
+Vermeiden Sie das Ausführen von DDL-Anweisungen in der Produktionsumgebung, um Konflikte (wie Tabellenänderungen und -erstellungen) zu vermeiden. Der `setup:upgrade` -Prozess ist eine Ausnahme.
 
 Wenn Sie eine DDL-Anweisung ausführen müssen, stellen Sie die Website in den Wartungsmodus und deaktivieren Sie Cron (siehe Anweisungen zum sicheren Wechsel von Indizes im vorherigen Abschnitt).
 
@@ -97,7 +97,7 @@ Aktivieren Sie die Bestellarchivierung über den Administrator, um den für Verk
 
 Siehe [Aktivieren der Archivierung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) in der Adobe Commerce Merchant-Dokumentation.
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
 - [MySQL-Speichermaschinen](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Voraussetzungen für das Adobe Commerce 2.3.5-Upgrade für MariaDB](../maintenance/mariadb-upgrade.md)

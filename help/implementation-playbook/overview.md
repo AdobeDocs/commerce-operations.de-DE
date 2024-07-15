@@ -37,16 +37,16 @@ Während der Erfolg eines IT-Projekts stark von den Erfahrungen und dem Fachwiss
 
 Die Struktur dieses Playbooks folgt dem typischen Lebenszyklus eines Adobe Commerce-Implementierungsprojekts. Dies vereinfacht die Navigation in diesem Dokument, da Leser sofort alle relevanten Informationen zum entsprechenden Abschnitt eines Projekts überspringen können.
 
-- **Projektumfang**—Eine Aufschlüsselung der wichtigsten Interessengruppen, Prozesse, Zeitpläne und Anforderungen, die für Marken wichtig sind, um sie zu verstehen und für eine erfolgreiche Implementierung abzuschließen.
+- **Projekt-Scoping**: Eine Aufschlüsselung der wichtigsten Stakeholder, Prozesse, Zeitpläne und Anforderungen, die für Marken wichtig sind, um sie zu verstehen und für eine erfolgreiche Implementierung abzuschließen.
 
-- **Entwicklung und Qualitätssicherung**- Werfen Sie einen Blick auf die Tools, Lösungen, Prozesse und Methoden, die in einer Reihe von Adobe Commerce-Implementierungen getestet und perfektioniert wurden, sowie auf unsere Empfehlungen, für die Lösungen am besten für spezifische Geschäftsanforderungen und -ziele geeignet sind.
+- **Entwicklung und Qualitätssicherung** - Sehen Sie sich die Tools, Lösungen, Prozesse und Methoden an, die über eine Reihe von Adobe Commerce-Implementierungen getestet und perfektioniert wurden, sowie unsere Empfehlungen, für die Lösungen am besten für spezifische Geschäftsanforderungen und -ziele geeignet sind.
 
-- **Planung und Verwaltung**—Ein Einblick in die Erstellung eines Plans zur rechtzeitigen und kostengünstigen Bereitstellung einer Lösung, die Ihren Bedürfnissen entspricht, ist entscheidend für den Erfolg.
+- **Planung und Verwaltung**: Ein Einblick in die Erstellung eines Plans zur rechtzeitigen und kostengünstigen Bereitstellung einer Lösung, der Ihren Anforderungen entspricht, ist entscheidend für den Erfolg.
 
-- **Architektur und Integrationen**- Die Funktionen, Architekturen und Integrationen, die Adobe Commerce zu einer der vertrauenswürdigsten und zuverlässigsten E-Commerce-Plattformen auf dem Markt machen.
+- **Architektur und Integrationen** - Die Funktionen, Architekturen und Integrationen, die Adobe Commerce zu einer der zuverlässigsten E-Commerce-Plattformen auf dem Markt machen.
 
-- **Infrastruktur und Bereitstellung**—Wenn wir weiter in die eigentliche Plattform gehen, heben wir die Infrastruktur und Umgebungen hervor, die Adobe Commerce und die Software-Lösungen unterstützen, die es zu einer so robusten Plattform machen.
+- **Infrastruktur und Implementierung**: Wenn wir weiter in die eigentliche Plattform einsteigen, heben wir die Infrastruktur und Umgebungen hervor, die Adobe Commerce mit den Softwarelösungen versorgen, die es zu einer so robusten Plattform machen.
 
-- **Start- und Überschneidungsprozess**- Die Taktiken und Aktionen von der Vor- bis zur Nach-Start-Phase, die stattfinden müssen, um sicherzustellen, dass die Site live geschaltet wird und ihre Effektivität ab dem ersten Tag beibehalten wird.
+- **Start- und Überschneidungsprozess** - Die Taktiken und Aktionen von der Vor- bis zur Nach-Start-Phase, die stattfinden müssen, um sicherzustellen, dass die Site live geschaltet wird und ab dem ersten Tag ihre Effektivität behält.
 
-- **Laufende Unterstützung und Wartung**—Details zur Übergangsphase und den Typen von Modellen und SLAs rund um einen laufenden Support-Plan, um Ihre Marke nach dem Start weiter voranzutreiben.
+- **Laufende Unterstützung und Wartung** - Details zur Übergangsphase und den Typen von Modellen und SLAs rund um einen laufenden Support-Plan, um Ihre Marke nach dem Start weiter voranzutreiben.

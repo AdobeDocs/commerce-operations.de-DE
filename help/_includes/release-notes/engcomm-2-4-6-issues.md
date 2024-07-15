@@ -1,7 +1,7 @@
 ---
 source-git-commit: d945ba1a06c691ba52b7caa89afc71d4a3d69815
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 | bequem | [magento/magento2#36529](https://github.com/magento/magento2/pull/36529) | [magento/magento2#36726](https://github.com/magento/magento2/issues/36726) [magento/magento2#35546](https://github.com/magento/magento2/issues/35546) |
 | Hostep | [magento/magento2#36495](https://github.com/magento/magento2/pull/36495) | [magento/magento2#36515](https://github.com/magento/magento2/issues/36515) |
 | sinhaparul | [magento/magento2#36458](https://github.com/magento/magento2/pull/36458) | [magento/magento2#36639](https://github.com/magento/magento2/issues/36639) |
-| barryvdh | [magento/magento2#36452](https://github.com/magento/magento2/pull/36452) | [Magento/magento2#32004](https://github.com/magento/magento2/issues/32004) [magento/magento2#36891](https://github.com/magento/magento2/issues/36891) |
+| barryvdh | [magento/magento2#36452](https://github.com/magento/magento2/pull/36452) | [magento/magento2#32004](https://github.com/magento/magento2/issues/32004) [magento/magento2#36891](https://github.com/magento/magento2/issues/36891) |
 | peterjaap | [magento/magento2#36414](https://github.com/magento/magento2/pull/36414) | [magento/magento2#36831](https://github.com/magento/magento2/issues/36831) |
 | engcom-Delta | [magento/magento2#36411](https://github.com/magento/magento2/pull/36411) | [magento/magento2#35971](https://github.com/magento/magento2/issues/35971) [magento/magento2#36841](https://github.com/magento/magento2/issues/36841) |
 | freezy-sk | [magento/magento2#36379](https://github.com/magento/magento2/pull/36379) | [magento/magento2#36640](https://github.com/magento/magento2/issues/36640) |
@@ -26,7 +26,7 @@ ht-degree: 0%
 | frisch | [magento/magento2#36187](https://github.com/magento/magento2/pull/36187) | [magento/magento2#36554](https://github.com/magento/magento2/issues/36554) |
 | Serbynskyi | [magento/magento2#36036](https://github.com/magento/magento2/pull/36036) | [magento/magento2#36337](https://github.com/magento/magento2/issues/36337) |
 | dshevtsov | [magento/magento2#35990](https://github.com/magento/magento2/pull/35990) | [magento/magento2#36230](https://github.com/magento/magento2/issues/36230) [magento/magento2#36651](https://github.com/magento/magento2/issues/36651) |
-| Bashev | [magento/magento2#35986](https://github.com/magento/magento2/pull/35986) | [magento/magento2#35899](https://github.com/magento/magento2/issues/35899) [magento/magento2#36055](https://github.com/magento/magento2/issues/36055) [magento/magento2#36312](https://github.com/magento/magento2/issues/36312) [Smile-SA/elasticsuite#2772](https://github.com/Smile-SA/elasticsuite/issues/2772) [plumrocket/module-layered-navigation-fix-magento-2.4.5#1](https://github.com/plumrocket/module-layered-navigation-fix-magento-2.4.5/issues/1) |
+| Bashev | [magento/magento2#35986](https://github.com/magento/magento2/pull/35986) | [magento/magento2#35899](https://github.com/magento/magento2/issues/35899) [magento/magento2#36055](https://github.com/magento/magento2/issues/36055) [magento/magento2#36312](https://github.com/magento/magento2/issues/36312) [Smile-SA/elasticsuite#2772](https://github.com/Smile-SA/elasticsuite/issues/2772) [plumrop cket/module-layered-navigation-fix-magento-2.4.5#1](https://github.com/plumrocket/module-layered-navigation-fix-magento-2.4.5/issues/1) |
 | lbajsarowicz | [magento/magento2#35948](https://github.com/magento/magento2/pull/35948) | [magento/magento2#36539](https://github.com/magento/magento2/issues/36539) |
 | tkotosz | [magento/magento2#35940](https://github.com/magento/magento2/pull/35940) | [magento/magento2#36642](https://github.com/magento/magento2/issues/36642) |
 | MeCapron | [magento/magento2#35885](https://github.com/magento/magento2/pull/35885) | [magento/magento2#36042](https://github.com/magento/magento2/issues/36042) |

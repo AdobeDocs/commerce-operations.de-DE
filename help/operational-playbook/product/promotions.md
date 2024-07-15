@@ -5,7 +5,7 @@ exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Da der Großteil der Bevölkerung zum Online-Einkauf übergeht, müssen die Einz
 
 Jede der sechs Ps ist gleichermaßen wichtig, aber für die Vermarktung von Produkten müssen Einzelhändler Promotions als Taktik verwenden, um den Traffic auf der Site zu steigern und höhere Konversionsraten zu erzielen. Promotions helfen, Produkte und Dienstleistungen zu vermarkten, die von der Marke angeboten werden. Es gibt verschiedene Werbestufen, wie z. B. Versand, Produkt und Bestellung.
 
-![Beispielwerbung für Werbeaktionen](../../assets/playbooks/promotion-example.png)
+![Beispiel für Werbewerbung](../../assets/playbooks/promotion-example.png)
 
 ## Arten von Promotions
 

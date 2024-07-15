@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## CPUs
 
-[!DNL Commerce] Webknoten dienen allen Anforderungen, die nicht zwischengespeichert werden oder die nicht über die Anwendung zwischengespeichert werden können. Ein CPU-Kern kann etwa zwei (manchmal bis vier) bedienen [!DNL Commerce] -Anfragen effektiv. Verwenden Sie die folgende Gleichung, um zu bestimmen, wie viele Webknoten/Kerne Sie benötigen, um alle eingehenden Anforderungen zu verarbeiten, ohne sie in die Warteschlange zu stellen:
+[!DNL Commerce] -Webknoten dienen allen Anforderungen, die nicht zwischengespeichert werden oder nicht über die Anwendung zwischengespeichert werden können. Ein CPU-Kern kann etwa zwei (manchmal bis zu vier) [!DNL Commerce] -Anfragen effektiv unterstützen. Verwenden Sie die folgende Gleichung, um zu bestimmen, wie viele Webknoten/Kerne Sie benötigen, um alle eingehenden Anforderungen zu verarbeiten, ohne sie in die Warteschlange zu stellen:
 
 ```
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
@@ -32,22 +32,22 @@ Szenarien und erwartete PHP-Speicheranforderungen:
 
 * Webnode nur für Storefront-Seiten: 256 MB
 * Webnode für Admin-Seiten mit großem Katalog: 1 GB
-* [!DNL Commerce] Cron-Indizierung einer Site mit einem großen Katalog: >256 MB (siehe [advanced-setup](../performance/advanced-setup.md) , um eine optimale Leistung zu erzielen.)
+* [!DNL Commerce] Cron-Indizierung einer Site mit einem großen Katalog: >256 MB (Informationen zur Optimierung der Leistung finden Sie unter [advanced-setup](../performance/advanced-setup.md) .)
 * [!DNL Commerce] Kompilieren und Bereitstellen von statischen Assets: 756 MB
-* [!DNL Commerce] Profilgenerierung des Leistungs-Toolkits: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE &amp; MAX_HEAP_TABLE_SIZE-Einstellungen
+* [!DNL Commerce] Profilgenerierung des Leistungs-Toolkits: >1 GB PHP RAM, >16 MB [!DNL MySQL] TMP_TABLE_SIZE und MAX_HEAP_TABLE_SIZE-Einstellungen
 
 ### [!DNL MySQL]
 
-Die [!DNL Commerce] -Datenbank (sowie jede andere Datenbank) auf die zum Speichern von Daten und Indizes verfügbare Speichermenge reagiert. Effektive Nutzung [!DNL MySQL] Datenindizierung sollte die verfügbare Speichermenge mindestens der Hälfte der in der Datenbank gespeicherten Daten entsprechen.
+Die [!DNL Commerce] -Datenbank (sowie jede andere Datenbank) ist abhängig von der Speichermenge, die zum Speichern von Daten und Indizes verfügbar ist. Um die [!DNL MySQL]-Datenindizierung effektiv zu nutzen, sollte die verfügbare Speichermenge mindestens der Hälfte der in der Datenbank gespeicherten Daten entsprechen.
 
 ### Caches
 
-Wenn Sie mehrere [!DNL Commerce] und mit Redis oder [!DNL Varnish] Beachten Sie für Ihre Caches die folgenden Grundsätze:
+Beachten Sie bei der Bereitstellung mehrerer [!DNL Commerce] und der Verwendung von Redis oder [!DNL Varnish] für Ihre Caches die folgenden Grundsätze:
 
-* [!DNL Varnish] Die Invalidierung des gesamten Seitenspeichers ist wirksam. Empfehlen Sie genügend Arbeitsspeicher, der zugewiesen wird, um [!DNL Varnish] um Ihre beliebtesten Seiten im Speicher zu speichern
+* [!DNL Varnish] Die Invalidierung des gesamten Seiten-Cache-Speichers ist wirksam. Empfehlen Sie genügend Speicher, der [!DNL Varnish] zugewiesen ist, um Ihre beliebtesten Seiten im Speicher zu speichern.
 * Sitzungs-Cache ist ein guter Kandidat, um eine separate Instanz von Redis zu konfigurieren.  Die Speicherkonfiguration für diesen Cache-Typ sollte die Strategie des Warenkorbabbruchs auf der Site berücksichtigen und berücksichtigen, wie lange eine Sitzung voraussichtlich im Cache verbleibt
 * Für Redis sollte ausreichend Speicher zur Verfügung stehen, damit alle anderen Caches im Speicher gespeichert werden können, um eine optimale Leistung zu erzielen.  Der Block-Cache ist der Schlüsselfaktor bei der Bestimmung des Speicherbedarfs, der konfiguriert werden muss.  Der Block-Cache wächst relativ zur Anzahl der Seiten auf einer Site (Anzahl der Stunden x Anzahl der Store-Ansichten).
 
 ## Netzwerkbandbreite
 
-Eine ausreichende Netzwerkbandbreite ist eine der wichtigsten Anforderungen für den Datenaustausch zwischen Webknoten, Datenbanken, Caching-/Sitzungsservern und anderen Diensten. weil [!DNL Commerce] nutzt Caching für hohe Leistung effektiv, kann Ihr System aktiv Daten mit Caching-Servern wie Redis austauschen. Wenn sich Redis auf einem Remote-Server befindet, müssen Sie einen ausreichenden Netzwerkkanal zwischen Webknoten und dem Caching-Server bereitstellen, um Engpässe bei Lese-/Schreibvorgängen zu vermeiden.
+Eine ausreichende Netzwerkbandbreite ist eine der wichtigsten Anforderungen für den Datenaustausch zwischen Webknoten, Datenbanken, Caching-/Sitzungsservern und anderen Diensten. Da [!DNL Commerce] die Zwischenspeicherung für eine hohe Leistung effektiv nutzt, kann Ihr System Daten aktiv mit Caching-Servern wie Redis austauschen. Wenn sich Redis auf einem Remote-Server befindet, müssen Sie einen ausreichenden Netzwerkkanal zwischen Webknoten und dem Caching-Server bereitstellen, um Engpässe bei Lese-/Schreibvorgängen zu vermeiden.

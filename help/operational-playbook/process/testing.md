@@ -15,7 +15,7 @@ Tests sind ein wichtiger Bestandteil des Entwicklungslebenszyklus.
 
 ## A/B-Tests
 
-![Symbol für AB-Tests](../../assets/playbooks/a-b-testing.png)
+![AB-Testsymbol](../../assets/playbooks/a-b-testing.png)
 
 Beim A/B-Test werden zwei verschiedene Versionen der Website miteinander verglichen, um die Leistungsunterschiede zu erkennen.
 

@@ -4,7 +4,7 @@ description: Konvertieren Sie XML-Layoutdateien.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '82'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Verwenden Sie diesen Befehl, um Ihre XML-Dateien zu aktualisieren, wenn Sie das entsprechende XSLT-Stylesheet (Extensible Stylesheet Language Transformations) aktualisieren.
 
-- [Layout-Anweisungen](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [Layoutanweisungen](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
 - [Layout-Dateitypen](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 Befehlsoptionen:
@@ -26,6 +26,6 @@ bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 
 Dabei gilt:
 
-- `{xml file}`—ist der vollständige Pfad und Dateiname einer XML-Datei, die konvertiert werden soll (erforderlich)
-- `{xslt stylesheet}`—ist der vollständige Pfad und Dateiname einer XSLT-Stylesheet-Datei, die für die Konvertierung verwendet werden soll (erforderlich)
+- `{xml file}` - ist der vollständige Pfad und Dateiname einer XML-Datei für das Layout, die konvertiert werden soll (erforderlich)
+- `{xslt stylesheet}` - ist der vollständige Pfad und Dateiname einer XSLT-Stylesheet-Datei, die für die Konvertierung verwendet werden soll (erforderlich)
 - `-o|--overwrite`—include this option to overwrite the existing XML file

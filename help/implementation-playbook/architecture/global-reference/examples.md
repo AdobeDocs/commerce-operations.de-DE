@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Beispiele für globale Referenzarchitekturen
 
-In diesem Thema werden gängige Methoden zur Organisation einer [globale Referenzarchitektur (GRA)](overview.md) Codebasis. Obwohl die Variable [separate Pakete](#option-1-separate-packages) empfohlen wird, erfordern einige Situationen eine der anderen unten beschriebenen Optionen.
+Hier werden gängige Methoden zum Organisieren einer [globalen Referenzarchitektur (GRA)](overview.md) -Codebasis beschrieben. Obwohl die Option [separate packages](#option-1-separate-packages) bevorzugt wird, erfordern einige Situationen eine der anderen unten beschriebenen Optionen.
 
 ## Definitionen
 
@@ -23,11 +23,11 @@ In diesem Thema werden gängige Methoden zur Organisation einer [globale Referen
 
 ## Option 1: Separate Pakete
 
-Siehe [Projektstruktur des Composers](composer/project-structure.md) Best Practices für die Einrichtung dieser Methode.
+Informationen zum Einrichten dieser Methode finden Sie unter Best Practices für die [Composer-Projektstruktur](composer/project-structure.md) .
 
 ![Abbildung der Option für separate Pakete für die globale Referenzarchitektur](../../../assets/playbooks/gra-separate-packages.png)
 
-Die flexibelste Methode zur Verwaltung von GRA Composer-Paketen besteht in Metapaketen. Metapakete enthalten eine `composer.json` -Datei, die andere Paketabhängigkeiten definiert. Erstellen von Metapaketen mit [Private Packagist](https://packagist.com/) Repositorys
+Die flexibelste Methode zur Verwaltung von GRA Composer-Paketen besteht in Metapaketen. Metapakete enthalten nur eine `composer.json` -Datei, die andere Paketabhängigkeiten definiert. Erstellen Sie Metapakete mit [Private Packagist](https://packagist.com/) -Repositorys.
 
 ### Hauptprojekt `composer.json`
 
@@ -82,7 +82,7 @@ Die flexibelste Methode zur Verwaltung von GRA Composer-Paketen besteht in Metap
 }
 ```
 
-Jedes Modul, Sprachpaket, Design und jede Bibliothek verfügt über ein eigenes Git-Repository. Jedes Git-Repository synchronisiert automatisch mit dem privaten Packagist-Repository und generiert dort ein Paket, solange ein `composer.json` im Stammverzeichnis des Git-Repositorys.
+Jedes Modul, Sprachpaket, Design und jede Bibliothek verfügt über ein eigenes Git-Repository. Jedes Git-Repository synchronisiert automatisch mit dem privaten Packagist-Repository und generiert dort ein Paket, solange sich im Stammverzeichnis des Git-Repositorys eine `composer.json` -Datei befindet.
 
 ## Optionen 2: Massenpakete
 
@@ -109,7 +109,7 @@ Die Dateistruktur im Verzeichnis &quot;Anbieter&quot;sollte wie im folgenden Bei
             └── composer.json
 ```
 
-Die `composer.json` sollte wie folgt aussehen:
+Die Datei `composer.json` sollte wie folgt aussehen:
 
 ```json
 {
@@ -139,7 +139,7 @@ Die `composer.json` sollte wie folgt aussehen:
 Diese Architektur verwendet vier Git-Repositorys zum Speichern von Code:
 
 - `core`: Enthält die Adobe Commerce-Kerninstallation. Wird verwendet, um Adobe Commerce-Versionen zu aktualisieren.
-- `GRA`: Enthält GRA-Code. Alle GRA-Module, Sprachpakete, White Label-Designs und Bibliotheken.
+- 0: Enthält GRA-Code. `GRA` Alle GRA-Module, Sprachpakete, White Label-Designs und Bibliotheken.
 - `brand/region`: Jede Marke oder Region verfügt über ein eigenes Repository mit nur marken- oder regionsspezifischem Code.
 - `release`: Alle oben genannten Elemente werden in diesem Git-Repository zusammengeführt. Hier sind nur Zusammenführungsbefehle zulässig.
 
@@ -147,16 +147,16 @@ Diese Architektur verwendet vier Git-Repositorys zum Speichern von Code:
 
 So richten Sie diese Option ein:
 
-1. Erstellen Sie die vier Repository-Typen in Git. Erstellen Sie die `core` und `GRA` Repositorys nur einmal. Erstellen einer `brand/region` und einem `release` Repository für jede Marke.
+1. Erstellen Sie die vier Repository-Typen in Git. Erstellen Sie die Repositorys `core` und `GRA` nur einmal. Erstellen Sie für jede Marke ein `brand/region` - und ein `release` -Repository.
 
    Vorgeschlagene Repository-Namen:
 
    - `m2-core`
    - `m2-gra`
-   - `m2-region-x`/`m2-brand-x` (zum Beispiel: `m2-emea`/`m2-adobe`)
-   - `m2-release-region-x`/`m2-release-brand-x` (zum Beispiel: `m2-release-emea`/`m2-release-adobe`)
+   - `m2-region-x`/`m2-brand-x` (z. B. `m2-emea`/`m2-adobe`)
+   - `m2-release-region-x`/`m2-release-brand-x` (z. B. `m2-release-emea`/`m2-release-adobe`)
 
-1. Erstellen Sie eine `release/` und führen Sie Folgendes aus, um einen freigegebenen Git-Verlauf für alle Repos zu erstellen.
+1. Erstellen Sie ein Verzeichnis &quot;`release/`&quot; und führen Sie Folgendes aus, um einen freigegebenen Git-Verlauf für alle Repos zu erstellen.
 
    ```bash
    git init
@@ -173,7 +173,7 @@ So richten Sie diese Option ein:
    git push region-x master
    ```
 
-1. Jedes Repository klonen, außer `core`, in einem anderen Verzeichnis auf Ihrem Computer.
+1. Klonen Sie jedes Repository mit Ausnahme von `core` in einem anderen Verzeichnis auf Ihrem Computer.
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -181,7 +181,7 @@ So richten Sie diese Option ein:
    git clone git@github.com:example-client/m2-gra.git
    ```
 
-1. [Installieren von Adobe Commerce mit Composer](../../../installation/composer.md). Entfernen Sie die `.gitignore` -Datei, fügen Sie die `core` entfernen, den Code hinzufügen und übertragen und pushen.
+1. [Installieren Sie Adobe Commerce mit Composer](../../../installation/composer.md). Entfernen Sie die Datei &quot;`.gitignore`&quot;, fügen Sie die Remote-Adresse &quot;`core`&quot;hinzu, fügen Sie den Code hinzu, übertragen Sie ihn und pushen Sie ihn.
 
    ```bash
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition m2-core
@@ -196,18 +196,18 @@ So richten Sie diese Option ein:
    git push
    ```
 
-1. Im `GRA` Repository erstellen Sie die folgenden Verzeichnisse:
+1. Erstellen Sie im Repository `GRA` die folgenden Ordner:
 
    - `app/code/`
    - `app/design/`
    - `app/i18n/`
    - `lib/`
 
-1. Code hinzufügen. Entfernen Sie die `.gitignore` -Datei, fügen Sie den Code hinzu und übertragen Sie ihn, fügen Sie die Remote- und Push-Benachrichtigung hinzu.
+1. Code hinzufügen. Entfernen Sie die Datei &quot;`.gitignore`&quot;, fügen Sie den Code hinzu und übertragen Sie ihn, fügen Sie die Remote- und Push-Benachrichtigung hinzu.
 
-1. Im `brand/region` Repository. Gehen Sie wie in `GRA` Repository zu speichern und zu beachten, dass Dateien eindeutig sein müssen. Dieselbe Datei kann nicht sowohl in dieses Repository als auch in die `GRA` Repository.
+1. Im Repository `brand/region` . Gehen Sie genauso vor wie im `GRA`-Repository und beachten Sie, dass Dateien eindeutig sein müssen. Dieselbe Datei kann nicht sowohl in dieses Repository als auch in das Repository `GRA` eingefügt werden.
 
-1. Im `release` Repository verwenden, die Zusammenführung anwenden.
+1. Wenden Sie die Zusammenführung im `release` -Repository an.
 
    ```bash
    git clone git@github.com:example-client/m2-release-brand-x.git
@@ -220,9 +220,9 @@ So richten Sie diese Option ein:
    git push
    ```
 
-1. Entfernen Sie die `.gitkeep` -Datei.
+1. Entfernen Sie die Datei &quot;`.gitkeep`&quot;.
 
-1. Stellen Sie die `release` Repository auf den Produktions-, Test-, QA- und Entwicklungsservern. Upgrade `core`, `GRA`, und `brand` -Code ist so einfach, die folgenden Befehle auszuführen:
+1. Stellen Sie das `release` -Repository auf den Produktions-, Test-, QA- und Entwicklungsservern bereit. Die Aktualisierung von `core`-, `GRA`- und `brand`-Code ist ebenso einfach wie die Ausführung der folgenden Befehle:
 
    ```bash
    git fetch --all
@@ -255,15 +255,15 @@ Weitere Informationen zu dieser Automatisierung finden Sie in den folgenden Ress
 
 ## Strategien nicht mischen
 
-Es ist nicht ratsam, einen kombinierten Ansatz mit Composer für GRA-Pakete und die `app/` Verzeichnis für Marken- oder Regionspakete.
+Es ist nicht ratsam, einen kombinierten Ansatz mit Composer für GRA-Pakete und das Verzeichnis `app/` für Marken- oder Regionspakete zu verwenden.
 
-Sie bekommen nicht nur alle _Vorteile_ aber auch _Nachteile_ von beiden Methoden. Sie sollten das eine oder das andere auswählen (Git oder Composer), um optimal zu funktionieren.
+Sie erhalten nicht nur alle _Vor_, sondern auch alle _Nachteile_ beider Methoden. Sie sollten das eine oder das andere auswählen (Git oder Composer), um optimal zu funktionieren.
 
 ## Lösungen zur Vermeidung
 
 - **Namenskonventionen für Module zur Angabe von GRA oder Marke**
 
-  Namensmodule, die GRA oder Marke darstellen, führen zu mangelnder Flexibilität. Verwenden Sie stattdessen Composer-Metapakete, um zu bestimmen, zu welcher Gruppe ein Modul gehört. Beispiel: Für Kunden-VF: package `vf/meta-gra` enthält Verweise auf alle GRA-Pakete und kann mithilfe der `composer require vf/meta-gra` Befehl. Paket `vf/meta-kipling` enthält Verweise auf alle Kipling-spezifischen Pakete und auf die `vf/meta-gra` Paket. Module werden `vf/module-sales` und `vf/module-sap` zum Beispiel. Mit dieser Namenskonvention können Sie Pakete mit geringer Auswirkung zwischen Marke und GRA-Status verschieben.
+  Namensmodule, die GRA oder Marke darstellen, führen zu mangelnder Flexibilität. Verwenden Sie stattdessen Composer-Metapakete, um zu bestimmen, zu welcher Gruppe ein Modul gehört. Beispielsweise enthält Package `vf/meta-gra` für Kunden-VF Verweise auf alle GRA-Pakete und kann mit dem Befehl `composer require vf/meta-gra` installiert werden. Paket `vf/meta-kipling` enthält Verweise auf alle Kipling-spezifischen Pakete und auf das Paket `vf/meta-gra` . Module haben beispielsweise die Namen `vf/module-sales` und `vf/module-sap`. Mit dieser Namenskonvention können Sie Pakete mit geringer Auswirkung zwischen Marke und GRA-Status verschieben.
 
 - **Adobe Commerce Core-Upgrades pro Instanz**
 

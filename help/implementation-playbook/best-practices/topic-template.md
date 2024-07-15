@@ -7,8 +7,8 @@ hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 2%
 
 ---
 
@@ -53,7 +53,7 @@ Chunk von Inhalten in Abschnitte zur einfacheren Lesbarkeit. Der Inhalt sollte A
 
 Verwenden Sie nur so viele Abschnitte wie nötig
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
 <!-- If applicable, add links to additional, more detailed documentation that provides more context about this best practices content.-->
 

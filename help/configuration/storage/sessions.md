@@ -5,7 +5,7 @@ feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 In diesem Thema wird erläutert, wie Sie ermitteln können, wo Ihre Sitzungsdateien gespeichert sind. Das System verwendet die folgende Logik zum Speichern von Sitzungsdateien:
 
-- Wenn Sie die Zwischenspeicherung konfiguriert haben, werden Sitzungen im RAM gespeichert; siehe [Verwenden Sie gecacht für die Sitzungsspeicherung](memcached.md).
-- Wenn Sie Redis konfiguriert haben, werden Sitzungen auf dem Redis-Server gespeichert, siehe [Verwenden von Redizes für die Sitzungsspeicherung](../cache/redis-session.md).
+- Wenn Sie die Zwischenspeicherung konfiguriert haben, werden Sitzungen im RAM gespeichert. Siehe [Speicherinformationen für Sitzungen verwenden](memcached.md).
+- Wenn Sie Redis konfiguriert haben, werden Sitzungen auf dem Redis-Server gespeichert. Siehe [Verwenden von Redis für die Sitzungsspeicherung](../cache/redis-session.md).
 - Wenn Sie den standardmäßigen dateibasierten Sitzungsspeicher verwenden, werden Sitzungen an den folgenden Speicherorten in der angegebenen Reihenfolge gespeichert:
 
    1. Verzeichnis definiert in [`env.php`](#example-in-envphp)
    1. Verzeichnis definiert in [`php.ini`](#example-in-phpini)
-   1. `<magento_root>/var/session` directory
+   1. Verzeichnis `<magento_root>/var/session`
 
 ## Beispiel in `env.php`
 
@@ -37,21 +37,21 @@ Das obige Beispiel speichert Sitzungsdateien in `/var/www/session`
 
 ## Beispiel in `php.ini`
 
-Als Benutzer mit `root` Berechtigungen, öffnen Sie Ihre `php.ini` Datei und suchen Sie nach dem Wert von `session.save_path`. Dadurch wird ermittelt, wo Sitzungen gespeichert werden.
+Als Benutzer mit `root` -Berechtigungen öffnen Sie Ihre `php.ini` -Datei und suchen Sie nach dem Wert von `session.save_path`. Dadurch wird ermittelt, wo Sitzungen gespeichert werden.
 
 ## Sitzungsgröße verwalten
 
-Siehe [Sitzungsverwaltung](https://docs.magento.com/user-guide/stores/security-session-management.html) im _Benutzerhandbuch_.
+Weitere Informationen finden Sie unter [Sitzungsverwaltung](https://docs.magento.com/user-guide/stores/security-session-management.html) im _Benutzerhandbuch_.
 
 ## Speicherbereinigungskonfiguration
 
-Um abgelaufene Sitzungen zu bereinigen, ruft das System die `gc` (_Abfallsammlung_)-Handler zufällig nach einer Wahrscheinlichkeit, die von der `gc_probability / gc_divisor` Richtlinie. Wenn Sie diese Anweisungen beispielsweise auf `1/100` bzw. bedeutet dies eine Wahrscheinlichkeit von `1%` (_Wahrscheinlichkeit eines Speicherbereinigungsaufrufs pro 100 Anforderungen_).
+Um abgelaufene Sitzungen zu bereinigen, ruft das System den Handler `gc` (_Garbage Collection_) zufällig gemäß einer Wahrscheinlichkeit auf, die von der Anweisung `gc_probability / gc_divisor` berechnet wird. Wenn Sie diese Anweisungen beispielsweise auf `1/100` setzen, bedeutet dies eine Wahrscheinlichkeit von `1%` (_Wahrscheinlichkeit eines Speicherbereinigungsaufrufs pro 100 Anforderungen_).
 
-Der Bereinigungs-Handler verwendet die `gc_maxlifetime` -Anweisung - die Anzahl der Sekunden, nach denen die Sitzungen als _Müll_ und möglicherweise bereinigt.
+Der Bereinigungs-Handler verwendet die `gc_maxlifetime` -Direktive, d. h. die Anzahl der Sekunden, nach denen die Sitzungen als _Müll_ betrachtet und möglicherweise bereinigt werden.
 
-Auf einigen Betriebssystemen (Debian/Ubuntu) ist die Standardeinstellung `session.gc_probability` Richtlinie `0`, wodurch verhindert wird, dass der Bereinigungs-Handler ausgeführt wird.
+Auf einigen Betriebssystemen (Debian/Ubuntu) ist die standardmäßige `session.gc_probability` -Direktive `0`, was verhindert, dass der Garbage Collection Handler ausgeführt wird.
 
-Sie können die `session.gc_` Richtlinien der `php.ini` in der Datei `<magento_root>/app/etc/env.php` Datei:
+Sie können die `session.gc_`-Anweisungen aus der `php.ini`-Datei in der `<magento_root>/app/etc/env.php`-Datei überschreiben:
 
 ```php
  'session' => [

@@ -21,9 +21,9 @@ ht-degree: 0%
 
 Magento Open Source verwendet Composer zur Verwaltung von PHP-Paketen.
 
-Die `composer.json` -Datei deklariert die Liste der Pakete, während die `composer.lock` -Datei speichert eine vollständige Liste der Pakete (eine Vollversion jedes Pakets und seiner Abhängigkeiten), die zum Erstellen einer Magento Open Source-Installation verwendet werden.
+Die Datei &quot;`composer.json`&quot; deklariert die Paketliste, während die Datei &quot;`composer.lock`&quot; eine vollständige Liste der Pakete speichert (eine Vollversion jedes Pakets und seiner Abhängigkeiten), die zum Erstellen einer Magento Open Source verwendet werden.
 
-Die folgende Referenzdokumentation wird aus der `composer.lock` -Datei, und es umfasst die erforderlichen Pakete, die in Magento Open Source 2.4.7-p1 enthalten sind.
+Die folgende Referenzdokumentation wird aus der `composer.lock` -Datei generiert und behandelt die erforderlichen Pakete, die in Magento Open Source 2.4.7-p1 enthalten sind.
 
 ## Abhängigkeiten
 
@@ -493,21 +493,21 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/google/recaptcha.git">Google/Recaptcha</a>
+      <a href="https://github.com/google/recaptcha.git">google/recaptcha</a>
     </td>
     <td>Bibliothek</td>
     <td>Client-Bibliothek für reCAPTCHA, einen kostenlosen Service, der Websites vor Spam und Missbrauch schützt.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-captcha.git">Laminas/Laminas-Captcha</a>
+      <a href="https://github.com/laminas/laminas-captcha.git">laminas/laminas-captcha</a>
     </td>
     <td>Bibliothek</td>
     <td>Generieren und Validieren von CAPTCHAs mit Figlets, Bildern, ReCaptcha und mehr</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-code.git">Laminas/Laminatcode</a>
+      <a href="https://github.com/laminas/laminas-code.git">laminas/laminas-code</a>
     </td>
     <td>Bibliothek</td>
     <td>Erweiterung der PHP Reflection API, statisches Scannen von Code und Codegenerierung</td>
@@ -535,14 +535,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-di.git">Laminas/Laminas-di</a>
+      <a href="https://github.com/laminas/laminas-di.git">laminas/laminas-di</a>
     </td>
     <td>Bibliothek</td>
     <td>Automatisierte Abhängigkeitseinspritzung für PSR-11-Container</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-escaper.git">Lamina/Lamina-Escaper</a>
+      <a href="https://github.com/laminas/laminas-escaper.git">laminas/laminas-escaper</a>
     </td>
     <td>Bibliothek</td>
     <td>Sicheres und sicheres Escape von HTML, HTML-Attributen, JavaScript, CSS und URLs</td>
@@ -556,7 +556,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-feed.git">Laminas/Laminatfeed</a>
+      <a href="https://github.com/laminas/laminas-feed.git">laminas/laminas-feed</a>
     </td>
     <td>Bibliothek</td>
     <td>bietet Funktionen zum Erstellen und Verwenden von RSS- und Atom-Feeds.</td>
@@ -570,21 +570,21 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-filter.git">Laminas/Lamina-Filter</a>
+      <a href="https://github.com/laminas/laminas-filter.git">laminas/laminas-filter</a>
     </td>
     <td>Bibliothek</td>
     <td>Daten und Dateien programmgesteuert filtern und normalisieren</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-http.git">Laminas/Laminas-http</a>
+      <a href="https://github.com/laminas/laminas-http.git">laminas/laminas-http</a>
     </td>
     <td>Bibliothek</td>
     <td>Bietet eine einfache Schnittstelle für die Ausführung von HTTP (Hyper-Text Transfer Protocol)-Anfragen</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-i18n.git">Laminas/Laminas-i18n</a>
+      <a href="https://github.com/laminas/laminas-i18n.git">laminas/laminas-i18n</a>
     </td>
     <td>Bibliothek</td>
     <td>Übersetzungen für Ihre Anwendung bereitstellen sowie internationalisierte Werte filtern und validieren</td>
@@ -598,14 +598,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-loader.git">Laminas/Laminas-Loader</a>
+      <a href="https://github.com/laminas/laminas-loader.git">laminas/laminas-loader</a>
     </td>
     <td>Bibliothek</td>
     <td>Strategien zum Laden und Laden von Plug-ins</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mail.git">Laminas/Laminas-mail</a>
+      <a href="https://github.com/laminas/laminas-mail.git">laminas/laminas-mail</a>
     </td>
     <td>Bibliothek</td>
     <td>Bietet allgemeine Funktionen zum Erstellen und Senden von Text- und MIME-kompatiblen mehrteiligen E-Mail-Nachrichten</td>
@@ -619,7 +619,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mime.git">Lamina/Lamina-mime</a>
+      <a href="https://github.com/laminas/laminas-mime.git">laminas/laminas-mime</a>
     </td>
     <td>Bibliothek</td>
     <td>Erstellen und Analysieren von MIME-Nachrichten und -Teilen</td>
@@ -633,14 +633,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mvc.git">Laminas/Laminas-mvc</a>
+      <a href="https://github.com/laminas/laminas-mvc.git">laminas/laminas-mvc</a>
     </td>
     <td>Bibliothek</td>
     <td>Die ereignisgesteuerte MVC-Schicht von Laminas, einschließlich MVC-Anwendungen, Controller und Plugins</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-oauth.git">Laminas/Laminas-Oauth</a>
+      <a href="https://github.com/laminas/laminas-oauth.git">laminas/laminas-oauth</a>
     </td>
     <td>Bibliothek</td>
     <td></td>
@@ -654,7 +654,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-recaptcha.git">Laminas/Laminas-Recaptcha</a>
+      <a href="https://github.com/laminas/laminas-recaptcha.git">laminas/laminas-recaptcha</a>
     </td>
     <td>Bibliothek</td>
     <td>OOP-Wrapper für den ReCaptcha-Webdienst</td>
@@ -689,7 +689,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-soap.git">Lamina/Lamina-Seife</a>
+      <a href="https://github.com/laminas/laminas-soap.git">Laminas/Laminas-soap</a>
     </td>
     <td>Bibliothek</td>
     <td></td>
@@ -710,21 +710,21 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-uri.git">Lamina/Laminas-uri</a>
+      <a href="https://github.com/laminas/laminas-uri.git">laminas/laminas-uri</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine Komponente, die die Bearbeitung und Validierung von Uniform Resource Identifiers (URIs) unterstützt</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-validator.git">Laminas/Laminas-validator</a>
+      <a href="https://github.com/laminas/laminas-validator.git">laminas/laminas-validator</a>
     </td>
     <td>Bibliothek</td>
     <td>Validierungsklassen für eine Vielzahl von Domänen und die Möglichkeit, Validatoren zu ketten, um komplexe Validierungskriterien zu erstellen</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-view.git">Lamina/Lamina-Ansicht</a>
+      <a href="https://github.com/laminas/laminas-view.git">laminas/laminas-view</a>
     </td>
     <td>Bibliothek</td>
     <td>Flexible Ansichtsebene zur Unterstützung und Bereitstellung mehrerer Ansichtsebenen, Helfer und mehr</td>
@@ -808,7 +808,7 @@ wikimedia/less.php: ^3.2
   <tbody>
   <tr>
     <td>
-      <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlfilter</a>
+      <a href="https://github.com/ezyang/htmlpurifier.git">ezyang/htmlClefier</a>
     </td>
     <td>Bibliothek</td>
     <td>Standardkonformer HTML-Filter in PHP</td>
@@ -843,14 +843,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/brick/math.git">Backstein/Mathematik</a>
+      <a href="https://github.com/brick/math.git">brick/math</a>
     </td>
     <td>Bibliothek</td>
     <td>Arithmetische Bibliothek mit beliebiger Genauigkeit</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/brick/varexporter.git">Backstein/Varexporter</a>
+      <a href="https://github.com/brick/varexporter.git">brick/varexporter</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine leistungsstarke Alternative zu var_export(), die Verschlüsse und Objekte ohne __set_state() exportieren kann</td>
@@ -885,7 +885,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/composer.git">Verfasser/Verfasser</a>
+      <a href="https://github.com/composer/composer.git">Composer/Composer</a>
     </td>
     <td>Bibliothek</td>
     <td>Composer hilft Ihnen, Abhängigkeiten von PHP-Projekten zu deklarieren, zu verwalten und zu installieren. Dadurch wird sichergestellt, dass Sie überall den richtigen Stapel haben.</td>
@@ -899,14 +899,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/pcre.git">Composer/PC</a>
+      <a href="https://github.com/composer/pcre.git">Composer/pcre</a>
     </td>
     <td>Bibliothek</td>
     <td>PCRE-Wrapping-Bibliothek, die typsichere preg_*-Ersetzungen bietet.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/semver.git">Composer/Semver</a>
+      <a href="https://github.com/composer/semver.git">Composer/semver</a>
     </td>
     <td>Bibliothek</td>
     <td>Semver-Bibliothek, die Dienstprogramme, Versionsbegrenzungs-Parsing und Validierung bietet.</td>
@@ -920,7 +920,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/xdebug-handler.git">Composer/xdebug-handler</a>
+      <a href="https://github.com/composer/xdebug-handler.git">composer/xdebug-handler</a>
     </td>
     <td>Bibliothek</td>
     <td>Startet einen Prozess ohne Xdebug neu.</td>
@@ -976,7 +976,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/flysystem.git">Liga/Flysystem</a>
+      <a href="https://github.com/thephpleague/flysystem.git">league/flysystem</a>
     </td>
     <td>Bibliothek</td>
     <td>Abstraktion der Dateispeicherung für PHP</td>
@@ -990,7 +990,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/mime-type-detection.git">Erkennung von Klassen/MIME-Typen</a>
+      <a href="https://github.com/thephpleague/mime-type-detection.git">league/mime-type-detection</a>
     </td>
     <td>Bibliothek</td>
     <td>MIME-Typ-Erkennung für Flysystem</td>
@@ -1130,7 +1130,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/ramsey/collection.git">Rammsey/Sammlung</a>
+      <a href="https://github.com/ramsey/collection.git">ramsey/collection</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine PHP-Bibliothek zum Darstellen und Bearbeiten von Kollektionen.</td>
@@ -1144,7 +1144,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/reactphp/promise.git">react/promise</a>
+      <a href="https://github.com/reactphp/promise.git">react/prop</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine einfache Implementierung von CommonJS Promises/A für PHP</td>

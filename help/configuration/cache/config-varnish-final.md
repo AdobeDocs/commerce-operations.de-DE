@@ -5,20 +5,20 @@ feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
 
 # Abschließende Überprüfung der tierischen Konfiguration
 
-Nachdem Sie jetzt die `default.vcl` von Commerce generiert haben, können Sie einige endgültige Überprüfungen durchführen, um sicherzustellen, dass Varnish funktioniert.
+Nachdem Sie jetzt den von Commerce generierten `default.vcl` verwenden, können Sie einige endgültige Überprüfungen durchführen, um sicherzustellen, dass Varnish funktioniert.
 
 ## Überprüfen von HTTP-Antwortheadern
 
-Verwendung `curl` oder ein anderes Dienstprogramm zum Anzeigen von HTTP-Antwortheadern, wenn Sie eine Commerce-Seite in einem Webbrowser besuchen.
+Verwenden Sie `curl` oder ein anderes Dienstprogramm, um HTTP-Antwortheader anzuzeigen, wenn Sie eine Commerce-Seite in einem Webbrowser besuchen.
 
-Stellen Sie zunächst sicher, dass Sie [Entwicklermodus](../cli/set-mode.md#change-to-developer-mode); andernfalls werden die Kopfzeilen nicht angezeigt.
+Stellen Sie zunächst sicher, dass Sie den [Entwicklermodus](../cli/set-mode.md#change-to-developer-mode) verwenden. Andernfalls werden die Kopfzeilen nicht angezeigt.
 
 Beispiel:
 
@@ -40,20 +40,20 @@ X-Magento-Cache-Debug: MISS
 
 ## Überprüfen der Seitenladezeiten
 
-Wenn Varnish funktioniert, sollte jede Commerce-Seite mit zwischenspeicherbaren Bausteinen in weniger als 150 ms geladen werden. Beispiele für solche Seiten sind die Kategorieseiten &quot;Haustür&quot;und &quot;Storefront&quot;.
+Wenn Varnish funktioniert, sollte jede Commerce-Seite mit zwischenspeicherbaren Blöcken in weniger als 150 ms geladen werden. Beispiele für solche Seiten sind die Kategorieseiten &quot;Haustür&quot;und &quot;Storefront&quot;.
 
 Verwenden Sie einen Browser-Inspektor, um die Seitenladezeiten zu messen.
 
 So verwenden Sie beispielsweise den Chrome-Inspektor:
 
-1. Greifen Sie in Chrome auf eine beliebige zwischenspeicherbare Commerce-Seite zu.
+1. Greifen Sie auf eine beliebige zwischenspeicherbare Commerce-Seite in Chrome zu.
 1. Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle auf der Seite.
 1. Klicken Sie im Popup-Menü auf **[!UICONTROL Inspect Element]**
-1. Klicken Sie im Bedienfeld des Inspektors auf die **[!UICONTROL Network]** Registerkarte.
+1. Klicken Sie im Bedienfeld des Inspektors auf die Registerkarte **[!UICONTROL Network]** .
 1. Aktualisieren Sie die Seite.
 1. Scrollen Sie zum oberen Rand des Inspektorbereichs, damit Sie die URL der angezeigten Seite sehen können.
 
-   Die folgende Abbildung zeigt ein Beispiel für das Laden der `magento2` Indexseite.
+   Die folgende Abbildung zeigt ein Beispiel für das Laden der Indexseite &quot;`magento2`&quot;.
 
    ![Klicken Sie auf die angezeigte Seite](../../assets/configuration/varnish-inspector.png)
 
@@ -63,9 +63,9 @@ So verwenden Sie beispielsweise den Chrome-Inspektor:
 
    Sie können HTTP-Header anzeigen, die im Abschnitt HTTP-Antwortheader überprüfen ausführlicher beschrieben werden.
 
-## Commerce-Cache überprüfen
+## Überprüfen des Commerce-Cache
 
-Stellen Sie sicher, dass `<magento_root>/var/page_cache` Verzeichnis ist leer:
+Stellen Sie sicher, dass der Ordner &quot;`<magento_root>/var/page_cache`&quot; leer ist:
 
 1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zum Dateisysteminhaber.
 1. Geben Sie den folgenden Befehl ein:
@@ -75,12 +75,12 @@ Stellen Sie sicher, dass `<magento_root>/var/page_cache` Verzeichnis ist leer:
    ```
 
 1. Greifen Sie auf eine oder mehrere zwischenspeicherbare Commerce-Seiten zu.
-1. Überprüfen Sie die `var/page_cache/` Verzeichnis.
+1. Überprüfen Sie den Ordner &quot;`var/page_cache/`&quot;.
 
-   Wenn das Verzeichnis leer ist, gratulieren Sie dazu! Sie haben Varnish und Commerce erfolgreich für die Zusammenarbeit konfiguriert!
+   Wenn das Verzeichnis leer ist, gratulieren Sie dazu! Sie haben Varnish und Commerce erfolgreich für die Zusammenarbeit konfiguriert.
 
-1. Wenn Sie die `var/page_cache/` Verzeichnis, starten Sie Varnish neu.
+1. Wenn Sie den Ordner &quot;`var/page_cache/`&quot;gelöscht haben, starten Sie &quot;Varnish&quot;neu.
 
 >[!TIP]
 >
->Wenn Sie 503-Fehler (Backend-Abruf fehlgeschlagen) feststellen, lesen Sie [Fehlerbehebung für Fehler in 503 (Dienst nicht verfügbar)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) im _Adobe Commerce Help Center_.
+>Wenn Fehler des Typs 503 (Backend-Abruf fehlgeschlagen) auftreten, finden Sie weitere Informationen unter [Fehlerbehebung für Fehler des Typs 503 (Dienst nicht verfügbar)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) im _Adobe Commerce Help Center_.

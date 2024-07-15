@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # Sichere Webserverkommunikation
 
-In diesem Thema wird ein Beispiel für die Sicherung der Kommunikation zwischen Ihrem Webserver und der Suchmaschine (Elasticsearch oder OpenSearch) mithilfe einer Kombination aus Transport Layer Security (TLS)-Verschlüsselung und [Grundlegende HTTP-Authentifizierung](https://datatracker.ietf.org/doc/html/rfc2617). Sie können optional auch andere Authentifizierungstypen konfigurieren. Für diese Informationen werden Verweise bereitgestellt.
+In diesem Thema wird ein Beispiel für das Schützen der Kommunikation zwischen Ihrem Webserver und der Suchmaschine (Elasticsearch oder OpenSearch) mithilfe einer Kombination aus Transport Layer Security (TLS)-Verschlüsselung und [HTTP-Basisauthentifizierung](https://datatracker.ietf.org/doc/html/rfc2617) erläutert. Sie können optional auch andere Authentifizierungstypen konfigurieren. Für diese Informationen werden Verweise bereitgestellt.
 
-(Ein älterer Begriff, Secure Sockets Layer (SSL), wird häufig synonym mit TLS verwendet. In diesem Thema beziehen wir uns auf *TLS*.
+(Ein älterer Begriff, Secure Sockets Layer (SSL), wird häufig synonym mit TLS verwendet. In diesem Thema beziehen wir uns auf *TLS*.)
 
 >[!WARNING]
 >
->Sofern nicht anders angegeben, müssen alle Befehle in diesem Thema als Benutzer mit `root` -Berechtigungen.
+>Sofern nicht anders angegeben, müssen alle Befehle in diesem Thema als Benutzer mit `root` -Berechtigungen eingegeben werden.
 
 ## Recommendations
 
@@ -35,12 +35,12 @@ Sehen Sie sich eine der folgenden Ressourcen an:
 
 * Apache
 
-   * [Anleitung zur Verschlüsselung mit Apache 2.4](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
+   * [Anleitung für Apache 2.4-starke Verschlüsselung zu](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
    * [Erstellen eines SSL-Zertifikats auf Apache für Ubuntu 14.04 (DigitalOcean-Tutorial)](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
    * [Einrichten eines SSL-gesicherten Webservers mit CentOS (CentOS-Wiki)](https://wiki.centos.org/HowTos/Https)
 
 * Nginx
 
    * [Nginx SSL-Beendigung](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
-   * [Erstellen eines SSL-Zertifikats unter Nginx für Ubuntu 14.04 (DigitalOcean-Tutorial)](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
-   * [Nginx SSL-Zertifikatinstallation (digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)
+   * [Erstellen eines SSL-Zertifikats auf Nginx für Ubuntu 14.04 (DigitalOcean-Tutorial)](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+   * [Nginx SSL Certificate Installation (digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)

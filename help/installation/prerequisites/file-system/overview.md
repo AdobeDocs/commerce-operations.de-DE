@@ -21,21 +21,21 @@ Es gibt zwei Arten von Dateisysteminhabern:
 
 - **Freigegebenes Hosting für einen einzelnen Benutzer**
 
-  Mit freigegebenen Hosting-Anbietern können Sie sich als ein Benutzer beim Anwendungsserver anmelden. Als einzelner Benutzer können Sie sich anmelden, Dateien über FTP übertragen und den Webserver ausführen. Sie haben die Möglichkeit, eine [`umask`](#restrict-access-with-a-umask) weitere Einschränkung des Zugangs, insbesondere in einem Produktionsumfeld.
+  Mit freigegebenen Hosting-Anbietern können Sie sich als ein Benutzer beim Anwendungsserver anmelden. Als einzelner Benutzer können Sie sich anmelden, Dateien über FTP übertragen und den Webserver ausführen. Sie haben die Möglichkeit, einen [`umask`](#restrict-access-with-a-umask) festzulegen, um den Zugriff insbesondere in einer Produktionsumgebung weiter einzuschränken.
 
 - **Privates Hosting mit zwei Benutzern**
 
   Private Hosting ist nützlich, wenn Sie einen Anwendungsserver verwalten. Jeder Benutzer hat eine spezifische Verantwortung:
 
-   - Die _Webserver-Benutzer_ führt die Admin- und Storefront aus.
+   - Der _Webserver-Benutzer_ führt den Admin und die Storefront aus.
 
-   - Die _Befehlszeilenbenutzer_ führt Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
+   - Der _Befehlszeilenbenutzer_ führt Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
 
-  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe](configure-permissions.md#set-ownership-and-permissions-for-two-users) und legen Sie eine [`umask`](#restrict-access-with-a-umask).
+  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe](configure-permissions.md#set-ownership-and-permissions-for-two-users) zu verwenden und einen [`umask`](#restrict-access-with-a-umask) festzulegen.
 
 ### Zugriff auf eine Umfrage beschränken
 
-Um die Sicherheit insbesondere in einer Produktionsumgebung auf einem gemeinsamen Hosting-System zu erhöhen, können Sie `umask` , um den Zugriff zu beschränken. A `umask`—auch als _Erstellungsmaske des Dateisystems_—ist ein Satz von Bit, der steuert, wie die Dateiberechtigungen für neu erstellte Dateien festgelegt werden.
+Um die Sicherheit insbesondere in einer Produktionsumgebung auf einem gemeinsam genutzten Hosting-System zu erhöhen, können Sie mit `umask` den Zugriff einschränken. Eine `umask`-Datei, die auch als _Erstellungsmaske des Dateisystems_ bezeichnet wird, ist ein Satz von Bit, der steuert, wie die Dateiberechtigungen für neu erstellte Dateien festgelegt werden.
 
 >[!WARNING]
 >
@@ -45,11 +45,11 @@ Adobe Commerce verwendet eine 3-Bit-Standardmaske: `002`. Ziehen Sie die Standar
 
 Beispiel:
 
-- **775 für Verzeichnisse**—Vollständige Kontrolle durch den Benutzer, vollständige Kontrolle durch die Gruppe und ermöglicht jedem, das Verzeichnis zu durchlaufen. Diese Berechtigungen sind normalerweise von freigegebenen Hosting-Anbietern erforderlich.
+- **775 für Verzeichnisse** - Vollständige Kontrolle durch den Benutzer, vollständige Kontrolle durch die Gruppe und ermöglicht jedem, den Ordner zu durchlaufen. Diese Berechtigungen sind normalerweise von freigegebenen Hosting-Anbietern erforderlich.
 
-- **664 für Dateien**—Schreibbar durch den Benutzer, schreibbar durch die Gruppe und schreibgeschützt für alle anderen.
+- **664 für Dateien**: Vom Benutzer schreibbar, von der Gruppe schreibbar und für alle anderen schreibgeschützt.
 
-Weitere Informationen zum Erstellen eines `magento_umask` -Datei, siehe [Setzen einer Umfrage](../../next-steps/set-umask.md).
+Weitere Informationen zum Erstellen einer `magento_umask`-Datei finden Sie unter [Festlegen einer Umfrage](../../next-steps/set-umask.md).
 
 ## Berechtigungen, Eigentümer und Anwendungsmodi
 
@@ -61,8 +61,8 @@ Wir empfehlen verschiedene Berechtigungen und Eigentumsrechte, wenn Sie die vers
 
 Siehe [Über Modi](../../../configuration/bootstrap/application-modes.md) im _Konfigurationshandbuch_.
 
-Weitere Informationen zu Berechtigungen finden Sie in [Zugriffsberechtigungen für Dateisysteme](../../../configuration/deployment/file-system-permissions.md) im _Konfigurationshandbuch_.
+Weiterführende Informationen zu Berechtigungen finden Sie im Abschnitt zu Zugriffsberechtigungen für Dateisysteme](../../../configuration/deployment/file-system-permissions.md) im _Konfigurationshandbuch_.[
 
 >[!TIP]
 >
->Lesen Sie vor der Installation von Adobe Commerce den Abschnitt [Konfigurieren von Dateieigentum und Berechtigungen](configure-permissions.md).
+>Lesen Sie vor der Installation von Adobe Commerce den Abschnitt [Dateieigentum und -berechtigungen konfigurieren](configure-permissions.md).

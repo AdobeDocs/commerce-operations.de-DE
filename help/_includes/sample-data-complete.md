@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Beispieldateninstallation abschließen
 
-Nachdem Sie die Beispieldatenpackages heruntergeladen haben, melden Sie sich bei Ihrem Anwendungsserver als Dateisysteminhaber an oder wechseln Sie zu ihm. Geben Sie dann den folgenden Befehl ein in `<app_root>` directory:
+Nachdem Sie die Beispieldatenpackages heruntergeladen haben, melden Sie sich als Dateisysteminhaber bei Ihrem Anwendungsserver an oder wechseln Sie zu ihm. Geben Sie dann den folgenden Befehl in das Verzeichnis `<app_root>` ein:
 
 ```bash
 bin/magento setup:upgrade

@@ -4,7 +4,7 @@ description: Lesen Sie die Empfehlungen zur Planung Ihres Adobe Commerce-Upgrade
 exl-id: f776b000-0085-4b77-860f-623837c3c902
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Eine E-Commerce-Implementierung ist eine Weiterentwicklung - sie ist nie wirklic
 - Verbesserte Entwicklererfahrung und -werkzeuge
 - Möglichkeit einer tieferen Integration mit anderen Adobe Experience Cloud-Anwendungen
 
-Um unseren Händlern mehr Flexibilität bei der Planung von Upgrades zu bieten, haben wir kürzlich die Adobe Commerce aktualisiert [Veröffentlichungszeitplan](../../release/schedule.md), verlängerte das Datum des 2.3 Ende des Supports (EOS) und kündigte neue erweiterte Support-Optionen für ausgewählte Versionen unserer Software an. Weitere Informationen zu diesen Aktualisierungen finden Sie unter [Erweiterte Unterstützung für Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+Um unseren Händlern mehr Flexibilität bei der Planung von Upgrades zu bieten, haben wir kürzlich den Adobe Commerce- [Veröffentlichungszeitplan](../../release/schedule.md) aktualisiert, das 2.3-Ende-Support-Datum (EOS) verlängert und neue erweiterte Support-Optionen für ausgewählte Versionen unserer Software angekündigt. Weitere Informationen zu diesen Aktualisierungen finden Sie unter [Erweiterte Unterstützung für Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
 Im Folgenden finden Sie die von Adobe Commerce empfohlenen Aktualisierungspfade, um die Sicherheit und Leistung Ihrer Site beim Upgrade auf eine der neuesten Versionen zu gewährleisten.
 
@@ -30,7 +30,7 @@ Im Folgenden finden Sie die von Adobe Commerce empfohlenen Aktualisierungspfade,
 
 ## Upgrade von 2.4.0 auf 2.4.3
 
-![Aktualisierungspfad von 2.4.0 auf 2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
+![Aktualisierungspfad von 2.4.0 bis 2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## Upgrade von 2.4.4 und 2.4.5
 

@@ -3,13 +3,13 @@ title: Best Practices bei der Codeüberprüfung
 description: Erfahren Sie mehr über die Best Practices zur Codeüberprüfung für die Entwicklungsphase von Adobe Commerce-Projekten.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices zur Codeüberprüfung für Adobe Commerce
 
@@ -49,7 +49,7 @@ Beachten Sie außerdem die folgenden Punkte bei der Implementierung von Code-Üb
 
 Der Stil kann automatisch getestet werden, indem die PhpStorm-Inspektion ausgeführt wird (siehe unten).
 
-Konfigurieren Sie unbedingt [PHPMD und PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) und zum Ausführen der [Codierungsstandard](https://github.com/magento/magento-coding-standard) -Tool aus der CLI (auch unten). Es gibt einige Überschneidungen, aber beide haben auch eindeutige Tests.
+Stellen Sie sicher, dass Sie [PHPMD und PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) konfigurieren und das Tool [Coding Standard](https://github.com/magento/magento-coding-standard) über die CLI ausführen (auch unten). Es gibt einige Überschneidungen, aber beide haben auch eindeutige Tests.
 
 ### Übereinkommen und Struktur
 
@@ -69,7 +69,7 @@ Die Überprüfung der Vollständigkeit erfolgt manuell.
 
 - Kann der Code durch Konfiguration aktiviert oder deaktiviert werden und verhält sich der gesamte erforderliche Code erwartungsgemäß?
 - Ist die gesamte Konfiguration vorhanden, die im Ticket erwähnt wird? Überprüfen Sie Umfang, Datentyp, Validierung, Übersetzung und Standardwerte.
-- Wird die Konfiguration immer auf der niedrigstmöglichen Ebene abgerufen (Store-Ansichtsebene, Website-Ebene oder globale Ebene)? Der Konfigurationsabruf muss mit der Definition des Umfangs im Abschnitt `system.xml` -Datei.
+- Wird die Konfiguration immer auf der niedrigstmöglichen Ebene abgerufen (Store-Ansichtsebene, Website-Ebene oder globale Ebene)? Der Konfigurationsabruf muss mit der Definition des Umfangs in der Datei `system.xml` übereinstimmen.
 - Werden alle Pfade im Flussdiagramm der technischen Spezifikation abgedeckt? Werden alle anderen technischen Spezifikationen berücksichtigt?
 - Sind ACLs für die neue Funktion definiert?
 - Sind PhpDocs klar? Sind Commit-Nachrichten klar?
@@ -80,14 +80,14 @@ Die Überprüfung der Vollständigkeit erfolgt manuell.
 Die Überprüfung der Leistung erfolgt manuell, was im Zweifelsfall durch die Codeausführung unterstützt werden kann.
 
 - Werden Abfragen in einer Schleife ausgeführt? Diese Schleife kann sich außerhalb der bearbeiteten Dateien befinden.
-- Können Sie beliebige `cachable="false"` Attribute? Werden sie korrekt angewendet?
+- Können beliebige `cachable="false"` -Attribute gefunden werden? Werden sie korrekt angewendet?
 
 ### Sicherheit
 
 Sicherheitsprüfungen werden manuell durchgeführt, was durch die Textsuche unterstützt werden kann. Ein Teil der Sicherheitsprüfung wird durch automatisierte Tests durchgeführt.
 
 - Werden bei Bedarf Ausnahmen protokolliert? Werden die richtigen Arten von Ausnahmen verwendet?
-- can `around` Plug-ins vermieden werden?
+- Können `around`-Plug-ins vermieden werden?
 - Gibt das Plug-in die richtigen Datentypen zurück?
 - Können Sie Raw-SQL-Abfragen finden, die mithilfe der Datenbank-Abstraktionsebene erstellt werden sollen?
 - Sind neue Datentypen für beliebige Benutzer, Administratoren oder Frontend verfügbar? Ist diese Risikoposition ein Sicherheitsrisiko?
@@ -95,7 +95,7 @@ Sicherheitsprüfungen werden manuell durchgeführt, was durch die Textsuche unte
 
 ### Datenschutz und DSGVO
 
-Überprüfungen der Privatsphäre und [DSGVO](../../../security-and-compliance/privacy/gdpr.md) manuell ausgeführt werden.
+Datenschutzüberprüfungen und Überprüfungen der [DSGVO](../../../security-and-compliance/privacy/gdpr.md) werden manuell durchgeführt.
 
 - Verarbeitet der Code Kundendaten oder E-Mails? Achten Sie besonders darauf.
 - Wenn dieser Code in einer Schleife ausgeführt werden kann, kann er dann die Kundendaten von einem Schleifenzyklus zum anderen übergeben?
@@ -131,19 +131,19 @@ Entwickler können Automatisierung verwenden, um die ID-Kompilierung, das Datenb
   bin/magento deploy:mode:set developer || exit;
   ```
 
-- Datenbankschema `whitelist.json`—Führen Sie den folgenden CLI-Befehl aus und überprüfen Sie, ob das `db_schema_whitelist.json` -Datei hinzugefügt oder geändert wird.
+- Datenbankschema `whitelist.json`: Führen Sie den folgenden CLI-Befehl aus und überprüfen Sie, ob die Datei `db_schema_whitelist.json` nicht hinzugefügt oder geändert wurde.
 
   ```bash
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
-- Composer validate - Validieren Sie die `composer.json` Datei, indem Sie den folgenden CLI-Befehl im Verzeichnis ausführen, das die `composer.json` -Datei.
+- Composer validate - Validieren Sie die Datei `composer.json`, indem Sie den folgenden CLI-Befehl in dem Verzeichnis ausführen, das die Datei `composer.json` enthält.
 
   ```bash
   composer validate
   ```
 
-- Codierungsstandard - Installieren und führen Sie das Coding Standard-Tool aus und führen Sie es mit Ihrem -Modul aus. Die folgende Datei zeigt, wie sie durch Eingabe von `mcs ./app/code/Vendor/Module/`.
+- Codierungsstandard - Installieren und führen Sie das Coding Standard-Tool aus und führen Sie es mit Ihrem -Modul aus. Die folgende Datei zeigt, wie sie durch Eingabe von `mcs ./app/code/Vendor/Module/` für eine beliebige Stelle ausgeführt werden kann.
 
   ```bash
   #!/usr/bin/env bash

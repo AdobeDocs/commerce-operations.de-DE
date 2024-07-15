@@ -22,9 +22,9 @@ Checkout-, Bestellungen- und Produktdaten können jeweils eine separate Master-D
 
 >[!INFO]
 >
->Adobe Commerce auf Cloud-Infrastruktur: _not_ unterstützt diese Funktion.
+>Adobe Commerce in der Cloud-Infrastruktur unterstützt diese Funktion nicht _._
 
-Die `ResourceConnections` -Klasse stellt die einheitliche MySQL-Datenbankverbindung zur Commerce-Anwendung bereit. Für Abfragen an die Master-Datenbanken implementieren wir das Datenbankmuster Command Query Responsibility Segregation (CQRS) . Dieses Muster verarbeitet die Logik zum Routing der Lese- und Schreibabfragen in die entsprechenden Datenbanken. Entwickler müssen nicht wissen, welche Konfiguration verwendet wird und es gibt keine separaten Lese- und Schreibdatenbankverbindungen.
+Die Klasse `ResourceConnections` stellt die einheitliche MySQL-Datenbankverbindung zur Commerce-Anwendung bereit. Für Abfragen an die Master-Datenbanken implementieren wir das Datenbankmuster Command Query Responsibility Segregation (CQRS) . Dieses Muster verarbeitet die Logik zum Routing der Lese- und Schreibabfragen in die entsprechenden Datenbanken. Entwickler müssen nicht wissen, welche Konfiguration verwendet wird und es gibt keine separaten Lese- und Schreibdatenbankverbindungen.
 
 Wenn Sie eine optionale Datenbankreplikation einrichten, haben Sie die folgenden Vorteile:
 
@@ -44,7 +44,7 @@ Adobe Commerce verwendet drei Master-Datenbanken und eine konfigurierbare Anzahl
 
 ## Konfigurationsoptionen
 
-Aufgrund der Art und Weise, wie die aufgespaltete Datenbank-Performance-Lösung entworfen wird, Ihr benutzerdefinierter Code und die installierten Komponenten _cannot_ Führen Sie einen der folgenden Schritte aus:
+Aufgrund der Art und Weise, wie die Aufspaltungsdatenbankleistung entworfen wird, kann Ihr benutzerdefinierter Code und die installierten Komponenten _nicht_ einen der folgenden Schritte ausführen:
 
 - Direktes Schreiben in die Datenbank (stattdessen müssen Sie die Adobe Commerce-Datenbankschnittstelle verwenden)
 - Verwenden von JOINs, die sich auf die Verkaufs- oder Kursdatenbanken auswirken
@@ -55,32 +55,32 @@ Aufgrund der Art und Weise, wie die aufgespaltete Datenbank-Performance-Lösung 
 >Wenden Sie sich an Entwickler von Komponenten, um zu überprüfen, ob ihre Komponenten einen der oben genannten Schritte ausführen. In diesem Fall dürfen Sie nur eine der folgenden Optionen auswählen:
 >
 >- Bitten Sie die Komponentenentwickler, ihre Komponenten zu aktualisieren.
->- Die Komponenten unverändert verwenden _without_ die geteilte Datenbanklösung.
+>- Verwenden Sie die Komponenten unverändert _ohne_ die aufgespaltete Datenbanklösung.
 >- Entfernen Sie die Komponenten, damit Sie die geteilte Datenbanklösung verwenden können.
 
 Dies bedeutet auch Folgendes:
 
-- Konfiguration der geteilten Datenbanklösung _before_ Commerce in Produktion setzen.
+- Konfigurieren Sie die geteilte Datenbanklösung _vor_, die Commerce in die Produktion einführt.
 
   Adobe empfiehlt die Konfiguration von geteilten Datenbanken so bald wie möglich nach der Installation der Commerce-Software.
 
-- [Manuelle Konfiguration](multi-master-manual.md) die geteilte Datenbanklösung.
+- [Konfigurieren Sie die geteilte Datenbanklösung manuell ](multi-master-manual.md).
 
-  Sie müssen diese Aufgabe ausführen, wenn Sie bereits Komponenten installiert haben oder Commerce bereits in Produktion ist. (_Nicht_ ein Produktionssystem aktualisieren, die Aktualisierungen in einem Entwicklungssystem vornehmen und die Änderungen synchronisieren, nachdem Sie sie getestet haben.)
+  Sie müssen diese Aufgabe ausführen, wenn Sie bereits Komponenten installiert haben oder Commerce bereits in Produktion ist. (_Aktualisieren Sie kein_ Produktionssystem. Nehmen Sie die Aktualisierungen in einem Entwicklungssystem vor und synchronisieren Sie die Änderungen, nachdem Sie sie getestet haben.)
 
   >[!WARNING]
   >
-  >Sie müssen die beiden zusätzlichen Datenbankinstanzen manuell sichern. Commerce sichert nur die Hauptdatenbankinstanz. Die [`magento setup:backup --db`](../../installation/tutorials/backup.md) -Befehls- und -Admin-Optionen sichern die zusätzlichen Tabellen nicht.
+  >Sie müssen die beiden zusätzlichen Datenbankinstanzen manuell sichern. Commerce sichert nur die Hauptdatenbankinstanz. Die Optionen [`magento setup:backup --db`](../../installation/tutorials/backup.md) und &quot;Admin&quot;sichern die zusätzlichen Tabellen nicht.
 
 ## Voraussetzungen
 
-Für die geteilte Datenbank müssen Sie drei MySQL-Master-Datenbanken auf einem beliebigen Host einrichten (alle drei auf dem Commerce-Server, jede Datenbank auf einem separaten Server usw.). Dies sind die _master_ -Datenbanken und werden wie folgt verwendet:
+Für die geteilte Datenbank müssen Sie drei MySQL-Master-Datenbanken auf einem beliebigen Host einrichten (alle drei auf dem Commerce-Server, jede Datenbank auf einem separaten Server usw.). Dies sind die _Master_ -Datenbanken und werden wie folgt verwendet:
 
 - Eine Master-Datenbank für Checkout-Tabellen
-- Eine Master-Datenbank für Verkaufstabellen (auch als _Order Management System_ oder _OMS_, Tabellen)
+- Eine Masterdatenbank für Verkaufstabellen (auch als _Order Management-System_ oder _OMS_, Tabellen bezeichnet)
 - Eine Master-Datenbank für die übrigen Commerce 2-Anwendungstabellen
 
-Darüber hinaus können Sie optional eine beliebige Anzahl von _Slave_ Datenbanken, die als Lastenausgleich und Backups dienen.
+Darüber hinaus können Sie optional eine beliebige Anzahl von _Slave_-Datenbanken einrichten, die als Lastenausgleich und Sicherungen dienen.
 
 In diesem Handbuch wird beschrieben, wie Sie die Master-Datenbanken einrichten. Wir stellen Ihnen Beispielkonfigurationen und -referenzen zur Verfügung, um Slave-Datenbanken bei Bedarf einzurichten.
 

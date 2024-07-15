@@ -5,7 +5,7 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -14,26 +14,26 @@ ht-degree: 0%
 
 _Dies ist für Instanzen verfügbar, bei denen B2B für Adobe Commerce installiert ist._
 
-Dieses Thema listet Konfigurationspfade für Commerce Enterprise B2B Extension auf. Die [`magento app:config:dump` command](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei, `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte.
+In diesem Thema werden die Konfigurationspfade für die Commerce Enterprise B2B-Erweiterung aufgeführt. Der Befehl [`magento app:config:dump`](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte.
 
 >[!INFO]
 >
->Diese Referenzliste _only_ eindeutige Konfigurationspfade für B2B für Adobe Commerce. Diese Erweiterung umfasst alle Konfigurationspfade für Adobe Commerce.
+>Diese Referenz listet _nur_ Konfigurationspfade auf, die für B2B für Adobe Commerce eindeutig sind. Diese Erweiterung umfasst alle Konfigurationspfade für Adobe Commerce.
 
 Informationen zu diesen Konfigurationspfaden finden Sie unter:
 
 - [Zahlungskonfigurationspfade](config-reference-payment.md)
 - [Referenz zu vertraulichen und systemspezifischen Konfigurationspfaden](config-reference-sens.md)
 
-Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](override-config-settings.md#environment-variables).
+Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Verwenden von Umgebungsvariablen zum Außerkraftsetzen von Konfigurationseinstellungen](override-config-settings.md#environment-variables).
 
 ## Allgemeine Kategorie
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL General]** verfügbar sind.
 
 ### B2B-Funktionspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+Diese Konfigurationswerte sind unter Admin unter **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** verfügbar.
 
 | Name | Konfigurationspfad | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -49,17 +49,17 @@ Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > 
 
 ## Kundenkategorie
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** verfügbar sind.
 
 ### Unternehmenskonfigurationspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+Diese Konfigurationswerte sind unter Admin unter **[!UICONTROL Stores]** > Einstellungen > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]** verfügbar.
 
 | Name | Konfigurationspfad | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 |--------------|--------------|--------------|--------------|--------------|
 | Zulassung der Firmenregistrierung über die Storefront | `company/general/allow_company_registration` | | | |
-| Empfänger der E-Mail-Registrierung für Unternehmen | `company/email/company_registration` | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
-| E-Mail-Kopie zur Firmenregistrierung senden an | `company/email/company_registration_copy` | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Empfänger der E-Mail-Registrierung für Unternehmen | `company/email/company_registration` | | | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
+| E-Mail-Kopie zur Firmenregistrierung senden an | `company/email/company_registration_copy` | | | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
 | Email Copy-Methode senden | `company/email/company_copy_method` | | | |
 | Standard-E-Mail zur Firmenregistrierung | `company/email/company_notify_admin_template` | | | |
 | Kundenbezogene E-Mails | `company/email/heading_customer` | | | |
@@ -72,7 +72,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > 
 | Standard-Kundenstatus - Inaktive E-Mail | `company/email/customer_account_locked_template` | | | |
 | Änderung des Unternehmensstatus | `company/email/heading_company_status` | | | |
 | E-Mail-Empfänger zur Änderung des Firmenstatus | `company/email/company_status_change` | | | |
-| E-Mail-Kopie zum Ändern des Firmenstatus an senden | `company/email/company_status_change_copy` | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| E-Mail-Kopie zum Ändern des Firmenstatus an senden | `company/email/company_status_change_copy` | | | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
 | Email Copy-Methode senden | `company/email/company_status_copy_method` | | | |
 | Standardänderung des Firmenstatus in aktive 1 E-Mail | `company/email/company_status_pending_approval_to_active_template` | | | |
 | Standardänderung des Firmenstatus in aktive 2 E-Mail | `company/email/company_status_rejected_blocked_to_active_template` | | | |
@@ -80,7 +80,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > 
 | Standardänderung des Firmenstatus in blockierte E-Mail | `company/email/company_status_blocked_template` | | | |
 | Standardänderung des Firmenstatus in ausstehende Genehmigung - E-Mail | `company/email/company_status_pending_approval_template` | | | |
 | Firmenguthaben | `company/email/heading_company_credit` | | | |
-| E-Mail-Absender der Firmenkreditänderung | `company/email/company_credit_change` |  | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| E-Mail-Absender der Firmenkreditänderung | `company/email/company_credit_change` |  | | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
 | E-Mail-Kopie für Firmenkreditänderung an senden | `company/email/company_credit_change_copy` | | | |
 | Email Copy-Methode senden | `company/email/company_credit_copy_method` | | | |
 | Zugewiesene E-Mail-Vorlage | `company/email/credit_allocated_email_template` | | | |
@@ -93,7 +93,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **[!UICONTROL Stores]** > 
 
 ### Pfade für Anforderungslisten
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Anforderungslisten**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Kunden** > **Anforderungslisten** verfügbar.
 
 | Name | Konfigurationspfad | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -103,11 +103,11 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Verkaufskategorie
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Vertrieb**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Verkauf** verfügbar sind.
 
 ### Pfade für Verkaufs-E-Mails
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Verkaufs-E-Mails**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **E-Mails für Verkäufe** verfügbar.
 
 | Name | Konfigurationspfad | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -119,14 +119,14 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Anführungszeitablauf (in 48 Stunden) | `sales_email/quote/expire_two_days_template` | | | |
 | Anführungszeitablauf (in 24 Stunden) | `sales_email/quote/expire_one_day_template` | | | |
 | Ablaufdatum zurücksetzen | `sales_email/quote/expire_reset_template` | | | |
-| Anführungszeichen als E-Mail-Kopie senden | `sales_email/quote/copy_to` | | | ![Sensitiv](/help/assets/configuration/cloud-sens.png) |
+| Anführungszeichen als E-Mail-Kopie senden | `sales_email/quote/copy_to` | | | ![vertraulich](/help/assets/configuration/cloud-sens.png) |
 | Anführungsmethode für E-Mail-Kopie senden | `sales_email/quote/copy_method` | | | |
 
 {style="table-layout:auto"}
 
 ### Anführungspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Anführungszeichen**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Anführungszeichen** verfügbar.
 
 | Name | Konfigurationspfad | Verschlüsselt? | Systemspezifisch? | Sensitiv? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Zahlungsmethodenpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Zahlungsmethoden**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Zahlungsmethoden** verfügbar.
 
 >[!INFO]
 >

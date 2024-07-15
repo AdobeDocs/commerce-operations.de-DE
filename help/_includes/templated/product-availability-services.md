@@ -38,7 +38,7 @@ ht-degree: 6%
           <td>1,17</td>
           <td>1,17</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Übersicht</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Überblick</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Versionshinweise</a><br/>
           </td>
       </tr>

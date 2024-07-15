@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Hausinterne Installationssicherheit
 
-[Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page) ermöglicht CentOS- und Ubuntu-Administratoren eine bessere Zugriffskontrolle über ihre Server. Wenn Sie SELinux verwenden *und* Apache muss eine Verbindung zu einem anderen Host herstellen. Sie müssen die in diesem Abschnitt beschriebenen Befehle ausführen.
+[Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page) ermöglicht CentOS- und Ubuntu-Administratoren eine bessere Zugriffskontrolle über ihre Server. Wenn Sie SELinux *und* Apache verwenden, müssen Sie eine Verbindung zu einem anderen Host herstellen, müssen Sie die in diesem Abschnitt beschriebenen Befehle ausführen.
 
 >[!NOTE]
 >
->Adobe hat keine Empfehlung zur Verwendung von SELinux; Sie können es für eine höhere Sicherheit verwenden, wenn Sie möchten. Wenn Sie SELinux verwenden, müssen Sie es ordnungsgemäß konfigurieren oder die Adobe Commerce kann unvorhersehbar funktionieren. Wenn Sie SELinux verwenden, konsultieren Sie eine Ressource wie die [CentOS-Wiki](https://wiki.centos.org/HowTos/SELinux) , um Regeln für die Aktivierung der Kommunikation festzulegen.
+>Adobe hat keine Empfehlung zur Verwendung von SELinux; Sie können es für eine höhere Sicherheit verwenden, wenn Sie möchten. Wenn Sie SELinux verwenden, müssen Sie es ordnungsgemäß konfigurieren oder die Adobe Commerce kann unvorhersehbar funktionieren. Wenn Sie SELinux verwenden möchten, wenden Sie sich an eine Ressource wie das [CentOS-Wiki](https://wiki.centos.org/HowTos/SELinux) , um Regeln zur Aktivierung der Kommunikation einzurichten.
 
 ## Vorschläge für die Installation mit Apache
 
-Wenn Sie SELinux aktivieren, kann es bei der Ausführung des Installationsprogramms zu Problemen kommen, es sei denn, Sie ändern die *Sicherheitskontext* aus einigen Verzeichnissen wie folgt:
+Wenn Sie SELinux aktivieren, kann es bei der Ausführung des Installationsprogramms zu Problemen kommen, es sei denn, Sie ändern den *Sicherheitskontext* einiger Verzeichnisse wie folgt:
 
 ```bash
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
@@ -44,7 +44,7 @@ chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 
 Die vorherigen Befehle funktionieren nur mit dem Apache-Webserver. Aufgrund der unterschiedlichen Konfigurationen und Sicherheitsanforderungen garantieren wir nicht, dass diese Befehle in allen Situationen funktionieren. Weitere Informationen finden Sie unter
 
-* [Manpage](https://linux.die.net/man/8/httpd_selinux)
+* [man page](https://linux.die.net/man/8/httpd_selinux)
 * [Server-Lab](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
 ## Aktivieren der Kommunikation zwischen Servern
@@ -58,7 +58,7 @@ So aktivieren Sie Apache, um eine Verbindung zu einem anderen Host mit aktiviert
    getenforce
    ```
 
-   `Enforcing` zeigt an, um zu bestätigen, dass SELinux ausgeführt wird.
+   `Enforcing` wird angezeigt, um zu bestätigen, dass SELinux ausgeführt wird.
 
    * CentOS: `setsebool -P httpd_can_network_connect=1`
    * Ubuntu: `setsebool -P apache2_can_network_connect=1`

@@ -14,22 +14,22 @@ ht-degree: 0%
 
 Bei einer Standardinstallation mit einem Apache-Webserver wird Adobe Commerce im Standardwebstamm installiert: `/var/www/html/magento2`.
 
-Die `magento2/` -Verzeichnis enthält Folgendes:
+Das Verzeichnis `magento2/` enthält Folgendes:
 
 - `pub/`
 - `setup/`
 - `var/`
 
-Der Antrag wird von `/var/www/html/magento2/pub`. Der Rest des Dateisystems ist anfällig, da er über einen Browser zugänglich ist.
-Festlegen des Webstamms auf `pub/` verhindert, dass Site-Besucher über einen Browser auf sensible Bereiche des Dateisystems zugreifen.
+Die Anwendung wird von `/var/www/html/magento2/pub` bereitgestellt. Der Rest des Dateisystems ist anfällig, da er über einen Browser zugänglich ist.
+Wenn Sie den Webstamm auf den Ordner &quot;`pub/`&quot;setzen, wird verhindert, dass Site-Besucher von einem Browser aus auf sensible Bereiche des Dateisystems zugreifen.
 
-Hier wird beschrieben, wie Sie das Apache-Basisverzeichnis auf einer vorhandenen Instanz ändern, um Dateien aus dem `pub/` -Verzeichnis, das sicherer ist.
+In diesem Thema wird beschrieben, wie Sie das Apache-Basisverzeichnis auf einer vorhandenen Instanz ändern, um Dateien aus dem Ordner &quot;`pub/`&quot;bereitzustellen, was sicherer ist.
 
 ## Ein Hinweis zu nginx
 
-Wenn Sie [nginx](../prerequisites/web-server/nginx.md) und [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) -Datei im Installationsverzeichnis enthalten ist, werden Sie wahrscheinlich bereits Dateien aus dem `pub/` Verzeichnis.
+Wenn Sie [nginx](../prerequisites/web-server/nginx.md) und die im Installationsverzeichnis enthaltene Datei [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) verwenden, werden Sie wahrscheinlich bereits Dateien aus dem Ordner `pub/` bereitstellen.
 
-Bei Verwendung in Ihrem Serverblock, der Ihre Site definiert, wird die Variable `nginx.conf.sample` -Konfiguration überschreibt die Basisverzeichnis-Einstellungen Ihres Servers, um Dateien aus dem `pub/` Verzeichnis. Siehe beispielsweise die letzte Zeile in der folgenden Konfiguration:
+Bei Verwendung in einem Serverblock, der Ihre Site definiert, überschreibt die Konfiguration `nginx.conf.sample` die Basisverzeichnis-Einstellungen Ihres Servers, um Dateien aus dem Verzeichnis `pub/` bereitzustellen. Siehe beispielsweise die letzte Zeile in der folgenden Konfiguration:
 
 ```conf
 # /etc/nginx/sites-available/magento
@@ -60,7 +60,7 @@ Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionieren
 
 >[!NOTE]
 >
->Siehe Abschnitt [Voraussetzungen](../prerequisites/overview.md) und [Installationsanleitung](../overview.md) für weitere Informationen.
+>Weitere Informationen finden Sie unter [Voraussetzungen](../prerequisites/overview.md) und im [Installationshandbuch](../overview.md) .
 
 ## 1. Bearbeiten der Serverkonfiguration
 
@@ -73,7 +73,7 @@ Der Name und der Speicherort Ihrer Virtual-Host-Datei hängt davon ab, welche Ve
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
-1. Fügen Sie den Pfad zu Ihrem `pub/` Verzeichnis in `DocumentRoot` Richtlinie:
+1. Fügen Sie den Pfad zum Verzeichnis `pub/` zur Anweisung `DocumentRoot` hinzu:
 
    ```conf
    <VirtualHost *:80>
@@ -98,11 +98,11 @@ Der Name und der Speicherort Ihrer Virtual-Host-Datei hängt davon ab, welche Ve
 
 ## 2. Aktualisieren der Basis-URL
 
-Wenn Sie beim Installieren der Anwendung einen Ordnernamen an den Hostnamen oder die IP-Adresse Ihres Servers angehängt haben, um die Basis-URL zu erstellen (z. B. `http://192.168.33.10/magento2`), müssen Sie sie entfernen.
+Wenn Sie einen Ordnernamen an den Hostnamen oder die IP-Adresse Ihres Servers angehängt haben, um die Basis-URL zu erstellen, wenn Sie die Anwendung installiert haben (z. B. `http://192.168.33.10/magento2`), müssen Sie sie entfernen.
 
 >[!NOTE]
 >
->Ersetzen `192.168.33.10` mit dem Hostnamen Ihres Servers.
+>Ersetzen Sie `192.168.33.10` durch den Hostnamen Ihres Servers.
 
 1. Melden Sie sich bei der Datenbank an:
 
@@ -124,7 +124,7 @@ Wenn Sie beim Installieren der Anwendung einen Ordnernamen an den Hostnamen oder
 
 ## 3. Aktualisieren Sie die Datei env.php .
 
-Hängen Sie den folgenden Knoten an die `env.php` -Datei.
+Hängen Sie den folgenden Knoten an die Datei `env.php` an.
 
 ```conf
 'directories' => [
@@ -132,16 +132,16 @@ Hängen Sie den folgenden Knoten an die `env.php` -Datei.
 ]
 ```
 
-Siehe Abschnitt [env.php-Referenz](../../configuration/reference/config-reference-envphp.md) für weitere Informationen.
+Weitere Informationen finden Sie in der Referenz zu [env.php](../../configuration/reference/config-reference-envphp.md) .
 
 ## 4. Wechseln der Modi
 
-[Anwendungsmodi](../../configuration/bootstrap/application-modes.md), zu denen `production` und `developer`, die die Sicherheit verbessern und die Entwicklung erleichtern sollen. Wie die Namen nahe legen, sollten Sie zu `developer` Modus beim Erweitern oder Anpassen der Anwendung und Wechseln zu `production` -Modus, wenn sie in einer Live-Umgebung ausgeführt wird.
+[Anwendungsmodi](../../configuration/bootstrap/application-modes.md), darunter `production` und `developer`, dienen der Verbesserung der Sicherheit und der Erleichterung der Entwicklung. Wie die Namen nahe legen, sollten Sie beim Erweitern oder Anpassen der Anwendung in den Modus `developer` wechseln und beim Ausführen in einer Live-Umgebung in den Modus `production` wechseln.
 
 Der Wechsel zwischen den Modi ist ein wichtiger Schritt, um zu überprüfen, ob Ihre Serverkonfiguration ordnungsgemäß funktioniert. Sie können mit dem CLI-Tool zwischen den Modi wechseln:
 
 1. Wechseln Sie zu Ihrem Installationsverzeichnis.
-1. Wechseln zu `production` -Modus.
+1. Wechseln Sie in den Modus `production` .
 
    ```bash
    bin/magento deploy:mode:set production
@@ -152,7 +152,7 @@ Der Wechsel zwischen den Modi ist ein wichtiger Schritt, um zu überprüfen, ob 
    ```
 
 1. Aktualisieren Sie Ihren Browser und überprüfen Sie, ob die Storefront korrekt angezeigt wird.
-1. Wechseln zu `developer` -Modus.
+1. Wechseln Sie in den Modus `developer` .
 
    ```bash
    bin/magento deploy:mode:set developer
@@ -174,7 +174,7 @@ Gehen Sie in die Storefront eines Webbrowsers, um zu überprüfen, ob alles funk
 
    ![Storefront, die eine erfolgreiche Installation überprüft](../../assets/installation/install-success_store.png)
 
-   Siehe Abschnitt [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360032994352) , wenn auf der Seite ein 404-Fehler (Nicht gefunden) angezeigt wird oder andere Assets wie Bilder, CSS und JS nicht geladen werden können.
+   Lesen Sie den Abschnitt [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360032994352) , wenn die Seite einen 404-Fehler (Nicht gefunden) anzeigt oder andere Assets wie Bilder, CSS und JS nicht lädt.
 
 1. Versuchen Sie, über einen Browser auf ein Anwendungsverzeichnis zuzugreifen. Hängen Sie den Ordnernamen an den Hostnamen oder die IP-Adresse Ihres Servers in der Adressleiste an:
 

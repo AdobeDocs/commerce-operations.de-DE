@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Suchmaschinenübersicht
 
-Ab Version 2.4.4 erfordert Adobe Commerce entweder [Elasticsearch] oder [OpenSearch] zur Katalogsuchmaschine. Frühere Versionen von 2.4.x benötigten Elasticsearch. Weitere Informationen zum Installieren einer Suchmaschine und zur Erstkonfiguration finden Sie in den folgenden Themen:
+Ab Version 2.4.4 muss Adobe Commerce entweder [Elasticsearch] oder [OpenSearch] als Katalogsuchmaschine verwenden. Frühere Versionen von 2.4.x benötigten Elasticsearch. Weitere Informationen zum Installieren einer Suchmaschine und zur Erstkonfiguration finden Sie in den folgenden Themen:
 
 - [Voraussetzungen für Suchmaschinen](../../installation/prerequisites/search-engine/overview.md)
 - [Konfigurieren von nginx für Ihre Suchmaschine](../../installation/prerequisites/search-engine/configure-nginx.md)

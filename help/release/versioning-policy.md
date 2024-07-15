@@ -11,18 +11,18 @@ ht-degree: 0%
 
 # Adobe Commerce-Versionsrichtlinie
 
-Adobe Commerce verwendet [Semantische Versionierung](https://semver.org/) auf der einzelnen Modulebene (z. B. `magento/framework 101.1.1`), jedoch nicht für die Marketing-Versionsnummer. Beispiel:
+Adobe Commerce verwendet [semantische Versionierung](https://semver.org/) auf der Ebene einzelner Module (z. B. `magento/framework 101.1.1`), jedoch nicht für die Marketing-Versionsnummer. Beispiel:
 
-- **MAJOR-Version**—2
-- **Geringfügige Version**—2.4
-- **PATCH-Version**—2.4.5
-   - **Sicherheits-Patch-Version**—2.4.5-p1
+- **MAJOR release**—2
+- **MINOR release**—2.4
+- **PATCH release**—2.4.5
+   - **SECURITY patch release**—2.4.5-p1
       - Sicherheitsfehlerbehebung
       - Sicherheitsverbesserung
 - **BETA Patch-Version**—2.4.7-beta2
-- **Erweiterbarkeit, Infrastruktur und Freigabe von Diensten**
+- **Erweiterbarkeit, Infrastruktur und Services-Version**
 - **Hotfix**
-- **Individuelles Pflaster**
+- **Individueller Patch**
 - **Benutzerdefinierter Patch**
 
 ## Geringfügige Version
@@ -52,7 +52,7 @@ Die folgenden Richtlinien gelten für Patch-Versionen:
 
 Vorabversionen von Adobe Commerce-Funktionen werden allen Adobe Commerce-Kunden und Adobe-Partnern öffentlich zugänglich gemacht. Es ermöglicht Ihnen mehr Zeit, bevor die allgemeine Verfügbarkeit den Code und die betroffenen Komponenten überprüft.
 
-Beta-Versionen können Mängel enthalten und werden ohne Gewährleistung jeglicher Art &quot;AS IS&quot; bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen (über Adobe Support Services oder anderweitig). Kunden wird empfohlen, Vorsicht walten zu lassen und sich nicht auf die korrekte Funktionsweise oder Leistung der Beta-Versionen und/oder der zugehörigen Dokumentation oder Materialien zu verlassen. Dementsprechend erfolgt die Nutzung der Beta-Versionen auf eigenes Risiko des Kunden.
+Beta-Versionen können Mängel enthalten und werden ohne Gewährleistung jeglicher Art &quot;AS IS&quot; bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen (über Adobe-Support-Services oder anderweitig). Kunden wird empfohlen, Vorsicht walten zu lassen und sich in keiner Weise auf die korrekte Funktionsweise oder Leistung der Beta-Versionen und/oder der zugehörigen Dokumentation oder Materialien zu verlassen. Dementsprechend erfolgt die Nutzung der Beta-Versionen auf eigenes Risiko des Kunden.
 
 ## Erweiterbarkeit, Infrastruktur und Freigabe von Diensten
 
@@ -60,7 +60,7 @@ Funktionsversionen, die neue Funktionen und Funktionsaktualisierungen enthalten,
 
 ## Hotfix
 
-Hotfixes sind Patches, die umfassende Sicherheits- oder Qualitätsreparaturen enthalten, z. B. Fehlerbehebungen für null Tage-Schwachstellen, die viele Händler betreffen. Adobe gibt Hotfixes für Adobe Commerce-Versionen frei, die weiterhin unterstützt werden und von kritischen Sicherheits- oder Qualitätsproblemen betroffen sind. Hotfixes werden im [Abschnitt &quot;Bekannte Probleme&quot;](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) unserer Wissensdatenbank. Diese Fehlerbehebungen sind in der nächsten geplanten Patch-Version enthalten.
+Hotfixes sind Patches, die umfassende Sicherheits- oder Qualitätsreparaturen enthalten, z. B. Fehlerbehebungen für null Tage-Schwachstellen, die viele Händler betreffen. Adobe gibt Hotfixes für Adobe Commerce-Versionen frei, die weiterhin unterstützt werden und von kritischen Sicherheits- oder Qualitätsproblemen betroffen sind. Hotfixes werden im Abschnitt [Bekannte Probleme](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) unserer Knowledge Base veröffentlicht. Diese Fehlerbehebungen sind in der nächsten geplanten Patch-Version enthalten.
 
 >[!NOTE]
 >
@@ -76,10 +76,10 @@ Einzelne Patches enthalten Korrekturen mit geringer Auswirkung auf die Qualität
 
 ## Benutzerdefinierter Patch
 
-Wird von Nicht-Adobe-Mitarbeitern erstellt, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über die [Werkzeug für Qualitätsmuster](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Wird von Nicht-Adobe-Mitarbeitern erstellt, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Qualitätspatches-Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) bereitgestellt.
 
 ## Verwandte Themen
 
 - [Versionierung](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Bevorstehende Versionen](schedule.md)
-- [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+- [Software-Lebenszyklusrichtlinie](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)

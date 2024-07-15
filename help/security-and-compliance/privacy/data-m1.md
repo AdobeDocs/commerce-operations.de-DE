@@ -40,7 +40,7 @@ Commerce lädt Kundeninformationen, wenn sich der Kunde anmeldet und mehrere ver
 
 Ein Händler kann Kunden-, Adressen- und Zahlungsinformationen vom Administrator eingeben, um einen Kunden oder eine Bestellung zu erstellen.
 
-![Dateneingabepunkte im Backend](../../assets/security-compliance/backend-data-entry-points.svg)
+![Backend-Dateneingabepunkte](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Backend-Datenzugriffspunkte
 
@@ -54,17 +54,17 @@ Magento 1 speichert Kundeninformationen in Kunden-, Verkaufs- und anderen Datenb
 
 ### Kundendaten
 
-Magento 1 speichert Kundeninformationen im `customer_entity` und `customer_address_entity` -Tabellen. Beide Tabellen verfügen über mehrere Referenztabellen, die benutzerdefinierte Kundenattribute enthalten können.
+Magento 1 speichert Kundeninformationen in den Tabellen `customer_entity` und `customer_address_entity`. Beide Tabellen verfügen über mehrere Referenztabellen, die benutzerdefinierte Kundenattribute enthalten können.
 
 #### `customer_entity` und Referenztabellen
 
-Die folgenden Spalten in der `customer_entity`-Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `customer_entity`enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --- | --- |
 | `email` | varchar(255) |
 
-Diese Tabellen verweisen auf `customer_entity` und kann benutzerdefinierte Kundenattribute enthalten:
+Diese Tabellen verweisen auf `customer_entity` und können benutzerdefinierte Kundenattribute enthalten:
 
 | Verzeichnis | Spalte | Datentyp |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Diese Tabellen verweisen auf `customer_entity` und kann benutzerdefinierte Kunde
 
 #### `customer_address_entity` und Referenztabellen
 
-Die folgenden Tabellen verweisen auf `customer_address_entity` und kann benutzerdefinierte Kundenattribute enthalten:
+Die folgenden Tabellen verweisen auf `customer_address_entity` und können benutzerdefinierte Kundenattribute enthalten:
 
 | Verzeichnis | Spalte | Datentyp |
 | --- | --- | --- |
@@ -88,11 +88,11 @@ Die folgenden Tabellen verweisen auf `customer_address_entity` und kann benutzer
 
 ### Bestelldaten
 
-Die `sales_flat_order` und die zugehörigen Tabellen enthalten den Namen, die Abrechnungs- und Versandadressen des Kunden sowie zugehörige Informationen.
+Die Tabellen `sales_flat_order` und die zugehörigen Tabellen enthalten den Namen des Kunden, die Abrechnungs- und Versandadressen sowie die zugehörigen Informationen.
 
 #### `sales_flat_order` table
 
-Die folgenden Spalten in der `sales_order` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `sales_order` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --- | --- |
@@ -109,7 +109,7 @@ Die folgenden Spalten in der `sales_order` -Tabelle enthält Kundeninformationen
 
 #### `sales_flat_order_address` table
 
-Die `sales_flat_order_address` -Tabelle enthält die Adresse des Kunden.
+Die Tabelle `sales_flat_order_address` enthält die Adresse des Kunden.
 
 | Spalte | Datentyp |
 | --- | --- |
@@ -131,7 +131,7 @@ Die `sales_flat_order_address` -Tabelle enthält die Adresse des Kunden.
 
 #### `sales_flat_order_grid` table
 
-Die folgenden Spalten in der `sales_flat_order_grid` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `sales_flat_order_grid` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --- | --- |
@@ -141,7 +141,7 @@ Die folgenden Spalten in der `sales_flat_order_grid` -Tabelle enthält Kundeninf
 
 #### `sales_flat_order_payment` table
 
-Die folgenden Spalten in der `sales_flat_order_payment` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `sales_flat_order_payment` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --- | --- |
@@ -161,7 +161,7 @@ Angebote enthalten den Namen, die E-Mail-Adresse, die Adresse und die zugehörig
 
 #### `sales_flat_quote` table
 
-Die folgenden Spalten in der `sales_flat_quote` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `sales_flat_quote` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --- | --- |
@@ -181,7 +181,7 @@ Die folgenden Spalten in der `sales_flat_quote` -Tabelle enthält Kundeninformat
 
 #### `sales_flat_quote_address` table
 
-Die folgenden Spalten in der `sales_flat_quote_address` -Tabelle enthält Kundeninformationen:
+Die folgenden Spalten in der Tabelle `sales_flat_quote_address` enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --- | --- |
@@ -200,7 +200,7 @@ Die folgenden Spalten in der `sales_flat_quote_address` -Tabelle enthält Kunden
 
 #### `sales_flat_quote_payment` table
 
-Die `sales_flat_quote_payment` enthält Kreditkarteninformationen und andere Transaktionsinformationen.
+Die Tabelle `sales_flat_quote_payment` enthält Kreditkarteninformationen und andere Transaktionsinformationen.
 
 | Spalte | Datentyp |
 | --- | --- |

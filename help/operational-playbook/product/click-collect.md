@@ -4,7 +4,7 @@ description: Befolgen Sie diese zehn Tipps, um Ihren Kunden ein angenehmes Klick
 exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Unternehmen sollten diese zehn Tipps befolgen, um einen guten Klick bereitzustel
 
 Bei der Entscheidung, Klick- und Datenerfassung zu implementieren, müssen Unternehmen überlegen, wie sie Klick- und Datenerfassung für Kunden bereitstellen möchten, z. B. Servicetypen:
 
-- **Online-Zahlung und Abholung im Geschäft**- Der Benutzer bezahlt das Produkt online und nachdem die Zahlung bestätigt wurde, benachrichtigt der Store den Kunden, wenn das Produkt auf der Grundlage der Kundenspeicherauswahl gesammelt werden kann. Die Bezahlung hilft zunächst, das Produkt zu reservieren.
+- **Online-Zahlung und Abholung im Geschäft** - Der Benutzer zahlt online für das Produkt, und nachdem die Zahlung bestätigt wurde, benachrichtigt der Store den Kunden, wenn das Produkt auf der Grundlage der Kundenspeicherauswahl für die Abholung bereit ist. Die Bezahlung hilft zunächst, das Produkt zu reservieren.
 
-- **Produkt online reservieren, bezahlen und sammeln**—In diesem Service-Typ zahlt der Kunde nicht online, wenn er ein Produkt reserviert. Bei dieser Art von Service kann der Kunde seine Meinung ändern und das Produkt möglicherweise nicht erwerben.
+- **Reservieren Sie das Produkt online, bezahlen Sie es und sammeln Sie es im Geschäft.** - In diesem Servicetyp zahlt der Kunde nicht online, wenn er ein Produkt reserviert. Bei dieser Art von Service kann der Kunde seine Meinung ändern und das Produkt möglicherweise nicht erwerben.
 
-- **Integration**- Nach Auswahl des Versandtyps müssen Unternehmen über die Integrationsstruktur entscheiden (wo die Bestellungen gesendet werden, wo die Bestellungen eingegangen sind). Der Lagerbestand kann entweder von einem zentralen Lager oder direkt von einzelnen Geschäften erfüllt werden.
+- **Integration**: Nach Auswahl des Versandtyps müssen Unternehmen über die Integrationsstruktur entscheiden (wo die Bestellungen gesendet werden und wo die Bestellungen erfüllt sind). Der Lagerbestand kann entweder von einem zentralen Lager oder direkt von einzelnen Geschäften erfüllt werden.
 
-- **Rückgabe**—Rückgaben können komplex sein. Unternehmen müssen über eine klare Strategie verfügen, um die Renditen für gelieferte Produkte und Produkte zu verwalten, die mithilfe von Klick- und Datenerfassung bestellt werden. Unternehmen müssen es Kunden ermöglichen, Produkte, die sie durch Klick und Abruf bestellen, zurückzugeben, um einen End-to-End-Kundendienst zu bieten.
+- **Rückgaben**: Rückgaben können komplex sein. Unternehmen müssen über eine klare Strategie verfügen, um die Renditen für gelieferte Produkte und Produkte zu verwalten, die mithilfe von Klick- und Datenerfassung bestellt werden. Unternehmen müssen es Kunden ermöglichen, Produkte, die sie durch Klick und Abruf bestellen, zurückzugeben, um einen End-to-End-Kundendienst zu bieten.
 
 ## Promotion
 

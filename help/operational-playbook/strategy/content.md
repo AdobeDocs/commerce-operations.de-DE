@@ -26,7 +26,7 @@ Diese Phase umfasst den Einstieg in Ihren Benutzer, das Verständnis seiner Bed�
 
 In dieser Phase wird Inhalt erstellt. Dazu gehören die Erstellung, Bearbeitung, Bearbeitung, Asset-Produktion und Inhaltsoptimierung - Barrierefreiheit, SEO, Tagging und Klassifizierung, Insourcing von Outsourcing in der Produktion, Rolle von Drittanbieter-Tools und -Technologie und Wiederverwendung von Inhalten.
 
-### Postproduktion
+### Post-Produktion
 
 Diese Phase umfasst die Überprüfung und Auswertung von Inhalten, Anpassung und Optimierung. Dazu gehören die Auswertung, Optimierung, Tests, Lernen und das Benutzererlebnis.
 
@@ -38,10 +38,10 @@ Unabhängig davon, ob Sie grundlegende Webinhalte oder Inhalte verwalten, die in
 
 Adobe Experience Manager kombiniert eine Reihe von Funktionen auf Infrastruktur- und Anwendungsebene in einem einzigen integrierten Paket. Die Angebotsinhalte:
 
-- **Sites**—Erstellen und liefern Sie schnell relevante Websites und mobile Apps und aktualisieren Sie den Inhalt jederzeit, ohne die IT-Abteilung zu belasten.
-- **Assets**- Einfaches Verwalten von Bildern, Videos und anderen Assets in allen digitalen Kanälen, um personalisierte Kundenerlebnisse bereitzustellen.
-- **Communities**—Erstellen Sie blühende Communities und interaktive Unterhaltungen in all Ihren sozialen Eigenschaften, damit Sie neue Lernstufen und Kundenloyalität inspirieren können.
-- **Forms**—Integrieren Sie Formulare auf Unternehmensebene in Ihre Websites und mobilen Erlebnisse und vereinfachen Sie die Erstellung von Formularen und den Abschluss von Transaktionen.
-- **Apps**- Erstellen und liefern Sie mobile Apps mit einer Lösung, die die Lücke zwischen Marketingexperten und IT schließt, damit Marketing-Experten Inhalte einfach aktualisieren können (auch nach dem Start).
+- **Sites**: Erstellen und liefern Sie schnell relevante Websites und mobile Apps und aktualisieren Sie den Inhalt jederzeit, ohne die IT-Abteilung zu belasten.
+- **Assets**: Einfaches Verwalten von Bildern, Videos und anderen Assets in allen digitalen Kanälen, um personalisierte Kundenerlebnisse bereitzustellen.
+- **Communitys**: Erstellen Sie blühende Communities und binden Sie Unterhaltungen über all Ihre sozialen Eigenschaften hinweg an, damit Sie neue Lernstufen und Kundentreue anregen können.
+- **Forms**: Integrieren Sie Formulare auf Unternehmensebene in Ihre Websites und mobilen Erlebnisse und vereinfachen Sie die Erstellung von Formularen und den Abschluss von Transaktionen.
+- **Apps**: Erstellen und liefern Sie mobile Apps mit einer Lösung, die die Lücke zwischen Marketingexperten und IT schließt, sodass Marketing-Experten Inhalte einfach (auch nach dem Start) aktualisieren können.
 
 ![Framework-Diagramm für Inhaltsstrategie](../../assets/playbooks/content-strategy-framework2.png)

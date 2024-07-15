@@ -16,8 +16,8 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
 
 >[!TIP]
 >
->- Wenn Sie mit Adobe Commerce noch nicht vertraut sind, lesen Sie den Abschnitt [Unternehmensarchitektur](../../implementation-playbook/architecture/enterprise-blueprint.md) und [über Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) Themen, um sich zu orientieren.
->- Weitere Informationen zu Upgrades finden Sie unter [empfohlene Lese- und Lesegenehmigung](../../upgrade/resources/recommended-reading.md).
+>- Wenn Sie neu bei Adobe Commerce sind, lesen Sie die Themen [Unternehmensarchitektur](../../implementation-playbook/architecture/enterprise-blueprint.md) und [Über Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) , um sich zu orientieren.
+>- Weitere Informationen zu Upgrades finden Sie unter [Empfohlene Lektüre](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>
@@ -32,7 +32,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B für Adobe Commerce</a></li>
           </ul>
         </td>
-      <td><strong>Adobe Commerce auf Cloud-Infrastruktur</strong>
+      <td><strong>Adobe Commerce in der Cloud-Infrastruktur</strong>
         <p>Erfahren Sie mehr über die neuesten Verbesserungen der Cloud Suite für Adobe Commerce-Pakete, die für die Bereitstellung und Verwaltung von Adobe Commerce-Installationen und -Upgrades auf der Cloud-Plattform entwickelt wurden.</p>
           <ul>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">Abwärtskompatible Änderungen</a></li>
@@ -59,10 +59,10 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Store Fulfillment</a></li>
           </ul>
         </td>
-      <td><strong>Instrumente</strong>
+      <td><strong>Tools</strong>
         <p>Erfahren Sie mehr über die neuesten Verbesserungen bei Tools, die die Suche und Verwendung von Adobe Commerce-Software erleichtern.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API-Mesh für Adobe APP Builder-Entwickler</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API-Mesh für Adobe App Builder Developer</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O von Ereignissen für Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Admin UI SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Werkzeug für Qualitätsmuster</a></li>

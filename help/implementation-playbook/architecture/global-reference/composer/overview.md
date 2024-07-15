@@ -15,18 +15,18 @@ ht-degree: 0%
 
 # Komponentenentwicklung
 
-Hier wird der empfohlene Ansatz für die Entwicklung von Composer-Modulen (als Git-Repositorys im `vendor/` ) und fügen Sie diese Module zu Ihrem Git-Hauptprojekt hinzu.
+In diesem Thema wird der empfohlene Ansatz für die Entwicklung von Composer-Modulen (als Git-Repositorys im Verzeichnis `vendor/` ) und das Hinzufügen dieser Module zu Ihrem Git-Hauptprojekt beschrieben.
 
 >[!NOTE]
 >
->Diese Leitlinien gelten hauptsächlich für [globale Referenzarchitektur (GRA)](../overview.md) Projekte.
+>Diese Richtlinien gelten hauptsächlich für [globale Referenzarchitektur (GRA)](../overview.md)-Projekte.
 
 ## Vorbereiten eines Entwicklungszweigs
 
 1. Erstellen oder überprüfen Sie die Entwicklungsverzweigung in Ihrem Git-Haupt-Repository.
 1. Erfordert Entwicklungsversionen für jedes Modul, das Sie pflegen.
 
-   In diesem Beispiel stellt jede Verzweigung in Ihrem Git-Haupt-Repository eine Composer-Paketversion dar. Die empfohlene Benennungskonvention für Composer-Versionen in diesem Szenario lautet `dev-` gefolgt vom Zweignamen. Beispiel:
+   In diesem Beispiel stellt jede Verzweigung in Ihrem Git-Haupt-Repository eine Composer-Paketversion dar. Die empfohlene Benennungskonvention für Composer-Versionen in diesem Szenario lautet &quot;`dev-`&quot;, gefolgt vom Namen der Verzweigung. Beispiel:
 
    - `dev-develop`
    - `dev-qa`
@@ -35,25 +35,25 @@ Hier wird der empfohlene Ansatz für die Entwicklung von Composer-Modulen (als G
    composer require client/module-example:dev-develop
    ```
 
-1. Wenn ein anderes Composer-Paket eine bestimmte Version eines Moduls erfordert (z. B. `client/module-example 1.0.12`), installieren Sie es mit einem Alias:
+1. Wenn für ein anderes Composer-Paket eine bestimmte Version eines Moduls erforderlich ist (z. B. `client/module-example 1.0.12`), installieren Sie es mit einem Alias:
 
    ```bash
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   Für `qa` Verzweigung, ersetzen `dev-develop` mit `dev-qa`.
+   Ersetzen Sie für den Zweig `qa` `dev-develop` durch `dev-qa`.
 
 ## Pakete in Git-Repositorys konvertieren
 
-Standardmäßig enthalten Pakete keine `.git/` Verzeichnis. Der Composer kann Pakete aus Git auschecken, anstatt die vordefinierten Composer-Pakete zu verwenden. Der Vorteil dieses Ansatzes besteht darin, dass Sie die Pakete während der Entwicklung einfach ändern können.
+Standardmäßig enthalten Pakete kein Verzeichnis `.git/` . Der Composer kann Pakete aus Git auschecken, anstatt die vordefinierten Composer-Pakete zu verwenden. Der Vorteil dieses Ansatzes besteht darin, dass Sie die Pakete während der Entwicklung einfach ändern können.
 
-1. Entfernen Sie das Modul aus dem `vendor/` Verzeichnis.
+1. Entfernen Sie das Modul aus dem Verzeichnis &quot;`vendor/`&quot;.
 
    ```bash
    rm -rf vendor/client/module-example
    ```
 
-1. Installieren Sie das Modul mithilfe des [angegebene Git-Quelle](#prepare-a-development-branch).
+1. Installieren Sie das Modul unter Verwendung der [angegebenen Git-Quelle](#prepare-a-development-branch) neu.
 
    ```bash
    composer install --prefer-source
@@ -92,7 +92,7 @@ Standardmäßig enthalten Pakete keine `.git/` Verzeichnis. Der Composer kann Pa
 
 ## Aktualisieren des Hauptprojekts mit Ihrer Entwicklung
 
-Aktualisieren Sie Ihr Haupt-Git-Repository durch Ändern der `composer.lock` -Datei. Wenn Ihr Modul neu ist, aktivieren Sie es.
+Aktualisieren Sie Ihr Haupt-Git-Repository, indem Sie die Datei `composer.lock` ändern. Wenn Ihr Modul neu ist, aktivieren Sie es.
 
 ```bash
 # to update your packages and all dependencies of the package

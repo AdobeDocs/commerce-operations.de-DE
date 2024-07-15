@@ -5,7 +5,7 @@ exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
 source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Sicherheit
 
-Die Adobe Commerce [Pro Plan Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) ist so konzipiert, dass eine hochsichere Umgebung bereitgestellt wird. Jeder Kunde wird in einer eigenen isolierten Serverumgebung bereitgestellt, die von anderen Kunden getrennt ist. Die Sicherheitsdetails der Produktionsumgebung werden nachfolgend beschrieben.
+Die Adobe Commerce [Pro-Planarchitektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) ist für eine äußerst sichere Umgebung ausgelegt. Jeder Kunde wird in einer eigenen isolierten Serverumgebung bereitgestellt, die von anderen Kunden getrennt ist. Die Sicherheitsdetails der Produktionsumgebung werden nachfolgend beschrieben.
 
 ## Webbrowser
 
@@ -23,7 +23,7 @@ Der Großteil des in die Cloud-Umgebung eingehenden und aus ihr ausgehenden Traf
 
 Fastly bietet einen CDN-Schutz (Content Delivery Network) und verteilte Denial of Service (DDoS). Das Fastly CDN hilft, den direkten Zugriff auf die Herkunftsserver zu isolieren. Das öffentliche DNS verweist nur auf das Fastly Network. Die Fastly DDoS-Lösung schützt vor hochgradig störenden Angriffen auf Layer 3 und Layer 4 sowie komplexeren Angriffen auf Layer 7. Layer-7-Angriffe können mithilfe benutzerdefinierter Regeln blockiert werden, die auf den gesamten HTTP/HTTPS-Anforderungen basieren und auf Client- und Anforderungskriterien basieren, einschließlich Kopfzeilen, Cookies, Anfragepfad und Client-IP, oder Indikatoren wie Geolocation.
 
-Siehe [Übersicht über Fastly Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) im _Cloud-Anleitung_.
+Siehe [Übersicht über schnelle Dienste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) im _Cloud-Handbuch_.
 
 ## Web-Anwendungs-Firewall
 
@@ -31,7 +31,7 @@ Die Fastly Web Application Firewall (WAF) wird verwendet, um zusätzlichen Schut
 
 Die WAF-Regeln werden von Adobe Commerce aktualisiert, wenn neue Schwachstellen erkannt werden, die es Managed Services ermöglichen, Sicherheitsprobleme vor Softwarepatches zu &quot;virtuell zu patchen&quot;. Die Fastly WAF bietet keine Dienste zur Ratenbegrenzung oder Bot-Erkennung. Bei Bedarf können Kunden einen Drittanbieter-Bot-Erkennungsdienst lizenzieren, der mit Fastly kompatibel ist.
 
-Siehe [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) im _Cloud-Anleitung_.
+Siehe [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) im _Cloud Guide_.
 
 ## Virtual Private Cloud
 
@@ -47,7 +47,7 @@ Die Adobe Commerce-Anwendung unterstützt keine Verschlüsselung oder Verschlüs
 
 ## Endpunkterkennung und -antwort
 
-[!DNL CrowdStrike Falcon], wird ein leichtgewichtiger Agent für die Endpunkterkennung und -antwort der nächsten Generation (EDR) auf allen Endpunkten (einschließlich Servern) innerhalb von Adobe installiert. EDR-Agenten schützen Adobe-Daten und -Systeme mit kontinuierlicher Echtzeit-Überwachung und -Erfassung, was eine schnelle Ermittlung und Reaktion von Bedrohungen ermöglicht.
+[!DNL CrowdStrike Falcon], ein leichtgewichtiger Agent der nächsten Generation der Endpunkterkennung und -antwort (EDR) wird auf allen Endpunkten (einschließlich Servern) innerhalb von Adobe installiert. EDR-Agenten schützen Adobe-Daten und -Systeme mit kontinuierlicher Echtzeit-Überwachung und -Erfassung, was eine schnelle Ermittlung und Reaktion von Bedrohungen ermöglicht.
 
 ## Penetrationstests
 
@@ -68,15 +68,15 @@ Adobe testet regelmäßig den Kernanwendungscode auf Sicherheitslücken. Patches
 - OWASPZAP
 - undSqlMap
 
-Die vollständige Codebasis wird mit diesen Tools alle zwei Wochen überprüft. Kunden werden über Sicherheits-Patches durch direkte E-Mails, Benachrichtigungen in der Anwendung und in der [Sicherheitszentrum](https://helpx.adobe.com/security.html).
+Die vollständige Codebasis wird mit diesen Tools alle zwei Wochen überprüft. Kunden werden durch direkte E-Mails, Benachrichtigungen in der Anwendung und im [Sicherheitscenter](https://helpx.adobe.com/security.html) über Sicherheits-Patches benachrichtigt.
 
-Kunden müssen sicherstellen, dass diese Patches gemäß den PCI-Richtlinien innerhalb von 30 Tagen nach ihrer Veröffentlichung auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet auch eine [Sicherheitsscan-Tool](https://docs.magento.com/user-guide/magento/security-scan.html) , die es Händlern ermöglicht, ihre Websites regelmäßig zu überwachen und Updates über bekannte Sicherheitsrisiken, Malware und unbefugten Zugriff zu erhalten. Das Security Scan Tool ist ein kostenloser Service und kann auf jeder beliebigen Version von Adobe Commerce ausgeführt werden.
+Kunden müssen sicherstellen, dass diese Patches gemäß den PCI-Richtlinien innerhalb von 30 Tagen nach ihrer Veröffentlichung auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet außerdem ein [Sicherheits-Scan-Tool](https://docs.magento.com/user-guide/magento/security-scan.html), mit dem Händler ihre Websites regelmäßig überwachen und Updates zu bekannten Sicherheitsrisiken, Malware und unbefugtem Zugriff erhalten können. Das Security Scan Tool ist ein kostenloser Service und kann auf jeder beliebigen Version von Adobe Commerce ausgeführt werden.
 
-Um Sicherheitsforscher dazu zu ermutigen, Schwachstellen zu identifizieren und zu melden, verfügt Adobe Commerce über eine [bug-bounty-Programm](https://hackerone.com/magento) zusätzlich zu internen Tests. Darüber hinaus erhält der Kunde bei Bedarf den vollständigen Quellcode der Anwendung für seine eigene Überprüfung.
+Um Sicherheitsforscher dazu zu ermutigen, Schwachstellen zu identifizieren und zu melden, verfügt Adobe Commerce zusätzlich zu internen Tests über ein [Bugbounty-Programm](https://hackerone.com/magento) . Darüber hinaus erhält der Kunde bei Bedarf den vollständigen Quellcode der Anwendung für seine eigene Überprüfung.
 
 ## Schreibgeschütztes Dateisystem
 
-Der gesamte ausführbare Code wird in einem schreibgeschützten Dateisystembild bereitgestellt, wodurch die für Angriffe verfügbaren Oberflächen erheblich reduziert werden. Der Bereitstellungsprozess erstellt ein Squash-FS-Bild, um die Möglichkeiten zum Einfügen von PHP- oder JavaScript-Code in das System zu reduzieren oder die Adobe Commerce-Anwendungsdateien zu ändern.
+Der gesamte ausführbare Code wird in einem schreibgeschützten Dateisystembild bereitgestellt, wodurch die für Angriffe verfügbaren Oberflächen erheblich reduziert werden. Der Bereitstellungsprozess erstellt ein Squash-FS-Bild, um die Möglichkeiten für das Einfügen von PHP- oder JavaScript-Code in das System zu reduzieren oder die Adobe Commerce-Anwendungsdateien zu ändern.
 
 ## Remote-Implementierung
 
@@ -84,15 +84,15 @@ Die einzige Möglichkeit, ausführbaren Code in die Managed Services-Produktions
 
 ## Protokollierung
 
-Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Die Protokolle für Betriebssystem, Anwendungsserver und Datenbank werden auf den Produktionsservern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in Adobe Commerce verfügbar. [Projekt-Webschnittstelle](https://devdocs.magento.com/cloud/project/projects.html#login). Der gesamte Support-Zugriff wird protokolliert und Support-Sitzungen werden aufgezeichnet.
+Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Die Protokolle für Betriebssystem, Anwendungsserver und Datenbank werden auf den Produktionsservern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce-[Projekt-Webschnittstelle](https://devdocs.magento.com/cloud/project/projects.html#login) verfügbar. Der gesamte Support-Zugriff wird protokolliert und Support-Sitzungen werden aufgezeichnet.
 
-Siehe [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) im _Cloud-Anleitung_.
+Siehe [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) im _Cloud-Handbuch_.
 
 ## Sensible Daten
 
 Vertrauliche Daten können entweder personenbezogene Daten von Verbrauchern oder vertrauliche Daten von Managed Services-Kunden umfassen. Der Schutz sensibler Kunden- und Verbraucherdaten ist eine wichtige Verpflichtung für Adobe Commerce Managed Services. Sowohl Managed Services- als auch Adobe-Kunden haben rechtliche Verpflichtungen in Bezug auf personenbezogene Daten. Zusätzlich zu den Sicherheitsfunktionen der Architektur gibt es weitere Steuerelemente, um die Verteilung und den Zugriff auf vertrauliche Daten zu beschränken.
 
-Kunden besitzen ihre Daten und haben die Kontrolle darüber, wo sich diese Daten befinden. Der Kunde gibt den Speicherort an, an dem sich seine Produktions- und Entwicklungsinstanzen befinden. Sie geben auch an, welcher Speicherort für die Adobe Commerce-Reporting-Umgebung mit Commerce verwendet wird und ob diese Adobe Commerce Reporting-Anwendung Zugriff auf persönlich identifizierbare Informationen hat oder nicht. Produktionsinstanzen können in den meisten AWS-Regionen auftreten, während Entwicklungs- und Adobe Commerce-Reporting-Umgebungen derzeit entweder in den USA oder in der Europäischen Union zu finden sind.
+Kunden besitzen ihre Daten und haben die Kontrolle darüber, wo sich diese Daten befinden. Der Kunde gibt den Speicherort an, an dem sich seine Produktions- und Entwicklungsinstanzen befinden. Sie geben außerdem an, welcher Speicherort für die Adobe Commerce-Reporting-Umgebung mit Commerce verwendet wird und ob diese Adobe Commerce-Berichtsanwendung Zugriff auf persönlich identifizierbare Informationen hat. Produktionsinstanzen können in den meisten AWS-Regionen auftreten, während Entwicklungs- und Adobe Commerce-Reporting-Umgebungen derzeit entweder in den USA oder in der Europäischen Union zu finden sind.
 
 Sensible Daten können über das Fastly CDN-Server-Netzwerk übermittelt werden, werden jedoch nicht im Fastly-Netzwerk gespeichert. Alle in die Managed Services einbezogenen Partner, die ein Angebot anbieten, haben vertragliche Verpflichtungen, den Schutz sensibler Daten sicherzustellen. Managed Services verschiebt keine sensiblen Kunden- oder Verbraucherdaten von den vom Kunden angegebenen Speicherorten.
 
@@ -110,14 +110,14 @@ Die DSGVO fordert, dass alle personenbezogenen Daten (wie Namen, Rasse und Gebur
 
 >[!NOTE]
 >
->Diese Seite bietet einen allgemeinen Überblick darüber, was für die DSGVO zu beachten ist. Siehe _[Sicherheits- und Compliance-Anleitung](../../../security-and-compliance/privacy/gdpr.md)_ für Informationen darüber, wie Adobe Commerce personenbezogene Daten speichert. Wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den Abschnitt [offizieller Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Diese Seite bietet einen allgemeinen Überblick darüber, was für die DSGVO zu beachten ist. Weitere Informationen zum Speichern personenbezogener Daten in Adobe Commerce finden Sie im _[Sicherheits- und Compliance-Handbuch](../../../security-and-compliance/privacy/gdpr.md)_ . Um festzustellen, wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte, wenden Sie sich an Ihren Rechtsbeistand oder lesen Sie den [offiziellen Text](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Backups
 
-In den letzten 24 Stunden werden stündlich Sicherungen durchgeführt. Nach Ablauf des Zeitraums von 24 Stunden werden Backups mithilfe des AWS EBS Snapshot-Dienstes planmäßig aufbewahrt. Siehe [Bindungsrichtlinie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) im _Cloud-Anleitung_.
+In den letzten 24 Stunden werden stündlich Sicherungen durchgeführt. Nach Ablauf des Zeitraums von 24 Stunden werden Backups mithilfe des AWS EBS Snapshot-Dienstes planmäßig aufbewahrt. Siehe [Bindungsrichtlinie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) im _Cloud-Handbuch_.
 
 Der Dienst erstellt eine unabhängige Sicherung auf redundanten Speicher. Da die EBS-Volumes verschlüsselt sind, werden die Backups ebenfalls verschlüsselt. Darüber hinaus führt Managed Services On-Demand-Backups auf Kundenwunsch durch.
 
 Ihr Sicherungs- und Wiederherstellungsansatz von Managed Services verwendet eine hochverfügbare Architektur in Kombination mit Vollsystemsicherungen. Jedes Projekt - alle Daten, Code und Assets - wird über drei separate AWS-Verfügbarkeitszonen repliziert, wobei jeder Bereich über ein eigenes Rechenzentrum verfügt.
 
-Siehe [Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) im _Cloud-Anleitung_.
+Siehe [Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) im _Cloud-Handbuch_.

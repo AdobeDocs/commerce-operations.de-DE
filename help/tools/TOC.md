@@ -26,11 +26,11 @@ ht-degree: 3%
    - [Erweiterungen](site-wide-analysis-tool/extensions.md)
    - [Warnhinweise](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
-- Werkzeug für Qualitätsmuster {#quality-patches-tool}
+- Qualitätsmuster-Werkzeug {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
-- Referenz zu Befehlszeilen-Tools {#cli-reference}
+- Befehlszeilen-Tools-Referenz {#cli-reference}
    - [Adobe Commerce (vor Ort)](reference/commerce-on-premises.md)
    - [Upgrade-Kompatibilitätstool](reference/uct.md)
 - Beobachtung für Adobe Commerce {#observation-for-adobe-commerce}
@@ -48,11 +48,11 @@ ht-degree: 3%
    - [Registerkarte &quot;Warnungen&quot;](observation-for-adobe-commerce/alerts-tab.md)
    - [Registerkarte WAF](observation-for-adobe-commerce/waf-tab.md)
    - [Registerkarte &quot;CDN&quot;](observation-for-adobe-commerce/cdn-tab.md)
-   - [Die [!DNL RabbitMQ] tab](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [Registerkarte [!DNL RabbitMQ] ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [Registerkarte &quot;Cron&quot;](observation-for-adobe-commerce/cron-tab.md)
    - [Die Registerkarte Indizierung](observation-for-adobe-commerce/indexing-tab.md)
    - [Registerkarte &quot;QuickView&quot;](observation-for-adobe-commerce/oac-quickview-tab.md)
-   - [Die Registerkarte Sicherheit](observation-for-adobe-commerce/security-tab.md)
+   - [Die Registerkarte &quot;Sicherheit&quot;](observation-for-adobe-commerce/security-tab.md)
    - [Registerkarte &quot;Infra&quot;](observation-for-adobe-commerce/oac-infra.md)
    - [Verwendung von Observation für Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
 - Datenmigrationswerkzeug {#data-migration}
@@ -74,8 +74,8 @@ ht-degree: 3%
       - [Änderungen](data-migration-tool/migrate-data/delta.md)
       - [Folgemaßnahmen](data-migration-tool/migrate-data/follow-up.md)
       - [Daten, die eine manuelle Migration erfordern](data-migration-tool/migrate-data/manual.md)
-      - [Schritte zur Migration nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
+      - [Post-Datenmigrationsschritte](data-migration-tool/migrate-data/post-migration.md)
    - Ressourcen {#resources}
       - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -22,4 +22,4 @@ Informationen zum Aktivieren oder Deaktivieren eines Moduls finden Sie unter [Mo
 
 Informationen zum Deinstallieren eines Moduls finden Sie unter [Module deinstallieren](../../installation/tutorials/uninstall-modules.md).
 
-Um ein Design zu deinstallieren, verwenden Sie die [`theme:uninstall`](../../installation/tutorials/themes.md) Befehl.
+Verwenden Sie zum Deinstallieren eines Designs den Befehl [`theme:uninstall`](../../installation/tutorials/themes.md) .

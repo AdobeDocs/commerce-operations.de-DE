@@ -23,19 +23,19 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 >[!INFO]
 >
->Während der Entwicklung erstellt dieser Befehl Symlinks für LESS-Dateien in der `var/view_preprocessed` und `pub/static` Ordner. Dieser Prozess kompiliert keine LESS-Dateien in CSS-Dateien.
+>Während der Entwicklung erstellt dieser Befehl Symlinks für LESS-Dateien in den Ordnern `var/view_preprocessed` und `pub/static`. Dieser Prozess kompiliert keine LESS-Dateien in CSS-Dateien.
 
 In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläutert.
 
 | Parameter | Wert | Erforderlich? |
 | --------- | ----- | --------- |
 | `--type` | Typ der Quelldateien: [less] (Standard: &quot;less&quot;)<br>Derzeit ist LESS der einzige unterstützte Dateityp. | Nein |
-| `--locale` | Gebietsschema-Code.<br>Um die Liste der Gebietsschemas anzuzeigen, geben Sie `bin/magento info:language:list` | Nein |
+| `--locale` | Gebietsschema-Code.<br>Geben Sie `bin/magento info:language:list` ein, um die Liste der Gebietsschemas anzuzeigen. | Nein |
 | `--area` | Bereich (`adminhtml` für den Verwaltungsbereich, `frontend` für die Storefront). | Nein |
-| `--theme` | Designname in `<VendorName>/<theme-name>` Format. Beispiel: `Magento/blank` oder `Magento/backend`. | Nein |
+| `--theme` | Designname im Format `<VendorName>/<theme-name>` . Beispiel: `Magento/blank` oder `Magento/backend`. | Nein |
 | `<file>` | Eine durch Leerzeichen getrennte Liste von CSS-Dateien, die ohne die CSS-Erweiterung in LESS konvertiert werden sollen. (Der Standardwert ist `css/styles-m css/styles-l`, für den Administratortyp `css/styles css/styles-old`) | Nein |
 
-So erstellen Sie beispielsweise LESS-Dateien für das Frontend-Design namens `VendorName/themeName` im `en_US` Gebietsschema mit einer CSS-Datei mit dem Namen `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`Geben Sie den folgenden Befehl ein:
+Um beispielsweise mithilfe einer CSS-Datei mit dem Namen `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css` LESS-Dateien für das Frontend-Design mit dem Namen `VendorName/themeName` im Gebietsschema `en_US` zu erstellen, geben Sie den folgenden Befehl ein:
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l

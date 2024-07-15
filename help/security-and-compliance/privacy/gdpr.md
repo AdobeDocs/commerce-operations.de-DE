@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Dies ist eines von mehreren Themen, die Händlern und Entwicklern von Adobe Commerce dabei helfen, die Auswirkungen der Datenschutz-Grundverordnung (DSGVO) zu verstehen. Die Informationen dienen nur zu Informationszwecken und sollten nicht als Rechtsberatung ausgelegt werden. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
 
-Die Europäische Union hat [Die Datenschutz-Grundverordnung](https://ec.europa.eu/info/law/law-topic/data-protection_en) (DSGVO), um den Bürgern mehr Kontrolle über ihre personenbezogenen Daten zu geben. Die DSGVO gilt für alle Organisationen, die innerhalb der EU tätig sind. Sie gilt auch für Organisationen außerhalb der EU, die Waren oder Dienstleistungen für Kunden oder Unternehmen in der EU anbieten.
+Die Europäische Union (EU) hat die [Datenschutz-Grundverordnung](https://ec.europa.eu/info/law/law-topic/data-protection_en) (DSGVO) erlassen, um den Bürgern mehr Kontrolle über ihre personenbezogenen Daten zu geben. Die DSGVO gilt für alle Organisationen, die innerhalb der EU tätig sind. Sie gilt auch für Organisationen außerhalb der EU, die Waren oder Dienstleistungen für Kunden oder Unternehmen in der EU anbieten.
 
 Systemintegratoren können die Datenflussdiagramme und Datenbankinformationen in der Personal Information Reference verwenden, um Skripte zu erstellen, um Anwendungsfälle ähnlich den folgenden zu lösen:
 
@@ -31,5 +31,5 @@ Technische Informationen finden Sie in den Datenflussdiagrammen und Zuordnungen 
 
 Weitere Informationen dazu, wie Adobe Commerce Händlern bei der Einhaltung der DSGVO hilft, finden Sie unter folgenden Themen:
 
-- [DSGVO-Konformität](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+- [DSGVO-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 - [Adobe Commerce ist bereit für die DSGVO](https://business.adobe.com/privacy/general-data-protection-regulation.html)

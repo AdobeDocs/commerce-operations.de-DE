@@ -5,7 +5,7 @@ exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Warum sollten Sie E-Mail-Marketing beachten?
 
 Der erste Eindruck muss in einem E-Commerce-Geschäft gemacht werden. Wenn die erste E-Mail, die Sie an neue Kunden senden, effektiv ist, bleiben im Kundenspeicher bleibende Eindrücke erhalten. Versuchen Sie, das Design einfach und originell zu halten. Einige Marken bieten beispielsweise Rabatte in der E-Mail, wenn sich der Kunde anmeldet.
 
-![Beispiel einer Willkommens-Marketing-E-Mail](../../assets/playbooks/marketing-email-welcome.png)
+![Beispiel für eine Begrüßungs-Marketing-E-Mail](../../assets/playbooks/marketing-email-welcome.png)
 
 ## Kuratierte E-Mail
 
@@ -40,7 +40,7 @@ Kuratierte E-Mails sind eine der besten Formen von E-Mails, da Abonnenten dadurc
 
 Kunden können E-Mails leicht übersehen. Wenn E-Mails jedoch als Interaktions-E-Mails gesendet werden, ist die Wahrscheinlichkeit, dass ein Kunde sie löscht, ohne sie anzusehen, geringer. Interaktions-E-Mails können in Form einer Kampagne gesendet werden, die Benutzern eine Promotion bietet, z. B. kostenlosen Versand.
 
-![Beispiel für eine Interaktionsmarketing-E-Mail](../../assets/playbooks/marketing-email-engagement.png)
+![Beispiel für Interaktions-Marketing-E-Mail](../../assets/playbooks/marketing-email-engagement.png)
 
 ## Referenz-E-Mail
 
@@ -52,19 +52,19 @@ Mundpropaganda ist eine der besten Marketingstrategien. Senden von Verweisnachri
 
 Rabatte per E-Mail anzubieten ist eine effektive Marketingstrategie. Sie sollten Abonnenten Rabatte anbieten, um ihre Treue zu wahren.
 
-![Beispiel für eine Rabattmarketemail](../../assets/playbooks/marketing-email-discount.png)
+![Beispiel einer Rabatt-Marketing-E-Mail](../../assets/playbooks/marketing-email-discount.png)
 
 ## Abbruch-E-Mail
 
 Kunden verlassen ihren Warenkorb aus verschiedenen Gründen, einschließlich hoher Versandkosten oder unzureichender Rückgaberichtlinien. Sie können versuchen, diese Kunden in erfolgreiche Käufer umzuwandeln, indem Sie ihnen eine E-Mail mit einer Erinnerung über das Produkt senden, das sie im Warenkorb gelassen haben. Darüber hinaus können Sie Anreize bieten, um ihren Kassengang abzuschließen, einschließlich kostenloser Versand, einem Rabatt oder einem Gutschein für den nächsten Kauf. Dies hilft, die Konversionsrate zu erhöhen.
 
-![Beispiel einer Abbruch-Marketing-E-Mail](../../assets/playbooks/marketing-email-abandon.png)
+![Beispiel für eine Marketing-E-Mail zum Abbruch ](../../assets/playbooks/marketing-email-abandon.png)
 
 ## Bestellbestätigungs-E-Mail
 
 Bestellbestätigungs-E-Mails tragen nicht nur dazu bei, den Umsatz zu steigern, sondern geben Kunden auch das Vertrauen, dass sie ihre Bestellung aufgegeben haben, was das Kundenerlebnis und die Treue erhöht.
 
-![Beispiel einer Bestellbestätigungs-Marketing-E-Mail](../../assets/playbooks/marketing-email-order-confirmation.png)
+![Beispiel für eine Marketing-E-Mail zur Bestellbestätigung](../../assets/playbooks/marketing-email-order-confirmation.png)
 
 ## Umfrage-E-Mail
 

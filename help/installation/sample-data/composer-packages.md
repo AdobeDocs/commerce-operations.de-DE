@@ -14,27 +14,27 @@ ht-degree: 0%
 
 In diesem Abschnitt wird beschrieben, wie Sie Beispieldaten installieren, wenn Sie die Adobe Commerce-Software auf eine der folgenden Arten erhalten haben:
 
-* Herunterladen eines komprimierten Archivs aus `https://magento.com/tech-resources/download`.
+* Laden Sie ein komprimiertes Archiv von `https://magento.com/tech-resources/download` herunter.
 
-  Wenn Sie ein Archiv von GitHub heruntergeladen haben, funktioniert diese Methode nicht, da die `composer.json` enthält nicht die `repo.magento.com` URL.
+  Wenn Sie ein Archiv von GitHub heruntergeladen haben, funktioniert diese Methode nicht, da die `composer.json`-Datei nicht die `repo.magento.com`-URL enthält.
 
 * Verwendet `composer create-project`
 
-Sie können diese Methode zum Abrufen von Beispieldaten für Adobe Commerce verwenden, müssen aber dieselbe [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md) die Sie zum Installieren des Programms verwendet haben.
+Sie können diese Methode zum Abrufen von Beispieldaten für Adobe Commerce verwenden. Sie müssen jedoch dieselben [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md) verwenden, die Sie für die Installation des Programms verwendet haben.
 
 >[!NOTE]
 >
->Wenn Fehler auftreten, z. B. `Could not find package...` oder `...no matching package found...`, stellen Sie sicher, dass Ihr Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, haben Sie möglicherweise keinen Zugriff auf die richtigen Composer-Repositorys, insbesondere wenn Sie Adobe Commerce verwenden. Kontakt [Adobe Commerce-Support](https://support.magento.com/hc/en-us) für Hilfe.
+>Wenn Fehler wie `Could not find package...` oder `...no matching package found...` auftreten, stellen Sie sicher, dass Ihr Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, haben Sie möglicherweise keinen Zugriff auf die richtigen Composer-Repositorys, insbesondere wenn Sie Adobe Commerce verwenden. Wenden Sie sich für Hilfe an den [Adobe Commerce-Support](https://support.magento.com/hc/en-us).
 
-Sie können Composer verwenden, um Beispieldaten entweder vor oder nach der Installation der Anwendung zu installieren. Es kann jedoch vorkommen, dass [zusätzliche Aufgaben](remove-or-update.md).
+Sie können Composer verwenden, um Beispieldaten vor oder nach der Installation der Anwendung zu installieren. Es kann jedoch [zusätzliche Aufgaben](remove-or-update.md) geben.
 
-Wenn Sie ein Entwickler sind, lesen Sie [Installation durch Klonen von Repositorys](git-repositories.md).
+Wenn Sie Entwickler sind, lesen Sie den Abschnitt [Installation durch Klonen von Repositorys](git-repositories.md).
 
 >[!WARNING]
 >
->Installieren Sie keine Beispieldaten, wenn Ihre Anwendung für [Produktionsmodus](../../configuration/bootstrap/application-modes.md#production-mode). Wechseln zu [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode) zuerst. Beispieldaten im Produktionsmodus installieren [Fehler](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
+>Installieren Sie keine Beispieldaten, wenn Ihre Anwendung für den [Produktionsmodus](../../configuration/bootstrap/application-modes.md#production-mode) festgelegt ist. Wechseln Sie zuerst in den [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode). Die Installation von Beispieldaten im Produktionsmodus [schlägt fehl](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
 
-Um Beispieldaten mithilfe der Befehlszeile zu installieren, geben Sie den folgenden Befehl als Dateisysteminhaber in das `<app_root>` directory:
+Um Beispieldaten mithilfe der Befehlszeile zu installieren, geben Sie den folgenden Befehl als Dateisysteminhaber im Ordner &quot;`<app_root>`&quot;ein:
 
 ```bash
 bin/magento sampledata:deploy
@@ -42,7 +42,7 @@ bin/magento sampledata:deploy
 
 >[!WARNING]
 >
->Wenn Sie Beispieldaten installieren _after_ Installieren der Anwendung müssen Sie auch den folgenden Befehl ausführen, um die Datenbank und das Schema im `<app_root>` directory:
+>Wenn Sie Beispieldaten _nach der Installation des Programms_ installieren, müssen Sie auch den folgenden Befehl ausführen, um die Datenbank und das Schema im Verzeichnis `<app_root>` zu aktualisieren:
 
 ```bash
 bin/magento setup:upgrade
@@ -60,7 +60,7 @@ The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-Wenn der Fehler angezeigt wird, wechseln Sie zum Installationsordner der Anwendung und führen Sie `composer update`, der Sie zur Eingabe Ihrer [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md).
+Wenn der Fehler angezeigt wird, wechseln Sie zum Installationsverzeichnis der Anwendung und führen Sie `composer update` aus, um Sie zur Eingabe Ihrer [Authentifizierungsschlüssel](../prerequisites/authentication-keys.md) aufzufordern.
 
 ## Beispieldateninstallation abschließen
 

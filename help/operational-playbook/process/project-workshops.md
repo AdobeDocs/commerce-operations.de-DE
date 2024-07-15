@@ -110,7 +110,7 @@ Das Einrichten einer E-Commerce-Site ist komplex und erfordert einen strengen Te
 - Laden der Seite
 - Backup
 - Transaktionen
-- Verarbeitung
+- Verarbeitung läuft
 - Integration
 - Anmelden
 - Sicherheit

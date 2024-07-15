@@ -15,14 +15,14 @@ ht-degree: 0%
 Die Installation der Varnish-Software geht über diesen Leitfaden hinaus. Weitere Informationen zur Installation von Varnish finden Sie unter:
 
 - [Installationshandbuch](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
-- [Anleitungen zur Installation von Vars](https://www.varnish-cache.org/docs)
+- [Anleitungen für die Installation mit unterschiedlicher Länge](https://www.varnish-cache.org/docs)
 - [Installieren von Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
 >Dieses Thema wurde für Varnish auf CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, sind einige Befehle wahrscheinlich anders. Weitere Informationen finden Sie in der vorherigen Dokumentation .
 >
->Wenn Sie Varnish-Module (vmods) installieren möchten, z. B. den Saint-Modus, sollten Sie Varnish installieren, indem Sie den Code kompilieren, anstatt über ein Paket zu installieren. Siehe [Saint-Modus](config-varnish-advanced.md#saint-mode) für weitere Details.
+>Wenn Sie Varnish-Module (vmods) installieren möchten, z. B. den Saint-Modus, sollten Sie Varnish installieren, indem Sie den Code kompilieren, anstatt über ein Paket zu installieren. Weitere Informationen finden Sie unter [Saint-Modus](config-varnish-advanced.md#saint-mode) .
 
 ## Validieren Sie Ihre sprachliche Version.
 
@@ -32,4 +32,4 @@ Die Installation der Varnish-Software geht über diesen Leitfaden hinaus. Weiter
 varnishd -V
 ```
 
-Stellen Sie sicher, dass [Adobe Commerce unterstützt](../../installation/system-requirements.md) die installierte Version von Varnish , bevor Sie fortfahren. Wenn Sie eine nicht unterstützte Version ausführen, müssen Sie auf eine unterstützte Version aktualisieren. Weitere Informationen finden Sie in der Dokumentation zur Installation von Varnish .
+Stellen Sie sicher, dass [Adobe Commerce](../../installation/system-requirements.md) die installierte Version von Varnish unterstützt, bevor Sie den Vorgang fortsetzen. Wenn Sie eine nicht unterstützte Version ausführen, müssen Sie auf eine unterstützte Version aktualisieren. Weitere Informationen finden Sie in der Dokumentation zur Installation von Varnish .

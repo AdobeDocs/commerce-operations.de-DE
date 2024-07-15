@@ -106,9 +106,9 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | [Kategoriekonfiguration](catalog-management.md#category-limits) | Konfigurieren Sie Produktkategorien für optimale Leistung. |
 | [&#x200B; der Produktkonfiguration](catalog-management.md#product-sku-limits) | Konfigurieren Sie Produkt-SKUs für optimale Leistung. |
-| [Konfiguration von Produktvarianten](catalog-management.md#product-variations) | Produktvarianten für optimale Leistung konfigurieren |
+| [Konfiguration der Produktvarianten](catalog-management.md#product-variations) | Produktvarianten für optimale Leistung konfigurieren |
 | [Konfiguration der Produktoptionen](catalog-management.md#product-options) | Konfigurieren Sie Produktoptionen für optimale Leistung. |
-| [&#x200B; der Produktattributkonfiguration](catalog-management.md#product-attributes) | Konfigurieren Sie Produktattribute für optimale Leistung. |
+| [Konfiguration der Produktattribute &#x200B;](catalog-management.md#product-attributes) | Konfigurieren Sie Produktattribute für optimale Leistung. |
 | [Paginierungskonfiguration für Produktlisten](catalog-management.md#product-listing-pagination) | Konfigurieren Sie die Paginierung der Produktliste für optimale Leistung. |
 
 ## Erweiterungen
@@ -121,7 +121,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
 
 | Best Practice | Beschreibung |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [Partnereskalationen](partner-escalation.md) | Bereiten Sie sich auf die Eskalation eines Partnerproblems mit einem Adobe-Account-Team vor oder lernen Sie, wie Sie eine Eskalation vermeiden können. |
+| [Partner-Eskalationen](partner-escalation.md) | Bereiten Sie sich auf die Eskalation eines Partnerproblems mit einem Adobe-Account-Team vor oder lernen Sie, wie Sie eine Eskalation vermeiden können. |
 | [Verarbeitung der Zahlungsspeicherung](payment-processing-storage.md) | Sichere Verarbeitung und Speicherung von Zahlungsdetails. |
 
 ## Vertrieb und Marketing
@@ -129,4 +129,4 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Plan
 | Best Practice | Beschreibung |
 |------------------------------------------------------------|--------------------------------------------------------------|
 | [Beschränkungen des Produktkartells](catalog-management.md#cart-limits) | Verwalten Sie Warenkorbbeschränkungen für optimale Leistung. |
-| [Konfiguration von Promotions](catalog-management.md#promotions) | Konfigurieren Sie Verkäufe und Promotions für Artikel in einem Warenkorb. |
+| [Konfigurieren von Promotions](catalog-management.md#promotions) | Konfigurieren Sie Verkäufe und Promotions für Artikel in einem Warenkorb. |

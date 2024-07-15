@@ -4,14 +4,14 @@ description: Sehen Sie sich eine Liste der Werte für die Datei env.php an.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
 
 # env.php-Referenz
 
-Die `env.php` -Datei enthält die folgenden Abschnitte:
+Die Datei `env.php` enthält die folgenden Abschnitte:
 
 | Name | Beschreibung |
 |-------------------------------|-----------------------------------------------------------------|
@@ -27,8 +27,8 @@ Die `env.php` -Datei enthält die folgenden Abschnitte:
 | `downloadable_domains` | Liste der herunterladbaren Domains |
 | `install` | Installationsdatum |
 | `lock` | Provider-Einstellungen sperren |
-| `MAGE_MODE` | Die [Anwendungsmodus](../bootstrap/application-modes.md) |
-| `queue` | [Nachrichtenwarteschlangen](../queues/manage-message-queues.md) settings |
+| `MAGE_MODE` | Der [Anwendungsmodus](../bootstrap/application-modes.md) |
+| `queue` | [Einstellungen für Nachrichtenwarteschlangen](../queues/manage-message-queues.md) |
 | `resource` | Zuordnung des Ressourcennamens zu einer Verbindung |
 | `session` | Sitzungsspeicherdaten |
 | `system` | Deaktiviert das Feld zur Bearbeitung im Admin |
@@ -36,7 +36,7 @@ Die `env.php` -Datei enthält die folgenden Abschnitte:
 
 ## Backend
 
-Konfigurieren Sie die **frontName** für die Commerce-Admin-URL mit der `backend` Knoten in env.php.
+Konfigurieren Sie den **frontName** für die Commerce-Admin-URL mithilfe des Knotens `backend` in env.php.
 
 ```conf
 'backend' => [
@@ -46,7 +46,7 @@ Konfigurieren Sie die **frontName** für die Commerce-Admin-URL mit der `backend
 
 ## cache
 
-Umleitungsseite und Standard-Zwischenspeicherung mithilfe von konfigurieren `cache` Knoten in `env.php` -Datei.
+Konfigurieren Sie die Seite &quot;Umkehren&quot;und die standardmäßige Zwischenspeicherung mithilfe des Knotens &quot;`cache`&quot;in der Datei &quot;`env.php`&quot;.
 
 ```conf
 'cache' => [
@@ -98,11 +98,11 @@ Alle Konfigurationen der Cache-Typen sind in diesem Knoten verfügbar.
 ]
 ```
 
-Weitere Informationen zu verschiedenen [Cachetypen](../cli/manage-cache.md).
+Erfahren Sie mehr über verschiedene [Cache-Typen](../cli/manage-cache.md).
 
 ## consumer_wait_for_messages
 
-Geben Sie an, ob Verbraucher die Abfrage von Nachrichten fortsetzen sollen, wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als die `max_messages` -Wert. Der Standardwert ist `1`.
+Geben Sie an, ob der Abruf von Nachrichten durch den Verbraucher fortgesetzt werden soll, wenn die Anzahl der verarbeiteten Nachrichten unter dem Wert `max_messages` liegt. Der Standardwert ist `1`.
 
 ```conf
 'queue' => [
@@ -112,17 +112,17 @@ Geben Sie an, ob Verbraucher die Abfrage von Nachrichten fortsetzen sollen, wenn
 
 Die folgenden Optionen sind verfügbar:
 
-- `1`—Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis sie die `max_messages` Wert, der in der Variablen `env.php` -Datei vor dem Schließen der TCP-Verbindung und dem Beenden des Verbraucherprozesses. Wenn die Warteschlange vor dem Erreichen der `max_messages` -Wert, wartet der Verbraucher auf mehr Nachrichten, die eintreffen.
+- `1`—Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis sie den in der Datei `env.php` angegebenen `max_messages` -Wert erreichen, bevor sie die TCP-Verbindung schließen und den Verbraucherprozess beenden. Wenn die Warteschlange leer ist, bevor der `max_messages` -Wert erreicht wird, wartet der Verbraucher, bis weitere Nachrichten eintreffen.
 
   Wir empfehlen diese Einstellung für große Händler, da ein konstanter Nachrichtenfluss erwartet wird und Verzögerungen bei der Verarbeitung unerwünscht sind.
 
-- `0`—Verbraucher verarbeiten verfügbare Nachrichten in der Warteschlange, schließen die TCP-Verbindung und beenden sie. Die Verbraucher warten nicht darauf, dass zusätzliche Nachrichten in die Warteschlange gelangen, selbst wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als die Anzahl der `max_messages` Wert, der in der Variablen `env.php` -Datei. Dies kann dazu beitragen, Probleme mit Cron-Aufträgen zu verhindern, die durch lange Verzögerungen bei der Verarbeitung von Nachrichtenwarteschlangen verursacht werden.
+- `0` - Die Verbraucher verarbeiten verfügbare Nachrichten in der Warteschlange, schließen die TCP-Verbindung und beenden sie. Die Verbraucher warten nicht darauf, dass zusätzliche Nachrichten in die Warteschlange gelangen, selbst wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als der in der Datei `env.php` angegebene Wert `max_messages` . Dies kann dazu beitragen, Probleme mit Cron-Aufträgen zu verhindern, die durch lange Verzögerungen bei der Verarbeitung von Nachrichtenwarteschlangen verursacht werden.
 
   Wir empfehlen diese Einstellung für kleinere Händler, die keinen konstanten Nachrichtenfluss erwarten und im Gegenzug für geringfügige Verarbeitungsverzögerungen Rechenressourcen sparen möchten, wenn es für Tage keine Nachrichten geben könnte.
 
 ## cron
 
-Aktivieren oder deaktivieren Sie Cron-Aufträge für die Commerce-Anwendung. Standardmäßig sind Cron-Aufträge aktiviert. Fügen Sie die `cron` -Konfiguration `env.php` und setzen Sie den Wert auf `0`.
+Aktivieren oder deaktivieren Sie Cron-Aufträge für die Commerce-Anwendung. Standardmäßig sind Cron-Aufträge aktiviert. Um sie zu deaktivieren, fügen Sie die Konfiguration `cron` zur Datei `env.php` hinzu und setzen Sie den Wert auf `0`.
 
 ```conf
 'cron' => [
@@ -134,11 +134,11 @@ Aktivieren oder deaktivieren Sie Cron-Aufträge für die Commerce-Anwendung. Sta
 >
 >Seien Sie vorsichtig, wenn Sie Cron-Aufträge deaktivieren. Wenn sie deaktiviert sind, werden die für die Commerce-Anwendung erforderlichen wesentlichen Prozesse nicht ausgeführt.
 
-Weitere Informationen [Krone](../cli/configure-cron-jobs.md).
+Erfahren Sie mehr über [Crons](../cli/configure-cron-jobs.md).
 
 ## crypt
 
-Commerce verwendet einen Verschlüsselungsschlüssel, um Passwörter und andere vertrauliche Daten zu schützen. Dieser Schlüssel wird während des Installationsprozesses generiert.
+Commerce verwendet einen Verschlüsselungsschlüssel, um Kennwörter und andere vertrauliche Daten zu schützen. Dieser Schlüssel wird während des Installationsprozesses generiert.
 
 ```conf
 'crypt' => [
@@ -146,7 +146,7 @@ Commerce verwendet einen Verschlüsselungsschlüssel, um Passwörter und andere 
 ]
 ```
 
-Weitere Informationen [Verschlüsselungsschlüssel](https://docs.magento.com/user-guide/system/encryption-key.html) im _Commerce-Benutzerhandbuch_.
+Weitere Informationen zu [Verschlüsselungsschlüssel](https://docs.magento.com/user-guide/system/encryption-key.html) finden Sie im _Commerce-Benutzerhandbuch_.
 
 ## db
 
@@ -172,7 +172,7 @@ Alle Datenbankkonfigurationen sind in diesem Knoten verfügbar.
 
 ## default_connection
 
-Definiert die Standardverbindung für Nachrichtenwarteschlangen. Der Wert kann `db`, `amqp`oder ein benutzerdefiniertes Warteschlangensystem wie `redismq`. Wenn Sie einen anderen Wert als `db`muss die Nachrichtenwarteschlangensoftware zuerst installiert und konfiguriert werden. Andernfalls werden Nachrichten nicht korrekt verarbeitet.
+Definiert die Standardverbindung für Nachrichtenwarteschlangen. Der Wert kann `db`, `amqp` oder ein benutzerdefiniertes Warteschlangensystem wie `redismq` sein. Wenn Sie einen anderen Wert als `db` angeben, muss die Nachrichtenwarteschlangensoftware zuerst installiert und konfiguriert werden. Andernfalls werden Nachrichten nicht korrekt verarbeitet.
 
 ```conf
 'queue' => [
@@ -180,12 +180,12 @@ Definiert die Standardverbindung für Nachrichtenwarteschlangen. Der Wert kann `
 ]
 ```
 
-Wenn `queue/default_connection` im System angegeben ist `env.php` -Datei, wird diese Verbindung für alle Nachrichtenwarteschlangen über das System verwendet, es sei denn, eine bestimmte Verbindung ist in einer `queue_topology.xml`, `queue_publisher.xml` oder `queue_consumer.xml` -Datei.
-Wenn beispielsweise `queue/default_connection` is `amqp` in `env.php` aber ein `db` -Verbindung wird in den XML-Dateien der Warteschlangenkonfiguration eines Moduls angegeben. Das Modul verwendet MySQL als Nachrichtenbroker.
+Wenn in der System-Datei `env.php` der Wert `queue/default_connection` angegeben ist, wird diese Verbindung für alle Nachrichtenwarteschlangen über das System verwendet, es sei denn, eine bestimmte Verbindung ist in einer Datei `queue_topology.xml`, `queue_publisher.xml` oder `queue_consumer.xml` definiert.
+Wenn beispielsweise `queue/default_connection` in `env.php` den Wert `amqp` hat, aber in den XML-Dateien der Warteschlangenkonfiguration eines Moduls eine Verbindung mit dem Wert `db` angegeben ist, verwendet das Modul MySQL als Nachrichtenbroker.
 
 ## Verzeichnisse
 
-Optionale Ordnerzuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver für die Bereitstellung der Commerce-App über die `/pub` Verzeichnis für [verbesserte Sicherheit](../../installation/tutorials/docroot.md).
+Optionale Ordnerzuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver für die Bereitstellung der Commerce-App im Ordner &quot;`/pub`&quot;konfiguriert ist, um [verbesserte Sicherheit](../../installation/tutorials/docroot.md) zu gewährleisten.
 
 ```conf
 'directories' => [
@@ -203,7 +203,7 @@ Eine Liste der herunterladbaren Domains, die in diesem Knoten verfügbar sind. Z
 ]
 ```
 
-Weitere Informationen [Herunterladbare Domänen](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Erfahren Sie mehr über [herunterladbare Domänen](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
 
 ## install
 
@@ -217,9 +217,9 @@ Das Installationsdatum der Commerce-Anwendung.
 
 ## lock
 
-Die Einstellungen des Sperranbieters werden mithilfe der Variablen `lock` Knoten.
+Die Einstellungen des Sperranbieters werden mit dem Knoten `lock` konfiguriert.
 
-Weitere Informationen [Anbieterkonfiguration sperren](../../installation/tutorials/lock-provider.md).
+Erfahren Sie mehr über die [Konfiguration des Sperranbieters](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -229,7 +229,7 @@ Der Bereitstellungsmodus kann in diesem Knoten konfiguriert werden.
 'MAGE_MODE' => 'developer'
 ```
 
-Weitere Informationen [Anwendungsmodi](../cli/set-mode.md).
+Erfahren Sie mehr über [Anwendungsmodi](../cli/set-mode.md).
 
 ## queue
 
@@ -244,7 +244,7 @@ Die Konfigurationen der Nachrichtenwarteschlange sind in diesem Knoten verfügba
 ]
 ```
 
-Weitere Informationen [Nachrichtenwarteschlange][message-queue].
+Erfahren Sie mehr über [Nachrichtenwarteschlange][message-queue].
 
 ## resource
 
@@ -260,7 +260,7 @@ Die Einstellungen für die Ressourcenkonfiguration sind in diesem Knoten verfüg
 
 ## session
 
-Sitzungskonfigurationen werden im `session` Knoten.
+Sitzungskonfigurationen werden im Knoten `session` gespeichert.
 
 ```conf
 'session' => [
@@ -268,7 +268,7 @@ Sitzungskonfigurationen werden im `session` Knoten.
 ],
 ```
 
-Weitere Informationen [Sitzung](../storage/sessions.md).
+Erfahren Sie mehr über [Sitzung](../storage/sessions.md).
 
 ## x-frame-options
 
@@ -278,11 +278,11 @@ Die Kopfzeile für X-Frame-Optionen kann mithilfe dieses Knotens konfiguriert we
 'x-frame-options' => 'SAMEORIGIN'
 ```
 
-Weitere Informationen [x-frame-options](../security/xframe-options.md).
+Erfahren Sie mehr über [x-frame-options](../security/xframe-options.md).
 
 ## System
 
-Unter Verwendung dieses Knotens sperrt Commerce die Konfigurationswerte im `env.php` und deaktiviert dann das Feld im Admin.
+Unter Verwendung dieses Knotens sperrt Commerce die Konfigurationswerte in der Datei `env.php` und deaktiviert dann das Feld im Admin.
 
 ```conf
 'system' => [

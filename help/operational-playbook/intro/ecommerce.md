@@ -4,7 +4,7 @@ description: Beschreibung des E-Commerce
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ E-Commerce ermöglicht es den Menschen, die Türen ihrer eigenen virtuellen Stor
 - Der E-Commerce-Overhead ist im Vergleich zu Steinen und Mörtel gering
 - Online-Stores sind rund um die Uhr geöffnet
 - Der Kauf ist unmittelbar
-- Personalisierung und benutzerspezifische Erlebnisse
+- Personalization und benutzerdefinierte Benutzererlebnisse
 - Globales Kundenpotenzial
 
 ### Nachteile
@@ -73,6 +73,6 @@ Die Kundenerwartungen steigen und es gibt immer neue Wachstumstechniken, um Ihre
 
 ![Der Wert der Commerce-Technologie](../../assets/playbooks/commerce-tech.png)
 
-## Handelsindustrie
+## Commerce-Industrien
 
 ![Der Wert der Commerce-Technologie](../../assets/playbooks/commerce-industries.png)

@@ -12,14 +12,14 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **Version**: 3.0.17
 
-Diese Referenz enthält 9 Befehle, die über die `bin/uct` Befehlszeilen-Tool.
-Die anfängliche Liste wird automatisch mit der Variablen `bin/uct list` -Befehl in Adobe Commerce.
+Diese Referenz enthält 9 Befehle, die über das Befehlszeilen-Tool `bin/uct` verfügbar sind.
+Die anfängliche Liste wird automatisch mit dem Befehl `bin/uct list` in Adobe Commerce generiert.
 
-Weitere Informationen zum Tool finden Sie unter [Übersicht](/help/upgrade/upgrade-compatibility-tool/overview.md).
+Weitere Informationen zum Tool finden Sie unter [Überblick](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Diese Referenz wird aus der Anwendungs-Codebase generiert. Um den Inhalt zu ändern, können Sie den Quellcode für die entsprechende Befehlsimplementierung im [codebase](https://github.com/magento) Repository erstellen und Ihre Änderungen zur Überprüfung einreichen. Eine andere Möglichkeit ist, _Feedback geben_ (finden Sie den Link oben rechts). Beitragsrichtlinien finden Sie unter [Codebeiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Diese Referenz wird aus der Anwendungs-Codebase generiert. Um den Inhalt zu ändern, können Sie den Quellcode für die entsprechende Befehlsimplementierung im Repository [Codebase](https://github.com/magento) aktualisieren und Ihre Änderungen zur Überprüfung senden. Eine andere Möglichkeit besteht darin, _Feedback geben_ (den Link oben rechts zu finden). Beitragsrichtlinien finden Sie unter [Codebeiträge](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 

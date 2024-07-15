@@ -4,7 +4,7 @@ description: Erstellen Sie das richtige Team für Ihr E-Commerce-Projekt.
 exl-id: 57aee5ac-db27-4c2a-8e08-3e926d7658d3
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ Jede dieser Rollen ist für die Planung und Ausführung des E-Commerce-Projekts 
 
 Organisationen neigen dazu, externe Abhängigkeiten zu übersehen, die direkt oder indirekt eine wichtige Rolle für den Erfolg des Projekts spielen, einschließlich:
 
-- **Warehouse-Team**-Wenn die Website läuft, aber die Mitarbeiter im Lager begrenzt sind, kann dies die Verpackung und den Versand verzögern. Es könnte auch ein Systemfehler im Lager geben, der es daran hindert, Bestellungen zu verfolgen, die auch Verpackung und Versand verzögern könnten.
+- **Warehouse-Team** - Wenn die Website aktiv ist, die Mitarbeiter des Lagers jedoch begrenzt sind, kann dies die Verpackung und den Versand verzögern. Es könnte auch ein Systemfehler im Lager geben, der es daran hindert, Bestellungen zu verfolgen, die auch Verpackung und Versand verzögern könnten.
 
-- **Kundendienstteam**—Dieses Team steht in direktem Kontakt mit Kunden. Sie kennen die Schmerzpunkte der Kunden, sind jedoch in der Regel das am stärksten unterbewertete Team in einem Unternehmen. Wenn Sie beispielsweise eine neue Promotion auf Ihrer Website ausführen und das Team dies nicht weiß, kann es sein, dass die Kunden keine korrekten Informationen erhalten oder dass sie die Anzahl der Anrufe möglicherweise nicht verarbeiten können, wenn es sich um ein kleines Team handelt. Diese Beispiele können zu einem negativen Kundenerlebnis führen.
+- **Team des Kundendienstes** - Dieses Team steht in direktem Kontakt mit Kunden. Sie kennen die Schmerzpunkte der Kunden, sind jedoch in der Regel das am stärksten unterbewertete Team in einem Unternehmen. Wenn Sie beispielsweise eine neue Promotion auf Ihrer Website ausführen und das Team dies nicht weiß, kann es sein, dass die Kunden keine korrekten Informationen erhalten oder dass sie die Anzahl der Anrufe möglicherweise nicht verarbeiten können, wenn es sich um ein kleines Team handelt. Diese Beispiele können zu einem negativen Kundenerlebnis führen.
 
-- **Marketing-Team**—Marketingteams verwalten Verkäufe, Angebote, Promotions und Kampagnen. Wenn sie E-Mails zu einem Produkt senden, aber nicht wissen, dass der Bestand begrenzt ist, kann dies zu einem schlechten Kundenerlebnis führen und Ihre Konversionsrate senken.
+- **Marketing-Team**: Marketing-Teams verwalten Verkäufe, Angebote, Promotions und Kampagnen. Wenn sie E-Mails zu einem Produkt senden, aber nicht wissen, dass der Bestand begrenzt ist, kann dies zu einem schlechten Kundenerlebnis führen und Ihre Konversionsrate senken.
 
 Bei der Einrichtung des Projektteams ist es nicht nur wichtig, dass die richtigen Personen mit den erforderlichen Fertigkeiten ausgestattet sind, sondern auch, dass externe Teams informiert und abgestimmt werden, um ein erfolgreiches Ergebnis zu erzielen.

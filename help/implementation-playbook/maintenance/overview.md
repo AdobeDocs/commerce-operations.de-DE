@@ -5,7 +5,7 @@ exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -33,5 +33,5 @@ Das folgende Diagramm zeigt die Phasen und Aktivitäten, die in einem erfolgreic
 Die Ermittlung des richtigen Unterstützungsmodells für Ihr Unternehmen für die weitere Optimierung und Optimierung Ihrer Plattform - und der gesamten Commerce-Praxis - ist ein wichtiger Schritt zur Aufrechterhaltung der gesamten harten Arbeit, die während des Implementierungsprozesses geleistet wurde. Mit einem umfassenden laufenden Support-Plan kann Ihre Commerce-Site mit den Erwartungen Ihrer Kunden Schritt halten und Ihre Ziele erreichen.
 
 Bei der Bereitstellung von Adobe Commerce ist es wichtig zu überlegen, was in Ihre Wartungs- und Support-Strategie einbezogen werden soll.
-Der Expertensupport ist in einer Adobe Commerce-Lizenz enthalten. Weitere Informationen zu Support-Plänen für Experten und Adobe finden Sie unter [Adobe-Support-Abos](https://business.adobe.com/customers/consulting-services/premier-support.html).
+Der Expertensupport ist in einer Adobe Commerce-Lizenz enthalten. Weitere Informationen zu Support-Abos für Experten und Adobe finden Sie unter [Adobe-Support-Abos](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Neben Adobe-Support-Plänen gibt es auch alte Magento-Supportbedingungen. Um zu verstehen, welche Supportleistungen für Sie gelten, verweisen Sie bitte auf Ihren Vertrag, um zu erfahren, welche Supportvereinbarung Sie haben, oder sprechen Sie mit Ihrem Adobe-Account-Team.

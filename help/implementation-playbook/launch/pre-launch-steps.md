@@ -5,7 +5,7 @@ exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
 feature: Deploy
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Die Checkliste vor dem Start muss vor dem Start überprüft werden. Sie enthält
 - Leistungsüberwachungs-Tool aktivieren (Neue Eigenschaften)
 - Aktivitäten zur Datenmigration in der Probe (falls vorhanden)
 
-![Abbildung der Phase 1 des Startvorgangs](../../assets/playbooks/launch-steps-1.svg)
+![Diagramm, das Phase 1 des Startvorgangs anzeigt](../../assets/playbooks/launch-steps-1.svg)
 
 Die Hauptunterschiede zwischen lokalen Implementierungen von Adobe Commerce und Cloud-Implementierungen sind die Bereitstellungsskripte und -werkzeuge sowie die Einrichtung für SSL, Mail-Dienst und CDN. Der Prozess ist jedoch weiterhin identisch.
 
@@ -57,4 +57,4 @@ Die vollständige Checkliste vor dem Start zeigt alle wichtigen Aktivitäten an,
 - Zahlungskonfiguration für die Produktionsumgebung (für einige Kunden verwendet die Zahlung zum Testen den Sandbox-Modus)
 - Testdaten (Kunde, Wunschliste, Überprüfungen, Bestellungen und zugehörige Daten) aus der Produktionsdatenbank werden gelöscht.
 
-![Abbildung der Phase 2 des Startvorgangs](../../assets/playbooks/launch-steps-2.svg)
+![Diagramm, das Phase 2 des Startvorgangs anzeigt](../../assets/playbooks/launch-steps-2.svg)

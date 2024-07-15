@@ -1,34 +1,34 @@
 ---
 title: Einzelmaschinenimplementierung
-description: Erfahren Sie, wie Sie mithilfe der Befehlszeile Updates für Commerce auf einem Produktionsserver bereitstellen.
+description: Erfahren Sie, wie Sie mithilfe der Befehlszeile Updates auf einem Produktionsserver für Commerce bereitstellen.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
 
 # Einzelmaschinenbereitstellung
 
-Dieses Thema enthält Anweisungen zur Bereitstellung von Aktualisierungen für Commerce auf einem Produktionsserver mithilfe der Befehlszeile. Dieser Prozess gilt für technische Benutzer, die für Geschäfte verantwortlich sind, die auf einem einzigen Computer mit einigen Designs und Gebietsschemas ausgeführt werden.
+In diesem Thema finden Sie Anweisungen zur Bereitstellung von Updates für Commerce auf einem Produktionsserver mithilfe der Befehlszeile. Dieser Prozess gilt für technische Benutzer, die für Geschäfte verantwortlich sind, die auf einem einzigen Computer mit einigen Designs und Gebietsschemas ausgeführt werden.
 
 ## Annahmen
 
-- Sie haben Commerce mithilfe von [Verfasser](../../installation/composer.md).
+- Sie haben Commerce mit [Composer](../../installation/composer.md) installiert.
 - Sie wenden Aktualisierungen direkt auf den Server an.
 
 >[!WARNING]
 >
->Dieses Handbuch gilt nicht, wenn Sie `git clone` , um Commerce zu installieren.
->Beitragende Entwickler sollten [diesem Handbuch][install] , um ihre Commerce-Installation zu aktualisieren.
+>Dieses Handbuch gilt nicht, wenn Sie mit `git clone` Commerce installiert haben.
+>Beitragende Entwickler sollten [dieses Handbuch][install] verwenden, um ihre Commerce-Installation zu aktualisieren.
 
 ## Implementierungsschritte
 
-1. Melden Sie sich bei Ihrem Produktionsserver an oder wechseln Sie zu dem [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Produktionsserver als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
 
-1. Wechseln Sie zum Basisverzeichnis &quot;Commerce&quot;:
+1. Ändern Sie den Ordner in den Commerce-Basisordner:
 
    ```bash
    cd <Commerce base directory>

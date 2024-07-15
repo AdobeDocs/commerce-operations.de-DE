@@ -65,7 +65,7 @@ Die folgende Liste enthält Möglichkeiten zur Verwendung von JIRA in jeder Orga
 
 JIRA ermöglicht Teams, detaillierte Aufgaben zu erstellen und zu verfassen, Berichte zu erstellen, Workflows anzupassen und Aufträge relativ schnell für einzelne Benutzer zuzuweisen.
 
-Commerce-Manager, Marketing- und Entwicklungsteams und sogar Akteure auf C-Ebene können den täglichen, wöchentlichen, monatlichen und jährlichen Fortschritt jeder JIRA-Aufgabe oder jedes JIRA-Projekts verfolgen. Das Projekt-Management-Tool Atlassian ist in drei Versionen erhältlich: JIRA Align, JIRA Core und JIRA Software.
+Commerce-Manager, Marketing- und Entwicklungsteams und sogar Akteure auf C-Ebene können den täglichen, wöchentlichen, monatlichen und jährlichen Fortschritt einer JIRA-Aufgabe oder eines JIRA-Projekts verfolgen. Das Projekt-Management-Tool Atlassian ist in drei Versionen erhältlich: JIRA Align, JIRA Core und JIRA Software.
 
 Die Vorteile der Verwendung von JIRA in E-Commerce-Unternehmen bestehen darin, dass mehrere Teams mit einer Plattform zusammenarbeiten können. Viele Male sind Unternehmen Zeugen der Marketing-, Entwicklungs-, Kreativ- und E-Commerce-Teams, die alle in verschiedenen Silos arbeiten. Ein Projektmanagement-Tool wie JIRA ermöglicht es jedem Team, verschiedene Prioritäten zu repräsentieren. Probleme können alles darstellen, was Teams verfolgen möchten, und sind alle in verschiedenen Projekten enthalten, die aus wiederkehrenden Aufgaben bestehen, die von Teams ausgeführt werden müssen. Jedes Problem durchläuft einen Prozess, der als Workflow bezeichnet wird.
 
@@ -73,7 +73,7 @@ Der richtige Workflow kann Kommunikationslinien erstellen oder umbrechen. Teams 
 
 Wenn Probleme während eines Workflows verfolgt werden, erhalten alle Mitglieder des Teams, der Abteilung oder sogar des Unternehmens einen Einblick in ihren Status. Ein Workflow stellt außerdem sicher, dass ein Problem alle Schritte durchläuft, bevor es abgeschlossen ist. So merken Teams all diese Prioritäten.
 
-![Beispieldiagramm für einen JIRA-Workflow](../../assets/playbooks/jira-workflow-example.png)
+![JIRA-Workflow-Beispieldiagramm](../../assets/playbooks/jira-workflow-example.png)
 
 ### Zusammenfluss
 

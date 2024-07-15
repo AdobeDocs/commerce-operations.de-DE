@@ -57,4 +57,4 @@ Es gibt auch wichtige Faktoren, die den Maßstab im Handel antreiben, was sich a
 
 Für skalierbare, übereinander liegende Architekturen können Sie dieses Diagramm als Referenz verwenden.
 
-![Abbildung der Verwendung der Adobe Commerce GraphQL API in einer zwischenspeicherbaren Architektur](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagramm, das zeigt, wie die Adobe Commerce GraphQL-API in einer zwischenspeicherbaren Architektur verwendet wird](../../../assets/playbooks/cacheable-architecture.svg)

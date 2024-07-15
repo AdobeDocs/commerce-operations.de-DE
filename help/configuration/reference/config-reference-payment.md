@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Referenz zu Zahlungskonfigurationspfaden
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Zahlungsmethoden**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Zahlungsmethoden** verfügbar.
 
-Die [`magento app:config:dump` command](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei, `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](override-config-settings.md#environment-variables). Dieses Thema _not_ Liste [sensible und systemspezifische Werte](config-reference-sens.md).
+Der Befehl [`magento app:config:dump`](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Verwenden von Umgebungsvariablen zum Außerkraftsetzen von Konfigurationseinstellungen](override-config-settings.md#environment-variables). Bei diesem Thema werden _nicht_ vertrauliche und systemspezifische Werte [ aufgelistet.](config-reference-sens.md)
 
 Die Einstellungen werden weiter nach Zahlungsmethode organisiert.
 
@@ -100,7 +100,7 @@ Die Einstellungen werden weiter nach Zahlungsmethode organisiert.
 
 ## Payments Pro Hosted Solution (Großbritannien)
 
-Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Handelsland](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+Diese Optionen sind nur verfügbar, wenn Sie Großbritannien als [Handelsland](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths) auswählen.
 
 | Name | Konfigurationspfad | Nur Commerce? | Verschlüsselt? |
 |--------------|--------------|--------------|--------------|
@@ -260,7 +260,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 
 >[!INFO]
 >
->Die verfügbaren Pfade werden durch Ihre Auswahl an [Handelsland](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+>Die verfügbaren Pfade werden durch Ihre Auswahl von [Handelsland](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths) bestimmt.
 
 | Name | Konfigurationspfad | Nur Commerce? | Verschlüsselt? |
 |--------------|--------------|--------------|--------------|
@@ -517,7 +517,7 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Aktiviert | `payment_es/cybersource/active` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Zahlungsaktion | `payment_es/cybersource/payment_action` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Titel | `payment_es/cybersource/title` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Profil-ID | `payment_es/cybersource/profile_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |
+| Profil-ID | `payment_es/cybersource/profile_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | ![verschlüsselt](/help/assets/configuration/cloud-enc.png) |
 | Neuer Bestellstatus | `payment_es/cybersource/order_status` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Debuggen | `payment_es/cybersource/debug` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Kreditkartenarten | `payment_es/cybersource/cctypes` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -890,8 +890,8 @@ Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Han
 | Aktiviert | `payment_au/cybersource/active` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Zahlungsaktion | `payment_au/cybersource/payment_action` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Titel | `payment_au/cybersource/title` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Merchant-ID | `payment_au/cybersource/merchant_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |
-| Profil-ID | `payment_au/cybersource/profile_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | ![Verschlüsselt](/help/assets/configuration/cloud-enc.png) |
+| Merchant-ID | `payment_au/cybersource/merchant_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | ![verschlüsselt](/help/assets/configuration/cloud-enc.png) |
+| Profil-ID | `payment_au/cybersource/profile_id` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) | ![verschlüsselt](/help/assets/configuration/cloud-enc.png) |
 | Neuer Bestellstatus | `payment_au/cybersource/order_status` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Debuggen | `payment_au/cybersource/debug` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Kreditkartenarten | `payment_au/cybersource/cctypes` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |

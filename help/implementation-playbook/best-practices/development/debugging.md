@@ -3,13 +3,13 @@ title: Best Practices für das Debugging
 description: Erfahren Sie mehr über Verfahren zur Lösung häufiger Adobe Commerce-Entwicklungsprobleme.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Debugging von Best Practices für Adobe Commerce
 
@@ -22,7 +22,7 @@ In diesem Abschnitt werden die häufigsten Probleme beschrieben, auf die Sie bei
 ### Cache
 
 - Leeren Sie den Cache vor weiteren Untersuchungen.
-- Betrachten Sie den APC-Cache, CDN, Varnish, generierten Code und die `var/view_preprocessed` und `pub/static/` Verzeichnisse
+- Betrachten Sie die Ordner APC-Cache, CDN, Varnish, generierter Code und `var/view_preprocessed` und `pub/static/` .
 - Beenden und Neustart von Warteschlangen-Handlern nach dem Leeren des Cache oder Ändern des Codes
 
 Das folgende Codebeispiel enthält hilfreiche Befehle zum Verwalten des Caches (nicht in Produktionsumgebungen ausführen):
@@ -96,7 +96,7 @@ bin/magento cache:flush
 
 ### Entwicklermodus
 
-Stellen Sie sicher, dass sich Ihre lokale Installation unter `developer` -Modus.
+Stellen Sie sicher, dass sich Ihre lokale Installation im Modus `developer` befindet.
 
 ### Neues Modul
 
@@ -108,9 +108,9 @@ Wenn Sie ein Modul erstellt haben, überprüfen Sie, ob folgende Probleme vorlie
   bin/magento module --enable Your_Module
   ```
 
-  Überprüfen Sie die `app/etc/config.php` -Datei für Ihr neues Modul.
+  Überprüfen Sie die Datei `app/etc/config.php` für Ihr neues Modul.
 
-- Überprüfen Sie die Verschachtelung der Datei- und Ordnerstruktur. Beispielsweise sind Layout-Dateien in der Variablen `view/layout/` anstatt des `view/frontend/layout` Verzeichnis? Sind Vorlagen in der `view/frontend/template` anstatt des `view/frontend/templates` Verzeichnis?
+- Überprüfen Sie die Verschachtelung der Datei- und Ordnerstruktur. Sind beispielsweise Layoutdateien im Verzeichnis `view/layout/` anstelle des Verzeichnisses `view/frontend/layout`? Sind Vorlagen im Verzeichnis `view/frontend/template` anstelle des Verzeichnisses `view/frontend/templates`?
 
 ## Fehlerbehebung: Halbtrennung
 
@@ -132,12 +132,12 @@ Es gibt mehrere Möglichkeiten, etwas zu zerlegen. Adobe empfiehlt jedoch, diese
 
 Wenn das Problem möglicherweise nicht codebezogen ist, müssen Sie die großen Blöcke zuerst entfernen. Zu den großen Blöcken, an die gedacht werden sollte, gehören:
 
-- **Adobe Commerce-Framework**—Ist das Problem überhaupt mit Adobe Commerce verbunden oder könnte es mit einem anderen verbundenen System verbunden sein?
-- **Server und Client**—Löschen Sie den Browsercache und den Speicher. Ist das Problem gelöst? Dies kann eine serverbasierte Ursache ausschließen. Gibt es das Problem noch? Sie müssen keine Zeit mehr im Browser-Debugging verschwenden.
-- **Sitzung**—Tritt das Problem für jeden Benutzer auf? Wenn nicht, ist Ihr Problem möglicherweise auf sitzungs- oder browserbezogene Themen beschränkt.
-- **Cache**—Ändert das Deaktivieren aller Caches irgendetwas? Wenn ja, können Sie sich auf zwischenspeicherbezogene Themen konzentrieren.
-- **Datenbank**—Tritt das Problem in jeder Umgebung auf, in der der gleiche Code ausgeführt wird? Wenn nicht, suchen Sie nach Problemen in der Konfiguration und anderen datenbankbezogenen Themen.
-- **Code**—Suchen Sie nach Code-Problemen, wenn keiner der oben genannten Probleme das Problem gelöst hat.
+- **Adobe Commerce-Framework**: Ist das Problem überhaupt mit Adobe Commerce verbunden oder könnte es mit einem anderen verbundenen System verbunden sein?
+- **Server und Client**: Löschen Sie den Browsercache und den Speicher. Ist das Problem gelöst? Dies kann eine serverbasierte Ursache ausschließen. Gibt es das Problem noch? Sie müssen keine Zeit mehr im Browser-Debugging verschwenden.
+- **Sitzung** - Tritt das Problem für jeden Benutzer auf? Wenn nicht, ist Ihr Problem möglicherweise auf sitzungs- oder browserbezogene Themen beschränkt.
+- **Cache**: Ändert das Deaktivieren aller Caches irgendetwas? Wenn ja, können Sie sich auf zwischenspeicherbezogene Themen konzentrieren.
+- **Datenbank** - Tritt das Problem in jeder Umgebung auf, in der derselbe Code ausgeführt wird? Wenn nicht, suchen Sie nach Problemen in der Konfiguration und anderen datenbankbezogenen Themen.
+- **Code** - Suchen Sie nach Code-Problemen, wenn keiner der oben genannten Probleme das Problem gelöst hat.
 
 ### Schritt 2: Auswahl durch Zusagen
 
@@ -148,7 +148,7 @@ Sie können Wochen und Tage durch Commits ersetzen. Beispiel: Rollback von 100 C
 ### Schritt 3: Von Dateien auswählen
 
 - Teilen Sie Adobe Commerce nach Dateitypen (Core und Nicht-Core) auf. Deaktivieren Sie zunächst alle Kunden- und Marketplace-Module. Gibt es das Problem noch? Es handelt sich höchstwahrscheinlich um ein Nicht-Kernproblem.
-- Aktivieren Sie (ungefähr) die Hälfte der Module erneut im `app/etc/config.php` -Datei. Beachten Sie Abhängigkeiten. Es ist am besten, Modul-Cluster mit demselben Thema gleichzeitig zu aktivieren. Gibt es das Problem noch?
+- Aktivieren Sie (ungefähr) die Hälfte der Module erneut in der Datei `app/etc/config.php` . Beachten Sie Abhängigkeiten. Es ist am besten, Modul-Cluster mit demselben Thema gleichzeitig zu aktivieren. Gibt es das Problem noch?
 - Aktivieren Sie ein Viertel der verbleibenden Module. Gibt es das Problem noch? Deaktivieren Sie die Hälfte von dem, was Sie aktiviert haben. Diese Methode kann Ihnen dabei helfen, die Hauptursache in einem einzelnen Modul zu isolieren.
 
 ## Zeiteinsparungen
@@ -177,7 +177,7 @@ Wenn Sie ein Problem zu lange betrachten, kann es schwierig sein, eine Lösung z
 
 ## Instrumente
 
-Die n98 magerun CLI Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) bietet nützliche Funktionen für die Arbeit mit Adobe Commerce über die Befehlszeile. Insbesondere diese Befehle:
+Die n98 magerun CLI Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) bieten nützliche Funktionen für die Arbeit mit Adobe Commerce über die Befehlszeile. Insbesondere diese Befehle:
 
 ```bash
 n98-magerun2.phar dev:console
@@ -191,7 +191,7 @@ n98-magerun2.phar index:trigger:recreate
 
 Die folgenden Themen enthalten Code-Snippets, die zur Protokollierung oder Identifizierung von Problemen in Commerce-Projekten verwendet werden können.
 
-### Überprüfen, ob eine XML-Datei von Commerce verwendet wird
+### Überprüfen, ob Commerce eine XML-Datei verwendet
 
 Fügen Sie einen offensichtlichen Syntaxfehler in eine XML-Datei ein, um zu sehen, ob sie verwendet wird. Öffnen Sie ein Tag und schließen Sie es beispielsweise nicht:
 

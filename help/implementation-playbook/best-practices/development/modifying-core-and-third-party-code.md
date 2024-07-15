@@ -4,7 +4,8 @@ description: Erfahren Sie, wie und wann Adobe Commerce und PHP-Code von Drittanb
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
-source-git-commit: ab02552939d595627f0de83b8508c7cd21777642
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
+source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -46,7 +47,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### Was kann mit einem Patch geändert werden?
 
-Alles. Jedes Zeichen in einer Zieldatei kann wörtlich geändert werden. Patches sind nicht auf einen bestimmten Dateityp oder eine bestimmte Codesprache beschränkt. Normalerweise würden Sie einen Patch verwenden, um Dateien innerhalb der `vendor` Verzeichnis. 
+Alles. Jedes Zeichen in einer Zieldatei kann wörtlich geändert werden. Patches sind nicht auf einen bestimmten Dateityp oder eine bestimmte Codesprache beschränkt. Normalerweise würden Sie einen Patch verwenden, um Dateien im Verzeichnis `vendor` als Ziel festzulegen. 
 
 #### Verwendung eines Pflasters
 
@@ -69,7 +70,7 @@ Es sollte beachtet werden, dass (in der Regel) die neue PHP-Klasse, die die ursp
 
 #### Präferenz deklarieren
 
-Es ist ein ziemlich einfacher Prozess, eine Präferenz zu deklarieren. Eine einzelne Codezeile muss zu einem `di.xml` -Datei in einem -Modul. Dies kann global oder innerhalb eines beliebigen Adobe Commerce-&quot;Bereichs&quot;erfolgen, z. B. `frontend`, `adminhtml`, `graphql`, `webapi_rest`, und `crontab`.
+Es ist ein ziemlich einfacher Prozess, eine Präferenz zu deklarieren. Eine einzelne Codezeile muss einer `di.xml` -Datei innerhalb eines Moduls hinzugefügt werden. Dies kann global oder innerhalb eines beliebigen Adobe Commerce-&quot;Bereichs&quot;wie `frontend`, `adminhtml`, `graphql`, `webapi_rest` und `crontab` erfolgen.
 
 ```xml
 <preference for="Magento\Elasticsearch7\SearchAdapter\Adapter" type="Vendor\Namespace\Adapter\AlgoliaElasticSearch7Adapter"/>
@@ -105,11 +106,11 @@ Voreinstellungen sind eine gute Möglichkeit, Code zu ändern. Sie sollten nur v
 
 Ein Beobachter ist das Konzept eines Ereignis-Listeners, das in vielen Anwendungen, Plattformen, Bibliotheken und Programmiersprachen vorkommt. Das Konzept ist nicht auf die Adobe Commerce-Plattform beschränkt. Beobachter sind seit Magento 1 in die Plattform gebacken und gelten als Hauptauswahl für die Änderung von Kerncode und Drittanbietercode. 
 
-Die Core-Codebase und alle Module von Drittanbietern können ein Ereignis an einer bestimmten Stelle im Code senden. Der Beobachter, der in einem `events.xml` -Datei und überwacht nach Namen das gesendete Ereignis, kann auf globaler Ebene funktionieren oder auf einen beliebigen Adobe Commerce-&quot;Bereich&quot;beschränkt sein, z. B. `frontend`, `adminhtml`, `graphql`, `webapi_rest`, und `crontab`.
+Die Core-Codebase und alle Module von Drittanbietern können ein Ereignis an einer bestimmten Stelle im Code senden. Der Beobachter, der in einer `events.xml` -Datei deklariert wird und nach Namen auf das gesendete Ereignis wartet, kann auf globaler Ebene funktionieren oder auf ein beliebiges Adobe Commerce-&quot;Gebiet&quot;beschränkt sein, z. B. `frontend`, `adminhtml`, `graphql`, `webapi_rest` und `crontab`.
 
 #### Deklarieren eines Beobachters
 
-Beobachter können in einer globalen oder gebietsspezifischen `events.xml` -Datei.
+Beobachter können in einer globalen oder gebietsspezifischen `events.xml` -Datei konfiguriert werden.
 
 ```xml
     <event name="sales_model_service_quote_submit_before">
@@ -164,11 +165,11 @@ Ein weiterer begrenzender Faktor für Beobachter ist, dass das gesendete Ereigni
 
 ### Plugin
 
-Ein Plug-in ist ein flexibles Konzept, das auf der Adobe Commerce-Plattform eingeführt wurde. Es ermöglicht Ihnen, alle öffentlichen PHP-Methoden zu erfassen, zu ersetzen und zu ändern. Mithilfe von Plug-ins können Sie die Argumente ändern, die in einer Methode vor der Ausführung der Targeting-Methode eingegeben werden, das Ergebnis nach der Ausführung der Targeting-Methode ändern oder die Targeting-Methode vollständig ersetzen. Sie können viele Methoden einer zielgerichteten PHP-Klasse in einer einzelnen Plug-in-Datei ändern. Außerdem können Sie die `$subject` -Argument, um alle öffentlichen Methoden auszuführen, die in der Ziel-PHP-Klasse vorhanden sind.
+Ein Plug-in ist ein flexibles Konzept, das auf der Adobe Commerce-Plattform eingeführt wurde. Es ermöglicht Ihnen, alle öffentlichen PHP-Methoden zu erfassen, zu ersetzen und zu ändern. Mithilfe von Plug-ins können Sie die Argumente ändern, die in einer Methode vor der Ausführung der Targeting-Methode eingegeben werden, das Ergebnis nach der Ausführung der Targeting-Methode ändern oder die Targeting-Methode vollständig ersetzen. Sie können viele Methoden einer zielgerichteten PHP-Klasse in einer einzelnen Plug-in-Datei ändern. Außerdem können Sie das `$subject`-Argument verwenden, um alle öffentlichen Methoden auszuführen, die in der Ziel-PHP-Klasse vorhanden sind.
 
 #### Deklarieren eines Plug-ins
 
-Plug-ins können in einem globalen oder gebietsspezifischen `di.xml` -Datei.
+Plug-ins können in einer globalen oder gebietsspezifischen `di.xml` -Datei konfiguriert werden.
 
 ```xml
     <type name="Magento\Catalog\Api\CategoryRepositoryInterface">

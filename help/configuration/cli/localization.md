@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Spr
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit Commerce-Übersetzungen können Sie Ihren Store für mehrere Regionen und Märkte anpassen und lokalisieren, indem Sie Folgendes generieren:
+Commerce-Übersetzungen ermöglichen es Ihnen, Ihren Store für mehrere Regionen und Märkte anzupassen und zu lokalisieren, indem Sie Folgendes generieren:
 
-- **Übersetzungswörterbücher**, die eine praktische Methode zur Anpassung oder Übersetzung darstellen _some_ Wörter und Ausdrücke, z. B. für ein benutzerdefiniertes Modul oder Design.
-- **Sprachpakete** , mit denen Sie übersetzen können _alle_ Wörter und Ausdrücke in der Commerce-Anwendung.
+- **Übersetzungswörterbücher**, die eine praktische Methode zum Anpassen oder Übersetzen von _einigen_ Wörtern und Ausdrücken sind, z. B. für ein benutzerdefiniertes Modul oder Design.
+- **Sprachpakete** , mit denen Sie _beliebige oder alle_ Wörter und Ausdrücke in der Commerce-Anwendung übersetzen können.
 
 Siehe [Übersetzungen - Übersicht].
 
 ## Übersetzungswörterbuch erstellen
 
-Sie können eine [Übersetzungswörterbuch] um vorhandene Zeichenfolgen anzupassen, Wörter und Ausdrücke in einem benutzerdefinierten Modul zu übersetzen, ein Design zu lokalisieren oder Sprachpakete zu erstellen.
+Sie können ein [Übersetzungswörterbuch] generieren, um vorhandene Zeichenfolgen anzupassen, Wörter und Ausdrücke in einem benutzerdefinierten Modul zu übersetzen, ein Design zu lokalisieren oder Sprachpakete zu erstellen.
 
 Um mit der Übersetzung zu beginnen, verwenden Sie einen Befehl, um eine Wörterbuch-CSV-Datei mit einer Liste aller vorhandenen Ausdrücke und Wörter zu generieren.
 
@@ -35,7 +35,7 @@ So generieren Sie das Wörterbuch und beginnen die Übersetzung:
 
 1. Sie können die Übersetzungswörterbücher in ein Sprachpaket verpacken und das Paket dem Commerce Store-Administrator bereitstellen.
 
-1. Der Store-Administrator im Admin [Konfiguration der Übersetzungen].
+1. Im Admin konfiguriert der Store-Administrator [die Übersetzungen].
 
 Befehlsoptionen:
 
@@ -47,13 +47,13 @@ In der folgenden Tabelle werden Parameter und Werte erläutert:
 
 | Parameter | Wert | Erforderlich? |
 |--- |--- |--- |
-| `<path to directory to translate>` | Pfad zu einem Verzeichnis mit übersetzbarem Code, also PHP-, PHTML- oder XML-Dateien, die zu übersetzende Phrasen enthalten.<br><br>Das Tool sucht nach dem Pfad, den Sie eingeben, und durchsucht alle darin enthaltenen Dateien und Unterverzeichnisse.<br><br>Verwenden Sie diesen Parameter nicht, wenn Sie `-m --magento`. | Ja (Wörterbücher), nein (Pakete). |
-| `-m --magento` | Erforderlich zum Erstellen eines Sprachpakets aus diesem Übersetzungswörterbuch. Durchsucht bei Verwendung die Verzeichnisse, die bin/magento enthalten. Mit dieser Option werden Designs oder Module zu jeder Zeile im Wörterbuch hinzugefügt.<br><br>Ein Beispiel:<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | Nein |
+| `<path to directory to translate>` | Pfad zu einem Verzeichnis mit übersetzbarem Code, also PHP-, PHTML- oder XML-Dateien, die zu übersetzende Phrasen enthalten.<br><br>Das Tool beginnt mit der Suche nach dem Pfad, den Sie eingeben, und durchsucht alle darin enthaltenen Dateien und Unterverzeichnisse.<br><br>Verwenden Sie diesen Parameter nicht, wenn Sie `-m --magento` verwenden. | Ja (Wörterbücher), nein (Pakete). |
+| `-m --magento` | Erforderlich zum Erstellen eines Sprachpakets aus diesem Übersetzungswörterbuch. Durchsucht bei Verwendung die Verzeichnisse, die bin/magento enthalten. Mit dieser Option werden Designs oder Module zu jeder Zeile im Wörterbuch hinzugefügt.<br><br>Ein Beispiel folgt:<br><br>&quot;No Items Found&quot;,&quot;No Items Found&quot;,module,Magento_Wishlist | Nein |
 | `-o --output="<path>"` | Gibt den absoluten Dateisystempfad und Dateinamen der zu erstellenden CSV-Datei des Übersetzungswörterbuchs an. Beim eingegebenen Wert wird zwischen Groß- und Kleinschreibung unterschieden. Der Name der CSV-Datei muss genau mit dem Gebietsschema-Namen übereinstimmen, einschließlich der Groß-/Kleinschreibung der Zeichen.<br><br>Wenn Sie diesen Parameter weglassen, wird die Ausgabe zum &quot;stdout&quot;weitergeleitet. | Nein |
 
 >[!INFO]
 >
->Um ein Sprachpaket aus einem Übersetzungswörterbuch zu erstellen, _must_ die `-m|--magento` -Option.
+>Um ein Sprachpaket aus einem Übersetzungswörterbuch zu erstellen, müssen Sie _1} die Option `-m|--magento` verwenden._
 
 ### Übersetzungsrichtlinien
 
@@ -63,7 +63,7 @@ Beachten Sie beim Übersetzen von Wörtern und Ausdrücken die folgenden Richtli
 - Verwenden Sie beim Erstellen von Wörterbüchern für Gebietsschemata die standardmäßigen Commerce-Zeichenfolgen.
 - Achten Sie beim Übersetzen auf Platzhalter: `%1`, `%2`
 
-Commerce verwendet die Platzhalter zum Einfügen von Kontextwerten. Sie sind _not_ wird für Übersetzungen verwendet. Beispiel:
+Commerce verwendet die Platzhalter zum Einfügen von Kontextwerten. Sie werden für Übersetzungen _nicht_ verwendet. Beispiel:
 
 ```text
 Product '%1' has been added to shopping cart.
@@ -75,7 +75,7 @@ Füllt mit einem Wert:
 Product 'Multimeter-2000' has been added to shopping cart.
 ```
 
-Der resultierende Satz muss mindestens einen von jedem Platzhalter enthalten. Angenommen, es gibt Platzhalter von `%1` nach `%3` im ursprünglichen Satz. Die Übersetzung kann beliebig viele dieser Platzhalter enthalten, es muss jedoch mindestens ein Vorkommen von `%1`, `%2`, und `%3`. Die Übersetzung darf keine Platzhalterwerte enthalten, die nicht im ursprünglichen Wert vorhanden sind (z. B. `%4`, `%5`usw.).
+Der resultierende Satz muss mindestens einen von jedem Platzhalter enthalten. Angenommen, der ursprüngliche Satz enthält Platzhalter von `%1` bis `%3`. Die Übersetzung kann so viele dieser Platzhalter in beliebiger Reihenfolge enthalten, aber es muss mindestens ein Vorkommen von `%1`, `%2` und `%3` vorhanden sein. Die Übersetzung darf keine Platzhalterwerte enthalten, die nicht im ursprünglichen Wert vorhanden sind (z. B. `%4`, `%5` usw.).
 
 Beispiel für die Übersetzung einer Wortgruppe:
 
@@ -85,13 +85,13 @@ Beispiel für die Übersetzung einer Wortgruppe:
 
 ## Sprachpaket erstellen
 
-Im Gegensatz zu einem Übersetzungswörterbuch können Sie beliebige oder alle Wörter und Ausdrücke in der Commerce-Anwendung mithilfe eines Sprachpakets übersetzen. Sie können eine bestimmte Komponente - wie ein Modul oder ein Design - mithilfe eines Übersetzungswörterbuchs übersetzen. [Weitere Informationen zu Sprachpaketen].
+Im Gegensatz zu einem Übersetzungswörterbuch können Sie beliebige oder alle Wörter und Ausdrücke in der Commerce-Anwendung mithilfe eines Sprachpakets übersetzen. Sie können eine bestimmte Komponente - wie ein Modul oder ein Design - mithilfe eines Übersetzungswörterbuchs übersetzen. [Erfahren Sie mehr über Sprachpakete].
 
 In diesem Abschnitt wird beschrieben, wie Sie ein Sprachpaket erstellen, das CSV-Dateien in Module und Designs schreibt. Um ein Sprachpaket zu erstellen, müssen Sie die in den folgenden Abschnitten beschriebenen Aufgaben ausführen:
 
-1. [Wörter und Ausdrücke sammeln und übersetzen](#generate-a-translation-dictionary). (Die `--magento` -Parameter erforderlich ist.)
-1. [Ausführen des Sprachpakets, Befehl](#run-the-language-package-command).
-1. [Erstellen von Ordnern und Dateien](#create-directories-and-files).
+1. [Sammeln und übersetzen Sie Wörter und Ausdrücke](#generate-a-translation-dictionary). (Der Parameter `--magento` ist erforderlich.)
+1. [Führen Sie den Sprachpaketbefehl aus](#run-the-language-package-command).
+1. [Erstellen Sie Verzeichnisse und Dateien](#create-directories-and-files).
 1. (Optional.) [Mehrere Pakete für eine Sprache konfigurieren](#configure-multiple-packages-for-a-language).
 
 ### Ausführen des Sprachpakets, Befehl
@@ -106,8 +106,8 @@ In der folgenden Tabelle werden die Parameter und Werte für den Sprachpaket-Bef
 
 | Parameter | Wert | Erforderlich? |
 |--- |--- |--- |
-| `<source>` | Absoluter Dateisystempfad und Dateiname einer CSV-Datei, die das kombinierte Übersetzungswörterbuch und die für die Aufschlüsselung in ein Sprachpaket erforderlichen Metainformationen enthält.<br><br>Verwendung [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) , um die CSV-Datei zu erstellen, und erstellen Sie dann das Sprachpaket, wie hier beschrieben: [Erstellen von Ordnern und Dateien](#m2devgde-xlate-files). | Ja |
-| `<locale>` | [ISO 639-1] (Sprache) und [ISO 3166] (country) Die Kennung der Sprache, die als Dateiname für alle resultierenden CSV-Dateien verwendet wird. Beispiele: `de_DE`, `pt_PT`, `pt_BR`. | Ja |
+| `<source>` | Absoluter Dateisystempfad und Dateiname einer CSV-Datei, die das kombinierte Übersetzungswörterbuch und die für die Aufschlüsselung in ein Sprachpaket erforderlichen Metainformationen enthält.<br><br>Verwenden Sie [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict), um die CSV-Datei zu erstellen, und erstellen Sie dann das Sprachpaket, wie in [Erstellen von Verzeichnissen und Dateien](#m2devgde-xlate-files) beschrieben. | Ja |
+| `<locale>` | [ISO 639-1] (Sprache) und [ISO 3166] (Land) Die Kennung der Sprache, die als Dateiname für alle resultierenden CSV-Dateien verwendet wird. Beispiele: `de_DE`, `pt_PT`, `pt_BR`. | Ja |
 | `-m --mode` | Wenn eine Zieldatei vorhanden ist, gibt an, ob das vorhandene Sprachpaket ersetzt oder mit dem neuen Sprachpaket zusammengeführt werden soll. Die Zusammenführung überschreibt alle vorhandenen Ausdrücke und fügt neue hinzu.<br><br>Werte: Zusammenführen oder Ersetzen (Standard). | Nein |
 | `-d --allow-duplicates` | Fügen Sie diese Option hinzu, um Duplikate in das Sprachpaket zuzulassen. Andernfalls schlägt der Befehl mit einem Fehler fehl, wenn in mehreren Einträgen mit unterschiedlichen Übersetzungen dieselbe Wortgruppe vorkommt. | Nein |
 
@@ -117,7 +117,7 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 - Erforderliche Lizenzdateien
 - `composer.json`
-- `registration.php` dass [Register] das Sprachpaket
+- `registration.php` dass [das Sprachpaket ] registriert
 - [`language.xml`](#language-package-languagexml) Meta-Informationsdatei
 
 >[!INFO]
@@ -126,20 +126,20 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 So erstellen Sie diese Dateien:
 
-1. Erstellen eines Ordners unter `app/i18n`.
+1. Erstellen Sie ein Verzeichnis unter &quot;`app/i18n`&quot;.
 
-   Beispielsweise befinden sich Commerce-Sprachpakete unter `app/i18n/magento`
+   Beispielsweise befinden sich Sprachpakete für Commerce in `app/i18n/magento`
 
 1. Fügen Sie erforderliche Lizenzdateien hinzu.
-1. Hinzufügen [`composer.json`] , der Abhängigkeiten für Ihr Sprachpaket angibt.
-1. Registrieren Sie das Sprachpaket mit [`registration.php`]
-1. Hinzufügen `language.xml` Metainformationsdatei, wie im nächsten Abschnitt beschrieben.
+1. Fügen Sie [`composer.json`] hinzu, der Abhängigkeiten für Ihr Sprachpaket angibt.
+1. Registrieren Sie das Sprachpaket mit [`registration.php`] .
+1. Fügen Sie die Meta-Informationsdatei `language.xml` hinzu, wie im nächsten Abschnitt beschrieben.
 
 #### Sprachpaket language.xml
 
-Wenn Sie ein Sprachpaket im `language.xml` Konfigurationsdatei, müssen Sie die Reihenfolge der Sprachvererbung für dieses Paket angeben.
+Wenn Sie ein Sprachpaket in der Konfigurationsdatei `language.xml` deklarieren, müssen Sie die Sequenz der Sprachvererbung für dieses Paket angeben.
 
-Durch die Sprachvererbung können Sie eine Übersetzung erstellen, die als _child_ basierend auf einer vorhandenen Übersetzung, die als _parent_. Die untergeordneten Übersetzungen überschreiben die übergeordnete. Wenn die untergeordnete Übersetzung jedoch nicht hochgeladen oder angezeigt werden kann oder eine Wortgruppe oder ein Wort fehlt, verwendet Commerce das übergeordnete Gebietsschema. [Beispiele für die Vererbung von Sprachpaketen](#example-of-language-inheritance).
+Durch die Sprachvererbung können Sie eine Übersetzung mit dem Namen _child_ erstellen, die auf einer vorhandenen Übersetzung namens _parent_ basiert. Die untergeordneten Übersetzungen überschreiben die übergeordnete. Wenn die untergeordnete Übersetzung jedoch nicht hochgeladen oder angezeigt werden kann oder eine Wortgruppe oder ein Wort fehlt, verwendet Commerce das übergeordnete Gebietsschema. [Beispiele für die Vererbung von Sprachpaketen](#example-of-language-inheritance).
 
 Geben Sie die folgenden Informationen an, um ein Package zu deklarieren:
 
@@ -156,11 +156,11 @@ Geben Sie die folgenden Informationen an, um ein Package zu deklarieren:
 
 Dabei gilt:
 
-- `code`—Gebietsschema des Sprachpakets (erforderlich)
-- `vendor`—Name des Anbieters des Moduls (erforderlich)
+- `code` - Gebietsschema des Sprachpakets (erforderlich)
+- `vendor`—Name des Moduls (erforderlich)
 - `package`—Name des Sprachpakets (erforderlich)
-- `sort_order`—Priorität beim Hochladen eines Pakets, wenn mehrere Sprachpakete für einen Store verfügbar sind
-- `use`—Übergeordnetes Sprachpaket-Gebietsschema, aus dem Wörterbücher übernommen werden sollen
+- `sort_order` - Priorität beim Hochladen eines Pakets, wenn mehrere Sprachpakete für einen Store verfügbar sind
+- `use` - Gebietsschema des übergeordneten Sprachpakets, von dem Wörterbücher übernommen werden sollen
 
 Bei Bedarf können Sie mehrere übergeordnete Pakete angeben. Die übergeordneten Pakete werden auf der ersten aufgelisteten, zuerst verwendeten Basis angewendet.
 
@@ -168,7 +168,7 @@ Bei Bedarf können Sie mehrere übergeordnete Pakete angeben. Die übergeordnete
 
 Angenommen, ein Sprachpaket erbt von zwei anderen Paketen, und diese Pakete haben auch übergeordnete und &quot;übergeordnete&quot;Pakete.
 
-Wenn ein Sprachpaket von zwei Paketen erbt, wird es `language.xml` könnte wie folgt aussehen:
+Wenn ein Sprachpaket von zwei Paketen erbt, könnte sein `language.xml` wie folgt aussehen:
 
 ```xml
 <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
@@ -183,10 +183,10 @@ Wenn ein Sprachpaket von zwei Paketen erbt, wird es `language.xml` könnte wie f
 
 Im obigen Beispiel:
 
-- `language_package_one` von `en_au_package` und `en_au_package` von `en_ie_package`
-- `language_package_two` von `en_ca_package` und `en_ca_package` von `en_us_package`
+- `language_package_one` erbt von `en_au_package` und `en_au_package` erbt von `en_ie_package`
+- `language_package_two` erbt von `en_ca_package` und `en_ca_package` erbt von `en_us_package`
 
-Wenn die Commerce-Anwendung das Wort oder die Wortgruppe nicht im `en_GB` -Paket, sieht es in anderen Paketen in der folgenden Sequenz aus:
+Wenn die Commerce-Anwendung im Paket `en_GB` kein Wort oder keine Wortgruppe finden kann, werden andere Pakete in der folgenden Reihenfolge angezeigt:
 
 1. `parent-package-one/language_package_one`
 1. `<vendorname>/en_au_package`
@@ -195,13 +195,13 @@ Wenn die Commerce-Anwendung das Wort oder die Wortgruppe nicht im `en_GB` -Paket
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-Das Angeben aller Vererbungen zwischen den Sprachpaketen kann zur Erstellung zirkulärer Vererbungsketten führen. Verwendung [Magento\Test\Integrity\App\Language\CircularDependencyTest] testen, um solche Ketten zu finden und zu beheben.
+Das Angeben aller Vererbungen zwischen den Sprachpaketen kann zur Erstellung zirkulärer Vererbungsketten führen. Verwenden Sie den Test [Magento\Test\Integrity\App\Language\CircularDependencyTest] , um solche Ketten zu finden und zu reparieren.
 
 ### Mehrere Pakete für eine Sprache konfigurieren
 
 Um Ihren Speicher flexibler zu gestalten, können Sie mehrere Sprachpakete für dieselbe Sprache in Ihren Speicher hochladen. So können Sie verschiedene benutzerdefinierte Pakete für verschiedene Teile Ihres Geschäfts verwenden, da das System ein einzelnes Paket aus allen Paketen zusammenstellt, die für eine Sprache verfügbar sind.
 
-Um ein zusätzliches Paket für eine vorhandene Sprache zu aktivieren, geben Sie dem neuen Paket einen beliebigen Namen außer einem vorhandenen Sprachcode-Namen (um Verwirrung zu vermeiden). Festlegen von Konfigurationen eines Pakets im Sprachpaket `language.xml` Metainformationsdatei, wie im nächsten Abschnitt beschrieben.
+Um ein zusätzliches Paket für eine vorhandene Sprache zu aktivieren, geben Sie dem neuen Paket einen beliebigen Namen außer einem vorhandenen Sprachcode-Namen (um Verwirrung zu vermeiden). Geben Sie Konfigurationen eines Pakets in der Meta-Information-Datei `language.xml` des Sprachpakets an, wie im nächsten Abschnitt beschrieben.
 
 ## Beispiele für die Verwendung von Übersetzungsbefehlen
 
@@ -219,14 +219,14 @@ So fügen Sie eine deutsche Übersetzung zu einem Modul oder Thema hinzu, das Si
 
    >[!INFO]
    >
-   >Der CSV-Dateiname muss _exakte Übereinstimmung_ das Gebietsschema, einschließlich der Groß-/Kleinschreibung der Zeichen.
+   >Der CSV-Dateiname muss _genau mit_ dem Gebietsschema übereinstimmen, einschließlich der Groß-/Kleinschreibung der Zeichen.
 
-1. Übersetzen Sie die Wörter und Ausdrücke mithilfe von [diese Leitlinien](#translation-guidelines).
-1. Falls erforderlich, kopieren Sie `xx_YY.csv` nach `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` oder in das Designverzeichnis des Moduls (je nachdem, ob das Übersetzungswörterbuch für ein Modul oder ein Design gilt).
+1. Übersetzen Sie die Wörter und Ausdrücke mit [diesen Richtlinien](#translation-guidelines).
+1. Kopieren Sie bei Bedarf `xx_YY.csv` in `/var/www/html/magento2/app/code/ExampleCorp/SampleModule/i18n` oder in das Designverzeichnis des Moduls (je nachdem, ob das Übersetzungswörterbuch für ein Modul oder ein Design gilt).
 
 ### Beispiel: Sprachpaket erstellen
 
-Generieren Sie wie im vorherigen Beispiel eine CSV-Datei, geben Sie jedoch anstatt eines Modul- oder Designverzeichnisses den gesamten Stammordner der Commerce-Anwendung an. Die resultierende CSV-Datei enthält alle Ausdrücke, die der Befehl im Code finden könnte.
+Generieren Sie wie im vorherigen Beispiel eine CSV-Datei, geben Sie jedoch nicht das Modul- oder Designverzeichnis an, sondern geben Sie den gesamten Stammordner für die Commerce-Anwendung an. Die resultierende CSV-Datei enthält alle Ausdrücke, die der Befehl im Code finden könnte.
 
 1. Sammeln Sie Ausdrücke aus Ihrem Modul:
 
@@ -236,9 +236,9 @@ Generieren Sie wie im vorherigen Beispiel eine CSV-Datei, geben Sie jedoch ansta
 
    >[!INFO]
    >
-   >Der CSV-Dateiname muss _exakte Übereinstimmung_ das Gebietsschema, einschließlich der Groß-/Kleinschreibung der Zeichen.
+   >Der CSV-Dateiname muss _genau mit_ dem Gebietsschema übereinstimmen, einschließlich der Groß-/Kleinschreibung der Zeichen.
 
-1. Übersetzen Sie die Wörter und Ausdrücke mithilfe von [diese Leitlinien](#translation-guidelines).
+1. Übersetzen Sie die Wörter und Ausdrücke mit [diesen Richtlinien](#translation-guidelines).
 1. Erstellen Sie das Sprachpaket.
 
    ```bash

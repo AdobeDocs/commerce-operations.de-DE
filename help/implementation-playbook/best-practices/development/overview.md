@@ -26,7 +26,7 @@ Die Entwicklungsphase umfasst die folgenden Aktivitäten:
 
 >[!TIP]
 >
->Siehe [Allgemeine Best Practices](general.md) für Empfehlungen auf hoher Ebene zur Gesamtverwaltung des Entwicklungsprozesses.
+>Unter [Allgemeine Best Practices](general.md) finden Sie allgemeine Empfehlungen zur Gesamtverwaltung des Entwicklungsprozesses.
 
 Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entwicklungsphase.
 
@@ -34,7 +34,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Codeüberprüfung](code-review.md) | Empfohlener Validierungsprozess, um sicherzustellen, dass die implementierte Funktionalität die Anforderungen erfüllt |
+| [Code-Überprüfung](code-review.md) | Empfohlener Validierungsprozess, um sicherzustellen, dass die implementierte Funktionalität die Anforderungen erfüllt |
 | [Composer vs. Git](code-management.md) | Bestimmen Sie, wie Sie benutzerdefinierten Code unter Berücksichtigung der Versionsverwaltung, der Code-Komplexität und der Abhängigkeitsverwaltung verteilen. |
 | [Verzweigungsstrategie](git-branching.md) | Quellcode in Git-Repositorys verwalten |
 
@@ -42,7 +42,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds und Bereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsschritte von Adobe Commerce in Cloud-Infrastrukturprojekten |
+| [Builds und deployment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsschritte von Adobe Commerce in Cloud-Infrastrukturprojekten |
 | Debugging | Systematisches und effektives Debugging des Adobe Commerce-Frameworks |
 | [Statische Inhaltsbereitstellung](static-content-deployment.md) | Vermeiden Sie Probleme mit statischem Inhalt, der nicht auf Ihrer Storefront angezeigt wird. |
 | [Fehlerbehebung](troubleshooting.md) | Beheben häufiger Probleme bei der Implementierung von Adobe Commerce |
@@ -57,7 +57,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Größe des Katalogbilds ändern](catalog-image-resizing.md) | Bietet Anleitungen zur Größenanpassung von Bildern, bevor ein Store in die Produktion aufgenommen wird, um eine optimale Leistung zu gewährleisten |
+| [Größe des Katalogbilds](catalog-image-resizing.md) | Bietet Anleitungen zur Größenanpassung von Bildern, bevor ein Store in die Produktion aufgenommen wird, um eine optimale Leistung zu gewährleisten |
 | [CSS und JS](optimize-css-js-files.md) | Zusammenführen und Minimieren von Cascading Style Sheets (CSS)- und JavaScript (JS)-Dateien aus dem Admin oder der Befehlszeile |
 | [Bilder](image-optimization.md) | Optimieren von Bildern und Verwenden Sie Fastly zur Optimierung der Reaktionszeit. |
 
@@ -65,7 +65,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Designentwicklung](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Beschreibt Entwicklungsmuster, um die Kompatibilität zwischen Ihrem Design, zukünftigen Versionen von Adobe Commerce und benutzerdefinierten Erweiterungen sicherzustellen |
+| [Design-Entwicklung](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Beschreibt Entwicklungsmuster, um die Kompatibilität zwischen Ihrem Design, zukünftigen Versionen von Adobe Commerce und benutzerdefinierten Erweiterungen sicherzustellen |
 
 ## PHP-Entwicklung
 

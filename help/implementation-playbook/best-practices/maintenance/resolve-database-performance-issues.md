@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,17 @@ Bestimmen Sie, ob MySQL-Abfragen langsam ausgeführt werden. Je nach Adobe Comme
 
 Sie können MySQL verwenden, um langwierige Abfragen in Adobe Commerce in Cloud-Infrastrukturprojekten zu identifizieren und zu beheben.
 
-1. Führen Sie die [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) -Anweisung.
-1. Wenn langwierige Abfragen angezeigt werden, führen Sie [MySQL `EXPLAIN` und `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) für jeden dieser Profile, um herauszufinden, was die Abfrage über einen langen Zeitraum ausführt.
+1. Führen Sie die Anweisung [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) aus.
+1. Wenn Sie lange laufende Abfragen sehen, führen Sie [MySQL `EXPLAIN` und `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) für jede dieser Abfragen aus, um herauszufinden, was die Abfrage über einen langen Zeitraum ausführt.
 1. Führen Sie je nach den gefundenen Problemen Schritte aus, um die Abfrage zu korrigieren, damit sie schneller ausgeführt werden kann.
 
 ### Abfragen mit dem Percona Toolkit analysieren (nur für Pro-Architektur)
 
 Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie die Abfragen mit dem Percona Toolkit analysieren.
 
-1. Führen Sie die `pt-query-digest --type=slowlog` -Befehl für langsame MySQL-Abfrageprotokolle.
+1. Führen Sie den Befehl `pt-query-digest --type=slowlog` für langsame MySQL-Abfrageprotokolle aus.
    * Informationen zum Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) in unserer Entwicklerdokumentation.
-   * Siehe [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) Dokumentation.
+   * Weitere Informationen finden Sie in der Dokumentation zu [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. Führen Sie je nach den gefundenen Problemen Schritte aus, um die Abfrage zu korrigieren, damit sie schneller ausgeführt werden kann.
 
 ## Überprüfen, ob alle Tabellen über einen Primärschlüssel verfügen
@@ -58,15 +58,15 @@ Vermeiden Sie diese Probleme, indem Sie einen Primärschlüssel für Tabellen de
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. Fügen Sie für jede Tabelle, in der ein Primärschlüssel fehlt, einen Primärschlüssel hinzu, indem Sie die `db_schema.xml` (das deklarative Schema) mit einem Knoten ähnlich dem folgenden:
+1. Fügen Sie für jede Tabelle, in der ein Primärschlüssel fehlt, einen Primärschlüssel hinzu, indem Sie das `db_schema.xml` (das deklarative Schema) mit einem Knoten aktualisieren, der dem folgenden ähnelt:
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
    ```
 
-   Wenn Sie den Knoten hinzufügen, ersetzen Sie die `referenceID` und `column name` Variablen mit Ihren benutzerdefinierten Werten.
+   Wenn Sie den Knoten hinzufügen, ersetzen Sie die Variablen `referenceID` und `column name` durch Ihre benutzerdefinierten Werte.
 
-Weitere Informationen finden Sie unter [Deklaratives Schema konfigurieren](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie unter [Konfigurieren des deklarativen Schemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in unserer Entwicklerdokumentation.
 
 ## Identifizieren und Entfernen doppelter Indizes
 
@@ -82,16 +82,16 @@ SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONC
 
 Die Abfrage gibt die Spaltennamen und die Namen aller doppelten Indizes zurück.
 
-Pro Architecture-Händler können die Prüfung auch mit dem Percona Toolkit ausführen  `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` Befehl.
+Pro Architecture-Händler können die Prüfung auch mit dem Befehl Percona Toolkit `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` ausführen.
 
 ### Duplizierte Indizes entfernen
 
-SQL verwenden [DROP INDEX-Anweisung](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) , um doppelte Indizes zu entfernen.
+Verwenden Sie die SQL [DROP INDEX Statement](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) , um doppelte Indizes zu entfernen.
 
 ```SQL
 DROP INDEX
 ```
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
 [Best Practices für die Datenbankkonfiguration für Cloud-Bereitstellungen](../planning/database-on-cloud.md)

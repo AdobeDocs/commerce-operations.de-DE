@@ -28,13 +28,13 @@ Dieser Ansatz umfasst die folgenden Schritte:
 
 - Scrum-Team-Rollouts für Marken- und Commerce-Sites
 
-![Beispiel für einen Planungsansatz](../../assets/playbooks/planning-model.svg)
+![Beispiel für ein Planungsmodell](../../assets/playbooks/planning-model.svg)
 
 Das Hybridmodell ermöglicht es Ihnen, die Leistungsfähigkeit der Agile-Methodik zu nutzen und dabei Zeitpläne, Kosten und Qualität im Auge zu behalten. Der gesamte Plan ist in zwei verschiedene Phasen unterteilt, gefolgt von Start-, Optimierungs- und Wartungsaktivitäten.
 
-- **Richtige Idee**- Dies ist eine Phase vor der Implementierung, um sicherzustellen, dass die Anforderungen, das Design und die Technologielösung strategisch konzipiert, dokumentiert und von allen Interessengruppen gemeinsam genutzt werden. Der Rückstand bei der Implementierung wird vergrößert und aufgebaut, es werden Entwicklungssperioden geplant und eine sequenzielle Strategie zum Aufbau des Produkts abgeschlossen.
+- **Richtige Idee erhalten** - Dies ist eine Phase vor der Implementierung, in der sichergestellt wird, dass die Anforderungen, das Design und die Technologielösung strategisch konzipiert, dokumentiert und von allen Interessenträgern gemeinsam genutzt werden. Der Rückstand bei der Implementierung wird vergrößert und aufgebaut, es werden Entwicklungssperioden geplant und eine sequenzielle Strategie zum Aufbau des Produkts abgeschlossen.
 
-- **Die Idee richtig machen**- Dies ist die Implementierungsphase, in der das Produkt iterativ erstellt, gründlich getestet und entsprechend freigegeben wird. Der erste Schritt besteht darin, den Code durch mehrere Sprints zu entwickeln. Jeder Sprint enthält die Entwicklung und Prüfung im Sprint, gefolgt von Prüfungen der Systemintegration, Leistungs- und Sicherheitstests, Anwenderakzeptanztests und Freigabetätigkeiten.
+- **Die Idee richtig stellen** - Dies ist die Implementierungsphase, um das Produkt iterativ zu erstellen, gründlich zu testen und entsprechend zu veröffentlichen. Der erste Schritt besteht darin, den Code durch mehrere Sprints zu entwickeln. Jeder Sprint enthält die Entwicklung und Prüfung im Sprint, gefolgt von Prüfungen der Systemintegration, Leistungs- und Sicherheitstests, Anwenderakzeptanztests und Freigabetätigkeiten.
 
 Die Projektplanung ist eine wichtige Aktivität. Er leitet die Projektbeteiligten, Teams, Sponsoren und Projektmanager bei der Überwachung, Verwaltung und Kontrolle von Projektphasen. Sie hilft auch dabei, Ziele zu identifizieren, fehlende Fristen zu vermeiden, wichtige Aufgaben zu priorisieren, Risiken zu reduzieren und die gewünschten Ergebnisse zu erzielen.
 
@@ -43,7 +43,7 @@ Der Projektplan umfasst in der Regel vier Phasen:
 - Initiierung und Planung
 - Ausführung
 - Launch
-- Nach dem Start
+- Post-Launch
 
 Jede Phase kann über mehrere kleinere Sprints durchgeführt werden, wodurch Fortschritt und Ergebnisse in kleineren Schritten und mit einem höheren Grad an Agilität verwaltet werden. Die Planung ist jedoch insofern einzigartig, als sie normalerweise Teil der anderen drei Phasen ist. Wir haben eine detaillierte Aufschlüsselung der einzelnen Phasen und ein Beispiel für einen Projektplan für eine erfolgreiche Adobe Commerce-Implementierung bereitgestellt:
 

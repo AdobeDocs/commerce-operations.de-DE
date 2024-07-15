@@ -77,7 +77,7 @@ Der im vorangehenden Diagramm beschriebene Qualitätskontrollprozess kann kurz w
   <tr>
     <td></td>
     <td></td>
-    <td>Posten von Fehlern in das Fehlerverfolgungssystem (Jira/Redmine/Trello)</td>
+    <td>Post-Fehler im Fehlerverfolgungssystem (Jira/Redmine/Trello)</td>
     <td>Priorisieren/Planen von Tests zur Anpassung an die vom PM definierte Projektplanung</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ Der im vorangehenden Diagramm beschriebene Qualitätskontrollprozess kann kurz w
 </tbody>
 </table>
 
-Ähnlich wie bei [tools](project-management-tools.md) Wir haben für den Entwicklungsprozess eine Handvoll von Auswahllösungen und Plattformen ausgewählt, die wir oft für Qualitätskontrolltests verwenden.
+Ähnlich wie bei den [Tools](project-management-tools.md), die wir für den Entwicklungsprozess identifiziert haben, haben wir eine Handvoll von Auswahllösungen und Plattformen ausgewählt, die wir oft für Qualitätskontrolltests verwenden.
 
 | Zweck | Tool |
 |---------------------------|---------------------------------------------------|

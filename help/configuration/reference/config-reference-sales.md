@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Referenz zu Speicherkonfigurationspfaden
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Vertrieb**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Verkauf** verfügbar sind.
 
-Die [`magento app:config:dump` command](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei, `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](override-config-settings.md#environment-variables). Dieses Thema _not_ Liste [sensible und systemspezifische Werte](config-reference-sens.md).
+Der Befehl [`magento app:config:dump`](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Verwenden von Umgebungsvariablen zum Außerkraftsetzen von Konfigurationseinstellungen](override-config-settings.md#environment-variables). Bei diesem Thema werden _nicht_ vertrauliche und systemspezifische Werte [ aufgelistet.](config-reference-sens.md)
 
 ## Verkaufswege
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Vertrieb**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Verkauf** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -71,7 +71,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## E-Mail-Pfade für Vertrieb
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Verkaufs-E-Mails**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **E-Mails für Verkäufe** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -144,7 +144,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Steuerpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Steuern**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Steuern** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -162,7 +162,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Grenzüberschreitenden Handel aktivieren | `tax/calculation/cross_border_trade_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardland | `tax/defaults/country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardstatus | `tax/defaults/region` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Standard-Postleitzahl | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Post-Standardcode | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anzeigen von Produktpreisen im Katalog | `tax/display/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Versandpreise anzeigen | `tax/display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Anzeigepreise | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -193,7 +193,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Checkout-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Checkout**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Checkout** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -218,7 +218,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Versandeinstellungspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Versandeinstellungen**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Versandeinstellungen** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -229,7 +229,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Mehrere Einstellungspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Multishipping-Einstellungen**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Multishipping Settings** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -240,7 +240,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Versandmethoden-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Versandmethoden**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Bereitstellungsmethoden** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -386,7 +386,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Google API-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Google-API**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Vertrieb** > **Google-API** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -412,7 +412,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Gift-Karten-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Geschenkkarten**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Verkauf** > **Geschenkkarten** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|

@@ -20,10 +20,10 @@ Dateiberechtigungen und -besitz müssen in Entwicklungs-, Build- und Produktions
    - Stellen Sie sicher, dass der Webserver auf allen Systemen als derselbe Benutzer ausgeführt wird.
    - Stellen Sie sicher, dass sich der Eigentümer des Dateisystems in der Gruppe der Webserver auf allen Systemen befindet.
 
-- Ändern Sie bei Bedarf die Berechtigungen und das Eigentum für Commerce-Dateisysteme auf jedem System mithilfe der folgenden Richtlinien:
+- Ändern Sie bei Bedarf die Berechtigungen und das Eigentum des Commerce-Dateisystems für jedes System mithilfe der folgenden Richtlinien:
 
-   - Entwicklung und Erstellung: [Legen Sie die Eigentumsrechte und Berechtigungen für die Vorinstallation fest (zwei Benutzer)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Produktion: [Eigentum und Berechtigungen für Entwicklung und Produktion im Handel](file-system-permissions.md)
+   - Entwicklung und Build: [Legen Sie die Eigentumsrechte und Berechtigungen vor der Installation (zwei Benutzer) fest](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Produktion: [Eigentum und Berechtigungen der Commerce in Entwicklung und Produktion](file-system-permissions.md)
 
 >[!INFO]
 >

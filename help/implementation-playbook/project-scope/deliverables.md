@@ -44,4 +44,4 @@ Eine Übersicht über die bestehenden Produkte, Preise und Bestandsdaten eines U
 
 ## Projektplan
 
-In einem Projektplan werden die allgemeinen Aufgaben und Zeitpläne im Zusammenhang mit der Implementierungsinitiative beschrieben, einschließlich überlappender Integrationen und Drittanbieterabhängigkeiten. Der Plan kann auch eine Aufgabenmatrix umfassen oder [RACI](../planning/ownership.md), ein Diagramm, das zeigt, wer verantwortlich, rechenschaftspflichtig, konsultiert und informiert ist.
+In einem Projektplan werden die allgemeinen Aufgaben und Zeitpläne im Zusammenhang mit der Implementierungsinitiative beschrieben, einschließlich überlappender Integrationen und Drittanbieterabhängigkeiten. Der Plan kann auch eine Aufgabenmatrix oder ein Diagramm mit [RACI](../planning/ownership.md) enthalten, aus der hervorgeht, wer verantwortlich, rechenschaftspflichtig, konsultiert und informiert ist.

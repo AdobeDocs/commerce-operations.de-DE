@@ -5,20 +5,20 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
 # Referenz zu Katalogkonfigurationspfaden
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Katalog**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **Speicher** > Einstellungen > **Konfiguration** > **Katalog** verfügbar sind.
 
-Die [`magento app:config:dump` command](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei, `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](override-config-settings.md#environment-variables). Dieses Thema _not_ Liste [sensible und systemspezifische Werte](config-reference-sens.md).
+Der Befehl [`magento app:config:dump`](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Verwenden von Umgebungsvariablen zum Außerkraftsetzen von Konfigurationseinstellungen](override-config-settings.md#environment-variables). Bei diesem Thema werden _nicht_ vertrauliche und systemspezifische Werte [ aufgelistet.](config-reference-sens.md)
 
 ## Katalogpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Katalog**.
+Diese Konfigurationswerte sind im Admin unter **Speicher** > Einstellungen > **Konfiguration** > **Katalog** > **Katalog** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -121,7 +121,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Lagerpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Bestand**.
+Diese Konfigurationswerte sind im Admin unter **Speicher** > Einstellungen > **Konfiguration** > **Katalog** > **Bestand** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -151,7 +151,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Visual Merchandising-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Visual Merchandiser**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Visual Merchandiser** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -164,7 +164,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## XML-Sitemap-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **XML-Sitemap**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **XML-Sitemap** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -188,7 +188,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## RSS-Feed-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **RSS-Dienste**.
+Diese Konfigurationswerte sind im Admin unter **Speicher** > Einstellungen > **Konfiguration** > **Katalog** > **RSS-Dienste** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -204,7 +204,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Email an Freunde-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **E-Mail an einen Freund**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **E-Mail an einen Freund** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|

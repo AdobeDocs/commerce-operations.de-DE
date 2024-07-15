@@ -14,7 +14,7 @@ topic: Administration, Commerce, Development
 type: Documentation
 source-git-commit: aaca7ead9923b676718f6e371caa797d6c0d412f
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Metadaten für die interne Verwendung
 
-Die `metadata.md` -Datei enthält Metadaten auf Repo-Ebene, die an das Benutzerhandbuch übergeben werden `TOC.md` -Dateien im Repository. Wenn Sie den Inhalt von metadata.md für ein Benutzerhandbuch ändern möchten, tun Sie dies in einer beliebigen `TOC.md` -Datei.
+Die Datei `metadata.md` enthält Metadaten auf Repo-Ebene, die an die Benutzerhandbuchdateien `TOC.md` im Repository übergeben werden. Wenn Sie den Inhalt von metadata.md für ein Benutzerhandbuch ändern möchten, tun Sie dies in einer beliebigen `TOC.md` -Datei.
 
 | Metadaten | Funktion |
 |--- |--- |

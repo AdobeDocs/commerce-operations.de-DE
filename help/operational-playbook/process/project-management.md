@@ -4,7 +4,7 @@ description: Wenden Sie bekannte Frameworks an, um Ihr E-Commerce-Projekt zu ver
 exl-id: 514e2317-f409-4079-bdee-1596f6635467
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Projektmanagement ist die Anwendung von Wissen, Fähigkeiten, Werkzeugen und Tec
 
 Im folgenden Diagramm werden die fünf Phasen des Projektmanagements und der Lebenszyklus des Projektmanagements beschrieben:
 
-![Lebenszyklus-Diagramm des Projektmanagements](../../assets/playbooks/project-management-lifecycle.png)
+![Lebenszyklusdiagramm der Projektverwaltung](../../assets/playbooks/project-management-lifecycle.png)
 
 Der Lebenszyklus des Projektmanagements bietet einen zeitnahen und kontrollierten Bereitstellungsprozess, von dem die Projektbeteiligten profitieren. Der erste Schritt bei der Bereitstellung eines erfolgreichen E-Commerce-Projekts ist das Projektmanagement. Der richtige Ansatz und die richtige Methodik sind erforderlich, damit das Team das Projekt effizient und effizient durchführen kann.
 
@@ -28,7 +28,7 @@ Einige Teams wählen für ihre E-Commerce-Projekte die Scrum-Projektmanagement-M
 - Planen der Sitzung für jeden Sprint
 - Sprint-Retrospektiven
 
-![Abbildung eines agilen Lebenszyklus](../../assets/playbooks/scrum-lifecycle.png)
+![Scrum Agile Lifecycle Diagramm](../../assets/playbooks/scrum-lifecycle.png)
 
 Scrum unterstützt Sie bei der Verwaltung von Änderungen während des Projekts, ermöglicht es Teams, schnelle Ergebnisse anzuzeigen, ist flexibel und erhöht die Zusammenarbeit.
 
@@ -36,17 +36,17 @@ Scrum unterstützt Sie bei der Verwaltung von Änderungen während des Projekts,
 
 Ein grundlegender E-Commerce-Projektmanagementplan umfasst:
 
-- **Analyse**—In der Anfangsphase eines Projekts muss das Unternehmen eine Analyse durchführen, einschließlich einer Analyse der Märkte und Konkurrenten, um die Stärken und Schwächen des Unternehmens zu verstehen.
+- **Analyse**: In der Anfangsphase eines Projekts muss das Unternehmen eine Analyse durchführen, einschließlich einer Analyse des Marktes und der Konkurrentengeschäftes, um die Stärken und Schwächen des Unternehmens zu verstehen.
 
-- **Voraussetzungen**—Definieren Sie detaillierte Anforderungen, die die Organisation am Ende des Projekts hinsichtlich der Verbesserung vorhandener Fähigkeiten und/oder der Implementierung neuer Funktionen und/oder Integrationen benötigt.
+- **Anforderungen** - Definieren Sie detaillierte Anforderungen daran, was die Organisation am Ende des Projekts möchte, um vorhandene Fähigkeiten zu verbessern und/oder neue Funktionen und/oder Integrationen zu implementieren.
 
-- **Drittanbieter**—In dieser Phase ordnen Sie die erforderlichen Drittanbieterintegrationen (z. B. Zahlung, Versand, Bewertungen und Überprüfungen) zu.
+- **Drittanbieter**: In dieser Phase ordnen Sie die erforderlichen Drittanbieterintegrationen (z. B. Zahlung, Versand, Bewertungen und Überprüfungen) zu.
 
-- **Design**—Brainstorm designspezifische Anforderungen für Vorlagen und das Markenbuch des Unternehmens.
+- **Design**: Designspezifische Anforderungen für Vorlagen und das Markenbuch des Unternehmens.
 
-- **Migration**—Planen Sie die Schritte für die Migration von Inhalten und Daten.
+- **Migration**: Planen Sie die Schritte für die Migration von Inhalten und Daten.
 
-- **E-Commerce-Plattform**—Analysieren und Fertigstellen der Plattform, die für das Unternehmen zur Erfüllung der Anforderungen erforderlich ist.
+- **E-Commerce-Plattform**: Analysieren und beenden Sie die Plattform, die für das Unternehmen erforderlich ist, um die Anforderungen zu erfüllen.
 
 ## Best Practices
 

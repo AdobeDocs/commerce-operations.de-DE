@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Sperranbieter konfigurieren
 
-Bevor Sie diesen Befehl ausführen, müssen Sie Folgendes tun: *oder* Sie müssen [Installieren des Programms](../advanced.md):
+Bevor Sie diesen Befehl ausführen, müssen Sie die folgenden *oder* ausführen, die Anwendung [installieren](../advanced.md):
 
 * [Erstellen oder Aktualisieren der Bereitstellungskonfiguration](deployment.md)
 * [Datenbankschema erstellen](database.md)
@@ -38,8 +38,8 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | Name | Wert | Erforderlich? |
 |--- |--- |--- |
-| `--lock-provider` | Anbietername sperren: `db`, `zookeeper`oder `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
-| `--lock-db-prefix` | Das spezifische db-Präfix zur Vermeidung von Sperrkonflikten bei der Verwendung von `db` Sperranbieter.<br><br>Der Standardwert: `NULL` | Nein |
-| `--lock-zookeeper-host` | Hosten und Anschluss für die Verbindung mit dem Zookeeper-Cluster bei Verwendung der `zookeeper` Sperranbieter.<br><br>Beispiel: `127.0.0.1:2181` | Ja, wenn Sie `--lock-provider=zookeeper` |
+| `--lock-provider` | Name des Sperranbieters: `db`, `zookeeper` oder `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
+| `--lock-db-prefix` | Das spezifische db-Präfix, um Sperrkonflikte bei der Verwendung des `db` -Sperranbieters zu vermeiden.<br><br>Der Standardwert: `NULL` | Nein |
+| `--lock-zookeeper-host` | Hosten und Anschluss für die Verbindung mit dem Zookeeper-Cluster bei Verwendung des `zookeeper`-Sperranbieters.<br><br>Beispiel: `127.0.0.1:2181` | Ja, wenn Sie `--lock-provider=zookeeper` festlegen |
 | `--lock-zookeeper-path` | Der Pfad, in dem Zookeeper Sperren speichert.<br><br>Der Standardpfad lautet: `/magento/locks` | Nein |
-| `--lock-file-path` | Der Pfad, in dem Dateisperren gespeichert werden. | Ja, wenn Sie `--lock-provider=file` |
+| `--lock-file-path` | Der Pfad, in dem Dateisperren gespeichert werden. | Ja, wenn Sie `--lock-provider=file` festlegen |

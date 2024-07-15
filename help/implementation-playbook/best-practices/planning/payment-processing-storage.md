@@ -6,16 +6,16 @@ feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
 source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # Best Practices für die Verarbeitung und Speicherung von Zahlungen
 
-Eines der wichtigsten Grundsätze bei der Aufrechterhaltung [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) hat eine Strategie, Kreditkartenzahlungen ordnungsgemäß zu verarbeiten und zu speichern.
+Eines der wichtigsten Grundsätze bei der Aufrechterhaltung der [PCI compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) ist die Strategie, Kreditkartenzahlungen ordnungsgemäß zu verarbeiten und zu speichern.
 
-Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und dies könnte einen Verstoß gegen Ihre Verpflichtungen als Händler im Rahmen des Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen über das Modell der geteilten Verantwortung und die Leitlinien für Handelsverpflichtungen finden Sie im [Handbuch zum freigegebenen Adobe Commerce-Responsibility-Modell](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
+Das Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und dies könnte einen Verstoß gegen Ihre Pflichten als Händler gemäß dem Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen zum Modell der gemeinsamen Verantwortung und zu den Richtlinien für Handelsverpflichtungen finden Sie im [Leitfaden für freigegebene Verantwortung für Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
 
 Befolgen Sie die unten stehenden Best Practices, um sicherzustellen, dass Sie die Zahlungsinformationen auf Ihrer E-Commerce-Site ordnungsgemäß verarbeiten. Weitere Anleitungen zu Best Practices für die Sicherheit finden Sie unter [Sichern Ihrer Site und Infrastruktur](../launch/security-best-practices.md).
 
@@ -32,7 +32,7 @@ Wenn die Speicherung von Karteninhaberdaten erforderlich ist, sollten die Karten
 
 Der Schutz kryptografischer Schlüssel ist für Datenschutzstrategien von entscheidender Bedeutung. Es ist wichtig, über qualifizierte und vertrauenswürdige Kunden zu verfügen, die diese Schlüssel überwachen.
 
-Schließlich muss eine primäre Kontonummer (PAN) während der Speicherung unlesbar sein, z. B. mit `XXX`. Dazu gehören tragbare Speicher- und Sicherungsmedien wie Flash-Laufwerke, USB- und externe Festplatten sowie sogar Prüfprotokolle.
+Schließlich muss eine primäre Kontonummer (PAN) während der Speicherung unlesbar sein, z. B. mit `XXX` maskiert. Dazu gehören tragbare Speicher- und Sicherungsmedien wie Flash-Laufwerke, USB- und externe Festplatten sowie sogar Prüfprotokolle.
 
 ## Verschlüsseln der Übertragung von Karteninhaberdaten
 
@@ -51,6 +51,6 @@ Der Schutz von Daten während der Übermittlung ist der Schlüssel zum Schutz vo
 
 Die empfohlene Methode für die Verarbeitung von Karteninhaberdaten besteht darin, die Daten per Token zu versehen, anstatt sie zu speichern. Token Sie die Karte mit einem bestimmten Zahlungsdienstleister und speichern Sie das Token, den Kartentyp und das verschlüsselte Ablaufdatum. Sie können das Token als Berechtigung für die zukünftige Verwendung in der Datei verwenden, da es nur für jeden Händler eindeutig ist. Da das Token eindeutig ist, kann bei einem Sicherheitsproblem das ungültige Token dazu beitragen, betrügerische Aktivitäten zu verhindern.
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
-Wenn Sie nach empfohlenen Zahlungslösungen durch Adobe suchen, sollten Sie [Adobe-Zahlungsdienste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Wenn Sie nach empfohlenen Zahlungslösungen durch Adobe suchen, beachten Sie [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).

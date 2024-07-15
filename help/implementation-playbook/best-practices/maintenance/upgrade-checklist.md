@@ -21,7 +21,7 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 >[!NOTE]
 >
->Eine ausführliche Beschreibung der technischen Schritte für eine erfolgreiche Aktualisierung finden Sie unter [Vollständige Upgrade-Voraussetzungen](../../../upgrade/prepare/prerequisites.md) in unserer Benutzerdokumentation.
+>Eine ausführliche Beschreibung der technischen Schritte für eine erfolgreiche Aktualisierung finden Sie in unserer Benutzerdokumentation unter [Voraussetzungen für eine vollständige Aktualisierung](../../../upgrade/prepare/prerequisites.md) .
 
 ## Betroffene Produkte und Versionen
 
@@ -46,7 +46,7 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 ## Budget und Zeit
 
-▢ Verwenden der Adobe Commerce [Veröffentlichungszeitplan](../../../release/schedule.md) , um Ihr nächstes Upgrade zu planen und vorzeitig vorzubereiten.
+▢ Verwenden Sie den Adobe Commerce- [Veröffentlichungsplan](../../../release/schedule.md), um Ihr nächstes Upgrade zu planen und vorab vorzubereiten.
 
 ▢ Diskutieren Sie, welche Version Sie Ihrer Meinung nach basierend auf den erwarteten Anforderungen übernehmen werden (vollständig oder sicherheitsspezifisch).
 
@@ -60,14 +60,14 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 ▢
 
-- Partner nimmt an [Beta](../../../release/beta.md)
-- Versionshinweise zur Beta-Version
+- Partner nimmt an [Beta](../../../release/beta.md) teil
+- Beta - Versionshinweise - Übersicht.
 
 ▢ Einigung über Budget, Zeitplan und Umfang.
 
-▢ Führen Sie die [Upgrade-Kompatibilitätstool](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢ Führen Sie das [Upgrade-Kompatibilitätstool](../../../upgrade/upgrade-compatibility-tool/overview.md) aus.
 
-▢ Erwägen Sie die Verwendung des Upgrades, um Probleme zu beheben, die von der [Site-weites Analyse-Tool](../../../tools/site-wide-analysis-tool/intro.md).
+▢ erwägen Sie, das Upgrade zu verwenden, um Probleme zu beheben, die vom [Site-weiten Analyse-Tool](../../../tools/site-wide-analysis-tool/intro.md) erkannt wurden.
 
 ▢ Dokumentabhängigkeiten und alle erforderlichen technischen Stack-Änderungen, wie PHP- oder Elastic Search-Versionen.
 
@@ -77,17 +77,17 @@ Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen
 
 ▢ Wartungsfenster planen, wenn Ausfallzeiten erwartet werden.
 
-▢ die Teststrategie überprüfen und genehmigen; erwägen Sie die Verwendung der Adobe Commerce [Test-Framework](https://developer.adobe.com/commerce/testing/) oder einer Automationssuite eines Drittanbieters.
+▢ Prüfen und genehmigen Sie die Teststrategie. Erwägen Sie die Verwendung des Adobe Commerce [Test-Frameworks](https://developer.adobe.com/commerce/testing/) oder einer Automationssuite eines Drittanbieters.
 
 ▢ Bestätigen Sie, dass alle Erweiterungen und Anpassungen kompatibel sind.
 
 ▢ Überprüfen und aktualisieren Sie das Playbook für die Zeit nach dem Start. Wird verwendet, wenn während oder nach dem Upgrade Probleme auftreten.
 
-## Nach der Bereitstellung
+## Post-Implementierung
 
 ▢ Überwachen Sie die Site auf Probleme - Leistung, Auftragsverarbeitung, Analyse und andere.
 
-▢ Adobe Commerce durchführen [Sicherheitsscan](https://account.magento.com/scanner/dashboard/) oder anderen Drittanbietern potenzielle Sicherheitslücken scannen und überprüfen.
+▢ Führen Sie eine Adobe Commerce [Sicherheitsprüfung](https://account.magento.com/scanner/dashboard/) oder eine Überprüfung durch andere Drittanbieter durch und überprüfen Sie potenzielle Sicherheitslücken.
 
 ▢ Führen Sie eine Retrospektive mit allen Interessenträgern durch und dokumentieren Sie, was gut gelaufen ist, was nicht gelaufen ist und wie sich verbessern lässt.
 

@@ -4,8 +4,8 @@ description: Lernen Sie die verschiedenen Commerce-Geschäftsmodelle kennen.
 exl-id: d66b4a7f-d54b-4902-8791-7a8f67fa4b43
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 1%
+source-wordcount: '266'
+ht-degree: 0%
 
 ---
 
@@ -52,9 +52,9 @@ Kundendienst für B2B:
 Kundendienst für B2C:
 
 - 24/7 Kundendienst
-- Rückgaben nach dem Verkauf
-- Nachverkaufsbörse
-- Probleme nach dem Verkauf
+- Post-Verkaufsergebnisse
+- Post-Verkaufs-Exchange
+- Post-Verkaufsprobleme
 - Verfügbarkeit
 
 ## Zusammenfassung der Unterschiede zwischen B2B und B2C

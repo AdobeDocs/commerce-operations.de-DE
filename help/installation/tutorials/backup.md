@@ -13,17 +13,17 @@ ht-degree: 0%
 
 Mit diesem Befehl können Sie Folgendes sichern:
 
-* Dateisystem (außer `var` und `pub/static` Verzeichnissen)
-* Die `pub/media` directory
+* Das Dateisystem (außer den Verzeichnissen `var` und `pub/static`)
+* Das Verzeichnis `pub/media`
 * Die Datenbank
 
-Backups werden im `var/backups` und kann jederzeit mithilfe der [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) Befehl.
+Sicherungen werden im Verzeichnis `var/backups` gespeichert und können jederzeit mithilfe des Befehls [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) wiederhergestellt werden.
 
-Nach dem Sichern können Sie [Rollback](#rollback) später.
+Nach der Sicherung können Sie [Rollback](#rollback) später wiederherstellen.
 
 >[!TIP]
 >
->Informationen zu Adobe Commerce zu Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup-Verwaltung](https://devdocs.magento.com/cloud/project/project-webint-snap.html) im _Cloud-Handbuch_.
+>Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup-Management](https://devdocs.magento.com/cloud/project/project-webint-snap.html) im _Cloud-Handbuch_.
 
 ## Sicherungen aktivieren
 
@@ -40,17 +40,17 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 ## Legen Sie die Grenze für geöffnete Dateien fest
 
-Ein Rollback zu einer vorherigen Sicherung kann still fehlschlagen, was dazu führt, dass unvollständige Daten mithilfe der [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) Befehl.
+Wenn Sie zu einer vorherigen Sicherung zurückkehren, kann es passieren, dass unvollständige Daten mit dem Befehl [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) in das Dateisystem oder die Datenbank geschrieben werden.
 
 Manchmal führt eine lange Abfragezeichenfolge dazu, dass der zugewiesene Arbeitsspeicher des Benutzers aufgrund zu vieler rekursiver Aufrufe nicht mehr genügend Arbeitsspeicher hat.
 
 ## Festlegen offener Dateien `ulimit`
 
-Es wird empfohlen, offene Dateien festzulegen [`ulimit`](https://ss64.com/bash/ulimit.html) für den Dateisystembenutzer auf den Wert `65536` oder mehr.
+Es wird empfohlen, die geöffneten Dateien [`ulimit`](https://ss64.com/bash/ulimit.html) für den Dateisystembenutzer auf den Wert `65536` oder höher festzulegen.
 
 Sie können dies entweder über die Befehlszeile tun oder durch Bearbeiten des Shell-Skripts zu einer dauerhaften Einstellung für den Benutzer machen.
 
-Bevor Sie fortfahren, wechseln Sie zu [Dateisysteminhaber](../prerequisites/file-system/overview.md).
+Bevor Sie fortfahren, wechseln Sie, falls noch nicht geschehen, zum [Dateisysteminhaber](../prerequisites/file-system/overview.md).
 
 Befehl:
 
@@ -62,12 +62,12 @@ Sie können dies bei Bedarf in einen größeren Wert ändern.
 
 >[!NOTE]
 >
->Die Syntax für geöffnete Dateien `ulimit` hängt von der verwendeten UNIX-Shell ab. Die vorherige Einstellung sollte mit CentOS und Ubuntu mit der Bash-Shell funktionieren. Für macOS ist die richtige Einstellung jedoch `ulimit -S 65532`. Weitere Informationen finden Sie auf einer Manpage oder in der Betriebssystemreferenz.
+>Die Syntax für offene Dateien `ulimit` hängt von der verwendeten UNIX-Shell ab. Die vorherige Einstellung sollte mit CentOS und Ubuntu mit der Bash-Shell funktionieren. Für macOS ist die richtige Einstellung jedoch `ulimit -S 65532`. Weitere Informationen finden Sie auf einer Manpage oder in der Betriebssystemreferenz.
 
 So legen Sie optional den Wert in der Bash-Shell des Benutzers fest:
 
 1. Wenn Sie dies noch nicht getan haben, wechseln Sie zum [Dateisysteminhaber](../prerequisites/file-system/overview.md).
-1. Öffnen `/home/<username>/.bashrc` in einem Texteditor.
+1. Öffnen Sie `/home/<username>/.bashrc` in einem Texteditor.
 1. Fügen Sie die folgende Zeile hinzu:
 
    ```bash
@@ -78,7 +78,7 @@ So legen Sie optional den Wert in der Bash-Shell des Benutzers fest:
 
 >[!WARNING]
 >
->Es wird empfohlen, die Festlegung eines Werts für [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) im `php.ini` -Datei, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
+>Es wird empfohlen, in der Datei `php.ini` keinen Wert für [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
 
 ## Sichern
 
@@ -140,7 +140,7 @@ Um zu einer vorherigen Sicherung zurückzukehren, geben Sie Folgendes ein:
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-So stellen Sie beispielsweise eine Mediensicherung mit dem Namen `1440611839_filesystem_media.tgz`, eingeben
+Um beispielsweise eine Mediensicherung mit dem Namen `1440611839_filesystem_media.tgz` wiederherzustellen, geben Sie
 
 ```bash
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz

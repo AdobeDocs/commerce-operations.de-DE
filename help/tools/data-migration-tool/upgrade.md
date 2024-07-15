@@ -1,11 +1,11 @@
 ---
-title: Aktualisieren Sie die [!DNL Data Migration Tool]
-description: Erfahren Sie, wie Sie die [!DNL Data Migration Tool] um Daten zwischen Magento 1 und Magento 2 zu übertragen.
+title: Aktualisieren Sie den [!DNL Data Migration Tool]
+description: Erfahren Sie, wie Sie die [!DNL Data Migration Tool] aktualisieren, um Daten zwischen Magento 1 und Magento 2 zu übertragen.
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -16,21 +16,21 @@ Um sicherzustellen, dass die Versionen Ihrer aktuellen Magento 2-Installation un
 
 ## Voraussetzungen
 
-Vor der Aktualisierung [!DNL Data Migration Tool]müssen Sie:
+Vor der Aktualisierung von [!DNL Data Migration Tool] müssen Sie:
 
 * Aktualisieren Sie Ihre Magento-Software, um die neueste Version zu erhalten
 
-* Sichern Sie die `vendor/magento/data-migration-tool` directory
+* Sichern des Verzeichnisses `vendor/magento/data-migration-tool`
 
-* Stellen Sie sicher, dass die Variable [!DNL Data Migration Tool] Version entspricht der Magento-Anwendungsversion
+* Stellen Sie sicher, dass die [!DNL Data Migration Tool] -Version mit der Magento-Anwendungsversion übereinstimmt.
 
 ### Magento-Software aktualisieren
 
-Wenn Sie das noch nicht getan haben, [Aktualisieren der Magento-Software](../../upgrade/overview.md).
+Wenn Sie dies noch nicht getan haben, aktualisieren Sie die Magento-Software](../../upgrade/overview.md).[
 
-### Sichern Sie die `vendor/magento/data-migration-tool` directory
+### Sichern des Verzeichnisses `vendor/magento/data-migration-tool`
 
-Vor der Aktualisierung [!DNL Data Migration Tool], um mindestens die `vendor/magento/data-migration-tool` Verzeichnis. Während der Aktualisierung konnte sie gelöscht und durch den aktualisierten Code ersetzt werden.
+Sichern Sie vor dem Upgrade von [!DNL Data Migration Tool] mindestens das Verzeichnis `vendor/magento/data-migration-tool` . Während der Aktualisierung konnte sie gelöscht und durch den aktualisierten Code ersetzt werden.
 
 Sie können auch die gesamte Magento-Codebase und -Datenbank mithilfe des folgenden Befehls sichern:
 
@@ -40,24 +40,24 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 >[!WARNING]
 >
->Die `vendor/magento/data-migration-tool` enthält Ihren benutzerdefinierten Code. Wenn Sie dies nicht sichern, können Sie Ihre Anpassungen während der Aktualisierung verlieren.
+>Das Verzeichnis `vendor/magento/data-migration-tool` enthält Ihren benutzerdefinierten Code. Wenn Sie dies nicht sichern, können Sie Ihre Anpassungen während der Aktualisierung verlieren.
 
 
 ### Sicherstellen, dass Versionen übereinstimmen
 
-Die Versionen der [!DNL Data Migration Tool] und Ihre Magento-Software muss genau übereinstimmen. Für Magento 2.1.2 ist beispielsweise die Version 2.1.2 des [!DNL Data Migration Tool].
+Die Versionen von [!DNL Data Migration Tool] und Ihrer Magento-Software müssen genau übereinstimmen. Für Magento 2.1.2 ist beispielsweise die Version 2.1.2 von [!DNL Data Migration Tool] erforderlich.
 
-Siehe [Installieren [!DNL Data Migration Tool]](install.md) Thema, um zu erfahren, wie:
+Weitere Informationen finden Sie im Thema [Installieren [!DNL Data Migration Tool]](install.md) .
 
-* [Überprüfen](install.md#check-your-version) Ihre Magento 2-Version
+* [Überprüfen Sie ](install.md#check-your-version) Ihre Magento 2-Version
 
-* [Suchen](install.md#find-released-versions-of-data-migration-tool) veröffentlichte Versionen der [!DNL Data Migration Tool]
+* [Find](install.md#find-released-versions-of-data-migration-tool) veröffentlichte Versionen der [!DNL Data Migration Tool]
 
-* [Überprüfen](install.md#check-version-of-installed-data-migration-tool) die [!DNL Data Migration Tool] version
+* [Überprüfen](install.md#check-version-of-installed-data-migration-tool) der [!DNL Data Migration Tool]-Version
 
 ## Aktualisieren Sie die [!DNL Data Migration Tool]
 
-1. Melden Sie sich bei Ihrem Anwendungsserver an oder wechseln Sie zu [der Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Anwendungsserver als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
 1. Wechseln Sie zum Stammverzeichnis der Anwendung.
 1. Geben Sie den folgenden Befehl ein:
 
@@ -65,7 +65,7 @@ Siehe [Installieren [!DNL Data Migration Tool]](install.md) Thema, um zu erfahre
    composer require magento/data-migration-tool:<version>
    ```
 
-   where `<version>` muss mit der Version der Magento 2-Codebase übereinstimmen.
+   wobei `<version>` mit der Magento 2-Codebase übereinstimmen muss.
 
    Geben Sie beispielsweise für Version 2.1.2 Folgendes ein:
 

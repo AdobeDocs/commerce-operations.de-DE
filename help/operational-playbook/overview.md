@@ -23,7 +23,7 @@ Die Zielgruppe für dieses Playbook enthält:
 
 - Chief Marketing Officer
 - Head of Digital, Head of Strategy, Head of Marketing
-- Leiter der Inhaltsabteilung, Leiter der UX-Abteilung, Leiter der Inhaltsproduktion, Inhaltsstratege, Content Producer, UX Designer
+- Leiter Content, Leiter UX, Content Production Lead, Content Strategist, Content Producer, UX Designer
 - Lösungsarchitektin, Leiter der Implementierung, Lead-Entwickler
 - Programm-Manager, Projektmanager
 - E-Commerce Manager, Business Analyst
@@ -32,17 +32,17 @@ Die Zielgruppe für dieses Playbook enthält:
 
 Dieses Dokument basiert auf einer Struktur, die Ihnen dabei hilft, die wichtigsten Schwerpunktbereiche zu verstehen, um maximalen Nutzen aus Ihrer Investition in Adobe Commerce zu ziehen. Diese Struktur basiert auf dem Deloitte- und Adobe Commerce Governance Framework, das die geeignete Geschäftsumgebung für den Erfolg digitaler Vorgänge und Umwandlungen schafft. Er umfasst:
 
-- **Führung**—Executive Buy-in und Unterstützung für die erfolgreiche Verwaltung einer E-Commerce-Plattform.
+- **Leadership**: Executive Buy-In und Unterstützung für die erfolgreiche Verwaltung einer E-Commerce-Plattform.
 
-- **Strategie**—Klarheit und Ausrichtung der wichtigsten Geschäftsziele für die Bewertung der digitalen Leistung und des E-Commerce-Betriebs.
+- **Strategie** - Klarheit und Ausrichtung der wichtigsten Geschäftsziele für die Bewertung der digitalen Leistung und des E-Commerce-Vorgangs.
 
-- **Lösung**—Hosting- und Infrastrukturbewertung für unterschiedliche Anforderungen an Unternehmen und E-Commerce.
+- **Lösung** - Hosting und Bewertung der Infrastruktur für unterschiedliche Geschäfts- und E-Commerce-Anforderungen.
 
-- **Personen**- Ressourcen, Fachwissen und die entsprechende Teamstruktur, um E-Commerce-Vorgänge effektiv durchzuführen.
+- **Personen**: Ressourcen, Fachwissen und die entsprechende Teamstruktur, um E-Commerce-Vorgänge effektiv durchzuführen.
 
-- **Prozess**—Verfahren, Projekt-Management und Workflows für die effektive Verwaltung einer E-Commerce-Site.
+- **Prozess** - Verfahren, Projekt-Management und Workflows zum effektiven Verwalten einer E-Commerce-Site.
 
-- **Produkt**—Allgemeine E-Commerce-Lösungen, allgemeine Integrationen und Automatisierungen.
+- **Produkt**: Allgemeine E-Commerce-Lösungen, allgemeine Integrationen und Automatisierungen.
 
 >[!NOTE]
 >

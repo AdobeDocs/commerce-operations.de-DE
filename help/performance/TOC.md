@@ -23,6 +23,6 @@ ht-degree: 2%
 - [Implementierungsfluss](deployment-flow.md)
 - Erweiterte Konzepte {#concepts}
    - [Erweiterte Einrichtung](advanced-setup.md)
-   - [Erweitert [!DNL JavaScript] Bundling](advanced-js-bundling.md)
+   - [Erweitertes [!DNL JavaScript] Bundling](advanced-js-bundling.md)
    - [GraphQL Application Server](application-server.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

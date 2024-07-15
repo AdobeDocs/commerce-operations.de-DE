@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Anzeigen oder Ändern des Admin-URI
 
-Bevor Sie diesen Befehl ausführen, müssen Sie [Erstellen oder Aktualisieren der Bereitstellungskonfiguration](deployment.md).
+Bevor Sie diesen Befehl ausführen, müssen Sie [die Bereitstellungskonfiguration erstellen oder aktualisieren](deployment.md).
 
 ## Anzeigen des Admin-URI
 
-In diesem Abschnitt wird beschrieben, wie Sie mit der Befehlszeile die Admin Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+In diesem Abschnitt wird beschrieben, wie Sie mit der Befehlszeile die Admin Uniform Resource Identifier ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)) anzeigen.
 
 Befehlsoptionen:
 
@@ -30,7 +30,7 @@ Ein Beispielergebnis:
 Admin Panel URI: /admin_1wgrah
 ```
 
-Sie können den Admin-URI auch in `<magento_root>/app/etc/env.php`. Ein Snippet folgt:
+Sie können den Admin-URI auch in &quot;`<magento_root>/app/etc/env.php`&quot;anzeigen. Ein Snippet folgt:
 
 ```php?start_inline=1
   'backend' =>
@@ -41,4 +41,4 @@ Sie können den Admin-URI auch in `<magento_root>/app/etc/env.php`. Ein Snippet 
 
 ## Ändern der Admin-URL
 
-Um den Admin-URI zu ändern, verwenden Sie die [`magento setup:config:set`](deployment.md) Befehl.
+Verwenden Sie den Befehl [`magento setup:config:set`](deployment.md) , um den Admin-URI zu ändern.

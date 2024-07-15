@@ -66,7 +66,7 @@ Nachrichtenwarteschlangen bieten einen asynchronen Kommunikationsmechanismus, be
 
 ## Sicherheitswerkzeuge
 
-Die [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) ermöglicht es Ihnen, Ihre Store-Websites regelmäßig zu überwachen und Updates auf bekannte Sicherheitsrisiken, Malware und veraltete Software zu erhalten. Normalerweise beginnen Sie mit der Verwendung dieses Tools, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen. Neben dem Adobe Commerce Security Scan-Tool, das für alle Implementierungen und Versionen von Adobe Commerce kostenlos ist, gibt es weitere Optionen, die während des CI/CD-Prozesses und vor jeder Version verwendet werden können.
+Mit dem [Adobe Commerce Security Scan Tool](https://docs.magento.com/user-guide/magento/security-scan.html) können Sie Ihre Store-Websites regelmäßig überwachen und Updates auf bekannte Sicherheitsrisiken, Malware und veraltete Software erhalten. Normalerweise beginnen Sie mit der Verwendung dieses Tools, wenn Sie mit dem Benutzerakzeptanztest (UAT) beginnen. Neben dem Adobe Commerce Security Scan-Tool, das für alle Implementierungen und Versionen von Adobe Commerce kostenlos ist, gibt es weitere Optionen, die während des CI/CD-Prozesses und vor jeder Version verwendet werden können.
 
 SonarQube ist eine Open-Source-Plattform für Qualitätsmanagement, die entwickelt wurde, um die technische Qualität Ihres Codes zu analysieren und zu messen. SonarQube bietet nicht nur einen vollständigen Bericht mit Code-Fehlern, Syntaxfehlern und Schwachstellen, sondern auch Empfehlungen und Beispiele zur Behebung Ihres Codes. SonarQube eignet sich hervorragend für die Verwendung in einer CI/CD-Umgebung als Tool zur Analyse des Codes vor seiner Bereitstellung.
 

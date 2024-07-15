@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die URN-Hervorhebung in Ihrer IDE einrichten.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Commerce-Code verweist auf alle XSD-Schemas [Uniform Resource Names (URNs)](https://www.ietf.org/rfc/rfc2141.txt). Wenn Sie Code entwickeln und auf XSDs verweisen müssen, konfiguriert dieser Befehl Ihre integrierte Entwicklungsumgebung (IDE), um URNs zu erkennen und hervorzuheben. Dies erleichtert die Entwicklung.
+Commerce-Code verweist auf alle XSD-Schemas als [Uniform Resource Names (URNs)](https://www.ietf.org/rfc/rfc2141.txt). Wenn Sie Code entwickeln und auf XSDs verweisen müssen, konfiguriert dieser Befehl Ihre integrierte Entwicklungsumgebung (IDE), um URNs zu erkennen und hervorzuheben. Dies erleichtert die Entwicklung.
 
 Standardmäßig ist eine IDE wie PhpStorm nicht so konfiguriert, dass sie URNs erkennt und daher wie folgt in rotem Text angezeigt wird:
 
-![PhpStorm ist nicht zur Erkennung von URN konfiguriert](../../assets/configuration/urn-before.png)
+![PHPStorm ist nicht so konfiguriert, dass URN](../../assets/configuration/urn-before.png) erkannt wird
 
-Die `bin/magento dev:urn-catalog:generate` -Befehl aktiviert Ihre IDE (derzeit nur PhpStorm und Visual Studio Code), um URNs wie folgt zu erkennen und hervorzuheben:
+Der Befehl `bin/magento dev:urn-catalog:generate` ermöglicht es Ihrer IDE (derzeit nur PhpStorm und Visual Studio Code), URNs wie folgt zu erkennen und hervorzuheben:
 
 ![IDE aktivieren, um URN zu erkennen](../../assets/configuration/urn-after.png)
 
@@ -37,8 +37,8 @@ Befehlssyntax:
 bin/magento dev:urn-catalog:generate <path>
 ```
 
-Wo `<path>` ist der Pfad zu Ihrem PHPStorm `misc.xml` -Datei, die sich relativ zum Projektstamm befindet. In der Regel `<path>` is `.idea/misc.xml`.
+Wobei `<path>` der Pfad zu Ihrer PhpStorm `misc.xml`-Datei ist, die sich relativ zum Projektstamm befindet. In der Regel ist `<path>` `.idea/misc.xml`.
 
 >[!INFO]
 >
->Um Ihre &quot;Schemas und DTDs&quot;auf dem neuesten Stand zu halten, führen Sie die `dev:urn-catalog:generate` jedes Mal, wenn Sie Commerce 2-Module, die `*.xsd` -Dateien.
+>Um Ihre &quot;Schemas und DTDs&quot;auf dem neuesten Stand zu halten, führen Sie den Befehl `dev:urn-catalog:generate` jedes Mal aus, wenn Sie Commerce 2-Module mit `*.xsd` -Dateien hinzufügen, ändern oder entfernen.

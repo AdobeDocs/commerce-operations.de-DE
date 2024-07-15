@@ -54,32 +54,32 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Wart
 
 | Best Practice | Beschreibung |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Personalisierung](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Commerce- und Kaffeeaufzeichnung, die Personalisierungsstrategien beschreibt. |
-| [E-Commerce-Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce- und Kaffeeaufzeichnung, die E-Commerce-Trends beschreibt. |
+| [Personalization](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Commerce- und Kaffeeaufzeichnung, die Personalisierungsstrategien beschreibt. |
+| [E-Commerce-Trends](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Commerce &amp; Coffee-Aufzeichnung, die E-Commerce-Trends beschreibt. |
 | [KI-Automatisierung](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | Commerce &amp; Coffee-Recording, das Personalisierungsmöglichkeiten mit künstlicher Intelligenz und Automatisierung beschreibt. |
 
 ## Indizierung
 
 | Best Practice | Beschreibung |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Neuindizierung](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Verwenden Sie Cron-Aufträge oder das CLI-Tool, um die Neuindizierung auszuführen. |
-| [Konfigurieren von Indexern &#x200B;](indexer-configuration.md) | Optimieren Sie die Site-Leistung durch Befolgen der Best Practices für die Indexkonfiguration. |
-| [Bestellverarbeitung](order-processing-configuration.md) | Verbessern Sie die Leistung bei der Kasse- und Auftragsverarbeitung. |
+| [ Neuindizierung](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Verwenden Sie Cron-Aufträge oder das CLI-Tool, um die Neuindizierung auszuführen. |
+| [Indexer &#x200B;](indexer-configuration.md) konfigurieren | Optimieren Sie die Site-Leistung durch Befolgen der Best Practices für die Indexkonfiguration. |
+| [Auftragsverarbeitung](order-processing-configuration.md) | Verbessern Sie die Leistung bei der Kasse- und Auftragsverarbeitung. |
 
 ## Site-Überwachung und -Sicherheit
 
 | Best Practice | Beschreibung |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Leistung des Frontend überprüfen](frontend-performance.md) | Mithilfe von Webleistungswerkzeugen können Sie Probleme identifizieren und beheben, die die Leistung der Website beeinträchtigen. |
-| [Bereit, Festlegen, Verwalten](https://business.adobe.com/blog/basics/ready-set-maintain) | Tipps zur Verwaltung Ihrer Adobe Commerce-Sites, um den Geschäftswert und die Betriebszeit zu maximieren. |
-| [Verwenden Sie die [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Zeigen Sie wichtige Einblicke über Ihre Adobe Commerce-Site an einem Ort an. |
+| [Leistung des Frontend-Audit](frontend-performance.md) | Mithilfe von Webleistungswerkzeugen können Sie Probleme identifizieren und beheben, die die Leistung der Website beeinträchtigen. |
+| [Bereit, Festlegen, Warten](https://business.adobe.com/blog/basics/ready-set-maintain) | Tipps zur Verwaltung Ihrer Adobe Commerce-Sites, um den Geschäftswert und die Betriebszeit zu maximieren. |
+| [Verwenden Sie den  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Zeigen Sie wichtige Einblicke über Ihre Adobe Commerce-Site an einem Ort an. |
 | [Überwachen der Leistung, des Festplattenspeichers und der Protokolle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
-| [Reaktion auf Sicherheitsvorfälle](respond-to-security-incident.md) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
+| [Reagieren auf Sicherheitsvorfälle](respond-to-security-incident.md) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
 
 ### Upgrades
 
 | Best Practice | Beschreibung |
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [Patchen im Maßstab](patching-at-scale.md) | Erfahren Sie, wie Sie durch zentrales Patchen für Adobe Commerce Unternehmensprojekte verwalten können. |
-| [Aktualisierung von Diensten und Komponenten auf die neueste Version &#x200B;](update-services.md) | halten Sie Ihre Adobe Commerce auf dem neuesten Stand der Cloud-Infrastruktur-Technologie. |
-| [Checkliste für die Aktualisierung von Adobe Commerce &#x200B;](upgrade-checklist.md) | Erstellen Sie eine Checkliste für das Upgrade und planen Sie Ihre Adobe Commerce-Upgrade-Strategie. |
+| [Aktualisieren von Diensten und Komponenten auf die neueste Version &#x200B;](update-services.md) | halten Sie Ihre Adobe Commerce auf dem neuesten Stand der Cloud-Infrastruktur-Technologie. |
+| [Checkliste für die Aktualisierung für Adobe Commerce &#x200B;](upgrade-checklist.md) | Erstellen Sie eine Checkliste für das Upgrade und planen Sie Ihre Adobe Commerce-Upgrade-Strategie. |

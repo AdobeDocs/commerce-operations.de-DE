@@ -15,7 +15,7 @@ Bei digitalen Implementierungsprojekten wird in der Regel eine zentralisierte Te
 
 Das folgende Diagramm zeigt ein Beispiel dafür, wie die Organisationsstruktur aussehen würde:
 
-![Organisationsstruktur](../../assets/playbooks/org-structure.png)
+![Diagramm zur Organisationsstruktur](../../assets/playbooks/org-structure.png)
 
 Zu den Vorteilen dieser Form eines zentralisierten Modells in einem digitalen Implementierungsprojekt gehören:
 

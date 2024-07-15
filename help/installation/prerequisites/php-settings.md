@@ -17,9 +17,9 @@ In diesem Thema wird beschrieben, wie Sie die erforderlichen PHP-Optionen festle
 
 >[!NOTE]
 >
->Die neueste Version von Adobe Commerce erfordert mindestens PHP 8.1. Siehe [Systemanforderungen](../system-requirements.md) für alle unterstützten PHP-Versionen.
+>Die neueste Version von Adobe Commerce erfordert mindestens PHP 8.1. Unter [Systemanforderungen](../system-requirements.md) finden Sie alle unterstützten PHP-Versionen.
 
-Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) im _Commerce on Cloud Infrastructure_ Handbuch.
+Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) im Handbuch _Commerce on Cloud Infrastructure_ .
 
 ## PHP Process Control
 
@@ -65,7 +65,7 @@ Adobe Commerce erfordert bestimmte PHP-Erweiterungen. In den folgenden Listen we
 
 >[!WARNING]
 >
->Wenn Sie PHP 7.4.20 verwenden, setzen Sie `pcre.jit=0` in `php.ini` -Datei. Dies umgeht ein PHP [Fehler](https://bugs.php.net/bug.php?id=81101) verhindert, dass CSS geladen wird.
+>Wenn Sie PHP 7.4.20 verwenden, setzen Sie `pcre.jit=0` in Ihrer `php.ini` -Datei. Dadurch wird ein PHP [bug](https://bugs.php.net/bug.php?id=81101) umgangen, der verhindert, dass CSS geladen wird.
 
 - Legen Sie die Systemzeitzone für PHP fest. Andernfalls funktionieren Fehler wie die folgende Anzeige während der Installation und zeitbezogene Vorgänge wie Cron möglicherweise nicht:
 
@@ -81,7 +81,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
    - Debugging, `2G`
    - Test, `~3-4G`
 
-- Erhöhen Sie die Werte für PHP `realpath_cache_size` und `realpath_cache_ttl` zu den empfohlenen Einstellungen:
+- Erhöhen Sie die Werte für PHP `realpath_cache_size` und `realpath_cache_ttl` auf empfohlene Einstellungen:
 
   ```conf
   realpath_cache_size=10M
@@ -90,9 +90,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Diese Einstellungen ermöglichen es PHP-Prozessen, Pfade zu Dateien zwischenzuspeichern, anstatt sie beim Laden der Seite zu suchen. Siehe [Leistungsoptimierung](https://www.php.net/manual/en/ini.core.php) in der PHP-Dokumentation.
 
-- Aktivieren [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), was für Adobe Commerce 2.1 und höher erforderlich ist.
+- Aktivieren Sie [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), was für Adobe Commerce 2.1 und höher erforderlich ist.
 
-  Adobe empfiehlt die Aktivierung der [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) aus Leistungsgründen. Der OPcache ist in vielen PHP-Distributionen aktiviert.
+  Adobe empfiehlt aus Leistungsgründen die Aktivierung des [PHP OPcache](https://www.php.net/manual/en/book.opcache.php). Der OPcache ist in vielen PHP-Distributionen aktiviert.
 
   Adobe Commerce 2.1 und höher verwenden PHP-Code-Kommentare zur Codegenerierung.
 
@@ -104,9 +104,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationsdateien finden, die zum Aktualisieren der erforderlichen Einstellungen erforderlich sind.
 
-### Suchen `php.ini` Konfigurationsdatei
+### Suchen Sie die Konfigurationsdatei `php.ini` .
 
-Um die Webserverkonfiguration zu finden, führen Sie einen [`phpinfo.php` file](optional-software.md#create-phpinfophp) in Ihrem Webbrowser nach `Loaded Configuration File` wie folgt:
+Um die Webserverkonfiguration zu finden, führen Sie eine [`phpinfo.php` -Datei](optional-software.md#create-phpinfophp) in Ihrem Webbrowser aus und suchen Sie nach dem `Loaded Configuration File` wie folgt:
 
 ![PHP-Infoseite](../../assets/installation/config_phpini-webserver.png)
 
@@ -118,17 +118,17 @@ php --ini | grep "Loaded Configuration File"
 
 >[!NOTE]
 >
->Wenn Sie nur eine `php.ini` -Datei, ändern Sie diese Datei. Wenn Sie zwei `php.ini` Dateien, ändern *both* -Dateien. Andernfalls kann die Leistung unvorhersehbar sein.
+>Wenn Sie nur eine `php.ini` -Datei haben, ändern Sie diese Datei. Wenn Sie zwei `php.ini` -Dateien haben, ändern Sie die *beide* -Dateien. Andernfalls kann die Leistung unvorhersehbar sein.
 
 ### OPcache-Konfigurationseinstellungen suchen
 
-PHP OPcache-Einstellungen befinden sich normalerweise entweder in `php.ini` oder `opcache.ini`. Der Speicherort kann von Ihrem Betriebssystem und Ihrer PHP-Version abhängen. Die OPcache-Konfigurationsdatei verfügt möglicherweise über eine `opcache` -Abschnitt oder Einstellungen wie `opcache.enable`.
+PHP OPcache-Einstellungen befinden sich normalerweise entweder in `php.ini` oder in `opcache.ini`. Der Speicherort kann von Ihrem Betriebssystem und Ihrer PHP-Version abhängen. Die OPcache-Konfigurationsdatei kann einen Abschnitt &quot;`opcache`&quot; oder Einstellungen wie &quot;`opcache.enable`&quot; enthalten.
 
 Verwenden Sie die folgenden Richtlinien, um sie zu finden:
 
 - Apache-Webserver:
 
-  Für Ubuntu mit Apache befinden sich die OPcache-Einstellungen normalerweise im `php.ini` -Datei.
+  Bei Ubuntu mit Apache befinden sich die OPcache-Einstellungen normalerweise in der Datei `php.ini` .
 
   Bei CentOS mit Apache oder nginx befinden sich die OPcache-Einstellungen normalerweise in `/etc/php.d/opcache.ini`
 
@@ -140,14 +140,14 @@ Verwenden Sie die folgenden Richtlinien, um sie zu finden:
 
 - nginx-Webserver mit PHP-FPM: `/etc/php/8.1/fpm/php.ini`
 
-Wenn Sie mehr als eine `opcache.ini`, ändern Sie alle.
+Wenn Sie mehr als einen `opcache.ini` haben, ändern Sie alle.
 
 ## Festlegen von PHP-Optionen
 
 Festlegen von PHP-Optionen:
 
 1. Öffnen Sie eine `php.ini` in einem Texteditor.
-1. Suchen Sie die Zeitzone Ihres Servers in der verfügbaren [Zeitzoneneinstellungen](https://www.php.net/manual/en/timezones.php)
+1. Suchen Sie die Zeitzone Ihres Servers in den verfügbaren [Zeitzoneneinstellungen](https://www.php.net/manual/en/timezones.php) .
 1. Suchen Sie die folgende Einstellung und heben Sie die Auskommentierung auf, falls erforderlich:
 
    ```conf
@@ -156,7 +156,7 @@ Festlegen von PHP-Optionen:
 
 1. Fügen Sie die Zeitzoneneinstellung hinzu, die Sie in Schritt 2 gefunden haben.
 
-1. Ändern Sie den Wert von `memory_limit` zu einem der am Anfang dieses Abschnitts empfohlenen Werte.
+1. Ändern Sie den Wert von `memory_limit` in einen der am Anfang dieses Abschnitts empfohlenen Werte.
 
    Beispiel:
 
@@ -164,7 +164,7 @@ Festlegen von PHP-Optionen:
    memory_limit=2G
    ```
 
-1. Hinzufügen oder Aktualisieren der `realpath_cache` Konfiguration, um die folgenden Werte zu erfüllen:
+1. Fügen Sie die `realpath_cache` -Konfiguration hinzu oder aktualisieren Sie sie, sodass sie den folgenden Werten entspricht:
 
    ```conf
    ;
@@ -180,20 +180,20 @@ Festlegen von PHP-Optionen:
 
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 
-1. Öffnen Sie die andere `php.ini` (wenn sie unterschiedlich sind) und die gleichen Änderungen daran vornehmen.
+1. Öffnen Sie die anderen `php.ini` (sofern sie unterschiedlich sind) und nehmen Sie die gleichen Änderungen daran vor.
 
 ## OPcache-Optionen festlegen
 
-Zum Festlegen `opcache.ini` options:
+So legen Sie `opcache.ini` -Optionen fest:
 
 1. Öffnen Sie die OPcache-Konfigurationsdatei in einem Texteditor:
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/8.1/fpm/php.ini` (nginx-Webserver (CentOS oder Ubuntu))
+   - `/etc/php/8.1/fpm/php.ini` (nginx-Webserver (CentOS oder Ubuntu)
 
-1. Suchen `opcache.save_comments` und entfernen Sie bei Bedarf die Kommentar.
-1. Stellen Sie sicher, dass der Wert auf `1`.
+1. Suchen Sie `opcache.save_comments` und heben Sie die Auskommentierung auf, falls erforderlich.
+1. Stellen Sie sicher, dass der Wert auf `1` eingestellt ist.
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 1. Starten Sie den Webserver neu:
 
@@ -207,6 +207,6 @@ In den folgenden Adobe Commerce-Supportartikeln finden Sie Hilfe zur Fehlerbeheb
 
 - [PHP-Versionsfehler oder 404-Fehler beim Zugriff auf Adobe Commerce in einem Browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
 - [Fehler bei PHP-Einstellungen](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [PHP mcrypt-Erweiterung nicht ordnungsgemäß installiert](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
-- [Probleme bei der Überprüfung der PHP-Versionsbereitschaft](https://support.magento.com/hc/en-us/articles/360033546411)
-- [Häufige Fehler und Lösungen bei PHP](https://support.magento.com/hc/en-us/articles/360030568432)
+- [PHP-Mcrypt-Erweiterung nicht ordnungsgemäß installiert](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
+- [Probleme bei der PHP-Versionsbereitschaftsprüfung](https://support.magento.com/hc/en-us/articles/360033546411)
+- [Häufige PHP-Fatal-Fehler und -Lösungen](https://support.magento.com/hc/en-us/articles/360030568432)

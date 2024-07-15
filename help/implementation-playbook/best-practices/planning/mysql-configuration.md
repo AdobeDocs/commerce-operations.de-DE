@@ -1,15 +1,15 @@
 ---
 title: Best Practices für die MySQL-Konfiguration
-description: Erfahren Sie, wie MySQL-Trigger und Slave-Verbindungen die Performance von Commerce-Sites beeinflussen und wie sie effektiv verwendet werden.
+description: Erfahren Sie, wie MySQL-Trigger und Slave-Verbindungen die Site-Performance von Commerce beeinflussen und wie sie effektiv verwendet werden.
 role: Developer
 feature: Best Practices
-source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
+exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
-
 
 # Best Practices für die MySQL-Konfiguration
 
@@ -47,8 +47,8 @@ Dieser zusätzliche Mehraufwand kann sich negativ auf die Site-Leistung auf der 
 Um Leistungsprobleme bei der Verwendung von Triggern zu vermeiden, befolgen Sie die folgenden Richtlinien:
 
 - Wenn Sie über benutzerdefinierte Trigger verfügen, die bei der Ausführung des Triggers Daten schreiben, verschieben Sie diese Logik, um stattdessen direkt in die Audit-Tabellen zu schreiben. Fügen Sie beispielsweise im Anwendungscode nach der Abfrage, für die Sie den Trigger erstellen möchten, eine zusätzliche Abfrage hinzu.
-- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt von der Anwendungsseite aus in die Tabellen zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Für zusätzliche Unterstützung, Fragen oder Bedenken: [Senden eines Adobe Commerce Support-Tickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt von der Anwendungsseite aus in die Tabellen zu schreiben. Suchen Sie mithilfe der &quot;[`SHOW TRIGGERS` SQL Statement](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html)&quot; nach vorhandenen Triggern in Ihrer Datenbank.
+- Wenn Sie weitere Unterstützung, Fragen oder Bedenken benötigen, senden Sie ein Support-Ticket für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).[
 
 ## Slave-Verbindungen
 
@@ -62,13 +62,13 @@ Adobe Commerce in Cloud-Infrastruktur, nur Pro-Architektur
 
 ### Konfiguration
 
-In der Cloud-Infrastruktur von Adobe Commerce können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung außer Kraft setzen, indem Sie die [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) -Variable. Setzen Sie diese Variable auf `true` , um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
+In der Cloud-Infrastruktur von Adobe Commerce können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung außer Kraft setzen, indem Sie die Variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) festlegen. Setzen Sie diese Variable auf &quot;`true`&quot;, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
 
 **Aktivieren der MySQL-Slave-Verbindung**:
 
 1. Wechseln Sie auf Ihrer lokalen Workstation zum Projektverzeichnis.
 
-1. Im `.magento.env.yaml` -Datei, legen Sie die `MYSQL_USE_SLAVE_CONNECTION` auf &quot;true&quot;.
+1. Setzen Sie in der Datei `.magento.env.yaml` den Wert `MYSQL_USE_SLAVE_CONNECTION` auf &quot;true&quot;.
 
    ```
    stage:
@@ -76,6 +76,6 @@ In der Cloud-Infrastruktur von Adobe Commerce können Sie die Standardkonfigurat
        MYSQL_USE_SLAVE_CONNECTION: true
    ```
 
-1. Bestätigen Sie die `.magento.env.yaml` Dateiänderungen und Push-Benachrichtigungen an die Remote-Umgebung.
+1. Binden Sie die Änderungen der `.magento.env.yaml`-Datei ein und leiten Sie sie an die Remote-Umgebung weiter.
 
    Nach erfolgreichem Abschluss der Bereitstellung wird die MySQL-Slave-Verbindung für die Cloud-Umgebung aktiviert.

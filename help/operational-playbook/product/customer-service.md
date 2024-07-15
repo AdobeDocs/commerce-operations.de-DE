@@ -5,7 +5,7 @@ exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
 feature: Best Practices, Customers
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Der E-Commerce ist digital aufgebaut und das einzige Team, das mit dem echten Ku
 
 Einzelhändler müssen im Hinblick auf den Kundenservice proaktiv sein, da nicht nur der Markenname auf dem Spiel steht, sondern vor allem die Treue des Kunden. Damit Einzelhändler das beste Kundenerlebnis bieten können, gibt es einige Best Practices, die sie anwenden können:
 
-- **Multi-Support-Kanal**—Die Bereitstellung von Diensten nur per E-Mail oder Telefon reicht in der heutigen Zeit nicht aus. Der Kundendienst muss auf verschiedenen Kanälen bereitgestellt werden, z. B. Live-Chat, E-Mails, Telefonanrufe, soziale Medien und Textnachrichten. Jede dieser Funktionen verfügt über ihre eigenen Vor- und Nachteile, die Einzelhändler analysieren müssen.
+- **Multi-Support-Kanal**: Die Bereitstellung von Diensten nur per E-Mail oder Telefon reicht in der heutigen Zeit nicht aus. Der Kundendienst muss auf verschiedenen Kanälen bereitgestellt werden, z. B. Live-Chat, E-Mails, Telefonanrufe, soziale Medien und Textnachrichten. Jede dieser Funktionen verfügt über ihre eigenen Vor- und Nachteile, die Einzelhändler analysieren müssen.
 
-- **Personalisierter Service**- Die gesamte Kundenaktivität erfolgt online, welche Einzelhändler nachverfolgen können, um das Kundenverhalten zu verstehen. Wenn ein Kunde beispielsweise das Team des Kundendienstes kontaktiert, verfügt das Team über seine Informationen, wie z. B. seinen Namen, seine E-Mail-Adresse, seinen Bestellverlauf und die Rückgabe. Dies hilft dem Kundendienst bei der Bereitstellung schneller und genauer Dienste und bietet Kunden auch einen personalisierten Service.
+- **Personalisierter Service**: Alle Kundenaktivitäten werden online ausgeführt, die Einzelhändler nachverfolgen können, um das Kundenverhalten zu verstehen. Wenn ein Kunde beispielsweise das Team des Kundendienstes kontaktiert, verfügt das Team über seine Informationen, wie z. B. seinen Namen, seine E-Mail-Adresse, seinen Bestellverlauf und die Rückgabe. Dies hilft dem Kundendienst bei der Bereitstellung schneller und genauer Dienste und bietet Kunden auch einen personalisierten Service.
 
-- **Self-Service**—Kunden können auch Selbstbedienung erhalten, z. B. die Bereitstellung von häufig gestellten Fragen, Datenschutzrichtlinien, Nutzungsbedingungen und Foren.
+- **Self-Service**: Kunden können auch mit einem Self-Service versorgt werden, z. B. durch die Bereitstellung von häufig gestellten Fragen, Datenschutzrichtlinien, Nutzungsbedingungen und Foren.
 
 Einzelhändler sollten sich in die Lage versetzen, das Problem zu verstehen und das beste Kundenerlebnis zu bieten. Das Kundenerlebnis hält den Kunden treu und fördert die Marke.
 

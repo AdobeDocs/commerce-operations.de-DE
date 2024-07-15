@@ -16,7 +16,7 @@ Die Projektverwaltung ist eine Aufsichtsfunktion, die mit der Leitungsstruktur d
 
 Das Governance-Modell definiert, dokumentiert und kommuniziert benutzerdefinierte und effektive Vorgehensweisen, um eine umfassende Methode zur Steuerung des Projekts und zur Gewährleistung des Erfolgs auf allen Ebenen regelmäßige Sichtbarkeit zu bieten. Es enthält einen Rahmen für die Entscheidungsfindung, definiert Rollen, Verantwortlichkeiten und Verbindlichkeiten für die Durchführung des Projekts und bestimmt die Wirksamkeit. Die Governance-Struktur erstreckt sich vom Ausführungsteam bis hin zum Executive Management und definiert die Aktivitäten, Berichte, Eskalationen und den Informationsfluss.
 
-![Infografik zur Projektverwaltung](../../assets/playbooks/project-governance.svg)
+![Infografik zur Projekt-Governance](../../assets/playbooks/project-governance.svg)
 
 Auf verschiedenen Ebenen untersuchen die Teams spezifische Sprint- und Projektmetriken, um den Fortschritt zu verstehen und bei Bedarf Korrekturmaßnahmen zu ergreifen. Diese Metriken auf Sprint-Ebene können die Geschwindigkeit und den Niederschlag jedes Sprints umfassen.
 
@@ -62,11 +62,11 @@ Neben den Sprint-Metriken ist es auch wichtig, die KPIs für Projekt- und Qualit
 
 ## Storyboard und Velocity
 
-![Beispiel-Kanban-Board](../../assets/playbooks/kanban-board-chart.svg)
+![Beispiel-Kanban-Pinnwand](../../assets/playbooks/kanban-board-chart.svg)
 
 ## Sprint- und Release-Burndown
 
-![Beispieldiagramm für den Sprint- und Freigabeschub](../../assets/playbooks/sprint-release-burndown.svg)
+![Beispieldiagramm für den Bereinigungs- und Freigabeschub](../../assets/playbooks/sprint-release-burndown.svg)
 
 Herausforderungen oder Änderungen treten während der gesamten Dauer eines Projekts auf. Wenn Sie den richtigen Personen in Ihrer Organisation die Möglichkeit geben, die Aufgaben zu verfolgen, zu messen und zu drehen, wenn eine Herausforderung erfüllt wird, können Sie die Wahrscheinlichkeit erhöhen, dass Sie aus dem Projekt herauskommen, nachdem Sie Ihre Ziele erreicht haben und mit dem Ergebnis zufrieden sind.
 

@@ -19,12 +19,12 @@ Scrum ermutigt selbstorganisierte, funktionsübergreifende Teams, Probleme gemei
 
 In der Scrum-Methode werden mehrere Sitzungen eingesetzt, um Transparenz und Fortschritte bei einem E-Commerce-Projekt zu fördern:
 
-- **Raumplanung**—Ein Planungstreffen, bei dem Teammitglieder zusammenkommen, um zu entscheiden, wie viel Arbeit in einem Sprint abgeschlossen werden kann.
+- **Sprint-Planung**: Ein Planungstreffen, bei dem Teammitglieder zusammenkommen, um zu entscheiden, wie viel Arbeit in einem Sprint abgeschlossen werden kann.
 
-- **Täglicher Scrubbing**—Ein 15-minütiges Meeting, auf dem Informationen darüber geteilt werden, woran die einzelnen Teammitglieder arbeiten.
+- **Täglicher Scrubbing** - Ein 15-minütiges Meeting, in dem Updates darüber geteilt werden, woran jedes Teammitglied arbeitet.
 
-- **Sprint-Überprüfung**—Ein Treffen, bei dem der Fortschritt des Sprints aufgezeigt wurde.
+- **Sprint-Überprüfung**: Ein Meeting, bei dem der Fortschritt aus dem Sprint-Prozess demonstriert wird.
 
-- **Retrospektive Sprint**—Ein Treffen, bei dem über den vorherigen Sprint nachgedacht und Verbesserungsmöglichkeiten ermittelt wurden.
+- **Sprint retrospective**: Ein Treffen, bei dem über den vorherigen Sprint nachgedacht und Verbesserungsmöglichkeiten ermittelt wurden.
 
 Am Ende jedes Sprints sollte ein Wertzuwachs (z. B. neue Funktionen, Fehlerbehebungen, Upgrades oder allgemeine Code-Updates) bereitgestellt und für Kunden freigegeben werden.

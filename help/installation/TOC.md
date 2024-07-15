@@ -15,7 +15,7 @@ ht-degree: 2%
 - [Übersicht](overview.md)
 - [Systemanforderungen](system-requirements.md)
 - Voraussetzungen {#prerequisites}
-   - [Übersicht](prerequisites/overview.md)
+   - [Überblick](prerequisites/overview.md)
    - Dateisystem {#file-system}
       - [Übersicht](prerequisites/file-system/overview.md)
       - [Berechtigungen konfigurieren](prerequisites/file-system/configure-permissions.md)
@@ -38,7 +38,7 @@ ht-degree: 2%
    - [Optionale Software](prerequisites/optional-software.md)
 - [Schnellstartinstallation](composer.md)
 - [Erweiterte Installation](advanced.md)
-- Schritte nach der Installation {#next-steps}
+- Post-Installationsschritte {#next-steps}
    - [Installation überprüfen](next-steps/verify.md)
    - [Anwendung konfigurieren](next-steps/configuration.md)
    - [Festlegen einer Umfrage (optional)](next-steps/set-umask.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Commerce deinstallieren oder neu installieren](tutorials/uninstall.md)
    - [Designs deinstallieren](tutorials/themes.md)
    - [Datenbankschema aktualisieren](tutorials/database-upgrade.md)
-- [Zurück zu den Betriebsleitfäden](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

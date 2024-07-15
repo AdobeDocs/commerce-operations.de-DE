@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie ein Produktionssystem für die Commerce-Anwen
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,23 @@ ht-degree: 0%
 Sie können ein Produktionssystem haben. Folgendes muss zutreffen:
 
 - Der gesamte Commerce-Code befindet sich in der Quell-Code-Verwaltung im selben Repository wie die Entwicklungs- und Build-Systeme.
-- Stellen Sie sicher, dass alle folgenden Elemente _enthalten_ in der Quell-Code-Verwaltung:
+- Stellen Sie sicher, dass alle folgenden Elemente _im Quellcode-Steuerelement enthalten sind:_
 
    - `app/etc/config.php`
-   - `generated` Verzeichnis (und Unterverzeichnisse)
-   - `pub/media` directory
-   - `pub/media/wysiwyg` Verzeichnis (und Unterverzeichnisse)
-   - `pub/static` Verzeichnis (und Unterverzeichnisse)
+   - Ordner `generated` (und Unterverzeichnisse)
+   - Verzeichnis `pub/media`
+   - Ordner `pub/media/wysiwyg` (und Unterverzeichnisse)
+   - Ordner `pub/static` (und Unterverzeichnisse)
 
-- Commerce 2.2 oder höher muss installiert und für [Produktionsmodus](../bootstrap/application-modes.md#production-mode)
-- Sie verfügt über Dateisystemeigentümer und -berechtigungen, wie hier beschrieben: [Voraussetzungen für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md).
+- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus](../bootstrap/application-modes.md#production-mode) festgelegt werden
+- Sie verfügt über Dateisystemeigentum und -berechtigungen, wie in [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md) beschrieben.
 
 ## Einrichten eines Produktionsgeräts
 
 So richten Sie einen Produktionsrechner ein:
 
-1. Melden Sie sich nach der Installation von Commerce oder dem Abruf von der Quell-Code-Verwaltung beim Produktionsserver als Eigentümer des Dateisystems an oder wechseln Sie zu diesem.
-1. Erstellen `~/.ssh/.composer/auth.json` wenn Sie dies noch nicht getan haben.
+1. Nachdem Sie Commerce installiert oder aus der Quell-Code-Verwaltung abgerufen haben, melden Sie sich beim Produktionsserver als Eigentümer des Dateisystems an oder wechseln Sie zu diesem.
+1. Erstellen Sie `~/.ssh/.composer/auth.json` , falls noch nicht geschehen.
 
    Erstellen Sie den Ordner:
 
@@ -38,9 +38,9 @@ So richten Sie einen Produktionsrechner ein:
    mkdir -p ~/.ssh/.composer
    ```
 
-   Erstellen `auth.json` in diesem Verzeichnis.
+   Erstellen Sie `auth.json` in diesem Verzeichnis.
 
-   `auth.json` muss enthalten: [Authentifizierungsschlüssel](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` muss Ihre [Authentifizierungsschlüssel](../../installation/prerequisites/authentication-keys.md) enthalten.
 
    Ein Beispiel:
 
@@ -56,29 +56,29 @@ So richten Sie einen Produktionsrechner ein:
    ```
 
 1. Speichern Sie Ihre Änderungen in `auth.json`.
-1. Kopieren `<Commerce root dir>/app/etc/env.php` von Ihrem Entwicklungssystem zu Ihrem Produktionssystem.
-1. Öffnen `env.php` in einem Texteditor verwenden und die erforderlichen Werte ändern (z. B. Informationen zur Datenbankverbindung).
-1. Führen Sie die [`magento config:set`](../cli/set-configuration-values.md) oder [`magento config:set-sensitive`](../cli/set-configuration-values.md) -Befehl, um die Werte aller systemspezifischen bzw. sensiblen Konfigurationswerte festzulegen.
+1. Kopieren Sie `<Commerce root dir>/app/etc/env.php` aus Ihrem Entwicklungssystem in Ihr Produktionssystem.
+1. Öffnen Sie `env.php` in einem Texteditor und ändern Sie die erforderlichen Werte (z. B. Informationen zur Datenbankverbindung).
+1. Führen Sie den Befehl [`magento config:set`](../cli/set-configuration-values.md) oder [`magento config:set-sensitive`](../cli/set-configuration-values.md) aus, um die Werte aller systemspezifischen bzw. sensiblen Konfigurationswerte festzulegen.
 
    Im folgenden Abschnitt finden Sie ein Beispiel.
 
 ## Festlegen von Konfigurationswerten in Ihrem Produktionssystem
 
-In diesem Abschnitt wird beschrieben, wie Sie mithilfe der `magento config:sensitive:set` Befehl.
+In diesem Abschnitt wird beschrieben, wie Sie mithilfe des Befehls `magento config:sensitive:set` sensible Werte in Ihrem Produktionssystem festlegen.
 
 So legen Sie sensible Werte fest:
 
-1. Suchen Sie nach einem Wert, der mithilfe der [Sensible Value Reference](../reference/config-reference-sens.md).
+1. Suchen Sie einen Wert, der mithilfe der [sensiblen Wertreferenz](../reference/config-reference-sens.md) festgelegt werden soll.
 1. Notieren Sie den Konfigurationspfad für die Einstellung.
 1. Melden Sie sich beim Produktionssystem als Eigentümer des Dateisystems an oder wechseln Sie zu ihm.
-1. Wechseln Sie zum Installationsverzeichnis für Commerce.
+1. Wechseln Sie zum Installationsordner von Commerce.
 1. Geben Sie den folgenden Befehl ein:
 
    ```bash
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
-   So legen Sie beispielsweise den Wert des YouTube-API-Schlüssels auf `1234`, eingeben
+   Um beispielsweise den Wert des YouTube-API-Schlüssels auf `1234` festzulegen, geben Sie
 
    ```bash
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
@@ -95,8 +95,8 @@ So legen Sie sensible Werte fest:
 1. Um zu überprüfen, ob der Wert festgelegt wurde, melden Sie sich beim Administrator an.
 1. Suchen Sie die Einstellung in der Admin-Konsole.
 
-   Beispielsweise befindet sich die YouTube-API-Schlüsseleinstellung unter **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Katalog** > **Produktvideo**.
+   Beispielsweise befindet sich die YouTube-API-Schlüsseleinstellung unter &quot;**Stores**&quot;> &quot;Einstellungen&quot;> &quot;**Konfiguration**&quot;> &quot;**Katalog**&quot;> &quot;**Katalog**&quot;> &quot;**Produktvideo**&quot;.
 
    Die Einstellung wird im Admin angezeigt und kann nicht bearbeitet werden. Die folgende Abbildung zeigt ein Beispiel.
 
-   ![Sensitive Einstellung in der Admin-Konsole](../../assets/configuration/sensitive-set.png)
+   ![Sensitive Einstellung in Admin](../../assets/configuration/sensitive-set.png)

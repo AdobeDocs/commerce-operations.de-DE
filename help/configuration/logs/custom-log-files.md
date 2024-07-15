@@ -6,14 +6,14 @@ badge: label="Beitragt von Atwix" type="Informative" url="https://www.atwix.com/
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
 
 # Schreiben in eine benutzerdefinierte Protokolldatei
 
-Die `Magento\Framework\Logger` -Modul enthält die folgenden Handler-Klassen:
+Das Modul `Magento\Framework\Logger` enthält die folgenden Handler-Klassen:
 
 | Klasse | Protokolldatei |
 | ----- | -------- |
@@ -23,18 +23,18 @@ Die `Magento\Framework\Logger` -Modul enthält die folgenden Handler-Klassen:
 | [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
 | [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
 
-Sie können sie im `lib/internal/Magento/Framework/Logger/Handler` Verzeichnis.
+Sie können sie im Verzeichnis `lib/internal/Magento/Framework/Logger/Handler` finden.
 
 Sie können einen der folgenden Ansätze zum Anmelden bei einer benutzerdefinierten Datei verwenden:
 
-- Richten Sie eine benutzerdefinierte Protokolldatei im `di.xml`
+- Einrichten einer benutzerdefinierten Protokolldatei im `di.xml`
 - Einrichten einer benutzerdefinierten Datei in der benutzerdefinierten Logger-Handler-Klasse
 
-## Richten Sie eine benutzerdefinierte Protokolldatei im `di.xml`
+## Einrichten einer benutzerdefinierten Protokolldatei im `di.xml`
 
-In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) zum Protokoll `debug` Nachrichten in eine benutzerdefinierte Protokolldatei anstelle einer standardmäßigen `/var/log/debug.log`.
+In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) verwendet werden, um `debug` -Meldungen in einer benutzerdefinierten Protokolldatei anstatt in einer standardmäßigen `/var/log/debug.log` zu protokollieren.
 
-1. Im `di.xml` -Datei Ihres Moduls eine benutzerdefinierte Protokolldatei als [virtueller Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. Definieren Sie in der Datei `di.xml` Ihres Moduls eine benutzerdefinierte Protokolldatei als [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -44,9 +44,9 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
    </virtualType>
    ```
 
-   Die `name` Wert von `Magento\Payment\Model\Method\MyCustomDebug` muss eindeutig sein.
+   Der `name` -Wert von `Magento\Payment\Model\Method\MyCustomDebug` muss eindeutig sein.
 
-1. Definieren des Handlers in einem anderen [virtueller Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) mit einer eindeutigen `name`:
+1. Definieren Sie den Handler in einem anderen [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) mit einer eindeutigen `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
    </virtualType>
    ```
 
-1. Injizieren Sie die `MyCustomLogger` [virtueller Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) im `Magento\Payment\Model\Method\Logger` -Objekt:
+1. Spritzen Sie den `MyCustomLogger` [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in das Objekt `Magento\Payment\Model\Method\Logger` :
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -68,7 +68,7 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
    </type>
    ```
 
-1. Die virtuelle Klasse `Magento\Payment\Model\Method\MyCustomDebug` wird in die `debug` Handler der `$logger` -Eigenschaft in der `Magento\Payment\Model\Method\Logger` -Klasse.
+1. Die virtuelle Klasse `Magento\Payment\Model\Method\MyCustomDebug` wird in den `debug` -Handler der Eigenschaft `$logger` in der Klasse `Magento\Payment\Model\Method\Logger` eingefügt.
 
    ```xml
    ...
@@ -77,13 +77,13 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
    </argument>
    ```
 
-Ausnahmemeldungen werden bei der `/var/log/payment.log` -Datei.
+Ausnahmemeldungen werden in der Datei `/var/log/payment.log` protokolliert.
 
 ## Einrichten einer benutzerdefinierten Protokolldatei in der Logger-Handler-Klasse
 
-In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klasse zur Protokollierung verwendet wird `error` Meldungen in eine bestimmte Protokolldatei eintragen.
+In diesem Beispiel wird gezeigt, wie mit einer benutzerdefinierten Logger-Handler-Klasse `error` -Meldungen in einer bestimmten Protokolldatei protokolliert werden.
 
-1. Erstellen Sie eine Klasse, die Daten protokolliert. In diesem Beispiel wird die Klasse definiert in `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
+1. Erstellen Sie eine Klasse, die Daten protokolliert. In diesem Beispiel wird die Klasse in `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php` definiert.
 
    ```php
    <?php
@@ -117,7 +117,7 @@ In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klas
    }
    ```
 
-1. Definieren Sie den Handler für diese Klasse als [virtueller Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) im Modul `di.xml` -Datei.
+1. Definieren Sie den Handler für diese Klasse als [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in der `di.xml` -Datei des Moduls.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -131,7 +131,7 @@ In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klas
 
    `MyCustomLogger` ist eine eindeutige Kennung.
 
-1. Im `type` -Definition geben Sie den Klassennamen an, in den der benutzerdefinierte Logger-Handler eingefügt wird. Verwenden Sie den Namen des virtuellen Typs aus dem vorherigen Schritt als Argument für diesen Typ.
+1. Geben Sie in der Definition `type` den Klassennamen an, in den der benutzerdefinierte Logger-Handler eingefügt wird. Verwenden Sie den Namen des virtuellen Typs aus dem vorherigen Schritt als Argument für diesen Typ.
 
    ```xml
    <type name="Vendor\ModuleName\Observer\MyObserver">
@@ -141,7 +141,7 @@ In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klas
    </type>
    ```
 
-   Quellcode von `Vendor\ModuleName\Observer\MyObserver` -Klasse:
+   Source-Code der `Vendor\ModuleName\Observer\MyObserver` -Klasse:
 
    ```php
    <?php
@@ -193,7 +193,7 @@ In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klas
    }
    ```
 
-1. Die Klasse `Vendor\ModuleName\Logger\Handler\ErrorHandler` wird in die `error` Handler der `$logger` -Eigenschaft in der `Vendor\ModuleName\Observer\MyObserver`.
+1. Die Klasse `Vendor\ModuleName\Logger\Handler\ErrorHandler` wird in den `error` -Handler der Eigenschaft `$logger` im `Vendor\ModuleName\Observer\MyObserver` eingefügt.
 
    ```xml
    ...
@@ -203,7 +203,7 @@ In diesem Beispiel wird gezeigt, wie eine benutzerdefinierte Logger-Handler-Klas
    ...
    ```
 
-Ausnahmemeldungen werden im `/var/log/my_custom_logger/error.log` -Datei.
+Ausnahmemeldungen werden in der Datei `/var/log/my_custom_logger/error.log` protokolliert.
 
 <!-- link definitions -->
 

@@ -11,30 +11,30 @@ ht-degree: 0%
 
 # den Umfang der Aktualisierung verstehen
 
-Überprüfen Sie die [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) um den Umfang einer Version zu verstehen, einschließlich Verbesserungen, Fehlerbehebungen und bekannter Probleme, die sich auf Drittanbieter- und benutzerdefinierte Module auswirken könnten.
+Lesen Sie die [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) , um den Umfang einer Version zu verstehen, einschließlich Verbesserungen, Fehlerbehebungen und bekannten Problemen, die sich auf Drittanbieter- und benutzerdefinierte Module auswirken könnten.
 
 ## Abwärtskompatible Änderungen
 
 Adobe Commerce-Versionen können abwärtskompatible Änderungen enthalten. Lesen Sie unsere Dokumentation zu rückwärtsinkompatiblen Änderungen. Weitere Informationen finden Sie unter:
 
-- **[Wichtige Veränderungen](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**—Änderungen, die erhebliche Auswirkungen haben und eine detaillierte Erläuterung und spezielle Anweisungen erfordern, um sicherzustellen, dass Module von Drittanbietern weiterhin funktionieren.
-- **[Geringfügige Änderungsreferenz](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**—Referenzdokumentation, die von der Codebasis generiert wurde und kleinere Änderungen an Klassen, API-Mitgliedschaft, Datenbank, Abhängigkeitseinfügung, Schnittstellen, Layouts, System und XSD beschreibt.
+- **[Wichtige Änderungen - Highlights](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** - Änderungen, die erhebliche Auswirkungen haben und detaillierte Erläuterungen und spezielle Anweisungen erfordern, um sicherzustellen, dass Module von Drittanbietern weiterhin funktionieren.
+- **[Geringfügige Änderungsreferenz](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** - Referenzdokumentation, die von der Codebasis generiert wurde und geringfügige Änderungen an Klassen, API-Mitgliedschaft, Datenbank, Abhängigkeitseinfügung, Schnittstellen, Layouts, System und XSD beschreibt.
 
 ## Drittanbietererweiterungen
 
-Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher, dass _all_ aufgelistete Erweiterungen sind innerhalb von 30 Tagen nach dem GA-Datum mit der neuesten veröffentlichten Version kompatibel. Aus diesem Grund ist es wichtig, dass Sie Ihre Drittanbietererweiterungen, wann immer möglich, über den Marketplace abrufen.
+Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher, dass _alle_ aufgelisteten Erweiterungen innerhalb von 30 Tagen nach dem GA-Datum mit der neuesten veröffentlichten Version kompatibel sind. Aus diesem Grund ist es wichtig, dass Sie Ihre Drittanbietererweiterungen, wann immer möglich, über den Marketplace abrufen.
 
 ## Benutzerdefinierte Module
 
-Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, auf die Sie ein Upgrade durchführen möchten. Dies ist der zeitintensivste und ressourcenintensivste Aktualisierungsprozess. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtskompatiblen Änderungen suchen und sich über neue Vorgehensweisen, wie z. B. die Aufhebung der Controller-Zusammensetzung, informieren. Weitere Informationen hierzu finden Sie im Abschnitt [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Stellen Sie außerdem sicher, dass Sie [Best Practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) für die Modulentwicklung.
+Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, auf die Sie ein Upgrade durchführen möchten. Dies ist der zeitintensivste und ressourcenintensivste Aktualisierungsprozess. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtskompatiblen Änderungen suchen und sich über neue Vorgehensweisen, wie z. B. die Aufhebung der Controller-Zusammensetzung, informieren. Weitere Informationen hierzu finden Sie in den [Versionshinweisen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Stellen Sie außerdem sicher, dass Sie die [Best Practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) für die Modulentwicklung befolgen.
 
 ## [!DNL Upgrade Compatibility Tool]
 
-Die [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das Ihre Instanz auf potenzielle Aktualisierungsprobleme hin analysiert. Es sucht nach Problemen zwischen der aktuellen Version, die Sie installiert haben, und der Version, auf die Sie ein Upgrade durchführen möchten.
+Der [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das Ihre Instanz auf potenzielle Aktualisierungsprobleme hin analysiert. Es sucht nach Problemen zwischen der aktuellen Version, die Sie installiert haben, und der Version, auf die Sie ein Upgrade durchführen möchten.
 
 Die Verwendung dieses Tools reduziert den Aufwand Ihres Teams, den Umfang und die Auswirkungen eines Upgrades zu verstehen. Dies hilft Ihnen, gängige Code-Probleme beim Aktualisieren zu vermeiden, und gibt eine klare Anleitung dazu, wie identifizierte Probleme gelöst werden. Darüber hinaus hilft es, die wichtigsten Probleme zu priorisieren, die für eine erfolgreiche Aktualisierung erforderlich sind. So sparen Sie Zeit und Kosten bei der Aktualisierung.
 
-In den folgenden Abschnitten erhalten Sie die ersten Schritte mit dem [!DNL Upgrade Compatibility Tool]. Siehe [!DNL Upgrade Compatibility Tool] [Handbuch](../upgrade-compatibility-tool/overview.md) für weitere technische Details und erweiterte Anwendungsfälle.
+In den folgenden Abschnitten erhalten Sie Informationen zu den ersten Schritten mit dem [!DNL Upgrade Compatibility Tool]. Weitere technische Details und erweiterte Anwendungsfälle finden Sie im [!DNL Upgrade Compatibility Tool] [Handbuch](../upgrade-compatibility-tool/overview.md) .
 
 ### Tool herunterladen
 
@@ -54,7 +54,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 >[!NOTE]
 >
-> Die `<dir>` -Argument ist das Verzeichnis, in dem Ihre Codebasis gespeichert ist. Die `-c` vergleicht Ihre Codebasis mit der angegebenen Version.
+> Das `<dir>` -Argument ist der Ordner, in dem Ihre Codebasis gespeichert ist. Die Option `-c` vergleicht Ihre Codebasis mit der angegebenen Version.
 
 So identifizieren Sie die wichtigsten Probleme, die Ihr Team lösen sollte:
 
@@ -64,21 +64,21 @@ bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues �
 
 Einige weitere Optionen, die mit diesem Befehl verwendet werden können:
 
-- `--ignore-current-version-compatibility-issues`—Unterdrückt alle bekannten kritischen Probleme, Fehler und Warnungen gegen Ihre aktuelle Version. Es werden nur Fehler gegenüber der Version bereitgestellt, die Sie aktualisieren möchten.
+- `--ignore-current-version-compatibility-issues` - Unterdrückt alle bekannten kritischen Probleme, Fehler und Warnungen gegenüber Ihrer aktuellen Version. Es werden nur Fehler gegenüber der Version bereitgestellt, die Sie aktualisieren möchten.
 
-- `--min-issue-level`—Ermöglicht das Festlegen des minimalen Problemniveaus, damit nur die wichtigsten Probleme bei Ihrem Upgrade priorisiert werden. Die Optionen sind Warnung, Fehler und kritisch in aufsteigender Reihenfolge der Schwere.
+- `--min-issue-level` - Ermöglicht die Festlegung des minimalen Problemniveaus, damit nur die wichtigsten Probleme bei der Aktualisierung priorisiert werden. Die Optionen sind Warnung, Fehler und kritisch in aufsteigender Reihenfolge der Schwere.
 
-- `-m | [=MODULE-PATH]`—Wenn Sie nur ein bestimmtes Anbieter, Modul oder Verzeichnis analysieren möchten, können Sie auch den Pfad als Option angeben.
+- `-m | [=MODULE-PATH]` - Wenn Sie nur ein bestimmtes Anbieter, Modul oder Verzeichnis analysieren möchten, können Sie auch den Pfad als Option angeben.
 
-- `--vanilla-dir`—Ermöglicht es Ihnen, den Kerncode auf eine nicht standardmäßige Implementierung von Funktionen oder Anpassungen zu überprüfen. Es ist wichtig, dass diese im Vorfeld bereinigt werden. Eine Vanilla-Instanz Ihrer Version wird automatisch zur Referenz heruntergeladen.
+- `--vanilla-dir` - Ermöglicht es Ihnen, den Kerncode auf eine nicht standardmäßige Implementierung von Funktionen oder Anpassungen zu überprüfen. Es ist wichtig, dass diese im Vorfeld bereinigt werden. Eine Vanilla-Instanz Ihrer Version wird automatisch zur Referenz heruntergeladen.
 
   >[!NOTE]
   >
-  > Dies kann auch mit der `core:code:changes` -Befehl im Tool).
+  > Dies kann auch mit dem Befehl `core:code:changes` im Tool durchgeführt werden.
 
 ### Analyse der Ausgabe
 
-Die [!DNL Upgrade Compatibility Tool] exportiert eine JSON-Datei, die den betroffenen Code oder die betroffenen Module, den Schweregrad und eine Beschreibung des Problems für jedes auftretende Problem enthält. Außerdem wird ein Zusammenfassungsbericht mit einem Komplexitätswert ausgegeben, der es Ihrem Team ermöglicht, ungefähr zu verstehen, was für die Aktualisierung auf die neueste Version erforderlich ist. Je niedriger der Komplexitätswert ist, desto einfacher ist es, das Upgrade durchzuführen.
+Der [!DNL Upgrade Compatibility Tool] exportiert eine JSON-Datei, die den betroffenen Code oder die betroffenen Module, den Schweregrad und eine Beschreibung des Problems für jedes auftretende Problem enthält. Außerdem wird ein Zusammenfassungsbericht mit einem Komplexitätswert ausgegeben, der es Ihrem Team ermöglicht, ungefähr zu verstehen, was für die Aktualisierung auf die neueste Version erforderlich ist. Je niedriger der Komplexitätswert ist, desto einfacher ist es, das Upgrade durchzuführen.
 
 Die folgende Ausgabe zeigt einen Beispielzusammenfassungsbericht:
 
@@ -111,4 +111,4 @@ Es wird empfohlen, die Ergebnisse jedes Aktualisierungsprojekts zu speichern, da
 
 Wir empfehlen Ihnen außerdem, das Tool regelmäßig während der Arbeit an der Aktualisierung auszuführen, um einen Überblick über Ihren Fortschritt zu erhalten. Die Anzahl der Probleme sollte mit der Korrektur verringert werden. Dies hilft Ihrem Team auch bei der Entscheidung über den besten Ansatz zur Verteilung der Arbeit.
 
-Die [!DNL Upgrade Compatibility Tool] wird auch weiterhin verbessert und zukünftige Versionen enthalten Funktionen wie Autofixes, die Ihnen helfen, Probleme so schnell wie möglich zu beheben. Die im Januar 2022 veröffentlichten neuesten Verbesserungen umfassen Kompatibilitätstests für PHP 8.1 und HTML-Visualisierungsfunktionen, mit denen Sie schnell Bereiche ermitteln können, die möglicherweise ein größeres Upgrade erfordern.
+Die [!DNL Upgrade Compatibility Tool] -Version wird weiterhin verbessert und künftige Versionen enthalten Funktionen wie Autofixes, mit denen Sie Probleme so schnell wie möglich beheben können. Die im Januar 2022 veröffentlichten neuesten Verbesserungen umfassen Kompatibilitätstests für PHP 8.1 und HTML-Visualisierungsfunktionen, mit denen Sie schnell Bereiche ermitteln können, die möglicherweise ein größeres Upgrade erfordern.

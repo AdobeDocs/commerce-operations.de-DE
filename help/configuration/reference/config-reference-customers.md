@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Referenz zu Kundenkonfigurationspfaden
 
-In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen in Admin unter **Stores** > Einstellungen > **Konfiguration** > **Kunden**.
+In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, die für Optionen im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Kunden** verfügbar sind.
 
-Die [`magento app:config:dump` command](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei, `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen verwenden](override-config-settings.md#environment-variables). Dieses Thema _not_ Liste [sensible und systemspezifische Werte](config-reference-sens.md).
+Der Befehl [`magento app:config:dump`](../cli/export-configuration.md) schreibt diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Quell-Code-Verwaltung befinden sollte. Informationen zum optionalen Außerkraftsetzen von Konfigurationseinstellungen oder zum Festlegen sensibler Einstellungen finden Sie unter [Verwenden von Umgebungsvariablen zum Außerkraftsetzen von Konfigurationseinstellungen](override-config-settings.md#environment-variables). Bei diesem Thema werden _nicht_ vertrauliche und systemspezifische Werte [ aufgelistet.](config-reference-sens.md)
 
 ## Newsletter-Pfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Newsletter**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Kunden** > **Newsletter** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -35,7 +35,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Benutzerkonfigurationspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Kundenkonfiguration**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Kunden** > **Kundenkonfiguration** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -77,7 +77,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 | Vorname anzeigen (initial) | `customer/address/middlename_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Suffix anzeigen | `customer/address/suffix_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Suffix-Dropdown-Optionen | `customer/address/suffix_options` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Geburtsdatum anzeigen | `customer/address/dob_show`<br>Achten Sie in Übereinstimmung mit den aktuellen Best Practices für Sicherheit und Datenschutz darauf, dass Sie alle potenziellen rechtlichen und sicherheitstechnischen Risiken im Zusammenhang mit der Speicherung des vollständigen Geburtsdatums (Monat, Tag, Jahr) des Kunden sowie anderer persönlicher Identifikatoren wie vollständiger Name kennen, bevor Sie diese Daten erfassen oder verarbeiten. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Geburtsdatum anzeigen | `customer/address/dob_show`<br>Achten Sie in Übereinstimmung mit den aktuellen Best Practices für Sicherheit und Datenschutz darauf, dass Sie alle potenziellen rechtlichen und sicherheitstechnischen Risiken im Zusammenhang mit der Speicherung des vollständigen Geburtsdatums (Monat, Tag, Jahr) des Kunden sowie anderer persönlicher Kennungen wie vollständiger Name kennen, bevor Sie diese Daten erfassen oder verarbeiten. | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Steuer-/MwSt-Nummer anzeigen | `customer/address/taxvat_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Geschlecht anzeigen | `customer/address/gender_show` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren der Funktion &quot;Store Credit&quot; | `customer/magento_customerbalance/is_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -105,7 +105,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Listen-Pfade wünschen
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Wunschliste**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Kunden** > **Wunschliste** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -122,7 +122,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Einladungspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Einladungen**.
+Diese Konfigurationswerte sind im Admin unter **Speicher** > Einstellungen > **Konfiguration** > **Kunden** > **Einladungen** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -139,7 +139,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Trefferpunkte
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Prämienpunkte**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Belohnungspunkte** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -173,7 +173,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Promotionpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Promotions**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Kunden** > **Promotions** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -195,7 +195,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Gift-Registrierungspfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Geschenkregistrierung**.
+Diese Konfigurationswerte sind im Admin unter **Geschäfte** > Einstellungen > **Konfiguration** > **Kunden** > **Geschenkregistrierung** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
@@ -213,7 +213,7 @@ Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen
 
 ## Persistente Einkaufswagenpfade
 
-Diese Konfigurationswerte sind in Admin verfügbar in **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Persistenter Warenkorb**.
+Diese Konfigurationswerte sind im Admin unter **Stores** > Einstellungen > **Konfiguration** > **Kunden** > **Persistenter Warenkorb** verfügbar.
 
 | Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|

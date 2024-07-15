@@ -19,8 +19,8 @@ Dies kann ein erfolgreicher Ansatz sein. Eine Empfehlung, die das Risiko reduzie
 
 ## Beispiel für eine typische Timeline
 
-![Beispiel für eine Timeline zur typischen Commerce-Implementierung](../../assets/playbooks/timeline-example.svg)
+![Beispiel für die Timeline der typischen Commerce-Implementierung](../../assets/playbooks/timeline-example.svg)
 
 ## Beispiel-Timeline-Aktivitäten
 
-![Beispielaktivitäten der Commerce-Implementierungszeitleiste](../../assets/playbooks/timeline-activities-example.svg)
+![Beispielaktivitäten der Commerce-Implementierungs-Timeline](../../assets/playbooks/timeline-activities-example.svg)

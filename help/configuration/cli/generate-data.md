@@ -14,17 +14,17 @@ ht-degree: 9%
 
 ## Profile
 
-Sie können die Menge der von Ihnen erstellten Daten anpassen, indem Sie _profiles_ (klein, mittel, groß und extra groß). Die Profile befinden sich im `<magento_root>/setup/performance-toolkit/profiles/<ce|ee>` Verzeichnis.
+Sie können die Menge der von Ihnen erstellten Daten mit _Profilen_ anpassen (klein, mittel, groß und extra groß). Profile befinden sich im Ordner &quot;`<magento_root>/setup/performance-toolkit/profiles/<ce|ee>`&quot;.
 
 Beispiel: `/var/www/html/magento2/setup/performance-toolkit/profiles/ce`
 
-Die folgende Abbildung zeigt, wie ein Produkt in der Storefront mit der _klein_ profile:
+Die folgende Abbildung zeigt, wie ein Produkt mithilfe des Profils _klein_ auf der Storefront angezeigt wird:
 
 ![Beispiel-Storefront mit generierten Daten](../../assets/configuration/generate-data.png)
 
 Die folgende Tabelle enthält Details zu den Profilen des Datengenerators: klein, mittel, groß und extra groß.
 
-| Parameter | Wenig Profil | Mittleres Profil | Mittleres Profil für mehrere Sites | Großes Profil | Großes Profil |
+| Parameter | Wenig Profil | Medium-Profil | Medium-Profil für mehrere Sites | Großes Profil | Großes Profil |
 | --- | --- | --- | --- | --- | --- |
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
@@ -50,9 +50,9 @@ Die folgende Tabelle enthält Details zu den Profilen des Datengenerators: klein
 >
 >Deaktivieren Sie vor dem Ausführen des Datengenerators alle auf dem Server ausgeführten Cron-Aufträge. Das Deaktivieren von Cron-Aufträgen verhindert, dass der Datengenerator Aktionen ausführt, die mit aktiven Cron-Aufträgen in Konflikt stehen, und vermeidet unnötige Fehler.
 >
->Wenn Sie Eventing mit implementieren möchten [!DNL Adobe I/O Events for Adobe Commerce] Führen Sie während des Testens der Leistung diesen Befehl aus, bevor Sie sich anmelden [events](https://developer.adobe.com/commerce/extensibility/events/). Das Abonnieren von Ereignissen zuerst kann zu Fehlern führen.
+>Wenn Sie beim Testen der Leistung Eventing mit [!DNL Adobe I/O Events for Adobe Commerce] implementieren möchten, führen Sie diesen Befehl aus, bevor Sie [events](https://developer.adobe.com/commerce/extensibility/events/) abonnieren. Das Abonnieren von Ereignissen zuerst kann zu Fehlern führen.
 
-Führen Sie den Befehl wie in diesem Abschnitt beschrieben aus. Nachdem der Befehl ausgeführt wurde, müssen Sie [Neuindizieren aller Indexer](../cli/manage-indexers.md).
+Führen Sie den Befehl wie in diesem Abschnitt beschrieben aus. Nachdem der Befehl ausgeführt wurde, müssen Sie [alle Indexer neu indizieren](../cli/manage-indexers.md).
 
 Befehlsoptionen:
 
@@ -60,7 +60,7 @@ Befehlsoptionen:
 bin/magento setup:perf:generate-fixtures <path-to-profile>
 ```
 
-Wo `<path-to-profile>` gibt den absoluten Dateisystempfad und Namen eines Profils an.
+Wobei `<path-to-profile>` den absoluten Dateisystempfad und Namen eines Profils angibt.
 
 Beispiel:
 
@@ -125,7 +125,7 @@ Generiert Attributsätze mit der angegebenen Konfiguration. XML-Profilknoten:
 
 ### Paketprodukte
 
-Generiert Bundle-Produkte. Generierte Bundle-Auswahlen werden nicht einzeln im Katalog angezeigt. Produkte werden einheitlich nach Kategorien und Websites verteilt. Wenn  `assign_entities_to_all_websites` aus dem Profil auf `1`. Produkte werden allen Websites zugewiesen.
+Generiert Bundle-Produkte. Generierte Bundle-Auswahlen werden nicht einzeln im Katalog angezeigt. Produkte werden einheitlich nach Kategorien und Websites verteilt. Wenn `assign_entities_to_all_websites` aus dem Profil auf `1` gesetzt ist. Produkte werden allen Websites zugewiesen.
 
 XML-Profilknoten:
 
@@ -163,7 +163,7 @@ Erstellt Regeln zu Katalogpreisen. XML-Profilknoten:
 
 ### Kategorien
 
-Erzeugt Kategorien. Wenn `assign_entities_to_all_websites` auf `0`festgelegt ist, werden alle Kategorien gleichmäßig pro Stammkategorien verteilt. Andernfalls werden alle Kategorien einer Stammkategorie zugeordnet.
+Erzeugt Kategorien. Wenn `assign_entities_to_all_websites` auf `0` gesetzt ist, werden alle Kategorien gleichmäßig pro Stammkategorien verteilt. Andernfalls werden alle Kategorien einer Stammkategorie zugeordnet.
 
 XML-Profilknoten:
 
@@ -195,7 +195,7 @@ Legt Werte für Konfigurationsfelder fest. XML-Profilknoten:
 
 ### Konfigurierbare Produkte
 
-Erzeugt konfigurierbare Produkte. Generierte konfigurierbare Optionen werden nicht einzeln im Katalog angezeigt. Produkte werden einheitlich nach Kategorien und Websites verteilt. Wenn `assign_entities_to_all_websites` auf `1`, werden Produkte allen Websites zugewiesen.
+Erzeugt konfigurierbare Produkte. Generierte konfigurierbare Optionen werden nicht einzeln im Katalog angezeigt. Produkte werden einheitlich nach Kategorien und Websites verteilt. Wenn `assign_entities_to_all_websites` auf `1` gesetzt ist, werden Produkte allen Websites zugewiesen.
 
 Die folgenden XML-Knotenformate werden unterstützt:
 
@@ -380,9 +380,9 @@ XML-Profilknoten:
 
 ### Einfache Produkte
 
-Generiert einfache Produkte. Produkte werden nach standardmäßigen und vordefinierten Attributsätzen verteilt. Wenn im Profil zusätzliche Attributsätze wie folgt angegeben werden: `<product_attribute_sets>{int}</product_attribute_sets>`, werden Produkte auch pro zusätzlichen Attributsätzen verteilt.
+Generiert einfache Produkte. Produkte werden nach standardmäßigen und vordefinierten Attributsätzen verteilt. Wenn im Profil zusätzliche Attributsätze wie folgt angegeben sind: `<product_attribute_sets>{int}</product_attribute_sets>`, werden Produkte auch pro zusätzlichem Attributsatz verteilt.
 
-Produkte werden einheitlich nach Kategorien und Websites verteilt. Wenn `assign_entities_to_all_websites` auf `1`, werden Produkte allen Websites zugewiesen.
+Produkte werden einheitlich nach Kategorien und Websites verteilt. Wenn `assign_entities_to_all_websites` auf `1` gesetzt ist, werden Produkte allen Websites zugewiesen.
 
 XML-Profilknoten:
 
@@ -402,7 +402,7 @@ Erstellt Websites. XML-Profilknoten:
 
 ### Store-Gruppen
 
-Generiert Store-Gruppen (in Admin als _Stores_). Store-Gruppen werden normal auf Websites verteilt.
+Generiert Store-Gruppen (im Admin als _Stores_ bezeichnet). Store-Gruppen werden normal auf Websites verteilt.
 
 XML-Profilknoten:
 
@@ -434,16 +434,16 @@ Erzeugt Steuersätze. XML-Profilknoten:
 
 ## Zusätzliche Konfigurationsinformationen:
 
-- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml`—Standardmäßige Attributsätze
+- `<Commerce root dir>/setup/performance-toolkit/config/attributeSets.xml` - Standardmäßige Attributsätze
 
-- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml`—Kundenkonfiguration
+- `<Commerce root dir>/setup/performance-toolkit/config/customerConfig.xml` - Kundenkonfiguration
 
 - `<Commerce root dir>/setup/performance-toolkit/config/description.xml`—Konfiguration der vollständigen Produktbeschreibung
 
 - `<Commerce root dir>/setup/performance-toolkit/config/shortDescription.xml`—Konfiguration der kurzen Produktbeschreibung
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml`—Konfiguration für kurze und vollständige Beschreibung des Produkts. Diese ältere Implementierung wird aus Gründen der Abwärtskompatibilität bereitgestellt.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchConfig.xml` - Konfiguration für kurze und vollständige Beschreibung des Produkts. Diese ältere Implementierung wird aus Gründen der Abwärtskompatibilität bereitgestellt.
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml`—Kleine Anzahl von Suchbegriffen in kurze und vollständige Beschreibungen
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTerms.xml` - Wenig viele Suchbegriffe in kurze und vollständige Beschreibungen
 
-- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml`—Größere Anzahl von Suchbegriffen, die kurz und vollständig verwendet werden sollen.
+- `<Commerce root dir>/setup/performance-toolkit/config/searchTermsLarge.xml` - Größere Anzahl von Suchbegriffen, die in einer kurzen und vollständigen Beschreibung verwendet werden sollen.

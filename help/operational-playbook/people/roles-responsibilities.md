@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die verschiedenen Rollen und Verantwortlich
 exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -130,12 +130,12 @@ Das Content-Team befindet sich entweder im Marketing-Team, im E-Commerce-Team od
 
 Das Inhaltsteam ist für Folgendes zuständig:
 
-- **Inhalt organisieren**—Elemente, URLs, Navigation und Seitenstruktur müssen unkompliziert und benutzerfreundlich sein. Wenn die Site zu kompliziert ist, gehen Kunden verloren.
+- **Organisieren des Inhalts**: Elemente, URLs, Navigation und Seitenstruktur müssen einfach und benutzerfreundlich sein. Wenn die Site zu kompliziert ist, gehen Kunden verloren.
 
-- **Fehlerhaften Inhalt reparieren**—Beschädigte Bilder, Seiten, fehlende Seiten, defekte Kassenvorgänge und Fehlermeldungen machen Kunden dazu, Ihre Site zu verlassen und eine negative Impression zu hinterlassen.
+- **Korrektur defekter Inhalte**: Beschädigte Bilder, Seiten, fehlende Seiten, defekte Checkout-Flüsse und Fehlermeldungen führen dazu, dass Kunden Ihre Site verlassen und eine negative Impression hinterlassen.
 
-- **Inhalt aktualisieren**—Der Inhalt auf der Website muss auf dem neuesten Stand sein. Wenn die Site aus veralteten Inhalten besteht, wirkt sich dies auf das Kundenerlebnis aus und erhöht die Arbeitslast für das Team des Kundendienstes. Beispielsweise müssen sie Kundenfragen beantworten, die von Inhalten auf der Website beantwortet werden sollten.
+- **Inhalt aktualisieren** - Der Inhalt auf der Website muss auf dem neuesten Stand sein. Wenn die Site aus veralteten Inhalten besteht, wirkt sich dies auf das Kundenerlebnis aus und erhöht die Arbeitslast für das Team des Kundendienstes. Beispielsweise müssen sie Kundenfragen beantworten, die von Inhalten auf der Website beantwortet werden sollten.
 
-- **Vereinfachen von Inhalten**- Das Content-Team muss einfache und unkomplizierte Inhalte erstellen. Einfache Sprache funktioniert am besten bei der Interaktion mit Kunden.
+- **Vereinfachen des Inhalts** - Das Content-Team muss einfache und einfache Inhalte erstellen. Einfache Sprache funktioniert am besten bei der Interaktion mit Kunden.
 
 Das Content-Team erstellt, testet, verwaltet und optimiert alle Inhalte auf der Website, was den ROI bringt.

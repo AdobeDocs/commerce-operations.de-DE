@@ -1,7 +1,7 @@
 ---
 source-git-commit: d1af1ffe584b18cbc6c664cab31283c13f36c25e
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '180'
 ht-degree: 8%
 
 ---
@@ -14,11 +14,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Maximieren von Konversionen und Verkäufen</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Live-Suche basierend auf Adobe Sensei (B2C und B2B)</td>
@@ -104,11 +104,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Intelligente, schnellere Vorgänge</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Zahlungsdienste</td>
@@ -159,7 +159,7 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
       <td>+</td>
     </tr>
     <tr>
-      <td>Multi-Source-Inventory management</td>
+      <td>Multi-Source Inventory management</td>
       <td></td>
       <td></td>
       <td></td>
@@ -194,11 +194,11 @@ https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#template
   <tbody>
     <tr style="background:lightgray;">
       <th style="border-style:none;">Verbesserungen an Plattform, Leistung und Sicherheit</th>
-      <th style="border-style:none;">2.0</th>
-      <th style="border-style:none;">2.1</th>
-      <th style="border-style:none;">2.2</th>
-      <th style="border-style:none;">2.3</th>
-      <th style="border-style:none;">2.4</th>
+      <th style="border-style:none;">2,0</th>
+      <th style="border-style:none;">2,1</th>
+      <th style="border-style:none;">2,2</th>
+      <th style="border-style:none;">2,3</th>
+      <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
       <td>Site-weites Analyse-Tool</td>

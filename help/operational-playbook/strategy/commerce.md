@@ -4,7 +4,7 @@ description: Entsperren Sie die Kernfunktionen des E-Commerce mithilfe unseres v
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Die allgemeine E-Commerce-Strategie jedes Unternehmens ist einzigartig und häng
 - Auftragserstellung
 - Warenkorb und Checkout-Marketplace
 - Anführungszeichen zur Bestellkonversion
-- Abonnementdienste
+- Anmeldedienste
 - Online-Bestellung und Zahlungsrechnung online
 - Integrierte Bestellung &quot;NextGen B2B&quot;(z. B. Punchout)
 - Beschaffungs-Workflow und -Integration
@@ -79,4 +79,4 @@ Die folgende Liste enthält wichtige Ziele, die bei der Planung der digitalen St
 
 Im folgenden Diagramm finden Sie einen Vorschlag für ein E-Commerce-Strategie-Framework:
 
-![Framework-Diagramm für Commerce-Strategien](../../assets/playbooks/commerce-strategy-framework.png)
+![Commerce-Strategieschema](../../assets/playbooks/commerce-strategy-framework.png)

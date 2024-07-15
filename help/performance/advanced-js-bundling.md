@@ -1,30 +1,30 @@
 ---
-title: Erweitert [!DNL JavaScript] Bundle
+title: Erweitert [!DNL JavaScript] Bundling
 description: Erfahren Sie, wie das JavaScript-Bundling die Größe und Häufigkeit von Serveranfragen reduzieren kann.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
 
-# Erweitert [!DNL JavaScript] Bundling
+# Erweitertes [!DNL JavaScript]-Bundling
 
-Bundle [!DNL JavaScript] -Module zur Verbesserung der Leistung geht es darum, zwei Dinge zu reduzieren:
+Beim Bundling von [!DNL JavaScript] -Modulen für eine bessere Leistung geht es darum, zwei Dinge zu reduzieren:
 
 1. Die Anzahl der Serveranforderungen.
 1. Die Größe dieser Serveranforderungen.
 
-In einer modularen Anwendung kann die Anzahl der Serveranforderungen Hunderte erreichen. Beispielsweise zeigt der folgende Screenshot nur den Anfang der Liste von [!DNL JavaScript] -Module, die auf der Startseite einer sauberen Installation geladen werden.
+In einer modularen Anwendung kann die Anzahl der Serveranforderungen Hunderte erreichen. Der folgende Screenshot zeigt beispielsweise nur den Beginn der Liste der [!DNL JavaScript] -Module, die auf der Startseite einer sauberen Installation geladen wurden.
 
 ![Kein Bundling](../assets/performance/images/noBundling.png)
 
 ## Zusammenführung und Bündelung
 
-Vorkonfiguriert, [!DNL Commerce] bietet zwei Möglichkeiten, die Anzahl der Serveranforderungen zu reduzieren: Zusammenführen und Bündeln. Diese Einstellungen sind standardmäßig deaktiviert. Sie können sie in der Admin-Benutzeroberfläche in aktivieren **[!UICONTROL Stores]** > **Einstellungen** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]** oder über die Befehlszeile.
+Standardmäßig bietet [!DNL Commerce] zwei Möglichkeiten, die Anzahl der Serveranforderungen zu reduzieren: Zusammenführen und Bündeln. Diese Einstellungen sind standardmäßig deaktiviert. Sie können sie in der Admin-Benutzeroberfläche unter **[!UICONTROL Stores]** > **Einstellungen** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]** oder über die Befehlszeile aktivieren.
 
-![Bundle](../assets/performance/images/bundlingImage.png)
+![Bundling](../assets/performance/images/bundlingImage.png)
 
 ### Grundlegendes Bundling
 
@@ -34,13 +34,13 @@ So aktivieren Sie das integrierte Bundling über die Befehlszeile:
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-Dies ist ein natives [!DNL Commerce] -Mechanismus, der alle im System vorhandenen Assets kombiniert und unter Bundles derselben Größe verteilt (bundle_0.js, bundle_1.js ... bundle_x.js):
+Dies ist ein nativer [!DNL Commerce]-Mechanismus, der alle im System vorhandenen Assets kombiniert und unter Bundles derselben Größe verteilt (bundle_0.js, bundle_1.js ... bundle_x.js):
 
-![[!DNL Commerce] Bundling](../assets/performance/images/magentoBundling.png)
+![[!DNL Commerce] bundling](../assets/performance/images/magentoBundling.png)
 
-Besser, aber der Browser lädt trotzdem ALLE [!DNL JavaScript] Bundles, nicht nur die benötigten.
+Besser, aber der Browser lädt weiterhin alle [!DNL JavaScript] -Bundles, nicht nur die benötigten.
 
-[!DNL Commerce] Durch das Bundling wird die Anzahl der Verbindungen pro Seite reduziert, aber für jede Seitenanfrage werden alle Bundles geladen, selbst wenn die angeforderte Seite nur von Dateien innerhalb eines oder zweier Bundles abhängig sein kann. Die Leistung verbessert sich, nachdem der Browser die Bundles zwischengespeichert hat. Da der Browser diese Bundles jedoch synchron lädt, besucht der Benutzer zum ersten Mal eine [!DNL Commerce] Das Rendern und Schaden des Benutzererlebnisses kann eine Weile dauern.
+Durch das Bundling von [!DNL Commerce] wird die Anzahl der Verbindungen pro Seite reduziert. Für jede Seitenanforderung werden jedoch alle Bundles geladen, selbst wenn die angeforderte Seite nur von Dateien innerhalb eines oder zweier Bundles abhängig sein kann. Die Leistung verbessert sich, nachdem der Browser die Bundles zwischengespeichert hat. Da der Browser diese Bundles jedoch synchron lädt, kann es beim ersten Besuch des Benutzers in einer [!DNL Commerce] -Storefront einige Zeit dauern, bis das Rendering und die Beeinträchtigung des Benutzererlebnisses erfolgt sind.
 
 ### Grundlegende Zusammenführung
 
@@ -50,7 +50,7 @@ So aktivieren Sie die integrierte Zusammenführung über die Befehlszeile:
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
-Mit diesem Befehl werden alle synchronen [!DNL JavaScript] Dateien in eine Datei. Die Aktivierung der Zusammenführung ohne die Aktivierung der Bündelung ist nicht nützlich, da [!DNL Commerce] verwendet RequireJS. Wenn Sie das Bundling nicht aktivieren, [!DNL Commerce] führt nur Zusammenführungen von RequireJS und seiner Konfiguration durch. Wenn Sie sowohl das Bundling als auch das Zusammenführen aktivieren, [!DNL Commerce] erstellt eine [!DNL JavaScript] Datei:
+Mit diesem Befehl werden alle synchronen [!DNL JavaScript] -Dateien in einer Datei zusammengeführt. Die Aktivierung der Zusammenführung ohne die Aktivierung der Bündelung ist nicht nützlich, da [!DNL Commerce] RequireJS verwendet. Wenn Sie das Bundling nicht aktivieren, führt [!DNL Commerce] nur RequireJS und dessen Konfiguration zusammen. Wenn Sie sowohl das Bundling als auch das Zusammenführen aktivieren, erstellt [!DNL Commerce] eine einzelne [!DNL JavaScript]-Datei:
 
 ![Zusammenführung in der realen Welt](../assets/performance/images/magentoMergingDevWorld.png)
 
@@ -58,29 +58,29 @@ Mit diesem Befehl werden alle synchronen [!DNL JavaScript] Dateien in eine Datei
 
 Die vorherigen gebündelten und zusammengeführten Ladezeiten sehen in einer Entwicklungsumgebung großartig aus. Aber in der realen Welt können viele Dinge das Rendering verlangsamen: langsame Verbindungen, große Verbindungsschwellen, begrenzte Netzwerke. Darüber hinaus werden Mobilgeräte nicht so schnell wie Desktops gerendert.
 
-Um Ihre Storefront-Implementierung für die reale Welt zu testen und vorzubereiten, empfehlen wir, mit dem nativen Chrome-Einschränkungsprofil &quot;Slow 3G&quot;zu testen. Mit Slow 3G spiegeln unsere vorherigen gebündelten Ausgabezeiten jetzt die Verbindungsprobleme vieler Benutzer wider:
+Um Ihre Storefront-Implementierung für die reale Welt zu testen und vorzubereiten, empfehlen wir, mit dem nativen Einschränkungsprofil von Chrome &quot;Slow 3G&quot;zu testen. Mit Slow 3G spiegeln unsere vorherigen gebündelten Ausgabezeiten jetzt die Verbindungsprobleme vieler Benutzer wider:
 
-![Echtzeit-Bündelung](../assets/performance/images/magentoBundlingRealWorld.png)
+![Echtzeit-Bundling](../assets/performance/images/magentoBundlingRealWorld.png)
 
-Bei langsamer 3G-Konnektivität dauert es etwa 44 Sekunden, alle Bundles für die Homepage einer sauberen [!DNL Commerce] Installation.
+Bei langsamer 3G-Konnektivität dauert es etwa 44 Sekunden, alle Bundles für die Homepage einer sauberen [!DNL Commerce]-Installation zu laden.
 
 Dasselbe gilt für das Zusammenführen der Bundles in einer Datei. Benutzer können weiterhin etwa 42 Sekunden auf das erste Laden der Seite warten, wie im folgenden Beispiel gezeigt:
 
 ![Zusammenführung in der realen Welt](../assets/performance/images/magentoMergingRealWorld.png)
 
-Mit einem fortschrittlicheren Ansatz für [!DNL JavaScript] Bundling, können wir diese Ladezeiten verbessern.
+Mit einem erweiterten Ansatz für das [!DNL JavaScript]-Bundling können wir diese Ladezeiten verbessern.
 
 ## Erweitertes Bundling
 
-Denken Sie daran, das Ziel von [!DNL JavaScript] Beim Bundling wird die Anzahl und Größe der angeforderten Assets für jede im Browser geladene Seite reduziert. Dazu möchten wir unsere Bundles erstellen, sodass jede Seite in unserem Store nur ein gemeinsames Bundle und ein seitenspezifisches Bundle für jede aufgerufene Seite herunterladen muss.
+Denken Sie daran, dass das [!DNL JavaScript]-Bundling die Anzahl und Größe der angeforderten Assets für jede im Browser geladene Seite reduzieren soll. Dazu möchten wir unsere Bundles erstellen, sodass jede Seite in unserem Store nur ein gemeinsames Bundle und ein seitenspezifisches Bundle für jede aufgerufene Seite herunterladen muss.
 
-Eine Möglichkeit, dies zu erreichen, besteht darin, Ihre Bundles nach Seitentypen zu definieren. Sie können Kategorien [!DNL Commerce]enthält Seiten in verschiedene Seitentypen, darunter Kategorie, Produkt, CMS, Kunde, Warenkorb und Checkout. Jede Seite, die in einen dieser Seitentypen kategorisiert ist, verfügt über einen anderen Satz von RequireJS-Modulabhängigkeiten. Wenn Sie Ihre RequireJS-Module nach Seitentyp bündeln, erhalten Sie nur eine Handvoll Pakete, die die Abhängigkeiten einer beliebigen Seite in Ihrem Store abdecken.
+Eine Möglichkeit, dies zu erreichen, besteht darin, Ihre Bundles nach Seitentypen zu definieren. Sie können die Seiten von [!DNL Commerce] in verschiedene Seitentypen kategorisieren, einschließlich Kategorie, Produkt, CMS, Kunde, Warenkorb und Checkout. Jede Seite, die in einen dieser Seitentypen kategorisiert ist, verfügt über einen anderen Satz von RequireJS-Modulabhängigkeiten. Wenn Sie Ihre RequireJS-Module nach Seitentyp bündeln, erhalten Sie nur eine Handvoll Pakete, die die Abhängigkeiten einer beliebigen Seite in Ihrem Store abdecken.
 
 Sie können beispielsweise mit einem Bundle für die allen Seiten gemeinsamen Abhängigkeiten, einem Bundle für nur CMS-Seiten, einem Bundle für Nur-Katalog-Seiten, einem weiteren Bundle für Nur-Suche-Seiten und einem Bundle für Checkout-Seiten enden.
 
 Sie können Bundles auch nach Zweck erstellen: für allgemeine Funktionen, produktbezogene Funktionen, Versandfunktionen, Checkout-Funktionen, Steuern und Formularvalidierungen. Wie Sie Ihre Bundles definieren, hängt von Ihnen und der Struktur Ihres Stores ab. Möglicherweise funktionieren einige Bundling-Strategien besser als andere.
 
-A clean [!DNL Commerce] -Installation ermöglicht es, ausreichend gute Leistung zu erzielen, indem Bundles nach Seitentypen aufgeteilt werden. Einige Anpassungen erfordern jedoch möglicherweise eine tiefere Analyse und andere Asset-Verteilungen.
+Eine saubere [!DNL Commerce] -Installation ermöglicht es, durch Aufteilen von Bundles nach Seitentypen ausreichend gute Leistung zu erzielen. Einige Anpassungen erfordern jedoch möglicherweise eine tiefere Analyse und andere Asset-Verteilungen.
 
 ### Erforderliche Tools
 
@@ -102,7 +102,7 @@ Vollständige Versionen des in diesem Artikel verwendeten Beispielcodes finden S
 
 #### 1\. Hinzufügen einer Datei &quot;build.js&quot;
 
-Erstellen Sie eine `build.js` in der Datei [!DNL Commerce] Stammverzeichnis. Diese Datei enthält die gesamte Build-Konfiguration für Ihre Bundles.
+Erstellen Sie eine `build.js` -Datei im Stammverzeichnis von [!DNL Commerce]. Diese Datei enthält die gesamte Build-Konfiguration für Ihre Bundles.
 
 ```javascript
 ({
@@ -111,11 +111,11 @@ Erstellen Sie eine `build.js` in der Datei [!DNL Commerce] Stammverzeichnis. Die
 })
 ```
 
-Später werden wir die `optimize:` Einstellung von_ `none` nach `uglify2` zum Minimieren der Bundle-Ausgabe. Während der Entwicklung können Sie es jedoch vorerst auf `none` um schnellere Builds sicherzustellen.
+Später ändern wir die Einstellung `optimize:` von_ `none` in `uglify2`, um die Bundle-Ausgabe zu verkleinern. Während der Entwicklung können Sie es jedoch vorerst auf `none` festlegen, um schnellere Builds sicherzustellen.
 
 #### 2\. Hinzufügen von RequireJS-Abhängigkeiten, -Shims, -Pfaden und -Landkarten
 
-Fügen Sie die folgenden RequireJS-Build-Konfigurationsknoten hinzu: `deps`, `shim`, `paths`, und `map`in Ihre Build-Datei ein:
+Fügen Sie die folgenden RequireJS-Build-Konfigurationsknoten, `deps`, `shim`, `paths` und `map` zu Ihrer Build-Datei hinzu:
 
 ```javascript
 ({
@@ -131,13 +131,13 @@ Fügen Sie die folgenden RequireJS-Build-Konfigurationsknoten hinzu: `deps`, `sh
 
 #### 3\. Aggregieren Sie die Instanzwerte &quot;required.js&quot;
 
-In diesem Schritt müssen Sie das gesamte `deps`, `shim`, `paths`, und `map` Konfigurationsknoten aus dem Store `requirejs-config.js` in die entsprechenden Knoten in Ihrer `build.js` -Datei. Dazu können Sie die **[!UICONTROL Network]** im Bedienfeld &quot;Entwicklertools&quot;Ihres Browsers und navigieren Sie zu einer beliebigen Seite in Ihrem Store, z. B. zur Startseite. Auf der Registerkarte &quot;Netzwerk&quot;sehen Sie die Instanz Ihres Stores für die `requirejs-config.js` -Datei oben, hier hervorgehoben:
+In diesem Schritt müssen Sie alle aus der `requirejs-config.js` -Datei Ihres Stores stammenden mehreren Konfigurationsknoten `deps`, `shim`, `paths` und `map` in die entsprechenden Knoten in Ihrer `build.js`-Datei aggregieren. Dazu können Sie die Registerkarte **[!UICONTROL Network]** im Bedienfeld &quot;Entwicklertools&quot;Ihres Browsers öffnen und zu einer beliebigen Seite in Ihrem Store navigieren, z. B. zur Startseite. Auf der Registerkarte &quot;Netzwerk&quot;sehen Sie die Instanz Ihres Stores der Datei &quot;`requirejs-config.js`&quot;oben, die hier hervorgehoben ist:
 
 ![RequireJS-Konfiguration](../assets/performance/images/RequireJSConfig.png)
 
-In dieser Datei finden Sie mehrere Einträge für jeden Konfigurationsknoten (`deps`, `shim`, `paths`, `map`). Sie müssen diese verschiedenen Knotenwerte in den einzelnen Konfigurationsknoten Ihrer Datei &quot;build.js&quot;aggregieren. Wenn beispielsweise die Variable `requirejs-config.js` -Instanz hat Einträge für 15 separate `map` -Knoten, müssen Sie die Einträge für alle 15 Knoten in der `map` Knoten in `build.js` -Datei. Dasselbe gilt für das `deps`, `shim`, und `paths` Knoten. Ohne ein Skript zur Automatisierung dieses Prozesses kann es Zeit dauern.
+In dieser Datei finden Sie mehrere Einträge für jeden Konfigurationsknoten (`deps`, `shim`, `paths`, `map`). Sie müssen diese verschiedenen Knotenwerte in den einzelnen Konfigurationsknoten Ihrer Datei &quot;build.js&quot;aggregieren. Wenn beispielsweise die `requirejs-config.js` -Instanz Ihres Stores Einträge für 15 verschiedene `map` -Knoten hat, müssen Sie die Einträge für alle 15 Knoten in den einzelnen `map` -Knoten in Ihrer `build.js` -Datei zusammenführen. Dasselbe gilt für die Knoten `deps`, `shim` und `paths`. Ohne ein Skript zur Automatisierung dieses Prozesses kann es Zeit dauern.
 
-Sie müssen den Pfad ändern `mage/requirejs/text` nach `requirejs/text` in `paths` Konfigurationsknoten wie folgt:
+Sie müssen den Pfad `mage/requirejs/text` in `requirejs/text` im Konfigurationsknoten `paths` wie folgt ändern:
 
 ```javascript
 ({
@@ -151,7 +151,7 @@ Sie müssen den Pfad ändern `mage/requirejs/text` nach `requirejs/text` in `pat
 
 #### 4\. Modulknoten hinzufügen
 
-Am Ende des `build.js` -Datei hinzufügen, die Module hinzufügen[] -Array als Platzhalter für die Bundles, die Sie später für Ihre Storefront definieren.
+Fügen Sie am Ende der Datei `build.js` das Array modules[] als Platzhalter für die Bundles hinzu, die Sie später für Ihre Storefront definieren.
 
 ```javascript
 ({
@@ -169,14 +169,14 @@ Am Ende des `build.js` -Datei hinzufügen, die Module hinzufügen[] -Array als P
 
 #### 5\. RequireJS-Abhängigkeiten abrufen
 
-Sie können alle [!DNL RequireJS] Modulabhängigkeiten von den Seitentypen Ihres Stores durch Verwendung von:
+Sie können alle [!DNL RequireJS] -Modulabhängigkeiten aus den Seitentypen Ihres Stores abrufen, indem Sie Folgendes verwenden:
 
-1. [!DNL PhantomJS] über die Befehlszeile (vorausgesetzt, Sie verfügen über [!DNL PhantomJS] installiert).
+1. [!DNL PhantomJS] aus der Befehlszeile (vorausgesetzt, Sie haben [!DNL PhantomJS] installiert).
 1. JS-Befehl in der Browser-Konsole erforderlich.
 
-#### Verwendung [!DNL PhantomJS]:
+#### So verwenden Sie [!DNL PhantomJS]:
 
-Im [!DNL Commerce] Stammverzeichnis erstellen Sie eine neue Datei mit dem Namen `deps.js` und kopieren Sie den unten stehenden Code. Dieser Code verwendet [!DNL [!DNL PhantomJS]], um eine Seite zu öffnen und zu warten, bis der Browser alle Seiten-Assets lädt. Anschließend werden alle [!DNL RequireJS] Abhängigkeiten für eine bestimmte Seite.
+Erstellen Sie im Stammverzeichnis von [!DNL Commerce] eine neue Datei mit dem Namen `deps.js` und kopieren Sie sie in den unten stehenden Code. In diesem Code wird [!DNL [!DNL PhantomJS]] verwendet, um eine Seite zu öffnen und zu warten, bis der Browser alle Seiten-Assets lädt. Anschließend werden alle [!DNL RequireJS] -Abhängigkeiten für eine bestimmte Seite ausgegeben.
 
 ```javascript
 "use strict";
@@ -204,7 +204,7 @@ if (system.args.length === 1) {
 }
 ```
 
-Öffnen Sie ein Terminal im [!DNL Commerce] Stammverzeichnis und führen Sie das Skript für jede Seite in Ihrem Store aus, die einen bestimmten Seitentyp darstellt:
+Öffnen Sie ein Terminal im Stammverzeichnis [!DNL Commerce] und führen Sie das Skript für jede Seite in Ihrem Store aus, die einen bestimmten Seitentyp darstellt:
 
 <pre>
 phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-presentation-pagetype-dependencies</i>
@@ -222,17 +222,17 @@ phantomjs deps.js http://m2.loc/checkout/cart/?SID=m2tjdt7ipvep9g0h8pmsgie975 > 
 
 #### So verwenden Sie die Browser-Konsole:
 
-Wenn Sie [!DNL PhantomJS]können Sie den folgenden Befehl in der Browser-Konsole ausführen, während Sie die einzelnen Seitentypen in Ihrer Storefront anzeigen:
+Wenn Sie [!DNL PhantomJS] nicht verwenden möchten, können Sie den folgenden Befehl in der Browser-Konsole ausführen, während Sie die einzelnen Seitentypen in Ihrer Storefront anzeigen:
 
 ```shell
 Object.keys(window.require.s.contexts._.defined)
 ```
 
-Dieser Befehl (wird innerhalb der Variablen [!DNL PhantomJS] script) erstellt dieselbe Liste von [!DNL RequireJS] Abhängigkeiten und zeigt sie in der Browser-Konsole an. Der Nachteil dieses Ansatzes besteht darin, dass Sie Ihre eigenen Textdateien vom Typ Bundle/Seite erstellen müssen.
+Dieser Befehl (der im [!DNL PhantomJS] -Skript verwendet wird) erstellt dieselbe Liste von [!DNL RequireJS] -Abhängigkeiten und zeigt sie in der Browser-Konsole an. Der Nachteil dieses Ansatzes besteht darin, dass Sie Ihre eigenen Textdateien vom Typ Bundle/Seite erstellen müssen.
 
 #### 6\. Ausgabe formatieren und filtern
 
-Nach dem Zusammenführen [!DNL RequireJS] Abhängigkeiten von Textdateien vom Typ Seite verwenden, können Sie den folgenden Befehl für jede Abhängigkeitsdatei vom Typ Seite verwenden, um die Kommas in Ihren Dateien durch Zeilenumbrüche zu ersetzen:
+Nachdem Sie die Abhängigkeiten von [!DNL RequireJS] mit Textdateien vom Typ Seite zusammengeführt haben, können Sie den folgenden Befehl für jede Abhängigkeitsdatei vom Typ Seite verwenden, um die Kommas in Ihren Dateien durch Zeilenumbrüche zu ersetzen:
 
 ```terminal
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
@@ -252,15 +252,15 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 
 #### 7\. Identifizieren von eindeutigen und gemeinsamen Bundles
 
-Das Ziel besteht darin, ein gemeinsames Bündel von [!DNL JavaScript] Dateien, die für alle Seiten benötigt werden. Auf diese Weise muss der Browser nur das gemeinsame Bundle zusammen mit einem oder mehreren bestimmten Seitentypen laden.
+Das Ziel besteht darin, ein gemeinsames Bundle von [!DNL JavaScript] -Dateien zu erstellen, die für alle Seiten benötigt werden. Auf diese Weise muss der Browser nur das gemeinsame Bundle zusammen mit einem oder mehreren bestimmten Seitentypen laden.
 
-Öffnen Sie ein Terminal im [!DNL Commerce] Stammverzeichnis und verwenden Sie den folgenden Befehl, um zu überprüfen, ob Sie Abhängigkeiten haben, die Sie in separate Bundles aufteilen können:
+Öffnen Sie ein Terminal im Stammverzeichnis [!DNL Commerce] und überprüfen Sie mit dem folgenden Befehl, ob Sie Abhängigkeiten haben, die Sie in separate Bundles aufteilen können:
 
 ```bash
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
-Dieser Befehl führt die Abhängigkeiten im `bundle/*.txt` -Dateien.  Die Ausgabe zeigt auch die Anzahl der Dateien an, die jede Abhängigkeit enthalten:
+Dieser Befehl führt die Abhängigkeiten in den `bundle/*.txt` -Dateien zusammen und sortiert sie.  Die Ausgabe zeigt auch die Anzahl der Dateien an, die jede Abhängigkeit enthalten:
 
 ```terminal
 1 buildTools,
@@ -275,7 +275,7 @@ Dieser Befehl führt die Abhängigkeiten im `bundle/*.txt` -Dateien.  Die Ausgab
 ...
 ```
 
-Diese Ausgabe zeigt Folgendes: `buildTools` ist eine Abhängigkeit in nur einer der Bundle/*.txt-Dateien. Die `jquery/jquery.metadata` Die Abhängigkeit befindet sich in zwei (2) Dateien und `es6-collections` ist in drei (3) Dateien enthalten.
+Diese Ausgabe zeigt an, dass `buildTools` nur eine Abhängigkeit in einer der Bundle/*.txt-Dateien ist. Die `jquery/jquery.metadata` -Abhängigkeit befindet sich in zwei (2) Dateien und `es6-collections` in drei (3) Dateien.
 
 Unsere Ausgabe zeigt nur drei Seitentypen (Homepage, Kategorie und Produkt) an, die uns Folgendes mitteilen:
 
@@ -287,7 +287,7 @@ Dies sagt uns, dass wir die Seitenladegeschwindigkeit unseres Stores wahrscheinl
 
 #### 8\. Erstellen einer Verteilungsdatei für Abhängigkeiten
 
-Um herauszufinden, welche Seitentypen welche Abhängigkeiten benötigen, erstellen Sie eine neue -Datei in der [!DNL Commerce] Stammordner namens `deps-map.sh` und kopieren Sie den folgenden Code:
+Um herauszufinden, welche Seitentypen welche Abhängigkeiten benötigen, erstellen Sie eine neue Datei im Stammverzeichnis [!DNL Commerce] mit dem Namen `deps-map.sh` und kopieren Sie den folgenden Code:
 
 ```shell
 awk 'END {
@@ -309,7 +309,7 @@ awk 'END {
 
 Sie finden das Skript auch unter [https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
 
-Öffnen Sie ein Terminal im [!DNL Commerce] -Stammverzeichnis und führen Sie die Datei aus:
+Öffnen Sie ein Terminal im Stammverzeichnis [!DNL Commerce] und führen Sie die Datei aus:
 
 ```bash
 bash deps-map.sh
@@ -335,15 +335,15 @@ Diese Informationen reichen aus, um eine Bundle-Konfiguration zu erstellen.
 
 #### 9\. Erstellen von Bundles in Ihrer Datei &quot;build.js&quot;
 
-Öffnen Sie die `build.js` Konfigurationsdatei erstellen und Ihre Bundles zur `modules` Knoten. Jedes Bundle sollte die folgenden Eigenschaften definieren:
+Öffnen Sie die Konfigurationsdatei `build.js` und fügen Sie Ihre Bundles zum Knoten `modules` hinzu. Jedes Bundle sollte die folgenden Eigenschaften definieren:
 
-- `name`- der Name des Bundles. Beispiel: ein Name von `bundles/cart` generiert eine `cart.js` Bundle in einer `bundles` -Unterverzeichnis.
+- `name` - der Name des Bundles. Beispielsweise generiert der Name `bundles/cart` ein `cart.js` -Bundle in einem `bundles` -Unterverzeichnis.
 
-- `create`— eine boolesche Markierung zum Erstellen des Bundles (Werte: `true` oder `false`).
+- `create` - eine boolesche Markierung zum Erstellen des Bundles (Werte: `true` oder `false`).
 
-- `include`- ein Array von Assets (Zeichenfolgen), die als Abhängigkeiten für die Seite enthalten sind. RequireJS verfolgt alle Abhängigkeiten und schließt sie in das Bundle ein, es sei denn, dies ist ausgeschlossen.
+- `include` - ein Array von Assets (Zeichenfolgen), die als Abhängigkeiten für die Seite enthalten sind. RequireJS verfolgt alle Abhängigkeiten und schließt sie in das Bundle ein, es sei denn, dies ist ausgeschlossen.
 
-- `exclude`- ein Array von Bundles oder Assets, die aus dem Bundle ausgeschlossen werden sollen.
+- `exclude` - ein Array von Bundles oder Assets, die aus dem Bundle ausgeschlossen werden sollen.
 
 ```javascript
 {
@@ -366,19 +366,19 @@ Diese Informationen reichen aus, um eine Bundle-Konfiguration zu erstellen.
 }
 ```
 
-In diesem Beispiel werden `mage/bootstrap` und `requirejs/require` Assets mit höherer Priorität für ihre wichtigsten Komponenten und Komponenten, die synchron geladen werden müssen. Die vorhandenen Bundles sind:
+In diesem Beispiel werden die `mage/bootstrap` - und `requirejs/require` -Assets wiederverwendet, wobei die wichtigsten Komponenten und Komponenten, die synchron geladen werden müssen, eine höhere Priorität erhalten. Die vorhandenen Bundles sind:
 
-- `requirejs/require`—das einzige synchron geladene Bundle
-- `mage/bootstrap`—Bootstrap-Bundle mit UI-Komponenten
-- `bundles/default`—Standardpaket für alle Seiten erforderlich
-- `bundles/cart`—Ein für die Warenkorbseite erforderliches Bundle
-- `bundles/shipping`—allgemeines Bundle für Warenkorb- und Checkout-Seite (vorausgesetzt, dass der Checkout nie direkt geöffnet wird, wird die Checkout-Seite noch schneller geladen, wenn die Warenkorbseite zuvor geöffnet und das Versandpaket bereits geladen wurde)
-- `bundles/checkout`—alles zum Checkout
-- `bundles/catalog`—alles für Produkt- und Kategorieseiten
+- `requirejs/require` - das einzige synchron geladene Bundle
+- `mage/bootstrap` - das Bootstrap-Bundle mit UI-Komponenten
+- `bundles/default` - Standardpaket für alle Seiten erforderlich
+- `bundles/cart` - ein für die Warenkorbseite erforderliches Bundle
+- `bundles/shipping`—allgemeines Bundle für Warenkorb- und Checkout-Seite (vorausgesetzt, der Checkout wird nie direkt geöffnet, die Checkout-Seite wird sogar noch schneller geladen, wenn die Warenkorbseite zuvor geöffnet und das Versandpaket bereits geladen wurde)
+- `bundles/checkout` - alles zum Auschecken
+- `bundles/catalog` - alles für Produkt- und Kategorieseiten
 
 ### Teil 2: Erstellen von Bundles
 
-Die folgenden Schritte beschreiben den grundlegenden Prozess zur Generierung einer effizienteren [!DNL Commerce] Pakete. Sie können diesen Prozess beliebig automatisieren, müssen aber dennoch `nodejs` und `r.js` um Ihre Bundles zu generieren. Und wenn Ihre Themen [!DNL JavaScript]-bezogene Anpassungen und können nicht dasselbe `build.js` -Datei, müssen Sie möglicherweise mehrere `build.js` Konfigurationen pro Design.
+Die folgenden Schritte beschreiben den grundlegenden Prozess zum Generieren effizienterer [!DNL Commerce]-Bundles. Sie können diesen Prozess beliebig automatisieren, aber Sie müssen weiterhin `nodejs` und `r.js` verwenden, um Ihre Bundles zu generieren. Wenn Ihre Designs über [!DNL JavaScript] -Anpassungen verfügen und dieselbe `build.js` -Datei nicht wiederverwenden können, müssen Sie möglicherweise mehrere `build.js` -Konfigurationen pro Design erstellen.
 
 #### 1. Generieren von statischen Store-Sites
 
@@ -413,13 +413,13 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### 3. Führen Sie den r.js-Optimierer aus.
 
-Führen Sie dann den r.js-Optimierer auf der `build.js` Datei aus [!DNL Commerce]des Stammverzeichnisses. Pfade zu allen Verzeichnissen und Dateien beziehen sich auf das Arbeitsverzeichnis.
+Führen Sie dann den r.js-Optimierer für die Datei `build.js` aus dem Stammverzeichnis von [!DNL Commerce] aus. Pfade zu allen Verzeichnissen und Dateien beziehen sich auf das Arbeitsverzeichnis.
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-Dieser Befehl generiert Bundles in einer `bundles` -Unterverzeichnis des Zielverzeichnisses, das in diesem Fall zu `pub/static/frontend/Magento/luma/en_US/bundles`.
+Dieser Befehl generiert Bundles in einem Unterverzeichnis mit dem Namen `bundles` des Zielverzeichnisses, was in diesem Fall zu `pub/static/frontend/Magento/luma/en_US/bundles` führt.
 
 Das Auflisten des Inhalts des neuen Bundle-Ordners könnte wie folgt aussehen:
 
@@ -440,7 +440,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 
 #### 4. Konfigurieren von RequireJS zur Verwendung von Bundles
 
-Um RequireJS zur Verwendung Ihrer Bundles zu erhalten, fügen Sie eine `onModuleBundleComplete` Callback nach `modules` Knoten in `build.js` Datei:
+Um RequireJS zur Verwendung Ihrer Bundles zu erhalten, fügen Sie in der Datei `build.js` einen `onModuleBundleComplete` -Rückruf nach dem Knoten `modules` hinzu:
 
 ```javascript
 [
@@ -482,7 +482,7 @@ Führen Sie zum Bereitstellen den folgenden Befehl aus:
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-Öffnen `requirejs-config.js` im `pub/static/frontend/Magento/luma/en_US` -Verzeichnis, um zu überprüfen, ob RequireJS die Datei mit den gebündelten Konfigurationsaufrufen angehängt hat:
+Öffnen Sie `requirejs-config.js` im Verzeichnis `pub/static/frontend/Magento/luma/en_US` , um zu überprüfen, ob RequireJS die Datei mit den gebündelten Konfigurationsaufrufen angehängt hat:
 
 ```javascript
 require.config({
@@ -495,7 +495,7 @@ require.config({
 
 >[!NOTE]
 >
->Stellen Sie beim Konfigurieren von Bundles sicher, dass Sie die `requirejs.config()` -Aufrufe in der Reihenfolge, in der sie ausgeführt werden sollen, da die Aufrufe in der Reihenfolge ausgeführt werden, in der sie erscheinen.
+>Stellen Sie beim Konfigurieren von Bundles sicher, dass Sie die `requirejs.config()` -Aufrufe in der Reihenfolge platzieren, in der sie ausgeführt werden sollen, da die Aufrufe in der Reihenfolge ausgeführt werden, in der sie erscheinen.
 
 #### 6. Testen der Ergebnisse
 
@@ -503,13 +503,13 @@ Beachten Sie nach dem Laden der Seite, dass der Browser verschiedene Abhängigke
 
 ![Zweimal so schnell](../assets/performance/images/TwiceAsFast.png)
 
-Die Seitenladezeit für eine leere Homepage ist jetzt doppelt so schnell wie bei der Verwendung nativer [!DNL Commerce] Bundling. Aber wir können es noch besser machen.
+Die Seitenladezeit für eine leere Startseite ist jetzt doppelt so schnell wie die Verwendung des nativen [!DNL Commerce]-Bundles. Aber wir können es noch besser machen.
 
 #### 7. Optimieren der Bundles
 
-Selbst wenn die [!DNL JavaScript] -Dateien sind immer noch groß. Minimieren Sie sie mit RequireJS, das Uglifier zur Minimierung verwendet [!DNL JavaScript] zu einem guten Ergebnis.
+Auch wenn die Datei komprimiert wurde, sind die [!DNL JavaScript]-Dateien immer noch groß. Minimieren Sie sie mit RequireJS, das mithilfe von Uglifier [!DNL JavaScript] auf ein gutes Ergebnis minimiert.
 
-So aktivieren Sie den Optimierer in Ihrer `build.js` Datei hinzufügen `uglify2` als Wert für die Eigenschaft &quot;optimize&quot;oben im `build.js` Datei:
+Um den Optimierer in Ihrer `build.js` -Datei zu aktivieren, fügen Sie oben in der Datei `build.js` den Wert `uglify2` als Wert für die Eigenschaft &quot;optimize&quot;hinzu:
 
 ```javascript
 ({
@@ -519,6 +519,6 @@ So aktivieren Sie den Optimierer in Ihrer `build.js` Datei hinzufügen `uglify2`
 ```
 
 Die Ergebnisse können von Bedeutung sein:
-![dreimal schneller](../assets/performance/images/ThreeTimesFaster.png)
+![Dreifachmal schneller](../assets/performance/images/ThreeTimesFaster.png)
 
-Die Ladezeiten sind jetzt dreimal schneller als mit nativen [!DNL Commerce] Bundling.
+Die Ladezeiten sind jetzt dreimal schneller als bei nativem [!DNL Commerce]-Bundling.

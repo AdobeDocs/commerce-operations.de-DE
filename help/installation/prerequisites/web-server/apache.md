@@ -15,7 +15,7 @@ Adobe Commerce unterstützt Apache 2.4.x.
 
 ## Apache erforderte Anweisungen
 
-1. Satz `AllowEncodedSlashes` in der Server-Konfiguration (global) oder in den virtuellen Host-Konfigurationen, um zu vermeiden, die kodierten Schrägstriche zu dekodieren, die Probleme für URLs verursachen können. Wenn Sie beispielsweise Produkte mit einem Schrägstrich in der SKU über die API abrufen, soll dieser nicht konvertiert werden. Der Beispielblock ist nicht vollständig und andere Anweisungen sind erforderlich.
+1. Legen Sie `AllowEncodedSlashes` in der Serverkonfiguration (global) oder in den Konfigurationen des virtuellen Hosts fest, um zu vermeiden, dass die kodierten Schrägstriche dekodiert werden, die Probleme für URLs verursachen können. Wenn Sie beispielsweise Produkte mit einem Schrägstrich in der SKU über die API abrufen, soll dieser nicht konvertiert werden. Der Beispielblock ist nicht vollständig und andere Anweisungen sind erforderlich.
 
    ```conf
    <VirtualHost *:443>
@@ -26,13 +26,13 @@ Adobe Commerce unterstützt Apache 2.4.x.
 
 ## Apache-Neuschreibungen und HTML-Zugriff
 
-In diesem Thema wird beschrieben, wie Sie Apache 2.4-Neuschreibungen aktivieren und eine Einstellung für [verteilte Konfigurationsdatei, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+In diesem Thema wird beschrieben, wie Sie Apache 2.4-Neuschreibungen aktivieren und eine Einstellung für die verteilte Konfigurationsdatei [1}](https://httpd.apache.org/docs/current/howto/htaccess.html) festlegen.`.htaccess`
 
-Adobe Commerce verwendet Server-Neuschreibungen und `.htaccess` um Anweisungen auf Ordnerebene für Apache bereitzustellen. Die folgenden Anweisungen sind auch in allen anderen Abschnitten dieses Themas enthalten.
+Adobe Commerce verwendet Server-Neuschreibungen und `.htaccess`, um Anweisungen auf Ordnerebene für Apache bereitzustellen. Die folgenden Anweisungen sind auch in allen anderen Abschnitten dieses Themas enthalten.
 
-Verwenden Sie diesen Abschnitt, um Apache 2.4-Neuschreibungen zu aktivieren und eine Einstellung für die [verteilte Konfigurationsdatei, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+Verwenden Sie diesen Abschnitt, um Apache 2.4-Neuschreibungen zu aktivieren und eine Einstellung für die verteilte Konfigurationsdatei [1}](https://httpd.apache.org/docs/current/howto/htaccess.html) festzulegen.`.htaccess`
 
-Adobe Commerce verwendet Server-Neuschreibungen und `.htaccess` um Anweisungen auf Ordnerebene für Apache bereitzustellen.
+Adobe Commerce verwendet Server-Neuschreibungen und `.htaccess`, um Anweisungen auf Ordnerebene für Apache bereitzustellen.
 
 >[!NOTE]
 >
@@ -44,13 +44,13 @@ Adobe Commerce verwendet Server-Neuschreibungen und `.htaccess` um Anweisungen a
    a2enmod rewrite
    ```
 
-1. Damit die Anwendung die verteilte `.htaccess` Konfigurationsdatei finden Sie die Richtlinien in der [Dokumentation zu Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Informationen dazu, wie Sie die Anwendung in die verteilte Konfigurationsdatei `.htaccess` einbinden können, finden Sie in den Richtlinien in der Dokumentation zu [Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html) .
 
    >[!TIP]
    >
-   >In Apache 2.4 lautet die standardmäßige Site-Konfigurationsdatei des Servers `/etc/apache2/sites-available/000-default.conf`.
+   >In Apache 2.4 ist die standardmäßige Site-Konfigurationsdatei des Servers `/etc/apache2/sites-available/000-default.conf`.
 
-   Sie können beispielsweise Folgendes am Ende von `000-default.conf`:
+   Sie können beispielsweise Folgendes am Ende von `000-default.conf` hinzufügen:
 
    ```terminal
    <Directory "/var/www/html">
@@ -60,7 +60,7 @@ Adobe Commerce verwendet Server-Neuschreibungen und `.htaccess` um Anweisungen a
 
    >[!NOTE]
    >
-   >Manchmal sind zusätzliche Parameter erforderlich. Weitere Informationen finden Sie unter [Dokumentation zu Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >Manchmal sind zusätzliche Parameter erforderlich. Weitere Informationen finden Sie in der Dokumentation zu [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order) .
 
 1. Wenn Sie die Apache-Einstellungen geändert haben, starten Sie Apache neu:
 
@@ -70,8 +70,8 @@ Adobe Commerce verwendet Server-Neuschreibungen und `.htaccess` um Anweisungen a
 
    >[!NOTE]
    >
-   >- Wenn Sie von einer früheren Apache-Version aktualisiert haben, suchen Sie zunächst nach `<Directory "/var/www/html">` oder `<Directory "/var/www">` in `000-default.conf`.
-   >- Sie müssen den Wert von `AllowOverride` in der Anweisung für den Ordner, in dem Sie die Adobe Commerce-Software installieren möchten. Um beispielsweise im Basisverzeichnis des Webservers zu installieren, bearbeiten Sie die Anweisung in `<Directory /var/www>`.
+   >- Wenn Sie von einer früheren Apache-Version aktualisiert haben, suchen Sie zunächst in `000-default.conf` nach `<Directory "/var/www/html">` oder `<Directory "/var/www">`.
+   >- Sie müssen den Wert von `AllowOverride` in der Anweisung für den Ordner ändern, in den Sie die Adobe Commerce-Software installieren. Um beispielsweise im Basisverzeichnis des Webservers zu installieren, bearbeiten Sie die Anweisung in `<Directory /var/www>`.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- Wenn Apache *not* installiert, siehe:
+- Wenn Apache *nicht* installiert ist, lesen Sie:
    - [Installieren oder Aktualisieren von Apache auf Ubuntu](#installing-apache-on-ubuntu)
    - [Installieren von Apache unter CentOS](#installing-apache-on-centos)
 
@@ -137,13 +137,13 @@ So installieren Sie die Standardversion von Apache:
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Aktivieren [schreibt und `.htaccess`](#apache-rewrites-and-htaccess).
+1. Aktivieren Sie [rewrites und `.htaccess`](#apache-rewrites-and-htaccess).
 
 ### Aktualisieren von Apache auf Ubuntu
 
 So aktualisieren Sie auf Apache 2.4:
 
-1. Fügen Sie die `ppa:ondrej` Repository mit Apache 2.4:
+1. Fügen Sie das Repository `ppa:ondrej` hinzu, das über Apache 2.4 verfügt:
 
    ```bash
    apt-get -y update
@@ -180,13 +180,13 @@ So aktualisieren Sie auf Apache 2.4:
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Aktivieren [schreibt und `.htaccess`](#apache-rewrites-and-htaccess).
+1. Aktivieren Sie [rewrites und `.htaccess`](#apache-rewrites-and-htaccess).
 
 ## Installieren von Apache unter CentOS
 
-Für Adobe Commerce sind Neuschreibungen des Apache-Servers erforderlich. Sie müssen auch den Typ der Direktiven angeben, die in `.htaccess`, die die Anwendung verwendet, um Neuschreibungsregeln anzugeben.
+Für Adobe Commerce sind Neuschreibungen des Apache-Servers erforderlich. Sie müssen auch den Typ der Direktiven angeben, die in `.htaccess` verwendet werden können, mit dem die Anwendung Neuschreibungsregeln spezifiziert.
 
-Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Installieren Sie die Software, aktivieren Sie Neuschreibungen und geben Sie `.htaccess` Richtlinien.
+Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Installieren Sie die Software, aktivieren Sie Neuschreibungen und geben Sie `.htaccess` -Anweisungen an.
 
 ### Installieren von Apache
 
@@ -217,7 +217,7 @@ Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Install
 
 ### Aktivieren von Neuschreibungen und .htaccess für CentOS
 
-1. Öffnen `/etc/httpd/conf/httpd.conf` Datei zur Bearbeitung:
+1. Öffnen Sie die Datei `/etc/httpd/conf/httpd.conf` zur Bearbeitung:
 
    ```bash
    vim /etc/httpd/conf/httpd.conf`
@@ -229,7 +229,7 @@ Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Install
    <Directory "/var/www/html">
    ```
 
-1. Ändern Sie den Wert von `AllowOverride` nach `All`.
+1. Ändern Sie den Wert von `AllowOverride` in `All`.
 
    Beispiel:
 
@@ -244,7 +244,7 @@ Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Install
 
    >[!NOTE]
    >
-   >Die vorherigen Werte für `Order` kann nicht in allen Fällen funktionieren. Weitere Informationen finden Sie in der Apache-Dokumentation ([2,4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
+   >Die vorherigen Werte für `Order` funktionieren möglicherweise nicht in allen Fällen. Weitere Informationen finden Sie in der Apache-Dokumentation ([2.4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
 
 1. Speichern Sie die Datei und beenden Sie den Texteditor.
 
@@ -260,7 +260,7 @@ Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Install
 
 ### Aktivieren von Neuschreibungen und .htaccess für Ubuntu
 
-1. Öffnen `/etc/apache2/sites-available/default` Datei zur Bearbeitung:
+1. Öffnen Sie die Datei `/etc/apache2/sites-available/default` zur Bearbeitung:
 
    ```bash
    vim /etc/apache2/sites-available/default
@@ -270,7 +270,7 @@ Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Install
 
    `<Directory "/var/www/html">`
 
-1. Ändern Sie den Wert von `AllowOverride` nach `All`.
+1. Ändern Sie den Wert von `AllowOverride` in `All`.
 
    Beispiel:
 
@@ -285,7 +285,7 @@ Die Installation und Konfiguration von Apache erfolgt in drei Schritten: Install
 
 1. Speichern Sie die Datei und beenden Sie den Texteditor.
 
-1. Konfigurieren Sie Apache für die Verwendung des `mod_rewrite` -Modul:
+1. Konfigurieren Sie Apache für die Verwendung des `mod_rewrite`-Moduls:
 
    ```bash
    cd /etc/apache2/mods-enabled
@@ -307,7 +307,7 @@ Wenn Sie beim Zugriff auf die Site auf 403 Verbotene Fehler stoßen, können Sie
 
 ### Beheben von 403 Verbotenen Fehlern für Apache 2.4
 
-Um Website-Besuchern den Zugriff auf Ihre Site zu ermöglichen, verwenden Sie einen der [Richtlinien erforderlich](https://httpd.apache.org/docs/2.4/howto/access.html).
+Um Website-Besuchern den Zugriff auf Ihre Site zu ermöglichen, verwenden Sie eine der [Require instructions](https://httpd.apache.org/docs/2.4/howto/access.html) .
 
 Beispiel:
 
@@ -322,4 +322,4 @@ Beispiel:
 
 >[!NOTE]
 >
->Die vorherigen Werte für `Order` kann nicht in allen Fällen funktionieren. Weitere Informationen finden Sie unter [Apache-Dokumentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>Die vorherigen Werte für `Order` funktionieren möglicherweise nicht in allen Fällen. Weitere Informationen finden Sie in der [Apache-Dokumentation](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

@@ -1,18 +1,18 @@
 ---
 title: Migrieren von Änderungen
-description: Erfahren Sie, wie Sie nur Daten migrieren, die sich seit der letzten Magento 1-Datenmigration geändert haben, mit der [!DNL Data Migration Tool].
+description: Erfahren Sie, wie Sie nur Daten migrieren, die sich seit der letzten Magento 1-Datenmigration mit dem  [!DNL Data Migration Tool] geändert haben.
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
 # Migrieren von Änderungen
 
-Das Tool für die inkrementelle Migration installiert Deltalog-Tabellen (mit Präfix `m2_cl_*`) und Triggern (zur Nachverfolgung von Änderungen in der Magento 1-Datenbank während der [Datenmigration](data.md). Diese Deltalog-Tabellen und -Trigger sind unverzichtbar, um sicherzustellen, dass Sie nur die Änderungen migrieren, die seit der letzten Datenmigration in Magento 1 vorgenommen wurden. Diese Änderungen sind:
+Das inkrementelle Migrationstool installiert Deltalog-Tabellen (mit dem Präfix `m2_cl_*`) und Trigger (zum Verfolgen von Änderungen) in der Magento 1-Datenbank während der [Datenmigration](data.md). Diese Deltalog-Tabellen und -Trigger sind unverzichtbar, um sicherzustellen, dass Sie nur die Änderungen migrieren, die seit der letzten Datenmigration in Magento 1 vorgenommen wurden. Diese Änderungen sind:
 
 * Daten, die Kunden über Storefront hinzugefügt haben (erstellte Bestellungen, Rezensionen und Änderungen in Kundenprofilen)
 
@@ -25,10 +25,10 @@ Das Tool für die inkrementelle Migration installiert Deltalog-Tabellen (mit Pr�
 
 Bevor Sie beginnen, bereiten Sie die folgenden Schritte vor:
 
-1. Melden Sie sich beim Anwendungsserver als [der Dateisysteminhaber](../../../installation/prerequisites/file-system/overview.md).
-1. Ändern Sie die `/bin` Verzeichnis oder stellen Sie sicher, dass es Ihrem System hinzugefügt wird. `PATH`.
+1. Melden Sie sich beim Anwendungsserver als [Dateisysteminhaber](../../../installation/prerequisites/file-system/overview.md) an.
+1. Wechseln Sie zum Verzeichnis `/bin` oder stellen Sie sicher, dass es Ihrem System `PATH` hinzugefügt wird.
 
-Siehe [Erste Schritte](overview.md#first-steps) für weitere Details.
+Weitere Informationen finden Sie im Abschnitt [Erste Schritte](overview.md#first-steps) .
 
 ## Führen Sie den inkrementellen Migrationsbefehl aus
 
@@ -53,10 +53,10 @@ Dabei gilt:
 
 ## Migrieren von Daten, die von Drittanbietererweiterungen erstellt wurden
 
-Im `Delta` -Modus [!DNL Data Migration Tool] migriert Daten, die nur von Magento-eigenen Modulen erstellt wurden, und ist nicht für den Code oder die Erweiterungen von Drittanbieterentwicklern verantwortlich. Wenn diese Erweiterungen Daten in der Storefront-Datenbank erstellt haben und der Händler diese Daten in Magento 2 — Konfigurationsdateien des [!DNL Data Migration Tool] sollte entsprechend erstellt und geändert werden.
+Im Modus `Delta` migriert der Modus [!DNL Data Migration Tool] nur von Magento erstellte Daten und ist nicht für den Code oder die Erweiterungen von Drittanbieterentwicklern verantwortlich. Wenn diese Erweiterungen Daten in der Storefront-Datenbank erstellt haben und der Händler diese Daten in Magento 2 speichern möchte, sollten Konfigurationsdateien des [!DNL Data Migration Tool] entsprechend erstellt und geändert werden.
 
 Wenn eine Erweiterung über eigene Tabellen verfügt und Sie ihre Änderungen für die Delta-Migration verfolgen müssen, führen Sie die folgenden Schritte aus:
 
-1. Fügen Sie die zu verfolgenden Tabellen zum `deltalog.xml` file
-1. Erstellen Sie eine zusätzliche Delta-Klasse, die die `Migration\App\Step\AbstractDelta`
-1. Fügen Sie den Namen der neu erstellten Klasse zum Delta-Modus-Abschnitt von `config.xml`
+1. Fügen Sie die zu verfolgenden Tabellen zur Datei `deltalog.xml` hinzu
+1. Erstellen Sie eine zusätzliche Delta-Klasse, die die `Migration\App\Step\AbstractDelta` erweitert
+1. Fügen Sie den Namen der neu erstellten Klasse zum Delta-Modus-Abschnitt von `config.xml` hinzu.

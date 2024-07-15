@@ -6,14 +6,14 @@ feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '138'
+ht-degree: 1%
 
 ---
 
 # Best Practice für die OPcache-Speichergröße in Adobe Commerce
 
-Für Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur 2.3.x wird empfohlen, `opcache.memory_consumption` auf mindestens 2 GB eingestellt ist, um eine Leistungsbeeinträchtigung zu vermeiden.
+Für Adobe Commerce on Cloud Infrastructure Pro Plan Architecture 2.3.x wird empfohlen, `opcache.memory_consumption` auf mindestens 2 GB festzulegen, um eine Leistungsbeeinträchtigung zu vermeiden.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,9 +22,9 @@ Für Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur 2.3.x wird empfo
 
 ## Speicher konfigurieren
 
-Mindestens zuweisen **2 GB** des Speichers für [OPcache PHP-Modul](https://www.php.net/manual/en/book.opcache.php). Das OPcache-Modul wird im `php.ini` -Datei. Um 2048 MB Arbeitsspeicher zuzuweisen, legen Sie `opcache.memory_consumption = 2048`.
+Weisen Sie mindestens **2GB** Speicher für das [OPcache-PHP-Modul](https://www.php.net/manual/en/book.opcache.php) zu. Das OPcache-Modul wird in der Datei `php.ini` konfiguriert. Um 2048 MB Arbeitsspeicher zuzuweisen, legen Sie `opcache.memory_consumption = 2048` fest.
 
-## Zusätzliche Informationen
+## Weitere Informationen
 
 * [Best Practices für die Leistung - PHP-Einstellungen](../../../performance/software.md#php-settings)
 * [PHP-Optionen konfigurieren](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)

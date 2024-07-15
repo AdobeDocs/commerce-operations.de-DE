@@ -1,34 +1,34 @@
 ---
 title: '[!DNL Extensions]'
-description: Informationen zum [!DNL Extensions] im [!DNL Site-Wide Analysis Tool], wann sie verwendet werden sollte, deren Vorteile und Best Practices.
+description: Erfahren Sie mehr über die Registerkarte [!DNL Extensions] in der  [!DNL Site-Wide Analysis Tool], wann sie verwendet werden soll, ihre Vorteile und Best Practices.
 exl-id: e0ddc158-b268-44cc-8998-6b853d92b835
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
 # [!DNL Extensions]
 
-Ein [!DNL extension] ist ein benutzerdefiniertes Modul, Sprachpaket oder eine Kombination aus benutzerdefinierten Modulen und Sprachpaketen, die dem Adobe Commerce-Hauptprodukt neue Funktionen hinzufügen. [Commerce Marketplace](https://marketplace.magento.com/extensions.html) bietet eine Auswahl an [!DNL extensions] die kostenlos und zum Verkauf angeboten werden. Die Liste der [!DNL extensions] auf Ihrer Adobe Commerce-Instanz im [!DNL Site-Wide Analysis Tool].
+Ein [!DNL extension] ist ein benutzerdefiniertes Modul, Sprachpaket oder eine Kombination aus benutzerdefinierten Modulen und Sprachpaketen, die dem Adobe Commerce-Hauptprodukt neue Funktionen hinzufügen. [Commerce Marketplace](https://marketplace.magento.com/extensions.html) bietet eine Auswahl von [!DNL extensions], die kostenlos verfügbar sind, und solchen, die zum Verkauf angeboten werden. Die Liste der auf Ihrer Adobe Commerce-Instanz installierten [!DNL extensions] finden Sie im Abschnitt [!DNL Site-Wide Analysis Tool].
 
 ## Verwendungsbereiche
 
-Die [!DNL Extensions] im [!DNL Site-Wide Analysis Tool] enthält Informationen zu [!DNL extensions] , die auf Ihrer Adobe Commerce-Instanz installiert sind. Auf dieser Registerkarte können Sie die Liste der [!DNL extensions] Sie verwenden, ihre Versionen und andere detaillierte Informationen wie Beschreibung, Funktionen und Verwendungszwecke.
+Die Registerkarte &quot;[!DNL Extensions]&quot;im Feld &quot;[!DNL Site-Wide Analysis Tool]&quot;enthält Informationen zu den auf Ihrer Adobe Commerce-Instanz installierten [!DNL extensions]. Auf dieser Registerkarte können Sie die Liste der von Ihnen verwendeten [!DNL extensions], deren Versionen und andere detaillierte Informationen wie Beschreibung, Funktionen und Verwendungszwecke überprüfen.
 
 ## Vorteile
 
-* Sparen Sie Zeit mit einem schnellen Überblick über alle [!DNL extensions] auf Ihrer Adobe Commerce-Instanz installiert.
+* Sparen Sie Zeit mit einem schnellen Überblick über alle in Ihrer Adobe Commerce-Instanz installierten [!DNL extensions].
 
-* Informationen zu den installierten Versionen erhalten [!DNL extensions] und aktualisieren Sie sie auf die neuesten Versionen.
+* Erhalten Sie Informationen zu den installierten Versionen von [!DNL extensions] und aktualisieren Sie sie auf die neuesten Versionen.
 
 ## Best Practices
 
-* Drittanbieter beibehalten [!DNL extensions] auf die neuesten Versionen aktualisiert.
+* Halten Sie Ihren Drittanbieter [!DNL extensions] auf dem neuesten Stand.
 
-* Stellen Sie sicher, dass [!DNL extensions] Sie auswählen, dass sie mit Ihrer Adobe Commerce-Instanz kompatibel sind.
+* Stellen Sie sicher, dass die von Ihnen gewählten [!DNL extensions] mit Ihrer Adobe Commerce-Instanz kompatibel sind.
 
-* Wenn Sie Ihren Drittanbieter nicht halten können [!DNL extensions] auf dem neuesten Stand der neuesten Versionen, sollten Sie verschiedene [!DNL extensions].
+* Wenn Sie Ihre Drittanbieter [!DNL extensions] nicht auf dem neuesten Stand halten können, sollten Sie unterschiedliche [!DNL extensions] verwenden.
 
-* Um potenzielle Probleme zu vermeiden, laden Sie Drittanbieter herunter/erwerben Sie diese. [!DNL extensions] aus einer vertrauenswürdigen Quelle, z. B. [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* Um potenzielle Probleme zu vermeiden, laden Sie [!DNL extensions] von Drittanbietern aus einer vertrauenswürdigen Quelle herunter/erwerben Sie diese, z. B. [Commerce Marketplace](https://marketplace.magento.com/extensions.html).

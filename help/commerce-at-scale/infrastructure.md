@@ -4,7 +4,7 @@ description: Stellen Sie in Ihrer Adobe Commerce- und Adobe Experience Manager-I
 exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ Wenn es in der Infrastruktur einen AWS-Anwendungs-Lastenausgleich und mehrere Di
 
 1. Die Konsistenzprüfungen des Herausgebers sollten überprüft werden, um zu verhindern, dass Dispatcher unnötig früh aus dem Dienst aussteigen. Die Timeout-Einstellungen der Konsistenzprüfung des Lastenausgleichs sollten mit den Timeout-Einstellungen des Herausgebers übereinstimmen.
 
-   ![Screenshot mit Konsistenzprüfungen AEM Lastenausgleichs](../assets/commerce-at-scale/health-checks.png)
+   ![Screenshot mit AEM Konsistenzprüfungen des Lastenausgleichs](../assets/commerce-at-scale/health-checks.png)
 
-1. Die Treue der Dispatcher-Zielgruppe kann deaktiviert werden und der Round Robin-Lastenausgleich-Algorithmus kann verwendet werden. Dies setzt voraus, dass keine AEM spezifischen Funktionen oder AEM Benutzersitzungen verwendet werden, für die die Sitzungsstickigkeit festgelegt werden muss. Es wird davon ausgegangen, dass sich die Benutzeranmeldung und Sitzungsverwaltung nur auf Adobe Commerce über GraphQL befinden.
+1. Die Dispatcher-Zielgruppentreue kann deaktiviert und der Round Robin-Lastenausgleichsalgorithmus verwendet werden. Dies setzt voraus, dass keine AEM spezifischen Funktionen oder AEM Benutzersitzungen verwendet werden, für die die Sitzungsstickigkeit festgelegt werden muss. Es wird davon ausgegangen, dass sich die Benutzeranmeldung und Sitzungsverwaltung nur auf Adobe Commerce über GraphQL befinden.
 
    ![Screenshot mit AEM Sitzungs-Stickiness-Attributen](../assets/commerce-at-scale/session-stickiness.png)
 
@@ -41,7 +41,7 @@ Wenn in der Infrastruktur kein Lastenausgleich vorhanden ist, sollten die Timeou
 
 ## Herausgeber
 
-Verbindungsbeschränkungen und -zeitüberschreitungen für Publisher GraphQL: Zunächst sollten die Max. HTTP-Verbindungen in den OSGi-Einstellungen der Adobe Commerce CIF GraphQL Client Configuration Factory auf das standardmäßige Limit für schnelle Verbindungen gesetzt werden, das derzeit auf 200 festgelegt ist. Selbst wenn sich in der AEM-Farm mehrere Herausgeber befinden, sollte die Beschränkung für jeden Herausgeber gleich sein und mit der Einstellung Schnell übereinstimmen. Der Grund dafür ist, dass in einigen Fällen ein Herausgeber mehr Traffic verarbeiten könnte als die anderen Herausgeber, wenn beispielsweise ein zugehöriger Dispatcher aus der Farm genommen wird. Dies würde bedeuten, dass der gesamte Traffic über den einzigen verbleibenden Dispatcher und Herausgeber geleitet wird. In diesem Fall benötigt der einzelne Herausgeber dann alle HTTP-Verbindungen.
+Verbindungsbeschränkungen und -zeitüberschreitungen für Publisher GraphQL: Zunächst sollten die Max. HTTP-Verbindungen in den OSGi-Einstellungen für GraphQL Client Configuration Factory auf den Standardwert Fastly maximum connections limit gesetzt werden, der derzeit auf 200 festgelegt ist. Selbst wenn sich in der AEM-Farm mehrere Herausgeber befinden, sollte die Beschränkung für jeden Herausgeber gleich sein und mit der Einstellung Schnell übereinstimmen. Der Grund dafür ist, dass in einigen Fällen ein Herausgeber mehr Traffic verarbeiten könnte als die anderen Herausgeber, wenn beispielsweise ein zugehöriger Dispatcher aus der Farm genommen wird. Dies würde bedeuten, dass der gesamte Traffic über den einzigen verbleibenden Dispatcher und Herausgeber geleitet wird. In diesem Fall benötigt der einzelne Herausgeber dann alle HTTP-Verbindungen.
 
 Die &quot;Standard-HTTP-Methode&quot;sollte von POST auf GET festgelegt werden. Im Adobe Commerce GraphQL-Cache werden nur GET-Anforderungen zwischengespeichert. Daher sollte die Standardmethode immer auf GET festgelegt werden.
 
@@ -49,7 +49,7 @@ Der Wert für HTTP-Verbindungs-Timeout und HTTP-Socket-Timeout sollte auf einen 
 
 Die folgende Abbildung zeigt die Magento CIF GraphQL Client Configuration Factory. Die hier gezeigten Einstellungen sind nur Beispiele und müssen von Fall zu Fall angepasst werden:
 
-![Screenshot der Konfigurationseinstellungen des Commerce-Integrationsframework](../assets/commerce-at-scale/cif-config.png)
+![Screenshot der Commerce integration framework-Konfigurationseinstellungen](../assets/commerce-at-scale/cif-config.png)
 
 Die folgenden Abbildungen zeigen die Fastly-Backend-Konfigurationen. Die hier gezeigten Einstellungen sind nur Beispiele und müssen von Fall zu Fall angepasst werden:
 

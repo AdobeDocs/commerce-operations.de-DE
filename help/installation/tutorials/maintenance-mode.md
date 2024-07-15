@@ -11,24 +11,24 @@ ht-degree: 0%
 
 # Aktivieren oder Deaktivieren des Wartungsmodus
 
-Das folgende Handbuch bezieht sich auf eine Seite mit dem Standard-Wartungsmodus. Wenn Sie eine benutzerdefinierte Wartungsseite verwenden müssen, lesen Sie [Benutzerdefinierte Wartungsseite erstellen](../../upgrade/troubleshooting/maintenance-mode-options.md) Thema.
+Das folgende Handbuch bezieht sich auf eine Seite mit dem Standard-Wartungsmodus. Wenn Sie eine benutzerdefinierte Wartungsseite verwenden müssen, lesen Sie das Thema [Erstellen der benutzerdefinierten Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md) .
 
-Adobe Commerce verwendet [Wartungsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode) zum Deaktivieren des Bootstrapping. Die Deaktivierung des Bootstrapping ist hilfreich, wenn Sie Ihre Site verwalten, aktualisieren oder neu konfigurieren.
+Adobe Commerce verwendet den [Wartungsmodus](../../configuration/bootstrap/application-modes.md#maintenance-mode), um das Bootstrapping zu deaktivieren. Die Deaktivierung des Bootstrapping ist hilfreich, wenn Sie Ihre Site verwalten, aktualisieren oder neu konfigurieren.
 
 Das Programm erkennt den Wartungsmodus wie folgt:
 
 * Wenn `var/.maintenance.flag` nicht vorhanden ist, ist der Wartungsmodus deaktiviert und die Anwendung funktioniert normal.
-* Andernfalls ist der Wartungsmodus aktiviert, sofern `var/.maintenance.ip` vorhanden ist.
+* Andernfalls ist der Wartungsmodus aktiviert, es sei denn, `var/.maintenance.ip` ist vorhanden.
 
   `var/.maintenance.ip` kann eine Liste von IP-Adressen enthalten. Wenn über HTTP auf einen Einstiegspunkt zugegriffen wird und die Client-IP-Adresse einem der Einträge in dieser Liste entspricht, ist der Wartungsmodus deaktiviert.
 
 ## Installieren des Programms
 
-Bevor Sie diesen Befehl zum Aktivieren oder Deaktivieren des Wartungsmodus verwenden, müssen Sie [Installieren des Programms](../advanced.md).
+Bevor Sie diesen Befehl zum Aktivieren oder Deaktivieren des Wartungsmodus verwenden, müssen Sie [die Anwendung installieren](../advanced.md).
 
 ## Aktivieren oder Deaktivieren des Wartungsmodus
 
-Verwenden Sie die `magento maintenance` CLI-Befehl zum Aktivieren oder Deaktivieren des Wartungsmodus.
+Verwenden Sie den CLI-Befehl `magento maintenance` , um den Wartungsmodus zu aktivieren oder zu deaktivieren.
 
 Befehlsverwendung:
 
@@ -44,13 +44,13 @@ bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=
 bin/magento maintenance:status
 ```
 
-Die `--ip=<ip address>` ist eine IP-Adresse, die vom Wartungsmodus ausgenommen werden soll (z. B. Entwickler, die die Wartung durchführen). Verwenden Sie die Option mehrmals, um mehrere IP-Adressen im selben Befehl auszuschließen.
+Die Option `--ip=<ip address>` ist eine IP-Adresse, die vom Wartungsmodus ausgenommen werden soll (z. B. Entwickler, die die Wartung durchführen). Verwenden Sie die Option mehrmals, um mehrere IP-Adressen im selben Befehl auszuschließen.
 
 >[!NOTE]
 >
->Verwenden `--ip=<ip address>` mit `magento maintenance:disable` speichert die Liste der IPs zur späteren Verwendung. Um die Liste der ausgenommenen IPs zu löschen, verwenden Sie `magento maintenance:enable --ip=none` oder [Liste der ausgenommenen IP-Adressen beibehalten](#maintain-the-list-of-exempt-ip-addresses).
+>Durch Verwendung von `--ip=<ip address>` und `magento maintenance:disable` wird die Liste der IPs für die spätere Verwendung gespeichert. Um die Liste der ausgenommenen IP-Adressen zu löschen, verwenden Sie `magento maintenance:enable --ip=none` oder lesen Sie den Abschnitt [Liste der ausgenommenen IP-Adressen beibehalten](#maintain-the-list-of-exempt-ip-addresses).
 
-Die `bin/magento maintenance:status` zeigt den Status des Wartungsmodus an.
+Der Befehl `bin/magento maintenance:status` zeigt den Status des Wartungsmodus an.
 
 So aktivieren Sie beispielsweise den Wartungsmodus ohne IP-Adressenausnahmen:
 
@@ -65,30 +65,30 @@ bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
 Nachdem Sie die Anwendung in den Wartungsmodus versetzt haben, müssen Sie alle Verbraucherprozesse in der Nachrichtenwarteschlange stoppen.
-Eine Möglichkeit, diese Prozesse zu finden, besteht darin, die `ps -ef | grep queue:consumers:start` und führen Sie dann die `kill <process_id>` -Befehl für jeden Verbraucher. Wiederholen Sie diese Aufgabe in einer Umgebung mit mehreren Knoten für jeden Knoten.
+Eine Möglichkeit, diese Prozesse zu finden, besteht darin, den Befehl `ps -ef | grep queue:consumers:start` auszuführen und dann den Befehl `kill <process_id>` für jeden Verbraucher auszuführen. Wiederholen Sie diese Aufgabe in einer Umgebung mit mehreren Knoten für jeden Knoten.
 
 ## Liste der ausgenommenen IP-Adressen beibehalten
 
-Um die Liste der ausgenommenen IP-Adressen zu verwalten, können Sie entweder die `[--ip=<ip list>]` -Option in den vorherigen Befehlen oder Sie können Folgendes verwenden:
+Um die Liste der ausgenommenen IP-Adressen zu verwalten, können Sie entweder die Option `[--ip=<ip list>]` in den vorherigen Befehlen verwenden oder Folgendes verwenden:
 
 ```bash
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 
-Die `<ip address> .. <ip address>` -Syntax ist eine optionale, durch Leerzeichen getrennte Liste von IP-Adressen, die ausgeschlossen werden sollen.
+Die Syntax `<ip address> .. <ip address>` ist eine optionale Liste mit durch Leerzeichen getrennten IP-Adressen, die ausgeschlossen werden sollen.
 
-Die `--none` löscht die Liste.
+Die Option `--none` löscht die Liste.
 
 ## Multi-Store-Setups
 
 <!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
 <!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-Wenn Sie mehrere Stores mit jeweils unterschiedlichem Layout und lokalisierten Inhalten einrichten möchten, übergeben Sie die `$_GET['skin']` -Parameter auf den vorgesehenen Prozessor.
+Wenn Sie mehrere Stores mit jeweils unterschiedlichem Layout und lokalisierten Inhalten einrichten möchten, übergeben Sie den Parameter `$_GET['skin']` an den vorgesehenen Prozessor.
 
-Im folgenden Beispiel verwenden wir eine `503` Typ der Fehlervorlagendatei, die lokalisierten Inhalt erfordert.
+Im folgenden Beispiel wird eine Fehlervorlagendatei vom Typ `503` verwendet, die lokalisierten Inhalt erfordert.
 
-Der Konstruktor der `Error_Processor` -Klasse akzeptiert eine `skin` GET-Parameter zum Ändern des Layouts:
+Der Konstruktor der `Error_Processor` -Klasse akzeptiert einen `skin` -GET-Parameter, um das Layout zu ändern:
 
 ```php
 if (isset($_GET['skin'])) {
@@ -96,15 +96,15 @@ if (isset($_GET['skin'])) {
 }
 ```
 
-Dies kann auch zu einer Neuschreibungsregel im Abschnitt `.htaccess` Datei, die eine `skin` -Parameter an die URL an.
+Dies kann auch zu einer Neuschreibungsregel in der Datei `.htaccess` hinzugefügt werden, die einen Parameter `skin` an die URL anhängt.
 
-### $_GET[&quot;haut&quot;] parameter
+### Parameter $_GET[&#39;skin&#39;]
 
-So verwenden Sie die `skin` Parameter:
+So verwenden Sie den Parameter `skin` :
 
 1. Überprüfen Sie, ob die `.maintenance.flag` vorhanden ist.
-1. Notieren Sie die Hostadresse, die auf die `HTTP_HOST`oder einer anderen Variablen, wie z. B. ENV-Variablen.
-1. Überprüfen Sie, ob die `skin` vorhanden ist.
+1. Notieren Sie die Hostadresse, die auf `HTTP_HOST` verweist, oder jede andere Variable, z. B. ENV-Variablen.
+1. Überprüfen Sie, ob der Parameter `skin` vorhanden ist.
 1. Legen Sie den Parameter mithilfe der unten stehenden Neuschreibungsregeln fest.
 
    Im Folgenden finden Sie einige Beispiele für Neuschreibungsregeln:
@@ -116,13 +116,13 @@ So verwenden Sie die `skin` Parameter:
 
 1. Kopieren Sie die folgenden Dateien:
 
-   * `pub/errors/default/503.phtml` nach `pub/errors/sub/503.phtml`
-   * `pub/errors/default/css/styles.css` nach `pub/errors/sub/styles.css`
+   * `pub/errors/default/503.phtml` bis `pub/errors/sub/503.phtml`
+   * `pub/errors/default/css/styles.css` bis `pub/errors/sub/styles.css`
 
-1. Bearbeiten Sie diese Dateien, um lokalisierten Inhalt im `503.phtml` Datei und benutzerdefinierter Stil im `styles.css` -Datei.
+1. Bearbeiten Sie diese Dateien, um lokalisierten Inhalt in der Datei `503.phtml` und benutzerdefinierten Stil in der Datei `styles.css` bereitzustellen.
 
-   Stellen Sie sicher, dass Ihre Pfade auf Ihre `errors` Verzeichnis. Der Verzeichnisname muss mit dem im `RewriteRule`. Im vorherigen Beispiel wurde die `sub` verwendet wird, was als Parameter im `RewriteRule` (`skin=sub`)
+   Stellen Sie sicher, dass Ihre Pfade auf das Verzeichnis `errors` verweisen. Der Ordnername muss mit dem URL-Parameter übereinstimmen, der in `RewriteRule` angegeben ist. Im vorherigen Beispiel wird das Verzeichnis `sub` verwendet, das als Parameter in der Variablen `RewriteRule` (`skin=sub`) angegeben ist.
 
 >[!NOTE]
 >
->Die [nginx](../../configuration/multi-sites/ms-nginx.md) muss für Multi-Store-Setups hinzugefügt werden.
+>Die Einstellung [nginx](../../configuration/multi-sites/ms-nginx.md) muss für Multi-Store-Setups hinzugefügt werden.

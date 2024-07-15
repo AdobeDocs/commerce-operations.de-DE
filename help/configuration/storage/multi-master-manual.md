@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -29,16 +29,16 @@ Die manuelle Aufspaltung von Datenbanken beinhaltet:
 
 >[!WARNING]
 >
->Wenn ein benutzerdefinierter Code JOINs mit Tabellen in den Verkaufs- und Anführungsdatenbanken verwendet, können Sie _cannot_ Verwendung von geteilten Datenbanken. Wenden Sie sich im Zweifelsfall an die Autoren von benutzerdefiniertem Code oder Erweiterungen, um sicherzustellen, dass ihr Code keine JOINs verwendet.
+>Wenn ein benutzerdefinierter Code JOINs mit Tabellen in den Verkaufs- und Anführungsdatenbanken verwendet, können Sie _keine Split-Datenbanken verwenden_. Wenden Sie sich im Zweifelsfall an die Autoren von benutzerdefiniertem Code oder Erweiterungen, um sicherzustellen, dass ihr Code keine JOINs verwendet.
 
 Dieses Thema verwendet die folgenden Benennungskonventionen:
 
-- Der Name der Hauptdatenbank lautet `magento` und sein Benutzername und Kennwort beide `magento`
-- Der Name der Anführungsdatenbank lautet `magento_quote` und sein Benutzername und Kennwort beide `magento_quote`
+- Der Hauptdatenbankname lautet `magento` und sein Benutzername und Kennwort lauten jeweils `magento`
+- Der Name der Anführungsdatenbank ist `magento_quote` und der Benutzername und das Kennwort lauten jeweils `magento_quote`
 
-  Die Angebotsdatenbank wird auch als _Kasse_ Datenbank.
+  Die Anführungsdatenbank wird auch als _Checkout_ -Datenbank bezeichnet.
 
-- Der Name der Verkaufsdatenbank lautet `magento_sales` und sein Benutzername und Kennwort beide `magento_sales`
+- Der Name der Verkaufsdatenbank ist `magento_sales` und sein Benutzername und Kennwort lauten jeweils `magento_sales`
 
   Die Verkaufsdatenbank wird auch als OMS-Datenbank bezeichnet.
 
@@ -50,9 +50,9 @@ Dieses Thema verwendet die folgenden Benennungskonventionen:
 
 Adobe empfiehlt dringend, dass Sie Ihre aktuelle Datenbank und Ihr Dateisystem sichern, damit Sie diese wiederherstellen können, wenn während des Vorgangs Probleme auftreten.
 
-**Sichern des Systems**:
+**So sichern Sie Ihr System**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Commerce-Server als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
 1. Geben Sie die folgenden Befehle ein:
 
    ```bash
@@ -74,8 +74,8 @@ In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkaufs- 
    mysql -u root -p
    ```
 
-1. MySQL eingeben `root` das Kennwort des Benutzers bei Aufforderung.
-1. Geben Sie die folgenden Befehle in der angezeigten Reihenfolge ein, um Datenbankinstanzen mit dem Namen `magento_quote` und `magento_sales` mit denselben Benutzernamen und Kennwörtern:
+1. Geben Sie bei Aufforderung das Kennwort des MySQL `root`-Benutzers ein.
+1. Geben Sie die folgenden Befehle in der angezeigten Reihenfolge ein, um Datenbankinstanzen mit den Namen `magento_quote` und `magento_sales` mit denselben Benutzernamen und Passwörtern zu erstellen:
 
    ```shell
    create database magento_quote;
@@ -87,7 +87,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkaufs- 
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Eingabe `exit` , um die Eingabeaufforderung zu beenden.
+1. Geben Sie `exit` ein, um die Eingabeaufforderung zu beenden.
 
 1. Überprüfen Sie die Datenbanken einzeln:
 
@@ -126,11 +126,11 @@ Tabellennamen der Verkaufsdatenbank beginnen mit:
 - `salesrule_`
 - `sales_`
 - `magento_sales_`
-- Die `magento_customercustomattributes_sales_flat_order` ebenfalls betroffen ist
+- Die `magento_customercustomattributes_sales_flat_order` -Tabelle ist ebenfalls betroffen.
 
 >[!INFO]
 >
->Dieser Abschnitt enthält Skripte mit bestimmten Datenbanktabellennamen. Wenn Sie Anpassungen vorgenommen haben oder eine vollständige Liste der Tabellen anzeigen möchten, bevor Sie Aktionen daran durchführen, lesen Sie [Referenzskripte](#reference-scripts).
+>Dieser Abschnitt enthält Skripte mit bestimmten Datenbanktabellennamen. Wenn Sie Anpassungen vorgenommen haben oder eine vollständige Liste der Tabellen anzeigen möchten, bevor Sie Aktionen daran durchführen, finden Sie weitere Informationen unter [Referenzskripte](#reference-scripts).
 
 Weitere Informationen finden Sie unter
 
@@ -139,13 +139,13 @@ Weitere Informationen finden Sie unter
 
 ### SQL-Scripts für Verkaufsdatenbank erstellen
 
-Erstellen Sie die folgenden SQL-Skripte an einem Speicherort, auf den der Benutzer zugreifen kann, der sich bei Ihrem Commerce-Server anmeldet. Wenn Sie sich beispielsweise anmelden oder Befehle als `root`, können Sie die Skripte im `/root/sql-scripts` Verzeichnis.
+Erstellen Sie die folgenden SQL-Skripte an einem Speicherort, auf den der Benutzer zugreifen kann, der sich bei Ihrem Commerce-Server anmeldet. Wenn Sie sich beispielsweise anmelden oder Befehle als `root` ausführen, können Sie die Skripte im Verzeichnis `/root/sql-scripts` erstellen.
 
 #### Fremdschlüssel entfernen
 
 Dieses Skript entfernt ausländische Schlüssel, die auf nicht verkaufte Tabellen verweisen, aus der Verkaufsdatenbank.
 
-Erstellen Sie das folgende Skript und geben Sie ihm einen Namen wie `1_foreign-sales.sql`. Ersetzen `<your main DB name>` mit dem Namen Ihrer Datenbank.
+Erstellen Sie das folgende Skript und geben Sie ihm einen Namen wie `1_foreign-sales.sql`. Ersetzen Sie `<your main DB name>` durch den Namen Ihrer Datenbank.
 
 ```sql
 use <your main DB name>;
@@ -200,13 +200,13 @@ ALTER TABLE paypal_billing_agreement_order DROP FOREIGN KEY PAYPAL_BILLING_AGREE
 
 Führen Sie das vorherige Skript aus:
 
-1. Melden Sie sich bei Ihrer MySQL-Datenbank als `root` oder administrativer Benutzer:
+1. Melden Sie sich bei Ihrer MySQL-Datenbank als `root` oder Administrator an:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Im `mysql>` auffordern, führen Sie das Skript wie folgt aus:
+1. Führen Sie an der Eingabeaufforderung `mysql>` das Skript wie folgt aus:
 
    ```shell
    source <path>/<script>.sql
@@ -218,15 +218,15 @@ Führen Sie das vorherige Skript aus:
    source /root/sql-scripts/1_foreign-sales.sql
    ```
 
-1. Geben Sie nach Ausführung des Skripts `exit`.
+1. Geben Sie nach Ausführung des Skripts `exit` ein.
 
 ### Verkaufsdaten sichern
 
-In diesem Abschnitt wird beschrieben, wie Sie Verkaufstabellen aus der wichtigsten Commerce-Datenbank sichern, damit Sie sie in einer separaten Verkaufsdatenbank wiederherstellen können.
+In diesem Abschnitt wird beschrieben, wie Sie Verkaufstabellen aus der Commerce-Hauptdatenbank sichern, damit Sie sie in einer separaten Verkaufsdatenbank wiederherstellen können.
 
-Wenn Sie sich derzeit im `mysql>` Eingabeaufforderung eingeben `exit` , um zur Befehlszeile zurückzukehren.
+Wenn Sie sich derzeit an der `mysql>`-Eingabeaufforderung befinden, geben Sie `exit` ein, um zur Befehlszeile zurückzukehren.
 
-Führen Sie Folgendes aus: `mysqldump` -Befehle, einzeln, aus der Kommandos-Shell. Ersetzen Sie jeweils Folgendes:
+Führen Sie die folgenden `mysqldump`-Befehle nacheinander aus der Befehlszeile aus. Ersetzen Sie jeweils Folgendes:
 
 - `<your database root username>` mit dem Namen Ihres Datenbankstammbenutzers
 - `<your database root user password>` mit dem Kennwort des Benutzers
@@ -263,7 +263,7 @@ Dieses Skript stellt Verkaufsdaten in Ihrer Anführungsdatendatenbank wieder her
 
 #### NDB-Anforderung
 
-Wenn Sie eine [Netzwerkdatenbank (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) Cluster:
+Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) verwenden:
 
 1. Konvertieren Sie Tabellen aus InnoDb in NDB-Typ in Dump-Dateien:
 
@@ -299,9 +299,9 @@ Wo
 
   In diesem Thema lautet der Beispiel-Datenbankname `magento_sales`.
 
-- `<root username>` mit Ihrem MySQL-Stammbenutzernamen
+- `<root username>` mit Ihrem MySQL-Stamm-Benutzernamen
 - `<root user password>` mit dem Kennwort des Benutzers
-- Überprüfen Sie den Speicherort der zuvor erstellten Sicherungsdateien (z. B. `/var/sales.sql`)
+- Überprüfen Sie den Speicherort der zuvor erstellten Sicherungsdateien (z. B. `/var/sales.sql`).
 
 ## Angebotsdatenbank konfigurieren
 
@@ -309,13 +309,13 @@ In diesem Abschnitt werden die Aufgaben zum Ablegen von Fremdschlüsseln aus den
 
 >[!INFO]
 >
->Dieser Abschnitt enthält Skripte mit bestimmten Datenbanktabellennamen. Wenn Sie Anpassungen vorgenommen haben oder eine vollständige Liste der Tabellen anzeigen möchten, bevor Sie Aktionen daran durchführen, lesen Sie [Referenzskripte](#reference-scripts).
+>Dieser Abschnitt enthält Skripte mit bestimmten Datenbanktabellennamen. Wenn Sie Anpassungen vorgenommen haben oder eine vollständige Liste der Tabellen anzeigen möchten, bevor Sie Aktionen daran durchführen, finden Sie weitere Informationen unter [Referenzskripte](#reference-scripts).
 
-Anführungszeichen für Datenbanktabellennamen setzen auf `quote`. Die `magento_customercustomattributes_sales_flat_quote` und `magento_customercustomattributes_sales_flat_quote_address` sind auch betroffen
+Anführungszeichen für Datenbanktabellennamen: Beginn mit `quote`. Die Tabellen `magento_customercustomattributes_sales_flat_quote` und `magento_customercustomattributes_sales_flat_quote_address` sind ebenfalls betroffen
 
 ### Fremdschlüssel aus Anführungszeichen ablegen
 
-Dieses Skript entfernt Fremdschlüssel, die auf nichtkursive Tabellen verweisen, aus Anführungszeichentabellen. Ersetzen `<your main Commerce DB name>` mit dem Namen Ihrer Commerce-Datenbank.
+Dieses Skript entfernt Fremdschlüssel, die auf nichtkursive Tabellen verweisen, aus Anführungszeichentabellen. Ersetzen Sie `<your main Commerce DB name>` durch den Namen Ihrer Commerce-Datenbank.
 
 Erstellen Sie das folgende Skript und geben Sie ihm einen Namen wie `2_foreign-key-quote.sql`:
 
@@ -334,7 +334,7 @@ Führen Sie das Skript wie folgt aus:
    mysql -u root -p
    ```
 
-1. Im `mysql >` auffordern, führen Sie das Skript wie folgt aus:
+1. Führen Sie an der Eingabeaufforderung `mysql >` das Skript wie folgt aus:
    `source <path>/<script>.sql`
 
    Beispiel:
@@ -343,7 +343,7 @@ Führen Sie das Skript wie folgt aus:
    source /root/sql-scripts/2_foreign-key-quote.sql
    ```
 
-1. Geben Sie nach Ausführung des Skripts `exit`.
+1. Geben Sie nach Ausführung des Skripts `exit` ein.
 
 ### Sichern von Anführungszeichentabellen
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB-Anforderung
 
-Wenn Sie eine [Netzwerkdatenbank (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) Cluster:
+Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html) verwenden:
 
 1. Konvertieren Sie Tabellen aus InnoDb in NDB-Typ in Dump-Dateien:
 
@@ -375,7 +375,7 @@ mysql -u root -p magento_quote < /<path>/quote.sql
 
 ## Verkaufs- und Zitatentabellen aus der Datenbank löschen
 
-Dieses Skript verkauft und zitiert Tabellen aus der Commerce-Datenbank. Ersetzen `<your main DB name>` mit dem Namen Ihrer Commerce-Datenbank.
+Dieses Skript verkauft und zitiert Tabellen aus der Commerce-Datenbank. Ersetzen Sie `<your main DB name>` durch den Namen Ihrer Commerce-Datenbank.
 
 Erstellen Sie das folgende Skript und geben Sie ihm einen Namen wie `3_drop-tables.sql`:
 
@@ -457,7 +457,7 @@ Führen Sie das Skript wie folgt aus:
    mysql -u root -p
    ```
 
-1. Im `mysql>` auffordern, führen Sie das Skript wie folgt aus:
+1. Führen Sie an der Eingabeaufforderung `mysql>` das Skript wie folgt aus:
 
    ```shell
    source <path>/<script>.sql
@@ -469,26 +469,26 @@ Führen Sie das Skript wie folgt aus:
    source /root/sql-scripts/3_drop-tables.sql
    ```
 
-1. Geben Sie nach Ausführung des Skripts `exit`.
+1. Geben Sie nach Ausführung des Skripts `exit` ein.
 
 ## Aktualisierung der Bereitstellungskonfiguration
 
-Der letzte Schritt bei der manuellen Aufspaltung von Datenbanken besteht darin, der Implementierungskonfiguration von Commerce Verbindungs- und Ressourceninformationen hinzuzufügen. `env.php`.
+Der letzte Schritt beim manuellen Aufteilen von Datenbanken besteht darin, der Commerce-Bereitstellungskonfiguration `env.php` Verbindungs- und Ressourceninformationen hinzuzufügen.
 
 So aktualisieren Sie die Bereitstellungskonfiguration:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu der [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Commerce-Server als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
 1. Sichern Sie Ihre Bereitstellungskonfiguration:
 
    ```bash
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
-1. Öffnen `<magento_root>/app/etc/env.php` in einem Texteditor erstellen und mithilfe der in den folgenden Abschnitten beschriebenen Richtlinien aktualisieren.
+1. Öffnen Sie `<magento_root>/app/etc/env.php` in einem Texteditor und aktualisieren Sie ihn mithilfe der in den folgenden Abschnitten beschriebenen Richtlinien.
 
 ### Datenbankverbindungen aktualisieren
 
-Suchen Sie den Block, der mit `'default'` (unter `'connection'`) und fügen Sie `'checkout'` und `'sales'` Abschnitte. Ersetzen Sie die Beispielwerte durch die für Ihre Site geeigneten Werte.
+Suchen Sie den Block, der mit `'default'` beginnt (unter `'connection'`) und fügen Sie die Abschnitte `'checkout'` und `'sales'` hinzu. Ersetzen Sie die Beispielwerte durch die für Ihre Site geeigneten Werte.
 
 ```php
  'default' =>
@@ -529,7 +529,7 @@ Suchen Sie den Block, der mit `'default'` (unter `'connection'`) und fügen Sie 
 
 ### Ressourcen aktualisieren
 
-Suchen Sie den Block, der mit `'resource'` und hinzufügen `'checkout'` und `'sales'` -Abschnitte wie folgt hinzu:
+Suchen Sie den Block, der mit `'resource'` beginnt, und fügen Sie ihm die Abschnitte `'checkout'` und `'sales'` wie folgt hinzu:
 
 ```php
 'resource' =>
@@ -555,16 +555,16 @@ In diesem Abschnitt finden Sie Skripte, mit denen Sie eine vollständige Liste d
 So verwenden Sie diese Skripte:
 
 1. Erstellen Sie ein SQL-Skript mit dem Inhalt jedes Skripts in diesem Abschnitt.
-1. Ersetzen Sie in jedem Skript `<your main DB name>` mit dem Namen Ihrer Commerce-Datenbank.
+1. Ersetzen Sie in jedem Skript `<your main DB name>` durch den Namen Ihrer Commerce-Datenbank.
 
    In diesem Thema lautet der Beispiel-Datenbankname `magento`.
 
-1. Führen Sie jedes Skript aus dem `mysql>` an `source <script name>`
+1. Führen Sie jedes Skript aus der `mysql>`-Eingabeaufforderung als `source <script name>` aus
 1. Überprüfen Sie die Ausgabe.
 1. Kopieren Sie das Ergebnis jedes Skripts in ein anderes SQL-Skript und entfernen Sie die Pipe-Zeichen (`|`).
-1. Führen Sie jedes Skript aus dem `mysql>` an `source <script name>`.
+1. Führen Sie jedes Skript aus der `mysql>`-Eingabeaufforderung als `source <script name>` aus.
 
-   Beim Ausführen dieses zweiten Skripts werden die Aktionen in Ihrer Haupt-Commerce-Datenbank ausgeführt.
+   Beim Ausführen dieses zweiten Skripts werden die Aktionen in Ihrer Commerce-Hauptdatenbank ausgeführt.
 
 ### Fremdschlüssel entfernen (Verkaufstabellen)
 
@@ -672,4 +672,4 @@ select 'SET foreign_key_checks = 1;';
 
 ### Löschen von Anführungszeichentabellen
 
-Legen Sie alle Tabellen ab, die mit `quote_`.
+Legen Sie alle Tabellen ab, die mit `quote_` beginnen.
