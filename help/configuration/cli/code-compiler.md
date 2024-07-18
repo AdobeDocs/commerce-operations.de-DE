@@ -2,7 +2,7 @@
 title: Code-Compiler
 description: Erfahren Sie, wie Sie den Code-Compiler über die Befehlszeile ausführen.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 0%
@@ -30,7 +30,7 @@ So führen Sie den Einzelmandanten-Compiler aus:
 bin/magento setup:di:compile
 ```
 
-```terminal
+```
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -54,7 +54,7 @@ In einigen Fällen möchten Sie möglicherweise Code kompilieren, bevor Sie die 
    bin/magento setup:di:compile
    ```
 
-   ```terminal
+   ```
    Generated code and dependency injection configuration successfully.
    ```
 

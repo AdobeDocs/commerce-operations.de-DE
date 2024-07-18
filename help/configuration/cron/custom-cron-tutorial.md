@@ -2,7 +2,7 @@
 title: Benutzerdefinierten Cron-Auftrag und eine Cron-Gruppe konfigurieren (Tutorial)
 description: Verwenden Sie dieses Schritt-für-Schritt-Tutorial, um einen benutzerdefinierten Cron-Auftrag zu erstellen.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
 
    Sie sollten das folgende Ergebnis sehen:
 
-   ```terminal
+   ```
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -97,7 +97,7 @@ Bevor Sie fortfahren, überprüfen Sie, ob das Beispielmodul registriert und akt
 
 1. Stellen Sie sicher, dass das Modul aktiviert ist.
 
-   ```terminal
+   ```
    Module is enabled
    ```
 
@@ -215,7 +215,7 @@ Dieser Schritt zeigt, wie Sie den benutzerdefinierten Cron-Auftrag mithilfe eine
 
       Das Ergebnis sollte in etwa wie folgt aussehen:
 
-      ```terminal
+      ```
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -234,7 +234,7 @@ Dieser Schritt zeigt, wie Sie den benutzerdefinierten Cron-Auftrag mithilfe eine
 
    Sie sollten einen oder mehrere Einträge wie den folgenden sehen:
 
-   ```terminal
+   ```
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 

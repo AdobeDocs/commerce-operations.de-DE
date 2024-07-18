@@ -2,7 +2,7 @@
 title: Überprüfen des Datenbankstatus
 description: Führen Sie diese Schritte aus, um den Status Ihrer Adobe Commerce-Datenbank zu überprüfen.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Dieser Befehl hat keine Argumente oder Optionen.
 
 Beispielausgabe:
 
-```terminal
+```
 All modules are up to date.
 ```
 

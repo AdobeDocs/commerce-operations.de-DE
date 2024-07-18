@@ -1,5 +1,5 @@
 ---
-source-git-commit: a75b6e0360e7896b8349e7b1877c28d31d5bc0a8
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
    Beispielantwort:
 
-   ```terminal
+   ```
    On branch m2.2_deploy
    Changed but not updated:
      (use "git add <file>..." to update what will be committed)

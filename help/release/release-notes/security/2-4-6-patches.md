@@ -2,7 +2,7 @@
 title: Versionshinweise zu Adobe Commerce 2.4.6 Security Patch
 description: Erfahren Sie mehr über Sicherheitsfehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsrelevante Updates, die in den Sicherheits-Patch-Versionen für Adobe Commerce Version 2.4.6 enthalten sind.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Plattformaktualisierungen für diese Version verbessern die Einhaltung der neues
 
 * Fehlende Abhängigkeiten für das B2B-Sicherheitspaket verursachen den folgenden Installationsfehler bei der Installation oder Aktualisierung der B2B-Erweiterung auf 1.4.0.
 
-  ```terminal
+  ```
   Your requirements could not be resolved to an installable set of packages.
   
     Problem 1

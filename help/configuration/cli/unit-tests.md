@@ -2,7 +2,7 @@
 title: Ausführen von Komponententests
 description: Ausführen von Komponententests, die in der Adobe Commerce-Codebasis definiert sind.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -47,7 +47,7 @@ bin/magento dev:tests:run --help
 
 Beispielrückgabe:
 
-```terminal
+```
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 

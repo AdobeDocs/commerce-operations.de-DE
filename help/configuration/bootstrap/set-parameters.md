@@ -2,7 +2,7 @@
 title: Wert der Bootstrap-Parameter festlegen
 description: Erfahren Sie, wie Sie Bootstrap-Parameter für die Commerce-Anwendung festlegen.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Sie können Bootstrap-Variablen als systemweite Umgebungsvariablen angeben, die 
 
 Sie können beispielsweise die Systemumgebungsvariable `MAGE_PROFILER` verwenden, um einen Modus wie folgt anzugeben:
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -80,7 +80,7 @@ Sie können `.htaccess` an einem der folgenden Speicherorte ändern, je nach Ein
 
 1. Setzen Sie den Wert von `MAGE_PROFILER` auf einen der folgenden Werte:
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

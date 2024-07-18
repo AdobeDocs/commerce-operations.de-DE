@@ -2,7 +2,7 @@
 title: Betriebsmodus festlegen
 description: Erfahren Sie mehr über das Festlegen der Adobe Commerce-Betriebsmodi.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Der Produktionsmodus bietet eine bessere Leistung, da statische Ansichtsdateien 
 
 Wenn Sie in den Entwickler- oder Produktionsmodus wechseln, wird der Inhalt der folgenden Ordner gelöscht:
 
-```terminal
+```
 var/cache
 generated/metadata
 generated/code
@@ -54,7 +54,7 @@ bin/magento deploy:mode:show
 
 Eine Meldung ähnlich der folgenden wird angezeigt:
 
-```terminal
+```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -86,7 +86,7 @@ bin/magento deploy:mode:set production
 
 Meldungen, die der folgenden Anzeige ähneln:
 
-```terminal
+```
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -143,7 +143,7 @@ Wenn Sie von der Produktion in den Entwicklermodus wechseln, sollten Sie generie
 
    Die folgende Meldung wird angezeigt:
 
-   ```terminal
+   ```
    Enabled developer mode.
    ```
 
@@ -155,7 +155,7 @@ bin/magento deploy:mode:set default
 
 Die folgende Meldung wird angezeigt:
 
-```terminal
+```
 Enabled default mode.
 ```
 

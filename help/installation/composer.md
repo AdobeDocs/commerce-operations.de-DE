@@ -2,7 +2,7 @@
 title: Schnellstart für die Installation vor Ort
 description: Führen Sie diese Schritte aus, um Adobe Commerce in Ihrer Infrastruktur zu installieren.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Sie müssen Lese- und Schreibberechtigungen für die Webservergruppe festlegen, bevor Sie Adobe Commerce installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
-```terminal
+```bash
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +

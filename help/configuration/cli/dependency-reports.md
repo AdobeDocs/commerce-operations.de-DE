@@ -2,7 +2,7 @@
 title: Abhängigkeitsberichte
 description: Erstellen Sie Berichte, die die Summen für Modul-, Rundschreiben- und Framework-Abhängigkeiten anzeigen.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Wenn kein Ordner oder Dateiname als Argument übergeben wird, wird der folgende 
 
 Im Folgenden finden Sie einen Teil der Ausgabe eines Beispielmodulabhängigkeitsberichts:
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ Im Folgenden finden Sie einen Teil der Ausgabe eines Beispielmodulabhängigkeits
 
 Im Folgenden finden Sie einen Teil der Ausgabe eines Beispiel-Berichts mit zirkulären Abhängigkeiten :
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ Im Folgenden finden Sie einen Teil der Ausgabe eines Beispiel-Berichts mit zirku
 
 Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispiel-Framework-Abhängigkeitsbericht:
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

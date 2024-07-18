@@ -3,7 +3,7 @@ title: Statischer Inhalts-Cache
 description: Hier erhalten Sie Informationen zum Signieren statischer Inhalte und zum Aktivieren oder Deaktivieren der Funktion.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Commerce erreicht dies durch Hinzufügen einer Bereitstellungsversion zur URL st
 
 Im Folgenden finden Sie ein Beispiel für eine URL, die mit einer Version signiert wurde:
 
-```terminal
+```
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 

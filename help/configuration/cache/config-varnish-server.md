@@ -3,7 +3,7 @@ title: Webserver konfigurieren
 description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung mit Varnish konfigurieren.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Wenn Varnish nicht als Dienst gestartet werden kann, starten Sie ihn wie folgt �
 
    Die folgenden Meldungen werden angezeigt, um einen erfolgreichen Start zu bestätigen:
 
-   ```terminal
+   ```
    child (29805) Started
    200 0
    
@@ -159,7 +159,7 @@ netstat -tulpn
 
 Suchen Sie insbesondere nach der folgenden Ausgabe:
 
-```terminal
+```
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ Installieren Sie die Commerce-Software, falls noch nicht geschehen. Wenn Sie zur
 
 Mögliche Fehler bei der Installation von Commerce:
 
-```terminal
+```
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -217,7 +217,7 @@ Navigieren Sie in einem Webbrowser zu einer beliebigen Commerce-Seite.
 
 Eine lange Liste von Antwortheadern wird in Ihrem Eingabeaufforderungsfenster angezeigt. Suchen Sie nach Kopfzeilen wie den folgenden:
 
-```terminal
+```
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -252,7 +252,7 @@ curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 
 Suchen Sie nach Kopfzeilen wie den folgenden:
 
-```terminal
+```
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

@@ -2,7 +2,7 @@
 title: Optionen für den Wartungsmodus für die Aktualisierung
 description: Erstellen Sie eine benutzerdefinierte Seite für den Wartungsmodus, die Ihre Kunden auf Ihrer Adobe Commerce-Storefront sehen, während Sie ein Upgrade durchführen.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -72,7 +72,7 @@ So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
 
    Fügen Sie am Ende Ihrer Apache-Konfigurationsdatei Folgendes hinzu:
 
-   ```terminal
+   ```
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f

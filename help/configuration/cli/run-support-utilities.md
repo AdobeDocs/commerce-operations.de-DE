@@ -2,7 +2,7 @@
 title: Führen Sie die Hilfsprogramme aus
 description: Fehlerbehebung für Ihr Commerce-Projekt mithilfe des integrierten Support-Dienstprogramms.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Dabei gilt:
 
 Sensible Daten umfassen Kundeninformationen aus den folgenden Datenbanktabellen:
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Stellen Sie nach Abschluss des Befehls die Datenbanksicherung für den Adobe Com
 
 Wir stellen Befehle bereit, die Pfade zu Dienstprogrammen anzeigen, die für die Datenerfassung und die Befehlszeile erforderlich sind. Sie können diese Befehle beispielsweise verwenden, wenn Fehler wie die folgende in der Admin- oder Befehlszeile angezeigt werden:
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Führen Sie die folgenden Befehle in der angezeigten Reihenfolge aus, um die Pfa
 
 Ein Beispiel:
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

@@ -2,7 +2,7 @@
 title: Beispieldaten-Git-Repositorys klonen
 description: Führen Sie diese Schritte aus, um Adobe Commerce-Beispieldaten durch Klonen von Git-Repositorys zu installieren.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -61,7 +61,7 @@ So klonen Sie das GitHub-Beispielrepository mit dem SSH-Protokoll:
    >
    >Wenn der folgende Fehler angezeigt wird, stellen Sie sicher, dass Sie [Ihren SSH-Schlüssel freigegeben haben](https://docs.github.com/articles/generating-ssh-keys/), und GitHub:<br>
 
-   ```terminal
+   ```
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly

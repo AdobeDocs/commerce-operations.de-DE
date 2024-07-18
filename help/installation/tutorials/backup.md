@@ -2,7 +2,7 @@
 title: Backup und Rollback des Dateisystems, der Medien und der Datenbank
 description: Führen Sie diese Schritte aus, um Ihre Adobe Commerce-Anwendung zu sichern und wiederherzustellen.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -109,7 +109,7 @@ bin/magento setup:backup --code --db
 
 Meldungen, die der folgenden Anzeige ähneln:
 
-```terminal
+```
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -148,7 +148,7 @@ bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 
 Meldungen, die der folgenden Anzeige ähneln:
 
-```terminal
+```
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

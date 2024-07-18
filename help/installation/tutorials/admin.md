@@ -3,7 +3,7 @@ title: Erstellen, Bearbeiten oder Entsperren eines Administratorkontos
 description: Führen Sie diese Schritte aus, um das Administratorkonto Ihrer Adobe Commerce Admin App zu verwalten.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Anwendungsbeispiel:
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -63,7 +63,7 @@ Wenn Sie keinen der erforderlichen Parameter angeben, werden Sie von der Anwendu
 bin/magento admin:user:create
 ```
 
-```terminal
+```
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,7 +71,7 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```terminal
+```
 Created Magento administrator user named John
 ```
 
@@ -81,7 +81,7 @@ Im folgenden Beispiel werden `first name`, `last name` und `password` des `j.doe
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -99,13 +99,13 @@ Sie müssen den Benutzernamen des Administrators angeben. Beispiel:
 bin/magento admin:user:unlock admin
 ```
 
-```terminal
+```
 The user account "admin" has been unlocked
 ```
 
 Wenn das Konto nicht entsperrt ist oder ein Problem aufgetreten ist, wird die folgende Meldung angezeigt:
 
-```terminal
+```
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ Vergewissern Sie sich, dass der Benutzer Administrator ist, der Benutzer aktiv i
 
 Wenn das Konto nicht vorhanden ist, wird die folgende Meldung angezeigt:
 
-```terminal
+```
 Couldn't find the user account "bob"
 ```

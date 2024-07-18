@@ -2,7 +2,7 @@
 title: Fortgeschrittene Installation vor Ort
 description: Erfahren Sie mehr über erweiterte Installationsszenarios für Adobe Commerce in Ihrer Infrastruktur.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 0%
@@ -252,7 +252,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Meldungen, die der folgenden Anzeige ähneln, zeigen eine erfolgreiche Installation an:
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -274,7 +274,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Meldungen wie die folgende werden bei erfolgreicher Installation angezeigt:
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -329,7 +329,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Meldungen wie die folgende werden bei erfolgreicher Installation angezeigt:
 
-```terminal
+```
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
