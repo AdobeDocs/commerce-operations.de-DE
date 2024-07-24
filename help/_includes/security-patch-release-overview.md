@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ Mit Sicherheits-Patch-Versionen können Sie Ihre Site sicherer halten, ohne zus�
 
 Jede Sicherheits-Patch-Version basiert auf der vorherigen vollständigen Patch-Version. Es enthält Qualitäts- und Sicherheitskorrekturen aus früheren Patch-Versionen und Sicherheitskorrekturen, die zwischen der vorherigen vollständigen Patch-Version und der Sicherheits-Patch-Version erstellt wurden.
 
-Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [Schnellstart-Installation](../installation/composer.md#example---security-patch).
+Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [Ausführen und Aktualisieren](../installation/composer.md#example---security-patch) im _Upgrade-Handbuch_.

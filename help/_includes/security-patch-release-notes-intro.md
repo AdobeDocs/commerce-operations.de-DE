@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 9d855fca840f081a4b0faa0170eb0e950a7cd7ad
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ Diese Versionshinweise zum Sicherheits-Patch erfassen Aktualisierungen, um die S
 Weitere Informationen zu Sicherheits-Patch-Versionen:
 
 * [Übersicht über Adobe Commerce Security Patch Releases](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* [Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches](/help/installation/composer.md)
+* Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patch-Versionen finden Sie im [Upgrade-Handbuch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)
