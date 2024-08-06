@@ -2,7 +2,7 @@
 title: Allgemeine Befehle
 description: Sehen Sie sich ein Beispiel für häufige Commerce-CLI-Befehle und -Verwendungen an.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Befehle werden nur in der Zusammenfassung angezeigt. Klicken Sie für weitere In
 
 ## Allgemeine Argumente
 
-Die folgenden Argumente gelten für alle Befehle. Diese Befehle können vor oder nach der Installation der Commerce-Software ausgeführt werden:
+Die folgenden Argumente gelten für [alle Befehle](/help/tools/reference/commerce-on-premises.md). Diese Befehle können vor oder nach der Installation der Commerce-Software ausgeführt werden:
 
 | Lange Version | Kurzversion | Bedeutung |
 |--- |--- |--- |
