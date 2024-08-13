@@ -2,9 +2,9 @@
 title: Versionsrichtlinie
 description: Erfahren Sie mehr über die verschiedenen Arten von Adobe Commerce-Versionen, einschließlich kleineren Versionen, Patch, Sicherheits-Patch, Funktion, Hotfix, individuellem Patch und benutzerdefiniertem Patch.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: b5d120893668f4315e289a204649270db4f7a6bc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Vorabversionen von Adobe Commerce-Funktionen werden allen Adobe Commerce-Kunden 
 
 Beta-Versionen können Mängel enthalten und werden ohne Gewährleistung jeglicher Art &quot;AS IS&quot; bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen (über Adobe-Support-Services oder anderweitig). Kunden wird empfohlen, Vorsicht walten zu lassen und sich in keiner Weise auf die korrekte Funktionsweise oder Leistung der Beta-Versionen und/oder der zugehörigen Dokumentation oder Materialien zu verlassen. Dementsprechend erfolgt die Nutzung der Beta-Versionen auf eigenes Risiko des Kunden.
 
-## Erweiterbarkeit, Infrastruktur und Freigabe von Diensten
+## Funktionen, Cloud-Infrastruktur und Release zur Erweiterbarkeit
 
-Funktionsversionen, die neue Funktionen und Funktionsaktualisierungen enthalten, die separat von Patch-Versionen als unabhängige Dienste bereitgestellt werden. Beispiele sind Erweiterbarkeitstechnologien wie API Mesh und Eventing, SaaS-Produkte wie Product Recommendations und Live Search, unabhängige Module wie B2B und PWA Studio sowie Aktualisierungen unserer Cloud-Hosting-Dienste und -Infrastruktur.
+Die Versionen der Cloud-Infrastruktur und -Funktionen enthalten neue Funktionen und Funktionsaktualisierungen, die separat von Patch-Versionen als unabhängige Dienste bereitgestellt werden. Beispiele sind Aktualisierungen unserer Cloud-Hosting-Dienste und -Infrastruktur, B2B-, SaaS-Produkte (Katalogdienst, Datenverbindung, Produkt-Recommendations und Live-Suche) und Erweiterbarkeitstechnologien (API-Mesh, Integrationsstarter-Kit und Eventing).
 
 ## Hotfix
 
@@ -64,7 +64,7 @@ Hotfixes sind Patches, die umfassende Sicherheits- oder Qualitätsreparaturen en
 
 >[!NOTE]
 >
->Hotfixes können abwärtskompatible Änderungen enthalten.
+>Hotfixes können rückwärtskompatible Änderungen enthalten.
 
 ## Individuelles Pflaster
 
@@ -72,14 +72,12 @@ Einzelne Patches enthalten Korrekturen mit geringer Auswirkung auf die Qualität
 
 >[!NOTE]
 >
->Einzelne Patches enthalten keine abwärtskompatiblen Änderungen.
+>Einzelne Patches enthalten keine rückwärtskompatiblen Änderungen.
+
+## Isoliertes Pflaster
+
+Enthält eine eigenständige Fehlerbehebung, die im aktuellen reinen Sicherheits-Patch enthalten ist, oder einen bevorstehenden reinen Sicherheits-Patch, der separat veröffentlicht wird, um eine schnellere Implementierung zu ermöglichen.
 
 ## Benutzerdefinierter Patch
 
 Wird von Nicht-Adobe-Mitarbeitern erstellt, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Qualitätspatches-Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) bereitgestellt.
-
-## Verwandte Themen
-
-- [Versionierung](https://developer.adobe.com/commerce/php/development/versioning/)
-- [Bevorstehende Versionen](schedule.md)
-- [Software-Lebenszyklusrichtlinie](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
