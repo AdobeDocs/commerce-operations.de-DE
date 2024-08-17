@@ -2,7 +2,7 @@
 title: Versionshinweise zu Adobe Commerce 2.4.6 Security Patch
 description: Erfahren Sie mehr über Sicherheitsfehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsrelevante Updates, die in den Sicherheits-Patch-Versionen für Adobe Commerce Version 2.4.6 enthalten sind.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
+source-git-commit: 7024c6a9c464257df00ed98f435a3d7793478db5
 workflow-type: tm+mt
 source-wordcount: '1201'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Zur Kompatibilität mit Commerce-Version 2.4.6-p6 müssen Händler mit der Adobe
 
 {{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
-Zur Kompatibilität mit Commerce-Version 2.4.6-p6 müssen Händler mit der Adobe Commerce B2B-Erweiterung auf [B2B-Version 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html) aktualisieren.
+Zur Kompatibilität mit Commerce-Version 2.4.6-p6 müssen Händler mit der Adobe Commerce B2B-Erweiterung auf [B2B-Version 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1) aktualisieren.
 
 ### Highlights
 
