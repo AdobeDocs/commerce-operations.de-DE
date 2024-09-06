@@ -2,9 +2,9 @@
 title: Sicherheit und Betriebsmodell für gemeinsame Verantwortung
 description: Erfahren Sie mehr über die Sicherheitsaufgaben aller an Ihrem Adobe Commerce-Projekt beteiligten Parteien in Bezug auf Cloud-Infrastrukturprojekte.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
+source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2791'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Adobe ist für die Sicherheit und Verfügbarkeit der Adobe Commerce in der Cloud
 
 Adobe verwaltet die PCI-Zertifizierung für die Infrastruktur und die Dienste, die für die Adobe Commerce-Lösung verwendet werden.  Merchants sind für die Einhaltung von benutzerdefiniertem Code, System- und Netzwerkprozessen sowie der Organisation verantwortlich.
 
-Adobe stellt auch die Verfügbarkeit der Infrastruktur des Händlers sicher, wie in der geltenden SLA vereinbart.
+Adobe stellt außerdem sicher, dass die in der jeweiligen SLA vereinbarte Infrastruktur des Händlers verfügbar ist.
 
 ## Handelspflichten
 
@@ -98,7 +98,7 @@ Cloud-Service-Provider sind auch für Folgendes verantwortlich:
 
 ## Verantwortlichkeiten des CDN-Anbieters
 
-Die Adobe Commerce-Lösung für Cloud-Infrastruktur verwendet CDN-Anbieter, um die Seitenladezeit zu verkürzen, Inhalte zwischenzuspeichern und veraltete Inhalte sofort zu bereinigen. Diese Anbieter sind auch für Sicherheitsprobleme zuständig, die in direktem Zusammenhang mit ihrem CDN stehen oder sich auf ihr CDN auswirken, sowie für die Definition und Pflege von CDN-WAF-Regeln.
+Die Adobe Commerce-Lösung für Cloud-Infrastruktur verwendet CDN-Anbieter, um die Seitenladezeit zu verkürzen, Inhalte zwischenzuspeichern und veraltete Inhalte sofort zu bereinigen. Diese Anbieter sind auch für Sicherheitsprobleme zuständig, die in direktem Zusammenhang mit ihrem CDN stehen oder sich auf ihr CDN auswirken, sowie für die Definition und Pflege von CDN WAF-Regeln.
 
 ## Zusammenfassung der Sicherheitsaufgaben
 
@@ -139,28 +139,28 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Definieren der Ursprungs-WAF-Regeln</td>
+    <td>WAF-Ursprungsregeln definieren</td>
     <td>R</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Definieren von CDN-WAF-Regeln</td>
+    <td>Definieren von CDN WAF-Regeln</td>
     <td>A</td>
     <td></td>
     <td></td>
     <td>R</td>
   </tr>
   <tr>
-    <td>Bereitstellen von Plattform-WAF-Regeln</td>
+    <td>Bereitstellen von WAF-Plattformregeln</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Bereitstellen von CDN-WAF-Regeln</td>
+    <td>Bereitstellen von CDN WAF-Regeln</td>
     <td>A</td>
     <td>I</td>
     <td></td>
@@ -641,7 +641,7 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 | Benutzerdefinierte Adobe Commerce-Anwendung | | R |
 | Verfügbarkeit von New Relic-Diensten:<br>APM-Anwendungs- und Agentenintegration, Infrastrukturanwendung,<br>Protokollierung und Integration | R |   |
 | Einrichten von New Relic-Warnhinweisen |     | R |
-| Bereitstellen des New Relic-Agenten auf PaaS-Servern |     | R |
+| Bereitstellen des New Relic-Agenten auf PaaS-Servern | R |  |
 
 {style="table-layout:auto"}
 
@@ -824,11 +824,11 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 
 |     | Adobe | Händler |
 | --- | --- | --- |
-| Verfügbarkeit und Konfiguration der WAF | R |  |
-| Beheben von falsch positiven WAF-Regeln | R | |
-| Falsch positive Berichterstellung für WAF-Regeln |     | R |
+| Verfügbarkeit und Konfiguration von WAF | R |  |
+| Umgang mit falsch positiven WAF-Regeln | R | |
+| Falsch positive WAF-Regel melden |     | R |
 | WAF-Regelverfeinerung (NICHT UNTERSTÜTZT) |     |     |
-| WAF-/CDN-Protokolle |     | R |
+| WAF/CDN-Protokolle |     | R |
 
 {style="table-layout:auto"}
 
@@ -841,7 +841,6 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 | DDOS-Erkennung - Layer 3-4 | R |   |
 | DDOS-Erkennung - Ebene 7 |     | R |
 | DDOS-Antwort | R |   |
-| Konfiguration der Beschränkung der Fastly Extension Rate und des Bot Protection (begrenzt) |     | R |
 
 {style="table-layout:auto"}
 
@@ -854,10 +853,10 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 | Verfügbarkeit von SSH (nicht privater Link) | R |   |
 | Konfiguration des Endpunkts PrivateLink Inbound to Adobe Commerce Cloud Service | R |   |
 | Annahme des Endpunkts PrivateLink Inbound to Adobe Commerce Cloud Service |     | R |
-| Konfiguration des VPC-Dienstendpunkts von PrivateLink Inbound to Merchant |     | R |
-| Annahme des VPC-Service-Endpunkts von PrivateLink Inbound to Merchant | R |   |
+| Konfiguration von PrivateLink Inbound to Merchant&#39;s VPC Service endpoint |     | R |
+| Akzeptanz von PrivateLink Inbound für den VPC Service-Endpunkt von Merchant | R |   |
 | Konfiguration von PrivateLink-Integrationen (Endpunkt des Kontos) |     | R |
-| Konfiguration des im Handelsbesitz befindlichen VPC für den PrivateLink-Endpunkt<br><br> (einschließlich aller VPN-Verbindungen) |     | R |
+| Konfiguration der im Handelsbesitz befindlichen VPC für den PrivateLink-Endpunkt<br><br> (einschließlich aller VPN-Verbindungen) |     | R |
 
 {style="table-layout:auto"}
 
