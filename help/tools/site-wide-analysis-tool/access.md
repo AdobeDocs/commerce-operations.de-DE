@@ -2,9 +2,9 @@
 title: Zugriff auf [!DNL Site-Wide Analysis Tool]
 description: Erfahren Sie, wie Sie auf den [!DNL Site-Wide Analysis Tool] zugreifen.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 5f9f81b930a3b23c0b334ccbea94d296338a0048
+source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,8 @@ Der Dienst [!DNL Site-Wide Analysis Tool] ist im [Produktionsmodus](https://docs
 
 >[!NOTE]
 >
->Wenn Sie eine lokale Installation von Adobe Commerce haben, müssen Sie einen [Agenten](../site-wide-analysis-tool/installation.md) in Ihrer Infrastruktur installieren, um das Tool zu verwenden.
+>Mit Wirkung vom 23. April 2024 wurde der [!DNL Site-Wide Analysis Tool] eingestellt und steht für Adobe Commerce-Kunden vor Ort nicht mehr zur Verfügung.
+
 
 ![ Dashboard für eine Site-weite Analyse](../../assets/tools/site-wide-analysis-tool-dashboard.png)
 *[!DNL Site-Wide Analysis Tool]Dashboard*
