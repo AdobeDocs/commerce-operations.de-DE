@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Zwischenspeicherleistung verbessern könn
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 7f277fe6245aba851aba7ddc70be40343bdaecc7
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,10 @@ stage:
         translate:
           frontend: "stale_cache_enabled"
 ```
+
+>[!NOTE]
+>
+>Im vorherigen Beispiel ist der Cache `full_page` für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da er [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) verwendet.
 
 Informationen zum Konfigurieren von lokalen Installationen finden Sie unter [Veraltete Cache-Optionen](../../../configuration/cache/level-two-cache.md#stale-cache-options) im _Konfigurationshandbuch_.
 
