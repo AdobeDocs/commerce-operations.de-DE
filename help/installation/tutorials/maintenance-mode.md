@@ -2,9 +2,9 @@
 title: Aktivieren oder Deaktivieren des Wartungsmodus
 description: Führen Sie diese Schritte aus, um anzupassen, was Kunden sehen, wenn Ihre Adobe Commerce-Bereitstellung zur Wartung heruntergefahren ist.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,8 @@ Adobe Commerce verwendet den [Wartungsmodus](../../configuration/bootstrap/appli
 
 Das Programm erkennt den Wartungsmodus wie folgt:
 
-* Wenn `var/.maintenance.flag` nicht vorhanden ist, ist der Wartungsmodus deaktiviert und die Anwendung funktioniert normal.
-* Andernfalls ist der Wartungsmodus aktiviert, es sei denn, `var/.maintenance.ip` ist vorhanden.
-
-  `var/.maintenance.ip` kann eine Liste von IP-Adressen enthalten. Wenn über HTTP auf einen Einstiegspunkt zugegriffen wird und die Client-IP-Adresse einem der Einträge in dieser Liste entspricht, ist der Wartungsmodus deaktiviert.
+* Wenn `var/.maintenance.flag` vorhanden ist, ist der Wartungsmodus aktiviert und die Anwendung gibt eine 503-Wartungsseite zurück.
+* Wenn `var/.maintenance.ip` vorhanden ist und die Client-IP einem der IP-Adresseinträge in dieser Datei entspricht, wird die Wartungsseite für die Anfrage ignoriert.
 
 ## Installieren des Programms
 
