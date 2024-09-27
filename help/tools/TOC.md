@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: b9164d958ddc366de3843c9f9b7f6521ad0b4ff2
+source-git-commit: d9354e2d63701f402adc4693785a50aa720fce67
 workflow-type: tm+mt
-source-wordcount: '5888'
+source-wordcount: '5904'
 ht-degree: 0%
 
 ---
@@ -625,7 +625,10 @@ ht-degree: 0%
          - [ACSD-60303: Problem bei der Platzierung von Administratoraufträgen behoben, das durch die Aktivierung der HTML-Minimierung behoben wurde](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       - v1.1.51 {#v1-1-51}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
+         - [ACSD-61195: GraphQL-Anfrage zum Warenkorb gibt keine Elemente auf der endgültigen Seite zurück](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: Attribute zeigen nicht an, ob ein Produkt deaktiviert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+      - v1.1.52 {#v1-1-52}
+         - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
       - [Überprüfen Sie den Patch auf Adobe Commerce-Problem mit dem Tool für Qualitätsmuster .](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Befehlszeilen-Tools-Referenz {#cli-reference}
