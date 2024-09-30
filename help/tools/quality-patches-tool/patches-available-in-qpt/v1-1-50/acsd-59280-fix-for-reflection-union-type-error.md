@@ -3,9 +3,9 @@ title: '"ACSD-59280: "ReflectionUnionType::getName()"-Fehler in 2.4.4-pX-Install
 description: Wenden Sie den Patch ACSD-59280 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler "Aufruf der nicht definierten Methode ReflectionUnionType::getName()" während der Installation von 2.4.4-pX-Versionen auftritt.
 feature: Install, Upgrade
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Während des `setup:upgrade`-Prozesses wird der folgende Fehler angezeigt:
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

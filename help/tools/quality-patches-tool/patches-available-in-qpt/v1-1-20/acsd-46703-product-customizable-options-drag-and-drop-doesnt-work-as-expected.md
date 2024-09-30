@@ -3,9 +3,9 @@ title: "ACSD-46703: Die Drag & Drop-Anpassung von Produkten funktioniert nicht."
 description: Dieser Artikel bietet eine Lösung für das Problem, dass das Ziehen und Ablegen der anpassbaren Produktoptionen nicht wie erwartet funktioniert.
 feature: Products
 role: Developer
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Mit der Drag &amp; Drop-Funktion können Sie keinen Wert auf eine andere Seite v
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Tools für Qualitätsmuster > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im Handbuch zum Werkzeug für Qualitätsmuster.
+* Adobe Commerce oder Magento Open Source vor Ort: [Tools für Qualitätsmuster > Nutzung](/help/tools/quality-patches-tool/usage.md) im Handbuch zum Werkzeug für Qualitätsmuster.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

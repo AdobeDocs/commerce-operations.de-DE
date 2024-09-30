@@ -3,9 +3,9 @@ title: "ACSD-53658: **[!UICONTROL Recently Viewed Product]** Daten werden in der
 description: Wenden Sie den Patch ACSD-53658 an, um das Adobe Commerce-Problem zu beheben, bei dem **[!UICONTROL Recently Viewed Product]**-Daten in der Store-Ansicht nicht ordnungsgemäß aktualisiert werden.
 feature: CMS, Personalization
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Der Produktname wird im Widget nicht aktualisiert.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

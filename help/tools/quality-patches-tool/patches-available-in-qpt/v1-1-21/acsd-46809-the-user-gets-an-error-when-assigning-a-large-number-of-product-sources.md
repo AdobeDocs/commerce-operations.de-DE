@@ -3,9 +3,9 @@ title: "ACSD-46809: Dem Benutzer wird bei der Zuweisung einer großen Anzahl von
 description: Wenden Sie den Patch ACSD-46809 an, um das Adobe Commerce-Problem zu beheben, bei dem der Benutzer beim Zuweisen einer großen Anzahl von Produktquellen einen Fehler erhält.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Dem Produkt werden 200 Quellen ohne Fehler zugewiesen.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

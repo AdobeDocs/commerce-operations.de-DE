@@ -3,9 +3,9 @@ title: "ACSD-54966: Fix for reuse coupon codes after failed orders"
 description: Wenden Sie den Patch ACSD-54966 an, um das Adobe Commerce-Problem zu beheben, das die Wiederverwendung von Coupon-Codes verhindert, die pro Promotion und Warenkorb nach einer zuvor fehlgeschlagenen Bestellung begrenzt sind.
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Der Kunde kann den Gutscheincode nicht wiederverwenden.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

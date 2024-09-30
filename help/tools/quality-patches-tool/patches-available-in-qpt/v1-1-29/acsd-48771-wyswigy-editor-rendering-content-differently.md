@@ -3,9 +3,9 @@ title: "ACSD-48771: Der WYSIWYG-Editor rendert Inhalte unterschiedlich"
 description: Wenden Sie den Patch ACSD-48771 an, um das Adobe Commerce-Problem zu beheben, bei dem der WYSIWYG-Editor Inhalte anders rendert.
 feature: Cache, Page Content
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Spalten werden in verschiedenen Zeilen angezeigt.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

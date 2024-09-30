@@ -3,9 +3,9 @@ title: "ACSD-49513: Remote-Speichersynchronisation schlägt fehl"
 description: Wenden Sie den Patch ACSD-49513 an, um das Adobe Commerce-Problem zu beheben, bei dem die Remote-Speichersynchronisierung aufgrund von 0-Byte-Dateien fehlschlägt.
 feature: Iaas, Storage
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ In File.php line 387:
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Zusätzliche Schritte, die nach der Patch-Installation erforderlich sind

@@ -3,9 +3,9 @@ title: '"ACSD-51636: Unternehmensadministrator kann keine neuen Benutzer aus dem
 description: Wenden Sie den Patch ACSD-51636 an, um das Adobe Commerce-Problem zu beheben, bei dem der Unternehmensadministrator keine neuen Benutzer aus dem Abschnitt "Kundenkonto"hinzufügen kann, obwohl er über alle erforderlichen Rollen und Berechtigungen verfügt.
 feature: Admin Workspace, B2B, Companies, Customer Service
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Der Admin-Benutzer kann einen neuen Benutzer hinzufügen.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](</help/tools/quality-patches-tool/usage.md>) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

@@ -3,9 +3,9 @@ title: "ACSD-44851: Kategorie mit Unterkategorien, die nicht geöffnet oder erwe
 description: Dieser Artikel bietet eine Lösung für das Problem, dass der Benutzer eine Kategorie mit Unterkategorien nicht öffnen oder erweitern kann.
 feature: Categories
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Die zweite Ebene des Mobilmenüs wird nicht geöffnet.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Tools für Qualitätsmuster > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im Handbuch zum Werkzeug für Qualitätsmuster.
+* Adobe Commerce oder Magento Open Source vor Ort: [Tools für Qualitätsmuster > Nutzung](/help/tools/quality-patches-tool/usage.md) im Handbuch zum Werkzeug für Qualitätsmuster.
 
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 

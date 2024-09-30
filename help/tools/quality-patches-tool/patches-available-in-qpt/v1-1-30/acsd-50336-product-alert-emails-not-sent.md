@@ -3,9 +3,9 @@ title: "ACSD-50336: E-Mails mit Produktwarnungen werden nicht gesendet"
 description: Wenden Sie den Patch ACSD-50336 an, um das Adobe Commerce-Problem zu beheben, bei dem E-Mails zur Produktwarnung nicht gesendet werden, wenn ein Produkt wieder auf Lager ist oder der Preis geändert wird.
 feature: Communications, Personalization, Products
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ report. CRITICAL: Magento\ProductAlert\Model\Mailing\ErrorEmailSender::execute()
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

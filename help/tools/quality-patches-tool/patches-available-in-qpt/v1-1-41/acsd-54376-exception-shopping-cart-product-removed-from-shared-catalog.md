@@ -3,9 +3,9 @@ title: "ACSD-54376: Ausnahme im Warenkorb, wenn Produkt aus [!UICONTROL shared c
 description: Wenden Sie den Patch ACSD-54376 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Ausnahme im Warenkorb auftritt, wenn ein Produkt aus dem [!UICONTROL shared catalog] entfernt wird, nachdem es zum Warenkorb hinzugefügt wurde.
 feature: Shopping Cart, B2B
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Eine nicht verarbeitete Ausnahme wird auf der Checkout-Seite angezeigt.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

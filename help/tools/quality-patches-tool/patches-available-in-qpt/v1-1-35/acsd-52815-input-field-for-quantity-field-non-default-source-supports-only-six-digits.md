@@ -3,9 +3,9 @@ title: 'ACSD-52815: Eingabefeld für das Mengenfeld von nicht standardmäßigen 
 description: Wenden Sie den Patch ACSD-52815 an, um das Adobe Commerce-Leistungsproblem zu beheben, bei dem das Eingabefeld für das Mengenfeld einer nicht standardmäßigen Quelle nur bis zu sechs Stellen unterstützt, im Gegensatz zu 8 für ein Standardstock.
 feature: Inventory, Products
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Die Verkaufsmenge beträgt 999999.999.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

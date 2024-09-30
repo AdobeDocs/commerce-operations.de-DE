@@ -3,9 +3,9 @@ title: "ACSD-46520: Falscher Bestellstatus bei Rückerstattung mittels Gutschrif
 description: Dieser Artikel bietet eine Lösung für das Problem, dass Benutzer einen falschen Bestellstatus erhalten, wenn sie mit Store-Gutschriften zurückerstattet werden.
 feature: Orders, Returns
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Der Bestellstatus lautet *Abgeschlossen*, was nicht dem korrekten Status entspri
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder [!DNL Magento Open Source] vor Ort: [Tools für Qualitätsmuster > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im Handbuch zum Werkzeug für Qualitätsmuster.
+* Adobe Commerce oder [!DNL Magento Open Source] vor Ort: [Tools für Qualitätsmuster > Nutzung](/help/tools/quality-patches-tool/usage.md) im Handbuch zum Werkzeug für Qualitätsmuster.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

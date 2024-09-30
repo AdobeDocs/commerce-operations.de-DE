@@ -1,9 +1,9 @@
 ---
 title: "ACSD-51240: Hochgeladene Datei fehlt bei der Registrierung über das Formular für die Unternehmensregistrierung"
 description: Wenden Sie den Patch ACSD-51240 an, um das Adobe Commerce-Problem zu beheben, bei dem die hochgeladene Datei bei der Registrierung über das Registrierungsformular für das Unternehmen fehlt.
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Die hochgeladene Datei wird weder auf der Firmenseite noch auf der Admin-Kundens
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

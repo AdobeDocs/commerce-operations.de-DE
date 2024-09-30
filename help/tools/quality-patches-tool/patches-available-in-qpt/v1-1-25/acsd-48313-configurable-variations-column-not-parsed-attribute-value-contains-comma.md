@@ -3,9 +3,9 @@ title: 'ACSD-48313: [!UICONTROL configurable_variations] Spalte nicht geparst, w
 description: Wenden Sie den Patch ACSD-48313 an, um das Adobe Commerce-Problem zu beheben, bei dem die Spalte [!UICONTROL configurable_variations] nicht analysiert wird, wenn der Attributwert ein Komma enthält.
 feature: Attributes, Configuration
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Benutzer sollten die Datei importieren können.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 

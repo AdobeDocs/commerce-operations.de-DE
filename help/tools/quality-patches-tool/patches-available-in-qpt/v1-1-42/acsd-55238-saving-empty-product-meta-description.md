@@ -3,9 +3,9 @@ title: "ACSD-55238: Save the empty product meta description"
 description: Wenden Sie den Patch ACSD-55238 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Produktbeschreibung mit HTML-Code, der von  [!DNL Page Builder] oder einem anderen HTML-Editor generiert wurde, immer in der Meta-Beschreibung angezeigt wird und es nicht möglich ist, ihn auf "Leer"festzulegen.
 feature: Products, Page Builder, Page Content
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Wenn die Beschreibung eines Produkts einen Baustein enthält, wird dieser für d
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

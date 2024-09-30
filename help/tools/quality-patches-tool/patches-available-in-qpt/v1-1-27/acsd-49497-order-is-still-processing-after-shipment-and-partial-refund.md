@@ -3,9 +3,9 @@ title: "ACSD-49497: Auftragsabwicklung nach dem Versand und Teilerstattung"
 description: Wenden Sie den Patch ACSD-49497 an, um das Adobe Commerce-Problem zu beheben, bei dem der Auftragsstatus nach dem Versand als Verarbeitung beibehalten wird und eine teilweise Rückerstattung erfolgt.
 feature: Admin Workspace, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Der Status der Bestellung bleibt *[!UICONTROL Processing]*.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

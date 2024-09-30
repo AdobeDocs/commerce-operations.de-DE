@@ -3,9 +3,9 @@ title: "ACSD-52921: Fehler beim Anfordern von Details zum Warenkorb von GraphQL 
 description: Wenden Sie den Patch ACSD-52921 an, um das Adobe Commerce-Problem zu beheben, bei dem ein interner Fehler auftritt, wenn bei GraphQL Warenkorbdetails für ein konfigurierbares nicht vorrätiges Produkt angefordert werden.
 feature: GraphQL, Configuration, Products, Shopping Cart
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Der Fehler *500 Interner Server* wird als Antwort auf die GraphQL-Abfrage ausgeg
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

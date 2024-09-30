@@ -3,9 +3,9 @@ title: 'ACSD-59514: Forms in Admin mit dem Fehler [!DNL Page Builder] Throw erro
 description: Wenden Sie den Patch ACSD-59514 an, um das Adobe Commerce-Problem zu beheben, bei dem Formulare in Admin mit  [!DNL Page Builder] den Fehler "[!DNL Page Builder] wurde 5 Sekunden lang gerendert, ohne Sperren freizugeben". in der Browser-Konsole nach dem Senden des Formulars, und die Änderungen können nicht gespeichert werden.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Der Lader dreht sich nicht mehr, und der Block wird nicht gespeichert. Der folge
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

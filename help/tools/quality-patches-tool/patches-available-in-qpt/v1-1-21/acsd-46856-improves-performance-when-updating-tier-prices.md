@@ -3,9 +3,9 @@ title: "ACSD-46856: Verbessert die Leistung bei der Aktualisierung der Tier-Prei
 description: Wenden Sie den Patch ACSD-46856 an, um die Leistung beim Aktualisieren der Stufenpreise über System &gt; Konfiguration &gt; Import&gt; Erweiterte Preise zu verbessern.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Ohne den Patch beträgt die Verarbeitungszeit für 10.00-minütige 10.000-Produk
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

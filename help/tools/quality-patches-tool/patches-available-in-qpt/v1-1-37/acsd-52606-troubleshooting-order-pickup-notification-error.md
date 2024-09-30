@@ -3,9 +3,9 @@ title: '''ACSD-52606: Fehlermeldung angezeigt, wenn der Benutzer auf "Auftrag fÃ
 description: Wenden Sie den Patch ACSD-52606 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Fehlermeldung angezeigt wird, wenn der Benutzer auf **[!UICONTROL Notify Order is Ready for Pickup]** klickt.
 feature: Orders, User Account
 role: Admin, Developer
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Sie erhalten die folgende Fehlermeldung: *Ihre Bestellung ist nicht bereit zur Ã
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

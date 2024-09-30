@@ -3,9 +3,9 @@ title: "ACSD-60303: Problem bei der Platzierung von Administratoraufträgen beho
 description: Wenden Sie den Patch ACSD-60303 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Bestellung von Admin nicht platziert werden kann, wenn die HTML-Minimierung aktiviert ist.
 feature: Orders
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Die Reihenfolge wird nicht erstellt und der folgende Fehler wird protokolliert:
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

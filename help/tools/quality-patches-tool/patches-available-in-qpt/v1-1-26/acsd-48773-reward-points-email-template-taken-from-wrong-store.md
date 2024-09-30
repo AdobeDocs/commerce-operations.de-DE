@@ -3,9 +3,9 @@ title: 'ACSD-48773: E-Mail-Vorlage für Punkte-Bonuspunkte, die aus dem falschen
 description: Wenden Sie den Patch ACSD-48773 an, um das Adobe Commerce-Problem zu beheben, bei dem die E-Mail-Vorlage für die Punkte, die belohnt werden, aus dem falschen Store stammt.
 feature: Admin Workspace, Communications, Marketing Tools, Orders, Personalization, Rewards
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Die Update-E-Mail für die Prämienpunkte wurde vom E-Mail-Absender gesendet, de
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

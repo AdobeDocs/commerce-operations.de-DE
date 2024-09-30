@@ -1,9 +1,9 @@
 ---
 title: "ACSD-50478: JS-Problem für Rollback-Aktionen im Sicherungs-Raster und Datenbank-Rollback-Befehl"
 description: Wenden Sie den Patch ACSD-50478 an, um das JS-Problem für die Rollback-Aktion im Sicherungsraster und den Datenbank-Rollback-Befehl zu beheben, wenn der DB-Dump Trigger und einen SQL-Befehl *delimiter* enthält.
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Sie haben die in Schritt 4 und Schritt 6 genannten Fehler beobachtet.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

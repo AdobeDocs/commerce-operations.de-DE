@@ -3,9 +3,9 @@ title: "ACSD-53998: Dynamischer Block, der auf dem Kundensegment basiert, funkti
 description: Wenden Sie den Patch ACSD-53998 an, um das Adobe Commerce-Problem zu beheben, bei dem ein dynamischer Block, der auf einem Kundensegment basiert, nach dem Abmelden von einem Kundenkonto nicht ordnungsgemäß funktioniert.
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Das für das angemeldete Kundensegment erstellte Banner wird auch nach dem Abmel
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

@@ -3,9 +3,9 @@ title: "ACSD 49843: Produkt-Download-Link nicht verfügbar, nachdem er automatis
 description: Wenden Sie den Patch ACSD-49843 an, um das Adobe Commerce-Problem zu beheben, bei dem der Produkt-Download-Link nicht verfügbar ist, nachdem der bestellte Artikel automatisch von einer Online-Zahlungsmethode in Rechnung gestellt wird, wenn [!UICONTROL Payment Action] auf [!UICONTROL Intent Sale] gesetzt ist.
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Der Downloadlink ist auch dann nicht verfügbar, wenn der herunterladbare Produk
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

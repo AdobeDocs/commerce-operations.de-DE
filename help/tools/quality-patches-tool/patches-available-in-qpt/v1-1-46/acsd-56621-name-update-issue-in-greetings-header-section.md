@@ -3,9 +3,9 @@ title: 'ACSD-56621: Aktualisierte Namen, die nicht in der Grußkopfzeile für Un
 description: Wenden Sie den Patch ACSD-56621 an, um das Adobe Commerce-Problem zu beheben, bei dem der aktualisierte Vor- und Nachname des Unternehmensadministrators nicht im Grußkopfbereich angezeigt wird.
 feature: Companies, B2B, User Account
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Der Vor- und Nachname des Benutzers wird nur geändert, wenn sich der Benutzer a
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

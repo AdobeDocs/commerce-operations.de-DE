@@ -3,9 +3,9 @@ title: 'ACSD-48366: Produktbild wird nicht in der [!UICONTROL Back to Stock] E-M
 description: Wenden Sie den Patch ACSD-48366 an, um das Adobe Commerce-Problem zu beheben, bei dem das Miniaturbild des Produkts nicht in der Warn-E-Mail mit dem Lagerbestand des Produkts angezeigt wird.
 feature: Admin Workspace, Communications, Orders, Products
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Das Produktbild ist nicht in der E-Mail mit der Lagerwarnung verfügbar.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

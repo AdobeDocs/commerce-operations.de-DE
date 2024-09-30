@@ -3,9 +3,9 @@ title: "ACSD-55427: Ein Administrator kann die Zuweisung eines Produkts von **[!
 description: Wenden Sie den Patch ACSD-55427 an, um das Adobe Commerce-Problem zu beheben, bei dem die Zuweisung eines Produkts nicht von **[!UICONTROL Product in Shared Catalogs]** aufgehoben werden kann.
 feature: Products, B2B
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Das Produkt wird weiterhin im Abschnitt **[!UICONTROL Product in Shared Catalogs
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

@@ -3,9 +3,9 @@ title: "ACSD-46815: Bereitstellung statischer Inhalte schlägt bei kompakter Str
 description: Wenden Sie den Patch ACSD-46815 an, um das Adobe Commerce-Problem zu beheben, bei dem die Bereitstellung statischer Inhalte bei Verwendung einer kompakten Strategie fehlschlägt.
 feature: Deploy, Page Content, SCD
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Die Bereitstellung statischer Inhalte schlägt mit einer kompakten Strategie feh
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen

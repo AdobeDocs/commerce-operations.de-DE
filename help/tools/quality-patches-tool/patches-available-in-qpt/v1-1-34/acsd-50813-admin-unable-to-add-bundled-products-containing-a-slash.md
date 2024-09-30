@@ -1,9 +1,9 @@
 ---
 title: "ACSD-50813: Administrator kann gebündelte Produkte, die einen Schrägstrich enthalten, nicht hinzufügen."
 description: Wenden Sie den Patch ACSD-50813 an, um das Adobe Commerce-Leistungsproblem zu beheben, bei dem der Administrator keine gebündelten Produkte mit einem Schrägstrich ("/") in der SKU hinzufügen kann, wobei die Funktion *Produkte nach SKU hinzufügen* der Administratorreihenfolge hinzugefügt wird.
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ JS-Fehler in der Konsole:
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

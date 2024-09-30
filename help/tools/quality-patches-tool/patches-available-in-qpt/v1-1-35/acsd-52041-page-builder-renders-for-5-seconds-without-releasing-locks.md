@@ -3,9 +3,9 @@ title: "ACSD-52041: Beim Rendern von Seiten-Builder werden keine Sperren veröff
 description: Wenden Sie den Patch ACSD-52041 an, um das Adobe Commerce-Problem zu beheben, bei dem der Seitenaufbau fünf Sekunden lang gerendert wird, ohne Sperren zu veröffentlichen.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Fehler in Konsole: ``Page Builder was rendering for 5 seconds without releasing 
 
 Um einzelne Patches für die Versionen **2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 und 2.4.6 - 2.4.6-p2** anzuwenden, verwenden Sie je nach Bereitstellungsmethode die folgenden Links:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](</help/tools/quality-patches-tool/usage.md>) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen

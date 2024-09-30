@@ -3,9 +3,9 @@ title: "ACSD-48210: Store view specific scope attribute overrides global values"
 description: Wenden Sie den Patch ACSD-48210 an, um das Adobe Commerce-Problem zu beheben, das beim Aktualisieren eines *[!UICONTROL Website Scope]* -Attributs in einer bestimmten Store-Ansicht auftritt, wodurch die Attributwerte im globalen Gültigkeitsbereich außer Kraft gesetzt werden.
 feature: Products, Attributes
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Der Import von Produktpreisen mit mehreren Zeilen, die dieselben `SKU` und `stor
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
