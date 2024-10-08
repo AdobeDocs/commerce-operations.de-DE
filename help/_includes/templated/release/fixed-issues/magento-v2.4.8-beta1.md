@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Gewährleistung der Kompatibilität und Aktualität der Funktionen. Zuvor konnte
 
 ## Behobene Probleme
 
-In Magento Open Source 2.4.8 des Core-Codes wurden 253 Probleme behoben. Eine Untergruppe der in dieser Version enthaltenen behobenen Probleme wird nachfolgend beschrieben.
+In Magento Open Source 2.4.8 des Core-Codes wurden 254 Probleme behoben. Eine Untergruppe der in dieser Version enthaltenen behobenen Probleme wird nachfolgend beschrieben.
 
 ### APIs
 
@@ -207,6 +207,10 @@ Zuvor war es möglich, die Kundengruppe Website-Gruppe duplizieren in der Tier-P
    * _Hinweis korrigieren_: Das System akzeptiert jetzt Produktimages-Uploads mit Dateierweiterungen für Großbuchstaben, um eine reibungslose Produkterstellung zu gewährleisten. Zuvor wurden Bild-Uploads mit Dateierweiterungen für Großbuchstaben abgelehnt, was die Benutzer zwang, die Dateierweiterung in Kleinbuchstaben zu ändern.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38831>
    * _GitHub-Codebeitrag_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [Problem] Setzen Sie den standardmäßigen Indexmodus auf &quot;Plan&quot;.
+   * _Hinweis korrigieren_: Alle neuen Indexer befinden sich standardmäßig im **[!UICONTROL Update by Schedule]** -Modus.  Zuvor war der Standardmodus **[!UICONTROL Update on Save]**. Bestehende Indexer sind nicht betroffen. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _GitHub-Problem_: <https://github.com/magento/magento2/issues/36419>
+   * _GitHub-Codebeitrag_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [Problem] Ablegen von Indexer-Änderungstabellen bei mview unsubscribe
    * _Hinweis korrigieren_: Das System entfernt jetzt automatisch nicht verwendete Änderungstabellen, wenn ein Index von &quot;planmäßig aktualisieren&quot;auf &quot;Beim Speichern aktualisieren&quot;umgestellt wird. Dadurch wird der Index als ungültig markiert, um sicherzustellen, dass keine Einträge fehlen. Zuvor führte der Wechsel eines Index zu &quot;Beim Speichern aktualisieren&quot;dazu, dass nicht verwendete Änderungstabellen im System verbleiben und alle geänderten Indizes als &quot;gültig&quot;markiert wurden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ Jetzt können wir benutzerdefinierte Bestellstatus aktualisieren, während zuvor
 ### Braintree
 
 * _BUNDLE-3367_: Pay via LPM
+   * _Hinweis reparieren_: Das System rendert jetzt beim ersten Laden die lokalen Zahlungsmethoden (LPM) korrekt, selbst wenn die Versand- und Rechnungsadressen eines angemeldeten Kunden nicht übereinstimmen, was einen reibungslosen Checkout-Prozess gewährleistet. Zuvor verhinderte eine Abweichung zwischen den Versand- und Rechnungsadressen eines Kunden das Rendering von LPM, was zu möglichen Störungen beim Checkout führte.
    * _GitHub-Codebeitrag_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3368_: Konfigurierbar mit Virtual as Child Product
+   * _Fix note_: Das System ermöglicht jetzt Express-Zahlungsmethoden für konfigurierbare Produkte mit einem virtuellen untergeordneten Produkt, um einen reibungslosen Checkout-Prozess zu gewährleisten. Zuvor waren Expresskurierungsverfahren nicht verfügbar, wenn ein konfigurierbares Produkt mit einem virtuellen untergeordneten Produkt zum Warenkorb hinzugefügt wurde.
    * _GitHub-Codebeitrag_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3369_: CVV-Verifizierungsfehler
    * _GitHub-Codebeitrag_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3370_: Korrektur über das Konto-Gebiet Probleme 247
+   * _Hinweis korrigieren_: Das System ermöglicht es Kunden jetzt, neue Karten- oder PayPal-Kontoinformationen auf mehreren Websites zu speichern, ohne dass Autorisierungsfehler auftreten. Zuvor waren Kunden nicht in der Lage, neue Zahlungsmethoden auf verschiedenen Websites zu speichern, und erhielten eine Fehlermeldung zur Autorisierung.
    * _GitHub-Codebeitrag_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3371_: Versand an eine Adresse aus einem anderen Land
+   * _Hinweis reparieren_: Das System ermöglicht nun, dass Transaktionen fehlerfrei verarbeitet werden, wenn sie an eine Adresse aus einem anderen Land gesendet werden, was einen reibungslosen Checkout-Prozess gewährleistet. Zuvor führte der Versuch, eine Adresse aus einem anderen Land zu senden, zu Konsolenfehlern, obwohl keine sichtbaren Fehler an der Vorderseite vorhanden waren.
    * _GitHub-Codebeitrag_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3372_: Kreditkarte - Teardown-Funktion
+   * _FEHLERBEHEBUNG_: Das System handhabt nun die Aufschlüsselung von Braintree PayPal-Komponenten ordnungsgemäß, wenn ein Kunde von der Zahlungsseite zur Versandseite zurückkehrt, wodurch Fehler verhindert und sichergestellt wird, dass die PayPal Express-Schaltflächen korrekt dargestellt werden. Zuvor führte das Zurück zur Versandseite von der Zahlungsseite manchmal zu einem Fehler, wenn versucht wurde, die Braintree PayPal-Komponenten herunterzufahren.
    * _GitHub-Codebeitrag_: <https://github.com/magento/ext-braintree/pull/204>
 * _BUNDLE-3373_: Versandrückruf für PayPal Express
+   * _Hinweis reparieren_: Das System zeigt jetzt die verfügbaren Versandmethoden im PayPal Express-Modal korrekt an, sodass Kunden ihre bevorzugte Versandmethode auswählen können, bevor sie zur Überprüfungsseite wechseln oder ihre Transaktion abschließen. Zuvor waren keine Versandmethoden verfügbar, die im Modal PayPal Express ausgewählt werden konnten, sodass Kunden eine Versandmethode auf einer separaten Überprüfungsseite auswählen mussten, bevor sie ihre Transaktion abschließen konnten.
    * _GitHub-Codebeitrag_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Warenkorb und Checkout
