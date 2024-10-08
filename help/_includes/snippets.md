@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >
 >Der Befehl `support:backup` lautet _nicht_ und entspricht der vom Befehl `setup:backup` durchgeführten Codesicherung. Der Befehl `support:backup` dient dazu, den Code für die Prüfung durch den Adobe Commerce-Support zu sichern.
 
+## B2B-Patches {#b2b-patches}
+
+>[!NOTE]
+>
+>Nach der Installation dieses Sicherheits-Patches müssen auch die B2B-Händler von Adobe Commerce auf die neueste kompatible B2B-Sicherheits-Patch-Version aktualisieren. Siehe [B2B-Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+
 ## Nur Adobe Commerce {#ee-only}
 
 >[!NOTE]
@@ -46,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerce-Versionen können abwärtskompatible Änderungen (BICs) enthalten. Informationen zum Überprüfen rückwärtsinkompatibler Änderungen finden Sie unter [BIC-Referenz](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Wichtige rückwärtskompatible Probleme werden unter [BIC-Highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/) beschrieben. Nicht alle Versionen führen wichtige BICs ein.
+
+## Haftungsausschluss für Beta {#beta}
+
+>[!IMPORTANT]
+>
+>Beta-Versionen können Mängel enthalten und werden ohne Gewährleistung jeglicher Art &quot;AS IS&quot; bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen (von Adobe Support Services oder anderen Diensten). Kunden sollten vorsichtig sein und sich in keiner Weise auf die korrekte Funktionsweise oder Leistung von Beta-Versionen und/oder begleitenden Dokumentationen oder Materialien verlassen. Dementsprechend erfolgt die Verwendung der Beta-Versionen ausschließlich auf eigenes Risiko des Kunden.
 
 ## CVE-Hinweis {#cve-notice}
 

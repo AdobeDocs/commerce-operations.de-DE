@@ -4,9 +4,9 @@ description: Behalten und optimieren Sie die Site-Leistung, indem Sie Best Pract
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Um die Site-Leistung zu optimieren und zu erhalten, überprüfen und aktualisier
 
 ## Indexer festlegen, die planmäßig aktualisiert werden sollen
 
-Adobe Commerce verfügt über zwei Typen von Indexmodi: [!UICONTROL Update on Save] (Standardeinstellung) und [!DNL Update on Schedule].
+Adobe Commerce verfügt über zwei Typen von Indexmodi: [!UICONTROL Update on Save] und [!DNL Update on Schedule].
 
 - Der Modus **[!UICONTROL Update on Save]** aktualisiert Indizes sofort, wenn sich Ihr Katalog oder andere Daten ändern. Wenn ein Admin-Benutzer beispielsweise einer Kategorie neue Produkte hinzufügt, wird der Kategorieproduktindex sofort nach dem Speichern der Aktualisierung neu indiziert.
 

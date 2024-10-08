@@ -2,9 +2,9 @@
 title: Indexer verwalten
 description: Sehen Sie sich Beispiele für das Anzeigen und Verwalten von Commerce-Indizes an.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Catalog Search indexer has been invalidated.
 
 Verwenden Sie diesen Befehl, um die folgenden Indexoptionen festzulegen:
 
-- **Beim Speichern aktualisieren (`realtime`)**: Indexierte Daten werden aktualisiert, wenn eine Änderung in der Admin-Konsole vorgenommen wird. (Beispielsweise wird der Index der Kategorie &quot;products&quot;neu indiziert, nachdem Produkte einer Kategorie in Admin hinzugefügt wurden.) Dies ist die Standardeinstellung.
+- **Beim Speichern aktualisieren (`realtime`)**: Indexierte Daten werden aktualisiert, wenn eine Änderung in der Admin-Konsole vorgenommen wird. (Beispielsweise wird der Index der Kategorie &quot;products&quot;neu indiziert, nachdem Produkte einer Kategorie in Admin hinzugefügt wurden.)
 - **Nach Zeitplan aktualisieren (`schedule`)**: Die Daten werden entsprechend dem von Ihrem Cron-Auftrag festgelegten Zeitplan indexiert.
 
 [Erfahren Sie mehr über die Indizierung](https://developer.adobe.com/commerce/php/development/components/indexing/).

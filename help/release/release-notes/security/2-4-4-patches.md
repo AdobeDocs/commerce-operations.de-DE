@@ -2,9 +2,9 @@
 title: Versionshinweise zu Adobe Commerce 2.4.4 Security Patch
 description: Erfahren Sie mehr über Sicherheitsfehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsrelevante Updates, die in den Sicherheits-Patch-Versionen für Adobe Commerce Version 2.4.4 enthalten sind.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
+source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
 workflow-type: tm+mt
-source-wordcount: '1461'
+source-wordcount: '1498'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,18 @@ ht-degree: 0%
 # Versionshinweise für Adobe Commerce 2.4.4-Sicherheits-Patches
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## 2.4.4-p11
+
+Die Adobe Commerce-Sicherheitsversion 2.4.4-p11 enthält Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen 2.4.4 identifiziert wurden.
+
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
 
 ## 2.4.4-p10
 
