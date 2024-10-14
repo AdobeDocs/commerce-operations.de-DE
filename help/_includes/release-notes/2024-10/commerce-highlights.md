@@ -1,5 +1,5 @@
 ---
-source-git-commit: b30fe4ed4d910ac3a99d3bcf4ff94103bcbd1369
+source-git-commit: 00b8e1bb5ee259763ddb2c52065cee2af98641e0
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Die folgenden Sicherheitsverbesserungen in dieser Version verbessern die Kompati
 >
 >Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Einstellungen</strong></td>
@@ -37,7 +37,7 @@ Die folgenden Sicherheitsverbesserungen in dieser Version verbessern die Kompati
 
 Die folgenden Plattformaktualisierungen für diese Version stellen sicher, dass Adobe Commerce eine robuste und zuverlässige Plattform bleibt, die den Anforderungen moderner Commerce-Umgebungen gerecht wird:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Datenbank</strong></td>
@@ -87,7 +87,7 @@ Die folgenden Plattformaktualisierungen für diese Version stellen sicher, dass 
 
 Diese Version umfasst die folgenden Leistungsverbesserungen:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
             <td><strong>Indexer</strong></td>
@@ -100,7 +100,7 @@ Diese Version umfasst die folgenden Leistungsverbesserungen:
 
 Diese Version umfasst die folgenden Qualitätsverbesserungen:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>Bestand</strong></td>
@@ -117,7 +117,7 @@ Diese Version umfasst die folgenden Qualitätsverbesserungen:
 
 Diese Version umfasst die folgenden GraphQL-Verbesserungen:
 
-<table style="table-layout-auto">
+<table style="table-layout:auto">
     <tbody>
         <tr>
            <td><strong>Allgemeine Verbesserungen</strong></td>
