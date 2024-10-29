@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 1140bdcf13ad03703afe1c2e7290bcd743302a52
+source-git-commit: c489f77a9805ff3f96211f4ce2f47d8e963c47de
 workflow-type: tm+mt
-source-wordcount: '6013'
+source-wordcount: '6020'
 ht-degree: 0%
 
 ---
@@ -347,7 +347,7 @@ ht-degree: 0%
          - [ACSD-50234: Falscher Kundenname in der Bestätigungs-E-Mail für Bestellungen, die mit [!DNL PayPal] aufgegeben wurden](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-50234-incorrect-customer-name-in-confirmation-email-for-orders-placed-with-paypal.md)
          - [ACSD-48813: Suche zeigt keine relevanten Ergebnisse basierend auf der Suchgewichtung von Attributen an](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-48813-search-not-showing-relevant-results-based-on-search-weight-of-attributes.md)
          - [ACSD-49464: Rechnungen, Sendungen und Kreditkarten werden nicht aus dem Archiv zurückgezogen](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49464-invoices-shipments-credit-memos-not-moved-back-from-archive.md)
-         - [ACSD-48771: WYSIWYG-Editor rendert Inhalte unterschiedlich](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-48771-wyswigy-editor-rendering-content-differently.md)
+         - [ACSD-48771: Der WYSIWYG-Editor rendert Inhalte unterschiedlich](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-48771-wyswigy-editor-rendering-content-differently.md)
          - [ACSD-49527: GraphQL-Unternehmensrollen zeigen die Paginierung nicht korrekt an](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49527-graphql-company-roles-dont-display-pagination-correctly.md)
       - v1.1.30 {#v1-1-30}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
@@ -641,6 +641,7 @@ ht-degree: 0%
          - [ACSD-59952: Fehler beim Löschen des freigegebenen Katalogs mit derselben Gruppen-ID wie einem anderen freigegebenen Katalog](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53 {#v1-1-53}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
+         - [ACSD-59930: Verbessert die Leistung der Unternehmensflüsse](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
       - [Überprüfen Sie den Patch auf Adobe Commerce-Problem mit dem Tool für Qualitätsmuster .](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Befehlszeilen-Tools-Referenz {#cli-reference}
