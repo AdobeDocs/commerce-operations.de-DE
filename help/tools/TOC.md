@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 46c1b2cdafe8335e604ee0391ca9aa8a32b54d84
+source-git-commit: 593d2f2fc5850e08f9568dba56d7b0c3378d9fbe
 workflow-type: tm+mt
-source-wordcount: '6035'
+source-wordcount: '6050'
 ht-degree: 0%
 
 ---
@@ -632,6 +632,7 @@ ht-degree: 0%
          - [ACSD-60816: [!DNL New Relic] vom APM-Agenten eingegebene Browserüberwachungsskripte sind nicht mit CSP konform](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967: JavaScript-Fehler verhindert, dass [!DNL Google Maps] korrekt dargestellt wird](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326: GraphQL-Abfrage zum Status [!UICONTROL Returns] des Kunden erzeugt einen Fehler](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
+         - [ACSD-59786: GraphQL gibt beim Abrufen einer Anführungszeichen-ID für ein abgelaufenes Anführungszeichen einen Fehler zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59786-graphql-returns-an-error-when-fetching-a-quote-id-for-an-expired.quote.md)
       - v1.1.52 {#v1-1-52}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.52](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/overview.md)
          - [ACSD-61366: bin/magento setup:static-content:deploy —jobs 4 command schlägt mit Fehler fehl](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61366-setup-command-fails-with-error.md)
