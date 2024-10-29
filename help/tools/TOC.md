@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: c489f77a9805ff3f96211f4ce2f47d8e963c47de
+source-git-commit: 46c1b2cdafe8335e604ee0391ca9aa8a32b54d84
 workflow-type: tm+mt
-source-wordcount: '6020'
+source-wordcount: '6035'
 ht-degree: 0%
 
 ---
@@ -628,6 +628,7 @@ ht-degree: 0%
          - [ACSD-60632: Bei jedem Bestellversuch gespeicherte Adresse](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
          - [ACSD-61195: GraphQL-Anfrage zum Warenkorb gibt keine Elemente auf der endgültigen Seite zurück](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: Attribute zeigen nicht an, ob ein Produkt deaktiviert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
+         - [ACSD-60631: GraphQL gibt einen Fehler zurück, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.md)
          - [ACSD-60816: [!DNL New Relic] vom APM-Agenten eingegebene Browserüberwachungsskripte sind nicht mit CSP konform](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
          - [ACSD-59967: JavaScript-Fehler verhindert, dass [!DNL Google Maps] korrekt dargestellt wird](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-59967-javascript-error-prevents-google-maps-from-rendering-correctly.md)
          - [ACSD-60326: GraphQL-Abfrage zum Status [!UICONTROL Returns] des Kunden erzeugt einen Fehler](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60326-graphql-query-error-customer-return-status.md)
