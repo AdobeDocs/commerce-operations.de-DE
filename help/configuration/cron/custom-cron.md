@@ -2,7 +2,7 @@
 title: Cron-Aufträge
 description: Erfahren Sie mehr über Cron-Gruppen und das Erstellen eines benutzerdefinierten Cron-Auftrags.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
@@ -21,5 +21,5 @@ Die Commerce-Anwendung stellt die folgenden Cron-Gruppen bereit:
 - `index`, wodurch [indexers](../cli/manage-indexers.md) aktualisiert wird
 - `consumers`, wodurch die Nachrichtenwarteschlange [consumer](../cli/start-message-queues.md) ausgeführt wird
 - Diese Themen sind nur in Adobe Commerce verfügbar
-   - `staging`, der [Staging-bezogene ](https://docs.magento.com/user-guide/cms/content-staging.html) Aufgaben ausführt
+   - `staging`, der [Staging-bezogene ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) Aufgaben ausführt
    - `catalog_event`, wodurch Aufgaben für Ziel- und Warenkorbregeln ausgeführt werden

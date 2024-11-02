@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce auf dem neuesten Stand de
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.4.x und höher
 
 Aktualisieren Sie die von Adobe Commerce verwendeten Dienste und Komponenten, bevor sie das Enddatum erreichen oder nahe daran liegen. Dies hilft, mit PCI-Compliance Schritt zu halten und Sicherheitslücken zu schließen.
 
-Kunden mit Starter-Plänen können sich selbst für Service-Upgrades bedienen. Weitere Informationen dazu finden Sie unter [Dienstversion ändern](https://devdocs.magento.com/cloud/project/services.html#change-service-version) .
+Kunden mit Starter-Plänen können sich selbst für Service-Upgrades bedienen. Weitere Informationen dazu finden Sie unter [Dienstversion ändern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) .
 
 Kunden mit Pro-Plänen können nur Self-Service für Dienstaktualisierungen in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) durchführen. Für Service-Upgrades bei der Produktion müssen Sie [ein Support-Ticket senden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), das die Aktualisierung anfordert.
 

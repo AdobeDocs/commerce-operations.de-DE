@@ -2,7 +2,7 @@
 title: Führen Sie die Hilfsprogramme aus
 description: Fehlerbehebung für Ihr Commerce-Projekt mithilfe des integrierten Support-Dienstprogramms.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Die Adobe Commerce-Support-Dienstprogramme - auch als [Datenerfassung](https://docs.magento.com/user-guide/system/support-data-collector.html) bezeichnet - ermöglichen es Benutzern, Informationen zur Fehlerbehebung zu Ihrem System zu erfassen, die von unserem Supportteam verwendet werden können.
+Die Adobe Commerce-Support-Dienstprogramme - auch als [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet - ermöglichen es Benutzern, Informationen zur Fehlerbehebung zu Ihrem System zu erfassen, die von unserem Supportteam verwendet werden können.
 
 Adobe Commerce verwendet diese Sicherungen, auch _Dumps_ genannt, um Probleme zu analysieren, die Zugriff auf Ihren Code erfordern. Ein typisches Szenario sieht wie folgt aus:
 

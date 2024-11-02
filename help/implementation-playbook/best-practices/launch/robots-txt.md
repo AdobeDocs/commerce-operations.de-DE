@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mithilfe von "robots.txt"- und "sitemap.xml"-
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: e1e7ad76b1df8e920ab7f9740fd4be8dc7335954
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Ein standardmäßiges Adobe Commerce-Projekt enthält eine Hierarchie mit einer 
 
 Befolgen Sie diese Best Practices bei der Konfiguration der `robots.txt` - und `sitemap.xml` -Dateien für Einzelsite-Storefronts:
 
-- Stellen Sie sicher, dass Ihr Projekt die [`ece-tools`](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html)-Version 2002.0.12 oder höher verwendet.
+- Stellen Sie sicher, dass Ihr Projekt die [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package)-Version 2002.0.12 oder höher verwendet.
 - Verwenden Sie die Admin-Anwendung, um der Datei `robots.txt` Inhalte hinzuzufügen.
 
   >[!TIP]
@@ -64,12 +64,12 @@ Befolgen Sie diese Best Practices bei der Konfiguration der `robots.txt` - und `
 
 >[!INFO]
 >
->Detaillierte Anweisungen finden Sie unter [Hinzufügen von Sitemap- und Suchmaschinen-Robotern](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) .
+>Detaillierte Anweisungen finden Sie unter [Hinzufügen von Sitemap- und Suchmaschinen-Robotern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) .
 
 
 ### Storefronts mit mehreren Sites
 
-Sie können mehrere Stores mit einer einzigen Implementierung von Adobe Commerce in der Cloud-Infrastruktur einrichten und ausführen. Siehe [Einrichten mehrerer Websites oder Stores](https://devdocs.magento.com/cloud/project/project-multi-sites.html).
+Sie können mehrere Stores mit einer einzigen Implementierung von Adobe Commerce in der Cloud-Infrastruktur einrichten und ausführen. Siehe [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
 
 Die gleichen Best Practices für die Konfiguration der `robots.txt` - und `sitemap.xml` -Dateien für die [Storefronts mit einer einzelnen Site](#single-site-storefronts) gelten für Storefronts mit mehreren Sites mit zwei wichtigen Unterschieden:
 
@@ -111,7 +111,7 @@ Anweisungen zum Bearbeiten der Datei `robots.txt` und zum Entfernen aller Eintr�
 
 ## Weitere Informationen
 
-- [Websites, Stores und Ansichten verstehen](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
-- [Websites hinzufügen](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Verwenden Sie Sofort, um böswilligen Traffic für Ihre Adobe Commerce-Sites zu blockieren](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
+- [Websites, Stores und Ansichten verstehen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Websites hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Verwenden Sie Sofort, um böswilligen Traffic für Ihre Adobe Commerce-Sites zu blockieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
 - [robots.txt gibt in Adobe Commerce einen 404-Fehler in der Cloud-Infrastruktur 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html) aus

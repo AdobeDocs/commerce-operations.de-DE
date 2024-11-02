@@ -2,7 +2,7 @@
 title: Fortgeschrittene Installation vor Ort
 description: Erfahren Sie mehr über erweiterte Installationsszenarios für Adobe Commerce in Ihrer Infrastruktur.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '2314'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Die folgenden Optionen geben die Benutzerinformationen und Anmeldeinformationen 
 
 Sie können den Admin-Benutzer während oder nach der Installation erstellen. Wenn Sie den Benutzer während der Installation erstellen, sind alle Variablen mit Administratorberechtigungen erforderlich. Siehe [Beispiel für lokale Host-Installationen](#sample-localhost-installations).
 
-Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in der [Befehlszeilen-Tools-Referenz](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html).
+Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in der [Befehlszeilen-Tools-Referenz](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Name | Wert | Erforderlich? |
 |--- |--- |--- |

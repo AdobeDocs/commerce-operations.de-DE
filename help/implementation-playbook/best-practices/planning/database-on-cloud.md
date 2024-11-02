@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Datenbank- und Anwendungseinstellungen konfig
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Führen Sie den folgenden Befehl aus, um zu bestimmen, welche Suchmaschine derze
 
 Konfigurationsanweisungen finden Sie im Entwicklerhandbuch für Adobe Commerce in Cloud:
 
-- [Einrichten des OpenSearch-Dienstes](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Einrichten des OpenSearch-Dienstes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Einrichten des Elasticsearch-Dienstes](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Einrichten des Elasticsearch-Dienstes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Vermeiden benutzerdefinierter Trigger
 
@@ -76,7 +76,7 @@ Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger
 
 ## Upgrade von [!DNL ECE-Tools] auf Version 2002.0.21 oder höher {#ece-tools-version}
 
-Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-Tools auf Version 2002.0.21 oder höher. Anweisungen finden Sie unter [Aktualisieren von `ece-tools` Version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in unserer Entwicklerdokumentation.
+Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-Tools auf Version 2002.0.21 oder höher. Anweisungen finden Sie unter [Aktualisieren von `ece-tools` Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in unserer Entwicklerdokumentation.
 
 ## Indexmodus sicher wechseln
 

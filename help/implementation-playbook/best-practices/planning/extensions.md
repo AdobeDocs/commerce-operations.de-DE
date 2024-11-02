@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Leistungsprobleme vermeiden, die durch Adobe 
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
@@ -35,5 +35,5 @@ Adobe Commerce-Erweiterungen von Drittanbietern (Module) können verschiedene Pr
 
 - [Best Practices für die Planung von Upgrades](../../../upgrade/prepare/best-practices.md)
 - Verwenden von Drittanbietererweiterungen mit Adobe Commerce in der Cloud-Infrastruktur
-   - [Technologien und Anforderungen - Entwicklung und Tests](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
-   - [Warum vollständig in Integration und Staging testen?](https://devdocs.magento.com/cloud/live/live.html#whytest)
+   - [Technologien und Anforderungen - Entwicklung und Tests](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Warum vollständig in Integration und Staging testen?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

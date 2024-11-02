@@ -3,7 +3,7 @@ title: Speicherort der Sitzung
 description: Erfahren Sie, wo die Sitzungsdateien gespeichert sind.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Als Benutzer mit `root` -Berechtigungen öffnen Sie Ihre `php.ini` -Datei und su
 
 ## Sitzungsgröße verwalten
 
-Weitere Informationen finden Sie unter [Sitzungsverwaltung](https://docs.magento.com/user-guide/stores/security-session-management.html) im _Benutzerhandbuch_.
+Weitere Informationen finden Sie unter [Sitzungsverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) im _Benutzerhandbuch_.
 
 ## Speicherbereinigungskonfiguration
 

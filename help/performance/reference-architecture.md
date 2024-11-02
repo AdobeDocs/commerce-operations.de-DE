@@ -2,7 +2,7 @@
 title: Referenzarchitektur
 description: Überprüfen Sie Diagramme der empfohlenen Referenzarchitektur für Adobe Commerce-Implementierungen.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Hier wird eine allgemeine empfohlene Einrichtung für Adobe Commerce-Instanzen beschrieben, die einfache Server verwenden, die physisch in einem Rechenzentrum gehostet werden (nicht virtualisiert) und in denen Ressourcen nicht für andere Benutzer freigegeben werden. Ihr Hosting-Anbieter kann, insbesondere wenn er sich auf Hosting mit hoher Leistung von Commerce spezialisiert hat, eine andere Einrichtung empfehlen, die Ihren Anforderungen gleichermaßen oder effektiver entspricht.
 
-Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie unter [Starterarchitektur](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
+Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie unter [Starterarchitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Referenzarchitekturdiagramm
 

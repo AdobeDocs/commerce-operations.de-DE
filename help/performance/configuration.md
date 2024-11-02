@@ -3,7 +3,7 @@ title: Best Practices für die Konfiguration
 description: Optimieren Sie die Reaktionszeit Ihrer Adobe Commerce-Bereitstellung mithilfe dieser Best Practices.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1417'
 ht-degree: 0%
@@ -32,15 +32,15 @@ Wenn Sie Ihren Store in Produktion starten, aktivieren Sie alle Caches von der S
 
 ## Asynchrone E-Mail-Benachrichtigungen
 
-Durch Aktivierung der Einstellung &quot;Asynchrone E-Mail-Benachrichtigungen&quot;werden Prozesse, die E-Mail-Benachrichtigungen zum Checkout und zur Bestellverarbeitung verarbeiten, in den Hintergrund verschoben. Um diese Funktion zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Weitere Informationen finden Sie unter [E-Mails für Vertrieb](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) im _Benutzerhandbuch für Administratoren_.
+Durch Aktivierung der Einstellung &quot;Asynchrone E-Mail-Benachrichtigungen&quot;werden Prozesse, die E-Mail-Benachrichtigungen zum Checkout und zur Bestellverarbeitung verarbeiten, in den Hintergrund verschoben. Um diese Funktion zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Weitere Informationen finden Sie unter [E-Mails für Vertrieb](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails) im _Benutzerhandbuch für Administratoren_.
 
 ## Asynchrone Auftragsdatenverarbeitung
 
-Es kann vorkommen, dass intensive Verkäufe an eine Storefront gleichzeitig erfolgen, während [!DNL Commerce] eine intensive Auftragsverarbeitung durchführt. Sie können [!DNL Commerce] so konfigurieren, dass diese beiden Traffic-Muster auf Datenbankebene unterschieden werden, um Konflikte zwischen Lese- und Schreibvorgängen in den entsprechenden Tabellen zu vermeiden. Sie können Bestelldaten asynchron speichern und indizieren. Bestellungen werden temporär gespeichert und ohne Kollisionen stapelweise in das Order Management-Raster verschoben. Sie können diese Option von **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]** aktivieren. Weitere Informationen finden Sie unter [Geplante Rasteraktualisierungen](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) im _Benutzerhandbuch für Administratoren_.
+Es kann vorkommen, dass intensive Verkäufe an eine Storefront gleichzeitig erfolgen, während [!DNL Commerce] eine intensive Auftragsverarbeitung durchführt. Sie können [!DNL Commerce] so konfigurieren, dass diese beiden Traffic-Muster auf Datenbankebene unterschieden werden, um Konflikte zwischen Lese- und Schreibvorgängen in den entsprechenden Tabellen zu vermeiden. Sie können Bestelldaten asynchron speichern und indizieren. Bestellungen werden temporär gespeichert und ohne Kollisionen stapelweise in das Order Management-Raster verschoben. Sie können diese Option von **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]** aktivieren. Weitere Informationen finden Sie unter [Geplante Rasteraktualisierungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing) im _Benutzerhandbuch für Administratoren_.
 
 >[!WARNING]
 >
->Die Registerkarte **[!UICONTROL Developer]** und die Optionen sind nur im [Entwicklermodus](../configuration/cli/set-mode.md) verfügbar. [Adobe Commerce in der Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt den `Developer` -Modus nicht.
+>Die Registerkarte **[!UICONTROL Developer]** und die Optionen sind nur im [Entwicklermodus](../configuration/cli/set-mode.md) verfügbar. [Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) unterstützt den `Developer` -Modus nicht.
 
 ## Speichern Sie die asynchrone Konfiguration
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Zurückgestellte Bestandsaktualisierung
 
-In Zeiten intensiver Umsätze kann [!DNL Commerce] Lageraktualisierungen im Zusammenhang mit Bestellungen zurückstellen. Dadurch wird die Anzahl der Vorgänge minimiert und der Bestellplatzierungsprozess beschleunigt. Diese Option ist jedoch riskant und kann nur verwendet werden, wenn im Speicher Rückorder aktiviert sind, da diese Option zu negativen Lagermengen führen kann. Diese Option kann zu einer deutlichen Leistungsverbesserung der Checkout-Flüsse für Stores führen, die ihren Lagerbestand bei Bedarf einfach wieder auffüllen können. Um verzögerte Lageraktualisierungen auf Ihrer Site zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Weitere Informationen finden Sie unter [Verwalten des Bestands](https://docs.magento.com/user-guide/catalog/inventory.html) im _Adobe Commerce-Benutzerhandbuch_ .
+In Zeiten intensiver Umsätze kann [!DNL Commerce] Lageraktualisierungen im Zusammenhang mit Bestellungen zurückstellen. Dadurch wird die Anzahl der Vorgänge minimiert und der Bestellplatzierungsprozess beschleunigt. Diese Option ist jedoch riskant und kann nur verwendet werden, wenn im Speicher Rückorder aktiviert sind, da diese Option zu negativen Lagermengen führen kann. Diese Option kann zu einer deutlichen Leistungsverbesserung der Checkout-Flüsse für Stores führen, die ihren Lagerbestand bei Bedarf einfach wieder auffüllen können. Um verzögerte Lageraktualisierungen auf Ihrer Site zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Weitere Informationen finden Sie unter [Verwalten des Bestands](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) im _Adobe Commerce-Benutzerhandbuch_ .
 
 >[!INFO]
 >
@@ -95,7 +95,7 @@ Um die Reaktionsfähigkeit Ihrer [!DNL Commerce] -Instanz im Storefront zu verbe
 
 >[!INFO]
 >
->Die Registerkarte **[!UICONTROL Developer]** und die Optionen sind nur im [Entwicklermodus](../configuration/cli/set-mode.md) verfügbar. [Adobe [!DNL Commerce] in der Cloud-Infrastruktur](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) unterstützt den `Developer` -Modus nicht.
+>Die Registerkarte **[!UICONTROL Developer]** und die Optionen sind nur im [Entwicklermodus](../configuration/cli/set-mode.md) verfügbar. [Adobe [!DNL Commerce] in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) unterstützt den `Developer` -Modus nicht.
 
 Wenn Sie die Option &quot;**[!UICONTROL Enable [!DNL JavaScript] Bundling]**&quot;aktivieren, gestatten Sie Commerce, alle JS-Ressourcen zu einem oder mehreren Bundles zusammenzuführen, die in Storefront-Seiten geladen werden. Das Bundling von JS führt zu weniger Anforderungen an den Server, was die Seitenleistung verbessert. Es hilft auch dem Browser, JS-Ressourcen beim ersten Aufruf zwischenzuspeichern und sie für alle weiteren Browser wiederzuverwenden. Diese Option bringt auch eine verzögerte Auswertung mit sich, da alle JS als Text geladen werden. Sie initiiert die Analyse und Auswertung von Code erst, nachdem bestimmte Aktionen auf der Seite ausgelöst wurden. Diese Einstellung wird jedoch nicht für Stores empfohlen, bei denen die erste Seitenladezeit äußerst wichtig ist, da der gesamte JS-Inhalt beim ersten Aufruf geladen wird.
 
@@ -111,7 +111,7 @@ Wenn Sie die Option &quot;**[!UICONTROL Enable [!DNL JavaScript] Bundling]**&quo
 
 ## Validierung von Kundensegmenten
 
-Bei Händlern mit einer großen Anzahl von [Kundensegmenten](https://docs.magento.com/user-guide/marketing/customer-segments.html) kann die Leistung durch Kundenaktionen wie die Kundenanmeldung und das Hinzufügen von Produkten zum Warenkorb erheblich beeinträchtigt werden.
+Bei Händlern mit einer großen Anzahl von [Kundensegmenten](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments) kann die Leistung durch Kundenaktionen wie die Kundenanmeldung und das Hinzufügen von Produkten zum Warenkorb erheblich beeinträchtigt werden.
 
 Kundenaktionen Trigger eines Validierungsprozesses für Kundensegmente, der zu Leistungsbeeinträchtigungen führen kann. Standardmäßig validiert Adobe Commerce jedes Segment in Echtzeit, um zu definieren, welche Kundensegmente abgeglichen werden und welche nicht.
 

@@ -2,7 +2,7 @@
 title: Jährliche Planung von Upgrades
 description: Lesen Sie die Tipps zur Erstellung eines jährlichen Aktualisierungsplans für Ihr Adobe Commerce-Projekt.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Viele Unternehmen arbeiten aus dem Jahreshaushalt und aus Fahrplänen. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über Ihre Strategie für Gesundheit, Ausrichtung und Aktualisierung der Plattform für das Jahr sprechen und erläutern, wie sie in die allgemeinen Ziele und wichtigen Leistungsindikatoren (KPIs) des Unternehmens passt.
 
-Weisen Sie nach dem [Veröffentlichungsplan](https://devdocs.magento.com/release/) Haushalts- und Freigabefenster für Aktualisierungen zu, wodurch Feiertage, Unternehmensschließungen und Spitzenzeiten vermieden werden. Wenn Sie den Adobe-Veröffentlichungsplan verstehen und über die Änderungen und Verbesserungen in den einzelnen Versionen in den [Versionshinweisen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) auf dem Laufenden bleiben, können Sie Ihr Jahr besser planen.
+Weisen Sie nach dem [Veröffentlichungsplan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) Haushalts- und Freigabefenster für Aktualisierungen zu, wodurch Feiertage, Unternehmensschließungen und Spitzenzeiten vermieden werden. Wenn Sie den Adobe-Veröffentlichungsplan verstehen und über die Änderungen und Verbesserungen in den einzelnen Versionen in den [Versionshinweisen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) auf dem Laufenden bleiben, können Sie Ihr Jahr besser planen.
 
 Bei der Planung können Sie sich fragen:
 

@@ -2,7 +2,7 @@
 title: Zugriff auf [!DNL Site-Wide Analysis Tool]
 description: Erfahren Sie, wie Sie auf den [!DNL Site-Wide Analysis Tool] zugreifen.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Es gibt zwei Möglichkeiten, auf den [!DNL Site-Wide Analysis Tool Dashboard] zu
 
 Sie können entweder von der [[!DNL Site-Wide Analysis Tool] Website](https://supportinsights.adobe.com/commerce) direkt **(nur für Adobe Commerce in der Cloud-Infrastruktur) aus auf die [!DNL dashboard] zugreifen und sich bei Ihrer Adobe ID anmelden oder über die [!DNL dashboard] von der [!DNL Admin Panel] Ihres Stores aus auf die Datei zugreifen.**
 
-Der Dienst [!DNL Site-Wide Analysis Tool] ist im [Produktionsmodus](https://docs.magento.com/user-guide/magento/installation-modes.html) für [!DNL Admin] -Benutzer mit Zugriffsberechtigung auf Benutzer [Benutzerrollenressourcen](https://docs.magento.com/user-guide/system/permissions-user-roles.html) verfügbar.
+Der Dienst [!DNL Site-Wide Analysis Tool] ist im [Produktionsmodus](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) für [!DNL Admin] -Benutzer mit Zugriffsberechtigung auf Benutzer [Benutzerrollenressourcen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) verfügbar.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Weitere Informationen finden Sie unter [Ein [!DNL Commerce] Konto teilen](https:
 
 ### Schritt 1: Berechtigungen überprüfen
 
-Vergewissern Sie sich, dass das [!DNL Admin]-Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] über ihre [zugewiesene Benutzerrolle](https://docs.magento.com/user-guide/system/permissions-user-roles.html) verfügt.
+Vergewissern Sie sich, dass das [!DNL Admin]-Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] über ihre [zugewiesene Benutzerrolle](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) verfügt.
 
 >[!IMPORTANT]
 >

@@ -2,7 +2,7 @@
 title: env.php-Referenz
 description: Sehen Sie sich eine Liste der Werte für die Datei env.php an.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 0%
@@ -146,7 +146,7 @@ Commerce verwendet einen Verschlüsselungsschlüssel, um Kennwörter und andere 
 ]
 ```
 
-Weitere Informationen zu [Verschlüsselungsschlüssel](https://docs.magento.com/user-guide/system/encryption-key.html) finden Sie im _Commerce-Benutzerhandbuch_.
+Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
 
 ## db
 
@@ -203,7 +203,7 @@ Eine Liste der herunterladbaren Domains, die in diesem Knoten verfügbar sind. Z
 ]
 ```
 
-Erfahren Sie mehr über [herunterladbare Domänen](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#downloadabledomainsadd).
+Erfahren Sie mehr über [herunterladbare Domänen](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## install
 

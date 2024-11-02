@@ -2,7 +2,7 @@
 title: Einrichten mehrerer Websites, Stores und Speichern von Ansichten im Admin
 description: Konfigurieren Sie zusätzliche Websites, Stores und Store-Ansichten im Commerce Admin.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Für diese Aufgabe müssen Sie für jeden Store eine Stammkategorie (und ggf. zusätzliche Kategorien) erstellen. Die in diesem Thema behandelten Aufgaben bieten eine Möglichkeit, mehrere Stores einzurichten. Weitere Informationen finden Sie in den folgenden Ressourcen im Commerce-Benutzerhandbuch:
 
-- [Kategorien](https://docs.magento.com/user-guide/catalog/categories.html)
-- [Hinzufügen von Websites](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [Store-URLs](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [Inhalt](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [Kategorien](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Hinzufügen von Websites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Store-URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Inhalt](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ So erstellen Sie eine Stammkategorie:
 1. Geben Sie im Feld **Kategoriename** einen eindeutigen Namen ein, um diese Kategorie zu identifizieren.
 1. Stellen Sie sicher, dass Kategorie aktivieren auf **Ja** eingestellt ist.
 
-   Weitere Informationen zu den anderen Optionen auf dieser Seite finden Sie unter [Stammkategorien](https://docs.magento.com/user-guide/catalog/category-root.html).
+   Weitere Informationen zu den anderen Optionen auf dieser Seite finden Sie unter [Stammkategorien](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    Die folgende Abbildung zeigt ein Beispiel.
 
@@ -131,7 +131,7 @@ Commerce bietet Ihnen die Möglichkeit, den Store-Code zur Site-Basis-URL hinzuz
 
 Dadurch wird verhindert, dass `index.php` und `.htaccess` bei zukünftigen Upgrades nicht mehr mit der Commerce-Codebase synchronisiert werden.
 
-Weitere Informationen finden Sie im [Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/stores/store-urls.html).
+Weitere Informationen finden Sie im [Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 So fügen Sie den Store-Code zur Basis-URL hinzu:
 

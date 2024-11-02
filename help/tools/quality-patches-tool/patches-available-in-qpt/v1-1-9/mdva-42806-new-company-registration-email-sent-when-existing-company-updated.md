@@ -3,7 +3,7 @@ title: "MDVA-42806: Bei jeder Aktualisierung eines bestehenden Unternehmens wird
 description: Der Patch MDVA-42806 behebt das Problem, dass jedes Mal, wenn ein bestehendes Unternehmen über die REST-API aktualisiert wird, eine E-Mail zur Registrierung eines neuen Unternehmens gesendet wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-42806. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -39,7 +39,7 @@ B2B-Module installiert.
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie ein Unternehmenskonto.
-1. Verwenden Sie den Endpunkt `/V1&#x200B;/company&#x200B;/<company_id>` . Informationen zum Aktualisieren des erstellten Unternehmens finden Sie unter [Aktualisieren des Unternehmens](https://devdocs.magento.com/guides/v2.4/b2b/company-object.html#update-the-company) in unserer Entwicklerdokumentation. Nachfolgend finden Sie eine Beispiel-Payload:
+1. Verwenden Sie den Endpunkt `/V1&#x200B;/company&#x200B;/<company_id>` . Informationen zum Aktualisieren des erstellten Unternehmens finden Sie unter [Aktualisieren des Unternehmens](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company) in unserer Entwicklerdokumentation. Nachfolgend finden Sie eine Beispiel-Payload:
 
 ```php
 {

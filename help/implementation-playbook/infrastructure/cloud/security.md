@@ -3,7 +3,7 @@ title: Sicherheit der Cloud-Infrastruktur
 description: Erfahren Sie, wie Adobe Adobe Commerce in der Cloud-Infrastruktur sicher hält.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -27,11 +27,11 @@ Siehe [Übersicht über schnelle Dienste](https://experienceleague.adobe.com/doc
 
 ## Web-Anwendungs-Firewall
 
-Die Fastly Web Application Firewall (WAF) wird verwendet, um zusätzlichen Schutz zu bieten. Die Cloud-basierte WAF von Fastly verwendet Drittanbieterregeln aus kommerziellen und Open-Source-Quellen wie dem OWASP-Kernregelsatz. Darüber hinaus werden Adobe Commerce-spezifische Regeln angewendet. Kunden sind vor wichtigen Angriffen auf Anwendungsebene geschützt, einschließlich Injizierungsangriffen und schädlichen Eingaben, Cross-Site-Scripting, Datenexfiltration, HTTP-Protokollverletzungen und anderen OWASP Top-10-Bedrohungen.
+Die Fastly Web Application Firewall (WAF) wird verwendet, um zusätzlichen Schutz zu bieten. Die Cloud-basierte WAF von Fastly verwendet Drittanbieterregeln aus kommerziellen und Open-Source-Quellen wie dem OWASP Core Ruleset. Darüber hinaus werden Adobe Commerce-spezifische Regeln angewendet. Die Kunden sind vor wichtigen Angriffen auf Anwendungsebene geschützt, darunter Injizierungsangriffe und schädliche Eingaben, Cross-Site-Scripting, Datenexfiltration, HTTP-Protokollverletzungen und anderen OWASP Top-10-Bedrohungen.
 
-Die WAF-Regeln werden von Adobe Commerce aktualisiert, wenn neue Schwachstellen erkannt werden, die es Managed Services ermöglichen, Sicherheitsprobleme vor Softwarepatches zu &quot;virtuell zu patchen&quot;. Die Fastly WAF bietet keine Dienste zur Ratenbegrenzung oder Bot-Erkennung. Bei Bedarf können Kunden einen Drittanbieter-Bot-Erkennungsdienst lizenzieren, der mit Fastly kompatibel ist.
+Die WAF-Regeln werden von Adobe Commerce aktualisiert, wenn neue Schwachstellen erkannt werden, die es Managed Services ermöglichen, Sicherheitsprobleme vor Softwarepatches zu &quot;virtuell zu patchen&quot;. Der Fastly WAF bietet keine Dienste zur Ratenbegrenzung oder Bot-Erkennung. Bei Bedarf können Kunden einen Drittanbieter-Bot-Erkennungsdienst lizenzieren, der mit Fastly kompatibel ist.
 
-Siehe [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) im _Cloud Guide_.
+Siehe [Web Application Firewall (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) im _Cloud-Handbuch_.
 
 ## Virtual Private Cloud
 
@@ -70,7 +70,7 @@ Adobe testet regelmäßig den Kernanwendungscode auf Sicherheitslücken. Patches
 
 Die vollständige Codebasis wird mit diesen Tools alle zwei Wochen überprüft. Kunden werden durch direkte E-Mails, Benachrichtigungen in der Anwendung und im [Sicherheitscenter](https://helpx.adobe.com/security.html) über Sicherheits-Patches benachrichtigt.
 
-Kunden müssen sicherstellen, dass diese Patches gemäß den PCI-Richtlinien innerhalb von 30 Tagen nach ihrer Veröffentlichung auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet außerdem ein [Sicherheits-Scan-Tool](https://docs.magento.com/user-guide/magento/security-scan.html), mit dem Händler ihre Websites regelmäßig überwachen und Updates zu bekannten Sicherheitsrisiken, Malware und unbefugtem Zugriff erhalten können. Das Security Scan Tool ist ein kostenloser Service und kann auf jeder beliebigen Version von Adobe Commerce ausgeführt werden.
+Kunden müssen sicherstellen, dass diese Patches gemäß den PCI-Richtlinien innerhalb von 30 Tagen nach ihrer Veröffentlichung auf ihre benutzerdefinierte Anwendung angewendet werden. Adobe bietet außerdem ein [Sicherheits-Scan-Tool](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan), mit dem Händler ihre Websites regelmäßig überwachen und Updates zu bekannten Sicherheitsrisiken, Malware und unbefugtem Zugriff erhalten können. Das Security Scan Tool ist ein kostenloser Service und kann auf jeder beliebigen Version von Adobe Commerce ausgeführt werden.
 
 Um Sicherheitsforscher dazu zu ermutigen, Schwachstellen zu identifizieren und zu melden, verfügt Adobe Commerce zusätzlich zu internen Tests über ein [Bugbounty-Programm](https://hackerone.com/magento) . Darüber hinaus erhält der Kunde bei Bedarf den vollständigen Quellcode der Anwendung für seine eigene Überprüfung.
 
@@ -84,7 +84,7 @@ Die einzige Möglichkeit, ausführbaren Code in die Managed Services-Produktions
 
 ## Protokollierung
 
-Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Die Protokolle für Betriebssystem, Anwendungsserver und Datenbank werden auf den Produktionsservern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce-[Projekt-Webschnittstelle](https://devdocs.magento.com/cloud/project/projects.html#login) verfügbar. Der gesamte Support-Zugriff wird protokolliert und Support-Sitzungen werden aufgezeichnet.
+Alle AWS-Aktivitäten werden in AWS CloudTrail protokolliert. Die Protokolle für Betriebssystem, Anwendungsserver und Datenbank werden auf den Produktionsservern gespeichert und in Backups gespeichert. Alle Quellcodeänderungen werden in einem Git-Repository aufgezeichnet. Der Bereitstellungsverlauf ist in der Adobe Commerce-[Projekt-Webschnittstelle](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) verfügbar. Der gesamte Support-Zugriff wird protokolliert und Support-Sitzungen werden aufgezeichnet.
 
 Siehe [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) im _Cloud-Handbuch_.
 

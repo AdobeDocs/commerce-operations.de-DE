@@ -2,7 +2,7 @@
 title: Sperranbieter konfigurieren
 description: Führen Sie diese Schritte aus, um zu verhindern, dass die doppelten Cron-Aufträge und Cron-Gruppen in Ihrer Adobe Commerce-Bereitstellung ausgeführt werden.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Konfigurieren Sie einen Sperranbieter, um zu verhindern, dass doppelte Cron-Auft
 
 Adobe Commerce verwendet die Datenbank, um Sperren standardmäßig zu speichern. Wenn sich auf Ihren Servern mehrere Knoten befinden, empfehlen wir die Verwendung von Zookeeper als Sperranbieter.
 
-Wenn Sie Adobe Commerce in einer Cloud-Infrastruktur ausführen, müssen Sie keine Einstellungen des Sperranbieters konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-Variablen](https://devdocs.magento.com/cloud/env/variables-cloud.html).
+Wenn Sie Adobe Commerce in einer Cloud-Infrastruktur ausführen, müssen Sie keine Einstellungen des Sperranbieters konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-Variablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Befehlsverwendung
 

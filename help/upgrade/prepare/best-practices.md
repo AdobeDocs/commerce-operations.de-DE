@@ -3,7 +3,7 @@ title: Best Practices
 description: Verwenden Sie die von Adobe empfohlenen Best Practices, um den Aktualisierungsprozess für Ihre Adobe Commerce-Projekte zu verwalten.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Beginnen Sie mit der Übernahme der Adobe Commerce Extensibility-Plattform, fall
 
 - **Erweiterbarkeit der Benutzeroberfläche**. Erweitern und entwickeln Sie Ihre Storefront unabhängig von Backend und Middleware mit [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **API-Erweiterbarkeit**. Verwenden Sie [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html), um die Web-API-Ebene zu erweitern, indem Sie das Diagrammdatenmodell entwickeln und Lambda-Funktionen direkt aus der Diagrammebene ausführen.
+- **API-Erweiterbarkeit**. Verwenden Sie [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html), um die Web-API-Ebene zu erweitern, indem Sie das Diagrammdatenmodell entwickeln und Lambda-Funktionen direkt aus der Diagrammebene ausführen.
 
 - **Adobe I/O Middleware und Dienste**. Verbinden Sie Ihre Systeme mit Adobe Commerce über Adobe Middleware und eine Suite mit App-Verbindungen, die auf [Adobe I/O](https://www.adobe.io/) basieren. Darüber hinaus können Sie die Kernplattformfunktionen erweitern, indem Sie das Standardverhalten mit Ihrer eigenen Geschäftslogik überschreiben, die auf Adobe I/O ausgeführt wird.
 
@@ -57,7 +57,7 @@ Beginnen Sie mit der Übernahme der Adobe Commerce Extensibility-Plattform, fall
 
 Da wir die Funktionen von Adobe Commerce kontinuierlich erweitern, ist es wichtig, dass Sie die neueste Version entwickeln und eine Upgrade-Strategie in Ihre Projektpläne aufnehmen. Auf diese Weise können Sie sicher, konform und auf dem neuesten Stand der neuesten Verbesserungen bleiben, mit denen Sie Ihre Umsätze schneller steigern, effizienter arbeiten und Ihrem Wettbewerb jetzt und in die Zukunft voraus bleiben können.
 
-Um Ihnen bei der Planung und dem Budget für Upgrades zu helfen, sollten Sie unseren [Veröffentlichungsplan](https://devdocs.magento.com/release) überwachen. Planen Sie die Aktualisierungsaufgaben im Rückstand Ihres Teams vor der Zeit. Ziel ist es, diese Arbeit mit GA abzuschließen.
+Um Ihnen bei der Planung und dem Budget für Upgrades zu helfen, sollten Sie unseren [Veröffentlichungsplan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) überwachen. Planen Sie die Aktualisierungsaufgaben im Rückstand Ihres Teams vor der Zeit. Ziel ist es, diese Arbeit mit GA abzuschließen.
 
 - Verwenden Sie die Vorabversion, um mehr über jede neue Version zu erfahren. Die Vorabversion ist der allgemeine Verfügbarkeitscode, der zwei Wochen vor der allgemeinen Verfügbarkeit für Adobe Commerce-Händler und alle Partner verfügbar ist. Wenn Sie über mehrere Stores verfügen, verwenden Sie die Vorabversion in Ihrem Basisspeicher und stellen Sie sicher, dass Ihre benutzerdefinierten Module und Designs mit ihr kompatibel sind.
 
@@ -73,13 +73,13 @@ Aktualisierungen sollten regelmäßig und unter einem vordefinierten Budget erfo
 
 Prüfen Sie die für die Aktualisierung erforderliche Arbeit:
 
-- Lesen Sie die [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) , um den Umfang und die Auswirkungen der neuen Version zu verstehen.
+- Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) , um den Umfang und die Auswirkungen der neuen Version zu verstehen.
 
 - Verwenden Sie den [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) , um potenzielle Probleme zu identifizieren, die in Ihrem benutzerspezifischen Code behoben werden müssen, bevor Sie versuchen, auf eine neuere Version zu aktualisieren.
 
 - Wenn Sie Erweiterungen von Drittanbietern verwenden, überprüfen Sie deren Kompatibilität mit der Zielversion, auf die Sie ein Upgrade durchführen möchten.
 
-### Post-Upgrade-Tests
+### Tests nach der Aktualisierung
 
 Beim Testen handelt es sich um die Phase eines Upgrades, für die die meiste Zeit benötigt wird. Daher sollte dieser Prozess so automatisiert wie möglich sein. Sie können von der Verwendung der Kerntestwerkzeuge profitieren. Das [Handbuch zum Testen von Anwendungen](https://developer.adobe.com/commerce/testing/guide/) enthält Details.
 

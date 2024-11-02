@@ -2,7 +2,7 @@
 title: Konfigurationseinstellungen überschreiben
 description: Erfahren Sie, wie Sie Umgebungsvariablen verwenden, um Konfigurationseinstellungen zu überschreiben.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -62,8 +62,8 @@ Das allgemeine Format der Variablennamen der Systemeinstellungen lautet wie folg
   Weitere Informationen zu Bereichen finden Sie unter:
 
    - [Schritt 1: Suchen Sie den Perimeter der Website- oder Store-Ansicht.](#step-1-find-the-website-or-store-view-scope-value)
-   - [Commerce-Benutzerhandbuch zum Umfang](https://docs.magento.com/user-guide/configuration/scope.html)
-   - [Kurzübersicht zum Umfang](https://docs.magento.com/user-guide/stores/store-scope-reference.html)
+   - [Commerce-Benutzerhandbuch zum Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Kurzübersicht zum Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` ist der Konfigurationspfad mit doppelten Unterstrichen, die durch `/` ersetzt werden. Weitere Informationen finden Sie unter [Schritt 2: Festlegen von Systemvariablen](#step-2-set-global-website-or-store-view-variables).
 
@@ -251,7 +251,7 @@ Ein schrittweises Beispiel wird unter [Festlegen von Konfigurationswerten mithil
 
 >[!WARNING]
 >
->- Um die Werte zu verwenden, die Sie im Array `$_ENV` festgelegt haben, müssen Sie `variables_order = "EGPCS"` (Umgebung, Abruf, Post, Cookie und Server) in Ihrer `php.ini`-Datei festlegen. Weitere Informationen finden Sie in der [PHP-Dokumentation](https://www.php.net/manual/en/ini.core.php).
+>- Um die Werte zu verwenden, die Sie im Array `$_ENV` festgelegt haben, müssen Sie `variables_order = "EGPCS"` (Umgebung, Abruf, Beitrag, Cookie und Server) in Ihrer `php.ini`-Datei festlegen. Weitere Informationen finden Sie in der [PHP-Dokumentation](https://www.php.net/manual/en/ini.core.php).
 >
 >- Wenn Sie bei Adobe Commerce in der Cloud-Infrastruktur versuchen, Konfigurationseinstellungen mithilfe der [Projekt-Webschnittstelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project) zu überschreiben, müssen Sie dem Variablennamen &quot;`env:`&quot;voranstellen. Beispiel:
 >

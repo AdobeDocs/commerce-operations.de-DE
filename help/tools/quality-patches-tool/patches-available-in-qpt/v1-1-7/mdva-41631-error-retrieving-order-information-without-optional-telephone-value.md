@@ -3,7 +3,7 @@ title: '"MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionale
 description: Der Patch MDVA-41631 behebt das Problem, dass Benutzer einen Fehler beim Abrufen von Bestellinformationen ohne optionalen "Telefonwert"über GraphQL erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -36,8 +36,8 @@ Benutzer erhalten einen Fehler beim Abrufen von Bestellinformationen ohne option
 
 1. Wechseln Sie zu **Store** > **Konfiguration** > **Kunden** > **Kundenkonfiguration** > **Name und Adressenoptionen** > **Telefon anzeigen** und legen Sie die Telefonnummer als optional fest.
 1. Platzieren Sie eine Bestellung mithilfe der GraphQL-API als angemeldeter Kunde.
-   * Legen Sie die Telefonnummer nicht fest, wenn Sie die Abrechnungs- und Versandadressen festlegen. Befolgen Sie die Anweisungen in [GraphQL Checkout-Tutorial](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-customer.html) in unserer Entwicklerdokumentation.
-1. Rufen Sie die Bestellung mit der GraphQL [customerOrders-Abfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer-orders.html) ab.
+   * Legen Sie die Telefonnummer nicht fest, wenn Sie die Abrechnungs- und Versandadressen festlegen. Befolgen Sie die Anweisungen in [GraphQL Checkout-Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) in unserer Entwicklerdokumentation.
+1. Rufen Sie die Bestellung mit der GraphQL [customerOrders-Abfrage](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html) ab.
 
 <pre>
 <code class="language-graphql">

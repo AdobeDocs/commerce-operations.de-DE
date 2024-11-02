@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Empfehlungen zum Konfigurieren von Warenkor
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
 #### Konfiguration der Attributsätze überprüfen
 
-1. [Verbindung zur Site-Datenbank herstellen](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [Verbindung zur Site-Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Anzahl der Attributsätze mit MySQL suchen
 

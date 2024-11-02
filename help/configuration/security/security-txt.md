@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Informationen bereitstellen, die Sicherheitse
 feature: Configuration, Security
 badge: label="Mitwirkende von Kalpesh Mehta aus Corra" type="Informative" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Wenn von Forschern Sicherheitslücken entdeckt werden, fehlen häufig geeignete Berichtskanäle. Daher werden einige Schwachstellen nicht gemeldet. Die Datei `security.txt` [Dateiformat](https://datatracker.ietf.org/doc/html/draft-foudil-securitytxt-09) dient dazu, Sicherheitsforschern die Informationen zur Verfügung zu stellen, die sie zur Meldung ihrer Ergebnisse verwenden können.
 
-Händler können ihre Kontaktinformationen für die Meldung von [Sicherheitsproblemen](https://docs.magento.com/user-guide/stores/security-issue-reporting.html) von Commerce _Admin_ eingeben. Für Entwickler stellt das Modul `Magento_Securitytxt` die folgenden Funktionen bereit:
+Händler können ihre Kontaktinformationen für die Meldung von [Sicherheitsproblemen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-issue-reporting) von Commerce _Admin_ eingeben. Für Entwickler stellt das Modul `Magento_Securitytxt` die folgenden Funktionen bereit:
 
 - Ermöglicht das Speichern von Sicherheitskonfigurationen über den _Administrator_.
 - Enthält einen Router zum Abgleichen der Anwendungsaktionsklasse für Anfragen an die Dateien `.well-known/security.txt` und `.well-known/security.txt.sig`.

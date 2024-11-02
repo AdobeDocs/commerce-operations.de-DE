@@ -4,7 +4,7 @@ description: Behalten und optimieren Sie die Site-Leistung, indem Sie Best Pract
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Ein großer Speicher mit mehreren Administratoren, die im Backend arbeiten oder 
 Um die Site-Leistung zu maximieren, befolgen Sie die folgenden Best Practices für die Indizierung:
 
 - Überprüfen Sie die Indexkonfiguration.
-- Setzen Sie die Indexer für große Sites auf &quot;_[!UICONTROL Update on Schedule]_&quot;, für Sites mit häufigen Aktualisierungen und hohem Traffic. Siehe [Indexverwaltung](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Setzen Sie die Indexer für große Sites auf &quot;_[!UICONTROL Update on Schedule]_&quot;, für Sites mit häufigen Aktualisierungen und hohem Traffic. Siehe [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Befolgen Sie [Best Practices zur Performance](../../../performance/configuration.md) für die Verwaltung von Indizes.
 
 >[!IMPORTANT]

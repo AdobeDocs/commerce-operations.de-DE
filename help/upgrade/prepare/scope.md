@@ -2,7 +2,7 @@
 title: Aktualisierungsumfang verstehen
 description: Erfahren Sie mehr über abwärtskompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce-Module oder Drittanbieter-Erweiterungen auswirken können.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # den Umfang der Aktualisierung verstehen
 
-Lesen Sie die [Versionshinweise](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) , um den Umfang einer Version zu verstehen, einschließlich Verbesserungen, Fehlerbehebungen und bekannten Problemen, die sich auf Drittanbieter- und benutzerdefinierte Module auswirken könnten.
+Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) , um den Umfang einer Version zu verstehen, einschließlich Verbesserungen, Fehlerbehebungen und bekannten Problemen, die sich auf Drittanbieter- und benutzerdefinierte Module auswirken könnten.
 
 ## Abwärtskompatible Änderungen
 
 Adobe Commerce-Versionen können abwärtskompatible Änderungen enthalten. Lesen Sie unsere Dokumentation zu rückwärtsinkompatiblen Änderungen. Weitere Informationen finden Sie unter:
 
-- **[Wichtige Änderungen - Highlights](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)** - Änderungen, die erhebliche Auswirkungen haben und detaillierte Erläuterungen und spezielle Anweisungen erfordern, um sicherzustellen, dass Module von Drittanbietern weiterhin funktionieren.
-- **[Geringfügige Änderungsreferenz](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)** - Referenzdokumentation, die von der Codebasis generiert wurde und geringfügige Änderungen an Klassen, API-Mitgliedschaft, Datenbank, Abhängigkeitseinfügung, Schnittstellen, Layouts, System und XSD beschreibt.
+- **[Wichtige Änderungen - Highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** - Änderungen, die erhebliche Auswirkungen haben und detaillierte Erläuterungen und spezielle Anweisungen erfordern, um sicherzustellen, dass Module von Drittanbietern weiterhin funktionieren.
+- **[Geringfügige Änderungsreferenz](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - Referenzdokumentation, die von der Codebasis generiert wurde und geringfügige Änderungen an Klassen, API-Mitgliedschaft, Datenbank, Abhängigkeitseinfügung, Schnittstellen, Layouts, System und XSD beschreibt.
 
 ## Drittanbietererweiterungen
 
@@ -26,7 +26,7 @@ Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher
 
 ## Benutzerdefinierte Module
 
-Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, auf die Sie ein Upgrade durchführen möchten. Dies ist der zeitintensivste und ressourcenintensivste Aktualisierungsprozess. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtskompatiblen Änderungen suchen und sich über neue Vorgehensweisen, wie z. B. die Aufhebung der Controller-Zusammensetzung, informieren. Weitere Informationen hierzu finden Sie in den [Versionshinweisen](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Stellen Sie außerdem sicher, dass Sie die [Best Practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) für die Modulentwicklung befolgen.
+Alle benutzerdefinierten Module sollten mit der Zielversion verglichen werden, auf die Sie ein Upgrade durchführen möchten. Dies ist der zeitintensivste und ressourcenintensivste Aktualisierungsprozess. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtskompatiblen Änderungen suchen und sich über neue Vorgehensweisen, wie z. B. die Aufhebung der Controller-Zusammensetzung, informieren. Weitere Informationen hierzu finden Sie in den [Versionshinweisen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Stellen Sie außerdem sicher, dass Sie die [Best Practices](https://developer.adobe.com/commerce/php/best-practices/extensions/) für die Modulentwicklung befolgen.
 
 ## [!DNL Upgrade Compatibility Tool]
 

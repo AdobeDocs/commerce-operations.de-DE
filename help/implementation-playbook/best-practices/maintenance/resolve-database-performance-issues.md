@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Datenbankprobleme beheben, die die Leistung a
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Sie können MySQL verwenden, um langwierige Abfragen in Adobe Commerce in Cloud-
 Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie die Abfragen mit dem Percona Toolkit analysieren.
 
 1. Führen Sie den Befehl `pt-query-digest --type=slowlog` für langsame MySQL-Abfrageprotokolle aus.
-   * Informationen zum Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://devdocs.magento.com/cloud/project/log-locations.html#service-logs) in unserer Entwicklerdokumentation.
+   * Informationen zum Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in unserer Entwicklerdokumentation.
    * Weitere Informationen finden Sie in der Dokumentation zu [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. Führen Sie je nach den gefundenen Problemen Schritte aus, um die Abfrage zu korrigieren, damit sie schneller ausgeführt werden kann.
 

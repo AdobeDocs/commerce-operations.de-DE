@@ -3,7 +3,7 @@ title: Cache-Leerung mit Varnish
 description: Erfahren Sie, wie das Cache-Leeren mit Varnish funktioniert und wie Sie es als Web-Caching-Beschleuniger für die Adobe Commerce-Anwendung verwenden.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Nachdem Sie Varnish installiert und für die Verwendung mit Commerce konfigurier
 
 ## Konfigurieren von Commerce zum Bereinigen von Varnish
 
-Commerce löscht verschiedene Hosts, nachdem Sie mit dem Befehl [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) verschiedene Hosts konfiguriert haben.
+Commerce löscht verschiedene Hosts, nachdem Sie mit dem Befehl [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) verschiedene Hosts konfiguriert haben.
 
 Sie können den optionalen Parameter `--http-cache-hosts` verwenden, um eine kommagetrennte Liste von &quot;Varnish Hosts&quot;und &quot;Listen Ports&quot;anzugeben. Konfigurieren Sie alle gemischten Hosts, unabhängig davon, ob Sie einen oder mehrere Hosts haben. (Trennen Sie Hosts nicht durch Leerzeichen.)
 

@@ -3,7 +3,7 @@ title: "ACSD-44938: VAT_ID kann in GraphQL-Anfrage für Gastbenutzer nicht angew
 description: Der Patch ACSD-44938 behebt das Problem, dass die VAT_ID nicht in einer GraphQL-Anfrage für einen Gastbenutzer angewendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-44938. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -34,12 +34,12 @@ Die Variable &quot;VAT_ID&quot;kann nicht in einer GraphQL-Anfrage für einen Ga
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Führen Sie die im Tutorial [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-shopping-cart.html) in unserer Entwicklerdokumentation erwähnten Schritte aus, um einen Gastkarton zu erstellen.
+1. Führen Sie die im Tutorial [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) in unserer Entwicklerdokumentation erwähnten Schritte aus, um einen Gastkarton zu erstellen.
 1. Versuchen Sie, die VAT_ID für den Gastbenutzer anzuwenden, der GraphQL verwendet.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Variable &quot;VAT_ID&quot;kann auf dieselbe Weise wie bei einem registrierten Kunden angewendet werden. Siehe Artikel [createCustomerAddress mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-address.html) in unserer Entwicklerdokumentation.
+Die Variable &quot;VAT_ID&quot;kann auf dieselbe Weise wie bei einem registrierten Kunden angewendet werden. Siehe Artikel [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) in unserer Entwicklerdokumentation.
 
 <u>Tatsächliche Ergebnisse</u>:
 

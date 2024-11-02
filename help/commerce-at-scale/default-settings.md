@@ -4,7 +4,7 @@ description: Bereiten Sie Ihr Adobe Commerce-Projekt auf die Verwendung von Adob
 exl-id: 55d77af7-508c-4ef7-888b-00911cc6e920
 feature: Integration, Cache
 topic: Commerce, Performance
-source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1142'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Mit GraphQL können Sie mehrere Abfragen in einem einzigen Aufruf durchführen. 
 
 >[!NOTE]
 >
-> Weitere Informationen zu zwischenspeicherbaren und nicht zwischenspeicherbaren Abfragen finden Sie in der Adobe Commerce [Entwicklerdokumentation](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> Weitere Informationen zu zwischenspeicherbaren und nicht zwischenspeicherbaren Abfragen finden Sie in der Adobe Commerce [Entwicklerdokumentation](https://developer.adobe.com/commerce/webapi/graphql/caching.html).
 
 ## Katalogflachtabelle
 
@@ -42,7 +42,7 @@ Eine schnelle Herkunftssicherung kann in Ihren Adobe Commerce Admin Fastly-Konfi
 
 Sobald die Fastly-Ursprungs-Shielding aktiviert ist, können Sie damit auch Fastly Image Optimizer aktivieren. Wenn Produktkatalog-Bilder in Adobe Commerce gespeichert werden, bietet dieser Dienst die Möglichkeit, alle ressourcenintensiven Produktkatalogbilder aus der Verarbeitung auf Schnell und aus der Adobe Commerce-Quelle zu löschen. Die Antwortzeiten der Endbenutzer werden auch für Seitenladezeiten verbessert, da Bilder an der Edge-Position umgewandelt werden, wodurch Latenzzeiten vermieden werden, indem die Anzahl der Anforderungen an die Adobe Commerce-Quelle reduziert wird.
 
-Die schnelle Bildoptimierung kann durch &quot;Deep-Image-Optimierung aktivieren&quot;in der Fastly-Konfiguration in Admin aktiviert werden, allerdings erst, nachdem Ihr Ursprungsschild aktiviert wurde. Weitere Informationen zu Konfigurationen für die schnelle Bildoptimierung finden Sie in der Adobe Commerce [Entwicklerdokumentation](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+Die schnelle Bildoptimierung kann durch &quot;Deep-Image-Optimierung aktivieren&quot;in der Fastly-Konfiguration in Admin aktiviert werden, allerdings erst, nachdem Ihr Ursprungsschild aktiviert wurde. Weitere Informationen zu Konfigurationen für die schnelle Bildoptimierung finden Sie in der Adobe Commerce [Entwicklerdokumentation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization).
 
 ![Screenshot der Einstellungen für die schnelle Bildoptimierung in der Adobe Commerce Admin](../assets/commerce-at-scale/image-optimization.svg)
 

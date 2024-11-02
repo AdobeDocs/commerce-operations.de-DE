@@ -2,7 +2,7 @@
 title: Versionshinweise für Adobe Commerce 2.4.3-Sicherheitspatches
 description: Erfahren Sie mehr über Sicherheitsfehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsrelevante Updates, die in den Sicherheits-Patch-Versionen für Adobe Commerce Version 2.4.3 enthalten sind.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Diese Version enthält den folgenden Hotfix und alle Hotfixes, die für die vorh
 
 **Eingeschränkter Administratorzugriff auf Ordner der Media Gallery**. Standardberechtigungen für Media Gallery erlauben jetzt nur Ordneroperationen (Anzeigen, Hochladen, Löschen und Erstellen), die explizit von der Konfiguration erlaubt sind. Admin-Benutzer können nicht mehr über die Media Gallery auf Medien-Assets zugreifen, die außerhalb der Verzeichnisse `catalog/category` oder `wysiwyg` hochgeladen wurden. Administratoren, die auf Medien-Assets zugreifen möchten, müssen sie in einen explizit zulässigen Ordner verschieben oder ihre Konfigurationseinstellungen anpassen. Siehe [Ändern der Media Library-Ordnerberechtigungen](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
-**Verringerte Beschränkungen der GraphQL-Abfragekomplexität**. Die maximal zulässige GraphQL-Abfragekomplexität wurde verringert, um Denial-of-Service-Angriffe (DOS) zu verhindern. Siehe [GraphQL-Sicherheitskonfiguration](https://devdocs.magento.com/guides/v2.4/graphql/security-configuration.html). <!-- PWA-1700-->
+**Verringerte Beschränkungen der GraphQL-Abfragekomplexität**. Die maximal zulässige GraphQL-Abfragekomplexität wurde verringert, um Denial-of-Service-Angriffe (DOS) zu verhindern. Siehe [GraphQL-Sicherheitskonfiguration](https://developer.adobe.com/commerce/webapi/graphql/security-configuration.html). <!-- PWA-1700-->
 
 **Schwachstellen beim aktuellen Penetrationstest** wurden in dieser Version behoben. <!-- MC-42431-->
 

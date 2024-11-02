@@ -3,7 +3,7 @@ title: "MDVA-44147: GraphQL-Anfrage gibt keine Anforderungslisten zurück"
 description: Der Patch MDVA-44147 behebt das Problem, dass GraphQL-Anfragen keine Anforderungslisten zurückgeben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44147. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -35,8 +35,8 @@ GraphQL-Anfrage gibt keine Anforderungslisten zurück.
 <u>Zu reproduzierende Schritte</u>:
 
 1. Wechseln Sie zu **Store** > **Einstellungen** > **Konfiguration** > **Allgemein** > **B2B-Funktionen** und aktivieren Sie die Anforderungsliste.
-1. Melden Sie sich als Kunde an und fügen Sie der [Anforderungsliste](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html) ein Produkt hinzu.
-1. Erstellen Sie ein [Kunden-Token](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Melden Sie sich als Kunde an und fügen Sie der [Anforderungsliste](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) ein Produkt hinzu.
+1. Erstellen Sie ein [Kunden-Token](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
     <code class="language-graphql">
@@ -51,7 +51,7 @@ GraphQL-Anfrage gibt keine Anforderungslisten zurück.
       </code>
       </pre>
 
-1. Verwenden Sie die folgende Abfrage, um alle Anforderungslisten vom Kunden abzurufen. Verwenden Sie die Kopfzeile **Autorisierung** mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im Artikel [Kundenabfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) in unserer Entwicklerdokumentation.
+1. Verwenden Sie die folgende Abfrage, um alle Anforderungslisten vom Kunden abzurufen. Verwenden Sie die Kopfzeile **Autorisierung** mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im Artikel [Kundenabfrage](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) in unserer Entwicklerdokumentation.
 
    Anfrage:
 

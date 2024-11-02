@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Best Practices bei der Konfiguration, u
 role: Admin, User
 feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Wenn das Auftragsvolumen auf Ihren Commerce-Sites zunimmt, können Sie die Leist
 
 - **[!UICONTROL Asynchronous indexing]** - Aktivieren Sie diese Option, um Datenbanksperren und eine verlangsamte Verarbeitung zu verhindern, die auftreten können, wenn eine große Anzahl von Bestellungen gleichzeitig aufgegeben wird.
 - **[!UICONTROL Asynchronous email notifications]** - Aktivieren Sie diese Option, um die Leistung beim Checkout zu beschleunigen, indem Sie E-Mail-Benachrichtigungen zum Checkout senden und bestellen, anstatt sie sofort zu senden.
-- **[!UICONTROL Enable Archiving]**—Aktivieren Sie diese Option, um die Leistung von Bestellungen, Rechnungen, Sendungen und Kreditkarten zu verbessern und Ihren Arbeitsbereich ohne unnötige Informationen zu belassen, sodass Sie sich auf das aktuelle Geschäft konzentrieren können. Siehe [Aktivieren der Archivierung](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]**—Aktivieren Sie diese Option, um die Leistung von Bestellungen, Rechnungen, Sendungen und Kreditkarten zu verbessern und Ihren Arbeitsbereich ohne unnötige Informationen zu belassen, sodass Sie sich auf das aktuelle Geschäft konzentrieren können. Siehe [Aktivieren der Archivierung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Betroffene Produkte und Versionen
 

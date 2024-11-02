@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Best Practices für die Planung kritischer 
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Kritische Aktionen führen zu Cache-Invalidierungs- und Neuindizierungsvorgänge
 
 ## Weitere Informationen
 
-- [Best Practices für die Zwischenspeicherung](https://docs.magento.com/user-guide/system/cache-management.html#best-practices-for-caching)
+- [Best Practices für die Zwischenspeicherung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [Privater Inhalt: Ungültiger privater Inhalt](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-Empfehlungen: Caches](../../../performance/hardware.md#caches)
 - [Erweiterte Einrichtung: Redis einrichten](../../../performance/advanced-setup.md#set-up-redis)
