@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 4764716fe6fbc043f96843195f9d25b6d3517a40
+source-git-commit: ebcf6c2f99b44489d3914dc4a83fd0f3f944ad93
 workflow-type: tm+mt
-source-wordcount: '6087'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,7 @@ ht-degree: 0%
    - [Patches](site-wide-analysis-tool/patches.md)
 
 - Qualitätsmuster-Werkzeug {#quality-patches-tool}
+   - [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
