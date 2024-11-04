@@ -2,9 +2,9 @@
 title: Verwalten von Erweiterungen von Drittanbietern
 description: Führen Sie diese Schritte aus, um eine Adobe Commerce-Erweiterung zu installieren, zu aktivieren, zu aktualisieren und zu deinstallieren.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Zu den Erweiterungen gehören:
 - Designs (ändern Sie das Erscheinungsbild Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Storefront und Admin lokalisieren)
 
->[!TIP]
->
->In diesem Thema wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Drittanbietererweiterungen verwalten können, die Sie über die Commerce Marketplace erwerben. Sie können dasselbe Verfahren verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Komponentenprogramms der Erweiterung. Um sie zu finden, öffnen Sie die Datei `composer.json` der Erweiterung und notieren Sie die Werte für `"name"` und `"version"`.
+In diesem Thema wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Drittanbietererweiterungen verwalten können, die Sie über die Commerce Marketplace für _lokale_ -Projekte erwerben. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Verwalten von Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+
+Sie können dasselbe Verfahren verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Komponentenprogramms der Erweiterung. Um sie zu finden, öffnen Sie die Datei `composer.json` der Erweiterung und notieren Sie die Werte für `"name"` und `"version"`.
 
 ## Installieren
 
@@ -70,7 +70,7 @@ So rufen Sie den Composer-Namen und die Version der Erweiterung von der Commerce
 
    ![Einkaufsverlauf für Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
-1. Suchen Sie die Erweiterung, die Sie installieren möchten, und klicken Sie auf **Technische Details**.
+1. Suchen Sie die Erweiterung, die Sie installieren möchten, und notieren Sie sich den Komponentennamen und die Version.
 
    ![Technische Details zeigen den Namen des Komponisten der Erweiterung an](../../assets/installation/marketplace-extension-technical-details.png)
 
@@ -241,13 +241,13 @@ Die folgenden Anweisungen enthalten allgemeine Informationen zum Deinstallieren 
    - Entfernen Sie bei Composer-basierten Erweiterungen die Erweiterung aus Ihrer Adobe Commerce `composer.json` -Datei.
 
      ```bash
-     composer remove <package-name>
+     composer remove <component-name>
      ```
 
    - Entfernen Sie bei Nicht-Composer-basierten Erweiterungen die physischen Dateien aus Ihrem Adobe Commerce-Projekt-Repository.
 
      ```bash
-     rm -rf app/code/<vendor-name>/<module-name>
+     rm -rf app/code/<vendor-name>/<component-name>
      ```
 
 1. Wenn die Datei &quot;`config.php`&quot; in Ihrem Adobe Commerce-Projekt-Repository unter Quellcodeverwaltung steht, entfernen Sie die Erweiterung aus der Datei &quot;`config.php`&quot;.
