@@ -3,9 +3,9 @@ title: 'ACSD-48216: *AUTO_INCREMENT of inventory_source_item* table increase on 
 description: Wenden Sie den Patch ACSD-48216 an, um das Adobe Commerce-Problem zu beheben, bei dem *AUTO_INCREMENT der Tabelle inventory_source_item* beim Vorgang *UPDATE* zunimmt.
 feature: Admin Workspace, Inventory, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Der Patch ACSD-48216 behebt das Problem, dass *AUTO_INCREMENT* der Tabelle *inve
 
 ## Problem
 
-*AUTO_INCREMENT* der Tabelle *inventory_source_item* erhöht sich beim Vorgang *UPDATE* .
+`AUTO_INCREMENT` der `inventory_source_item` Tabelle erhöht sich beim `UPDATE`-Vorgang.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Überprüfen Sie den aktuellen Wert von *AUTO_INCREMENT* der Tabelle *inventory_source_item*:
+1. Überprüfen Sie den aktuellen Wert von `AUTO_INCREMENT` der Tabelle `inventory_source_item`:
 
 ```bash
 MySQL > show create table inventory_source_item;
@@ -75,29 +75,27 @@ Nutzlast:
 }
 ```
 
-1. Überprüfen Sie den Wert *AUTO_INCREMENT* der Tabelle *inventory_source_item* erneut.
+1. Überprüfen Sie erneut den `AUTO_INCREMENT` -Wert der `inventory_source_item` -Tabelle.
 
 <u>Erwartete Ergebnisse</u>:
 
-Der Wert *AUTO_INCREMENT* der Tabelle *inventory_source_item* erhöht sich nach jedem Aktualisierungsvorgang nicht.
+Der `AUTO_INCREMENT` -Wert der `inventory_source_item`-Tabelle wird nach jedem Aktualisierungsvorgang nicht erhöht.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Wert *AUTO_INCREMENT* der Tabelle *inventory_source_item* erhöht sich nach jedem Aktualisierungsvorgang.
+Der `AUTO_INCREMENT` -Wert der `inventory_source_item`-Tabelle erhöht sich nach jedem Aktualisierungsvorgang.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
-
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
-
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank
+* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool]-Handbuch, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

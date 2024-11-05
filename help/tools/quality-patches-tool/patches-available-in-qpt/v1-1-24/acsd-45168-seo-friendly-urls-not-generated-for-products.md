@@ -3,9 +3,9 @@ title: 'ACSD-45168: SEO-freundliche URLs, die nicht für Produkte generiert wurd
 description: Wenden Sie den Patch ACSD-45168 an, um das Adobe Commerce-Problem zu beheben, bei dem SEO-freundliche URLs nicht für Produkte generiert wurden, deren Attribute url_key auf Store-Ansichtsebene überschrieben wurden.
 feature: Attributes, Cache, Categories, Marketing Tools, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ SEO-freundliche URLs werden nicht für Produkte generiert, bei denen url_key -At
 1. Speichern Sie das Produkt.
 1. Wechseln Sie zurück zu [!UICONTROL All Store Views].
 1. Fügen Sie [!UICONTROL Product 1] zu [!UICONTROL Category 2] hinzu und fügen Sie [!UICONTROL Product 2] zu [!UICONTROL Category 2] hinzu.
-1. Überprüfen Sie die Tabelle [!UICONTROL url_rewrite] oder die Tabelle [!UICONTROL Marketing] > [!UICONTROL SEO & Search] > [!UICONTROL URL Rewrites].
+1. Überprüfen Sie die Tabelle `url_rewrite` oder die Tabelle [!UICONTROL Marketing] > [!UICONTROL SEO & Search] > [!UICONTROL URL Rewrites].
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -59,15 +59,13 @@ Die SEO-freundliche URL für [!UICONTROL Category 2] fehlt für [!UICONTROL Prod
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
-
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
-
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank
+* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool]-Handbuch, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
