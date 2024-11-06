@@ -1,5 +1,5 @@
 ---
-source-git-commit: b4b13acd4bfc4ccbab80a1f1823d833dc7669125
+source-git-commit: 3d908004d27ae2f6c7adb425f8d580fee45edaae
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 6%
@@ -66,7 +66,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Zahlungsdienste</td>
-          <td>2.8.0 (PHP 8.3)</td>
+          <td>2.9.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
