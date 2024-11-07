@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 2a751e4548ab032a1d9339efeb66559c3836e58e
+source-git-commit: 5049afe19ff7e25983c8a21544677c64473e2806
 workflow-type: tm+mt
-source-wordcount: '6106'
+source-wordcount: '6116'
 ht-degree: 0%
 
 ---
@@ -645,6 +645,7 @@ ht-degree: 0%
          - [ACSD-59366: Löschen von Teams mit deaktivierten Benutzern, die nicht in der Teamliste angezeigt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59366-delete-teams-with-deactivated-users-not-visible-in-the-team-list.md)
          - [ACSD-60788: Benutzerdefinierte Skripte für [!DNL Google Tag Manager] werden aufgrund von CSP-Fehlern nicht ausgeführt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: Fehler beim Löschen des freigegebenen Katalogs mit derselben Gruppen-ID wie einem anderen freigegebenen Katalog](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
+         - [ACSD-60673: [!UICONTROL Cart Price Rule] Problem behoben für mehrere Zahlungsmethoden beim Checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
       - v1.1.53 {#v1-1-53}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
          - [ACSD-59930: Verbessert die Leistung der Unternehmensflüsse](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
