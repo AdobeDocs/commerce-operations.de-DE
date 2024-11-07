@@ -1,5 +1,5 @@
 ---
-source-git-commit: 3d908004d27ae2f6c7adb425f8d580fee45edaae
+source-git-commit: 00db83a517b124fa012f91d4a6407846dd4eef66
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 6%
@@ -77,10 +77,10 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Produkt-Recommendations</td>
-          <td>6,0,2</td>
-          <td>6,0,2</td>
-          <td>6,0,2</td>
-          <td>6,0,2</td>
+          <td>6,0,3</td>
+          <td>6,0,3</td>
+          <td>6,0,3</td>
+          <td>6,0,3</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Versionshinweise</a><br/>
