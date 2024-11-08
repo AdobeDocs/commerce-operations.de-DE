@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce auf dem neuesten Stand de
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Kunden mit Pro-Plänen können nur Self-Service für Dienstaktualisierungen in i
 
 >[!WARNING]
 >
->Service-Upgrades können nicht ohne 48-Stunden-Benachrichtigung an unser Infrastrukturteam in die Produktionsumgebung gesendet werden. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert.
+>Dienstaktualisierungen können nicht in eine Produktionsumgebung ohne 48-Stunden-Benachrichtigung an das Adobe-Infrastrukturteam gesendet werden. Dies ist erforderlich, damit Adobe sicherstellen kann, dass ein Infrastruktursupport-Techniker zur Verfügung steht, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten für Ihre Produktionsumgebung aktualisiert. Adobe empfiehlt, Ihre Site während des Service-Upgrades in den Wartungsmodus zu versetzen.
 
 Sie können die Liste der Dienstversionen und das Ende des Lebenszyklus in der folgenden Datei anzeigen: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
