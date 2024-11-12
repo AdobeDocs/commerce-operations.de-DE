@@ -2,9 +2,9 @@
 title: Anwendungsmodi
 description: Die Commerce-Anwendung kann je nach Bedarf in verschiedenen Modi verwendet werden. Zeigen Sie eine detaillierte Liste der verfügbaren Anwendungsmodi an.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 5003e8dcbb3736201ea19ebe30d5e56775096157
+source-git-commit: c415c3427f513255b9d4ebe1d24ba4024df21928
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,12 @@ Informationen zum manuellen Ändern der Adobe Commerce-Betriebsmodi finden Sie u
 
 ## Cloud-Unterstützung
 
-Aufgrund des schreibgeschützten Dateisystems können Sie die Modi in den Remote-Cloud-Umgebungen nicht ändern. Versuchen Sie nicht, die Modi durch Änderung der Datei `app/etc/env.php` zu ändern, da das Paket `ece-tools` die Datei basierend auf mehreren Konfigurationsquellen überschreibt.
+Aufgrund des schreibgeschützten Dateisystems gibt es eine strenge Einschränkung, die verhindert, dass die Modi in Remote-Cloud-Umgebungen geändert werden, und kann vom Adobe Commerce-Support nicht überschrieben werden. Versuchen Sie nicht, die Modi durch Änderung der Datei `app/etc/env.php` zu ändern, da das Paket `ece-tools` die Datei basierend auf mehreren Konfigurationsquellen überschreibt.
 
 Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während einer Bereitstellung automatisch im _Wartungsmodus_ aus, wodurch Ihre Site offline geschaltet wird, bis die Bereitstellung abgeschlossen ist. Andernfalls bleibt die Anwendung im Modus _Produktion_. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) im Handbuch _Commerce on Cloud Infrastructure_.
 
 Wenn Sie Cloud Docker für Commerce als Entwicklungstool verwenden, können Sie Ihr Cloud-Infrastrukturprojekt in einer Docker-Umgebung im _Entwickler_ -Modus bereitstellen, aber die Leistung ist aufgrund zusätzlicher Dateisynchronisierungsvorgänge langsamer. Siehe [Bereitstellen der Docker-Umgebung](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) im Handbuch _Cloud Docker für Commerce_.
+
 
 ## Standardmodus
 
@@ -54,6 +55,10 @@ Im Entwicklermodus:
 - Im Fehler-Handler wird eine Ausnahme ausgelöst, anstatt protokolliert zu werden
 - Eine Ausnahme wird ausgelöst, wenn ein Ereignisabonnent nicht aufgerufen werden kann
 - Zeigt benutzerdefinierte HTTP-Anforderungs- und Antwortheader vom Typ `X-Magento-*` an
+
+>[!NOTE]
+>
+>Dieser Modus wird in der Adobe Commerce Cloud-Umgebung nicht unterstützt und der Adobe Commerce-Support kann das Ändern des Anwendungsmodus nicht erleichtern.
 
 ## Produktionsmodus
 
