@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ Gewährleistung der Kompatibilität und Aktualität der Funktionen. Zuvor konnte
 
 ## Behobene Probleme
 
-In Magento Open Source 2.4.8 des Core-Codes wurden 254 Probleme behoben. Eine Untergruppe der in dieser Version enthaltenen behobenen Probleme wird nachfolgend beschrieben.
+In Magento Open Source 2.4.8 des Core-Codes wurden 253 Probleme behoben. Eine Untergruppe der in dieser Version enthaltenen behobenen Probleme wird nachfolgend beschrieben.
 
 ### APIs
 
@@ -1143,10 +1143,6 @@ zu bin/magento config:set twofactorauth/google/leeway VALUE
 * _AC-12128_: Sicherheitslücke vom Typ Prototype.js behebt CVE-2020-27511
    * _Hinweis reparieren_: Das System wurde aktualisiert, um die Sicherheitslücke CVE-2020-27511 in Prototype.js 1.7.3 zu beheben und die allgemeine Sicherheit des Systems zu verbessern. Vor dieser Aktualisierung war das System anfällig für einen regulären Ausdruck Denial of Service (ReDOS), der durch das Entfernen von HTML-Tags entsteht.
    * _GitHub-Codebeitrag_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_:
-   * _Fix note_: Prototype.js-Sicherheitslücke behebt CVE-2020-27511
-   * _GitHub-Problem_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _GitHub-Codebeitrag_: Das System wurde aktualisiert, um die Sicherheitslücke CVE-2020-27511 in Prototype.js 1.7.3 zu beheben und die allgemeine Sicherheit des Systems zu verbessern. Vor dieser Aktualisierung war das System anfällig für einen regulären Ausdruck Denial of Service (ReDOS), der durch das Entfernen von HTML-Tags entsteht.
 * _AC-12189_: Grunt Weniger verwendet pub/ prefix für Quellemaps
    * _Hinweis reparieren_: Das System generiert jetzt weniger/css-Quellemaps ohne das /pub-Präfix für Pfade bei Verwendung von grunt, sodass keine Problemumgehung in der Webserver-Konfiguration erforderlich ist. Zuvor war für die Verwendung des /pub-Präfixes in Quellemaps-Pfaden eine bestimmte Konfiguration auf dem Webserver erforderlich, um ordnungsgemäß zu funktionieren.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38837>

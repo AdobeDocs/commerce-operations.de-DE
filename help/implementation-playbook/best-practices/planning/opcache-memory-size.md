@@ -4,7 +4,7 @@ description: Beschreibt, wie Sie eine Leistungsbeeinträchtigung durch bestimmte
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6c0a9268cb3a3b2e76f4a389846e8407f0893b4f
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Weisen Sie mindestens **2GB** Speicher für das [OPcache-PHP-Modul](https://www.
 ## Weitere Informationen
 
 * [Best Practices für die Leistung - PHP-Einstellungen](../../../performance/software.md#php-settings)
-* [PHP-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/overview)
+* [PHP-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Best Practices für Datenbanken mit Adobe Commerce in Cloud-Infrastruktur](database-on-cloud.md)
 * [Häufigste Datenbankprobleme in Adobe Commerce bei der Cloud-Infrastruktur](../maintenance/resolve-database-performance-issues.md)
 * [Indexer &quot;Auf Zeitplan aktualisieren&quot;optimiert die Leistung von Adobe Commerce](../maintenance/indexer-configuration.md)
