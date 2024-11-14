@@ -1,18 +1,19 @@
 ---
-title: "ACSD-44938: VAT_ID kann in GraphQL-Anfrage für Gastbenutzer nicht angewendet werden"
-description: Der Patch ACSD-44938 behebt das Problem, dass die VAT_ID nicht in einer GraphQL-Anfrage für einen Gastbenutzer angewendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-44938. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+title: "ACSD-44938: VAT_ID kann nicht in der [!DNL GraphQL] Anfrage für Gastbenutzer angewendet werden"
+description: Der Patch ACSD-44938 behebt das Problem, dass die "VAT_ID"in einer  [!DNL GraphQL] Anfrage für einen Gastbenutzer nicht angewendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-44938. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
+source-git-commit: 3fdefc6201714c441d63574d293863e83205894b
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
-# ACSD-44938: VAT_ID kann nicht in GraphQL-Anfragen für Gastbenutzer angewendet werden
+# ACSD-44938: VAT_ID kann nicht in der [!DNL GraphQL] -Anfrage für Gastbenutzer angewendet werden
 
-Der Patch ACSD-44938 behebt das Problem, dass die VAT_ID nicht in einer GraphQL-Anfrage für einen Gastbenutzer angewendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-44938. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-44938 behebt das Problem, dass die `VAT_ID` nicht in einer [!DNL GraphQL] -Anfrage für einen Gastbenutzer angewendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-44938. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,20 +31,20 @@ Der Patch ACSD-44938 behebt das Problem, dass die VAT_ID nicht in einer GraphQL-
 
 ## Problem
 
-Die Variable &quot;VAT_ID&quot;kann nicht in einer GraphQL-Anfrage für einen Gastbenutzer angewendet werden.
+`VAT_ID` kann nicht in einer [!DNL GraphQL] -Anfrage für einen Gastbenutzer angewendet werden.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Führen Sie die im Tutorial [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) in unserer Entwicklerdokumentation erwähnten Schritte aus, um einen Gastkarton zu erstellen.
-1. Versuchen Sie, die VAT_ID für den Gastbenutzer anzuwenden, der GraphQL verwendet.
+1. Befolgen Sie die Schritte, die im Tutorial [[!DNL GraphQL] 1} in unserer Entwicklerdokumentation erwähnt werden, um einen Warenkorb für Gäste zu erstellen.](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/)
+1. Versuchen Sie, `VAT_ID` für den Gastbenutzer mit [!DNL GraphQL] anzuwenden.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Variable &quot;VAT_ID&quot;kann auf dieselbe Weise wie bei einem registrierten Kunden angewendet werden. Siehe Artikel [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) in unserer Entwicklerdokumentation.
+`VAT_ID` kann auf dieselbe Weise angewendet werden wie für einen registrierten Kunden. Siehe Artikel [`createCustomerAddress` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) in unserer Entwicklerdokumentation.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Variable &quot;VAT_ID&quot;kann nicht auf einen Gastbenutzer angewendet werden, der GraphQL verwendet.
+`VAT_ID` kann nicht auf einen Gastbenutzer angewendet werden, der [!DNL GraphQL] verwendet.
 
 ## Wenden Sie den Patch an
 
@@ -54,7 +55,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum [!DNL Quality Patches Tool] finden Sie unter:
 
 * [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
 * [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
