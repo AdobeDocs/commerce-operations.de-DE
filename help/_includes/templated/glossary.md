@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ _adjektive_
 
 Ein Einzelhandelsgeschäft mit festem physischen Standort, im Gegensatz zu Unternehmen, die praktisch oder ausschließlich über das Internet funktionieren.
 
-Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) und [Order Management](https://omsdocs.magento.com/getting-started/terminology/) ist dieser Store eine Quelle zur Verfolgung von Produktmengen, Versandaufträgen und unterstützender In-store-Abholung.
+Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) und [Order Management](#oms) ist dieser Store eine Quelle zur Verfolgung von Produktmengen, Versandaufträgen und unterstützender In-store-Abholung.
 
 _Begriffsattribute:_
 
@@ -981,7 +981,7 @@ In Marketing- und Einzelhandelsgeschäften wird ein Prozentsatz zu den Kosten ei
 [Konfigurieren Sie das Markup](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) oder Markdown eines Produkts über anpassbare Produktoptionen.
 
 In der Entwicklung, eine Computersprache, die die Verarbeitung, Darstellung und Formatierung von Text steuert.
-Markup-Tags sind außerdem Codefragmente, die einer CMS-Seite oder -Blöcken Funktionen oder Inhalte hinzufügen.
+Markup-Tags sind auch Codefragmente, die einer CMS-Seite oder einem -Block Funktionen oder Inhalte hinzufügen.
 
 _Begriffsattribute:_
 
@@ -1046,7 +1046,11 @@ _Begriffsattribute:_
 
 _noun_
 
-[S](https://omsdocs.magento.com) ist das OMOrder Management-Systemangebot.
+OMS ist Adobe Order Management System.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management (OMS) wird nicht mehr unterstützt.
 
 OMS ist eine flexible und erschwingliche Lösung für das Verwalten, Verkaufen und Erfüllen von Lagerbeständen aus allen Vertriebskanälen.
 OMS bietet ein nahtloses Kundenerlebnis, das den Umsatz steigert und gleichzeitig die Kosten senkt und die Markteinführungszeit verkürzt.
@@ -1058,7 +1062,7 @@ Zu den OMS-Funktionen gehören:
 * Einfacherer und reaktionsfähigerer Kundendienst
 * Besseres Kundenerlebnis und Kundenloyalität
 
-Weitere Informationen: [Erste Schritte mit OMS](https://omsdocs.magento.com/en/getting-started/), [OMS Docs site](https://omsdocs.magento.com/en/)
+Weitere Informationen: [Archivierte OMS Docs-Site](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _Begriffsattribute:_
 
@@ -1279,7 +1283,7 @@ _Begriffsattribute:_
 
 _noun_
 
-Eine modulare Inhaltseinheit, die von einem Benutzer in das CMS auf einer Seite platziert werden kann, um Text und Bilder anzuzeigen oder Codefragmente auszuführen.
+Eine modulare Inhaltseinheit, die von einem Benutzer in der CMS auf einer Seite platziert werden kann, um Text und Bilder anzuzeigen oder Codefragmente auszuführen.
 Statische Blöcke enthalten bearbeitbaren Inhalt und können als Landingpages für Produktkategorien verwendet werden.
 Widgets können statischen Bausteinen hinzugefügt werden, um zusätzliche Funktionen bereitzustellen.
 
