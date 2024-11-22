@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 63b3e7bcb22d791aff8f76886f74674f94596113
+source-git-commit: b6dada04a89664fe03c0f706ce9cd247e61679ac
 workflow-type: tm+mt
-source-wordcount: '6227'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -663,6 +663,7 @@ ht-degree: 0%
          - [ACSD-61845: Fehler tritt bei Anforderungen mit Text/html accept-Kopfzeile auf](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58471: Dynamischer Inhalt wird nicht auf der Produktdetailseite geladen, wenn Katalogpreisregeln geplant sind](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: doppelte Kreditkarten aus gleichzeitigen Erstattungsanträgen über [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
       - [Überprüfen Sie den Patch auf Adobe Commerce-Problem mit dem Tool für Qualitätsmuster .](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
