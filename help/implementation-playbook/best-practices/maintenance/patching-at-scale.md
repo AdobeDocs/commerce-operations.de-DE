@@ -5,16 +5,16 @@ role: Developer
 feature: Best Practices
 badge: label="Mitwirkende von Anton Evers, Sr. Technischer Architekt, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Beitragt von Anton Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1251'
 ht-degree: 0%
 
 ---
 
 # Best Practices für die skalierte Verteilung von Adobe Commerce-Patches
 
-Wenn Sie mehrere Adobe Commerce-Installationen verwalten, kann [Patchen](../../../upgrade/patches/apply.md) ein komplexer Prozess sein. _Zentralisiertes Patchen_ ist ein wesentlicher Bestandteil der [globalen Referenzarchitektur](../../architecture/global-reference/overview.md) und eine Best Practice für Unternehmen. Dies hilft Ihnen, die richtigen Patches auf alle Ihre Adobe Commerce-Installationen anzuwenden. In diesem Thema wird erläutert, wie Sie eine zentralisierte Patch-Verteilung für alle Typen von Adobe Commerce [Patches](../../../upgrade/patches/overview.md) erreichen.
+Wenn Sie mehrere Adobe Commerce-Installationen verwalten, kann [Patchen](../../../upgrade/patches/apply.md) ein komplexer Prozess sein. _Zentralisiertes Patchen_ ist eine Best Practice für Unternehmen. Dies hilft Ihnen, die richtigen Patches auf alle Ihre Adobe Commerce-Installationen anzuwenden. In diesem Thema wird erläutert, wie Sie eine zentralisierte Patch-Verteilung für alle Typen von Adobe Commerce [Patches](../../../upgrade/patches/overview.md) erreichen.
 
 >[!NOTE]
 >

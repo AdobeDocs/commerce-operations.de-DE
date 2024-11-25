@@ -2,7 +2,7 @@
 title: Schnellstart für die Installation vor Ort
 description: Führen Sie diese Schritte aus, um Adobe Commerce in Ihrer Infrastruktur zu installieren.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Schnellstart für die Installation vor Ort
 
-Die Anweisungen auf dieser Seite beschreiben, wie Adobe Commerce in der [selbstgehosteten](../implementation-playbook/infrastructure/self-hosting/overview.md) -Infrastruktur installiert wird. Eine Anleitung zum Aktualisieren einer vorhandenen Installation finden Sie im [_Upgrade-Handbuch_](../upgrade/overview.md).
+Die Anweisungen auf dieser Seite beschreiben, wie Adobe Commerce auf einer selbstgehosteten Infrastruktur installiert wird. Eine Anleitung zum Aktualisieren einer vorhandenen Installation finden Sie im [_Upgrade-Handbuch_](../upgrade/overview.md).
 
 Adobe verwendet [Composer](https://getcomposer.org/), um Adobe Commerce-Komponenten und ihre Abhängigkeiten zu verwalten. Die Verwendung von Composer zum Abrufen des Adobe Commerce-Metapakets bietet die folgenden Vorteile:
 

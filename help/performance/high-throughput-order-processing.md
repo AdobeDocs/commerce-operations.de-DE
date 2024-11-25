@@ -3,9 +3,9 @@ title: Best Practices für die Leistung
 description: Erfahren Sie, wie Sie die Leistung von Checkout-Erlebnissen auf Ihrer Adobe Commerce-Site optimieren können.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Der [Checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) -Prozess in Adobe Commerce ist ein wichtiger Aspekt des Storefront-Erlebnisses. Sie beruht auf den integrierten Funktionen [Warenkorb](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) und [Checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page).
 
-Die Leistung ist entscheidend für die Aufrechterhaltung eines guten Benutzererlebnisses. Lesen Sie die [Leistungsbenchmarkzusammenfassung](../implementation-playbook/infrastructure/performance/benchmarks.md) , um mehr über Leistungserwartungen zu erfahren. Sie können die Leistung des Checkout optimieren, indem Sie die folgenden Optionen für die Verarbeitung von **Auftrag mit hohem Durchsatz** konfigurieren:
+Die Leistung ist entscheidend für die Aufrechterhaltung eines guten Benutzererlebnisses. Sie können die Leistung des Checkout optimieren, indem Sie die folgenden Optionen für die Verarbeitung von **Auftrag mit hohem Durchsatz** konfigurieren:
 
 - [AsyncOrder](#asynchronous-order-placement) - Verarbeitet asynchron Bestellungen mithilfe einer Warteschlange.
 - [Aufgeschobene Gesamtberechnung](#deferred-total-calculation): Verzögern Sie die Berechnungen für die Bestellsummen, bis der Checkout beginnt.

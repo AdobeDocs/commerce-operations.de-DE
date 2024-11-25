@@ -3,9 +3,9 @@ title: Sichern der Commerce-Site und -Infrastruktur
 description: Erhalten Sie die Sicherheit, indem Sie Best Practices für die Sicherheit beim Einrichten, Konfigurieren und Aktualisieren von Adobe Commerce-Installationen implementieren.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: a00b7b66beb6499f7fb19fda2dfd450799f73728
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -114,10 +114,6 @@ Im Rahmen eines Notfallwiederherstellungsplans empfiehlt Adobe dringend, dass Ku
 - [Speicherkonfigurationsverwaltung für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
 **Adobe Commerce vor Ort bereitgestellt**
-
-- [Ideen zur Notfallwiederherstellung](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
-
-- [Sicherung und Wiederherstellung](../../infrastructure/self-hosting/disaster-recovery-ideas.md)
 
 - [Konfigurationseinstellungen exportieren](../../../configuration/cli/export-configuration.md)
 

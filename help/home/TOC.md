@@ -2,10 +2,10 @@
 user-guide-title: Betriebshandbücher
 user-guide-description: Erfahren Sie mehr über die betrieblichen Aspekte der Wartung Ihrer Adobe Commerce-Anwendung.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
-source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
+source-git-commit: 97441bfe99604e982385f94df1215fb24675114f
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 27%
+source-wordcount: '41'
+ht-degree: 31%
 
 ---
 
@@ -14,11 +14,9 @@ ht-degree: 27%
 
 - [Betriebshandbücher - Startseite](home.md)
 - [Versionsinformationen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
-- [Leistung](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
-- [Sicherheit und Compliance](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [Implementierungs-Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
-- [Operationelles Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/overview)
-- [Commerce im Maßstab](https://experienceleague.adobe.com/en/docs/commerce-operations/deliver-commerce-at-scale/overview)
+- [Sicherheit und Compliance](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
+- [Leistung](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
 - [Installation (vor Ort)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [Upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)

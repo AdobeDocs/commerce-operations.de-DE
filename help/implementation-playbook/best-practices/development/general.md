@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die allgemeinen Best Practices für die Ent
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,6 @@ Die Schlüsselwörter &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quo
 1. Alle Entwickler SOLLTEN den gleichen Technologiestapel entwickeln und testen wie auf den (zukünftigen) Produktionsservern. Die Versionen der Software in diesem Technologie-Stack MÜSSEN mit der Haupt- und Nebenversion der Software übereinstimmen, die auf den Produktionsservern installiert ist. Weitere Informationen zum typischen Technologiestapel für Adobe Commerce finden Sie unter [Systemanforderungen](../../../installation/system-requirements.md) .
 1. Der Systemadministrator oder Technische Architekt kann dem Team eine zentral gepflegte lokale Entwicklungsumgebung zur Verfügung stellen, um gleiche und aktuelle lokale Umgebungen zu gewährleisten und zu fördern.
 1. Entwickler und QA-Techniker MÜSSEN Zugriff auf die Befehlszeile, die Datenbank und die Protokolldateien der QA-Umgebung haben. Dies kann eine VPN-Verbindung erfordern.
-
-## Kodierungsstandards
-
-1. Sämtlicher Code SOLLTE den Konventionen in Architektur, Methodik und Kodierungsstandards entsprechen. Kreativität ist in der Funktion gewünscht, nicht in der Form.
-1. Der gesamte Code SOLLTE dem [Adobe Commerce Architecture Guide](https://developer.adobe.com/commerce/php/architecture/){target="_blank} entsprechen.
-1. Der gesamte Code sollte den [Adobe Commerce-Kodierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/) entsprechen.
-1. Der gesamte Code sollte den [technischen Adobe Commerce-Richtlinien](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/) entsprechen.
-1. Der gesamte Code SOLLTE gegebenenfalls die [Best Practices für Adobe Commerce](../phases.md) implementieren.
-1. Der gesamte Code sollte den Standards der [PHP-Framework Interoperability Group (FIG) Standard](https://www.php-fig.org/) entsprechen.
-1. Es wird empfohlen, nach Möglichkeit [Technische Visionen von Adobe Commerce](https://developer.adobe.com/commerce/php/architecture/technical-vision/) zu berücksichtigen.
-1. Alle Integrationen mit externen Systemen SOLLTEN über Integrationstests verfügen, die den Geschäftsprozess validieren.
-1. Alle Module SOLLTEN eine Testabdeckung haben. Was genau getestet werden soll, sollte vom Entwicklungsteam in Zusammenarbeit mit dem technischen Architekten oder Lead-Entwickler bestimmt werden. Diese Bestimmung sollte auf qualitativen und nicht quantitativen Maßnahmen beruhen; ein hoher Coderechtesatz ist weder ein Erfolgsindikator noch bedeutet er eine hohe Codequalität. Ermitteln Sie stattdessen das Risiko, einen Teil des Codes nicht zu decken, indem Sie die Wahrscheinlichkeit und die Schwere der Regressionen in diesem Teil des Programms bewerten.
 
 ## Versionierung
 

@@ -2,10 +2,10 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
+source-git-commit: 3f6bf86091885ffa0c557b0c43ce3ff024076a45
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 12%
+source-wordcount: '160'
+ht-degree: 15%
 
 ---
 
@@ -13,56 +13,8 @@ ht-degree: 12%
 # Implementierungs-Playbook {#implementation-playbook}
 
 - [Übersicht](overview.md)
-- Commerce {#intro}
-   - [Über Adobe Commerce](intro/about-commerce.md)
-   - [Grundsätze der Plattformentwicklung](intro/platform-development.md)
-- Projektumfang {#project-scope}
-   - [Wissen ist Macht](project-scope/knowledge.md)
-   - [Wichtige Interessengruppen](project-scope/key-stakeholders.md)
-   - [Prozess und Timeline](project-scope/process-timeline.md)
-   - [Lieferziele](project-scope/deliverables.md)
-   - [Checklisten für Anforderungen](project-scope/requirement-checklists.md)
-- Entwicklung {#development}
-   - [Plattformtools](development/platform-tools.md)
-   - [Projektmanagement-Tools](development/project-management-tools.md)
-   - [Projektimplementierungsmethode](development/delivery.md)
-   - [Qualitätskontrolle](development/quality-control.md)
-- Planung und Verwaltung {#planning}
-   - [Bereitstellungs- und Planungsansatz](planning/delivery.md)
-   - [Verantwortung und Eigenverantwortung](planning/ownership.md)
-   - [Projektverwaltung](planning/governance.md)
 - Architektur und Integrationen {#architecture}
    - [Unternehmensreferenz](architecture/enterprise-blueprint.md)
-   - Globale Referenzarchitektur {#global-reference-architecture}
-      - [Übersicht](architecture/global-reference/overview.md)
-      - [Beispiele](architecture/global-reference/examples.md)
-      - Komponentenentwicklung {#composer}
-         - [Übersicht](architecture/global-reference/composer/overview.md)
-         - [Projektstruktur](architecture/global-reference/composer/project-structure.md)
-         - [Tipps und Tricks](architecture/global-reference/composer/tips-and-tricks.md)
-- Infrastruktur und Bereitstellung {#infrastructure}
-   - [Übersicht](infrastructure/overview.md)
-   - Self-Hosting {#self-hosting}
-      - [Übersicht](infrastructure/self-hosting/overview.md)
-      - [Infrastruktur vor Ort](infrastructure/self-hosting/on-premises.md)
-      - [Sicherheitskonzepte](infrastructure/self-hosting/security-concepts.md)
-      - [Überwachung von Telemetriken und Tools](infrastructure/self-hosting/monitoring-tools.md)
-      - [Ideen zur Notfallwiederherstellung](infrastructure/self-hosting/disaster-recovery-ideas.md)
-      - [Leistungstipps](infrastructure/self-hosting/performance-tips.md)
-   - Cloud-Infrastruktur {#cloud}
-      - [Übersicht](infrastructure/cloud/overview.md)
-      - [Regionen](infrastructure/cloud/regions.md)
-      - [Technologien](infrastructure/cloud/technology.md)
-      - [Sicherheit und Einhaltung](infrastructure/cloud/security.md)
-   - Leistungsoptimierung {#performance}
-      - [Typische Probleme](infrastructure/performance/optimization.md)
-      - [Benchmarks](infrastructure/performance/benchmarks.md)
-      - [Recommendations](infrastructure/performance/recommendations.md)
-- Launch-Bereitschaft {#launch}
-   - [Übersicht](launch/overview.md)
-   - [Schritte vor dem Start](launch/pre-launch-steps.md)
-   - [Launch-Schritte](launch/launch-steps.md)
-   - [Post-Startschritte](launch/post-launch-steps.md)
 - Wartung und Support {#maintenance}
    - [Übersicht](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
@@ -103,6 +55,7 @@ ht-degree: 12%
       - [Sichern Ihrer Site und Infrastruktur](best-practices/launch/security-best-practices.md)
    - Wartung {#maintenance}
       - [Übersicht](best-practices/maintenance/overview.md)
+      - [Post-Launch-Support](best-practices/maintenance/post-launch.md)
       - [Leistung des Frontend überprüfen](best-practices/maintenance/frontend-performance.md)
       - [Optimieren der Backend-Leistung](best-practices/maintenance/backend-performance.md)
       - [Indexkonfiguration](best-practices/maintenance/indexer-configuration.md)
@@ -114,4 +67,5 @@ ht-degree: 12%
       - [Aktualisierungsdienste](best-practices/maintenance/update-services.md)
       - [Checkliste für die Aktualisierung](best-practices/maintenance/upgrade-checklist.md)
       - [Upgrade-Voraussetzungen für MariaDB](best-practices/maintenance/mariadb-upgrade.md)
+- [Glossar](glossary.md)
 - [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

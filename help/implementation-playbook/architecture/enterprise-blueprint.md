@@ -3,9 +3,9 @@ title: Referenzarchitektur für Unternehmen
 description: Erfahren Sie, wie Sie Adobe Commerce mithilfe der neuesten, zusammenstellbaren Commerce-Technologie von Adobe implementieren.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ Adobe Commerce ist mit allen Experience Cloud-Lösungen integriert, um [personal
 
 >[!NOTE]
 >
->Weitere technische Details finden Sie unter [Entwürfe für digitale Erlebnisse](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) .
+>Weitere Informationen finden Sie in den folgenden Ressourcen:
+>
+>- [Entwürfe für digitale Erlebnisse](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) für weitere technische Details.
+>- Siehe [Personalisieren des Kundenerlebnisses](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integration mit Drittanbietersystemen
@@ -63,6 +66,11 @@ Adobe bietet die folgenden Entwicklertools zum Erstellen von Integrationen und A
 - [**Ereignisse**](https://developer.adobe.com/commerce/extensibility/events/): Verwenden Sie benutzerspezifische Ereignis-Trigger, um mit anderen erweiterbaren Entwicklungstools zu interagieren.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/) - Verwenden Sie Webhooks, um die Interaktionen zwischen Commerce und Drittanbietersystemen automatisch Trigger.
 - [**Admin UI SDK**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/): Passen Sie den Commerce-Administrator an und erweitern Sie ihn mit neuen Seiten und Funktionen für Ihre Händler.
+- [**Integrationsstarter-Kit**](https://developer.adobe.com/commerce/extensibility/starter-kit/): Beschleunigen Sie Ihre Backoffice-Integrationen mit Referenzintegrationen, Onboarding-Skripten und einer standardisierten Architektur.
+
+>[!NOTE]
+>
+>Siehe [Der moderne Ansatz: Effektive Erweiterbarkeit in Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Storefront-Dienste
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Leistungsprobleme vermeiden, die durch Adobe 
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 1fdbded7738365593ef7da64f4dbe6713984bff3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 
 Adobe Commerce-Erweiterungen von Drittanbietern (Module) können verschiedene Probleme verursachen, die sich negativ auf die Storefront-Leistung auswirken können. Sie können diese Probleme vermeiden, indem Sie die folgenden Best Practices befolgen:
 
+- Entwickeln Sie Ihre Commerce-Integrationen und -Anpassungen nach Möglichkeit mit der Out-of-Process-Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) von [, um die Wartung und Upgradefähigkeit zu vereinfachen.
 - Laden Sie Erweiterungen von Drittanbietern von einer vertrauenswürdigen Quelle herunter und kaufen Sie sie, z. B. [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Aktualisieren Sie alle Drittanbietererweiterungen auf die neueste Version.
 - Wenn Sie die Erweiterungen von Drittanbietern nicht aktualisieren können, sollten Sie verschiedene Erweiterungen in Erwägung ziehen.

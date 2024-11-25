@@ -5,9 +5,9 @@ badge: label="Von objectsource unterstützt" type="Informative" url="https://obj
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,6 @@ Sie können beispielsweise Transaktionen mit einem Schwerpunkt auf Produktdetail
 Erfahren Sie mehr über die Verwaltung der Site-Leistung:
 
 - [Leistungsüberwachung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) (Cloud-Infrastruktur)
-- [Leistungsoptimierungsprüfung](/help/implementation-playbook/infrastructure/performance/recommendations.md)
 - [Best Practices bei der Konfiguration](/help/performance/configuration.md)
 - [Beobachtung für Adobe Commerce](/help/tools/observation-for-adobe-commerce/intro.md)
 
