@@ -2,9 +2,9 @@
 title: Verbraucher in der Nachrichtenwarteschlange
 description: Erfahren Sie mehr über die Kunden von Adobe Commerce-Nachrichtenwarteschlangen, einschließlich der ihnen zugeordneten Funktionen und Systemkonfigurationseinstellungen.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ In der folgenden Tabelle werden alle Verbraucher in der Nachrichtenwarteschlange
 | `saveConfigProcessor` | + |                         | + |
 | Speichert asynchron Änderungen an der Speicherkonfiguration, indem Speicheraufträge in eine Nachrichtenwarteschlange gestellt werden, was die Leistung bei Bereitstellungen mit einer großen Anzahl von Konfigurationen auf Store-Ebene verbessern kann. Erforderlich für die Verwendung des [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save)-Moduls. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
-| Verhindert das [Problem](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html), bei dem Einzelbenutzercoupons mehrmals verwendet werden können. |                |                         |                     |
+| Verhindert ein Problem, bei dem Einzelbenutzercoupons mehrmals verwendet werden können. |                |                         |                     |
 | `sharedCatalogUpdateCategoryPermissions` |                | + |                     |
 | Aktualisiert Kategorien, die einer freigegebenen Katalogkategorie zugewiesen sind. Erforderlich, wenn die Option [**[!UICONTROL Shared Catalogs]**](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
 | `sharedCatalogUpdatePrice` |                | + |                     |

@@ -3,7 +3,7 @@ title: Konfigurieren von Redis
 description: Verschaffen Sie sich einen Überblick über die Redis-Funktionen und starten Sie Ihre Redis-Konfiguration.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Für Sitzungen empfiehlt Adobe, dass Sie die Persistenz aktivieren, um Redis-Dat
 
 Sie können auch die Optionen RDB und AOF gleichzeitig aktivieren. Weitere Informationen, einschließlich der Vor- und Nachteile der Persistenzoptionen, finden Sie in der [Dokumentation zur Redis-Persistenz](https://redis.io/topics/persistence) .
 
-Richten Sie die Instanz für die Cacheinstanz so ein, dass sie groß genug ist, um Ihren gesamten Commerce-Cache zu speichern. Die Größenanforderungen hängen von verschiedenen Faktoren ab, wie der Anzahl der Produkte und der Store-Ansichten. Als Ausgangspunkt können Sie die Größe des Cache-Ordners in Ihrem Dateisystem verwenden. Wenn der Ordner &quot;`var/cache`&quot; in Ihrem Dateisystem beispielsweise 5 GB beträgt, richten Sie Ihre Redis-Instanz mit mindestens 5 GB ein, um zu starten. Für die Cache-Instanz ist keine Persistenz erforderlich, da der Commerce-Cache wiederhergestellt werden kann. Siehe [Cache-Handbuch überarbeiten](https://redis.io/docs/manual/eviction/).
+Richten Sie die Instanz für die Cacheinstanz so ein, dass sie groß genug ist, um Ihren gesamten Commerce-Cache zu speichern. Die Größenanforderungen hängen von verschiedenen Faktoren ab, wie der Anzahl der Produkte und der Store-Ansichten. Als Ausgangspunkt können Sie die Größe des Cache-Ordners in Ihrem Dateisystem verwenden. Wenn der Ordner &quot;`var/cache`&quot; in Ihrem Dateisystem beispielsweise 5 GB beträgt, richten Sie Ihre Redis-Instanz mit mindestens 5 GB ein, um zu starten. Für die Cache-Instanz ist keine Persistenz erforderlich, da der Commerce-Cache wiederhergestellt werden kann. Siehe [Cache-Handbuch überarbeiten](https://redis.io/docs/latest/develop/use/).
 
 Zur Leistungsoptimierung können Sie die folgenden Einstellungen für das asynchrone Löschen aktivieren. Diese Einstellungen ändern das Verhalten von Redis nicht.
 
