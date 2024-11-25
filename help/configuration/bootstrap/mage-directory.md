@@ -2,7 +2,7 @@
 title: Basisordnerpfade anpassen
 description: Verwenden Sie die Variable MAGE_DIRS , um ein Array absoluter Pfade festzulegen.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
+source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Sie können `MAGE_DIRS` auf eine der folgenden Arten festlegen:
   ```php
   <?php
   /**
-   * Copyright Adobe
+   * Copyright [first year code created] Adobe
    * All Rights Reserved.
    */
   
