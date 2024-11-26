@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58471: Dynamischer Inhalt wird nicht auf der Produktdetailseite geladen, wenn die zugehörigen Katalogpreisregeln geplant wurden."
+title: "ACSD-58471: Dynamischer Inhalt wird nicht auf der Produktdetailseite geladen, wenn die zugehörigen Katalogpreisregeln geplant wurden"
 description: Wenden Sie den Patch ACSD-58471 an, um das Adobe Commerce-Problem zu beheben, bei dem dynamische Inhalte nicht auf der Produktdetailseite geladen werden können, wenn die zugehörigen Katalogpreisregeln geplant wurden.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: a3afb779006de95ac70dff39a737360112220af8
+exl-id: 6ff68b74-67fc-400c-aa79-a1274fd19708
+source-git-commit: 28390659fe180180c9b2c8d16239008a1f8a510b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58471: Dynamischer Inhalt wird nicht auf der Produktdetailseite geladen, wenn die zugehörigen Katalogpreisregeln geplant wurden
 
@@ -28,6 +28,8 @@ Der Patch ACSD-58471 behebt das Problem, dass dynamische Inhalte nicht auf der P
 >Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
+
+Dynamische Inhalte werden nicht auf der Produktdetailseite geladen, wenn Katalogpreisregeln geplant sind.
 
 <u>Zu reproduzierende Schritte</u>:
 
