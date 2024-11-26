@@ -5,7 +5,7 @@ badge: label="Von objectsource unterstützt" type="Informative" url="https://obj
 role: Admin, User, Developer
 feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Die Behebung von Leistungsproblemen bei MySQL durch die Implementierung von Date
 
 Bei Websites mit hohem Traffic-Aufkommen gibt es häufig Datenbankengpässe, die in erster Linie auf die Abhängigkeit von einem einzelnen MySQL-Server zurückzuführen sind. Sie können diese Engpässe beheben, indem Sie Datenbankclustering implementieren, eine verteilte Architektur, die die Leistung verbessert und eine hohe Verfügbarkeit gewährleistet.
 
-Durch das Datenbank-Clustering werden die Auswirkungen datenbankbezogener Probleme während der Traffic-Spitzenzeiten minimiert, da mehrere Webknoten eine Verbindung zu mehreren MySQL-Servern herstellen können. Verwenden Sie Tools wie den Galera-Cluster zum Einrichten von Datenbank-Clustern für Commerce-Sites. Der Galera-Cluster ist in [Adobe Commerce-Projekten enthalten, die in der Cloud-Infrastruktur bereitgestellt werden](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/infrastructure/cloud/technology.html).
+Durch das Datenbank-Clustering werden die Auswirkungen datenbankbezogener Probleme während der Traffic-Spitzenzeiten minimiert, da mehrere Webknoten eine Verbindung zu mehreren MySQL-Servern herstellen können. Verwenden Sie Tools wie den Galera-Cluster zum Einrichten von Datenbank-Clustern für Commerce-Sites. Der Galera-Cluster ist in [Adobe Commerce-Projekten enthalten, die in der Cloud-Infrastruktur bereitgestellt werden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
 
 #### Optimierung von MySQL-Abfragen
 
