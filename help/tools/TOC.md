@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 68bf1848d4e4724aacf408feab6a3b301e7b0ee3
+source-git-commit: 69ae7045ed1ffc5ecf3c5e92f56ea82c0cf8adf6
 workflow-type: tm+mt
-source-wordcount: '6268'
+source-wordcount: '6276'
 ht-degree: 0%
 
 ---
@@ -655,6 +655,7 @@ ht-degree: 0%
          - [ACSD-61528: Rollen mit GraphQL abrufen liefert keine Ergebnisse](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: Fehler bei der Verschachtelung der Umgebungsemulation in &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
          - [ACSD-60804: Das Bearbeiten eines Kunden, der einem gelöschten Unternehmen zugeordnet ist, führt zu einem Fehler](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
+         - [ACSD-61667: Verbessert die Lagerbestandsleistung für die Erstellung von Versandaktionen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
          - [ACSD-61199: Die Registerkarte &quot;[!UICONTROL Hierarchy]&quot;der CMS-Seite zeigt keine ordnungsgemäße Baumstruktur an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
