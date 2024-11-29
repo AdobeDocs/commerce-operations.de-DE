@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: ff7823cb402c40bb4429fb5acab0cf85c3035be7
+source-git-commit: 0f593cd529ee1b5d259c091758e141629e785ab8
 workflow-type: tm+mt
-source-wordcount: '6352'
+source-wordcount: '6365'
 ht-degree: 0%
 
 ---
@@ -658,7 +658,8 @@ ht-degree: 0%
          - [ACSD-61133: sales_clean_quotes cron löscht Anführungszeichen aus nicht genehmigten Bestellungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders.md)
          - [ACSD-61667: Verbessert die Lagerbestandsleistung für die Erstellung von Versandaktionen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping.md)
       - v1.1.54 {#v1-1-54}
-         - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+           [ACSD-60267: FPT wird falsch angewendet, wenn Produkte über konfigurierbare Produktoptionen hinzugefügt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options.md)
          - [ACSD-61199: Die Registerkarte &quot;[!UICONTROL Hierarchy]&quot;der CMS-Seite zeigt keine ordnungsgemäße Baumstruktur an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: Korrekturen des Rabattsteuerausgleichs bei der Berechnung der Verkaufssumme](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: E-Mail-Adressen in den Feldern &quot;Vorname&quot;und &quot;Nachname&quot;senden ungültige Bestellbestätigungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
