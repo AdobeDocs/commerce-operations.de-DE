@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40545: Es wird nur der erste Knoten für eine Seite abgerufen."
+title: 'MDVA-40545: Nur der erste Knoten für eine Seite wird abgerufen'
 description: Der MDVA-40545-Patch behebt das Problem, dass nur der erste Knoten für eine Seite abgerufen wird, selbst wenn mehrere Knoten für dieselbe Seite vorhanden sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-40545. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: CMS, Cache
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f87344e9-5a63-4c38-af2b-1500ef053dec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

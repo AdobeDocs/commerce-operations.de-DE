@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45143: setShippingAddressesOnCart mutation not setting numeric region code as 'region'"
+title: 'ACSD-45143: setShippingAddressesOnCart mutation not setting numeric region code as ''region'''
 description: Der Patch ACSD-45143 behebt das Problem, dass die Mutation setShippingAddressesOnCart das Festlegen des numerischen Regionscodes als "region"nicht zulässt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 installiert ist. Die Patch-ID ist ACSD-45143. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 feature: Orders, Shipping/Delivery, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: c7d9d1f2-4731-406f-93bd-036f0fe75b1d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

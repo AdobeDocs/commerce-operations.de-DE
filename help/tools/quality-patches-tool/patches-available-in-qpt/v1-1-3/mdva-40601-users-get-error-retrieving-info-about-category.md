@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40601: Daten zur Kategorie, die durch geplante Aktualisierung über GraphQL geändert wurde, können nicht abgerufen werden."
+title: 'MDVA-40601: Es können keine Daten zu einer Kategorie abgerufen werden, die durch eine geplante Aktualisierung über GraphQL geändert wurde.'
 description: Der MDVA-40601 Adobe Commerce-Qualitäts-Patch behebt das Problem, dass Benutzer einen Fehler erhalten, wenn sie Informationen über Kategorien erhalten, die durch geplante Aktualisierungen über GraphQL geändert wurden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40601. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: Categories, GraphQL
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: c50e9f77-66eb-4c4c-b0b5-b77db84a4a0b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

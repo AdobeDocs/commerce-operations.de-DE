@@ -1,9 +1,10 @@
 ---
-title: "ACSD-58054: API-Token-Generierung für inaktive Kunden"
+title: 'ACSD-58054: API-Token-Generierung für inaktive Kunden'
 description: Wenden Sie den Patch ACSD-58054 an, um das Adobe Commerce-Problem zu beheben, bei dem es möglich ist, Kunden-Token für inaktive Kunden über API zu generieren.
 feature: Customers, API Mesh
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 143cfc3e-0220-4950-8528-acf3bce686db
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

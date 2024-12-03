@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54060: Eingeschränkte Administratoren können ein Produkt nicht speichern, wenn es einem anderen Produkt untergeordnet ist."
+title: 'ACSD-54060: Eingeschränkte Administratoren können ein Produkt nicht speichern, wenn es einem anderen Produkt untergeordnet ist'
 description: Wenden Sie den Patch ACSD-54060 an, um das Adobe Commerce-Problem zu beheben, bei dem ein eingeschränkter Administrator ein Produkt nicht speichern kann, wenn es ein untergeordnetes Element eines anderen Produkts ist, das einem anderen Bereich zugewiesen ist.
 feature: Admin Workspace, Roles/Permissions, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2af24cbf-65a1-4bd6-aad3-19b613bee7f2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

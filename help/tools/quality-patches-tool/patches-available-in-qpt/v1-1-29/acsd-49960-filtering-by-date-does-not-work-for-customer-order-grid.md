@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49960: Das Filtern nach Datum funktioniert nicht für das Kundenbestellungsraster."
+title: 'ACSD-49960: Das Filtern nach Datum funktioniert nicht für das Kundenbestellungsraster'
 description: Wenden Sie den Patch ACSD-49960 an, um das Adobe Commerce-Problem zu beheben, bei dem die Filterung nach Datum für das Kundenbestellungsraster nicht funktioniert.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 0ca607b4-5500-4d70-be5e-a3a2b62c6864
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%

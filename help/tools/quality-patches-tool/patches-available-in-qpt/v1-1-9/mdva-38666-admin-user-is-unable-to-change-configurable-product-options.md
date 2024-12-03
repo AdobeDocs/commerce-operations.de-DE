@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38666: Admin-Benutzer kann konfigurierbare Produktoptionen nicht ändern"
+title: 'MDVA-38666: Admin-Benutzer kann konfigurierbare Produktoptionen nicht ändern'
 description: Der Patch MDVA-38666 behebt das Problem, dass der Admin-Benutzer nicht in der Lage ist, konfigurierbare Produktoptionen im Warenkorb des Kunden zu ändern. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-38666. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: Admin Workspace, Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8e72f6a4-b36f-4fe4-bc01-2254984dd512
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57643: Produkte mit benutzerdefinierten Optionen werden fälschlicherweise über GraphQL zum Warenkorb hinzugefügt."
+title: 'ACSD-57643: Produkte mit benutzerdefinierten Optionen werden fälschlicherweise über GraphQL zum Warenkorb hinzugefügt'
 description: Wenden Sie den Patch ACSD-57643 an, um das Adobe Commerce-Problem zu beheben, bei dem Produkte mit benutzerdefinierten Optionen fälschlicherweise über GraphQL zum Warenkorb hinzugefügt werden.
 feature: Shopping Cart, GraphQL, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 568f820b-ecab-4839-b32e-b0b42c1d2342
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

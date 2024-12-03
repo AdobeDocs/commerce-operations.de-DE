@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51102: Katalogregel, die auf eine große Anzahl von nicht korrekt indizierten Produkten angewendet wird"
+title: 'ACSD-51102: Katalogregel angewendet auf eine große Anzahl von Produkten nicht korrekt indiziert'
 description: Wenden Sie den Patch ACSD-51102 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Katalogregel, die auf eine große Anzahl von Produkten angewendet wird, nicht richtig indiziert wird, wenn die Regel durch eine geplante Aktualisierung aktiviert wird.
 feature: Catalog Management, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 35a8078d-667b-4101-8562-ece052b44c9c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%

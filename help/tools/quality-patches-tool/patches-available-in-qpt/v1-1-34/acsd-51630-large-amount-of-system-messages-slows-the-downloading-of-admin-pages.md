@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51630: Zahlreiche Systemnachrichten verlangsamen den Download von Admin-Seiten.'
+title: 'ACSD-51630: Zahlreiche Systemnachrichten verlangsamen den Download von Admin-Seiten'
 description: Wenden Sie den Patch ACSD-51630 an, um das Adobe Commerce-Leistungsproblem zu beheben, das das Herunterladen von Admin-Seiten durch eine große Anzahl von Systemnachrichten verlangsamt.
 feature: Admin Workspace, System
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8f39afea-551a-4306-994a-cb8ce5bd5b4a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

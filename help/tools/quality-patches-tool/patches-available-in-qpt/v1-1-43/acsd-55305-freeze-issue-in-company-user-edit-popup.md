@@ -1,9 +1,10 @@
 ---
-title: '''ACSD-55305: Popup-Einfrieren während der Bearbeitung durch Unternehmensbenutzer in [!UICONTROL My Account]'
+title: 'ACSD-55305: Popup beim Bearbeiten des Unternehmens-Benutzers in [!UICONTROL My Account] frieren'
 description: Wenden Sie den Patch ACSD-55305 an, um das Adobe Commerce-Problem zu beheben, bei dem das Popup-Fenster [!UICONTROL Edit Company User] auf der Seite [!UICONTROL My Account] &gt; [!UICONTROL Company Structure] mit einem Lader auf dem Bildschirm friert.
 feature: Companies, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eeb2b136-022f-42d5-85e2-85537f4677d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

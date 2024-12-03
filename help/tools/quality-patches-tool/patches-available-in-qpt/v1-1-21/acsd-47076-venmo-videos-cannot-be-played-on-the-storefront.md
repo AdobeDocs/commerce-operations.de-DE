@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47076: [!DNL Vimeo] Videos können nicht auf der Storefront wiedergegeben werden"
+title: 'ACSD-47076: [!DNL Vimeo] Videos können nicht auf der Storefront wiedergegeben werden'
 description: Wenden Sie den Patch ACSD-47076 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL Vimeo] Videos nicht auf der Storefront wiedergegeben werden können.
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 156b961b-e507-44fe-9b26-d73136e336a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

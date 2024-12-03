@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51120: GraphQL GET-Anforderungscache für CMS-Seiten mit CMS-Bausteinen nicht gelöscht"
+title: 'ACSD-51120: GraphQL GET-Anforderungscache für CMS-Seiten mit CMS-Bausteinen nicht gelöscht'
 description: Wenden Sie den Patch ACSD-51120 an, um das Adobe Commerce-Problem zu beheben, bei dem der GraphQL-Anforderungscache für CMS-Seiten mit CMS-Bausteinen nicht gelöscht wird.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e1b84db0-2441-4729-aeeb-8486a623aebf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

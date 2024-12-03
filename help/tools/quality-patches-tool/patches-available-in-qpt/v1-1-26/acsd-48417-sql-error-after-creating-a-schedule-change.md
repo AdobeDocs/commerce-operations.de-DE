@@ -3,7 +3,8 @@ title: 'ACSD-48417: SQL-Fehler nach der Erstellung einer Zeitplanänderung'
 description: Wenden Sie den Patch ACSD-48417 an, um das Adobe Commerce-Problem zu beheben, bei dem nach dem Erstellen einer Produktplanänderung und dem Speichern eines anderen Produkts ein SQL-Fehler angezeigt wird.
 feature: Storage
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c8e7c7aa-ac53-4218-8c3c-ea2240af17c9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

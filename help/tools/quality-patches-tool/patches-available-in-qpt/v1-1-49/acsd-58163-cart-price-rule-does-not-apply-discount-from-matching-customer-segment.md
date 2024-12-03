@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58163: [!UICONTROL Cart Price Rule] wendet keinen Rabatt vom übereinstimmenden [!UICONTROL Customer Segment] Warenkorb ohne Couponcode an"
+title: 'ACSD-58163: [!UICONTROL Cart Price Rule] wendet keinen Rabatt vom übereinstimmenden [!UICONTROL Customer Segment] Warenkorb ohne Couponcode an'
 description: Wenden Sie den Patch ACSD-58163 an, um das Adobe Commerce-Problem zu beheben, bei dem der [!UICONTROL Cart Price Rule] keinen Rabatt für einen Gast vom entsprechenden [!UICONTROL Customer Segment] Warenkorb ohne Couponcode anwendet.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 209a50f7-32d9-40e9-bfd5-4658e4ca392d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58163: [!UICONTROL Cart Price Rule] wendet keinen Rabatt vom übereinstimmenden [!UICONTROL Customer Segment] Warenkorb ohne Couponcode an
 

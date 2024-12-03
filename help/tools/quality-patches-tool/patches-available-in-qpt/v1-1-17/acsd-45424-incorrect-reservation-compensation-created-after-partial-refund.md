@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45424: Falsche Reservierungsentschädigung nach teilweiser Erstattung"
+title: 'ACSD-45424: Falsche Reservierungsentschädigung nach teilweiser Rückerstattung'
 description: Der Patch ACSD-45424 behebt das Problem, dass nach einer teilweisen Rückerstattung eine falsche Reservierungsentschädigung entsteht. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 installiert ist. Die Patch-ID lautet ACSD-45424. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 94435816-9f4a-40f9-be80-05836ed7781f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%

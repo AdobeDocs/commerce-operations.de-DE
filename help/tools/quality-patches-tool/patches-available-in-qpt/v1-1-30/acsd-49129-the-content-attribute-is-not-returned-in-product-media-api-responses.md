@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-49129: "Content"-Attribut wird in den API-Antworten der Produktmedien nicht zurückgegeben."'
+title: 'ACSD-49129: Attribut "Inhalt"wird in den API-Antworten der Produktmedien nicht zurückgegeben'
 description: Wenden Sie den Patch ACSD-49129 an, um das Adobe Commerce-Problem zu beheben, bei dem das Attribut *content* (*base64-Bildcode*) nicht in den "rest/V1/products/sku/media"-API-Antworten des Produkts zurückgegeben wird.
 feature: REST, Attributes, Media, Page Content, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5235b7d1-4ebf-4cfb-8605-47614306a122
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%

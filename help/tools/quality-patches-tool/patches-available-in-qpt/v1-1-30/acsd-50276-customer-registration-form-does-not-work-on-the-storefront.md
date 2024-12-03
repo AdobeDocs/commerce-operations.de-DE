@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50276: Das Formular zur Kundenregistrierung funktioniert nicht auf der Storefront, wenn das Kundenattribut mit Mehrfachauswahl erstellt wird."
+title: 'ACSD-50276: Das Formular zur Kundenregistrierung funktioniert nicht auf der Storefront, wenn das Kundenattribut mit Mehrfachauswahl erstellt wird'
 description: Wenden Sie den Patch ACSD-50276 an, um das Adobe Commerce-Problem zu beheben, bei dem das Anmeldeformular für Kunden auf der Storefront nicht funktioniert, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wird.
 feature: Attributes, Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e7cb2416-d10b-46b0-83c4-93b107560d71
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%

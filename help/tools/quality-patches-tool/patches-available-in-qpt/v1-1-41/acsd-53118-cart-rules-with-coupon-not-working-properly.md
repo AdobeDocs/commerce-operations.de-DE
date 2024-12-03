@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53118: Warenkorbregeln mit Coupon funktionieren nicht ordnungsgemäß"
+title: 'ACSD-53118: Warenkorbregeln mit Coupon funktionieren nicht ordnungsgemäß'
 description: Wenden Sie den Patch ACSD-53118 an, um das Adobe Commerce-Problem zu beheben, bei dem die Preisregel für den Warenkorb mit einem Coupon-Code angewendet wird, während das Produkt im Warenkorb über ein leeres übereinstimmendes Attribut verfügt.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8957790e-c22b-4a25-939b-94d7a9fb1cc7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

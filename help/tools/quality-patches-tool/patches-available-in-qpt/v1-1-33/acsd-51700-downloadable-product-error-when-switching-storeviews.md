@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51700: Fehler beim Wechseln der Store-Ansichten auf der herunterladbaren Produktebearbeitungsseite"
+title: 'ACSD-51700: Fehler beim Wechseln der Store-Ansichten auf der herunterladbaren Produktebearbeitungsseite'
 description: Wenden Sie den Patch ACSD-51700 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Wechseln der Store-Ansichten auf einer herunterladbaren Produktebearbeitungsseite im Admin ein Fehler auftritt.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dd3da026-ac72-440c-8632-8a3ca27fc134
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

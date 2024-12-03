@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52786: Katalogregel *[!UICONTROL SKU is]* gilt für alle Produkte, die mit der SKU beginnen."
+title: 'ACSD-52786: Katalogregel *[!UICONTROL SKU is]* gilt für alle Produkte, die mit der SKU beginnen'
 description: Wenden Sie den Patch ACSD-52786 an, um das Adobe Commerce-Problem zu beheben, bei dem die Katalogregelbedingung *[!UICONTROL SKU is]* für alle Produkte gilt, die mit der angegebenen SKU beginnen.
 feature: Price Rules
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 668d5f16-18a9-4054-aa6e-1fb8fa211373
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

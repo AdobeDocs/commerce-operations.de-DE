@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41350: Ausnahme, wenn der Administrator Produkte außerhalb seines Zugriffs hinzufügt"
+title: 'MDVA-41350: Ausnahme, wenn der Administrator Produkte außerhalb seines Zugriffs hinzufügt'
 description: Der Patch MDVA-41350 behebt das Problem, bei dem anstelle einer eingeschränkten Zugriffsbenachrichtigung ein Ausnahmefehler ausgegeben wird, wenn ein Administrator ein Produkt in der Bestellung durch die SKU hinzufügt, das sich außerhalb seines Zugriffs befindet. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11 installiert ist. Die Patch-ID lautet MDVA-41350. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

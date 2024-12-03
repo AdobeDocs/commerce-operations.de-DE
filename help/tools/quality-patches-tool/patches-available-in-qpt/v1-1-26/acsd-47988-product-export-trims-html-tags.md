@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47988: Beim Produktexport werden HTML-Tags aus der Produktbeschreibung des Seitenaufbaus entfernt."
+title: 'ACSD-47988: Beim Produktexport werden HTML-Tags aus der Produktbeschreibung des Seitenaufbaus entfernt'
 description: Wenden Sie den Patch ACSD-47988 an, um das Adobe Commerce-Problem zu beheben, bei dem der Produktexport HTML-Tags aus der Produktbeschreibung des Seitenaufbaus schneidet.
 feature: Admin Workspace, Data Import/Export, Page Builder, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2cb3b4ac-38df-4832-b894-b34bb3d7bbc6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%

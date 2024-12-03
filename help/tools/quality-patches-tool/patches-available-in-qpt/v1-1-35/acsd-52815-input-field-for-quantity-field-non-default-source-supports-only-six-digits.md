@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-52815: Eingabefeld für das Mengenfeld von nicht standardmäßigen Quellen unterstützt nur bis zu sechs Stellen.'
+title: 'ACSD-52815: Eingabefeld für das Mengenfeld von nicht standardmäßigen Quellen unterstützt nur bis zu sechs Stellen'
 description: Wenden Sie den Patch ACSD-52815 an, um das Adobe Commerce-Leistungsproblem zu beheben, bei dem das Eingabefeld für das Mengenfeld einer nicht standardmäßigen Quelle nur bis zu sechs Stellen unterstützt, im Gegensatz zu 8 für ein Standardstock.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

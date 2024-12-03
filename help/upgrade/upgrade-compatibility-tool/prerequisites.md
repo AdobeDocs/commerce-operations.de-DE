@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] requirements'
+title: '[!DNL Upgrade Compatibility Tool] Anforderungen'
 description: Vergewissern Sie sich, dass Ihr System die erforderlichen Anforderungen erfüllt, um den [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt auszuführen.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
 source-git-commit: 40d850add2ef8c51e9192758135768306b163780

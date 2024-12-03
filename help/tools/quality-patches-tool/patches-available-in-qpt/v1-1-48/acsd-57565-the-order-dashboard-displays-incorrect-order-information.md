@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57565: Das Dashboard für die Bestellung zeigt falsche Bestellinformationen an.'
+title: 'ACSD-57565: Das Dashboard für Bestellungen zeigt falsche Bestellinformationen an'
 description: Wenden Sie den Patch ACSD-57565 an, um das Adobe Commerce-Problem zu beheben, bei dem das Bestell-Dashboard falsche Bestellinformationen anzeigt, bis der Zeitraum aktualisiert wurde.
 feature: Roles/Permissions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dc4ad263-725e-4605-9b85-fc4305ab9a29
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

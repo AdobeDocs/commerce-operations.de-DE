@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50814: Admin-Benutzer kann kein Kreditmemo erstellen"
+title: 'ACSD-50814: Administratorbenutzer können kein Kreditmemo erstellen'
 description: Wenden Sie den Patch ACSD-50814 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Admin-Benutzer kein Kreditmemo erstellen kann.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 87ee7166-7492-4948-9a85-a183ecf54fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

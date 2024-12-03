@@ -1,9 +1,10 @@
 ---
-title: "MDVA-27456: Benutzer erhalten beim Laden von Swagger einen Fehler."
+title: 'MDVA-27456: Benutzer erhalten beim Laden von Swagger einen Fehler'
 description: Der Patch MDVA-27456 behebt das Problem, dass Benutzer beim Laden von Swagger einen Fehler erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-27456. Beachten Sie, dass das Problem in Adobe Commerce 2.3.7 behoben wurde.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: a7d5dc7d-b916-4a09-9068-646f8474bba4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

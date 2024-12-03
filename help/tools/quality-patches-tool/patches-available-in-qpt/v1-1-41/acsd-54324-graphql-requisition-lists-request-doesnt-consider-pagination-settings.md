@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-54324: GraphQL-Anfrage "Requisition_lists"berücksichtigt keine Paginierungseinstellungen."'
+title: 'ACSD-54324: GraphQL-Anfrage "Requisition_lists"berücksichtigt keine Paginierungseinstellungen'
 description: Wenden Sie den Patch ACSD-54324 an, um das Adobe Commerce-Problem zu beheben, bei dem die GraphQL-Anfrage "Requisition_lists"keine Paginierungseinstellungen berücksichtigt und alle Ergebnisse zurückgibt.
 feature: B2B, Customers, GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 60f82602-1cfc-4523-a50d-46af5d5f10d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

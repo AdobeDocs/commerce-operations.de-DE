@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47179: Massenlöschung von Produktüberprüfungen funktioniert nicht, wenn als eingeschränkte Benutzerrolle angemeldet."
+title: 'ACSD-47179: Massenlöschung von Produktüberprüfungen funktioniert nicht, wenn als eingeschränkte Benutzerrolle angemeldet.'
 description: Wenden Sie den Patch ACSD-47179 an, um das Adobe Commerce-Problem zu beheben, bei dem das Massenlöschen von Produktüberprüfungen nicht funktioniert, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind.
 feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7131ee47-fadc-4e93-b8b2-5b2e0521ad97
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

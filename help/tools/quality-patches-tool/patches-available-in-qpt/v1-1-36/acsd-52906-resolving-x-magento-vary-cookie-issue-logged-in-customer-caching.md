@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52906: Beheben eines X-Magento-Vary-Cookie-Problems beim angemeldeten Kunden-Caching"
+title: 'ACSD-52906: Beheben eines X-Magento-Vary-Cookie-Problems beim angemeldeten Kunden-Caching'
 description: Wenden Sie den Patch ACSD-52906 an, um das Adobe Commerce-Problem zu beheben, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden falsch gesetzt wurde.
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 487b7588-7131-4502-b714-05f37520991f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%

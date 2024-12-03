@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51036: Wettlaufsituationen bei gleichzeitigen REST-API-Aufrufen führen zu einer Überschreiben des Versandstatus"
+title: 'ACSD-51036: Wettlaufsituationen bei gleichzeitigen REST-API-Aufrufen führen zu einer Überschreiben des Versandstatus'
 description: Wenden Sie den Patch ACSD-51036 an, um das Adobe Commerce-Problem zu beheben, bei dem es bei gleichzeitigen REST-API-Aufrufen zu Race-Bedingungen kommt, was zu einer Überschreiben des Versandstatus in der bestellten Tabelle führt.
 feature: REST, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6150d072-05fe-4010-b31b-8ccde9cab656
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

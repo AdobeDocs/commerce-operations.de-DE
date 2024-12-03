@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49574: Kann das Geschenkkarteprodukt nicht über GraphQL im Warenkorb aktualisieren"
+title: 'ACSD-49574: Kann das Geschenkkarteprodukt über GraphQL nicht im Warenkorb aktualisieren'
 description: Wenden Sie den Patch ACSD-49574 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Geschenkkartenprodukt nicht über GraphQL im Warenkorb aktualisiert werden kann.
 feature: Admin Workspace, Gift, GraphQL, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 31dede84-3733-4481-b21d-526494eb8e9b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%

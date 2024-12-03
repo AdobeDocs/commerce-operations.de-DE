@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42806: Bei jeder Aktualisierung eines bestehenden Unternehmens wird eine E-Mail zur Registrierung eines neuen Unternehmens gesendet."
+title: 'MDVA-42806: Bei jeder Aktualisierung eines bestehenden Unternehmens wird eine E-Mail zur Registrierung eines neuen Unternehmens gesendet'
 description: Der Patch MDVA-42806 behebt das Problem, dass jedes Mal, wenn ein bestehendes Unternehmen über die REST-API aktualisiert wird, eine E-Mail zur Registrierung eines neuen Unternehmens gesendet wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-42806. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+exl-id: 4fc2ee54-d88b-4940-b6ac-e25ad61e5c66
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

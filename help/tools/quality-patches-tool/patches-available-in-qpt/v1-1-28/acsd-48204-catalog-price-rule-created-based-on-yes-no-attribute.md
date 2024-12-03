@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48204: Katalogpreisregel, die basierend auf dem Attribut *Ja/Nein* erstellt wurde, berücksichtigt den ausgewählten Umfang nicht."
+title: 'ACSD-48204: Auf dem Attribut *Ja/Nein* erstellte Katalogpreisregel berücksichtigt den ausgewählten Umfang nicht'
 description: Wenden Sie den Patch ACSD-48204 an, um das Adobe Commerce-Problem zu beheben, bei dem die auf dem Attribut *Ja/Nein* erstellte Katalogpreisregel den ausgewählten Umfang nicht berücksichtigt.
 feature: Admin Workspace, Attributes, Catalog Management, Orders, Price Rules
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 69f2b35c-856e-4f96-ae2f-fb0c64d5eb94
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%

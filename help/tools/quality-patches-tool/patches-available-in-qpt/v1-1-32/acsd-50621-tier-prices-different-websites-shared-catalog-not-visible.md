@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50621: Die Stufenpreise für verschiedene Websites im freigegebenen Katalog sind nicht sichtbar."
+title: 'ACSD-50621: Stufentarife für verschiedene Websites im freigegebenen Katalog sind nicht sichtbar'
 description: Wenden Sie den Patch ACSD-50621 an, um das Adobe Commerce-Problem zu beheben, bei dem die Stufenpreise für verschiedene Websites im freigegebenen Katalog nicht sichtbar sind, wenn sie in einer Umgebung mit mehreren Websites bearbeitet werden.
 feature: Catalog Management, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2256dee7-e544-4723-9753-ba9cf7247880
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

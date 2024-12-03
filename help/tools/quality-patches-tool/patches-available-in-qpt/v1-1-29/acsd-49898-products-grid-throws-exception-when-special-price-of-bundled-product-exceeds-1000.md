@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49898: Das Produktraster gibt eine Ausnahme aus."
+title: 'ACSD-49898: Das Produkt-Raster gibt eine Ausnahme aus'
 description: Wenden Sie den Patch ACSD-49898 an, um das Adobe Commerce-Problem zu beheben, bei dem das Produktnetz eine Ausnahme auslöst, wenn ein gebündeltes Produkt einen Sonderpreis von mehr als 1000 aufweist.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: adc8f12e-73e4-4ed5-8081-a9907ec13342
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

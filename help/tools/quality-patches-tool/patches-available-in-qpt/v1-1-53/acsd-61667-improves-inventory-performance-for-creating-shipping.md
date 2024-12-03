@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61667: Verbessert die Lagerbestandsleistung für die Erstellung des Seeverkehrs"
+title: 'ACSD-61667: Verbessert die Lagerbestandsleistung für die Erstellung von Versandaktionen'
 description: Wenden Sie den Patch ACSD-60584 an, um die Lagerbestandsleistung für die Erstellung des Versands bei vielen Quellen mit In-Store-Abholung zu verbessern.
 feature: Customers, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: 29748a439992c0e3efbbc84c5ab9c8239f460b73
+exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
+source-git-commit: c32684a09e4a99733feb198b1d353b090c68a7f5
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -65,4 +66,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-

@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-61199: Registerkarte "CMS-Seite [!UICONTROL Hierarchy]"zeigt keine ordnungsgemäße Baumstruktur an"'
+title: 'ACSD-61199: Registerkarte "CMS-Seite [!UICONTROL Hierarchy]"zeigt keine ordnungsgemäße Baumstruktur an'
 description: Wenden Sie den Patch ACSD-61199 an, um das Adobe Commerce-Problem zu beheben, bei dem die Registerkarte *[!UICONTROL Hierarchy]* der CMS-Seite beim Bearbeiten einer CMS-Seite mit vorhandenem *[!UICONTROL Hierarchy]* keine ordnungsgemäße Baumstruktur anzeigt.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: bbe4e272d3a8bd82163bdd718d006a314287b650
+exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
+source-git-commit: 5568b2f574c7e90e641513c3c0ea4574648770ac
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

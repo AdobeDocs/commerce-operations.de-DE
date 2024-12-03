@@ -1,9 +1,10 @@
 ---
-title: "Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.48"
+title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.48'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.48 verfügbaren Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 250c88e9-1422-4af5-a0f0-32b15d9ab078
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -28,4 +29,3 @@ QPT v1.1.48 enthält die folgenden Patches:
 1. **ACSD-58008**: Behebung des Problems, bei dem beim Aktualisieren einer geplanten Aktualisierung die vorherige Version des gestaffelten Elements entfernt wird, wenn kein Enddatum angegeben ist.
 
 Navigieren Sie über das Menü links zu einer bestimmten Patch-Seite.
-

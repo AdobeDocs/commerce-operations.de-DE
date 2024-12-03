@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-39482: Das Produkt wird nicht vorrätig eingeführt, wenn es mit "0"Menge mit aktivierten Rückständen importiert wird."'
+title: 'MDVA-39482: Das Produkt wird nicht mehr vorrätig eingeführt, wenn es mit "0" Menge importiert wird und die Backorder aktiviert sind'
 description: Der MDVA-39482 behebt das Problem, dass das Produkt nicht mehr vorrätig ist, wenn es mit "0"importiert wird, wenn MSI und Rückorder aktiviert sind und der Schwellenwert für nicht vorrätige Waren auf einen Minuswert gesetzt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-39482. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: Data Import/Export, Orders, Products
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

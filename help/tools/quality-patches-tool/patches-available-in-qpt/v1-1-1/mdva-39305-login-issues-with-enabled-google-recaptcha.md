@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39305: Anmeldeproblem mit aktiviertem Google reCAPTCHA"
+title: 'MDVA-39305: Anmeldeproblem mit aktiviertem Google reCAPTCHA'
 description: Der Patch MDVA-39305 behebt das Problem, dass registrierte Kunden sich nicht mit aktiviertem Google reCAPTCHA anmelden können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-39305. Bitte beachten Sie, dass das Problem in den Adobe Commerce-Versionen 2.4.4 und 2.4.7 behoben werden soll.
 feature: Console
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: c40fd84a-73dc-42bd-8cda-58738615fbba
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

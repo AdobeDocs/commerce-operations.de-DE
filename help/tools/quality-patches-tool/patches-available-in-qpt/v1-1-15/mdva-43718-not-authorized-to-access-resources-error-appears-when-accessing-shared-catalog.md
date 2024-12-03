@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43718: 'Consumer is not authorized to access resources' error wird beim Zugriff auf freigegebenen Katalog angezeigt."
+title: 'MDVA-43718: "Der Verbraucher ist nicht berechtigt, auf Ressourcen zuzugreifen"wird beim Zugriff auf freigegebene Kataloge der Fehler angezeigt'
 description: Der Patch MDVA-43718 behebt das Problem, bei dem der Benutzer den Fehler *nicht berechtigt ist, auf %resources zuzugreifen.* wird angezeigt, wenn von einer benutzerdefinierten Integration aus auf einen freigegebenen Katalog zugegriffen wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-43718. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: Catalog Management
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2ced2177-aeff-4c36-8d34-6028539b66bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53148: Zwei parallele Anfragen in GraphQL zum Hinzufügen desselben konfigurierbaren Produkts"
+title: 'ACSD-53148: Zwei parallele Anfragen in GraphQL zum Hinzufügen desselben konfigurierbaren Produkts'
 description: Wenden Sie den Patch ACSD-53148 an, um das Adobe Commerce-Problem zu beheben, bei dem zwei parallele Anfragen in GraphQL zum Hinzufügen desselben konfigurierbaren Produkts zum Warenkorb zu zwei separaten Artikeln mit derselben Produkt-SKU im Warenkorb führten.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e5e22bed-69de-4872-9aa8-ab228f640b30
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54972: Kanonische Kategorie-URL wird nicht aktualisiert"
+title: 'ACSD-54972: Kanonische Kategorie-URL wird nicht aktualisiert'
 description: Wenden Sie den Patch ACSD-54972 an, um das Adobe Commerce-Problem zu beheben, bei dem die kanonische Kategorie-URL nicht aktualisiert wird, nachdem die Kategorie-URL geändert wurde.
 feature: Catalog Management, Products, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c4b17c08-9a2b-44a2-925e-f4c5cce7b760
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%

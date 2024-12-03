@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53347: Die Leistung bei der Preisindizierung verschlechtert sich schrittweise im Zeitverlauf."
+title: 'ACSD-53347: Die Preisindexierungsleistung verschlechtert sich allmählich im Zeitverlauf'
 description: Wenden Sie den Patch ACSD-53347 an, um das Adobe Commerce-Problem zu beheben, bei dem sich die Leistung bei der Neuindizierung der Preise für einen großen Produktkatalog allmählich verschlechtert.
 feature: Price Indexer
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 8986b685-55e4-47c7-852c-aca18e3b02e9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

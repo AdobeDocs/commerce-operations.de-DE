@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46541: Ein Administrator kann kein Kreditmemo erstellen, wenn ein Bestellelement gelöscht wird."
+title: 'ACSD-46541: Ein Administrator kann kein Kreditmemo erstellen, wenn ein Bestellelement gelöscht wird'
 description: Wenden Sie den Patch ACSD-46541 an, um das Adobe Commerce-Problem zu beheben, bei dem Sie nach dem Löschen eines Produkts kein Kreditmemo in der Adobe Commerce Admin erstellen können.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c46ee888-92b1-4798-bd2b-1a082fd1406a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

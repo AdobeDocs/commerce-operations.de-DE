@@ -3,7 +3,8 @@ title: 'ACSD-45168: SEO-freundliche URLs, die nicht für Produkte generiert wurd
 description: Wenden Sie den Patch ACSD-45168 an, um das Adobe Commerce-Problem zu beheben, bei dem SEO-freundliche URLs nicht für Produkte generiert wurden, deren Attribute url_key auf Store-Ansichtsebene überschrieben wurden.
 feature: Attributes, Cache, Categories, Marketing Tools, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 7d908307-f60c-4758-ad0f-f108ebb94558
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%

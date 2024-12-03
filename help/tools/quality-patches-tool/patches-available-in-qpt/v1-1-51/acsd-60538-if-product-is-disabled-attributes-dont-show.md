@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60538: Attribute werden nicht korrekt angezeigt, wenn das Produkt in [!UICONTROL All Store Views] deaktiviert ist."
+title: 'ACSD-60538: Attribute werden nicht korrekt angezeigt, wenn das Produkt in [!UICONTROL All Store Views] deaktiviert ist'
 description: Wenden Sie den Patch ACSD-60538 an, um das Adobe Commerce-Problem zu beheben. Wenn ein Produkt in "Alle Store-Ansichten"deaktiviert und nur in bestimmten Speicheransichtsbereichen aktiviert ist, werden die Produktattribute in der GraphQL-Antwort nicht korrekt angezeigt, sodass das Produkt nicht richtig angezeigt wird.
 feature: Attributes, GraphQL
 role: Admin, Developer
-source-git-commit: c394e003797d8095c17a0f6047024231e26a8321
+exl-id: 2ea9de11-b750-4ab6-9cc7-e940e1791f22
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

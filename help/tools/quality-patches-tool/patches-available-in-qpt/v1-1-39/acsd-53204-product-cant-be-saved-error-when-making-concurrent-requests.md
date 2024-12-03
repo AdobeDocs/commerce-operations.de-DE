@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53204: *Das Produkt kann nicht gespeichert werden* Fehler bei gleichzeitigen Anfragen zum Hinzufügen von Bildern zur Galerie."
+title: 'ACSD-53204: *Das Produkt kann nicht gespeichert werden* Fehler bei gleichzeitigen Anfragen zum Hinzufügen von Bildern zur Galerie'
 description: Wenden Sie den Patch ACSD-53204 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler *Das Produkt kann nicht gespeichert werden* ausgegeben wird, wenn gleichzeitige Anfragen zum Hinzufügen von Bildern zur Produktgalerie mit dem Endpunkt rest/V1/products/&lt;sku&gt;/media gesendet werden.
 feature: Catalog Management, Media, Products, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7fdf41e5-46ef-4505-b8ce-c330bd899fa1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

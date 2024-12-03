@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38827: Kunden erhalten einen Auftragsversandfehler per E-Mail."
-description: "Der Patch MDVA-38827 behebt das Problem, dass Kunden eine E-Mail zum Bestellversand mit der folgenden Fehlermeldung erhalten: *Es tut uns leid, dass bei der Generierung dieses Inhalts ein Fehler aufgetreten ist*. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-38827. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll."
+title: 'MDVA-38827: Kunden erhalten per E-Mail einen Auftragsversandfehler'
+description: 'Der Patch MDVA-38827 behebt das Problem, dass Kunden eine E-Mail zum Bestellversand mit der folgenden Fehlermeldung erhalten: *Es tut uns leid, es ist ein Fehler beim Generieren dieses Inhalts aufgetreten*. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-38827. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.'
 feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

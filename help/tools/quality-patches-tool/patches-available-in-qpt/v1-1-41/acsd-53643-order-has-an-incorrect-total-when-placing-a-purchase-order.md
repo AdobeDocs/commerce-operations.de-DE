@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53643: Die Summe der Bestellungen ist bei der Bestellung nicht korrekt."
+title: 'ACSD-53643: Die Gesamtsumme der Bestellungen ist bei der Bestellung nicht korrekt'
 description: Wenden Sie den Patch ACSD-53643 an, um das Adobe Commerce-Problem zu beheben, bei dem die Bestellung bei der Bestellung mit deaktivierten oder nicht vorrätigen Produkten einen falschen Gesamtwert aufweist.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 72b52695-ef3c-4143-9e77-901463d4a9ed
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%

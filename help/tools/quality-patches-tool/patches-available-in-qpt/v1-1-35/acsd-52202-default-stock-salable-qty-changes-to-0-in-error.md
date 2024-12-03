@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-52202: Die standardmäßige Lagerverkaufsmenge ändert sich zu "0"mit Fehler, wenn der nicht standardmäßige Lagerbestand auf 0 qty in der Reihenfolge festgelegt ist."'
+title: 'ACSD-52202: Die standardmäßige Lagerverkaufsmenge ändert sich zu "0"mit Fehler, wenn der nicht standardmäßige Lagerbestand in der angegebenen Reihenfolge auf 0 qty gesetzt ist.'
 description: Wenden Sie den Patch ACSD-52202 an, um das Adobe Commerce-Problem zu beheben, bei dem eine standardmäßige Lagerverkaufsmenge fehlerhaft auf 0 geändert wird, wenn der nicht standardmäßige Lagerbestand in einer Bestellung auf 0 Menge eingestellt ist.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

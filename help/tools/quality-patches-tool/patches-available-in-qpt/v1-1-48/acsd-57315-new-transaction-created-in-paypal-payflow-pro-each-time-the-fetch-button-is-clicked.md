@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-57315: Neue Transaktion wird in [!DNL PayPal Payflow Pro] jedes Mal erstellt, wenn auf die Schaltfläche zum Abrufen geklickt wird.'
+title: 'ACSD-57315: Neue Transaktion wird in [!DNL PayPal Payflow Pro] jedes Mal erstellt, wenn auf die Schaltfläche zum Abrufen geklickt wird'
 description: Wenden Sie den Patch ACSD-57315 an, um das Adobe Commerce-Problem zu beheben, bei dem eine neue Transaktion in [!DNL PayPal Payflow Pro] jedes Mal erstellt wird, wenn auf dem Bildschirm "Ansichtstransaktion"im [!UICONTROL Admin] auf die Schaltfläche "Abruf"geklickt wird.
 feature: Payments
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1fb8a5af-fda1-4c24-859d-d45424bde12f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.42"
+title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.42'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.42 verfügbaren Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+exl-id: 40db5196-0ba3-49c4-97b7-32f146c67f95
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%

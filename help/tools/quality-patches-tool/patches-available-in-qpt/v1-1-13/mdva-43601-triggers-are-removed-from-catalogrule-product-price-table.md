@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-43601: Trigger werden nach vollständiger Neuindizierung aus der Tabelle "catalogrule_product_price"entfernt.'
+title: 'MDVA-43601: Trigger werden nach vollständiger Neuindizierung aus der Tabelle "catalogrule_product_price"entfernt'
 description: Der Patch MDVA-43601 behebt das Problem, dass Trigger nach einer vollständigen Neuindizierung von "catalogrule_rule_product_product"aus der Tabelle "catalogrule_price"entfernt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43601. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: Catalog Management, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b9580806-ac35-4c86-8eee-c9f16d654171
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49389: Bereit für Abruf-E-Mail, die von der API gesendet wird, wenn sie nicht bereit für Abruf ist"
+title: 'ACSD-49389: Bereit für die Abruf-E-Mail, die von der API gesendet wird, wenn sie nicht bereit zur Abruf ist'
 description: Wenden Sie den Patch ACSD-49389 an, um das Adobe Commerce-Problem zu beheben, bei dem eine für die Abruf-E-Mail bereite E-Mail von der API gesendet wird, wenn die Bestellung nicht bereit zur Abholung ist.
 feature: REST, Communications
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d1bc430a-3021-40d1-9091-db8ed9125619
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

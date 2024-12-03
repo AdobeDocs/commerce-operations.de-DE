@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53704: Bilanzverlauf der Treuepunkte nach Ablauf falsch berechnet"
+title: 'ACSD-53704: Saldoverlauf der Punkte wurde nach Ablauf falsch berechnet'
 description: Wenden Sie den Patch ACSD-53704 an, um das Adobe Commerce-Problem zu beheben, bei dem der Bilanzverlauf der Punkte nach dem Ablaufdatum der Bonuspunkte falsch berechnet wird.
 feature: Rewards
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 8cd297cc-9e9d-4615-b817-283065a79c2f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

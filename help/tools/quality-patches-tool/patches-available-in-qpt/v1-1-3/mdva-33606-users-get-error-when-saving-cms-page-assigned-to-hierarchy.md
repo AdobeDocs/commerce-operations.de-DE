@@ -1,9 +1,10 @@
 ---
-title: 'MDVA-33606: Benutzer erhalten beim Speichern von der Hierarchie zugewiesener CMS-Seite einen Fehler.'
+title: 'MDVA-33606: Benutzer erhalten beim Speichern von der Hierarchie zugewiesener CMS-Seite einen Fehler'
 description: Der Patch MDVA-33606 behebt das Problem, dass Benutzer beim Speichern einer CMS-Seite, die der Hierarchie zugewiesen ist, den Fehler *Individuelle Einschränkungsverletzung gefunden* erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-33606. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 feature: CMS
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%

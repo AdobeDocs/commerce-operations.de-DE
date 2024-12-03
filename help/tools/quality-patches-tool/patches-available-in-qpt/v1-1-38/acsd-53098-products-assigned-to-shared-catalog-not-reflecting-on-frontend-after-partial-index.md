@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53098: Produkte im freigegebenen Katalog spiegeln nicht das Frontend wider."
+title: 'ACSD-53098: Produkte im freigegebenen Katalog werden nicht auf dem Frontend angezeigt'
 description: Wenden Sie den Patch ACSD-53098 an, um das Adobe Commerce-Problem zu beheben, bei dem Produkte, die einem freigegebenen Katalog zugewiesen sind, beim Ausführen eines partiellen Index nicht auf dem Frontend angezeigt werden.
 feature: B2B, Catalog Management, Categories, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 25230086-13b5-4b16-b50f-931e9e3d7102
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

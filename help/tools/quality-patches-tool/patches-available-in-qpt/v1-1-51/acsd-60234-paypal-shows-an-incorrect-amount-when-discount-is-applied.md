@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60234: [!DNL PayPal] zeigt einen falschen Betrag an, wenn ein Rabatt angewendet wird"
+title: 'ACSD-60234: [!DNL PayPal] zeigt einen falschen Betrag an, wenn ein Rabatt angewendet wird'
 description: Wenden Sie den Patch ACSD-60234 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL PayPal] einen falschen Betrag anzeigt, wenn der Rabatt über die Zahlungsmethode angewendet wird.
 feature: Products, Configuration
 role: Admin, Developer
-source-git-commit: 334e9f740b49d87fc20ee8950d85adb9612c00b7
+exl-id: 2ce7bde5-02a4-4989-80d6-ab1be0ca5fe9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

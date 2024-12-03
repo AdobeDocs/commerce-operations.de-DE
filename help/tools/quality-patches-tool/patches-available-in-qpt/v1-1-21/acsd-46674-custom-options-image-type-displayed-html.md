@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46674: benutzerdefinierte Optionen des Bildtyps, die in E-Mails von Kunden als HTML angezeigt werden"
+title: 'ACSD-46674: benutzerdefinierte Optionen des Bildtyps, die in E-Mails von Kunden als HTML angezeigt werden'
 description: Wenden Sie den Patch ACSD-46674 an, um das Adobe Commerce-Problem zu beheben, bei dem benutzerdefinierte Optionen des Bildtyps in E-Mails von Kunden als HTML angezeigt wurden.
 feature: Communications, Personalization
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 123ca7b5-02da-4573-897f-ff8adb184389
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46856: Verbessert die Leistung bei der Aktualisierung der Tier-Preise"
+title: 'ACSD-46856: Verbessert die Leistung bei der Aktualisierung der Tier-Preise'
 description: Wenden Sie den Patch ACSD-46856 an, um die Leistung beim Aktualisieren der Stufenpreise über System &gt; Konfiguration &gt; Import&gt; Erweiterte Preise zu verbessern.
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5c954f2c-a55c-43ba-919f-406f4b173d30
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%

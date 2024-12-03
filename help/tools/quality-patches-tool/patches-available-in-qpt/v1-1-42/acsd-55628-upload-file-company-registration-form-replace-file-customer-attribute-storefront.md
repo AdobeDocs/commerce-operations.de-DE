@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55628: Datei im Registrierungsformular des Unternehmens hochladen; Datei für Kundenattribut in Storefront ersetzen"
+title: 'ACSD-55628: Datei im Registrierungsformular des Unternehmens hochladen; Datei für Kundenattribut in Storefront ersetzen'
 description: Wenden Sie den Patch ACSD-55628 an, um das Adobe Commerce-Problem zu beheben, indem Sie eine Datei auf das Registrierungsformular für das Unternehmen hochladen und eine Datei für ein Kundenattribut auf der Storefront ersetzen.
 feature: Storefront, Attributes, B2B, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a008a205-ec1d-4a1d-9cd2-75f10a937057
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

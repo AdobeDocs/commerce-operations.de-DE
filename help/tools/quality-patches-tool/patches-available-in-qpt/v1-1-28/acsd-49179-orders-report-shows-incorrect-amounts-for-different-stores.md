@@ -3,7 +3,8 @@ title: 'ACSD-49179: Der Bestellbericht zeigt falsche Beträge für verschiedene 
 description: Wenden Sie den Patch ACSD-49179 an, um das Adobe Commerce-Problem zu beheben, bei dem im Bestellbericht falsche Beträge angezeigt werden, wenn verschiedene Währungen für verschiedene Geschäfte verwendet werden.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

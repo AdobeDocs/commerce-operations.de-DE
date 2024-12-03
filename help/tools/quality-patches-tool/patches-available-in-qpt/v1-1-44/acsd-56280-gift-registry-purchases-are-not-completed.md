@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56280: Geschenkkäufe in der Registrierung sind nicht abgeschlossen."
+title: 'ACSD-56280: Geschenkkäufe in der Registrierung sind nicht abgeschlossen'
 description: Wenden Sie den Patch ACSD-56280 an, um das Adobe Commerce-Problem zu beheben, bei dem die Käufe der Geschenkregistrierung nicht abgeschlossen sind.
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

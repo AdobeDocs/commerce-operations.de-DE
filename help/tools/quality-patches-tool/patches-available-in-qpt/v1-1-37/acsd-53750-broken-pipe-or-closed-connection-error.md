@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-53750: "Broken pipe or closed connection" error during multi-threaded catalog_product_price reindex"'
+title: 'ACSD-53750: "Broken pipe or closed connection" error during multi-threaded catalog_product_price reindex'
 description: Wenden Sie den Patch ACSD-53750 an, um das Adobe Commerce-Problem zu beheben, bei dem während der Neuindizierung des Multi-Thread-Katalogprodukts_Preises ein Fehler wegen eines *defekten Pfads oder einer geschlossenen Verbindung* auftritt.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6c2f092f-a98e-4990-839c-a7291635f8af
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

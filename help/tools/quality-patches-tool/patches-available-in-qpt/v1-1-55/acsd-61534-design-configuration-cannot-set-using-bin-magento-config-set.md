@@ -3,7 +3,8 @@ title: 'ACSD-61534: Die Designkonfiguration kann nicht mit bin/magento config:se
 description: Wenden Sie den Patch ACSD-61534 an, um das Adobe Commerce-Problem zu beheben, bei dem die Designkonfiguration nicht mit dem Befehl "bin/magento config:set"festgelegt werden kann und gesperrte Werte durch die Formularbearbeitung geändert werden können.
 feature: Configuration
 role: Admin, Developer
-source-git-commit: ef00c05593ad319caab8bb9e0f5090959786513f
+exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

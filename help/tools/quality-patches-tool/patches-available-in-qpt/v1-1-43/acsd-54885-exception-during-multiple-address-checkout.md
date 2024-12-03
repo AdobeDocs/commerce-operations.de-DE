@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54885: Ausnahme beim Checkout mehrerer Adressen, wenn sich der Administrator als Kunde anmeldet"
+title: 'ACSD-54885: Ausnahme beim Checkout mehrerer Adressen, wenn sich ein Administrator als Kunde anmeldet'
 description: Wenden Sie den Patch ACSD-54885 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Auschecken mehrerer Adressen ein Fehler auftritt, wenn der Administrator die Funktion *[!UICONTROL Login as Customer]* verwendet.
 feature: Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c146bc2a-2df1-4825-9cfc-69e04095b3c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

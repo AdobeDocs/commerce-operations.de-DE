@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41236: Es ist nicht möglich, bestehende geplante Updates für das Produkt zu erstellen oder zu bearbeiten."
+title: 'MDVA-41236: Es können keine neuen geplanten Updates für das Produkt erstellt oder bearbeitet werden'
 description: Der Patch MDVA-41236 behebt das Problem, dass Benutzer nicht in der Lage sind, neue geplante Updates für das Produkt zu erstellen oder zu bearbeiten, wenn das "Enddatum"zuvor entfernt wurde. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-41236. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: Products, Staging
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 82192778-4f25-40a0-882e-d52d32c433c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

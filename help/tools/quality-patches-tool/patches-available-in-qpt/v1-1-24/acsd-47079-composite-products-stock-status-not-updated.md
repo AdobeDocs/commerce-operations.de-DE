@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47079: Bestandsstatus von zusammengesetzten Erzeugnissen nicht aktualisiert, wenn sich der Lagerstatus der Teilprodukte ändert"
+title: 'ACSD-47079: Bestandsstatus von zusammengesetzten Produkten wird nicht aktualisiert, wenn sich der Lagerstatus von Unterprodukten ändert'
 description: Wenden Sie den Patch ACSD-47079 an, um das Adobe Commerce-Problem zu beheben, bei dem der Lagerstatus von zusammengesetzten Produkten (Bundle, gruppiert und konfigurierbar) nicht aktualisiert wird, wenn sich der Lagerstatus von Unterprodukten über die REST-API-POST /rest/V1/inventory/source-items ändert.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

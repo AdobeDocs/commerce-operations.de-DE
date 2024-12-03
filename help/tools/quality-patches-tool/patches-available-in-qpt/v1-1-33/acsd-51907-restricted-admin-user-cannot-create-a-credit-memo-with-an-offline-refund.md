@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51907: Eingeschränkte Administratoren können kein Kreditmemo zur Offline-Rückerstattung erstellen."
+title: 'ACSD-51907: Eingeschränkte Administratoren können kein Kreditmemo für Offline-Rückerstattung erstellen'
 description: Wenden Sie den Patch ACSD-51907 an, um das Adobe Commerce-Problem zu beheben, bei dem der eingeschränkte Administratorbenutzer kein Kreditmemo mit einer Offline-Rückerstattung erstellen kann.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1c44d99b-7633-4768-b7e7-332f3666a5d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%

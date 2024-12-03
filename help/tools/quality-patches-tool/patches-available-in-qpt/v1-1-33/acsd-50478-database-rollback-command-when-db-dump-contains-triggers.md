@@ -1,7 +1,8 @@
 ---
-title: "ACSD-50478: JS-Problem für Rollback-Aktionen im Sicherungs-Raster und Datenbank-Rollback-Befehl"
+title: 'ACSD-50478: JS-Problem für Rollback-Aktionen im Sicherungsraster und Datenbank-Rollback-Befehl'
 description: Wenden Sie den Patch ACSD-50478 an, um das JS-Problem für die Rollback-Aktion im Sicherungsraster und den Datenbank-Rollback-Befehl zu beheben, wenn der DB-Dump Trigger und einen SQL-Befehl *delimiter* enthält.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

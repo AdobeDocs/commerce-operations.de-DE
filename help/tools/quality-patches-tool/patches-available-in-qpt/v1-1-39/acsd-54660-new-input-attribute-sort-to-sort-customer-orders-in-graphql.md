@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-54660: Neue Sortierung des Eingabeattributs zur Sortierung von Kundenbestellungen in [!DNL GraphQL]'
+title: 'ACSD-54660: Neue Eingabe-Attributsortierung zur Sortierung von Kundenbestellungen in [!DNL GraphQL]'
 description: Wenden Sie den Patch ACSD-54660 an, um das Adobe Commerce-Problem zu beheben, bei dem das neue Eingabedatum `sort` hinzugefügt wurde, um Kundenaufträge in [!DNL GraphQL] nach `sort_field` und `sort_direction` zu sortieren.
 feature: GraphQL, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3962d4b6-634e-4164-adae-fa840ca7d869
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%

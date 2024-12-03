@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51240: Hochgeladene Datei fehlt bei der Registrierung über das Formular für die Unternehmensregistrierung"
+title: 'ACSD-51240: Hochgeladene Datei fehlt bei der Registrierung über das Formular für die Unternehmensregistrierung'
 description: Wenden Sie den Patch ACSD-51240 an, um das Adobe Commerce-Problem zu beheben, bei dem die hochgeladene Datei bei der Registrierung über das Registrierungsformular für das Unternehmen fehlt.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 78e339d6-435e-4856-9f57-98bb955d093c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

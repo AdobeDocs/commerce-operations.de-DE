@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61195: GraphQL-Anfrage zum Warenkorb gibt keine Elemente auf der endgültigen Seite zurück."
+title: 'ACSD-61195: GraphQL-Anfrage zum Warenkorb gibt keine Elemente auf der endgültigen Seite zurück'
 description: Wenden Sie den Patch ACSD-61195 an, um das Adobe Commerce-Problem zu beheben, bei dem auf der letzten Seite für die GraphQL-Anfrage zum Warenkorb keine Artikel zum Warenkorb zurückgegeben werden.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: f6e410e0787e56717b3910b7f3938108a7af9cd8
+exl-id: 15f0f29c-8517-4f1e-9370-772572e75c9a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

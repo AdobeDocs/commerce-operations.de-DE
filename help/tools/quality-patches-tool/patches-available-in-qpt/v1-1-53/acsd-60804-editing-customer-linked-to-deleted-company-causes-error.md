@@ -1,5 +1,5 @@
 ---
-title: "ACSD-60804: Das Bearbeiten eines mit einem gelöschten Unternehmen verknüpften Kunden führt zu einem Fehler."
+title: 'ACSD-60804: Das Bearbeiten eines Kunden, der einem gelöschten Unternehmen zugeordnet ist, führt zu einem Fehler'
 description: Wenden Sie den Patch ACSD-60804 an, um das Adobe Commerce-Problem zu beheben, bei dem die Bearbeitung eines mit einem gelöschten Unternehmen verknüpften Kunden den Fehler *Aufruf an die Mitgliederfunktion getSuperUserId() auf null* verursacht.
 feature: Companies, Customers, B2B
 role: Admin, Developer

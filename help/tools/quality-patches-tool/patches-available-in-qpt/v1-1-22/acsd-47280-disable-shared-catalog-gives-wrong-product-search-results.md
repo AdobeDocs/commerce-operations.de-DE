@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL ACSD-47280]: Durch Deaktivieren des freigegebenen Katalogs werden falsche Produktsuchergebnisse angezeigt.'
+title: '[!DNL ACSD-47280]: Durch Deaktivieren des freigegebenen Katalogs werden falsche Produktsuchergebnisse angezeigt'
 description: Wenden Sie den Patch [!DNL ACSD-47280] an, um das Problem zu beheben, dass die richtigen Suchergebnisse angezeigt werden, wenn die Funktion des freigegebenen Katalogs deaktiviert ist.
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt

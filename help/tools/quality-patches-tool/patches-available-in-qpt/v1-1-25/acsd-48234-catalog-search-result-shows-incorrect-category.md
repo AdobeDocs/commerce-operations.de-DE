@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-48234: Katalogsuchergebnis: falsche Kategorieelementanzahl, wenn [!UICONTROL Display Out of Stock Products] aktiviert ist'
+title: 'ACSD-48234: Katalogsuchergebnis falsche Kategorieelementanzahl bei aktivierter [!UICONTROL Display Out of Stock Products]'
 description: Wenden Sie den Patch ACSD-48234 an, um das Adobe Commerce-Problem zu beheben, bei dem das Katalogsuchergebnis eine falsche Kategorieelementanzahl anzeigt, wenn die Option [!UICONTROL Display Out of Stock Products] aktiviert ist.
 feature: Admin Workspace, Categories, Catalog Management, Orders, Products, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c177f12d-2db5-48e2-8f88-ff589cea4dd4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

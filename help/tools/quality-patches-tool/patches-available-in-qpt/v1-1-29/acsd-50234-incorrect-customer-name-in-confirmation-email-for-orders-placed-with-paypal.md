@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50234: Falscher Kundenname in der Bestätigungs-E-Mail für Bestellungen, die mit [!DNL PayPal] aufgegeben wurden."
+title: 'ACSD-50234: Falscher Kundenname in der Bestätigungs-E-Mail für Bestellungen, die mit [!DNL PayPal] aufgegeben wurden'
 description: Wenden Sie den Patch ACSD-50234 an, um das Adobe Commerce-Problem zu beheben, bei dem der Kundenname in der Bestätigungs-E-Mail für Bestellungen mit  [!DNL PayPal] falsch angezeigt wird.
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9a8a7cef-0166-4b4b-96a0-87fd4f1a0ef3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

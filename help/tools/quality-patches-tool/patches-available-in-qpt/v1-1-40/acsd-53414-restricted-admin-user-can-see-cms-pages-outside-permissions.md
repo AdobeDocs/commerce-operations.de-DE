@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen."
+title: 'ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen.'
 description: Wenden Sie den Patch ACSD-53414 an, um das Adobe Commerce-Problem zu beheben, bei dem ein eingeschränkter Administrator CMS-Seiten außerhalb des Berechtigungsbereichs anzeigen kann.
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

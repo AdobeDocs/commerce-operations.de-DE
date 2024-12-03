@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58383: Duplizieren Sie Kreditkarten aus gleichzeitigen Erstattungsanträgen via [!DNL REST API]"
+title: 'ACSD-58383: Duplizieren Sie Kreditkarten aus gleichzeitigen Erstattungsanträgen via [!DNL REST API]'
 description: Wenden Sie den Patch ACSD-58383 an, um das Adobe Commerce-Problem zu beheben, bei dem die Ausgabe einer Rückerstattung über den  [!DNL REST API] mit zwei identischen Anforderungen, die gleichzeitig ausgeführt werden, doppelte Kreditmemos erzeugt.
 feature: REST, Payments, Returns
 role: Admin, Developer

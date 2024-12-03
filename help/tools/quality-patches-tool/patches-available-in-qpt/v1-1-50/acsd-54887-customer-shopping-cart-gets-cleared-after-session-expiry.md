@@ -1,15 +1,15 @@
 ---
-title: "ACSD-54887: Der Einkaufswagen des Kunden wird gelöscht, nachdem die Kundensitzung abgelaufen ist"
+title: 'ACSD-54887: Der Einkaufswagen des Kunden wird nach Ablauf der Kundensitzung gelöscht'
 description: Wenden Sie den Patch ACSD-54887 an, um das Adobe Commerce-Problem zu beheben, bei dem der Warenkorb für Kunden gelöscht wird, nachdem die Kundensitzung abgelaufen ist und [!UICONTROL Persistent Shopping Cart] aktiviert ist.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: de2a96b2-48ce-4b9b-93bc-f7b64c37463a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-54887: Der Einkaufswagen des Kunden wird nach Ablauf der Kundensitzung gelöscht
 
@@ -71,4 +71,3 @@ Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
-

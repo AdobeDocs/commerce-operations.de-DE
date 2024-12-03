@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53728: Der Produkt-EAV-Indexer dauert lange, bis er abgeschlossen ist."
+title: 'ACSD-53728: Der Produkt-EAV-Indexer braucht lange, um abgeschlossen zu werden'
 description: Wenden Sie den Patch ACSD-53728 an, um das Adobe Commerce-Problem zu beheben, bei dem der Produkt-EAV-Indexer lange dauert.
 feature: Products, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6cf3e401-ec28-4f80-b628-d1584f771c45
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

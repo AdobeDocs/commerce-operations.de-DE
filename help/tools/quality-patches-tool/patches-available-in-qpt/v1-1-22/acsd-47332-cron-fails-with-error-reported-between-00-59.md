@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47332: Cron schlägt fehl und Fehler wird nur zwischen 00:00 und 00:59 UTC gemeldet."
+title: 'ACSD-47332: Cron schlägt mit Fehler fehl, der nur zwischen 00:00 und 00:59 UTC gemeldet wird'
 description: Wenden Sie den Patch ACSD-47332 an, um das Adobe Commerce-Problem zu beheben, bei dem Cron mit einem Fehler fehlschlägt, der nur gemeldet wird, wenn er zwischen 00:00 und 00:59 UTC ausgeführt wird.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

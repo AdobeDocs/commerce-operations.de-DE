@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50512: Fehler beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update"
+title: 'ACSD-50512: Fehler beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update'
 description: Wenden Sie den Patch ACSD-51892 an, um das Leistungsproblem von Adobe Commerce zu beheben, bei dem der Fehler *Der herunterladbare Link ist nicht mit dem Produkt verknüpft ist. Überprüfen Sie den Link und versuchen Sie es erneut*, tritt auf, wenn das Startdatum für ein herunterladbares Produkt-Staging-Update aktualisiert wird.
 feature: Products, Staging
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9c3b4d45-c500-46a7-8679-a8aa9e0a66d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52041: Beim Rendern von Seiten-Builder werden keine Sperren veröffentlicht."
+title: 'ACSD-52041: Beim Rendern von Seiten-Builder werden keine Sperren veröffentlicht'
 description: Wenden Sie den Patch ACSD-52041 an, um das Adobe Commerce-Problem zu beheben, bei dem der Seitenaufbau fünf Sekunden lang gerendert wird, ohne Sperren zu veröffentlichen.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48661: Validierungsproblem für das Unternehmenskreditlimit für ein gemeinsames Trennzeichen"
+title: 'ACSD-48661: Problem mit der Validierung eines Unternehmenskreditlimits für ein gemeinsames Trennzeichen'
 description: Wenden Sie den Patch ACSD-48661 an, um das Adobe Commerce-Problem zu beheben. Wenn die Firmenkreditbeschränkung größer als 999 ist, verhindert das Kommatrennzeichen die Speicherung des Unternehmens aufgrund eines Validierungsfehlers.
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7115226e-5942-4a8f-9dec-b1b6f665eef8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

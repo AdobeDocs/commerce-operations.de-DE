@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-43859: Fehler "Keine Entität mit customerId =" protokolliert, wenn sich ein gelöschter Kunde anmeldet"'
+title: 'MDVA-43859: Fehler "No such entity with customerId =" protokolliert, wenn sich ein gelöschter Kunde anmeldet'
 description: Der Patch MDVA-43859 behebt das Problem, bei dem der Fehler *Keine Entität mit customerId =* protokolliert wird, wenn ein gelöschter Kunde versucht, sich anzumelden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-43859. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: Variables
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b8451b08-978a-44a2-8664-4369e832423b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%

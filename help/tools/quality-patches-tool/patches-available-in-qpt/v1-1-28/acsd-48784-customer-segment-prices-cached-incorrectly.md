@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48784: Preise für Kundensegmente wurden zwischen Kundengruppen falsch zwischengespeichert."
+title: 'ACSD-48784: Die Preise für Kundensegmente wurden zwischen Kundengruppen falsch zwischengespeichert.'
 description: Wenden Sie den Patch ACSD-48784 an, um das Adobe Commerce-Problem zu beheben, bei dem Kundensegmentpreise zwischen Kundengruppen falsch zwischengespeichert werden.
 feature: Admin Workspace, Cache, Customer Service, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a691c61c-fdba-4d6a-8314-095dfb0ba4a1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55231: SKU bei Verwendung der Funktion für schnelle Bestellungen nicht gefunden Fehler"
+title: 'ACSD-55231: SKU konnte bei Verwendung der Funktion für schnelle Bestellungen keinen Fehler finden'
 description: Wenden Sie den Patch ACSD-55231 an, um das Adobe Commerce-Problem zu beheben, bei dem Sie die Fehlermeldung *'Die SKU wurde nicht im Katalog gefunden'* erhalten, wenn Sie versuchen, ein Produkt mithilfe der Funktion für schnelle Bestellungen zum Warenkorb hinzuzufügen.
 feature: Products, Checkout, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f0a04773-7395-4945-a72b-5a6a018bc94e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%

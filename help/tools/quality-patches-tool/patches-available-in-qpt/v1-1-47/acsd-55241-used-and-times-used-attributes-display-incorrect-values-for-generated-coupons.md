@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55241: **Verwendet** und **Verwendete Zeiten** Attribute zeigen falsche Werte für generierte Gutscheine an."
+title: 'ACSD-55241: **Verwendet** und **Verwendete Zeiten** Attribute zeigen falsche Werte für generierte Gutscheine an'
 description: Wenden Sie den Patch ACSD-55241 an, um das Adobe Commerce-Problem zu beheben, bei dem die Attribute **Verwendet** und **Verwendete Zeiten** falsche Werte für generierte Gutscheine anzeigen
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a156f03c-c939-4ea7-bd34-03c2234edbff
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%

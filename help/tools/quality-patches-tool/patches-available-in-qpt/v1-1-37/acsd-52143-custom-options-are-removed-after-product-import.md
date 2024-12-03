@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52143: Benutzerdefinierte Optionen werden nach dem Produktimport entfernt"
+title: 'ACSD-52143: Benutzerdefinierte Optionen werden nach dem Produktimport entfernt'
 description: Wenden Sie den Patch ACSD-52143 an, um das Adobe Commerce-Problem zu beheben, bei dem die Anpassungsoptionen nach dem Produktimport entfernt werden.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 630fffa7-012c-4539-9745-9a34571bd2eb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

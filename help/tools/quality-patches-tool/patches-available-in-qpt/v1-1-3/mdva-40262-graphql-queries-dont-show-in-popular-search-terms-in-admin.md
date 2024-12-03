@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40262: GraphQL-Abfragen werden nicht in populären Suchbegriffen in Admin angezeigt"
+title: 'MDVA-40262: GraphQL-Abfragen werden nicht in populären Suchbegriffen in Admin angezeigt'
 description: Der MDVA-40262 Adobe Commerce-Qualitäts-Patch behebt das Problem, dass GraphQL-Suchabfragen nicht in den gängigen Suchbegriffen in der Admin-Konsole angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40262. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: Admin Workspace, GraphQL, Search
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: 9442ac86-e632-4ab3-8cb3-d29487a1ecbe
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%

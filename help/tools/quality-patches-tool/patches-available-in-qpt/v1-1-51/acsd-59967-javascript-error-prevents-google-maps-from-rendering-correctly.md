@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59967: JavaScript-Fehler verhindert, dass [!DNL Google Maps] korrekt dargestellt wird"
+title: 'ACSD-59967: JavaScript-Fehler verhindert, dass [!DNL Google Maps] korrekt dargestellt wird'
 description: Wenden Sie den Patch ACSD-59967 an, um das Adobe Commerce-Problem zu beheben, bei dem der JavaScript-Fehler verhindert, dass [!DNL Google Maps] korrekt dargestellt wird.
 feature: Admin Workspace, Page Builder, CMS
 role: Admin, Developer
-source-git-commit: 5fe2f494e0832e9f736fbd797da31f5815934a61
+exl-id: 2982857a-7adb-4163-be18-4d2caf0d645c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40134: GraphQL gibt verwandte Produkte nicht zurück, wenn der freigegebene Katalog aktiviert ist."
+title: 'MDVA-40134: GraphQL gibt verwandte Produkte nicht zurück, wenn der freigegebene Katalog aktiviert ist'
 description: Der Patch MDVA-40134 behebt das Problem, dass GraphQL verwandte Produkte nicht zurückgibt, wenn der freigegebene Katalog aktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-40134. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 feature: B2B, Catalog Management, GraphQL, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 5d31e042-4396-40ce-8bf1-63ad9a55214d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

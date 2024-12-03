@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40101: Artikel bleiben Mini-Warenkorb nach der Bestellplatzierung PayPal Express Checkout"
+title: 'MDVA-40101: Artikel bleiben Mini-Warenkorb nach der Bestellung PayPal Express Checkout'
 description: Der Patch MDVA-40101 behebt das Problem, dass Artikel nach einer erfolgreichen Bestellplatzierung mit PayPal Express Checkout nicht aus dem Mini-Warenkorb entfernt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40101. Beachten Sie, dass das Problem in Adobe Commerce 2.4.0 behoben wurde.
 feature: Checkout, Orders, Payments, Shopping Cart
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 8d3fa92e-39ed-4d8f-8dbe-9c08f787c6f1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

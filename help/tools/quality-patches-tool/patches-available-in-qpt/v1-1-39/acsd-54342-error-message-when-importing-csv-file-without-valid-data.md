@@ -3,7 +3,8 @@ title: 'ACSD-54342: Fehlermeldung beim Import einer CSV-Datei ohne gültige Date
 description: Wenden Sie den Patch ACSD-54342 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Importieren einer CSV-Datei ohne gültige Daten eine falsche Fehlermeldung auftritt.
 feature: Roles/Permissions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 34324a18-45af-462b-a6e6-6b6a02d4d331
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%

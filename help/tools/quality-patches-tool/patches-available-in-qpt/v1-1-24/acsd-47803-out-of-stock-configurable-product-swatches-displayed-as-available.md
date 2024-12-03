@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47803: konfigurierbare, nicht vorrätig konfigurierbare Produktmuster, die als verfügbar angezeigt werden"
+title: 'ACSD-47803: konfigurierbare, nicht vorrätig verfügbare Produktmuster, die als verfügbar angezeigt werden'
 description: Wenden Sie den Patch ACSD-47803 an, um das Adobe Commerce-Problem zu beheben, bei dem konfigurierbare nicht vorrätige Produktmuster als verfügbar angezeigt wurden.
 feature: Configuration, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c1b80949-65ed-4a44-8be4-25decda32142
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

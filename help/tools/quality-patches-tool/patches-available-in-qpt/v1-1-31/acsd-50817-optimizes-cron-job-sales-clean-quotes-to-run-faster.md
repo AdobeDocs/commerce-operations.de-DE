@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50817: Optimiert cron job sales_clean_quotes für schnellere Ausführung"
+title: 'ACSD-50817: Optimiert cron job sales_clean_quotes für schnellere Ausführung'
 description: Wenden Sie den Patch ACSD-50817 an, um den Cron-Auftrag `sales_clean_quotes` so zu optimieren, dass er schneller ausgeführt wird, indem Sie einen zusammengesetzten Index zu den Spalten "store_id"und "updated_at"in der Anführungszeichentabelle hinzufügen.
 feature: Quotes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b6cd412f-2f37-438b-9abc-d45de6ed54d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

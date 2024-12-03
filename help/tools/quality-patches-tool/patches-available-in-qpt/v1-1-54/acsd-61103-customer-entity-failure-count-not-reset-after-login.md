@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-61103: Fehleranzahl wird nach erfolgreicher Kundenanmeldung über die API nicht auf null zurückgesetzt.'
+title: 'ACSD-61103: Fehleranzahl wird nach erfolgreicher Kundenanmeldung über die API nicht auf null zurückgesetzt'
 description: Wenden Sie den Patch ACSD-61103 an, um das Adobe Commerce-Problem zu beheben, bei dem die Fehleranzahl in der Tabelle "customer_entity"nicht auf null zurückgesetzt wird, nachdem sich ein Kunde erfolgreich über API-Endpunkte angemeldet hat.
 feature: GraphQL, REST, Customers
 role: Admin, Developer
-source-git-commit: d53b747c3b2021e842647de5371a5f0f2a760f09
+exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
+source-git-commit: acb5ff9656d7391de1e9b936909ce5a8a73d5d67
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61103: Fehleranzahl wird nach erfolgreicher Kundenanmeldung über die API nicht auf null zurückgesetzt
 
@@ -61,4 +61,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-

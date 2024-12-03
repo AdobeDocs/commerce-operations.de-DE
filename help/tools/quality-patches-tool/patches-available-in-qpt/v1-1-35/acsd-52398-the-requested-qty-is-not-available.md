@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52398: Angeforderte Menge nicht verfügbar, wenn versucht wird, die Menge des gebündelten Produkts zu aktualisieren"
+title: 'ACSD-52398: Angeforderte Menge nicht verfügbar, wenn versucht wird, die Menge des gebündelten Produkts zu aktualisieren'
 description: Wenden Sie den Patch ACSD-52398 an, um das Adobe Commerce-Problem zu beheben, bei dem die angeforderte Menge nicht verfügbar ist, wenn versucht wird, die Menge eines gebündelten Produkts im Warenkorb auf der Storefront zu aktualisieren.
 feature: Shopping Cart, Quotes, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

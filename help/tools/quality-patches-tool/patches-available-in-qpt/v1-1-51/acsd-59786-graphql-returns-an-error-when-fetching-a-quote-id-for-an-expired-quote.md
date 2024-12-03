@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-59786: GraphQL gibt einen Fehler zurück, wenn "quote_id"für ein abgelaufenes Anführungszeichen abgerufen wird."'
+title: 'ACSD-59786: GraphQL gibt einen Fehler zurück, wenn "quote_id"für ein abgelaufenes Anführungszeichen abgerufen wird'
 description: Wenden Sie den Patch ACSD-59786 an, um das Adobe Commerce-Problem zu beheben, bei dem eine GraphQL-Abfrage einen Fehler zurückgibt, wenn ein "Anführungszeichen_ID"für ein abgelaufenes Anführungszeichen abgerufen wird.
 feature: GraphQL, Quotes, Companies
 role: Admin, Developer
-source-git-commit: fec2ee4a047d8b33fa1cb3b2c4d9364f925fa028
+exl-id: 3c7aaa99-a2e0-44fe-9426-b24095615915
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

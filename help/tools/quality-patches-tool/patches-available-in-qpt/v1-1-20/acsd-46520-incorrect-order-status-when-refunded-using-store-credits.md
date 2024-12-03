@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46520: Falscher Bestellstatus bei Rückerstattung mittels Gutschriften für Geschäfte"
+title: 'ACSD-46520: Unrichtiger Bestellstatus bei Rückerstattung mittels Gutschriften für Geschäfte'
 description: Dieser Artikel bietet eine Lösung für das Problem, dass Benutzer einen falschen Bestellstatus erhalten, wenn sie mit Store-Gutschriften zurückerstattet werden.
 feature: Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 67740003-a71e-41bf-afda-ca3e32290115
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

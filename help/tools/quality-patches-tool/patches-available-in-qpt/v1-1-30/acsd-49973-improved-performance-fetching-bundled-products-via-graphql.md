@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49973: Verbesserte Leistung beim Abrufen gebündelter Produkte über [!DNL GraphQL]"
+title: 'ACSD-49973: Verbesserte Leistung beim Abrufen gebündelter Produkte über [!DNL GraphQL]'
 description: Wenden Sie den Patch ACSD-49973 an, um das Adobe Commerce-Problem zu beheben, bei dem die Leistung beim Abrufen gebündelter Produkte über  [!DNL GraphQL] beeinträchtigt wird.
 feature: GraphQL, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: d4817522-65dd-4ac8-8759-8518818684ed
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

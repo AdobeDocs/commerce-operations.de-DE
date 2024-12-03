@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-38447: "Nicht einzeln sichtbar" konfigurierbare Kinderprodukte werden in der GraphQL-Antwort und langsamen MySQL-Abfrage zurückgegeben."'
+title: 'MDVA-38447: Konfigurierbare Kinderprodukte werden in der GraphQL-Antwort und langsamen MySQL-Abfragen zurückgegeben.'
 description: Der MDVA-38447 Adobe Commerce-Patch behebt das Problem, dass konfigurierbare untergeordnete Produkte vom Typ "Nicht einzeln sichtbar"in der GraphQL-Antwort zurückgegeben werden und die MySQL-Abfrage für GraphQL-Produkte mit Kategoriefilter verlangsamt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-38447. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

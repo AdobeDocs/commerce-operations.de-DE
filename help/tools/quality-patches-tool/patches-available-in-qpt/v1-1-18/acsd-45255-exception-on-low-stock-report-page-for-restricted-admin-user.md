@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-45255: Ausnahme bei der Berichtsseite "Geringer Bestand"für eingeschränkte Administratoren'
+title: 'ACSD-45255: Ausnahme für Low Stock-Berichtsseite für eingeschränkte Administratoren'
 description: Der Patch ACSD-45255 behebt das Problem, dass auf der Seite "Bericht zu niedrigen Lagermengen"eine Ausnahme für einen eingeschränkten Administrator ausgelöst wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-45255. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: bf7e0893-e4a7-4184-a223-02ceef7a30d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

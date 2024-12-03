@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49748: Einladungen per E-Mail können nicht gesendet werden"
+title: 'ACSD-49748: Einladungen per E-Mail können nicht gesendet werden'
 description: Wenden Sie den Patch ACSD-49748 an, um das Adobe Commerce-Problem zu beheben, bei dem die Benutzer keine E-Mail-Einladungen senden können.
 feature: Admin Workspace, Communications, Marketing Tools
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03dad66c-4691-421e-8c80-eca12c60175c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -60,4 +61,3 @@ Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
 * [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
-

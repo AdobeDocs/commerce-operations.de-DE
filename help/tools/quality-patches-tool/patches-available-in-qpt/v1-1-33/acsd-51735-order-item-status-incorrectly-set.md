@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-51735: Bestellelementstatus falsch auf *[!UICONTROL Ordered]* gesetzt, wenn Produktbestand 0 ist'
+title: 'ACSD-51735: Bestellartikelstatus falsch auf *[!UICONTROL Ordered]* gesetzt, wenn der Produktbestand 0 ist'
 description: Wenden Sie den Patch ACSD-51735 an, um das Adobe Commerce-Problem zu beheben, bei dem der Bestellelementstatus fälschlicherweise auf *[!UICONTROL Ordered]* gesetzt ist, wenn der Produktbestand 0 ist.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 56c8b58c-819f-46bd-8912-f543f56b66d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

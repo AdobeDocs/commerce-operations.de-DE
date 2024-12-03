@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47920: Ein Gastbenutzer kann Bestellungen über die REST-API auch dann aufgeben, wenn [!UICONTROL Allow Guest Checkout] deaktiviert ist."
+title: 'ACSD-47920: Ein Gastbenutzer kann über die REST-API Bestellungen aufgeben, selbst wenn [!UICONTROL Allow Guest Checkout] deaktiviert ist.'
 description: Wenden Sie den Patch ACSD-47920 an, um das Adobe Commerce-Problem zu beheben, bei dem Bestellungen auch dann über die REST-API als Gastbenutzer platziert werden können, wenn die [!UICONTROL Allow Guest Checkout] deaktiviert ist.
 feature: REST, Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 27c74803-a3f3-46bc-9eb8-8e2c72c30cd9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

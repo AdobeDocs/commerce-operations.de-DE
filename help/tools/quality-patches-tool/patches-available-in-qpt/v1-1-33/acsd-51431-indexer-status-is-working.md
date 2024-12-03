@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51431: Indexerstatus ist *[!UICONTROL Working]*, auch wenn keine Einträge in der changelog vorhanden sind."
+title: 'ACSD-51431: Indexerstatus ist *[!UICONTROL Working]*, auch wenn keine Einträge in der changelog vorhanden sind'
 description: Wenden Sie den Patch ACSD-51431 an, um das Adobe Commerce-Problem zu beheben, bei dem der Indexstatus *[!UICONTROL Working]* ist, obwohl keine Einträge im Changelog vorhanden sind.
 feature: Logs, Price Indexer
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c87c059b-f435-468d-a7fe-e6786fdba1f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%

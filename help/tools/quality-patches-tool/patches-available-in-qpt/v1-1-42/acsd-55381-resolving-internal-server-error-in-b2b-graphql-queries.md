@@ -3,7 +3,8 @@ title: 'ACSD-55381: Beheben eines Fehlers beim Anfordern konfigurierbarer Produk
 description: Wenden Sie den Patch ACSD-55381 an, um das Adobe Commerce-Problem zu beheben, bei dem bei GraphQL-Abfragen für die Felder "configuring_product_option_uid"und "configuring_product_option_value_uid"aus einer B2B-Anforderungsliste ein interner Serverfehler auftritt.
 feature: GraphQL, B2B, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 573d33bc-c7b6-49ce-9ad1-926548f4c952
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

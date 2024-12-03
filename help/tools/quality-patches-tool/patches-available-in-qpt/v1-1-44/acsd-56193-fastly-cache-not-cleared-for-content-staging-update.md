@@ -3,7 +3,8 @@ title: 'ACSD-56193: [!DNL Fastly] Cache wird für die Aktualisierung des Inhalts
 description: Wenden Sie den Patch ACSD-56193 an, um das Adobe Commerce-Problem zu beheben, bei dem der [!DNL Fastly] Cache für die Aktualisierung des Inhalts-Staging nicht gelöscht wird.
 feature: Cache, GraphQL, Staging
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a702ce22-cc85-4f58-8766-637a1b93d405
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-61366: Der Befehl "bin/magento setup:static-content:deploy —jobs 4"tritt auf mehrere Auftragsfehler mit einem Fehler."'
+title: 'ACSD-61366: Der Befehl "bin/magento setup:static-content:deploy —jobs 4"tritt bei mehreren Auftragsfehlern mit einem Fehler auf'
 description: Wenden Sie den Patch ACSD-61366 an, um das Adobe Commerce-Problem zu beheben, bei dem der Befehl "bin/magento setup:static-content:deploy —jobs 4"mehrere Auftragsfehler mit dem Fehler "Port muss innerhalb des Host-Parameters* konfiguriert werden"feststellt, obwohl der Port für die DB-Verbindung angegeben wurde.
 feature: SCD
 role: Admin, Developer
-source-git-commit: b671dc30cd511d63dbbbaa6edd47ee36c1351620
+exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

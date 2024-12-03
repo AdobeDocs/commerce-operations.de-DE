@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48910: Gebündeltes Produkt, dem mehrere Quellen zugewiesen sind, wird nach Rechnung und Versand aus dem Lager genommen."
+title: 'ACSD-48910: Gebündeltes Produkt, dem mehrere Quellen zugewiesen sind, wird nach der Rechnung und dem Versand aus dem Lager geworfen'
 description: Wenden Sie den Patch ACSD-48910 an, um das Adobe Commerce-Problem zu beheben, bei dem das gebündelte Produkt, das mehreren Quellen zugeordnet ist, nach dem Fakturieren und Versand einer Bestellung nicht mehr vorrätig ist, selbst wenn die Menge noch immer nicht null ist.
 feature: Products, Inventory
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c8d86531-2db5-4115-92d5-a8d391c4f75d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

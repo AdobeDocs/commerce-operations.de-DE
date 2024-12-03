@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42584: Lagerstatus des konfigurierbaren Produkts nicht automatisch aktualisiert"
+title: 'MDVA-42584: Lagerstatus des konfigurierbaren Produkts nicht automatisch aktualisiert'
 description: Der Patch MDVA-42584 behebt das Problem, dass der Lagerstatus des konfigurierbaren Produkts nicht automatisch aktualisiert wird, wenn sein einfaches Produkt aktualisiert wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-42584. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: Configuration, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6311f069-f08f-4d58-9f4b-fa1246c02640
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 0%

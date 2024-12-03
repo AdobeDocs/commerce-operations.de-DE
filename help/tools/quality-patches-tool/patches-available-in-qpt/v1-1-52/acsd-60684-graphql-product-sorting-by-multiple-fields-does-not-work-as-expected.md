@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60684: [!DNL GraphQL] Die Sortierung nach mehreren Feldern funktioniert nicht erwartungsgemäß."
+title: 'ACSD-60684: [!DNL GraphQL] Die Sortierung nach mehreren Feldern funktioniert nicht erwartungsgemäß'
 description: Wenden Sie den Patch ACSD-60684 an, um das Adobe Commerce-Problem zu beheben, bei dem die [!DNL GraphQL] Produktsortierung durch mehrere Felder nicht funktioniert, wenn die Sortierung in Variablen übergeben wird.
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: 279036e9e7247ce915820a4b00173644ee7252b1
+exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

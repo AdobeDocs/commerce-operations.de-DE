@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55427: Ein Administrator kann die Zuweisung eines Produkts von **[!UICONTROL Product in Shared Catalogs]** auf der Produktseite nicht aufheben."
+title: 'ACSD-55427: Ein Administrator kann die Zuweisung eines Produkts von **[!UICONTROL Product in Shared Catalogs]** auf der Produktseite nicht aufheben.'
 description: Wenden Sie den Patch ACSD-55427 an, um das Adobe Commerce-Problem zu beheben, bei dem die Zuweisung eines Produkts nicht von **[!UICONTROL Product in Shared Catalogs]** aufgehoben werden kann.
 feature: Products, B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 974347fd-351d-4a4b-a9ca-a534daf3fbd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

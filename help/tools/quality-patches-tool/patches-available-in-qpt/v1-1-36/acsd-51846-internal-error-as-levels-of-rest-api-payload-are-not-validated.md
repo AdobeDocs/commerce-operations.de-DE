@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51846: Interner Fehler als [!DNL REST API] Payload-Levels werden nicht validiert"
+title: 'ACSD-51846: Interner Fehler als [!DNL REST API] Payload-Levels werden nicht validiert'
 description: Wenden Sie den Patch ACSD-51846 an, um das Adobe Commerce-Problem zu beheben, bei dem ein "Interner Fehler"auftritt, da nicht alle Ebenen von [!DNL REST API] Payload validiert werden.
 feature: REST
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 436b075c-d9df-4bf2-94a2-52f2e66e8a4c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41164: Unternehmen mit benutzerdefinierten Kundenattributen kann nicht gespeichert oder bearbeitet werden"
+title: 'MDVA-41164: Unternehmen mit benutzerdefinierten Kundenattributen kann nicht gespeichert oder bearbeitet werden'
 description: Der Patch MDVA-41164 behebt das Problem, dass der Admin-Benutzer ein Unternehmen mit benutzerdefinierten Kundenattributen von Dateien oder Bildern beliebigen Typs nicht speichern oder bearbeiten kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-41164. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: Admin Workspace, Attributes, B2B, Companies
 role: Developer
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9d1792e0-ba7b-444b-b1b1-771fd0e328eb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

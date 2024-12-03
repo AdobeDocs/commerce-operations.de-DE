@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54776: Nicht aktiviert [!UICONTROL Use Default Value] und nicht standardmäßige Produktfeldwerte werden nicht für die zweite Website-, Store- und Store-Ansicht gespeichert."
+title: 'ACSD-54776: Nicht aktivierte [!UICONTROL Use Default Value] und nicht standardmäßige Produktfeldwerte werden nicht für die zweite Website-, Store- und Store-Ansicht gespeichert'
 description: Wenden Sie den Patch ACSD-54776 an, um das Adobe Commerce-Problem zu beheben, bei dem die deaktivierten Werte für [!UICONTROL Use Default Value] und die nicht standardmäßigen Produktfeldwerte nicht für die zweite Website-, Store- und Store-Ansicht gespeichert werden.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9f63abb-5d00-4777-a186-1120344af018
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

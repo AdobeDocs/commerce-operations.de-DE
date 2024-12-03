@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60788: Benutzerdefinierte Skripte für [!DNL Google Tag Manager] werden aufgrund von CSP-Fehlern nicht ausgeführt."
+title: 'ACSD-60788: Benutzerdefinierte Skripte für [!DNL Google Tag Manager] werden aufgrund von CSP-Fehlern nicht ausgeführt'
 description: Wenden Sie den Patch ACSD-60788 an, um das Adobe Commerce-Problem zu beheben, bei dem benutzerdefinierte Skripte für [!DNL Google Tag Manager] aufgrund von CSP-Fehlern (Content Security Policy) nicht ausgeführt werden.
 feature: Security
 role: Admin, Developer
-source-git-commit: d1c643da36a200c6fb0a17139b12b6b91d9568e1
+exl-id: 3392da76-86cb-4357-8658-c95d914a5829
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

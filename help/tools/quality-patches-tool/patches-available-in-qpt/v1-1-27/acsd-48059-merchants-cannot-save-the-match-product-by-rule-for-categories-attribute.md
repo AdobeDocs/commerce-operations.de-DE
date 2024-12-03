@@ -3,7 +3,8 @@ title: 'ACSD-48059: Händler können [!UICONTROL Match product by rule] nicht f�
 description: Wenden Sie den Patch ACSD-48059 an, um das Adobe Commerce-Problem zu beheben, bei dem Händler die [!UICONTROL Match product by rule] für das Kategorienattribut nicht speichern können.
 feature: Admin Workspace, Attributes, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e156a752-81b3-4404-81e2-af7ed29f2b1d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

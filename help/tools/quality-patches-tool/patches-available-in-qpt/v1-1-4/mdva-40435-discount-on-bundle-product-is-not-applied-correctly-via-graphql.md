@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40435: Rabatt auf Bundle-Produkte wird nicht korrekt über GraphQL angewendet"
+title: 'MDVA-40435: Der Rabatt auf das Bundle-Produkt wird nicht korrekt über GraphQL angewendet'
 description: Der Patch MDVA-40435 behebt das Problem, dass der Rabatt auf ein gebündeltes Produkt nicht ordnungsgemäß über GraphQL angewendet wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40435. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: GraphQL, Orders, Personalization, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 001be138-5d09-455d-a597-57115cd21a25
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

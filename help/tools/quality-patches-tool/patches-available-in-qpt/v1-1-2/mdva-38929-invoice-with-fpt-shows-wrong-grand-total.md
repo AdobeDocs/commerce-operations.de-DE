@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38929: Rechnung mit FPT zeigt falsche Summe an"
+title: 'MDVA-38929: Rechnung mit FPT zeigt falsche Summe an'
 description: Der Patch MDVA-38929 löst das Problem, dass die Rechnung mit FPT einen falschen Gesamtwert anzeigt, wenn die Bestellung mit einem Store-Guthaben beglichen wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-38929. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: Invoices, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: fd0ca2f3-c6bf-4f09-a0fa-c931df94158b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 0%

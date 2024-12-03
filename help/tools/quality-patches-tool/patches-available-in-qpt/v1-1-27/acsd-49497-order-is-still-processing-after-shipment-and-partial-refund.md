@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49497: Auftragsabwicklung nach dem Versand und Teilerstattung"
+title: 'ACSD-49497: Auftragsabwicklung nach dem Versand und Teilrückerstattung'
 description: Wenden Sie den Patch ACSD-49497 an, um das Adobe Commerce-Problem zu beheben, bei dem der Auftragsstatus nach dem Versand als Verarbeitung beibehalten wird und eine teilweise Rückerstattung erfolgt.
 feature: Admin Workspace, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e2e3d2b3-24be-4827-a735-aebfc6f475ea
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

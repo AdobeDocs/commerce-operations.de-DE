@@ -1,9 +1,10 @@
 ---
-title: "[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches"
-description: "[!DNL Quality Patches Tool] ermöglicht es Ihnen, allgemeine Informationen zu Qualitätspatches, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind, anzuwenden, wiederherzustellen und anzuzeigen."
+title: '[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches'
+description: Mit [!DNL Quality Patches Tool] können Sie allgemeine Informationen zu Qualitätspatches, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind, anwenden, wiederherstellen und anzeigen.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 5c84a1606e171ff3c39f784b49bb96d1b68248e2
+exl-id: a83d3834-841d-4b90-b40a-fda985a85452
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%

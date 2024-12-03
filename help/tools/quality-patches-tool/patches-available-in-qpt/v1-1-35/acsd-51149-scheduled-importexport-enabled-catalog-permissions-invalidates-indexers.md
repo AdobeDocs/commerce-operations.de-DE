@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-51149: Geplant [!UICONTROL ImportExport] mit aktiviertem [!UICONTROL Catalog Permissions] Invalidierung von Indizes'
+title: 'ACSD-51149: Geplant [!UICONTROL ImportExport] mit aktiviertem [!UICONTROL Catalog Permissions] ungültig macht Indexer'
 description: Wenden Sie den Patch ACSD-51149 an, um das Adobe Commerce-Leistungsproblem zu beheben, bei dem die geplante [!UICONTROL ImportExport] mit aktiviertem [!UICONTROL Catalog Permissions] Indexer ungültig macht.
 feature: Cache, Data Import/Export
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: eafc69ab-ec81-4192-85f8-a235f0a131a9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%

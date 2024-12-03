@@ -1,7 +1,8 @@
 ---
-title: "ACSD-50813: Administrator kann gebündelte Produkte, die einen Schrägstrich enthalten, nicht hinzufügen."
+title: 'ACSD-50813: Administrator kann gebündelte Produkte, die einen Schrägstrich enthalten, nicht hinzufügen'
 description: Wenden Sie den Patch ACSD-50813 an, um das Adobe Commerce-Leistungsproblem zu beheben, bei dem der Administrator keine gebündelten Produkte mit einem Schrägstrich ("/") in der SKU hinzufügen kann, wobei die Funktion *Produkte nach SKU hinzufügen* der Administratorreihenfolge hinzugefügt wird.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ff6fa673-bac1-4ef8-a427-60c2f56068f3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47107: Katalogpreisregel wird auf benutzerdefinierte Optionen angewendet"
+title: 'ACSD-47107: Katalogpreisregel wird auf benutzerdefinierte Optionen angewendet'
 description: Wenden Sie den Patch ACSD-47107 an, um das Adobe Commerce-Problem zu beheben, bei dem die Katalogpreisregel auf benutzerdefinierte Optionen angewendet wird.
 feature: Catalog Management, Orders, Price Rules
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6fcf896b-ffa9-4cfb-926a-21659ac9f116
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%

@@ -1,15 +1,15 @@
 ---
-title: "ACSD-61799: Falsche Berechnung des gesamten Rabatts mit mehreren auf das Anführungszeichen angewendeten Regeln für den festen Rabattkarton"
+title: 'ACSD-61799: Falsche Berechnung des Gesamt-Rabatts mit mehreren auf das Angebot angewendeten Regeln für den festen Rabattkarton'
 description: Wenden Sie den Patch ACSD-61799 an, um das Adobe Commerce-Problem zu beheben, bei dem der Gesamtrabatt falsch berechnet wird, wenn mehrere Warenkorbregeln mit festen Rabatten auf das Angebot angewendet werden.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 0b4c46e0db3dbd7ce5914490ae20471709be261d
+exl-id: a87ec1cd-f141-43b9-bde1-eca354c12d4e
+source-git-commit: 737204ae7418f49fdebfffbf351304796e9f5eb0
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61799: Falsche Berechnung des Gesamt-Rabatts mit mehreren auf das Angebot angewendeten Regeln für den festen Rabattkarton
 
@@ -66,4 +66,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-

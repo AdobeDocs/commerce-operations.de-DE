@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60303: Problem bei der Platzierung von Administratoraufträgen behoben, das mit aktivierter HTML-Minimierung behoben wurde"
+title: 'ACSD-60303: Problem bei der Platzierung von Administratoraufträgen behoben, das durch die Aktivierung der HTML-Minimierung behoben wurde'
 description: Wenden Sie den Patch ACSD-60303 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Bestellung von Admin nicht platziert werden kann, wenn die HTML-Minimierung aktiviert ist.
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 85b987e7-9d65-4d15-8099-985dc227b66c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

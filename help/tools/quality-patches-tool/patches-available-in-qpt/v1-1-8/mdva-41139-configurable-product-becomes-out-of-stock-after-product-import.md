@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41139: Konfigurierbares Produkt wird nach dem Produktimport nicht mehr vorrätig"
+title: 'MDVA-41139: Konfigurierbares Produkt wird nach dem Produktimport nicht mehr vorrätig'
 description: Der Patch MDVA-41139 behebt das Problem, dass das konfigurierbare Produkt nach dem Produktimport außer Lager kommt, wenn die Menge des einfachen Produkts = 0 für eine seiner Quellen beträgt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-41139. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: Data Import/Export, Configuration, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 7366230c-3b7f-4211-9f0d-55a528dffdbd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

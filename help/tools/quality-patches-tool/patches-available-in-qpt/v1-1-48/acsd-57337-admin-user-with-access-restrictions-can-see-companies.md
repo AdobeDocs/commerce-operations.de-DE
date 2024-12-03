@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-57337: Admin-Benutzer mit Zugriffsbeschränkungen konnten alle Unternehmen im *Unternehmensnetz* anzeigen.'
+title: 'ACSD-57337: Admin-Benutzer mit Zugriffsbeschränkungen konnten alle Unternehmen im *Unternehmensnetz* anzeigen.'
 description: Wenden Sie den Patch ACSD-57337 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Admin-Benutzer mit Zugriffsbeschränkungen auf bestimmte Websites Unternehmen von allen Websites im *Unternehmen*-Raster aus anzeigen konnte.
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

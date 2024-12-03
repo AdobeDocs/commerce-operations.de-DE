@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61200: Korrekturen des Rabattsteuerausgleichs bei der Berechnung der Verkaufssumme"
+title: 'ACSD-61200: Korrekturen des Rabattsteuerausgleichs bei der Berechnung der Verkaufssumme'
 description: Wenden Sie den Patch ACSD-61200 an, um das Adobe Commerce-Problem zu beheben, bei dem *[!UICONTROL Discount Tax Compensation Amount]* und *[!UICONTROL Shipping Discount Tax Compensation Amount]* bei Berechnungen der Verkaufsgesamtwerte fehlen, was zu Diskrepanzen zwischen den Daten der Verkaufsaufträge und den Gutscheinberichten führt.
 feature: Reporting, Taxes
 role: Admin, Developer
-source-git-commit: 61259d8e059cd813a84907e4baef873b2cc8cad0
+exl-id: eb908827-de29-4b2c-b094-b5db0931cd52
+source-git-commit: 2e82c935145d71d0c66c531003fa51f564da6e41
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] reports'
+title: '[!DNL Upgrade Compatibility Tool] Berichte'
 description: Führen Sie diese Schritte aus, um den  [!DNL Upgrade Compatibility Tool] für Ihr Adobe Commerce-Projekt auszuführen.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b

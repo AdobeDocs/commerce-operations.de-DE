@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-40311: Fehler "Ungültige Sicherheit oder Formularschlüssel"nach der Anmeldung bei Admin, wenn der benutzerdefinierte Administratorpfad konfiguriert ist"'
-description: 'Der Patch MDVA-40311 behebt das Problem, dass der Admin-Benutzer eine Fehlermeldung erhält: *Ungültige Sicherheit oder Formularschlüssel. Aktualisieren Sie die Seite* nach der Anmeldung beim Administrator, wenn der benutzerdefinierte Administratorpfad konfiguriert und der geheime Schlüssel aktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Die Patch-ID lautet MDVA-40311. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben werden soll."'
+title: 'MDVA-40311: Fehler "Ungültige Sicherheit oder Formularschlüssel"nach der Anmeldung bei Admin, wenn der benutzerdefinierte Administratorpfad konfiguriert ist'
+description: 'Der Patch MDVA-40311 behebt das Problem, dass der Admin-Benutzer eine Fehlermeldung erhält: *Ungültige Sicherheit oder Formularschlüssel. Aktualisieren Sie die Seite* nach der Anmeldung beim Administrator, wenn der benutzerdefinierte Administratorpfad konfiguriert und der geheime Schlüssel aktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Die Patch-ID lautet MDVA-40311. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.'
 feature: Admin Workspace, Compliance, Security
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

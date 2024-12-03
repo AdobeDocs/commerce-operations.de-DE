@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55414: Schlechte Leistung, wenn MariaDB versucht, die entitys_ids zu übertragen."
+title: 'ACSD-55414: Schlechte Leistung, wenn MariaDB versucht, die entitys_ids zu übertragen'
 description: Wenden Sie den Patch ACSD-55414 an, um das Adobe Commerce-Problem zu beheben, wenn die MariaDB versucht, "entitys_ids"aus Zeichenfolge in Ganzzahl zu konvertieren. Dadurch wird die Neuindizierung behindert.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 76309cef-559e-4a55-a27b-7d807ef9f74e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

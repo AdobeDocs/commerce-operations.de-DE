@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51041: Der Preisindex dauert sehr lange, bis er abgeschlossen ist."
+title: 'ACSD-51041: Der Preisindex dauert sehr lange, bis er abgeschlossen ist'
 description: Wenden Sie den Patch ACSD-51041 an, um das Adobe Commerce-Problem zu beheben, bei dem der Preisindex lange dauert, bis er mit einem sehr großen Produktset abgeschlossen ist.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

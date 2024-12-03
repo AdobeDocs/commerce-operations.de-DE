@@ -1,9 +1,10 @@
 ---
-title: 'ACSD-46519: [!UICONTROL product_count] in [!UICONTROL categoryList] [!DNL GraphQL] Abfrage gibt 0 für Ankerkategorien zurück.'
+title: 'ACSD-46519: [!UICONTROL product_count] in der [!UICONTROL categoryList] [!DNL GraphQL] Abfrage gibt 0 für Ankerkategorien zurück'
 description: Wenden Sie den Patch ACSD-46519 an, um das Adobe Commerce-Problem zu beheben. Wenn Sie die [!UICONTROL categoryList] [!DNL GraphQL] Methode verwenden, um untergeordnete Kategorien zu erhalten, wird [!UICONTROL product_count] für übergeordnete Kategorien als 0 angezeigt.
 feature: Categories, GraphQL, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7becaa4e-421a-4983-ac73-f5b58fc45d8f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

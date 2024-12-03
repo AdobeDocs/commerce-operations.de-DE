@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47875: Kann kein Produkt zum Warenkorb hinzufügen, um den Umfang der Store-Ansicht mit Lagerbestandsverwaltung zu ermitteln"
+title: 'ACSD-47875: Produkt kann nicht zum Warenkorb hinzugefügt werden, um den Umfang der Store-Ansicht mit Lagerbestandsverwaltung zu ermitteln.'
 description: Wenden Sie den Patch ACSD-47875 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Produkt von Admin für einen bestimmten Umfang mit Lagerbestandsverwaltung nicht zu einem Kundenkorb hinzugefügt werden kann.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

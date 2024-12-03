@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47292: Nicht vorrätige gebündelte Produkte sind in der GraphQL-Antwort nicht verfügbar"
+title: 'ACSD-47292: Nicht vorrätige gebündelte Produkte sind in der GraphQL-Antwort nicht verfügbar'
 description: Wenden Sie den Patch ACSD-47292 an, um das Adobe Commerce-Problem zu beheben, bei dem die nicht vorrätigen gebündelten Produkte nicht in der GraphQL-Antwort verfügbar sind, selbst wenn "Nicht vorrätige Produkte anzeigen"auf "Ja"eingestellt ist.
 feature: Admin Workspace, Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3b8114a3-cc45-4d65-af74-cb3e905d7f75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

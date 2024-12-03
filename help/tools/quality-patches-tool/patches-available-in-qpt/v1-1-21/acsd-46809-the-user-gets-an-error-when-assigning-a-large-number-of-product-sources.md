@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46809: Dem Benutzer wird bei der Zuweisung einer großen Anzahl von Produktquellen ein Fehler angezeigt."
+title: 'ACSD-46809: Beim Zuweisen einer großen Anzahl von Produktquellen erhält der Benutzer einen Fehler'
 description: Wenden Sie den Patch ACSD-46809 an, um das Adobe Commerce-Problem zu beheben, bei dem der Benutzer beim Zuweisen einer großen Anzahl von Produktquellen einen Fehler erhält.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4225f49b-84a1-4641-a05b-ba6ada6e83be
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%

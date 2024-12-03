@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48448: Problem mit der Wettlaufsituation bei Auftragsabbrüchen, die zu dupliziertem Eintrag in der Tabelle inventory_reservation führen"
+title: 'ACSD-48448: Problem mit Race-Bedingungen bei Auftragsabbrüchen, wodurch duplizierter Eintrag in der Tabelle inventory_reservation verursacht wird'
 description: Wenden Sie den Patch ACSD-48448 an, um das Leistungsproblem von Adobe Commerce zu beheben, bei dem das Problem mit der Race-Bedingung während der Auftragsabbrüche auftritt, was zu duplizierten Einträgen in der Tabelle inventory_reservation führt.
 feature: Orders, Checkout
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: c1905b60-4607-454c-975b-77b0056661ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59366: Löschen von Teams mit deaktivierten Benutzern, die nicht in der Teamliste angezeigt werden"
+title: 'ACSD-59366: Löschen von Teams mit deaktivierten Benutzern, die nicht in der Teamliste angezeigt werden'
 description: Wenden Sie den Patch ACSD-59366 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Versuch, ein Team zu löschen, das deaktivierte Benutzer enthält, die nicht in der Teamliste angezeigt werden, ein Fehler auftritt.
 feature: GraphQL, Companies
 role: Admin, Developer
-source-git-commit: 8037db7a89cd850385dc88750e881f68ae62172f
+exl-id: 406d2242-38f9-4852-b311-0ee57c4a7c26
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -64,5 +65,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-
-

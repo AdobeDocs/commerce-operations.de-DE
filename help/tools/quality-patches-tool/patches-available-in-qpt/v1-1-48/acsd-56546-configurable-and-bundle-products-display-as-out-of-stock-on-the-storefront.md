@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56546: Konfigurierbare und gebündelte Produkte werden auf der Storefront als nicht vorrätig angezeigt."
+title: 'ACSD-56546: Konfigurierbare und gebündelte Produkte werden auf der Storefront als nicht vorrätig angezeigt'
 description: Wenden Sie den Patch ACSD-56546 an, um das Adobe Commerce-Problem zu beheben, bei dem die konfigurierbaren und Bundle-Produkte auf der Storefront als nicht vorrätig angezeigt werden, wenn die Konfigurationsoption *[!UICONTROL Display Out of Stock Products]* deaktiviert ist.
 feature: Storefront, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9bb05ca-a84e-48bb-957e-55b28631b3cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

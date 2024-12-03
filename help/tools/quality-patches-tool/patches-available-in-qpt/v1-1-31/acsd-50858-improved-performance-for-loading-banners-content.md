@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50858: Verbesserte Leistung beim Laden von Bannerinhalten"
+title: 'ACSD-50858: Verbesserte Leistung beim Laden von Bannerinhalten'
 description: Wenden Sie den Patch ACSD-50858 an, um das Adobe Commerce-Problem zu beheben, bei dem die Bannerleistung auf der Einkaufswagen-/Checkout-Seite aufgrund übermäßiger DB-Abfragen und erhöhter Seitenladezeit beeinträchtigt wird.
 feature: Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1b46e51f-70ad-4450-b3a8-173c2e4b7925
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%

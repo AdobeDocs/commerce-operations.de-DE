@@ -1,5 +1,5 @@
 ---
-title: 'Start using: Selecting the account and timeframe'
+title: 'Start mit: Konto und Zeitrahmen auswählen'
 description: Erfahren Sie, wie Sie mit der Verwendung des [!DNL Observation for Adobe Commerce] Nerdlets beginnen können, indem Sie das Konto und den Zeitrahmen auswählen.
 exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
 feature: Configuration, Observability

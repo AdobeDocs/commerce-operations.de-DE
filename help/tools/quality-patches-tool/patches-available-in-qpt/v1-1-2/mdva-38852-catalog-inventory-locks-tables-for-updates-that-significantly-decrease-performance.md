@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38852: Katalog-Inventarsperren für Tabellen, die die Leistung verringern"
+title: 'MDVA-38852: Katalog-Inventar sperrt Tabellen, die die Leistung verringern'
 description: Der Patch MDVA-38852 löst das Problem, dass die Kataloginventarisierungstabellen für Aktualisierungen gesperrt sind, was die Leistung bei mehreren parallelen Bestellungen erheblich verringert. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-38852. Beachten Sie, dass das Problem in Adobe Commerce 2.3.6 behoben wurde.
 feature: Catalog Management, Inventory, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ce93130b-8d96-47b8-96c6-da5988b34ae0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

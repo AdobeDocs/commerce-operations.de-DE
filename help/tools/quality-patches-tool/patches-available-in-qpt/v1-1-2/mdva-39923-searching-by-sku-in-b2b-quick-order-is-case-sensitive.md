@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39923: Bei der Suche nach SKU in der B2B-Schnellbestellfunktion wird zwischen Groß- und Kleinschreibung unterschieden"
+title: 'MDVA-39923: Bei der Suche nach SKU in der B2B-Schnellbestellfunktion wird zwischen Groß- und Kleinschreibung unterschieden'
 description: Der Patch MDVA-39923 behebt das Problem, dass Kunden einen Fehler erhalten, wenn sie die Bestellung durch SKU in der B2B-Schnellbestellfunktion durchsuchen, wobei der Fall anders ist als der, mit dem der Name gespeichert wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39923. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 feature: B2B, Catalog Management, Orders, Search
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9bed5615-b398-42f5-8313-ae2acca59155
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56447: Das Hinzufügen desselben Produkts zum Warenkorb über die parallele Web-REST-API führt zu zwei separaten Artikeln im Warenkorb."
+title: 'ACSD-56447: Das Hinzufügen desselben Produkts zum Warenkorb über die parallele Web-REST-API führt zu zwei separaten Artikeln im Warenkorb'
 description: Wenden Sie den Patch ACSD-56447 an, um das Adobe Commerce-Problem zu beheben, bei dem das Hinzufügen desselben Produkts zum Warenkorb über parallele Web-REST-API-Anfragen zu zwei separaten Artikeln im Warenkorb führt.
 feature: Shopping Cart, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ef0b2ce7-74f5-47b6-a44c-bda898c444b2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

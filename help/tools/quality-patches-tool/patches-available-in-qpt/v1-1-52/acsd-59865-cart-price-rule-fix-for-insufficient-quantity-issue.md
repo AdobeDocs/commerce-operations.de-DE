@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59865: [!UICONTROL Cart Price Rule] kann frühere Regeln aufgrund unzureichender Produktmenge nicht stornieren."
+title: 'ACSD-59865: [!UICONTROL Cart Price Rule] kann frühere Regeln aufgrund unzureichender Produktmenge nicht stornieren'
 description: Wenden Sie den Patch ACSD-59865 an, um das Adobe Commerce-Problem zu beheben, bei dem der Wert *Mengenrabatt für Rabatt für feste Beträge*,* *Prozent des Rabatts für Produktpreise* und *Kauf X für Y* [!UICONTROL Cart Price Rules] die Aktion der vorherigen Regeln nicht mehr abbricht.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 602a839708eab2551bd99a4f24e66edbde511150
+exl-id: 5838a740-018d-44c2-8135-54426ea08627
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

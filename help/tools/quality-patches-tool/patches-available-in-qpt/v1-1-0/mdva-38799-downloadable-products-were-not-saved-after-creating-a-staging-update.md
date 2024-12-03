@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38799: Herunterladbare Produkte, die nach dem Erstellen eines Staging-Updates nicht gespeichert wurden"
+title: 'MDVA-38799: Herunterladbare Produkte, die nach der Erstellung eines Staging-Updates nicht gespeichert wurden'
 description: Der Patch MDVA-38799 behebt das Problem, dass herunterladbare Produkte nach der Erstellung eines Staging-Updates nicht gespeichert werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-38799. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
 feature: Products, Staging
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 0ae665a8-cda2-4340-91e7-5b9b969a6607
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

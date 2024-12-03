@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49392: Auftragsstatus ändert sich nach teilweiser Rückerstattung zu schließen"
+title: 'ACSD-49392: Auftragsstatus wird nach teilweiser Rückerstattung geschlossen'
 description: Wenden Sie den Patch ACSD-49392 an, um das Adobe Commerce-Problem zu beheben, bei dem der Auftragsstatus nach einer teilweisen Rückerstattung für ein gebündeltes Produkt zu "geschlossen"geändert wird.
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%

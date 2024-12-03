@@ -3,7 +3,8 @@ title: 'BB2B-2598: Fügt Caching-Funktion zu storeConfig, Währung, Land, Lände
 description: Wenden Sie den Patch BB2B-2598 an, um die GraphQl-Abfragen von storeConfig, Währung, Land, Ländern und availableStores um eine Caching-Funktion hinzuzufügen.
 feature: B2B, GraphQL, Cache
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b842fab4-d2c0-4ef1-be13-182f09015cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

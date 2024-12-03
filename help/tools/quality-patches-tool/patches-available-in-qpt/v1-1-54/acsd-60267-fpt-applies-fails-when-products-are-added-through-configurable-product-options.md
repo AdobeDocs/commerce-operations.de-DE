@@ -3,7 +3,8 @@ title: 'ACSD-60267: FPT wird falsch angewendet, wenn Produkte über konfigurierb
 description: Wenden Sie den Patch ACSD-60267 an, um das Adobe Commerce-Problem zu beheben, bei dem die feste Produktsteuer (FPT) richtig angewendet wird, wenn einfache Produkte direkt zum Warenkorb hinzugefügt werden, aber bei der Auswahl derselben Produkte über konfigurierbare Produktoptionen fehlschlägt.
 feature: Taxes
 role: Admin, Developer
-source-git-commit: c18ff9dd75ec6002c6461fcd3abd98ac8b97a9f7
+exl-id: 919b3b96-1995-4faf-aaf1-b5cbb20e46bf
+source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -67,4 +68,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-

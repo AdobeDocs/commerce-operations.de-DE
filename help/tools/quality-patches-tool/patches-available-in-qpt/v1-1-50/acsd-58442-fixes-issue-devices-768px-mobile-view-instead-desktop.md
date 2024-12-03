@@ -1,15 +1,15 @@
 ---
-title: '"ACSD-58442: Behebung des Problems, bei dem Geräte mit 768 px Breite als Mobilgeräte behandelt wurden, wodurch Menü und Kopfzeile in der Mobile-Ansicht und nicht auf dem Desktop geladen wurden'
+title: 'ACSD-58442: Behebung des Problems, bei dem Geräte mit 768 px Breite als Mobilgeräte behandelt wurden, wodurch Menü und Kopfzeile in der Mobile-Ansicht und nicht auf dem Desktop geladen wurden'
 description: Wenden Sie den Patch ACSD-58442 an, um das Adobe Commerce-Problem zu beheben, bei dem Geräte mit einer Breite von 768 px als Mobilgeräte behandelt werden, wodurch das Menü und die Kopfzeile in einer mobilen Ansicht statt auf dem Desktop geladen werden.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86ea64aa-10fc-4fa3-9902-918fb8983ca0
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58442: Behebung des Problems, bei dem Geräte mit 768 px Breite als Mobilgeräte behandelt wurden, wodurch Menü und Kopfzeile in der Mobile-Ansicht und nicht auf dem Desktop geladen wurden
 
@@ -62,5 +62,3 @@ Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
-
-

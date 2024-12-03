@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-42509: CSV konnte nicht für schnelle Bestellung hochgeladen werden, was zu dem Fehler "Cookie kann nicht gesendet werden"führte.'
+title: 'MDVA-42509: CSV konnte nicht für schnelle Bestellung hochgeladen werden, was zu dem Fehler "Cookie kann nicht gesendet werden"führte'
 description: Der MDVA-42509-Patch behebt das Problem, dass eine CSV-Datei nicht für eine schnelle Bestellung hochgeladen werden konnte, was dazu führte, dass der Cookie-Fehler nicht gesendet werden konnte. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-42509. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 feature: B2B, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6319931b-9cf1-4004-b302-737863c53ff8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

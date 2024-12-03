@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54264: Fehler, wenn der Kunde versucht, mit einem verhandelbaren Angebot auszuchecken"
+title: 'ACSD-54264: Fehler, wenn der Kunde versucht, mit einem verhandelbaren Angebot auszuchecken'
 description: Wenden Sie den Patch ACSD-54264 an, um das Adobe Commerce-Problem zu beheben, bei dem die Fehlermeldung "Sie können das angeforderte Attribut nicht aktualisieren können. Zeile-ID:store_id"angezeigt, wenn ein Kunde versucht, mit einem verhandelbaren Angebot aus einer anderen Store-Ansicht auszuchecken.
 feature: B2B, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
