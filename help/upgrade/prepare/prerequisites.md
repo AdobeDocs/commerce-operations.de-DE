@@ -2,9 +2,9 @@
 title: Vollständige Voraussetzungen
 description: Bereiten Sie Ihr Adobe Commerce-Projekt auf ein Upgrade vor, indem Sie diese erforderlichen Schritte ausführen.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -229,11 +229,11 @@ Ergebnisse, die dem Folgenden ähneln, sollten angezeigt werden:
 
 Ein weiteres Symptom dafür, dass Cron nicht ausgeführt wird, ist der folgende Fehler im Admin:
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![Systemmeldungen - Cron wird nicht ausgeführt](../../assets/upgrade-guide/cron-not-running.png)
 
 Um den Fehler anzuzeigen, klicken Sie oben im Fenster auf **Systemmeldungen** :
 
-![](../../assets/upgrade-guide/system-messages.png)
+![Benachrichtigung bezüglich Systemmeldungen](../../assets/upgrade-guide/system-messages.png)
 
 Weitere Informationen finden Sie unter [cron konfigurieren und ausführen](../../configuration/cli/configure-cron-jobs.md) .
 
