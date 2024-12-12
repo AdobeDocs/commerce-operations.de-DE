@@ -2,7 +2,7 @@
 title: 'ACSD-52160: Ergebnis der Produktvalidierung anhand der Preisregel für den Warenkorb'
 description: Wenden Sie den Patch ACSD-52160 an, um das Adobe Commerce-Problem zu beheben, bei dem das Ergebnis der Produktvalidierung anhand der Preisregel für den Warenkorb nicht ordnungsgemäß anhand der Regelbedingung *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]* bewertet wird.
 exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Der Couponcode wird angewendet.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](</help/tools/quality-patches-tool/usage.md>) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
