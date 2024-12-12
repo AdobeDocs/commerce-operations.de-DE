@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 35094fd36ea666d428a593f79759ca5ff30c5d00
+source-git-commit: 981de02b37590366e75eb605c671f0f0ec89feec
 workflow-type: tm+mt
-source-wordcount: '6460'
+source-wordcount: '6469'
 ht-degree: 0%
 
 ---
@@ -685,6 +685,7 @@ ht-degree: 0%
          - [ACSD-60344: E-Mails zur Bestellbestätigung bei Verwendung von [!UICONTROL Purchase Order] mit automatischer Genehmigung duplizieren](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
       - v1.1.56 {#v1-1-56}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-62428: Statusfehler im Katalogsuchindex](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
       - [Überprüfen Sie den Patch auf Adobe Commerce-Problem mit dem Tool für Qualitätsmuster .](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Befehlszeilen-Tools-Referenz {#cli-reference}
