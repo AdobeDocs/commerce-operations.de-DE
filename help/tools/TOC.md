@@ -2,9 +2,9 @@
 user-guide-title: Instrumente
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, deren Verwendung, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 981de02b37590366e75eb605c671f0f0ec89feec
+source-git-commit: 089ef6e52b45a69455b80d0a43668e3250fb4b4f
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6485'
 ht-degree: 0%
 
 ---
@@ -683,6 +683,7 @@ ht-degree: 0%
          - [ACSD-58383: Duplizieren Sie Kreditkarten aus gleichzeitigen Erstattungsanträgen via [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: Eingeschränkte Administratoren können keine aufgegebenen Warenkörbe auf dem Kundenkonto für zugehörige Websites anzeigen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-60344: E-Mails zur Bestellbestätigung bei Verwendung von [!UICONTROL Purchase Order] mit automatischer Genehmigung duplizieren](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
+         - [ACSD-62332: GraphQL-Abfrage mit Produktliste ist auf 10.000 Produkte beschränkt und  [!DNL Live Search] setzt die aktuelle Seite auf 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-62428: Statusfehler im Katalogsuchindex](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)

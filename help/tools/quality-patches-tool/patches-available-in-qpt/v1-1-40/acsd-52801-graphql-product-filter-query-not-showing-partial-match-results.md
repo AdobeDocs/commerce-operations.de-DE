@@ -4,14 +4,18 @@ description: Wenden Sie den Patch ACSD-52801 an, um das Adobe Commerce-Problem z
 feature: Products
 role: Admin, Developer
 exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # ACSD-52801: GraphQL-Produktfilterabfrage zeigt keine partiellen Übereinstimmungsergebnisse an
+
+>[!NOTE]
+>
+>Ein aktualisierter Patch ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) wurde veröffentlicht, um dasselbe Problem für die Versionen 2.4.6 bis 2.4.6-p8 zu beheben. Sie ersetzt den Patch ACSD-52801 für die Versionen ab 2.4.6. Weitere Informationen finden Sie unter [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 Der Patch ACSD-52801 behebt das Problem, dass die GraphQL-Produktfilterabfrage keine partiellen Übereinstimmungsergebnisse anzeigt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40 installiert ist. Die Patch-ID ist ACSD-52801. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben ist.
 
