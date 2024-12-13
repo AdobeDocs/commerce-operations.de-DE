@@ -1,11 +1,11 @@
 ---
-source-git-commit: 00db83a517b124fa012f91d4a6407846dd4eef66
+source-git-commit: 4a97065049c5d88ce2a1cc169bfbedd370676ff4
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 6%
 
 ---
-# Produktverfügbarkeit der Commerce-Dienste
+# Produktverfügbarkeit der Commerce Services
 
 
 <table style="table-layout:auto">
@@ -32,19 +32,19 @@ ht-degree: 6%
           </td>
       </tr>
       <tr>
-          <td>Catalog Service für Adobe Commerce</td>
+          <td>Katalog-Service für Adobe Commerce</td>
           <td>1,17</td>
           <td>1,17</td>
           <td>1,17</td>
           <td>1,17</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Überblick</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Übersicht</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
           <td>Kanal-Manager</td>
-          <td>2.1.0</td>
+          <td>2,1,0</td>
           <td>2,0,0</td>
           <td>1.0.0+</td>
           <td>1.0.0+</td>
@@ -66,7 +66,7 @@ ht-degree: 6%
       </tr>
       <tr>
           <td>Zahlungsdienste</td>
-          <td>2.9.0 (PHP 8.3)</td>
+          <td>2.10.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
