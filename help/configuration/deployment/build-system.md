@@ -10,37 +10,37 @@ ht-degree: 0%
 
 ---
 
-# Einrichten von Systemen
+# System-Setup erstellen
 
-Sie können über ein Buildsystem verfügen, das die folgenden Anforderungen erfüllt:
+Sie können über ein Build-System verfügen, das die folgenden Anforderungen erfüllt:
 
-- Der gesamte Commerce-Code unterliegt der Quell-Code-Kontrolle im selben Repository wie die Entwicklungs- und Produktionssysteme
-- Stellen Sie sicher, dass alle folgenden Elemente _im Quellcode-Steuerelement enthalten sind:_
+- Der gesamte Commerce-Code befindet sich unter der Versionskontrolle im selben Repository wie die Entwicklungs- und Produktionssysteme
+- Stellen Sie sicher, dass Folgendes in _Quell_ Code-Verwaltung enthalten ist:
 
    - `app/etc/config.php`
-   - Ordner `generated` (und Unterverzeichnisse)
-   - Verzeichnis `pub/media`
-   - Ordner `pub/media/wysiwyg` (und Unterverzeichnisse)
-   - Ordner `pub/static` (und Unterverzeichnisse)
+   - `generated` (und Unterverzeichnisse)
+   - `pub/media`
+   - `pub/media/wysiwyg` (und Unterverzeichnisse)
+   - `pub/static` (und Unterverzeichnisse)
 
 - Muss eine kompatible PHP-Version installiert haben
 - Muss Composer installiert haben
-- Sie verfügt über Dateisystemeigentum und -berechtigungen, wie in [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/technical-details.md) beschrieben.
-- Das Build-System muss Commerce nicht installieren, aber der Code muss verfügbar sein.
+- Für sie sind der Besitz und die Berechtigungen des Dateisystems festgelegt, wie unter [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/technical-details.md) erläutert.
+- Das Build-System benötigt keine Installation von Commerce, aber der Code muss dafür verfügbar sein.
 
 >[!WARNING]
 >
->Die Datenbankverbindung ist nicht erforderlich, wenn sie bereits in `config.php` enthalten ist; siehe [Konfiguration exportieren](../cli/export-configuration.md). Andernfalls ist die Datenbankverbindung erforderlich.
+>Die Datenbankverbindung ist nicht erforderlich, wenn sie bereits in `config.php` enthalten ist. Siehe [Exportieren der Konfiguration](../cli/export-configuration.md). Andernfalls ist die Datenbankverbindung erforderlich.
 
 >[!INFO]
 >
->Der Build-Computer kann sich auf seinem eigenen Host oder auf demselben Host befinden wie ein installiertes Commerce-System.
+>Der Build-Computer kann sich auf einem eigenen Host oder auf demselben Host wie ein installiertes Commerce-System befinden.
 
-## Build-Computer konfigurieren
+## Konfigurieren des Buildcomputers
 
 In den folgenden Abschnitten wird beschrieben, wie Sie den Build-Computer konfigurieren.
 
-### Installation Composer
+### Installieren von Composer
 
 Überprüfen Sie zunächst, ob Composer bereits installiert ist:
 
@@ -55,7 +55,7 @@ Wenn ein Fehler angezeigt wird, führen Sie die folgenden Schritte aus, um Compo
 
 So installieren Sie Composer:
 
-1. Wechseln Sie zu einem leeren Verzeichnis auf Ihrem Commerce-Server oder erstellen Sie es.
+1. Wechseln Sie zu oder erstellen Sie ein leeres Verzeichnis auf Ihrem Commerce-Server.
 
 1. Geben Sie die folgenden Befehle ein:
 
@@ -67,17 +67,17 @@ So installieren Sie Composer:
    mv composer.phar /usr/local/bin/composer
    ```
 
-Weitere Installationsoptionen finden Sie in der [Dokumentation zur Installation des Composers][composer].
+Weitere Installationsoptionen finden Sie unter [Composer-Installationsdokumentation][composer].
 
-### PHP installieren
+### Installieren von PHP
 
 Installieren Sie PHP auf [CentOS] oder [Ubuntu].
 
 ### Einrichten des Build-Systems
 
-Einrichten des Build-Systems:
+So richten Sie das Build-System ein:
 
-1. Melden Sie sich beim Build-System als Eigentümer des Dateisystems an oder wechseln Sie zu ihm.
+1. Melden Sie sich beim Build-System als Eigentümer an oder wechseln Sie zum Dateisystembesitzer.
 1. Rufen Sie den Commerce-Code aus der Quell-Code-Verwaltung ab.
 
    Wenn Sie Git verwenden, verwenden Sie den folgenden Befehl:
@@ -86,13 +86,13 @@ Einrichten des Build-Systems:
    git clone [-b <branch name>] <repository URL>
    ```
 
-1. Wechseln Sie zum Stammordner von Commerce und geben Sie Folgendes ein:
+1. Wechseln Sie zum Commerce-Stammverzeichnis und geben Sie Folgendes ein:
 
    ```bash
    composer install
    ```
 
-1. Warten Sie, bis die Abhängigkeiten aktualisiert wurden.
+1. Warten Sie, bis die Abhängigkeiten aktualisiert werden.
 1. Legen Sie den Besitz fest:
 
    ```bash
@@ -106,7 +106,7 @@ Einrichten des Build-Systems:
    ```
 
 1. Wenn Sie Git verwenden, öffnen Sie `.gitignore` in einem Texteditor.
-1. Beginnen Sie jede der folgenden Zeilen mit dem Zeichen `#` , um sie herauszukommentieren:
+1. Beginnen Sie jede der folgenden Zeilen mit einem `#`, um sie auszukommentieren:
 
    ```conf
    # app/etc/config.php
@@ -118,15 +118,15 @@ Einrichten des Build-Systems:
    ```
 
 1. Speichern Sie Ihre Änderungen in `.gitignore` und beenden Sie den Texteditor.
-1. Wenn Sie Git verwenden, verwenden Sie die folgenden Befehle, um die Änderung zu übertragen:
+1. Wenn Sie Git verwenden, verwenden Sie die folgenden Befehle, um die Änderung zu übernehmen:
 
    ```bash
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Weitere Informationen finden Sie unter [`.gitignore` reference](../reference/config-reference-gitignore.md) .
+   Weitere Informationen finden Sie in ](../reference/config-reference-gitignore.md) [`.gitignore`.
 
-1. Das Build-System sollte den [Standardmodus](../bootstrap/application-modes.md#default-mode) oder den [Entwicklermodus](../bootstrap/application-modes.md#developer-mode) verwenden:
+1. Das Build-System sollte den [Standardmodus“ ](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode):
 
    ```bash
    bin/magento deploy:mode:set <mode>

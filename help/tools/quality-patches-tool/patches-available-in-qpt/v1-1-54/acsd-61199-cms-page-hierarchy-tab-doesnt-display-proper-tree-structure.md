@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-61199: Registerkarte "CMS-Seite [!UICONTROL Hierarchy]"zeigt keine ordnungsgemäße Baumstruktur an'
-description: Wenden Sie den Patch ACSD-61199 an, um das Adobe Commerce-Problem zu beheben, bei dem die Registerkarte *[!UICONTROL Hierarchy]* der CMS-Seite beim Bearbeiten einer CMS-Seite mit vorhandenem *[!UICONTROL Hierarchy]* keine ordnungsgemäße Baumstruktur anzeigt.
+title: 'ACSD-61199: Die Registerkarte "[!UICONTROL Hierarchy]" der CMS-Seite zeigt keine ordnungsgemäße Baumstruktur an'
+description: Wenden Sie den Patch ACSD-61199 an, um das Adobe Commerce-Problem zu beheben, bei dem auf der Registerkarte *[!UICONTROL Hierarchy]* der CMS-Seite beim Bearbeiten einer CMS-Seite mit einer vorhandenen *[!UICONTROL Hierarchy]* keine richtige Baumstruktur angezeigt wird.
 feature: Page Content
 role: Admin, Developer
 exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-61199: Die Registerkarte &quot;[!UICONTROL Hierarchy]&quot;der CMS-Seite zeigt keine ordnungsgemäße Baumstruktur an
+# ACSD-61199: Auf der Registerkarte &quot;[!UICONTROL Hierarchy]&quot; der CMS-Seite wird keine ordnungsgemäße Baumstruktur angezeigt
 
-Der Patch ACSD-61199 behebt das Problem, dass die Registerkarte &quot;*[!UICONTROL Hierarchy]*&quot;der CMS-Seite beim Bearbeiten einer CMS-Seite mit einer vorhandenen &quot;*[!UICONTROL Hierarchy]*&quot;keine ordnungsgemäße Baumstruktur anzeigt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 installiert ist. Die Patch-ID ist ACSD-61199. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Mit dem Patch ACSD-61199 wird das Problem behoben, dass auf der Registerkarte *[!UICONTROL Hierarchy]* der CMS-Seite beim Bearbeiten einer CMS-Seite mit einer vorhandenen *[!UICONTROL Hierarchy]* keine richtige Baumstruktur angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 installiert ist. Die Patch-ID ist ACSD-61199. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,22 +27,22 @@ Der Patch ACSD-61199 behebt das Problem, dass die Registerkarte &quot;*[!UICONTR
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die Registerkarte &quot;*[!UICONTROL Hierarchy]*&quot;der CMS-Seite zeigt beim Bearbeiten einer CMS-Seite mit vorhandenem &quot;*[!UICONTROL Hierarchy]*&quot;keine ordnungsgemäße Baumstruktur an.
+Auf der Registerkarte &quot;*[!UICONTROL Hierarchy]*&quot; der CMS-Seite wird beim Bearbeiten einer CMS-Seite mit einer vorhandenen *[!UICONTROL Hierarchy]* keine richtige Baumstruktur angezeigt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Pages]**.
-1. Erstellen Sie eine neue **[!UICONTROL CMS page]**. Sie wird dem Website-Stamm am *[!UICONTROL Hierarchy]* hinzugefügt.
+1. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Pages]**.
+1. Erstellen Sie eine neue **[!UICONTROL CMS page]**. Er wird dem Website-Stammverzeichnis unter *[!UICONTROL Hierarchy]* hinzugefügt.
 1. Speichern Sie die Seite.
-1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Hierarchy]**.
-1. Fügen Sie alle anderen vorhandenen Seiten zum *[!UICONTROL Hierarchy]* hinzu.
+1. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Hierarchy]**.
+1. Fügen Sie dem *[!UICONTROL Hierarchy]* alle anderen vorhandenen Seiten hinzu.
 1. Speichern Sie die *[!UICONTROL Hierarchy]*.
-1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Pages]**.
-1. Bearbeiten Sie eine der vorhandenen Seiten und öffnen Sie den *[!UICONTROL Hierarchy]*.
+1. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Content]** > **[!UICONTROL Pages]**.
+1. Bearbeiten Sie eine der vorhandenen Seiten und öffnen Sie die *[!UICONTROL Hierarchy]*.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -50,17 +50,17 @@ Der *[!UICONTROL Hierarchy]* wird erwartungsgemäß geladen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die *[!UICONTROL Hierarchy]* wird nicht auf der Registerkarte geladen.
+Die *[!UICONTROL Hierarchy]* wird nicht in die Registerkarte geladen.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-[[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+[[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.

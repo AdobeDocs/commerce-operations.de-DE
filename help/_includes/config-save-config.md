@@ -7,11 +7,11 @@ ht-degree: 0%
 ---
 # Aktualisieren der freigegebenen Konfiguration
 
-**So aktualisieren Sie die Konfiguration**:
+**Aktualisieren der Konfiguration**:
 
-1. Melden Sie sich bei Ihrem Entwicklungssystem als Eigentümer des Dateisystems an oder wechseln Sie zu ihm.
+1. Melden Sie sich bei Ihrem Entwicklungssystem als Eigentümer an oder wechseln Sie zum Dateisystembesitzer.
 
-1. Wechseln Sie zum Stammverzeichnis der Anwendung und führen Sie den Befehl dump aus.
+1. Wechseln Sie zum Anwendungsstamm und führen Sie den Befehl „dump“ aus.
 
    ```bash
    cd <Magento root dir>
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Übermitteln Sie _nicht_ Änderungen an den Verzeichnissen `generated`, `pub/media` oder `pub/static` an die Quell-Code-Verwaltung. Sie generieren diese Dateien auf Ihrem Build-System. Das Entwicklungssystem verfügt wahrscheinlich über Code, Designs usw., die nicht für die Verwendung im Produktionssystem bereit sind.
+   >Übermitteln _nicht_ Änderungen an den `generated`-, `pub/media`- oder `pub/static`-Ordnern an die Quell-Code-Verwaltung. Sie generieren diese Dateien auf Ihrem Build-System. Das Entwicklungssystem verfügt wahrscheinlich über Code, Designs usw., die nicht für die Verwendung im Produktionssystem bereit sind.
 
-1. Checken Sie Ihre Änderungen an `app/etc/config.php` nur für die Quell-Code-Verwaltung ein.
+1. Checken Sie Ihre Änderungen ein, um nur die Quellcodeverwaltung zu `app/etc/config.php`.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

@@ -1,6 +1,6 @@
 ---
-title: Best Practices für Dienste aktualisieren
-description: Erfahren Sie, wie Sie Ihre Adobe Commerce auf dem neuesten Stand der Cloud-Infrastruktur-Technologie halten.
+title: Best Practices für Services aktualisieren
+description: Erfahren Sie, wie Sie Ihre Adobe Commerce im Cloud-Infrastrukturtechnologie-Stack auf dem neuesten Stand halten.
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
@@ -11,31 +11,31 @@ ht-degree: 0%
 
 ---
 
-# Best Practices für Dienste aktualisieren
+# Best Practices für Services aktualisieren
 
-Dieser Artikel enthält Empfehlungen, wie Sie Ihren Adobe Commerce auf dem neuesten Stand der Cloud-Infrastruktur-Technologie halten können, und enthält Links zu hilfreichen Ressourcen.
+Dieser Artikel enthält Empfehlungen dazu, wie Sie Ihre Adobe Commerce im Cloud-Infrastrukturtechnologie-Stack auf dem neuesten Stand halten können, und enthält Links zu hilfreichen Ressourcen.
 
 ## Betroffene Produkte und Versionen
 
 Adobe Commerce auf Cloud-Infrastruktur 2.4.x und höher
 
-## Aktualisierungsdienste
+## Dienste aktualisieren
 
-Aktualisieren Sie die von Adobe Commerce verwendeten Dienste und Komponenten, bevor sie das Enddatum erreichen oder nahe daran liegen. Dies hilft, mit PCI-Compliance Schritt zu halten und Sicherheitslücken zu schließen.
+Aktualisieren Sie die von Adobe Commerce verwendeten Services und Komponenten, bevor sie das Ende ihres Lebenszyklus erreichen oder kurz davor sind. Dies hilft, mit der PCI-Compliance Schritt zu halten und Sicherheitslücken zu schließen.
 
-Kunden mit Starter-Plänen können sich selbst für Service-Upgrades bedienen. Weitere Informationen dazu finden Sie unter [Dienstversion ändern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) .
+Kunden mit Starter-Plänen können Service-Upgrades selbst durchführen. Einzelheiten dazu finden [ unter &quot;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) ändern“.
 
-Kunden mit Pro-Plänen können nur Self-Service für Dienstaktualisierungen in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) durchführen. Für Service-Upgrades bei der Produktion müssen Sie [ein Support-Ticket senden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), das die Aktualisierung anfordert.
+Kunden mit Pro-Plänen können Services-Upgrades nur selbst in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html) bereitstellen. Für Service-Upgrades in der Produktion müssen Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) um das Upgrade anzufordern.
 
 >[!WARNING]
 >
->Dienstaktualisierungen können nicht in eine Produktionsumgebung ohne 48-Stunden-Benachrichtigung an das Adobe-Infrastrukturteam gesendet werden. Dies ist erforderlich, damit Adobe sicherstellen kann, dass ein Infrastruktursupport-Techniker zur Verfügung steht, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten für Ihre Produktionsumgebung aktualisiert. Adobe empfiehlt, Ihre Site während des Service-Upgrades in den Wartungsmodus zu versetzen.
+>Service-Upgrades können nicht in eine Produktionsumgebung verschoben werden, ohne dass das Infrastrukturteam von Adobe innerhalb von 48 Geschäftsstunden davon in Kenntnis gesetzt wird. Dies ist erforderlich, damit Adobe sicherstellen kann, dass ein Support-Techniker für die Infrastruktur zur Verfügung steht, der Ihre Konfiguration innerhalb eines gewünschten Zeitrahmens mit minimaler Ausfallzeit in Ihrer Produktionsumgebung aktualisiert. Adobe empfiehlt, Ihre Site während des Service-Upgrades in den Wartungsmodus zu versetzen.
 
-Sie können die Liste der Dienstversionen und das Ende des Lebenszyklus in der folgenden Datei anzeigen: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Die Liste der Service-Versionen und der Daten zum Ende der Nutzungsdauer finden Sie in der folgenden Datei: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >
->Diese Datei kann nicht als eine einzige Quelle der Wahrheit betrachtet werden. Weitere Informationen zu diesen Technologien finden Sie auf den offiziellen Websites der Anbieter.
+>Diese Datei kann nicht als eine einzige Quelle der Wahrheit betrachtet werden. Im Zweifelsfall sollten diese Technologien auf den offiziellen Anbieterwebsites nachgelesen werden.
 
 ## Weitere Informationen
 

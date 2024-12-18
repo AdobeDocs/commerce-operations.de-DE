@@ -1,6 +1,6 @@
 ---
 title: Designs deinstallieren
-description: Führen Sie diese Schritte aus, um ein Adobe Commerce-Design zu deinstallieren.
+description: Gehen Sie wie folgt vor, um ein Adobe Commerce-Design zu deinstallieren.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
@@ -12,22 +12,22 @@ ht-degree: 0%
 
 # Designs deinstallieren
 
-Bevor Sie diesen Befehl verwenden, müssen Sie den relativen Pfad zu Ihrem Design kennen. Designs befinden sich in einem Unterverzeichnis von &quot;`<magento_root>/app/design/<area name>`&quot;. Sie müssen den Pfad zum Thema beginnend mit dem Bereich angeben, der entweder `frontend` (für Storefront-Designs) oder `adminhtml` (für Admin-Designs) lautet.
+Bevor Sie diesen Befehl verwenden, müssen Sie den relativen Pfad zu Ihrem Design kennen. Designs befinden sich in einem Unterverzeichnis von `<magento_root>/app/design/<area name>`. Sie müssen den Pfad zum Design angeben, beginnend mit dem Bereich , der entweder `frontend` (für Storefront-Designs) oder `adminhtml` (für Admin-Designs) ist.
 
 Beispielsweise lautet der Pfad zum Luma-Design, das mit Adobe Commerce bereitgestellt wird, `frontend/Magento/luma`.
 
-Weitere Informationen zu Designs finden Sie unter [Designstruktur](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+Weitere Informationen zu Designs finden Sie unter [Design-Struktur](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
 ## Überblick über die Deinstallation von Designs
 
-In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Designs deinstallieren, optional einschließlich des Designcodes aus dem Dateisystem. Sie können zunächst Backups erstellen, um die Daten später wiederherzustellen.
+In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Designs deinstallieren, wobei Sie optional den Code der Designs aus dem Dateisystem einschließen. Sie können zunächst Sicherungskopien erstellen, damit Sie die Daten später wiederherstellen können.
 
-Mit diesem Befehl werden *nur* Designs deinstalliert, die in `composer.json` angegeben sind, d. h. Designs, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Design kein Composer-Paket ist, müssen Sie es manuell deinstallieren, indem Sie:
+Mit diesem Befehl werden *nur* Designs deinstalliert, die in `composer.json` angegeben sind, d. h. Designs, die als Composer-Pakete bereitgestellt werden. Wenn Ihr Design kein Composer -Paket ist, müssen Sie es manuell deinstallieren, indem Sie:
 
-* Aktualisieren der Knoteninformationen `parent` in `theme.xml`, um Verweise auf das Design zu entfernen.
+* Aktualisieren der `parent` Knoteninformationen in `theme.xml` zum Entfernen von Verweisen auf das Design.
 * Entfernen des Design-Codes aus dem Dateisystem.
 
-  [Weitere Informationen zur Vererbung des Designs](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Weitere Informationen zur Designvererbung](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
 ## Designs deinstallieren
 
@@ -37,34 +37,34 @@ Befehlsverwendung:
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
 ```
 
-Wo
+Hierbei gilt
 
-* `{theme path}` ist der relative Pfad zum Thema, beginnend mit dem Bereichsnamen. Beispielsweise lautet der Pfad zum leeren Design, das mit Adobe Commerce bereitgestellt wird, `frontend/Magento/blank`.
-* `--backup-code` sichert die Codebase, wie in den folgenden Absätzen beschrieben.
-* `--clear-static-content` löscht generierte [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md), was erforderlich ist, damit statische Ansichtsdateien ordnungsgemäß angezeigt werden.
+* `{theme path}` ist der relative Pfad zum Design, beginnend mit dem Bereichsnamen. Beispielsweise lautet der Pfad zum leeren Design, das in Adobe Commerce bereitgestellt wird, `frontend/Magento/blank`.
+* `--backup-code` sichert die Code-Basis, wie in den folgenden Absätzen erläutert.
+* `--clear-static-content` bereinigt generierte [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md) die erforderlich sind, damit statische Ansichtsdateien ordnungsgemäß angezeigt werden.
 
 Der Befehl führt die folgenden Aufgaben aus:
 
-1. Stellt sicher, dass die angegebenen Design-Pfade vorhanden sind, andernfalls wird der Befehl beendet.
-1. Überprüft, ob das Design ein Composer-Paket ist. Andernfalls wird der Befehl beendet.
-1. Prüft auf Abhängigkeiten und beendet den Befehl, wenn es nicht erfüllte Abhängigkeiten gibt.
+1. Überprüft, ob die angegebenen Designpfade vorhanden sind. Andernfalls wird der Befehl beendet.
+1. Überprüft, ob es sich bei dem Design um ein Composer-Paket handelt. Andernfalls wird der Befehl beendet.
+1. Sucht nach Abhängigkeiten und beendet den Befehl, wenn nicht erfüllte Abhängigkeiten vorliegen.
 
-   Um dies zu umgehen, können Sie entweder alle Designs gleichzeitig deinstallieren oder die Datei je nach Design zuerst deinstallieren.
+   Um dies zu umgehen, können Sie entweder alle Designs gleichzeitig deinstallieren oder je nach Design zuerst deinstallieren.
 
 1. Stellt sicher, dass das Design nicht verwendet wird. Wenn es verwendet wird, wird der Befehl beendet.
-1. Stellt sicher, dass das Design nicht die Basis des virtuellen Designs ist. Wenn es die Basis eines virtuellen Designs ist, wird der Befehl beendet.
-1. Setzt den Speicher in den Wartungsmodus.
-1. Wenn `--backup-code` angegeben ist, sichern Sie die Codebasis, ausgenommen die Verzeichnisse `pub/static`, `pub/media` und `var`.
+1. Überprüft, ob das Design nicht die Basis des virtuellen Designs ist. Wenn es die Basis eines virtuellen Designs ist, wird der Befehl beendet.
+1. Versetzt den Speicher in den Wartungsmodus.
+1. Wenn `--backup-code` angegeben ist, sichern Sie die Codebasis, mit Ausnahme der `pub/static`-, `pub/media`- und `var`.
 
    Der Name der Sicherungsdatei lautet `var/backups/<timestamp>_filesystem.tgz`
 
-   Mit dem Befehl [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) können Sie jederzeit Backups wiederherstellen.
+   Sie können Sicherungskopien jederzeit mit dem Befehl [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) wiederherstellen.
 
-1. Entfernt Designs aus der Datenbanktabelle `theme`.
-1. Entfernen Sie Designs mit `composer remove` aus der Codebasis.
+1. Entfernt Designs aus der `theme`.
+1. Entfernen von Designs aus der Code-Basis mithilfe von `composer remove`.
 1. Löscht den Cache.
 1. Bereinigt generierte Klassen
-1. Wenn `--clear-static-content` angegeben ist, löscht [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
+1. Wenn `--clear-static-content` angegeben ist, bereinigt [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
 
 Wenn Sie beispielsweise versuchen, ein Design zu deinstallieren, von dem ein anderes Design abhängig ist, wird die folgende Meldung angezeigt:
 
@@ -73,13 +73,13 @@ Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following pa
         ExampleCorp/sample-module-theme-depend
 ```
 
-Eine Alternative besteht darin, beide Designs gleichzeitig zu deinstallieren, wie in der folgenden Sicherung der Codebasis beschrieben:
+Eine Alternative besteht darin, beide Designs gleichzeitig zu deinstallieren, indem Sie die Code-Basis wie folgt sichern:
 
 ```bash
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
 ```
 
-Meldungen, die der folgenden Anzeige ähneln:
+Meldungen ähnlich der folgenden werden angezeigt:
 
 ```
 Code backup is starting...
@@ -103,4 +103,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->Um ein Admin-Design zu deinstallieren, müssen Sie es auch aus der Konfiguration für die Injektion von Abhängigkeiten Ihrer Komponente entfernen, `<component root directory>/etc/di.xml`.
+>Um ein Admin-Design zu deinstallieren, müssen Sie es auch `<component root directory>/etc/di.xml` aus der Abhängigkeitsinjektionskonfiguration Ihrer Komponente entfernen.

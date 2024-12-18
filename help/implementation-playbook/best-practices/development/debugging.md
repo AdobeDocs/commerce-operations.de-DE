@@ -1,6 +1,6 @@
 ---
 title: Best Practices für das Debugging
-description: Erfahren Sie mehr über Verfahren zur Lösung häufiger Adobe Commerce-Entwicklungsprobleme.
+description: Erfahren Sie mehr über Verfahren zum Beheben häufiger Adobe Commerce-Entwicklungsprobleme.
 feature: Best Practices
 role: Developer
 exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# Debugging von Best Practices für Adobe Commerce
+# Best Practices für das Debugging von Adobe Commerce
 
-In diesem Thema wird erläutert, wie das Adobe Commerce-Framework systematisch und effektiv debuggt werden kann. Ziel ist es, Ihnen dabei zu helfen, schnell zur Wurzel eines Problems zu gelangen und die Untersuchungszeit zu minimieren.
+In diesem Abschnitt werden Möglichkeiten zum systematischen und effektiven Debuggen des Adobe Commerce-Frameworks erläutert. Ziel ist es, Ihnen zu helfen, die Wurzel eines Problems schnell zu finden und die Untersuchungszeit zu minimieren.
 
 ## Fehlerbehebung: Übliche Verdächtige
 
-In diesem Abschnitt werden die häufigsten Probleme beschrieben, auf die Sie bei der Entwicklung stoßen können.
+In diesem Abschnitt werden die häufigsten Probleme beschrieben, auf die Sie während der Entwicklung stoßen können.
 
 ### Cache
 
-- Leeren Sie den Cache vor weiteren Untersuchungen.
-- Betrachten Sie die Ordner APC-Cache, CDN, Varnish, generierter Code und `var/view_preprocessed` und `pub/static/` .
-- Beenden und Neustart von Warteschlangen-Handlern nach dem Leeren des Cache oder Ändern des Codes
+- Leeren Sie den Cache, bevor Sie weitere Untersuchungen durchführen
+- Betrachten Sie den APC-Cache, das CDN, den Lack, den generierten Code sowie die `var/view_preprocessed`- und `pub/static/`
+- Warteschlangen-Handler anhalten und neu starten, nachdem der Cache geleert oder der Code geändert wurde
 
-Das folgende Codebeispiel enthält hilfreiche Befehle zum Verwalten des Caches (nicht in Produktionsumgebungen ausführen):
+Das folgende Codebeispiel enthält hilfreiche Befehle im Zusammenhang mit der Verwaltung des Caches (nicht in Produktionsumgebungen ausführen):
 
 ```bash
 # restart php-fpm to flush APC
@@ -70,13 +70,13 @@ sudo pkill -f queue:consumers:start
 sudo kill <process_id>
 ```
 
-### Indexierte Daten
+### Indizierte Daten
 
-Neuindizieren Sie alles neu, wenn das Problem möglicherweise indexbezogen ist. Das Debuggen indizierter Daten erfolgt normalerweise in Nicht-Produktionsumgebungen. In Produktionsumgebungen möchten Sie möglicherweise den Ursprung der Indexabweichung vor der Neuindizierung untersuchen. Die Eigenschaften des fehlerhaften Zustands können Ihnen etwas über den Ursprung des Problems vermitteln.
+Alles neu indizieren, wenn das Problem möglicherweise indexbezogen ist. Das Debugging indizierter Daten erfolgt normalerweise in Nicht-Produktionsumgebungen. In Produktionsumgebungen sollten Sie den Ursprung der Indexfehlausrichtung untersuchen, bevor Sie die Neuindizierung durchführen. Die Merkmale des fehlerhaften Zustands können Ihnen etwas über die Ursache des Problems verraten.
 
-### Verfasser
+### Komponist
 
-Möglicherweise ist der Code aufgrund einer Verzweigungsänderung oder aufgrund von Kerndateien, die bei einem früheren Debugging-Vorgang bearbeitet wurden, veraltet. Führen Sie die folgenden Befehle aus, um potenzielle Probleme zu vermeiden:
+Möglicherweise ist der Code aufgrund einer Verzweigungsänderung oder aufgrund von Kerndateien, die im Rahmen eines vorherigen Debuggens bearbeitet wurden, veraltet. Um potenzielle Probleme zu vermeiden, führen Sie die folgenden Befehle aus:
 
 ```bash
 rm -rf vendor/*
@@ -84,7 +84,7 @@ composer clear-cache
 composer install
 ```
 
-### Generierter Inhalt
+### Erzeugter Inhalt
 
 Erstellen Sie Frontend-Dateien neu, bevor Sie den generierten Inhalt in JS, CSS, Bildern, Übersetzungen und anderen Dateien debuggen.
 
@@ -96,11 +96,11 @@ bin/magento cache:flush
 
 ### Entwicklermodus
 
-Stellen Sie sicher, dass sich Ihre lokale Installation im Modus `developer` befindet.
+Stellen Sie sicher, dass sich Ihre lokale Installation im `developer` befindet.
 
 ### Neues Modul
 
-Wenn Sie ein Modul erstellt haben, überprüfen Sie, ob folgende Probleme vorliegen:
+Wenn Sie ein Modul erstellt haben, überprüfen Sie die folgenden Probleme:
 
 - Ist das Modul aktiviert?
 
@@ -108,76 +108,76 @@ Wenn Sie ein Modul erstellt haben, überprüfen Sie, ob folgende Probleme vorlie
   bin/magento module --enable Your_Module
   ```
 
-  Überprüfen Sie die Datei `app/etc/config.php` für Ihr neues Modul.
+  Überprüfen Sie die `app/etc/config.php` für Ihr neues Modul.
 
-- Überprüfen Sie die Verschachtelung der Datei- und Ordnerstruktur. Sind beispielsweise Layoutdateien im Verzeichnis `view/layout/` anstelle des Verzeichnisses `view/frontend/layout`? Sind Vorlagen im Verzeichnis `view/frontend/template` anstelle des Verzeichnisses `view/frontend/templates`?
+- Überprüfen Sie die Verschachtelung der Datei- und Verzeichnisstruktur. Befinden sich beispielsweise Layout-Dateien im Verzeichnis `view/layout/` anstelle des Verzeichnisses `view/frontend/layout`? Befinden sich Vorlagen im `view/frontend/template`-Verzeichnis statt im `view/frontend/templates`-Verzeichnis?
 
-## Fehlerbehebung: Halbtrennung
+## Fehlerbehebung: Halbzerlegung
 
-Wenn die üblichen Verdächtigen keine Lösung für das Problem bieten, ist der schnellste Weg, das Problem zu lösen, indem sie das Problem halbieren (oder zerteilen). Mit dieser Methode vermeiden Sie große Teile und teilen, was übrig bleibt, um die Grundursache zu finden, anstatt den Code linear zu durchlaufen.
+Wenn die üblichen Verdächtigen keine Lösung für das Problem anbieten, besteht die schnellste Möglichkeit darin, das Problem halbzuteilen (oder zu halbieren). Mit dieser Methode eliminieren Sie große Blöcke und teilen, was übrig bleibt, um die Grundursache zu finden, anstatt den Code linear zu durchlaufen.
 
-Siehe folgende Diagramme:
+Siehe die folgenden Diagramme:
 
-![Auswahldiagramm](../../../assets/playbooks/bisect.png)
+![Halbierungsdiagramm](../../../assets/playbooks/bisect.png)
 
-![Auswahldiagramm](../../../assets/playbooks/bisect2.png)
+![Halbierungsdiagramm](../../../assets/playbooks/bisect2.png)
 
-Es gibt mehrere Möglichkeiten, etwas zu zerlegen. Adobe empfiehlt jedoch, diese Reihenfolge zu befolgen:
+Es gibt mehrere Ansätze zum Halbieren, aber Adobe empfiehlt, diese Reihenfolge zu befolgen:
 
-- Themenauswahl
-- Auswahl durch Zusagen
-- Auswahl nach Dateien
+- Nach Thema teilen
+- Durch Commits halbieren
+- Nach Dateien teilen
 
-### Schritt 1: Themenauswahl
+### Schritt 1: Nach Thema teilen
 
-Wenn das Problem möglicherweise nicht codebezogen ist, müssen Sie die großen Blöcke zuerst entfernen. Zu den großen Blöcken, an die gedacht werden sollte, gehören:
+Wenn das Problem möglicherweise nicht Code-bezogen ist, beseitigen Sie zuerst die großen Blöcke. Zu den großen Textbausteinen, die zu berücksichtigen sind, gehören:
 
-- **Adobe Commerce-Framework**: Ist das Problem überhaupt mit Adobe Commerce verbunden oder könnte es mit einem anderen verbundenen System verbunden sein?
-- **Server und Client**: Löschen Sie den Browsercache und den Speicher. Ist das Problem gelöst? Dies kann eine serverbasierte Ursache ausschließen. Gibt es das Problem noch? Sie müssen keine Zeit mehr im Browser-Debugging verschwenden.
-- **Sitzung** - Tritt das Problem für jeden Benutzer auf? Wenn nicht, ist Ihr Problem möglicherweise auf sitzungs- oder browserbezogene Themen beschränkt.
-- **Cache**: Ändert das Deaktivieren aller Caches irgendetwas? Wenn ja, können Sie sich auf zwischenspeicherbezogene Themen konzentrieren.
-- **Datenbank** - Tritt das Problem in jeder Umgebung auf, in der derselbe Code ausgeführt wird? Wenn nicht, suchen Sie nach Problemen in der Konfiguration und anderen datenbankbezogenen Themen.
-- **Code** - Suchen Sie nach Code-Problemen, wenn keiner der oben genannten Probleme das Problem gelöst hat.
+- **Adobe Commerce-Framework** - Bezieht sich das Problem überhaupt auf Adobe Commerce oder könnte es auf ein anderes verbundenes System zurückzuführen sein?
+- **Server und Client** - Löschen Sie den Browsercache und den Speicher. Ist das Problem gelöst? Dies könnte eine Server-bedingte Ursache ausschließen. Gibt es das Problem noch? Sie müssen keine Zeit mehr mit dem Browser-Debugging verschwenden.
+- **Sitzung** - Tritt das Problem bei jedem Benutzer auf? Andernfalls kann sich das Problem auf sitzungs- oder browserbezogene Themen beschränken.
+- **Cache** - Ändert sich durch die Deaktivierung aller Caches etwas? Wenn ja, können Sie sich auf Themen im Zusammenhang mit dem Cache konzentrieren.
+- **Datenbank**: Tritt das Problem in jeder Umgebung auf, in der derselbe Code ausgeführt wird? Suchen Sie andernfalls nach Problemen in der Konfiguration und anderen datenbankbezogenen Themen.
+- **Code** - Suchen Sie nach Code-Problemen, wenn keines der oben genannten Probleme behoben wurde.
 
-### Schritt 2: Auswahl durch Zusagen
+### Schritt 2: Durch Commits teilen
 
-Wenn das Problem zwischen jetzt und vor zwei Monaten begann, setzen Sie den Code zurück auf vor zwei Monaten. Überprüfen Sie, ob das Problem weiterhin besteht. Gehen Sie einen Monat weiter. Tritt das Problem dort auf? Wenn nicht, gehen Sie zwei Wochen weiter. Tritt es jetzt auf? Geh eine Woche zurück. Noch da? Gehen Sie vier Tage zurück. Irgendwann ist nur noch ein Commit übrig, der wahrscheinlich Code enthält, der mit dem Problem in Verbindung steht. Ihre Hauptursache ist nun wahrscheinlich auf die Dateien beschränkt, die in diesem Commit bearbeitet werden.
+Wenn das Problem zwischen jetzt und vor zwei Monaten aufgetreten ist, setzen Sie den Code auf vor zwei Monaten zurück. Überprüfen Sie, ob das Problem weiterhin besteht. Einen Monat später. Tritt das Problem dort auf? Wenn nicht, zwei Wochen vorgehen. Kommt es jetzt vor? Geh eine Woche zurück. Immer noch da? Geh vier Tage zurück. An irgendeinem Punkt ist nur noch ein Commit übrig, der wahrscheinlich Code enthält, der mit dem Problem zusammenhängt. Ihre Grundursache ist jetzt wahrscheinlich auf die Dateien beschränkt, die in diesem Commit bearbeitet wurden.
 
-Sie können Wochen und Tage durch Commits ersetzen. Beispiel: Rollback von 100 Commits, forward 50, forward 25, back 12.
+Sie können Wochen und Tage durch Commits ersetzen. Beispiel: Zurücksetzen auf 100 Commits, Vorwärts 50, Vorwärts 25, Rückwärts 12.
 
-### Schritt 3: Von Dateien auswählen
+### Schritt 3: Nach Dateien teilen
 
-- Teilen Sie Adobe Commerce nach Dateitypen (Core und Nicht-Core) auf. Deaktivieren Sie zunächst alle Kunden- und Marketplace-Module. Gibt es das Problem noch? Es handelt sich höchstwahrscheinlich um ein Nicht-Kernproblem.
-- Aktivieren Sie (ungefähr) die Hälfte der Module erneut in der Datei `app/etc/config.php` . Beachten Sie Abhängigkeiten. Es ist am besten, Modul-Cluster mit demselben Thema gleichzeitig zu aktivieren. Gibt es das Problem noch?
-- Aktivieren Sie ein Viertel der verbleibenden Module. Gibt es das Problem noch? Deaktivieren Sie die Hälfte von dem, was Sie aktiviert haben. Diese Methode kann Ihnen dabei helfen, die Hauptursache in einem einzelnen Modul zu isolieren.
+- Unterteilen Sie Adobe Commerce nach Dateitypen (Kern und Nicht-Kern). Deaktivieren Sie zunächst alle Kunden- und Marketplace-Module. Gibt es das Problem noch? Es handelt sich höchstwahrscheinlich um ein Problem, das nicht zum Kern gehört.
+- Aktivieren Sie (grob) die Hälfte der Module wieder in der `app/etc/config.php`. sich der Abhängigkeiten bewusst sein. Es wird empfohlen, Modulcluster mit demselben Thema gleichzeitig zu aktivieren. Gibt es das Problem noch?
+- Aktivieren Sie ein Viertel der verbleibenden Module. Gibt es das Problem noch? Deaktivieren Sie die Hälfte der aktivierten Elemente. Mit dieser Methode können Sie die Grundursache in einem einzelnen Modul isolieren.
 
-## Zeiteinsparungen
+## Zeiteinsparung
 
-Abgesehen von den Fehlerbehebungsverfahren enthält dieser Abschnitt einige allgemeine Regeln, die Ihnen helfen, Zeit beim Debugging zu sparen.
+Neben den Techniken zur Fehlerbehebung finden Sie in diesem Abschnitt einige allgemeine Regeln, die Ihnen helfen, beim Debuggen Zeit zu sparen.
 
 ### Daten begrenzen
 
-Überlegen Sie, ob Sie den vollständigen Katalog oder alle Store-Ansichten benötigen, um das Problem zu replizieren. Sie können Indizierungsprobleme mit einem Datenbankklon beheben, bei dem Sie 95 % des Katalogs entfernt haben, bevor Sie mit dem Debugging beginnen. Diese Methode spart während der Indizierung viel Zeit. Erstellen Sie ein Duplikat der Client-Datenbank mit reduzierter Speicheranzahl und reduziertem Katalog. Dies kann abhängig vom zu debuggenden Bereich auch für andere Entitäten (z. B. Kunden) gelten.
+Erwägen, ob Sie den vollständigen Katalog oder alle Store-Ansichten benötigen, um das Problem zu replizieren. Sie können Indizierungsprobleme mit einem Datenbankklon beheben, bei dem Sie 95 % des Katalogs entfernt haben, bevor Sie mit dem Debugging beginnen. Diese Methode spart bei Indizierungsvorgängen viel Zeit. Erstellen Sie ein Duplikat der Client-Datenbank mit reduzierter Speicheranzahl und reduziertem Katalog. Dies kann je nach dem Bereich, den Sie debuggen, auch für andere Entitäten (z. B. Kunden) gelten.
 
 ### Weitere Informationen anfordern
 
-Manchmal, ein leichter Schritt zu vergessen inmitten des gesamten Codes und technischen Arbeit: nach weiteren Informationen fragen. Vollbildaufnahmen, ein Video, ein Videokonferenzchat mit der Person, die das Problem identifiziert hat, Replikationsschritte, Fragen, ob andere scheinbar unwichtige Dinge um das problematische Ereignis herum passiert sind. Frag, was jemand erwartet hat. Ist das wirklich ein Fehler oder vielleicht nur ein Missverständnis darüber, wie der Code funktioniert?
+Manchmal ein einfacher Schritt, um inmitten all des Codes und der technischen Arbeit zu vergessen: Fragen Sie nach mehr Informationen. Im Vollbildmodus werden Folgendes erfasst: ein Video, eine Videokonferenz, ein Chat mit der Person, die das Problem identifiziert hat, Replikationsschritte und Fragen dazu, ob andere scheinbar unwichtige Dinge im Zusammenhang mit dem problematischen Ereignis passiert sind. Fragen Sie, was jemand erwartet hat. Ist das wirklich ein Bug oder vielleicht nur ein Missverständnis der Art, wie der Code funktioniert?
 
 ### Sprache und Dolmetschen
 
-Ist die Beschreibung des Problems klar? Sind Sie sicher, dass keine Begriffe oder Beschreibungen auf unterschiedliche Weise interpretiert werden können? Wenn ja, stellen Sie sicher, dass Sie über dasselbe sprechen.
+Ist die Beschreibung des Problems klar? Sind Sie sicher, dass keine Begriffe oder Beschreibungen auf verschiedene Weise interpretiert werden können? Wenn ja, stellen Sie sicher, dass Sie über dieselbe Sache sprechen.
 
 ### Internetsuche
 
-Führen Sie eine Internet-Suche mit Begriffen aus dem Problem durch. Es besteht die Gefahr, dass jemand anderer bereits auf dasselbe Problem gestoßen ist. Durchsuchen Sie die [Adobe Commerce GitHub-Probleme](https://github.com/magento/magento2/issues).
+Führen Sie eine Internet-Suche mit Begriffen im Zusammenhang mit dem Problem durch. Wahrscheinlich ist bereits jemand anderes auf dasselbe Problem gestoßen. Durchsuchen Sie die [Adobe Commerce GitHub-Probleme](https://github.com/magento/magento2/issues).
 
-### Pause machen
+### Mach eine Pause
 
-Wenn Sie ein Problem zu lange betrachten, kann es schwierig sein, eine Lösung zu finden. Leg deine Arbeit nieder und hole eine andere Aufgabe oder mache einen Spaziergang. Die Antwort kommt Ihnen vielleicht, wenn Sie das Problem für eine Weile vergessen.
+Wenn Sie ein Problem zu lange betrachten, kann es schwierig sein, eine Lösung zu finden. Setze deine Arbeit nieder und nimm eine andere Aufgabe auf oder mache einen Spaziergang. Die Antwort könnte kommen, wenn Sie das Problem für eine Weile vergessen haben.
 
-## Instrumente
+## Tools
 
-Die n98 magerun CLI Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) bieten nützliche Funktionen für die Arbeit mit Adobe Commerce über die Befehlszeile. Insbesondere diese Befehle:
+Die n98 magerun CLI-Tools ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) bieten nützliche Funktionen für die Arbeit mit Adobe Commerce über die Befehlszeile. Insbesondere diese Befehle:
 
 ```bash
 n98-magerun2.phar dev:console
@@ -187,20 +187,20 @@ n98-magerun2.phar index:trigger:recreate
 ```
 
 
-## Code-Snippets
+## Codeausschnitte
 
-Die folgenden Themen enthalten Code-Snippets, die zur Protokollierung oder Identifizierung von Problemen in Commerce-Projekten verwendet werden können.
+Die folgenden Themen enthalten Codeausschnitte, mit denen Probleme in Commerce-Projekten protokolliert oder identifiziert werden können.
 
-### Überprüfen, ob Commerce eine XML-Datei verwendet
+### Überprüfen, ob eine XML-Datei von Commerce verwendet wird
 
-Fügen Sie einen offensichtlichen Syntaxfehler in eine XML-Datei ein, um zu sehen, ob sie verwendet wird. Öffnen Sie ein Tag und schließen Sie es beispielsweise nicht:
+Fügen Sie in einer XML-Datei einen offensichtlichen Syntaxfehler hinzu, um zu sehen, ob er verwendet wird. Öffnen Sie ein Tag und schließen Sie es nicht, zum Beispiel:
 
 ```xml
 <?xml version="1.0"?>
 <test
 ```
 
-Wenn diese Datei verwendet wird, erzeugt sie einen Fehler. Ist dies nicht der Fall, wird Ihr Modul möglicherweise nicht verwendet oder zum Beispiel nicht aktiviert, oder die XML-Datei befindet sich möglicherweise am falschen Speicherort.
+Wenn diese Datei verwendet wird, wird ein Fehler generiert. Ist dies nicht der Fall, wird das Modul möglicherweise nicht verwendet oder nicht aktiviert, oder die XML-Datei befindet sich am falschen Speicherort.
 
 ### Protokollierung
 
@@ -241,7 +241,7 @@ file_put_contents('/var/www/html/var/log/example.log', "example line\n", FILE_AP
 file_put_contents('/var/www/html/var/log/example.log', print_r($yourArray, true) . "\n", FILE_APPEND);
 ```
 
-Und für eine Stapelablaufverfolgung:
+Und für eine Stacktrace:
 
 ```php
 try {

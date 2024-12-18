@@ -18,13 +18,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in Version 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere Informationen finden Sie unter [Migrieren des Elasticsearchs zu OpenSearch](../../../upgrade/prepare/opensearch-migration.md) .
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Form of Elasticsearch. Weitere [ finden Sie unter &quot;Elasticsearch nach ](../../../upgrade/prepare/opensearch-migration.md) migrieren“.
 
-In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsecure* -Proxy konfigurieren, damit Adobe Commerce eine Suchmaschine verwenden kann, die auf diesem Server ausgeführt wird. In diesem Abschnitt wird die Einrichtung der einfachen HTTP-Authentifizierung nicht besprochen. Dies wird unter [Sichere Kommunikation mit Apache](#secure-communication-with-apache) beschrieben.
+In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ ](#secure-communication-with-apache).
 
 >[!NOTE]
 >
->Der Grund, warum der Proxy in diesem Beispiel nicht gesichert ist, ist, dass die Einrichtung und Überprüfung einfacher ist. Sie können TLS mit diesem Proxy verwenden. Wenn Sie dies wünschen, stellen Sie sicher, dass Sie die Proxy-Informationen zu Ihrer sicheren Virtual-Host-Konfiguration hinzufügen.
+>Der Grund, warum der Proxy in diesem Beispiel nicht gesichert ist, liegt darin, dass die Einrichtung und Überprüfung einfacher ist. Sie können TLS mit diesem Proxy verwenden. Wenn Sie dies wünschen, stellen Sie sicher, dass Sie die Proxy-Informationen zu Ihrer sicheren virtuellen Host-Konfiguration hinzufügen.
 
 ### Proxy für Apache 2.4 einrichten
 
@@ -36,14 +36,14 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
    a2enmod proxy_http
    ```
 
-1. Verwenden Sie einen Texteditor zum Öffnen von `/etc/apache2/sites-available/000-default.conf`
-1. Fügen Sie oben in der Datei die folgende Anweisung hinzu:
+1. Öffnen von `/etc/apache2/sites-available/000-default.conf` mit einem Texteditor
+1. Fügen Sie die folgende -Anweisung am Anfang der Datei hinzu:
 
    ```conf
    Listen 8080
    ```
 
-1. Fügen Sie am Ende der Datei Folgendes hinzu:
+1. Fügen Sie unten in der Datei Folgendes hinzu:
 
    ```conf
    <VirtualHost *:8080>
@@ -52,13 +52,13 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
    </VirtualHost>
    ```
 
-1. Starten Sie Apache neu:
+1. Apache neu starten:
 
    ```bash
    service apache2 restart
    ```
 
-1. Stellen Sie sicher, dass der Proxy funktioniert, indem Sie den folgenden Befehl eingeben:
+1. Überprüfen Sie, ob der Proxy funktioniert, indem Sie den folgenden Befehl eingeben:
 
    ```bash
    curl -i http://localhost:<proxy port>/_cluster/health
@@ -70,7 +70,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
    curl -i http://localhost:8080/_cluster/health
    ```
 
-   Meldungen, die der folgenden Anzeige ähneln, zeigen Erfolg an:
+   Meldungen ähnlich der folgenden werden angezeigt, um auf Erfolg hinzuweisen:
 
    ```
    HTTP/1.1 200 OK
@@ -84,22 +84,22 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
 
 ## Sichere Kommunikation mit Apache
 
-In diesem Abschnitt wird beschrieben, wie Sie die Kommunikation zwischen Apache und der Suchmaschine mithilfe der Authentifizierung mit [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) mit Apache sichern. Weitere Optionen finden Sie in einer der folgenden Ressourcen:
+In diesem Abschnitt wird beschrieben, wie Sie die Kommunikation zwischen Apache und der Suchmaschine mithilfe der [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617)-Authentifizierung mit Apache sichern. Weitere Informationen zu Optionen finden Sie in einer der folgenden Ressourcen:
 
-* [Tutorial zur Authentifizierung und Autorisierung mit Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Tutorial zur Authentifizierung und Autorisierung bei Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Siehe einen der folgenden Abschnitte:
 
-* [Kennwortdatei erstellen](#create-a-password)
-* [Sicheren virtuellen Host konfigurieren](#secure-communication-with-apache)
+* [Erstellen einer Kennwortdatei](#create-a-password)
+* [Konfigurieren des sicheren virtuellen Hosts](#secure-communication-with-apache)
 
-### Kennwort erstellen
+### Passwort erstellen
 
-Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle außerhalb des Basisverzeichnisses für Ihren Webserver finden. In diesem Beispiel wird gezeigt, wie die Kennwortdatei in einem neuen Verzeichnis gespeichert wird.
+Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle außer dem Stammordner des Webservers finden. In diesem Beispiel zeigen wir, wie die Kennwortdatei in einem neuen Verzeichnis gespeichert wird.
 
-#### Installieren Sie bei Bedarf htpasswd
+#### Installieren von htpasswd, falls erforderlich
 
-Überprüfen Sie zunächst, ob das Apache `htpasswd`-Dienstprogramm wie folgt installiert ist:
+Überprüfen Sie zunächst, ob das Dienstprogramm Apache `htpasswd` wie folgt installiert ist:
 
 1. Geben Sie den folgenden Befehl ein, um festzustellen, ob `htpasswd` bereits installiert ist:
 
@@ -114,9 +114,9 @@ Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
 
-#### Kennwortdatei erstellen
+#### Erstellen einer Kennwortdatei
 
-Geben Sie die folgenden Befehle als Benutzer mit `root` -Berechtigungen ein:
+Geben Sie die folgenden Befehle als Benutzer mit `root` Berechtigungen ein:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -126,24 +126,24 @@ mkdir -p /usr/local/apache/password
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
-Wo
+Hierbei gilt
 
-* `<username>` kann Folgendes sein:
+* `<username>` können sein:
 
-   * Einrichten von Cron: der Webserver-Benutzer oder ein anderer Benutzer.
+   * Einrichten von cron: der Webserver-Benutzer oder ein anderer Benutzer.
 
-  In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Wahl des Benutzers liegt bei Ihnen.
+  In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Auswahl des Benutzers liegt bei Ihnen.
 
-   * Einrichten des Elasticsearchs: In diesem Beispiel trägt der Benutzer den Namen `magento_elasticsearch` .
+   * Einrichten des Elasticsearchs: Der Benutzer heißt in diesem Beispiel `magento_elasticsearch`
 
-* `<password file name>` muss eine ausgeblendete Datei sein (beginnt mit `.`) und sollte den Namen des Benutzers widerspiegeln. Weitere Informationen finden Sie in den Beispielen weiter unten in diesem Abschnitt .
+* `<password file name>` muss eine ausgeblendete Datei sein (beginnt mit `.`) und sollte den Namen des Benutzers widerspiegeln. Einzelheiten finden Sie in den Beispielen weiter unten in diesem Abschnitt.
 
 Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benutzer zu erstellen.
 
 #### Beispiele
 
 **Beispiel 1: cron**
-Sie müssen die Authentifizierung nur für einen Benutzer für Cron einrichten. In diesem Beispiel verwenden wir den Webserver-Benutzer. Geben Sie die folgenden Befehle ein, um eine Kennwortdatei für den Webserver-Benutzer zu erstellen:
+Für Cron müssen Sie die Authentifizierung nur für einen Benutzer einrichten. In diesem Beispiel verwenden wir den Webserver-Benutzer. Um eine Kennwortdatei für den Webserver-Benutzer zu erstellen, geben Sie die folgenden Befehle ein:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Beispiel 2: Elasticsearch**
-Sie müssen die Authentifizierung für zwei Benutzer einrichten: einen mit Zugriff auf nginx und einen mit Zugriff auf Elasticsearch. Geben Sie die folgenden Befehle ein, um Kennwortdateien für diese Benutzer zu erstellen:
+Sie müssen die Authentifizierung für zwei Benutzer einrichten: einen mit Zugriff auf nginx und einen mit Zugriff auf Elasticsearch. Um Kennwortdateien für diese Benutzer zu erstellen, geben Sie die folgenden Befehle ein:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -166,7 +166,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 #### Zusätzliche Benutzer hinzufügen
 
-Um Ihrer Kennwortdatei einen weiteren Benutzer hinzuzufügen, geben Sie den folgenden Befehl als Benutzer mit `root` -Berechtigungen ein:
+Um einen weiteren Benutzer zu Ihrer Kennwortdatei hinzuzufügen, geben Sie den folgenden Befehl als Benutzer mit `root` Berechtigungen ein:
 
 ```bash
 htpasswd /usr/local/apache/password/.htpasswd <username>
@@ -174,11 +174,11 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Sichere Kommunikation mit Apache
 
-In diesem Abschnitt wird beschrieben, wie Sie die [einfache HTTP-Authentifizierung](https://httpd.apache.org/docs/2.2/howto/auth.html) einrichten. Die Verwendung von TLS und HTTP Basic-Authentifizierung verhindert, dass jeder die Kommunikation mit Elasticsearch oder OpenSearch oder Ihrem Anwendungsserver abfängt.
+In diesem Abschnitt wird beschrieben, wie Sie [HTTP-Standardauthentifizierung](https://httpd.apache.org/docs/2.2/howto/auth.html) einrichten. Durch die gemeinsame Verwendung von TLS und HTTP Basic-Authentifizierung wird verhindert, dass eine Person die Kommunikation mit Elasticsearch oder OpenSearch oder mit Ihrem Anwendungsserver abfängt.
 
-In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den Apache-Server zugreifen kann.
+In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den Apache-Server zugreifen kann.
 
-1. Verwenden Sie einen Texteditor, um Ihrem sicheren virtuellen Host die folgenden Inhalte hinzuzufügen.
+1. Verwenden Sie einen Texteditor, um die folgenden Inhalte zu Ihrem sicheren virtuellen Host hinzuzufügen.
 
    * Apache 2.4: `/etc/apache2/sites-available/default-ssl.conf` bearbeiten
 
@@ -200,7 +200,7 @@ In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den Apache-Serv
    </Proxy>
    ```
 
-1. Wenn Sie den vorangehenden zu Ihrem sicheren virtuellen Host hinzugefügt haben, entfernen Sie `Listen 8080` und die `<VirtualHost *:8080>` -Direktiven, die Sie Ihrem unsicheren virtuellen Host zuvor hinzugefügt haben.
+1. Wenn Sie das vorherige zu Ihrem sicheren virtuellen Host hinzugefügt haben, entfernen Sie `Listen 8080` und die `<VirtualHost *:8080>` Anweisungen, die Sie zuvor zu Ihrem unsicheren virtuellen Host hinzugefügt haben.
 
 1. Speichern Sie Ihre Änderungen, beenden Sie den Texteditor und starten Sie Apache neu:
 

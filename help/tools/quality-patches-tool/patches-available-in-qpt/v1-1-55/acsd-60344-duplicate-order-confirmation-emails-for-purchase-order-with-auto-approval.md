@@ -1,18 +1,19 @@
 ---
-title: 'ACSD-60344: E-Mails zur Bestellbestätigung bei Verwendung von [!UICONTROL Purchase Order] mit automatischer Genehmigung duplizieren'
-description: Wenden Sie den Patch ACSD-60344 an, um das Adobe Commerce-Problem zu beheben, bei dem doppelte Bestellbestätigungs-E-Mails gesendet werden, wenn eine [!UICONTROL Purchase Order] mit automatischer Genehmigung verwendet wird.
+title: 'ACSD-60344: Bei Verwendung von [!UICONTROL Purchase Order] mit automatischer Validierung doppelte Bestellbestätigungs-E-Mails'
+description: Wenden Sie den Patch ACSD-60344 an, um das Adobe Commerce-Problem zu beheben, bei dem doppelte E-Mails zur Bestellbestätigung gesendet werden, wenn ein [!UICONTROL Purchase Order] mit automatischer Genehmigung verwendet wird.
 feature: Purchase Orders
 role: Admin, Developer
-source-git-commit: afa03b31e4af0be1ebc0d12aabd4f9d8be17d1fe
+exl-id: c4d415ee-b1ac-4094-9209-19b91f9a7666
+source-git-commit: 1c31b2aad0c2c788716737b69057bd308368a35b
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
-# ACSD-60344: E-Mails zur Bestellbestätigung bei Verwendung von *[!UICONTROL Purchase Order]* mit automatischer Genehmigung duplizieren
+# ACSD-60344: Bei Verwendung von *[!UICONTROL Purchase Order]* mit automatischer Validierung doppelte Bestellbestätigungs-E-Mails
 
-Der Patch ACSD-60344 behebt das Problem, dass E-Mails mit doppelter Bestellbestätigung gesendet werden, wenn eine *[!UICONTROL Purchase Order]* mit automatischer Genehmigung verwendet wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 installiert ist. Die Patch-ID ist ACSD-60344. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Der Patch ACSD-60344 behebt das Problem, dass doppelte E-Mails zur Bestellbestätigung gesendet werden, wenn ein *[!UICONTROL Purchase Order]* mit automatischer Genehmigung verwendet wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 installiert ist. Die Patch-ID ist ACSD-60344. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,22 +28,22 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Bei Verwendung von &quot;*[!UICONTROL Purchase Order]*&quot; mit automatischer Validierung werden E-Mails zur Bestätigung von doppelten Bestellungen gesendet.
+Bei Verwendung eines *[!UICONTROL Purchase Order]* mit automatischer Validierung werden doppelte E-Mails zur Bestellbestätigung gesendet.
 
 <u>Voraussetzungen</u>
 
-Aktivieren Sie B2B-Module und *[!UICONTROL Purchase Order]*.
+Aktivieren von B2B-Modulen und -*[!UICONTROL Purchase Order]*.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein Unternehmenskonto und aktivieren Sie dafür den Wert &quot;*[!UICONTROL Purchase Order]*&quot;.
-1. Erstellen Sie ein reguläres Benutzerkonto und fügen Sie es dem Unternehmenskonto als Unternehmensbenutzer hinzu.
-1. Platzieren Sie mithilfe dieses Kontos eine Bestellung.
-1. Führen Sie Cron aus und überprüfen Sie E-Mails.
+1. Erstellen Sie ein Unternehmenskonto und aktivieren Sie eine *[!UICONTROL Purchase Order]* dafür.
+1. Erstellen Sie ein reguläres Benutzerkonto und fügen Sie es dem Unternehmenskonto als Firmenbenutzer hinzu.
+1. Mit diesem Konto eine Bestellung aufgeben.
+1. Cron ausführen und E-Mails überprüfen.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -50,18 +51,18 @@ Pro Bestellung wird nur eine Bestätigungs-E-Mail empfangen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Zwei Bestellbestätigungs-E-Mails werden empfangen.
+Zwei Bestätigungs-E-Mails gehen ein.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.

@@ -1,6 +1,6 @@
 ---
-title: Erweiterte Varnish-Konfiguration
-description: Konfigurieren Sie erweiterte Funktionen für die Färbung, einschließlich Konsistenzprüfung, Grazie und Heiligkeitsmodi.
+title: Erweiterte Lackkonfiguration
+description: Konfigurieren Sie erweiterte Funktionen für Lacke, einschließlich Konsistenzprüfung, Gnadenmodus und Sanktionsmodus.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
 source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Erweiterte Varnish-Konfiguration
+# Erweiterte Lackkonfiguration
 
-Varnish bietet mehrere Funktionen, die verhindern, dass Kunden lange Verzögerungen und Timeouts erleben, wenn der Commerce-Server nicht ordnungsgemäß funktioniert. Diese Funktionen können in der Datei `default.vcl` konfiguriert werden. Hier werden die Ergänzungen beschrieben, die Commerce in der VCL-Datei (Varnish Configuration Language) bereitstellt, die Sie vom Administrator herunterladen.
+Varnish bietet mehrere Funktionen, die verhindern, dass Kunden lange Verzögerungen und Zeitüberschreitungen erleben, wenn der Commerce-Server nicht ordnungsgemäß funktioniert. Diese Funktionen können in der `default.vcl` konfiguriert werden. In diesem Thema werden die Ergänzungen beschrieben, die Commerce in der VCL-Datei (Varnish Configuration Language) bereitstellt, die Sie vom Admin-Team herunterladen.
 
-Weitere Informationen zur Verwendung der Varnish-Konfigurationssprache finden Sie im [Varnish Reference Manual](https://varnish-cache.org/docs/index.html) .
+Siehe [Varnish-Referenzhandbuch](https://varnish-cache.org/docs/index.html) für Details zur Verwendung der Varnish-Konfigurationssprache.
 
 ## Konsistenzprüfung
 
-Die Funktion &quot;Varnish-Konsistenzprüfung&quot;fragt den Commerce-Server ab, um zu ermitteln, ob er zeitnah reagiert. Wenn sie normal reagiert, werden nach Ablauf des TTL-Zeitraums (Time to Live) neue Inhalte generiert. Wenn nicht, stellt Varnish immer veraltete Inhalte bereit.
+Die Funktion „Konsistenzprüfung der Lackierung“ fragt den Commerce-Server ab, um festzustellen, ob er zeitnah reagiert. Wenn er normal reagiert, werden neue Inhalte nach Ablauf des TTL-Zeitraums (Time to Live) neu generiert. Wenn nicht, stellt Varnish immer veraltete Inhalte bereit.
 
 Commerce definiert die folgende standardmäßige Konsistenzprüfung:
 
@@ -32,52 +32,52 @@ Commerce definiert die folgende standardmäßige Konsistenzprüfung:
     }
 ```
 
-Alle 5 Sekunden ruft diese Konsistenzprüfung das Skript `pub/health_check.php` auf. Dieses Skript überprüft die Verfügbarkeit des Servers, jeder Datenbank und von Redis (falls installiert). Das Skript muss innerhalb von 2 Sekunden eine Antwort zurückgeben. Wenn das Skript feststellt, dass eine dieser Ressourcen ausgefallen ist, wird ein HTTP-Fehlercode 500 zurückgegeben. Wenn dieser Fehlercode in sechs von zehn Versuchen empfangen wird, gilt das Backend als ungesund.
+Alle 5 Sekunden ruft diese Konsistenzprüfung das `pub/health_check.php`-Skript auf. Dieses Skript überprüft die Verfügbarkeit des Servers, jeder Datenbank und von Redis (falls installiert). Das Skript muss innerhalb von 2 Sekunden eine Antwort zurückgeben. Wenn das Skript feststellt, dass eine dieser Ressourcen ausgefallen ist, wird ein HTTP-Fehler-Code von 500 zurückgegeben. Wenn dieser Fehler-Code in sechs von zehn Versuchen empfangen wird, wird das Backend als ungesund betrachtet.
 
-Das Skript `health_check.php` befindet sich im Verzeichnis `pub` . Wenn Ihr Commerce-Stammordner &quot;`pub`&quot; lautet, müssen Sie den Pfad im Parameter &quot;`url`&quot; von &quot;`/pub/health_check.php`&quot; in &quot;`health_check.php`&quot; ändern.
+Das `health_check.php` befindet sich im `pub`. Wenn Ihr Commerce-Stammordner `pub` ist, ändern Sie den Pfad im `url` von `/pub/health_check.php` in `health_check.php`.
 
-Weitere Informationen finden Sie in der Dokumentation [Varnish health checks](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) .
+Weitere Informationen finden Sie in der [Varnish-Konsistenzprüfungen](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) Dokumentation.
 
-## Übergangmodus
+## Gnadenmodus
 
-Der Übergangmodus ermöglicht es Varnish, ein Objekt über seinen TTL-Wert hinaus im Cache zu belassen. Varnish kann dann den abgelaufenen (veralteten) Inhalt bereitstellen, während es eine neue Version abruft. Dadurch wird der Traffic-Fluss verbessert und die Ladezeiten verkürzt. Es wird in den folgenden Situationen verwendet:
+Der Übergangsmodus ermöglicht es Varnish, ein Objekt über seinen TTL-Wert hinaus im Cache zu belassen. Der Lack kann dann den abgelaufenen (veralteten) Inhalt bereitstellen, während er eine neue Version abruft. Dies verbessert den Verkehrsfluss und verringert die Ladezeiten. Es wird in den folgenden Situationen verwendet:
 
-- Wenn das Commerce-Backend gesund ist, eine Anforderung jedoch länger dauert als normal
-- Wenn das Commerce-Backend nicht gesund ist.
+- Wenn das Commerce-Backend fehlerfrei ist, eine Anfrage jedoch länger als gewöhnlich dauert
+- Wenn das Commerce-Backend nicht einwandfrei funktioniert.
 
-Die UnterRoutine &quot;`vcl_hit`&quot; definiert, wie &quot;Varnish&quot;auf eine Anforderung für Objekte reagiert, die zwischengespeichert wurden.
+Die `vcl_hit`-Unterroutine definiert, wie Varnish auf eine Anforderung von Objekten antwortet, die zwischengespeichert wurden.
 
-### Wenn das Commerce-Backend gesund ist
+### Wenn das Commerce-Backend in Ordnung ist
 
-Wenn die Konsistenzprüfungen feststellen, dass das Commerce-Backend gesund ist, prüft Varnish, ob die Zeit in der Übergangsphase verbleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden. Ein Händler kann jedoch den Wert aus dem Admin festlegen, wie unter [Konfigurieren von Commerce für die Verwendung von Varnish](configure-varnish-commerce.md) beschrieben. Wenn die Übergangsphase nicht abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das Objekt synchron vom Commerce-Backend.
+Wenn die Konsistenzprüfungen ergeben, dass das Commerce-Backend fehlerfrei ist, prüft Varnish, ob die Zeit in der Übergangsphase bleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, aber ein Händler kann den Wert über den Administrator festlegen, wie in [Konfigurieren von Commerce für die Verwendung von ](configure-varnish-commerce.md)) beschrieben. Wenn die Übergangsphase nicht abgelaufen ist, liefert Varnish den veralteten Inhalt und aktualisiert das -Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das -Objekt synchron vom Commerce-Backend.
 
-Die maximale Zeit, die Varnish für ein altes Objekt bereitstellt, ist die Summe der Übergangsphase (standardmäßig 300 Sekunden) und des TTL-Werts (standardmäßig 86400 Sekunden).
+Die maximale Zeitspanne, die Varnish für die Bereitstellung eines veralteten Objekts verwendet, ist die Summe aus der Übergangsphase (standardmäßig 300 Sekunden) und dem TTL-Wert (standardmäßig 86400 Sekunden).
 
-Um die standardmäßige Übergangsphase innerhalb der Datei `default.vcl` zu ändern, bearbeiten Sie die folgende Zeile in der UnterRoutine `vcl_hit` :
+Um die standardmäßige Übergangsphase innerhalb der `default.vcl`-Datei zu ändern, bearbeiten Sie die folgende Zeile in der `vcl_hit`-Unterroutine:
 
 ```conf
 if (obj.ttl + 300s > 0s) {
 ```
 
-### Wenn das Commerce-Backend nicht gesund ist
+### Wenn das Commerce-Backend nicht einwandfrei funktioniert
 
-Wenn das Commerce-Backend nicht responsiv ist, stellt Varnish veraltete Inhalte aus dem Cache drei Tage lang (oder wie in `beresp.grace` definiert) plus die verbleibende TTL (standardmäßig ein Tag) bereit, es sei denn, der zwischengespeicherte Inhalt wird manuell bereinigt.
+Wenn das Commerce-Backend nicht responsiv ist, stellt Varnish veraltete Inhalte aus dem Cache für drei Tage (oder wie in `beresp.grace` definiert) plus die verbleibende TTL (die standardmäßig einen Tag beträgt) bereit, es sei denn, der zwischengespeicherte Inhalt wird manuell bereinigt.
 
 ## Saint-Modus
 
-Der Saint-Modus schließt ungesunde Backends für einen konfigurierbaren Zeitraum aus. Daher können ungesunde Backends keinen Traffic bereitstellen, wenn sie Varnish als Lastenausgleich verwenden. Der SAINT-Modus kann mit dem Übergangmodus verwendet werden, um eine komplexe Handhabung ungesunder Backend-Server zu ermöglichen. Wenn beispielsweise ein Backend-Server ungesund ist, können weitere Versuche an einen anderen Server weitergeleitet werden. Wenn alle anderen Server ausfallen, bedienen Sie veraltete zwischengespeicherte Objekte. Die Backend-Hosts und Blackout-Punkte des Saint-Modus werden in der Datei `default.vcl` definiert.
+Der Saint-Modus schließt ungesunde Backends für einen konfigurierbaren Zeitraum aus. Daher können ungesunde Backends bei Verwendung von Lack als Lastenausgleich keinen Traffic bereitstellen. Der Saint-Modus kann mit dem Grace-Modus verwendet werden, um eine komplexe Handhabung von ungesunden Backend-Servern zu ermöglichen. Wenn beispielsweise ein Backend-Server fehlerhaft ist, können weitere Zustellversuche an einen anderen Server weitergeleitet werden. Wenn alle anderen Server ausgefallen sind, dann veraltete zwischengespeicherte Objekte bereitstellen. Die Backend-Hosts und Blackout-Perioden des Saint-Modus sind in der `default.vcl`-Datei definiert.
 
-Der SAINT-Modus kann auch verwendet werden, wenn Commerce-Instanzen einzeln offline genommen werden, um Wartungs- und Aktualisierungsaufgaben durchzuführen, ohne dass sich dies auf die Verfügbarkeit der Commerce-Site auswirkt.
+Der Saint-Modus kann auch verwendet werden, wenn Commerce-Instanzen einzeln offline geschaltet werden, um Wartungs- und Upgrade-Aufgaben durchzuführen, ohne die Verfügbarkeit der Commerce-Site zu beeinträchtigen.
 
-### Voraussetzungen für den Saint-Modus
+### Voraussetzungen für den Sanktionsmodus
 
-Benennen Sie eine Maschine als primäre Installation. Installieren Sie auf diesem Computer die Hauptinstanz von Commerce, MySQL-Datenbank und Varnish.
+Bestimmen Sie einen Computer als primäre Installation. Installieren Sie auf diesem Computer die Hauptinstanz von Commerce, die MySQL-Datenbank und Varnish.
 
-Auf allen anderen Computern muss die Commerce-Instanz Zugriff auf die MySQL-Datenbank des primären Computers haben. Die sekundären Computer sollten auch Zugriff auf die Dateien der primären Commerce-Instanz haben.
+Auf allen anderen Computern muss die Commerce-Instanz Zugriff auf die MySQL-Datenbank des primären Computers haben. Die sekundären Computer sollten außerdem Zugriff auf die Dateien der primären Commerce-Instanz haben.
 
-Alternativ kann die Versionierung statischer Dateien auf allen Computern deaktiviert werden. Der Zugriff darauf erfolgt über den Administrator unter **Speicher** > Einstellungen > **Konfiguration** > **Erweitert** > **Entwickler** > **Statische Dateieinstellungen** > **Statische Dateien signieren** = **Nein**.
+Statische Dateiversionen können auf allen Computern deaktiviert werden. Diese können Sie vom Administrator unter **Stores** > Einstellungen > **Konfiguration** > **Erweitert** > **Entwickler** > **Statische Dateieinstellungen** > **Statische Dateien signieren** = **Nein**.
 
-Schließlich müssen sich alle Commerce-Instanzen im Produktionsmodus befinden. Bevor Varnish gestartet wird, löschen Sie den Cache auf jeder Instanz. Wechseln Sie im Admin zu **System** > Tools > **Cache-Verwaltung** und klicken Sie auf **Magento-Cache leeren**. Sie können auch den folgenden Befehl ausführen, um den Cache zu löschen:
+Schließlich müssen sich alle Commerce-Instanzen im Produktionsmodus befinden. Bevor Varnish gestartet wird, löschen Sie den Cache auf jeder Instanz. Gehen Sie in der Admin zu **System** > Tools > **Cache-Verwaltung** und klicken Sie auf **Magento-Cache leeren**. Sie können auch den folgenden Befehl ausführen, um den Cache zu löschen:
 
 ```bash
 bin/magento cache:flush
@@ -85,12 +85,12 @@ bin/magento cache:flush
 
 ### Installation
 
-Der Saint-Modus ist nicht Teil des Varnish-Hauptpakets. Es handelt sich um eine gesonderte Version `vmod`, die heruntergeladen und installiert werden muss. Daher müssen Sie Varnish aus der Quelle neu kompilieren, wie in den [Installationsanweisungen](https://varnish-cache.org/docs/index.html) für Ihre Version von Varnish beschrieben.
+Saint Mode ist nicht Teil des Hauptpakets Lack. Es handelt sich um eine separat versionierte `vmod`, die heruntergeladen und installiert werden muss. Daher müssen Sie Varnish aus der Quelle neu kompilieren, wie in den [Installationsanweisungen](https://varnish-cache.org/docs/index.html) für Ihre Version von Varnish beschrieben.
 
-Nach der Neukompilierung können Sie das Modul Saint-Modus installieren. Gehen Sie im Allgemeinen wie folgt vor:
+Nach dem Neukompilieren können Sie das Modul Saint-Modus installieren. Führen Sie im Allgemeinen die folgenden Schritte aus:
 
-1. Rufen Sie den Quellcode von [Varnish modules](https://github.com/varnish/varnish-modules) ab. Klonen Sie die Git-Version (Master-Version), da die Versionen 0.9.x einen Quellcode-Fehler enthalten.
-1. Erstellen Sie den Quellcode mit autotools:
+1. Beziehen Sie den Quell-Code aus [Varnish-Modulen](https://github.com/varnish/varnish-modules). Klonen Sie die Git-Version (Master-Version), da die Versionen 0.9.x einen Quellcodefehler enthalten.
+1. Erstellen Sie den Quell-Code mit AutoTools:
 
    ```bash
    sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
@@ -101,11 +101,11 @@ Nach der Neukompilierung können Sie das Modul Saint-Modus installieren. Gehen S
    sudo make install
    ```
 
-Informationen zum Installieren des Saint-Modus-Moduls finden Sie unter [Varnish module collection](https://github.com/varnish/varnish-modules) .
+Siehe [Lackmodul-Sammlung](https://github.com/varnish/varnish-modules) für Informationen zur Installation des Saint-Modus-Moduls.
 
 ### VCL-Beispieldatei
 
-Das folgende Codebeispiel zeigt den Code, der zu Ihrer VCL-Datei hinzugefügt werden muss, um den Farbmodus zu aktivieren. Platzieren Sie die `import` -Anweisungen und die `backend` -Definitionen am Anfang der Datei.
+Das folgende Codebeispiel zeigt den Code, der Ihrer VCL-Datei hinzugefügt werden muss, um den Heiligen Modus zu aktivieren. Platzieren Sie die `import` Anweisungen und `backend` Definitionen am Anfang der Datei.
 
 ```cpp
 import saintmode;

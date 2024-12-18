@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-45675: Beim Export von Produkten werden Kategorienamen aus dem standardmäßigen Speicheransichtsbereich verwendet'
-description: Der Patch ACSD-45675 behebt das Problem, dass beim Export von Produkten Kategorienamen aus dem standardmäßigen Store-Ansichtsbereich verwendet werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-45675. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+title: 'ACSD-45675: Der Produktexport verwendet Kategorienamen aus dem Standard-Ansichtsbereich des Stores'
+description: Mit dem Patch ACSD-45675 wird das Problem behoben, dass der Produktexport Kategorienamen aus dem standardmäßigen Store-Ansichtsbereich verwendet. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-45675. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-45675: Beim Export von Produkten werden Kategorienamen aus dem standardmäßigen Speicheransichtsbereich verwendet
+# ACSD-45675: Der Produktexport verwendet Kategorienamen aus dem Standard-Ansichtsbereich des Stores
 
-Der Patch ACSD-45675 behebt das Problem, dass beim Export von Produkten Kategorienamen aus dem standardmäßigen Store-Ansichtsbereich verwendet werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-45675. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Mit dem Patch ACSD-45675 wird das Problem behoben, dass der Produktexport Kategorienamen aus dem standardmäßigen Store-Ansichtsbereich verwendet. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-45675. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,47 +27,47 @@ Der Patch ACSD-45675 behebt das Problem, dass beim Export von Produkten Kategori
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Beim Export von Produkten werden Kategorienamen aus dem standardmäßigen Umfang der Store-Ansicht verwendet.
+Der Produktexport verwendet Kategorienamen aus dem standardmäßigen Store-Ansichtsbereich.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie eine benutzerdefinierte Store-Ansicht **[!UICONTROL Thai]** im Hauptspeicher.
-1. Machen Sie **[!UICONTROL Thai]** zur standardmäßigen Store-Ansicht der Haupt-Website.
+1. Erstellen Sie eine benutzerdefinierte Store-**[!UICONTROL Thai]** im Hauptspeicher.
+1. **[!UICONTROL Thai]** Sie als Standard-Store-Ansicht der Haupt-Website.
 1. Erstellen Sie die folgende Kategoriestruktur unter **[!UICONTROL Default Category]**:
 
    *[!UICONTROL Default category/Tea/Black]*
 
-1. Wählen Sie die Kategorie **[!UICONTROL Tea]** aus und ändern Sie die **[!UICONTROL Scope]** in **[!UICONTROL Thai]**.
-1. Setzen Sie die **[!UICONTROL Category Name]** auf **[!UICONTROL ชาดำ]**.
-1. Erstellen Sie ein einfaches Produkt **[!UICONTROL SP001]** und weisen Sie die Kategorie **[!UICONTROL Black]** zu.
-1. Vergewissern Sie sich, dass der Cron nicht ausgeführt wird.
+1. Wählen Sie die **[!UICONTROL Tea]** aus und ändern Sie die **[!UICONTROL Scope]** in **[!UICONTROL Thai]**.
+1. Legen Sie die **[!UICONTROL Category Name]** als **[!UICONTROL ชาดำ]** fest.
+1. Erstellen Sie eine einfache **[!UICONTROL SP001]** und weisen Sie die **[!UICONTROL Black]** zu.
+1. Stellen Sie sicher, dass die Cron nicht läuft.
 1. Führen Sie einen Produktexport durch. Nach SKU filtern und **[!UICONTROL SP001]** auswählen.
-1. Überprüfen Sie die Spalte **[!UICONTROL categories]** im exportierten CSV.
+1. Überprüfen Sie die Spalte **[!UICONTROL categories]** in der exportierten CSV-Datei.
 
 <u>Erwartete Ergebnisse</u>:
 
-Da beim Export kein Store ausgewählt wurde, sollte ein Kategoriepfad wie der folgende abgerufen werden: *[!UICONTROL Default Category/Tea/Black]*.
+Da beim Export kein Store ausgewählt wurde, sollten Sie einen Kategoriepfad wie den folgenden erhalten: *[!UICONTROL Default Category/Tea/Black]*.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Kategoriepfad weist verschiedene Sprachen auf: *[!UICONTROL Default Category/ชาดำ/Black]*.
+Kategoriepfad hat gemischte Sprachen: *[!UICONTROL Default Category/ชาดำ/Black]*.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tools] > Nutzung](/help/tools/quality-patches-tool/usage.md) im Handbuch zum Werkzeug für Qualitätsmuster.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tools] > Nutzung](/help/tools/quality-patches-tool/usage.md) im Handbuch Quality Patches Tool.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in [!DNL QPT] verfügbaren Patches finden Sie unter [In  [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbare Patches im Handbuch zum Werkzeug für Qualitätsmuster .
+Weitere Informationen zu anderen in [!DNL QPT] verfügbaren Patches finden Sie unter [Patches verfügbar in [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Handbuch zum Quality Patches Tool .

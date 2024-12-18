@@ -1,6 +1,6 @@
 ---
-title: CSS- und JS-Ressourcendateien optimieren
-description: Erfahren Sie, wie Sie CSS- und JavaScript (JS)-Dateien für Adobe Commerce-Projekte über den Admin oder über die Befehlszeile zusammenführen und minimieren können.
+title: Optimieren von CSS- und JS-Ressourcendateien
+description: Erfahren Sie, wie Sie CSS- und JavaScript-Dateien (JS) für Adobe Commerce-Projekte über die Admin-Benutzeroberfläche oder die Befehlszeile zusammenführen und minimieren können.
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
@@ -11,37 +11,37 @@ ht-degree: 0%
 
 ---
 
-# Optimieren von Ressourcendateien
+# Ressourcendateien optimieren
 
-Optimieren Sie für eine reaktionsfähigere Commerce-Site CSS- und JavaScript-Ressourcendateien (JS) und eliminieren Sie Renderer-Blockierungsressourcen.
+Für eine reaktionsschnellere Commerce-Site optimieren Sie CSS- und JavaScript (JS)-Ressourcendateien und eliminieren Sie Render-Blocking-Ressourcen.
 
-- **CSS- und JS-Dateien optimieren**: Reduzieren Sie die zum Laden von CSS- und JavaScript (JS)-Dateien erforderliche Zeit, indem Sie Adobe Commerce so konfigurieren, dass separate Dateien zusammengeführt, minimiert und in einer Datei zusammengefasst werden.
-- **Renderer-Blocker-Ressourcen eliminieren** - Erwägen Sie die Inline-Bereitstellung kritischer JS- und CSS-Funktionen und die Verschiebung aller nicht kritischen JS-/CSS-Stile. Eine Anleitung finden Sie unter [Renderer-Blocker-Ressourcen beseitigen](https://web.dev/render-blocking-resources/).
+- **Optimieren von CSS- und JS-Dateien** - Verringern Sie den Zeitaufwand für das Laden von CSS- und JavaScript (JS)-Dateien, indem Sie Adobe Commerce so konfigurieren, dass separate Dateien zusammengeführt, minimiert und zu einer einzigen Datei gebündelt werden.
+- **Eliminieren von Render-Blocking-Ressourcen** - Erwägen Sie, wichtige JS- und CSS-Funktionen inline bereitzustellen und alle nicht kritischen JS-/CSS-Stile zurückzustellen. Eine Anleitung finden Sie unter [Beseitigen von Render-Blocker-Ressourcen](https://web.dev/render-blocking-resources/).
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen, 2.3 und höher](../../../release/versions.md) von:
+[Alle unterstützten Versionen 2.3 und höher](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
 ## Zusammenführen oder Minimieren von CSS-Dateien
 
-Die Ladezeit von CSS- und JavaScript-Dateien (JS) kann durch Zusammenführen, Minimieren und Bündeln separater Dateien in einer Datei reduziert werden.
+Der Zeitaufwand für das Laden von CSS- und JavaScript-Dateien (JS) kann reduziert werden, indem separate Dateien zusammengeführt, minimiert und zu einer einzigen Datei gebündelt werden.
 
 >[!IMPORTANT]
 >
->Adobe Commerce in der Cloud-Infrastruktur wird immer im Produktionsmodus ausgeführt. Andernfalls ist es nicht möglich, sie festzulegen. Daher müssen Sie die Befehlszeilenmethode verwenden, um das Zusammenführen, Minimieren und Bundling zu ermöglichen.
+>Adobe Commerce in der Cloud-Infrastruktur wird immer im Produktionsmodus ausgeführt und kann nicht anderweitig festgelegt werden. Daher müssen Sie die Befehlszeilenmethode verwenden, um das Zusammenführen, Minimieren und Bündeln zu aktivieren.
 
-Führen Sie keine Dateien zusammen oder bündeln Sie sie, wenn Ihre Bereitstellung HTTP/2 verwendet. HTTP/2 lädt statische Dateien asynchron herunter. Browser müssen eine gesamte zusammengeführte Datei herunterladen, bevor die Dateiinhalte verarbeitet werden.
+Führen Sie keine Dateien zusammen oder bündeln Sie sie, wenn Ihre Bereitstellung HTTP/2 verwendet. HTTP/2 lädt statische Dateien asynchron herunter. Browser müssen eine gesamte zusammengeführte Datei herunterladen, bevor sie den Dateiinhalt verarbeiten können.
 
 ### Verwenden von Admin
 
-Um die CSS-Zusammenführung oder -Minimierung zu aktivieren, gehen Sie zu &quot;[!UICONTROL **Admin**&quot;> &quot;**Stores**&quot;> &quot;**Einstellung**&quot;> &quot;**Konfiguration**&quot;> &quot;**Erweitert**&quot;> &quot;**Entwickler**&quot;> &quot;**CSS-Einstellungen**]&quot;.
+Um die CSS-Zusammenführung oder -Minimierung zu aktivieren, navigieren Sie zu [!UICONTROL **Admin** > **Stores** > **Setting** > **Configuration** > **Advanced** > **Developer** > **CSS Settings**].
 
-### Befehlszeile verwenden
+### Verwenden der Befehlszeile
 
-Aktivieren der CSS-Zusammenführung in Adobe Commerce in der Cloud-Infrastruktur:
+So aktivieren Sie die CSS-Zusammenführung in Adobe Commerce in der Cloud-Infrastruktur:
 
 1. Führen Sie diesen Befehl lokal aus:
 
@@ -49,9 +49,9 @@ Aktivieren der CSS-Zusammenführung in Adobe Commerce in der Cloud-Infrastruktur
    bin/magento config:set --lock-config dev/css/merge_css_files 1
    ```
 
-1. Übertragen Sie Änderungen an der Datei &quot;`app/etc/config.php`&quot;und stellen Sie sie erneut bereit.
+1. Übertragen Sie Änderungen in die `app/etc/config.php` und stellen Sie sie erneut bereit.
 
-Aktivieren der CSS-Minimierung in Adobe Commerce in der Cloud-Infrastruktur:
+So aktivieren Sie die CSS-Minimierung in Adobe Commerce in der Cloud-Infrastruktur:
 
 1. Führen Sie diesen Befehl lokal aus:
 
@@ -59,17 +59,17 @@ Aktivieren der CSS-Minimierung in Adobe Commerce in der Cloud-Infrastruktur:
    bin/magento config:set --lock-config dev/css/minify_files 1
    ```
 
-1. Übertragen Sie Änderungen an der Datei &quot;`app/etc/config.php`&quot;und stellen Sie sie erneut bereit.
+1. Übertragen Sie Änderungen in die `app/etc/config.php` und stellen Sie sie erneut bereit.
 
 ## Minimieren von JS-Dateien
 
 ### Verwenden von Admin
 
-Wechseln Sie in der Seitenleiste *Admin* zu **Stores** > **Einstellungen** > **Konfiguration** > **Erweitert** > **Entwickler** > **JavaScript-Einstellungen**.
+Navigieren Sie in *Admin*-Seitenleiste zu **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**.
 
-### Befehlszeile verwenden
+### Verwenden der Befehlszeile
 
-Aktivieren der JS-Minimierung in Adobe Commerce in der Cloud-Infrastruktur:
+So aktivieren Sie die JS-Minimierung in Adobe Commerce auf der Cloud-Infrastruktur:
 
 1. Führen Sie diesen Befehl lokal aus:
 
@@ -77,13 +77,13 @@ Aktivieren der JS-Minimierung in Adobe Commerce in der Cloud-Infrastruktur:
    bin/magento config:set --lock-config dev/js/minify_files 1
    ```
 
-1. Übertragen Sie Änderungen an der Datei &quot;`app/etc/config.php`&quot;und stellen Sie sie erneut bereit.
+1. Übertragen Sie Änderungen in die `app/etc/config.php` und stellen Sie sie erneut bereit.
 
-## Zusammenführen und Bundle von JS-Dateien
+## Zusammenführen und Bündeln von JS-Dateien
 
-Sie können das Zusammenführen oder Bundling im Commerce Admin aktivieren (das Zusammenführen und Bundling kann nicht gleichzeitig aktiviert werden): [!UICONTROL **Stores** > **Einstellungen** > **Konfiguration** > **Erweitert** > **Entwickler** > **JavaScript-Einstellungen**].
+Sie können das Zusammenführen oder Bündeln in Commerce Admin aktivieren (Zusammenführen und Bündeln können nicht gleichzeitig aktiviert werden): [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
 
-Sie können auch das integrierte Adobe Commerce-Bundling (Basis-Bundling) über die Befehlszeile aktivieren:
+Sie können auch über die Befehlszeile die integrierte Bündelung (Basic Bundling) von Adobe Commerce aktivieren:
 
 ```bash
 php -f bin/magento config:set dev/js/enable_js_bundling 1
@@ -91,7 +91,7 @@ php -f bin/magento config:set dev/js/enable_js_bundling 1
 
 ## Weitere Informationen
 
-- [Clientseitige Optimierungseinstellungen](../../../performance/configuration.md#client-side-optimization-settings)
-- [Benutzerhandbuch: Optimieren von Ressourcendateien](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
-- [Frontend-Entwicklerhandbuch: CSS-Zusammenführung, Minimierung und Site-Leistung](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
-- [Erweitertes JavaScript-Bundling](../../../performance/advanced-js-bundling.md)
+- [Client-seitige Optimierungseinstellungen](../../../performance/configuration.md#client-side-optimization-settings)
+- [Benutzerhandbuch: Ressourcendateien optimieren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Frontend-Entwicklerhandbuch: CSS-Zusammenführung, Minimierung und Site-Performance](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
+- [Erweiterte JavaScript-Pakete](../../../performance/advanced-js-bundling.md)

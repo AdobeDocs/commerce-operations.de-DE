@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-53309: Unvollständige Steueranwendung für anpassbare Optionen und [!UICONTROL Regular Price] Beschriftung'
-description: Wenden Sie den Patch ACSD-53309 an, um das Adobe Commerce-Problem zu beheben, bei dem die Steuer nicht vollständig auf die Beschriftung '[!UICONTROL Regular Price]' angewendet wird, wenn eine anpassbare Option ausgewählt ist.
+title: 'ACSD-53309: Unvollständiger Steuerantrag für anpassbare Optionen und [!UICONTROL Regular Price]'
+description: Wenden Sie den Patch „ACSD-53309“ an, um das Adobe Commerce-Problem zu beheben, bei dem bei Auswahl einer anpassbaren Option die Steuer im Titel "[!UICONTROL Regular Price]" nicht vollständig angewendet wird.
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer
 exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-53309: Unvollständige Steueranwendung für anpassbare Optionen und &#39;[!UICONTROL Regular Price]&#39; Beschriftung
+# ACSD-53309: Unvollständiger Steuerantrag für anpassbare Optionen und &quot;[!UICONTROL Regular Price]&quot;-Kennzeichnung
 
-Der Patch ACSD-53309 behebt das Problem, bei dem die Steuer in der Bezeichnung &#39;[!UICONTROL Regular Price]&#39; nicht vollständig angewendet wird, wenn eine anpassbare Option ausgewählt ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.43 installiert ist. Die Patch-ID ist ACSD-53309. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-53309 wird das Problem behoben, dass bei der Kennzeichnung &quot;[!UICONTROL Regular Price]&quot; keine Steuer vollständig angewendet wird, wenn eine anpassbare Option ausgewählt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.43 installiert ist. Die Patch-ID ist ACSD-53309. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,16 +27,16 @@ Der Patch ACSD-53309 behebt das Problem, bei dem die Steuer in der Bezeichnung &
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die Steuer wird nicht vollständig im Titel &#39;[!UICONTROL Regular Price]&#39; angezeigt, wenn eine anpassbare Option ausgewählt wird.
+Die Steuer wird im Titel &quot;[!UICONTROL Regular Price]&quot; nicht vollständig angezeigt, wenn eine anpassbare Option ausgewählt wird.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Melden Sie sich beim Admin-Bedienfeld an.
-1. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]** , um die Steuereinstellungen zu konfigurieren.
+1. Melden Sie sich beim Admin Panel an.
+1. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Tax]**, um die Steuereinstellungen zu konfigurieren.
 
    * [!UICONTROL Tax Classes]:
 
@@ -64,7 +64,7 @@ Die Steuer wird nicht vollständig im Titel &#39;[!UICONTROL Regular Price]&#39;
       * [!UICONTROL Display Subtotal] = [!UICONTROL Including Tax]
       * [!UICONTROL Display Shipping Amount] = [!UICONTROL Including Tax]
 
-1. Legen Sie **[!UICONTROL Shipping Settings]** > **[!UICONTROL Origin]** > **[!UICONTROL Country]** = *Vereinigtes Königreich* fest.
+1. **[!UICONTROL Shipping Settings]** > **[!UICONTROL Origin]** > **[!UICONTROL Country]** = *Vereinigtes Königreich*.
 
 1. Erstellen Sie die folgenden *[!UICONTROL Tax Rate]* und *[!UICONTROL Tax Rules]*:
 
@@ -75,33 +75,33 @@ Die Steuer wird nicht vollständig im Titel &#39;[!UICONTROL Regular Price]&#39;
 1. Erstellen Sie ein einfaches Produkt und legen Sie Folgendes fest:
    * [!UICONTROL Price = 110]
    * [!UICONTROL Special Price = 100]
-   * Legen Sie in der Dropdown-Liste den Typ auf die benutzerdefinierte Option fest, wobei der Preis auf 15 % festgelegt ist
-1. Gehen Sie zur Produktseite für das einfache Element, das auf der Storefront erstellt wurde.
-1. Wählen Sie die erstellte benutzerdefinierte Option *15%* aus.
+   * Legen Sie in der Dropdown-Liste den Typ auf eine benutzerdefinierte Option mit einem Preis von 15 % fest
+1. Gehen Sie zur Produktseite für den einfachen Artikel, der in der Storefront erstellt wurde.
+1. Wählen Sie die erstellte benutzerdefinierte Option *15%*.
 
 <u>Erwartete Ergebnisse</u>:
 
-* Für die ausgewählte benutzerdefinierte Option wird eine 20-prozentige Steuer angewendet.
-* &#39;[!UICONTROL Regular Price]&#39; = 151.80.
+* Auf die ausgewählte benutzerdefinierte Option wird eine Steuer von 20 % angewendet.
+* &#39;[!UICONTROL Regular Price]&#39; = 151,80.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Die 20 %-Steuer wird nicht auf die ausgewählte benutzerdefinierte Option angewendet.
-* &#39;[!UICONTROL Regular Price]&#39; = 148.50.
+* Auf die ausgewählte benutzerdefinierte Option wird keine Steuer in Höhe von 20 % angewendet.
+* &#39;[!UICONTROL Regular Price]&#39; = 148,50.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

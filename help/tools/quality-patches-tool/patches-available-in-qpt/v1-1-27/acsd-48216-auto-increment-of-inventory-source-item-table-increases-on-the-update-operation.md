@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48216: *AUTO_INCREMENT der Tabelle inventory_source_item* erhöht sich bei *UPDATE*-Vorgang'
-description: Wenden Sie den Patch ACSD-48216 an, um das Adobe Commerce-Problem zu beheben, bei dem *AUTO_INCREMENT der Tabelle inventory_source_item* beim Vorgang *UPDATE* zunimmt.
+title: 'ACSD-48216: *AUTO_INCREMENT of inventory_source_item*-Tabelle erhöht sich bei *UPDATE*-Vorgang'
+description: Wenden Sie den Patch ACSD-48216 an, um das Adobe Commerce-Problem zu beheben, bei dem sich *AUTO_INCREMENT der Tabelle inventory_source_item* bei *UPDATE*-Vorgängen erhöht.
 feature: Admin Workspace, Inventory, Orders
 role: Admin
 exl-id: acb956c8-75d4-4764-8b8d-250bc8620b29
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48216: *AUTO_INCREMENT* der Tabelle *inventory_source_item* erhöht sich beim Vorgang *UPDATE*
+# ACSD-48216: *AUTO_INCREMENT* der Tabelle *inventory_source_item* steigt mit *UPDATE* Vorgang
 
-Der Patch ACSD-48216 behebt das Problem, dass *AUTO_INCREMENT* der Tabelle *inventory_source_item* beim Vorgang *UPDATE* zunimmt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.27 installiert ist. Die Patch-ID lautet ACSD-48216. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-48216 behebt das Problem, dass *AUTO_INCREMENT* der Tabelle *Inventory_source_item* beim Vorgang *UPDATE* zunimmt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.27 installiert ist. Die Patch-ID ist ACSD-48216. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,15 +27,15 @@ Der Patch ACSD-48216 behebt das Problem, dass *AUTO_INCREMENT* der Tabelle *inve
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-`AUTO_INCREMENT` der `inventory_source_item` Tabelle erhöht sich beim `UPDATE`-Vorgang.
+`AUTO_INCREMENT` der `inventory_source_item` erhöht sich beim `UPDATE`.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Überprüfen Sie den aktuellen Wert von `AUTO_INCREMENT` der Tabelle `inventory_source_item`:
+1. Überprüfen Sie den aktuellen Wert von `AUTO_INCREMENT` der `inventory_source_item` Tabelle:
 
 ```bash
 MySQL > show create table inventory_source_item;
@@ -55,13 +55,13 @@ CREATE TABLE `inventory_source_item` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2048 DEFAULT CHARSET=utf8
 ```
 
-1. Stellen Sie eine API-Anfrage für ein bestimmtes Produkt:
+1. Eine API-Anfrage für ein bestimmtes Produkt stellen:
 
 `Endpoint: /rest/V1/inventory/source-items`\
 `Method: POST`\
 `Headers: Authorization: Bearer <admin_token>`
 
-Nutzlast:
+Payload:
 
 ```JSON
 {
@@ -76,27 +76,27 @@ Nutzlast:
 }
 ```
 
-1. Überprüfen Sie erneut den `AUTO_INCREMENT` -Wert der `inventory_source_item` -Tabelle.
+1. Überprüfen Sie erneut den `AUTO_INCREMENT` der `inventory_source_item`.
 
 <u>Erwartete Ergebnisse</u>:
 
-Der `AUTO_INCREMENT` -Wert der `inventory_source_item`-Tabelle wird nach jedem Aktualisierungsvorgang nicht erhöht.
+Der `AUTO_INCREMENT` der `inventory_source_item` Tabelle erhöht sich nicht nach jedem Aktualisierungsvorgang.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der `AUTO_INCREMENT` -Wert der `inventory_source_item`-Tabelle erhöht sich nach jedem Aktualisierungsvorgang.
+Der `AUTO_INCREMENT` der `inventory_source_item` erhöht sich nach jedem Aktualisierungsvorgang.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > ](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool]-Handbuch, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.
-* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] Handbuch
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

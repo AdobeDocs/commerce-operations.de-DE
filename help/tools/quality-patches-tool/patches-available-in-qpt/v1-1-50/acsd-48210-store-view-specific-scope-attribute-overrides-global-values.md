@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48210: Store view specific scope attribute overrides global values'
-description: Wenden Sie den Patch ACSD-48210 an, um das Adobe Commerce-Problem zu beheben, das beim Aktualisieren eines *[!UICONTROL Website Scope]* -Attributs in einer bestimmten Store-Ansicht auftritt, wodurch die Attributwerte im globalen Gültigkeitsbereich außer Kraft gesetzt werden.
+title: 'ACSD-48210: Das Attribut für den spezifischen Bereich der Speicheransicht überschreibt globale Werte'
+description: Wenden Sie den Patch ACSD-48210 an, um das Adobe Commerce-Problem zu beheben, dass ein *[!UICONTROL Website Scope]*-Attribut in einer bestimmten Store-Ansicht aktualisiert wird, um die Attributwerte im globalen Umfang zu überschreiben.
 feature: Products, Attributes
 role: Admin, Developer
 exl-id: 944089c6-2f05-4c51-86ea-ede124bff80b
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48210: Store view specific scope attributes override global values
+# ACSD-48210: Store-Ansicht-spezifische Bereichsattribute überschreiben globale Werte
 
-Der Patch ACSD-48210 behebt das Problem, dass beim Aktualisieren eines *[!UICONTROL Website Scope]* -Attributs in einer bestimmten Store-Ansicht die Attributwerte im globalen Gültigkeitsbereich außer Kraft gesetzt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 installiert ist. Die Patch-ID lautet ACSD-48210. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
+Mit dem Patch „ACSD-48210“ wird das Problem behoben, dass beim Aktualisieren eines *[!UICONTROL Website Scope]* Attributs in einer bestimmten Store-Ansicht die Attributwerte im globalen Umfang überschrieben werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 installiert ist. Die Patch-ID ist ACSD-48210. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Der Patch ACSD-48210 behebt das Problem, dass beim Aktualisieren eines *[!UICONT
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Beim Aktualisieren eines *[!UICONTROL Website Scope]* -Attributs in einer bestimmten Store-Ansicht werden die Attributwerte im globalen Gültigkeitsbereich überschrieben.
+Beim Aktualisieren eines *[!UICONTROL Website Scope]* Attributs innerhalb einer bestimmten Store-Ansicht überschreiben die Attributwerte im globalen Umfang.
 
-Der Import von Produktpreisen mit mehreren Zeilen, die dieselben `SKU` und `store_view_code` aufweisen, führte zu falschen Aktualisierungen der Preise in den Bereichen *[!UICONTROL All Store View]* und *[!UICONTROL Default Store]*. Durch das Ändern des Attributs zum Website-Umfang in einer bestimmten Store-Ansicht wird der Wert des Attributs im globalen Gültigkeitsbereich nicht mehr überschrieben.
-<u>Zu reproduzierende Schritte</u>:
+Der Import von Produktpreisen mit mehreren Zeilen, die denselben `SKU` und `store_view_code` gemeinsam haben, führte zu falschen Aktualisierungen der Preise im *[!UICONTROL All Store View]* und *[!UICONTROL Default Store]* Bereich. Wenn Sie das Attribut für den Website-Umfang in einer bestimmten Store-Ansicht ändern, wird der Wert des Attributs im globalen Umfang nicht mehr überschrieben.
+<u>Schritte zur Reproduktion</u>:
 
-1. Konfigurieren Sie die *[!UICONTROL Catalog Price Scope]* auf *[!UICONTROL Website]*.
-1. Erstellen Sie ein einfaches Produkt mit dem Namen *SP01* und legen Sie den Preis auf *$84.50* fest.
-1. Importieren Sie das Produkt mit der folgenden CSV-Datei, die unten bereitgestellt wird:
+1. Konfigurieren Sie die zu *[!UICONTROL Website]* *[!UICONTROL Catalog Price Scope]*.
+1. Erstellen Sie ein einfaches Produkt mit dem Namen *SP01* und setzen Sie den Preis auf *$84.50*.
+1. Importieren Sie das Produkt mit der folgenden CSV-Datei:
 
    ```
    sku,store_view_code,price
@@ -46,31 +46,31 @@ Der Import von Produktpreisen mit mehreren Zeilen, die dieselben `SKU` und `stor
    SP01,default,86.59
    ```
 
-1. Überprüfen Sie den Produktpreis in den Gültigkeitsbereichen *[!UICONTROL All Store View]* und *[!UICONTROL Default Store]*.
+1. Überprüfen Sie den Produktpreis in den Bereichen *[!UICONTROL All Store View]* und *[!UICONTROL Default Store]* .
 
 <u>Erwartete Ergebnisse</u>:
 
-* Der erste nicht leere Wert wird für den Bereich *[!UICONTROL Default Store]* verwendet.
-* Der Gültigkeitsbereich *[!UICONTROL All Store View]* bleibt unverändert.
+* Der erste nicht leere Wert wird für den *[!UICONTROL Default Store]* verwendet.
+* Der *[!UICONTROL All Store View]* bleibt unverändert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Der Gültigkeitspreis von *[!UICONTROL All Store View]* ändert sich in *$86.59*.
-* Der Gültigkeitspreis von *[!UICONTROL Default Store]* ändert sich in *$86.59*.
+* Der Preis für den *[!UICONTROL All Store View]* Umfang ändert sich auf *$ 86.59*.
+* Der Preis für den *[!UICONTROL Default Store]* Umfang ändert sich auf *$ 86.59*.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

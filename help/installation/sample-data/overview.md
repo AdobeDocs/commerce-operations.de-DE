@@ -11,21 +11,21 @@ ht-degree: 0%
 
 # Übersicht über Beispieldaten
 
-Beispieldaten bieten eine Storefront basierend auf dem Luma-Design, das mit Produkten, Kategorien, Kundenregistrierung usw. ausgestattet ist. Es funktioniert genauso wie eine Commerce-Storefront und Sie können mithilfe des Administrators Preise, Inventar und Preisregeln für Werbeaktionen ändern.
+Beispieldaten bieten eine Storefront, die auf dem Luma-Design basiert und mit Produkten, Kategorien, Kundenregistrierung usw. ausgestattet ist. Es funktioniert wie eine Commerce-Storefront, und Sie können Preise, Inventar und Preisregeln für Werbeaktionen mit dem Admin-Team manipulieren.
 
 >[!NOTE]
 >
->Um Datenbank und verschiedene Funktionen zu überprüfen und zu analysieren, sollten Sie anstelle von Beispieldaten echte Daten verwenden. Beispieldaten werden als vorgenerierte Store-Simulation konzipiert, um Designdesign und grundlegendes Storefront-Verhalten zu demonstrieren. Alle Beispieldatenentitäten werden direkt in die Datenbanktabellen geschrieben, während Beispieldaten installiert sind.
+>Um die Datenbank und verschiedene -Funktionen zu überprüfen und zu analysieren, sollten Sie echte Daten anstelle von Beispieldaten verwenden. Beispieldaten werden als vorgenerierte Speichersimulation entworfen, um Design-Design und grundlegendes Verhalten der Storefront zu demonstrieren. Alle Beispieldatenentitäten werden direkt in die Datenbanktabellen geschrieben, während Beispieldaten installiert werden.
 
-Sie können Beispieldaten entweder vor oder nach der Installation der Commerce-Software installieren. Wenn Sie mit den Beispieldaten fertig sind, können Sie sie entweder entfernen oder neu installieren, wie unter [Entfernen von Beispieldatenmodulen oder Aktualisieren von Beispieldaten](remove-or-update.md) beschrieben.
+Sie können Beispieldaten entweder vor oder nach der Installation der Commerce-Software installieren. Wenn Sie mit den Beispieldaten fertig sind, können Sie sie entweder entfernen oder neu installieren, wie in [Entfernen von Beispieldatenmodulen oder Aktualisieren von Beispieldaten](remove-or-update.md) beschrieben.
 
 >[!WARNING]
 >
->Beispieldaten können nicht deinstalliert werden. Verwenden Sie nur Beispieldaten, um mehr über die Funktionsweise von Adobe Commerce zu erfahren. Vermeiden Sie die Entwicklung in einem System, in dem Sie Beispieldaten installiert haben.
+>Beispieldaten können nicht deinstalliert werden. Verwenden Sie Beispieldaten nur, um mehr über die Funktionsweise von Adobe Commerce zu erfahren. Vermeiden Sie Entwicklungsarbeiten in einem System, in dem Sie Beispieldaten installiert haben.
 
 Sie können optionale Beispieldaten auf eine der folgenden Arten installieren:
 
-| Installationsmethode | Beschreibung | Erforderliche Kompetenz-stufe |
+| Installationsmethode | Beschreibung | Erforderliche Qualifikationsstufe |
 |--- |--- |--- |
-| Verwenden von Composer | [Führen Sie `magento sampledata:deploy` aus, um den Stammordner der Anwendung zu ändern `composer.json`](composer-packages.md), um Beispieldatenmodule zu aktivieren. | Erfordert Kenntnisse von Composer und Zugriff auf das Commerce-Dateisystem. |
-| Klonen von Repositorys | [Klonen Sie das GitHub-Repository](git-repositories.md) und das Beispieldaten-Repository und verknüpfen Sie sie dann miteinander. | Nur für beitragende Entwickler. Alle anderen sollten eine der vorhergehenden Methoden verwenden. |
+| Verwenden von Composer | [Führen Sie `magento sampledata:deploy` aus, um die `composer.json`](composer-packages.md) der Anwendung zu ändern und Beispieldatenmodule zu aktivieren. | Erfordert Composer-Kenntnisse und Zugriff auf das Commerce-Dateisystem. |
+| Klonen von Repositorys | [Klonen Sie das GitHub](git-repositories.md)Repository und das Beispieldaten-Repository und verknüpfen Sie sie dann miteinander. | Nur für mitwirkende Entwickler. Alle anderen sollten eine der oben genannten Methoden verwenden. |

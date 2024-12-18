@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce deinstallieren oder neu installieren
-description: Führen Sie diese Schritte aus, um Vor-Ort-Installationen von Adobe Commerce zu deinstallieren und neu zu installieren.
+description: Führen Sie diese Schritte aus, um lokale Installationen von Adobe Commerce zu deinstallieren und erneut zu installieren.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -13,25 +13,25 @@ ht-degree: 0%
 
 Bevor Sie diese Befehle verwenden, müssen Sie [die Anwendung installieren](../tutorials/install.md).
 
-## Anwendung aktualisieren
+## Aktualisieren der Anwendung
 
 So aktualisieren Sie die Anwendung:
 
-* Wenn Sie die Software aus einem Archiv installiert haben oder &quot;Composer-create-project&quot;verwendet haben, lesen Sie das [Upgrade-Handbuch](../../upgrade/overview.md).
-* Wenn Sie ein beitragender Entwickler sind (d. h., Sie haben `git clone` verwendet), lesen Sie den Abschnitt [Anwendung aktualisieren](../../upgrade/developer/git-installs.md).
+* Falls Sie die Software aus einem Archiv installiert haben oder „composer-create-project“ benutzt haben, lesen Sie bitte das [Upgrade-Handbuch](../../upgrade/overview.md).
+* Wenn Sie selbst Entwickler sind (also `git clone` verwendet haben), finden Sie weitere Informationen unter [Aktualisieren der Anwendung](../../upgrade/developer/git-installs.md).
 
-## Installieren Sie die Anwendung.
+## Neuinstallation der Anwendung
 
 Wie Sie die Anwendung über die Befehlszeile neu installieren, hängt von Ihrer Rolle ab:
 
-* Wenn Sie die Software aus einem Archiv installiert haben oder &quot;Composer-create-project&quot;verwendet haben, finden Sie weitere Informationen unter [Aktualisieren der Installationsabhängigkeiten](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
-* Wenn Sie ein beitragender Entwickler sind (d. h., Sie haben mit `git clone` begonnen), finden Sie weitere Informationen unter [Aktualisieren der Installationsabhängigkeiten](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* Falls Sie die Software aus einem Archiv installiert haben oder „composer-create-project“ benutzt haben, lesen Sie [Installationsabhängigkeiten aktualisieren](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* Wenn Sie selbst Entwickler sind (d. h. bereits mit der Verwendung von `git clone` begonnen haben), finden Sie weitere Informationen unter [Aktualisieren von Installationsabhängigkeiten](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
-## Deinstallieren des Programms
+## Deinstallieren der Anwendung
 
-Durch das Deinstallieren des Programms wird die Datenbank gelöscht, die Bereitstellungskonfiguration entfernt und die Ordner unter `var` werden gelöscht.
+Bei der Deinstallation der Anwendung wird die Datenbank gelöscht und wiederhergestellt, die Bereitstellungskonfiguration entfernt und Verzeichnisse unter `var` gelöscht.
 
-Geben Sie den folgenden Befehl ein, um das Programm zu deinstallieren:
+Um die Anwendung zu deinstallieren, geben Sie den folgenden Befehl ein:
 
 ```bash
 bin/magento setup:uninstall
@@ -45,9 +45,9 @@ Die folgende Meldung wird angezeigt, um eine erfolgreiche Deinstallation zu best
 
 ## Optional generierte Dateien beibehalten
 
-Standardmäßig löscht `bin/magento setup:upgrade` den kompilierten Code und den Cache. In der Regel verwenden Sie `bin/magento setup:upgrade`, um Komponenten zu aktualisieren, und jede Komponente kann unterschiedliche kompilierte Klassen erfordern.
+Standardmäßig löscht `bin/magento setup:upgrade` kompilierten Code und den Cache. Normalerweise verwenden Sie `bin/magento setup:upgrade`, um Komponenten zu aktualisieren, und jede Komponente kann unterschiedliche kompilierte Klassen erfordern.
 
-In einigen Situationen (insbesondere bei der Bereitstellung in der Produktion) möchten Sie jedoch möglicherweise vermeiden, kompilierten Code zu löschen, da dies einige Zeit in Anspruch nehmen kann. (Der Cache wird weiterhin gelöscht.) Geben Sie Folgendes ein, um das Datenbankschema und die Daten *zu aktualisieren, ohne dass* den kompilierten Code bereinigt.
+In einigen Situationen (insbesondere bei der Bereitstellung in der Produktion) sollten Sie jedoch den kompilierten Code möglicherweise nicht löschen, da dies einige Zeit in Anspruch nehmen kann. (Der Cache wird weiterhin geleert.) Um das Datenbankschema und die Daten zu aktualisieren *ohne* kompilierten Code zu löschen, geben Sie Folgendes ein:
 
 ```bash
 bin/magento setup:upgrade --keep-generated
@@ -55,8 +55,8 @@ bin/magento setup:upgrade --keep-generated
 
 >[!WARNING]
 >
->Die optionale Option `--keep-generated` sollte unter bestimmten Umständen von erfahrenen Systemintegratoren *nur* verwendet werden. Diese Option sollte *never* in einer Entwicklungsumgebung verwendet werden. Eine fehlerhafte Verwendung dieses optionalen Parameters kann während der Codeausführung zu Fehlern führen.
+>Die optionale `--keep-generated`-Option sollte unter bestimmten Umständen von erfahrenen Systemintegratoren (*)* werden. Diese Option sollte *nie* in einer Entwicklungsumgebung verwendet werden. Die unsachgemäße Verwendung dieses optionalen Parameters kann zu Fehlern bei der Code-Ausführung führen.
 
 ## Installieren des Programms
 
-* [Installieren mithilfe der Befehlszeile](../advanced.md)
+* [Installieren über die Befehlszeile](../advanced.md)

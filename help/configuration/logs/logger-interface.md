@@ -1,5 +1,5 @@
 ---
-title: Logger-Benutzeroberfläche
+title: Logger-Oberfläche
 description: Erste Schritte mit der Logger-Oberfläche.
 feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
@@ -10,23 +10,23 @@ ht-degree: 0%
 
 ---
 
-# Logger-Benutzeroberfläche
+# Logger-Oberfläche
 
-Um mit einer Protokollfunktion zu arbeiten, müssen Sie eine Instanz von `\Psr\Log\LoggerInterface` erstellen. Mit dieser Schnittstelle können Sie die folgenden Funktionen aufrufen, um Daten in Protokolldateien zu schreiben:
+Um mit einer Protokollierung zu arbeiten, müssen Sie eine Instanz von `\Psr\Log\LoggerInterface` erstellen. Mit dieser Schnittstelle können Sie die folgenden Funktionen aufrufen, um Daten in Protokolldateien zu schreiben:
 
 - [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
-- [critical()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
+- [Kritisch()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
 - [debug()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L111)
-- [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
+- [NOTFALL()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L30)
 - [error()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
 - [info()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
 - [log()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
 - [notice()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
-- [warning()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
+- [Warnung()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-Eine Möglichkeit, dies zu tun, wird im Beispiel für die Aktivität [Log database activity](../logs/database-activity.md) erläutert.
+Eine Möglichkeit, dies zu tun, wird im Beispiel [Datenbankaktivität protokollieren](../logs/database-activity.md) erläutert.
 
-Eine andere Möglichkeit:
+Es folgt ein anderer Weg:
 
 ```php
 class SomeModel
@@ -49,6 +49,6 @@ class SomeModel
  }
 ```
 
-Das obige Beispiel zeigt, dass `SomeModel` ein `\Psr\Log\LoggerInterface` -Objekt mit Konstruktor-Injektion erhält. Wenn in einer Methode `doSomething` ein Fehler aufgetreten ist, wird er bei der Methode `critical` (`$this->logger->critical($e);`) protokolliert.
+Das vorherige Beispiel zeigt, dass `SomeModel` ein `\Psr\Log\LoggerInterface`-Objekt mithilfe der Konstruktorinjektion empfängt. Wenn in einer Methode `doSomething` ein Fehler aufgetreten ist, wird er in einer `critical` protokolliert (`$this->logger->critical($e);`).
 
-[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) definiert acht Protokollebenen (Debugging, Info, Hinweis, Warnung, Fehler, kritisch, Warnhinweis und Notfall).
+[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) definiert acht Protokollebenen (Debug, Info, Hinweis, Warnung, Fehler, Kritisch, Warnhinweis und Notfall).

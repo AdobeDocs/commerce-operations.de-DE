@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-41061: Der Lagerstatus wird auf verkäuflich zurückgesetzt, wenn das Produkt über Admin gespeichert wird'
-description: Der Patch MDVA-41061 behebt das Problem, dass der Lagerstatus beim Speichern des Produkts vom Administrator auf verkäuflich zurückgesetzt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-41061. Die neueste Patch-Version ist in QPT 1.1.15 mit der Patch-ID MDVA-41061-V3 verfügbar. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.
+title: 'MDVA-41061: Bestandsstatus wird auf „verkaufsfähig“ zurückgesetzt, wenn Produkt vom Administrator gespeichert wurde'
+description: Mit dem Patch MDVA-41061 wird das Problem behoben, dass der Lagerstatus auf „verkaufbar“ zurückgesetzt wird, wenn das Produkt vom Administrator gespeichert wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-41061. Die neueste Patch-Version ist in QPT 1.1.15 mit MDVA-41061-V3 Patch-ID verfügbar. Beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-41061: Der Lagerstatus wird auf verkäuflich zurückgesetzt, wenn das Produkt über Admin gespeichert wird
+# MDVA-41061: Bestandsstatus wird auf „verkaufsfähig“ zurückgesetzt, wenn Produkt vom Administrator gespeichert wurde
 
-Der Patch MDVA-41061 behebt das Problem, dass der Lagerstatus beim Speichern des Produkts vom Administrator auf verkäuflich zurückgesetzt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-41061. Die neueste Patch-Version ist in QPT 1.1.15 mit der Patch-ID MDVA-41061-V3 verfügbar. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.
+Mit dem Patch MDVA-41061 wird das Problem behoben, dass der Lagerstatus auf „verkaufbar“ zurückgesetzt wird, wenn das Produkt vom Administrator gespeichert wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-41061. Die neueste Patch-Version ist in QPT 1.1.15 mit MDVA-41061-V3 Patch-ID verfügbar. Beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,46 +27,46 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.2 - 2.4.2-p2, 2.4.3 - 2.4.3-p2
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der Lagerstatus wird beim Speichern des Produkts vom Administrator auf verkäuflich zurückgesetzt.
+Der Lagerstatus wird auf „verkaufbar“ zurückgesetzt, wenn das Produkt vom Administrator gespeichert wird.
 
 <u>Voraussetzungen</u>:
 
-Die Inventarmodule sind installiert.
+Inventarmodule sind installiert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein einfaches Produkt mit Menge = 1.
-1. Platzieren Sie eine Bestellung mithilfe des in Schritt 1 erstellten Produkts.
-1. cron ausführen - Stellen Sie sicher, dass die Warteschlange `inventory.reservations.updateSalabilityStatus` ausgeführt wird und der Produktstatus in der Tabelle `cataloginventory_stock_status` auf null geändert wurde.
-1. Überprüfen Sie das Produkt auf der Vorderseite. Sie sollte als **Nicht auf Lager** markiert werden.
-1. Speichern Sie das Produkt in der Admin-Konsole ohne Änderungen.
+1. Einfaches Produkt mit Menge = 1 erstellen.
+1. Bestellen Sie mit dem in Schritt 1 erstellten Produkt.
+1. Cron ausführen - Stellen Sie sicher, dass `inventory.reservations.updateSalabilityStatus` Warteschlange ausgeführt und der Produktlagerstatus in der `cataloginventory_stock_status`-Tabelle auf null geändert wurde.
+1. Überprüfen Sie das Produkt im Frontend. Sie sollte als „Nicht **&quot; gekennzeichnet**.
+1. Produkt ohne Änderungen im Admin-Bereich speichern.
 
 <u>Erwartete Ergebnisse</u>:
 
 * Der Lagerstatus sollte nicht aktualisiert werden.
-* Das Produkt sollte auf der Vorderseite **nicht auf Lager** sein.
+* Das Produkt sollte **nicht vorrätig** am Frontend sein.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Einfaches Produkt wird als **Auf Lager** an der Vorderseite gekennzeichnet.
-* Benutzer erhalten die Meldung *Die angeforderte Menge ist nicht verfügbar* , wenn sie versuchen, sie zum Warenkorb hinzuzufügen.
+* Einfaches Produkt wird im Frontend mit **Auf Lager** gekennzeichnet.
+* Benutzende erhalten *Die angeforderte Menge ist nicht verfügbar* Meldung, wenn sie versuchen, sie zum Warenkorb hinzuzufügen.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

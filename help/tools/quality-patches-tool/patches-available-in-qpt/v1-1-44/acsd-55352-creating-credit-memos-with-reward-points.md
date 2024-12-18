@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-55352: Erstellen von Kreditkarten mit Bonuspunkten'
-description: Wenden Sie den Patch ACSD-55352 an, um das Adobe Commerce-Problem zu beheben, bei dem nach dem Erstellen eines partiellen Kreditmemo mit Kundenbelohnungspunkten der Auftragsstatus zu *geschlossen* geändert wird und die Kreditmemo-Optionen auf der Seite "Admin-Bestellung"nicht mehr angezeigt werden.
+title: 'ACSD-55352: Erstellen von Gutschriften mit Belohnungspunkten'
+description: Wenden Sie den Patch von ACSD-55352 an, um das Problem in Adobe Commerce zu beheben, bei dem sich nach dem Erstellen einer teilweisen Gutschrift mit Kundenbelohnungspunkten der Bestellstatus in „Geschlossen“ ändert und die Optionen für die Gutschrift von der Admin-Bestellseite verschwinden.
 feature: Checkout, Orders
 role: Admin, Developer
 exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-55352: Erstellen von Kreditkarten mit Bonuspunkten
+# ACSD-55352: Erstellen von Gutschriften mit Belohnungspunkten
 
-Der Patch ACSD-55352 behebt das Problem, dass nach dem Erstellen eines partiellen Kreditmemo mit Kundenbelohnungspunkten der Auftragsstatus zu *closed* geändert wird und die Kreditmemo-Optionen auf der Seite &quot;Admin-Bestellung&quot;ausgeblendet werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 installiert ist. Die Patch-ID ist ACSD-55352. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch des ACSD-55352 wird das Problem behoben, dass nach dem Erstellen einer teilweisen Gutschrift mit Belohnungspunkten für Kunden der Bestellstatus in &quot;*&quot;* und die Optionen für Gutschriften von der Admin-Bestellseite verschwinden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 installiert ist. Die Patch-ID ist ACSD-55352. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,59 +27,59 @@ Der Patch ACSD-55352 behebt das Problem, dass nach dem Erstellen eines partielle
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Nachdem Sie ein Teil-Kreditmemo mit Kundenbelohnungspunkten erstellt haben, ändert sich der Auftragsstatus in *closed* und die Kreditmemo-Optionen werden auf der Seite &quot;Admin-Bestellung&quot;nicht mehr angezeigt.
+Nachdem Sie eine teilweise Gutschrift mit Belohnungspunkten für Kunden erstellt haben, ändert sich der Bestellstatus in *Geschlossen* und die Optionen für Gutschriften verschwinden auf der Seite „Admin-Bestellung“.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Melden Sie sich bei Adobe Commerce Admin an.
-2. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
-3. Fügen Sie zwei Raten hinzu:
+1. Melden Sie sich beim Adobe Commerce Admin an.
+2. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
+3. Fügen Sie zwei Tarife hinzu:
    * *[!UICONTROL First]*:
       * *[!UICONTROL Direction]* = *Punkte auf Währung*
       * *[!UICONTROL Rate]* = *100*
       * *[!UICONTROL Upper Boundary]* = *100*
    * *[!UICONTROL Second]*:
-      * *[!UICONTROL Direction]* = *Währung bis Punkte*
+      * *[!UICONTROL Direction]* = *Währung zu Punkten*
       * *[!UICONTROL Rate]* = *100*
       * *[!UICONTROL Upper Boundary]* = *100*
-4. Erstellen Sie ein einfaches Produkt mit dem Preis *$100* und mit *Menge* : *100*.
+4. Erstellen Sie ein einfaches Produkt zum Preis von *$100* und mit *Qty* : *100*.
 5. Erstellen Sie einen Kunden aus der Storefront.
-6. Gehen Sie erneut zum Backend: **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Hinzufügen von *100* und speichern Sie den Kunden.
-7. Gehen Sie zur Storefront und melden Sie sich als zuvor vom Kunden erstellter Kunde an.
-8. Fügen Sie das Produkt dem Warenkorb mit *Menge* : *10* hinzu.
-9. Wechseln Sie zu **[!UICONTROL Checkout]** und verwenden Sie die verfügbaren Belohnungspunkte für *100*, wenn Sie dazu aufgefordert werden, und platzieren Sie die Bestellung.
-10. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice]** und schicken Sie diese Bestellung aus.
-11. Gehen Sie zu [!UICONTROL Credit Memo] und aktualisieren Sie die *Menge an Rückerstattungssatz* auf *8*.
-12. Tippen Sie auf das Kontrollkästchen **[!UICONTROL Refund Reward Points]** und klicken Sie auf **[!UICONTROL Refund offline]**.
-13. Versuchen Sie, die beiden anderen verbleibenden Produkte aus der Bestellung mit dem Wert [!UICONTROL Credit Memo] zurückzuerstatten.
+6. Gehen Sie erneut zum Backend: **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > *100* und speichern Sie den Kunden.
+7. Wechseln Sie zur Storefront und melden Sie sich als zuvor vom Kunden erstellter Benutzer an.
+8. Fügen Sie das Produkt mit *Qty* : *10* in den Warenkorb.
+9. Wechseln Sie zu **[!UICONTROL Checkout]** und verwenden Sie die verfügbaren *100* Belohnungspunkte, wenn Sie dazu aufgefordert werden, und geben Sie die Bestellung auf.
+10. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice]** und versenden Sie diese Bestellung.
+11. Wechseln Sie zu [!UICONTROL Credit Memo] und aktualisieren Sie die *Menge zur Erstattung* auf *8*.
+12. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Refund Reward Points]** und klicken Sie auf **[!UICONTROL Refund offline]**.
+13. Versuchen Sie, die anderen beiden verbleibenden Produkte aus der Bestellung zurückzuerstatten, indem Sie die [!UICONTROL Credit Memo] verwenden.
 
 <u>Erwartete Ergebnisse</u>:
 
-* Der Administrator erstellt [!UICONTROL Credit Memo] , um die beiden verbleibenden Produkte zurückzugeben.
+* Der Administrator erstellt [!UICONTROL Credit Memo], um die beiden verbleibenden Produkte zurückzugeben.
 * Der Bestellstatus lautet *Abgeschlossen*.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Kann nicht mehr [!UICONTROL Credit Memo] erstellen.
+* Es können keine weiteren [!UICONTROL Credit Memo] erstellt werden.
 * Der Bestellstatus lautet *Geschlossen*.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

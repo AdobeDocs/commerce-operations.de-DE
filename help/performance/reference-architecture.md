@@ -1,6 +1,6 @@
 ---
 title: Referenzarchitektur
-description: Überprüfen Sie Diagramme der empfohlenen Referenzarchitektur für Adobe Commerce-Implementierungen.
+description: Überprüfen Sie die Diagramme der empfohlenen Referenzarchitektur für Adobe Commerce-Bereitstellungen.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
@@ -11,65 +11,65 @@ ht-degree: 0%
 
 # Referenzarchitektur
 
-Hier wird eine allgemeine empfohlene Einrichtung für Adobe Commerce-Instanzen beschrieben, die einfache Server verwenden, die physisch in einem Rechenzentrum gehostet werden (nicht virtualisiert) und in denen Ressourcen nicht für andere Benutzer freigegeben werden. Ihr Hosting-Anbieter kann, insbesondere wenn er sich auf Hosting mit hoher Leistung von Commerce spezialisiert hat, eine andere Einrichtung empfehlen, die Ihren Anforderungen gleichermaßen oder effektiver entspricht.
+In diesem Abschnitt wird eine allgemeine empfohlene Einrichtung für Adobe Commerce-Instanzen beschrieben, bei der einfache Server verwendet werden, die physisch in einem Rechenzentrum gehostet (nicht virtualisiert) werden, in dem Ressourcen nicht mit anderen Benutzern geteilt werden. Ihr Hosting-Anbieter, insbesondere wenn er auf Hochleistungs-Hosting in Commerce spezialisiert ist, empfiehlt möglicherweise ein anderes Setup, das für Ihre Anforderungen gleichermaßen oder effektiver ist.
 
-Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie unter [Starterarchitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie unter [Starter-Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Referenzarchitekturdiagramm
 
-Das Diagramm [!DNL Commerce] Referenzarchitektur stellt den Best Practice-Ansatz zum Einrichten einer skalierbaren [!DNL Commerce] -Site dar.
+Das Diagramm [!DNL Commerce] Referenzarchitektur stellt den Best-Practice-Ansatz zum Einrichten einer skalierbaren [!DNL Commerce]-Site dar.
 
-Die Farbe jedes Elements im Diagramm zeigt an, ob das Element Teil von Magento Open Source oder Adobe Commerce ist und ob es erforderlich ist.
+Die Farbe der einzelnen Elemente im Diagramm gibt an, ob das Element Teil von Magento Open Source oder Adobe Commerce ist und ob es erforderlich ist.
 
-* Orangenelemente sind für die Magento Open Source erforderlich
-* Graue Elemente sind optional für die Magento Open Source
-* Blaue Elemente sind für Adobe Commerce optional.
+* Für die Magento Open Source sind orangefarbene Elemente erforderlich
+* Graue Elemente sind für die Magento Open Source optional
+* Blaue Elemente sind für Adobe Commerce optional
 
-![Commerce-Referenzarchitektur-Diagramm](../assets/performance/images/ref-architecture-2.3.png)
+![Commerce-Referenzarchitekturdiagramm](../assets/performance/images/ref-architecture-2.3.png)
 
-Die folgenden Abschnitte enthalten Empfehlungen und Überlegungen zu jedem Abschnitt des Commerce-Referenzarchitektur-Diagramms.
+Die folgenden Abschnitte enthalten Empfehlungen und Überlegungen zu jedem Abschnitt des Commerce-Referenzarchitekturdiagramms.
 
 ### [!DNL Varnish]
 
-* Ein [!DNL Varnish]-Cluster kann auf den Traffic einer Site skaliert werden
-* Die Größe der Instanz basierend auf der Anzahl der benötigten Cache-Seiten anpassen
-* Verwenden Sie auf einer Site mit hohem Traffic-Aufkommen einen [!DNL Varnish] Master, um sicherzustellen, dass im Cache eine Anforderung (höchstens) pro Webstufe geleert wird.
+* Ein [!DNL Varnish] Cluster kann auf den Traffic einer Site skaliert werden
+* Passen Sie die Instanzgröße auf der Grundlage der Anzahl der benötigten Cache-Seiten an
+* Bei einer Website mit hohem Traffic verwenden Sie einen [!DNL Varnish] Master, um sicherzustellen, dass (höchstens) eine Anfrage pro Web-Stufe im Cache geleert wird
 
 ### Web
 
 * Aktivieren der Skalierung von Knoten für Traffic und Redundanz
-* Ein Knoten ist Master und führt Cron aus
-* Alternativ können Sie einen dedizierten Admin- und Worker-Knoten verwenden
+* Ein Knoten ist Master und führt Cron aus.
+* Alternativ können Sie einen dedizierten Administrator- und Worker-Knoten verwenden
 
 ### Cache
 
 * Erwägen Sie die Implementierung einer separaten Redis-Instanz für Sitzungen
-* Sie können eine Redis-Instanz pro Cache haben.
-* Größe der Instanz so ändern, dass sie die größte erwartete Cachegröße enthält
+* Pro Cache kann eine Redis-Instanz vorhanden sein
+* Instanz so dimensionieren, dass die größte erwartete Cache-Größe enthalten ist
 
 ### Datenbank und Warteschlangen
 
-* High-Traffic-Sites können die DB-Leistung mit Slave-DBs optimieren und DBs für Bestellungen/Warenkorb (in Adobe Commerce) aufteilen.
-* Erwägen Sie die Verwendung einer Slave-DB, um eine schnelle Wiederherstellung und Datensicherungen zu ermöglichen
-* Sites mit geringem Traffic können Bilder in der DB speichern
+* Sites mit hohem Traffic können die DB-Leistung mit Slave-DBs und Split-DBs für Bestellungen/Warenkörbe (in Adobe Commerce) optimieren
+* Erwägen Sie die Verwendung einer Slave-DB für eine schnelle Wiederherstellung und für Datensicherungen
+* Sites mit geringem Traffic können Bilder in der Datenbank speichern
 
 ### Suche {#search-heading}
 
-* Anzahl der Instanzen auf Grundlage des Suchverkehrs anpassen
+* Stimmen Sie die Anzahl der Instanzen basierend auf dem Such-Traffic ab
 
 ### Speicherung
 
-* Erwägen Sie die Verwendung von GFS oder GlusterFS für Pub-/Medienspeicher.
-* Alternativ können Sie DB-Speicher für Sites mit geringem Traffic verwenden
+* Erwägen Sie die Verwendung von GFS oder GlusterFS für Pub-/Medienspeicher
+* Alternativ können Sie den DB-Speicher für Sites mit geringem Traffic verwenden
 
 ### Empfohlene [!DNL Varnish] Referenzarchitektur
 
-Magento unterstützt standardmäßig mehrere vollständige Seiten-Caching-Engines (Datei, Memcache, Redis, [!DNL Varnish]) sowie eine erweiterte Abdeckung durch Erweiterungen. [!DNL Varnish] ist die empfohlene vollständige Seiten-Cache-Engine.  [!DNL Commerce] unterstützt viele verschiedene [!DNL Varnish] -Konfigurationen.
+Magento unterstützt standardmäßig mehrere Caching-Engines für vollständige Seiten (File, Memcache, Redis, [!DNL Varnish]) sowie eine erweiterte Abdeckung durch Erweiterungen. [!DNL Varnish] ist die empfohlene vollständige Seiten-Cache-Engine.  [!DNL Commerce] unterstützt viele verschiedene [!DNL Varnish].
 
-Für Sites, die keine hohe Verfügbarkeit erfordern, empfehlen wir die Verwendung eines einfachen [!DNL Varnish]-Setups mit Nginx-SSL-Terminierung.
+Für Websites, die keine hohe Verfügbarkeit erfordern, empfehlen wir die Verwendung einer einfachen [!DNL Varnish]-Einrichtung mit Nginx-SSL-Beendigung.
 
-![Einfache [!DNL Varnish] Konfiguration mit SSL-Beendigung](../assets/performance/images/single-varnish-with-ssl-termination.png)
+![Einfache [!DNL Varnish] mit SSL-Beendigung](../assets/performance/images/single-varnish-with-ssl-termination.png)
 
-Für Sites, für die eine hohe Verfügbarkeit erforderlich ist, empfehlen wir die Verwendung einer zweistufigen [!DNL Varnish] -Konfiguration mit einem SSL-terminierenden Lastenausgleich.
+Für Websites, für die eine hohe Verfügbarkeit erforderlich ist, empfehlen wir die Verwendung einer 2-Tier-[!DNL Varnish]-Konfiguration mit einem SSL-abschließenden Lastenausgleich.
 
-![Zwei-Tier-Konfiguration mit hoher Verfügbarkeit [!DNL Varnish] mit SSL-beendet den Lastenausgleich](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)
+![Zweistufige [!DNL Varnish]-Konfiguration mit hoher Verfügbarkeit und SSL-Abschluss des Lastenausgleichs](../assets/performance/images/ha-2-tier-varnish-with-ssl-term-load-balancer.png)

@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48661: Problem mit der Validierung eines Unternehmenskreditlimits für ein gemeinsames Trennzeichen'
-description: Wenden Sie den Patch ACSD-48661 an, um das Adobe Commerce-Problem zu beheben. Wenn die Firmenkreditbeschränkung größer als 999 ist, verhindert das Kommatrennzeichen die Speicherung des Unternehmens aufgrund eines Validierungsfehlers.
+title: 'ACSD-48661: Problem mit der Überprüfung des Kommatrennzeichens des Firmenkreditlimits'
+description: Wenden Sie den Patch ACSD-48661 an, um das Adobe Commerce-Problem zu beheben, bei dem das Firmenkreditlimit größer als 999 ist und das Kommatrennzeichen aufgrund eines Validierungsfehlers das Speichern des Unternehmens verhindert.
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
 exl-id: 7115226e-5942-4a8f-9dec-b1b6f665eef8
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48661: Problem mit der Validierung eines Unternehmenskreditlimits für ein gemeinsames Trennzeichen
+# ACSD-48661: Problem mit der Überprüfung des Kommatrennzeichens des Firmenkreditlimits
 
-Der Patch ACSD-48661 behebt das Problem, bei dem das Firmenkreditlimit größer als 999 ist, das Kommatrennzeichen die Speicherung des Unternehmens aufgrund eines Validierungsfehlers verhindert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.26 installiert ist. Die Patch-ID ist ACSD-48661. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-48661 wird das Problem behoben, dass das Speichern des Unternehmens aufgrund eines Validierungsfehlers verhindert wird, wenn das Kreditlimit des Unternehmens größer als 999 ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.26 installiert ist. Die Patch-ID ist ACSD-48661. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,40 +27,40 @@ Der Patch ACSD-48661 behebt das Problem, bei dem das Firmenkreditlimit größer 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Wenn das Firmenkreditlimit größer als 999 ist, verhindert das Kommatrennzeichen, dass das Unternehmen aufgrund eines Validierungsfehlers gespeichert wird.
+Wenn das Kreditlimit des Unternehmens größer als 999 ist, verhindert das Kommatrennzeichen, dass das Unternehmen aufgrund eines Validierungsfehlers speichert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Aktivieren Sie die Unternehmensfunktion unter **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
-1. Erstellen Sie ein Unternehmen und fügen Sie auf der Registerkarte **[!UICONTROL Company Credit]** eine Kreditbeschränkung von über 999 hinzu.
-1. Speichern Sie das Unternehmen.
-1. Bearbeiten Sie das Unternehmen und versuchen Sie erneut, es zu speichern.
+1. Erstellen Sie ein Unternehmen und fügen Sie auf der Registerkarte **[!UICONTROL Company Credit]** ein Kreditlimit von mehr als 999 hinzu.
+1. Rette die Firma.
+1. Bearbeiten Sie die Firma und versuchen Sie erneut, sie zu speichern.
 
 <u>Erwartete Ergebnisse</u>:
 
-Sie können das Unternehmen speichern, ohne die Kreditgrenze festzulegen. Komma wird nicht für Eingabefelder für die Beträge und Preise unterstützt.
+Sie können die Firma speichern, ohne das Kreditlimit festzulegen. Kommas werden für Eingabefelder für die Beträge und Preise nicht unterstützt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Das Unternehmen kann aufgrund eines Validierungsfehlers im Feld *[!UICONTROL Credit Limit]* nicht gespeichert werden. Adobe Commerce fügt für Kreditbeschränkungen automatisch Kommatratoren hinzu, auch wenn das Feld [!UICONTROL Credit Limit] keine Kommas akzeptiert.
+Sie können das Unternehmen aufgrund eines Validierungsfehlers im Feld &quot;*[!UICONTROL Credit Limit]*&quot; nicht speichern. Adobe Commerce fügt automatisch Kommatrennzeichen für Kreditlimits hinzu, auch wenn das [!UICONTROL Credit Limit] keine Kommas akzeptiert.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

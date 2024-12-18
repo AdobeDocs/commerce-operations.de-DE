@@ -5,12 +5,12 @@ source-wordcount: '85'
 ht-degree: 0%
 
 ---
-# Produktionssystem aktualisieren
+# Aktualisieren des Produktionssystems
 
 **So aktualisieren Sie das Produktionssystem**:
 
 1. Melden Sie sich beim Produktionssystem als Eigentümer des Dateisystems an.
-1. Wechseln Sie zum Stammverzeichnis der Anwendung und aktivieren Sie den Wartungsmodus.
+1. Wechseln Sie zum Anwendungsstamm und aktivieren Sie den Wartungsmodus.
 
    ```bash
    cd <Magento root dir>
@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Weitere Optionen, wie die Möglichkeit, eine IP-Adressen-Whitelist festzulegen, finden Sie unter [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Weitere Optionen, z. B. die Möglichkeit, eine IP-Adressen-Zulassungsliste festzulegen, finden Sie unter [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Beenden Sie laufende Warteschlangenarbeitskräfte, indem Sie `cron_run` wie folgt in `app/etc/env.php` auf `false` setzen:
+1. Beenden Sie alle ausgeführten Warteschlangenarbeitnehmer, indem Sie `cron_run` wie folgt auf `false` in `app/etc/env.php` setzen:
 
    ```php?start_inline=1
    'cron_consumers_runner' => [
@@ -36,19 +36,19 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Schließlich `kill` alle aktiven Verbraucherprozesse.
+1. `kill` Sie abschließend alle aktiven Verbraucherprozesse.
 
    ```bash
    kill <PID>
    ```
 
-   Wobei `PID` die Prozess-ID ist, die beendet werden soll, z. B.:
+   Dabei ist `PID` die Prozess-ID, die abgebrochen werden soll, z. B.:
 
    ```bash
    kill 1234
    ```
 
-1. Rufen Sie Code aus der Quell-Code-Verwaltung ab.
+1. Code aus der Quellcodeverwaltung abrufen.
 
    ```bash
    git pull mconfig m2.2_deploy
@@ -60,13 +60,13 @@ ht-degree: 0%
    bin/magento app:config:import
    ```
 
-1. Bereinigen Sie den Cache.
+1. Reinigen Sie den Cache.
 
    ```bash
    bin/magento cache:clean
    ```
 
-1. Wartungsmodus beenden.
+1. Wartungsmodus beenden
 
    ```bash
    bin/magento maintenance:disable

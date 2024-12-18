@@ -10,14 +10,14 @@ ht-degree: 31%
 ---
 
 
-# Operative Adobe Commerce-Handbücher {#operational-guides}
+# Adobe Commerce-Betriebshandbücher {#operational-guides}
 
-- [Betriebshandbücher - Startseite](home.md)
+- [Betriebshandbücher - Home](home.md)
 - [Versionsinformationen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview)
 - [Implementierungs-Playbook](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/overview)
 - [Sicherheit und Compliance](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/overview)
 - [Leistung](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/overview)
-- [Installation (vor Ort)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+- [Installation (lokal)](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
 - [Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/overview)
 - [Upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
 - [Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/overview)

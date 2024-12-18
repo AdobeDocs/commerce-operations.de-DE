@@ -1,18 +1,19 @@
 ---
-title: "ACSD-47908: *Ein Wert kleiner oder gleich 0 wird erwartet* Fehler beim Checkout."
-description: Wenden Sie den Patch ACSD-47908 an, um den Adobe Commerce-Fehler zu beheben *Ein Wert kleiner oder gleich 0 wird erwartet* bei der Auswahl der Quelle und Menge im Versandschritt während des Checkouts.
+title: 'ACSD-47908: *Beim Auschecken wird ein Wert kleiner oder gleich 0 erwartet* Fehler'
+description: Wenden Sie den Patch ACSD-47908 an, um den Adobe Commerce-Fehler zu beheben. *Es wird ein Wert kleiner oder gleich 0 erwartet, wenn Sie während des Checkouts die Quelle und Menge im Versandschritt auswählen.
 feature: Admin Workspace, Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f1429bd9-652d-43c0-af52-b2258e2a7643
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# ACSD-47908: *Ein Wert kleiner oder gleich 0 wird beim Checkout erwartet* Fehler.
+# ACSD-47908: *Es wird ein Wert kleiner oder gleich 0 erwartet* Fehler beim Auschecken
 
-Der Patch ACSD-47908 behebt den Fehler *Ein Wert kleiner oder gleich 0 wird erwartet* bei der Auswahl der Quelle und Menge im Versandschritt beim Checkout. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.27 installiert ist. Die Patch-ID ist ACSD-47908. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-47908 behebt den Fehler *Ein Wert kleiner oder gleich 0 wird erwartet* wenn die Quelle und Menge im Versandschritt während des Checkouts ausgewählt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.27 installiert ist. Die Patch-ID ist ACSD-47908. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -26,55 +27,55 @@ Der Patch ACSD-47908 behebt den Fehler *Ein Wert kleiner oder gleich 0 wird erwa
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der folgende Fehler wird bei der Auswahl der Quelle und Menge im Versandschritt beim Checkout ausgegeben: *Ein Wert kleiner oder gleich 0 wird erwartet*.
+Bei der Auswahl der Quelle und Menge im Versandschritt während des Checkouts wird folgender Fehler ausgelöst: *Es wird ein Wert kleiner oder gleich 0 erwartet*.
 
 <u>Voraussetzungen</u>:
 
-Installieren Sie die Adobe Commerce Inventory management (MSI)-Module.
+Installieren Sie Adobe Commerce Inventory management (MSI)-Module.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Inventory]** > **[!UICONTROL Sources]** und konfigurieren Sie mehrere Quellen.
-1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Inventory]** > **[!UICONTROL Stock]** und erstellen Sie einen neuen Bestand.
+1. Wechseln Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Inventory]** > **[!UICONTROL Sources]** und konfigurieren Sie mehrere Quellen.
+1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Inventory]** > **[!UICONTROL Stock]** und erstellen Sie ein neues Lager.
    * Weisen Sie nun die Quellen dem neuen Lager zu.
 1. Gehen Sie zu **[!UICONTROL Catalog]** > **[!UICONTROL Products]** und bearbeiten Sie mindestens ein Produkt.
    * Stellen Sie sicher, dass die Produkte den neuen Quellen zugewiesen sind, und geben Sie die verfügbare Menge an.
 1. Gehen Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]** und erstellen Sie eine neue Bestellung.
-1. Fügen Sie diese Produkte der Bestellung hinzu und platzieren Sie sie.
+1. Fügen Sie diese Produkte zur Bestellung hinzu und platzieren Sie sie.
 1. Klicken Sie auf **[!UICONTROL Ship]**.
-1. Wählen Sie die Quelle aus, aus der der Versand durchgeführt werden soll.
+1. Quelle auswählen, von der aus geliefert werden soll.
 1. Geben Sie die Menge jedes zu versendenden Artikels an.
 1. Laden Sie die Seite neu.
 1. Klicken Sie auf **[!UICONTROL Proceed to Shipment]**.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die neue Versandseite wird ohne Fehler geöffnet.
+Die neue Sendungsseite wird ohne Fehler geöffnet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
 * Die eingegebene Menge kann nicht validiert werden.
-* Der folgende Fehler wird ausgegeben: *Geben Sie einen Wert ein, der kleiner oder gleich 0* ist.
+* Folgender Fehler wird ausgegeben: *Bitte einen Wert kleiner oder gleich 0 eingeben*.
 
-  Der Fehler ist jedoch inkonsistent und erscheint möglicherweise nicht immer.
+  Der Fehler ist jedoch inkonsistent und tritt möglicherweise nicht immer auf.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

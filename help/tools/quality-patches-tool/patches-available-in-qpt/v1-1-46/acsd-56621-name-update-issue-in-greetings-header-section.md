@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-56621: Aktualisierte Namen werden in der Grußkopfzeile für Unternehmensadministratoren nicht angezeigt'
-description: Wenden Sie den Patch ACSD-56621 an, um das Adobe Commerce-Problem zu beheben, bei dem der aktualisierte Vor- und Nachname des Unternehmensadministrators nicht im Grußkopfbereich angezeigt wird.
+title: 'ACSD-56621: Aktualisierte Namen werden in der Kopfzeile der Grußformeln für den Administrator des Unternehmens nicht angezeigt'
+description: Wenden Sie den Patch ACSD-56621 an, um das Adobe Commerce-Problem zu beheben, bei dem der aktualisierte Vor- und Nachname des Unternehmensadministratorbenutzers nicht im Abschnitt Grußkopfzeile angezeigt wird.
 feature: Companies, B2B, User Account
 role: Admin, Developer
 exl-id: 739c1c8c-e079-4ad7-be97-7c60b0347e12
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-56621: Aktualisierte Namen werden in der Grußkopfzeile für Unternehmensadministratoren nicht angezeigt
+# ACSD-56621: Aktualisierte Namen werden in der Kopfzeile der Grußformeln für den Administrator des Unternehmens nicht angezeigt
 
-Der Patch ACSD-56621 behebt das Problem, dass der aktualisierte Vor- und Nachname des Unternehmensadministrators nicht im Grußkopfbereich angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46 installiert ist. Die Patch-ID ist ACSD-56621. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-56621 wird das Problem behoben, dass der aktualisierte Vor- und Nachname des Admin-Benutzers des Unternehmens nicht im Abschnitt Grußkopfzeile angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.46 installiert ist. Die Patch-ID ist ACSD-56621. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,42 +27,42 @@ Der Patch ACSD-56621 behebt das Problem, dass der aktualisierte Vor- und Nachnam
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die aktualisierten Namen werden nicht in der Grußkopfzeile für Unternehmensadministratoren angezeigt.
+Die aktualisierten Namen werden für Benutzende, die Unternehmensadministratoren sind, nicht in der Kopfzeile „Grußformeln“ angezeigt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Navigieren Sie zum Bedienfeld &quot;**[!UICONTROL Admin]**&quot;.
-1. Gehen Sie zu **[!UICONTROL Stores]** und wählen Sie **[!UICONTROL Configuration]** aus.
-1. Wählen Sie unter dem Abschnitt **[!UICONTROL General]** die Option **[!UICONTROL B2B]** aus, um die Funktionalität des B2B-Unternehmens zu aktivieren.
-1. Gehen Sie zu &quot;**[!UICONTROL Storefront]**&quot;und registrieren Sie ein neues Unternehmen.
-1. Melden Sie sich als Unternehmensadministrator an.
-1. Wechseln Sie zu **[!UICONTROL My Account]** > **[!UICONTROL Company Users]** und ändern Sie die Vor- und Nachname-Felder nach Bedarf.
+1. Navigieren Sie zum Bedienfeld **[!UICONTROL Admin]** .
+1. Navigieren Sie zu **[!UICONTROL Stores]** und wählen Sie **[!UICONTROL Configuration]** aus.
+1. Wählen Sie im Abschnitt **[!UICONTROL General]** die Option **[!UICONTROL B2B]** aus, um die B2B-Unternehmensfunktion zu aktivieren.
+1. Gehen Sie zum **[!UICONTROL Storefront]** und registrieren Sie eine neue Firma.
+1. Melden Sie sich als Admin-Benutzer des Unternehmens an.
+1. Wechseln Sie zu **[!UICONTROL My Account]** > **[!UICONTROL Company Users]** und ändern Sie die Felder Vor- und Nachname nach Bedarf.
 
 <u>Erwartete Ergebnisse</u>:
 
-Der Vor- und Nachname des Benutzers im Grußkopfbereich wird sofort geändert.
+Der Vor- und Nachname des Benutzers im Abschnitt Grußkopfzeile wird sofort geändert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
 Der Vor- und Nachname des Benutzers wird nur geändert, wenn sich der Benutzer abmeldet und sich erneut anmeldet.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

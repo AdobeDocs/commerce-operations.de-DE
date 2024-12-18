@@ -11,34 +11,34 @@ ht-degree: 0%
 
 # Modulausgabe deaktivieren
 
-Standardmäßig sind alle Module so konfiguriert, dass die Modulausgabe in eine Ansicht geschrieben werden kann. Das Ausschalten der Ausgabe bietet eine Möglichkeit, ein Modul zu deaktivieren, das aufgrund harter Abhängigkeiten nicht deaktiviert werden kann.
+Standardmäßig sind alle Module so konfiguriert, dass die Modulausgabe in eine Ansicht geschrieben werden kann. Das Deaktivieren der Ausgabe bietet eine Möglichkeit, ein Modul, das aufgrund von harten Abhängigkeiten nicht deaktiviert werden kann, im Wesentlichen zu deaktivieren.
 
-Beispielsweise hängt das Modul `Customer` vom Modul `Review` ab, sodass das Modul `Review` nicht deaktiviert werden kann. Wenn Sie jedoch nicht möchten, dass Kunden Bewertungen bereitstellen, können Sie die Ausgabe vom `Review`-Modul deaktivieren.
+Das `Customer` hängt beispielsweise vom `Review` ab, weshalb das `Review` nicht deaktiviert werden kann. Wenn Sie jedoch nicht möchten, dass Kunden Bewertungen bereitstellen, können Sie die Ausgabe aus dem `Review`-Modul deaktivieren.
 
 >[!INFO]
 >
->Wenn ein Händler die Modulausgabe in einer früheren Version mit dem Admin deaktiviert hat, müssen Sie das System für die Migration dieser Einstellungen manuell konfigurieren.
+>Wenn ein Händler in einer früheren Version den Administrator verwendet hat, um die Modulausgabe zu deaktivieren, müssen Sie das System manuell konfigurieren, um diese Einstellungen zu migrieren.
 
-Die Deaktivierung der Ausgabe erfolgt in folgenden Klassen:
+Die Output-Deaktivierung wird in den folgenden Klassen durchgeführt:
 
 - [\Magento\Framework\View\Element\AbstractBlock::toHtml](https://github.com/magento/magento2/blob/36097739bbb0b8939ad9a2a0dadee64318153dca/lib/internal/Magento/Framework/View/Element/AbstractBlock.php#L651)
 - [\Magento\Backend\Block\Template::isOutputEnabled](https://github.com/magento/magento2/blob/0c786907ffe03d0e2990612eec16ee58b00379c5/app/code/Magento/Backend/Block/Template.php#L96)
 
 >[!WARNING]
 >
->Durch Deaktivieren der Modulausgabe wird das Modul nicht deaktiviert. Das Modul bleibt aktiviert und funktioniert, es werden jedoch keine Blöcke, Seiten oder Felder am Frontend oder Backend gerendert.
+>Durch Deaktivieren der Modulausgabe wird das Modul nicht deaktiviert. Das Modul bleibt aktiviert und funktioniert, aber es wird kein Block, keine Seite und kein Feld im Frontend oder Backend gerendert.
 
 ## Deaktivieren der Modulausgabe in einer Pipeline-Bereitstellung
 
 So deaktivieren Sie die Modulausgabe in der Pipeline-Bereitstellung oder einer anderen Bereitstellung mit mehreren Instanzen der Commerce-Anwendung:
 
-1. Bearbeiten Sie die Datei `config.xml` des `Backend`-Moduls.
-1. Exportieren Sie die Konfigurationsänderungen.
+1. Bearbeiten Sie die `config.xml` des `Backend`.
+1. Exportieren der Konfigurationsänderungen
 
-### Bearbeiten der Datei `Backend` module `config.xml`
+### Bearbeiten der `Backend`-`config.xml`
 
-1. Archivieren Sie die ursprüngliche `config.xml` -Datei.
-1. Fügen Sie der Datei `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` Zeilen ähnlich den folgenden hinzu, direkt unter dem Element `<default>` :
+1. Archivieren Sie die ursprüngliche `config.xml`.
+1. Fügen Sie der `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`-Datei direkt unter dem `<default>`-Element Zeilen wie die folgenden hinzu:
 
    ```xml
    <advanced>
@@ -52,11 +52,11 @@ So deaktivieren Sie die Modulausgabe in der Pipeline-Bereitstellung oder einer a
 
    - `<modules_disable_output>` enthält eine Liste von Modulen.
    - `<Magento_Newsletter></Magento_Newsletter>` gibt an, für welches Modul die Ausgabe deaktiviert werden soll.
-   - `1` ist die Markierung, die die Ausgabe für das `Magento_Newsletter`-Modul deaktiviert.
+   - `1` ist das Flag, das die Ausgabe für das `Magento_Newsletter`-Modul deaktiviert.
 
-Als Beispielergebnis dieser Konfiguration können Kunden sich nicht mehr für den Erhalt von Newslettern anmelden.
+Aufgrund dieser Konfiguration können sich Kunden beispielsweise nicht mehr für den Erhalt von Newslettern anmelden.
 
-### Konfigurationsänderungen exportieren
+### Exportieren der Konfigurationsänderungen
 
 Führen Sie den folgenden Befehl aus, um die Konfigurationsänderungen zu exportieren:
 
@@ -64,22 +64,22 @@ Führen Sie den folgenden Befehl aus, um die Konfigurationsänderungen zu export
 bin/magento app:config:dump
 ```
 
-Die Ergebnisse werden in die Datei `<Magento_install_dir>/app/etc/config.php` geschrieben.
+Die Ergebnisse werden in die `<Magento_install_dir>/app/etc/config.php` geschrieben.
 
-Löschen Sie dann den Cache, um die neue Einstellung zu aktivieren:
+Löschen Sie anschließend den Cache, um die neue Einstellung zu aktivieren:
 
 ```bash
 bin/magento cache:clean config
 ```
 
-Siehe [Konfiguration exportieren](../cli/export-configuration.md).
+Siehe [Exportieren der Konfiguration](../cli/export-configuration.md).
 
 ## Deaktivieren der Modulausgabe in einer einfachen Bereitstellung
 
-Die Deaktivierung der Modulausgabe in einer einzigen Instanz von Commerce ist einfacher, da die Änderungen nicht verteilt werden müssen.
+Die Vorgehensweise zum Deaktivieren der Modulausgabe auf einer einzigen Instanz von Commerce ist einfacher, da die Änderungen nicht verteilt werden müssen.
 
-1. Archivieren Sie die ursprüngliche `<Magento_install_dir>/app/etc/config.php` -Datei.
-1. Fügen Sie die Abschnitte `advanced` und `modules_disable_output` zur Datei `config.php` hinzu (sofern sie nicht vorhanden sind):
+1. Archivieren Sie die ursprüngliche `<Magento_install_dir>/app/etc/config.php`.
+1. Fügen Sie die Abschnitte `advanced` und `modules_disable_output` zur `config.php` hinzu (falls sie nicht vorhanden sind):
 
    ```php
    'system' =>
@@ -100,5 +100,5 @@ Die Deaktivierung der Modulausgabe in einer einzigen Instanz von Commerce ist ei
      ),
    ```
 
-In diesem Beispiel wurde die Ausgabe für das Modul `Magento_Review` deaktiviert und Kunden können Produkte nicht mehr überprüfen.
-Um die Ausgabe erneut zu aktivieren, setzen Sie den Wert auf `0`.
+In diesem Beispiel wurde die Ausgabe für das Modul `Magento_Review` deaktiviert, sodass Kunden die Produkte nicht mehr überprüfen können.
+Um die Ausgabe wieder zu aktivieren, setzen Sie den Wert auf `0`.

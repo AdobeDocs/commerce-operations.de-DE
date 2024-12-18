@@ -1,6 +1,6 @@
 ---
-title: Sicherheit und Betriebsmodell für gemeinsame Verantwortung
-description: Erfahren Sie mehr über die Sicherheitsaufgaben aller an Ihrem Adobe Commerce-Projekt beteiligten Parteien in Bezug auf Cloud-Infrastrukturprojekte.
+title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
+description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
 source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
@@ -9,107 +9,107 @@ ht-degree: 0%
 
 ---
 
-# Sicherheit und Betriebsmodell für gemeinsame Verantwortung
+# Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 
-Adobe Commerce on Cloud Infrastructure ist ein Plattform-as-a-Service-Angebot, das auf einem Sicherheitsmodell mit gemeinsamer Verantwortung beruht. Diese Zuständigkeiten werden von Adobe, dem Händler, dem Cloud-Service-Provider und dem Content Delivery Network (CDN)-Anbieter gemeinsam wahrgenommen. Jede Partei trägt die spezifische Verantwortung für die Sicherung und den Betrieb der Adobe Commerce-Anwendung sowie des Händlercodes und der Erweiterungen, die in der Cloud-Infrastruktur bereitgestellt werden.
+Adobe Commerce on Cloud Infrastructure ist ein PaaS-Angebot (Platform-as-a-Service), das auf einem Sicherheits- und Betriebsmodell basiert, das sich auf gemeinsame Verantwortung stützt. Diese Zuständigkeiten teilen sich Adobe, der Händler, der Cloud Service-Anbieter und der Content Delivery Network (CDN)-Anbieter. Jede Partei ist für die Sicherung und den Betrieb des Adobe Commerce-Programms und der auf der Cloud-Infrastruktur bereitgestellten händlerspezifischen Codes und Erweiterungen selbst verantwortlich.
 
-Dieses gemeinsam genutzte Modell ermöglicht es Händlern, eine hochflexible, anpassbare und skalierbare Lösung zu entwickeln und zu implementieren, um ihre Geschäftsanforderungen zu erfüllen und gleichzeitig betriebliche Verantwortlichkeiten und Kosten zu minimieren.
+Dieses gemeinsame Modell ermöglicht es Händlern, eine hochflexible, anpassbare und skalierbare Lösung zu entwerfen und zu implementieren, die ihren geschäftlichen Anforderungen entspricht und gleichzeitig betriebliche Verantwortlichkeiten und Kosten minimiert.
 
 Im Allgemeinen ist Adobe für Folgendes verantwortlich:
 
-- Entwickeln und Verwalten von sicherem Kern-Anwendungs-Code
-- Wahrung der Plattformsicherheit
-- Sicherstellen, dass die Plattform SOC 2- und PCI-kompatibel ist und mit PCI-kompatiblen Technologiekomponenten kompatibel ist (z. B. PHP, Redis)
-- Antworten auf Sicherheitsfragen bezüglich der Kernplattform
-- Arbeiten mit Cloud Service-Anbietern und CDN-Partnern zur Lösung von Problemen
+- Entwickeln und Verwalten von sicherem Code für Kernanwendungen
+- Gewährleistung der Plattformsicherheit
+- Sicherstellen, dass die Plattform SOC 2- und PCI-kompatibel und mit PCI-kompatiblen Technologiekomponenten (z. B. PHP, Redis) kompatibel ist
+- Reaktion auf Sicherheitsprobleme bezüglich der Kernplattform
+- Arbeiten mit Cloud-Service-Anbietern und CDN-Partnern, um auftretende Probleme zu beheben
 
 Händler sind für Folgendes verantwortlich:
 
-- Gewährleistung der Sicherheit für benutzerdefinierten Code und Integrationen mit Drittanbieteranwendungen
+- Gewährleistung der Sicherheit für benutzerdefinierten Code und Integrationen mit Anwendungen von Drittanbietern
 - Sichere Anwendungsentwicklung
-- Erhalt der PCI-Zertifizierung, falls vom Zahlungsverarbeiter des Händlers verlangt
-- Reaktion auf Sicherheitsvorfälle und Reaktion darauf
+- Einholung der PCI-Zertifizierung, falls vom Zahlungsverarbeiter des Händlers angefordert
+- Reaktion auf Sicherheitsvorfälle
 
-## Adobe
+## Adobe-Zuständigkeiten
 
-Adobe ist für die Sicherheit und Verfügbarkeit der Adobe Commerce in der Cloud-Infrastruktur-Umgebung und des Kernlösungscodes verantwortlich. Darüber hinaus ist Adobe für die erforderlichen Aktivitäten und Mechanismen verantwortlich, die die Sicherheit der Adobe Commerce in der Cloud-Infrastrukturlösung gewährleisten, darunter:
+Adobe ist für die Sicherheit und Verfügbarkeit der Adobe Commerce in der Cloud-Infrastrukturumgebung und des Kernlösungs-Codes verantwortlich. Darüber hinaus ist Adobe für die erforderlichen Aktivitäten und Mechanismen verantwortlich, die die Sicherheit der Adobe Commerce on Cloud Infrastructure-Lösung gewährleisten, darunter:
 
-- Anwenden von Sicherheits- und Patches auf Serverebene für von Adobe Commerce unterstützte Anwendungen auf Cloud-Infrastruktur, z. B. Cloud-Datenspeicherung und Suchfunktionen
-- Durchführen von Penetrationstests und Scannen des Adobe Commerce-Kerns im Cloud-Infrastrukturcode
-- Halbjährliche Prüfungen und Prüfungen der Identitäts- und Zugriffsverwaltungslösungen (IAM) öffentlicher Cloud-Diensteanbieter (PCI-Compliance-Anforderung)
-- Durchführung halbjährlicher Überprüfungen und Audits von zugelassenen Nutzern, einschließlich Adobe-Mitarbeitern und Auftragnehmern (PCI-Compliance-Anforderung)
+- Anwenden von Sicherheit auf Serverebene und Patches für von Adobe Commerce unterstützte Anwendungen auf Cloud-Infrastrukturen wie Cloud-Datenspeicher und Suchfunktionen
+- Durchführen von Penetrationstests und Scannen des Kern-Codes von Adobe Commerce auf Cloud-Infrastruktur
+- Durchführung halbjährlicher Überprüfungen und Audits von IAM-Lösungen (Identity and Access Management) und Berechtigungsverwaltungslösungen von Public Cloud Service Providern (PCI Compliance Requirement)
+- Durchführung halbjährlicher Überprüfungen und Audits autorisierter Anwender, einschließlich Adobe-Mitarbeitern und Auftragnehmern (PCI-Compliance-Anforderung)
 - Durchführung jährlicher Tests und Dokumentation der Sicherungs- und Wiederherstellungsfunktionen
-- Konfigurieren von Server- und Perimeter-Firewalls
-- Verbinden und Konfigurieren des Adobe Commerce-Repositorys für Cloud-Infrastruktur
-- Festlegung, Erprobung, Umsetzung und Dokumentation von Notfallwiederherstellungsplänen für die Gebiete innerhalb des Zuständigkeitsbereichs von Adobe
-- Definieren globaler WAF-Regeln (Web Application Firewall) der Plattform
-- Härtung des Betriebssystems
-- Implementierung und Pflege der Integration von Content Distribution Network (CDN)- und APM-Lösungen (Application Performance Management) mit Adobe Commerce in Cloud-Infrastruktur
-- Regelmäßige Sicherheits- und sonstige Aktualisierungen für die Adobe Commerce im Cloud-Infrastrukturcode (Patches werden vom Händler übernommen)
-- Verwalten der Händlerunterstützung und Unterstützung von Zugriffskontrollen (z. B. Zendesk)
-- Überwachung, Protokollierung und Behebung von Sicherheitsvorfällen im Zusammenhang mit der Adobe Commerce in Bezug auf die Infrastruktur von Cloud-Infrastrukturplattformen
-- Überwachung des Betriebs von Plattformen und rund um die Uhr Unterstützung von Adobe Commerce für Cloud-Infrastrukturhändler
+- Server- und Perimeter-Firewalls konfigurieren
+- Verbinden und Konfigurieren des Repositorys der Adobe Commerce in der Cloud-Infrastruktur
+- Definieren, Testen, Implementieren und Dokumentieren von Notfall-Wiederherstellungsplänen (Disaster Recovery, DR) für die Zuständigkeitsbereiche der Adobe
+- Definieren von Regeln für die globale Plattform-Web-Anwendungs-Firewall (WAF)
+- Abhärten des Betriebssystems (OS)
+- Implementierung und Wartung der Integration von Content Distribution Network (CDN)- und Application Performance Management (APM)-Lösungen mit Adobe Commerce auf Cloud-Infrastrukturen
+- Regelmäßige Sicherheits- und andere Updates für den Kern-Code von Adobe Commerce in der Cloud-Infrastruktur (Patches müssen vom Händler angewendet werden)
+- Verwalten von Support für Händler und Support-Zugriffssteuerungen (z. B. Zendesk)
+- Überwachung, Protokollierung und Behebung von Sicherheitsvorfällen in Bezug auf die Adobe Commerce auf Cloud-Infrastrukturplattformen
+- Überwachung des Plattformbetriebs und Bereitstellung von 24/7-Support für Adobe Commerce auf Händlern mit Cloud-Infrastruktur
 - Bereitstellung der Produktions- und Staging-Umgebungen
-- Bewertung potenzieller Sicherheitsbedrohungen für den Betrieb und die Infrastruktur von Plattformen
-- Skalierung von Computing-, Speicher-, Raster- und anderen Ressourcen, wie im Service-Level Agreement (SLA) mit dem Händler beschrieben
-- Einrichten von DNS (Adobe Commerce nur auf Cloud-Infrastruktur-Plattforminfrastruktur)
+- Bewertung potenzieller Sicherheitsbedrohungen für den Plattformbetrieb und die Infrastruktur
+- Skalierung von Datenverarbeitung, Speicher, Raster und anderen Ressourcen, wie in der Service-Level-Vereinbarung (SLA) mit dem Händler beschrieben
+- Einrichten des DNS (nur Adobe Commerce auf der Cloud-Infrastrukturplattform)
 - Plattform auf Sicherheitslücken testen
 
-Adobe verwaltet die PCI-Zertifizierung für die Infrastruktur und die Dienste, die für die Adobe Commerce-Lösung verwendet werden.  Merchants sind für die Einhaltung von benutzerdefiniertem Code, System- und Netzwerkprozessen sowie der Organisation verantwortlich.
+Adobe erhält die PCI-Zertifizierung für die Infrastruktur und Services, die für die Adobe Commerce-Lösung verwendet werden.  Händler sind für die Einhaltung von benutzerspezifischem Code, System- und Netzwerkprozessen sowie für die Organisation verantwortlich.
 
-Adobe stellt außerdem sicher, dass die in der jeweiligen SLA vereinbarte Infrastruktur des Händlers verfügbar ist.
+Adobe gewährleistet auch die Verfügbarkeit der Infrastruktur des Händlers, wie in der entsprechenden SLA vereinbart.
 
-## Handelspflichten
+## Händlerpflichten
 
-Der Händler ist für die Einhaltung der Best Practices für die Sicherheit seiner spezifischen, benutzerdefinierten Instanz von Adobe Commerce in der Cloud-Infrastrukturlösung verantwortlich:
+Der Händler ist für die Befolgung der Best Practices für die Sicherheit für seine spezifische, angepasste Instanz der Adobe Commerce on Cloud Infrastructure-Lösung verantwortlich:
 
-- Hinzufügen der erforderlichen Adobe Commerce-Konfigurationsdateien für die Cloud-Infrastruktur zum Repository
-- Anwenden von Sicherheits- und anderen Patches auf benutzerdefinierte Adobe Commerce auf Cloud-Infrastrukturlösungen unmittelbar nach deren Veröffentlichung durch Adobe
-- Anwenden von Sicherheits- und anderen Patches auf alle benutzerdefinierten Erweiterungen und Codes unmittelbar nach deren Veröffentlichung durch den Anbieter
-- Erstellen, Bereitstellen und Testen benutzerdefinierter VarVL-Dateien
-- Entwerfen, Erstellen, Installieren, Integrieren und Sichern der angepassten Adobe Commerce-Lösung für die Cloud-Infrastruktur, einschließlich aller benutzerdefinierten Erweiterungen und Codes
-- Gewähren und Widerrufen des Benutzerzugriffs auf die Merchant-Instanz der Adobe Commerce für Cloud-Infrastrukturkonfiguration, -Anwendung und -Plattform
-- Beheben von Sicherheitsproblemen im Zusammenhang mit dem internen Netzwerk, den Servern, der Infrastruktur und allen benutzerdefinierten Anwendungen, die auf der Adobe Commerce-Cloud-Infrastrukturplattform erstellt wurden
-- Befehlszeilenintegration (CLI)-Tool (Adobe Commerce on Cloud Infrastructure) installieren
-- Aufrechterhaltung der erforderlichen PCI-Compliance der angepassten Anwendung und anderer interner Prozesse gemäß den PCI-DSS-Richtlinien
+- Hinzufügen der erforderlichen Konfigurationsdateien für Adobe Commerce in der Cloud-Infrastruktur zum Repository
+- Anwenden von Sicherheits- und anderen Patches auf die benutzerdefinierte Adobe Commerce on Cloud-Infrastrukturlösung unmittelbar nach ihrer Veröffentlichung durch Adobe
+- Anwenden von Sicherheits- und anderen Patches auf alle benutzerdefinierten Erweiterungen und den Code, unmittelbar nach ihrer Veröffentlichung durch den Anbieter
+- Erstellen, Bereitstellen und Testen von benutzerdefinierten VCL-Lackdateien
+- Entwurf, Design, Installation, Integration und Sicherung der benutzerdefinierten Adobe Commerce on Cloud-Infrastrukturlösung, einschließlich aller benutzerdefinierten Erweiterungen und Code
+- Gewähren und Widerrufen des Benutzerzugriffs auf die Instanz des Händlers von Adobe Commerce auf Cloud-Infrastrukturkonfiguration, -Programm und -Plattform
+- Behandlung von Sicherheitsproblemen im Zusammenhang mit dem internen Netzwerk, den Servern, der Infrastruktur und allen benutzerdefinierten Anwendungen des Händlers, die auf der Adobe Commerce on Cloud-Infrastrukturplattform erstellt wurden
+- Installieren des Befehlszeilen-Integrations-Tools (Command-Line Integration, CLI) für Adobe Commerce auf der Cloud-Infrastruktur
+- Einhaltung der erforderlichen PCI-Compliance der benutzerdefinierten Anwendung und anderer interner Prozesse gemäß den PCI-DSS-Richtlinien
 
   >[!NOTE]
   >
   >Um die Bereiche zu minimieren, die überprüft werden müssen, basiert die PCI-Compliance für den Händler auf den PCI-Zertifizierungen von Adobe Commerce und dem Cloud-Hosting-Anbieter.
 
-- Ausführen von PCI ASV-Scans und Beheben von Problemen in der zentralen Adobe Commerce auf Cloud-Infrastrukturcode und -Plattform
-- Überwachung aller Anwendungsaktivitäten, die eine potenzielle Sicherheitsbedrohung erkennen könnten, einschließlich Penetrationstests, Schwachstellenanalysen und Protokollen
-- Überwachung und Reaktion auf Sicherheitsvorfälle, einschließlich Forensik, Behebung und Reporting im Zusammenhang mit der Adobe Commerce des Händlers für Cloud-Infrastrukturlösungen und Benutzerkonten
-- Ermitteln eines DNS-Anbieters und Konfigurieren und Verwalten von handelsspezifischen DNS-Einträgen
-- Ausführen von Leistungstests für die angepasste Anwendung
-- Zugriff auf Plattformkonten, Instanzzugriff und Anwendung sichern
-- Testen und Qualitätssicherung der benutzerdefinierten Anwendung
-- Aufrechterhaltung der Sicherheit aller Systeme oder Netzwerke, die der Händler mit der Adobe Commerce in der Cloud-Infrastrukturanwendung verbindet
+- Ausführen von PCI-ASV-Scans und Beheben von Problemen im Core Adobe Commerce auf Cloud-Infrastrukturcode und -Plattform
+- Überwachen aller Anwendungsaktivitäten, die eine potenzielle Sicherheitsbedrohung aufdecken könnten, einschließlich Penetrationstests, Schwachstellenscans und Protokollen
+- Überwachung und Reaktion auf Sicherheitsvorfälle, einschließlich Forensik, Behebung und Reporting im Zusammenhang mit der Adobe Commerce der Cloud-Infrastrukturlösung und den Benutzerkonten des Händlers
+- Beziehen eines DNS-Anbieters und Konfigurieren und Verwalten von händlerspezifischen DNS-Einträgen
+- Ausführen von Leistungstests für das angepasste Programm
+- Sichern des Zugriffs auf Platform-Konten, Instanzzugriff und Anwendung
+- Tests und Qualitätssicherung des benutzerdefinierten Programms
+- Gewährleistung der Sicherheit aller Systeme oder Netzwerke, die der Händler mit der Adobe Commerce on Cloud Infrastructure-Anwendung verbindet
 
-## Verantwortlichkeiten des Cloud Service-Anbieters
+## Zuständigkeiten des Cloud Service-Providers
 
-Adobe verlässt sich bei der Hosting der Cloud-Server-Infrastruktur für Adobe Commerce in der Cloud-Infrastruktur auf etablierte Cloud-Service-Anbieter. Diese Provider sind für die Sicherheit des Netzwerks verantwortlich, einschließlich Routing, Switching und Reichweitennetzsicherheit über Firewall-Systeme und IDS (Intrusion Detection Systems). Cloud-Dienstleister sind auch für die physische Sicherheit von Rechenzentren verantwortlich, in denen die Adobe Commerce auf Cloud-Infrastrukturlösungen gehostet wird, und für die Umweltsicherheit von Rechenzentren.
+Adobe stützt sich auf etablierte Cloud Service-Anbieter, um die Cloud-Server-Infrastruktur für Adobe Commerce in der Cloud-Infrastruktur zu hosten. Diese Anbieter sind für die Sicherheit des Netzwerks verantwortlich, einschließlich Routing, Switching und Perimeter-Netzwerksicherheit über Firewall-Systeme und Intrusion Detection Systems (IDS). Cloud-Service-Anbieter sind auch für die physische Sicherheit von Rechenzentren, in denen die Adobe Commerce on Cloud Infrastructure-Lösung gehostet wird, und die Umgebungssicherheit von Rechenzentren verantwortlich.
 
-Cloud-Service-Provider sind auch für Folgendes verantwortlich:
+Cloud Service-Anbieter sind auch verantwortlich für:
 
-- Warten von PCI DSS-, SOC 2- und ISO 27001-Zertifikaten für ihre Cloud Services
+- Wartung der PCI DSS-, SOC 2- und ISO 27001-Zertifizierungen für ihre Cloud-Services
 - Sichern des Hypervisors
-- Sichern des Rechenzentrums, einschließlich physischem und Netzwerkzugriff
+- Sicherung des Rechenzentrums, einschließlich physischem und Netzwerkzugriff
 
-## Verantwortlichkeiten des CDN-Anbieters
+## Zuständigkeiten des CDN-Anbieters
 
-Die Adobe Commerce-Lösung für Cloud-Infrastruktur verwendet CDN-Anbieter, um die Seitenladezeit zu verkürzen, Inhalte zwischenzuspeichern und veraltete Inhalte sofort zu bereinigen. Diese Anbieter sind auch für Sicherheitsprobleme zuständig, die in direktem Zusammenhang mit ihrem CDN stehen oder sich auf ihr CDN auswirken, sowie für die Definition und Pflege von CDN WAF-Regeln.
+Die Adobe Commerce on Cloud Infrastructure-Lösung verwendet CDN-Anbieter, um die Seitenladezeit zu verkürzen, Inhalte zwischenzuspeichern und veraltete Inhalte sofort zu löschen. Diese Anbieter sind auch für Sicherheitsprobleme verantwortlich, die direkt mit ihrem CDN zusammenhängen oder sich auf ihr CDN auswirken, sowie für die Definition und Pflege von CDN-WAF-Regeln.
 
 ## Zusammenfassung der Sicherheitsaufgaben
 
 >[!BEGINSHADEBOX]
 
-Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen Adobe, dem Händler und dem Cloud-Dienstleister geteilten Sicherheitsaufgaben anzuzeigen:
+Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die Sicherheitsaufgaben anzuzeigen, die zwischen Adobe, dem Händler und dem Cloud Service-Anbieter geteilt sind:
 
-**R** — verantwortlich
-**A** — Accountable
-**C** — Consulted
-**I** — Informatisiert
+**R** — Verantwortlich
+**a** — Rechenschaftspflichtig
+**C** — konsultiert
+**i** — informiert
 
 >[!ENDSHADEBOX]
 
@@ -118,9 +118,9 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
   <tr>
     <th>Aufgabe</th>
     <th>Adobe</th>
-    <th>Händler</th>
-    <th>Cloud Service Provider</th>
-    <th>CDN-Anbieter</th>
+    <th>Großhändler</th>
+    <th>Cloud-Service-Anbieter</th>
+    <th>CDN-Provider</th>
   </tr>
 </thead>
 <tbody>
@@ -132,98 +132,98 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Anwenden von Patches auf unterstützende Dienste<br> (z. B. Nginx oder MySQL)</td>
+    <td>Anwenden von Patches auf unterstützende <br> (z. B. Nginx oder MySQL)</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>WAF-Ursprungsregeln definieren</td>
+    <td>Definieren der WAF-Ursprungsregeln</td>
     <td>R</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Definieren von CDN WAF-Regeln</td>
+    <td>Definieren von CDN-WAF-Regeln</td>
     <td>A</td>
     <td></td>
     <td></td>
     <td>R</td>
   </tr>
   <tr>
-    <td>Bereitstellen von WAF-Plattformregeln</td>
+    <td>Bereitstellen von Platform-WAF-Regeln</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Bereitstellen von CDN WAF-Regeln</td>
+    <td>Bereitstellen von CDN-WAF-Regeln</td>
     <td>A</td>
     <td>I</td>
     <td></td>
     <td>R</td>
   </tr>
   <tr>
-    <td>Beheben von Kernfehlern in Adobe Commerce im Cloud-Infrastrukturcode</td>
+    <td>Beheben von Hauptfehlern in Adobe Commerce auf Cloud-Infrastruktur-Code</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Freigabe von Adobe Commerce auf Cloud-Infrastruktur-Patches</td>
+    <td>Veröffentlichung von Adobe Commerce auf Cloud-Infrastruktur-Patches</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Skalierung (berechnen und speichern)</td>
+    <td>Skalierung (Compute und Storage)</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Skalierung (Pfade und Raster)</td>
+    <td>Skalierung (PaaS und Raster)</td>
     <td>R</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Gewährleisten des Zugriffs auf den Quellcode, einschließlich repo.magento.com</td>
+    <td>Sicherstellen des Zugriffs auf Quell-Code, einschließlich repo.magento.com</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Installieren von Adobe Commerce auf dem CLI-Tool der Cloud-Infrastruktur</td>
+    <td>Installieren des CLI-Tools Adobe Commerce on Cloud Infrastructure</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Hinzufügen von Adobe Commerce zu Cloud-Infrastruktur-Konfigurationsdateien zum Repository</td>
+    <td>Hinzufügen von Konfigurationsdateien für Adobe Commerce in der Cloud-Infrastruktur zum Repository</td>
     <td>C</td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Erstellen eines Projekts für den Händler (Onboarding-Benutzeroberfläche)</td>
+    <td>Erstellen eines Projekts für Händler (Onboarding-Benutzeroberfläche)</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Verbinden von Repositorys mit Adobe Commerce über Cloud-Infrastruktur</td>
+    <td>Verbinden von Repositorys mit Adobe Commerce in der Cloud-Infrastruktur</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -237,7 +237,7 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Erstellen eines Benutzers für den Release Manager (Onboarding-Benutzeroberfläche)</td>
+    <td>Erstellen von Benutzern für den Release Manager (Onboarding-Benutzeroberfläche)</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -251,7 +251,7 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Bereitstellen von Code in der Staging-Umgebung</td>
+    <td>Bereitstellen von Code in Staging</td>
     <td></td>
     <td>R</td>
     <td></td>
@@ -272,49 +272,49 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Anpassen von Adobe Commerce an die Cloud-Infrastruktur</td>
+    <td>Anpassen von Adobe Commerce in Cloud-Infrastrukturen</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Testen der Leistung von angepassten Adobe Commerce in der Cloud-Infrastruktur</td>
+    <td>Testen der Leistung von benutzerdefinierten Adobe Commerce in der Cloud-Infrastruktur</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Testen der benutzerdefinierten Anwendung</td>
+    <td>Testen des benutzerdefinierten Programms</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Design und Design von benutzerdefinierten Programmen</td>
+    <td>Design und Design von benutzerdefinierten Anwendungen</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
     <tr>
-    <td>Erstellen, Bereitstellen und Testen benutzerdefinierter VCLs</td>
+    <td>Erstellen, Bereitstellen und Testen von benutzerdefinierten VCLs für Lackierungen</td>
     <td>C</td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>DNS konfigurieren (nur Plattforminfrastruktur)</td>
+    <td>Konfigurieren von DNS (nur Plattforminfrastruktur)</td>
     <td>R</td>
     <td>C</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Entwickeln der CDN-Erweiterung und Beheben von Fehlern</td>
+    <td>Entwickeln einer CDN-Erweiterung und Beheben von Fehlern</td>
     <td>A</td>
     <td>C</td>
     <td></td>
@@ -328,49 +328,49 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Unterstützendes CDN<sup>2</sup></td>
+    <td>Unterstützung von CDN<sup>2</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td>C</td>
   </tr>
   <tr>
-    <td>Konfigurieren von New Relic-APM- und Infrastrukturanwendungen</td>
+    <td>Konfigurieren von New Relic APM- und Infrastrukturanwendungen</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Installieren von New Relic-APM- und Infrastrukturanwendungen</td>
+    <td>Installieren von New Relic APM- und Infrastrukturanwendungen</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Unterstützende New Relic-APM- und Infrastrukturanwendungen</td>
+    <td>Unterstützung von New Relic APM- und Infrastrukturanwendungen</td>
     <td>R</td>
     <td>C</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Konfigurieren von Nginx<sup>3</sup></td>
+    <td>Konfigurieren von nginx<sup>3</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Abrufen eines DNS-Providers (nur Pro)</td>
+    <td>Beziehen eines DNS-Anbieters (nur Pro)</td>
     <td>C</td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Härtung des Betriebssystems</td>
+    <td>Abhärten des Betriebssystems</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -391,14 +391,14 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Beheben von Problemen mit der Händlersicherheit</td>
+    <td>Beheben von Sicherheitsproblemen von Händlern</td>
     <td>C</td>
     <td>R</td>
     <td></td>
     <td>C</td>
   </tr>
   <tr>
-    <td>Beheben von Problemen mit der Cloud-Infrastruktur in Adobe Commerce</td>
+    <td>Beheben von Sicherheitsproblemen in der Adobe Commerce-Cloud-Infrastruktur</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -419,35 +419,35 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Adobe mit Sicherheitsforschung (Software) unterstützen</td>
+    <td>Unterstützung von Adobe bei der Sicherheitsforschung (Software)</td>
     <td>R</td>
     <td>C</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Unterstützung von Adobe mit Sicherheitsforschung (Prüfungen/Audits)</td>
+    <td>Unterstützung von Adobe bei der Sicherheitsforschung (Scans/Audits)</td>
     <td>R</td>
     <td>C</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Durchführen von PCI ASV-Scans</td>
+    <td>Durchführen von PCI-ASV-Scans</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Beheben von Adobe Commerce auf PCI-Scans für Cloud-Infrastruktur<sup>4</sup></td>
+    <td>Adobe Commerce auf Cloud-Infrastruktur wiederherstellen PCI-Scans<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Beheben von PCI-Scans von PaaS</td>
+    <td>Beheben von PaaS-PCI-Scans</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -461,21 +461,21 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Verwalten von Adobe Commerce-Verschlüsselungsschlüsseln für Cloud-Infrastrukturen</td>
+    <td>Verwalten von Adobe Commerce auf Verschlüsselungsschlüsseln für die Cloud-Infrastruktur</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Scannen von benutzerdefinierten Adobe Commerce auf Cloud-Infrastrukturinstanzen</td>
+    <td>Scannen von anwenderdefiniertem Adobe Commerce auf Cloud-Infrastrukturinstanzen</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Überwachen von Sicherheitslogs</td>
+    <td>Überwachen von Sicherheitsprotokollen</td>
     <td></td>
     <td>R</td>
     <td></td>
@@ -489,21 +489,21 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
     <td></td>
   </tr>
   <tr>
-    <td>Verwalten von Support-Zugriffskontrollen (Teleport)</td>
+    <td>Verwalten von Support-Zugriffssteuerungen (Teleport)</td>
     <td>R</td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Support und Zugriff für Händler steuern</td>
+    <td>Steuerung des Händlersupport und -zugriffs</td>
     <td>R</td>
     <td>I</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Jährliche Prüfung und Dokumentation des Adobe DR-Plans und Sicherung und Wiederherstellung</td>
+    <td>Jährliche Tests und Dokumentation des Adobe-DR-Plans und der Sicherung und Wiederherstellung</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -520,68 +520,68 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die zwischen 
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> Nur wenn das Adobe Commerce on Cloud-Infrastruktur-Repository als Haupt-Repository verwendet wird. Die Nutzung anderer externer Repositorys liegt in der alleinigen Verantwortung des Händlers.</p>
-      <p><sup><strong>2</strong></sup> Adobe unterstützt Level 1 bei Problemen mit CDN-Anbietern.</p>
-      <p><sup><strong>3</strong></sup> Der Händler ist für alle Ngnix-Steuerelemente verantwortlich, die er für seine Anwendungen konfiguriert.</p>
+      <p><sup><strong>1</strong></sup> Nur wenn das Repository Adobe Commerce in der Cloud-Infrastruktur als Haupt-Repository verwendet wird. Die Nutzung anderer externer Repositorys liegt in der alleinigen Verantwortung des Händlers.</p>
+      <p><sup><strong>2</strong></sup> Adobe bietet bei Problemen mit CDN-Anbietern Support der Stufe 1.</p>
+      <p><sup><strong>3</strong></sup> Der Händler ist für alle Ngnix-Steuerungen verantwortlich, die er für seine Anwendungen konfiguriert.</p>
       <p><sup><strong>4</strong></sup> Für PCI gelten die Anforderungen an Penetrationstests für Adobe und Händler.</p>
     </td>
   </tr>
 </tfoot>
 </table>
 
-## Übersicht über die operativen Zuständigkeiten
+## Zusammenfassung der operativen Zuständigkeiten
 
 >[!BEGINSHADEBOX]
 
-In den folgenden Zusammenfassungstabellen werden die operativen Zuständigkeiten für Adobe und Merchants bei der Entwicklung, Bereitstellung, Wartung und Sicherung von Adobe Commerce in Cloud-Infrastrukturen erläutert.
+In den folgenden Übersichtstabellen werden die betrieblichen Zuständigkeiten für Adobe und Händler bei der Entwicklung, Bereitstellung, Wartung und Sicherung von Adobe Commerce in Cloud-Infrastrukturen erläutert.
 
 >[!ENDSHADEBOX]
 
-### Kodierung und Entwicklung
+### Programmierung und Entwicklung
 
-#### Adobe Commerce-Core-Code
+#### Adobe Commerce-Kerncode
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Veröffentlichen von Aktualisierungen und Patches in Adobe Commerce Core | R |     |
-| Verfügbarkeit und Patch des Dateisystems | R |  |
-| Veröffentlichen von Aktualisierungen und Patches in den ECE-Tools | R |     |
-| Adobe Commerce-Anwendungsqualität | R |     |
+| Verfügbarkeit und Patchen des Dateisystems | R |  |
+| Veröffentlichen von Updates und Patches in ECE-Tools | R |     |
+| Qualität der Adobe Commerce-Kernanwendungen | R |     |
 
 {style="table-layout:auto"}
 
 #### Code-Repository
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit von repo.magento.com | R |     |
-| Verfügbarkeit von Adobe Commerce auf dem Cloud Git-Server | R |     |
+| Verfügbarkeit von Adobe Commerce auf dem Cloud-Git-Server | R |     |
 | Andere vom Händler ausgewählte Code-Repositorys (GitHub, Bitbucket, gehosteter Git-Server) |     | R |
 
 {style="table-layout:auto"}
 
 #### Cloud Docker
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Bereitstellen von Cloud Docker-Containern zum Herunterladen | R |   |
-| Implementierung und Einrichtung von Cloud Docker (optional) |     | R |
+| Bereitstellung und Einrichtung von Cloud Docker (optional) |     | R |
 | Alle anderen lokalen Entwicklungseinstellungen |     | R |
 
 {style="table-layout:auto"}
 
 #### COMMERCE CLOUD CLI
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Laufende Qualität und Aktualisierung der ECE-Instrumente | R |   |
-| Installieren der neuesten ECE Tools-Version |     | R |
+| Laufende Qualität und Aktualisierung der ECE-Tools | R |   |
+| Installieren der neuesten ECE-Tools-Version |     | R |
 
 {style="table-layout:auto"}
 
 #### Anpassungen
 
-|  | Adobe | Händler |
+|  | Adobe | Großhändler |
 | --- | --- | --- |
 | Benutzerdefinierte Adobe Commerce-Module und -Code |     | R |
 | Erweiterungen |     | R |
@@ -591,41 +591,41 @@ In den folgenden Zusammenfassungstabellen werden die operativen Zuständigkeiten
 
 #### Bereitstellungen
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit der Infrastruktur zum Erstellen und Bereitstellen von Code | R |   |
-| Laufende Qualität der Build-und-Bereitstellungs-Konfigurationspipeline der Infrastruktur | R |   |
-| Konfiguration der Erstellung und Bereitstellung statischer Inhalte |     | R |
-| Aufbau und Ausführung des Governance-Prozesses für Implementierungen: Kriterien und Änderungsmanagement |     | R |
-| In der Staging-Umgebung bereitstellen |     | R |
-| In der Produktionsumgebung bereitstellen |     | R |
-| Produktionsrückgänge |     | R |
+| Laufende Qualität der Konfigurations-Pipeline für das Erstellen und Bereitstellen von Infrastrukturen | R |   |
+| Konfiguration des Builds und der Bereitstellung statischer Inhalte |     | R |
+| Aufbau und Ausführung des Bereitstellungs-Governance-Prozesses: Kriterien und Änderungsverwaltung |     | R |
+| Bereitstellen in der Staging-Umgebung |     | R |
+| Bereitstellen in der Produktionsumgebung |     | R |
+| Produktions-Rollbacks |     | R |
 
 {style="table-layout:auto"}
 
 #### Synchronisieren von Umgebungen
 
-Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwortlich.
+Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwortlich.
 
-#### Patchen
+#### Flicken
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Installieren von Updates und Patches für ECE-Tools |     | R |
 | Installieren von Updates und Patches für Adobe Commerce Core |     | R |
 
 #### Website-Verfügbarkeit
 
-|  | Adobe | Händler |
+|  | Adobe | Großhändler |
 | --- | --- | --- |
-| Benutzerdefinierte Adobe Commerce-Anwendung und zugehörige Websites |     | R |
+| Angepasste Adobe Commerce-Anwendung und zugehörige Websites |     | R |
 
 #### Leistung
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Kernanwendungsoptimierung | R |   |
-| Optimieren und Optimieren von benutzerspezifischem Code |     | R |
+| Optimierung und Optimierung von Kernanwendungen | R |   |
+| Optimierung von benutzerdefiniertem Code |     | R |
 | Benutzerdefinierter Adobe Commerce-Code |     | R |
 | Belastungstests |     | R |
 | Leistungstests |     | R |
@@ -635,22 +635,22 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 
 #### Protokolle und Überwachung
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Rotieren von Protokollen | R |   |
+| Rotierende Protokolle | R |   |
 | Benutzerdefinierte Adobe Commerce-Anwendung | | R |
-| Verfügbarkeit von New Relic-Diensten:<br>APM-Anwendungs- und Agentenintegration, Infrastrukturanwendung,<br>Protokollierung und Integration | R |   |
+| Verfügbarkeit von New Relic-Services:<br>APM-Anwendungs- und Agentenintegration, Infrastrukturanwendung<br>Protokollierung und Integration | R |   |
 | Einrichten von New Relic-Warnhinweisen |     | R |
 | Bereitstellen des New Relic-Agenten auf PaaS-Servern | R |  |
 
 {style="table-layout:auto"}
 
-#### Debuggen und Isolieren von Problemen
+#### Debugging und Problemisolierung
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Debuggen und Isolieren von Problemen | R | R |
-| Schnelle Unterstützung des Debugging- und Problemisolierungsprozesses |     | R |
+| Debugging und Problemisolierung | R | R |
+| Rechtzeitige Unterstützung des Debugging- und Problemisolierungsprozesses |     | R |
 
 {style="table-layout:auto"}
 
@@ -658,71 +658,71 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 
 #### Commerce-Anwendung
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Anwendungskonfiguration |     | R |
-| Hinzufügen von Domänen zur Adobe Commerce-Anwendung (Basis-URLs) |     | R |
-| Konfigurieren von APIs für die Verwendung von Dienstversionen, die von der bereitgestellten Adobe Commerce-Version unterstützt werden<br><br>Beispielsweise sind verschiedene Commerce-Versionen mit bestimmten PHP-, Redis- usw. kompatibel. |     | R |
+| Hinzufügen von Domains zur Adobe Commerce-Anwendung (Basis-URLs) |     | R |
+| Konfigurieren von PaaS für die Verwendung von Dienstversionen, die von der bereitgestellten Adobe Commerce-Version unterstützt werden<br><br> Beispielsweise sind verschiedene Commerce-Versionen mit bestimmten Versionen von PHP, Redis usw. kompatibel. |     | R |
 
 {style="table-layout:auto"}
 
 #### Aufgabenplanung mit Cron-Aufträgen
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit standardmäßiger Cron-Aufträge | R | |
+| Verfügbarkeit von standardmäßigen Cron-Aufträgen | R | |
 | Laufende Qualität von benutzerdefinierten Cron-Aufträgen |  | R |
 
 {style="table-layout:auto"}
 
-#### Nachrichtenbroker für das Framework für Nachrichtenwarteschlangen
+#### Message Broker für Message Queue Framework
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit des RabbitMQ-Dienstes | R |   |
+| Verfügbarkeit des RabbitMQ-Service | R |   |
 | Konfiguration der standardmäßigen RabbitMQ-Einstellungen | R |   |
-| Laufende Qualität und Patchierung von RabbitMQ | R |   |
-| Senden Sie eine Dienstanforderung, um eine mit der installierten Adobe Commerce-Version kompatible RabbitMQ-Version zu installieren. |   | R |
+| Laufende Qualität und Patches von RabbitMQ | R |   |
+| Senden einer Service-Anfrage zur Installation einer RabbitMQ-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |   | R |
 
 {style="table-layout:auto"}
 
 #### PHP-Dienst
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit von PHP | R |   |
-| Konfiguration der Standard-PHP-Einstellungen | R |     |
-| Konfiguration benutzerdefinierter PHP-Einstellungen |     | R |
-| Konfiguration der YAML-Datei zur Anpassung von PHP-Versionen, die mit der installierten Adobe Commerce-Version kompatibel sind |    | R |
+| Konfiguration der PHP-Standardeinstellungen | R |     |
+| Konfiguration von benutzerdefinierten PHP-Einstellungen |     | R |
+| Konfiguration der YAML-Datei, um PHP-Versionen mit der installierten Adobe Commerce-Version kompatibel auszurichten |    | R |
 
 {style="table-layout:auto"}
 
-#### Datenbankdienste
+#### Datenbank-Services
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit von Galera- und MariaDB-Diensten | R | |
-| Laufende Wartung der Standardeinstellungen für die Datenbank<br><br> (Indizierung und Optimierung der Kerntabellen, Optimierung der Standardeinstellungen für sys-admin) | R |   |
-| Laufende Pflege von Handelsdaten und geänderten Einstellungen<br><br> (Konfigurieren von normalisierten vs. flachen Tabellen, Indizierung und Optimierung von benutzerdefinierten und Drittanbieter-Tabellen, Archivierung oder Entfernung von Daten, Konfigurieren von Systemverwaltungseinstellungen) |     | R |
+| Verfügbarkeit von Galera- und MariaDB-Services | R | |
+| Laufende Pflege der standardmäßigen Datenbankeinstellungen <br><br>Indizierung und Optimierung von Kerntabellen, Optimierung der standardmäßigen Systemadministratoreinstellungen) | R |   |
+| Laufende Pflege der Händlerdaten und geänderte Einstellungen<br><br>(Konfigurieren normalisierter oder flacher Tabellen, Indizieren und Optimieren von benutzerdefinierten und Drittanbietertabellen, Archivieren oder Entfernen von Daten, Konfigurieren von Systemadministrationseinstellungen) |     | R |
 | Konfiguration von Galera und MySQL | R |   |
-| Laufende Qualität und Patching von Galera und MariaDB | R |   |
-| Laufende Optimierung der Infrastruktur | R |   |
-| Langsame Abfragen identifizieren und beheben |     | R |
-| Senden Sie eine Dienstanfrage, um eine mit der installierten Adobe Commerce-Version kompatible MariaDB-Version zu installieren. |     | R |
-| Festlegen und Verwalten von Merchant-spezifischen Datenaufbewahrungsrichtlinien (Adobe zur Datenaufbewahrung werden in der Händlervereinbarung definiert) |     | R |
+| Laufende Qualität und Patches von Galera und MariaDB | R |   |
+| Laufende Infrastrukturoptimierung | R |   |
+| Identifizieren und Korrigieren langsamer Abfragen |     | R |
+| Senden einer Service-Anfrage zur Installation einer MariaDB-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |     | R |
+| Einrichten und Verwalten von für Händler spezifischen Richtlinien zur Datenaufbewahrung (Adobe-Richtlinien zur Datenaufbewahrung werden im Händlervertrag definiert) |     | R |
 
 {style="table-layout:auto"}
 
-#### CDN-Dienst
+#### CDN-Service
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit und Qualität des CDN | R |   |
-| Schnelle Dienstkonfiguration (über Erweiterung/API) |     | R |
-| Schnelle Erweiterungsqualität | R |   |
-| Fastly Integration VCL Snippets (gebündelt mit der Fastly Extension) - Qualität | R |   |
-| Seiten-Cache-Optimierung |     | R |
-| Hinzufügen von Domänen zu Diensten, zu CDN und zur Infrastruktur | R |   |
+| Fastly-Service-Konfiguration (über Erweiterung/API) |     | R |
+| Fastly-Erweiterungsqualität | R |   |
+| Fastly Integration VCL Snippets (mit der Fastly-Erweiterung gebündelt) Qualität | R |   |
+| Optimierung des Seiten-Caches |     | R |
+| Hinzufügen von Domains zu Services, CDN und zur Infrastruktur | R |   |
 | Benutzerdefinierte VCL-Snippets |     | R |
 | WAF- und WAF-Regeln | R |   |
 
@@ -730,39 +730,39 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 
 #### Cache-Dienst
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit des Redis-Dienstes | R |   |
-| Konfiguration der standardmäßigen Redis-Einstellungen | R |   |
-| Laufende Qualität und Patchen von Redis | R |   |
-| Senden Sie eine Dienstanforderung, um eine Redis-Version zu installieren, die mit der installierten Adobe Commerce-Version kompatibel ist. |     | R |
+| Verfügbarkeit des Redis-Service | R |   |
+| Konfiguration der Standard-Redis-Einstellungen | R |   |
+| Kontinuierliche Qualität und Patchen von Redis | R |   |
+| Senden einer Service-Anfrage zum Installieren einer Redis-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |     | R |
 
 {style="table-layout:auto"}
 
 #### Suchdienst
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit von Elasticsearch | R |   |
-| Konfiguration der standardmäßigen Elasticsearch-Einstellungen | R |   |
-| Senden Sie eine Dienstanforderung, um eine mit der installierten Adobe Commerce-Version kompatible Elasticsearch-Version zu installieren. |  | R |
+| Konfiguration der Standard-Elasticsearch-Einstellungen | R |   |
+| Senden einer Service-Anfrage zur Installation einer Elasticsearch-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |  | R |
 
 {style="table-layout:auto"}
 
-#### Email-Dienst
+#### E-Mail-Dienst
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit des SendGrid-E-Mail-Diensts und seiner Integration | R |   |
-| Überwachen der SendGrid-Nutzung des Händlers mit Einschränkungen | R |   |
-| Der Händler ist für die Verwendung des Dienstes nur für ausgehende Transaktions-E-Mails verantwortlich<br>Der Dienst unterstützt nicht das Senden von Marketing-E-Mails. |     | R |
+| Verfügbarkeit des SendGrid-E-Mail-Dienstes und dessen Integration | R |   |
+| Überwachung der SendGrid-Nutzung des Händlers in Bezug auf Beschränkungen | R |   |
+| Der Händler ist nur für die Verwendung des Dienstes für ausgehende Transaktions-E<br>Mails verantwortlich. Der Dienst unterstützt nicht den Versand von Marketing-E-Mails. |     | R |
 | Konfigurieren optionaler E-Mail-Dienste von Drittanbietern |     | R |
 
 {style="table-layout:auto"}
 
-#### Dienstleistungen von Dritten
+#### Services von Drittanbietern
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit und Qualität von Drittanbieterdiensten |     | R |
 
@@ -772,38 +772,38 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 
 #### Advance Reporting Service
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit des erweiterten Berichterstellungsdienstes | R |   |
-| Die Konfiguration der erweiterten Berichterstellung entspricht den allgemeinen Geschäftsbedingungen für die erweiterte Berichterstellung |     | R |
+| Verfügbarkeit des erweiterten Reporting-Services | R |   |
+| Die Konfiguration des erweiterten Reportings entspricht den Geschäftsbedingungen für erweiterte Berichte |     | R |
 
 {style="table-layout:auto"}
 
 #### Commerce Intelligence
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit von Adobe Commerce Business Intelligence-Diensten | R |   |
+| Verfügbarkeit der Business Intelligence-Services von Adobe Commerce | R |   |
 | MBI-Datensynchronisierungsprozesse | R |   |
-| MBI-Synchronisierungsprobleme erkennen | R |   |
-| Konfigurieren der MBI-Datensynchronisierung mit Adobe Commerce Cloud Pro, Starter, On-Premises oder Nicht-Adobe Commerce<br>(API, Datenqualität und -formatierung, Händlernetzwerk, <br>DB-Verbindungen innerhalb und außerhalb von Adobe Commerce Cloud DB, über Datenschwellen) |     | R |
-| Konfigurieren der MBI-Datensynchronisierung mit Adobe Commerce Cloud Pro<br> (Adobe Commerce Cloud-Datenbankkonfiguration) | R |   |
+| Erkennen von MBI-Synchronisierungsproblemen | R |   |
+| Konfigurieren der MBI-Datensynchronisation mit Adobe Commerce Cloud Pro, Starter, On-Premise oder Nicht-Adobe Commerce<br> (API, Datenqualität und -formatierung, Händlernetzwerk, <br>DB-Verbindungen sowohl innerhalb als auch außerhalb von Adobe Commerce Cloud DB, über Datenschwellenwerte) |     | R |
+| Konfigurieren der MBI-Datensynchronisation mit Adobe Commerce Cloud Pro<br> (Adobe Commerce Cloud-Datenbankkonfiguration) | R |   |
 
 {style="table-layout:auto"}
 
 #### Produkt-Recommendations
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit des Product Recommendations-Dienstes | R |   |
+| Verfügbarkeit des Recommendations-Produktdienstes | R |   |
 
 {style="table-layout:auto"}
 
-### Netzwerkdienste
+### Netzwerk-Services
 
 #### Bildoptimierung
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit und Qualität der Bildoptimierung | R |  |
 | Konfiguration der Bildoptimierung |     | R |
@@ -812,33 +812,33 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 
 #### SSL-Zertifikate
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| SSL-dediziertes Zertifikat - Ablauf | R |  |
+| Dediziertes SSL-Zertifikat - Gültigkeit | R |  |
 | Bereitstellen von SSL-Zertifikaten | R |  |
-| Kauf und Pflege des EV/spezifischen SSL-Zertifikats (außer den Standardeinstellungen) und Bereitstellung für Adobe |     | R |
+| Erwerb und Pflege von EV-/spezifischen SSL-Zertifikaten (außer den bereitgestellten Standardwerten) und Bereitstellung für Adobe |     | R |
 
 {style="table-layout:auto"}
 
 #### Web Application Firewall (WAF)
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit und Konfiguration von WAF | R |  |
 | Umgang mit falsch positiven WAF-Regeln | R | |
-| Falsch positive WAF-Regel melden |     | R |
-| WAF-Regelverfeinerung (NICHT UNTERSTÜTZT) |     |     |
-| WAF/CDN-Protokolle |     | R |
+| Meldung von falsch positiven WAF-Regeln |     | R |
+| Regeloptimierung für WAF (NICHT UNTERSTÜTZT) |     |     |
+| WAF-/CDN-Protokolle |     | R |
 
 {style="table-layout:auto"}
 
 #### DDOS
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Proaktive IP-Blockierung |     | R |
-| Bot Protection |     | R |
-| DDOS-Erkennung - Layer 3-4 | R |   |
+| Bot-Schutz |     | R |
+| DDOS-Erkennung - Ebene 3-4 | R |   |
 | DDOS-Erkennung - Ebene 7 |     | R |
 | DDOS-Antwort | R |   |
 
@@ -846,59 +846,59 @@ Merchants sind für die Synchronisierung von Daten zwischen Umgebungen verantwor
 
 #### Privater Link
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
-| Konfigurieren und Verwalten von PrivateLink-Verbindungen (falls verwendet) mit einem Adobe-eigenen VPC | R |   |
-| Konfigurieren und Verwalten von PrivateLink-Verbindungen (falls verwendet) mit einem Merchant-eigenen VPC |     | R |
-| Verfügbarkeit von SSH (nicht privater Link) | R |   |
-| Konfiguration des Endpunkts PrivateLink Inbound to Adobe Commerce Cloud Service | R |   |
-| Annahme des Endpunkts PrivateLink Inbound to Adobe Commerce Cloud Service |     | R |
-| Konfiguration von PrivateLink Inbound to Merchant&#39;s VPC Service endpoint |     | R |
-| Akzeptanz von PrivateLink Inbound für den VPC Service-Endpunkt von Merchant | R |   |
-| Konfiguration von PrivateLink-Integrationen (Endpunkt des Kontos) |     | R |
-| Konfiguration der im Handelsbesitz befindlichen VPC für den PrivateLink-Endpunkt<br><br> (einschließlich aller VPN-Verbindungen) |     | R |
+| Konfigurieren und Verwalten von PrivateLink-Verbindungen (falls verwendet) mit einer Adobe-eigenen VPC | R |   |
+| Konfigurieren und Verwalten von PrivateLink-Verbindungen (falls verwendet) mit einer VPC im Besitz eines Händlers |     | R |
+| Verfügbarkeit von SSH (nicht-privater Link) | R |   |
+| Konfiguration des privatenLink-Eingangs zum Adobe Commerce Cloud-Service-Endpunkt | R |   |
+| Akzeptieren des privaten Links zum Adobe Commerce Cloud-Service-Endpunkt |     | R |
+| Konfiguration von PrivateLink Inbound auf den VPC Service-Endpunkt des Händlers |     | R |
+| Akzeptieren des über den VPC-Service-Endpunkt des Händlers eingehenden PrivateLink | R |   |
+| Konfiguration von PrivateLink-Integrationen (Endpunkt zu Konto) |     | R |
+| Konfiguration des händlereigenen VPC für den PrivateLink-<br><br> (einschließlich VPN-Verbindungen) |     | R |
 
 {style="table-layout:auto"}
 
 ### System und Infrastruktur
 
-#### Anwendungsserver
+#### Anwendungs-Server
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit von Nginx | R |   |
 | Konfiguration von Nginx | R |   |
-| Laufende Qualität und Patchen von Nginx | R |   |
+| Kontinuierliche Qualität und Patchen von Nginx | R |   |
 
 {style="table-layout:auto"}
 
 #### Betriebssystem
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit des Betriebssystems | R |   |
-| Laufende Qualität und Patchen des Betriebssystems | R |   |
+| Laufende Qualität und Patches des Betriebssystems | R |   |
 
 {style="table-layout:auto"}
 
-#### Backup, hohe Verfügbarkeit und Failover
+#### Sicherung, hohe Verfügbarkeit und Failover
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit von Snapshots und Backup-Prozessen | R |   |
-| Planen von Backups für Staging- und Produktionsumgebungen von Cloud Pro | R |   |
-| Planen von Sicherungen für Cloud Starter- und Pro-Integrationsumgebungen |     | R |
+| Planung von Backups für Cloud Pro-Staging- und Produktionsumgebungen | R |   |
+| Planung von Backups für Cloud Starter- und Pro Integration-Umgebungen |     | R |
 | Verfügbarkeit von HA/Failover | R |   |
 
 {style="table-layout:auto"}
 
 #### Cloud-Server und Skalierung
 
-|     | Adobe | Händler |
+|     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit von CPU-Ressourcen, Rechenzentrum, Festplattenspeicher | R |   |
-| Verfügbarkeit und Ausführung von Überlastungskapazitäten oder Notfallvergrößerung | R |   |
-| Anfordern der Übernahmekapazität |     | R |
-| Überwachen der vCPU-Auslastung anhand der Grenzwerte | R |   |
+| Verfügbarkeit und Ausführung der Überlastungskapazität oder Notfall-Upsizing | R |   |
+| Anforderung von Überspannungskapazität |     | R |
+| Überwachen der vCPU-Auslastung anhand der Limits | R |   |
 
 {style="table-layout:auto"}

@@ -1,6 +1,6 @@
 ---
-title: Best Practices für die Konfiguration von Webcrawlern
-description: Erfahren Sie, wie Sie mithilfe von "robots.txt"- und "sitemap.xml"-Dateien Anweisungen über Ihre Adobe Commerce-Website an Webcrawler weitergeben.
+title: Best Practices für die Konfiguration von Web-Crawlern
+description: Erfahren Sie, wie Sie mithilfe der Dateien „robots.txt“ und „sitemap.xml“ Anweisungen zu Ihrer Adobe Commerce-Site an Web-Crawler übergeben.
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# Best Practices für die Konfiguration von Webcrawlern
+# Best Practices für die Konfiguration von Web-Crawlern
 
-Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt` - und `sitemap.xml` -Dateien in Adobe Commerce, einschließlich Konfiguration und Sicherheit. Diese Dateien weisen Webcrawler (typischerweise Suchmaschinen-Roboter) an, wie Seiten auf einer Website durchsucht werden. Die Konfiguration dieser Dateien kann die Site-Leistung und Suchmaschinenoptimierung verbessern.
+Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt`- und `sitemap.xml` in Adobe Commerce, einschließlich Konfiguration und Sicherheit. Diese Dateien weisen Web-Crawler (normalerweise Suchmaschinenroboter) an, Seiten auf einer Website zu durchsuchen. Die Konfiguration dieser Dateien kann die Leistung der Site und die Suchmaschinenoptimierung verbessern.
 
 >[!NOTE]
 >
@@ -22,33 +22,33 @@ Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt` - un
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
 ## Adobe Commerce auf Cloud-Infrastruktur
 
-Ein standardmäßiges Adobe Commerce-Projekt enthält eine Hierarchie mit einer Website-, Store- und Store-Ansicht. Bei komplexeren Implementierungen können Sie zusätzliche Websites, Stores und Ansichten für eine Storefront mit _mehreren Sites_ erstellen.
+Ein standardmäßiges Adobe Commerce-Projekt enthält eine Hierarchie mit einer einzelnen Website-, Store- und Store-Ansicht. Für komplexere Implementierungen können Sie zusätzliche Websites, Stores und Store-Ansichten für eine Storefront mit _Sites_.
 
-### Storefronts mit nur einer Site
+### Storefronts mit einer Site
 
-Befolgen Sie diese Best Practices bei der Konfiguration der `robots.txt` - und `sitemap.xml` -Dateien für Einzelsite-Storefronts:
+Befolgen Sie diese Best Practices beim Konfigurieren der `robots.txt`- und `sitemap.xml` für Storefronts mit einer Website:
 
-- Stellen Sie sicher, dass Ihr Projekt die [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package)-Version 2002.0.12 oder höher verwendet.
-- Verwenden Sie die Admin-Anwendung, um der Datei `robots.txt` Inhalte hinzuzufügen.
+- Stellen Sie sicher, dass Ihr Projekt [`ece-tools`](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) Version 2002.0.12 oder höher verwendet.
+- Verwenden Sie das Admin-Programm, um der `robots.txt` Inhalte hinzuzufügen.
 
   >[!TIP]
   >
-  >Zeigen Sie die automatisch generierte `robots.txt` -Datei für Ihren Store unter `<domain.your.project>/robots.txt` an.
+  >Zeigen Sie die automatisch generierte `robots.txt` für Ihren Store unter `<domain.your.project>/robots.txt` an.
 
-- Verwenden Sie die Admin-Anwendung, um eine `sitemap.xml` -Datei zu generieren.
+- Verwenden Sie das Admin-Programm, um eine `sitemap.xml`-Datei zu generieren.
 
   >[!IMPORTANT]
   >
-  >Aufgrund des schreibgeschützten Dateisystems in Adobe Commerce bei Cloud-Infrastrukturprojekten müssen Sie den Pfad &quot;`pub/media`&quot;angeben, bevor Sie die Datei generieren.
+  >Aufgrund des schreibgeschützten Dateisystems in Adobe Commerce in Cloud-Infrastrukturprojekten müssen Sie den `pub/media` angeben, bevor Sie die Datei generieren.
 
-- Verwenden Sie ein benutzerdefiniertes Fastly VCL-Snippet, um für beide Dateien vom Stamm Ihrer Site zum Speicherort `pub/media/` umzuleiten:
+- Verwenden Sie ein benutzerdefiniertes Fastly-VCL-Snippet für beide Dateien, um vom Stammverzeichnis Ihrer Site zum `pub/media/`-Speicherort umzuleiten:
 
   ```vcl
   {
@@ -60,26 +60,26 @@ Befolgen Sie diese Best Practices bei der Konfiguration der `robots.txt` - und `
   }
   ```
 
-- Testen Sie die Umleitung, indem Sie die Dateien in einem Webbrowser anzeigen. Beispiel: `<domain.your.project>/robots.txt` und `<domain.your.project>/sitemap.xml`. Vergewissern Sie sich, dass Sie den Stammpfad verwenden, für den Sie die Umleitung konfiguriert haben, und nicht einen anderen Pfad.
+- Testen Sie die Umleitung, indem Sie die Dateien in einem Webbrowser anzeigen. Zum Beispiel `<domain.your.project>/robots.txt` und `<domain.your.project>/sitemap.xml`. Stellen Sie sicher, dass Sie den Stammpfad verwenden, für den Sie die Umleitung konfiguriert haben, und nicht einen anderen Pfad.
 
 >[!INFO]
 >
->Detaillierte Anweisungen finden Sie unter [Hinzufügen von Sitemap- und Suchmaschinen-Robotern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) .
+>Siehe [Hinzufügen von Sitemaps und Suchmaschinenrobotern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) für detaillierte Anweisungen.
 
 
 ### Storefronts mit mehreren Sites
 
-Sie können mehrere Stores mit einer einzigen Implementierung von Adobe Commerce in der Cloud-Infrastruktur einrichten und ausführen. Siehe [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
+Mit einer einzigen Implementierung von Adobe Commerce in der Cloud-Infrastruktur können Sie mehrere Stores einrichten und ausführen. Siehe [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
 
-Die gleichen Best Practices für die Konfiguration der `robots.txt` - und `sitemap.xml` -Dateien für die [Storefronts mit einer einzelnen Site](#single-site-storefronts) gelten für Storefronts mit mehreren Sites mit zwei wichtigen Unterschieden:
+Die gleichen Best Practices für die Konfiguration der `robots.txt`- und `sitemap.xml`-Dateien für [Storefronts mit einer Site](#single-site-storefronts) gelten für Storefronts mit mehreren Sites, mit zwei wichtigen Unterschieden:
 
-- Stellen Sie sicher, dass die Dateinamen `robots.txt` und `sitemap.xml` die Namen der entsprechenden Sites enthalten. Beispiel:
+- Stellen Sie sicher, dass die `robots.txt`- und `sitemap.xml`-Dateinamen die Namen der entsprechenden Sites enthalten. Beispiel:
    - `domaineone_robots.txt`
    - `domaintwo_robots.txt`
    - `domainone_sitemap.xml`
    - `domaintwo_sitemap.xml`
 
-- Verwenden Sie ein leicht modifiziertes benutzerdefiniertes Fastly VCL-Snippet, um vom Stamm Ihrer Sites zum Speicherort `pub/media` für beide Dateien auf allen Ihren Sites umzuleiten:
+- Verwenden Sie ein leicht geändertes benutzerdefiniertes Fastly-VCL-Fragment, um für beide Dateien in Ihren Sites vom Stammverzeichnis Ihrer Sites zum `pub/media`-Speicherort umzuleiten:
 
   ```vcl
   {
@@ -91,27 +91,27 @@ Die gleichen Best Practices für die Konfiguration der `robots.txt` - und `sitem
   }
   ```
 
-## Adobe Commerce vor Ort
+## Adobe Commerce On-Premises
 
-Verwenden Sie die Admin-Anwendung, um die Dateien `robots.txt` und `sitemap.xml` zu konfigurieren, um zu verhindern, dass Bots unnötigen Inhalt scannen und indizieren (siehe [Suchmaschinen-Roboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)).
+Verwenden Sie das Admin-Programm, um die `robots.txt`- und `sitemap.xml`-Dateien zu konfigurieren, damit Bots keine unnötigen Inhalte scannen und indizieren (siehe [Suchmaschinenroboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots)).
 
 >[!TIP]
 >
->Bei lokalen Bereitstellungen hängt das Schreiben der Dateien von der Installation von Adobe Commerce ab. Schreiben Sie die Dateien in `/path/to/commerce/pub/media/` oder `/path/to/commerce/media`, je nachdem, welcher Wert für Ihre Installation geeignet ist.
+>Bei lokalen Bereitstellungen hängt der Speicherort der Dateien von der Installation von Adobe Commerce ab. Schreiben Sie die Dateien in `/path/to/commerce/pub/media/` oder `/path/to/commerce/media`, je nachdem, was für Ihre Installation geeignet ist.
 
 ## Sicherheit
 
-Stellen Sie Ihren Admin-Pfad nicht in Ihrer `robots.txt` -Datei bereit. Der Admin-Pfad offen zu legen ist eine Schwachstelle für das Site-Hacking und einen möglichen Datenverlust. Entfernen Sie den Administratorpfad aus der Datei &quot;`robots.txt`&quot;.
+Geben Sie den Administratorpfad nicht in Ihrer `robots.txt` an. Das Offenlegen des Administratorpfads ist eine Schwachstelle für Website-Hacking und möglichen Datenverlust. Entfernen Sie den Administratorpfad aus der `robots.txt`.
 
-Anweisungen zum Bearbeiten der Datei `robots.txt` und zum Entfernen aller Einträge des Admin-Pfads finden Sie unter [Marketing-Benutzerhandbuch > SEO und Suche > Suchmaschinen-Roboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
+Schritte zum Bearbeiten der `robots.txt` und Entfernen aller Einträge im Administratorpfad finden Sie unter [Marketing-Benutzerhandbuch > SEO und Suche > Suchmaschinenroboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots).
 
 >[!TIP]
 >
->Wenn Sie Hilfe benötigen, senden Sie [ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+>Wenn Sie Hilfe benötigen, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Weitere Informationen
 
-- [Websites, Stores und Ansichten verstehen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Websites hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Verwenden Sie Sofort, um böswilligen Traffic für Ihre Adobe Commerce-Sites zu blockieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt gibt in Adobe Commerce einen 404-Fehler in der Cloud-Infrastruktur 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html) aus
+- [Grundlegendes zu Websites, Stores und Store-Ansichten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Hinzufügen von Websites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [Verwenden Sie Fastly, um bösartigen Traffic für Ihre Adobe Commerce-Sites zu blockieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt gibt einen 404-Fehler in Adobe Commerce auf Cloud Infrastructure 2.3.x aus](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)

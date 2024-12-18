@@ -1,6 +1,6 @@
 ---
 title: config.php-Referenz
-description: Eine Liste der Werte finden Sie in der Datei config.php .
+description: Eine Werteliste finden Sie in der Datei config.php.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 # config.php-Referenz
 
-Die Datei `config.php` enthält die folgenden Abschnitte:
+Die `config.php`-Datei enthält die folgenden Abschnitte:
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 | --------- | -------------------|
 | `i18n` | Alle Inline-Übersetzungsdaten. Das Lesen aus diesem Abschnitt wird nicht unterstützt. |
 | `modules` | Die Liste der aktivierten und deaktivierten Module. |
@@ -34,17 +34,17 @@ Enthält ein Array von Modulen und deren Status. Wenn das Modul aktiviert ist, i
 ]
 ```
 
-Erfahren Sie mehr über [Module].
+Weitere Informationen zu [Modulen].
 
 ## Bereiche
 
 Enthält ein Array von Bereichskonfigurationswerten. Sie weist die folgenden Unterknoten auf:
 
-| Name | Beschreibung |
+| -Name | Beschreibung |
 | ---------- | -----------------------------------|
 | `websites` | Website-Konfiguration |
-| `groups` | Speicherkonfiguration |
-| `stores` | Konfiguration von Ansichten speichern |
+| `groups` | Speichert die Konfiguration |
+| `stores` | Konfiguration der Store-Ansichten |
 
 ```conf
 'scopes' => [
@@ -82,7 +82,7 @@ Enthält ein Array von Bereichskonfigurationswerten. Sie weist die folgenden Unt
 ]
 ```
 
-Erfahren Sie mehr über [Commerce-Bereiche][scopes].
+Weitere Informationen zu [Commerce-Bereichen][scopes].
 
 ## System
 
@@ -100,11 +100,11 @@ Enthält ein Array von Systemfeldkonfigurationswerten.
 ]
 ```
 
-Erfahren Sie mehr über [Systemspezifische Konfigurationen](config-reference-sens.md).
+Weitere Informationen [Systemspezifische Konfigurationen](config-reference-sens.md).
 
-## themes
+## Designs
 
-Enthält ein Array von Werten für die Designkonfiguration.
+Enthält ein Array von Werten für die Design-Konfiguration.
 
 ```conf
 'themes' => [
@@ -120,7 +120,7 @@ Enthält ein Array von Werten für die Designkonfiguration.
 ]
 ```
 
-Erfahren Sie mehr über [Designs].
+Weitere Informationen zu [Designs].
 
 <!-- link definitions -->
 

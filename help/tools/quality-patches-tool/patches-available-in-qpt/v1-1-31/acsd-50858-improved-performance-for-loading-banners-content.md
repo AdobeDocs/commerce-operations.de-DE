@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-50858: Verbesserte Leistung beim Laden von Bannerinhalten'
-description: Wenden Sie den Patch ACSD-50858 an, um das Adobe Commerce-Problem zu beheben, bei dem die Bannerleistung auf der Einkaufswagen-/Checkout-Seite aufgrund übermäßiger DB-Abfragen und erhöhter Seitenladezeit beeinträchtigt wird.
+title: 'ACSD-50858: Verbesserte Leistung beim Laden des Bannerinhalts'
+description: Wenden Sie den ACSD-50858-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem die Bannerleistung auf der Warenkorb-/Kassenseite aufgrund übermäßiger DB-Abfragen und verlängerter Seitenladezeit beeinträchtigt ist.
 feature: Page Content
 role: Admin
 exl-id: 1b46e51f-70ad-4450-b3a8-173c2e4b7925
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-50858: Verbesserte Leistung beim Laden von Bannerinhalten
+# ACSD-50858: Verbesserte Leistung beim Laden des Bannerinhalts
 
-Der Patch ACSD-50858 behebt ein Banner-Leistungsproblem auf der Einkaufswagen-/Checkout-Seite: *übermäßige DB-Abfragen und längere Ladezeiten von Seiten*. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.31 installiert ist. Die Patch-ID lautet ACSD-50858. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-50858 behebt ein Leistungsproblem des Banners auf der Warenkorb-/Kaufbestätigungsseite: *Übermäßige DB-Abfragen und verlängerte Seitenladezeit*. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.31 installiert ist. Die Patch-ID ist ACSD-50858. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,24 +27,24 @@ Der Patch ACSD-50858 behebt ein Banner-Leistungsproblem auf der Einkaufswagen-/C
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die Bannerleistung wird auf der Warenkorb-/Checkout-Seite aufgrund von *übermäßigen DB-Abfragen und erhöhter Seitenladezeit* beeinträchtigt.
+Die Bannerleistung auf der Warenkorb-/Kassenseite ist aufgrund von (*DB-Abfragen und verlängerter Seitenladezeit)*.
 
-Dieses Problem wurde behoben, indem die Art und Weise, wie Bannerinhalte geladen werden, umgestaltet wurde. Dadurch wurden die Anzahl der DB-Abfragen um 99,99 % und die Seitenladezeit um ca. 99 % reduziert.
+Dieses Problem wurde behoben, indem die Art und Weise, wie Bannerinhalte geladen werden, überarbeitet wurde, wodurch die Anzahl der DB-Abfragen um 99,99 % und die Seitenladezeit um ~99 % reduziert wurde.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Melden Sie sich bei Admin an und erstellen Sie ein einfaches Produkt.
-1. Erstellen Sie einen Kunden entweder vom Administrator oder vom Frontend und fügen Sie eine Versandadresse hinzu.
-1. Verschieben Sie banners.php in den Ordner `magento_root/pub/` .
-1. Generieren Sie Banner mit dem Befehl `php pub/banners.php` . Es werden 10.000 einfache Banner und 1.000 Banner mit Verkaufsregeln generiert.
-1. Melden Sie sich beim Kunden an, der zuvor auf der Vorderseite erstellt wurde.
+1. Erstellen Sie einen Kunden entweder über Admin oder das Frontend und fügen Sie eine Versandadresse hinzu.
+1. Verschieben Sie banners.php in den Ordner `magento_root/pub/`.
+1. Erzeugen Sie Banner mit dem Befehl `php pub/banners.php` . Es wird 10.000 einfache Banner und 1.000 Banner mit Verkaufsregeln generieren.
+1. Melden Sie sich bei dem zuvor im Frontend erstellten Kunden an.
 1. Fügen Sie das zuvor erstellte Produkt zum Warenkorb hinzu.
-1. Gehen Sie zur Checkout-Seite (Checkout/Warenkorb).
-1. Überwachen Sie die Ladezeit der `banner/ajax/load` -Anfrage:
+1. Navigieren Sie zur Kasse (Kasse/Warenkorb).
+1. Überwachen Sie die Ladezeit der `banner/ajax/load`:
 
    * Ohne `bin/magento dev:query-log:enable`
    * Mit `bin/magento dev:query-log:enable`
@@ -55,22 +55,22 @@ Dieses Problem wurde behoben, indem die Art und Weise, wie Bannerinhalte geladen
 
 <u>Erwartete Ergebnisse</u>:
 
-Verringern Sie die Anzahl der DB-Abfragen für `magento_banner_content` und die Ladezeit der Warenkorb-/Checkout-Seite.
+Verringern der Anzahl von DB-Abfragen für die Ladezeit von `magento_banner_content` und Warenkorb-/Kaufbestätigungsseite.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Erhöhen Sie die Anzahl der DB-Abfragen für `magento_banner_content` und die Ladezeit der Warenkorb-/Checkout-Seite.
+Erhöhung der Anzahl der DB-Abfragen für die Ladezeit von `magento_banner_content` und Warenkorb-/Kaufbestätigungsseiten.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Weitere Informationen
 
-<u>banners.php content</u>:
+<u>banners.php Inhalt</u>:
 
 ```php
 \Banner::class);
@@ -134,8 +134,8 @@ for ($i = 0; $i < 1000; $i++) {
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

@@ -15,11 +15,11 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-Die [Adobe Privacy JavaScript Library](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) ist eine Reihe von Tools, die Ihnen beim Erstellen eines Prozesses zum Zugreifen auf und Löschen von privaten Daten helfen.
+Die [Adobe Privacy JavaScript Library](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) ist eine Reihe von Tools, die Sie bei der Erstellung eines Prozesses für den Zugriff auf und das Löschen privater Daten unterstützen.
 
-Adobe Commerce-Datenverfolgungsdienste können personenbezogene Daten speichern, die für Datenschutzbestimmungen wie die [Datenschutz-Grundverordnung (DSGVO)](gdpr.md) und den [California Consumer Privacy Act (CCPA)](ccpa.md) gelten.
+Adobe Commerce-Datenverfolgungsdienste können private Informationen speichern, die für Datenschutzbestimmungen wie die [Datenschutz-Grundverordnung (DSGVO)](gdpr.md) und den California Consumer Privacy Act ([) gelten](ccpa.md).
 
-Diese Bibliothek bietet eine einheitliche Reihe von Funktionen zum Erstellen von Datenschutzanfragen, Senden dieser Anfragen an die Implementierungen der einzelnen Produkte und Erfassen der Antworten. Verwenden Sie diese Bibliothek, um die Daten abzurufen und zu entfernen, die von diesen Daten-Tracking-Diensten im Browser gespeichert werden.
+Diese Bibliothek bietet einen einheitlichen Satz von Funktionen zum Erstellen von Datenschutzanfragen, zum Senden an die Implementierungen der einzelnen Produkte und zum Erfassen der Antworten. Verwenden Sie diese Bibliothek, um die im Browser gespeicherten Daten von diesen Datenverfolgungsdiensten abzurufen und zu entfernen.
 
 ## Installation
 
@@ -28,30 +28,30 @@ Verwenden Sie eine der folgenden Methoden, um die Bibliotheksdatei herunterzulad
 - npm: `npm install @adobe/adobe-privacy`
 - GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-Nachdem Sie über die Datei verfügen, müssen Sie sie einem benutzerdefinierten Modul oder Design hinzufügen, das in Ihrer Adobe Commerce-Instanz installiert ist. Befolgen Sie die Anweisungen, die im Thema [Verwenden von benutzerdefiniertem JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) beschrieben sind, um diese Aufgabe durchzuführen.
+Nachdem Sie die Datei haben, müssen Sie sie einem benutzerdefinierten Modul oder Design hinzufügen, das in Ihrer Adobe Commerce-Instanz installiert ist. Befolgen Sie die Anweisungen unter [Verwenden benutzerdefinierter JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/), um diese Aufgabe durchzuführen.
 
 ## Nutzung
 
-Die AdobePrivacy JS Library bietet verschiedene Funktionen zum Verwalten von im Browser gespeicherten Identitätsdaten.
+Die Adobe Privacy JS Library bietet verschiedene Funktionen zum Verwalten von Identitätsdaten, die im Browser gespeichert sind.
 
 `retrieveIdentities()`
-: Gibt ein Array von Identitäten aus einem Dienst zusammen mit einem Array von Identitäten zurück, die nicht im Dienst gefunden werden
+: Gibt ein Array von Identitäten aus einem Service zusammen mit einem Array von Identitäten zurück, die nicht im Service gefunden wurden.
 
 `removeIdentities()`
-: Entfernt Identitäten aus dem Browser und gibt ein Array von Identitätsobjekten mit einer booleschen Eigenschaft `isDeleteClientSide` zurück, um anzugeben, ob die Daten gelöscht wurden.
+: Entfernt Identitäten aus dem Browser und gibt ein Array von Identitätsobjekten mit einer `isDeleteClientSide` booleschen Eigenschaft zurück, die angibt, ob die Daten gelöscht wurden.
 
 `retrieveThenRemoveIdentities()`
 : Diese Funktion ähnelt `removeIdentities()` insofern, als sie ein Array von Identitäten abruft und aus dem Browser entfernt.
 
-Weitere Informationen und Beispiele für die Verwendung dieser Funktionen finden Sie in der [offiziellen Bibliotheksdokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
+Weitere Informationen und Beispiele zur Verwendung dieser Funktionen finden Sie unter [Offizielle Bibliotheksdokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Initialisierung
 
-Instanziieren Sie ein neues `AdobePrivacy` -Objekt, um die AdobePrivacy JS Library in Ihrem Implementierungscode zu verwenden.
+Instanziieren Sie ein neues `AdobePrivacy`-Objekt, um die Adobe Privacy JS-Bibliothek in Ihrem Implementierungs-Code zu verwenden.
 
 ```js
 var adobePrivacy = new AdobePrivacy({});
 ```
 
-Der Konstruktor akzeptiert ein Konfigurationsobjekt mit Parametern während der Instanziierung.
-Eine Liste dieser Konfigurationsparameter finden Sie in der [offiziellen Bibliotheksdokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) .
+Der Konstruktor akzeptiert während der Instanziierung ein Konfigurationsobjekt mit Parametern.
+Eine Liste [ Konfigurationsparameter finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)offiziellen Bibliotheksdokumentation).

@@ -1,36 +1,37 @@
 ---
 title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.56'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.56 verfügbaren Patches behoben wurden.
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.56  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 88cc3a9b2582998812af196f9e59b93015098c52
+exl-id: 6433df73-b6df-4c88-93a4-12ac1e5080ea
+source-git-commit: d6abc8ccd1bb81fa521da500d6d88567ac1673d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
-# Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.56
+# Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.56
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.56 verfügbaren Patches behoben wurden.
 
 QPT v1.1.56 enthält die folgenden Patches:
 
-1. **ACSD-63244**: Behebt die Probleme, bei denen ein JavaScript-Fehler verhindert, dass [!DNL Google Maps] korrekt gerendert wird und viele *Uncaught TypeError (Nicht abgefangener TypeError) vorliegen._each ist keine Fehler der Funktion* in der Konsole im Bedienfeld [!UICONTROL Admin].
-1. **ACSD-63242**: Behebung des Problems mit der Langsamkeit beim Import beim Hinzufügen von Katalogprodukten mit mehr als 10.000 Einträgen.
-1. **ACSD-63062**: Behebung des Problems, bei dem falsche Rabattberechnungen für den Warenkorb auftreten, wenn mehrere überlappende Regeln angewendet werden.
-1. **ACSD-62979**: Behebung des Problems, bei dem die Verwendung des falschen [!UICONTROL Store ID] in der GraphQL-Kopfzeile einen schwerwiegenden Speicherfehler verursacht.
-1. **ACSD-62971**: Behebung des Problems, bei dem beim Importieren von Lagerquellen mit nicht numerischen Werten in der Spalte *[!UICONTROL Quantity]* der Wert *quantity* auf *0* eingestellt wird.
-1. **ACSD-62872**: Behebt das Problem mit der eindeutigen Attributvalidierung, bei der Zeitplanaktualisierungen falsch validiert werden.
-1. **ACSD-62755**: Behebung des Problems, bei dem für [!DNL TinyMCE] 7 die Schriftgröße und -schrift speziell in den Initialisierungseinstellungen des Editors hinzugefügt werden muss.
-1. **ACSD-62670**: Behebung des Problems, bei dem der [!UICONTROL Products Ordered] -Berichtexport nach CSV und XML einen Fehler zurückgibt.
-1. **ACSD-62577**: Behebung des Problems mit der langsamen Leistung von Storefront-Suchabfragen durch Optimierung von Abfrage- und Tabellenindizes.
-1. **ACSD-62475**: Behebung des Problems, bei dem die [!UICONTROL Gift Card] -Produkte im Warenkorb falsch zusammengeführt wurden.
-1. **ACSD-62428**: Behebung des Problems, bei dem `is_out_of_stock` im Katalogsuchindex auf einen falschen Wert gesetzt ist, wenn [!DNL SKU] nicht als durchsuchbares Attribut festgelegt ist.
-1. **ACSD-62355**: Erhöht die Ladezeit der konfigurierbaren Produktebearbeitungsseite, wenn das konfigurierbare Produkt auf vielen Attributen mit vielen Werten basiert.
-1. **ACSD-61805**: Behebung des Problems, bei dem Produkte nach der Aktualisierung des Status der Rückbestellung über [!DNL REST API] nicht auf Lager sind.
-1. **ACSD-60811**: Behebung des Problems, bei dem das Aktualisieren des Bestellstatus mit einem benutzerdefinierten Wert oder Kommentar nur möglich ist, wenn der aktuelle Status entweder *[!UICONTROL Processing]* oder *[!UICONTROL Fraud]* lautet.
-1. **ACSD-62952**: Behebung des Problems, bei dem das [!UICONTROL Gift Registry] -Datum in der Storefront ungenau angezeigt wird.
-1. **ACSD-55339**: Behebung des Problems, bei dem ein Produkt [!DNL SKU], das mit *0* beginnt (null), die *0* entfernt, sodass das Anführungszeichen nicht aktualisiert wird.
+1. **ACSD-63244**: Behebt die Probleme, bei denen ein JavaScript-Fehler verhindert, dass [!DNL Google Maps] korrekt gerendert werden, und bei denen es viele „Nicht erfasster *TypeError: this._each ist keine Funktion* Fehler in der Konsole im [!UICONTROL Admin].
+1. **ACSD-63242**: Es wurde das Problem der verlangsamten Importe beim Hinzufügen von Katalogprodukten mit mehr als 10.000 Einträgen behoben.
+1. **ACSD-63062**: Es wird das Problem behoben, dass bei Anwendung mehrerer überlappender Regeln zu falschen Berechnungen des Warenkorbabschlags kommt.
+1. **ACSD-62979**: Es wird ein Problem behoben, bei dem die Verwendung der falschen [!UICONTROL Store ID] in der GraphQL-Kopfzeile einen schwerwiegenden Speicherfehler verursacht.
+1. **ACSD-62971**: Es wird ein Problem behoben, bei dem der Import von Lagerquellen mit nicht numerischen Werten in der *[!UICONTROL Quantity]* Spalte dazu führt, dass *Menge* auf *0 eingestellt*.
+1. **ACSD-62872**: Es wurde das Problem mit der Validierung eindeutiger Attribute behoben, bei dem Zeitplanaktualisierungen falsch validiert wurden.
+1. **ACSD-62755**: Es wird ein Problem behoben, bei dem [!DNL TinyMCE] 7 erfordert, dass Schriftgröße und Schriftart in den Editor-Initialisierungseinstellungen speziell hinzugefügt werden.
+1. **ACSD-62670**: Es wird das Problem behoben, bei dem der Export des [!UICONTROL Products Ordered]-Berichts in CSV und XML einen Fehler zurückgibt.
+1. **ACSD-62577**: Behebt das Problem der langsamen Leistung von Storefront-Suchabfragen, indem sowohl Abfrage- als auch Tabellenindizes optimiert werden.
+1. **ACSD-62475**: Behebt das Problem, dass die [!UICONTROL Gift Card] Produkte falsch im Warenkorb zusammengeführt werden.
+1. **ACSD-62428**: Es wird ein Problem behoben, bei dem `is_out_of_stock` im Katalogsuchindex auf einen falschen Wert eingestellt ist, wenn die [!DNL SKU] nicht als durchsuchbares Attribut festgelegt ist.
+1. **ACSD-62355**: Verbessert die Ladezeit der konfigurierbaren Produktbearbeitungsseite, wenn das konfigurierbare Produkt auf vielen Attributen mit vielen Werten basiert.
+1. **ACSD-61805**: Es wird ein Problem behoben, bei dem Produkte in der Storefront nicht vorrätig sind, nachdem der Status der Rückstandsbestellung über [!DNL REST API] aktualisiert wurde.
+1. **ACSD-60811**: Es wird ein Problem behoben, bei dem das Aktualisieren des Bestellstatus mit einem benutzerdefinierten Wert oder Kommentar nur möglich ist, wenn der aktuelle Status entweder *[!UICONTROL Processing]* oder *[!UICONTROL Fraud]* ist.
+1. **ACSD-62952**: Es wird ein Problem behoben, bei dem das [!UICONTROL Gift Registry] falsch in der Storefront angezeigt wird.
+1. **ACSD-55339**: Es wird ein Problem behoben, bei dem ein [!DNL SKU], das mit *0* (Null) beginnt, die *0* entfernt und so verhindert, dass das Angebot aktualisiert wird.
 
-Navigieren Sie über das Menü links zu einer bestimmten Patch-Seite.
+Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

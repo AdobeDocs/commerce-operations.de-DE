@@ -1,6 +1,6 @@
 ---
-title: Sperranbieter konfigurieren
-description: Führen Sie diese Schritte aus, um zu verhindern, dass die doppelten Cron-Aufträge und Cron-Gruppen in Ihrer Adobe Commerce-Bereitstellung ausgeführt werden.
+title: Konfigurieren des Sperranbieters
+description: Führen Sie diese Schritte aus, um zu verhindern, dass doppelte Cron-Aufträge und Cron-Gruppen in Ihrer Adobe Commerce-Bereitstellung ausgeführt werden.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
@@ -9,24 +9,24 @@ ht-degree: 0%
 
 ---
 
-# Sperranbieter konfigurieren
+# Konfigurieren des Sperranbieters
 
-Bevor Sie diesen Befehl ausführen, müssen Sie die folgenden *oder* ausführen, die Anwendung [installieren](../advanced.md):
+Bevor Sie diesen Befehl ausführen, müssen Sie Folgendes tun *oder* Sie müssen [die Anwendung installieren](../advanced.md):
 
 * [Erstellen oder Aktualisieren der Bereitstellungskonfiguration](deployment.md)
-* [Datenbankschema erstellen](database.md)
+* [Erstellen des Datenbankschemas](database.md)
 
 ## Sichere Installation
 
 {{$include /help/_includes/secure-install.md}}
 
-## Schloss konfigurieren
+## Konfigurieren der Sperre
 
-Konfigurieren Sie einen Sperranbieter, um zu verhindern, dass doppelte Cron-Aufträge und Cron-Gruppen gestartet werden. (Erfordert Adobe Commerce 2.2.x, 2.2.5 und höher sowie 2.3.3 und höher.)
+Konfigurieren Sie einen Sperranbieter, um den Start doppelter Cron-Aufträge und Cron-Gruppen zu verhindern. (Erfordert Adobe Commerce 2.2.x, 2.2.5 und höher sowie 2.3.3 und höher.)
 
-Adobe Commerce verwendet die Datenbank, um Sperren standardmäßig zu speichern. Wenn sich auf Ihren Servern mehrere Knoten befinden, empfehlen wir die Verwendung von Zookeeper als Sperranbieter.
+Adobe Commerce verwendet die -Datenbank, um Sperren standardmäßig zu speichern. Wenn Sie mehrere Knoten auf Ihren Servern haben, empfehlen wir die Verwendung von ZooKeeper als Sperranbieter.
 
-Wenn Sie Adobe Commerce in einer Cloud-Infrastruktur ausführen, müssen Sie keine Einstellungen des Sperranbieters konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-Variablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Befehlsverwendung
 
@@ -36,10 +36,10 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 ### Parameterbeschreibungen
 
-| Name | Wert | Erforderlich? |
+| -Name | Wert | Erforderlich? |
 |--- |--- |--- |
-| `--lock-provider` | Name des Sperranbieters: `db`, `zookeeper` oder `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
-| `--lock-db-prefix` | Das spezifische db-Präfix, um Sperrkonflikte bei der Verwendung des `db` -Sperranbieters zu vermeiden.<br><br>Der Standardwert: `NULL` | Nein |
-| `--lock-zookeeper-host` | Hosten und Anschluss für die Verbindung mit dem Zookeeper-Cluster bei Verwendung des `zookeeper`-Sperranbieters.<br><br>Beispiel: `127.0.0.1:2181` | Ja, wenn Sie `--lock-provider=zookeeper` festlegen |
-| `--lock-zookeeper-path` | Der Pfad, in dem Zookeeper Sperren speichert.<br><br>Der Standardpfad lautet: `/magento/locks` | Nein |
-| `--lock-file-path` | Der Pfad, in dem Dateisperren gespeichert werden. | Ja, wenn Sie `--lock-provider=file` festlegen |
+| `--lock-provider` | Anbieternamen sperren: `db`, `zookeeper` oder `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
+| `--lock-db-prefix` | Das spezifische DB-Präfix, um Sperrkonflikte bei Verwendung des `db`-Anbieters zu vermeiden.<br><br>Der Standardwert: `NULL` | Nein |
+| `--lock-zookeeper-host` | Host und Port für die Verbindung mit dem ZooKeeper-Cluster bei Verwendung des `zookeeper`.<br><br>Beispiel: `127.0.0.1:2181` | Ja, wenn Sie `--lock-provider=zookeeper` |
+| `--lock-zookeeper-path` | Der Pfad, in dem ZooKeeper Sperren speichert.<br><br>Der Standardpfad lautet: `/magento/locks` | Nein |
+| `--lock-file-path` | Der Pfad, in dem Dateisperren gespeichert werden. | Ja, wenn Sie `--lock-provider=file` |

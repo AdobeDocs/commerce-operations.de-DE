@@ -1,6 +1,6 @@
 ---
-title: Einzelmaschinenimplementierung
-description: Erfahren Sie, wie Sie mithilfe der Befehlszeile Updates auf einem Produktionsserver für Commerce bereitstellen.
+title: Bereitstellung auf einem Computer
+description: Erfahren Sie, wie Sie Aktualisierungen für Commerce auf einem Produktionsserver mithilfe der Befehlszeile bereitstellen.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
 source-git-commit: dcc283b901917e3681863370516771763ae87462
@@ -10,31 +10,31 @@ ht-degree: 1%
 
 ---
 
-# Einzelmaschinenbereitstellung
+# Bereitstellung auf einem Computer
 
-In diesem Thema finden Sie Anweisungen zur Bereitstellung von Updates für Commerce auf einem Produktionsserver mithilfe der Befehlszeile. Dieser Prozess gilt für technische Benutzer, die für Geschäfte verantwortlich sind, die auf einem einzigen Computer mit einigen Designs und Gebietsschemas ausgeführt werden.
+Dieses Thema enthält Anweisungen zum Bereitstellen von Aktualisierungen für Commerce auf einem Produktionsserver mithilfe der Befehlszeile. Dieser Prozess gilt für technische Benutzer, die für Stores verantwortlich sind, die auf einem einzelnen Computer mit einigen installierten Designs und Gebietsschemata ausgeführt werden.
 
 ## Annahmen
 
 - Sie haben Commerce mit [Composer](../../installation/composer.md) installiert.
-- Sie wenden Aktualisierungen direkt auf den Server an.
+- Aktualisierungen werden direkt auf den Server angewendet.
 
 >[!WARNING]
 >
->Dieses Handbuch gilt nicht, wenn Sie mit `git clone` Commerce installiert haben.
->Beitragende Entwickler sollten [dieses Handbuch][install] verwenden, um ihre Commerce-Installation zu aktualisieren.
+>Dieses Handbuch gilt nicht, wenn Sie `git clone` zur Installation von Commerce verwendet haben.
+>Entwicklerinnen und Entwickler, die an der [ mitwirken, sollten dieses Handbuch ][install], um ihre Commerce-Installation zu aktualisieren.
 
-## Implementierungsschritte
+## Bereitstellungsschritte
 
-1. Melden Sie sich bei Ihrem Produktionsserver als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
+1. Melden Sie sich bei Ihrem Produktions-Server als oder wechseln Sie zum [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).
 
-1. Ändern Sie den Ordner in den Commerce-Basisordner:
+1. Wechseln Sie in das Commerce-Basisverzeichnis:
 
    ```bash
    cd <Commerce base directory>
    ```
 
-1. Aktivieren Sie den Wartungsmodus mit dem Befehl:
+1. Aktivieren Sie den Wartungsmodus mithilfe des Befehls :
 
    ```bash
    bin/magento maintenance:enable

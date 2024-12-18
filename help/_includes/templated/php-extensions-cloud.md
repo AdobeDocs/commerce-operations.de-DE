@@ -25,83 +25,83 @@ ht-degree: 0%
         <tr>
             <td>
                 bcmath<br>
-                bz2<br>
-                calendar<br>
+                BZ2<br>
+                <br>
                 exif<br>
-                gd<br>
-                gettext<br>
+                GD<br>
+                getText<br>
                 intl<br>
                 libxml<br>
                 mysqli<br>
                 opcache<br>
-                pcntl<br>
+                PCNTL<br>
                 pdo_mysql<br>
-                Abbildung<br>
-                soap<br>
-                sockets<br>
-                SPL<br>
-                standard<br>
-                swoole<br>
+                Reflexion<br>
+                SOAP<br>
+                Steckdosen<br>
+                SPL <br>
+                Standard<br>
+                Swole<br>
                 sysvmsg<br>
-                sysvsem<br>
+                Systemsystem<br>
                 sysvshm<br>
                 zip<br>
                 zlib<br>
             </td>
             <td>
                 ctype<br>
-                curl<br>
-                date<br>
-                dba<br>
-                dom<br>
-                fileinfo<br>
+                cURL<br>
+                Datum<br>
+                DBA<br>
+                DOM<br>
+                fileInfo<br>
                 filter<br>
-                ftp<br>
+                FTP<br>
                 hash<br>
                 iconv<br>
-                json<br>
+                JSON<br>
                 mbstring<br>
                 mysqlnd<br>
                 openssl<br>
-                pcre<br>
-                pdo<br>
+                PCRE<br>
+                g.U<br>
                 pdo_sqlite<br>
-                phar<br>
-                posix<br>
-                readline<br>
-                session<br>
+                PHAR<br>
+                POSIX<br>
+                bereit<br>
+                Sitzung<br>
                 sqlite3<br>
-                tokenizer<br>
-                xml<br>
-                xmlreader<br>
-                xmlwriter<br>
+                Tokenizer<br>
+                XML<br>
+                XmlReader<br>
+                XmlWriter<br>
             </td>
             <td>
-                geoip<br>
+                GeoIP<br>
                 gmp<br>
-                igbinary<br>
+                binär<br>
                 imagick<br>
-                imap<br>
-                ldap<br>
-                mailparse<br>
+                IMAP<br>
+                LDAP<br>
+                mailParse<br>
                 mcrypt<br>
                 msgpack<br>
                 mysqli<br>
-                oauth<br>
+                OAuth<br>
                 pdo_mysql<br>
-                propro<br>
+                Pro<br>
                 pspell<br>
                 raphf<br>
-                recde<br>
-                reds<br>
-                Shmop-Sockets<br>
+                neu kodieren<br>
+                Redis<br>
+                Verkaufsstellen<br>
                 Natrium<br>
                 ssh2<br>
-                tidy<br>
+                Aufgeräumt<br>
                 xdebug<br>
                 xmlrpc<br>
-                xsl<br>
-                yaml<br>
+                XSL<br>
+                YAML<br>
             </td>
         </tr>
     </tbody>

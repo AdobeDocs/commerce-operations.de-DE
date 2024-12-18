@@ -1,6 +1,6 @@
 ---
 title: Webserver konfigurieren
-description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung mit Varnish konfigurieren.
+description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung von Varnish konfigurieren.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
@@ -10,37 +10,37 @@ ht-degree: 0%
 
 ---
 
-# Webserver konfigurieren
+# Konfigurieren des Webservers
 
-Konfigurieren Sie Ihren Webserver so, dass er einen anderen Anschluss als den standardmäßigen Port 80 überwacht, da Varnish direkt auf eingehende HTTP-Anforderungen antwortet, nicht auf den Webserver.
+Konfigurieren Sie Ihren Webserver so, dass er an einem anderen Port als dem Standard-Port 80 lauscht, da Varnish direkt auf eingehende HTTP-Anfragen reagiert, nicht auf den Webserver.
 
-In den folgenden Abschnitten wird als Beispiel Port 8080 verwendet.
+In den folgenden Abschnitten wird Port 8080 als Beispiel verwendet.
 
-**So ändern Sie den Apache 2.4-Überwachungsanschluss**:
+**So ändern Sie den Apache 2.4-Lauschanschluss**:
 
 1. Öffnen Sie `/etc/httpd/conf/httpd.conf` in einem Texteditor.
-1. Suchen Sie die Anweisung `Listen` .
-1. Ändern Sie den Wert des Überwachungsanschlusses in `8080`. (Sie können jeden verfügbaren Überwachungsanschluss verwenden.)
+1. Suchen Sie die `Listen`.
+1. Ändern Sie den Wert des Listen-Ports in `8080`. (Sie können einen beliebigen verfügbaren Listen-Port verwenden.)
 1. Speichern Sie Ihre Änderungen in `httpd.conf` und beenden Sie den Texteditor.
 
-## Ändern der Konfiguration des Varnish-Systems
+## Ändern der Konfiguration des Lacksystems
 
-So ändern Sie die Varnish-Systemkonfiguration:
+So ändern Sie die Konfiguration des Lacksystems:
 
-1. Als Benutzer mit `root` -Berechtigungen öffnen Sie die Konfigurationsdatei &quot;Vanish&quot;in einem Texteditor:
+1. Wenn Sie ein Benutzer mit `root` Berechtigungen sind, öffnen Sie Ihre Vanish-Konfigurationsdatei in einem Texteditor:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
    - Debian: `/etc/default/varnish`
    - Ubuntu: `/etc/default/varnish`
 
-1. Setzen Sie den Varnish-Listener-Port auf 80:
+1. Stellen Sie den Lacklauschanschluss auf 80:
 
    ```conf
    VARNISH_LISTEN_PORT=80
    ```
 
-   Stellen Sie für Varnish 4.x sicher, dass DAEMON_OPTS den richtigen Listening-Port für den Parameter `-a` enthält (auch wenn VARNISH_LISTEN_PORT auf den richtigen Wert gesetzt ist):
+   Stellen Sie bei Varnish 4.x sicher, dass DAEMON_OPTS den richtigen Listening-Port für den `-a`-Parameter enthält (auch wenn VARNISH_LISTEN_PORT auf den richtigen Wert gesetzt ist):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -52,20 +52,20 @@ So ändern Sie die Varnish-Systemkonfiguration:
 
 1. Speichern Sie Ihre Änderungen in der Varnish-Konfigurationsdatei und beenden Sie den Texteditor.
 
-### Ändern der standardmäßigen VCL
+### Standard-VCL ändern
 
-In diesem Abschnitt wird beschrieben, wie Sie eine minimale Konfiguration bereitstellen, sodass Varnish HTTP-Antwortheader zurückgibt. Auf diese Weise können Sie überprüfen, ob Varnish funktioniert, bevor Sie die [!DNL Commerce]-Anwendung für die Verwendung von Varnish konfigurieren.
+In diesem Abschnitt wird beschrieben, wie Sie eine minimale Konfiguration bereitstellen, damit Varnish HTTP-Antwort-Header zurückgibt. Auf diese Weise können Sie überprüfen, ob Varnish funktioniert, bevor Sie die [!DNL Commerce] für die Verwendung von Varnish konfigurieren.
 
-So konfigurieren Sie Varnish minimal:
+So konfigurieren Sie Lack minimal:
 
-1. Sichern Sie `default.vcl`:
+1. `default.vcl`:
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
 1. Öffnen Sie `/etc/varnish/default.vcl` in einem Texteditor.
-1. Suchen Sie den folgenden Stanza:
+1. Suchen Sie die folgende Strophe:
 
    ```conf
    backend default {
@@ -74,13 +74,13 @@ So konfigurieren Sie Varnish minimal:
    }
    ```
 
-1. Ersetzen Sie den Wert von `.host` durch den vollständig qualifizierten Hostnamen oder die IP-Adresse und überwachen Sie den Port des Varnish _backend_ oder _origin server_. Das heißt, der Server, der den Inhalt bereitstellt, beschleunigt sich.
+1. Ersetzen Sie den Wert von `.host` durch den vollqualifizierten Hostnamen oder die IP-Adresse und den Listen-Port des _Backend_ oder _Ursprungs-Servers_, d. h. der Server, der den Inhalt bereitstellt, beschleunigt Varnish.
 
-   Normalerweise ist dies Ihr Webserver. Siehe [Backend-Server](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) im _Varnish-Handbuch_.
+   Normalerweise ist dies Ihr Webserver. Siehe [Backend-Server](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) im _Handbuch zum Lackieren_.
 
-1. Ersetzen Sie den Wert von `.port` durch den Listener Port des Webservers (in diesem Beispiel 8080).
+1. Ersetzen Sie den Wert von `.port` durch den Überwachungs-Port des Webservers (in diesem Beispiel 8080).
 
-   Beispiel: Apache wird auf dem Host 192.0.2.55 installiert und Apache wartet auf Port 8080:
+   Beispiel: Apache wird auf Host 192.0.2.55 installiert und Apache überwacht Port 8080:
 
    ```conf
    backend default {
@@ -91,17 +91,17 @@ So konfigurieren Sie Varnish minimal:
 
    >[!INFO]
    >
-   >Wenn Varnish und Apache auf demselben Host ausgeführt werden, empfiehlt Adobe die Verwendung einer IP-Adresse oder eines Hostnamens und nicht von `localhost`.
+   >Wenn Varnish und Apache auf demselben Host laufen, empfiehlt Adobe, eine IP-Adresse oder einen Hostnamen und nicht `localhost` zu verwenden.
 
 1. Speichern Sie Ihre Änderungen in `default.vcl` und beenden Sie den Texteditor.
 
-1. Varnish neu starten:
+1. Lack neu starten:
 
    ```bash
    service varnish restart
    ```
 
-Wenn Varnish nicht gestartet werden kann, führen Sie es wie folgt über die Befehlszeile aus:
+Wenn Varnish nicht gestartet werden kann, versuchen Sie, es wie folgt über die Befehlszeile auszuführen:
 
 ```bash
 varnishd -d -f /etc/varnish/default.vcl
@@ -112,32 +112,32 @@ Dadurch sollten Fehlermeldungen angezeigt werden.
 
 >[!INFO]
 >
->Wenn Varnish nicht als Dienst startet, müssen Sie SELinux-Regeln so konfigurieren, dass sie ausgeführt werden können.
+>Wenn Varnish nicht als Dienst startet, müssen Sie SELinux-Regeln konfigurieren, um die Ausführung zuzulassen.
 
-## Überprüfen, ob Varnish funktioniert
+## Überprüfen, ob der Lack funktioniert
 
-In den folgenden Abschnitten wird beschrieben, wie Sie überprüfen können, ob Varnish funktioniert, aber _ohne_, dass Commerce für die Verwendung konfiguriert ist. Versuchen Sie es, bevor Sie Commerce konfigurieren.
+In den folgenden Abschnitten wird beschrieben, wie Sie sicherstellen können, dass Varnish funktioniert, aber _ohne_ Commerce für die Verwendung konfigurieren können. Sie sollten dies vor der Konfiguration von Commerce ausprobieren.
 
 Führen Sie die in den folgenden Abschnitten beschriebenen Aufgaben in der angegebenen Reihenfolge aus:
 
-- [Start Varnish](#start-varnish)
-- [&quot;netstat&quot;](#netstat)
+- [Anlauflack](#start-varnish)
+- [`netstat`](#netstat)
 
-### Start Varnish
+### Anlauflack
 
-Eingabe: `service varnish start`
+Eingeben: `service varnish start`
 
-Wenn Varnish nicht als Dienst gestartet werden kann, starten Sie ihn wie folgt über die Befehlszeile:
+Wenn Varnish nicht als Service gestartet werden kann, starten Sie es wie folgt über die Befehlszeile:
 
-1. Starten Sie die Varnish-CLI:
+1. Starten Sie die Lackierungs-CLI:
 
    ```bash
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
-1. Starten Sie den untergeordneten Varnish-Prozess:
+1. Untergeordneten Prozess „Lackieren“ starten:
 
-   Geben Sie bei Aufforderung `start` ein.
+   Geben Sie bei Aufforderung `start` ein
 
    Die folgenden Meldungen werden angezeigt, um einen erfolgreichen Start zu bestätigen:
 
@@ -151,13 +151,13 @@ Wenn Varnish nicht als Dienst gestartet werden kann, starten Sie ihn wie folgt �
 
 ### netstat
 
-Melden Sie sich beim Varnish-Server an und geben Sie den folgenden Befehl ein:
+Melden Sie sich beim Lackierserver an und geben Sie den folgenden Befehl ein:
 
 ```bash
 netstat -tulpn
 ```
 
-Suchen Sie insbesondere nach der folgenden Ausgabe:
+Achten Sie insbesondere auf die folgende Ausgabe:
 
 ```
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
@@ -166,17 +166,17 @@ tcp        0      0 :::8080                     :::*                        LIST
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-Die obige Abbildung zeigt Varnish, das auf Port 80 ausgeführt wird, und Apache, das auf Port 8080 ausgeführt wird.
+Oben sehen Sie Varnish, das auf Port 80 und Apache, das auf Port 8080 läuft.
 
-Wenn die Ausgabe für `varnishd` nicht angezeigt wird, stellen Sie sicher, dass Varnish ausgeführt wird.
+Wenn die Ausgabe für `varnishd` nicht angezeigt wird, stellen Sie sicher, dass „Varnish“ ausgeführt wird.
 
-Siehe [`netstat` options](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Siehe [`netstat` Optionen](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
 ## Installieren der Commerce-Software
 
-Installieren Sie die Commerce-Software, falls noch nicht geschehen. Wenn Sie zur Eingabe einer Basis-URL aufgefordert werden, verwenden Sie den &quot;Varnish&quot;-Host und Port 80 (für &quot;Varnish&quot;), da Varnish alle eingehenden HTTP-Anforderungen erhält.
+Installieren Sie die Commerce-Software, falls noch nicht geschehen. Wenn Sie nach einer Basis-URL gefragt werden, verwenden Sie den Varnish-Host und Port 80 (für Varnish), da Varnish alle eingehenden HTTP-Anfragen empfängt.
 
-Mögliche Fehler bei der Installation von Commerce:
+Mögliche Fehlermeldung bei der Installation von Commerce:
 
 ```
 Error 503 Service Unavailable
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Wenn dieser Fehler auftritt, bearbeiten Sie `default.vcl` und fügen Sie dem `backend` -Stanza eine Zeitüberschreitung wie folgt hinzu:
+Wenn dieser Fehler auftritt, bearbeiten Sie `default.vcl` und fügen Sie der `backend` wie folgt eine maximale Wartezeit hinzu:
 
 ```conf
 backend default {
@@ -195,27 +195,27 @@ backend default {
 }
 ```
 
-## Überprüfen von HTTP-Antwortheadern
+## HTTP-Antwortkopfzeilen überprüfen
 
-Jetzt können Sie überprüfen, ob Varnish Seiten bereitstellt, indem Sie sich die HTML-Antwort-Header ansehen, die von einer beliebigen Seite zurückgegeben werden.
+Jetzt können Sie überprüfen, ob Varnish Seiten bereitstellt, indem Sie sich die von einer beliebigen Seite zurückgegebenen HTML-Antwort-Header ansehen.
 
-Bevor Sie Kopfzeilen anzeigen können, müssen Sie Commerce für den Entwicklermodus festlegen. Es gibt mehrere Möglichkeiten, dies zu tun. Am einfachsten ist es, `.htaccess` im Commerce-Anwendungsstamm zu ändern. Sie können auch den Befehl [`magento deploy:mode:set`](../cli/set-mode.md) verwenden.
+Bevor Sie Kopfzeilen betrachten können, müssen Sie Commerce für den Entwicklermodus festlegen. Es gibt mehrere Möglichkeiten, dies zu tun, wobei die einfachste die Änderung von `.htaccess` im Commerce-Anwendungsstamm ist. Sie können auch den Befehl [`magento deploy:mode:set`](../cli/set-mode.md) verwenden.
 
-### Commerce für den Entwicklermodus festlegen
+### Festlegen von Commerce für den Entwicklermodus
 
-Verwenden Sie den Befehl [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) , um Commerce für den Entwicklermodus festzulegen.
+Um Commerce für den Entwicklermodus festzulegen, verwenden Sie den [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode).
 
-### Sehen Sie sich das Varnish-Protokoll an
+### Das Lackprotokoll ansehen
 
-Vergewissern Sie sich, dass Varnish ausgeführt wird, und geben Sie dann den folgenden Befehl auf dem Varnish-Server ein:
+Stellen Sie sicher, dass Varnish ausgeführt wird, und geben Sie dann den folgenden Befehl auf dem Varnish-Server ein:
 
 ```bash
 varnishlog
 ```
 
-Navigieren Sie in einem Webbrowser zu einer beliebigen Commerce-Seite.
+Wechseln Sie in einem Webbrowser zu einer beliebigen Commerce-Seite.
 
-Eine lange Liste von Antwortheadern wird in Ihrem Eingabeaufforderungsfenster angezeigt. Suchen Sie nach Kopfzeilen wie den folgenden:
+Im Eingabeaufforderungsfenster wird eine lange Liste von Antwort-Headern angezeigt. Suchen Sie nach Kopfzeilen wie den folgenden:
 
 ```
 -   BereqHeader    X-Varnish: 3
@@ -232,11 +232,11 @@ Eine lange Liste von Antwortheadern wird in Ihrem Eingabeaufforderungsfenster an
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Wenn Kopfzeilen wie diese _nicht_ anzeigen, stoppen Sie &quot;Varnish&quot;, überprüfen Sie Ihre `default.vcl` und versuchen Sie es erneut.
+Wenn Kopfzeilen wie diese nicht _werden_ stoppen Sie „Lackieren“, überprüfen Sie Ihre `default.vcl` und versuchen Sie es erneut.
 
-### HTML-Antwort-Header
+### HTML-Antwortkopfzeilen ansehen
 
-Es gibt mehrere Möglichkeiten, Antwortheader anzuzeigen, einschließlich der Verwendung eines Browser-Plug-ins oder eines Browser-Inspektors.
+Es gibt mehrere Möglichkeiten, Antwort-Header zu betrachten, einschließlich der Verwendung eines Browser-Plug-ins oder eines Browser-Inspektors.
 
 Im folgenden Beispiel wird `curl` verwendet. Sie können diesen Befehl von jedem Computer aus eingeben, der über HTTP auf den Commerce-Server zugreifen kann.
 

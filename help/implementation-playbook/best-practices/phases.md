@@ -10,11 +10,11 @@ ht-degree: 7%
 
 ---
 
-# Best Practices bei der Implementierung
+# Best Practices für die Implementierung
 
-Es gibt viele Möglichkeiten, ein Adobe Commerce-Projekt zu implementieren. Die in diesem Abschnitt bereitgestellten Best Practices beschreiben, wie Adobe von Kunden und Partnern erwartet, dass sie bestimmte Anwendungsfälle implementieren. Diese Empfehlungen sollen dazu beitragen, allgemeine Probleme und potenzielle Probleme im Zusammenhang mit der Site-Konfiguration und -Anpassung, -Bereitstellung, dem Betrieb, der Leistung und den Upgrades zu vermeiden.
+Es gibt viele Möglichkeiten, ein Adobe Commerce-Projekt zu implementieren. Die in diesem Abschnitt bereitgestellten Best Practices beschreiben, wie Adobe von Kunden und Partnern erwartet, bestimmte Anwendungsfälle zu implementieren. Diese Empfehlungen sollen dazu beitragen, häufige Probleme und potenzielle Probleme im Zusammenhang mit der Konfiguration und Anpassung von Sites, der Bereitstellung, dem Betrieb, der Leistung und Upgrades zu vermeiden.
 
-Diese Best Practices sind nach Implementierungsphase geordnet, sodass Sie die Empfehlungen finden, die für Ihren Anwendungsfall gelten.
+Diese Best Practices sind nach Implementierungsphase geordnet, sodass Sie die Empfehlungen finden können, die für Ihren Anwendungsfall gelten.
 
 <table style="table-layout:fixed">
 <tr>
@@ -25,7 +25,7 @@ Diese Best Practices sind nach Implementierungsphase geordnet, sodass Sie die Em
     <div>
     <a href="planning/overview.md"><strong>Planung</strong></a>
     </div>
-    Anforderungserfassung, architektonisches Design, Katalogdesign, Projektumfang, Kontobereitstellung, Benutzerzugriff, Erweiterungskauf
+    Anforderungserfassung, Architekturdesign, Katalogdesign, Projektumfang, Kontobereitstellung, Benutzerzugriff, Erweiterungskauf
     <br>
   </td>
   <td>
@@ -35,17 +35,17 @@ Diese Best Practices sind nach Implementierungsphase geordnet, sodass Sie die Em
     <div>
     <a href="development/overview.md"><strong>Entwicklung</strong></a>
     </div>
-    Einrichtung der lokalen und Staging-Umgebung, Fehlerbehebung, Code-Management, Sprint-Planung, Sprint-Überprüfung, Akzeptanztests und Abmeldung von Kunden
+    Einrichtung der lokalen und Staging-Umgebung, Fehlerbehebung, Code-Management, Sprint-Planung, Sprint-Überprüfung, Akzeptanztests und Kundenabnahme
     <br>
   </td>
   <td>
     <a href="launch/overview.md">
-      <img alt="Launch" src="../../assets/icons/launch.svg" width="80" height="80">
+      <img alt="Starten" src="../../assets/icons/launch.svg" width="80" height="80">
     </a>
     <div>
-    <a href="launch/overview.md"><strong>Launch</strong></a>
+    <a href="launch/overview.md"><strong>Starten</strong></a>
     </div>
-    Abschließende Prüfungen der Checkliste vor und nach dem Start, Produktionsbereitstellung, Sicherheitskonfiguration, Dienstüberprüfung und Leistungsüberwachung  
+    Abschließende Checklisten-Überprüfungen vor und nach der Markteinführung, Produktionsbereitstellung, Sicherheitskonfiguration, Service-Überprüfung und Leistungsüberwachung  
     <br>
   </td>
   <td>
@@ -55,7 +55,7 @@ Diese Best Practices sind nach Implementierungsphase geordnet, sodass Sie die Em
     <div>
     <a href="maintenance/overview.md"><strong>Wartung</strong></a>
     </div>
-    Site-Überwachung, Katalogverwaltung, Indizierung, Konfiguration, Funktionsverbesserungen, Fehlerbehebung, verwaltete Dienste, Upgrades   
+    Site-Überwachung, Katalogverwaltung, Indizierung, Konfiguration, Funktionsverbesserungen, Fehlerbehebung, Managed Services, Upgrades   
     <br>
   </td>
 </tr>

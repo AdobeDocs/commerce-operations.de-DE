@@ -7,15 +7,15 @@ ht-degree: 1%
 ---
 # Sensible Daten
 
-Adobe Commerce verschlüsselt Folgendes mit Ihrem Verschlüsselungsschlüssel:
+Adobe Commerce verwendet Ihren Verschlüsselungsschlüssel, um Folgendes zu verschlüsseln:
 
-* Kreditkarteninformationen
-* Benutzernamen und Kennwörter, die in der Admin-Konfiguration angegeben sind (z. B. Anmeldungen bei Payment Gateways)
-* CAPTCHA-Werte, die über das Netzwerk gesendet werden
+* Kreditkartenangaben
+* In der Admin-Konfiguration angegebene Benutzernamen und Kennwörter (z. B. Anmeldungen bei Zahlungs-Gateways)
+* Über das Netzwerk gesendete CAPTCHA-Werte
 
-Adobe Commerce verschlüsselt *nicht*:
+Adobe Commerce *Folgendes nicht*:
 
-* Administrations- und Kundenbenutzernamen und -kennwörter (diese Kennwörter werden gehasht)
+* Administrative und kundenspezifische Benutzernamen und Kennwörter (diese Kennwörter werden gehasht)
 * Adresse
 * Telefonnummer
-* Sonstige Arten von persönlich identifizierbaren Informationen außer Kreditkartennummern
+* Andere Arten von personenbezogenen Daten außer Kreditkartennummern

@@ -1,6 +1,6 @@
 ---
-title: Module und Erweiterungen verwalten (Entwickler)
-description: Verwalten Sie Adobe Commerce-Module und -Erweiterungen über die Befehlszeilenschnittstelle und den Composer-Paketmanager.
+title: Verwalten von Modulen und Erweiterungen (Entwickler)
+description: Verwalten Sie Adobe Commerce-Module und -Erweiterungen mithilfe der Befehlszeilenschnittstelle und des Package Managers „Composer“.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -12,9 +12,9 @@ ht-degree: 3%
 
 # Module und Erweiterungen verwalten
 
-Wenn Sie Entwickler unterstützen, aktualisieren Sie Module und Erweiterungen, indem Sie ihre Versionen in der Adobe Commerce-Datei &quot;`composer.json`&quot;angeben. Wenn Sie kein Entwickler sind, lesen Sie [Durchführen einer Aktualisierung](../implementation/perform-upgrade.md).
+Mitwirkende Entwickelnde aktualisieren Module und Erweiterungen, indem sie ihre Versionen in der Adobe Commerce-`composer.json` angeben. Wenn Sie kein beitragender Entwickler sind, lesen Sie [Durchführen eines Upgrades](../implementation/perform-upgrade.md).
 
-Sie können der Datei `composer.json` entweder den Abschnitt `require` hinzufügen oder den Befehl `composer require` wie folgt verwenden:
+Sie können der `composer.json`-Datei entweder einen `require` Abschnitt hinzufügen oder den `composer require` Befehl wie folgt verwenden:
 
 {{$include /help/_includes/server-login.md}}
 
@@ -34,7 +34,7 @@ Beispiel:
 composer show --all example/module
 ```
 
-## Verwenden Sie den Befehl `composer require` .
+## Verwenden des Befehls `composer require`
 
 Befehlsverwendung:
 
@@ -48,13 +48,13 @@ Beispiel:
 composer require example/module:1.0.0
 ```
 
-Warten Sie, während Composer Abhängigkeiten aktualisiert und das Modul installiert.
+Warten Sie, während Composer die Abhängigkeiten aktualisiert und das Modul installiert.
 
-## Fügen Sie der Datei &quot;Composer.json&quot;einen Abschnitt &quot;`require`&quot;hinzu
+## Fügen Sie der Datei „composer.json“ einen `require` Abschnitt hinzu
 
 1. Öffnen Sie die `composer.json` in einem Texteditor.
 
-1. Fügen Sie einen Abschnitt `require` hinzu.
+1. Fügen Sie einen `require` Abschnitt hinzu.
 
    ```json
    "require": {
@@ -63,9 +63,9 @@ Warten Sie, während Composer Abhängigkeiten aktualisiert und das Modul install
    }
    ```
 
-1. Speichern Sie Ihre Änderungen in der Datei `composer.json` und beenden Sie den Texteditor.
+1. Speichern Sie Ihre Änderungen in der `composer.json` und beenden Sie den Texteditor.
 
-1. Lösen Sie Abhängigkeiten auf und schreiben Sie exakte Versionen in die Datei &quot;`composer.lock`&quot;.
+1. Auflösen von Abhängigkeiten und Schreiben exakter Versionen in die `composer.lock`.
 
    ```bash
    composer update

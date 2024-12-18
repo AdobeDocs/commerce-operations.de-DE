@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-51884: Cache-Pfad des Produktbilds beim Größenbefehl falsch'
-description: Wenden Sie den Patch ACSD-51884 an, um das Adobe Commerce-Problem zu beheben, bei dem der Cache-Pfad für das Produktbild nach dem Ausführen des Befehls zum Ändern der Größe falsch wird.
+title: 'ACSD-51884: Cache-Pfad der Produktbilder ist bei dem Befehl zur Größenanpassung falsch'
+description: Wenden Sie den Patch ACSD-51884 an, um das Adobe Commerce-Problem zu beheben, bei dem der Cache-Pfad für das Produktbild nach Ausführung des Befehls resize falsch wird.
 feature: Products
 role: Admin
 exl-id: a3779e4b-2749-460e-a0a8-656b26bb06fa
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51884: Cache-Pfad des Produktbilds beim Größenbefehl falsch
+# ACSD-51884: Cache-Pfad der Produktbilder ist bei dem Befehl zur Größenanpassung falsch
 
-Der Patch ACSD-51884 behebt das Problem, bei dem ein interner Fehler auftritt, bei dem der Cache-Pfad des Produktbilds nach der Ausführung des Befehls zur Größenanpassung falsch wird. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-51884. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
+Der Patch ACSD-51884 behebt das Problem, dass ein interner Fehler auftritt, bei dem der Cache-Pfad für das Produktbild nach Ausführung des Befehls resize falsch wird. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-51884. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Der Patch ACSD-51884 behebt das Problem, bei dem ein interner Fehler auftritt, b
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der Cache-Pfad des Produktbilds wird beim Befehl zum Ändern der Größe falsch angezeigt.
+Der Pfad des Produktbild-Caches wird beim Befehl zur Größenanpassung falsch.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie eine neue Website/einen neuen Store/eine neue Storeinstanz.
+1. Erstellen Sie eine neue Website/einen neuen Store/eine neue Storeview.
 1. Erstellen Sie ein Produkt, weisen Sie es beiden Websites zu und laden Sie das Produktbild hoch.
 1. Erstellen Sie ein neues Design (siehe angehängte Adobe.zip).
-1. Ändern Sie in `app/design/Adobe/theme/etc/view.xml`:
+1. `app/design/Adobe/theme/etc/view.xml`:
 
 ```
 <vars module="Magento_Catalog">
@@ -54,11 +54,11 @@ nach
 </vars>
 ```
 
-1. Wenden Sie das Design auf den zuvor erstellten Store an.
-1. Überprüfen Sie die Produktseite auf der zweiten Website. Das Produktbild wird korrekt angezeigt.
-1. Leeren-Cache verwenden:
+1. Wenden Sie das Design auf die zuvor erstellte Storeview an.
+1. Überprüfen Sie die Produktseite auf der 2. Website. Das Produktbild wird korrekt angezeigt.
+1. Flush-Cache verwenden:
    `bin/magento cache:flush`
-1. Überprüfen Sie die Produktseite auf der zweiten Website.
+1. Überprüfen Sie die Produktseite auf der 2. Website.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -66,21 +66,21 @@ Das Produktbild wird korrekt angezeigt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Das Produktbild ist nicht vorhanden.
+Das Produktbild existiert nicht.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

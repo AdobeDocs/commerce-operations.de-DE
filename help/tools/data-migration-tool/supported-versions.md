@@ -1,6 +1,6 @@
 ---
 title: Unterstützte Versionen für die Datenmigration
-description: Erfahren Sie, welche Magento 1- und Magento 2-Versionen von [!DNL Data Migration Tool] unterstützt werden.
+description: Erfahren Sie, welche Versionen von Magento 1 und Magento 2 von  [!DNL Data Migration Tool]  unterstützt werden.
 exl-id: ba6398b4-66be-4d33-a4d3-a9f0aaa0fa81
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Unterstützte Versionen für die Datenmigration
 
-Die [!DNL Data Migration Tool] unterstützt die Migration _von_ in den folgenden Versionen:
+Der [!DNL Data Migration Tool] unterstützt die Migration _aus_ den folgenden Versionen:
 
 * Adobe Commerce:
    * 1.11.x
@@ -34,4 +34,4 @@ Wenn Sie von Magento Open Source zu Adobe Commerce migrieren, werden die folgend
 
 ## Migration zur Version
 
-Weitere Informationen zu unterstützten Versionen (zu denen Sie migrieren) finden Sie auf der [Release-Seite ](https://github.com/magento/data-migration-tool/releases) von [!DNL Data Migration Tool].
+Weitere Informationen zu unterstützten Versionen (die, zu der Sie migrieren) finden Sie auf der [ der [!DNL Data Migration Tool]](https://github.com/magento/data-migration-tool/releases).

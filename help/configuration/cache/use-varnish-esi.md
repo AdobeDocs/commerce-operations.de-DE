@@ -1,7 +1,7 @@
 ---
-title: Varnischer ESI-Block
-description: Erfahren Sie mehr über Edge Side Includes und wie Sie sie zum Einbetten von Webseiten verwenden können.
-badge: label="Beitrag von Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
+title: ESI-Block Lack
+description: Erfahren Sie mehr über Edge Side Includes und wie Sie sie zum Einbetten von Web-Seiten verwenden können.
+badge: label="Ein Beitrag von Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Varnischer ESI-Block
+# ESI-Block Lack
 
-Edge Side Includes (ESI) sind spezielle Anweisungen, mit denen Sie Webseiten in andere Webseiten einbinden können.
+Edge Side Includes (ESI) sind spezielle Anweisungen, mit denen Sie Web-Seiten in andere Web-Seiten einschließen können.
 
-Beispiel:
+Ein Beispiel:
 
 ```html
 <div>
@@ -23,14 +23,14 @@ Beispiel:
 </div>
 ```
 
-Varnish ruft Inhalt von `http://domain.com/index.php/page_cache/block/esi/blocks` ab und ersetzt das Tag `<esi>` durch es.
+Varnish ruft Inhalte aus `http://domain.com/index.php/page_cache/block/esi/blocks` ab und ersetzt das `<esi>`-Tag damit.
 
-## Commerce und Varnisches ESI
+## Commerce und Lack ESI
 
 Das Commerce-Framework erstellt ein ESI-Tag, wenn die folgenden Bedingungen erfüllt sind:
 
-- Die Caching-Anwendung ist auf `Varnish Cache` eingestellt
-- Ein XML-Layout-Element `block` wird mit dem Attribut `ttl` hinzugefügt
+- Die Caching-Anwendung ist auf `Varnish Cache` festgelegt
+- Ein XML-Layout-`block` wird mit einem `ttl` hinzugefügt
 
 ### Beispiel
 
@@ -42,7 +42,7 @@ Das Commerce-Framework erstellt ein ESI-Tag, wenn die folgenden Bedingungen erf�
    </referenceContainer>
 ```
 
-Im obigen Beispiel fügt das Element `block` Inhalte aus der Vorlage `esi.phtml` einer Homepage hinzu und Varnish aktualisiert sie automatisch alle 30 Sekunden.
+Im obigen Beispiel fügt das `block`-Element Inhalte aus der `esi.phtml`-Vorlage zu einer Homepage hinzu und aktualisiert sie automatisch alle 30 Sekunden.
 
 ## Einschränkungen
 

@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-52613: Cache und Indizes werden ohne Aktualisierungen aktualisiert'
-description: Wenden Sie den Patch ACSD-52613 an, um das Adobe Commerce-Problem zu beheben, bei dem der Cache und die Indizes aktualisiert werden, wenn bis  [!DNL REST API] keine Aktualisierungen an den Elementen "Inventory_source"vorgenommen werden.
+description: Wenden Sie den Patch ACSD-52613 an, um das Adobe Commerce-Problem zu beheben, bei dem der Cache und die Indizes aktualisiert werden, wenn keine Aktualisierungen von „Inventory_source“-Elementen vorgenommen werden [!DNL REST API].
 feature: REST
 role: Admin
 exl-id: 18878161-da4e-4d6e-9f58-706519f837f8
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-52613: Cache und Indizes werden aktualisiert, auch wenn keine Updates verfügbar sind
+# ACSD-52613: Cache und Indizes werden auch ohne Aktualisierungen aktualisiert
 
-Der Patch ACSD-52613 behebt das Problem, bei dem das Adobe Commerce-Problem auftritt, bei dem der Cache und die Indizes aktualisiert werden, wenn keine Aktualisierungen von `Inventory_source` -Elementen durch [!DNL REST API] vorgenommen werden. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-52613. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
+Der Patch ACSD-52613 behebt das Problem, dass der Adobe Commerce-Cache und -Indizes aktualisiert werden, wenn [!DNL REST API] keine Aktualisierungen an `Inventory_source` Elementen vorgenommen werden. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-52613. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-52613 behebt das Problem, bei dem das Adobe Commerce-Problem auft
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -37,10 +37,10 @@ Cache und Indizes werden aktualisiert, wenn von [!DNL REST API] keine Aktualisie
 
 Installierte Inventarmodule
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Ändern Sie den Entwicklermodus auf `debug.log`.
-1. Bereiten Sie die Importdatei mit 100 Produkten vor - import.csv:
+1. Aktivieren Sie den Entwicklermodus, um `debug.log` zu erhalten.
+1. Importdatei mit 100 Produkten vorbereiten - import.csv:
 
    ```
    sku    name    product_type    attribute_set_code    price
@@ -51,17 +51,17 @@ Installierte Inventarmodule
    ```
 
 1. Importieren von Produkten aus `import.csv`
-1. Erstellen Sie ein neues Lager und eine neue Quelle mit den Namen **test_stock** und **test_source**.
-1. Weisen Sie der Website einen neuen Bestand zu und weisen Sie ihm eine Quelle zu.
-1. Erstellen Sie eine neue Integration mit Zugriff auf alle, aktivieren Sie sie und kopieren Sie das Zugriffstoken.
-1. Wechseln Sie zu **Stores** > **Konfiguration** > **Dienste** > **OAuth** > **Verbrauchereinstellungen** und aktivieren Sie die Option **Zulassen von OAuth-Zugriffstoken als eigenständige Trägertoken**.
+1. Erstellen Sie einen neuen Bestand und eine neue Quelle mit den Namen **test_stock** und **test_source**.
+1. Weisen Sie der Website neues Lager zu und weisen Sie dem Lager die Quelle zu.
+1. Erstellen Sie eine neue Integration mit Zugriff auf alle , aktivieren Sie sie und kopieren Sie das Zugriffs-Token.
+1. Navigieren Sie zu **Stores** > **Configuration** > **Services** > **OAuth** > **Consumer Settings** und aktivieren Sie **OAuth-Zugriffstoken als eigenständige Bearer-Token verwenden**.
 1. Leeren Sie den Cache.
-1. Setzen Sie Indexer auf **Aktualisiert durch Zeitplan**
+1. Indexer festlegen als **Geplant aktualisiert**
 1. API-Anfrage ausführen
 
    `POST ../rest/V1/inventory/source-items`
 
-   Verwendung dieses Zeichens als Haupttext
+   Verwenden von als Textkörper
 
    ```
    {
@@ -670,31 +670,31 @@ Installierte Inventarmodule
    }
    ```
 
-1. Entfernen Sie alle Protokolle aus `var/log`
-1. Führen Sie die [!DNL REST API] -Anfrage erneut aus.
+1. Alle Protokolle aus `var/log` entfernen
+1. Führen Sie die [!DNL REST API] erneut aus.
 1. Überprüfen Sie die `var/log/debug.log`.
 
 <u>Erwartete Ergebnisse</u>:
 
-Der Cache sollte nicht bereinigt werden und die Indizes sollten nach der zweiten Ausführung nicht ausgeführt werden, da nichts geändert wurde.
+Der Cache sollte nicht bereinigt werden und die Indizes sollten nach dem zweiten Durchgang nicht ausgeführt werden, da nichts geändert wurde.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die `var/log/debug.log` enthält den Eintrag, der sich auf die Cache-Löschung bezieht.
+Die `var/log/debug.log` enthält den Eintrag zum Löschen des Cache.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

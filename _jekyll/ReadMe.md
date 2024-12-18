@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # Übersicht
 
-Dieses Projekt umfasst mehrere Rake-Aufgaben zur Automatisierung verschiedener Aspekte des Workflows, z. B. die Generierung von Daten für Nachrichtendigests, das Rendern von Vorlagendateien, die Optimierung von Bildern und das Generieren von Karten. Im Folgenden finden Sie die Beschreibungen und Nutzungsrichtlinien für jede Rake-Aufgabe, die in der Rakefile definiert ist.
+Dieses Projekt umfasst mehrere RAKE-Aufgaben zur Automatisierung verschiedener Aspekte des Workflows, z. B. das Generieren von Daten für Nachrichten-Auszüge, das Rendern von Vorlagendateien, das Optimieren von Bildern und das Generieren von Karten. Nachstehend finden Sie die Beschreibungen und Nutzungsrichtlinien für jede Rake-Aufgabe, die in der Rake-Datei definiert ist.
 
-## Aufgaben wiedergeben
+## Aufgaben ausführen
 
 ### `render`
 
-Rendert die Vorlagendateien im Verzeichnis `_jekyll/templates` mit Daten aus `_jekyll/_data/`. Das Ergebnis finden Sie im Verzeichnis &quot;`help/includes/templated`&quot;.
+Rendert die Vorlagendateien im `_jekyll/templates` mit Daten aus `_jekyll/_data/`. Das Ergebnis befindet sich im `help/includes/templated`.
 
 **Nutzung:**
 
@@ -23,7 +23,7 @@ rake render
 
 ### `image_optim`
 
-Optimiert Bilder in modifizierten nicht gebundenen Dateien. Für andere Bilder verwenden Sie das `path`-Argument, um das Verzeichnis oder die Datei anzugeben.
+Optimiert Bilder in geänderten, nicht übergebenen Dateien. Verwenden Sie für andere Bilder das `path`-Argument, um das Verzeichnis oder die Datei anzugeben.
 
 **Nutzung:**
 
@@ -39,7 +39,7 @@ rake image_optim path=../path/to/dir/or/file
 
 ### `whatsnew`
 
-Erstellt Daten für einen NewsDigest. Der standardmäßige Zeitraum ist seit der letzten Aktualisierung verstrichen. Mit dem `since` -Argument können Sie einen anderen Zeitraum angeben.
+Erzeugt Daten für einen Newsauszug. Der Standardzeitrahmen ist seit der letzten Aktualisierung. Mit dem `since` Argument können Sie einen anderen Zeitraum angeben.
 
 **Nutzung:**
 
@@ -55,7 +55,7 @@ rake whatsnew since="jul 4"
 
 ### `whatsnew_bp`
 
-Erstellt Daten für einen Newsdigest in Best Practices. Der standardmäßige Zeitraum ist seit der letzten Aktualisierung verstrichen. Mit dem `since` -Argument können Sie einen anderen Zeitraum angeben.
+Erzeugt Daten für einen News-Digest unter Best Practices. Der Standardzeitrahmen ist seit der letzten Aktualisierung. Mit dem `since` Argument können Sie einen anderen Zeitraum angeben.
 
 **Nutzung:**
 
@@ -71,7 +71,7 @@ rake whatsnew_bp since="jul 4"
 
 ### `azure_regions`
 
-Generiert eine Azure-Regionen-Zuordnung. Die Eingabedatendatei sollte in `_jekyll/tmp/azure-regions.json` platziert werden. Das Ergebnis finden Sie in `_jekyll/tmp/azure-regions.svg`. Beachten Sie, dass Python, [PyGMT](https://www.pygmt.org/latest/install.html) und [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) installiert sein müssen.
+Erstellt eine Azure-Regionszuordnung. Die Eingabedatendatei sollte in `_jekyll/tmp/azure-regions.json` platziert werden. Das Ergebnis befindet sich in `_jekyll/tmp/azure-regions.svg`. Beachten Sie, dass Python, [PyGMT](https://www.pygmt.org/latest/install.html) und [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) installiert sein müssen.
 
 **Nutzung:**
 
@@ -82,15 +82,15 @@ rake azure_regions
 ## Voraussetzungen
 
 - Ruby und Bundler installiert.
-- Erforderliche Werte, die in der Gemfile angegeben sind.
-- Python, [PyGMT](https://www.pygmt.org/latest/install.html) und [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) für die Aufgabe `azure_regions`.
+- Erforderliche Edelsteine, die in der Gemfile angegeben sind.
+- Python, [PyGMT](https://www.pygmt.org/latest/install.html) und [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) für die `azure_regions`.
 
-## Einrichtung
+## Setup
 
-1. Installieren Sie die erforderlichen Edelsteine:
+1. Installieren Sie die erforderlichen Gems:
 
    ```sh
    bundle install
    ```
 
-2. Stellen Sie sicher, dass Python, PyGMT und pdf2svg für die Aufgabe &quot;`azure_regions`&quot;installiert sind. Weitere Informationen zum Setup finden Sie in der Dokumentation in Kommentaren unter [_scripts/azure_regions.py](_scripts/azure_regions.py).
+2. Stellen Sie sicher, dass Python, PyGMT und pdf2svg für die `azure_regions` installiert sind. Weitere Informationen zum Setup finden Sie in der Dokumentation unter Kommentare unter [_scripts/azure_regions.py](_scripts/azure_regions.py).

@@ -3,13 +3,13 @@ title: 'ACSD-62793: Datetime-Attribute in Exporten ohne Zeitkomponente. Wenn **[
 description: Wenden Sie den ACSD-62793-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem Datums-/Uhrzeitattribute in exportierten Daten nicht in der Zeitkomponente enthalten sind. Wenn **[!UICONTROL Fields Enclosure]** aktiviert ist, werden Attributwerte in der Spalte * additional_attributes* außerdem in doppelte Anführungszeichen gesetzt.
 feature: Attributes, Data Import/Export, Catalog Service
 role: Admin, Developer
-source-git-commit: 1645006f142c902ac729a99502f59b6d42266691
+exl-id: 340dcc84-dcb8-40ed-b2ab-2d950d1dd1ca
+source-git-commit: 96ba8b422524eb06989061f2d40e39ea88b71dca
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62793: Datetime-Attribute in Exporten ohne Zeitkomponente. Wenn diese Option aktiviert **[!UICONTROL Fields Enclosure]**, werden außerdem Attributwerte in doppelte Anführungszeichen gesetzt
 

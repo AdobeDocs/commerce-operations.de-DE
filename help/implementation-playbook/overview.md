@@ -6,29 +6,29 @@ feature: Best Practices, Cloud, Integration
 source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Implementierungs-Playbook
 
-Dieses Playbook soll den ganzheitlichsten Überblick über eine typische Adobe Commerce-Implementierung bieten.
+Dieses Playbook bietet einen möglichst ganzheitlichen Überblick über eine typische Adobe Commerce-Implementierung.
 
-Von den frühen Phasen des Projektumfangs über Entwicklung, Integrationen und Bereitstellung bis hin zum laufenden Support gibt es viele Methoden und Best Practices, die Sie für den erfolgreichen Start eines Adobe Commerce-Projekts berücksichtigen müssen.
+Von der Anfangsphase des Projektumfangs über die Entwicklung, Integrationen und Bereitstellung bis hin zum fortlaufenden Support gibt es viele Methoden und Best Practices, die Sie für den erfolgreichen Start eines Adobe Commerce-Projekts in Betracht ziehen müssen.
 
 Darüber hinaus gelten diese Prozesse und Überlegungen für alle Arten von Adobe Commerce-Projekten:
 
 - Kleine, mittlere oder große Implementierungen
-- Geschäftsmodelle B2C, B2B und B2B2C
+- B2C, B2B und B2B2C-Geschäftsmodelle
 - Monolithische oder Headless-Architekturen
-- Rollouts im Binnenmarkt oder auf mehreren Märkten
-- Umfangreiche Integrationen mit oder ohne Middleware
+- Rollouts für den Binnenmarkt oder mehrere Märkte
+- Umfassende Integrationen mit oder ohne Middleware
 
-Wir hoffen, dass dieses Playbook Einblicke und Anleitungen für eine Vielzahl von Interessengruppen bietet, die normalerweise an einer E-Commerce-Projektinitiative beteiligt wären, darunter:
+Wir hoffen, dass dieses Playbook Einblicke und Anleitungen für eine Vielzahl von Stakeholdern bietet, die normalerweise an einer E-Commerce-Projekt-Initiative beteiligt sind, darunter:
 
-- Geschäftsführer und allgemeine Geschäftsführung, die eine solide Vorstellung davon haben sollten, was ein E-Commerce-Rollout bedeutet
-- CMOs und Digital Manager, die mit Unternehmensbenutzern auf der Plattform selbst zusammenarbeiten
-- CTOs und technische Führungskräfte, die in allen Phasen der Implementierung eines Technologieprojekts stark beteiligt sein werden
-- Projektmanager und Projektleiter, die eine Commerce-Projektinitiative leiten und alle relevanten Informationen zur Verfügung haben sollten
+- CEOs und die Geschäftsleitung, die eine solide Vorstellung davon haben sollten, was ein E-Commerce-Rollout bedeutet
+- CMOs und digitale Manager, die mit Geschäftsbenutzern auf der Plattform selbst arbeiten werden
+- CTOs und technische Manager, die in allen Phasen eines Technologieprojekts stark beteiligt sein werden
+- Projektmanager und Projektmanager, die eine Commerce-Projektinitiative leiten und alle relevanten Informationen zur Hand haben sollten
 
-Während der Erfolg eines IT-Projekts stark von den Erfahrungen und dem Fachwissen des Teams (in der Regel eines Lösungspartners) abhängt, das den Code entwickelt, personalisiert, integriert und verwaltet, halten wir es für wichtig, dass sich alle Beteiligten mit den Best Practices einer Adobe Commerce-Implementierung vertraut machen.
+Auch wenn der Erfolg eines IT-Projekts stark von der Erfahrung und dem Fachwissen des Teams (normalerweise eines Lösungspartners) abhängt, das den Code entwickelt, anpasst, integriert und verwaltet, glauben wir, dass es für alle Stakeholder relevant ist, sich mit den Best Practices einer Adobe Commerce-Implementierung vertraut zu machen.

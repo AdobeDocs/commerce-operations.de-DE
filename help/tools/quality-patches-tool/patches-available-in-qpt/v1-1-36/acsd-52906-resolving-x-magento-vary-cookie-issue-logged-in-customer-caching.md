@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-52906: Beheben eines X-Magento-Vary-Cookie-Problems beim angemeldeten Kunden-Caching'
-description: Wenden Sie den Patch ACSD-52906 an, um das Adobe Commerce-Problem zu beheben, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden falsch gesetzt wurde.
+title: 'ACSD-52906: Beheben des Problems mit X-Magento-Vary-Cookies für das Caching angemeldeter Kunden'
+description: Wenden Sie den Patch ACSD-52906 an, um das Adobe Commerce-Problem zu beheben, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden falsch festgelegt ist.
 feature: Cache
 role: Admin, Developer
 exl-id: 487b7588-7131-4502-b714-05f37520991f
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-52906: Beheben eines Cookie-Problems mit X-Magento-Vary für angemeldete Kunden
+# ACSD-52906: Beheben des Problems mit X-Magento-Vary-Cookies für angemeldete Kunden
 
-Der Patch ACSD-52906 behebt das Problem, dass das X-Magento-Vary-Cookie für angemeldete Kunden falsch gesetzt wird. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.36 installiert ist. Die Patch-ID ist ACSD-52906. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch von ACSD-52906 behebt das Problem, dass das X-Magento-Vary-Cookie für angemeldete Kunden falsch gesetzt ist. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.36 installiert ist. Die Patch-ID ist ACSD-52906. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,32 +23,32 @@ Der Patch ACSD-52906 behebt das Problem, dass das X-Magento-Vary-Cookie für ang
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.7 - 2.4.6 - p2
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.7 - 2.4.6-p2
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Das X-Magento-Vary-Cookie wird für angemeldete Kunden, die zum selben Kundensegment gehören, falsch gesetzt, was bei einigen Seiten zu unsachgemäßem Caching führt.
+Das X-Magento-Vary-Cookie wird für angemeldete Kunden, die zum selben Kundensegment gehören, falsch gesetzt, was bei einigen Seiten zu einer fehlerhaften Zwischenspeicherung führt.
 
 <u>Voraussetzungen</u>:
 
-Adobe Commerce Inventory management (MSI)-Module werden installiert und aktiviert.
+Adobe Commerce Inventory management (MSI)-Module sind installiert und aktiviert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Konfigurieren Sie den Cache [!DNL Varnish] oder [!DNL Fastly].
-1. Erstellen Sie ein neues Kundensegment und weisen Sie es den *Registrierten* -Kunden zu.
+1. Konfigurieren Sie [!DNL Varnish]- oder [!DNL Fastly]-Cache.
+1. Erstellen Sie ein neues Kundensegment und weisen Sie es den (*)* Kunden zu.
 1. Erstellen Sie zwei Kunden, z. B. customer1 und customer2.
 1. Löschen Sie den Cache.
-1. Melden Sie sich als customer1 an und rufen Sie die Startseite auf.
+1. Melden Sie sich als customer1 an und gehen Sie zur Startseite.
 1. Öffnen Sie eine Inkognito-Seite in Ihrem Browser.
-1. Navigieren Sie zu einer anderen Seite als der Startseite.
+1. Wechseln Sie zu einer beliebigen Seite außer der Startseite.
 1. Melden Sie sich als customer2 an.
-1. Rufen Sie die Startseite auf.
-1. Überprüfen Sie, ob die Seite in der Browser-Entwicklungskonsole zwischengespeichert ist.
+1. Navigieren Sie zur Startseite.
+1. Überprüfen Sie, ob die Seite in der Entwicklungs-Konsole des Browsers zwischengespeichert ist.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -58,19 +58,19 @@ Die Seite wird aus dem Cache abgerufen.
 
 Die Seite wird nicht zwischengespeichert.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

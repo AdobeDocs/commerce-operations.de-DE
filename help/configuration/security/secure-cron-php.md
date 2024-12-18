@@ -1,6 +1,6 @@
 ---
-title: Sicheres cron-PHP
-description: Beschränken Sie, wer die Datei cron.php in einem Browser ausführen kann.
+title: Sicheres Cron PHP
+description: Beschränken Sie, wer die Datei „cron.php“ in einem Browser ausführen darf.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
 source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
@@ -10,42 +10,42 @@ ht-degree: 1%
 
 ---
 
-# Sicheres cron-PHP
+# Sicheres Cron PHP
 
-In diesem Thema wird das Schützen von `pub/cron.php` beschrieben, um zu verhindern, dass es in einer böswilligen Exploit verwendet wird. Wenn Sie Cron nicht schützen, kann jeder Benutzer möglicherweise Cron ausführen, um Ihre Commerce-Anwendung anzugreifen.
+In diesem Thema wird beschrieben, wie Sie `pub/cron.php` sichern, um zu verhindern, dass sie bei einem böswilligen Exploit verwendet wird. Wenn Sie Cron nicht schützen, kann jeder Benutzer Cron ausführen, um Ihre Commerce-Anwendung anzugreifen.
 
-Der Cron-Auftrag führt mehrere geplante Aufgaben aus und ist ein wichtiger Bestandteil Ihrer Commerce-Konfiguration. Geplante Aufgaben umfassen unter anderem:
+Der Cron-Auftrag führt mehrere geplante Aufgaben aus und ist ein wichtiger Teil Ihrer Commerce-Konfiguration. Geplante Aufgaben umfassen unter anderem:
 
 - Neuindizierung
-- E-Mails erstellen
-- Newsletter erstellen
+- E-Mails generieren
+- Generieren von Newslettern
 - Erstellen von Sitemaps
 
 >[!INFO]
 >
->Weitere Informationen zu Cron-Gruppen finden Sie unter [CRON konfigurieren und ausführen](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) .
+>Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) „Konfigurieren und Ausführen von Cron“.
 
 Sie können einen Cron-Auftrag wie folgt ausführen:
 
-- Verwenden des Befehls [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) entweder über die Befehlszeile oder in einer Registerkarte mit der Clientfunktion
-- Zugriff auf `pub/cron.php?[group=<name>]` in einem Webbrowser
+- Verwenden des [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line)-Befehls entweder über die Befehlszeile oder in einer crontab
+- Zugreifen auf `pub/cron.php?[group=<name>]` in einem Webbrowser
 
 >[!INFO]
 >
->Sie müssen nichts tun, wenn Sie den Befehl [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) zum Ausführen von Cron verwenden, da er einen anderen Prozess verwendet, der bereits sicher ist.
+>Sie müssen nichts tun, wenn Sie den [`magento cron:run`](../cli/configure-cron-jobs.md#run-cron-from-the-command-line)-Befehl zum Ausführen von cron verwenden, da ein anderer Prozess verwendet wird, der bereits sicher ist.
 
-## Sicheres Cron mit Apache
+## Cron mit Apache sichern
 
-In diesem Abschnitt wird beschrieben, wie Sie Cron mit der HTTP Basic-Authentifizierung mit Apache sichern. Diese Anweisungen basieren auf Apache 2.2 mit CentOS 6. Weitere Informationen finden Sie in einer der folgenden Ressourcen:
+In diesem Abschnitt wird beschrieben, wie Sie Cron mithilfe der HTTP-Standardauthentifizierung mit Apache schützen. Diese Anweisungen basieren auf Apache 2.2 mit CentOS 6. Weitere Informationen finden Sie in einer der folgenden Ressourcen:
 
-- [Tutorial zur Authentifizierung und Autorisierung mit Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
-- [Tutorial zur Authentifizierung und Autorisierung mit Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [Tutorial zur Authentifizierung und Autorisierung bei Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
+- [Tutorial zur Authentifizierung und Autorisierung bei Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
-### Kennwortdatei erstellen
+### Erstellen einer Kennwortdatei
 
-Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle außerhalb des Basisverzeichnisses für Ihren Webserver finden. In diesem Beispiel speichern wir die Kennwortdatei in einem neuen Verzeichnis.
+Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle außer dem Stammordner des Webservers finden. In diesem Beispiel speichern wir die Kennwortdatei in einem neuen Verzeichnis.
 
-Geben Sie die folgenden Befehle als Benutzer mit `root` -Berechtigungen ein:
+Geben Sie die folgenden Befehle als Benutzer mit `root` Berechtigungen ein:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -55,11 +55,11 @@ mkdir -p /usr/local/apache/password
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
-Dabei kann `<username>` der Webserver-Benutzer oder ein anderer Benutzer sein. In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Wahl des Benutzers liegt bei Ihnen.
+Dabei kann `<username>` der Webserver-Benutzer oder ein anderer Benutzer sein. In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Auswahl des Benutzers liegt bei Ihnen.
 
 Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benutzer zu erstellen.
 
-Um Ihrer Kennwortdatei einen weiteren Benutzer hinzuzufügen, geben Sie den folgenden Befehl als Benutzer mit `root` -Berechtigungen ein:
+Um einen weiteren Benutzer zu Ihrer Kennwortdatei hinzuzufügen, geben Sie den folgenden Befehl als Benutzer mit `root` Berechtigungen ein:
 
 ```bash
 htpasswd /usr/local/apache/password/passwords <username>
@@ -67,15 +67,15 @@ htpasswd /usr/local/apache/password/passwords <username>
 
 ### Benutzer hinzufügen, um eine autorisierte Cron-Gruppe zu erstellen (optional)
 
-Sie können mehrere Benutzer aktivieren, um cron auszuführen, indem Sie diese Benutzer zu Ihrer Kennwortdatei hinzufügen, einschließlich einer Gruppendatei.
+Sie können die Ausführung von Cron durch mehr als einen Benutzer ermöglichen, indem Sie diese Benutzer zu Ihrer Kennwortdatei hinzufügen, einschließlich einer Gruppendatei.
 
-So fügen Sie Ihrer Kennwortdatei einen weiteren Benutzer hinzu:
+So fügen Sie einen weiteren Benutzer zu Ihrer Kennwortdatei hinzu:
 
 ```bash
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
-Um eine autorisierte Gruppe zu erstellen, erstellen Sie eine Gruppendatei an einer beliebigen Stelle außerhalb des Dokumentenstamms des Webservers. Die Gruppendatei gibt den Namen der Gruppe und die Benutzer in der Gruppe an. In diesem Beispiel lautet der Gruppenname `MagentoCronGroup`.
+Um eine autorisierte Gruppe zu erstellen, erstellen Sie eine Gruppendatei an einer beliebigen Stelle außerhalb des Stammverzeichnisses des Webservers. Die Gruppendatei gibt den Namen der Gruppe und der Benutzenden in der Gruppe an. In diesem Beispiel lautet der Gruppenname `MagentoCronGroup`.
 
 ```bash
 vim /usr/local/apache/password/group
@@ -87,16 +87,16 @@ Inhalt der Datei:
 MagentoCronGroup: <username1> ... <usernameN>
 ```
 
-### Sicherer Cron in `.htaccess`
+### Cron in `.htaccess` sichern
 
-Sichern von Cron in der Datei `.htaccess` :
+So sichern Sie Cron in `.htaccess` Datei:
 
-1. Melden Sie sich bei Ihrem Commerce-Server als Dateisysteminhaber an oder wechseln Sie zu ihm.
+1. Melden Sie sich bei Ihrem Commerce-Server als Dateisystembesitzer an oder wechseln Sie zu diesem.
 1. Öffnen Sie `<magento_root>/pub/.htaccess` in einem Texteditor.
 
-   (Da sich `cron.php` im Verzeichnis `pub` befindet, bearbeiten Sie nur diese `.htaccess`.)
+   (Da sich `cron.php` im `pub`-Verzeichnis befindet, bearbeiten Sie nur diesen `.htaccess`.)
 
-1. _Cron-Zugriff für einen oder mehrere Benutzer._ Ersetzen Sie die vorhandene `<Files cron.php>` -Direktive durch Folgendes:
+1. _Cron-Zugriff für einen oder mehrere Benutzer._ Ersetzen Sie die bestehende `<Files cron.php>` durch Folgendes:
 
    ```conf
    <Files cron.php>
@@ -107,7 +107,7 @@ Sichern von Cron in der Datei `.htaccess` :
    </Files>
    ```
 
-1. _Cron-Zugriff für eine Gruppe._ Ersetzen Sie die vorhandene `<Files cron.php>` -Direktive durch Folgendes:
+1. _Cron-Zugriff für eine Gruppe._ Ersetzen Sie die bestehende `<Files cron.php>` durch Folgendes:
 
    ```conf
    <Files cron.php>
@@ -120,27 +120,27 @@ Sichern von Cron in der Datei `.htaccess` :
    ```
 
 1. Speichern Sie Ihre Änderungen in `.htaccess` und beenden Sie den Texteditor.
-1. Fahren Sie mit [Überprüfen Sie, ob der Cron sicher ist](#verify-cron-is-secure).
+1. Fahren Sie fort mit [Überprüfen Sie, ob Cron sicher ist](#verify-cron-is-secure).
 
-## Sicherer Cron mit Nginx
+## Cron mit Nginx sichern
 
 In diesem Abschnitt wird beschrieben, wie Sie Cron mit dem Nginx-Webserver sichern. Sie müssen die folgenden Aufgaben ausführen:
 
-1. Verschlüsselte Kennwortdatei für Nginx einrichten
-1. Ändern Sie Ihre nginx-Konfiguration so, dass beim Zugriff auf `pub/cron.php` auf die Kennwortdatei verwiesen wird.
+1. Einrichten einer verschlüsselten Kennwortdatei für Nginx
+1. Ändern Sie Ihre Nginx-Konfiguration, um auf die Kennwortdatei beim Zugriff auf `pub/cron.php` zu verweisen.
 
-### Kennwortdatei erstellen
+### Erstellen einer Kennwortdatei
 
-Lesen Sie eine der folgenden Ressourcen, um eine Kennwortdatei zu erstellen, bevor Sie fortfahren:
+Konsultieren Sie eine der folgenden Ressourcen, um eine Kennwortdatei zu erstellen, bevor Sie fortfahren:
 
-- [Einrichten der Kennwortauthentifizierung mit Nginx auf Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+- [Einrichten der Passwortauthentifizierung mit Nginx auf Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 - [Einfache HTTP-Authentifizierung mit Nginx (howtoforge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 
-### Sicherer Cron in `nginx.conf.sample`
+### Cron in `nginx.conf.sample` sichern
 
-Commerce bietet standardmäßig eine optimierte Beispielkonfigurationsdatei für nginx. Es wird empfohlen, ihn zu ändern, um Cron zu schützen.
+Commerce bietet standardmäßig eine optimierte Beispiel-Nginx-Konfigurationsdatei. Es wird empfohlen, sie zu ändern, um Cron zu schützen.
 
-1. Fügen Sie Ihrer Datei [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) Folgendes hinzu:
+1. Fügen Sie der [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)-Datei Folgendes hinzu:
 
    ```conf
    #Securing cron
@@ -161,25 +161,25 @@ Commerce bietet standardmäßig eine optimierte Beispielkonfigurationsdatei für
    }
    ```
 
-1. Nginx neu starten:
+1.nginx neu starten:
 
 ```bash
 systemctl restart nginx
 ```
 
-1. Fahren Sie mit [Überprüfen Sie, ob der Cron sicher ist](#verify-cron-is-secure).
+1. Fahren Sie fort mit [Überprüfen Sie, ob Cron sicher ist](#verify-cron-is-secure).
 
-## Sicherstellen, dass Cron sicher ist
+## Überprüfen, ob Cron sicher ist
 
-Die einfachste Methode, um sicherzustellen, dass `pub/cron.php` sicher ist, besteht darin, nach der Einrichtung der Kennwortauthentifizierung sicherzustellen, dass Zeilen in der Datenbanktabelle `cron_schedule` erstellt werden. In diesem Beispiel werden SQL-Befehle verwendet, um die Datenbank zu überprüfen. Sie können jedoch jedes beliebige Tool verwenden.
+Die einfachste Möglichkeit, sicherzustellen, dass `pub/cron.php` sicher ist, besteht darin, sicherzustellen, dass nach der Einrichtung der Kennwortauthentifizierung Zeilen in der `cron_schedule` Datenbanktabelle erstellt werden. In diesem Beispiel werden SQL-Befehle verwendet, um die Datenbank zu überprüfen. Sie können jedoch jedes beliebige Tool verwenden.
 
 >[!INFO]
 >
->Der `default`-Cron, den Sie in diesem Beispiel ausführen, wird gemäß dem in `crontab.xml` definierten Zeitplan ausgeführt. Einige Cron-Aufträge werden nur einmal am Tag ausgeführt. Wenn Sie Cron zum ersten Mal über den Browser ausführen, wird die Tabelle `cron_schedule` aktualisiert, nachfolgende `pub/cron.php` -Anforderungen werden jedoch gemäß dem konfigurierten Zeitplan ausgeführt.
+>Das `default` Cron, das Sie in diesem Beispiel ausführen, wird gemäß dem in `crontab.xml` definierten Zeitplan ausgeführt. Ein Cron-Job läuft nur einmal am Tag. Wenn Sie cron zum ersten Mal über den Browser ausführen, wird die `cron_schedule` aktualisiert, nachfolgende `pub/cron.php`-Anfragen werden jedoch nach dem konfigurierten Zeitplan ausgeführt.
 
-**Überprüfen, ob der Cron sicher ist**:
+**So überprüfen Sie, ob Cron sicher ist**:
 
-1. Melden Sie sich bei der Datenbank als Commerce-Datenbankbenutzer oder als `root` an.
+1. Melden Sie sich bei der -Datenbank als Commerce-Datenbankbenutzer oder als `root` an.
 
    Beispiel:
 
@@ -187,7 +187,7 @@ Die einfachste Methode, um sicherzustellen, dass `pub/cron.php` sicher ist, best
    mysql -u magento -p
    ```
 
-1. Verwenden Sie die Commerce-Datenbank:
+1. Verwenden der Commerce-Datenbank:
 
    ```shell
    use <database-name>;
@@ -199,13 +199,13 @@ Die einfachste Methode, um sicherzustellen, dass `pub/cron.php` sicher ist, best
    use magento;
    ```
 
-1. Löschen Sie alle Zeilen aus der `cron_schedule` -Datenbanktabelle:
+1. Löschen Sie alle Zeilen aus der `cron_schedule` Datenbanktabelle:
 
    ```shell
    TRUNCATE TABLE cron_schedule;
    ```
 
-1. Führen Sie cron über einen Browser aus:
+1. Cron von einem Browser aus ausführen:
 
    ```shell
    http[s]://<Commerce hostname or ip>/cron.php?group=default
@@ -248,25 +248,25 @@ Die einfachste Methode, um sicherzustellen, dass `pub/cron.php` sicher ist, best
    14 rows in set (0.00 sec)
    ```
 
-## Ausführen von Cron über einen Webbrowser
+## Cron von einem Webbrowser aus ausführen
 
 Sie können Cron jederzeit ausführen, z. B. während der Entwicklung, mithilfe eines Webbrowsers.
 
 >[!WARNING]
 >
->Führen Sie cron _nicht_ in einem Browser aus, ohne es zuerst zu sichern.
+>Führen _nicht_ Cron in einem Browser aus, ohne es vorher zu sichern.
 
-Wenn Sie einen Apache-Webserver verwenden, müssen Sie die Beschränkung aus der Datei &quot;`.htaccess`&quot;entfernen, bevor Sie Cron in einem Browser ausführen können:
+Wenn Sie einen Apache-Webserver verwenden, müssen Sie die Einschränkung aus der `.htaccess`-Datei entfernen, bevor Sie Cron in einem Browser ausführen können:
 
-1. Melden Sie sich bei Ihrem Commerce-Server als Benutzer mit Schreibberechtigung für das Commerce-Dateisystem an.
-1. Öffnen Sie Folgendes in einem Texteditor (je nach Einstiegspunkt in die Magento):
+1. Melden Sie sich bei Ihrem Commerce-Server als Benutzer an, der über die Berechtigung zum Schreiben in das Commerce-Dateisystem verfügt.
+1. Öffnen Sie eine der folgenden Aktionen in einem Texteditor (je nach Einstiegspunkt zum Magento):
 
    ```text
    <magento_root>/pub/.htaccess
    <magento_root>/.htaccess
    ```
 
-1. Löschen oder kommentieren Sie Folgendes aus:
+1. Folgendes löschen oder auskommentieren:
 
    ```conf
    ## Deny access to cron.php
@@ -288,7 +288,7 @@ Wenn Sie einen Apache-Webserver verwenden, müssen Sie die Beschränkung aus der
 
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 
-   Anschließend können Sie Cron wie folgt in einem Webbrowser ausführen:
+   Sie können dann cron in einem Webbrowser wie folgt ausführen:
 
    ```text
    <your hostname or IP>/<Commerce root>/pub/cron.php[?group=<group name>]
@@ -296,10 +296,10 @@ Wenn Sie einen Apache-Webserver verwenden, müssen Sie die Beschränkung aus der
 
 Dabei gilt:
 
-- `<your hostname or IP>` ist der Hostname oder die IP-Adresse Ihrer Commerce-Installation.
-- `<Commerce root>` ist das docroot-relative Verzeichnis des Webservers, in dem Sie die Commerce-Software installiert haben
+- `<your hostname or IP>` ist der Hostname oder die IP-Adresse Ihrer Commerce-Installation
+- `<Commerce root>` ist der Webserver-Basisordner, in dem Sie die Commerce-Software installiert haben
 
-  Die genaue URL, die Sie zum Ausführen der Commerce-Anwendung verwenden, hängt von der Konfiguration Ihres Webservers und virtuellen Hosts ab.
+  Die genaue URL, die Sie zum Ausführen der Commerce-Anwendung verwenden, hängt davon ab, wie Sie Ihren Webserver und virtuellen Host konfiguriert haben.
 
 - `<group name>` ist ein beliebiger gültiger Cron-Gruppenname (optional)
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->Sie müssen Cron zweimal ausführen: zuerst entdecken Sie Aufgaben, die ausgeführt werden sollen, und wieder, um die Aufgaben selbst auszuführen. Weitere Informationen zu Cron-Gruppen finden Sie unter [CRON konfigurieren und ausführen](../cli/configure-cron-jobs.md) .
+>Sie müssen Cron zweimal ausführen: zuerst um Aufgaben zu finden, die ausgeführt werden sollen, und dann erneut, um die Aufgaben selbst auszuführen. Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md) „Konfigurieren und Ausführen von Cron“.

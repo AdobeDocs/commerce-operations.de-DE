@@ -1,6 +1,6 @@
 ---
-title: Best Practices für die Konfiguration des Redis-Dienstes
-description: Erfahren Sie, wie Sie die Zwischenspeicherleistung verbessern können, indem Sie die erweiterte Redis-Cache-Implementierung für Adobe Commerce verwenden.
+title: Best Practices für die Konfiguration des Redis-Service
+description: Erfahren Sie, wie Sie die Caching-Leistung mithilfe der erweiterten Redis-Cache-Implementierung für Adobe Commerce verbessern können.
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 ---
 
-# Best Practices für die Konfiguration des Redis-Dienstes
+# Best Practices für die Konfiguration des Redis-Service
 
-- Konfigurieren des L2-Cache für Redis
+- Konfigurieren des Redis-L2-Cache
 - Redis-Slave-Verbindung aktivieren
 - Schlüssel vorab laden
-- Gestalteten Cache aktivieren
-- Trennen Sie den Redis-Cache von der Redis-Sitzung.
-- Komprimieren Sie den Redis-Cache und verwenden Sie `gzip` für höhere Komprimierung.
+- Veralteten Cache aktivieren
+- Trennen des Redis-Cache von der Redis-Sitzung
+- Komprimiert den Redis-Cache und verwendet `gzip` für eine höhere Komprimierung.
 
-## Konfigurieren des L2-Cache für Redis
+## Konfigurieren des Redis-L2-Cache
 
-Konfigurieren Sie den Cache L2 Redis , indem Sie die Bereitstellungsvariable `REDIS_BACKEND` in der Konfigurationsdatei `.magento.env.yaml` festlegen.
+Konfigurieren Sie den Redis-L2-Cache, indem Sie die `REDIS_BACKEND`-Bereitstellungsvariable in der `.magento.env.yaml`-Konfigurationsdatei festlegen.
 
 ```yaml
 stage:
@@ -30,34 +30,34 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie unter [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) im _Commerce on Cloud Infrastructure Guide_.
+Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie in den [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
 
-Informationen zu lokalen Installationen finden Sie unter [Konfigurieren des Redis-Seiten-Caching](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) im _Konfigurationshandbuch_.
+Bei On-Premise-Installationen finden Sie weitere Informationen unter [Konfigurieren des Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)Seitencachings im _Konfigurationshandbuch_.
 
 >[!NOTE]
 >
->Vergewissern Sie sich, dass Sie die neueste Version des `ece-tools`-Pakets verwenden. Wenn nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des Befehls `composer show magento/ece-tools` CLI überprüfen.
+>Stellen Sie sicher, dass Sie die neueste Version des `ece-tools` verwenden. Falls nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des `composer show magento/ece-tools` CLI-Befehls überprüfen.
 
 
-### L2-Cache-Speichergröße (Adobe Commerce Cloud)
+### Speicherdimensionierung des L2-Cache (Adobe Commerce Cloud)
 
-Der L2-Cache verwendet ein [temporäres Dateisystem](https://en.wikipedia.org/wiki/Tmpfs) als Speichermechanismus. Im Vergleich zu spezialisierten Schlüssel-Wert-Datenbanksystemen verfügt ein temporäres Dateisystem nicht über eine Schlüsselausscheidungsrichtlinie, um die Speicherbelegung zu steuern.
+Der L2-Cache verwendet ein [temporäres Dateisystem](https://en.wikipedia.org/wiki/Tmpfs) als Speichermechanismus. Im Vergleich zu spezialisierten Schlüssel-Wert-Datenbanksystemen verfügt ein temporäres Dateisystem nicht über eine Richtlinie zum Verdrängen von Schlüsseln, um die Speichernutzung zu kontrollieren.
 
-Das Fehlen einer Speicherbelegungskontrolle kann dazu führen, dass die L2-Cache-Speicherbelegung mit der Zeit zunimmt, indem der veraltete Cache akkumuliert wird.
+Fehlende Speicherbelegungskontrolle kann dazu führen, dass die Speicherbelegung im L2-Cache im Laufe der Zeit zunimmt, indem der veraltete Cache gesammelt wird.
 
-Um zu vermeiden, dass der Speicher von L2-Cache-Implementierungen erschöpft ist, löscht Adobe Commerce den Speicher, wenn ein bestimmter Schwellenwert erreicht wird. Der Standardschwellenwert beträgt 95 %.
+Um zu vermeiden, dass der Arbeitsspeicher bei L2-Cache-Implementierungen erschöpft ist, löscht Adobe Commerce den Speicher, wenn ein bestimmter Schwellenwert erreicht wird. Der standardmäßige Schwellenwert ist 95 %.
 
-Es ist wichtig, die maximale Auslastung des L2-Cache-Speichers basierend auf den Projektanforderungen für den Cache-Speicher anzupassen. Verwenden Sie eine der folgenden Methoden, um die Größe des Arbeitsspeichercache zu konfigurieren:
+Es ist wichtig, die maximale Speicherauslastung des L2-Cache basierend auf den Projektanforderungen für Cache-Speicher anzupassen. Verwenden Sie eine der folgenden Methoden, um die Cache-Größe des Speichers zu konfigurieren:
 
-- Erstellen Sie ein Support-Ticket, um Größenänderungen des `/dev/shm` -Runs anzufordern.
-- Passen Sie die Eigenschaft `cleanup_percentage` auf Anwendungsebene an, um den maximalen Füllprozentsatz des Speichers zu begrenzen. Der verbleibende freie Speicher kann von anderen Diensten genutzt werden.
+- Erstellen Sie ein Support-Ticket, um Größenänderungen der `/dev/shm` anzufordern.
+- Passen Sie die `cleanup_percentage` auf Anwendungsebene an, um den maximalen Füllprozentsatz des Speichers zu begrenzen. Der verbleibende freie Speicher kann von anderen Diensten genutzt werden.
 Sie können die Konfiguration in der Bereitstellungskonfiguration unter der Cache-Konfigurationsgruppe `cache/frontend/default/backend_options/cleanup_percentage` anpassen.
 
 >[!NOTE]
 >
->Die konfigurierbare `cleanup_percentage` -Option wurde in Adobe Commerce 2.4.4 eingeführt.
+>Die `cleanup_percentage` konfigurierbare Option wurde in Adobe Commerce 2.4.4 eingeführt.
 
-Der folgende Code zeigt eine Beispielkonfiguration in der Datei `.magento.env.yaml` :
+Der folgende Code zeigt eine Beispielkonfiguration in der `.magento.env.yaml`:
 
 ```yaml
 stage:
@@ -71,11 +71,11 @@ stage:
             cleanup_percentage: 90
 ```
 
-Die Cache-Anforderungen können je nach Projektkonfiguration und benutzerdefiniertem Drittanbieter-Code variieren. Die Skalierung des L2-Cache-Speichers ermöglicht es, den L2-Cache ohne zu viele Schwellentreffer zu betreiben.
-Idealerweise sollte sich die L2-Cache-Speichernutzung auf einer bestimmten Ebene unterhalb des Schwellenwerts stabilisieren, um häufige Speicherbereinigungen zu vermeiden.
+Die Cache-Anforderungen können je nach Projektkonfiguration und benutzerdefiniertem Code von Drittanbietern variieren. Aufgrund des Umfangs der Speicherdimensionierung für den L2-Cache kann der L2-Cache ohne zu viele Schwellenwerttreffer ausgeführt werden.
+Idealerweise sollte sich die Speicherauslastung des L2-Caches auf einem bestimmten Niveau unterhalb des Schwellenwerts stabilisieren, nur um eine häufige Speicherbereinigung zu vermeiden.
 
-Sie können die Speicherbelegung des L2-Cache-Speichers auf jedem Knoten des Clusters mithilfe des folgenden CLI-Befehls überprüfen und nach der Zeile `/dev/shm` suchen.
-Die Verwendung kann von Knoten zu Knoten variieren, sollte jedoch zum selben Wert konvertiert werden.
+Sie können die Speicherauslastung des L2-Cache-Speichers auf jedem Knoten des Clusters mit dem folgenden CLI-Befehl überprüfen und nach der `/dev/shm` suchen.
+Die Nutzung kann von Knoten zu Knoten variieren, sollte aber auf denselben Wert fallen.
 
 ```bash
 df -h
@@ -83,7 +83,7 @@ df -h
 
 ## Redis-Slave-Verbindung aktivieren
 
-Aktivieren Sie eine Redis-Slave-Verbindung in der Konfigurationsdatei `.magento.env.yaml`, damit nur ein Knoten Lese- und Schreibvorgänge-Traffic verarbeiten kann, während die anderen Knoten den schreibgeschützten Traffic verarbeiten.
+Aktivieren Sie in der `.magento.env.yaml`-Konfigurationsdatei eine Redis-Slave-Verbindung, damit nur ein Knoten Lese-/Schreibdatenverkehr verarbeiten kann, während die anderen Knoten nur den schreibgeschützten Datenverkehr verarbeiten.
 
 ```yaml
 stage:
@@ -91,17 +91,17 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Siehe [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) im Leitfaden _Commerce on Cloud Infrastructure Guide_.
+Siehe [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) im _Handbuch zu Commerce in Cloud-Infrastrukturen_.
 
-Bei lokalen Installationen von Adobe Commerce konfigurieren Sie die neue Redis-Cache-Implementierung mit den Befehlen `bin/magento:setup` . Siehe [Verwenden von Redis für den Standardcache](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) im _Konfigurationshandbuch_.
+Konfigurieren Sie bei lokalen Adobe Commerce-Installationen die neue Redis-Cache-Implementierung mithilfe der `bin/magento:setup`. Siehe [Verwenden von Redis für den ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)-Cache) im _Konfigurationshandbuch_.
 
 >[!WARNING]
 >
->Konfigurieren Sie _nicht_ eine Redis-Slave-Verbindung für Cloud-Infrastrukturprojekte mit einer [skalierten/geteilten Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Dies führt zu Redis-Verbindungsfehlern. Siehe [Anleitung zur Redis-Konfiguration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) im Handbuch _Commerce on Cloud Infrastructure_.
+>Konfigurieren _nicht_ eine Redis-Slave-Verbindung für Cloud-Infrastrukturprojekte mit einer [skalierten/geteilten Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Dies verursacht Redis-Verbindungsfehler. Siehe [Anleitung zur Redis-Konfiguration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) im _Handbuch zu Commerce_ Cloud-Infrastruktur.
 
 ## Schlüssel vorab laden
 
-Um Daten zwischen Seiten wiederzuverwenden, listen Sie die Schlüssel für das Vorausfüllen in der Konfigurationsdatei `.magento.env.yaml` auf.
+Um Daten zwischen Seiten wiederzuverwenden, listen Sie die Schlüssel zum Vorausfüllen in der `.magento.env.yaml`-Konfigurationsdatei auf.
 
 ```yaml
 stage:
@@ -120,11 +120,11 @@ stage:
               - '061_SYSTEM_DEFAULT:hash'
 ```
 
-Informationen zu lokalen Installationen finden Sie unter [Vorabladefunktion umkehren](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) im _Konfigurationshandbuch_.
+Bei On-Premise-Installationen finden Sie weitere Informationen unter [Redis-Vorabladefunktion](../../../configuration/cache/redis-pg-cache.md#redis-preload-feature) im _Konfigurationshandbuch_.
 
-## Gestalteten Cache aktivieren
+## Veralteten Cache aktivieren
 
-Reduzieren Sie die Wartezeiten von Sperren und verbessern Sie die Leistung - insbesondere bei zahlreichen Blöcken und Cache-Schlüsseln - durch Verwendung eines veralteten Caches, während Sie gleichzeitig einen neuen Cache generieren. Aktivieren Sie den veralteten Cache und definieren Sie die Cache-Typen in der Konfigurationsdatei `.magento.env.yaml` :
+Verringern Sie die Sperrwartezeiten und verbessern Sie die Leistung - insbesondere bei der Verarbeitung zahlreicher Blöcke und Cache-Schlüssel - durch die Verwendung eines veralteten Cache bei gleichzeitiger Generierung eines neuen Cache. Aktivieren Sie veralteten Cache und definieren Sie Cache-Typen in der `.magento.env.yaml` Konfigurationsdatei:
 
 ```yaml
 stage:
@@ -159,15 +159,15 @@ stage:
 
 >[!NOTE]
 >
->Im vorherigen Beispiel ist der Cache `full_page` für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da er [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) verwendet.
+>Im vorherigen Beispiel ist der `full_page`-Cache für Adobe Commerce für Cloud-Infrastrukturprojekte nicht relevant, da sie „Fastly[ verwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
-Informationen zum Konfigurieren von lokalen Installationen finden Sie unter [Veraltete Cache-Optionen](../../../configuration/cache/level-two-cache.md#stale-cache-options) im _Konfigurationshandbuch_.
+Informationen zum Konfigurieren von On-Premise-Installationen finden Sie unter [Veraltete Cache](../../../configuration/cache/level-two-cache.md#stale-cache-options) im _Konfigurationshandbuch_.
 
-## Separate Redis-Cache- und Sitzungsinstanzen
+## Separater Redis-Cache und Sitzungsinstanzen
 
-Durch die Trennung des Redis-Cache von der Redis-Sitzung können Sie den Cache und die Sitzungen unabhängig verwalten. Dadurch wird verhindert, dass sich Cache-Probleme auf Sitzungen auswirken, was sich auf den Umsatz auswirken könnte. Jede Redis-Instanz wird auf ihrem eigenen Kern ausgeführt, was die Leistung verbessert.
+Wenn Sie den Redis-Cache von der Redis-Sitzung trennen, können Sie den Cache und die Sitzungen unabhängig verwalten. Cache-Probleme werden so verhindert, dass Sitzungen beeinträchtigt werden, was sich auf den Umsatz auswirken könnte. Jede Redis-Instanz wird auf ihrem eigenen Kern ausgeführt, wodurch die Leistung verbessert wird.
 
-1. Aktualisieren Sie die Konfigurationsdatei `.magento/services.yaml` .
+1. Aktualisieren Sie die `.magento/services.yaml` Konfigurationsdatei.
 
    ```yaml
    mysql:
@@ -189,7 +189,7 @@ Durch die Trennung des Redis-Cache von der Redis-Sitzung können Sie den Cache u
       disk: 2048
    ```
 
-1. Aktualisieren Sie die Konfigurationsdatei `.magento.app.yaml` .
+1. Aktualisieren Sie die `.magento.app.yaml` Konfigurationsdatei.
 
    ```yaml
    relationships:
@@ -200,7 +200,7 @@ Durch die Trennung des Redis-Cache von der Redis-Sitzung können Sie den Cache u
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) , um die Bereitstellung einer neuen Redis-Instanz für Sitzungen in Produktions- und Staging-Umgebungen anzufordern. Schließen Sie die aktualisierten Konfigurationsdateien `.magento/services.yaml` und `.magento.app.yaml` ein. Dies führt nicht zu Ausfallzeiten, erfordert jedoch eine Implementierung, um den neuen Dienst zu aktivieren.
+1. Senden Sie ein [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)-Ticket, um die Bereitstellung einer neuen Redis-Instanz anzufordern, die Sitzungen in Produktions- und Staging-Umgebungen gewidmet ist. Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein. Dies führt zu keinen Ausfallzeiten, erfordert jedoch eine Bereitstellung, um den neuen Service zu aktivieren.
 
 1. Stellen Sie sicher, dass die neue Instanz ausgeführt wird, und notieren Sie sich die Portnummer.
 
@@ -208,10 +208,10 @@ Durch die Trennung des Redis-Cache von der Redis-Sitzung können Sie den Cache u
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 
-1. Fügen Sie die Portnummer zur Konfigurationsdatei `.magento.env.yaml` hinzu.
+1. Fügen Sie die Portnummer zur `.magento.env.yaml` hinzu.
 
    >[!NOTE]
-   >`disable_locking` muss auf `1` gesetzt sein.
+   >`disable_locking` muss auf `1` gesetzt werden.
    >   
 
    ```yaml
@@ -227,13 +227,13 @@ Durch die Trennung des Redis-Cache von der Redis-Sitzung können Sie den Cache u
        min_lifetime: 60
    ```
 
-1. Entfernen Sie Sitzungen aus der [Standarddatenbank](../../../configuration/cache/redis-pg-cache.md) (`db 0`) in der Redis-Cache-Instanz.
+1. Entfernen Sie Sitzungen aus der [Standarddatenbank](../../../configuration/cache/redis-pg-cache.md) (`db 0`) auf der Redis-Cache-Instanz.
 
    ```bash
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-Während der Bereitstellung sollten im [Build- und Bereitstellungsprotokoll](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs) die folgenden Zeilen angezeigt werden:
+Während der Bereitstellung sollten die folgenden Zeilen im „Build- [ Bereitstellungsprotokoll“ angezeigt ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -247,9 +247,9 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 [2022-08-17 01:13:40] INFO: redis-session will be used for session if it was not override by SESSION_CONFIGURATION
 ```
 
-## Cachekomprimierung
+## Cache-Komprimierung
 
-Wenn Sie mehr als 6 GB Redis `maxmemory` verwenden, können Sie die Cache-Komprimierung verwenden, um den von den Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass es einen Kompromiss mit clientseitiger Leistung gibt. Wenn Sie über freie CPUs verfügen, aktivieren Sie sie. Siehe [Verwenden von Redis für die Sitzungsspeicherung](../../../configuration/cache/redis-session.md) im _Konfigurationshandbuch_.
+Wenn Sie mehr als 6 GB Redis-`maxmemory` verwenden, können Sie die Cache-Komprimierung verwenden, um den von den Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass es einen Zielkonflikt mit der Client-seitigen Leistung gibt. Wenn Sie CPUs haben, aktivieren Sie diese. Siehe [Verwenden von Redis für die Sitzungsspeicherung](../../../configuration/cache/redis-session.md) im _Konfigurationshandbuch_.
 
 ```yaml
 stage:
@@ -268,5 +268,5 @@ stage:
 
 ## Weitere Informationen
 
-- [Redis-Seiten-Cache](../../../configuration/cache/redis-pg-cache.md)
-- [Verwenden von Redizes für die Sitzungsspeicherung](../../../configuration/cache/redis-session.md)
+- [Redis-Seitencache](../../../configuration/cache/redis-pg-cache.md)
+- [Redis für Sitzungsspeicher verwenden](../../../configuration/cache/redis-session.md)

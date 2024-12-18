@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-46865: [!UICONTROL shipment] und [!UICONTROL credit memo] werden bei Aktivierung von [!UICONTROL asynchronous indexing] nicht aufgefüllt'
-description: Wenden Sie den Patch ACSD-46865 an, um das Adobe Commerce-Problem zu beheben, bei dem bei aktiviertem [!UICONTROL asynchronous indexing] keine Raster von [!UICONTROL shipment] und [!UICONTROL credit memo] gefüllt werden.
+title: 'ACSD-46865: [!UICONTROL shipment] und [!UICONTROL credit memo] nicht ausgefüllt, wenn [!UICONTROL asynchronous indexing] aktiviert ist'
+description: Wenden Sie den Patch ACSD-46865 an, um das Adobe Commerce-Problem zu beheben, bei dem [!UICONTROL shipment]- und [!UICONTROL credit memo]-Raster nicht ausgefüllt werden, wenn [!UICONTROL asynchronous indexing] aktiviert ist.
 feature: Cache, Orders, Returns, Shipping/Delivery
 role: Admin
 exl-id: 6f84f5b6-6c34-476c-aae5-9a8ba306f8e4
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46865: [!UICONTROL shipment] und [!UICONTROL credit memo] werden bei Aktivierung von [!UICONTROL asynchronous indexing] nicht aufgefüllt
+# ACSD-46865: [!UICONTROL shipment] und [!UICONTROL credit memo] nicht ausgefüllt, wenn [!UICONTROL asynchronous indexing] aktiviert ist
 
-Der Patch ACSD-46865 behebt das Problem, dass Raster vom Typ [!UICONTROL shipment] und [!UICONTROL credit memo] bei aktiviertem [!UICONTROL asynchronous indexing] nicht gefüllt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.24 installiert ist. Die Patch-ID ist ACSD-46865. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Mit dem Patch ACSD-46865 wird das Problem behoben, dass [!UICONTROL shipment]- und [!UICONTROL credit memo]-Raster nicht ausgefüllt werden, wenn [!UICONTROL asynchronous indexing] aktiviert ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.24 installiert ist. Die Patch-ID ist ACSD-46865. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,26 +27,26 @@ Der Patch ACSD-46865 behebt das Problem, dass Raster vom Typ [!UICONTROL shipmen
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die Raster [!UICONTROL Shipment] und [!UICONTROL credit memo] werden nicht ausgefüllt, wenn [!UICONTROL asynchronous indexing] aktiviert ist.
+[!UICONTROL Shipment]- und [!UICONTROL credit memo] werden bei aktiviertem [!UICONTROL asynchronous indexing] nicht ausgefüllt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Navigieren Sie in [!DNL Commerce] Admin zu **[!UICONTROL Set Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Grid Settings]** > **[!UICONTROL Asynchronous indexing Enable]** = *YES*.
-2. Gehen Sie wieder zu **[!UICONTROL Set Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoices]** > **[!UICONTROL Shipments]** > **[!UICONTROL Credit Memos Archiving]** > **[!UICONTROL Enable Archiving]** = *[!UICONTROL YES]*.
-3. Bereinigen Sie den Konfigurationscache.
-4. Platzieren Sie eine neue Gastbestellung für ein einfaches Produkt.
-5. Führen Sie cron aus.
-6. Öffnen Sie die Bestellung im Ordner &quot;[!UICONTROL Commerce] Admin&quot;, indem Sie zu &quot;**[!UICONTROL Sales]**&quot;> &quot;**[!UICONTROL Orders]**&quot;gehen und eine Rechnung und ein Kreditmemo generieren.
-7. Verschieben Sie die Reihenfolge auf &quot;[!UICONTROL Archive]&quot;.
+1. Gehen Sie im [!DNL Commerce] Admin zu **[!UICONTROL Set Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Grid Settings]** > **[!UICONTROL Asynchronous indexing Enable]** = *YES*.
+2. Wechseln Sie erneut zu **[!UICONTROL Set Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoices]** > **[!UICONTROL Shipments]** > **[!UICONTROL Credit Memos Archiving]** > **[!UICONTROL Enable Archiving]** = *[!UICONTROL YES]*.
+3. Konfigurationscache leeren.
+4. Erteilen Sie eine neue Gastbestellung für ein einfaches Produkt.
+5. Cron ausführen.
+6. Öffnen Sie die Bestellung im [!UICONTROL Commerce] Admin, indem Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]** wechseln und eine Rechnung und eine Gutschrift generieren.
+7. Verschieben Sie die Bestellung nach [!UICONTROL Archive].
 8. Erstellen Sie eine weitere Bestellung für ein einfaches Produkt.
-9. Führen Sie cron aus.
-10. Gehen Sie zur neuen Bestellung und generieren Sie eine neue Lieferung, eine Rechnung und ein Kreditmemo.
-11. Führen Sie cron aus.
-12. Überprüfen Sie die Raster [!UICONTROL shipments], [!UICONTROL invoices] und [!UICONTROL credit memo] im Admin.
+9. Cron ausführen.
+10. Wechseln Sie zur neuen Bestellung und erstellen Sie eine neue Lieferung, eine Rechnung und eine Gutschrift.
+11. Cron ausführen.
+12. Überprüfen Sie die [!UICONTROL shipments], [!UICONTROL invoices] und [!UICONTROL credit memo] Raster in der Admin-Liste.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -54,21 +54,21 @@ Neue [!UICONTROL shipment], [!UICONTROL invoice] und [!UICONTROL credit memo] we
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die neuen Werte [!UICONTROL shipment], [!UICONTROL invoice] und [!UICONTROL credit memo] werden nicht angezeigt.
+Neue [!UICONTROL shipment], [!UICONTROL invoice] und [!UICONTROL credit memo] werden nicht angezeigt.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

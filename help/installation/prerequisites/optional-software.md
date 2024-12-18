@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Optionale Software
 
-Es wird dringend empfohlen, NTP zu installieren, um sicherzustellen, dass Cron-bezogene Aufgaben ordnungsgemäß ausgeführt werden. (Serverdaten können beispielsweise in der Vergangenheit oder Zukunft liegen.)
+Es wird dringend empfohlen, NTP zu installieren, um sicherzustellen, dass cron-bezogene Aufgaben ordnungsgemäß ausgeführt werden. (Serverdaten können beispielsweise in der Vergangenheit oder in der Zukunft liegen.)
 
-Die anderen in diesem Thema behandelten optionalen Hilfsprogramme können Ihnen bei Ihrer Installation helfen. Sie müssen jedoch Adobe Commerce nicht installieren oder verwenden.
+Die anderen in diesem Abschnitt beschriebenen optionalen Dienstprogramme können Ihnen bei der Installation helfen. Sie sind jedoch nicht erforderlich, um Adobe Commerce zu installieren oder zu verwenden.
 
 ## Installieren und Konfigurieren des Network Time Protocol (NTP)
 
-Mit [NTP](https://www.ntp.org/) können Server ihre Systemuhren mithilfe von [global verfügbaren Poolservern](https://www.ntppool.org/en/) synchronisieren. Es wird empfohlen, die von Ihnen vertrauenswürdigen NTP-Server zu verwenden, unabhängig davon, ob es sich um dedizierte Hardware-Lösungen für Ihr internes Netzwerk oder externe, öffentliche Server handelt.
+[NTP](https://www.ntp.org/) ermöglicht es Servern, ihre Systemuhren mithilfe von [global verfügbaren Pool-Servern](https://www.ntppool.org/en/) zu synchronisieren. Es wird empfohlen, vertrauenswürdige NTP-Server zu verwenden, unabhängig davon, ob es sich um dedizierte Hardwarelösungen in Ihrem internen Netzwerk oder externe, öffentliche Server handelt.
 
-Wenn Sie Adobe Commerce auf mehreren Hosts bereitstellen, ist NTP eine einfache Möglichkeit, sicherzustellen, dass alle Uhren synchronisiert werden, unabhängig von der Zeitzone, in der sich die Server befinden. Cron-bezogene Aufgaben (wie Indizierung und Transaktions-E-Mails) hängen außerdem von der Genauigkeit der Server-Uhr ab.
+Wenn Sie Adobe Commerce auf mehreren Hosts bereitstellen, ist NTP eine einfache Möglichkeit, um sicherzustellen, dass alle Uhren synchronisiert sind, unabhängig von der Zeitzone, in der sich die Server befinden. Außerdem hängen Cron-bezogene Aufgaben (wie Indizierung und Transaktions-E-Mails) davon ab, dass die Server-Uhr korrekt ist.
 
 ### Installieren und Konfigurieren von NTP auf Ubuntu
 
@@ -29,11 +29,11 @@ Geben Sie den folgenden Befehl ein, um NTP zu installieren:
 apt-get install ntp
 ```
 
-Fahren Sie mit [NTP-Poolserver verwenden](#use-ntp-pool-servers) fort.
+Fahren Sie mit [NTP-Pool-Server verwenden](#use-ntp-pool-servers) fort.
 
-### Installieren und Konfigurieren von NTP unter CentOS
+### Installieren und Konfigurieren von NTP auf CentOS
 
-So installieren und konfigurieren Sie NTP:
+Installieren und Konfigurieren von NTP:
 
 1. Geben Sie den folgenden Befehl ein, um die entsprechende NTP-Software zu finden:
 
@@ -41,15 +41,15 @@ So installieren und konfigurieren Sie NTP:
    yum search ntp
    ```
 
-1. Wählen Sie ein zu installierendes Paket aus. Beispiel: `ntp.x86_64`.
+1. Zu installierendes Paket auswählen. Beispiel: `ntp.x86_64`.
 
-1. Installieren Sie das Paket.
+1. Installieren Sie das Paket .
 
    ```bash
    yum -y install ntp.x86_64
    ```
 
-1. Geben Sie den folgenden Befehl ein, damit NTP beim Start des Servers gestartet wird.
+1. Geben Sie den folgenden Befehl ein, damit NTP gestartet wird, wenn der Server gestartet wird.
 
    ```bash
    chkconfig ntpd on
@@ -57,9 +57,9 @@ So installieren und konfigurieren Sie NTP:
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
-### NTP-Poolserver verwenden
+### NTP-Pool-Server verwenden
 
-Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, empfiehlt ntp.org die Verwendung von [Poolservern](https://www.ntppool.org/en/), die sich in der Zeitzone Ihrer Server befinden, wie auf der [NTP-Poolprojektseite](https://www.ntppool.org/en/use.html) beschrieben. Wenn Sie über einen privaten NTP-Server verfügen, der für alle Hosts in Ihrer Bereitstellung verfügbar ist, können Sie stattdessen diesen Server verwenden.
+Die Auswahl der Pool-Server liegt bei Ihnen. Wenn Sie NTP-Pool-Server verwenden, empfiehlt ntp.org die Verwendung [Pool-](https://www.ntppool.org/en/)), die sich in der Nähe der Zeitzone Ihrer Server befinden, wie auf der Seite [NTP-Pool-Projekt](https://www.ntppool.org/en/use.html) beschrieben. Wenn Sie über einen privaten NTP-Server verfügen, der für alle Hosts in Ihrer Bereitstellung verfügbar ist, können Sie stattdessen diesen Server verwenden.
 
 1. Öffnen Sie `/etc/ntp.conf` in einem Texteditor.
 
@@ -71,9 +71,9 @@ Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, e
    server 2.centos.pool.ntp.org
    ```
 
-1. Ersetzen Sie diese Zeilen oder fügen Sie zusätzliche Zeilen hinzu, die Ihren NTP-Poolserver oder andere NTP-Server angeben. Es empfiehlt sich, mehr als eine zu spezifizieren.
+1. Ersetzen Sie diese Zeilen oder fügen Sie zusätzliche Zeilen hinzu, die Ihren NTP-Pool-Server oder andere NTP-Server angeben. Es ist empfehlenswert, mehrere Namen zu nennen.
 
-1. Ein Beispiel für die Verwendung von drei auf den USA basierenden NTP-Servern:
+1. Im Folgenden finden Sie ein Beispiel für die Verwendung von drei US-basierten NTP-Servern:
 
    ```conf
    server 0.us.pool.ntp.org
@@ -93,19 +93,19 @@ Die Auswahl der Poolserver liegt bei Ihnen. Wenn Sie NTP-Poolserver verwenden, e
 
    Wenn das Datum falsch ist, stellen Sie sicher, dass der NTP-Client-Port (normalerweise UDP 123) in Ihrer Firewall geöffnet ist.
 
-   Versuchen Sie den Befehl `ntpdate _[pool server hostname]_` . Wenn es fehlschlägt, suchen Sie nach dem zurückgegebenen Fehler.
+   Testen Sie den `ntpdate _[pool server hostname]_`. Wenn dies fehlschlägt, suchen Sie nach dem zurückgegebenen Fehler.
 
    Wenn alles andere fehlschlägt, versuchen Sie, den Server neu zu starten.
 
 ## Erstellen von phpinfo.php
 
-Die Datei [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) enthält eine große Menge an Informationen über PHP und seine Erweiterungen.
+Die [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php)-Datei zeigt eine große Menge an Informationen über PHP und seine Erweiterungen an.
 
 >[!NOTE]
 >
->Verwenden Sie `phpinfo.php` in einem Entwicklungssystem _nur_. Es kann sich um ein Sicherheitsproblem in der Produktion handeln.
+>Verwenden von `phpinfo.php` in einem Entwicklungssystem _nur_. Dies kann ein Sicherheitsproblem in der Produktion sein.
 
-Fügen Sie den folgenden Code an einer beliebigen Stelle im Basisverzeichnis Ihres Webservers hinzu:
+Fügen Sie den folgenden Code an einer beliebigen Stelle im Stammverzeichnis des Webservers hinzu:
 
 ```php
 <?php
@@ -113,9 +113,9 @@ Fügen Sie den folgenden Code an einer beliebigen Stelle im Basisverzeichnis Ihr
 phpinfo();
 ```
 
-Weitere Informationen finden Sie auf der [phpinfo-manuellen Seite](https://www.php.net/manual/en/function.phpinfo.php).
+Weitere Informationen finden Sie auf der [phpinfo-Handbuchseite](https://www.php.net/manual/en/function.phpinfo.php).
 
-Um die Ergebnisse anzuzeigen, geben Sie die folgende URL in das Adressfeld Ihres Browsers ein:
+Um die Ergebnisse anzuzeigen, geben Sie die folgende URL in das Feld Speicherort oder Adresse Ihres Browsers ein:
 
 ```http
 http://<web server host or IP>/phpinfo.php
@@ -132,20 +132,20 @@ Wenn der Fehler 404 (Nicht gefunden) angezeigt wird, überprüfen Sie Folgendes:
 
 ## phpMyAdmin
 
-Die phpMyAdmin Anwendung ist ein einfach zu bedienendes, kostenloses Dienstprogramm zur Datenbankverwaltung. Sie können damit den Inhalt Ihrer Datenbank überprüfen und bearbeiten. Sie müssen sich bei phpMyAdmin als Verwaltungsbenutzer der MySQL-Datenbank anmelden.
+Die phpMyAdmin-Anwendung ist ein benutzerfreundliches, kostenloses Dienstprogramm zur Datenbankverwaltung. Damit können Sie den Inhalt Ihrer Datenbank überprüfen und bearbeiten. Sie müssen sich bei phpMyAdmin als administrativer Benutzer der MySQL-Datenbank anmelden.
 
-Weitere Informationen zu phpMyAdmin finden Sie auf der [phpMyAdmin-Homepage](https://www.phpmyadmin.net/).
+Weitere Informationen zu phpMyAdmin finden Sie auf der [phpMyAdmin-Startseite](https://www.phpmyadmin.net/).
 
 Weitere Informationen zur Installation finden Sie in der [phpMyAdmin-Installationsdokumentation](https://docs.phpmyadmin.net/en/latest/setup.html#quick-install).
 
 >[!NOTE]
 >
->Verwenden Sie phpMyAdmin in einem Entwicklungssystem _nur_. Es kann sich um ein Sicherheitsproblem in der Produktion handeln.
+>Verwenden Sie phpMyAdmin in einem Entwicklungssystem _only_. Dies kann ein Sicherheitsproblem in der Produktion sein.
 
-1. Um phpMyAdmin zu verwenden, geben Sie den folgenden Befehl in das Adressfeld oder Standortfeld Ihres Browsers ein:
+1. Um phpMyAdmin zu verwenden, geben Sie den folgenden Befehl in das Adressfeld Ihres Browsers ein:
 
    ```http
    http://<web server host or IP>/phpmyadmin
    ```
 
-1. Melden Sie sich bei entsprechender Aufforderung mit Ihrer MySQL-Datenbank `root` oder dem Benutzernamen und Kennwort des Administratorbenutzers an.
+1. Wenn Sie dazu aufgefordert werden, melden Sie sich mit Ihrem MySQL-`root` oder dem Benutzernamen und Kennwort des Administrationsbenutzers an.

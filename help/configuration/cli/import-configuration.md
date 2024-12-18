@@ -1,6 +1,6 @@
 ---
-title: Daten aus Konfigurationsdateien importieren
-description: Importieren Sie die Adobe Commerce-Konfigurationseinstellungen aus Konfigurationsdateien.
+title: Importieren von Daten aus Konfigurationsdateien
+description: Importieren Sie Adobe Commerce-Konfigurationseinstellungen aus Konfigurationsdateien.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Wenn Sie ein Produktionssystem mit dem Commerce 2.2 [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md) einrichten, müssen Sie _Konfigurationseinstellungen vom Typ `config.php` und vom Typ `env.php` in die Datenbank importieren._
+Wenn Sie ein Produktionssystem mit dem Commerce 2.2 [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md) einrichten, müssen Sie _aus `config.php` und `env.php` in die_ importieren.
 Zu diesen Einstellungen gehören Konfigurationspfade und -werte, Websites, Stores, Store-Ansichten und Designs.
 
-Nach dem Import von Websites, Geschäften, Ansichten und Designs können Sie Produktattribute erstellen und auf Websites, Stores und Store-Ansichten im Produktionssystem anwenden.
+Nach dem Import von Websites, Stores, Store-Ansichten und Designs können Sie Produktattribute erstellen und sie auf Websites, Stores und Store-Ansichten im Produktionssystem anwenden.
 
 >[!INFO]
 >
->Der Befehl `bin/magento app:config:import` verarbeitet keine in Umgebungsvariablen gespeicherten Konfigurationen.
+>Der Befehl `bin/magento app:config:import` verarbeitet keine in Umgebungsvariablen gespeicherte Konfiguration.
 
-## Import, Befehl
+## Importbefehl
 
 Führen Sie auf Ihrem Produktionssystem den folgenden Befehl aus, um Daten aus den Konfigurationsdateien (`config.php` und `env.php`) in die Datenbank zu importieren:
 
@@ -30,9 +30,9 @@ Führen Sie auf Ihrem Produktionssystem den folgenden Befehl aus, um Daten aus d
 bin/magento app:config:import [-n, --no-interaction]
 ```
 
-Verwenden Sie das optionale Flag `[-n, --no-interaction]` , um Daten ohne Interaktion zu importieren.
+Verwenden Sie das optionale `[-n, --no-interaction]`-Flag, um Daten ohne Interaktion zu importieren.
 
-Wenn Sie &quot;`bin/magento app:config:import`&quot;ohne die optionale Markierung eingeben, müssen Sie die Änderungen bestätigen.
+Wenn Sie `bin/magento app:config:import` ohne die optionale Markierung eingeben, müssen Sie die Änderungen bestätigen.
 
 Wenn die Konfigurationsdatei beispielsweise eine neue Website und einen neuen Store enthält, wird die folgende Meldung angezeigt:
 
@@ -42,9 +42,9 @@ These Groups will be created: New Store
 Do you want to continue [yes/no]?
 ```
 
-Geben Sie `yes` ein, um den Import fortzusetzen.
+Um den Import fortzusetzen, geben Sie `yes` ein.
 
-Wenn Bereitstellungskonfigurationsdateien zu importierende Daten enthalten, wird eine Meldung ähnlich der folgenden angezeigt:
+Wenn Bereitstellungskonfigurationsdateien einige zu importierende Daten enthalten, wird eine Meldung ähnlich der folgenden angezeigt:
 
 ```
 Start import:
@@ -60,33 +60,33 @@ Nothing to import
 
 ## Was wir importieren
 
-In den folgenden Abschnitten wird ausführlich beschrieben, welche Daten importiert werden.
+In den folgenden Abschnitten wird ausführlich erläutert, welche Daten wir importieren.
 
 ### Systemkonfiguration
 
-Commerce verwendet direkt Werte im Array `system` in den Dateien `config.php` oder `env.php`, anstatt sie in die Datenbank zu importieren, da sie einige Vorab- und Nachbearbeitungsvorgänge erfordern.
+Commerce verwendet Werte im `system`-Array direkt in den `config.php`- oder `env.php`-Dateien, anstatt sie in die Datenbank zu importieren, da sie einige Vor- und Nachbearbeitungsaktionen erfordern.
 
-Beispielsweise muss der Wert des Konfigurationspfads `web/secure/base_url` mit Backend-Modellen überprüft werden.
+Beispielsweise muss der Wert des Konfigurationspfads `web/secure/base_url` mit Backend-Modellen validiert werden.
 
 #### Backend-Modelle
 
-Backend-Modelle sind der Mechanismus zur Verarbeitung von Änderungen in der Systemkonfiguration.
-Sie definieren Backend-Module in `<module_name>/adminhtml/system.xml`.
+Backend-Modelle sind der Mechanismus zum Verarbeiten von Änderungen an der Systemkonfiguration.
+Backend-Module werden in `<module_name>/adminhtml/system.xml` definiert.
 
-Alle Backend-Modelle müssen die Klasse [`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php) erweitern.
+Alle Backend-Modelle müssen die [`Magento\Framework\App\Config\Value`](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Config/Value.php)-Klasse erweitern.
 
 Beim Importieren von Backend-Modellen werden die Konfigurationswerte nicht gespeichert.
 
-### Konfiguration von Websites, Stores und Stores
+### Konfiguration von Websites, Stores und Store-Gruppen
 
 Wir importieren die folgenden Arten von Konfigurationen.
-(Diese Konfigurationen befinden sich unter dem `scopes` -Array in `config.php`.)
+(Diese Konfigurationen befinden sich unter dem `scopes` Array in `config.php`.)
 
-- `websites`: Konfiguration im Zusammenhang mit Websites
-- `groups`: Speichert die zugehörige Konfiguration
-- `stores`: Konfiguration von Ansichten speichern
+- `websites`: Websites-bezogene Konfiguration
+- `groups`: speichert die zugehörige Konfiguration
+- `stores`: Konfiguration im Zusammenhang mit Ansichten speichern
 
-Die vorangehenden Konfigurationen können in den folgenden Modi importiert werden:
+Die vorherigen Konfigurationen können in den folgenden Modi importiert werden:
 
 - `create`: `config.php` enthält neue Entitäten (`websites`, `groups`, `stores`), die in der Produktionsumgebung fehlen
 - `update`: `config.php` enthält Entitäten (`websites`, `groups`, `stores`), die sich von der Produktionsumgebung unterscheiden
@@ -94,22 +94,22 @@ Die vorangehenden Konfigurationen können in den folgenden Modi importiert werde
 
 >[!INFO]
 >
->Die mit Stores verknüpfte Stammkategorie wird nicht importiert. Sie müssen mit dem Commerce-Administrator eine Stammkategorie mit einem Store verknüpfen.
+>Die mit Stores verknüpfte Stammkategorie wird nicht importiert. Sie müssen mit der Commerce Admin eine Stammkategorie mit einem Store verknüpfen.
 
-### Designkonfiguration
+### Design-Konfiguration
 
-Die Designkonfiguration umfasst alle in Ihrem Commerce-System registrierten Designs. Die Daten stammen direkt aus der Datenbanktabelle `theme`. (Die Designkonfiguration befindet sich im Array `themes` in `config.php`.)
+Die Designkonfiguration umfasst alle Designs, die in Ihrem Commerce-System registriert sind. Die Daten stammen direkt aus der `theme` Datenbanktabelle. (Die Design-Konfiguration befindet sich im `themes`-Array in `config.php`.)
 
 #### Struktur der Designdaten
 
 Der Schlüssel des Arrays ist der vollständige Designpfad: `area` + `theme path`
 
 Beispiel: `frontend/Magento/luma`.
-`frontend` ist Bereich und `Magento/luma` ist Designpfad.
+`frontend` ist „area“ und `Magento/luma` ist „theme path“.
 
-Der Wert des Arrays ist Daten zum Thema: Code, Titel, Pfad, übergeordnete ID
+Der Wert des Arrays besteht aus Daten zum Design: Code, Titel, Pfad, übergeordnete ID
 
-Vollständiges Beispiel:
+Beispiel:
 
 ```php?start_inline=1
 'frontend/Magento/luma' =>
@@ -126,5 +126,5 @@ Vollständiges Beispiel:
 
 >[!INFO]
 >
->- _Themenregistrierung_. Wenn Designdaten in `config.php` definiert sind, der Quellcode des Designs jedoch nicht im Dateisystem vorhanden ist, wird das Design ignoriert (d. h. nicht registriert).
->- _Designentfernung_. Wenn in `config.php` kein Design vorhanden ist, der Quellcode jedoch im Dateisystem vorhanden ist, wird das Design nicht entfernt.
+>- _Design-Registrierung_. Wenn Design-Daten in `config.php` definiert sind, der Quell-Code des Designs jedoch nicht im Dateisystem vorhanden ist, wird das Design ignoriert (d. h. nicht registriert).
+>- _Design-Entfernung_. Wenn in `config.php` kein Design vorhanden ist, der Quell-Code jedoch im Dateisystem vorhanden ist, wird das Design nicht entfernt.

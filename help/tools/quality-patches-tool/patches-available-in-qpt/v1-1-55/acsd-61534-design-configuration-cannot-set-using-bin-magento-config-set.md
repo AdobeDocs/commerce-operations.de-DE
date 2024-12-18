@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-61534: Die Designkonfiguration kann nicht mit bin/magento config:set festgelegt werden und gesperrte Werte können über die Formularbearbeitung geändert werden'
-description: Wenden Sie den Patch ACSD-61534 an, um das Adobe Commerce-Problem zu beheben, bei dem die Designkonfiguration nicht mit dem Befehl "bin/magento config:set"festgelegt werden kann und gesperrte Werte durch die Formularbearbeitung geändert werden können.
+title: 'ACSD-61534: Die Design-Konfiguration kann nicht mit bin/magento config:set festgelegt werden und gesperrte Werte können über die Formularbearbeitung geändert werden'
+description: Wenden Sie den Patch ACSD-61534 an, um das Adobe Commerce-Problem zu beheben, bei dem die Design-Konfiguration nicht mit dem Befehl „bin/magento config:set“ festgelegt werden kann und gesperrte Werte durch Formularbearbeitung geändert werden können.
 feature: Configuration
 role: Admin, Developer
 exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-61534: Die Designkonfiguration kann nicht mit `bin/magento config:set` festgelegt werden und gesperrte Werte können über die Formularbearbeitung geändert werden
+# ACSD-61534: Die Design-Konfiguration kann nicht mit `bin/magento config:set` festgelegt werden und gesperrte Werte können über die Formularbearbeitung geändert werden
 
-Der Patch ACSD-61534 behebt das Problem, dass die Designkonfiguration nicht mit dem Befehl `bin/magento config:set` festgelegt werden kann und gesperrte Werte durch die Bearbeitung des Formulars geändert werden können. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 installiert ist. Die Patch-ID ist ACSD-61534. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Der Patch ACSD-61534 behebt das Problem, dass die Design-Konfiguration nicht mit dem Befehl `bin/magento config:set` festgelegt werden kann und gesperrte Werte durch Formularbearbeitung geändert werden können. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 installiert ist. Die Patch-ID ist ACSD-61534. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,21 +27,21 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die Designkonfiguration kann nicht mit dem Befehl `bin/magento config:set` festgelegt werden und gesperrte Werte können durch die Bearbeitung des Formulars geändert werden. Mit diesem Patch können gesperrte Werte, die über das Befehlszeilen-Tool (CLI) mit `--lock-env` oder `--lock-conf` festgelegt wurden, nicht aktualisiert werden.
+Die Design-Konfiguration kann nicht mit dem Befehl `bin/magento config:set` festgelegt werden und gesperrte Werte können durch Formularbearbeitung geändert werden. Mit diesem Patch können gesperrte Werte, die über das Befehlszeilen-Tool (Command Line Tool, CLI) mit `--lock-env` oder `--lock-conf` festgelegt wurden, nicht aktualisiert werden.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Sperren Sie einen Konfigurationswert mithilfe einer Cloud-Umgebungsvariablen wie `CONFIG_WEBSITESBASEDESIGNHEAD_INCLUDES`.
-1. Wechseln Sie zum Bedienfeld &quot;*[!UICONTROL Admin]*&quot;.
-1. Gehen Sie zu **[!UICONTROL Content]** > **[!UICONTROL Design]** > **[!UICONTROL Configuration]**.
-1. Klicken Sie in der zweiten Zeile neben dem Wert **[!UICONTROL Global/Main website]** auf **[!UICONTROL Edit]**.
-1. Design bearbeiten für eine Store-Ansicht.
+1. Sperren Sie einen Konfigurationswert mithilfe einer Cloud-Umgebungsvariablen, z. B. `CONFIG_WEBSITESBASEDESIGNHEAD_INCLUDES`.
+1. Navigieren Sie zum Bedienfeld *[!UICONTROL Admin]* .
+1. Navigieren Sie zu **[!UICONTROL Content]** > **[!UICONTROL Design]** > **[!UICONTROL Configuration]**.
+1. Klicken Sie **[!UICONTROL Edit]** neben dem **[!UICONTROL Global/Main website]** in der zweiten Zeile.
+1. Design für eine Store-Ansicht bearbeiten.
 1. Öffnen Sie den HTML-Kopf.
-1. Aktivieren Sie das deaktivierte Feld **[!UICONTROL Scripts and Style Sheets]** mit Entwicklertools.
+1. Aktivieren Sie das Feld Deaktivierte **[!UICONTROL Scripts and Style Sheets]** mithilfe von Entwickler-Tools.
 1. Ändern Sie den Wert und speichern Sie ihn.
 
 <u>Erwartete Ergebnisse</u>:
@@ -52,15 +52,15 @@ Ein gesperrter Wert kann nicht gespeichert werden.
 
 Tabelle `core_config_data` enthält einen aktualisierten Wert für `design/head/includes`.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.

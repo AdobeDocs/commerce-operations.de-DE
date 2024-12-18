@@ -21,7 +21,7 @@ ht-degree: 0%
   </thead>
   <tbody>
       <tr>
-          <td>Adobe I/O von Ereignissen für Adobe Commerce</td>
+          <td>Adobe I/O-Ereignisse für Adobe Commerce</td>
           <td>1,5+</td>
           <td>1,5+</td>
           <td>1,5+</td>
@@ -32,10 +32,10 @@ ht-degree: 0%
           </td>
       </tr>
       <tr>
-          <td>Adobe Commerce Admin UI SDK</td>
-          <td>1,3+</td>
-          <td>1,3+</td>
-          <td>1,3+</td>
+          <td>Adobe Commerce Admin-Benutzeroberfläche SDK</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
+          <td>1.3+</td>
           <td>-</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Composer</a><br/>

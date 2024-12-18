@@ -1,6 +1,6 @@
 ---
-title: Best Practices für die Upgrade-Checkliste
-description: Erfahren Sie, wie Sie eine Checkliste für Upgrades erstellen und verwenden, um Ihre Adobe Commerce-Upgrade-Strategie zu planen.
+title: Best Practices für Checklisten-Upgrades
+description: Erfahren Sie, wie Sie eine Upgrade-Checkliste erstellen und verwenden, um Ihre Upgrade-Strategie für Adobe Commerce zu planen.
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
@@ -11,84 +11,84 @@ ht-degree: 0%
 
 ---
 
-# Best Practices für die Upgrade-Checkliste
+# Best Practices für Checklisten-Upgrades
 
-Verwenden Sie diese Checkliste während Ihrer jährlichen und vierteljährlichen Gespräche mit Ihrem eCommerce-Team. Viele Unternehmen arbeiten aus dem Jahreshaushalt und aus Fahrplänen. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über die Gesundheits-, Orientierungs- und Upgrade-Strategie Ihrer Plattform für das Jahr sprechen, ebenso wie darüber, wie sie in die allgemeinen Ziele und KPIs des Unternehmens passt. Achten Sie bei vierteljährlichen Gesprächen darauf, dass der von Ihnen erstellte Jahresplan weiterhin an Ihrer aktuellen Situation oder Ihrer Pivot-Situation ausgerichtet ist, falls nicht. Diese Checkliste für den Aktualisierungsplan soll Ihnen bei der Planung und Planung von Adobe Commerce-Upgrades helfen, damit ein erfolgreiches Upgrade-Verfahren im Laufe des Jahres gewährleistet ist. Diese Checkliste ist für folgende Zielgruppen für die Jahresplanung und die vierteljährliche Überprüfung vorgesehen:
+Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversationen mit Ihrem E-Commerce-Team. Viele Unternehmen arbeiten mit jährlichen Budgets und Roadmaps. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über den Zustand, die Ausrichtung und die Upgrade-Strategie Ihrer Plattform für das Jahr sprechen und auch darüber, wie sie zu den allgemeinen Zielen und KPIs des Unternehmens passt. Stellen Sie bei vierteljährlichen Unterhaltungen sicher, dass der von Ihnen erstellte Jahresplan weiterhin an Ihrer aktuellen Situation oder Ihrem Pivot ausgerichtet ist, falls nicht. Diese Checkliste für den Upgrade-Plan soll Sie bei der Planung und Planung von Adobe Commerce-Upgrades unterstützen, um einen erfolgreichen Upgrade-Prozess während des Jahres sicherzustellen. Diese Checkliste ist für die folgenden Zielgruppen zur jährlichen Planung und vierteljährlichen Überprüfung vorgesehen:
 
-- Director/Manager IT
-- eCommerce Manager
+- Director/IT-Manager
+- eCommerce-Manager
 - Lösungspartner/Berater
 
 >[!NOTE]
 >
->Eine ausführliche Beschreibung der technischen Schritte für eine erfolgreiche Aktualisierung finden Sie in unserer Benutzerdokumentation unter [Voraussetzungen für eine vollständige Aktualisierung](../../../upgrade/prepare/prerequisites.md) .
+>Eine ausführliche Beschreibung der technischen Schritte für ein erfolgreiches Upgrade finden Sie unter [Voraussetzungen für ein Upgrade ](../../../upgrade/prepare/prerequisites.md) in unserer Benutzerdokumentation.
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
 ## Ziele
 
-▢ Prüfen Sie die aktuellen KPIs und passen Sie sie nach Bedarf an.
+▢ Überprüfen Sie die aktuellen KPIs und passen Sie sie nach Bedarf an.
 
 ## Erweiterungen und Anpassungen
 
-▢ Überprüfen Sie alle aktuellen Erweiterungen und Anpassungen und stellen Sie sicher, dass sie je nach Geschäftsanforderungen weiterhin benötigt werden.
+▢ Überprüfen Sie alle aktuellen Erweiterungen und Anpassungen und stellen Sie sicher, dass sie weiterhin benötigt werden, basierend auf den Geschäftsanforderungen.
 
-▢ sollten Sie alle Erweiterungen ersetzen, die nicht über eine gute Übersicht zur Aktualisierung mit Adobe Commerce-Versionen verfügen.
+▢ Ersetzen Sie ggf. Erweiterungen, bei denen die Aktualisierung nicht zuverlässig funktioniert, durch Adobe Commerce-Versionen.
 
 ## Team
 
-▢ Stellen Sie sicher, dass Sie über das richtige Team mit den entsprechenden Adobe Commerce-Zertifizierungen und -Fachkenntnissen verfügen.
+▢ Stellen Sie sicher, dass Sie über das richtige Team mit den richtigen Adobe Commerce-Zertifizierungen und -Kenntnissen verfügen.
 
-## Budget und Zeit
+## Budget und Timing
 
-▢ Verwenden Sie den Adobe Commerce- [Veröffentlichungsplan](../../../release/schedule.md), um Ihr nächstes Upgrade zu planen und vorab vorzubereiten.
+▢ Planen Sie das nächste Upgrade mithilfe [ Adobe Commerce-](../../../release/schedule.md) und bereiten Sie es vorab vor.
 
-▢ Diskutieren Sie, welche Version Sie Ihrer Meinung nach basierend auf den erwarteten Anforderungen übernehmen werden (vollständig oder sicherheitsspezifisch).
+▢ Besprechen Sie, welche Version Sie basierend auf den erwarteten Anforderungen (vollständig oder nur zur Sicherheit) übernehmen möchten.
 
-▢ Legen Sie ein Budget und eine Teamkapazität für das Upgrade fest.
+▢ Legen Sie ein Budget und Teamkapazität für das Upgrade fest.
 
-## Drittanbieterintegrationen
+## Integrationen von Drittanbietern
 
-▢ Sie sich die aktuellen Adobe Commerce-Drittanbieterintegrationen und deren Wartungsfenster für das Jahr ansehen und erwägen Sie, die Upgrade-Arbeit an Ihrem Wartungsplan auszurichten.
+▢ Überprüfen Sie die aktuellen Adobe Commerce-Integrationen von Drittanbietern und deren Wartungsfenster für das Jahr und ziehen Sie in Betracht, die Upgrade-Arbeit an Ihren Wartungsplan anzupassen.
 
 ## Umfang und Bereitstellungsplanung
 
-▢
+▢ Early Access-Aktivitäten
 
-- Partner nimmt an [Beta](../../../release/beta.md) teil
-- Beta - Versionshinweise - Übersicht.
+- Partner ist an [Beta ](../../../release/beta.md)
+- Überprüfung der Beta-Versionshinweise.
 
-▢ Einigung über Budget, Zeitplan und Umfang.
+▢ vereinbaren Budget, Zeitplan und Umfang.
 
-▢ Führen Sie das [Upgrade-Kompatibilitätstool](../../../upgrade/upgrade-compatibility-tool/overview.md) aus.
+▢ Führen Sie das [Upgrade-Kompatibilitäts-Tool](../../../upgrade/upgrade-compatibility-tool/overview.md) aus
 
-▢ erwägen Sie, das Upgrade zu verwenden, um Probleme zu beheben, die vom [Site-weiten Analyse-Tool](../../../tools/site-wide-analysis-tool/intro.md) erkannt wurden.
+▢ Erwägen Sie die Verwendung des Upgrades, um die vom [Site Wide Analysis Tool“ identifizierten Probleme ](../../../tools/site-wide-analysis-tool/intro.md) beheben.
 
-▢ Dokumentabhängigkeiten und alle erforderlichen technischen Stack-Änderungen, wie PHP- oder Elastic Search-Versionen.
+▢ Dokumentabhängigkeiten und alle erforderlichen technischen Änderungen am Stack, wie z. B. PHP- oder Elastic Search-Versionen.
 
-▢ sammeln Sie Projektteam mit Adobe Commerce-Zertifikaten.
+▢ Sammeln Sie Projektteam mit Adobe Commerce-Zertifizierungen.
 
-▢ Erstellen Sie einen Kommunikationsplan für Interessengruppen.
+▢ Erstellen eines Kommunikationsplans für Stakeholder.
 
 ▢ Wartungsfenster planen, wenn Ausfallzeiten erwartet werden.
 
-▢ Prüfen und genehmigen Sie die Teststrategie. Erwägen Sie die Verwendung des Adobe Commerce [Test-Frameworks](https://developer.adobe.com/commerce/testing/) oder einer Automationssuite eines Drittanbieters.
+▢ Überprüfen und bestätigen Sie die Teststrategie. Erwägen Sie die Verwendung des [Test-Frameworks](https://developer.adobe.com/commerce/testing/) von Adobe Commerce oder einer Automatisierungs-Suite eines Drittanbieters.
 
-▢ Bestätigen Sie, dass alle Erweiterungen und Anpassungen kompatibel sind.
+▢ Vergewissern Sie sich, dass alle Erweiterungen und Anpassungen kompatibel sind.
 
-▢ Überprüfen und aktualisieren Sie das Playbook für die Zeit nach dem Start. Wird verwendet, wenn während oder nach dem Upgrade Probleme auftreten.
+▢ Überprüfen und aktualisieren Sie das Playbook nach dem Start, das verwendet werden soll, wenn während oder nach dem Upgrade Probleme festgestellt werden.
 
-## Post-Implementierung
+## Nach der Bereitstellung
 
-▢ Überwachen Sie die Site auf Probleme - Leistung, Auftragsverarbeitung, Analyse und andere.
+▢ Website auf Probleme überwachen - Leistung, Auftragsverarbeitung, Analysen und andere.
 
-▢ Führen Sie eine Adobe Commerce [Sicherheitsprüfung](https://account.magento.com/scanner/dashboard/) oder eine Überprüfung durch andere Drittanbieter durch und überprüfen Sie potenzielle Sicherheitslücken.
+▢ Führen Sie eine Adobe Commerce [Sicherheitsüberprüfung](https://account.magento.com/scanner/dashboard/) oder eine Suche nach Sicherheitslücken von Drittanbietern durch und überprüfen Sie potenzielle Sicherheitslücken.
 
-▢ Führen Sie eine Retrospektive mit allen Interessenträgern durch und dokumentieren Sie, was gut gelaufen ist, was nicht gelaufen ist und wie sich verbessern lässt.
+▢ Führen Sie eine Retrospektive mit allen Stakeholdern durch und dokumentieren Sie, was gut gelaufen ist und was nicht und wie verbessert werden kann.
 
 ▢ Ändern Sie Ihren Plan für das nächste Upgrade mit den gewonnenen Erfahrungen.

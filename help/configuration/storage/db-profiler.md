@@ -1,8 +1,8 @@
 ---
-title: Datenbank-Profiler konfigurieren
+title: Konfigurieren des Datenbankprofilers
 description: Sehen Sie sich ein Beispiel für die Konfiguration der Ausgabe für den Datenbank-Profiler an.
 feature: Configuration, Storage
-badge: label="Verfasst von Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+badge: label="Beiträge von Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Datenbank-Profiler konfigurieren
+# Konfigurieren des Datenbankprofilers
 
-Der Commerce-Datenbank-Profiler zeigt alle auf einer Seite implementierten Abfragen an, einschließlich der Zeit für jede Abfrage und der angewendeten Parameter.
+Der Commerce-Datenbankprofiler zeigt alle auf einer Seite implementierten Abfragen an, einschließlich der Zeit für jede Abfrage und der angewendeten Parameter.
 
 ## Schritt 1: Ändern der Bereitstellungskonfiguration
 
-Ändern Sie `<magento_root>/app/etc/env.php`, um der [Datenbankprofiler-Klasse](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php) die folgende Referenz hinzuzufügen:
+Ändern Sie `<magento_root>/app/etc/env.php` , um den folgenden Verweis zur [Datenbankprofilerklasse“ ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
 ```php?start_inline=1
         'profiler' => [
@@ -26,7 +26,7 @@ Der Commerce-Datenbank-Profiler zeigt alle auf einer Seite implementierten Abfra
         ],
 ```
 
-Ein Beispiel:
+Es folgt ein Beispiel:
 
 ```php?start_inline=1
  'db' =>
@@ -53,17 +53,17 @@ Ein Beispiel:
   ),
 ```
 
-## Schritt 2: Ausgabe konfigurieren
+## Schritt 2: Konfigurieren der Ausgabe
 
-Konfigurieren Sie die Ausgabe in Ihrer Bootstrap-Datei der Commerce-Anwendung. Dies kann `<magento_root>/pub/index.php` sein oder sich in einer virtuellen Host-Konfiguration des Webservers befinden.
+Konfigurieren Sie die Ausgabe in der Bootstrap-Datei Ihrer Commerce-Anwendung. Dies kann `<magento_root>/pub/index.php` sein oder sich in einer virtuellen Host-Konfiguration des Webservers befinden.
 
-Im folgenden Beispiel werden die Ergebnisse in einer Tabelle mit drei Spalten angezeigt:
+Im folgenden Beispiel werden Ergebnisse in einer dreispaltigen Tabelle angezeigt:
 
-- Gesamtzeit (zeigt die Gesamtdauer an, die zum Ausführen aller Abfragen auf der Seite erforderlich ist)
-- SQL (zeigt alle SQL-Abfragen an; der Zeilenheader zeigt die Anzahl der Abfragen an)
+- Gesamtzeit (zeigt die Gesamtzeit für die Ausführung aller Abfragen auf der Seite an)
+- SQL (zeigt alle SQL-Abfragen an; die Zeilenüberschrift zeigt die Anzahl der Abfragen an)
 - Abfrageparameter (zeigt die Parameter für jede SQL-Abfrage an)
 
-Um die Ausgabe zu konfigurieren, fügen Sie Folgendes nach der Zeile `$bootstrap->run($app);` in Ihrer Bootstrap-Datei hinzu:
+Um die Ausgabe zu konfigurieren, fügen Sie in Ihrer Bootstrap-Datei nach der Zeile `$bootstrap->run($app);` Folgendes hinzu:
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -89,6 +89,6 @@ echo "</table>";
 
 ## Schritt 3: Ergebnisse anzeigen
 
-Navigieren Sie zu einer beliebigen Seite in Ihrer Storefront oder in Ihrem Administrator, um die Ergebnisse anzuzeigen. Ein Beispiel:
+Gehen Sie zu einer beliebigen Seite in Ihrer Storefront oder in Ihrem Admin, um die Ergebnisse anzuzeigen. Es folgt ein Beispiel:
 
-![ Beispiele für Datenbankprofilergebnisse](../../assets/configuration/db-profiler-results.png)
+![Ergebnisse des Datenbankprofilers](../../assets/configuration/db-profiler-results.png)

@@ -1,6 +1,6 @@
 ---
-title: Best Practices-Thementitel
-description: Erfahren Sie, wie Sie ...
+title: Titel des Best Practices-Themas
+description: Erfahren Sie, wie Sie …
 role: Developer
 feature: Best Practices
 hide: true
@@ -34,22 +34,22 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 <!-- Example 1: -->
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
 <!-- Example 2: -->
 
-Adobe Commerce auf Cloud-Infrastruktur mit Adobe Commerce-Version 2.3.4 oder früher und MariaDB-Version 10.0 oder früher.
+Adobe Commerce auf Cloud-Infrastruktur mit Adobe Commerce Version 2.3.4 oder früher und MariaDB Version 10.0 oder früher.
 
-&lt;!— Geschäftstyp: B2C und B2B — nur angeben, wenn erforderlich/)—>
+&lt;!— Geschäftstyp: B2C und B2B — nur bei Bedarf angeben/)—>
 
-## Kopfzeile ...
+## Kopfzeile …
 
-Chunk von Inhalten in Abschnitte zur einfacheren Lesbarkeit. Der Inhalt sollte Aktionsaufrufe mit Beispielen (gut oder schlecht) und gegebenenfalls Links zur Dokumentation enthalten
+Inhalte in Abschnitte unterteilen, um das Lesen zu erleichtern. Der Inhalt sollte Aktionsaufrufe mit Beispielen (gut oder schlecht) und Links zur Dokumentation enthalten, sofern zutreffend
 
-## Kopfzeile ...
+## Kopfzeile …
 
 Verwenden Sie nur so viele Abschnitte wie nötig
 

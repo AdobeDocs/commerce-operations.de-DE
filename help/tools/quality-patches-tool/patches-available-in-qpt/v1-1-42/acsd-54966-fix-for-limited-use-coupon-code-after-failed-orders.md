@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-54966: Fehlerkorrektur - Verwendung von Couponcodes nach fehlgeschlagenen Bestellungen'
-description: Wenden Sie den Patch ACSD-54966 an, um das Adobe Commerce-Problem zu beheben, das die Wiederverwendung von Coupon-Codes verhindert, die pro Promotion und Warenkorb nach einer zuvor fehlgeschlagenen Bestellung begrenzt sind.
+title: 'ACSD-54966: Fehlerbehebung bei der Wiederverwendung von Gutscheincodes nach fehlgeschlagenen Bestellungen'
+description: Wenden Sie den Patch ACSD-54966 an, um das Adobe Commerce-Problem zu beheben, das die Wiederverwendung von Gutscheincodes verhindert, die nach einer zuvor fehlgeschlagenen Bestellung pro Werbeaktion und Warenkorb begrenzt sind.
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
 exl-id: e08062e5-62ff-4da6-918f-896af36edccc
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54966: Fehlerkorrektur - Verwendung von Couponcodes nach fehlgeschlagenen Bestellungen
+# ACSD-54966: Fehlerbehebung bei der Wiederverwendung von Gutscheincodes nach fehlgeschlagenen Bestellungen
 
-Der Patch ACSD-54966 behebt das Problem, das die Wiederverwendung von Coupon-Codes verhindert, die pro Kunde nach einer zuvor fehlgeschlagenen Bestellung begrenzt sind. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.42 installiert ist. Die Patch-ID ist ACSD-54966. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-54966 wird das Problem behoben, das die Wiederverwendung von Couponcodes pro Kunde nach einer zuvor fehlgeschlagenen Bestellung verhindert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.42 installiert ist. Die Patch-ID ist ACSD-54966. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,41 +27,41 @@ Der Patch ACSD-54966 behebt das Problem, das die Wiederverwendung von Coupon-Cod
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Ein Gutscheincode, der für die einmalige Verwendung pro Kunde begrenzt ist, kann nicht nach einer fehlgeschlagenen vorherigen Bestellung wiederverwendet werden.
+Ein Couponcode, der auf den einmaligen Gebrauch pro Kunde beschränkt ist, kann nach einer fehlgeschlagenen vorherigen Bestellung nicht wiederverwendet werden.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Richten Sie eine Preisregel für den Warenkorb mit *[!UICONTROL Uses per Customer]* = *1* ein.
-1. Fahren Sie mit dem zugewiesenen Couponcode fort, um einen Kauf zu tätigen.
-1. Brechen Sie die Bestellung im Admin Panel ab oder führen Sie die Bestellung bei einem Zahlungsfehler aus.
-1. Führen Sie den Befehl aus: `bin/magento queue:consumers:start sales.rule.update.coupon.usage`
+1. Richten Sie eine Warenkorb-Preisregel mit *[!UICONTROL Uses per Customer]* = *1* ein.
+1. Machen Sie einen Kauf mit dem zugewiesenen Gutscheincode.
+1. Stornieren Sie die Bestellung im Admin-Panel oder führen Sie die Bestellung mit einem Zahlungsfehler aus.
+1. Führen Sie den folgenden Befehl aus: `bin/magento queue:consumers:start sales.rule.update.coupon.usage`
 1. Versuchen Sie, eine nachfolgende Bestellung mit demselben Couponcode für denselben Kunden aufzugeben.
 
 <u>Erwartete Ergebnisse</u>:
 
-Nachdem die Bestellung storniert wurde oder ein Zahlungsfehler auftritt, kann der Kunde den Gutscheincode erfolgreich für einen neuen Kauf wiederverwenden.
+Nach Stornierung der Bestellung oder einem Zahlungsfehler kann der Kunde den Couponcode erfolgreich für einen neuen Kauf wiederverwenden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
 Der Kunde kann den Gutscheincode nicht wiederverwenden.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

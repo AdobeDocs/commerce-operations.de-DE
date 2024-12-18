@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-60684: [!DNL GraphQL] Die Sortierung nach mehreren Feldern funktioniert nicht erwartungsgemäß'
-description: Wenden Sie den Patch ACSD-60684 an, um das Adobe Commerce-Problem zu beheben, bei dem die [!DNL GraphQL] Produktsortierung durch mehrere Felder nicht funktioniert, wenn die Sortierung in Variablen übergeben wird.
+title: 'ACSD-60684: [!DNL GraphQL]  Sortieren nach mehreren Feldern funktioniert nicht wie erwartet'
+description: Wenden Sie den Patch ACSD-60684 an, um das Adobe Commerce-Problem zu beheben [!DNL GraphQL]  bei dem die Sortierung nach mehreren Feldern nicht funktioniert, wenn die Sortierung in Variablen übergeben wird.
 feature: GraphQL, Products, Search
 role: Admin, Developer
 exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-60684: [!DNL GraphQL] Produktsortierung durch mehrere Felder funktioniert nicht erwartungsgemäß
+# ACSD-60684: Die Sortierung [!DNL GraphQL] Produkts nach mehreren Feldern funktioniert nicht wie erwartet
 
-Der Patch ACSD-60684 behebt das Problem, dass die Sortierung von [!DNL GraphQL] Produkten durch mehrere Felder nicht funktioniert, wenn die Sortierung in Variablen übergeben wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.52 installiert ist. Die Patch-ID ist ACSD-60684. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Mit dem Patch ACSD-60684 wird das Problem behoben, dass [!DNL GraphQL] Sortieren von Produkten nach mehreren Feldern nicht funktioniert, wenn die Sortierung in Variablen übergeben wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.52 installiert ist. Die Patch-ID ist ACSD-60684. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,20 +23,20 @@ Der Patch ACSD-60684 behebt das Problem, dass die Sortierung von [!DNL GraphQL] 
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6 - p8
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-[!DNL GraphQL] Produktsortierung nach mehreren Feldern funktioniert nicht erwartungsgemäß.
+[!DNL GraphQL] Sortieren von Produkten nach mehreren Feldern funktioniert nicht wie erwartet.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie drei Produkte mit den Namen A, B und C.
-1. Rufen Sie die Produkte mit dem folgenden [!DNL GraphQL] ab:
+1. Rufen Sie die Produkte mithilfe der folgenden [!DNL GraphQL] ab:
 
    ```
    query FindProducts($search: String, $filter:ProductAttributeFilterInput!, $pageSize: Int!, $currentPage: Int!, $sort: ProductAttributeSortInput!){
@@ -88,15 +88,15 @@ Die Ergebnisse werden entsprechend sortiert.
 
 Die ausgewählte Sortierung wurde nicht angewendet.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
