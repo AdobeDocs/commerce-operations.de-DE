@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 152b51d45303b29a1d3d378af0e9fc8b02bbb6aa
+source-git-commit: c97ab644e6372cd6b2dac284d68eb2a79d02c908
 workflow-type: tm+mt
-source-wordcount: '6531'
+source-wordcount: '6541'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591: Design wechselt nicht richtig, wenn es konfiguriert [!UICONTROL User Agent Rules]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-62475: Behebt Probleme beim Zusammenführen von Geschenkkarten im Warenkorb](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62475-fixes-gift-card-merging-issues-in-the-cart.md)
          - [ACSD-63242: Langsamer Import beim Hinzufügen von mehr als 10.000 Katalogprodukten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062: Falsche Rabattberechnungen beim Warenkorb mit mehreren sich überlappenden Regeln](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428: Stock-Statusfehler im Katalogsuchindex](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
