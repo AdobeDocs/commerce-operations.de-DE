@@ -2,7 +2,7 @@
 user-guide-title: Konfigurationshandbuch
 user-guide-description: Konfigurieren Sie die Funktionen und Services Ihrer Adobe Commerce-Anwendung.
 feature: Configuration
-source-git-commit: e41bd2f6d7ad2183418942f628d9da3317016cde
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
