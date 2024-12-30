@@ -3,7 +3,8 @@ title: 'ACSD-62577: Leistungsoptimierung der Storefront-Suche'
 description: Wenden Sie den Patch ACSD-62577 an, um das Adobe Commerce-Problem zu beheben, bei dem die Storefront-Suchleistung aufgrund der langsamen Abfrageausführung beeinträchtigt wird, die durch eine große Tabelle „search_query“ verursacht wird.
 feature: Search
 role: Admin, Developer
-source-git-commit: dbb185fb44b491b9e8d12290d75538d98c911eac
+exl-id: 211c1e3c-0739-4ff6-a25c-b27d335920d1
+source-git-commit: 6803cf2bf27e99300f682308517011b73127fd94
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

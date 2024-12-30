@@ -1,6 +1,6 @@
 ---
-title: bin/magento (Adobe Commerce vor Ort)
-description: Erfahren Sie mehr über alle verfügbaren Befehle, Argumente und Optionen für das Adobe Commerce-Befehlszeilen-Tool bin/magento.
+title: bin/Magento (Adobe Commerce On-Premise)
+description: Erfahren Sie mehr über alle verfügbaren Befehle, Argumente und Optionen für das Befehlszeilen-Tool Adobe Commerce bin/Magento.
 mini-toc-levels: 1
 exl-id: 06cd615b-94be-49d4-9bce-0a33ec9bfd5a
 recommendations: noDisplay, noCatalog
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 ---
 
-# bin/magento (Adobe Commerce vor Ort)
+# bin/Magento (Adobe Commerce On-Premise)
 
 {{$include /help/_includes/templated/reference/cli/commerce-on-premises.md}}

@@ -3,13 +3,13 @@ title: 'ACSD-62971: Der Import von Lagerbeständen mit nicht numerischen Mengenw
 description: Wenden Sie den Patch ACSD-62971 an, um das Adobe Commerce-Problem zu beheben, bei dem der Import von Lagerquellen mit nicht numerischen Werten in der Spalte „Menge“ dazu führt, dass die Menge auf 0 gesetzt wird.
 feature: Data Import/Export, Inventory
 role: Admin, Developer
-source-git-commit: 5b54c0681b699303fff1bb058d434b6eb8b750b0
+exl-id: ece23153-4932-4ac5-b46e-49327a8e84a1
+source-git-commit: 6803cf2bf27e99300f682308517011b73127fd94
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62971: Der Import von Lagerbeständen mit nicht numerischen Mengenwerten führt dazu, dass die Menge auf 0 gesetzt wird
 
@@ -63,4 +63,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-

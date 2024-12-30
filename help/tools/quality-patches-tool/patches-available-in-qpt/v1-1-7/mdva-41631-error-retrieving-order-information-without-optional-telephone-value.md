@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen "Telefonwert"-Wert'
-description: Der Patch MDVA-41631 behebt das Problem, dass Benutzer einen Fehler beim Abrufen von Bestellinformationen ohne optionalen "Telefonwert"über [!DNL GraphQL] erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+title: 'MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen Wert für „Telefon“'
+description: Mit dem Patch MDVA-41631 wird das Problem behoben, bei dem Benutzende einen Fehler beim Abrufen von Bestellinformationen erhalten, ohne dass ein optionaler Wert für „Telefon“ durch  [!DNL GraphQL]. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: Orders
 role: Admin
 exl-id: e56cea59-ffc1-4520-85ca-136cda613884
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen &quot;Telefonwert&quot;-Wert
+# MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen Wert für „Telefon“
 
-Der Patch MDVA-41631 behebt das Problem, dass Benutzer einen Fehler beim Abrufen von Bestellinformationen ohne optionalen &quot;Telefonwert&quot;über [!DNL GraphQL] erhalten. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+Der Patch MDVA-41631 behebt das Problem, dass Benutzende einen Fehler beim Abrufen von Bestellinformationen erhalten, ohne dass der Wert „Telefon“ über [!DNL GraphQL] angegeben wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.1 - 2.4.3-p1
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Benutzer erhalten einen Fehler beim Abrufen der Bestellinformationen ohne optionalen &quot;Telefonwert&quot;über [!DNL GraphQL].
+Benutzende erhalten einen Fehler beim Abrufen von Bestellinformationen ohne optionalen „Telefon“-Wert über [!DNL GraphQL].
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Wechseln Sie zu **Store** > **Konfiguration** > **Kunden** > **Kundenkonfiguration** > **Name und Adressenoptionen** > **Telefon anzeigen** und legen Sie die Telefonnummer als optional fest.
-1. Platzieren Sie eine Bestellung mit [!DNL GraphQL API] als angemeldeten Kunden.
-   * Legen Sie die Telefonnummer nicht fest, wenn Sie die Abrechnungs- und Versandadressen festlegen. Befolgen Sie die Anweisungen in [[!DNL GraphQL] Checkout-Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in unserer Entwicklerdokumentation.
-1. Rufen Sie die Reihenfolge mit der [!DNL GraphQL] [`customerOrders` -Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/) ab.
+1. Gehen Sie zu **Store** > **Configuration** > **Customers** > **Customer Configuration** > **Name and Address Options** > **Show Phone** und legen Sie die Telefonnummer als optional fest.
+1. Aufgeben einer Bestellung mit [!DNL GraphQL API] als angemeldeter Kunde.
+   * Legen Sie beim Festlegen der Rechnungs- und Versandadressen nicht die Telefonnummer fest. Befolgen Sie die Anweisungen im [[!DNL GraphQL] Checkout-Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in unserer Entwicklerdokumentation.
+1. Abrufen der Reihenfolge mithilfe der [!DNL GraphQL] [`customerOrders` Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">
@@ -86,20 +86,20 @@ Benutzer erhalten die Bestellinformationen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Benutzer erhalten den folgenden Fehler: *&quot;message&quot;: &quot;Interner Server-Fehler&quot;,*
+Benutzende erhalten folgende Fehlermeldung: *„message“: „Internal server error“,*
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum [!DNL Quality Patches Tool] finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

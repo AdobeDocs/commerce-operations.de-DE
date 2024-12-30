@@ -3,7 +3,8 @@ title: 'ACSD-62475: Behebt Probleme beim Zusammenführen von Geschenkkarten im W
 description: Wenden Sie den Patch ACSD-62475 an, um das Adobe Commerce-Problem zu beheben, bei dem Geschenkkartenprodukte mit unterschiedlichen Details fälschlicherweise zu einem einzigen Zeileneintrag im Warenkorb zusammengeführt werden.
 feature: Shopping Cart, Quotes
 role: Admin, Developer
-source-git-commit: 7c35c245d6a464f7758053bd8aa1854c8fe8a5f2
+exl-id: fc97c3c0-dc1b-4546-aad0-ef3b4b6a3415
+source-git-commit: 6803cf2bf27e99300f682308517011b73127fd94
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-60631: GraphQL gibt einen Fehler zurück, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist.'
-description: Wenden Sie den Patch ACSD-60631 an, um das Adobe Commerce-Problem zu beheben, bei dem eine GraphQL-Abfrage einen Fehler zurückgibt, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist.
+title: 'ACSD-60631: GraphQL gibt einen Fehler zurück, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen wird.'
+description: Wenden Sie den ACSD-60631-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem eine GraphQL-Abfrage einen Fehler zurückgibt, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist.
 feature: Attributes, GraphQL
 role: Admin, Developer
 exl-id: 2fcc0e06-390f-4803-8e43-db7bac1c51e8
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-60631: GraphQL-Abfrage gibt einen Fehler zurück, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist
+# ACSD-60631: Die GraphQL-Abfrage gibt einen Fehler zurück, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist
 
-Der Patch ACSD-60631 behebt das Problem, bei dem eine GraphQL-Abfrage einen Fehler zurückgibt, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 installiert ist. Die Patch-ID ist ACSD-60631. Bitte beachten Sie, dass dieses Problem in Adobe Commerce 2.4.8 behoben werden soll.
+Mit dem Patch ACSD-60631 wird das Problem behoben, dass eine GraphQL-Abfrage einen Fehler zurückgibt, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 installiert ist. Die Patch-ID ist ACSD-60631. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.8 behoben.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,17 +27,17 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Eine GraphQL-Abfrage gibt einen Fehler zurück, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen ist.
+Eine GraphQL-Abfrage gibt einen Fehler zurück, wenn dasselbe Produkt mehreren konfigurierbaren Produkten zugewiesen wird.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein einfaches Produkt mit dem Attribut *Farbe*.
+1. Erstellen Sie ein einfaches Produkt mit dem Attribut *color*.
 1. Erstellen Sie *2* konfigurierbare Produkte und weisen Sie das einfache Produkt aus Schritt *1* zu.
-1. Führen Sie die GraphQL-Abfrage aus (filtern Sie die Produkte nach dem Wert `url_key` der konfigurierbaren Produkte).
+1. Führen Sie die GraphQL-Abfrage aus (filtern der Produkte nach dem `url_key` der konfigurierbaren Produkte).
 
 ```GraphQL
 {
@@ -112,19 +112,19 @@ Die GraphQL-Abfrage gibt keine Fehler zurück.
 
 Die GraphQL-Abfrage gibt einen Fehler zurück.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

@@ -1,6 +1,6 @@
 ---
 title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.47'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.47 verfügbaren Patches behoben wurden.
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.47  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 8b6bf385-4090-4988-824e-1c2e83774dee
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.47
+# Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.47
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.47 verfügbaren Patches behoben wurden.
 
 QPT v1.1.47 enthält die folgenden Patches:
 
-1. **ACSD-55241**: Behebung des Problems, bei dem die Attribute *[!UICONTROL Used]* und *[!UICONTROL Times Used]* falsche Werte für generierte Gutscheine anzeigen, wenn diese beim Checkout mit mehreren Adressen verwendet werden.
-1. **ACSD-56760**: Behebung des Problems, bei dem ein auf eine bestimmte Website beschränkter Admin-Benutzer keine neuen Produkte in einer Kategorie sortieren oder hinzufügen kann, falls der Webstore über eine eigene Stammkategorie verfügt.
-1. **ACSD-56858**: Behebung des Problems, bei dem die Rollenberechtigungen des B2B-Unternehmens für einen eingeschränkten Unternehmensadministrator falsch angezeigt werden.
-1. **ACSD-57074**: Behebung des Problems, bei dem das benutzerdefinierte Attribut *Ja/Nein* mit `attrbute_code` beginnend mit `price_` nicht ordnungsgemäß mit der Indizierung funktioniert und Produkte mit solchen Attributen nicht auf der Vorderseite verfügbar sind.
+1. **ACSD-55241**: Es wird das Problem behoben, bei dem *[!UICONTROL Used]*- und *[!UICONTROL Times Used]*-Attribute falsche Werte für generierte Coupons anzeigen, wenn sie beim Auschecken mit mehreren Adressen verwendet werden.
+1. **ACSD-56760**: Es wird ein Problem behoben, bei dem ein Admin-Benutzer, der auf eine bestimmte Website beschränkt ist, keine neuen Produkte innerhalb einer Kategorie sortieren oder hinzufügen kann, falls der Webstore eine eigene Stammkategorie hat.
+1. **ACSD-56858**: Es wurde das Problem behoben, dass B2B-Unternehmensrollenberechtigungen für einen eingeschränkten Unternehmensadministrator falsch angezeigt werden.
+1. **ACSD-57074**: Es wird das Problem behoben, dass das benutzerdefinierte Attribut *Ja/Nein* mit `attrbute_code`, das mit `price_` beginnt, nicht richtig mit der Indizierung funktioniert und Produkte mit solchen Attributen am Frontend nicht verfügbar sind.
 
-Navigieren Sie über das Menü links zu einer bestimmten Patch-Seite.
+Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

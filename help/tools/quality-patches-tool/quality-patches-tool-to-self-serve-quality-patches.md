@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches'
-description: Mit [!DNL Quality Patches Tool] können Sie allgemeine Informationen zu Qualitätspatches, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind, anwenden, wiederherstellen und anzeigen.
+title: '[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches'
+description: '[!DNL Quality Patches Tool] können Sie allgemeine Informationen zu Qualitäts-Patches, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind, anwenden, zurücksetzen und anzeigen.'
 feature: Tools and External Services
 role: Admin
 exl-id: a83d3834-841d-4b90-b40a-fda985a85452
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches
+# [!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches
 
-Mit [!DNL Quality Patches Tool] können Sie allgemeine Informationen zu Qualitätspatches, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind, anwenden, wiederherstellen und anzeigen.
+[!DNL Quality Patches Tool] können Sie allgemeine Informationen zu Qualitäts-Patches, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind, anwenden, zurücksetzen und anzeigen.
 
-Das Tool ermöglicht eine schnellere Problembehebung bei Self-Service, sodass Sie einfach vom Adobe Commerce-Support vorgeschlagene Patches auf Probleme anwenden können, die mit Adobe Commerce auftreten können.
+Das Tool bietet eine schnellere Self-Service-Problembehebung, sodass Sie einfach von der Adobe Commerce-Unterstützung vorgeschlagene Patches für Probleme anwenden können, die möglicherweise mit Adobe Commerce auftreten.
 
 >[!NOTE]
 >
->Sie sollten das Tool verwenden, um die erforderlichen Qualitätsverbesserungen nach Bedarf von Fall zu Fall durchzuführen und nicht als langfristigen Ansatz zur Pflege von Adobe Commerce- und Magento Open Source-Code. Die Aktualisierung auf die neueste Version von Adobe Commerce oder Magento Open Source ist nach wie vor die beste Methode zur Lösung von Qualitätsproblemen und sollte priorisiert werden.
+>Sie sollten das Tool verwenden, um die erforderlichen Qualitätskorrekturen nach Bedarf nur von Fall zu Fall abzurufen, und nicht als langfristigen Ansatz zur Pflege von Adobe Commerce und Magento Open Source-Code. Die Aktualisierung auf die neueste Version von Adobe Commerce oder Magento Open Source ist weiterhin die beste Methode zur Lösung von Qualitätsproblemen und sollte priorisiert werden.
 
 ## Abrufen und Verwenden des [!DNL Quality Patches Tool]
 
-Das Tool ist als Composer-Paket verfügbar. Für Adobe Commerce in Cloud-Infrastrukturen ist das Paket im ECE-Tools-Paket enthalten.
+Das Tool ist als Composer-Paket verfügbar. Für Adobe Commerce auf Cloud-Infrastrukturen ist das Paket im Paket ECE-Tools enthalten.
 
-Nachdem Sie das Tool installiert haben, können Sie jederzeit nach verfügbaren Patches suchen und diese anwenden oder wiederherstellen.
+Nach der Installation des Tools können Sie nach verfügbaren Patches suchen und diese jederzeit anwenden oder zurücksetzen.
 
 ## Verwandtes Lesen
 
-* [Im Werkzeug für Qualitätsmuster verfügbare Patches](/help/tools/quality-patches-tool/usage.md)
-* [Versionshinweise zum Qualitätsmuster-Tool](/help/tools/quality-patches-tool/release-notes.md)
+* [Im Quality Patches Tool verfügbare Patches](/help/tools/quality-patches-tool/usage.md)
+* [Versionshinweise zum Quality Patches Tool](/help/tools/quality-patches-tool/release-notes.md)

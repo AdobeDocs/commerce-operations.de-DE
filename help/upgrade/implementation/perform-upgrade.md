@@ -12,43 +12,43 @@ ht-degree: 0%
 
 # Durchführen eines Upgrades
 
-Sie können über die Befehlszeile eine Aktualisierung von _lokalen_ -Implementierungen der Adobe Commerce-Anwendung durchführen, wenn Sie die Software installiert haben, indem Sie:
+Sie können _On-Premise_-Bereitstellungen der Adobe Commerce-Anwendung über die Befehlszeile aktualisieren, wenn Sie die Software wie folgt installiert haben:
 
-- Herunterladen des Composer-Metapakets mit dem Befehl `composer create-project` .
+- Herunterladen des Composer-Metapakets mit dem `composer create-project`.
 - Installieren des komprimierten Archivs.
 
 >[!NOTE]
 >
->- Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Upgrade der Commerce-Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) im Cloud-Handbuch.
->- Verwenden Sie diese Methode nicht zum Aktualisieren, wenn Sie das GitHub-Repository geklont haben. Siehe [Aktualisieren einer Git-basierten Installation](../developer/git-installs.md).
+>- Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Commerce-Version aktualisieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) im Cloud-Handbuch.
+>- Verwenden Sie diese Methode nicht zum Upgrade, wenn Sie das GitHub-Repository geklont haben. Siehe [Upgrade einer Git-basierten Installation](../developer/git-installs.md).
 
-Die folgenden Anweisungen zeigen Ihnen, wie Sie ein Upgrade mit dem Composer Package Manager durchführen. Adobe Commerce 2.4.2 unterstützt Composer 2. Wenn Sie versuchen, ein Upgrade von &lt;2.4.1 durchzuführen, müssen Sie zunächst ein Upgrade auf eine Version durchführen, die mit Composer 2 kompatibel ist (z. B. 2.4.2), indem Sie Composer 1 _vor_ Upgrade auf Composer 2 für >2.4.2-Upgrades verwenden. Darüber hinaus müssen Sie eine [unterstützte Version](../../installation/system-requirements.md) von PHP ausführen.
+Die folgenden Anweisungen zeigen Ihnen, wie Sie mit dem Composer Package Manager ein Upgrade durchführen. Mit Adobe Commerce 2.4.2 wurde Unterstützung für Composer 2 eingeführt. Wenn Sie versuchen, von &lt;2.4.1 auf eine Version zu aktualisieren, die mit Composer 2 kompatibel ist (z. B. 2.4.2), müssen Sie zunächst Composer 1 _vor_ aktualisieren auf Composer 2 für >2.4.2-Upgrades. Außerdem muss eine (unterstützte[ Version von PHP ](../../installation/system-requirements.md) werden.
 
 >[!WARNING]
 >
->Das Upgrade-Verfahren für Adobe Commerce wurde geändert. Sie müssen eine neue Version des `magento/composer-root-update-plugin`-Pakets installieren (siehe [Voraussetzungen](../prepare/prerequisites.md)). Darüber hinaus haben sich die Befehle für die Aktualisierung von `composer require magento/<package_name>` in `composer require-commerce magento/<package_name>` geändert.
+>Das Verfahren zum Aktualisieren von Adobe Commerce wurde geändert. Sie müssen eine neue Version des `magento/composer-root-update-plugin` installieren (siehe [Voraussetzungen](../prepare/prerequisites.md)). Darüber hinaus wurden die Befehle zum Aktualisieren von `composer require magento/<package_name>` in `composer require-commerce magento/<package_name>` geändert.
 
 ## Bevor Sie beginnen
 
-Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) erfüllen, um Ihre Umgebung vorzubereiten, bevor Sie den Aktualisierungsprozess starten.
+Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) abschließen, um Ihre Umgebung vorzubereiten, bevor Sie den Upgrade-Prozess starten.
 
-## Packages verwalten
+## Verwalten von Paketen
 
 >[!NOTE]
 >
->In den Beispielen am Ende dieses Abschnitts finden Sie Hilfe zum Festlegen verschiedener Release-Ebenen. Beispielsweise Qualitäts-Patches und Sicherheits-Patches. Wenn Sie diese Pakete nicht in Composer finden können, wenden Sie sich an den Adobe Commerce-Support.
+>In den Beispielen am Ende dieses Abschnitts finden Sie Hilfe bei der Angabe verschiedener Versionsebenen. Beispielsweise hochwertige Patches und Sicherheits-Patches. Wenn Sie diese Pakete nicht in Composer finden können, wenden Sie sich an den Adobe Commerce-Support.
 
-1. Wechseln Sie in den Wartungsmodus, um während des Aktualisierungsprozesses den Zugriff auf Ihren Speicher zu verhindern.
+1. Wechseln Sie in den Wartungsmodus, um den Zugriff auf Ihren Store während des Upgrade-Prozesses zu verhindern.
 
    ```bash
    bin/magento maintenance:enable
    ```
 
-   Weitere Optionen finden Sie unter [Wartungsmodus aktivieren oder deaktivieren](../../installation/tutorials/maintenance-mode.md) . Optional können Sie eine [benutzerdefinierte Seite für den Wartungsmodus ](../troubleshooting/maintenance-mode-options.md) erstellen.
+   Siehe [Aktivieren oder Deaktivieren des ](../../installation/tutorials/maintenance-mode.md)) für zusätzliche Optionen. Optional können Sie eine [benutzerdefinierte Wartungsmodusseite“ ](../troubleshooting/maintenance-mode-options.md).
 
-1. Der Start des Aktualisierungsprozesses während der Ausführung asynchroner Prozesse, z. B. von Verbrauchern in der Nachrichtenwarteschlange, kann zu Datenbeschädigungen führen. Um Datenbeschädigungen zu vermeiden, deaktivieren Sie alle Cron-Aufträge.
+1. Das Starten des Upgrade-Prozesses während der Ausführung asynchroner Prozesse, z. B. der Nachrichtenwarteschlange für Verbraucher, kann zu Datenbeschädigungen führen. Um Datenbeschädigungen zu verhindern, deaktivieren Sie alle Cron-Aufträge.
 
-   _Adobe Commerce in der Cloud-Infrastruktur:_
+   _Adobe Commerce auf Cloud-Infrastruktur:_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
@@ -60,23 +60,23 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) erfüllen
    bin/magento cron:remove
    ```
 
-1. Starten Sie alle Verbraucher in der Nachrichtenwarteschlange manuell, um sicherzustellen, dass alle Nachrichten verbraucht werden.
+1. Starten Sie alle Nachrichtenwarteschlangenbenutzer manuell, um sicherzustellen, dass alle Nachrichten verarbeitet werden.
 
    ```bash
    bin/magento cron:run --group=consumers
    ```
 
-   Warten Sie, bis der Cron-Auftrag abgeschlossen ist. Sie können den Status des Auftrags mit einem Prozess-Viewer überwachen oder den Befehl `ps aux | grep 'bin/magento queue'` mehrmals ausführen, bis alle Prozesse abgeschlossen sind.
+   Warten Sie, bis der Cron-Vorgang abgeschlossen ist. Sie können den Status des Auftrags mit einem Prozess-Viewer überwachen oder indem Sie den `ps aux | grep 'bin/magento queue'`-Befehl mehrmals ausführen, bis alle Prozesse abgeschlossen sind.
 
-1. Erstellen Sie eine Sicherung der Datei &quot;`composer.json`&quot;.
+1. Erstellen Sie eine Sicherung der `composer.json`.
 
    ```bash
    cp composer.json composer.json.bak
    ```
 
-1. Fügen Sie spezifische Pakete entsprechend Ihren Anforderungen hinzu oder entfernen Sie sie.
+1. Fügen Sie bestimmte Pakete je nach Bedarf hinzu oder entfernen Sie sie.
 
-   Wenn Sie beispielsweise von Magento Open Source auf Adobe Commerce aktualisieren, entfernen Sie das Magento Open Source-Package.
+   Wenn Sie beispielsweise ein Upgrade von Magento Open Source auf Adobe Commerce durchführen, entfernen Sie das Magento Open Source-Package.
 
    ```bash
    composer remove magento/product-community-edition --no-update
@@ -100,7 +100,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) erfüllen
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
      ```
 
-1. Aktualisieren Sie Ihre Instanz mit der folgenden `composer require-commerce` -Befehlssyntax:
+1. Aktualisieren Sie Ihre Instanz mithilfe der folgenden `composer require-commerce`-Befehlssyntax:
 
    ```bash
    composer require-commerce magento/<product> <version> --no-update [--interactive-root-conflicts] [--force-root-updates] [--help]
@@ -108,19 +108,19 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) erfüllen
 
    Zu den Befehlsoptionen gehören:
 
-   - `<product>` - (Erforderlich) Das zu aktualisierende Paket. Bei lokalen Installationen muss dieser Wert entweder `product-community-edition` oder `product-enterprise-edition` betragen.
+   - `<product>` - (Erforderlich) Das zu aktualisierende Paket. Bei On-Premise-Installationen muss dieser Wert entweder `product-community-edition` oder `product-enterprise-edition` sein.
 
-   - `<version>` - (Erforderlich) Die Version von Adobe Commerce, auf die Sie ein Upgrade durchführen. Beispiel: `2.4.3`.
+   - `<version>` - (Erforderlich) Die Adobe Commerce-Version, auf die Sie ein Upgrade durchführen. Beispiel: `2.4.3`.
 
-   - `--no-update` - (Erforderlich) Deaktiviert die automatische Aktualisierung der Abhängigkeiten.
+   - `--no-update` -(Erforderlich) Deaktiviert die automatische Aktualisierung der Abhängigkeiten.
 
-   - `--interactive-root-conflicts` - (Optional) Ermöglicht Ihnen die interaktive Ansicht und Aktualisierung von nicht mehr aktuellen Werten aus früheren Versionen oder von benutzerdefinierten Werten, die nicht mit der Version übereinstimmen, auf die Sie aktualisieren.
+   - `--interactive-root-conflicts` - (Optional) Ermöglicht die interaktive Anzeige und Aktualisierung veralteter Werte aus früheren Versionen oder benutzerdefinierter Werte, die nicht mit der Version übereinstimmen, auf die Sie ein Upgrade durchführen.
 
-   - `--force-root-updates` - (Optional) Überschreibt alle in Konflikt stehenden benutzerdefinierten Werte mit den erwarteten Commerce-Werten.
+   - `--force-root-updates` - (Optional) Überschreibt alle im Konflikt stehenden benutzerdefinierten Werte mit den erwarteten Commerce-Werten.
 
-   - `--help` —(Optional) Bietet Nutzungsdetails zum Plug-in.
+   - `--help` - (Optional) Enthält Nutzungsdetails zum Plug-in.
 
-   Wenn weder `--interactive-root-conflicts` noch `--force-root-updates` angegeben sind, behält der Befehl die vorhandenen Konfliktwerte bei und zeigt eine Warnmeldung an. Weitere Informationen zum Plug-in finden Sie in der [Gebrauchsanleitung für Plug-ins](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
+   Wenn weder `--interactive-root-conflicts` noch `--force-root-updates` angegeben sind, behält der Befehl die vorhandenen Werte bei, die in Konflikt stehen, und zeigt eine Warnmeldung an. Weitere Informationen zum Plug-in finden Sie in der [README zur Verwendung von Plug-ins](https://github.com/magento/composer-root-update-plugin/blob/develop/src/Magento/ComposerRootUpdatePlugin/README.md).
 
 1. Aktualisieren Sie die Abhängigkeiten.
 
@@ -130,7 +130,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) erfüllen
 
 ### Beispiel - Liste der verfügbaren Versionen
 
-Die vollständige Liste der verfügbaren 2.4.x-Versionen finden Sie unter:
+So zeigen Sie die vollständige Liste der verfügbaren 2.4.x-Versionen an:
 
 _Magento Open Source_:
 
@@ -146,7 +146,7 @@ composer show magento/product-enterprise-edition 2.4.* --available | grep -m 1 v
 
 ### Beispiel - Qualitäts-Patch
 
-Qualitäts-Patches enthalten in erster Linie funktionale Sicherheitskorrekturen für _und_. Sie können jedoch manchmal neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer , um einen Qualitäts-Patch herunterzuladen.
+Qualitäts-Patches enthalten hauptsächlich funktionale _und_ Sicherheitskorrekturen. Sie können jedoch manchmal neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer, um einen Qualitäts-Patch herunterzuladen.
 
 _Adobe Commerce_:
 
@@ -162,7 +162,7 @@ composer require-commerce magento/product-community-edition 2.4.6 --no-update
 
 ### Beispiel - Sicherheits-Patch
 
-Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie sind so konzipiert, dass der Aktualisierungsprozess schneller und einfacher wird. Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.x-px`.
+Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie wurden entwickelt, um den Upgrade-Prozess schneller und einfacher zu machen. Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.x-px`.
 
 _Adobe Commerce_:
 
@@ -178,19 +178,19 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 ## Aktualisieren von Metadaten
 
-1. Aktualisieren Sie die Felder `"name"`, `"version"` und `"description"` in der Datei `composer.json` nach Bedarf.
+1. Aktualisieren Sie die Felder `"name"`, `"version"` und `"description"` in der `composer.json` nach Bedarf.
 
    >[!NOTE]
    >
-   >Die Aktualisierung der Metadaten in der Datei &quot;`composer.json`&quot; ist vollkommen oberflächlich und funktioniert nicht.
+   >Die Aktualisierung der Metadaten in der `composer.json`-Datei ist nur oberflächlich, nicht funktionsfähig.
 
-1. Wenden Sie Aktualisierungen an.
+1. Aktualisierungen anwenden.
 
    ```bash
    composer update
    ```
 
-1. Löschen Sie die Unterverzeichnisse `var/` und `generated/`:
+1. Löschen Sie die `var/` und `generated/` Unterverzeichnisse:
 
    ```bash
    rm -rf var/cache/*
@@ -208,21 +208,21 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
    >
    >Wenn Sie einen anderen Cache-Speicher als das Dateisystem verwenden, z. B. Redis oder Memcached, müssen Sie den Cache auch dort manuell löschen.
 
-1. Datenbankschema und Daten aktualisieren.
+1. Datenbankschema und -daten aktualisieren.
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. Wartungsmodus deaktivieren.
+1. Deaktivieren Sie den Wartungsmodus.
 
    ```bash
    bin/magento maintenance:disable
    ```
 
-1. _(Optional)_ Varnish neu starten.
+1. _(optional)_ Lack neu starten.
 
-   Wenn Sie für die Seiten-Zwischenspeicherung &quot;Varnish&quot;verwenden, starten Sie es neu:
+   Wenn Sie Lack für das Zwischenspeichern von Seiten verwenden, starten Sie es neu:
 
    ```bash
    service varnish restart
@@ -230,11 +230,11 @@ composer require-commerce magento/product-community-edition 2.4.6-p3 --no-update
 
 ## Überprüfen Sie Ihre Arbeit
 
-Um zu überprüfen, ob das Upgrade erfolgreich war, öffnen Sie Ihre Storefront-URL in einem Webbrowser. Wenn Ihr Upgrade nicht erfolgreich war, wird Ihre Storefront nicht ordnungsgemäß geladen.
+Um zu überprüfen, ob das Upgrade erfolgreich war, öffnen Sie Ihre Storefront-URL in einem Webbrowser. Wenn das Upgrade nicht erfolgreich war, wird Ihre Storefront nicht ordnungsgemäß geladen.
 
-Wenn die Anwendung mit einem `We're sorry, an error has occurred while generating this email.` -Fehler fehlschlägt:
+Wenn die Anwendung mit einem `We're sorry, an error has occurred while generating this email.` Fehler fehlschlägt:
 
-1. Zurücksetzen von [Dateisystemeigentum und -berechtigungen](../../installation/prerequisites/file-system/configure-permissions.md) als Benutzer mit `root` -Berechtigungen.
+1. Setzen Sie [Dateisysteminhaber und -berechtigungen](../../installation/prerequisites/file-system/configure-permissions.md) als Benutzer mit `root` zurück.
 1. Löschen Sie die folgenden Ordner:
    - `var/cache/`
    - `var/page_cache/`

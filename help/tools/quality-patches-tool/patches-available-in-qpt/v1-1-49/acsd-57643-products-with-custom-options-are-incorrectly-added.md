@@ -21,22 +21,22 @@ Der Patch ACSD-57643 behebt das Problem, dass Produkte mit benutzerdefinierten O
 
 * Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p3
 
-**Kompatibel mit Adobe Commerce- und Magento Open Source-Versionen:**
+**Kompatibel mit Adobe Commerce und Magento Open Source-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6 - p7
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p7
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
 Produkte mit benutzerdefinierten Optionen werden fälschlicherweise über GraphQL zum Warenkorb hinzugefügt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein benutzerdefiniertes Optionsfeld für das Produkt.
-1. Generieren Sie ein Kunden-Token mit GraphQL.
+1. Erstellen Sie ein benutzerdefiniertes Feld vom Typ „Option“ für das Produkt.
+1. Generieren eines Kunden-Tokens mit GraphQL.
 1. Erstellen Sie einen leeren Warenkorb.
 1. Fügen Sie das Produkt mithilfe der folgenden Payload zum Warenkorb hinzu:
 
@@ -98,7 +98,7 @@ Produkte mit benutzerdefinierten Optionen werden fälschlicherweise über GraphQ
    }
    ```
 
-1. Sie werden sehen, dass das Produkt nur einmal hinzugefügt wird:
+1. Das Produkt wird nur einmal hinzugefügt:
 
    ```json
    {
@@ -141,19 +141,19 @@ Ein Produkt kann mit verschiedenen benutzerdefinierten Optionen für dieselbe SK
 
 Es ist nicht möglich, ein Produkt mit verschiedenen benutzerdefinierten Optionen für dieselbe SKU gleichzeitig zum Warenkorb hinzuzufügen.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

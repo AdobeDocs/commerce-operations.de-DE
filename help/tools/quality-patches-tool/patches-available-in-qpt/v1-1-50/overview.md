@@ -1,6 +1,6 @@
 ---
 title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.50'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.50 verfügbaren Patches behoben wurden.
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.50  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 4e136531-6bd4-4294-9a5a-66d19eb136db
@@ -15,22 +15,22 @@ ht-degree: 0%
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.50 verfügbaren Patches behoben wurden.
 
-QPT v1.1.50 umfasst die folgenden Patches:
+QPT v1.1.50 enthält die folgenden Patches:
 
-1. **ACSD-59280**: Behebung des Problems, bei dem der Fehler *Aufruf der nicht definierten Methode ReflectionUnionType::getName()* auftritt, wenn 2.4.4-pX-Versionen installiert werden.
-1. **ACSD-45049**: Behebung des Problems, bei dem die Kundenattributeinstellung *[!UICONTROL Is required]* gemäß dem Website-Umfang in Admin nicht ordnungsgemäß funktioniert.
-1. **ACSD-46938**: Behebt das Problem mit der Leistung der DB-Trigger-Neuerstellung während `setup:upgrade`.
-1. **ACSD-48210**: Behebung des Problems, bei dem beim Aktualisieren des *[!UICONTROL website scope]* -Attributs in einer bestimmten Store-Ansicht die Attributwerte im globalen Gültigkeitsbereich außer Kraft gesetzt werden.
-1. **ACSD-54887**: Behebung des Problems, bei dem der Warenkorb für Kunden gelöscht wird, nachdem die Kundensitzung abgelaufen ist und *[!UICONTROL Persistent Shopping Cart]* aktiviert ist.
-1. **ACSD-58141**: Behebung des Problems, bei dem `PHPSESSID` bei POST-Anforderungen im Storefront-Bereich für einen angemeldeten  neu generiert wurde, wenn [!UICONTROL L2 Redis cache] aktiviert ist und der Kunde vom Administrator aktualisiert wird.
-1. **ACSD-58352**: Behebung des Problems, bei dem Rückgabeattributbeschriftungen für die standardmäßige Store-Ansicht über die GraphQL-API zurückgegeben werden, wenn eine nicht standardmäßige Store-Ansicht im Anfrageheader angegeben ist.
-1. **ACSD-58442**: Behebung des Problems, bei dem Geräte mit einer Breite von *768 px* als Mobilgeräte behandelt werden, wodurch das Menü und die Kopfzeile in einer Mobile-Ansicht statt auf dem Desktop geladen werden.
-1. **ACSD-58790**: Behebt die Funktion *Pinch-to-Zoom* für die Produktdetailseiten-Bilder in der Mobile-Ansicht auf [!DNL Chrome].
-1. **ACSD-59036**: Behebt eine Ausnahme, die beim Laden von Produktpreisen mit niedrigeren und oberen Grenzen von *$0* auftritt.
-1. **ACSD-59229**: Behebung des Problems, bei dem gruppenbezogene Kundeninformationen aufgrund des alten Werts von [!UICONTROL X-Magento-Vary] in der Anfrage im falschen Segment gespeichert wurden.
-1. **ACSD-59378**: Behebung des Problems, bei dem URL-Neuschreibungen auf Store-Ebene beim Import falsch aktualisiert werden.
-1. **ACSD-59514**: Behebung des Problems, bei dem Formulare im Admin-Bereich mit [!DNL Page Builder] die *[!DNL Page Builder]5 Sekunden lang gerendert wurden, ohne Sperren freizugeben.* -Fehler in der Browser-Konsole nach dem Senden des Formulars und Änderungen können nicht gespeichert werden.
-1. **ACSD-60303**: Behebung des Problems, bei dem eine Bestellung von Admin nicht platziert werden kann, wenn die HTML-Minimierung aktiviert ist.
-1. **ACSD-60441**: Behebung des Problems beim Aktualisieren von Kunden über den `V1/customers REST API` -Endpunkt bei Verwendung des vom Backend generierten Integrationszugriffstokens.
+1. **ACSD-59280**: Es wurde das Problem behoben, bei dem der Fehler *Aufruf an undefinierte Methode ReflectionUnionType::getName()* bei der Installation von 2.4.4-pX-Versionen auftritt.
+1. **ACSD-45049**: Es wurde ein Problem behoben, bei dem die Einstellung des Kundenattributs *[!UICONTROL Is required]* gemäß Website-Umfang in Admin nicht ordnungsgemäß funktioniert.
+1. **ACSD-46938**: Behebt das Problem mit der Performance der DB-Trigger-Neuerstellung während der `setup:upgrade`.
+1. **ACSD-48210**: Es wird ein Problem behoben, bei dem durch die Aktualisierung des *[!UICONTROL website scope]*-Attributs in einer bestimmten Store-Ansicht die Attributwerte im globalen Umfang überschrieben werden.
+1. **ACSD-54887**: Es wurde ein Problem behoben, bei dem der Warenkorb des Kunden geleert wurde, nachdem die Kundensitzung mit aktiviertem *[!UICONTROL Persistent Shopping Cart]* abgelaufen war.
+1. **ACSD-58141**: Es wurde ein Problem behoben, bei dem `PHPSESSID` bei POST-Anfragen im Storefront-Bereich für einen angemeldeten Kunden neu generiert wird, wenn die [!UICONTROL L2 Redis cache] aktiviert ist und der Kunde von „Admin“ aktualisiert wurde.
+1. **ACSD-58352**: Es wird das Problem behoben, bei dem Rückgabeattributbeschriftungen für die Standardspeicheransicht über die GraphQL-API zurückgegeben werden, wenn in der Anfragekopfzeile eine nicht standardmäßige Speicheransicht angegeben ist.
+1. **ACSD-58442**: Es wird das Problem behoben, dass Geräte mit einer Breite von *768px* als Mobilgeräte behandelt werden, wodurch das Menü und die Kopfzeile in einer Mobilansicht anstelle eines Desktops geladen werden.
+1. **ACSD-58790**: Korrigiert *Pinch-to-Zoom*-Funktion auf den Produktdetailseiten-Bildern in der Mobilansicht auf [!DNL Chrome].
+1. **ACSD-59036**: Behebt eine Ausnahme, die beim Laden von Produktpreisen mit unteren und oberen Grenzen gleich *$0* auftritt.
+1. **ACSD-59229**: Es wird das Problem behoben, dass Informationen zu Kundengruppen aufgrund des alten Werts der [!UICONTROL X-Magento-Vary] in der Anfrage im falschen Segment gespeichert werden.
+1. **ACSD-59378**: Es wird das Problem behoben, dass URL-Neuschreibungen auf Store-Ebene beim Import fälschlicherweise aktualisiert werden.
+1. **ACSD-59514**: Es wurde das Problem behoben, dass Formulare im Admin-Bereich mit [!DNL Page Builder] den *[!DNL Page Builder]5 Sekunden lang gerendert haben, ohne Sperren freizugeben.* Fehler in der Browser-Konsole nach dem Senden des Formulars und Änderungen können nicht gespeichert werden.
+1. **ACSD-60303**: Es wurde ein Problem behoben, bei dem eine Bestellung vom Administrator nicht aufgegeben werden konnte, wenn die HTML-Minimierung aktiviert war.
+1. **ACSD-60441**: Es wurde ein Problem behoben, bei dem Kunden über `V1/customers REST API` Endpunkt aktualisiert wurden, wenn das vom Backend generierte Integrations-Zugriffstoken verwendet wurde.
 
-Navigieren Sie über das Menü links zu einer bestimmten Patch-Seite.
+Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

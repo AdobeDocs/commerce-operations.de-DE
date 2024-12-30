@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-62485: `async.operations.all` consumer stop working when company is created'
-description: Wenden Sie den Patch ACSD-62485 an, um das Adobe Commerce-Problem zu beheben, bei dem der Verbraucher "async.operations.all"nicht mehr funktioniert, wenn ein B2B-Unternehmen erstellt wird.
+title: 'ACSD-62485: Verbraucher „async.operations.all“ funktioniert nicht mehr, wenn ein Unternehmen erstellt wird'
+description: Wenden Sie den Patch ACSD-62485 an, um das Adobe Commerce-Problem zu beheben, bei dem der Verbraucher „async.operations.all“ nicht mehr funktioniert, wenn ein B2B-Unternehmen erstellt wird.
 feature: B2B, Companies
 role: Admin, Developer
 exl-id: 99d20555-fe55-4a04-a067-5a2b104811f5
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-62485: `async.operations.all` Consumer funktioniert nicht mehr, wenn ein Unternehmen erstellt wird
+# ACSD-62485: `async.operations.all` Verbraucher funktioniert nicht mehr, wenn ein Unternehmen erstellt wird
 
-Der Patch ACSD-62485 behebt das Problem, dass der `async.operations.all` -Verbraucher bei der Erstellung eines B2B-Unternehmens nicht mehr funktioniert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 installiert ist. Die Patch-ID ist ACSD-62485. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Mit dem Patch ACSD-62485 wird das Problem behoben, dass der `async.operations.all` Consumer nicht mehr funktioniert, wenn ein B2B-Unternehmen erstellt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54 installiert ist. Die Patch-ID ist ACSD-62485. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,21 +27,21 @@ Der Patch ACSD-62485 behebt das Problem, dass der `async.operations.all` -Verbra
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der `async.operations.all` -Verbraucher stoppt die Verarbeitung von Nachrichten, wenn ein B2B-Unternehmen asynchron erstellt wird, während der Verbraucher noch ausgeführt wird.
+Der `async.operations.all` Consumer stoppt die Verarbeitung von Nachrichten, wenn ein B2B-Unternehmen asynchron erstellt wird, während der Consumer noch ausgeführt wird.
 
 <u>Voraussetzungen</u>:
 
-B2B-Module werden installiert und aktiviert.
+B2B-Module sind installiert und aktiviert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie zwei Kunden.
-1. Senden Sie eine REST-Massenanfrage, um zwei Unternehmen zu erstellen und die erstellten Kunden als Unternehmensadministratoren zuzuweisen.
-1. Starten Sie den Verbraucher mit dem folgenden Befehl:
+1. Senden Sie eine REST-Massenanfrage, um zwei Unternehmen zu erstellen, wobei die erstellten Kunden als Unternehmensadministratoren zugewiesen werden.
+1. Starten Sie den -Verbraucher mit dem folgenden Befehl:
 
    ``` bin/magento queue:consumer:start async.operations.all --max-messages=20000 ```
 
@@ -51,17 +51,17 @@ Der Verbraucher verarbeitet 20.000 Nachrichten und endet erfolgreich.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Verbraucher funktioniert bei der Ausführung nicht mehr sofort.
+Der Verbraucher funktioniert nach der Ausführung nicht mehr sofort.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.

@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-39163: Versandmethoden für neu registrierte Benutzer mit Produkten aus Gastsitzungen nicht verfügbar'
-description: Der Patch MDVA-39163 behebt das Problem, dass die Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert wird und Produkte aus der Gastsitzung stammen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-39163. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+title: 'MDVA-39163: Versandmethoden für neu registrierte Benutzer mit Produkten aus der Gastsitzung nicht verfügbar'
+description: Der MDVA-39163 Patch löst das Problem, dass die Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert ist und Produkte im Warenkorb aus der Gastsitzung stammen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-39163. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: CMS, Marketing Tools, Orders, Products, Shipping/Delivery
 role: Admin
 exl-id: 781b466b-7d8f-4ad1-9fb4-5404cd02f7d8
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-39163: Versandmethoden für neu registrierte Benutzer mit Produkten aus Gastsitzungen nicht verfügbar
+# MDVA-39163: Versandmethoden für neu registrierte Benutzer mit Produkten aus der Gastsitzung nicht verfügbar
 
-Der Patch MDVA-39163 behebt das Problem, dass die Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert wird und Produkte aus der Gastsitzung stammen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-39163. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der MDVA-39163 Patch löst das Problem, dass die Versandmethoden nicht verfügbar sind, wenn ein neuer Benutzer registriert ist und Produkte im Warenkorb aus der Gastsitzung stammen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-39163. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,49 +27,49 @@ Der Patch MDVA-39163 behebt das Problem, dass die Versandmethoden nicht verfügb
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Versandmethoden sind nicht verfügbar, wenn der neue Benutzer registriert wird und Produkte im Warenkorb aus der Gastsitzung stammen.
+Versandmethoden sind nicht verfügbar, wenn der neue Benutzer registriert ist, und Produkte im Warenkorb stammen aus der Gastsitzung.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Gehen Sie zu **Admin** > **Stores** > **Konfiguration** > **Verkauf** > **Bereitstellungsmethoden**. Aktivieren Sie nur die Versandmethode **Pauschalsatz** und deaktivieren Sie alle anderen Optionen.
-1. Wählen Sie in der Versandmethode **Pauschalsatz** die Option **Spezifisches Land** aus, die in der Einstellung **In Gültige Länder versenden** verfügbar ist, und wählen Sie ein Land aus der Liste aus (z. B. USA).
-1. Wechseln Sie zu **Admin** > **Geschäfte** > **Konfiguration** > **Kunde** > **Kundenkonfiguration** und legen Sie **E-Mail-Bestätigung erforderlich** auf _Ja_ fest.
-1. Erstellen Sie eine neue E-Mail-Vorlage in &quot;**Admin**&quot;> &quot;**Marketing**&quot;> &quot;**E-Mail-Vorlagen**&quot;, laden Sie die Vorlage &quot;`Footer (magento/luma)`&quot; und ersetzen Sie den Vorlageninhalt durch einen CMS-Block.
+1. Navigieren Sie **Admin** > **Stores** > **Konfiguration** > **Verkauf** > **Versandmethoden**. Aktivieren Sie nur die Versandmethode **Flat Rate** und deaktivieren Sie alles andere.
+1. Wählen Sie in der Versandart **Flat Rate** die Option **Specific** country, die in der Einstellung **In zutreffende Länder versenden** verfügbar ist, und wählen Sie ein Land aus der Liste aus (z. B. Vereinigte Staaten).
+1. Gehen Sie zu **Admin** > **Stores** > **Configuration** > **Customer** > **Customer Configuration** und setzen Sie **Require email confirmation** auf _Yes_.
+1. Erstellen Sie eine neue E-Mail-Vorlage unter **Admin** > **Marketing** > **E-Mail-**, laden Sie `Footer (magento/luma)` Vorlage und ersetzen Sie den Vorlageninhalt durch einen CMS-Block.
 
    ```CMS
    {{block class="Magento\Cms\Block\Block" block_id="footer_links_block"}}
    ```
 
-1. Navigieren Sie zu **Admin** > **Inhalt** > **Design** > **Konfiguration** und wählen Sie das Design aus, das sich auf Ihre Frontend-Website bezieht. Wählen Sie für die Fußzeilenvorlage die neu erstellte E-Mail-Vorlage aus.
+1. Gehen Sie **Admin** > **Inhalt** > **Design** > **Konfiguration** und wählen Sie das Design aus, das sich auf Ihre Frontend-Website bezieht. Legen Sie die „Fußzeilen-Vorlage“ auf die neu erstellte E-Mail-Vorlage fest.
 1. Gehen Sie zum Frontend und fügen Sie dem Warenkorb ein Produkt hinzu.
-1. Erstellen Sie einen Kunden. Sie erhalten eine E-Mail, um die E-Mail-Adresse zu bestätigen. Klicken Sie auf den Verifizierungslink. Sie werden auf der Webseite angemeldet.
-1. Gehen Sie zu **Mein Konto** und fügen Sie eine Adresse hinzu. Legen Sie das Adressland auf das Versandland fest, das Sie zuvor in der Admin-Konfiguration festgelegt haben.
-1. Gehen Sie zum Checkout.
+1. Kunden erstellen; Sie erhalten eine E-Mail zur Bestätigung der E-Mail-Adresse. Klicken Sie auf den Bestätigungs-Link. Sie werden bei der Website eingeloggt.
+1. Gehen Sie zu **Mein Konto** und fügen Sie eine Adresse hinzu. Legen Sie die Länderadresse auf das Versandland fest, das Sie zuvor in der Admin-Konfiguration festgelegt haben.
+1. Zur Kasse gehen.
 
 <u>Erwartete Ergebnisse</u>:
 
-Versandmethode ist verfügbar, da der Kunde eine Adresse hat, die mit dem Versandland kompatibel ist.
+Die Versandart ist verfügbar, da der Kunde eine Adresse hat, die mit dem Versandland kompatibel ist.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Versandmethode ist nicht verfügbar.
+Versandart ist nicht verfügbar.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

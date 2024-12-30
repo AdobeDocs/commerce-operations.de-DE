@@ -3,13 +3,13 @@ title: 'ACSD-62979: Eine falsche Store-ID in der GraphQL-Kopfzeile verursacht ei
 description: Wenden Sie den Patch ACSD-62979 an, um das Adobe Commerce-Problem zu beheben, bei dem die Verwendung der falschen Store-ID in der GraphQL-Kopfzeile einen schwerwiegenden Speicherfehler verursacht
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: 16875f95ab23559d4e1081b8cfe0374e1394d87d
+exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
+source-git-commit: 6803cf2bf27e99300f682308517011b73127fd94
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62979: Eine falsche Store-ID in der GraphQL-Kopfzeile verursacht einen schwerwiegenden Speicherfehler
 
@@ -93,4 +93,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-

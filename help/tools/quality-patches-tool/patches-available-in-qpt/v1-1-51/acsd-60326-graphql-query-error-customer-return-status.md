@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-60326: GraphQL-Abfrage zum Status [!UICONTROL Returns] des Kunden erzeugt einen Fehler'
-description: Wenden Sie den Patch ACSD-60326 an, um das Adobe Commerce-Problem zu beheben, bei dem in der GraphQL-Abfrage für den Kundenstatus [!UICONTROL Returns] ein Fehler auftritt.
+title: 'ACSD-60326: Die GraphQL-Abfrage zum [!UICONTROL Returns] des Kunden gibt einen Fehler aus'
+description: Wenden Sie den Patch ACSD-60326 an, um das Adobe Commerce-Problem zu beheben, bei dem in der GraphQL-Abfrage zum [!UICONTROL Returns] ein Fehler auftritt.
 feature: GraphQL, Returns, Customers
 role: Admin, Developer
 exl-id: 5cfd7e0d-8703-43a0-86d3-e69612347534
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-60326: GraphQL-Abfrage zum Status [!UICONTROL Returns] des Kunden erzeugt einen Fehler
+# ACSD-60326: Die GraphQL-Abfrage zum [!UICONTROL Returns] des Kunden gibt einen Fehler aus
 
-Der Patch ACSD-60326 behebt das Problem, dass in der GraphQL-Abfrage für den Status &quot;customer [!UICONTROL Returns]&quot;ein Fehler auftritt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 installiert ist. Die Patch-ID ist ACSD-60326. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Mit dem Patch ACSD-60326 wird das Problem behoben, dass in der GraphQL-Abfrage zum [!UICONTROL Returns] ein Fehler auftritt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.51 installiert ist. Die Patch-ID ist ACSD-60326. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,40 +27,40 @@ Der Patch ACSD-60326 behebt das Problem, dass in der GraphQL-Abfrage für den St
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die GraphQL-Abfrage zum Status [!UICONTROL Returns] des Kunden gibt einen Fehler zurück.
+GraphQL-Abfrage zum [!UICONTROL Returns] des Kunden gibt einen Fehler aus.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Initialisieren Sie eine neue Instanz mit Beispieldaten.
-1. Wechseln Sie auf der *[!UICONTROL Admin]* Seitenleiste zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL RMA Settings]** und setzen Sie **[!UICONTROL Enable RMA on Storefront]** auf *Ja*.
+1. Initialisieren einer neuen Instanz mit Beispieldaten
+1. Navigieren Sie in der *[!UICONTROL Admin]* Seitenleiste zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL RMA Settings]** und setzen Sie **[!UICONTROL Enable RMA on Storefront]** auf *Ja*.
 1. Gehen Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Shipping Settings]** > **[!UICONTROL Origin]** und füllen Sie die Adresse aus.
-1. Ändern Sie das Kennwort für den Kunden `roni_cost@example.com`.
-1. Melden Sie sich beim Admin Panel an und geben Sie eine Bestellung für den Kunden `roni_cost@example.com` mit den folgenden Produkten auf:
+1. Ändern Sie das Kennwort für die `roni_cost@example.com`.
+1. Melden Sie sich beim Admin-Bedienfeld an und geben Sie eine Bestellung für die `roni_cost@example.com` mit den folgenden Produkten auf:
    * *WSH12-32-Red*
    * *WSH12-32-Purple*
    * *WSH12-32-Green*
-1. Erstellen Sie eine *[!UICONTROL Invoice]* und eine *[!UICONTROL Shipment]* für diese Bestellung.
+1. *[!UICONTROL Invoice]* und *[!UICONTROL Shipment]* für diese Bestellung erstellen.
 1. Wählen Sie **[!UICONTROL Create Returns]** aus.
-1. Gehen Sie zu **[!UICONTROL Return Items]** > **[!UICONTROL Add Items]** und:
-   * Wählen Sie *WSH12-32-Red* und *WSH12-32-Purple* aus.
+1. Navigieren Sie zu **[!UICONTROL Return Items]** > **[!UICONTROL Add Items]** und:
+   * Wählen Sie *WSH12-32-Red* und *WSH12-32-Purple*
    * Klicken Sie auf **[!UICONTROL Add Selected Products to returns]**:
-      * Legen Sie **[!UICONTROL Requested]** = *1* fest
-      * Setzen Sie **[!UICONTROL Return Reason]** auf *Nicht mehr verfügbar*
-      * Setzen Sie **[!UICONTROL Item Condition]** auf *Geöffnet*
-      * Setzen Sie **[!UICONTROL Resolution]** auf *Refund*
+      * **[!UICONTROL Requested]** = *1*
+      * Setzen Sie **[!UICONTROL Return Reason]** auf *Out of Service*
+      * **[!UICONTROL Item Condition]** auf *Geöffnet*
+      * **[!UICONTROL Resolution]** auf *Rückerstattung*
    * Klicken Sie auf **[!UICONTROL Submit Returns]**.
 1. Öffnen Sie **[!UICONTROL Returns]** und wählen Sie links **[!UICONTROL Return Items]** aus.
-   * Legen Sie **[!UICONTROL Authorized]** = *1* für beide Produkte fest
-   * Setzen Sie **[!UICONTROL Status]** für *WSH12-32-Purple* auf *Authorized* .
-   * Setzen Sie **[!UICONTROL Status]** für *WSH12-32-Red* auf *Denied* .
-   * Klicken Sie auf **[!UICONTROL Save]**
+   * Setzen Sie **[!UICONTROL Authorized]** für beide *=* 1
+   * **[!UICONTROL Status]** als *Autorisiert* für *WSH12-32-Purple*
+   * Legen Sie **[!UICONTROL Status]** als *Verweigert* für *WSH12-32-Red* fest
+   * **[!UICONTROL Save]** klicken
 1. Erstellen Sie eine neue Bestellung mit denselben Produkten.
-1. Erstellen Sie eine *[!UICONTROL Invoice]*, *[!UICONTROL Shipment]* und *[!UICONTROL Returns]* für dieselben Produkte. Autorisieren Sie beide und fahren Sie bis zum Ende des [!UICONTROL Returns] -Prozesses fort.
-1. Generieren Sie mithilfe der folgenden GraphQL-Abfrage ein Kunden-Token:
+1. Erstellen Sie einen *[!UICONTROL Invoice]*, einen *[!UICONTROL Shipment]* und einen *[!UICONTROL Returns]* für dieselben Produkte. Autorisieren Sie beide und fahren Sie bis zum Ende des [!UICONTROL Returns] fort.
+1. Generieren Sie ein Kunden-Token mithilfe der folgenden GraphQL-Abfrage:
 
    ```GraphQL
     mutation {
@@ -140,18 +140,18 @@ Die Abfrage gibt einen internen Server-Fehler zurück:
     } 
 ```
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

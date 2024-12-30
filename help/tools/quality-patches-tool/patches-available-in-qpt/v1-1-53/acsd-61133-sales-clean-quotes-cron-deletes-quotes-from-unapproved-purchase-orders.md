@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-61133: `sales_clean_quotes` cron löscht Anführungszeichen aus nicht genehmigten Bestellungen'
-description: Wenden Sie den Patch ACSD-61133 an, um das Adobe Commerce-Problem zu beheben, bei dem `sales_clean_quotes` cron Anführungszeichen aus nicht genehmigten Bestellungen löscht.
+title: 'ACSD-61133: `sales_clean_quotes` cron löscht Angebote aus nicht genehmigten Bestellungen'
+description: Wenden Sie den Patch ACSD-61133 an, um das Adobe Commerce-Problem zu beheben, bei dem „sales_clean_quotes“ cron Angebote aus nicht genehmigten Bestellungen löscht.
 feature: B2B, Purchase Orders
 role: Admin, Developer
 exl-id: 06979d4b-08ea-40fe-a211-3d950c9afb47
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-61133: `sales_clean_quotes` cron löscht Anführungszeichen aus nicht genehmigten Bestellungen
+# ACSD-61133: `sales_clean_quotes` cron löscht Angebote aus nicht genehmigten Bestellungen
 
-Der Patch ACSD-61133 behebt das Problem, dass der `sales_clean_quotes`-Cron Anführungszeichen aus nicht genehmigten Bestellungen löscht. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.53 installiert ist. Die Patch-ID ist ACSD-61133. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Der Patch ACSD-61133 behebt das Problem, dass der `sales_clean_quotes` Cron Angebote aus nicht genehmigten Bestellungen löscht. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.53 installiert ist. Die Patch-ID ist ACSD-61133. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,41 +27,41 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4-p5 - 2.4.4-p11, 2.4.5-p4 - 2
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-`sales_clean_quotes` cron löscht Anführungszeichen aus nicht genehmigten Bestellungen. Der *[B2B-Kaufauftrag]* kann nicht in die Reihenfolge des mit der gekauften Bestellung verknüpften Angebots konvertiert werden, da der Cron ihn löscht.
+`sales_clean_quotes` Cron löscht Angebote aus nicht genehmigten Bestellungen. Die *[B2B-Bestellung]* kann nicht in die Bestellung des mit der gekauften Bestellung verknüpften Angebots konvertiert werden, da die Cron sie löscht.
 
 <u>Voraussetzungen</u>:
 
-Adobe Commerce [!UICONTROL B2B] -Module werden installiert und aktiviert.
+Adobe Commerce [!UICONTROL B2B]-Module sind installiert und aktiviert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Aktivieren Sie die Funktion *[!UICONTROL B2B Purchase Order]* .
-1. Erstellen Sie ein Unternehmen.
+1. *[!UICONTROL B2B Purchase Order]* aktivieren.
+1. Erstellen Sie eine Firma.
 1. Erstellen Sie eine *[!UICONTROL Purchase Order]*.
-1. Warten Sie, bis das Anführungszeichen abläuft und vom Cron gelöscht wird. Der Ablaufzeitraum für das Zitat kann mit **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]** eingestellt werden.
-1. Konvertieren Sie *[!UICONTROL Purchase Order]* über *[!UICONTROL My Purchase Order in Customer Dashboard]* oder mit [!DNL GraphQL] `placeOrderForPurchaseOrder` Mutation in die Reihenfolge.
+1. Warten Sie, bis das Angebot abläuft und vom Cron gelöscht wird. Der Ablaufzeitraum für Angebote kann über **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** > **[!UICONTROL General]** > **[!UICONTROL Default Expiration Period configuration]** festgelegt werden.
+1. Konvertieren Sie *[!UICONTROL Purchase Order]* über *[!UICONTROL My Purchase Order in Customer Dashboard]* oder mit [!DNL GraphQL] `placeOrderForPurchaseOrder`-Mutation in die Reihenfolge.
 
 <u>Erwartete Ergebnisse</u>:
 
-Das mit aktiven *[!UICONTROL Purchase Order]* verknüpfte Anführungszeichen wird nicht gelöscht, da es durch den Cron abgelaufen ist. Die Bestellung wird entweder auf der Storefront oder über [!DNL GraphQL] erfolgreich platziert.
+Das mit dem aktiven *[!UICONTROL Purchase Order]* verknüpfte Zitat wird vom Cron nicht gelöscht, da es abgelaufen ist. Die Bestellung wurde erfolgreich entweder in der Storefront oder über [!DNL GraphQL] aufgegeben.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Reihenfolge wird nicht platziert und ein Fehler wird auf der Storefront angezeigt oder in der Antwort [!DNL GraphQL] zurückgegeben.
+Die Bestellung wird nicht aufgegeben und ein Fehler wird in der Storefront angezeigt oder in der [!DNL GraphQL] Antwort zurückgegeben.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+* [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.

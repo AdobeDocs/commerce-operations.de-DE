@@ -1,6 +1,6 @@
 ---
 title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.5'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.5 verfügbaren Patches behoben wurden.
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.5  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin
 exl-id: 7d4d90ad-10a1-490c-836f-c1da144417ef
@@ -11,20 +11,20 @@ ht-degree: 0%
 
 ---
 
-# Überblick über [!DNL Quality Patches Tool] (QPT) v1.1.5
+# Übersicht über [!DNL Quality Patches Tool] (QPT) v1.1.5
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.5 verfügbaren Patches behoben wurden.
 
 QPT v1.1.5 enthält die folgenden Patches:
 
-1. **MDVA-31763**: Behebung des Problems, bei dem Katalogpreisregeln bis zu einer manuellen Neuindizierung zurückgesetzt (oder nicht angewendet) werden.
-1. **MDVA-37748**: Behebung des Problems, bei dem eine GraphQL-Abfrage Produkte zurückgibt, die keinem freigegebenen Katalog zugeordnet sind.
-1. **MDVA-39229**: Behebung des Fehlers, der dazu führt, dass nach der Aktualisierung der Startzeit der Katalogregel-Staging-Update-Zeit der folgende Fehler angezeigt wird: *Cron Job staging_synchronize_entity_period hat einen Fehler: Die aktive Aktualisierung kann nicht gelöscht werden.*
-1. **MDVA-40545**: Behebung des Problems, bei dem nur der erste Knoten für eine Seite abgerufen wurde, selbst wenn für dieselbe Seite mehr als ein Knoten vorhanden war.
-1. **MDVA-40619**: Behebung des Problems, bei dem Änderungen an der CMS-Seitenhierarchie beim Versuch, eine Inline-Bearbeitung auf einer CMS-Seite durchzuführen, einen 500-Fehler verursachen.
-1. **MDVA-41046**: Behebung des Problems, bei dem einfache Produkte mit benutzerdefinierten Optionen für die Zuweisung zu konfigurierbaren/gruppierten Produkten verfügbar sind.
-1. **MDVA-41061**: Behebung des Problems, bei dem der Lagerstatus beim Speichern eines Produkts vom Admin auf &quot;verkäuflich&quot;zurückgesetzt wird.
-1. **MDVA-41164**: Behebung des Problems, bei dem ein Admin-Benutzer ein Unternehmen mit einem benutzerdefinierten Kundenattribut vom Typ Datei oder Bild nicht speichern oder bearbeiten kann.
-1. **MDVA-41236**: Behebung des Problems, bei dem es nicht möglich ist, ein neues oder ein vorhandenes geplantes Update für ein Produkt zu erstellen, wenn das Enddatum zuvor entfernt wurde.
+1. **MDVA-31763**: Es wird das Problem behoben, dass Katalogpreisregeln bis zur manuellen Neuindizierung zurückgesetzt (oder nicht angewendet) werden.
+1. **MDVA-37748**: Es wird das Problem behoben, bei dem eine GraphQL-Abfrage Produkte zurückgibt, die keinem freigegebenen Katalog zugewiesen sind.
+1. **MDVA-39229**: Es wurde ein Problem behoben, das dazu führte, dass nach der Aktualisierung der Startzeit für die Aktualisierung der Katalogregel der folgende Fehler angezeigt wurde: *Cron Job staging_synchronize_entities_period hat einen Fehler: Die aktive Aktualisierung kann nicht gelöscht werden.*
+1. **MDVA-40545**: Es wird das Problem behoben, dass nur der erste Knoten für eine Seite abgerufen wurde, selbst wenn für dieselbe Seite mehr als ein Knoten vorhanden war.
+1. **MDVA-40619**: Es wurde ein Problem behoben, bei dem Änderungen an der CMS-Seitenhierarchie einen 500-Fehler verursachten, wenn versucht wurde, eine CMS-Seite inline zu bearbeiten.
+1. **MDVA-41046**: Es wird das Problem behoben, dass einfache Produkte mit benutzerdefinierten Optionen für die Zuweisung zu konfigurierbaren/gruppierten Produkten verfügbar sind.
+1. **MDVA-41061**: Es wird das Problem behoben, bei dem der Lagerstatus auf „skalierbar“ zurückgesetzt wird, wenn ein Produkt vom Administrator gespeichert wurde.
+1. **MDVA-41164**: Es wird das Problem behoben, dass ein Admin-Benutzer ein Unternehmen mit einem benutzerdefinierten Kundenattribut vom Typ „Datei“ oder „Bild“ nicht speichern oder bearbeiten kann.
+1. **MDVA-41236**: Es wird das Problem behoben, bei dem es nicht möglich ist, ein neues oder ein vorhandenes geplantes Update für ein Produkt zu erstellen oder zu bearbeiten, wenn das Enddatum zuvor entfernt wurde.
 
-Navigieren Sie über das Menü links zu einer bestimmten Patch-Seite.
+Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

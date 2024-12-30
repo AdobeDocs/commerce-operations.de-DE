@@ -1,5 +1,5 @@
 ---
-title: Übersicht über den Aktualisierungsprozess
+title: Überblick über den Upgrade-Prozess
 description: Erfahren Sie, wie ein Upgrade Ihres Adobe Commerce-Projekts dazu beiträgt, dass Ihre Storefront sicher und effizient arbeitet.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
@@ -9,60 +9,60 @@ ht-degree: 1%
 
 ---
 
-# Übersicht über den Aktualisierungsprozess
+# Überblick über den Upgrade-Prozess
 
-Die Aktualisierung Ihres Adobe Commerce-Projekts ist entscheidend, um sicherzustellen, dass Ihr Store sicher, PCI-kompatibel und mit maximaler Effizienz betrieben wird. Dieses Handbuch führt Sie durch die wichtigsten Aspekte bei der Vorbereitung auf ein Upgrade.
+Die Aktualisierung Ihres Adobe Commerce-Projekts ist von entscheidender Bedeutung, um sicherzustellen, dass Ihr Geschäft sicher, PCI-kompatibel und mit maximaler Effizienz betrieben wird. Dieses Handbuch führt Sie durch die wichtigsten Aspekte bei der Vorbereitung auf ein Upgrade.
 
-Das Handbuch bietet einen Überblick über die typischen Journey und Best Practices für Adobe Commerce-Upgrades, die auf dieser Journey folgen. Außerdem werden technische Details des Aktualisierungsprozesses mit einem zeitnahen Beispiel und schrittweisen Anweisungen für die Aktualisierung auf die neueste Version von Adobe Commerce beschrieben. Es ist wichtig, den Adobe Commerce [Release-Zeitplan](../release/schedule.md) zu überprüfen und frühzeitig mit der Vorbereitung auf Aktualisierungen zu beginnen. Adobe veröffentlicht den Veröffentlichungszeitplan jährlich, um den Planungsprozess für Händler zu erleichtern, und empfiehlt, jeden Patch-Versionszyklus zu aktualisieren. Um PCI-konform zu bleiben, müssen Händler auf dem neuesten Patch oder Sicherheits-Patch installiert sein.
+Das Handbuch bietet einen Überblick über die typische Adobe Commerce-Upgrade-Journey und Best Practices, die auf dieser Journey befolgt werden sollten. Außerdem werden technische Details des Upgrade-Prozesses mit einem zeitnahen Beispiel und einer schrittweisen Anleitung für die Aktualisierung auf die neueste Version von Adobe Commerce beschrieben. Es ist wichtig, den Adobe Commerce-[ (Veröffentlichungszeitplan) zu überprüfen ](../release/schedule.md) frühzeitig mit der Vorbereitung auf Upgrades zu beginnen. Adobe veröffentlicht jährlich den Veröffentlichungszeitplan, um den Planungsprozess der Händler zu erleichtern, und empfiehlt, jeden Patch-Veröffentlichungszyklus zu aktualisieren. Um PCI-kompatibel zu bleiben, müssen Händler den neuesten Patch oder Sicherheits-Patch verwenden.
 
-## Für wen ist dieser Leitfaden?
+## Für wen ist dieser Leitfaden geeignet?
 
 Die Zielgruppe für dieses Handbuch umfasst:
 
-- **E-Commerce-Manager und technische Leiter** - Machen Sie sich mit der Journey des Upgrades, der Wichtigkeit eines regelmäßigen Upgrades und der optimalen Planung und Vorbereitung eines Upgrades vertraut.
-- **Betrieb und Entwicklungsteams**: Erfahren Sie die technischen Schritte, die für die Aktualisierung auf die neueste Version von Adobe Commerce erforderlich sind, und die verfügbaren Tools, die den Prozess einfacher, schneller und erschwinglicher machen.
+- **E-Commerce-Manager und technische**: Machen Sie sich mit der Upgrade-Journey, der Wichtigkeit regelmäßiger Upgrades und der optimalen Planung und Vorbereitung für ein Upgrade vertraut.
+- **Betriebs- und Entwicklungsteams** - Lernen Sie die technischen Schritte kennen, die für ein Upgrade auf die neueste Version von Adobe Commerce erforderlich sind, und lernen Sie die verfügbaren Tools kennen, die den Prozess einfacher, schneller und erschwinglicher machen.
 
-## Aktualisierungsprozess erläutert
+## Aktualisierungsprozess erklärt
 
-Einer der Gründe, aus denen Sie Adobe Commerce auswählen, ist wahrscheinlich:
+Einer der Gründe, warum Sie sich für Adobe Commerce entschieden haben, ist wahrscheinlich:
 
-- Umfassender vordefinierter Funktionssatz
-- SaaS-Funktionen, die getrennt vom Kerncode angeboten werden
+- Umfassende vorkonfigurierte Funktionen
+- SaaS-Funktionen werden getrennt vom Kern-Code angeboten
 - Robustes Angebot von Marketplace-Erweiterungen
-- Eindeutige Möglichkeit, unendliche Flexibilität zu ermöglichen, sodass Sie Ihre Site so anpassen können, dass sie den Anforderungen Ihres Unternehmens und Ihrer Kunden am besten entspricht
+- Einzigartige Möglichkeit, unendliche Flexibilität zu ermöglichen, sodass Sie Ihre Website so anpassen können, dass sie den Anforderungen Ihres Unternehmens und Ihrer Kunden am besten entspricht
 
-Der Vorteil eines hochgradig erweiterbaren und anpassbaren Produkts kann jedoch potenzielle Aktualisierungsprobleme hervorrufen, wenn Anpassungen nicht nach Best Practices codiert werden, was zu unerwartet hohen Upgrade-Kosten führt.
+Der Vorteil eines hochgradig erweiterbaren und anpassbaren Produkts kann jedoch zu potenziellen Upgrade-Problemen führen, wenn Anpassungen nicht gemäß Best Practices codiert werden, was zu höheren Upgrade-Kosten als erwartet führt.
 
-_Warum also?_
+_Also… warum überhaupt upgraden?_
 
-Durch die Aktualisierung kann Ihr Unternehmen in der schnelllebigen und sich ständig ändernden E-Commerce-Branche unnachgiebig bleiben und Ihre Plattform kann mit den neuesten Adobe Commerce-Funktionen kompatibel sein, mit denen Sie Umsätze und Konversionen maximieren können. Die Einbindung von Upgrades in Ihre regulären Wartungspläne ist von entscheidender Bedeutung, um sicherzustellen, dass Ihr Speicher sicher, PCI-kompatibel und mit maximaler Effizienz betrieben wird.
+Ein Upgrade ermöglicht es Ihrem Unternehmen, in der schnelllebigen und sich ständig verändernden E-Commerce-Branche flexibel zu bleiben, und ermöglicht es Ihnen, Ihre Plattform mit den neuesten Adobe Commerce-Funktionen zu kompatibel zu machen, die Ihnen helfen, den Umsatz und die Konversionen zu maximieren. Die Aufnahme von Upgrades in Ihre regelmäßigen Wartungspläne ist von entscheidender Bedeutung, um sicherzustellen, dass Ihr Geschäft sicher, PCI-kompatibel und mit maximaler Effizienz betrieben wird.
 
 ### Sicherheit
 
-Sicherheit ist einer der Hauptgründe für die Aktualisierung, da 83 % der Sicherheitsvorfälle auf veralteter Software auftreten. Laut [IBM](https://www.ibm.com/reports/data-breach) belaufen sich die durchschnittlichen Kosten einer Datenverletzung auf 3,86 Millionen Dollar - viel höher als die Kosten, die durch eine Aktualisierung entstehen. Adobe bietet zwei Möglichkeiten, Ihren Speicher ganzjährig sicher zu halten:
+Sicherheit ist einer der Hauptgründe für Upgrades, da 83 % der Sicherheitsvorfälle auf veralteter Software auftreten. Laut [IBM](https://www.ibm.com/reports/data-breach) betragen die durchschnittlichen Kosten für einen Datenverstoß 3,86 Millionen US-Dollar. Dies ist weit höher als die Kosten für die Minderung dieses Risikos durch Upgrades. Adobe bietet zwei Möglichkeiten, Ihren Store das ganze Jahr über sicher zu halten:
 
-- **Patch-Versionen**: Beinhaltet Fehlerbehebungen in Bezug auf Sicherheit, Leistung, Qualität und hohe Priorität.
-- **Sicherheits-Patch-Versionen**: Binden Sie Fehlerbehebungen und Verbesserungen ein, um Ihre Site sicher zu halten und die Implementierung zu erleichtern.
+- **Patch-Versionen** - Umfasst Fehlerbehebungen für Sicherheit, Leistung, Qualität und hohe Priorität.
+- **Sicherheits-Patch**-Versionen: Umfassen Sie Fehlerbehebungen und Verbesserungen, um Ihre Site sicher und einfacher zu implementieren.
 
 ### Leistung
 
-Die Leistung ist ein weiterer Hauptgrund für die Aktualisierung. Laut [HubSpot](https://blog.hubspot.com/marketing/page-load-time-conversion-rates) wirken sich die ersten fünf Sekunden der Ladezeit erheblich auf die Konversionsraten aus und jede Sekunde Latenz wirkt sich anschließend auf -4,4 % aus. Dies in Verbindung mit der Tatsache, dass die Seitengeschwindigkeit ein führender SEO-Ranking-Faktor ist, zeigt, warum die Site-Performance ein wichtiges Element Ihrer Website ist, um sie zu pflegen und regelmäßig zu verbessern. Jede Patch-Version enthält Leistungsverbesserungen, sodass die Nutzung neuer Releases Ihre Wachstumspläne unterstützt und Ihr Unternehmen wettbewerbsfähig macht.
+Leistung ist ein weiterer Hauptgrund für Upgrades. Laut [HubSpot](https://blog.hubspot.com/marketing/page-load-time-conversion-rates) haben die ersten fünf Sekunden der Ladezeit einen signifikanten Einfluss auf die Konversionsraten und jede Sekunde der Latenz hat danach eine Auswirkung von -4,4 %. Dies, zusammen mit der Tatsache, dass die Seitengeschwindigkeit ein führender SEO-Ranking-Faktor ist, zeigt, warum die Site-Leistung ein wichtiges Element Ihrer Site ist, um sie zu pflegen und regelmäßig zu verbessern. Jede Patch-Version enthält Leistungsverbesserungen, sodass die Nutzung neuer Versionen Ihre Wachstumspläne unterstützt und Ihr Unternehmen wettbewerbsfähig bleibt.
 
-### Kosten der Verzögerung
+### Verspätungskosten
 
-Die Gründe für Verzögerungen oder Verzögerungen bei der Aktualisierung der Plattform liegen oft in den unmittelbaren Kosten. Die tatsächlichen Kosten für die Ausführung einer veralteten Version einer Software sind jedoch viel größer und können sich dauerhaft auf ein Unternehmen auswirken.
+Die Gründe für das Verzögern oder Aufschieben von Plattformaktualisierungen liegen häufig in den unmittelbaren Kosten. Die tatsächlichen Kosten für die Ausführung einer veralteten Version einer Software sind jedoch viel höher und können dauerhafte Auswirkungen auf ein Unternehmen haben.
 
-Es mag intuitiv erscheinen, aber die Durchführung regelmäßiger Plattformaktualisierungen erfordert insgesamt weniger Aufwand als die Durchführung seltener Aktualisierungen aufgrund der Höhe der angesammelten technischen Schulden, die sich aus einer Verzögerung ergeben. Adobe hat kürzlich mit einem Partner zusammengearbeitet, der über einen Einzelhandelsverkäufer verfügt, der früher selten und inkonsistent (jährlich oder länger) Upgrades durchgeführt hat. Durch die Umgestaltung der Herangehensweise an Upgrades und die Befolgung eines von der Adobe empfohlenen regelmäßigen Aktualisierungspfads im Laufe von 12 Monaten konnte der Partner dem Kunden eine kumulative Entwicklungszeit, Mühe und damit verbundene Kosten von vier Wochen sparen. Diese Kosten könnten dann in Initiativen zur Förderung des Unternehmenswachstums umgeleitet werden.
+Es mag der Intuition widersprechen, aber die Durchführung regelmäßiger Plattformaktualisierungen erfordert weniger Gesamtaufwand als die Durchführung unregelmäßiger Aktualisierungen, da sich technische Schulden aus der Verzögerung angehäuft haben. Adobe hat kürzlich mit einem Partner zusammengearbeitet, der über einen Einzelhändler verfügt, der Upgrades selten und inkonsistent (jährlich oder länger) durchgeführt hat. Durch die Umstellung der Vorgehensweise bei Upgrades und die Befolgung eines von Adobe empfohlenen regulären Upgrade-Pfads über einen Zeitraum von 12 Monaten konnte der Partner dem Kunden vier Wochen an kumulierter Entwicklungszeit, Aufwand und damit verbundenen Kosten ersparen. Diese Kosten könnten dann in Initiativen umgelenkt werden, die das Unternehmenswachstum fördern.
 
-Wenn regelmäßig Aktualisierungen vorgenommen werden, sind die Änderungen inkrementell und der entsprechende Aktualisierungsaufwand spiegelt dies wider. Wenn Plattformaktualisierungen für einen längeren Zeitraum verzögert werden, können sie zu einem viel stärker involvierten Prozess werden. Darüber hinaus können sich auch die von Ihnen aus dem [Adobe Commerce Marketplace](https://marketplace.magento.com/) verwendeten Erweiterungen und andere Drittanbieterintegrationen auf diese Weise auswirken. Schließlich wird die Zeit für die Untersuchung, Planung und Durchführung einer verzögerten Aktualisierung verlängert, was zu vermeidbaren Aufwand und Kosten führt.
+Wenn Aktualisierungen regelmäßig durchgeführt werden, erfolgt eine inkrementelle Aktualisierung, und der entsprechende Aktualisierungsaufwand spiegelt dies wider. Wenn Plattformaktualisierungen über einen längeren Zeitraum verschoben werden, können sie zu einem viel aufwändigeren Prozess werden. Außerdem können die Erweiterungen, die Sie vom [Adobe Commerce Marketplace](https://marketplace.magento.com/) und anderen Drittanbieterintegrationen verwenden, ebenfalls betroffen sein. Schließlich wird die Zeit für die Untersuchung, Planung und Durchführung eines verzögerten Upgrades verlängert, was zu vermeidbarem Aufwand und zusätzlichen Kosten führt.
 
 Zu den allgemeinen Faktoren, die sich auf den Aufwand für die Aktualisierung Ihres Projekts auswirken, gehören unter anderem:
 
 | Technische Komplexität | Planung und Strategie |
 |-----------------------------------------------------------|--------------------------------------------------------------|
-| Umfang der Anpassungen | Klarheit der Anforderungen, schwindende Entscheidungen und Schlupflöcher |
-| Anzahl der Erweiterungen | Aktualisierungshäufigkeit |
+| Umfang der Anpassungen | Klarheit der Anforderungen, schwankende Entscheidungen und schleichender Anwendungsbereich |
+| Anzahl der Erweiterungen | Ihre Aktualisierungshäufigkeit |
 | Anzahl der Integrationen mit Drittanbietern (OMS, ERP) | Ihre Teststrategie |
-| Kodierung mit Best Practices |                                                              |
+| Codierung nach Best Practices |                                                              |
 
-Das anhaltende Wachstum des digitalen Handels hat den Druck auf die Unternehmen verstärkt, sich schneller, häufiger und unvorhersehbarer zu entwickeln. Wenn wir das Kaufverhalten der Kunden nicht einhalten und vorwegnehmen, haben wir die Voraussetzungen für selbst die größten, am weitesten etablierten Marken geschaffen. Sie müssen über alle Touchpoints hinweg in der Lage sein, robuste, personalisierte Erlebnisse ohne Leistungseinbußen und Produktionsausfälle bereitzustellen. Sie müssen in der Lage sein, schneller und unbegrenzt zu innovieren, um den globalen Konkurrenten voraus zu sein. Durch ein Upgrade testen Sie Ihr Unternehmen zukünftig und richten sich selbst auf bessere Service-dynamische Kundenanforderungen ein.
+Durch das kontinuierliche Wachstum im Bereich des digitalen Handels ist der Druck auf Unternehmen gestiegen, sich schneller, häufiger und auf unvorhersehbare Weise zu entwickeln. Das Versäumnis, Schritt zu halten und das Kaufverhalten der Kunden vorwegzunehmen, hat sogar den größten und etabliertesten Marken gleiche Ausgangsbedingungen geboten. Sie müssen in der Lage sein, robuste, personalisierte Erlebnisse über alle Touchpoints hinweg bereitzustellen, ohne dass es zu Leistungs- und Betriebsunterbrechungen kommt. Sie müssen in der Lage sein, schneller und unbegrenzt Innovationen zu entwickeln, um der globalen Konkurrenz einen Schritt voraus zu sein. Mit einem Upgrade sind Sie in der Lage, Ihr Unternehmen zukunftssicher zu machen und sich für einen besseren Service und dynamische Kundenanforderungen zu rüsten.

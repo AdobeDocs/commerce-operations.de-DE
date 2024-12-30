@@ -9,12 +9,12 @@ ht-degree: 0%
 
 ---
 
-# Überprüfen Sie die Plattformänderungen vor der Aktualisierung.
+# Plattformänderungen vor dem Upgrade überprüfen
 
-Erfahren Sie mehr über die technischen Plattformänderungen in den [Versionshinweisen](../../release/release-notes/overview.md) und den [Systemanforderungen](../../installation/system-requirements.md).
+Erfahren Sie mehr über die technischen Plattformänderungen in [Versionshinweisen](../../release/release-notes/overview.md) und die [Systemanforderungen](../../installation/system-requirements.md).
 
-Adobe Commerce-Kunden und -Partner können auch auf die [Beta-Versionen von Adobe Commerce](../../release/beta.md) zugreifen, um frühzeitigen Zugriff auf den Code vor der allgemeinen Verfügbarkeit (GA) zu erhalten.
+Kunden und Partner von Adobe Commerce können auch auf [Adobe Commerce-Betaversionen zugreifen](../../release/beta.md) um frühzeitig auf Code zugreifen zu können, bevor die allgemeine Verfügbarkeit (GA) verfügbar ist.
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 ist die letzte Version, die vom Beta-Programm unterstützt wird. Ab Juni 2023 wird Adobe öffentliche Betas für Adobe Commerce veröffentlichen. Eine Liste der öffentlichen Beta-Veröffentlichungstermine finden Sie im [Veröffentlichungsplan](../../release/schedule.md) .
+>Adobe Commerce 2.4.6 ist die letzte Version, die vom Beta-Programm unterstützt wird. Ab Juni 2023 wird Adobe öffentliche Betas für Adobe Commerce veröffentlichen. Eine Liste [ öffentlichen Beta-Veröffentlichungstermine finden Sie ](../../release/schedule.md) „Veröffentlichungszeitplan“.

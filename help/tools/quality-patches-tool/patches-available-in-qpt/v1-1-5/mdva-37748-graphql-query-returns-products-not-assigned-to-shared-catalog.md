@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-37748: GraphQL-Abfrage gibt Produkte zurück, die nicht einem freigegebenen Katalog zugewiesen sind'
-description: Der Patch MDVA-37748 behebt das Problem, dass eine GraphQL-Abfrage Produkte zurückgibt, die keinem freigegebenen Katalog zugeordnet sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-37748. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+title: 'MDVA-37748: GraphQL-Abfrage gibt Produkte zurück, die keinem freigegebenen Katalog zugewiesen sind'
+description: Der Patch MDVA-37748 behebt das Problem, dass eine GraphQL-Abfrage Produkte zurückgibt, die keinem freigegebenen Katalog zugewiesen sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-37748. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: B2B, GraphQL, Catalog Management, Categories, Products
 role: Admin
 exl-id: 8aa00953-dbf0-4533-9b53-b809bf59ec20
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-37748: GraphQL-Abfrage gibt Produkte zurück, die nicht einem freigegebenen Katalog zugewiesen sind
+# MDVA-37748: GraphQL-Abfrage gibt Produkte zurück, die keinem freigegebenen Katalog zugewiesen sind
 
-Der Patch MDVA-37748 behebt das Problem, dass eine GraphQL-Abfrage Produkte zurückgibt, die keinem freigegebenen Katalog zugeordnet sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-37748. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+Der Patch MDVA-37748 behebt das Problem, dass eine GraphQL-Abfrage Produkte zurückgibt, die keinem freigegebenen Katalog zugewiesen sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-37748. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,28 +27,28 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.2 - 2.4.2-p2
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die GraphQL-Abfrage gibt Produkte zurück, die keinem freigegebenen Katalog zugewiesen sind.
+GraphQL-Abfrage gibt Produkte zurück, die keinem freigegebenen Katalog zugewiesen sind.
 
 <u>Voraussetzungen</u>:
 
-B2B-Module sind installiert.
+B2B-Module werden installiert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie zwei Produkte und weisen Sie sie einer Kategorie zu:
    * Produkt 1: Öffentlich
    * Produkt 2
 
-1. Weisen Sie &quot;Produkt 1 - Öffentlich&quot;dem freigegebenen Standardkatalog (Allgemein) zu.
-1. Erstellen Sie einen zusätzlichen benutzerdefinierten freigegebenen Katalog und weisen Sie ihn &quot;Produkt 2&quot;zu.
-1. Erstellen Sie ein neues Unternehmen und weisen Sie es dem zusätzlichen freigegebenen Katalog zu, der in Schritt 3 erstellt wurde.
-1. Bestätigen Sie nach der Ausführung/Neuindizierung des Crons am Frontend, dass &quot;Product 1 - Public&quot; angezeigt wird, wenn Sie nicht angemeldet sind.
-1. Melden Sie sich als Administrator des in Schritt 4 erstellten Unternehmens an und überprüfen Sie, ob nur &quot;Produkt 2&quot;angezeigt wird.
-1. Fordern Sie ein Autorisierungstoken mit der folgenden GraphQL-Abfrage an:
+1. Weisen Sie „Produkt 1 - Öffentlich“ dem freigegebenen Katalog „Standard (Allgemein)“ zu.
+1. Erstellen Sie einen zusätzlichen benutzerdefinierten freigegebenen Katalog und weisen Sie ihn „Produkt 2“ zu.
+1. Erstellen Sie eine neue Firma und weisen Sie sie dem zusätzlichen freigegebenen Katalog zu, der in Schritt 3 erstellt wurde.
+1. Überprüfen Sie nach der Cron-Ausführung/-Neuindizierung im Frontend, ob Sie „Produkt 1 - Öffentlich“ sehen können, wenn Sie nicht angemeldet sind.
+1. Melden Sie sich als Administrator des in Schritt 4 erstellten Unternehmens an und stellen Sie sicher, dass nur „Produkt 2“ angezeigt wird.
+1. Anfordern eines Autorisierungs-Tokens mithilfe der folgenden GraphQL-Abfrage:
 
    <pre>
     <code class="language-graphql">
@@ -63,7 +63,7 @@ B2B-Module sind installiert.
     </code>
     </pre>
 
-1. Fügen Sie die Kopfzeile **Autorisierungs-Trägerwert des Tokens** hinzu und führen Sie die folgende GraphQL-Abfrage aus:
+1. Fügen Sie die Kopfzeile **Autorisierungsanbieter-Wert des Tokens“ hinzu** führen Sie die folgende GraphQL-Abfrage aus:
 
    <pre>
     <code class="language-graphql">
@@ -205,11 +205,11 @@ B2B-Module sind installiert.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Anzahl und das von GraphQL zurückgegebene Produkt berücksichtigen nur das Produkt, das dem freigegebenen Katalog zugeordnet ist, der mit dem angemeldeten Benutzer verknüpft ist.
+Die Anzahl und das von GraphQL zurückgegebene Produkt berücksichtigen nur das Produkt, das dem freigegebenen Katalog zugewiesen ist, der mit dem angemeldeten Benutzer verknüpft ist.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Es wird nur &quot;Produkt 2&quot;zurückgegeben, die `total_count` zeigt jedoch zwei.
+Nur „Produkt 2“ wird zurückgegeben, aber die `total_count` zeigt zwei.
 
 <pre>
 <code class="language-graphql">
@@ -316,18 +316,18 @@ Es wird nur &quot;Produkt 2&quot;zurückgegeben, die `total_count` zeigt jedoch 
 </code>
 </pre>
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbare Patches.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).

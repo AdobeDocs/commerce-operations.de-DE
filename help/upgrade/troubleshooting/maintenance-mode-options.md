@@ -1,6 +1,6 @@
 ---
-title: Optionen für den Wartungsmodus für die Aktualisierung
-description: Erstellen Sie eine benutzerdefinierte Seite für den Wartungsmodus, die Ihre Kunden auf Ihrer Adobe Commerce-Storefront sehen, während Sie ein Upgrade durchführen.
+title: Wartungsmodusoptionen für das Upgrade
+description: Erstellen Sie eine benutzerdefinierte Wartungsmodusseite, die Ihre Kunden in Ihrer Adobe Commerce-Storefront sehen, während Sie ein Upgrade ausführen.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -9,19 +9,19 @@ ht-degree: 0%
 
 ---
 
-# Optionen für den Wartungsmodus für die Aktualisierung
+# Wartungsmodusoptionen für das Upgrade
 
-In diesem Thema wird erläutert, wie Sie eine benutzerdefinierte Wartungsseite erstellen können, die Benutzern angezeigt wird, während Ihre Magento-Anwendung aktualisiert wird. Die Erstellung einer benutzerdefinierten Seite ist optional, wird jedoch empfohlen, da während eines Teils des Upgrades auf Ihre Site zugegriffen werden kann.
+In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsseite erstellen, die Benutzern angezeigt wird, während Ihre Magento-Anwendung aktualisiert wird. Das Erstellen einer benutzerdefinierten Seite ist optional, wird jedoch empfohlen, da die Website während eines Teils des Upgrades zugänglich ist.
 
-Erstellen einer benutzerspezifischen Seite, auf die Benutzer umgeleitet werden sollen, um den Zugriff auf die Site zu verhindern, und informiert Ihre Benutzer darüber, dass die Site gewartet wird.
+Das Erstellen einer benutzerdefinierten Seite, zu der Benutzer umgeleitet werden, verhindert jeden Zugriff auf die Website und informiert Ihre Benutzer auch darüber, dass die Website gewartet wird.
 
 >[!NOTE]
 >
->Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `root` -Berechtigungen ausführen. Benutzerdefinierte Wartungsseiten können während des Entwicklermodus nicht festgelegt werden.
+>Sie müssen die Aufgaben in diesem Abschnitt als Benutzer mit `root` ausführen. Benutzerdefinierte Wartungsseiten können im Entwicklermodus nicht festgelegt werden.
 
-## Benutzerdefinierte Wartungsseite erstellen
+## Erstellen der benutzerdefinierten Wartungsseite
 
-Um eine Wartungsseite zu erstellen und zu dieser umzuleiten, erstellen Sie zunächst eine Wartungsseite mit dem Namen:
+Um eine Wartungsseite zu erstellen und zu ihr umzuleiten, erstellen Sie zunächst eine Wartungsseite mit dem Namen:
 
 - Apache: `<web server docroot>/maintenance.html`
 - nginx: `<magento_root>/maintenance.html`
@@ -54,21 +54,21 @@ body
 
 ## Benutzerdefinierte Wartungsseite für Apache
 
-In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsseite erstellen und den Traffic darauf umleiten.
+In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsseite erstellen und Traffic zu ihr umleiten.
 
-Das Beispiel in diesem Abschnitt zeigt, wie Sie die folgenden Dateien ändern können, um Ihre Wartungsseite einzurichten:
+Das Beispiel in diesem Abschnitt zeigt, wie die folgenden Dateien geändert werden können. Dies ist eine Möglichkeit, Ihre Wartungsseite einzurichten:
 
 - Apache 2.4: `/etc/apache2/sites-available/000-default.conf`
 - Apache 2.2: `/etc/apache2/sites-available/default` (Ubuntu), `/etc/httpd/conf/httpd.conf` (CentOS)
 
-So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
+So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 
 1. Aktualisieren Sie Ihre Apache-Konfiguration, um Folgendes zu tun:
 
-   - Umleiten des gesamten Traffics auf die Wartungsseite
+   - Gesamten Traffic zur Wartungsseite umleiten
    - Zulassungsliste bestimmter IPs, damit ein Administrator die Magento-Software aktualisieren kann.
 
-   Im folgenden Beispiel wird 192.0.2.110 auf die Zulassungsliste gesetzt.
+   Auf die Zulassungsliste setzen Im folgenden Beispiel wird 192.0.2.110.
 
    Fügen Sie am Ende Ihrer Apache-Konfigurationsdatei Folgendes hinzu:
 
@@ -83,7 +83,7 @@ So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
    Header Set Cache-Control "max-age=0, no-store"
    ```
 
-1. Starten Sie Apache neu:
+1. Apache neu starten:
 
    - CentOS: `service httpd restart`
    - Ubuntu: `service apache2 restart`
@@ -94,20 +94,20 @@ So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
    touch <web server docroot>/maintenance.enable
    ```
 
-1. [Aktualisieren Sie Ihr System](../implementation/perform-upgrade.md).
-1. Testen Sie Ihre Website, um sicherzustellen, dass sie ordnungsgemäß funktioniert.
-1. Löschen Sie nach Abschluss des Upgrades `maintenance.enable`.
+1. [System aktualisieren](../implementation/perform-upgrade.md).
+1. Testen Sie die Site, um sicherzustellen, dass sie korrekt funktioniert.
+1. Löschen Sie `maintenance.enable` nach Abschluss des Upgrades.
 
 ## Benutzerdefinierte Wartungsseite für nginx
 
-In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsseite erstellen und den Traffic darauf umleiten.
+In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsseite erstellen und Traffic zu ihr umleiten.
 
-So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
+So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 
 1. Verwenden Sie einen Texteditor, um die nginx-Konfigurationsdatei zu öffnen, die Ihren Serverblock enthält.
-1. Fügen Sie dem Serverblock Folgendes hinzu (`server` wird nur aus Gründen der Klarheit angezeigt; fügen Sie keinen zweiten Serverblock hinzu).
+1. Fügen Sie dem Serverblock Folgendes hinzu (`server` wird nur der Übersichtlichkeit halber angezeigt; fügen Sie keinen zweiten Serverblock hinzu).
 
-   Die IP-Adresse 192.0.2.110 und 192.0.2.115 werden im Folgenden auf einem System auf die Zulassungsliste gesetzt, auf dem Magento in `/var/www/html/magento2` installiert ist:
+   Auf die Zulassungsliste setzen Mit der folgenden IP-Adresse 192.0.2.110 und 192.0.2.115 Sie auf einem System, auf dem Magento in `/var/www/html/magento2` installiert ist:
 
    ```conf
    server {
@@ -154,9 +154,9 @@ So leiten Sie Traffic zu einer benutzerdefinierten Wartungsseite um:
    service nginx reload
    ```
 
-1. [Aktualisieren Sie Ihr System](../implementation/perform-upgrade.md).
-1. Testen Sie Ihre Website, um sicherzustellen, dass sie ordnungsgemäß funktioniert.
-1. Nachdem das Upgrade abgeschlossen ist, löschen oder umbenennen Sie `maintenance.enable`
+1. [System aktualisieren](../implementation/perform-upgrade.md).
+1. Testen Sie die Site, um sicherzustellen, dass sie korrekt funktioniert.
+1. Löschen oder benennen Sie `maintenance.enable` nach Abschluss des Upgrades um
 1. Laden Sie die nginx-Konfiguration neu:
 
    ```bash

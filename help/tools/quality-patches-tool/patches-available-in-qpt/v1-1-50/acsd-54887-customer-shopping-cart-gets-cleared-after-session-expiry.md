@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-54887: Der Einkaufswagen des Kunden wird nach Ablauf der Kundensitzung gelöscht'
-description: Wenden Sie den Patch ACSD-54887 an, um das Adobe Commerce-Problem zu beheben, bei dem der Warenkorb für Kunden gelöscht wird, nachdem die Kundensitzung abgelaufen ist und [!UICONTROL Persistent Shopping Cart] aktiviert ist.
+title: 'ACSD-54887: Der Warenkorb des Kunden wird gelöscht, nachdem die Kundensitzung abgelaufen ist'
+description: Wenden Sie den Patch ACSD-54887 an, um das Adobe Commerce-Problem zu beheben, bei dem der Warenkorb des Kunden geleert wird, nachdem die Kundensitzung mit aktiviertem [!UICONTROL Persistent Shopping Cart] abgelaufen ist.
 feature: Shopping Cart
 role: Admin, Developer
 exl-id: de2a96b2-48ce-4b9b-93bc-f7b64c37463a
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54887: Der Einkaufswagen des Kunden wird nach Ablauf der Kundensitzung gelöscht
+# ACSD-54887: Der Warenkorb des Kunden wird gelöscht, nachdem die Kundensitzung abgelaufen ist
 
-Der Patch ACSD-54887 behebt das Problem, dass der Warenkorb des Kunden gelöscht wird, nachdem die Kundensitzung abgelaufen ist und [!UICONTROL Persistent Shopping Cart] aktiviert ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 installiert ist. Die Patch-ID lautet ACSD-54887. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Mit dem Patch ACSD-54887 wird das Problem behoben, dass der Warenkorb des Kunden geleert wird, nachdem die Kundensitzung mit aktiviertem [!UICONTROL Persistent Shopping Cart] abgelaufen ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.50 installiert ist. Die Patch-ID ist ACSD-54887. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,24 +27,24 @@ Der Patch ACSD-54887 behebt das Problem, dass der Warenkorb des Kunden gelöscht
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der Warenkorb des Kunden wird gelöscht, nachdem die Kundensitzung abgelaufen ist und [!UICONTROL Persistent Shopping Cart] aktiviert ist.
+Der Warenkorb des Kunden wird geleert, nachdem die Kundensitzung mit aktiviertem [!UICONTROL Persistent Shopping Cart] abgelaufen ist.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Aktivieren Sie [!UICONTROL Persistent Shopping Cart]. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Persistent Shopping Cart]** = *Ja*.
+1. [!UICONTROL Persistent Shopping Cart] aktivieren. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Persistent Shopping Cart]** = *Ja*.
 
-   Melden Sie sich mit aktivierter Persistenz an (Hinweis: Sie ist nicht in der Popup-Autorisierung verfügbar, sondern nur auf der direkten Seite [!UICONTROL Sign in] ).
+   Melden Sie sich mit aktivierter Persistenz an (Hinweis: Sie ist nicht in der Popup-Autorisierung verfügbar, sondern nur auf der Seite „Direkte [!UICONTROL Sign in]„).
 
-1. Fügen Sie dem Warenkorb ein Produkt hinzu.
-1. Gehen Sie zum Checkout und wählen Sie eine Zahlungsmethode aus.
-1. Läuft die Sitzung ab (löschen Sie `PHPSESSID`).
-1. Aktualisieren Sie die Seite. Beachten Sie, dass das Anführungszeichen sofort in ein Gastangebot konvertiert wird, da bereits eine Zahlungsmethode ausgewählt ist und das Cookie [!UICONTROL Persistent Cart] entfernt wird.
-1. Läuft die Sitzung ab (löschen Sie `PHPSESSID`).
-1. Aktualisieren Sie die Seite. Stellen Sie sicher, dass der Warenkorb leer ist.
+1. Fügen Sie ein Produkt zum Warenkorb hinzu.
+1. Wechseln Sie zur Kasse und wählen Sie eine Zahlungsmethode aus.
+1. Läuft die Sitzung ab (`PHPSESSID` löschen)
+1. Aktualisieren Sie die Seite. Beachten Sie, dass das Angebot sofort in ein Gastangebot konvertiert wird, da bereits eine Zahlungsmethode ausgewählt ist und das [!UICONTROL Persistent Cart]-Cookie entfernt wird.
+1. Läuft die Sitzung ab (`PHPSESSID` löschen)
+1. Aktualisieren Sie die Seite. Beachten Sie, dass der Warenkorb leer ist.
 1. Melden Sie sich erneut an.
 
 <u>Erwartete Ergebnisse</u>:
@@ -53,21 +53,21 @@ Der Warenkorb enthält das Produkt, wenn Sie sich erneut anmelden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Warenkorb ist beim erneuten Anmelden leer.
+Der Warenkorb ist bei der erneuten Anmeldung leer.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

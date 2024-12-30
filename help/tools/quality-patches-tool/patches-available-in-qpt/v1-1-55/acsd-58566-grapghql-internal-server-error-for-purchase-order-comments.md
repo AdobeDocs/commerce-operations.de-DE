@@ -1,18 +1,19 @@
 ---
-title: 'ACSD-58566: Interner GraphQL-Serverfehler für Bestellkommentare'
-description: Wenden Sie den Patch ACSD-58566 an, um das Adobe Commerce-Problem zu beheben, bei dem GraphQL einen internen Serverfehler zurückgibt, wenn das Feld "created_at"in der Mutation "addPurchaseOrderComment"abgefragt wird.
+title: 'ACSD-58566: Interner GraphQL-Server-Fehler bei Bestellkommentaren'
+description: Wenden Sie den Patch ACSD-58566 an, um das Adobe Commerce-Problem zu beheben, bei dem GraphQL bei der Abfrage des Felds „created_at“ in der Mutation „addPurchaseOrderComment“ einen internen Server-Fehler zurückgibt.
 feature: B2B, Purchase Orders, GraphQL
 role: Admin, Developer
-source-git-commit: 3b8cc44ea8d71982b8a2eb76d9d7ec2a5c3180b0
+exl-id: 6d051f57-7a2f-44a5-a1c9-834917ed986c
+source-git-commit: ffa9b7151f226087b62a8b2e265a96de2e4caedf
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
-# ACSD-58566: Interner GraphQL-Serverfehler für Bestellkommentare
+# ACSD-58566: Interner GraphQL-Server-Fehler bei Bestellkommentaren
 
-Der Patch ACSD-58566 behebt das Problem, bei dem beim Abfragen des Felds `created_at` in der `addPurchaseOrderComment`-Mutation ein Nullwert anstelle des erwarteten Datums zurückgegeben wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 installiert ist. Die Patch-ID ist ACSD-58566. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.8 behoben sein soll.
+Mit dem Patch „ACSD-58566“ wird das Problem behoben, dass die Abfrage des `created_at` Felds in der `addPurchaseOrderComment`-Mutation einen Nullwert anstelle des erwarteten Datums-/Uhrzeitwerts zurückgibt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55 installiert ist. Die Patch-ID ist ACSD-58566. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -26,24 +27,24 @@ Der Patch ACSD-58566 behebt das Problem, bei dem beim Abfragen des Felds `create
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-GraphQL gibt einen internen Server-Fehler zurück, wenn das Feld `created_at` in der Mutation `addPurchaseOrderComment` abgefragt wird.
+GraphQL gibt bei der Abfrage des `created_at` in der `addPurchaseOrderComment`-Mutation einen internen Server-Fehler zurück.
 
 <u>Voraussetzungen</u>:
 
-B2B-Module werden installiert und Unternehmen und Kaufaufträge sind aktiviert.
+B2B-Module werden installiert und Firmen- und Bestellungen sind aktiviert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Generieren Sie ein Kunden-Token für einen Unternehmensbenutzer.
-1. Führen Sie die folgende Reihenfolge von GraphQL-Anforderungen aus:
-   1. Erstellen Sie einen *Warenkorb* mit `customerCart`.
-   1. Fügen Sie dem *Warenkorb* mithilfe von `addProductsToCart` ein Produkt hinzu.
-   1. Platzieren Sie die Reihenfolge mit &quot;`placePurchaseOrder`&quot;.
-   1. Fügen Sie der Bestellung einen Kommentar mit `addPurchaseOrderComment` hinzu.
+1. Generieren eines Kunden-Tokens für einen Firmenbenutzer.
+1. Führen Sie die folgende Abfolge von GraphQL-Anfragen durch:
+   1. Erstellen Sie einen *Warenkorb* mithilfe von `customerCart`.
+   1. Fügen Sie mit `addProductsToCart` ein Produkt zum *Warenkorb* hinzu.
+   1. Bestellung mit `placePurchaseOrder` aufgeben.
+   1. Fügen Sie der Bestellung mithilfe von `addPurchaseOrderComment` einen Kommentar hinzu.
 
    ```
    mutation {
@@ -66,11 +67,11 @@ B2B-Module werden installiert und Unternehmen und Kaufaufträge sind aktiviert.
 
 <u>Erwartete Ergebnisse</u>:
 
-Das Feld `created_at` gibt den Zeitpunkt des Bestellkommentars zurück.
+Das Feld `created_at` gibt das Datum und die Uhrzeit des Bestellkommentars zurück.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Zeigt null anstelle des `created_at` -Datums an.
+Zeigt null anstelle des `created_at` an.
 
 ```
 {
@@ -96,15 +97,15 @@ Zeigt null anstelle des `created_at` -Datums an.
 }
 ```
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-[[!DNL Quality Patches Tool]: Ein Self-Service-Tool für Qualitäts-Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+[[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.

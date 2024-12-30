@@ -3,13 +3,13 @@ title: 'ACSD-62591: Design wechselt nicht, wenn **[!UICONTROL User Agent Rules]*
 description: Wenden Sie den Patch ACSD-62591 an, um das Adobe Commerce-Problem zu beheben, bei dem das Design nicht richtig wechselt, wenn die **[!UICONTROL User Agent Rules]** konfiguriert sind.
 feature: Themes
 role: Admin, Developer
-source-git-commit: 319ac7ea1fb8f33f4ed7bfa440477cf6d6657cb5
+exl-id: 7b206b25-8918-40a6-a956-d38d5058d38f
+source-git-commit: 0b4e90ce8831c46f3b27ff663cc63aab31f98183
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62591: Design wechselt nicht richtig, wenn es konfiguriert [!UICONTROL User Agent Rules]
 
