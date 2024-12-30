@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-41229: Im Backend verfügbare Bilder werden nach dem Import konfigurierbarer Produkte nicht an der Frontend angezeigt'
-description: Der Patch MDVA-41229 behebt das Problem, dass im Backend verfügbare Bilder nach dem Import konfigurierbarer Produkte nicht auf dem Frontend angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-41229. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+title: 'MDVA-41229: Im Backend verfügbare Bilder werden nach dem Import konfigurierbarer Produkte nicht im Frontend angezeigt'
+description: Der Patch MDVA-41229 löst das Problem, dass im Backend verfügbare Bilder nach dem Import konfigurierbarer Produkte nicht im Frontend angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-41229. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: Data Import/Export, Configuration, Products
 role: Admin
 exl-id: 894fdc5b-545c-4ed8-ae1b-573d1d8d3cd6
@@ -11,9 +11,9 @@ ht-degree: 2%
 
 ---
 
-# MDVA-41229: Im Backend verfügbare Bilder werden nach dem Import konfigurierbarer Produkte nicht an der Frontend angezeigt
+# MDVA-41229: Im Backend verfügbare Bilder werden nach dem Import konfigurierbarer Produkte nicht im Frontend angezeigt
 
-Der Patch MDVA-41229 behebt das Problem, dass im Backend verfügbare Bilder nach dem Import konfigurierbarer Produkte nicht auf dem Frontend angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-41229. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der Patch MDVA-41229 löst das Problem, dass im Backend verfügbare Bilder nach dem Import konfigurierbarer Produkte nicht im Frontend angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-41229. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,70 +23,70 @@ Der Patch MDVA-41229 behebt das Problem, dass im Backend verfügbare Bilder nach
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.0 - 2.4.3 - p1
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.0 - 2.4.3-p1
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Im Backend verfügbare Bilder werden nach konfigurierbarem Produktimport nicht auf dem Frontend angezeigt.
+Im Backend verfügbare Bilder werden nach dem konfigurierbaren Produktimport nicht im Frontend angezeigt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Installieren Sie einen sauberen Adobe Commerce.
-1. Fügen Sie ein benutzerdefiniertes Attribut hinzu, indem Sie zu **Stores** > **Attribute** > **Produkt** > **Neues Attribut hinzufügen** mit den unten stehenden Einstellungen navigieren:
+1. Installieren Sie eine saubere Adobe Commerce.
+1. Fügen Sie ein benutzerdefiniertes Attribut hinzu, indem Sie zu **Stores** > **Attribute** > **Produkt** > **Neues Attribut hinzufügen** mit den folgenden Einstellungen wechseln:
 
    * Eigenschaften:
       * Attributeigenschaften:
 
          * Standardbezeichnung: Größe festlegen
-         * Katalogeingabetyp für Store Owner: Textmuster
-         * Erforderliche Werte: nein
-         * Update Product Preview Image: Ja
+         * Katalogeingabetyp für Store-Inhaber: Textmuster
+         * Erforderliche Werte: Nein
+         * Produktvorschau-Bild aktualisieren: Ja
 
-      * Muster verwalten (Werte Ihres Attributs):
+      * Farbfeld verwalten (Werte Ihres Attributs):
 
-        | Ist Standard | Admin Swatch | Administratorbeschreibung | Standardmuster für Store-Ansicht | Standardmäßige Store-Ansichtsbeschreibung |
+        | Ist Standard | Admin-Farbfeld | Administratorbeschreibung | Standard-Farbfeld für Store-Ansicht | Beschreibung der Standardspeicheransicht |
         |---|---|---|---|---|
-        | no | 4 | 4 | 4 | 4 |
-        | no | 24 | 24 | 24 | 24 |
-        | no | 30 | 30 | 30 | 30 |
-        | no | 60 | 60 | 60 | 60 |
-        | no | 68 | 68 | 68 | 68 |
+        | Nein | 4 | 4 | 4 | 4 |
+        | Nein | 24 | 24 | 24 | 24 |
+        | Nein | 30 | 30 | 30 | 30 |
+        | Nein | 60 | 60 | 60 | 60 |
+        | Nein | 68 | 68 | 68 | 68 |
 
       * Erweiterte Attributeigenschaften:
 
          * Attributcode: set_size
-         * Umfang: Global
-         * Einzelwert: nein
-         * Eingabevalidierung für Store Owner: Keine
+         * Bereich: Global
+         * Eindeutiger Wert: Nein
+         * Eingabevalidierung für Store-Inhaber: Keine
          * Zu Spaltenoptionen hinzufügen: Nein
-         * Verwendung in Filteroptionen: nein
+         * Verwendung in Filteroptionen: Nein
 
-   * Verwalten von Bezeichnungen:
+   * Verwalten von Kennzeichnungen:
 
       * Titel verwalten (Größe, Farbe usw.)
 
-         * Standardspeicheransicht: Größe festlegen
+         * Standardmäßige Store-Ansicht: Größe festlegen
 
    * Storefront-Eigenschaften:
 
-      * In der Suche verwenden: Ja
+      * In Suche verwenden: Ja
       * Suchgewichtung: 1
-      * In der erweiterten Suche sichtbar: nein
-      * Vergleich auf Storefront: ja
-      * Verwendung in der Ebenennavigation: Gefilterbar (mit Ergebnissen)
-      * Verwendung in mehrstufiger Navigation mit Suchergebnissen: Ja
-      * Verwendung für Bedingungen für Angebotsregeln: nein
-      * Auf Katalogseiten in der Storefront sichtbar: ja
-      * Wird in der Produktliste verwendet: ja
-      * Wird für die Sortierung in der Produktliste verwendet: nein
+      * In der erweiterten Suche sichtbar: Nein
+      * Vergleichbar auf Storefront: Ja
+      * Verwendung in der mehrschichtigen Navigation: Filterbar (mit Ergebnissen)
+      * Verwendung in Suchergebnissen - mehrschichtige Navigation: Ja
+      * Verwendung für Bedingungen der Promo-Regel: Nein
+      * Auf Katalogseiten in der Storefront sichtbar: Ja
+      * In der Produktliste verwendet: Ja
+      * Wird für die Sortierung in der Produktliste verwendet: Nein
 
-1. Fügen Sie dieses Attribut zum standardmäßigen Attributsatz in der Produktdetailgruppe hinzu (**Stores** > **Attribute** > **Attributsatz**).
-1. Laden Sie Bilder herunter, die in den Ordner var im Stammverzeichnis von Adobe Commerce eingestellt sind.
-1. Wechseln Sie zu **System** > **Datenübertragung** > und importieren Sie die Datei mit den folgenden Optionen:
+1. Fügen Sie dieses Attribut zum Standardattribut hinzu, das in der Gruppe „Produktdetails“ festgelegt ist (**Stores** > **Attribute** > **Attributsatz**).
+1. Laden Sie Bilder herunter, die in den Var-Ordner im Stammverzeichnis von Adobe Commerce festgelegt wurden.
+1. Wechseln Sie zu **System** > **Datenübertragung** und importieren Sie die Datei mit den folgenden Optionen:
 
    * Importeinstellungen:
 
@@ -95,19 +95,19 @@ Im Backend verfügbare Bilder werden nach konfigurierbarem Produktimport nicht a
    * Importverhalten:
 
       * Importverhalten: Hinzufügen/Aktualisieren
-      * Validierungsstrategie: Bei Fehler stoppen
-      * Anzahl zulässiger Fehler: 1
+      * Validierungsstrategie: Bei Fehler anhalten
+      * Anzahl der zulässigen Fehler: 1
       * Feldtrennzeichen: `;`
       * Trennzeichen für mehrere Werte: `,`
-      * Attributwertkonstante: EMPTYVALUE
-      * Feldeinteilung: deaktiviert
+      * Konstanter Attributwert: EMPTYVALUE
+      * Felder in der Einschließung: deaktiviert
 
    * Zu importierende Datei:
 
-      * Datei zum Importieren auswählen
-      * Verzeichnis der Bilddateien: leer lassen
+      * Zu importierende Datei auswählen
+      * Dateiordner für Bilder: Leer lassen
 
-1. Gehen Sie zur Storefront zur Seite `/product-set.html` und wechseln Sie zwischen verschiedenen Set-Größen. Für Set Size 24 gibt es keine Galerie.
+1. Wechseln Sie zur Storefront, um `/product-set.html` Seite zu öffnen und zwischen verschiedenen Set-Größen zu wechseln. Für die Größe 24 festlegen wird es keine Galerie geben.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -117,18 +117,18 @@ Die Galerie für alle einfachen Produkte innerhalb eines konfigurierbaren Produk
 
 Es gibt keine Galerie für die Produkte.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

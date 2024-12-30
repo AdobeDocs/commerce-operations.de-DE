@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-43862: Kunde kann aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers keine Warenkorbelemente aktualisieren'
-description: Der Patch MDVA-43862 behebt das Problem, dass der Kunde aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers keine Warenkorbelemente aktualisieren kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43862. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+title: 'MDVA-43862: Kundin oder Kunde kann Artikel im Warenkorb aufgrund eines Fehlers in der GraphQL UpdateCartItems-Mutation nicht aktualisieren'
+description: Der Patch MDVA-43862 löst das Problem, dass der Kunde die Warenkorbelemente aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers nicht aktualisieren kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43862. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: GraphQL, Orders, Shopping Cart
 role: Admin
 exl-id: d8a2579f-58f5-4407-8006-d58794a84b1f
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-43862: Kunde kann aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers keine Warenkorbelemente aktualisieren
+# MDVA-43862: Kundin oder Kunde kann Artikel im Warenkorb aufgrund eines Fehlers in der GraphQL UpdateCartItems-Mutation nicht aktualisieren
 
-Der Patch MDVA-43862 behebt das Problem, dass der Kunde aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers keine Warenkorbelemente aktualisieren kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43862. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der Patch MDVA-43862 löst das Problem, dass der Kunde die Warenkorbelemente aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers nicht aktualisieren kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43862. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,25 +27,25 @@ Der Patch MDVA-43862 behebt das Problem, dass der Kunde aufgrund eines GraphQL U
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der Kunde kann aufgrund eines GraphQL UpdateCartItems -Mutationsfehlers keine Warenkorbelemente aktualisieren.
+Der Kunde kann Warenkorbelemente aufgrund eines GraphQL-Fehlers der UpdateCartItems-Mutation nicht aktualisieren.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein konfigurierbares Produkt (MH01) durch Zuweisen eines einfachen (MH01-XL-Grau).
+1. Erstellen Sie ein konfigurierbares Produkt (MH01), indem Sie ein einfaches (MH01-XL-Grey) zuweisen.
 1. Navigieren Sie zu Commerce Admin > **Katalog** > **Produkte** > **SKU** > **MH01** > **Anpassbare Optionen**.
 1. Fügen Sie dem Produkt eine benutzerdefinierte Option hinzu.
    * Optionstitel: Option1
    * Optionstyp: Feld
-   * Erforderlich: ja
-   * Preis: 10,00
-   * Preistyp: Feste Größe
+   * Erforderlich: Ja
+   * Preis: 10.00
+   * Preisart: Festpreis
    * SKU: MHC1
    * Max. Zeichen: 25
-1. Führen Sie die folgende GraphQL-Abfrage aus, um eine Warenkorb-ID zu generieren.
+1. Führen Sie die folgende GraphQL-Abfrage aus, um die Warenkorb-ID zu generieren.
 
    ```GraphQL
    mutation {
@@ -53,8 +53,8 @@ Der Kunde kann aufgrund eines GraphQL UpdateCartItems -Mutationsfehlers keine Wa
    }
    ```
 
-1. Notieren Sie sich den Code der Warenkorb-ID.
-1. Führen Sie die folgende Abfrage aus, um dem Warenkorb ein konfigurierbares Produkt hinzuzufügen:
+1. Notieren Sie sich den Warenkorb-ID-Code.
+1. Führen Sie die folgende Abfrage aus, um das konfigurierbare Produkt zum Warenkorb hinzuzufügen:
 
    ```GraphQL
    mutation {
@@ -143,7 +143,7 @@ Der Warenkorb wird ohne Probleme aktualisiert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Sie erhalten den folgenden Fehler:
+Es wird die folgende Fehlermeldung angezeigt:
 
 ```GraphQL
 {
@@ -170,18 +170,18 @@ Sie erhalten den folgenden Fehler:
 }
 ```
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

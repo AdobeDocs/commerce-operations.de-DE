@@ -18,27 +18,27 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in Version 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere Informationen finden Sie unter [Migrieren des Elasticsearchs zu OpenSearch](../../../upgrade/prepare/opensearch-migration.md) .
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Form of Elasticsearch. Weitere [ finden Sie unter &quot;Elasticsearch nach ](../../../upgrade/prepare/opensearch-migration.md) migrieren“.
 
-In diesem Abschnitt wird beschrieben, wie Sie nginx als *unsecure* -Proxy konfigurieren, damit Adobe Commerce eine Suchmaschine verwenden kann, die auf diesem Server ausgeführt wird. In diesem Abschnitt wird die Einrichtung der einfachen HTTP-Authentifizierung nicht besprochen. Dies wird unter [Sichere Kommunikation mit nginx](#secure-communication-with-nginx) beschrieben.
+In diesem Abschnitt wird beschrieben, wie Sie Nginx als *unsicheren*-Proxy konfigurieren, damit Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit nginx](#secure-communication-with-nginx) erläutert.
 
 >[!NOTE]
 >
->Der Grund, warum der Proxy in diesem Beispiel nicht gesichert ist, ist, dass die Einrichtung und Überprüfung einfacher ist. Sie können bei Bedarf TLS mit diesem Proxy verwenden. Stellen Sie dazu sicher, dass Sie die Proxy-Informationen zu Ihrer sicheren Serverblockkonfiguration hinzufügen.
+>Der Grund, warum der Proxy in diesem Beispiel nicht gesichert ist, liegt darin, dass die Einrichtung und Überprüfung einfacher ist. Sie können bei Bedarf TLS mit diesem Proxy verwenden. Stellen Sie sicher, dass Sie die Proxy-Informationen zu Ihrer Konfiguration des sicheren Serverblocks hinzufügen.
 
-### Geben Sie zusätzliche Konfigurationsdateien in Ihrer globalen Konfiguration an
+### Angeben zusätzlicher Konfigurationsdateien in Ihrer globalen Konfiguration
 
-Stellen Sie sicher, dass Ihr globaler `/etc/nginx/nginx.conf` die folgende Zeile enthält, damit die anderen Konfigurationsdateien geladen werden, die in den folgenden Abschnitten erläutert werden:
+Stellen Sie sicher, dass die globale `/etc/nginx/nginx.conf` die folgende Zeile enthält, damit die anderen Konfigurationsdateien geladen werden, die in den folgenden Abschnitten beschrieben werden:
 
 ```conf
 include /etc/nginx/conf.d/*.conf;
 ```
 
-### Einrichten von Nginx als Proxy
+### Einrichten von nginx als Proxy
 
-In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den nginx-Server zugreifen kann.
+In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den nginx-Server zugreifen kann.
 
-1. Verwenden Sie einen Texteditor, um eine Datei `/etc/nginx/conf.d/magento_es_auth.conf` mit folgendem Inhalt zu erstellen:
+1. Verwenden Sie einen Texteditor, um eine `/etc/nginx/conf.d/magento_es_auth.conf` mit folgendem Inhalt zu erstellen:
 
    ```conf
    server {
@@ -49,13 +49,13 @@ In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den nginx-Serve
    }
    ```
 
-1. Starten Sie nginx neu:
+1. Nginx neu starten:
 
    ```bash
    service nginx restart
    ```
 
-1. Stellen Sie sicher, dass der Proxy funktioniert, indem Sie den folgenden Befehl eingeben:
+1. Überprüfen Sie, ob der Proxy funktioniert, indem Sie den folgenden Befehl eingeben:
 
    ```bash
    curl -i http://localhost:<proxy port>/_cluster/health
@@ -67,7 +67,7 @@ In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den nginx-Serve
    curl -i http://localhost:8080/_cluster/health
    ```
 
-   Meldungen, die der folgenden Anzeige ähneln, zeigen Erfolg an:
+   Meldungen ähnlich der folgenden werden angezeigt, um auf Erfolg hinzuweisen:
 
    ```
    HTTP/1.1 200 OK
@@ -81,26 +81,26 @@ In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den nginx-Serve
 
 ## Sichere Kommunikation mit nginx
 
-In diesem Abschnitt wird beschrieben, wie Sie [HTTP Basic authentication](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) mit Ihrem sicheren Proxy einrichten. Die Verwendung von TLS und HTTP Basic-Authentifizierung verhindert, dass jeder die Kommunikation mit Elasticsearch oder OpenSearch oder Ihrem Anwendungsserver abfängt.
+In diesem Abschnitt wird beschrieben, wie Sie [HTTP-Standardauthentifizierung](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) mit Ihrem sicheren Proxy einrichten. Durch die gemeinsame Verwendung von TLS und HTTP Basic-Authentifizierung wird verhindert, dass eine Person die Kommunikation mit Elasticsearch oder OpenSearch oder mit Ihrem Anwendungsserver abfängt.
 
-Da nginx nativ die HTTP Basic-Authentifizierung unterstützt, empfehlen wir sie beispielsweise über [Digest-Authentifizierung](https://www.nginx.com/resources/wiki/modules/auth_digest/), was in der Produktion nicht empfohlen wird.
+Da nginx nativ die HTTP-Standardauthentifizierung unterstützt, empfehlen wir diese über z. B. [Digest-Authentifizierung](https://www.nginx.com/resources/wiki/modules/auth_digest/), was in der Produktion nicht empfohlen wird.
 
 Zusätzliche Ressourcen:
 
-* [Einrichten der Kennwortauthentifizierung mit Nginx auf Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [Grundlegende HTTP-Authentifizierung mit Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Beispielkonfigurationen für Nginx für Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [Einrichten der Passwortauthentifizierung mit Nginx auf Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
+* [Einfache HTTP-Authentifizierung mit Nginx (howtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [Nginx-Beispielkonfigurationen für Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
 
-* [Erstellen von Kennwörtern](#create-a-password)
-* [Zugriff auf nginx einrichten](#set-up-access-to-nginx)
+* [Kennwörter erstellen](#create-a-password)
+* [Einrichten des Zugriffs auf nginx](#set-up-access-to-nginx)
 * [Einrichten eines eingeschränkten Kontexts für die Suchmaschine](#set-up-a-restricted-context-for-the-search-engine)
-* [Sicherstellen der Kommunikation](#secure-communication-with-nginx)
+* [Sicherstellen, dass Kommunikation sicher ist](#secure-communication-with-nginx)
 
-### Kennwort erstellen
+### Passwort erstellen
 
-Es wird empfohlen, Kennwörter für Benutzer mit Zugriff auf Elasticsearch oder OpenSearch mit dem Befehl Apache `htpasswd` zu kodieren (in diesem Beispiel mit dem Namen `magento_elasticsearch` ).
+Es wird empfohlen, den Apache `htpasswd`-Befehl zu verwenden, um Kennwörter für Benutzende mit Zugriff auf Elasticsearch oder OpenSearch (in diesem Beispiel `magento_elasticsearch` genannt) zu kodieren.
 
 So erstellen Sie ein Kennwort:
 
@@ -117,7 +117,7 @@ So erstellen Sie ein Kennwort:
    * Ubuntu: `apt-get -y install apache2-utils`
    * CentOS: `yum -y install httpd-tools`
 
-1. Erstellen Sie ein Verzeichnis &quot;`/etc/nginx/passwd`&quot;, um Kennwörter zu speichern:
+1. Erstellen Sie ein `/etc/nginx/passwd` Verzeichnis zum Speichern von Kennwörtern:
 
    ```bash
    mkdir -p /etc/nginx/passwd
@@ -129,9 +129,9 @@ So erstellen Sie ein Kennwort:
 
    >[!WARNING]
    >
-   >Aus Sicherheitsgründen sollte `<filename>` ausgeblendet werden, d. h. er muss mit einem Punkt beginnen.
+   >Aus Sicherheitsgründen sollten `<filename>` ausgeblendet sein. Das heißt, sie müssen mit einem Punkt beginnen.
 
-1. *(Optional).* Um Ihrer Kennwortdatei einen weiteren Benutzer hinzuzufügen, geben Sie denselben Befehl ohne die Option `-c` (Erstellen) ein:
+1. *(optional).* Um einen weiteren Benutzer zu Ihrer Kennwortdatei hinzuzufügen, geben Sie denselben Befehl ohne die Option `-c` (Erstellen) ein:
 
    ```bash
    htpasswd /etc/nginx/passwd/.<filename> <username>
@@ -139,13 +139,13 @@ So erstellen Sie ein Kennwort:
 
 1. Überprüfen Sie, ob der Inhalt von `/etc/nginx/passwd` korrekt ist.
 
-### Zugriff auf nginx einrichten
+### Einrichten des Zugriffs auf nginx
 
-In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den nginx-Server zugreifen kann.
+In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den nginx-Server zugreifen kann.
 
 >[!WARNING]
 >
->Das folgende Beispiel zeigt einen Proxy vom Typ *unsecure* . Um einen sicheren Proxy zu verwenden, fügen Sie Ihrem sicheren Serverblock den folgenden Inhalt (mit Ausnahme des Überwachungsanschlusses) hinzu.
+>Das folgende Beispiel bezieht sich auf einen *unsicheren* Proxy. Um einen sicheren Proxy zu verwenden, fügen Sie die folgenden Inhalte (mit Ausnahme des Listen-Ports) zu Ihrem sicheren Serverblock hinzu.
 
 Verwenden Sie einen Texteditor, um entweder `/etc/nginx/conf.d/magento_es_auth.conf` (unsicher) oder Ihren sicheren Serverblock mit den folgenden Inhalten zu ändern:
 
@@ -180,19 +180,19 @@ server {
 
 >[!NOTE]
 >
->Der im vorherigen Beispiel dargestellte Listener-Port der Suchmaschine ist nur ein Beispiel. Aus Sicherheitsgründen empfehlen wir die Verwendung eines nicht standardmäßigen Überwachungsports.
+>Der im vorherigen Beispiel dargestellte Listen-Port für Suchmaschinen ist nur ein Beispiel. Aus Sicherheitsgründen empfehlen wir die Verwendung eines nicht standardmäßigen Listen-Ports.
 
 ### Einrichten eines eingeschränkten Kontexts für die Suchmaschine
 
-In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den Suchmaschinenserver zugreifen kann.
+In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den Suchmaschinenserver zugreifen kann.
 
-1. Geben Sie den folgenden Befehl ein, um einen Ordner zum Speichern der Authentifizierungskonfiguration zu erstellen:
+1. Geben Sie den folgenden Befehl ein, um ein Verzeichnis zu erstellen, in dem die Authentifizierungskonfiguration gespeichert wird:
 
    ```bash
    mkdir /etc/nginx/auth/
    ```
 
-1. Verwenden Sie einen Texteditor, um eine Datei `/etc/nginx/auth/magento_elasticsearch.conf` mit folgendem Inhalt zu erstellen:
+1. Verwenden Sie einen Texteditor, um eine `/etc/nginx/auth/magento_elasticsearch.conf` mit folgendem Inhalt zu erstellen:
 
    ```conf
    location /elasticsearch {
@@ -206,7 +206,7 @@ In diesem Abschnitt wird beschrieben, wie Sie festlegen, wer auf den Suchmaschin
    }
    ```
 
-1. Wenn Sie einen sicheren Proxy einrichten, löschen Sie `/etc/nginx/conf.d/magento_es_auth.conf`.
+1. Wenn Sie einen sicheren Proxy eingerichtet haben, löschen Sie `/etc/nginx/conf.d/magento_es_auth.conf`.
 1. Starten Sie nginx neu und fahren Sie mit dem nächsten Abschnitt fort:
 
    ```bash

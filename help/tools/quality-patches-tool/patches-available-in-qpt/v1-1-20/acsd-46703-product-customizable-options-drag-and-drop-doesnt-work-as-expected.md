@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-46703: Drag & Drop zur Produktanpassung funktioniert nicht'
-description: Dieser Artikel bietet eine Lösung für das Problem, dass das Ziehen und Ablegen der anpassbaren Produktoptionen nicht wie erwartet funktioniert.
+title: 'ACSD-46703: Drag-and-Drop der Produktanpassung funktioniert nicht'
+description: Dieser Artikel bietet eine Lösung für den Fall, dass die anpassbaren Optionen zum Ziehen und Ablegen des Produkts nicht wie erwartet funktionieren.
 feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46703: Drag &amp; Drop zur Produktanpassung funktioniert nicht
+# ACSD-46703: Drag-and-Drop der Produktanpassung funktioniert nicht
 
-Der Patch ACSD-46703 behebt das Problem, dass die anpassbaren Optionen (Drag &amp; Drop) des Produkts nicht wie erwartet funktionieren. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-46703. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-46703 behebt das Problem, dass die anpassbaren Optionen des Produkts (Drag-and-Drop) nicht wie erwartet funktionieren. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-46703. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Der Patch ACSD-46703 behebt das Problem, dass die anpassbaren Optionen (Drag &am
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen Versionen des [Qualitätspatches-Tools] gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des [Quality Patches Tool] auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Benutzer können die anpassbaren Optionen nicht von einer Seite auf eine andere ziehen.
+Benutzende können die anpassbaren Optionen nicht von einer Seite auf eine andere ziehen.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie ein einfaches Produkt.
-1. Fügen Sie dem einfachen Produkt anpassbare Optionen hinzu und stellen Sie sicher, dass Sie mehr als 20 Optionen hinzufügen, was zu einer Paginierung führt.
-1. Versuchen Sie, eine anpassbare Option (per Drag &amp; Drop) innerhalb derselben Seite zu verschieben.
-1. Versuchen Sie jetzt, eine anpassbare Option von Seite 2 auf Seite 1 zu verschieben.
+1. Fügen Sie dem einfachen Produkt anpassbare Optionen hinzu und stellen Sie sicher, dass Sie über 20 Optionen hinzufügen, was zu einer Paginierung führt.
+1. Versuchen Sie, eine anpassbare Option (Drag-and-Drop) innerhalb derselben Seite zu verschieben.
+1. Versuchen Sie jetzt, eine anpassbare Option von Seite zwei auf Seite eins zu verschieben.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -47,20 +47,20 @@ Benutzer können die anpassbaren Optionen nicht von einer Seite auf eine andere 
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Mit der Drag &amp; Drop-Funktion können Sie keinen Wert auf eine andere Seite verschieben.
+Sie können mit der Drag-and-Drop-Funktion keinen Wert auf eine andere Seite verschieben.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Tools für Qualitätsmuster > Nutzung](/help/tools/quality-patches-tool/usage.md) im Handbuch zum Werkzeug für Qualitätsmuster.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [Quality Patches Tools > Usage](/help/tools/quality-patches-tool/usage.md) im Handbuch Quality Patches Tool.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Handbuch zum Werkzeug für Qualitätsmuster.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Handbuch Quality Patches Tool.

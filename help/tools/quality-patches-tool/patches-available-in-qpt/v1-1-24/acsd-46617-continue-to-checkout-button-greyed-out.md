@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]** Schaltfläche grau ausgeblendet, wenn die Zwischensumme größer als der konfigurierte Mindestauftragsbetrag ist'
+title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]** Schaltfläche ausgegraut, wenn die Zwischensumme größer ist als der konfigurierte Mindestbestellwert'
 description: Wenden Sie den Patch ACSD-46617 an, um das Adobe Commerce-Problem zu lösen, bei dem die Schaltfläche **[!UICONTROL Continue to Checkout]** ausgegraut ist, selbst wenn die Zwischensumme größer als der konfigurierte Mindestbestellbetrag ist.
 feature: Checkout, Orders
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46617: Schaltfläche &quot;[!UICONTROL Continue to Checkout]&quot; ausgegraut, wenn die Zwischensumme größer als &quot;[!UICONTROL Minimum Order Amount]&quot; ist
+# ACSD-46617: Schaltfläche &quot;[!UICONTROL Continue to Checkout]&quot; ist ausgegraut, wenn die Zwischensumme größer als &quot;[!UICONTROL Minimum Order Amount]&quot; ist
 
-Dieser Patch ACSD-46617 behebt das Problem, dass die Schaltfläche **[!UICONTROL Continue to Checkout]** ausgegraut ist, selbst wenn die Zwischensumme größer als der konfigurierte Mindestbestellbetrag ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.24 installiert ist. Die Patch-ID ist ACSD-46617. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Mit diesem Patch von ACSD-46617 wird das Problem behoben, dass die Schaltfläche **[!UICONTROL Continue to Checkout]** ausgegraut ist, selbst wenn die Zwischensumme größer als der konfigurierte Mindestbestellwert ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.24 installiert ist. Die Patch-ID ist ACSD-46617. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,15 +27,15 @@ Dieser Patch ACSD-46617 behebt das Problem, dass die Schaltfläche **[!UICONTROL
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die Schaltfläche **[!UICONTROL Continue to Checkout]** ist grau ausgeblendet, selbst wenn die Zwischensumme größer als der konfigurierte Mindestbestellbetrag ist.
+Die Schaltfläche **[!UICONTROL Continue to Checkout]** ist auch dann ausgegraut, wenn die Zwischensumme größer ist als der konfigurierte Mindestbestellwert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Gehen Sie zu Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** und legen Sie Folgendes fest:
+1. Gehen Sie zu Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** und stellen Sie Folgendes ein:
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
    * 
      [!UICONTROL Minimum Amount]: *2*
@@ -48,34 +48,34 @@ Die Schaltfläche **[!UICONTROL Continue to Checkout]** ist grau ausgeblendet, s
       * 
         [!UICONTROL Discount Amount]: *92*
       * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
-1. Erstellen Sie ein Produkt mit einem Preis von 25 USD.
+1. Erstellen Sie ein Produkt zum Preis von 25 $.
 1. Fügen Sie das Produkt zum Warenkorb hinzu.
-1. Gehen Sie zum Warenkorb, wählen Sie die Methode $5 **[!UICONTROL Flat Rate shipping]** aus und wenden Sie den Gutscheincode an.
-1. Gehen Sie zum Checkout, schließen Sie den Versand ab und navigieren Sie zum Abschnitt **[!UICONTROL Paytment]** .
-1. Gehen Sie zurück zum Warenkorb.
+1. Gehen Sie zum Warenkorb, wählen Sie die $5-**[!UICONTROL Flat Rate shipping]**-Methode aus und wenden Sie den Gutscheincode an.
+1. Wechseln Sie zur Kasse, schließen Sie den Versand ab und navigieren Sie zum Abschnitt **[!UICONTROL Paytment]** .
+1. Kehren Sie zum Warenkorb zurück.
 
 <u>Erwartete Ergebnisse</u>:
 
-Im Zusammenhang mit dem Mindestbestellbetrag gibt es keinen Fehler, da die Gesamtsumme von 2,4 USD den erforderlichen Betrag von 2 USD übersteigt.
+Es gibt keinen Fehler im Zusammenhang mit dem Mindestbestellbetrag, da die Gesamtsumme von $2.4 größer ist als der erforderliche Betrag von $2.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Im Zusammenhang mit dem Mindestbestellbetrag tritt ein Fehler auf, selbst wenn die Gesamtsumme von 2,4 USD den Mindestbestellbetrag von 2 USD übersteigt.
-* Die Schaltfläche **[!UICONTROL Continue to Checkout]** ist grau ausgeblendet.
+* Es liegt ein Fehler im Zusammenhang mit dem Mindestbestellbetrag vor, selbst wenn der Gesamtwert von $2.4 größer ist als der Mindestbestellbetrag von $2.
+* Die **[!UICONTROL Continue to Checkout]** ist ausgegraut.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

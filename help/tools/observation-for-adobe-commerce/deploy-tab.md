@@ -1,6 +1,6 @@
 ---
-title: Registerkarte [!UICONTROL Deploy]
-description: Erfahren Sie mehr über die Registerkarte [!UICONTROL Deploy] von  [!DNL Observation for Adobe Commerce].
+title: Die Registerkarte [!UICONTROL Deploy]
+description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL Deploy]" von [!DNL Observation for Adobe Commerce].
 exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,21 +10,21 @@ ht-degree: 0%
 
 ---
 
-# Registerkarte [!UICONTROL Deploy]
+# Die Registerkarte [!UICONTROL Deploy]
 
-Auf dieser Registerkarte wird versucht, Probleme und Ursachen von Bereitstellungsproblemen schnell zu isolieren.
+Mit dieser Registerkarte können Probleme und Ursachen von Bereitstellungsproblemen schnell isoliert werden.
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
-![Fehlerbehebung bei der Protokollbereitstellung bereitstellen](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
+![Fehlerbehebung bei der Bereitstellung von Protokollen](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
-Der Frame **[!UICONTROL Deploy log Deployment Troubleshooter]** zeigt die Anzahl der Bereitstellungsprotokoll-Ereignisse, die während des ausgewählten Zeitraums aufgetreten sind. Ziel ist es, einen Überblick über die Implementierungsaktivität zu erhalten und die Komplexität der Implementierung anhand der Anzahl zu ermitteln. Je mehr Nachrichten protokolliert werden, desto komplexer ist die Bereitstellung in der Regel.
+Der **[!UICONTROL Deploy log Deployment Troubleshooter]** zeigt die Anzahl der Bereitstellungsprotokoll-Ereignisse an, die im ausgewählten Zeitraum aufgetreten sind. Auf diese Weise erhalten Sie einen Überblick über die Bereitstellungsaktivität und können anhand der Anzahl der Vorgänge die Komplexität der Bereitstellung bestimmen. Je mehr Nachrichten protokolliert werden, desto komplexer ist die Bereitstellung in der Regel.
 
 ## [!UICONTROL Deploy State]
 
-![Status bereitstellen](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
+![Bereitstellungsstatus](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
-Der Frame **[!UICONTROL Deploy State]** zeigt die Bereitstellungsereignisse an, die während des ausgewählten Zeitraums aufgetreten sind. Der Parser für diesen Frame sucht nach diesen spezifischen Signalen:
+Der **[!UICONTROL Deploy State]** zeigt die Bereitstellungsereignisse an, die im ausgewählten Zeitraum aufgetreten sind. Der Parser für diesen Frame sucht nach diesen spezifischen Signalen:
 
 * &#39;`%NOTICE: Starting generate command%`&#39;) als &#39;`start_gen`&#39;
 * &#39;`%git apply /app/vendor/magento/ece-tools/patches%`&#39;) als &#39;`apply_patches`&#39;
@@ -40,7 +40,7 @@ Der Frame **[!UICONTROL Deploy State]** zeigt die Bereitstellungsereignisse an, 
 
 ![Protokolldetails bereitstellen](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
-Der Frame **[!UICONTROL Deploy Log Detail]** zeigt die Zusammenfassungsdetails der Bereitstellungsprotokoll-Nachricht an, die während des ausgewählten Zeitraums aufgetreten sind. Der Frame wird für die folgenden Zeichenfolgen in den Bereitstellungsprotokollen analysiert:
+Der **[!UICONTROL Deploy Log Detail]** zeigt Details zur Zusammenfassung der Bereitstellungsprotokollmeldungen an, die im ausgewählten Zeitraum aufgetreten sind. Der Frame wird nach den folgenden Zeichenfolgen in den Bereitstellungsprotokollen geparst:
 
 * &#39;`%NOTICE: Starting deploy.%`&#39;) als &#39;`start_dply`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/deploy.xml%`&#39;) als &#39;`start_scenario`&#39;
@@ -79,9 +79,9 @@ Der Frame **[!UICONTROL Deploy Log Detail]** zeigt die Zusammenfassungsdetails d
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Post-Bereitstellungsprotokolldetails](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Protokolldetails nach der Bereitstellung](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
-Der Frame **[!UICONTROL Post Deploy Log Detail]** zeigt die Protokolldetails nach der Bereitstellung an, die während des ausgewählten Zeitraums aufgetreten sind. Dieser Frame konzentriert sich auf bestimmte Protokollmeldungen, die die folgenden Zeichenfolgen enthalten:
+Der **[!UICONTROL Post Deploy Log Detail]** zeigt die Protokolldetails nach der Bereitstellung an, die im ausgewählten Zeitraum aufgetreten sind. Dieser Frame konzentriert sich auf bestimmte Protokollmeldungen, die die folgenden Zeichenfolgen enthalten:
 
 * &#39;`%Disabled maintenance mode%`&#39;) als &#39;`disabled_maint_mode`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/post-deploy.xml%`&#39;) als &#39;`start_pstdply_scenario`&#39;
@@ -99,7 +99,7 @@ Der Frame **[!UICONTROL Post Deploy Log Detail]** zeigt die Protokolldetails nac
 
 ![Cloud-Protokolldetails](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-Der Frame **[!UICONTROL Cloud Log Detail]** zeigt die Cloud-Protokolldetails an, die während des ausgewählten Zeitraums aufgetreten sind. Die folgenden Zeichenfolgen werden geparst und mit der folgenden &quot;AS&quot;-Beschriftung zurückgegeben:
+Der **[!UICONTROL Cloud Log Detail]** zeigt die Cloud-Protokolldetails an, die im ausgewählten Zeitraum aufgetreten sind. Die folgenden Zeichenfolgen werden analysiert und mit der Beschriftung „AS“ zurückgegeben:
 
 * &#39;`%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%`&#39;) als &#39;`start_update`&#39;
 * &#39;`%Schema creation/updates:%`&#39;) als &#39;`schema_updates`&#39;
@@ -144,7 +144,7 @@ Der Frame **[!UICONTROL Cloud Log Detail]** zeigt die Cloud-Protokolldetails an,
 * &#39;`%INFO: Trying to kill running cron jobs%`&#39;) als &#39;`kill_crons`&#39;
 * &#39;`%INFO: Clearing redis cache:%`&#39;) als &#39;`clear_redis_cache`&#39;
 * &#39;`%INFO: Checking if db exists and has tables%`&#39;) als &#39;`db_check`&#39;
-* &#39;`%WARNING: [2010] Elasticsearch service is installed at infrastructure layer, but is not used as a search engine.%`) as &#39;`es_not_used`&#39;
+* &#39;`%WARNING: [2010] Elasticsearch service is installed at infrastructure layer, but is not used as a search engine.%`) als &#39;`es_not_used`&#39;
 * &#39;`%NOTICE: Starting update.%`&#39;) als &#39;`starting_update`&#39;
 * &#39;`%INFO: Set search engine to: mysql%`&#39;) als &#39;`mysql_search`&#39;
 * &#39;`%SQLSTATE[HY000] [2006] MySQL server has gone away%`&#39;) als &#39;`mysql_gone`&#39;
@@ -153,10 +153,10 @@ Der Frame **[!UICONTROL Cloud Log Detail]** zeigt die Cloud-Protokolldetails an,
 
 ![Anzahl der während der Bereitstellung importierten Module](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
-Der Frame &quot;**[!UICONTROL Count of modules imported during deploy]**&quot;zeigt die Anzahl der während der Bereitstellung importierten Module über den ausgewählten Zeitraum an.
+Der **[!UICONTROL Count of modules imported during deploy]** zeigt die Anzahl der Module an, die während der Bereitstellung im ausgewählten Zeitraum importiert wurden.
 
 ## [!UICONTROL Deployed module list]
 
-![Liste bereitgestellter Module](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
+![Liste der bereitgestellten Module](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
-Der Frame **[!UICONTROL Deployed module list]** zeigt bereitgestellte Module über den ausgewählten Zeitraum hinweg an.
+Der **[!UICONTROL Deployed module list]** zeigt bereitgestellte Module für den ausgewählten Zeitraum an.

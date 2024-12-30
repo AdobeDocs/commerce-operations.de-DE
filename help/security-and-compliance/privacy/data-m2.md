@@ -1,6 +1,6 @@
 ---
-title: Referenz zu personenbezogenen Daten des Kunden (Version 2.x)
-description: Erfahren Sie mehr über Datenflussdiagramme und Zuordnungen von Datenbankentitäten für personenbezogene Daten von Kunden in Adobe Commerce 2.x.
+title: Referenz zu personenbezogenen Daten von Kunden (Version 2.x)
+description: Erfahren Sie mehr über Datenflussdiagramme und Datenbankentitätszuordnungen für personenbezogene Kundeninformationen in Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
@@ -9,48 +9,48 @@ ht-degree: 0%
 
 ---
 
-# Referenz zu personenbezogenen Daten des Kunden (Version 2.x)
+# Referenz zu personenbezogenen Daten von Kunden (Version 2.x)
 
 >[!NOTE]
 >
->Dies ist eines von mehreren Themen, die Adobe Commerce-Händler und -Entwickler bei der Vorbereitung auf die Einhaltung von Datenschutzbestimmungen unterstützen. Wenden Sie sich an Ihren Rechtsbeistand, um festzustellen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen einhalten sollte.
+>Dies ist eines von mehreren Themen, die Adobe Commerce-Händlern und -Entwicklern dabei helfen, sich auf die Einhaltung von Datenschutzbestimmungen vorzubereiten. Beraten Sie sich mit Ihrem Rechtsbeistand, um zu bestimmen, ob und wie Ihr Unternehmen rechtliche Verpflichtungen erfüllen sollte.
 
-Verwenden Sie die folgenden Datenflussdiagramme und Datenbankentitätszuordnungen als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen wie:
+Verwenden Sie die folgenden Datenflussdiagramme und Datenbankentitätszuordnungen als Referenz bei der Entwicklung von Compliance-Programmen für Datenschutzbestimmungen, z. B.:
 
 - [DSGVO](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## Datenflussdiagramme
 
-Die Datenflussdiagramme zeigen die Datentypen, die Kunden und Administratoren in der Storefront und in Admin eingeben und abrufen können.
+Die Datenflussdiagramme zeigen die Datentypen, die Kundinnen und Kunden sowie Admins eingeben und von der Storefront und Admin abrufen können.
 
-### Frontend-Dateneingabepunkte
+### Frontend-Dateneinstiegspunkte
 
-Ein Benutzer kann Kunden-, Adressdaten- und Zahlungsinformationen eingeben, wenn er sich für ein Konto, während eines Checkout und ähnlichen Ereignissen registriert.
+Ein Benutzer kann bei der Registrierung für ein Konto, während der Kasse und bei ähnlichen Ereignissen Kunden-, Adressen- und Zahlungsinformationen eingeben.
 
-![Frontend-Dateneingabepunkte](../../assets/security-compliance/frontend-data-entry-points.svg)
+![Frontend-Dateneinstiegspunkte](../../assets/security-compliance/frontend-data-entry-points.svg)
 
 ### Frontend-Datenzugriffspunkte
 
-Adobe Commerce lädt Kundeninformationen, wenn sich der Kunde anmeldet und mehrere verschiedene Seiten anzeigt oder auscheckt.
+Adobe Commerce lädt Kundeninformationen, wenn sich der Kunde anmeldet und mehrere verschiedene Seiten aufruft oder auscheckt.
 
 ![Frontend-Datenzugriffspunkte](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### Dateneingabepunkte im Backend
+### Backend-Dateneinstiegspunkte
 
-Ein Händler kann Kundeninformationen, Adressdaten und Zahlungsdaten bei der Erstellung eines Kunden oder einer Bestellung durch den Administrator eingeben.
+Ein Händler kann beim Erstellen eines Kunden oder einer Bestellung über den Administrator Kundeninformationen, Adressdaten und Zahlungsdaten eingeben.
 
-![Backend-Dateneingabepunkte](../../assets/security-compliance/backend-data-entry-points.svg)
+![Backend-Dateneinstiegspunkte](../../assets/security-compliance/backend-data-entry-points.svg)
 
 ### Backend-Datenzugriffspunkte
 
-Adobe Commerce lädt Kundeninformationen, wenn ein Händler mehrere Raster anzeigt, auf ein Raster klickt, um detaillierte Informationen anzuzeigen, und verschiedene andere Aufgaben ausführt.
+Adobe Commerce lädt Kundeninformationen, wenn ein Händler mehrere Rastertypen anzeigt, auf ein Raster klickt, um detaillierte Informationen anzuzeigen, und verschiedene andere Aufgaben ausführt.
 
 ![Backend-Datenzugriffspunkte](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Datenbankentitäten
 
-Adobe Commerce speichert in erster Linie kundenspezifische Informationen in Kunden-, Adressen-, Bestell-, Angebotstabellen und Zahlentabellen. Andere Tabellen enthalten Verweise auf die Kunden-ID.
+Adobe Commerce speichert hauptsächlich kundenspezifische Informationen in Kunden-, Adressen-, Auftrags-, Angebots- und Zahlungstabellen. Andere Tabellen enthalten Verweise auf die Kunden-ID.
 
 ### Kundendaten
 
@@ -61,17 +61,17 @@ Adobe Commerce kann so konfiguriert werden, dass die folgenden Kundenattribute g
 - Vorname
 - Geschlecht
 - Nachname
-- Middle Name/Initial
-- Namenpräfix
-- Name Suffix
+- Zweiter Vorname/Initial
+- Namenspräfix
+- Namensuffix
 
 >[!NOTE]
 >
->Achten Sie in Übereinstimmung mit den aktuellen Best Practices für Sicherheit und Datenschutz darauf, dass Sie alle potenziellen rechtlichen und sicherheitstechnischen Risiken im Zusammenhang mit der Speicherung des vollständigen Geburtsdatums (Monat, Tag, Jahr) des Kunden sowie anderer persönlicher Identifikatoren wie vollständiger Name kennen, bevor Sie diese Daten erfassen oder verarbeiten.
+>Im Einklang mit den aktuellen Best Practices für Sicherheit und Datenschutz sollten Sie sich vor der Erfassung oder Verarbeitung solcher Daten über mögliche rechtliche und Sicherheitsrisiken im Zusammenhang mit der Speicherung des vollständigen Geburtsdatums (Monat, Tag, Jahr) der Kundinnen und Kunden sowie anderer persönlicher Kennungen wie vollständiger Name im Klaren sein.
 
-#### Verweise auf `customer_entity` und &#39;customer_entity&#39;
+#### `customer_entity` und „customer_entity“-Verweise
 
-Die folgenden Spalten in der Tabelle `customer_entity` enthalten Kundeninformationen:
+Die folgenden Spalten in der `customer_entity` Tabelle enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ------------ | ------------ |
@@ -81,31 +81,31 @@ Die folgenden Spalten in der Tabelle `customer_entity` enthalten Kundeninformati
 | `middlename` | varchar(255) |
 | `lastname` | varchar(255) |
 | `suffix` | varchar(40) |
-| `dob` | date |
-| `gender` | smallint(5) |
+| `dob` | Datum |
+| `gender` | Smallint(5) |
 
 Diese Tabellen verweisen auf `customer_entity` und können benutzerdefinierte Kundenattribute enthalten:
 
-| Verzeichnis | Spalte | Datentyp |
+| Tabelle | Spalte | Datentyp |
 | -------------------------- | ------- | ------------- |
 | `customer_entity_datetime` | `value` | datetime |
-| `customer_entity_decimal` | `value` | decimal(12,4) |
+| `customer_entity_decimal` | `value` | DECIMAL(12,4) |
 | `customer_entity_int` | `value` | int(11) |
-| `customer_entity_text` | `value` | text |
+| `customer_entity_text` | `value` | Text |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
-#### `customer_grid_flat` table
+#### `customer_grid_flat`
 
-Die folgenden Spalten in der Tabelle `customer_grid_flat` enthalten Kundeninformationen:
+Die folgenden Spalten in der `customer_grid_flat` Tabelle enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | -------------------- | ------------ |
-| `name` | text |
+| `name` | Text |
 | `email` | varchar(255) |
-| `dob` | date |
+| `dob` | Datum |
 | `gender` | int(11) |
-| `shipping_full` | text |
-| `billing_full` | text |
+| `shipping_full` | Text |
+| `billing_full` | Text |
 | `billing_firstname` | varchar(255) |
 | `billing_lastname` | varchar(255) |
 | `billing_telephone` | varchar(255) |
@@ -121,25 +121,25 @@ Die folgenden Spalten in der Tabelle `customer_grid_flat` enthalten Kundeninform
 
 Adobe Commerce speichert die folgenden Kundenattribute:
 
-- Ort
+- Stadt
 - Firma
 - Land
 - Fax
 - Vorname
 - Nachname
-- Middle Name/Initial
-- Namenpräfix
-- Name Suffix
+- Zweiter Vorname/Initial
+- Namenspräfix
+- Namensuffix
 - Telefonnummer
-- Bundesland/Provinz
-- Bundesland/Provinz-ID
-- Straße
-- MwSt. Nummer
+- Bundesland/Region
+- Bundesland-/Regionskennung
+- Adresse Straße
+- Umsatzsteuer-Identifikationsnummer
 - Postleitzahl
 
-#### Verweise auf `customer_address_entity` und `customer_address_entity`
+#### `customer_address_entity` und `customer_address_entity` Verweise
 
-Die folgenden Spalten in der Tabelle `customer_address_entity` enthalten Kundeninformationen:
+Die folgenden Spalten in der `customer_address_entity` Tabelle enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ------------ | ------------ |
@@ -153,28 +153,28 @@ Die folgenden Spalten in der Tabelle `customer_address_entity` enthalten Kundeni
 | `postcode` | varchar(255) |
 | `region` | varchar(255) |
 | `region_id` | int(10) |
-| `street` | text |
+| `street` | Text |
 | `suffix` | varchar(40) |
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
 Diese Tabellen verweisen auf `customer_address_entity` und können benutzerdefinierte Kundenattribute enthalten:
 
-| Verzeichnis | Spalte | Datentyp |
+| Tabelle | Spalte | Datentyp |
 | ---------------------------------- | ------- | ------------- |
 | `customer_address_entity_datetime` | `value` | datetime |
-| `customer_address_entity_decimal` | `value` | decimal(12,4) |
+| `customer_address_entity_decimal` | `value` | DECIMAL(12,4) |
 | `customer_address_entity_int` | `value` | int(11) |
-| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_text` | `value` | Text |
 | `customer_address_entity_varchar` | `value` | varchar(255) |
 
 ### Bestelldaten
 
-Die Tabellen `sales_order` und die zugehörigen Tabellen enthalten den Kundennamen, die Abrechnungs- und Versandadressen sowie die zugehörigen Daten.
+Die `sales_order` und zugehörigen Tabellen enthalten den Kundennamen, die Rechnungs- und Versandadressen sowie zugehörige Daten.
 
-#### `sales_order` table
+#### `sales_order`
 
-Die folgenden Spalten in der Tabelle `sales_order` enthalten Kundeninformationen:
+Die folgenden Spalten in der `sales_order` Tabelle enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --------------------- | ------------ |
@@ -193,7 +193,7 @@ Die folgenden Spalten in der Tabelle `sales_order` enthalten Kundeninformationen
 | `remote_ip` | varchar(32) |
 | `x_forwarded_for` | varchar(32) |
 
-#### `sales_order_address` table
+#### `sales_order_address`
 
 Die Tabelle `sales_order_address` enthält die Adresse des Kunden.
 
@@ -216,9 +216,9 @@ Die Tabelle `sales_order_address` enthält die Adresse des Kunden.
 | `suffix` | varchar(255) |
 | `company` | varchar(255) |
 
-#### `sales_order_grid` table
+#### `sales_order_grid`
 
-Die folgenden Spalten in der Tabelle `sales_order_grid` enthalten Kundeninformationen:
+Die folgenden Spalten in der `sales_order_grid` Tabelle enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ---------------------- | ------------ |
@@ -233,11 +233,11 @@ Die folgenden Spalten in der Tabelle `sales_order_grid` enthalten Kundeninformat
 
 ### Anführungsdaten
 
-Angebote enthalten den Namen, die E-Mail-Adresse, die Adresse und die zugehörigen Informationen eines Kunden.
+Anführungszeichen enthalten den Namen, die E-Mail-Adresse, die Adresse und die zugehörigen Informationen eines Kunden.
 
-#### `quote` table
+#### `quote`
 
-Die folgenden Spalten in der Tabelle `quote` enthalten Kundeninformationen:
+Die folgenden Spalten in der `quote` Tabelle enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | --------------------- | ------------ |
@@ -252,9 +252,9 @@ Die folgenden Spalten in der Tabelle `quote` enthalten Kundeninformationen:
 | `customer_taxvat` | varchar(255) |
 | `customer_gender` | varchar(255) |
 
-#### `quote_address` table
+#### `quote_address`
 
-Die folgenden Spalten in der Tabelle `quote_address` enthalten Kundeninformationen:
+Die folgenden Spalten in der `quote_address` Tabelle enthalten Kundeninformationen:
 
 | Spalte | Datentyp |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Die folgenden Spalten in der Tabelle `quote_address` enthalten Kundeninformation
 
 ### Zahlungsdaten
 
-Die Tabelle `sales_order_payment` enthält Kreditkarteninformationen und andere Transaktionsinformationen.
+Die `sales_order_payment` Tabelle enthält Kreditkartenangaben und andere Transaktionsdaten.
 
 | Spalte | Datentyp |
 | ------------------------ | ------------ |
@@ -291,15 +291,15 @@ Die Tabelle `sales_order_payment` enthält Kreditkarteninformationen und andere 
 | `cc_debug_response_body` | varchar(32) |
 | `echeck_account_name` | varchar(32) |
 | `cc_number_enc` | varchar(128) |
-| `additional_information` | text |
+| `additional_information` | Text |
 
 ### Einladungsdaten
 
-Adobe Commerce kann so konfiguriert werden, dass Kunden Einladungen an private Verkaufsstellen und Ereignisse senden können.
+Adobe Commerce kann so konfiguriert werden, dass Kunden Einladungen an private Verkäufe und Veranstaltungen senden können.
 
-#### `magento_invitation` table
+#### `magento_invitation`
 
-Die Tabelle &quot;`magento_invitation`&quot; enthält die Kunden-ID, E-Mail und Verweiskennung.
+Die Tabelle `magento_invitation` enthält die Kunden-ID, die E-Mail-Adresse und die Verweiskennung.
 
 | Spalte | Datentyp |
 | ------------- | ------------ |
@@ -307,18 +307,18 @@ Die Tabelle &quot;`magento_invitation`&quot; enthält die Kunden-ID, E-Mail und 
 | `email` | varchar(255) |
 | `referral_id` | int(10) |
 
-#### `magento_invitation_track` table
+#### `magento_invitation_track`
 
-Die Tabelle `magento_invitation_track` enthält auch Kundeninformationen.
+Die `magento_invitation_track` Tabelle enthält auch Kundeninformationen.
 
 | Spalte | Datentyp |
 | ------------- | --------- |
 | `inviter_id` | int(10) |
 | `referral_id` | int(10) |
 
-### Verschiedene Tabellen, die auf Kunden verweisen
+### Verschiedene Tabellen, die auf den Kunden verweisen
 
-Die folgenden Tabellen enthalten die Spalte `customer_id` :
+Die folgenden Tabellen enthalten eine `customer_id` Spalte:
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

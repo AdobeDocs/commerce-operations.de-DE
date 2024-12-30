@@ -1,5 +1,5 @@
 ---
-title: Vor-Ort-Installation
+title: Voraussetzungen für die lokale Installation
 description: Erfahren Sie mehr über die Softwareabhängigkeiten, die für lokale Installationen von Adobe Commerce erforderlich sind.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
@@ -9,21 +9,21 @@ ht-degree: 1%
 
 ---
 
-# Vor-Ort-Installation
+# Voraussetzungen für die lokale Installation
 
-Vor der Installation von Adobe Commerce müssen Sie Folgendes tun:
+Vor der Installation von Adobe Commerce müssen Sie folgende Schritte ausführen:
 
 * Richten Sie einen oder mehrere Hosts ein, die die [Systemanforderungen](../system-requirements.md) erfüllen.
-* Wenn Sie mehr als einen Webknoten mit Lastenausgleich einrichten, richten Sie den Teil Ihres Systems _vor_ ein und testen Sie ihn, indem Sie die Anwendung installieren.
+* Wenn Sie mehr als einen Webknoten mit Lastenausgleich einrichten, richten Sie diesen Teil Ihres Systems ein und testen Sie ihn (_)_ Sie die Anwendung.
 * Stellen Sie sicher, dass Sie Ihr gesamtes System an verschiedenen Stellen während der Installation sichern können, damit Sie es bei Problemen zurücksetzen können.
 
 >[!NOTE]
 >
->Es wird davon ausgegangen, dass Sie die Adobe Commerce in einer **Entwicklungsumgebung** installieren, dass Sie über root-Benutzerzugriff auf den Computer verfügen, **und**, dass der Computer nicht hochgradig sicher sein muss. Wenn Sie einen sichereren Computer einrichten, empfehlen wir dringend, sich an einen Netzwerkadministrator zu wenden, um weitere Unterstützung zu erhalten.
+>Wir gehen davon aus, dass Sie die Adobe Commerce in einer **Entwicklungsumgebung** installieren, dass Sie einen Root-Benutzerzugriff auf den Computer haben **und** dass der Computer nicht hochsicher sein muss. Wenn Sie einen sichereren Computer einrichten, empfehlen wir dringend, sich an einen Netzwerkadministrator zu wenden, um weitere Unterstützung zu erhalten.
 
-Wir empfehlen Ihnen dringend, Ihre Betriebssystemsoftware zu aktualisieren und zu aktualisieren. Diese Upgrades können Sicherheits- und Software-Korrekturen bieten, die künftige Probleme verhindern können. Wissen Sie nicht, was das bedeutet? Sehen Sie sich unsere [Installationsübersichtsseite](../overview.md) an.
+Es wird dringend empfohlen, die Betriebssystemsoftware zu aktualisieren und zu aktualisieren. Diese Upgrades können Sicherheits- und Softwarekorrekturen bereitstellen, die zukünftige Probleme verhindern können. Wissen Sie nicht, was das bedeutet? Schauen Sie sich unsere [Installationsübersichtsseite](../overview.md) an.
 
-Geben Sie die folgenden Befehle als Benutzer mit `root` -Berechtigungen ein:
+Geben Sie die folgenden Befehle als Benutzer mit `root` Berechtigungen ein:
 
 * Ubuntu
 
@@ -55,7 +55,7 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Adobe Commerce unterstützt Apache-Version 2.4, da das folgende Ergebnis anzeigt:
+Adobe Commerce unterstützt Apache Version 2.4, da das folgende Ergebnis anzeigt:
 
 ```
 Server version: Apache/2.4.0 (Unix)
@@ -66,11 +66,11 @@ Informationen zum Installieren oder Aktualisieren von Apache finden Sie unter [A
 
 ### PHP
 
-Unter [Systemanforderungen](../system-requirements.md) finden Sie unterstützte Versionen von PHP und unter [PHP](../system-requirements.md#php-settings) für PHP-Anforderungen.
+Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen von PHP und [PHP](../system-requirements.md#php-settings) für PHP-Anforderungen.
 
 ### MySQL
 
-Vergewissern Sie sich, dass Sie über eine kompatible Version von MySQL für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie unter [Systemanforderungen](../system-requirements.md) .
+Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -82,7 +82,7 @@ Beispiel:
 mysql -u magento -p
 ```
 
-Das folgende Ergebnis zeigt die Version, die Sie ausführen.
+Das folgende Ergebnis gibt die Version an, die Sie ausführen.
 
 ```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -98,19 +98,19 @@ owners.
 
 Geben Sie `help` oder `\h` ein, um Hilfe zu erhalten. Geben Sie `\c` ein, um die aktuelle Eingabeanweisung zu löschen.
 
-Geben Sie `exit` an der `mysql>` -Eingabeaufforderung ein, um zu beenden.
+Geben Sie `exit` an der `mysql>` ein, um den Vorgang zu beenden.
 
 Informationen zum Installieren oder Aktualisieren von MySQL finden Sie unter [MySQL](database/mysql.md).
 
 ### Suchmaschine
 
-Überprüfen der OpenSearch-Installation:
+So überprüfen Sie Ihre OpenSearch-Installation:
 
 ```bash
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-Überprüfen der Installation des Elasticsearchs:
+So überprüfen Sie die Elasticsearch-Installation:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

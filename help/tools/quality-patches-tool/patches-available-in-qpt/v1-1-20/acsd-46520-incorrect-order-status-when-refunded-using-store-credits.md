@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-46520: Unrichtiger Bestellstatus bei Rückerstattung mittels Gutschriften für Geschäfte'
-description: Dieser Artikel bietet eine Lösung für das Problem, dass Benutzer einen falschen Bestellstatus erhalten, wenn sie mit Store-Gutschriften zurückerstattet werden.
+title: 'ACSD-46520: Falscher Bestellstatus bei Rückerstattung über Ladenguthaben'
+description: Dieser Artikel bietet eine Lösung für das Problem, dass Benutzende einen falschen Bestellstatus erhalten, wenn sie mithilfe von Store-Guthaben zurückerstattet werden.
 feature: Orders, Returns
 role: Admin
 exl-id: 67740003-a71e-41bf-afda-ca3e32290115
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46520: Unrichtiger Bestellstatus bei Rückerstattung mittels Gutschriften für Geschäfte
+# ACSD-46520: Falscher Bestellstatus bei Rückerstattung über Ladenguthaben
 
-Der Patch ACSD-46520 löst das Problem, dass Benutzer einen falschen Bestellstatus erhalten, wenn sie mit Store-Gutschriften zurückerstattet werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-46520. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
+Mit dem Patch ACSD-46520 wird das Problem gelöst, dass Benutzende einen falschen Bestellstatus erhalten, wenn sie über Ladenguthaben zurückerstattet werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20 installiert ist. Die Patch-ID ist ACSD-46520. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,19 +27,19 @@ Der Patch ACSD-46520 löst das Problem, dass Benutzer einen falschen Bestellstat
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Benutzer erhalten einen falschen Bestellstatus, wenn sie mit Gutschriften zurückerstattet werden.
+Benutzende erhalten bei der Rückerstattung über Ladenguthaben einen falschen Bestellstatus.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein Kundenkonto in der Storefront und melden Sie sich an.
-1. Weisen Sie dem Kunden vom Administrator Store-Gutschriften zu. Die Gutschriften aus dem Geschäft sollten die gesamte Bestellung abdecken.
-1. Bestellung unter Verwendung der Gutscheine.
-1. Rechnungsstellung.
-1. Erstellen Sie ein Kreditmemo, um den vollen Betrag der Bestellung zurückzuerstatten.
+1. Kundenkonto in der Storefront erstellen und sich anmelden.
+1. Weisen Sie dem Kunden vom Administrator Gutschriften aus dem Store zu. Die Ladenguthaben sollten die gesamte Bestellung abdecken.
+1. Bestellen Sie mit den Gutschriften aus dem Geschäft.
+1. Rechnung der Bestellung.
+1. Erstellen Sie eine Gutschrift, um den gesamten Bestellbetrag zurückzuerstatten.
 Aktivieren Sie das Kontrollkästchen **[!UICONTROL Refund to store credit]** .
 1. Überprüfen Sie den Bestellstatus.
 
@@ -49,20 +49,20 @@ Der Bestellstatus lautet *Geschlossen*.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Bestellstatus lautet *Abgeschlossen*, was nicht dem korrekten Status entspricht.
+Der Bestellstatus ist *Abgeschlossen* was nicht der richtige Status ist.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder [!DNL Magento Open Source] vor Ort: [Tools für Qualitätsmuster > Nutzung](/help/tools/quality-patches-tool/usage.md) im Handbuch zum Werkzeug für Qualitätsmuster.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder [!DNL Magento Open Source] On-Premise: [Quality Patches Tools > Usage](/help/tools/quality-patches-tool/usage.md) im Handbuch Quality Patches Tool.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Handbuch zum Werkzeug für Qualitätsmuster.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Handbuch Quality Patches Tool.

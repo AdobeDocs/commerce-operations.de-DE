@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-42645: Administratoren können keine Bonuspunkte für deaktivierte Store-Gutschriften zurückerstatten'
-description: Der Patch MDVA-42645 behebt das Problem, dass der Administrator keine Bonuspunkte zurückgeben kann, wenn die Funktion zum Speichern von Guthaben deaktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-42645. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+title: 'MDVA-42645: Der Administrator kann keine Prämienpunkte für Gutschriften für ein deaktiviertes Geschäft zurückerstatten'
+description: Der MDVA-42645 Patch löst das Problem, dass der Administrator Prämienpunkte nicht zurückerstatten kann, wenn die Funktion „Gutschrift speichern“ deaktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-42645. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: Admin Workspace, Orders, Rewards, Returns
 role: Admin
 exl-id: 8053fcc7-d30c-424a-9494-df6e8630b095
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-42645: Administratoren können keine Bonuspunkte für deaktivierte Store-Gutschriften zurückerstatten
+# MDVA-42645: Der Administrator kann keine Prämienpunkte für Gutschriften für ein deaktiviertes Geschäft zurückerstatten
 
-Der Patch MDVA-42645 behebt das Problem, dass der Administrator keine Bonuspunkte zurückgeben kann, wenn die Funktion zum Speichern von Guthaben deaktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-42645. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der MDVA-42645 Patch löst das Problem, dass der Administrator Prämienpunkte nicht zurückerstatten kann, wenn die Funktion „Gutschrift speichern“ deaktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-42645. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,45 +27,45 @@ Der Patch MDVA-42645 behebt das Problem, dass der Administrator keine Bonuspunkt
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der Administrator kann keine Bonuspunkte zurückgeben, wenn die Funktion zum Speichern von Guthaben deaktiviert ist.
+Der Administrator kann Prämienpunkte nicht zurückerstatten, wenn die Funktion „Gutschrift speichern“ deaktiviert ist.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie ein einfaches Produkt.
-1. Erstellen Sie ein neues Kundenkonto und fügen Sie einige Bonuspunkte hinzu.
-1. Deaktivieren Sie die Funktion &quot;Kreditspeicher speichern&quot;, indem Sie zu **Store** > Einstellungen > **Konfiguration** > **Kunde** > **Kundenkonfiguration** > **Kreditoptionen speichern** navigieren.
-1. Melden Sie sich als Kunde an, dem die Belohnungspunkte zugewiesen sind.
-1. Fügen Sie ein Produkt zum Warenkorb hinzu und navigieren Sie zum Checkout.
-1. Verwenden Sie die Bonuspunkte im Zahlungsabschnitt und geben Sie die Bestellung auf.
-1. Öffnen Sie die Bestellung im Admin und rechnen Sie die Bestellung auf.
-1. Klicken Sie auf den Link **Credit Memo** , um ein neues Kreditmemo zu erstellen.
-1. Tippen Sie unten auf die Option &quot;Rückerstattungspunkte&quot;und klicken Sie auf die Option **Offline zurückerstatteten**.
+1. Erstellen Sie ein neues Kundenkonto und fügen Sie einige Prämienpunkte hinzu.
+1. Deaktivieren Sie die Funktion „Gutschrift speichern“, indem Sie **Store** > Einstellungen > **Konfiguration** > **Kunde** > **Kundenkonfiguration** > **Gutschriftsoptionen speichern**.
+1. Melden Sie sich als Kunde an, dem die Prämienpunkte zugewiesen werden.
+1. Fügen Sie ein Produkt zum Warenkorb hinzu und navigieren Sie zur Kasse.
+1. Verwenden Sie die Belohnungspunkte im Zahlungsbereich und geben Sie die Bestellung auf.
+1. Öffnen Sie die Bestellung im Administrator und fakturieren Sie die Bestellung.
+1. Klicken Sie auf den **Gutschrift**, um eine neue Gutschrift zu erstellen.
+1. Markieren Sie unten die Option Rewards Reward Points und klicken Sie auf **Refund Offline**.
 
 <u>Erwartete Ergebnisse</u>:
 
-* Das Credit Memo wurde erfolgreich erstellt.
-* Die Belohnungspunkte werden erfolgreich zurückerstattet.
+* Die Gutschrift wurde erfolgreich erstellt.
+* Die Prämienpunkte werden erfolgreich zurückerstattet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Sie erhalten die folgende Fehlermeldung: *Sie können nicht mehr Speicher-Guthaben als den Bestellbetrag verwenden.*
+Sie erhalten die folgende Fehlermeldung: *Sie können nicht mehr Warenkorb-Guthaben als den Bestellbetrag verwenden.*
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

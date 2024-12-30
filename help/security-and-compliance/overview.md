@@ -1,6 +1,6 @@
 ---
-title: Sicherheit und Einhaltung
-description: Erfahren Sie mehr über Sicherheits-, Datenschutz- und branchenspezifische Compliance-Ressourcen für Ihr Adobe Commerce-Projekt.
+title: Sicherheit und Compliance
+description: Erfahren Sie mehr über die Ressourcen für Sicherheit, Datenschutz und Branchenkonformität für Ihr Adobe Commerce-Projekt.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
 source-git-commit: f5bcf5c875234875a61664214e50806cc6ba2119
 workflow-type: tm+mt
@@ -9,25 +9,25 @@ ht-degree: 0%
 
 ---
 
-# Sicherheit und Einhaltung
+# Sicherheit und Compliance
 
 Dieser Abschnitt enthält Informationen zur Sicherheit, zum Datenschutz und zur Einhaltung von Vorschriften.
 
 ## Sicherheit
 
-- [Adobe Product Security](https://helpx.adobe.com/security.html): Erfahren Sie mehr über die neuesten Patches, Sicherheitsaktualisierungen und Best Practices für Adobe Commerce.
-- [Adobe Trust Center](https://www.adobe.com/trust.html): Greifen Sie auf die neuesten verfügbaren Informationen über Betriebszustand, Sicherheit, Datenschutz und Compliance aller Adobe-Cloud-Services zu.
-- [Site-weites Analyse-Tool](../tools/site-wide-analysis-tool/dashboard.md): Zeigen Sie optimierte Sicherheitseinblicke über Ihre Adobe Commerce-Site an, einschließlich Sicherheitsscans, End-of-Life-Services und Sicherheitsempfehlungen.
+- [Adobe-Produktsicherheit](https://helpx.adobe.com/security.html): Erfahren Sie mehr über die neuesten Patches, Sicherheitsaktualisierungen und Best Practices für Adobe Commerce.
+- [Adobe Trust Center](https://www.adobe.com/trust.html): Greifen Sie auf die neuesten verfügbaren Informationen über den Betriebszustand, die Sicherheit, den Datenschutz und die Compliance aller Adobe-Cloud-Services zu.
+- [Site-Wide Analysis Tool](../tools/site-wide-analysis-tool/dashboard.md): Vereinheitlichte Einblicke in die Sicherheit Ihrer Adobe Commerce-Site, einschließlich Sicherheitsprüfungen, Services am Ende des Lebenszyklus und Sicherheitsempfehlungen.
 
 ## Compliance
 
-Händler sind verpflichtet, die Branchenrichtlinien für die Aufrechterhaltung eines sicheren Umfelds, die gesetzlichen Anforderungen in ihrem jeweiligen Land und die Best Practices für den Online-Handel einzuhalten. Weitere Informationen aus geschäftlicher Sicht finden Sie in der [Datenschutzrichtlinie für Stores](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+Händler sind zur Einhaltung von Branchenrichtlinien für die Aufrechterhaltung einer sicheren Umgebung, von rechtlichen Anforderungen in ihrem Zuständigkeitsbereich und von Best Practices für den Online-Handel verpflichtet. Weitere Informationen aus geschäftlicher Sicht finden Sie unter [Store-Datenschutzrichtlinie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
 
-Diese Dokumentation enthält die technischen Informationen, mit denen sichergestellt werden soll, dass Adobe Commerce-Installationen die Anforderungen der Datenschutzbestimmungen erfüllen. Einige dieser Anforderungen erfordern, dass Händler zusätzliche Entwicklungsarbeiten durchführen, um die Einhaltung zu erreichen. Weitere Informationen finden Sie in den folgenden Themen:
+Diese Kompatibilitätsdokumentation enthält die technischen Informationen, um sicherzustellen, dass Adobe Commerce-Installationen die Anforderungen bestimmter Datenschutzgesetze erfüllen. Einige dieser Anforderungen erfordern, dass Händler zusätzliche Entwicklungsarbeiten durchführen, um die Compliance zu erreichen. Einzelheiten finden Sie in den folgenden Themen:
 
 - [California Consumer Privacy Act (CCPA)](privacy/ccpa.md)
-- [Die Datenschutz-Grundverordnung (DSGVO)](privacy/gdpr.md)
+- [Datenschutz-Grundverordnung (DSGVO)](privacy/gdpr.md)
 
 ## Compliance-Tools
 
-- [Privacy JavaScript Library](privacy/javascript-library.md)
+- [Privacy JavaScript-Bibliothek](privacy/javascript-library.md)

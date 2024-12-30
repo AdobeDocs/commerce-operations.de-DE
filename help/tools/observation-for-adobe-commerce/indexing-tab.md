@@ -1,6 +1,6 @@
 ---
-title: Registerkarte [!UICONTROL Indexing]
-description: Erfahren Sie mehr über die Registerkarte [!UICONTROL Indexing] von  [!DNL Observation for Adobe Commerce].
+title: Die Registerkarte [!UICONTROL Indexing]
+description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL Indexing]" von [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Registerkarte [!UICONTROL Indexing]
+# Die Registerkarte [!UICONTROL Indexing]
 
-Der Tab **[!UICONTROL Indexing]** versucht, Probleme mit der Indizierung zu erklären und mögliche Ursachen zu identifizieren.
+Auf der Registerkarte **[!UICONTROL Indexing]** wird versucht, Probleme mit der Indizierung zu erklären und mögliche Ursachen zu identifizieren.
 
 ## [!UICONTROL Core index invalidated]
 
-![Kernindex invalidiert](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
+![Kernindex ungültig](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-Der Frame **[!UICONTROL Core index invalidated]** betrachtet die Invalidierung der Indizierung über einen ausgewählten Zeitraum hinweg. Wenn die Indizierung gleichzeitig mit anderen ressourcenintensiven [!DNL crons] erfolgt, werden die Site-Ressourcen stark belastet.
+Der **[!UICONTROL Core index invalidated]**-Frame untersucht die Indizierungsinvalidierung über einen ausgewählten Zeitraum. Wenn die Indizierung gleichzeitig mit anderen ressourcenintensiven [!DNL crons] erfolgt, bedeutet dies eine hohe Belastung für die Site-Ressourcen.
 
 * `%Catalog Product Rule indexer has been invalidated%`) als `catalog_product_rule_idx_reset`
 * `%Catalog Rule Product indexer has been invalidated%`) als `catalog_rule_product_idx_reset`
@@ -36,9 +36,9 @@ Der Frame **[!UICONTROL Core index invalidated]** betrachtet die Invalidierung d
 
 ## [!UICONTROL Core index rebuilds]
 
-![Neuaufbau des Core-Index](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
+![Neuerstellung des Kernindex](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-Der Frame &quot;**[!UICONTROL Core index rebuilds]**&quot;betrachtet Kernindex-Neubauten über einen ausgewählten Zeitraum hinweg. Im Folgenden finden Sie die Zeichenfolgen, die aus den Protokollen geparst werden, um den Abschluss der Neuerstellung des Index anzuzeigen.
+Der **[!UICONTROL Core index rebuilds]** betrachtet die Neuerstellung des Kernindex über einen ausgewählten Zeitraum. Im Folgenden finden Sie die Zeichenfolgen, die aus den Protokollen analysiert werden, um den Abschluss der Neuerstellung des Index anzuzeigen.
 
 * `%Catalog Product Rule index has been rebuilt%`) als `catalog_product_rule_idx`
 * `%Catalog Rule Product index has been rebuilt%`) als `catalog_rule_product_idx`
@@ -57,12 +57,12 @@ Der Frame &quot;**[!UICONTROL Core index rebuilds]**&quot;betrachtet Kernindex-N
 
 ## [!UICONTROL catalogsearch index table(s)]
 
-![catalogsearch index table(s)](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
+![CatalogSearch-Indextabelle(n)](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-Der Frame **[!UICONTROL catalogsearch index table(s)]** betrachtet Katalogsuchindex-Tabellen über einen ausgewählten Zeitraum. Diese Abfrage untersucht die Dauer von Datenspeichervorgängen für Tabellen mit `%catalogsearch%` im Tabellennamen.
+Der **[!UICONTROL catalogsearch index table(s)]** zeigt Katalogsuchindex-Tabellen für einen ausgewählten Zeitraum an. Bei dieser Abfrage wird die Dauer aller Datenspeichervorgänge für Tabellen mit `%catalogsearch%` im Tabellennamen untersucht.
 
 ## [!UICONTROL product index table(s)]
 
 ![Produktindex-Tabelle(n)](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-Der Frame **[!UICONTROL product index table(s)]** betrachtet Produktindextabellen über einen ausgewählten Zeitraum. Diese Abfrage untersucht die Dauer von Datenspeichervorgängen für Tabellen mit `%product%` im Tabellennamen.
+Der **[!UICONTROL product index table(s)]** betrachtet die Produktindextabellen in einem ausgewählten Zeitraum. Bei dieser Abfrage wird die Dauer aller Datenspeichervorgänge für Tabellen mit `%product%` im Tabellennamen untersucht.

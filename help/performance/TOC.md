@@ -1,6 +1,6 @@
 ---
 user-guide-title: Best Practices für die Leistung
-user-guide-description: Optimieren Sie die Leistung Ihrer Adobe Commerce-Produktionsimplementierung anhand dieser Empfehlungen.
+user-guide-description: Optimieren Sie die Leistung Ihrer Adobe Commerce-Produktionsbereitstellung mithilfe dieser Empfehlungen.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
 source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
@@ -20,9 +20,9 @@ ht-degree: 2%
 - [Entwicklungsumgebung](development-environment.md)
 - [Checkout-Prozess](high-throughput-order-processing.md)
 - [Konfiguration](configuration.md)
-- [Implementierungsfluss](deployment-flow.md)
+- [Bereitstellungsfluss](deployment-flow.md)
 - Erweiterte Konzepte {#concepts}
-   - [Erweiterte Einrichtung](advanced-setup.md)
-   - [Erweitertes [!DNL JavaScript] Bundling](advanced-js-bundling.md)
-   - [GraphQL Application Server](application-server.md)
-- [Zurück zu den Operationshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+   - [Erweitertes Setup](advanced-setup.md)
+   - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)
+   - [GraphQL-Anwendungsserver](application-server.md)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

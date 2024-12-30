@@ -1,6 +1,6 @@
 ---
-title: Erweiterte Einrichtung
-description: Lesen Sie Best Practices und Empfehlungen für große Unternehmenssysteme, die für die Verarbeitung großer Datenmengen entwickelt wurden.
+title: Erweitertes Setup
+description: Lesen Sie die Best Practices und Empfehlungen für große Unternehmenssysteme, die für die Verarbeitung großer Datenmengen entwickelt wurden.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
@@ -9,78 +9,78 @@ ht-degree: 0%
 
 ---
 
-# Erweiterte Einrichtung
+# Erweitertes Setup
 
-[!DNL Commerce] ist ein hochflexibles und skalierbares Produkt, das Lösungen für Händler aller Größen enthält. In diesem Abschnitt werden Best Practices und Empfehlungen zur Konfiguration von [!DNL Commerce] für die Verwendung mit großen Datenmengen, extremer Auslastung und anderen Fällen für Unternehmen beschrieben.
+[!DNL Commerce] ist ein hochflexibles und skalierbares Produkt, das Lösungen für Händler jeder Größe enthält. Dieser Abschnitt enthält Best Practices und Empfehlungen zur Konfiguration von [!DNL Commerce] für die Arbeit mit großen Datenmengen, extremer Auslastung und anderen Unternehmensfällen.
 
 ## Indexleistung kalibrieren
 
-Bei großen Datenmengen kann die Neuindizierung zu einem Problem werden. Das [!DNL Commerce]-Team wählte die am meisten geladenen Indizes aus und aktivierte die Batch-Indizierung, mit der Sie einen Teil der Daten festlegen können, der bei jeder Iteration verarbeitet werden soll. Auf diese Weise kann der Benutzer die Batch-Größen basierend auf dem Typ und der Größe der Daten in der Datenbank anpassen.
+Bei großen Datenmengen kann die Neuindizierung ein Problem darstellen. Das [!DNL Commerce]-Team hat die am häufigsten geladenen Indizes ausgewählt und die Batch-Indizierung aktiviert, mit der Sie einen Teil der Daten festlegen können, die bei jeder Iteration verarbeitet werden sollen. Auf diese Weise kann der Benutzer die Batch-Größen auf der Grundlage des Typs und der Größe der Daten in der Datenbank anpassen.
 
-Um diese Einstellung zu verwalten, bearbeiten Sie den Parameter `batchRowsCount` in der Datei `di.xml` des entsprechenden Moduls. Die folgenden Indizes unterstützen diese Funktion:
+Um diese Einstellung zu verwalten, bearbeiten Sie den `batchRowsCount` in der `di.xml` des entsprechenden Moduls. Die folgenden Indizes unterstützen diese Funktion:
 
-* Kategorieproduktindex (Katalogmodul)
-* Preisindex (Katalogmodul)
-* EAV-Index (Katalogmodul)
+* Kategorie-Produktindex (Modul Katalog)
+* Preisindex (Modul Katalog)
+* EAV Index (Catalog Module)
 * Aktienindex (CatalogInventory-Modul)
 
-Sie können die Indexleistung anpassen, indem Sie die Variablen für die Indexstapelgröße anpassen. Dadurch wird gesteuert, wie viele Entitäten gleichzeitig vom Indexer verarbeitet werden. In einigen Fällen ist die Indizierungszeit erheblich zurückgegangen.
+Sie können die Indexerleistung anpassen, indem Sie die Variablen für die Batch-Größe des Index anpassen. Dadurch wird gesteuert, wie viele Entitäten gleichzeitig vom Indexer verarbeitet werden. In einigen Situationen haben wir erhebliche Verringerungen bei der Indizierungszeit erlebt.
 
-Wenn Sie beispielsweise ein Profil ausführen, das B2B Medium ähnelt, können Sie den Konfigurationswert `batchRowsCount` in `app/code/Magento/catalog/etc/di.xml` überschreiben und den Standardwert `5000` in `1000` überschreiben. Dadurch wird die vollständige Indizierungszeit von 4 Stunden auf 2 Stunden mit einer standardmäßigen [!DNL MySQL] -Konfiguration reduziert.
+Wenn Sie beispielsweise ein Profil ausführen, das dem B2B-Medium ähnelt, können Sie den in `app/code/Magento/catalog/etc/di.xml` `batchRowsCount` Konfigurationswert überschreiben und den Standardwert von `5000` bis `1000` überschreiben. Dadurch wird die gesamte Indizierungszeit bei einer standardmäßigen [!DNL MySQL]-Konfiguration von 4 auf 2 Stunden reduziert.
 
 >[!NOTE]
 >
->Die Stapelverarbeitung für den Indexer für Katalogregeln wurde nicht aktiviert. Händler mit einer großen Anzahl von Katalogregeln müssen ihre [!DNL MySQL] -Konfiguration anpassen, um die Indizierungszeit zu optimieren. In diesem Fall wird durch die Bearbeitung Ihrer [!DNL MySQL] -Konfigurationsdatei und die Zuweisung von mehr Speicher zu den Konfigurationswerten TMP_TABLE_SIZE und MAX_HEAP_TABLE_SIZE (die Standardeinstellung ist 16M für beide) die Leistung für diesen Indexer verbessert, aber [!DNL MySQL] verbraucht mehr RAM.
+>Für den Katalogregeln-Indexer wurde kein Batch aktiviert. Händler mit einer großen Anzahl von Katalogregeln müssen ihre [!DNL MySQL] anpassen, um die Indizierungszeit zu optimieren. In diesem Fall verbessert das Bearbeiten Ihrer [!DNL MySQL]-Konfigurationsdatei und das Zuweisen von mehr Speicher zu den Konfigurationswerten „TMP_TABLE_SIZE“ und &quot;MAX_HEAP_TABLE_SIZE“ (der Standardwert ist 16M für beide) die Leistung dieses Indexers, führt jedoch zu [!DNL MySQL] höheren RAM-Verbrauch.
 
-### Beschränken von Kundengruppen und freigegebenen Katalogen nach Websites
+### Begrenzen von Kundengruppen und freigegebenen Katalogen nach Websites
 
-Eine große Anzahl von Produkt-SKUs, Websites, Kundengruppen oder freigegebenen Katalogen wirkt sich auf die Laufzeit der Indexer für Produktpreise und Katalogregeln aus. Dies liegt daran, dass alle Websites standardmäßig allen Kundengruppen (freigegebenen Katalogen) zugewiesen sind.
+Eine große Anzahl von Produkt-SKUs, Websites, Kundengruppen oder freigegebenen Katalogen wirkt sich auf die Laufzeit der Indizierungen für Produktpreise und Katalogregeln aus. Dies liegt daran, dass standardmäßig alle Websites allen Kundengruppen (freigegebenen Katalogen) zugewiesen sind.
 
-Um die Indexierungszeit zu verkürzen, können Sie [bestimmte Websites aus Kundengruppen ausschließen (freigegebene Kataloge)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+Um die Indexierungszeit zu verkürzen, können Sie [bestimmte Websites aus Kundengruppen (freigegebene Kataloge) ausschließen](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Einrichten von Redis
 
-Manchmal reicht eine Redis-Instanz nicht aus, um eingehende Anfragen zu verarbeiten. Es gibt mehrere Lösungen, die wir empfehlen können, um diese Situation zu beheben.
+Manchmal reicht eine Redis-Instanz nicht aus, um eingehende Anfragen zu bedienen. Es gibt mehrere Lösungen, die wir empfehlen können, um diese Situation zu beheben.
 
-Mit [!DNL Commerce] können Sie zunächst für jeden Cache-Typ einen separaten Cache-Speicher konfigurieren. Dadurch können Sie so viele separate Redis-Instanzen installieren wie die Anzahl der im Magento registrierten Cache-Typen. In der Praxis sollten Sie Redis-Instanzen für die am meisten verwendeten Caches wie Konfiguration, Layout und Blöcke verwenden.
+Zunächst können Sie mit [!DNL Commerce] für jeden Cache-Typ einen separaten Cache-Speicher konfigurieren. Auf diese Weise können Sie so viele separate Redis-Instanzen installieren wie die Anzahl der Cache-Typen, die auf Magento registriert sind. Realistisch betrachtet empfiehlt es sich, Redis-Instanzen für die am häufigsten verwendeten Caches zu verwenden, z. B. für Konfiguration, Layout und Blöcke.
 
-Eine andere Lösung kann sein, den Konfigurations-Cache im Dateisystem zu platzieren und die anderen Caches auf den Redis-Server zu verschieben. Mit dieser Lösung benötigen Sie ein separates Tool für die zentralisierte Invalidierung des Konfigurations-Caches auf allen Ihren Web-Knoten.
+Eine andere Lösung kann darin bestehen, den Konfigurations-Cache auf dem Dateisystem zu platzieren und die anderen Caches auf den Redis-Server zu verschieben. Mit dieser Lösung benötigen Sie ein separates Tool zur zentralisierten Invalidierung des Konfigurations-Caches auf allen Ihren Web-Knoten.
 
-Sie können auch einen Redis-Cluster verwenden, der parallele Lese-/Schreibvorgänge mit einer automatisch steigenden Anzahl von Knoten durchführt. [!DNL Commerce] stellt keine Konfiguration für diesen Fall bereit, kann jedoch mit geringfügigen Anpassungen gestartet werden.
+Sie können auch einen Redis-Cluster verwenden, der parallele Lese-/Schreibvorgänge mit einer automatisch wachsenden Anzahl von Knoten durchführt. [!DNL Commerce] stellt keine Konfiguration für diesen Fall bereit, kann jedoch mit geringfügigen Anpassungen gestartet werden.
 
 ## Einrichten von [!DNL RabbitMQ]
 
-Adobe Commerce unterstützt Nachrichtenwarteschlangen, die über [!DNL RabbitMQ] implementiert wurden. [!DNL Commerce] verwendet diesen Dienst für die Ausführung zahlreicher asynchroner Vorgänge, einschließlich B2B-Katalogoperationen und asynchroner Lageraktualisierungen. Alle Schnittstellen zum Hinzufügen von mehr Aufträgen zum Auftrags-Server werden mit dem Produkt verteilt und sind für die benutzerdefinierte asynchrone Logikimplementierung im Rahmen von Drittanbieter-Erweiterungen verfügbar. Wie bei jeder anderen Integration stellt [!DNL Commerce] eine Beispielkonfigurationsdatei für [!DNL RabbitMQ] bereit, die alle empfohlenen Einstellungen enthält und vollständig für die Produktionsverwendung bereit ist.
+Adobe Commerce unterstützt Nachrichtenwarteschlangen, die über [!DNL RabbitMQ] implementiert werden. [!DNL Commerce] verwendet diesen Service zum Ausführen zahlreicher asynchroner Vorgänge, einschließlich B2B-Katalogvorgängen und asynchroner Stock-Aktualisierungen. Alle Schnittstellen zum Hinzufügen weiterer Aufträge zum Auftrags-Server sind mit dem Produkt verteilt und stehen für benutzerdefinierte asynchrone Logikimplementierungen im Umfang von Erweiterungen von Drittanbietern zur Verfügung. Wie bei jeder anderen Integration bietet [!DNL Commerce] eine Beispielkonfigurationsdatei für [!DNL RabbitMQ], die alle empfohlenen Einstellungen enthält und für die Verwendung in der Produktion vollständig bereit ist.
 
-## Datenbank aufteilen
+## Aufspalten der Datenbank
 
 >[!WARNING]
 >
->Die Funktion der geteilten Datenbank war in Version 2.4.2 von Adobe Commerce [veraltet](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187). Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](../configuration/storage/revert-split-database.md).
+>Die Funktion „Split Database[ wurde in ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](../configuration/storage/revert-split-database.md).
 
-Mit Adobe Commerce können Sie skalierbaren Datenbankspeicher konfigurieren, um den Anforderungen eines wachsenden Unternehmens gerecht zu werden. Sie können drei separate Master-Datenbanken einrichten, die bestimmte Domänen bedienen:
+Mit Adobe Commerce können Sie skalierbaren Datenbankspeicher konfigurieren, um den Anforderungen eines wachsenden Unternehmens gerecht zu werden. Sie können drei separate Master-Datenbanken für bestimmte Domains einrichten:
 
 * Hauptdatenbank (Katalog)
 * Checkout-Datenbank
-* Datenbank für Order Management-Systeme (OMS)
+* Order Management System (OMS)-Datenbank
 
 Um zusätzliche Datenbanken zu konfigurieren, müssen Sie eine leere Datenbank erstellen und einen der folgenden Befehle ausführen:
 
-Für Checkout Master DB
+Für Checkout-Master-DB
 
 ```bash
 bin/magento setup:db-schema:split-quote
 ```
 
-Für OMS Master DB
+Für OMS-Master-DB
 
 ```bash
 bin/magento setup:db-schema:split-sales
 ```
 
-Mit diesen Befehlen werden bestimmte Domänentabellen aus der Hauptdatenbank in eine Domänendatenbank migriert. Außerdem wird die [!DNL Commerce] -Konfiguration geändert, um eine entsprechende Konnektivität und Begrenzungsverarbeitung zu ermöglichen.
+Diese Befehle migrieren bestimmte Domain-Tabellen von der Hauptdatenbank in eine Domain-Datenbank. Sie ändern auch die [!DNL Commerce], um die entsprechende Konnektivität und Verarbeitungseinschränkungen zu ermöglichen.
 
-Durch separate Datenbanken für den Checkout und Order Management können Sie die Auslastung zwischen Ihren Datenbankservern verteilen. Sie können mehr Kassengänge bedienen und mehr Bestellungen pro Sekunde verarbeiten, ohne die Verfügbarkeit Ihres Katalogs und anderer Vorgänge zu beeinträchtigen. Es wird empfohlen, Datenbanken für Zeiträume von Flash- oder aktiven Verkäufen zu teilen oder sie dauerhaft für natürlich hochbelastete Projekte zu verwenden. Die Migration vorhandener Daten zwischen Datenbanken sollte unter der Aufsicht Ihres Systemadministrators erfolgen.  Teilen Sie die Datenbanken nicht auf, während Sie sich im Produktionsmodus befinden.
+Durch separate Datenbanken für Checkout und Order Management können Sie die Last zwischen Ihren Datenbankservern verteilen. Sie können mehr Checkouts bereitstellen und mehr Bestellungen pro Sekunde verarbeiten, ohne die Verfügbarkeit Ihres Katalogs und anderer Vorgänge zu beeinträchtigen. Wir empfehlen, Datenbanken für Zeiträume des Flash- oder aktiven Verkaufs aufzuteilen oder dauerhaft für natürlich hochladende Projekte zu verwenden. Die Migration vorhandener Daten zwischen Datenbanken sollte unter der Aufsicht Ihres Systemadministrators erfolgen.  Trennen Sie Datenbanken nicht im Produktionsmodus.
 
 Zusätzlich zu den Master-Datenbanken können Sie mit [!DNL Commerce] eine Reihe von Slave-Datenbanken konfigurieren (eine für jede im System deklarierte Datenressource). Eine Slave-Datenbank dient als vollständige Replikation Ihrer Hauptdatenbank oder einer Ihrer Domain-Master-Datenbanken. Sie wird für Lesevorgänge für eine bestimmte Ressource ausgegeben.
 
@@ -90,21 +90,21 @@ Sie können eine Slave-Datenbank hinzufügen, indem Sie den folgenden Befehl aus
 bin/magento setup:db-schema:add-slave
 ```
 
-Dieser Befehl führt Konfigurationsänderungen durch, konfiguriert jedoch nicht die Replikation selbst. Dies sollte manuell erfolgen.
+Mit diesem Befehl werden Konfigurationsänderungen durchgeführt, die Replikation wird jedoch nicht selbst konfiguriert. Dies sollte manuell geschehen.
 
-Nach dem Teilen Ihrer Master-Datenbank und dem Einrichten von Slave-Datenbanken reguliert [!DNL Commerce] automatisch Verbindungen zu einer bestimmten Datenbank, trifft Entscheidungen basierend auf dem Anforderungstyp (POST, PUT, GET usw.) und der Datenressource. Wenn [!DNL Commerce] oder seine Erweiterungen Schreibvorgänge für eine GET-Anfrage ausführen, wechselt das System automatisch die Verbindung von Slave zu Master-Datenbank. Dies funktioniert genauso mit Master-Datenbanken: Sobald Sie mit einer Checkout-Tabelle arbeiten, leitet das System alle Abfragen an eine bestimmte Datenbank weiter. In der Zwischenzeit werden alle katalogbezogenen Abfragen an die Hauptdatenbank gesendet.
+Nach dem Aufteilen der Master-Datenbank und dem Einrichten der Slave-Datenbanken regelt [!DNL Commerce] automatisch die Verbindungen zu einer bestimmten Datenbank, wobei Entscheidungen auf der Grundlage der Art der Anfrage (POST, PUT, GET, etc.) und der Datenressource getroffen werden. Wenn [!DNL Commerce] oder seine Erweiterungen Schreibvorgänge für eine GET-Anfrage durchführen, schaltet das System die Verbindung automatisch vom Slave zur Master-Datenbank um. Dies funktioniert genauso wie bei Master-Datenbanken: Sobald Sie mit einer Checkout-bezogenen Tabelle arbeiten, leitet das System alle Abfragen an eine bestimmte Datenbank weiter. In der Zwischenzeit werden alle Katalogabfragen an die Hauptdatenbank gesendet.
 
-Weitere Informationen zur Konfiguration und zu den Vorteilen der Master-/Slave-Konfiguration finden Sie unter
-[Lösung zur Aufspaltung der Datenbankleistung](../configuration/storage/multi-master.md).
+Weitere Informationen zur Konfiguration und den Vorteilen mehrerer Master/Slave-Konfigurationen finden Sie unter
+[Split-Datenbankleistungslösung](../configuration/storage/multi-master.md).
 
 ## Bereitstellen von Medieninhalten
 
-Magento bietet keine spezielle Integration für die Bereitstellung und Bereitstellung von Medieninhalten. Alle gängigen Ansätze können gemeinsam im Magento verwendet werden.
+Magento bietet keine spezielle Integration zur Bereitstellung und Bereitstellung von Medieninhalten. Alle gängigen Ansätze können zusammen im Magento verwendet werden.
 
-Die einfachste Methode zur Bereitstellung von Medieninhalten besteht darin, diese auf einem [!DNL Varnish] -Server bereitzustellen und zu zwischenspeichern. Bei diesem Ansatz wird davon ausgegangen, dass entweder ein freigegebenes Dateisystem zum Speichern von Medieninhalten oder ein dedizierter Server mit Verweis auf [!DNL Varnish] vorhanden ist.
+Die einfachste Möglichkeit, Medieninhalte bereitzustellen, besteht darin, sie auf einem [!DNL Varnish]-Server bereitzustellen und zwischenzuspeichern. Bei diesem Ansatz wird entweder von einem freigegebenen Dateisystem zum Speichern von Medieninhalten oder einem dedizierten Server ausgegangen, der auf [!DNL Varnish] verweist.
 
-Für Umgebungen mit mittlerer und hoher Auslastung empfehlen wir die Verwendung von CDN-Diensten (Content Delivery Network) wie Fastly, Akamai und anderen. Beim Arbeiten mit diesen Diensten verwendet [!DNL Commerce] den klassischen Pull-Ansatz für Inhaltsaktualisierungen. Sie müssen [!DNL Commerce]-URLs für die Verwendung mit dem entsprechenden CDN-Dienst konfigurieren. Durch das Verschieben von Medieninhalten in ein CDN wird die Belastung Ihrer Instanzen erheblich verringert.
+Für Umgebungen mit mittlerer und hoher Last empfehlen wir die Verwendung von CDN-Services (Content Delivery Network) wie Fastly, Akamai und anderen. Bei der Arbeit mit diesen Services verwendet [!DNL Commerce] den klassischen Pull-Ansatz für Inhaltsaktualisierungen. Sie müssen [!DNL Commerce] URLs konfigurieren, damit sie mit dem entsprechenden CDN-Service funktionieren. Indem Sie Medieninhalte in ein CDN verschieben, verringern Sie die Last für Ihre Instanzen erheblich.
 
 ## Konfigurieren des Protokollspeichers
 
-Die Speicherung von Protokollen und ihr Einfluss auf andere Festplattenvorgänge wirken sich auf die Verfügbarkeit Ihrer Webknoten aus, insbesondere in Situationen mit hoher Auslastung. Es wird empfohlen, die Protokollierung zu minimieren, wenn Sie sie nicht benötigen. Sie können die Protokollierung auch so konfigurieren, dass sie in ein separates Speichersystem mit hoher Zugriffsgeschwindigkeit geschrieben wird. Beachten Sie, dass sich Engpässe beim Zugriff auf die Protokollspeicherung direkt auf die Verarbeitung eingehender Anfragen auswirken können, die Schreibvorgänge oder Lesevorgänge protokollieren, die Teil ihres Datenflusses sind.
+Das Speichern von Protokollen und deren Einfluss auf andere Datenträgervorgänge wirkt sich auf die Verfügbarkeit Ihrer Web-Knoten aus, insbesondere in Situationen mit hoher Auslastung. Wir empfehlen, die Protokollierung zu minimieren, wenn Sie sie nicht benötigen. Sie können die Protokollierung auch so konfigurieren, dass sie auf ein separates Speichersystem mit hohen Zugriffsgeschwindigkeiten schreibt. Beachten Sie, dass Engpässe beim Zugriff auf die Protokollspeicherung sich direkt auf die Verarbeitung eingehender Anfragen auswirken können, die Schreib- oder Lesevorgänge als Teil ihres Flusses protokollieren.

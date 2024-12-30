@@ -1,6 +1,6 @@
 ---
-title: Post-Datenmigrationsschritte
-description: Erfahren Sie, welche Schritte nach der Verwendung von [!DNL Data Migration Tool] unternommen werden müssen, um Daten von Magento 1 auf Magento 2 zu migrieren.
+title: Schritte nach der Datenmigration
+description: Erfahren Sie, welche Schritte nach der Verwendung von  [!DNL Data Migration Tool] zum Migrieren von Daten von Magento 1 auf Magento 2 unternommen werden müssen.
 exl-id: 00171c41-ccea-4ebe-8958-becb9aa09973
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,16 +10,16 @@ ht-degree: 0%
 
 ---
 
-# Post-Datenmigrationsschritte
+# Schritte nach der Datenmigration
 
-Nachdem Sie die Migration abgeschlossen und Ihre neue Magento 2-Site gründlich getestet haben, führen Sie die folgenden Schritte aus:
+Führen Sie nach Abschluss der Migration und nach gründlichem Testen der neuen Magento 2-Site die folgenden Aufgaben aus:
 
-* Magento 1 in den Wartungsmodus versetzen und alle Admin-Aktivitäten dauerhaft beenden
+* Magento 1 in den Wartungsmodus versetzen und alle Admin-Aktivitäten dauerhaft stoppen
 
-* Starten von Magento 2-Cron-Aufträgen
+* Magento 2 Cron-Aufträge starten
 
 * [Alle Magento 2-Cache-Typen leeren](../../../configuration/cli/manage-cache.md#clean-and-flush-cache-types)
 
-* [Neuindizieren aller Magento 2-Indexer](../../../configuration/cli/manage-indexers.md#reindex)
+* [Alle Magento 2-Indexer neu indizieren](../../../configuration/cli/manage-indexers.md#reindex)
 
-* Ändern Sie DNS und Load Balancer so, dass sie auf die Magento 2-Produktionshardware verweisen.
+* Ändern Sie die DNS- und Lastenausgleichsmodule so, dass sie auf die Magento 2-Produktions-Hardware verweisen.

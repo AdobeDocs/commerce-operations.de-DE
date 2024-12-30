@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # Module aktivieren oder deaktivieren
 
-Für diesen Befehl sind keine Voraussetzungen erforderlich.
+Dieser Befehl ist nicht erforderlich.
 
 ## Modulstatus
 
-Verwenden Sie den folgenden Befehl, um aktivierte und aktivierte Module aufzulisten:
+Verwenden Sie den folgenden Befehl, um aktivierte und deaktivierte Module aufzulisten:
 
 ```bash
 bin/magento module:status [--enabled] [--disabled] <module-list>
 ```
 
-Wo
+Hierbei gilt
 
-* `--enabled` listet alle aktivierten Module auf.
-* `--disabled` listet alle deaktivierten Module auf.
-* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen, die den Status überprüfen sollen. Wenn ein Modulname Sonderzeichen enthält, fügen Sie den Namen in einfache oder doppelte Anführungszeichen ein.
+* `--enabled` werden alle aktivierten Module aufgelistet.
+* `--disabled` werden alle deaktivierten Module aufgelistet.
+* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen zur Statusüberprüfung. Wenn ein Modulname Sonderzeichen enthält, schließen Sie den Namen entweder in einfachen oder doppelten Anführungszeichen ein.
 
 >[!NOTE]
 >
->Sie können Module nicht direkt in Cloud-Projekten aktivieren oder deaktivieren. Sie müssen diese Befehle lokal ausführen und dann Änderungen an die Datei `app/etc/config.php` für eine Umgebung übertragen. Siehe [Pro Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
+>Module können nicht direkt in Cloud-Projekten aktiviert oder deaktiviert werden. Sie müssen diese Befehle lokal ausführen und dann Änderungen für eine Umgebung an die `app/etc/config.php`-Datei pushen. Siehe [Pro-Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Modul aktivieren, deaktivieren
 
@@ -43,16 +43,16 @@ bin/magento module:enable [-c|--clear-static-content] [-f|--force] [--all] <modu
 bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
-Wo
+Hierbei gilt
 
-* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen, die aktiviert oder deaktiviert werden sollen. Wenn ein Modulname Sonderzeichen enthält, fügen Sie den Namen in einfache oder doppelte Anführungszeichen ein.
-* `--all` , um alle Module gleichzeitig zu aktivieren oder zu deaktivieren.
-* `-f` oder `--force` , um zu erzwingen, dass ein Modul trotz Abhängigkeiten aktiviert oder deaktiviert wird. Bevor Sie diese Option verwenden, lesen Sie [Informationen zum Aktivieren und Deaktivieren von Modulen](#about-enabling-and-disabling-modules).
-* `-c` oder `--clear-static-content` löscht [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
+* `<module-list>` ist eine durch Leerzeichen getrennte Liste von Modulen, die aktiviert oder deaktiviert werden sollen. Wenn ein Modulname Sonderzeichen enthält, schließen Sie den Namen entweder in einfachen oder doppelten Anführungszeichen ein.
+* `--all` alle Module gleichzeitig zu aktivieren oder zu deaktivieren.
+* `-f` oder `--force`, um die Aktivierung oder Deaktivierung eines Moduls trotz der Abhängigkeiten zu erzwingen. Bevor Sie diese Option verwenden, lesen Sie [Informationen zum Aktivieren und Deaktivieren von Modulen](#about-enabling-and-disabling-modules).
+* `-c` oder `--clear-static-content` bereinigt [generierte statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md).
 
-  Wenn statische Ansichtsdateien nicht gelöscht werden, kann dies zu Problemen führen, wenn mehrere Dateien mit demselben Namen vorhanden sind und Sie nicht alle löschen.
+  Wenn die statischen Ansichtsdateien nicht gelöscht werden, können Probleme auftreten, wenn mehrere Dateien mit demselben Namen vorhanden sind und nicht alle gelöscht werden.
 
-  Anders ausgedrückt: Wenn Sie statische Dateien nicht löschen und mehr als eine Datei mit dem Namen `logo.svg` unterschiedlich sind, kann aufgrund der Ausweichregeln für statische Dateien ](../../configuration/cli/static-view-file-deployment.md) die falsche Datei angezeigt werden.[
+  Anders ausgedrückt: Wenn Sie aufgrund der [statischen Datei-Fallback](../../configuration/cli/static-view-file-deployment.md)-Regeln statische Dateien nicht löschen und es mehr als eine Datei mit dem Namen `logo.svg` gibt, die unterschiedlich sind, kann ein Fallback dazu führen, dass die falsche Datei angezeigt wird.
 
 Um beispielsweise das Modul `Magento_Weee` zu deaktivieren, geben Sie Folgendes ein:
 
@@ -60,7 +60,7 @@ Um beispielsweise das Modul `Magento_Weee` zu deaktivieren, geben Sie Folgendes 
 bin/magento module:disable Magento_Weee
 ```
 
-Wichtige Informationen zum Aktivieren und Deaktivieren von Modulen finden Sie unter [Über das Aktivieren und Deaktivieren von Modulen](#about-enabling-and-disabling-modules).
+Wichtige Informationen zum Aktivieren und Deaktivieren von Modulen finden Sie unter [Informationen zum Aktivieren und Deaktivieren von Modulen](#about-enabling-and-disabling-modules).
 
 ## Datenbank aktualisieren
 
@@ -70,7 +70,7 @@ Wenn Sie ein oder mehrere Module aktiviert haben, führen Sie den folgenden Befe
 bin/magento setup:upgrade
 ```
 
-Leeren Sie dann den Cache:
+Reinigen Sie dann den Cache:
 
 ```bash
 bin/magento cache:clean
@@ -78,31 +78,31 @@ bin/magento cache:clean
 
 ## Informationen zum Aktivieren und Deaktivieren von Modulen
 
-Mit Adobe Commerce können Sie derzeit verfügbare Module aktivieren oder deaktivieren, d. h. alle Adobe-bereitgestellten Module oder Drittanbietermodule, die derzeit verfügbar sind.
+Mit Adobe Commerce können Sie derzeit verfügbare Module aktivieren oder deaktivieren, d. h. alle Adobe-Module oder Drittanbietermodule, die derzeit verfügbar sind.
 
-Bestimmte Module haben Abhängigkeiten zu anderen Modulen. In diesem Fall können Sie ein Modul möglicherweise nicht aktivieren oder deaktivieren, da es Abhängigkeiten zu anderen Modulen aufweist.
+Bestimmte Module weisen Abhängigkeiten von anderen Modulen auf. In diesem Fall können Sie ein Modul möglicherweise nicht aktivieren oder deaktivieren, da es Abhängigkeiten von anderen Modulen hat.
 
-Darüber hinaus kann es *in Konflikt stehende* Module geben, die nicht beide gleichzeitig aktiviert werden können.
+Darüber hinaus kann es *(widersprüchliche* Module geben, die nicht beide gleichzeitig aktiviert werden können.
 
 Beispiele:
 
-* Modul A hängt von Modul B ab. Sie können Modul B nur deaktivieren, wenn Sie Modul A zum ersten Mal deaktivieren.
+* Modul A hängt von Modul B ab. Sie können Modul B nur deaktivieren, wenn Sie zuerst Modul A deaktivieren.
 
-* Modul A ist von Modul B abhängig, die beide deaktiviert sind. Sie müssen Modul B aktivieren, bevor Sie Modul A aktivieren können.
+* Modul A hängt von Modul B ab, beide sind deaktiviert. Sie müssen Modul B aktivieren, bevor Sie Modul A aktivieren können.
 
-* Modul A steht in Konflikt mit Modul B. Sie können Modul A und Modul B deaktivieren oder eines der beiden Module deaktivieren, aber Sie können Modul A und Modul B *nicht* gleichzeitig aktivieren.
+* Modul A steht in Konflikt mit Modul B. Sie können Modul A und Modul B deaktivieren oder eines der beiden Module deaktivieren, aber Sie *können* Modul A und Modul B gleichzeitig aktivieren.
 
-* Abhängigkeiten werden für jedes Modul im Feld `require` in der Adobe Commerce `composer.json` -Datei deklariert. Konflikte werden im Feld `conflict` in den `composer.json` -Dateien der Module deklariert. Wir verwenden diese Informationen zum Erstellen eines Abhängigkeitsdiagramms: `A->B` bedeutet, dass Modul A von Modul B abhängig ist.
+* Abhängigkeiten werden im Feld `require` in der Adobe Commerce-`composer.json` für jedes Modul deklariert. Konflikte werden im Feld `conflict` in den `composer.json` der Module deklariert. Anhand dieser Informationen erstellen wir ein Abhängigkeitsdiagramm: `A->B` bedeutet, dass Modul A von Modul B abhängt.
 
-* Eine *Abhängigkeitskette* ist der Pfad von einem Modul zu einem anderen. Wenn beispielsweise Modul A von Modul B und Modul B von Modul C abhängig ist, dann ist die Abhängigkeitskette `A->B->C`.
+* Eine *Abhängigkeitskette* ist der Pfad von einem Modul zu einem anderen. Wenn zum Beispiel Modul A von Modul B und Modul B von Modul C abhängt, dann ist die Abhängigkeitskette `A->B->C`.
 
-Wenn Sie versuchen, ein Modul zu aktivieren oder zu deaktivieren, das von anderen Modulen abhängig ist, wird in der Fehlermeldung das Abhängigkeitsdiagramm angezeigt.
+Wenn Sie versuchen, ein Modul zu aktivieren oder zu deaktivieren, das von anderen Modulen abhängig ist, wird das Abhängigkeitsdiagramm in der Fehlermeldung angezeigt.
 
 >[!NOTE]
 >
->Es ist möglich, dass die `composer.json` von Modul A einen Konflikt mit Modul B auslöst, aber nicht umgekehrt.
+>Es ist möglich, dass die `composer.json` von Modul A einen Konflikt mit Modul B erklärt, aber nicht umgekehrt.
 
-*Nur Befehlszeile:* Verwenden Sie das optionale `--force`-Argument, um zu erzwingen, dass ein Modul unabhängig von seinen Abhängigkeiten aktiviert oder deaktiviert wird.
+*Nur Befehlszeile:* Um zu erzwingen, dass ein Modul unabhängig von seinen Abhängigkeiten aktiviert oder deaktiviert wird, verwenden Sie das optionale Argument `--force` .
 
 >[!NOTE]
 >

@@ -9,11 +9,11 @@ ht-degree: 1%
 
 ---
 
-# Best Practices bei der Leistung
+# Best Practices für die Leistung
 
-Das Handbuch _Best Practices für die Leistung_ enthält Empfehlungen und Anweisungen zur Optimierung der Leistung Ihrer Produktionsimplementierung. Technische Benutzer, die für die Pflege von Stores im Produktionsmodus verantwortlich sind, sollten die in diesem Handbuch beschriebenen Best Practices verwenden, um sicherzustellen, dass ihre Stores jederzeit mit maximaler Effizienz ausgeführt werden.
+Das _Best Practices für die Leistung_ enthält Empfehlungen und Anweisungen zur Leistungsoptimierung Ihrer Produktionsbereitstellung. Technische Benutzende, die für die Verwaltung von Stores im Produktionsmodus verantwortlich sind, sollten die in diesem Handbuch beschriebenen Best Practices verwenden, um sicherzustellen, dass ihre Stores jederzeit mit maximaler Effizienz ausgeführt werden.
 
 ## Annahmen
 
 * Sie haben Adobe Commerce mit [Composer](../installation/composer.md) installiert.
-* Mit dieser Installation führen Sie eine Live-Produktionsinstanz von Adobe Commerce aus.
+* Mit dieser Installation können Sie eine Live-Produktionsinstanz von Adobe Commerce ausführen.
