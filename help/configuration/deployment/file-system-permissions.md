@@ -1,6 +1,6 @@
 ---
 title: Zugriffsberechtigungen für Dateisysteme
-description: Erfahren Sie, wie Sie den Eigentümer des Commerce-Anwendungsdateisystems für ein Entwicklungs- und Produktionssystem einrichten.
+description: Erfahren Sie, wie Sie den/die Verantwortlichen des Commerce-Anwendungsdateisystems für ein Entwicklungs- und Produktionssystem einrichten.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
 source-git-commit: dcc283b901917e3681863370516771763ae87462
@@ -12,29 +12,29 @@ ht-degree: 0%
 
 # Zugriffsberechtigungen für Dateisysteme
 
-In diesem Abschnitt wird beschrieben, wie Sie den Eigentümer des Commerce-Dateisystems für ein Entwicklungs- und Produktionssystem einrichten. Bevor Sie fortfahren, sollten Sie die unter [Überblick über die Eigentümerschaft und Berechtigungen des Dateisystems](../../installation/prerequisites/file-system/overview.md) behandelten Konzepte lesen.
+In diesem Abschnitt wird beschrieben, wie Sie den/die Verantwortlichen für das Commerce-Dateisystem für ein Entwicklungs- und Produktionssystem einrichten. Bevor Sie fortfahren, lesen Sie die Konzepte unter [Übersicht über Dateisystemeigentum und -berechtigungen](../../installation/prerequisites/file-system/overview.md).
 
-Dieser Themenbereich konzentriert sich auf die Entwicklungs- und Produktionssysteme von Commerce. Wenn Sie Commerce installieren, finden Sie weitere Informationen unter [Einrichten von Eigentümern und Berechtigungen vor der Installation](../../installation/prerequisites/file-system/configure-permissions.md).
+In diesem Abschnitt werden Entwicklungs- und Produktionssysteme für Commerce vorgestellt. Wenn Sie Commerce installieren, lesen Sie [Festlegen von Eigentum und Berechtigungen für die Vorinstallation](../../installation/prerequisites/file-system/configure-permissions.md).
 
-In den folgenden Abschnitten werden die Anforderungen für einen oder zwei Dateisysteminhaber besprochen. Das bedeutet:
+In den folgenden Abschnitten werden die Anforderungen für einen oder zwei Dateisystembesitzer erläutert. Das bedeutet:
 
-- **Ein Benutzer**: In der Regel bei freigegebenen Hosting-Anbietern erforderlich, die den Zugriff auf nur einen Benutzer auf dem Server ermöglichen. Dieser Benutzer kann sich anmelden, Dateien über FTP übertragen und der Webserver wird auch von diesem Benutzer ausgeführt.
+- **Ein Benutzer** - Wird in der Regel bei Anbietern für gemeinsam genutztes Hosting benötigt, die Ihnen den Zugriff auf nur einen Benutzer auf dem Server ermöglichen. Dieser Benutzer kann sich anmelden, Dateien über FTP übertragen, und dieser Benutzer führt auch den Webserver aus.
 
-- **Zwei Benutzer**: Wir empfehlen zwei Benutzer, wenn Sie Ihren eigenen Commerce-Server ausführen: einen zum Übertragen von Dateien und zum Ausführen von Befehlszeilen-Dienstprogrammen und einen separaten Benutzer für die Webserver-Software. Wenn möglich, ist dies vorzuziehen, da es sicherer ist.
+- **Zwei Benutzer** - Wenn Sie Ihren eigenen Commerce-Server ausführen, empfehlen wir zwei Benutzer: einen zum Übertragen von Dateien und Ausführen von Befehlszeilen-Dienstprogrammen und einen separaten Benutzer für die Webserver-Software. Wenn möglich, ist dies vorzuziehen, da es sicherer ist.
 
   Stattdessen haben Sie separate Benutzer:
 
-   - Der Webserver-Benutzer, der den Administrator und die Storefront ausführt.
+   - Der Webserver-Benutzer, der die Admin- und Storefront ausführt.
 
-   - Ein _Befehlszeilenbenutzer_, bei dem es sich um ein lokales Benutzerkonto handelt, mit dem Sie sich beim Server anmelden können. Dieser Benutzer führt Commerce-Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
+   - Ein _Befehlszeilenbenutzer“,_ ein lokales Benutzerkonto ist, mit dem Sie sich beim Server anmelden können. Dieser Anwender führt Commerce Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
 
-## Eigentümerschaft des Produktionsdateisystems für freigegebenes Hosting (ein Benutzer)
+## Eigentümerschaft am Produktionsdateisystem für freigegebenes Hosting (ein Benutzer)
 
-Um das Setup eines Eigentümers zu verwenden, müssen Sie sich bei Ihrem Commerce-Server als derselbe Benutzer anmelden, der den Webserver ausführt. Dies ist typisch für freigegebenes Hosting.
+Um das One-Owner-Setup zu verwenden, müssen Sie sich beim Commerce-Server als derselbe Benutzer anmelden, der den Webserver ausführt. Dies ist typisch für freigegebenes Hosting.
 
-Da ein Dateisysteminhaber weniger sicher ist, empfehlen wir, Commerce möglichst auf einem privaten Server anstatt auf freigegebenem Hosting bereitzustellen.
+Da es weniger sicher ist, einen Dateisystembesitzer zu haben, empfehlen wir, Commerce in der Produktion auf einem privaten Server bereitzustellen, anstatt auf freigegebenem Hosting, sofern möglich.
 
-### Einrichten eines Eigentümers im Standard- oder Entwicklermodus
+### Einen Besitzer für den Standard- oder Entwicklermodus einrichten
 
 Im Standard- oder Entwicklermodus müssen die folgenden Ordner vom Benutzer schreibbar sein:
 
@@ -49,7 +49,7 @@ Im Standard- oder Entwicklermodus müssen die folgenden Ordner vom Benutzer schr
 
 Sie können diese Berechtigungen entweder über die Befehlszeile oder eine Datei-Manager-Anwendung festlegen, die von Ihrem freigegebenen Hosting-Anbieter bereitgestellt wird.
 
-### Einrichten eines Eigentümers für den Produktionsmodus
+### Einen Verantwortlichen für den Produktionsmodus einrichten
 
 Wenn Sie bereit sind, Ihre Site für die Produktion bereitzustellen, sollten Sie den Schreibzugriff aus Dateien in den folgenden Verzeichnissen entfernen, um die Sicherheit zu verbessern:
 
@@ -62,17 +62,17 @@ Wenn Sie bereit sind, Ihre Site für die Produktion bereitzustellen, sollten Sie
 - `generated/metadata`
 - `var/view_preprocessed`
 
-Um Komponenten zu aktualisieren, neue Komponenten zu installieren oder die Commerce-Software zu aktualisieren, müssen alle vorherigen Ordner schreibgeschützt sein.
+Um Komponenten zu aktualisieren, neue Komponenten zu installieren oder die Commerce-Software zu aktualisieren, müssen alle vorangehenden Verzeichnisse Lese- und Schreibzugriff besitzen.
 
-#### Codedateien und Ordner schreibgeschützt machen
+#### Code-Dateien und Verzeichnisse schreibgeschützt machen
 
-So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe des Webserver-Benutzers:
+So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe der Webserverbenutzer:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an.
+1. Melden Sie sich beim Commerce-Server an.
 
-1. Wechseln Sie zum Installationsverzeichnis von Commerce.
+1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 
-1. Wechseln Sie in den Produktionsmodus.
+1. Wechseln Sie in den Produktionsmodus .
 
    ```bash
    bin/magento deploy:mode:set production
@@ -90,12 +90,12 @@ So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe de
    chmod u+x bin/magento
    ```
 
-#### Code-Dateien und Ordner schreibbar machen
+#### Schreiben von Code-Dateien und Verzeichnissen
 
-Damit Dateien und Ordner schreibbar sind, können Sie Komponenten aktualisieren und die Commerce-Software aktualisieren:
+So machen Sie Dateien und Verzeichnisse schreibbar, damit Sie Komponenten aktualisieren und die Commerce-Software aktualisieren können:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an.
-1. Wechseln Sie zum Installationsverzeichnis von Commerce.
+1. Melden Sie sich beim Commerce-Server an.
+1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie die folgenden Befehle ein:
 
    ```bash
@@ -104,34 +104,34 @@ Damit Dateien und Ordner schreibbar sind, können Sie Komponenten aktualisieren 
 
 ### Optional `magento_umask` festlegen
 
-Siehe [Optional eine Umfrage festlegen](../../installation/next-steps/set-umask.md) im _Installationshandbuch_.
+Siehe [Optional eine Umaske festlegen](../../installation/next-steps/set-umask.md) im _Installationshandbuch_.
 
-## Eigentümerschaft des Produktionsdateisystems für privates Hosting (zwei Benutzer)
+## Eigentümerschaft am Produktionsdateisystem für privates Hosting (zwei Benutzer)
 
-Wenn Sie Ihren eigenen Server verwenden (einschließlich des privaten Server-Setups eines Hosting-Providers), gibt es zwei Benutzer:
+Wenn Sie Ihren eigenen Server verwenden (einschließlich des privaten Server-Setups eines Hosting-Anbieters), gibt es zwei Benutzer:
 
-- Der **Webserver-Benutzer**, der den Admin und die Storefront ausführt.
+- Der **Webserver-Benutzer**, der die Admin- und Storefront ausführt.
 
-  Linux-Systeme bieten für diesen Benutzer in der Regel keine Shell. Sie können sich nicht beim Commerce-Server als Webserver-Benutzer anmelden oder zu ihm wechseln.
+  Linux-Systeme stellen für diesen Benutzer in der Regel keine Shell bereit. Sie können sich nicht als Webserver-Benutzer beim Commerce-Server anmelden oder zu diesem wechseln.
 
-- Der **Befehlszeilenbenutzer**, bei dem Sie sich bei Ihrem Commerce-Server als anmelden oder zu ihm wechseln.
+- Der **Befehlszeilenbenutzer**, mit dem Sie sich beim Commerce-Server anmelden oder zu dem Sie wechseln.
 
-  Commerce verwendet diesen Benutzer zum Ausführen von CLI-Befehlen und Cron.
+  Commerce verwendet diesen Benutzer, um CLI-Befehle und Cron auszuführen.
 
   >[!INFO]
   >
-  >Der Befehlszeilenbenutzer wird auch als _Dateisysteminhaber_ bezeichnet.
+  >Der Befehlszeilenbenutzer wird auch als &quot;_&quot;_.
 
-Da diese Benutzer Zugriff auf dieselben Dateien benötigen, empfehlen wir, eine [freigegebene Gruppe](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) zu erstellen, zu der sie beide gehören. Die folgenden Verfahren setzen voraus, dass Sie dies bereits getan haben.
+Da diese Benutzer Zugriff auf dieselben Dateien benötigen, empfehlen wir, eine [freigegebene Gruppe“ zu erstellen](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) der sie beide angehören. Bei den folgenden Verfahren wird davon ausgegangen, dass Sie dies bereits getan haben.
 
 Siehe einen der folgenden Abschnitte:
 
-- Zwei Dateisysteminhaber oder Standardmodus
-- Zwei Dateisysteminhaber im Produktionsmodus
+- Zwei Dateisystembesitzer im Entwickler- oder Standardmodus
+- Zwei Dateisystembesitzer im Produktionsmodus
 
-### Einrichten von zwei Eigentümern für den Standard- oder Entwicklermodus
+### Zwei Eigentümer für den Standard- oder Entwicklermodus einrichten
 
-Dateien in den folgenden Ordnern müssen sowohl vom Benutzer im Entwickler- als auch im Standardmodus schreibbar sein:
+Dateien in den folgenden Verzeichnissen müssen sowohl im Entwickler- als auch im Standardmodus schreibgeschützt sein:
 
 - `var`
 - `generated`
@@ -139,19 +139,19 @@ Dateien in den folgenden Ordnern müssen sowohl vom Benutzer im Entwickler- als 
 - `pub/media`
 - `app/etc`
 
-Setzen Sie das Bit [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) in Verzeichnissen, damit die Berechtigungen immer vom übergeordneten Verzeichnis übernommen werden.
+Legen Sie das [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/)-Bit für Ordner fest, sodass Berechtigungen immer vom übergeordneten Ordner erben.
 
 >[!INFO]
 >
->`setgid` gilt nur für Verzeichnisse, _nicht_ für Dateien.
+>`setgid` gilt nur für Verzeichnisse _nicht_ Dateien.
 
-Darüber hinaus sollten die Ordner von der Webserver-Gruppe schreibbar sein. Da in diesen Verzeichnissen möglicherweise Inhalt vorhanden ist, fügen Sie die Berechtigungen rekursiv hinzu.
+Darüber hinaus sollten die Ordner von der Webservergruppe beschreibbar sein. Da in diesen Verzeichnissen möglicherweise Inhalte vorhanden sind, fügen Sie die Berechtigungen rekursiv hinzu.
 
 #### Festlegen von Berechtigungen und `setgid`
 
-Festlegen von `setgid` und Berechtigungen für den Entwicklermodus:
+So legen Sie `setgid` und Berechtigungen für den Entwicklermodus fest:
 
-1. Melden Sie sich bei Ihrem Commerce-Server als Dateisysteminhaber an oder wechseln Sie zu ihm.
+1. Melden Sie sich bei Ihrem Commerce-Server als Dateisystembesitzer an oder wechseln Sie zu diesem.
 1. Geben Sie die folgenden Befehle in der angegebenen Reihenfolge ein:
 
    ```bash
@@ -166,7 +166,7 @@ Festlegen von `setgid` und Berechtigungen für den Entwicklermodus:
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-### Zwei Dateisysteminhaber im Produktionsmodus
+### Zwei Dateisystembesitzer im Produktionsmodus
 
 Wenn Sie bereit sind, Ihre Site für die Produktion bereitzustellen, sollten Sie den Schreibzugriff aus Dateien in den folgenden Verzeichnissen entfernen, um die Sicherheit zu verbessern:
 
@@ -180,30 +180,30 @@ Wenn Sie bereit sind, Ihre Site für die Produktion bereitzustellen, sollten Sie
 - `generated/metadata`
 - `var/view_preprocessed`
 
-#### Codedateien und Ordner schreibgeschützt machen
+#### Code-Dateien und Verzeichnisse schreibgeschützt machen
 
-So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe des Webserver-Benutzers:
+So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe der Webserverbenutzer:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an.
-1. Wechseln Sie zum Installationsverzeichnis von Commerce.
-1. Geben Sie als Eigentümer des Dateisystems den folgenden Befehl ein, um in den Produktionsmodus zu wechseln:
+1. Melden Sie sich beim Commerce-Server an.
+1. Wechseln Sie in das Commerce-Installationsverzeichnis.
+1. Geben Sie als Verantwortlicher für das Dateisystem den folgenden Befehl ein, um in den Produktionsmodus zu wechseln:
 
    ```bash
    bin/magento deploy:mode:set production
    ```
 
-1. Geben Sie den folgenden Befehl als Benutzer mit `root` -Berechtigungen ein:
+1. Geben Sie den folgenden Befehl als Benutzer mit `root` ein:
 
    ```bash
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
-#### Code-Dateien und Ordner schreibbar machen
+#### Schreiben von Code-Dateien und Verzeichnissen
 
-Damit Dateien und Ordner schreibbar sind, können Sie Komponenten aktualisieren und die Commerce-Software aktualisieren:
+So machen Sie Dateien und Verzeichnisse schreibbar, damit Sie Komponenten aktualisieren und die Commerce-Software aktualisieren können:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an.
-1. Wechseln Sie zum Installationsverzeichnis von Commerce.
+1. Melden Sie sich beim Commerce-Server an.
+1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie den folgenden Befehl ein:
 
    ```bash

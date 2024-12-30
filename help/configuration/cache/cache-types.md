@@ -1,6 +1,6 @@
 ---
-title: Cachetypen
-description: Verknüpfen Sie Cache-Frontends mit Cache-Typen.
+title: Cache-Typen
+description: Zuordnen von Cache-Frontends zu Cache-Typen.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
@@ -10,21 +10,21 @@ ht-degree: 0%
 
 ---
 
-# Cachetypen
+# Cache-Typen
 
-Die folgenden Schritte zeigen, wie Sie das Cache-Frontend mit einem Cache-Typ verknüpfen.
+In den folgenden Schritten wird beschrieben, wie Sie das Cache-Frontend einem Cache-Typ zuordnen.
 
-## Schritt 1: Definieren eines Cache-Frontend
+## Schritt 1: Cache-Frontend definieren
 
-Die Commerce-Anwendung verfügt über ein Cache-Frontend mit dem Wert `default` , das Sie für jeden beliebigen Cache-Typ [2} verwenden können. ](../cli/manage-cache.md#clean-and-flush-cache-types) In diesem Abschnitt wird beschrieben, wie Sie optional ein Cache-Frontend mit einem anderen Namen definieren, was bei der erwarteten Anpassung Ihres Frontend vorzuziehen ist.
+Das Commerce-Programm verfügt über ein `default` Cache-Frontend, das Sie für jeden [Cache-Typ“ ](../cli/manage-cache.md#clean-and-flush-cache-types) können. In diesem Abschnitt wird beschrieben, wie Sie optional ein Cache-Frontend mit einem anderen Namen definieren. Dies ist vorzuziehen, wenn Sie Ihr Frontend anpassen möchten.
 
 >[!INFO]
 >
->Um den Cache-Typ `default` zu verwenden, müssen Sie `env.php` überhaupt nicht ändern. Sie ändern Commerces globale `di.xml`. Siehe [Optionen für den Cache auf niedriger Ebene](cache-options.md).
+>Um den `default` Cache-Typ zu verwenden, müssen Sie `env.php` überhaupt nicht ändern. Sie ändern die globale `di.xml` von Commerce. Siehe [Cache-Optionen auf niedriger Ebene](cache-options.md).
 
-Sie müssen ein benutzerdefiniertes Cache-Frontend entweder `app/etc/env.php` oder das globale Commerce-Frontend `app/etc/di.xml` angeben.
+Sie müssen ein benutzerdefiniertes Cache-Frontend entweder `app/etc/env.php` oder die globale `app/etc/di.xml` von Commerce angeben.
 
-Das folgende Beispiel zeigt, wie Sie es in der Datei `env.php` definieren, die die Datei `di.xml` überschreibt:
+Das folgende Beispiel zeigt, wie Sie sie in der `env.php` definieren, wodurch die `di.xml` überschrieben wird:
 
 ```php?start_inline=1
 'cache' => [
@@ -46,13 +46,13 @@ Das folgende Beispiel zeigt, wie Sie es in der Datei `env.php` definieren, die d
 ],
 ```
 
-Dabei ist `<unique frontend id>` ein eindeutiger Name, der Ihr Frontend identifiziert, und `<cache options>` sind Optionen, die in den für jeden Caching-Typ (Datenbank, Redis usw.) spezifischen Themen besprochen werden.
+Dabei sind `<unique frontend id>` ein eindeutiger Name zur Identifizierung Ihres Frontends und `<cache options>` Optionen, die in den für die einzelnen Arten von Caching spezifischen Themen (Datenbank, Redis usw.) erläutert werden.
 
-## Schritt 2: Cache konfigurieren
+## Schritt 2: Konfigurieren des Cache
 
-Sie können die Konfigurationsoptionen für den Frontend- und Backend-Cache in `env.php` oder `di.xml` angeben. Diese Aufgabe ist optional.
+Sie können die Konfigurationsoptionen für Frontend- und Backend-Cache in `env.php` oder `di.xml` angeben. Diese Aufgabe ist optional.
 
-Beispiel für `env.php`:
+`env.php`:
 
 ```php?start_inline=1
 'frontend' => <frontend_type>,
@@ -67,13 +67,13 @@ Beispiel für `env.php`:
 ],
 ```
 
-where
+Hierbei gilt
 
-- `<frontend_type>` ist der Frontend-Cache-Typ der unteren Ebene. Geben Sie den Namen einer Klasse an, die mit `Zend\Cache\Core` kompatibel ist.
-Wenn Sie `<frontend_type>` weglassen, wird [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) verwendet.
+- `<frontend_type>` ist der Frontend-Cache-Typ auf niedriger Ebene. Geben Sie den Namen einer mit `Zend\Cache\Core` kompatiblen Klasse an.
+Wenn Sie `<frontend_type>` auslassen, wird [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) verwendet.
 
-- `<frontend_option>`, `<frontend_option_value>` sind der Name und der Wert der Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array an den Frontend-Cache übergibt.
-- `<backend_type>` ist der Backend-Cache-Typ der unteren Ebene. Geben Sie den Namen einer Klasse an, die mit `Zend_Cache_Backend` kompatibel ist und `Zend_Cache_Backend_Interface` implementiert.
-- `<backend_option>` und `<backend_option_value>` sind der Name und der Wert der Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array an den Backend-Cache übergibt.
+- `<frontend_option>` sind `<frontend_option_value>` der Name und der Wert von Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array an den Frontend-Cache übergibt.
+- `<backend_type>` ist der Backend-Cache-Typ auf niedriger Ebene. Geben Sie den Namen einer Klasse an, die mit `Zend_Cache_Backend` kompatibel ist und `Zend_Cache_Backend_Interface` implementiert.
+- `<backend_option>` und `<backend_option_value>` sind der Name und der Wert von Optionen, die das Commerce-Framework bei seiner Erstellung als assoziatives Array an den Backend-Cache übergibt.
 
-Aktuelle Informationen zu Zend finden Sie in der [Laminas-Dokumentation](https://docs.laminas.dev/) .
+Die neuesten [ Informationen finden Sie in ](https://docs.laminas.dev/)Laminas-Dokumentation).

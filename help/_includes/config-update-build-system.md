@@ -10,25 +10,25 @@ ht-degree: 0%
 **So aktualisieren Sie das Build-System**:
 
 1. Melden Sie sich beim Build-System als Eigentümer des Dateisystems an.
-1. Wechseln Sie zum Stammverzeichnis der Anwendung.
+1. Wechseln Sie in das Stammverzeichnis der Anwendung.
 
    ```bash
    cd <Magento root dir>
    ```
 
-1. Ziehen Sie die Änderungen an `app/etc/config.php` aus der Quell-Code-Verwaltung.
+1. Abrufen der Änderungen an `app/etc/config.php` aus der Quell-Code-Verwaltung.
 
    ```bash
    git pull mconfig m2.2_deploy
    ```
 
-1. Kompilieren Sie den Code.
+1. Kompilieren Sie Code.
 
    ```bash
    bin/magento setup:di:compile
    ```
 
-1. Nachdem der Code kompiliert wurde, generieren Sie statische Ansichtsdateien.
+1. Generieren Sie nach dem Kompilieren des Codes statische Ansichtsdateien.
 
    ```bash
    bin/magento setup:static-content:deploy -f

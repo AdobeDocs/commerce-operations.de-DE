@@ -5,17 +5,17 @@ source-wordcount: '93'
 ht-degree: 0%
 
 ---
-# Einführung in Sicherheits-Patch-Versionshinweise
+# Einführung zu Sicherheits-Patches
 
-Diese Versionshinweise zum Sicherheits-Patch erfassen Aktualisierungen, um die Sicherheit Ihrer Adobe Commerce-Bereitstellung zu erhöhen. Die Informationen umfassen unter anderem Folgendes:
+Diese Sicherheits-Patch-Versionshinweise erfassen Aktualisierungen, um die Sicherheit Ihrer Adobe Commerce-Bereitstellung zu erhöhen. Die Informationen umfassen unter anderem Folgendes:
 
-* Fehlerkorrekturen für Sicherheit
-* Sicherheitshinweise, die detailliertere Informationen zu den im Sicherheits-Patch enthaltenen Verbesserungen und Updates enthalten
+* Fehlerbehebungen bei der Sicherheit
+* Sicherheits-Highlights, die weitere Details zu den im Sicherheits-Patch enthaltenen Verbesserungen und Aktualisierungen enthalten
 * Bekannte Probleme
 * Anweisungen zum Anwenden zusätzlicher Patches, falls erforderlich
-* Informationen zu den in der Version enthaltenen Hotfixes
+* Informationen zu allen in der Version enthaltenen Hotfixes
 
 Weitere Informationen zu Sicherheits-Patch-Versionen:
 
-* [Übersicht über Adobe Commerce Security Patch Releases](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
+* [Überblick über Adobe Commerce Security-Patch-Versionen](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
 * Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patch-Versionen finden Sie im [Upgrade-Handbuch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)

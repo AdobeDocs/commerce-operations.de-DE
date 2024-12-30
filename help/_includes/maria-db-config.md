@@ -7,25 +7,25 @@ ht-degree: 1%
 ---
 # MariaDB-Konfigurationseinstellungen
 
-Die Neuindizierung auf MariaDB 10.4 und 10.6 nimmt im Vergleich zu früheren MariaDB- oder MySQL-Versionen mehr Zeit in Anspruch. Um die Neuindizierung zu beschleunigen, empfehlen wir, diese MariaDB-Konfigurationsparameter festzulegen:
+Die Neuindizierung auf MariaDB 10.4 und 10.6 dauert im Vergleich zu früheren MariaDB- oder MySQL-Versionen länger. Um die Neuindizierung zu beschleunigen, empfehlen wir die folgenden MariaDB-Konfigurationsparameter festzulegen:
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
 * [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
 
-Wenn die Leistung nach der Aktualisierung auf MariaDB 10.6 nicht mit der Indexierung in Zusammenhang steht, sollten Sie die Einstellung [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) aktivieren. Beispiel: `--query-cache-type=ON`.
+Wenn nach dem Upgrade auf MariaDB 10.6 eine Leistungsbeeinträchtigung auftritt, die nicht mit einer Indizierung in Zusammenhang steht, sollten Sie die [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) aktivieren. Beispiel: `--query-cache-type=ON`.
 
-Vor der Aktualisierung von Adobe Commerce auf Cloud-Infrastrukturprojekten müssen Sie möglicherweise auch MariaDB aktualisieren ([siehe Best Practices für die MariaDB-Aktualisierung](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)).
+Vor einem Upgrade von Adobe Commerce in Cloud-Infrastrukturprojekten müssen Sie möglicherweise auch MariaDB aktualisieren ([siehe Best Practices für MariaDB-Upgrades](../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md)).
 
 Beispiel:
 
 * Adobe Commerce 2.4.6 mit MariaDB-Version 10.5.1 oder höher
-* Adobe Commerce 2.3.5 mit MariaDB-Version 10.3 oder früher
+* Adobe Commerce 2.3.5 mit MariaDB Version 10.3 oder früher
 
-Zusätzlich zu diesen Empfehlungen sollten Sie sich an Ihren Datenbankadministrator wenden, um die folgenden Parameter zu konfigurieren:
+Zusätzlich zu diesen Empfehlungen sollten Sie sich mit Ihrem Datenbankadministrator über die Konfiguration der folgenden Parameter beraten:
 
 >[!NOTE]
 >
->Diese Einstellungen sind nur für lokale Bereitstellungen verfügbar. Kunden von Adobe Commerce in der Cloud-Infrastruktur haben keinen Zugriff auf diese Einstellungen.
+>Diese Einstellungen sind nur für lokale Bereitstellungen verfügbar. Kunden von Adobe Commerce in Cloud-Infrastrukturen haben keinen Zugriff auf diese Einstellungen.
 
 * [`--query-cache-limit`](https://mariadb.com/kb/en/server-system-variables/#query_cache_limit)
 * [`--query-cache-size`](https://mariadb.com/kb/en/server-system-variables/#query_cache_size)

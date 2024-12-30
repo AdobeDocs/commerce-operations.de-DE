@@ -1,6 +1,6 @@
 ---
-title: Best Practice für die Größe des OPcache-Speichers
-description: Beschreibt, wie Sie eine Leistungsbeeinträchtigung durch bestimmte Einstellungen des OPcache-Speicherverbrauchs in Adobe Commerce-Projekten vermeiden.
+title: Best Practice für die Größe des OP-Cache-Speichers
+description: Beschreibt, wie Leistungseinbußen durch bestimmte Einstellungen der OPcache-Speichernutzung in Adobe Commerce-Projekten verhindert werden können.
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
@@ -11,23 +11,23 @@ ht-degree: 1%
 
 ---
 
-# Best Practice für die OPcache-Speichergröße in Adobe Commerce
+# Best Practice für die Größe des OP-Cache-Speichers in Adobe Commerce
 
-Für Adobe Commerce on Cloud Infrastructure Pro Plan Architecture 2.3.x wird empfohlen, `opcache.memory_consumption` auf mindestens 2 GB festzulegen, um eine Leistungsbeeinträchtigung zu vermeiden.
+Für Adobe Commerce on Cloud Infrastructure Pro plan architecture 2.3.x wird empfohlen, `opcache.memory_consumption` auf mindestens 2 GB festzulegen, um Leistungseinbußen zu vermeiden.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce auf Cloud-Infrastruktur Pro-Planarchitektur 2.3.x
+* Adobe Commerce auf Cloud-Infrastruktur Pro Planarchitektur 2.3.x
 * PHP 7.0 und höher
 
-## Speicher konfigurieren
+## Konfigurieren des Speichers
 
-Weisen Sie mindestens **2GB** Speicher für das [OPcache-PHP-Modul](https://www.php.net/manual/en/book.opcache.php) zu. Das OPcache-Modul wird in der Datei `php.ini` konfiguriert. Um 2048 MB Arbeitsspeicher zuzuweisen, legen Sie `opcache.memory_consumption = 2048` fest.
+Mindestens **2 GB** Speicher für das [OPcache PHP-Modul](https://www.php.net/manual/en/book.opcache.php). Das OPcache-Modul wird in der `php.ini`-Datei konfiguriert. Um 2048 MB Speicher zuzuweisen, setzen Sie `opcache.memory_consumption = 2048`.
 
 ## Weitere Informationen
 
 * [Best Practices für die Leistung - PHP-Einstellungen](../../../performance/software.md#php-settings)
 * [PHP-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
-* [Best Practices für Datenbanken mit Adobe Commerce in Cloud-Infrastruktur](database-on-cloud.md)
-* [Häufigste Datenbankprobleme in Adobe Commerce bei der Cloud-Infrastruktur](../maintenance/resolve-database-performance-issues.md)
-* [Indexer &quot;Auf Zeitplan aktualisieren&quot;optimiert die Leistung von Adobe Commerce](../maintenance/indexer-configuration.md)
+* [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](database-on-cloud.md)
+* [Häufigste Datenbankprobleme in Adobe Commerce in der Cloud-Infrastruktur](../maintenance/resolve-database-performance-issues.md)
+* [Indexer „Update on Schedule“ optimieren die Leistung von Adobe Commerce](../maintenance/indexer-configuration.md)

@@ -1,6 +1,6 @@
 ---
-title: Verwalten des Cache
-description: Verwalten von Cache-Typen und Anzeigen des Cache-Status über die Befehlszeile mithilfe der Commerce-CLI
+title: Cache verwalten
+description: Verwalten Sie Cache-Typen und zeigen Sie den Cache-Status über die Befehlszeile mithilfe der Commerce-CLI an
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -9,23 +9,23 @@ ht-degree: 0%
 
 ---
 
-# Verwalten des Cache
+# Cache verwalten
 
 {{file-system-owner}}
 
-## Cachetypen
+## Cache-Typen
 
-Sie können das Cache-Management-System von Adobe Commerce verwenden, um die Leistung Ihrer Site zu verbessern. In diesem Thema wird erläutert, wie Systemadministratoren oder Entwickler mit Zugriff auf den Commerce-Anwendungsserver Caches über die Befehlszeile verwalten können.
+Sie können das Cache-Management-System von Adobe Commerce verwenden, um die Leistung Ihrer Site zu verbessern. In diesem Abschnitt wird erläutert, wie Systemadministratoren oder Entwickler mit Zugriff auf den Commerce-Anwendungsserver Caches über die Befehlszeile verwalten können.
 
 >[!NOTE]
 >
 >
->Community-Site-Administratoren können den Cache vom Admin mithilfe des Tools Cache Management System verwalten. Siehe [Cache-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) im _Administratorsystemhandbuch_.
+>Commerce-Site-Administratoren können den Cache über das Tool Cache Management System von der Admin-Instanz aus verwalten. Siehe [Cache-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) im _Admin-_.
 
 
 ## Cache-Status anzeigen
 
-Zeigen Sie in der Befehlszeile des Commerce-Anwendungsservers den Cache-Status mit dem Befehl `cache:status` Commerce CLI an.
+Zeigen Sie in der Befehlszeile des Commerce-Anwendungsservers den Cache-Status mithilfe des `cache:status` Commerce-CLI-Befehls an.
 
 ```bash
    bin/magento cache:status
@@ -33,7 +33,7 @@ Zeigen Sie in der Befehlszeile des Commerce-Anwendungsservers den Cache-Status m
 
 <!-- where `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md) and values. -->
 
-Ein Beispiel:
+Es folgt ein Beispiel:
 
 ```
 Current status:
@@ -59,18 +59,18 @@ Current status:
 
 >[!TIP]
 >
->Eine ausführliche Beschreibung der von Adobe Commerce unterstützten Standard-Cache-Typen finden Sie unter [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) im _Administratorsystemhandbuch_.
+>Eine ausführliche Beschreibung der von Adobe Commerce unterstützten Standard-Cache-Typen finden Sie unter [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) im _Admin-_.
 
 
 ## Cache-Typen aktivieren oder deaktivieren
 
-Mit diesem Befehl können Sie alle oder nur die angegebenen Cache-Typen aktivieren oder deaktivieren. Das Deaktivieren von Cache-Typen ist während der Entwicklung nützlich, da Sie die Ergebnisse Ihrer Änderungen sehen, ohne den Cache leeren zu müssen. Das Deaktivieren von Cache-Typen hat jedoch negative Auswirkungen auf die Leistung.
+Mit diesem Befehl können Sie alle oder nur die angegebenen Cache-Typen aktivieren oder deaktivieren. Das Deaktivieren von Cache-Typen ist während der Entwicklung nützlich, da Sie die Ergebnisse Ihrer Änderungen sehen, ohne den Cache leeren zu müssen. Die Deaktivierung von Cache-Typen hat jedoch negative Auswirkungen auf die Leistung.
 
 >[!INFO]
 >
->Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Commerce im Produktionsmodus ausgeführt wird. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Bevor Sie dies tun, müssen Sie `<magento_root>/app/etc/env.php` vom [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) manuell schreiben können.
+>Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Zuvor müssen Sie `<magento_root>/app/etc/env.php` manuell vom [Dateisystembesitzer“ überschreibbar ](../../installation/prerequisites/file-system/overview.md).
 
-Sie können Cache-Typen entweder über die Befehlszeile oder den Administrator bereinigen (auch als _flush_ oder _refresh_ bezeichnet).
+Sie können Cache-Typen (auch als __ oder _Aktualisieren_ bezeichnet) entweder über die Befehlszeile oder über Admin bereinigen.
 
 Befehlsoptionen:
 
@@ -82,11 +82,11 @@ bin/magento cache:enable [type] ... [type]
 bin/magento cache:disable [type] ... [type]
 ```
 
-Wenn `[type]` weggelassen wird, werden alle Cache-Typen gleichzeitig aktiviert oder deaktiviert. Die Option `type` ist eine durch Leerzeichen getrennte Liste von Cache-Typen.
+Wenn Sie `[type]` auslassen, werden alle Cache-Typen gleichzeitig aktiviert oder deaktiviert. Die `type` Option ist eine durch Leerzeichen getrennte Liste von Cache-Typen.
 
 <!-- `--bootstrap=` is a URL-encoded associative array of Commerce [application bootstrap parameters](../bootstrap/set-parameters.md#bootstrap-parameters) and values. -->
 
-So listen Sie Cache-Typen und ihren Status auf:
+Auflisten der Cache-Typen und ihres Status:
 
 ```bash
 bin/magento cache:status
@@ -112,27 +112,27 @@ Beispielergebnis:
 
 >[!INFO]
 >
->Ab Version 2.3.4 speichert Commerce alle System-EAV-Attribute beim Abrufen zwischen. Das Zwischenspeichern von EAV-Attributen auf diese Weise verbessert die Leistung, da dadurch die Anzahl der Einfüge-/Auswahlanfragen an die DB verringert wird. Es erhöht jedoch auch die Größe des Cache-Netzwerks. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie den Befehl `bin/magento config:set dev/caching/cache_user_defined_attributes 1` ausführen. Dies kann auch vom Administrator im [Entwicklermodus](../bootstrap/application-modes.md) durchgeführt werden, indem **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Benutzerdefinierte Attribute zwischenspeichern** auf **Ja** eingestellt werden.
+>Ab Version 2.3.4 speichert Commerce alle EAV-Systemattribute im Zwischenspeicher, sobald sie abgerufen werden. Das Caching von EAV-Attributen auf diese Weise verbessert die Leistung, da es die Anzahl der INSERT/SELECT-Anfragen an die DB verringert. Es erhöht jedoch auch die Cache-Netzwerkgröße. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie den `bin/magento config:set dev/caching/cache_user_defined_attributes 1`-Befehl ausführen. Im Entwicklermodus können Sie dies auch von der Admin aus tun[ ](../bootstrap/application-modes.md) indem Sie **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Cache User Defined Attributes** auf **Ja** einstellen.
 
-## Cache-Typen leeren
+## Cache-Typen bereinigen und leeren
 
 >[!NOTE]
 >
->Der Cache mehrerer Seiten kann gleichzeitig und automatisch mit **_ohne_** ungültig gemacht werden. Wenn beispielsweise ein Produkt im Katalog einer Kategorie zugewiesen wird oder eine beliebige [!UICONTROL related product rule] geändert wird.
+>Der Cache für mehrere Seiten kann gleichzeitig und automatisch ungültig gemacht werden **_ohne dass_** Entitäten bearbeitet werden müssen. Dies ist beispielsweise der Fall, wenn ein Produkt im Katalog einer Kategorie zugewiesen ist oder wenn eine [!UICONTROL related product rule] geändert wird.
 
-Um veraltete Elemente aus dem Cache zu löschen, können Sie die Cache-Typen _clean_ oder _flush_ löschen:
+Um veraltete Elemente aus dem Cache zu entfernen, können Sie _Cache-Typen_ bereinigen _oder_:
 
-- Beim Löschen eines Cache-Typs werden nur alle Elemente aus aktivierten Commerce-Cache-Typen gelöscht. Mit anderen Worten: Diese Option wirkt sich nicht auf andere Prozesse oder Anwendungen aus, da sie nur den von Commerce verwendeten Cache löscht.
+- Das Bereinigen eines Cache-Typs löscht nur alle Elemente aus aktivierten Commerce-Cache-Typen. Mit anderen Worten: Diese Option hat keine Auswirkungen auf andere Prozesse oder Anwendungen, da sie nur den von Commerce verwendeten Cache bereinigt.
 
   Deaktivierte Cache-Typen werden nicht bereinigt.
 
   >[!TIP]
   >
-  >Bereinigen Sie den Cache immer, nachdem Sie Adobe Commerce-Versionen aktualisiert, von Magento Open Source auf Adobe Commerce aktualisiert oder B2B für Adobe Commerce oder ein beliebiges Modul installiert haben.
+  >Bereinigen Sie den Cache immer, nachdem Sie Versionen von Adobe Commerce aktualisiert haben, von Magento Open Source auf Adobe Commerce aktualisiert haben oder B2B für Adobe Commerce oder ein beliebiges Modul installiert haben.
 
-- Beim Löschen eines Cache-Typs wird der Cache-Speicher geleert, was sich möglicherweise auf andere Prozessanwendungen auswirkt, die denselben Speicher verwenden.
+- Durch das Leeren eines Cache-Typs wird der Cache-Speicher bereinigt, was sich auf andere Prozesse und Anwendungen auswirken kann, die denselben Speicher verwenden.
 
-Cache-Typen leeren, wenn Sie bereits versucht haben, den Cache zu bereinigen, und weiterhin Probleme auftreten, die Sie nicht isolieren können.
+Leeren Sie Cache-Typen, wenn Sie bereits versucht haben, den Cache zu bereinigen, und weiterhin Probleme auftreten, die Sie nicht isolieren können.
 
 Befehlsverwendung:
 
@@ -144,7 +144,7 @@ Befehlsverwendung:
    bin/magento cache:flush [type] ... [type]
 ```
 
-Wobei `[type]` eine durch Leerzeichen getrennte Liste von Cache-Typen ist. Wenn Sie `[type]` auslassen, werden alle Cache-Typen gleichzeitig geleert oder geleert. Um beispielsweise alle Cache-Typen zu leeren, geben Sie
+Dabei ist `[type]` eine durch Leerzeichen getrennte Liste von Cache-Typen. Wenn Sie `[type]` auslassen, werden alle Cache-Typen gleichzeitig bereinigt oder geleert. Um beispielsweise alle Cache-Typen zu leeren, geben Sie ein.
 
 ```bash
    bin/magento cache:flush
@@ -173,4 +173,4 @@ Beispielergebnis:
 
 >[!TIP]
 >
->Sie können Cache-Typen auch in Admin löschen und leeren. Wechseln Sie zu &quot;**System**&quot;> &quot;**Tools**&quot;> &quot;**Cache-Verwaltung**&quot;. **Cache-Speicher leeren** entspricht `bin/magento cache:flush`. **Magento-Cache leeren** entspricht `bin/magento cache:clean`.
+>Sie können Cache-Typen auch in Admin bereinigen und leeren. Navigieren Sie **System** > **Tools** > **Cache-Verwaltung**. **Leeren des Cache** entspricht `bin/magento cache:flush`. **Leerer Magento-Cache** entspricht `bin/magento cache:clean`.

@@ -1,6 +1,6 @@
 ---
-title: Einrichten des Produktionssystems
-description: Erfahren Sie, wie Sie ein Produktionssystem für die Commerce-Anwendung einrichten.
+title: Einrichtung des Produktionssystems
+description: Erfahren Sie, wie Sie ein Produktionssystem für das Commerce-Programm einrichten.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
@@ -9,30 +9,30 @@ ht-degree: 0%
 
 ---
 
-# Einrichten des Produktionssystems
+# Einrichtung des Produktionssystems
 
-Sie können ein Produktionssystem haben. Folgendes muss zutreffen:
+Sie können ein Produktionssystem haben. Folgendes muss alle zutreffen:
 
-- Der gesamte Commerce-Code befindet sich in der Quell-Code-Verwaltung im selben Repository wie die Entwicklungs- und Build-Systeme.
-- Stellen Sie sicher, dass alle folgenden Elemente _im Quellcode-Steuerelement enthalten sind:_
+- Der gesamte Commerce-Code befindet sich in der Quell-Code-Verwaltung im selben Repository wie die Entwicklungs- und Build-Systeme
+- Stellen Sie sicher, dass Folgendes in _Quell_ Code-Verwaltung enthalten ist:
 
    - `app/etc/config.php`
-   - Ordner `generated` (und Unterverzeichnisse)
-   - Verzeichnis `pub/media`
-   - Ordner `pub/media/wysiwyg` (und Unterverzeichnisse)
-   - Ordner `pub/static` (und Unterverzeichnisse)
+   - `generated` (und Unterverzeichnisse)
+   - `pub/media`
+   - `pub/media/wysiwyg` (und Unterverzeichnisse)
+   - `pub/static` (und Unterverzeichnisse)
 
-- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus](../bootstrap/application-modes.md#production-mode) festgelegt werden
-- Sie verfügt über Dateisystemeigentum und -berechtigungen, wie in [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md) beschrieben.
+- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus“ ](../bootstrap/application-modes.md#production-mode)
+- Für sie sind der Besitz und die Berechtigungen des Dateisystems festgelegt, wie unter [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md) erläutert.
 
-## Einrichten eines Produktionsgeräts
+## Einrichten einer Produktionsmaschine
 
-So richten Sie einen Produktionsrechner ein:
+So richten Sie eine Produktionsmaschine ein:
 
-1. Nachdem Sie Commerce installiert oder aus der Quell-Code-Verwaltung abgerufen haben, melden Sie sich beim Produktionsserver als Eigentümer des Dateisystems an oder wechseln Sie zu diesem.
-1. Erstellen Sie `~/.ssh/.composer/auth.json` , falls noch nicht geschehen.
+1. Melden Sie sich nach der Installation von Commerce oder dem Abrufen aus der Quell-Code-Verwaltung beim Produktionsserver als Eigentümer des Dateisystems an oder wechseln Sie zu diesem.
+1. Erstellen Sie `~/.ssh/.composer/auth.json`, falls noch nicht geschehen.
 
-   Erstellen Sie den Ordner:
+   Erstellen Sie das Verzeichnis :
 
    ```bash
    mkdir -p ~/.ssh/.composer
@@ -40,9 +40,9 @@ So richten Sie einen Produktionsrechner ein:
 
    Erstellen Sie `auth.json` in diesem Verzeichnis.
 
-   `auth.json` muss Ihre [Authentifizierungsschlüssel](../../installation/prerequisites/authentication-keys.md) enthalten.
+   `auth.json` müssen Ihre [Authentifizierungsschlüssel“ ](../../installation/prerequisites/authentication-keys.md).
 
-   Ein Beispiel:
+   Es folgt ein Beispiel:
 
    ```json
    {
@@ -57,46 +57,46 @@ So richten Sie einen Produktionsrechner ein:
 
 1. Speichern Sie Ihre Änderungen in `auth.json`.
 1. Kopieren Sie `<Commerce root dir>/app/etc/env.php` aus Ihrem Entwicklungssystem in Ihr Produktionssystem.
-1. Öffnen Sie `env.php` in einem Texteditor und ändern Sie die erforderlichen Werte (z. B. Informationen zur Datenbankverbindung).
-1. Führen Sie den Befehl [`magento config:set`](../cli/set-configuration-values.md) oder [`magento config:set-sensitive`](../cli/set-configuration-values.md) aus, um die Werte aller systemspezifischen bzw. sensiblen Konfigurationswerte festzulegen.
+1. Öffnen Sie `env.php` in einem Texteditor und ändern Sie die erforderlichen Werte (z. B. Datenbankverbindungsinformationen).
+1. Führen Sie den Befehl [`magento config:set`](../cli/set-configuration-values.md) oder [`magento config:set-sensitive`](../cli/set-configuration-values.md) aus, um die Werte der systemspezifischen bzw. sensiblen Konfigurationswerte festzulegen.
 
-   Im folgenden Abschnitt finden Sie ein Beispiel.
+   Der folgende Abschnitt zeigt ein Beispiel.
 
 ## Festlegen von Konfigurationswerten in Ihrem Produktionssystem
 
-In diesem Abschnitt wird beschrieben, wie Sie mithilfe des Befehls `magento config:sensitive:set` sensible Werte in Ihrem Produktionssystem festlegen.
+In diesem Abschnitt wird beschrieben, wie Sie mithilfe des `magento config:sensitive:set`-Befehls sensible Werte auf Ihrem Produktionssystem festlegen.
 
-So legen Sie sensible Werte fest:
+So legen Sie vertrauliche Werte fest:
 
-1. Suchen Sie einen Wert, der mithilfe der [sensiblen Wertreferenz](../reference/config-reference-sens.md) festgelegt werden soll.
-1. Notieren Sie den Konfigurationspfad für die Einstellung.
-1. Melden Sie sich beim Produktionssystem als Eigentümer des Dateisystems an oder wechseln Sie zu ihm.
-1. Wechseln Sie zum Installationsordner von Commerce.
+1. Suchen Sie einen Wert, der mithilfe der [Referenz für vertrauliche Werte“ festgelegt ](../reference/config-reference-sens.md) soll.
+1. Notieren Sie den Konfigurationspfad für die Einstellung .
+1. Melden Sie sich beim Produktionssystem als Eigentümer an oder wechseln Sie zum Dateisystembesitzer.
+1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie den folgenden Befehl ein:
 
    ```bash
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
-   Um beispielsweise den Wert des YouTube-API-Schlüssels auf `1234` festzulegen, geben Sie
+   Um beispielsweise den Wert des YouTube-API-Schlüssels auf `1234` festzulegen, geben Sie Folgendes ein
 
    ```bash
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
-   Sie können auch einen oder mehrere Werte wie folgt interaktiv festlegen:
+   Sie können einen oder mehrere Werte auch interaktiv wie folgt festlegen:
 
    ```bash
    bin/magento config:sensitive:set -i
    ```
 
-   Wenn Sie dazu aufgefordert werden, geben Sie für jede sensible Einstellung einen Wert ein oder drücken Sie die Eingabetaste , um einen Wert zu überspringen und zur nächsten zu wechseln.
+   Wenn Sie dazu aufgefordert werden, geben Sie für jede vertrauliche Einstellung einen Wert ein oder drücken Sie die Eingabetaste , um einen Wert zu überspringen und zur nächsten Einstellung zu wechseln.
 
-1. Um zu überprüfen, ob der Wert festgelegt wurde, melden Sie sich beim Administrator an.
-1. Suchen Sie die Einstellung in der Admin-Konsole.
+1. Um sicherzustellen, dass der Wert festgelegt wurde, melden Sie sich beim Administrator an.
+1. Suchen Sie die Einstellung im Admin-Bereich.
 
-   Beispielsweise befindet sich die YouTube-API-Schlüsseleinstellung unter &quot;**Stores**&quot;> &quot;Einstellungen&quot;> &quot;**Konfiguration**&quot;> &quot;**Katalog**&quot;> &quot;**Katalog**&quot;> &quot;**Produktvideo**&quot;.
+   Die Einstellung für den YouTube-API-Schlüssel befindet sich beispielsweise unter **Stores** > Settings > **Configuration** > **Catalog** > **Catalog** > **Product Video**.
 
-   Die Einstellung wird im Admin angezeigt und kann nicht bearbeitet werden. Die folgende Abbildung zeigt ein Beispiel.
+   Die Einstellung wird in Admin angezeigt und kann nicht bearbeitet werden. Die folgende Abbildung zeigt ein Beispiel.
 
-   ![Sensitive Einstellung in Admin](../../assets/configuration/sensitive-set.png)
+   ![Sensitive-Einstellung in der Admin-](../../assets/configuration/sensitive-set.png)

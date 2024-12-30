@@ -1,6 +1,6 @@
 ---
-title: Verwenden Sie gecacht für die Sitzungsspeicherung
-description: Erfahren Sie mehr über die Verwendung von Memcached für die Speicherung von Commerce-Sitzungen.
+title: Memcached für Sitzungsspeicherung verwenden
+description: Erfahren Sie mehr über die Verwendung von memcached für die Commerce-Sitzungsspeicherung.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# Verwenden Sie gecacht für die Sitzungsspeicherung
+# Memcached für Sitzungsspeicherung verwenden
 
-Das gecachete Speichersystem ist ein allgemeines Speicherzwischenspeichersystem. Es wird häufig verwendet, um dynamische datenbankbasierte Websites zu beschleunigen, indem Daten und Objekte im RAM zwischengespeichert werden, um die Häufigkeit zu reduzieren, mit der eine externe Datenquelle (z. B. eine Datenbank oder API) gelesen werden muss.
+Memcached ist ein universelles, verteiltes Speicher-Caching-System. Es wird häufig verwendet, um dynamische datenbankgesteuerte Websites zu beschleunigen, indem Daten und Objekte im RAM zwischengespeichert werden, um die Anzahl der Lesevorgänge für eine externe Datenquelle (z. B. eine Datenbank oder API) zu reduzieren.
 
-Die zwischengespeicherten Dateien bieten eine große Hash-Tabelle, die auf mehrere Computer verteilt werden kann. Wenn die Tabelle voll ist, führen nachfolgende Einfügungen dazu, dass ältere Daten in der zuletzt verwendeten Reihenfolge (LRU) gelöscht werden. Dieser Hash-Tisch ist oft sehr groß. (Source: [memcached.org](https://www.memcached.org/))
+Memcached bietet eine große Hash-Tabelle, die auf mehrere Computer verteilt werden kann. Wenn die Tabelle voll ist, führen nachfolgende Einfügungen dazu, dass ältere Daten in der Reihenfolge der am wenigsten verwendeten (LRU) bereinigt werden. Die Größe dieser Hash-Tabelle ist häufig sehr groß. (Source: [memcached.org](https://www.memcached.org/))
 
-Commerce verwendet die Zwischenspeicherung für die Sitzungsspeicherung, nicht aber für die Seiten-Zwischenspeicherung. Für die Zwischenspeicherung von Seiten empfehlen wir [Redis](../cache/redis-pg-cache.md) oder [Varnish](../cache/config-varnish.md).
+Commerce verwendet memcached für die Sitzungsspeicherung, aber nicht für die Seitenzwischenspeicherung. Für das Zwischenspeichern von Seiten empfehlen wir [Redis](../cache/redis-pg-cache.md) oder [Varnish](../cache/config-varnish.md).
 
-**So konfigurieren Sie Commerce für die Verwendung von gecached**:
+**So konfigurieren Sie Commerce für die Verwendung von memcached**:
 
 1. Öffnen Sie `<your install dir>/app/etc/env.php` in einem Texteditor.
 1. Suchen Sie Folgendes:
@@ -40,27 +40,27 @@ Commerce verwendet die Zwischenspeicherung für die Sitzungsspeicherung, nicht a
    ),
    ```
 
-   gecacht hat optionale Startparameter, die über den Rahmen dieses Handbuchs hinausgehen. Weitere Informationen dazu finden Sie in der Dokumentation zu [memcached](https://www.php.net/manual/en/memcached.sessions.php), im Quellcode und in den Änderungsprotokollen.
+   Memcached verfügt über optionale Startparameter, die den Rahmen dieses Handbuchs sprengen. Weitere Informationen dazu finden Sie in der [memcached](https://www.php.net/manual/en/memcached.sessions.php)-Dokumentation, im Quell-Code und in den Änderungsprotokollen.
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
-**So überprüfen Sie, ob die zwischengespeicherten Daten mit Commerce** funktionieren:
+**So überprüfen Sie, ob memcached mit Commerce funktioniert**:
 
-1. Löschen Sie den Inhalt der folgenden Ordner unter Ihrem Commerce-Installationsordner:
+1. Löschen Sie den Inhalt der folgenden Ordner unter Ihrem Commerce-Installationsverzeichnis:
 
    ```bash
    rm -rf var/cache/* var/page_cache/* var/session/*
    ```
 
-1. Navigieren Sie zu einer beliebigen Seite in der Storefront.
+1. Zu einer beliebigen Seite der Storefront gehen.
 
-1. Melden Sie sich beim Administrator an und navigieren Sie zu mehreren Seiten.
+1. Melden Sie sich bei Admin an und navigieren Sie zu mehreren Seiten.
 
-   Wenn keine Fehler angezeigt werden, gratulieren! Memcached funktioniert! Sie können sich optional den zwischengespeicherten Speicher ansehen, wie im nächsten Schritt beschrieben wird.
+   Wenn keine Fehler angezeigt werden, herzlichen Glückwunsch! Memcached funktioniert! Optional können Sie sich den memcached-Speicher ansehen, wie im nächsten Schritt beschrieben.
 
-   Wenn Fehler angezeigt werden (z. B. HTTP 500 (Interner Server-Fehler), aktivieren Sie den Entwicklermodus und diagnostizieren Sie das Problem. Stellen Sie sicher, dass die zwischengespeicherten Dateien ausgeführt und ordnungsgemäß konfiguriert werden und `env.php` keine Syntaxfehler aufweist.
+   Wenn Fehler angezeigt werden (z. B. HTTP 500 (Interner Server-Fehler), aktivieren Sie den Entwicklermodus und diagnostizieren Sie das Problem. Stellen Sie sicher, dass memcached ausgeführt und ordnungsgemäß konfiguriert wird und dass `env.php` keine Syntaxfehler aufweist.
 
-1. (Optional.) Verwenden Sie Telnet, um sich den zwischengespeicherten Speicher anzusehen.
+1. (Optional) Verwenden Sie Telnet, um einen Blick auf den Memcached-Speicher zu werfen.
 
    ```bash
    telnet <memcached host or ip> <memcached port>
@@ -70,7 +70,7 @@ Commerce verwendet die Zwischenspeicherung für die Sitzungsspeicherung, nicht a
    stats items
    ```
 
-   Die Ergebnisse weisen folgendes Format auf:
+   Die Ergebnisse werden in etwa wie folgt angezeigt:
 
    ```
    STAT items:3:number 1

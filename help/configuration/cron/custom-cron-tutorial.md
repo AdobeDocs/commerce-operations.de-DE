@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierten Cron-Auftrag und eine Cron-Gruppe konfigurieren (Tutorial)
+title: Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer benutzerdefinierten Cron-Gruppe (Tutorial)
 description: Verwenden Sie dieses Schritt-für-Schritt-Tutorial, um einen benutzerdefinierten Cron-Auftrag zu erstellen.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
@@ -9,51 +9,51 @@ ht-degree: 0%
 
 ---
 
-# Benutzerdefinierten Cron-Auftrag konfigurieren
+# Konfigurieren eines benutzerdefinierten Cron-Auftrags
 
-In diesem Schritt-für-Schritt-Tutorial erfahren Sie, wie Sie einen benutzerdefinierten Cron-Auftrag und optional eine Cron-Gruppe in einem Beispielmodul erstellen. Sie können ein bereits vorhandenes Modul verwenden oder ein Beispielmodul aus unserem [`magento2-samples`-Repository][samples] verwenden.
+Dieses Schritt-für-Schritt-Tutorial zeigt, wie Sie einen benutzerdefinierten Cron-Auftrag und optional eine Cron-Gruppe in einem Beispielmodul erstellen. Sie können ein Modul verwenden, das Sie bereits haben, oder Sie können ein Beispielmodul aus unserem [`magento2-samples` Repository verwenden][samples].
 
-Wenn Sie den Cron-Auftrag ausführen, wird der Tabelle `cron_schedule` eine Zeile mit dem Namen des Cron-Auftrags, `custom_cron`, hinzugefügt.
+Das Ausführen des Cron-Vorgangs führt dazu, dass der `cron_schedule`-Tabelle eine Zeile mit dem Namen des Cron-Vorgangs `custom_cron` hinzugefügt wird.
 
 Wir zeigen Ihnen auch, wie Sie optional eine Cron-Gruppe erstellen, mit der Sie benutzerdefinierte Cron-Aufträge mit anderen Einstellungen als den Standardeinstellungen der Commerce-Anwendung ausführen können.
 
 In diesem Tutorial gehen wir von Folgendem aus:
 
-- Die Commerce-Anwendung wird in `/var/www/html/magento2` installiert.
-- Ihr Benutzername und Kennwort für die Commerce-Datenbank lauten jeweils `magento`
-- Sie führen alle Aktionen als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) aus.
+- Die Commerce-Anwendung wird in `/var/www/html/magento2` installiert
+- Benutzername und Kennwort für die Commerce-Datenbank sind beide `magento`
+- Sie führen alle Aktionen als [Dateisystemeigentümer“ ](../../installation/prerequisites/file-system/overview.md)
 
 ## Schritt 1: Abrufen eines Beispielmoduls
 
-Um einen benutzerdefinierten Cron-Auftrag einzurichten, benötigen Sie ein Beispielmodul. Wir empfehlen das Modul `magento-module-minimal` .
+Um einen benutzerdefinierten Cron-Auftrag einzurichten, benötigen Sie ein Beispielmodul. Wir empfehlen das Modul `magento-module-minimal`.
 
-Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Überspringen Sie diesen Schritt und den nächsten Schritt und fahren Sie mit Schritt 3: Erstellen Sie eine Klasse zum Ausführen von Cron fort.
+Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Überspringen Sie diesen Schritt und den nächsten Schritt und fahren Sie mit Schritt 3: Erstellen einer Klasse zum Ausführen von Cron fort.
 
-**So rufen Sie ein Beispielmodul ab:**
+**So rufen Sie ein Beispielmodul**:
 
-1. Melden Sie sich bei Ihrem Commerce-Server als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
-1. Wechseln Sie in einen Ordner, der sich nicht im Stammordner der Commerce-Anwendung befindet (z. B. in Ihrem Basisverzeichnis).
+1. Melden Sie sich bei Ihrem Commerce-Server als oder wechseln Sie zum [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).
+1. Wechseln Sie in einen Ordner, der sich nicht im Stammverzeichnis der Commerce-Anwendung befindet (z. B. den Basisordner).
 1. Klonen Sie das [`magento2-samples` Repository][samples].
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Wenn der Befehl mit dem Fehler `Permission denied (publickey).` fehlschlägt, müssen Sie Ihren öffentlichen SSH-Schlüssel zu GitHub.com][git-ssh] hinzufügen.[
+   Wenn der Befehl mit der `Permission denied (publickey).` fehlschlägt, müssen Sie [Ihren öffentlichen SSH-Schlüssel zu GitHub.com hinzufügen][git-ssh].
 
-1. Erstellen Sie einen Ordner, in den der Beispielcode kopiert werden soll:
+1. Erstellen Sie ein Verzeichnis, in das der Beispiel-Code kopiert werden soll:
 
    ```bash
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
-1. Kopieren Sie den Beispielmodulcode:
+1. Kopieren Sie den Beispiel-Modul-Code:
 
    ```bash
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
-1. Überprüfen Sie die kopierten Dateien ordnungsgemäß:
+1. Überprüfen Sie, ob die Dateien ordnungsgemäß kopiert wurden:
 
    ```bash
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
@@ -73,7 +73,7 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
    drwxrwsr-x.   3 magento_user apache  4096 Oct 30 13:19 Test
    ```
 
-1. Aktualisieren Sie die Commerce-Datenbank und das Schema:
+1. Aktualisieren Sie die Commerce-Datenbank und das -Schema:
 
    ```bash
    bin/magento setup:upgrade
@@ -85,7 +85,7 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
    bin/magento cache:clean
    ```
 
-## Schritt 2: Testmodul überprüfen
+## Schritt 2: Überprüfen des Beispielmoduls
 
 Bevor Sie fortfahren, überprüfen Sie, ob das Beispielmodul registriert und aktiviert ist.
 
@@ -103,21 +103,21 @@ Bevor Sie fortfahren, überprüfen Sie, ob das Beispielmodul registriert und akt
 
 >[!TIP]
 >
->Wenn die Ausgabe anzeigt, dass der `Module does not exist`, überprüfen Sie sorgfältig den [Schritt 1](#step-1-get-a-sample-module). Stellen Sie sicher, dass sich Ihr Code im richtigen Verzeichnis befindet. Rechtschreibung und Groß-/Kleinschreibung sind wichtig. Wenn etwas Anderes ist, wird das Modul nicht geladen. Vergessen Sie nicht, `magento setup:upgrade` auszuführen.
+>Wenn die Ausgabe anzeigt, dass die `Module does not exist`, überprüfen Sie [Schritt 1](#step-1-get-a-sample-module) sorgfältig. Stellen Sie sicher, dass sich Ihr Code im richtigen Verzeichnis befindet. Wichtig sind Rechtschreibung und Groß-/Kleinschreibung. Wenn etwas anders ist, wird das Modul nicht geladen. Vergessen Sie auch nicht, `magento setup:upgrade` auszuführen.
 
-## Schritt 3: Erstellen einer Klasse zum Ausführen von Cron
+## Schritt 3: Erstellen Sie eine Klasse, um Cron auszuführen
 
-Dieser Schritt zeigt eine einfache Klasse zum Erstellen eines Cron-Auftrags. Die Klasse schreibt nur eine Zeile in die Tabelle `cron_schedule` , die bestätigt, dass sie erfolgreich eingerichtet wurde.
+Dieser Schritt zeigt eine einfache Klasse zum Erstellen eines Cron-Auftrags. Die Klasse schreibt nur eine Zeile in die `cron_schedule`, die bestätigt, dass sie erfolgreich eingerichtet wurde.
 
 So erstellen Sie eine Klasse:
 
-1. Erstellen Sie einen Ordner für die Klasse und ändern Sie ihn in diesen Ordner:
+1. Erstellen Sie ein Verzeichnis für die Klasse und wechseln Sie in dieses Verzeichnis:
 
    ```bash
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
-1. Es wurde eine Datei mit dem Namen `Test.php` in diesem Verzeichnis mit folgendem Inhalt erstellt:
+1. Eine Datei mit dem Namen `Test.php` in diesem Verzeichnis mit folgendem Inhalt wurde erstellt:
 
    ```php
    <?php
@@ -143,11 +143,11 @@ So erstellen Sie eine Klasse:
    }
    ```
 
-## Schritt 4: Erstellen Sie `crontab.xml`
+## Schritt 4: `crontab.xml` erstellen
 
-Die Datei `crontab.xml` legt einen Zeitplan fest, um Ihren benutzerdefinierten Cron-Code auszuführen.
+Die `crontab.xml`-Datei legt einen Zeitplan für die Ausführung Ihres benutzerdefinierten Cron-Codes fest.
 
-Erstellen Sie `crontab.xml` wie folgt im Verzeichnis `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc` :
+Erstellen Sie `crontab.xml` wie folgt im `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc`:
 
 ```xml
 <?xml version="1.0"?>
@@ -160,9 +160,9 @@ Erstellen Sie `crontab.xml` wie folgt im Verzeichnis `/var/www/html/magento2/app
 </config>
 ```
 
-Die vorherige `crontab.xml` führt die `Magento/SampleMinimal/Cron/Test.php`-Klasse einmal pro Minute aus, was dazu führt, dass der `cron_schedule`-Tabelle eine Zeile hinzugefügt wird.
+Im vorherigen `crontab.xml` wird die `Magento/SampleMinimal/Cron/Test.php`-Klasse einmal pro Minute ausgeführt, sodass der `cron_schedule`-Tabelle eine Zeile hinzugefügt wird.
 
-Verwenden Sie den Konfigurationspfad Ihres Systemkonfigurationsfelds, damit der Cron-Zeitplan vom Administrator aus konfiguriert werden kann.
+Um den Cron-Zeitplan über den Administrator konfigurierbar zu machen, verwenden Sie den Konfigurationspfad Ihres Systemkonfigurationsfelds.
 
 ```xml
 <?xml version="1.0"?>
@@ -175,9 +175,9 @@ Verwenden Sie den Konfigurationspfad Ihres Systemkonfigurationsfelds, damit der 
 </config>
 ```
 
-Dabei ist `system/config/path` ein in `etc/adminhtml/system.xml` eines Moduls definierter Systemkonfigurationspfad.
+Dabei ist `system/config/path` ein Systemkonfigurationspfad, der `etc/adminhtml/system.xml` eines Moduls definiert ist.
 
-## Schritt 5: Kompilieren und Bereinigen des Cache
+## Schritt 5: Kompilieren und Cache leeren
 
 Kompilieren Sie den Code mit diesem Befehl:
 
@@ -185,32 +185,32 @@ Kompilieren Sie den Code mit diesem Befehl:
 bin/magento setup:di:compile
 ```
 
-Löschen Sie den Cache mit diesem Befehl:
+Bereinigen Sie den Cache mit diesem Befehl:
 
 ```bash
 bin/magento cache:clean
 ```
 
-## Schritt 6: Überprüfen des Cron-Auftrags
+## Schritt 6: Cron-Auftrag überprüfen
 
-Dieser Schritt zeigt, wie Sie den benutzerdefinierten Cron-Auftrag mithilfe einer SQL-Abfrage in der Datenbanktabelle `cron_schedule` erfolgreich überprüfen können.
+Dieser Schritt zeigt, wie Sie den benutzerdefinierten Cron-Auftrag mithilfe einer SQL-Abfrage in der `cron_schedule` Datenbanktabelle erfolgreich überprüfen.
 
-Überprüfen von Cron:
+Cron überprüfen:
 
-1. Ausführen von Commerce-Cron-Aufträgen:
+1. Commerce Cron-Aufträge ausführen:
 
    ```bash
    bin/magento cron:run
    ```
 
-1. Geben Sie den Befehl `magento cron:run` zwei- oder dreimal ein.
+1. Geben Sie den `magento cron:run`-Befehl zwei- oder dreimal ein.
 
    Wenn Sie den Befehl zum ersten Mal eingeben, werden Aufträge in die Warteschlange gestellt. Anschließend werden die Cron-Aufträge ausgeführt. Sie müssen den Befehl _mindestens_ zweimal eingeben.
 
 1. Führen Sie die SQL-Abfrage `SELECT * from cron_schedule WHERE job_code like '%custom%'` wie folgt aus:
 
    1. `mysql -u magento -p` eingeben
-   1. Geben Sie an der Eingabeaufforderung `mysql>` den Wert `use magento;` ein.
+   1. Geben Sie an der `mysql>` Eingabeaufforderung `use magento;`
    1. `SELECT * from cron_schedule WHERE job_code like '%custom%';` eingeben
 
       Das Ergebnis sollte in etwa wie folgt aussehen:
@@ -226,37 +226,37 @@ Dieser Schritt zeigt, wie Sie den benutzerdefinierten Cron-Auftrag mithilfe eine
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       ```
 
-1. (Optional) Stellen Sie sicher, dass die Meldungen in das Systemprotokoll von Commerce geschrieben werden:
+1. (Optional) Überprüfen Sie, ob Meldungen in das Systemprotokoll von Commerce geschrieben werden:
 
    ```bash
    cat /var/www/html/magento2/var/log/system.log
    ```
 
-   Sie sollten einen oder mehrere Einträge wie den folgenden sehen:
+   Es sollte mindestens ein Eintrag wie der folgende angezeigt werden:
 
    ```
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
-   Diese Meldungen stammen aus der `execute` -Methode in `Test.php`:
+   Diese Nachrichten stammen von der `execute`-Methode in `Test.php`:
 
    ```php
    public function execute() {
         $this->logger->info('Cron Works');
    ```
 
-Wenn der SQL-Befehl und das Systemprotokoll keine Einträge enthalten, führen Sie den Befehl `magento cron:run` mehrmals aus und warten Sie. Es kann einige Zeit dauern, bis die Datenbank aktualisiert wird.
+Wenn der SQL-Befehl und das Systemprotokoll keine Einträge enthalten, führen Sie den `magento cron:run`-Befehl noch einige Male aus und warten Sie. Es kann einige Zeit dauern, bis die Datenbank aktualisiert wird.
 
-## Schritt 7 (optional): Einrichten einer benutzerdefinierten Cron-Gruppe
+## Schritt 7 (optional): Eine benutzerdefinierte Cron-Gruppe einrichten
 
-Dieser Schritt zeigt, wie Sie optional eine benutzerdefinierte Cron-Gruppe einrichten. Sie sollten eine benutzerdefinierte Cron-Gruppe einrichten, wenn Sie möchten, dass Ihr benutzerdefinierter Cron-Auftrag unter einem anderen Zeitplan ausgeführt wird als andere Cron-Aufträge (normalerweise einmal pro Minute) oder wenn Sie möchten, dass mehrere benutzerdefinierte Cron-Aufträge mit unterschiedlichen Einstellungen ausgeführt werden.
+Dieser Schritt zeigt, wie Sie optional eine benutzerdefinierte Cron-Gruppe einrichten. Sie sollten eine benutzerdefinierte Cron-Gruppe einrichten, wenn Sie möchten, dass Ihr benutzerdefinierter Cron-Auftrag nach einem anderen Zeitplan ausgeführt wird als andere Cron-Aufträge (in der Regel einmal pro Minute) oder wenn Sie möchten, dass mehrere benutzerdefinierte Cron-Aufträge mit unterschiedlichen Einstellungen ausgeführt werden.
 
 So richten Sie eine benutzerdefinierte Cron-Gruppe ein:
 
 1. Öffnen Sie `crontab.xml` in einem Texteditor.
 1. `<group id="default">` in `<group id="custom_crongroup">` ändern
 1. Beenden Sie den Texteditor.
-1. Erstellen Sie `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` mit dem folgenden Inhalt:
+1. Erstellen Sie `/var/www/html/magento2/app/code/Magento/SampleMinimal/etc/cron_groups.xml` mit folgendem Inhalt:
 
    ```xml
    <?xml version="1.0"?>
@@ -273,15 +273,15 @@ So richten Sie eine benutzerdefinierte Cron-Gruppe ein:
    </config>
    ```
 
-Eine Beschreibung der Bedeutung der Optionen finden Sie unter [Anpassen der Crons-Referenz](custom-cron-reference.md).
+Eine Beschreibung der Bedeutung der Optionen finden Sie unter [Anpassen der Cron-Referenz](custom-cron-reference.md).
 
-## Schritt 8: Überprüfen der benutzerdefinierten Cron-Gruppe
+## Schritt 8: Überprüfen Sie Ihre benutzerdefinierte Cron-Gruppe
 
-Dieser Schritt _optional_ zeigt, wie Sie Ihre benutzerdefinierte Cron-Gruppe mithilfe des Administrators überprüfen können.
+Dieser _optionale_ Schritt zeigt, wie Sie Ihre benutzerdefinierte Cron-Gruppe mit dem Administrator überprüfen können.
 
-Überprüfen der benutzerdefinierten Cron-Gruppe:
+So überprüfen Sie Ihre benutzerdefinierte Cron-Gruppe:
 
-1. Führen Sie Commerce-Cron-Aufträge für Ihre benutzerdefinierte Gruppe aus:
+1. Ausführen von Commerce-Cron-Aufträgen für Ihre benutzerdefinierte Gruppe:
 
    ```bash
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
@@ -295,9 +295,9 @@ Dieser Schritt _optional_ zeigt, wie Sie Ihre benutzerdefinierte Cron-Gruppe mit
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 
-1. Melden Sie sich bei Admin als Administrator an.
+1. Melden Sie sich bei Admin als Admin an.
 1. Klicken Sie auf **Stores** > **Einstellungen** > **Konfiguration** > **Erweitert** > **System**.
-1. Erweitern Sie im rechten Bereich den Eintrag **Cron**.
+1. Erweitern Sie im rechten Bereich **Cron**.
 
    Ihre Cron-Gruppe wird wie folgt angezeigt:
 

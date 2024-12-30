@@ -1,6 +1,6 @@
 ---
 title: Best Practices für die Katalogverwaltung
-description: Erfahren Sie mehr über Empfehlungen zum Konfigurieren von Warenkorbbeschränkungen und Produktattributen, zum Auflisten von Paginierung, Optionen, Promotions und Varianten.
+description: Erfahren Sie mehr über Empfehlungen zum Konfigurieren von Limits für den Warenkorb und Produktattributen, zur Listennummerierung, zu Optionen, zu Promotions und zu Varianten.
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
@@ -13,96 +13,96 @@ ht-degree: 0%
 
 # Best Practices für die Katalogverwaltung
 
-Die hier beschriebenen Best Practices für die Katalogverwaltung decken eine Reihe von Problemen ab, darunter (aber nicht beschränkt auf):
+Die hier beschriebenen Best Practices für die Katalogverwaltung decken eine Reihe von Problemen ab, darunter (aber nicht nur):
 
-- Begrenzung des Warenkorbs
+- Warenkorbbeschränkungen
 - Kategorienbeschränkungen
 - Produktattribute
-- Paginierung von Produktlisten
+- Seitenumbruch für Produktliste
 - Produktoptionen
 - Produktvarianten
 - Promotions
 
-## Begrenzung des Warenkorbs
+## Warenkorbbeschränkungen
 
-Um eine optimale Leistung zu erzielen, sollten Sie die folgenden Richtlinien verwenden, um die Einschränkungen des Warenkorbs für Adobe Commerce zu verwalten.
+Um eine optimale Leistung zu erzielen, verwenden Sie die folgenden Richtlinien, um Warenkorbbeschränkungen für Adobe Commerce zu verwalten.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
-### Verringerung der Anzahl der Artikel im Warenkorb
+### Anzahl der Artikel im Warenkorb reduzieren
 
 Verwenden Sie die folgenden Strategien, um die Anzahl der Artikel im Warenkorb zu verwalten
 
-- Aufteilen von Bestellungen in mehrere kleinere Bestellungen mit einer kleineren Anzahl von Zeilen mithilfe der Funktion [!UICONTROL Add Item by SKU] .
+- Mithilfe der [!UICONTROL Add Item by SKU]-Funktion können Sie Bestellungen in mehrere kleinere Bestellungen mit einer kleineren Anzahl von Zeilen aufteilen.
 - Fügen Sie nur die benutzerdefinierte Logik und die Anpassung des Warenkorbs hinzu, die zum Laden einer Liste von Elementen erforderlich sind.
 
 ## Kategorienbeschränkungen
 
-Die Konfiguration einer großen Anzahl von Kategorien kann sich auf die Leistung auswirken.
+Die Konfiguration einer großen Anzahl von Kategorien kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
-### Verringerung der Produktanzahl
+### Anzahl der Produkte reduzieren
 
-Verwenden Sie die folgenden Strategien, um die Anzahl der Kategorien zu reduzieren:
+Verwenden Sie die folgenden Strategien, um die Anzahl der Kategorien zu verringern:
 
-- Verwalten einzigartiger Produktfunktionen über Attribute und benutzerdefinierte Optionen
+- Verwalten eindeutiger Produktfunktionen durch Attribute und benutzerdefinierte Optionen
 - Inaktive Kategorien entfernen
 - Optimieren der Katalogtiefe in der Navigation
 
 ## Produktattribute
 
-Das Konfigurieren zu vieler Produktattribute oder Produktattributoptionen kann sich auf die Leistung auswirken.
+Die Konfiguration zu vieler Produktattribute oder Produktattributoptionen kann die Leistung beeinträchtigen.
 
 >[!NOTE]
 >
->Produktattribute geben Funktionen an, die global für alle Produkte gelten. Produktattributoptionen sind Anpassungen, um Funktionen anzugeben, die für bestimmte Produkte gelten.
+>Produktattribute geben Funktionen an, die global für alle Produkte gelten. Produktattributoptionen sind Anpassungen zum Festlegen von Funktionen, die für bestimmte Produkte gelten.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
 ### Anzahl der Attribute reduzieren
 
-Für eine optimale Leistung bei der Verwaltung von Produkten über den Administrator und beim Abrufen von Produktdaten im Storefront:
+Für optimale Leistung bei der Verwaltung von Produkten über die Admin-Benutzeroberfläche und beim Abrufen von Produktdaten in der Storefront:
 
 - Verwenden Sie verschiedene Produktvorlagen (Attributsätze) für verschiedene Produkte.
-- Nutzen benutzerdefinierter Optionen und komplexer Produkte für die Variantenverwaltung
+- Nutzung benutzerdefinierter Optionen und komplexer Produkte für das Variantenmanagement
 - Minimieren Sie die Anzahl der durchsuchbaren Attribute.
 - Entfernen Sie nicht verwendete Produkteigenschaften.
-- Speichern und verwalten Sie nicht Commerce-bezogene Attribute in externen Produktverwaltungssystemen (PMS).
+- Speichern und verwalten Sie nicht-Commerce-bezogene Attribute in externen Produktmanagementsystemen (PMS).
 
-### Verringerung der Anzahl der Attributoptionen
+### Anzahl der Attributoptionen reduzieren
 
-Für eine optimale Leistung bei der Verwaltung von Produkten über den Administrator und beim Abrufen von Produktdaten im Storefront:
+Für optimale Leistung bei der Verwaltung von Produkten über die Admin-Benutzeroberfläche und beim Abrufen von Produktdaten in der Storefront:
 
-- Verwenden Sie verschiedene Variantenmechanismen, um Produkte zu erstellen: komplexe Produkte, benutzerdefinierte Optionen als Quelle für Produktvarianten.
-- Erstellen Sie spezifische Produktvorlagen mit Zielgruppenattributen und Optionen, um generalisierte Produktvorlagen und Optionscontainer zu vermeiden.
-- Verwalten Sie eine Liste der tatsächlichen Attributoptionen.
+- Verwenden Sie verschiedene Variationsmechanismen, um Produkte zu erstellen: komplexe Produkte, benutzerdefinierte Optionen als Quelle von Produktvarianten.
+- Erstellen Sie spezifische Produktvorlagen mit Zielgruppenattributen und Optionen, um allgemeine Produktvorlagen und Optionscontainer zu vermeiden.
+- Eine Liste der tatsächlichen Attributoptionen verwalten.
 - Verwalten Sie Produktinformationen über ein externes Produktverwaltungssystem (PMS).
 
-### Verringern der Anzahl der Attributsätze
+### Anzahl der Attributsätze reduzieren
 
 Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
-#### Konfiguration der Attributsätze überprüfen
+#### Konfiguration des Attributsatzes überprüfen
 
-1. [Verbindung zur Site-Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Verbindung zur Website-Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
-1. Anzahl der Attributsätze mit MySQL suchen
+1. Ermitteln der Anzahl der Attributsätze mit MySQL
 
    ```sql
    SELECT COUNT(*) AS 'attribute_set' FROM *${TABLE_PREFIX}*eav_attribute_set;
@@ -110,155 +110,155 @@ Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
 1. Entfernen Sie alle nicht verwendeten Attributsätze.
 
-### Potenzielle Auswirkung auf die Leistung
+### Potenzielle Auswirkungen auf die Leistung
 
-Durch die Konfiguration vieler **Produktattribute** wird die Produktvorlagengröße für jedes Produkt (EAV-Struktur) und die Datenmenge, die abgerufen werden muss, erhöht. Dieser Anstieg wirkt sich auf Vorgänge wie folgt aus:
+Durch die Konfiguration **Produktattribute** die Größe der Produktvorlage für jedes Produkt (EAV-Struktur) und die Menge der abzurufenden Daten erhöht. Dieser Anstieg wirkt sich wie folgt auf Vorgänge aus:
 
-- Erhöhung des Traffics von SQL-Abfragen im Zusammenhang mit dem Abrufen von EAV-Daten und der Menge der verarbeiteten Daten, was zu einem geringeren DB-Durchsatz führt
+- Anstieg des SQL-Traffics bei Abfragen im Zusammenhang mit dem EAV-Datenabruf und der Menge an verarbeiteten Daten, was zu einem verringerten DB-Durchsatz führt
 - Deutliche Vergrößerung der Adobe Commerce-Indizes und des Volltextsuchindex
-- Erreichen von MySQL-Einschränkungen bei der Erstellung eines FLAT-Index für überdimensionierte Produktvorlagen und deren Unfähigkeit, diesen zu verwenden
+- Erzielen von harten MySQL-Beschränkungen beim Erstellen eines FLAT-Index für übergroße Produktvorlagen und Unfähigkeit, ihn zu verwenden
 
-Erhöhungen von Produktdaten und Indexgrößen können die Site-Performance auf folgende Weise beeinflussen:
+Steigende Produktdaten und Indexgrößen können sich auf folgende Weise auf die Site-Performance auswirken:
 
-- Verbesserte Reaktionszeit für die meisten Storefront-Szenarien im Zusammenhang mit Katalogsuche, Suche (schnell und erweitert) und Navigation auf mehreren Ebenen.
-- Produktverwaltungsvorgänge in der Admin-Konsole verlangsamen sich erheblich, was zu Timeouts führen kann.
-- Die Funktion für Massenaktionen von Produkten kann blockiert werden.
-- Die Neuerstellungszeit von Indizes für mittelgroße und große Kataloge kann aufgrund langer Ausführungszeiten nicht täglich ausgeführt werden.
+- Erhöhte Reaktionszeit für die meisten Storefront-Szenarien im Zusammenhang mit Katalogbrowsen, Suche (schnell und erweitert) und mehrschichtiger Navigation.
+- Produktverwaltungsvorgänge in der Admin-Instanz verlangsamen sich erheblich, was zu Zeitüberschreitungen führen kann.
+- Die Funktion für Produkt-Massenaktionen kann blockiert werden.
+- Die Zeit für die Neuerstellung von Indizes für mittelgroße und große Kataloge kann aufgrund der langen Ausführungszeiten nicht täglich ausgeführt werden.
 
-Die Konfiguration vieler **Attributoptionen** kann die Site-Leistung auf folgende Weise beeinflussen:
+Die Konfiguration vieler **Attributoptionen** kann die Site-Leistung auf folgende Weise beeinträchtigen:
 
-- Lange Anforderungs- und Wiedergabezeiten für Produktdetails (PDP) und Kategorieseiten mit komplexen Produkten.
-- Die Reaktionszeit von Vorgängen zur Produktspeicherung für Administratoren erhöht sich über den optimalen Leistungszielen.
-- Verkürzen Sie die Wiedergabedauer des Formulars für die Produktbearbeitung.
+- Lange Anfrage- und Rendering-Zeiten für Produktdetailseiten (PDP) und Kategorieseiten mit komplexen Produkten.
+- Die Reaktionszeit von Admin-Produktspeichervorgängen erhöht sich über die optimalen Leistungsziele hinaus.
+- Verkürzen der Rendering-Zeit für die Produktbearbeitung.
 - Langsamer Checkout.
 
 ## Produktoptionen
 
-Die Konfiguration zu vieler Produktoptionen pro Produkt kann sich auf die Leistung auswirken.
+Die Konfiguration zu vieler Produktoptionen pro Produkt kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
 ### Anzahl der Optionen reduzieren
 
 Verwenden Sie die folgenden Strategien, um die Anzahl der Produktoptionen pro Produkt zu reduzieren:
 
 - Konfigurieren Sie komplexe Produkte und benutzerdefinierte Optionen als Quelle für Produktvarianten.
-- Verwenden Sie anstelle der Erstellung globaler Produktvorlagen und Optionscontainer, die für alle Produkte gelten, Attributsätze, um spezifische Produktvorlagen mit Zielattributen und Optionen zu erstellen.
+- Statt globale Produktvorlagen und Optionscontainer zu erstellen, die für alle Produkte gelten, verwenden Sie Attributsätze , um bestimmte Produktvorlagen mit zielgerichteten Attributen und Optionen zu erstellen.
 - Verwalten Sie Produktinformationen über ein externes Produktverwaltungssystem (PMS).
 
-### Potenzielle Auswirkung auf die Leistung
+### Potenzielle Auswirkungen auf die Leistung
 
-Durch die Konfiguration vieler Produktoptionen erhöht sich die Datenmenge, die für jedes Produkt bei allen Lese- und Schreibvorgängen abgerufen wird. Dies führt zu Folgendem:
+Die Konfiguration vieler Produktoptionen erhöht die Datenmenge, die für jedes Produkt bei allen Lese- und Schreibvorgängen abgerufen wird, was zu Folgendem führt:
 
-- Erhöhter SQL-Abfrage-Traffic und höhere `JOIN`-Vorgänge erhöhen den Datenbankdurchsatz.
-- Erhöhte Größe für Adobe Commerce-Indizes und den Volltextsuchindex.
+- Erhöhter SQL-Abfrage-Traffic und umfangreichere `JOIN` erhöhen den Datenbankdurchsatz.
+- Größere Version für Adobe Commerce-Indizes und den Volltextsuchindex.
 
-Die oben aufgeführten Steigerungen können sich auf die Site-Leistung wie folgt auswirken:
+Die oben aufgeführten Erhöhungen wirken sich möglicherweise auf folgende Weise auf die Site-Leistung aus:
 
-- Längere Reaktionszeiten für die meisten Storefront-Szenarien im Zusammenhang mit Produkten, die viele Optionen in Attributen enthalten.
-- Deutliche Zeiteinsparungen beim Ausführen von Produktverwaltungsvorgängen in Admin, die zu Timeouts führen können, insbesondere bei Szenarien, die sich auf die Attributliste und den Abruf von Baumstrukturen einschließlich der Verwaltung von Promotion-Regeln beziehen.
-- Kann Massenaktionen blockieren, die asynchrone Massenvorgänge wie Import und Export abschließen und benutzerdefinierte Preise mehreren Produkten in einem freigegebenen Katalog zuweisen.
+- Längere Reaktionszeit für die meisten Storefront-Szenarien in Bezug auf Produkte, die viele Optionen in Attributen enthalten.
+- Signifikante Verkürzung der Zeit, die zum Abschließen von Produktverwaltungsvorgängen in Admin benötigt wird und zu Zeitüberschreitungen führen kann, insbesondere bei Szenarien, die mit dem Abrufen von Attributlisten und Baumstrukturen zusammenhängen, einschließlich der Verwaltung von Promotion-Regeln.
+- Kann Massenaktionen blockieren, die asynchrone Massenvorgänge wie den Import und Export durchführen und benutzerdefinierte Preise mehreren Produkten in einem gemeinsamen Katalog zuweisen.
 
-## Paginierung von Produktlisten
+## Seitenumbruch für Produktliste
 
 Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
-### Aktualisieren der Produktlistenkonfiguration
+### Aktualisieren der Konfiguration der Produktliste
 
-Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Storefront-Katalogkonfiguration, um die Option auf **Alle Produkte pro Seite zulassen** zu deaktivieren.
+Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Konfiguration des Storefront-Katalogs, um die Option &quot;**Produkte pro Seite zulassen“** deaktivieren.
 
-Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Steuerelemente für die Storefront-Paginierung, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Paginierungssteuerelemente konfigurieren](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Paginierungssteuerelemente für die Produktliste, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Konfigurieren von Paginierungssteuerelementen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Produkt-SKU-Beschränkungen
 
-Die Konfiguration zu vieler Produkt-SKUs kann die Leistung beeinträchtigen, indem sie das Abrufen von Produktdaten verlangsamt und die Zeit für den Abschluss von Admin-Vorgängen oder -Indizierungen verlängert.
+Die Konfiguration zu vieler Produkt-SKUs kann die Leistung beeinträchtigen, indem der Abruf von Produktdaten verlangsamt und die Zeit bis zum Abschluss von Admin-Vorgängen oder -Indizierungen verlängert wird.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
-### Verringerung der Produktanzahl
+### Anzahl der Produkte reduzieren
 
-Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte zu reduzieren:
+Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte (SKUs) zu reduzieren:
 
-- Minimieren von Multiplikatoren—
-   - Durch die Konsolidierung von Websites wird der Multiplikator reduziert.
+- Multiplikatoren minimieren—
+   - Die Konsolidierung von Websites reduziert den Multiplikator.
    - Verwenden Sie alternative Produktfunktionen für benutzerdefinierte Preise, um freigegebene Katalog- und Kundengruppen-Multiplikatoren zu ersetzen.
    - Sowohl Kundengruppen als auch freigegebene Kataloge fungieren als Multiplikatoren für die Anzahl der effektiven SKUs in einem Geschäft.
-- Neustrukturierung des Katalogs—
-   - Reduzieren Sie die Anzahl der den Kategorien zugewiesenen Produkte.
-   - Verringern Sie die Anzahl der SKUs, indem Sie die Anzahl der Websites, Kundengruppen, freigegebenen Kataloge, die Anzahl der Produkte oder die Anzahl der konfigurierbaren Produktoptionen reduzieren.
+- Katalog neu strukturieren—
+   - Reduzieren Sie die Anzahl der Produkte, die Kategorien zugewiesen sind.
+   - Verringern Sie die Anzahl der SKUs, indem Sie die Anzahl der Websites, Kundengruppen, freigegebenen Kataloge, die Anzahl der Produkte oder die Anzahl der konfigurierbaren Produktoptionen verringern.
 - Stellen Sie mehr Produktvarianten bereit, indem Sie benutzerdefinierte Optionen verwenden, anstatt separate Produkte zu erstellen.
-- Unter Berücksichtigung der Tatsache, dass eine effektive SKU eine Reihe potenzieller Preisveränderungen umfassen könnte, da die Preise je Geschäft oder Kundengruppe unterschiedlich angegeben werden können.
+- Unter Berücksichtigung der Tatsache, dass eine effektive SKU eine Reihe potenzieller Permutationen von Preisen enthalten könnte, da Preise für jedes Geschäft oder jede Kundengruppe unterschiedlich angegeben werden können.
 - Deaktivieren oder entfernen Sie nicht verwendete Systemkomponenten wie Module. Siehe [Module deinstallieren](../../../installation/tutorials/uninstall-modules.md).
-- Verwalten Sie Produkte in einem externen Platform Management System (PMS).
+- Verwalten Sie Produkte in einem externen Plattformverwaltungssystem (PMS).
 
 ## Produktvarianten
 
-Die Konfiguration zu vieler Varianten pro Produkt kann sich auf die Leistung auswirken.
+Die Konfiguration zu vieler Varianten pro Produkt kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
 ### Anzahl der Varianten reduzieren
 
-Verwenden Sie die folgenden Strategien, um die Anzahl der Produktvarianten zu reduzieren, um eine optimale Site-Leistung zu erzielen:
+Für eine optimale Site-Performance sollten Sie die folgenden Strategien verwenden, um die Anzahl der Produktvarianten zu reduzieren:
 
 - Strukturieren Sie den Katalog neu, indem Sie die Anzahl der Varianten auf verschiedene Produkte verteilen.
-- Entfernen Sie konfigurierbare Attributoptionen, die nicht auf Lager sind.
-- Verwalten Sie Varianten durch alternative Funktionen wie benutzerdefinierte Optionen, Kategorien, zugehörige, gruppierte und gebündelte Produkte.
+- Entfernen Sie konfigurierbare Attributoptionen, die nicht vorrätig sind.
+- Verwalten Sie Varianten durch alternative Funktionen wie benutzerdefinierte Optionen, Kategorien, verwandte, gruppierte und gebündelte Produkte.
 
-### Potenzielle Auswirkung auf die Leistung
+### Potenzielle Auswirkungen auf die Leistung
 
-Eine Überschreitung der empfohlenen Anzahl von Produktvarianten kann die Site-Performance auf folgende Weise beeinflussen:
+Eine Überschreitung der empfohlenen Anzahl von Produktvarianten kann sich auf folgende Weise auf die Site-Leistung auswirken:
 
-- Lange Anforderungs- und Wiedergabezeiten für Produktdetails und Kategorieseiten mit komplexen Produkten.
-- Verbesserte Reaktionszeit zum Abschließen von Speichervorgängen in der Admin-Konsole.
-- Die Zeit zum Rendern des Formulars zur Produktbearbeitung wurde verlängert.
+- Lange Anfrage- und Rendering-Zeiten für Produktdetails und Kategorieseiten mit komplexen Produkten.
+- Verkürzte Reaktionszeit bis zum Abschluss von Speichervorgängen im Administrator.
+- Längere Zeit zum Rendern des Produktbearbeitungsformulars.
 - Langsamer Checkout.
 
 ## Promotions
 
 Befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in einem Warenkorb zu konfigurieren:
 
-- **Verkaufsregeln (Regeln für Warenkorbpreise)**
-   - Nicht verwendete Regeln verwalten und entfernen
-   - Fügen Sie strenge Regelbedingungen (wie Attribut- oder Kategoriefilter) hinzu, um eine optimale Übereinstimmung zu erzielen.
+- **Verkaufsregeln (Regeln für den Warenkorbpreis)**
+   - Verwalten und Entfernen nicht verwendeter Regeln.
+   - Fügen Sie strenge Regelbedingungen (wie Attribut- oder Kategoriefilter) für eine effiziente Zuordnung hinzu.
 - **Coupons**
    - Entfernen Sie nicht verwendete und abgelaufene Gutscheine.
    - Generieren Sie nur die Anzahl der Coupons, die zur Erfüllung der Kampagnenanforderungen erforderlich sind.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten Versionen](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
-- Adobe Commerce vor Ort
+- Adobe Commerce On-Premises
 
-### Potenzielle Auswirkung auf die Leistung
+### Potenzielle Auswirkungen auf die Leistung
 
-Wenn Sie mehr als die empfohlene maximale Anzahl von Regeln oder Gutscheinen für den Warenkorbpreis haben, kann sich dies wie folgt auf die Site-Leistung auswirken:
+Eine Überschreitung der empfohlenen maximalen Anzahl von Warenkorbpreisregeln oder Coupons kann die Site-Leistung auf folgende Weise beeinträchtigen:
 
-- Die Reaktionszeit beim Hinzufügen von Produkten zum Warenkorb wurde verlängert.
-- Die Zeit zum Laden und Rendern des Minicarts wurde verlängert.
-- Die Zeit zum Rendern der Warenkorbseite wurde verlängert.
-- Die Zeit zum Rendern des Bausteins **Gesamt** auf der Checkout-Seite wurde verlängert.
+- Erhöhte Reaktionszeit, wenn Produkte zum Warenkorb hinzugefügt werden.
+- Erhöhte Zeit zum Laden und Rendern des Minicart.
+- Erhöhte Zeit zum Rendern der Warenkorbseite.
+- Verkürzte Zeit zum Rendern des **Summen**-Blocks auf der Kaufbestätigungsseite.

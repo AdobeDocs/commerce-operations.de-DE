@@ -1,5 +1,5 @@
 ---
-title: Best Practices zur Lösung von Problemen mit der Datenbankleistung
+title: Best Practices zum Beheben von Problemen mit der Datenbankleistung
 description: Erfahren Sie, wie Sie Datenbankprobleme beheben, die die Leistung auf Adobe Commerce-Sites verlangsamen, die in der Cloud-Infrastruktur bereitgestellt werden.
 role: Developer, Admin
 feature: Best Practices
@@ -13,42 +13,42 @@ ht-degree: 0%
 
 <!--Consider moving this topic to the Maintenance section-->
 
-# Best Practices zur Lösung von Problemen mit der Datenbankleistung
+# Best Practices zum Beheben von Problemen mit der Datenbankleistung
 
-In diesem Artikel wird beschrieben, wie Datenbankprobleme behoben werden, die sich negativ auf die Datenbankleistung in Adobe Commerce auf Cloud-Infrastruktur-Sites auswirken.
+In diesem Artikel wird beschrieben, wie Sie Datenbankprobleme beheben können, die sich negativ auf die Datenbankleistung von Adobe Commerce auf Cloud-Infrastruktur-Sites auswirken.
 
 ## Betroffene Versionen
 
 Adobe Commerce auf Cloud-Infrastruktur
 
-## Identifizieren und Auflösen langwieriger Abfragen
+## Identifizieren und Auflösen von lang laufenden Abfragen
 
-Bestimmen Sie, ob MySQL-Abfragen langsam ausgeführt werden. Je nach Adobe Commerce-Plan zur Cloud-Infrastruktur und somit der Verfügbarkeit von Tools können Sie Folgendes tun:
+Ermitteln Sie, ob Sie langsame MySQL-Abfragen haben. Abhängig von Ihrem Adobe Commerce on Cloud-Infrastrukturplan und damit der Verfügbarkeit von Tools haben Sie folgende Möglichkeiten.
 
-### Datenbankabfragen mit MySQL analysieren
+### Analysieren von Datenbankabfragen mit MySQL
 
-Sie können MySQL verwenden, um langwierige Abfragen in Adobe Commerce in Cloud-Infrastrukturprojekten zu identifizieren und zu beheben.
+Sie können MySQL verwenden, um lang laufende Abfragen für jedes Adobe Commerce in Cloud-Infrastrukturprojekt zu identifizieren und aufzulösen.
 
-1. Führen Sie die Anweisung [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) aus.
-1. Wenn Sie lange laufende Abfragen sehen, führen Sie [MySQL `EXPLAIN` und `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) für jede dieser Abfragen aus, um herauszufinden, was die Abfrage über einen langen Zeitraum ausführt.
-1. Führen Sie je nach den gefundenen Problemen Schritte aus, um die Abfrage zu korrigieren, damit sie schneller ausgeführt werden kann.
+1. Führen Sie die [`SHOW \[FULL\] PROCESSLIST`](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) aus.
+1. Wenn Sie Abfragen mit langer Laufzeit sehen, führen Sie [MySQL-`EXPLAIN` und `EXPLAIN ANALYZE`](https://mysqlserverteam.com/mysql-explain-analyze/) für jede dieser Abfragen aus, um herauszufinden, wodurch die Abfrage lange ausgeführt wird.
+1. Führen Sie basierend auf den gefundenen Problemen Schritte aus, um die Abfrage zu beheben, damit sie schneller ausgeführt wird.
 
 ### Abfragen mit dem Percona Toolkit analysieren (nur für Pro-Architektur)
 
-Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie die Abfragen mit dem Percona Toolkit analysieren.
+Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie das Percona Toolkit zur Analyse von Abfragen verwenden.
 
-1. Führen Sie den Befehl `pt-query-digest --type=slowlog` für langsame MySQL-Abfrageprotokolle aus.
-   * Informationen zum Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in unserer Entwicklerdokumentation.
-   * Weitere Informationen finden Sie in der Dokumentation zu [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
-1. Führen Sie je nach den gefundenen Problemen Schritte aus, um die Abfrage zu korrigieren, damit sie schneller ausgeführt werden kann.
+1. Führen Sie den `pt-query-digest --type=slowlog`-Befehl für MySQL-Protokolle mit langsamen Abfragen aus.
+   * Den Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in unserer Entwicklerdokumentation.
+   * Weitere Informationen finden [ in der Dokumentation zu Percona Toolkit > pt-query](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest)digest.
+1. Führen Sie basierend auf den gefundenen Problemen Schritte aus, um die Abfrage zu beheben, damit sie schneller ausgeführt wird.
 
-## Überprüfen, ob alle Tabellen über einen Primärschlüssel verfügen
+## Überprüfen, ob alle Tabellen einen Primärschlüssel haben
 
-Die Definition von Primärschlüsseln ist eine Voraussetzung für ein gutes Datenbank- und Tabellendesign. Mit Primären Schlüsseln können Sie eine Zeile in einer beliebigen Tabelle eindeutig identifizieren.
+Die Definition von Primärschlüsseln ist eine Voraussetzung für einen guten Datenbank- und Tabellenentwurf. Primäre Schlüssel bieten die Möglichkeit, eine Zeile in einer Tabelle eindeutig zu identifizieren.
 
-Wenn Sie über Tabellen ohne Primärschlüssel verfügen, verwendet die standardmäßige Datenbank-Engine für Adobe Commerce (InnoDB) den ersten eindeutigen Schlüssel (nicht den Nullschlüssel) als Primärschlüssel. Wenn kein eindeutiger Schlüssel verfügbar ist, erstellt InnoDB einen ausgeblendeten Primärschlüssel (6 Byte). Das Problem mit einem implizit definierten Primärschlüssel besteht darin, dass Sie keine Kontrolle darüber haben. Darüber hinaus wird der implizite Wert für alle Tabellen ohne Primärschlüssel global zugewiesen. Diese Konfiguration kann bei gleichzeitigen Schreibvorgängen für diese Tabellen zu Konflikten führen. Dies kann zu Leistungsproblemen führen, da die Tabellen auch die Indexinkrementierung des globalen ausgeblendeten Primärschlüssels gemeinsam nutzen.
+Wenn Sie Tabellen ohne Primärschlüssel haben, verwendet die standardmäßige Datenbank-Engine für Adobe Commerce (InnoDB) den ersten eindeutigen Schlüssel, der nicht null ist, als Primärschlüssel. Wenn kein eindeutiger Schlüssel verfügbar ist, erstellt InnoDB einen ausgeblendeten Primärschlüssel (6 Byte). Das Problem mit einem implizit definierten Primärschlüssel besteht darin, dass Sie keine Kontrolle darüber haben. Darüber hinaus wird der implizite -Wert global für alle Tabellen ohne Primärschlüssel zugewiesen. Diese Konfiguration kann zu Konflikten führen, wenn gleichzeitig auf diese Tabellen geschrieben wird. Dies kann zu Leistungsproblemen führen, da die Tabellen auch das Inkrement des globalen ausgeblendeten Primärschlüsselindex gemeinsam nutzen.
 
-Vermeiden Sie diese Probleme, indem Sie einen Primärschlüssel für Tabellen definieren, die keine haben.
+Vermeiden Sie diese Probleme, indem Sie einen Primärschlüssel für alle Tabellen definieren, die keinen haben.
 
 ### Identifizieren und Aktualisieren von Tabellen ohne Primärschlüssel
 
@@ -58,7 +58,7 @@ Vermeiden Sie diese Probleme, indem Sie einen Primärschlüssel für Tabellen de
    SELECT table_catalog, table_schema, table_name, engine FROM information_schema.tables        WHERE (table_catalog, table_schema, table_name) NOT IN (SELECT table_catalog, table_schema, table_name FROM information_schema.table_constraints  WHERE constraint_type = 'PRIMARY KEY') AND table_schema NOT IN ('information_schema', 'pg_catalog');    
    ```
 
-1. Fügen Sie für jede Tabelle, in der ein Primärschlüssel fehlt, einen Primärschlüssel hinzu, indem Sie das `db_schema.xml` (das deklarative Schema) mit einem Knoten aktualisieren, der dem folgenden ähnelt:
+1. Fügen Sie für jede Tabelle, der ein Primärschlüssel fehlt, einen Primärschlüssel hinzu, indem Sie das `db_schema.xml` (das deklarative Schema) mit einem Knoten ähnlich dem folgenden aktualisieren:
 
    ```html
    <constraint xsi:type="primary" referenceId="PRIMARY">         <column name="id_column"/>     </constraint>    
@@ -66,15 +66,15 @@ Vermeiden Sie diese Probleme, indem Sie einen Primärschlüssel für Tabellen de
 
    Wenn Sie den Knoten hinzufügen, ersetzen Sie die Variablen `referenceID` und `column name` durch Ihre benutzerdefinierten Werte.
 
-Weitere Informationen finden Sie unter [Konfigurieren des deklarativen Schemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie unter [Konfigurieren eines deklarativen Schemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in unserer Entwicklerdokumentation.
 
 ## Identifizieren und Entfernen doppelter Indizes
 
 Identifizieren Sie alle doppelten Indizes in Ihrer Datenbank und entfernen Sie sie.
 
-### Überprüfen auf doppelte Indizes
+### Auf doppelte Indizes prüfen
 
-Um in der Pro- oder Starter-Cloud-Architektur nach doppelten Indizes zu suchen, führen Sie die folgende SQL-Abfrage aus.
+Um nach doppelten Indizes in der Pro- oder Starter-Cloud-Architektur zu suchen, führen Sie die folgende SQL-Abfrage aus.
 
 ```sql
 SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONCAT(CONCAT(TABLE_NAME,'.',COLUMN_NAME) ORDER BY CONCAT(SEQ_IN_INDEX,COLUMN_NAME)) 'INDEXED_COL' FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = 'db?' GROUP BY INDEX_NAME)as s GROUP BY INDEXED_COL HAVING COUNT(1)>1
@@ -82,11 +82,11 @@ SELECT s.INDEXED_COL,GROUP_CONCAT(INDEX_NAME) FROM (SELECT INDEX_NAME,GROUP_CONC
 
 Die Abfrage gibt die Spaltennamen und die Namen aller doppelten Indizes zurück.
 
-Pro Architecture-Händler können die Prüfung auch mit dem Befehl Percona Toolkit `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)` ausführen.
+Kaufleute, die Pro-Architektur verwenden, können den Test auch mit dem `[pt-duplicate-key checker](https://www.percona.com/doc/percona-toolkit/LATEST/pt-duplicate-key-checker.html%C2%A0)`-Befehl des Percona Toolkits durchführen.
 
-### Duplizierte Indizes entfernen
+### Doppelte Indizes entfernen
 
-Verwenden Sie die SQL [DROP INDEX Statement](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html) , um doppelte Indizes zu entfernen.
+Verwenden Sie die SQL [DROP INDEX-Anweisung](https://dev.mysql.com/doc/refman/8.0/en/drop-index.html), um doppelte Indizes zu entfernen.
 
 ```SQL
 DROP INDEX
@@ -94,4 +94,4 @@ DROP INDEX
 
 ## Weitere Informationen
 
-[Best Practices für die Datenbankkonfiguration für Cloud-Bereitstellungen](../planning/database-on-cloud.md)
+[Best Practices für die Datenbankkonfiguration bei Cloud-Bereitstellungen](../planning/database-on-cloud.md)

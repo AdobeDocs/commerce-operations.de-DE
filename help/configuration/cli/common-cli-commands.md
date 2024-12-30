@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Befehle
-description: Sehen Sie sich ein Beispiel für häufige Commerce-CLI-Befehle und -Verwendungen an.
+description: Sehen Sie sich ein Beispiel für gängige Commerce-CLI-Befehle und -Verwendungen an.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
 source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
 workflow-type: tm+mt
@@ -19,7 +19,7 @@ Im Folgenden werden einige der verfügbaren Befehle zusammengefasst.
 bin/magento list
 ```
 
-Beispiel für einen Hilfebefehl:
+Beispiel für einen Hilfe-Befehl:
 
 ```bash
 bin/magento help <command>
@@ -29,36 +29,36 @@ bin/magento help <command>
 bin/magento help cache:enable
 ```
 
-Befehle werden nur in der Zusammenfassung angezeigt. Klicken Sie für weitere Informationen zu einem Befehl auf den Link in der Spalte &quot;Befehl&quot;.
+Befehle werden nur im Zusammenfassungsformular angezeigt. Klicken Sie auf den Link in der Spalte Befehl, um weitere Informationen zu einem Befehl zu erhalten.
 
 | Befehl | Beschreibung |
 |--- |--- |
-| [`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md) | Verwalten des Cache |
+| [`magento cache:{enable/disable/clean/flush/status}`](../cli/manage-cache.md) | Verwaltet den Cache |
 | [`magento indexer:{status/show-mode/set-mode/reindex/info/reset/show-dimensions-mode/set-dimensions-mode}`](../cli/manage-indexers.md) | Verwaltet die Indexer |
 | [`magento cron:run`](../cli/configure-cron-jobs.md) | Führt Commerce-Cron-Aufträge aus |
-| [`magento setup:di:compile`](../cli/code-compiler.md) | Kompiliert alle nicht vorhandenen Proxys und Fabriken und erstellt eine Vorkompilierung von Klassendefinitionen, Vererbungsinformationen und Plug-in-Definitionen für einen Store und eine Website. |
+| [`magento setup:di:compile`](../cli/code-compiler.md) | Kompiliert alle nicht vorhandenen Proxys und Factories und kompiliert Klassendefinitionen, Vererbungsinformationen und Plug-in-Definitionen vorab für einen Store und eine Website. |
 | [`magento info:dependencies:{show-modules/show-modules-circular/show-framework}`](../cli/dependency-reports.md) | Modulabhängigkeiten, zirkuläre Abhängigkeiten und Commerce-Framework-Abhängigkeiten. |
-| [`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md) | Erstellt ein Übersetzungswörterbuch oder ein Übersetzungspaket |
+| [`magento i18n:{collect-phrases/pack/uninstall}`](../cli/localization.md) | Erstellt ein Übersetzungs-Wörterbuch oder ein Übersetzungspaket |
 | [`magento setup:static-content:deploy`](../cli/static-view-file-deployment.md) | Stellt statische Ansichtsdateien bereit |
 | [`magento dev:source-theme:deploy`](../cli/create-symlinks.md) | Erstellt CSS aus LESS |
-| [`magento dev:tests:run`](../cli/unit-tests.md) | Führt automatisierte Tests aus |
-| [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Aktualisieren Sie Ihre Layout-XML-Dateien entsprechend dem neuen XSLT-Stylesheet (Extensible Stylesheet Language Transformations) |
-| [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Generieren Sie Daten zur Verwendung für Leistungstests. |
-| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installiert optionale Beispieldaten nach der Installation der Commerce-Anwendung.<br><br>Weitere Informationen zu Musterdaten finden Sie unter [Optionale Beispieldaten](../../installation/sample-data/overview.md). |
-| [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Verwalten von Backend-Konfigurationen |
-| [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Erstellt/bearbeitet/entsperrt Administratorbenutzer. |
-| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Aktiviert/deaktiviert Hinweise zu Entwicklervorlagen. |
+| [`magento dev:tests:run`](../cli/unit-tests.md) | Führt automatisierte Tests durch |
+| [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Aktualisieren Sie Ihre XML-Layoutdateien, um sie an die neue XSLT-Formatvorlage (Extensible Stylesheet Language Transformations) anzupassen |
+| [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Generieren von Daten für Leistungstests. |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installiert optionale Beispieldaten, nachdem Sie die Commerce-Anwendung installiert haben.<br><br>Weitere Informationen zu Beispieldaten finden Sie unter [Optionale Beispieldaten](../../installation/sample-data/overview.md). |
+| [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Verwaltet Backend-Konfigurationen |
+| [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Erstellt/bearbeitet/entsperrt Admin-Benutzer. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Aktiviert/deaktiviert Hinweise auf Entwicklervorlagen. |
 
-## Allgemeine Argumente
+## Häufige Argumente
 
-Die folgenden Argumente gelten für [alle Befehle](/help/tools/reference/commerce-on-premises.md). Diese Befehle können vor oder nach der Installation der Commerce-Software ausgeführt werden:
+Die folgenden Argumente gelten für [alle Befehle](/help/tools/reference/commerce-on-premises.md). Diese Befehle können entweder vor oder nach der Installation der Commerce-Software ausgeführt werden:
 
 | Lange Version | Kurzversion | Bedeutung |
 |--- |--- |--- |
-| `--help` | `-h` | Erhalten Sie Hilfe für jeden Befehl. Beispiel: `./magento help setup:install` oder `./magento help setup:config:set`. |
-| `--quiet` | `-q` | Ruhig, keine Ausgabe. |
+| `--help` | `-h` | Hilfe zu jedem Befehl. Beispiel: `./magento help setup:install` oder `./magento help setup:config:set`. |
+| `--quiet` | `-q` | Ruhiger Modus; keine Ausgabe. |
 | `--no-interaction` | `-n` | Keine interaktiven Fragen. |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbosity level. Beispielsweise zeigt `--verbose=3` oder `-vvv` Debug-Ausführlichkeit an, die die ausführlichste Ausgabe ist. Der Standardwert ist `--verbose=1` oder `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | Ausführlichkeitsstufe. Beispielsweise zeigt `--verbose=3` oder `-vvv` die ausführlichste Ausgabe als Debugging-Ausführlichkeit an. Der Standardwert ist `--verbose=1` oder `-v`. |
 | `--version` | `-V` | Diese Anwendungsversion anzeigen |
 | `--ansi` | Nicht zutreffend | ANSI-Ausgabe erzwingen |
 | `--no-ansi` | Nicht zutreffend | ANSI-Ausgabe deaktivieren |

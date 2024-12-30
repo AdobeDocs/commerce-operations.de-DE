@@ -1,6 +1,6 @@
 ---
-user-guide-title: Ereigniszusammenfassungen für Adobe Commerce
-user-guide-description: Überprüfen Sie eine Zusammenfassung des Adobe Commerce-Inhalts aus Adobe-Ereignissen.
+user-guide-title: Adobe Commerce-Ereigniszusammenfassungen
+user-guide-description: Überprüfen Sie eine Zusammenfassung der Adobe Commerce-Inhalte aus Adobe-Ereignissen.
 hide: true
 source-git-commit: 7a42eb716abbd588051288cd6a288408925d8bba
 workflow-type: tm+mt
@@ -12,5 +12,5 @@ ht-degree: 5%
 
 # Adobe Commerce-Ereigniszusammenfassungen {#events}
 
-+ Summit {#summit}
++ {#summit}
    + [2024](summit/2024.md)

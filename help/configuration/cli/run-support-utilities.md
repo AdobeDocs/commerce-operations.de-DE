@@ -1,6 +1,6 @@
 ---
-title: Führen Sie die Hilfsprogramme aus
-description: Fehlerbehebung für Ihr Commerce-Projekt mithilfe des integrierten Support-Dienstprogramms.
+title: Ausführen der Support-Dienstprogramme
+description: Fehlerbehebung bei Ihrem Commerce-Projekt mit dem integrierten Dienstprogramm für die Kundenunterstützung.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
@@ -9,34 +9,34 @@ ht-degree: 0%
 
 ---
 
-# Führen Sie die Hilfsprogramme aus
+# Ausführen der Support-Dienstprogramme
 
 {{ee-only}}
 
 {{file-system-owner}}
 
-Die Adobe Commerce-Support-Dienstprogramme - auch als [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet - ermöglichen es Benutzern, Informationen zur Fehlerbehebung zu Ihrem System zu erfassen, die von unserem Supportteam verwendet werden können.
+Mit den Adobe Commerce-Support-Dienstprogrammen (auch als [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet) können Benutzende Informationen zur Fehlerbehebung in Ihrem System sammeln, die von unserem Support-Team verwendet werden können.
 
-Adobe Commerce verwendet diese Sicherungen, auch _Dumps_ genannt, um Probleme zu analysieren, die Zugriff auf Ihren Code erfordern. Ein typisches Szenario sieht wie folgt aus:
+Adobe Commerce verwendet diese Sicherungskopien, auch als &quot;_&quot; bezeichnet_, um Probleme zu analysieren, die Zugriff auf Ihren Code erfordern. Es folgt ein typisches Szenario:
 
 1. Sie haben ein Problem mit Ihrem Commerce-Store und wenden sich an den Adobe Commerce-Support.
-1. Der Support legt fest, dass er Ihren Code oder Ihre Datenbank sehen muss, um das Problem zu reproduzieren.
-1. Sie sichern den Code in einer `.tar.gz` -Datei.
+1. Der Support entscheidet, ob der Code oder die Datenbank angezeigt werden müssen, um das Problem zu reproduzieren.
+1. Sie sichern den Code in einer `.tar.gz`.
 
-   Dieses Backup_schließt Ihre Mediendateien aus, um den Prozess zu beschleunigen und zu einer wesentlich kleineren Datei zu führen.
+   Durch dieses Backup werden Ihre Mediendateien _ausgeschlossen, um den Vorgang zu beschleunigen und eine wesentlich kleinere Datei zu erhalten.
 
-1. Sie sichern die Datenbank in einer `.tar.gz` -Datei.
+1. Sie sichern die Datenbank in einer `.tar.gz`.
 
-   Standardmäßig werden vertrauliche Daten beim Erstellen der Sicherung gehasht.
+   Standardmäßig werden vertrauliche Daten bei der Sicherung in Hash-Werte umgewandelt.
 
-1. Sie laden Ihre Sicherungen in einen Dateifreigabedienst hoch.
-1. Der Support analysiert Ihre Probleme, ohne dass sich dies auf Ihre Entwicklungs- oder Produktionsumgebung auswirkt.
+1. Sie laden Ihre Backups in einen Dateifreigabedienst hoch.
+1. Der Support analysiert Ihre Probleme, ohne Ihre Entwicklungs- oder Produktionsumgebung zu beeinträchtigen.
 
-Die Ausführung der Dienstprogramme kann mehrere Minuten dauern.
+Es kann mehrere Minuten dauern, bis die Dienstprogramme abgeschlossen sind.
 
-## Codesicherung erstellen
+## Erstellen eines Code-Backups
 
-Dieser Befehl sichert den Code und komprimiert ihn im Format `tar.gz`.
+Mit diesem Befehl wird Code gesichert und im `tar.gz` komprimiert.
 
 {{tip-backup-command}}
 
@@ -48,21 +48,21 @@ bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--
 
 Dabei gilt:
 
-- **`--name`** gibt den Dateinamen der Dump-Datei an (optional). Wenn Sie diesen Parameter weglassen, wird die Dump-Datei mit dem Zeitstempel und dem Datumsstempel versehen.
-- **`-o|--output=<path>`** ist der absolute Dateisystempfad zum Speichern der Sicherung (erforderlich).
+- **`--name`** gibt den Namen der Dumpdatei an (optional). Wenn Sie diesen Parameter weglassen, wird die Dump-Datei mit einem Zeit- und Datumsstempel versehen.
+- **`-o|--output=<path>`** ist der absolute Dateisystempfad zum Speichern des Backups (erforderlich).
 - **`-l|--logs`** enthält Protokolldateien (optional).
 
-So erstellen Sie beispielsweise eine Codesicherung mit dem Namen `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
+So erstellen Sie beispielsweise eine Code-Sicherung mit dem Namen `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
 ```bash
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
-Stellen Sie nach Abschluss des Befehls die Codesicherung für den Adobe Commerce-Support bereit.
+Stellen Sie nach Abschluss des Befehls den Code-Backup für den Adobe Commerce-Support bereit.
 
-## Datenbanksicherung erstellen
+## Erstellen einer Datenbanksicherung
 
-Mit diesem Befehl wird die Commerce-Datenbank gesichert und im `tar.gz`-Format komprimiert.
+Mit diesem Befehl wird die Commerce-Datenbank gesichert und im `tar.gz` komprimiert.
 
 {{tip-backup-command}}
 
@@ -74,10 +74,10 @@ bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [
 
 Dabei gilt:
 
-- **`--name`** gibt den Dateinamen der Dump-Datei an (optional). Wenn Sie diesen Parameter weglassen, wird die Dump-Datei mit dem Zeitstempel und dem Datumsstempel versehen.
+- **`--name`** gibt den Namen der Dumpdatei an (optional). Wenn Sie diesen Parameter weglassen, wird die Dump-Datei mit einem Zeit- und Datumsstempel versehen.
 - **`-o|--output=<path>` ist der absolute Dateisystempfad zum Speichern der Sicherung (erforderlich).
 - **`-l|--logs`** enthält Protokolldateien (optional).
-- **`-i|--ignore-sanitize`** bedeutet, dass Daten beibehalten werden. Lassen Sie die Markierung weg, um beim Erstellen der Sicherung gespeicherte vertrauliche Daten in der Datenbank zu hash-Daten zu speichern (optional).
+- **`-i|--ignore-sanitize`** bedeutet, dass die Daten beibehalten werden. Lassen Sie die Markierung weg, um sensible Daten, die in der Datenbank gespeichert sind, beim Erstellen des Backups zu hashen (optional).
 
 Sensible Daten umfassen Kundeninformationen aus den folgenden Datenbanktabellen:
 
@@ -96,28 +96,28 @@ Sensible Daten umfassen Kundeninformationen aus den folgenden Datenbanktabellen:
 
 Stellen Sie nach Abschluss des Befehls die Datenbanksicherung für den Adobe Commerce-Support bereit.
 
-## Fehlerbehebung: Anzeigeprogramme und Pfade
+## Fehlerbehebung: Anzeigen von Dienstprogrammen und Pfaden
 
-Wir stellen Befehle bereit, die Pfade zu Dienstprogrammen anzeigen, die für die Datenerfassung und die Befehlszeile erforderlich sind. Sie können diese Befehle beispielsweise verwenden, wenn Fehler wie die folgende in der Admin- oder Befehlszeile angezeigt werden:
+Wir stellen Befehle bereit, die Pfade zu Dienstprogrammen anzeigen, die vom Data Collector und der Befehlszeile benötigt werden. Sie können diese Befehle beispielsweise verwenden, wenn Fehler wie die folgenden in der Admin oder in der Befehlszeile angezeigt werden:
 
 ```
 Utility lsof not found
 ```
 
-Führen Sie die folgenden Befehle in der angezeigten Reihenfolge aus, um die Pfade zu den von den Support-Dienstprogrammen und dem Data Collector verwendeten Anwendungen anzuzeigen:
+Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um die Pfade zu den Anwendungen anzuzeigen, die von den Support-Dienstprogrammen und der Datenerfassung verwendet werden:
 
-1. Wechseln Sie zum Installationsverzeichnis von Commerce.
+1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 
    Beispiel: `cd /var/www/magento2`
 
    >[!INFO]
    >
-   >Die Befehle werden im Installationsverzeichnis ordnungsgemäß mit _nur_ ausgeführt.
+   >Die Befehle werden _ordnungsgemäß_ Ihrem Installationsverzeichnis ausgeführt.
 
 1. `bin/magento support:utility:paths` erstellt `<magento_root>/var/support/Paths.php`, in dem die Pfade zu allen vom Dienstprogramm verwendeten Anwendungen aufgelistet werden.
 1. `bin/magento support:utility:check` zeigt die Dateisystempfade an.
 
-Ein Beispiel:
+Es folgt ein Beispiel:
 
 ```
    gzip => /bin/gzip
@@ -131,4 +131,4 @@ Ein Beispiel:
    mysql => /usr/bin/mysql
 ```
 
-Um Probleme beim Ausführen der Tools zu beheben, stellen Sie sicher, dass diese Anwendungen installiert sind und sich in der Umgebungsvariablen &quot;`$PATH`&quot; des Webserver-Benutzers befinden.
+Um Probleme beim Ausführen der Tools zu beheben, stellen Sie sicher, dass diese Programme installiert sind und sich in der `$PATH`-Umgebungsvariablen des Webserverbenutzers befinden.

@@ -15,7 +15,7 @@ ht-degree: 56%
   <thead>
     <tr>
       <th>
-        Softwareabhängigkeiten
+        Software-Abhängigkeiten
       </th>
       <th>2.4.7-p3</th>
       <th>2.4.7-p2</th>
@@ -102,16 +102,16 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.3, 8.2
+            8,3; 8,2
       </td>
       <td>
-            8.3, 8.2
+            8,3; 8,2
       </td>
       <td>
-            8.3, 8.2
+            8,3; 8,2
       </td>
       <td>
-            8.3, 8.2
+            8,3; 8,2
       </td>
     </tr>
     <tr>
@@ -222,16 +222,16 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3,11,20
+            3.11.20
       </td>
       <td>
-            3,11,20
+            3.11.20
       </td>
       <td>
-            3,11,20
+            3.11.20
       </td>
       <td>
-            3,11,20
+            3.11.20
       </td>
     </tr>
     <tr>
@@ -286,7 +286,7 @@ ht-degree: 56%
   <thead>
     <tr>
       <th>
-        Softwareabhängigkeiten
+        Software-Abhängigkeiten
       </th>
       <th>2.4.6-p8</th>
       <th>2.4.6-p7</th>
@@ -333,31 +333,31 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.11.7.17
+            8,11; 7,17
       </td>
       <td>
-            8.11.7.17
+            8,11; 7,17
       </td>
       <td>
-            8.11.7.17
+            8,11; 7,17
       </td>
       <td>
-            8.11.7.17
+            8,11; 7,17
       </td>
       <td>
-            8.11.7.17
+            8,11; 7,17
       </td>
       <td>
-            8.5, 7.17
+            8,5; 7,17
       </td>
       <td>
-            8.5, 7.17
+            8,5; 7,17
       </td>
       <td>
-            8.5, 7.17
+            8,5; 7,17
       </td>
       <td>
-            8.4, 7.17
+            8,4; 7,17
       </td>
     </tr>
     <tr>
@@ -453,31 +453,31 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
       <td>
-            8.2, 8.1
+            8,2; 8,1
       </td>
     </tr>
     <tr>
@@ -492,28 +492,28 @@ ht-degree: 56%
             3,12
       </td>
       <td>
-            3.12, 3.11, 3.9
+            3,12, 3,11, 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2, 7.0
+            7,2; 7,0
       </td>
       <td>
             7,0
@@ -693,31 +693,31 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
       <td>
-            3,9,16
+            3.9.16
       </td>
     </tr>
     <tr>
@@ -817,9 +817,9 @@ ht-degree: 56%
   <thead>
     <tr>
       <th>
-        Softwareabhängigkeiten
+        Software-Abhängigkeiten
       </th>
-      <th>2.4.5-p10</th>
+      <th>2.4.5-P10</th>
       <th>2.4.5-p9</th>
       <th>2.4.5-p8</th>
       <th>2.4.5-p7</th>
@@ -944,13 +944,13 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.5, 10.4
+            10,5; 10,4
       </td>
       <td>
-            10.5, 10.4
+            10,5; 10,4
       </td>
       <td>
-            10.5, 10.4
+            10,5; 10,4
       </td>
       <td>
             10,4
@@ -1058,22 +1058,22 @@ ht-degree: 56%
             3,13
       </td>
       <td>
-            3.12, 3.11
+            3,12; 3,11
       </td>
       <td>
-            3.12, 3.11, 3.9
+            3,12, 3,11, 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
-            3.11, 3.9
+            3,11; 3,9
       </td>
       <td>
             3,9
@@ -1088,7 +1088,7 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2, 7.0
+            7,2; 7,0
       </td>
       <td>
             7,0
@@ -1304,37 +1304,37 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
     </tr>
     <tr>
@@ -1452,10 +1452,10 @@ ht-degree: 56%
   <thead>
     <tr>
       <th>
-        Softwareabhängigkeiten
+        Software-Abhängigkeiten
       </th>
-      <th>2.4.4-p11</th>
-      <th>2.4.4-p10</th>
+      <th>2.4.4-P11</th>
+      <th>2.4.4-P10</th>
       <th>2.4.4-p9</th>
       <th>2.4.4-p8</th>
       <th>2.4.4-p7</th>
@@ -1589,13 +1589,13 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-            10.5, 10.4
+            10,5; 10,4
       </td>
       <td>
-            10.5, 10.4
+            10,5; 10,4
       </td>
       <td>
-            10.5, 10.4
+            10,5; 10,4
       </td>
       <td>
             10,4
@@ -1745,7 +1745,7 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-            7.2, 7.0
+            7,2; 7,0
       </td>
       <td>
             7,0
@@ -1979,40 +1979,40 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,9,13
+            3.9.13
       </td>
       <td>
-            3,8,11
+            3.8.11
       </td>
       <td>
-            3,8,11
+            3.8.11
       </td>
       <td>
-            3,8,11
+            3.8.11
       </td>
     </tr>
     <tr>
@@ -2139,7 +2139,7 @@ ht-degree: 56%
   <thead>
     <tr>
       <th>
-        Softwareabhängigkeiten
+        Software-Abhängigkeiten
       </th>
       <th>2.4.3-p3</th>
     </tr>
@@ -2226,7 +2226,7 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3,8,11
+            3.8.11
       </td>
     </tr>
     <tr>
@@ -2254,7 +2254,7 @@ ht-degree: 56%
   <thead>
     <tr>
       <th>
-        Softwareabhängigkeiten
+        Software-Abhängigkeiten
       </th>
       <th>2.4.2-p2</th>
     </tr>

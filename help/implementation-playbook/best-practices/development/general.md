@@ -1,6 +1,6 @@
 ---
-title: Allgemeine Best Practices für die Entwicklung
-description: Erfahren Sie mehr über die allgemeinen Best Practices für die Entwicklung von Adobe Commerce-Projekten.
+title: Allgemeine Best Practices zur Entwicklung
+description: Erfahren Sie mehr über allgemeine Best Practices für die Entwicklung von Adobe Commerce-Projekten.
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
@@ -11,46 +11,46 @@ ht-degree: 0%
 
 ---
 
-# Allgemeine Best Practices für die Entwicklung von Adobe Commerce
+# Allgemeine Best Practices zur Entwicklung für Adobe Commerce
 
-Hier wird die Grundlinie für einen gesunden Adobe Commerce-Entwicklungsprozess beschrieben. Es beschreibt grundlegende Prozesse, Kodierungsprinzipien und Grundsätze für das Anwendungsdesign, die Entwicklern als Orientierung dienen.
+In diesem Abschnitt werden die Grundlagen für einen reibungslosen Adobe Commerce-Entwicklungsprozess beschrieben. Es beschreibt grundlegende Prozesse, Kodierungsprinzipien und Anwendungsentwurfsprinzipien, die Entwicklerinnen und Entwicklern als Orientierungshilfe dienen.
 
 >[!NOTE]
 >
->Adobe Technical Architects verwenden diese Best Practices als Referenz bei Entwicklungsinteraktionen.
+>Technische Adobe-Architekten verwenden diese Best Practices als Referenz bei Projekten, die mit der Entwicklung zu tun haben.
 
-Diese bewährten Verfahren wurden auf der Grundlage jahrelanger Erfahrung bei der Entwicklung und Durchführung von Commerce-Projekten entwickelt. Adobe empfiehlt, dass technische Initiativen diesen Best Practices folgen und bestehende Prozesse und Code zur Anpassung an sie verbessern.
+Diese Best Practices basieren auf jahrelanger Erfahrung in der Entwicklung und Bereitstellung von Commerce-Projekten. Adobe empfiehlt, dass technische Initiativen diesen Best Practices folgen und dass Sie bestehende Prozesse verbessern und den Code entsprechend anpassen.
 
 ## Textkonventionen
 
-Die Schlüsselwörter &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;, &quot;SOULD&quot;, &quot;SOULD NOT&quot;, &quot;EMPFOHLEN&quot;, &quot;MAY&quot;und &quot;OPTIONAL&quot;in diesem Thema sind wie in [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) beschrieben zu interpretieren.
+Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS“, „DARF NICHT“, „SOLLTE NICHT“, „SOLLTE NICHT“, „EMPFOHLEN“, „MAI“ und „OPTIONAL“ in diesem Thema sind wie in [RFC 2119“ ](https://datatracker.ietf.org/doc/html/rfc2119).
 
 ## Prozess
 
-1. Vor Beginn der Projektaktivitäten MUSS eine definierte Projektmethodik vereinbart werden. Es kann sich um Scrum, Waterfall oder eine andere Methode oder eine Kombination von Methoden handeln, solange sie definiert ist.
-1. Die Entwicklung SOLLTE NICHT beginnen, bis dem Entwicklungsteam eine Verzweigungsstrategie für das Versionskontrollsystem zur Verfügung steht.
-1. Die Entwicklung SOLLTE NICHT beginnen, bis nach der Abmeldung von technischen Spezifikationen, der Abmeldung von Benutzermeldungen und Nutzungsszenarios und der Abmeldung von Testfällen dem Entwicklungsteam zur Verfügung stehen.
-1. Die Entwicklung SOLLTE NICHT beginnen, bis mindestens eine Entwicklungs- und QA-Umgebung verfügbar ist.
-1. Projektspezifische Anforderungen, die zum Starten der Entwicklung erforderlich sind, KÖNNEN in einer _Definition von Bereit_ dokumentiert werden.
-1. Die Abmeldung SOLLTE von einem Kundenbetreuer vorgenommen werden, der zur Abmeldung von Projektlieferungen berechtigt ist.
-1. Bei den Agile-Projektmethoden können nach der Unterzeichnung zusätzliche Anforderungen gestellt werden. Diese Anforderungen SOLLTEN als neue Anforderungen behandelt und entsprechend erfasst, gestaltet und geplant werden.
-1. Die gesamte Entwicklung MUSS vom Entwickler vor der Übermittlung funktional getestet werden.
-1. Die gesamte Entwicklung SOLLTE automatisierte Tests bestehen, bevor sie zur Codeüberprüfung eingereicht wird. Dies kann als automatisierter Prozess nach der Erstellung von Pull-Anforderungen konfiguriert werden.
-1. Jede Entwicklung MUSS eine manuelle Code-Überprüfung durch einen technischen Architekten oder Lead-Entwickler bestehen, bevor sie zur Qualitätssicherung eingereicht wird.
-1. Alle Entwicklungen MÜSSEN vor der Lieferung an den Kunden die Qualitätssicherung bestehen.
-1. Projektspezifische Anforderungen, die für den Versand erforderlich sind, KÖNNEN in einer &quot;Definition der Fertig&quot;dokumentiert werden.
+1. Vor Beginn der Projektaktivitäten muss eine definierte Projektmethodik vereinbart werden. Es KANN sich um Scrum, Waterfall oder eine andere Methodik oder eine Kombination von Methodiken handeln, solange sie definiert ist.
+1. Die Entwicklung SOLLTE ERST beginnen, wenn dem Entwicklungs-Team eine Verzweigungsstrategie für das Versionskontrollsystem zur Verfügung steht.
+1. Die Entwicklung SOLLTE ERST nach der Genehmigung für technische Spezifikationen, die Genehmigung für Benutzergeschichten und Anwendungsfälle und die Genehmigung für Testfälle beginnen, die dem Entwicklungs-Team zur Verfügung stehen.
+1. Die Entwicklung SOLLTE ERST beginnen, wenn mindestens eine Entwicklungs- und QS-Umgebung verfügbar ist.
+1. Projektspezifische Anforderungen, die für den Start der Entwicklung zwingend erforderlich sind, KÖNNEN in einer _Definition von Bereit_ dokumentiert werden.
+1. Die Genehmigung SOLLTE von einem Kundenbetreuer erfolgen, der befugt ist, Projektlieferungen zu genehmigen.
+1. In agilen Projektmethoden können nach der Genehmigung zusätzliche Anforderungen folgen. Diese Anforderungen SOLLTEN als neue Anforderungen behandelt und entsprechend erfasst, architektonisch gestaltet und geplant werden.
+1. Die gesamte Entwicklung MUSS vom Entwickler vor der Übermittlung funktionell getestet werden.
+1. Alle Entwickler SOLLTEN automatisierte Tests bestehen, bevor sie zur Code-Überprüfung übermittelt werden. KANN nach der Erstellung einer Pull-Anfrage als automatisierter Prozess konfiguriert werden.
+1. Alle Entwicklungsprojekte MÜSSEN eine manuelle Code-Prüfung durch einen technischen Architekten oder einen leitenden Entwickler bestehen, bevor sie zur Qualitätssicherung eingereicht werden.
+1. Die gesamte Entwicklung MUSS vor der Lieferung an den Kunden die Qualitätssicherung bestehen.
+1. Projektspezifische Anforderungen, die für die Bereitstellung obligatorisch sind, KÖNNEN in einer „Definition von „Fertig“ dokumentiert werden.
 
 ## Umgebung
 
-1. Alle Entwickler sollten dieselbe IDE verwenden. PhpStorm ist die empfohlene IDE für die Adobe Commerce-Entwicklung.
-1. Alle Entwickler SOLLTEN den gleichen Technologiestapel entwickeln und testen wie auf den (zukünftigen) Produktionsservern. Die Versionen der Software in diesem Technologie-Stack MÜSSEN mit der Haupt- und Nebenversion der Software übereinstimmen, die auf den Produktionsservern installiert ist. Weitere Informationen zum typischen Technologiestapel für Adobe Commerce finden Sie unter [Systemanforderungen](../../../installation/system-requirements.md) .
-1. Der Systemadministrator oder Technische Architekt kann dem Team eine zentral gepflegte lokale Entwicklungsumgebung zur Verfügung stellen, um gleiche und aktuelle lokale Umgebungen zu gewährleisten und zu fördern.
-1. Entwickler und QA-Techniker MÜSSEN Zugriff auf die Befehlszeile, die Datenbank und die Protokolldateien der QA-Umgebung haben. Dies kann eine VPN-Verbindung erfordern.
+1. Alle Entwickler SOLLTEN dieselbe IDE verwenden. PhpStorm ist die empfohlene IDE für die Adobe Commerce-Entwicklung.
+1. Alle Entwickler SOLLTEN mit demselben Technologie-Stack entwickeln und testen, der auf den (zukünftigen) Produktions-Servern verwendet wird. Die Versionen der Software in diesem Technologie-Stack MÜSSEN mit der Haupt- und Nebenversion der auf den Produktions-Servern installierten Software übereinstimmen. Weitere [ zum typischen Technologie](../../../installation/system-requirements.md)Stack für Adobe Commerce finden Sie unter „Systemanforderungen“.
+1. Der Systemadministrator oder technische Architekt kann dem Team eine zentral gepflegte lokale Entwicklungsumgebung zur Verfügung stellen, um gleiche und aktuelle lokale Umgebungen zu gewährleisten und zu fördern.
+1. Entwickler und QA-Techniker MÜSSEN Zugriff auf die Befehlszeile, die Datenbank und die Protokolldateien der QS-Umgebung haben. Dies erfordert MÖGLICHERWEISE eine VPN-Verbindung.
 
 ## Versionierung
 
-Modulversionen MÜSSEN dem [Semantic Versioning 2.0.0 standard](https://semver.org/) entsprechen.
-Abhängigkeiten von der Adobe Commerce-Codebasis sollten den [Richtlinien für Modulversionsabhängigkeiten](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) entsprechen.
+Modulversionen MÜSSEN dem Standard [Semantic Versioning 2.0.0“ ](https://semver.org/).
+Abhängigkeiten von der Adobe Commerce-Codebasis SOLLTEN den [Richtlinien für Modulversionsabhängigkeiten](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) entsprechen.
 
 ## REVISIONSKONTROLLE
 
@@ -61,4 +61,4 @@ Commits MÜSSEN von aussagekräftigen Commit-Nachrichten begleitet werden.
 1. [Nicht sichere Funktionen](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) SOLLTEN NICHT verwendet werden.
 1. [XSS-Präventionsstrategien](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) SOLLTEN angewendet werden.
 1. [Inhaltssicherheitsrichtlinien](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) SOLLTEN angewendet werden.
-1. Neue Adobe Commerce-Instanzen SOLLTEN bei der neuesten Sicherheitsversion einer Version bereitgestellt werden, die noch nicht das Datum &quot;Ende der Sicherheitskorrekturen&quot;erreicht hat. Siehe [Adobe Commerce-Software-Lebenszyklusrichtlinie](../../../release/lifecycle-policy.md).
+1. Neue Adobe Commerce-Instanzen SOLLTEN mit der neuesten Sicherheitsversion einer Version bereitgestellt werden, die das Datum des „Endes der Sicherheitskorrekturen“ noch nicht erreicht hat. Siehe [Adobe Commerce-Software-Lebenszyklusrichtlinie](../../../release/lifecycle-policy.md).

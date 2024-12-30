@@ -1,6 +1,6 @@
 ---
-title: In Ubuntu zwischengespeicherte Einrichtung einrichten
-description: Installieren und konfigurieren Sie gecacht auf Ubuntu.
+title: Einrichten von Memcaches auf Ubuntu
+description: Installieren und konfigurieren Sie memcached auf Ubuntu.
 feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
@@ -10,30 +10,30 @@ ht-degree: 0%
 
 ---
 
-# In Ubuntu zwischengespeicherte Einrichtung einrichten
+# Einrichten von Memcaches auf Ubuntu
 
-In diesem Abschnitt finden Sie Anweisungen zur Installation von gecacht auf Ubuntu.
+Dieser Abschnitt enthält Anweisungen zur Installation von memcached auf Ubuntu.
 
 >[!INFO]
 >
->Adobe empfiehlt die Verwendung der gespeicherten Version 3.0.5 oder neuer.
+>Adobe empfiehlt die Verwendung von Memcached Version 3.0.5 oder höher.
 
-Da PHP keine native Unterstützung für Memcache hat, müssen Sie eine Erweiterung für PHP installieren, um sie zu verwenden. Es sind zwei PHP-Erweiterungen verfügbar, und es ist wichtig, zu dekodieren, welche verwendet werden sollen:
+Da PHP keine native Unterstützung für memcache hat, müssen Sie eine Erweiterung für PHP installieren, um es zu verwenden. Es stehen zwei PHP-Erweiterungen zur Verfügung und es ist wichtig zu decodieren welche verwendet werden sollen:
 
-- `memcache` (_no d_) - eine ältere, aber beliebte Erweiterung, die nicht regelmäßig gepflegt wird.
-Die Erweiterung `memcache` funktioniert derzeit _nicht_ mit PHP 7. Siehe [PHP-Dokumentation für memcache](https://www.php.net/manual/en/book.memcache.php).
+- `memcache` (_kein D_) - eine ältere, aber beliebte Erweiterung, die nicht regelmäßig gepflegt wird.
+Die `memcache`-Erweiterung _funktioniert derzeit nicht_ mit PHP 7. Siehe [PHP-Dokumentation für memcache](https://www.php.net/manual/en/book.memcache.php).
 
-  Der genaue Name ist `php5-memcache` für Ubuntu.
+  Der genaue Name ist für Ubuntu `php5-memcache`.
 
-- `memcached` (_mit einem`d`_) - eine neuere und gepflegte Erweiterung, die mit PHP 7 kompatibel ist. Siehe die [PHP-Dokumentation für zwischengespeichert](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_mit einem`d`_) - eine neuere und gepflegte Erweiterung, die mit PHP 7 kompatibel ist. Siehe [PHP-Dokumentation für memcached](https://www.php.net/manual/en/book.memcached.php).
 
-  Der genaue Name ist `php5-memcached` für Ubuntu.
+  Der genaue Name ist für Ubuntu `php5-memcached`.
 
-## Installieren und konfigurieren Sie gecached auf Ubuntu
+## Installieren und Konfigurieren von Memcached auf Ubuntu
 
-**So installieren und konfigurieren Sie gecached auf Ubuntu**:
+**So installieren und konfigurieren Sie memcached auf Ubuntu**:
 
-1. Geben Sie als Benutzer mit `root` -Berechtigungen den folgenden Befehl ein:
+1. Geben Sie als Benutzer mit `root` Berechtigungen den folgenden Befehl ein:
 
    ```bash
    apt-get -y update
@@ -43,15 +43,15 @@ Die Erweiterung `memcache` funktioniert derzeit _nicht_ mit PHP 7. Siehe [PHP-Do
    apt-get -y install php5-memcached memcached
    ```
 
-1. Ändern Sie die zwischengespeicherte Konfigurationseinstellung für `CACHESIZE` und `-l`:
+1. Ändern Sie die memcached-Konfigurationseinstellung für `CACHESIZE` und `-l`:
 
    1. Öffnen Sie `/etc/memcached.conf` in einem Texteditor.
-   1. Suchen Sie den Parameter `-m` .
-   1. Wert auf mindestens `1GB` ändern
-   1. Suchen Sie den Parameter `-l` .
+   1. Suchen Sie den `-m`.
+   1. Ändern Sie den Wert in mindestens `1GB`
+   1. Suchen Sie den `-l`.
    1. Ändern Sie den Wert in `127.0.0.1` oder `localhost`
    1. Speichern Sie Ihre Änderungen in `memcached.conf` und beenden Sie den Texteditor.
-   1. Starten Sie die Zwischenspeicherung neu.
+   1. Starten Sie memcached neu.
 
       ```bash
       service memcached restart
@@ -59,19 +59,19 @@ Die Erweiterung `memcache` funktioniert derzeit _nicht_ mit PHP 7. Siehe [PHP-Do
 
 1. Starten Sie den Webserver neu.
 
-   Für Apache: `service apache2 restart`
+   Für Apache, `service apache2 restart`
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
-## Überprüfen Sie die zwischengespeicherten Vorgänge vor der Installation von Magento
+## Überprüfen der Funktionsfähigkeit von memcached vor der Installation von Magento
 
-Adobe empfiehlt, gecachete Tests durchzuführen, um sicherzustellen, dass sie funktionieren, bevor Sie Commerce installieren. Dies dauert nur wenige Minuten und kann die Fehlerbehebung später vereinfachen.
+Adobe empfiehlt, memcached zu testen, um sicherzustellen, dass es funktioniert, bevor Sie Commerce installieren. Dies dauert nur wenige Minuten und kann die Fehlerbehebung später vereinfachen.
 
-### Überprüfen, ob die zwischengespeicherten Daten vom Webserver erkannt werden
+### Überprüfen, ob der zwischengespeicherte Inhalt vom Webserver erkannt wird
 
-So überprüfen Sie, ob die zwischengespeicherten Daten vom Webserver erkannt werden:
+So überprüfen Sie, ob Memcached vom Webserver erkannt wird:
 
-1. Erstellen Sie im Basisverzeichnis des Webservers eine Datei &quot;`phpinfo.php`&quot;:
+1. Erstellen Sie eine `phpinfo.php` Datei im Stammverzeichnis des Webservers:
 
    ```php
    <?php
@@ -79,27 +79,27 @@ So überprüfen Sie, ob die zwischengespeicherten Daten vom Webserver erkannt we
    phpinfo();
    ```
 
-1. Rufen Sie diese Seite in Ihrem Webbrowser auf. Beispiel:
+1. Navigieren Sie zu dieser Seite in Ihrem Webbrowser. Beispiel:
 
    ```http
    http://192.0.2.1/phpinfo.php
    ```
 
-1. Stellen Sie sicher, dass die zwischengespeicherten Anzeigen wie folgt angezeigt werden:
+1. Stellen Sie sicher, dass memcached wie folgt angezeigt wird:
 
-   ![Vergewissern Sie sich, dass die zwischengespeicherten Daten vom Webserver erkannt werden](../../assets/configuration/memcache.png)
+   ![Bestätigen Sie, dass der zwischengespeicherte Ordner vom Webserver erkannt wird](../../assets/configuration/memcache.png)
 
-   Vergewissern Sie sich, dass Sie die zwischengespeicherte Version 3.0.5 oder höher verwenden.
+   Stellen Sie sicher, dass Sie memcached Version 3.0.5 oder höher verwenden.
 
-   Wenn die zwischengespeicherte Seite nicht angezeigt wird, starten Sie den Webserver neu und aktualisieren Sie die Browserseite. Wenn die Erweiterung weiterhin nicht angezeigt wird, überprüfen Sie, ob Sie die Erweiterung `php-pecl-memcached` installiert haben.
+   Wenn memcached nicht angezeigt wird, starten Sie den Webserver neu und aktualisieren Sie die Browser-Seite. Wenn es immer noch nicht angezeigt wird, überprüfen Sie, ob Sie die `php-pecl-memcached`-Erweiterung installiert haben.
 
 ### Überprüfen, ob zwischengespeicherte Daten zwischengespeichert werden können
 
-Dieser Test verwendet ein PHP-Skript, um zu überprüfen, ob zwischengespeicherte Cachedaten speichern und abrufen können.
+Dieser Test verwendet ein PHP-Skript, um zu überprüfen, ob memcached Cache-Daten speichern und abrufen kann.
 
 Weitere Informationen zu diesem Test finden Sie im Tutorial [Installieren und Verwenden von Memcache auf Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 
-Erstellen Sie `cache-test.php` im Basisverzeichnis des Webservers mit folgendem Inhalt:
+Erstellen Sie `cache-test.php` im Stammverzeichnis des Webservers mit folgendem Inhalt:
 
 ```php
 $meminstance = new Memcached();
@@ -116,25 +116,25 @@ if ($result) {
 }
 ```
 
-Wobei `<memcached hostname or ip>` entweder `localhost`, `127.0.0.1` oder der Memcache-Hostname oder die IP-Adresse ist. Der `<memcached port>` ist der Überwachungsanschluss, standardmäßig `11211`.
+Dabei ist `<memcached hostname or ip>` entweder `localhost`, `127.0.0.1` oder der Hostname oder die IP-Adresse des Memcaches. Der `<memcached port>` ist der Listen-Port. Standardmäßig ist dies `11211`.
 
-Rufen Sie diese Seite in einem Webbrowser auf. Beispiel
+Wechseln Sie zu dieser Seite in einem Webbrowser. Beispiel
 
 ```http
 http://192.0.2.1/cache-test.php
 ```
 
-Wenn Sie die Seite zum ersten Mal aufrufen, wird Folgendes angezeigt: `No matching key found. Refresh the browser to add it!`
+Wenn Sie das erste Mal zur Seite gehen, wird Folgendes angezeigt: `No matching key found. Refresh the browser to add it!`
 
 Aktualisieren Sie den Browser. Die Nachricht ändert sich in `Successfully retrieved the data!`
 
-Schließlich können Sie die memcache-Schlüssel mithilfe von Telnet anzeigen:
+Schließlich können Sie die Memcache-Schlüssel mithilfe von Telnet anzeigen:
 
 ```bash
 telnet localhost <memcache port>
 ```
 
-Geben Sie an der Eingabeaufforderung ein.
+Geben Sie bei der Eingabeaufforderung Folgendes ein
 
 ```shell
 stats items
@@ -155,7 +155,7 @@ STAT items:2:expired_unfetched 0
 STAT items:2:evicted_unfetched 0
 ```
 
-Speicherkapazität leeren und Telnet beenden:
+Leeren des zwischengespeicherten Speichers und Beenden von Telnet:
 
 ```shell
 flush_all

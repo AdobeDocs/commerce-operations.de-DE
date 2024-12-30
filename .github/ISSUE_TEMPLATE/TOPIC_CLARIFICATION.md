@@ -1,7 +1,7 @@
 ---
 name: Topic clarification/correction
 about: Create a request to clarify or correct a documentation topic
-title: Themenaktualisierung anfordern
+title: Anfrage für eine Themenaktualisierung
 labels: ''
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601

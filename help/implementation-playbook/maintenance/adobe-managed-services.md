@@ -1,6 +1,6 @@
 ---
 title: Adobe Managed Services
-description: Erfahren Sie, wie Adobe Managed Services bei der Unterstützung und Wartung Ihrer Adobe Commerce-Implementierung helfen kann.
+description: Erfahren Sie, wie Sie mit Adobe Managed Services Ihre Adobe Commerce-Implementierung unterstützen und verwalten können.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Adobe Managed Services
 
-Adobe Commerce ist eine Plattform für die Bereitstellung von E-Commerce-Funktionen, die robuste native Funktionen, umfassende Anpassungsoptionen und Integrationen mit Drittanbietern umfasst.
+Adobe Commerce ist eine Plattform zur Bereitstellung von E-Commerce-Funktionen, die zuverlässige Standardfunktionen, umfangreiche Anpassungsoptionen und Integrationen von Drittanbietern umfasst.
 
-Adobe Managed Services bietet gehostete und verwaltete Anwendungen und Infrastruktur für Adobe Commerce auf Cloud Infrastructure Pro-Plänen.
+Adobe Managed Services bietet gehostete und verwaltete Anwendungen und Infrastrukturen für Adobe Commerce auf Cloud-Infrastrukturen.
 
 ## Vorteile
 
@@ -23,32 +23,32 @@ Adobe Managed Services bietet gehostete und verwaltete Anwendungen und Infrastru
 
 ### Vergleich der Implementierungsoptionen
 
-Adobe Managed Services bietet wesentliche Vorteile gegenüber lokalen und nicht verwalteten Cloud-Implementierungen, darunter:
+Adobe Managed Services bietet wichtige Vorteile gegenüber lokalen und nicht verwalteten Cloud-Implementierungen, darunter:
 
-- **Verbesserte Service-Level-Ziele (SLTs)** - Schnellere Reaktionszeiten als die standardmäßige Adobe Commerce-Unterstützung.
-- **Verbesserte Service Level Agreements (SLAs)** - Anwendungsebene von 99,9 %, die reguläre Adobe Commerce für Cloud-Infrastrukturkunden auf das 99,99 %-Infrastrukturniveau erzielen.
-- **Designated Cloud-Expertise**: Managed Services bietet Kunden einen designierten Customer Success Engineer (CSE), der als Experten für Anwendungen und Cloud-Infrastruktur fungiert. Der CSE arbeitet mit Kunden und ihren Partnern zusammen und bietet ihnen Best Practices und Anleitungen, um die Markteinführung zu beschleunigen, einschließlich:
-   - Anleitung und Support durch den Onboarding-Prozess
-   - Verwaltung der Bereitstellung und Plattformeinrichtung
-   - Beratung zu Architekturprinzipien für Integrationen und Anpassungen
-   - Verwaltung von Vorfällen und Betriebskontinuität
-   - Unterstützung von Ereignissen durch Planung, Ausführung und Überwachung
-   - Cloud-Support und -Expertise (proaktive Optimierung, Reporting und Best Practices)
+- **Erweiterte Service-Level-Targets (SLTs)** - Schnellere Antwortzeiten als bei der standardmäßigen Adobe Commerce-Unterstützung.
+- **Verbesserte Service Level Agreements (SLAs)** - 99,9 % Anwendungs-Level, mit dem reguläre Kunden von Adobe Commerce auf Cloud-Infrastrukturen die 99,99 %-Infrastruktur-Level erreichen.
+- **Designated Cloud Expertise** - Managed Services stellt seinen Kunden einen Designated Customer Success Engineer (CSE) zur Verfügung, der als Anwendungs- und Cloud-Infrastrukturexperte dient. Der CSE arbeitet mit Kunden und deren Partnern zusammen und bietet ihnen Best Practices und Anleitungen zur Beschleunigung der Markteinführungszeit, darunter:
+   - Anleitung und Support während des Onboarding-Prozesses
+   - Bereitstellung und Platform-Setup verwalten
+   - Beratung zu Architekturgrundsätzen für Integrationen und Anpassungen
+   - Management von Vorfällen und Business Continuity fördern
+   - Unterstützung bei Ereignissen durch Planung, Ausführung und Überwachung
+   - Cloud-Support und -Know-how (proaktive Optimierung, Reporting und Best Practices)
 
-Sehen Sie sich die folgende Infografik an, um einen detaillierteren Vergleich der wichtigsten Managed Services-Vorteile zu erhalten:
+Die folgende Infografik bietet einen detaillierteren Vergleich der wichtigsten Vorteile von Managed Services:
 
-![Infografik, die einen Vergleich zwischen Adobe Managed Services und anderen Adobe Commerce-Implementierungsoptionen anzeigt](../../assets/playbooks/managed-services-compare.png)
+![Infografik, die einen Vergleich von Adobe Managed Services mit anderen Implementierungsoptionen von Adobe Commerce zeigt](../../assets/playbooks/managed-services-compare.png)
 
 ## Rollen und Zuständigkeiten
 
-Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwicklung, Staging und Produktion von Adobe Commerce auf Managed Services-Systemen. Damit die Entwicklung und Implementierung der Lösung so effizient wie möglich ablaufen kann, müssen der Kunde und der Partner ihre Rollen verstehen und erfüllen (siehe unten):
+Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Staging und Produktion von Adobe Commerce auf Managed Services-Systemen. Damit die Entwicklung und Bereitstellung der Lösung so effizient wie möglich ablaufen kann, ist es wichtig, dass Kunden und Partner ihre Rollen verstehen und erfüllen, wie unten beschrieben:
 
 <table>
     <thead>
         <tr>
             <th></th>
-            <th>Kunde</th>
-            <th>Partner</th>
+            <th>KUNDE</th>
+            <th>Teilhaber</th>
             <th>Customer Success Engineer</th>
         </tr>
     </thead>
@@ -57,45 +57,45 @@ Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwick
             <td colspan="4" style="background:lightgray;"><strong>Bereitstellung</strong></td>
         </tr>
         <tr>
-            <td>Auswahl der Cloud-Region</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>Cloud-Regionsauswahl</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Instanzbereitstellung</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Interne Netzwerkkonfiguration und Sicherheit</td>
+            <td>Interne Netzwerkkonfiguration und -sicherheit</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Bereitstellung von Adobe Commerce-Anwendungen</td>
+            <td>Adobe Commerce-Anwendungsbereitstellung</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Zugriff auf Adobe Commerce Source-Code</td>
+            <td>Adobe Commerce Source-Codezugriff</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>CDN-Dienstbereitstellung</td>
+            <td>Bereitstellung des CDN-Services</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td>Lokale Entwicklungsumgebung</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td></td>
         </tr>
         <tr>
@@ -103,111 +103,111 @@ Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwick
         </tr>
         <tr>
             <td>Anforderungserfassung und Projektmanagement</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Anwendungsentwicklung</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Anwendungstests</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>Staging und Übergang</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>Staging und Transition</strong></td>
         </tr>
         <tr>
-            <td>Codebereitstellung für Entwicklung, Integration und Staging</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Bereitstellung von Code für Entwicklung, Integration und Staging</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Inhaltsbereitstellung</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
-            <td>Entwicklung von Anwenderakzeptanztests</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>Entwicklung von Benutzerakzeptanztests</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td>Advisor</td>
         </tr>
         <tr>
-            <td>Anwenderakzeptanztests</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>Benutzerakzeptanztests</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Benutzerdefinierte Überwachungsanforderungen</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Vom Kunden bereitgestellte SSL-Zertifikate</td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
             <td></td>
-            <td>Mitarbeiter</td>
+            <td>Mitwirkender</td>
         </tr>
         <tr>
-            <td>Entwicklung von Leistungstests</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Entwicklung von Leistungs- und Belastungstests</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Leistungs- und Belastungstests</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
-            <td>Anpassungsentwicklung und Qualitätssicherung</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Anpassung, Entwicklung und Qualitätssicherung</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Runbook-Abschluss</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
         </tr>
         <tr>
             <td>Runbook-Überprüfung</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td colspan="4" style="background:lightgray;"><strong>Launch</strong></td>
+            <td colspan="4" style="background:lightgray;"><strong>Starten</strong></td>
         </tr>
         <tr>
             <td>Go-Live-Checkliste</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Konferenzraum für Live-Veranstaltungen</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Konferenzraum für Go-Live-Veranstaltungen</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Produktionscode-Implementierung</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Bereitstellung des Produktions-Codes</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td colspan="4" style="background:lightgray;"><strong>Produktion</strong></td>
@@ -216,73 +216,73 @@ Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwick
             <td>Überwachung der Produktionsinfrastruktur</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td>Überwachung der Hauptanwendung</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Produktionsereignisantwort</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Reaktion auf Produktionsereignisse</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Instandhaltung auf Infrastruktur- und Betriebssystemebene</td>
+            <td>Wartung auf Infrastruktur- und Betriebssystemebene</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Wartungs- und Sicherheits-Patches für benutzerdefinierten Code</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Wartungs- und Sicherheits-Patches für benutzerspezifischen Code</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
-            <td>Zugriff auf Adobe Commerce-Produktaktualisierungen und -Upgrades gewähren</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Zugriff auf Adobe Commerce-Produktaktualisierungen und -Upgrades</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td>Anwenden von Adobe Commerce-Produktaktualisierungen und -Upgrades</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
             <td>Advisor</td>
         </tr>
         <tr>
-            <td>Ändern des Genehmigungsbogens zur Genehmigung von Produktionsbereitstellungen</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Genehmigungskonsole ändern, um Produktionsbereitstellungen zu genehmigen</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Produktionsanwendungsadministration</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>Verwaltung von Produktions-Anwendungen</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td>Advisor</td>
         </tr>
         <tr>
-            <td>Optimierung der Produktionsinfrastruktur</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Abstimmung der Produktionsinfrastruktur</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Skalierung der Produktionsarchitektur</td>
+            <td>Skalieren der Produktionsarchitektur</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td>Produktionssicherungen und -wiederherstellung</td>
             <td></td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td colspan="4" style="background:lightgray;"><strong>Sicherheit und Compliance</strong></td>
@@ -291,77 +291,77 @@ Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwick
             <td>SOC-2-Prüfung des Dienstes</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>PCI Zertifizierung der Infrastruktur</td>
+            <td>PCI-Zertifizierung der Infrastruktur</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>PCI-Zertifizierung der angepassten Anwendung</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>PCI-Zertifizierung der benutzerdefinierten Anwendung</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td></td>
         </tr>
         <tr>
             <td>Sicherheitsprüfungen der Kernanwendungen</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td>Advisor</td>
         </tr>
         <tr>
             <td>Sicherheitsprüfungen der Anpassungen und Erweiterungen</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td></td>
         </tr>
         <tr>
             <td>Penetrationstests der Kundeninstanzen der Anwendungen</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
             <td></td>
         </tr>
         <tr>
-            <td>Web Application Firewall Rules (WAF)</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Firewall-Regeln für Web-Anwendungen (WAF)</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Überwachung der Intrusionserkennung</td>
+            <td>Überwachung der Eingriffserkennung</td>
             <td></td>
             <td></td>
-            <td>Inhaber</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td>Anwendungs- und DB-Ereignisüberwachung</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Webanwendungs-Firewall-Ereignisüberwachung</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Ereignisüberwachung der Web-Anwendungs-Firewall</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
             <td>Benutzerverwaltung und SSO-Integration</td>
-            <td>Inhaber</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
+            <td>Besitzer</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
         </tr>
         <tr>
-            <td>Antwort auf Sicherheitsereignisse</td>
-            <td>Mitarbeiter</td>
-            <td>Mitarbeiter</td>
-            <td>Inhaber</td>
+            <td>Antwort auf Sicherheitsereignis</td>
+            <td>Mitwirkender</td>
+            <td>Mitwirkender</td>
+            <td>Besitzer</td>
         </tr>
         <tr>
-            <td>Einrichten, Sichern und Warten der Verbindung zu Unternehmensnetzwerken und -ressourcen </td>
-            <td>Inhaber</td>
+            <td>Einrichten, Sichern und Verwalten der Verbindung zu Unternehmensnetzwerken und -ressourcen </td>
+            <td>Besitzer</td>
             <td>Advisor</td>
             <td>Advisor</td>
         </tr>
@@ -370,28 +370,28 @@ Adobe bietet eine Reihe von Dienstleistungen rund um die Bereitstellung, Entwick
 
 ## Sicherheit
 
-Der Adobe-Sicherheits-Stack für Managed Services erstellt Sicherheit in auf allen Ebenen mithilfe von Automatisierung und Konsistenz, um menschliche Fehler zu reduzieren. Entwicklungs- und Betriebsteams übernehmen automatisch Sicherheitskontrollen von verschiedenen Ebenen des Stapels.
+Der Adobe-Sicherheitsstack für Managed Services baut Sicherheit auf jeder Ebene in auf. Dabei werden Automatisierung und Konsistenz verwendet, um menschliches Versagen zu reduzieren. Entwicklungs- und Operations-Teams übernehmen automatisch Sicherheitskontrollen aus verschiedenen Ebenen des Stacks.
 
-Plattformpartner wie Amazon Web Services und Microsoft Azure stellen bei der Anwendung von Plattformanpassungen eine maximale Sicherheitsabdeckung sicher, während das Managed Services-Team zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Scannen und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter [Adobe Commerce Security](https://business.adobe.com/products/magento/secure-ecommerce.html) .
+Plattformpartner wie Amazon Web Services und Microsoft Azure sorgen für eine maximale Sicherheitsabdeckung bei der Anwendung von Plattformanpassungen, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Überprüfung und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter {](https://business.adobe.com/products/magento/secure-ecommerce.html)}Adobe Commerce-Sicherheit.[
 
-Das folgende Diagramm zeigt den Adobe Managed Services Security Technology Stack:
+Die folgende Abbildung zeigt den Sicherheitstechnologie-Stack von Adobe Managed Services:
 
-![Diagramm mit Adobe Managed Services-Sicherheitsstapel](../../assets/playbooks/managed-services-security-stack.svg)
+![Abbildung mit dem Adobe Managed Services-Sicherheitsstapel](../../assets/playbooks/managed-services-security-stack.svg)
 
-## Upgrade-Hilfe
+## Upgrade-Unterstützung
 
-Das Managed Services-Team spielt eine aktive Rolle bei der Planung und Unterstützung des Aktualisierungsprozesses. Ihr Customer Success Engineer (CSE) arbeitet mit Ihrem Upgrade-Projektteam zusammen, einschließlich Projektmanagern und Entwicklern (Experten für interne Themen, Adobe-zertifizierte Partner oder Fachkräfte aus Adobe Consulting), um Ihrem Team bei der ordnungsgemäßen Planung und Einhaltung der Best Practices während des Upgrades zu helfen.
+Das Managed Services-Team spielt eine aktive Rolle bei der Planung und Unterstützung des Upgrade-Prozesses. Ihr Customer Success Engineer (CSE) arbeitet mit Ihrem Upgrade-Projektteam zusammen, einschließlich Projektmanagern und Entwicklern (interne Fachexperten, Adobe-zertifizierte Partner oder Fachleute von Adobe Consulting), um Ihr Team dabei zu unterstützen, eine ordnungsgemäße Planung und die Einhaltung der Best Practices während des Upgrades sicherzustellen.
 
-Managed Services CSEs haben mit Adobe Commerce-Kunden zusammengearbeitet, um Aktualisierungen in großen Umgebungen auszuführen. Ihr CSE kann Ihnen helfen, Expertenwissen zu nutzen, um den Erfolg der Aktualisierung zu maximieren und gleichzeitig Ausfallzeiten zu minimieren und das Gesamtrisiko zu verringern. Darüber hinaus arbeiten Managed Services-CSEs mit Ihrer dedizierten Staging-Umgebung für die Aktualisierung, damit vorhandene Produktionsprozesse bei der Validierung der Aktualisierung nicht beeinträchtigt werden.
+Die CSEs von Managed Services haben mit Adobe Commerce-Kunden zusammengearbeitet, um Upgrades in großen Umgebungen durchzuführen. Ihr CSE kann Ihnen dabei helfen, das Expertenwissen zu nutzen, um den Upgrade-Erfolg zu maximieren und gleichzeitig Ausfallzeiten zu minimieren und das Gesamtrisiko zu reduzieren. Darüber hinaus arbeiten die CSEs von Managed Services mit Ihrer dedizierten Staging-Umgebung für das Upgrade zusammen, damit bestehende Produktionsprozesse bei der Validierung des Upgrades nicht beeinträchtigt werden.
 
-Adobe bietet eine Reihe von Diensten rund um die Bereitstellung, Entwicklung, Staging und Produktion Ihres Managed Services-Systems. Die folgende Tabelle bietet einen Überblick über die Rollen, die die einzelnen Teilnehmer im Aktualisierungsprozess spielen:
+Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Staging und Produktion Ihres Managed Services-Systems. Die folgende Tabelle bietet einen Überblick über die Rollen, die jeder Teilnehmer beim Upgrade-Prozess spielt:
 
 <table>
 <thead>
   <tr>
     <th>Schritt</th>
     <th>Aufgabe</th>
-    <th>Kunde</th>
+    <th>KUNDE</th>
     <th>Entwicklungspartner*</th>
     <th>Managed Services</th>
   </tr>
@@ -400,66 +400,66 @@ Adobe bietet eine Reihe von Diensten rund um die Bereitstellung, Entwicklung, St
   <tr>
     <td rowspan="3">Upgrade planen</td>
     <td>Upgrade-Projektplan erstellen</td>
-    <td>Inhaber</td>
-    <td>Mitarbeiter</td>
-    <td>Contributor<br />CSE bietet eine Upgrade-Vorlage und Beispiele für Aktualisierungspläne. Hier finden Sie Tipps und Best Practices.</td>
+    <td>Besitzer</td>
+    <td>Mitwirkender</td>
+    <td>Contributor<br />CSE stellt Beispiele für Upgrade-Vorlagen und -Pläne bereit und bietet Ratschläge und Tipps zu Best Practices.</td>
   </tr>
   <tr>
-    <td>Ermitteln der erforderlichen Infrastrukturänderungen</td>
+    <td>Bestimmen erforderlicher Infrastrukturänderungen</td>
     <td></td>
-    <td>Mitarbeiter</td>
-    <td>Inhaber<br />CSE überprüft die Staging- und Produktionsinfrastruktur, um eine ordnungsgemäße Größenanpassung sicherzustellen.</td>
+    <td>Mitwirkender</td>
+    <td>Besitzer<br />CSE überprüft die Staging- und Produktionsinfrastruktur, um eine ordnungsgemäße Dimensionierung sicherzustellen.</td>
   </tr>
   <tr>
-    <td>Bewertung der Upgrade-Komplexität<br />Identifizieren und Dokumentieren von Paketen, Problemen und Fehlerbehebungen sowie von Drittanbieter- und benutzerdefinierten Modulen</td>
-    <td>Mitarbeiter</td>
-    <td>Inhaber</td>
-    <td>Mitarbeiter<br />CSE bietet Berichte und Empfehlungen zum Upgrade-Kompatibilitätstool.</td>
+    <td>Bewertung der Komplexität <br /> Upgrades, Identifizierung und Dokumentation von Paketen, Problemen und Fehlerbehebungen sowie benutzerdefinierten Modulen von Drittanbietern</td>
+    <td>Mitwirkender</td>
+    <td>Besitzer</td>
+    <td>Contributor<br />CSE bietet Berichte und Empfehlungen des Upgrade-Kompatibilitäts-Tools.</td>
   </tr>
   <tr>
-    <td rowspan="3">Ausführen des Upgrades</td>
-    <td>Upgrade der Infrastrukturdienste<br />[MariaDB, Redis, Open Search und Rabbit MQ] (Staging und Produktion)</td>
+    <td rowspan="3">Führen Sie ein Upgrade durch</td>
+    <td>Upgrade der Infrastruktur<br />[MariaDB, Redis, Open Search und Rabbit MQ] (Staging und Produktion)</td>
     <td></td>
     <td></td>
-    <td>Owner<br />CSE koordiniert Aktualisierungen des Infrastrukturdienstes.<br />CSE plant die Veranstaltung eines Konferenztreffens für Upgrades.<br />CSE unterstützt die Datenmigration von der Produktion in die Staging-Umgebung.</td>
+    <td>Besitzer<br />CSE koordiniert Aktualisierungen des Infrastruktur-Service.<br />CSE plant eine Konferenzveranstaltung für Upgrades.<br />CSE unterstützt die Datenmigration von der Produktion zum Staging.</td>
   </tr>
   <tr>
-    <td>Aktualisieren der Codebasis und -anpassungen von Commerce; Neukompilierung von Code und Neugestaltung von Code</td>
-    <td>Mitarbeiter</td>
-    <td>Inhaber</td>
+    <td>Aktualisieren der Commerce-Code-Basis und Anpassungen; Neukompilierung und Umgestaltung des Codes</td>
+    <td>Mitwirkender</td>
+    <td>Besitzer</td>
     <td></td>
   </tr>
   <tr>
-    <td>Prüfungen und Fehlerbehebung nach der Aktualisierung durchführen</td>
+    <td>Durchführen von Prüfungen nach einem Upgrade und Fehlerbehebung</td>
     <td></td>
-    <td>Inhaber</td>
-    <td>Contributor<br />CSE führt nach der Aktualisierung Runbook aus, um Probleme im Zusammenhang mit der Aktualisierung zu erkennen und zu beheben.</td>
+    <td>Besitzer</td>
+    <td>Contributor<br />CSE führt Runbook nach dem Upgrade aus, um Probleme im Zusammenhang mit dem Upgrade zu erkennen und zu beheben.</td>
   </tr>
   <tr>
     <td rowspan="3">UAT und Launch</td>
     <td>Ausführen von Leistungs- und Sicherheitstests</td>
-    <td>Mitarbeiter</td>
-    <td>Inhaber</td>
-    <td>Contributor<br />CSE unterstützt beim Lasttest durch die Überwachung der Leistung der Anwendung und Infrastruktur.<br />CSE unterstützt Sie bei der Konfiguration des Commerce Security Scan Tool.</td>
+    <td>Mitwirkender</td>
+    <td>Besitzer</td>
+    <td>Contributor<br />CSE unterstützt Lasttests, indem die Leistung von Anwendungen und Infrastrukturen überwacht wird.<br />CSE unterstützt Sie bei der Konfiguration des Commerce Security Scan Tools.</td>
   </tr>
   <tr>
     <td>Benutzerakzeptanztests beim Staging</td>
-    <td>Inhaber</td>
-    <td>Mitarbeiter</td>
-    <td>Mitarbeiter<br />CSE überprüft, ob die Anwendung und Infrastruktur nach der Aktualisierung ordnungsgemäß ausgeführt werden.</td>
+    <td>Besitzer</td>
+    <td>Mitwirkender</td>
+    <td>Contributor<br />CSE validiert, ob die Anwendung und die Infrastruktur nach dem Upgrade ordnungsgemäß ausgeführt werden.</td>
   </tr>
   <tr>
-    <td>Starten in die Produktion</td>
-    <td>Mitarbeiter</td>
-    <td>Inhaber</td>
-    <td>Contributor<br />CSE plant die Eröffnung des Konferenz-Meeting-Ereignisses.</td>
+    <td>Produktionsstart</td>
+    <td>Mitwirkender</td>
+    <td>Besitzer</td>
+    <td>Contributor<br />CSE plant den Beginn einer Konferenzveranstaltung.</td>
   </tr>
   <tr>
-    <td>Post-Launch</td>
+    <td>Nach dem Launch</td>
     <td></td>
-    <td>Mitarbeiter</td>
-    <td>Mitarbeiter</td>
-    <td>Inhaber<br />CSE überwacht die Leistung der Anwendung und Infrastruktur.</td>
+    <td>Mitwirkender</td>
+    <td>Mitwirkender</td>
+    <td>Owner<br />CSE überwacht die Leistung von Anwendungen und Infrastrukturen.</td>
   </tr>
 </tbody>
 </table>

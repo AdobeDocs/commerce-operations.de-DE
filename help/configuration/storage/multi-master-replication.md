@@ -18,22 +18,22 @@ ht-degree: 0%
 
 Das Einrichten der Datenbankreplikation bietet die folgenden Vorteile:
 
-- Datensicherung
-- Aktiviert die Datenanalyse ohne Beeinträchtigung der Master-Datenbank
+- Stellt Datensicherung bereit
+- Aktiviert die Datenanalyse ohne Beeinträchtigung der primären Datenbank
 - Skalierbarkeit
 
-MySQL-Datenbanken replizieren asynchron, was bedeutet, dass Slaves nicht dauerhaft verbunden werden müssen, um Updates vom Master zu erhalten.
+MySQL-Datenbanken werden asynchron repliziert, was bedeutet, dass Slaves nicht dauerhaft verbunden sein müssen, um Aktualisierungen vom Master zu erhalten.
 
 ## Datenbankreplikation konfigurieren
 
-Eine ausführliche Diskussion über die Datenbankreplikation fällt nicht in diesen Leitfaden. Zur Einrichtung können Sie eine Ressource wie die folgende konsultieren:
+Eine ausführliche Erläuterung der Datenbankreplikation würde den Rahmen dieses Handbuchs sprengen. Zur Einrichtung können Sie eine Ressource wie die folgende heranziehen:
 
 - [MySQL-Dokumentation](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
 - [Einrichten der Master-Slave-Replikation in MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce stellt Beispiel-MySQL-Konfigurationen für Ihre Slave-Datenbanken bereit. Eine einfache Konfiguration wird mit der `ResourceConnections`-Klasse `README.md` bereitgestellt.
+Commerce bietet MySQL-Beispielkonfigurationen für Ihre Slave-Datenbanken. Eine einfache Konfiguration wird mit der `ResourceConnections`-Klasse `README.md` bereitgestellt.
 
-Die folgenden Informationen sind weiter gefasst und dienen nur Ihren Informationen:
+Das folgende Kapitel ist weiter fortgeschritten und dient nur zu Ihrer Information:
 
 ```php
    return array (
@@ -124,7 +124,7 @@ Die folgenden Informationen sind weiter gefasst und dienen nur Ihren Information
 
 Um die Leistung der Master-Slave-Replikation zu verbessern, können Sie einige Tabellen auf Slave-Instanzen filtern. Es wird empfohlen, alle temporären Tabellen mit dem Namensmuster `search\_tmp\_%` zu filtern, die für die Katalogsuche verwendet werden.
 
-Fügen Sie dazu der Datei `my.cnf` in Ihren Slave-Instanzen die folgende Zeile hinzu:
+Fügen Sie dazu die folgende Zeile in Ihre `my.cnf`-Datei auf Ihren Slave-Instanzen:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

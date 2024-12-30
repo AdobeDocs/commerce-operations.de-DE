@@ -7,90 +7,90 @@ ht-degree: 3%
 ---
 # Technische Dokumentation zu Adobe Commerce
 
-Wir freuen uns über Beiträge aus der Community sowie von Adobe-Mitarbeitern von außerhalb der Dokumentationsteams.
+Wir freuen uns über Beiträge von der Community sowie von Adobe-Mitarbeitern von außerhalb der Dokumentations-Teams.
 
-## Adobe Öffnen des Source-Verhaltenskodex
+## Adobe Open Source Verhaltenskodex
 
 Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.md) bzw. den [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
 
 ## Über Ihre Beiträge zum Adobe von Inhalten
 
-Siehe [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Siehe das [Adobe-Handbuch für Mitwirkende an Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Aktualisierungen vornehmen, rufen Sie den Artikel auf und klicken Sie auf den Feedback-Bereich, der unten im Artikel angezeigt wird. Klicken Sie auf **Detaillierte Feedback-Optionen** und klicken Sie dann auf **Bearbeiten vorschlagen** , um zur Markdown-Quelldatei auf GitHub zu wechseln. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zum [Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)Dokument .
 
-Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentationen und Codebeispiele in diesem Repository einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
+Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repo einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
 ### Wichtige Änderungen oder neue Artikel von Community-Mitgliedern
 
-Wenn Sie Mitglied der Adobe-Community sind und einen neuen Artikel erstellen oder umfangreiche Änderungen einreichen möchten, verwenden Sie die Registerkarte Probleme im Git-Repository, um ein Problem zu melden und eine Konversation mit dem Dokumentationsteam zu beginnen. Sobald Sie sich auf einen Plan geeinigt haben, müssen Sie mit einem Mitarbeiter zusammenarbeiten, um diesen neuen Inhalt durch eine Kombination aus Arbeit in den öffentlichen und privaten Repositorys einzubringen.
+Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wichtige Änderungen vornehmen möchten, verwenden Sie im Git-Repository die Registerkarte „Probleme“, um ein Problem zu senden und eine Konversation mit dem Dokumentations-Team zu beginnen. Sobald Sie sich auf einen Plan geeinigt haben, müssen Sie mit einem Mitarbeiter zusammenarbeiten, um diese neuen Inhalte durch eine Kombination von Arbeiten in den öffentlichen und privaten Repositorys einzubringen.
 
 <!--
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Größere Veränderungen für Adobe-Mitarbeiter
+### Wesentliche Veränderungen durch Adobe-Mitarbeiter
 
-Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihr Auftrag ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
+Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
 ## Tools und Einrichtung
 
-Community-Mitarbeiter können die GitHub-Benutzeroberfläche für die grundlegende Bearbeitung verwenden oder das Repository abspalten, um wichtige Beiträge zu leisten.
+Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
+Weitere Informationen finden Sie im [Handbuch für Mitwirkende an Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)Dokumenten .
 
-## Verwenden von Markdown zum Formatieren Ihres Themas
+## Verwenden von Markdown zum Formatieren des Themas
 
-Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie mit Markdown nicht vertraut sind, lesen Sie:
+Alle Artikel in diesem Repository verwenden GitHub-Markdown. Wenn Sie mit Markdown nicht vertraut sind, lesen Sie:
 
 * [Markdown-Grundlagen](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Druckbares Markdown-Cheatsheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [Druckbare Markdown-Anleitung](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Vorlagen
 
-Für einige Themen verwenden wir Datendateien und Vorlagen, um veröffentlichte Inhalte zu generieren. Anwendungsbeispiele für diesen Ansatz:
+Bei einigen Themen verwenden wir Datendateien und Vorlagen, um veröffentlichte Inhalte zu generieren. Anwendungsfälle für diesen Ansatz sind:
 
-* Veröffentlichen großer Mengen programmatisch generierter Inhalte
-* Bereitstellung einer einzigen &quot;Source of Truth&quot; für Kunden auf mehreren Systemen, die maschinenlesbare Dateiformate wie YAML für die Integration benötigen (z. B. Site-Wide Analysis Tool)
+* Veröffentlichen großer Mengen programmgesteuert generierter Inhalte
+* Bereitstellung einer zentralen Datenquelle für Kunden über mehrere Systeme hinweg, die maschinenlesbare Dateiformate wie YAML für die Integration benötigen (z. B. das Site-Wide Analysis Tool)
 
 Beispiele für vorlagenbasierte Inhalte sind unter anderem:
 
-* [Referenz zu CLI-Tools](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [Tabellen zur Produktverfügbarkeit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-* [Tabellen mit Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+* [CLI-Tools-Referenz](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Vorlageninhalt generieren
 
-Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabellen zur Produktverfügbarkeit und zu den Systemanforderungen hinzufügen. Die Wartung aller anderen Vorlageninhalte wird entweder von einem dedizierten Team-Mitglied automatisiert oder verwaltet. Diese Anweisungen sind für die meisten Autoren gedacht.
+Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabellen Produktverfügbarkeit und Systemanforderungen hinzufügen. Die Pflege aller anderen vorlagenbasierten Inhalte wird entweder automatisiert oder von einem dedizierten Team-Mitglied verwaltet. Diese Anweisungen sind für die meisten Autoren gedacht.
 
 >**HINWEIS:**
 >
->* Das Generieren von Vorlageninhalten erfordert das Arbeiten an der Befehlszeile in einem Terminal.
->* Ruby muss installiert sein, um das Rendering-Skript ausführen zu können. Die erforderliche Version finden Sie unter [_jekyll/.ruby-version](_jekyll/.ruby-version) .
+>* Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
+>* Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
 
-Im Folgenden finden Sie eine Beschreibung der Dateistruktur für Vorlageninhalte:
+Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
 
-* `_jekyll` - Enthält Vorlagenthemen und erforderliche Assets
-* `_jekyll/_data` - Enthält die maschinenlesbaren Dateiformate zum Rendern von Vorlagen
-* `_jekyll/templated` - Enthält HTML-basierte Vorlagendateien, die die Flüssig-Vorlagensprache verwenden
-* `help/_includes/templated` - Enthält die generierte Ausgabe für Vorlageninhalte im Dateiformat `.md` , damit sie in Experience League-Themen veröffentlicht werden kann. Das Rendering-Skript schreibt die generierte Ausgabe automatisch in dieses Verzeichnis für Sie
+* `_jekyll` - Enthält vorlagenbasierte Themen und erforderliche Assets
+* `_jekyll/_data` - Enthält die maschinenlesbaren Dateiformate, die zum Rendern von Vorlagen verwendet werden
+* `_jekyll/templated` - Enthält HTML-basierte Vorlagendateien, die die Liquid Template-Sprache verwenden
+* `help/_includes/templated` - Enthält die generierte Ausgabe für Vorlageninhalte `.md` Dateiformat, damit sie in Experience League-Themen veröffentlicht werden können. Das Renderskript schreibt die generierte Ausgabe automatisch in dieses Verzeichnis für Sie
 
 So aktualisieren Sie Vorlageninhalte:
 
-1. Öffnen Sie in Ihrem Texteditor eine Datendatei im Verzeichnis `/jekyll/_data` . Beispiel:
+1. Öffnen Sie in Ihrem Texteditor eine Datendatei im `/jekyll/_data`. Beispiel:
 
-   * [Tabellen zur Produktverfügbarkeit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   * [Tabellen mit Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   * [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. Verwenden Sie die vorhandene YAML-Struktur, um Einträge zu erstellen.
 
-   Um beispielsweise eine Version von Adobe Commerce zu den Verfügbarkeitstabellen des Produkts hinzuzufügen, fügen Sie jedem Eintrag in den Abschnitten `extensions` und `services` der Datei `/jekyll/_data/product-availability.yml` Folgendes hinzu (ändern Sie die Versionsnummern nach Bedarf):
+   Um beispielsweise eine Version von Adobe Commerce zu den Produktverfügbarkeitstabellen hinzuzufügen, fügen Sie jedem Eintrag in den Abschnitten `extensions` und `services` der `/jekyll/_data/product-availability.yml` Folgendes hinzu (ändern Sie die Versionsnummern nach Bedarf):
 
    ```
    support:
@@ -98,40 +98,40 @@ So aktualisieren Sie Vorlageninhalte:
         version: 4.5.6
    ```
 
-1. Navigieren Sie zum Verzeichnis &quot;`_jekyll`&quot;.
+1. Navigieren Sie zum `_jekyll`.
 
    ```
    cd _jekyll
    ```
 
-1. Generieren Sie den Vorlageninhalt und schreiben Sie die Ausgabe in das Verzeichnis `help/_includes/templated` .
+1. Generieren von Vorlageninhalten und Schreiben der Ausgabe in das `help/_includes/templated`.
 
    ```
    rake render
    ```
 
-   >**HINWEIS:** Sie müssen das Skript aus dem Verzeichnis `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie die Ruby-Abhängigkeiten zuerst mit dem Befehl `bundle install` installieren.
+   >**HINWEIS** Sie müssen das Skript im `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie zuerst Ruby-Abhängigkeiten mit dem `bundle install` Befehl installieren.
 
-1. Navigieren Sie zurück zum Verzeichnis &quot;`root`&quot;.
+1. Navigieren Sie zurück zum `root`.
 
    ```
    cd ..
    ```
 
-1. Überprüfen Sie, ob die erwarteten `help/_includes/templated` -Dateien geändert wurden.
+1. Stellen Sie sicher, dass die erwarteten `help/_includes/templated` geändert wurden.
 
    ```
    git status
    ```
 
-   Sie sollten die Ausgabe ähnlich der folgenden sehen:
+   Es sollte eine Ausgabe ähnlich der folgenden angezeigt werden:
 
    ```
    modified:   _data/product-availability.yml
    modified:   help/_includes/templated/product-availability-extensions.md
    ```
 
-1. Push deine Änderungen.
+1. Übertragen Sie Ihre Änderungen.
 
    ```
    git add .
@@ -139,4 +139,4 @@ So aktualisieren Sie Vorlageninhalte:
    git push
    ```
 
-Weitere Informationen zu [Datendateien](https://jekyllrb.com/docs/datafiles), [Liquid-Filtern](https://jekyllrb.com/docs/liquid/filters/) und anderen Funktionen finden Sie in der Jekyll-Dokumentation .
+In der Jekyll-Dokumentation finden Sie weitere Details zu [Datendateien](https://jekyllrb.com/docs/datafiles), [Flüssigkeitsfiltern](https://jekyllrb.com/docs/liquid/filters/) und anderen Funktionen.

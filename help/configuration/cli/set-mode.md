@@ -1,6 +1,6 @@
 ---
-title: Betriebsmodus festlegen
-description: Erfahren Sie mehr über das Festlegen der Adobe Commerce-Betriebsmodi.
+title: Einstellung des Betriebsmodus
+description: Informationen zum Festlegen der Adobe Commerce-Betriebsmodi.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -9,21 +9,21 @@ ht-degree: 0%
 
 ---
 
-# Betriebsmodus festlegen
+# Einstellung des Betriebsmodus
 
 {{file-system-owner}}
 
-Um die Sicherheit und Benutzerfreundlichkeit zu verbessern, haben wir einen Befehl hinzugefügt, mit dem [Anwendungsmodi](../bootstrap/application-modes.md) von Entwickler zu Produktion wechselt und umgekehrt.
+Um die Sicherheit und Benutzerfreundlichkeit zu verbessern, haben wir einen Befehl hinzugefügt, der [Anwendungsmodi](../bootstrap/application-modes.md) von Entwickler zu Produktion und umgekehrt wechselt.
 
-Der Produktionsmodus bietet eine bessere Leistung, da statische Ansichtsdateien im Verzeichnis `pub/static` und aufgrund der Code-Kompilierung gefüllt werden.
+Der Produktionsmodus hat eine bessere Leistung, da statische Ansichtsdateien im `pub/static`-Verzeichnis und aufgrund der Code-Kompilierung gefüllt werden.
 
 >[!INFO]
 >
->In Version 2.0.6 und höher legt Commerce keine expliziten Datei- oder Ordnerberechtigungen fest, wenn Sie zwischen den Standard-, Entwicklungs- und Produktionsmodi wechseln. Im Gegensatz zu anderen Modi werden Entwickler- und Produktionsmodi in der Datei `env.php` festgelegt. Adobe Commerce on Cloud Infrastructure unterstützt nur Produktions- und Wartungsmodi.
+>In Version 2.0.6 und höher legt Commerce keine expliziten Datei- oder Ordnerberechtigungen fest, wenn zwischen Standard-, Entwicklungs- und Produktionsmodus gewechselt wird. Im Gegensatz zu anderen Modi werden Entwickler- und Produktionsmodi in der `env.php` festgelegt. Adobe Commerce auf Cloud-Infrastrukturen unterstützt nur Produktions- und Wartungsmodi.
 >
->Siehe [Eigentum und Berechtigungen der Commerce in Entwicklung und Produktion](../deployment/file-system-permissions.md).
+>Siehe [Verantwortlichkeit und Berechtigungen für Commerce in Entwicklung und Produktion](../deployment/file-system-permissions.md).
 
-Wenn Sie in den Entwickler- oder Produktionsmodus wechseln, wird der Inhalt der folgenden Ordner gelöscht:
+Wenn Sie in den Entwickler- oder Produktionsmodus wechseln, löschen wir den Inhalt der folgenden Verzeichnisse:
 
 ```
 var/cache
@@ -35,16 +35,16 @@ pub/static
 
 Ausnahmen:
 
-- `.htaccess` -Dateien werden nicht entfernt
-- `pub/static` enthält eine Datei, die die Version des statischen Inhalts angibt. Diese Datei wird nicht entfernt
+- `.htaccess` Dateien werden nicht entfernt
+- `pub/static` enthält eine -Datei, die die Version des statischen Inhalts angibt; diese Datei wird nicht entfernt
 
 >[!INFO]
 >
->Standardmäßig verwendet Commerce die Ordner &quot;`var`&quot;, um den Cache, die Protokolle und den kompilierten Code zu speichern. Sie können diesen Ordner anpassen, in diesem Handbuch wird jedoch von `var` ausgegangen.
+>Standardmäßig verwendet Commerce die `var`, um den Cache, die Protokolle und den kompilierten Code zu speichern. Sie können dieses Verzeichnis anpassen, aber in diesem Handbuch wird davon ausgegangen, dass es `var` ist.
 
 ## Anzeigen des aktuellen Modus
 
-Am einfachsten ist es, diesen Befehl als [Dateisysteminhaber](../../installation/prerequisites/file-system/overview.md) auszuführen. Wenn Sie das Hosting freigegeben haben, ist dies der Benutzer, den Ihr Provider Ihnen zur Anmeldung beim Server bereitstellt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, diesen Befehl als [Dateisystembesitzer“ ](../../installation/prerequisites/file-system/overview.md). Wenn Sie geteiltes Hosting haben, ist dies der Benutzer, den Ihr Anbieter Ihnen zur Anmeldung beim Server gibt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
 
 Befehlsverwendung:
 
@@ -58,11 +58,11 @@ Eine Meldung ähnlich der folgenden wird angezeigt:
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
-wobei:
+Dabei gilt:
 
-- **`{mode}`** kann entweder `default`, `developer` oder `production` sein.
+- **`{mode}`** kann entweder `default`, `developer` oder `production` sein
 
-## Änderungsmodi
+## Modi ändern
 
 Befehlsverwendung:
 
@@ -70,21 +70,21 @@ Befehlsverwendung:
 bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 ```
 
-wobei:
+Dabei gilt:
 
-- **`{mode}`** ist erforderlich; es kann entweder `developer` oder `production` sein.
+- **`{mode}`** ist erforderlich. Es kann entweder `developer` oder `production` sein
 
-- **`--skip-compilation`** ist ein optionaler Parameter, den Sie verwenden können, um die [Codekompilierung](../cli/code-compiler.md) zu überspringen, wenn Sie in den Produktionsmodus wechseln.
+- **`--skip-compilation`** ist ein optionaler Parameter, mit dem Sie die [Code-Kompilierung](../cli/code-compiler.md) überspringen können, wenn Sie in den Produktionsmodus wechseln.
 
 Es folgen Beispiele.
 
-### Produktionsmodus wechseln
+### In Produktionsmodus wechseln
 
 ```bash
 bin/magento deploy:mode:set production
 ```
 
-Meldungen, die der folgenden Anzeige ähneln:
+Meldungen ähnlich der folgenden werden angezeigt:
 
 ```
 Enabled maintenance mode
@@ -125,17 +125,17 @@ Disabled maintenance mode
 Enabled production mode.
 ```
 
-### Ändern in den Entwicklermodus
+### Wechseln in den Entwicklermodus
 
-Wenn Sie von der Produktion in den Entwicklermodus wechseln, sollten Sie generierte Klassen und Objekt-Manager-Entitäten wie Proxys löschen, um unerwartete Fehler zu vermeiden. Danach können Sie die Modi ändern. Führen Sie die folgenden Schritte aus:
+Wenn Sie vom Produktions- in den Entwicklermodus wechseln, sollten Sie generierte Klassen und Objekt-Manager-Entitäten wie Proxys löschen, um unerwartete Fehler zu vermeiden. Danach können Sie den Modus ändern. Führen Sie dazu folgende Schritte aus:
 
-1. Wenn Sie vom Produktionsmodus in den Entwicklermodus wechseln, löschen Sie den Inhalt der Verzeichnisse `generated/code` und `generated/metadata`:
+1. Wenn Sie vom Produktionsmodus in den Entwicklermodus wechseln, löschen Sie die Inhalte der `generated/code`- und `generated/metadata`:
 
    ```bash
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
    ```
 
-1. Legen Sie den Modus fest:
+1. Einstellen des Modus:
 
    ```bash
    bin/magento deploy:mode:set developer
@@ -147,7 +147,7 @@ Wenn Sie von der Produktion in den Entwicklermodus wechseln, sollten Sie generie
    Enabled developer mode.
    ```
 
-### Standardmodus ändern
+### In Standardmodus wechseln
 
 ```bash
 bin/magento deploy:mode:set default
@@ -159,8 +159,8 @@ Die folgende Meldung wird angezeigt:
 Enabled default mode.
 ```
 
-### Ausführen von CLI-Befehlen von überall aus
+### CLI-Befehle von überall aus ausführen
 
-[ Führen Sie CLI-Befehle von überall aus aus aus.](../cli/config-cli.md#config-install-cli-first)
+[CLI-Befehle von überall aus ausführen](../cli/config-cli.md#config-install-cli-first).
 
-Wenn Sie `<Commerce-install-directory>/bin` nicht zu Ihrem System `PATH` hinzugefügt haben, können Sie einen Fehler erwarten, wenn Sie den Befehl allein ausführen.
+Wenn Sie `<Commerce-install-directory>/bin` nicht zu Ihrem `PATH` hinzugefügt haben, können Sie einen Fehler erwarten, wenn Sie den Befehl allein ausführen.

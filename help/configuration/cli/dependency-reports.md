@@ -1,6 +1,6 @@
 ---
 title: Abhängigkeitsberichte
-description: Erstellen Sie Berichte, die die Summen für Modul-, Rundschreiben- und Framework-Abhängigkeiten anzeigen.
+description: Erstellen Sie Berichte, die die Gesamtwerte für Modul-, Zirkel- und Framework-Abhängigkeiten anzeigen.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Sie können die folgenden Berichtstypen ausführen:
 
-- **Modulabhängigkeiten**: Zeigt die Gesamtanzahl der Abhängigkeiten zwischen Modulen und ob die Abhängigkeiten hart oder weich sind.
-- **Zirkuläre Abhängigkeiten**: Zeigt die Gesamtanzahl der Abhängigkeitsketten sowie die Anzahl und Liste der zirkulären Abhängigkeiten für jedes Modul an.
-- **Framework-Abhängigkeiten**: Zeigt die Gesamtanzahl der Abhängigkeiten vom Commerce-Framework nach Modul an (einschließlich der Gesamtanzahl der Framework-Einträge für jede Bibliothek).
+- **Modulabhängigkeiten**: Zeigt die Gesamtzahl der Abhängigkeiten zwischen Modulen an und ob die Abhängigkeiten Hard- oder Soft sind.
+- **Zirkuläre**: Zeigt die Gesamtzahl der Abhängigkeitsketten sowie die Anzahl und Liste der zirkulären Abhängigkeiten für jedes Modul an.
+- **Framework-Abhängigkeiten**: Zeigt die Gesamtzahl der Abhängigkeiten vom Commerce-Framework nach Modul an (einschließlich der Gesamtzahl der Framework-Einträge für jede Bibliothek).
 
 Eine Abhängigkeit in einem Kommentar ist auch eine Abhängigkeit.
 
-## Ausführen von Abhängigkeitsberichten
+## Abhängigkeitsberichte ausführen
 
 Befehlsoptionen:
 
@@ -33,13 +33,13 @@ In der folgenden Tabelle werden die Optionen, Parameter und Werte dieses Befehls
 
 | Parameter | Wert | Erforderlich? |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
-| `show-modules` | Modulabhängigkeitsbericht. | Ja |
-| `show-modules-circular` | Bericht zu zirkulären Abhängigkeiten . | Ja |
-| `show-framework` | Framework-Abhängigkeitsbericht. | Ja |
-| `-d --directory` | Pfad zum Basisverzeichnis, um mit der Suche nach Berichtsdaten zu beginnen. | Nein |
-| `-o --output` | Gibt den absoluten Dateisystempfad und Dateinamen der CSV-Ausgabedatei (CSV) für den Bericht an. | Nein |
+| `show-modules` | Bericht zu Modulabhängigkeiten. | Ja |
+| `show-modules-circular` | Bericht zu zirkulären Abhängigkeiten. | Ja |
+| `show-framework` | Bericht zu Framework-Abhängigkeiten. | Ja |
+| `-d --directory` | Pfad zum Basisverzeichnis, in dem nach Berichtsdaten gesucht werden soll. | Nein |
+| `-o --output` | Gibt den absoluten Dateisystempfad und Dateinamen der CSV-Ausgabedatei (kommagetrennte Werte) für den Bericht an. | Nein |
 
-Wenn kein Ordner oder Dateiname als Argument übergeben wird, wird der folgende Anwendungsstamm als Standardordner verwendet und die folgenden Standarddateinamen werden verwendet:
+Wenn kein Verzeichnis oder Dateiname als Argument übergeben wird, wird der folgende Anwendungsstamm als Standardverzeichnis verwendet und die folgenden Standarddateinamen werden verwendet:
 
 | Befehl | Dateiname |
 | ----------------------------------------------------- | ----------------------------------- |
@@ -47,9 +47,9 @@ Wenn kein Ordner oder Dateiname als Argument übergeben wird, wird der folgende 
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
 | `bin/magento info:dependencies:show-framework` | `framework-dependencies.csv` |
 
-### Bericht zu Modulabhängigkeiten
+### Bericht zu Beispielmodulabhängigkeiten
 
-Im Folgenden finden Sie einen Teil der Ausgabe eines Beispielmodulabhängigkeitsberichts:
+Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispielmodulabhängigkeitsbericht:
 
 ```
 "","All","Hard","Soft"
@@ -73,7 +73,7 @@ Im Folgenden finden Sie einen Teil der Ausgabe eines Beispielmodulabhängigkeits
 
 ### Beispielbericht zu zirkulären Abhängigkeiten
 
-Im Folgenden finden Sie einen Teil der Ausgabe eines Beispiel-Berichts mit zirkulären Abhängigkeiten :
+Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispiel-Bericht zu zirkulären Abhängigkeiten:
 
 ```
 "Circular dependencies:","Total number of chains"

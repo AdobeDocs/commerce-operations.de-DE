@@ -1,7 +1,7 @@
 ---
 name: New topic
 about: Create a request to add missing information
-title: Anforderung eines neuen Themas
+title: Neues Thema anfordern
 labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
@@ -16,16 +16,16 @@ ht-degree: 8%
 
 <!-- (REQUIRED) What topic is missing? -->
 
-## Inhalt-Checkliste
+## Inhalts-Checkliste
 
 <!-- (REQUIRED) List specific information or details to include in this topic. -->
 
 <!-- Use the following checklist template as a starting point -->
 
-- [ ] Das Thema erläutert, wie ____ funktioniert.
-- [ ] Das Thema enthält Schritte für ____.
-- [ ] Das Thema enthält Codebeispiele, die _____ zeigen.
-- [ ] Sonstige (bitte angeben)
+- [ ] In diesem Thema wird erläutert, wie ____ funktioniert.
+- [ ] Das Thema enthält Schritte zur ____.
+- [ ] Das Thema enthält Codebeispiele, die ____ zeigen.
+- [ ] Sonstiges (bitte angeben)
 
 ## Weitere Informationen
 

@@ -1,6 +1,6 @@
 ---
-title: Schnellstart für die Installation vor Ort
-description: Führen Sie diese Schritte aus, um Adobe Commerce in Ihrer Infrastruktur zu installieren.
+title: Schnellstart-On-Premise-Installation
+description: Führen Sie die folgenden Schritte aus, um Adobe Commerce auf der von Ihnen verwalteten Infrastruktur zu installieren.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
 source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
@@ -9,53 +9,53 @@ ht-degree: 0%
 
 ---
 
-# Schnellstart für die Installation vor Ort
+# Schnellstart-On-Premise-Installation
 
-Die Anweisungen auf dieser Seite beschreiben, wie Adobe Commerce auf einer selbstgehosteten Infrastruktur installiert wird. Eine Anleitung zum Aktualisieren einer vorhandenen Installation finden Sie im [_Upgrade-Handbuch_](../upgrade/overview.md).
+Die Anweisungen auf dieser Seite beschreiben, wie Sie Adobe Commerce auf einer selbstgehosteten Infrastruktur installieren. Eine Anleitung zum Aktualisieren einer vorhandenen Installation finden Sie im [_Upgrade-Handbuch_](../upgrade/overview.md).
 
-Adobe verwendet [Composer](https://getcomposer.org/), um Adobe Commerce-Komponenten und ihre Abhängigkeiten zu verwalten. Die Verwendung von Composer zum Abrufen des Adobe Commerce-Metapakets bietet die folgenden Vorteile:
+Adobe verwendet [Composer](https://getcomposer.org/) um Adobe Commerce-Komponenten und ihre Abhängigkeiten zu verwalten. Die Verwendung von Composer zum Abrufen des Adobe Commerce-Metapakets bietet die folgenden Vorteile:
 
-- Wiederverwenden von Bibliotheken von Drittanbietern ohne Bundle mit Quellcode
-- Reduzieren von Erweiterungskonflikten und Kompatibilitätsproblemen durch Verwendung einer komponentenbasierten Architektur mit robuster Abhängigkeitsverwaltung
-- Einhaltung der [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)-Standards
-- Magento Open Source mit anderen Komponenten umpacken
+- Wiederverwenden von Drittanbieterbibliotheken ohne Bündelung mit Quellcode
+- Verringern Sie Erweiterungskonflikte und Kompatibilitätsprobleme mithilfe einer komponentenbasierten Architektur mit robuster Abhängigkeitsverwaltung
+- Einhaltung der Standards [PHP-Framework Interoperability Group (FIG)](https://www.php-fig.org/)
+- Magento Open Source mit anderen Komponenten neu packen
 - Verwenden der Adobe Commerce-Software in einer Produktionsumgebung
 
 >[!NOTE]
 >
->Entwickler, die zur Magento Open Source beitragen, sollten die [git-basierte](https://developer.adobe.com/commerce/contributor/guides/install/) -Installationsmethode verwenden.
+>Entwickler, die zur Magento Open Source beitragen, sollten die [Git-basierte](https://developer.adobe.com/commerce/contributor/guides/install/) Installationsmethode verwenden.
 
 ## Voraussetzungen
 
 Bevor Sie fortfahren, müssen Sie Folgendes tun:
 
-- Führen Sie alle erforderlichen [Aufgaben ](system-requirements.md) aus.
-- [Install Composer](https://getcomposer.org/download/).
-- Rufen Sie [Authentifizierungsschlüssel](prerequisites/authentication-keys.md) in das Adobe Commerce Composer-Repository ab.
+- Alle [erforderlichen Aufgaben“ ](system-requirements.md).
+- [Composer installieren](https://getcomposer.org/download/).
+- Abrufen [Authentifizierungsschlüssel](prerequisites/authentication-keys.md) zum Adobe Commerce Composer-Repository.
 
-## Als Dateisysteminhaber anmelden
+## Als Dateisystembesitzer anmelden
 
-Erfahren Sie mehr über Eigentümer, Berechtigungen und den Dateisysteminhaber im Thema [Überblick über Eigentümer und Berechtigungen](prerequisites/file-system/overview.md).
+Erfahren Sie mehr über Eigentümerschaft, Berechtigungen und den Dateisystembesitzer im Thema [Übersicht über Eigentümerschaft und Berechtigungen](prerequisites/file-system/overview.md).
 
-So wechseln Sie zum Dateisysteminhaber:
+So wechseln Sie zum Dateisystembesitzer:
 
-1. Melden Sie sich beim Anwendungsserver als Benutzer an oder wechseln Sie zu einem Benutzer mit Schreibberechtigung für das Dateisystem.
+1. Melden Sie sich beim Anwendungsserver als Benutzer an oder wechseln Sie zu einem Benutzer mit Berechtigungen zum Schreiben in das Dateisystem.
 
-   Wenn Sie die Bash-Shell verwenden, können Sie die folgende Syntax verwenden, um zum Dateisysteminhaber zu wechseln und den Befehl gleichzeitig einzugeben:
+   Wenn Sie die Bash-Shell verwenden, können Sie die folgende Syntax verwenden, um zum Dateisystembesitzer zu wechseln und den Befehl gleichzeitig einzugeben:
 
    ```bash
    su <file system owner> -s /bin/bash -c <command>
    ```
 
-   Wenn der Dateisysteminhaber keine Anmeldung zulässt, können Sie Folgendes tun:
+   Wenn der Dateisystembesitzer keine Anmeldungen zulässt, können Sie Folgendes tun:
 
    ```bash
    sudo -u <file system owner>  <command>
    ```
 
-1. Um CLI-Befehle aus einem beliebigen Verzeichnis auszuführen, fügen Sie `<app_root>/bin` zu Ihrem System `PATH` hinzu.
+1. Um CLI-Befehle aus einem beliebigen Verzeichnis auszuführen, fügen Sie `<app_root>/bin` zu Ihrem `PATH` hinzu.
 
-   Da Muscheln unterschiedliche Syntaxen haben, sollten Sie einen Verweis wie [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables) lesen.
+   Da Shell unterschiedliche Syntaxen haben, sollten Sie einen Verweis wie [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables) heranziehen.
 
    Beispiel-Bash-Shell für CentOS:
 
@@ -65,16 +65,16 @@ So wechseln Sie zum Dateisysteminhaber:
 
    Optional können Sie die Befehle wie folgt ausführen:
 
-   - `cd <app_root>/bin` und führen Sie sie als `./magento <command name>` aus
+   - `cd <app_root>/bin` und als `./magento <command name>` ausführen
    - `app_root>/bin/magento <command name>`
-   - `<app_root>` ist ein Unterverzeichnis Ihres Webserver-Basisverzeichnisses.
+   - `<app_root>` ist ein Unterverzeichnis Ihres Webserver-Stammverzeichnisses
 
-## Metapaket abrufen
+## Abrufen des Metapakets
 
 So rufen Sie das Adobe Commerce-Metapaket ab:
 
-1. Melden Sie sich bei Ihrem Anwendungsserver als [Dateisysteminhaber](prerequisites/file-system/overview.md) an oder wechseln Sie zu ihm.
-1. Wechseln Sie zum Basisverzeichnis des Webservers oder zu einem Ordner, den Sie als virtuelles Host-Basisverzeichnis konfiguriert haben.
+1. Melden Sie sich bei Ihrem Anwendungs-Server als oder wechseln Sie zum [Dateisystembesitzer](prerequisites/file-system/overview.md).
+1. Wechseln Sie in das Verzeichnis des Webservers docroot oder in ein Verzeichnis, das Sie als virtuellen Host docroot konfiguriert haben.
 1. Erstellen Sie ein Composer-Projekt mit einem Commerce-Metapaket.
 
    **Magento Open Source**
@@ -89,19 +89,19 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Geben Sie bei Aufforderung die Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden in Ihrem [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/) erstellt und konfiguriert.
+   Geben Sie nach Aufforderung Ihre Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden in Ihrer [Commerce Marketplace erstellt und ](https://commercemarketplace.adobe.com/customer/account/login/).
 
    >[!NOTE]
    >
-   > Bei Verwendung einer Composer `auth.json` -Datei oder Umgebungsvariablen werden Sie nicht aufgefordert, Ihre Authentifizierungsschlüssel einzugeben.
+   > Bei Verwendung einer Composer `auth.json`-Datei oder einer Umgebungsvariablen werden Sie nicht zur Eingabe Ihrer Authentifizierungsschlüssel aufgefordert.
 
-   Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass Ihr Befehl keine Tippfehler enthält. Sollten dennoch Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich für Hilfe an den [Adobe Commerce-Support](https://support.magento.com/hc/en-us).
+   Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 
-   Weitere Informationen zu Fehlern finden Sie unter [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360033818091) .
+   Siehe [Fehlerbehebung](https://support.magento.com/hc/en-us/articles/360033818091) für Hilfe bei weiteren Fehlern.
 
 ### Beispiel - Nebenversion
 
-Nebenversionen enthalten neue Funktionen, Qualitätsverbesserungen und Sicherheitskorrekturen. Verwenden Sie Composer , um eine Nebenversion anzugeben. So legen Sie beispielsweise das Adobe Commerce 2.4.6-Metapaket fest:
+Nebenversionen enthalten neue Funktionen, Qualitätskorrekturen und Sicherheitskorrekturen. Verwenden Sie Composer, um eine Nebenversion anzugeben. Um beispielsweise das Metapaket Adobe Commerce 2.4.6 anzugeben:
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
@@ -109,7 +109,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ### Beispiel - Qualitäts-Patch
 
-Qualitäts-Patches enthalten in erster Linie funktionale Sicherheitskorrekturen für _und_. Manchmal können sie jedoch auch neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer , um einen Qualitäts-Patch herunterzuladen. So legen Sie beispielsweise das Adobe Commerce 2.4.6-Metapaket fest:
+Qualitäts-Patches enthalten hauptsächlich funktionale _und_ Sicherheitskorrekturen. Sie können jedoch manchmal auch neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer, um einen Qualitäts-Patch herunterzuladen. Um beispielsweise das Metapaket Adobe Commerce 2.4.6 anzugeben:
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
@@ -117,17 +117,17 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 ### Beispiel - Sicherheits-Patch
 
-Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie sind so konzipiert, dass der Aktualisierungsprozess schneller und einfacher wird.
+Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie wurden entwickelt, um den Upgrade-Prozess schneller und einfacher zu machen.
 
-Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.6-px`. Verwenden Sie Composer, um einen Patch anzugeben. So laden Sie beispielsweise das Metapaket Adobe Commerce 2.4.6-p1 herunter:
+Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.6-px`. Verwenden Sie Composer, um einen Patch anzugeben. So laden Sie beispielsweise das Adobe Commerce 2.4.6-p1-Metapaket herunter:
 
 ```bash
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
-## Festlegen von Dateiberechtigungen
+## Dateiberechtigungen festlegen
 
-Sie müssen Lese- und Schreibberechtigungen für die Webservergruppe festlegen, bevor Sie Adobe Commerce installieren. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
+Sie müssen vor der Installation von Adobe Commerce Lese- und Schreibberechtigungen für die Webservergruppe festlegen. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
 ```bash
 cd /var/www/html/<magento install directory>
@@ -141,7 +141,7 @@ chmod u+x bin/magento
 
 Sie müssen die Befehlszeile verwenden, um Adobe Commerce zu installieren.
 
-In diesem Beispiel wird davon ausgegangen, dass der Installationsordner den Namen `magento2ee` hat, sich der `db-host` auf demselben Computer befindet (`localhost`) und dass die `db-name`, `db-user` und `db-password` alle `magento` sind:
+In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee` heißt, sich der `db-host` auf demselben Computer befindet (`localhost`) und dass die `db-name`, `db-user` und `db-password` alle `magento` sind:
 
 ```bash
 bin/magento setup:install \
@@ -168,21 +168,21 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Sie können den Admin-URI mit der Option `--backend-frontname` anpassen. Adobe empfiehlt jedoch, diese Option wegzulassen und dem Installationsbefehl zu erlauben, automatisch einen zufälligen URI zu generieren. Eine zufällige URI ist für Hacker oder böswillige Software schwieriger zu nutzen. Der URI wird in Ihrer Konsole angezeigt, wenn die Installation abgeschlossen ist.
+>Sie können den Admin-URI mit der Option `--backend-frontname` anpassen. Adobe empfiehlt jedoch, diese Option wegzulassen und zuzulassen, dass der Installationsbefehl automatisch einen zufälligen URI generiert. Ein zufälliger URI ist für Hacker oder bösartige Software schwieriger auszunutzen. Der URI wird nach Abschluss der Installation in Ihrer Konsole angezeigt.
 
 >[!TIP]
 >
 >Eine vollständige Beschreibung der CLI-Installationsoptionen finden Sie unter [Installieren der Anwendung über die Befehlszeile](advanced.md).
 
-## Befehlszusammenfassung
+## Befehlsübersicht
 
-Geben Sie Folgendes ein, um eine vollständige Liste der Befehle anzuzeigen:
+Um eine vollständige Liste der Befehle anzuzeigen, geben Sie Folgendes ein:
 
 ```bash
 bin/magento list
 ```
 
-Um Hilfe für einen bestimmten Befehl zu erhalten, geben Sie Folgendes ein:
+Um Hilfe zu einem bestimmten Befehl zu erhalten, geben Sie Folgendes ein:
 
 ```bash
 bin/magento help <command>
@@ -198,38 +198,38 @@ bin/magento help setup:install
 bin/magento help cache:enable
 ```
 
-Die folgende Tabelle fasst die verfügbaren Befehle zusammen. Befehle werden nur in der Zusammenfassung angezeigt. Weitere Informationen zu einem Befehl erhalten Sie, wenn Sie in der Spalte Befehl auf den Link klicken.
+In der folgenden Tabelle sind die verfügbaren Befehle zusammengefasst. Befehle werden nur in Form einer Zusammenfassung angezeigt. Weitere Informationen zu einem Befehl erhalten Sie, wenn Sie auf den Link in der Spalte Befehl klicken.
 
 | Befehl | Beschreibung | Voraussetzungen |
 |--- |--- |--- |
-| `magento setup:install` | Installation des Programms | Keines |
-| `magento setup:uninstall` | Entfernt die Anwendung. | Anwendung installiert |
+| `magento setup:install` | Installiert die Anwendung | Keine |
+| `magento setup:uninstall` | Entfernt die Anwendung. | Installierte Anwendung |
 | `magento setup:upgrade` | Aktualisiert die Anwendung. | Bereitstellungskonfiguration |
-| `magento maintenance:{enable/disable}` | Aktiviert oder deaktiviert den Wartungsmodus (im Wartungsmodus können nur ausgenommene IP-Adressen auf die Admin- oder Storefront zugreifen). | Anwendung installiert |
-| `magento setup:config:set` | Erstellt oder aktualisiert die Bereitstellungskonfiguration. | Keines |
-| `magento module:{enable/disable}` | Aktivieren oder deaktivieren Sie Module. | Keines |
-| `magento setup:store-config:set` | Legt Storefront-bezogene Optionen fest, z. B. Basis-URL, Sprache und Zeitzone. | Bereitstellungskonfiguration |
+| `magento maintenance:{enable/disable}` | Aktiviert oder deaktiviert den Wartungsmodus (im Wartungsmodus können nur ausgeschlossene IP-Adressen auf die Admin- oder Storefront zugreifen). | Installierte Anwendung |
+| `magento setup:config:set` | Erstellt oder aktualisiert die Bereitstellungskonfiguration. | Keine |
+| `magento module:{enable/disable}` | Module aktivieren oder deaktivieren. | Keine |
+| `magento setup:store-config:set` | Legt Optionen für die Storefront fest, z. B. Basis-URL, Sprache, Zeitzone. | Bereitstellungskonfiguration |
 | `magento setup:db-schema:upgrade` | Aktualisiert das Datenbankschema. | Bereitstellungskonfiguration |
 | `magento setup:db-data:upgrade` | Aktualisiert die Datenbankdaten. | Bereitstellungskonfiguration |
 | `magento setup:db:status` | Überprüft, ob die Datenbank mit dem Code auf dem neuesten Stand ist. | Bereitstellungskonfiguration |
-| `magento admin:user:create` | Erstellt einen Administratorbenutzer. | Sie können Benutzer für Folgendes erstellen:<br><br>Bereitstellungskonfiguration<br><br>Aktivieren Sie mindestens die Datenbank `Magento_User` und die Module `Magento_Authorization`<br><br>Datenbank (die einfachste Methode ist die Verwendung von `bin/magento setup:upgrade`) |
-| `magento list` | Führt alle verfügbaren Befehle auf. | Keines |
-| `magento help` | Bietet Hilfe für den angegebenen Befehl. | Keines |
+| `magento admin:user:create` | Erstellt einen Administrator-Benutzer. | Sie können Benutzer für Folgendes erstellen:<br><br>Bereitstellungskonfiguration<br><br>Aktivieren Sie mindestens die `Magento_User` und `Magento_Authorization` Module<br><br>Datenbank (am einfachsten verwenden Sie `bin/magento setup:upgrade`) |
+| `magento list` | Listet alle verfügbaren Befehle auf. | Keine |
+| `magento help` | Stellt Hilfe für den angegebenen Befehl bereit. | Keine |
 
-### Allgemeine Argumente
+### Häufige Argumente
 
-Die folgenden Argumente gelten für alle Befehle. Diese Befehle können vor oder nach der Installation der Anwendung ausgeführt werden:
+Die folgenden Argumente gelten für alle Befehle. Diese Befehle können entweder vor oder nach der Installation der Anwendung ausgeführt werden:
 
 | Lange Version | Kurzversion | Bedeutung |
 |--- |--- |--- |
-| `--help` | `-h` | Erhalten Sie Hilfe für jeden Befehl. Beispiel: `./magento help setup:install` oder `./magento help setup:config:set`. |
-| `--quiet` | `-q` | Ruhig, keine Ausgabe. |
+| `--help` | `-h` | Hilfe zu jedem Befehl. Beispiel: `./magento help setup:install` oder `./magento help setup:config:set`. |
+| `--quiet` | `-q` | Ruhiger Modus; keine Ausgabe. |
 | `--no-interaction` | `-n` | Keine interaktiven Fragen. |
-| `--verbose=1,2,3` | `-v, -vv, -vvv` | Verbosity level. Beispielsweise zeigt `--verbose=3` oder `-vvv` Debug-Ausführlichkeit an, die die ausführlichste Ausgabe ist. Der Standardwert ist `--verbose=1` oder `-v`. |
+| `--verbose=1,2,3` | `-v, -vv, -vvv` | Ausführlichkeitsstufe. Beispielsweise zeigt `--verbose=3` oder `-vvv` die ausführlichste Ausgabe als Debugging-Ausführlichkeit an. Der Standardwert ist `--verbose=1` oder `-v`. |
 | `--version` | `-V` | Diese Anwendungsversion anzeigen |
 | `--ansi` | Nicht zutreffend | ANSI-Ausgabe erzwingen |
 | `--no-ansi` | Nicht zutreffend | ANSI-Ausgabe deaktivieren |
 
 >[!NOTE]
 >
->Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Sie benötigen weiterführende Hilfe? Sehen Sie sich das Handbuch [Erweiterte Installation](advanced.md) an.
+>Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Benötigen Sie erweiterte Hilfe? Sehen Sie sich das [Erweiterte ](advanced.md)&quot; an.

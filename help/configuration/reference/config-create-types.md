@@ -1,6 +1,6 @@
 ---
 title: Konfigurationstypen
-description: Erstellen oder erweitern Sie Konfigurationstypen.
+description: Konfigurationstypen erstellen oder erweitern.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
 source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
 workflow-type: tm+mt
@@ -13,32 +13,32 @@ ht-degree: 0%
 
 ## Erweitern von Konfigurationstypen
 
-Um einen vorhandenen Konfigurationstyp zu erweitern, müssen Sie nur eine Konfigurationsdatei in Ihrem -Modul erstellen.
+Um einen vorhandenen Konfigurationstyp zu erweitern, müssen Sie nur eine Konfigurationsdatei in Ihrem Modul erstellen.
 
-Um beispielsweise einen Ereignisbeobachter hinzuzufügen, erstellen Sie `app/code/{VendorName}/{ModuleName}/etc/events.xml` und deklarieren einen neuen Beobachter.
+Um beispielsweise einen Ereignisbeobachter hinzuzufügen, erstellen Sie `app/code/{VendorName}/{ModuleName}/etc/events.xml` und deklarieren Sie einen neuen Beobachter.
 
-Da der Ereignistyp in Commerce vorhanden ist, sind das Validierungsschema loader und `events.xsd` bereits vorhanden und funktionsfähig.
+Da der Ereigniskonfigurationstyp in Commerce vorhanden ist, sind das Ladeprogramm und das `events.xsd` Validierungsschema bereits vorhanden und funktionsfähig.
 
-Ihr neuer `events.xml` wird automatisch aus Ihrem Modul erfasst und mit anderen `events.xml` -Dateien für andere Module zusammengeführt.
+Ihre neue `events.xml` wird automatisch aus Ihrem -Modul erfasst und mit anderen `events.xml`-Dateien für andere Module zusammengeführt.
 
-## Erstellen von Konfigurationstypen
+## Konfigurationstypen erstellen
 
 Um einen Konfigurationstyp zu erstellen, müssen Sie mindestens Folgendes hinzufügen:
 
-- Lader
+- Ein Lader
 - XSD-Validierungsschema
 - XML-Konfigurationsdateien
 
-Um beispielsweise einen Adapter für einen neuen Suchserver einzuführen, mit dem Erweiterungen konfigurieren können, wie seine Entitäten in diesem Server indiziert werden, erstellen Sie:
+Um beispielsweise einen Adapter für einen neuen Suchserver einzuführen, der Erweiterungen die Konfiguration der Indexierung seiner Entitäten in diesem Server ermöglicht, erstellen Sie:
 
-- Lader
+- Ein Lader
 - Eine XSD-Schemadatei
-- Eine entsprechend benannte Konfigurationsdatei. Beispiel: `search.xml`. Diese Datei wird anhand Ihres Schemas gelesen und validiert.
+- Eine entsprechend benannte Konfigurationsdatei. Beispiel: `search.xml`. Diese Datei wird gelesen und anhand Ihres Schemas validiert.
 - Alle anderen Klassen, die für Ihre Arbeit erforderlich sind.
 
 >[!INFO]
 >
->Wenn neue Module eine `search.xml` -Datei haben, werden sie beim Laden mit Ihrer Datei zusammengeführt.
+>Wenn neue Module eine `search.xml`-Datei haben, werden sie beim Laden mit Ihrer -Datei zusammengeführt.
 
 ### Anwendungsbeispiele
 
@@ -48,7 +48,7 @@ So erstellen Sie einen Konfigurationstyp:
 1. Erstellen Sie Ihre XML-Datei.
 1. Definieren Sie Ihr Konfigurationsobjekt in Ihrem `di.xml`.
 
-   Das folgende Beispiel aus dem [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) des Magento_Sales-Moduls zeigt, wie ein Konfigurationsobjekt aussehen sollte.
+   Das folgende Beispiel aus der Datei &quot;[.xml“ des Moduls &quot;Magento_Sales](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) veranschaulicht, wie ein Konfigurationsobjekt aussehen sollte.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -76,11 +76,11 @@ So erstellen Sie einen Konfigurationstyp:
    </config>
    ```
 
-   - Der erste Knotentyp legt den Dateinamen des Readers fest, die zugehörigen `Converter` - und `SchemaLocator` -Klassen.
-   - Anschließend hängt der virtuelle Knoten `pdfConfigDataStorage` die Leserklasse an eine Instanz von [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php) an.
-   - Und schließlich hängt der Knoten des letzten Typs diesen virtuellen Konfigurationsdatentyp an die Klasse [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) an, die zum tatsächlichen Lesen von Werten in aus diesen [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) -Dateien verwendet wird.
+   - Der erste Typknoten legt den Dateinamen des Readers, die zugehörigen `Converter` und `SchemaLocator` fest.
+   - Anschließend hängt der Knoten vom Typ „Virtueller `pdfConfigDataStorage`&quot; die Readerklasse an eine Instanz von [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php) an.
+   - Und schließlich hängt der letzte Typknoten diesen virtuellen Konfigurationstyp an die Klasse [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) an, die zum tatsächlichen Einlesen von Werten aus diesen PDF[xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml)-Dateien verwendet wird.
 
-1. Definieren Sie einen Leser, indem Sie die Klasse [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) erweitern und die folgenden Parameter neu schreiben:
+1. Definieren Sie einen Reader, indem Sie die Klasse {0](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php)Magento\Framework\Config\Reader\Filesystem} erweitern und die folgenden Parameter neu schreiben:[
 
    ```php
    $_idAttributes // Array of node attribute IDs.
@@ -115,24 +115,24 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->Wenn Sie lieber eine eigene Version des Readers erstellen möchten, können Sie dies durch Implementierung von `\Magento\Framework\Config\ReaderInterface` tun. Siehe [Magento_Analytics-Konfigurationsleser](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>Wenn Sie Ihre eigene Version des Readers erstellen möchten, können Sie dies tun, indem Sie `\Magento\Framework\Config\ReaderInterface` implementieren. Siehe [Magento_Analytics-Konfigurationsleser](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
-Nachdem Sie Ihren Leser definiert haben, verwenden Sie ihn zum Erfassen, Zusammenführen, Überprüfen und Konvertieren der Konfigurationsdateien in eine interne Array-Darstellung.
+Nachdem Sie Ihren Reader definiert haben, verwenden Sie ihn zum Erfassen, Zusammenführen, Validieren und Konvertieren der Konfigurationsdateien in eine interne Array-Darstellung.
 
 ## Validieren eines Konfigurationstyps
 
-Jede Konfigurationsdatei wird anhand eines für ihren Konfigurationstyp spezifischen Schemas validiert. Beispiel: Ereignisse, die in früheren Commerce-Versionen in `config.xml` konfiguriert wurden, werden jetzt in `events.xml` konfiguriert.
+Jede Konfigurationsdatei wird anhand eines Schemas validiert, das für ihren Konfigurationstyp spezifisch ist. Beispiel: Ereignisse, die in früheren Commerce-Versionen in `config.xml` konfiguriert wurden, werden jetzt in `events.xml` konfiguriert.
 
-Konfigurationsdateien können sowohl vor (optional) als auch nach jeder Zusammenführung mehrerer Dateien überprüft werden, die sich auf denselben Konfigurationstyp auswirken. Sofern die Validierungsregeln für die einzelnen und die zusammengeführten Dateien nicht identisch sind, sollten Sie zwei Schemas zur Validierung der Konfigurationsdateien bereitstellen:
+Konfigurationsdateien können sowohl vor (optional) als auch nach dem Zusammenführen mehrerer Dateien, die denselben Konfigurationstyp betreffen, validiert werden. Sofern die Validierungsregeln für die einzelnen und die zusammengeführten Dateien nicht identisch sind, sollten Sie zwei Schemata zur Validierung der Konfigurationsdateien bereitstellen:
 
-- Schema zur Validierung eines einzelnen
+- Schema zur Validierung eines Kontakts
 - Schema zur Validierung einer zusammengeführten Datei
 
-Neue Konfigurationsdateien müssen von XSD-Validierungsschemas begleitet werden. Eine XML-Konfigurationsdatei und ihre XSD-Validierungsdatei müssen denselben Namen haben.
+Neue Konfigurationsdateien müssen von XSD-Validierungsschemata begleitet werden. Eine XML-Konfigurationsdatei und die zugehörige XSD-Validierungsdatei müssen denselben Namen haben.
 
-Wenn Sie zwei XSD-Dateien für eine einzelne XML-Datei verwenden müssen, sollten die Namen der Schemas erkannt und mit der XML-Datei verknüpft werden.
-Wenn Sie eine `events.xml` -Datei und eine erste `events.xsd` -Datei haben, können die XSD-Dateien für die zusammengeführte `events.xml` -Datei den Namen `events_merged.xsd` haben.
-Um die Validierung einer XML-Datei anhand der entsprechenden XSD-Datei sicherzustellen, müssen Sie die Uniform Resource Name (URN) zur XSD-Datei in der XML-Datei hinzufügen. Beispiel:
+Wenn Sie zwei XSD-Dateien für eine einzelne XML-Datei verwenden müssen, sollten die Namen der Schemata erkennbar und mit der XML-Datei verknüpft sein.
+Wenn Sie eine `events.xml` und eine erste `events.xsd` haben, können die XSD-Dateien für die zusammengeführte `events.xml`-Datei `events_merged.xsd` benannt werden.
+Um die Validierung einer XML-Datei anhand der entsprechenden XSD-Datei sicherzustellen, müssen Sie der XSD-Datei in der XML-Datei den Uniform Resource Name (URN) hinzufügen. Beispiel:
 
 ```xml
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager:etc/config.xsd">

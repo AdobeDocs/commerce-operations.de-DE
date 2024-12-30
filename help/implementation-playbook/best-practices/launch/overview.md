@@ -1,6 +1,6 @@
 ---
-title: Startzeitphase der Implementierung
-description: Erfahren Sie mehr über die Best Practices für die Implementierung in der Anfangsphase von Adobe Commerce-Projekten.
+title: Einführungsphase
+description: Erfahren Sie mehr über Best Practices für die Implementierung der Launch-Phase von Adobe Commerce-Projekten.
 exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
@@ -10,30 +10,30 @@ ht-degree: 1%
 
 ---
 
-# Launch-Phase
+# Startphase
 
 Die Launch-Phase umfasst die folgenden Aktivitäten:
 
-- Abschließende Prüfungen der Checkliste vor und nach dem Start
+- Abschließende Checklisten-Überprüfungen vor und nach der Markteinführung
 - Produktionsbereitstellung
 - Sicherheitskonfiguration
-- Dienstüberprüfung
+- Service-Überprüfung
 - Leistungsüberwachung
 
-Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Launch-Phase.
+Die folgenden Abschnitte enthalten Best Practice-Informationen für die Launch-Phase.
 
 ## Sicherheitskonfiguration
 
 | Best Practice | Beschreibung |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnieren Sie Adobe-Sicherheitsbenachrichtigungen. |
-| [Sichern der Commerce-Site und -Infrastruktur](security-best-practices.md) | Härten Sie die Sicherheitsbereitschaft von Commerce-Installationen, um die Commerce-Storefront, den Administrator, die Infrastruktur und Daten vor unbefugtem Zugriff und Cyberangriffen zu schützen. |
-| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Konfigurieren Sie Google reCAPTCHA für den Admin-Zugriff und verschiedene Storefront-Aktionen, die von registrierten Kunden initiiert wurden. |
-| [Web-Crawler konfigurieren](robots-txt.md) | Übergeben Sie Anweisungen zu Ihrer Adobe Commerce-Site an Webcrawler. |
-| [Sicherheitskonfiguration überprüfen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Überprüfen Sie die Elemente der Checkliste, bevor Sie eine Adobe Commerce auf der Cloud-Infrastruktur-Site starten. |
+| [Adobe-Sicherheitsbenachrichtigungs-Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnieren von Adobe-Sicherheitsbenachrichtigungen. |
+| [Sichern Sie Ihre Commerce-Site und -Infrastruktur](security-best-practices.md) | Abhärten des Sicherheitszustands von Commerce-Installationen, um die Commerce-Storefront, den Admin, die Infrastruktur und die Daten vor unbefugtem Zugriff und Cyberangriffen zu schützen. |
+| [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html) | Konfigurieren Sie Google reCAPTCHA für Administratorzugriff und verschiedene Storefront-Aktionen, die von registrierten Kunden initiiert werden. |
+| [Konfigurieren von Web-Crawlern](robots-txt.md) | Übergeben Sie Anweisungen zu Ihrer Adobe Commerce-Site an Web-Crawler. |
+| [Sicherheitskonfiguration überprüfen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html) | Überprüfen Sie Checklisten-Elemente, bevor Sie eine Adobe Commerce auf einer Cloud-Infrastruktur-Site starten. |
 
 ## Leistungsüberwachung
 
 | Best Practice | Beschreibung |
 |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Verwenden Sie den  [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Zeigen Sie wichtige Einblicke über Ihre Adobe Commerce-Site an einem Ort an. |
+| [Verwenden Sie die [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Hier erhalten Sie wichtige Einblicke in Ihre Adobe Commerce-Site. |

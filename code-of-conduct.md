@@ -9,70 +9,70 @@ ht-degree: 0%
 
 ## Unser Versprechen
 
-Im Interesse einer offenen und einladenden Umgebung sind wir
-Mitwirkende und Betreuer verpflichten sich zur Teilnahme an unserem Projekt und
-unsere Community eine belästigungsfreie Erfahrung für alle, unabhängig von Alter, Körper
-Größe, Behinderung, ethnische Zugehörigkeit, Geschlechtsidentität und -ausdruck, Erfahrungsniveau,
-Nationalität, persönliches Erscheinungsbild, Rasse, Religion oder sexuelle Identität und
+Im Interesse der Förderung eines offenen und einladenden Umfelds haben wir
+Mitwirkende und Projektbetreuer verpflichten sich, an unserem Projekt teilzunehmen.
+Unsere Community ist eine belästigungsfreie Erfahrung für jeden, unabhängig von Alter, Körper
+Größe, Behinderung, ethnische Zugehörigkeit, Geschlechtsidentität und Ausdruck, Erfahrungsstand,
+Nationalität, persönliches Auftreten, Rasse, Religion oder sexuelle Identität und
 Ausrichtung.
 
 ## Unsere Standards
 
-Beispiele für Verhaltensweisen, die zur Schaffung eines positiven Umfelds beitragen
-include:
+Beispiele für Verhaltensweisen, die zu einer positiven Umgebung beitragen
+Einschließen:
 
-* Verwenden einer einladenden und inklusiven Sprache
+* Freundliche und inklusive Sprache
 * Respektvoller Umgang mit unterschiedlichen Sichtweisen und Erfahrungen
 * Würdevolle Akzeptanz konstruktiver Kritik
 * Konzentration auf das, was für die Community am besten ist
-* Zeigen von Empathie gegenüber anderen Community-Mitgliedern
+* Empathie gegenüber anderen Community-Mitgliedern
 
 Beispiele für inakzeptables Verhalten von Teilnehmern:
 
-* Verwendung sexualisierter Sprache oder Bilder und unerwünschte sexuelle Aufmerksamkeit oder
+* Verwendung sexualisierter Sprache oder Symbolik und unerwünschte sexuelle Annäherung oder
 Vorschüsse
-* Trollen, beleidigende/abwertende Kommentare und persönliche oder politische Angriffe
+* Trollen, beleidigende/abfällige Kommentare und persönliche oder politische Angriffe
 * Öffentliche oder private Belästigung
-* Veröffentlichen privater Informationen anderer Personen, z. B. physischer oder elektronischer Art
-Adresse ohne ausdrückliche Erlaubnis
-* Andere Verhaltensweisen, die in einer
-professionelles Umfeld
+* Veröffentlichen von privaten Informationen anderer Personen, z. B. physische oder elektronische
+Adresse, ohne ausdrückliche Genehmigung
+* Andere Verhaltensweisen, die in einem Fall vernünftigerweise als unangemessen betrachtet werden könnten
+professioneller Rahmen
 
 ## Unsere Zuständigkeiten
 
-Projektverantwortliche sind für die Klärung der Standards für
-Verhaltensweisen und sollten angemessene und faire Korrekturmaßnahmen ergreifen, um
-Reaktion auf alle Fälle von inakzeptablem Verhalten.
+Die Projektverantwortlichen sind dafür verantwortlich, die Standards der akzeptablen Umgebung zu verdeutlichen.
+von dem Unternehmen erwartet wird, dass es in folgenden Bereichen angemessene und faire Korrekturmaßnahmen ergreift
+Reaktion auf alle Vorfälle inakzeptablen Verhaltens.
 
-Projektverantwortliche haben das Recht und die Verantwortung,
-Zurückweisen von Kommentaren, Commits, Code, Wiki-Bearbeitungen, Problemen und anderen Beiträgen
-die nicht mit diesem Verhaltenskodex in Einklang stehen oder vorübergehend oder
-dauerhaft alle Mitwirkenden für andere Verhaltensweisen, die sie für unangemessen halten;
-bedrohend, beleidigend oder schädlich.
+Projektverantwortliche haben das Recht und die Verantwortung, zu entfernen, zu bearbeiten oder
+Kommentare, Commits, Code, Wiki-Bearbeitungen, Probleme und andere Beiträge ablehnen
+die nicht an diesen Verhaltenskodex angepasst sind oder die vorübergehend verboten werden oder
+dauerhaft alle Mitwirkenden an anderen Verhaltensweisen, die sie als unangemessen erachten,
+Bedrohlich, beleidigend oder schädlich.
 
-## Anwendungsbereich
+## Umfang
 
-Dieser Verhaltenskodex gilt sowohl innerhalb von Projektbereichen als auch in öffentlichen Bereichen
-wenn eine Person das Projekt oder die Community repräsentiert. Beispiele für
-das Repräsentieren eines Projekts oder einer Community die Verwendung einer offiziellen Projekt-E-Mail
-Adresse, Veröffentlichung über ein offizielles Social-Media-Konto oder als
-bei einem Online- oder Offline-Ereignis. Ein Projekt kann
-weiter definiert und von den Projektverantwortlichen geklärt werden.
+Dieser Verhaltenskodex findet sowohl in Projektbereichen als auch in öffentlichen Bereichen Anwendung
+Wenn ein Kontakt das Projekt oder seine Community repräsentiert. Beispiele für
+Ein Projekt oder eine Community repräsentieren, indem eine offizielle Projekt-E-Mail verwendet wird
+Anschrift, Posten über ein offizielles Social-Media-Konto oder Benennung
+Vertreter bei einer Online- oder Offline-Veranstaltung. Die Darstellung eines Projekts kann
+von den Projektverantwortlichen genauer definiert und erläutert.
 
 ## Durchsetzung
 
-Fälle von missbräuchlichem, belästigendem oder anderweitig inakzeptablem Verhalten können
-wurde unter Grp-opensourceoffice@adobe.com dem Projektteam gemeldet. Alle
-Beschwerden werden geprüft und untersucht und es wird eine Antwort gegeben, dass
-für erforderlich und den Umständen angemessen erachtet. Das Projektteam ist
-verpflichtet, die Vertraulichkeit in Bezug auf die Meldung eines Vorfalls zu wahren.
-Weitere Details zu spezifischen Durchsetzungsrichtlinien können separat veröffentlicht werden.
+Beleidigendes, belästigendes oder anderweitig inakzeptables Verhalten kann sein
+Meldung durch Kontaktaufnahme mit dem Projektteam unter Grp-opensourceoffice@adobe.com. Alle
+Beschwerden werden geprüft und untersucht und führen zu einer Antwort, die
+für notwendig und den Umständen angemessen erachtet wird. Das Projektteam ist
+verpflichtet, die Vertraulichkeit des Melders eines Vorfalls zu wahren.
+Weitere Details zu bestimmten Durchsetzungsrichtlinien können separat veröffentlicht werden.
 
-Projektverantwortliche, die dem Verhaltenskodex nicht folgen oder ihn nicht ordnungsgemäß durchsetzen
-Der Glaube kann vorübergehenden oder dauerhaften Auswirkungen ausgesetzt sein, die durch andere
+Projektverantwortliche, die den Verhaltenskodex nicht ordnungsgemäß befolgen oder durchsetzen
+Glaube kann mit vorübergehenden oder dauerhaften Auswirkungen konfrontiert sein, wie durch andere
 Mitglieder der Projektleitung.
 
 ## Attribution
 
-Dieser Verhaltenskodex wurde aus dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4, übernommen.
-verfügbar unter [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Dieser Verhaltenskodex wurde basierend auf dem [Contributor Covenant](https://contributor-covenant.org), Version 1.4,
+Verfügbar unter [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)

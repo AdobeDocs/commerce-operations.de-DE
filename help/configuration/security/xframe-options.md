@@ -1,6 +1,6 @@
 ---
-title: Verhindern von Clickjacking-Exploits
-description: Verhindern Sie Clickjacking-Exploits, indem Sie die Kopfzeile "X-Frame-Options"verwenden, um Seitenrenderungen zu steuern.
+title: Verhindern von Clickjacking-Angriffen
+description: Verhindern Sie Clickjacking-Exploits, indem Sie die Kopfzeile „X-Frame-Options“ verwenden, um das Rendern der Seite zu steuern.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
 source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
@@ -10,18 +10,18 @@ ht-degree: 0%
 
 ---
 
-# Verhindern von Clickjacking-Exploits
+# Verhindern von Clickjacking-Angriffen
 
-Verhindern Sie [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) -Exploits, indem Sie den HTTP-Anforderungsheader [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) in Anfragen an Ihre Storefront einbeziehen.
+Verhindern Sie [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking)-Exploits, indem Sie die [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) HTTP-Anfrage-Kopfzeile in Anfragen an Ihre Storefront einschließen.
 
-Mit der Kopfzeile `X-Frame-Options` können Sie angeben, ob ein Browser eine Seite in einem `<frame>`, `<iframe>` oder `<object>` wie folgt rendern darf:
+Mit dem `X-Frame-Options`-Header können Sie wie folgt angeben, ob ein Browser berechtigt ist, eine Seite in einem `<frame>`, `<iframe>` oder `<object>` zu rendern:
 
-- `DENY`: Die Seite kann nicht in einem Frame angezeigt werden.
-- `SAMEORIGIN`: (Standard) Die Seite kann nur in einem Frame mit derselben Herkunft wie die Seite selbst angezeigt werden.
+- `DENY`: Seite kann nicht in einem Frame angezeigt werden.
+- `SAMEORIGIN`: (Standard) Die Seite kann nur in einem Frame angezeigt werden, der auf demselben Ursprung liegt wie die Seite selbst.
 
 >[!WARNING]
 >
->Die Option `ALLOW-FROM <uri>` wird nicht mehr unterstützt, da sie von Commerce unterstützte Browser nicht mehr unterstützen. Siehe [Browserkompatibilität](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
+>Die `ALLOW-FROM <uri>`-Option wird nicht mehr unterstützt, da sie von Commerce unterstützte Browser nicht mehr unterstützen. Siehe [Browser-Kompatibilität](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options#browser_compatibility).
 
 >[!WARNING]
 >
@@ -35,17 +35,17 @@ Legen Sie einen Wert für `X-Frame-Options` in `<project-root>/app/etc/env.php` 
 'x-frame-options' => 'SAMEORIGIN',
 ```
 
-Stellen Sie sie erneut bereit, damit Änderungen an der `env.php`-Datei wirksam werden.
+Stellen Sie erneut bereit, damit Änderungen an der `env.php` wirksam werden.
 
 >[!TIP]
 >
->Es ist sicherer, die Datei `env.php` zu bearbeiten, als einen Wert in Admin festzulegen.
+>Es ist sicherer, die `env.php`-Datei zu bearbeiten, als einen Wert im Admin-Bereich festzulegen.
 
-## Überprüfen Sie Ihre Einstellung für `X-Frame-Options`
+## Überprüfen der Einstellung für `X-Frame-Options`
 
-Um Ihre Einstellung zu überprüfen, sehen Sie sich die HTTP-Header auf jeder Storefront-Seite an. Dazu gibt es mehrere Möglichkeiten, einschließlich der Verwendung eines Webbrowser-Inspektors.
+Um Ihre Einstellung zu überprüfen, zeigen Sie die HTTP-Kopfzeilen auf einer beliebigen Storefront-Seite an. Dazu gibt es mehrere Möglichkeiten, einschließlich der Verwendung eines Webbrowser-Inspektors.
 
-Im folgenden Beispiel wird &quot;curl&quot;verwendet, das Sie von jedem Computer aus ausführen können, der über das HTTP-Protokoll eine Verbindung zu Ihrem Commerce-Server herstellen kann.
+Im folgenden Beispiel wird curl verwendet, das Sie auf jedem Computer ausführen können, der über das HTTP-Protokoll eine Verbindung zu Ihrem Commerce-Server herstellen kann.
 
 ```bash
 curl -I -v --location-trusted '<storefront-URL>'

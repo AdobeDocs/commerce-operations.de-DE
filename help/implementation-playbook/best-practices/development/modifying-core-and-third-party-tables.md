@@ -1,6 +1,6 @@
 ---
-title: Best Practices für die Änderung von Datenbanktabellen
-description: Erfahren Sie, wie und wann Adobe Commerce- und Drittanbieter-Datenbanktabellen geändert werden.
+title: Best Practices für das Ändern von Datenbanktabellen
+description: Erfahren Sie, wie und wann Adobe Commerce- und Datenbanktabellen von Drittanbietern geändert werden.
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
@@ -12,64 +12,64 @@ ht-degree: 0%
 
 ---
 
-# Best Practices für die Änderung von Datenbanktabellen
+# Best Practices für das Ändern von Datenbanktabellen
 
-Dieser Artikel enthält Best Practices zum Ändern von Datenbanktabellen, die von [!DNL Adobe Commerce]- oder Drittanbietermodulen erstellt werden. Wenn Sie wissen, wann und wie Sie Tabellen effektiv ändern, können Sie die langfristige Rentabilität und Stabilität Ihrer Commerce-Plattform sicherstellen.
+Dieser Artikel enthält Best Practices zum Ändern von Datenbanktabellen, die von [!DNL Adobe Commerce] oder Drittanbietermodulen erstellt werden. Wenn Sie verstehen, wann und wie Sie Tabellen effektiv ändern können, können Sie die langfristige Lebensfähigkeit und Stabilität Ihrer Commerce-Plattform sicherstellen.
 
-Für die Migration von [!DNL Magento 1] und anderen E-Commerce-Plattformen oder die Arbeit mit Modulen vom [!DNL Adobe Commerce] Marketplace müssen möglicherweise zusätzliche Daten hinzugefügt und gespeichert werden. Als Erstes können Sie einer Datenbanktabelle eine Spalte hinzufügen oder eine vorhandene anpassen. Sie sollten jedoch nur in eingeschränkten Situationen eine Kern-Tabelle mit [!DNL Adobe Commerce] (oder Tabelle eines Drittanbieters) ändern.
+Für die Migration von [!DNL Magento 1] und anderen E-Commerce-Plattformen oder für die Arbeit mit Modulen aus dem [!DNL Adobe Commerce] Marketplace müssen möglicherweise zusätzliche Daten hinzugefügt und gespeichert werden. Der erste Instinkt kann darin bestehen, einer Datenbanktabelle eine Spalte hinzuzufügen oder eine vorhandene Tabelle anzupassen. Sie sollten eine [!DNL Adobe Commerce]-Kerntabelle (oder Drittanbietertabelle) jedoch nur in bestimmten Situationen ändern.
 
 ## Warum Adobe empfiehlt, Änderungen zu vermeiden
 
-Der Hauptgrund für die Vermeidung von Änderungen an Kerntabellen besteht darin, dass Adobe Commerce die zugrunde liegende Logik mit SQL-Rohabfragen enthält. Änderungen an der Tabellenstruktur können zu unerwarteten Nebenwirkungen führen, die schwer zu beheben sind. Die Änderung kann sich auch auf DDL-Vorgänge (Data Definition Language) auswirken und unvorhersehbare Auswirkungen auf die Leistung haben.
+Der Hauptgrund dafür, dass Sie keine Kerntabellen ändern müssen, besteht darin, dass Adobe Commerce eine zugrunde liegende Logik enthält, die SQL-Rohabfragen enthält. Änderungen an der Struktur der Tabelle können zu unerwarteten Nebenwirkungen führen, die schwer zu beheben sind. Die Änderung kann sich auch auf DDL-Vorgänge (Data Definition Language) auswirken und unerwartete und unvorhersehbare Auswirkungen auf die Leistung haben.
 
-Ein weiterer Grund, die Änderung der Datenbanktabellenstruktur zu vermeiden, besteht darin, dass Ihre Änderungen Probleme verursachen können, wenn das Kernentwicklungsteam oder Entwickler von Drittanbietern die Struktur ihrer Datenbanktabellen ändern. Es gibt beispielsweise einige zentrale Datenbanktabellen mit der Spalte `additional_data`. Dies war immer ein Spaltentyp `text` . Aus Leistungsgründen kann das Kernteam die Spalte jedoch in `longtext` ändern. Dieser Spaltentyp ist ein Alias für JSON. Durch die Konvertierung in diesen Spaltentyp werden dieser Spalte Leistungsverbesserungen und Suchmöglichkeiten hinzugefügt, die nicht als `text` -Typ vorhanden sind. Weitere Informationen zu diesem Thema finden Sie unter [JSON-Datentyp](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
+Ein weiterer Grund, weshalb Sie eine Änderung der Datenbanktabellenstruktur vermeiden sollten, besteht darin, dass Ihre Änderungen zu Problemen führen können, wenn das zentrale Entwicklungsteam oder Drittanbieter-Entwickler die Struktur ihrer Datenbanktabellen ändern. Es gibt beispielsweise einige zentrale Datenbanktabellen mit einer Spalte namens `additional_data`. Dies war immer ein `text` Spaltentyp. Aus Leistungsgründen kann das Core-Team die Spalte jedoch in `longtext` ändern. Dieser Spaltentyp ist ein Alias für JSON. Durch die Konvertierung in diesen Spaltentyp werden Leistungsgewinne und Suchmöglichkeiten zu dieser Spalte hinzugefügt, die nicht als `text` existiert. Weitere Informationen zu diesem Thema finden Sie unter [JSON-Datentyp](https://mariadb.com/kb/en/json-data-type/){target="_blank"}.
 
-## Datum zum Speichern oder Entfernen von Daten
+## Ermitteln, wann Daten gespeichert oder entfernt werden
 
-Adobe empfiehlt, dass Sie zuerst bestimmen, ob Sie diese Daten speichern müssen. Wenn Sie Daten aus einem Legacy-System verschieben, sparen Ihnen alle Daten, die Sie entfernen können, Zeit und Mühe während der Migration. (Es gibt Möglichkeiten, Daten zu archivieren, wenn sie später aufgerufen werden müssen.) Damit Sie die Anwendung und Leistung gut steuern können, können Sie eine Anforderung zum Speichern zusätzlicher Daten anfechten. Ihr Ziel besteht darin sicherzustellen, dass das Speichern der Daten eine Voraussetzung ist, um eine geschäftliche Anforderung zu erfüllen, die nicht auf andere Weise ausgefüllt werden kann.
+Adobe empfiehlt, zunächst zu ermitteln, ob diese Daten gespeichert werden müssen. Wenn Sie Daten aus einem Altsystem verschieben, sparen Sie sich durch alle Daten, die Sie entfernen können, Zeit und Mühe bei der Migration. (Es gibt Möglichkeiten, Daten zu archivieren, wenn auf sie später zugegriffen werden muss.) Um ein guter Verwalter der Anwendung und Leistung zu sein, ist es in Ordnung, eine Anfrage zum Speichern zusätzlicher Daten anzufechten. Ihr Ziel besteht darin, sicherzustellen, dass die Speicherung der Daten eine Voraussetzung für die Erfüllung einer Geschäftsanforderung ist, die nicht auf andere Weise erfüllt werden kann.
 
 ### Alte Daten
 
-Wenn Ihr Projekt veraltete Daten wie alte Bestellungen oder Kundendatensätze enthält, sollten Sie eine alternative Suchmethode in Erwägung ziehen. Wenn das Unternehmen beispielsweise nur gelegentlich Zugriff auf die Daten benötigt, sollten Sie eine externe Suche der alten Datenbank implementieren, die außerhalb der Commerce-Plattform gehostet wird, anstatt alte Daten in [!DNL Adobe Commerce] zu migrieren.
+Wenn Ihr Projekt ältere Daten enthält, wie z. B. alte Bestellungen oder Kundendatensätze, sollten Sie eine alternative Suchmethode in Betracht ziehen. Wenn das Unternehmen beispielsweise den Zugriff auf die Daten nur gelegentlich als Referenz benötigt, sollten Sie eine externe Suche der alten Datenbank implementieren, die außerhalb der Commerce-Plattform gehostet wird, anstatt alte Daten nach [!DNL Adobe Commerce] zu migrieren.
 
-In diesem Fall muss die Datenbank auf einen Server migriert werden, der entweder eine Webschnittstelle zum Lesen der Daten anbietet oder vielleicht eine Schulung in der Verwendung von MySQL Workbench oder ähnlichen Tools. Das Ausschließen dieser Daten aus der neuen Datenbank beschleunigt die Migration, da das Entwicklungsteam sich auf die neue Site konzentrieren kann, anstatt Probleme mit der Datenmigration zu beheben.
+In diesem Fall müsste die Datenbank auf einen Server migriert werden, der entweder eine Web-Schnittstelle zum Lesen der Daten oder möglicherweise eine Schulung im Umgang mit MySQL Workbench oder ähnlichen Tools bietet. Der Ausschluss dieser Daten aus der neuen Datenbank beschleunigt die Migration, da sich das Entwicklungs-Team auf die neue Site konzentrieren kann, anstatt Probleme mit der Datenmigration zu beheben.
 
-Eine andere Möglichkeit, die Daten außerhalb des Handels zu halten, sie jedoch in Echtzeit zu verwenden, wäre die Nutzung anderer Tools wie GraphQL-Gitter. Diese Option kombiniert verschiedene Datenquellen und gibt sie als einzelne Antwort zurück.
+Eine weitere damit zusammenhängende Option, um die Daten außerhalb von Commerce zu halten, sie jedoch in Echtzeit zu verwenden, besteht darin, andere Tools wie GraphQL Mesh zu nutzen. Diese Option kombiniert verschiedene Datenquellen und gibt sie als eine einzige Antwort zurück.
 
-Sie können beispielsweise &quot;`stitch`&quot; alte Bestellungen aus einer externen Datenbank zusammenführen, vielleicht die alte Magento 1-Site, die stillgelegt wurde. Zeigen Sie sie dann mithilfe des GraphQL-Gitters als Teil des Bestellverlaufs der Kunden an. Diese alten Bestellungen können mit den Bestellungen aus Ihrer aktuellen [!DNL Adobe Commerce] -Umgebung kombiniert werden.
+Sie können beispielsweise alte Bestellungen aus einer externen Datenbank `stitch`, z. B. aus der alten Magento 1-Site, die eingestellt wurde. Zeigen Sie sie dann mithilfe von GraphQL Mesh als Teil des Auftragsverlaufs des Kunden an. Diese alten Bestellungen können mit den Bestellungen aus Ihrer aktuellen [!DNL Adobe Commerce] kombiniert werden.
 
-Weitere Informationen zur Verwendung von API-Gitter mit GraphQL finden Sie unter [Was ist API-Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) und [GraphQL-Mesh-Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+Weitere Informationen zur Verwendung von API Mesh mit GraphQL finden Sie unter [Was ist API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) und [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
-## Migrieren älterer Daten mit Erweiterungsattributen
+## Migrieren von alten Daten mit Erweiterungsattributen
 
 Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in [!DNL Adobe Commerce] gespeichert werden müssen, empfiehlt Adobe die Verwendung von [Erweiterungsattributen](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
 
 - Sie können die beizubehaltenden Daten und die Datenbankstruktur steuern, um sicherzustellen, dass die Daten mit dem richtigen Spaltentyp und den richtigen Indizes gespeichert werden.
 - Die meisten Entitäten in [!DNL Adobe Commerce] unterstützen die Verwendung von Erweiterungsattributen.
-- Erweiterungsattribute sind ein speicherunabhängiger Mechanismus, der die Flexibilität bietet, die Daten an einem optimalen Speicherort für Ihr Projekt zu speichern.
+- Erweiterungsattribute sind ein speicherunabhängiger Mechanismus, der die Flexibilität bietet, die Daten am optimalen Speicherort für Ihr Projekt zu speichern.
 
-Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Entscheidend bei der Auswahl eines Standorts ist, ob der Standort eine zusätzliche Komplexität einbringt oder sich auf die Leistung auswirkt.
+Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Bei der Auswahl eines Standorts ist vor allem zu berücksichtigen, ob ein Standort zusätzliche Komplexität mit sich bringt oder die Leistung beeinträchtigt.
 
-### Andere Alternativen in Betracht ziehen
+### Erwägen anderer Alternativen
 
-Als Entwickler ist es wichtig, immer Tools außerhalb Ihrer [!DNL Adobe Commerce]-Umgebung zu verwenden, z. B. GraphQL-Gitter und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten beizubehalten, wirken sich jedoch nicht auf die Commerce-Hauptanwendung oder die zugrunde liegenden Datenbanktabellen aus. Bei diesem Ansatz stellen Sie Ihre Daten über eine API bereit. Fügen Sie dann Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mit GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erstellen, wie in [alten Daten](#legacy-data) beschrieben.
+Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce]-Umgebung in Betracht zu ziehen, z. B. GraphQL Mesh und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten zu bewahren, haben jedoch keine Auswirkungen auf die Commerce-Kernanwendung oder die zugrunde liegenden Datenbanktabellen. Mit diesem Ansatz stellen Sie Ihre Daten über eine API zur Verfügung. Anschließend fügen Sie Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mithilfe von GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erzeugen, wie in [Legacy-Daten](#legacy-data) beschrieben.
 
-Weitere Informationen zum GraphQL-Gitter finden Sie unter [GraphQL-Mesh-Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zum Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
+Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zum Adobe-App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Ändern einer Kerntabelle oder Drittanbietertabelle
 
-Wenn Sie sich dafür entscheiden, Daten durch Änderung einer Core- [!DNL Adobe Commerce] - oder Drittanbieter-Modul-Datenbanktabelle zu speichern, sollten Sie die folgenden Richtlinien verwenden, um die Auswirkungen auf Stabilität und Leistung zu minimieren.
+Wenn Sie sich entscheiden, Daten durch Ändern einer [!DNL Adobe Commerce] oder einer Datenbanktabelle von Drittanbietermodulen zu speichern, befolgen Sie die folgenden Richtlinien, um die Auswirkungen auf Stabilität und Leistung zu minimieren.
 
 - Nur neue Spalten hinzufügen.
-- Ändern Sie nie den Wert _type_ einer vorhandenen Spalte. Ändern Sie beispielsweise nicht &quot;`integer`&quot;in &quot;`varchar`&quot;, um Ihren individuellen Anwendungsfall zu erfüllen.
+- Ändern Sie nie den _Typ_-Wert einer vorhandenen Spalte. Ändern Sie beispielsweise keine `integer` in eine `varchar`, um Ihren speziellen Anwendungsfall zu erfüllen.
 - Vermeiden Sie das Hinzufügen von Spalten zu EAV-Attributtabellen. Diese Tabellen sind bereits mit Logik und Verantwortung überlastet.
-- Bestimmen Sie vor dem Anpassen einer Tabelle deren Größe. Das Ändern großer Tabellen wirkt sich auf die Bereitstellung aus, was zu Minuten oder Stunden Verzögerung bei der Anwendung von Änderungen führen kann.
+- Bestimmen Sie vor dem Anpassen einer Tabelle deren Größe. Das Ändern großer Tabellen wirkt sich auf die Bereitstellung aus, was beim Anwenden von Änderungen zu Verzögerungen von Minuten oder Stunden führen kann.
 
-## Best Practices zum Ändern einer externen Datenbanktabelle
+## Best Practices für das Ändern einer externen Datenbanktabelle
 
-Adobe empfiehlt die folgenden Schritte, wenn Sie eine Spalte zu einer Kerndatenbanktabelle oder einer Drittanbieter-Tabelle hinzufügen:
+Adobe empfiehlt, diese Schritte auszuführen, wenn Sie eine Spalte zu einer Core-Datenbanktabelle oder einer Drittanbietertabelle hinzufügen:
 
-1. Erstellen Sie ein Modul mit einem Namen in Ihrem Namespace, der das darstellt, was Sie aktualisieren.
+1. Erstellen Sie ein Modul mit einem Namen in Ihrem Namespace, der darstellt, was Sie aktualisieren.
 
    Beispiel: `app/code/YourCompany/Customer`
 
@@ -77,41 +77,41 @@ Adobe empfiehlt die folgenden Schritte, wenn Sie eine Spalte zu einer Kerndatenb
 
 1. Erstellen Sie eine Datei mit dem Namen `db_schema.xml` im Ordner `etc` und nehmen Sie die entsprechenden Änderungen vor.
 
-   Falls zutreffend, generieren Sie eine `db_schema_whitelist.json` -Datei. Weitere Informationen finden Sie unter [Deklaratives Schema](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} .
+   Generieren Sie ggf. eine `db_schema_whitelist.json`. Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}Deklaratives Schema“.
 
 ### Potenzielle Auswirkungen
 
-Das Hinzufügen einer Spalte zu einer externen Datenbank kann sich auf folgende Weise auf Ihr Adobe Commerce-Projekt auswirken:
+Das Hinzufügen einer Spalte zu einer externen Datenbank kann sich wie folgt auf Ihr Adobe Commerce-Projekt auswirken:
 
 - Upgrades könnten komplizierter sein.
 - Bereitstellungen sind betroffen, wenn die zu ändernde Tabelle groß ist.
-- Die Migration zu einer neuen Plattform könnte komplizierter sein.
+- Migrationen auf eine neue Plattform könnten komplizierter sein.
 
-## Methoden zum Vermeiden von Änderungen an Kerntabellen
+## Vermeiden der Änderung von Kerntabellen
 
-Sie können eine Änderung von Adobe Commerce-Datenbanktabellen durch Verwendung von [Erweiterungsattributen](#migrate-legacy-data-with-extension-attributes) vermeiden. Eine weitere Alternative besteht darin, eine spezielle Spalte (`additional_data`) zu verwenden, die in einigen Kerntabellen gefunden wird, um Daten zu speichern und sie im JSON-kodierten Format zu speichern.
+Sie können die Änderung von Adobe Commerce-Datenbanktabellen durch Verwendung von [Erweiterungsattributen](#migrate-legacy-data-with-extension-attributes) vermeiden. Eine weitere Alternative besteht darin, eine spezielle Spalte (`additional_data`) in einigen Kerntabellen zu verwenden, um Daten zu speichern und im JSON-kodierten Format zu speichern.
 
-### Daten in einer JSON-kodierten Datenspalte speichern
+### Speichern von Daten in einer JSON-kodierten Datenspalte
 
-Einige Kerntabellen verfügen über eine Spalte &quot;`additional_data`&quot;, die JSON-kodierte Daten enthält. Diese Spalte bietet eine native Möglichkeit, zusätzliche Daten in einem Feld zuzuordnen. Mit dieser Methode wird verhindert, dass eine Tabelle für kleine, einfache Datenelemente hinzugefügt wird, die Informationen zum Datenabruf ohne Suchanforderung speichern. Die Spalte `additional_data` ist in der Regel nur auf Elementebene verfügbar, nicht für das gesamte Anführungszeichen oder die gesamte Bestellung.
+Einige Kerntabellen verfügen über eine `additional_data`, die JSON-kodierte Daten enthält. Diese Spalte bietet eine native Möglichkeit, zusätzliche Daten in einem Feld zuzuordnen. Durch die Verwendung dieser Methode wird vermieden, dass eine Tabelle für kleine, einfache Datenelemente hinzugefügt wird, die Informationen für den Datenabruf ohne Suchanforderung speichern. Die `additional_data` Spalte ist in der Regel nur auf Artikelebene verfügbar, nicht für das gesamte Angebot oder die gesamte Bestellung.
 
-- Vorteile der Verwendung des Felds `additional_data`
+- Vorteile der Verwendung des `additional_data` Felds
 
-   - Es sind keine zusätzlichen Felder erforderlich, sodass die Anzahl der Spalten minimal bleibt. Dies ist im Verkaufsfluss hilfreich, wo bereits viele Tabellen enthalten sind. Es ist am besten, diesen bereits komplizierten Prozess nicht noch komplexer zu gestalten. Diese Methode erfüllt viele Anwendungsfälle, aber nicht alle.
+   - Es sind keine zusätzlichen Felder erforderlich, wodurch die Anzahl der Spalten minimal bleibt. Dies ist im Verkaufsablauf hilfreich, bei dem bereits viele Tabellen beteiligt sind. Es ist am besten, diesem ohnehin komplizierten Prozess keine zusätzliche Komplexität zu verleihen. Diese Methode eignet sich für viele Anwendungsfälle, aber nicht für alle.
 
 - Nachteile
 
-   - Diese Methode eignet sich nur zum Speichern schreibgeschützter Daten. Dieses Problem tritt auf, weil unser Code nicht serialisiert werden muss, um das Objekt zu ändern und zu erstellen, um Abhängigkeiten oder Datenbankbeziehungen hinzuzufügen.
+   - Diese Methode eignet sich nur zum Speichern schreibgeschützter Daten. Dieses Problem tritt auf, weil der Code nicht serialisiert werden muss, um das -Objekt zu ändern und zu erstellen und Abhängigkeiten oder Datenbankbeziehungen hinzuzufügen.
 
-   - Es ist schwierig, Datenbankvorgänge zu verwenden, um nach diesen Feldern zu suchen. Mit dieser Methode zu suchen ist langsam.
+   - Es ist schwierig, Datenbankoperationen zu verwenden, um nach diesen Feldern zu suchen. Die Suche mit dieser Methode ist langsam.
 
-   - Beim Speichern von Daten in der Spalte `additional_data` ist besondere Vorsicht geboten, um zu verhindern, dass Serialisierungs- oder Unserialisierungsvorgänge ausgelöst werden, die den Code beschädigen könnten, indem ungültige JSON erstellt oder während der Laufzeit Lesefehler verursacht werden.
+   - Beim Speichern von Daten in der Spalte `additional_data` müssen Sie besonders vorsichtig sein, um zu vermeiden, dass Serialisierungs- oder Rückserialisierungsvorgänge ausgelöst werden, die den Code beschädigen könnten, indem sie ungültige JSON-Dateien erstellen oder während der Laufzeit Lesefehler verursachen.
 
-   - Diese Felder müssen im Code klar deklariert sein, damit sie ein Entwickler leicht finden kann.
+   - Diese Felder müssen im Code klar deklariert sein, damit Entwickler sie leicht finden können.
 
-   - Andere Probleme, die auftreten können, können sehr schwer zu diagnostizieren sein. Bei einigen nativen PHP-Funktionen, wenn Sie nicht die von der Kernanwendung bereitgestellten [!DNL Adobe Commerce] -Wrapper-Methoden verwenden, kann sich das Endergebnis der umgewandelten Daten vom erwarteten Format unterscheiden. Verwenden Sie immer die Wrapper-Funktionen, um die Konsistenz und Vorhersagbarkeit der zu speichernden oder abgerufenen Daten sicherzustellen.
+   - Andere Probleme, die auftreten können und sehr schwer zu diagnostizieren sind. Wenn Sie beispielsweise bei einigen nativen PHP-Funktionen keine [!DNL Adobe Commerce] Wrapper-Methoden verwenden, die von der Kernanwendung bereitgestellt werden, kann das Endergebnis der umgewandelten Daten vom erwarteten Format abweichen. Verwenden Sie immer die Wrapper-Funktionen, um Konsistenz und Vorhersehbarkeit der zu speichernden oder abgerufenen Daten sicherzustellen.
 
-Im Folgenden finden Sie Beispiele für Tabellen mit der Spalte und der Struktur für die Spalte `additional_data` .
+Im Folgenden finden Sie Beispiele für Tabellen mit der Spalte und der Struktur für die `additional_data` Spalte.
 
 ```mysql
 MariaDB [main]> DESCRIBE quote_item additional_data;
@@ -132,7 +132,7 @@ MariaDB [main]> DESCRIBE sales_order_item additional_data;
 1 row in set (0.001 sec)
 ```
 
-In den Versionen 2.4.3, 2.4.4 und 2.4.5 gibt es zehn Tabellen mit der Spalte `additional_data`.
+In den Versionen 2.4.3, 2.4.4 und 2.4.5 gibt es zehn Tabellen mit den Spalten `additional_data`.
 
 ```mysql
 MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE COLUMN_NAME IN ('additional_data') AND TABLE_SCHEMA='main';

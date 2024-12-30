@@ -1,6 +1,6 @@
 ---
-title: Best Practices bei der Ausnahmebehandlung
-description: Erfahren Sie mehr über die empfohlenen Methoden zur Protokollierung von Ausnahmen bei der Entwicklung von Adobe Commerce-Projekten.
+title: Best Practices für die Ausnahmebehandlung
+description: Erfahren Sie mehr über die empfohlenen Methoden zum Protokollieren von Ausnahmen bei der Entwicklung von Adobe Commerce-Projekten.
 feature: Best Practices
 role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# Best Practices bei der Ausnahmebehandlung
+# Best Practices für die Ausnahmebehandlung
 
-Wenn eine Ausnahme nicht in die Datei `exception.log` geschrieben wurde, mit dem Ausnahmemodell als Kontext, wird sie in New Relic oder einem anderen monolog-kompatiblen PSR-3-Protokollspeicher nicht korrekt erkannt und analysiert. Die Protokollierung nur eines Teils der Ausnahme (oder die Protokollierung in die falsche Datei) führt zu Produktionsfehlern, wenn Ausnahmen übersehen werden.
+Wenn eine Ausnahme nicht in die `exception.log` geschrieben wird, wobei das Ausnahmemodell als Kontext dient, wird sie in New Relic oder einem anderen PSR-3 Monolog-kompatiblen Protokollspeicher nicht korrekt erkannt und analysiert. Wenn Sie nur einen Teil der Ausnahme protokollieren (oder sie in der falschen Datei protokollieren), führt dies zu Fehlern in der Produktion, wenn Ausnahmen übersehen werden.
 
 ## Korrekte Ausnahmebehandlung
 
-Die folgende Checkliste enthält Beispiele für die korrekte Handhabung von Ausnahmen.
+Die folgende Checkliste enthält Beispiele zur Veranschaulichung der korrekten Ausnahmebehandlung.
 
-### ![Korrigieren](../../../assets/yes.svg) Schreiben Sie in das Ausnahmeprotokoll
+### ![korrekt](../../../assets/yes.svg) Schreiben in das Ausnahmenprotokoll
 
-Schreiben Sie mit dem folgenden Muster in das Ausnahmeprotokoll, unabhängig von weiteren Aktionen, es sei denn, es gibt einen zwingenden Grund, dies nicht zu tun.
+Schreiben Sie unabhängig von weiteren Aktionen unter Verwendung des folgenden Musters in das Ausnahmenprotokoll, es sei denn, es gibt einen zwingenden Grund, dies nicht zu tun.
 
 ```php
 try {
@@ -31,11 +31,11 @@ try {
 }
 ```
 
-Bei diesem Ansatz wird der `$e->getMessage` automatisch in der Protokollmeldung und das `$e` -Objekt im Kontext gespeichert, entsprechend dem [PSR-3-Kontextstandard](https://www.php-fig.org/psr/psr-3/#13-context). Dies erfolgt in `\Magento\Framework\Logger\Monolog::addRecord`.
+Bei diesem Ansatz werden die `$e->getMessage` zur Protokollmeldung und das `$e` gemäß dem [PSR-3-Kontextstandard) automatisch im Kontext ](https://www.php-fig.org/psr/psr-3/#13-context). Dies geschieht in `\Magento\Framework\Logger\Monolog::addRecord`.
 
-### ![Korrigieren](../../../assets/yes.svg) Stummschaltsignale
+### ![korrekt](../../../assets/yes.svg) Stummschaltung
 
-Stummschaltsignale, indem keine Ausnahmen protokolliert werden, die Teil des beabsichtigten Betriebsablaufs sind. Wenn die Ausnahme auftritt, ist keine Folgeaktion erforderlich, sodass sie nicht protokolliert und analysiert werden muss, wenn sie auftritt. Fügen Sie einen Kommentar hinzu, der angibt, warum Signale stummgeschaltet werden und ob dies beabsichtigt ist. Kombinieren Sie mit `phpcs:ignore`.
+Stummschalten von Signalen durch Nichtprotokollieren von Ausnahmen, die Teil des beabsichtigten Betriebsablaufs sind. Wenn eine Ausnahme auftritt, sind keine Folgemaßnahmen erforderlich, sodass sie nicht protokolliert und analysiert werden muss, wenn sie auftritt. Fügen Sie einen Kommentar hinzu, der den Grund für die Stummschaltung der Signale angibt und angibt, dass dies beabsichtigt ist. Kombinieren mit `phpcs:ignore`.
 
 ```php
 try {
@@ -45,9 +45,9 @@ try {
 }
 ```
 
-### ![Korrigieren](../../../assets/yes.svg) Herabstufungsausnahmen
+### ![korrekt](../../../assets/yes.svg) Ausnahmen beim Downgrade
 
-Aktualisieren Sie Ausnahmen, indem Sie dem [PSR-3-Kontextstandard](https://www.php-fig.org/psr/psr-3/#13-context) folgen.
+Downgrade-Ausnahmen nach dem [PSR-3-](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -57,9 +57,9 @@ try {
 }
 ```
 
-### ![Korrigieren](../../../assets/yes.svg) Die Protokollierung kommt immer zuerst
+### ![korrekt](../../../assets/yes.svg) Die Protokollierung kommt immer zuerst
 
-Als Best Practice wird die Protokollierung immer zuerst im Code durchgeführt, um Fälle zu verhindern, in denen eine andere Ausnahme oder ein schwerwiegender Fehler ausgelöst wird, bevor in das Protokoll geschrieben wird.
+Als Best Practice wird die Protokollierung immer zuerst im Code angezeigt, um zu verhindern, dass eine weitere Ausnahme oder ein schwerwiegender Fehler ausgelöst wird, bevor in das Protokoll geschrieben wird.
 
 ```php
 try {
@@ -70,9 +70,9 @@ try {
 }
 ```
 
-### ![Korrigieren](../../../assets/yes.svg) Protokollmeldungen und der gesamte Ausnahmeverlauf
+### ![korrekt](../../../assets/yes.svg) Protokollmeldungen und die gesamte Ausnahmenverfolgung
 
-Protokollieren Sie Meldungen und den gesamten Ausnahmeverlauf, indem Sie dem [PSR-3-Kontextstandard](https://www.php-fig.org/psr/psr-3/#13-context) folgen.
+Protokollmeldungen und die gesamte Ausnahmenablaufverfolgung gemäß dem [PSR-3-](https://www.php-fig.org/psr/psr-3/#13-context).
 
 ```php
 try {
@@ -86,9 +86,9 @@ try {
 
 Die folgenden Beispiele zeigen eine falsche Ausnahmebehandlung.
 
-### ![falsche](../../../assets/no.svg) Logik vor Protokollierung
+### ![falsch](../../../assets/no.svg) Logik vor der Protokollierung
 
-Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder zu einem schwerwiegenden Fehler führen, der verhindert, dass die Ausnahme protokolliert wird, und durch [korrektes Beispiel](#logging-always-comes-first) ersetzt werden sollte.
+Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder einem schwerwiegenden Fehler führen. Dies verhindert, dass die Ausnahme protokolliert wird, und sollte durch [richtiges Beispiel“ ](#logging-always-comes-first) werden.
 
 ```php
 try {
@@ -99,9 +99,9 @@ try {
 }
 ```
 
-### ![inkorrekt](../../../assets/no.svg) leerer `catch`
+### ![falsch](../../../assets/no.svg) Leere `catch`
 
-Leere `catch` -Blöcke können ein Zeichen für eine unbeabsichtigte Mutation sein und sollten durch das [richtige Beispiel](#mute-signals) ersetzt werden.
+Leere `catch` können ein Zeichen für eine unbeabsichtigte Stummschaltung sein und sollten durch das richtige [ ersetzt ](#mute-signals).
 
 ```php
 try {
@@ -110,9 +110,9 @@ try {
 }
 ```
 
-### ![inkorrekt](../../../assets/no.svg) Doppelte Lokalisierung
+### ![falsch](../../../assets/no.svg) Doppelte Lokalisierung
 
-Wenn die erfasste lokalisierte Ausnahme noch nicht übersetzt ist, beheben Sie das Problem an der Stelle, an der die Ausnahme zum ersten Mal ausgelöst wird.
+Wenn die erfasste lokalisierte Ausnahme noch nicht übersetzt wurde, beheben Sie das Problem an der Stelle, an der die Ausnahme zum ersten Mal ausgelöst wurde.
 
 ```php
 try {
@@ -124,7 +124,7 @@ try {
 
 ### ![inkorrekt](../../../assets/no.svg) Protokollmeldungen und Verfolgung zu verschiedenen Protokolldateien
 
-Der folgende Code protokolliert fälschlicherweise den Stacktrace für eine Ausnahme als Zeichenfolge in einer Protokolldatei.
+Der folgende Code protokolliert den Stacktrace für eine Ausnahme fälschlicherweise als Zeichenfolge in einer Protokolldatei.
 
 ```php
 try {
@@ -135,13 +135,13 @@ try {
 }
 ```
 
-Durch diesen Ansatz werden Zeilenumbrüche in der Nachricht eingeführt, die nicht mit PSR-3 konform sind. Die Ausnahme, einschließlich Stacktrace, muss Teil des Nachrichtenkontexts sein, um sicherzustellen, dass sie mit der Nachricht in New Relic oder einem anderen monolog-kompatiblen PSR-3-Protokollspeicher korrekt gespeichert wird.
+Dieser Ansatz führt zu Zeilenumbrüchen in der Nachricht, die nicht mit PSR-3 konform sind. Die Ausnahme, einschließlich Stacktrace, muss Teil des Nachrichtenkontexts sein, um sicherzustellen, dass sie korrekt mit der Nachricht in New Relic oder einem anderen PSR-3 Monolog-kompatiblen Protokollspeicher gespeichert wird.
 
-Beheben Sie dieses Problem, indem Sie den Code ersetzen, der den korrekten Beispielen folgt, die in [Schreiben in das Ausnahmeprotokoll](#write-to-the-exception-log) oder [Herabstufen von Ausnahmen](#downgrade-exceptions) dargestellt sind.
+Beheben Sie dieses Problem, indem Sie den Code durch die richtigen Beispiele ersetzen, die unter [Schreiben in das Ausnahmenprotokoll](#write-to-the-exception-log) oder [Downgrade-Ausnahmen](#downgrade-exceptions) zu sehen sind.
 
-### ![inkorrekt](../../../assets/no.svg) Herabstufungsausnahmen ohne Kontext
+### ![falsch](../../../assets/no.svg) Ausnahmen ohne Kontext herunterstufen
 
-Die Ausnahme wird auf einen Fehler herabgestuft, bei dem kein Objekt, sondern nur eine Zeichenfolge, also das `getMessage()`, übergeben werden kann. Dadurch geht die Trace verloren und sollte durch die korrekten Beispiele ersetzt werden, die in [Schreiben in das Ausnahmeprotokoll](#write-to-the-exception-log) oder [Downgrade-Ausnahmefehler](#downgrade-exceptions) angezeigt werden.
+Die Ausnahme wird zu einem Fehler heruntergestuft, wodurch nicht die Übergabe eines -Objekts, sondern nur einer Zeichenfolge ermöglicht wird. Daher die `getMessage()`. Dadurch geht die Ablaufverfolgung verloren und sollte durch die richtigen Beispiele ersetzt werden, die unter [Schreiben in das Ausnahmenprotokoll](#write-to-the-exception-log) oder [Downgrade-Ausnahmen](#downgrade-exceptions) zu sehen sind.
 
 ```php
 try {
@@ -151,9 +151,9 @@ try {
 }
 ```
 
-### ![inkorrekt](../../../assets/no.svg) Protokollieren Sie nur die Meldung im Ausnahmeprotokoll
+### ![falsch](../../../assets/no.svg) Nur die Nachricht im Ausnahmenprotokoll protokollieren
 
-Statt das Objekt `$e` zu übergeben, wird nur `$e->getMessage()` übergeben. Dadurch geht die Trace verloren und sollte durch die richtigen Beispiele ersetzt werden, die für [Schreiben in das Ausnahmeprotokoll](#write-to-the-exception-log) oder [Herabstufen von Ausnahmen](#downgrade-exceptions) stehen.
+Anstatt das -Objekt `$e` zu übergeben, wird nur `$e->getMessage()` übergeben. Dadurch geht die Ablaufverfolgung verloren und sollte durch die richtigen Beispiele ersetzt werden, die gezeigt werden [Schreiben in das Ausnahmenprotokoll](#write-to-the-exception-log) oder [Downgrade-Ausnahmen](#downgrade-exceptions).
 
 ```php
 try {
@@ -163,9 +163,9 @@ try {
 }
 ```
 
-### ![falsch](../../../assets/no.svg) Fehlt `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
+### ![falsch](../../../assets/no.svg) Fehlende `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Wenn Sie die Zeile `phpcs:ignore` auslassen, wird eine Warnung in PHPCS Trigger und Ihre CI sollte nicht übergeben werden. Dies sollte durch das richtige Beispiel aus [Stummschaltsignale](#mute-signals) ersetzt werden.
+Das Auslassen der `phpcs:ignore`-Trigger ist ein Warnhinweis in PHPCS und sollte nicht Ihren CI übergeben. Dies sollte durch das richtige Beispiel ersetzt werden, das unter [Stummschaltungssignale“ ](#mute-signals) ist.
 
 ```php
 try {

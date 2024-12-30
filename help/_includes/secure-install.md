@@ -7,10 +7,10 @@ ht-degree: 0%
 ---
 # Sichere Installation
 
-Um Secure Sockets Layer (SSL), auch HTTPS genannt, sowohl für Admin als auch für die Storefront zu verwenden, müssen Sie alle folgenden Parameter festlegen:
+Um Secure Sockets Layer (SSL), auch als HTTPS bezeichnet, sowohl für die Admin- als auch für die Storefront zu verwenden, müssen Sie alle folgenden Parameter festlegen:
 
-* `--use-secure`: Auf `1` setzen
-* `--base-url-secure`: Auf eine sichere URL festlegen (d. h., beginnend mit `https://`)
-* `--use-secure-admin` Auf `1` setzen
+* `--use-secure`: Auf `1` festlegen
+* `--base-url-secure`: Auf eine sichere URL festlegen (d. h., mit `https://` beginnen)
+* `--use-secure-admin` festgelegt auf `1`
 
 Weitere Informationen zu diesen Parametern finden Sie weiter unten in diesem Thema.
