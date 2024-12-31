@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-47910: fehlende Bestellungen, Rechnungen, Sendungen, Kreditkarten in den jeweiligen Unternehmensnetzen'
-description: Wenden Sie den Patch ACSD-47910 an, um das Adobe Commerce-Problem zu beheben, das bei fehlenden Bestellungen, Rechnungen, Sendungen und Kreditkarten in den jeweiligen Entitätsrasten auftritt.
+title: 'ACSD-47910: fehlende Bestellungen, Rechnungen, Lieferungen, Gutschriften in den jeweiligen Entitätsrastern'
+description: Wenden Sie den ACSD-47910 Patch an, um das Adobe Commerce-Problem zu beheben, bei dem in den entsprechenden Entitätsrastern Bestellungen, Rechnungen, Lieferungen und Gutschriften fehlen.
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
 exl-id: 09115cf3-62c3-425e-bc99-e8971398dd20
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47910: fehlende Bestellungen, Rechnungen, Sendungen und Kreditkarten in den jeweiligen Unternehmensnetzen
+# ACSD-47910: fehlende Bestellungen, Rechnungen, Lieferungen und Gutschriften in den entsprechenden Entitätsrastern
 
-Der Patch ACSD-47910 behebt das Problem, bei dem es fehlende Bestellungen, Rechnungen, Sendungen und Kreditkarten in den jeweiligen Entitätsrasten gibt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.25 installiert ist. Die Patch-ID lautet ACSD-47910. Die Version, in der dieses Problem behoben wird, ist noch nicht verfügbar.
+Mit dem Patch ACSD-47910 wird das Problem behoben, dass in den entsprechenden Entitätsrastern Bestellungen, Rechnungen, Lieferungen und Gutschriften fehlen. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.25 installiert ist. Die Patch-ID ist ACSD-47910. Die Version, in der dieses Problem behoben wird, ist noch nicht verfügbar.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,29 +21,29 @@ Der Patch ACSD-47910 behebt das Problem, bei dem es fehlende Bestellungen, Rechn
 * Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4-p1
 
 **Kompatibel mit Adobe Commerce-Versionen:**
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.5 - p4
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.5-p4
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Fehlende Bestellungen, Rechnungen, Sendungen und Kreditkarten in den jeweiligen Unternehmensrasten.
+Fehlende Bestellungen, Rechnungen, Lieferungen und Gutschriften in den entsprechenden Entitätsrastern.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Aktivieren Sie **[!UICONTROL Asynchronous indexing]** bei **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Grid Settings]**.
-1. Bestellen Sie zwei Bestellungen.
+1. Aktivieren Sie **[!UICONTROL Asynchronous indexing]** unter **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL Grid Settings]**.
+1. Geben Sie zwei Bestellungen auf.
 1. Führen Sie den Cron aus, um diese Bestellungen mit dem Raster zu synchronisieren.
-1. Öffnen Sie eine der Bestellungen und machen Sie sie bereit zur Fakturierung. SENDEN SIE DIE RECHNUNG NOCH NICHT.
-1. Machen Sie eine neue Bestellung fertig, um sie an der Frontend platzieren zu können. KLICKEN SIE NOCH NICHT AUF DIE SCHALTFLÄCHE PLATZIERUNG .
-1. Fügen Sie eine `sleep(30)` im `foreach` bei `NotSyncedDataProvider::L43` hinzu.
-1. Führen Sie `bin/magento cron:run` aus.
-1. Jetzt bestellen Sie die neue Bestellung.
-1. Rechnungsstellung der vorherigen Bestellung.
-1. Führen Sie den Cron erneut aus, damit die neue Bestellung synchronisiert wird.
-1. Navigieren Sie zum Bestellraster in der Admin-Konsole.
+1. Öffnen Sie eine der Bestellungen und stellen Sie sie für die Fakturierung bereit. RECHNUNG NOCH NICHT EINREICHEN.
+1. Erstellen Sie eine neue Bestellung, die im Frontend platziert werden kann. KLICKEN SIE NOCH NICHT AUF DIE SCHALTFLÄCHE BESTELLUNG AUFGEBEN .
+1. Fügen Sie eine `sleep(30)` in die `foreach` unter `NotSyncedDataProvider::L43`.
+1. `bin/magento cron:run` ausführen.
+1. Bestellen Sie jetzt neu.
+1. Rechnung der vorherigen Bestellung.
+1. Führen Sie den Cron erneut aus und erwarten Sie, dass die neue Reihenfolge synchronisiert wird.
+1. Navigieren Sie zum Bestellraster im Admin-Bereich.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -51,21 +51,21 @@ Die neue Reihenfolge sollte im Bestellraster angezeigt werden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die vorherige Bestellaktualisierung wurde mit dem Raster (**[!UICONTROL status: Processing]**) synchronisiert. Die neue Reihenfolge wird nie im Raster angezeigt.
+Die vorherige Aktualisierung der Reihenfolge wurde mit dem Raster (**[!UICONTROL status: Processing]**) synchronisiert. Die neue Reihenfolge wird nie im Raster angezeigt.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

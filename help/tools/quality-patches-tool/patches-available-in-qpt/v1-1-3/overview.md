@@ -1,6 +1,6 @@
 ---
 title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.3'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.3 verfügbaren Patches behoben wurden.
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.3  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin
 exl-id: 5705df25-da81-4a78-b140-b1ecb230c288
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 ---
 
-# Überblick über [!DNL Quality Patches Tool] (QPT) v1.1.3
+# Übersicht über [!DNL Quality Patches Tool] (QPT) v1.1.3
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.3 verfügbaren Patches behoben wurden.
 
-QPT v1.1.3 enthält die folgenden Patches:
+QPT v1.1.3 umfasst die folgenden Patches:
 
-1. **MDVA-31590**: Behebung des Problems, bei dem Benutzer Attribute nicht stapelweise mithilfe asynchroner MySQL-Warteschlangen aktualisieren können.
-1. **MDVA-33606**: Behebung des Problems, bei dem Benutzer beim Speichern einer einer Hierarchie zugewiesenen CMS-Seite den Fehler *Eindeutige Einschränkungsverletzung* erhalten.
-1. **MDVA-36309**: Behebung des Problems, bei dem die Produktsuche nach Attributen in den Admin Rastern langsam ist.
-1. **MDVA-37234**: Behebung des Problems, bei dem beim mehrfachen Hinzufügen eines Artikels zum Warenkorb (parallele Anfrage) für dieselbe SKU ein doppeltes Zeilenelement für dieselbe Warenkorb-ID erstellt wird.
-1. **MDVA-40262**: Behebung des Problems, bei dem GraphQL-Suchabfragen nicht in gängigen Suchbegriffen in der Admin-Konsole angezeigt werden.
-1. **MDVA-40601**: Behebung des Problems, bei dem Benutzer beim Versuch, Informationen über die durch geplante Aktualisierung über GraphQL geänderte Kategorie zu erhalten, einen Fehler erhalten.
+1. **MDVA-31590**: Es wird das Problem behoben, dass Benutzer Attribute nicht stapelweise mithilfe asynchroner MySQL-Warteschlangen aktualisieren können.
+1. **MDVA-33606**: Fehlerkorrektur - Beim Speichern einer CMS-Seite, *einer Hierarchie zugewiesen ist, tritt jetzt nicht mehr der Fehler Eindeutige Einschränkungsverletzung* auf.
+1. **MDVA-36309**: Es wurde das Problem behoben, dass die Produktsuche nach Attributen in den Admin-Rastern langsam ist.
+1. **MDVA-37234**: Es wird ein Problem behoben, bei dem das mehrfache Hinzufügen eines Artikels zum Warenkorb (parallele Anfrage) für dieselbe SKU einen doppelten Zeileneintrag für dieselbe Warenkorb-ID erzeugt.
+1. **MDVA-40262**: Es wird das Problem behoben, bei dem GraphQL-Suchabfragen in gängigen Suchbegriffen im Admin-Bereich nicht angezeigt werden.
+1. **MDVA-40601**: Es wird ein Problem behoben, bei dem Benutzende einen Fehler erhalten, wenn sie versuchen, Informationen über die Kategorie abzurufen, die durch ein geplantes Update über GraphQL geändert wurde.
 
-Navigieren Sie über das Menü links zu einer bestimmten Patch-Seite.
+Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

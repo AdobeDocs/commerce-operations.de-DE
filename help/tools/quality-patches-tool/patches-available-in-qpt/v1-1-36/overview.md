@@ -1,6 +1,6 @@
 ---
 title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.36'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.36 verfügbaren Patches behoben wurden.
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.36  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin
 exl-id: ce2ee50b-246a-43b7-b520-d7a42749e0ee
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.36
+# Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.36
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.36 verfügbaren Patches behoben wurden.
 
 QPT v1.1.36 enthält die folgenden Patches:
 
-1. **ACSD-53239**: Behebung des Problems, bei dem der Inventarindexer alle Caches im [!UICONTROL Update on Schedule] -Modus löscht.
-1. **ACSD-50887**: Behebung des Problems, bei dem die Produktattributeigenschaft *[!UICONTROL Use in Search Results Layered Navigation]* auf *[!UICONTROL Yes]* gesetzt werden kann, ohne dass die Option *[!UICONTROL Use in search]* auf *[!UICONTROL Yes]* gesetzt ist.
-1. **ACSD-51846**: Behebt das Problem *Interner Fehler*, das auftritt, da nicht alle Ebenen der REST-API-Payload validiert werden.
-1. **ACSD-52906**: Behebung des Problems, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden, die zum selben Kundensegment gehören, falsch gesetzt wurde und bei einigen Seiten zu unsachgemäßem Caching führte.
-1. **ACSD-52736**: Behebung des Problems, bei dem ein [!UICONTROL Cart Price Rule] mit Anforderungen für konfigurierbare Produktmengen nicht erwartungsgemäß funktioniert.
-1. **ACSD-47875**: Behebung des Problems, bei dem Admin-Benutzer ein Produkt nicht über den Admin für einen bestimmten Umfang der Store-Ansicht mit Lagerbestandsverwaltung zu einem Kundenkreislauf hinzufügen können.
-1. **ACSD-53176**: Behebung des Problems, bei dem die Bedingung *[!UICONTROL Related Product Rule]* mit *[!UICONTROL is one of]* nicht mit Produkten übereinstimmt.
-1. **ACSD-51666**: Behebt den Fehler: *Die Sitzung ist abgelaufen, melden Sie sich bitte erneut an.* , das nach dem Versuch eines Kunden erfolgt, sich anzumelden.
+1. **ACSD-53239**: Es wird das Problem behoben, dass der Inventar-Indexer alle Caches im [!UICONTROL Update on Schedule] bereinigt.
+1. **ACSD-50887**: Es wird das Problem behoben, bei dem die Produktattribut-Eigenschaft *[!UICONTROL Use in Search Results Layered Navigation]* auf *[!UICONTROL Yes]* gesetzt werden kann, ohne dass die *[!UICONTROL Use in search]*-Option auf *[!UICONTROL Yes]* gesetzt ist.
+1. **ACSD-51846**: Behebt das *Interner Fehler* Problem, das auftritt, weil nicht alle Ebenen der REST-API-Payload validiert werden.
+1. **ACSD-52906**: Es wird ein Problem behoben, bei dem das X-Magento-Vary-Cookie für angemeldete Kunden, die zum selben Kundensegment gehören, falsch gesetzt wird, was bei einigen Seiten zu einer fehlerhaften Zwischenspeicherung führt.
+1. **ACSD-52736**: Es wird das Problem behoben, bei dem ein [!UICONTROL Cart Price Rule], der Anforderungen für konfigurierbare Produktmengen enthält, nicht wie erwartet funktioniert.
+1. **ACSD-47875**: Es wurde ein Problem behoben, bei dem Admin-Benutzende ein Produkt nicht aus dem Admin zu einem Warenkorb hinzufügen können, um einen bestimmten Bereich der Store-Ansicht mit der Bestandsverwaltung anzuzeigen.
+1. **ACSD-53176**: Es wird das Problem behoben, dass *[!UICONTROL Related Product Rule]* mit *[!UICONTROL is one of]* Bedingung nicht mit Produkten übereinstimmen.
+1. **ACSD-51666**: Behebt den Fehler: *Die Sitzung ist abgelaufen, bitte erneut anmelden.*, die nach dem Anmeldeversuch eines Kunden eintreten.
 
-Navigieren Sie über das Menü links zu einer bestimmten Patch-Seite.
+Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

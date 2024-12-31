@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-39482: Das Produkt wird nicht mehr vorrätig eingeführt, wenn es mit "0" Menge importiert wird und die Backorder aktiviert sind'
-description: Der MDVA-39482 behebt das Problem, dass das Produkt nicht mehr vorrätig ist, wenn es mit "0"importiert wird, wenn MSI und Rückorder aktiviert sind und der Schwellenwert für nicht vorrätige Waren auf einen Minuswert gesetzt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-39482. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+title: 'MDVA-39482: Produkt ist nicht vorrätig, wenn es mit ''0'' Menge und aktivierten Nachbestellungen importiert wird'
+description: Der MDVA-39482 behebt das Problem, dass das Produkt nicht vorrätig ist, wenn es mit der Menge „0“ importiert wird, wenn MSI und Nachbestellungen aktiviert sind und der Schwellenwert für nicht vorrätige Artikel auf einen Minuswert festgelegt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-39482. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: Data Import/Export, Orders, Products
 role: Admin
 exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-39482: Das Produkt wird nicht mehr vorrätig eingeführt, wenn es mit &quot;0&quot; Menge importiert wird und die Backorder aktiviert sind
+# MDVA-39482: Produkt ist nicht vorrätig, wenn es mit &#39;0&#39; Menge und aktivierten Nachbestellungen importiert wird
 
-Der MDVA-39482 behebt das Problem, dass das Produkt nicht mehr vorrätig ist, wenn es mit &quot;0&quot;importiert wird, wenn MSI und Rückorder aktiviert sind und der Schwellenwert für nicht vorrätige Waren auf einen Minuswert gesetzt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-39482. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+Der MDVA-39482 behebt das Problem, dass das Produkt nicht vorrätig ist, wenn es mit der Menge „0“ importiert wird, wenn MSI und Nachbestellungen aktiviert sind und der Schwellenwert für nicht vorrätige Artikel auf einen Minuswert festgelegt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-39482. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,23 +27,23 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.3.6 - 2.3.7-p2, 2.4.1 - 2.4.3-p1
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Das Produkt wird nicht mehr vorrätig, wenn es mit der Menge &quot;0&quot;importiert wird, wenn MSI und Rückorder aktiviert sind und der Schwellenwert für nicht vorrätige Produkte auf einen Minuswert gesetzt ist.
+Das Produkt ist nicht vorrätig, wenn es mit der Menge „0“ importiert wird, wenn MSI und Nachbestellungen aktiviert sind und der Schwellenwert für nicht vorrätige Artikel auf einen Minuswert festgelegt ist.
 
 <u>Voraussetzungen</u>:
 
-1. MSI und Beispieldaten müssen installiert sein.
-1. Wechseln Sie zu **Stores** > **Konfigurationen** > **Katalog** > **Bestand**:
-   * Legen Sie &quot;Rückläufe&quot;auf &quot;Menge unter 0 zulassen&quot;fest.
-   * Nicht vorrätiger Schwellenwert auf &quot;-10&quot; setzen
+1. MSI- und Beispieldaten müssen installiert sein.
+1. Navigieren Sie **Stores** > **Konfigurationen** > **Katalog** > **Inventar**:
+   * Rückstände auf „Menge unter 0 zulassen“ einstellen
+   * Setzen Sie den Schwellenwert für Nicht vorrätige Artikel auf &quot;-10“
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Stellen Sie sicher, dass die SKU **Auf Lager** ist und die Menge **24-MB01** aufweist.
-1. Importieren Sie die CSV-Datei der Lagerquellen. Stellen Sie sicher, dass Sie unter Entitätstyp &quot;Stock Sources&quot;auswählen:
+1. Stellen Sie sicher, dass die SKU **Auf Lager** ist und die Menge **24-MB01** hat.
+1. Importieren Sie die CSV-Datei der Stock-Quellen. Stellen Sie sicher, dass Sie im Entitätstyp „Lagerquellen“ auswählen:
 
    ```code panel
    sku,qty,out_of_stock_qty
@@ -54,24 +54,24 @@ Das Produkt wird nicht mehr vorrätig, wenn es mit der Menge &quot;0&quot;import
 
 <u>Erwartete Ergebnisse</u>:
 
-24 MB01 ist **Auf Lager** im Storefront.
+24-MB01 ist **Auf Lager** in Storefront.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-24 MB01 ist **nicht auf Lager** in der Storefront.
+24-MB01 ist **Nicht vorrätig** in der Storefront.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool, um Qualitäts-Patches selbst bereitzustellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbare Patches.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).

@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-56790: **[!UICONTROL move out of stock to bottom]** funktioniert nicht beim Sortieren von Produkten in der  [!DNL Visual Merchandiser]'
-description: Wenden Sie den Patch ACSD-56790 an, um das Adobe Commerce-Problem zu beheben, bei dem die Option "Von Lager zu Ende wechseln"beim Sortieren von Produkten im Visual Merchandiser nicht funktioniert.
+title: 'ACSD-56790: Die Option **[!UICONTROL move out of stock to bottom]** funktioniert nicht beim Sortieren von Produkten in der  [!DNL Visual Merchandiser]'
+description: Wenden Sie den Patch ACSD-56790 an, um das Adobe Commerce-Problem zu beheben, bei dem die Option „Von Lager nach unten verschieben“ beim Sortieren von Produkten im Visual Merchandiser nicht funktioniert.
 feature: Products, Categories
 role: Admin, Developer
 exl-id: a5e5f208-793d-45a5-a000-f8ff1c31d049
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-56790: Die Option **[!UICONTROL move out of stock to bottom]** funktioniert beim Sortieren von Produkten in [!DNL Visual Merchandiser] nicht
+# ACSD-56790: **[!UICONTROL move out of stock to bottom]** Option funktioniert nicht beim Sortieren von Produkten in der [!DNL Visual Merchandiser]
 
-Der Patch ACSD-56790 behebt das Problem, dass die Option &quot;Von Lager zu Ende wechseln&quot;beim Sortieren von Produkten in der [!DNL Visual Merchandiser] nicht funktioniert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 installiert ist. Die Patch-ID ist ACSD-56790. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-56790 wird das Problem behoben, dass die Option Von Lager nach unten nicht funktioniert, wenn Produkte im [!DNL Visual Merchandiser] sortiert werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44 installiert ist. Die Patch-ID ist ACSD-56790. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,45 +23,45 @@ Der Patch ACSD-56790 behebt das Problem, dass die Option &quot;Von Lager zu Ende
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6 - p3
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p3
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
 Die Option **[!UICONTROL move out of stock to bottom]** funktioniert nicht beim Sortieren von Produkten in der [!DNL Visual Merchandiser]
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Installieren Sie Adobe Commerce.
 1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]** und erstellen Sie die folgenden Attribute.
-1. Erstellen Sie eine neue Website: **Non-main**.
-1. Erstellen Sie einen **Nicht-Hauptspeicher** auf dieser neuen Website.
+1. Erstellen Sie eine neue Website: **Nicht-Haupt**.
+1. Erstellen Sie auf **neuen Website einen „Nicht** Haupt-Store“.
 1. Erstellen Sie zwei Stores:
 
-   * Zuerst im **Hauptwebsite-Store**.
-   * Zweitens im **Nicht-Hauptspeicher**.
+   * Zuerst im **Main Website Store**.
+   * Zweite im **Nicht-Haupt-Store**.
 
 1. Erstellen Sie zwei Quellen:
    * Briefe
    * Zahlen.
 
 1. Erstellen Sie zwei Lager:
-   * First Main - Vertriebskanäle: Haupt-Website - zugewiesene Quellen: Briefe.
-   * Zweite Nicht-Haupt- Absatzkanäle: Nicht-Haupt - zugewiesene Quellen: Zahlen.
+   * First Main - Vertriebskanäle: Main Website - Zugewiesene Quellen: Briefe.
+   * Zweite Nicht-Hauptquelle - Vertriebskanäle: Nicht-Hauptquelle - Zugewiesene Quellen: Zahlen.
 
-1. Erstellen Sie auf beiden Websites drei einfache Produkte, alle in der Kategorie Standard , die beiden Quellen zugeordnet sind:
+1. Erstellen Sie drei einfache Produkte auf beiden Websites, alle in der Standardkategorie, die beiden Quellen zugewiesen sind:
 
-   * ProductA - Menge *10* in Briefen, Menge *0* in Zahlen.
-   * Produkt1 - Menge *0* in Briefen, Menge *10* in Zahlen.
-   * ProductA1 - Menge *10* in Briefen, Menge *10* in Zahlen.
+   * ProduktA - Menge *10* in Buchstaben, Menge *0* in Zahlen.
+   * Produkt1 - Menge *0* in Buchstaben, Menge *10* in Zahlen.
+   * ProductA1 - *10* in Buchstaben, *10* in Zahlen.
 
-1. Gehen Sie zu **[!UICONTROL Catalog]** > **[!UICONTROL Categories]** und wählen Sie **[!UICONTROL Default category]** aus.
-1. Ändern Sie den Umfang in &quot;**Erste**&quot;.
+1. Navigieren Sie zu **[!UICONTROL Catalog]** > **[!UICONTROL Categories]** und wählen Sie **[!UICONTROL Default category]**.
+1. Ändern Sie den Bereich in **Erste**.
 1. Erweitern Sie die Produkte im Abschnitt Kategorie .
-1. Wählen Sie die Sortierreihenfolge aus als: **[!UICONTROL move out of stock to bottom]**
+1. Wählen Sie die Sortierreihenfolge wie folgt: **[!UICONTROL move out of stock to bottom]**
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -69,21 +69,21 @@ Die Liste der Produkte mit den **nicht vorrätigen** Produkten wird nach unten v
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Produkte werden nicht geladen. Eine Seite leitet Sie zum Admin-Dashboard mit der Fehlermeldung um: `Invalid security or form key. Please refresh the page`
+Die Produkte können nicht geladen werden. Eine Seite wird mit folgender Fehlermeldung zum Admin-Dashboard weitergeleitet: `Invalid security or form key. Please refresh the page`
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe von  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!UICONTROL Quality Patches Tool] -Handbuch, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].
