@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die Caching-Leistung mithilfe der erweiterten
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 7f277fe6245aba851aba7ddc70be40343bdaecc7
+source-git-commit: bbebb414ae3b8c255e17b1f3673a6c4b7c6f23b2
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '840'
 ht-degree: 0%
 
 ---
@@ -210,15 +210,19 @@ Wenn Sie den Redis-Cache von der Redis-Sitzung trennen, können Sie den Cache un
 
 1. Fügen Sie die Portnummer zur `.magento.env.yaml` hinzu.
 
+   >[!IMPORTANT]
+   >
+   >Konfigurieren Sie den Redis-Sitzungs-Port nur, wenn `ece-tools` ihn nicht automatisch aus der Definition des `MAGENTO_CLOUD_RELATIONSHIPS` Redis-Sitzungs-Service erkennen kann.
+
    >[!NOTE]
+   >
    >`disable_locking` muss auf `1` gesetzt werden.
-   >   
 
    ```yaml
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
+       port: 6374 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
