@@ -2,9 +2,9 @@
 title: Produktverfügbarkeit
 description: Erfahren Sie, welche Adobe Commerce-Funktionen derzeit unterstützt werden, und überprüfen Sie deren Kompatibilität mit bestimmten Adobe Commerce-Versionen.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-source-git-commit: 9761e3827add0e8b60e1bb53664ff65170608317
+source-git-commit: 56dabc0c35460a8ace6f6be455050f56119d1b16
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,7 @@ Es wird empfohlen, dass Händler die neueste Version eines Service verwenden, um
 * Adobe Commerce Services sind derzeit mit Commerce 2.4.4 und höher kompatibel. Es wird empfohlen, dass Händler die neueste Version des Dienstes verwenden.
 * Services werden als mit früheren Versionen von Commerce 2.4.x kompatibel betrachtet, aber nicht offiziell unterstützt.
 * Services sind nicht mit Commerce 2.3.x kompatibel, mit Ausnahme des Produkts Recommendations 3.3.7 und früher.
+* Der Zahlungsdienst ist derzeit mit Magento Open Source 2.4.4 und höher kompatibel. Es wird empfohlen, dass Händler die neueste Version des Dienstes verwenden.
 
 Die folgende Tabelle zeigt die Versionsunterstützung für jeden Service im Verhältnis zur Adobe Commerce-Version.
 
