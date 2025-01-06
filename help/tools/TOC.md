@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: d91b7e2b1fb5d467882e29e9c829153eedc1f20b
+source-git-commit: b06e25b27b7e07ec14defd59a95048b8027cbcbf
 workflow-type: tm+mt
-source-wordcount: '6682'
+source-wordcount: '6694'
 ht-degree: 0%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 0%
          - [ACSD-63242: Langsamer Import beim Hinzufügen von mehr als 10.000 Katalogprodukten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062: Falsche Rabattberechnungen beim Warenkorb mit mehreren sich überlappenden Regeln](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428: Stock-Statusfehler im Katalogsuchindex](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [ACSD-63244: Beheben von JavaScript-Problemen im Admin-Bedienfeld, einschließlich  [!DNL Google Maps] - und Konsolenfehlern](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63244-resolves-admin-panel-javascript-issues-including-google-maps-rendering-and-console-errors.md)
          - [AACSD-62355: Verbessert die konfigurierbare Leistung bei der Produktbearbeitung in Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce.md)
          - [ACSD-62872: Aktualisierungen planen falsch validiert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: Das Datum der Geschenkregistrierung wird auf der Storefront falsch angezeigt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
