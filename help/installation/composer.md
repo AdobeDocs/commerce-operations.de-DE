@@ -2,9 +2,9 @@
 title: Schnellstart-On-Premise-Installation
 description: Führen Sie die folgenden Schritte aus, um Adobe Commerce auf der von Ihnen verwalteten Infrastruktur zu installieren.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Geben Sie nach Aufforderung Ihre Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden in Ihrer [Commerce Marketplace erstellt und ](https://commercemarketplace.adobe.com/customer/account/login/).
+   Geben Sie nach Aufforderung Ihre Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden von [Commerce Marketplace - Zugriffsschlüssel](https://commercemarketplace.adobe.com/customer/account/login/) erstellt und konfiguriert. Kopieren Sie für die `[!UICONTROL username]` den Wert des öffentlichen Schlüssels und fügen Sie ihn ein. Kopieren Sie für die `[!UICONTROL password]` den Wert für den privaten Schlüssel und fügen Sie ihn ein.
 
    >[!NOTE]
    >
-   > Bei Verwendung einer Composer `auth.json`-Datei oder einer Umgebungsvariablen werden Sie nicht zur Eingabe Ihrer Authentifizierungsschlüssel aufgefordert.
+   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
 
    Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 
