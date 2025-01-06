@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: dd6824c3f030d76e93372b8410e42ac5cd2f04c6
+source-git-commit: 0dfa9bde2b8b43880f921d50bf5c488a8aabe282
 workflow-type: tm+mt
-source-wordcount: '23648'
+source-wordcount: '24176'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,28 @@ Das [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) li
 >[!INFO]
 >
 >Informationen zu [!DNL quality patches], die von der Community zur Magento Open Source erstellt wurden, finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.57 {#v1-1-57}
+
+* **ACSD-57570** (für Adobe Commerce >=2.4.4 &lt;2.4.4-p10) - Es wird das Problem behoben, dass ein Admin-Benutzer mit eingeschränktem Zugriff auf einen bestimmten Store nicht immer alle freigegebenen Kataloge sehen kann, denen die Produkte zugewiesen sind, noch Kunden sehen kann, die nicht gespeichert werden können, was zu Inkonsistenzen im System führt.
+* **ACSD-58325** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Behebt das Problem, dass die Schaltfläche **[!UICONTROL Import]** auch nach einem Validierungsfehler verfügbar ist.
+* **ACSD-59083** (für Adobe Commerce >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass einige Datenbankaktualisierungsvorgänge zu einem Fehler *Basistabelle oder -ansicht nicht gefunden* führen, wenn das [!DNL mview] Update gleichzeitig ausgeführt wird.
+* **ACSD-61622** (für Adobe Commerce und Magento Open Source >=2.4.6-p1 &lt;2.4.7) - Es wurde das Problem behoben, dass in der Antwort die kontospezifischen Raten von [!DNL FedEx] fehlen.
+* **ACSD-61895** (für Adobe Commerce >=2.4.4 &lt;2.5.0) - Es wird das Problem behoben, bei dem die Kategorien [!DNL GraphQL] Abfrage Kategorien mit der Berechtigung **allow** zurückgeben, selbst wenn die Stammkategorie nicht über die Berechtigung **allow** verfügt.
+* **ACSD-62212** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass der E-**-Inhalt** Kennwort vergessen nicht in die Sprache der Store-Ansicht übersetzt wird.
+* **ACSD-62481** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass der Warenkorb des Kunden leer wird, selbst wenn **[!UICONTROL Persistence]** aktiviert ist.
+* **ACSD-62629** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wird das Problem behoben, bei dem eine in **[!UICONTROL Widgets]** verwendete Produktliste die Kategoriebedingung nicht widerspiegelt.
+* **ACSD-62635** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass Produkte, die mit mehreren Stores zusammenhängen, in der [!DNL GraphQL]-Produktabfrage nicht richtig angezeigt werden.
+* **ACSD-62671** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass die [!DNL GraphQL] beim ersten Versuch keine aktuellen Adressinformationen zurückgibt.
+* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien mehr in **[!UICONTROL Related Product Rules and Widgets]**hinzufügen*.
+* **ACSD-62708** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2,4,5-p10 &lt;2,4,6-p2 || >=2.4.6-p8 &lt;2.4.7-p1) - Behebt das Problem, dass [!DNL TinyMCE] 7-Editor-Schriftgröße in der Admin-Liste *PT* und nicht *PX* anzeigt. Jetzt können Sie die Schriftgröße auch in &quot;*&quot;* &quot;*&quot;*.
+* **ACSD-62758** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass Produktvideos auf der Detailseite des **[!UICONTROL Configurable Product]** nicht korrekt gerendert werden, wenn der [!DNL URL] ausgewählte Optionen enthält.
+* **ACSD-62951** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Es wird das Problem behoben, bei dem die E-Mail mit der Gutschrift gesendet wird, ohne Elemente und Gesamtwerte einzuschließen.
+* **ACSD-62965** (für Adobe Commerce >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass in der Antwort auf die Bestellplatzierung [!DNL GraphQL] eine `LocalizedException` nicht enthalten ist.
+* **ACSD-63286** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Es wird das Problem behoben, dass Produkte, die einem freigegebenen Katalog über [!DNL API] zugewiesen sind, erst dann in der Storefront angezeigt werden, wenn eine manuelle Neuindizierung durchgeführt wird.
+* **ACSD-63326** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass der [!UICONTROL Admin] nach einer Bestellung über das Backend auf eine fehlerhafte Seite umgeleitet wird.
+* Aktualisierte Versionen: **ACSD-51739**
+* Ersetzte Patches: **MDVA-43451**, **ACSD-62755**
 
 ## v1.1.56 {#v1-1-56}
 
