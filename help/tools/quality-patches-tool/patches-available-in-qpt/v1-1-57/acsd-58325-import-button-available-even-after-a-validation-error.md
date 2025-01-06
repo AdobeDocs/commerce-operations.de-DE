@@ -3,13 +3,13 @@ title: 'ACSD-58325: Schaltfläche "[!UICONTROL Import]" auch nach einem Validier
 description: Wenden Sie den ACSD-58325-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem die Schaltfläche [!UICONTROL Import] auch nach einem Validierungsfehler verfügbar ist.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 5a2709014828810827e71d9dd91d34102d80bd66
+exl-id: 551a9ac7-9b7f-49b5-9255-2014c330fb07
+source-git-commit: c50fa066d02c04a08c28730afffe4508019a93aa
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58325: Schaltfläche &quot;[!UICONTROL Import]&quot; auch nach einem Validierungsfehler verfügbar
 
@@ -21,8 +21,7 @@ Mit dem Patch ACSD-58325 wird das Problem behoben, dass die Schaltfläche **[!UI
 * Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p3
 
 **Kompatibel mit Adobe Commerce-Versionen:**
-* Adobe Commerce On-Premises 2.4.6 - 2.4.6-p8
-* Adobe Commerce auf Cloud-Infrastruktur 2.4.6 - 2.4.6-p8
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p8
 
 >[!NOTE]
 >
@@ -60,4 +59,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-
