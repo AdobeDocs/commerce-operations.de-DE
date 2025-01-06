@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0dfa9bde2b8b43880f921d50bf5c488a8aabe282
+source-git-commit: 696f8b1e24c38b7604058df88eff31c6c296d6e7
 workflow-type: tm+mt
-source-wordcount: '24176'
+source-wordcount: '24185'
 ht-degree: 0%
 
 ---
@@ -278,7 +278,7 @@ Das [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) li
 * **ACSD-54067** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.7) - Behebt das Problem, dass ein Produktvideo nicht auf einem Mobilgerät wiedergegeben wird.
 * **ACSD-55414** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Verbessert die Leistung, wenn MariaDB versucht, die EAV-entity_id von Zeichenfolge zu Ganzzahl umzuwandeln.
 * **ACSD-51819** (für Adobe Commerce >=2.4.4 &lt;2.4.4-p4) - Es wurde das Problem behoben, dass mehrere Bestellungen mit derselben Angebots-ID aufgegeben werden können.
-* **ACSD-53118** (für Adobe Commerce >=2.4.0 &lt;2.4.7) - Es wird das Problem behoben, dass die *[!UICONTROL Cart Price Rule]* mit Couponcode angewendet wird, während das Produkt ein leeres -Attribut aufweist.
+* **ACSD-53118** (für Adobe Commerce >=2.4.0 &lt;2.4.7) - Es wird das Problem behoben, dass die *[!UICONTROL Cart Price Rule]* mithilfe des Couponcodes angewendet wird, während das Produkt ein leeres -Attribut aufweist, was hätte zur Invalidierung der Regel führen müssen.
 * **ACSD-54324** (für Adobe Commerce >=2.4.5 &lt;2.4.7) - Es wird das Problem behoben, dass die Anfrage &quot;GraphQL requirement_lists“ die Paginierungseinstellungen nicht berücksichtigt und alle Ergebnisse zurückgibt.
 * Aktualisierte Patches: MDVA-42855-v2
 
