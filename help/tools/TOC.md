@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 7605d4a0e3c975f8ef67130a3ef58a34a41fd869
+source-git-commit: 7fdd74ed6820b947563f3d887a666c02b9c37350
 workflow-type: tm+mt
-source-wordcount: '6749'
+source-wordcount: '6763'
 ht-degree: 0%
 
 ---
@@ -688,6 +688,7 @@ ht-degree: 0%
          - [ACSD-62591: Design wechselt nicht richtig, wenn es konfiguriert [!UICONTROL User Agent Rules]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
       - v1.1.56 {#v1-1-56}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
+         - [ACSD-61805: Behebt Stock-Problem in der Storefront nach der Backorder-Statusaktualisierung über die REST-API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api.md)
          - [ACSD-60811: Korrigiert die Einschränkung bei der Aktualisierung des Bestellstatus auf benutzerdefinierte Werte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values.md)
          - [ACSD-62971: Der Import von Lagerbeständen mit nicht numerischen Mengenwerten führt dazu, dass die Menge auf 0 gesetzt wird](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62971-stock-import-error-non-numeric-quantity.md)
          - [ACSD-62979: Eine falsche Store-ID in der GraphQL-Kopfzeile verursacht einen schwerwiegenden Speicherfehler](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error.md)
