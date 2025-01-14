@@ -3,9 +3,9 @@ title: Best Practices für die Verteilung von Patches im großen Maßstab
 description: Erfahren Sie, wie zentralisiertes Patchen für Adobe Commerce Ihnen bei der Verwaltung von Unternehmensprojekten helfen kann.
 role: Developer
 feature: Best Practices
-badge: label="Ein Beitrag von Anton Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/anton-evers/" tooltip="Beiträge von Anton Evers"
+badge: label="Beiträge von Tony Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Beiträge von Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
 source-wordcount: '1251'
 ht-degree: 0%
