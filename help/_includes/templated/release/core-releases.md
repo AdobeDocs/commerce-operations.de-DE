@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9bbb006234aa61c998c853167fa89e43d5f9012b
+source-git-commit: 4a84f20fba387f6b94786095ebad82c2fdf0560e
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Die Unterstützung für die Version 2.4.7 endet am April  9. 2027.
 
 ## 2,4,6
 
-Die Unterstützung für die Version 2.4.6 endet am 14. März 2026.
+Die Unterstützung für die Version 2.4.6 endet am 11. August 2026.
 
 <table>
   <thead>
