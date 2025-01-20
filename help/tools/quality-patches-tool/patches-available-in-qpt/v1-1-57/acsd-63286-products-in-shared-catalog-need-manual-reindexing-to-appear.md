@@ -3,16 +3,17 @@ title: 'ACSD-63286: Produkte, die einem freigegebenen Katalog zugewiesen sind, m
 description: Wenden Sie den Patch ACSD-63286 an, um das Adobe Commerce-Problem zu beheben, bei dem Produkte, die über die API einem freigegebenen Katalog zugewiesen sind, erst dann in der Storefront angezeigt werden, wenn eine manuelle Neuindizierung ausgeführt wird.
 feature: Products, REST
 role: Admin, Developer
-source-git-commit: 00b2b9285ca27d630bd0ece2750b531710e8d196
+exl-id: 0435c06e-337e-4320-acc6-fa79a3b34008
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
 # ACSD-63286: Produkte, die einem freigegebenen Katalog zugewiesen sind, müssen manuell neu indiziert werden
 
-Mit dem Patch ACSD-63286 wird das Problem behoben, dass Produkte, die einem freigegebenen Katalog über die API zugewiesen sind, erst dann in der Storefront angezeigt werden, wenn eine manuelle Neuindizierung ausgeführt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 installiert ist. Die Patch-ID ist ACSD-63286. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
+Mit dem Patch ACSD-63286 wird das Problem behoben, dass Produkte, die einem freigegebenen Katalog über die API zugewiesen sind, erst dann in der Storefront angezeigt werden, wenn eine manuelle Neuindizierung ausgeführt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 installiert ist. Die Patch-ID ist ACSD-63286. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 

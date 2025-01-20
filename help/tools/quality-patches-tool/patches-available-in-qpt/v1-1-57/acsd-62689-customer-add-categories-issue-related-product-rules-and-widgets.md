@@ -3,17 +3,17 @@ title: 'ACSD-62689: Kategorien können in [!UICONTROL Related Product Rules] und
 description: Wenden Sie den Patch ACSD-62689 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Kunde nach der vierten Verschachtelung keine Kategorien in [!UICONTROL Related Product Rules] und Widgets hinzufügen kann.
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689: Kategorien können in *[!UICONTROL Related Product Rules]* und Widgets nach Tiefe 4 nicht mehr hinzugefügt werden
 
-Mit dem Patch ACSD-62689 wird das Problem behoben, dass ein Kunde nach der Verschachtelung der Tiefe vier keine Kategorien in *[!UICONTROL Related Product Rules]* und Widgets hinzufügen kann. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57 installiert ist. Die Patch-ID ist ACSD-62689. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.8 behoben.
+Mit dem Patch ACSD-62689 wird das Problem behoben, dass ein Kunde nach der Verschachtelung der Tiefe vier keine Kategorien in *[!UICONTROL Related Product Rules]* und Widgets hinzufügen kann. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 installiert ist. Die Patch-ID ist ACSD-62689. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.8 behoben.
 
 ## Betroffene Produkte und Versionen
 
@@ -67,3 +67,4 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
+
