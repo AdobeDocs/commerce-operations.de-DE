@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 30403c10ccb7332b0105c9859c37d7d23a784ce5
+source-git-commit: 34010e1b22e7230d7c249e06bff7061c38b7a805
 workflow-type: tm+mt
-source-wordcount: '6836'
+source-wordcount: '6845'
 ht-degree: 0%
 
 ---
@@ -718,6 +718,7 @@ ht-degree: 0%
          - [ACSD-63286: Produkte, die einem freigegebenen Katalog zugewiesen sind, müssen manuell neu indiziert werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: Schaltfläche &quot;[!UICONTROL Import]&quot; auch nach einem Validierungsfehler verfügbar](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
          - [ACSD-62671: [!DNL GraphQL]  gibt beim ersten Versuch keine aktualisierte Adresse zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
+         - [ACSD-62481: Der Warenkorb bleibt auch bei aktiviertem [!UICONTROL Persistence] leer](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
       - v1.1.58 {#v1-1-58}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
          - [ACSD-63067: Probleme bei der Mengenvalidierung in gruppierten Produkten in der Storefront beheben](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
