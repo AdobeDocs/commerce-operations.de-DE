@@ -2,7 +2,7 @@
 title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 2a611b87df0d25be0e047e4d07e8c0ac3cd4d904
+source-git-commit: ce7c322c5cf979a992e6f929c3105daf86d4aa49
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 4%
@@ -38,8 +38,8 @@ Adobe empfiehlt Kunden, so bald wie möglich ein Upgrade durchzuführen. Um jedo
 |----------------------|----------------------|------------------------------------|-------------------------|-----------------------|------------------------------|
 | Adobe Commerce 2.4.7 | 9. April 2024 | 9. April 2027 | Nicht zutreffend | 8.2 und 8.3 | 10,6 |
 | Adobe Commerce 2.4.6 | 14. März 2023 | 11. August 2026<sup>2 </sup> | Nicht zutreffend | 8.1 und 8.2 | 10,6 |
-| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 11. August 2026 | 8,1 | 10,5<sup>3 </sup> |
-| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 14. April 2026 | 8,1 | 10,5<sup>4 </sup> |
+| Adobe Commerce 2.4.5 | 9. August 2022 | 9. August 2025 | 11. August 2026 | 8,1 | 10,6<sup>3 </sup> |
+| Adobe Commerce 2.4.4 | 12. April 2022 | 24. April 2025 | 14. April 2026 | 8,1 | 10,6<sup>4 </sup> |
 
 {style="table-layout:auto"}
 
@@ -47,8 +47,8 @@ Adobe empfiehlt Kunden, so bald wie möglich ein Upgrade durchzuführen. Um jedo
 >
 >- <sup>1</sup> Das Ende der Softwareunterstützung umfasst sowohl End-of-Quality-Fixes als auch End-of-Security-Fixes.
 >- <sup>2</sup> Aktualisiert, um dem Ende der erweiterten Unterstützung für 2.4.5 zu entsprechen.
->- <sup>3</sup> Erste Schritte mit dem 2.4.5-p8 Sicherheits-Patch.
->- <sup>4</sup> Erste Schritte mit dem 2.4.4-p9 Sicherheits-Patch.
+>- <sup>3</sup> Erste Schritte mit dem 2.4.5-p11 Sicherheits-Patch.
+>- <sup>4</sup> Erste Schritte mit dem 2.4.4-p12 Sicherheits-Patch.
 >- Siehe [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 <table style="table-layout:auto">
