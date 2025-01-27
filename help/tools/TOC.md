@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: fd62bcd5d101d694c3e4fefdd9a64545e4e1cf7c
+source-git-commit: 100437ecc120fc09f25aea56c9ed2a1f3e21edd2
 workflow-type: tm+mt
-source-wordcount: '6854'
+source-wordcount: '6866'
 ht-degree: 0%
 
 ---
@@ -718,6 +718,7 @@ ht-degree: 0%
          - [ACSD-63326: Behebung eines Admin-Umleitungsproblems nach einer Bestellung über das Backend](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
          - [ACSD-63286: Produkte, die einem freigegebenen Katalog zugewiesen sind, müssen manuell neu indiziert werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: Schaltfläche &quot;[!UICONTROL Import]&quot; auch nach einem Validierungsfehler verfügbar](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
+         - [ACSD-61895: [!DNL GraphQL] -Abfrage schlägt für privaten freigegebenen Katalog mit eingeschränkter Ansicht fehl](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission.md)
          - [ACSD-62671: [!DNL GraphQL]  gibt beim ersten Versuch keine aktualisierte Adresse zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62671-graphql-not-returning-updated-address-on-first-attempt.md)
          - [ACSD-62481: Der Warenkorb bleibt auch bei aktiviertem [!UICONTROL Persistence] leer](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62481-shopping-cart-empty-even-with-persistence-enabled.md)
       - v1.1.58 {#v1-1-58}
