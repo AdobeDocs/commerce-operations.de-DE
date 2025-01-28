@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3ea627f6f4531f63ab1dc05414252c73cac6ffd0
+source-git-commit: 512461d659b8e74c467ce2a1b1a97360d4b95cd4
 workflow-type: tm+mt
-source-wordcount: '1417'
+source-wordcount: '1241'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,32 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### 27. Januar 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61895-graphql-not-returning-categories-with-allow-permission">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61895-Patch in der Version QPT 1.1.57 behoben wurde</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d63e9e5301236cd3c2671b828cb540e756d2da61">D63E9E</a> (Bestätigung)</td>
+    </tr>
+    <tr>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-63182-Patch in der Version QPT 1.1.58 behoben wurde</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e3b6651bc34712b744e2a15940ac1f8513cfcb04">E3B665</a> (Bestätigung)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 22. Januar 2025
 
@@ -535,102 +561,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07c327b633c66d694acdcd0cf379ca8aa0d6942b">07C327</a> (Bestätigung)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 29. November 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61785-Patch in der Version QPT 1.1.55 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e058c0b473b6006e3630b5b575c2755e07de9dd">0E058C</a> (Bestätigung)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61756-boosting-advanced-sales-rule-filter">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61756-Patch in der Version QPT 1.1.54 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6abbbb28a3077f7bf26a393388c5059fcd8c599">f6abbb</a> (Commit)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-60267-fpt-applies-fails-when-products-are-added-through-configurable-product-options">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-60267-Patch in der Version QPT 1.1.54 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f61153745dbd421a3b2e64bb7d4beb2c691d951">4F6115</a> (Bestätigung)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61534-Patch in der Version QPT 1.1.55 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a2db756505e3ad370d4969b6555aeefdfbcdca1b">A2DB75</a> (Commit)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61348-Patch in der Version QPT 1.1.55 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bdcb79e809bcc96b9ad98f050a10975dbde29cdd">BDCB79</a> (Commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 28. November 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61103-customer-entity-failure-count-not-reset-after-login">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61103-Patch in der Version QPT 1.1.54 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b6ae0563dee1dd52c5473063fe9550bfd2dde69f">b6ae05</a> (Commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 27. November 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61799-Patch in der Version QPT 1.1.54 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9333592647e2d8a95745801351d8d0404e0a86e7">933359</a> (Bestätigung)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61667-improves-inventory-performance-for-creating-shipping">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61667-Patch in der Version QPT 1.1.53 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a2be6a3ea6c85fc9a08b71664db193df1ebd076">3a2be6</a> (Bestätigung)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61133-sales-clean-quotes-cron-deletes-quotes-from-unapproved-purchase-orders">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61133-Patch in der Version QPT 1.1.53 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fc5343374cf270f85b908e9bd022ce89c00c615f">FC5343</a> (Commit)</td>
     </tr>
   </tbody>
 </table>
