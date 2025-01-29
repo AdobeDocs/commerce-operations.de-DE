@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 58e57bd106e7dbf9bab32fc9d93a9b1252592570
+source-git-commit: 79f587e1ed2f4117141cd29c7a512a6b677047d6
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6904'
 ht-degree: 0%
 
 ---
@@ -706,6 +706,7 @@ ht-degree: 0%
          - [ACSD-62755: [!DNL TinyMCE] 7 benötigt Schriftgröße und Schriftart, die zu den Editor-Initialisierungseinstellungen hinzugefügt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - v1.1.57 {#v1-1-57}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-59083: Fehler „Basistabelle oder Ansicht nicht gefunden“ bei gleichzeitigen Mview-Aktualisierungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates.md)
          - [ACSD-62951: Behebt fehlende Elemente und Summen in [!UICONTROL Credit Memo] über REST-API gesendeten E-Mails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
          - [ACSD-62212: [!UICONTROL Forgot Password] E-Mail nicht in die Sprache der Store-Ansicht übersetzt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62212-forgot-password-email-not-translated-to-store-view-language.md)
          - [Schriftgröße des ACSD-62708: [!DNL TinyMCE] -Editors im Admin-Bedienfeld zeigt PT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62708-tinymce-7-editor-font-size-issue.md)
