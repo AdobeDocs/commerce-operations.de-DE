@@ -3,13 +3,13 @@ title: 'ACSD-62872: Aktualisierungen planen falsch validiert'
 description: Wenden Sie den Patch ACSD-62872 an, um das Adobe Commerce-Problem mit der eindeutigen Attributvalidierung zu beheben, bei dem geplante Aktualisierungen falsch validiert werden.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872: Aktualisierungen planen falsch validiert
 
@@ -23,7 +23,11 @@ Der Patch ACSD-62872 behebt das Problem der eindeutigen Attributvalidierung, bei
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.7-p3
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>Der Patch wird für die Versionen 2.4.4 - 2.4.6-p8 in der Version 1.1.58 QPT als veraltet markiert.
 
 >[!NOTE]
 >
@@ -39,7 +43,7 @@ Die geplante Aktualisierung eines benutzerdefinierten Attributs wird falsch vali
 1. Navigieren Sie zu **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 1. Neue Kategorie erstellen.
 1. Rufen Sie in derselben Kategorie den Abschnitt **[!UICONTROL Scheduled Updates]** auf.
-1. Für diese Kategorie zu einem beliebigen späteren Zeitpunkt ein neues Update einrichten.
+1. Sie können zu jedem späteren Zeitpunkt ein neues Update für diese Kategorie einrichten.
 1. Bevor Sie mit der geplanten Aktualisierung beginnen, versuchen Sie, die erstellte Zeitplanaktualisierung für die Kategorie zu bearbeiten.
 
 <u>Erwartete Ergebnisse</u>:
@@ -55,8 +59,7 @@ Ein Fehler wird ausgelöst: *Der Wert des Attributs „Benutzerdefiniertes Attri
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
-
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
