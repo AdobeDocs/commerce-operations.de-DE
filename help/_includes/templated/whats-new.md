@@ -1,7 +1,7 @@
 ---
-source-git-commit: 512461d659b8e74c467ce2a1b1a97360d4b95cd4
+source-git-commit: a574d2f4b81c489fababcd5dd12750256f29995b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1151'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### 31. Januar 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-63299-Patch in der Version QPT 1.1.58 behoben wurde</a>.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/226813a0d54147f545ef39b5ed5995df1f6c5ba1">226813</a> (Bestätigung)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 30. Januar 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-63325-Patch in der Version QPT 1.1.58 behoben wurde</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/246ae49b1127c6ba74d771bbfe945eef97affab6">246AE4</a> (Bestätigung)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 29. Januar 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-59083-Patch in der Version QPT 1.1.57 behoben wurde</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/78ee64cc19489d5e16c7ab097ac5327db403b1e4">78EE64</a> (Bestätigung)</td>
+    </tr>
+    <tr>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-62951-Patch in der Version QPT 1.1.57 behoben wurde</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5d47ed00a2ef491ac2028166d52cb8a99bbd736">E5D47E</a> (Bestätigung)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 27. Januar 2025
 
@@ -471,96 +537,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
 </td>
       <td>new-topic</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f5f5ca91e33c75437c8830cb81da8316b56736b">3F5F5C</a> (Commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 6. Dezember 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58685-ensures-disabled-sales-emails-are-not-sent-upon-re-enabling">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-58685-Patch in der Version QPT 1.1.55 behoben wurde</a>.</p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2f2dd29105dfd0cb76b6ebd5102143940b100655">2F2DD2</a> (Bestätigung)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58566-grapghql-internal-server-error-for-purchase-order-comments">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-58566-Patch in der Version QPT 1.1.55 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ae89b7bb8bef0e832398cfc048e41975249062cb">AE89B7</a> (Commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 4. Dezember 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-60344-Patch in der Version QPT 1.1.55 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1a9cd4c3bfb0994577fef62efcd38d61e7742120">1a9cd4</a> (Bestätigung)</td>
-    </tr>
-    <tr>
-      <td><p>Veröffentlichte <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">Versionshinweise</a> für die Version 1.1.56 Quality Patches Tool (QPT).</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e965b37fd14090d23ae034d5342f26ac7820875a">E965B3</a> (Commit)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-62056-Patch in der Version QPT 1.1.54 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1a79eba0bfd7cecb7fc947ee7e3a1d41ce59ba1">F1A79E</a> (Commit)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 3. Dezember 2024
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61969-required-type-coupon-code-as-configured-in-uppercase-lowercase">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61969-Patch in der Version QPT 1.1.53 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e29e800948373e9a6730337127a0fe62ccf9595d">E29E80</a> (Bestätigung)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-58828-Patch in der Version QPT 1.1.55 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b75e94c146149124e1cfb9747ad9d975c01ecad6">B75E94</a> (Commit)</td>
-    </tr>
-    <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61134-braintree-vault-payment-method-is-automatically-deselected-in-the-checkout-workflow">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-61134-Patch in der Version QPT 1.1.54 behoben wurde</a></p>
-</td>
-      <td>new-topic</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07c327b633c66d694acdcd0cf379ca8aa0d6942b">07C327</a> (Bestätigung)</td>
     </tr>
   </tbody>
 </table>
