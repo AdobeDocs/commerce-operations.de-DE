@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 420a74a1c0e4d4d242691968cfa6b515a9f91e77
+source-git-commit: 183a83346633913b3b013732cbac8676a0756609
 workflow-type: tm+mt
-source-wordcount: '6970'
+source-wordcount: '6981'
 ht-degree: 0%
 
 ---
@@ -729,6 +729,7 @@ ht-degree: 0%
          - [ACSD-63283: Beheben [!UICONTROL Gift Registry] Probleme bei E-Mail- und Bestellplatzierungen in Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: Tabelle sales_order_tax_item für mit der [!UICONTROL Purchase Order]-Methode aufgegebene B2B-Bestellungen wurde nicht vollständig aktualisiert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
          - [ACSD-63182: Fehler beim Speichern eines Produkts nach der Duplizierung eines Bundles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
+         - [ACSD-63090: Beim Löschen eines Produkts aus der Administratorliste wird der Warenkorb geleert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
          - [ACSD-48570: Problem mit dem Link zum Zurücksetzen des Admin-Kennworts beim Speichern des Codes in der URL wird behoben](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: Sonderpreis für ein konfigurierbares Produkt wird nicht auf der Storefront angezeigt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: Fehler „Syntaxfehler: Unerwarteter &lt; EOF >&quot; beim Senden einer leeren  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
