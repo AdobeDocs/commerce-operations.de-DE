@@ -2,7 +2,7 @@
 title: Versionshinweise für Adobe Commerce 2.4.3 Sicherheits-Patches
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Versionshinweise für Adobe Commerce 2.4.3-Sicherheits-Patches
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
 Die Adobe Commerce-Version 2.4.3-p3 bietet Sicherheitskorrekturen für Sicherheitslücken, die in früheren Versionen von 2.4.3 identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
 
@@ -33,7 +33,7 @@ DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in nahe
 
 Die Adobe Commerce-Version 2.4.3-p2 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  Die Patch-Version behebt auch die Sicherheitsanfälligkeit, die von `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` und `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` behoben wurde.
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  Die Patch-Version behebt auch die Sicherheitsanfälligkeit, die von `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` und `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` behoben wurde.
 
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
@@ -59,10 +59,10 @@ DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in nahe
 
 ## 2.4.3-p1
 
-Die Sicherheitsversion 2.4.3-p1 von Adobe Commerce bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in der vorherigen Version (Adobe Commerce 2.4.3 und Magento Open Source 2.4.3) identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
+Die Adobe Commerce-Sicherheitsversion 2.4.3-p1 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in der vorherigen Version (Adobe Commerce 2.4.3 und Magento Open Source 2.4.3) identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). Die Patch-Version enthält auch Fehlerbehebungen für die vom Hersteller [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) und [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) entwickelten Erweiterungen.
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). Die Patch-Version enthält auch Fehlerbehebungen für die vom Hersteller [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) und [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html) entwickelten Erweiterungen.
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
 
@@ -78,7 +78,7 @@ Diese Version enthält den folgenden Hotfix und alle Hotfixes, die für die vorh
 
 **Sitzungs-IDs wurden aus der Datenbank**. Diese Code-Änderung kann zu grundlegenden Änderungen führen, wenn Händler Anpassungen oder installierte Erweiterungen haben, die die in der Datenbank gespeicherten rohen Sitzungs-IDs verwenden. <!-- MC-40976-->
 
-**Eingeschränkter Administratorzugriff auf Mediensammlungs-Ordner**. Die standardmäßigen Mediensammlungs-Berechtigungen erlauben jetzt nur noch Verzeichnisvorgänge (Anzeigen, Hochladen, Löschen und Erstellen), die von der Konfiguration explizit zugelassen sind. Admin-Benutzer können nicht mehr über die Mediensammlung auf Medien-Assets zugreifen, die außerhalb der `catalog/category`- oder `wysiwyg` hochgeladen wurden. Administratoren, die auf Medien-Assets zugreifen möchten, müssen sie in einen explizit zulässigen Ordner verschieben oder ihre Konfigurationseinstellungen anpassen. Siehe [Ändern von Media Library-](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)<!-- B2B-1897-->
+**Eingeschränkter Administratorzugriff auf Mediensammlungs-Ordner**. Die standardmäßigen Mediensammlungs-Berechtigungen erlauben jetzt nur noch Verzeichnisvorgänge (Anzeigen, Hochladen, Löschen und Erstellen), die von der Konfiguration explizit zugelassen sind. Admin-Benutzer können nicht mehr über die Mediensammlung auf Medien-Assets zugreifen, die außerhalb der `catalog/category`- oder `wysiwyg` hochgeladen wurden. Administratoren, die auf Medien-Assets zugreifen möchten, müssen sie in einen explizit zulässigen Ordner verschieben oder ihre Konfigurationseinstellungen anpassen. Siehe [Ändern von Medienbibliotheks-](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/)<!-- B2B-1897-->
 
 **Geringere Beschränkungen für die Komplexität von GraphQL-Abfragen**. Die maximal zulässige Komplexität von Abfragen in GraphQL wurde verringert, um DoS-Angriffe (Denial-of-Service) zu verhindern. Siehe [GraphQL-Sicherheitskonfiguration](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
