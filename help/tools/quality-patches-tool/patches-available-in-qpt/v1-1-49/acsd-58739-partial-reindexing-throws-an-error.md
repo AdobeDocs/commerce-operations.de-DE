@@ -4,7 +4,7 @@ description: Wenden Sie den Patch ACSD-55241 an, um das Adobe Commerce-Problem z
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Die partielle Neuindizierung gibt einen Fehler aus.
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Slave-Verbindungseinstellungen zum `app/etc/ev.php` hinzufügen.
+1. Slave-Verbindungseinstellungen zum `app/etc/env.php` hinzufügen.
 1. Generieren Sie bis zu 10000 Produkte und führen Sie den folgenden Befehl aus:
 
    ```
