@@ -1,8 +1,8 @@
 ---
-source-git-commit: 06964d998b605d7fc4ccb643e793d16ac6bee9f7
+source-git-commit: f35500aa980b3f8263303a56f6f23a47c40a98d0
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 56%
+source-wordcount: '873'
+ht-degree: 57%
 
 ---
 # Systemanforderungen
@@ -262,7 +262,7 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.11.20
+            3,13
       </td>
       <td>
             3.11.20
@@ -785,7 +785,7 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.9.16
+            3,13
       </td>
       <td>
             3.9.16
@@ -1448,7 +1448,7 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
-            3.9.13
+            3,13
       </td>
       <td>
             3.9.13
