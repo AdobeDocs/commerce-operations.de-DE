@@ -2,9 +2,9 @@
 title: Beta-Versionen
 description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und wie Sie teilnehmen können.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 4643c8392b6d92a2ccbbc2ec5b27d75c112d7521
+source-git-commit: c29602d6f1619c0b32feb48843ec01b350a3ae32
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Adobe Commerce-Beta-Programme bieten Händlern die Möglichkeit, auf Vorabversio
 
 ## Vorteile der Teilnahme
 
-Durch den frühzeitigen Zugriff auf die von Adobe entwickelten Funktionen können Kunden und Partner Feedback geben, die Produktentwicklung mitgestalten und sich darauf vorbereiten, neue Funktionen zu übernehmen, bevor sie allgemein verfügbar sind.
+Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, erhalten Kunden und Partner die Möglichkeit, Feedback zu geben, die Produktentwicklung zu gestalten und sich auf die Übernahme neuer Funktionen vorzubereiten, bevor diese allgemein verfügbar sind.
 
 ## Aktuelle Beta-Programme
 
@@ -54,22 +54,6 @@ Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um S
 
 Informationen zur Installation der Live Search-Betaversion finden Sie [Live Search-Handbuch](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
-### Experience Manager Assets-Integration für Commerce (Private Beta)
-
-Die Experience Manager Assets-Integration für Commerce ermöglicht die effiziente Verwaltung und Bereitstellung einer großen Anzahl von Produkt-Images von Experience Manager Assets an Adobe Commerce ohne oder mit geringem Betriebsaufwand.
-
-Wichtigste Funktionen:
-
-- Plug-and-Play-Integration - Bieten Sie eine vorkonfigurierte Adobe-Integration zwischen Experience Manager Assets und Adobe Commerce, damit sich Händler auf das Wesentliche konzentrieren können - bei geringeren Betriebskosten und verbesserter Effizienz.
-
-- Personalisieren von Produktbildern im großen Maßstab - Verwenden Sie Experience Manager Assets, um Millionen von Produktvarianten für personalisierte Commerce-Erlebnisse mit benutzeroberflächenbasierten Bearbeitungs-Tools, der Erstellung generativer Inhalte mithilfe von Adobe Firefly und zugewiesenen Asset-Workflows zu generieren, um die Markenkonsistenz sicherzustellen. Sobald Sie mit den Assets zufrieden sind, können Sie sie mit der Experience Manager Assets-Integration nahtlos an Ihre Commerce-Storefronts senden.
-
-- Einfaches Onboarding - Vereinfachen Sie das Onboarding von Händlern mit einem konfigurierbaren Synchronisierungsprozess, der eine vollständige Synchronisierung zwischen dem Experience Manager Assets-Repository und dem Commerce-Katalog ermöglicht.
-
-- Flexible Matching-Strategie - Die Integration umfasst standardmäßige Asset-Matching-Algorithmen, die auf Produkt-SKUs basieren und Bilder zwischen AEM Assets und Commerce synchronisieren. Außerdem ist sie mit Adobe Developer App Builder erweiterbar. Arbeiten Sie mit Ihrem Lösungspartner zusammen, um auf Basis der Integration eine benutzerdefinierte Asset-Matching-Strategie zu entwickeln, die alle Asset-Management-Repository-Strukturen berücksichtigt.
-
-Um an der Beta teilzunehmen, senden Sie eine E-Mail-Anfrage an [Shaun McCran](mailto:mccran@adobe.com).
-
 ### IBM Sterling Order Management-Systemintegration (Private Beta)
 
 Mit diesem Integrationsbeschleuniger für IBM Sterling Order Management können Adobe Commerce-Kunden mit erweiterten Bestellverwaltungsfunktionen beginnen, die auf IBM Sterling OMS basieren. Mit dieser Integration erhalten Händler:
@@ -81,7 +65,7 @@ Mit diesem Integrationsbeschleuniger für IBM Sterling Order Management können 
 
 Um an dieser Beta teilzunehmen, senden Sie eine E-Mail-Anfrage an [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Datenverbindung und Audience Activation (Public Beta)
+### Datenverbindung und Audience Activation (öffentliche Beta)
 
 Erweiterte Datenfreigabe zwischen Adobe Commerce und Adobe Experience Platform, um leistungsfähigere personalisierte Erlebnisse zu ermöglichen. Diese Funktion ermöglicht Händlern Folgendes:
 
@@ -121,7 +105,7 @@ Siehe [Schnellstart für die Composer-Installation](../installation/composer.md)
 
 #### Problem-Reporting
 
-Adobe bietet nicht den standardmäßigen Adobe-Support-Service für Beta-Versionen.
+Adobe bietet keinen standardmäßigen Adobe-Support-Service für Beta-Versionen.
 
 Um Feedback zu Beta-Versionen zu senden, folgen Sie unserem [Fluss für die regelmäßige Problemberichterstattung](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) auf [GitHub](https://github.com/magento/magento2).
 
