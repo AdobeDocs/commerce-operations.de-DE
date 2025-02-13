@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 183a83346633913b3b013732cbac8676a0756609
+source-git-commit: 329a9413eca2de00451ee694501cca2cf0c57c30
 workflow-type: tm+mt
-source-wordcount: '6981'
+source-wordcount: '6990'
 ht-degree: 0%
 
 ---
@@ -300,7 +300,7 @@ ht-degree: 0%
          - [ACSD-48661: Problem mit der Überprüfung des Kommatrennzeichens des Firmenkreditlimits](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48661-company-credit-limit-comma-separator-validation.md)
          - [ACSD-48587: Das Produkt-Widget funktioniert nicht mit SKUs, die HTML-Zeichen enthalten](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48587-product-widget-not-working-with-html-characters.md)
          - [ACSD-48212: Der Produktimport weist das Produkt einer falschen Quelle zu](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48212-product-import-assigns-product-wrong-source.md)
-         - [ACSD-47988: Der Produktexport schneidet HTML-Tags aus der Produktbeschreibung von Page Builder zu](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
+         - [ACSD-47988: Der Produktexport schneidet HTML-Tags aus der Produktbeschreibung von Page Builder zurück](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
          - [ACSD-48366: Produktbild wird nicht auf der E-Mail-Vorlage „Zurück zur Lager“ angezeigt](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          - [ACSD-48417: SQL-Fehler nach der Erstellung einer Zeitplanänderung](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
       - v1.1.27 {#v1-1-27}
@@ -405,7 +405,7 @@ ht-degree: 0%
          - [ACSD-50512: Fehler beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 3 GTM-Tags werden nicht ausgelöst, wenn Google Analytics 4 GTM nicht konfiguriert ist](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: Admin-Benutzer kann geplante Aktualisierungen für gebündeltes Produkt nicht speichern](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: Der Cache für GraphQL-GET-Anfragen wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: Der Cache für GraphQL GET-Anfragen wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: Fehler beim Wechseln der Store-Ansichten auf der herunterladbaren Produktbearbeitungsseite](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: Der Bestellartikelstatus wurde fälschlicherweise auf [!UICONTROL Ordered] gesetzt, wenn der Produktbestand 0 beträgt](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: Katalogseite kann nicht nach benutzerdefiniertem Attribut des Typs Dropdown sortiert werden](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -733,6 +733,7 @@ ht-degree: 0%
          - [ACSD-48570: Problem mit dem Link zum Zurücksetzen des Admin-Kennworts beim Speichern des Codes in der URL wird behoben](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: Sonderpreis für ein konfigurierbares Produkt wird nicht auf der Storefront angezeigt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
          - [ACSD-63325: Fehler „Syntaxfehler: Unerwarteter &lt; EOF >&quot; beim Senden einer leeren  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63578: Durch Klicken auf das [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] wird die SKU nicht entfernt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: Beim Erstellen von Produkten mit der REST-API werden keine Standardwerte für Datums- und Uhrzeitfelder festgelegt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
    - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - {#cli-reference} zu Befehlszeilen-Tools
