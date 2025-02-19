@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: fcff1ac0ed1b36952adb54098154fd039c7013a4
+source-git-commit: 92d2edd72f19e0b70f6ed7ffa2f19714ae02c523
 workflow-type: tm+mt
-source-wordcount: '6994'
+source-wordcount: '7005'
 ht-degree: 0%
 
 ---
@@ -737,6 +737,7 @@ ht-degree: 0%
          - [ACSD-63329: Beim Erstellen von Produkten mit der REST-API werden keine Standardwerte für Datums- und Uhrzeitfelder festgelegt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
       - v1.1.59 {#v1-1-59}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
+         - [ACSD-63870: Kunde hat sich während der Änderung des Unternehmensstatus nicht ordnungsgemäß abgemeldet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
    - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - {#cli-reference} zu Befehlszeilen-Tools
    - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
