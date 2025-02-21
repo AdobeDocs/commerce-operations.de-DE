@@ -3,9 +3,9 @@ title: Konfigurieren des Programms
 description: Erfahren Sie mehr über die Konfiguration nach der Installation, die für lokale Adobe Commerce-Bereitstellungen erforderlich ist.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e737ca014e90860b8ab023487625b07c0eeb1222
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,14 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 * [Vorgehensweise: Das Tutorial zum Drehen von Protokollen mit zehn Beispielen](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [Stapelaustausch](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
 * [`logrotate` man page](https://linuxconfig.org/logrotate-8-manual-page)
+
+>[!AVAILABILITY]
+>
+>Die folgenden Verfügbarkeitsinformationen gelten für Adobe Commerce in Cloud-Infrastrukturprojekten:
+>
+>* Starterumgebungen haben keine Protokollrotation.
+>
+>* Sie können die Protokollrotation in Pro Integration-Umgebungen nicht konfigurieren. Sie müssen eine benutzerdefinierte Lösung/ein benutzerdefiniertes Skript implementieren und [Ihren Cron konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property), um das Skript nach Bedarf auszuführen.
 
 ### iptables-Regeln einrichten, um verschiedenen Services die Kommunikation zu ermöglichen
 
