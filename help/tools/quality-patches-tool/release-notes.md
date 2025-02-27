@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 24cce88e5daccd8ad50e01b869f2682722cb8052
+source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
 workflow-type: tm+mt
-source-wordcount: '24820'
+source-wordcount: '25023'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,15 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.60 {#v1-1-60}
+
+* **ACSD-63323** (für Adobe Commerce >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass die Option **[!UICONTROL Select All]** beim Hinzufügen von Produkten zu einer Kategorie nicht funktioniert. Darüber hinaus wird sichergestellt, dass die Paginierung und die Beschriftung der Datensatzanzahl korrekt funktionieren, wenn Produkte über das Popup-Raster zu einer Kategorie hinzugefügt werden.
+* **ACSD-63992** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Es wurde ein Problem behoben, bei dem eine Warenkorbpreisregel mit einem Coupon und einer Bedingung, die auf einer Versandmethode basiert, nicht über die Admin-Benutzeroberfläche korrekt angewendet werden kann.
+* **ACSD-64111** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wird das Problem behoben, bei dem beim Festlegen verschachtelter Bedingungen für eine Produktkomponente in [!DNL Page Builder] ein Fehler auftritt.
+* **ACSD-64137** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass die Suche nach Abholorten nach Postleitzahl bei der niederländischen Lokalisierung nicht richtig funktionierte.
+* **ACSD-64149** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wird das Problem behoben, dass ein Kundensegment mit einer Datumsbereichsbedingung gespeichert werden kann, wenn nur eines der Daten bearbeitet wird.
+* Aktualisierte Versionen: **MDVA-12304**, **ACSD-45049**, **MDVA-43824**, **ACSD-46192**, **ACSD-50368**, **ACSD-47657**, **ACSD-51819**, **ACSD-V2**, **ACSD-V2, 52133** ACSD-**-ACSD-54966-ACSD-55628** **45049** **63242**,
 
 ## v1.1.59 {#v1-1-59}
 
