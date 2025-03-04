@@ -3,13 +3,13 @@ title: 'ACSD-63454: Standardwert für ein Dropdown-Menü und Attribute mit Mehrf
 description: Wenden Sie den Patch ACSD-63454 an, um das Adobe Commerce-Problem zu beheben, bei dem der Standardwert für ein Dropdown-Attribut und ein Attribut mit Mehrfachauswahl nicht ordnungsgemäß in der Datenbank gespeichert wird.
 feature: Attributes, Products
 role: Admin, Developer
-source-git-commit: 1c872ebeff05c0c84756d7abd7f43c4652032d3f
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+source-git-commit: cb73a5a346ec0e8acd59accf73605e25ef35c3ca
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63454: Standardwert für ein [!UICONTROL Dropdown] und [!UICONTROL Multiple Select] Attribute wird nicht ordnungsgemäß in der Datenbank gespeichert
 
@@ -35,19 +35,19 @@ Der Standardwert für [!UICONTROL Dropdown]- und [!UICONTROL Multiple Select]-At
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Melden Sie sich beim -Backend an und gehen Sie zu **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**.
+1. Melden Sie sich beim -Backend an und gehen Sie zu **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**.
 1. Klicken Sie auf **[!UICONTROL Add New Attribute]**.
 1. Legen Sie auf der Registerkarte **[!UICONTROL Properties]** Folgendes fest:
-   * [!UICONTROL Default Label] = Test
-   * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-   * [!UICONTROL Manage Options]: Fügen Sie zwei Optionen hinzu, ohne **[!UICONTROL Is Default]** auszuwählen.
+   * **[!UICONTROL Default Label]**: *test*
+   * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+   * **[!UICONTROL Manage Options]**: Fügen Sie zwei Optionen hinzu, ohne **[!UICONTROL Is Default]** auszuwählen.
 1. Klicken Sie auf **[!UICONTROL Save Attribute]**.
-1. Überprüfen Sie in der Datenbank, ob die Spalte *default_value* leer ist.
+1. Überprüfen Sie in der Datenbank, ob die `default_value` leer ist.
 
    `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. Gehen Sie zurück und legen Sie eine der beiden Optionen wie **[!UICONTROL Is Default]** fest.
-1. Überprüfen Sie erneut die Datenbank, um sicherzustellen *dass „default_value* jetzt die ausgewählte Option-ID enthält.
+1. Überprüfen Sie erneut die Datenbank, um sicherzustellen, dass `default_value` jetzt die ausgewählte Option-ID enthält.
 1. Gehen Sie zurück und ändern Sie die Standardoption, indem Sie die andere Option auswählen.
 
 <u>Erwartete Ergebnisse</u>:
