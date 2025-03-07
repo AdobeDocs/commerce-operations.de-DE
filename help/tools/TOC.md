@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 2dc974d2887fb725e1854aef2cbdd63616e3846d
+source-git-commit: 3f2996a41f14d830c8023256c78c9bb85b1718d2
 workflow-type: tm+mt
-source-wordcount: '7108'
+source-wordcount: '7202'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,19 @@ ht-degree: 0%
    - [Warnhinweise](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 
+- Verwaltete Warnhinweise in Adobe Commerce {#managed-alerts-for-adobe-commerce}
+   - [Verwaltete Warnhinweise zu kritischen Warnhinweisen auf Adobe Commerce [!DNL Redis] Arbeitsspeicher](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
+   - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis bezüglich Festplatte](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
+   - [Verwaltete Warnhinweise für Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
+   - [Verwaltete Warnhinweise für Adobe Commerce: Kritischer Warnhinweis auf Festplatte](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
+   - [Verwaltete Warnhinweise zu Adobe Commerce: [!DNL Redis] -Warnhinweis](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
+   - [Verwaltete Warnhinweise für Adobe Commerce: Speicherwarnung](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
+   - [Verwaltete Warnhinweise in Adobe Commerce: Kritischer Warnhinweis in CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+   - [Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis bezüglich Speicher](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
+   - [Verwaltete Warnhinweise für Adobe Commerce: [!DNL Apdex]  Warnhinweis](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
+   - [Verwaltete Warnhinweise zu Adobe Commerce: [!DNL MariaDB] alerts](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
+   - [Verwaltete Warnhinweise für Adobe Commerce: [!DNL Apdex] Warnhinweis](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
+   - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Quality Patches Tool {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
    - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
