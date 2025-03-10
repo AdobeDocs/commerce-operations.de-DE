@@ -1,8 +1,8 @@
 ---
-source-git-commit: 9d11b74552c76dcf6067c28bdfa514f03e698c37
+source-git-commit: fb7a4b642549584033419f0663f163af2453fe93
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 62%
+source-wordcount: '346'
+ht-degree: 63%
 
 ---
 # Cloud-Anforderungstabelle
@@ -60,19 +60,19 @@ ht-degree: 62%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
     </tr>
     <tr>
@@ -238,34 +238,34 @@ ht-degree: 62%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,12
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
       <td>
-            2,5
+            2
       </td>
     </tr>
     <tr>
@@ -505,40 +505,40 @@ ht-degree: 62%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            1.3.20
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
     </tr>
     <tr>
@@ -809,43 +809,43 @@ ht-degree: 62%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            1.3.20
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,3
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
       <td>
-            1,2
+            1
       </td>
     </tr>
     <tr>
@@ -1044,7 +1044,7 @@ ht-degree: 62%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            1,2
+            1
       </td>
     </tr>
     <tr>

@@ -2,9 +2,9 @@
 title: Systemanforderungen
 description: Verwenden Sie diese Referenz, um erforderliche Softwareabhängigkeiten zu identifizieren, die mit Adobe Commerce-Versionen getestet wurden.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 63c73a34eb6c61c83f00761e0510108485687596
+source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Im Folgenden werden die für Adobe Commerce getesteten Softwareabhängigkeiten und Services zusammengefasst.
 
-Es gibt einige Unterschiede bei den Abhängigkeiten für Commerce in der Cloud-Infrastruktur. Die Unterstützung der Service-Version und -Kompatibilität für Adobe Commerce in der Cloud-Infrastruktur wird durch Services bestimmt, die in den gehosteten Cloud-Umgebungen getestet und bereitgestellt werden, und unterscheidet sich manchmal von Versionen, die von Adobe Commerce On-Premise-Bereitstellungen unterstützt werden. Beispielsweise wird Elasticsearch 7.17 für Commerce 2.4.4 für On-Premise-Bereitstellungen unterstützt, aber OpenSearch 1.2 wird für Commerce 2.4.4 für Cloud-Infrastrukturen unterstützt.
+Es gibt einige Unterschiede in den Abhängigkeiten für Commerce in Cloud Manager. Die Unterstützung der Service-Version und -Kompatibilität für Adobe Commerce on Cloud wird durch Services bestimmt, die in den gehosteten Cloud-Umgebungen getestet und bereitgestellt werden und sich manchmal von den Versionen unterscheiden, die von lokalen Adobe Commerce-Bereitstellungen unterstützt werden. Beispielsweise wird Elasticsearch 7.17 für Commerce 2.4.4 für On-Premise-Bereitstellungen unterstützt, aber OpenSearch 1 wird für 2.4.4 Adobe Commerce on Cloud unterstützt.
 
 >[!NOTE]
 >
