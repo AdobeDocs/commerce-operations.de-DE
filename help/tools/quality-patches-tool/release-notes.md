@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fa23ca7a760f25e6b77b94af15eec7d8a88e880e
+source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
 workflow-type: tm+mt
-source-wordcount: '25023'
+source-wordcount: '25431'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,22 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.61 {#v1-1-61}
+
+* **ACP2E-3689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt mehrere Probleme mit der Anzeige der Kategoriestruktur auf tieferen Ebenen und spiegelt Anker-/Nicht-Anker-Beziehungen wider.
+* **ACP2E-3705** (für Adobe Commerce >=2.4.7 &lt;2.4.8) - Behebt ein Problem, bei dem die `indexer_update_all_views` Cron-Ausführung fehlschlägt, wenn `MAGE_INDEXER_THREADS_COUNT` festgelegt ist.
+* **ACSD-63883** (für Adobe Commerce >=2.4.4 &lt;2.4.7-p4) - Behebt das Problem, dass die Anforderungsliste in der GraphQL-Antwort einen falschen `items_count` zurückgibt.
+* **ACSD-63974** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass das Laden der Anforderungslistenseite bei zu vielen Elementen zu viel Zeit in Anspruch nimmt, indem dem Anforderungslistenraster in der Storefront eine Paginierungsfunktion hinzugefügt wird, die nur Teile von Datensätzen anzeigt, die auf die Anzahl der Datensätze pro Seite beschränkt sind, anstatt alle Datensätze gleichzeitig.
+* **ACSD-64178** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass die Seite zur Bearbeitung von Attributsätzen langsam geladen wird, wenn Tausende von Produktattributen vorhanden sind.
+* **ACSD-64209** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass der Cron-Scheduler alle verhandelbaren Anführungszeichen abruft, ohne diejenigen mit dem Status &quot;**[!UICONTROL ordered]**&quot; auszuschließen, wodurch eine E-Mail oder E-Mails ausgelöst werden.
+* **ACSD-64431** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Die `placeOrder` Mutation, die die Couponcode-Informationen in der Anfrage enthält, löst keinen internen Fehler mehr aus, sondern zeigt stattdessen an, dass die Bestellung erfolgreich aufgegeben wurde.
+* **ACSD-64467** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass der WYSIWYG-Editor nach dem Speichern einer Kategoriebeschreibung auf Store-Ansichtsebene leer erscheint.
+* **ACSD-64546** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass eine allgemeine Fehlermeldung in der Benutzeroberfläche auftritt und eine *Array-zu-String-Konvertierung*-Ausnahme während der Erstellung der UPS Versandkennzeichnung in den Protokollen gespeichert wird, sodass der tatsächliche Fehler in der Benutzeroberfläche angezeigt und die richtige Fehlermeldung in den Protokollen gespeichert wird.
+* **ACSD-64684** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass beim Bearbeiten und Speichern einer Geschenkkarte mit einem Wert größer als *999* aufgrund eines Kommas (Tausendertrennzeichen) in der Zahl *1.000) ein Validierungsfehler auftritt*.
+* Aktualisierte Versionen: **ACSD-49392**, **ACSD-50368**, **ACSD-51819**, **ACSD-54966-V2**, **ACSD-57003**, **ACSD-62979**, **ACSD-64112**
+* Ersetzte Patches: **ACSD-49392**, **ACSD-58739**, **ACSD-62689**, **ACSD-64112**
+* Veraltete Patches: **ACSD-46192**, **ACSD-52133**
 
 ## v1.1.60 {#v1-1-60}
 
