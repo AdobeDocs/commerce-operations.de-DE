@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.62 {#v1-1-62}
+
+* **ACSD-63406** (für Adobe Commerce und Magento Open Source >=2.4.4-p9 &lt;2.4.5 || >=2,4,5-p8 &lt;2,4,6 || >=2.4.6-p6 &lt;2.4.8) - Behebt das Problem, dass abgelaufene persistente Anführungszeichen von keinem Cron-Auftrag gelöscht werden, wenn der `persistent_clear_expired` Cron-Auftrag ausgeführt wird.
+* **ACSD-63520** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Es wurde das Problem behoben, dass Bilder, die über **[!UICONTROL Configurations]** im Admin-Bedienfeld hinzugefügt wurden, nicht der maximalen Upload-Größenbeschränkung entsprechen.
+* **ACSD-64523** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Es wurde das Problem behoben, dass es möglich war, neue Produkte ohne Namen über den Importvorgang (Admin oder API) zu erstellen, was die Admin-Benutzeroberfläche beschädigte und zu ungültigen Produkten führte.
+* **ACSD-64532** (für Adobe Commerce und Magento Open Source >=2.4.6-p2 &lt;2.4.8) - Es wird das Problem behoben, bei dem eine auf „false“ gesetzte ENV-Variable als Zeichenfolge „false“ und nicht als boolescher Wert „false“ behandelt wird.
+* **ACSD-64592** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass der Anforderungs-Link aus der E-Mail für eine Geschenkkarte in nicht standardmäßigen Geschäften den Geschenkkartenanspruch immer auf die Standard-Website umleitete.
+* **ACSD-65164** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.8) - Behebt das Problem, bei dem die Fehlermeldung *Einige der ausgewählten Elementoptionen sind derzeit nicht verfügbar* auftritt, wenn ein konfigurierbares Produkt mit einer einzigen benutzerdefinierten Kontrollkästchenoption neu angeordnet wird.
+* **ACSD-64732** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass Controller von Drittanbietern nicht korrekt mit Kundensegmenten zwischengespeichert wurden.
 
 ## v1.1.61 {#v1-1-61}
 
