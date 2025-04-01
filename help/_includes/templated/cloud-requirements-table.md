@@ -1,8 +1,8 @@
 ---
-source-git-commit: f2ee2dec236ddb6e8092d411283952c3d5bd1d61
+source-git-commit: 5975fdc9ead214150d057afaca5b04679710f063
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 54%
+source-wordcount: '401'
+ht-degree: 55%
 
 ---
 # Cloud-Anforderungstabelle
@@ -96,7 +96,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            10.15.04+, 10.7.0.319+
+            10.15.0.4+, 10.7.0.319+
       </td>
       <td>
             10.15.0.4+, 10.7.0.319+
