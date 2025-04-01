@@ -1,7 +1,7 @@
 ---
-source-git-commit: a696c52c1bfced41f34e9d9f3cba386febaf7b23
+source-git-commit: f2ee2dec236ddb6e8092d411283952c3d5bd1d61
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '402'
 ht-degree: 54%
 
 ---
@@ -96,19 +96,19 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            10.15.004+, 10.7.0.319+
+            10.15.04+, 10.7.0.319+
       </td>
       <td>
-            10.15.004+, 10.7.0.319+
+            10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.004+, 10.7.0.319+
+            10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.004+, 10.7.0.319+
+            10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.004+, 10.7.0.319+
+            10.15.0.4+, 10.7.0.319+
       </td>
     </tr>
     <tr>
