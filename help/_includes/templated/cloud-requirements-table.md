@@ -1,8 +1,8 @@
 ---
-source-git-commit: fb7a4b642549584033419f0663f163af2453fe93
+source-git-commit: a696c52c1bfced41f34e9d9f3cba386febaf7b23
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 63%
+source-wordcount: '406'
+ht-degree: 54%
 
 ---
 # Cloud-Anforderungstabelle
@@ -91,6 +91,24 @@ ht-degree: 63%
       </td>
       <td>
             10,6
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            10.15.004+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.004+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.004+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.004+, 10.7.0.319+
+      </td>
+      <td>
+            10.15.004+, 10.7.0.319+
       </td>
     </tr>
     <tr>
@@ -299,6 +317,39 @@ ht-degree: 63%
       </td>
       <td>
             10,6
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
       </td>
     </tr>
     <tr>
@@ -578,6 +629,45 @@ ht-degree: 63%
       </td>
       <td>
             10,4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
       </td>
     </tr>
     <tr>
@@ -891,6 +981,48 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+      <td>
+            9.19.0.309+
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             8,1
@@ -1054,6 +1186,12 @@ ht-degree: 63%
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          —
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             7,4
@@ -1106,6 +1244,12 @@ ht-degree: 63%
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
             10,4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          —
       </td>
     </tr>
     <tr>
