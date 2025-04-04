@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1d192966d457d7f1b95254a3b9c59054e8b03629
+source-git-commit: c27867be74dfaa1bcd782a23db27db29fdccc4e3
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,17 @@ ht-degree: 0%
           <td>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Versionshinweise</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Audience Activation</td>
+          <td>1.0.0+</td>
+          <td>1.0.0+</td>
+          <td>1.0.0+</td>
+          <td>1.0.0+</td>
+          <td>
+              <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marketplace</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
