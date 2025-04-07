@@ -4,14 +4,18 @@ description: Wenden Sie den Patch ACSD-62689 an, um das Adobe Commerce-Problem z
 feature: Categories
 role: Admin, Developer
 exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
-source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
+source-git-commit: 7aefd4f20580529a9da14776368bf2c3bbb3ff3c
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # ACSD-62689: Kategorien können in *[!UICONTROL Related Product Rules]* und Widgets nach Tiefe 4 nicht mehr hinzugefügt werden
+
+>[!NOTE]
+>
+>Dieser Patch wurde durch [ACP2E-3689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md) ersetzt.
 
 Mit dem Patch ACSD-62689 wird das Problem behoben, dass ein Kunde nach der Verschachtelung der Tiefe vier keine Kategorien in *[!UICONTROL Related Product Rules]* und Widgets hinzufügen kann. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57 installiert ist. Die Patch-ID ist ACSD-62689. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.8 behoben.
 
