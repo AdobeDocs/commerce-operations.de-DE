@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 1e02a1831639368ba4640231a854d6f5613c60ad
+source-git-commit: fd76886406710d98dafa22953950424d2037477a
 workflow-type: tm+mt
-source-wordcount: '7287'
+source-wordcount: '7312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 # Tools {#tools}
 
 - [Übersicht](overview.md)
-- Site-Wide Analysis Tool-{#site-wide-analysis-tool}
+- Site-Wide Analysis Tool {#site-wide-analysis-tool}
    - [Einführung](site-wide-analysis-tool/intro.md)
    - [Installation](site-wide-analysis-tool/installation.md)
    - [Zugriff](site-wide-analysis-tool/access.md)
@@ -45,7 +45,7 @@ ht-degree: 0%
    - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
-   - Patches im Quality Patches Tool {#patches-available-in-qpt} verfügbar
+   - Im Quality Patches Tool verfügbare Patches {#patches-available-in-qpt}
       - [Übersicht](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
       - v1.1.0 {#v1-1-0}
          - [Überblick: Quality Patches Tool (QPT) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
@@ -766,11 +766,13 @@ ht-degree: 0%
          - [ACSD-64111: Behebt den Fehler InvalidArgumentException: Class does not exist beim Festlegen verschachtelter Bedingungen für eine Produktkomponente in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] mit Fehlerbedingung für Coupons und Versandmethoden in der Admin-Benutzeroberfläche](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
+         - [ACSD-64546: Allgemeine Fehlermeldung in Benutzeroberfläche und Ausnahme bei der Konvertierung von Array in Zeichenfolge während der Erstellung der UPS-Kennzeichnung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64546-generic-error-message-in-ui-and-array-to-string-conversion.md)
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: Mehrere Probleme mit der Anzeige der Kategoriestruktur auf tieferen Ebenen und mit Anker-/Nicht-Anker-Beziehungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] Seite wird langsam mit Tausenden von Produktattributen geladen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-63974: Behebt langsame [!UICONTROL Requisition List] mit Paginierung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
-- {#cli-reference} zu Befehlszeilen-Tools
+- Referenz zu Befehlszeilen-Tools {#cli-reference}
    - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
    - [Upgrade-Kompatibilitätstool](reference/uct.md)
 - Beobachtung für Adobe Commerce {#observation-for-adobe-commerce}
@@ -795,7 +797,7 @@ ht-degree: 0%
    - [Die Registerkarte Sicherheit](observation-for-adobe-commerce/security-tab.md)
    - [Registerkarte „Infra“](observation-for-adobe-commerce/oac-infra.md)
    - [Verwenden von Observation für Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-- {#data-migration} des Datenmigrationstools
+- Datenmigrations-Tool {#data-migration}
    - [Funktionsweise der Migration](data-migration-tool/how-migration-works.md)
    - [Best Practices](data-migration-tool/best-practices.md)
    - [Unterstützte Versionen](data-migration-tool/supported-versions.md)
@@ -807,7 +809,7 @@ ht-degree: 0%
       - [Konfigurieren](data-migration-tool/configure.md)
       - [Customize](data-migration-tool/customize.md)
       - [Technische Spezifikation](data-migration-tool/technical-specification.md)
-   - Migrieren von {#migrate-data}
+   - Daten migrieren {#migrate-data}
       - [Übersicht](data-migration-tool/migrate-data/overview.md)
       - [Einstellungen](data-migration-tool/migrate-data/settings.md)
       - [Daten](data-migration-tool/migrate-data/data.md)
@@ -815,7 +817,7 @@ ht-degree: 0%
       - [Folgemaßnahmen](data-migration-tool/migrate-data/follow-up.md)
       - [Daten, die manuell migriert werden müssen](data-migration-tool/migrate-data/manual.md)
       - [Schritte nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
-   - Ressourcen-{#resources}
+   - Ressourcen {#resources}
       - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
