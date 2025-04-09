@@ -2,9 +2,9 @@
 title: Voraussetzungen abschließen
 description: Bereiten Sie Ihr Adobe Commerce-Projekt auf ein Upgrade vor, indem Sie die folgenden erforderlichen Schritte ausführen.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
+source-git-commit: df185e21f918d32ed5033f5db89815b5fc98074f
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1866'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,60 @@ Ab Version 2.4 ist MySQL keine unterstützte Katalogsuchmaschine mehr. Sie müss
 * [Konfigurieren von Commerce für die Verwendung von Elasticsearch](../../configuration/search/configure-search-engine.md) und Neuindizierung
 
 Einige Katalogsuchmaschinen von Drittanbietern werden zusätzlich zur Adobe Commerce-Suchmaschine ausgeführt. Wenden Sie sich an Ihren Anbieter, um zu entscheiden, ob Sie Ihre Erweiterung aktualisieren müssen.
+
+### MySQL 8.4-Änderungen
+
+Adobe unterstützt MySQL 8.4 nun auch in Version 2.4.8.
+In diesem Abschnitt werden wichtige Änderungen an MySQL 8.4 beschrieben, die Entwickler beachten sollten.
+
+#### Veralteter nicht standardmäßiger Schlüssel
+
+Die Verwendung von nicht eindeutigen oder partiellen Schlüsseln als Fremdschlüssel ist nicht standardmäßig und wird in MySQL 8.4 nicht mehr unterstützt. Ab MySQL 8.4.0 müssen Sie diese Schlüssel explizit aktivieren, indem Sie [`restrict_fk_on_non_standard_key`](https://dev.mysql.com/doc/refman/8.4/en/server-system-variables.html#sysvar_restrict_fk_on_non_standard_key) auf `OFF` setzen oder den Server mit der Option `--skip-restrict-fk-on-non-standard-key` starten.
+
+#### Aktualisieren von MySQL 8.0 ( oder älteren Versionen ) auf MySQL 8.4
+
+Um MySQL von Version 8.0 ordnungsgemäß auf Version 8.4 zu aktualisieren, müssen Sie die folgenden Schritte ausführen, um Folgendes zu tun:
+
+1. Wartungsmodus aktivieren:
+
+   ```bash
+   bin/magento maintenance:enable
+   ```
+
+1. Erstellen Sie eine Datenbanksicherung:
+
+   ```bash
+   bin/magento setup:backup --db
+   ```
+
+1. Aktualisieren Sie MySQL auf Version 8.4.
+1. Legen Sie `restrict_fk_on_non_standard_key` in `[mysqld]` in der `my.cnf` auf `OFF` fest.
+
+   ```bash
+   [mysqld]
+   restrict_fk_on_non_standard_key = OFF 
+   ```
+
+   >[!WARNING]
+   >
+   >Wenn Sie den Wert von `restrict_fk_on_non_standard_key` nicht in `OFF` ändern, erhalten Sie beim Import den folgenden Fehler:
+   >
+   ```sql
+   > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
+   >```
+1. Starten Sie den MySQL-Server neu.
+1. Importieren Sie die gesicherten Daten in MySQL.
+1. Cache leeren:
+
+   ```bash
+   bin/magento cache:clean
+   ```
+
+1. Wartungsmodus deaktivieren:
+
+   ```bash
+   bin/magento maintenance:disable
+   ```
 
 #### MariaDB
 

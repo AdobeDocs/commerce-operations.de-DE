@@ -2,9 +2,9 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.4
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1571'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 0%
 # Versionshinweise für Adobe Commerce 2.4.4-Sicherheits-Patches
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.4-P13
+
+Die Adobe Commerce-Sicherheitsversion 2.4.4-p13 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
+
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
 
 ## 2.4.4-P12
 
@@ -42,9 +50,9 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p10 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+Aktuelle Informationen zu den behobenen Sicherheitsfehlern finden Sie im [Adobe Systems Security Bulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
-### Highlights
+### Höhepunkte
 
 {{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
@@ -62,7 +70,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-### Plattform-Upgrades
+### Platform Upgrades
 
 * **MariaDB 10.5-Unterstützung**. Diese Patch-Version führt die Kompatibilität mit MariaDB Version 10.5 ein. Adobe Commerce ist weiterhin mit MariaDB Version 10.4 kompatibel. Adobe empfiehlt jedoch die Verwendung von Adobe Commerce 2.4.4-p9 und allen kommenden Nur-Sicherheits-Patch-Versionen 2.4.4 nur mit MariaDB Version 10.5, da MariaDB 10.4-Wartungsarbeiten am 18. Juni 2024 beendet werden. <!--AC-11530-->
 
@@ -91,19 +99,19 @@ Diese Version führt zwei wichtige Sicherheitsverbesserungen ein:
    * Nicht generierte Cache-Schlüssel für -Blöcke enthalten jetzt Präfixe, die sich von Präfixen für automatisch generierte Schlüssel unterscheiden. (Nicht generierte Cache-Schlüssel sind Schlüssel, die über die Vorlagenanweisungssyntax oder die `setCacheKey`- oder `setData` festgelegt werden.)
    * Nicht generierte Cache-Schlüssel für -Blöcke dürfen jetzt nur noch Buchstaben, Ziffern, Bindestriche (-) und Unterstriche (_) enthalten. <!-- AC-9831 -->
 
-* **Beschränkungen für die Anzahl der automatisch generierten Couponcodes**. Commerce begrenzt jetzt die Anzahl der Gutscheincodes, die automatisch generiert werden. Der standardmäßige Maximalwert ist 250.000. Händler können die neue **[!UICONTROL Code Quantity Limit]**-Konfigurationsoption (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) verwenden, um dieses neue Limit zu steuern. <!-- AC-8753 -->
+* **Beschränkungen für die Anzahl der automatisch generierten Couponcodes**. Commerce begrenzt jetzt die Anzahl der Coupon Codes, die automatisch generiert werden. Der standardmäßige Maximalwert ist 250.000. Händler können die neue **[!UICONTROL Code Quantity Limit]** Konfigurationsoption (**[!UICONTROL Stores]** > > **[!UICONTROL Settings:Configuration]** **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) verwenden, um dieses neue Limit zu steuern. <!-- AC-8753 -->
 
 ## 2.4.4-p6
 
-Die Adobe Commerce-Version 2.4.4-p6 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
+Die Sicherheitsversion Adobe Systems Commerce 2.4.4-p6 enthält Sicherheitsfehlerkorrekturen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version umfasst außerdem Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
 
-Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
+Diese Version umfasst außerdem Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
-### Highlights
+### Höhepunkte
 
-Diese Version führt eine neue Konfigurationseinstellung für den vollständigen Seiten-Cache ein, die dazu beiträgt, die mit dem `{BASE-URL}/page_cache/block/esi HTTP`-Endpunkt verbundenen Risiken zu minimieren. Dieser Endpunkt unterstützt uneingeschränkte, dynamisch geladene Inhaltsfragmente aus Commerce-Layout-Handles und -Blockstrukturen. Die neue **[!UICONTROL Handles Param]**-Konfigurationseinstellung legt den Wert des `handles`-Parameters dieses Endpunkts fest, der die maximal zulässige Anzahl von Handles pro API bestimmt. Der Standardwert dieser Eigenschaft ist 100. Händler können diesen Wert unter Admin ändern (**[!UICONTROL Stores]** > **[!UICONTROL Settings: Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**). <!-- AC-9113 -->
+Mit dieser Version wird eine neue Konfigurationseinstellung für den vollständigen Seite-Cache eingeführt, mit der die mit dem `{BASE-URL}/page_cache/block/esi HTTP` Endpunkt verbundenen Risiken verringert werden können. Dieser Endpunkt unterstützt uneingeschränkte, dynamisch geladene Inhalte-Fragmente aus Commerce-Layout-Handles und Blockstrukturen. Die neue **[!UICONTROL Handles Param]** Konfigurationseinstellung legt den Wert des Parameters dieses Endpunkts `handles` fest, der die maximal zulässige Anzahl von Handles pro API bestimmt. Der Standardwert dieser Eigenschaft ist 100. Händler können diesen Wert im Admin-Bereich ändern (**[!UICONTROL Stores]** > **[!UICONTROL Settings: Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!UICONTROL Handles Param]**). <!-- AC-9113 -->
 
 ### Bekannte Probleme
 
@@ -146,9 +154,9 @@ Plattform-Upgrades für diese Version verbessern die Einhaltung der neuesten Bes
 
 * **Unterstützung des Lackcache 7.3**. Diese Version ist kompatibel mit der neuesten Version von Varnish Cache 7.3. Die Kompatibilität mit den Versionen 6.0.x und 7u.2.x bleibt bestehen, aber Adobe empfiehlt, Adobe Commerce 2.4.4-p4 nur mit Varnish Cache Version 7.3 oder Version 6.0 LTS zu verwenden.
 
-* **Unterstützung von RabbitMQ 3.11**. Diese Version ist mit der neuesten Version von RabbitMQ 3.11 kompatibel. Die Kompatibilität mit RabbitMQ 3.9 bleibt bestehen, was bis August 2023 unterstützt wird, aber Adobe empfiehlt die Verwendung von Adobe Commerce 2.4.4-p4 nur mit RabbitMQ 3.11.
+* **Unterstützung für** RabbitMQ 3.11. Diese Version ist mit der neuesten Version von RabbitMQ 3.11 kompatibel. Die Kompatibilität mit RabbitMQ 3.9 bleibt bestehen, was bis August 2023 unterstützt wird, aber Adobe empfiehlt die Verwendung von Adobe Commerce 2.4.4-p4 nur mit RabbitMQ 3.11.
 
-* **JavaScript-**. Veraltete JavaScript-Bibliotheken wurden auf die neuesten Neben- oder Patch-Versionen aktualisiert, einschließlich `moment.js`-Bibliothek (v2.29.4), `jQuery UI`-Bibliothek (v1.13.2) und `jQuery` Validierungs-Plug-in-Bibliothek (v1.19.5).
+* **JavaScript Bibliotheken**. Veraltete JavaScript Bibliotheken wurden auf die neuesten Neben- oder Patch Versionen aktualisiert, einschließlich `moment.js` Bibliothek (v2.29.4), `jQuery UI` Bibliothek (v1.13.2) und `jQuery` Tauglichkeitsprüfung Plug-in Bibliothek (v1.19.5).
 
 ## 2.4.4-p3
 
@@ -185,6 +193,6 @@ Die Sicherheitsverbesserungen für diese Version verbessern die Einhaltung der n
 
 ### Bekannte Probleme
 
-**Problem**: Web-API- und Integrationstests zeigen diesen Fehler an, wenn sie mit dem 2.4.4-p1-Paket ausgeführt werden: `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **Problemumgehung**: Installieren Sie die vorherige Version von Monolog, indem Sie den `require monolog/monolog:2.6.0` Befehl ausführen. <!-- AC-3651-->
+**Problem**: Web-API- und Integrationstests zeigen diesen Fehler an, wenn sie mit dem 2.4.4-p1-Paket ausgeführt werden: `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **Problemumgehung**: Installieren die vorherige Version von Monolog, indem Sie den `require monolog/monolog:2.6.0` Befehl ausführen. <!-- AC-3651-->
 
-**Problem**: Händler bemerken möglicherweise während eines Upgrades von Adobe Commerce 2.4.4 auf Adobe Commerce 2.4.4-p1 Downgrade-Hinweise zur Paketversion. Diese Nachrichten können ignoriert werden. Die Diskrepanz in den Paketversionen resultiert aus Anomalien bei der Paketerstellung. Die Produktfunktionalität wurde nicht beeinträchtigt. Im Knowledgebase-Artikel [Pakete, die nach dem Upgrade von 2.4.4 auf 2.4.4-p1 ](https://support.magento.com/hc/en-us/articles/8214752983949) wurden) finden Sie eine Erläuterung der betroffenen Szenarien und Problemumgehungen.
+**Problem**: Händler können während eines Upgrades von Adobe Systems Commerce 2.4.4 auf Adobe Systems Commerce 2.4.4-p1 Hinweise zur Herabstufung der Paketversion bemerken. Diese Meldungen können ignoriert werden. Die Diskrepanz zwischen den Paketversionen ist auf Anomalien bei der Paketerstellung zurückzuführen. Es ist kein Produkt Funktionen betroffen ist. Im Knowledgebase-Artikel [Pakete, die nach dem Upgrade von 2.4.4 auf 2.4.4-p1 ](https://support.magento.com/hc/en-us/articles/8214752983949) wurden) finden Sie eine Erläuterung der betroffenen Szenarien und Problemumgehungen.

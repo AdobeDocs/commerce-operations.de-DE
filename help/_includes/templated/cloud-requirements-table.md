@@ -1,8 +1,8 @@
 ---
-source-git-commit: 5975fdc9ead214150d057afaca5b04679710f063
+source-git-commit: c900b70bd67d4fe9eb1e040d1f87c7952c8d5ab0
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 55%
+source-wordcount: '451'
+ht-degree: 54%
 
 ---
 # Cloud-Anforderungstabelle
@@ -13,6 +13,68 @@ ht-degree: 55%
       <th>
         Software-Abhängigkeiten
       </th>
+      <th>2,4,8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            2,8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          —
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+            2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            11,4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            11.5.0.18+, 10.15.0.4+
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8,4/8,3
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            Tal 8
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="table-layout:auto">
+  <thead>
+    <tr>
+      <th>
+        Software-Abhängigkeiten
+      </th>
+      <th>2.4.7-p5</th>
       <th>2.4.7-p4</th>
       <th>2.4.7-p3</th>
       <th>2.4.7-p2</th>
@@ -23,6 +85,9 @@ ht-degree: 55%
   <tbody>
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+            2,8
+      </td>
       <td>
             2,8
       </td>
@@ -56,9 +121,15 @@ ht-degree: 55%
       <td>
           —
       </td>
+      <td>
+          —
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+            2
+      </td>
       <td>
             2
       </td>
@@ -92,9 +163,15 @@ ht-degree: 55%
       <td>
             10,6
       </td>
+      <td>
+            10,6
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+            10.15.0.4+, 10.7.0.319+
+      </td>
       <td>
             10.15.0.4+, 10.7.0.319+
       </td>
@@ -114,6 +191,9 @@ ht-degree: 55%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
+            8,3/8,2
+      </td>
+      <td>
             8,3; 8,2
       </td>
       <td>
@@ -131,6 +211,9 @@ ht-degree: 55%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+            3,13
+      </td>
       <td>
             3,13
       </td>
@@ -164,6 +247,9 @@ ht-degree: 55%
       <td>
             7,2
       </td>
+      <td>
+            7,2
+      </td>
     </tr>
   </tbody>
 </table>
@@ -174,6 +260,7 @@ ht-degree: 55%
       <th>
         Software-Abhängigkeiten
       </th>
+      <th>2.4.6-P10</th>
       <th>2.4.6-p9</th>
       <th>2.4.6-p8</th>
       <th>2.4.6-p7</th>
@@ -219,9 +306,15 @@ ht-degree: 55%
       <td>
             2,2
       </td>
+      <td>
+            2,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -285,9 +378,15 @@ ht-degree: 55%
       <td>
             2
       </td>
+      <td>
+            2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            10,6
+      </td>
       <td>
             10,6
       </td>
@@ -351,9 +450,15 @@ ht-degree: 55%
       <td>
             10.7.0.319+, 9.19.0.309+
       </td>
+      <td>
+            10.7.0.319+, 9.19.0.309+
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8,2; 8,1
+      </td>
       <td>
             8,2; 8,1
       </td>
@@ -397,6 +502,9 @@ ht-degree: 55%
             3,13
       </td>
       <td>
+            3,13
+      </td>
+      <td>
             3,12
       </td>
       <td>
@@ -420,6 +528,9 @@ ht-degree: 55%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7,2
+      </td>
       <td>
             7,2
       </td>
@@ -460,6 +571,7 @@ ht-degree: 55%
       <th>
         Software-Abhängigkeiten
       </th>
+      <th>2.4.5-P12</th>
       <th>2.4.5-P11</th>
       <th>2.4.5-P10</th>
       <th>2.4.5-p9</th>
@@ -513,9 +625,15 @@ ht-degree: 55%
       <td>
             2,2
       </td>
+      <td>
+            2,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -556,6 +674,9 @@ ht-degree: 55%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
+            2
+      </td>
+      <td>
             1
       </td>
       <td>
@@ -594,6 +715,9 @@ ht-degree: 55%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            10,6
+      </td>
       <td>
             10,6; 10,5
       </td>
@@ -669,9 +793,15 @@ ht-degree: 55%
       <td>
             9.19.0.309+
       </td>
+      <td>
+            9.19.0.309+
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8,1
+      </td>
       <td>
             8,1
       </td>
@@ -721,6 +851,9 @@ ht-degree: 55%
             3,13
       </td>
       <td>
+            3,13
+      </td>
+      <td>
             3,12; 3,11
       </td>
       <td>
@@ -750,6 +883,9 @@ ht-degree: 55%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7,2
+      </td>
       <td>
             7,2
       </td>
@@ -796,6 +932,7 @@ ht-degree: 55%
       <th>
         Software-Abhängigkeiten
       </th>
+      <th>2.4.4-P13</th>
       <th>2.4.4-P12</th>
       <th>2.4.4-P11</th>
       <th>2.4.4-P10</th>
@@ -845,6 +982,9 @@ ht-degree: 55%
             2,2
       </td>
       <td>
+            2,2
+      </td>
+      <td>
             2,1
       </td>
       <td>
@@ -895,9 +1035,15 @@ ht-degree: 55%
       <td>
           —
       </td>
+      <td>
+          —
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+            2
+      </td>
       <td>
             1
       </td>
@@ -940,6 +1086,9 @@ ht-degree: 55%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+            10,6
+      </td>
       <td>
             10,6; 10,5
       </td>
@@ -1021,9 +1170,15 @@ ht-degree: 55%
       <td>
             9.19.0.309+
       </td>
+      <td>
+            9.19.0.309+
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+            8,1
+      </td>
       <td>
             8,1
       </td>
@@ -1105,9 +1260,15 @@ ht-degree: 55%
       <td>
             3,9
       </td>
+      <td>
+            3,9
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+            7,2
+      </td>
       <td>
             7,2
       </td>

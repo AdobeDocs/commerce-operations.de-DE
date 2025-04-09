@@ -2,7 +2,7 @@
 title: Verwalten der Indexer
 description: Hier finden Sie Beispiele zum Anzeigen und Verwalten von Commerce-Indexern.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 9a92204369d3a8310aadfb94f8193a6c89f78c30
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,19 +39,19 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder die Produkt-Recommendations verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html) zu verwenden.
+> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder Produktempfehlungen verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html) zu verwenden.
 
-## Anzeigen des Indexerstatus
+## Ansicht Indexerstatus
 
-Verwenden Sie diesen Befehl, um den Status aller Indexer oder bestimmter Indexer anzuzeigen. Finden Sie beispielsweise heraus, ob ein Indexer neu indiziert werden muss.
+Verwenden Sie diesen Befehl, um den Status aller oder bestimmter Indexer zu Ansicht. So können Sie z. B. herausfinden, ob ein Indexer neu indiziert werden muss.
 
-Befehlsoptionen:
+Befehl Optionen:
 
 ```bash
 bin/magento indexer:status [indexer]
 ```
 
-Dabei ist `[indexer]` eine durch Leerzeichen getrennte Liste von Indexern. Lassen Sie `[indexer]` aus, um den Status aller Indexer anzuzeigen.
+Wobei `[indexer]` eine durch Leerzeichen getrennte Liste von Indexern ist. Auslassung `[indexer]` , um den Status aller Indexer zu Ansicht.
 
 Beispielergebnis:
 
@@ -73,21 +73,21 @@ Beispielergebnis:
 +----------------------+------------------+-----------+---------------------+---------------------+
 ```
 
-## neu indizieren
+## Neu indizieren
 
 Verwenden Sie diesen Befehl, um alle oder ausgewählte Indexer nur einmal neu zu indizieren.
 
 >[!INFO]
 >
->Dieser Befehl indiziert nur einmal neu. Um Indexer auf dem neuesten Stand zu halten, müssen Sie einen [Cron-Auftrag“ ](../cli/configure-cron-jobs.md).
+>Dieser Befehl indiziert nur einmal neu. Um die Indexer auf dem neuesten Stand zu halten, müssen Sie einen [Cron-Job](../cli/configure-cron-jobs.md) einrichten.
 
-Befehlsoptionen:
+Befehl Optionen:
 
 ```bash
 bin/magento indexer:reindex [indexer]
 ```
 
-Dabei ist `[indexer]` eine durch Leerzeichen getrennte Liste von Indexern. Lassen Sie `[indexer]` aus, um alle Indexer neu zu indizieren.
+Wobei `[indexer]` eine durch Leerzeichen getrennte Liste von Indexern ist. Lassen Sie `[indexer]` aus, um alle Indexer neu zu indizieren.
 
 Beispielergebnis:
 
@@ -235,7 +235,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) ein. Dadurch wird sichergestellt, dass keine Datenbanksperren auftreten.
+>Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) ein. Dadurch wird sichergestellt, dass es nicht zu Datenbanksperren kommt.
 
 So legen Sie die Indexerkonfiguration fest:
 
@@ -249,7 +249,7 @@ Dabei gilt:
 - `schedule` - Legt die angegebenen Indexer entsprechend dem Cron-Zeitplan zum Speichern fest.
 - `indexer` - Eine durch Leerzeichen getrennte Liste von Indexern. Lassen Sie `indexer` aus, um alle Indexer auf die gleiche Weise zu konfigurieren.
 
-Um beispielsweise nur die Indexer für Kategorien und Produktkategorien zu ändern, die planmäßig aktualisiert werden sollen, geben Sie Folgendes ein:
+Geben Sie beispielsweise Folgendes ein, um nur die Indexer für Kategorie Produkte und Produktkategorien zu ändern, die planmäßig aktualisiert werden sollen:
 
 ```bash
 bin/magento indexer:set-mode schedule catalog_category_product catalog_product_category
@@ -262,23 +262,23 @@ Index mode for Indexer Category Products was changed from 'Update on Save' to 'U
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
 
-Die indexerbezogenen Datenbank-Trigger werden hinzugefügt, wenn der Indexermodus auf &quot;`schedule`&quot; festgelegt ist, und entfernt, wenn der Indexermodus auf &quot;`realtime`&quot; festgelegt ist. Wenn die Trigger in Ihrer Datenbank fehlen, während die Indexer auf `schedule` eingestellt sind, ändern Sie die Indexer in `realtime` und ändern Sie sie dann wieder zurück in `schedule`. Dadurch werden die Trigger zurückgesetzt.
+Die indexerbezogenen Datenbanktrigger werden hinzugefügt, wenn der Indexermodus auf `schedule` festgelegt ist, und entfernt, wenn der Indexermodus auf `realtime`festgelegt ist. Wenn die Trigger in der Datenbank fehlen, während die Indexer auf `schedule`festgelegt sind, ändern Sie die Indexer in `realtime` und ändern Sie sie dann wieder in `schedule`. Dadurch werden die Trigger zurückgesetzt.
 
-### Indexerstatus festlegen
+### Festlegen Indexerstatus
 
 Der Befehl `bin/magento indexer:set-status` wurde in Adobe Commerce 2.4.7 eingeführt. Sie ermöglicht es Administratoren, den Betriebsstatus eines oder mehrerer Indexer zu ändern und so die Systemleistung bei umfangreichen Vorgängen wie Datenimporten, Aktualisierungen oder Wartungsarbeiten zu optimieren.
 
-Befehlssyntax:
+Befehl Syntax:
 
 ```bash
 bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
 ```
 
-Dabei gilt:
+Wo:
 
-- `invalid` - Markiert Indexer als veraltet und fordert bei der nächsten Cron-Ausführung zur Neuindizierung auf, es sei denn, sie werden ausgesetzt.
-- `suspended` - Beendet vorübergehend automatische cron-ausgelöste Aktualisierungen für Indexer. Dieser Status gilt sowohl für den Echtzeit- als auch für den Zeitplanmodus, sodass automatische Aktualisierungen bei intensiven Vorgängen angehalten werden.
-- `valid` - Zeigt an, dass die Indexerdaten auf dem neuesten Stand sind und nicht neu indiziert werden müssen.
+- `invalid`: Markiert Indexer als veraltet und fordert beim nächsten Cron-Lauf eine Neuindizierung an, es sei denn, sie werden angehalten.
+- `suspended`– Stoppt vorübergehend automatische, durch Cron ausgelöste Updates für Indexer. Dieser Status gilt sowohl für den Echtzeit- als auch für den Zeitplanmodus und stellt sicher, dass automatische Aktualisierungen während intensiver Vorgänge pausiert werden.
+- `valid`: Gibt an, dass die Indexer-Daten aktuell sind und keine Neuindizierung erforderlich ist.
 - `indexer` - Eine durch Leerzeichen getrennte Liste von Indexern. Lassen Sie `indexer` aus, um alle Indexer auf die gleiche Weise zu konfigurieren.
 
 Um beispielsweise bestimmte Indexer auszusetzen, geben Sie Folgendes ein:

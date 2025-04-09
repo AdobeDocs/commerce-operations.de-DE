@@ -1,5 +1,5 @@
 ---
-source-git-commit: fb08fb139e975d6f8d0837a5370fed531ee97e0f
+source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -29,8 +29,8 @@ ht-degree: 5%
           <td>1,32</td>
           <td>1,32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Übersicht</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Übersicht</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -42,7 +42,7 @@ ht-degree: 5%
           <td>4,3,0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -54,7 +54,7 @@ ht-degree: 5%
           <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -66,7 +66,7 @@ ht-degree: 5%
           <td>6,2,0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
   </tbody>

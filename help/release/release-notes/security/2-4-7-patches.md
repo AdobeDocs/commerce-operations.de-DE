@@ -2,9 +2,9 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.7
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,18 @@ ht-degree: 0%
 # Versionshinweise für Adobe Commerce 2.4.7-Sicherheits-Patches
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.7-p5
+
+Die Adobe Commerce-Sicherheitsversion 2.4.7-p5 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
+
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
+
+### Highlights
+
+Mit dieser Version wird die Unterstützung für die Adobe Commerce [HIPAA-fähige Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) eingeführt.
 
 ## 2.4.7-p4
 
