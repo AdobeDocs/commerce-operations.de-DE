@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: ecdc18ecee369cb94d5e86a78577d486f13de9e3
+source-git-commit: 77f3bb9b766eef3d56fc5d89b29daa9254992220
 workflow-type: tm+mt
-source-wordcount: '7351'
+source-wordcount: '7335'
 ht-degree: 0%
 
 ---
@@ -763,7 +763,6 @@ ht-degree: 0%
       - v1.1.60 {#v1-1-60}
          - [Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: Löst [!UICONTROL Select All] Funktionalität auf und verbessert die Paginierung und Anzahl der Einträge im Produktkategorien-Popup](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
-         - [ACSD-64137: Die Suche nach Abholorten per Postleitzahl funktioniert bei der niederländischen Lokalisierung nicht richtig](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code)
          - [ACSD-64111: Behebt den Fehler InvalidArgumentException: Class does not exist beim Festlegen verschachtelter Bedingungen für eine Produktkomponente in [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] mit Fehlerbedingung für Coupons und Versandmethoden in der Admin-Benutzeroberfläche](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
@@ -824,6 +823,3 @@ ht-degree: 0%
       - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
-
-
-[def]: /help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64137-searching-for-pickup-locations-by-zip-code.md
