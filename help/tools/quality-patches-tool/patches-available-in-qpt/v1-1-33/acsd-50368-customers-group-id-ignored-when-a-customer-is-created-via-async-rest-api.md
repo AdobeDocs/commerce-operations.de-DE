@@ -4,14 +4,18 @@ description: Wenden Sie den Patch ACSD-50368 an, um das Adobe Commerce-Problem z
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 9039635038bee9083fa3ed009e79c76e3655b357
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # ACSD-50368: Die group_id des Kunden wird ignoriert, wenn ein Kunde über die Async REST-API oder die Async Bulk REST-API erstellt wird
+
+>[!NOTE]
+>
+>Der Patch von ACSD-50368 ist teilweise veraltet, da dieses Problem durch den obligatorischen Sicherheitspatch (APSB25-08[ für Versionen über 2.4.4 ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) wird.
 
 Mit dem Patch ACSD-50368 wird das Problem behoben, dass group_id des Kunden ignoriert wird, wenn ein Kunde über die Async REST-API oder die Async Bulk REST-API erstellt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33 installiert ist. Die Patch-ID ist ACSD-50368. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
@@ -23,7 +27,7 @@ Mit dem Patch ACSD-50368 wird das Problem behoben, dass group_id des Kunden igno
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.3 - 2.4.4-p4
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
