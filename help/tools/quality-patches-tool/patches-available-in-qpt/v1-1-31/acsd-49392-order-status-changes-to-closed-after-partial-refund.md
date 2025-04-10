@@ -4,14 +4,18 @@ description: Wenden Sie den Patch ACSD-49392 an, um das Adobe Commerce-Problem z
 feature: Orders
 role: Admin
 exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 67e050b4ceccc3f30bf8cd49125525b2e8d8b0dd
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 # ACSD-49392: Auftragsstatus ändert sich nach teilweiser Rückerstattung in Geschlossen
+
+>[!NOTE]
+>
+>Der Patch ACSD-49392 wurde durch den Patch [ACSD-57003](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing) für die Versionen 2.4.6-p7 bis 2.4.6-p10 ersetzt.
 
 Mit dem Patch ACSD-49392 wird das Problem behoben, dass sich der Bestellstatus nach einer teilweisen Rückerstattung für ein gebündeltes Produkt in „Geschlossen“ ändert. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.31 installiert ist. Die Patch-ID ist ACSD-49392. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
@@ -23,7 +27,7 @@ Mit dem Patch ACSD-49392 wird das Problem behoben, dass sich der Bestellstatus n
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.7 - 2.3.7-p4 und 2.4.1 - 2.4.6
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.7 - 2.3.7-p4 und 2.4.1 - 2.4.6-p6
 
 >[!NOTE]
 >
