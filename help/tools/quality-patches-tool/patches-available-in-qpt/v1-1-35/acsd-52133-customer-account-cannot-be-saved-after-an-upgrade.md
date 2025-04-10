@@ -4,14 +4,18 @@ description: Wenden Sie den Patch ACSD-52133 an, um das Adobe Commerce-Problem z
 feature: Customers, Upgrade
 role: Admin
 exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 82667023bbaa9d725eb52dacb8bd47042bdfe028
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-52133: Kundenkonto kann nach einem Upgrade nicht gespeichert werden
+
+>[!NOTE]
+>
+>Dieser Patch wird aufgrund eines Konflikts mit dem Sicherheits-Patch nicht mehr unterstützt ([-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
 
 Mit dem Patch ACSD-52133 wird das Problem behoben, dass ein Kundenkonto nach einem Upgrade nicht gespeichert werden kann. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.35 installiert ist. Die Patch-ID ist ACSD-52133. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
