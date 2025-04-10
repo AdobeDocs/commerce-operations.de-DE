@@ -4,14 +4,18 @@ description: Der Patch ACSD-46192 behebt das Problem mit dem Endpunkt „async/b
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192: Problem mit dem Endpunkt „async/bulk/V1/configurable-products/bySku/options“
+
+>[!NOTE]
+>
+>Der Patch von ACSD-46192 ist teilweise veraltet, da dieses Problem durch den obligatorischen Sicherheitspatch (APSB25-[) ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) wird.
 
 Mit dem Patch ACSD-46192 wird das Problem mit dem `async/bulk/V1/configurable-products/bySku/options`-Endpunkt behoben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46192. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
 
@@ -23,7 +27,7 @@ Mit dem Patch ACSD-46192 wird das Problem mit dem `async/bulk/V1/configurable-pr
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.3 und 2.4.4
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
