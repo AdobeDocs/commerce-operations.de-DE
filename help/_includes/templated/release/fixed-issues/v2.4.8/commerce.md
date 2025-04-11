@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3f6776e5dbbf167bbb7b4f831f9a7d4cfbfc0b74
+source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
 workflow-type: tm+mt
-source-wordcount: '28398'
+source-wordcount: '28394'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 Es wurden 582 Probleme im Adobe Commerce 2.4.8-Kerncode behoben. Nachfolgend werden einige der in dieser Version enthaltenen behobenen Probleme beschrieben.
 
-### Apis
+### APIs
 
 * _AC-10042_: /V1/Transactions REST API gibt einen Fehler zurück, wenn parent_txn_id = txn_id ist
    * _Fehlerbehebung_: Das System verarbeitet jetzt korrekt die übergeordneten und untergeordneten Concept-Transaktionen, bei denen die übergeordnete Transaktions-ID mit der Transaktions-ID identisch ist, sodass beim Abfragen des /V1/transaction-REST-API-Endpunkts keine Endlosschleife entsteht. Zuvor führte dieses Szenario aufgrund der Überschreitung der maximalen Ausführungszeit zu einem schwerwiegenden Fehler.
@@ -21,11 +21,11 @@ Es wurden 582 Probleme im Adobe Commerce 2.4.8-Kerncode behoben. Nachfolgend wer
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38662>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38663>
 * _AC-3223_: Sonderzeichen in der Kategorie url_key (bei Erstellung über die REST-API)
-   * _Korrekturhinweis_: Das Sonderzeichen Kategorie_url_key ist nach der Korrektur nicht mehr vorhanden, es wird ein Sonderzeichen in Kategorie_url_key angezeigt
+   * _Hinweis korrigieren_: Das Sonderzeichen „Früher in category_url_key“ ist nach der Fehlerbehebung nicht vorhanden, da es das Sonderzeichen in category_url_key anzeigt.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/35577>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/c699c206>
-* _ACP2E-2703_: REST-API zeigt Bestellungen von einer anderen Website an.
-   * _Korrekturhinweis_: Das System unterstützt jetzt Umfang autorisierten Zugriff für REST-API-Administratortoken und Magento_Sales-Endpunkte, wodurch sichergestellt wird, dass die REST-API nur Bestellungen anzeigt, auf die der Administrator Zugriff hat. Zuvor zeigte die REST-API Bestellungen von allen Websites an, unabhängig von der zugewiesenen Website des Admin-Benutzers.
+* _ACP2E-2703_: REST-API mit Bestellungen von einer anderen Website. 
+   * _Fehlerbehebung_: Das System unterstützt jetzt den vom Umfang autorisierten Zugriff für REST-API-Admin-Token und Magento_Sales-Endpunkte. So wird sichergestellt, dass die REST-API nur Bestellungen anzeigt, auf die Admins Zugriff haben. Zuvor zeigte die REST-API Bestellungen von allen Websites an, unabhängig von der zugewiesenen Website des Admin-Benutzers.
 * _ACP2E-2755_: Problem mit der Rest-API nach der Aktivierung von 2FA Duo
    * _Fehlerbehebung_: Die Sicherheitsoption 2FA mit Duo generiert jetzt die richtige Signatur für die Rest-API
    * _GitHub-Code-Beitrag_: <https://github.com/magento/security-package/commit/412fa642>
@@ -83,7 +83,7 @@ Zuvor war es möglich, die Kundengruppe „Duplizierte Website-Preisgruppe“ in
 * _AC-10886_: Aktualisierung des Administratorkennworts.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38352>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/4bca5dfe>
-* _AC-10990_: Meine Konto Adresse hinzufügen stürzt beim Speichern ab
+* _AC-10990_: Adresse für mein Konto beim Speichern abstürzt
    * _Fehlerbehebung_: Das System speichert Kundenadressen jetzt korrekt, selbst wenn das Feld Region nicht angezeigt wird, wodurch ein Absturz während des Speichervorgangs verhindert wird. Zuvor führte der Versuch, eine Adresse ohne angezeigtes Bereichsfeld hinzuzufügen oder zu bearbeiten, zu einem Ausnahmefehler.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38406>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38407>
@@ -139,12 +139,12 @@ Zuvor waren nach der Anmeldung die Produkte, die als Gastbenutzer zur Vergleichs
 ### Konto, Admin-Benutzeroberfläche, B2B
 
 * _ACP2E-3038_: Benutzer mit eingeschränkten Administratorrechten können benutzerdefinierte freigegebene Kataloge nicht immer sehen
-   * _Korrekturhinweis_: Eingeschränkte Admin-Benutzer können jetzt Kunden und alle freigegebenen Kataloge, denen die Produkte zugewiesen sind, konsistent Ansicht und managen, sofern sie Zugriff auf die spezifische Geschäft haben. Bisher konnte ein eingeschränkter Admin-User mit Zugriff auf eine bestimmte Geschäft nicht immer alle freigegebenen Kataloge sehen, denen die Produkte zugewiesen waren, oder Kunden, die nicht speichern konnten, was zu Inkonsistenzen im System führte.
+   * _Fehlerbehebung_: Benutzende mit eingeschränktem Administratorzugriff können jetzt Kundinnen und Kunden sowie alle freigegebenen Kataloge, denen die Produkte zugewiesen sind, konsistent anzeigen und verwalten, sofern sie Zugriff auf den jeweiligen Store haben. Zuvor konnte ein Admin-Benutzer mit eingeschränktem Zugriff auf einen bestimmten Store nicht immer alle freigegebenen Kataloge sehen, denen die Produkte zugewiesen waren, oder er konnte Kunden sehen, die nicht speichern konnten, was zu Inkonsistenzen im System führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/7377de59>
 
-### Konto, Warenkorb und Kasse
+### Konto, Warenkorb und Checkout
 
-* _AC-2341_: Das benutzerdefinierte Kundenadressattribut &quot;select&quot; wird für neue Kundenadressen nicht gerendert
+* _AC-2341_: Das benutzerdefinierte Adressattribut des Kunden „select“ wird für die neue Kundenadresse nicht gerendert.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/34950>
 
 ### Admin-Benutzeroberfläche
@@ -160,8 +160,8 @@ Zuvor waren nach der Anmeldung die Produkte, die als Gastbenutzer zur Vergleichs
 * _AC-11588_: Die Datenvalidierung ist erfolgreich und die Schaltfläche „Importieren“ ist beim Importieren von Produkten mit dem Verhalten „Ersetzen“ vorhanden
    * _Fehlerbehebung_: Das System validiert jetzt die Daten korrekt und blendet die Schaltfläche „Importieren“ während des Produktimports mit dem Verhalten „Ersetzen“ aus, um einen unbeabsichtigten Datenaustausch zu verhindern. Zuvor hat das System die Daten falsch validiert und die Schaltfläche „Importieren“ angezeigt, was zu potenziellen Dateninkonsistenzen führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/0574ac23>
-* _AC-12167_: [Fehler] Magento 2.4.7 erlaubt keine Produktfotos mit Dateierweiterung in Großbuchstaben.
-   * _Fixhinweis_: Das System akzeptiert jetzt Produktbild-Uploads mit Großbuchstaben-Dateierweiterungen, um einen reibungslosen Produkterstellungsprozess zu gewährleisten. Zuvor wurden Bilduploads mit Dateierweiterungen in Großbuchstaben abgelehnt, sodass Benutzer gezwungen waren, die Dateierweiterung in Kleinbuchstaben zu ändern.
+* _AC-12167_: [Bug] Magento 2.4.7 lässt keine Produktfotos mit der Dateierweiterung „Großbuchstaben“ zu.
+   * _Fehlerbehebung_: Das System akzeptiert jetzt das Hochladen von Produktbildern mit Großbuchstaben-Dateierweiterungen, um einen reibungslosen Produkterstellungsprozess sicherzustellen. Zuvor wurden Bild-Uploads mit Großbuchstaben-Dateierweiterungen abgelehnt, was Benutzer zwang, die Dateierweiterung in Kleinbuchstaben zu ändern.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38831>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/c8f87c25>
 * _AC-12319_: Ausgeblendetes Dropdown-Menü in Rastern mit Auswahl-Aktion (z. B. Inhalt > Elemente > Seiten)
@@ -189,19 +189,19 @@ Zuvor waren nach der Anmeldung die Produkte, die als Gastbenutzer zur Vergleichs
    * _Fehlerbehebung_: Das System entfernt jetzt automatisch nicht verwendete Änderungsprotokolltabellen, wenn ein Index von „Aktualisierung planmäßig“ in „Aktualisierung beim Speichern“ geändert wird. Der Index wird dadurch als ungültig markiert, um sicherzustellen, dass keine Einträge übersehen werden. Zuvor würde ein Wechsel eines Index zu „Aktualisierung beim Speichern“ nicht verwendete Änderungsprotokolltabellen im System belassen und alle geänderten Indizes als „gültig“ markieren.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/29789>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/25859>
-* _AC-7962_: Kein verknüpfen zum Versand bei Zahlungen in Checkout in Mobiltelefon-Ansicht
-   * _Fixhinweis_: Das System stellt nun sicher, dass die Checkout Titel/Links &quot;Versand&quot; und &quot;prüfen &amp; Zahlungen&quot; in mobilen Ansicht immer über dem Seite sichtbar sind, so dass Benutzer einfach zwischen den Schritten navigieren und notwendige Korrekturen vornehmen können. Bisher wurden diese Titel/Links in mobilen Ansicht versteckt, was es für Benutzer schwierig machte, ihren aktuellen Schritt zu ermitteln oder zu vorherigen Schritten zurückzukehren.
+* _AC-7962_: Kein Link zum Versand bei Zahlungen an der Kasse in der Mobiltelefonansicht
+   * _Fehlerbehebung_: Das System stellt jetzt sicher, dass die Checkout-Titel/Links „Versand“ und „Überprüfung und Zahlungen“ in der mobilen Ansicht immer oben auf der Seite sichtbar sind, sodass Benutzende einfach zwischen Schritten navigieren und notwendige Korrekturen vornehmen können. Zuvor waren diese Titel/Links in der mobilen Ansicht ausgeblendet, sodass es für Benutzende schwierig ist, ihren aktuellen Schritt zu kennen oder zu vorherigen Schritten zurückzukehren.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/36856>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/36982>
 * _AC-8109_: Die Abfrage von Versandkommentaren für Kundenbestellungen CREATED_AT wird in +0 Zeitzone zurückgegeben, die sich nicht in der konfigurierten Zeitzone des Geschäfts befindet
    * _Fehlerbehebung_: Das System zeigt jetzt korrekt das Feld „created_at“ aus Versandkommentaren in der konfigurierten Zeitzone des Kunden an, wenn die Abfrage „Kundenaufträge“ verwendet wird. Zuvor wurde das Feld „created_at“ in der Zeitzone +0 angezeigt, unabhängig von der konfigurierten Zeitzone des Kunden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/36947>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/37642>
-* _AC-9843_: i18n:collect-phrases beschädigt die Integrität der Übersetzungen.
+* _AC-9843_: i18n:collect-phrases bricht die Übersetzungsintegrität
    * _Fehlerbehebung_: Der Befehl `bin/magento i18n:collect-phrases -o` erfasst und fügt nun neue Ausdrücke aus JavaScript- und PHTML-Dateien hinzu, um sicherzustellen, dass Übersetzungen korrekt in der Übersetzungsdatei widergespiegelt werden. Zuvor konnte das System nicht mehrzeilige Übersetzungsausdrücke aus JavaScript-Dateien und Ausdrücke aus .phtml-Dateien in die Übersetzungsdatei einbeziehen, was zu unvollständigen oder falschen Übersetzungen führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _ACP2E-2687_: Berechtigungsproblem für den Zugriff auf Dynamic Block
-   * _Korrekturhinweis_: Zuvor führte das Hinzufügen eines neuen dynamischen Blocks für eingeschränkte Administratoren zu einem Fehler. Nach der Implementierung dieses Fix kann der eingeschränkte Administrator den dynamischen Block erfolgreich hinzufügen und den Block ohne Fehler bearbeiten
+   * _Fehlerbehebung_: Zuvor wurde beim Hinzufügen eines neuen dynamischen Blocks für Administratoren ein Fehler ausgegeben. Nach der Implementierung dieser Fehlerbehebung kann der eingeschränkte Administrator den dynamischen Block erfolgreich hinzufügen und den Block ohne Fehler bearbeiten
 * _ACP2E-2787_: Apostroph in Store-Ansicht wird durch &quot;&quot; ersetzt
    * _Hinweis korrigieren_: Die Filter für die Store-Ansicht des Rasters zeigen jetzt Apostrophe korrekt an
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38395>
@@ -213,13 +213,13 @@ Zuvor waren nach der Anmeldung die Produkte, die als Gastbenutzer zur Vergleichs
    * _Fehlerbehebung_: Generieren Sie Bildvorschauen für Bilder, die gelöscht und mit demselben Namen über die Mediensammlung im Page Builder-Inhalt erneut hochgeladen wurden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2-page-builder/commit/60140cd2>, <https://github.com/magento/magento2/commit/001e5188>
 * _ACP2E-2978_: Durch das Speichern von Produkten durch Admin-Benutzende mit anderem Rollenbereich werden vorhandene zugehörige Produktinformationen im Produkt überschrieben/gelöscht
-   * _Fehlerbehebungshinweis_: Vor dem Fix wurden die zugehörigen Produkte zurückgesetzt und leer angezeigt, wenn der sekundäre Administrator User auf das Speichern der Button klickte, ohne das zugehörige Produkt zu ändern. Nach diesem Fix klickt der sekundäre Administrator User auf die Button speichern, und das Produkt wird nicht zurückgesetzt und erfolgreich gespeichert.
+   * _Fehlerbehebung_: Vor der Fehlerbehebung wurden die zugehörigen Produkte zurückgesetzt und leer, wenn der sekundäre Admin-Benutzer auf die Schaltfläche Speichern klickte, ohne das zugehörige Produkt zu ändern. Nach dieser Fehlerbehebung klickt der sekundäre Admin-Benutzer auf die Schaltfläche Speichern , das Produkt wird nicht zurückgesetzt und erfolgreich gespeichert.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/3056e9cb>
 * _ACP2E-3033_: Es können nicht mehr als 200 Bestellungen exportiert werden
-   * _Korrekturhinweis_: Die Serverbeschränkungen für die Anfrage Größe zuvor gesendeter ausgewählter IDs wurden vernachlässigt, indem die HTTP-Anfrage von GET auf POST geändert wurde, bestellen das Problem zu beheben. Zuvor wurde das Problem aufgrund der Serverbeschränkungen für GET-Anfrage Größe festgestellt.
+   * _Fehlerbehebung_: Die Serverbeschränkungen für die Anfragengröße von zuvor gesendeten IDs wurden vernachlässigt, indem die HTTP-Anfrage von GET in POST geändert wurde, um das Problem zu beheben. Aufgrund der Serverbeschränkungen für die GET-Anfragengröße trat zuvor das Problem auf.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/93d50f8d>
-* _ACP2E-3037_: Checkout-Seite Validierungsmeldung falsch.
-   * _Korrekturhinweis_: Wenn ein erforderliches Feld leer gelassen wird, z. B. &quot;Adresse&quot;, wird die Meldung im Server-seitig Tauglichkeitsprüfung nicht angezeigt. Das Client-seitig Tauglichkeitsprüfung stellt sicher, dass der Fehler &quot;Dies ist ein erforderliches Feld&quot; angezeigt Benachrichtigung. Zuvor wurde zusätzlich zur Client-seitigen Validierungsmeldung die Meldung „Adresse ist erforderlich“ angezeigt, wenn ein erforderliches Feld leer gelassen wurde.
+* _ACP2E-3037_: Meldung bei Validierung der Checkout-Seite falsch.
+   * _Fehlerbehebung_: Wenn ein erforderliches Feld leer gelassen wird, z. B. „Adresse“, zeigt die Server-seitige Validierung die Nachricht nicht an. Die Client-seitige Validierung stellt sicher, dass die Fehlerbenachrichtigung für das erforderliche Feld angezeigt wird, in der steht: „Dies ist ein erforderliches Feld.“ Zuvor wurde zusätzlich zur Client-seitigen Validierungsmeldung die Meldung „Adresse ist erforderlich“ angezeigt, wenn ein erforderliches Feld leer gelassen wurde.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/9af794a4>
 * _ACP2E-3125_: Problem mit der Vorlage zum Zurücksetzen des Kennworts bei einem Admin-Benutzer
    * _Hinweis:_ Problem wurde durch Verwendung des richtigen Schlüssels behoben, der jetzt den Admin-Benutzernamen in die E-Mail-Vorlage enthält und den Betreff ordnungsgemäß ausfüllt. Zuvor bestand das Problem aus einem veralteten Schlüssel, der verwendet wurde.
@@ -320,14 +320,14 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
 * _ACP2E-3080_: Problem mit der Sichtbarkeit des Datumsbereichs für vom Administrator bestellte Produkte.
    * _Fehlerbehebung_: Der Benutzer kann ein beliebiges Datum aus dem Bericht Bestellte Produkte auswählen. Zuvor wird nach einer Tabellenaktualisierung durch die Auswahl von „Von“ das „Bis“-Datum zurückgesetzt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/6f4805f8>
-* _ACP2E-3096_: Falsche cURL-Kopfzeilen, die dazu führen, dass newrelic:create:deploy-marker nicht funktioniert
-   * _Fehlerbehebung_: Das System formatiert jetzt cURL-Kopfzeilen korrekt, sodass der Befehl :create:-deploy-marker erfolgreich eine Bereitstellungsmarkierung in New Relic erstellen kann. Zuvor verhinderten falsche cURL-Kopfzeilen die Erstellung einer Bereitstellungsmarkierung in New Relic.
+* _ACP2E-3096_: Falsche cURL-Kopfzeilen, die dazu führen, dass `newrelic:create:deploy-marker` nicht funktionieren
+   * _Fehlerbehebung_: Das System formatiert jetzt cURL-Kopfzeilen korrekt, sodass der `newrelic:create:deploy-marker`-Befehl erfolgreich eine Bereitstellungsmarkierung in New Relic erstellen kann. Zuvor verhinderten falsche cURL-Kopfzeilen die Erstellung einer Bereitstellungsmarkierung in New Relic.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/37641>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3146_: Bei GTM fehlt das addToCart-Ereignis in dataLayer für ein konfigurierbares Produkt mit benutzerdefinierter Option
-   * _Korrekturhinweis_: Zuvor wurde der addToCart-Ereignis für konfigurierbare Produkte nicht ausgelöst. Jetzt wird die Ereignis ordnungsgemäß der GTM-dataLayer-Variable hinzugefügt.
-* _ACP2E-3183_: NewRelic Browser-Überwachung des inlineJS-Skripts verursacht CSP-Fehler
-   * _Fix-Hinweis_: NewRelic-Browser-Monitoring-Skripte werden jetzt vom Applikation anstelle des APM-Agenten injiziert, um die Einhaltung der CSP (Content Security Policy) zu gewährleisten. Bisher waren vom APM-Agenten injizierte NewRelic Browser Monitoring-Skripte nicht CSP-konform und führten dazu, dass die Skripte nicht ausgeführt wurden.
+   * _Fehlerbehebung_: Zuvor wurde das Ereignis „addToCart“ für konfigurierbare Produkte nicht ausgelöst. Jetzt wird das Ereignis ordnungsgemäß zur Datenschichtvariablen GTM hinzugefügt.
+* _ACP2E-3183_: Die inlineJS-Skriptüberwachung von NewRelic verursacht CSP-Fehler
+   * _Fehlerbehebung_: NewRelic-Browser-Überwachungsskripte werden jetzt von der Anwendung anstelle des APM-Agenten eingefügt, um die Einhaltung von CSP (Content Security Policy) zu gewährleisten. Zuvor waren die vom APM-Agent injizierten NewRelic-Browser-Überwachungsskripte nicht konform mit CSP und haben dazu geführt, dass die Skripte nicht ausgeführt wurden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/66dea0de>
 * _ACP2E-3189_: Abfragen in die Tabelle sales_bestsellers_aggregated_daily einfügen werden im Projekt mit großem Auftragsvolumen langsam
    * _Fehlerbehebung_: Zuvor dauerte es sehr lange, bis der aggregierte Tagesbericht für Bestseller für eine große Anzahl von aufgegebenen Bestellungen erstellt wurde. Jetzt wird der Bericht rechtzeitig erstellt.
@@ -338,8 +338,8 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
 * _ACP2E-3302_: [Cloud] Falsche Berechnungen im Couponnutzungsbericht
    * _Fehlerbehebung_: Die Umsatzsumme im Couponberichtsraster wird jetzt korrekt berechnet, indem sowohl der „Rabattsteuerausgleichsbetrag“ als auch der „Versandrabatt-Steuerausgleichsbetrag“ einbezogen werden. Zuvor fehlten diese Beträge in der Berechnung, was zu Diskrepanzen zwischen der Verkaufssumme und den Auftragsdaten führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d75cff27>
-* _ACP2E-3339_: Probleme mit freigegebenem &quot;&lt;project_id>/var/tmp&quot;&lt;/project_id>
-   * _Korrekturhinweis_: Analytics temporäre DataExport-Dateien verwenden das sys-tmp-Verzeichnis, das für häufige Zugriffe und Änderungen besser geeignet ist. Um Konflikte zu vermeiden, falls mehrere Instanzen auf demselben Server ausgeführt werden, wurde der tmp-Pfad aktualisiert, sodass er die eindeutige ID einer Instanz verwendet
+* _ACP2E-3339_: Probleme mit freigegebenen &quot;&lt;project_id>/var/tmp“
+   * _Hinweis:_ temporären Analytics-Datenexport-Dateien wird das sys-tmp-Verzeichnis verwendet, das für häufigen Zugriff und Änderungen besser geeignet ist. Um Konflikte zu vermeiden, falls mehrere Instanzen auf demselben Server ausgeführt werden, wurde der tmp-Pfad aktualisiert, sodass er die eindeutige ID einer Instanz verwendet
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/a4cf5e62>
 
 ### Analytics/Reporting, B2B
@@ -404,10 +404,10 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
    * _Fehlerbehebung_: Das System rendert jetzt lokale Zahlungsmethoden (LPM) beim ersten Laden korrekt, auch wenn die Versand- und Rechnungsadressen eines angemeldeten Kunden nicht übereinstimmen, was einen reibungslosen Checkout-Prozess gewährleistet. Zuvor konnte LPM aufgrund einer Diskrepanz zwischen den Versand- und Rechnungsadressen eines Kunden nicht gerendert werden, was zu potenziellen Störungen während des Checkouts führen konnte.
 * _BUNDLE-3368_: Konfigurierbar mit Virtual as Child Product
    * _Fehlerbehebung_: Das System ermöglicht jetzt Express-Zahlungsmethoden für konfigurierbare Produkte mit einem virtuellen untergeordneten Produkt, wodurch ein reibungsloser Checkout-Prozess gewährleistet ist. Zuvor waren keine Express-Zahlungsmethoden verfügbar, wenn ein konfigurierbares Produkt mit einem virtuellen untergeordneten Produkt zum Warenkorb hinzugefügt wurde.
-* _BUNDLE-3369_: Fehler bei der CVV-Verifizierung
-* _BUNDLE-3370_: Sprung über den Konto Bereich Probleme 247
-   * _Fixhinweis_: Das System ermöglicht es Kunden nun, neue Karte zu speichern oder Konto Informationen über mehrere Websites hinweg zu PayPal, ohne dass Autorisierung Fehler auftreten. Bisher konnten Kunden neue Zahlungsmethoden nicht auf verschiedenen Websites speichern und erhielten eine Autorisierung Fehlermeldung.
-* _BUNDLE-3371_: Versand an eine Adresse aus einem anderen Land
+* _BUNDLE-3369_: Fehler bei CVV-Überprüfung fehlgeschlagen
+* _BUNDLE-3370_: Vaulting Über den Kontobereich Anfragen 247
+   * _Fix Hinweis_: Das System ermöglicht es Kunden jetzt, neue Karten- oder PayPal-Kontoinformationen auf mehreren Websites zu speichern, ohne auf Autorisierungsfehler zu stoßen. Zuvor konnten Kunden keine neuen Zahlungsmethoden auf verschiedenen Websites speichern und erhielten eine Autorisierungsfehlermeldung.
+* _BUNDLE-3371_: Versand an eine Adresse eines anderen Landes
    * _Fix Hinweis_: Das System ermöglicht jetzt die fehlerfreie Verarbeitung von Transaktionen beim Versand an eine Adresse aus einem anderen Land und gewährleistet so einen reibungslosen Checkout-Prozess. Zuvor führte der Versuch, eine Adresse aus einem anderen Land zu versenden, zu Konsolenfehlern, obwohl keine sichtbaren Fehler im Frontend vorhanden waren.
 * _BUNDLE-3372_: Kreditkarte - Abreißfunktion
    * _Fehlerbehebung_: Das System verarbeitet jetzt die Zerlegung von Braintree PayPal-Komponenten korrekt, wenn ein Kunde von der Zahlungsseite zur Versandseite zurückkehrt, um Fehler zu vermeiden und sicherzustellen, dass die PayPal Express-Schaltflächen korrekt dargestellt werden. Zuvor führte die Rückkehr von der Zahlungsseite zur Versandseite manchmal zu einem Fehler, wenn versucht wurde, die Braintree-PayPal-Komponenten zu zerlegen.
@@ -460,15 +460,15 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
    * _Fehlerbehebung_: Das System unterstützt jetzt die HTML-Formatierung im Checkbox „Geschäftsbedingungen“ auf der Storefront, was eine bessere Anpassung und Lesbarkeit ermöglicht. Zuvor wurde der Checkbox-Text im Nur-Text-Format angezeigt, wobei alle verwendeten HTML-Tags ignoriert wurden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 * _AC-12541_: Die für einen angemeldeten Benutzer erstellte Warenkorb-Preisregel wird fälschlicherweise für einen nicht angemeldeten Benutzer angewendet
-   * _Korrekturhinweis_: Das System entfernt nun korrekt den Warenkorb Preis, der für angemeldete Benutzer Regel, wenn diese aufgrund Cookie Gültigkeit automatisch abgemeldet werden, um sicherzustellen, dass der Rabatt nicht auf nicht angemeldete Benutzer angewendet wird. Zuvor wurde der Warenkorb Preis Regel immer noch Linear angewendet, wenn der User abgemeldet wurde, was dazu führte, dass ein falscher Rabatt auf nicht angemeldete Benutzer angewendet wurde.
+   * _Fehlerbehebung_: Die Warenkorbpreisregel für angemeldete Benutzer wird jetzt korrekt entfernt, wenn sie aufgrund des Cookie-Ablaufs automatisch abgemeldet werden. So wird sichergestellt, dass der Rabatt nicht auf nicht angemeldete Benutzer angewendet wird. Zuvor wurde die Regel zum Warenkorbpreis auch dann angewendet, wenn sich der Benutzer abgemeldet hatte, was dazu führte, dass auf nicht angemeldete Benutzer ein falscher Rabatt angewendet wurde.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38944>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/7d5e3906>
-* _AC-13302_: [Problem-FUNKTION] [] Leistungsoptimierung großer Warenkörbe durch Vermeidung...
-   * _Fixhinweis_: Das System optimiert jetzt die Leistung für große Warenkörbe, indem es Duplikat getActions-Aufrufe verhindert, wodurch die Geschwindigkeit und Effizienz Warenkorb Vorgängen verbessert wird. Zuvor wurde für ein Warenkorb mit mehreren Elementen die Funktion getActions mehrmals aufgerufen, wodurch die Systemleistung verlangsamt wurde.
+* _AC-13302_: [Problem] [FEATURE] Leistungsoptimierung großer Warenkörbe durch…
+   * _Fehlerbehebung_: Das System optimiert jetzt die Leistung für große Warenkörbe, indem doppelte getActions-Aufrufe verhindert werden, was die Geschwindigkeit und Effizienz von Warenkorbvorgängen erhöht. Zuvor wurde bei einem Warenkorb mit mehreren Artikeln die getActions-Funktion mehrmals aufgerufen, was die Systemleistung verlangsamte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39292>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39290>
-* _AC-13797_: Geschenk-Registrierkarte Produkt wird nicht richtig angezeigt
-* _AC-13841_: Geschenke-Registrierkarte Produkt wird nicht richtig angezeigt
+* _AC-13797_: Geschenk-Registrierung Produkt wird nicht richtig angezeigt
+* _AC-13841_: Geschenk-Registrierung Produkt wird nicht richtig angezeigt
 * _AC-8103_: Umsatzsteuer in der Adressausgabe
    * _Fehlerbehebung_: Das System ermöglicht jetzt die Übersetzung des Textes „VAT“, „T“, „F“ in den Adressen-Renderern, sodass Benutzer diese Begriffe in die spezifische Sprache des Geschäfts übersetzen können. Zuvor waren diese Begriffe nicht übersetzbar, was die Benutzer dazu zwang, eine Problemumgehung anzuwenden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/36942>
@@ -488,14 +488,14 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
 * _ACP2E-2646_: [Cloud] Verkaufsregel nicht auf erste Bestellung von Multi Shipping angewendet
    * _Fehlerbehebung_: Nach der Fehlerbehebung wird der Rabatt für jede Bestellung desselben Multi-Shipping-Angebots korrekt angezeigt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/f89a447e>
-* _ACP2E-2664_: [Parallele Anforderungen für hinzufügen Cloud-Produktion] zum gleichen Produkt im Warenkorb Ergebnis in zwei separaten Artikeln in der Warenkorb-Rest-API
-   * _Korrekturhinweis_: Das System verarbeitet jetzt mehrere parallele Anfragen, um dasselbe Produkt zum Warenkorb hinzuzufügen, korrekt in einer einzigen Zeileneintrag, wodurch die Erstellung separater Werbebuchungen für dieselbe Produktnummer verhindert wird. Bisher führten parallele Anfragen zum Hinzufügen desselben Produkts zum Warenkorb über die REST-API zu mehreren Werbebuchungen für dieselbe Produktnummer.
+* _ACP2E-2664_: [Cloud]-Produktionsanfragen zum Hinzufügen desselben Produkts zum Warenkorb führen zu zwei separaten Elementen in der Warenkorb-REST-API
+   * _Fehlerbehebung_: Das System verarbeitet jetzt korrekt mehrere parallele Anfragen, um dasselbe Produkt zum Warenkorb in einem einzigen Zeileneintrag hinzuzufügen, wodurch die Erstellung separater Zeileneinträge für dieselbe SKU verhindert wird. Zuvor führte das parallele Anfordern desselben Produkts über die REST-API zum Warenkorb, zu mehreren Zeileneinträgen für dieselbe SKU.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/f89a447e>
-* _ACP2E-2676_: Problem beim Bestellen über die Geschenkeliste Magento 2.4.4 Unternehmen/Handel
-   * _Korrekturhinweis_: Das Problem, das den erfolgreichen Kauf eines Produkts aus einer Geschenkliste verhinderte, wurde behoben, sodass Bestellungen aufgegeben und die Geschenkliste entsprechend aktualisiert werden konnte. Zuvor trat beim Versuch, eine bestellen aus einer Geschenkliste zu platzieren, ein Fehler auf, der den Abschluss des Kaufs verhinderte.
+* _ACP2E-2676_: Problem mit der Bestellung bei der Gift Registry Magento 2.4.4 Enterprise/Commerce
+   * _Fehlerbehebung_: Das Problem, das den erfolgreichen Kauf eines Produkts aus einer Geschenkregistrierung verhindert, wurde behoben, sodass Bestellungen aufgegeben und die Geschenkregistrierung entsprechend aktualisiert werden kann. Zuvor ist beim Versuch, eine Bestellung über eine Geschenkregistrierung aufzugeben, ein Fehler aufgetreten, der den Abschluss des Kaufs verhindert hat.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/35432>
-* _ACP2E-2704_: Die Cookie kann nicht gesendet werden. Größe von &#39;mage-messages&#39; beim Versuch, die Anordnung neu zu ordnen
-   * _Korrekturhinweis_: Der Neubestellvorgang generiert jetzt keine eigenen Fehler. Dies beruht auf der Auflistung der in den Warenkorb integrierten Artikelprüfungen.
+* _ACP2E-2704_: Das Cookie kann nicht gesendet werden. Größe von „image-messages“ beim Versuch, eine Neuanordnung vorzunehmen
+   * _Hinweis beheben_: Der Neuanordnungsprozess erzeugt jetzt keine eigenen Fehler. Dies beruht auf der Auflistung der in den Warenkorb integrierten Artikelprüfungen.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ba25af8a>
 * _ACP2E-2798_: Die Standard-Versandadresse ist beim Checkout nicht ausgewählt
    * _Fehlerbehebung_: Im Kontext der aktivierten Adresssuche wird jetzt die standardmäßige Versandadresse ausgewählt.
@@ -535,7 +535,7 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
    * _Fehlerbehebung_: Hinzugefügte Funktion „Merken Sie sich mich bei der Kundenanmeldung“ zum Authentifizierungs-Popup und zur Checkout-Anmeldung.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/344fce23>
 * _ACP2E-3488_: Vorhandene Anführungsdaten werden nicht aktualisiert/nicht angezeigt. Erstellen Sie stattdessen einen neuen Anführungsdatensatz, wenn Trigger_recollect = 1 ist.
-   * _Korrekturhinweis_: Die Warenkorb Artikel des Kunden verschwinden nicht mehr, wenn ein Produkt gelöscht wird, nachdem es der Warenkorb hinzugefügt wurde.
+   * _Fehlerbehebung_: Die Artikel im Warenkorb des Kunden verschwinden nicht mehr, da ein Produkt gelöscht wurde, nachdem es zum Warenkorb hinzugefügt wurde.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/1984c61c>
 * _ACP2E-3495_: Beim Kauf eines Geschenk-Registrierungselements sieht der Kunde Elemente, die nicht in seiner Registrierung enthalten sind
    * _Fehlerbehebung_: Das Update der Geschenkregistrierung enthält keine Elemente mehr, die nicht zur Geschenkregistrierung gehören.
@@ -560,10 +560,10 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
    * _Fehlerbehebung_: Die Datumsauswahl wird jetzt für alle Datumsfelder korrekt angezeigt, wenn ein Produkt mit mehreren anpassbaren Datumsoptionen im Erstellungsprozess von Admin-Aufträgen konfiguriert wird. Zuvor wurde die Datumsauswahl nur für das erste Datumsfeld angezeigt, sodass die verbleibenden Felder keine Datumsauswahl aufweisen.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/b21e5d91>
 
-### Warenkorb &amp; Checkout, Versand
+### Warenkorb und Checkout, Versand
 
-* _AC-12119_: Sofortkauf &quot;billigster Versand&quot; für konfigurierbare Produkte funktioniert nicht
-   * _Korrekturhinweis_: Die Funktion Sofortkauf hat fälschlicherweise die teurere In-Store-Lieferung Option für konfigurierbare Produkte anstelle der günstigsten Flatrate-Methode ausgewählt. Diese Fehlerbehebung stellt sicher, dass die richtige Versandart auf der Grundlage des tatsächlichen Preises ausgewählt wird.&quot;
+* _AC-12119_: Sofortkauf „Günstigster Versand“ für konfigurierbare Produkte defekt
+   * _Fehlerbehebung_: Mit der Funktion Instant Purchase wurde fälschlicherweise die teurere Versandoption im Geschäft für konfigurierbare Produkte anstelle der günstigsten Flatrate-Methode ausgewählt. Durch diese Fehlerbehebung wird sichergestellt, dass die richtige Versandmethode auf der Grundlage des tatsächlichen Preises ausgewählt wird.“
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38811>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38819>, <https://github.com/magento/magento2/commit/29fe9097>
 
@@ -609,28 +609,28 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/32322>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/31264>
 * _AC-13596_: Die erweiterte Katalogsuche mit leeren Daten wird in die Verzweigung für Suchergebnisse [.2.4.dev verschoben]
-   * _Korrekturhinweis_: Das System behält Benutzer jetzt korrekt auf dem Erweitert Search Seite und zeigt eine Fehlermeldung an, wenn sie versuchen, eine suchen durchzuführen, ohne Daten einzugeben. Bisher Redirect Benutzer beim Ausführen eines leeren suchen zum Katalog Erweitert Search Seite mit einer Meldung, in der sie aufgefordert wurden, ihre suchen zu ändern.
+   * _Fehlerbehebung_: Das System speichert Benutzer jetzt korrekt auf der Seite „Erweiterte Suche“ und zeigt eine Fehlermeldung an, wenn sie versuchen, eine Suche durchzuführen, ohne Daten einzugeben. Zuvor wurden Benutzer bei einer leeren Suche zur Seite für die erweiterte Katalogsuche weitergeleitet, wobei eine Meldung angezeigt wurde, die sie aufforderte, ihre Suche zu ändern.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/6cfb9b6b>
 * _AC-13622_: [Problem] Produktlayout basierend auf attribute_set
    * _Fehlerbehebung_: Das System ermöglicht jetzt die Anpassung des Produkt-Layouts auf der Grundlage des Attributsatzes und bietet so eine praktischere und effizientere Möglichkeit, die Produktanzeige im Frontend-Store zu verwalten. Zuvor konnte das Layout nur nach SKU oder Produktarten angepasst werden, was für viele Produkte oder bestimmte Artikel nicht immer praktisch war.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38790>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/36244>
 * _AC-6738_: Fehlender eindeutiger Schlüssel in der Tabelle eav_attribute_option_value
-   * _Korrekturhinweis_: Das System enthält jetzt einen eindeutigen Schlüssel für die Spalten &#39;option_id&#39; und &#39;Geschäft_id&#39; in der Tabelle &#39;eav_attribute_option_value&#39;, wodurch verhindert wird, dass eine Option mehrere Werte für denselben Geschäft Ansicht hat. Bisher konnte fehlerhafter Code dazu führen, dass eine Option mehrere Werte für dieselbe Geschäft Ansicht hatte, was zu Problemen bei der Bearbeitung von Produkten oder Attributen führte.
+   * _Fehlerbehebung_: Das System enthält jetzt einen eindeutigen Schlüssel für die Spalten „option_id“ und „store_id“ in der Tabelle „eav_attribute_option_value“, was verhindert, dass eine Option mehrere Werte für dieselbe Shop-Ansicht hat. Zuvor konnte ein fehlerhafter Code dazu führen, dass eine Option mehrere Werte für dieselbe Shop-Ansicht hatte, was Probleme bei der Bearbeitung von Produkten oder Attributen verursachte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/24718>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/28796>
 * _AC-8297_: [Problem] Verwenden Sie die Sichtbarkeitsklasse für den Produkt-Indexer der Kategorie anstelle hartcodierter Werte
-   * _Fehlerbehebung_: Das System verwendet jetzt die Sichtbarkeitsklasse für den Produkt-Indexer der Kategorie anstelle hartcodierter Werte, was die Modularität verbessert. Bisher wurden hartcodierte Werte im Kategorie Produktindexer verwendet, was die Flexibilität und Anpassungsfähigkeit einschränkte.
+   * _Fehlerbehebung_: Das System verwendet jetzt die Sichtbarkeitsklasse für den Produkt-Indexer der Kategorie anstelle hartcodierter Werte, was die Modularität verbessert. Zuvor wurden im Produkt-Indexer der Kategorie hartcodierte Werte verwendet, was die Flexibilität und Anpassungsfähigkeit einschränkte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/37200>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/37199>
-* _AC-9375_: Währung-Code ändert sich im Produkt-Widget nicht Neu
-   * _Fixhinweis_: Das System aktualisiert jetzt den Währungscode im Neu Produkt-Widget korrekt, wenn die Währung im Frontend geändert wird, um eine konsistente Währungsanzeige auf der gesamten Website zu gewährleisten. Bisher hatte die Änderung der Währung im Frontend keinen Einfluss auf den Währungscode, der im Neu Produkt-Widget angezeigt wurde.
+* _AC-9375_: Der Währungs-Code ändert sich nicht im Widget „Neues Produkt“
+   * _Fehlerbehebung_: Der Währungs-Code im Widget „Neues Produkt“ wird jetzt korrekt aktualisiert, wenn die Währung im Frontend geändert wird. Dies gewährleistet die Konsistenz der Währungsanzeige auf der Website. Zuvor hatte das Ändern der Währung im Frontend keine Auswirkungen auf den Währungs-Code, der im Widget Neues Produkt angezeigt wird.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/37898>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/37899>
-* _ACP2E-2224_: Standard Preis wird im PLP für konfigurierbares Produkt nicht angezeigt
-   * _Korrekturhinweis_: Standard Preis wird jetzt auf Produktlistenseiten für konfigurierbare Produkte angezeigt, die untergeordnete Produkte mit Sonderpreis haben.
+* _ACP2E-2224_: Regulärer Preis wird nicht auf PLP für konfigurierbares Produkt angezeigt
+   * _Fehlerbehebung_: Der reguläre Preis wird jetzt auf Produktlistenseiten für konfigurierbare Produkte angezeigt, die untergeordnete Produkte mit Sonderpreis enthalten.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/a4fbf702>
-* _ACP2E-2478_: Stock Informationen werden im Visual Merchandising-Raster nicht richtig angezeigt
+* _ACP2E-2478_: Stock-Informationen werden im visuellen Merchandising-Raster nicht korrekt angezeigt
    * _Hinweis korrigieren_: Der Lagerbestand wird jetzt entsprechend dem ausgewählten Store angezeigt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/inventory/commit/bdbf97ea>
 * _ACP2E-2621_: Widget-Inhalte werden auf der CMS-Seite nicht aktualisiert
@@ -642,7 +642,7 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
 * _ACP2E-2652_: [On-Premise]-Neuindizierungsprozess ist beim Erstellen von Katalogpreisregeln ineffizient
    * _Fix Hinweis_: Durch das Speichern einer Katalogpreisregel werden Indexer nicht ungültig, sondern nur die betroffenen Produkte neu indiziert
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/f89a447e>
-* _ACP2E-2679_: Aktualisierung der Uhrzeit von Datum- und Zeit-Typ-Produktattributen über CSV-Import
+* _ACP2E-2679_: Aktualisieren von Datums- und Uhrzeitattributen des Produkttyps über den CSV-Import
    * _Fix Hinweis_: Jetzt verfügen Datums-/Uhrzeitattribute über einen Zeitanteil in den exportierten Daten. Es ist auch möglich, die Zeit für solche Attribute mithilfe des Imports zu aktualisieren. Auch wenn „Einschließungsfelder“ aktiviert ist, werden Attributwerte in der Spalte „additional_attributes“ in doppelte Anführungszeichen gesetzt.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38306>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ea79f7dd>
@@ -671,17 +671,17 @@ Zuvor führte das Hinzufügen des Produkts zum Warenkorb zu dem Fehler „Keine 
    * _Fehlerbehebung_: Wenn wir zuvor den Einzelspeichermodus für die standardmäßige Store-Ansicht aktiviert haben, wurden die Änderungen nicht in den Umfang auf Website-Ebene migriert. Wenn wir nach dieser Fehlerbehebung den Einzelspeichermodus aktivieren, werden die standardmäßigen speicheransichtsspezifischen Daten mit Website-spezifischen Daten synchronisiert und die möglichen Konflikte für Produkte und Kategorien werden aufgelöst.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/c8931218>
 * _ACP2E-2857_: „Standard-Sortieren nach“ kann in einer Kategorie nicht mit der REST-API festgelegt werden
-   * _Fixhinweis_: Korrektes Aktualisieren default_sort_by auf einem Kategorie über REST / SOAP APi Anfrage
+   * _Hinweis korrigieren_: Aktualisieren Sie default_sort_by korrekt für eine Kategorie über eine REST-/SOAP-API-Anfrage.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/57a32313>
 * _ACP2E-2871_: [Cloud] Der Händler hat Probleme mit der Anzahl der Wunschlisten
    * _Fehlerbehebung_: Wenn Sie ein Produkt in einem Geschäft zur Wunschliste hinzufügen, erhöht sich die Wunschlistenanzahl in anderen Geschäften, die im selben Browser geöffnet sind, nicht mehr. Wenn beide Stores im selben Browser geladen wurden, stieg die Anzahl der Wunschlisten auch im anderen Store.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/3a7c4d17>
 * _ACP2E-2874_: Kategorieseite am Frontend zeigt bei Verwendung des Bundle-Produkts leere Slots an
-   * _Fixhinweis_: Bundle-Produkte, die im aktuellen Geschäft Kontext nicht verkäuflich sind, werden nicht mehr indiziert.
+   * _Fehlerbehebung_: Bundle-Produkte, die im aktuellen Store-Kontext nicht verfügbar sind, werden nicht mehr indiziert.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/inventory/commit/bc37ec76>
-* _ACP2E-2888_: [KLARSTELLUNG] Bundle-Produkt- Sequenz Tabellenprobleme
-   * _Fixhinweis_: Die Datensätze in den Tabellen Sequenz Bundle-Produkt (Sequenz_product_Paket_option, Sequenz_product_Paket_selection) werden jetzt entfernt, wenn Bundle-Produkt gelöscht wird oder Bundle-Produktoptionen gelöscht werden.
-Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht entfernt.
+* _ACP2E-2888_: [KLARSTELLUNG] Probleme mit der Produktreihenfolge von Paketen
+   * _Fehlerbehebung_: Die Datensätze in den Bundle-Produktsequenztabellen (sequence_product_bundle_option, sequence_product_bundle_selection) werden jetzt entfernt, wenn Bundle-Produkte gelöscht oder Bundle-Produktoptionen gelöscht werden.
+Zuvor wurden die Datensätze in den Bundle-Produktsequenztabellen nicht entfernt.
 * _ACP2E-2905_: [Cloud] Problem des Zitats in der Architektur mit mehreren Websites
    * _Fehlerbehebung_: Zuvor konnten Multi-Website-Architekturen mit unterschiedlichen Währungen und Kundengruppen Rabatte nicht korrekt auf den Store anwenden. Nachdem diese Fehlerbehebung implementiert wurde, wird die Multi-Website-Architektur mit unterschiedlichen Preisnachlässen für Kundengruppen erfolgreich auf verschiedene Stores angewendet.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38506>
@@ -730,7 +730,7 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _Hinweis beheben_: Die Kategoriestruktur auf der neuen Widget-Seite sollte keine Probleme mehr beim Laden von Kategorie(n) der Stufe 5+ aufweisen. Zuvor fehlten beim Laden des Baums über die Kategorie der Ebene 5 hinaus einige Kategorien.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/148c3ead>
 * _ACP2E-3198_: [Cloud] Zoom- und Bewegungsproblem mit zwei Fingern auf dem echten Mobilgerät
-   * _Fehlerbehebung_: Das System stellt nun auf Mobilgeräten eine konsistente Bildzoom-Funktion sicher und sorgt so für ein reibungsloses und vorhersehbares Benutzererlebnis. Zuvor war die Bildzoomfunktion inkonsistent und zoomte nach einem bestimmten Punkt plötzlich heraus, wenn sie auf einem Mobilgerät angezeigt wurde.
+   * _Fehlerbehebung_: Das System stellt nun auf Mobilgeräten eine konsistente Bildzoom-Funktion sicher und sorgt so für ein reibungsloses und vorhersehbares Benutzererlebnis. Zuvor war die Bildzoom-Funktion inkonsistent und zoomte bei der Ansicht auf einem Mobilgerät nach einem bestimmten Punkt plötzlich heraus.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/1366ae5e>
 * _ACP2E-3282_: Wenn wir die Zuweisung von Produkten zum freigegebenen Katalog aufheben, werden die Produkte auf der Wunschliste nicht gelöscht
    * _Hinweis korrigieren_: Wenn ein Produkt nicht im freigegebenen Katalog verfügbar ist, werden jetzt keine Artikel auf der Wunschliste angezeigt. Zuvor wurde auf der Seite mit der Wunschliste fälschlicherweise die Anzahl „1 Artikel“ angezeigt, auch wenn keine Artikel in der Wunschliste verfügbar waren.
@@ -741,8 +741,8 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
 * _ACP2E-3336_: [Cloud] Übersetzen von Warnhinweis-E-Mails in die falsche Sprache
    * _Fehlerbehebung_: Beim Versand von Stock-/Preis-Warnhinweisen für eine Website mit mehreren Store-Ansichten in verschiedenen Sprachen wird die Sprache für die Store-Ansicht, in der der Warnhinweis erstellt wurde, in der E-Mail verwendet.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/a4cf5e62>, <https://github.com/magento/inventory/commit/9f3e63d1>
-* _ACP2E-3350_: Die Namen von Deaktiviert-Kategorien sind im Kategorie-Baum nicht mehr ausgegraut
-   * _Korrekturhinweis_: Bisher waren deaktivierte Kategorien im Kategorie-Baum nicht ausgegraut. Jetzt werden sie mit einem Graustufeneffekt angezeigt.
+* _ACP2E-3350_: Die Namen von deaktivierten Kategorien sind in der Kategoriestruktur nicht mehr ausgegraut
+   * _Hinweis korrigieren_: Zuvor waren deaktivierte Kategorien in der Kategoriestruktur nicht ausgegraut. Jetzt werden sie mit einem Graustufeneffekt angezeigt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d75cff27>
 * _ACP2E-3410_: Konfigurierbares Formular zum Bearbeiten von Produkten verursacht Zeitüberschreitung und Speichererschöpfung
    * _Fehlerbehebung_: Vor der Fehlerbehebung wurden konfigurierbare Produktvarianten basierend auf allen möglichen Attributoptionenkombinationen erstellt. In Fällen, in denen Attribute viele Optionen hatten, führte dies zu einem langwierigen und ressourcenintensiven Vorgang. Jetzt werden konfigurierbare Produktvarianten basierend auf vorhandenen untergeordneten Produktattributen erstellt. Dies führt zu deutlich weniger Berechnungen - und damit zu einer verbesserten Nutzung von Ressourcen.
@@ -787,14 +787,14 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
 ### Katalog, Framework
 
 * _AC-9111_: Bestellabruf (Sendungen|Creditmemos|Rechnung)Sammlung - Sammlung darf nicht geladen werden
-   * _Fixhinweis_: Das System stellt nun sicher, dass die Kollektionen für Sendungen und Gutschriften beim Abrufen aus einer bestellen nicht vorgeladen werden, sodass zusätzliche Filter oder Aufträge auf diese Kollektionen angewendet werden können. Zuvor wurden diese Sammlungen automatisch geladen, sodass keine weiteren Änderungen vorgenommen werden konnten.
+   * _Fehlerbehebung_: Das System stellt jetzt sicher, dass die Sammlungen für Sendungen und Gutschriften beim Abrufen aus einer Bestellung nicht vorgeladen werden, sodass zusätzliche Filter oder Bestellungen auf diese Sammlungen angewendet werden können. Zuvor wurden diese Sammlungen automatisch geladen, was weitere Änderungen verhinderte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/37561>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/37562>
 * _ACP2E-2949_: [Cloud]Follow-up: Nicht übereinstimmender Datenvergleich bei der Überprüfung, ob Daten Änderungen aufweisen
    * _Hinweis korrigieren_: Zuvor wurde das Speicherobjekt jedes Mal ohne Datenänderungen aufgerufen (für ein beliebiges numerisches Datenfeld wie int/float/double). Das Flag „_hasDataChanges“ wird als „true“ Trigger und die Speicherfunktion wird aufgerufen. Außerdem werden die von der Zeichenfolge gekapselten Gleitkommazahlen nicht geprüft. Nach dieser Korrektur ruft die Speicherfunktion nur noch auf, wenn die Daten geändert werden. Der Datenwert für int/float/double-check mit dem Wert, der an die Funktion übergeben wird, und führt eine strikte Typübereinstimmung durch
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/c8931218>
 
-### Katalog, GraphQL
+### Catalog, GraphQL
 
 * _ACP2E-3090_: Umgang mit Kategoriefiltern in GraphQL: includeDirectChildrenOnly und category_uid
    * _Hinweis korrigieren_: Beim Filtern nach category_uid werden nur die direkt untergeordneten Kategorien abgerufen.
@@ -803,12 +803,12 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _Fehlerbehebung_: Die Sortierung von GraphQL-Produkten nach mehreren Feldern, wenn die Felder in Variablen übergeben werden, funktioniert jetzt erwartungsgemäß.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/8459b17d>
 * _ACP2E-3312_: Stufenpreise geben in Produkten von GraphQL einen falschen Wert zurück (im Vergleich zu Storefront)
-   * _Korrekturhinweis_: Nach dem Fix haben die Staffelpreise des Produkts, die für graphql-Anfragen zurückgegeben werden, den Preis pro einem Artikel.
+   * _Fehlerbehebung_: Nach der Fehlerbehebung haben die für GraphQL-Anfragen zurückgegebenen Stufenpreise des Produkts den Preis pro einem Element.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/1366ae5e>
-* _ACP2E-3385_: [CLOUD] B2B: Kategorie Problem über GraphQL
-   * _Korrekturhinweis_: Nach der Korrektur gibt der graphql-Abfrage Kategorien mit allow Berechtigung Linear zurück, wenn der Root-Kategorie keine Allow Berechtigung hat.
+* _ACP2E-3385_: [CLOUD] B2B: Kategorieproblem über GraphQL
+   * _Fehlerbehebung_: Nach der Fehlerbehebung gibt die GraphQL-Abfrage für Kategorien Kategorien mit der Berechtigung „Zulassen“ zurück, auch wenn die Stammkategorie nicht über die Berechtigung „Zulassen“ verfügt.
 
-### Katalog, Preise, Bereitstellung und Vorschau
+### Katalog, Preise, Staging und Vorschau
 
 * _ACP2E-2672_: [Cloud] Der API-Endpunkt für Sonderpreise gibt einen Fehler zurück, wenn eine große Anzahl von Produkten gleichzeitig aktualisiert wird
    * _Fehlerbehebung_: Jetzt erstellt die Special Price Bulk Update API für jeden Datumsbereich eine einzelne Kampagne anstelle mehrerer geplanter Aktualisierungen für jedes Produkt und jeden Datumsbereich. Außerdem unterstützt es gleichzeitige API-Anfragen für eine schnellere Verarbeitung einer großen Anzahl von SKUs.
@@ -844,10 +844,10 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
 
 ### Katalog, Versand
 
-* _ACP2E-3195_: Lieferadresse leer beim Platzieren einer bestellen für einen Geschenkartikel in der Registrierliste
+* _ACP2E-3195_: Lieferadresse leer bei Bestellung eines Geschenkartikels
    * _Fehlerbehebung_: Zuvor wurde für Geschenk-Registrierungselemente von Gastbenutzern bei der Rückgabe von der E-Mail-Funktion eine leere leere leere Adresse generiert, die für die Bestellung falsch ist. Nachdem dieser Fix angewendet wurde, prüft die Geschenkregistrierung angemeldete Benutzer/Gastbenutzer und zugewiesene Adressen, ob sie vorhanden sind.
 
-### Wolke
+### Cloud
 
 * _ACP2E-_: [Cloud] PHPSESSID ändert jede POST-Anfrage
    * _Fehlerbehebung_: PHPSESSID wird für einen angemeldeten Kunden nicht mehr bei POST-Anfragen im Frontend-Bereich neu generiert, wenn der L2-Redis-Cache aktiviert ist und der Kunde vom Backend aktualisiert wurde
@@ -877,10 +877,10 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39008>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/58e40ceb>
 * _AC-13054_: Meldung „Standardwert wird verwendet“ wird beim Ändern des Designs auf der Design-Konfigurationsseite nicht angezeigt
-   * _Fehlerbehebung_: Das System enthält jetzt eine separate Spalte, um die Meldung „Standardwert verwenden“ je nach ausgewähltem Design auf der Design-Konfigurationsseite anzuzeigen. Dies sorgt für Klarheit und Sichtbarkeit des Status des Standardwerts. Zuvor wurde die Meldung &quot;Wert Standardmäßig verwendet&quot; nicht angezeigt, was zu Verwirrung über den Status des ausgewählten Designs führte.
+   * _Fehlerbehebung_: Das System enthält jetzt eine separate Spalte, um die Meldung „Standardwert verwenden“ je nach ausgewähltem Design auf der Design-Konfigurationsseite anzuzeigen. Dadurch wird Klarheit und Sichtbarkeit des Standardwertstatus sichergestellt. Zuvor wurde die Meldung „Standardwert verwenden“ nicht angezeigt, was zu Verwirrung über den Status des ausgewählten Designs führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/47b448e2>
-* _AC-13569_: [Problem] : Stellt die Abwärtskompatibilität mit TinyMCE-Plugins wieder her (danach...
-   * _Fix-Hinweis_: Das System stellt jetzt die Abwärtskompatibilität mit TinyMCE-Plugins wieder her, sodass innerhalb des Plug-in definierte Funktionen aufgerufen werden können, wenn das Widget von einem anderen Standort aus verwendet wird. Bisher gaben die Plugins aufgrund einer Änderung in der TinyMCE-Version die Widgets nicht als Objekt zurück, was zu einem Fehler führte, wenn versucht wurde, bestimmte Funktionen auf dem Widget-Instanz aufzurufen.
+* _AC-13569_: [Problem] Stellt die Abwärtskompatibilität mit TinyMCE-Plug-ins wieder her (nach…
+   * _Fix Hinweis_: Das System stellt jetzt die Abwärtskompatibilität mit TinyMCE-Plug-ins wieder her, sodass Funktionen, die innerhalb des Plug-ins definiert sind, aufgerufen werden können, wenn das Widget von einem anderen Ort aus verwendet wird. Zuvor gab es aufgrund einer Änderung in der TinyMCE-Version die Plug-ins die Widgets nicht als -Objekt zurück, was zu einem Fehler beim Versuch führte, bestimmte Funktionen auf der Widget-Instanz aufzurufen.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39262>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39258>
 * _AC-9638_: [Problem] Problem beim Hochladen von Dateien im WYSIWYG-Editor auf der Produktseite
@@ -899,13 +899,13 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _Fehlerbehebung_: Wenn Sie eine Bedingung für die Inhaltseinstellungen von PageBuilder-Produkten entfernen, wird keine Ausnahme mehr in den Protokolldateien aufgezeichnet. Zuvor führte das Entfernen einer Bedingung für die Inhaltseinstellungen von PageBuilder-Produkten dazu, dass eine kritische Ausnahme in den Protokollen aufgezeichnet wurde, obwohl dies keine Probleme im Frontend verursachte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2-page-builder/commit/36c0f5df>
 * _ACP2E-2842_: Wechseln zum Einzelspeichermodus - Globale Inhalte werden nicht mehr angezeigt
-   * _Fix-Hinweis_: Das System synchronisiert jetzt Geschäft Ansicht Design-Konfigurationen mit Website-Design-Konfigurationen, wenn der Single-Geschäft-Modus aktiviert wird, um sicherzustellen, dass Inhalte Updates im Frontend sichtbar sind. Bisher verhinderte der Wechsel zum Einzelmodus, dass Geschäft Aktualisierungen Inhalte in der Storefront angezeigt wurden.
+   * _Fehlerbehebung_: Das System synchronisiert jetzt Design-Konfigurationen für Store-Ansichten mit Website-Design-Konfigurationen, wenn es den Single-Store-Modus aktiviert, um sicherzustellen, dass Inhaltsaktualisierungen im Frontend sichtbar sind. Zuvor wurde durch den Wechsel zum Einzelspeichermodus verhindert, dass Inhaltsaktualisierungen in der Storefront widergespiegelt werden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/7e0e5582>
-* _ACP2E-2903_: Page Builder ersetzt das Bild beim Versuch, verknüpfen und andere Bedienungsstörungen hinzuzufügen.
-   * _Fix-Hinweis_: Wenn Sie jetzt auf ein Bild, Links im WYSIWYG-Bearbeiter in Page Builder Textelement klicken, werden die richtigen Daten verknüpfen Konfigurationsdialog in das Bild geladen. Auch das Hinzufügen einer verknüpfen zu einem Bild im Bearbeiter funktioniert jetzt fehlerfrei. Zuvor wurde das Bild durch einen verknüpfen ersetzt.
+* _ACP2E-2903_: Page Builder ersetzt das Bild, wenn versucht wird, Link- und andere Nutzungsfehler hinzuzufügen.
+   * _Fehlerbehebung_: Wenn Sie jetzt auf ein Bild klicken, werden Links im WYSIWYG-Editor im Textelement von Page Builder ordnungsgemäß in das Bild geladen, und das Dialogfeld für die Link-Konfiguration wird angezeigt. Auch das Hinzufügen eines Links zu einem Bild im Editor funktioniert jetzt ordnungsgemäß. Zuvor wurde das Bild durch einen Link ersetzt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2-page-builder/commit/4d5db10a>
-* _ACP2E-2970_: Old Medien Gallery kann keine Bilder rendern, wenn ein 0-Byte-Bild im Verzeichnis abgelegt wird
-   * _Korrekturhinweis_: Das System verarbeitet jetzt 0-Byte-Bilder in der Medien-Galerie, ohne Funktionen zu unterbrechen, sodass andere Bilder im Verzeichnis wie erwartet angezeigt und ausgewählt werden können. Bisher verhinderte das Vorhandensein eines 0-Byte-Bildes im Medien Katalog, dass alle Bilder im Verzeichnis angezeigt oder ausgewählt wurden.
+* _ACP2E-2970_: Die alte Mediensammlung kann keine Bilder rendern, wenn ein 0-Byte-Bild im Verzeichnis platziert wird
+   * _Fehlerbehebung_: Das System verarbeitet jetzt 0-Byte-Bilder in der Mediensammlung, ohne die Funktionalität zu beeinträchtigen, sodass andere Bilder im Verzeichnis wie erwartet angezeigt und ausgewählt werden können. Zuvor verhinderte das Vorhandensein eines 0-Byte-Bildes in der Mediensammlung, dass alle Bilder im Verzeichnis angezeigt oder ausgewählt wurden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/35b1b1da>
 * _ACP2E-3064_: Fehler von Page Builder beim Bearbeiten des CMS-Blocks
    * _Fehlerbehebung_: Das System speichert jetzt mit Page Builder korrekt im Administratorbereich vorgenommene Änderungen, ohne den Fehler „Page Builder wurde 5 Sekunden lang gerendert, ohne Sperren freizugeben.“ In der Browser-Konsole. Zuvor trat dieser Fehler beim Versuch auf, Änderungen zu speichern, wodurch die erfolgreiche Aktualisierung des Inhalts verhindert wurde.
@@ -972,18 +972,18 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _Fehlerbehebung_: Durch das Löschen eines Kunden werden nun alle Browser-Sitzungsdaten aus der Storefront für angemeldete und gelöschte Kunden wie erwartet gelöscht. Der Käufer kann weiterhin einkaufen, und sein Browser behandelt seine Sitzung als Gastsitzung. Wenn das Kundenkonto eines angemeldeten Käufers aus dem Admin gelöscht wurde, gab es zuvor im Browser des Käufers JavaScript-Fehler.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/7d5e3906>
 
-### Fachwerk
+### Framework
 
-* _AC-10037_: [Frage]nicht verwendete Typkonfiguration in `app/code/Magento/Translation/etc/di.xml`
-   * _Korrekturhinweis_: Das System entfernt jetzt nicht verwendete Abhängigkeiten in der Konfiguration und verbessert so die allgemeine Sauberkeit und Effizienz des Codes. Zuvor gab es nicht genutzte Abhängigkeiten in der Konfiguration, die zu keiner Funktionen beigetragen haben.
+* _AC-10037_: [Question]Unused Type configuration in `app/code/Magento/Translation/etc/di.xml`
+   * _Fehlerbehebung_: Das System entfernt jetzt nicht verwendete Abhängigkeiten in der Konfiguration, was die Code-Sauberkeit und -Effizienz insgesamt verbessert. Zuvor gab es in der Konfiguration nicht verwendete Abhängigkeiten, die zu keiner Funktion beitrugen.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38030>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38064>
-* _AC-10654_: Frage/Problem zum V1/Kunden/Kennwort-Endpunkt
-   * _Korrekturhinweis_: Das System hält sich nun bei der Verarbeitung Kennwort Änderungsanforderungen über die API an die in der Verwaltungsoberfläche festgelegten Einschränkungen, wodurch ein potenzieller Missbrauch der Kennwort-Reset-Funktion verhindert wird. Zuvor konnte die API Passwortänderungsanfragen außerhalb der in der Verwaltungs-Benutzeroberfläche definierten Regeln verarbeiten, was möglicherweise einen konstanten Stream von Zurücksetzungs-E-Mails ermöglichte, wenn gültige E-Mails bekannt waren.
+* _AC-10654_: Frage/Problem mit V1/customers/password-Endpunkt
+   * _Fehlerbehebung_: Bei der Verarbeitung von Passwortänderungsanfragen über die API hält sich das System jetzt an die in der Verwaltungs-Benutzeroberfläche festgelegten Einschränkungen, um einen potenziellen Missbrauch der Passwortrücksetzfunktion zu verhindern. Zuvor konnte die API Passwortänderungsanfragen außerhalb der in der Verwaltungs-Benutzeroberfläche definierten Regeln verarbeiten, was möglicherweise einen konstanten Stream von Zurücksetzungs-E-Mails ermöglichte, wenn gültige E-Mails bekannt waren.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38238>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-10738_: Die Lackkonfiguration schließt nicht alle Marketing-Parameter aus
-   * _Korrekturhinweis_: Das System schließt jetzt alle gängigen Marketing Parameter in der Lackkonfiguration korrekt aus, um eine genaue Tracking und Analyse zu gewährleisten. Zuvor wurden bestimmte Marketing-Parameter wie „gad_source“, „srsltid“ und „msclpid“ nicht ausgeschlossen, was zu möglichen Ungenauigkeiten bei der Datenerfassung führen kann.
+   * _Fehlerbehebung_: Das System schließt jetzt alle gängigen Marketing-Parameter in der Lackkonfiguration korrekt aus, um ein genaues Tracking und Analysen zu gewährleisten. Zuvor wurden bestimmte Marketing-Parameter wie „gad_source“, „srsltid“ und „msclpid“ nicht ausgeschlossen, was zu möglichen Ungenauigkeiten bei der Datenerfassung führen kann.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38298>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39188>
 * _AC-10838_: Indizierungsprozess für Katalogsuchindex-Fehler
@@ -1023,10 +1023,10 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38533>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/36543>, <https://github.com/magento/magento2/commit/b34c0a75>
 * _AC-11696_: ChangelogBatchWalker funktioniert nicht in mehreren Threads
-   * _Hinweis beheben_: Das System unterstützt jetzt Process Fork für die MView-Indizierung, wodurch Fehler bei der Indexerausführung bei der Arbeit mit mehreren Threads verhindert werden. Zuvor führte das Ausführen von ChangelogBatchWalker in mehreren Threads Lead zum Löschen von Tabellen, die von anderen Threads verwendet wurden, was zu einem Fehler bei der Indexausführung führte.
+   * _Hinweis beheben_: Das System unterstützt jetzt Process Fork für die MView-Indizierung, wodurch Fehler bei der Indexerausführung bei der Arbeit mit mehreren Threads verhindert werden. Zuvor führte das Ausführen von ChangelogBatchWalker auf mehreren Threads zum Löschen von Tabellen, die von anderen Threads verwendet wurden, was einen Fehler während der Indexerausführung verursachte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38246>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38248>
-* _AC-11781_: [Problem] Umbenennen fälschlicherweise Variable genannt
+* _AC-11781_: [Problem] Umbenennen einer falsch benannten Variablen
    * _Fehlerbehebung_: Das System benennt nun die Variable, die den Betrag an Geld enthält, der noch zurückerstattet werden kann, korrekt, um Verwirrung beim Debugging zu vermeiden. Zuvor wurde diese Variable fälschlicherweise als totalRefund bezeichnet, was zu Missverständnissen für Entwickler führen konnte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38609>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/36205>
@@ -1035,7 +1035,7 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38500>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/30070>
 * _AC-11819_: Der integrierte FPC-Cache ist in Version 2.4.7 für einige Konfigurationen fehlerhaft
-   * _Fixhinweis_: Das System speichert Seiten jetzt korrekt zwischen, wenn der Parameter MAGE_RUN_CODE gesetzt ist, um eine optimale Leistung zu gewährleisten. Bisher wurden Seiten unter diesen Bedingungen nicht zwischengespeichert, was zu potenziellen Leistungsproblemen führte.
+   * _Fehlerbehebung_: Das System speichert jetzt korrekt Seiten zwischen, wenn der Parameter MAGE_RUN_CODE festgelegt ist, was eine optimale Leistung gewährleistet. Zuvor wurden Seiten unter diesen Bedingungen nicht zwischengespeichert, was zu potenziellen Leistungsproblemen führte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38626>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38646>, <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-11829_: [Problem] Behebung von Inkonsistenzen bei der Ausnahmebehandlung zwischen Entwickler- und Produktionsmodus
@@ -1049,7 +1049,7 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
 * _AC-11874_: Die Abwärtskompatibilität wurde für die Klasse Magento\Catalog\Model\ProductRepository nicht mehr unterstützt
    * _Fehlerbehebung_: Die ProductRepository-Klasse behält jetzt die Abwärtskompatibilität bei, indem sie die Initialisierungs-Helper-Klasse als zweiten Parameter wiederherstellt und sicherstellt, dass Module, die von dieser Klasse erweitert werden, erwartungsgemäß funktionieren. Zuvor führte das Entfernen des Initialization Helper aus dem Konstruktor in der ProductRepository-Klasse zu einem Verlust der Abwärtskompatibilität, was Benutzer zwang, eine Problemumgehung zu verwenden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38669>
-* _AC-11905_: [Problem] Statisch Inhalte Bereitstellung - Typfehler
+* _AC-11905_: [Problem] Statische Inhaltsbereitstellung - Typfehler
    * _Fehlerbehebung_: Das System verarbeitet jetzt leere LESS-Dateien während der Bereitstellung statischer Inhalte korrekt und zeigt die Fehlermeldung „LESS-Datei ist leer“ an. Zuvor wurde ein Fehler vom Typ „Falsch“ ausgelöst, wenn während der Bereitstellung eine leere LESS-Datei auftrat.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38682>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38683>
@@ -1058,34 +1058,34 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/32920>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/32919>
 * _AC-12127_: [Problem] Vermeiden Sie eine Fehlkonfiguration in der Endlosschleife.
-   * _Fixhinweis_: Das System vermeidet nun eine Endlosschleife, indem es das selbstreferenzielle Mapping in virtuellen Typkonfigurationen verhindert. Dadurch wird sichergestellt, dass die Applikation nicht in einer Endlosschleife stecken bleibt, wenn versucht wird, eine selbstreferenzielle Knoten zu dereferenzieren. Wenn eine virtuelle Typkonfiguration zuvor selbstreferenziell war, führte dies dazu, dass die Applikation auf unbestimmte Zeit drehen.
+   * _Fehlerbehebung_: Das System vermeidet jetzt eine Endlosschleife, indem es in virtuellen Typkonfigurationen die selbstreferenzielle Zuordnung verhindert. Dadurch wird sichergestellt, dass die Anwendung beim Versuch, einen selbstverweisenden Knoten zu dereferenzieren, nicht in einer Endlosschleife hängt. Wenn eine Konfiguration eines virtuellen Typs zuvor selbstverweisend war, würde dies dazu führen, dass sich die Anwendung unbegrenzt dreht.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38822>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38794>
 * _AC-12299_: Object Manager wird nicht für Magento\Csp\Model\Mode\Data\ModeConfigured verwendet
-   * _Korrekturhinweis_: Das System verwendet jetzt beim Erstellen des ModeConfigured Objekts korrekt den Objekt Manager, sodass Plugins für dieses Objekt verwendet werden können. Zuvor wurde der Objekt-Manager nicht verwendet, wodurch verhindert wurde, dass Plug-ins auf das ModeAted-Objekt angewendet wurden.
+   * _Fehlerbehebung_: Der Objekt-Manager wird jetzt beim Erstellen des ModeConfiged-Objekts korrekt verwendet, sodass Plug-ins für dieses Objekt verwendet werden können. Zuvor wurde der Objekt-Manager nicht verwendet, was verhinderte, dass Plug-ins auf das ModeConfiged-Objekt angewendet wurden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38875>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38886>
-* _AC-12540_: Ungenauer Kommentar zum Blockieren von Dokumenten in Produkt-Stock und Preisalarmen
-   * _Korrekturhinweis_: Der Doc-Blockkommentar für die deleteCustomer-Methode in den Produkt-Stock und Preiswarnungen wurde korrigiert, um genau widerzuspiegeln, dass die Methode alle Lagerprodukt- oder Preiswarnungen löscht, die mit einem bestimmten Kunden und einer bestimmten Website verknüpft sind, nicht dem Kunden von der Website. Zuvor hieß es in dem Kommentar fälschlicherweise, dass die Methode darin bestehe, einen Kunden von der Website zu löschen.
+* _AC-12540_: Falscher Kommentar zu Dokumentblöcken in Produkt- und Preiswarnhinweisen
+   * _Fehlerbehebung_: Der Blockkommentar für die Methode deleteCustomer in den Warnhinweisen für Warenbestand und Preise wurde korrigiert, um genau widerzuspiegeln, dass die Methode alle Warnhinweise für Warenbestände oder Preise löscht, die mit einer bestimmten Kundin oder einem bestimmten Kunden und einer bestimmten Website verbunden sind, nicht mit dem Kunden von der Website. Zuvor wurde in dem Kommentar fälschlicherweise angegeben, dass die Methode zum Löschen eines Kunden von der Website war.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38939>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39001>
-* _AC-12594_: Problem]: [Kompilierte Konfiguration für generierte Daten anstelle der allgemeinen Konfiguration verwenden
-   * _Korrekturhinweis_: Das System verwendet jetzt die kompilierte Konfiguration für generierte Daten anstelle der allgemeinen Konfiguration, wodurch die Netzwerkübertragung und der Mehraufwand für Daten, die von einer bestimmten Codeversion abhängen, reduziert werden. Diese Änderung verhindert das Überschreiben des Caches in freigegebenen Instanzen während des Container-Austauschs, was zu einer verbesserten Stabilität und reduzierten Ausfallzeiten führt. Bisher verwendeten bestimmte Kernklassen den freigegebenen Konfigurationstyp, der aufgrund von Unterschieden in den Codeversionen auf mehreren Servern zwischengespeichert Lead oder Ausfallzeiten Applikation konnte.
+* _AC-12594_: [Problem] Verwenden Sie die kompilierte Konfiguration für generierte Daten anstelle der allgemeinen Konfiguration.
+   * _Fehlerbehebung_: Das System verwendet jetzt die kompilierte Konfiguration für generierte Daten anstelle der allgemeinen Konfiguration, wodurch die Netzwerkübertragung und der Overhead von Daten, die von einer bestimmten Version des Codes abhängen, reduziert werden. Diese Änderung verhindert das Überschreiben des Caches in freigegebenen Instanzen beim Austausch von Containern, was zu verbesserter Stabilität und reduzierten Ausfallzeiten führt. Zuvor verwendeten bestimmte Kernklassen gemeinsame Konfigurationstypen, was aufgrund von Unterschieden in den Codeversionen über mehrere Server hinweg zu Cache-Überschreibungen oder Anwendungsausfällen führen konnte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38785>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/29954>
 * _AC-12597_: [Problem] Verweise auf Dateien aus ExtJS entfernen, die in e1ccdb entfernt wurden…
-   * _Fix Hinweis_: Das System entfernt jetzt Verweise auf Dateien aus ExtJS, die zuvor entfernt wurden, wodurch Fehler in der Browser-Konsole und der Systemprotokolldatei vermieden werden. Zuvor verursachten diese Verweise Fehler, weil die referenzierten Dateien fehlten.
+   * _Fix Hinweis_: Das System entfernt jetzt Verweise auf Dateien aus ExtJS, die zuvor entfernt wurden, wodurch Fehler in der Browser-Konsole und der Systemprotokolldatei vermieden werden. Zuvor verursachten diese Verweise Fehler, da die referenzierten Dateien nicht vorhanden waren.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38960>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38951>
-* _AC-12778_: [Problem] Kleinere Bereinigung: Falsche Verwendung von sprintf behoben, es werden hier nur 2 Platzhalter benötigt und w...
+* _AC-12778_: [Problem] Kleinere Bereinigung: Fehlerhafte Verwendung von sprintf behoben, es braucht nur 2 Platzhalter hier und w…
    * _Fehlerbehebung_: Das System verwendet nun die sprintf-Funktion korrekt mit der entsprechenden Anzahl von Platzhaltern, was die Code-Sauberkeit und -Konsistenz verbessert. Zuvor wurde die Sprint-Funktion fälschlicherweise mit einem zusätzlichen Argument verwendet, was zwar keine größeren Probleme verursachte, aber nicht die richtige Verwendung war.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39062>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38628>
-* _AC-12857_: PHP 8.2.15 entfernte FTP-Erweiterung
+* _AC-12857_: PHP 8.2.15 entfernt FTP-Erweiterung
    * _Fehlerbehebung_: Das System enthält jetzt die FTP-Erweiterung als Abhängigkeit in der Datei „composer.json“, wodurch die erfolgreiche Konfiguration von CSV-Importen über FTP sichergestellt wird. Zuvor wurde beim Versuch, CSV-Importe über FTP zu konfigurieren, ein Fehler ausgelöst, da die FTP-Erweiterung im PHP-Paket fehlt.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39083>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/47b448e2>
-* _AC-12869_: [Problem] behebt falsche Klassen, die in Magento-Modulen referenziert werden.
+* _AC-12869_: [Problem] Behebt den Verweis falscher Klassen in Magento-Modulen.
    * _Fehlerbehebung_: Das System verweist jetzt korrekt auf Klassen in -Modulen, wodurch ein reibungsloserer Betrieb gewährleistet und Abstürze aufgrund nicht vorhandener Klassen verhindert werden. Dazu gehören eine Fehlerbehebung im Indexer- und Creditmemo-Modul sowie die Implementierung der HttpGetActionInterface-Klasse in der PrintAction-Klasse. Zuvor führten falsche Klassenverweise zu Fehlern und potenziellen Systemabstürzen, und bestimmte Funktionen, wie der Dateiname für CreditMemo-PDF-Dateien und die Neuindizierung von Aktien, funktionierten nicht wie erwartet.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39126>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/37784>
@@ -1118,8 +1118,8 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
    * _Fehlerbehebung_: Diese Aktualisierung korrigiert die PHPDoc-Anmerkungen in Magento\Framework\App\Config\ScopeConfigInterface so, dass sie den Typ des $scopeCode-Arguments für die Methoden getValue und isSetFlag genau widerspiegeln.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39492>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39199>
-* _AC-13725_: Magento\Framework\Filesystem\Driver\Http hängt von der Reason-Phrase ab OK
-   * _Korrekturhinweis_: Die &quot;OK&quot;-Phrasenprüfung wurde aus Magento\Framework\Filesystem\Driver\Http::isExists entfernt
+* _AC-13725_: Magento\Framework\Filesystem\Driver\Http hängt von der Ursachenphrase ab OK
+   * _Hinweis korrigieren_: Die Prüfung der „OK“-Phrase wurde aus Magento\Framework\Filesystem\Driver\Http::isExists entfernt
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39546>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39558>
 * _AC-13810_: Der Indexer für das Kundenraster funktioniert im Zeitplanmodus nicht ordnungsgemäß
@@ -1186,11 +1186,11 @@ Zuvor wurden die Datensätze in den Tabellen der Bundle-Produkt Sequenz nicht en
 * _ACP2E-3387_: [Cloud] Magento: Warteschlangennachricht wurde gelöscht
    * _Fehlerbehebung_: Warteschlangennachrichten werden jetzt ordnungsgemäß gelöscht. Vor der Fehlerbehebung hätten, da das SQL-Warteschlangensystem verwendet wurde, neue Nachrichten gelöscht werden können, wenn die Bereinigungswarteschlangennachricht gleichzeitig ausgeführt wurde.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d50f6b5d>
-* _ACP2E-3537_: Entsprechende Cache-Schlüsseleinträge sind nicht in Cache-Tags verfügbar, daher funktioniert die Cache-Bereinigung nicht korrekt
-   * _Korrekturhinweis_: Der LUA-Modus ist jetzt standardmäßig für den Redis-Cache-Garbage Collector aktiviert, um Race-Bedingungen zu verhindern
+* _ACP2E-3537_: Entsprechende Cache-Schlüsseleinträge sind in Cache-Tags nicht verfügbar, daher funktioniert die Cache-Bereinigung nicht ordnungsgemäß
+   * _Fix Hinweis_: Der LUA-Modus ist jetzt standardmäßig für den Redis-Cache-Garbage Collector aktiviert, um Race-Bedingungen zu vermeiden
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/a52ff98f>
-* _ACP2E-3681_: MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK Wert wird ignoriert
-   * _Fixhinweis_: Nach dem Fix wird ein ENV-Variable, der auf &quot;false&quot; gesetzt ist, als bool false behandelt, nicht als String &quot;false&quot;.
+* _ACP2E-3681_: Wert von MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK wird ignoriert
+   * _Fehlerbehebung_: Nach der Fehlerbehebung wird eine auf „false“ gesetzte ENV-Variable als bool false und nicht als String „false“ behandelt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/982b1c42>
 
 ### Framework, GraphQL
@@ -1242,29 +1242,29 @@ Zuvor wurden Kundenrückgabeattribute für die jeweilige StoreView nicht in der 
 Wenn ein Produkt zuvor in „Alle Store-Ansichten“ deaktiviert und nur in bestimmten Store-Ansichtsbereichen aktiviert wurde, werden die Produktattribute in der GraphQL-Antwort nicht korrekt angezeigt, was dazu führt, dass das Produkt nicht richtig angezeigt wird.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/inventory/commit/3f300077>
 * _ACP2E-3190_: GraphQL [Cloud]-Produkte mit Fehler, wenn dasselbe einfache Produkt mehreren konfigurierbaren Produkten zugewiesen wurde
-   * _Fehlerbehebung_: Zuvor gibt grapQL mit separaten konfigurierbaren Produkten mit demselben einfachen Produkt einen Fehler zurück. Nach dieser Korrektur werden verschiedene konfigurierbare Produkte mit demselben einfachen Produkt angewendet, grapQL gibt das Ergebnis ohne Fehler zurück.
+   * _Fehlerbehebung_: Zuvor gibt grapQL mit separaten konfigurierbaren Produkten mit demselben einfachen Produkt einen Fehler zurück. Nachdem diese Fehlerbehebung angewendet wurde, gibt GraphQL ohne Fehler Ergebnisse für verschiedene konfigurierbare Produkte mit demselben einfachen Produkt zurück.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/148c3ead>
-* _ACP2E-3215_: [Cloud-Problem] mit Benutzer-Authentication und standortübergreifendem Token-Zugriff im Multi-Site-Setup
-   * _Korrekturhinweis_: GraphQl-Kunden-Informationen- und Warenkorbabfragen im Multi-Site-Setup prüfen, ob der Kunde auf einer nicht standardmäßigen Website existiert.
+* _ACP2E-3215_: [Cloud]-Problem mit Benutzerauthentifizierung und Site-übergreifendem Token-Zugriff bei der Einrichtung mehrerer Sites
+   * _Fehlerbehebung_: GraphQL-Kundeninformationen und Warenkorbabfragen bei der Einrichtung mehrerer Sites überprüfen, ob der Kunde auf einer nicht standardmäßigen Website vorhanden ist.
 Zuvor funktionierte die Abfrage, ohne sicherzustellen, dass der Kunde bei der Einrichtung mehrerer Sites auf einer nicht standardmäßigen Website vorhanden ist.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/581b7ef1>
 * _ACP2E-3253_: GraphQL-WarenkorbelementeV2-Paginierung funktioniert nicht ordnungsgemäß
    * _Hinweis beheben_: Das Problem wurde behoben, indem der richtige Wert für das aktuelle Seitenargument in der Sammlungsabfrage übergeben wurde. Zuvor wurde der falsche Wert übergeben, um die aktuelle Seite festzulegen, was das Problem verursachte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/8459b17d>
-* _ACP2E-3255_: [GRAPHQL-Modellwert] sollte beim Abrufen von customerCart angegeben werden
-   * _Korrekturhinweis_: Der GraphQL-Abfrage &#39;customerCart&#39; kann jetzt eine leere Warenkorb Linear erstellen, wenn das Angebot nicht in der Datenbank verfügbar ist. Zuvor schlug dieser Vorgang aufgrund von Länderproblemen Tauglichkeitsprüfung beim Erstellen der leeren Warenkorb fehl.
+* _ACP2E-3255_: [GRAPHQL]-Modellwert sollte beim Abrufen von customerCart angegeben werden
+   * _Fehlerbehebung_: Die GraphQL-Abfrage „customerCart“ kann jetzt einen leeren Warenkorb erstellen, selbst wenn das Angebot nicht in der Datenbank verfügbar ist. Zuvor schlug dieser Vorgang aufgrund von Problemen mit der Ländervalidierung beim Erstellen des leeren Warenkorbs fehl.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/fd5cf3af>
 * _ACP2E-3380_: [GraphQL] Wunschlistenelemente sind über GraphQL sichtbar, aber nicht in der Storefront sichtbar
    * _Fix Hinweis_: Produkte auf der Wunschliste, die nicht ordnungsgemäß aufgeführt sind, wenn sie über GraphQL angefordert werden. Jetzt werden Produkte auf der Wunschliste basierend auf dem bereitgestellten Store-Kontext gefiltert.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/55615e61>
-* _ACP2E-3404_: [GraphQL] Zurücksetzen Kennwort E-Mail-Inkonsistenz zwischen Inhalte und Betreff/verknüpfen
-   * _Korrekturhinweis_: Das Problem wurde behoben, indem die korrekte Geschäft simuliert wurde, bei der die Konto des Kunden registriert wird, wenn die Kennwort Anfrage zum Zurücksetzen registriert wird, unabhängig von der Geschäft der Website.
+* _ACP2E-3404_: [GraphQL] E-Mail-Inkonsistenz des Kennworts zwischen Inhalt und Betreff/Link zurücksetzen
+   * _Hinweis:_ Problem wurde behoben, indem der richtige Store simuliert wurde, in dem das Konto des Kunden beim Senden der Anforderung zum Zurücksetzen des Kennworts registriert ist, unabhängig vom Website-Store.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/5184c067>
-* _ACP2E-3419_: [Cloud-Produkte] GraphQL Abfrage gibt verwandte Produkte zurück, die nicht der aktuellen Website zugewiesen sind
-   * _Korrekturhinweis_: Zuvor wurden für graphQL-Abfrage Produkte mit Bezug zu mehreren Geschäft nicht ordnungsgemäß für Produkt-Abfrage angezeigt. Nachdem dieser Fix angewendet wurde, Abfrage graphQL für Produkte, die mit mehreren Geschäft verwandt sind, entsprechend angezeigt.
+* _ACP2E-3419_: [Cloud]-Produkte GraphQL-Abfrage gibt verwandte Produkte zurück, die nicht der aktuellen Website zugewiesen sind
+   * _Fehlerbehebung_: Zuvor wurden für GraphQL-Abfragen Produkte, die mit mehreren Stores verbunden sind, für die Produktabfrage nicht richtig angezeigt. Nachdem diese Fehlerbehebung angewendet wurde, werden für Produkte in der GraphQL-Abfrage Multistore-bezogene Produkte entsprechend angezeigt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/078c387e>
-* _ACP2E-3447_: Die Verwendung der falschen Store-ID im GraphQL-Header führt zu einem schwerwiegenden Speicherfehler
-   * _Korrekturhinweis_: Das Senden von falschem Geschäft-Code in GraphQL-Anfrage führt nicht mehr zu übermäßigem Speicherverbrauch.
+* _ACP2E-3447_: Die Verwendung der falschen Store-ID in der GraphQL-Kopfzeile verursacht einen schwerwiegenden Speicherfehler
+   * _Fehlerbehebung_: Das Senden von falschem Speicher-Code in einer GraphQL-Anfrage führt nicht mehr zu übermäßigem Speicherverbrauch.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3467_: [Cloud]-500-Antwort auf leere GraphQL-Antwort auf 2.4.7
    * _Fehlerbehebung_: Nach der Fehlerbehebung werden ungültige GraphQL-Anfragen nicht mehr in der Datei „Exception.log“ protokolliert.
@@ -1273,10 +1273,10 @@ Zuvor funktionierte die Abfrage, ohne sicherzustellen, dass der Kunde bei der Ei
    * _Fehlerbehebung_: Vor der Fehlerbehebung mithilfe des GraphQL-Anwendungsservers hat die Kundenadressanfrage nicht die neuesten Daten zurückgegeben.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/3f12d152>
 * _ACP2E-3505_: Deaktiviertes Produkt wird weiterhin in verwandten, Upsell-, Crosssell-Elementen in der GraphQL-Abfrage angezeigt
-   * _Korrekturhinweis_: Graphql bietet jetzt eine korrekte Antwort für deaktivierte relared-, Upsell- und Crosssell-Produkte
+   * _Fehlerbehebung_: GraphQL bietet jetzt die richtige Antwort für deaktivierte verwandte Produkte, Upsell- und Crosssell-Produkte
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d4de4726>
-* _ACP2E-3647_: [CLOUD]: GraphQl-Fehler Interner Serverfehler placeOrder-Mutation
-   * _Fixhinweis_: Die &quot;placeOrder&quot;-Mutation mit Coupon Code-Informationen im Anfrage löst keine interne Fehlerausnahme mehr aus, die bestellen wurde erfolgreich platziert. Zuvor schlug es mit &quot;Interner Serverfehler&quot; fehl.
+* _ACP2E-3647_: [CLOUD]: GraphQL-Fehler Interner Server-Fehler placeOrder-Mutation
+   * _Fehlerbehebung_: Die „placeOrder“-Mutation mit Coupon-Code-Informationen in der Anfrage löst keine interne Fehlerausnahme mehr aus, die Bestellung wurde erfolgreich platziert. Zuvor schlug er mit „Interner Server-Fehler“ fehl.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/982b1c42>
 * _LYNX-426_: Der Rabatt-Prozentsatz wird nicht für Bundle-Produkte mit dynamischem Preis berechnet
    * _Fehlerbehebung_: Fehlerbehebung hinzugefügt für „discount_percentage“ des Produkts.price_details“ zeigt nicht den richtigen Wert für Bundle-Produkte mit aktiviertem dynamischen Preis und angewendetem Rabattcoupon an.
@@ -1311,14 +1311,14 @@ Zuvor funktionierte die Abfrage, ohne sicherzustellen, dass der Kunde bei der Ei
 * _LYNX-620_: GQL - itemsV2 > Ursprüngliche Zeilensumme, Preisspanne Preise wird als $0.00 für herunterladbare Produkte mit Dateioptionen zurückgegeben, die separate Preise haben.
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem herunterladbare Produkte mit aktivierten Optionen für den Kauf separater Links 0 $ für itemsV2 > Ursprüngliche Zeilensumme zurückgaben, Preisspanne als 0,00 $ für Produkte mit Dateioptionen mit separaten Preisen zurückgegeben wurde.
 * _LYNX-711_: Das Schema einer Tabelle, wenn erstellt wird, ist ganz neu anders als beim Upgrade
-   * _Korrekturhinweis_: Es wurde ein Problem behoben, bei dem das Hinzufügen einer neuen VARCHAR-Spalte zu einer vorhandenen Tabelle aufgrund Schema Unterschieden zwischen Neuinstallationen und Upgrades zu Test Fehlern führte. Die modifyColumn()-Methode verarbeitet jetzt VARCHAR-Spalten korrekt, indem sie den Standardzeichensatz und die Standardsortierung festlegt.
+   * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem das Hinzufügen einer neuen VARCHAR-Spalte zu einer vorhandenen Tabelle Testfehler aufgrund von Schemaunterschieden zwischen Neuinstallationen und Upgrades verursachte. Die modifyColumn()-Methode verarbeitet jetzt VARCHAR-Spalten korrekt, indem sie den Standardzeichensatz und die Standardsortierung festlegt.
 * _LYNX-772_: GraphQL-Kompatibilität für PHP-8.4 Version
    * _Fix Hinweis_: Es wurden GraphQL-Kompatibilitätsprobleme mit PHP 8.4 auf mehreren Resolvern behoben, wodurch eine reibungslose Funktionalität sichergestellt wurde. Betroffene Dateien in den Modulen CatalogRule, Customer, GiftMessage, GiftCard und GiftWrapping wurden aktualisiert.
 
-### GraphQL, Inventar / MSI
+### GraphQL, Inventar/MSI
 
 * _ACP2E-2607_: Die MergeCart-Mutation löst eine Ausnahme aus, wenn Quell- und Zielkarten dieselben Bundle-Elemente enthalten
-   * _Korrekturhinweis_: &#39;-
+   * _Notiz korrigieren_: &#39;-
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/c971859e>, <https://github.com/magento/inventory/commit/db0620da>
 
 ### GraphQL, Inventar/MSI, Leistung
@@ -1386,20 +1386,20 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
 * _ACP2E-3475_: Produktexport verursacht OOM auch bei 4G-Speicherbegrenzung
    * _Fehlerbehebung_: Vor dieser Fehlerbehebung ist der Produktexport fehlgeschlagen, wenn Produktattribute Tausende von Optionswerten hatten, selbst mit verfügbarem 4G-Speicher. Nach dieser Fehlerbehebung sollte der Produktexport den Export der CSV-Datei abschließen.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/1984c61c>
-* _ACP2E-3527_: [Cloud-Importieren-Prozesse] stören jede Andere
-   * _Korrekturhinweis_: Korrekte Meldungen werden angezeigt, wenn derselbe Administrator User zwei oder mehr Importvorgänge mit derselben User Sitzung ausführt.
+* _ACP2E-3527_: [Cloud]-Importprozesse, die sich gegenseitig beeinflussen
+   * _Fehlerbehebung_: Es werden korrekte Meldungen angezeigt, wenn derselbe Admin-Benutzer zwei oder mehr Importvorgänge mit derselben Benutzersitzung durchführt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d4de4726>
 
-### Importieren / Export, Leistung
+### Import/Export, Leistung
 
-* _ACP2E-3476_: [Die Importzeit für Cloud-Produkte] hat sich erheblich verlängert
+* _ACP2E-3476_: [Cloud] Die Importzeit für Produkte wurde erheblich verlängert
    * _Fehlerbehebung_: Vor der Fehlerbehebung wurde beim Produktimport aus dem Katalog mit über 10.000 Einträgen eine erhebliche Zeitbeeinträchtigung festgestellt. Nach der Fehlerbehebung wird der Import des Katalogprodukts zeitnah ausgeführt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/87d012e5>
 
-### Installieren und verwalten
+### Installieren und Verwalten
 
 * _AC-13242_: Magento-Upgrade schlägt auf MariaDB 11.4 + 2.4.8-beta1 fehl
-   * _Fixhinweis_: Das Upgrade sollte ohne Fehler verlaufen.
+   * _Fehlerbehebung_: Das Upgrade sollte fehlerfrei durchgeführt werden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/7b336d0a>
 * _ACP2E-2102_: Keine Export-VCL für die Schaltfläche „Lack 7“ im Admin-Bedienfeld
    * _Fix Hinweis_: Die Schaltfläche „VCL für Lack 7 exportieren“ wurde dem Admin-Bedienfeld hinzugefügt.
@@ -1407,7 +1407,7 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
 
 ### Inventar/MSI
 
-* _AC-10750_: Die Bestandsaktualisierung eines konfigurierbaren Produkts schlägt fehl, wenn die Datenbank Präfixe verwendet
+* _AC-10750_: Inventaraktualisierung des konfigurierbaren Produkts schlägt fehl, wenn die Datenbank Präfixe verwendet
    * _Fehlerbehebung_: Das System aktualisiert jetzt das Inventar der konfigurierbaren Produkte korrekt, wenn die Datenbank Präfixe verwendet, um Fehlermeldungen zu verhindern und sicherzustellen, dass die richtige Menge gespeichert wird. Zuvor trat ein Fehler auf, wenn versucht wurde, die Lagermenge für einfache Produkte innerhalb eines konfigurierbaren Produkts zu speichern, wenn die Datenbank Präfixe verwendete.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38045>
 * _AC-11593_: Google-Google-API-Schlüssel funktioniert nicht beim Hinzufügen von Zuordnungen mit Attributen
@@ -1460,11 +1460,11 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38608>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38595>, <https://github.com/magento/magento2/commit/1bafc571>
 * _AC-13839_: Mit einem gelöschten übergeordneten konfigurierbaren Produkt neu anordnen
-   * _Korrekturhinweis_: Jetzt zeigt das System bei der Nachbestellung mit dem gelöschten Produkt die Nachbestellung Button zur Neubestellung nicht an
+   * _Fehlerbehebung_: Beim Neuanordnen mit dem gelöschten Produkt zeigt das System jetzt nicht die Schaltfläche zum Neuanordnen an
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39568>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39601>
-* _AC-13924_: [Problembehebung] fehlerhafte \Magento\Sales\Model\Order\Email\Container\Vorlage::$id Eigenschaft
-   * _Korrekturhinweis_: Dies behebt das fehlerhafte phpdoc für \Magento\Sales\Model\Order\Email\Container\Vorlage::$id, eigentlich ist $id Typ int, aber in Wirklichkeit ist String.
+* _AC-13924_: [Problem] Schlechte Eigenschaft \Magento\Sales\Model\Order\Email\Container\Template::$id korrigieren
+   * _Fix Hinweis_: Dies behebt das fehlerhafte phpdoc für \Magento\Sales\Model\Order\Email\Container\Template::$id, eigentlich ist $id der Typ int, aber in Wirklichkeit ist string.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39151>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39150>
 * _ACP2E-2622_: Änderungen an der Telefonnummer in den vorhandenen Bestelldetails können nicht gespeichert werden
@@ -1480,20 +1480,20 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
 * _ACP2E-3002_: [CLOUD] kann das Senden von E-Mails über die Admin-Benutzeroberfläche nicht deaktivieren, wie in den Entwicklungsdokumenten angezeigt wird
    * _Fehlerbehebung_: Das System verhindert jetzt korrekt, dass Verkaufs-E-Mails gesendet werden, wenn die E-Mail-Kommunikation deaktiviert ist. Diese E-Mails werden nicht mehr gesendet, wenn die E-Mail-Kommunikation wieder aktiviert wird. Zuvor wurden Verkaufs-E-Mails, die initiiert wurden, während die E-Mail-Kommunikation deaktiviert war, weiterhin gesendet, sobald die E-Mail-Kommunikation wieder aktiviert wurde.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/c8931218>
-* _ACP2E-3045_: Bestellung ohne vollständige Rückerstattung abgeschlossen
-   * _Korrekturhinweis_: Das System behält nun korrekt den bestellen Status als &quot;Verarbeitung&quot; und den Rechnungsstatus als &quot;Ausstehend&quot; bei, wenn ein bestellen mit einer nicht erfassten Zahlung eine Sendung erstellt hat. Dadurch wird sichergestellt, dass Bestellungen erst dann als &quot;Geschlossen&quot; markiert werden, wenn sie vollständig erstattet wurden. Bisher wurde beim Erstellen einer Sendung für eine bestellen mit einer ausstehenden Rechnung der bestellen Status fälschlicherweise in &quot;Abgeschlossen&quot; geändert.
+* _ACP2E-3045_: Bestellung abgeschlossen ohne vollständige Rückerstattung
+   * _Fehlerbehebung_: Der Bestellstatus wird jetzt korrekt als „Verarbeitung“ und der Rechnungsstatus als „Ausstehend“ beibehalten, wenn eine Bestellung mit einer nicht erfassten Zahlung erstellt wurde. Dadurch wird sichergestellt, dass Bestellungen erst nach vollständiger Rückerstattung als „Geschlossen“ gekennzeichnet werden. Zuvor wurde der Bestellstatus bei der Erstellung einer Lieferung für einen Auftrag mit ausstehender Rechnung fälschlicherweise in „Geschlossen“ geändert.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/6a185204>
 * _ACP2E-3311_: [Cloud] Bestellung kann nicht in Admin in einem Geschäft erstellt werden, wenn nur die Standard-Rechnungsadresse nicht eingerichtet wurde
-   * _Fehlerbehebung_: Jetzt relevante Fehlermeldung „Ein Kunde mit derselben E-Mail-Adresse existiert bereits auf einer zugehörigen Website.“ wird angezeigt, wenn ein Kunde nicht über eine Standardmäßig Abrechnungs Adresse verfügt und versucht, eine bestellen auf einer anderen Geschäft zu erstellen.
+   * _Fehlerbehebung_: Jetzt relevante Fehlermeldung „Ein Kunde mit derselben E-Mail-Adresse existiert bereits auf einer zugehörigen Website.“ wird angezeigt, wenn ein Kunde keine Standard-Rechnungsadresse hat und versucht, eine Bestellung in einem anderen Shop zu erstellen.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d75cff27>
-* _ACP2E-3416_: Admin hat den Ort bestellen gesendeter Anfragen dupliziert
-   * _Korrekturhinweis_: Bisher konnte der Button &quot;Bestellung absenden&quot; im Admin-Panel mehrmals angeklickt oder durch wiederholtes Drücken der &quot;Enter&quot;-Taste aktiviert werden, was zu Duplikat oder bestellen Übermittlungen mit Fehlern führte. Verhindern Sie jetzt zusätzliche Aktionen, bis die bestellen vollständig verarbeitet ist, und stellen Sie sicher, dass nur eine bestellen gesendet wird.
+* _ACP2E-3416_: Vom Administrator duplizierte Bestellanfragen wurden gesendet
+   * _Fix Hinweis_: Zuvor konnte die Schaltfläche „Bestellung übermitteln“ im Admin-Bereich mehrmals angeklickt oder durch wiederholtes Drücken der Eingabetaste aktiviert werden, was zu doppelten oder fehlerhaften Bestellübermittlungen führte. Vermeiden Sie jetzt zusätzliche Aktionen, bis die Bestellung vollständig verarbeitet ist, sodass nur eine Bestellung gesendet wird.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/5184c067>
-* _ACP2E-3425_: Admin kann weiterhin bestellen Linear ohne Zahlungsmethode platzieren
+* _ACP2E-3425_: Der Administrator kann auch ohne Zahlungsmethode Bestellungen aufgeben
    * _Hinweis korrigieren_: Die zuvor ausgewählte Zahlungsmethode wird jetzt beibehalten, wenn die Zahlungsmethode in der Liste der verfügbaren Zahlungen erneut angezeigt wird.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d50f6b5d>
-* _ACP2E-3518_: Elemente werden dupliziert, nachdem wir eine bestellen von Admin erstellt haben - Mozilla Firefox Browser
-   * _Fixhinweis_: Produkte, die mit &quot;hinzufügen Products by Produktnummer&quot; hinzugefügt wurden, werden in Firefox nicht mehr dupliziert, wenn eine bestellen in Admin erstellt wird.
+* _ACP2E-3518_: Elemente werden dupliziert, nachdem wir eine Bestellung von Admin in Mozilla Firefox erstellt haben - Browser
+   * _Fehlerbehebung_: Produkte, die mit „Produkte nach SKU hinzufügen“ hinzugefügt wurden, werden in Firefox beim Erstellen einer Bestellung in Admin nicht mehr dupliziert.
 
 ### Bestellung, Zahlungen
 
@@ -1501,9 +1501,9 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
    * _Fehlerbehebung_: Zuvor konnte der Händler Bestellungen über das Admin-Bedienfeld aufgeben, ohne eine Zahlungsmethode auszuwählen. Jetzt wird der Händler eine Zahlungsmethode benötigt, um mit der Bestellung fortzufahren.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/fd5cf3af>
 
-### Bestellung, Rückgabe
+### Reihenfolge, Rückgabe
 
-* _ACP2E-2982_: Auftragsrückerstattung führt zu Duplikat Gutschrift
+* _ACP2E-2982_: Die Bestellerstattung führt zu einer doppelten Gutschrift
    * _Fehlerbehebung_: Wenn die Rückerstattung über die REST-API erfolgt, wenn zwei identische Anfragen gleichzeitig ausgeführt wurden, werden keine doppelten Gutschriften mehr erstellt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/a4fbf702>
 
@@ -1513,19 +1513,19 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
    * _Fehlerbehebung_: Jetzt wird die korrekte base_row_total von der RESTFUL Order API zurückgegeben, wenn die grenzüberschreitende Transaktion aktiviert ist und ein Couponrabatt angewendet wird.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/9af794a4>
 
-### Andere
+### Sonstige
 
-* _BUNDLE-3394_: [Braintree] Rückerstattung online Speichern der Transaktion als transactionid-refund
-* _BUNDLE-3421_: [Braintree] + [CLOUD] Braintree (Credit Karte)-Bestellungen können die Gebühren nicht aufteilen
-* _BUNDLE-3422_: [Braintree] [Cloud]Braintree SSL-Zertifikat läuft am 30. Juni ab
-* _LYNX-339_: private_Inhalte_version Cookie in GQL-Abfragen zurückgegeben
-   * _Korrekturhinweis_: Fest ein Problem, bei dem die Cookie private_Inhalte_version in GraphQL-Abfragen zurückgegeben wurde, Linear, wenn die Sitzungs Cookie deaktiviert war. Die Cookie ist nicht mehr in GraphQL-Antworten enthalten, wenn die Sitzung wie erwartet deaktiviert ist.
-* _LYNX-366_: Server-Fehler bei E-Mail-Props bei physischen Geschenk-Karte-Abfragen
-   * _Behebung des Hinweises_: Fest ein Problem, bei dem Abfragen für sender_email und Empfänger_email auf physischen Geschenkkarten zu einem Serverfehler führten. Diese Requisiten werden jetzt für virtuelle Geschenkkarten korrekt zurückgegeben und das Verhalten der Abfrage ist konsistent.
-* _LYNX-380_: is_available Attribut in CartItemInterface gibt für konfigurierbare Produkte immer &quot;false&quot; zurück.
+* _BUNDLE-3394_: [Braintree] Rückerstattung einer Online-Speichertransaktion als transactionID-REFUND
+* _BUNDLE-3421_: [Bestellungen mit Braintree] + [CLOUD] Braintree (Kreditkarte) können die Gebühren nicht aufteilen
+* _BUNDLE-3422_: [Braintree]Cloud{[}Braintree-SSL-Zertifikat läuft bis zum 30. Juni ab]
+* _LYNX-339_: private_content_version -Cookie in GQL-Abfragen zurückgegeben
+   * _Hinweis beheben_: Es wurde ein Problem behoben, bei dem das Cookie „private_content_version“ in GraphQL-Abfragen zurückgegeben wurde, selbst wenn das Sitzungs-Cookie deaktiviert war. Das Cookie ist nicht mehr in den GraphQL-Antworten enthalten, wenn die Sitzung erwartungsgemäß deaktiviert wird.
+* _LYNX-366_: Server-Fehler bei E-Mail-Props in Abfragen physischer Geschenkkarten
+   * _Hinweis korrigieren_ Es wurde ein Problem behoben, bei dem Abfragen für sender_email und recipient_email auf physischen Geschenkkarten zu einem Server-Fehler führten. Diese Props werden jetzt für virtuelle Geschenkkarten korrekt zurückgegeben, und das Abfrageverhalten ist konsistent.
+* _LYNX-380_: is_available-Attribut in CartItemInterface gibt für konfigurierbare Produkte immer false zurück
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem das Attribut is_available in CartItemInterface für auf Lager konfigurierbare Produkte immer „false“ zurückgab. Jetzt spiegelt sie die Verfügbarkeit korrekt wider, sofern zutreffend.
-* _LYNX-382_: is_available Attribut in CartItemInterface gibt true Linear zurück, wenn der verkaufsfähige Bestand niedriger als der Anzahl des Produkts ist
-   * _Korrekturhinweis_: Fest das Problem, dass das is_available-Attribut in CartItemInterface fälschlicherweise true Linear zurückgab, wenn der Warenkorb Artikel den verkaufsfähigen Bestand überschritten Anzahl.
+* _LYNX-382_: is_available-Attribut in CartItemInterface gibt „true“ zurück, auch wenn der verkaufbare Bestand kleiner als die Menge des Produkts ist
+   * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem das Attribut is_available in der CartItemInterface fälschlicherweise „true“ zurückgegeben hat, selbst wenn die Menge des Warenkorbeartikels den verkäuflichen Bestand überschritten hat.
 * _LYNX-395_: das Attribut only_x_left_in_stock in ProductInterface ist auf konfigurierbaren Produkten nicht genau.
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem das Attribut only_x_left_in_stock in ProductInterface den verfügbaren Bestand für konfigurierbare Produktvarianten im Warenkorb nicht genau wiedergab. Jetzt entspricht der Wert „only_x_left_in_stock“ korrekt den tatsächlichen Lagerbeständen der Varianten, sodass in der GQL-Abfrage des Warenkorbs genaue Inventardaten zurückgegeben werden.
 * _LYNX-399_: Platzhalter-Miniaturansicht wird zurückgegeben, wenn ein einfaches Produkt innerhalb eines gruppierten Produkts zum Warenkorb hinzugefügt wird
@@ -1552,34 +1552,34 @@ Fehlerbehebungsdetails:
    * _Fehlerbehebung_: Es wurde ein Problem mit der Mutation EstimatedTotals behoben, bei dem angewendete Steuern auf einem Warenkorb auch nach dem Aktualisieren der Region oder Postleitzahl beibehalten wurden. Die Mutation aktualisiert nun die angewendeten Steuern korrekt, wenn zwischen Regions- und Postcodewerten gewechselt wird, um sicherzustellen, dass nur die richtige Steuerregel auf der Grundlage der aktuellen Warenkorbdaten angewendet wird.
 * _LYNX-420_: is_available-Attribut in CartItemInterface gibt „true“ zurück, auch wenn das verkaufbare Lager kleiner als die Menge des Produkts ist
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem das Attribut is_available in CartItemInterface fälschlicherweise „true“ zurückgegeben wurde, selbst wenn der verkaufbare Bestand kleiner als die angeforderte Produktmenge war. Das Feld is_available gibt jetzt korrekt „false“ zurück, wenn die Menge des Produkts den verfügbaren Bestand überschreitet.
-* _LYNX-421_: Kann Coupon nicht zu Warenkorb hinzufügen, um nur Versandrabatt zu erhalten
-   * _Hinweisbehebung_: Fest ein Problem, bei dem ein Coupon nicht auf eine Warenkorb für Rabatte nur für Versand angewendet werden konnte. Die Coupon wird jetzt korrekt auf den Versandbetrag angewendet, wenn ein Verkaufs Regel ohne Produktbedingungen verwendet wird, um sicherzustellen, dass der erwartete Rabatt auf die Versandkosten angewendet wird.
+* _LYNX-421_: Gutschein kann nicht zum Warenkorb hinzugefügt werden, da nur der Rabatt für den Versand gilt
+   * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem ein Coupon nicht auf einen Warenkorb angewendet werden konnte, um Rabatte nur für den Versand zu erhalten. Der Coupon wird jetzt korrekt auf den Versandbetrag angewendet, wenn eine Verkaufsregel ohne Produktbedingungen verwendet wird, um sicherzustellen, dass der erwartete Rabatt auf die Versandkosten angewendet wird.
 * _LYNX-425_: Regulärer Produktpreis mit 12 Dezimalstellen und falschem Wert
-   * _Korrekturhinweis_: Fest ein Problem, bei dem der regular_price-Wert in den Pfaden product.price_range.maximum_price und minimum_price GraphQL nicht mit dem Katalogpreis übereinstimmte, wenn mehrere Steuersätze angewendet wurden. Die regular_price spiegelt nun konsistent den Katalogpreis über alle Steuerkonfigurationen hinweg wider und gewährleistet genaue Stückpreise, Berechnungen der Gesamtzeilenkosten und Rabattprüfungen im Warenkorb-Zusammenfassung.
-* _LYNX-430_: GraphQL-Server-Fehler auf Warenkorb mit nicht vorrätigem Bundle-Produkt
+   * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem der Wert „Regular_Price“ in den Pfaden „product.price_range.maximum_price“ und „minimum_price“ in GraphQL nicht mit dem Katalogpreis übereinstimmte, wenn mehrere Steuersätze angewendet wurden. Der reguläre Preis spiegelt nun den Katalogpreis über alle Steuerkonfigurationen hinweg konsistent wider und gewährleistet eine genaue Einzelpreisfindung, Berechnungen der GesamtZeilenkosten und Rabattprüfungen in der Warenkorbzusammenfassung.
+* _LYNX-430_: GraphQL-Serverfehler im Warenkorb mit nicht vorrätigem gebündeltem Produkt
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem GraphQL beim Abrufen eines Warenkorbs mit einem gebündelten Produkt mit einem nicht vorrätigen Element einen internen Server-Fehler zurückgab, insbesondere wenn die Abfrage die itemsV2-Eigenschaft enthielt. GraphQL gibt jetzt wie erwartet korrekt eine Liste von Elementen mit relevanten Fehlermeldungen zurück, die an den Produkteintrag im Paket angehängt sind.
 * _LYNX-441_: Eine Adresse mit benutzerdefinierten Attributen kann nicht erstellt werden
-   * _Fehlerbehebung_: Es wurde ein Problem mit der createCustomerAddress-Mutation behoben, das die Erstellung von Adressen mit erforderlichen benutzerdefinierten Attributen verhinderte. Die Mutation handhabt benutzerdefinierte Adressattribute nun korrekt, wenn die entsprechende Payload angegeben wird.
+   * _Fehlerbehebung_: Es wurde ein Problem mit der createCustomerAddress-Mutation behoben, das die Erstellung von Adressen mit erforderlichen benutzerdefinierten Attributen verhinderte. Die Mutation verarbeitet jetzt benutzerdefinierte Adressattribute korrekt, wenn die entsprechende Payload bereitgestellt wird.
 * _LYNX-447_: GraphQL-Server-Fehler im Warenkorb mit only_x_left_in_stock im Paket-Produkt
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem das Abrufen eines Warenkorbs, der ein gebündeltes Produkt mit dem Feld only_x_left_in_stock in der GraphQL-Abfrage enthält, zu einem internen Server-Fehler führte. GraphQL gibt jetzt für das Feld only_x_left_in_stock korrekt einen Float oder null zurück, ohne Fehler zu verursachen.
 * _LYNX-464_: GraphQL-Fehler beim Entfernen anderer Produkte mit unzureichendem konfigurierbarem Produkt im Warenkorb
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem Warenkorb zu entfernen, zu dem GraphQL-Fehler „Die angeforderte Menge ist nicht verfügbar“ führte, wenn der Warenkorb auch konfigurierbare Produkte mit unzureichendem Vorrat enthielt. Die Entfernung funktioniert nun erwartungsgemäß, ohne dass Fehler ausgelöst werden.
-* _LYNX-469_: Produkte können nicht hinzugefügt werden, da Produktnummer in der Mutation von Schreibweise abhängig
+* _LYNX-469_: Es können keine Produkte hinzugefügt werden, da bei der Mutation der SKU die Groß-/Kleinschreibung beachtet wird
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation den Fehler „PRODUCT_NOT_FOUND“ zurückgab, wenn SKUs mit unterschiedlicher Groß-/Kleinschreibung verwendet wurden. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
 * _LYNX-603_: Produktattribut > Marken-Kurzform-™ wird als ™ zurückgegeben
    * _Hinweis:_ Problem mit der Zeichenkodierung mit dem Produktnamen für die GraphQL-API behoben
 * _LYNX-619_: Problem mit updateCustomerEmail-Mutation
    * _Hinweis korrigieren_: Es wurde ein Problem mit der updateCustomerEmail-Mutation behoben, bei dem Kunden ohne erforderliche benutzerdefinierte Attribute (die nach der Kontoerstellung hinzugefügt wurden) ihre E-Mail nicht aktualisieren konnten.
 * _LYNX-626_: Die Mutation setShippingAddressesOnCart gibt einen Fehler aus, wenn pickup_location_code verwendet wird
-   * _Korrekturhinweis_: Fest ein Problem, bei dem die setShippingAddressesOnCart-Mutation einen Fehler zurückgegeben hat, wenn pickup_location_code ohne Angabe von customer_address_id oder Adresse verwendet wurde. Die Mutation erlaubt es nun korrekterweise, eine Lieferadresse nur mit dem pickup_location_code zu setzen.
-* _LYNX-627_: CustomerOrder.items_eligible_for_return Liste muss mit bestellen Elementen übereinstimmen
-   * _Korrekturhinweis_: Inkonsistenzen mit der Rücksendeberechtigung in Bestellungen wurden behoben:
-1. Der CustomerOrder.items_eligible_for_return Liste entspricht nun den tatsächlichen bestellen Elementen.
-2. Das OrderItemInterface.eligible_for_return Feld gibt korrekterweise false zurück, wenn die vollständige Anzahl bereits zurückgegeben wurde.
-3. CustomerOrder.items_eligible_for_return werden jetzt nur Artikel berücksichtigt, die nicht bereits zurückgegeben werden.
-* _LYNX-628_: hinzufügen Feld Anzahl_return_requested
-   * _Korrekturhinweis_: Das Feld Anzahl_return_requested wurde der OrderItemInterface hinzugefügt, sodass Sie die Anzahl von Artikeln identifizieren können, für die eine Rücksendung eingereicht wurde. Dadurch wird die Rückgabe Tracking neben dem vorhandenen Feld Anzahl_returned erweitert.
-* _LYNX-634_: Verfügbare Bestellaktionen dürfen nach Rückgaben, die für alle Artikel erstellt wurden, keine RÜCKGABE enthalten Anzahl
+   * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem die setShippingAddressesOnCart-Mutation einen Fehler zurückgab, wenn Pickup_Location_Code ohne Angabe von customer_address_id oder Adresse verwendet wurde. Die Mutation ermöglicht es nun, eine Versandadresse nur mit dem PICKUP_LOCATION_CODE zu setzen.
+* _LYNX-627_: Die Liste „CustomerOrder.items_eligibility_for_return“ muss mit Bestellartikeln übereinstimmen.
+   * _Hinweis korrigieren_: Behobene Inkonsistenzen in Bezug auf die Rücksendeberechtigung in Bestellungen:
+1. Die Liste CustomerOrder.items_eligibility_for_return stimmt jetzt mit den tatsächlichen Bestellartikeln überein.
+2. Das Feld OrderItemInterface.eligibility_for_return gibt richtigerweise false zurück, wenn die vollständige Menge bereits zurückgegeben wurde.
+3. CustomerOrder.items_eligibility_for_return enthält jetzt nur noch Artikel, die noch nicht zurückgegeben werden.
+* _LYNX-628_: Feld „quantity_return_requested“ hinzufügen
+   * _Fixhinweis_: Das Feld quantity_return_requested wurde der OrderItemInterface hinzugefügt, sodass Sie die Menge der Artikel identifizieren können, für die eine Rücksendung gesendet wurde. Dadurch wird die Rückgabeverfolgung neben dem vorhandenen Feld „quantity_returned“ verbessert.
+* _LYNX-634_: Verfügbare Aktionen für Bestellungen dürfen keine RÜCKGABE enthalten, nachdem Rücksendungen für alle Artikel in voller Menge erstellt wurden
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem das Feld „available_actions“ in der Abfrage „customer.orders“ von GraphQL fälschlicherweise „RETURN“ enthielt, nachdem eine vollständige Rückgabe für alle Artikel erstellt worden war. Die Aktion „ZURÜCKGEBEN“ wird jetzt ordnungsgemäß entfernt, sobald der Rückgabevorgang abgeschlossen ist.
 * _LYNX-637_: Storefront-Kompatibilität - Aktualisieren der Logik, um den Tabellennamen mit Präfix und anderen kleineren Verbesserungen zu erhalten
    * _Hinweis korrigieren_: Die Logik zum Abrufen des Tabellennamen mit dem Präfix (im Zusammenhang mit SCP-Änderungen) wurde aktualisiert.
@@ -1615,18 +1615,18 @@ Fehlerbehebungsdetails:
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem Geschenknachrichten nicht auf Produktebene angewendet wurden, wenn sie global deaktiviert waren. Wenn jetzt Geschenknachrichten für ein bestimmtes Produkt aktiviert sind, können sie mit der UpdateCartItems-Mutation erfolgreich hinzugefügt werden und werden korrekt gespeichert und angezeigt.
 * _LYNX-717_: Problem beim Entfernen der Geschenkverpackung vom Warenkorbartikel
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem das Entfernen des Geschenkumbruchs aus einem Warenkorbelement mithilfe der updateCartItems-Mutation nicht wie erwartet funktionierte. Jetzt funktionieren sowohl das Anbringen als auch das Entfernen von Geschenkverpackungen korrekt und fehlerfrei.
-* _LYNX-751_: Die Funktion für abgeglichene registrierte Kunden funktioniert in Boilerplate nicht, und die trackViewedProduct-Mutation muss für Gäste aktiviert werden.
-   * _Korrekturhinweis_: trackViewedProduct-Mutation offengelegt, um Produkt Ansicht Ereignis für Kunden und Gäste nachzuverfolgen
-* _LYNX-757_: Warenkorb.rules Abfrage einen Fehler anstelle eines leeren Arrays zurück, falls keine aktiven Warenkorb Regeln angewendet werden
-   * _Korrekturhinweis_: Fest Warenkorb.rules Abfrage ein leeres Array anstelle eines Fehlers zurückzugeben, wenn keine aktiven Warenkorb-Regeln angewendet werden.
-* _LYNX-758_: Problem beim Abrufen von Geschenkverpackungen für Warenkorb Artikel
-   * _Korrekturhinweis_: Die Abruflogik wurde aktualisiert, um Geschenkverpackungsoptionen für Warenkorb Artikel zurückzugeben, wenn diese global deaktiviert, aber auf Produktebene aktiviert sind
-* _LYNX-778_: GraphQL-Anrufe mit OPTIONS-Methode geben den Antwortcode 500 zurück, wenn das Paket adobe-commerce/storefront-compatibility installiert ist
-   * _Korrekturhinweis_: Fest ein Problem, bei dem GraphQL-Aufrufe mit dem OPTIONS-Methode einen Fehler vom Typ &quot;500 Internal Server&quot; zurückgaben, wenn das Adobe-Commerce-/Storefront-Kompatibilitätspaket installiert wurde. Der Endpunkt gibt nun wie erwartet korrekt eine 200/204-Antwort zurück.
+* _LYNX-751_: Die passende registrierte Kundenfunktion funktioniert nicht in Boilerplate, und die trackViewedProduct-Mutation muss für Gäste aktiviert werden.
+   * _Fehlerbehebung_: Ausgesetzte trackViewedProduct-Mutation zur Nachverfolgung des Produktansichtsereignisses für Kunden und Gäste
+* _LYNX-757_: Die Abfrage cart.rules gibt einen Fehler anstelle eines leeren Arrays zurück, wenn keine aktiven Warenkorbregeln angewendet werden
+   * _Fehlerbehebung_: Die Abfrage „cart.rules“ wurde korrigiert, sodass ein leeres Array anstelle eines Fehlers zurückgegeben wird, wenn keine aktiven Warenkorbregeln angewendet werden.
+* _LYNX-758_: Problem beim Abrufen von Geschenkverpackungen für Warenkorbartikel
+   * _Fehlerbehebung_: Aktualisierte Abruflogik, um Geschenkverpackungsoptionen für Warenkorbartikel zurückzugeben, wenn diese global deaktiviert, aber auf Produktebene aktiviert sind
+* _LYNX-778_: GraphQL-Aufrufe mit der OPTIONS-Methode geben den 500-Antwort-Code zurück, wenn das Paket „adobe-commerce/storefront-compatibility“ installiert ist
+   * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem GraphQL-Aufrufe unter Verwendung der OPTIONS-Methode einen 500-internen Serverfehler zurückgaben, als das Paket „adobe-commerce/storefront-compatibility“ installiert wurde. Der Endpunkt gibt jetzt korrekt eine 200/204-Antwort wie erwartet zurück.
 
-### Andere Entwickler-Werkzeuge
+### Andere Entwickler-Tools
 
-* _AC-10658_: [Problembehebung] HTML Syntaxfehlers in visual.phtml
+* _AC-10658_: [Problem] Behebung eines HTML-Syntaxfehlers in visual.phtml
    * _Fehlerbehebung_: Das System schließt jetzt das Start-Tag in der Datei „visual.phtml“ korrekt, um eine ordnungsgemäße HTML-Syntax sicherzustellen. Zuvor wurde das Start-Tag nicht ordnungsgemäß geschlossen, was zu einem HTML-Syntaxfehler führte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38247>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/37457>
@@ -1685,21 +1685,21 @@ Fehlerbehebungsdetails:
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38703>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/7d5e3906>
 * _AC-12000_: [Problem] Code-Bereinigung und Hinzufügen eines neuen kritischen Head-Blocks und Verschieben von kritischem CSS vor Assets
-   * _Korrekturhinweis_: Das System enthält jetzt einen neuen wichtig-Headblock und verschiebt wichtig CSS vor Assets, was eine weitere Anpassung und Leistungsoptimierung im Frontend ermöglicht. Zuvor wurde das wichtig-CSS nicht vor den Assets positioniert, was die Anpassungs- und Optimierungsmöglichkeiten einschränkte.
+   * _Fehlerbehebung_: Das System enthält jetzt einen neuen kritischen Head Block und verschiebt wichtiges CSS vor Assets, was eine bessere Anpassung und Leistungsoptimierung im Frontend ermöglicht. Zuvor wurde das kritische CSS nicht vor den Assets positioniert, was die Anpassungs- und Optimierungsmöglichkeiten einschränkte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38748>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/35580>
 * _AC-12176_: Die Design-Kompilierung funktioniert nicht mehr, wenn der MySQL-Host Port-Informationen enthält
-   * _Fehlerbehebung_: Das System verarbeitet jetzt die MySQL-Host-Konfiguration, die Port-Informationen enthält, korrekt, um eine erfolgreiche Design-Kompilierung sicherzustellen. Zuvor schlug die Designkompilierung fehl, wenn die MySQL-Host-Konfiguration in der Datenbankverbindung portieren Informationen enthielt.
+   * _Fehlerbehebung_: Das System verarbeitet jetzt die MySQL-Host-Konfiguration, die Port-Informationen enthält, korrekt, um eine erfolgreiche Design-Kompilierung sicherzustellen. Zuvor schlug die Design-Kompilierung fehl, wenn die MySQL-Host-Konfiguration in der Datenbankverbindung Port-Informationen enthielt.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38799>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38842>
-* _AC-13471_: Unterstützung für Symfonys CommandLoaderInterface in Magento CLI
-   * _Korrekturhinweis_: Diese Änderung verkürzt die Initialisierungszeit der Magento-CLI-App, indem die verzögerte Initialisierung von Befehlen ermöglicht wird, bis sie benötigt werden.
+* _AC-13471_: Unterstützung für die CommandLoaderInterface-Schnittstelle von Symfony in Magento CLI
+   * _Fehlerbehebung_: Durch diese Änderung wird die Initialisierungszeit der Magento-CLI-App verkürzt, da Befehle erst dann initialisiert werden können, wenn sie benötigt werden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/29266>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/29355>
 * _ACP2E-2494_: Leistungsproblem beim Laden von Produktattributen in Warenkorbregeln
-   * _Korrekturhinweis_: Die Abfrage-Leistung für Verkaufsregeln wurde verbessert – von ca. 150 ms auf einstellige ms.
+   * _Fix Hinweis_: Verbesserte Abfrageleistung für Verkaufsregeln - von rund 150 ms auf einstellige ms.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ba25af8a>
-* _ACP2E-2673_: Preis partielle Indizierungsleistung
+* _ACP2E-2673_: Preis-partielle Indexierungsleistung
    * _Fix Hinweis_: Die Leistung bei der partiellen Indizierung im Preis wurde verbessert, indem einige der Löschabfragen optimiert wurden, die im Indizierungsprozess verwendet werden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ba25af8a>
 * _ACP2E-2850_: Bestellung wird bei Multi-Store-Setup bei Verwendung der asynchronen Auftragsverarbeitung abgelehnt + Allgemeine Geschäftsbedingungen
@@ -1713,9 +1713,9 @@ Bevor sie automatisch abgelehnt wurden.
 ### Leistung, Promotion
 
 * _ACP2E-2617_: Verkaufsregelindizierer wurde beendet
-   * _Korrekturhinweis_: Das System schließt nun erfolgreich den Vertrieb Regel Indexer-Linear mit einer großen Anzahl kombinierter Filtergruppen ab, um sicherzustellen, dass Warenkorb Regel Bedingungen wie erwartet auf die Warenkorb angewendet werden. Zuvor konnte der Verkaufsregelindizierer bei einer großen Anzahl von kombinierten Filtergruppen nicht abgeschlossen werden, was zu einer Fehlermeldung führte und die Anwendung von Warenkorbregelbedingungen verhinderte.
+   * _Fehlerbehebung_: Das System schließt den Verkaufsregelindizierer jetzt auch mit einer großen Anzahl von kombinierten Filtergruppen erfolgreich ab, sodass die Warenkorbregelbedingungen wie erwartet auf den Warenkorb angewendet werden. Zuvor konnte der Verkaufsregelindizierer bei einer großen Anzahl von kombinierten Filtergruppen nicht abgeschlossen werden, was zu einer Fehlermeldung führte und die Anwendung von Warenkorbregelbedingungen verhinderte.
 
-### Auszeichnung
+### Preisgestaltung
 
 * _AC-11810_: Magento2.4.6-p4 Bestellung API Einfache Artikel fehlender Preis
    * _Fehlerbehebung_: Das System zeigt jetzt den Preis einfacher Produkte korrekt an, wenn sie über die Auftrags-API abgefragt werden, um eine genaue Datendarstellung zu gewährleisten. Zuvor wurde der Preis für einfache Produkte in der API-Antwort fälschlicherweise als null angezeigt.
@@ -1753,11 +1753,11 @@ Bevor sie automatisch abgelehnt wurden.
    * _Hinweis korrigieren_: Jetzt kann das benutzerdefinierte Modul im Bestellraster verwendet werden. Bei der Verwendung eines benutzerdefinierten Moduls sind zuvor Fehler aufgetreten.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/3a7c4d17>
 * _ACP2E-3471_: [Cloud] Produkte in Kategorie - Produkte hinzufügen - Zuweisen - Alle auswählen
-   * _Korrekturhinweis_: Benutzer können jetzt Produkte mithilfe des Umschalters auswählen oder deren Auswahl aufheben.
+   * _Hinweis korrigieren_: Benutzer können jetzt Produkte mit dem Umschalter auswählen oder die Auswahl aufheben.
 
-### Beförderung
+### Promotion
 
-* _ACP2E-2602_: Kundenattribut beim Erstellen von Konto aus Einladung nicht sichtbar
+* _ACP2E-2602_: Kundenattribut beim Erstellen eines Kontos aus einer Einladung nicht sichtbar
    * _Fehlerbehebung_: Kundenattribute sind beim Erstellen eines Kontos über eine Einladung verfügbar.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/39d54c2d>
 * _ACP2E-2627_: Couponcode mit Uses per Coupon-Limit wird nicht für Zahlung freigegeben, der mit der Stornierung der Bestellung fehlgeschlagen ist
@@ -1871,8 +1871,8 @@ Zuvor eingeschränkte Admin-Benutzer konnten das Menü und die Schaltflächen �
 
 ### Lieferung
 
-* _AC-10757_: [Problem] Fest Tippfehler in Tracking.phtml – JS-Funktionen &quot;currier&quot; in &quot;carrier&quot; umbenannt
-   * _Korrekturhinweis_: Das System verwendet jetzt korrekt den Begriff &quot;carrier&quot; anstelle des falsch geschriebenen &quot;currier&quot; in den JavaScript Handler-Funktionen, die in der bestellen Tracking Vorlage verwendet werden, um die ordnungsgemäße Benennung von Funktionen und die Klarheit des Codes zu gewährleisten. Zuvor wurde der falsch geschriebene Begriff &quot;Currier&quot; verwendet, was zu potenzieller Verwirrung und Inkonsistenz in der Codebasis führte.
+* _AC-10757_: [Problem] Tippfehler in tracking.phtml behoben - JS-Funktionen in „Currier“ umbenannt in „carrier“
+   * _Fehlerbehebung_: Das System verwendet jetzt in den in der Bestellverfolgungsvorlage verwendeten JavaScript-Handler-Funktionen korrekt den Begriff „Carrier“ anstelle des falsch geschriebenen „Currier“, um eine ordnungsgemäße Funktionsbenennung und Code-Klarheit zu gewährleisten. Zuvor wurde der falsch geschriebene Begriff „Currier“ verwendet, was zu Verwirrung und Inkonsistenz in der Codebasis führen konnte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/34523>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/33414>
 * _AC-11938_: UPS REST „Eine Sendung darf keine KGS/IN- oder LBS/CM- oder OZS/CM-Einheit als Maßeinheit haben“
@@ -1887,11 +1887,11 @@ Zuvor eingeschränkte Admin-Benutzer konnten das Menü und die Schaltflächen �
 * _ACP2E-2738_: Tracking-Fenster zeigt das falsche erwartete Lieferdatum an
    * _Fehlerbehebung_: Zeigt das richtige Lieferdatum für Fedex Carrier an.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/57a32313>
-* _ACP2E-2763_: Tabelle Tarife werden immer noch angezeigt, obwohl kostenloser Versand angewendet wird
-   * _Korrekturhinweis_: Tabelle Versandtarif wird jetzt Linear angezeigt, wenn der kostenlose Versand nach Coupon Anwendung verfügbar wird
+* _ACP2E-2763_: Tabellen-Sätze werden weiterhin angezeigt, obwohl kostenloser Versand angewendet wird
+   * _Fehlerbehebung_: Die Versandmethode „Table Rate“ wird jetzt angezeigt, auch wenn nach der Anwendung des Coupons der kostenlose Versand verfügbar wird
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/b2286ecf>
-* _ACP2E-2765_: MFTF Test AdminCreatingShippingLabelTest schlägt fehl, weil Anmeldeinformationen in Jenkins nicht hinzugefügt wurden Umgebung
-   * _Fixhinweis_: mftf Test fix
+* _ACP2E-2765_: MFTF-Test AdminCreatingShippingLabelTest schlägt fehl aufgrund von Anmeldeinformationen, die nicht in der Jenkins-Umgebung hinzugefügt wurden
+   * _Fehlerbehebung_: mftf test fix
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ea79f7dd>
 * _ACP2E-3340_: FedEx-Track-API funktioniert nicht mit REST-Anmeldeinformationen
    * _Fehlerbehebung_: Zuvor waren für die FedEx-Integration keine zusätzlichen API-Schlüssel für die Tracking-API erforderlich. Jetzt wurde eine neue Konfiguration hinzugefügt, um Tracking-API-Schlüssel zu unterstützen.
@@ -1923,8 +1923,8 @@ Zuvor eingeschränkte Admin-Benutzer konnten das Menü und die Schaltflächen �
 
 ### Steuer
 
-* _AC-13295_: [Problem] mit Feature/php8.1-Konstruktor Eigenschaft Promotion wee graph ql
-   * _Korrekturhinweis_: Ersetzen fast alle Eigenschaften mit Konstruktor Eigenschaft Promotion in Modul wee graph ql:
+* _AC-13295_: [Problem] Feature/php8.1 Konstruktor Eigenschaftsförderung wee Graph ql
+   * _Fix Hinweis_: Ersetzen Sie fast alle Eigenschaften durch die Konstruktor-Property-Promotion im Modul wee graph ql:
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39309>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/36975>
 * _ACP2E-3193_: Feste Produktsteuer (FPT) funktioniert nicht mit konfigurierbaren Produkten
@@ -1934,7 +1934,7 @@ Zuvor eingeschränkte Admin-Benutzer konnten das Menü und die Schaltflächen �
 ### Test-Framework
 
 * _AC-11654_: Integrationstest schlägt fehl bei testDbSchemaUpToDate aufgrund von JSON-Spaltentyp
-   * _Fixhinweis_: Das System erkennt JSON-Spaltentypen in der Datenbank Schema jetzt bei Integrationstests korrekt und verhindert so Test-Fehler aufgrund einer Nichtübereinstimmung zwischen dem Datenbank-Schema und dem deklarativen Schema. Zuvor identifizierte das System JSON-Spaltentypen fälschlicherweise als LONGTEXT in MariaDB, was dazu führte, dass Integrationstests fehlschlugen.
+   * _Fehlerbehebung_: Das System erkennt jetzt bei Integrationstests JSON-Spaltentypen im Datenbankschema korrekt, um Testfehler aufgrund einer Diskrepanz zwischen dem Datenbankschema und dem deklarativen Schema zu verhindern. Zuvor hat das System JSON-Spaltentypen in MariaDB fälschlicherweise als LONGTEXT identifiziert, wodurch Integrationstests fehlschlugen.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ef81f5a2>
 * _AC-13362_: [Problem] Rechtschreibkorrektur PHPDoc
    * _Fehlerbehebung_: Das System erkennt nun veraltete Methoden in IDEs aufgrund einer Rechtschreibkorrektur im PHPDoc korrekt. Zuvor führte ein Rechtschreibfehler im PHPDoc dazu, dass IDEs bestimmte Methoden nicht als veraltet erkannten.
@@ -1951,7 +1951,7 @@ Zuvor eingeschränkte Admin-Benutzer konnten das Menü und die Schaltflächen �
    * _Notiz korrigieren_: &#39;-
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d4de4726>
 * _ACP2E-3458_: [MFTF] StorefrontCheckoutProcessForQuoteWithoutNegotiatedPricesTest
-   * _Korrekturhinweis_: Fest mftfs
+   * _Fix Hinweis_: Feste Mftfs
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/078c387e>
 
 ### UI-Framework
@@ -1959,8 +1959,8 @@ Zuvor eingeschränkte Admin-Benutzer konnten das Menü und die Schaltflächen �
 * _AC-12128_: Behebung der Sicherheitslücke in Prototype.js CVE-2020-27511
    * _Fehlerbehebung_: Das System wurde aktualisiert, um die Sicherheitslücke CVE-2020-27511 in Prototype.js 1.7.3 zu beheben und so die allgemeine Sicherheit des Systems zu verbessern. Vor diesem Update war das System anfällig für einen regulären Ausdrucks-Denial-of-Service (ReDOS) durch Strippen von erstellten HTML-Tags.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12189_: Grunt Less verwendet das Präfix pub/prefix für Quellkarten
-   * _Korrekturhinweis_: Das System generiert jetzt less/css-Quellkarten ohne das Präfix /pub für Pfade, wenn Grunt verwendet wird, wodurch die Notwendigkeit einer Problemumgehung in der Webserver-Konfiguration entfällt. Bisher erforderte die Verwendung des Präfixes /pub in Quellkartenpfaden eine bestimmte Konfiguration im Webserver, um ordnungsgemäß zu funktionieren.
+* _AC-12189_: Grunt Less verwendet pub/prefix für Quellenkarten
+   * _Fehlerbehebung_: Das System generiert jetzt bei der Verwendung von grunt less/css-Quellzuordnungen ohne das /pub-Präfix für Pfade, sodass keine Problemumgehung in der Webserver-Konfiguration erforderlich ist. Zuvor war für die Verwendung des Präfixes /pub in Quellzuordnungspfaden eine bestimmte Konfiguration im Webserver erforderlich, damit es ordnungsgemäß funktioniert.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38837>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38840>
 * _AC-12432_: Feld für Komponentendatei der Benutzeroberfläche
@@ -1997,17 +1997,17 @@ Zuvor eingeschränkte Admin-Benutzer konnten das Menü und die Schaltflächen �
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/37776>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/34643>
 * _ACP2E-2529_: Ausnahme beim Überprüfen eines Geschenkgutscheinsaldos, wenn reCAPTCHA aktiviert ist
-   * _Fix-Hinweis_: Benutzer können das Guthaben des Geschenks Karte im Ansicht abrufen und Warenkorb Bildschirm bearbeiten. Bisher wurden diese Details nicht angezeigt, wenn reCAPTCHA aktiviert war.
+   * _Hinweis korrigieren_: Benutzer können auf dem Bildschirm „Warenkorb anzeigen“ und „Warenkorb bearbeiten“ den Guthaben der Geschenkkarte abrufen. Zuvor wurden diese Details nicht angezeigt, während reCAPTCHA aktiviert war.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2-page-builder/commit/4a2795ea>
-* _ACP2E-2729_: [KLARSTELLUNG] Funktionsanforderung ADA-Konformität
-   * _Korrekturhinweis_: Das System stellt jetzt die ADA-Konformität sicher, indem nicht unterstützte CSS-Eigenschaften entfernt und durch unterstützte in der print.css-Datei ersetzt werden. Zuvor führte die Verwendung nicht unterstützter CSS-Eigenschaften zu Browser Kompatibilitätsproblemen.
+* _ACP2E-2729_: [Klärung] Funktionsanfrage ADA-Konformität
+   * _Fehlerbehebung_: Das System stellt jetzt die ADA-Konformität sicher, indem es nicht unterstützte CSS-Eigenschaften entfernt und sie durch unterstützte Eigenschaften in der Datei „print.css“ ersetzt. Zuvor führte die Verwendung nicht unterstützter CSS-Eigenschaften zu Problemen mit der Browser-Kompatibilität.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/57a32313>
-* _ACP2E-3061_: [Cloud] Confusion Bibliothek Code in effect-drop.js von AC 2.4.4-p8
-   * _Korrekturhinweis_: Das System implementiert jetzt die effect-drop.js Bibliothek korrekt, wodurch das ordnungsgemäße Funktionieren von jQuery UI Effekten sichergestellt wird. Zuvor wurde der effect-drop.js Bibliothek fälschlicherweise mit dem effect-clip.js Bibliothek überschrieben, was zu potenziellen Problemen mit jQuery UI-Effekten führte.
+* _ACP2E-3061_: [Cloud] Konfusionsbibliothekscode in effect-drop.js von AC 2.4.4-p8
+   * _Fehlerbehebung_: Das System implementiert jetzt die Bibliothek „effect-drop.js“ korrekt, um die ordnungsgemäße Funktion der jQuery-UI-Effekte sicherzustellen. Zuvor wurde die Bibliothek „effect-drop.js“ versehentlich mit der Bibliothek „effect-clip.js“ überschrieben, was zu Problemen mit jQuery-UI-Effekten führen konnte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/35b1b1da>
-* _ACP2E-3367_: Kopfzeile | Spezielle Zeichen Aufbrechen des Abschnitts &quot;Customer Willkommen&quot;
-   * _Fehlerbehebungshinweis_: Nach der Korrektur werden Sonderzeichen im Begrüßungsabschnitt des Kunden korrekt angezeigt.
+* _ACP2E-3367_: Site-Kopfzeile | Sonderzeichen im Abschnitt „Kundenempfehlung“
+   * _Fehlerbehebung_: Nach der Fehlerbehebung werden Sonderzeichen im Begrüßungsabschnitt des Kunden korrekt angezeigt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/1366ae5e>
-* _ACP2E-3561_: Customer Segment Edition schlägt mit Datumsbereich fehl
-   * _Korrekturhinweis_: Es ist möglich, Kunden Segment mit Datumsbereich Bedingung zu speichern, wenn nur eines der Daten bearbeitet wurde.
+* _ACP2E-3561_: Die Segmentbearbeitung des Kunden schlägt mit daterange fehl
+   * _Hinweis korrigieren_: Es ist möglich, ein Kundensegment mit einer Bedingung für den Datumsbereich zu speichern, wenn nur eines der Datumsangaben bearbeitet wurde.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/a52ff98f>
