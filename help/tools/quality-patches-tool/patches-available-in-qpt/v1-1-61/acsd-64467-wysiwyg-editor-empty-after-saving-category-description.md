@@ -3,8 +3,7 @@ title: 'ACSD-64467: WYSIWYG-Editor nach dem Speichern der Kategoriebeschreibung 
 description: Wenden Sie den Patch ACSD-64467 an, um das Adobe Commerce-Problem zu beheben, bei dem der WYSIWYG-Editor nach dem Speichern einer Kategoriebeschreibung auf Store-Ansichtsebene leer erscheint.
 feature: Page Content
 role: Admin, Developer
-exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
-source-git-commit: b71447d5dac3208e537b29204dc8d47e8838f584
+source-git-commit: 4e883b3ec9b790f52dd56206539475e72bdf361d
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
