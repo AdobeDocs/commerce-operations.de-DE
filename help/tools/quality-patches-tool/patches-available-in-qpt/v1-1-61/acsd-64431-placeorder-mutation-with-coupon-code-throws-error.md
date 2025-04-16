@@ -3,15 +3,15 @@ title: 'ACSD-64431: Die „placeOrder“-Mutation mit Couponcode in der Anfrage 
 description: Wenden Sie den Patch ACSD-64431 an, um das Adobe Commerce-Problem zu beheben, bei dem die „placeOrder“-Mutation mit den Couponcode-Informationen in der Anfrage einen internen Server-Fehler auslöst, anstatt die Bestellung erfolgreich aufzugeben.
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
-source-git-commit: 883b9db12308c8832afbf709bc188edab746618f
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-64431: Die „placeOrder“-Mutation mit Coupon-Code in der Anfrage löst einen internen Fehler aus
+# ACSD-64431: Die „placeOrder“-Mutation mit Couponcode in der Anfrage löst einen internen Server-Fehler aus
 
 Der Patch ACSD-64431 behebt das Problem, dass die `placeOrder` Mutation mit den Couponcode-Informationen in der Anfrage einen internen Server-Fehler ausgibt, anstatt die Bestellung erfolgreich aufzugeben. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61 installiert ist. Die Patch-ID ist ACSD-64431. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
@@ -341,10 +341,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
 * Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
-
-## Zusätzliche Schritte nach der Patch-Installation erforderlich
-
-(Dieser Abschnitt ist optional. Nach der Anwendung des Patches sind möglicherweise einige Schritte erforderlich, um das Problem zu beheben.) 
 
 ## Verwandtes Lesen
 
