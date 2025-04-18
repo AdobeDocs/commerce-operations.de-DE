@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '26047'
+source-wordcount: '26039'
 ht-degree: 0%
 
 ---
@@ -195,8 +195,8 @@ Zuvor war es möglich, die Kundengruppe „Duplizierte Website-Preisgruppe“ in
    * _Fehlerbehebung_: Die Schaltflächen für Seitenaktionen werden nun korrekt auf der rechten Seite der Sticky-Kopfzeile im Admin-Bedienfeld ausgerichtet, was das professionelle Look-and-Feel verbessert. Zuvor waren diese Schaltflächen fälschlicherweise auf der linken Seite der Sticky-Kopfzeile unverankert.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38701>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: dev:di:info-Fehler in Magento 2.4.7
-   * _Hinweis beheben_: Das System zeigt jetzt beim Ausführen des Befehls dev.:di: die Konstruktorparameter korrekt an, um Fehler zu vermeiden. Zuvor führte die Ausführung dieses Befehls zu einem Fehler aufgrund eines Typkonflikts im -Argument.
+* _AC-11999_: `dev:di:info` Fehler in Magento 2.4.7
+   * _Hinweis beheben_: Das System zeigt jetzt beim Ausführen des `dev:di:info`-Befehls die Konstruktorparameter korrekt an, sodass keine Fehler mehr auftreten. Zuvor führte die Ausführung dieses Befehls zu einem Fehler aufgrund eines Typkonflikts im -Argument.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38740>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: Kontrollkästchen „Als Kunden-Opt-in anmelden“ nicht übersetzbar
@@ -1084,8 +1084,8 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
    * _Fehlerbehebung_: Das System verweist jetzt korrekt auf Klassen in -Modulen, wodurch ein reibungsloserer Betrieb gewährleistet und Abstürze aufgrund nicht vorhandener Klassen verhindert werden. Dazu gehören eine Fehlerbehebung im Indexer- und Creditmemo-Modul sowie die Implementierung der HttpGetActionInterface-Klasse in der PrintAction-Klasse. Zuvor führten falsche Klassenverweise zu Fehlern und potenziellen Systemabstürzen, und bestimmte Funktionen, wie der Dateiname für CreditMemo-PDF-Dateien und die Neuindizierung von Aktien, funktionierten nicht wie erwartet.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39126>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_: Möglichkeit, Bereich für den CLI-Befehl :di:/info zu definieren
-   * _Fehlerbehebung_: Das System ermöglicht es Entwicklerinnen und Entwicklern jetzt, einen Bereich für den CLI-Befehl dev:di:info zu definieren, wodurch der Entwicklungs- und Debugging-Prozess verbessert wird. Zuvor konnte dieser Befehl nur Informationen für den Bereich GLOBAL anzeigen.
+* _AC-12964_: Möglichkeit, Bereich für `dev:di:info` CLI-Befehl zu definieren
+   * _Fehlerbehebung_: Das System ermöglicht es Entwickelnden jetzt, einen Bereich für den `dev:di:info` CLI-Befehl zu definieren, wodurch der Entwicklungs- und Debugging-Prozess verbessert wird. Zuvor konnte dieser Befehl nur Informationen für den Bereich GLOBAL anzeigen.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38758>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [Problem] Fügen Sie der Formularelementvorlage „Bild“ die Eigenschaft isMultipleFiles hinzu
@@ -1506,8 +1506,8 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
 * _LYNX-399_: Platzhalter-Miniaturansicht wird zurückgegeben, wenn ein einfaches Produkt innerhalb eines gruppierten Produkts zum Warenkorb hinzugefügt wird
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem beim Hinzufügen eines einfachen Produkts (Teil eines gruppierten Produkts) zum Warenkorb ein Platzhalter-Miniaturbild zurückgegeben wurde, selbst wenn dem Produkt ein Bild zugewiesen war.
 Fehlerbehebungsdetails:
-・ Die Produktminiatur zeigt nun das zugewiesene Bild korrekt an, sofern verfügbar.
-・ Die Auswahl der Miniaturansichten berücksichtigt die Admin-Konfiguration unter:
+* Die Produktminiatur zeigt nun das zugewiesene Bild, sofern verfügbar, korrekt an.
+* Die Auswahl der Miniaturen berücksichtigt die Admin-Konfiguration unter:
 Stores > Konfiguration > Verkauf > Checkout > Warenkorb > Gruppiertes Produktbild.
 Dadurch wird ein konsistentes Verhalten von Miniaturansichten für gruppierte Produkte basierend auf Store-Einstellungen sichergestellt.
 * _LYNX-400_: Benutzerdefinierte Optionsattribute des Kunden funktionieren nicht mit Ganzzahlwerten
@@ -1517,14 +1517,14 @@ Dadurch wird ein konsistentes Verhalten von Miniaturansichten für gruppierte Pr
 * _LYNX-403_: only_x_left_in_stock gibt für konfigurierbare Produkte immer 0 zurück
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem das Attribut only_x_left_in_stock immer 0 für konfigurierbare Produkte zurückgab, wenn es mithilfe der übergeordneten SKU mit Optionen hinzugefügt wurde.
 Fehlerbehebungsdetails:
-・ Der Wert „only_x_left_in_stock“ spiegelt nun genau den Bestand der ausgewählten untergeordneten Variante wider statt der übergeordneten SKU.
-・ Dadurch wird sichergestellt, dass die Lagerbestände für konfigurierbare Produktvarianten auf den Warenkorb- und Produktseiten korrekt angezeigt werden.
+* Der Wert only_x_left_in_stock spiegelt nun genau den Bestand der ausgewählten untergeordneten Variante statt der übergeordneten SKU wider.
+* Dadurch wird sichergestellt, dass die Lagerbestände für konfigurierbare Produktvarianten auf den Warenkorb- und Produktseiten korrekt angezeigt werden.
 * _LYNX-411_: GraphQL-Abfrage gibt nicht den richtigen berechneten regulären Preis für anpassbare Produkte zurück
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem GraphQL für anpassbare Produkte nicht den richtigen berechneten regulären Preis zurückgab. Die Abfrage enthält jetzt korrekt den berechneten regulären Preis mit anpassbaren Werten (z. B. 125 USD) in der Preiseigenschaft, die sowohl den Grundpreis als auch etwaige zusätzliche Anpassungskosten widerspiegeln.
 * _LYNX-412_: Angewendete Steuern über EstimatedTotals bleiben mit aktualisierten Mutationen erhalten
    * _Fehlerbehebung_: Es wurde ein Problem mit der Mutation EstimatedTotals behoben, bei dem angewendete Steuern auf einem Warenkorb auch nach dem Aktualisieren der Region oder Postleitzahl beibehalten wurden. Die Mutation aktualisiert nun die angewendeten Steuern korrekt, wenn zwischen Regions- und Postcodewerten gewechselt wird, um sicherzustellen, dass nur die richtige Steuerregel auf der Grundlage der aktuellen Warenkorbdaten angewendet wird.
 * _LYNX-420_: is_available-Attribut in CartItemInterface gibt „true“ zurück, auch wenn das verkaufbare Lager kleiner als die Menge des Produkts ist
-   * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem das Attribut is_available in CartItemInterface fälschlicherweise „true“ zurückgegeben wurde, selbst wenn der verkaufbare Bestand kleiner als die angeforderte Produktmenge war. Das Feld is_available gibt jetzt korrekt „false“ zurück, wenn die Menge des Produkts den verfügbaren Bestand überschreitet.
+   * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem das Attribut is_available in CartItemInterface fälschlicherweise „true“ zurückgegeben wurde, selbst wenn der verkaufbare Bestand kleiner als die angeforderte Produktmenge war. Das Feld is_available gibt jetzt korrekt „false“ zurück, wenn die Produktmenge den verfügbaren Bestand überschreitet.
 * _LYNX-425_: Regulärer Produktpreis mit 12 Dezimalstellen und falschem Wert
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem der Wert „Regular_Price“ in den Pfaden „product.price_range.maximum_price“ und „minimum_price“ in GraphQL nicht mit dem Katalogpreis übereinstimmte, wenn mehrere Steuersätze angewendet wurden. Der reguläre Preis spiegelt nun den Katalogpreis über alle Steuerkonfigurationen hinweg konsistent wider und gewährleistet eine genaue Einzelpreisfindung, Berechnungen der GesamtZeilenkosten und Rabattprüfungen in der Warenkorbzusammenfassung.
 * _LYNX-430_: GraphQL-Serverfehler im Warenkorb mit nicht vorrätigem gebündeltem Produkt
@@ -1534,9 +1534,9 @@ Fehlerbehebungsdetails:
 * _LYNX-447_: GraphQL-Server-Fehler im Warenkorb mit only_x_left_in_stock im Paket-Produkt
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem das Abrufen eines Warenkorbs, der ein gebündeltes Produkt mit dem Feld only_x_left_in_stock in der GraphQL-Abfrage enthält, zu einem internen Server-Fehler führte. GraphQL gibt jetzt für das Feld only_x_left_in_stock korrekt einen Float oder null zurück, ohne Fehler zu verursachen.
 * _LYNX-464_: GraphQL-Fehler beim Entfernen anderer Produkte mit unzureichendem konfigurierbarem Produkt im Warenkorb
-   * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem Warenkorb zu entfernen, zu dem GraphQL-Fehler „Die angeforderte Menge ist nicht verfügbar“ führte, wenn der Warenkorb auch konfigurierbare Produkte mit unzureichendem Vorrat enthielt. Die Entfernung funktioniert nun erwartungsgemäß, ohne dass Fehler ausgelöst werden.
+   * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem Warenkorb zu entfernen, zu einem GraphQL-Fehler „Die angeforderte Menge ist nicht verfügbar“ führte, wenn der Warenkorb auch konfigurierbare Produkte mit unzureichendem Vorrat enthielt. Die Entfernung funktioniert nun erwartungsgemäß, ohne dass Fehler ausgelöst werden.
 * _LYNX-469_: Es können keine Produkte hinzugefügt werden, da bei der Mutation der SKU die Groß-/Kleinschreibung beachtet wird
-   * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation den Fehler „PRODUCT_NOT_FOUND“ zurückgab, wenn SKUs mit unterschiedlicher Groß-/Kleinschreibung verwendet wurden. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
+   * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation einen „PRODUCT_NOT_FOUND“-Fehler zurückgab, wenn SKUs mit unterschiedlicher Groß-/Kleinschreibung verwendet wurden. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
 * _LYNX-603_: Produktattribut > Marken-Kurzform-™ wird als ™ zurückgegeben
    * _Hinweis:_ Problem mit der Zeichenkodierung mit dem Produktnamen für die GraphQL-API behoben
 * _LYNX-619_: Problem mit updateCustomerEmail-Mutation
