@@ -3,17 +3,17 @@ title: 'ACSD-63323: Löst [!UICONTROL Select All] Funktionalität auf und verbes
 description: Wenden Sie den Patch ACSD-63323 an, um das Adobe Commerce-Problem zu beheben, bei dem die Option [!UICONTROL Select All] nicht funktioniert, wenn Produkte zu einer Kategorie hinzugefügt werden. Darüber hinaus wird sichergestellt, dass die Paginierung und die Beschriftung der Datensatzanzahl korrekt funktionieren, wenn Produkte über das Popup-Raster zu einer Kategorie hinzugefügt werden.
 feature: Products
 role: Admin, Developer
-source-git-commit: f3f0cc93adf83b485ca50811adcc561638e3c5c2
+exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+source-git-commit: d24909ea2571eacafac1ff6b225e87bc40d320bc
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63323: Löst [!UICONTROL Select All] Funktionalität auf und verbessert die Paginierung und Anzahl der Einträge im Produktkategorien-Popup
 
-Mit dem Patch ACSD-63323 wird das Problem behoben, dass die Option **[!UICONTROL Select All]** beim Hinzufügen von Produkten zu einer Kategorie nicht funktioniert. Darüber hinaus wird sichergestellt, dass die Paginierung und die Beschriftung der Datensatzanzahl korrekt funktionieren, wenn Produkte über das Popup-Raster zu einer Kategorie hinzugefügt werden. Dieser Patch ist verfügbar, wenn die [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) installiert ist. Die Patch-ID ist ACSD-63323. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
+Mit dem Patch ACSD-63323 wird das Problem behoben, dass die Option **[!UICONTROL Select All]** beim Hinzufügen von Produkten zu einer Kategorie nicht funktioniert. Darüber hinaus wird sichergestellt, dass die Paginierung und die Beschriftung der Datensatzanzahl korrekt funktionieren, wenn Produkte über das Popup-Raster zu einer Kategorie hinzugefügt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 installiert ist. Die Patch-ID ist ACSD-63323. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -68,5 +68,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-
-
