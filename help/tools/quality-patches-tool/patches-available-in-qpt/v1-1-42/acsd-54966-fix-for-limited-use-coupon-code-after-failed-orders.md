@@ -4,9 +4,9 @@ description: Wenden Sie den Patch ACSD-54966 an, um das Adobe Commerce-Problem z
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
 exl-id: e08062e5-62ff-4da6-918f-896af36edccc
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: f109d3544912ee09b25d882333840cf81d2f08e3
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,12 @@ Mit dem Patch ACSD-54966 wird das Problem behoben, das die Wiederverwendung von 
 **Der Patch wird für die Adobe Commerce-Version erstellt:**
 
 * Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p1
+* Adobe Commerce 2.4.7-p2
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.5 - 2.4.6-p3
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.5 - 2.4.5-p10, 2.4.6 - 2.4.6-p8
+* Adobe Commerce: 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
@@ -62,6 +64,5 @@ Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
-
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].
