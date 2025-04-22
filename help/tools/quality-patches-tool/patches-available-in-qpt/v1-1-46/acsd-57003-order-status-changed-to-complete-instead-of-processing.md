@@ -4,9 +4,9 @@ description: Wenden Sie den Patch ACSD-57003 an, um das Adobe Commerce-Problem z
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
 exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 128107310416e97edca3b122e97456138d04073f
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Mit dem Patch „ACSD-57003“ wird das Problem behoben, dass der Bestellstatus 
 
 **Der Patch wird für die Adobe Commerce-Version erstellt:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p3
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p3, 2.4.6-p8, 2.4.7-p3
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p3
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p9, 2.4.7-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
