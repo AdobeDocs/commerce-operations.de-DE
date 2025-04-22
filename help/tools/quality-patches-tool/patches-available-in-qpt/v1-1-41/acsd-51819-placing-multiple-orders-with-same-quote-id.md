@@ -4,9 +4,9 @@ description: Wenden Sie den ACSD-51819 Patch an, um das Adobe Commerce-Problem z
 feature: Orders, Checkout
 role: Admin, Developer
 exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 5f22591c499f0f5d349994195731c7c87512f5f0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Der Patch ACSD-51819 behebt das Problem, dass mehrere Bestellungen über dieselb
 
 **Der Patch wird für die Adobe Commerce-Version erstellt:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4-p2
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4-p2, 2.4.5-p5, 2.4.6, 2.4.6-p4, 2.4.7-p1
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.4-p3
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.4-p11, 2.4.5-p3 - 2.4.5-p10, 2.4.6 - 2.4.6-p8, 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
