@@ -4,9 +4,9 @@ description: Wenden Sie den Patch ACSD-62979 an, um das Adobe Commerce-Problem z
 feature: GraphQL
 role: Admin, Developer
 exl-id: 832baae1-34b4-4ca8-bfa9-221aa60da67e
-source-git-commit: 6803cf2bf27e99300f682308517011b73127fd94
+source-git-commit: 187a0056971e6bec324b5cc9d374375bbfb84dd8
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Der Patch ACSD-62979 behebt das Problem, dass die Verwendung der falschen Store-
 
 **Der Patch wird für die Adobe Commerce-Version erstellt:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p7, 2.4.6
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6, 2.4.6-p7, 2.4.7-p3
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.6-p8
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
