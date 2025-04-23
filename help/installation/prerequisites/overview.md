@@ -2,9 +2,9 @@
 title: Voraussetzungen für die lokale Installation
 description: Erfahren Sie mehr über die Softwareabhängigkeiten, die für lokale Installationen von Adobe Commerce erforderlich sind.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Vor der Installation von Adobe Commerce müssen Sie folgende Schritte ausführen:
 
-* Richten Sie einen oder mehrere Hosts ein, die die [Systemanforderungen](../system-requirements.md) erfüllen.
+* Richten Sie einen oder mehrere Hosts ein, die die [Systemanforderungen](../system-requirements.md) erfüllen, die auf der Registerkarte *Commerce On-Premise* aufgeführt sind.
 * Wenn Sie mehr als einen Webknoten mit Lastenausgleich einrichten, richten Sie diesen Teil Ihres Systems ein und testen Sie ihn (_)_ Sie die Anwendung.
 * Stellen Sie sicher, dass Sie Ihr gesamtes System an verschiedenen Stellen während der Installation sichern können, damit Sie es bei Problemen zurücksetzen können.
 
@@ -66,11 +66,11 @@ Informationen zum Installieren oder Aktualisieren von Apache finden Sie unter [A
 
 ### PHP
 
-Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen von PHP und [PHP](../system-requirements.md#php-settings) für PHP-Anforderungen.
+Auf der Registerkarte *Commerce On-Premises* in [Systemanforderungen](../system-requirements.md) finden Sie unterstützte Versionen von PHP und [PHP](../system-requirements.md#php-settings) für PHP-Anforderungen.
 
 ### MySQL
 
-Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Siehe [Systemanforderungen](../system-requirements.md) für unterstützte Versionen.
+Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie auf der ** Commerce On-Premise[ in ](../system-requirements.md)Systemanforderungen.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -110,7 +110,7 @@ So überprüfen Sie Ihre OpenSearch-Installation:
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-So überprüfen Sie die Elasticsearch-Installation:
+So überprüfen Sie Ihre Elasticsearch-Installation:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
