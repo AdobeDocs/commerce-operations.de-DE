@@ -1,7 +1,7 @@
 ---
-source-git-commit: 736e2b53cc6df0083fc02c7e6e88da1e7ca00b0d
+source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 2%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### 29. April 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Ein bekanntes Problem mit Braintree wurde zu den <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches#p5">2.4.7-p5 hinzugefügt</a>.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e195b58c7ae5573373f644c583eb12633703591">0E195B</a> (Bestätigung)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 22. April 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Der Abschnitt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-42/acsd-54966-fix-for-limited-use-coupon-code-after-failed-orders">Betroffene Produkte und Versionen“ im Patch „ACSD-54966“ wurde aktualisiert</a></p>
+</td>
+      <td>
+        QPT
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aa47a83f4ec38aa6ff96008cbab2733602465435">aa47a8</a> (Bestätigung)</td>
+    </tr>
+    <tr>
+      <td><p>Der Abschnitt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62979-incorrect-store-id-in-the-graphql-header-causes-a-fatal-memory-error">Betroffene Produkte und Versionen“ im Patch „ACSD-62979“ wurde aktualisiert</a></p>
+</td>
+      <td>
+        QPT
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4f16e57e339fd9ef7de1e0da30eaec7b7bb38396">4F16E5</a> (Bestätigung)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 18. April 2025
 
