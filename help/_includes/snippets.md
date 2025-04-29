@@ -1,5 +1,5 @@
 ---
-source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe Commerce-Versionen können abwärtsinkompatible Änderungen (BICs) enthalten. Informationen zu abwärtsinkompatiblen Änderungen finden Sie unter [BIC-Referenz](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Die wichtigsten abwärtsinkompatiblen Probleme werden in [BIC-Highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/) beschrieben. Nicht alle Versionen enthalten wichtige BICs.
+>Adobe Commerce-Versionen können abwärtsinkompatible Änderungen (BICs) enthalten. Informationen zu abwärtsinkompatiblen Änderungen finden Sie unter [BIC-Referenz](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Die wichtigsten abwärtsinkompatiblen Probleme werden in [BIC-Highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/) beschrieben. Nicht alle Versionen enthalten wichtige BICs.
 
 ## Beta-Haftungsausschluss {#beta}
 
 >[!IMPORTANT]
 >
->Beta-Versionen können Mängel enthalten und werden ohne Mängelgewähr und ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (von Adobe-Support-Services oder anderen Services). Kunden sollten Vorsicht walten lassen und sich in keiner Weise auf die korrekte Funktionsweise oder Leistung von Beta-Versionen und/oder Begleitdokumenten oder -materialien verlassen. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
+>Beta-Versionen können Mängel enthalten und werden ohne Mängelgewähr und ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (über Adobe Support Services oder andere Services). Kunden sollten Vorsicht walten lassen und sich in keiner Weise auf die korrekte Funktionsweise oder Leistung von Beta-Versionen und/oder Begleitdokumenten oder -materialien verlassen. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
 
 ## CVE-Mitteilung {#cve-notice}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Obwohl der Code für Verbesserungen und Fehlerbehebungen in diesen Versionshinweisen mit Adobe Commerce gebündelt ist, werden mehrere dieser Projekte (z. B. B2B, Page Builder und Progressiven Webs Application (PWA) Studio) ebenfalls unabhängig voneinander veröffentlicht. Fehlerbehebungen für diese Projekte werden in den separaten, projektspezifischen Versionsinformationen dokumentiert, die in der Dokumentation für jedes Projekt verfügbar sind. Siehe [Produktversionsübersicht](/help/release/release-notes/overview.md).
+>Obwohl der Code für Verbesserungen und Fehlerbehebungen in diesen Versionshinweisen mit Adobe Commerce gebündelt ist, werden mehrere dieser Projekte (z. B. B2B, Page Builder und Progressive Web Applications (PWA) Studio) ebenfalls unabhängig voneinander veröffentlicht. Fehlerbehebungen für diese Projekte werden in den separaten, projektspezifischen Versionsinformationen dokumentiert, die in der Dokumentation für jedes Projekt verfügbar sind. Siehe [Produktversionsübersicht](/help/release/release-notes/overview.md).
 
 ## PHP-Prozesssteuerung {#php-process-control}
 

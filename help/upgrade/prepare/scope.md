@@ -2,7 +2,7 @@
 title: Upgrade-Umfang verstehen
 description: Erfahren Sie mehr über abwärtsinkompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce-Module oder Erweiterungen von Drittanbietern auswirken können.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Lesen Sie [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce
 
 Adobe Commerce-Versionen können abwärtsinkompatible Änderungen enthalten. Weitere Informationen finden Sie in der Dokumentation zu abwärtsinkompatiblen Änderungen:
 
-- **[Wichtige Änderungen](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)** - Änderungen, die erhebliche Auswirkungen haben und detaillierte Erläuterungen und spezielle Anweisungen erfordern, um sicherzustellen, dass Drittanbietermodule weiterhin funktionieren.
+- **[Wichtige Änderungen](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)** - Änderungen, die erhebliche Auswirkungen haben und detaillierte Erläuterungen und spezielle Anweisungen erfordern, um sicherzustellen, dass Drittanbietermodule weiterhin funktionieren.
 - **[Referenz für geringfügige Änderungen](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)** - Referenzdokumentation, die aus der Code-Basis generiert wurde und geringfügige Änderungen an Klassen, API-Zugehörigkeit, Datenbank, Injektion von Abhängigkeiten, Schnittstellen, Layouts, System und XSD beschreibt.
 
 ## Erweiterungen von Drittanbietern
