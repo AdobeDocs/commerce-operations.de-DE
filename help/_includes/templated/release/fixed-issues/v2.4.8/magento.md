@@ -1,7 +1,7 @@
 ---
-source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
+source-git-commit: c96f5620bbde1b15f6419c482c790517cc8de70c
 workflow-type: tm+mt
-source-wordcount: '26039'
+source-wordcount: '26036'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ Zuvor war es möglich, die Kundengruppe „Duplizierte Website-Preisgruppe“ in
    * _Hinweis_: Asynchrone und Synchronisierungsvorgänge sind zuvor aufgrund von Fehlern bei der Produktspeicherung fehlgeschlagen, wenn die SKU in der Payload fehlt. Nach der Behebung schlagen die Vorgänge der asynchronen und synchronisierten Produkt-REST-API mit der entsprechenden Ausnahmemeldung fehl.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/66dea0de>
 * _ACP2E-3376_: [CLOUD] Die Basispreise können nicht mit der REST-API aktualisiert werden (der Wert von „value_id“ in „catalog_product_entity_decimal“ wird nicht korrekt inkrementiert.)
-   * _Fehlerbehebung_: Vor dieser Fehlerbehebung wurde beim Aufruf der rest-API /rest/default/V1/products/base-prices die Inkrement-ID fälschlicherweise erhöht, sodass eine Lücke zwischen den Werten entstand. Nach der Fehlerbehebung wird die Inkrement-ID wie erwartet inkrementell erhöht. Außerdem wurde der Wertebereich des Feldes vergrößert.
+   * _Fehlerbehebung_: Vor dieser Fehlerbehebung wurde beim Aufruf der rest-API /rest/default/V1/products/base-prices die Inkrement-ID fälschlicherweise erhöht, sodass eine Lücke zwischen den Werten entstand. Nach der Fehlerbehebung wird die Inkrement-ID wie erwartet inkrementell erhöht. Auch die value_id Feldreichweite wurde vergrößert.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3460_: Bestellartikel sind in E-Mails mit Gutschriften für die API POST V1/order/:orderId/fund nicht sichtbar
    * _Fehlerbehebung_: Vor dieser Fehlerbehebung enthält eine Kundin oder ein Kunde, die bzw. der eine Gutschrift aus einer API-Anfrage erstellt, die send_email benachrichtigt, nicht das Produktdetailraster. Nachdem diese Fehlerbehebung angewendet wurde, sendet der Kunde eine Anfrage zur Gutschrift-API und findet die Produktdetails in der E-Mail.
@@ -288,7 +288,7 @@ Zuvor waren nach der Anmeldung die Produkte, die als Gastbenutzer zur Vergleichs
 * _AC-9843_: i18n:collect-phrases bricht die Übersetzungsintegrität
    * _Fehlerbehebung_: Der Befehl `bin/magento i18n:collect-phrases -o` erfasst und fügt nun neue Ausdrücke aus JavaScript- und PHTML-Dateien hinzu, um sicherzustellen, dass Übersetzungen korrekt in der Übersetzungsdatei widergespiegelt werden. Zuvor konnte das System nicht mehrzeilige Übersetzungsausdrücke aus JavaScript-Dateien und Ausdrücke aus .phtml-Dateien in die Übersetzungsdatei einbeziehen, was zu unvollständigen oder falschen Übersetzungen führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/0c53bbf7>
-* _ACP2E-2787_: Apostroph in Store-Ansicht wird durch &quot;&quot; ersetzt
+* _ACP2E-2787_: Apostroph im Namen der Store-Ansicht wird durch &amp;#039; ersetzt.
    * _Hinweis korrigieren_: Die Filter für die Store-Ansicht des Rasters zeigen jetzt Apostrophe korrekt an
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38395>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/39d54c2d>
@@ -338,16 +338,16 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
    * _Hinweis korrigieren_: Die Schaltflächen in den Spalten des Seiten-Builders sind jetzt korrekt ausgerichtet. Zuvor waren sie in den Page Builder-Spalten falsch ausgerichtet.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2-page-builder/commit/1a52ef4c>
 * _ACP2E-3431_: Bericht „Bestellte Produkte“ wird nicht exportiert. 404-Fehler.
-   * _Fehlerbehebung_: Der Export von sortierten Produkten in CSV und XML funktioniert jetzt erwartungsgemäß
+   * _Fehlerbehebungshinweis_: Der Bericht &quot;Bestellte Produkte&quot; wird an CSV übergeben und XML funktioniert jetzt wie erwartet
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/88660e79>
 * _ACP2E-3457_: TinyMCE JS-Fehler in der Konsole nach JS-Minimierung aktivieren mit Produktionsmodus
    * _Fehlerbehebung_: Zuvor wurden durch die Aktivierung der JavaScript-Minimierung im Produktionsmodus im Admin-Bedienfeld JavaScript-Fehler im Zusammenhang mit TinyMCE 6 in der Browser-Konsole angezeigt, was sich auf die Funktionalität und das Benutzererlebnis auswirkte. Dieses Problem wurde nun behoben, sodass TinyMCE 6 reibungslos funktioniert und keine Fehler erzeugt werden, auch wenn die JS-Minimierung aktiviert ist.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/56463d5e>
 * _ACP2E-3459_: Antrag auf zusätzliche Änderungen, um die Fehlerbehebung ACP2E-3375 vollständig abzuschließen
-   * _Notiz korrigieren_: &#39;-
+   * _Korrekturhinweis_: &#39;-
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/d50f6b5d>
-* _ACP2E-3503_: Automatisches Aktivieren neuer ACL-Berechtigungen
-   * _Fehlerbehebung_: Neue Berechtigungen, die benutzerdefinierten Modulen hinzugefügt wurden, gewähren nicht mehr automatisch Zugriff auf alle vorhandenen Benutzerrollen, es sei denn, sie sind explizit konfiguriert.
+* _ACP2E-3503_: Automatisch Aktivierung neuer ACL-Berechtigungen
+   * _Korrekturhinweis_: Neu Berechtigungen, die benutzerdefinierten Modulen hinzugefügt werden, gewähren nicht mehr automatisch Zugriff auf alle vorhandenen User-Rollen, es sei denn, sie werden explizit konfiguriert.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/3f12d152>
 * _ACP2E-3509_: Benutzerbericht für Admin-Aktionsprotokoll zeigt keine Details für adminhtml_user_delete an
    * _Fix Hinweis_: Adminhtml_user_delete protokolliert jetzt wichtige Details korrekt. Zuvor wurden keine Protokolle für das Löschen von Benutzern generiert.
@@ -576,10 +576,10 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
 ### Warenkorb &amp; Checkout, Checkout/ Eine Seite Checkout
 
 * _AC-9386_: [Zufallsfehler] Das E-Mail-Feld wird nicht gerendert oder benötigt viel Zeit, um auf der Kaufbestätigungs-, Versand- oder Zahlungsseite anzuzeigen.
-   * _Fehlerbehebung_: Commerce rendert jetzt das **[!UICONTROL Email]** auf den Seiten Checkout-Versand und Zahlung wie erwartet. Zuvor war dieses Feld entweder nicht vorhanden oder wurde langsam gerendert.
+   * _Korrekturhinweis_: Commerce rendert das **[!UICONTROL Email]** Feld jetzt auf der Checkout Versand- und Zahlungsseite wie erwartet. Zuvor war dieses Feld entweder nicht vorhanden oder wurde nur langsam gerendert.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/e1babcfd>
 
-### Warenkorb und Checkout, Bestellung
+### Warenkorb und Kasse, Bestellung
 
 * _ACP2E-3097_: Datumsauswahl für ein Produkt mit mehreren anpassbaren Optionen, wobei Datumsfelder bei der Bestellung von einem Administrator nicht funktionieren
    * _Fehlerbehebung_: Die Datumsauswahl wird jetzt für alle Datumsfelder korrekt angezeigt, wenn ein Produkt mit mehreren anpassbaren Datumsoptionen im Erstellungsprozess von Admin-Aufträgen konfiguriert wird. Zuvor wurde die Datumsauswahl nur für das erste Datumsfeld angezeigt, sodass die verbleibenden Felder keine Datumsauswahl aufweisen.
@@ -588,7 +588,7 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
 ### Warenkorb und Checkout, Versand
 
 * _AC-12119_: Sofortkauf „Günstigster Versand“ für konfigurierbare Produkte defekt
-   * _Fehlerbehebung_: Mit der Funktion Instant Purchase wurde fälschlicherweise die teurere Versandoption im Geschäft für konfigurierbare Produkte anstelle der günstigsten Flatrate-Methode ausgewählt. Durch diese Fehlerbehebung wird sichergestellt, dass die richtige Versandmethode auf der Grundlage des tatsächlichen Preises ausgewählt wird.“
+   * _Korrekturhinweis_: Die Funktion Sofortkauf hat fälschlicherweise die teurere In-Store-Lieferung Option für konfigurierbare Produkte anstelle der günstigsten Flatrate-Methode ausgewählt. Diese Fehlerbehebung stellt sicher, dass die richtige Versandart auf der Grundlage des tatsächlichen Preises ausgewählt wird.&quot;
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38811>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38819>, <https://github.com/magento/magento2/commit/29fe9097>
 
@@ -758,8 +758,8 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
 * _ACP2E-3286_: Verwandte Produkte Alle auswählen/Alle auswählen Problem aufheben
    * _Hinweis korrigieren_: Zuvor funktionierten die Schaltflächen „Alle auswählen“/„Alle Auswahl aufheben“ für zugehörige Produkte nicht ordnungsgemäß, wenn ein Produkt manuell ausgewählt wurde. Nach der Fehlerbehebung funktionieren diese Schaltflächen nun auch nach der manuellen Auswahl konsistent und stellen sicher, dass alle Produkte richtig ausgewählt oder deaktiviert sind.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/fd5cf3af>
-* _ACP2E-3336_: [Cloud] Übersetzen von Warnhinweis-E-Mails in die falsche Sprache
-   * _Fehlerbehebung_: Beim Versand von Stock-/Preis-Warnhinweisen für eine Website mit mehreren Store-Ansichten in verschiedenen Sprachen wird die Sprache für die Store-Ansicht, in der der Warnhinweis erstellt wurde, in der E-Mail verwendet.
+* _ACP2E-3336_: [Cloud] Stock Warnhinweis E-Mail-Übersetzung in die falsche Sprache
+   * _Fixhinweis_: Wenn Sie Stock-/Preisalarme für eine Website mit mehreren Geschäft Ansichten in verschiedenen Sprachen senden, wird in der E-Mail die Sprache des Geschäft Ansicht verwendet, in dem der Warnhinweis erstellt wurde.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/a4cf5e62>, <https://github.com/magento/inventory/commit/9f3e63d1>
 * _ACP2E-3350_: Die Namen von deaktivierten Kategorien sind in der Kategoriestruktur nicht mehr ausgegraut
    * _Hinweis korrigieren_: Zuvor waren deaktivierte Kategorien in der Kategoriestruktur nicht ausgegraut. Jetzt werden sie mit einem Graustufeneffekt angezeigt.
@@ -989,8 +989,8 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
    * _Fehlerbehebung_: Das System unterstützt jetzt die Verwendung der Filter „created_at“, „status“ und „grand_total“ in Kundenauftragsabfragen und hat ein Problem behoben, bei dem mehrere Filter nicht korrekt angewendet wurden. Zuvor hat das System diese Filter nicht unterstützt und würde nicht alle Filter anwenden, wenn mehr als einer in einer Abfrage verwendet wurde.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38392>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/36949>
-* _AC-10991_: zufällig mit Abfragen aus verwandten/Upsell-/Crosssell-Blöcken und Preisindizierung überflutet werden
-   * _Fehlerbehebung_: Das System optimiert jetzt Abfragen aus verwandten, Upsell- und Crosssell-Blöcken, verbessert die Leistung und verhindert, dass die Site aufgrund übermäßiger Abfragen abstürzt. Zuvor konnte das System mit Abfragen aus diesen Blöcken überlastet werden, was zu erheblichen Verzögerungen führte und möglicherweise die Site lahmlegte.
+* _AC-10991_: Willkürliche Überflutung mit Abfragen von verwandten / Upsell / Crosssell-Blöcken und Preisindexierung
+   * _Fehlerbehebung_: Das System optimiert jetzt Abfragen aus verwandten, Upsell- und Crosssell-Blöcken, verbessert die Leistung und verhindert, dass die Site aufgrund übermäßiger Abfragen abstürzt. Zuvor konnte das System mit Abfragen aus diesen Blöcken überlastet werden, was zu erheblichen Verlangsamungen führte und die Website möglicherweise zum Absturz brachte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/36667>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38050>
 * _AC-11423_: Exception: Warning: Try to access array offset in… -> Calendar.php since upgrade to ICU 74.1 (PHP Intl)
@@ -1005,8 +1005,8 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
    * _Fehlerbehebung_: Die PHPDocs für die Methode \Magento\Framework\Data\Collection::getItemById wurden aktualisiert, sodass sie null als möglichen Rückgabetyp enthalten, wodurch Probleme mit statischen Analyse-Tools behoben werden. Zuvor wurde in den PHPDocs der Methode nicht null als möglicher Rückgabetyp angegeben, was zu Warnungen oder Fehlern bei der statischen Analyse führte, wenn die Methode in bedingten Anweisungen verwendet wurde.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38485>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38439>
-* _AC-11592_: [Problem] Nur gültige Voreinstellungen beim Setup zulassen:di:kompilieren
-   * _Fehlerbehebung_: Das System gibt jetzt während des Befehls setup:di:compile einen Fehler aus, wenn eine Voreinstellung für eine Klasse erstellt wird, die nicht vorhanden ist oder ausdrücklich ausgeschlossen wird, sodass nur gültige Voreinstellungen zulässig sind. Zuvor schlugen diese Szenarien im Hintergrund fehl und machten möglicherweise alle Plug-ins, die mit den ursprünglichen Klassen verknüpft sind, unbrauchbar.
+* _AC-11592_: [Problem] Nur gültige Voreinstellungen während des `setup:di:compile` zulassen
+   * _Fehlerbehebung_: Das System gibt jetzt während des `setup:di:compile`-Befehls einen Fehler aus, wenn eine Voreinstellung für eine Klasse erstellt wird, die nicht vorhanden ist oder speziell ausgeschlossen wurde, sodass nur gültige Voreinstellungen zulässig sind. Zuvor schlugen diese Szenarien im Hintergrund fehl und machten möglicherweise alle Plug-ins, die mit den ursprünglichen Klassen verknüpft sind, unbrauchbar.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38517>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/33161>
 * _AC-11651_: Magento versucht, die schreibgeschützte Eigenschaft in der __wakeup-Methode von LoggerProxy zu ändern
@@ -1206,16 +1206,16 @@ Wir können jetzt den Status der benutzerdefinierten Bestellung aktualisieren, w
 * _AC-8951_: Die physischen Geschenkkartenoptionen haben nicht die richtige Sortierreihenfolge
    * _Fehlerbehebung_: Das System sortiert jetzt bei der Abfrage über GraphQL die Optionen physischer Geschenkkartenprodukte korrekt, was eine konsistente Darstellung mit dem Luma-Design gewährleistet. Zuvor war die Sortierreihenfolge gemäß dem Luma-Design falsch, was zu einer falschen Anzeige und Sortierung von Optionen wie Absendername, Empfängername und Betrag führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/1bafc571>
-* _AC-9157_: Der Cache des [GraphQL]-Resolvers wird beim Erstellen/Bearbeiten/Verschieben/Löschen eines Staging-Updates ungültig
-   * _Fehlerbehebung_: Das System stellt jetzt sicher, dass der Resolver-Cache nicht beim Erstellen, Bearbeiten, Verschieben oder Löschen eines Staging-Updates ungültig wird, sondern nur, wenn das Staging-Update auf die Entität angewendet wird. Zuvor wurde der Resolver-Cache vorzeitig invalidiert, noch bevor die Staging-Aktualisierung angewendet wurde, was zu unnötigen Cache-Invalidierungen führte.
+* _AC-9157_: [Der GraphQL-Resolver-Cache] wird beim Erstellen/Bearbeiten/Verschieben/Löschen eines Staging-Updates ungültig gemacht
+   * _Korrekturhinweis_: Das System stellt jetzt sicher, dass der Resolver-Cache beim Erstellen, Bearbeiten, Verschieben oder Löschen eines Staging-Updates nicht ungültig gemacht wird, sondern nur, wenn das Staging-Update auf die Entität angewendet wird. Zuvor wurde der Resolver-Cache vorzeitig ungültig gemacht, Linear bevor das Staging-Update angewendet wurde, was zu unnötigen Cache-Invalidierungen führte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _ACP2E-2642_: Fastly-Cache nicht für die Aktualisierung des Inhalts-Staging gelöscht
    * _Fehlerbehebung_: Jetzt wird GraphQL mit PageBuilder-Inhaltsantwort-Cache ungültig, wenn die PageBuilder-Inhaltsentitäten aktualisiert werden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ba25af8a>
 * _ACP2E-2653_: Deaktivieren der mehrschichtigen Navigation - entfernt die Aggregation nicht aus GraphQL
-   * _Hinweis:_ Problem wurde behoben, nachdem die Prüfung beim Anfordern einer Produktsuche mit Kategorieaggregationen über eine GraphQL-Abfrage über die Admin-Konfigurationseinstellung „Katalog > Mehrschichtige Navigation > Kategoriefilter anzeigen“ angewendet wurde.
+   * _Korrekturhinweis_: Das Problem wurde behoben, nachdem die Prüfung beim Anfordern eines Produkts suchen mit Kategorie Aggregationen über eine GraphQL-Abfrage angewendet wurde, wenn die Admin-Konfigurationseinstellung &quot;Katalog > mehrschichtige Navigation > Anzeigen Kategorie Filtern&quot;.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/12e071c3>
-* _ACP2E-2928_: GraphQL Products-Aufruf, der den Preisfilter {from:„0“} enthält, gibt kein Ergebnis zurück
+* _ACP2E-2928_: Der Aufruf von GraphQL-Produkten, der den Preisfilter {from:&quot;0&quot;} enthält, liefert kein Ergebnis
    * _Fehlerbehebung_: Zuvor gab GraphQL-Produkte, die mit dem Filter nach Nullpreisen suchten, aufgrund einer ausgelösten Ausnahme überhaupt keine Ergebnisse zurück. Jetzt gibt die Suche die erwarteten Ergebnisse zurück.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/c971859e>
 * _ACP2E-2974_: Übersetzungen für Kundenrückgabeattribute werden für die jeweilige StoreView nicht in der GraphQL-API angezeigt
@@ -1406,13 +1406,13 @@ Zuvor dem Admin-Store anstelle des entsprechenden Stores zugewiesen.
    * _Fehlerbehebung_: Das System zeigt jetzt Produktlisten korrekt ohne Leerzeichen an, wenn Produkte auf „Nicht vorrätig“ eingestellt sind, was eine konsistente und genaue Anzeige der verfügbaren Produkte gewährleistet. Zuvor führte das Festlegen eines Produkts auf „Nicht vorrätig“ dazu, dass ein leerer Bereich in der Produktliste angezeigt wurde, was das Layout störte und Kunden möglicherweise verwirrte.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ea79f7dd>, <https://github.com/magento/inventory/commit/b59e48ca>
 * _ACP2E-3335_: Bestellung kann nicht gesendet werden, wenn MSI Pick Up Store aktiviert ist
-   * _Fehlerbehebung_: Verbesserte Inventarleistung der Versanderstellung bei vielen Quellen mit Abholung im Geschäft
+   * _Korrekturhinweis_: Verbesserte Warenbestand Performance der Versanderstellung bei vielen Quellen mit Abholung in Geschäft
    * _GitHub-Code-Beitrag_: <https://github.com/magento/inventory/commit/9f3e63d1>
 * _ACP2E-3355_: Cron Reindex aktualisiert die Produktverfügbarkeit im Frontend nicht
-   * _Fehlerbehebung_: Zuvor waren Produkte im Frontend nicht vorrätig, nachdem der Auftragsstatus über die REST-API aktualisiert wurde. Nach der Aktualisierung des Auftragsstatus über die REST-API werden die Produkte nun als vorrätig angezeigt.
+   * _Fixhinweis_: Bisher blieben Produkte im Frontend nicht vorrätig, nachdem der Nachbestellungsstatus über die REST-API aktualisiert wurde. Nach der Aktualisierung des Auftragsstatus über die REST-API werden die Produkte nun als vorrätig angezeigt.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/inventory/commit/e6fe0aa7>
 * _ACP2E-3357_: Das Hinzufügen von Bildern zu konfigurierbaren funktioniert nicht, wenn MSI aktiviert ist.
-   * _Fehlerbehebung_: Der Bild-Upload für ein konfigurierbares Produkt funktioniert jetzt wie erwartet, wenn das Bestandsmodul verwendet wird. Zuvor funktionierte der Bild-Upload nicht
+   * _Fixhinweis_: Bild Upload für konfigurierbare Produkte funktioniert nun wie erwartet, wenn Warenbestand Modul verwendet wird. Zuvor funktionierte das Upload Bild nicht
    * _GitHub-Code-Beitrag_: <https://github.com/magento/inventory/commit/fdf409aa>
 * _ACP2E-3470_: Problem mit dem Bundle-Produkt + MSI in Clean M2.4.7-p3
    * _Fehlerbehebung_: Zuvor kann für Inventar-Bundle-Produkte nach der Duplizierung mit demselben einfachen Produkt das einfache Produkt nicht gespeichert werden. Nachdem diese Fehlerbehebung angewendet wurde, kann das einfache Produkt ohne Ausnahmen erfolgreich gespeichert werden.
@@ -1537,7 +1537,7 @@ Fehlerbehebungsdetails:
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem Warenkorb zu entfernen, zu einem GraphQL-Fehler „Die angeforderte Menge ist nicht verfügbar“ führte, wenn der Warenkorb auch konfigurierbare Produkte mit unzureichendem Vorrat enthielt. Die Entfernung funktioniert nun erwartungsgemäß, ohne dass Fehler ausgelöst werden.
 * _LYNX-469_: Es können keine Produkte hinzugefügt werden, da bei der Mutation der SKU die Groß-/Kleinschreibung beachtet wird
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation einen „PRODUCT_NOT_FOUND“-Fehler zurückgab, wenn SKUs mit unterschiedlicher Groß-/Kleinschreibung verwendet wurden. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
-* _LYNX-603_: Produktattribut > Marken-Kurzform-™ wird als ™ zurückgegeben
+* _LYNX-603_: Produktattribut > Marken-Kurzform &amp;trade; wird als &amp;trade; zurückgegeben.
    * _Hinweis:_ Problem mit der Zeichenkodierung mit dem Produktnamen für die GraphQL-API behoben
 * _LYNX-619_: Problem mit updateCustomerEmail-Mutation
    * _Hinweis korrigieren_: Es wurde ein Problem mit der updateCustomerEmail-Mutation behoben, bei dem Kunden ohne erforderliche benutzerdefinierte Attribute (die nach der Kontoerstellung hinzugefügt wurden) ihre E-Mail nicht aktualisieren konnten.
@@ -1591,7 +1591,7 @@ Fehlerbehebungsdetails:
    * _Fehlerbehebung_: Das System lädt CSS-Dateien jetzt korrekt asynchron auf Auscheckseiten, selbst wenn die Einstellung „dev/css/use_css_critical_path“ aktiviert ist, um sicherzustellen, dass diese Seiten mit den richtigen CSS-Stilen gerendert werden. Zuvor verhinderte eine eingeschränkte Content Security Policy (CSP) die Ausführung von Inline-JavaScript, was dazu führte, dass CSS-Dateien nicht wie erwartet geladen wurden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39020>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39040>
-* _AC-13398_: Bei Verwendung des virtuellen Typs zum Konfigurieren des Plug-ins kann die Abfangmethode im setup-compile:di:Befehl nicht korrekt generiert werden
+* _AC-13398_: Bei Verwendung des virtuellen Typs zum Konfigurieren des Plug-ins kann die Interceptor-Methode in `setup:di:compile` Befehl nicht korrekt generiert werden
    * _Fehlerbehebung_: Das System generiert jetzt korrekt Abfangmethoden, wenn ein virtueller Typ zum Konfigurieren eines Plug-ins verwendet wird, um konsistente Ergebnisse sicherzustellen, unabhängig davon, ob vorkompiliert oder zur Laufzeit kompiliert. Zuvor generiert das System beim Vorkompilieren falsche Ergebnisse im Vergleich zur Laufzeitkompilierung.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/33980>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38141>
@@ -1640,8 +1640,8 @@ Fehlerbehebungsdetails:
    * _Fehlerbehebung_: Das System verarbeitet jetzt die MySQL-Host-Konfiguration, die Port-Informationen enthält, korrekt, um eine erfolgreiche Design-Kompilierung sicherzustellen. Zuvor schlug die Design-Kompilierung fehl, wenn die MySQL-Host-Konfiguration in der Datenbankverbindung Port-Informationen enthielt.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38799>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38842>
-* _AC-13471_: Unterstützung für die CommandLoaderInterface-Schnittstelle von Symfony in Magento CLI
-   * _Fehlerbehebung_: Durch diese Änderung wird die Initialisierungszeit der Magento-CLI-App verkürzt, da Befehle erst dann initialisiert werden können, wenn sie benötigt werden.
+* _AC-13471_: Unterstützung für Symfonys CommandLoaderInterface in Magento CLI
+   * _Korrekturhinweis_: Diese Änderung verkürzt die Initialisierungszeit der Magento-CLI-App, indem die verzögerte Initialisierung von Befehlen ermöglicht wird, bis sie benötigt werden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/29266>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/29355>
 * _ACP2E-2494_: Leistungsproblem beim Laden von Produktattributen in Warenkorbregeln
@@ -1650,7 +1650,7 @@ Fehlerbehebungsdetails:
 * _ACP2E-2673_: Preis-partielle Indexierungsleistung
    * _Fix Hinweis_: Die Leistung bei der partiellen Indizierung im Preis wurde verbessert, indem einige der Löschabfragen optimiert wurden, die im Indizierungsprozess verwendet werden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ba25af8a>
-* _ACP2E-2850_: Bestellung wird bei Multi-Store-Setup bei Verwendung der asynchronen Auftragsverarbeitung abgelehnt + Allgemeine Geschäftsbedingungen
+* _ACP2E-2850_: Bestellung wird bei Multi-Geschäft-Setup abgelehnt, wenn Async-bestellen-Verarbeitung verwendet wird + Geschäftsbedingungen
    * _Fehlerbehebung_: Die Bestellungen von nicht standardmäßigen Websites mit aktivierten Nutzungsbedingungen werden jetzt verarbeitet.
 Bevor sie automatisch abgelehnt wurden.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/57a32313>
@@ -1839,8 +1839,8 @@ Bevor sie automatisch abgelehnt wurden.
    * _Fix Hinweis_: Ersetzen Sie fast alle Eigenschaften durch die Konstruktor-Property-Promotion im Modul wee graph ql:
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39309>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/36975>
-* _ACP2E-3193_: Feste Produktsteuer (FPT) funktioniert nicht mit konfigurierbaren Produkten
-   * _Fix Hinweis_: FPT für konfigurierbare Produktvarianten, die ordnungsgemäß funktionieren.
+* _ACP2E-3193_: Fest Produktsteuer (FPT) funktioniert nicht mit konfigurierbaren Produkten
+   * _Korrekturhinweis_: FPT für konfigurierbare Produktvarianten funktioniert ordnungsgemäß.
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/ec7e32a9>
 
 ### Test-Framework
@@ -1885,7 +1885,7 @@ Bevor sie automatisch abgelehnt wurden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38982>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38977>
 * _AC-1306_: Statischer Inhalt wird für deaktivierte Module bereitgestellt.
-   * _Fehlerbehebung_: Das System schließt jetzt CSS für deaktivierte Module aus den endgültigen CSS-Ausgabedateien aus, um sicherzustellen, dass unnötige Stile nicht geladen werden. Zuvor wurde CSS für deaktivierte Module in die endgültigen CSS-Ausgabedateien eingefügt, was dazu führte, dass zusätzliche, unnötige Stile geladen wurden.
+   * _Fehlerbehebung_: Das System schließt jetzt CSS für deaktivierte Module aus den endgültigen CSS-Ausgabedateien aus, um sicherzustellen, dass unnötige Stile nicht geladen werden. Zuvor war CSS im Zusammenhang mit deaktivierten Modulen in den endgültigen CSS-Ausgabedateien enthalten, was zum Laden zusätzlicher, unnötiger Stile führte.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/24666>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/32922>
 * _AC-13459_: Inkonsistentes Verhalten bei der Sortierung „Nicht vorrätig“ mit Mindestbestand

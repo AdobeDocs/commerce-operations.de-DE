@@ -1,7 +1,7 @@
 ---
-source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
+source-git-commit: c96f5620bbde1b15f6419c482c790517cc8de70c
 workflow-type: tm+mt
-source-wordcount: '28386'
+source-wordcount: '28383'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ Zuvor waren nach der Anmeldung die Produkte, die als Gastbenutzer zur Vergleichs
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _ACP2E-2687_: Berechtigungsproblem für den Zugriff auf Dynamic Block
    * _Fehlerbehebung_: Zuvor wurde beim Hinzufügen eines neuen dynamischen Blocks für Administratoren ein Fehler ausgegeben. Nach der Implementierung dieser Fehlerbehebung kann der eingeschränkte Administrator den dynamischen Block erfolgreich hinzufügen und den Block ohne Fehler bearbeiten
-* _ACP2E-2787_: Apostroph in Store-Ansicht wird durch &quot;&quot; ersetzt
+* _ACP2E-2787_: Apostroph im Namen der Store-Ansicht wird durch &amp;#039; ersetzt.
    * _Hinweis korrigieren_: Die Filter für die Store-Ansicht des Rasters zeigen jetzt Apostrophe korrekt an
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38395>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/commit/39d54c2d>
@@ -1010,8 +1010,8 @@ Zuvor wurden die Datensätze in den Bundle-Produktsequenztabellen nicht entfernt
    * _Fehlerbehebung_: Die PHPDocs für die Methode \Magento\Framework\Data\Collection::getItemById wurden aktualisiert, sodass sie null als möglichen Rückgabetyp enthalten, wodurch Probleme mit statischen Analyse-Tools behoben werden. Zuvor wurde in den PHPDocs der Methode nicht null als möglicher Rückgabetyp angegeben, was zu Warnungen oder Fehlern bei der statischen Analyse führte, wenn die Methode in bedingten Anweisungen verwendet wurde.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38485>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38439>
-* _AC-11592_: [Problem] Nur gültige Voreinstellungen beim Setup zulassen:di:kompilieren
-   * _Fehlerbehebung_: Das System gibt jetzt während des Befehls setup:di:compile einen Fehler aus, wenn eine Voreinstellung für eine Klasse erstellt wird, die nicht vorhanden ist oder ausdrücklich ausgeschlossen wird, sodass nur gültige Voreinstellungen zulässig sind. Zuvor schlugen diese Szenarien im Hintergrund fehl und machten möglicherweise alle Plug-ins, die mit den ursprünglichen Klassen verknüpft sind, unbrauchbar.
+* _AC-11592_: [Problem] Nur gültige Voreinstellungen während des `setup:di:compile` zulassen
+   * _Fehlerbehebung_: Das System gibt jetzt während des `setup:di:compile`-Befehls einen Fehler aus, wenn eine Voreinstellung für eine Klasse erstellt wird, die nicht vorhanden ist oder speziell ausgeschlossen wurde, sodass nur gültige Voreinstellungen zulässig sind. Zuvor schlugen diese Szenarien im Hintergrund fehl und machten möglicherweise alle Plug-ins, die mit den ursprünglichen Klassen verknüpft sind, unbrauchbar.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/38517>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/33161>
 * _AC-11651_: Magento versucht, die schreibgeschützte Eigenschaft in der __wakeup-Methode von LoggerProxy zu ändern
@@ -1566,7 +1566,7 @@ Fehlerbehebungsdetails:
    * _Fehlerbehebung_: Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem Warenkorb zu entfernen, zu einem GraphQL-Fehler „Die angeforderte Menge ist nicht verfügbar“ führte, wenn der Warenkorb auch konfigurierbare Produkte mit unzureichendem Vorrat enthielt. Die Entfernung funktioniert nun erwartungsgemäß, ohne dass Fehler ausgelöst werden.
 * _LYNX-469_: Es können keine Produkte hinzugefügt werden, da bei der Mutation der SKU die Groß-/Kleinschreibung beachtet wird
    * _Hinweis korrigieren_: Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation einen „PRODUCT_NOT_FOUND“-Fehler zurückgab, wenn SKUs mit unterschiedlicher Groß-/Kleinschreibung verwendet wurden. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
-* _LYNX-603_: Produktattribut > Marken-Kurzform-™ wird als ™ zurückgegeben
+* _LYNX-603_: Produktattribut > Marken-Kurzform &amp;trade; wird als &amp;trade; zurückgegeben.
    * _Hinweis:_ Problem mit der Zeichenkodierung mit dem Produktnamen für die GraphQL-API behoben
 * _LYNX-619_: Problem mit updateCustomerEmail-Mutation
    * _Hinweis korrigieren_: Es wurde ein Problem mit der updateCustomerEmail-Mutation behoben, bei dem Kunden ohne erforderliche benutzerdefinierte Attribute (die nach der Kontoerstellung hinzugefügt wurden) ihre E-Mail nicht aktualisieren konnten.
@@ -1641,7 +1641,7 @@ Fehlerbehebungsdetails:
    * _Fehlerbehebung_: Das System lädt CSS-Dateien jetzt korrekt asynchron auf Auscheckseiten, selbst wenn die Einstellung „dev/css/use_css_critical_path“ aktiviert ist, um sicherzustellen, dass diese Seiten mit den richtigen CSS-Stilen gerendert werden. Zuvor verhinderte eine eingeschränkte Content Security Policy (CSP) die Ausführung von Inline-JavaScript, was dazu führte, dass CSS-Dateien nicht wie erwartet geladen wurden.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/39020>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/39040>
-* _AC-13398_: Bei Verwendung des virtuellen Typs zum Konfigurieren des Plug-ins kann die Abfangmethode im setup-compile:di:Befehl nicht korrekt generiert werden
+* _AC-13398_: Bei Verwendung des virtuellen Typs zum Konfigurieren des Plug-ins kann die Interceptor-Methode in `setup:di:compile` Befehl nicht korrekt generiert werden
    * _Fehlerbehebung_: Das System generiert jetzt korrekt Abfangmethoden, wenn ein virtueller Typ zum Konfigurieren eines Plug-ins verwendet wird, um konsistente Ergebnisse sicherzustellen, unabhängig davon, ob vorkompiliert oder zur Laufzeit kompiliert. Zuvor generiert das System beim Vorkompilieren falsche Ergebnisse im Vergleich zur Laufzeitkompilierung.
    * _GitHub-Problem_: <https://github.com/magento/magento2/issues/33980>
    * _GitHub-Code-Beitrag_: <https://github.com/magento/magento2/pull/38141>
