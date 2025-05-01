@@ -3,9 +3,9 @@ title: Referenz zu Katalogkonfigurationspfaden
 description: Anzeigen einer Liste der Katalogkonfigurationswerte.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Diese Konfigurationswerte sind in der Admin-Liste unter **Stores** > Einstellung
 | Suchvorschläge aktivieren | `catalog/search/search_suggestion_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Anzahl der Suchvorschläge | `catalog/search/search_suggestion_count` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Ergebnisanzahl für jeden Vorschlag anzeigen | `catalog/search/search_suggestion_count_results_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Recommendations-Suche aktivieren | `catalog/search/search_recommendations_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
-| Anzahl der Recommendations durchsuchen | `catalog/search/search_recommendations_count` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Suchempfehlungen aktivieren | `catalog/search/search_recommendations_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
+| Anzahl der Suchempfehlungen | `catalog/search/search_recommendations_count` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Ergebnisanzahl für jede Empfehlung anzeigen | `catalog/search/search_recommendations_count_results_enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mindestbedingungen für die Übereinstimmung | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Neuschreibungen der Kategorie-/Produkt-URL generieren | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -150,6 +150,8 @@ Diese Konfigurationswerte sind in der Admin unter **Stores** > Einstellungen > *
 {style="table-layout:auto"}
 
 ## Visual Merchandiser Paths
+
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 Diese Konfigurationswerte sind in der Admin unter **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Visual Merchandiser** verfügbar.
 
