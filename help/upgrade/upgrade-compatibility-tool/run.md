@@ -2,9 +2,9 @@
 title: Ausführen des  [!DNL Upgrade Compatibility Tool]
 description: Führen Sie diese Schritte aus, um  [!DNL Upgrade Compatibility Tool]  in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt auszuführen.
 exl-id: ea467a74-18eb-476b-96e2-23f4fc257d73
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: bfb952d29bd3d7fc7147107216981e05202e44aa
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ chmod +x ./uct/bin/uct
 
 Der [!DNL Upgrade Compatibility Tool] ist ein Tool, das eine benutzerdefinierte Adobe Commerce-Instanz mit einer bestimmten Version vergleicht, indem alle darin installierten Module analysiert werden. Sie gibt eine Liste mit kritischen Problemen, Fehlern und Warnungen zurück, die vor dem Upgrade auf die neueste Version von Adobe Commerce behoben werden müssen.
 
-In diesem [Video-Tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=de) (06:02) erfahren Sie mehr über die [!DNL Upgrade Compatibility Tool].
+In diesem [Video-Tutorial](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade/upgrade-compatibility-tool-overview.html?lang=en) (06:02) erfahren Sie mehr über die [!DNL Upgrade Compatibility Tool].
 
 Verfügbare Befehle für die [!DNL Upgrade Compatibility Tool] in einer Befehlszeilenschnittstelle:
 
@@ -59,7 +59,7 @@ Verfügbare Optionen für den `upgrade:check`:
 
 | **Befehl** | **Verfügbare Optionen** |
 |----------------|-----------------|
-| `upgrade:check` | <ul><li>—help: Gibt alle verfügbaren Optionen zurück.</li><li>—current-version: Aktuelle Adobe Commerce-Version. Dieser Parameter ist erforderlich und muss immer verwendet werden.</li><li>—min-issue-level: Sie können Probleme nach der minimalen Anfrageebene filtern (der Standardwert ist „WARNUNG„).</li><li>—ignore-current-version-compatibility-issues (oder -i): Wenn Sie keine kritischen Probleme, Fehler und Warnungen aus der aktuellen Version in Ihren Bericht aufnehmen möchten.</li><li>—coming-version (oder -c): Wählen Sie eine bestimmte Adobe Commerce-Version aus. Die neueste verfügbare Version wird verwendet, wenn sie weggelassen wird.</li></ul> |
+| `upgrade:check` | <ul><li>—help: Gibt alle verfügbaren Optionen zurück.</li><li>—current-version: Aktuelle Adobe Commerce-Version. Die Version der Adobe Commerce-Installation wird verwendet, wenn sie weggelassen wird.</li><li>—min-issue-level: Sie können Probleme nach der minimalen Anfrageebene filtern (der Standardwert ist „WARNUNG„).</li><li>—ignore-current-version-compatibility-issues (oder -i): Wenn Sie keine kritischen Probleme, Fehler und Warnungen aus der aktuellen Version in Ihren Bericht aufnehmen möchten.</li><li>—coming-version (oder -c): Wählen Sie eine bestimmte Adobe Commerce-Version aus. Die neueste verfügbare Version wird verwendet, wenn sie weggelassen wird.</li></ul> |
 
 Mit der [!DNL Upgrade Compatibility Tool] können Sie den `upgrade:check`-Befehl mit einer `--ignore-current-version-compatibility-issues` Option ausführen. Verwenden Sie diese Option, wenn Sie nur neue Probleme erhalten möchten, die mit dem Update von Ihrer aktuellen Version auf die Zielversion in Ihrem [!DNL Upgrade Compatibility Tool] Bericht eingeführt werden:
 
@@ -146,7 +146,7 @@ Verfügbare Optionen für den `core:code:changes`:
 
 >[!NOTE]
 >
-> Es empfiehlt sich, benutzerdefinierten Code nicht in den Kern-Code aufzunehmen. Weitere Best Practices für Upgrades finden Sie [ Adobe Commerce 2.4 ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=de) Upgrade-Handbuch .
+> Es empfiehlt sich, benutzerdefinierten Code nicht in den Kern-Code aufzunehmen. Weitere Best Practices für Upgrades finden Sie [ Adobe Commerce 2.4 ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) Upgrade-Handbuch .
 
 ### Vanilla-Installation
 
@@ -259,8 +259,8 @@ Dadurch werden spezifische Optionen zurückgegeben, die für den `upgrade:check`
 
 - Vermeiden Sie zwei Module mit demselben Namen.
 - Befolgen Sie die [-](https://developer.adobe.com/commerce/php/coding-standards/) von Adobe Commerce.
-- Adobe Commerce 2.4 [Upgrade-Handbuch](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf?lang=de) Best Practices.
-- Führen Sie die [!DNL Upgrade Compatibility Tool] über die [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=de) für [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=de){target=_blank} aus.
+- Adobe Commerce 2.4 [Upgrade-Handbuch](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) Best Practices.
+- Führen Sie die [!DNL Upgrade Compatibility Tool] über die [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) für [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} aus.
 
 ## Optimieren der Ergebnisse
 
