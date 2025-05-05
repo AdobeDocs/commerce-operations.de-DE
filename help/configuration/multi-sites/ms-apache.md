@@ -19,7 +19,7 @@ Kopieren Sie ggf. das vorhandene Einstiegspunktskript für `index.php` Website- 
 
   Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie bei Ihrem Hosting-Anbieter.
 
-  Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema besprochenen Aufgaben abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im Handbuch zu _Commerce in Cloud-Infrastruktur_.
+  Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema besprochenen Aufgaben abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de) im Handbuch zu _Commerce in Cloud-Infrastruktur_.
 
 - Pro Website verwenden Sie einen virtuellen Host. Die Konfigurationsdatei für den virtuellen Host ist `/etc/httpd/httpd.conf`
 
@@ -110,7 +110,7 @@ Sofern Sie kein DNS für die URLs Ihrer Stores eingerichtet haben, müssen Sie e
 >[!INFO]
 >
 >- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie bei Ihrem Hosting-Anbieter.
->- Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
+>- Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
 
 ### Fehlerbehebung
 

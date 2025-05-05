@@ -15,13 +15,13 @@ Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.
 
 ## Über Ihre Beiträge zum Adobe von Inhalten
 
-Siehe das [Adobe-Handbuch für Mitwirkende an Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Siehe das [Adobe-Handbuch für Mitwirkende an Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zum [Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)Dokument .
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zum [Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)Dokument .
 
 Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repo einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -43,7 +43,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im [Handbuch für Mitwirkende an Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)Dokumenten .
+Weitere Informationen finden Sie im [Handbuch für Mitwirkende an Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)Dokumenten .
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -62,8 +62,8 @@ Bei einigen Themen verwenden wir Datendateien und Vorlagen, um veröffentlichte 
 Beispiele für vorlagenbasierte Inhalte sind unter anderem:
 
 * [CLI-Tools-Referenz](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-* [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
-* [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+* [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=de)
+* [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de)
 
 ### Vorlageninhalt generieren
 
@@ -85,8 +85,8 @@ So aktualisieren Sie Vorlageninhalte:
 
 1. Öffnen Sie in Ihrem Texteditor eine Datendatei im `/jekyll/_data`. Beispiel:
 
-   * [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
-   * [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+   * [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=de): `/jekyll/_data/product-availability.yml`
+   * [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de): `/jekyll/_data/system-requirements.yml`
 
 1. Verwenden Sie die vorhandene YAML-Struktur, um Einträge zu erstellen.
 

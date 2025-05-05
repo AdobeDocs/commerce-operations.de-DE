@@ -18,4 +18,4 @@ Diese Sicherheits-Patch-Versionshinweise erfassen Aktualisierungen, um die Siche
 Weitere Informationen zu Sicherheits-Patch-Versionen:
 
 * [Überblick über Adobe Commerce Security-Patch-Versionen](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patch-Versionen finden Sie im [Upgrade-Handbuch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)
+* Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patch-Versionen finden Sie im [Upgrade-Handbuch](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade)

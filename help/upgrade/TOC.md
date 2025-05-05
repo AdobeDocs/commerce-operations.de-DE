@@ -54,4 +54,4 @@ ht-degree: 4%
 - Ressourcen-{#resources}
    - [Empfohlene Lektüre](resources/recommended-reading.md)
    - [Plattform mit Adobe Commerce modernisieren](resources/recommended-upgrade-paths.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)

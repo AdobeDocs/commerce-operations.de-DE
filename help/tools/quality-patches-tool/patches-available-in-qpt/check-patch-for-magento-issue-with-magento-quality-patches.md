@@ -38,11 +38,11 @@ Das Tool soll Ihnen die Möglichkeit geben, selbst Patches für Probleme zu erst
 
 >[!NOTE]
 >
->QPT ist nur für qualitativ hochwertige Patches. Sicherheits-Patches sind im [Magento-Sicherheitscenter](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) verfügbar.
+>QPT ist nur für qualitativ hochwertige Patches. Sicherheits-Patches sind im [Magento-Sicherheitscenter](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview) verfügbar.
 
 ## Im Quality Patches Tool verfügbare Patches
 
-Eine Liste der verfügbaren Patches finden Sie [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.
+Eine Liste der verfügbaren Patches finden Sie [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) in unserer Entwicklerdokumentation.
 
 ## Installieren und Verwenden des Quality Patches Tools
 
@@ -50,13 +50,13 @@ Die Installations- und Verwendungsbefehle für Adobe Commerce On-Premise und Ado
 
 ### Installieren und Verwenden von QPT für Adobe Commerce On-Premise
 
-Weitere Informationen [ Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches finden Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)Software-Update-Handbuch > Patching“ in unserer Entwicklerdokumentation.
+Weitere Informationen [ Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches finden Sie unter ](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage)Software-Update-Handbuch > Patching“ in unserer Entwicklerdokumentation.
 
 ### Installieren und Verwenden von QPT für Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [ Cloud-Infrastruktur finden Sie unter „Cloud ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) für Adobe Commerce Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
+Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [ Cloud-Infrastruktur finden Sie unter „Cloud ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) für Adobe Commerce Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) in unserer Entwicklerdokumentation.
-* [Anwenden von Composer-Patches von Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) in der Support-Wissensdatenbank.
+* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/release-notes) in unserer Entwicklerdokumentation.
+* [Anwenden von Composer-Patches von Adobe](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) in der Support-Wissensdatenbank.

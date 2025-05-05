@@ -57,7 +57,7 @@ Beginnen Sie mit der Übernahme der Adobe Commerce-Erweiterbarkeitsplattform, fa
 
 Da wir die Funktionen von Adobe Commerce kontinuierlich erweitern, ist es wichtig, dass Sie mit der neuesten verfügbaren Version entwickeln und in Ihren Projektplänen eine Upgrade-Strategie definieren. Auf diese Weise bleiben Sie sicher, konform und auf dem neuesten Stand der neuesten Verbesserungen, mit denen Sie Ihre Umsätze schneller steigern, effektiver arbeiten und Ihren Mitbewerbern jetzt und in Zukunft einen Schritt voraus sein können.
 
-Um Upgrades planen und budgetieren zu können, sollten Sie unseren [Veröffentlichungszeitplan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) überwachen. Planen Sie Upgrade-Aufgaben im Rückstand Ihres Teams im Voraus. Ziel ist es, diese Arbeit mit GA abzuschließen.
+Um Upgrades planen und budgetieren zu können, sollten Sie unseren [Veröffentlichungszeitplan](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) überwachen. Planen Sie Upgrade-Aufgaben im Rückstand Ihres Teams im Voraus. Ziel ist es, diese Arbeit mit GA abzuschließen.
 
 - Verwenden Sie die Vorabversion , um mehr über jede neue Version zu erfahren. Eine Vorabversion ist ein allgemeiner Verfügbarkeits-Code, der Adobe Commerce-Händlern und allen Partnern zwei Wochen vor der allgemeinen Verfügbarkeit zur Verfügung steht. Wenn Sie über mehrere Stores verfügen, verwenden Sie die Vorabversion in Ihrem Basis-Store und überprüfen Sie, ob Ihre benutzerdefinierten Module und Designs damit kompatibel sind.
 
@@ -73,7 +73,7 @@ Upgrades sollten regelmäßig und mit einem vordefinierten Budget durchgeführt 
 
 Bewerten Sie die für das Upgrade erforderlichen Arbeiten:
 
-- Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) um den Umfang und die Auswirkungen der neuen Version zu verstehen.
+- Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview) um den Umfang und die Auswirkungen der neuen Version zu verstehen.
 
 - Verwenden Sie den [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md), um potenzielle Probleme zu identifizieren, die in Ihrem benutzerdefinierten Code behoben werden müssen, bevor Sie versuchen, auf eine neuere Version zu aktualisieren.
 

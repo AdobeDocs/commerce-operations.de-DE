@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Der Commerce GraphQL-Anwendungsserver ermöglicht es Adobe Commerce, den Status zwischen Commerce GraphQL-API-Anfragen beizubehalten. GraphQL Application Server, der auf der Swoole-Erweiterung basiert, fungiert als Prozess mit Worker-Threads, die die Anforderungsverarbeitung verarbeiten. Durch die Beibehaltung des Status eines Bootstrapping-Programms bei GraphQL-API-Anfragen verbessert GraphQL Application Server die Anforderungsverarbeitung und die Gesamtproduktleistung. API-Anfragen werden deutlich effizienter.
 
-Der GraphQL-Anwendungs-Server ist nur für Adobe Commerce verfügbar. Es ist nicht für Magento Open Source verfügbar. Bei Cloud Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), um den GraphQL-Anwendungsserver zu aktivieren.
+Der GraphQL-Anwendungs-Server ist nur für Adobe Commerce verfügbar. Es ist nicht für Magento Open Source verfügbar. Bei Cloud Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), um den GraphQL-Anwendungsserver zu aktivieren.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie den GraphQL-Anwendungsserver i
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass alle benutzerdefinierten Einstellungen in Ihrer Root-`.magento.app.yaml`-Datei ordnungsgemäß in die `application-server/.magento/.magento.app.yaml`-Datei migriert werden. Nachdem die `application-server/.magento/.magento.app.yaml` Datei zu Ihrem Projekt hinzugefügt wurde, sollten Sie sie zusätzlich zur Stammdatei `.magento.app.yaml` beibehalten. Wenn Sie z. B. [den RabbitMQ-Service konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) oder [Web-Eigenschaften verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) sollten Sie `application-server/.magento/.magento.app.yaml` dieselbe Konfiguration hinzufügen.
+>Stellen Sie sicher, dass alle benutzerdefinierten Einstellungen in Ihrer Root-`.magento.app.yaml`-Datei ordnungsgemäß in die `application-server/.magento/.magento.app.yaml`-Datei migriert werden. Nachdem die `application-server/.magento/.magento.app.yaml` Datei zu Ihrem Projekt hinzugefügt wurde, sollten Sie sie zusätzlich zur Stammdatei `.magento.app.yaml` beibehalten. Wenn Sie z. B. [den RabbitMQ-Service konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) oder [Web-Eigenschaften verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property) sollten Sie `application-server/.magento/.magento.app.yaml` dieselbe Konfiguration hinzufügen.
 
 ### Bereitstellen von Ausgangsprojekten
 

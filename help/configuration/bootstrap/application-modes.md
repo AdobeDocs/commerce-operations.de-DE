@@ -26,7 +26,7 @@ Informationen [ manuellen Ändern der Adobe Commerce](../cli/set-mode.md)Betrieb
 
 Aufgrund des schreibgeschützten Dateisystems gibt es eine strikte Einschränkung bezüglich des Wechsels der Modi in Remote-Cloud-Umgebungen und es kann nicht durch den Adobe Commerce-Support überschrieben werden. Versuchen Sie nicht, den Modus zu ändern, indem Sie die `app/etc/env.php` ändern, da das `ece-tools` die Datei basierend auf mehreren Konfigurationsquellen überschreibt.
 
-Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während einer Bereitstellung automatisch _Wartungsmodus_ aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Andernfalls verbleibt die Anwendung im _Produktions_ Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
+Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während einer Bereitstellung automatisch _Wartungsmodus_ aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Andernfalls verbleibt die Anwendung im _Produktions_ Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=de#deploy-phase) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 
 Wenn Sie Cloud Docker für Commerce als Entwicklungs-Tool verwenden, können Sie Ihr Cloud-Infrastrukturprojekt in einer Docker-Umgebung im _Entwicklermodus_ bereitstellen, die Leistung ist jedoch aufgrund zusätzlicher Dateisynchronisierungsvorgänge langsamer. Siehe [Bereitstellen der Docker-Umgebung](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) im Handbuch _Cloud Docker for Commerce_.
 
@@ -78,7 +78,7 @@ Der _Wartungsmodus_ beschränkt oder verhindert den Zugriff auf eine Site währe
 
 Sie können eine [benutzerdefinierte Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md) erstellen, den Wartungsmodus manuell aktivieren und deaktivieren und den Wartungsmodus so konfigurieren, dass Besucher von autorisierten IP-Adressen den Store normal anzeigen können. Siehe [Aktivieren und Deaktivieren des ](../../installation/tutorials/maintenance-mode.md) im _Installationshandbuch_.
 
-Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Wenn die Bereitstellung erfolgreich abgeschlossen wurde, kehrt die Commerce-Anwendung zur Ausführung im Produktionsmodus zurück. Siehe [Bereitstellungs-Hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
+Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Wenn die Bereitstellung erfolgreich abgeschlossen wurde, kehrt die Commerce-Anwendung zur Ausführung im Produktionsmodus zurück. Siehe [Bereitstellungs-Hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=de#phase-5%3A-deployment-hooks) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 
 Im Wartungsmodus:
 

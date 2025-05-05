@@ -38,7 +38,7 @@ Sie können MySQL verwenden, um lang laufende Abfragen für jedes Adobe Commerce
 Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie das Percona Toolkit zur Analyse von Abfragen verwenden.
 
 1. Führen Sie den `pt-query-digest --type=slowlog`-Befehl für MySQL-Protokolle mit langsamen Abfragen aus.
-   * Den Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in unserer Entwicklerdokumentation.
+   * Den Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in unserer Entwicklerdokumentation.
    * Weitere Informationen finden [ in der Dokumentation zu Percona Toolkit > pt-query](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest)digest.
 1. Führen Sie basierend auf den gefundenen Problemen Schritte aus, um die Abfrage zu beheben, damit sie schneller ausgeführt wird.
 

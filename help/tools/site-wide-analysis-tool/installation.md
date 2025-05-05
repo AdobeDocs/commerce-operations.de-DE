@@ -78,7 +78,7 @@ Ihre lokale Infrastruktur muss vor der Installation des Agenten die folgenden An
 
 ## [!DNL Commerce Services Connector]
 
-Der Agent erfordert, dass die [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) Erweiterung auf Ihrem System installiert und [mit API-Schlüsseln konfiguriert](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) ist. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Erweiterung installiert ist:
+Der Agent erfordert, dass die [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) Erweiterung auf Ihrem System installiert und [mit API-Schlüsseln konfiguriert](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) ist. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Erweiterung installiert ist:
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -92,13 +92,13 @@ Wenn Sie die Erweiterung installiert und mit einem vorhandenen API-Schlüssel f�
 
    >[!NOTE]
    >
-   > Wenn Sie Probleme beim Zugriff auf Ihr -Konto haben, finden Sie unter [Anmeldung beim Adobe Commerce-Support oder Cloud-Konto nicht möglich](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) Hilfe zur Fehlerbehebung.
+   > Wenn Sie Probleme beim Zugriff auf Ihr -Konto haben, finden Sie unter [Anmeldung beim Adobe Commerce-Support oder Cloud-Konto nicht möglich](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html?lang=de) Hilfe zur Fehlerbehebung.
 
 1. Klicken Sie auf **[!UICONTROL API Portal]**.
 
 1. Klicken Sie **[!UICONTROL Delete]** neben dem vorhandenen API-Schlüssel.
 
-1. [Konfigurieren Sie](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) einen neuen API-Schlüssel.
+1. [Konfigurieren Sie](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) einen neuen API-Schlüssel.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ Wenn die Erweiterung nicht installiert ist, verwenden Sie die folgenden Anweisun
    bin/magento cache:clean
    ```
 
-1. [Konfigurieren Sie API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) , um die Erweiterung mit Ihrem System zu verbinden.
+1. [Konfigurieren Sie API-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) , um die Erweiterung mit Ihrem System zu verbinden.
 
 ## Installieren den Agenten
 
@@ -404,7 +404,7 @@ Um diesen Fehler zu beheben, führen Sie die folgenden Schritte aus:
 1. Führen Sie eine [ Installation durch](#scripted) speichern Sie die Ausgabe und überprüfen Sie die Ausgabe auf Fehler.
 1. Überprüfen Sie die generierte `config.yaml`-Datei und überprüfen Sie, ob der Pfad zu Ihrer Commerce-Instanz und PHP korrekt ist.
 1. Stellen Sie sicher, dass sich der User, auf dem die Planung ausgeführt wird, im Dateisystem Verantwortlicher [&#128279;](../../installation/prerequisites/file-system/overview.md) Unix-Gruppe befindet oder mit dem Dateisystem identisch User Verantwortlicher ist.
-1. Stellen Sie sicher, dass die [Commerce Services Connector-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) ordnungsgemäß installiert sind, und versuchen Sie, sie zu aktualisieren, um die Erweiterung mit Ihrem System zu verbinden.
+1. Stellen Sie sicher, dass die [Commerce Services Connector-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de) ordnungsgemäß installiert sind, und versuchen Sie, sie zu aktualisieren, um die Erweiterung mit Ihrem System zu verbinden.
 1. [Deinstallieren Sie den Agenten](#uninstall) nach dem Aktualisieren der Schlüssel und installieren Sie ihn mithilfe des Installationsskripts [&#128279;](#scripted)neu.
 1. Führen Sie die Planung aus und prüfen Sie, ob der Fehler weiterhin auftritt.
 1. Wenn Sie immer noch denselben Fehler erhalten, erhöhen Sie die Protokollebene in `config.yaml` Debugging und öffnen Sie ein Supportticket.

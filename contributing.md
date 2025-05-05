@@ -19,7 +19,7 @@ Von Ihnen wird erwartet, dass Sie diesen Kodex einhalten. Bitte melden Sie inakz
 
 ## Dokumentation zum Contributor Guide
 
-Siehe das [Handbuch für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Siehe das [Handbuch für Mitwirkende](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
 
 ## Haben Sie eine Frage?
 
@@ -57,4 +57,4 @@ Wenden Sie sich an bestehende Verantwortliche, um darüber zu sprechen.
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. Stattdessen [ein Problem an unsere Sicherheitsfachleute gesendet](https://helpx.adobe.com/security/alertus.html)
+Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. Stattdessen [ein Problem an unsere Sicherheitsfachleute gesendet](https://helpx.adobe.com/de/security/alertus.html)

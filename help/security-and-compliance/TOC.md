@@ -23,4 +23,4 @@ ht-degree: 1%
 - {#reference}
    - [Persönliche Kundeninformationen (Version 2.x)](privacy/data-m2.md)
    - [Persönliche Kundeninformationen (Version 1.x)](privacy/data-m1.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)

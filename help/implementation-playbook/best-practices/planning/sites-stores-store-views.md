@@ -41,5 +41,5 @@ Websites und Stores sind Multiplikatoren für Katalogdaten, sodass sich eine gro
 
 ## Weitere Informationen
 
-- [Grundlegendes zu Websites, Stores und Store-Ansichten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Grundlegendes zu Websites, Stores und Store-Ansichten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

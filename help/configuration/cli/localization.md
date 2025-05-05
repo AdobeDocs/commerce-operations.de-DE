@@ -316,7 +316,7 @@ Generieren Sie ähnlich wie im vorherigen Beispiel eine CSV-Datei, geben Sie jed
 
 [Übersetzungen - Übersicht]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [Übersetzungswörterbuch]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[Konfigurieren der Übersetzungen]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[Konfigurieren der Übersetzungen]: https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize
 [Weitere Informationen zu Sprachpaketen]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

@@ -31,4 +31,4 @@ Websites mit privaten Inhaltsblöcken, die die `_isScopePrivate` Variablen entha
 ## Weitere Informationen
 
 - [Privater Inhalt](../../../performance/configuration.md#client-side-optimization-settings)
-- [AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=de)

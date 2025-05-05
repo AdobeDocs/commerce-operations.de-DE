@@ -16,7 +16,7 @@ Ab dem `ece-tools`-Paket 2002.1.5 können Sie eine Umgebungsvariable verwenden, 
 
 ## Umgebungsvariable
 
-Die Variable `REMOTE_STORAGE` wird während der [Bereitstellungsphase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) eines Cloud-Infrastrukturprojekts verwendet.
+Die Variable `REMOTE_STORAGE` wird während der [Bereitstellungsphase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=de) eines Cloud-Infrastrukturprojekts verwendet.
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +40,7 @@ stage:
 
 ### Festlegen einer Variablen mit Cloud CLI
 
-Legen Sie die `REMOTE_STORAGE`-Variable als [Variable auf Umgebungsebene) fest](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) sodass Dateien nicht zwischen Produktions-, Staging- und Integrationsumgebungen freigegeben werden. Das Festlegen der Variablen auf Umgebungsebene bietet die Flexibilität, nur den Remote-Speicher in ausgewählten Umgebungen zu verwenden, z. B. die Verwendung des Remote-Speichers in der Integrationsumgebung auszuschließen.
+Legen Sie die `REMOTE_STORAGE`-Variable als [Variable auf Umgebungsebene) fest](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=de) sodass Dateien nicht zwischen Produktions-, Staging- und Integrationsumgebungen freigegeben werden. Das Festlegen der Variablen auf Umgebungsebene bietet die Flexibilität, nur den Remote-Speicher in ausgewählten Umgebungen zu verwenden, z. B. die Verwendung des Remote-Speichers in der Integrationsumgebung auszuschließen.
 
 **So fügen Sie die Remote-Speichervariable über die Cloud-CLI**:
 
@@ -89,7 +89,7 @@ Alternativ können Sie die Project-Web-Schnittstelle verwenden, um die Variable 
 
 ### Optionale Authentifizierung verwenden
 
-`key` und `secret` sind optional. Wenn Sie die Variable erstellen, können Sie die `key` und `secret` ausblenden, indem Sie die Option `sensitive` auswählen. Bei dieser Einstellung sind die Werte nicht in der Web-Oberfläche sichtbar. Siehe [Sichtbarkeit von Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
+`key` und `secret` sind optional. Wenn Sie die Variable erstellen, können Sie die `key` und `secret` ausblenden, indem Sie die Option `sensitive` auswählen. Bei dieser Einstellung sind die Werte nicht in der Web-Oberfläche sichtbar. Siehe [Sichtbarkeit von Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=de#visibility) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 
 Wenn Sie eine andere Authentifizierungsmethode verwenden möchten, lassen Sie die `key` und `secret` aus der JSON-Konfiguration weg. Konfigurieren Sie die alternative Authentifizierungsmethode und überprüfen Sie, ob der Server für den S3-Bucket autorisiert ist.
 
@@ -111,7 +111,7 @@ bin/magento remote-storage:sync
 
 Wenn Sie sich für die Verwendung der Remote-Speicherlösung mit einem Adobe Commerce in einem Cloud-Infrastrukturprojekt entscheiden, verwenden Sie die [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3)-Anleitung in der _Fastly_-Dokumentation, um sicherzustellen, dass Fastly Image Optimization mit AWS S3 funktioniert.
 
-Seien Sie mit Ihren [Fastly-Anmeldedaten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials) vorbereitet. Bei Pro-Projekten stellen Sie mit SSH eine Verbindung zu Ihrem Server her und erhalten die Fastly-Anmeldedaten aus der `/mnt/shared/fastly_tokens.txt`. Staging- und Produktionsumgebungen verfügen über eindeutige Anmeldeinformationen. Sie müssen die Anmeldeinformationen für jede Umgebung abrufen.
+Seien Sie mit Ihren [Fastly-Anmeldedaten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=de#get-fastly-credentials) vorbereitet. Bei Pro-Projekten stellen Sie mit SSH eine Verbindung zu Ihrem Server her und erhalten die Fastly-Anmeldedaten aus der `/mnt/shared/fastly_tokens.txt`. Staging- und Produktionsumgebungen verfügen über eindeutige Anmeldeinformationen. Sie müssen die Anmeldeinformationen für jede Umgebung abrufen.
 
 Fahren Sie mit den folgenden Aufgaben mit dem Einrichten des Remote-Speichers für Cloud-Projekte fort:
 

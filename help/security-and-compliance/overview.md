@@ -15,13 +15,13 @@ Dieser Abschnitt enthält Informationen zur Sicherheit, zum Datenschutz und zur 
 
 ## Sicherheit
 
-- [Adobe-Produktsicherheit](https://helpx.adobe.com/security.html): Erfahren Sie mehr über die neuesten Patches, Sicherheitsaktualisierungen und Best Practices für Adobe Commerce.
+- [Adobe-Produktsicherheit](https://helpx.adobe.com/de/security.html): Erfahren Sie mehr über die neuesten Patches, Sicherheitsaktualisierungen und Best Practices für Adobe Commerce.
 - [Adobe Trust Center](https://www.adobe.com/trust.html): Greifen Sie auf die neuesten verfügbaren Informationen über den Betriebszustand, die Sicherheit, den Datenschutz und die Compliance aller Adobe-Cloud-Services zu.
 - [Site-Wide Analysis Tool](../tools/site-wide-analysis-tool/dashboard.md): Vereinheitlichte Einblicke in die Sicherheit Ihrer Adobe Commerce-Site, einschließlich Sicherheitsprüfungen, Services am Ende des Lebenszyklus und Sicherheitsempfehlungen.
 
 ## Compliance
 
-Händler sind zur Einhaltung von Branchenrichtlinien für die Aufrechterhaltung einer sicheren Umgebung, von rechtlichen Anforderungen in ihrem Zuständigkeitsbereich und von Best Practices für den Online-Handel verpflichtet. Weitere Informationen aus geschäftlicher Sicht finden Sie unter [Store-Datenschutzrichtlinie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html).
+Händler sind zur Einhaltung von Branchenrichtlinien für die Aufrechterhaltung einer sicheren Umgebung, von rechtlichen Anforderungen in ihrem Zuständigkeitsbereich und von Best Practices für den Online-Handel verpflichtet. Weitere Informationen aus geschäftlicher Sicht finden Sie unter [Store-Datenschutzrichtlinie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/privacy-policy.html?lang=de).
 
 Diese Kompatibilitätsdokumentation enthält die technischen Informationen, um sicherzustellen, dass Adobe Commerce-Installationen die Anforderungen bestimmter Datenschutzgesetze erfüllen. Einige dieser Anforderungen erfordern, dass Händler zusätzliche Entwicklungsarbeiten durchführen, um die Compliance zu erreichen. Einzelheiten finden Sie in den folgenden Themen:
 
