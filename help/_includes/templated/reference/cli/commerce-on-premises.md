@@ -4536,7 +4536,7 @@ Festlegen zu 1, um den gesamten Seite-Cache zu komprimieren (verwenden Sie 0 zum
 
 #### `--page-cache-redis-compression-lib`
 
-Komprimierung Bibliothek, snappy, lzf, l4z, zstd, gzip] zu verwenden [(leer lassen, um automatisch zu bestimmen)
+Komprimierung Bibliothek, snappy, lzf, l4z, zstd, gzip&rbrack; zu verwenden &lbrack;(leer lassen, um automatisch zu bestimmen)
 
 - Erfordert einen Wert
 

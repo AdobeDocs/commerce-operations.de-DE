@@ -57,10 +57,10 @@ Die Kundendaten werden aktualisiert.
 Es wird die folgende Fehlermeldung angezeigt:
 
     „json
-    {
+    &lbrace;
     „message“: „Ein Kunde mit derselben E-Mail-Adresse ist bereits auf einer zugehörigen Website vorhanden.“,
     „trace“: …
-    }
+    &rbrace;
     &quot;
 
 ## Patch anwenden

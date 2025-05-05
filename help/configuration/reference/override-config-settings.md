@@ -224,7 +224,7 @@ So suchen Sie den Variablennamen für das Versandland:
 
 1. Bestimmen Sie den Umfang.
 
-   Suchen Sie den Bereich in [Datenbank](#find-a-website-or-store-view-scope-in-the-database) wie in Schritt 1: Suchen der Website- oder Store-Ansichtsbereichswert beschrieben. (Sie können den Wert auch im Admin finden, wie in der Tabelle [ Schritt 2: Festlegen der Variablen für globale, Website- oder Store-Ansicht gezeigt](#step-2-set-global-website-or-store-view-variables.
+   Suchen Sie den Bereich in [Datenbank](#find-a-website-or-store-view-scope-in-the-database) wie in Schritt 1: Suchen der Website- oder Store-Ansichtsbereichswert beschrieben. (Sie können den Wert auch im Admin finden, wie in der Tabelle [ Schritt 2: Festlegen der Variablen für globale, Website- oder Store-Ansicht gezeigt] (#step-2-set-global-website-or-store-view-variables.
 
    Der Umfang kann beispielsweise `CONFIG__WEBSITES__DEFAULT` sein.
 

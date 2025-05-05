@@ -46,16 +46,16 @@ Die Instanz darf nur mit den Beispieldaten sauber sein.
 1. Fügen **unter „Verwandte Produkte** die beiden Reisetaschen (ID 7 und 13) hinzu.
 1. Senden einer **POST**-Anfrage:
 
-<pre>{
-  products(filter: {sku: {eq: „24-MB01“}}, sort: {name: ASC}) {
-    items {
-      related_products {
+<pre>&lbrace;
+  products(filter: {sku: {eq: „24-MB01“}}, sort: {name: ASC}) &lbrace;
+    items &lbrace;
+      related_products &lbrace;
         UID
         -Name
-      }
-    }
-  }
-}</pre>
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -65,7 +65,7 @@ In der GraphQL-Antwort werden verwandte Produkte angezeigt.
 
 Benutzende erhalten die folgende Fehlermeldung:
 
-<pre>Der Rückgabewert von Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben {„Exception“:“[Objekt] (GraphQL\\Error\\Error(Code: 0): Der Rückgabewert von Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben </pre>
+<pre>Der Rückgabewert von Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben &lbrace;„Exception“:“[Objekt] (GraphQL\\Error\\Error(Code: 0): Der Rückgabewert von Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben </pre>
 
 ## Patch anwenden
 

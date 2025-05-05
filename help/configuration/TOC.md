@@ -65,7 +65,7 @@ ht-degree: 0%
    + [URN-Highlighter](cli/urn-highlighter.md)
    + [Abhängigkeitsberichte](cli/dependency-reports.md)
    + [Lokalisierung](cli/localization.md)
-   + {#configuration-management} der Konfigurationsverwaltung
+   + der Konfigurationsverwaltung{#configuration-management}
       + [Werte festlegen](cli/set-configuration-values.md)
       + [Einstellungen exportieren](cli/export-configuration.md)
       + [Daten importieren](cli/import-configuration.md)

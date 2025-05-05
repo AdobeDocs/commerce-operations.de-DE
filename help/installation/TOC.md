@@ -16,7 +16,7 @@ ht-degree: 2%
 - [Systemanforderungen](system-requirements.md)
 - Voraussetzungen {#prerequisites}
    - [Übersicht](prerequisites/overview.md)
-   - {#file-system} des Dateisystems
+   - des Dateisystems{#file-system}
       - [Übersicht](prerequisites/file-system/overview.md)
       - [Konfigurieren von Berechtigungen](prerequisites/file-system/configure-permissions.md)
    - Webserver-{#web-server}

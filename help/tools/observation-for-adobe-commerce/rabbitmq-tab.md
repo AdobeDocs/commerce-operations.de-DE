@@ -1,6 +1,6 @@
 ---
-title: Die Registerkarte [[!UICONTROL [!DNL RabbitMQ]]
-description: Erfahren Sie mehr über die Registerkarte [[!UICONTROL [!DNL RabbitMQ]] von [!DNL Observation for Adobe Commerce].
+title: Die Registerkarte &lbrack;[!UICONTROL [!DNL RabbitMQ]]
+description: Erfahren Sie mehr über die Registerkarte &lbrack;[!UICONTROL [!DNL RabbitMQ]] von [!DNL Observation for Adobe Commerce].
 exl-id: c5370c30-fed8-4f45-89c3-ef0d6ad41a89
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

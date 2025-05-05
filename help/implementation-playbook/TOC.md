@@ -49,7 +49,7 @@ ht-degree: 15%
       - [Statische Inhaltsbereitstellung](best-practices/development/static-content-deployment.md)
       - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
       - [Ändern des Kern- und Drittanbieter-Codes](best-practices/development/modifying-core-and-third-party-code.md)
-   - {#launch} starten
+   - starten{#launch}
       - [Übersicht](best-practices/launch/overview.md)
       - [Konfigurieren von Web-Crawlern](best-practices/launch/robots-txt.md)
       - [Sichern von Site und Infrastruktur](best-practices/launch/security-best-practices.md)

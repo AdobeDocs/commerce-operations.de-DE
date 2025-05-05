@@ -26,13 +26,13 @@ Neue Funktionen, Funktionsaktualisierungen, Cloud-Infrastruktur- und Erweiterbar
 
 Die folgende Liste enthält die Termine für geplante Veröffentlichungen von Funktionen, Cloud-Infrastruktur und Erweiterbarkeit (Termine können sich ändern):
 
-- 13. August 2024
-- 8. Oktober 2024
-- 11. Februar 2025
-- 8. April 2025
-- 10. Juni 2025
-- 12. August 2025
-- 14. Oktober 2025
+- &#x200B;13. August 2024
+- &#x200B;8. Oktober 2024
+- &#x200B;11. Februar 2025
+- &#x200B;8. April 2025
+- &#x200B;10. Juni 2025
+- &#x200B;12. August 2025
+- &#x200B;14. Oktober 2025
 
 >[!NOTE]
 >

@@ -48,7 +48,7 @@ ht-degree: 3%
       - [2,4,2](release-notes/security/2-4-2-patches.md)
 - [Produktverfügbarkeit](product-availability.md)
 - [Beta-Versionen](beta.md)
-- {#planning} für Planung und Richtlinien
+- für Planung und Richtlinien{#planning}
    - [Lebenszyklusrichtlinie](lifecycle-policy.md)
    - [Versionierungsrichtlinie](versioning-policy.md)
    - [Veröffentlichungszeitplan](schedule.md)

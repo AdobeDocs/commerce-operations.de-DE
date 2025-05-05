@@ -134,7 +134,7 @@ Wenn die Erweiterung nicht installiert ist, verwenden Sie die folgenden Anweisun
 
 ## Installieren den Agenten
 
-Wir haben ein Shell-Skript](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) erstellt, um die [Installation zu vereinfachen. Wir empfehlen die Verwendung des Shell-Skripts, Sie können aber bei Bedarf die [manuelle Installationsmethode](#manual) folgen.
+Wir haben ein Shell-Skript[&#128279;](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) erstellt, um die Installation zu vereinfachen. Wir empfehlen die Verwendung des Shell-Skripts, Sie können aber bei Bedarf die [manuelle Installationsmethode](#manual) folgen.
 
 >[!INFO]
 >
@@ -403,9 +403,9 @@ Um diesen Fehler zu beheben, führen Sie die folgenden Schritte aus:
 
 1. Führen Sie eine [ Installation durch](#scripted) speichern Sie die Ausgabe und überprüfen Sie die Ausgabe auf Fehler.
 1. Überprüfen Sie die generierte `config.yaml`-Datei und überprüfen Sie, ob der Pfad zu Ihrer Commerce-Instanz und PHP korrekt ist.
-1. Stellen Sie sicher, dass sich der User, auf dem die Planung ausgeführt wird, im Dateisystem Verantwortlicher [](../../installation/prerequisites/file-system/overview.md) Unix-Gruppe befindet oder mit dem Dateisystem identisch User Verantwortlicher ist.
+1. Stellen Sie sicher, dass sich der User, auf dem die Planung ausgeführt wird, im Dateisystem Verantwortlicher [&#128279;](../../installation/prerequisites/file-system/overview.md) Unix-Gruppe befindet oder mit dem Dateisystem identisch User Verantwortlicher ist.
 1. Stellen Sie sicher, dass die [Commerce Services Connector-Schlüssel](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) ordnungsgemäß installiert sind, und versuchen Sie, sie zu aktualisieren, um die Erweiterung mit Ihrem System zu verbinden.
-1. [Deinstallieren Sie den Agenten](#uninstall) nach dem Aktualisieren der Schlüssel und installieren Sie ihn mithilfe des Installationsskripts [](#scripted)neu.
+1. [Deinstallieren Sie den Agenten](#uninstall) nach dem Aktualisieren der Schlüssel und installieren Sie ihn mithilfe des Installationsskripts [&#128279;](#scripted)neu.
 1. Führen Sie die Planung aus und prüfen Sie, ob der Fehler weiterhin auftritt.
 1. Wenn Sie immer noch denselben Fehler erhalten, erhöhen Sie die Protokollebene in `config.yaml` Debugging und öffnen Sie ein Supportticket.
 

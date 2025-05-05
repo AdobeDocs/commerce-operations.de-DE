@@ -80,7 +80,7 @@ So erstellen Sie einen Konfigurationstyp:
    - Anschließend hängt der Knoten vom Typ „Virtueller `pdfConfigDataStorage`&quot; die Readerklasse an eine Instanz von [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php) an.
    - Und schließlich hängt der letzte Typknoten diesen virtuellen Konfigurationstyp an die Klasse [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) an, die zum tatsächlichen Einlesen von Werten aus diesen PDF[xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml)-Dateien verwendet wird.
 
-1. Definieren Sie einen Reader, indem Sie die Klasse {0](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php)Magento\Framework\Config\Reader\Filesystem} erweitern und die folgenden Parameter neu schreiben:[
+1. Definieren Sie einen Reader, indem Sie die Klasse {0[&#128279;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php)Magento\Framework\Config\Reader\Filesystem} erweitern und die folgenden Parameter neu schreiben:
 
    ```php
    $_idAttributes // Array of node attribute IDs.

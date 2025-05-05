@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Best Practices: Workflow für die Inhaltserstellung
 
-In diesem Dokument wird der Benutzer-Workflow zum Anfordern von Änderungen oder Ergänzungen des *[Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html*-Inhalts im *Adobe Commerce-Implementierungs-Playbook* beschrieben.
+In diesem Dokument wird der Benutzer-Workflow zum Anfordern von Änderungen oder Ergänzungen des *[Best Practices] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html*-Inhalts im *Adobe Commerce-Implementierungs-Playbook* beschrieben.
 
 ## Wer kann eine Anfrage erstellen?
 

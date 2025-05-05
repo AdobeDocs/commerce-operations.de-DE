@@ -26,7 +26,7 @@ Adobe Commerce unterstützt Apache 2.4.x.
 
 ## Apache-Neuschreibungen und HTTAccess
 
-In diesem Thema wird beschrieben, wie Sie Apache 2.4-Neuschreibungen aktivieren und eine Einstellung für die `.htaccess`](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample) &quot;[ Konfigurationsdatei“ angeben.
+In diesem Thema wird beschrieben, wie Sie Apache 2.4-Neuschreibungen aktivieren und eine Einstellung für die `.htaccess`[&#128279;](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample) &quot; Konfigurationsdatei“ angeben.
 
 Adobe Commerce verwendet Server-Neuschreibungen und -`.htaccess`, um Anweisungen auf Ordnerebene für Apache bereitzustellen. Die folgenden Anweisungen sind auch in allen anderen Abschnitten dieses Themas enthalten.
 

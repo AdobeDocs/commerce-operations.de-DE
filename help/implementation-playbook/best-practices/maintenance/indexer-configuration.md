@@ -35,7 +35,7 @@ Einen großen Store mit mehreren Administratoren im Backend oder mit vielen Impo
 Um die Site-Performance zu maximieren, befolgen Sie die folgenden Best Practices für die Indizierung:
 
 - Überprüfen Sie die Indexkonfiguration.
-- Legen Sie die Indexer auf _[!UICONTROL Update on Schedule]_für große Websites und Websites mit häufigen Aktualisierungen und hohem Traffic fest. Siehe [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Legen Sie die Indexer auf _[!UICONTROL Update on Schedule]_&#x200B;für große Websites und Websites mit häufigen Aktualisierungen und hohem Traffic fest. Siehe [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Befolgen Sie [Best Practices zur Leistung](../../../performance/configuration.md) für die Verwaltung von Indizes.
 
 >[!IMPORTANT]

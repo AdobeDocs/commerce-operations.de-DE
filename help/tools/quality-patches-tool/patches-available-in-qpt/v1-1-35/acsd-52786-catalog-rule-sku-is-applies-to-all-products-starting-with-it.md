@@ -38,7 +38,7 @@ Die Katalogregelbedingung *[!UICONTROL SKU is]* gilt für alle Produkte, die mit
 1. Erstellen Sie zwei Produkte, eines mit SKU „24“ und eines mit SKU „24-MB01“.
 1. Navigieren Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL Catalog Price Rule]** > **[!UICONTROL Add New Rule]**.
 1. Wenden Sie die folgende Bedingung an:
-   * *[!UICONTROL If ** ALLE **dieser Bedingungen sind** TRUE **]*: *[!UICONTROL SKU is 24]*
+   * *[!UICONTROL If **&#x200B; ALLE &#x200B;** dieser Bedingungen sind **&#x200B; TRUE &#x200B;**]*: *[!UICONTROL SKU is 24]*
 1. Legen Sie einen beliebigen Rabattbetrag in Aktionen fest.
 1. Klicken Sie auf **[!UICONTROL Save and Apply]**.
 1. Cache leeren.

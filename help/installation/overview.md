@@ -13,7 +13,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Das folgende Diagramm bietet einen allgemeinen Überblick über _**On-Premise**_-Installationen von Adobe Commerce:
+>Das folgende Diagramm bietet einen allgemeinen Überblick über _&#x200B;**On-Premise**&#x200B;_-Installationen von Adobe Commerce:
 
 ![Funktionsweise der Installation](../assets/installation/install-diagram-24.svg)
 

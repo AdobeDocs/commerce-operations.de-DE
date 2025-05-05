@@ -49,26 +49,26 @@ B2B-Module müssen installiert werden.
   $search: Zeichenfolge
   $pageSize: Int!
   $currentPage: int!
-) {
+) &lbrace;
   PRODUCT(
     Filter: $filter
     sort: $sort
     Suche: $search
     pageSize: $pageSize
     currentPage: $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    items {
+    &rbrace;
+    items &lbrace;
       -Name
       SKU
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 Variablen:
 

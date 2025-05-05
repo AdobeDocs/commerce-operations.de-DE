@@ -24,7 +24,7 @@ The ACSD-64111 patch fixes the issue where *InvalidArgumentException: Class does
 
 ## Issue
 
-An error *InvalidArgumentException: Class does not exist in /app/<project id\>/vendor/magento/module-rule/Model/ConditionFactory.php* is thrown when adding a *[!UICONTROL Conditions Combination]* in [!DNL Page Builder] Products widget condition.
+An error *InvalidArgumentException: Class does not exist in /app/&lt;project id\>/vendor/magento/module-rule/Model/ConditionFactory.php* is thrown when adding a *[!UICONTROL Conditions Combination]* in [!DNL Page Builder] Products widget condition.
 
 <u>Steps to reproduce</u>:
 

@@ -267,7 +267,7 @@ Das System zeigt jetzt bei Verwendung der Abfrage „Kundenbestellungen“ das F
 * __i18n:collect-phrases zerstört die Integrität der Übersetzungen__
 Der Befehl `bin/magento i18n:collect-phrases -o` erfasst und fügt nun neue Ausdrücke aus JavaScript- und PHTML-Dateien hinzu, um sicherzustellen, dass die Übersetzungen korrekt in der Übersetzungsdatei wiedergegeben werden. Zuvor konnte das System nicht mehrzeilige Übersetzungsausdrücke aus JavaScript-Dateien und Ausdrücke aus .phtml-Dateien in die Übersetzungsdatei einbeziehen, was zu unvollständigen oder falschen Übersetzungen führte.
   _AC-9843 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0c53bbf7)_
-* __Apostroph im Namen der Store-Ansicht wird durch &quot;&amp;#039;__&quot; ersetzt
+* __Apostroph im Namen der Store-Ansicht wird durch &quot;&#039;__&quot; ersetzt
 Die Store-View-Filter des Rasters zeigen jetzt korrekt Apostrophe an
   _ACP2E-2787 - [GitHub-Problem](https://github.com/magento/magento2/issues/38395) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Der Favicon-Upload kann .ico-Dateien nicht validieren__
@@ -1449,7 +1449,7 @@ Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem W
 * __Es können keine Produkte hinzugefügt werden, da bei der SKU-Mutation die Groß-/Kleinschreibung beachtet wird__
 Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation bei Verwendung von SKUs mit unterschiedlicher Groß-/Kleinschreibung den Fehler „PRODUCT_NOT_FOUND“ zurückgab. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
   _LYNX-469_
-* __Produktattribut > Marken-Kurzform &amp;trade; wird als &amp;trade;zurückgegeben__
+* __Produktattribut > Marken-Kurzform &trade; wird als &trade;zurückgegeben__
 Es wurde ein Zeichenkodierungsproblem mit dem Produktnamen für die GraphQL-API behoben
   _LYNX-603_
 * __updateCustomerEmail-Mutationsproblem__

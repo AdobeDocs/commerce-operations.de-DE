@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-61133: `sales_clean_quotes` cron löscht Angebote aus nicht genehmigten Bestellungen'
+title: 'ACSD-61133: &grave;sales_clean_quotes&grave; cron löscht Angebote aus nicht genehmigten Bestellungen'
 description: Wenden Sie den Patch ACSD-61133 an, um das Adobe Commerce-Problem zu beheben, bei dem „sales_clean_quotes“ cron Angebote aus nicht genehmigten Bestellungen löscht.
 feature: B2B, Purchase Orders
 role: Admin, Developer

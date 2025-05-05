@@ -37,7 +37,7 @@ Sie müssen den Gutscheincode bei der Anwendung über das Backend genauso in Gro
 
 1. Erstellen Sie eine *[!UICONTROL Cart Price Rule]* mit einem bestimmten Coupon *TEST*. Achten Sie darauf, dass der Gutscheincode großgeschrieben ist.
 1. Erstellen Sie eine Bestellung in der Admin Console.
-1. Fügen Sie *Feld *[!UICONTROL Apply Coupon Code]*den* „Test“ hinzu und klicken Sie auf den Pfeil neben dem Feld, um den Coupon anzuwenden.
+1. Fügen Sie *Feld *[!UICONTROL Apply Coupon Code]*&#x200B;den* „Test“ hinzu und klicken Sie auf den Pfeil neben dem Feld, um den Coupon anzuwenden.
 1. Beobachten Sie das Ergebnis.
 
 <u>Erwartete Ergebnisse</u>:

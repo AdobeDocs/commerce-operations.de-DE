@@ -27,7 +27,7 @@ Mit dem ACSD-49877 wird das Problem behoben, dass die Option zur automatischen W
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket [!magento/quality-patches] auf die neueste Version und überprüfen Sie die Kompatibilität auf der [[!DNL Quality Patches Tool]: Nach Patches suchen]. Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket [ !magento/quality-patches] auf die neueste Version und überprüfen Sie die Kompatibilität auf der [[!DNL Quality Patches Tool]: Nach Patches suchen]. Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
