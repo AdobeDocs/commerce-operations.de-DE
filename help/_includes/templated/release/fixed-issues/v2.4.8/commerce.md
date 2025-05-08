@@ -1,7 +1,7 @@
 ---
-source-git-commit: 53b2494d848c027e32f1493bbc7a9f204677afaa
+source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
 workflow-type: tm+mt
-source-wordcount: '27958'
+source-wordcount: '27937'
 ht-degree: 0%
 
 ---
@@ -114,12 +114,12 @@ Jetzt können Kunden sowohl von authentifizierten Admin-Benutzern als auch mit e
 * __Nach der Anmeldung sind die Produkte, die als Gastbenutzer zur Vergleichsliste hinzugefügt wurden, nicht sichtbar.__
 Produkte, die vor der Anmeldung als Kunde zur Produktvergleichsliste hinzugefügt wurden, bleiben jetzt nach der Anmeldung erhalten.
 Zuvor waren nach der Anmeldung die Produkte, die als Gastbenutzer zur Vergleichsliste hinzugefügt wurden, nicht sichtbar.
-  _ACP2E-3329 – [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/078c387e)_
-* __Die Konfiguration &quot;Länder zulassen&quot; verursacht Probleme in der Konfiguration von Kundenadressen__
-Die Auswahl von &quot;Länderkonfiguration zulassen&quot; hat jetzt keinen Einfluss auf Länder, die außerhalb der angegebenen Umfang angezeigt werden. Zuvor beeinflusste die Konfiguration &quot;Länder zulassen&quot; das Kundenadressattribut außerhalb einer bestimmten Umfang
-  _ACP2E-3433 – [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/078c387e)_
-* __In der gemeinsamen Geschenkeliste wird das Ereignis Datum als 1 Tag früher__ angezeigt
-Das Datum der Geschenkeliste wird jetzt in der Storefront korrekt angezeigt
+  _ACP2E-3329 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/078c387e)_
+* __Die Konfiguration „Länder zulassen“ verursacht Probleme in den Konfigurationen für Kundenadressen__
+Die Auswahl der Konfiguration „Länder zulassen“ hat jetzt keinen Einfluss auf Länder, die außerhalb des angegebenen Bereichs angezeigt werden. Zuvor durch die Konfiguration „Länder zulassen“ beeinflusste Kundenadressattribute außerhalb des angegebenen Bereichs.
+  _ACP2E-3433 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/078c387e)_
+* __Shared Gift Registry zeigt das Ereignisdatum einen Tag früher an__
+Das Datum der Geschenkregistrierung wird jetzt auf der Storefront korrekt angezeigt
   _ACP2E-3445_
 * __VAPT: Business Logic Error - künftiges Datum als Geburtsdatum des Kunden__
 Das Geburtsdatum des Kunden kann nicht nach heute festgelegt werden
@@ -127,8 +127,8 @@ Das Geburtsdatum des Kunden kann nicht nach heute festgelegt werden
 
 ### Konto, APIs, GraphQL
 
-* __Kunden-API – Anmeldung Fehler Zahl nach erfolgreicher Anmeldung nicht auf 0 Zurücksetzen__
-Jetzt wird die Fehlernummer in der Kundenentitätstabelle auf Null zurückgesetzt, nachdem der Kunde erfolgreich über API-Endpunkte Log-in wurde.
+* __Kunden-API - Zahl der Anmeldefehler kann nach erfolgreicher Anmeldung nicht auf 0 zurückgesetzt werden__
+Jetzt wird die Fehlernummer in der Kundenentitätstabelle nach erfolgreicher Anmeldung des Kunden über API-Endpunkte auf null zurückgesetzt.
   _ACP2E-3246 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/ec7e32a9)_
 
 ### Konto, Admin-Benutzeroberfläche, B2B
@@ -192,7 +192,7 @@ Der Befehl `bin/magento i18n:collect-phrases -o` erfasst und fügt nun neue Ausd
 * __Berechtigungsproblem für den Zugriff auf den dynamischen Block__
 Zuvor gab es beim Hinzufügen eines neuen dynamischen Blocks für Administratoren mit eingeschränktem Administratorzugriff einen Fehler. Nach der Implementierung dieser Fehlerbehebung kann der eingeschränkte Administrator den dynamischen Block erfolgreich hinzufügen und den Block ohne Fehler bearbeiten
   _ACP2E-2687_
-* __Apostroph im Namen der Store-Ansicht wird durch &quot;&#039;__&quot; ersetzt
+* __Apostroph im Namen der Store-Ansicht wird durch &quot;&amp;#039;__&quot; ersetzt
 Die Store-View-Filter des Rasters zeigen jetzt korrekt Apostrophe an
   _ACP2E-2787 - [GitHub-Problem](https://github.com/magento/magento2/issues/38395) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Der Favicon-Upload kann .ico-Dateien nicht validieren__
@@ -393,18 +393,18 @@ Nach der Fehlerbehebung ist es möglich, mithilfe einer GraphQL-Anfrage das Attr
 
 ### Braintree
 
-* __Admin Express Checkout Button ist deaktiviert.__
+* __Die Schaltfläche „Admin Express-Checkout“ ist deaktiviert.__
   _AC-14293_
-* __Bezahlen Sie per LPM__
-Das System stellt jetzt lokale Zahlungsmethoden (LPM) beim ersten Laden korrekt dar, Linear wenn die Liefer- und Abrechnung Adressen eines angemeldeten Kunden nicht übereinstimmen, um einen reibungslosen Checkout-Prozess zu gewährleisten. Bisher verhinderte eine Diskrepanz zwischen der Versand- und der Abrechnung Adresse eines Kunden das Rendern von LPM, was zu potenziellen Unterbrechungen während der Checkout führte.
-  _BÜNDEL-3367_
-* __Konfigurierbar mit &quot;Virtuell als untergeordnetes Produkt&quot;__
-Das System ermöglicht nun Express-Zahlungsmethoden für konfigurierbare Produkte, die ein virtuelles untergeordnetes Produkt haben, und sorgt so für einen reibungslosen Checkout-Prozess. Bisher waren Expresszahlungsmethoden nicht verfügbar, wenn ein konfigurierbares Produkt mit einem virtuellen untergeordneten Produkt zur Warenkorb hinzugefügt wurde.
-  _BÜNDEL-3368_
-* __Fehler bei CVV-Überprüfung fehlgeschlagen__
-  _BÜNDEL-3369_
-* __Sprung über den Konto Bereich Probleme 247__
-Das System ermöglicht es Kunden nun, neue Karte zu speichern oder Konto Informationen über mehrere Websites hinweg zu PayPal, ohne auf Autorisierung Fehler zu stoßen. Zuvor konnten Kunden keine neuen Zahlungsmethoden auf verschiedenen Websites speichern und erhielten eine Autorisierungsfehlermeldung.
+* __Bezahlen über LPM__
+Das System rendert nun die lokalen Zahlungsmethoden (LPM) beim ersten Laden korrekt, auch wenn die Versand- und Rechnungsadressen eines angemeldeten Kunden nicht übereinstimmen, was einen reibungslosen Checkout-Prozess gewährleistet. Zuvor konnte LPM aufgrund einer Diskrepanz zwischen den Versand- und Rechnungsadressen eines Kunden nicht gerendert werden, was zu potenziellen Störungen während des Checkouts führen konnte.
+  _BUNDLE-3367_
+* __Konfigurierbar mit Virtual as Child Product__
+Das System ermöglicht jetzt Express-Zahlungsmethoden für konfigurierbare Produkte, die ein virtuelles untergeordnetes Produkt haben, und gewährleistet so einen reibungslosen Checkout-Prozess. Zuvor waren keine Express-Zahlungsmethoden verfügbar, wenn ein konfigurierbares Produkt mit einem virtuellen untergeordneten Produkt zum Warenkorb hinzugefügt wurde.
+  _BUNDLE-3368_
+* __Fehler: CVV-Überprüfung fehlgeschlagen__
+  _BUNDLE-3369_
+* __Vaulting Über den Kontobereich Anfragen 247__
+Das System ermöglicht es Kunden, neue Karten- oder PayPal-Kontoinformationen über mehrere Websites hinweg zu speichern, ohne auf Autorisierungsfehler zu stoßen. Zuvor konnten Kunden keine neuen Zahlungsmethoden auf verschiedenen Websites speichern und erhielten eine Autorisierungsfehlermeldung.
   _BUNDLE-3370_
 * __Lieferadresse eines anderen Landes__
 Das System ermöglicht jetzt die fehlerfreie Verarbeitung von Transaktionen beim Versand an eine Adresse aus einem anderen Land und gewährleistet so einen reibungslosen Checkout-Prozess. Zuvor führte der Versuch, eine Adresse aus einem anderen Land zu versenden, zu Konsolenfehlern, obwohl keine sichtbaren Fehler im Frontend vorhanden waren.
@@ -444,12 +444,12 @@ Das System validiert nun die Verkaufsregeln korrekt und verhindert die Anwendung
   _AC-11876 - [GitHub-Problem](https://github.com/magento/magento2/issues/38671) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0574ac23)_
 * __[Problem] Verkaufsregel WarenkorbFeste Berechnung : Falscher Rabattbetrag__
 Das System berechnet nun den Rabattbetrag für Verkaufsregeln mit festen Warenkorbbeträgen korrekt und stellt sicher, dass genaue Rabatte unabhängig von Änderungen an den Warenkorbartikeln angewendet werden. Zuvor konnte der Rabattbetrag falsch variieren, wenn Artikel im Warenkorb geändert wurden, was manchmal zu erheblich größeren Rabatten als erwartet führte.
-  _AC-11914 – [GitHub-Problem](https://github.com/magento/magento2/issues/38694) – [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/581b7ef1)_
-* __[Problem:] Der Loader blockiert die Versandarten, nachdem die Postleitzahl, die Versandkosten Tauglichkeitsprüfung die Regeln__ geändert wurden
-Das System behandelt nun benutzerdefinierte Versandmethoden ohne Versandkosten Tauglichkeitsprüfung Regeln korrekt und stellt sicher, dass der Verlader die Versandmethoden nicht blockiert, nachdem die Postleitzahl in der Lieferadresse während des Checkout geändert wurde. Bisher führte die Änderung der Postleitzahl in der Lieferadresse während der Checkout dazu, dass der Loader die Versandmethoden blockierte und nicht verschwand, wenn benutzerdefinierte Versandmethoden ohne Versandkosten Tauglichkeitsprüfung Regeln verwendet wurden.
+  _AC-11914 - [GitHub-Problem](https://github.com/magento/magento2/issues/38694) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/581b7ef1)_
+* __[Problem] Der Lader blockiert die Versandmethoden, nachdem die Postleitzahl geändert wurde. Validierungsregeln für Versandraten__
+Das System verarbeitet jetzt benutzerdefinierte Versandmethoden ohne Validierungsregeln für Versandraten korrekt, sodass der Lader die Versandmethoden nicht blockiert, nachdem die Postleitzahl während des Checkouts in der Versandadresse geändert wurde. Zuvor führte eine Änderung der Postleitzahl in der Versandadresse während des Checkouts dazu, dass der Lader die Versandmethoden blockiert und nicht verschwindet, wenn benutzerdefinierte Versandmethoden ohne Validierungsregeln für Versandraten verwendet wurden.
   _AC-11993 - [GitHub-Problem](https://github.com/magento/magento2/issues/38742) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1bafc571)_
-* __Die Coupon-Code-Funktion funktioniert im Checkout Seite bei Magento 2.4.7__ nicht richtig
-Das System aktiviert jetzt das Eingabefeld Rabattcode/Coupon auf der Checkout Seite für virtuelle und herunterladbare Produkte, sodass Benutzer Rabattcodes wie erwartet anwenden können. Zuvor war die Eingabe des Rabattcodes/Coupons deaktiviert und der Text des Schaltflächentitels wurde als „Coupon abbrechen“ angezeigt, was Benutzer daran hinderte, Rabattcodes anzuwenden.
+* __Die Gutscheincode-Funktion funktioniert auf der Kaufbestätigungsseite in Magento 2.4.7 nicht ordnungsgemäß__
+Das System aktiviert jetzt das Eingabefeld für Rabattcode/Coupon auf der Checkout-Seite für virtuelle und herunterladbare Produkte, sodass Benutzer Rabattcodes wie erwartet anwenden können. Zuvor war die Eingabe des Rabattcodes/Coupons deaktiviert und der Text des Schaltflächentitels wurde als „Coupon abbrechen“ angezeigt, was Benutzer daran hinderte, Rabattcodes anzuwenden.
   _AC-12170 - [GitHub-Problem](https://github.com/magento/magento2/issues/38826) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1bafc571)_
 * __Das Kontrollkästchen „Allgemeine Geschäftsbedingungen“ lässt HTML in der Storefront nicht zu__
 Das System unterstützt jetzt die Formatierung von HTML im Checkbox „Geschäftsbedingungen“ auf der Storefront, was eine bessere Anpassung und Lesbarkeit ermöglicht. Zuvor wurde der Checkbox-Text im Nur-Text-Format angezeigt, wobei alle verwendeten HTML-Tags ignoriert wurden.
@@ -541,15 +541,15 @@ Wenn Sie jetzt bei Produkten, für die besondere Aufmerksamkeit erforderlich ist
   _ACP2E-3510_
 * __[CLOUD] Funktion der Schaltfläche neu anordnen__
 Wenn Sie eine Bestellung im Administratorbereich neu bestellen, werden jetzt Produkte mit Lager zum Angebot hinzugefügt, auch wenn es einige Produkte in der ursprünglichen Bestellung gibt, die nicht mehr vorrätig sind. Vor der Fehlerbehebung wurden keine Produkte zum neuen Angebot hinzugefügt, wenn Produkte ohne Lager in der ursprünglichen Bestellung waren.
-  _ACP2E-3618 – [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a52ff98f)_
+  _ACP2E-3618 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a52ff98f)_
 * __Suchvorgänge funktionieren nicht nach Postleitzahl__
 Die Suche nach Abholorten per Postleitzahl funktionierte bei niederländischen Lokalisierungen nicht ordnungsgemäß. Nach der Fehlerbehebung liefert die Suche nach dem Abholort Ergebnisse basierend auf der Postleitzahl.
-  _ACP2E-3622 – [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/344fce23)_
+  _ACP2E-3622 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/344fce23)_
 
-### Warenkorb und Kasse, Kasse/One Seite Kasse
+### Warenkorb &amp; Checkout, Checkout/ Eine Seite Checkout
 
-* __[Das Feld &quot;Zufällige BUG-E-Mail] &quot; wird nicht gerendert oder es dauert lange, bis es im Checkout-, Versand- oder Zahlungs-Seite__ angezeigt wird
-Commerce rendert das **[!UICONTROL Email]** Feld jetzt auf den Checkout Versand- und Zahlungsseiten wie erwartet. Zuvor war dieses Feld entweder nicht vorhanden oder wurde nur langsam gerendert.
+* __[Zufällige Fehler] Das Feld „E-Mail“ wird nicht gerendert oder benötigt viel Zeit, um auf der Kaufbestätigungs-, Versand- oder Zahlungsseite anzuzeigen__
+Commerce rendert jetzt das **[!UICONTROL Email]** auf den Seiten Checkout-Versand und Zahlung wie erwartet. Zuvor war dieses Feld entweder nicht vorhanden oder wurde langsam gerendert.
   _AC-9386 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/e1babcfd)_
 
 ### Warenkorb und Checkout, Bestellung
@@ -1004,18 +1004,18 @@ Das System speichert Seiten jetzt korrekt zwischen, wenn der Parameter MAGE_RUN_
 * __[Problem] Behebung von Inkonsistenzen bei der Ausnahmebehandlung zwischen dem Entwickler- und dem Produktionsmodus__
 Das System verarbeitet jetzt Ausnahmen konsistent zwischen dem Entwickler- und dem Produktionsmodus, wodurch eine unerwartete Weiterleitung zur Anmeldeseite verhindert wird, wenn eine Ausnahme ausgelöst wird. Zuvor konnte eine Inkonsistenz bei der Ausnahmebehandlung zu einer Umleitung zur Anmeldeseite im Produktionsmodus führen, anstatt die Ausnahmemeldung anzuzeigen.
   _AC-11829 - [GitHub-Problem](https://github.com/magento/magento2/issues/38639) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37712)_
-* __Ersetzen Übersetzung von &quot;PayPal Konto&quot; in token_Liste.phtml__
-Das System kennzeichnet nun den Abschnitt für tokenisierbare Konto Zahlungsmethoden als &quot;Konto&quot; anstelle von &quot;PayPal Konto&quot; in der Seite &quot;Gespeicherte Zahlungsmethoden&quot;, was ihn repräsentativer für seine Funktion macht. Zuvor war dieser Abschnitt ausdrücklich als &quot;PayPal-Konto&quot; gekennzeichnet, was irreführend war, als andere tokenisierbare Konto Zahlungsmethoden hinzugefügt wurden.
+* __PayPal-Konto-Übersetzung in token_list.phtml ersetzen__
+Das System kennzeichnet den Abschnitt für Token-fähige Konto-Zahlungsmethoden auf der Seite „Gespeicherte Zahlungsmethoden“ nun als „Konto“ anstelle von „PayPal-Konto“, wodurch er seine Funktion besser darstellt. Zuvor wurde dieser Abschnitt speziell als „PayPal-Konto“ gekennzeichnet, was irreführend war, wenn andere Token-fähige Konto-Zahlungsmethoden hinzugefügt wurden.
   _AC-11852 - [GitHub-Problem](https://github.com/magento/magento2/issues/35622) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37959)_
-* __Die Abwärtskompatibilität der Magento\Catalog\Model\ProductRepository-Klasse__ ist verloren gegangen.
-Die ProductRepository-Klasse behält nun die Abwärtskompatibilität bei, indem die Initialization Helper-Klasse als zweiter Parameter wiederhergestellt wird, wodurch sichergestellt wird, dass Module, die sich von dieser Klasse erstrecken, wie erwartet funktionieren. Zuvor führte das Entfernen des Initialisierungshilfsprogramms aus dem Konstruktor in der ProductRepository-Klasse zu einem Verlust der Abwärtskompatibilität, sodass Benutzer gezwungen waren, eine Problemumgehung zu verwenden.
+* __Die Abwärtskompatibilität wurde für die Klasse Magento\Catalog\Model\ProductRepository nicht mehr unterstützt__
+Die ProductRepository-Klasse erhält jetzt die Abwärtskompatibilität aufrecht, indem sie die Initialisierungs-Hilfsklasse als zweiten Parameter wiederherstellt und sicherstellt, dass Module, die von dieser Klasse erweitert werden, erwartungsgemäß funktionieren. Zuvor führte das Entfernen des Initialization Helper aus dem Konstruktor in der ProductRepository-Klasse zu einem Verlust der Abwärtskompatibilität, was Benutzer zwang, eine Problemumgehung zu verwenden.
   _AC-11874 - [GitHub-Problem](https://github.com/magento/magento2/issues/38669)_
 * __[Problem] Statische Inhaltsbereitstellung - Typfehler__
 Das System verarbeitet jetzt leere LESS-Dateien während der Bereitstellung statischer Inhalte korrekt und zeigt die Fehlermeldung „LESS-Datei ist leer“ an. Zuvor wurde ein Fehler vom Typ „Falsch“ ausgelöst, wenn während der Bereitstellung eine leere LESS-Datei auftrat.
   _AC-11905 - [GitHub-Problem](https://github.com/magento/magento2/issues/38682) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/38683)_
 * __[Problem] [Anzeigen] Zusätzlicher Leerraum im Link- und Skript-Tag wurde entfernt__
-Das System stellt jetzt sicher, dass es keine zusätzlichen Leerzeichen in den Link- und Skript-Tags gibt, was einen saubereren und effizienteren Code bietet. Zuvor konnten Dublette Leerzeichen zwischen Attributen in den verknüpfen- und Skript-Tags gefunden werden.
-  _AC-12002 – [GitHub-Problem](https://github.com/magento/magento2/issues/32920) – [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/32919)_
+Das System stellt jetzt sicher, dass es keine zusätzlichen Leerzeichen in den Link- und Skript-Tags gibt, was einen saubereren und effizienteren Code bietet. Zuvor konnten zwischen Attributen in den Link- und Skript-Tags doppelte Leerzeichen gefunden werden.
+  _AC-12002 - [GitHub-Problem](https://github.com/magento/magento2/issues/32920) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/32919)_
 * __[Problem] Vermeiden Sie eine Fehlkonfiguration in der Endlosschleife__
 Das System vermeidet jetzt eine Endlosschleife, indem es in virtuellen Typkonfigurationen die selbstreferenzielle Zuordnung verhindert. Dadurch wird sichergestellt, dass die Anwendung beim Versuch, einen selbstverweisenden Knoten zu dereferenzieren, nicht in einer Endlosschleife hängt. Wenn eine Konfiguration eines virtuellen Typs zuvor selbstverweisend war, würde dies dazu führen, dass sich die Anwendung unbegrenzt dreht.
   _AC-12127 - [GitHub-Problem](https://github.com/magento/magento2/issues/38822) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/38794)_
@@ -1445,11 +1445,11 @@ Produkte, die mit „Produkte nach SKU hinzufügen“ hinzugefügt wurden, werde
 
 ### Bestellung, Zahlungen
 
-* __Der Administrator kann bestellen Linear weiterhin ohne Zahlungsmethode__ platzieren
-Bisher konnte der Händler Bestellungen über den Admin-Bereich aufgeben, ohne eine Zahlungsmethode auswählen zu müssen. Jetzt ist der Händler eine Zahlungsmethode erforderlich, um mit der Platzierung einer bestellen fortzufahren.
-  _ACP2E-3233 – [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/fd5cf3af)_
+* __Der Administrator kann auch ohne Zahlungsmethode eine Bestellung aufgeben__
+Zuvor konnte der Händler Bestellungen über das Admin-Panel aufgeben, ohne eine Zahlungsmethode auszuwählen. Jetzt wird der Händler eine Zahlungsmethode benötigt, um mit der Bestellung fortzufahren.
+  _ACP2E-3233 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/fd5cf3af)_
 
-### Bestellung, Rückgabe
+### Reihenfolge, Rückgabe
 
 * __Die Bestellerstattung führt zu einer doppelten Gutschrift__
 Wenn bei der Rückerstattung über die REST-API zwei identische Anfragen gleichzeitig ausgeführt wurden, werden keine doppelten Gutschriften mehr erstellt.
@@ -1537,7 +1537,7 @@ Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem W
 * __Es können keine Produkte hinzugefügt werden, da bei der SKU-Mutation die Groß-/Kleinschreibung beachtet wird__
 Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation bei Verwendung von SKUs mit unterschiedlicher Groß-/Kleinschreibung den Fehler „PRODUCT_NOT_FOUND“ zurückgab. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
   _LYNX-469_
-* __Produktattribut > Marken-Kurzform &trade; wird als &trade;zurückgegeben__
+* __Produktattribut > Marken-Kurzform &amp;trade; wird als &amp;trade;zurückgegeben__
 Es wurde ein Zeichenkodierungsproblem mit dem Produktnamen für die GraphQL-API behoben
   _LYNX-603_
 * __updateCustomerEmail-Mutationsproblem__
@@ -1591,11 +1591,11 @@ Der Parameter orderRef wurde zum Link in der Bestätigungs-E-Mail zur Stornierun
 * __Probleme mit der Kundenabfrage bei deaktivierter RMA__
 Die GraphQL-Logik wurde aktualisiert, um sicherzustellen, dass zuvor erstellte Rückgaben auch dann verfügbar bleiben, wenn RMA global deaktiviert ist. Die Fehlermeldung wurde entfernt, um die Storefront-Benutzeroberfläche zu verbessern und sicherzustellen, dass Kunden ihre früheren Rücksendungen weiterhin anzeigen können.
   _LYNX-690_
-* __GraphQL gibt keine aktualisierten Warenkorb-Daten zurück, wenn widersprüchliche Coupons angewendet wurden__
-Fest ein Problem, bei dem das Anwenden eines in Konflikt stehenden Coupon mit einer höheren Priorität zu einer Fehlermeldung führte, ohne dass die aktualisierten Warenkorb Daten zurückgegeben wurden. Wenn nun ein neuer Coupon die vorhandene ungültig macht, gibt die Mutation den Warenkorb mit angewendetem gültigem Coupon korrekt zurück.
-  _LUCHS-696_
-* __Kann für das Feld, das keine NULL-Werte zulässt, &quot;TaxItem.title&quot; für placeOrder GQL__ nicht null zurückgeben
-Fest ein Problem, bei dem die placeOrder-Mutation mit einem internen Serverfehler fehlgeschlagen ist, der auf einen NULL-Wert für das Feld TaxItem.title zurückzuführen ist, das keine NULL-Werte zulässt. Jetzt gibt das Feld immer einen gültigen Wert zurück, um eine erfolgreiche bestellen Platzierung sicherzustellen.
+* __GraphQL gibt beim Anwenden widersprüchlicher Coupons keine aktualisierten Warenkorbdaten zurück__
+Es wurde ein Problem behoben, bei dem die Anwendung eines widersprüchlichen Coupons mit einer höheren Priorität zu einer Fehlermeldung führte, ohne die aktualisierten Warenkorbdaten zurückzugeben. Wenn nun ein neuer Coupon die vorhandene ungültig macht, gibt die Mutation den Warenkorb mit angewendetem gültigem Coupon korrekt zurück.
+  _LYNX-696_
+* __Für das Feld „TaxItem.title“, das keine NULL-Werte zulässt, kann in placeOrder GQL nicht null zurückgegeben werden__
+Fehlerkorrektur - Die placeOrder-Mutation ist jetzt aufgrund eines Nullwerts für das Feld TaxItem.title, in dem keine NULL-Werte zulässig sind, mit einem internen Server-Fehler fehlgeschlagen. Jetzt gibt das Feld immer einen gültigen Wert zurück, um eine erfolgreiche Auftragserteilung sicherzustellen.
   _LYNX-699_
 * __Geschätzte Gesamtwerte: Rabatte sind null für virtuelle Produktarten__
 Es wurde das Problem behoben, bei dem die Mutation estimatedTotals für Rabatte null zurückgab, wenn ein Rabattcode auf einen Warenkorb mit virtuellen Produkten angewendet wird.
@@ -1638,9 +1638,6 @@ Das System lädt CSS-Dateien nun korrekt asynchron auf Auscheckseiten, selbst we
 * __Bei Verwendung des virtuellen Typs zum Konfigurieren des Plug-ins kann die Interceptor-Methode im `setup:di:compile`-Befehl nicht korrekt generiert werden__
 Das System generiert jetzt korrekt Interceptor-Methoden, wenn ein virtueller Typ zum Konfigurieren eines Plug-ins verwendet wird, um konsistente Ergebnisse sicherzustellen, unabhängig davon, ob vorkompiliert oder zur Laufzeit kompiliert. Zuvor generiert das System beim Vorkompilieren falsche Ergebnisse im Vergleich zur Laufzeitkompilierung.
   _AC-13398 - [GitHub-Problem](https://github.com/magento/magento2/issues/33980) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/38141)_
-* __Dateien können nicht von der Datenerfassung heruntergeladen werden__
-Beim Herunterladen der Sicherung wird keine leere Seite mehr angezeigt, anstatt die Datei herunterzuladen.
-  _ACP2E-3441_
 * __Adobe Commerce 2.4.7-p3-Modultests schlagen fehl__
 Es sind keine Versionshinweise erforderlich.
   _ACP2E-3631 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/982b1c42)_
@@ -1934,8 +1931,8 @@ Das System erkennt nun veraltete Methoden in IDEs aufgrund einer Rechtschreibkor
   _AC-13478 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7d5e3906)_
 * __Integrationstests sind fehlgeschlagen Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission__
   _AC-13716_
-* __[Datenbankvergleich] Schwerwiegender Fehler, wenn die Datenbank einen Datensatz über Target enthält Regel ohne Bedingungen__
-Früher, wenn die Datenbank einen Datensatz über die Target-Komponente enthält, erhielt Regel ohne Bedingung schwerwiegende Fehler, aber nach der Korrektur verläuft der Datenbankvergleich Tool erfolgreich ohne schwerwiegende Fehler.
+* __[Datenbankvergleich] Schwerwiegender Fehler, wenn die Datenbank einen Eintrag über die Zielregel ohne Bedingungen enthält__
+Zuvor, wenn die Datenbank einen Datensatz über die Zielregel enthält, ohne dass eine Bedingung eintrat, die schwerwiegenden Fehler verursachte, aber nachdem das Tool zum Beheben von Datenbankvergleichen erfolgreich und ohne schwerwiegende Fehler durchgeführt wurde.
   _AC-13722_
 * __Korrigieren Sie statische Tests, um die Verwendung von Erweiterungen von 3D-Anbietern zu ermöglichen__
   _AC-13848 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/9e383b4d)_
