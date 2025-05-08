@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9242cdf1e3a3eecf28013dce7688b646d0a3e8fc
+source-git-commit: 0ef2bc9bc13f1480b7a1305a4a138fabeec8f3be
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 54%
@@ -60,7 +60,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4
+            4,1
       </td>
     </tr>
     <tr>
@@ -270,7 +270,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3,13
+            4,1
       </td>
       <td>
             3,13
@@ -740,7 +740,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3,13
+            4,1
       </td>
       <td>
             3,13
@@ -1413,7 +1413,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            3,13
+            4,1
       </td>
       <td>
             3,13
