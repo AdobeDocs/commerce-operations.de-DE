@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
+source-git-commit: 290e79e329d5809b0cbb756a53ee935af95c86c5
 workflow-type: tm+mt
 source-wordcount: '27937'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Behobene Probleme in Version 2.4.8
 
-Es wurden 582 Probleme im Adobe Commerce 2.4.8-Kerncode behoben. Nachfolgend werden einige der in dieser Version enthaltenen behobenen Probleme beschrieben.
+Es wurden 581 Probleme im Adobe Commerce 2.4.8-Kerncode behoben. Nachfolgend werden einige der in dieser Version enthaltenen behobenen Probleme beschrieben.
 
 ### APIs
 
@@ -192,7 +192,7 @@ Der Befehl `bin/magento i18n:collect-phrases -o` erfasst und fügt nun neue Ausd
 * __Berechtigungsproblem für den Zugriff auf den dynamischen Block__
 Zuvor gab es beim Hinzufügen eines neuen dynamischen Blocks für Administratoren mit eingeschränktem Administratorzugriff einen Fehler. Nach der Implementierung dieser Fehlerbehebung kann der eingeschränkte Administrator den dynamischen Block erfolgreich hinzufügen und den Block ohne Fehler bearbeiten
   _ACP2E-2687_
-* __Apostroph im Namen der Store-Ansicht wird durch &quot;&#039;__&quot; ersetzt
+* __Apostroph im Namen der Store-Ansicht wird durch &quot;&amp;#039;__&quot; ersetzt
 Die Store-View-Filter des Rasters zeigen jetzt korrekt Apostrophe an
   _ACP2E-2787 - [GitHub-Problem](https://github.com/magento/magento2/issues/38395) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/39d54c2d)_
 * __Der Favicon-Upload kann .ico-Dateien nicht validieren__
@@ -1537,7 +1537,7 @@ Es wurde ein Problem behoben, bei dem der Versuch, vorrätige Produkte aus dem W
 * __Es können keine Produkte hinzugefügt werden, da bei der SKU-Mutation die Groß-/Kleinschreibung beachtet wird__
 Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation bei Verwendung von SKUs mit unterschiedlicher Groß-/Kleinschreibung den Fehler „PRODUCT_NOT_FOUND“ zurückgab. Die Mutation verarbeitet SKUs nun ohne Unterscheidung der Groß-/Kleinschreibung und stellt so die Konsistenz mit Abfragen des Katalog-Service und dem PDP-Verhalten sicher.
   _LYNX-469_
-* __Produktattribut > Marken-Kurzform &trade; wird als &trade;zurückgegeben__
+* __Produktattribut > Marken-Kurzform &amp;trade; wird als &amp;trade;zurückgegeben__
 Es wurde ein Zeichenkodierungsproblem mit dem Produktnamen für die GraphQL-API behoben
   _LYNX-603_
 * __updateCustomerEmail-Mutationsproblem__
