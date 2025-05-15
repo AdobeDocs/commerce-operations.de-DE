@@ -2,7 +2,7 @@
 title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
+source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 Adobe Commerce on Cloud Infrastructure ist ein PaaS-Angebot (Platform-as-a-Service), das auf einem Sicherheits- und Betriebsmodell basiert, das sich auf gemeinsame Verantwortung stützt. Diese Zuständigkeiten teilen sich Adobe, der Händler, der Cloud Service-Anbieter und der Content Delivery Network (CDN)-Anbieter. Jede Partei ist für die Sicherung und den Betrieb des Adobe Commerce-Programms und der auf der Cloud-Infrastruktur bereitgestellten händlerspezifischen Codes und Erweiterungen selbst verantwortlich.
 
 Dieses gemeinsame Modell ermöglicht es Händlern, eine hochflexible, anpassbare und skalierbare Lösung zu entwerfen und zu implementieren, die ihren geschäftlichen Anforderungen entspricht und gleichzeitig betriebliche Verantwortlichkeiten und Kosten minimiert.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
 
 Im Allgemeinen ist Adobe für Folgendes verantwortlich:
 
@@ -30,18 +32,18 @@ Händler sind für Folgendes verantwortlich:
 - Einholung der PCI-Zertifizierung, falls vom Zahlungsverarbeiter des Händlers angefordert
 - Reaktion auf Sicherheitsvorfälle
 
-## Adobe-Zuständigkeiten
+## Zuständigkeiten von Adobe
 
-Adobe ist für die Sicherheit und Verfügbarkeit der Adobe Commerce in der Cloud-Infrastrukturumgebung und des Kernlösungs-Codes verantwortlich. Darüber hinaus ist Adobe für die erforderlichen Aktivitäten und Mechanismen verantwortlich, die die Sicherheit der Adobe Commerce on Cloud Infrastructure-Lösung gewährleisten, darunter:
+Adobe ist für die Sicherheit und Verfügbarkeit der Adobe Commerce in der Cloud-Infrastrukturumgebung und des zentralen Lösungs-Codes verantwortlich. Darüber hinaus ist Adobe für die erforderlichen Aktivitäten und Mechanismen verantwortlich, die die Sicherheit der Adobe Commerce on Cloud Infrastructure-Lösung gewährleisten, darunter:
 
 - Anwenden von Sicherheit auf Serverebene und Patches für von Adobe Commerce unterstützte Anwendungen auf Cloud-Infrastrukturen wie Cloud-Datenspeicher und Suchfunktionen
 - Durchführen von Penetrationstests und Scannen des Kern-Codes von Adobe Commerce auf Cloud-Infrastruktur
 - Durchführung halbjährlicher Überprüfungen und Audits von IAM-Lösungen (Identity and Access Management) und Berechtigungsverwaltungslösungen von Public Cloud Service Providern (PCI Compliance Requirement)
-- Durchführung halbjährlicher Überprüfungen und Audits autorisierter Anwender, einschließlich Adobe-Mitarbeitern und Auftragnehmern (PCI-Compliance-Anforderung)
+- Durchführung halbjährlicher Überprüfungen und Audits autorisierter Anwender, einschließlich Adobe-Mitarbeitern und -Auftragnehmern (PCI-Compliance-Anforderung)
 - Durchführung jährlicher Tests und Dokumentation der Sicherungs- und Wiederherstellungsfunktionen
 - Server- und Perimeter-Firewalls konfigurieren
 - Verbinden und Konfigurieren des Repositorys der Adobe Commerce in der Cloud-Infrastruktur
-- Definieren, Testen, Implementieren und Dokumentieren von Notfall-Wiederherstellungsplänen (Disaster Recovery, DR) für die Zuständigkeitsbereiche der Adobe
+- Definieren, Testen, Implementieren und Dokumentieren von Notfall-Wiederherstellungsplänen (Disaster Recovery, DR) für die Bereiche, für die Adobe zuständig ist
 - Definieren von Regeln für die globale Plattform-Web-Anwendungs-Firewall (WAF)
 - Abhärten des Betriebssystems (OS)
 - Implementierung und Wartung der Integration von Content Distribution Network (CDN)- und Application Performance Management (APM)-Lösungen mit Adobe Commerce auf Cloud-Infrastrukturen
@@ -55,9 +57,9 @@ Adobe ist für die Sicherheit und Verfügbarkeit der Adobe Commerce in der Cloud
 - Einrichten des DNS (nur Adobe Commerce auf der Cloud-Infrastrukturplattform)
 - Plattform auf Sicherheitslücken testen
 
-Adobe erhält die PCI-Zertifizierung für die Infrastruktur und Services, die für die Adobe Commerce-Lösung verwendet werden.  Händler sind für die Einhaltung von benutzerspezifischem Code, System- und Netzwerkprozessen sowie für die Organisation verantwortlich.
+Adobe verwaltet die PCI-Zertifizierung für die für die Adobe Commerce-Lösung verwendeten Infrastrukturen und Services.  Händler sind für die Einhaltung von benutzerspezifischem Code, System- und Netzwerkprozessen sowie für die Organisation verantwortlich.
 
-Adobe gewährleistet auch die Verfügbarkeit der Infrastruktur des Händlers, wie in der entsprechenden SLA vereinbart.
+Adobe stellt auch die Verfügbarkeit der Infrastruktur des Händlers sicher, wie im entsprechenden SLA vereinbart.
 
 ## Händlerpflichten
 
@@ -86,9 +88,9 @@ Der Händler ist für die Befolgung der Best Practices für die Sicherheit für 
 - Tests und Qualitätssicherung des benutzerdefinierten Programms
 - Gewährleistung der Sicherheit aller Systeme oder Netzwerke, die der Händler mit der Adobe Commerce on Cloud Infrastructure-Anwendung verbindet
 
-## Zuständigkeiten des Cloud Service-Providers
+## Zuständigkeiten des Cloud Service-Anbieters
 
-Adobe stützt sich auf etablierte Cloud Service-Anbieter, um die Cloud-Server-Infrastruktur für Adobe Commerce in der Cloud-Infrastruktur zu hosten. Diese Anbieter sind für die Sicherheit des Netzwerks verantwortlich, einschließlich Routing, Switching und Perimeter-Netzwerksicherheit über Firewall-Systeme und Intrusion Detection Systems (IDS). Cloud-Service-Anbieter sind auch für die physische Sicherheit von Rechenzentren, in denen die Adobe Commerce on Cloud Infrastructure-Lösung gehostet wird, und die Umgebungssicherheit von Rechenzentren verantwortlich.
+Adobe nutzt etablierte Cloud Service-Anbieter als Host für die Cloud-Server-Infrastruktur für Adobe Commerce in der Cloud-Infrastruktur. Diese Anbieter sind für die Sicherheit des Netzwerks verantwortlich, einschließlich Routing, Switching und Perimeter-Netzwerksicherheit über Firewall-Systeme und Intrusion Detection Systems (IDS). Cloud-Service-Anbieter sind auch für die physische Sicherheit von Rechenzentren, in denen die Adobe Commerce on Cloud Infrastructure-Lösung gehostet wird, und die Umgebungssicherheit von Rechenzentren verantwortlich.
 
 Cloud Service-Anbieter sind auch verantwortlich für:
 
@@ -503,7 +505,7 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die Sicherhei
     <td></td>
   </tr>
   <tr>
-    <td>Jährliche Tests und Dokumentation des Adobe-DR-Plans und der Sicherung und Wiederherstellung</td>
+    <td>Jährliche Tests und Dokumentation des Adobe DR-Plans sowie der Sicherung und Wiederherstellung</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -523,7 +525,7 @@ Die folgende Zusammenfassungstabelle verwendet das RACI-Modell, um die Sicherhei
       <p><sup><strong>1</strong></sup> Nur wenn das Repository Adobe Commerce in der Cloud-Infrastruktur als Haupt-Repository verwendet wird. Die Nutzung anderer externer Repositorys liegt in der alleinigen Verantwortung des Händlers.</p>
       <p><sup><strong>2</strong></sup> Adobe bietet bei Problemen mit CDN-Anbietern Support der Stufe 1.</p>
       <p><sup><strong>3</strong></sup> Der Händler ist für alle Ngnix-Steuerungen verantwortlich, die er für seine Anwendungen konfiguriert.</p>
-      <p><sup><strong>4</strong></sup> Für PCI gelten die Anforderungen an Penetrationstests für Adobe und Händler.</p>
+      <p><sup><strong>4</strong></sup> Für PCI werden die Anforderungen an Penetrationstests zwischen Adobe und dem Händler geteilt.</p>
     </td>
   </tr>
 </tfoot>
@@ -680,8 +682,8 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 |     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit des RabbitMQ-Service | R |   |
-| Konfiguration der standardmäßigen RabbitMQ-Einstellungen | R |   |
-| Laufende Qualität und Patches von RabbitMQ | R |   |
+| Konfiguration der Standard-RabbitMQ-Einstellungen | R |   |
+| Laufende Qualität und Patchen von RabbitMQ | R |   |
 | Senden einer Service-Anfrage zur Installation einer RabbitMQ-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |   | R |
 
 {style="table-layout:auto"}
@@ -709,7 +711,7 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 | Laufende Infrastrukturoptimierung | R |   |
 | Identifizieren und Korrigieren langsamer Abfragen |     | R |
 | Senden einer Service-Anfrage zur Installation einer MariaDB-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |     | R |
-| Einrichten und Verwalten von für Händler spezifischen Richtlinien zur Datenaufbewahrung (Adobe-Richtlinien zur Datenaufbewahrung werden im Händlervertrag definiert) |     | R |
+| Einrichten und Verwalten von spezifischen Richtlinien zur Datenaufbewahrung für Händler (die Richtlinien zur Datenaufbewahrung von Adobe werden im Händlervertrag definiert) |     | R |
 
 {style="table-layout:auto"}
 
@@ -744,7 +746,7 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 |     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit von Elasticsearch | R |   |
-| Konfiguration der Standard-Elasticsearch-Einstellungen | R |   |
+| Konfiguration der standardmäßigen Elasticsearch-Einstellungen | R |   |
 | Senden einer Service-Anfrage zur Installation einer Elasticsearch-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |  | R |
 
 {style="table-layout:auto"}
@@ -783,19 +785,19 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 
 |     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit der Business Intelligence-Services von Adobe Commerce | R |   |
+| Verfügbarkeit von Adobe Commerce Business Intelligence-Services | R |   |
 | MBI-Datensynchronisierungsprozesse | R |   |
 | Erkennen von MBI-Synchronisierungsproblemen | R |   |
 | Konfigurieren der MBI-Datensynchronisation mit Adobe Commerce Cloud Pro, Starter, On-Premise oder Nicht-Adobe Commerce<br> (API, Datenqualität und -formatierung, Händlernetzwerk, <br>DB-Verbindungen sowohl innerhalb als auch außerhalb von Adobe Commerce Cloud DB, über Datenschwellenwerte) |     | R |
-| Konfigurieren der MBI-Datensynchronisation mit Adobe Commerce Cloud Pro<br> (Adobe Commerce Cloud-Datenbankkonfiguration) | R |   |
+| Konfigurieren der MBI-Datensynchronisation mit Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud-Datenbankkonfiguration) | R |   |
 
 {style="table-layout:auto"}
 
-#### Produkt-Recommendations
+#### Produkt Recommendations
 
 |     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit des Recommendations-Produktdienstes | R |   |
+| Verfügbarkeit des Product Recommendations-Service | R |   |
 
 {style="table-layout:auto"}
 
@@ -816,7 +818,7 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 | --- | --- | --- |
 | Dediziertes SSL-Zertifikat - Gültigkeit | R |  |
 | Bereitstellen von SSL-Zertifikaten | R |  |
-| Erwerb und Pflege von EV-/spezifischen SSL-Zertifikaten (außer den bereitgestellten Standardwerten) und Bereitstellung für Adobe |     | R |
+| Erwerb und Pflege von EV-/spezifischen SSL-Zertifikaten (außer den bereitgestellten Standardwerten) und Bereitstellung an Adobe |     | R |
 
 {style="table-layout:auto"}
 
@@ -851,8 +853,8 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 | Konfigurieren und Verwalten von PrivateLink-Verbindungen (falls verwendet) mit einer Adobe-eigenen VPC | R |   |
 | Konfigurieren und Verwalten von PrivateLink-Verbindungen (falls verwendet) mit einer VPC im Besitz eines Händlers |     | R |
 | Verfügbarkeit von SSH (nicht-privater Link) | R |   |
-| Konfiguration des privatenLink-Eingangs zum Adobe Commerce Cloud-Service-Endpunkt | R |   |
-| Akzeptieren des privaten Links zum Adobe Commerce Cloud-Service-Endpunkt |     | R |
+| Konfiguration des privaten Links zum Adobe Commerce Cloud Service-Endpunkt | R |   |
+| Akzeptieren des privaten Links zum Adobe Commerce Cloud Service-Endpunkt |     | R |
 | Konfiguration von PrivateLink Inbound auf den VPC Service-Endpunkt des Händlers |     | R |
 | Akzeptieren des über den VPC-Service-Endpunkt des Händlers eingehenden PrivateLink | R |   |
 | Konfiguration von PrivateLink-Integrationen (Endpunkt zu Konto) |     | R |
