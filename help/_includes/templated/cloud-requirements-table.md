@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0ef2bc9bc13f1480b7a1305a4a138fabeec8f3be
+source-git-commit: 100a2ab9005ab99fb364daa360c71f5627f70bde
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 54%
@@ -10,9 +10,7 @@ ht-degree: 54%
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software-Abhängigkeiten
-      </th>
+      <th>Software-Abhängigkeiten</th>
       <th>2,4,8</th>
     </tr>
   </thead>
@@ -20,19 +18,13 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,8
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          —
+          2,8
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -44,13 +36,13 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            11.5.0.18+, 10.15.0.4+
+          11.5.0.18+, 10.15.0.4+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8,4/8,3
+          8,4/8,3
       </td>
     </tr>
     <tr>
@@ -71,9 +63,7 @@ ht-degree: 54%
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software-Abhängigkeiten
-      </th>
+      <th>Software-Abhängigkeiten</th>
       <th>2.4.7-p5</th>
       <th>2.4.7-p4</th>
       <th>2.4.7-p3</th>
@@ -86,64 +76,43 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,8
+          2,8
       </td>
       <td>
-            2,8
+          2,8
       </td>
       <td>
-            2,7
+          2,7
       </td>
       <td>
-            2,7
+          2,7
       </td>
       <td>
-            2,7
+          2,7
       </td>
       <td>
-            2,7
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+          2,7
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -170,43 +139,43 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-            10.15.0.4+, 10.7.0.319+
+          10.15.0.4+, 10.7.0.319+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8,3/8,2
+          8,3/8,2
       </td>
       <td>
-            8,3; 8,2
+          8,3; 8,2
       </td>
       <td>
-            8,3; 8,2
+          8,3; 8,2
       </td>
       <td>
-            8,3; 8,2
+          8,3; 8,2
       </td>
       <td>
-            8,3; 8,2
+          8,3; 8,2
       </td>
       <td>
-            8,3; 8,2
+          8,3; 8,2
       </td>
     </tr>
     <tr>
@@ -224,10 +193,10 @@ ht-degree: 54%
             3,13
       </td>
       <td>
-            3,12
+          3,12
       </td>
       <td>
-            3,12
+          3,12
       </td>
     </tr>
     <tr>
@@ -257,9 +226,7 @@ ht-degree: 54%
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software-Abhängigkeiten
-      </th>
+      <th>Software-Abhängigkeiten</th>
       <th>2.4.6-P10</th>
       <th>2.4.6-p9</th>
       <th>2.4.6-p8</th>
@@ -277,109 +244,73 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+          2,2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
       <td>
-            2
+          2
       </td>
     </tr>
     <tr>
@@ -421,73 +352,73 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-            10.7.0.319+, 9.19.0.309+
+          10.7.0.319+, 9.19.0.309+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
       <td>
-            8,2; 8,1
+          8,2; 8,1
       </td>
     </tr>
     <tr>
@@ -535,7 +466,7 @@ ht-degree: 54%
             7,2
       </td>
       <td>
-            7,2
+          7,2
       </td>
       <td>
             7,0
@@ -568,9 +499,7 @@ ht-degree: 54%
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software-Abhängigkeiten
-      </th>
+      <th>Software-Abhängigkeiten</th>
       <th>2.4.5-P12</th>
       <th>2.4.5-P11</th>
       <th>2.4.5-P10</th>
@@ -590,127 +519,85 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+          2,2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
     </tr>
     <tr>
@@ -722,10 +609,10 @@ ht-degree: 54%
             10,6; 10,5
       </td>
       <td>
-            10,5
+          10,5
       </td>
       <td>
-            10,5
+          10,5
       </td>
       <td>
             10,5; 10,4
@@ -758,85 +645,85 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
     </tr>
     <tr>
@@ -890,7 +777,7 @@ ht-degree: 54%
             7,2
       </td>
       <td>
-            7,2
+          7,2
       </td>
       <td>
             7,0
@@ -929,9 +816,7 @@ ht-degree: 54%
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>
-        Software-Abhängigkeiten
-      </th>
+      <th>Software-Abhängigkeiten</th>
       <th>2.4.4-P13</th>
       <th>2.4.4-P12</th>
       <th>2.4.4-P11</th>
@@ -952,136 +837,91 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,2
+          2,2
       </td>
       <td>
-            2,1
+          2,1
       </td>
       <td>
-            2,1
+          2,1
       </td>
       <td>
-            2,1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+          2,1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-            2
+          2
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
       <td>
-            1
+          1
       </td>
     </tr>
     <tr>
@@ -1093,10 +933,10 @@ ht-degree: 54%
             10,6; 10,5
       </td>
       <td>
-            10,5
+          10,5
       </td>
       <td>
-            10,5
+          10,5
       </td>
       <td>
             10,5; 10,4
@@ -1132,91 +972,91 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
       <td>
-            9.19.0.309+
+          9.19.0.309+
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
       <td>
-            8,1
+          8,1
       </td>
     </tr>
     <tr>
@@ -1273,7 +1113,7 @@ ht-degree: 54%
             7,2
       </td>
       <td>
-            7,2
+          7,2
       </td>
       <td>
             7,0
