@@ -40,7 +40,7 @@ salesrule_rule                           Sales Rule
 
 >[!NOTE]
 >
-> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder Produktempfehlungen verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) zu verwenden.
+> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder Produktempfehlungen verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/de/docs/commerce/price-indexer/price-indexing) zu verwenden.
 
 ## Anzeigen des Indexerstatus
 
@@ -232,11 +232,11 @@ Catalog Search:                                    Update on Save
 >
 >Stellen Sie sicher, dass Sie die [!DNL Customer Grid] auf `realtime` statt auf `schedule` setzen. Die [!DNL Customer Grid] kann nur mit der Option [!UICONTROL Update on Save] neu indiziert werden. Dieser Index unterstützt die `Update by Schedule` nicht. Verwenden Sie die folgende Befehlszeile, um diesen Indexer so festzulegen, dass er beim Speichern aktualisiert wird: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Siehe [Best Practices für die Indexerkonfiguration](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) im _Implementierungs-Playbook_.
+>Siehe [Best Practices für die Indexerkonfiguration](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=de) im _Implementierungs-Playbook_.
 
 >[!INFO]
 >
->Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) ein. Dadurch wird sichergestellt, dass keine Datenbanksperren auftreten.
+>Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de#disable-cron-jobs) ein. Dadurch wird sichergestellt, dass keine Datenbanksperren auftreten.
 
 So legen Sie die Indexerkonfiguration fest:
 
