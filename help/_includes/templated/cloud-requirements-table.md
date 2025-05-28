@@ -1,8 +1,8 @@
 ---
-source-git-commit: 100a2ab9005ab99fb364daa360c71f5627f70bde
+source-git-commit: 8707516b38489d7980b6fb04fad64f14078c6045
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 54%
+source-wordcount: '436'
+ht-degree: 53%
 
 ---
 # Cloud-Anforderungstabelle
@@ -181,7 +181,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4,1
+            4,1; 3,13
       </td>
       <td>
             3,13
@@ -424,7 +424,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4,1
+            4,1; 3,13
       </td>
       <td>
             3,13
@@ -729,7 +729,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-            4,1
+            4,1; 3,13
       </td>
       <td>
             3,13
