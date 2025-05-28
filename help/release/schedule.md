@@ -2,9 +2,9 @@
 title: Veröffentlichungszeitplan
 description: Erfahren Sie, wann Adobe die Veröffentlichung von neuen Funktionen für Adobe Commerce anzukündigen plant.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 9e3246e81063769e4197f2e786e1e405b4460787
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -18,11 +18,11 @@ Adobe ist stets bestrebt, ein ausgewogenes Verhältnis zwischen einfachen und vo
 
 Neue Funktionen, Funktionsaktualisierungen, Cloud-Infrastruktur- und Erweiterbarkeitsaktualisierungen werden unabhängig von Patch-Versionen bereitgestellt und sind über externe Module, Erweiterungen, Tools oder Web-Services verfügbar. Beispiele:
 
-- ![Funktionssymbol](../assets/icons/feature.svg) [**Funktionen und Funktionen**](https://experienceleague.adobe.com/de/docs/commerce/user-guides/release-information/release-notes-all) – Neu Funktionen und Funktionen unabhängig von Patch Versionen bereitgestellt. Beispiel: [B2B](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes), Katalog-Service, Datenverbindung, Live-Suche und Produktempfehlungen.
+- ![Funktionssymbol](../assets/icons/feature.svg) [**Funktionen und Funktionen**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) - Neue Funktionen, die unabhängig von Patch-Versionen bereitgestellt werden. Beispiel: [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Katalog-Service, Datenverbindung, Live-Suche und Produktempfehlungen.
 
-- ![Infrastruktursymbol](../assets/icons/servers.svg) [**Cloud-Infrastruktur**](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) – Neu Funktionen und Verbesserungen für Adobe Systems Commerce on Cloud-Infrastruktur und die Cloud Werkzeuge Suite for Commerce-Pakete, mit denen Adobe Systems Commerce-Installationen und -Upgrades auf der Cloud-Plattform bereitgestellt und managen werden.
+- ![Infrastruktursymbol](../assets/icons/servers.svg) [**Cloud-**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite): Neue Funktionen und Verbesserungen für Adobe Commerce in der Cloud-Infrastruktur und die Cloud-Tools-Suite für Commerce-Pakete, die Adobe Commerce-Installationen und -Upgrades auf der Cloud-Plattform bereitstellen und verwalten.
 
-- ![Erweiterbarkeitssymbol](../assets/icons/brackets.svg) [**Erweiterbarkeit**](https://developer.adobe.com/commerce/extensibility/) – Neu Entwicklertools und -dienste für prozessexterne Erweiterbarkeit, die unabhängig von Patch-Versionen bereitgestellt werden. Zum Beispiel Integration Starter Kit, Admin UI SDK, Adobe Systems I/O Ereignis for Commerce und API Mesh.
+- ![Erweiterbarkeitssymbol](../assets/icons/brackets.svg) [**Erweiterbarkeit**](https://developer.adobe.com/commerce/extensibility/) - Neue Entwickler-Tools und Services für die prozessexterne Erweiterbarkeit, die unabhängig von Patch-Versionen bereitgestellt werden. Zum Beispiel Integration Starter Kit, Admin UI SDK, Adobe I/O Events für Commerce und API Mesh.
 
 Die folgende Liste enthält die Termine für geplante Veröffentlichungen von Funktionen, Cloud-Infrastruktur und Erweiterbarkeit (Termine können sich ändern):
 
@@ -36,7 +36,7 @@ Die folgende Liste enthält die Termine für geplante Veröffentlichungen von Fu
 
 >[!NOTE]
 >
->Die Releases von Funktionen, Cloud-Infrastruktur und Erweiterbarkeit können im Laufe des Jahres variieren. Adobe veröffentlicht jedoch regelmäßig und kontinuierlich Verbesserungen für diese Bereiche zwischen den auf dieser Seite angegebenen Daten. Siehe [Was ist Adobe Commerce?](https://experienceleague.adobe.com/de/docs/commerce-admin/start/about) Informationen über die neuesten Funktionen.
+>Die Releases von Funktionen, Cloud-Infrastruktur und Erweiterbarkeit können im Laufe des Jahres variieren. Adobe veröffentlicht jedoch regelmäßig und kontinuierlich Verbesserungen für diese Bereiche zwischen den auf dieser Seite angegebenen Daten. Siehe [Was ist Adobe Commerce?](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) Informationen über die neuesten Funktionen.
 
 ## Patches
 
@@ -57,32 +57,32 @@ In der folgenden Tabelle sind die Termine für geplante Patch-Versionen aufgefü
   <tr>
   <tr>
     <td>13. August 2024</td>
-    <td><img alt="Symbol für Patch-Versionen" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-Patches</a>: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
+    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
   </tr>
   <tr>
     <td>8. Oktober 2024</td>
-    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta">Beta-Patch</a>: 2.4.8-beta1<br><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security-Patches</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
+    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta-Patch</a>: 2.4.8-beta1<br><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Security-Patches</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
   </tr>
   <tr>
     <td>11. Februar 2025</td>
-    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="beta.md#adobe-commerce-foundation-public-beta">Beta-Patch</a>: 2.4.8-beta2<br><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.7, 2.4.6, 2.4.5 und 2.4.4</td>
+    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">Beta-Patch</a>: 2.4.8-beta2<br><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.7, 2.4.6, 2.4.5 und 2.4.4</td>
   </tr>
   <tr>
     <tr>
     <td>8. April 2025</td>
-    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.</a></strong>:<ul><li>Leistungsverbesserungen</li><li>Qualitätsverbesserungen</li><li>Sicherheitsverbesserungen</li><li>Aktualisierungen der Drittanbieterabhängigkeiten</li></ul><img alt="Symbol für Patch-Versionen" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-Patches</a>: für 2.4.7, 2.4.6, 2.4.5 und 2.4.4</td>
+    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.</a></strong>:<ul><li>Leistungsverbesserungen</li><li>Qualitätsverbesserungen</li><li>Sicherheitsverbesserungen</li><li>Abhängigkeitsaktualisierungen von Drittanbietern</li></ul><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.7, 2.4.6, 2.4.5 und 2.4.4</td>
   </tr>
   <tr>
     <td>10. Juni 2025</td>
-    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.8, 2.4.7, 2.4.6 und 2.4.5</td>
+    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha-Patch</a>: 2.4.9-alpha1<br><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.8, 2.4.7, 2.4.6 und 2.4.5</td>
   </tr>
   <tr>
     <td>12. August 2025</td>
-    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.8, 2.4.7, 2.4.6 und 2.4.5</td>
+    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha-Patch</a>: 2.4.9-alpha2<br><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.8, 2.4.7, 2.4.6 und 2.4.5</td>
   </tr>
   <tr>
     <td>14. Oktober 2025</td>
-    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.8, 2.4.7 und 2.4.6</td>
+    <td><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">Alpha-Patch</a>: 2.4.9-alpha3<br><img alt="Patch-Versionssymbol" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Sicherheits-</a>: für 2.4.8, 2.4.7 und 2.4.6</td>
   </tr>
 </tbody>
 </table>
