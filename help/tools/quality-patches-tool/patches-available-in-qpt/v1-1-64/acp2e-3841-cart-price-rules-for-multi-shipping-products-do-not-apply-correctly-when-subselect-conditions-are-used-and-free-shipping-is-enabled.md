@@ -50,6 +50,7 @@ Die Warenkorb-Preisregeln für Produkte mit mehreren Versandarten gelten nicht k
 1. Produkttest 2:
    1. Kategorien: Prüfung der Kategorie 2
    1. Preis: $ 56.25 
+
       **(Die Preise müssen den hier angegebenen entsprechen, um sicherzustellen, dass der Test ordnungsgemäß funktioniert.)**
 
 **Warenkorb-Preisregel:**
