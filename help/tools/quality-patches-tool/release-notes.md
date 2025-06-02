@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 729670154dcca1df590f60d534af162fbcc57c94
+source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
 workflow-type: tm+mt
-source-wordcount: '26107'
+source-wordcount: '26381'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.65 {#v1-1-65}
+
+* **ACP2E-3753** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass E-Mails zu Produktwarnungen in einer Multi-Store-Einrichtung immer mit dem Standard-Design gesendet wurden, unabhängig von der Store- oder Design-Konfiguration.
+* **ACSD-64118** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Es wird das Problem behoben, bei dem gleichzeitige Anfragen zum Speichern und Aktualisieren desselben Produkts zu Dateninkonsistenz oder duplizierten Produkten führen.
+* **ACSD-64813** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Es wird das Problem behoben, bei dem das Aufheben der Zuweisung von Kategorien aus einem [!DNL B2B] freigegebenen Katalog über [!DNL REST] API zu lange dauert oder bei großen Katalogen zu lange dauert.
+* **ACSD-65202** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass auf der Seite „Mein Konto“ keine aktuellen Bestellungen aus anderen Store-Ansichten innerhalb desselben Stores angezeigt werden.
+* **ACSD-65254** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass Kundinnen und Kunden keine E-Mail-Benachrichtigungen erhalten hatten, nachdem ihre E-Mail-Adressen in ihren Konten mithilfe der `updateCustomerEmail`-[!DNL GraphQL]-Mutation aktualisiert worden waren.
+* **ACSD-65331** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass der ausgewählte Store in [!UICONTROL Pick in Store] gelöscht wurde, nachdem wiederholt zur Kaufbestätigungsseite navigiert wurde.
+* **ACSD-65822** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass die Bundle- und konfigurierbaren Produktmengen im Warenkorbbereich unter &quot;[!UICONTROL Customer's Activities]&quot; nicht korrekt angezeigt wurden.
+* **ACSD-66093** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass E-Mail-Adressen in die [!UICONTROL First Name]- und [!UICONTROL Last Name] des Gastkunden eingegeben werden konnten, was zu ungültigen E-Mails zur Bestellbestätigung führte.
+* Aktualisierte Versionen: **ACSD-51291**
+* Patches ersetzt: **ACSD-61522**
 
 ## v1.1.64 {#v1-1-64}
 
@@ -120,7 +133,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-62629** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wird das Problem behoben, bei dem eine in **[!UICONTROL Widgets]** verwendete Produktliste die Kategoriebedingung nicht widerspiegelt.
 * **ACSD-62635** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass Produkte, die mit mehreren Stores zusammenhängen, in der [!DNL GraphQL]-Produktabfrage nicht richtig angezeigt werden.
 * **ACSD-62671** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass die [!DNL GraphQL] beim ersten Versuch keine aktuellen Adressinformationen zurückgibt.
-* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**&#x200B;hinzufügen*.
+* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**hinzufügen*.
 * **ACSD-62708** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2,4,5-p10 &lt;2,4,6-p2 || >=2.4.6-p8 &lt;2.4.7-p1) - Behebt das Problem, dass [!DNL TinyMCE] 7-Editor-Schriftgröße in der Admin-Liste *PT* und nicht *PX* anzeigt. Jetzt können Sie die Schriftgröße auch in &quot;*&quot;* &quot;*&quot;*.
 * **ACSD-62758** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass Produktvideos auf der Detailseite des **[!UICONTROL Configurable Product]** nicht korrekt gerendert werden, wenn der [!DNL URL] ausgewählte Optionen enthält.
 * **ACSD-62951** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Es wird das Problem behoben, bei dem die E-Mail mit der Gutschrift gesendet wird, ohne Elemente und Gesamtwerte einzuschließen.
