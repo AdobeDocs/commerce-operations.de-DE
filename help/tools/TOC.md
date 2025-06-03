@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 9ee91aac7b4a108150bc8084814aaeeadc6c9809
+source-git-commit: daead0be5b8f8c8ee67a7e54ca9fb5d179d00059
 workflow-type: tm+mt
-source-wordcount: '7613'
+source-wordcount: '7627'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Quality Patches Tool {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
    - Im Quality Patches Tool verfügbare Patches {#patches-available-in-qpt}
@@ -793,6 +793,7 @@ ht-degree: 0%
          - [ACSD-64753: Vorausgewählter Store in „Abholung im Store“ wird nicht aktualisiert, wenn sich die Versandadresse ändert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
       - v1.1.64 {#v1-1-64}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+         - [ACP2E-3838: [!DNL Page Builder] CORS-Fehler verhindern das Speichern von Änderungen im Admin-Bedienfeld im Produktionsmodus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3838-page-builder-cors-errors-prevent-saving-changes-in-the-admin-panel-in-production-mode.md)
          - [ACSD-65787: SchemaBuilder stürzt bei der Schemaerstellung oder -aktualisierung aufgrund des nicht definierten Array-Schlüssels „column“ in den Tabellendaten ab](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65787-schemabuilder-crashes-during-schema-creation-updates-due-to-undefined-array-key-column-in-table-data.md)
          - [ACSD-65223: Manuell ausgewählte Bedingungen für B2B-Bestellungen führen zu einem Fehler](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error.md)
          - [ACP2E-3841: Die Warenkorb-Preisregeln für Produkte mit mehreren Versandarten gelten nicht korrekt, wenn Subselect-Bedingungen verwendet werden und der kostenlose Versand aktiviert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
@@ -843,6 +844,6 @@ ht-degree: 0%
       - [Daten, die manuell migriert werden müssen](data-migration-tool/migrate-data/manual.md)
       - [Schritte nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
    - Ressourcen {#resources}
-      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=de)
+      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
