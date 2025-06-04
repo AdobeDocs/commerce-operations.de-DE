@@ -37,9 +37,9 @@ Der Produktexport schlägt fehl, wenn Produktattribute Tausende von Optionswerte
 
 1. Installieren Sie Adobe Commerce mit dem B2B-Modul.
 1. Importieren Sie einen großen Datenbank-Dump mit:
-   - ~7.000 Produkte
-   - ~450 Produktattribute
-   - Einige Attribute mit mehr als 100 Optionen
+   &#x200B;- ~7.000 Produkte
+   &#x200B;- ~450 Produktattribute
+   &#x200B;- Einige Attribute mit mehr als 100 Optionen
 1. Führen Sie den folgenden Befehl aus, um cron zu installieren (falls noch nicht installiert):
 
    ```
