@@ -2,9 +2,9 @@
 title: env.php-Referenz
 description: Siehe eine Werteliste für die env.php-Datei.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce verwendet einen Verschlüsselungsschlüssel zum Schutz von Kennwörtern
 ]
 ```
 
-Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
+Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
 
 ## dB
 
@@ -203,7 +203,7 @@ Eine Liste der in diesem Knoten verfügbaren herunterladbaren Domains. Zusätzli
 ]
 ```
 
-Weitere Informationen zu &quot;[ Domains](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Weitere Informationen zu &quot;[ Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installieren
 
@@ -300,3 +300,74 @@ Weitere Informationen finden Sie unter [env-php-config-set](../cli/set-configura
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## Variablen zur Dateikonfiguration hinzufügen
+
+Sie können jede Konfigurationsoption (Variable mit Wert) mit Umgebungsvariablen auf Betriebssystemebene festlegen oder überschreiben.
+
+Die `env.php` wird in einem Array mit verschachtelten Ebenen gespeichert. Um einen verschachtelten Array-Pfad in eine Zeichenfolge für OS-Umgebungsvariablen zu konvertieren, verketten Sie jeden Schlüssel im Pfad mit doppelten Unterstrichen `__`, großgeschrieben und mit dem Präfix `MAGENTO_DC_`.
+
+Konvertieren wir beispielsweise den Sitzungsspeicher-Handler aus `env.php` Konfiguration in eine BS-Umgebungsvariable.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+Verkettet mit `__` und Großbuchstaben wird `SESSION__SAVE`.
+
+Anschließend stellen wir `MAGENTO_DC_` als Präfix voran, um den resultierenden Namen der Betriebssystemumgebungsvariablen `MAGENTO_DC_SESSION__SAVE`.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+Als weiteres Beispiel konvertieren wir einen Optionspfad für die Skalarkonfiguration `env.php`.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>Während der Variablenname in Großbuchstaben geschrieben werden sollte, wird bei dem Wert zwischen Groß- und Kleinschreibung unterschieden und er sollte wie dokumentiert beibehalten werden.
+
+Wir schreiben sie einfach in Großbuchstaben und setzen das Präfix `MAGENTO_DC_`, um den endgültigen `MAGENTO_DC_X-FRAME-OPTIONS` für den Betriebssystemumgebungsvariablen zu erhalten.
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>Beachten Sie, dass `env.php` Inhalt Vorrang vor den Umgebungsvariablen des Betriebssystems hat.
+
+## Überschreiben der Dateikonfiguration mit Variablen
+
+Um die vorhandenen `env.php`-Konfigurationsoptionen mit einer BS-Umgebungsvariablen zu überschreiben, muss das Array-Element der Konfiguration JSON-kodiert sein und als Wert der `MAGENTO_DC__OVERRIDE` OS-Variablen festgelegt sein.
+
+Wenn Sie mehrere Konfigurationsoptionen überschreiben müssen, stellen Sie sie alle in einem einzigen Array zusammen, bevor Sie JSON-Codierung verwenden.
+
+Überschreiben wir beispielsweise die folgenden `env.php`:
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+Der JSON-codierte Text des obigen Arrays lautet wie folgt
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+Legen Sie ihn jetzt als Wert der `MAGENTO_DC__OVERRIDE`-Betriebssystemvariablen fest.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>Stellen Sie sicher, dass das JSON-codierte Array ordnungsgemäß in Anführungszeichen gesetzt und/oder ggf. mit Escape-Zeichen versehen ist, um zu verhindern, dass das Betriebssystem die codierte Zeichenfolge beschädigt.
