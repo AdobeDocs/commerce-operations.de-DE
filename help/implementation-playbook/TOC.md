@@ -2,10 +2,10 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 3f6bf86091885ffa0c557b0c43ce3ff024076a45
+source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 15%
+source-wordcount: '163'
+ht-degree: 14%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 15%
 - [Übersicht](overview.md)
 - Architektur und Integrationen {#architecture}
    - [Unternehmensreferenz](architecture/enterprise-blueprint.md)
-- Wartungs- und Support-{#maintenance}
+- Wartung und Support {#maintenance}
    - [Übersicht](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
-- Best Practices-{#best-practices}
+- Best Practices {#best-practices}
    - [Übersicht](best-practices/phases.md)
-   - {#planning}
+   - Planung {#planning}
       - [Übersicht](best-practices/planning/overview.md)
       - [Katalogverwaltung](best-practices/planning/catalog-management.md)
       - [Konfiguration von Sites, Stores und Store-Ansicht](best-practices/planning/sites-stores-store-views.md)
@@ -28,12 +28,13 @@ ht-degree: 15%
       - [Datenbankkonfiguration für Cloud-Bereitstellungen&#x200B;](best-practices/planning/database-on-cloud.md)
       - [MySQL-Konfiguration](best-practices/planning/mysql-configuration.md)
       - [Redis-Dienstkonfiguration](best-practices/planning/redis-service-configuration.md)
+      - [Valley-Service-Konfiguration](best-practices/planning/valkey-service-configuration.md)
       - [OP-Cache-Speichergröße](best-practices/planning/opcache-memory-size.md)
       - [RealPath-Cachegröße](best-practices/planning/realpath-cache-size.md)
       - [Erweiterungen](best-practices/planning/extensions.md)
       - [Partner-Eskalationen](best-practices/planning/partner-escalation.md)
       - [Zahlungsverarbeitung](best-practices/planning/payment-processing-storage.md)
-   - {#development}
+   - Entwicklung {#development}
       - [Übersicht](best-practices/development/overview.md)
       - [Allgemeine Best Practices](best-practices/development/general.md)
       - [Code-Management](best-practices/development/code-management.md)
@@ -49,11 +50,11 @@ ht-degree: 15%
       - [Statische Inhaltsbereitstellung](best-practices/development/static-content-deployment.md)
       - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
       - [Ändern des Kern- und Drittanbieter-Codes](best-practices/development/modifying-core-and-third-party-code.md)
-   - starten{#launch}
+   - Starten {#launch}
       - [Übersicht](best-practices/launch/overview.md)
       - [Konfigurieren von Web-Crawlern](best-practices/launch/robots-txt.md)
       - [Sichern von Site und Infrastruktur](best-practices/launch/security-best-practices.md)
-   - {#maintenance}
+   - Wartung {#maintenance}
       - [Übersicht](best-practices/maintenance/overview.md)
       - [Unterstützung nach der Markteinführung](best-practices/maintenance/post-launch.md)
       - [Audit der Frontend-Leistung](best-practices/maintenance/frontend-performance.md)
@@ -68,4 +69,4 @@ ht-degree: 15%
       - [Checkliste für die Aktualisierung](best-practices/maintenance/upgrade-checklist.md)
       - [Upgrade-Voraussetzungen für MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossar](glossary.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
