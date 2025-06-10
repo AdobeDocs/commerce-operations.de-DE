@@ -1,7 +1,7 @@
 ---
-source-git-commit: f9cc5ab0cb1b64455e12081ffbf719e0f2a791ad
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,8 @@ Diese Version umfasst die folgenden Highlights:
 
 * **Behebung für CVE-2025-47110** - Behebt eine Sicherheitslücke bei E-Mail-Vorlagen.<!-- AC-14695 -->
 
-* **Fehlerbehebung für VULN-31547** - Behebt eine Schwachstelle bei kanonischen Links der Kategorie.<!-- AC-14713 -->
-
 >[!BEGINSHADEBOX]
 
-Fehlerbehebungen für CVE-2025-47110 VULN-31547 sind auch als isolierter Patch verfügbar. Weitere Informationen finden [ im Artikel ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)Wissensdatenbank“.
+Die Fehlerbehebung für CVE-2025-47110 ist auch als isolierter Patch verfügbar. Weitere Informationen finden [ im Artikel ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)Wissensdatenbank“.
 
 >[!ENDSHADEBOX]
