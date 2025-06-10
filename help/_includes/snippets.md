@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes).
+>Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Nur Adobe Commerce {#ee-only}
 
@@ -52,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe Commerce-Versionen können abwärtsinkompatible Änderungen (BICs) enthalten. Informationen zu abwärtsinkompatiblen Änderungen finden Sie unter [BIC-Referenz](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Die wichtigsten abwärtsinkompatiblen Probleme werden in [BIC-Highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/) beschrieben. Nicht alle Versionen enthalten wichtige BICs.
+
+## Alpha-Haftungsausschluss {#alpha}
+
+>[!IMPORTANT]
+>
+>[Alpha](/help/release/versioning-policy.md#alpha-patch-release) Versionen können unvollständig sein und enthalten wahrscheinlich Fehler. Sie werden „WIE BESEHEN“ und ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, Alpha-Versionen (über Adobe Support Services oder anderweitig) zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen. Kunden sollten sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Alpha-Versionen oder Begleitdokumenten oder -materialien verlassen. Die Verwendung von Alpha-Versionen erfolgt vollständig auf eigene Gefahr des Kunden.
 
 ## Beta-Haftungsausschluss {#beta}
 
