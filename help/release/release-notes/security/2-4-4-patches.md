@@ -2,9 +2,9 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.4
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 309aff13295256deba2c1c4365156405fb042060
+source-git-commit: 33debd1c742698e8242faaef1ff83bb2a9e5ee58
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1715'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,29 @@ ht-degree: 0%
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p14 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/de/security/products/magento/apsb25-50.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
 ### Highlights
 
-{{$include /help/_includes/release-notes/highlights/security-2025-06.md}}
+Diese Version umfasst die folgenden Highlights:
+
+* **API-Leistungsverbesserung**: Behebt die Leistungsbeeinträchtigung bei asynchronen Web-API-Endpunkten, die nach dem vorherigen Sicherheits-Patch eingeführt wurden.<!-- AC-14078 -->
+
+* **CMS blockiert den Zugriff** - Löst ein Problem, bei dem Admin-Benutzer mit eingeschränkten Berechtigungen (z. B. Nur-Merchandising-Zugriff) die [!UICONTROL CMS Blocks] nicht anzeigen konnten.
+
+  Zuvor trat bei diesen Benutzern ein Fehler aufgrund fehlender Konfigurationsparameter nach der Installation früherer Sicherheits-Patches auf.<!-- AC-14087 -->
+
+* **Cookie-Kompatibilität** - Löst eine abwärtsinkompatible Änderung auf, die die `MAX_NUM_COOKIES` im Framework betrifft. Diese Aktualisierung stellt das erwartete Verhalten wieder her und stellt die Kompatibilität für Erweiterungen oder Anpassungen sicher, die mit Cookie-Beschränkungen interagieren.<!-- AC-14475 -->
+
+* **Async-Vorgänge** - Eingeschränkte asynchrone Vorgänge zum Überschreiben früherer Kundenbestellungen.<!-- AC-13917 -->
 
 ## 2.4.4-P13
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p13 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-26](https://helpx.adobe.com/de/security/products/magento/apsb25-26.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
@@ -42,7 +52,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p12 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-08](https://helpx.adobe.com/de/security/products/magento/apsb25-08.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
@@ -54,7 +64,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p11 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-73](https://helpx.adobe.com/de/security/products/magento/apsb24-73.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
@@ -66,7 +76,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p10 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-61](https://helpx.adobe.com/de/security/products/magento/apsb24-61.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Highlights
 
@@ -80,7 +90,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p9 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.4 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-40](https://helpx.adobe.com/de/security/products/magento/apsb24-40.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Hotfix für CVE-2024-34102 anwenden
 
@@ -98,13 +108,13 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p8 bietet Fehlerbehebungen für die Sicherheit Ihrer Adobe Commerce-Bereitstellung 2.4.4. Diese Updates beheben Sicherheitslücken, die in früheren Versionen identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-18](https://helpx.adobe.com/de/security/products/magento/apsb24-18.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
 
 ## 2.4.4-p7
 
 Die Adobe Commerce-Version 2.4.4-p7 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-03](https://helpx.adobe.com/de/security/products/magento/apsb24-03.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
 
 ### Highlights
 
@@ -121,7 +131,7 @@ Diese Version führt zwei wichtige Sicherheitsverbesserungen ein:
 
 Die Adobe Commerce-Version 2.4.4-p6 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-50](https://helpx.adobe.com/de/security/products/magento/apsb23-50.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
 
 Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
@@ -144,21 +154,21 @@ Wenn das Prüfsummenproblem weiterhin besteht, entfernen Sie die `composer.lock`
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p5 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-42](https://helpx.adobe.com/de/security/products/magento/apsb23-42.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
 ### Hotfix für CVE-2022-31160 anwenden
 
-`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=de).
+`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
 
 ## 2.4.4-p4
 
 Die Adobe Commerce-Version 2.4.4-p4 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version umfasst auch Sicherheitsverbesserungen und Plattform-Upgrades, um die Einhaltung der neuesten Best Practices für die Sicherheit zu verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-35](https://helpx.adobe.com/de/security/products/magento/apsb23-35.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
 ### Hotfix für CVE-2022-31160 anwenden
 
-`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=de).
+`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
 
 ### Highlights
 
@@ -178,13 +188,13 @@ Plattform-Upgrades für diese Version verbessern die Einhaltung der neuesten Bes
 
 Die Adobe Commerce-Version 2.4.4-p3 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-17](https://helpx.adobe.com/de/security/products/magento/apsb23-17.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html).
 
 ## 2.4.4-p2
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p2 bietet Fehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Eine Korrektur beinhaltet die Erstellung einer neuen Konfigurationseinstellung. Mit der [!UICONTROL **E-Mail-Bestätigung verlangen, wenn die E-Mail geändert wurde**] können Administratoren eine E-Mail-Bestätigung verlangen, wenn ein Administrator bzw. eine Administratorin ihre E-Mail-Adresse ändert. <!-- AC-6292-->
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-48](https://helpx.adobe.com/de/security/products/magento/apsb22-48.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 ### Wenden Sie AC-3022.patch an, um DHL weiterhin als Versandunternehmen anzubieten
 
@@ -194,7 +204,7 @@ DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in nahe
 
 Die Adobe Commerce-Sicherheitsversion 2.4.4-p1 bietet Fehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, um die Einhaltung der neuesten Best Practices für die Sicherheit zu verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin](https://helpx.adobe.com/de/security/products/magento/apsb22-38.html).t
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [Adobe-Sicherheitsbulletin](https://helpx.adobe.com/security/products/magento/apsb22-38.html).t
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
 

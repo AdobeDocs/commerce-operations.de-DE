@@ -1,7 +1,7 @@
 ---
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.8
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.7.
-source-git-commit: e996ef274920b1828331e2bb1eadacbb2cde59a6
+source-git-commit: 33debd1c742698e8242faaef1ff83bb2a9e5ee58
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Die Adobe Commerce-Version 2.4.8-p1 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.8 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/de/security/products/magento/apsb25-50.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -33,7 +33,7 @@ Diese Version umfasst die folgenden Highlights:
 
 * **Cookie-Kompatibilität** - Löst eine abwärtsinkompatible Änderung auf, die die `MAX_NUM_COOKIES` im Framework betrifft. Diese Aktualisierung stellt das erwartete Verhalten wieder her und stellt die Kompatibilität für Erweiterungen oder Anpassungen sicher, die mit Cookie-Beschränkungen interagieren.<!-- AC-14475 -->
 
-* **Behebung für CVE-2024-34104** - Behebt eine unsachgemäße Autorisierungs-Schwachstelle.<!-- AC-13917 -->
+* **Async-Vorgänge** - Eingeschränkte asynchrone Vorgänge zum Überschreiben früherer Kundenbestellungen.<!-- AC-13917 -->
 
 * **Behebung für CVE-2025-47110** - Behebt eine Sicherheitslücke bei E-Mail-Vorlagen.<!-- AC-14695 -->
 

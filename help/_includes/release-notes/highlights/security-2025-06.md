@@ -1,5 +1,5 @@
 ---
-source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
+source-git-commit: 33debd1c742698e8242faaef1ff83bb2a9e5ee58
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Diese Version umfasst die folgenden Highlights:
 
 * **Cookie-Kompatibilität** - Löst eine abwärtsinkompatible Änderung auf, die die `MAX_NUM_COOKIES` im Framework betrifft. Diese Aktualisierung stellt das erwartete Verhalten wieder her und stellt die Kompatibilität für Erweiterungen oder Anpassungen sicher, die mit Cookie-Beschränkungen interagieren.<!-- AC-14475 -->
 
-* **Behebung für CVE-2024-34104** - Behebt eine unsachgemäße Autorisierungs-Schwachstelle.<!-- AC-13917 -->
+* **Async-Vorgänge** - Eingeschränkte asynchrone Vorgänge zum Überschreiben früherer Kundenbestellungen.<!-- AC-13917 -->
 
 * **Behebung für CVE-2025-47110** - Behebt eine Sicherheitslücke bei E-Mail-Vorlagen.<!-- AC-14695 -->
 
