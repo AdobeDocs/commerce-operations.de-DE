@@ -1,11 +1,11 @@
 ---
 title: Adobe Managed Services
-description: Erfahren Sie, wie Sie mit Adobe Managed Services Ihre Adobe Commerce-Implementierung unterstützen und verwalten können.
+description: Erfahren Sie, wie Adobe Managed Services Sie bei der Unterstützung und Wartung Ihrer Adobe Commerce-Implementierung unterstützen kann.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Adobe Commerce ist eine Plattform zur Bereitstellung von E-Commerce-Funktionen, die zuverlässige Standardfunktionen, umfangreiche Anpassungsoptionen und Integrationen von Drittanbietern umfasst.
 
-Adobe Managed Services bietet gehostete und verwaltete Anwendungen und Infrastrukturen für Adobe Commerce auf Cloud-Infrastrukturen.
+Adobe Managed Services bietet gehostete und verwaltete Programme und Infrastrukturen für Adobe Commerce auf Cloud-Infrastrukturplänen.
 
 ## Vorteile
 
@@ -35,9 +35,26 @@ Adobe Managed Services bietet wichtige Vorteile gegenüber lokalen und nicht ver
    - Unterstützung bei Ereignissen durch Planung, Ausführung und Überwachung
    - Cloud-Support und -Know-how (proaktive Optimierung, Reporting und Best Practices)
 
-Die folgende Infografik bietet einen detaillierteren Vergleich der wichtigsten Vorteile von Managed Services:
+In der folgenden Tabelle finden Sie einen detaillierteren Vergleich der wichtigsten Vorteile von Managed Services:
 
-![Infografik, die einen Vergleich von Adobe Managed Services mit anderen Implementierungsoptionen von Adobe Commerce zeigt](../../assets/playbooks/managed-services-compare.png)
+| Funktion | Adobe Commerce On-Premises | Adobe Commerce in Cloud Manager | Adobe Commerce auf Managed Services |
+|---------|---------------------------|-------------------------|-----------------------------------|
+| Unternehmenssoftware von Adobe | ✓ | ✓ | ✓ |
+| Sichere und dedizierte Cloud-Infrastruktur | | ✓ | ✓ |
+| Verbessertes Vorfall-Service-Level-Ziel | | P1: 1 Stunde | P1: 15 Minuten |
+| Überwachung und Reaktion der Überspannungskapazität | | | ✓ |
+| Infrastruktursicherheit | | | ✓ |
+| Infrastrukturebene 99,99 % SLA | | | ✓ |
+| Anwendungsebene 99,9 % SLA | | | |
+| Designierte Infrastruktur-Expertenressource (Customer Success Engineer) | | | |
+| Geplantes Ereignis-Management | | | |
+| Benutzerdefinierte Site-Überwachung und personalisiertes Runbook | | | |
+| Unterstützung bei der Aktualisierung und Patch-Bereitstellung | | | |
+| Go-Live-Prozesskoordination | | | |
+| Dediziertes Eskalations-Management | | | |
+| Anwendungsüberwachung und -unterstützung | | | |
+
+Geben Sie mir Bescheid, ob dies in Excel oder ein anderes Format exportiert werden soll.
 
 ## Rollen und Zuständigkeiten
 
@@ -370,13 +387,13 @@ Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Stagin
 
 ## Sicherheit
 
-Der Adobe-Sicherheitsstack für Managed Services baut Sicherheit auf jeder Ebene in auf. Dabei werden Automatisierung und Konsistenz verwendet, um menschliches Versagen zu reduzieren. Entwicklungs- und Operations-Teams übernehmen automatisch Sicherheitskontrollen aus verschiedenen Ebenen des Stacks.
+Der Adobe-Sicherheitsstapel für Managed Services baut die Sicherheit in auf allen Ebenen auf und verwendet Automatisierung und Konsistenz, um menschliches Versagen zu reduzieren. Entwicklungs- und Operations-Teams übernehmen automatisch Sicherheitskontrollen aus verschiedenen Ebenen des Stacks.
 
-Plattformpartner wie Amazon Web Services und Microsoft Azure sorgen für eine maximale Sicherheitsabdeckung bei der Anwendung von Plattformanpassungen, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Überprüfung und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter {[&#128279;](https://business.adobe.com/products/magento/secure-ecommerce.html)}Adobe Commerce-Sicherheit.
+Plattformpartner wie Amazon Web Services und Microsoft Azure gewährleisten eine maximale Sicherheitsabdeckung bei der Anwendung der Plattformanpassungen, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Überprüfung und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter {](https://business.adobe.com/products/magento/secure-ecommerce.html)}Adobe Commerce-Sicherheit.[
 
 Die folgende Abbildung zeigt den Sicherheitstechnologie-Stack von Adobe Managed Services:
 
-![Abbildung mit dem Adobe Managed Services-Sicherheitsstapel](../../assets/playbooks/managed-services-security-stack.svg)
+![Abbildung mit dem Sicherheitsstapel von Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
 
 ## Upgrade-Unterstützung
 
