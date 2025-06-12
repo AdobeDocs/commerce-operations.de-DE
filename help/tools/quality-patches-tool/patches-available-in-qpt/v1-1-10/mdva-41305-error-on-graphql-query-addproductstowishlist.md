@@ -41,11 +41,11 @@ Wenn Benutzende von GraphQL konfigurierbare Produkte (mit/ohne Konfiguration) zu
 
    <pre>
     <code class="language-graphql">
-    mutation {
-      generateCustomerToken(email: "", password: "") {
+    mutation &lbrace;
+      generateCustomerToken(email: "", password: "") &lbrace;
         token
-      }
-     }
+      &rbrace;
+     &rbrace;
      </code>
      </pre>
 
@@ -54,84 +54,84 @@ Wenn Benutzende von GraphQL konfigurierbare Produkte (mit/ohne Konfiguration) zu
 
 <pre>
 <code class="language-graphql">
-mutation {
+mutation &lbrace;
  addProductsToWishlist(
    wishlistId: 1
-   wishlistItems: [
-     {
+   wishlistItems: &lbrack;
+     &lbrace;
        sku: "conf2"
-       selected_options: [
+       selected_options: &lbrack;
             "Y29uZmlndXJhYmxlLzkzLzUw"
-       ]
+       &rbrack;
        quantity: 1
-       entered_options: [
-         {
+       entered_options: &lbrack;
+         &lbrace;
            uid: "Y3VzdG9tLW9wdGlvbi8x"
            value: "test"
-         }
-       ]
-     }
-    ]
-  ) {
-    wishlist {
+         &rbrace;
+       &rbrack;
+     &rbrace;
+    &rbrack;
+  ) &lbrace;
+    wishlist &lbrace;
       id
       items_count
-      items_v2 (currentPage: 1, pageSize: 8 ) {
-        items {
+      items_v2 (currentPage: 1, pageSize: 8 ) &lbrace;
+        items &lbrace;
          id
          quantity
-         ... on ConfigurableWishlistItem  {
+         ... on ConfigurableWishlistItem  &lbrace;
            child_sku
-           customizable_options {
+           customizable_options &lbrace;
              customizable_option_uid
-           }
-         }
-         product {
+           &rbrace;
+         &rbrace;
+         product &lbrace;
            uid
            name
            sku
            options_container
-           ... on CustomizableProductInterface {
-             options {
+           ... on CustomizableProductInterface &lbrace;
+             options &lbrace;
               title
               required
               sort_order
               option_id
-              ... on CustomizableFieldOption {
-                value {
+              ... on CustomizableFieldOption &lbrace;
+                value &lbrace;
                   uid
                   sku
                   price
                   price_type
                   max_characters
-                }
-              }
-            }
-          }
-          price_range {
-            minimum_price {
-              regular_price {
+                &rbrace;
+              &rbrace;
+            &rbrace;
+          &rbrace;
+          price_range &lbrace;
+            minimum_price &lbrace;
+              regular_price &lbrace;
                 currency
                 value
-              }
-            }
-            maximum_price {
-               regular_price {
+              &rbrace;
+            &rbrace;
+            maximum_price &lbrace;
+               regular_price &lbrace;
                  currency
                  value
-               }
-             }
-           }
-         }
-       }
-     }
-   }
-  user_errors {
+               &rbrace;
+             &rbrace;
+           &rbrace;
+         &rbrace;
+       &rbrace;
+     &rbrace;
+   &rbrace;
+  user_errors &lbrace;
     code
     message
-   }
- }
-}
+   &rbrace;
+ &rbrace;
+&rbrace;
 </code>
 </pre>
 

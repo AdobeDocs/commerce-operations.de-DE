@@ -44,10 +44,10 @@ Kunden-Token für einen benutzerdefinierten Store kann nicht in GraphQL abgerufe
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "username": "login",
       "password": "password"
-    }
+    &rbrace;
     </code>
     </pre>
 

@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336: _[!UICONTROL Something went wrong]_beim Verwerfen von Benachrichtigungen in Adobe Commerce Admin
+# ACSD-47336: _[!UICONTROL Something went wrong]_&#x200B;beim Verwerfen von Benachrichtigungen in Adobe Commerce Admin
 
-Mit dem Patch „ACSD-47336“ wird das Problem behoben, dass beim Verwerfen von Benachrichtigungen in der [!DNL Commerce] Admin der _[!UICONTROL Something went wrong]_Fehler angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24 installiert ist. Die Patch-ID ist ACSD-47336. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
+Mit dem Patch „ACSD-47336“ wird das Problem behoben, dass beim Verwerfen von Benachrichtigungen in der [!DNL Commerce] Admin der _[!UICONTROL Something went wrong]_&#x200B;Fehler angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24 installiert ist. Die Patch-ID ist ACSD-47336. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -31,7 +31,7 @@ Mit dem Patch „ACSD-47336“ wird das Problem behoben, dass beim Verwerfen von
 
 ## Problem
 
-Der/die Benutzende sieht _[!UICONTROL Something went wrong]_Fehler, wenn er/sie die Benachrichtigungen im [!DNL Commerce] Admin verwirft.
+Der/die Benutzende sieht _[!UICONTROL Something went wrong]_&#x200B;Fehler, wenn er/sie die Benachrichtigungen im [!DNL Commerce] Admin verwirft.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -41,11 +41,11 @@ Der/die Benutzende sieht _[!UICONTROL Something went wrong]_Fehler, wenn er/sie 
 
 <u>Erwartete Ergebnisse</u>:
 
-Der _[!UICONTROL Something went wrong]_sollte beim Löschen der abgeschlossenen Aufgaben nicht angezeigt werden.
+Der _[!UICONTROL Something went wrong]_&#x200B;sollte beim Löschen der abgeschlossenen Aufgaben nicht angezeigt werden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der _[!UICONTROL Something went wrong]_wird angezeigt.
+Der _[!UICONTROL Something went wrong]_&#x200B;wird angezeigt.
 
 ## Patch anwenden
 
