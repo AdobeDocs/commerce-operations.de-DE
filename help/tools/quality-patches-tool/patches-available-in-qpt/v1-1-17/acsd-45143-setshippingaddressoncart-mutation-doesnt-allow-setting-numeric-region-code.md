@@ -1,10 +1,10 @@
 ---
 title: 'ACSD-45143: setShippingAddressesOnCart-Mutation setzt keinen numerischen Regionen-Code auf „region“'
-description: Der Patch ACSD-45143 behebt das Problem, dass die Mutation setShippingAddressesOnCart das Festlegen des numerischen Regionen-Codes als „Region“ nicht zulässt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 installiert ist. Die Patch-ID ist ACSD-45143. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
+description: Der Patch ACSD-45143 behebt das Problem, dass die Mutation setShippingAddressesOnCart das Festlegen des numerischen Regionen-Codes als „Region“ nicht zulässt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17 installiert ist. Die Patch-ID ist ACSD-45143. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 feature: Orders, Shipping/Delivery, Shopping Cart
 role: Admin
 exl-id: c7d9d1f2-4731-406f-93bd-036f0fe75b1d
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 011a6f46f76029eaf67f172b576e58dac9710a3d
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-45143: setShippingAddressesOnCart-Mutation setzt keinen numerischen Regionen-Code auf „region“
 
-Der Patch ACSD-45143 behebt das Problem, dass die Mutation setShippingAddressesOnCart das Festlegen des numerischen Regionen-Codes als „Region“ nicht zulässt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.17 installiert ist. Die Patch-ID ist ACSD-45143. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
+Der Patch ACSD-45143 behebt das Problem, dass die Mutation setShippingAddressesOnCart das Festlegen des numerischen Regionen-Codes als „Region“ nicht zulässt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17 installiert ist. Die Patch-ID ist ACSD-45143. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-45143 behebt das Problem, dass die Mutation setShippingAddressesO
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -39,9 +39,9 @@ Die setShippingAddressesOnCart-Mutation lässt das Festlegen des numerischen Reg
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
       createEmptyCart
-    &rbrace;
+    }
     </code>
     </pre>
 
@@ -49,12 +49,12 @@ Die setShippingAddressesOnCart-Mutation lässt das Festlegen des numerischen Reg
 
    <pre>
     <code class="language-graphql">
-    mutation ($cartId: String!) &lbrace;
+    mutation ($cartId: String!) {
       setShippingAddressesOnCart(
-        input: &lbrace;
+        input: {
           cart_id: $cartId
-          shipping_addresses: &lbrace;
-            address: &lbrace;
+          shipping_addresses: {
+            address: {
               firstname: "Tomek"
               lastname: "Nowak"
               company: "Company Name"
@@ -65,31 +65,31 @@ Die setShippingAddressesOnCart-Mutation lässt das Festlegen des numerischen Reg
               country_code: "FR"
               telephone: "123-456-0000"
               save_in_address_book: false
-            &rbrace;
-          &rbrace;
-        &rbrace;
-        ) &lbrace;
-          cart &lbrace;
-            shipping_addresses &lbrace;
+            }
+          }
+        }
+        ) {
+          cart {
+            shipping_addresses {
               firstname
               lastname
               company
               street
               city
-              region &lbrace;
+              region {
                 code
                 label
-              &rbrace;
+              }
               postcode
               telephone
-              country &lbrace;
+              country {
                 code
                 label
-              &rbrace;
-            &rbrace;
-          &rbrace;
-        &rbrace;
-      &rbrace;
+              }
+            }
+          }
+        }
+      }
       </code>
       </pre>
 
@@ -107,35 +107,35 @@ Der Regions-Code wird in 47 geändert.
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  "data": &lbrace;
-    "setShippingAddressesOnCart": &lbrace;
-      "cart": &lbrace;
-        "shipping_addresses": &lbrack;
-        &lbrace;
+{
+  "data": {
+    "setShippingAddressesOnCart": {
+      "cart": {
+        "shipping_addresses": [
+        {
           "firstname": "Tomek",
           "lastname": "Nowak",
           "company": "Company Name",
-          "street": &lbrack;
+          "street": [
           "234 Rue de Rivoli"
-          &rbrack;,
+          ],
           "city": "Lille",
-          "region": &lbrace;
+          "region": {
             "code": "47",
             "label": "Lot-et-Garonne"
-            &rbrace;,
+            },
             "postcode": "59800",
             "telephone": "123-456-0000",
-            "country": &lbrace;
+            "country": {
               "code": "FR",
               "label": "FR"
-            &rbrace;
-          &rbrace;
-        &rbrack;
-      &rbrace;
-    &rbrace;
-  &rbrace;
-&rbrace;
+            }
+          }
+        ]
+      }
+    }
+  }
+}
 </code>
 </pre>
 
@@ -144,13 +144,13 @@ Der Regions-Code wird in 47 geändert.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
 * [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im [!DNL Quality Patches Tool].
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].
