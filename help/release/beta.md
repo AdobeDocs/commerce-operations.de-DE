@@ -40,7 +40,7 @@ Mit Adobe Commerce Optimizer können Sie:
 - Personalisierte Suche und Empfehlungen mit KI und ML erstellen.
 - Zeigen Sie wichtige Produktdatenverfügbarkeit an, einschließlich Synchronisierungsstatus und Storefront-Ereignisdaten für eine genaue Implementierung und Fehlerbehebung.
 
-[Weitere Informationen](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) über Adobe Commerce Optimizer. Wenn Sie mehr über das [!DNL Adobe Commerce Optimizer] Early Access-Programm erfahren möchten, füllen Sie das [Early Access-Anfrage-Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u) aus.
+[Weitere Informationen](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=de) über Adobe Commerce Optimizer. Wenn Sie mehr über das [!DNL Adobe Commerce Optimizer] Early Access-Programm erfahren möchten, füllen Sie das [Early Access-Anfrage-Formular](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u) aus.
 
 ### Erweiterte Suchfunktionen für die Live-Suche (Public Beta)
 
@@ -66,7 +66,7 @@ Diese Beta-Version unterstützt drei neue Funktionen in der [`productSearch` Abf
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus. Um an der Beta teilzunehmen, senden Sie eine E-Mail-Anfrage an [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Informationen zur Installation der Live Search-Betaversion finden Sie [Live Search-Handbuch](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
+Informationen zur Installation der Live Search-Betaversion finden Sie [Live Search-Handbuch](https://experienceleague.adobe.com/de/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management-Systemintegration (Private Beta)
 
@@ -88,7 +88,7 @@ Jede Alpha- und Beta-Version von Adobe Commerce Foundation enthält alle Änderu
 - GraphQL-Verbesserungen
 - Allgemeine Qualitätsfehler-Fehlerbehebungen
 - Gemeinschaftsbeiträge
-- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
 
 #### Namenskonvention und -zeitplan
 
