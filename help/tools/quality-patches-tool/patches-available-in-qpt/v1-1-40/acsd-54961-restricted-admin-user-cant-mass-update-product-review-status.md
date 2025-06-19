@@ -39,7 +39,7 @@ Ein Benutzer mit eingeschränkter Administratorberechtigung kann keine [!UICONTR
 1. Erstellen Sie eine zusätzliche Website-, Store- und Store-Ansicht.
 1. Fügen Sie ein Produkt zum 2. Store hinzu und fügen Sie dann eine Überprüfung hinzu.
 1. Erstellen Sie einen eingeschränkten Admin-Benutzer mit Zugriff nur auf den zweiten Store.
-1. Melden Sie sich als eingeschränkter Admin-Benutzer an, gehen Sie dann zu **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** und setzen Sie den **Status** auf *Genehmigt* oder *Ausstehend*.
+1. Melden Sie sich als eingeschränkter Admin-Benutzer an, gehen Sie dann zu **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** und setzen Sie den **Status** auf *Genehmigt* oder *Ausstehend*.
 
 <u>Erwartete Ergebnisse</u>:
 

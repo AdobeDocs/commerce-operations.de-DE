@@ -42,15 +42,15 @@ Wenn Sie einen Artikel mehrmals zum Warenkorb hinzufügen (parallele Anfrage), w
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        {
+        &lbrace;
             token
-        }
-    }
+        &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -58,9 +58,9 @@ Wenn Sie einen Artikel mehrmals zum Warenkorb hinzufügen (parallele Anfrage), w
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 

@@ -53,14 +53,14 @@ B2B-Module werden installiert.
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       generateCustomerToken(
         email: "company.admin@exapmle.test"
         password: "password"
-      ) {
+      ) &lbrace;
         token
-      }
-    }
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -68,29 +68,29 @@ B2B-Module werden installiert.
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       products(
           filter: {},
           pageSize: 100,
           currentPage: 1
           sort: {}
-        ) {
+        ) &lbrace;
           total_count
-          page_info {
+          page_info &lbrace;
             page_size
             current_page
-          }
-          aggregations {
+          &rbrace;
+          aggregations &lbrace;
             attribute_code
             count
             label
-            options {
+            options &lbrace;
               label
               value
               count
-            }
-          }
-          items {
+            &rbrace;
+          &rbrace;
+          items &lbrace;
             name
             sku
             created_at
@@ -100,107 +100,107 @@ B2B-Module werden installiert.
             short_description {html}
             url_key
             url_path
-            price_tiers{
-              final_price{
+            price_tiers&lbrace;
+              final_price&lbrace;
                   value
                   currency
-                }
-              discount{
+                &rbrace;
+              discount&lbrace;
                   amount_off
                   percent_off
-                }
+                &rbrace;
               quantity
-            }
-            price_range {
-             maximum_price {
-              regular_price {
+            &rbrace;
+            price_range &lbrace;
+             maximum_price &lbrace;
+              regular_price &lbrace;
                 value
-              }
-              final_price {
+              &rbrace;
+              final_price &lbrace;
                 value
-              }
-            }
-            minimum_price {
-              regular_price {
+              &rbrace;
+            &rbrace;
+            minimum_price &lbrace;
+              regular_price &lbrace;
                 value
-              }
-              final_price {
+              &rbrace;
+              final_price &lbrace;
                value
-              }
-            }
-          }
-          image {
+              &rbrace;
+            &rbrace;
+          &rbrace;
+          image &lbrace;
            url
-          }
-          thumbnail {
+          &rbrace;
+          thumbnail &lbrace;
            url
-          }
-          small_image {
+          &rbrace;
+          small_image &lbrace;
            url
-          }
-          media_gallery {
+          &rbrace;
+          media_gallery &lbrace;
            url
-          }
-          ... on ConfigurableProduct {
-            configurable_options {
+          &rbrace;
+          ... on ConfigurableProduct &lbrace;
+            configurable_options &lbrace;
              id
 
              label
              position
              use_default
              attribute_code
-             values {
+             values &lbrace;
                value_index
                label
-               swatch_data {
+               swatch_data &lbrace;
                  value
-               }
-            }
+               &rbrace;
+            &rbrace;
             product_id
-          }
-          variants {
-            product {
+          &rbrace;
+          variants &lbrace;
+            product &lbrace;
               id
               name
               sku
-              #margin
-              #margin_percentage
-              image {
+              &#x200B;#margin
+              &#x200B;#margin_percentage
+              image &lbrace;
                 url
-              }
-              small_image {
+              &rbrace;
+              small_image &lbrace;
                 url
-              }
-              thumbnail {
+              &rbrace;
+              thumbnail &lbrace;
                 url
-              }
-              media_gallery{
+              &rbrace;
+              media_gallery&lbrace;
                 url
-              }
+              &rbrace;
               attribute_set_id
-              ... on PhysicalProductInterface {
+              ... on PhysicalProductInterface &lbrace;
                 weight
-              }
-              price_range {
-                minimum_price {
-                  regular_price {
+              &rbrace;
+              price_range &lbrace;
+                minimum_price &lbrace;
+                  regular_price &lbrace;
                     value
                     currency
-                  }
-                }
-              }
-            }
-            attributes {
+                  &rbrace;
+                &rbrace;
+              &rbrace;
+            &rbrace;
+            attributes &lbrace;
               label
               code
               value_index
-            }
-          }
-        }
-      }
+            &rbrace;
+          &rbrace;
+        &rbrace;
+      &rbrace;
 
-    }
-}
+    &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -214,106 +214,106 @@ Nur „Produkt 2“ wird zurückgegeben, aber die `total_count` zeigt zwei.
 
 <pre>
 <code class="language-graphql">
-{
-  "data": {
-    "products": {
+&lbrace;
+  "data": &lbrace;
+    "products": &lbrace;
       "total_count": 2,
-      "page_info": {
+      "page_info": &lbrace;
         "page_size": 100,
         "current_page": 1
-      },
-      "aggregations": [
-        {
+      &rbrace;,
+      "aggregations": &lbrack;
+        &lbrace;
           "attribute_code": "price",
           "count": 2,
           "label": "Price",
-          "options": [
-            {
+          "options": &lbrack;
+            &lbrace;
               "label": "0-100",
               "value": "0_100",
               "count": 1
-            },
-            {
+            &rbrace;,
+            &lbrace;
               "label": "100-200",
               "value": "100_200",
               "count": 1
-            }
-          ]
-        },
-        {
+            &rbrace;
+          &rbrack;
+        &rbrace;,
+        &lbrace;
           "attribute_code": "category_id",
           "count": 1,
           "label": "Category",
-          "options": [
-            {
+          "options": &lbrack;
+            &lbrace;
               "label": "Cat 1",
               "value": "3",
               "count": 2
-            }
-          ]
-        }
-      ],
-      "items": [
-        {
+            &rbrace;
+          &rbrack;
+        &rbrace;
+      &rbrack;,
+      "items": &lbrack;
+        &lbrace;
           "name": "Product 2",
           "sku": "Product 2",
           "created_at": "2021-05-12 10:51:44",
           "updated_at": "2021-05-12 11:03:24",
           "stock_status": "IN_STOCK",
-          "description": {
+          "description": &lbrace;
             "html": ""
-          },
-          "short_description": {
+          &rbrace;,
+          "short_description": &lbrace;
             "html": ""
-          },
+          &rbrace;,
           "url_key": "product-2",
           "url_path": null,
-          "price_tiers": [
-            {
-              "final_price": {
+          "price_tiers": &lbrack;
+            &lbrace;
+              "final_price": &lbrace;
                 "value": 90,
                 "currency": "USD"
-              },
-              "discount": {
+              &rbrace;,
+              "discount": &lbrace;
                 "amount_off": 10,
                 "percent_off": 10
-              },
+              &rbrace;,
               "quantity": 1
-            }
-          ],
-          "price_range": {
-            "maximum_price": {
-              "regular_price": {
+            &rbrace;
+          &rbrack;,
+          "price_range": &lbrace;
+            "maximum_price": &lbrace;
+              "regular_price": &lbrace;
                 "value": 100
-              },
-              "final_price": {
+              &rbrace;,
+              "final_price": &lbrace;
                 "value": 90
-              }
-            },
-            "minimum_price": {
-              "regular_price": {
+              &rbrace;
+            &rbrace;,
+            "minimum_price": &lbrace;
+              "regular_price": &lbrace;
                 "value": 100
-              },
-              "final_price": {
+              &rbrace;,
+              "final_price": &lbrace;
                 "value": 90
-              }
-            }
-          },
-          "image": {
+              &rbrace;
+            &rbrace;
+          &rbrace;,
+          "image": &lbrace;
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/image.jpg"
-          },
-          "thumbnail": {
+          &rbrace;,
+          "thumbnail": &lbrace;
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/thumbnail.jpg"
-          },
-          "small_image": {
+          &rbrace;,
+          "small_image": &lbrace;
             "url": "../pub/static/version1620816308/frontend/Magento/luma/en_US/Magento_Catalog/images/product/placeholder/small_image.jpg"
-          },
+          &rbrace;,
           "media_gallery": []
-        }
-      ]
-    }
-  }
-}
+        &rbrace;
+      &rbrack;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
