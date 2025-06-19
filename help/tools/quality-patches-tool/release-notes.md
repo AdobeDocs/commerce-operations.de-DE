@@ -2,9 +2,9 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 811c29c722448a0dc0c9172f58020bd17241513c
+source-git-commit: 883d9cd90a70dc898766f89ee4d8e8adb1583c08
 workflow-type: tm+mt
-source-wordcount: '26381'
+source-wordcount: '26682'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.66 {#v1-1-66}
+
+* **ACP2E-3789** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.9) - Es wurde das Problem behoben, dass beim Aktualisieren eines Produkts über [!DNL WebAPI] duplizierte Mediendateien eine Medien-ID bereitgestellt wurde.
+* **ACP2E-3918** (für Adobe Commerce >=2.4.5 &lt;2.4.9) - Behebt das Problem, dass der Checkout für angemeldete Firmenkunden, die eine Abholung im Geschäft ohne standardmäßige Rechnungsadresse verwenden, fehlgeschlagen ist.
+* **ACSD-65750** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Es wurde das Problem behoben, bei dem die GraphQL-`route`-Abfrage in den Inhaltstypen von Page Builder-Produkten Produkte in der falschen Reihenfolge zurückgab.
+* **ACSD-65775** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, bei dem die Auftragsdetails der [!DNL REST]-API falsche `base_row_total` und `row_total` zurückgaben, wenn mehrere Mengen desselben Artikels bestellt wurden.
+* **ACSD-65777** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass in der `MediaGallery` GraphQL-Anfrage das Feld `types` für Produktbildtypen fehlte.
+* **ACSD-65848** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wird das Problem behoben, bei dem die Gesamtproduktzahl in einer Kategorie mithilfe einer Unterauswahl berechnet wurde, indem die Methode so umgestaltet wird, dass stattdessen ein Join verwendet wird.
+* **ACSD-65913** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Es wurde das Problem behoben, bei dem [!DNL OpenSearch] einen Fehler *ILLEGAL_ARGUMENT_EXCEPTION* für Kategorien mit Produkten desselben Preises ausgegeben hat.
+* **ACSD-66041** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde das Problem behoben, dass Postleitzahlen in Irland (IE) aufgrund eines fehlenden `CountryID` nicht nach Abholorten durchsucht werden konnten.
+* **ACSD-66212** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde das Problem behoben, dass der doppelte Import einer Kunden-CSV-Datei beim zweiten und nachfolgenden Versuch zu Fehlern führte.
+* Aktualisierte Versionen: **MDVA-12304**, **MDVA-19640**, **ACP2E-3841**, **ACSD-65100**, **ACSD-65787**, **ACP2E-3753**, **ACSD-65202**, **ACSD-65331**, **ACSD-65822**
 
 ## v1.1.65 {#v1-1-65}
 
@@ -133,7 +146,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-62629** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wird das Problem behoben, bei dem eine in **[!UICONTROL Widgets]** verwendete Produktliste die Kategoriebedingung nicht widerspiegelt.
 * **ACSD-62635** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass Produkte, die mit mehreren Stores zusammenhängen, in der [!DNL GraphQL]-Produktabfrage nicht richtig angezeigt werden.
 * **ACSD-62671** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass die [!DNL GraphQL] beim ersten Versuch keine aktuellen Adressinformationen zurückgibt.
-* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**&#x200B;hinzufügen*.
+* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**hinzufügen*.
 * **ACSD-62708** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2,4,5-p10 &lt;2,4,6-p2 || >=2.4.6-p8 &lt;2.4.7-p1) - Behebt das Problem, dass [!DNL TinyMCE] 7-Editor-Schriftgröße in der Admin-Liste *PT* und nicht *PX* anzeigt. Jetzt können Sie die Schriftgröße auch in &quot;*&quot;* &quot;*&quot;*.
 * **ACSD-62758** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass Produktvideos auf der Detailseite des **[!UICONTROL Configurable Product]** nicht korrekt gerendert werden, wenn der [!DNL URL] ausgewählte Optionen enthält.
 * **ACSD-62951** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Es wird das Problem behoben, bei dem die E-Mail mit der Gutschrift gesendet wird, ohne Elemente und Gesamtwerte einzuschließen.
