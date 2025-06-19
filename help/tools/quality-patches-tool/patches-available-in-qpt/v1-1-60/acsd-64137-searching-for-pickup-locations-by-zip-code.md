@@ -3,13 +3,14 @@ title: 'ACSD-64137: Die Suche nach Abholorten per Postleitzahl funktioniert bei 
 description: Wenden Sie den Patch ACSD-64137 an, um das Problem zu beheben, dass die Suche nach Abholorten per Postleitzahl für die niederländische Lokalisierung nicht richtig funktioniert.
 feature: Shipping/Delivery
 role: Admin, Developer
-source-git-commit: 4947133daaffb919aeba986c8a6b88ecb2e1b943
+exl-id: 86c28b6d-6584-4caf-bd35-13e0c1bdcf1d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64137: Die Suche nach Abholorten per Postleitzahl funktioniert bei der niederländischen Lokalisierung nicht richtig
 
@@ -27,7 +28,7 @@ Der Patch ACSD-64137 behebt das Problem, dass die Suche nach Abholorten per Post
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -65,7 +66,7 @@ Die Postleitzahlsuche für die Niederlande zeigt keine Ergebnisse auf der Fronte
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen

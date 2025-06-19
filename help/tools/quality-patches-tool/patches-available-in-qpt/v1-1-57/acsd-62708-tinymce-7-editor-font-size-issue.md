@@ -3,13 +3,14 @@ title: 'Schriftgröße des ACSD-62708: [!DNL TinyMCE] -Editors im Admin-Bedienfe
 description: Wenden Sie den Patch ACSD-62708 an, um das Adobe Commerce-Problem zu beheben, bei dem die  [!DNL TinyMCE] 7-Editor-Schriftgröße in der Admin-Liste PT und nicht PX anzeigt. Jetzt können Sie auch die Schriftgröße in PX anstelle von PT festlegen.
 feature: Admin Workspace
 role: Admin, Developer
-source-git-commit: ecb04a058e858580dfbc7a1edcd319423be9eeaa
+exl-id: 037a5831-dbc7-4834-ab8e-9b1f765b92b2
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62708: Schriftgröße des [!DNL TinyMCE] 7-Editors im Admin-Bedienfeld zeigt PT
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-62708 wird das Problem behoben, dass die Schriftgröße des [
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -52,7 +53,7 @@ Die Schriftgröße ist PT.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

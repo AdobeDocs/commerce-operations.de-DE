@@ -3,13 +3,14 @@ title: 'ACSD-61805: Behebt Stock-Problem in der Storefront nach der Backorder-St
 description: Wenden Sie den Patch ACSD-61805 an, um das Adobe Commerce-Problem zu beheben, bei dem Produkte nicht vorrätig sind, nachdem der Status der Rückstandsbestellung über die REST-API aktualisiert wurde
 feature: REST, Catalog Management, Inventory
 role: Admin, Developer
-source-git-commit: abad1a2f2a1bdc2c1a4b6f821e6b02190a5ebe83
+exl-id: ff85e747-6394-43db-a02a-87b1e5e59f00
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61805: Behebt Stock-Problem in der Storefront nach der Backorder-Statusaktualisierung über die REST-API
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-61805 wird das Problem behoben, dass Produkte in der Storefro
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -90,7 +91,7 @@ Das Produkt ist *nicht vorrätig*.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

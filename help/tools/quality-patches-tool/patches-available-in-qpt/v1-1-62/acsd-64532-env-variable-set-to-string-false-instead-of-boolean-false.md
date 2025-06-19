@@ -3,13 +3,14 @@ title: 'ACSD-64532: Die ENV-Variable *false* wird als Zeichenfolge *false* anste
 description: Wenden Sie den Patch ACSD-64532 an, um das Adobe Commerce-Problem zu beheben, bei dem eine auf *false* gesetzte Variable „ENV“ als Zeichenfolge *false* anstelle von „BOOLEAN“ *FALSE* behandelt wird.
 feature: Variables
 role: Admin, Developer
-source-git-commit: 603b4f92ab3bbf4702d5373bd02dfdd770f57d5b
+exl-id: 7940df1f-d527-4b57-bde7-7a0216b12436
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64532: Die ENV-Variable, die auf „false“ gesetzt ist, wird als Zeichenfolge „false“ anstelle von „BOOLEAN FALSE“ behandelt.
 
@@ -25,7 +26,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p2 - 2.4.7-p4
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -62,7 +63,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6-p2 - 2.4.7-p4
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

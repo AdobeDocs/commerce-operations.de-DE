@@ -3,7 +3,9 @@ title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.58'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.58  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: f8473bbdedef26b291547d828e47a9ba08a5d142
+exl-id: 61bf8b82-f897-41f6-8524-5aa74c6440f1
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -29,4 +31,3 @@ QPT v1.1.58 enthält die folgenden Patches:
 1. **ACSD-63578**: Es wird ein Problem behoben, durch das beim Klicken auf die Schaltfläche **[!UICONTROL Delete]** in **[!UICONTROL Add to Order by SKU]** im [!UICONTROL Admin] die [!DNL SKU] nicht entfernt wird.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
-

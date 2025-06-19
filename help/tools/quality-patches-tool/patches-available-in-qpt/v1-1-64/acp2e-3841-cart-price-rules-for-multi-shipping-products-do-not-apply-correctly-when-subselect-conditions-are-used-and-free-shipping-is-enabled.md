@@ -3,13 +3,14 @@ title: 'ACP2E-3841: Die Warenkorb-Preisregeln für Produkte mit mehreren Versand
 description: Wenden Sie den Patch ACP2E-3841 an, um das Adobe Commerce-Problem zu beheben, bei dem die Warenkorbpreisregeln für Produkte mit mehreren Versandarten nicht korrekt angewendet werden, wenn Bedingungen zur Unterauswahl verwendet werden und der kostenlose Versand aktiviert ist.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: 1abb32109d5ca4a90cdd1d210d1fae6a728699fd
+exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3841: Die Warenkorb-Preisregeln für Produkte mit mehreren Versandarten gelten nicht korrekt, wenn Subselect-Bedingungen verwendet werden und der kostenlose Versand aktiviert ist
 
@@ -27,7 +28,7 @@ Der Patch ACP2E-3841 behebt das Problem, dass die Warenkorbpreisregeln für Prod
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -50,7 +51,6 @@ Die Warenkorb-Preisregeln für Produkte mit mehreren Versandarten gelten nicht k
 1. Produkttest 2:
    1. Kategorien: Prüfung der Kategorie 2
    1. Preis: $ 56.25 
-
       **(Die Preise müssen den hier angegebenen entsprechen, um sicherzustellen, dass der Test ordnungsgemäß funktioniert.)**
 
 **Warenkorb-Preisregel:**
@@ -103,7 +103,7 @@ Keine Fehler.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

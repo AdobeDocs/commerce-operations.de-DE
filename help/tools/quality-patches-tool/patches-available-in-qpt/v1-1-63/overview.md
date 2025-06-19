@@ -3,7 +3,9 @@ title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.63'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.63  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 011830c6175c79b3e648913c50851f2c283e6383
+exl-id: 6dfea8d1-ef44-470f-80d6-7260107f6e2c
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%

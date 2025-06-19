@@ -3,13 +3,14 @@ title: 'ACSD-62118: Tabelle „sales_order_tax_item“ für B2B-Bestellungen, di
 description: Wenden Sie den Patch ACSD-62118 an, um das Adobe Commerce-Problem zu beheben, bei dem die Tabelle „sales_order_tax_item“ nicht vollständig aktualisiert wird, wenn B2B-Bestellungen mit der [!UICONTROL Purchase Order]-Methode platziert werden.
 feature: Purchase Orders, B2B
 role: Admin, Developer
-source-git-commit: 5812b90fe07a084a1d3487784d0f36a2b7958286
+exl-id: 8ace73ad-f5a5-47ab-aca7-62c818775d2f
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62118: `sales_order_tax_item` Tabelle wurde für B2B-Bestellungen, die mit der [!UICONTROL Purchase Order]-Methode aufgegeben wurden, nicht vollständig aktualisiert
 
@@ -27,7 +28,7 @@ Der Patch ACSD-62118 behebt das Problem, dass die `sales_order_tax_item` nicht v
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -57,7 +58,7 @@ Wenn B2B-Bestellungen mit der *[!UICONTROL Purchase Order]*-Methode aufgegeben w
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

@@ -3,13 +3,14 @@ title: 'ACSD-65164: Fehlermeldung bei der Neuanordnung eines konfigurierbaren Pr
 description: Wenden Sie den Patch ACSD-65164 an, um das Adobe Commerce-Problem zu beheben, bei dem die Fehlermeldung *Einige der ausgewählten Elementoptionen sind derzeit nicht verfügbar* angezeigt wird, wenn ein konfigurierbares Produkt mit einer einzigen benutzerdefinierten Kontrollkästchenoption neu bestellt wird.
 feature: Products, Orders
 role: Admin, Developer
-source-git-commit: 89f70222e59fc0f7309af184ba01e69ec2ea3d3d
+exl-id: 22b72d24-4852-45ba-ac98-df9565f94539
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65164: Fehlermeldung bei der Neuanordnung eines konfigurierbaren Produkts mit einer einzelnen benutzerdefinierten Checkbox-Option
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-65164 wird das Problem behoben, dass die Fehlermeldung *Einig
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -59,7 +60,7 @@ Eine Fehlermeldung wird angezeigt:
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

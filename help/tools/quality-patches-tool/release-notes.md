@@ -2,7 +2,8 @@
 title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 883d9cd90a70dc898766f89ee4d8e8adb1583c08
+type: Troubleshooting
+source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
 workflow-type: tm+mt
 source-wordcount: '26682'
 ht-degree: 0%
@@ -15,7 +16,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
@@ -146,7 +147,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-62629** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wird das Problem behoben, bei dem eine in **[!UICONTROL Widgets]** verwendete Produktliste die Kategoriebedingung nicht widerspiegelt.
 * **ACSD-62635** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass Produkte, die mit mehreren Stores zusammenhängen, in der [!DNL GraphQL]-Produktabfrage nicht richtig angezeigt werden.
 * **ACSD-62671** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass die [!DNL GraphQL] beim ersten Versuch keine aktuellen Adressinformationen zurückgibt.
-* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**&#x200B;hinzufügen*.
+* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**hinzufügen*.
 * **ACSD-62708** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2,4,5-p10 &lt;2,4,6-p2 || >=2.4.6-p8 &lt;2.4.7-p1) - Behebt das Problem, dass [!DNL TinyMCE] 7-Editor-Schriftgröße in der Admin-Liste *PT* und nicht *PX* anzeigt. Jetzt können Sie die Schriftgröße auch in &quot;*&quot;* &quot;*&quot;*.
 * **ACSD-62758** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass Produktvideos auf der Detailseite des **[!UICONTROL Configurable Product]** nicht korrekt gerendert werden, wenn der [!DNL URL] ausgewählte Optionen enthält.
 * **ACSD-62951** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Es wird das Problem behoben, bei dem die E-Mail mit der Gutschrift gesendet wird, ohne Elemente und Gesamtwerte einzuschließen.

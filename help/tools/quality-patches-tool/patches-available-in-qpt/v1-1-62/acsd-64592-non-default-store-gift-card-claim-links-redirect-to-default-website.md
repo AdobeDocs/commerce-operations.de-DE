@@ -3,13 +3,14 @@ title: 'ACSD-64592: Nicht standardmäßige Links für Geschenkgutscheine werden 
 description: Wenden Sie den Patch ACSD-64592 an, um das Problem zu beheben, dass bei einer Einrichtung mit mehreren Websites beim Kauf einer virtuellen Geschenkkarte von der sekundären (nicht standardmäßigen) Website der Link für den Geschenkkartencode in der E-Mail die standardmäßige Website-URL enthält.
 feature: Gift, Products
 role: Admin, Developer
-source-git-commit: 39866e1cf8f2afd892c9e151259a446d0277d58f
+exl-id: 1cc026c0-7487-48e8-a092-3e72085ca38a
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64592: Nicht standardmäßige Links für Geschenkgutscheine werden zur Standard-Website weitergeleitet
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-64592 wird ein Problem behoben, bei dem in einer Umgebung mit
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -56,7 +57,7 @@ Der Link für den Geschenkgutschein-Code enthält die standardmäßige Website-U
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

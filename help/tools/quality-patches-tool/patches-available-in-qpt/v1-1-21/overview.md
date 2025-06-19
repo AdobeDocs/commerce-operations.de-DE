@@ -4,7 +4,8 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin
 exl-id: 8cfc61bc-c082-40b5-b64d-68a4c30561fd
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -21,7 +22,7 @@ QPT v1.1.21 enthält die folgenden Patches:
 1. **ACSD-46541**: Es wurde ein Problem behoben, bei dem ein Administrator bzw. eine Administratorin keine Gutschrift erstellen kann, wenn ein Bestellartikel gelöscht wurde.
 1. **ACSD-46581**: Es wird ein Problem behoben, bei dem die geschätzte Steuersumme nicht aktualisiert wird, nachdem ein Land im Warenkorb ausgewählt wurde.
 1. **ACSD-46618**: Es wurde ein Problem behoben, bei dem das Produktlisten-Widget falsche zwischengespeicherte Preise für einen angemeldeten Kunden anzeigt.
-1. **ACSD-46674**: Es wird das Problem behoben, dass benutzerdefinierte Optionen eines Bildtyps als HTML in Kunden-E-Mails angezeigt werden.
+1. **ACSD-46674**: Es wird das Problem behoben, dass benutzerdefinierte Optionen eines Bildtyps in Kunden-E-Mails als HTML angezeigt werden.
 1. **ACSD-46809**: Es wird ein Problem behoben, bei dem Benutzende einen Fehler erhalten, wenn sie eine große Anzahl von Produktquellen zuweisen.
 1. **ACSD-46856**: Verbessert die Leistung und aktualisiert die Stufenpreise über **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Import]** > **[!UICONTROL Advanced Pricing]**.
 1. **ACSD-46988**: Es wird ein Problem behoben, bei dem die GraphQL-API-Anfrage „currency“ NULL-Werte für eine benutzerdefinierte Währung zurückgibt.

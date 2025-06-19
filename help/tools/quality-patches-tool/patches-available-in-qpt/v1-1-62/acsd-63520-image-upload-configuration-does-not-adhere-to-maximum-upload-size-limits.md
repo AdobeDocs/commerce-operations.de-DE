@@ -3,13 +3,14 @@ title: 'ACSD-63520: Bilder, die über die Bild-Upload-Konfiguration hochgeladen 
 description: Wenden Sie den Patch ACSD-63520 an, um das Adobe Commerce-Problem zu beheben, bei dem Bilder, die über die Bilduploadekonfiguration im Admin-Bedienfeld hochgeladen wurden, nicht den konfigurierten Maximalgrößen für den Upload entsprechen.
 feature: Media, Products
 role: Admin, Developer
-source-git-commit: 987d335f03d552763f75adb73890787abf235e66
+exl-id: 5132bfa9-813a-4623-8e02-a8801f6396e8
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63520: Bilder, die über [!UICONTROL Image Upload Configuration] hochgeladen wurden, überschreiten die konfigurierten Größenbeschränkungen
 
@@ -25,7 +26,7 @@ Mit dem Patch „ACSD-63520“ wird ein Problem behoben, bei dem Bilder, die üb
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer [!DNL Adobe Commerce] Version kompatibel ist, aktualisieren Sie das `magento/quality-patches`-Paket auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer [!DNL Adobe Commerce] Version kompatibel ist, aktualisieren Sie das `magento/quality-patches`-Paket auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -65,7 +66,7 @@ Die Größe der Bilder wird nicht geändert und überschreitet damit die konfigu
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 

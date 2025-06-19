@@ -4,7 +4,8 @@ description: Wenden Sie den Patch ACSD-61534 an, um das Adobe Commerce-Problem z
 feature: Configuration
 role: Admin, Developer
 exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
-source-git-commit: bbf7df7fdca4c11f6f268344db00e2c8643b5dce
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -27,7 +28,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -40,7 +41,7 @@ Die Design-Konfiguration kann nicht mit dem Befehl `bin/magento config:set` fest
 1. Navigieren Sie zu **[!UICONTROL Content]** > **[!UICONTROL Design]** > **[!UICONTROL Configuration]**.
 1. Klicken Sie **[!UICONTROL Edit]** neben dem **[!UICONTROL Global/Main website]** in der zweiten Zeile.
 1. Design für eine Store-Ansicht bearbeiten.
-1. Öffnen Sie den HTML-Kopf.
+1. Öffnen Sie die HTML-Kopfzeile.
 1. Aktivieren Sie das Feld Deaktivierte **[!UICONTROL Scripts and Style Sheets]** mithilfe von Entwickler-Tools.
 1. Ändern Sie den Wert und speichern Sie ihn.
 
@@ -57,7 +58,7 @@ Tabelle `core_config_data` enthält einen aktualisierten Wert für `design/head/
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

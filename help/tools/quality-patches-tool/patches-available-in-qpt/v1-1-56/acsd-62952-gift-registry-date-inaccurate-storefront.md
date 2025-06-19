@@ -3,13 +3,14 @@ title: 'ACSD-62952: Das Datum der Geschenkregistrierung wird auf der Storefront 
 description: Wenden Sie den Patch ACSD-62952 an, um das Adobe Commerce-Problem zu beheben, bei dem das Geschenkregistrierungsdatum falsch auf der Storefront angezeigt wird.
 feature: Gift, Storefront
 role: Admin, Developer
-source-git-commit: 1fad4ecf1bab1df7a106ca12fe0431f19b65fb68
+exl-id: c11e95ab-775d-4aa7-828b-29ec52685d47
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62952: Das Datum der Geschenkregistrierung wird auf der Storefront falsch angezeigt
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-62952 wird das Problem behoben, dass das Geschenkregistrierun
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -62,4 +63,3 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-

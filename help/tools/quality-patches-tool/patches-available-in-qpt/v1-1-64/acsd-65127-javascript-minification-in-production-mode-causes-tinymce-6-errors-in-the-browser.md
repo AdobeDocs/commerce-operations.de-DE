@@ -3,13 +3,14 @@ title: 'ACSD-65127: Die JavaScript-Minimierung im Produktionsmodus verursacht  [
 description: Wenden Sie den Patch ACSD-65127 an, um das Adobe Commerce-Problem zu beheben, bei dem die Aktivierung der JavaScript-Minimierung im Produktionsmodus dazu führte [!DNL TinyMCE] 6 Fehler in der Browser-Konsole zu generieren, die die Funktionalität und das Benutzererlebnis beeinträchtigten.
 feature: Page Builder, Page Content
 role: Admin, Developer
-source-git-commit: c5b27b79dd2dc7f9b39e629756d3d5d01e019710
+exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65127: Die JavaScript-Minimierung im Produktionsmodus verursacht [!DNL TinyMCE] 6 Fehler im Browser
 
@@ -27,7 +28,7 @@ Der Patch ACSD-65127 behebt das Problem, dass durch die Aktivierung der JavaScri
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) . Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -64,7 +65,7 @@ Keine JS-Fehler in der Browser-Konsole.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

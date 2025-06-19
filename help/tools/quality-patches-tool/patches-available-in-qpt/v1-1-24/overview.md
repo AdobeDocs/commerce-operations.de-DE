@@ -4,7 +4,8 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin
 exl-id: 7f88a28b-f166-4c5b-8d69-239c57cc4001
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -22,7 +23,7 @@ QPT v1.1.24 enthält die folgenden Patches:
 1. **ACSD-46770**: Es wurde ein Problem behoben, bei dem E-Mails zu Admin-Bestellungen gesendet wurden, selbst wenn *E-Mail-Bestellbestätigung* deaktiviert war.
 1. **ACSD-46865**: Es wird das Problem behoben, dass das [!UICONTROL Shipment and Credit Memo] nicht ausgefüllt wird, wenn die asynchrone Indizierung aktiviert ist.
 1. **ACSD-47004**: Es wird das Problem behoben, dass keine MwSt. auf eine Rechnungsadresse ohne MwSt.-Kennung angewendet wird.
-1. **ACSD-47079**: Es wird das Problem behoben, dass der Lagerstatus von zusammengesetzten Produkten (gebündelt, gruppiert und konfigurierbar) nicht aktualisiert wird, wenn sich der Lagerstatus des Unterprodukts über die REST-API-POST /rest/V1/inventory/source-items ändert.
+1. **ACSD-47079**: Es wird das Problem behoben, dass der Lagerstatus von zusammengesetzten Produkten (Bundle, Gruppiert und Konfigurierbar) nicht aktualisiert wird, wenn sich der Lagerstatus von Unterprodukten über REST API POST /rest/V1/inventory/source-items ändert.
 1. **ACSD-47137**: Verbessert die Ladegeschwindigkeit der Bildergalerie, wenn der Pub/Media-Ordner sehr groß ist.
 1. **ACSD-47336**: Fehlerbehebungen (*ist schiefgelaufen.* beim Verwerfen von Benachrichtigungen in Commerce Admin.
 1. **ACSD-47559**: Es wird ein Problem behoben, bei dem der Bereich E-Mail-Vorlagenvorschau nicht vollständig sichtbar ist.

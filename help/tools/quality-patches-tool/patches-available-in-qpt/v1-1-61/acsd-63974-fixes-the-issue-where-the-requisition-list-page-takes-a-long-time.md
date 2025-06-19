@@ -3,13 +3,14 @@ title: 'ACSD-63974: Behebt langsame [!UICONTROL Requisition List] mit Paginierun
 description: Wenden Sie den Patch ACSD-63974 an, um das Problem zu beheben, dass das Laden der [!UICONTROL Requisition List]-Seite viel Zeit in Anspruch nimmt, wenn zu viele Elemente vorhanden sind.
 feature: B2B
 role: Admin, Developer
-source-git-commit: e5f8112b870e3550b4f3a9113be48428a54d454a
+exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63974: Behebt langsame [!UICONTROL Requisition List] mit Paginierung
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-63974 wird das Problem behoben, dass das Laden der **[!UICONT
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 

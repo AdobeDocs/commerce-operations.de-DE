@@ -4,7 +4,8 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin
 exl-id: 224b57b8-89c4-43b7-835f-d62c2e5b6201
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -22,6 +23,6 @@ QPT v1.1.20 enthält die folgenden Patches:
 1. **ACSD-46520**: Es wird ein Problem behoben, bei dem Benutzende einen falschen Bestellstatus erhalten, wenn sie über das Gutschriftverfahren zurückerstattet werden.
 1. **ACSD-46703**: Es wird ein Problem behoben, bei dem es nicht möglich ist, benutzerdefinierte Optionen per Drag-and-Drop auf eine Produktbearbeitungsseite zu ziehen.
 1. **ACSD-46815**: Es wird das Problem behoben, dass die Kategoriestrukturanforderung auf 20 Kategorien beschränkt ist.
-1. **ACSD-46869**: Es wird ein Problem behoben, bei dem ein konfigurierbares Produkt in einem Warenkorb nicht über eine *PUT-REST-API* Anfrage aktualisiert wird, ohne die Produktmenge zu ändern.
+1. **ACSD-46869**: Es wird ein Problem behoben, bei dem ein konfigurierbares Produkt in einem Warenkorb nicht über eine *PUT REST API* Anfrage aktualisiert wird, ohne die Produktmenge zu ändern.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

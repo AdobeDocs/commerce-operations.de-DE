@@ -3,13 +3,14 @@ title: 'ACSD-63406: Abgelaufene persistente Anführungszeichen werden nicht gel�
 description: Wenden Sie den Patch ACSD-63406 an, um das Adobe Commerce-Problem zu beheben, bei dem die abgelaufenen persistenten Anführungszeichen nicht von einem Cron-Auftrag gelöscht werden, wenn der Cron-Auftrag „persistent_clear_expired“ ausgeführt wird.
 feature: Quotes, Shopping Cart
 role: Admin, Developer
-source-git-commit: b3bb6ae825f4912b19e2d1f88b5d55835d9769ff
+exl-id: 795d1ddf-0d5b-406c-870b-36cb92cf07fa
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63406: Abgelaufene persistente Anführungszeichen werden bei Ausführung `persistent_clear_expired` Cron-Auftrags nicht gelöscht
 
@@ -27,7 +28,7 @@ Der Patch ACSD-63406 behebt das Problem, dass die abgelaufenen persistenten Anf�
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -56,7 +57,7 @@ Der `is_persistent` für das Kundenangebot verbleibt *1* in der Angebotstabelle.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen

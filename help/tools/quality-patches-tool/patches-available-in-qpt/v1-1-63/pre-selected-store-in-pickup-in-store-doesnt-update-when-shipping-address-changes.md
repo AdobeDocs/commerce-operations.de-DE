@@ -3,13 +3,14 @@ title: Vorausgewählter Store in „Abholung im Store“ wird nicht aktualisiert
 description: Wenden Sie den Patch ACSD-64753 an, um das Adobe Commerce-Problem zu beheben, bei dem der vorausgewählte Shop nicht aktualisiert wurde, wenn eine neue Lieferadresse außerhalb des Serviceradius des ausgewählten Shops eingegeben wurde.
 feature: Inventory
 role: Admin, Developer
-source-git-commit: 9d76014fb86fd92b2fffbf2de35b25a7f6d1cbae
+exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64753: Vorausgewählter Store in „Abholung im Store“ wird nicht aktualisiert, wenn sich die Versandadresse ändert
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-64753 wird das Problem behoben, dass der vorausgewählte Shop
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -66,7 +67,7 @@ Die Quelle in Illinois kann ausgewählt werden und der Kunde kann zur Kasse gehe
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
