@@ -2,9 +2,9 @@
 title: Modulausgabe deaktivieren
 description: Erfahren Sie, wie Sie die Modulausgabe deaktivieren.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fee09845777e23717e618ac57df4158d6b172d4f
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,7 @@ Die Vorgehensweise zum Deaktivieren der Modulausgabe auf einer einzigen Instanz 
    ```
 
 In diesem Beispiel wurde die Ausgabe für das Modul `Magento_Review` deaktiviert, sodass Kunden die Produkte nicht mehr überprüfen können.
-Um die Ausgabe wieder zu aktivieren, setzen Sie den Wert auf `0`.
+
+### Erneutes Aktivieren der Modulausgabe
+
+Um die Ausgabe wieder zu aktivieren, setzen Sie den Wert für das Modul auf `0` oder entfernen Sie die Zeile/das Modul aus der `config.php`.
