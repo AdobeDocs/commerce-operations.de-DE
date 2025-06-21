@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-66093-Patch in der Version QPT 1.1.65 behoben wurde</a>.</p>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-66093-guest-customer-name-fields-allow-email-input-causing-invalid-order-emails">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-66093-Patch in der Version QPT 1.1.65 behoben wurde</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
