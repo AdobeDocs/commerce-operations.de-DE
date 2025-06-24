@@ -3,9 +3,9 @@ title: AWS S3-Bucket für Remote-Speicher konfigurieren
 description: Konfigurieren Sie Ihr Commerce-Projekt für die Verwendung des AWS S3-Speicher-Services für die Remote-Speicherung.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Der [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicher-S
 
 >[!WARNING]
 >
->Adobe rät von der Verwendung öffentlicher Behälter ab, da dies ein ernstes Sicherheitsrisiko darstellt.
+>Adobe rät dringend von der Verwendung öffentlicher Behälter ab, da dies ein ernstes Sicherheitsrisiko darstellt.
 
 **So aktivieren Sie die Remote-Speicherung mit dem AWS S3-Adapter**:
 
@@ -43,6 +43,10 @@ Der [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicher-S
    ```
 
 ## Konfigurieren von nginx
+
+>[!NOTE]
+>
+>Dieser Ansatz ist nicht auf Adobe Commerce bei Cloud-Infrastrukturprojekten anwendbar. Nginx kann auf Adobe Commerce in der Cloud-Infrastruktur nicht konfiguriert werden. Weitere Informationen finden Sie [Cloud](cloud-support.md)spezifischen Dokumentation .
 
 Nginx erfordert eine zusätzliche Konfiguration, um die Authentifizierung mit der `proxy_pass`-Direktive durchzuführen. Fügen Sie der `nginx.conf`-Datei die folgenden Proxy-Informationen hinzu:
 
