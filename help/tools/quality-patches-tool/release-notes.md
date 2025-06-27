@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
+source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
 workflow-type: tm+mt
-source-wordcount: '26682'
+source-wordcount: '26993'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.67 {#v1-1-67}
+
+* **ACSD-65935** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, bei dem die `customerOrders` GraphQL-Abfrage beim Löschen eines Produkts einen internen Server-Fehler zurückgab.
+* **ACSD-66049** (für Adobe Commerce und Magento Open Source >=2.4.5-p3 &lt;2.4.6 || >=2.4.7 &lt;2.4.9) - Behebt das Problem, dass nicht englische Storefronts aufgrund der Version der ICU-Bibliothek falsche Preise anzeigen.
+* **ACSD-66084** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.9) - Behebt das Problem, dass `row_total_incl_tax` in der API-Antwort für Bestellungen als Restwert nahe Null zurückgegeben wird, anstatt als 0,00 für vollständig reduzierte Elemente.
+* **ACSD-66118** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde das Problem behoben, dass bei Aktualisierung des Code für die Store-Ansicht [!UICONTROL Design Configuration] Einstellungen gelöscht wurden, wenn der Konfigurations-Cache nicht aktualisiert wurde.
+* **ACSD-66139** (für Adobe Commerce >=2.4.7 &lt;2.4.8) - Es wurde das Problem behoben, bei dem GraphQL-Aufrufe zum Aufgeben einer Bestellung für einen nicht vorhandenen oder inaktiven Warenkorb einen *UNDEFINED*-Fehlercode zurückgaben.
+* **ACSD-66301** (für Adobe Commerce und Magento Open Source >=2.4.6-p9 &lt;2.4.7 || >=2.4.7-p4 &lt;2.4.8) - Es wird das Problem behoben, bei dem die Verschiebung von Produkten aus einer Bestellung zurück in den Warenkorb im Admin zu einer Mengenabweichung führt.
+* **ACSD-66434** (für Adobe Commerce >=2.4.6-p8 &lt;2.4.9) - Es wurde das Problem behoben, dass in GraphQL-Abfragen des Unternehmens eine Kunden-ID fehlte.
+* **ACSD-66441** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.8) - Behebt das Problem, dass die Storefront beim Indizieren konfigurierbarer Produkte für ein Multi-Store-Setup in der mehrschichtigen Navigation falsche Indexdaten anzeigt.
+* **AC-14984** (für Adobe Commerce und Magento Open Source >=2,4,6-p10 &lt;2,4,7 || >=2.4.8 &lt;2.4.9) - Behebt den Fehler *Ungültiger Frame-Typ 21* bei der RabbitMQ-SSL-Verbindung.
+* **AC-14985** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass E-Mails bei Verwendung des externen `smtp`-Servers mit aktiviertem TLS nicht gesendet werden.
+* Aktualisierte Versionen: **MDVA-12304**, **ACSD-47920**, **ACSD-56447**, **ACSD-61845**, **ACSD-64118**
 
 ## v1.1.66 {#v1-1-66}
 
@@ -147,7 +161,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-62629** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wird das Problem behoben, bei dem eine in **[!UICONTROL Widgets]** verwendete Produktliste die Kategoriebedingung nicht widerspiegelt.
 * **ACSD-62635** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass Produkte, die mit mehreren Stores zusammenhängen, in der [!DNL GraphQL]-Produktabfrage nicht richtig angezeigt werden.
 * **ACSD-62671** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Behebt das Problem, dass die [!DNL GraphQL] beim ersten Versuch keine aktuellen Adressinformationen zurückgibt.
-* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**&#x200B;hinzufügen*.
+* **ACSD-62689** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.5.0) - Es wurde das Problem behoben, dass der Kunde nach (*4) keine Kategorien in **[!UICONTROL Related Product Rules and Widgets]**hinzufügen*.
 * **ACSD-62708** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2,4,5-p10 &lt;2,4,6-p2 || >=2.4.6-p8 &lt;2.4.7-p1) - Behebt das Problem, dass [!DNL TinyMCE] 7-Editor-Schriftgröße in der Admin-Liste *PT* und nicht *PX* anzeigt. Jetzt können Sie die Schriftgröße auch in &quot;*&quot;* &quot;*&quot;*.
 * **ACSD-62758** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Behebt das Problem, dass Produktvideos auf der Detailseite des **[!UICONTROL Configurable Product]** nicht korrekt gerendert werden, wenn der [!DNL URL] ausgewählte Optionen enthält.
 * **ACSD-62951** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.5.0) - Es wird das Problem behoben, bei dem die E-Mail mit der Gutschrift gesendet wird, ohne Elemente und Gesamtwerte einzuschließen.
