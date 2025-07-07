@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Erfahren Sie, wie Adobe Managed Services Sie bei der Unterstützung und Wartung Ihrer Adobe Commerce-Implementierung unterstützen kann.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -40,19 +40,20 @@ In der folgenden Tabelle finden Sie einen detaillierteren Vergleich der wichtigs
 | Funktion | Adobe Commerce On-Premises | Adobe Commerce in Cloud Manager | Adobe Commerce auf Managed Services |
 |---------|---------------------------|-------------------------|-----------------------------------|
 | Unternehmenssoftware von Adobe | ✓ | ✓ | ✓ |
-| Sichere und dedizierte Cloud-Infrastruktur | | ✓ | ✓ |
-| Verbessertes Vorfall-Service-Level-Ziel | | P1: 1 Stunde | P1: 15 Minuten |
-| Überwachung und Reaktion der Überspannungskapazität | | | ✓ |
-| Infrastruktursicherheit | | | ✓ |
-| Infrastrukturebene 99,99 % SLA | | | ✓ |
-| Anwendungsebene 99,9 % SLA | | | |
-| Designierte Infrastruktur-Expertenressource (Customer Success Engineer) | | | |
-| Geplantes Ereignis-Management | | | |
-| Benutzerdefinierte Site-Überwachung und personalisiertes Runbook | | | |
-| Unterstützung bei der Aktualisierung und Patch-Bereitstellung | | | |
-| Go-Live-Prozesskoordination | | | |
-| Dediziertes Eskalations-Management | | | |
-| Anwendungsüberwachung und -unterstützung | | | |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| Sichere und dedizierte Cloud-Infrastruktur | | ✓ P1: 1 Stunde | ✓ P1: 15 Minuten |
+| Verbessertes Service Level Target für Vorfälle | | ✓ | ✓ |
+| Überwachung und Reaktion der Überspannungskapazität | | ✓ | ✓ |
+| Infrastruktursicherheit | | ✓ | ✓ |
+| Infrastrukturebene 99,99 % SLA | | ✓ | ✓ |
+| Anwendungsebene 99,9 % SLA | | | ✓ |
+| Designierte Infrastruktur-Expertenressource (Customer Success Engineer) | | | ✓ |
+| Geplantes Ereignis-Management | | | ✓ |
+| Benutzerdefinierte Site-Überwachung und personalisiertes Runbook | | | ✓ |
+| Unterstützung bei der Aktualisierung und Patch-Bereitstellung | | | ✓ |
+| Go-Live-Prozesskoordination | | | ✓ |
+| Dediziertes Eskalations-Management | | | ✓ |
+| Anwendungsüberwachung und -unterstützung | | | ✓ |
 
 ## Rollen und Zuständigkeiten
 
@@ -387,7 +388,7 @@ Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Stagin
 
 Der Adobe-Sicherheitsstapel für Managed Services baut die Sicherheit in auf allen Ebenen auf und verwendet Automatisierung und Konsistenz, um menschliches Versagen zu reduzieren. Entwicklungs- und Operations-Teams übernehmen automatisch Sicherheitskontrollen aus verschiedenen Ebenen des Stacks.
 
-Plattformpartner wie Amazon Web Services und Microsoft Azure gewährleisten eine maximale Sicherheitsabdeckung bei der Anwendung der Plattformanpassungen, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Überprüfung und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter {[&#128279;](https://business.adobe.com/products/magento/secure-ecommerce.html)}Adobe Commerce-Sicherheit.
+Plattformpartner wie Amazon Web Services und Microsoft Azure gewährleisten eine maximale Sicherheitsabdeckung bei der Anwendung der Plattformanpassungen, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Überprüfung und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter {[}Adobe Commerce-Sicherheit.](https://business.adobe.com/products/magento/secure-ecommerce.html)
 
 Die folgende Abbildung zeigt den Sicherheitstechnologie-Stack von Adobe Managed Services:
 
