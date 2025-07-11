@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder Produktempfehlungen verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) zu verwenden.
+> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder Produktempfehlungen verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/de/docs/commerce/price-indexer/price-indexing) zu verwenden.
 
 ## Anzeigen des Indexerstatus
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 und höher**: Der [!DNL Customer Grid] Indexer unterstützt sowohl [!UICONTROL Update on Save]- als auch [!UICONTROL Update by Schedule] Modi und [!UICONTROL Update by Schedule] standardmäßig.
 >
->Siehe [Best Practices für die Indexerkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) im _Implementierungs-Playbook_.
+>Siehe [Best Practices für die Indexerkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) im _Implementierungs-Playbook_.
 
 >[!INFO]
 >
->Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) ein. Dadurch wird sichergestellt, dass keine Datenbanksperren auftreten.
+>Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) ein. Dadurch wird sichergestellt, dass keine Datenbanksperren auftreten.
 
 So legen Sie die Indexerkonfiguration fest:
 
