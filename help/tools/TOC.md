@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
+source-git-commit: ec7907a22a00f5c398c8ddc39d56c05c4bcbe175
 workflow-type: tm+mt
-source-wordcount: '7802'
+source-wordcount: '7817'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Quality Patches Tool {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
    - Im Quality Patches Tool verfügbare Patches {#patches-available-in-qpt}
@@ -804,6 +804,7 @@ ht-degree: 0%
          - [ACP2E-3841: Die Warenkorb-Preisregeln für Produkte mit mehreren Versandarten gelten nicht korrekt, wenn Subselect-Bedingungen verwendet werden und der kostenlose Versand aktiviert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
       - v1.1.65 {#v1-1-65}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.65](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview.md)
+         - [ACSD-64118: Gleichzeitige Produktspeicherungsanfragen für dasselbe Produkt führen zu Dateninkonsistenz und doppelten Einträgen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64118-concurrent-product-save-requests-for-same-product-cause-data-inconsistency-and-duplicate-entries.md)
          - [ACSD-65254: E-Mail-Benachrichtigung wird nach der Aktualisierung der Kunden-E-Mail über updateCustomerEmail. [!DNL GraphQL]  nicht gesendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65254-email-notification-not-sent-after-updating-customer-email-via-updatecustomeremail-graphql-mutation.md)
          - [ACSD-64813: Die Zuweisung von Kategorien im freigegebenen  [!DNL B2B]  über die REST-API ist langsam](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64813-unassigning-categories-in-b2b-shared-catalog-via-rest-api-is-slow.md)
          - [ACSD-65822: Bundle- und konfigurierbare Produktmengen werden in der [!UICONTROL Shopping Cart] nicht korrekt angezeigt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65822-bundle-and-configurable-product-quantities-not-reflected-correctly-in-shopping-cart.md)
@@ -861,6 +862,6 @@ ht-degree: 0%
       - [Daten, die manuell migriert werden müssen](data-migration-tool/migrate-data/manual.md)
       - [Schritte nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
    - Ressourcen {#resources}
-      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=de)
+      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
