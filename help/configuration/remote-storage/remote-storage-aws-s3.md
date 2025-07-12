@@ -3,9 +3,9 @@ title: AWS S3-Bucket für Remote-Speicher konfigurieren
 description: Konfigurieren Sie Ihr Commerce-Projekt für die Verwendung des AWS S3-Speicher-Services für die Remote-Speicherung.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ Der [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicher-S
 >[!WARNING]
 >
 >Adobe rät dringend von der Verwendung öffentlicher Behälter ab, da dies ein ernstes Sicherheitsrisiko darstellt.
+>
+>Bei Verwendung eines vom Kunden bereitgestellten S3-Buckets für Asset- oder Medienspeicher ist Adobe nicht verantwortlich für Probleme, Datenverluste oder Ausfälle im Zusammenhang mit der Konfiguration, Verwaltung oder dem Betrieb des S3-Buckets und bietet auch keinen Support dafür. Die Fehlerbehebung und Wartung des S3-Buckets liegt in der alleinigen Verantwortung des Kunden.
 
 **So aktivieren Sie die Remote-Speicherung mit dem AWS S3-Adapter**:
 
