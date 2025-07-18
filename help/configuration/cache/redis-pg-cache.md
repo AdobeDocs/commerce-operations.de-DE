@@ -3,9 +3,9 @@ title: Redis für Standard-Cache verwenden
 description: Erfahren Sie, wie Sie Redis als Standard-Cache für Adobe Commerce konfigurieren.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Mit den folgenden Parametern:
 | `cache-backend-redis-port` | Port | Redis-Server-Listener-Port | `6379` |
 | `cache-backend-redis-db` | Datenbank | Erforderlich, wenn Sie Redis sowohl für den Standard- als auch für den Vollseiten-Cache verwenden. Sie müssen die Datenbanknummer eines der Caches angeben; der andere Cache verwendet standardmäßig 0.<br><br>**Wichtig**: Wenn Sie Redis für mehr als einen Caching-Typ verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer 0, die Seitencaching-Datenbanknummer 1 und die Sitzungsspeicher-Datenbanknummer 2 zuzuweisen. | `0` |
 | `cache-backend-redis-password` | Passwort | Die Konfiguration eines Redis-Kennworts ermöglicht eine der integrierten Sicherheitsfunktionen: den `auth`-Befehl, für den sich Clients authentifizieren müssen, um auf die Datenbank zuzugreifen. Das Passwort wird direkt in der Redis-Konfigurationsdatei konfiguriert: `/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | Aktivieren oder Deaktivieren von LUA. <br><br>**LUA**: Mit Lua können wir einen Teil der Anwendungslogik in Redis ausführen, die Leistung verbessern und die Datenkonsistenz durch ihre atomare Ausführung sicherstellen. | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Aktivieren oder deaktivieren Sie LUA für die Speicherbereinigung. <br><br>**LUA**: Mit Lua können wir einen Teil der Anwendungslogik in Redis ausführen, die Leistung verbessern und die Datenkonsistenz durch ihre atomare Ausführung sicherstellen. | `1` |
 
 ### Beispielbefehl
 
