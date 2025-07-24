@@ -1,7 +1,7 @@
 ---
-source-git-commit: 30f4a7cf8ff93d559ff2f78c623df88260197683
+source-git-commit: eb6f99520b485d54ba5e44734d5979282f6d965f
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Highlights in v2.4.9-alpha1
 
-Die folgenden 9 Highlights gelten für die Magento Open Source-Version 2.4.9-alpha1.
+Die folgenden Highlights gelten für die Magento Open Source-Version 2.4.9-alpha1.
 
 ### Admin-Benutzeroberfläche
 
