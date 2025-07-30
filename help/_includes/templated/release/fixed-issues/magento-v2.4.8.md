@@ -1,5 +1,5 @@
 ---
-source-git-commit: 92907752d92cd7f4a81377a5239dfded10fe3655
+source-git-commit: 1f377ab6e4dcdd2d350366f3889b8befd233474b
 workflow-type: tm+mt
 source-wordcount: '25720'
 ht-degree: 0%
@@ -470,7 +470,7 @@ Der Befehl `bin/magento i18n:collect-phrases -o` erfasst und fügt nun neue Ausd
 
 _AC-9843 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0c53bbf7)_
 
-#### Apostroph im Namen der Store-Ansicht wird durch &quot;&#039;“ ersetzt
+#### Apostroph im Namen der Store-Ansicht wird durch &quot;&amp;#039;“ ersetzt
 
 Die Store-View-Filter des Rasters zeigen jetzt korrekt Apostrophe an
 
@@ -1878,7 +1878,7 @@ Das System hält sich jetzt an den Kodierungsstandard, indem es das verbotene `@
 
 _AC-8356 - [GitHub-Problem](https://github.com/magento/magento2/issues/37250) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37000)_
 
-#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[&lbrace;composer,auth&rbrace;.json]` unterbrochen.
+#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[{composer,auth}.json]` unterbrochen.
 
 Nach der Behebung eines Syntaxfehlers in editorconfig wendet das System jetzt einen Einzug mit vier Leerzeichen korrekt auf die Dateien composer und auth.json an. Aufgrund eines Leerzeichens in der EditorConfig-Syntax wurden diese Dateien zuvor falsch mit einem Einzug aus zwei Leerzeichen formatiert.
 
@@ -2022,7 +2022,7 @@ Das Problem wurde behoben, nachdem die Prüfung bei der Anforderung einer Produk
 
 _ACP2E-2653 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### GraphQL-Produktanruf, der den Preisfilter enthält `&lbrace;from:&quot;0&quot;&rbrace;` kein Ergebnis zurückgibt
+#### GraphQL-Produktanruf, der den Preisfilter enthält `{from:&quot;0&quot;}` kein Ergebnis zurückgibt
 
 Zuvor gab GraphQL-Produkte, die mit dem Filter nach Nullpreisen suchten, aufgrund einer ausgelösten Ausnahme überhaupt keine Ergebnisse zurück. Jetzt gibt die Suche die erwarteten Ergebnisse zurück.
 
@@ -2559,8 +2559,8 @@ _LYNX-382_
 
 Es wurde ein Problem behoben, bei dem beim Hinzufügen eines einfachen Produkts (Teil eines gruppierten Produkts) zum Warenkorb ein Platzhalter-Miniaturbild zurückgegeben wurde, selbst wenn dem Produkt ein Bild zugewiesen war.
 Fehlerbehebungsdetails:
-* Die Produktminiatur zeigt nun das zugewiesene Bild, sofern verfügbar, korrekt an.
-* Die Auswahl der Miniaturen berücksichtigt die Admin-Konfiguration unter:
+- Die Produktminiatur zeigt nun das zugewiesene Bild, sofern verfügbar, korrekt an.
+- Die Auswahl der Miniaturen berücksichtigt die Admin-Konfiguration unter:
 Stores > Konfiguration > Verkauf > Checkout > Warenkorb > Gruppiertes Produktbild.
 Dadurch wird ein konsistentes Verhalten von Miniaturansichten für gruppierte Produkte basierend auf Store-Einstellungen sichergestellt.
 
@@ -2582,8 +2582,8 @@ _LYNX-402_
 
 Es wurde ein Problem behoben, bei dem das Attribut only_x_left_in_stock bei Verwendung der übergeordneten SKU mit Optionen immer 0 für konfigurierbare Produkte zurückgab.
 Fehlerbehebungsdetails:
-* Der Wert only_x_left_in_stock spiegelt nun genau den Bestand der ausgewählten untergeordneten Variante statt der übergeordneten SKU wider.
-* Dadurch wird sichergestellt, dass die Lagerbestände für konfigurierbare Produktvarianten auf den Warenkorb- und Produktseiten korrekt angezeigt werden.
+- Der Wert only_x_left_in_stock spiegelt nun genau den Bestand der ausgewählten untergeordneten Variante statt der übergeordneten SKU wider.
+- Dadurch wird sichergestellt, dass die Lagerbestände für konfigurierbare Produktvarianten auf den Warenkorb- und Produktseiten korrekt angezeigt werden.
 
 _LYNX-403_
 
@@ -2641,7 +2641,7 @@ Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation bei Verwend
 
 _LYNX-469_
 
-#### Produktattribut > Marken-Kurzform &trade; wird als &trade; zurückgegeben
+#### Produktattribut > Marken-Kurzform &amp;trade; wird als &amp;trade; zurückgegeben
 
 Es wurde ein Zeichenkodierungsproblem mit dem Produktnamen für die GraphQL-API behoben
 
