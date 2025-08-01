@@ -2,9 +2,9 @@
 title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4cd71d156ef6833185565180b297ba1b7f42a032
+source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
 workflow-type: tm+mt
-source-wordcount: '2791'
+source-wordcount: '2850'
 ht-degree: 0%
 
 ---
@@ -798,6 +798,28 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 |     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit des Product Recommendations-Service | R |   |
+
+{style="table-layout:auto"}
+
+#### Live Search
+
+|     | Adobe | Großhändler |
+| --- | --- | --- |
+| Verfügbarkeit des Live Search-Service | R |   |
+
+{style="table-layout:auto"}
+
+#### Qualität von Storefront-Ereignissen (Datenerfassung) zur Bereitstellung von Produktempfehlungen und Live Search-Ausgaben
+
+|     | Adobe | Großhändler |
+| --- | --- | --- |
+| Kernthema (Luma) | R |   |
+| Benutzerdefiniertes Design |  | R |
+| Zentrale PWA-Implementierung | R |   |
+| Benutzerdefinierte PWA-Implementierung |  | R |
+| Zentrale AEM EDS-Implementierung (Textbaustein für Commerce) | R |   |
+| Benutzerdefinierte AEM EDS-Implementierung |  | R |
+| Jede andere benutzerdefinierte Storefront-Implementierung |  | R |
 
 {style="table-layout:auto"}
 
