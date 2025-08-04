@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: d861e881d430c1182ae719d114d21cbfd98a0109
+source-git-commit: 099985e4ddb4f911dc5106162b96b07a008a9b57
 workflow-type: tm+mt
-source-wordcount: '7913'
+source-wordcount: '7919'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Quality Patches Tool {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
    - Im Quality Patches Tool verfügbare Patches {#patches-available-in-qpt}
@@ -825,6 +825,7 @@ ht-degree: 0%
          - [ACP2E-3918: Checkout-Fehler für Firmenkunden, die die Abholung im Geschäft verwenden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
       - v1.1.67 {#v1-1-67}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
+         - [ACSD-66434: [!UICONTROL Customer ID] fehlt in  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
    - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
    - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
@@ -872,6 +873,6 @@ ht-degree: 0%
       - [Daten, die manuell migriert werden müssen](data-migration-tool/migrate-data/manual.md)
       - [Schritte nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
    - Ressourcen {#resources}
-      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=de)
+      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
