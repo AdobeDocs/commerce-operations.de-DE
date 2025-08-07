@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: f26ada4171197107866c45db7a711bce8be1d18e
+source-git-commit: 6758b85e797de75ea5430062c8335fa903f00838
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ QPT v1.1.67 enthält die folgenden Patches:
 1. **ACSD-66118**: Durch die Aktualisierung des Codes der Store-Ansicht werden die Design-Konfigurationseinstellungen gelöscht, wenn der Konfigurations-Cache nicht aktualisiert wird.
 1. **ACSD-66139**: GraphQL gibt den Fehler „UNDEFINED“ für einen nicht vorhandenen oder inaktiven Warenkorb während der Bestellplatzierung zurück.
 1. **ACSD-66301**: Wenn Sie Produkte aus einer Bestellung zurück in den Warenkorb in „Admin“ verschieben, führt dies zu einer Mengenabweichung.
-1. **[ACSD-66434](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)**: Kunden-ID fehlt in den GraphQL-Abfragen des Unternehmens.
-1. **ACSD-66441**: Falsche Indexdaten in der mehrschichtigen Navigation für konfigurierbare Produkte in Multi-Store-Setups.
+1. **ACSD-66434**: Kunden-ID fehlt in den GraphQL-Abfragen des Unternehmens.
+1. **ACSD-66441**: Die mehrschichtige Navigation zeigt falsche Attributoptionen bei der Einrichtung mehrerer Stores an.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
