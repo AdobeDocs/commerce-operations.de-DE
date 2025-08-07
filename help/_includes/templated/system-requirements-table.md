@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6c7feee0cd23d397c40bb66593a79b59ac2f620a
+source-git-commit: ef74d5b3ff36795e64a5fa92db017d1c2bc4ad84
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 51%
@@ -116,8 +116,8 @@ ht-degree: 51%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
-      <th>2,4,8</th>
       <th>2.4.8-p1</th>
+      <th>2,4,8</th>
     </tr>
   </thead>
   <tbody>
@@ -187,10 +187,10 @@ ht-degree: 51%
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7,6
+          7,7
       </td>
       <td>
-          7,7
+          7,6
       </td>
     </tr>
     <tr>
