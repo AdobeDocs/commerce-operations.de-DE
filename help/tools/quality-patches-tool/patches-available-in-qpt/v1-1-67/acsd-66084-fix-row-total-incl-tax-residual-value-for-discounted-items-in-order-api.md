@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-66084: `row_total_incl_tax` gibt für vollständig reduzierte Elemente in der Antwort der Auftrags-API einen Restwert von nahezu 0,00 anstelle von 0,00 zurück'
+title: 'ACSD-66084: &grave;row_total_incl_tax&grave; gibt für vollständig reduzierte Elemente in der Antwort der Auftrags-API einen Restwert von nahezu 0,00 anstelle von 0,00 zurück'
 description: Wenden Sie den Patch ACSD-66084 an, um das Adobe Commerce-Problem zu beheben, bei dem „row_total_incl_tax“ für vollständig reduzierte Elemente in der Antwort der Auftrags-API als Restwert von nahezu 0,00 zurückgegeben wurde.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
