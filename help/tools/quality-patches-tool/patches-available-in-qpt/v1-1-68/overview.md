@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 0a7fdb3e5a7cb2c61ba54af78fadb524a570e20f
+source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.68 enthält die folgenden Patches:
 1. **ACSD-62415**: Das Adobe Commerce-Backend lädt Kategorien sehr langsam.
 1. **ACSD-65938**: E-Mails zu Geschenkkarten wurden auch dann gesendet, wenn die Erstellung der Rechnung fehlgeschlagen war.
 1. **ACSD-66072**: Verwandte Produkte werden aufgrund eines internen Server-Fehlers bei der [!UICONTROL Related Products Rule] nicht über GraphQL auf der Produktdetailseite zurückgegeben.
-1. **ACSD-66082**: Das Farbfeldbild eines Produkts kann nicht durch einen Produktimport aktualisiert werden.
+1. **ACSD-66082**: Das Musterbild eines Produkts kann nicht durch einen Produktimport aktualisiert werden.
 1. **ACSD-66179**: Eine Stornierung einer Rechnung mit dem Zahlungstyp „Nicht erfasst“ führt zu einer 404-Fehlerseite.
 1. **ACSD-66233**: Administratoren können aufgrund eines nicht reagierenden Popup-Fensters in der Produktliste keine Produkte hinzufügen.
 1. **ACSD-66506**: Backend-Fehler trat auf, wenn zuvor zugewiesene Produkte eines freigegebenen Katalogs gelöscht und neue zugewiesen wurden.
