@@ -1,5 +1,5 @@
 ---
-source-git-commit: 703a3fdcfaa07a2821a7c0a92c94f3cff92bcf74
+source-git-commit: 83ffd9ff04cff0500af5faed18750dd9abba6678
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 48%
@@ -279,7 +279,7 @@ ht-degree: 48%
           7,7
       </td>
       <td>
-          7,6
+          7,7
       </td>
       <td>
           7,6
