@@ -3,7 +3,7 @@ title: Konfigurieren des Programms
 description: Erfahren Sie mehr über die Konfiguration nach der Installation, die für lokale Adobe Commerce-Bereitstellungen erforderlich ist.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
+source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Weitere Informationen zu cron, einschließlich der Entfernung eines crontab und 
 
 Nach der Installation empfehlen wir Folgendes:
 
-* Stellen Sie sicher, dass Ihr Dateieigentum und Ihre Berechtigungen ordnungsgemäß festgelegt sind
+* Stellen Sie sicher, dass Ihr Dateieigentümerstatus und Ihre Berechtigungen [ordnungsgemäß](../prerequisites/file-system/configure-permissions.md)
 * Es wird dringend empfohlen[ den standardmäßigen Admin-URI ](../tutorials/admin-uri.md)`admin` zu ändern
 * Stellen Sie sicher, dass der [`X-Frame-Option` HTTP](../../configuration/security/xframe-options.md)Header ordnungsgemäß festgelegt ist.
 * Treffen Sie Vorkehrungen gegen Cross-Site-Scripting (XSS), indem Sie [Ihre Vorlagen schützen](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
@@ -65,7 +65,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 >
 >* Starterumgebungen haben keine Protokollrotation.
 >
->* Sie können die Protokollrotation in Pro Integration-Umgebungen nicht konfigurieren. Sie müssen eine benutzerdefinierte Lösung/ein benutzerdefiniertes Skript implementieren und [Ihren Cron konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property), um das Skript nach Bedarf auszuführen.
+>* Sie können die Protokollrotation in Pro Integration-Umgebungen nicht konfigurieren. Sie müssen eine benutzerdefinierte Lösung/ein benutzerdefiniertes Skript implementieren und [Ihren Cron konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property), um das Skript nach Bedarf auszuführen.
 
 ### iptables-Regeln einrichten, um verschiedenen Services die Kommunikation zu ermöglichen
 
