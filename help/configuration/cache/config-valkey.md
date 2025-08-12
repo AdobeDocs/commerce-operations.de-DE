@@ -2,9 +2,10 @@
 title: Konfigurieren von Valley
 description: Verschaffen Sie sich einen Überblick über die Funktionen von Valley und starten Sie Ihre Valley-Konfiguration.
 feature: Configuration, Cache
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
+source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Informationen zum Installieren und Konfigurieren der Valley-Software finden Sie 
 
 ## Einrichten der Valley-Konfiguration
 
-Abhängig von Ihrer Installation finden Sie Ihre Valkey-Konfiguration in der Regel entweder in `/etc/valkey/valkey.conf` oder `/etc/valkey/<port>.conf`.
+Abhängig von Ihrer Installation finden Sie Ihre Valkey-Konfiguration in der Regel entweder in der `/etc/valkey/valkey.conf`-Datei oder in der `/etc/valkey/<port>.conf`-Datei.
 
 Um die Valkey-Instanz für Ihre Anforderungen zu optimieren, können Sie die besten Ergebnisse erzielen, indem Sie für jede Sitzung eine dedizierte Instanz, Commerce-Cache und FPC verwenden.
 
