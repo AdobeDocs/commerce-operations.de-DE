@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: d025c8a6e451ff41ec4b50cf633927e52b9429f0
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.67 enthält die folgenden Patches:
 1. **AC-14984**: SSL-Verbindungsproblem mit php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935**: `customerOrders` GraphQL-Abfrage hat beim Löschen eines Produkts einen internen Server-Fehler zurückgegeben.
 1. **ACSD-66049**: Nicht-englische Storefronts zeigen aufgrund der ICU-Bibliotheksversion falsche Preise an.
-1. **ACSD-66084**: `row_total_incl_tax` gibt bei vollständig reduzierten Elementen in der API-Antwort der Bestellung einen Restwert von nahezu null zurück statt 0,00.
+1. **ACSD-66084**: `row_total_incl_tax` gibt bei vollständig reduzierten Artikeln in der Reihenfolge-API fast null statt 0,00 zurück.
 1. **ACSD-66118**: Durch die Aktualisierung **[!UICONTROL Store View]** Codes werden **[!UICONTROL Design Configuration]** Einstellungen gelöscht, wenn der Konfigurations-Cache nicht aktualisiert wird.
 1. **ACSD-66139**: GraphQL gibt den Fehler „UNDEFINED“ für einen nicht vorhandenen oder inaktiven Warenkorb während der Bestellplatzierung zurück.
 1. **ACSD-66301**: Die Verschiebung von Produkten aus einer Bestellung in den Warenkorb in Commerce Admin führt zu einer Mengenabweichung.
