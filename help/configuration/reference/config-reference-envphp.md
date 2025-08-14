@@ -2,9 +2,9 @@
 title: env.php-Referenz
 description: Siehe eine Werteliste für die env.php-Datei.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
+source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -112,11 +112,11 @@ Geben Sie an, ob Verbraucher weiterhin Nachrichten abfragen sollen, wenn die Anz
 
 Die folgenden Optionen sind verfügbar:
 
-- `1` - Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis der in der `env.php` angegebene `max_messages` erreicht ist, bevor sie die TCP-Verbindung schließen und den Verbraucherprozess beenden. Wenn die Warteschlange geleert wird, bevor der `max_messages` erreicht wird, wartet der Verbraucher, bis weitere Nachrichten eingehen.
+- `1` - Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis der in der `max_messages` angegebene `env.php` erreicht ist, bevor sie die TCP-Verbindung schließen und den Verbraucherprozess beenden. Wenn die Warteschlange geleert wird, bevor der `max_messages` erreicht wird, wartet der Verbraucher, bis weitere Nachrichten eingehen.
 
   Wir empfehlen diese Einstellung für große Händler, da ein konstanter Nachrichtenfluss erwartet wird und Verzögerungen bei der Verarbeitung unerwünscht sind.
 
-- `0` - Verbraucher verarbeiten verfügbare Nachrichten in der Warteschlange, schließen die TCP-Verbindung und beenden sie. Verbraucher warten nicht auf den Eintritt zusätzlicher Nachrichten in die Warteschlange, selbst wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als der in der `env.php` angegebene `max_messages`. Dadurch können Probleme mit Cron-Aufträgen vermieden werden, die durch lange Verzögerungen bei der Verarbeitung der Nachrichtenwarteschlange verursacht werden.
+- `0` - Verbraucher verarbeiten verfügbare Nachrichten in der Warteschlange, schließen die TCP-Verbindung und beenden sie. Verbraucher warten nicht auf den Eintritt zusätzlicher Nachrichten in die Warteschlange, selbst wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als der in der `max_messages` angegebene `env.php`. Dadurch können Probleme mit Cron-Aufträgen vermieden werden, die durch lange Verzögerungen bei der Verarbeitung der Nachrichtenwarteschlange verursacht werden.
 
   Wir empfehlen diese Einstellung kleineren Händlern, die keinen konstanten Nachrichtenfluss erwarten und lieber Computing-Ressourcen sparen möchten, im Gegenzug für kleinere Verarbeitungsverzögerungen, wenn tagelang keine Nachrichten verfügbar sein könnten.
 
@@ -146,7 +146,7 @@ Commerce verwendet einen Verschlüsselungsschlüssel zum Schutz von Kennwörtern
 ]
 ```
 
-Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
+Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
 
 ## dB
 
@@ -181,7 +181,7 @@ Definiert die Standardverbindung für Nachrichtenwarteschlangen. Der Wert kann `
 ```
 
 Wenn `queue/default_connection` in der `env.php` angegeben ist, wird diese Verbindung für alle Meldungswarteschlangen im System verwendet, es sei denn, eine bestimmte Verbindung ist in einer `queue_topology.xml`-, `queue_publisher.xml`- oder `queue_consumer.xml` definiert.
-Wenn `queue/default_connection` beispielsweise in `env.php` `amqp` ist, aber in den XML-Dateien der Warteschlangenkonfiguration eines Moduls eine `db` angegeben ist, verwendet das Modul MySQL als Nachrichtenbroker.
+Wenn `queue/default_connection` beispielsweise in `amqp` `env.php` ist, aber in den XML-Dateien der Warteschlangenkonfiguration eines Moduls eine `db` angegeben ist, verwendet das Modul MySQL als Nachrichtenbroker.
 
 ## Verzeichnisse
 
@@ -203,7 +203,7 @@ Eine Liste der in diesem Knoten verfügbaren herunterladbaren Domains. Zusätzli
 ]
 ```
 
-Weitere Informationen zu &quot;[ Domains](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Weitere Informationen zu &quot;[ Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installieren
 
@@ -347,6 +347,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## Überschreiben der Dateikonfiguration mit Variablen
 
 Um die vorhandenen `env.php`-Konfigurationsoptionen mit einer BS-Umgebungsvariablen zu überschreiben, muss das Array-Element der Konfiguration JSON-kodiert sein und als Wert der `MAGENTO_DC__OVERRIDE` OS-Variablen festgelegt sein.
+
+Wenn `MAGENTO_DC__OVERRIDE` festgelegt ist, umgeht das Commerce-Framework die entsprechenden Werte in der `env.php` und liest die Konfiguration direkt aus der Umgebungsvariablen. Die Werte in der `env.php` bleiben unverändert, werden aber für die überschriebenen Konfigurationsabschnitte ignoriert.
+
+>[!IMPORTANT]
+>
+>Die `MAGENTO_DC__OVERRIDE`-Variable umgeht die angegebenen Konfigurationsabschnitte in der `env.php`-Datei vollständig. Dieses Verhalten unterscheidet sich von einzelnen `MAGENTO_DC_`, die eine niedrigere Priorität als Werte in der `env.php` haben.
 
 Wenn Sie mehrere Konfigurationsoptionen überschreiben müssen, stellen Sie sie alle in einem einzigen Array zusammen, bevor Sie JSON-Codierung verwenden.
 
