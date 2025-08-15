@@ -38,4 +38,4 @@ Händler und Partner, die die Performance ihrer Adobe Commerce-Site optimieren u
 
 In diesem Video erfahren Sie mehr über [!DNL Observation for Adobe Commerce]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344444?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3411350?quality=12&captions=ger)

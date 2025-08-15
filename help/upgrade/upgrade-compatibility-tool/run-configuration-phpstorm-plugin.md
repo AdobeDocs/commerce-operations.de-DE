@@ -21,4 +21,4 @@ Sie können die [!DNL Upgrade Compatibility Tool] mit einer Ausführungskonfigur
 
 In diesem Video erfahren Sie mehr über die [!DNL Magento PHPStorm plugin]:
 
->[!VIDEO](https://video.tv.adobe.com/v/340150?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3409512?quality=12&captions=ger)
