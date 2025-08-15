@@ -54,6 +54,6 @@ Weitere Informationen zu Beitragsstandards finden [ unter ](https://developer.ad
 In den folgenden Ressourcen finden Sie Informationen zu Adobe Commerce-Upgrades:
 
 - Das [Upgrade-Handbuch](../overview.md) bietet einen Überblick über die typische Adobe Commerce-Upgrade-Journey und Best Practices, die auf dieser Journey befolgt werden sollten.
-- Die [bevorstehende Versionen](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) enthält die Daten für geplante und bevorstehende Versionen.
+- Die [bevorstehende Versionen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) enthält die Daten für geplante und bevorstehende Versionen.
 - Die [Community-Ressourcen](https://developer.adobe.com/commerce/contributor/community/)-Seite ist der Ort, um Diskussionen zu beginnen oder mehr Informationen zu finden.
 - Auf der Seite [Verwandte Tools](../upgrade-compatibility-tool/related-tools.md) finden Sie hilfreiche Tools auf Ihrer typischen Upgrade-Journey.

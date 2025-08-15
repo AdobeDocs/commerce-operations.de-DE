@@ -33,7 +33,7 @@ Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihr
 
 >[!NOTE]
 >
->Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+>Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=de#supported-software-and-services).
 
 ## Überprüfen, ob eine unterstützte Suchmaschine installiert ist
 

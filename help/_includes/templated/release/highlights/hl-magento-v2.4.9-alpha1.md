@@ -59,6 +59,6 @@ _AC-13258_
 
 ### Sicherheit
 
-Die neuesten Informationen zu Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
+Die neuesten Informationen zu Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-71](https://helpx.adobe.com/de/security/products/magento/apsb25-71.html).
 
 {{$include /help/_includes/release-notes/highlights/security-2025-06.md}}

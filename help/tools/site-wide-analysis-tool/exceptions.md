@@ -27,4 +27,4 @@ Auf der Seite &quot;[!UICONTROL Exceptions]&quot; werden Protokolldateifehler-/A
 
 ## Best Practices
 
-Überwachen Sie die Seite [!DNL Site-Wide Analysis Tool’s]-[!UICONTROL Exceptions] , um zu sehen, welche Ausnahmen auftreten. Weitere Informationen finden Sie unter [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
+Überwachen Sie die Seite [!DNL Site-Wide Analysis Tool’s]-[!UICONTROL Exceptions] , um zu sehen, welche Ausnahmen auftreten. Weitere Informationen finden Sie unter [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.

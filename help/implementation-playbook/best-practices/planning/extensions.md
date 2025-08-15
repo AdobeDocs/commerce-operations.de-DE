@@ -36,5 +36,5 @@ Adobe Commerce-Erweiterungen (Module) von Drittanbietern können verschiedene Pr
 
 - [Best Practices für die Planung von Upgrades](../../../upgrade/prepare/best-practices.md)
 - Verwenden von Erweiterungen von Drittanbietern mit Adobe Commerce in der Cloud-Infrastruktur
-   - [Technologien und Anforderungen - Entwicklung und Testen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Warum sollten Sie die Integration und das Staging vollständig testen?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [Technologien und Anforderungen - Entwicklung und Testen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Warum sollten Sie die Integration und das Staging vollständig testen?](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

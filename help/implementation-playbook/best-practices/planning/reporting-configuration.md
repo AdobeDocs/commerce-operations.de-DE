@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Best Practices für die Berichtskonfiguration
 
-Wenn Ihr Unternehmen keine Reporting- oder dynamischen Kundensegmentfunktionen benötigt, deaktivieren Sie die [Reporting-Funktionen](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/reports) um die Store-Leistung zu verbessern.
+Wenn Ihr Unternehmen keine Reporting- oder dynamischen Kundensegmentfunktionen benötigt, deaktivieren Sie die [Reporting-Funktionen](https://experienceleague.adobe.com/de/docs/commerce-admin/config/general/reports) um die Store-Leistung zu verbessern.
 
 ## Betroffene Produkte und Versionen
 
@@ -32,5 +32,5 @@ Wenn Sie die Berichte oder dynamischen Kundensegmente nicht verwenden, deaktivie
 
 ## Weitere Informationen
 
-- [Erstellen von Berichten in Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu)
-- [Dynamische Kundensegmente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/segments/customer-segments)
+- [Erstellen von Berichten in Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/reports-menu)
+- [Dynamische Kundensegmente](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/segments/customer-segments)

@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Best Practices: Workflow für die Inhaltserstellung
 
-In diesem Dokument wird der Benutzer-Workflow zum Anfordern von Änderungen oder Ergänzungen des *[Best Practices] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html*-Inhalts im *Adobe Commerce-Implementierungs-Playbook* beschrieben.
+In diesem Dokument wird der Benutzer-Workflow zum Anfordern von Änderungen oder Ergänzungen des *[Best Practices] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=de*-Inhalts im *Adobe Commerce-Implementierungs-Playbook* beschrieben.
 
 ## Wer kann eine Anfrage erstellen?
 
@@ -35,13 +35,13 @@ Sie können die folgenden Arten von Anfragen senden:
 
 Wenn eine Anfrage nicht genügend Informationen enthält, fordert das Team vom Antragsteller zusätzliche Informationen an. Wenn der Antragsteller nicht innerhalb von 14 Tagen antwortet, schließt das Team die Anfrage.
 
-**Erstellen oder Aktualisieren von Inhalten** Die Erstellung von Inhalten wird gemäß dem Prozess abgeschlossen, der im [Adobe Experience League Contributor Guide“ ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Je nach Anfrage kann die Konvertierung neuen Inhalts in Markdown, die Erstellung eines Themas oder die Aktualisierung eines vorhandenen Themas die Aufgabe sein.
+**Erstellen oder Aktualisieren von Inhalten** Die Erstellung von Inhalten wird gemäß dem Prozess abgeschlossen, der im [Adobe Experience League Contributor Guide“ ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de). Je nach Anfrage kann die Konvertierung neuen Inhalts in Markdown, die Erstellung eines Themas oder die Aktualisierung eines vorhandenen Themas die Aufgabe sein.
 
-**Inhaltsüberprüfung, -validierung und -veröffentlichung**-Inhalte werden während der Themenerstellung oder -aktualisierung mit (GitHub[Pull-Anfragen) ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). Alle Inhalte müssen einer redaktionellen Überprüfung unterzogen werden. Die technische Überprüfung ist optional und vom Inhalt abhängig. Wenn keine technische Überprüfung erforderlich ist, wird der Prozess nur mit einer redaktionellen Überprüfung fortgesetzt. Dieser Prozess kann mehrere Iterationen dauern, bis der Inhalt genehmigt wird.
+**Inhaltsüberprüfung, -validierung und -veröffentlichung**-Inhalte werden während der Themenerstellung oder -aktualisierung mit (GitHub[Pull-Anfragen) ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=de#pull-requests). Alle Inhalte müssen einer redaktionellen Überprüfung unterzogen werden. Die technische Überprüfung ist optional und vom Inhalt abhängig. Wenn keine technische Überprüfung erforderlich ist, wird der Prozess nur mit einer redaktionellen Überprüfung fortgesetzt. Dieser Prozess kann mehrere Iterationen dauern, bis der Inhalt genehmigt wird.
 
 Nachdem ein Artikel genehmigt wurde, kann die Pull-Anforderung mit der Produktionsverzweigung zusammengeführt werden. Das Zusammenführen sollte durch den Autor erfolgen. Nachdem ein Thema zusammengeführt wurde, kann es sofort mithilfe eines manuellen Prozesses oder automatisch bei der nächsten Ausführung des Veröffentlichungsauftrags in der Produktion veröffentlicht werden. Veröffentlichungsaufträge werden in der Regel alle zwei Stunden ausgeführt.
 
-**Neue Inhaltsbenachrichtigung**-Adobe bietet einen Abschnitt *Neue Funktionen* zum Thema [Übersicht über Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en), um Benutzende über kürzlich veröffentlichte oder aktualisierte Themen zu informieren. Adobe wird auch neue Best Practices für Inhalte mithilfe bestehender Kanäle wie Marketing und interne Kommunikation bekannt machen.
+**Neue Inhaltsbenachrichtigung**-Adobe bietet einen Abschnitt *Neue Funktionen* zum Thema [Übersicht über Best Practices](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=de), um Benutzende über kürzlich veröffentlichte oder aktualisierte Themen zu informieren. Adobe wird auch neue Best Practices für Inhalte mithilfe bestehender Kanäle wie Marketing und interne Kommunikation bekannt machen.
 
 ## Backlog und Kanban-Board
 

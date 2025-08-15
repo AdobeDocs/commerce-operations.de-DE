@@ -21,5 +21,5 @@ Das Commerce-Programm stellt die folgenden Cron-Gruppen bereit:
 - `index`, der &quot;[&quot; ](../cli/manage-indexers.md)
 - `consumers`, der die Nachrichtenwarteschlange ([) ](../cli/start-message-queues.md)
 - Diese Themen sind nur in Adobe Commerce verfügbar
-   - `staging`, der [Staging-bezogene) ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) ausführt
+   - `staging`, der [Staging-bezogene) ](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/staging/content-staging) ausführt
    - `catalog_event` führt Aufgaben für Target- und Warenkorbregeln aus

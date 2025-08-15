@@ -15,7 +15,7 @@ Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere eCom
 
 ## So erhalten Sie die Software
 
-Informieren Sie sich über die Verfügbarkeit aufregender neuer Funktionen und Releases und erfahren Sie, wie Sie diese auf unserer [Produktverfügbarkeitsseite“ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) können.
+Informieren Sie sich über die Verfügbarkeit aufregender neuer Funktionen und Releases und erfahren Sie, wie Sie diese auf unserer [Produktverfügbarkeitsseite“ ](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) können.
 
 In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten bei der Installation von Adobe Commerce.
 

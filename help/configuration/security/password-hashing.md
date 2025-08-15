@@ -61,4 +61,4 @@ Da Commerce alle verwendeten Passwort-Hash-Versionen zusammen mit dem Passwort-H
 
 ## Implementierung
 
-Die `\Magento\Framework\Encryption\Encryptor`-Klasse ist für die Erzeugung und Verifizierung von Passwort-Hashs verantwortlich. Der Befehl [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) aktualisiert einen Kunden-Passwort-Hash auf den neuesten Hash-Algorithmus.
+Die `\Magento\Framework\Encryption\Encryptor`-Klasse ist für die Erzeugung und Verifizierung von Passwort-Hashs verantwortlich. Der Befehl [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) aktualisiert einen Kunden-Passwort-Hash auf den neuesten Hash-Algorithmus.

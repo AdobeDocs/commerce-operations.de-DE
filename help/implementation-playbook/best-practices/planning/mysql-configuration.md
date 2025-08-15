@@ -48,7 +48,7 @@ Um Leistungsprobleme bei der Verwendung von Triggern zu vermeiden, befolgen Sie 
 
 - Wenn Sie benutzerdefinierte Trigger haben, die einige Daten schreiben, wenn der Trigger ausgeführt wird, verschieben Sie diese Logik stattdessen so, dass sie direkt in die Audit-Tabellen schreibt. Durch Hinzufügen einer zusätzlichen Abfrage im Anwendungscode nach der Abfrage, für die Sie den Trigger erstellen möchten, können Sie dies beispielsweise tun.
 - Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt in die Tabellen auf Anwendungsseite zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung nach vorhandenen Triggern in Ihrer ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [ Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
+- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [ Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de&#submit-ticket).
 
 ## Slave-Verbindungen
 
@@ -62,7 +62,7 @@ Adobe Commerce auf Cloud-Infrastruktur, nur Pro-Architektur
 
 ### Konfiguration
 
-In der Adobe Commerce on Cloud-Infrastruktur können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung überschreiben, indem Sie die Variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) festlegen. Legen Sie diese Variable auf `true` fest, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
+In der Adobe Commerce on Cloud-Infrastruktur können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung überschreiben, indem Sie die Variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#mysql_use_slave_connection) festlegen. Legen Sie diese Variable auf `true` fest, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
 
 **So aktivieren Sie die MySQL-Slave-Verbindung**:
 
