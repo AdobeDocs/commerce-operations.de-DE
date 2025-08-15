@@ -1,7 +1,7 @@
 ---
-source-git-commit: 83ffd9ff04cff0500af5faed18750dd9abba6678
+source-git-commit: f05d9cbab176997260affa270d0ea6e8fc8420b5
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1328'
 ht-degree: 48%
 
 ---
@@ -72,15 +72,6 @@ ht-degree: 48%
       </td>
       <td>
           4,1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6,1
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -247,18 +238,6 @@ ht-degree: 48%
       </td>
       <td>
           4,1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6,1
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -574,33 +553,6 @@ ht-degree: 48%
       </td>
       <td>
           3,13
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6,1
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -1188,48 +1140,6 @@ ht-degree: 48%
       </td>
       <td>
           3,11; 3,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6,1
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -2011,54 +1921,6 @@ ht-degree: 48%
       </td>
       <td>
           3,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6,1
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>

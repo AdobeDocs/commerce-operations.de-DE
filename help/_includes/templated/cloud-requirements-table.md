@@ -1,7 +1,7 @@
 ---
-source-git-commit: a0d64c33fe328d3e9665cc8e20bb160223e6fa81
+source-git-commit: f05d9cbab176997260affa270d0ea6e8fc8420b5
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '547'
 ht-degree: 54%
 
 ---
@@ -59,15 +59,6 @@ ht-degree: 54%
       </td>
       <td>
           4,1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          6,1
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -162,18 +153,6 @@ ht-degree: 54%
       </td>
       <td>
           4,1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -366,33 +345,6 @@ ht-degree: 54%
       </td>
       <td>
           3,12
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -722,48 +674,6 @@ ht-degree: 54%
       </td>
       <td>
           3,11; 3,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
@@ -1161,54 +1071,6 @@ ht-degree: 54%
       </td>
       <td>
           3,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL ActiveMQ]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
