@@ -26,7 +26,7 @@ Um diese Einstellung zu verwalten, bearbeiten Sie den `batchRowsCount` in der `d
 
 Sie können die Indexerleistung anpassen, indem Sie die Variablen für die Batch-Größe des Index anpassen. Dadurch wird gesteuert, wie viele Entitäten gleichzeitig vom Indexer verarbeitet werden. In einigen Situationen haben wir erhebliche Verringerungen bei der Indizierungszeit erlebt.
 
-Wenn Sie beispielsweise ein Profil ausführen, das dem B2B-Medium ähnelt, können Sie den in `app/code/Magento/catalog/etc/di.xml` `batchRowsCount` Konfigurationswert überschreiben und den Standardwert von `5000` bis `1000` überschreiben. Dadurch wird die gesamte Indizierungszeit bei einer standardmäßigen [!DNL MySQL]-Konfiguration von 4 auf 2 Stunden reduziert.
+Wenn Sie beispielsweise ein Profil ausführen, das dem B2B-Medium ähnelt, können Sie den in `batchRowsCount` `app/code/Magento/catalog/etc/di.xml` Konfigurationswert überschreiben und den Standardwert von `5000` bis `1000` überschreiben. Dadurch wird die gesamte Indizierungszeit bei einer standardmäßigen [!DNL MySQL]-Konfiguration von 4 auf 2 Stunden reduziert.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ Um die Indexierungszeit zu verkürzen, können Sie [bestimmte Websites aus Kunde
 
 Manchmal reicht eine Redis-Instanz nicht aus, um eingehende Anfragen zu bedienen. Es gibt mehrere Lösungen, die wir empfehlen können, um diese Situation zu beheben.
 
-Zunächst können Sie mit [!DNL Commerce] für jeden Cache-Typ einen separaten Cache-Speicher konfigurieren. Auf diese Weise können Sie so viele separate Redis-Instanzen installieren wie die Anzahl der Cache-Typen, die auf Magento registriert sind. Realistisch betrachtet empfiehlt es sich, Redis-Instanzen für die am häufigsten verwendeten Caches zu verwenden, z. B. für Konfiguration, Layout und Blöcke.
+Zunächst können Sie mit [!DNL Commerce] für jeden Cache-Typ einen separaten Cache-Speicher konfigurieren. Auf diese Weise können Sie so viele separate Redis-Instanzen installieren wie Cache-Typen, die in Magento registriert sind. Realistisch betrachtet empfiehlt es sich, Redis-Instanzen für die am häufigsten verwendeten Caches zu verwenden, z. B. für Konfiguration, Layout und Blöcke.
 
 Eine andere Lösung kann darin bestehen, den Konfigurations-Cache auf dem Dateisystem zu platzieren und die anderen Caches auf den Redis-Server zu verschieben. Mit dieser Lösung benötigen Sie ein separates Tool zur zentralisierten Invalidierung des Konfigurations-Caches auf allen Ihren Web-Knoten.
 
@@ -92,14 +92,14 @@ bin/magento setup:db-schema:add-slave
 
 Mit diesem Befehl werden Konfigurationsänderungen durchgeführt, die Replikation wird jedoch nicht selbst konfiguriert. Dies sollte manuell geschehen.
 
-Nach dem Aufteilen der Master-Datenbank und dem Einrichten der Slave-Datenbanken regelt [!DNL Commerce] automatisch die Verbindungen zu einer bestimmten Datenbank, wobei Entscheidungen auf der Grundlage der Art der Anfrage (POST, PUT, GET, etc.) und der Datenressource getroffen werden. Wenn [!DNL Commerce] oder seine Erweiterungen Schreibvorgänge für eine GET-Anfrage durchführen, schaltet das System die Verbindung automatisch vom Slave zur Master-Datenbank um. Dies funktioniert genauso wie bei Master-Datenbanken: Sobald Sie mit einer Checkout-bezogenen Tabelle arbeiten, leitet das System alle Abfragen an eine bestimmte Datenbank weiter. In der Zwischenzeit werden alle Katalogabfragen an die Hauptdatenbank gesendet.
+Nach dem Aufteilen der Master-Datenbank und dem Einrichten der Slave-Datenbanken regelt [!DNL Commerce] automatisch die Verbindungen zu einer bestimmten Datenbank, wobei Entscheidungen auf der Grundlage der Art der Anfrage (POST, PUT, GET usw.) und der Datenressource getroffen werden. Wenn [!DNL Commerce] oder seine Erweiterungen Schreibvorgänge für eine GET-Anfrage durchführen, wechselt das System automatisch die Verbindung vom Slave zur Master-Datenbank. Dies funktioniert genauso wie bei Master-Datenbanken: Sobald Sie mit einer Checkout-bezogenen Tabelle arbeiten, leitet das System alle Abfragen an eine bestimmte Datenbank weiter. In der Zwischenzeit werden alle Katalogabfragen an die Hauptdatenbank gesendet.
 
 Weitere Informationen zur Konfiguration und den Vorteilen mehrerer Master/Slave-Konfigurationen finden Sie unter
 [Split-Datenbankleistungslösung](../configuration/storage/multi-master.md).
 
 ## Bereitstellen von Medieninhalten
 
-Magento bietet keine spezielle Integration zur Bereitstellung und Bereitstellung von Medieninhalten. Alle gängigen Ansätze können zusammen im Magento verwendet werden.
+Magento bietet keine spezielle Integration zur Bereitstellung und Bereitstellung von Medieninhalten. In Magento können alle gängigen Ansätze zusammen verwendet werden.
 
 Die einfachste Möglichkeit, Medieninhalte bereitzustellen, besteht darin, sie auf einem [!DNL Varnish]-Server bereitzustellen und zwischenzuspeichern. Bei diesem Ansatz wird entweder von einem freigegebenen Dateisystem zum Speichern von Medieninhalten oder einem dedizierten Server ausgegangen, der auf [!DNL Varnish] verweist.
 

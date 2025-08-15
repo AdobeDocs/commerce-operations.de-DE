@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit den Adobe Commerce-Support-Dienstprogrammen (auch als [Datenerfassung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet) können Benutzende Informationen zur Fehlerbehebung in Ihrem System sammeln, die von unserem Support-Team verwendet werden können.
+Mit den Adobe Commerce-Support-Dienstprogrammen (auch als [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet) können Benutzende Informationen zur Fehlerbehebung in Ihrem System sammeln, die von unserem Support-Team verwendet werden können.
 
 Adobe Commerce verwendet diese Sicherungskopien, auch als &quot;_&quot; bezeichnet_, um Probleme zu analysieren, die Zugriff auf Ihren Code erfordern. Es folgt ein typisches Szenario:
 

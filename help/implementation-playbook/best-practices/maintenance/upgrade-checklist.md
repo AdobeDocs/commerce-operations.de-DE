@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversationen mit Ihrem E-Commerce-Team. Viele Unternehmen arbeiten mit jährlichen Budgets und Roadmaps. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über den Zustand, die Ausrichtung und die Upgrade-Strategie Ihrer Plattform für das Jahr sprechen und auch darüber, wie sie zu den allgemeinen Zielen und KPIs des Unternehmens passt. Stellen Sie bei vierteljährlichen Unterhaltungen sicher, dass der von Ihnen erstellte Jahresplan weiterhin an Ihrer aktuellen Situation oder Ihrem Pivot ausgerichtet ist, falls nicht. Diese Checkliste für den Upgrade-Plan soll Sie bei der Planung und Planung von Adobe Commerce-Upgrades unterstützen, um einen erfolgreichen Upgrade-Prozess während des Jahres sicherzustellen. Diese Checkliste ist für die folgenden Zielgruppen zur jährlichen Planung und vierteljährlichen Überprüfung vorgesehen:
 
-- Director/IT-Manager
+- IT-Leiter/Manager
 - eCommerce-Manager
 - Lösungspartner/Berater
 
@@ -38,7 +38,7 @@ Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversati
 
 ▢ Überprüfen Sie alle aktuellen Erweiterungen und Anpassungen und stellen Sie sicher, dass sie weiterhin benötigt werden, basierend auf den Geschäftsanforderungen.
 
-▢ Ersetzen Sie ggf. Erweiterungen, bei denen die Aktualisierung nicht zuverlässig funktioniert, durch Adobe Commerce-Versionen.
+▢ sollten Sie alle Erweiterungen ersetzen, die nicht über die erforderlichen Kenntnisse verfügen, um mit Adobe Commerce-Versionen auf dem neuesten Stand zu bleiben.
 
 ## Team
 
@@ -58,16 +58,16 @@ Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversati
 
 ## Umfang und Bereitstellungsplanung
 
-▢ Early Access-Aktivitäten
+Early Access-Aktivitäten ▢
 
 - Partner ist an [Beta ](../../../release/beta.md)
 - Überprüfung der Beta-Versionshinweise.
 
 ▢ vereinbaren Budget, Zeitplan und Umfang.
 
-▢ Führen Sie das [Upgrade-Kompatibilitäts-Tool](../../../upgrade/upgrade-compatibility-tool/overview.md) aus
+▢ Ausführen des [Upgrade-Kompatibilitätstools](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ Erwägen Sie die Verwendung des Upgrades, um die vom [Site Wide Analysis Tool“ identifizierten Probleme ](../../../tools/site-wide-analysis-tool/intro.md) beheben.
+▢ sollten das Upgrade verwenden, um Probleme zu beheben, die vom [Site Wide Analysis Tool“ ](../../../tools/site-wide-analysis-tool/intro.md) werden.
 
 ▢ Dokumentabhängigkeiten und alle erforderlichen technischen Änderungen am Stack, wie z. B. PHP- oder Elastic Search-Versionen.
 
@@ -77,7 +77,7 @@ Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversati
 
 ▢ Wartungsfenster planen, wenn Ausfallzeiten erwartet werden.
 
-▢ Überprüfen und bestätigen Sie die Teststrategie. Erwägen Sie die Verwendung des [Test-Frameworks](https://developer.adobe.com/commerce/testing/) von Adobe Commerce oder einer Automatisierungs-Suite eines Drittanbieters.
+▢ Überprüfen und bestätigen Sie die Teststrategie. Erwägen Sie die Verwendung des Adobe Commerce [Test-Frameworks](https://developer.adobe.com/commerce/testing/) oder einer Automatisierungs-Suite eines Drittanbieters.
 
 ▢ Vergewissern Sie sich, dass alle Erweiterungen und Anpassungen kompatibel sind.
 
@@ -87,8 +87,8 @@ Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversati
 
 ▢ Website auf Probleme überwachen - Leistung, Auftragsverarbeitung, Analysen und andere.
 
-▢ Führen Sie eine Adobe Commerce [Sicherheitsüberprüfung](https://account.magento.com/scanner/dashboard/) oder eine Suche nach Sicherheitslücken von Drittanbietern durch und überprüfen Sie potenzielle Sicherheitslücken.
+▢ Führen Sie eine Adobe Commerce [Sicherheitsüberprüfung](https://account.magento.com/scanner/dashboard/) oder eine Suche nach Sicherheitslücken von Drittanbietern durch und überprüfen Sie die potenziellen Sicherheitslücken.
 
-▢ Führen Sie eine Retrospektive mit allen Stakeholdern durch und dokumentieren Sie, was gut gelaufen ist und was nicht und wie verbessert werden kann.
+▢ Führen Sie eine Retrospektive mit allen Stakeholdern durch und dokumentieren Sie, was gut lief und was nicht und wie Sie verbessern können.
 
 ▢ Ändern Sie Ihren Plan für das nächste Upgrade mit den gewonnenen Erfahrungen.

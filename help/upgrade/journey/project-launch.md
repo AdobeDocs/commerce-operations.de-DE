@@ -13,4 +13,4 @@ ht-degree: 0%
 
 Eine gesunde E-Commerce-Site zu unterhalten ist für den Erfolg Ihres Unternehmens genauso wichtig wie der erste Launch. Ein wichtiger Aspekt dabei ist die proaktive Planung und Vorbereitung von Upgrades, die dazu beitragen, dass Ihre Site so reibungslos wie möglich funktioniert.
 
-Wenn Sie in dieser Zeit nicht die richtigen Upgrade-Erwartungen wecken, werden Sie zukünftig unzufrieden sein. Stellen Sie sicher, dass Sie den [Veröffentlichungsintervall](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) kennen und verstehen, und verwenden Sie dieses Handbuch, um zu definieren, wie und wann Sie Upgrades planen sollen.
+Wenn Sie in dieser Zeit nicht die richtigen Upgrade-Erwartungen wecken, werden Sie zukünftig unzufrieden sein. Stellen Sie sicher, dass Sie den [Veröffentlichungsintervall](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) kennen und verstehen, und verwenden Sie dieses Handbuch, um zu definieren, wie und wann Sie Upgrades planen sollen.

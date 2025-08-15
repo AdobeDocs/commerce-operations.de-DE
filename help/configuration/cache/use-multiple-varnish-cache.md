@@ -32,6 +32,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 
 Sie können dann alle Varnish-Hosts bereinigen, wenn Sie den Commerce-Cache (auch als _bezeichnet)_ Admin aktualisieren oder die Befehlszeile verwenden.
 
-Um den Cache mithilfe der Admin zu aktualisieren, klicken Sie auf **SYSTEM** > Tools **Cache-Verwaltung** und dann oben auf der Seite auf **Leeren des Magento-** Cache. (Sie können auch einzelne Cache-Typen aktualisieren.)
+Um den Cache mithilfe der Admin zu aktualisieren, klicken Sie auf **SYSTEM** > Tools **Cache-Verwaltung** und dann oben auf der Seite **Magento-** leeren). (Sie können auch einzelne Cache-Typen aktualisieren.)
 
 Um den Cache mehrerer Varnish-Instanzen von der CLI zu aktualisieren, verwenden Sie den [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)-Befehl als [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).

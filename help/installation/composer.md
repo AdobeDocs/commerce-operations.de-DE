@@ -23,7 +23,7 @@ Adobe verwendet [Composer](https://getcomposer.org/) um Adobe Commerce-Komponent
 
 >[!NOTE]
 >
->Entwickler, die zur Magento Open Source beitragen, sollten die [Git-basierte](https://developer.adobe.com/commerce/contributor/guides/install/) Installationsmethode verwenden.
+>Entwickler, die zu Magento Open Source beitragen, sollten die [Git-basierte](https://developer.adobe.com/commerce/contributor/guides/install/) Installationsmethode verwenden.
 
 ## Voraussetzungen
 
@@ -89,11 +89,11 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Geben Sie nach Aufforderung Ihre Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden von [Commerce Marketplace - Zugriffsschlüssel](https://commercemarketplace.adobe.com/customer/account/login/) erstellt und konfiguriert. Kopieren Sie für die `[!UICONTROL username]` den Wert des öffentlichen Schlüssels und fügen Sie ihn ein. Kopieren Sie für die `[!UICONTROL password]` den Wert für den privaten Schlüssel und fügen Sie ihn ein.
+   Geben Sie nach Aufforderung Ihre Authentifizierungsschlüssel ein. Öffentliche und private Schlüssel werden aus [Commerce Marketplace - Zugriffsschlüssel](https://commercemarketplace.adobe.com/customer/account/login/) erstellt und konfiguriert. Kopieren Sie für die `[!UICONTROL username]` den Wert des öffentlichen Schlüssels und fügen Sie ihn ein. Kopieren Sie für die `[!UICONTROL password]` den Wert für den privaten Schlüssel und fügen Sie ihn ein.
 
    >[!NOTE]
    >
-   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
+   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
 
    Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 

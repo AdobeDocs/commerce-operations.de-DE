@@ -31,7 +31,7 @@ Kritische Aktionen führen zu Vorgängen zur Cache-Invalidierung und -Neuindizie
 
 ## Weitere Informationen
 
-- [Best Practices für das Caching](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Best Practices für das Caching](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [Privater Inhalt: Invalidierung privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Hardware-Empfehlungen: Caches](../../../performance/hardware.md#caches)
 - [Erweitertes Setup: Einrichten von Redis](../../../performance/advanced-setup.md#set-up-redis)

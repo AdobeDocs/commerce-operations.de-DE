@@ -63,9 +63,9 @@ Die `memcache`-Erweiterung _funktioniert derzeit nicht_ mit PHP 7. Siehe [PHP-Do
 
 1. Fahren Sie mit dem nächsten Abschnitt fort.
 
-## Überprüfen der Funktionsfähigkeit von memcached vor der Installation von Magento
+## Überprüfen der Funktionsweise von Memcached vor der Installation von Magento
 
-Adobe empfiehlt, memcached zu testen, um sicherzustellen, dass es funktioniert, bevor Sie Commerce installieren. Dies dauert nur wenige Minuten und kann die Fehlerbehebung später vereinfachen.
+Adobe empfiehlt, Memcached zu testen, um vor der Installation von Commerce sicherzustellen, dass es funktioniert. Dies dauert nur wenige Minuten und kann die Fehlerbehebung später vereinfachen.
 
 ### Überprüfen, ob der zwischengespeicherte Inhalt vom Webserver erkannt wird
 

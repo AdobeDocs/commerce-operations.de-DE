@@ -17,9 +17,9 @@ In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie auswähl
 >[!TIP]
 >
 >In den Versionen 2.4.4 und 2.4.3-p2 gelten alle Felder mit der Beschriftung **Elasticsearch** auch für OpenSearch.
->Mit der Einführung der Unterstützung für Elasticsearch 8.x in Version 2.4.6 wurden neue Bezeichnungen erstellt, um zwischen Elasticsearch- und OpenSearch-Konfigurationen zu unterscheiden.
+>>Mit der Einführung der Unterstützung für Elasticsearch 8.x in Version 2.4.6 wurden neue Bezeichnungen erstellt, um zwischen Elasticsearch- und OpenSearch-Konfigurationen zu unterscheiden.
 
-Weitere Informationen zum Konfigurieren Ihrer Suchmaschine finden Sie im [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=de).
+Weitere Informationen zum Konfigurieren Ihrer Suchmaschine finden Sie im [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Konfigurieren der Suchmaschine über den Administrator
 
@@ -37,7 +37,7 @@ So konfigurieren Sie Ihr System für die Verwendung von Elasticsearch oder OpenS
 
    | Option | Beschreibung |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Geben Sie den vollqualifizierten Hostnamen oder die IP-Adresse des Geräts ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce auf Cloud-Infrastruktur: Nutzen Sie diesen Wert aus Ihrem Integrationssystem. |
+   | **[!UICONTROL Server Hostname]** | Geben Sie den vollqualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce auf Cloud-Infrastruktur: Nutzen Sie diesen Wert aus Ihrem Integrationssystem. |
    | **[!UICONTROL Server Port]** | Geben Sie den Webserver-Proxy-Port ein. Der Standardwert ist 9200<br>Adobe Commerce in der Cloud-Infrastruktur: Sie erhalten diesen Wert von Ihrem Integrationssystem. |
    | **[!UICONTROL Index Prefix]** | Geben Sie das Suchmaschinenindex-Präfix ein. Wenn Sie eine Instanz für mehr als eine Commerce-Installation (Staging- und Produktionsumgebungen) verwenden, müssen Sie für jede Installation ein eindeutiges Präfix angeben. Andernfalls können Sie das Standardpräfix magento2 verwenden. |
    | **[!UICONTROL Enable HTTP Auth]** | Klicken Sie nur dann auf **[!UICONTROL Yes]** , wenn Sie die Authentifizierung für Ihren Suchmaschinenserver aktiviert haben. Wenn ja, geben Sie einen Benutzernamen und ein Kennwort in die angegebenen Felder ein. |

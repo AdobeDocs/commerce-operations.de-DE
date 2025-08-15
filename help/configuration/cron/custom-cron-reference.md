@@ -149,4 +149,4 @@ Um den `visitor_clean` Cron-Auftrag zu deaktivieren, erstellen Sie ein benutzerd
 ...
 ```
 
-Jetzt wurde der `visitor_clean` Cron-Auftrag so eingestellt, dass er am 30. Februar um 00:00 Uhr ausgeführt wird - an dem Datum, das nie eintreten wird.
+Jetzt wurde der `visitor_clean` Cron-Auftrag auf 00 % :00 30. Februar eingestellt - an dem Datum, das nie eintreten wird.

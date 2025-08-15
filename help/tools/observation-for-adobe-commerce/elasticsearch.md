@@ -44,7 +44,7 @@ Dieser Frame zeigt den Indexnamen und die Anzahl der Indexfarbstatus an. Wenn Si
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
-![Status des Elasticsearchs ](../../assets/tools/elasticsearch-status-by-node.jpg)
+![Elasticsearch-Status](../../assets/tools/elasticsearch-status-by-node.jpg)
 
 Der **[!UICONTROL Elasticsearch Status by node information]** zeigt den [!DNL Elasticsearch] Cluster-Status nach Farbe und Knoten an. Dies hilft bei der Angabe, welcher Knoten im [!DNL Elasticsearch] Cluster während des ausgewählten Zeitraums welchen Status zurückgibt.
 
@@ -68,7 +68,7 @@ Der **[!UICONTROL Elasticsearch process CPU %]** zeigt den CPU-Prozentsatz des P
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![Informationen zum Elasticsearch-Index](../../assets/tools/elasticsearch-index-information-2.jpg)
+![Elasticsearch-Indexinformationen](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 Wenn Indizes erstellt und aktualisiert werden, kann sich der Zustand des Index ändern.
 
@@ -86,6 +86,6 @@ Der **[!UICONTROL Elasticsearch Errors]** zeigt Fehler an, [!DNL Elasticsearch] 
 
 ## [!UICONTROL Elasticsearch Unassigned Shards]:
 
-![Elasticsearch nicht zugewiesene Shards](../../assets/tools/elasticsearch-unassigned-shards.jpg)
+![Nicht zugewiesene Elasticsearch-Shards](../../assets/tools/elasticsearch-unassigned-shards.jpg)
 
 Nicht zugewiesene Shards führen dazu, dass ein Cluster vom grünen Status in den gelben Status wechselt.

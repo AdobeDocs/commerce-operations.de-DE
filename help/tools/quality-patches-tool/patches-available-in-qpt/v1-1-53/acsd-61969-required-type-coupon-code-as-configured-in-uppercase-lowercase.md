@@ -28,7 +28,7 @@ Mit dem Patch ACSD-61969 wird das Problem behoben, dass ein Benutzer den Gutsche
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -38,7 +38,7 @@ Sie müssen den Gutscheincode bei der Anwendung über das Backend genauso in Gro
 
 1. Erstellen Sie eine *[!UICONTROL Cart Price Rule]* mit einem bestimmten Coupon *TEST*. Achten Sie darauf, dass der Gutscheincode großgeschrieben ist.
 1. Erstellen Sie eine Bestellung in der Admin Console.
-1. Fügen Sie *Feld *[!UICONTROL Apply Coupon Code]*&#x200B;den* „Test“ hinzu und klicken Sie auf den Pfeil neben dem Feld, um den Coupon anzuwenden.
+1. Fügen Sie *Feld* den *[!UICONTROL Apply Coupon Code]* „Test“ hinzu und klicken Sie auf den Pfeil neben dem Feld, um den Coupon anzuwenden.
 1. Beobachten Sie das Ergebnis.
 
 <u>Erwartete Ergebnisse</u>:
@@ -56,7 +56,7 @@ Der Coupon wird nicht angewendet. Der folgende Fehler wird angezeigt:
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

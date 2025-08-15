@@ -36,5 +36,5 @@ Wenn die RealPath-Cache-Konfigurationswerte zu niedrig oder zu hoch sind, führt
 - [On-Premise: PHP-Einstellungen](../../../performance/software.md#php-settings)
 - Cloud-Infrastruktur:
    - [Best Practices für Datenbanken](database-on-cloud.md)
-   - [Häufigste Datenbankprobleme beim Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
-- [Indexer „Update on Schedule“ optimiert die Magento-Leistung](../maintenance/indexer-configuration.md)
+   - [Häufigste Datenbankprobleme in Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
+- [Indexer „Update on Schedule“ optimieren die Leistung von Magento](../maintenance/indexer-configuration.md)

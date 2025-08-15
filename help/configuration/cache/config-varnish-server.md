@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ So konfigurieren Sie Lack minimal:
 
    >[!INFO]
    >
-   >Wenn Varnish und Apache auf demselben Host laufen, empfiehlt Adobe, eine IP-Adresse oder einen Hostnamen und nicht `localhost` zu verwenden.
+   >Wenn Varnish und Apache auf demselben Host ausgeführt werden, empfiehlt Adobe, eine IP-Adresse oder einen Hostnamen und nicht `localhost` zu verwenden.
 
 1. Speichern Sie Ihre Änderungen in `default.vcl` und beenden Sie den Texteditor.
 
@@ -197,7 +197,7 @@ backend default {
 
 ## HTTP-Antwortkopfzeilen überprüfen
 
-Jetzt können Sie überprüfen, ob Varnish Seiten bereitstellt, indem Sie sich die von einer beliebigen Seite zurückgegebenen HTML-Antwort-Header ansehen.
+Jetzt können Sie überprüfen, ob Varnish Seiten bereitstellt, indem Sie sich die HTML-Antwort-Header ansehen, die von einer beliebigen Seite zurückgegeben werden.
 
 Bevor Sie Kopfzeilen betrachten können, müssen Sie Commerce für den Entwicklermodus festlegen. Es gibt mehrere Möglichkeiten, dies zu tun, wobei die einfachste die Änderung von `.htaccess` im Commerce-Anwendungsstamm ist. Sie können auch den Befehl [`magento deploy:mode:set`](../cli/set-mode.md) verwenden.
 

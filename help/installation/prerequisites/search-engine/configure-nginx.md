@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Form of Elasticsearch. Weitere [ finden Sie unter &quot;Elasticsearch nach ](../../../upgrade/prepare/opensearch-migration.md) migrieren“.
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [ finden Sie unter „Migrieren von Elasticsearch ](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
 
 In diesem Abschnitt wird beschrieben, wie Sie Nginx als *unsicheren*-Proxy konfigurieren, damit Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit nginx](#secure-communication-with-nginx) erläutert.
 
@@ -81,7 +81,7 @@ In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den nginx-Server 
 
 ## Sichere Kommunikation mit nginx
 
-In diesem Abschnitt wird beschrieben, wie Sie [HTTP-Standardauthentifizierung](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) mit Ihrem sicheren Proxy einrichten. Durch die gemeinsame Verwendung von TLS und HTTP Basic-Authentifizierung wird verhindert, dass eine Person die Kommunikation mit Elasticsearch oder OpenSearch oder mit Ihrem Anwendungsserver abfängt.
+In diesem Abschnitt wird beschrieben, wie Sie [HTTP-Standardauthentifizierung](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html) mit Ihrem sicheren Proxy einrichten. Durch die gemeinsame Verwendung von TLS und HTTP Basic-Authentifizierung wird verhindert, dass Personen die Kommunikation mit Elasticsearch oder OpenSearch oder Ihrem Anwendungs-Server abfangen.
 
 Da nginx nativ die HTTP-Standardauthentifizierung unterstützt, empfehlen wir diese über z. B. [Digest-Authentifizierung](https://www.nginx.com/resources/wiki/modules/auth_digest/), was in der Produktion nicht empfohlen wird.
 
@@ -100,7 +100,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 ### Passwort erstellen
 
-Es wird empfohlen, den Apache `htpasswd`-Befehl zu verwenden, um Kennwörter für Benutzende mit Zugriff auf Elasticsearch oder OpenSearch (in diesem Beispiel `magento_elasticsearch` genannt) zu kodieren.
+Es wird empfohlen, den Apache `htpasswd`-Befehl zu verwenden, um Kennwörter für Benutzende mit Zugriff auf Elasticsearch oder OpenSearch zu kodieren (in diesem Beispiel `magento_elasticsearch` genannt).
 
 So erstellen Sie ein Kennwort:
 

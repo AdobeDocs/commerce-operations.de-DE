@@ -73,7 +73,7 @@ Die folgenden Abschnitte enthalten Best Practice-Informationen für die Wartungs
 | [Audit der Frontend-Leistung](frontend-performance.md) | Identifizieren und beheben Sie Probleme, die sich negativ auf die Site-Leistung auswirken, indem Sie Web-Leistungs-Tools verwenden. |
 | [bereit, eingestellt, gewartet](https://business.adobe.com/blog/basics/ready-set-maintain) | Tipps für die Pflege Ihrer Adobe Commerce-Sites zur Maximierung des Geschäftswerts und der Betriebszeit. |
 | [Verwenden Sie die [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Hier erhalten Sie wichtige Einblicke in Ihre Adobe Commerce-Site. |
-| [Überwachen der Leistung, des Festplattenspeichers und der Protokolle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=de) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
+| [Überwachen der Leistung, des Festplattenspeichers und der Protokolle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
 | [Reaktion auf Sicherheitsvorfälle](respond-to-security-incident.md) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
 
 ### Aktualisierungen

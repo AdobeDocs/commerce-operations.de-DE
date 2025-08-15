@@ -1,5 +1,5 @@
 ---
-title: Übersicht
+title: Überblick
 description: Befolgen Sie diese Best Practices, um die Leistung Ihrer Adobe Commerce-Bereitstellung zu optimieren.
 exl-id: 5381a477-bacd-4e74-a150-7f98abc2f744
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e

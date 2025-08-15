@@ -27,7 +27,7 @@ Mindestens **2 GB** Speicher für das [OPcache PHP-Modul](https://www.php.net/ma
 ## Weitere Informationen
 
 * [Best Practices für die Leistung - PHP-Einstellungen](../../../performance/software.md#php-settings)
-* [PHP-Optionen konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [PHP-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
 * [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](database-on-cloud.md)
 * [Häufigste Datenbankprobleme in Adobe Commerce in der Cloud-Infrastruktur](../maintenance/resolve-database-performance-issues.md)
 * [Indexer „Update on Schedule“ optimieren die Leistung von Adobe Commerce](../maintenance/indexer-configuration.md)

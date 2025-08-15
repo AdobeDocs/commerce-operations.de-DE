@@ -25,7 +25,7 @@ Wenn das Patch-Programm ausgeführt wird, wird diese Datei eingelesen und die an
 
 Es gibt drei Arten von Patches:
 
-- **Hotfixes** - Patches, die von Adobe im [Sicherheitscenter](https://magento.com/security/patches) veröffentlicht werden.
+- **Hotfixes** - Patches, die Adobe im [Sicherheitscenter](https://magento.com/security/patches) veröffentlicht.
 - **Individuelle Patches** - Patches, die vom Adobe Commerce-Support auf individueller Basis erstellt und verteilt werden.
 - **Benutzerdefinierte Patches**: Inoffizielle Patches, die Sie aus einem Git-Commit erstellen können.
 
@@ -43,7 +43,7 @@ Hotfixes finden Sie im [Sicherheitscenter](https://magento.com/security/patches)
 
 Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmtes Problem. Diese Fehlerbehebungen werden auf die zuletzt unterstützte Nebenversion angewendet (z. B. 2.4.x), könnten jedoch in der vorherigen unterstützten Nebenversion (z. B. 2.3.x) fehlen. Adobe veröffentlicht bei Bedarf einzelne Patches.
 
-Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um einzelne Patches anzuwenden.
+Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um einzelne Patches anzuwenden.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.c
 
 ## Benutzerdefinierte Patches
 
-Manchmal dauert es eine Weile, bis das Adobe-Engineering-Team eine Fehlerbehebung auf GitHub in einer Adobe Commerce Composer-Version implementiert. In der Zwischenzeit können Sie einen Patch von GitHub aus erstellen und das [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/)-Plug-in verwenden, um ihn auf Ihre Composer-basierte Installation anzuwenden.
+Manchmal dauert es eine Weile, bis das Adobe Engineering Team eine Fehlerbehebung auf GitHub in einer Adobe Commerce Composer-Version implementiert. In der Zwischenzeit können Sie einen Patch von GitHub aus erstellen und das [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/)-Plug-in verwenden, um ihn auf Ihre Composer-basierte Installation anzuwenden.
 
 Verwenden Sie die [Befehlszeile](apply.md#command-line) oder [Composer](apply.md#composer), um benutzerdefinierte Patches anzuwenden.
 
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Befehlszeile](/help/upgrade/patches/apply.md#command-line)
 - [Komponist](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im _Handbuch zu Commerce in Cloud_.
+>Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im _Handbuch zu Commerce in Cloud_.

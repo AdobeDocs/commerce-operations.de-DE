@@ -1,6 +1,6 @@
 ---
 title: Einstellungen für die Datenmigration
-description: Erfahren Sie, wie Sie Einstellungen von Magento 1 auf Magento 2 mit dem  [!DNL Data Migration Tool] migrieren.
+description: Erfahren Sie, wie Sie mit der Migration von Einstellungen von Magento 1 zu Magento 2 mit dem  [!DNL Data Migration Tool] beginnen.
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -45,7 +45,7 @@ Dabei gilt:
 
 >[!NOTE]
 >
->Dieser Befehl migriert nicht alle Konfigurationseinstellungen. Überprüfen Sie alle Einstellungen auf der Magento 2 Admin, bevor Sie fortfahren.
+>Dieser Befehl migriert nicht alle Konfigurationseinstellungen. Überprüfen Sie alle Einstellungen in Magento 2 Admin, bevor Sie fortfahren.
 
 
 Die `Migration completed` wird angezeigt, nachdem die Einstellungen erfolgreich übertragen wurden.

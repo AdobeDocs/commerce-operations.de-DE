@@ -227,7 +227,7 @@ ht-degree: 0%
 | JMonteros422 | [#29399](https://github.com/magento/magento2/pull/29399) |  |
 | Sergii Ivashchenko | [#29396](https://github.com/magento/magento2/pull/29396) |  |
 | JMonteros422 | [#29393](https://github.com/magento/magento2/pull/29393) |  |
-| Nazar Klovanych | [#29392](https://github.com/magento/magento2/pull/29392) | [&#128279;](https://github.com/magento/magento2/issues/1700), [1693](https://github.com/magento/magento2/issues/1693) |
+| Nazar Klovanych | [#29392](https://github.com/magento/magento2/pull/29392) | [](https://github.com/magento/magento2/issues/1700), [1693](https://github.com/magento/magento2/issues/1693) |
 | Oleh Usik | [#29386](https://github.com/magento/magento2/pull/29386) | [29420](https://github.com/magento/magento2/issues/29420) |
 | Oleh Usik | [#29385](https://github.com/magento/magento2/pull/29385) | [29434](https://github.com/magento/magento2/issues/29434) |
 | Lukasz Bajsarowicz | [#29341](https://github.com/magento/magento2/pull/29341) | [29389](https://github.com/magento/magento2/issues/29389) |

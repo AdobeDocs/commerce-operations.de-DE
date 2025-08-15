@@ -15,7 +15,7 @@ Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere eCom
 
 ## So erhalten Sie die Software
 
-Informieren Sie sich über die Verfügbarkeit aufregender neuer Funktionen und Releases und erfahren Sie, wie Sie diese auf unserer [Produktverfügbarkeitsseite“ ](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) können.
+Informieren Sie sich über die Verfügbarkeit aufregender neuer Funktionen und Releases und erfahren Sie, wie Sie diese auf unserer [Produktverfügbarkeitsseite“ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) können.
 
 In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten bei der Installation von Adobe Commerce.
 
@@ -29,7 +29,7 @@ In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten bei de
         </tr>
     <tr>
         <td><p>Integrator, Packager</p></td>
-        <td><p>Wünscht volle Kontrolle über alle installierten Komponenten, hat Zugriff auf den Anwendungsserver, hochtechnisch, kann Magento Open Source mit anderen Komponenten neu verpacken.</p>
+        <td><p>Will die volle Kontrolle über alle installierten Komponenten, hat Zugriff auf den Anwendungsserver, hochtechnisch, könnte Magento Open Source mit anderen Komponenten neu verpacken.</p>
         </td>
         <td><ol><li>Erstellt einen Composer <em>Projekt</em> der die Liste der zu verwendenden Komponenten enthält.</li>
             <li>Verwendet Composer, um Paketabhängigkeiten zu aktualisieren; verwendet <code>composer create-project</code>, um das Composer-Metapaket abzurufen.</li>
@@ -39,7 +39,7 @@ In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten bei de
     </tr>
     <tr>
         <td><p>Mitwirkender Entwickler</p></td>
-        <td><p>Trägt zur Magento Open Source-Code-Basis bei, behebt Fehler und passt die Anwendung an. Hochtechnisch, hat einen eigenen Entwicklungs-Server, versteht Composer und GitHub.</p>
+        <td><p>Trägt zur Magento Open Source-Codebasis bei, behebt Fehler und passt die Anwendung an. Hochtechnisch, hat einen eigenen Entwicklungs-Server, versteht Composer und GitHub.</p>
             <p>Sie <em>können</em> die Anwendung nicht in einer Produktionsumgebung verwenden.</p>
       <p>Sie müssen ein Upgrade mit <a href="../../upgrade/developer/git-installs.md">Composer- und Git-Befehlen</a> durchführen.</p></td>
         <td><ol><li>Klonen Sie das GitHub-Repository.</li>

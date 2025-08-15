@@ -16,7 +16,7 @@ ht-degree: 1%
 Adobe Commerce-Erweiterungen (Module) von Drittanbietern können verschiedene Probleme verursachen, die sich negativ auf die Leistung der Storefront auswirken können. Sie können diese Probleme vermeiden, indem Sie die folgenden Best Practices befolgen:
 
 - Entwickeln Sie Ihre Commerce-Integrationen und -Anpassungen mit [Out-of-Process-Erweiterbarkeit](https://developer.adobe.com/commerce/extensibility/) wo immer möglich, um die Wartung und Upgrades zu vereinfachen.
-- Herunterladen und Kaufen von Drittanbietererweiterungen von einer vertrauenswürdigen Quelle, z. B. der [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+- Herunterladen und Kaufen von Drittanbietererweiterungen aus einer vertrauenswürdigen Quelle, z. B. der [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Aktualisieren Sie alle Erweiterungen von Drittanbietern auf die neueste Version.
 - Wenn Sie Ihre Drittanbietererweiterungen nicht auf dem neuesten Stand halten können, sollten Sie andere Erweiterungen verwenden.
 - Stellen Sie bei der Planung eines Upgrades auf eine neue Version von Adobe Commerce sicher, dass die installierten Erweiterungen von Drittanbietern mit der neuen Version kompatibel sind, und aktualisieren Sie die Erweiterungen, falls erforderlich.
@@ -36,5 +36,5 @@ Adobe Commerce-Erweiterungen (Module) von Drittanbietern können verschiedene Pr
 
 - [Best Practices für die Planung von Upgrades](../../../upgrade/prepare/best-practices.md)
 - Verwenden von Erweiterungen von Drittanbietern mit Adobe Commerce in der Cloud-Infrastruktur
-   - [Technologien und Anforderungen - Entwicklung und Testen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [Warum sollten Sie die Integration und das Staging vollständig testen?](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [Technologien und Anforderungen - Entwicklung und Testen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [Warum sollten Sie die Integration und das Staging vollständig testen?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

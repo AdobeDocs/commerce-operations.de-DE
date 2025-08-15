@@ -1,5 +1,5 @@
 ---
-title: Entwicklungsumgebung Recommendations
+title: Empfehlungen für die Entwicklungsumgebung
 description: Erfahren Sie mehr über Leistungsempfehlungen zum Einrichten Ihrer lokalen Adobe Commerce-Entwicklungsumgebung.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
@@ -39,8 +39,8 @@ Führen Sie im Entwicklungsmodus keine Befehle für die Kompilierung, Codegeneri
   bin/magento setup:static-content:deploy
   ```
 
-  Im Entwicklungsmodus führt Magento sie bei Bedarf aus, Sie müssen sie nicht ausführen.
+  Im Entwicklungsmodus führt Magento sie bei Bedarf aus. Sie müssen sie nicht ausführen.
 
 ## Normale Seitenladezeit auf einer virtuellen Maschine
 
-Wenn Sie eine Entwicklung auf einer virtuellen Maschine durchführen und das Laden einer Magento-Seite länger als zwei Sekunden dauert, überprüfen Sie die Umgebungseinstellungen.
+Wenn Sie eine Entwicklung auf einer VM durchführen und das Laden einer Magento-Seite länger als zwei Sekunden dauert, überprüfen Sie die Umgebungseinstellungen.

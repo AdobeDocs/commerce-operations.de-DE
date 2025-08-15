@@ -65,7 +65,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 >
 >* Starterumgebungen haben keine Protokollrotation.
 >
->* Sie können die Protokollrotation in Pro Integration-Umgebungen nicht konfigurieren. Sie müssen eine benutzerdefinierte Lösung/ein benutzerdefiniertes Skript implementieren und [Ihren Cron konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property), um das Skript nach Bedarf auszuführen.
+>* Sie können die Protokollrotation in Pro Integration-Umgebungen nicht konfigurieren. Sie müssen eine benutzerdefinierte Lösung/ein benutzerdefiniertes Skript implementieren und [Ihren Cron konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property), um das Skript nach Bedarf auszuführen.
 
 ### iptables-Regeln einrichten, um verschiedenen Services die Kommunikation zu ermöglichen
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Wenn Sie ein Produktionssystem mit dem Commerce 2.2 [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md) einrichten, müssen Sie _aus `config.php` und `env.php` in die_ importieren.
+Wenn Sie ein Produktionssystem mit dem Commerce 2.2 [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md) einrichten, müssen Sie _aus_ und `config.php` in die `env.php` importieren.
 Zu diesen Einstellungen gehören Konfigurationspfade und -werte, Websites, Stores, Store-Ansichten und Designs.
 
 Nach dem Import von Websites, Stores, Store-Ansichten und Designs können Sie Produktattribute erstellen und sie auf Websites, Stores und Store-Ansichten im Produktionssystem anwenden.

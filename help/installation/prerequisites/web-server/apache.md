@@ -26,7 +26,7 @@ Adobe Commerce unterstützt Apache 2.4.x.
 
 ## Apache-Neuschreibungen und HTTAccess
 
-In diesem Thema wird beschrieben, wie Sie Apache 2.4-Neuschreibungen aktivieren und eine Einstellung für die `.htaccess`[&#128279;](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample) &quot; Konfigurationsdatei“ angeben.
+In diesem Thema wird beschrieben, wie Sie Apache 2.4-Neuschreibungen aktivieren und eine Einstellung für die [`.htaccess` &quot;](https://github.com/magento/magento2/blob/2.4-develop/.htaccess.sample) Konfigurationsdatei“ angeben.
 
 Adobe Commerce verwendet Server-Neuschreibungen und -`.htaccess`, um Anweisungen auf Ordnerebene für Apache bereitzustellen. Die folgenden Anweisungen sind auch in allen anderen Abschnitten dieses Themas enthalten.
 
@@ -70,7 +70,7 @@ Adobe Commerce verwendet Server-Neuschreibungen und -`.htaccess`, um Anweisungen
 
    >[!NOTE]
    >
-   >- Wenn Sie von einer früheren Apache-Version aktualisiert haben, suchen Sie zunächst in `000-default.conf` nach `<Directory "/var/www/html">` oder `<Directory "/var/www">`.
+   >- Wenn Sie von einer früheren Apache-Version aktualisiert haben, suchen Sie zunächst in `<Directory "/var/www/html">` nach `<Directory "/var/www">` oder `000-default.conf`.
    >- Sie müssen den Wert von `AllowOverride` in der Anweisung für den Ordner ändern, in dem Sie die Adobe Commerce-Software installieren möchten. Um beispielsweise die Installation im Stammverzeichnis des Webservers vorzunehmen, bearbeiten Sie die -Direktive in `<Directory /var/www>`.
 
 >[!NOTE]

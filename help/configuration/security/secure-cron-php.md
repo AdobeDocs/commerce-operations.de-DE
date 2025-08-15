@@ -259,7 +259,7 @@ Sie können Cron jederzeit ausführen, z. B. während der Entwicklung, mithilfe 
 Wenn Sie einen Apache-Webserver verwenden, müssen Sie die Einschränkung aus der `.htaccess`-Datei entfernen, bevor Sie Cron in einem Browser ausführen können:
 
 1. Melden Sie sich bei Ihrem Commerce-Server als Benutzer an, der über die Berechtigung zum Schreiben in das Commerce-Dateisystem verfügt.
-1. Öffnen Sie eine der folgenden Aktionen in einem Texteditor (je nach Einstiegspunkt zum Magento):
+1. Öffnen Sie eine der folgenden Aktionen in einem Texteditor (abhängig vom Einstiegspunkt zu Magento):
 
    ```text
    <magento_root>/pub/.htaccess

@@ -25,7 +25,7 @@ Analyse ist der wohl wichtigste Teil des Upgrade-Prozesses. Eine gut durchgefüh
 
 Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehen sollten:
 
-- **Umfang der Target-Version** - Die Dokumentation auf [Experience League](../../release/release-notes/overview.md) und Informationen aus Partner-Release-Webinaren bieten alle Details, die Sie über Ihr Target-Upgrade wissen müssen.
+- **Umfang der Target-Version** - Die Dokumentation zu [Experience League](../../release/release-notes/overview.md) und Informationen aus Partner-Release-Webinaren bieten alle Details, die Sie über Ihr Target-Upgrade wissen müssen.
 
 - **[!DNL Upgrade Compatibility Tool]Ergebnisse**: Dieses Tool macht jedes Upgrade schneller und einfacher, indem Ihr aktueller Code mit dem Code der Zielversion verglichen wird und ein Bericht über alle Probleme erstellt wird, die behoben werden müssen. Siehe die [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Zu den wichtigsten Details des Berichts gehören:
 
@@ -35,7 +35,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
   >[!TIP]
   >
-  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [&#128279;](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
+  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
 
 - Aktualisieren von Diensten zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzustellen, welche Services Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zur Spalte _Upgrade auf“ hinzugefügt_ soll.
 
@@ -88,4 +88,4 @@ Besprechen Sie abschließend mit Ihrem Team die gewonnenen Erkenntnisse und Fall
 
 Überprüfen Sie nach dem Start Ihrer Site Ihre Analysedaten, die Google-Suchkonsole und andere Ressourcen, um sicherzustellen, dass es keine unerwarteten Probleme gibt und alles erwartungsgemäß funktioniert.
 
-Es ist immer empfehlenswert, die Leistung mit gut konzipierten Überwachungs-Tools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Achten Sie daher darauf, eines auszuwählen, das gut zu Ihrer Organisation passt. Wir empfehlen, dass Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, Services wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=de) zur Überwachung der Site-Leistung nutzen.
+Es ist immer empfehlenswert, die Leistung mit gut konzipierten Überwachungs-Tools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Achten Sie daher darauf, eines auszuwählen, das gut zu Ihrer Organisation passt. Wir empfehlen, dass Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, Services wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) zur Überwachung der Site-Leistung nutzen.

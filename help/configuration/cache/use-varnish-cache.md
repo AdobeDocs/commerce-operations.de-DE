@@ -16,7 +16,7 @@ In diesem Abschnitt werden die Grundlagen der Verwendung von Varnish als Web-Cac
 
 ## Lackspülung
 
-In der [-](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) heißt es: „Eine *Bereinigung* geschieht, wenn Sie ein Objekt aus dem Cache auswählen und zusammen mit seinen Varianten verwerfen.“ Eine Lackbereinigung ähnelt einem Cache-Bereinigungsbefehl (oder einem Klick auf **Leeren des Magento-Cache** in Admin).
+In der [-](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html) heißt es: „Eine *Bereinigung* geschieht, wenn Sie ein Objekt aus dem Cache auswählen und zusammen mit seinen Varianten verwerfen.“ Eine Lackbereinigung ähnelt einem Cache-Bereinigungsbefehl (oder einem Klick auf **Magento-Cache leeren** in Admin).
 
 Wenn Sie den Commerce-Cache bereinigen, leeren oder aktualisieren, bereinigt Varnish auch.
 
@@ -42,7 +42,7 @@ Nachdem Sie Varnish für die Verwendung mit Commerce installiert und konfigurier
 
 ## Konfigurieren von Commerce zum Löschen von Lack
 
-Commerce löscht Varnish-Hosts, nachdem Sie Varnish-Hosts mit dem Befehl [`magento setup:config:set`](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) konfiguriert haben.
+Commerce löscht Varnish-Hosts, nachdem Sie Varnish-Hosts mit dem Befehl [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) konfiguriert haben.
 
 Sie können den optionalen Parameter `--http-cache-hosts` verwenden, um eine kommagetrennte Liste von Lack-Hosts und Listener-Ports anzugeben. Konfigurieren Sie alle Lack-Hosts, unabhängig davon, ob Sie einen oder mehrere haben. (Hosts dürfen nicht durch Leerzeichen getrennt werden.)
 
@@ -56,6 +56,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 Sie können dann Varnish-Hosts bereinigen, wenn Sie den Commerce-Cache (auch als *bezeichnet)* Admin aktualisieren oder die Befehlszeile verwenden.
 
-Um den Cache mithilfe der Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools **Cache-Verwaltung** und dann oben auf der Seite **Leeren** Magento-Cache. (Sie können auch einzelne Cache-Typen aktualisieren.)
+Um den Cache mithilfe der Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools **Cache-Verwaltung** und dann oben auf der Seite **Magento-** leeren). (Sie können auch einzelne Cache-Typen aktualisieren.)
 
 Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise den [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)-Befehl als [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).

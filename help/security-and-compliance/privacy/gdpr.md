@@ -31,5 +31,5 @@ Technische Informationen finden Sie in den Datenflussdiagrammen und Datenbankent
 
 Weitere Informationen dazu, wie Adobe Commerce Händler bei der Einhaltung der DSGVO unterstützt, finden Sie unter:
 
-- [DSGVO-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=de)
+- [DSGVO-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 - [Adobe Commerce ist bereit für die DSGVO](https://business.adobe.com/privacy/general-data-protection-regulation.html)

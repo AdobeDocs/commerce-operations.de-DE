@@ -35,7 +35,7 @@ Wenn Sie die [!DNL Data Migration Tool] nur lokal ausführen möchten, können S
 
 ### Konfigurieren der Migration in einem separaten Modul
 
-Bevor Sie Daten migrieren, müssen Sie ein Magento 2-Modul erstellen.
+Bevor Sie Daten migrieren, müssen Sie ein Magento 2 -Modul erstellen.
 
 1. Erstellen Sie ein Magento 2-Modul.
 
@@ -152,7 +152,7 @@ So konfigurieren Sie die [!DNL Data Migration Tool] für die Migration:
    * Benutzerdefinierter Datenbank-Port: `port=<port>`
    * Tabellenpräfix: `<source_prefix>`, `<dest_prefix>`
 
-   Wenn beispielsweise der Benutzername Ihres Datenbankbesitzers mit dem Kennwort `pass` `root` ist und Sie das Präfix `magento1` in Ihrer Magento 1-Datenbank verwenden, verwenden Sie Folgendes in `config.xml`:
+   Wenn beispielsweise der Benutzername Ihres Datenbankbesitzers mit dem Kennwort `root` `pass` ist und Sie das Präfix `magento1` in Ihrer Magento 1-Datenbank verwenden, verwenden Sie Folgendes in `config.xml`:
 
    ```xml
    <source>
@@ -190,7 +190,7 @@ Beispiel:
 
 ## Arbeiten mit Konfigurations- und Zuordnungsdateien
 
-Der [!DNL Data Migration Tool] verwendet *Zuordnungsdateien*, um eine benutzerdefinierte Datenbankzuordnung zwischen Ihren Magento 1- und Magento 2-Datenbanken durchzuführen, einschließlich:
+Der [!DNL Data Migration Tool] verwendet *Zuordnungsdateien*, um Ihnen eine benutzerdefinierte Datenbankzuordnung zwischen Ihren Magento 1- und Magento 2-Datenbanken zu ermöglichen, einschließlich:
 
 * Ändern von Tabellennamen
 
@@ -200,7 +200,7 @@ Der [!DNL Data Migration Tool] verwendet *Zuordnungsdateien*, um eine benutzerde
 
 * Anpassen der Übertragung von Daten eines Felds in das Magento 2-Format
 
-Mapping-Dateien für unterstützte Magento-Versionen befinden sich in Unterverzeichnissen von `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+Zuordnungsdateien für unterstützte Magento-Versionen befinden sich in Unterverzeichnissen von `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 So verwenden Sie die Zuordnungsdateien:
 
@@ -210,7 +210,7 @@ So verwenden Sie die Zuordnungsdateien:
 
    1. Absoluter Dateipfad, z. B. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Magento/data-migration-tool-Modul Relativer Dateipfad: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Magento-Stammverzeichnis-Dateipfad: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Stammbezogener Dateipfad von Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 Die `<Magento 2 dir>/vendor/magento/data-migration-tool/etc`- und `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>`-Verzeichnisse enthalten die folgenden Konfigurationsdateien:
 

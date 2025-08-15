@@ -125,7 +125,7 @@ Der **[!UICONTROL Cron table change]**-Frame sucht nach Fehlermeldungen des Typs
 Der **[!UICONTROL Deadlocks]**-Frame betrachtet die folgenden aus den MySQL-Protokollen geparsten Zeichenfolgen:
 
 * &#39;%PHP Schwerwiegender Fehler: Zulässige Speichergröße von%&#39;) als php_mem_error
-* &#39;%GET LOCK; versuchen Sie, die Transaktion neu zu starten. Abfrage war: DELETE VON \`cron_schedule%&#39;) als cron_sched_lock_del
+* &#39;%GET LOCK; versuchen Sie, die Transaktion neu zu starten. Abfrage war: DELETE FROM \`cron_schedule%&#39;) as cron_sched_lock_del
 * &#39;%-Sperre für Cron-Auftrag: indexer_reindex_all_invalid%&#39;) als &#39;lock_indexer_reindex_all_invalid%&#39;
 * &#39;%-Sperre für Cron-Auftrag: cron_schedule%&#39;) als &#39;lock_cron_schedule&#39;
 * &#39;%-Sperre für Cron-Auftrag:%&#39;) als &#39;total_cron_lock&#39;

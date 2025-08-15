@@ -32,7 +32,7 @@ Diese Konfigurationswerte sind in der Admin unter **Stores** > Einstellungen > *
 | Geschenkkarten | `sales/totals_sort/giftcardaccount` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Warenkredit | `sales/totals_sort/customerbalance` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Neuanordnung zulassen | `sales/reorder/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Logo für PDF-Ausdrucke (200x50) | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Logo für PDF Print-outs (200x50) | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logo für HTML Druckansicht | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Adresse | `sales/identity/address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren | `sales/minimum_order/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

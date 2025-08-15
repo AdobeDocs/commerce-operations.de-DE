@@ -25,7 +25,7 @@ QPT v1.1.58 enthält die folgenden Patches:
 1. **ACSD-63182**: Es wird ein Problem behoben, bei dem beim Speichern eines doppelten Produktpakets mit **[!DNL MSI]** (*) ein Fehler*.
 1. **ACSD-63283**: Es wird ein Problem behoben, bei dem das Bestellen von Artikeln aus der Geschenkregistrierung zu einer Ausnahme führt und bei dem Geschenkregistrierungs-Aktualisierungen Elemente enthalten, die nicht zur Registrierung gehören.
 1. **ACSD-63299**: Es wird das Problem behoben, dass der Sonderpreis für ein konfigurierbares Produkt nicht in der Storefront angezeigt wird.
-1. **ACSD-63325**: Es wird ein Problem behoben, bei dem beim Senden einer leeren [!DNL GraphQL]-Anfrage ein `Syntax Error: Unexpected <EOF>` auftritt.
+1. **ACSD-63325**: Es wird ein Problem behoben, bei dem beim Senden einer leeren `Syntax Error: Unexpected <EOF>`-Anfrage ein [!DNL GraphQL] auftritt.
 1. **ACSD-63329**: Es wird das Problem behoben, dass die Standardwerte für Attribute mit **[!UICONTROL Date]** oder **[!UICONTROL Date and Time]** Eingabetypen beim Erstellen von Produkten über die [!DNL REST API] nicht festgelegt werden.
 1. **ACSD-63572**: Es wird ein Problem behoben, bei dem die temporären Tabellen des `CatalogRule` Indexers nicht bereinigt werden, wenn der Indexerprozess beendet wird.
 1. **ACSD-63578**: Es wird ein Problem behoben, durch das beim Klicken auf die Schaltfläche **[!UICONTROL Delete]** in **[!UICONTROL Add to Order by SKU]** im [!UICONTROL Admin] die [!DNL SKU] nicht entfernt wird.

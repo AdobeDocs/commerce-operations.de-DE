@@ -16,7 +16,7 @@ In diesem Abschnitt werden die Maßnahmen aufgelistet, die Sie ergreifen sollten
 
 >[!TIP]
 >
->Diese Empfehlungen basieren auf Best Practices, die durch Nachweise von Partnern, Händlern, Adobe-Experten und der Community für ihre Wirkung und Effektivität untermauert werden.
+>Diese Empfehlungen basieren auf Best Practices, die von Partnern, Händlern, Adobe-Experten und der Community auf ihre Wirkung und Effektivität hin untersucht wurden.
 
 ## Welche Auswirkungen hat ein Upgrade?
 
@@ -47,17 +47,17 @@ Von dem Moment an, in dem Sie mit der Arbeit an einem Projekt beginnen, sollten 
 
 Beginnen Sie mit der Übernahme der Adobe Commerce-Erweiterbarkeitsplattform, falls noch nicht geschehen. Die Plattform ermöglicht die effiziente Anpassung von Prozessen, die Integration von Systemen und die Bereitstellung neuer Funktionen bei gleichzeitiger Beibehaltung der SaaS-ähnlichen Aktualisierbarkeit. Zu den Merkmalen gehören:
 
-- **Erweiterbarkeit der**. Erweitern und entwickeln Sie Ihre Storefront unabhängig von Ihrem Backend und Ihrer Middleware mit [PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/).
+- **Erweiterbarkeit der**. Erweitern und entwickeln Sie Ihre Storefront unabhängig von Ihrem Backend und Ihrer Middleware mit [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
 - **API-**. Verwenden Sie [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html), um die Web-API-Ebene zu erweitern, indem Sie das Diagrammdatenmodell weiterentwickeln und Lambda-Funktionen direkt von der Diagrammebene aus ausführen.
 
-- **Adobe I/O-Middleware und -Services**. Verbinden Sie Ihre Systeme mit Adobe Commerce mithilfe der Adobe-Middleware und einer Suite von App-Verbindungen, die auf [Adobe I/O](https://www.adobe.io/) erstellt wurden. Darüber hinaus können Sie die Kernfunktionen der Plattform erweitern, indem Sie das Standardverhalten mit Ihrer eigenen Geschäftslogik überschreiben, die auf Adobe I/O ausgeführt wird.
+- **Adobe I/O-Middleware und -Services**. Verbinden Sie Ihre Systeme mit Adobe Commerce mithilfe der Middleware von Adobe und einer Suite von App-Verbindungen, die auf [Adobe I/O](https://www.adobe.io/) basieren. Darüber hinaus können Sie die Kernfunktionen der Plattform erweitern, indem Sie das Standardverhalten mit Ihrer eigenen Geschäftslogik überschreiben, die auf Adobe I/O ausgeführt wird.
 
 ### Planung von Upgrades
 
 Da wir die Funktionen von Adobe Commerce kontinuierlich erweitern, ist es wichtig, dass Sie mit der neuesten verfügbaren Version entwickeln und in Ihren Projektplänen eine Upgrade-Strategie definieren. Auf diese Weise bleiben Sie sicher, konform und auf dem neuesten Stand der neuesten Verbesserungen, mit denen Sie Ihre Umsätze schneller steigern, effektiver arbeiten und Ihren Mitbewerbern jetzt und in Zukunft einen Schritt voraus sein können.
 
-Um Upgrades planen und budgetieren zu können, sollten Sie unseren [Veröffentlichungszeitplan](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) überwachen. Planen Sie Upgrade-Aufgaben im Rückstand Ihres Teams im Voraus. Ziel ist es, diese Arbeit mit GA abzuschließen.
+Um Upgrades planen und budgetieren zu können, sollten Sie unseren [Veröffentlichungszeitplan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) überwachen. Planen Sie Upgrade-Aufgaben im Rückstand Ihres Teams im Voraus. Ziel ist es, diese Arbeit mit GA abzuschließen.
 
 - Verwenden Sie die Vorabversion , um mehr über jede neue Version zu erfahren. Eine Vorabversion ist ein allgemeiner Verfügbarkeits-Code, der Adobe Commerce-Händlern und allen Partnern zwei Wochen vor der allgemeinen Verfügbarkeit zur Verfügung steht. Wenn Sie über mehrere Stores verfügen, verwenden Sie die Vorabversion in Ihrem Basis-Store und überprüfen Sie, ob Ihre benutzerdefinierten Module und Designs damit kompatibel sind.
 
@@ -73,7 +73,7 @@ Upgrades sollten regelmäßig und mit einem vordefinierten Budget durchgeführt 
 
 Bewerten Sie die für das Upgrade erforderlichen Arbeiten:
 
-- Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview) um den Umfang und die Auswirkungen der neuen Version zu verstehen.
+- Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) um den Umfang und die Auswirkungen der neuen Version zu verstehen.
 
 - Verwenden Sie den [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md), um potenzielle Probleme zu identifizieren, die in Ihrem benutzerdefinierten Code behoben werden müssen, bevor Sie versuchen, auf eine neuere Version zu aktualisieren.
 

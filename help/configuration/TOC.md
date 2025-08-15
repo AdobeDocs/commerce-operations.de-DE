@@ -150,4 +150,4 @@ ht-degree: 1%
       + [Geteilte Datenbank überprüfen](storage/multi-master-verify.md)
       + [Datenbankreplikation](storage/multi-master-replication.md)
       + [Auf einzelne Datenbank zurücksetzen](storage/revert-split-database.md)
-+ [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
++ [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -116,5 +116,5 @@ Beim Besuch einer Bild-Cache-URL werden alle Bildgrößen im Hintergrund generie
 
 >[!NOTE]
 >
->- Adobe Commerce in Cloud-Infrastrukturprojekten kann die Größenanpassung des Produktbilds auf den Fastly-Service auslagern. Siehe [Tiefenbildoptimierung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=de#deep-image-optimization) im _Cloud-Handbuch_.
->- Wenn Sie das Remote-Speichermodul verwenden, können Sie auch versuchen, die Größe des Bildes auf nginx zu ändern. Siehe [Konfigurieren der Bildgröße für den Remote](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=de) im _Konfigurationshandbuch_.
+>- Adobe Commerce in Cloud-Infrastrukturprojekten kann die Größenanpassung des Produktbilds auf den Fastly-Service auslagern. Siehe [Tiefenbildoptimierung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) im _Cloud-Handbuch_.
+>- Wenn Sie das Remote-Speichermodul verwenden, können Sie auch versuchen, die Größe des Bildes auf nginx zu ändern. Siehe [Konfigurieren der Bildgröße für den Remote](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) im _Konfigurationshandbuch_.

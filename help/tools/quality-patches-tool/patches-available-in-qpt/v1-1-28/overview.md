@@ -18,7 +18,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.28 enthält die folgenden Patches:
 
-1. **ACSD-48204**: Es wird das Problem behoben, bei dem der auf der Grundlage des *[!UICONTROL Yes/No]* erstellte *[!UICONTROL catalog price rule]* den ausgewählten Bereich nicht berücksichtigt.
+1. **ACSD-48204**: Es wird das Problem behoben, bei dem der auf der Grundlage des *[!UICONTROL catalog price rule]* erstellte *[!UICONTROL Yes/No]* den ausgewählten Bereich nicht berücksichtigt.
 1. **ACSD-47704**: Es wird das Problem behoben, dass das gebündelte Produkt nur den Preis der vorrätigen Produkte anzeigt.
 1. **ACSD-49370**: Es wird das Problem behoben, dass das Produktattribut im GraphQL-Schema einen `FilterMatchTypeInput` aufweist.
 1. **ACSD-48807**: Es wurde ein Problem behoben, bei dem Produktbewertungen nicht nach Storeview über GraphQL gefiltert wurden.

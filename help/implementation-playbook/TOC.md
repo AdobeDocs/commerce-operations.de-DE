@@ -12,16 +12,16 @@ ht-degree: 14%
 
 # Implementierungs-Playbook {#implementation-playbook}
 
-- [Übersicht](overview.md)
+- [Überblick](overview.md)
 - Architektur und Integrationen {#architecture}
    - [Unternehmensreferenz](architecture/enterprise-blueprint.md)
 - Wartung und Support {#maintenance}
-   - [Übersicht](maintenance/overview.md)
+   - [Überblick](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best Practices {#best-practices}
-   - [Übersicht](best-practices/phases.md)
+   - [Überblick](best-practices/phases.md)
    - Planung {#planning}
-      - [Übersicht](best-practices/planning/overview.md)
+      - [Überblick](best-practices/planning/overview.md)
       - [Katalogverwaltung](best-practices/planning/catalog-management.md)
       - [Konfiguration von Sites, Stores und Store-Ansicht](best-practices/planning/sites-stores-store-views.md)
       - [Reporting-Konfiguration](best-practices/planning/reporting-configuration.md)
@@ -35,7 +35,7 @@ ht-degree: 14%
       - [Partner-Eskalationen](best-practices/planning/partner-escalation.md)
       - [Zahlungsverarbeitung](best-practices/planning/payment-processing-storage.md)
    - Entwicklung {#development}
-      - [Übersicht](best-practices/development/overview.md)
+      - [Überblick](best-practices/development/overview.md)
       - [Allgemeine Best Practices](best-practices/development/general.md)
       - [Code-Management](best-practices/development/code-management.md)
       - [Code-Überprüfung](best-practices/development/code-review.md)
@@ -51,11 +51,11 @@ ht-degree: 14%
       - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
       - [Ändern des Kern- und Drittanbieter-Codes](best-practices/development/modifying-core-and-third-party-code.md)
    - Starten {#launch}
-      - [Übersicht](best-practices/launch/overview.md)
+      - [Überblick](best-practices/launch/overview.md)
       - [Konfigurieren von Web-Crawlern](best-practices/launch/robots-txt.md)
       - [Sichern von Site und Infrastruktur](best-practices/launch/security-best-practices.md)
    - Wartung {#maintenance}
-      - [Übersicht](best-practices/maintenance/overview.md)
+      - [Überblick](best-practices/maintenance/overview.md)
       - [Unterstützung nach der Markteinführung](best-practices/maintenance/post-launch.md)
       - [Audit der Frontend-Leistung](best-practices/maintenance/frontend-performance.md)
       - [Optimieren der Backend-Leistung](best-practices/maintenance/backend-performance.md)
@@ -69,4 +69,4 @@ ht-degree: 14%
       - [Checkliste für die Aktualisierung](best-practices/maintenance/upgrade-checklist.md)
       - [Upgrade-Voraussetzungen für MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossar](glossary.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

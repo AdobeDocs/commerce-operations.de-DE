@@ -104,7 +104,7 @@ Voreinstellungen sind eine gierige Möglichkeit, Code zu ändern und sollten nur
 
 ### Beobachter
 
-Ein Beobachter ist das Konzept eines Ereignis-Listeners, wie er in vielen Anwendungen, Plattformen, Bibliotheken und Programmiersprachen verwendet wird. Dieses Konzept ist nicht auf die Adobe Commerce-Plattform beschränkt. Beobachter werden seit den Tagen von Magento 1 in die Plattform gebacken und gelten als Hauptentscheidung, wie Kern- und Drittanbietercode geändert werden sollen. 
+Ein Beobachter ist das Konzept eines Ereignis-Listeners, wie er in vielen Anwendungen, Plattformen, Bibliotheken und Programmiersprachen verwendet wird. Dieses Konzept ist nicht auf die Adobe Commerce-Plattform beschränkt. Beobachter werden seit den Tagen von Magento 1 in die Plattform integriert und gelten als Hauptentscheidung für die Änderung von Kern- und Drittanbieter-Code. 
 
 Die Kern-Code-Basis und alle Drittanbietermodule können ein Ereignis an einer ausgewählten Stelle im Code senden. Der Beobachter, der in einer `events.xml` deklariert ist und das gesendete Ereignis nach Namen überwacht, kann auf globaler Ebene arbeiten oder auf einen beliebigen Adobe Commerce-„Bereich“ beschränkt sein, z. B. `frontend`, `adminhtml`, `graphql`, `webapi_rest` und `crontab`.
 

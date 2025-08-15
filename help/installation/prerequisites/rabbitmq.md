@@ -90,7 +90,7 @@ Dabei gilt:
 
 ## [!DNL RabbitMQ] verbinden
 
-Wenn Sie Adobe Commerce bereits installiert hatten und Sie eine Verbindung mit [!DNL RabbitMQ] herstellen möchten, fügen Sie der `<install_directory>/app/etc/env.php` einen `queue` Abschnitt hinzu, sodass er etwa wie folgt aussieht:
+Wenn Sie Adobe Commerce bereits installiert hatten und Sie eine Verbindung mit [!DNL RabbitMQ] herstellen möchten, fügen Sie der `queue` einen `<install_directory>/app/etc/env.php` Abschnitt hinzu, sodass er etwa wie folgt aussieht:
 
 ```php
 'queue' =>

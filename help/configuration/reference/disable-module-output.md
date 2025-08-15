@@ -32,7 +32,7 @@ Die Output-Deaktivierung wird in den folgenden Klassen durchgeführt:
 
 So deaktivieren Sie die Modulausgabe in der Pipeline-Bereitstellung oder einer anderen Bereitstellung mit mehreren Instanzen der Commerce-Anwendung:
 
-1. Bearbeiten Sie die `config.xml` des `Backend`.
+1. Bearbeiten Sie die `Backend` des `config.xml`.
 1. Exportieren der Konfigurationsänderungen
 
 ### Bearbeiten der `Backend`-`config.xml`

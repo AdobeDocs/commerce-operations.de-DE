@@ -38,13 +38,13 @@ Wie das Diagramm zeigt, werden die Konfigurationswerte in der folgenden Reihenfo
 
 Die freigegebene Konfiguration wird in `app/etc/config.php` gespeichert, das sich in der Quell-Code-Verwaltung befinden sollte.
 
-Legen Sie die freigegebene Konfiguration im Admin-System in Ihrer Entwicklungsumgebung (oder im Adobe Commerce-_-_) fest und schreiben Sie die Konfiguration mithilfe des [`magento app:config:dump`-Befehls in `config.php`](../cli/export-configuration.md).
+Legen Sie die freigegebene Konfiguration im Admin-System in Ihrer Entwicklungsumgebung (oder im Adobe Commerce-_-_) fest und schreiben Sie die Konfiguration mithilfe des `config.php`-Befehls in [`magento app:config:dump`](../cli/export-configuration.md).
 
 ### Verwalten der systemspezifischen Konfiguration
 
 Die systemspezifische Konfiguration wird in `app/etc/env.php` gespeichert, das _nicht_ der Quell-Code-Verwaltung sein sollte.
 
-Legen Sie die systemspezifische Konfiguration im Admin-System in Ihrem Entwicklungssystem (oder in Adobe Commerce für die Cloud-Infrastrukturintegration) fest und schreiben Sie die Konfiguration mithilfe des [`magento app:config:dump`-Befehls in `env.php`](../cli/export-configuration.md).
+Legen Sie die systemspezifische Konfiguration im Admin-System in Ihrem Entwicklungssystem (oder in Adobe Commerce für die Cloud-Infrastrukturintegration) fest und schreiben Sie die Konfiguration mithilfe des `env.php`-Befehls in [`magento app:config:dump`](../cli/export-configuration.md).
 
 Dieser Befehl schreibt auch vertrauliche Einstellungen in `env.php`.
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Im Allgemeinen sind _Stoppwörter_ gebräuchliche Wörter, die Suchmaschinen nach der Verarbeitung von Text herausfiltern. Ursprünglich bedeutete jedes eingesparte Kilobyte, wenn Festplattenspeicher und Arbeitsspeicher extrem begrenzt waren, eine deutliche Leistungsverbesserung. Daher erzielten Suchmaschinen Leistungsgewinne, indem sie bestimmte Wörter ignorierten und den Index klein hielten.
 
-Obwohl wir heute mehr Speicher haben, ist die Leistung immer noch wichtig. Elasticsearch und OpenSearch verwenden wie andere Suchmaschinen immer noch Stoppwörter, um die Leistung zu verbessern.
+Obwohl wir heute mehr Speicher haben, ist die Leistung immer noch wichtig. Elasticsearch und OpenSearch verwenden wie andere Suchmaschinen weiterhin Stoppwörter, um die Leistung zu verbessern.
 
 Sie müssen Ihre Stoppwörter mithilfe von CSV-Dateien verwalten, die sich im Verzeichnis `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` oder im Verzeichnis `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` befinden, je nachdem, wie Sie die Commerce-Software installiert haben.
 
@@ -102,11 +102,11 @@ In diesem Abschnitt wird beschrieben, wie Sie optional das standardmäßige Stop
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie das GitHub-Repository von Magento 2 geklont haben, befindet sich der Pfad unter `app/code`. Wenn Sie ein komprimiertes Archiv oder ein Metapaket installiert haben, befindet sich der Pfad unter `vendor`.
+Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie das GitHub-Repository für Magento 2 geklont haben, befindet sich der Pfad unter `app/code`. Wenn Sie ein komprimiertes Archiv oder ein Metapaket installiert haben, befindet sich der Pfad unter `vendor`.
 
 **So ändern Sie das Verzeichnis**:
 
-1. Öffnen Sie als Verantwortlicher für das Dateisystem das Elasticsearch `di.xml` in einem Texteditor.
+1. Öffnen Sie als Verantwortlicher für das Dateisystem das Elasticsearch-`di.xml` in einem Texteditor.
 
    Wenn Sie das Repository geklont haben, befindet es sich unter `app/code/Magento/Elasticsearch/etc/di.xml`
 

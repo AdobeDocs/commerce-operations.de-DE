@@ -48,7 +48,7 @@ Dieses Thema verwendet die folgenden Benennungskonventionen:
 
 ## Sichern des Commerce-Systems
 
-Adobe empfiehlt dringend, Ihre aktuelle Datenbank und Ihr Dateisystem zu sichern, damit Sie sie wiederherstellen können, wenn während des Prozesses Probleme auftreten.
+Adobe empfiehlt dringend, die aktuelle Datenbank und das aktuelle Dateisystem zu sichern, damit Sie sie wiederherstellen können, wenn während des Vorgangs Probleme auftreten.
 
 **So sichern Sie Ihr System**:
 
@@ -559,10 +559,10 @@ So verwenden Sie diese Skripte:
 
    In diesem Thema wird der Name der Beispieldatenbank `magento`.
 
-1. Führen Sie jedes Skript wie `source <script name>` über die `mysql>` aus
+1. Führen Sie jedes Skript wie `mysql>` über die `source <script name>` aus
 1. Überprüfen Sie die Ausgabe.
 1. Kopieren Sie das Ergebnis jedes Skripts in ein anderes SQL-Skript und entfernen Sie die Pipe-Zeichen (`|`).
-1. Führen Sie jedes Skript wie `source <script name>` über die `mysql>` aus.
+1. Führen Sie jedes Skript wie `mysql>` über die `source <script name>` aus.
 
    Durch Ausführen dieses zweiten Skripts werden die Aktionen in der Hauptdatenbank von Commerce ausgeführt.
 

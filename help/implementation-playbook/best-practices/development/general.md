@@ -17,9 +17,9 @@ In diesem Abschnitt werden die Grundlagen für einen reibungslosen Adobe Commerc
 
 >[!NOTE]
 >
->Technische Adobe-Architekten verwenden diese Best Practices als Referenz bei Projekten, die mit der Entwicklung zu tun haben.
+>Technische Architekten von Adobe verwenden diese Best Practices als Referenz bei Projekten, die mit der Entwicklung in Zusammenhang stehen.
 
-Diese Best Practices basieren auf jahrelanger Erfahrung in der Entwicklung und Bereitstellung von Commerce-Projekten. Adobe empfiehlt, dass technische Initiativen diesen Best Practices folgen und dass Sie bestehende Prozesse verbessern und den Code entsprechend anpassen.
+Diese Best Practices basieren auf jahrelanger Erfahrung in der Entwicklung und Bereitstellung von Commerce-Projekten. Adobe empfiehlt, dass technische Initiativen diesen Best Practices folgen und dass Sie bestehende Prozesse und den Code verbessern, um sie an diese anzupassen.
 
 ## Textkonventionen
 

@@ -22,17 +22,17 @@ Bevor Sie ein Upgrade des [!DNL Data Migration Tool] durchführen, müssen Sie:
 
 * Sichern Sie das `vendor/magento/data-migration-tool`
 
-* Stellen Sie sicher, dass die [!DNL Data Migration Tool] mit der Magento-Anwendungsversion übereinstimmt
+* Stellen Sie sicher, dass die [!DNL Data Migration Tool] mit der Version des Magento-Programms übereinstimmt
 
-### Upgrade der Magento-Software
+### Aktualisieren der Magento-Software
 
-Falls Sie dies noch nicht getan haben, [ Sie die Magento-Software ](../../upgrade/overview.md).
+Falls noch nicht geschehen, [ Sie die Magento-Software ](../../upgrade/overview.md).
 
 ### Sichern Sie das `vendor/magento/data-migration-tool`
 
 Sichern Sie vor dem Upgrade des [!DNL Data Migration Tool] mindestens das `vendor/magento/data-migration-tool`. Während des Upgrades konnte er gelöscht und durch den aktualisierten Code ersetzt werden.
 
-Sie können auch die gesamte Magento-Codebasis und -Datenbank mit folgendem Befehl sichern:
+Sie können auch die gesamte Magento-Codebasis und -Datenbank mit dem folgenden Befehl sichern:
 
 ```bash
 php <magento_root>/bin/magento setup:backup --code --db
@@ -45,11 +45,11 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 ### Übereinstimmende Versionen sicherstellen
 
-Die Versionen des [!DNL Data Migration Tool] und Ihrer Magento-Software müssen exakt übereinstimmen. Für Magento 2.1.2 ist beispielsweise Version 2.1.2 des [!DNL Data Migration Tool] erforderlich.
+Die Versionen des [!DNL Data Migration Tool] und Ihrer Magento-Software müssen genau übereinstimmen. Für Magento 2.1.2 ist beispielsweise Version 2.1.2 des [!DNL Data Migration Tool] erforderlich.
 
 Weitere Informationen finden Sie [ Thema  [!DNL Data Migration Tool]](install.md)Installieren):
 
-* [Überprüfen](install.md#check-your-version) Sie Ihre Magento 2-Version
+* [Überprüfen](install.md#check-your-version) Sie Ihre Magento 2-Version.
 
 * [Suchen](install.md#find-released-versions-of-data-migration-tool) freigegebene Versionen des [!DNL Data Migration Tool]
 
@@ -65,7 +65,7 @@ Weitere Informationen finden Sie [ Thema  [!DNL Data Migration Tool]](install.md
    composer require magento/data-migration-tool:<version>
    ```
 
-   wobei `<version>` mit der Magento 2-Codebase übereinstimmen muss.
+   Dabei muss `<version>` mit der Version der Magento 2-Code-Basis übereinstimmen.
 
    Geben Sie beispielsweise für Version 2.1.2 Folgendes ein:
 

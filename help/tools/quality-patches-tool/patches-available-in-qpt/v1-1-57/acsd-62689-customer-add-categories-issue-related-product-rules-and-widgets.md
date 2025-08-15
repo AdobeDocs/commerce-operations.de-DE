@@ -32,7 +32,7 @@ Mit dem Patch ACSD-62689 wird das Problem behoben, dass ein Kunde nach der Versc
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -43,12 +43,12 @@ Eine Kundin oder ein Kunde kann nach der Verschachtelung mit Tiefe vier keine Ka
 1. Erstellen Sie zwei Kategorien mit den Namen *[!UICONTROL Anchor]* und *[!UICONTROL Non-Anchor]* unter der standardmäßigen Stammkategorie.
    * Stellen Sie sicher, dass das *[!UICONTROL Is Anchor]*-Flag für die *[!UICONTROL Non-Anchor]* deaktiviert ist.
 1. Gehen Sie zu **[!UICONTROL Content]** > **[!UICONTROL Widgets]** und erstellen Sie ein Widget.
-1. Wählen Sie unter *[!UICONTROL Layout Updates]* im Feld *[!UICONTROL Display on]* die Option **[!UICONTROL Non-Anchor Categories]** aus.
+1. Wählen Sie unter *[!UICONTROL Layout Updates]* im Feld **[!UICONTROL Non-Anchor Categories]** die Option *[!UICONTROL Display on]* aus.
 1. Klicken Sie auf **[!UICONTROL Specific Categories]**.
 1. Klicken Sie auf das Symbol für die Kategorieauswahl.
 1. Erweitern Sie die Stammkategorie .
 1. Überprüfen Sie die Kategorien. Beide sollten deaktiviert und nicht auswählbar sein.
-1. Wählen Sie unter *[!UICONTROL Layout Updates]* im Feld *[!UICONTROL Display on]* die Option **[!UICONTROL Anchor Categories]** aus. Führen Sie dann die Schritte 5 und 6 aus.
+1. Wählen Sie unter *[!UICONTROL Layout Updates]* im Feld **[!UICONTROL Anchor Categories]** die Option *[!UICONTROL Display on]* aus. Führen Sie dann die Schritte 5 und 6 aus.
 1. Überprüfen Sie die Kategorien. Beide sollten aktiviert und auswählbar sein.
 
 <u>Erwartete Ergebnisse</u>:
@@ -64,7 +64,7 @@ In Schritt 7 können beide Kategorien nicht ausgewählt werden. In Schritt 9 kö
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen

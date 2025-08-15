@@ -41,7 +41,7 @@ Als Benutzer mit `root` Berechtigungen öffnen Sie Ihre `php.ini` und suchen Sie
 
 ## Sitzungsgröße verwalten
 
-Siehe [Sitzungsverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-session-management) im _Benutzerhandbuch_.
+Siehe [Sitzungsverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) im _Benutzerhandbuch_.
 
 ## Konfiguration der automatischen Bereinigung
 

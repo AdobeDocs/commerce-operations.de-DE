@@ -32,7 +32,7 @@ Die folgende Abbildung zeigt eine Grundansicht von Lack in Ihrer Commerce-Topolo
 
 ![Grundlackdiagramm](../../assets/configuration/varnish-basic.png)
 
-In der vorherigen Abbildung führen HTTP-Anfragen von Benutzern über das Internet zu zahlreichen Anfragen für CSS, HTML, JavaScript und Bilder (zusammenfassend als &quot;_&quot; bezeichnet_. Lack befindet sich vor dem Webserver und leitet diese Anfragen an den Webserver weiter.
+In der vorherigen Abbildung führen HTTP-Anfragen von Benutzern über das Internet zu zahlreichen Anfragen für CSS, HTML, JavaScript und Bilder (zusammenfassend als &quot;_&quot;_). Lack befindet sich vor dem Webserver und leitet diese Anfragen an den Webserver weiter.
 
 Wenn der Webserver Assets zurückgibt, werden zwischenspeicherbare Assets in Lack gespeichert. Alle nachfolgenden Anfragen für diese Assets werden von Varnish erfüllt (d. h. die Anfragen erreichen den Webserver nicht). Lack gibt zwischengespeicherte Inhalte extrem schnell zurück. Das Ergebnis sind schnellere Antwortzeiten, mit denen die Inhalte an die Benutzer zurückgegeben werden, und eine reduzierte Anzahl von Anfragen, die von Commerce erfüllt werden müssen.
 
@@ -90,7 +90,7 @@ Wir kennen die folgenden Probleme mit Lack:
 
 Das Zwischenspeichern von Lacken funktioniert mit Commerce mit:
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) aus dem GitHub-Repository von Magento 2
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) aus dem Magento 2 GitHub-Repository
 - `.htaccess` verteilte Konfigurationsdatei für Apache in Commerce
 - `default.vcl` Konfiguration für mit dem [Admin](../cache/configure-varnish-commerce.md) generierten Lack
 

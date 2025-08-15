@@ -21,11 +21,11 @@ Vor einem Upgrade von Adobe Commerce auf die Cloud-Infrastruktur müssen Sie mö
 
 ## Adobe Commerce 2.4.6
 
-Ab MariaDB 10.5.1 werden Spalten mit alten zeitlichen Formaten in der Ausgabe der `SHOW CREATE TABLE`-, `SHOW COLUMNS`-, `DESCRIBE`-Anweisungen sowie in der `COLUMN_TYPE` Spalte der `INFORMATION_SCHEMA.COLUMNS` mit einem `/* mariadb-5.3 */` markiert. [Siehe MariaDB-](https://mariadb.com/kb/en/datetime/#internal-format).
+Ab MariaDB 10.5.1 werden Spalten mit alten zeitlichen Formaten in der Ausgabe der `/* mariadb-5.3 */`-, `SHOW CREATE TABLE`-, `SHOW COLUMNS`-Anweisungen sowie in der `DESCRIBE` Spalte der `COLUMN_TYPE` mit einem `INFORMATION_SCHEMA.COLUMNS` markiert. [Siehe MariaDB-](https://mariadb.com/kb/en/datetime/#internal-format).
 
 Adobe Commerce kann die Datumsspalten aufgrund des MariaDB-Kommentars nicht einem richtigen Datentyp zuordnen, was zu unerwartetem Verhalten im benutzerdefinierten Code führen kann.
 
-Um unerwartetes Verhalten beim Upgrade von MariaDB von älteren Versionen auf Version 10.6 zu vermeiden, empfiehlt Adobe, die Spalten in das neue interne Format zu migrieren.
+Um beim Upgrade von MariaDB von älteren Versionen auf Version 10.6 unerwartetes Verhalten zu vermeiden, empfiehlt Adobe, die Spalten in das neue interne Format zu migrieren.
 
 ### Standardkonfiguration
 

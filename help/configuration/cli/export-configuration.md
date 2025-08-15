@@ -45,8 +45,8 @@ Es enthält sensible und systemspezifische Einstellungen für einzelne Umgebunge
 
 ## Sensible oder systemspezifische Einstellungen
 
-Verwenden Sie den Befehl [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values), um die sensiblen Einstellungen festzulegen, die in `env.php` geschrieben werden.
+Verwenden Sie den Befehl `env.php`, um die sensiblen Einstellungen festzulegen, die in [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) geschrieben werden.
 
-Konfigurationswerte werden entweder als sensibel oder systemspezifisch angegeben, indem in der [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) des Moduls auf [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) verwiesen wird.
+Konfigurationswerte werden entweder als sensibel oder systemspezifisch angegeben, indem in der [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) des Moduls auf [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) verwiesen wird.
 
 Wenn Sie bei Verwendung von `config_types` zusätzliche Systemeinstellungen exportieren möchten, sollten Sie den Befehl [`bin/magento config:set`](set-configuration-values.md#set-values) verwenden.

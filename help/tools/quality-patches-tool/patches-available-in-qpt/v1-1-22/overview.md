@@ -20,7 +20,7 @@ QPT v1.1.22 enthält die folgenden Patches:
 
 1. **ACSD-47106**: Es wird das Problem behoben, dass ein Wert auf einer Unternehmenserstellungsseite nicht in einem neuen benutzerdefinierten Attribut gespeichert werden kann.
 1. **ACSD-47280**: Es wird das Problem behoben, dass das Deaktivieren der Funktion für freigegebene Kataloge in einem bestimmten Bereich nicht ordnungsgemäß funktioniert.
-1. **ACSD-47332**: Behebt das Problem, dass cron mit einem Fehler fehlschlägt, der nur gemeldet wird, wenn zwischen 00:00 und 00:59 UTC ausgeführt wird.
+1. **ACSD-47332**: Es wurde ein Problem behoben, bei dem cron mit einem Fehler fehlschlug, der nur bei einer Ausführung zwischen 00 und 00:00 UTC :59 wird.
 1. **ACSD-47444**: Behebt den Fehler _Zugriff auf Array-Offset beim Wert vom Typ bool_ beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte in PHP 7.4.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.

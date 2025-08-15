@@ -18,7 +18,7 @@ Obwohl Sie nicht alle Sicherheitsrisiken ausschließen können, wird durch die A
 
 >[!NOTE]
 >
->Informationen zu den Rollen und Zuständigkeiten für die Sicherung und Wartung von Adobe Commerce-Projekten in Cloud[Infrastrukturen finden Sie unter „Modell der gemeinsamen ](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)&quot; im _Handbuch für Adobe Commerce-Sicherheit und -Compliance_.
+>Informationen zu den Rollen und Zuständigkeiten für die Sicherung und Wartung von Adobe Commerce-Projekten in Cloud[Infrastrukturen finden Sie unter „Modell der gemeinsamen ](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)&quot; im _Handbuch für Adobe Commerce-Sicherheit und -Compliance_.
 
 [Alle unterstützten ](../../../release/versions.md) von:
 
@@ -27,39 +27,39 @@ Obwohl Sie nicht alle Sicherheitsrisiken ausschließen können, wird durch die A
 
 ## Vorrangige Empfehlungen
 
-Adobe ist der Auffassung, dass die folgenden Empfehlungen für alle Kunden höchste Priorität haben. Implementieren Sie diese wichtigen Best Practices für die Sicherheit in allen Commerce-Bereitstellungen:
+Adobe betrachtet die folgenden Empfehlungen für alle Kunden als besonders wichtig. Implementieren Sie diese wichtigen Best Practices für die Sicherheit in allen Commerce-Bereitstellungen:
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Aktivieren Sie die Zwei-Faktor-Authentifizierung für Ihren Administrator und alle SSH-Verbindungen**
 
-- [Sicherheit für Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=de)
+- [Sicherheit für Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
-- [Sichere SSH-Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=de) (Cloud-Infrastruktur)
+- [Sichere SSH-Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html) (Cloud-Infrastruktur)
 
 Wenn MFA für ein Projekt aktiviert ist, müssen alle Adobe Commerce in Cloud-Infrastrukturkonten mit SSH-Zugriff einem Authentifizierungs-Workflow folgen. Dieser Workflow erfordert für den Zugriff auf die Umgebung entweder einen Zwei-Faktor-Authentifizierungs-Code (2FA) oder ein API-Token und ein SSH-Zertifikat.
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sichern Sie den Administrator**
 
-- [Konfigurieren Sie eine nicht standardmäßige Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html?lang=de#use-a-custom-admin-url)URL, anstatt den `admin` oder einen allgemeinen Begriff wie `backend` zu verwenden. Diese Konfiguration reduziert das Risiko von Skripten, die versuchen, nicht autorisierten Zugriff auf Ihre Site zu erhalten.
+- [Konfigurieren Sie eine nicht standardmäßige Admin](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/store-urls.html#use-a-custom-admin-url)URL, anstatt den `admin` oder einen allgemeinen Begriff wie `backend` zu verwenden. Diese Konfiguration reduziert das Risiko von Skripten, die versuchen, nicht autorisierten Zugriff auf Ihre Site zu erhalten.
 
-- [Erweiterte Sicherheitseinstellungen konfigurieren](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=de) - Fügen Sie URLs einen geheimen Schlüssel hinzu, verlangen Sie, dass bei Kennwörtern die Groß-/Kleinschreibung beachtet wird, und beschränken Sie die Länge der Admin-Sitzung, das Kennwortlebensdauerintervall und die Anzahl der zulässigen Anmeldeversuche, bevor Sie ein Admin-Benutzerkonto sperren. Um die Sicherheit zu erhöhen, konfigurieren Sie die Dauer der Tastaturinaktivität, bevor die aktuelle Sitzung abläuft, und verlangen Sie, dass bei Benutzername und Kennwort die Groß-/Kleinschreibung beachtet wird.
+- [Erweiterte Sicherheitseinstellungen konfigurieren](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) - Fügen Sie URLs einen geheimen Schlüssel hinzu, verlangen Sie, dass bei Kennwörtern die Groß-/Kleinschreibung beachtet wird, und beschränken Sie die Länge der Admin-Sitzung, das Kennwortlebensdauerintervall und die Anzahl der zulässigen Anmeldeversuche, bevor Sie ein Admin-Benutzerkonto sperren. Um die Sicherheit zu erhöhen, konfigurieren Sie die Dauer der Tastaturinaktivität, bevor die aktuelle Sitzung abläuft, und verlangen Sie, dass bei Benutzername und Kennwort die Groß-/Kleinschreibung beachtet wird.
 
-- [Aktivieren Sie ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=de), um den Administrator vor automatischen Brute-Force-Angriffen zu schützen.
+- [Aktivieren Sie ReCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html), um den Administrator vor automatischen Brute-Force-Angriffen zu schützen.
 
-- Befolgen Sie das Prinzip der geringsten Berechtigung bei der Zuweisung [Administratorberechtigungen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html?lang=de) zu Rollen und Rollen zu Admin-Benutzerkonten.
+- Befolgen Sie das Prinzip der geringsten Berechtigung bei der Zuweisung [Administratorberechtigungen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions.html) zu Rollen und Rollen zu Admin-Benutzerkonten.
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Upgrade auf die neueste Version von Adobe Commerce**
 
-Halten Sie Ihren Code aktualisiert[ indem Sie Ihr Commerce-Projekt auf die neueste Version ](#upgrade-to-the-latest-release) Adobe Commerce, Commerce Services und Erweiterungen aktualisieren, einschließlich Sicherheits-Patches, Hotfixes und anderer von Adobe bereitgestellter Patches.
+Halten Sie Ihren Code auf dem neuesten Stand[ indem Sie Ihr Commerce-Projekt auf die neueste Version ](#upgrade-to-the-latest-release) Adobe Commerce, Commerce Services und Erweiterungen aktualisieren, einschließlich Sicherheits-Patches, Hotfixes und anderer von Adobe bereitgestellter Patches.
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sicherheitsrelevante Konfigurationswerte**
 
 Verwenden Sie [Konfigurationsverwaltung](../../../configuration/cli/set-configuration-values.md), um kritische Konfigurationswerte zu sperren.
 
-Die `lock config`- und `lock env` CLI-Befehle konfigurieren Umgebungsvariablen, um zu verhindern, dass diese vom Administrator aktualisiert werden. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/env.php`. (Informationen zu Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Store-Konfigurationsverwaltung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=de#sensitive-data).)
+Die `lock config`- und `lock env` CLI-Befehle konfigurieren Umgebungsvariablen, um zu verhindern, dass diese vom Administrator aktualisiert werden. Der Befehl schreibt den Wert in die `<Commerce base dir>/app/etc/env.php`. (Informationen zu Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Store-Konfigurationsverwaltung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html#sensitive-data).)
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sicherheitsüberprüfungen durchführen**
 
-Verwenden Sie den [Commerce Security Scan Service](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=de), um alle Adobe Commerce-Websites auf bekannte Sicherheitsrisiken und Malware zu überwachen und sich für den Erhalt von Patch-Updates und Sicherheitsbenachrichtigungen anzumelden.
+Verwenden Sie den [Commerce Security Scan Service](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html), um alle Adobe Commerce-Websites auf bekannte Sicherheitsrisiken und Malware zu überwachen und sich für den Erhalt von Patch-Updates und Sicherheitsbenachrichtigungen anzumelden.
 
 ## Gewährleistung der Sicherheit von Erweiterungen und benutzerdefiniertem Code
 
@@ -67,7 +67,7 @@ Wenn Sie Adobe Commerce erweitern, indem Sie Erweiterungen von Drittanbietern au
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Wählen Sie einen Partner oder Lösungsintegrator (SI) aus, der sich gut mit Sicherheit auskennt** - Stellen Sie sichere Integrationen und die sichere Bereitstellung von benutzerdefiniertem Code sicher, indem Sie Organisationen auswählen, die sichere Entwicklungspraktiken befolgen und nachweislich Sicherheitsprobleme verhindern und beheben.
 
-![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sichere Erweiterungen verwenden** - Ermitteln Sie die am besten geeigneten und sichersten Erweiterungen für Commerce-Bereitstellungen, indem Sie sich mit Ihrem Lösungsintegrator oder -entwickler in Verbindung setzen und die Best Practices für [Adobe-Erweiterungen befolgen](../planning/extensions.md).
+![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sichere Erweiterungen verwenden** - Ermitteln Sie die am besten geeigneten und sichersten Erweiterungen für Commerce-Bereitstellungen, indem Sie sich mit Ihrem Lösungsintegrator oder -entwickler in Verbindung setzen und die Best Practices für [Adobe Extensions befolgen](../planning/extensions.md).
 
 - Nur Quellerweiterungen vom Adobe Commerce Marketplace oder über den Lösungsintegrator. Wenn die Erweiterung von einem Integrator bezogen wird, stellen Sie sicher, dass das Eigentum an der Erweiterungslizenz übertragbar ist, falls der Integrator wechselt.
 
@@ -95,13 +95,13 @@ In den folgenden Ressourcen finden Sie Informationen zu verfügbaren Adobe Comme
 
 >[!TIP]
 >
->Abonnieren Sie den [Adobe-Sicherheitsbenachrichtigungsdienst, um die neuesten Sicherheitsinformationen zu erhalten und bekannte Sicherheitsprobleme zu ](https://www.adobe.com/subscription/adbeSecurityNotifications.html).
+>Abonnieren Sie den [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html), um die neuesten Sicherheitsinformationen zu erhalten und bekannte Sicherheitsprobleme zu beheben.
 
 ## Entwickeln eines Plans für die Notfallwiederherstellung
 
 Wenn Ihr Commerce-Standort gefährdet ist, können Sie Schäden kontrollieren und den normalen Geschäftsbetrieb schnell wiederherstellen, indem Sie einen umfassenden Disaster Recovery-Plan entwickeln und implementieren.
 
-Wenn ein Kunde aufgrund eines Systemausfalls die Wiederherstellung einer Commerce-Instanz benötigt, kann Adobe dem Kunden Sicherungsdateien zur Verfügung stellen. Der Kunde und ggf. der Lösungsintegrator können die Wiederherstellung durchführen.
+Wenn ein Kunde aufgrund eines Systemausfalls die Wiederherstellung einer Commerce-Instanz benötigt, kann Adobe dem Kunden Sicherungsdateien bereitstellen. Der Kunde und ggf. der Lösungsintegrator können die Wiederherstellung durchführen.
 
 Als Teil eines Disaster Recovery-Plans empfiehlt Adobe Kunden dringend, [ihre Adobe Commerce-Anwendungskonfiguration zu exportieren](../../../configuration/cli/export-configuration.md) um die erneute Bereitstellung zu erleichtern, wenn sie für Business Continuity-Zwecke erforderlich ist. Der Hauptgrund für den Export der Konfiguration in das Dateisystem besteht darin, dass die Systemkonfiguration Vorrang vor der Datenbankkonfiguration hat. In einem schreibgeschützten Dateisystem muss die Anwendung erneut bereitgestellt werden, um vertrauliche Konfigurationseinstellungen zu ändern und so eine zusätzliche Schutzschicht zu bieten.
 
@@ -109,9 +109,9 @@ Als Teil eines Disaster Recovery-Plans empfiehlt Adobe Kunden dringend, [ihre Ad
 
 **In der Cloud-Infrastruktur bereitgestellte Adobe Commerce**
 
-- [Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=de#backup-and-disaster-recovery)
+- [Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
 
-- [Store-Konfigurationsverwaltung für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=de)
+- [Store-Konfigurationsverwaltung für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html)
 
 **Adobe Commerce lokal bereitgestellt**
 
@@ -129,17 +129,17 @@ In diesem Abschnitt werden Best Practices für die Gewährleistung der Site- und
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Web Application Firewall verwenden** - Analysieren Sie den Traffic und entdecken Sie verdächtige Muster, z. B. Kreditkarteninformationen, die mithilfe einer Web Application Firewall an eine unbekannte IP-Adresse gesendet werden.
 
-Adobe Commerce-Installationen, die auf der Cloud-Infrastruktur bereitgestellt werden, können integrierte WAF-Services nutzen, die mit der [Fastly Services-Integration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=de)
+Adobe Commerce-Installationen, die auf der Cloud-Infrastruktur bereitgestellt werden, können integrierte WAF-Services nutzen, die mit der [Fastly Services-Integration](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 
-![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Erweiterte Kennwortsicherheitseinstellungen konfigurieren** - Richten Sie sichere Kennwörter ein und ändern Sie diese mindestens alle 90 Tage, wie vom PCI-Datensicherheitsstandard in Abschnitt 8.2.4 empfohlen. Siehe [Konfigurieren von Admin-Sicherheitseinstellungen](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=de).
+![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Erweiterte Kennwortsicherheitseinstellungen konfigurieren** - Richten Sie sichere Kennwörter ein und ändern Sie diese mindestens alle 90 Tage, wie vom PCI-Datensicherheitsstandard in Abschnitt 8.2.4 empfohlen. Siehe [Konfigurieren von Admin-Sicherheitseinstellungen](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **HTTPS verwenden** - Wenn die Commerce-Site neu implementiert ist, starten Sie die gesamte Site mit HTTPS. Google verwendet nicht nur HTTPS als Ranking-Faktor, sondern viele Benutzende erwägen sogar, von einer Site zu kaufen, es sei denn, sie ist mit HTTPS gesichert.
 
-## Protect vor Malware
+## Schutz vor Malware
 
 Malware-Angriffe auf E-Commerce-Websites sind nur allzu verbreitet, und Bedrohungsakteure entwickeln ständig neue Möglichkeiten, Kreditkarten- und personenbezogene Daten aus Transaktionen zu sammeln.
 
-Adobe hat jedoch herausgefunden, dass die meisten Site-Kompromisse nicht auf einen innovativen Hacker zurückzuführen sind. Stattdessen nutzen Bedrohungsakteure häufig bestehende, ungepatchte Sicherheitslücken, fehlerhafte Passwörter sowie schwache Eigentums- und Berechtigungseinstellungen im Dateisystem.
+Adobe hat jedoch festgestellt, dass die meisten Site-Kompromisse nicht auf einen innovativen Hacker zurückzuführen sind. Stattdessen nutzen Bedrohungsakteure häufig bestehende, ungepatchte Sicherheitslücken, fehlerhafte Passwörter sowie schwache Eigentums- und Berechtigungseinstellungen im Dateisystem.
 
 Bei den häufigsten Angriffen wird bösartiger Code in die absolute Kopf- oder Fußzeile eines Kundengeschäfts eingefügt. Dort erfasst der Code Formulardaten, die ein Kunde in die Storefront eingibt, einschließlich Kunden-Anmeldedaten und Checkout-Formulardaten. Diese Daten werden dann zu böswilligen Zwecken an einen anderen Speicherort und nicht an das Commerce-Backend gesendet. Außerdem kann Malware den Admin dazu bringen, Code auszuführen, der das ursprüngliche Zahlungsformular durch ein gefälschtes Formular ersetzt, das alle vom Zahlungsanbieter festgelegten Schutzmechanismen überschreibt.
 
@@ -168,17 +168,17 @@ Nachfolgend finden Sie eine Liste mit häufigen Angriffskategorien, die Adobe al
 
 - **Stille Schlüsselerfassung**: Der Bedrohungsakteur installiert Schlüsselerfassungscode auf dem Kundenserver, um Administratorberechtigungen zu erfassen, damit er sich anmelden und andere Angriffe ausführen kann, ohne entdeckt zu werden.
 
-### Protect gegen Angriffe durch das Erraten von Passwörtern
+### Schützen vor Angriffen durch das Erraten von Passwörtern
 
-Das Erraten von Brute-Force-Passwörtern kann zu unbefugtem Administratorzugriff führen. Protect Befolgen Sie die folgenden Best Practices, um Ihre Site vor diesen Angriffen zu schützen:
+Das Erraten von Brute-Force-Passwörtern kann zu unbefugtem Administratorzugriff führen. Schützen Sie Ihre Site vor diesen Angriffen, indem Sie die folgenden Best Practices befolgen:
 
 - Identifizieren und schützen Sie alle Stellen, an denen die Commerce-Installation von außen zugänglich ist.
 
-  Sie können den Zugriff auf den Administrator, der in der Regel den höchsten Schutz benötigt, sicherstellen, indem Sie bei der Konfiguration Ihres Commerce[Projekts die Prioritätsempfehlungen](#priority-recommendations) der Adobe befolgen.
+  Sie können den Zugriff auf den Administrator, der im Allgemeinen den höchsten Schutz benötigt, sicherstellen, indem Sie bei der Konfiguration Ihres Commerce[Projekts die Prioritätsempfehlungen](#priority-recommendations) von Adobe befolgen.
 
 - Steuern Sie den Zugriff auf die Commerce-Site, indem Sie eine Zugriffssteuerungsliste einrichten, die nur den Zugriff für Benutzer von einer bestimmten IP-Adresse oder einem bestimmten Netzwerk ermöglicht.
 
-  Sie können eine Fastly Edge ACL mit einem benutzerdefinierten VCL-Code-Fragment verwenden, um eingehende Anfragen zu filtern und den Zugriff nach IP-Adresse zuzulassen. Siehe [Benutzerdefinierte VCL zum Zulassen von Anfragen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html?lang=de).
+  Sie können eine Fastly Edge ACL mit einem benutzerdefinierten VCL-Code-Fragment verwenden, um eingehende Anfragen zu filtern und den Zugriff nach IP-Adresse zuzulassen. Siehe [Benutzerdefinierte VCL zum Zulassen von Anfragen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-allowlist.html).
 
 
   >[!TIP]
@@ -187,4 +187,4 @@ Das Erraten von Brute-Force-Passwörtern kann zu unbefugtem Administratorzugriff
 
 ### Verhindern von Clickjacking-Angriffen
 
-Adobe schützt Ihren Store vor Clickjacking-Angriffen, indem Sie den `X-Frame-Options` HTTP-Anfrage-Header bereitstellen, den Sie in Anfragen an Ihre Storefront einbeziehen können. Siehe [Verhindern von Clickjacking](../../../configuration/security/xframe-options.md) im *Adobe Commerce-Konfigurationshandbuch*.
+Adobe schützt Ihren Store vor Clickjacking-Angriffen, indem es die `X-Frame-Options` HTTP-Anfrage-Kopfzeile bereitstellt, die Sie in Anfragen an Ihre Storefront einbeziehen können. Siehe [Verhindern von Clickjacking](../../../configuration/security/xframe-options.md) im *Adobe Commerce-Konfigurationshandbuch*.

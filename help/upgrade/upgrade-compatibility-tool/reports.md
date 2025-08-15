@@ -4,7 +4,7 @@ description: Führen Sie diese Schritte aus, um das  [!DNL Upgrade Compatibility
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -96,13 +96,13 @@ Sie können im Bericht angezeigte Probleme nach der Mindestproblemstufe filtern 
 
 In einem Dropdown-Menü oben rechts können Sie eine andere Ebene auswählen. Die Liste der identifizierten Probleme wird entsprechend gefiltert.
 
-![HTML-Bericht - Dropdown-Verwendung](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![HTML-Bericht - Dropdown-Nutzung](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
 > Die Probleme mit niedrigerer Anfrageebene werden entfernt, Sie erhalten jedoch eine Benachrichtigung, damit Sie immer über die identifizierten Probleme pro Modul informiert sind.
 
-Der HTML-Bericht umfasst außerdem vier verschiedene Grafiken:
+Der HTML-Bericht enthält außerdem vier verschiedene Diagramme:
 
 - **Module nach Problemschweregrad**: Zeigt die Schweregradverteilung nach Modulen an.
 - **Dateien nach Schweregrad des Problems**: Zeigt die Verteilung des Schweregrads nach Dateien an.

@@ -31,4 +31,4 @@ Die Registerkarte [!DNL Extensions] im [!DNL Site-Wide Analysis Tool] enthält I
 
 * Wenn Sie die [!DNL extensions] von Drittanbietern nicht auf dem neuesten Stand halten können, sollten Sie andere [!DNL extensions] verwenden.
 
-* Um potenzielle Probleme zu vermeiden, laden Sie [!DNL extensions] von Drittanbietern von einer vertrauenswürdigen Quelle herunter bzw. kaufen Sie sie, z. B. [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+* Um potenzielle Probleme zu vermeiden, laden Sie [!DNL extensions] von Drittanbietern von einer vertrauenswürdigen Quelle wie [Commerce Marketplace herunter bzw. ](https://marketplace.magento.com/extensions.html) Sie sie.

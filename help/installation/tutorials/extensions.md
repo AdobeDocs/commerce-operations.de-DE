@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Erweiterungen von Drittanbietern verwalten
 
-Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional auf der [Commerce Marketplace oder ](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystemen verpacken und verteilen.
+Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional im [Commerce Marketplace oder ](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystem verpacken und verteilen.
 
 Zu den Erweiterungen gehören:
 
@@ -20,7 +20,7 @@ Zu den Erweiterungen gehören:
 - Designs (Ändern des Erscheinungsbilds Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Lokalisieren der Storefront und Admin)
 
-In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie von der Commerce Marketplace für _On-Premise_-Projekte erwerben. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Sie können dieselbe Vorgehensweise verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie dazu die `composer.json`-Datei der Erweiterung und notieren Sie sich die Werte für `"name"` und `"version"`.
 
@@ -37,8 +37,8 @@ Vor der Installation sollten Sie Folgendes tun:
 
 Um eine Erweiterung zu installieren, müssen Sie:
 
-1. Erhalten Sie eine Erweiterung von der Commerce Marketplace oder einem anderen Erweiterungsentwickler.
-1. Wenn Sie eine Erweiterung von der Commerce Marketplace installieren, stellen Sie sicher, dass das `repo.magento.com`-Repository in Ihrer `composer.json` vorhanden ist:
+1. Erhalten Sie eine Erweiterung vom Commerce Marketplace oder einem anderen Erweiterungsentwickler.
+1. Wenn Sie eine Erweiterung über die Commerce Marketplace installieren, stellen Sie sicher, dass das `repo.magento.com`-Repository in Ihrer `composer.json` vorhanden ist:
 
    ```bash
    "repositories": [
@@ -58,7 +58,7 @@ Um eine Erweiterung zu installieren, müssen Sie:
 
 Wenn Sie den Namen und die Version der Erweiterung „Composer“ bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit &quot;[ der `composer.json`-Datei“ ](#update-composer-dependencies).
 
-So rufen Sie den Composer-Namen und die Version der Erweiterung von der Commerce Marketplace ab:
+So rufen Sie den Namen und die Version der Erweiterung „Composer“ aus Commerce Marketplace ab:
 
 1. Melden Sie sich bei [Commerce Marketplace](https://commercemarketplace.adobe.com/) mit dem Benutzernamen und Kennwort an, mit dem Sie die Erweiterung erworben haben.
 
@@ -76,7 +76,7 @@ So rufen Sie den Composer-Namen und die Version der Erweiterung von der Commerce
 
 >[!TIP]
 >
->Alternativ können Sie den Composer-Namen und die Version der _any_-Erweiterung (unabhängig davon, ob Sie sie auf Commerce Marketplace oder an einem anderen Ort gekauft haben) in der `composer.json` der Erweiterung finden.
+>Alternativ können Sie den Composer-Namen und die Version der _any_-Erweiterung (unabhängig davon, ob Sie sie in Commerce Marketplace oder an einem anderen Ort erworben haben) in der `composer.json` der Erweiterung finden.
 
 ### Aktualisieren von Composer-Abhängigkeiten
 

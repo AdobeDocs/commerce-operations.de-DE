@@ -4,7 +4,7 @@ description: Führen Sie diese Schritte aus, um anzupassen, was Kundinnen und Ku
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ if (isset($_GET['skin'])) {
 
 Dies kann auch zu einer Rewrite-Regel in der `.htaccess`-Datei hinzugefügt werden, die einen `skin` Parameter an die URL anhängt.
 
-### $_GET[&#39;skin]Parameter
+### $_GET[&#39;] Parameter
 
 So verwenden Sie den `skin`:
 

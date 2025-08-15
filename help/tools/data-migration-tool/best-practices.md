@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In diesem Abschnitt finden Sie die besten Empfehlungen zur Beschleunigung und Vereinfachung Ihrer Migration sowie Anleitungen dazu, wie viel Zeit dies in Anspruch nehmen kann.
 
-* **Verwenden Sie bei der Durchführung von Migrationstests eine Kopie** Datenbank von einer Magento 1-Instanz. Verwenden Sie nicht die Produktionsinstanz Ihrer Magento 1-Speicherdatenbank.
+* **Verwenden Sie bei der Durchführung von Migrationstests eine Kopie** Datenbank aus einer Magento 1-Instanz. Verwenden Sie nicht die Produktionsinstanz Ihrer Magento 1-Speicherdatenbank.
 
 * **Entfernen Sie vor der Migration veraltete und redundante** aus Ihrer Magento 1-Datenbank.
 
@@ -31,7 +31,7 @@ Zu diesen Daten können Protokolle, Bestellangebote, kürzlich angesehene oder v
 
 >[!NOTE]
 >
->Sowohl die Magento 1- als auch die Magento 2-Datenbank müssen sich auf demselben MySQL-Server befinden, und das Datenbankkonto muss Zugriff auf beide Datenbanken haben.
+>Sowohl Magento 1- als auch Magento 2-Datenbanken müssen sich auf demselben MySQL-Server befinden und das Datenbankkonto muss Zugriff auf beide Datenbanken haben.
 
 ## Benchmarking-Schätzungen
 

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-66084: &grave;row_total_incl_tax&grave; gibt für vollständig reduzierte Artikel in der Auftrags-API nahezu null anstelle von 0,00 zurück'
+title: 'ACSD-66084: `row_total_incl_tax` gibt für vollständig reduzierte Artikel in der Auftrags-API nahezu null anstelle von 0,00 zurück'
 description: Wenden Sie den Patch ACSD-66084 an, um das Adobe Commerce-Problem zu beheben, bei dem „row_total_incl_tax“ für vollständig reduzierte Elemente in der Antwort der Auftrags-API als Restwert von nahezu 0,00 zurückgegeben wurde.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-66084 wird das Problem behoben, dass `row_total_incl_tax` in 
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -61,7 +61,7 @@ Der `row_total_incl_tax` wird in der Antwort der Auftrags-API als Restwert nahe 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

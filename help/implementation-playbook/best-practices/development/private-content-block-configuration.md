@@ -26,9 +26,9 @@ Anstatt die Variable `_isScopePrivate` für private Inhalte zu verwenden, erstel
 
 ## Potenzielle Auswirkungen auf die Leistung
 
-Websites mit privaten Inhaltsblöcken, die die `_isScopePrivate` Variablen enthalten Trigger-AJAX-Anfragen , um für jede Kundenanfrage dieselben Daten abzurufen. Dies erhöht die Reaktionszeit und verwendet zusätzliche Ressourcen, die für geschäftskritischere Vorgänge in der Storefront verwendet werden können, z. B. für die Kundenregistrierung, Warenkorbaktualisierungen, die Übermittlung von Bestellungen und Zahlungsvorgänge.
+Websites mit privaten Inhaltsblöcken, die die `_isScopePrivate` Variablen enthalten, die Trigger AJAX anfordert, für jede Kundenanfrage dieselben Daten abzurufen. Dies erhöht die Reaktionszeit und verwendet zusätzliche Ressourcen, die für geschäftskritischere Vorgänge in der Storefront verwendet werden können, z. B. für die Kundenregistrierung, Warenkorbaktualisierungen, die Übermittlung von Bestellungen und Zahlungsvorgänge.
 
 ## Weitere Informationen
 
 - [Privater Inhalt](../../../performance/configuration.md#client-side-optimization-settings)
-- [AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=de)
+- [AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

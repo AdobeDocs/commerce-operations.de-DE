@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Klonen von Beispieldaten zu Git-Repositorys
 
-In diesem Abschnitt wird beschrieben, wie Sie Beispieldaten klonen und hinzufügen, wenn Sie das GitHub-Repository von Magento Open Source geklont haben. Diese Methode ist nur für beitragende Entwickler vorgesehen (d. h. für Entwickler, die einen Beitrag zur Magento Open Source-Code-Basis leisten möchten).
+In diesem Abschnitt wird beschrieben, wie Sie Beispieldaten klonen und hinzufügen, wenn Sie das Magento Open Source GitHub-Repository geklont haben. Diese Methode ist nur für beitragende Entwickler vorgesehen (d. h. für Entwickler, die Beiträge zur Magento Open Source-Code-Basis leisten möchten).
 
 Wenn Sie kein beitragender Entwickler sind, wählen Sie eine der anderen Optionen, die im Inhaltsverzeichnis links auf der Seite angezeigt werden.
 
@@ -22,7 +22,7 @@ Mitwirkende Entwickler können diese Methode zum Installieren von Beispieldaten 
 
 >[!WARNING]
 >
->Sie können Beispieldaten entweder mit der `develop` Verzweigung (aktueller) oder mit einer freigegebenen Verzweigung (z. B. `2.4` (stabiler)) verwenden. Es wird empfohlen, eine freigegebene Verzweigung zu verwenden, da sie stabiler ist. Wenn Sie Code zum Repository beitragen und den neuesten Code benötigen, verwenden Sie die `develop`. Unabhängig von der ausgewählten Verzweigung müssen Sie [ entsprechende Verzweigung ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) GitHub-Repository von Magento Open Source (klonen). Beispielsweise können Beispieldaten für die `develop` Verzweigung (nur *)* die Magento Open Source `develop` Verzweigung verwendet werden.
+>Sie können Beispieldaten entweder mit der `develop` Verzweigung (aktueller) oder mit einer freigegebenen Verzweigung (z. B. `2.4` (stabiler)) verwenden. Es wird empfohlen, eine freigegebene Verzweigung zu verwenden, da sie stabiler ist. Wenn Sie Code zum Repository beitragen und den neuesten Code benötigen, verwenden Sie die `develop`. Unabhängig von der ausgewählten Verzweigung müssen Sie [ entsprechende Verzweigung ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open Source GitHub-Repositorys klonen. Beispielsweise können Beispieldaten für die `develop` Verzweigung (nur *)* der Magento Open Source-`develop` verwendet werden.
 
 ## Klonen Sie das Beispieldaten-Repository.
 
@@ -71,7 +71,7 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem SSH-Protokoll:
 
    Beispiel:
 
-   Wenn Sie die `2.4-develop` Verzweigung des Magento Open Source-GitHub-Repositorys verwendet haben, sollte die Beispieldatenverzweigung `2.4-develop` werden.
+   Wenn Sie die `2.4-develop` Verzweigung des Magento Open Source GitHub-Repositorys verwendet haben, sollte die Beispieldatenverzweigung `2.4-develop` werden.
 
    Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldaten-Repositorys aus (vorausgesetzt, Sie benötigen die `2.4-develop` Verzweigung):
 
@@ -125,7 +125,7 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem HTTPS-Protokoll:
 
    Beispiel:
 
-   Wenn Sie die `2.4-develop` Verzweigung des Magento Open Source-GitHub-Repositorys verwendet haben, sollte die Beispieldatenverzweigung `2.4-develop` werden.
+   Wenn Sie die `2.4-develop` Verzweigung des Magento Open Source GitHub-Repositorys verwendet haben, sollte die Beispieldatenverzweigung `2.4-develop` werden.
 
    Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldaten-Repositorys aus (vorausgesetzt, Sie benötigen die `2.4-develop` Verzweigung):
 
@@ -159,7 +159,7 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem HTTPS-Protokoll:
 
 ## Festlegen von Dateisystemeigentum und -berechtigungen
 
-Da das `php build-sample-data.php`-Skript Symlinks zwischen dem Beispieldaten-Repository und Ihrem Magento Open Source-Repository erstellt, müssen Sie die Dateisystemberechtigungen und den Besitz im Beispieldaten-Repository festlegen. Andernfalls tritt ein Fehler beim Zugriff auf die Storefront auf.
+Da das `php build-sample-data.php`-Skript Symlinks zwischen dem Beispieldaten-Repository und Ihrem Magento Open Source-Repository erstellt, müssen Sie die Dateisystemberechtigungen und die Eigentümerschaft im Beispieldaten-Repository festlegen. Andernfalls tritt ein Fehler beim Zugriff auf die Storefront auf.
 
 So legen Sie Dateisystemberechtigungen und die Eigentümerschaft für das Beispieldaten-Repository fest:
 

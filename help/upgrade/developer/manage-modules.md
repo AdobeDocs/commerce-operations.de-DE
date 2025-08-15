@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Mitwirkende Entwickelnde aktualisieren Module und Erweiterungen, indem sie ihre Versionen in der Adobe Commerce-`composer.json` angeben. Wenn Sie kein beitragender Entwickler sind, lesen Sie [Durchführen eines Upgrades](../implementation/perform-upgrade.md).
 
-Sie können der `composer.json`-Datei entweder einen `require` Abschnitt hinzufügen oder den `composer require` Befehl wie folgt verwenden:
+Sie können der `require`-Datei entweder einen `composer.json` Abschnitt hinzufügen oder den `composer require` Befehl wie folgt verwenden:
 
 {{$include /help/_includes/server-login.md}}
 

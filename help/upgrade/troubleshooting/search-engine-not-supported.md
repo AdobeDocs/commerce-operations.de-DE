@@ -21,7 +21,7 @@ Your current search engine, <Engine Name>, is not supported. You must install a 
 Dieser Fehler bedeutet, dass eine der folgenden Bedingungen für die reduzierte Version von Adobe Commerce zutrifft:
 
 - Die Suchmaschine ist auf MySQL eingestellt.
-- Die Suchmaschine ist auf eine Version des Elasticsearchs eingestellt, die nicht mehr unterstützt wird.
+- Die Suchmaschine ist auf eine Version von Elasticsearch eingestellt, die nicht mehr unterstützt wird.
 
 Verwenden Sie den folgenden Befehl, um die aktuelle Suchmaschine zu überprüfen:
 
@@ -43,7 +43,7 @@ Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql`, `elasticsearch` ode
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Dabei ist `<version>` die Magento-Version, die Sie vor **Upgrade** haben. Beispiel: `2.3.5`.
+>`<version>` ist die Version von Magento, die Sie vor **Upgrade** haben. Beispiel: `2.3.5`.
 
 Befolgen Sie die in den folgenden Abschnitten beschriebenen Richtlinien, um einen inkonsistenten Zustand wiederherzustellen.
 
@@ -62,11 +62,11 @@ Nachdem Sie die Suchmaschine konfiguriert und neu indiziert haben, können Sie a
 
 Elasticsearch 6 und früher werden nicht mehr unterstützt.
 
-Der Wert `elasticsearch` gibt an, dass Ihre Adobe Commerce-Version auf untergeordneter Ebene für die Verwendung von Elasticsearch 2.x konfiguriert ist. Diese Elasticsearch-Version wird nicht mehr unterstützt.
+Der Wert `elasticsearch` gibt an, dass Ihre Adobe Commerce-Version auf untergeordneter Ebene für die Verwendung von Elasticsearch 2.x konfiguriert ist. Diese Version von Elasticsearch wird nicht mehr unterstützt.
 
 Sie müssen die folgenden Aufgaben ausführen, bevor Sie ein Upgrade auf 2.4 durchführen:
 
-1. Aktualisieren Sie auf eine Version des Elasticsearchs, die von Commerce unterstützt wird. Unter [Elasticsearch aktualisieren](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) finden Sie vollständige Anweisungen zum Sichern Ihrer Daten, Erkennen potenzieller Migrationsprobleme und Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version des Elasticsearchs kann ein vollständiger Neustart des Clusters erforderlich sein oder nicht.
+1. Aktualisieren Sie auf eine Version von Elasticsearch, die von Commerce unterstützt wird. Unter [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) finden Sie vollständige Anweisungen zum Sichern Ihrer Daten, Erkennen potenzieller Migrationsprobleme und Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch kann ein vollständiger Cluster-Neustart erforderlich sein oder nicht.
 
    >[!NOTE]
    >

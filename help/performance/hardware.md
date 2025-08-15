@@ -1,5 +1,5 @@
 ---
-title: Hardware-Recommendations
+title: Hardware-Empfehlungen
 description: Überprüfen Sie eine Liste empfohlener Hardware im Zusammenhang mit der optimalen Leistung von Adobe Commerce-Bereitstellungen.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
@@ -26,7 +26,7 @@ Wenn Sie erwarten, dass sich die Auslastung eines Stores ändert, können Sie di
 
 ### PHP
 
-Magento hat unterschiedliche PHP-Speicheranforderungen, je nachdem, wie Ihr System bereitgestellt wird.  Wenn Sie einen einzelnen Server-Store einrichten, empfehlen wir im Allgemeinen die Konfiguration des PHP-Speichers für 2G.  Wenn Sie eine Site mithilfe der Pipeline-Bereitstellung einrichten, empfehlen wir 2 GB auf Ihrem Build-Server und 1 GB auf Ihren Web-Knoten.
+Magento hat unterschiedliche PHP-Speicheranforderungen, die davon abhängen, wie Ihr System bereitgestellt wird.  Wenn Sie einen einzelnen Server-Store einrichten, empfehlen wir im Allgemeinen die Konfiguration des PHP-Speichers für 2G.  Wenn Sie eine Site mithilfe der Pipeline-Bereitstellung einrichten, empfehlen wir 2 GB auf Ihrem Build-Server und 1 GB auf Ihren Web-Knoten.
 
 Szenarien und erwartete PHP-Speicheranforderungen:
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 Der Patch ACSD-63283 behebt das Problem, dass das Sortieren von Elementen aus dem [!UICONTROL Gift Registry] eine Ausnahme verursacht und sicherstellt, [!UICONTROL Gift Registry Updates] nur die richtigen Elemente enthalten sind. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58 installiert ist. Die Patch-ID ist ACSD-63283. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 >[!NOTE]
->Dieser Patch ersetzt und erweitert den [ACSD-56280](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed) QPT-Patch.
+>Dieser Patch ersetzt und erweitert den [ACSD-56280](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed) QPT-Patch.
 
 ## Betroffene Produkte und Versionen
 
@@ -31,7 +31,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -45,7 +45,7 @@ Zwei wichtige Probleme wirken sich auf die [!UICONTROL Gift Registry] in Adobe C
 1. Erstellen Sie zwei Produkte: Produkt A und Produkt B.
 1. Erstellen Sie zwei Kunden: Kunde A und Kunde B.
 1. Melden Sie sich als Kunde A an und erstellen Sie ein neues [!UICONTROL Gift Registry].
-1. Navigieren Sie zur Produktseite von Produkt A und fügen Sie sie zum [!UICONTROL Wishlist] hinzu. Öffnen Sie die [!UICONTROL Wishlist Page] und verschieben Sie Produkt A mithilfe von [!UICONTROL Add to Gift Registry] in die [!UICONTROL Gift Registry].
+1. Navigieren Sie zur Produktseite von Produkt A und fügen Sie sie zum [!UICONTROL Wishlist] hinzu. Öffnen Sie die [!UICONTROL Wishlist Page] und verschieben Sie Produkt A mithilfe von [!UICONTROL Gift Registry] in die [!UICONTROL Add to Gift Registry].
 1. Melden Sie sich als Kunde B an, erstellen Sie ein neues [!UICONTROL Gift Registry] und fügen Sie Produkt B hinzu.
 1. Geben Sie als Kunde B die [!UICONTROL Gift Registry] per E-Mail frei: **[!UICONTROL My Account]> [!UICONTROL Gift Registry] >[!UICONTROL Share]**.
 1. Melden Sie sich als Kunde B ab.
@@ -64,7 +64,7 @@ Kunde B erhält die E-Mail mit Artikeln aus allen Geschenkregistern.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen

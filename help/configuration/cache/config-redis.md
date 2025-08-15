@@ -33,7 +33,7 @@ Abhängig von Ihrer Installation finden Sie Ihre Redis-Konfiguration in der Rege
 
 Um die Redis-Instanz für Ihre Anforderungen zu optimieren, erzielen Sie die besten Ergebnisse, indem Sie für jede Sitzung eine dedizierte Instanz, Commerce-Cache und FPC verwenden.
 
-Für Sitzungen empfiehlt Adobe, die Persistenz zu aktivieren, um Redis-Daten mithilfe einer der folgenden Persistenzoptionen auf die Festplatte zu kopieren: reguläre Redis-Datenbank-Backup-Snapshots (RDB) oder Nur-Datei-Persistenzprotokolle (AOF).
+Für -Sitzungen empfiehlt Adobe, die Persistenz zu aktivieren, um Redis-Daten mithilfe einer der folgenden Persistenzoptionen auf die Festplatte zu kopieren: reguläre Redis-Datenbank-Backup-Snapshots (RDB) oder Nur-Datei-Persistenzprotokolle (AOF).
 
 - **Redis Database Backup** (RDB)-Snapshots speichern die vollständige Datenbank nach einer bestimmten Zeit, wenn sich eine Mindestanzahl von Schlüsseln seit dem letzten Speichern geändert hat, in einer Dump-Datei. Verwenden Sie die `save` in der `redis.conf`, um diese Einstellung zu konfigurieren.
 

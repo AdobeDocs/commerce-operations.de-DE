@@ -23,7 +23,7 @@ Nach dem Sichern können Sie später [Rollback](#rollback).
 
 >[!TIP]
 >
->Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
+>Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
 
 ## Aktivieren von Backups
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Hinweis zu veralteten Versionen:**
->Die Backup-Funktion ist seit 2.1.16, 2.2.7 und 2.3.0 veraltet. Wir empfehlen, zusätzliche Backup-Technologien und binäre Backup-Tools (wie Percona XtraBackup) zu untersuchen.
+>>Die Backup-Funktion ist seit 2.1.16, 2.2.7 und 2.3.0 veraltet. Wir empfehlen, zusätzliche Backup-Technologien und binäre Backup-Tools (wie Percona XtraBackup) zu untersuchen.
 
 ## Festlegen des Limits für geöffnete Dateien
 
@@ -78,7 +78,7 @@ Um optional den Wert in der Bash-Shell des Benutzers festzulegen:
 
 >[!WARNING]
 >
->Es wird empfohlen, in der `php.ini`-Datei keinen Wert für [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
+>Es wird empfohlen, in der [`pcre.recursion_limit`-Datei keinen Wert für ](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
 
 ## Sichern
 

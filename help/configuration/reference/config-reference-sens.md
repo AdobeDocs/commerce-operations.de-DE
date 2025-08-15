@@ -146,13 +146,13 @@ Diese Konfigurationswerte sind in der Admin-Liste unter **Stores** > Einstellung
 | Hostname des Elasticsearch-Servers | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch-Server-Port | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Elasticsearch-Indexpräfix | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Elasticsearch-HTTP-Authentifizierung aktivieren | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch HTTP-Authentifizierung aktivieren | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP-Benutzername | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP-Kennwort | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
-| Zeitüberschreitung des Elasticsearch-Servers | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch-Server-Zeitüberschreitung | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP-Benutzername | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Elasticsearch HTTP-Kennwort | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
-| Zeitüberschreitung des Elasticsearch-Servers | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
+| Elasticsearch-Server-Zeitüberschreitung | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) |
 | Hostname des OpenSearch-Servers | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
 | OpenSearch-Server-Port | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
 | OpenSearch-Indexpräfix | `catalog/search/opensearch_index_prefix` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Sys-spezifisch](/help/assets/configuration/cloud-env.png) | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
@@ -464,7 +464,7 @@ In diesem Abschnitt werden Variablennamen und Konfigurationspfade aufgelistet, d
 
 {style="table-layout:auto"}
 
-### Braintree sensibler und systemspezifischer Pfade
+### Sensible und systemspezifische Pfade für Braintree
 
 | -Name | Konfigurationspfad | Nur Commerce? | Verschlüsselt? | Systemspezifisch? | Sensibel? |
 |--------------|--------------|--------------|--------------|--------------|--------------|

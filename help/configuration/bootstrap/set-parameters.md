@@ -15,7 +15,7 @@ Dieses Thema zeigt, wie Sie die Werte der Bootstrap-Parameter von Commerce-Anwen
 
 In der folgenden Tabelle werden die Bootstrap-Parameter erläutert, die Sie festlegen können:
 
-| Bootstrap Parameter | Beschreibung |
+| Bootstrap-Parameter | Beschreibung |
 | ------------------- | -------------------------------------------- |
 | MAGE_DIRS | Gibt benutzerdefinierte Verzeichnis- und URL-Pfade an |
 | MAGE_PROFILER | Aktiviert Abhängigkeitsdiagramme und HTML-Profilerstellung |

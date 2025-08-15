@@ -6,7 +6,7 @@ topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -14,18 +14,18 @@ ht-degree: 4%
 # Aktualisierungshandbuch {#upgrade-guide}
 
 - [Überblick über den Upgrade-Prozess](overview.md)
-- Upgrade von Journey {#journey}
+- Upgrade-Journey {#journey}
    - [Journey](journey/phases.md)
    - [Projektstart](journey/project-launch.md)
    - [Jahresplanung](journey/annual-planning.md)
    - [Implementierung](journey/implementation.md)
-- {#prepare}
+- Vorbereitung {#prepare}
    - [Best Practices](prepare/best-practices.md)
    - [Plattformänderungen überprüfen](prepare/platform-changes.md)
    - [Voraussetzungen für ein vollständiges Upgrade](prepare/prerequisites.md)
    - [Migrieren von Elasticsearch zu OpenSearch](prepare/opensearch-migration.md)
    - [Upgrade-Umfang verstehen](prepare/scope.md)
-- {#implementation}
+- Implementierung {#implementation}
    - [Durchführen eines Upgrades](implementation/perform-upgrade.md)
 - Module und Erweiterungen {#modules}
    - [Upgrade von Modulen](modules/upgrade.md)
@@ -34,13 +34,13 @@ ht-degree: 4%
    - [Funktionsweise von Patches](patches/overview.md)
    - [Patches anwenden](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [Übersicht](upgrade-compatibility-tool/overview.md)
+   - [Überblick](upgrade-compatibility-tool/overview.md)
    - [Systemanforderungen](upgrade-compatibility-tool/prerequisites.md)
-   - Verwenden der [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+   - [!DNL Upgrade Compatibility Tool] verwenden {#use-upgrade-compatibility-tool}
       - [Ausführen des Tools in einer Befehlszeilenschnittstelle](upgrade-compatibility-tool/run.md)
       - [Integration mit dem  [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
       - [Ausführen des Tools im Magento PHPStorm-Plug-in](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
-   - {#reporting}
+   - Berichterstellung {#reporting}
       - [Berichte](upgrade-compatibility-tool/reports.md)
       - [Fehlermeldungen](upgrade-compatibility-tool/error-messages.md)
    - [Verwandte Tools](upgrade-compatibility-tool/related-tools.md)
@@ -51,7 +51,7 @@ ht-degree: 4%
    - [Aktuelle Suchmaschine wird nicht unterstützt](troubleshooting/search-engine-not-supported.md)
    - [Zurücksetzen nach fehlgeschlagener Modulaktualisierung](troubleshooting/roll-back-after-update-failure.md)
    - [Wartungsmodusoptionen für das Upgrade](troubleshooting/maintenance-mode-options.md)
-- Ressourcen-{#resources}
+- Ressourcen {#resources}
    - [Empfohlene Lektüre](resources/recommended-reading.md)
    - [Plattform mit Adobe Commerce modernisieren](resources/recommended-upgrade-paths.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -6,7 +6,7 @@ badge: label="Ein Beitrag von David Lambauer" type="Informative" url="https://gi
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Ein `<section>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 | Knoten | Beschreibung | Typ |
 |------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------|
 | `label` | Definiert die Bezeichnung, die im Frontend angezeigt wird. | `string` |
-| `class` | Fügt dem gerenderten HTML-Element des Abschnitts eine definierte CSS-Klasse hinzu. | `string` |
+| `class` | Fügt eine definierte CSS-Klasse zum gerenderten HTML-Element des Abschnitts hinzu. | `string` |
 | `tab` | Verweist auf die zugehörige Registerkarte. Erwartet die ID der Registerkarte. | `typeTabId` |
 | `header_css` | Zum Zeitpunkt dieses Schreibens weder verwendet noch ausgewertet. | `string` |
 | `resource` | Verweist auf eine ACL-Ressource, um Berechtigungseinstellungen für diesen Abschnitt bereitzustellen. | `typeAclResourceId` |
@@ -176,7 +176,7 @@ Ein `<group>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 | `help_url` | Nicht erweiterbar. Siehe unten. | `typeUrl` |
 | `more_url` | Nicht erweiterbar. Siehe unten. | `typeUrl` |
 | `demo_link` | Nicht erweiterbar. Siehe unten. | `typeUrl` |
-| `comment` | Fügt unterhalb der Gruppenbeschriftung einen Kommentar ein. Durch Verwendung `<![CDATA[//]]>` HTML angewendet werden kann. | `string` |
+| `comment` | Fügt unterhalb der Gruppenbeschriftung einen Kommentar ein. Durch Verwendung von `<![CDATA[//]]>` kann HTML angewendet werden. | `string` |
 | `hide_in_single_store_mode` | Gibt an, ob die Gruppe im Einzelspeichermodus angezeigt werden soll. `1` blendet die Gruppe aus, `0` zeigt die Gruppe an. | `int` |
 | `field` | Definieren Sie ein oder mehrere Felder, die unter dieser Gruppe verfügbar sein sollen. | `field` |
 | `group` | Eine oder mehrere Untergruppen definieren. | `unbounded` |
@@ -248,8 +248,8 @@ Ein `<field>`-Tag kann die folgenden Werte für das `type=""` haben:
 | `select` | Normales Dropdown-Menü, erfordert möglicherweise ein benutzerdefiniertes `source_model`. Wird auch für `Yes/No` Auswahlen verwendet. Ein Beispiel finden Sie unter `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` . |
 | `multiselect` | Wie `select`, aber mehrere Optionen sind gültig. |
 | `button` | Eine Schaltfläche, die ein sofortiges Ereignis Trigger. Erfordert ein benutzerdefiniertes Frontend-Modell, um den Schaltflächentext und die Aktion zu definieren. Ein Beispiel finden Sie unter `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` . |
-| `obscure` | Ein Textfeld mit dem Wert verschlüsselt und als `**&#x200B;**` angezeigt. Wenn Sie den Typ mithilfe von &quot;Inspect-Element“ im Browser ändern, wird der Wert nicht angezeigt. |
-| `password` | Wie `obscure`, mit der Ausnahme, dass der ausgeblendete Wert nicht verschlüsselt ist und eine erzwungene Änderung des Typs mithilfe von &quot;Inspect Element“ im Browser den Wert nicht anzeigt. |
+| `obscure` | Ein Textfeld mit dem Wert verschlüsselt und als `****` angezeigt. Wenn Sie den Typ mithilfe von „Element überprüfen“ im Browser ändern, wird der Wert nicht angezeigt. |
+| `password` | Wie `obscure`, mit der Ausnahme, dass der ausgeblendete Wert nicht verschlüsselt ist, und das erzwungene Ändern des Typs mit „Element überprüfen“ im Browser zeigt den Wert nicht an. |
 | `file` | Ermöglicht das Hochladen einer Datei zur Verarbeitung. |
 | `label` | Zeigt eine Beschriftung anstelle eines bearbeitbaren Felds an. Verwenden Sie diesen Typ, wenn ein Feld nur für bestimmte Bereiche bearbeitbar ist, z. B. nur auf Store-Ansichtsebene. |
 | `time` | Zum Einstellen der Zeit können Sie drei Dropdown-Menüs verwenden: Stunde, Minute und Sekunde. |
@@ -279,10 +279,10 @@ Ein `<field>`-Tag kann die folgenden untergeordneten Elemente aufweisen:
 | Knoten | Beschreibung | Typ |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | `label` | Definiert die Bezeichnung, die im Frontend angezeigt wird. | `string` |
-| `comment` | Fügt unter der Feldbezeichnung einen Kommentar hinzu. Durch Verwendung `<![CDATA[//]]>` HTML angewendet werden kann. | `string` |
+| `comment` | Fügt unter der Feldbezeichnung einen Kommentar hinzu. Durch Verwendung von `<![CDATA[//]]>` kann HTML angewendet werden. | `string` |
 | `tooltip` | Ein weiteres mögliches Frontend-Element, das zur Beschreibung der Bedeutung dieses Felds verwendet werden kann. Wird als kleines Symbol neben dem Feld angezeigt. | `string` |
 | `hint` | Zeigt zusätzliche Informationen an. Nur mit bestimmten `frontend_model` verfügbar. | `string` |
-| `frontend_class` | Fügt dem gerenderten HTML-Element des Abschnitts eine definierte CSS-Klasse hinzu. | `string` |
+| `frontend_class` | Fügt eine definierte CSS-Klasse zum gerenderten HTML-Element des Abschnitts hinzu. | `string` |
 | `frontend_model` | Gibt ein anderes Frontend-Modell an, um das Rendering zu ändern und die Ausgabe zu ändern. | `typeModel` |
 | `backend_model` | Gibt ein anderes Backend-Modell zum Ändern der konfigurierten Werte an. | `typeModel` |
 | `source_model` | Gibt ein anderes Quellmodell an, das einen bestimmten Satz von Werten bereitstellt. | `typeModel` |
@@ -392,8 +392,8 @@ Die folgenden Validierungsregeln sind verfügbar:
 | `phoneUK` | Ermöglicht eine Telefonnummer (GB). |
 | `phoneUS` | Ermöglicht eine Telefonnummer (US). |
 | `required-entry` | Lässt einen leeren Wert nicht zu (gleichwertige Validierung wie `validate-no-empty`).<br>Validierungsfehlermeldung: „Dies ist ein erforderliches Feld.“ |
-| `time` | Ermöglicht eine gültige Zeit im 24-Stunden-Format zwischen 00:00 und 23:59 Uhr. Zum Beispiel `15`, `15:05` oder `15:05:48`. |
-| `time12h` | Ermöglicht eine gültige Zeit im 12-Stunden-Format, zwischen 12:00 und 23:59:59 Uhr. Beispiel: `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time` | Ermöglicht eine gültige Zeit im 24-Stunden-Format zwischen 00 :00 23 :59. Zum Beispiel `15`, `15:05` oder `15:05:48`. |
+| `time12h` | Ermöglicht eine gültige Zeit im 12-Stunden-Format zwischen 12 :00 und 23:59:59 Uhr. Beispiel: `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Ermöglicht 7 oder mehr Zeichen, sowohl numerische als auch alphabetische Zeichen. |
 | `validate-alphanum-with-spaces` | Ermöglicht die Verwendung von Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Leerzeichen. |
 | `validate-clean-url` | Ermöglicht eine gültige URL. Beispiel: `https://www.example.com` oder `www.example.com`. |
@@ -404,7 +404,7 @@ Die folgenden Validierungsregeln sind verfügbar:
 | `validate-emailSender` | Ermöglicht eine gültige E-Mail-Adresse. Beispiel: johndoe@domain.com. |
 | `validate-fax` | Ermöglicht eine gültige Faxnummer. Beispiel: 123-456-7890. |
 | `validate-no-empty` | Lässt einen leeren Wert nicht zu (gleichwertige Validierung wie `requried-entry`).<br>Validierungsfehlermeldung: „Leerer Wert.“ |
-| `validate-no-html-tags` | Verwendung von HTML-Tags nicht zulässig. |
+| `validate-no-html-tags` | Die Verwendung von HTML-Tags ist nicht zulässig. |
 | `validate-password` | Lässt 6 oder mehr Zeichen zu. Führende und nachfolgende Leerzeichen werden ignoriert. |
 | `validate-phoneLax` | Ermöglicht eine gültige Telefonnummer. Zum Beispiel (123) 456-7890 oder 123-456-7890. |
 | `validate-phoneStrict` | Ermöglicht eine gültige Telefonnummer. Zum Beispiel (123) 456-7890 oder 123-456-7890. |

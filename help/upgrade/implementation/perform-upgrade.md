@@ -19,7 +19,7 @@ Sie können _On-Premise_-Bereitstellungen der Adobe Commerce-Anwendung über die
 
 >[!NOTE]
 >
->- Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Commerce-Version aktualisieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=de) im Cloud-Handbuch.
+>- Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Commerce-Version aktualisieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) im Cloud-Handbuch.
 >- Verwenden Sie diese Methode nicht zum Upgrade, wenn Sie das GitHub-Repository geklont haben. Siehe [Upgrade einer Git-basierten Installation](../developer/git-installs.md).
 
 Die folgenden Anweisungen zeigen Ihnen, wie Sie mit dem Composer Package Manager ein Upgrade durchführen. Mit Adobe Commerce 2.4.2 wurde Unterstützung für Composer 2 eingeführt. Wenn Sie versuchen, von &lt;2.4.1 auf eine Version zu aktualisieren, die mit Composer 2 kompatibel ist (z. B. 2.4.2), müssen Sie zunächst Composer 1 _vor_ aktualisieren auf Composer 2 für >2.4.2-Upgrades. Außerdem muss eine (unterstützte[ Version von PHP ](../../installation/system-requirements.md) werden.
@@ -48,13 +48,13 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) abschlie�
 
 1. Das Starten des Upgrade-Prozesses während der Ausführung asynchroner Prozesse, z. B. der Nachrichtenwarteschlange für Verbraucher, kann zu Datenbeschädigungen führen. Um Datenbeschädigungen zu verhindern, deaktivieren Sie alle Cron-Aufträge.
 
-   _Adobe Commerce auf Cloud-Infrastruktur:_
+   _Adobe Commerce auf Cloud-Infrastruktur :_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
    ```
 
-   _Magento Open Source:_
+   _Magento Open Source :_
 
    ```bash
    bin/magento cron:remove
@@ -76,7 +76,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) abschlie�
 
 1. Fügen Sie bestimmte Pakete je nach Bedarf hinzu oder entfernen Sie sie.
 
-   Wenn Sie beispielsweise ein Upgrade von Magento Open Source auf Adobe Commerce durchführen, entfernen Sie das Magento Open Source-Package.
+   Wenn Sie beispielsweise ein Upgrade von Magento Open Source auf Adobe Commerce durchführen, entfernen Sie das Magento Open Source-Paket.
 
    ```bash
    composer remove magento/product-community-edition --no-update
@@ -88,13 +88,13 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) abschlie�
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - _Adobe Commerce:_
+   - _Adobe Commerce :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
      ```
 
-   - _Magento Open Source:_
+   - _Magento Open Source :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update

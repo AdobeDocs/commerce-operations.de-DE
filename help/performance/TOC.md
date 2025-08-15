@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Best Practices für die Leistung {#performance-best-practices}
 
-- [Übersicht](overview.md)
+- [Überblick](overview.md)
 - [Hardware-Empfehlungen](hardware.md)
 - [Software-Empfehlungen](software.md)
 - [Referenzarchitektur](reference-architecture.md)
@@ -25,4 +25,4 @@ ht-degree: 2%
    - [Erweitertes Setup](advanced-setup.md)
    - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)
    - [GraphQL-Anwendungsserver](application-server.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

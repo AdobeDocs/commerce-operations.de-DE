@@ -1,6 +1,6 @@
 ---
 title: Änderungen migrieren
-description: Erfahren Sie, wie Sie mit dem  [!DNL Data Migration Tool] nur Daten migrieren können, die sich seit Ihrer letzten Magento 1-Datenmigration geändert haben.
+description: Erfahren Sie, wie Sie mit dem nur Daten migrieren können, die sich seit Ihrer letzten Magento 1-Datenmigration geändert  [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -53,7 +53,7 @@ Dabei gilt:
 
 ## Migrieren von Daten, die von Erweiterungen von Drittanbietern erstellt wurden
 
-Im `Delta`-Modus migriert der [!DNL Data Migration Tool] nur Daten, die von Magento-eigenen Modulen erstellt wurden, und ist nicht für den Code oder die Erweiterungen verantwortlich, die von Drittanbieterentwicklern erstellt wurden. Wenn diese Erweiterungen Daten in der Storefront-Datenbank erstellt haben und der Händler diese Daten auf Magento 2 haben möchte, sollten Konfigurationsdateien des [!DNL Data Migration Tool] entsprechend erstellt und geändert werden.
+Im `Delta`-Modus migriert der [!DNL Data Migration Tool] nur Daten, die von den Magento-eigenen Modulen erstellt wurden, und ist nicht für den Code oder die Erweiterungen verantwortlich, die von Drittanbieterentwicklern erstellt wurden. Wenn diese Erweiterungen Daten in der Storefront-Datenbank erstellt haben und der Händler diese Daten in Magento 2 haben möchte, sollten Konfigurationsdateien des [!DNL Data Migration Tool] entsprechend erstellt und geändert werden.
 
 Wenn eine Erweiterung über eigene Tabellen verfügt und Sie deren Änderungen für die Delta-Migration verfolgen müssen, führen Sie die folgenden Schritte aus:
 

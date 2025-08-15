@@ -86,7 +86,7 @@ Um memcached unter CentOS zu installieren, führen Sie die folgenden Aufgaben al
 
 ## Überprüfen der Funktionsweise von Memcached vor der Installation von Commerce
 
-Adobe empfiehlt, memcached zu testen, um sicherzustellen, dass es funktioniert, bevor Sie Commerce installieren. Dies dauert nur wenige Minuten und kann die Fehlerbehebung später vereinfachen.
+Adobe empfiehlt, Memcached zu testen, um vor der Installation von Commerce sicherzustellen, dass es funktioniert. Dies dauert nur wenige Minuten und kann die Fehlerbehebung später vereinfachen.
 
 ### Überprüfen, ob der zwischengespeicherte Inhalt vom Webserver erkannt wird
 

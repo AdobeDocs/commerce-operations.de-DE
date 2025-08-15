@@ -16,11 +16,11 @@ Ab Adobe Commerce 2.4 müssen alle Installationen so konfiguriert sein, dass [El
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Form of Elasticsearch. Alle Anweisungen zum Konfigurieren von Elasticsearch 7 gelten für OpenSearch. [Migration von Elasticsearch zu OpenSearch](../../../upgrade/prepare/opensearch-migration.md) bietet Anleitungen zum Wechsel zu OpenSearch.
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Alle Anweisungen zum Konfigurieren von Elasticsearch 7 gelten für OpenSearch. [Migrieren von Elasticsearch zu OpenSearch](../../../upgrade/prepare/opensearch-migration.md) bietet Anleitungen zum Wechsel zu OpenSearch.
 
 ## Unterstützte Versionen
 
-Vor der Installation von Adobe Commerce 2.4.4 und höher müssen Sie entweder Elasticsearch oder OpenSearch installieren und konfigurieren.
+Sie müssen entweder Elasticsearch oder OpenSearch installieren und konfigurieren, bevor Sie Adobe Commerce 2.4.4 und höher installieren.
 
 Spezifische Versionsinformationen finden [ in den ](../../system-requirements.md)Systemanforderungen“.
 
@@ -41,7 +41,7 @@ Das vorhergehende Diagramm zeigt:
 
 * Die Commerce-Anwendung und die Suchmaschine werden auf verschiedenen Hosts installiert.
 
-  Für die Ausführung auf separaten Hosts ist ein Proxy erforderlich. (Das Clustern der Suchmaschine sprengt den Rahmen dieses Handbuchs, weitere Informationen finden Sie jedoch in der Dokumentation zum [Elasticsearch-Clustering](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  Für die Ausführung auf separaten Hosts ist ein Proxy erforderlich. (Das Clustern der Suchmaschine sprengt den Rahmen dieses Handbuchs, weitere Informationen finden Sie jedoch in der [Elasticsearch-Clustering-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Jeder Host verfügt über einen eigenen Webserver. Die Webserver müssen nicht identisch sein.
 
@@ -63,7 +63,7 @@ Suchanfragen werden wie folgt verarbeitet:
 
 1. Die Suchmaschine verarbeitet die Anfrage.
 
-1. Die Kommunikation wird auf derselben Route zurückgegeben, wobei der Elasticsearch-Webserver als sicherer Reverse-Proxy fungiert.
+1. Die Kommunikation kehrt auf derselben Route zurück, wobei der Elasticsearch-Webserver als sicherer Reverse-Proxy fungiert.
 
 ## Voraussetzungen
 
@@ -72,7 +72,7 @@ Die in diesem Abschnitt besprochenen Aufgaben erfordern Folgendes:
 * [Firewall und SELinux](#firewall-and-selinux)
 * [Installieren des Java Software Development Kit (JDK)](#install-the-java-software-development-kit)
 * [Installieren der Suchmaschine](#install-the-search-engine)
-* [Upgrade von Elasticsearch](#upgrading-elasticsearch)
+* [Aktualisieren von Elasticsearch](#upgrading-elasticsearch)
 
 ### Firewall und SELinux
 
@@ -128,13 +128,13 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Weitere Optionen finden Sie in der [Oracle-Dokumentation](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Weitere Optionen finden Sie in der Dokumentation zu [Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Installieren der Suchmaschine
 
-Befolgen Sie [Elasticsearch installieren](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) oder [Installieren und konfigurieren Sie OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) für Ihre plattformspezifischen Schritte.
+Elasticsearch Befolgen Sie [Installieren von ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) oder [Installieren und Konfigurieren von OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) für Ihre plattformspezifischen Schritte.
 
-Um sicherzustellen, dass das Elasticsearch funktioniert, geben Sie den folgenden Befehl auf dem Server ein, auf dem es ausgeführt wird:
+Um zu überprüfen, ob Elasticsearch funktioniert, geben Sie den folgenden Befehl auf dem Server ein, auf dem es ausgeführt wird:
 
 ```bash
 curl -XGET '<host>:9200/_cat/health?v&pretty'
@@ -157,12 +157,12 @@ curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
-## Upgrade von Elasticsearch
+## Aktualisieren von Elasticsearch
 
-Unter [Elasticsearch aktualisieren](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) finden Sie vollständige Anweisungen zum Sichern Ihrer Daten, Erkennen potenzieller Migrationsprobleme und Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version des Elasticsearchs kann ein vollständiger Neustart des Clusters erforderlich sein oder nicht.
+Unter [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) finden Sie vollständige Anweisungen zum Sichern Ihrer Daten, Erkennen potenzieller Migrationsprobleme und Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch kann ein vollständiger Cluster-Neustart erforderlich sein oder nicht.
 
 Elasticsearch erfordert JDK 1.8 oder höher. Unter [Installieren des Java Software Development Kit](#install-the-java-software-development-kit) können Sie überprüfen, welche Version von JDK installiert ist.
 
 ## Zusätzliche Ressourcen
 
-Weitere Informationen finden Sie in der Dokumentation [&#128279;](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)Elasticsearch&quot; oder [OpenSearch](https://opensearch.org/docs/latest/).
+Weitere Informationen finden Sie in der Dokumentation zu [0](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)Elasticsearch[ oder OpenSearch.](https://opensearch.org/docs/latest/)

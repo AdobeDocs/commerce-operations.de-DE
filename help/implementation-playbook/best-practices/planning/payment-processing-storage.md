@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Best Practices für Zahlungsverarbeitung und Speicherung
 
-Eines der Schlüsselprinzipien für die Aufrechterhaltung der [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=de) ist eine Strategie zur ordnungsgemäßen Verarbeitung und Speicherung von Kreditkartenzahlungen.
+Eines der Schlüsselprinzipien für die Aufrechterhaltung der [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) ist eine Strategie zur ordnungsgemäßen Verarbeitung und Speicherung von Kreditkartenzahlungen.
 
-Das Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und könnte einen Verstoß gegen Ihre Verpflichtungen als Händler gemäß dem Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen zum Modell der gemeinsamen Verantwortung und den Richtlinien für Händlerpflichten finden Sie im Handbuch zum Modell der gemeinsamen Verantwortung von Adobe Commerce [&#128279;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
+Das Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und könnte einen Verstoß gegen Ihre Verpflichtungen als Händler gemäß dem Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen zum Modell der gemeinsamen Verantwortung und den Richtlinien für Händlerpflichten finden Sie im Handbuch zum Modell der gemeinsamen Verantwortung von Adobe Commerce [](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
 
 Befolgen Sie die folgenden Best Practices, um sicherzustellen, dass Sie Zahlungsinformationen auf Ihrer eCommerce-Site ordnungsgemäß verarbeiten. Weitere Anleitungen zu Best Practices für die Sicherheit finden Sie unter [Sichern Ihrer Site und Infrastruktur](../launch/security-best-practices.md).
 
@@ -53,4 +53,4 @@ Die empfohlene Methode zur Verarbeitung von Karteninhaberdaten besteht darin, di
 
 ## Weitere Informationen
 
-Wenn Sie nach empfohlenen Zahlungslösungen von Adobe suchen, sollten Sie [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=de) in Betracht ziehen.
+Wenn Sie nach empfohlenen Zahlungslösungen von Adobe suchen, sollten Sie [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html) in Betracht ziehen.

@@ -28,7 +28,7 @@ Für kleinere Installationen empfehlen wir aus den folgenden Gründen, Indizes d
 * Das Neuerstellen der Indizes ist ein schneller Vorgang.
 * Es kann zu Versionsinkompatibilitäten zwischen der alten Instanz und der AWS-Instanz kommen. Diese können vermieden werden, indem direkt auf der AWS-Instanz erstellt wird.
 
-Bei größeren Installationen empfiehlt es sich möglicherweise, die Datenindizes von der bestehenden Instanz zu AWS zu migrieren. Dadurch können Ausfallzeiten verringert werden, es besteht jedoch ein geringes Risiko von Inkompatibilitätsproblemen aufgrund unterschiedlicher Versionen zwischen dem alten Elasticsearch-Server und AWS.
+Bei größeren Installationen empfiehlt es sich möglicherweise, die Datenindizes von der bestehenden Instanz zu AWS zu migrieren. Dadurch können Ausfallzeiten verringert werden. Es besteht jedoch ein geringes Risiko von Inkompatibilitätsproblemen aufgrund unterschiedlicher Versionen zwischen dem alten Elasticsearch-Server und AWS.
 
 Sie müssen keine Indizes migrieren, da diese einfach auf der AWS-Instanz neu erstellt werden können.
 Stellen Sie jedoch beim Migrieren von Datenindizes sicher, dass die Versionen von Elasticsearch/OpenSearch kompatibel sind.

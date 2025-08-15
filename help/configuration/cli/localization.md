@@ -48,7 +48,7 @@ In der folgenden Tabelle werden Parameter und Werte erläutert:
 | Parameter | Wert | Erforderlich? |
 |--- |--- |--- |
 | `<path to directory to translate>` | Pfad zu einem Verzeichnis mit übersetzbarem Code, d. h. PHP-, PHTML- oder XML-Dateien mit zu übersetzenden Ausdrücken.<br><br>Das Tool beginnt mit der Suche unter dem eingegebenen Pfad und durchsucht alle darin enthaltenen Dateien und Unterverzeichnisse.<br><br>Verwenden Sie diesen Parameter nicht, wenn Sie `-m --magento` verwenden. | Ja (Wörterbücher), nein (Pakete). |
-| `-m --magento` | Wird benötigt, um ein Sprachpaket aus diesem Übersetzungswörterbuch zu erstellen. Durchsucht ggf. die Ordner, die bin/magento enthalten. Mit dieser Option werden jeder Zeile im Wörterbuch Designs oder Module hinzugefügt.<br><br>Beispiel: <br><br>„Keine Elemente gefunden“,„Keine Elemente gefunden“,module,Magento_wishlist | Nein |
+| `-m --magento` | Wird benötigt, um ein Sprachpaket aus diesem Übersetzungswörterbuch zu erstellen. Durchsucht ggf. die Ordner, die bin/magento enthalten. Mit dieser Option werden jeder Zeile im Wörterbuch Designs oder Module hinzugefügt.<br><br>Es folgt ein Beispiel:<br><br>„Keine Elemente gefunden“,„Keine Elemente gefunden“,module,Magento_wishlist | Nein |
 | `-o --output="<path>"` | Gibt den absoluten Dateisystempfad und Dateinamen der zu erstellenden CSV-Datei des Übersetzungswörterbuchs an. Bei dem eingegebenen Wert wird zwischen Groß- und Kleinschreibung unterschieden. Der Name der CSV-Datei muss genau mit dem Gebietsschema-Namen übereinstimmen, einschließlich der Groß-/Kleinschreibung der Zeichen.<br><br>Wenn Sie diesen Parameter weglassen, wird die Ausgabe an stdout weitergeleitet. | Nein |
 
 >[!INFO]
@@ -316,7 +316,7 @@ Generieren Sie ähnlich wie im vorherigen Beispiel eine CSV-Datei, geben Sie jed
 
 [Übersetzungen - Übersicht]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [Übersetzungswörterbuch]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[Konfigurieren der Übersetzungen]: https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize
+[Konfigurieren der Übersetzungen]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [Weitere Informationen zu Sprachpaketen]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

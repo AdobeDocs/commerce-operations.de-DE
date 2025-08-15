@@ -26,7 +26,7 @@ Die Standardumaske (ohne angegebene `magento_umask`) ist `002`, was bedeutet:
 
 * 664 für Dateien, d. h. für den Benutzer schreibbar, für die Gruppe schreibbar und für alle anderen schreibgeschützt
 
-Häufig wird vorgeschlagen, in der `magento_umask`-Datei den Wert `022` zu verwenden. Das bedeutet:
+Häufig wird vorgeschlagen, in der `022`-Datei den Wert `magento_umask` zu verwenden. Das bedeutet:
 
 * 755 für Verzeichnisse: Vollständige Kontrolle für den Benutzer, und alle anderen können Verzeichnisse durchlaufen.
 * 644 für Dateien: Lese- und Schreibberechtigungen für den Benutzer und Schreibzugriff für alle anderen Benutzer.

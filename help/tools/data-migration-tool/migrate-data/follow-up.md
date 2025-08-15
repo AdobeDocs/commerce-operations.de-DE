@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Follow-up zur Datenmigration
 
-Einige Verhaltensweisen und Logiken von Magento 1 wurden in Magento 2 unterschiedlich implementiert. Der [!DNL Data Migration Tool] kümmert sich darum. Es gibt einige Migrationsaspekte, die Sie kennen sollten, und manchmal müssen Sie kleinere Schritte unternehmen, damit einige Funktionen nach der Migration reibungslos funktionieren.
+Einige Verhaltensweisen und Logiken von Magento 1 wurden in Magento 2 anders implementiert. Der [!DNL Data Migration Tool] kümmert sich darum. Es gibt einige Migrationsaspekte, die Sie kennen sollten, und manchmal müssen Sie kleinere Schritte unternehmen, damit einige Funktionen nach der Migration reibungslos funktionieren.
 
 ## Informationen
 
@@ -26,7 +26,7 @@ Alle Gruppenpreise werden während der Migration automatisch in Stufenpreise umg
 
 ### Neue Nummerierung für Verkaufsstellen
 
-Referenznummern für Bestellungen, Rechnungen, Lieferungen, Gutschriften und Rücksendungen migrieren wie sie sind. Nach der Migration gelten die neuen Regeln für die Nummernzuweisung von Magento 2. Die Zählung für die neuen Verkaufsstellen ist anders.
+Referenznummern für Bestellungen, Rechnungen, Lieferungen, Gutschriften und Rücksendungen migrieren wie sie sind. Nach der Migration gelten die neuen Regeln für die Zahlenzuweisung an Magento 2. Die Zählung für die neuen Verkaufsstellen ist anders.
 
 ## Schritte
 
@@ -38,9 +38,9 @@ Nach der Migration müssen Kundensegmente aus dem Admin Panel gespeichert werden
 
 Das Tool migriert keine Zeitzoneneinstellungen. Daher müssen Sie die Zeitzone nach der Migration manuell unter **Stores** > **Configuration** > **Locale Options** > **Timezone** konfigurieren.
 
-Standardmäßig speichert Magento die Zeitdaten in der UTC-0-Zone in der Datenbank und zeigt sie entsprechend den aktuellen Zeitzoneneinstellungen an. Wenn Zeitdaten bereits in einer anderen Zone als UTC-0 in der Datenbank gespeichert wurden, müssen Sie die vorhandene Zeit mithilfe des `\Migration\Handler\Timezone`-Handlers des [!DNL Data Migration Tool] in UTC-0 konvertieren.
+Standardmäßig speichert Magento Zeitdaten in der UTC-0-Zone in der Datenbank und zeigt sie entsprechend den aktuellen Zeitzoneneinstellungen an. Wenn Zeitdaten bereits in einer anderen Zone als UTC-0 in der Datenbank gespeichert wurden, müssen Sie die vorhandene Zeit mithilfe des [!DNL Data Migration Tool]-Handlers des `\Migration\Handler\Timezone` in UTC-0 konvertieren.
 
-Im folgenden Beispiel hat Magento 1 fälschlicherweise Zeit in der UTC-7-Zone in der Datenbank gespart (z. B. aufgrund einer fehlerhaften Drittanbietererweiterung). Gehen Sie wie folgt vor, um die Erstellungszeit des Kundenkontos bei der Migration ordnungsgemäß in die UTC-0-Zone zu konvertieren:
+Im folgenden Beispiel hat Magento 1 fälschlicherweise Zeit in der UTC-7-Zone in der Datenbank gespart (z. B. aufgrund einer fehlerhaften Erweiterung eines Drittanbieters). Gehen Sie wie folgt vor, um die Erstellungszeit des Kundenkontos bei der Migration ordnungsgemäß in die UTC-0-Zone zu konvertieren:
 
 1. Kopieren Sie die `map-customer.xml.dist` Konfigurationsdatei aus dem entsprechenden Verzeichnis der [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) in die `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml`.
 

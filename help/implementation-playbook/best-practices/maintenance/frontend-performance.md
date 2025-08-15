@@ -37,5 +37,5 @@ So überprüfen Sie die Frontend-Leistung Ihres Website-Stores:
 ## Weitere Informationen
 
 - [Indexverwaltung für Admin-Benutzer](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Indexverwaltung über die CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=de)
+- [Indexverwaltung über die CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Übersicht über die Indizierung für Entwickler](https://developer.adobe.com/commerce/php/development/components/indexing/)

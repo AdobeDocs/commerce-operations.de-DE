@@ -124,6 +124,6 @@ Weitere Informationen zu [Designs].
 
 <!-- link definitions -->
 
-[Module]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings
+[Module]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
 [Designs]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

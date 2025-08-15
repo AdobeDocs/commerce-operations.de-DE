@@ -337,7 +337,7 @@ Zuvor gab es beim Hinzufügen eines neuen dynamischen Blocks für Administratore
 
 _ACP2E-2687_
 
-#### Apostroph im Namen der Store-Ansicht wird durch &quot;&#039;“ ersetzt
+#### Apostroph im Namen der Store-Ansicht wird durch &quot;&amp;#039;“ ersetzt
 
 Die Store-View-Filter des Rasters zeigen jetzt korrekt Apostrophe an
 
@@ -1971,7 +1971,7 @@ Das System hält sich jetzt an den Kodierungsstandard, indem es das verbotene `@
 
 _AC-8356 - [GitHub-Problem](https://github.com/magento/magento2/issues/37250) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37000)_
 
-#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[&lbrace;composer,auth&rbrace;.json]` unterbrochen.
+#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[{composer,auth}.json]` unterbrochen.
 
 Nach der Behebung eines Syntaxfehlers in editorconfig wendet das System jetzt einen Einzug mit vier Leerzeichen korrekt auf die Dateien composer und auth.json an. Aufgrund eines Leerzeichens in der EditorConfig-Syntax wurden diese Dateien zuvor falsch mit einem Einzug aus zwei Leerzeichen formatiert.
 
@@ -2127,7 +2127,7 @@ Das Problem wurde behoben, nachdem die Prüfung bei der Anforderung einer Produk
 
 _ACP2E-2653 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### GraphQL-Produktanruf, der den Preisfilter enthält `&lbrace;from:&quot;0&quot;&rbrace;` kein Ergebnis zurückgibt
+#### GraphQL-Produktanruf, der den Preisfilter enthält `{from:&quot;0&quot;}` kein Ergebnis zurückgibt
 
 Zuvor gab GraphQL-Produkte, die mit dem Filter nach Nullpreisen suchten, aufgrund einer ausgelösten Ausnahme überhaupt keine Ergebnisse zurück. Jetzt gibt die Suche die erwarteten Ergebnisse zurück.
 
@@ -2800,7 +2800,7 @@ Es wurde ein Problem behoben, bei dem die addProductsToCart-Mutation bei Verwend
 
 _LYNX-469_
 
-#### Produktattribut > Marken-Kurzform &trade; wird als &trade; zurückgegeben
+#### Produktattribut > Marken-Kurzform &amp;trade; wird als &amp;trade; zurückgegeben
 
 Es wurde ein Zeichenkodierungsproblem mit dem Produktnamen für die GraphQL-API behoben
 

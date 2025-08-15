@@ -18,9 +18,9 @@ Wenn Sie Commerce auf einem einzelnen Computer bereitstellen und einige Ausfallz
 
 ## Pipeline-Bereitstellung
 
-Mit Commerce Version 2.2 führte Adobe _Pipeline-Bereitstellung_ als neue Methode zur Bereitstellung von in der Produktionsumgebung bei minimaler Ausfallzeit ein. Dieser Bereitstellungsprozess erfolgt auf verschiedenen Systemen und bietet die Möglichkeit, konsistente Konfigurationen für alle Pipeline-Bereitstellungssysteme beizubehalten. Es handelt sich dabei um ein einfaches, aber leistungsstarkes Modell, mit dem Sie die üblichen Konfigurationseinstellungen von systemspezifischen Einstellungen (wie Host und Port) oder sensiblen Einstellungen (wie Namen und Kennwörtern) trennen können.
+Mit Commerce Version 2.2 führte Adobe _Pipeline-Bereitstellung_ als neue Methode zur Bereitstellung von in der Produktionsumgebung bei minimalen Ausfallzeiten ein. Dieser Bereitstellungsprozess erfolgt auf verschiedenen Systemen und bietet die Möglichkeit, konsistente Konfigurationen für alle Pipeline-Bereitstellungssysteme beizubehalten. Es handelt sich dabei um ein einfaches, aber leistungsstarkes Modell, mit dem Sie die üblichen Konfigurationseinstellungen von systemspezifischen Einstellungen (wie Host und Port) oder sensiblen Einstellungen (wie Namen und Kennwörtern) trennen können.
 
-Um die Pipeline-Bereitstellung zu verwenden, geht Adobe davon aus, dass Sie:
+Bei der Verwendung der Pipeline-Bereitstellung geht Adobe davon aus, dass Sie:
 
 - Ein erfahrener Systemintegrator mit hervorragenden Kenntnissen in den Konfigurationsoptionen von Adobe Commerce.
 - Verwaltung eines großen Commerce-Standorts (Tausende Lagereinheiten (SKUs)) und Minimierung der Ausfallzeiten des Produktionsstandorts.

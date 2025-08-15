@@ -26,7 +26,7 @@ composer install --no-dev
 
 ## Anweisungen zur Voreinstellung der Injektion von Abhängigkeiten
 
-Beim Vorverarbeiten und Kompilieren von Injection (DI)-Anweisungen wird Folgendes Magento:
+Wenn Sie Anweisungen zur Injektion von Abhängigkeiten (Dependency Injection, DI) vorverarbeiten und kompilieren, führt Magento Folgendes aus:
 
 * Liest und verarbeitet alle vorhandenen Konfigurationen
 * Analysiert Abhängigkeiten zwischen Klassen

@@ -19,7 +19,7 @@ ht-degree: 0%
 | Nazar Klovanych | [#29452](https://github.com/magento/magento2/pull/29452) |  |
 | JMonteros422 | [#29435](https://github.com/magento/magento2/pull/29435) | [1711](https://github.com/magento/magento2/issues/1711) |
 | Shankar Konar | [#29433](https://github.com/magento/magento2/pull/29433) | [1 738 ](https://github.com/magento/magento2/issues/1738) |
-| Nazar Klovanych | [#29429](https://github.com/magento/magento2/pull/29429) | [&#128279;](https://github.com/magento/magento2/issues/1755), [1694](https://github.com/magento/magento2/issues/1694) |
+| Nazar Klovanych | [#29429](https://github.com/magento/magento2/pull/29429) | [](https://github.com/magento/magento2/issues/1755), [1694](https://github.com/magento/magento2/issues/1694) |
 | Bartłomiej Szubert | [#29413](https://github.com/magento/magento2/pull/29413) | [24060](https://github.com/magento/magento2/issues/24060) |
 | Angelo Romano | [#29410](https://github.com/magento/magento2/pull/29410) | [29416](https://github.com/magento/magento2/issues/29416) |
 | Honeymay Louiese Ignacio | [#29400](https://github.com/magento/magento2/pull/29400) | [1703](https://github.com/magento/magento2/issues/1703) |

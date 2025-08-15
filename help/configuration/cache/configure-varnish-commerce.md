@@ -62,7 +62,7 @@ So exportieren Sie eine Lackkonfigurationsdatei vom Administrator:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe empfiehlt, `default.vcl` zu öffnen und den Wert von `acl purge` auf die IP-Adresse des Lack-Hosts zu ändern. (Sie können mehrere Hosts in separaten Zeilen angeben oder auch die CIDR-Notation verwenden.)
+1. Adobe empfiehlt, `default.vcl` zu öffnen und den Wert von `acl purge` in die IP-Adresse des Lack-Hosts zu ändern. (Sie können mehrere Hosts in separaten Zeilen angeben oder auch die CIDR-Notation verwenden.)
 
    Beispiel:
 

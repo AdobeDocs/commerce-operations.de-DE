@@ -4,7 +4,7 @@ description: Erstellen Sie eine benutzerdefinierte Wartungsmodusseite, die Ihre 
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 1. Verwenden Sie einen Texteditor, um die nginx-Konfigurationsdatei zu öffnen, die Ihren Serverblock enthält.
 1. Fügen Sie dem Serverblock Folgendes hinzu (`server` wird nur der Übersichtlichkeit halber angezeigt; fügen Sie keinen zweiten Serverblock hinzu).
 
-   Auf die Zulassungsliste setzen Mit der folgenden IP-Adresse 192.0.2.110 und 192.0.2.115 Sie auf einem System, auf dem Magento in `/var/www/html/magento2` installiert ist:
+   Auf die Zulassungsliste setzen Mit der folgenden IP-Adresse werden 192.0.2.110 und 192.0.2.115 auf einem System geändert, auf dem Magento in `/var/www/html/magento2` installiert ist:
 
    ```conf
    server {

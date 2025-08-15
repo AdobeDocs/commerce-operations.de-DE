@@ -18,7 +18,7 @@ Die Befolgung dieser Best Practices kann helfen, unbefugten Zugriff und Malware-
 
 >[!TIP]
 >
->Adobe hat herausgefunden, dass die meisten Sicherheitsvorfälle auftreten, wenn Bedrohungsakteure bestehende, ungepatchte Sicherheitslücken, fehlerhafte Passwörter sowie schwache Eigentums- und Berechtigungseinstellungen in der Commerce-Programm- und Infrastrukturkonfiguration nutzen. Minimieren Sie das Auftreten von Sicherheitsvorfällen, indem Sie die Best Practices für die Adobe-Sicherheit beim Einrichten, Konfigurieren und Aktualisieren von Adobe Commerce-Installationen lesen und befolgen. Siehe [Sichern der Commerce-Site und -Infrastruktur](../launch/security-best-practices.md).
+>Adobe hat festgestellt, dass die meisten Sicherheitsvorfälle auftreten, wenn Bedrohungsakteure bestehende, ungepatchte Sicherheitslücken, fehlerhafte Kennwörter sowie schwache Eigentums- und Berechtigungseinstellungen in der Commerce-Programm- und Infrastrukturkonfiguration nutzen. Minimieren Sie das Auftreten von Sicherheitsvorfällen, indem Sie die Best Practices für die Sicherheit von Adobe beim Einrichten, Konfigurieren und Aktualisieren von Adobe Commerce-Installationen lesen und befolgen. Siehe [Sichern der Commerce-Site und -Infrastruktur](../launch/security-best-practices.md).
 
 
 ## Betroffene Produkte und Versionen
@@ -55,7 +55,7 @@ Im unglücklichen Fall einer Kompromisslösung für die Site gibt es einige wich
 
    - Unter bestimmten Umständen kann es ratsam sein, alles zu löschen und neu zu installieren oder im Falle des virtuellen Hosting eine neue Instanz zu erstellen. Malware könnte an einem unerwarteten Ort versteckt sein, nur darauf wartend, sich selbst wiederherzustellen.
 
-   - Entfernen Sie alle unnötigen Dateien. Installieren Sie dann die erforderlichen Dateien aus einer bekannten, sauberen Quelle neu. Sie können beispielsweise Dateien aus Ihrem Versionskontrollsystem oder aus den Originalverteilungsdateien von Adobe neu installieren.
+   - Entfernen Sie alle unnötigen Dateien. Installieren Sie dann die erforderlichen Dateien aus einer bekannten, sauberen Quelle neu. Sie können beispielsweise eine Neuinstallation anhand der Dateien aus Ihrem Versionskontrollsystem oder aus den Originalverteilungsdateien aus Adobe durchführen.
 
    - Alle Anmeldedaten zurücksetzen, einschließlich Datenbank, Dateizugriff, Zahlungs- und Versandintegrationen, Webservices und Admin-Anmeldung. Setzen Sie außerdem alle Integrations- und API-Schlüssel und -Konten zurück, die möglicherweise zum Angriff auf das System verwendet werden.
 
@@ -63,7 +63,7 @@ Im unglücklichen Fall einer Kompromisslösung für die Site gibt es einige wich
 
 Der erste Schritt der Incident-Analyse besteht darin, so schnell wie möglich so viele Fakten wie möglich zu sammeln. Das Sammeln von Informationen über den Vorfall kann dabei helfen, die potenzielle Ursache des Vorfalls zu ermitteln. Adobe Commerce bietet die folgenden Tools zur Unterstützung bei der Analyse von Vorfällen.
 
-- [Audit-Admin-](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=de).
+- [Audit-Admin-](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   Der Bericht „Aktionsprotokolle“ zeigt einen detaillierten Datensatz aller Admin-Aktionen an, die für die Protokollierung aktiviert sind. Jeder Datensatz erhält einen Zeitstempel und registriert die IP-Adresse und den Namen des Benutzers. Die Protokolldetails enthalten Admin-Benutzerdaten und zugehörige Änderungen, die während der Aktion vorgenommen wurden.
 
@@ -73,9 +73,9 @@ Der erste Schritt der Incident-Analyse besteht darin, so schnell wie möglich so
 
   Verwenden Sie die **Sicherheit** im Tool, um einen klaren Überblick über potenzielle Sicherheitsprobleme zu erhalten und so die Grundursachen zu identifizieren und die optimale Leistung von Sites sicherzustellen.
 
-- Analysieren von Protokollen mit [New Relic-Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=de)
+- Analysieren von Protokollen mit [New Relic-Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
 
-  Adobe Commerce in Cloud Infrastructure Pro-Projekten umfassen den [Service &quot;New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=de)Protokolle“. Der Service ist so vorkonfiguriert, dass er alle Protokolldaten aus Ihren Staging- und Produktionsumgebungen aggregiert, um sie in einem zentralen Protokollverwaltungs-Dashboard anzuzeigen, in dem Sie aggregierte Daten suchen und visualisieren können.
+  Adobe Commerce in Cloud Infrastructure Pro-Projekten umfassen den [Service &quot;New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html)Protokolle“. Der Service ist so vorkonfiguriert, dass er alle Protokolldaten aus Ihren Staging- und Produktionsumgebungen aggregiert, um sie in einem zentralen Protokollverwaltungs-Dashboard anzuzeigen, in dem Sie aggregierte Daten suchen und visualisieren können.
 
   Für andere Commerce-Projekte können Sie den Dienst [New Relic Logs](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) einrichten und verwenden, um die folgenden Aufgaben auszuführen:
    - Verwenden Sie [New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)Abfragen, um aggregierte Protokolldaten zu suchen.
@@ -89,17 +89,17 @@ Die Site nach dem Vorfall weiterhin genau überwachen, da viele Sites innerhalb 
 
 ### Administratorkonten prüfen
 
-- [Administratorzugriff überprüfen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=de) - Alte, nicht verwendete oder verdächtige Konten entfernen und Kennwörter für alle Administratorbenutzer rotieren.
+- [Administratorzugriff überprüfen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html) - Alte, nicht verwendete oder verdächtige Konten entfernen und Kennwörter für alle Administratorbenutzer rotieren.
 
-- [Überprüfen der Admin-Sicherheitseinstellungen](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=de) Überprüfen Sie, ob die Admin-Sicherheitseinstellungen den Best Practices für die Sicherheit entsprechen.
+- [Überprüfen der Admin-Sicherheitseinstellungen](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html) Überprüfen Sie, ob die Admin-Sicherheitseinstellungen den Best Practices für die Sicherheit entsprechen.
 
-- [Überprüfen von Benutzerkonten für Adobe Commerce in Cloud-Infrastrukturprojekten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de) - Entfernen Sie alte, nicht verwendete oder verdächtige Konten und rotieren Sie Kennwörter für alle Cloud-Projekt-Admin-Benutzer. Stellen Sie sicher, dass die Sicherheitseinstellungen des Kontos korrekt konfiguriert sind.
+- [Überprüfen von Benutzerkonten für Adobe Commerce in Cloud-Infrastrukturprojekten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) - Entfernen Sie alte, nicht verwendete oder verdächtige Konten und rotieren Sie Kennwörter für alle Cloud-Projekt-Admin-Benutzer. Stellen Sie sicher, dass die Sicherheitseinstellungen des Kontos korrekt konfiguriert sind.
 
-- [Audit von SSH-Schlüsseln](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de) für Adobe Commerce in der Cloud-Infrastruktur - Überprüfen, Löschen und Drehen von SSH-Schlüsseln.
+- [Audit von SSH-Schlüsseln](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) für Adobe Commerce in der Cloud-Infrastruktur - Überprüfen, Löschen und Drehen von SSH-Schlüsseln.
 
 ### Prüfcode
 
-- Überprüfen Sie vom Administrator die Konfiguration der [HTML-Kopf- und -](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=de) in allen Bereichsebenen, einschließlich `website` und `store view`. Entfernen Sie unbekannten JavaScript-Code aus den Skripten und Stylesheets sowie verschiedene HTML-Einstellungen. Nur erkannten Code wie Tracking-Snippets beibehalten.
+- Überprüfen Sie vom Administrator die Konfiguration der [HTML-Kopf- und -](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) auf allen Bereichsebenen, einschließlich `website` und `store view`. Entfernen Sie unbekannten JavaScript-Code aus den Skripten und Stylesheets sowie verschiedene HTML-Einstellungen. Nur erkannten Code wie Tracking-Snippets beibehalten.
 
 - Vergleichen Sie die aktuelle Produktions-Code-Basis mit der im Versionskontrollsystem (VCS) gespeicherten Code-Basis.
 

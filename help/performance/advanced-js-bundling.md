@@ -380,7 +380,7 @@ In diesem Beispiel werden `mage/bootstrap`- und `requirejs/require`-Assets wiede
 
 Die folgenden Schritte beschreiben den grundlegenden Prozess zum Generieren effizienterer [!DNL Commerce]. Sie können diesen Prozess beliebig automatisieren, müssen jedoch weiterhin `nodejs` und `r.js` verwenden, um Ihre Bundles tatsächlich zu generieren. Und wenn Ihre Designs [!DNL JavaScript] Anpassungen aufweisen und dieselbe `build.js`-Datei nicht wiederverwenden können, müssen Sie möglicherweise mehrere `build.js` Konfigurationen pro Design erstellen.
 
-#### 1. Generieren von statischen Store-Sites
+#### &#x200B;1. Generieren von statischen Store-Sites
 
 Führen Sie vor dem Generieren von Bundles den statischen Bereitstellungsbefehl aus:
 
@@ -397,7 +397,7 @@ Dieser Befehl generiert statische Store-Bereitstellungen für jedes Design und G
 
 Um Bundles für alle Store-Designs und Gebietsschemata zu generieren, wiederholen Sie die folgenden Schritte für jedes Store-Design und Gebietsschema.
 
-#### 2. Verschieben des statischen Speicherinhalts in ein temporäres Verzeichnis
+#### &#x200B;2. Verschieben des statischen Speicherinhalts in ein temporäres Verzeichnis
 
 Zunächst müssen Sie den statischen Inhalt aus dem Zielverzeichnis in ein temporäres Verzeichnis verschieben, da RequireJS den gesamten Inhalt im Zielverzeichnis ersetzt.
 
@@ -411,7 +411,7 @@ Beispiel:
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### 3. Ausführen von r.js Optimizer
+#### &#x200B;3. Ausführen von r.js Optimizer
 
 Führen Sie dann „r.js Optimizer“ für die `build.js`-Datei aus dem Stammverzeichnis von [!DNL Commerce] aus. Die Pfade zu allen Verzeichnissen und Dateien sind relativ zum Arbeitsverzeichnis.
 
@@ -438,9 +438,9 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4. Konfigurieren von RequireJS für die Verwendung von Bundles
+#### &#x200B;4. Konfigurieren von RequireJS für die Verwendung von Bundles
 
-Um RequireJS dazu zu bringen, Ihre Bundles zu verwenden, fügen Sie der `build.js`-Datei nach dem Knoten `modules` einen `onModuleBundleComplete`-Callback hinzu:
+Um RequireJS dazu zu bringen, Ihre Bundles zu verwenden, fügen Sie der `onModuleBundleComplete`-Datei nach dem Knoten `modules` einen `build.js`-Callback hinzu:
 
 ```javascript
 [
@@ -474,7 +474,7 @@ require.config({});
 }
 ```
 
-#### 5. Erneutes Ausführen des Bereitstellungsbefehls
+#### &#x200B;5. Erneutes Ausführen des Bereitstellungsbefehls
 
 Führen Sie den folgenden Befehl aus, um bereitzustellen:
 
@@ -497,7 +497,7 @@ require.config({
 >
 >Stellen Sie beim Konfigurieren von Bundles sicher, dass Sie die `requirejs.config()` Aufrufe in der Reihenfolge ausführen, in der sie ausgeführt werden sollen, da die Aufrufe in der Reihenfolge ausgeführt werden, in der sie angezeigt werden.
 
-#### 6. Testen der Ergebnisse
+#### &#x200B;6. Testen der Ergebnisse
 
 Beachten Sie, dass der Browser nach dem Laden der Seite verschiedene Abhängigkeiten und Bundles lädt. Hier finden Sie beispielsweise die Ergebnisse für das Profil „Langsames 3G“:
 
@@ -505,7 +505,7 @@ Beachten Sie, dass der Browser nach dem Laden der Seite verschiedene Abhängigke
 
 Die Seitenladezeit für eine leere Homepage ist jetzt doppelt so schnell wie bei der Verwendung des nativen [!DNL Commerce]-Bundles. Aber wir können es noch besser machen.
 
-#### 7. Optimieren der Bundles
+#### &#x200B;7. Optimieren der Bundles
 
 Selbst wenn die Dateien im Gzip-Format komprimiert werden, sind die [!DNL JavaScript]-Dateien immer noch groß. Minimieren Sie sie mit RequireJS, das einen Verzweiger verwendet, um [!DNL JavaScript] zu einem guten Ergebnis zu verkleinern.
 

@@ -14,7 +14,7 @@ ht-degree: 0%
       <th>Adobe Commerce-Versionen</th>
       <th>2,4,8</th>
       <th>2,4,7</th>
-      <th>2.4.6</th>
+      <th>2,4,6</th>
       <th>2,4,5</th>
       <th>2,4,4</th>
       <th></th>
@@ -26,7 +26,7 @@ ht-degree: 0%
           <td>1,8+</td>
           <td>1,5+</td>
           <td>1,5+</td>
-          <td>1.5+</td>
+          <td>1,5+</td>
           <td>1,5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Composer</a><br/>
@@ -46,8 +46,8 @@ ht-degree: 0%
           </td>
       </tr>
       <tr>
-          <td>Adobe Systems Commerce-Webhooks</td>
-          <td>1.5+</td>
+          <td>Adobe Commerce-Webhooks</td>
+          <td>1,5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
           <td>1.2+</td>
@@ -65,8 +65,8 @@ ht-degree: 0%
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -78,7 +78,7 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -89,8 +89,8 @@ ht-degree: 0%
           <td>1,3,4</td>
           <td>1,3,3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/install">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -102,7 +102,7 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -113,8 +113,8 @@ ht-degree: 0%
           <td>1,7,2</td>
           <td>1,7,1</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/guide-overview">Benutzerhandbuch</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Benutzerhandbuch</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
   </tbody>

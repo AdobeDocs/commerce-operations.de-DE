@@ -1,6 +1,6 @@
 ---
 title: Daten migrieren
-description: Erfahren Sie, wie Sie mit der Migration von Daten von Magento 1 auf Magento 2 mit dem  [!DNL Data Migration Tool] beginnen.
+description: Erfahren Sie, wie Sie mit der Migration von Daten von Magento 1 zu Magento 2 mit dem [!DNL Data Migration Tool] beginnen.
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7

@@ -28,7 +28,7 @@ Möglicherweise müssen Sie in folgenden Fällen die Inkrement-ID für neue DB-E
 
 >[!INFO]
 >
->Sie können das Problem mit dem Zahlungs-Gateway für PayPal auch beheben, indem Sie in den Zahlungseingangsvoreinstellungen von PayPal mehrere Zahlungen pro Rechnungs-ID zulassen. Siehe [PayPal-Gateway-Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=de) in _Wissensdatenbank_.
+>Sie können das Problem mit dem Zahlungs-Gateway für PayPal auch beheben, indem Sie in den Zahlungseingangsvoreinstellungen von PayPal mehrere Zahlungen pro Rechnungs-ID zulassen. Siehe [PayPal-Gateway-Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) in _Wissensdatenbank_.
 
 ## Vorausgesetzte Schritte
 

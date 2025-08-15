@@ -23,7 +23,7 @@ Jedes Mal, wenn Sie eine Aktion ausführen, die dazu führt, dass sich das Daten
 
 >[!NOTE]
 >
->Eine *Komponente* kann ein Modul, ein Design oder ein Sprachpaket sein. Es spielt keine Rolle, ob die Komponente von der Commerce Marketplace stammt oder nicht.
+>Eine *Komponente* kann ein Modul, ein Design oder ein Sprachpaket sein. Es spielt keine Rolle, ob die Komponente von Commerce Marketplace stammt oder nicht.
 
 1. Starten Sie das Upgrade:
 

@@ -61,7 +61,7 @@ Kritische Fehler treten auf, wenn der benutzerdefinierte Code auf Entitäten ver
 | 5002 | Das PHP-Starttag muss der erste Inhalt in der Datei sein | Stellen Sie sicher, dass vor dem PHP-Öffnungstag kein Inhalt in der Datei vorhanden ist. |
 | 5003 | Funktion ist veraltet | Verwenden Sie einen in der Fehlermeldung vorgeschlagenen Ersatz. Wenn die Meldung keinen Ersatz vorschlägt, ist eine eingehende Überprüfung erforderlich, um eine alternative Funktion oder Implementierung auszuwählen. |
 | 5005 | PHP-Syntaxfehler | Der Code muss aktualisiert werden, um den PHP-Syntaxstandards zu entsprechen. |
-| 5072 | Mögliche Magento 2-Designverletzung. Typische Magento 1.x-Konstruktion erkannt | Bauweise auf Magento 2-Standards aktualisieren. |
+| 5072 | Mögliche Designverletzung durch Magento 2. Typische Magento 1.x-Konstruktion erkannt | Aktualisieren Sie die Konstruktion entsprechend den Magento 2-Standards. |
 | 5076 | Kann im Namespace nicht verwendet werden, da er seit PHP 7 reserviert ist | Ersetzen Sie das reservierte Wort im Namespace durch ein nicht reserviertes Keyword. |
 | 5077 | Kann nicht als Klassenname verwendet werden, da er seit PHP 7 reserviert ist | Ersetzen Sie den reservierten Klassennamen durch einen nicht reservierten Namen. |
 
@@ -179,8 +179,8 @@ Fehler mit benutzerdefiniertem Code werden ausgelöst, wenn benutzerdefinierter 
 | 5067 | Durch XPath identifizierte Knoten sind veraltet | Veraltete XML, auf die in dem Fehler hingewiesen wurde, sollte aktualisiert werden. Befolgen Sie die Vorschläge aus der Fehlermeldung. |
 | 5068 | Die Richtlinie `{{htmlescape}}` ist überholt | Verwenden Sie stattdessen `{{var}}` . |
 | 5069 | Die Richtlinie `{{escapehtml}}` ist überholt | Verwenden Sie stattdessen `{{var}}` . |
-| 5070 | 3. Parameter wird für `getChildHtml()` nicht mehr benötigt | Entfernen Sie den dritten Parameter aus dem Aufruf an `getChildHtml()`. |
-| 5071 | 4. Parameter wird für `getChildHtml()` nicht mehr benötigt | Entfernen Sie den 4. Parameter aus dem Aufruf an `getChildHtml()`. |
+| 5070 | &#x200B;3. Parameter wird für `getChildHtml()` nicht mehr benötigt | Entfernen Sie den dritten Parameter aus dem Aufruf an `getChildHtml()`. |
+| 5071 | &#x200B;4. Parameter wird für `getChildHtml()` nicht mehr benötigt | Entfernen Sie den 4. Parameter aus dem Aufruf an `getChildHtml()`. |
 | 5073 | Alte Tabellennamen mit Schrägstrich müssen auf direkte Tabellennamen korrigiert werden | Verwenden Sie stattdessen den direkten Tabellennamen. |
 | 5075 | Anwendungsmodule sollten keine Klassen aus Testmodulen verwenden | Entfernen Sie die Verwendung von Klassen aus Testmodulen. |
 | 5078 | Die Klasse muss im Konstruktor angefordert werden, andernfalls kann der Compiler diese Klassen nicht finden und generieren | Fügen Sie dem Konstruktor eine Klasse hinzu. |
@@ -194,7 +194,7 @@ Fehler mit benutzerdefiniertem Code werden ausgelöst, wenn benutzerdefinierter 
 | 5088 | Optionale Parameter nach den erforderlichen | Erforderliche Parameter nach optionalen Parametern verschieben. |
 | 5089 | Sichtbarkeit der Methode `final private` gefunden | Ändern Sie die Sichtbarkeit der Methode von `final private` in nur `private`. |
 | 5090 | Die magische Methode `__set_state` ist nicht als `static` definiert | Die magische Methode `__set_state` muss als `static` definiert werden. |
-| 5091 | Klasse mit `__toString()` Methode erbt nicht von `Stringable` Schnittstelle | Fügen Sie mit `__toString()` Methode `Stringable` Schnittstelle zur Klasse hinzu. |
+| 5091 | Klasse mit `__toString()` Methode erbt nicht von `Stringable` Schnittstelle | Fügen Sie mit `Stringable` Methode `__toString()` Schnittstelle zur Klasse hinzu. |
 | 5092 | `is_resource()` Methode, die für Funktionen verwendet wird, die jetzt Object zurückgeben | Ändern Sie `is_resource()` in `instanceof` -Objekt. |
 | 6001 | `jQuery.andSelf()` entfernt | `jQuery.addBack()` verwenden. |
 | 6002 | jQuery `$.bind` und `$.unbind` sind veraltet | Verwenden Sie stattdessen `$.on` und `$.off`. |

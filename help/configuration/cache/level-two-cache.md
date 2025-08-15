@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Um die Netzwerkbandbreite von Redis zu reduzieren, speichern Sie die Cache-Daten
 - Überprüfen Sie die Version der Cache-Daten und stellen Sie sicher, dass der neueste Cache lokal gespeichert wird
 - Neuesten Cache vom Remote-Computer auf den lokalen Computer übertragen
 
-Commerce speichert die Hash-Datenversion in Redis, wobei das Suffix &quot;:hash“ an den regulären Schlüssel angehängt wird. Wenn ein veralteter lokaler Cache vorhanden ist, werden die Daten mit einem Cache-Adapter auf den lokalen Computer übertragen.
+Commerce speichert die Hash-Datenversion in Redis, wobei das Suffix &quot;:hash&quot; an den regulären Schlüssel angehängt wird. Wenn ein veralteter lokaler Cache vorhanden ist, werden die Daten mit einem Cache-Adapter auf den lokalen Computer übertragen.
 
 >[!INFO]
 >
->Für Adobe Commerce in Cloud-Infrastrukturen können Sie [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) für die L2-Cache-Konfiguration verwenden.
+>Für Adobe Commerce in Cloud-Infrastrukturen können Sie [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) für die L2-Cache-Konfiguration verwenden.
 
 ## Konfigurationsbeispiel
 
@@ -72,7 +72,7 @@ Dabei gilt:
 
 Adobe empfiehlt die Verwendung von Redis für das Remote-Caching (`\Magento\Framework\Cache\Backend\Redis`) und `Cm_Cache_Backend_File` für das lokale Caching von Daten im gemeinsamen Speicher mit: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-Adobe empfiehlt die Verwendung der [`cache preload`](redis-pg-cache.md#redis-preload-feature)-Funktion, da sie den Druck auf Redis drastisch verringert. Vergessen Sie nicht, das Suffix &quot;:hash“ für Preload-Schlüssel hinzuzufügen.
+Adobe empfiehlt die Verwendung der [`cache preload`](redis-pg-cache.md#redis-preload-feature)-Funktion, da sie den Druck auf Redis drastisch verringert. Vergessen Sie nicht, das Suffix &quot;:hash&quot; für Vorabladeschlüssel hinzuzufügen.
 
 ## Veraltete Cache-Optionen
 
@@ -82,7 +82,7 @@ Im Allgemeinen ist der Kompromiss mit dem Warten auf Sperren von der Leistungsse
 
 Veralteter Cache funktioniert nur mit einem L2-Cache. Mit einem veralteten Cache können Sie einen veralteten Cache senden, während ein neuer in einem parallelen Prozess generiert wird. Um veralteten Cache zu aktivieren, fügen Sie `'use_stale_cache' => true` zur oberen Konfiguration des L2-Cache hinzu.
 
-Adobe empfiehlt, die Option `use_stale_cache` nur für Cache-Typen zu aktivieren, die am meisten davon profitieren, einschließlich:
+Adobe empfiehlt, die Option `use_stale_cache` nur für Cache-Typen zu aktivieren, die am meisten davon profitieren, darunter:
 
 - `block_html`
 - `config_integration_api`
@@ -92,7 +92,7 @@ Adobe empfiehlt, die Option `use_stale_cache` nur für Cache-Typen zu aktivieren
 - `reflection`
 - `translate`
 
-Beim Adobe wird nicht empfohlen, die Option `use_stale_cache` für den `default` Cache-Typ zu aktivieren.
+Es wird von Adobe nicht empfohlen, die Option `use_stale_cache` für den `default` Cache-Typ zu aktivieren.
 
 Der folgende Code zeigt eine Beispielkonfiguration:
 

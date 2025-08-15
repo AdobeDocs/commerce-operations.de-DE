@@ -5,28 +5,28 @@ feature: Install
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
 
 # Installationsanleitung {#installation-guide}
 
-- [Übersicht](overview.md)
+- [Überblick](overview.md)
 - [Systemanforderungen](system-requirements.md)
 - Voraussetzungen {#prerequisites}
    - [Übersicht](prerequisites/overview.md)
-   - des Dateisystems{#file-system}
-      - [Übersicht](prerequisites/file-system/overview.md)
+   - Dateisystem {#file-system}
+      - [Überblick](prerequisites/file-system/overview.md)
       - [Konfigurieren von Berechtigungen](prerequisites/file-system/configure-permissions.md)
-   - Webserver-{#web-server}
+   - Webserver {#web-server}
       - [Nginx](prerequisites/web-server/nginx.md)
       - [Apache](prerequisites/web-server/apache.md)
-   - Datenbank-Server-{#database-server}
+   - Datenbank-Server {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Remoteverbindungen](prerequisites/database/mysql-remote.md)
-   - {#search-engine}
-      - [Übersicht](prerequisites/search-engine/overview.md)
+   - Suchmaschine {#search-engine}
+      - [Überblick](prerequisites/search-engine/overview.md)
       - [AWS OpenSearch](prerequisites/search-engine/aws-opensearch.md)
       - [Konfigurieren von nginx](prerequisites/search-engine/configure-nginx.md)
       - [Konfigurieren von Apache](prerequisites/search-engine/configure-apache.md)
@@ -43,7 +43,7 @@ ht-degree: 2%
    - [Konfigurieren des Programms](next-steps/configuration.md)
    - [Maske festlegen (optional)](next-steps/set-umask.md)
    - Installieren von Beispieldaten (optional) {#sample-data}
-      - [Übersicht](sample-data/overview.md)
+      - [Überblick](sample-data/overview.md)
       - [Herunterladen von Composer-Paketen](sample-data/composer-packages.md)
       - [Klonen von Git-Repositorys](sample-data/git-repositories.md)
       - [Module entfernen oder aktualisieren](sample-data/remove-or-update.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Commerce deinstallieren oder neu installieren](tutorials/uninstall.md)
    - [Designs deinstallieren](tutorials/themes.md)
    - [Datenbankschema aktualisieren](tutorials/database-upgrade.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

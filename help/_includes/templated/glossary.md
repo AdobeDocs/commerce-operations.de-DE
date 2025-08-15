@@ -19,7 +19,7 @@ Verwenden Sie beim Entwerfen Ihres Layouts flexible Formate, um die Produkte, Fu
 Bei Mobilgeräten und Tablets unterscheidet sich der Bereich über dem Falz erheblich, insbesondere in Bezug auf die Größe und Abmessungen des Bildschirms und die Ausrichtung beim Betrachten (Hochformat vs. Querformat).
 Die Verwendung responsiver Designs und Tests kann dabei helfen, die richtige Mischung aus Inhalt und Layout zu finden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: design_
 
@@ -31,7 +31,7 @@ Eine aktive Verzweigung oder Umgebung ist eine, die mit einer bereitgestellten o
 Bei der Deaktivierung wird die Verbindung zu den Services und zur laufenden Instanz entfernt, der Code bleibt jedoch erhalten.
 Es wird zu einer gewöhnlichen Git-Verzweigung.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: cloud_
 
@@ -42,7 +42,7 @@ _Substantiv_
 Eine Klasse, die es zwei ansonsten inkompatiblen Systemen ermöglicht, zusammenzuarbeiten, ohne den Quellcode des Systems zu ändern.
 Beispiele sind Datenbankadapter, Cache-Adapter, Dateisystemadapter, Adapter für Postprozessorbibliotheken und andere Arten von Computing-Adaptern.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 
@@ -54,9 +54,9 @@ In der -Software eine Benutzerrolle mit vollständigen Administratorrechten, um 
 In Adobe Commerce haben Admin-Benutzer vollständige Berechtigungen und Zugriff auf alle Funktionen, Optionen und Funktionen in Admin.
 Sie können auch Benutzer und Rollen erstellen.
 
-Weitere Informationen: [Benutzer hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=de)
+Weitere Informationen: [Benutzer hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Synonyme: Administrator, Superuser_
@@ -70,9 +70,9 @@ Das kennwortgeschützte Backoffice Ihres Geschäfts, in dem Bestellungen, Katalo
 Benutzer greifen auf den Admin-Bereich zu, um den Store zu verwalten, einschließlich Produkte, Bestellungen, Sendungen, CMS-Inhalte, Design der Storefront, Kundeninformationen usw.
 Admin-Benutzende haben eine -Rolle mit Berechtigungen, die den Zugriff auf Funktionen, Optionen und Funktionen steuern.
 
-Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de)
+Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Synonyme: Admin, Admin-Bedienfeld, Backend, Administration-Benutzeroberfläche, Admin-Benutzeroberfläche_
@@ -84,9 +84,9 @@ _Substantiv_
 
 ADMIN-Variablen sind Projektumgebungsvariablen, mit denen die Konfigurationseinstellungen für das Admin-Benutzerkonto für den Zugriff auf die Admin-Benutzeroberfläche außer Kraft gesetzt werden können.
 
-Weitere Informationen: &quot;[-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=de)
+Weitere Informationen: &quot;[-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: admin, cloud_
 
@@ -96,9 +96,9 @@ _Substantiv_
 
 Der interne Bereichsname, der dem Administrator zugewiesen wurde.
 
-Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de)
+Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Bereich, Commerce-Admin_
@@ -118,7 +118,7 @@ Zu den Adobe Commerce-Bereichen gehören:
 * Schaufenster
 * Web API REST (webapi_rest)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Commerce-Komponente, Storefront_
@@ -134,11 +134,11 @@ Beispiele: Farbe, Größe, Gewicht, Preis, Alter, Geschlecht usw.
 
 Benutzerdefinierte Attribute sind ein Typ des Attributs „Entity-Attribute-Value“ (EAV).
 
-Bei Integrationen wie Google Shopping Ads Channel und Amazon Sales Channel ordnen Sie Commerce-Attribute Drittanbieterattributen zu, um Produkte richtig anzuzeigen und zu verkaufen, Anzeigen anzuzeigen.
+Bei Integrationen wie Google Shopping Ads Channel und Amazon Sales Channel ordnen Sie Commerce-Attribute den Attributen im Drittanbieter zu, um Produkte richtig anzuzeigen und zu verkaufen, Anzeigen anzuzeigen.
 
 Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Synonyme: Produktattribut, benutzerdefiniertes Attribut_
@@ -150,7 +150,7 @@ _Substantiv_
 
 Eine logische Gruppierung von Attributen innerhalb eines Attributsatzes.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Attribut_
@@ -162,7 +162,7 @@ _Substantiv_
 Eine Sammlung von Attributgruppen, angepasst für ein bestimmtes Produkt.
 Beispiel: Ein T-Shirt-Attributsatz kann Farbe, Größe, Geschlecht und Marke enthalten.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Attribut_
@@ -174,7 +174,7 @@ _Substantiv_
 Produktpreis, abzüglich Coupons oder Rabatte, zuzüglich Fracht und anfallende Steuern.
 Der Durchschnitt wird ermittelt, indem die monatlichen Anfangskosten des Lagers plus die Endkosten des Lagers für den letzten Monat des Zeitraums addiert werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Produkt, Preise, Bestand_
 
@@ -190,9 +190,9 @@ Die Storefront bietet einen Währungsselektor für mehrere akzeptierte Währunge
 Währungssymbole werden in Produktpreisen und Verkaufsdokumenten wie Bestellungen und Rechnungen angezeigt.
 Sie können die Währungssymbole nach Bedarf anpassen und die Anzeige des Preises für jeden Shop oder jede Ansicht separat festlegen.
 
-Weitere Informationen: [Währung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=de)
+Weitere Informationen: [Währung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: price_
 
@@ -202,7 +202,7 @@ _Substantiv_
 
 So führen Sie eine Aufgabe aus oder ändern mehrere Elemente gleichzeitig ohne manuelle Wiederholung.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Synonyme: Massenvorgänge_
@@ -212,15 +212,15 @@ _Term-Attribute:_
 _Substantiv_
 
 Eine Einheit der Seitenausgabe, die einen unverwechselbaren Inhalt - eine Information, ein Benutzeroberflächenelement - alles visuell für den Endbenutzer bzw. die Endbenutzerin greifbar macht.
-[Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=de) werden durch Module implementiert und bereitgestellt.
+[Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) werden durch Module implementiert und bereitgestellt.
 Blöcke verwenden Vorlagen zum Generieren von HTML.
 Beispiele für Bausteine sind eine Kategorieliste, ein Mini-Warenkorb, Produkt-Tags und eine Produktliste.
 
-[Dynamische Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=de) stellen Inhalte bereit, die auf Logik basieren, z. B. Preisregeln.
+[Dynamische Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) stellen Inhalte bereit, die auf Logik basieren, z. B. Preisregeln.
 
-Page Builder erweitert die Interaktivität und Erstellung von [Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=de) und [dynamischen Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=de).
+Page Builder erweitert die Interaktivität und Erstellung von [Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) und [dynamischen Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Synonyme: Dynamische Blöcke_
@@ -238,7 +238,7 @@ Verwenden Sie benutzerdefinierte Attribute, um Markeninformationen für Produkte
 
 Bei einigen Erweiterungen und Integrationen kann eine Marke für Ihre Produkte verwendet werden oder erforderlich sein, z. B. Google Shopping Ads Channel und Amazon Sales Channel.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -248,9 +248,9 @@ _Adjektiv_
 
 Ein Einzelhandelsgeschäft mit einem festen physischen Standort im Gegensatz zu Unternehmen, die virtuell oder ausschließlich über das Internet funktionieren.
 
-Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=de) und [Order Management](#oms) ist dieser Store eine Quelle für die Verfolgung von Produktmengen, Versandaufträgen und die Unterstützung der Abholung im Laden.
+Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) und [Order Management](#oms) ist dieser Store eine Quelle für die Verfolgung von Produktmengen, Versandaufträgen und die Unterstützung der Abholung im Laden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, inventory_
 
@@ -263,7 +263,7 @@ Beispiele für Massenvorgänge sind der Import oder Export von Artikeln, Preisä
 
 Weitere Informationen: [DevDocs-Massenvorgänge](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 
@@ -274,9 +274,9 @@ _Substantiv_
 Ermöglicht Kunden, ein benutzerdefiniertes Produkt aus verschiedenen Optionen und Konfigurationen zusammenzustellen.
 Jedes Element im Bundle ist entweder ein separates einfaches oder ein virtuelles Produkt.
 
-Weitere Informationen: [Konfigurierbare ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=de)
+Weitere Informationen: [Konfigurierbare ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: einfaches Produkt, virtuelles Produkt, Produkttypen_
@@ -288,7 +288,7 @@ _Substantiv_
 Der Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als gebündelte Erweiterung betrachtet.
 Es kann Module, Designs und Sprachpakete enthalten.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: gebündelte Erweiterung, Erweiterung_
 * _Synonyme: extension_
@@ -304,7 +304,7 @@ Speichert Cache-Einträge in einem zweistufigen Backend-System innerhalb des Sta
 Ein Cache der ersten Ebene ist schnell, z. B. ein APC oder Memcached Backend, aber er ist begrenzt und unterstützt kein Tagging und keine Gruppierung von Cache-Einträgen.
 Ein Cache der zweiten Ebene, z. B. ein Dateisystem oder ein Redis-Backend, ist langsamer, unterstützt jedoch Tagging und Gruppierung.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Verwandte Begriffe: Backend_
@@ -315,7 +315,7 @@ _Substantiv_
 
 Gibt an, welche Art von Daten im Cache-Backend gespeichert werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Verwandte Begriffe: frontend_
@@ -347,7 +347,7 @@ Adobe Commerce umfasst die folgenden Typen:
 
 Andere Typen können erstellt und definiert werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 
@@ -358,7 +358,7 @@ _Verb_
 Der Prozess der Umwandlung eines autorisierten Bestellbetrags in eine fakturierbare Transaktion.
 Transaktionen können erst erfasst werden, wenn eine Genehmigung erteilt wurde, und Genehmigungen können erst erfasst werden, wenn die Waren oder Dienstleistungen versandt wurden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 * _Verwandte Begriffe: Autorisierung, Bestellstatus_
@@ -369,7 +369,7 @@ _Substantiv_
 
 Eine Person, die von einem Finanzinstitut ermächtigt wurde, Einkäufe auf einem Kreditkartenkonto zu tätigen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -380,7 +380,7 @@ _Substantiv_
 Preisregeln, die auf den Warenkorb angewendet werden, und Trigger einer Aktion als Reaktion auf eine Reihe von Bedingungen.
 Wird zum Erstellen von Promotions verwendet.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Preise, Produkt_
 * _Verwandte Begriffe: Katalogregeln, Warenkorb_
@@ -399,7 +399,7 @@ Der aktuelle Store-Katalog wird durch die standardmäßige Root-Kategorie bestim
 
 Sie können beliebig viele Stammkategorien erstellen, es kann jedoch immer nur eine (Standard) gleichzeitig verwendet werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Preise, Produkt_
 * _Verwandte Begriffe: freigegebener Katalog, Katalogregel_
@@ -411,7 +411,7 @@ _Substantiv_
 Preisregeln, die auf bestimmte Produkte angewendet werden, und Trigger einer Aktion als Reaktion auf eine Reihe von Bedingungen.
 Wird zum Erstellen von Promotions verwendet.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Preise, Produkt_
 * _Verwandte Begriffe: Warenkorbregeln, Katalog_
@@ -423,7 +423,7 @@ _Substantiv_
 Eine Gruppe von Produkten, die etwas gemeinsam haben.
 Das Hauptmenü des Ladens ist in Kategorien und Unterkategorien von Produkten unterteilt.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 
@@ -438,7 +438,7 @@ Checkout bietet viele Optionen und Konfigurationen, die vorkonfiguriert und übe
 
 Weitere Informationen: [Checkout-Tutorial](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Business, Design, Bestellung, Produkt, Programmierung_
 
@@ -448,9 +448,9 @@ _Substantiv_
 
 Cloud-Variablen sind Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisch sind und das **`MAGENTO_CLOUD`** Präfix verwenden.
 
-Weitere Informationen: [Cloud-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=de)
+Weitere Informationen: [Cloud-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: cloud_
 
@@ -458,9 +458,9 @@ _Term-Attribute:_
 
 _Substantiv_
 
-Eine spezielle Variante von [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=de), die nur in der Admin erstellt und nicht über Layout-Dateien referenziert werden kann.
+Eine spezielle Variante von [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html), die nur in der Admin erstellt und nicht über Layout-Dateien referenziert werden kann.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Block, statischer Block_
@@ -471,7 +471,7 @@ _Substantiv_
 
 Daten, die mit mehreren Produktoptionen verknüpft sind.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 
@@ -481,7 +481,7 @@ _Substantiv_
 
 Wird verwendet, um auf ein Modul, Design oder Sprachpaket in Adobe Commerce zu verweisen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Synonyme: Komponente_
@@ -503,7 +503,7 @@ Beispiel: T-Shirts, die in zwei Farben und drei Größen erhältlich sind.
 Sechs Varianten müssen als einzelne Produkte erstellt werden (jede mit einer eigenen SKU).
 Anschließend werden alle Varianten zu einem konfigurierbaren Produkt hinzugefügt, bei dem Kundinnen und Kunden die Größe und Farbe auswählen und es dann zum Warenkorb hinzufügen können.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Produktarten_
@@ -514,7 +514,7 @@ _Substantiv_
 
 Der Prozentsatz der Besucherinnen und Besucher, die in Käufer umgewandelt werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -522,9 +522,9 @@ _Term-Attribute:_
 
 _Substantiv_
 
-Die Skalierung auf Kernebene besteht aus drei Service-Knoten für Datenspeicherung, Cache und Services wie OpenSearch, Elasticsearch, MariaDB und Redis.
+Die Skalierung auf Kernebene umfasst drei Service-Knoten für Datenspeicherung, Cache und Services, z. B. OpenSearch, Elasticsearch, MariaDB und Redis.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: cloud_
 
@@ -535,7 +535,7 @@ _Substantiv_
 Ein Dokument, das der Händler einem Kunden ausstellt, um einen ausstehenden Saldo aufgrund von Preisaufschlag, Rabatt oder Warenrückgabe abzuschreiben.
 Die Mitteilung stellt die Mittel auf dem Konto des Kunden wieder her.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -545,7 +545,7 @@ _Substantiv_
 
 Details, warum dem Kunden ein Gutschriftsbetrag gutgeschrieben wurde.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -555,7 +555,7 @@ _Substantiv_
 
 Ein fakturierter Artikel, für den ein Händler eine Gutschrift erstellt.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -567,7 +567,7 @@ Ein Produkt, das neben dem Warenkorb angezeigt wird.
 Wenn ein Kunde zur Warenkorbseite navigiert, werden diese Produkte als Crosssell zu den Artikeln angezeigt, die sich bereits im Warenkorb befinden.
 Sie ähneln Impulsverkäufen, wie Magazinen und Süßigkeiten an den Registrierkassen in Lebensmittelläden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, product_
 * _Verwandte Begriffe: Upsell_
@@ -579,7 +579,7 @@ _Substantiv_
 Eine Abkürzung für „Karteninhaber-Verifizierungsmethode“.
 Eine Möglichkeit, die Identität des Kunden zu überprüfen, indem ein 3-stelliger oder 4-stelliger Kreditkarten-Sicherheitscode mit dem Zahlungsprozessor bestätigt wird.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 * _Synonyme: Karteninhaber-Verifizierungsmethode_
@@ -595,7 +595,7 @@ Die Struktur der Daten in einer Datenbank.
 Definiert, wie Daten organisiert sind und wie Datenbeziehungen gesteuert werden, einschließlich aller auf die Daten angewendeten Einschränkungen.
 Ein Modul kann Fragmente des Datenbankschemas enthalten, wenn dieses Modul Daten enthält, die in der Datenbank gespeichert werden müssen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Synonyme: schema_
@@ -609,7 +609,7 @@ Diese Klasse delegiert die Verantwortung für das Einfügen der Abhängigkeit an
 Wird verwendet, um das Testen zu vereinfachen.
 Um Abhängigkeiten für Klassen zu definieren, bearbeiten Sie die Konfigurationsdatei „di.xml“.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 
@@ -619,9 +619,9 @@ _Substantiv_
 
 Ein Bereitstellungsschlüssel ist Ihr öffentlicher SSH-Schlüssel für das Projekt und ermöglicht schreibgeschützten oder (falls aktiviert) Lese-/Schreibzugriff auf ein Git-Repository.
 
-Weitere Informationen: [Sichere Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de)
+Weitere Informationen: [Sichere Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: cloud_
 
@@ -631,7 +631,7 @@ _Substantiv, Verb_
 
 Ein E-Mail-Verifizierungsprozess, bei dem potenzielle Abonnenten einen zweiten Schritt ausführen müssen, der ihre Absicht bestätigt, sich zu abonnieren.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -645,7 +645,7 @@ Ein herunterladbares Produkt kann eine elektronische Version Ihres Produktkatalo
 
 Herunterladbare Dateien können sich auf Ihrem -Server befinden oder als URLs zu einem anderen Server oder einem Content Delivery Network bereitgestellt werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Produktarten_
@@ -657,7 +657,7 @@ _Substantiv_
 Inhalte, die durch Code generiert werden, anstatt aus einer statischen Vorlage gelesen zu werden.
 Nachdem dynamische Inhalte anfänglich gerendert werden, wenn ein Benutzer eine Seite besucht, kann der Inhalt manchmal zwischengespeichert und wiederverwendet werden, ohne dass ein weiterer dynamischer Aufruf bei einem erneuten Besuch erforderlich ist.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: design_
 * _Verwandte Begriffe: php_
@@ -675,7 +675,7 @@ Die Verwendung von Dynamic Media-URLs kann die Suchleistung im Katalog beeinträ
 
 Codeformat: media url=&quot;path/to/image.jpg&quot;
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Verwandte Begriffe: Content Delivery Network, URL_
@@ -688,9 +688,9 @@ _Substantiv_
 
 Eine Reihe von Skripten und Tools, die zur Verwaltung und Bereitstellung des Commerce-Programms entwickelt wurden. Dieses Paket vereinfacht viele Adobe Commerce-Prozesse in der Cloud-Infrastruktur, einschließlich der Bereitstellung in einer Docker-Umgebung, der Verwaltung von Zuordnungen, der Überprüfung der Projektkonfiguration und der Anwendung von Adobe-Patches.
 
-Weitere Informationen: [ece-tools-Paket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=de)
+Weitere Informationen: [ece-tools-Paket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: cli, cloud, deploy_
 
@@ -702,7 +702,7 @@ Eine eindeutige Einheit oder ein eindeutiges Objekt in der Programmierung.
 Enthält Attribute oder Parameter zum Ändern.
 Beispiele sind Staging - bei dem eine Aktualisierung Entitäten wie Preisregeln, Produkte oder Kategorien ändern kann - und Datenbankdatensätze - bei denen Dienstverträge Datenstrukturen enthalten, die gesendet und empfangen werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Attribut, Regeln für den Warenkorb, Katalogregeln_
@@ -718,7 +718,7 @@ Dieses Datenmodell ist flexibel, kann aber langsam sein.
 
 Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Synonyme: eav_
@@ -729,7 +729,7 @@ _Substantiv_
 
 Inhalte mit langer Haltbarkeit oder wiederverwendbare Inhalte.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -738,10 +738,10 @@ _Term-Attribute:_
 _Substantiv_
 
 Code, der das Verhalten von Adobe Commerce erweitert oder anpasst.
-Sie können eine Erweiterung optional auf Commerce Marketplace oder einem anderen Erweiterungsverteilungssystem verpacken und verteilen.
+Sie können optional eine Erweiterung in Commerce Marketplace oder einem anderen Erweiterungsverteilungssystem verpacken und verteilen.
 Eine Commerce-Erweiterung kann Module, Designs und Sprachpakete enthalten.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Komponente, Modul, Paket_
@@ -754,7 +754,7 @@ Erweitern Sie die Funktionalität und verwenden Sie häufig komplexere Datentype
 
 Weitere Informationen: [Hinzufügen von Erweiterungsattributen zur Entität](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Attribut, Entitätsattributwert_
@@ -768,7 +768,7 @@ _Substantiv_
 Im internationalen Versand bedeutet dieser Begriff, dass die empfangende Partei für die Versandkosten verantwortlich ist.
 FOB kann auf dem Ursprungs- oder Bestimmungsort basieren und entweder als Fracht abholen oder als Fracht vorausbezahlt gekennzeichnet sein.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Geschäft, Bestellung, Preise_
 * _Synonyme: fob_
@@ -785,7 +785,7 @@ Ein Benutzer interagiert mit der Storefront, die wiederum Code verwendet, der au
 
 Hinweis: In der Vergangenheit wurde die Storefront als „Frontend“ und der Admin als „Backend“ bezeichnet. Diese Verwendung wird nicht mehr unterstützt.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: design, programmierung_
 * _Synonyme: Client-Seite_
@@ -797,7 +797,7 @@ _Substantiv_
 
 Eigenschaften, die die Darstellung und das Verhalten eines Attributs aus Sicht des Kunden in Ihrem Store bestimmen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: design, programmierung_
 
@@ -807,7 +807,7 @@ _Substantiv_
 
 Der Prozess der Verwaltung von Kundensendungen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -832,7 +832,7 @@ Eine Geschenkkarte kann auch vom Store-Administrator auf Kundenwunsch eingelöst
 Geschenkgutscheine helfen auch bei Werbeaktionen, da Geschenkgutscheinadministratoren die Geschenkgutscheinkonten im Backend manuell erstellen und die Geschenkgutscheincodes an das spezifische Kundensegment senden können.
 Geschenkgutscheine können als Treueprogramm für die aktivsten Kundinnen und Kunden dienen, die während der Feiertage zahlreiche Käufe im Webstore oder eine bestimmte Werbekampagne tätigen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: Produktarten_
@@ -843,7 +843,7 @@ _Substantiv_
 
 Die Differenz zwischen den Kosten und dem Preis eines Produkts.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -858,7 +858,7 @@ Jedes Produkt kann separat oder als Teil der Gruppe erworben werden.
 Beispielsweise können bei einem Messer, das in vier Größen verfügbar ist, alle vier Messer innerhalb einer gruppierten Produktseite angezeigt werden.
 Kunden können die gewünschten Größen auswählen und sie über diese Seite zum Warenkorb hinzufügen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: einfaches Produkt, Produktarten_
@@ -875,7 +875,7 @@ Bei Seiten-Handles wird der Handle-Name von der URL abgeleitet und dann verwende
 Im Modul Kunde gibt es beispielsweise eine Layout-Datei mit dem Namen &quot;view/frontend/layout/checkout_cart_index.xml&quot;.
 Hier ist „frontend“ der Bereichsname und „checkout_cart_index“ der Handle-Name, die beide von der URL abgeleitet sind.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Synonyme: Seiten-Handle_
@@ -886,7 +886,7 @@ _Substantiv_
 
 Horizontale Skalierung (auch als Skalierung bezeichnet) ist der Prozess des Hinzufügens zusätzlicher Knoten oder Maschinen zu Ihrer Infrastruktur, um den wachsenden Bedarf zu decken.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: cloud_
 
@@ -902,7 +902,7 @@ Um eine Funktion abzufangen, implementiert ein Plug-in den zusätzlichen Code, d
 Plug-ins werden durch die Konfigurationsdatei für die Injektion von Abhängigkeiten (di.xml) mit Abfangpunkten verknüpft.
 Wenn mehrere Plug-ins für dieselbe Funktion definiert sind, definiert die Konfiguration der Abhängigkeitseinschleusung die Reihenfolge, in der die Plug-ins aufgerufen werden, sodass mehrere Plug-ins ohne Konflikte verwendet werden können.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Verwandte Begriffe: Plug-in_
@@ -918,7 +918,7 @@ Beim Erstellen einer Commerce-Seite besteht ein Layout aus einer Reihe von Blöc
 Seiten-Layout-Dateien konzentrieren sich auf die höchste Ebene der Seitenstruktur (Kopfzeile, Fußzeile, Hauptinhaltsbereich, linke Seitenleiste usw.).
 Layout-Dateien stellen dann Inhalte (Blöcke) in diesen verschiedenen Bereichen der Seite zusammen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Design, Commerce-Software_
 * _Verwandte Begriffe: Layout-Anweisungen, Block_
@@ -931,7 +931,7 @@ Markup in einer Layout-Datei, die die Änderungen beschreibt, die auf eine Baums
 Eine einzelne Layout-Datei kann mehrere Layout-Anweisungen enthalten.
 Layout-Anweisungen werden in Layout-Dateien in XML kodiert.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: design, programmierung_
 * _Verwandte Begriffe: Layout, Block, Container, UI-Komponente_
@@ -942,7 +942,7 @@ _Substantiv_
 
 Wird für Codeausschnitte verwendet, die hinzugefügt werden, um das XML-Layout zu ändern oder die Layout-Anweisungen aus einer anderen Datei zu importieren.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Design, Commerce-Software_
 
@@ -954,7 +954,7 @@ Der Lizenzinhaber (auch als Kontoinhaber bezeichnet) ist die benannte Person in 
 Diese Person dient als Ansprechpartner für Adobe.
 Nachdem ein Unternehmen ein Adobe Commerce on Cloud Infrastructure-Abonnement erworben hat, steht der anfängliche Projekt- und Code-Zugriff nur der als Lizenzinhaber bestimmten Person zur Verfügung.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -967,9 +967,9 @@ _Substantiv_
 MAGEID ist in der Regel der Rechnungskontakt für das Adobe Commerce-Konto (und möglicherweise nicht der Projektbesitzer des Adobe Commerce on Cloud Infrastructure-Projekts).
 Für die Zugriffsberechtigung auf Adobe Commerce und Adobe Commerce auf Cloud-Infrastrukturpakete müssen Sie Zugriffsschlüssel verwenden, die mit einer MAGEID verknüpft sind, der Zugriff auf diese Pakete gewährt wurde.
 
-Weitere Informationen: [Authentifizierungsschlüssel abrufen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=de)
+Weitere Informationen: [Authentifizierungsschlüssel abrufen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 
@@ -978,12 +978,12 @@ _Term-Attribute:_
 _Substantiv_
 
 In Marketing und Einzelhandel ein Prozentsatz, der zu den Kosten eines Artikels addiert wird, um den Einzelhandelspreis zu bestimmen.
-[Konfigurieren des ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=de) oder Markdown eines Produkts durch anpassbare Optionen.
+[Konfigurieren des ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) oder Markdown eines Produkts durch anpassbare Optionen.
 
 In der Entwicklung eine Computersprache, die die Verarbeitung, Darstellung und Formatierung von Text steuert.
 Markup-Tags sind Code-Ausschnitte, die einer CMS-Seite oder einem -Block Funktionen oder Inhalte hinzufügen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, programmierung_
 * _Synonyme: Markdown_
@@ -994,7 +994,7 @@ _Substantiv_
 
 Auf Adobe Commerce in der Cloud-Infrastruktur verwenden Pro-Projekte eine aktive Platform as a Service (PaaS)-Umgebung namens „master“, die eine Kopie Ihrer Produktionsumgebungsdatenbank und Ihres Webservers enthält.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: cloud_
 
@@ -1004,7 +1004,7 @@ _Substantiv_
 
 Ein Konto bei einer Bank oder einem Finanzinstitut, das die Annahme von Kreditkartentransaktionen ermöglicht.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -1016,7 +1016,7 @@ MFTF ist ein [Funktionstest-Framework](https://developer.adobe.com/commerce/test
 Es bietet ein Test-Framework für Commerce-Entwickler und Software-Ingenieure wie QA-Spezialisten, PHP-Entwickler und Systemintegratoren.
 Entwickler und QA können Tests schreiben, um Benutzerinteraktionen mit Web-Anwendungen auszuprobieren, die Funktionalität zu überprüfen und Regressionstests zu automatisieren.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Commerce-Software, Programmierung_
 * _Verwandte Begriffe: cms-Block, statischer Block, Container, Layout_
@@ -1025,17 +1025,17 @@ _Term-Attribute:_
 
 _Substantiv_
 
-Code, der die von der Magento-Anwendung bereitgestellten Funktionen ändert oder erweitert.
+Code, der von der Magento-Anwendung bereitgestellte Funktionen ändert oder erweitert.
 Ein Modul ist in einer Verzeichnisstruktur enthalten, die PHP- und XML-Dateien (Konfiguration, Bausteine, Controller, Helper, Modelle usw.) enthält, die sich auf eine bestimmte Funktionalität beziehen, um eine bestimmte Sammlung von Produktfunktionen bereitzustellen.
 Der Zweck jedes Moduls besteht darin, spezifische Produktfunktionen bereitzustellen, indem neue Funktionen implementiert oder die Funktionalität anderer Module erweitert wird.
 Jedes Modul ist so konzipiert, dass es unabhängig funktioniert, sodass das Ein- oder Ausschließen eines bestimmten Moduls die Funktionalität anderer Module nicht beeinträchtigt.
 
 Ein Modul kann auch Widgets implementieren, bei denen es sich um Seitenelemente handelt, die von Geschäftsbenutzern in der Admin angepasst werden können.
 
-Module können deaktiviert oder entfernt werden, ohne dass die Konsistenz der Magento-Anwendung beeinträchtigt wird.
+Module können deaktiviert oder entfernt werden, ohne dass die Konsistenz des Magento-Programms beeinträchtigt wird.
 Eine Ausnahme: Wenn das Modul von anderen Modulen abhängig ist, was erfordert, dass die abhängigen Module deaktiviert oder entfernt werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: php, xml, block_
@@ -1046,7 +1046,7 @@ _Term-Attribute:_
 
 _Substantiv_
 
-OMS ist das Order Management-Systemangebot der Adobe.
+OMS ist das Order Management-Systemangebot von Adobe.
 
 >[!IMPORTANT]
 >
@@ -1064,7 +1064,7 @@ Zu den OMS-Funktionen gehören:
 
 Weitere Informationen: [Archivierte OMS-Dokumentations-Site](https://commerce-docs.github.io/oms-documentation-archive/)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Funktion, Commerce-Software, Auftragsverwaltung_
 * _Synonyme: Order Management, MOM, Order Management System, Magento Order Management_
@@ -1076,9 +1076,9 @@ _Substantiv_
 
 Origin Cloaking ist eine Sicherheitsfunktion, mit der Adobe Commerce in der Cloud-Infrastruktur jeden Nicht-Fastly-Traffic blockieren kann, um DDoS-Angriffe zu verhindern, die an die Cloud-Infrastruktur (Herkunft) gesendet werden.
 
-Weitere Informationen: [Fastly Origin Cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=de)
+Weitere Informationen: [Fastly Origin Cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: security_
 * _Verwandte Begriffe: Web Application Firewall_
@@ -1094,9 +1094,9 @@ Diese Steuerelemente werden auch als „Inhaltstypen“ bezeichnet.
 Händler können Layouts und Seiten ohne Programmiererfahrung entwerfen.
 Entwicklerinnen und Entwickler erhalten Unterstützung bei Erweiterungen, um Page Builder zu erweitern.
 
-Weitere Informationen: [Page Builder-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=de), [Page Builder-DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Weitere Informationen: [Page Builder-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [Page Builder-DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Commerce-Software, Design_
 * _Synonyme: Admin, Admin-Bedienfeld, Backend, Administration-Benutzeroberfläche, Admin-Benutzeroberfläche_
@@ -1108,7 +1108,7 @@ _Substantiv_
 
 Ein Zahlungs-Gateway ist ein Drittanbieterdienst, der nahtlos Kreditkartentransaktionen verarbeitet, ohne dass der Kunde die Website des Händlers verlässt.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order, programmierung_
 
@@ -1121,7 +1121,7 @@ _Substantiv_
 Eine Auswahl von Produkten, die als Anreiz zum Kauf zusätzlicher Artikel präsentiert wird.
 Wenn der Kunde beispielsweise die Produktseite für eine Kamera aufruft, können zu den zugehörigen Produkten andere vergleichbare Kameras, ein Kameratui und ein Stativ gehören.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 
@@ -1133,7 +1133,7 @@ _Substantiv_
 
 Enthält Regeln für den Warenkorb und den Katalog, mit denen ein Produkt für Werbeaktionen bewertet wird.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Regeln für den Warenkorb, Katalogregeln_
@@ -1152,7 +1152,7 @@ Der Umfang kann auf Folgendes angewendet werden:
 
 Innerhalb der Hierarchie können Einstellungen, die auf einer niedrigeren Ebene angewendet werden, einige Einstellungen einer höheren Ebene überschreiben.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 
@@ -1164,7 +1164,7 @@ Ein Satz von PHP-Schnittstellen, die für ein Modul definiert sind.
 Ein Dienstvertrag umfasst Datenschnittstellen, die die Datenintegrität wahren, und Dienstschnittstellen, die Geschäftslogikdetails vor Dienstanforderern wie Controllern, Webdiensten und anderen Modulen ausblenden.
 Web-APIs können über Konfigurationsdateien an Dienstverträge gebunden werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Verwandte Begriffe: php, Web-API_
@@ -1175,7 +1175,7 @@ _Substantiv_
 
 Die Abrechnung erfolgt, wenn die Händlerbank und der Emittent Geldbeträge austauschen und die Erlöse auf das Händlerkonto einzahlen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -1194,7 +1194,7 @@ Mit der Funktion „Freigegebener Katalog“ verfügt der Händler über:
 * Katalog für Kunde 2 (kann der gesamte Katalog mit 10 % Rabatt sein)
 * Customer 3-Katalog (einige Dutzend Produkte mit Rabatten von 5 % bis 60 % gegenüber dem Hauptkatalog).
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Katalog, b2b_
@@ -1206,7 +1206,7 @@ _Substantiv_
 Eine Sendung enthält zu liefernde Produkte und generiert eine Aufzeichnung der Produkte in einer Bestellung, die versendet wurden.
 Einer Bestellung können mehrere Sendungen zugeordnet werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -1216,7 +1216,7 @@ _Substantiv_
 
 Ein Dokument, das eine Sendung begleitet. Das Dokument listet die Produkte und ihre Mengen im Lieferpaket auf.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -1226,7 +1226,7 @@ _Substantiv_
 
 Ein Unternehmen, das Pakete transportiert. Häufige Spediteure sind UPS, FedEx, DHL und USPS.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business, order_
 
@@ -1237,7 +1237,7 @@ _Substantiv_
 Die Produktgruppe, die ein Kunde ausgewählt hat, aber noch nicht gekauft hat.
 Bezieht sich auch auf einen Bereich einer E-Commerce-Website, in dem diese Produkte zum Überprüfen und Checkout gefunden werden können.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Business, Design, Produkt, Programmierung_
 * _Synonyme: Warenkorb, Warenkorb_
@@ -1252,7 +1252,7 @@ Einfache Produkte verfügen über verschiedene Preis- und Eingabesteuerungen, di
 Einfache Produkte können in Verbindung mit gruppierten, gebündelten und konfigurierbaren Produkten verwendet werden.
 Ein einfaches Produkt mit benutzerdefinierten Optionen wird manchmal als zusammengesetztes Produkt bezeichnet.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Produktarten_
@@ -1264,7 +1264,7 @@ _Substantiv_
 Abkürzung für Stock Keeping Unit.
 Eine Zahl oder ein Code, der einem Produkt zugewiesen wird, um das Produkt, die Optionen, den Preis und den Hersteller zu identifizieren.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Business, Preisgestaltung, Produkt, Programmierung_
 * _Verwandte Begriffe: freigegebener Katalog_
@@ -1275,7 +1275,7 @@ _Substantiv_
 
 Eine Werbeseite mit einem Produkt oder einer Werbung, die normalerweise vor der Startseite angezeigt wird.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: design_
 
@@ -1287,7 +1287,7 @@ Eine modulare Inhaltseinheit, die von einem Benutzer in der CMS auf einer Seite 
 Statische Blöcke enthalten bearbeitbare Inhalte und können als Landingpages für Produktkategorien fungieren.
 Widgets können zu statischen Blöcken hinzugefügt werden, um zusätzliche Funktionen bereitzustellen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: cms-Block, block_
@@ -1298,7 +1298,7 @@ _Substantiv_
 
 Benutzergenerierte Inhalte (nicht vom Code generiert), die sich nicht häufig ändern.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: design_
 * _Verwandte Begriffe: dynamische Inhalte_
@@ -1309,7 +1309,7 @@ _Substantiv_
 
 Die Sammlung von Assets wie CSS, Schriftarten, Bildern und JavaScript, die von einem Design verwendet wird.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 
@@ -1322,7 +1322,7 @@ Läden können in einem oder mehreren Gruppen organisiert werden. Jeder Store ve
 
 Jeder Store kann über mehrere Store-Ansichten verfügen, die normalerweise verwendet werden, um die Storefront in einem anderen Gebietsschema und in einer anderen Sprache darzustellen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Store-Ansicht, Website_
@@ -1335,7 +1335,7 @@ Die Commerce-Bereichsebene „Store-Ansicht“ bezieht sich auf die dritte Ebene
 Store-Ansichten präsentieren die Storefront normalerweise in einem anderen Gebietsschema und in einer anderen Sprache.
 Um die Store-Ansichten zu ändern, verwenden Sie die Store-Auswahl in der Kopfzeile.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Store, Website_
@@ -1346,7 +1346,7 @@ _Substantiv_
 
 Der Online-Store, den Kundinnen und Kunden beim Besuch Ihrer Commerce-Site erleben.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 
@@ -1358,7 +1358,7 @@ _Substantiv_
 
 Eine Kombination aus einer Produkt-Steuerklasse, einer Kunden-Steuerklasse und einem Steuersatz. Diese Regel definiert, welche Steuerberechnung angewendet wird.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: business_
 
@@ -1368,10 +1368,10 @@ _Substantiv_
 
 Abkürzung für HTML-Vorlage oder PHTML-Vorlage.
 Eine PHTML-Datei enthält eine Mischung aus HTML-Markup und PHP-Code, um dynamische Inhalte in die HTML einzufügen.
-Die meisten Bausteine verfügen über mindestens eine PHTML-Datei (Vorlagendatei), die die vom Baustein generierte statische HTML enthält.
+Die meisten Blöcke verfügen über mindestens eine PHTML-Datei (Vorlage), die die vom Block generierte statische HTML enthält.
 In den Admin-, E-Mail- und Newsletter-Vorlagen werden Text, Bilder und Variablen mit HTML-Markup kombiniert, um personalisierte Inhalte zu erstellen, die vom System gesendet werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: block_
@@ -1384,9 +1384,9 @@ Enthält Grafik- und Erscheinungsbildinformationen.
 Passt das Erscheinungsbild des Stores an.
 Adobe Commerce kann Designs in (Composer)-Paketen bereitstellen.
 Designs können jedoch unter App/Design platziert werden, das nicht im Paket bereitgestellt wird.
-Pakete sind die Download-Einheit für Composer, und - per Commerce Marketplace - Commerce-Anwender können CE oder EE als eine Serie von Paketen herunterladen, wobei Pakete Module, Themen oder Sprachpakete enthalten.
+Pakete sind die Download-Einheit für Composer, und über Commerce Marketplace können Commerce-Benutzer CE oder EE als eine Serie von Paketen herunterladen, wobei Pakete Module, Themen oder Sprachpakete enthalten.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software_
 
@@ -1400,15 +1400,15 @@ Ein Tag, das für die Adobe Commerce-Software entwickelt wurde, um ein einfacher
 Die Ziele des Benutzeroberflächen-Komponentensystems umfassen Folgendes:
 
 * Vereinfachen des Layouts zur Handhabung von XML-Dateien
-* Verschieben von Elementen der Admin-Benutzeroberfläche von HTML+JavaScript in ein benutzerdefiniertes Widget-System „Pure JavaScript&quot;
+* Verschieben von Elementen der Admin-Benutzeroberfläche von HTML+JavaScript in ein benutzerdefiniertes Widget-System des Typs „reines JavaScript&quot;
 * Ermöglichen der Erstellung komplexerer UI-Komponenten aus kleineren Komponenten
 * Vorrendern von Daten für Benutzeroberflächenkomponenten als JSON, enge Bindung an Backend-Datenobjekte
 * Verwenden von AJAX zum Aktualisieren von Komponentendaten
 * Einführung einer neuen DSL für die Erstellung der oben genannten Elemente
 
-Weitere Informationen: [Handbuch zu Benutzeroberflächen](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=de)
+Weitere Informationen: [Handbuch zu Benutzeroberflächen](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Verwandte Begriffe: JavaScript, Layout, Komponente, Page Builder_
@@ -1417,19 +1417,19 @@ _Term-Attribute:_
 
 _Substantiv_
 
-[PWA Studio ](https://github.com/magento/pwa-studio) verwendet [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) in der Entwicklung.
+[PWA Studio](https://github.com/magento/pwa-studio) verwendet [UPWARD](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) in der Entwicklung.
 UPWARD ist ein Akronym für Unified Progressive Web App Response Definition.
-Eine UPWARD-Definitionsdatei beschreibt, wie ein Webserver ein Progressive Web Application bereitstellt und unterstützt.
+Eine UPWARD-Definitionsdatei beschreibt, wie ein Webserver eine Progressive Web Application bereitstellt und unterstützt.
 
 UPWARD-Definitionsdateien liefern Details zum Serververhalten mit plattformunabhängiger, deklarativer Sprache.
-Dadurch kann ein Progressive Web Application auf einem UPWARD-kompatiblen Server in jeder Sprache auf einem beliebigen Technologie-Stack ausgeführt werden, da die Anwendung nur das HTTP-Endpunktverhalten vom UPWARD-Server berücksichtigt.
+Dadurch kann eine Progressive Web Application auf einem UPWARD-kompatiblen Server in jeder beliebigen Sprache auf jedem Technologie-Stack ausgeführt werden, da die Anwendung nur das HTTP-Endpunktverhalten vom UPWARD-Server berücksichtigt.
 
 Ein UPWARD-Server verwendet eine Definitionsdatei, um den entsprechenden Prozess oder Service für eine Anforderung von einer Anwendungs-Shell zu ermitteln.
 Darin wird beschrieben, wie der Server eine Anfrage verarbeiten und die Antwort dafür erstellen soll.
 
 Ein PWA-Projekt kann eine UPWARD-Definitionsdatei enthalten, um die Service-Abhängigkeiten anzugeben.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Design, Commerce-Software, Programmierung_
 * _Synonyme: PWA Studio, Unified Progressive Web App Response Definition_
@@ -1445,9 +1445,9 @@ Vom Anbieter erstellter Code, der das Verhalten von Commerce erweitert oder anpa
 VBEs werden gründlich getestet und in jeder unterstützten Version von Adobe Commerce enthalten.
 Eine VBE kann Module, Designs und Sprachpakete enthalten.
 
-Weitere Informationen finden Sie unter [Thema zur Bundle-Erweiterung für Anbieter](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=de).
+Weitere Informationen finden Sie unter [Thema zur Bundle-Erweiterung für Anbieter](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Erweiterung, Anbieter-gebündelte Erweiterung, Erweiterung, VBE_
 * _Synonyme: extension, VBE_
@@ -1459,7 +1459,7 @@ _Substantiv_
 
 Vertikale Skalierung (Hochskalierung) bezieht sich auf die Erhöhung der Verarbeitungsleistung eines einzelnen Servers oder Clusters durch Hinzufügen von Festplatten- oder Netzwerk-E/A, CPUs oder RAM.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: environment_
 
@@ -1474,7 +1474,7 @@ Erfordert weder Versand noch Inventar.
 Der Prozess der Erstellung eines virtuellen Produkts und eines einfachen Produkts ist nahezu identisch.
 Da ein virtuelles Produkt jedoch nicht ausgeliefert wird, gibt es kein Gewichtsfeld oder eine Option, um eine Geschenkkarte einzuschließen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: Commerce-Software, Produkt_
 * _Verwandte Begriffe: Produktarten_
@@ -1487,7 +1487,7 @@ Virtuelle Typen sind eine Möglichkeit, verschiedene Abhängigkeiten in bestehen
 Auf virtuelle Typen kann nur durch Argumentüberschreibungen in einem `<type>`-Element innerhalb von di.xml-Dateien verwiesen werden, niemals im Quellcode.
 Sie können nicht erweitert werden und sie können keine Verweise als Abhängigkeiten in einem Klassenkonstruktor sein.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Feld: programmierung_
 * _Verwandte Begriffe: php_
@@ -1502,7 +1502,7 @@ In der Adobe Commerce-Software die höchste Ebene einer Website-Hierarchie über
 Sie können mehrere Websites haben, und jede Website kann einen anderen Domain-Namen haben.
 Websites können so eingerichtet werden, dass Kundendaten gemeinsam genutzt oder nicht gemeinsam genutzt werden.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Commerce-Software, Design, Produkt_
 * _Verwandte Begriffe: store, store view_
@@ -1511,11 +1511,11 @@ _Term-Attribute:_
 
 _Substantiv_
 
-Ein [Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=de) ist ein vorbereiteter Code-Ausschnitt, der verwendet werden kann, um Blöcke, Links und dynamische Inhalte an bestimmten Stellen auf Speicherseiten zu platzieren.
+Ein [Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) ist ein vorbereiteter Code-Ausschnitt, der verwendet werden kann, um Blöcke, Links und dynamische Inhalte an bestimmten Stellen auf Speicherseiten zu platzieren.
 Sie können Widgets verwenden, um Landingpages für Marketing-Kampagnen zu erstellen und Werbeinhalte an bestimmten Stellen im gesamten Store anzuzeigen.
 Widgets können auch verwendet werden, um interaktive Elemente und Aktionsblöcke für externe Überprüfungssysteme, Videochats, Abstimmungs- und Abonnementformulare hinzuzufügen oder Navigationselemente für Tag-Clouds und Bild-Regler bereitzustellen.
 
-_Term-Attribute:_
+_Attribute :_
 
 * _Bereich: Business, Commerce-Software, Design_
 * _Verwandte Begriffe: block_

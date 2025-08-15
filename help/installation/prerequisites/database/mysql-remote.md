@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Manchmal empfiehlt es sich, die Datenbank auf einem separaten Server zu hosten, anstatt den Datenbankserver und den Webserver auf demselben Computer auszuführen.
 
-Adobe bietet die Möglichkeit, eine Verbindung zu einem MySQL-Server auf einem anderen Computer herzustellen. Ab Adobe Commerce 2.4.3 können Sie die Anwendung auch so konfigurieren, dass sie eine Amazon Web Services (AWS) Aurora-Datenbank ohne Code-Änderungen verwendet.
+Adobe bietet eine Möglichkeit, eine Verbindung zu einem MySQL-Server auf einem anderen Computer herzustellen. Ab Adobe Commerce 2.4.3 können Sie die Anwendung auch so konfigurieren, dass sie eine Amazon Web Services (AWS) Aurora-Datenbank ohne Code-Änderungen verwendet.
 
 Aurora ist ein leistungsstarker, vollständig konformer MySQL-Server, der auf AWS gehostet wird.
 

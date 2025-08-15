@@ -29,7 +29,7 @@ Hierbei gilt
 
 >[!NOTE]
 >
->Module können nicht direkt in Cloud-Projekten aktiviert oder deaktiviert werden. Sie müssen diese Befehle lokal ausführen und dann Änderungen für eine Umgebung an die `app/etc/config.php`-Datei pushen. Siehe [Pro-Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=de#deployment-workflow).
+>Module können nicht direkt in Cloud-Projekten aktiviert oder deaktiviert werden. Sie müssen diese Befehle lokal ausführen und dann Änderungen für eine Umgebung an die `app/etc/config.php`-Datei pushen. Siehe [Pro-Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Modul aktivieren, deaktivieren
 
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Informationen zum Aktivieren und Deaktivieren von Modulen
 
-Mit Adobe Commerce können Sie derzeit verfügbare Module aktivieren oder deaktivieren, d. h. alle Adobe-Module oder Drittanbietermodule, die derzeit verfügbar sind.
+Mit Adobe Commerce können Sie die derzeit verfügbaren Module aktivieren oder deaktivieren, d. h. alle von Adobe bereitgestellten Module oder die derzeit verfügbaren Drittanbietermodule.
 
 Bestimmte Module weisen Abhängigkeiten von anderen Modulen auf. In diesem Fall können Sie ein Modul möglicherweise nicht aktivieren oder deaktivieren, da es Abhängigkeiten von anderen Modulen hat.
 

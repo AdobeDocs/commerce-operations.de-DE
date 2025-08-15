@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Für diese Aufgabe müssen Sie für jeden Store eine Stammkategorie (und ggf. zusätzliche Kategorien) erstellen. Die in diesem Thema erörterten Aufgaben bieten eine Möglichkeit, mehrere Stores einzurichten. Weitere Informationen finden Sie in den folgenden Ressourcen im Commerce-Benutzerhandbuch:
 
-- [Kategorien](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/categories)
-- [Hinzufügen von Websites](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URLs speichern](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [Inhalt](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/content-menu)
+- [Kategorien](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Hinzufügen von Websites](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URLs speichern](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Inhalt](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ Erstellen einer Stammkategorie:
 1. Geben Sie **Feld „Kategoriename** einen eindeutigen Namen ein, um diese Kategorie zu identifizieren.
 1. Stellen Sie sicher, dass Kategorie aktivieren auf **Ja** eingestellt ist.
 
-   Weitere Informationen zu den anderen Optionen auf dieser Seite finden Sie unter [Stammkategorien](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/categories/category-root).
+   Weitere Informationen zu den anderen Optionen auf dieser Seite finden Sie unter [Stammkategorien](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    Die folgende Abbildung zeigt ein Beispiel.
 
@@ -131,7 +131,7 @@ Commerce bietet Ihnen die Möglichkeit, den Store-Code zur Site-Basis-URL hinzuz
 
 Dadurch wird verhindert, dass `index.php` und `.htaccess` bei zukünftigen Upgrades nicht mehr mit der Commerce-Code-Basis synchronisiert werden.
 
-Siehe [Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-urls).
+Siehe [Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 So fügen Sie den Store-Code zur Basis-URL hinzu:
 

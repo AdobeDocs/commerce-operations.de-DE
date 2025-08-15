@@ -62,7 +62,7 @@ Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionieren
 >
 >Weitere Informationen finden [ unter ](../prerequisites/overview.md) und [Installationshandbuch](../overview.md).
 
-## 1. Serverkonfiguration bearbeiten
+## &#x200B;1. Serverkonfiguration bearbeiten
 
 Name und Speicherort der virtuellen Host-Datei hängen davon ab, welche Apache-Version Sie ausführen. Dieses Beispiel zeigt den Namen und den Speicherort der virtuellen Host-Datei in Apache v2.4.
 
@@ -96,7 +96,7 @@ Name und Speicherort der virtuellen Host-Datei hängen davon ab, welche Apache-V
    systemctl restart apache2
    ```
 
-## 2. Aktualisieren der Basis-URL
+## &#x200B;2. Aktualisieren der Basis-URL
 
 Wenn Sie bei der Installation der Anwendung einen Verzeichnisnamen an den Hostnamen oder die IP-Adresse Ihres Servers angehängt haben, um die Basis-URL zu erstellen (z. B. `http://192.168.33.10/magento2`), müssen Sie sie entfernen.
 
@@ -122,7 +122,7 @@ Wenn Sie bei der Installation der Anwendung einen Verzeichnisnamen an den Hostna
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. Aktualisieren Sie die Datei env.php
+## &#x200B;3. Aktualisieren Sie die Datei env.php
 
 Hängen Sie den folgenden Knoten an die `env.php` an.
 
@@ -134,7 +134,7 @@ Hängen Sie den folgenden Knoten an die `env.php` an.
 
 Weitere Informationen finden Sie in [env.php](../../configuration/reference/config-reference-envphp.md)Referenz.
 
-## 4. Modi wechseln
+## &#x200B;4. Modi wechseln
 
 [Anwendungsmodi](../../configuration/bootstrap/application-modes.md) zu denen `production` und `developer` gehören, wurden entwickelt, um die Sicherheit zu verbessern und die Entwicklung zu erleichtern. Wie aus den Namen hervorgeht, sollten Sie beim Erweitern oder Anpassen der Anwendung in den `developer` Modus und beim Ausführen in einer Live-Umgebung in den `production` Modus wechseln.
 
@@ -164,7 +164,7 @@ Der Wechsel zwischen den Modi ist ein wichtiger Schritt, um zu überprüfen, ob 
 
 1. Aktualisieren Sie Ihren Browser und stellen Sie sicher, dass die Storefront ordnungsgemäß angezeigt wird.
 
-## 5. Überprüfen Sie die Storefront
+## &#x200B;5. Überprüfen Sie die Storefront
 
 Gehen Sie zur Storefront in einem Webbrowser, um zu überprüfen, ob alles funktioniert.
 

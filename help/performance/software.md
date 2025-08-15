@@ -1,5 +1,5 @@
 ---
-title: Software Recommendations
+title: Empfehlungen zur Software
 description: Überprüfen Sie eine Liste mit empfohlener Software zur Optimierung der Leistung von Adobe Commerce-Bereitstellungen.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Berücksichtigen Sie bei der Feinabstimmung der Speicherzuweisung für Opcache die Größe der Magento-Codebasis und all Ihrer Erweiterungen. Das Leistungsteam der Magento verwendet die Werte im vorherigen Beispiel zum Testen, da es im Opcache ausreichend Platz für die durchschnittliche Anzahl installierter Erweiterungen bietet.
+Berücksichtigen Sie bei der Feinabstimmung der Speicherzuweisung für Opcache die Größe der Code-Basis von Magento und aller Erweiterungen. Das Leistungsteam von Magento verwendet die Werte im vorherigen Beispiel zum Testen, da es im Opcache ausreichend Platz für die durchschnittliche Anzahl installierter Erweiterungen bietet.
 
 Wenn Sie einen Computer mit wenig Arbeitsspeicher haben und nicht viele Erweiterungen oder Anpassungen installiert sind, verwenden Sie die folgenden Einstellungen, um ein ähnliches Ergebnis zu erzielen:
 
@@ -174,7 +174,7 @@ apc.enabled = 1
 
 ## Webserver
 
-Magento unterstützt vollständig die Nginx- und Apache-Webserver. [!DNL Commerce] enthält Beispiele für empfohlene Konfigurationsdateien in den `<magento_home>/nginx.conf.sample`-Dateien (Nginx) und `<magento_home>.htaccess.sample`-Dateien (Apache).  Das Nginx-Beispiel enthält Einstellungen für eine bessere Leistung und ist so konzipiert, dass nur wenige Neukonfigurationen erforderlich sind. Zu den wichtigsten Best Practices für die Konfiguration, die in der Beispieldatei definiert sind, gehören:
+Magento unterstützt die Nginx- und Apache-Webserver vollständig. [!DNL Commerce] enthält Beispiele für empfohlene Konfigurationsdateien in den `<magento_home>/nginx.conf.sample`-Dateien (Nginx) und `<magento_home>.htaccess.sample`-Dateien (Apache).  Das Nginx-Beispiel enthält Einstellungen für eine bessere Leistung und ist so konzipiert, dass nur wenige Neukonfigurationen erforderlich sind. Zu den wichtigsten Best Practices für die Konfiguration, die in der Beispieldatei definiert sind, gehören:
 
 * Einstellungen für das Caching statischer Inhalte in einem Browser
 * Speicher- und Ausführungszeiteinstellungen für PHP
@@ -221,7 +221,7 @@ Im Allgemeinen empfehlen wir, Ihre Assets (Bilder, JS, CSS usw.) in einem CDN zu
 
 Wenn für Ihre Site keine große Anzahl von Gebietsschemata bereitgestellt werden muss und sich Ihre Server in derselben Region wie die meisten Ihrer Kunden befinden, können Sie zu niedrigeren Kosten erhebliche Leistungsgewinne erzielen, indem Sie Ihre Assets in [!DNL Varnish] speichern, anstatt ein CDN zu verwenden.
 
-Um Ihre Assets in [!DNL Varnish] zu speichern, fügen Sie die folgenden VCL-Einträge in Ihrer von [!DNL Commerce] für [!DNL Varnish] 5 generierten `default.vcl` hinzu.
+Um Ihre Assets in [!DNL Varnish] zu speichern, fügen Sie die folgenden VCL-Einträge in Ihrer von `default.vcl` für [!DNL Commerce] 5 generierten [!DNL Varnish] hinzu.
 
 Fügen Sie am Ende der `if` für PURGE-Anfragen in der `vcl_recv`-Unterroutine Folgendes hinzu:
 

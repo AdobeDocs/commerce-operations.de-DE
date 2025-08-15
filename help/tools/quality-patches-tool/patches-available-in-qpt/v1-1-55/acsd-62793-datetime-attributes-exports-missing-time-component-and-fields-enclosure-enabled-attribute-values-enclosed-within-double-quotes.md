@@ -7,7 +7,7 @@ exl-id: 340dcc84-dcb8-40ed-b2ab-2d950d1dd1ca
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-62793 wird das Problem behoben, dass in exportierten Daten Da
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -41,7 +41,7 @@ Datetime-Attribute enthalten in exportierten Daten nicht die Zeitkomponente. Wen
 1. Erstellen Sie ein einfaches Produkt mit einem Datums- und Uhrzeitwert für das neue Attribut.
 1. Exportieren Sie das Produkt in eine CSV-Datei über **[!UICONTROL System]** > *Datenübertragung* > **[!UICONTROL Export]**.
 1. Überprüfen Sie den Attributwert in der Spalte *additional_attributes*. Sie hat nur den Datumsteil, aber keine Zeit.
-1. Aktualisieren Sie den Attributwert so, dass er die Zeit verwendet, z. B. „08/10/22, 15:20 Uhr“.
+1. Aktualisieren Sie den Attributwert zur Verwendung der Zeit, z. B. „08/10/22, 15 :20&quot;.
 1. Importieren Sie die CSV-Datei.
 1. Überprüfen Sie die *CATALOG_PRODUCT_ENTITY_DATETIME*-Tabelle.
 
@@ -58,7 +58,7 @@ Nur der Datumsteil wird exportiert und importiert.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen

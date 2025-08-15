@@ -68,7 +68,7 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 | `--no-less` | Stellen Sie keine LESS-Dateien bereit. | Nein |
 | `--no-images` | Keine Bilder bereitstellen. | Nein |
 | `--no-fonts` | Stellen Sie keine Schriftarten bereit. | Nein |
-| `--no-html` | Keine HTML-Dateien bereitstellen. | Nein |
+| `--no-html` | HTML-Dateien nicht bereitstellen. | Nein |
 | `--no-misc` | Stellen Sie keine anderen Dateitypen bereit: MD, JBF, CSV, JSON, TXT, HTC, SWF | Nein |
 | `--no-html-minify` | Minimieren Sie keine HTML-Dateien. | Nein |
 | `-s <quick\|standard\|compact>` | Definieren Sie die Bereitstellungsstrategie. Verwenden Sie diese Optionen nur, wenn Sie mehr als eine lokale haben.<ul><li>Verwenden Sie die [Schnellstrategie](static-view-file-strategy.md#quick-strategy) um die Bereitstellungszeit zu minimieren. Dies ist die Standardbefehlsoption, wenn sie nicht angegeben ist.</li><li>Verwenden Sie die [Standardstrategie](static-view-file-strategy.md#standard-strategy) um alle statischen Ansichtsdateien für alle Pakete bereitzustellen.</li><li>Verwenden Sie die [Kompaktstrategie](static-view-file-strategy.md#compact-strategy), um Speicherplatz auf dem Server zu sparen.</li></ul> | Nein |
@@ -85,7 +85,7 @@ Im Folgenden finden Sie einige Beispielbefehle.
 
 ### Ausschließen eines Designs und HTML-Minimierung
 
-Der folgende Befehl stellt statische Inhalte für die US-amerikanische Sprache (`en_US`) bereit, schließt das mit Commerce bereitgestellte Luma-Design aus und minimiert HTML-Dateien nicht.
+Mit dem folgenden Befehl werden statische Inhalte für die US-amerikanische Sprache (`en_US`) bereitgestellt, das mit Commerce bereitgestellte Luma-Design ausgeschlossen und HTML-Dateien nicht minimiert.
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify

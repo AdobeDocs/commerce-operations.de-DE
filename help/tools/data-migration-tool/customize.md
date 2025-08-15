@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Konfigurieren des [!DNL Data Migration Tool]
 
-Manchmal unterscheiden sich das Datenformat und die Datenstruktur, die durch [Erweiterungen](https://marketplace.magento.com/extensions.html) oder benutzerdefinierten Code zwischen Magento 1 und Magento 2 erstellt werden. Verwenden Sie Erweiterungspunkte innerhalb der [!DNL Data Migration Tool], um diese Daten zu migrieren. Wenn das Datenformat und die Datenstruktur identisch sind, kann das Tool die Daten automatisch ohne Benutzereingriff migrieren.
+Manchmal unterscheiden sich das Datenformat und die Struktur, die von [Erweiterungen](https://marketplace.magento.com/extensions.html) oder benutzerdefiniertem Code erstellt wurden, zwischen Magento 1 und Magento 2. Verwenden Sie Erweiterungspunkte innerhalb der [!DNL Data Migration Tool], um diese Daten zu migrieren. Wenn das Datenformat und die Datenstruktur identisch sind, kann das Tool die Daten automatisch ohne Benutzereingriff migrieren.
 
 Während der Migration scannt [Map Step](technical-specification.md#map-step) und vergleicht alle Magento 1- und Magento 2-Tabellen, einschließlich der von Extensions erstellten Tabellen. Wenn die Tabellen identisch sind, migriert das Tool die Daten automatisch. Wenn die Tabellen unterschiedlich sind, wird das Tool beendet und der Benutzer wird benachrichtigt.
 
@@ -74,9 +74,9 @@ Im Folgenden finden Sie ein Beispiel für die Verwendung sowohl von Zuordnungsre
 - Migrieren Sie keine unnötigen Daten aus der `great_blog_index`.
 - Die Tabelle `great_blog_publication` wurde in Magento 2 in `great_blog_post` umbenannt, sodass Daten in die neue Tabelle migriert werden.
    - Das `summary` wurde in `title` umbenannt, sodass Daten in das neue Feld migriert werden.
-   - Das `priority` wurde entfernt und existiert nicht mehr auf Magento 2.
+   - Das `priority` wurde entfernt und existiert nicht mehr in Magento 2.
    - Die Daten im Feld `body` haben das Format geändert und sollten vom benutzerdefinierten Handler verarbeitet werden: `\Migration\Handler\GreatBlog\NewFormat`.
-- Für die Erweiterung „GreatBlog“ wurde in Magento 2 eine neue Bewertungsfunktion entwickelt.
+- Für die Erweiterung „GreatBlog“ in Magento 2 wurde eine neue Bewertungsfunktion entwickelt.
    - Eine neue `great_blog_rating` wurde erstellt.
    - Ein neues `great_blog_post.rating` wurde erstellt.
 
@@ -98,7 +98,7 @@ Erstellen Sie für wichtige Änderungen am Datenformat und an der Struktur einen
 
 ### Erstellen eines benutzerdefinierten Schritts
 
-Angenommen, die Erweiterung enthält in Magento 1 eine Tabelle, wurde jedoch so umgestaltet, dass sie auf Magento 2 zwei Tabellen enthält.
+Nehmen wir an, dass die Erweiterung unter Verwendung des gleichen „GreatBlog“-Beispiels in Magento 1 über eine Tabelle verfügt, aber neu entworfen wurde, um zwei Tabellen in Magento 2 zu haben.
 
 In Magento 1 gab es nur eine `greatblog_post`:
 
@@ -164,7 +164,7 @@ Die Schritte können vier Arten von Klassen umfassen:
 
 >[!NOTE]
 >
->Weitere Informationen finden [ unter ](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [&#128279;](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
+>Weitere Informationen finden [ unter ](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
 
 
 Innerhalb dieser Klassen können komplexe SQL-Abfragen zusammengestellt werden, um Daten abzurufen und zu migrieren. Außerdem sollten diese Tabellen im [Map-Schritt“ „ignoriert“ werden](technical-specification.md#map-step) da alle vorhandenen Tabellen gescannt werden und versucht wird, die Daten zu migrieren, sofern sie sich nicht im `<ignore>`-Tag der `map.xml`-Datei befinden.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Form of Elasticsearch. Weitere [ finden Sie unter &quot;Elasticsearch nach ](../../../upgrade/prepare/opensearch-migration.md) migrieren“.
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [ finden Sie unter „Migrieren von Elasticsearch ](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
 
 In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ ](#secure-communication-with-apache).
 
@@ -134,7 +134,7 @@ Hierbei gilt
 
   In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Auswahl des Benutzers liegt bei Ihnen.
 
-   * Einrichten des Elasticsearchs: Der Benutzer heißt in diesem Beispiel `magento_elasticsearch`
+   * Einrichten von Elasticsearch: Der Benutzer heißt in diesem Beispiel `magento_elasticsearch`
 
 * `<password file name>` muss eine ausgeblendete Datei sein (beginnt mit `.`) und sollte den Namen des Benutzers widerspiegeln. Einzelheiten finden Sie in den Beispielen weiter unten in diesem Abschnitt.
 
@@ -174,7 +174,7 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Sichere Kommunikation mit Apache
 
-In diesem Abschnitt wird beschrieben, wie Sie [HTTP-Standardauthentifizierung](https://httpd.apache.org/docs/2.2/howto/auth.html) einrichten. Durch die gemeinsame Verwendung von TLS und HTTP Basic-Authentifizierung wird verhindert, dass eine Person die Kommunikation mit Elasticsearch oder OpenSearch oder mit Ihrem Anwendungsserver abfängt.
+In diesem Abschnitt wird beschrieben, wie Sie [HTTP-Standardauthentifizierung](https://httpd.apache.org/docs/2.2/howto/auth.html) einrichten. Durch die gemeinsame Verwendung von TLS und HTTP Basic-Authentifizierung wird verhindert, dass Personen die Kommunikation mit Elasticsearch oder OpenSearch oder Ihrem Anwendungs-Server abfangen.
 
 In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den Apache-Server zugreifen kann.
 

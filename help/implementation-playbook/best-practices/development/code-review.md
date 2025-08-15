@@ -100,7 +100,7 @@ Die Überprüfungen für Datenschutz und [DSGVO](../../../security-and-complianc
 - Verarbeitet der Code Kundendaten oder E-Mails? Achten Sie besonders darauf.
 - Wenn dieser Code in einer Schleife ausgeführt werden kann, kann er dann Kundendaten von einem Schleifenzyklus zum anderen durchsickern lassen?
 - Risikoindikatoren sind Importe, Cron-Aufträge, Transaktions-E-Mails und Batch-Warteschlangen-Handler.
-- Sicherstellen, dass Benutzerdaten in Schleifen isoliert werden. Adobe empfiehlt die Verwendung von Fabriken oder Repositorys, um Modelle im Schleifenzyklus zu erstellen, auf die außerhalb der Schleife nicht zugegriffen werden kann.
+- Sicherstellen, dass Benutzerdaten in Schleifen isoliert werden. Adobe empfiehlt die Verwendung von Factories oder Repositorys zum Erstellen von Modellen im Schleifenzyklus, auf die außerhalb der Schleife nicht zugegriffen werden kann.
 
 ### Mentoring
 

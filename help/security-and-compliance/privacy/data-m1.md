@@ -54,7 +54,7 @@ Magento 1 speichert Kundeninformationen in Kunden-, Verkaufs- und anderen Datenb
 
 ### Kundendaten
 
-Magento 1 speichert Kundeninformationen in den `customer_entity` und `customer_address_entity`. Beide Tabellen verfügen über mehrere Referenztabellen, die benutzerdefinierte Kundenattribute enthalten können.
+Magento 1 speichert Kundeninformationen in den `customer_entity`- und `customer_address_entity`. Beide Tabellen verfügen über mehrere Referenztabellen, die benutzerdefinierte Kundenattribute enthalten können.
 
 #### `customer_entity` und Referenztabellen
 
