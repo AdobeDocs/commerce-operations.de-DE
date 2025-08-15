@@ -42,9 +42,9 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -52,9 +52,9 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -62,27 +62,27 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       addProductsToCart(
           cartId: "XHrUN2nJ37OqDByhtL0VC8OxYsEZs41c"
-          cartItems: [
-            {
+          cartItems: &lbrack;
+            &lbrace;
               quantity: 1
               sku: "p1"
-            }
-          ]
-        ) {
-          cart {
-           items {
-            product {
+            &rbrace;
+          &rbrack;
+        ) &lbrace;
+          cart &lbrace;
+           items &lbrace;
+            product &lbrace;
               name
               sku
-            }
+            &rbrace;
             quantity
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -90,9 +90,9 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 

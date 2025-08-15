@@ -79,7 +79,7 @@ Beschreibung von admin_user unter mysql 8.19
 
 Mit Ausnahme von _TINYINT(1)_ sollten alle ganzzahligen Auffüllungen (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) aus der `db_schema.xml`-Datei entfernt werden.
 
-https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature Weitere Informationen finden Sie unter [](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature Weitere Informationen finden Sie unter [&#128279;](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
 ### Standardverhalten von ORDER BY
 

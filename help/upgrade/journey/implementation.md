@@ -35,7 +35,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
   >[!TIP]
   >
-  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
+  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [&#128279;](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
 
 - Aktualisieren von Diensten zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzustellen, welche Services Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zur Spalte _Upgrade auf“ hinzugefügt_ soll.
 

@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Hinweis zu veralteten Versionen:**
->>Die Backup-Funktion ist seit 2.1.16, 2.2.7 und 2.3.0 veraltet. Wir empfehlen, zusätzliche Backup-Technologien und binäre Backup-Tools (wie Percona XtraBackup) zu untersuchen.
+>&#x200B;>Die Backup-Funktion ist seit 2.1.16, 2.2.7 und 2.3.0 veraltet. Wir empfehlen, zusätzliche Backup-Technologien und binäre Backup-Tools (wie Percona XtraBackup) zu untersuchen.
 
 ## Festlegen des Limits für geöffnete Dateien
 

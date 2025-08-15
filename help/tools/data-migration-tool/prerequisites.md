@@ -44,6 +44,6 @@ Wenn die Binärprotokollierung für Ihre Magento 1-Datenbank aktiviert ist, lege
 
 Migrieren des Magento 1-Erweiterungs-Codes zu Magento 2.
 
-Um die neuesten Erweiterungsversionen zu finden, besuchen Sie [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) oder wenden Sie sich an Ihren Erweiterungsanbieter.
+Um die neuesten Erweiterungsversionen zu finden, besuchen Sie [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) oder wenden Sie sich an Ihren Erweiterungsanbieter.
 
-Sie können auch die [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) verwenden.
+Sie können auch die [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) verwenden.

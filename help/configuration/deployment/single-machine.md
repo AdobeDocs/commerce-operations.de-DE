@@ -22,7 +22,7 @@ Dieses Thema enthält Anweisungen zum Bereitstellen von Aktualisierungen für Co
 >[!WARNING]
 >
 >Dieses Handbuch gilt nicht, wenn Sie `git clone` zur Installation von Commerce verwendet haben.
->>Entwicklerinnen und Entwickler, die an der [ mitwirken, sollten dieses Handbuch ][install], um ihre Commerce-Installation zu aktualisieren.
+>&#x200B;>Entwicklerinnen und Entwickler, die an der [ mitwirken, sollten dieses Handbuch ][install], um ihre Commerce-Installation zu aktualisieren.
 
 ## Bereitstellungsschritte
 

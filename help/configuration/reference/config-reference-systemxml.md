@@ -248,7 +248,7 @@ Ein `<field>`-Tag kann die folgenden Werte für das `type=""` haben:
 | `select` | Normales Dropdown-Menü, erfordert möglicherweise ein benutzerdefiniertes `source_model`. Wird auch für `Yes/No` Auswahlen verwendet. Ein Beispiel finden Sie unter `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` . |
 | `multiselect` | Wie `select`, aber mehrere Optionen sind gültig. |
 | `button` | Eine Schaltfläche, die ein sofortiges Ereignis Trigger. Erfordert ein benutzerdefiniertes Frontend-Modell, um den Schaltflächentext und die Aktion zu definieren. Ein Beispiel finden Sie unter `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` . |
-| `obscure` | Ein Textfeld mit dem Wert verschlüsselt und als `****` angezeigt. Wenn Sie den Typ mithilfe von „Element überprüfen“ im Browser ändern, wird der Wert nicht angezeigt. |
+| `obscure` | Ein Textfeld mit dem Wert verschlüsselt und als `**&#x200B;**` angezeigt. Wenn Sie den Typ mithilfe von „Element überprüfen“ im Browser ändern, wird der Wert nicht angezeigt. |
 | `password` | Wie `obscure`, mit der Ausnahme, dass der ausgeblendete Wert nicht verschlüsselt ist, und das erzwungene Ändern des Typs mit „Element überprüfen“ im Browser zeigt den Wert nicht an. |
 | `file` | Ermöglicht das Hochladen einer Datei zur Verarbeitung. |
 | `label` | Zeigt eine Beschriftung anstelle eines bearbeitbaren Felds an. Verwenden Sie diesen Typ, wenn ein Feld nur für bestimmte Bereiche bearbeitbar ist, z. B. nur auf Store-Ansichtsebene. |

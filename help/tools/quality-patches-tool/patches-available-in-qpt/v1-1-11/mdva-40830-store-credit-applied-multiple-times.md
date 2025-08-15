@@ -44,30 +44,30 @@ Das Store-Guthaben wird bei der Auftragserteilung mehrmals angewendet.
 
 <pre>
 <code class="language-graphql">
-mutation {
+mutation &lbrace;
   applyStoreCreditToCart(
     input: { cart_id: "%cartId%" }
-  ) {
-    cart {
-      prices {
-        grand_total {
+  ) &lbrace;
+    cart &lbrace;
+      prices &lbrace;
+        grand_total &lbrace;
           currency
           value
-        }
-      }
-      applied_store_credit {
-        applied_balance {
+        &rbrace;
+      &rbrace;
+      applied_store_credit &lbrace;
+        applied_balance &lbrace;
           currency
           value
-        }
-        current_balance {
+        &rbrace;
+        current_balance &lbrace;
           currency
           value
-        }
-      }
-    }
-  }
-}
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

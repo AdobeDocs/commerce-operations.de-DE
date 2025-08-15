@@ -164,7 +164,7 @@ Die Schritte können vier Arten von Klassen umfassen:
 
 >[!NOTE]
 >
->Weitere Informationen finden [ unter ](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
+>Weitere Informationen finden [ unter ](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [&#128279;](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
 
 
 Innerhalb dieser Klassen können komplexe SQL-Abfragen zusammengestellt werden, um Daten abzurufen und zu migrieren. Außerdem sollten diese Tabellen im [Map-Schritt“ „ignoriert“ werden](technical-specification.md#map-step) da alle vorhandenen Tabellen gescannt werden und versucht wird, die Daten zu migrieren, sofern sie sich nicht im `<ignore>`-Tag der `map.xml`-Datei befinden.

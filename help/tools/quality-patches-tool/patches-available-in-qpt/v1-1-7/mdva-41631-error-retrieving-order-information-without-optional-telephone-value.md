@@ -43,16 +43,16 @@ Benutzende erhalten einen Fehler beim Abrufen von Bestellinformationen ohne opti
 
 <pre>
 <code class="language-graphql">
-{
-  customer {
+&lbrace;
+  customer &lbrace;
     firstname
     lastname
     suffix
     email
 
-    orders(filter:{number:{eq:"000000001"}}){
-        items{
-          billing_address {
+    orders(filter:{number:{eq:"000000001"}})&lbrace;
+        items&lbrace;
+          billing_address &lbrace;
 firstname
 lastname
 street
@@ -62,8 +62,8 @@ region_id
 postcode
 telephone
 country_code
-}
-shipping_address {
+&rbrace;
+shipping_address &lbrace;
 firstname
 lastname
 street
@@ -73,11 +73,11 @@ region_id
 postcode
 telephone
 country_code
-}
-        }
-    }
-  }
-}
+&rbrace;
+        &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

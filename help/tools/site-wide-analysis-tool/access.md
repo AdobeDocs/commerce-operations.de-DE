@@ -26,7 +26,7 @@ Der [!DNL Site-Wide Analysis Tool]-Service ist im [Produktionsmodus](https://exp
 >[!NOTE]
 >
 >Ihr Konto sollte berechtigt sein, zu **[!DNL Support Permissions]**, um auf die [!DNL Site-Wide Analysis Tool Dashboard] zugreifen zu können.
->>Weitere Informationen finden Sie unter [Freigeben eines  [!DNL Commerce] -Kontos](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in unserem Benutzerhandbuch.
+>&#x200B;>Weitere Informationen finden Sie unter [Freigeben eines  [!DNL Commerce] -Kontos](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in unserem Benutzerhandbuch.
 
 ## Anmelden bei [!DNL Site-Wide Analysis Tool Dashboard] vom [!UICONTROL Admin Panel] Ihres Stores
 
