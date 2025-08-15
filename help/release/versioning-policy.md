@@ -2,9 +2,9 @@
 title: Release-Richtlinie
 description: Erfahren Sie mehr über die verschiedenen Typen von Adobe Commerce-Versionen.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 0ea8c2bfffe81d27547c0330abdd75fc078542cf
+source-git-commit: f7b22089bcf88f6c881b0cbd4d7f77d795d9071b
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,10 @@ Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmte
 
 ## Isoliertes Pflaster
 
-Isolierte PatchesEnthält eine eigenständige Fehlerbehebung, die im neuesten reinen Sicherheits-Patch enthalten ist, oder einen kommenden reinen Sicherheits-Patch, der separat veröffentlicht wird, um eine schnellere Implementierung zu ermöglichen.
+Isolierte Patches sind Sicherheitskorrekturen, die unabhängig von einem vollständigen Sicherheits-Patch veröffentlicht werden, um eine schnellere Implementierung zu ermöglichen. Jeder einzelne Patch behandelt ein bestimmtes Sicherheitsproblem und ist entweder im neuesten oder im kommenden vollständigen Sicherheitspatch enthalten. Einzelheiten zu diesem Problem finden Sie im entsprechenden Sicherheitsbulletin, das auf einen Knowledgebase-Artikel (KB) verweist, der die Fehlerbehebungsdetails, die Anwendung des Patches und zusätzliche Informationen enthält.
+
+Im [Sicherheitscenter](https://helpx.adobe.com/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
 
 ## Benutzerdefinierter Patch
 
-von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage) bereitgestellt.
+von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) bereitgestellt.
