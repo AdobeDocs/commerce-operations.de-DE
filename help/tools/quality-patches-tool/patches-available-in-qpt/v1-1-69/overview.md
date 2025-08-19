@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: a59d05b93e1ada3416562625ce864b7bda94ee8e
+source-git-commit: 0dd91496c3117a424c71382e18b9689fff016ada
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ QPT v1.1.69 enthält die folgenden Patches:
 1. **ACP2E-3731**: Produktexporte mit **[!UICONTROL Catalog, Search]** Sichtbarkeit schließen Datensätze aus anderen Store-Ansichten ein.
 1. **ACP2E-3767**: Die Option „Letztes Bundle“ wird nach dem Speichern eines Bundle-Produkts erneut angezeigt.
 1. **ACP2E-3964**: Konfigurierbare untergeordnete Produkte mit Video, das nicht über die REST-API aufgelistet ist.
-1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** darf nicht leer bleiben.
+1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] Feld darf nicht leer bleiben.
 1. **ACP2E-4050**: Die Regeln zum Warenkorbpreis schlagen für den Mehrversandversand mit Bundle-Produkten und den kostenlosen Versand fehl.
 1. **ACSD-56226**: READ-Abfragen geben veraltete Daten zurück, wenn `synchronous_replication` aktiviert ist.
 1. **ACSD-57477**: Die Verarbeitung von Verkaufsregeln verlangsamt die Leistung bei Warenkorbanfragen.
 1. **ACSD-58108**: Fehlender Join-Tabellenname verursacht SQL-Fehler in der Erweiterung des benutzerdefinierten Rastermoduls.
 1. **ACSD-65983**: Fehler tritt auf, wenn das gebündelte Produktangebot in Admin neu konfiguriert wird.
-1. **ACSD-66149**: Der IPN-Handler gibt 500 für nicht unterstützte Typen zurück.
+1. **[ACSD-66149](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66149-ipn-handler-returns-500-for-unsupported-types.md)**: Der IPN-Handler gibt 500 für nicht unterstützte Typen zurück.
 1. **ACSD-66153**: Die Seite gibt 500 zurück, da eine falsche Layout-Struktur zwischengespeichert wird.
 1. **ACSD-66302**: Artikel auf der Wunschliste, die nach Store-ID statt nach Website gefiltert wurden.
 1. **ACSD-66311**: Das Firmen-Raster wird für Administratoren mit eingeschränkter Zugriffsberechtigung langsam geladen.
