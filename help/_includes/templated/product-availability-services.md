@@ -1,5 +1,5 @@
 ---
-source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
+source-git-commit: f8a86749c3754773406095cc8dd785e435e27d73
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
@@ -29,8 +29,8 @@ ht-degree: 5%
           <td>1,32</td>
           <td>1,32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/catalog-service/guide-overview">Übersicht</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/catalog-service/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Übersicht</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -42,19 +42,19 @@ ht-degree: 5%
           <td>4,3,0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
           <td>Zahlungsdienste</td>
-          <td>2.11.0 (PHP 8.3)</td>
+          <td>2.12.0 (PHP 8.3)</td>
           <td>2.10.0 (PHP 8.3)</td>
           <td>2.5.0 (PHP 8.2)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/payment-services/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -66,7 +66,7 @@ ht-degree: 5%
           <td>6,2,0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
   </tbody>
