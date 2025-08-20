@@ -3,13 +3,14 @@ title: 'ACSD-66952: Der Cache wird bei jedem PLP- oder Warenkorbbesuch gelöscht
 description: Wenden Sie den ACSD-66952 Patch an, um das Adobe Commerce-Problem zu beheben, bei dem der Cache bei jedem PLP- oder Warenkorbbesuch gelöscht wurde, was zu einem unnötigen Leistungsaufwand führte, wenn eine Zielregel festgelegt wurde.
 feature: Shopping Cart, Cache, Price Rules
 role: Admin, Developer
-source-git-commit: 1aec8de86696ffc9ecb13100e6ffa1f912b281fb
+type: Troubleshooting
+exl-id: abff5761-bcf1-4cfc-b5d9-6a7e1ca907e7
+source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66952: Der Cache wird bei jedem PLP- oder Warenkorbbesuch gelöscht, wenn eine Zielregel festgelegt ist
 
@@ -27,7 +28,7 @@ Der Patch ACSD-66952 behebt das Problem, dass der Cache bei jedem PLP- oder Ware
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -62,7 +63,7 @@ Cache-Tags werden ungültig gemacht.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > ](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen
 
