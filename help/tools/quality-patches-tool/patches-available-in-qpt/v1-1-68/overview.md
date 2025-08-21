@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
+source-git-commit: ba4154c109c64d3e45e6de8dc8ffd9bb9741e5b2
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.68 enthält die folgenden Patches:
 1. **ACSD-66179**: Eine Stornierung einer Rechnung mit dem Zahlungstyp „Nicht erfasst“ führt zu einer 404-Fehlerseite.
 1. **ACSD-66233**: Administratoren können aufgrund eines nicht reagierenden Popup-Fensters in der Produktliste keine Produkte hinzufügen.
 1. **ACSD-66506**: Backend-Fehler trat auf, wenn zuvor zugewiesene Produkte eines freigegebenen Katalogs gelöscht und neue zugewiesen wurden.
-1. **ACSD-66865**: Das Speichern von Katalogpreisregeln macht Indexer ungültig und bietet eine Alternative zur Neuindizierung nur betroffener Produkte.
+1. **ACSD-66865**: Durch Speichern eines **[!UICONTROL Catalog Price Rule]** werden Indexer ungültig gemacht. Dies bietet eine Alternative zur Neuindizierung nur betroffener Produkte.
 1. **ACSD-66889**: Fehler bei der Neuindizierung des Bestands in CLI.
 1. **ACSD-66963**: Die EstimateTotals-Mutation gibt null für Rabatte zurück, wenn ein Rabattcode auf einen Warenkorb mit virtuellen Produkten angewendet wird.
 1. **ACSD-66965**: Die Option „Drucken“ auf der Seite „Anforderungsliste“ verursacht einen Fehler.
