@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 QPT v1.1.68 enthält die folgenden Patches:
 1. **ACSD-58131**: Ein 0-Byte-Bild in der Mediensammlung hat verhindert, dass alle Bilder im Verzeichnis angezeigt oder ausgewählt wurden.
 1. **ACSD-62146**: Die ausgewählte Rechnungsadresse verschwindet auf der Kaufbestätigungsseite, wenn die Adresssuche aktiviert ist und „Limit für Kundenadressen“ auf 1 gesetzt ist.
-1. **ACSD-62415**: Das Adobe Commerce-Backend lädt Kategorien sehr langsam.
+1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: Das Adobe Commerce-Backend lädt Kategorien sehr langsam.
 1. **ACSD-65938**: E-Mails zu Geschenkkarten wurden auch dann gesendet, wenn die Erstellung der Rechnung fehlgeschlagen war.
 1. **ACSD-66072**: Verwandte Produkte werden aufgrund eines internen Server-Fehlers bei der [!UICONTROL Related Products Rule] nicht über GraphQL auf der Produktdetailseite zurückgegeben.
 1. **ACSD-66082**: Das Musterbild eines Produkts kann nicht durch einen Produktimport aktualisiert werden.
