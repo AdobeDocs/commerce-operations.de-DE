@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.69 enthält die folgenden Patches:
 1. **AC-15223**: Die Storefront-Seite zeigt zwischengespeicherte Inhalte an, nachdem der Store gewechselt wurde.
-1. **ACP2E-3731**: Produktexporte mit **[!UICONTROL Catalog, Search]** Sichtbarkeit schließen Datensätze aus anderen Store-Ansichten ein.
+1. **ACP2E-3731**: Produktexporte mit *[!UICONTROL Catalog, Search]* Sichtbarkeit schließen Datensätze aus anderen Store-Ansichten ein.
 1. **ACP2E-3767**: Die Option „Letztes Bundle“ wird nach dem Speichern eines Bundle-Produkts erneut angezeigt.
 1. **ACP2E-3964**: Konfigurierbare untergeordnete Produkte mit Video, das nicht über die REST-API aufgelistet ist.
 1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] Feld darf nicht leer bleiben.
