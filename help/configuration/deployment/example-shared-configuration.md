@@ -2,7 +2,7 @@
 title: Beispiel mit einer freigegebenen Konfiguration
 description: Sehen Sie sich ein Beispiel für das Ändern von Einstellungen in einem Entwicklungssystem mit einer freigegebenen Konfigurationsdatei an.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -89,3 +89,5 @@ Der letzte Schritt im Prozess besteht darin, Ihr Produktionssystem über die Ver
 >[!INFO]
 >
 >Um eine in Admin gesperrte Einstellung zu ändern, verwenden Sie den [`magento config:set --lock` Befehl](../cli/set-configuration-values.md).
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

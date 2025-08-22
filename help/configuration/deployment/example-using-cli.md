@@ -2,7 +2,7 @@
 title: Beispiel mit CLI-Befehlen
 description: Sehen Sie sich ein Beispiel für das Festlegen von freigegebenen, systemspezifischen und sensiblen Werten in Ihrem Entwicklungssystem mithilfe der Befehlszeile an.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 0%
@@ -181,3 +181,5 @@ So überprüfen Sie die Konfigurationseinstellungen:
    Der Wert des Felds **Standard-E-Mail** Domain) wird wie folgt angezeigt. Dies ist eine systemspezifische Einstellung.
 
    ![Überprüfen Sie die Einstellungen im Produktionssystem](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

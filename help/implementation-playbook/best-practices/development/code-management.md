@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Best Practices für die Code-Verwaltung in 
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ Dieses Thema soll Ihnen bei der Entscheidung helfen, ob Sie Git oder Composer ve
 1. **Beginnen Sie mit Git und wechseln Sie dann zu Composer**
 
    Entscheiden Sie sich zu Beginn Ihres Projekts für einen Code-Management-Ansatz. Der Wechsel von Git zu Composer oder umgekehrt ist bei fortlaufender Entwicklung umständlich und kann zu Codeverlust und/oder Verlust des Revisionsverlaufs führen.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

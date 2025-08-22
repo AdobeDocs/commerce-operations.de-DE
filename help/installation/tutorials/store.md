@@ -2,7 +2,7 @@
 title: Konfigurieren des Stores
 description: Gehen Sie wie folgt vor, um Ihren Adobe Commerce Store zu konfigurieren.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -42,3 +42,5 @@ Dabei definiert die folgende Tabelle Parameter und Werte:
 | `--use-secure-admin` | `1` bedeutet, dass Sie SSL verwenden, um auf den Administrator zuzugreifen. Stellen Sie sicher, dass Ihr Webserver SSL unterstützt, bevor Sie diese Option auswählen.<br><br>`0` bedeutet, dass Sie SSL nicht mit dem Administrator verwenden. Dies ist der Standardwert. | Nein |
 | `--admin-use-security-key` | `1` verwendet die Anwendung einen zufällig generierten Schlüsselwert, um auf Seiten in Admin und in Formularen zuzugreifen. Diese Schlüsselwerte helfen, Angriffe durch Cross-Site-Script-Forgery zu verhindern. Dies ist der Standardwert.<br/><br/>`0` Deaktiviert die Verwendung des Schlüssels. | Nein |
 | `--magento-init-params` | Fügen Sie zu einem beliebigen Befehl hinzu, um die Initialisierungsparameter der Anwendung anzupassen<br/><br/>Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Nein |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->

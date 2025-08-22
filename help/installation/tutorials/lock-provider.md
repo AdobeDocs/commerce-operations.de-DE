@@ -2,7 +2,7 @@
 title: Konfigurieren des Sperranbieters
 description: Führen Sie diese Schritte aus, um zu verhindern, dass doppelte Cron-Aufträge und Cron-Gruppen in Ihrer Adobe Commerce-Bereitstellung ausgeführt werden.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Konfigurieren Sie einen Sperranbieter, um den Start doppelter Cron-Aufträge und
 
 Adobe Commerce verwendet die -Datenbank, um Sperren standardmäßig zu speichern. Wenn Sie mehrere Knoten auf Ihren Servern haben, empfehlen wir die Verwendung von ZooKeeper als Sperranbieter.
 
-Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Befehlsverwendung
 
@@ -43,3 +43,5 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 | `--lock-zookeeper-host` | Host und Port für die Verbindung mit dem ZooKeeper-Cluster bei Verwendung des `zookeeper`.<br><br>Beispiel: `127.0.0.1:2181` | Ja, wenn Sie `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Der Pfad, in dem ZooKeeper Sperren speichert.<br><br>Der Standardpfad lautet: `/magento/locks` | Nein |
 | `--lock-file-path` | Der Pfad, in dem Dateisperren gespeichert werden. | Ja, wenn Sie `--lock-provider=file` |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->
