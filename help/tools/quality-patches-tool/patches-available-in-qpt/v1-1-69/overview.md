@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69 enthält die folgenden Patches:
 1. **ACSD-66404**: Cron-Auftrag kann Änderungsprotokolltabellen aufgrund von Größenbeschränkungen für [!DNL Galera Cluster] Transaktionen nicht löschen.
 1. **ACSD-66952**: Der Cache wird bei jedem PLP- oder Warenkorbbesuch gelöscht, wenn eine Zielregel festgelegt ist.
 1. **ACSD-67264**: Layout von Bundles und herunterladbaren Produktseiten ist auf allen Geräten inkonsistent.
-1. **ACSD-67347**: Die Bestellung schlägt mit einem Sperrfehler fehl, wenn Sonderzeichen-Coupons und Dateisperren verwendet werden.
+1. **ACSD-67347**: Bestellung schlägt fehl mit Keine Sperre bei Verwendung von Gutscheincodes.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
