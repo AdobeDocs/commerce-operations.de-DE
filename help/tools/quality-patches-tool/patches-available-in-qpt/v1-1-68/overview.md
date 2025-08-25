@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
+source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ QPT v1.1.68 enthält die folgenden Patches:
 1. **ACSD-66506**: Backend-Fehler trat auf, wenn zuvor zugewiesene Produkte eines freigegebenen Katalogs gelöscht und neue zugewiesen wurden.
 1. **ACSD-66865**: Durch Speichern eines **[!UICONTROL Catalog Price Rule]** werden Indexer ungültig gemacht. Dies bietet eine Alternative zur Neuindizierung nur betroffener Produkte.
 1. **ACSD-66889**: Fehler bei der Neuindizierung des Bestands in CLI.
+1. **ACSD-66963**: `estimateTotals` Mutation gibt für Rabatte auf virtuelle Produkte null zurück.
+1. **ACSD-66965**: Die Option „Drucken“ auf der Seite „Anforderungsliste“ verursacht einen Fehler.
+1. **ACSD-67039**: Kundendatensätze wurden aufgrund der Validierung des Systemattributs rp_token nicht gespeichert.
 1. **ACSD-66963**: Die EstimateTotals-Mutation gibt null für Rabatte zurück, wenn ein Rabattcode auf einen Warenkorb mit virtuellen Produkten angewendet wird.
 1. **ACSD-66965**: **[!UICONTROL Print]** Option auf **[!UICONTROL Requisition List]** Seite verursacht einen Fehler.
 1. **ACSD-67039**: Kundendatensätze wurden aufgrund der Validierung des `rp_token` Systemattributs nicht gespeichert.
