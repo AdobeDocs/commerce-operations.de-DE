@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
+source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,9 @@ QPT v1.1.68 enthält die folgenden Patches:
 1. **ACSD-66072**: Verwandte Produkte werden aufgrund eines internen Server-Fehlers bei der [!UICONTROL Related Products Rule] nicht über GraphQL auf der Produktdetailseite zurückgegeben.
 1. **ACSD-66082**: Das Musterbild eines Produkts kann nicht durch einen Produktimport aktualisiert werden.
 1. **ACSD-66179**: Eine Stornierung einer Rechnung mit dem Zahlungstyp „Nicht erfasst“ führt zu einer 404-Fehlerseite.
+1. **ACSD-66233**: Admin-Benutzer konnten keine Produkte zu Kategorien hinzufügen, da das Popup „Produkt hinzufügen“ nicht geladen wurde.
+1. **ACSD-66506**: Backend-Fehler tritt nach dem Löschen und Neuzuweisen von Shared Catalog-Produkten auf.
+1. **ACSD-66865**: Das Speichern von Katalogpreisregeln macht Indexer ungültig und bietet eine Alternative zur Neuindizierung nur betroffener Produkte.
 1. **ACSD-66233**: Administratoren können aufgrund eines nicht reagierenden Popup-Fensters in der Produktliste keine Produkte hinzufügen.
 1. **ACSD-66506**: Backend-Fehler trat auf, wenn zuvor zugewiesene Produkte eines freigegebenen Katalogs gelöscht und neue zugewiesen wurden.
 1. **ACSD-66865**: Durch Speichern eines **[!UICONTROL Catalog Price Rule]** werden Indexer ungültig gemacht. Dies bietet eine Alternative zur Neuindizierung nur betroffener Produkte.
