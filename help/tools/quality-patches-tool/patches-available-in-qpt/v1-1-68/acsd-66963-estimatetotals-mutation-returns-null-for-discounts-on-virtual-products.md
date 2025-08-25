@@ -82,26 +82,26 @@ Die `estimateTotals`-Mutation gibt *null* für Rabatte zurück, wenn ein Rabattc
 Rabattinformationen sind für Warenkörbe enthalten, die nur virtuelle Produkte enthalten.
 
     &quot;
-    {
-    „data“: {
-    „estimatedTotals“: {
-    „cart“: {
-    „prices“: {
-    „rabatte“: [
-    {
-    „amount“: {
+    &lbrace;
+    „data“: &lbrace;
+    „estimatedTotals“: &lbrace;
+    „cart“: &lbrace;
+    „prices“: &lbrace;
+    „rabatte“: &lbrack;
+    &lbrace;
+    „amount“: &lbrace;
     „value“: 100.5,
     „currency“: „USD“
-    },
+    &rbrace;,
     „label“: „Ein zweiter Rabattcode für Tests“,
-    „coupon“: {
-    „code}
-    }0r0
-    }
+    „coupon“: &lbrace;
+    „code&rbrace;
+    &rbrace;0r0
+    &rbrace;
     ,APPLIED_TO ITEM“&quot;
     „ITEM“: 
     null
-    }Erweiterungen: 
+    &rbrace;Erweiterungen: 
     
      
      
@@ -114,18 +114,18 @@ Rabattinformationen sind für Warenkörbe enthalten, die nur virtuelle Produkte 
 Rabattinformationen werden für Warenkörbe mit nur virtuellen Produkten als *null* zurückgegeben.
 
     &quot;
-    {
-    „data“: {
-    „estimatedTotals“: {
-    „cart“: {
-    „prices“: {
+    &lbrace;
+    „data“: &lbrace;
+    „estimatedTotals“: &lbrace;
+    „cart“: &lbrace;
+    „prices“: &lbrace;
     „rabatte“: null
-    }
-    }
-    }
-    },
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;,
     „extensions“: {}
-    }
+    &rbrace;
     &quot;
 
 ## Patch anwenden
