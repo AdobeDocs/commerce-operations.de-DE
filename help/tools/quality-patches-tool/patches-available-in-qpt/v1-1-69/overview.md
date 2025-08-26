@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ QPT v1.1.69 enthält die folgenden Patches:
 1. **ACP2E-3731**: Produktexporte mit *[!UICONTROL Catalog, Search]* Sichtbarkeit schließen Datensätze aus anderen Store-Ansichten ein.
 1. **ACP2E-3767**: Die Option „Letztes Bundle“ wird nach dem Speichern eines Bundle-Produkts erneut angezeigt.
 1. **ACP2E-3964**: Konfigurierbare untergeordnete Produkte mit Video, das nicht über die REST-API aufgelistet ist.
+1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** darf nicht leer bleiben.
+1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** beim Auschecken mit mehreren Adressen nicht angewendet.
 1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] Feld darf nicht leer bleiben.
 1. **ACP2E-4050**: Die Regeln zum Warenkorbpreis schlagen für den Mehrversandversand mit Bundle-Produkten und den kostenlosen Versand fehl.
 1. **ACSD-56226**: READ-Abfragen geben veraltete Daten zurück, wenn `synchronous_replication` aktiviert ist.
