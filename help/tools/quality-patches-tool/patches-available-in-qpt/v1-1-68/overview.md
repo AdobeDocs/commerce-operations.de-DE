@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
+source-git-commit: 9dd2ea9464a8e0fb9e45fea44e17d2ded0193ba9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.68 verfügbaren Patches behoben wurden.
 
 QPT v1.1.68 enthält die folgenden Patches:
-1. **ACSD-58131**: Ein 0-Byte-Bild in der Mediensammlung hat verhindert, dass alle Bilder im Verzeichnis angezeigt oder ausgewählt wurden.
+1. **ACSD-58131** Die alte Mediensammlung kann Bilder aufgrund einer 0-Byte-Bilddatei nicht laden.
 1. **ACSD-62146**: Die ausgewählte Rechnungsadresse verschwindet auf der Kaufbestätigungsseite, wenn die Adresssuche aktiviert ist und „Limit für Kundenadressen“ auf 1 gesetzt ist.
 1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: Das Adobe Commerce-Backend lädt Kategorien sehr langsam.
 1. **ACSD-65938**: E-Mails zu Geschenkkarten wurden auch dann gesendet, wenn die Erstellung der Rechnung fehlgeschlagen war.
