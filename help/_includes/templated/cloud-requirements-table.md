@@ -1,5 +1,5 @@
 ---
-source-git-commit: f05d9cbab176997260affa270d0ea6e8fc8420b5
+source-git-commit: df410d33b89d28f76b0565447c587169ead7bf22
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 54%
@@ -215,7 +215,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2
       </td>
       <td>
           2
@@ -469,7 +469,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2
       </td>
       <td>
           2
@@ -836,7 +836,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2
       </td>
       <td>
           2
@@ -1249,7 +1249,7 @@ ht-degree: 54%
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2
       </td>
       <td>
           2
