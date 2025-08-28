@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
+source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.69 enthält die folgenden Patches:
 1. **ACP2E-4050**: Die Regeln zum Warenkorbpreis schlagen für den Mehrversandversand mit Bundle-Produkten und den kostenlosen Versand fehl.
 1. **ACSD-56226**: READ-Abfragen geben veraltete Daten zurück, wenn `synchronous_replication` aktiviert ist.
 1. **ACSD-57477**: Die Verarbeitung von Verkaufsregeln verlangsamt die Leistung bei Warenkorbanfragen.
-1. **ACSD-58108**: Fehlender Join-Tabellenname verursacht SQL-Fehler in der Erweiterung des benutzerdefinierten Rastermoduls.
+1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: Fehlender Join-Tabellenname verursacht SQL-Fehler in der Erweiterung des benutzerdefinierten Rastermoduls.
 1. **ACSD-65983**: Fehler tritt auf, wenn das gebündelte Produktangebot in Admin neu konfiguriert wird.
 1. **ACSD-66149**: Der IPN-Handler gibt 500 für nicht unterstützte Typen zurück.
 1. **ACSD-66153**: Die Seite gibt einen 500-Fehler aufgrund einer zwischengespeicherten falschen Layout-Struktur zurück.
