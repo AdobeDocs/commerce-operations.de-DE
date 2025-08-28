@@ -1,5 +1,5 @@
 ---
-source-git-commit: 305989a5620d858c474c75115849338f565d4730
+source-git-commit: ff21c497db7dd2aab90ded90fb3bba853e3c20f6
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 1%
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 
 <!-- The template to render with above values -->
-**Version**: 3.0.23
+**Version**: 3.0.24
 
 Diese Referenz enthält 9 Befehle, die über das `bin/uct` Befehlszeilen-Tool verfügbar sind.
 Die anfängliche Liste wird automatisch mit dem `bin/uct list`-Befehl in Adobe Commerce generiert.
