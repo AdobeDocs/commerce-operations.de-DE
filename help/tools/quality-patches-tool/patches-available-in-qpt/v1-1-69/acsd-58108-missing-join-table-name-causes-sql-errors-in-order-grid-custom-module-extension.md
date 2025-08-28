@@ -36,12 +36,12 @@ Der fehlende Join-Tabellenname in der ursprünglichen Abruftabelle führt zu SQL
 
 <u>Schritte zur Reproduktion</u>:
 
-01. Installieren Sie eine 2.4-develop-Instanz.
-02. Erstellen Sie eine neue Bestellung.
-03. Installieren Sie ein benutzerdefiniertes Modul mit einer SQL-Erweiterung.
-04. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-05. Wenden Sie den **[!UICONTROL Purchase Date]** an und warten Sie auf das Ergebnis.
-06. **[!UICONTROL Product SKU]** anwenden.
+&#x200B;01. Installieren Sie eine 2.4-develop-Instanz.
+&#x200B;02. Erstellen Sie eine neue Bestellung.
+&#x200B;03. Installieren Sie ein benutzerdefiniertes Modul mit einer SQL-Erweiterung.
+&#x200B;04. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+&#x200B;05. Wenden Sie den **[!UICONTROL Purchase Date]** an und warten Sie auf das Ergebnis.
+&#x200B;06. **[!UICONTROL Product SKU]** anwenden.
 
 <u>Erwartete Ergebnisse</u>:
 
