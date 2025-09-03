@@ -3,9 +3,9 @@ title: Valley für Sitzungsspeicherung verwenden
 description: Erfahren Sie, wie Sie Valley für die Sitzungsspeicherung konfigurieren.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,15 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 - `--session-save=valkey` ermöglicht die Speicherung von Valkey-Sitzungen. Wenn diese Funktion bereits aktiviert ist, lassen Sie diesen Parameter weg.
 
 - `--session-save-valkey-<parameter_name>=<parameter_value>` ist eine Liste von Parameter/Wert-Paaren, die den Sitzungsspeicher konfigurieren:
+
+
+>[!NOTE]
+>
+>Ab **Adobe Commerce 2.4.9-alpha2** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen in der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
+```
 
 | Befehlszeilenparameter | Parametername | Bedeutung | Standardwert |
 |----------------------------------------------|--- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
@@ -60,6 +69,14 @@ Im folgenden Beispiel wird Valkey als Sitzungsdatenspeicher, der Host als `127.0
 
 ```bash
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
+```
+
+>[!NOTE]
+>
+>Ab **Adobe Commerce 2.4.9** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen bei der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
+
+```bash
+bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
 ### Ergebnis

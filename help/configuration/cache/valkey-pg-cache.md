@@ -3,9 +3,9 @@ title: Valley für Standard-Cache verwenden
 description: Erfahren Sie, wie Sie Valkey als Standardcache für Adobe Commerce konfigurieren.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: bc0274074c0254f649af2f9e2b288017ac82ce9b
+source-git-commit: dea0ad57a8c4525be9bc442708bdd2495f28d72d
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 
 - `--cache-backend-valkey-<parameter>=<value>` ist eine Liste von Schlüssel-Wert-Paaren, die das standardmäßige Caching konfigurieren:
 
+>[!NOTE]
+>
+>Ab **Adobe Commerce 2.4.9-alpha2** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen in der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-valkey-<parameter>=<value>...
+```
+
 | Befehlszeilenparameter | Wert | Bedeutung | Standardwert |
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | Server | Vollqualifizierter Hostname, IP-Adresse oder ein absoluter Pfad zu einem UNIX-Socket. Der Standardwert `127.0.0.1` bedeutet, dass Valkey auf dem Commerce-Server installiert ist. | `127.0.0.1` |
@@ -42,6 +50,14 @@ Das folgende Beispiel aktiviert die Valkey-Standardzwischenspeicherung, legt den
 
 ```bash
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
+```
+
+>[!NOTE]
+>
+>Ab **Adobe Commerce 2.4.9-alpha2** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen in der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
+
+```bash
+bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
 ## Konfigurieren der Seitenzwischenspeicherung
@@ -58,6 +74,14 @@ Mit den folgenden Parametern:
 
 - `--page-cache-valkey-<parameter>=<value>` ist eine Liste von Schlüssel-Wert-Paaren, die das Caching von Seiten konfigurieren:
 
+>[!NOTE]
+>
+>Ab **Adobe Commerce 2.4.9-alpha2** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen in der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
+```
+
 | Befehlszeilenparameter | Wert | Bedeutung | Standardwert |
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | Server | Vollqualifizierter Hostname, IP-Adresse oder ein absoluter Pfad zu einem UNIX-Socket. Der Standardwert `127.0.0.1` bedeutet, dass Valkey auf dem Commerce-Server installiert ist. | `127.0.0.1` |
@@ -71,6 +95,14 @@ Das folgende Beispiel aktiviert das Caching von Valkey-Seiten, legt den Host auf
 
 ```bash
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
+```
+
+>[!NOTE]
+>
+>Ab **Adobe Commerce 2.4.9-alpha2** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen in der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
+
+```bash
+bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
 ## Ergebnisse
