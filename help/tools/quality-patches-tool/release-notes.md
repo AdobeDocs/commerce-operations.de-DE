@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 4adac1df0382cd0ae0833599011aeb664a91ceb6
+source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
 workflow-type: tm+mt
-source-wordcount: '28046'
+source-wordcount: '28348'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,26 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.70 {#v1-1-70}
+
+* **AC-15210** (für Adobe Commerce und Magento Open Source >=2.4.6-p3 &lt;2.4.9) - Migriert die USPS-Integration von den veralteten Web Tools-APIs zu den neuen RESTful USPS-APIs.
+* **ACSD-67102** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass das Adobe Commerce-Backend sehr langsam geladen **[!UICONTROL Categories]**.
+* **ACSD-66120** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Behebt das Problem, dass [!DNL GraphQL] Rabattprozentsätze und Grundpreise fälschlicherweise anzeigt, wenn Katalogpreise so konfiguriert sind, dass sie Steuern enthalten.
+* **ACSD-66157** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.9) - Behebt das Problem, dass der Sonderpreis nicht für Websites gilt, die in verschiedenen Zeitzonen erstellt wurden.
+* **ACSD-67659** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt ein Problem, bei dem übersetzte Fehlermeldungen einen UNDEFINIERTEN Fehler-Code zurückgeben.
+* **ACSD-67166** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wird das Problem behoben, dass die `cataloginventory_stock_status` Abfrage beim Laden eines Angebots in der Storefront mehrmals ausgeführt wird, was zu redundanten Datenbankaufrufen führt.
+* **ACSD-67289** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass der reguläre Preis nicht angezeigt wird, wenn ein Sonderpreis angewendet wird.
+* **ACSD-67686** (für Adobe Commerce und Magento Open Source >=2.4.4-p15 &lt;2.4.5 || >=2,4,5-p14 &lt;2,4,6 || >=2.4.6-p12 &lt;2.4.7) - Behebt das Problem, dass beim Senden einer leeren `Syntax Error: Unexpected <EOF>`-Anfrage ein [!DNL GraphQL] auftritt.
+* **ACSD-67250** (für Adobe Commerce >=2.4.7-p4 &lt;2.4.8) - Es wurde das Problem behoben, dass beim **[!UICONTROL Shared Catalog]** Speichervorgang alle Elemente statt nur die betroffenen aktualisiert wurden, wodurch die Leistung verbessert wurde, indem unnötige Vorgänge vermieden wurden.
+* **ACSD-67030** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Es wird das Problem behoben, bei dem die Zuweisung einfacher Produkte zu einem konfigurierbaren Produkt aufgehoben wird, wenn sie von einem Administrator mit eingeschränkter Rolle bearbeitet werden.
+* Aktualisierte Versionen: **ACSD-54095**, **ACSD-51636**, **ACSD-51739**, **ACSD-66093**
+* Patches ersetzt: **ACSD-62415**
 
 ## v1.1.69 {#v1-1-69}
 
