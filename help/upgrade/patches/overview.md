@@ -2,7 +2,7 @@
 title: Funktionsweise von Patches
 description: Erfahren Sie mehr über die verschiedenen Arten von Patches für Adobe Commerce und wie sie funktionieren.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Hotfixes finden Sie im [Sicherheitscenter](https://magento.com/security/patches)
 
 Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmtes Problem. Diese Fehlerbehebungen werden auf die zuletzt unterstützte Nebenversion angewendet (z. B. 2.4.x), könnten jedoch in der vorherigen unterstützten Nebenversion (z. B. 2.3.x) fehlen. Adobe veröffentlicht bei Bedarf einzelne Patches.
 
-Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um einzelne Patches anzuwenden.
+Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um einzelne Patches anzuwenden.
 
 >[!NOTE]
 >
@@ -51,7 +51,9 @@ Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.c
 
 ## Benutzerdefinierte Patches
 
-Manchmal dauert es eine Weile, bis das Adobe Engineering Team eine Fehlerbehebung auf GitHub in einer Adobe Commerce Composer-Version implementiert. In der Zwischenzeit können Sie einen Patch von GitHub aus erstellen und das [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/)-Plug-in verwenden, um ihn auf Ihre Composer-basierte Installation anzuwenden.
+Manchmal dauert es eine Weile, bis das Adobe Engineering Team eine Fehlerbehebung auf GitHub in einer offiziellen Adobe Commerce-Version implementiert. In der Zwischenzeit können Sie einen Patch von GitHub aus erstellen und das [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/)-Plug-in verwenden, um ihn auf Ihre Composer-basierte Installation anzuwenden.
+
+{{custom-patches-disclaimer}}
 
 Verwenden Sie die [Befehlszeile](apply.md#command-line) oder [Composer](apply.md#composer), um benutzerdefinierte Patches anzuwenden.
 
@@ -90,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Befehlszeile](/help/upgrade/patches/apply.md#command-line)
 - [Komponist](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im _Handbuch zu Commerce in Cloud_.
+>Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im _Handbuch zu Commerce in Cloud_.

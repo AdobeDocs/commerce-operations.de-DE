@@ -2,9 +2,9 @@
 title: Patches anwenden
 description: Erfahren Sie mehr über die Methoden zum Anwenden von Patches auf ein Adobe Commerce-Projekt.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Befehlszeile](../patches/apply.md#command-line)
 - [Komponist](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ Sie können Patches mit einer der folgenden Methoden anwenden:
 
 ## Komponist
 
->[!IMPORTANT]
->
->Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um offizielle Qualitäts-Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+{{custom-patches-disclaimer}}
 
 So wenden Sie einen benutzerdefinierten Patch mit dem Composer an:
 
