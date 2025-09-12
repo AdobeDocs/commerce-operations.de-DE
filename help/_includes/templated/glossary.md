@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
+source-git-commit: 3948c3c59a53a023edc16698fcb9ec6150cbca21
 workflow-type: tm+mt
-source-wordcount: '6370'
+source-wordcount: '6465'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ In der -Software eine Benutzerrolle mit vollständigen Administratorrechten, um 
 In Adobe Commerce haben Admin-Benutzer vollständige Berechtigungen und Zugriff auf alle Funktionen, Optionen und Funktionen in Admin.
 Sie können auch Benutzer und Rollen erstellen.
 
-Weitere Informationen: [Benutzer hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=de)
+Weitere Informationen: [Benutzer hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
 
 _Attribute :_
 
@@ -70,7 +70,7 @@ Das kennwortgeschützte Backoffice Ihres Geschäfts, in dem Bestellungen, Katalo
 Benutzer greifen auf den Admin-Bereich zu, um den Store zu verwalten, einschließlich Produkte, Bestellungen, Sendungen, CMS-Inhalte, Design der Storefront, Kundeninformationen usw.
 Admin-Benutzende haben eine -Rolle mit Berechtigungen, die den Zugriff auf Funktionen, Optionen und Funktionen steuern.
 
-Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de)
+Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
 _Attribute :_
 
@@ -84,7 +84,7 @@ _Substantiv_
 
 ADMIN-Variablen sind Projektumgebungsvariablen, mit denen die Konfigurationseinstellungen für das Admin-Benutzerkonto für den Zugriff auf die Admin-Benutzeroberfläche außer Kraft gesetzt werden können.
 
-Weitere Informationen: &quot;[-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=de)
+Weitere Informationen: &quot;[-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
 
 _Attribute :_
 
@@ -96,7 +96,7 @@ _Substantiv_
 
 Der interne Bereichsname, der dem Administrator zugewiesen wurde.
 
-Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de)
+Weitere Informationen: [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
 _Attribute :_
 
@@ -190,7 +190,7 @@ Die Storefront bietet einen Währungsselektor für mehrere akzeptierte Währunge
 Währungssymbole werden in Produktpreisen und Verkaufsdokumenten wie Bestellungen und Rechnungen angezeigt.
 Sie können die Währungssymbole nach Bedarf anpassen und die Anzeige des Preises für jeden Shop oder jede Ansicht separat festlegen.
 
-Weitere Informationen: [Währung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=de)
+Weitere Informationen: [Währung](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
 
 _Attribute :_
 
@@ -212,13 +212,13 @@ _Attribute :_
 _Substantiv_
 
 Eine Einheit der Seitenausgabe, die einen unverwechselbaren Inhalt - eine Information, ein Benutzeroberflächenelement - alles visuell für den Endbenutzer bzw. die Endbenutzerin greifbar macht.
-[Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=de) werden durch Module implementiert und bereitgestellt.
+[Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) werden durch Module implementiert und bereitgestellt.
 Blöcke verwenden Vorlagen zum Generieren von HTML.
 Beispiele für Bausteine sind eine Kategorieliste, ein Mini-Warenkorb, Produkt-Tags und eine Produktliste.
 
-[Dynamische Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=de) stellen Inhalte bereit, die auf Logik basieren, z. B. Preisregeln.
+[Dynamische Blöcke](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) stellen Inhalte bereit, die auf Logik basieren, z. B. Preisregeln.
 
-Page Builder erweitert die Interaktivität und Erstellung von [Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=de) und [dynamischen Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=de).
+Page Builder erweitert die Interaktivität und Erstellung von [Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) und [dynamischen Blöcken](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
 
 _Attribute :_
 
@@ -248,7 +248,7 @@ _Adjektiv_
 
 Ein Einzelhandelsgeschäft mit einem festen physischen Standort im Gegensatz zu Unternehmen, die virtuell oder ausschließlich über das Internet funktionieren.
 
-Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=de) und [Order Management](#oms) ist dieser Store eine Quelle für die Verfolgung von Produktmengen, Versandaufträgen und die Unterstützung der Abholung im Laden.
+Für [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) und [Order Management](#oms) ist dieser Store eine Quelle für die Verfolgung von Produktmengen, Versandaufträgen und die Unterstützung der Abholung im Laden.
 
 _Attribute :_
 
@@ -274,7 +274,7 @@ _Substantiv_
 Ermöglicht Kunden, ein benutzerdefiniertes Produkt aus verschiedenen Optionen und Konfigurationen zusammenzustellen.
 Jedes Element im Bundle ist entweder ein separates einfaches oder ein virtuelles Produkt.
 
-Weitere Informationen: [Konfigurierbare ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=de)
+Weitere Informationen: [Konfigurierbare ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
 
 _Attribute :_
 
@@ -448,7 +448,7 @@ _Substantiv_
 
 Cloud-Variablen sind Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisch sind und das **`MAGENTO_CLOUD`** Präfix verwenden.
 
-Weitere Informationen: [Cloud-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=de)
+Weitere Informationen: [Cloud-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
 _Attribute :_
 
@@ -458,7 +458,7 @@ _Attribute :_
 
 _Substantiv_
 
-Eine spezielle Variante von [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=de), die nur in der Admin erstellt und nicht über Layout-Dateien referenziert werden kann.
+Eine spezielle Variante von [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html), die nur in der Admin erstellt und nicht über Layout-Dateien referenziert werden kann.
 
 _Attribute :_
 
@@ -619,7 +619,7 @@ _Substantiv_
 
 Ein Bereitstellungsschlüssel ist Ihr öffentlicher SSH-Schlüssel für das Projekt und ermöglicht schreibgeschützten oder (falls aktiviert) Lese-/Schreibzugriff auf ein Git-Repository.
 
-Weitere Informationen: [Sichere Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de)
+Weitere Informationen: [Sichere Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
 
 _Attribute :_
 
@@ -688,7 +688,7 @@ _Substantiv_
 
 Eine Reihe von Skripten und Tools, die zur Verwaltung und Bereitstellung des Commerce-Programms entwickelt wurden. Dieses Paket vereinfacht viele Adobe Commerce-Prozesse in der Cloud-Infrastruktur, einschließlich der Bereitstellung in einer Docker-Umgebung, der Verwaltung von Zuordnungen, der Überprüfung der Projektkonfiguration und der Anwendung von Adobe-Patches.
 
-Weitere Informationen: [ece-tools-Paket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=de)
+Weitere Informationen: [ece-tools-Paket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
 _Attribute :_
 
@@ -892,6 +892,17 @@ _Attribute :_
 
 ## I
 
+### instanceID
+
+_Substantiv_
+
+Siehe [Mandanten-ID](#tenant-id).
+
+_Attribute :_
+
+* _Feld: cloud_
+* _Synonyme: Mandanten-ID_
+
 ### Abfangen
 
 _Substantiv_
@@ -967,7 +978,7 @@ _Substantiv_
 MAGEID ist in der Regel der Rechnungskontakt für das Adobe Commerce-Konto (und möglicherweise nicht der Projektbesitzer des Adobe Commerce on Cloud Infrastructure-Projekts).
 Für die Zugriffsberechtigung auf Adobe Commerce und Adobe Commerce auf Cloud-Infrastrukturpakete müssen Sie Zugriffsschlüssel verwenden, die mit einer MAGEID verknüpft sind, der Zugriff auf diese Pakete gewährt wurde.
 
-Weitere Informationen: [Authentifizierungsschlüssel abrufen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=de)
+Weitere Informationen: [Authentifizierungsschlüssel abrufen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
 _Attribute :_
 
@@ -978,7 +989,7 @@ _Attribute :_
 _Substantiv_
 
 In Marketing und Einzelhandel ein Prozentsatz, der zu den Kosten eines Artikels addiert wird, um den Einzelhandelspreis zu bestimmen.
-[Konfigurieren des ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=de) oder Markdown eines Produkts durch anpassbare Optionen.
+[Konfigurieren des ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html) oder Markdown eines Produkts durch anpassbare Optionen.
 
 In der Entwicklung eine Computersprache, die die Verarbeitung, Darstellung und Formatierung von Text steuert.
 Markup-Tags sind Code-Ausschnitte, die einer CMS-Seite oder einem -Block Funktionen oder Inhalte hinzufügen.
@@ -1076,7 +1087,7 @@ _Substantiv_
 
 Origin Cloaking ist eine Sicherheitsfunktion, mit der Adobe Commerce in der Cloud-Infrastruktur jeden Nicht-Fastly-Traffic blockieren kann, um DDoS-Angriffe zu verhindern, die an die Cloud-Infrastruktur (Herkunft) gesendet werden.
 
-Weitere Informationen: [Fastly Origin Cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=de)
+Weitere Informationen: [Fastly Origin Cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
 _Attribute :_
 
@@ -1094,7 +1105,7 @@ Diese Steuerelemente werden auch als „Inhaltstypen“ bezeichnet.
 Händler können Layouts und Seiten ohne Programmiererfahrung entwerfen.
 Entwicklerinnen und Entwickler erhalten Unterstützung bei Erweiterungen, um Page Builder zu erweitern.
 
-Weitere Informationen: [Page Builder-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=de), [Page Builder-DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Weitere Informationen: [Page Builder-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [Page Builder-DevDocs](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _Attribute :_
 
@@ -1376,6 +1387,24 @@ _Attribute :_
 * _Feld: Commerce-Software_
 * _Verwandte Begriffe: block_
 
+### Mandanten-ID
+
+_Substantiv_
+
+Eine Adobe Commerce-Mandanten-ID ist eine eindeutige Kennung für Ihre spezifische Adobe Commerce-Instanz in der Adobe Experience Cloud.
+wird verwendet, um Daten zu routen und sicherzustellen, dass die Ressourcen korrekt mit dem Namespace versehen sind, insbesondere für Integrationen und APIs. Sie finden die Mandanten-ID
+in den Zugriffs-URLs für Ihre Commerce-Instanz oder über die Commerce Cloud Manager-Instanzdetails.
+
+Weitere Informationen:
+
+[Grundlagen zu Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/getting-started#adobe-commerce-as-a-cloud-service-basics)
+[Erste Schritte mit Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/get-started#manage-instances)
+
+_Attribute :_
+
+* _Feld: cloud_
+* _Synonyme: Instanz-ID_
+
 ### Thema
 
 _Substantiv_
@@ -1406,7 +1435,7 @@ Die Ziele des Benutzeroberflächen-Komponentensystems umfassen Folgendes:
 * Verwenden von AJAX zum Aktualisieren von Komponentendaten
 * Einführung einer neuen DSL für die Erstellung der oben genannten Elemente
 
-Weitere Informationen: [Handbuch zu Benutzeroberflächen](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=de)
+Weitere Informationen: [Handbuch zu Benutzeroberflächen](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
 _Attribute :_
 
@@ -1445,7 +1474,7 @@ Vom Anbieter erstellter Code, der das Verhalten von Commerce erweitert oder anpa
 VBEs werden gründlich getestet und in jeder unterstützten Version von Adobe Commerce enthalten.
 Eine VBE kann Module, Designs und Sprachpakete enthalten.
 
-Weitere Informationen finden Sie unter [Thema zur Bundle-Erweiterung für Anbieter](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=de).
+Weitere Informationen finden Sie unter [Thema zur Bundle-Erweiterung für Anbieter](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
 
 _Attribute :_
 
@@ -1511,7 +1540,7 @@ _Attribute :_
 
 _Substantiv_
 
-Ein [Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=de) ist ein vorbereiteter Code-Ausschnitt, der verwendet werden kann, um Blöcke, Links und dynamische Inhalte an bestimmten Stellen auf Speicherseiten zu platzieren.
+Ein [Widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) ist ein vorbereiteter Code-Ausschnitt, der verwendet werden kann, um Blöcke, Links und dynamische Inhalte an bestimmten Stellen auf Speicherseiten zu platzieren.
 Sie können Widgets verwenden, um Landingpages für Marketing-Kampagnen zu erstellen und Werbeinhalte an bestimmten Stellen im gesamten Store anzuzeigen.
 Widgets können auch verwendet werden, um interaktive Elemente und Aktionsblöcke für externe Überprüfungssysteme, Videochats, Abstimmungs- und Abonnementformulare hinzuzufügen oder Navigationselemente für Tag-Clouds und Bild-Regler bereitzustellen.
 
