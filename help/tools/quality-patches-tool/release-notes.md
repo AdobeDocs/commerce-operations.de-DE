@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: edb7f2351afc346d54f62ae1278f481ba7d732f9
+source-git-commit: 4718ebd237c73913e8bc03b9370298b3504e619f
 workflow-type: tm+mt
-source-wordcount: '28348'
+source-wordcount: '28592'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,23 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.71 {#v1-1-71}
+
+* **ACSD-60624** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass **[!UICONTROL Upload Image]** bei leeren Inhalten in [!UICONTROL Image]-, [!UICONTROL Banner]- und [!UICONTROL Slider]-Abschnitten in Page Builder nicht funktioniert.
+* **ACSD-67089** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Behebt das Paginierungsproblem in der `inventory/export-stock-salable-qty`-API, das `total_count` fälschlicherweise auf die Seitengröße beschränkt.
+* **ACSD-67093** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, bei dem das Abrufen von Bestellungen über GraphQL mithilfe des Datumsbereichsfilters falsche Ergebnisse zurückgibt.
+* **ACSD-67459** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.9) - Es wurde das Problem behoben, dass Produkte mit Beschreibungen, die länger als 65.536 Zeichen sind, nicht importiert werden können.
+* **ACSD-67603** (für Adobe Commerce >=2.4.6 &lt;2.4.8) - Es wurde das Problem behoben, dass die Sitemap-Generierung für Produkte mit aktivierter Bildeinbindung zu langen Verarbeitungszeiten führte.
+* **ACSD-67643** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wird das Problem behoben, bei dem doppelte Einträge bei geplanten Aktualisierungen in Umgebungen mit einer hohen Anzahl verschachtelter Kategorien erstellt werden.
+* **ACSD-67652** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass der Bundle-Produktstatus in GraphQL-Aufrufen auch dann als nicht vorrätig zurückgegeben wird, wenn untergeordnete und übergeordnete Produkte vorrätig sind.
+* **ACSD-67904** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass Bestellungen nicht aufgegeben werden können, wenn der Stadtname Ziffern (0-9), kaufmännisches Und-Zeichen (&amp;), Punkte (.) oder Klammern () enthält.
+* Patches ersetzt: **ACSD-61322**, **ACSD-65848**
 
 ## v1.1.70 {#v1-1-70}
 
