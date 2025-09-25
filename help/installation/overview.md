@@ -2,10 +2,10 @@
 title: Übersicht über die lokale Installation
 description: Erfahren Sie mehr über den Installationsprozess für lokale Bereitstellungen von Adobe Commerce.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
+source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,30 @@ ht-degree: 3%
 
 Diese Seite bietet einen Überblick über die Installation von Adobe Commerce in Ihrer eigenen Infrastruktur. Der Installationsprozess umfasst das Einrichten Ihrer Serverumgebung, das Abrufen der erforderlichen Software und Anmeldeinformationen und das Ausführen des Installationsbefehls.
 
-Sie können die Adobe Commerce-Software in ca. 30 bis 60 Minuten installieren. Die Zeit, die zum Einrichten der Server-Umgebung vor der Installation benötigt wird, hängt jedoch von Ihren Erfahrungen und den von Ihnen ausgewählten Technologien ab.
+Die lokale Adobe Commerce-Software kann in etwa 30 bis 60 Minuten installiert werden. Die Zeit, die zum Einrichten der Server-Umgebung vor der Installation benötigt wird, hängt jedoch von Ihren Erfahrungen und den von Ihnen ausgewählten Technologien ab.
 
 >[!TIP]
 >
 >Sie sollten über technisches Zwischenwissen und Serverzugriff verfügen, um erfolgreich fortzufahren.
 
-Die Installation erstellt einen voll funktionsfähigen Adobe Commerce-Store mit einer [Storefront für Kunden](https://experienceleague.adobe.com/de/docs/commerce-admin/start/storefront/storefront) und einem [Admin-Panel](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/admin). Sie müssen Ihre Datenbank-Anmeldeinformationen, Domain-Informationen und Authentifizierungsschlüssel parat haben, bevor Sie den Prozess beginnen.
+Die Installation erstellt einen voll funktionsfähigen Adobe Commerce-Store mit einer [Storefront für Kunden](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) und einem [Admin-Panel](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Sie müssen Ihre Datenbank-Anmeldeinformationen, Domain-Informationen und Authentifizierungsschlüssel parat haben, bevor Sie den Prozess beginnen.
+
+## Händlerpflichten
+
+Mit Adobe Commerce On-Premise können Sie Ihre eigene Infrastruktur hosten und verwalten, einschließlich Server, Hosting-Umgebungen und Systemwartung. Adobe bietet spezielle Unterstützung für das zentrale Commerce-Programm, einschließlich:
+
+- Zugriff auf Produktaktualisierungen und Fehlerbehebungen
+- Sicherheits-Patches zur Behebung von Sicherheitslücken
+- Umfassende Dokumentation, die Sie bei der Verwaltung und Optimierung Ihrer selbst gehosteten Lösung unterstützt
+
+Sie haben die volle Kontrolle über Ihre Umgebung, was eine bessere Anpassung und Flexibilität ermöglicht, aber Sie sind dafür verantwortlich, die Leistung, Sicherheit und Skalierbarkeit der Infrastruktur sicherzustellen. Sie sind beispielsweise für Folgendes verantwortlich:
+
+- Design, Implementierung, Konfiguration, Wartung, Fehlerbehebung und Leistungstests für alle Adobe Commerce On-Premise-Systeme.
+   - Server, Betriebssystem, Datenbanken, [!DNL PHP], Suche, Caching, vollständiger Seiten-Cache und Content Delivery Network. Häufige Themen können (aber nicht beschränkt auf) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] und alle verwendeten [!DNL CDN] sein.
+- Kapazitätsplanung, automatische Skalierung, Clustering, Backups, Disaster Recovery
+- Alle Produkt- und Kundendaten, Design, Konfiguration und Einrichtung, Anwendungs- und Datenbankpflege, Code-Bereitstellung, Versionsaktualisierungen und Patch-Anwendungen
+- Überwachung und Benachrichtigung per APM/Protokollierung/Benachrichtigung (z. B. [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
+- Sicherheits-Patching für Betriebssystem, [!DNL PHP], Datenbank, Middleware-Härtung und Updates
 
 ## Workflow
 
