@@ -3,9 +3,9 @@ title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.70'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.70  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 9394bdaec258299bf7def327bf2e01792ada2eeb
+source-git-commit: fa246140cf582bd96151715073ddb8f4b0c7c648
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.70 verfügbaren Patches behoben wurden.
 
 QPT v1.1.70 enthält die folgenden Patches:
-1. **ACSD-67102**: Langsames Laden der Kategorien oder Zeitüberschreitung bei einer großen Anzahl von Kategorien und Produkten.
+1. **ACSD-67102**: Das Laden von Kategorien ist langsam oder dauert zu lange, wenn eine große Anzahl von Kategorien und Produkten vorhanden ist.
 1. **ACSD-66120**: [!DNL GraphQL] zeigt falschen Rabattprozentsatz und Grundpreis mit steuerinklusiven Katalogpreisen an.
 1. **ACSD-66157**: Der Sonderpreis wird nicht für Websites wirksam, die in verschiedenen Zeitzonen erstellt wurden.
 1. **ACSD-67659**: Übersetzte Fehlermeldungen geben einen UNDEFINIERTEN Code zurück
