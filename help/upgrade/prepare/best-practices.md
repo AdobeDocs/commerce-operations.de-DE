@@ -81,7 +81,7 @@ Bewerten Sie die für das Upgrade erforderlichen Arbeiten:
 
 ### Tests nach einem Upgrade
 
-Beim Testen handelt es sich um die Phase eines Upgrades, die die meiste Zeit in Anspruch nimmt. Daher sollte dieser Prozess so weit wie möglich automatisiert werden. Sie können von der Verwendung der wichtigsten Test-Tools profitieren. Weitere Informationen finden [ im ](https://developer.adobe.com/commerce/testing/guide/) „Anwendungstestleitfaden“.
+Beim Testen handelt es sich um die Phase eines Upgrades, die die meiste Zeit in Anspruch nimmt. Daher sollte dieser Prozess so weit wie möglich automatisiert werden. Sie können von der Verwendung der wichtigsten Test-Tools profitieren. Weitere Informationen finden [&#x200B; im &#x200B;](https://developer.adobe.com/commerce/testing/guide/) „Anwendungstestleitfaden“.
 
 Verwenden Sie eine Staging-Umgebung, um Ihr Upgrade zu testen und zu validieren, bevor Sie zur Produktion wechseln.
 
