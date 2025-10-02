@@ -27,7 +27,7 @@ Das [!DNL Site-Wide Analysis Tool] ist ein proaktives Self-Service-Tool und ein 
 
 ![Dashboard des Site-Wide Analysis Tool](../../assets/tools/swat-dashboard.png){zoomable="yes"}
 
-Weitere Informationen finden [ in ](https://www.youtube.com/watch?v=KW2R8ki_RG4) Einführungsvideo.
+Weitere Informationen finden [&#x200B; in &#x200B;](https://www.youtube.com/watch?v=KW2R8ki_RG4) Einführungsvideo.
 
 ## Tool-Übersicht
 
