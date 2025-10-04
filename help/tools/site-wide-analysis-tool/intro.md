@@ -36,7 +36,7 @@ Weitere Informationen finden [&#x200B; in &#x200B;](https://www.youtube.com/watc
 Sie enthält auch ein Verlaufsdiagramm, in dem die Veränderungen des Zustands Ihrer Website im Laufe der Zeit dargestellt werden.
    - Zeigt die **[!UICONTROL Security Center Widget]** an, auf die Sie zugreifen können:
       - [Tech [!DNL Stack] Version Compliance mit [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de)
-      - [Adobe-Sicherheitsbulletin](https://helpx.adobe.com/security/security-bulletin.html)
+      - [Adobe-Sicherheitsbulletin](https://helpx.adobe.com/de/security/security-bulletin.html)
       - [Empfehlungen der [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=de)
       - [[!DNL Site-Wide Analysis Tool] Best Practice-Sicherheitsempfehlungen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html?lang=de)
 
@@ -58,7 +58,7 @@ Sie enthält auch ein Verlaufsdiagramm, in dem die Veränderungen des Zustands I
 Sehen Sie alle wichtigen Einblicke über Ihre Website an einem Ort. [!DNL Site-Wide Analysis Tool] erhalten Sie direkten Zugriff auf und Informationen von den [!UICONTROL Security Center Widget], [!DNL Upgrade Compatability Tool] und [!DNL Managed Alerts].
 
 - [**[!UICONTROL Security Center Widget]**] - Zeigt Sicherheitserkenntnisse für Ihre Site an.<br>
-Die angezeigten Sicherheitsinformationen umfassen [Tech- [!DNL Stack] -Compliance mit  [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=de), and [[!DNL Site-Wide Analysis Tool]  Best Practice-Sicherheitsempfehlungen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html?lang=de).<br>
+Die angezeigten Sicherheitsinformationen umfassen [Tech- [!DNL Stack] -Compliance mit  [!DNL end of life (EOL)]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de), [Adobe Security Bulletin](https://helpx.adobe.com/de/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=de), and [[!DNL Site-Wide Analysis Tool]  Best Practice-Sicherheitsempfehlungen](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations.html?lang=de).<br>
 Das [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html?lang=de) bietet Kunden von Adobe Commerce und Magento Open-Source Echtzeiteinblicke in den Sicherheitsstatus ihres Stores, indem es proaktiv Malware entdeckt und sie benachrichtigt, wenn ihr Store gefährdet ist.
 
 - [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) - Führt die angepasste Adobe Commerce-Instanz für die Ziel-Upgrade-Version aus und gibt eine Zusammenfassung kritischer Probleme, Fehler und Warnungen zurück, die behoben werden müssen, was den Upgrade-Analyseprozess einfacher, schneller und kostengünstiger macht.
