@@ -3,7 +3,7 @@ title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.70'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.70  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: fa246140cf582bd96151715073ddb8f4b0c7c648
+source-git-commit: 62afde0308aa4e23f1a1f5340f05472b58f33ba0
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,7 +18,7 @@ QPT v1.1.70 enthält die folgenden Patches:
 1. **ACSD-67102**: Das Laden von Kategorien ist langsam oder dauert zu lange, wenn eine große Anzahl von Kategorien und Produkten vorhanden ist.
 1. **ACSD-66120**: [!DNL GraphQL] zeigt falschen Rabattprozentsatz und Grundpreis mit steuerinklusiven Katalogpreisen an.
 1. **ACSD-66157**: Der Sonderpreis wird nicht für Websites wirksam, die in verschiedenen Zeitzonen erstellt wurden.
-1. **ACSD-67659**: Übersetzte Fehlermeldungen geben einen UNDEFINIERTEN Code zurück
+1. **ACSD-67659**: Übersetzte Fehlermeldungen geben einen *UNDEFINED*-Code zurück.
 1. **ACSD-67166**: Beim Laden des Angebots in der Storefront werden doppelte `cataloginventory_stock_status` ausgeführt.
 1. **ACSD-67030**: Die Zuweisung einfacher Produkte zum konfigurierbaren Status wird aufgehoben, wenn sie von einem Administrator mit eingeschränkter Rolle bearbeitet werden.
 1. **ACSD-67289**: Regulärer Preis wird nicht angezeigt, wenn ein Sonderpreis angewendet wird.
