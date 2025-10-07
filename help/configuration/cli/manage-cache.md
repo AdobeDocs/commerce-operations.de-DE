@@ -20,7 +20,7 @@ Sie können das Cache-Management-System von Adobe Commerce verwenden, um die Lei
 >[!NOTE]
 >
 >
->Commerce-Standortadministratoren können den Cache über das Tool Cache Management System von Admin aus verwalten. Siehe [Cache-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) im _Admin-_.
+>Commerce-Standortadministratoren können den Cache über das Tool Cache Management System von Admin aus verwalten. Siehe [Cache-Verwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management) im _Admin-_.
 
 
 ## Cache-Status anzeigen
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Eine ausführliche Beschreibung der von Adobe Commerce unterstützten Standard-Cache-Typen finden Sie unter [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) im _Admin-_.
+>Eine ausführliche Beschreibung der von Adobe Commerce unterstützten Standard-Cache-Typen finden Sie unter [Caches](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management#caches) im _Admin-_.
 
 
 ## Cache-Typen aktivieren oder deaktivieren

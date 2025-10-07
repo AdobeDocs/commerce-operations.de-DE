@@ -18,9 +18,9 @@ Adobe ist stets bestrebt, ein ausgewogenes Verhältnis zwischen einfachen und vo
 
 Neue Funktionen, Funktionsaktualisierungen, Cloud-Infrastruktur- und Erweiterbarkeitsaktualisierungen werden unabhängig von Patch-Versionen bereitgestellt und sind über externe Module, Erweiterungen, Tools oder Web-Services verfügbar. Beispiele:
 
-- ![Funktionssymbol](../assets/icons/feature.svg) [**Funktionen und Funktionen**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all) - Neue Funktionen, die unabhängig von Patch-Versionen bereitgestellt werden. Beispiel: [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Katalog-Service, Datenverbindung, Live-Suche und Produktempfehlungen.
+- ![Funktionssymbol](../assets/icons/feature.svg) [**Funktionen und Funktionen**](https://experienceleague.adobe.com/de/docs/commerce/user-guides/release-information/release-notes-all) - Neue Funktionen, die unabhängig von Patch-Versionen bereitgestellt werden. Beispiel: [B2B](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes), Katalog-Service, Datenverbindung, Live-Suche und Produktempfehlungen.
 
-- ![Infrastruktursymbol](../assets/icons/servers.svg) [**Cloud-**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): Neue Funktionen und Verbesserungen für Adobe Commerce in der Cloud-Infrastruktur und die Cloud-Tools-Suite für Commerce-Pakete, die Adobe Commerce-Installationen und -Upgrades auf der Cloud-Plattform bereitstellen und verwalten.
+- ![Infrastruktursymbol](../assets/icons/servers.svg) [**Cloud-**](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): Neue Funktionen und Verbesserungen für Adobe Commerce in der Cloud-Infrastruktur und die Cloud-Tools-Suite für Commerce-Pakete, die Adobe Commerce-Installationen und -Upgrades auf der Cloud-Plattform bereitstellen und verwalten.
 
 - ![Erweiterbarkeitssymbol](../assets/icons/brackets.svg) [**Erweiterbarkeit**](https://developer.adobe.com/commerce/extensibility/) - Neue Entwickler-Tools und Services für die prozessexterne Erweiterbarkeit, die unabhängig von Patch-Versionen bereitgestellt werden. Zum Beispiel Integration Starter Kit, Admin UI SDK, Adobe I/O Events für Commerce und API Mesh.
 
