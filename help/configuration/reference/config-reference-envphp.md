@@ -185,7 +185,7 @@ Wenn `queue/default_connection` beispielsweise in `amqp` `env.php` ist, aber in 
 
 ## Verzeichnisse
 
-Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([ Sicherheit](../../installation/tutorials/docroot.md).
+Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([&#x200B; Sicherheit](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -203,7 +203,7 @@ Eine Liste der in diesem Knoten verfügbaren herunterladbaren Domains. Zusätzli
 ]
 ```
 
-Weitere Informationen zu &quot;[ Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Weitere Informationen zu &quot;[&#x200B; Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installieren
 

@@ -284,7 +284,7 @@ Der **[!UICONTROL Database mysql-slow.log]** Frame enthält die Anzahl der Eintr
 
 ![PHP-Prozessstatus](../../assets/tools/php-process-states.jpg)
 
-Wie sich PHP-Prozesse verhalten, hängt von der [ ab](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex mit vielen Variablen und Optionen. Der **[!UICONTROL PHP process states]**-Frame hilft zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
+Wie sich PHP-Prozesse verhalten, hängt von der [&#x200B; ab](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex mit vielen Variablen und Optionen. Der **[!UICONTROL PHP process states]**-Frame hilft zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
 
 ### [!UICONTROL PHP errors]
 
@@ -384,7 +384,7 @@ Der **[!UICONTROL Order transactions (default?)]** Rahmen sucht nach Transaktion
 * &#39;%Sie können dieses Problem beheben, indem Sie den Elasticsearch-Service in Ihrer Magento Cloud-Infrastruktur auf Version%&#39; als &#39;ver_err&#39; aktualisieren.
 * &#39;%cluster health status changed from \[YELLOW\] to \[RED\] (reason:%&#39; as &#39;yel_red&#39;
 * &#39;%Kein Speicherplatz mehr auf dem Gerät%&#39; als &#39;no_space&#39;
-* &#39;% konnte [SearchRequest=%&#39; nicht als &#39;failed_query&#39; ausführen
+* &#39;% konnte &lbrack;SearchRequest=%&#39; nicht als &#39;failed_query&#39; ausführen
 
 ## [!UICONTROL Cron view]
 

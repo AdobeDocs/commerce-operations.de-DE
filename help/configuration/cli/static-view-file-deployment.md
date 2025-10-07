@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für den [Produktionsmodus) ](../bootstrap/application-modes.md#production-mode) ist.
+Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für den [Produktionsmodus) &#x200B;](../bootstrap/application-modes.md#production-mode) ist.
 
 Der Begriff _statische Ansichtsdatei_ bezieht sich auf Folgendes:
 
@@ -31,11 +31,11 @@ Sie müssen statische Ansichtsdateien manuell unter Verwendung des in diesem The
 
 >[!WARNING]
 >
->_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layout-Elemente usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie haben verschiedene Möglichkeiten, generierte statische Ansichtsdateien zu bereinigen. Weitere Informationen finden [ unter „Bereinigen des Cache für statische ](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache)&quot;.
+>_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layout-Elemente usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie haben verschiedene Möglichkeiten, generierte statische Ansichtsdateien zu bereinigen. Weitere Informationen finden [&#x200B; unter „Bereinigen des Cache für statische &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache)&quot;.
 
 **Bereitstellen von statischen Ansichtsdateien**:
 
-1. Melden Sie sich beim Commerce-Server an oder [ Sie zum Dateisystembesitzer ](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Commerce-Server an oder [&#x200B; Sie zum Dateisystembesitzer &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Löschen Sie den Inhalt von `<magento_root>/pub/static` mit Ausnahme der `.htaccess`. Diese Datei nicht löschen.
 1. Führen Sie das Bereitstellungs-Tool für statische Ansichtsdateien `<magento_root>/bin/magento setup:static-content:deploy` aus.
 
@@ -171,7 +171,7 @@ ERROR: You need to install the Commerce application before running this utility.
 Führen Sie dazu folgende Schritte aus:
 
 1. Installieren Sie die Commerce-Software über [Befehlszeile](../../installation/composer.md).
-1. Melden Sie sich beim Anwendungsserver als Eigentümer des Dateisystems an oder [wechseln Sie ](../../installation/prerequisites/file-system/overview.md) zu diesem.
+1. Melden Sie sich beim Anwendungsserver als Eigentümer des Dateisystems an oder [wechseln Sie &#x200B;](../../installation/prerequisites/file-system/overview.md) zu diesem.
 1. Löschen Sie den Inhalt `<app_root>/pub/static` Verzeichnisses mit Ausnahme der `.htaccess`. Diese Datei nicht löschen.
 1. Statische Ansichtsdateien bereitstellen: `bin/magento setup:static-content:deploy`
 

@@ -49,7 +49,7 @@ Die `vcl_hit`-Unterroutine definiert, wie Varnish auf eine Anforderung von Objek
 
 ### Wenn das Commerce-Backend in Ordnung ist
 
-Wenn die Konsistenzprüfungen ergeben, dass das Commerce-Backend fehlerfrei ist, prüft Varnish, ob die Zeit in der Übergangsphase bleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, aber ein Händler kann den Wert über den Administrator festlegen, wie in [Konfigurieren von Commerce für die Verwendung von ](configure-varnish-commerce.md)) beschrieben. Wenn die Übergangsphase nicht abgelaufen ist, liefert Varnish den veralteten Inhalt und aktualisiert das -Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das -Objekt synchron vom Commerce-Backend.
+Wenn die Konsistenzprüfungen ergeben, dass das Commerce-Backend fehlerfrei ist, prüft Varnish, ob die Zeit in der Übergangsphase bleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, aber ein Händler kann den Wert über den Administrator festlegen, wie in [Konfigurieren von Commerce für die Verwendung von &#x200B;](configure-varnish-commerce.md)) beschrieben. Wenn die Übergangsphase nicht abgelaufen ist, liefert Varnish den veralteten Inhalt und aktualisiert das -Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das -Objekt synchron vom Commerce-Backend.
 
 Die maximale Zeitspanne, die Varnish für die Bereitstellung eines veralteten Objekts verwendet, ist die Summe aus der Übergangsphase (standardmäßig 300 Sekunden) und dem TTL-Wert (standardmäßig 86400 Sekunden).
 

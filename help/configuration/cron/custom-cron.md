@@ -18,8 +18,8 @@ Wenn Sie eine von Commerce bereitgestellte Cron-Gruppe verwenden, müssen Sie ke
 Das Commerce-Programm stellt die folgenden Cron-Gruppen bereit:
 
 - `default`, das die meisten Cron-Aufträge enthält
-- `index`, der &quot;[&quot; ](../cli/manage-indexers.md)
-- `consumers`, der die Nachrichtenwarteschlange ([) ](../cli/start-message-queues.md)
+- `index`, der &quot;[&quot; &#x200B;](../cli/manage-indexers.md)
+- `consumers`, der die Nachrichtenwarteschlange ([) &#x200B;](../cli/start-message-queues.md)
 - Diese Themen sind nur in Adobe Commerce verfügbar
-   - `staging`, der [Staging-bezogene) ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) ausführt
+   - `staging`, der [Staging-bezogene) &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) ausführt
    - `catalog_event` führt Aufgaben für Target- und Warenkorbregeln aus

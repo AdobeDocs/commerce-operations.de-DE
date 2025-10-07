@@ -51,11 +51,11 @@ Die Installations- und Verwendungsbefehle für Adobe Commerce On-Premise und Ado
 
 ### Installieren und Verwenden von QPT für Adobe Commerce On-Premise
 
-Weitere Informationen [ Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches finden Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)Software-Update-Handbuch > Patching“ in unserer Entwicklerdokumentation.
+Weitere Informationen [&#x200B; Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches finden Sie unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)Software-Update-Handbuch > Patching“ in unserer Entwicklerdokumentation.
 
 ### Installieren und Verwenden von QPT für Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [ Cloud-Infrastruktur finden Sie unter „Cloud ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) für Adobe Commerce Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
+Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [&#x200B; Cloud-Infrastruktur finden Sie unter „Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) für Adobe Commerce Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

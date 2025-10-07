@@ -21,7 +21,7 @@ In diesem Tutorial gehen wir von Folgendem aus:
 
 - Die Commerce-Anwendung wird in `/var/www/html/magento2` installiert
 - Benutzername und Kennwort für die Commerce-Datenbank sind beide `magento`
-- Sie führen alle Aktionen als [Dateisystemeigentümer“ ](../../installation/prerequisites/file-system/overview.md)
+- Sie führen alle Aktionen als [Dateisystemeigentümer“ &#x200B;](../../installation/prerequisites/file-system/overview.md)
 
 ## Schritt 1: Abrufen eines Beispielmoduls
 

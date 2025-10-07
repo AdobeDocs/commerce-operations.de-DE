@@ -44,7 +44,7 @@ Ausnahmen:
 
 ## Anzeigen des aktuellen Modus
 
-Die einfachste Möglichkeit, dies zu erreichen, besteht darin, diesen Befehl als [Dateisystembesitzer“ ](../../installation/prerequisites/file-system/overview.md). Wenn Sie geteiltes Hosting haben, ist dies der Benutzer, den Ihr Anbieter Ihnen zur Anmeldung beim Server gibt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, diesen Befehl als [Dateisystembesitzer“ &#x200B;](../../installation/prerequisites/file-system/overview.md). Wenn Sie geteiltes Hosting haben, ist dies der Benutzer, den Ihr Anbieter Ihnen zur Anmeldung beim Server gibt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
 
 Befehlsverwendung:
 

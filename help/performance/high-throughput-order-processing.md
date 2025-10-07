@@ -174,7 +174,7 @@ Die globale Einstellung _Inventar beim Laden des Warenkorbs aktivieren_ bestimmt
 
 Wenn diese Option deaktiviert ist, wird beim Hinzufügen eines Produkts zum Warenkorb keine Inventarprüfung durchgeführt. Wenn diese Bestandsprüfung übersprungen wird, können einige nicht vorrätige Szenarien andere Fehlertypen auslösen. Eine Bestandskontrolle _immer_ erfolgt beim Schritt der Bestellplatzierung, auch wenn diese deaktiviert ist.
 
-**Inventarprüfung beim Laden des Warenkorbs aktivieren** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** im Abschnitt Admin-Benutzeroberfläche `No`Stores **>** Konfiguration **>** Katalog **>** Inventar **>** Stock-Optionen **auf**. Siehe [Konfigurieren globaler ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) und [Kataloginventar](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) im _Benutzerhandbuch_.
+**Inventarprüfung beim Laden des Warenkorbs aktivieren** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** im Abschnitt Admin-Benutzeroberfläche `No`Stores **>** Konfiguration **>** Katalog **>** Inventar **>** Stock-Optionen **auf**. Siehe [Konfigurieren globaler &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) und [Kataloginventar](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) im _Benutzerhandbuch_.
 
 ## Lastausgleich
 

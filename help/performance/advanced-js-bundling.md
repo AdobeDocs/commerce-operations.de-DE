@@ -52,7 +52,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 Dieser Befehl führt alle synchronen [!DNL JavaScript]-Dateien in einer Datei zusammen. Das Aktivieren der Zusammenführung ohne gleichzeitiges Aktivieren der Bündelung ist nicht nützlich, da [!DNL Commerce] RequireJS verwendet. Wenn Sie das Bundling nicht aktivieren, führt [!DNL Commerce] nur RequireJS und dessen Konfiguration zusammen. Wenn Sie sowohl Bündelung als auch Zusammenführung aktivieren, erstellt [!DNL Commerce] eine einzelne [!DNL JavaScript]:
 
-![Zusammenführung realer ](../assets/performance/images/magentoMergingDevWorld.png)
+![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## Reale Render-Zeiten
 
@@ -66,7 +66,7 @@ Bei langsamer 3G-Konnektivität dauert es etwa 44 Sekunden, bis alle Pakete für
 
 Dasselbe gilt für die Zusammenführung der Bundles in einer Datei. Benutzer konnten immer noch etwa 42 Sekunden auf das erste Laden der Seite warten, wie hier gezeigt:
 
-![Zusammenführung realer ](../assets/performance/images/magentoMergingRealWorld.png)
+![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingRealWorld.png)
 
 Mit einem fortschrittlicheren Ansatz für die [!DNL JavaScript] können wir diese Ladezeiten verbessern.
 

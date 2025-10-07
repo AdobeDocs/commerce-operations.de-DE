@@ -47,4 +47,4 @@ ht-degree: 0%
 
 >[!TIP]
 >
->Der Lack erfordert keine Änderungen an der [!DNL Commerce]. Siehe [Konfigurieren und Verwenden von ](config-varnish.md).
+>Der Lack erfordert keine Änderungen an der [!DNL Commerce]. Siehe [Konfigurieren und Verwenden von &#x200B;](config-varnish.md).

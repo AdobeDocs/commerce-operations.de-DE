@@ -68,7 +68,7 @@ Mit diesem Befehl können Sie alle oder nur die angegebenen Cache-Typen aktivier
 
 >[!INFO]
 >
->Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Zuvor müssen Sie `<magento_root>/app/etc/env.php` manuell vom [Dateisystembesitzer“ überschreibbar ](../../installation/prerequisites/file-system/overview.md).
+>Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Zuvor müssen Sie `<magento_root>/app/etc/env.php` manuell vom [Dateisystembesitzer“ überschreibbar &#x200B;](../../installation/prerequisites/file-system/overview.md).
 
 Sie können Cache-Typen (auch als __ oder _Aktualisieren_ bezeichnet) entweder über die Befehlszeile oder über Admin bereinigen.
 
@@ -112,7 +112,7 @@ Beispielergebnis:
 
 >[!INFO]
 >
->Ab Version 2.3.4 speichert Commerce alle EAV-Systemattribute im Zwischenspeicher, sobald sie abgerufen werden. Das Caching von EAV-Attributen auf diese Weise verbessert die Leistung, da es die Anzahl der INSERT/SELECT-Anfragen an die DB verringert. Es erhöht jedoch auch die Cache-Netzwerkgröße. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie den `bin/magento config:set dev/caching/cache_user_defined_attributes 1`-Befehl ausführen. Im Entwicklermodus können Sie dies auch von der Admin aus tun[ ](../bootstrap/application-modes.md) indem Sie **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Cache User Defined Attributes** auf **Ja** einstellen.
+>Ab Version 2.3.4 speichert Commerce alle EAV-Systemattribute im Zwischenspeicher, sobald sie abgerufen werden. Das Caching von EAV-Attributen auf diese Weise verbessert die Leistung, da es die Anzahl der INSERT/SELECT-Anfragen an die DB verringert. Es erhöht jedoch auch die Cache-Netzwerkgröße. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie den `bin/magento config:set dev/caching/cache_user_defined_attributes 1`-Befehl ausführen. Im Entwicklermodus können Sie dies auch von der Admin aus tun[&#x200B; &#x200B;](../bootstrap/application-modes.md) indem Sie **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Cache User Defined Attributes** auf **Ja** einstellen.
 
 ## Cache-Typen bereinigen und leeren
 

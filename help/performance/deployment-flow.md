@@ -16,7 +16,7 @@ Der [!DNL Commerce] Produktionsbereitstellungsfluss hilft einem Store, die maxim
 
 ## Installieren von Abhängigkeiten
 
-Die `composer.json`- und `composer.lock` verwalten [!DNL Commerce] Abhängigkeiten und installieren die entsprechende Version für jedes Paket. Sie müssen Abhängigkeiten vor [Injections-Anweisungen für die Vorverarbeitung](#preprocess-dependency-injection-instructions) installieren, wenn Sie den [Autoloader“ aktualisieren ](#update-the-autoloader).
+Die `composer.json`- und `composer.lock` verwalten [!DNL Commerce] Abhängigkeiten und installieren die entsprechende Version für jedes Paket. Sie müssen Abhängigkeiten vor [Injections-Anweisungen für die Vorverarbeitung](#preprocess-dependency-injection-instructions) installieren, wenn Sie den [Autoloader“ aktualisieren &#x200B;](#update-the-autoloader).
 
 So installieren Sie [!DNL Commerce]:
 

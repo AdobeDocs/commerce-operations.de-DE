@@ -56,7 +56,7 @@ Adobe Commerce unterstützt Nachrichtenwarteschlangen, die über [!DNL RabbitMQ]
 
 >[!WARNING]
 >
->Die Funktion „Split Database[ wurde in ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](../configuration/storage/revert-split-database.md).
+>Die Funktion „Split Database[&#x200B; wurde in &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](../configuration/storage/revert-split-database.md).
 
 Mit Adobe Commerce können Sie skalierbaren Datenbankspeicher konfigurieren, um den Anforderungen eines wachsenden Unternehmens gerecht zu werden. Sie können drei separate Master-Datenbanken für bestimmte Domains einrichten:
 

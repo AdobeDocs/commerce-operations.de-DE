@@ -28,7 +28,7 @@ Weitere Vorteile:
 - Die CLI ist erweiterbar, sodass sich Drittanbieter-Entwickler damit „verbinden“ können. Dies hat den zusätzlichen Vorteil, dass die Lernkurve der Benutzer eliminiert wird.
 - Befehle für deaktivierte Module werden nicht angezeigt.
 
-In diesem Abschnitt wird die Konfiguration der Adobe Commerce-Software mithilfe der CLI beschrieben. Informationen zur Installation von Commerce finden [ unter &quot;](../../installation/overview.md)&quot; im _Installationshandbuch_.
+In diesem Abschnitt wird die Konfiguration der Adobe Commerce-Software mithilfe der CLI beschrieben. Informationen zur Installation von Commerce finden [&#x200B; unter &quot;](../../installation/overview.md)&quot; im _Installationshandbuch_.
 
 ## Voraussetzungen
 
