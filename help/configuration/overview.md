@@ -1,11 +1,11 @@
 ---
 title: Konfigurationshandbuch - Übersicht
-description: Erfahren Sie mehr über alle konfigurierbaren Funktionen und Dienste für Ihre Adobe Commerce-Anwendung.
+description: Erfahren Sie mehr über konfigurierbare Funktionen und Services für Ihr Adobe Commerce-Programm. Hier erfahren Sie, wie Sie Bereitstellung, Caching, Sicherheit und andere wichtige Einstellungen verwalten.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 9%
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 
@@ -25,8 +25,8 @@ Das _Configuration_-Handbuch enthält Referenzmaterial und begrenzte Anleitungen
 
 ## Commerce Admin-Konfiguration
 
-Es gibt entsprechende Themen im [Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/config/guide-overview) die Ihnen dabei helfen können, die Feldbeschreibungen für jede Konfigurationseinstellung in Commerce Admin zu verstehen.
+Es gibt entsprechende Themen im [Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) die Ihnen dabei helfen können, die Feldbeschreibungen für jede Konfigurationseinstellung in Commerce Admin zu verstehen.
 
 ## Cloud-Konfiguration
 
-[!DNL Commerce on cloud infrastructure] verwendet einen [Satz von Konfigurationsdateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=de) um die Funktionen und Services der Commerce-Anwendung in den gehosteten Umgebungen zu aktualisieren. Aufgrund der Einzigartigkeit der in Adobe Cloud gehosteten Umgebungen sollten Sie sich immer den [Cloud-Leitfaden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=de) für zusätzliche Konfigurationsanforderungen ansehen.
+[!DNL Commerce on cloud infrastructure] verwendet einen [Satz von Konfigurationsdateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) um die Funktionen und Services der Commerce-Anwendung in den gehosteten Umgebungen zu aktualisieren. Aufgrund der Einzigartigkeit der in Adobe Cloud gehosteten Umgebungen sollten Sie sich immer den [Cloud-Leitfaden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) für zusätzliche Konfigurationsanforderungen ansehen.

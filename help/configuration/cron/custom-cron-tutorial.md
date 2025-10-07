@@ -1,10 +1,10 @@
 ---
 title: Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer benutzerdefinierten Cron-Gruppe (Tutorial)
-description: Verwenden Sie dieses Schritt-für-Schritt-Tutorial, um einen benutzerdefinierten Cron-Auftrag zu erstellen.
+description: In diesem Schritt-für-Schritt-Tutorial für Adobe Commerce erfahren Sie, wie Sie benutzerdefinierte Cron-Aufträge erstellen. Erkunden Sie die Moduleinrichtung und die Cron-Gruppenkonfiguration.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---

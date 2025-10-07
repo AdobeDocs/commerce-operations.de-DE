@@ -1,10 +1,10 @@
 ---
 title: Erweiterte lokale Installation
-description: Erfahren Sie mehr über erweiterte Installationsszenarien für Adobe Commerce in Ihrer eigenen Infrastruktur.
+description: Erfahren Sie mehr über erweiterte Installationsszenarien für lokale Adobe Commerce-Bereitstellungen. Erfahren Sie mehr über komplexe Konfigurationen und benutzerdefinierte Einrichtungsoptionen.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Die folgenden Optionen geben die Benutzerinformationen und Anmeldeinformationen 
 
 Sie können den Admin-Benutzer während oder nach der Installation erstellen. Wenn Sie den Benutzer während der Installation erstellen, sind alle Variablen mit Administratorberechtigungen erforderlich. Siehe [Beispiel für localhost-Installationen](#sample-localhost-installations).
 
-Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | -Name | Wert | Erforderlich? |
 |--- |--- |--- |

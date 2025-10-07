@@ -1,10 +1,10 @@
 ---
 title: Konfigurationseinstellungen exportieren
-description: Exportieren Sie Adobe Commerce-Konfigurationseinstellungen in Konfigurationsdateien, die auch als Konfigurations-Dump bezeichnet werden.
+description: Erfahren Sie, wie Sie Adobe Commerce-Konfigurationseinstellungen mithilfe des Konfigurations-Dump in Dateien exportieren. Entdecken Sie Pipeline-Bereitstellung und Konfigurationsverwaltung.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Empfehlungen für die Entwicklungsumgebung
-description: Erfahren Sie mehr über Leistungsempfehlungen zum Einrichten Ihrer lokalen Adobe Commerce-Entwicklungsumgebung.
+description: Erfahren Sie mehr über die Empfehlungen für Entwicklungsumgebungen in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---

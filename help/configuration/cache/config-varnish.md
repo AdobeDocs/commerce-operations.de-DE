@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren und Verwenden von Lack
-description: Erfahren Sie, wie Varnish Dateien speichert und den HTTP-Traffic verbessert.
+description: Erfahren Sie, wie Sie das Zwischenspeichern von Lacken für Adobe Commerce konfigurieren und verwenden. Entdecken Sie Techniken zur HTTP-Beschleunigung, Dateispeicherung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---

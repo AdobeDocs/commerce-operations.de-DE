@@ -1,10 +1,10 @@
 ---
 title: Cron-Aufträge
-description: Erfahren Sie mehr über Cron-Gruppen und das Erstellen eines benutzerdefinierten Cron-Auftrags.
+description: Erfahren Sie mehr über Cron-Gruppen und das Erstellen benutzerdefinierter Cron-Aufträge in Adobe Commerce. Erkunden Sie die Einrichtung geplanter Aufgaben und die Cron-Gruppenkonfiguration.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -21,5 +21,5 @@ Das Commerce-Programm stellt die folgenden Cron-Gruppen bereit:
 - `index`, der &quot;[&quot; ](../cli/manage-indexers.md)
 - `consumers`, der die Nachrichtenwarteschlange ([) ](../cli/start-message-queues.md)
 - Diese Themen sind nur in Adobe Commerce verfügbar
-   - `staging`, der [Staging-bezogene) ](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/staging/content-staging) ausführt
+   - `staging`, der [Staging-bezogene) ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) ausführt
    - `catalog_event` führt Aufgaben für Target- und Warenkorbregeln aus

@@ -5,9 +5,9 @@ feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,18 +33,18 @@ Damit können Sie:
 
 Im Folgenden finden Sie ein Beispiel für die Statustabelle, die Sie erhalten können, um die verfügbaren Patches anzuzeigen:
 
-![Magento_PATCHES_LIST](/help/assets/tools/status_table.png)
+![Quality Patches Tool-Statustabelle mit verfügbaren Patches und deren Installationsstatus](/help/assets/tools/status_table.png)
 
 Das Tool soll Ihnen die Möglichkeit geben, selbst Patches für Probleme zu erstellen, die möglicherweise bei Adobe Commerce auftreten, oder einfach Patches anzuwenden, die vom Adobe Commerce-Support vorgeschlagen werden.
 
 >[!NOTE]
 >
->QPT ist nur für qualitativ hochwertige Patches. Sicherheits-Patches finden Sie in den [Versionshinweisen für Adobe Commerce und Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=de).
+>QPT ist nur für qualitativ hochwertige Patches. Sicherheits-Patches finden Sie in den [Versionshinweisen für Adobe Commerce und Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 ## In der [!DNL Quality Patches Tool] verfügbare Patches
 
 In diesem Abschnitt der Adobe Commerce Support Knowledge Base finden Sie detaillierte Beschreibungen der Probleme, die durch QPT-Patches gelöst und nach QPT-Release-Version gruppiert wurden.
-Sie können auch eine Liste der verfügbaren QPT-Patches anzeigen und die Komponente mithilfe der dynamisch generierten Tabelle auf der Seite [[!DNL Quality Patches Tool]: Patches suchen ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) unserer Support-Wissensdatenbank filtern.
+Sie können auch eine Liste der verfügbaren QPT-Patches anzeigen und die Komponente mithilfe der dynamisch generierten Tabelle auf der Seite [[!DNL Quality Patches Tool]: Patches suchen ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) unserer Support-Wissensdatenbank filtern.
 
 ## Installieren und Verwenden der [!DNL Quality Patches Tool]
 
@@ -56,8 +56,8 @@ Siehe [Commerce > Tools > Nutzung](../usage.md) in unserer Entwicklerdokumentati
 
 ### Installieren und Verwenden von QPT für Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf Commerce in Cloud[Infrastrukturen finden Sie in unserer Entwicklerdokumentation unter ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de)Handbuch zu Adobe Commerce in Cloud-Infrastrukturen > Patches anwenden .
+Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf Commerce in Cloud[Infrastrukturen finden Sie in unserer Entwicklerdokumentation unter ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)Handbuch zu Adobe Commerce in Cloud-Infrastrukturen > Patches anwenden .
 
 ## Verwandtes Lesen
 
-* [[!DNL Quality Patches Tool] Versionshinweise](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=de) in unserer Entwicklerdokumentation.
+* [[!DNL Quality Patches Tool] Versionshinweise](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) in unserer Entwicklerdokumentation.

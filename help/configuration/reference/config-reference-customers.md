@@ -1,11 +1,11 @@
 ---
 title: Kunden-Konfigurationspfade - Referenz
-description: Hier finden Sie eine Liste der Konfigurationswerte für Kunden.
+description: Erfahren Sie mehr über Kundenkonfigurationspfade und -werte in den Adobe Commerce Admin-Einstellungen. Entdecken Sie die Optionen für Newsletter, Kontoverwaltung und Kundendienst.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---

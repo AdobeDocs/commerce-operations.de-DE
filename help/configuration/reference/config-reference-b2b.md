@@ -1,11 +1,11 @@
 ---
 title: Referenz zu B2B-Erweiterungskonfigurationspfaden
-description: Hier finden Sie eine Liste der B2B-bezogenen Konfigurationswerte.
+description: Erfahren Sie mehr über die Konfigurationspfade und Werte von B2B-Erweiterungen für Adobe Commerce. Entdecken Sie Unternehmens-, Zahlungs-, Angebots- und B2B-spezifische Konfigurationsoptionen.
 feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '849'
 ht-degree: 0%
 
 ---

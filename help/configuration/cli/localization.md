@@ -1,10 +1,10 @@
 ---
 title: Übersetzungswörterbücher und Sprachpakete
-description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete erstellen.
+description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete für Adobe Commerce erstellen. Hier erfahren Sie mehr über Lokalisierung und die Einrichtung mehrsprachiger Stores.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1441'
 ht-degree: 0%
 
 ---
@@ -316,7 +316,7 @@ Generieren Sie ähnlich wie im vorherigen Beispiel eine CSV-Datei, geben Sie jed
 
 [Übersetzungen - Übersicht]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [Übersetzungswörterbuch]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[Konfigurieren der Übersetzungen]: https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize
+[Konfigurieren der Übersetzungen]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
 [Weitere Informationen zu Sprachpaketen]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

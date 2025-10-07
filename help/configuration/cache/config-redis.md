@@ -1,11 +1,11 @@
 ---
 title: Konfigurieren von Redis
-description: Verschaffen Sie sich einen Überblick über die Redis-Funktionen und starten Sie Ihre Redis-Konfiguration.
+description: Erfahren Sie, wie Sie die Redis-Zwischenspeicherung für die Leistungsoptimierung von Adobe Commerce konfigurieren. Entdecken Sie Funktionen, Einrichtungsschritte und Best Practices für die Konfiguration.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---

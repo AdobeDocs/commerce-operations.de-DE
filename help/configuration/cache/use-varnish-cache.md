@@ -1,11 +1,11 @@
 ---
 title: Cache-Löschen mit Lack
-description: Erfahren Sie, wie das Löschen von Caches mit Varnish funktioniert und wie Sie es als Web-Caching-Beschleuniger für das Adobe Commerce-Programm verwenden.
+description: Erfahren Sie, wie das Löschen von Caches mit dem Web-Caching-Beschleuniger von Varnish für Adobe Commerce funktioniert. Entdecken Sie Methoden zur Cache-Verwaltung und -Optimierung.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Nachdem Sie Varnish für die Verwendung mit Commerce installiert und konfigurier
 
 ## Konfigurieren von Commerce zum Löschen von Lack
 
-Commerce löscht Varnish-Hosts, nachdem Sie Varnish-Hosts mit dem Befehl [`magento setup:config:set`](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) konfiguriert haben.
+Commerce löscht Varnish-Hosts, nachdem Sie Varnish-Hosts mit dem Befehl [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) konfiguriert haben.
 
 Sie können den optionalen Parameter `--http-cache-hosts` verwenden, um eine kommagetrennte Liste von Lack-Hosts und Listener-Ports anzugeben. Konfigurieren Sie alle Lack-Hosts, unabhängig davon, ob Sie einen oder mehrere haben. (Hosts dürfen nicht durch Leerzeichen getrennt werden.)
 

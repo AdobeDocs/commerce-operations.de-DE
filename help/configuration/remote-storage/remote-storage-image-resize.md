@@ -3,9 +3,9 @@ title: Konfigurieren der Bildgröße für den Remote-Speicher
 description: Optimieren Sie die Festplattenressourcen durch die Konfiguration der Server-seitigen Bildgröße.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Standardmäßig unterstützt Adobe Commerce das Ändern der Bildgröße in der A
 
 Das folgende Diagramm zeigt, wie Nginx Bilder im Cache abruft, in der Größe verändert und speichert. Die Größe wird durch die in der URL enthaltenen Parameter wie Höhe und Breite bestimmt.
 
-![Bildgröße](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![Nginx-Konfiguration für Remote-Speicher-Image-Größenanpassung mit Server-Blockeinstellungen](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

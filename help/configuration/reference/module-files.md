@@ -1,10 +1,10 @@
 ---
 title: Modulkonfigurationsdateien
-description: Erfahren Sie, wie Sie ein Modul mithilfe von Konfigurationstypen anpassen können.
+description: Erfahren Sie, wie Sie Module mithilfe von Konfigurationstypen in Adobe Commerce anpassen können. Best Practices für die Verwaltung von Konfigurationsdateien und die Modulanpassung.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ In der folgenden Tabelle sind die einzelnen Konfigurationstypen und das Commerce
 | `module.xml` | Definiert Modulkonfigurationsdaten und Soft-Abhängigkeiten | primär, global | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
 | `mview.xml` | [MView-Konfiguration](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer/#mview-configuration) | primär, global | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
 | `payment.xml` | Konfiguration des Zahlungsmoduls | primär, global | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
-| `persistent.xml` | Konfigurationsdatei für [&#128279;](https://developer.adobe.com/commerce/php/module-reference/module-persistent/)Magento_Persistent | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
+| `persistent.xml` | Konfigurationsdatei für [](https://developer.adobe.com/commerce/php/module-reference/module-persistent/)Magento_Persistent | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | PDF-Einstellungen | global | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | Bietet eine Konfiguration der Produktoptionen | global | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | Definiert den Produkttyp | global | [\Magento\Catalog\Model\ProductTypes\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |

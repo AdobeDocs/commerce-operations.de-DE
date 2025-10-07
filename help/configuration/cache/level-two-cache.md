@@ -1,11 +1,11 @@
 ---
 title: L2-Cache-Konfiguration
-description: Erfahren Sie, wie Sie den L2-Cache konfigurieren.
+description: Erfahren Sie, wie Sie den L2-Cache für die Leistungsoptimierung von Adobe Commerce konfigurieren. Erfahren Sie mehr über Einrichtungsschritte und Techniken zur Reduzierung des Netzwerk-Traffics.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Commerce speichert die Hash-Datenversion in Redis, wobei das Suffix &quot;:hash&
 
 >[!INFO]
 >
->Für Adobe Commerce in Cloud-Infrastrukturen können Sie [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) für die L2-Cache-Konfiguration verwenden.
+>Für Adobe Commerce in Cloud-Infrastrukturen können Sie [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) für die L2-Cache-Konfiguration verwenden.
 
 ## Konfigurationsbeispiel
 

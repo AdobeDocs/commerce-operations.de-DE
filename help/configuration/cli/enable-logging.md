@@ -1,11 +1,11 @@
 ---
 title: Protokollierung aktivieren
-description: Erfahren Sie, wie Sie Protokollierungstypen aktivieren und deaktivieren.
+description: Erfahren Sie, wie Sie verschiedene Arten der Protokollierung in Adobe Commerce aktivieren und deaktivieren. Entdecken Sie Protokollierungskonfigurations- und -verwaltungsmethoden.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---

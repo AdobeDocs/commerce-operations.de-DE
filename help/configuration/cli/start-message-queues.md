@@ -1,10 +1,10 @@
 ---
 title: Nachrichtenwarteschlangen-Verbraucher starten
-description: Erfahren Sie, wie Sie einen Nachrichtenwarteschlangen-Verbraucher starten.
+description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen-Verbraucher für asynchrone Vorgänge in Adobe Commerce starten. Erfahren Sie mehr über die Einrichtung von Verbraucherverwaltung und B2B-Funktionen.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: cdd752532d17e1168e0aa7d354ec283089d98be3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---

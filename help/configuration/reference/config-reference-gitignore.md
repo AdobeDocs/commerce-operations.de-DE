@@ -1,10 +1,10 @@
 ---
 title: .gitignore-Referenz
-description: Erfahren Sie, wie Sie eine Datei hinzufügen, die in der Ignorieren-Liste enthalten ist.
+description: Erfahren Sie, wie Sie Dateien zur .gitignore-Liste für Adobe Commerce-Projekte hinzufügen. Best Practices für Versionskontrolle und Dateiausschluss.
 exl-id: 7c53b50a-7bdf-433b-bebb-0129f792a1a4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '60'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Allgemeine Befehle
-description: Sehen Sie sich ein Beispiel für gängige Commerce-CLI-Befehle und -Verwendungen an.
+description: Erfahren Sie mehr über gängige Adobe Commerce-CLI-Befehle und deren Anwendungsbeispiele. Entdecken Sie wichtige Befehlszeilen-Tools für Entwicklung und Administration.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 3d0e6d6517e28a32816bfe2b328edfba97523740
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---

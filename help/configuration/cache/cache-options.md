@@ -1,11 +1,11 @@
 ---
 title: Cache-Optionen
-description: Konfigurieren Sie den Zugriff auf Cache-Speicher auf niedriger Ebene.
+description: Erfahren Sie mehr über Cache-Optionen auf niedriger Ebene und die Speicherkonfiguration in Adobe Commerce. Entdecken Sie das Frontend-, Backend- und Speicher-Setup für Redis und Datenbanken.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---

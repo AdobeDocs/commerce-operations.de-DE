@@ -1,10 +1,10 @@
 ---
 title: Ausführen der Support-Dienstprogramme
-description: Fehlerbehebung bei Ihrem Commerce-Projekt mit dem integrierten Dienstprogramm für die Kundenunterstützung.
+description: Erfahren Sie, wie Sie Support-Dienstprogramme zur Fehlerbehebung in Ihrem Adobe Commerce-Projekt ausführen. Entdecken Sie integrierte Diagnose- und Support-Tools.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit den Adobe Commerce-Support-Dienstprogrammen (auch als [Datenerfassung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet) können Benutzende Informationen zur Fehlerbehebung in Ihrem System sammeln, die von unserem Support-Team verwendet werden können.
+Mit den Adobe Commerce-Support-Dienstprogrammen (auch als [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet) können Benutzende Informationen zur Fehlerbehebung in Ihrem System sammeln, die von unserem Support-Team verwendet werden können.
 
 Adobe Commerce verwendet diese Sicherungskopien, auch als &quot;_&quot; bezeichnet_, um Probleme zu analysieren, die Zugriff auf Ihren Code erfordern. Es folgt ein typisches Szenario:
 

@@ -1,10 +1,10 @@
 ---
 title: Einstellung des Betriebsmodus
-description: Informationen zum Festlegen der Adobe Commerce-Betriebsmodi.
+description: Erfahren Sie, wie Sie Adobe Commerce-Betriebsmodi zwischen Entwickler- und Produktionsmodus festlegen. Erfahren Sie mehr über Befehle zum Moduswechsel und die Auswirkungen auf die Sicherheit.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---

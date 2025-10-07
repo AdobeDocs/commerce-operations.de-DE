@@ -1,8 +1,8 @@
 ---
 title: GraphQL-Anwendungsserver
-description: Befolgen Sie diese Anweisungen, um den GraphQL-Anwendungsserver in Ihrer Adobe Commerce-Bereitstellung zu aktivieren.
+description: Erfahren Sie mehr über den GraphQL-Anwendungsserver in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: ed46f48472a51db17e1c3ade9bfe3ab134098548
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
 source-wordcount: '2212'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Der Commerce GraphQL-Anwendungsserver ermöglicht es Adobe Commerce, den Status zwischen Commerce GraphQL-API-Anfragen beizubehalten. GraphQL Application Server, der auf der Swoole-Erweiterung basiert, fungiert als Prozess mit Worker-Threads, die die Anforderungsverarbeitung verarbeiten. Durch die Beibehaltung des Status eines Bootstrapping-Programms bei GraphQL-API-Anfragen verbessert GraphQL Application Server die Anforderungsverarbeitung und die Gesamtproduktleistung. API-Anfragen werden deutlich effizienter.
 
-Der GraphQL-Anwendungs-Server ist nur für Adobe Commerce verfügbar. Es ist nicht für Magento Open Source verfügbar. Bei Cloud Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), um den GraphQL-Anwendungsserver zu aktivieren.
+Der GraphQL-Anwendungs-Server ist nur für Adobe Commerce verfügbar. Es ist nicht für Magento Open Source verfügbar. Bei Cloud Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), um den GraphQL-Anwendungsserver zu aktivieren.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Die Ausführung von GraphQL Application Server erfordert Folgendes:
 
 ### Cloud-Projekte
 
-Adobe Commerce in Cloud-Infrastrukturprojekten enthält standardmäßig die Swoole-Erweiterung. Sie können [ in ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) Eigenschaft &quot;`runtime`&quot; der `.magento.app.yaml`-Datei aktivieren. Beispiel:
+Adobe Commerce in Cloud-Infrastrukturprojekten enthält standardmäßig die Swoole-Erweiterung. Sie können [ in ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) Eigenschaft &quot;`runtime`&quot; der `.magento.app.yaml`-Datei aktivieren. Beispiel:
 
 ```yaml
 runtime:
@@ -273,7 +273,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie den GraphQL-Anwendungsserver i
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass alle benutzerdefinierten Einstellungen in Ihrer Root-`.magento.app.yaml`-Datei ordnungsgemäß in die `application-server/.magento/.magento.app.yaml`-Datei migriert werden. Nachdem die `application-server/.magento/.magento.app.yaml` Datei zu Ihrem Projekt hinzugefügt wurde, sollten Sie sie zusätzlich zur Stammdatei `.magento.app.yaml` beibehalten. Wenn Sie z. B. [den RabbitMQ-Service konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) oder [Web-Eigenschaften verwalten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) sollten Sie `application-server/.magento/.magento.app.yaml` dieselbe Konfiguration hinzufügen.
+>Stellen Sie sicher, dass alle benutzerdefinierten Einstellungen in Ihrer Root-`.magento.app.yaml`-Datei ordnungsgemäß in die `application-server/.magento/.magento.app.yaml`-Datei migriert werden. Nachdem die `application-server/.magento/.magento.app.yaml` Datei zu Ihrem Projekt hinzugefügt wurde, sollten Sie sie zusätzlich zur Stammdatei `.magento.app.yaml` beibehalten. Wenn Sie z. B. [den RabbitMQ-Service konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) oder [Web-Eigenschaften verwalten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) sollten Sie `application-server/.magento/.magento.app.yaml` dieselbe Konfiguration hinzufügen.
 
 ### Überprüfen der Aktivierung in Cloud-Projekten
 

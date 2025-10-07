@@ -1,10 +1,10 @@
 ---
 title: Festlegen von Konfigurationswerten
-description: Erfahren Sie, wie Sie Konfigurationswerte festlegen und Werte ändern, die in der Admin gesperrt sind.
+description: Erfahren Sie, wie Sie in Adobe Commerce Konfigurationswerte festlegen und gesperrte Admin-Werte ändern. Erfahren Sie mehr über erweiterte Konfigurationsbefehle und -techniken.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ Hierbei gilt
 
 >[!INFO]
 >
->Der Befehl `bin/magento config:show` zeigt die Werte aller [verschlüsselten Werte](../reference/config-reference-sens.md) als eine Reihe von Sternchen an: `**&#x200B;**&#x200B;**`.
+>Der Befehl `bin/magento config:show` zeigt die Werte aller [verschlüsselten Werte](../reference/config-reference-sens.md) als eine Reihe von Sternchen an: `******`.
 
 ### Beispiele
 

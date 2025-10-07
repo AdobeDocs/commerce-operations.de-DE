@@ -1,10 +1,10 @@
 ---
 title: config.php-Referenz
-description: Eine Werteliste finden Sie in der Datei config.php.
+description: Erfahren Sie mehr über config.php-Dateiwerte und Abschnitte für die Adobe Commerce-Konfiguration. Entdecken Sie Module, Bereiche, Systemeinstellungen und Best Practices für die Bereitstellung.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -124,6 +124,6 @@ Weitere Informationen zu [Designs].
 
 <!-- link definitions -->
 
-[Module]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings
+[Module]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
 [Designs]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

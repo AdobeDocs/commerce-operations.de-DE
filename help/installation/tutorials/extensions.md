@@ -2,9 +2,9 @@
 title: Erweiterungen von Drittanbietern verwalten
 description: Führen Sie die folgenden Schritte aus, um Adobe Commerce Extensions zu installieren, zu aktivieren, zu aktualisieren und zu deinstallieren.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Zu den Erweiterungen gehören:
 - Designs (Ändern des Erscheinungsbilds Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Lokalisieren der Storefront und Admin)
 
-In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Sie können dieselbe Vorgehensweise verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie dazu die `composer.json`-Datei der Erweiterung und notieren Sie sich die Werte für `"name"` und `"version"`.
 
@@ -72,7 +72,7 @@ So rufen Sie den Namen und die Version der Erweiterung „Composer“ aus Commer
 
 1. Suchen Sie die Erweiterung, die Sie installieren möchten, und notieren Sie sich den Komponentennamen und die Version.
 
-   ![Technische Details zeigen den Namen des Erstellers der Erweiterung an](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Technische Details der Erweiterung mit dem Namen des Composer-Pakets für die Installation](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >

@@ -1,11 +1,11 @@
 ---
 title: Speicherort der Sitzung
-description: Erfahren Sie, wo die Sitzungsdateien gespeichert werden.
+description: Erfahren Sie mehr über Sitzungsspeicherorte und Dateiverwaltung in Adobe Commerce. Entdecken Sie Speicherlogik- und Konfigurationsoptionen.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Als Benutzer mit `root` Berechtigungen öffnen Sie Ihre `php.ini` und suchen Sie
 
 ## Sitzungsgröße verwalten
 
-Siehe [Sitzungsverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-session-management) im _Benutzerhandbuch_.
+Siehe [Sitzungsverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) im _Benutzerhandbuch_.
 
 ## Konfiguration der automatischen Bereinigung
 

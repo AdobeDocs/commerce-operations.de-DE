@@ -1,11 +1,11 @@
 ---
 title: Logger-Oberfläche
-description: Erste Schritte mit der Logger-Oberfläche.
+description: Erfahren Sie, wie Sie die Protokollierungsschnittstelle in Adobe Commerce für die benutzerdefinierte Protokollierung verwenden. Lernen Sie die PSR-3-Implementierung und -Protokollfunktionen kennen.
 feature: Configuration, Logs
 exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '125'
 ht-degree: 0%
 
 ---

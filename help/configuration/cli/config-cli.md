@@ -1,10 +1,10 @@
 ---
 title: Befehlszeilen-Tool
-description: Verwenden Sie das Befehlszeilen-Tool von Commerce, um Installations- und Konfigurationsaufgaben auszuführen.
+description: Erfahren Sie, wie Sie das Adobe Commerce-Befehlszeilen-Tool für Installations- und Konfigurationsaufgaben verwenden. CLI-Befehle und administrative Funktionen
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---

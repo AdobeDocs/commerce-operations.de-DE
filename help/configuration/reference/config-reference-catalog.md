@@ -1,11 +1,11 @@
 ---
 title: Referenz zu Katalogkonfigurationspfaden
-description: Anzeigen einer Liste der Katalogkonfigurationswerte.
+description: Erfahren Sie mehr über Katalogkonfigurationspfade und -werte in den Adobe Commerce Admin-Einstellungen. Entdecken Sie die Konfigurationsoptionen für Produkt-, Kategorie- und Katalogverwaltung.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Diese Konfigurationswerte sind in der Admin-Liste unter **Stores** > Einstellung
 | -Name | Konfigurationspfad | Nur Commerce? |
 |--------------|--------------|--------------|
 | Maske für SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Maske für Meta-Titel | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Titelmaske für Meta | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Maske für Meta-Schlüsselwörter | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Maske für Meta-Beschreibung | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Maske für Meta Beschreibung | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Listenmodus | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Produkte pro Seite auf dem Raster Zulässige Werte | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Standardwert für Produkte pro Seite im Raster | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -81,7 +81,7 @@ Diese Konfigurationswerte sind in der Admin-Liste unter **Stores** > Einstellung
 | Dauerhafte Umleitung für URLs erstellen, wenn URL-Schlüssel geändert wurde | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seitentitel-Trennzeichen | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verwenden eines kanonischen Link-Meta-Tags für Kategorien | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Verwenden eines kanonischen Link-Meta-Tags für Produkte | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Verwenden des kanonischen Link-Meta-Tags für Produkte | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Aktivieren | `catalog/magento_catalogpermissions/enabled` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Browserkategorie zulassen | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
 | Kundengruppen | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Nur Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -151,7 +151,7 @@ Diese Konfigurationswerte sind in der Admin unter **Stores** > Einstellungen > *
 
 ## Visual Merchandiser Paths
 
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 Diese Konfigurationswerte sind in der Admin unter **Stores** > Einstellungen > **Konfiguration** > **Katalog** > **Visual Merchandiser** verfügbar.
 

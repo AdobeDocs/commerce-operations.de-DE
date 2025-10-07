@@ -1,12 +1,12 @@
 ---
 title: ESI-Block Lack
-description: Erfahren Sie mehr über Edge Side Includes und wie Sie sie zum Einbetten von Web-Seiten verwenden können.
+description: Erfahren Sie mehr über Varnish Edge Side Includes (ESI) und darüber, wie Sie Web-Seiten für Adobe Commerce einbetten. Entdecken Sie die Implementierung und Optimierung von ESI-Blöcken.
 badge: label="Ein Beitrag von Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---

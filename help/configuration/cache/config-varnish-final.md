@@ -1,11 +1,11 @@
 ---
 title: Endprüfung
-description: Stellen Sie sicher, dass Ihre Lackkonfiguration ordnungsgemäß für die Verwendung mit dem Adobe Commerce-Programm eingerichtet ist.
+description: Erfahren Sie, wie Sie Ihre Lackkonfiguration mit Adobe Commerce abschließend überprüfen können. Entdecken Sie Testschritte und Techniken zur Fehlerbehebung.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -83,4 +83,4 @@ Stellen Sie sicher, dass das `<magento_root>/var/page_cache` leer ist:
 
 >[!TIP]
 >
->Wenn Sie auf 503-Fehler (Backend-Abruf fehlgeschlagen) stoßen, finden Sie weitere Informationen unter [Fehlerbehebung für 503-Fehler (Dienst nicht verfügbar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=de) im _Adobe Commerce-Hilfezentrum_.
+>Wenn Sie auf 503-Fehler (Backend-Abruf fehlgeschlagen) stoßen, finden Sie weitere Informationen unter [Fehlerbehebung für 503-Fehler (Dienst nicht verfügbar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) im _Adobe Commerce-Hilfezentrum_.

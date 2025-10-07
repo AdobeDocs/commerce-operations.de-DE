@@ -1,10 +1,10 @@
 ---
 title: Wie greife ich auf zu [!DNL Site-Wide Analysis Tool]
-description: Erfahren Sie, wie Sie auf zugreifen [!DNL Site-Wide Analysis Tool]
+description: Erfahren Sie, wie Sie über Ihr Adobe Commerce-Admin-Bedienfeld auf das Dashboard des Site-Wide Analysis Tool zugreifen können. Entdecken Sie Benutzerberechtigungen und Rollenanforderungen.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 2896442432158456698cac2d566cf0f61b5d7847
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Sie können über die [!DNL Site-Wide Analysis Tool] Ihres Stores auf das [!UICONTROL Admin Panel]-Dashboard zugreifen.
 
-Der [!DNL Site-Wide Analysis Tool]-Service ist im [Produktionsmodus](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/developer-tools#operation-modes) für [!UICONTROL Admin] Benutzer mit der Berechtigung zum Zugriff auf [Rollenressourcen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles) verfügbar.
+Der [!DNL Site-Wide Analysis Tool]-Service ist im [Produktionsmodus](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) für [!UICONTROL Admin] Benutzer mit der Berechtigung zum Zugriff auf [Rollenressourcen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) verfügbar.
 
 >[!NOTE]
 >
@@ -26,13 +26,13 @@ Der [!DNL Site-Wide Analysis Tool]-Service ist im [Produktionsmodus](https://exp
 >[!NOTE]
 >
 >Ihr Konto sollte berechtigt sein, zu **[!DNL Support Permissions]**, um auf die [!DNL Site-Wide Analysis Tool Dashboard] zugreifen zu können.
->&#x200B;>Weitere Informationen finden Sie unter [Freigeben eines  [!DNL Commerce] -Kontos](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html?lang=de) in unserem Benutzerhandbuch.
+>>Weitere Informationen finden Sie unter [Freigeben eines  [!DNL Commerce] -Kontos](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-share.html) in unserem Benutzerhandbuch.
 
 ## Anmelden bei [!DNL Site-Wide Analysis Tool Dashboard] vom [!UICONTROL Admin Panel] Ihres Stores
 
 ### Schritt 1: Berechtigungen überprüfen
 
-Vergewissern Sie sich, dass das [!UICONTROL Admin] Benutzerkonto über die Berechtigung verfügt, über die [!DNL Site-Wide Analysis Tool]zugewiesene Benutzerrolle[ auf die ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles) zuzugreifen.
+Vergewissern Sie sich, dass das [!UICONTROL Admin] Benutzerkonto über die Berechtigung verfügt, über die [!DNL Site-Wide Analysis Tool]zugewiesene Benutzerrolle[ auf die ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) zuzugreifen.
 
 >[!IMPORTANT]
 >
@@ -51,7 +51,7 @@ Gehen Sie für die benutzerdefinierte Rolle, die Zugriff [!DNL Site-Wide Analysi
 
 >[!NOTE]
 >
->Wenn Sie sich vergewissert haben, dass das Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] verfügt und der/die Benutzende beim Versuch, über die [!UICONTROL Admin] auf das Tool zuzugreifen, die Fehlermeldung 403 erhält, könnte für Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Das [!DNL Site-Wide Analysis Tool]-Dashboard wird NICHT unterstützt, wenn die HTTP-Authentifizierung aktiviert ist. Weitere Informationen zur Lösung dieses Problems finden Sie in unserem [Support-Artikel](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Wenn Sie sich vergewissert haben, dass das Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] verfügt und der/die Benutzende beim Versuch, über die [!UICONTROL Admin] auf das Tool zuzugreifen, die Fehlermeldung 403 erhält, könnte für Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Das [!DNL Site-Wide Analysis Tool]-Dashboard wird NICHT unterstützt, wenn die HTTP-Authentifizierung aktiviert ist. Weitere Informationen zur Lösung dieses Problems finden Sie in unserem [Support-Artikel](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
 
 ### Schritt 2: [!DNL Site-Wide Analysis Tool]
 

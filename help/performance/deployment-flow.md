@@ -1,11 +1,11 @@
 ---
 title: Bereitstellungsfluss
-description: Erfahren Sie mehr über die Schritte, die zur Bereitstellung von Adobe Commerce in einer Produktionsumgebung erforderlich sind.
+description: Erfahren Sie mehr über den Bereitstellungsprozess für Adobe Commerce-Produktionsumgebungen. Erfahren Sie mehr über die Schritte, die für maximale Leistung und Zuverlässigkeit erforderlich sind.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
