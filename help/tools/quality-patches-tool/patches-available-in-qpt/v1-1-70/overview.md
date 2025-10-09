@@ -3,9 +3,9 @@ title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.70'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.70  [!DNL Quality Patches Tool]  Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
-source-git-commit: 19e32289f4a7954d070370e065bc683d5f9b54e5
+source-git-commit: cafb2df4ca11dd74d7dfb461e8130704f52f6f27
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -22,5 +22,6 @@ QPT v1.1.70 enthält die folgenden Patches:
 1. **ACSD-67166**: Beim Laden des Angebots in der Storefront werden doppelte `cataloginventory_stock_status` ausgeführt.
 1. **[ACSD-67030](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67030.md)**: Die Zuweisung einfacher Produkte zum konfigurierbaren Status wird aufgehoben, wenn sie von einem Administrator mit eingeschränkter Rolle bearbeitet werden.
 1. **ACSD-67289**: Regulärer Preis wird nicht angezeigt, wenn ein Sonderpreis angewendet wird.
+1. **AC-15210**: Migration der USPS-Integration von den Web-Tools-APIs zu den neuen RESTful-USPS-APIs.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
