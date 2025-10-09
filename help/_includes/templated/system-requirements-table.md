@@ -1,7 +1,7 @@
 ---
-source-git-commit: 308ce0ac15ca3fecddf81a8e6bb3b30d359c6b2c
+source-git-commit: ce5222dce195927ad011df121b11707a57071c66
 workflow-type: tm+mt
-source-wordcount: '1330'
+source-wordcount: '1334'
 ht-degree: 48%
 
 ---
@@ -122,7 +122,7 @@ ht-degree: 48%
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
-          —
+          ✔️
       </td>
       <td>
           ✔️
@@ -303,7 +303,7 @@ ht-degree: 48%
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
-          —
+          ✔️
       </td>
       <td>
           ✔️
@@ -1397,7 +1397,7 @@ ht-degree: 48%
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
-          —
+          ✔️
       </td>
       <td>
           ✔️
@@ -2214,7 +2214,7 @@ ht-degree: 48%
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
-          —
+          ✔️
       </td>
       <td>
           ✔️
