@@ -18,7 +18,7 @@ Dieser Zeitplan enthält Termine für die Ankündigung der Veröffentlichung von
 
 >[!NOTE]
 >
->Weitere Informationen zu neuen Funktionen, zur Cloud-Infrastruktur und zu Erweiterbarkeitsversionen finden Sie in der [Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all)-Versionsdokumentation.
+>Weitere Informationen zu neuen Funktionen, zur Cloud-Infrastruktur und zu Erweiterbarkeitsversionen finden Sie in der [Adobe Commerce Services](https://experienceleague.adobe.com/de/docs/commerce/user-guides/release-information/release-notes-all)-Versionsdokumentation.
 
 Zusätzlich zu den auf dieser Seite aufgelisteten geplanten Qualitäts-, Sicherheits- und Beta-Patches bietet Adobe über das [Quality Patches Tool](versioning-policy.md#individual-patch) Zugriff auf [einzelne Patches](../tools/quality-patches-tool/usage.md). Mit dem Tool können Sie allgemeine Informationen über alle einzelnen Patches, die für die installierte Version von Adobe Commerce verfügbar sind, anwenden, zurücksetzen und anzeigen.
 
