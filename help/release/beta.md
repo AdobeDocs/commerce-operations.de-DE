@@ -30,9 +30,9 @@ In den folgenden Abschnitten finden Sie eine Liste der aktiven Beta-Programme.
 
 ### Cloud Automation Patching Service (Private Beta)
 
-Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
+Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
 
-Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
+Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
 
 - Automatisierte Patch-Installation
 - Rollback-Wiederherstellung
@@ -47,7 +47,7 @@ Die Beta-Version umfasst die folgenden Funktionen:
 
 >[!NOTE]
 >
->Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [&#x200B; Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
+>Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [&#x200B; Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
 
 Um an dieser Beta-Version teilzunehmen, füllen Sie das Anmeldeformular [Cloud Automation Patching Service - Beta aus](https://forms.office.com/r/3Wfxj5nPdB) aus.
 
@@ -71,7 +71,7 @@ Jede Alpha- und Beta-Version von Adobe Commerce Foundation enthält alle Änderu
 - GraphQL-Verbesserungen
 - Allgemeine Qualitätsfehler-Fehlerbehebungen
 - Gemeinschaftsbeiträge
-- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
 
 #### Namenskonvention und -zeitplan
 
