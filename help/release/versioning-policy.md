@@ -2,7 +2,7 @@
 title: Release-Richtlinie
 description: Erfahren Sie mehr über die verschiedenen Typen von Adobe Commerce-Versionen.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
+source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 0%
@@ -81,10 +81,10 @@ Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmte
 
 Isolierte Patches sind nicht kumulative Sicherheitskorrekturen, die unabhängig von einem vollständigen Sicherheits-Patch veröffentlicht werden, um eine schnellere Implementierung zu ermöglichen. Jede einzelne Sicherheitskorrektur behandelt ein bestimmtes Sicherheitsproblem und ist entweder im neuesten oder im kommenden vollständigen Sicherheitspatch enthalten. Details zum Problem finden Sie im entsprechenden Sicherheitsbulletin, das auf einen Knowledgebase-Artikel (KB) verweist, der die Fehlerbehebungsdetails, die Anwendung der Fehlerbehebung und zusätzliche Informationen enthält.
 
-Im [Sicherheitscenter](https://helpx.adobe.com/de/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
+Im [Sicherheitscenter](https://helpx.adobe.com/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
 
 ## Benutzerdefinierter Patch
 
-von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage) bereitgestellt.
+von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) bereitgestellt.
 
-<!-- Last updated from includes: 2025-05-28 16:37:31 -->
+<!-- Last updated from includes: 2025-10-09 22:53:22 -->
