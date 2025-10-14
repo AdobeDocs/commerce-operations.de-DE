@@ -17,7 +17,7 @@ Der Commerce-Datenbankprofiler zeigt alle auf einer Seite implementierten Abfrag
 
 ## Schritt 1: Ändern der Bereitstellungskonfiguration
 
-Ändern Sie `<magento_root>/app/etc/env.php` , um den folgenden Verweis zur [Datenbankprofilerklasse“ ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Ändern Sie `<magento_root>/app/etc/env.php` , um den folgenden Verweis zur [Datenbankprofilerklasse“ &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
 ```php?start_inline=1
         'profiler' => [

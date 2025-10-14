@@ -60,7 +60,7 @@ So legen Sie Berechtigungen vor der Installation der Anwendung fest:
    * [Composer-Metapaket](../../composer.md)
    * [Klonen Sie das Repository (nur beitragende Entwickler)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-1. Nachdem Sie die Eigentümerschaft und Berechtigungen für das Dateisystem festgelegt haben, [ Sie die Anwendung](../../advanced.md)
+1. Nachdem Sie die Eigentümerschaft und Berechtigungen für das Dateisystem festgelegt haben, [&#x200B; Sie die Anwendung](../../advanced.md)
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benu
 
 >[!WARNING]
 >
->Wenn Sie auf Ihrem Anwendungsserver keine `root` Berechtigungen haben, können Sie ein anderes lokales Benutzerkonto verwenden. Stellen Sie sicher, dass der Benutzer über ein sicheres Kennwort verfügt, und setzen Sie den Vorgang mit [Legen Sie den Dateisystembesitzer in die Webserver-Gruppe ](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Wenn Sie auf Ihrem Anwendungsserver keine `root` Berechtigungen haben, können Sie ein anderes lokales Benutzerkonto verwenden. Stellen Sie sicher, dass der Benutzer über ein sicheres Kennwort verfügt, und setzen Sie den Vorgang mit [Legen Sie den Dateisystembesitzer in die Webserver-Gruppe &#x200B;](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
 Um beispielsweise einen Benutzer mit dem Namen `magento_user` zu erstellen und ihm ein Kennwort zuzuweisen, geben Sie Folgendes ein:
 
@@ -125,7 +125,7 @@ sudo passwd magento_user
 
 >[!WARNING]
 >
->Da der Zweck der Erstellung dieses Benutzers darin besteht, zusätzliche Sicherheit zu bieten, stellen Sie sicher, dass Sie ein [starkes Kennwort“ ](https://en.wikipedia.org/wiki/Password_strength).
+>Da der Zweck der Erstellung dieses Benutzers darin besteht, zusätzliche Sicherheit zu bieten, stellen Sie sicher, dass Sie ein [starkes Kennwort“ &#x200B;](https://en.wikipedia.org/wiki/Password_strength).
 
 ### Suchen der Webserver-Benutzergruppe
 
@@ -158,7 +158,7 @@ Um den Dateisystembesitzer in die primäre Gruppe des Webservers einzuordnen (un
 
 >[!NOTE]
 >
->Die `-a -G` sind wichtig, da sie `apache` oder `www-data` als *sekundäre* Gruppe zum Benutzerkonto hinzufügen, wodurch die (primäre *Gruppe des* beibehalten wird. Wenn Sie einem Benutzerkonto eine sekundäre Gruppe hinzufügen, [ Sie (Dateieigentümerschaft und Berechtigungen ](#set-ownership-and-permissions-for-two-users)) sicherstellen, dass Mitglieder einer freigegebenen Gruppe nur Zugriff auf bestimmte Dateien haben.
+>Die `-a -G` sind wichtig, da sie `apache` oder `www-data` als *sekundäre* Gruppe zum Benutzerkonto hinzufügen, wodurch die (primäre *Gruppe des* beibehalten wird. Wenn Sie einem Benutzerkonto eine sekundäre Gruppe hinzufügen, [&#x200B; Sie (Dateieigentümerschaft und Berechtigungen &#x200B;](#set-ownership-and-permissions-for-two-users)) sicherstellen, dass Mitglieder einer freigegebenen Gruppe nur Zugriff auf bestimmte Dateien haben.
 
 So fügen Sie beispielsweise die `magento_user` der `apache` primären Gruppe unter CentOS hinzu:
 

@@ -31,7 +31,7 @@ Jedes Mal, wenn Sie eine Aktion ausführen, die dazu führt, dass sich das Daten
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Dabei ist `--keep-generated` ein optionales Argument, das nicht aktualisiert [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md). Dieses optionale Argument ist nur für *(*) erfahrene Systemintegratoren geeignet. Sie sollte *nur* im [Produktionsmodus) ](../../configuration/bootstrap/application-modes.md#production-mode). Sie sollte *nicht* im [Entwicklermodus“ ](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Dabei ist `--keep-generated` ein optionales Argument, das nicht aktualisiert [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md). Dieses optionale Argument ist nur für *(*) erfahrene Systemintegratoren geeignet. Sie sollte *nur* im [Produktionsmodus) &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode). Sie sollte *nicht* im [Entwicklermodus“ &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Cache leeren:
 

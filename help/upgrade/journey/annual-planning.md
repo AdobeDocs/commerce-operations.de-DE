@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Viele Unternehmen arbeiten mit jährlichen Budgets und Roadmaps. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über den Zustand Ihrer Plattform, Ihre Ausrichtung und Ihre Upgrade-Strategie für das Jahr sprechen und auch darüber, wie sie zu den allgemeinen Zielen und KPIs (Key Performance Indicators) des Unternehmens passt.
 
-Nach dem [Veröffentlichungszeitplan](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) müssen Sie Budget- und Versionsfenster für Upgrades zuweisen, um Feiertage, Firmenschließungen und Spitzenzeiten zu vermeiden. Indem Sie den Adobe-Veröffentlichungszeitplan verstehen und durch die [Versionshinweise) immer auf dem Laufenden bleiben, welche Änderungen und Verbesserungen Teil jeder Version ](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview), können Sie Ihr Jahr besser planen.
+Nach dem [Veröffentlichungszeitplan](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) müssen Sie Budget- und Versionsfenster für Upgrades zuweisen, um Feiertage, Firmenschließungen und Spitzenzeiten zu vermeiden. Indem Sie den Adobe-Veröffentlichungszeitplan verstehen und durch die [Versionshinweise) immer auf dem Laufenden bleiben, welche Änderungen und Verbesserungen Teil jeder Version &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview), können Sie Ihr Jahr besser planen.
 
 Bei der Planung sollten Sie sich folgende Fragen stellen:
 

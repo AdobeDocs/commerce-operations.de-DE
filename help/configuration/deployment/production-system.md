@@ -22,7 +22,7 @@ Sie können ein Produktionssystem haben. Folgendes muss alle zutreffen:
    - `pub/media/wysiwyg` (und Unterverzeichnisse)
    - `pub/static` (und Unterverzeichnisse)
 
-- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus“ ](../bootstrap/application-modes.md#production-mode)
+- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus“ &#x200B;](../bootstrap/application-modes.md#production-mode)
 - Für sie sind der Besitz und die Berechtigungen des Dateisystems festgelegt, wie unter [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md) erläutert.
 
 ## Einrichten einer Produktionsmaschine
@@ -40,7 +40,7 @@ So richten Sie eine Produktionsmaschine ein:
 
    Erstellen Sie `auth.json` in diesem Verzeichnis.
 
-   `auth.json` müssen Ihre [Authentifizierungsschlüssel“ ](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` müssen Ihre [Authentifizierungsschlüssel“ &#x200B;](../../installation/prerequisites/authentication-keys.md).
 
    Es folgt ein Beispiel:
 
@@ -68,7 +68,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mithilfe des `magento config:sensi
 
 So legen Sie vertrauliche Werte fest:
 
-1. Suchen Sie einen Wert, der mithilfe der [Referenz für vertrauliche Werte“ festgelegt ](../reference/config-reference-sens.md) soll.
+1. Suchen Sie einen Wert, der mithilfe der [Referenz für vertrauliche Werte“ festgelegt &#x200B;](../reference/config-reference-sens.md) soll.
 1. Notieren Sie den Konfigurationspfad für die Einstellung .
 1. Melden Sie sich beim Produktionssystem als Eigentümer an oder wechseln Sie zum Dateisystembesitzer.
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.

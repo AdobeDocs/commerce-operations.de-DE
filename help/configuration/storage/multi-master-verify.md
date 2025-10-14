@@ -22,7 +22,7 @@ Nach der Konfiguration werden die Master-Datenbanken wie folgt konfiguriert:
 - Commerce-Angebotsdatenbank: 11 Tabellen
 - Commerce-Verkaufsdatenbank: 55 Tabellen
 
-Um sicherzustellen, dass Ihre aufgeteilten Datenbanken ordnungsgemäß funktionieren, führen Sie die folgenden Aufgaben aus und überprüfen Sie, ob Daten mit einem Datenbank-Tool wie „phpmyadmin[ zu den Datenbanktabellen hinzugefügt ](../../installation/prerequisites/optional-software.md#phpmyadmin):
+Um sicherzustellen, dass Ihre aufgeteilten Datenbanken ordnungsgemäß funktionieren, führen Sie die folgenden Aufgaben aus und überprüfen Sie, ob Daten mit einem Datenbank-Tool wie „phpmyadmin[&#x200B; zu den Datenbanktabellen hinzugefügt &#x200B;](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | Zu überprüfende Elemente | Vorgehensweise bei der Verifizierung |
 | -------------- | ------------- |

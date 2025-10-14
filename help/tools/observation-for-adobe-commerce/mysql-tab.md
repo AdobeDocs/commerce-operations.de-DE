@@ -78,7 +78,7 @@ Der **[!UICONTROL Galera Log by Host]** ist mit dem **[!UICONTROL Galera log]** 
 
 ![Datenbankleistung](../../assets/tools/observation-for-adobe-commerce/mysql-tab-8.jpg)
 
-Der **[!UICONTROL Database performance]** zeigt die Datenbankleistung während bestimmter Anforderungen an. Sie können jede Metrik anzeigen, indem Sie in den farbigen Symbolen unter dem Diagramm darauf klicken. Viele der unter &quot;[ der MySQL-Datenbankleistung mit New Relic&quot; ](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) Metriken finden Sie in diesem Frame.
+Der **[!UICONTROL Database performance]** zeigt die Datenbankleistung während bestimmter Anforderungen an. Sie können jede Metrik anzeigen, indem Sie in den farbigen Symbolen unter dem Diagramm darauf klicken. Viele der unter &quot;[&#x200B; der MySQL-Datenbankleistung mit New Relic&quot; &#x200B;](https://newrelic.com/blog/how-to-relic/how-to-monitor-mysql) Metriken finden Sie in diesem Frame.
 
 * average(query.queriesPerSecond)
 * average(query.slowQueriesPerSecond)
@@ -200,7 +200,7 @@ Der **[!UICONTROL DB Statistics]** zeigt pro Sekunde Löschvorgänge, Schreibvor
 
 ![Datenbankfehler](../../assets/tools/observation-for-adobe-commerce/mysql-tab-17.jpg)
 
-Der **[!UICONTROL Database Errors]** zeigt eine Vielzahl von Datenbankwarnungen [ -fehlern](https://mariadb.com/kb/en/mariadb-error-codes/):
+Der **[!UICONTROL Database Errors]** zeigt eine Vielzahl von Datenbankwarnungen [&#x200B; -fehlern](https://mariadb.com/kb/en/mariadb-error-codes/):
 
 * &#39;%Speichergröße zugewiesen für die temporäre Tabelle ist mehr als 20% von InnoDB_BUFFER_POOL_SIZE%&#39; als &#39;temp_tbl_buff_pool&#39;
 * &#39;%\[ERROR\] WSREP: rbr write fail%&#39;) als &#39;rbr_write_fail&#39;

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Best Practices für die skalierte Verteilung von Adobe Commerce-Patches
 
-Wenn Sie mehrere Adobe Commerce-Installationen verwalten[ kann ](../../../upgrade/patches/apply.md)Patchen“ ein komplexer Prozess sein. _Zentralisiertes Patchen_ ist eine Best Practice für Unternehmen. Damit können Sie die richtigen Patches auf alle Ihre Adobe Commerce-Installationen anwenden. In diesem Abschnitt wird erläutert, wie Sie eine zentralisierte Patch-Verteilung für alle Adobe Commerce-Typen [Patches) ](../../../upgrade/patches/overview.md).
+Wenn Sie mehrere Adobe Commerce-Installationen verwalten[&#x200B; kann &#x200B;](../../../upgrade/patches/apply.md)Patchen“ ein komplexer Prozess sein. _Zentralisiertes Patchen_ ist eine Best Practice für Unternehmen. Damit können Sie die richtigen Patches auf alle Ihre Adobe Commerce-Installationen anwenden. In diesem Abschnitt wird erläutert, wie Sie eine zentralisierte Patch-Verteilung für alle Adobe Commerce-Typen [Patches) &#x200B;](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ Wenn Sie mehrere Adobe Commerce-Installationen verwalten[ kann ](../../../upgrad
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -148,7 +148,7 @@ So erstellen Sie das `centralized-patcher` Komponentenpaket:
    ```
 
 
-Das Attribut `quality-patches` im vorherigen Codebeispiel enthält als Beispiel zwei Patches aus [vollständigen ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)).  Diese Qualitäts-Patches werden mit dem Befehl `centralized-patcher` auf jedem Projekt installiert, für das das `vendor/bin/magento-patches apply`-Paket erforderlich ist.
+Das Attribut `quality-patches` im vorherigen Codebeispiel enthält als Beispiel zwei Patches aus [vollständigen &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)).  Diese Qualitäts-Patches werden mit dem Befehl `centralized-patcher` auf jedem Projekt installiert, für das das `vendor/bin/magento-patches apply`-Paket erforderlich ist.
 
 Zu Testzwecken können Sie einen Beispiel-Patch erstellen (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 

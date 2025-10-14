@@ -110,7 +110,7 @@ Um die Fehlerprotokollierung in Adobe Commerce Cloud zu überwachen, bietet Adob
 
 Im Folgenden finden Sie einige wichtige Verfahren zur Überwachung von Sicherheits-Patches und -Updates, um auf dem neuesten Stand zu bleiben und die Sicherheit Ihres Adobe Commerce Cloud-Systems zu gewährleisten:
 
-- **Adobe Commerce-Sicherheitswarnungen abonnieren**: Bleiben Sie über Sicherheitslücken auf dem Laufenden, indem Sie sich [ Benachrichtigungen von Adobe registrieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security).
+- **Adobe Commerce-Sicherheitswarnungen abonnieren**: Bleiben Sie über Sicherheitslücken auf dem Laufenden, indem Sie sich [&#x200B; Benachrichtigungen von Adobe registrieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security).
 
 - **Versionshinweise überprüfen**: Überprüfen Sie regelmäßig [Versionshinweise für Sicherheits-Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/overview), die mit &quot;-pN“ für Versionen getaggt sind (z. B. 2.3.5-p1) und kritische Fehlerbehebungen und Verbesserungen enthalten.
 
@@ -136,7 +136,7 @@ Gehen Sie wie folgt vor, um die PCI-Compliance in Adobe Commerce Cloud sicherzus
 
 - **Zugriff beschränken**: Sicherstellen, dass nur autorisierte Mitarbeiter Zugriff auf sensible Zahlungsdaten haben, und [Zugriffskontrolle anwenden, um das Risiko einer Exposition zu verringern](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/payment-processing-storage).
 
-- **Regelmäßige Sicherheitsüberprüfung**: Führen Sie regelmäßige PCI-ASV-Scans durch und [ Sie Ihre Umgebung ](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility), um potenzielle Schwachstellen zu beheben.
+- **Regelmäßige Sicherheitsüberprüfung**: Führen Sie regelmäßige PCI-ASV-Scans durch und [&#x200B; Sie Ihre Umgebung &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility), um potenzielle Schwachstellen zu beheben.
 
 >[!TIP]
 >
@@ -226,7 +226,7 @@ Gehen Sie wie folgt vor, um die PCI-Compliance in Adobe Commerce Cloud sicherzus
 
 >[!TIP]
 >
->Detaillierte Anleitungen finden Sie unter [Best Practices für die ](overview.md), [Personalisierung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization) und [Funktionsentwicklung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization).
+>Detaillierte Anleitungen finden Sie unter [Best Practices für die &#x200B;](overview.md), [Personalisierung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization) und [Funktionsentwicklung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization).
 
 ### Reporting und Analysen
 

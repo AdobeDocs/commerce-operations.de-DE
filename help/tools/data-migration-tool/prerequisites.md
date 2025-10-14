@@ -16,7 +16,7 @@ Bevor Sie mit der Migration beginnen, stellen Sie sicher, dass die folgenden Anf
 
 ## Magento 2-System
 
-* Richten Sie Ihr Magento 2-System so ein, dass es die [Systemanforderungen“ ](../../installation/system-requirements.md).
+* Richten Sie Ihr Magento 2-System so ein, dass es die [Systemanforderungen“ &#x200B;](../../installation/system-requirements.md).
 
   Verwenden Sie eine Topologie und ein Design, die mindestens Ihrem bestehenden Magento 1-System entsprechen.
 
@@ -28,7 +28,7 @@ Starten Sie keine Magento 2-Cron-Aufträge.
 
 ## Datenbank
 
-* Sichern oder [ Sie Ihre Magento 2](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)Datenbank nach der Installation so schnell wie möglich. Auf diese Weise können Sie den ursprünglichen Datenbankstatus wiederherstellen, wenn die Migration nicht erfolgreich war.
+* Sichern oder [&#x200B; Sie Ihre Magento 2](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)Datenbank nach der Installation so schnell wie möglich. Auf diese Weise können Sie den ursprünglichen Datenbankstatus wiederherstellen, wenn die Migration nicht erfolgreich war.
 
 * Überprüfen Sie, ob der [!DNL Data Migration Tool] über Netzwerkzugriff verfügt, um die Magento 1- und Magento 2-Datenbanken zu verbinden.
 

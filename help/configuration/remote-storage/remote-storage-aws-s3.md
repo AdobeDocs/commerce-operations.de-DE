@@ -81,7 +81,7 @@ Die S3-Integration beruht auf der Möglichkeit, zwischengespeicherte Bilder im l
 
 ### Dateifunktionen
 
-Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter ](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
+Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
 
 <!-- link definitions -->
 

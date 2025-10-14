@@ -26,7 +26,7 @@ Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher
 
 ## Benutzerdefinierte Module
 
-Alle benutzerdefinierten Module sollten mit der Zielversion abgeglichen werden, auf die Sie das Upgrade durchführen möchten. Dies ist der zeit- und ressourcenintensivste Prozess eines Upgrades. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtsinkompatiblen Änderungen suchen und neue Praktiken beachten, wie z. B. die Zerlegung von Controllern. Weitere Informationen hierzu finden Sie in den [ zu ](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview). Stellen Sie außerdem sicher, dass Sie die [Best Practices“ für ](https://developer.adobe.com/commerce/php/best-practices/extensions/) Modulentwicklung befolgen.
+Alle benutzerdefinierten Module sollten mit der Zielversion abgeglichen werden, auf die Sie das Upgrade durchführen möchten. Dies ist der zeit- und ressourcenintensivste Prozess eines Upgrades. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtsinkompatiblen Änderungen suchen und neue Praktiken beachten, wie z. B. die Zerlegung von Controllern. Weitere Informationen hierzu finden Sie in den [&#x200B; zu &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview). Stellen Sie außerdem sicher, dass Sie die [Best Practices“ für &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/) Modulentwicklung befolgen.
 
 ## [!DNL Upgrade Compatibility Tool]
 

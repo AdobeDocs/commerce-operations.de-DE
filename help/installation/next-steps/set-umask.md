@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Maske festlegen (optional)
 
-Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Es empfiehlt sich jedoch, die Sicherheit zu erhöhen, insbesondere in der Produktion. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe einer „umask[ weiter ](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html) beschränken.
+Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Es empfiehlt sich jedoch, die Sicherheit zu erhöhen, insbesondere in der Produktion. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe einer „umask[&#x200B; weiter &#x200B;](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html) beschränken.
 
 Unsere Lösung besteht darin, es Ihnen zu ermöglichen, optional eine Datei mit dem Namen `magento_umask` in Ihrem Anwendungsstammverzeichnis zu erstellen, die die Berechtigungen für die Webservergruppe und alle anderen einschränkt.
 
@@ -33,7 +33,7 @@ Häufig wird vorgeschlagen, in der `022`-Datei den Wert `magento_umask` zu verwe
 
 So legen `magento_umask` fest:
 
-1. Melden Sie sich als „Dateisystembesitzer“ über ein Befehlszeilen-Terminal [ Ihrem Anwendungs-Server ](../prerequisites/file-system/overview.md).
+1. Melden Sie sich als „Dateisystembesitzer“ über ein Befehlszeilen-Terminal [&#x200B; Ihrem Anwendungs-Server &#x200B;](../prerequisites/file-system/overview.md).
 1. Navigieren Sie zum Installationsverzeichnis der Anwendung:
 
    ```bash

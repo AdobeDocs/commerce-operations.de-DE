@@ -15,8 +15,8 @@ Siehe [Systemanforderungen](../../system-requirements.md) für unterstützte Ver
 
 Adobe _empfiehlt dringend_ beim Einrichten der Datenbank den folgenden Standard zu beachten:
 
-* Adobe Commerce Trigger verwendet [MySQL-Datenbank-](https://dev.mysql.com/doc/refman/8.0/en/triggers.html), um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexermodus auf &quot;[&quot; ](../../../configuration/cli/manage-indexers.md#configure-indexers) ist. Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce-Versionen einführen können.
-* Machen Sie sich mit [diesen potenziellen Einschränkungen von MySQL Trigger ](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) vertraut, bevor Sie fortfahren.
+* Adobe Commerce Trigger verwendet [MySQL-Datenbank-](https://dev.mysql.com/doc/refman/8.0/en/triggers.html), um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexermodus auf &quot;[&quot; &#x200B;](../../../configuration/cli/manage-indexers.md#configure-indexers) ist. Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce-Versionen einführen können.
+* Machen Sie sich mit [diesen potenziellen Einschränkungen von MySQL Trigger &#x200B;](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) vertraut, bevor Sie fortfahren.
 * Um den Sicherheitszustand Ihrer Datenbank zu verbessern, aktivieren Sie den [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) SQL-Modus, um zu verhindern, dass ungültige Datenwerte gespeichert werden, was zu unerwünschten Datenbankinteraktionen führen könnte.
 * Adobe Commerce unterstützt _nicht_ die auf MySQL-Anweisungen basierende Replikation. Stellen Sie sicher _dass Sie_[zeilenbasierte Replikation](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html) verwenden.
 

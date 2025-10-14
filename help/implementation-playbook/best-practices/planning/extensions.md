@@ -27,7 +27,7 @@ Adobe Commerce-Erweiterungen (Module) von Drittanbietern können verschiedene Pr
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

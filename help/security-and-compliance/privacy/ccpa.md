@@ -26,7 +26,7 @@ Der CCPA räumt den Verbrauchern die folgenden neuen Rechte ein:
 
 ## CCPA-Konformität
 
-Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte Anstrengungen. Wir ermutigen Händler, ein funktionsübergreifendes Team zusammenzustellen und den im CCPA-[ beschriebenen Fahrplan zu befolgen](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=de) um ihr Unternehmen in Einklang mit der Verordnung zu bringen. Als Entwickler werden Sie möglicherweise als Stakeholder eingeladen, wobei der Schwerpunkt auf den Schritten 2 bis 5 des Prozesses liegt. Weitere Informationen finden Sie [ „CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=de)Kompatibilitätshandbuch“.
+Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte Anstrengungen. Wir ermutigen Händler, ein funktionsübergreifendes Team zusammenzustellen und den im CCPA-[&#x200B; beschriebenen Fahrplan zu befolgen](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=de) um ihr Unternehmen in Einklang mit der Verordnung zu bringen. Als Entwickler werden Sie möglicherweise als Stakeholder eingeladen, wobei der Schwerpunkt auf den Schritten 2 bis 5 des Prozesses liegt. Weitere Informationen finden Sie [&#x200B; „CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=de)Kompatibilitätshandbuch“.
 
 1. Zusammenstellen eines funktionsübergreifenden Teams zur Einhaltung der CCPA-Richtlinien.
 

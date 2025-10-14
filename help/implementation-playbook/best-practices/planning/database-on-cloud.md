@@ -72,7 +72,7 @@ Trigger werden verwendet, um Änderungen in Audit-Tabellen zu protokollieren. Au
 - Trigger werden als Code interpretiert und von MySQL nicht vorkompiliert. Durch das Anbinden an den Transaktionsbereich Ihrer Abfrage wird der Overhead für jede mit der Tabelle durchgeführte Abfrage einem Parser und Interpreter hinzugefügt.
 - Die Trigger nutzen denselben Transaktionsbereich wie die Originalabfragen. Während diese Abfragen um Tabellensperren konkurrieren, konkurrieren die Trigger unabhängig voneinander um Sperren in einer anderen Tabelle.
 
-Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger finden Sie unter [MySQL-Trigger ](mysql-configuration.md#triggers).
+Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger finden Sie unter [MySQL-Trigger &#x200B;](mysql-configuration.md#triggers).
 
 ## Upgrade von [!DNL ECE-Tools] auf Version 2002.0.21 oder höher {#ece-tools-version}
 
@@ -83,7 +83,7 @@ Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-T
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Beim Wechsel des Indexers werden [!DNL data definition language] (DDL)-Anweisungen generiert, um Trigger zu erstellen, die zu Datenbanksperren führen können. Sie können dieses Problem verhindern, indem Sie Ihre Website in den Wartungsmodus versetzen und Cron-Aufträge deaktivieren, bevor Sie die Konfiguration ändern.
-Anweisungen finden Sie [Konfigurieren von ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=de#configure-indexers-1)) im *Adobe Commerce-Konfigurationshandbuch*.
+Anweisungen finden Sie [Konfigurieren von &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=de#configure-indexers-1)) im *Adobe Commerce-Konfigurationshandbuch*.
 
 ## DDL-Anweisungen nicht in Produktion ausführen
 

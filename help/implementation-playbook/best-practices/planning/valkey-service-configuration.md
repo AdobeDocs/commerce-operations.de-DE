@@ -153,11 +153,11 @@ stage:
 
 >[!NOTE]
 >
->Im vorherigen Beispiel ist der `full_page`-Cache für Adobe Commerce für Cloud-Infrastrukturprojekte nicht relevant, da sie „Fastly[ verwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly).
+>Im vorherigen Beispiel ist der `full_page`-Cache für Adobe Commerce für Cloud-Infrastrukturprojekte nicht relevant, da sie „Fastly[&#x200B; verwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly).
 
 Informationen zum Konfigurieren von On-Premise-Installationen finden Sie unter [Veraltete Cache](../../../configuration/cache/level-two-cache.md#stale-cache-options) im _Konfigurationshandbuch_.
 
-Während der Bereitstellung sollten die folgenden Zeilen im „Build- [ Bereitstellungsprotokoll“ angezeigt ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+Während der Bereitstellung sollten die folgenden Zeilen im „Build- [&#x200B; Bereitstellungsprotokoll“ angezeigt &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -173,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Cache-Komprimierung
 
-Wenn Sie mehr als 6 GB Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung verwenden, um den von den Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass es einen Zielkonflikt mit der Client-seitigen Leistung gibt. Wenn Sie über CPUs verfügen, empfiehlt Adobe, diese zu aktivieren. Siehe [Verwenden von Valkey für ](../../../configuration/cache/valkey-session.md) Sitzungsspeicherung“ im _Konfigurationshandbuch_.
+Wenn Sie mehr als 6 GB Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung verwenden, um den von den Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass es einen Zielkonflikt mit der Client-seitigen Leistung gibt. Wenn Sie über CPUs verfügen, empfiehlt Adobe, diese zu aktivieren. Siehe [Verwenden von Valkey für &#x200B;](../../../configuration/cache/valkey-session.md) Sitzungsspeicherung“ im _Konfigurationshandbuch_.
 
 ```yaml
 stage:

@@ -43,7 +43,7 @@ Nachdem der Patch angewendet wurde, führen Sie die folgenden Schritte aus, um s
 
 1. Senden Sie `GET` Anfrage mithilfe beliebiger Felder an die oben aufgeführte GraphQL-Abfrage.
 1. Senden Sie die Anfrage erneut, ohne Änderungen vorzunehmen. Sie werden feststellen, dass sie viel schneller ist. Beachten Sie, dass die Anfrage nicht an das Backend gesendet wird, sondern vollständig von [!DNL Varnish] als Cache-Treffer verarbeitet wird.
-1. Wenn ein weiterer Korrekturabzug erforderlich ist, kommentieren Sie den in unserer `X-Magento-Debug`VCL[ vorhandenen Satz ](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/PageCache/etc/varnish6.vcl#L239) Kopfzeile aus, starten Sie [!DNL Varnish] dann neu und führen Sie die oben genannten Schritte erneut aus.
+1. Wenn ein weiterer Korrekturabzug erforderlich ist, kommentieren Sie den in unserer `X-Magento-Debug`VCL[&#x200B; vorhandenen Satz &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/app/code/Magento/PageCache/etc/varnish6.vcl#L239) Kopfzeile aus, starten Sie [!DNL Varnish] dann neu und führen Sie die oben genannten Schritte erneut aus.
 
 ## Patch anwenden
 
@@ -56,7 +56,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

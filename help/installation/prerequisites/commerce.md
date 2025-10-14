@@ -15,7 +15,7 @@ Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere eCom
 
 ## So erhalten Sie die Software
 
-Informieren Sie sich über die Verfügbarkeit aufregender neuer Funktionen und Releases und erfahren Sie, wie Sie diese auf unserer [Produktverfügbarkeitsseite“ ](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) können.
+Informieren Sie sich über die Verfügbarkeit aufregender neuer Funktionen und Releases und erfahren Sie, wie Sie diese auf unserer [Produktverfügbarkeitsseite“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) können.
 
 In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten bei der Installation von Adobe Commerce.
 
@@ -62,4 +62,4 @@ UNIX-Systeme benötigen `root` Berechtigungen, um Software wie einen Webserver, 
 
 Installieren *nicht* die Anwendung im Webserver-Stammverzeichnis als `root` Benutzer, da der Webserver möglicherweise nicht mit diesen Dateien interagieren kann.
 
-Sie benötigen `root` Berechtigungen, um den [Dateisystembesitzer“ ](file-system/overview.md) erstellen und diesen Besitzer zur Gruppe des Webservers hinzuzufügen. Sie verwenden den Dateisystembesitzer, um `bin/magento` Befehle über die Befehlszeile auszuführen und Cron-Aufträge einzurichten, die Aufgaben für Sie planen.
+Sie benötigen `root` Berechtigungen, um den [Dateisystembesitzer“ &#x200B;](file-system/overview.md) erstellen und diesen Besitzer zur Gruppe des Webservers hinzuzufügen. Sie verwenden den Dateisystembesitzer, um `bin/magento` Befehle über die Befehlszeile auszuführen und Cron-Aufträge einzurichten, die Aufgaben für Sie planen.

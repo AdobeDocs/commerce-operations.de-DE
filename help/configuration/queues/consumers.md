@@ -20,7 +20,7 @@ Die folgende Tabelle identifiziert alle Nachrichtenwarteschlangen-Verbraucher, b
 | `codegeneratorProcessor` | + | + | + |
 | Asynchron generiert Coupons im Hintergrund. Erforderlich für die Verwendung der [Batch Coupon Generation](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=de#method-2%3A-generate-a-batch-of-coupons)-Funktion. |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
-| Sucht nach Ereignissen, die in [Adobe I/O Events für Adobe Commerce als Priorität registriert ](https://developer.adobe.com/commerce/events/get-started/). |
+| Sucht nach Ereignissen, die in [Adobe I/O Events für Adobe Commerce als Priorität registriert &#x200B;](https://developer.adobe.com/commerce/events/get-started/). |
 | `exportProcessor` | + | + | + |
 | Verhindert Verbindungstimeouts beim [Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-export.html?lang=de) großer Datensätze (z. B. 200.000 Produkte). |                |                         |                     |
 | `inventoryQtyCounter` | + | + |                     |

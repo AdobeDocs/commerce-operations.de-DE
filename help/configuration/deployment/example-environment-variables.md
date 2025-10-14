@@ -102,7 +102,7 @@ Um die sensiblen und systemspezifischen Einstellungen mithilfe von Umgebungsvari
 
   Wenn Sie die Anweisungen in Schritt 1 befolgt haben, ist der Bereich für „E-Mails senden an“ global (d. h. der Standardkonfigurationsbereich) und der Bereich für die Standard-E-Mail-Domain ist „website“.
 
-  Sie müssen den Code der Website kennen, um den Konfigurationswert der Standard-E-Mail-Domain festzulegen. Weitere Informationen [ Auffinden finden Sie unter „Verwenden von Umgebungsvariablen zum Überschreiben ](../reference/override-config-settings.md#environment-variables) Konfigurationseinstellungen“.
+  Sie müssen den Code der Website kennen, um den Konfigurationswert der Standard-E-Mail-Domain festzulegen. Weitere Informationen [&#x200B; Auffinden finden Sie unter „Verwenden von Umgebungsvariablen zum Überschreiben &#x200B;](../reference/override-config-settings.md#environment-variables) Konfigurationseinstellungen“.
 
 - Konfigurationspfad für jede Einstellung
 

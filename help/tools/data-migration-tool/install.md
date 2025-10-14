@@ -49,8 +49,8 @@ git branch
 
 Wenn Sie sich derzeit in der `develop` Verzweigung befinden, müssen Sie zu einer [freigegebenen Verzweigung“ wechseln](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) bevor Sie fortfahren.
 
-Wenn Sie die Adobe Commerce-Software noch nicht installiert haben, [ Sie sie jetzt ](../../installation/prerequisites/commerce.md).
-Wenn Sie das GitHub-Repository klonen, sollten Sie ein Release-Tag auschecken, wie in [(Mitwirkende) Klonen des GitHub-Repositorys ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+Wenn Sie die Adobe Commerce-Software noch nicht installiert haben, [&#x200B; Sie sie jetzt &#x200B;](../../installation/prerequisites/commerce.md).
+Wenn Sie das GitHub-Repository klonen, sollten Sie ein Release-Tag auschecken, wie in [(Mitwirkende) Klonen des GitHub-Repositorys &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Veröffentlichte Versionen von [!DNL Data Migration Tool] suchen
 

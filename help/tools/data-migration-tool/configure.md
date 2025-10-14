@@ -106,7 +106,7 @@ Bevor Sie Daten migrieren, müssen Sie ein Magento 2 -Modul erstellen.
 
 1. In der `config.xml` müssen Sie die Zugriffsdetails auf M1- und M2-Datenbanken und den Verschlüsselungsschlüssel festlegen.
 
-1. Wenn Ihr M1-Store benutzerdefinierte Änderungen enthält, sollten Sie den Rest Ihrer Konfigurationsdateien Ihren Magento 1-Store-Anpassungen zuordnen. Siehe [Arbeiten mit Konfigurations- und ](#migration-config).
+1. Wenn Ihr M1-Store benutzerdefinierte Änderungen enthält, sollten Sie den Rest Ihrer Konfigurationsdateien Ihren Magento 1-Store-Anpassungen zuordnen. Siehe [Arbeiten mit Konfigurations- und &#x200B;](#migration-config).
 
 ### Konfigurieren der Migration in `vendor` Ordner
 

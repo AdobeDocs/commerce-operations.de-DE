@@ -17,7 +17,7 @@ In diesem Artikel wird über Best Practices zur Bereitstellung statischer Inhalt
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 * Adobe Commerce auf Cloud-Infrastruktur
 * Adobe Commerce On-Premises
@@ -36,7 +36,7 @@ Um ein Problem zu vermeiden, bei dem statischer Inhalt nicht auf Ihrer Website v
 1. Überprüfen Sie bei Adobe Commerce On-Premise (alle Versionen), ob der `php` in CLI Zugriff auf das `pub/static` hat. Andernfalls könnten Sie auf ein Problem stoßen, bei dem eine statische Inhaltsbereitstellung keine Dateien in dieses Verzeichnis schreiben kann. Weitere Informationen finden Sie unter [Zugriffsberechtigungen für Dateisysteme](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=de) in unserer Entwicklerdokumentation.
 1. Stellen Sie sicher, dass der `generated` Ordner kein freigegebener Ordner ist. Andernfalls können Builds nach dem Zufallsprinzip fehlschlagen. Weitere Informationen:
    * Adobe Commerce On-Premise (alle Versionen): [Technische Details](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=de) in unserer Entwicklerdokumentation.
-   * Adobe Commerce auf Cloud-Infrastruktur (alle Versionen): [Bereitstellungsprozess - Phase 2: ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#cloud-deploy-over-phases-build) in unserer Entwicklerdokumentation.
+   * Adobe Commerce auf Cloud-Infrastruktur (alle Versionen): [Bereitstellungsprozess - Phase 2: &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#cloud-deploy-over-phases-build) in unserer Entwicklerdokumentation.
 
 1. Überprüfen Sie Ihre SCD-Strategie. Die *Quick*-Strategie ist die Standardstrategie. Weitere Informationen:
    * Adobe Commerce On-Premise (alle Versionen): [Strategien zur Bereitstellung statischer Dateien](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-strategy.html?lang=de) in unserer Entwicklerdokumentation.

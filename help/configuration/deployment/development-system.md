@@ -15,7 +15,7 @@ Sie können über eine beliebige Anzahl von Entwicklungssystemen verfügen, sofe
 
 - Auf allen Modellen wird Commerce 2.2 oder höher ausgeführt
 - Der gesamte Commerce-Code befindet sich unter der Versionskontrolle im selben Repository wie die Build- und Produktionssysteme
-- Jedes Entwicklungssystem sollte entweder den [Standardmodus) ](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode)
+- Jedes Entwicklungssystem sollte entweder den [Standardmodus) &#x200B;](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ &#x200B;](../bootstrap/application-modes.md#developer-mode)
 - Für sie sind der Besitz und die Berechtigungen des Dateisystems festgelegt, wie unter [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/technical-details.md) erläutert.
 - Stellen Sie sicher, dass Folgendes _der_ ausgeschlossen ist:
 

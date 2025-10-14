@@ -26,13 +26,13 @@ Sie können diese Methode zum Abrufen von Beispieldaten für Adobe Commerce verw
 >
 >Wenn Fehler wie `Could not find package...` oder `...no matching package found...` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, haben Sie möglicherweise keinen Zugriff auf die richtigen Composer-Repositorys, insbesondere wenn Sie Adobe Commerce verwenden. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 
-Sie können Composer verwenden, um Beispieldaten entweder vor oder nach der Installation der Anwendung zu installieren. Es können jedoch [ „zusätzliche Aufgaben“ ](remove-or-update.md).
+Sie können Composer verwenden, um Beispieldaten entweder vor oder nach der Installation der Anwendung zu installieren. Es können jedoch [&#x200B; „zusätzliche Aufgaben“ &#x200B;](remove-or-update.md).
 
 Wenn Sie selbst Entwickler sind, lesen Sie den Abschnitt [Installieren durch Klonen von Repositorys](git-repositories.md).
 
 >[!WARNING]
 >
->Installieren Sie keine Beispieldaten, wenn die Anwendung für den [Produktionsmodus“ ](../../configuration/bootstrap/application-modes.md#production-mode) ist. Wechseln Sie zuerst [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode). Die Installation der Beispieldaten im Produktionsmodus schlägt [fehl](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
+>Installieren Sie keine Beispieldaten, wenn die Anwendung für den [Produktionsmodus“ &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode) ist. Wechseln Sie zuerst [Entwicklermodus](../../configuration/bootstrap/application-modes.md#developer-mode). Die Installation der Beispieldaten im Produktionsmodus schlägt [fehl](https://support.magento.com/hc/en-us/articles/360033824571#symptom-production-mode-trouble-samp-prod-).
 
 Um Beispieldaten über die Befehlszeile zu installieren, geben Sie den folgenden Befehl als Eigentümer des Dateisystems im `<app_root>` ein:
 
@@ -60,7 +60,7 @@ The 'https://repo.magento.com/packages.json' URL required authentication.
 You must be using the interactive console to authenticate
 ```
 
-Wenn der Fehler angezeigt wird, wechseln Sie zu Ihrem Anwendungsverzeichnis und führen Sie `composer update` aus, wodurch Sie zur Eingabe Ihrer [Authentifizierungsschlüssel“ ](../prerequisites/authentication-keys.md).
+Wenn der Fehler angezeigt wird, wechseln Sie zu Ihrem Anwendungsverzeichnis und führen Sie `composer update` aus, wodurch Sie zur Eingabe Ihrer [Authentifizierungsschlüssel“ &#x200B;](../prerequisites/authentication-keys.md).
 
 ## Abschließen der Beispieldateninstallation
 

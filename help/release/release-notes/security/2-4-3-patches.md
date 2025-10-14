@@ -22,7 +22,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
 
-DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [ Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
+DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [&#x200B; Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
 
 ### Sicherheits-Highlights
 
@@ -38,13 +38,13 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
 
-DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [ Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
+DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [&#x200B; Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
 
 ### Sicherheits-Highlights
 
 * Die Verwendung von E-Mail-Variablen wurde in Version 2.3.4 als Teil einer Sicherheitsrisikominderung zugunsten einer strengeren Variablensyntax eingestellt. Dieses veraltete Verhalten wurde in dieser Version als Fortsetzung dieser Sicherheitsrisikominderung vollständig entfernt.
 
-  E-Mail- oder Newsletter-Vorlagen, die in früheren Versionen verwendet wurden, funktionieren daher nach dem Upgrade auf Adobe Commerce 2.4.3-p2 möglicherweise nicht mehr ordnungsgemäß. Betroffene Vorlagen umfassen Admin-Überschreibungen, Designs, untergeordnete Designs und Vorlagen aus benutzerdefinierten Modulen oder Erweiterungen von Drittanbietern. Ihre -Bereitstellung ist möglicherweise auch nach Verwendung des [Upgrade-Kompatibilitätstools) weiterhin betroffen](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=de) um veraltete Anwendungen zu beheben. Informationen [ möglichen Auswirkungen und Richtlinien für die Migration betroffener ](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) finden Sie unter „Migrieren benutzerdefinierter E-Mail-Vorlagen“.
+  E-Mail- oder Newsletter-Vorlagen, die in früheren Versionen verwendet wurden, funktionieren daher nach dem Upgrade auf Adobe Commerce 2.4.3-p2 möglicherweise nicht mehr ordnungsgemäß. Betroffene Vorlagen umfassen Admin-Überschreibungen, Designs, untergeordnete Designs und Vorlagen aus benutzerdefinierten Modulen oder Erweiterungen von Drittanbietern. Ihre -Bereitstellung ist möglicherweise auch nach Verwendung des [Upgrade-Kompatibilitätstools) weiterhin betroffen](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=de) um veraltete Anwendungen zu beheben. Informationen [&#x200B; möglichen Auswirkungen und Richtlinien für die Migration betroffener &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) finden Sie unter „Migrieren benutzerdefinierter E-Mail-Vorlagen“.
 
 * OAuth-Zugriffs-Token und Kennwortzurücksetzungs-Token werden jetzt bei der Speicherung in der Datenbank verschlüsselt. <!-- AC-520 1323-->
 
@@ -66,7 +66,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
 
-DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [ Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
+DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [&#x200B; Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
 
 ### Hotfixes
 

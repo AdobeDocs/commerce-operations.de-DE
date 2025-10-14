@@ -22,7 +22,7 @@ In diesem Abschnitt werden Best Practices für die Untersuchung und Optimierung 
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -81,7 +81,7 @@ Die Behebung von MySQL-Leistungsproblemen durch die Implementierung von Datenban
 
 Websites mit hohem Traffic sind häufig mit Datenbankengpässen konfrontiert, die in erster Linie durch die Abhängigkeit von einem einzelnen MySQL-Server verursacht werden. Sie können diese Engpässe beheben, indem Sie das Datenbank-Clustering implementieren, eine verteilte Architektur, die die Leistung verbessert und eine hohe Verfügbarkeit sicherstellt.
 
-Datenbank-Clustering minimiert die Auswirkungen von datenbankbezogenen Problemen während Spitzenzeiten des Traffics, indem es mehreren Web-Knoten ermöglicht, eine Verbindung zu mehreren MySQL-Servern herzustellen. Verwenden Sie Tools wie Galera Cluster, um das Datenbank-Clustering für Commerce Sites einzurichten. Der Galera-Cluster ist in [Adobe Commerce-Projekten enthalten, die in der Cloud-Infrastruktur bereitgestellt ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
+Datenbank-Clustering minimiert die Auswirkungen von datenbankbezogenen Problemen während Spitzenzeiten des Traffics, indem es mehreren Web-Knoten ermöglicht, eine Verbindung zu mehreren MySQL-Servern herzustellen. Verwenden Sie Tools wie Galera Cluster, um das Datenbank-Clustering für Commerce Sites einzurichten. Der Galera-Cluster ist in [Adobe Commerce-Projekten enthalten, die in der Cloud-Infrastruktur bereitgestellt &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/pro-architecture).
 
 #### Optimieren von MySQL-Abfragen
 
@@ -112,5 +112,5 @@ Weitere Informationen zur Implementierung von Adobe Commerce Cron:
 
 - [Cron (geplante Aufgaben)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=de) im _Commerce Admin Systems-Benutzerhandbuch_
 - [Anwendungskonfiguration - crons-Eigenschaft](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de) (Cloud-Infrastruktur)
-- [Konfigurieren und Ausführen von ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de) (lokal)
+- [Konfigurieren und Ausführen von &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de) (lokal)
 - [Beobachtung für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=de) (Siehe die Registerkarten [!UICONTROL Cron] und [!UICONTROL MySQL] .)

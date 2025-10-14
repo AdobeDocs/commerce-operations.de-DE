@@ -78,7 +78,7 @@ Um optional den Wert in der Bash-Shell des Benutzers festzulegen:
 
 >[!WARNING]
 >
->Es wird empfohlen, in der [`pcre.recursion_limit`-Datei keinen Wert für ](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
+>Es wird empfohlen, in der [`pcre.recursion_limit`-Datei keinen Wert für &#x200B;](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
 
 ## Sichern
 

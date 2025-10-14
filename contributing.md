@@ -38,7 +38,7 @@ Du bist gut zu gehen!
 ## Code-Überprüfungen
 
 Alle Einreichungen sollten in Form von Pull-Anfragen erfolgen und müssen überprüft werden
-durch Projektverantwortliche. Lesen [ Dokumentation zu Pull Requests von GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
+durch Projektverantwortliche. Lesen [&#x200B; Dokumentation zu Pull Requests von GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 Weitere Informationen zum Senden von Pull-Anforderungen finden Sie unter.
 
 <!--
@@ -57,11 +57,11 @@ Wenden Sie sich an bestehende Verantwortliche, um darüber zu sprechen.
 
 ## Sicherheitsprobleme
 
-Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. Stattdessen [ein Problem an unsere Sicherheitsexperten ](https://helpx.adobe.com/de/security/alertus.html).
+Sicherheitsprobleme sollten nicht in dieser Problemverfolgung gemeldet werden. Stattdessen [ein Problem an unsere Sicherheitsexperten &#x200B;](https://helpx.adobe.com/de/security/alertus.html).
 
 ## Neue Highlights
 
-Wenn Ihre Änderungen neue Themen, wichtige Aktualisierungen oder Korrekturen mit sich bringen, die hervorgehoben werden müssen, können Sie direkt im Hauptteil Ihrer Pull[Anfrage eine kurze Beschreibung ](https://experienceleague.adobe.com/de/docs/commerce-operations/operational-guides/home#whats-new) Abschnitt „Neue Funktionen“ hinzufügen.
+Wenn Ihre Änderungen neue Themen, wichtige Aktualisierungen oder Korrekturen mit sich bringen, die hervorgehoben werden müssen, können Sie direkt im Hauptteil Ihrer Pull[Anfrage eine kurze Beschreibung &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/operational-guides/home#whats-new) Abschnitt „Neue Funktionen“ hinzufügen.
 
 So fügen Sie eine Hervorhebung Neue Funktionen hinzu:
 

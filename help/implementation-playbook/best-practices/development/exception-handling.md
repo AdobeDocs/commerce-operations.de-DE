@@ -31,7 +31,7 @@ try {
 }
 ```
 
-Bei diesem Ansatz werden die `$e->getMessage` zur Protokollmeldung und das `$e` gemäß dem [PSR-3-Kontextstandard) automatisch im Kontext ](https://www.php-fig.org/psr/psr-3/#13-context). Dies geschieht in `\Magento\Framework\Logger\Monolog::addRecord`.
+Bei diesem Ansatz werden die `$e->getMessage` zur Protokollmeldung und das `$e` gemäß dem [PSR-3-Kontextstandard) automatisch im Kontext &#x200B;](https://www.php-fig.org/psr/psr-3/#13-context). Dies geschieht in `\Magento\Framework\Logger\Monolog::addRecord`.
 
 ### ![korrekt](../../../assets/yes.svg) Stummschaltung
 
@@ -88,7 +88,7 @@ Die folgenden Beispiele zeigen eine falsche Ausnahmebehandlung.
 
 ### ![falsch](../../../assets/no.svg) Logik vor der Protokollierung
 
-Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder einem schwerwiegenden Fehler führen. Dies verhindert, dass die Ausnahme protokolliert wird, und sollte durch [richtiges Beispiel“ ](#logging-always-comes-first) werden.
+Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder einem schwerwiegenden Fehler führen. Dies verhindert, dass die Ausnahme protokolliert wird, und sollte durch [richtiges Beispiel“ &#x200B;](#logging-always-comes-first) werden.
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![falsch](../../../assets/no.svg) Leere `catch`
 
-Leere `catch` können ein Zeichen für eine unbeabsichtigte Stummschaltung sein und sollten durch das richtige [ ersetzt ](#mute-signals).
+Leere `catch` können ein Zeichen für eine unbeabsichtigte Stummschaltung sein und sollten durch das richtige [&#x200B; ersetzt &#x200B;](#mute-signals).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![falsch](../../../assets/no.svg) Fehlende `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Das Auslassen der `phpcs:ignore`-Trigger ist ein Warnhinweis in PHPCS und sollte nicht Ihren CI übergeben. Dies sollte durch das richtige Beispiel ersetzt werden, das unter [Stummschaltungssignale“ ](#mute-signals) ist.
+Das Auslassen der `phpcs:ignore`-Trigger ist ein Warnhinweis in PHPCS und sollte nicht Ihren CI übergeben. Dies sollte durch das richtige Beispiel ersetzt werden, das unter [Stummschaltungssignale“ &#x200B;](#mute-signals) ist.
 
 ```php
 try {

@@ -18,9 +18,9 @@ Obwohl Sie nicht alle Sicherheitsrisiken ausschließen können, wird durch die A
 
 >[!NOTE]
 >
->Informationen zu den Rollen und Zuständigkeiten für die Sicherung und Wartung von Adobe Commerce-Projekten in Cloud[Infrastrukturen finden Sie unter „Modell der gemeinsamen ](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)&quot; im _Handbuch für Adobe Commerce-Sicherheit und -Compliance_.
+>Informationen zu den Rollen und Zuständigkeiten für die Sicherung und Wartung von Adobe Commerce-Projekten in Cloud[Infrastrukturen finden Sie unter „Modell der gemeinsamen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility#security-responsibilities-chart)&quot; im _Handbuch für Adobe Commerce-Sicherheit und -Compliance_.
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -49,7 +49,7 @@ Wenn MFA für ein Projekt aktiviert ist, müssen alle Adobe Commerce in Cloud-In
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Upgrade auf die neueste Version von Adobe Commerce**
 
-Halten Sie Ihren Code auf dem neuesten Stand[ indem Sie Ihr Commerce-Projekt auf die neueste Version ](#upgrade-to-the-latest-release) Adobe Commerce, Commerce Services und Erweiterungen aktualisieren, einschließlich Sicherheits-Patches, Hotfixes und anderer von Adobe bereitgestellter Patches.
+Halten Sie Ihren Code auf dem neuesten Stand[&#x200B; indem Sie Ihr Commerce-Projekt auf die neueste Version &#x200B;](#upgrade-to-the-latest-release) Adobe Commerce, Commerce Services und Erweiterungen aktualisieren, einschließlich Sicherheits-Patches, Hotfixes und anderer von Adobe bereitgestellter Patches.
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Sicherheitsrelevante Konfigurationswerte**
 

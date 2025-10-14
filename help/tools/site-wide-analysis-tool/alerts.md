@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Alerts]
 
-Auf der Seite [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] werden Adobe Commerce Managed Alerts-Patches für Händler angezeigt. Adobe bietet die [!DNL Managed Alerts], Leistungsmetriken mithilfe von Best Practices der Branche zu verfolgen. Verweisen Sie auf [ Artikel „Verwaltete Warnhinweise für die Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) in unserem [!DNL support knowledge base].
+Auf der Seite [!DNL Site-Wide Analysis Tool's] [!UICONTROL Alerts] werden Adobe Commerce Managed Alerts-Patches für Händler angezeigt. Adobe bietet die [!DNL Managed Alerts], Leistungsmetriken mithilfe von Best Practices der Branche zu verfolgen. Verweisen Sie auf [&#x200B; Artikel „Verwaltete Warnhinweise für die Adobe Commerce](https://support.magento.com/hc/en-us/articles/360045806832-Managed-alerts-for-Adobe-Commerce) in unserem [!DNL support knowledge base].
 
 ## Verwendungszeitpunkt
 

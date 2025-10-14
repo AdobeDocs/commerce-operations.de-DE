@@ -33,7 +33,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Mediendateien manuell migrieren.
 >Die Datenbankspeichermethode wird seit Magento 2.4.3 nicht mehr unterstützt.
 
 
-Dieser Abschnitt gilt nur für *,* Sie Mediendateien in der Magento-Datenbank speichern. Dieser Schritt sollte vor der [Datenmigration) ](data.md) werden:
+Dieser Abschnitt gilt nur für *,* Sie Mediendateien in der Magento-Datenbank speichern. Dieser Schritt sollte vor der [Datenmigration) &#x200B;](data.md) werden:
 
 1. Melden Sie sich beim Magento 1 Admin Panel als Administrator an.
 
@@ -69,4 +69,4 @@ Sie müssen alle manuell neu erstellen:
 
 >[!NOTE]
 >
->Sie können die Zeitzone für eine Datenbankentität mithilfe des `\Migration\Handler\Timezone`-Handlers anpassen. Weitere Informationen finden [ im Abschnitt ](follow-up.md)Follow-up“.
+>Sie können die Zeitzone für eine Datenbankentität mithilfe des `\Migration\Handler\Timezone`-Handlers anpassen. Weitere Informationen finden [&#x200B; im Abschnitt &#x200B;](follow-up.md)Follow-up“.

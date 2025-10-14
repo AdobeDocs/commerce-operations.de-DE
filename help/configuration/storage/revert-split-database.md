@@ -65,7 +65,7 @@ In diesem Beispiel melden wir uns bei allen drei Datenbanken an, die auf demselb
 
 ## Überprüfen der Arbeit
 
-Um sicherzustellen, dass Ihre Einzeldatenbankimplementierung ordnungsgemäß funktioniert, führen Sie die folgenden Aufgaben aus und überprüfen Sie mithilfe eines Datenbank-Tools wie „phpMyAdmin`magento_main`, dass den [ Datenbanktabellen Daten hinzugefügt ](../../installation/prerequisites/optional-software.md#phpmyadmin):
+Um sicherzustellen, dass Ihre Einzeldatenbankimplementierung ordnungsgemäß funktioniert, führen Sie die folgenden Aufgaben aus und überprüfen Sie mithilfe eines Datenbank-Tools wie „phpMyAdmin`magento_main`, dass den [&#x200B; Datenbanktabellen Daten hinzugefügt &#x200B;](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Stellen Sie sicher, dass Fremdschlüssel wiederhergestellt wurden. Beispielsweise den `QUOTE_STORE_ID_STORE_STORE_ID` Schlüssel in der `quote` Datenbanktabelle.
 1. Überprüfen Sie, ob Kunden Bestellungen in der Storefront aufgeben können.

@@ -39,7 +39,7 @@ Siehe die folgenden technischen Details zu Cloud Foundation:
 
 ## Integration mit Experience Cloud
 
-Adobe Commerce lässt sich mit allen Experience Cloud-Lösungen integrieren, um [personalisierte Commerce-Erlebnisse in großem Maßstab“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+Adobe Commerce lässt sich mit allen Experience Cloud-Lösungen integrieren, um [personalisierte Commerce-Erlebnisse in großem Maßstab“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Datenverbindung](https://experienceleague.adobe.com/de/docs/commerce/data-connection/overview) ermöglicht Einblicke in das Kaufverhalten Ihrer Kunden, sodass Sie mit anderen Adobe Digital Experience-Produkten kanalübergreifend personalisierte Einkaufserlebnisse erstellen können.
 

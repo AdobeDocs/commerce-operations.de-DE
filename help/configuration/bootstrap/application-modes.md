@@ -20,7 +20,7 @@ Sie können die Commerce-Anwendung in einem der folgenden _ausführen_:
 | [Produktion](#production-mode) | Stellen Sie das Commerce-Programm bereit und führen Sie es in einem Produktionssystem aus. | Ja |
 | [Wartung](#maintenance-mode) | Verhindern Sie den Zugriff auf eine Site, während Sie Aktualisierungen und Konfigurationen durchführen. | Ja |
 
-Informationen [ manuellen Ändern der Adobe Commerce](../cli/set-mode.md)Betriebsmodi finden Sie unter „Festlegen des Betriebsmodus“.
+Informationen [&#x200B; manuellen Ändern der Adobe Commerce](../cli/set-mode.md)Betriebsmodi finden Sie unter „Festlegen des Betriebsmodus“.
 
 ## Cloud-Support
 
@@ -64,7 +64,7 @@ Im Entwicklermodus:
 
 Der _Produktionsmodus_ eignet sich am besten für die Bereitstellung der Commerce-Anwendung auf einem Produktionssystem. Nach der Optimierung der Serverumgebung, z. B. der Datenbank und des Webservers, sollten Sie das Bereitstellungs-Tool für [statische Ansichtsdateien](../cli/static-view-file-deployment.md) ausführen, um statische Ansichtsdateien in das `pub/static`-Verzeichnis zu schreiben. Dies verbessert die Leistung, indem alle erforderlichen statischen Dateien bei der Bereitstellung bereitgestellt werden, anstatt das Commerce-Programm zu zwingen, statische Dateien bei Bedarf während der Laufzeit dynamisch zu suchen und zu kopieren (materialisieren).
 
-Einige Felder, wie die Systemkonfigurationsabschnitte „Erweitert“ und „Entwickler“ in „Admin“, sind im Produktionsmodus nicht verfügbar. Beispielsweise können Sie _Cache-Typen_ der Admin-Klasse nicht aktivieren oder deaktivieren. Sie können Cache-Typen (nur _)_ der [Befehlszeile) aktivieren ](../cli/manage-cache.md#config-cli-subcommands-cache-en) deaktivieren.
+Einige Felder, wie die Systemkonfigurationsabschnitte „Erweitert“ und „Entwickler“ in „Admin“, sind im Produktionsmodus nicht verfügbar. Beispielsweise können Sie _Cache-Typen_ der Admin-Klasse nicht aktivieren oder deaktivieren. Sie können Cache-Typen (nur _)_ der [Befehlszeile) aktivieren &#x200B;](../cli/manage-cache.md#config-cli-subcommands-cache-en) deaktivieren.
 
 Im Produktionsmodus:
 
@@ -76,7 +76,7 @@ Im Produktionsmodus:
 
 Der _Wartungsmodus_ beschränkt oder verhindert den Zugriff auf eine Site während Verbesserungen, Aktualisierungen und Konfigurationsaufgaben. Standardmäßig leitet die Site Besucher zu einer standardmäßigen `Service Temporarily Unavailable` um.
 
-Sie können eine [benutzerdefinierte Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md) erstellen, den Wartungsmodus manuell aktivieren und deaktivieren und den Wartungsmodus so konfigurieren, dass Besucher von autorisierten IP-Adressen den Store normal anzeigen können. Siehe [Aktivieren und Deaktivieren des ](../../installation/tutorials/maintenance-mode.md) im _Installationshandbuch_.
+Sie können eine [benutzerdefinierte Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md) erstellen, den Wartungsmodus manuell aktivieren und deaktivieren und den Wartungsmodus so konfigurieren, dass Besucher von autorisierten IP-Adressen den Store normal anzeigen können. Siehe [Aktivieren und Deaktivieren des &#x200B;](../../installation/tutorials/maintenance-mode.md) im _Installationshandbuch_.
 
 Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Wenn die Bereitstellung erfolgreich abgeschlossen wurde, kehrt die Commerce-Anwendung zur Ausführung im Produktionsmodus zurück. Siehe [Bereitstellungs-Hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=de#phase-5%3A-deployment-hooks) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 

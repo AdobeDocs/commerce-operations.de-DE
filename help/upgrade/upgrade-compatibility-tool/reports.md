@@ -27,7 +27,7 @@ File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
  * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
-Weitere Informationen zu den verschiedenen Fehlern[ die dieser Bericht verursachen kann, finden Sie ](../upgrade-compatibility-tool/error-messages.md) Thema „Fehlermeldungsreferenz“.
+Weitere Informationen zu den verschiedenen Fehlern[&#x200B; die dieser Bericht verursachen kann, finden Sie &#x200B;](../upgrade-compatibility-tool/error-messages.md) Thema „Fehlermeldungsreferenz“.
 
 Dieser Bericht enthält auch eine detaillierte Zusammenfassung, die Folgendes enthält:
 

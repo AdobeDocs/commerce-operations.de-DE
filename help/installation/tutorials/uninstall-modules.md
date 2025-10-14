@@ -17,7 +17,7 @@ Sie sollten ein Modul nur deinstallieren, wenn Sie sicher sind, dass Sie es nich
 
 >[!NOTE]
 >
->Dieser Befehl prüft, ob nur in der `composer.json` deklarierte Abhängigkeiten vorhanden sind. Wenn Sie ein Modul deinstallieren, das _nicht_ in der `composer.json` definiert ist, wird das Modul mit diesem Befehl deinstalliert, ohne auf Abhängigkeiten zu prüfen. Dieser Befehl entfernt _jedoch_ den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystem-Tools verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie Nicht-Composer[Module ](manage-modules.md)deaktivieren).
+>Dieser Befehl prüft, ob nur in der `composer.json` deklarierte Abhängigkeiten vorhanden sind. Wenn Sie ein Modul deinstallieren, das _nicht_ in der `composer.json` definiert ist, wird das Modul mit diesem Befehl deinstalliert, ohne auf Abhängigkeiten zu prüfen. Dieser Befehl entfernt _jedoch_ den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystem-Tools verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie Nicht-Composer[Module &#x200B;](manage-modules.md)deaktivieren).
 
 Befehlsverwendung:
 

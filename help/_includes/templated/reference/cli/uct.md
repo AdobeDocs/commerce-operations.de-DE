@@ -21,7 +21,7 @@ Die anfängliche Liste wird automatisch mit dem `bin/uct list`-Befehl in Adobe C
 
 Weitere Informationen zum Tool finden Sie unter [Übersicht](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
-Diese Referenzdokumentation wird aus dem Programm-Quell-Code generiert. Um die Dokumentation zu ändern, sollten Sie eine Pull-Anfrage für den entsprechenden Befehl im entsprechenden [Codebase“-](https://github.com/magento) öffnen. Weitere Informationen [ Sie unter ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)Code-Beiträge“.
+Diese Referenzdokumentation wird aus dem Programm-Quell-Code generiert. Um die Dokumentation zu ändern, sollten Sie eine Pull-Anfrage für den entsprechenden Befehl im entsprechenden [Codebase“-](https://github.com/magento) öffnen. Weitere Informationen [&#x200B; Sie unter &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)Code-Beiträge“.
 
 ### Globale Optionen
 

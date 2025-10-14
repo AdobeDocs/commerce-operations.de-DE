@@ -16,7 +16,7 @@ Der `Settings` Modus migriert Stores, Websites und Systemkonfigurationen wie Ver
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich beim Anwendungs-Server als [Dateisystemeigentümer“ ](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Anwendungs-Server als [Dateisystemeigentümer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 
 1. Wechseln Sie in das `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem `PATH` hinzugefügt wird.
 
@@ -25,7 +25,7 @@ Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzube
 >Stellen Sie sicher, dass Magento 2 im `default` bereitgestellt wird. Der Entwicklermodus kann zu Validierungsfehlern im Migrations-Tool führen.
 
 
-Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
 
 ## Ausführen des Befehls zur Einstellungsmigration
 
@@ -80,7 +80,7 @@ Sie können die Systemkonfigurationen beim Migrieren von Einstellungen ignoriere
 
 1. Um den neuen Namen der Einstellungsdatei für die Zuordnung anzugeben, ändern Sie das `<settings_map_file>`-Tag in der `path/to/config.xml`.
 
-Weitere Informationen finden Sie [ Abschnitt „Einstellungen Migrationsmodus](../technical-specification.md#settings-migration-mode) der [ des Tools](../technical-specification.md).
+Weitere Informationen finden Sie [&#x200B; Abschnitt „Einstellungen Migrationsmodus](../technical-specification.md#settings-migration-mode) der [&#x200B; des Tools](../technical-specification.md).
 
 ## Nächster Migrationsschritt
 

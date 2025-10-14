@@ -60,7 +60,7 @@ Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionieren
 
 >[!NOTE]
 >
->Weitere Informationen finden [ unter ](../prerequisites/overview.md) und [Installationshandbuch](../overview.md).
+>Weitere Informationen finden [&#x200B; unter &#x200B;](../prerequisites/overview.md) und [Installationshandbuch](../overview.md).
 
 ## &#x200B;1. Serverkonfiguration bearbeiten
 

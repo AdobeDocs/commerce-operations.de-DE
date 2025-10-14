@@ -21,7 +21,7 @@ Dieses Thema soll Ihnen bei der Entscheidung helfen, ob Sie Git oder Composer ve
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

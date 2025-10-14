@@ -22,7 +22,7 @@ Ab Adobe Commerce 2.4 müssen alle Installationen so konfiguriert sein, dass [El
 
 Sie müssen entweder Elasticsearch oder OpenSearch installieren und konfigurieren, bevor Sie Adobe Commerce 2.4.4 und höher installieren.
 
-Spezifische Versionsinformationen finden [ in den ](../../system-requirements.md)Systemanforderungen“.
+Spezifische Versionsinformationen finden [&#x200B; in den &#x200B;](../../system-requirements.md)Systemanforderungen“.
 
 ## Empfohlene Konfiguration
 
@@ -132,7 +132,7 @@ Weitere Optionen finden Sie in der Dokumentation zu [Oracle](https://docs.oracle
 
 ### Installieren der Suchmaschine
 
-Elasticsearch Befolgen Sie [Installieren von ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) oder [Installieren und Konfigurieren von OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) für Ihre plattformspezifischen Schritte.
+Elasticsearch Befolgen Sie [Installieren von &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) oder [Installieren und Konfigurieren von OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) für Ihre plattformspezifischen Schritte.
 
 Um zu überprüfen, ob Elasticsearch funktioniert, geben Sie den folgenden Befehl auf dem Server ein, auf dem es ausgeführt wird:
 
@@ -165,4 +165,4 @@ Elasticsearch erfordert JDK 1.8 oder höher. Unter [Installieren des Java Softwa
 
 ## Zusätzliche Ressourcen
 
-Weitere Informationen finden Sie in der Dokumentation zu [0](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)Elasticsearch[ oder OpenSearch.](https://opensearch.org/docs/latest/)
+Weitere Informationen finden Sie in der Dokumentation zu [0](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)Elasticsearch[&#x200B; oder OpenSearch.](https://opensearch.org/docs/latest/)

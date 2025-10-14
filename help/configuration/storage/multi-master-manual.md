@@ -263,7 +263,7 @@ Dieses Skript stellt Verkaufsdaten in Ihrer Angebotsdatenbank wieder her.
 
 #### NDB-Anforderung
 
-Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
+Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
 
 1. Konvertieren von Tabellen vom InnoDb- in den NDB-Typ in Dump-Dateien:
 
@@ -357,7 +357,7 @@ mysqldump -u <your database root username> -p <your main Commerce DB name> magen
 
 ### NDB-Anforderung
 
-Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
+Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
 
 1. Konvertieren von Tabellen vom InnoDb- in den NDB-Typ in Dump-Dateien:
 

@@ -14,10 +14,10 @@ ht-degree: 0%
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich bei Ihrem Anwendungs-Server [als „Dateisystembesitzer“ ](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Anwendungs-Server [als „Dateisystembesitzer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie zum Installationsverzeichnis der Anwendung oder stellen Sie sicher, dass es zum `PATH` hinzugefügt wird.
 
-Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
 
 ## Ausführen des Datenmigrationsbefehls
 
@@ -105,7 +105,7 @@ Während der Ausführung meldet der [!DNL Data Migration Tool] möglicherweise I
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Weitere Informationen [ Empfehlungen finden ](https://support.magento.com/hc/en-us/articles/360033020451) im Abschnitt „Fehlerbehebung“ dieses Handbuchs.
+Weitere Informationen [&#x200B; Empfehlungen finden &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) im Abschnitt „Fehlerbehebung“ dieses Handbuchs.
 
 ## Nächster Migrationsschritt
 

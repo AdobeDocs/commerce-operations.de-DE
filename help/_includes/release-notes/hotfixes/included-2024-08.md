@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Diese Version enthält die folgenden Hotfixes:
 
-* Hotfix zur Behebung eines JavaScript-Fehlers, der verhinderte, dass Google Maps im [!UICONTROL **PageBuilder**]-Editor ordnungsgemäß gerendert wurden. Weitere Informationen finden Sie [ Artikel „Überarbeitete Patches für Google Maps - Zugriffsverlust auf alle Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions)Versionen“ in der Wissensdatenbank.
+* Hotfix zur Behebung eines JavaScript-Fehlers, der verhinderte, dass Google Maps im [!UICONTROL **PageBuilder**]-Editor ordnungsgemäß gerendert wurden. Weitere Informationen finden Sie [&#x200B; Artikel „Überarbeitete Patches für Google Maps - Zugriffsverlust auf alle Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions)Versionen“ in der Wissensdatenbank.
 
 <!--
 ACP2E-3156

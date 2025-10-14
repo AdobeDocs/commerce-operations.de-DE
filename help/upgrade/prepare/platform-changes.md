@@ -17,4 +17,4 @@ Kunden und Partner von Adobe Commerce können auch auf [Adobe Commerce-Betaversi
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 ist die letzte Version, die vom Beta-Programm unterstützt wird. Ab Juni 2023 veröffentlicht Adobe öffentliche Betas für Adobe Commerce. Eine Liste [ öffentlichen Beta-Veröffentlichungstermine finden Sie ](../../release/schedule.md) „Veröffentlichungszeitplan“.
+>Adobe Commerce 2.4.6 ist die letzte Version, die vom Beta-Programm unterstützt wird. Ab Juni 2023 veröffentlicht Adobe öffentliche Betas für Adobe Commerce. Eine Liste [&#x200B; öffentlichen Beta-Veröffentlichungstermine finden Sie &#x200B;](../../release/schedule.md) „Veröffentlichungszeitplan“.

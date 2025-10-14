@@ -10,7 +10,7 @@ ht-degree: 0%
 | Beitragendes Community-Mitglied | Pull-Anforderungen | Verwandte GitHub-Probleme |
 | ------- | ------- | ------- |
 | [Dhaecker](https://github.com/dhaecker) | [#31045](https://github.com/magento/magento2/pull/31045) |  |
-| [Sagar1Dahiwala](https://github.com/sagar1dahiwala) | [#31101](https://github.com/magento/magento2/pull/31101) | [501 ](https://github.com/magento/magento2/issues/501) |
+| [Sagar1Dahiwala](https://github.com/sagar1dahiwala) | [#31101](https://github.com/magento/magento2/pull/31101) | [501 &#x200B;](https://github.com/magento/magento2/issues/501) |
 | [zaximus84](https://github.com/zaximus84) | [#31022](https://github.com/magento/magento2/pull/31022) | [30265](https://github.com/magento/magento2/issues/30265) |
 | [Ihor-Sviziev](https://github.com/ihor-sviziev) | [#31151](https://github.com/magento/magento2/pull/31151) | [31152](https://github.com/magento/magento2/issues/31152) |
 | [AnnaAPak](https://github.com/AnnaAPak) | [#31079](https://github.com/magento/magento2/pull/31079) | [31160](https://github.com/magento/magento2/issues/31160) |
@@ -99,7 +99,7 @@ ht-degree: 0%
 | [aapokiiso](https://github.com/aapokiiso) | [#30950](https://github.com/magento/magento2/pull/30950) | [31042](https://github.com/magento/magento2/issues/31042) |
 | [Nikunjkotecha](https://github.com/nikunjkotecha) | [#21857](https://github.com/magento/magento2/pull/21857) | [21853](https://github.com/magento/magento2/issues/21853) |
 | [engcom-kilo](https://github.com/engcom-Kilo) | [#31646](https://github.com/magento/magento2/pull/31646) | [11995](https://github.com/magento/magento2/issues/11995) |
-| [mrtuvn](https://github.com/mrtuvn) | [#31793](https://github.com/magento/magento2/pull/31793) | [7231 ](https://github.com/magento/magento2/issues/7231) |
+| [mrtuvn](https://github.com/mrtuvn) | [#31793](https://github.com/magento/magento2/pull/31793) | [7231 &#x200B;](https://github.com/magento/magento2/issues/7231) |
 | [Navarr](https://github.com/navarr) | [#31621](https://github.com/magento/magento2/pull/31621) | [27678](https://github.com/magento/magento2/issues/27678) |
 | [Kate-Kyzyma](https://github.com/kate-kyzyma) | [#31827](https://github.com/magento/magento2/pull/31827) | [31844](https://github.com/magento/magento2/issues/31844) |
 | [sergiy-v](https://github.com/sergiy-v) | [#31592](https://github.com/magento/magento2/pull/31592) | [31628](https://github.com/magento/magento2/issues/31628) |

@@ -22,7 +22,7 @@ Mitwirkende Entwickler können diese Methode zum Installieren von Beispieldaten 
 
 >[!WARNING]
 >
->Sie können Beispieldaten entweder mit der `develop` Verzweigung (aktueller) oder mit einer freigegebenen Verzweigung (z. B. `2.4` (stabiler)) verwenden. Es wird empfohlen, eine freigegebene Verzweigung zu verwenden, da sie stabiler ist. Wenn Sie Code zum Repository beitragen und den neuesten Code benötigen, verwenden Sie die `develop`. Unabhängig von der ausgewählten Verzweigung müssen Sie [ entsprechende Verzweigung ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open Source GitHub-Repositorys klonen. Beispielsweise können Beispieldaten für die `develop` Verzweigung (nur *)* der Magento Open Source-`develop` verwendet werden.
+>Sie können Beispieldaten entweder mit der `develop` Verzweigung (aktueller) oder mit einer freigegebenen Verzweigung (z. B. `2.4` (stabiler)) verwenden. Es wird empfohlen, eine freigegebene Verzweigung zu verwenden, da sie stabiler ist. Wenn Sie Code zum Repository beitragen und den neuesten Code benötigen, verwenden Sie die `develop`. Unabhängig von der ausgewählten Verzweigung müssen Sie [&#x200B; entsprechende Verzweigung &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) Magento Open Source GitHub-Repositorys klonen. Beispielsweise können Beispieldaten für die `develop` Verzweigung (nur *)* der Magento Open Source-`develop` verwendet werden.
 
 ## Klonen Sie das Beispieldaten-Repository.
 
@@ -59,7 +59,7 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem SSH-Protokoll:
 
    >[!NOTE]
    >
-   >Wenn der folgende Fehler angezeigt wird, stellen Sie sicher[ dass Sie „Ihren SSH-Schlüssel ](https://docs.github.com/articles/generating-ssh-keys/) GitHub freigegeben haben:<br>
+   >Wenn der folgende Fehler angezeigt wird, stellen Sie sicher[&#x200B; dass Sie „Ihren SSH-Schlüssel &#x200B;](https://docs.github.com/articles/generating-ssh-keys/) GitHub freigegeben haben:<br>
 
    ```
    Cloning into 'magento2'...

@@ -274,7 +274,7 @@ _Substantiv_
 Ermöglicht Kunden, ein benutzerdefiniertes Produkt aus verschiedenen Optionen und Konfigurationen zusammenzustellen.
 Jedes Element im Bundle ist entweder ein separates einfaches oder ein virtuelles Produkt.
 
-Weitere Informationen: [Konfigurierbare ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=de)
+Weitere Informationen: [Konfigurierbare &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=de)
 
 _Attribute :_
 
@@ -989,7 +989,7 @@ _Attribute :_
 _Substantiv_
 
 In Marketing und Einzelhandel ein Prozentsatz, der zu den Kosten eines Artikels addiert wird, um den Einzelhandelspreis zu bestimmen.
-[Konfigurieren des ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=de) oder Markdown eines Produkts durch anpassbare Optionen.
+[Konfigurieren des &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=de) oder Markdown eines Produkts durch anpassbare Optionen.
 
 In der Entwicklung eine Computersprache, die die Verarbeitung, Darstellung und Formatierung von Text steuert.
 Markup-Tags sind Code-Ausschnitte, die einer CMS-Seite oder einem -Block Funktionen oder Inhalte hinzufügen.

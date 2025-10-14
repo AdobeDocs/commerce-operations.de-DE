@@ -65,7 +65,7 @@ So überprüfen Sie installierte Erweiterungen:
 
 >[!WARNING]
 >
->Wenn Sie PHP 7.4.20 verwenden, setzen Sie `pcre.jit=0` in Ihrer `php.ini`. Dies umgeht einen PHP-[, der ](https://bugs.php.net/bug.php?id=81101) Laden von CSS verhindert.
+>Wenn Sie PHP 7.4.20 verwenden, setzen Sie `pcre.jit=0` in Ihrer `php.ini`. Dies umgeht einen PHP-[, der &#x200B;](https://bugs.php.net/bug.php?id=81101) Laden von CSS verhindert.
 
 - Legen Sie die Systemzeitzone für PHP fest; andernfalls funktionieren Fehler wie die folgende Anzeige während der Installation und zeitbezogene Vorgänge wie cron möglicherweise nicht:
 
@@ -106,7 +106,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationsdateien finden, 
 
 ### Suchen `php.ini` Konfigurationsdatei
 
-Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei ](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
+Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei &#x200B;](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
 
 ![PHP-Informationsseite](../../assets/installation/config_phpini-webserver.png)
 

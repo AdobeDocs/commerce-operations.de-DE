@@ -38,7 +38,7 @@ Die Zuweisung von Kategorien in einem [!DNL B2B] freigegebenen Katalog über die
 
 1. Aktivieren Sie **[!UICONTROL B2B]**, **[!UICONTROL Company]** und **[!UICONTROL Shared Catalog]**.
 1. Generieren Sie 30.000 aktive, vorrätige Produkte.
-1. Erstellen Sie [ benutzerdefinierten freigegebenen ](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) und weisen Sie ihm alle Produkte zu.
+1. Erstellen Sie [&#x200B; benutzerdefinierten freigegebenen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) und weisen Sie ihm alle Produkte zu.
 1. Erstellen Sie eine neue Kategorie unter der standardmäßigen Stammkategorie und weisen Sie ihr einige Produkte zu.
 1. Verwenden Sie das Admin-Token, um den REST-API-Endpunkt `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` mit der neuen Kategorie-ID aufzurufen.
 

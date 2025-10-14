@@ -93,7 +93,7 @@ stage:
 
 Siehe [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_use_slave_connection) im _Handbuch zu Commerce in Cloud-Infrastrukturen_.
 
-Konfigurieren Sie bei lokalen Adobe Commerce-Installationen die neue Redis-Cache-Implementierung mithilfe der `bin/magento:setup`. Siehe [Verwenden von Redis für den ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)-Cache) im _Konfigurationshandbuch_.
+Konfigurieren Sie bei lokalen Adobe Commerce-Installationen die neue Redis-Cache-Implementierung mithilfe der `bin/magento:setup`. Siehe [Verwenden von Redis für den &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)-Cache) im _Konfigurationshandbuch_.
 
 >[!WARNING]
 >
@@ -166,7 +166,7 @@ Verringern Sie die Sperrwartezeiten und verbessern Sie die Leistung - insbesonde
 
 >[!NOTE]
 >
->Im vorherigen Beispiel ist der `full_page`-Cache für Adobe Commerce für Cloud-Infrastrukturprojekte nicht relevant, da sie „Fastly[ verwenden](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>Im vorherigen Beispiel ist der `full_page`-Cache für Adobe Commerce für Cloud-Infrastrukturprojekte nicht relevant, da sie „Fastly[&#x200B; verwenden](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Informationen zum Konfigurieren von On-Premise-Installationen finden Sie unter [Veraltete Cache](../../../configuration/cache/level-two-cache.md#stale-cache-options) im _Konfigurationshandbuch_.
 
@@ -243,7 +243,7 @@ Wenn Sie den Redis-Cache von der Redis-Sitzung trennen, können Sie den Cache un
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-Während der Bereitstellung sollten die folgenden Zeilen im „Build- [ Bereitstellungsprotokoll“ angezeigt ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de#build-and-deploy-logs):
+Während der Bereitstellung sollten die folgenden Zeilen im „Build- [&#x200B; Bereitstellungsprotokoll“ angezeigt &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)

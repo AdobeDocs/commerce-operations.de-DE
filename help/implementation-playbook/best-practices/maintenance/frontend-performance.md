@@ -18,7 +18,7 @@ Diese Tools verwenden verschiedene Metriken, um leistungsstarke Einblicke und Em
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

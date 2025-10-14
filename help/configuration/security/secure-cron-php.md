@@ -23,7 +23,7 @@ Der Cron-Auftrag führt mehrere geplante Aufgaben aus und ist ein wichtiger Teil
 
 >[!INFO]
 >
->Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) „Konfigurieren und Ausführen von Cron“.
+>Weitere Informationen [&#x200B; Cron-Gruppen finden Sie &#x200B;](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) „Konfigurieren und Ausführen von Cron“.
 
 Sie können einen Cron-Auftrag wie folgt ausführen:
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->Sie müssen Cron zweimal ausführen: zuerst um Aufgaben zu finden, die ausgeführt werden sollen, und dann erneut, um die Aufgaben selbst auszuführen. Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md) „Konfigurieren und Ausführen von Cron“.
+>Sie müssen Cron zweimal ausführen: zuerst um Aufgaben zu finden, die ausgeführt werden sollen, und dann erneut, um die Aufgaben selbst auszuführen. Weitere Informationen [&#x200B; Cron-Gruppen finden Sie &#x200B;](../cli/configure-cron-jobs.md) „Konfigurieren und Ausführen von Cron“.

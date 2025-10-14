@@ -23,7 +23,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.4.x und höher
 
 Aktualisieren Sie die von Adobe Commerce verwendeten Services und Komponenten, bevor sie das Ende ihres Lebenszyklus erreichen oder kurz davor sind. Dies hilft, mit der PCI-Compliance Schritt zu halten und Sicherheitslücken zu schließen.
 
-Kunden mit Starter-Plänen können Service-Upgrades selbst durchführen. Einzelheiten dazu finden [ unter &quot;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) ändern“.
+Kunden mit Starter-Plänen können Service-Upgrades selbst durchführen. Einzelheiten dazu finden [&#x200B; unter &quot;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) ändern“.
 
 Kunden mit Pro-Plänen können Services-Upgrades nur selbst in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html?lang=de) bereitstellen. Für Service-Upgrades in der Produktion müssen Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) um das Upgrade anzufordern.
 

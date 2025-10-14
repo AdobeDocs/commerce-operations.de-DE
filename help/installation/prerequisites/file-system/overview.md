@@ -31,7 +31,7 @@ Es gibt zwei Arten von Dateisystembesitzern:
 
    - Der _Befehlszeilenbenutzer_ führt Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
 
-  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe“ zu verwenden ](configure-permissions.md#set-ownership-and-permissions-for-two-users) eine [`umask`](#restrict-access-with-a-umask) festzulegen.
+  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe“ zu verwenden &#x200B;](configure-permissions.md#set-ownership-and-permissions-for-two-users) eine [`umask`](#restrict-access-with-a-umask) festzulegen.
 
 ### Beschränken des Zugriffs mit einer Maske
 
@@ -59,7 +59,7 @@ Bei Verwendung der verschiedenen Adobe Commerce-Anwendungsmodi werden unterschie
 - Entwickler
 - Produktion
 
-Siehe [Über ](../../../configuration/bootstrap/application-modes.md)) im _Konfigurationshandbuch_.
+Siehe [Über &#x200B;](../../../configuration/bootstrap/application-modes.md)) im _Konfigurationshandbuch_.
 
 Weitere Informationen zu Berechtigungsempfehlungen finden Sie unter [Zugriffsberechtigungen für Dateisysteme](../../../configuration/deployment/file-system-permissions.md) im _Konfigurationshandbuch_.
 

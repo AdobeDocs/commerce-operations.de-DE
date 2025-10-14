@@ -47,8 +47,8 @@ Dieser zusätzliche Mehraufwand kann sich negativ auf die Site-Leistung auf der 
 Um Leistungsprobleme bei der Verwendung von Triggern zu vermeiden, befolgen Sie die folgenden Richtlinien:
 
 - Wenn Sie benutzerdefinierte Trigger haben, die einige Daten schreiben, wenn der Trigger ausgeführt wird, verschieben Sie diese Logik stattdessen so, dass sie direkt in die Audit-Tabellen schreibt. Durch Hinzufügen einer zusätzlichen Abfrage im Anwendungscode nach der Abfrage, für die Sie den Trigger erstellen möchten, können Sie dies beispielsweise tun.
-- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt in die Tabellen auf Anwendungsseite zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung nach vorhandenen Triggern in Ihrer ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [ Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de&#submit-ticket).
+- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt in die Tabellen auf Anwendungsseite zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung nach vorhandenen Triggern in Ihrer &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
+- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [&#x200B; Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de&#submit-ticket).
 
 ## Slave-Verbindungen
 

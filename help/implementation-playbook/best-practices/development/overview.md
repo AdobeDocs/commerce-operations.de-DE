@@ -26,7 +26,7 @@ Die Entwicklungsphase umfasst die folgenden Aktivitäten:
 
 >[!TIP]
 >
->Allgemeine Best [ finden Sie ](general.md) allgemeinen Empfehlungen zur Gesamtverwaltung des Entwicklungsprozesses.
+>Allgemeine Best [&#x200B; finden Sie &#x200B;](general.md) allgemeinen Empfehlungen zur Gesamtverwaltung des Entwicklungsprozesses.
 
 Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entwicklungsphase.
 

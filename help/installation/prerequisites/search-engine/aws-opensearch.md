@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 unterstützt die Verwendung von Amazon OpenSearch-Service-C
 ## Erstellen einer AWS OpenSearch-Service-Domain
 
 Zunächst müssen Sie eine OpenSearch-Instanz in AWS einrichten.
-Detaillierte [ finden Sie unter „Erstellen und Verwalten ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) Amazon OpenSearch-Service-Domains“.
+Detaillierte [&#x200B; finden Sie unter „Erstellen und Verwalten &#x200B;](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) Amazon OpenSearch-Service-Domains“.
 
 ## Abrufen von Daten zu AWS OpenSearch
 
@@ -33,7 +33,7 @@ Bei größeren Installationen empfiehlt es sich möglicherweise, die Datenindize
 Sie müssen keine Indizes migrieren, da diese einfach auf der AWS-Instanz neu erstellt werden können.
 Stellen Sie jedoch beim Migrieren von Datenindizes sicher, dass die Versionen von Elasticsearch/OpenSearch kompatibel sind.
 
-Weitere Informationen finden Sie in [ Anleitung zur Migration zum Amazon OpenSearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html)Service von Amazon.
+Weitere Informationen finden Sie in [&#x200B; Anleitung zur Migration zum Amazon OpenSearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html)Service von Amazon.
 
 ### Konfigurieren von Commerce für OpenSearch
 

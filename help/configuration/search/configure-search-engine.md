@@ -114,4 +114,4 @@ So indizieren Sie eine Neuindizierung über die Befehlszeile:
 
    >[!INFO]
    >
-   >Im Gegensatz zum Cache werden Indexer durch einen Cron-Auftrag aktualisiert. Stellen Sie sicher[ dass „cron](../cli/configure-cron-jobs.md) aktiviert ist, bevor Sie mit der Nutzung Ihrer Suchmaschine beginnen.
+   >Im Gegensatz zum Cache werden Indexer durch einen Cron-Auftrag aktualisiert. Stellen Sie sicher[&#x200B; dass „cron](../cli/configure-cron-jobs.md) aktiviert ist, bevor Sie mit der Nutzung Ihrer Suchmaschine beginnen.

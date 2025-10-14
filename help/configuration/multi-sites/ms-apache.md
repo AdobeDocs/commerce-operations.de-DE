@@ -114,6 +114,6 @@ Sofern Sie kein DNS für die URLs Ihrer Stores eingerichtet haben, müssen Sie e
 
 ### Fehlerbehebung
 
-- Wenn Ihre französischen und deutschen Websites 404 s zurückgeben, aber Ihr Administrator geladen wird, stellen Sie sicher, dass Sie [ abgeschlossen haben (Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Wenn Ihre französischen und deutschen Websites 404 s zurückgeben, aber Ihr Administrator geladen wird, stellen Sie sicher, dass Sie [&#x200B; abgeschlossen haben (Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Wenn alle URLs den Wert 404 zurückgeben, stellen Sie sicher, dass Sie Ihren Webserver neu gestartet haben.
 - Wenn der Administrator nicht ordnungsgemäß funktioniert, stellen Sie sicher, dass Sie die virtuellen Hosts ordnungsgemäß einrichten.

@@ -34,7 +34,7 @@ Migration ist ein perfekter Moment, um ernsthafte Änderungen vorzunehmen und Ih
 
 * Installieren Sie Magento 2.x (mit allen Modulen dieser Version) und den [!DNL Data Migration Tool] auf einem System, das die [Systemanforderungen](../../installation/system-requirements.md) erfüllt
 
-* Nehmen Sie Ihre benutzerdefinierten Anpassungen am [!DNL Data Migration Tool] vor, falls Sie einige Daten nicht migrieren müssen (z. B. CMS-Seiten, Vertriebsregeln) oder Ihre Magento-Anpassung während der Migration konvertieren möchten. Lesen Sie die [!DNL Data Migration Tool]Technische Spezifikation“ des [, ](technical-specification.md) besser zu verstehen, wie die Migration von innen heraus funktioniert
+* Nehmen Sie Ihre benutzerdefinierten Anpassungen am [!DNL Data Migration Tool] vor, falls Sie einige Daten nicht migrieren müssen (z. B. CMS-Seiten, Vertriebsregeln) oder Ihre Magento-Anpassung während der Migration konvertieren möchten. Lesen Sie die [!DNL Data Migration Tool]Technische Spezifikation“ des [, &#x200B;](technical-specification.md) besser zu verstehen, wie die Migration von innen heraus funktioniert
 
 ## Schritt 3: Probelauf
 

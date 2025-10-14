@@ -15,7 +15,7 @@ Das [!DNL Magento PHPStorm plugin] ist ein von der Community erstelltes Tool, mi
 
 Unter [Installation](https://developer.adobe.com/commerce/php/best-practices/phpstorm/install/) finden Sie detaillierte Schritte zur Installation des [!DNL Magento PHPStorm plugin].
 
-Sie können die [!DNL Upgrade Compatibility Tool] mit einer Ausführungskonfiguration über die [!DNL Magento PHPStorm plugin] ausführen. Weitere Informationen finden [[!DNL Upgrade Compatibility Tool]  unter ](https://developer.adobe.com/commerce/php/best-practices/phpstorm/run-configuration/) ausführen.
+Sie können die [!DNL Upgrade Compatibility Tool] mit einer Ausführungskonfiguration über die [!DNL Magento PHPStorm plugin] ausführen. Weitere Informationen finden [[!DNL Upgrade Compatibility Tool]  unter &#x200B;](https://developer.adobe.com/commerce/php/best-practices/phpstorm/run-configuration/) ausführen.
 
 ## [!DNL Magento PHPStorm plugin] Demo
 

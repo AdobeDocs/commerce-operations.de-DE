@@ -29,7 +29,7 @@ Sie erhalten in [!DNL New Relic] einen verwalteten Warnhinweis, wenn Sie sich be
 **Do!**
 
 * Bricht jede geplante Bereitstellung ab, bis dieser Warnhinweis gelöscht wird.
-* Setzen Sie Ihre Site sofort in den Wartungsmodus, wenn Ihre Site nicht mehr reagiert oder überhaupt nicht mehr reagiert. Anweisungen hierzu finden Sie [Aktivieren oder Deaktivieren des ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)) im Commerce-Installationshandbuch. Fügen Sie Ihre IP-Adresse der Liste der von der Steuer befreiten IP-Adressen hinzu, um sicherzustellen, dass Sie weiterhin zur Fehlerbehebung auf Ihre Website zugreifen können. Anweisungen hierzu finden Sie unter [Liste der ausgenommenen IP-Adressen verwalten](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses).
+* Setzen Sie Ihre Site sofort in den Wartungsmodus, wenn Ihre Site nicht mehr reagiert oder überhaupt nicht mehr reagiert. Anweisungen hierzu finden Sie [Aktivieren oder Deaktivieren des &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)) im Commerce-Installationshandbuch. Fügen Sie Ihre IP-Adresse der Liste der von der Steuer befreiten IP-Adressen hinzu, um sicherzustellen, dass Sie weiterhin zur Fehlerbehebung auf Ihre Website zugreifen können. Anweisungen hierzu finden Sie unter [Liste der ausgenommenen IP-Adressen verwalten](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses).
 * Beenden Sie alle Skripte, z. B. Importe, die die Ursache des Warnhinweises sein könnten, wenn die Site-Leistung beeinträchtigt ist.
 
 **Tu&#39;s nicht!**
@@ -44,16 +44,16 @@ Sie erhalten in [!DNL New Relic] einen verwalteten Warnhinweis, wenn Sie sich be
 
 Wenn Sie einen Warnhinweis „Kritische DML-Abfragen“ erhalten, beginnen Sie mit Schritt 1. Wenn Sie einen Warnhinweis zu DML-Abfragen erhalten, beginnen Sie mit Schritt 2.
 
-1. Überprüfen, ob ein Adobe Commerce-Support-Ticket vorhanden ist. Anweisungen hierzu finden Sie in unserer Wissensdatenbank [Support-Tickets ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Möglicherweise hat der Support einen Warnhinweis für einen [!DNL New Relic] Schwellenwert erhalten, ein Ticket erstellt und die Arbeit an dem Problem begonnen. Wenn kein Ticket vorhanden ist, erstellen Sie eines. Das Ticket sollte die folgenden Informationen enthalten:
+1. Überprüfen, ob ein Adobe Commerce-Support-Ticket vorhanden ist. Anweisungen hierzu finden Sie in unserer Wissensdatenbank [Support-Tickets &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Möglicherweise hat der Support einen Warnhinweis für einen [!DNL New Relic] Schwellenwert erhalten, ein Ticket erstellt und die Arbeit an dem Problem begonnen. Wenn kein Ticket vorhanden ist, erstellen Sie eines. Das Ticket sollte die folgenden Informationen enthalten:
    * Grund des Kontakts: Wählen Sie **[!UICONTROL New Relic MariaDB alert received]**.
    * Beschreibung des Warnhinweises
    * [[!DNL New Relic] Link zum Vorfall](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Dies ist in Ihren [Verwaltete Warnhinweise für Adobe Commerce](managed-alerts-for-magento-commerce.md) enthalten.
 1. Um die Ursache des Problems zu identifizieren, versuchen Sie, die XML-Abfragen zu identifizieren:
-   1. Überprüfen Sie Ihre Datenbankvorgänge anhand der Schritte auf der Seite „Datenbanken[ von New Relic](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time).
+   1. Überprüfen Sie Ihre Datenbankvorgänge anhand der Schritte auf der Seite „Datenbanken[&#x200B; von New Relic](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time).
    1. Sortieren Sie nach **[!UICONTROL CALL COUNT]** und dann nach **[!UICONTROL OPERATION]**. Überprüfen Sie `INSERT`, `DELETE` und `UPDATE` Vorgänge.
    1. Achten Sie auf hohe Durchschnitte.
    1. Durchklicken, um Aufrufe von Datenbankvorgängen zu finden. Dadurch werden Transaktionen identifiziert, die diese Abfrage nach Zeit verwenden.
    1. Suchen Sie nach Code-Optimierungen oder operativen Optimierungen:
       * Code-Optimierungen: Achten Sie auf die Optimierung von Abfragen mit Masseneinfügungen/Aktualisierungen, die Minimierung der Indexnutzung oder die Drosselung von Code.
       * Operative Optimierungen: Abladung ressourcenintensiver Datenänderungen zur Verringerung der Traffic-Zeiten.
-      * Zusätzliche Optimierungen: Stellen Sie sicher, dass Sie die neueste Version von ECE-Tools verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der Version ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) ECE-Tools im Handbuch Commerce on Cloud .
+      * Zusätzliche Optimierungen: Stellen Sie sicher, dass Sie die neueste Version von ECE-Tools verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der Version &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) ECE-Tools im Handbuch Commerce on Cloud .

@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [ finden Sie unter „Migrieren von Elasticsearch ](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [&#x200B; finden Sie unter „Migrieren von Elasticsearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
 
-In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ ](#secure-communication-with-apache).
+In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ &#x200B;](#secure-communication-with-apache).
 
 >[!NOTE]
 >
