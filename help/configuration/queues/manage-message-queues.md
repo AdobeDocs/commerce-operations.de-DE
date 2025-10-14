@@ -2,16 +2,16 @@
 title: Verwalten von Nachrichtenwarteschlangen
 description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen über die Befehlszeile für Adobe Commerce verwalten können.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 8dce1f1e961ec02d7783a7423a51a7d4567dce79
+source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
 # Verwalten von Nachrichtenwarteschlangen
 
-Sie können Nachrichtenwarteschlangen über die Befehlszeile mithilfe von Cron-Aufträgen oder einem externen Prozessmanager verwalten, um sicherzustellen, dass Verbraucher Nachrichten abrufen.
+Sie können Nachrichtenwarteschlangen über die Befehlszeile mithilfe von Cron-Aufträgen oder einem externen Prozessmanager verwalten, um sicherzustellen, dass Verbraucher Nachrichten abrufen. Dies gilt für alle unterstützten Nachrichtenbroker, einschließlich RabbitMQ (AMQP), Apache ActiveMQ Artemis (STOMP) und MySQL-Adapter.
 
 ## Prozessverwaltung
 
@@ -49,7 +49,7 @@ Sie können auch einen Prozess-Manager wie [Supervisor](https://supervisord.read
 
 >[!INFO]
 >
->Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#cron_consumers_runner) den `consumers_runner` Cron-Auftrag.
+>Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) den `consumers_runner` Cron-Auftrag.
 
 ### Spezifische Konfiguration
 
@@ -78,10 +78,14 @@ Bearbeiten Sie die `/app/etc/env.php` Datei, um die Cron-Job-`consumers_runner` 
 
   >[!INFO]
   >
-  >Es wird nicht empfohlen, mehrere Verbraucher in einer von MySQL betriebenen Warteschlange auszuführen. Weitere [ finden Sie unter „Meldungswarteschlange von MySQL auf ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-amqp) ändern“.
+  >Es wird nicht empfohlen, mehrere Verbraucher in einer von MySQL betriebenen Warteschlange auszuführen. Weitere Informationen [ Wechsel zu AMQP (RabbitMQ) oder STOMP (ActiveMQ Artemis) finden Sie unter ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers)Ändern der Nachrichtenwarteschlange von MySQL zu externen Brokern).
 
   >[!INFO]
   >
-  >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#consumers_wait_for_max_messages), wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
+  >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages), wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
+
+  >[!NOTE]
+  >
+  >ActiveMQ Artemis (STOMP) wurde in Adobe Commerce 2.4.6 und höheren Versionen eingeführt.
 
 Siehe [Starten von Nachrichtenwarteschlangen-Verbrauchern](../cli/start-message-queues.md).

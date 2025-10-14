@@ -2,9 +2,9 @@
 title: Beta-Versionen
 description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und wie Sie teilnehmen können.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 879160b11fe4840eb3af97c64f080deb5f002827
+source-git-commit: d467ada97a81d64dff358bc83acd489f69ba0677
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,32 @@ Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, erh
 
 In den folgenden Abschnitten finden Sie eine Liste der aktiven Beta-Programme.
 
+### Cloud Automation Patching Service (Private Beta)
+
+Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
+
+Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
+
+- Automatisierte Patch-Installation
+- Rollback-Wiederherstellung
+- Verifizierung nach der Bereitstellung.
+
+Der Service stellt sicher, dass Sie sichere, stabile und aktualisierte Umgebungen mit minimalem manuellen Aufwand und Risiko pflegen können.
+
+Die Beta-Version umfasst die folgenden Funktionen:
+
+- **Automatische Patch-Installation**: Vereinfachen und automatisieren Sie das Patchen kritischer Schwachstellen in Umgebungen.
+- **Minimieren des Risikos**: Vermeiden Sie Standortausfälle mit Konsistenzprüfungs- und Rollback-Funktionen nach der Bereitstellung.
+
+>[!NOTE]
+>
+>Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [ Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
+
+Um an dieser Beta-Version teilzunehmen, füllen Sie das Anmeldeformular [Cloud Automation Patching Service - Beta aus](https://forms.office.com/r/3Wfxj5nPdB) aus.
+
 ### Erweiterte Suchfunktionen für die Live-Suche (Public Beta)
 
-Diese Beta-Version unterstützt drei neue Funktionen in der [`productSearch` Abfrage](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+Diese Beta-Version unterstützt drei neue Funktionen in der [`productSearch` Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
 
 - **Mehrschichtige Suche** - Suche in einem anderen Suchkontext - Mit dieser Funktion können Sie bis zu zwei Suchebenen für Ihre Suchanfragen durchführen. Beispiel:
 
@@ -48,11 +71,13 @@ Diese Beta-Version unterstützt drei neue Funktionen in der [`productSearch` Abf
 
    - Suchen nach einer Abfrage innerhalb einer größeren Zeichenfolge. Beispiel: Ein Käufer sucht in der Zeichenfolge „HAPE-123“ nach der Produktnummer „PE-123“.
 
-      - Hinweis: Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[ der eine ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
+     >[!NOTE]
+     >
+     >Dieser Suchtyp unterscheidet sich von dem vorhandenen Suchbegriff[ der eine ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) Suche durchführt. Wenn Ihr Produktattributwert beispielsweise „Outdoor Pants“ ist, gibt eine Suchphrase eine Antwort für „out pan“ zurück, aber keine Antwort für „or ants“. Eine Suche enthält jedoch eine Antwort für „oder Ameisen“.
 
 Diese neuen Bedingungen verbessern den Filtermechanismus für Suchanfragen, um Suchergebnisse zu verfeinern. Diese neuen Bedingungen wirken sich nicht auf die Hauptsuchabfrage aus. Um an der Beta teilzunehmen, senden Sie eine E-Mail-Anfrage an [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Informationen zur Installation der Live Search-Betaversion finden Sie [Live Search-Handbuch](https://experienceleague.adobe.com/de/docs/commerce/live-search/install#install-the-live-search-beta).
+Informationen zur Installation der Live Search-Betaversion finden Sie [Live Search-Handbuch](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### IBM Sterling Order Management-Systemintegration (Private Beta)
 
@@ -74,7 +99,7 @@ Jede Alpha- und Beta-Version von Adobe Commerce Foundation enthält alle Änderu
 - GraphQL-Verbesserungen
 - Allgemeine Qualitätsfehler-Fehlerbehebungen
 - Gemeinschaftsbeiträge
-- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Namenskonvention und -zeitplan
 

@@ -2,16 +2,21 @@
 title: Übersicht über Nachrichtenwarteschlangen
 description: Erfahren Sie mehr über das Meldungswarteschlangen-Framework und seine Funktionsweise mit der Adobe Commerce-Anwendung.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
 
 # Übersicht über Nachrichtenwarteschlangen
 
-Das Message Queue Framework (MQF) ist ein System, das einem Modul das Veröffentlichen von Nachrichten in Warteschlangen ermöglicht. Außerdem werden die [Verbraucher](consumers.md) definiert, die die Nachrichten asynchron erhalten. Der MQF verwendet [[!DNL RabbitMQ]](https://www.rabbitmq.com) als Messaging-Broker, der eine skalierbare Plattform für den Versand und Empfang von Nachrichten bietet. Sie enthält auch einen Mechanismus zum Speichern nicht zugestellter Nachrichten. [!DNL RabbitMQ] basiert auf der Spezifikation des Advanced Message Queuing Protocol (AMQP) 0.9.1.
+Das Message Queue Framework (MQF) ist ein System, das einem Modul das Veröffentlichen von Nachrichten in Warteschlangen ermöglicht. Außerdem werden die [Verbraucher](consumers.md) definiert, die die Nachrichten asynchron erhalten. MQF unterstützt mehrere Messaging-Broker:
+
+- **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** : Der primäre Messaging-Broker, der eine skalierbare Plattform für das Senden und Empfangen von Nachrichten bietet. Es enthält einen Mechanismus zum Speichern nicht zugestellter Nachrichten und basiert auf der Spezifikation Advanced Message Queuing Protocol (AMQP) 0.9.1 .
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - Ein alternativer Messaging-Broker, der das STOMP (Simple Text Oriented Messaging Protocol) für zuverlässiges und skalierbares Messaging verwendet. Einführung in Adobe Commerce 2.4.6 und neueren Versionen.
+
+## RabbitMQ (AMQP)
 
 Die folgende Abbildung zeigt das Message Queue-Framework:
 
@@ -27,4 +32,39 @@ Die folgende Abbildung zeigt das Message Queue-Framework:
 
 - Ein Verbraucher erhält Nachrichten. Es weiß, welche Warteschlange verbraucht werden soll. Er kann Prozessoren der Nachricht einer bestimmten Warteschlange zuordnen.
 
-Ein einfaches Meldungswarteschlangen-System kann auch ohne [!DNL RabbitMQ] eingerichtet werden. In diesem System speichert ein MySQL-Adapter Nachrichten in der Datenbank. Drei Datenbanktabellen (`queue`, `queue_message` und `queue_message_status`) verwalten die Arbeitslast für die Nachrichtenwarteschlange. Cron-Aufträge stellen sicher, dass die Verbraucher Nachrichten empfangen können. Diese Lösung ist nicht sehr skalierbar. [!DNL RabbitMQ] sollte nach Möglichkeit verwendet werden.
+## Apache ActiveMQ Artemis (STOMP)
+
+Als Alternative zu RabbitMQ unterstützt Adobe Commerce auch [Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/) als Messaging-Broker unter Verwendung des Simple Text Oriented Messaging Protocol (STOMP).
+
+>[!NOTE]
+>
+>ActiveMQ Artemis wurde in Adobe Commerce 2.4.6 und höheren Versionen eingeführt.
+
+Das folgende Diagramm veranschaulicht das STOMP-Framework mit ActiveMQ Artemis:
+
+![STOMP-Framework](../../assets/configuration/stomp-framework.png)
+
+### STOMP-Framework-Komponenten
+
+- Ein **Publisher** ist eine Komponente, die Nachrichten an ein Ziel (Warteschlange oder Thema) sendet. Er weiß, an welchem Ziel er veröffentlichen soll, und kennt das Format der gesendeten Nachrichten.
+
+- Ein **Ziel** in STOMP erfüllt eine ähnliche Rolle wie Austausche in AMQP, indem es Nachrichten von Publishern empfängt und weiterleitet. STOMP verwendet die direkte Zieladressierung mit einem hierarchischen Benennungsmuster anhand von Punkten: z. B. `customer.created` oder `inventory.updated`.
+
+  Adobe Commerce verwendet **ANYCAST** Adressierungsmodus für STOMP-Ziele, der die Punkt-zu-Punkt-Nachrichtenübermittlung ermöglicht. Im ANYCAST-Modus werden Nachrichten aus einem Pool verfügbarer Verbraucher nur an einen Verbraucher gesendet, was einen Lastenausgleich und eine Arbeitsverteilung über mehrere Verbraucherinstanzen ermöglicht.
+
+- Eine **Warteschlange** ist ein Puffer, der Nachrichten speichert. Bei der ANYCAST-Adressierung stellt die Warteschlange sicher, dass Nachrichten nur an einen Verbraucher gesendet werden, selbst wenn mehrere Verbraucher mit demselben Ziel verbunden sind.
+
+- Ein **Verbraucher** erhält Nachrichten von Zielen. Es weiß, welches Ziel abonniert werden soll, und kann Nachrichten mit verschiedenen Bestätigungsmodi (automatisch, Client oder Client-individuell) verarbeiten.
+
+## MySQL-Adapter (Fallback)
+
+Ein einfaches Meldungswarteschlangen-System kann auch ohne Verwendung externer Meldungsbroker eingerichtet werden. In diesem System speichert ein MySQL-Adapter Nachrichten in der Datenbank. Drei Datenbanktabellen (`queue`, `queue_message` und `queue_message_status`) verwalten die Arbeitslast für die Nachrichtenwarteschlange. Cron-Aufträge stellen sicher, dass die Verbraucher Nachrichten empfangen können. Diese Lösung ist nicht sehr skalierbar. Externe Nachrichtenbroker wie [!DNL RabbitMQ] oder Apache ActiveMQ Artemis sollten nach Möglichkeit für Produktionsumgebungen verwendet werden.
+
+## Verwandte Informationen
+
+Für Installations- und Konfigurationsanweisungen:
+
+- [Installieren und Konfigurieren von RabbitMQ](../../installation/prerequisites/rabbitmq.md)
+- [Installieren und Konfigurieren von ActiveMQ Artemis](../../installation/prerequisites/activemq.md)
+- [Verwalten von Nachrichtenwarteschlangen](manage-message-queues.md)
+- [Nachrichtenwarteschlangen-Verbraucher](consumers.md)

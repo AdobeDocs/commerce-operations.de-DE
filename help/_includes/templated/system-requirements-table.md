@@ -1,8 +1,8 @@
 ---
-source-git-commit: ce5222dce195927ad011df121b11707a57071c66
+source-git-commit: 8b1a202fde89ab05626194aff010111577ef6993
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 48%
+source-wordcount: '1506'
+ht-degree: 46%
 
 ---
 # Systemanforderungen
@@ -15,6 +15,7 @@ ht-degree: 48%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.9-Alpha3</th>
       <th>2.4.9-Alpha2</th>
       <th>2.4.9-Alpha1</th>
     </tr>
@@ -28,9 +29,15 @@ ht-degree: 48%
       <td>
           2,8
       </td>
+      <td>
+          2,8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -46,9 +53,15 @@ ht-degree: 48%
       <td>
           11,4
       </td>
+      <td>
+          11,4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+          8,4
+      </td>
       <td>
           8,4
       </td>
@@ -64,6 +77,9 @@ ht-degree: 48%
       <td>
           8,4; 8,3
       </td>
+      <td>
+          8,4; 8,3
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
@@ -73,9 +89,27 @@ ht-degree: 48%
       <td>
           4,1
       </td>
+      <td>
+          4,1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+          8
+      </td>
       <td>
           8
       </td>
@@ -91,9 +125,15 @@ ht-degree: 48%
       <td>
           7,7
       </td>
+      <td>
+          7,7
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -107,11 +147,17 @@ ht-degree: 48%
           1,28
       </td>
       <td>
+          1,28
+      </td>
+      <td>
           1,26
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
+      </td>
       <td>
           8.0.mysql_aurora.3.09 oder neueste verfügbare Version
       </td>
@@ -127,6 +173,9 @@ ht-degree: 48%
       <td>
           ✔️
       </td>
+      <td>
+          ✔️
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
@@ -136,9 +185,15 @@ ht-degree: 48%
       <td>
           3.13 oder neueste verfügbare Version
       </td>
+      <td>
+          3.13 oder neueste verfügbare Version
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
+      </td>
       <td>
           ElastiCache Version 7.1 für Redis OSS (erweitert)
       </td>
@@ -154,6 +209,9 @@ ht-degree: 48%
       <td>
           2.19 oder neueste verfügbare Version
       </td>
+      <td>
+          2.19 oder neueste verfügbare Version
+      </td>
     </tr>
   </tbody>
 </table>
@@ -162,6 +220,7 @@ ht-degree: 48%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.8-p3</th>
       <th>2.4.8-p2</th>
       <th>2.4.8-p1</th>
       <th>2,4,8</th>
@@ -179,9 +238,15 @@ ht-degree: 48%
       <td>
           2,8
       </td>
+      <td>
+          2,8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -203,9 +268,15 @@ ht-degree: 48%
       <td>
           11,4
       </td>
+      <td>
+          11,4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+          8,4
+      </td>
       <td>
           8,4
       </td>
@@ -227,6 +298,9 @@ ht-degree: 48%
       <td>
           8,4; 8,3
       </td>
+      <td>
+          8,4; 8,3
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
@@ -239,9 +313,30 @@ ht-degree: 48%
       <td>
           4,1
       </td>
+      <td>
+          4,1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+          8
+      </td>
       <td>
           8
       </td>
@@ -261,11 +356,17 @@ ht-degree: 48%
           7,7
       </td>
       <td>
+          7,7
+      </td>
+      <td>
           7,6
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          —
+      </td>
       <td>
           2,4
       </td>
@@ -282,6 +383,9 @@ ht-degree: 48%
           1,28
       </td>
       <td>
+          1,28
+      </td>
+      <td>
           1,26
       </td>
       <td>
@@ -290,6 +394,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
+      </td>
       <td>
           8.0.mysql_aurora.3.09 oder neueste verfügbare Version
       </td>
@@ -311,6 +418,9 @@ ht-degree: 48%
       <td>
           ✔️
       </td>
+      <td>
+          ✔️
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
@@ -323,9 +433,15 @@ ht-degree: 48%
       <td>
           3.13 oder neueste verfügbare Version
       </td>
+      <td>
+          3.13 oder neueste verfügbare Version
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
+      </td>
       <td>
           ElastiCache Version 7.1 für Redis OSS (erweitert)
       </td>
@@ -347,6 +463,9 @@ ht-degree: 48%
       <td>
           2.19 oder neueste verfügbare Version
       </td>
+      <td>
+          2.19 oder neueste verfügbare Version
+      </td>
     </tr>
   </tbody>
 </table>
@@ -355,6 +474,7 @@ ht-degree: 48%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.7-p8</th>
       <th>2.4.7-p7</th>
       <th>2.4.7-p6</th>
       <th>2.4.7-p5</th>
@@ -368,6 +488,9 @@ ht-degree: 48%
   <tbody>
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+          2,8
+      </td>
       <td>
           2,8
       </td>
@@ -395,6 +518,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          7,17/8
+      </td>
       <td>
           7,17; 8
       </td>
@@ -432,6 +558,9 @@ ht-degree: 48%
           2,19
       </td>
       <td>
+          2,19
+      </td>
+      <td>
           2,12
       </td>
       <td>
@@ -449,6 +578,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10,11
+      </td>
       <td>
           10,11
       </td>
@@ -500,9 +632,15 @@ ht-degree: 48%
       <td>
           8,0
       </td>
+      <td>
+          8,0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+          8,3; 8,2
+      </td>
       <td>
           8,3; 8,2
       </td>
@@ -534,6 +672,9 @@ ht-degree: 48%
           4,1
       </td>
       <td>
+          4,1
+      </td>
+      <td>
           4,1; 3,13
       </td>
       <td>
@@ -556,7 +697,40 @@ ht-degree: 48%
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+          7,2
+      </td>
       <td>
           7,2
       </td>
@@ -591,6 +765,9 @@ ht-degree: 48%
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           —
       </td>
       <td>
@@ -611,6 +788,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+          7,7
+      </td>
       <td>
           7,7
       </td>
@@ -642,6 +822,9 @@ ht-degree: 48%
           —
       </td>
       <td>
+          —
+      </td>
+      <td>
           2,4
       </td>
       <td>
@@ -669,6 +852,9 @@ ht-degree: 48%
           1,28
       </td>
       <td>
+          1,28
+      </td>
+      <td>
           1,26
       </td>
       <td>
@@ -692,6 +878,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
+      </td>
       <td>
           8.0.mysql_aurora.3.09 oder neueste verfügbare Version
       </td>
@@ -743,9 +932,15 @@ ht-degree: 48%
       <td>
           ✔️
       </td>
+      <td>
+          ✔️
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+          3.13 oder neueste verfügbare Version
+      </td>
       <td>
           3.13 oder neueste verfügbare Version
       </td>
@@ -777,6 +972,9 @@ ht-degree: 48%
           ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
       <td>
+          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
+      </td>
+      <td>
           ElastiCache Version 7.1 für Redis OSS (erweitert)
       </td>
       <td>
@@ -800,6 +998,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+          2.19 oder neueste verfügbare Version
+      </td>
       <td>
           2.19 oder neueste verfügbare Version
       </td>
@@ -832,6 +1033,7 @@ ht-degree: 48%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.6-P13</th>
       <th>2.4.6-P12</th>
       <th>2.4.6-P11</th>
       <th>2.4.6-P10</th>
@@ -889,9 +1091,15 @@ ht-degree: 48%
       <td>
           2,2
       </td>
+      <td>
+          2,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          7,17
+      </td>
       <td>
           7,17
       </td>
@@ -944,6 +1152,9 @@ ht-degree: 48%
           2,19
       </td>
       <td>
+          2,19
+      </td>
+      <td>
           2,12
       </td>
       <td>
@@ -976,6 +1187,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10,11
+      </td>
       <td>
           10,11
       </td>
@@ -1057,9 +1271,15 @@ ht-degree: 48%
       <td>
           8,0
       </td>
+      <td>
+          8,0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+          8,2; 8,1
+      </td>
       <td>
           8,2; 8,1
       </td>
@@ -1106,6 +1326,9 @@ ht-degree: 48%
           4,1
       </td>
       <td>
+          4,1
+      </td>
+      <td>
           4,1; 3,13
       </td>
       <td>
@@ -1143,7 +1366,55 @@ ht-degree: 48%
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+          7,2
+      </td>
       <td>
           7,2
       </td>
@@ -1193,6 +1464,9 @@ ht-degree: 48%
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           —
       </td>
       <td>
@@ -1228,6 +1502,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
+      <td>
+          7,7
+      </td>
       <td>
           7,7
       </td>
@@ -1274,6 +1551,9 @@ ht-degree: 48%
           —
       </td>
       <td>
+          —
+      </td>
+      <td>
           2,4
       </td>
       <td>
@@ -1316,6 +1596,9 @@ ht-degree: 48%
           1,28
       </td>
       <td>
+          1,28
+      </td>
+      <td>
           1,26
       </td>
       <td>
@@ -1354,6 +1637,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
+      </td>
       <td>
           8.0.mysql_aurora.3.09 oder neueste verfügbare Version
       </td>
@@ -1435,9 +1721,15 @@ ht-degree: 48%
       <td>
           ✔️
       </td>
+      <td>
+          ✔️
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
+      <td>
+          3.13 oder neueste verfügbare Version
+      </td>
       <td>
           3.13 oder neueste verfügbare Version
       </td>
@@ -1480,6 +1772,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
+      </td>
       <td>
           ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
@@ -1532,6 +1827,9 @@ ht-degree: 48%
           2.19 oder neueste verfügbare Version
       </td>
       <td>
+          2.19 oder neueste verfügbare Version
+      </td>
+      <td>
           1,2
       </td>
       <td>
@@ -1569,6 +1867,7 @@ ht-degree: 48%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.5-P15</th>
       <th>2.4.5-P14</th>
       <th>2.4.5-P13</th>
       <th>2.4.5-P12</th>
@@ -1634,9 +1933,15 @@ ht-degree: 48%
       <td>
           2,2
       </td>
+      <td>
+          2,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          7,17
+      </td>
       <td>
           7,17
       </td>
@@ -1695,6 +2000,9 @@ ht-degree: 48%
           2,19
       </td>
       <td>
+          2,19
+      </td>
+      <td>
           1.3.20
       </td>
       <td>
@@ -1733,6 +2041,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10,6
+      </td>
       <td>
           10,6
       </td>
@@ -1826,6 +2137,9 @@ ht-degree: 48%
       <td>
           8,0
       </td>
+      <td>
+          8,0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
@@ -1874,9 +2188,15 @@ ht-degree: 48%
       <td>
           8,1
       </td>
+      <td>
+          8,1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4,1
+      </td>
       <td>
           4,1
       </td>
@@ -1938,6 +2258,9 @@ ht-degree: 48%
           7,2
       </td>
       <td>
+          7,2
+      </td>
+      <td>
           7,2; 7,0
       </td>
       <td>
@@ -1973,6 +2296,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
+      <td>
+          8
+      </td>
       <td>
           8
       </td>
@@ -2028,6 +2354,9 @@ ht-degree: 48%
           7,7
       </td>
       <td>
+          7,7
+      </td>
+      <td>
           7,6
       </td>
       <td>
@@ -2069,6 +2398,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -2121,6 +2453,9 @@ ht-degree: 48%
           1,28
       </td>
       <td>
+          1,28
+      </td>
+      <td>
           1,26
       </td>
       <td>
@@ -2165,6 +2500,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          —
+      </td>
       <td>
           8.0.mysql_aurora.3.09 oder neueste verfügbare Version
       </td>
@@ -2214,6 +2552,9 @@ ht-degree: 48%
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
+          —
+      </td>
+      <td>
           ✔️
       </td>
       <td>
@@ -2262,6 +2603,9 @@ ht-degree: 48%
     <tr>
       <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
+          —
+      </td>
+      <td>
           3.13 oder neueste verfügbare Version
       </td>
       <td>
@@ -2309,6 +2653,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          —
+      </td>
       <td>
           ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
@@ -2397,6 +2744,9 @@ ht-degree: 48%
           —
       </td>
       <td>
+          —
+      </td>
+      <td>
           7,9
       </td>
       <td>
@@ -2405,6 +2755,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+          —
+      </td>
       <td>
           2.19 oder neueste verfügbare Version
       </td>
@@ -2458,6 +2811,7 @@ ht-degree: 48%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.4-P16</th>
       <th>2.4.4-p15</th>
       <th>2.4.4-P14</th>
       <th>2.4.4-P13</th>
@@ -2479,6 +2833,9 @@ ht-degree: 48%
   <tbody>
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
+      <td>
+          2,2
+      </td>
       <td>
           2,2
       </td>
@@ -2570,6 +2927,9 @@ ht-degree: 48%
           7,17
       </td>
       <td>
+          7,17
+      </td>
+      <td>
           7,16
       </td>
       <td>
@@ -2581,6 +2941,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2,19
+      </td>
       <td>
           2,19
       </td>
@@ -2632,6 +2995,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10,6
+      </td>
       <td>
           10,6
       </td>
@@ -2731,9 +3097,15 @@ ht-degree: 48%
       <td>
           8,0
       </td>
+      <td>
+          8,0
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+          8,1
+      </td>
       <td>
           8,1
       </td>
@@ -2833,9 +3205,15 @@ ht-degree: 48%
       <td>
           3,9
       </td>
+      <td>
+          3,9
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+          7,2
+      </td>
       <td>
           7,2
       </td>
@@ -2894,6 +3272,9 @@ ht-degree: 48%
           7,7
       </td>
       <td>
+          7,7
+      </td>
+      <td>
           7,6
       </td>
       <td>
@@ -2938,6 +3319,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Apache]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -2993,6 +3377,9 @@ ht-degree: 48%
           1,28
       </td>
       <td>
+          1,28
+      </td>
+      <td>
           1,26
       </td>
       <td>
@@ -3040,6 +3427,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -3095,6 +3485,9 @@ ht-degree: 48%
           —
       </td>
       <td>
+          —
+      </td>
+      <td>
           ✔️
       </td>
       <td>
@@ -3146,6 +3539,9 @@ ht-degree: 48%
           —
       </td>
       <td>
+          —
+      </td>
+      <td>
           3.9.13
       </td>
       <td>
@@ -3193,6 +3589,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -3284,6 +3683,9 @@ ht-degree: 48%
           —
       </td>
       <td>
+          —
+      </td>
+      <td>
           7,9
       </td>
       <td>
@@ -3295,6 +3697,9 @@ ht-degree: 48%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>

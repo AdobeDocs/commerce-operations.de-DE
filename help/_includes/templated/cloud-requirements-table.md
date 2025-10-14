@@ -1,8 +1,8 @@
 ---
-source-git-commit: df410d33b89d28f76b0565447c587169ead7bf22
+source-git-commit: 899f1fbf23ea485a420e50548885c64a95d93b96
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 54%
+source-wordcount: '663'
+ht-degree: 60%
 
 ---
 # Cloud-Anforderungstabelle
@@ -11,6 +11,7 @@ ht-degree: 54%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.9-Alpha3</th>
       <th>2.4.9-Alpha2</th>
       <th>2.4.9-Alpha1</th>
     </tr>
@@ -24,9 +25,15 @@ ht-degree: 54%
       <td>
           2,8
       </td>
+      <td>
+          2,8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -42,9 +49,15 @@ ht-degree: 54%
       <td>
           11,4
       </td>
+      <td>
+          11,4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
+      <td>
+          8,4; 8,3
+      </td>
       <td>
           8,4; 8,3
       </td>
@@ -60,6 +73,21 @@ ht-degree: 54%
       <td>
           4,1
       </td>
+      <td>
+          4,1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
@@ -69,6 +97,21 @@ ht-degree: 54%
       <td>
           8
       </td>
+      <td>
+          8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,26
+      </td>
     </tr>
   </tbody>
 </table>
@@ -77,6 +120,7 @@ ht-degree: 54%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.8-p3</th>
       <th>2.4.8-p2</th>
       <th>2.4.8-p1</th>
       <th>2,4,8</th>
@@ -94,9 +138,15 @@ ht-degree: 54%
       <td>
           2,8
       </td>
+      <td>
+          2,8
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          3
+      </td>
       <td>
           3
       </td>
@@ -118,9 +168,15 @@ ht-degree: 54%
       <td>
           11,4
       </td>
+      <td>
+          11,4
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -142,6 +198,9 @@ ht-degree: 54%
       <td>
           8,4; 8,3
       </td>
+      <td>
+          8,4; 8,3
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
@@ -153,6 +212,24 @@ ht-degree: 54%
       </td>
       <td>
           4,1
+      </td>
+      <td>
+          4,1
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
       </td>
     </tr>
     <tr>
@@ -166,6 +243,24 @@ ht-degree: 54%
       <td>
           8
       </td>
+      <td>
+          8
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
     </tr>
   </tbody>
 </table>
@@ -174,6 +269,7 @@ ht-degree: 54%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.7-p8</th>
       <th>2.4.7-p7</th>
       <th>2.4.7-p6</th>
       <th>2.4.7-p5</th>
@@ -200,6 +296,9 @@ ht-degree: 54%
           2,8
       </td>
       <td>
+          2,8
+      </td>
+      <td>
           2,7
       </td>
       <td>
@@ -238,9 +337,15 @@ ht-degree: 54%
       <td>
           2
       </td>
+      <td>
+          2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
+      <td>
+          10,11
+      </td>
       <td>
           10,11
       </td>
@@ -268,6 +373,9 @@ ht-degree: 54%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -319,9 +427,15 @@ ht-degree: 54%
       <td>
           8,3; 8,2
       </td>
+      <td>
+          8,3; 8,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4,1
+      </td>
       <td>
           4,1
       </td>
@@ -345,6 +459,36 @@ ht-degree: 54%
       </td>
       <td>
           3,12
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
       </td>
     </tr>
     <tr>
@@ -373,6 +517,9 @@ ht-degree: 54%
       <td>
           7,2
       </td>
+      <td>
+          7,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
@@ -383,6 +530,9 @@ ht-degree: 54%
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           —
       </td>
       <td>
@@ -401,6 +551,36 @@ ht-degree: 54%
           —
       </td>
     </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -408,6 +588,7 @@ ht-degree: 54%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.6-P13</th>
       <th>2.4.6-P12</th>
       <th>2.4.6-P11</th>
       <th>2.4.6-P10</th>
@@ -465,9 +646,15 @@ ht-degree: 54%
       <td>
           2,2
       </td>
+      <td>
+          2,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2
+      </td>
       <td>
           2
       </td>
@@ -517,6 +704,9 @@ ht-degree: 54%
           10,11
       </td>
       <td>
+          10,11
+      </td>
+      <td>
           10,6
       </td>
       <td>
@@ -552,6 +742,9 @@ ht-degree: 54%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -633,9 +826,15 @@ ht-degree: 54%
       <td>
           8,2; 8,1
       </td>
+      <td>
+          8,2; 8,1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4,1
+      </td>
       <td>
           4,1
       </td>
@@ -677,7 +876,55 @@ ht-degree: 54%
       </td>
     </tr>
     <tr>
+      <td><span class="uicontrol">[!DNL ActiveMQ Artemis]</span></td>
+      <td>
+          2
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+      <td>
+          —
+      </td>
+    </tr>
+    <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
+      <td>
+          7,2
+      </td>
       <td>
           7,2
       </td>
@@ -727,6 +974,9 @@ ht-degree: 54%
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           —
       </td>
       <td>
@@ -760,6 +1010,51 @@ ht-degree: 54%
           —
       </td>
     </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -767,6 +1062,7 @@ ht-degree: 54%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.5-P15</th>
       <th>2.4.5-P14</th>
       <th>2.4.5-P13</th>
       <th>2.4.5-P12</th>
@@ -832,9 +1128,15 @@ ht-degree: 54%
       <td>
           2,2
       </td>
+      <td>
+          2,2
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2
+      </td>
       <td>
           2
       </td>
@@ -893,6 +1195,9 @@ ht-degree: 54%
           10,6
       </td>
       <td>
+          10,6
+      </td>
+      <td>
           10,6; 10,5
       </td>
       <td>
@@ -931,6 +1236,9 @@ ht-degree: 54%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          —
+      </td>
       <td>
           —
       </td>
@@ -1024,9 +1332,15 @@ ht-degree: 54%
       <td>
           8,1
       </td>
+      <td>
+          8,1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          4,1
+      </td>
       <td>
           4,1
       </td>
@@ -1091,6 +1405,9 @@ ht-degree: 54%
           7,2
       </td>
       <td>
+          7,2
+      </td>
+      <td>
           7,0
       </td>
       <td>
@@ -1130,6 +1447,9 @@ ht-degree: 54%
           8
       </td>
       <td>
+          8
+      </td>
+      <td>
           —
       </td>
       <td>
@@ -1169,6 +1489,57 @@ ht-degree: 54%
           —
       </td>
     </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+    </tr>
   </tbody>
 </table>
 
@@ -1176,6 +1547,7 @@ ht-degree: 54%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.4-P16</th>
       <th>2.4.4-p15</th>
       <th>2.4.4-P14</th>
       <th>2.4.4-P13</th>
@@ -1237,6 +1609,9 @@ ht-degree: 54%
           2,2
       </td>
       <td>
+          2,2
+      </td>
+      <td>
           2,1
       </td>
       <td>
@@ -1248,6 +1623,9 @@ ht-degree: 54%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
+      <td>
+          2
+      </td>
       <td>
           2
       </td>
@@ -1309,6 +1687,9 @@ ht-degree: 54%
           10,6
       </td>
       <td>
+          10,6
+      </td>
+      <td>
           10,6; 10,5
       </td>
       <td>
@@ -1350,6 +1731,9 @@ ht-degree: 54%
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          —
+      </td>
       <td>
           9.19.0.309+
       </td>
@@ -1449,9 +1833,15 @@ ht-degree: 54%
       <td>
           8,1
       </td>
+      <td>
+          8,1
+      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
+      <td>
+          3,9
+      </td>
       <td>
           3,9
       </td>
@@ -1519,7 +1909,7 @@ ht-degree: 54%
           7,2
       </td>
       <td>
-          7,0
+          7,2
       </td>
       <td>
           7,0
@@ -1528,7 +1918,7 @@ ht-degree: 54%
           7,0
       </td>
       <td>
-          6,2
+          7,0
       </td>
       <td>
           6,2
@@ -1550,6 +1940,63 @@ ht-degree: 54%
       </td>
       <td>
           6,2
+      </td>
+      <td>
+          6,2
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,28
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,26
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
+      </td>
+      <td>
+          1,22
       </td>
     </tr>
   </tbody>

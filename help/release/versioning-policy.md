@@ -2,9 +2,9 @@
 title: Release-Richtlinie
 description: Erfahren Sie mehr über die verschiedenen Typen von Adobe Commerce-Versionen.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,6 @@ Vorabversionen der Adobe Commerce-Funktionen werden allen Adobe Commerce-Kunden 
 
 Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, Beta-Versionen (über Adobe Support Services oder anderweitig) zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen. Kunden sollten sich nicht auf die ordnungsgemäße Funktionsweise oder Leistung von Beta-Versionen oder Begleitdokumenten oder -materialien verlassen. Dementsprechend erfolgt die Verwendung der Beta-Versionen vollständig auf eigenes Risiko des Kunden.
 
-## Versionen mit Funktionen, Cloud-Infrastruktur und Erweiterbarkeit
-
-Cloud-Infrastruktur- und Funktionsversionen enthalten neue Funktionen und Funktionsaktualisierungen, die als unabhängige Services bereitgestellt werden, die von Patch-Versionen getrennt sind. Beispiele sind unter anderem:
-
-- Aktualisierungen der Cloud-Hosting-Services und -Infrastruktur
-- B2B
-- SaaS-Produkte (Katalog-Service, Datenverbindung, Produktempfehlungen und Live-Suche)
-- Erweiterbarkeitstechnologie (Admin-UI, SDK API Mesh, App Builder Starter Kits, Eventing und Webhooks)
-
 ## Hotfix
 
 Hotfixes sind Patches, die wirkungsvolle Sicherheits- oder Qualitätskorrekturen enthalten, z. B. Fehlerbehebungen für Zero-Day-Sicherheitslücken, die viele Händler betreffen. Adobe veröffentlicht Hotfixes (nach Bedarf) für unterstützte Adobe Commerce-Versionen, wenn kritische Sicherheits- oder Qualitätsprobleme sie betreffen. Hotfixes werden im Abschnitt [Bekannte Probleme](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) der Wissensdatenbank veröffentlicht. Diese Fehlerbehebungen sind in der nächsten geplanten Patch-Version enthalten.
@@ -86,14 +77,14 @@ Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmte
 >
 >Einzelne Patches enthalten keine rückwärts inkompatiblen Änderungen.
 
-## Isoliertes Pflaster
+## Isolierte Sicherheitskorrekturen
 
-Isolierte Patches sind Sicherheitskorrekturen, die unabhängig von einem vollständigen Sicherheits-Patch veröffentlicht werden, um eine schnellere Implementierung zu ermöglichen. Jeder einzelne Patch behandelt ein bestimmtes Sicherheitsproblem und ist entweder im neuesten oder im kommenden vollständigen Sicherheitspatch enthalten. Einzelheiten zu diesem Problem finden Sie im entsprechenden Sicherheitsbulletin, das auf einen Knowledgebase-Artikel (KB) verweist, der die Fehlerbehebungsdetails, die Anwendung des Patches und zusätzliche Informationen enthält.
+Isolierte Patches sind nicht kumulative Sicherheitskorrekturen, die unabhängig von einem vollständigen Sicherheits-Patch veröffentlicht werden, um eine schnellere Implementierung zu ermöglichen. Jede einzelne Sicherheitskorrektur behandelt ein bestimmtes Sicherheitsproblem und ist entweder im neuesten oder im kommenden vollständigen Sicherheitspatch enthalten. Details zum Problem finden Sie im entsprechenden Sicherheitsbulletin, das auf einen Knowledgebase-Artikel (KB) verweist, der die Fehlerbehebungsdetails, die Anwendung der Fehlerbehebung und zusätzliche Informationen enthält.
 
-Im [Sicherheitscenter](https://helpx.adobe.com/de/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
+Im [Sicherheitscenter](https://helpx.adobe.com/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
 
 ## Benutzerdefinierter Patch
 
-von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage) bereitgestellt.
+von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) bereitgestellt.
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->

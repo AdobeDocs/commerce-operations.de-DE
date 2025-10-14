@@ -2,9 +2,9 @@
 title: Erweiterte lokale Installation
 description: Erfahren Sie mehr über erweiterte Installationsszenarien für lokale Adobe Commerce-Bereitstellungen. Erfahren Sie mehr über komplexe Konfigurationen und benutzerdefinierte Einrichtungsoptionen.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2485'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,9 @@ Das Installationsprogramm kann bei Bedarf mehrmals ausgeführt werden. So haben 
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus:
 
-* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[&#x200B; beschriebenen Anforderungen &#x200B;](system-requirements.md).
+* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[ beschriebenen Anforderungen ](system-requirements.md).
 
-* Alle ([) Aufgaben &#x200B;](prerequisites/overview.md).
+* Alle ([) Aufgaben ](prerequisites/overview.md).
 
 * Führen Sie die ersten Installationsschritte aus. Siehe [Ihr Installations- oder Aktualisierungspfad](overview.md).
 
@@ -119,7 +119,7 @@ Die folgenden Optionen geben die Benutzerinformationen und Anmeldeinformationen 
 
 Sie können den Admin-Benutzer während oder nach der Installation erstellen. Wenn Sie den Benutzer während der Installation erstellen, sind alle Variablen mit Administratorberechtigungen erforderlich. Siehe [Beispiel für localhost-Installationen](#sample-localhost-installations).
 
-Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | -Name | Wert | Erforderlich? |
 |--- |--- |--- |
@@ -187,6 +187,21 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 | `--amqp-password` | Das Kennwort für die Verbindung mit [!DNL RabbitMQ]. Verwenden Sie nicht die `guest` Standardkennwort. | Nein |
 | `--amqp-virtualhost` | Der virtuelle Host für die Verbindung mit [!DNL RabbitMQ]. Der Standardwert lautet `/`. | Nein |
 | `--amqp-ssl` | Gibt an, ob eine Verbindung zu [!DNL RabbitMQ] hergestellt werden soll. Der Standardwert lautet `false`. Siehe [!DNL RabbitMQ] für Informationen zum Einrichten von SSL für [!DNL RabbitMQ]. | Nein |
+| `--consumers-wait-for-messages` | Sollen Verbraucher auf eine Nachricht aus der Warteschlange warten? 1 - Ja, 0 - Nein | Nein |
+
+**ActiveMQ Artemis-Konfigurationsoptionen:**
+
+>[!NOTE]
+>
+>ActiveMQ Artemis wurde in Adobe Commerce 2.4.6 und höheren Versionen eingeführt.
+
+| -Name | Wert | Erforderlich? |
+|--- |--- |--- |
+| `--stomp-host` | Verwenden Sie die `--stomp` nur, wenn Sie bereits eine Installation von ActiveMQ Artemis eingerichtet haben. Weitere Informationen zum Installieren und Konfigurieren von ActiveMQ Artemis finden Sie unter ActiveMQ Artemis-Installation .<br><br>Der Hostname, auf dem ActiveMQ Artemis installiert ist. | Nein |
+| `--stomp-port` | Der Port, der für die Verbindung mit ActiveMQ Artemis verwendet werden soll. Der Standardwert lautet 61613. | Nein |
+| `--stomp-user` | Der Benutzername für die Verbindung mit ActiveMQ Artemis. Verwenden Sie nicht die standardmäßige `artemis`. | Nein |
+| `--stomp-password` | Das Passwort für die Verbindung mit ActiveMQ Artemis. Verwenden Sie nicht die `artemis` Standardkennwort. | Nein |
+| `--stomp-ssl` | Gibt an, ob eine Verbindung zu ActiveMQ Artemis über SSL hergestellt werden soll. Der Standardwert lautet `false`. Informationen zum Einrichten von SSL für ActiveMQ Artemis finden Sie unter ActiveMQ Artemis . | Nein |
 | `--consumers-wait-for-messages` | Sollen Verbraucher auf eine Nachricht aus der Warteschlange warten? 1 - Ja, 0 - Nein | Nein |
 
 **Konfigurationsoptionen sperren:**
@@ -336,5 +351,24 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 [SUCCESS]: Magento installation complete.
 [SUCCESS]: Admin Panel URI: /admin_puu71q
 ```
+
+#### Beispiel 4: Installation mit ActiveMQ Artemis
+
+Das folgende Beispiel zeigt, wie Sie Adobe Commerce mit ActiveMQ Artemis als Nachrichtenbroker installieren:
+
+```bash
+bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
+--db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
+--admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
+--admin-user=admin --admin-password=admin123 --language=en_US \
+--currency=USD --timezone=America/Chicago --use-rewrites=1 \
+--search-engine=opensearch --opensearch-host=os-host.example.com \
+--opensearch-port=9200 --stomp-host=localhost --stomp-port=61613 \
+--stomp-user=artemis --stomp-password=artemis
+```
+
+>[!NOTE]
+>
+>Für die Installation von ActiveMQ Artemis ist Adobe Commerce 2.4.6 oder höher erforderlich.
 
 <!-- Last updated from includes: 2024-04-16 09:42:31 -->

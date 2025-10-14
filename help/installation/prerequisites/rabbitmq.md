@@ -1,15 +1,15 @@
 ---
-title: Nachrichten-Broker
+title: Nachrichten-Broker (RabbitMQ)
 description: Führen Sie diese Schritte aus, um die erforderliche Message Broker-Software (z. B.  [!DNL RabbitMQ]) für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-# Nachrichten-Broker
+# Nachrichten-Broker (RabbitMQ)
 
 Adobe Commerce verwendet den [!DNL RabbitMQ] Open-Source-Nachrichtenbroker. Es bietet ein zuverlässiges, hochverfügbares, skalierbares und tragbares Messaging-System.
 

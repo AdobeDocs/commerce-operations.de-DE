@@ -2,9 +2,9 @@
 user-guide-title: Installationsanleitung
 user-guide-description: Erfahren Sie, wie Sie Adobe Commerce für lokale Bereitstellungen installieren.
 feature: Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '173'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,9 @@ ht-degree: 3%
       - [Konfigurieren von nginx](prerequisites/search-engine/configure-nginx.md)
       - [Konfigurieren von Apache](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
-   - [Nachrichten-Broker](prerequisites/rabbitmq.md)
+   - Nachrichten-Broker {#message-brokers}
+      - [Kaninchen-MQ](prerequisites/rabbitmq.md)
+      - [Aktive MQ](prerequisites/activemq.md)
    - [Sicherheit](prerequisites/security.md)
    - [Authentifizierungsschlüssel](prerequisites/authentication-keys.md)
    - [Adobe Commerce](prerequisites/commerce.md)
@@ -67,4 +69,4 @@ ht-degree: 3%
    - [Commerce deinstallieren oder neu installieren](tutorials/uninstall.md)
    - [Designs deinstallieren](tutorials/themes.md)
    - [Datenbankschema aktualisieren](tutorials/database-upgrade.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

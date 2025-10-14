@@ -2,9 +2,9 @@
 title: GraphQL-Anwendungsserver
 description: Erfahren Sie mehr über den GraphQL-Anwendungsserver in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '2212'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Der Commerce GraphQL-Anwendungsserver ermöglicht es Adobe Commerce, den Status zwischen Commerce GraphQL-API-Anfragen beizubehalten. GraphQL Application Server, der auf der Swoole-Erweiterung basiert, fungiert als Prozess mit Worker-Threads, die die Anforderungsverarbeitung verarbeiten. Durch die Beibehaltung des Status eines Bootstrapping-Programms bei GraphQL-API-Anfragen verbessert GraphQL Application Server die Anforderungsverarbeitung und die Gesamtproduktleistung. API-Anfragen werden deutlich effizienter.
 
-Der GraphQL-Anwendungs-Server ist nur für Adobe Commerce verfügbar. Es ist nicht für Magento Open Source verfügbar. Bei Cloud Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), um den GraphQL-Anwendungsserver zu aktivieren.
+Der GraphQL-Anwendungs-Server ist nur für Adobe Commerce verfügbar. Es ist nicht für Magento Open Source verfügbar. Bei Cloud Pro-Projekten müssen Sie [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide), um den GraphQL-Anwendungsserver zu aktivieren.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Die Ausführung von GraphQL Application Server erfordert Folgendes:
 
 ### Cloud-Projekte
 
-Adobe Commerce in Cloud-Infrastrukturprojekten enthält standardmäßig die Swoole-Erweiterung. Sie können [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) Eigenschaft &quot;`runtime`&quot; der `.magento.app.yaml`-Datei aktivieren. Beispiel:
+Adobe Commerce in Cloud-Infrastrukturprojekten enthält standardmäßig die Swoole-Erweiterung. Sie können [ in ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) Eigenschaft &quot;`runtime`&quot; der `.magento.app.yaml`-Datei aktivieren. Beispiel:
 
 ```yaml
 runtime:
@@ -53,7 +53,7 @@ runtime:
 
 ### On-Premise-Projekte
 
-Sie müssen [&#x200B; PHP-Erweiterung Swoole &#x200B;](#install-and-configure-swoole) lokale Projekte manuell installieren und konfigurieren.
+Sie müssen [ PHP-Erweiterung Swoole ](#install-and-configure-swoole) lokale Projekte manuell installieren und konfigurieren.
 
 ## Aktivieren und Bereitstellen in der Cloud-Infrastruktur
 
@@ -67,8 +67,8 @@ Das `ApplicationServer` (`Magento/ApplicationServer/`) ermöglicht den GraphQL-A
 
 Nachdem die Anwendungsserverfunktion in Ihrem Pro-Projekt aktiviert wurde, führen Sie die folgenden Schritte aus, bevor Sie GraphQL Application Server bereitstellen:
 
-1. Stellen Sie Adobe Commerce mithilfe der Cloud-Vorlage aus der Verzweigung [2.4.7-appserver“ in der Cloud-Infrastruktur &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Stellen Sie sicher, dass alle Commerce-Anpassungen und -Erweiterungen mit [&#x200B; Anwendungs-](https://developer.adobe.com/commerce/php/development/components/app-server/) von GraphQL kompatibel sind.
+1. Stellen Sie Adobe Commerce mithilfe der Cloud-Vorlage aus der Verzweigung [2.4.7-appserver“ in der Cloud-Infrastruktur ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Stellen Sie sicher, dass alle Commerce-Anpassungen und -Erweiterungen mit [ Anwendungs-](https://developer.adobe.com/commerce/php/development/components/app-server/) von GraphQL kompatibel sind.
 1. Klonen Sie Ihr Commerce Cloud-Projekt.
 1. Passen Sie die Einstellungen in der Datei &quot;application-server/nginx.conf.sample“ bei Bedarf an.
 1. Kommentieren Sie den aktiven „web“-Abschnitt in `project_root/.magento.app.yaml` Datei vollständig aus.
@@ -113,7 +113,7 @@ git push
 
 Führen Sie die folgenden Schritte aus, bevor Sie den GraphQL-Anwendungsserver in Startprojekten bereitstellen:
 
-1. Stellen Sie Adobe Commerce mithilfe der Cloud-Vorlage aus der Verzweigung [2.4.7-appserver“ in der Cloud-Infrastruktur &#x200B;](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
+1. Stellen Sie Adobe Commerce mithilfe der Cloud-Vorlage aus der Verzweigung [2.4.7-appserver“ in der Cloud-Infrastruktur ](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Stellen Sie sicher, dass alle Commerce-Anpassungen und -Erweiterungen mit GraphQL Application Server kompatibel sind.
 1. Vergewissern Sie sich, dass die Umgebungsvariable `CRYPT_KEY` für Ihre Instanz festgelegt ist. Sie können den Status dieser Variablen in der Cloud-Konsole überprüfen.
 1. Klonen Sie Ihr Commerce Cloud-Projekt.
@@ -273,7 +273,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie den GraphQL-Anwendungsserver i
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass alle benutzerdefinierten Einstellungen in Ihrer Root-`.magento.app.yaml`-Datei ordnungsgemäß in die `application-server/.magento/.magento.app.yaml`-Datei migriert werden. Nachdem die `application-server/.magento/.magento.app.yaml` Datei zu Ihrem Projekt hinzugefügt wurde, sollten Sie sie zusätzlich zur Stammdatei `.magento.app.yaml` beibehalten. Wenn Sie z. B. [den RabbitMQ-Service konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) oder [Web-Eigenschaften verwalten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) sollten Sie `application-server/.magento/.magento.app.yaml` dieselbe Konfiguration hinzufügen.
+>Stellen Sie sicher, dass alle benutzerdefinierten Einstellungen in Ihrer Root-`.magento.app.yaml`-Datei ordnungsgemäß in die `application-server/.magento/.magento.app.yaml`-Datei migriert werden. Nachdem die `application-server/.magento/.magento.app.yaml` Datei zu Ihrem Projekt hinzugefügt wurde, sollten Sie sie zusätzlich zur Stammdatei `.magento.app.yaml` beibehalten. Wenn Sie z. B. [den RabbitMQ-Service konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) oder [Web-Eigenschaften verwalten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property) sollten Sie `application-server/.magento/.magento.app.yaml` dieselbe Konfiguration hinzufügen.
 
 ### Überprüfen der Aktivierung in Cloud-Projekten
 
@@ -322,7 +322,7 @@ Führen Sie die folgenden Schritte aus, bevor Sie das `ApplicationServer` aktivi
 
 #### Konfigurieren von nginx
 
-Ihre spezifische Commerce-Bereitstellung bestimmt, wie Nginx konfiguriert wird. Im Allgemeinen heißt die Nginx-Konfigurationsdatei standardmäßig `nginx.conf` und wird in einem der folgenden Verzeichnisse abgelegt: `/usr/local/nginx/conf`, `/etc/nginx` oder `/usr/local/etc/nginx`. Weitere Informationen _[Konfigurieren von Nginx finden &#x200B;](https://nginx.org/en/docs/beginners_guide.html)_ im „Anfängerhandbuch“.
+Ihre spezifische Commerce-Bereitstellung bestimmt, wie Nginx konfiguriert wird. Im Allgemeinen heißt die Nginx-Konfigurationsdatei standardmäßig `nginx.conf` und wird in einem der folgenden Verzeichnisse abgelegt: `/usr/local/nginx/conf`, `/etc/nginx` oder `/usr/local/etc/nginx`. Weitere Informationen _[Konfigurieren von Nginx finden ](https://nginx.org/en/docs/beginners_guide.html)_ im „Anfängerhandbuch“.
 
 Nginx-Beispielkonfiguration:
 
@@ -537,3 +537,30 @@ Diese Dateien können mit jedem Tool überprüft werden, mit dem Sie XML oder JS
 >[!NOTE]
 >
 >`--state-monitor` ist nicht kompatibel mit PHP-Versionen `8.3.0` - `8.3.4` aufgrund eines Fehlers im PHP Garbage Collector. Wenn Sie PHP 8.3 verwenden, müssen Sie auf `8.3.5` oder höher aktualisieren, um diese Funktion nutzen zu können.
+
+## Konfigurieren alternativer Header für die Client-IP-Erkennung
+
+Standardmäßig unterstützt der GraphQL-Anwendungs-Server eine Standardkonfiguration für den `x-forwarded-for`-Header, der in der `app/etc/di.xml` definiert ist, sodass die Client-IP-Adresse in typischen Proxy- und CDN-Umgebungen präzise abgerufen werden kann.
+
+Wenn Sie zusätzliche oder benutzerdefinierte Kopfzeilen unterstützen müssen (z. B. `x-client-ip`, `fastly-client-ip` oder `x-real-ip`), können Sie das `alternativeHeaders`-Argument in Ihrer `app/etc/di.xml`-Datei erweitern oder überschreiben. Dies ist nur erforderlich, wenn Ihre Umgebung zur Weitergabe der Client-IP-Adresse andere Kopfzeilen als `x-forwarded-for` verwendet.
+
+Um beispielsweise die Unterstützung für andere Kopfzeilen hinzuzufügen, aktualisieren Sie Ihre `app/etc/di.xml` wie folgt:
+
+```xml
+<type name="Magento\Framework\HTTP\PhpEnvironment\RemoteAddress">
+    <arguments>
+        <argument name="alternativeHeaders" xsi:type="array">
+            <item name="x-client-ip" xsi:type="string">HTTP_X_CLIENT_IP</item>
+            <item name="fastly-client-ip" xsi:type="string">HTTP_FASTLY_CLIENT_IP</item>
+            <item name="x-real-ip" xsi:type="string">HTTP_X_REAL_IP</item>
+            <item name="x-forwarded-for" xsi:type="string">HTTP_X_FORWARDED_FOR</item>
+        </argument>
+    </arguments>
+</type>
+```
+
+Sie können die Header nach Bedarf hinzufügen, entfernen oder neu anordnen, um sicherzustellen, dass die Client-IP aus der richtigen Quelle für Ihr Setup abgerufen wird.
+
+>[!NOTE]
+>
+>Wenn Sie Adobe Commerce Cloud mit dem Fastly CDN-Modul verwenden, wird diese Konfiguration automatisch vorgenommen und es sind keine manuellen Änderungen erforderlich. Eine manuelle Konfiguration ist nur für benutzerdefinierte CDN-, Proxy- oder nicht standardmäßige Header-Setups erforderlich.

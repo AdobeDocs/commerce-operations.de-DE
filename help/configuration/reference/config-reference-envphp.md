@@ -2,9 +2,9 @@
 title: env.php-Referenz
 description: Erfahren Sie mehr über die Konfigurationswerte und -abschnitte der Datei env.php in Adobe Commerce. Erkunden Sie Umgebungseinstellungen und Konfigurationsoptionen.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce verwendet einen Verschlüsselungsschlüssel zum Schutz von Kennwörtern
 ]
 ```
 
-Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
+Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
 
 ## dB
 
@@ -172,11 +172,19 @@ In diesem Knoten sind alle Datenbankkonfigurationen verfügbar.
 
 ## default_connection
 
-Definiert die Standardverbindung für Nachrichtenwarteschlangen. Der Wert kann `db`, `amqp` oder ein benutzerdefiniertes Warteschlangensystem wie `redismq` sein. Wenn Sie einen anderen Wert als `db` angeben, muss zuerst die Message Queue-Software installiert und konfiguriert werden. Andernfalls werden die Nachrichten nicht korrekt verarbeitet.
+Definiert die Standardverbindung für Nachrichtenwarteschlangen. Der Wert kann `db`, `amqp`, `stomp` oder ein benutzerdefiniertes Warteschlangensystem wie `redismq` sein. Wenn Sie einen anderen Wert als `db` angeben, muss zuerst die Message Queue-Software installiert und konfiguriert werden. Andernfalls werden die Nachrichten nicht korrekt verarbeitet.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+Für STOMP (ActiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -185,7 +193,7 @@ Wenn `queue/default_connection` beispielsweise in `amqp` `env.php` ist, aber in 
 
 ## Verzeichnisse
 
-Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([&#x200B; Sicherheit](../../installation/tutorials/docroot.md).
+Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([ Sicherheit](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -203,7 +211,7 @@ Eine Liste der in diesem Knoten verfügbaren herunterladbaren Domains. Zusätzli
 ]
 ```
 
-Weitere Informationen zu &quot;[&#x200B; Domains](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Weitere Informationen zu &quot;[ Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installieren
 
@@ -233,13 +241,13 @@ Weitere Informationen zu [Anwendungsmodi](../cli/set-mode.md).
 
 ## Warteschlange
 
-In diesem Knoten sind Konfigurationen für die Nachrichtenwarteschlange verfügbar.
+In diesem Knoten sind Konfigurationen für die Nachrichtenwarteschlange verfügbar. Sie können RabbitMQ (AMQP) oder ActiveMQ Artemis (STOMP) als Nachrichtenbroker konfigurieren.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```
