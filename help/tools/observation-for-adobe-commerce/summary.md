@@ -3,7 +3,7 @@ title: Die Registerkarte [!UICONTROL Summary]
 description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL Summary]" von [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
 workflow-type: tm+mt
 source-wordcount: '2494'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Der **[!UICONTROL Swap memory free in bytes]** zeigt die Menge des ausgelagerten
 
 ![CPU Prozent nach Host](../../assets/tools/cpu-percent-by-host.jpg)
 
-Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** angezeigt. Sie sollten die Auswahl der produktionsfremden Umgebungen aufheben. Beachten Sie außerdem alle Instanzen, bei denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Weitere Tipps zur hohen CPU-Auslastung finden Sie unter [Leistungsprobleme mit New Relic auf Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=de).
+Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** angezeigt. Sie sollten die Auswahl der produktionsfremden Umgebungen aufheben. Beachten Sie außerdem alle Instanzen, bei denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Weitere Tipps zur hohen CPU-Auslastung finden Sie unter [Leistungsprobleme mit New Relic auf Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -70,7 +70,7 @@ Die **[!UICONTROL Alerts during timeframe]** zeigt alle Warnhinweise an, einschl
 
 ![Nutzung von CPU](../../assets/tools/cpu-usage.jpg)
 
-Wenn der **[!UICONTROL CPU Usage]** leer ist, bedeutet dies, dass die Infrastrukturanwendung von [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn sich Ihre Site auf Pro befindet, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de), um [!DNL New Relic Infrastructure] für Ihre Site zu aktivieren.
+Wenn der **[!UICONTROL CPU Usage]** leer ist, bedeutet dies, dass die Infrastrukturanwendung von [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn sich Ihre Site auf Pro befindet, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html), um [!DNL New Relic Infrastructure] für Ihre Site zu aktivieren.
 
 ## [!UICONTROL Average Response Time]
 
@@ -257,7 +257,7 @@ Der **[!UICONTROL Database mysql-slow.log]** Frame enthält die Anzahl der Eintr
 
 ![RediS-Synchronisierung aus Protokoll](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) ist ein Open-Source-Datenstrukturspeicher (BSD-lizenziert), der als Datenbank, Cache und Nachrichtenbroker verwendet wird. Er kann Datenbank- und Sitzungs-Caching durchführen, falls konfiguriert. Der **[!UICONTROL Redis synchronization from Log]**-Frame konzentriert sich auf [[!DNL Redis] Synchronisierung](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). Je größer der [!DNL Redis] Datensatz ist, desto wahrscheinlicher ist es, dass Probleme bei der Synchronisierung auftreten (mehr Daten müssen synchronisiert werden).
+[[!DNL Redis]](https://redis.io/about/) ist ein Open-Source-Datenstrukturspeicher (BSD-lizenziert), der als Datenbank, Cache und Nachrichtenbroker verwendet wird. Er kann Datenbank- und Sitzungs-Caching durchführen, falls konfiguriert. Der **[!UICONTROL Redis synchronization from Log]**-Frame konzentriert sich auf [[!DNL Redis] Synchronisierung](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). Je größer der [!DNL Redis] Datensatz ist, desto wahrscheinlicher ist es, dass Probleme bei der Synchronisierung auftreten (mehr Daten müssen synchronisiert werden).
 
 **[!DNL Redis]Fehler und Meldungen:**
 
@@ -284,7 +284,7 @@ Der **[!UICONTROL Database mysql-slow.log]** Frame enthält die Anzahl der Eintr
 
 ![PHP-Prozessstatus](../../assets/tools/php-process-states.jpg)
 
-Wie sich PHP-Prozesse verhalten, hängt von der [&#x200B; ab](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex mit vielen Variablen und Optionen. Der **[!UICONTROL PHP process states]**-Frame hilft zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
+Wie sich PHP-Prozesse verhalten, hängt von der [ ab](https://www.php.net/manual/en/install.fpm.configuration.php). Die Konfiguration ist komplex mit vielen Variablen und Optionen. Der **[!UICONTROL PHP process states]**-Frame hilft zu verstehen, wann PHP-Prozesse beendet und neu gestartet werden.
 
 ### [!UICONTROL PHP errors]
 
@@ -384,7 +384,7 @@ Der **[!UICONTROL Order transactions (default?)]** Rahmen sucht nach Transaktion
 * &#39;%Sie können dieses Problem beheben, indem Sie den Elasticsearch-Service in Ihrer Magento Cloud-Infrastruktur auf Version%&#39; als &#39;ver_err&#39; aktualisieren.
 * &#39;%cluster health status changed from \[YELLOW\] to \[RED\] (reason:%&#39; as &#39;yel_red&#39;
 * &#39;%Kein Speicherplatz mehr auf dem Gerät%&#39; als &#39;no_space&#39;
-* &#39;% konnte &lbrack;SearchRequest=%&#39; nicht als &#39;failed_query&#39; ausführen
+* &#39;% konnte [SearchRequest=%&#39; nicht als &#39;failed_query&#39; ausführen
 
 ## [!UICONTROL Cron view]
 
