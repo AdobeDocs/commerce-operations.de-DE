@@ -49,7 +49,7 @@ Sie können auch einen Prozess-Manager wie [Supervisor](https://supervisord.read
 
 >[!INFO]
 >
->Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) den `consumers_runner` Cron-Auftrag.
+>Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#cron_consumers_runner) den `consumers_runner` Cron-Auftrag.
 
 ### Spezifische Konfiguration
 
@@ -82,7 +82,7 @@ Bearbeiten Sie die `/app/etc/env.php` Datei, um die Cron-Job-`consumers_runner` 
 
   >[!INFO]
   >
-  >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages), wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
+  >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#consumers_wait_for_max_messages), wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
 
   >[!NOTE]
   >
