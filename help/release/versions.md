@@ -24,7 +24,7 @@ Adobe bietet eine einjährige Support-Verlängerung ohne zusätzliche Kosten fü
 >
 >- Adobe empfiehlt, Adobe Commerce auf den neuesten für jede Version verfügbaren Sicherheits-Patch zu installieren oder zu aktualisieren.
 >- Informationen zu anderen Sicherheitsupdates finden Sie unter [Sicherheitsupdates für Magento/Adobe Commerce](https://helpx.adobe.com/de/security/products/magento.html).
->- Informationen zu den Preisen finden Sie unter [Adobe Commerce-Preise](https://business.adobe.com/products/magento/pricing.html).
+>- Informationen zu den Preisen finden Sie unter [Adobe Commerce-Preise](https://business.adobe.com/de/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
