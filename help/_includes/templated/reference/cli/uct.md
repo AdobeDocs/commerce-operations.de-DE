@@ -1,7 +1,7 @@
 ---
-source-git-commit: ff21c497db7dd2aab90ded90fb3bba853e3c20f6
+source-git-commit: e044459f849f35a4a1e161a191bc7497fcef9281
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '977'
 ht-degree: 1%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 1%
 
 
 <!-- The template to render with above values -->
-**Version**: 3.0.24
+**Version**: 3.0.25
 
 Diese Referenz enthält 9 Befehle, die über das `bin/uct` Befehlszeilen-Tool verfügbar sind.
 Die anfängliche Liste wird automatisch mit dem `bin/uct list`-Befehl in Adobe Commerce generiert.
@@ -21,7 +21,7 @@ Die anfängliche Liste wird automatisch mit dem `bin/uct list`-Befehl in Adobe C
 
 Weitere Informationen zum Tool finden Sie unter [Übersicht](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
-Diese Referenzdokumentation wird aus dem Programm-Quell-Code generiert. Um die Dokumentation zu ändern, sollten Sie eine Pull-Anfrage für den entsprechenden Befehl im entsprechenden [Codebase“-](https://github.com/magento) öffnen. Weitere Informationen [&#x200B; Sie unter &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)Code-Beiträge“.
+Diese Referenzdokumentation wird aus dem Programm-Quell-Code generiert. Um die Dokumentation zu ändern, sollten Sie eine Pull-Anfrage für den entsprechenden Befehl im entsprechenden [Codebase“-](https://github.com/magento) öffnen. Weitere Informationen [ Sie unter ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)Code-Beiträge“.
 
 ### Globale Optionen
 
@@ -337,7 +337,7 @@ Pfad der Datei, in die die Ausgabe exportiert wird (JSON-Format)
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
-Auflisten der Adobe Commerce DB-Schemaunterschiede zwischen zwei ausgewählten Versionen zulassen. Verfügbare Versionen: 2.3.0 | 2,3,1 | 2,3,2 | 2.3.2-p2 | 2,3,3 | 2.3.3-P1 | 2,3,4 | 2.3.4-p1 | 2.3.4-p2 | 2,3,5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-P1 | 2,4,1 | 2.4.1-p1 | 2,4,2 | 2.4.2-p1 | 2.4.2-p2 | 2,4,3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2,4,6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-Beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-Beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-Beta3 | 2,4,7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-P10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-P11 | 2.4.5-P10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-Beta1 | 2.4.4-P12 | 2.4.5-P11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-beta2 | 2.4.4-P13 | 2.4.5-P12 | 2.4.6-P10 | 2.4.7-p5 | 2,4,8 | 2.4.9-Alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-P12 | 2.4.5-P14 | 2.4.4-p15 | 2.4.9-Alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-P11 | 2.4.5-P13 | 2.4.4-P14
+Auflisten der Adobe Commerce DB-Schemaunterschiede zwischen zwei ausgewählten Versionen zulassen. Verfügbare Versionen: 2.3.0 | 2,3,1 | 2,3,2 | 2.3.2-p2 | 2,3,3 | 2.3.3-P1 | 2,3,4 | 2.3.4-p1 | 2.3.4-p2 | 2,3,5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-P1 | 2,4,1 | 2.4.1-p1 | 2,4,2 | 2.4.2-p1 | 2.4.2-p2 | 2,4,3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2,4,6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-Beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-Beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-Beta3 | 2,4,7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-P10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-P11 | 2.4.5-P10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-Beta1 | 2.4.4-P12 | 2.4.5-P11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-beta2 | 2.4.4-P13 | 2.4.5-P12 | 2.4.6-P10 | 2.4.7-p5 | 2,4,8 | 2.4.9-Alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-P12 | 2.4.5-P14 | 2.4.4-p15 | 2.4.9-Alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-P11 | 2.4.5-P13 | 2.4.4-P14 | 2.4.9-Alpha3 | 2.4.8-p3 | 2.4.7-p8 | 2.4.6-P13 | 2.4.5-P15 | 2.4.4-P16
 
 ### Argumente
 
@@ -421,7 +421,7 @@ Aktuelle Adobe Commerce-Version, Version der Adobe Commerce-Installation wird ve
 
 #### `--coming-version`, `-c`
 
-Adobe Commerce-Zielversion. Die neueste veröffentlichte stabile Version von Adobe Commerce wird verwendet, wenn sie weggelassen wird. Verfügbare Adobe Commerce-Versionen: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-P1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-P2 \| 2.3.5 \| 2.3.5-P1 \| 2.3.5-P2 \| 2.3.6 \| 2.3.6-P1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-P2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-P1 \| 2.4.1 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-P1 \| 2.4.3-P2 \| 2.4.3-P3 \| 2.4.4 \| 2.4.4-P1 \| 2.4.4-P2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-P7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-P10 \| 2.4.4-P11 \| 2.4.4-P12 \| 2.4.4-P13 \| 2.4.4-P14 \| 2.4.4-P15 \| 2.4.5 \| 2.4.5-P1 \| 2.4.5-P2 \| 2.4.5-P3 \| 2.4.5-P4 \| 2.4.5-p5 \| 2.4.5-P6 \| 2.4.5-P7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-P10 \| 2.4.5-P11 \| 2.4.5-P12 \| 2.4.5-P13 \| 2.4.5-P14 \| 2.4.6 \| 2.4.6-P1 \| 2.4.6-P2 \| 2.4.6-p3 \| 2.4.6-P4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-P7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.6-P10 \| 2.4.6-P11 \| 2.4.6-P12 \| 2.4.7-Beta1 \| 2.4.7-Beta2 \| 2.4.7-Beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-P2 \| 2.4.7-p3 \| 2.4.7-p4 \| 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-P7 \| 2.4.8-Beta1 \| 2.4.8-Beta2 \| 2.4.8 \| 2.4.8-P1 \| 2.4.8-P2 \| 2.4.9-Alpha1 \| 2.4.9-Alpha2
+Adobe Commerce-Zielversion. Die neueste veröffentlichte stabile Version von Adobe Commerce wird verwendet, wenn sie weggelassen wird. Verfügbare Adobe Commerce-Versionen: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-P1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-P2 \| 2.3.5 \| 2.3.5-P1 \| 2.3.5-P2 \| 2.3.6 \| 2.3.6-P1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-P2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-P1 \| 2.4.1 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-P1 \| 2.4.3-P2 \| 2.4.3-P3 \| 2.4.4 \| 2.4.4-P1 \| 2.4.4-P2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-P7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-P10 \| 2.4.4-P11 \| 2.4.4-P12 \| 2.4.4-P13 \| 2.4.4-P14 \| 2.4.4-P15 \| 2.4.4-P16 \| 2.4.5 \| 2.4.5-P1 \| 2.4.5-P2 \| 2.4.5-P3 \| 2.4.5-P4 \| 2.4.5-p5 \| 2.4.5-P6 \| 2.4.5-P7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-P10 \| 2.4.5-P11 \| 2.4.5-P12 \| 2.4.5-P13 \| 2.4.5-P14 \| 2.4.5-P15 \| 2.4.6 \| 2.4.6-P1 \| 2.4.6-P2 \| 2.4.6-p3 \| 2.4.6-P4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-P7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.6-P10 \| 2.4.6-P11 \| 2.4.6-P12 \| 2.4.6-P13 \| 2.4.7-Beta1 \| 2.4.7-Beta2 \| 2.4.7-Beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-P2 \| 2.4.7-p3 \| 2.4.7-p4 \| 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-P7 \| 2.4.7-p8 \| 2.4.8-Beta1 \| 2.4.8-Beta2 \| 2.4.8 \| 2.4.8-P1 \| 2.4.8-P2 \| 2.4.8-p3 \| 2.4.9-Alpha1 \| 2.4.9-Alpha2 \| 2.4.9-Alpha3
 
 - Akzeptiert einen Wert
 
