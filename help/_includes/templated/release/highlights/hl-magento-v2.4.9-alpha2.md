@@ -1,5 +1,5 @@
 ---
-source-git-commit: bfad68a46b9b1a79a702f04efd39129decda1a1c
+source-git-commit: 3bc225485fa5a4c2b3565014af4ed81dc37fc4ab
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -92,18 +92,20 @@ _AC-14610_
 
 #### Migrieren der USPS-Integration von veralteten Web-Tools-APIs zu neuen RESTful-USPS-APIs
 
-Um die von USPS angekündigte Einstellung der alten Web-Tools-APIs bis zum 25. Januar 2026 zu erreichen, wird die Adobe Commerce USPS-Integration auf die neuen RESTful-USPS-APIs migriert.
+Um die von USPS angekündigte Einstellung der veralteten Web-Tools-APIs bis zum 25. Januar 2026 einzuhalten, wird die Adobe Commerce USPS-Integration auf die neuen RESTful-USPS-APIs migriert.
 Wichtige Verbesserungen:
-- Unterstützung von zwei APIs: Admin-Benutzer können jetzt über die Konfigurationseinstellungen zwischen der Legacy Web Tools-API und der neuen RESTful USPS-API wählen.
-- Authentifizierungs-Upgrade: OAuth 2.0 wurde für sicheren API-Zugriff implementiert.
-- Verbessertes Datenformat: Übergang von XML zu JSON für sauberere, effizientere Kommunikation.
-- Neue Administratorfelder:
-Gateway-REST-URL (basierend auf Modus: Entwicklung oder Live)
-Client-ID und Geheimnis
-Kontotyp, Kontonummer
-CRID, MID, Mailer-Identifizierungscode
-AES/ITN für internationale Sendungen
-REST-spezifische zulässige Versandmethoden
+
+* Unterstützung von zwei APIs: Admin-Benutzer können jetzt über die Konfigurationseinstellungen zwischen der Legacy Web Tools-API und der neuen RESTful USPS-API wählen.
+* Authentifizierungs-Upgrade: OAuth 2.0 wurde für sicheren API-Zugriff implementiert.
+* Verbessertes Datenformat: Übergang von XML zu JSON für sauberere, effizientere Kommunikation.
+* Neue Administratorfelder:
+   * Gateway-REST-URL (basierend auf Modus: Entwicklung oder Live)
+   * Client-ID und Geheimnis
+   * Kontotyp, Kontonummer
+   * CRID, MID, Mailer-Identifizierungscode
+   * AES/ITN für internationale Sendungen
+   * REST-spezifische zulässige Versandmethoden
+
 Diese Migration stellt sicher, dass Adobe Commerce weiterhin die USPS-Standards erfüllt, die Systemzuverlässigkeit verbessert und die Versandintegrationen für Händler zukunftssicher macht.
 
 _AC-13257_
