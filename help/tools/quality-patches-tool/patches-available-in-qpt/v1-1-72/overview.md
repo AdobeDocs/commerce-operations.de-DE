@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a6a18a4cbab9d2e5a0c4824fc5ad9463f9e61c1c
+source-git-commit: fddde045789cdbbe811975b06635574b9835d497
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.72 enthält die folgenden Patches:
 1. **ACSD-67639**: Das Erstellen einer Gutschrift schlägt für Bundle-Produkte fehl, wobei **[!UICONTROL Dynamic Price]** auf &quot;*&quot;*.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` Einträge werden nach einer Cache-Leerung nicht im Warenkorb-GraphQL-Produktknoten zurückgegeben.
 1. **ACSD-67946**: Bei Warenkorbaktualisierungen werden doppelte Fehlerbanner angezeigt.
-1. **ACSD-68011**: Nicht vorhandene SKUs können über die `/V1/sharedCatalog/:id/assignProducts` [!DNL REST]-API einem freigegebenen Katalog zugewiesen werden.
+1. **ACSD-68011**: Nicht vorhandene SKUs, die über die API /V1/sharedCatalog/:id/assignProducts dem freigegebenen Katalog zugewiesen sind.
 1. **ACSD-68118**: `customerCart` GraphQL-Abfrage gibt Produktattributwerte zurück, die nicht die Store-Kopfzeile widerspiegeln, was zu einer inkonsistenten Lokalisierung führt.
 1. **ACSD-68092**: Bundle-Produktoptionen gehen nach mehreren Speichervorgängen verloren, da zwischen geplanten Aktualisierungen und Basisproduktdaten nicht ordnungsgemäß synchronisiert wird.
 1. **ACSD-67424**: `updated_at` Wert in der `GET /carts/search` [!DNL REST] API-Antwort stimmt nicht mit dem in der **[!UICONTROL Admin panel]** angezeigten Wert überein, wenn verhandelbare Anführungszeichen verwendet werden.
