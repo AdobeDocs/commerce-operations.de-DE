@@ -1,5 +1,5 @@
 ---
-source-git-commit: b0756431d8ddf0833ef8c13528f7681a1a92a3ca
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt &#x200B;](/help/configuration/cli/config-cli.md#prerequisites).
+>Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt ](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Sicherungsbefehle {#tip-backup-command}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes).
+>Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Nur Adobe Commerce {#ee-only}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Die Funktion „Split Database[&#x200B; wurde in &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](/help/configuration/storage/revert-split-database.md).
+>Die Funktion „Split Database[ wurde in ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
 
@@ -85,7 +85,7 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 >[!IMPORTANT]
 >
->Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+>Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
 
 ## Sicherheits-Patch-Backports Oktober 2025 {#oct-2025-backports}
 
@@ -99,5 +99,4 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 * **Unterstützung für das Apache ActiveMQ Artemis STOMP-Protokoll wurde hinzugefügt**
 
-  Unterstützung für ActiveMQ Artemis Open-Source-Nachrichtenbroker durch das Simple Text Oriented Messaging Protocol (STOMP) wurde hinzugefügt. Es bietet ein zuverlässiges und skalierbares Messaging-System, das Flexibilität für STOMP-basierte Integrationen bietet. Siehe [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) im *Commerce-Konfigurationshandbuch*.
-
+  Unterstützung für ActiveMQ Artemis Open-Source-Nachrichtenbroker durch das Simple Text Oriented Messaging Protocol (STOMP) wurde hinzugefügt. Es bietet ein zuverlässiges und skalierbares Messaging-System, das Flexibilität für STOMP-basierte Integrationen bietet. Siehe [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) im *Commerce-Konfigurationshandbuch*.
