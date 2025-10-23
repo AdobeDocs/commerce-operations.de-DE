@@ -182,7 +182,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ### Hotfix für CVE-2022-31160 anwenden
 
-`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
+`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
 
 ## 2.4.4-p4
 
@@ -192,7 +192,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ### Hotfix für CVE-2022-31160 anwenden
 
-`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
+`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
 
 ### Highlights
 
@@ -222,7 +222,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ### Wenden Sie AC-3022.patch an, um DHL weiterhin als Versandunternehmen anzubieten
 
-DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [ Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier?_ga=2.201689433.994140970.1661546561-1218319047.1534347481)Apply a patch to continue offer DHL as a shipping carrier) .
+DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [&#x200B; Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier?_ga=2.201689433.994140970.1661546561-1218319047.1534347481)Apply a patch to continue offer DHL as a shipping carrier) .
 
 ## 2.4.4-p1
 
@@ -232,7 +232,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie unter [
 
 ### Wenden Sie `AC-3022.patch` an, um DHL weiterhin als Versandunternehmen anzubieten
 
-DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [ Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel ](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
+DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in naher Zukunft einstellen. Adobe Commerce 2.4.4 und frühere Versionen, die die DHL-Integration unterstützen, unterstützen nur Version 6.0. Händler, die diese Versionen bereitstellen, sollten `AC-3022.patch` so bald wie möglich beantragen, DHL weiterhin als Reederei anzubieten. Informationen [&#x200B; Herunterladen und Installieren des Patches finden Sie im Knowledgebase-Artikel &#x200B;](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier)Apply a patch to continue offer DHL as a shipping carrier) .
 
 ### Highlights
 
@@ -245,6 +245,6 @@ Die Sicherheitsverbesserungen für diese Version verbessern die Einhaltung der n
 
 **Problem**: Web-API- und Integrationstests zeigen diesen Fehler an, wenn sie mit dem 2.4.4-p1-Paket ausgeführt werden: `[2022-06-14T16:58:23.694Z] PHP Fatal error:  Declaration of Magento\TestFramework\ErrorLog\Logger::addRecord(int $level, string $message, array $context = []): bool must be compatible with Monolog\Logger::addRecord(int $level, string $message, array $context = [], ?Monolog\DateTimeImmutable $datetime = null): bool in /var/www/html/dev/tests/integration/framework/Magento/TestFramework/ErrorLog/Logger.php on line 69`. **Problemumgehung**: Installieren Sie die vorherige Version von Monolog, indem Sie den `require monolog/monolog:2.6.0` Befehl ausführen. <!-- AC-3651-->
 
-**Problem**: Händler bemerken möglicherweise während eines Upgrades von Adobe Commerce 2.4.4 auf Adobe Commerce 2.4.4-p1 Downgrade-Hinweise zur Paketversion. Diese Nachrichten können ignoriert werden. Die Diskrepanz in den Paketversionen resultiert aus Anomalien bei der Paketerstellung. Die Produktfunktionalität wurde nicht beeinträchtigt. Im Knowledgebase-Artikel [Pakete, die nach dem Upgrade von 2.4.4 auf 2.4.4-p1 ](https://support.magento.com/hc/en-us/articles/8214752983949) wurden) finden Sie eine Erläuterung der betroffenen Szenarien und Problemumgehungen.
+**Problem**: Händler bemerken möglicherweise während eines Upgrades von Adobe Commerce 2.4.4 auf Adobe Commerce 2.4.4-p1 Downgrade-Hinweise zur Paketversion. Diese Nachrichten können ignoriert werden. Die Diskrepanz in den Paketversionen resultiert aus Anomalien bei der Paketerstellung. Die Produktfunktionalität wurde nicht beeinträchtigt. Im Knowledgebase-Artikel [Pakete, die nach dem Upgrade von 2.4.4 auf 2.4.4-p1 &#x200B;](https://support.magento.com/hc/en-us/articles/8214752983949) wurden) finden Sie eine Erläuterung der betroffenen Szenarien und Problemumgehungen.
 
 <!-- Last updated from includes: 2025-10-22 11:16:25 -->

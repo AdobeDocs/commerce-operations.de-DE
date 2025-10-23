@@ -101,7 +101,7 @@ Wichtige Verbesserungen:
 * Verbessertes Datenformat: Übergang von XML zu JSON für sauberere, effizientere Kommunikation.
 * Neue Administratorfelder:
    * Gateway-REST-URL (basierend auf Modus: Entwicklung oder Live)
-   * Client-ID &amp;amp; Geheimnis
+   * Client-ID &amp; Geheimnis
    * Kontotyp, Kontonummer
    * CRID, MID, Mailer-Identifizierungscode
    * AES/ITN für internationale Sendungen
