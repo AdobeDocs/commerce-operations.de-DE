@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 5b0229d73dc7b8ad53750102e99447bb15baa84d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ Wichtige Verbesserungen:
 * Verbessertes Datenformat: Übergang von XML zu JSON für sauberere, effizientere Kommunikation.
 * Neue Administratorfelder:
    * Gateway-REST-URL (basierend auf Modus: Entwicklung oder Live)
-   * Client-ID &amp; Geheimnis
+   * Client-ID und Geheimnis
    * Kontotyp, Kontonummer
    * CRID, MID, Mailer-Identifizierungscode
    * AES/ITN für internationale Sendungen
