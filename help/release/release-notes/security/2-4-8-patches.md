@@ -2,9 +2,9 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.8
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.7.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: e625670e741c0669050ab758d4f87c5ca06fe3df
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Die Adobe Commerce-Version 2.4.8-p3 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.8 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-94](https://helpx.adobe.com/de/security/products/magento/apsb25-94.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -29,15 +29,21 @@ Diese Version umfasst die folgenden Highlights:
 
 * Fehlerbehebung für ACP2E-3874: Die REST-API-Antwort für Auftragsdetails enthält jetzt korrekte Werte für `base_row_total`- und `row_total`-Attribute, falls mehrere gleiche Artikel bestellt wurden.
 
-* Fehlerbehebung für -AC-15446: Es wurde ein Fehler in `Magento\Framework\Mail\EmailMessage` behoben, bei dem `getBodyText()` versuchte, eine nicht vorhandene `getTextBody()` Methode in `Symfony\Component\Mime\Message` aufzurufen, um die Kompatibilität mit Magento 2.4.8-p2 und `magento/framework` 103.0.8-p2 sicherzustellen.
+* Fehlerbehebung für AC-15446: Es wurde ein Fehler in `Magento\Framework\Mail\EmailMessage` behoben, bei dem `getBodyText()` versuchte, eine nicht vorhandene `getTextBody()` Methode in `Symfony\Component\Mime\Message` aufzurufen, um die Kompatibilität mit Magento 2.4.8-p2 und `magento/framework` 103.0.8-p2 sicherzustellen.
 
 {{oct-2025-backports}}
+
+### Bekannte Probleme
+
+#### Die Checkout-Seite kann static.min.js und mixins.min.js nicht laden.
+
+{{checkout-page-fails-to-load-static-min-js-and-mixins-min-js}}
 
 ## 2.4.8-p2
 
 Die Adobe Commerce-Version 2.4.8-p2 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.8 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-71](https://helpx.adobe.com/de/security/products/magento/apsb25-71.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -45,7 +51,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Version 2.4.8-p1 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.8 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/de/security/products/magento/apsb25-50.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -69,7 +75,7 @@ Diese Version umfasst die folgenden Highlights:
 
 >[!BEGINSHADEBOX]
 
-Die Fehlerbehebungen für CVE-2025-47110 und VULN-31547 sind auch als isolierter Patch verfügbar. Weitere Informationen finden [&#x200B; im Artikel &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)Wissensdatenbank“.
+Die Fehlerbehebungen für CVE-2025-47110 und VULN-31547 sind auch als isolierter Patch verfügbar. Weitere Informationen finden [ im Artikel ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)Wissensdatenbank“.
 
 >[!ENDSHADEBOX]
 
