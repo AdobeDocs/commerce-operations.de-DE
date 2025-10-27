@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 8ca7b1b616bd5733cc2ecc18cef50dbb176ea0c3
+source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
 workflow-type: tm+mt
-source-wordcount: '29060'
+source-wordcount: '29260'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,21 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.73 {#v1-1-73}
+
+* **ACSD-67171** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Es wurde das Problem behoben, dass B2B-Benutzende eine *[!UICONTROL Access Denied]* sehen, wenn ihre Sitzung abgelaufen ist oder während des Checkouts entfernt wurde.
+* **ACSD-67908** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Behebt das Problem, dass JS-Dateien in Setups mit mehreren Speichern nicht ordnungsgemäß zusammengeführt werden können.
+* **ACSD-68190** (für Adobe Commerce >=2.4.4 &lt;2.4.7) - Behebt das Problem, dass Rabatte nicht angewendet werden, angewendete Rabatte in der GraphQL-Warenkorbansicht nicht korrekt angezeigt werden und Nicht-Couponrabatte beim Entfernen eines Couponrabatts entfernt werden.
+* **ACSD-68206** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Behebt den Fehler bei der Verwendung des GraphQL-Anwendungsservers mit der **[!UICONTROL Rate Limiting]**-Funktion, wobei die [!DNL PHP Redis]-Erweiterung installiert ist.
+* **ACSD-68356** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, bei dem eine GraphQL-Warenkorbabfrage einen falschen Rabattbetrag für virtuelle Angebote zurückgab.
+* **ACSD-68391** (für Adobe Commerce >=2.4.6-p10 &lt;2.4.9) - Es wurde das Problem behoben, dass kategoriespezifische Berechtigungen in **[!UICONTROL Quick Order]** und **[!UICONTROL Requisition Lists]** nicht korrekt angewendet wurden.
+* **ACSD-68400** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass die Menge der virtuellen Geschenkkarte nicht korrekt in der Inventarreservierungstabelle wiedergegeben wurde.
 
 ## v1.1.72 {#v1-1-72}
 
