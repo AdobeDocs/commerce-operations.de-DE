@@ -1,5 +1,5 @@
 ---
-source-git-commit: 151272eed6c4bb2e1c2e5138a5c8a3a7e7bd8fe6
+source-git-commit: ae571a9e7ca1234644a3bc9beade447009c58a3d
 workflow-type: tm+mt
 source-wordcount: '6077'
 ht-degree: 0%
@@ -41,9 +41,9 @@ Fehlerkorrektur - Die Paginierung in der API für die verkäufliche Lagerbestän
 
 _ACP2E-4086 - [GitHub-Code-Beitrag](https://github.com/magento/inventory/commit/5632fb5e)_
 
-#### Angreifer können POST-Anfragen mithilfe der REST-API verwenden und RCE-Payload senden
+#### Validierungsproblem mit benutzerdefinierten Optionen-IDs in REST-APIs für Warenkorbelemente
 
-Die REST-APIs V1/guest-carts/&lt;cartId>/items/ und V1/carts/mine/items/ validieren jetzt „product_options.extension_attributes.custom_options“.*.option_id“ muss gültige option_id in der Warenkorb-Artikel-SKU sein. Zuvor wurde diese Option verarbeitet und ohne Validierung in der Datenbank gespeichert.
+Die REST-APIs V1/guest-carts/&lt;cartId>/items/ und V1/carts/mine/items/ validieren jetzt „product_options.extension_attributes.custom_options“.*.option_id“, um sicherzustellen, dass es auf eine gültige option_id für die Warenkorb-Artikel-SKU verweist. Zuvor wurde dieser Parameter ohne Validierung verarbeitet und in der Datenbank gespeichert.
 
 _ACP2E-4138 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a1c57b2e)_
 
