@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72 enthält die folgenden Patches:
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` Einträge werden nach einer Cache-Leerung nicht im Warenkorb-GraphQL-Produktknoten zurückgegeben.
 1. **ACSD-67946**: Bei Warenkorbaktualisierungen werden doppelte Fehlerbanner angezeigt.
 1. **ACSD-68011**: Nicht vorhandene SKUs, die über die API /V1/sharedCatalog/:id/assignProducts dem freigegebenen Katalog zugewiesen sind.
-1. **ACSD-68118**: `customerCart` GraphQL-Abfrage gibt Produktattributwerte zurück, die nicht die Store-Kopfzeile widerspiegeln, was zu einer inkonsistenten Lokalisierung führt.
+1. **ACSD-68118**: `customerCart` [!DNL GraphQL] Abfrage gibt falsche Produktattributwerte für die Store-Ansicht zurück.
 1. **ACSD-68092**: Bundle-Produktoptionen gehen nach mehreren Speichervorgängen verloren, da zwischen geplanten Aktualisierungen und Basisproduktdaten nicht ordnungsgemäß synchronisiert wird.
 1. **ACSD-67424**: `updated_at` Wert in der `GET /carts/search` [!DNL REST] API-Antwort stimmt nicht mit dem in der **[!UICONTROL Admin panel]** angezeigten Wert überein, wenn verhandelbare Anführungszeichen verwendet werden.
 1. **ACSD-67187**: Admin-Benutzer, die auf nicht standardmäßige Websites beschränkt sind, sehen den Fehler *&quot;*Erstellen Sie mindestens einen öffentlichen freigegebenen Katalog, um fortzufahren* und können nicht auf die Schaltfläche &quot;**[!UICONTROL Add New Company]**&quot; im Firmenraster zugreifen.
