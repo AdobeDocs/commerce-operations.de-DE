@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
+source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 QPT v1.1.72 enthält die folgenden Patches:
 1. **ACSD-68040**: Frontend-Suchseite verlangsamt sich auf [!DNL MariaDB] 10.6 mit großem Verlauf.
 1. **ACSD-67941**: GraphQL-Anfragen mit unbekannten Filternamen verursachen PHP-Ausnahmeprotokolle.
-1. **ACSD-68064**: Das Erstellen geplanter Aktualisierungen führt zu doppelten Einträgen in Umgebungen mit einer hohen Anzahl verschachtelter Kategorien.
+1. **ACSD-68064**: Doppelte Einträge, die bei geplanten Aktualisierungen in Umgebungen mit tief verschachtelten Kategorien erstellt werden.
 1. **ACSD-66807**: `report_viewed_product_index` Tabelle zeigt eine falsche Anzahl von Produktseitenansichten an.
 1. **ACSD-67383**: Die Anmeldung als Kunde mit zwei Unternehmensadministratorkonten in derselben Sitzung verursacht den Fehler *Keine solche Entität mit cartId*.
 1. **ACSD-67518**: Die erweiterte Berichterstellung generiert doppelte Kopfzeilen, wenn die Zeilenanzahl die Batch-Größe überschreitet.
