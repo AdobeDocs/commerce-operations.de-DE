@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
+source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ QPT v1.1.72 enthält die folgenden Patches:
 1. **ACSD-67383**: Die Anmeldung als Kunde mit zwei Unternehmensadministratorkonten in derselben Sitzung verursacht den Fehler *Keine solche Entität mit cartId*.
 1. **ACSD-67518**: Die erweiterte Berichterstellung generiert doppelte Kopfzeilen, wenn die Zeilenanzahl die Batch-Größe überschreitet.
 1. **ACSD-67639**: Das Erstellen einer Gutschrift schlägt für Bundle-Produkte fehl, wobei **[!UICONTROL Dynamic Price]** auf &quot;*&quot;*.
+1. **ACSD-67946**: Bei der Aktualisierung des Warenkorbs werden doppelte Fehlerbanner angezeigt.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` Einträge werden nach einer Cache-Leerung nicht im Warenkorb-GraphQL-Produktknoten zurückgegeben.
 1. **ACSD-67946**: Bei Warenkorbaktualisierungen werden doppelte Fehlerbanner angezeigt.
 1. **ACSD-68011**: Nicht vorhandene SKUs, die über die API /V1/sharedCatalog/:id/assignProducts dem freigegebenen Katalog zugewiesen sind.
