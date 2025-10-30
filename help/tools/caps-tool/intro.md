@@ -53,7 +53,7 @@ Dieses Handbuch richtet sich an Händler und Partner von Adobe Commerce Cloud, d
 
 Erfahren Sie mehr über den Adobe Cloud Automated Patching Service und wie dieses Tool Benutzenden hilft, Sicherheits-Patches schnell zu finden und anzuwenden. Im folgenden Video wird beschrieben, wie Sie über das SWAT-Dashboard darauf zugreifen, Ihr Projekt und Ihre Umgebung auswählen und Patches mit einem Klick anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476256/?captions=ger&learn=on&enablevpops)
 
 ## Häufige Anwendungsfälle
 
