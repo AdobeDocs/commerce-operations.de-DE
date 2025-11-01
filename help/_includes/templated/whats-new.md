@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424: Der Wert „Updated_at“ in der GET /carts/search REST API-Antwort stimmt nicht mit dem Wert überein, der im Admin-Bedienfeld bei Verwendung von verhandelbaren Anführungszeichen angezeigt wird</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424">ACSD-67424: Der Wert „Updated_at“ in der GET /carts/search REST API-Antwort stimmt nicht mit dem Wert überein, der im Admin-Bedienfeld bei Verwendung von verhandelbaren Anführungszeichen angezeigt wird</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -31,7 +31,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8967a4cc8006fc5fa4319f7ffd6d8c7f3edf3d1">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: Anmeldung als Kunde mit zwei Unternehmensadministratorkonten in derselben Sitzung verursacht den Fehler „Keine solche Entität mit cartId“</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383">ACSD-67383: Anmeldung als Kunde mit zwei Unternehmensadministratorkonten in derselben Sitzung verursacht den Fehler „Keine solche Entität mit cartId“</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -53,7 +53,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">Übersicht: Quality Patches Tool (QPT) v1.1.73</a>.</p>
+      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview">Übersicht: Quality Patches Tool (QPT) v1.1.73</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -75,7 +75,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064: Das Erstellen geplanter Aktualisierungen führt zu doppelten Einträgen in Umgebungen mit einer hohen Anzahl verschachtelter Kategorien</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064">ACSD-68064: Das Erstellen geplanter Aktualisierungen führt zu doppelten Einträgen in Umgebungen mit einer hohen Anzahl verschachtelter Kategorien</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -83,7 +83,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b8d4046ce9ea0d085cc11f5631d04a8b3adb3239">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.72-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946: Warenkorbaktualisierungen zeigen doppelte Fehlerbanner an</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.72-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946">ACSD-67946: Warenkorbaktualisierungen zeigen doppelte Fehlerbanner an</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -113,7 +113,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040: Frontend-Suchseite zeigt eine Leistungsbeeinträchtigung auf MariaDB 10.6 und 11.4 mit vielen historischen Suchanfragen</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68040">ACSD-68040: Frontend-Suchseite zeigt eine Leistungsbeeinträchtigung auf MariaDB 10.6 und 11.4 mit vielen historischen Suchanfragen</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -121,7 +121,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6dff1447a89c083fb8bd867281d20462cc843baa">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.72 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118: Die Abfrage von CustomerCart GraphQL gibt Produktattributwerte zurück, die nicht der Store-Kopfzeile entsprechen, was zu einer inkonsistenten Lokalisierung führt</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.72 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68118">ACSD-68118: Die Abfrage von CustomerCart GraphQL gibt Produktattributwerte zurück, die nicht der Store-Kopfzeile entsprechen, was zu einer inkonsistenten Lokalisierung führt</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -129,7 +129,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7dec696f3d87d91902a166314199cf3b6c161f85">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.72 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807: Die Tabelle Report_viewed_product_index zeigt eine falsche Anzahl von Produktseitenansichten an</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.72 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-66807">ACSD-66807: Die Tabelle Report_viewed_product_index zeigt eine falsche Anzahl von Produktseitenansichten an</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -151,7 +151,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639: Das Erstellen einer Gutschrift schlägt für Bundle-Produkte fehl, bei denen der dynamische Preis auf „Nein“ </a> ist.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.72 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67639">ACSD-67639: Das Erstellen einer Gutschrift schlägt für Bundle-Produkte fehl, bei denen der dynamische Preis auf „Nein“ </a> ist.</p>
 </td>
       <td>
         Neues Thema, qpt
