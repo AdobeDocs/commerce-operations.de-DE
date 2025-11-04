@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie die Caching-Leistung mithilfe der erweiterten
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: ca1598b0-07c6-4338-aed1-f2ba05375197
-source-git-commit: 1ab977bf2b30c2851609f0bfcc636978e974f07a
+source-git-commit: 75dc606da65196619028e99ec44841db3988a73e
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -25,13 +25,13 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie in den [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
+Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie in den [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
 
 Informationen zu On-Premise-Installationen finden Sie unter [Konfigurieren des Valkey](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching)Seitencachings im _Konfigurationshandbuch_.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie die neueste Version des `ece-tools` verwenden. Falls nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des `composer show magento/ece-tools` CLI-Befehls überprüfen.
+>Stellen Sie sicher, dass Sie die neueste Version des `ece-tools` verwenden. Falls nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des `composer show magento/ece-tools` CLI-Befehls überprüfen.
 
 ### L2-Cache-Speicherdimensionierung (Adobe Commerce Cloud)
 
@@ -85,13 +85,13 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Weitere Informationen finden Sie unter [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) im _Handbuch zu Commerce in Cloud-Infrastruktur_.
+Weitere Informationen finden Sie unter [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) im _Handbuch zu Commerce in Cloud-Infrastruktur_.
 
 Konfigurieren Sie bei lokalen Adobe Commerce-Installationen die neue Valkey-Cache-Implementierung mithilfe der `bin/magento:setup`. Weitere Informationen finden Sie unter [Valkey für Standardcache verwenden](../../../configuration/cache/valkey-pg-cache.md#configure-page-caching) im _Konfigurationshandbuch_.
 
 >[!WARNING]
 >
->Konfigurieren _nicht_ eine Valkey-Slave-Verbindung für Cloud-Infrastrukturprojekte mit einer [skalierten/geteilten Architektur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Dies verursacht Valley-Verbindungsfehler. Weitere Informationen finden Sie in der [Valkey-Konfigurationsanleitung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) im _Handbuch zu Commerce in Cloud-_.
+>Konfigurieren _nicht_ eine Valkey-Slave-Verbindung für Cloud-Infrastrukturprojekte mit einer [skalierten/geteilten Architektur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/scaled-architecture). Dies verursacht Valley-Verbindungsfehler. Weitere Informationen finden Sie in der [Valkey-Konfigurationsanleitung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_use_slave_connection) im _Handbuch zu Commerce in Cloud-_.
 
 ## Schlüssel vorab laden
 
@@ -153,11 +153,11 @@ stage:
 
 >[!NOTE]
 >
->Im vorherigen Beispiel ist der `full_page`-Cache für Adobe Commerce für Cloud-Infrastrukturprojekte nicht relevant, da sie „Fastly[&#x200B; verwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly).
+>Im vorherigen Beispiel ist der `full_page`-Cache für Adobe Commerce für Cloud-Infrastrukturprojekte nicht relevant, da sie „Fastly[ verwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly).
 
 Informationen zum Konfigurieren von On-Premise-Installationen finden Sie unter [Veraltete Cache](../../../configuration/cache/level-two-cache.md#stale-cache-options) im _Konfigurationshandbuch_.
 
-Während der Bereitstellung sollten die folgenden Zeilen im „Build- [&#x200B; Bereitstellungsprotokoll“ angezeigt &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+Während der Bereitstellung sollten die folgenden Zeilen im „Build- [ Bereitstellungsprotokoll“ angezeigt ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -173,7 +173,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Cache-Komprimierung
 
-Wenn Sie mehr als 6 GB Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung verwenden, um den von den Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass es einen Zielkonflikt mit der Client-seitigen Leistung gibt. Wenn Sie über CPUs verfügen, empfiehlt Adobe, diese zu aktivieren. Siehe [Verwenden von Valkey für &#x200B;](../../../configuration/cache/valkey-session.md) Sitzungsspeicherung“ im _Konfigurationshandbuch_.
+Wenn Sie mehr als 6 GB Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung verwenden, um den von den Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass es einen Zielkonflikt mit der Client-seitigen Leistung gibt. Wenn Sie über CPUs verfügen, empfiehlt Adobe, diese zu aktivieren. Siehe [Verwenden von Valkey für ](../../../configuration/cache/valkey-session.md) Sitzungsspeicherung“ im _Konfigurationshandbuch_.
 
 ```yaml
 stage:
