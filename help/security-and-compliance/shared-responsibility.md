@@ -796,7 +796,7 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 >
 >Händler müssen die neueste Version der Live-Suche, Produktempfehlungen und Zahlungs-Services verwenden, um höchste Stabilität, Funktionalität und Support-Berechtigung zu gewährleisten.
 >Adobe unterstützt keine veralteten Versionen. Durch Upgrades wird sichergestellt, dass Sie von den neuesten Verbesserungen und Fehlerbehebungen profitieren.
->Einzelheiten zu unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix für Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+>Einzelheiten zu unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix für Commerce Services](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Produkt Recommendations
 
