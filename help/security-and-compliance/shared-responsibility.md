@@ -2,9 +2,9 @@
 title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
+source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -745,9 +745,9 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 
 |     | Adobe | Großhändler |
 | --- | --- | --- |
-| Verfügbarkeit von Elasticsearch | R |   |
-| Konfiguration der standardmäßigen Elasticsearch-Einstellungen | R |   |
-| Senden einer Service-Anfrage zur Installation einer Elasticsearch-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |  | R |
+| Verfügbarkeit von Elasticsearch oder OpenSearch | R |   |
+| Konfiguration der standardmäßigen Elasticsearch- oder OpenSearch-Einstellungen | R |   |
+| Senden einer Service-Anfrage zur Installation einer Elasticsearch- oder OpenSearch-Version, die mit der installierten Adobe Commerce-Version kompatibel ist |  | R |
 
 {style="table-layout:auto"}
 
@@ -793,11 +793,17 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 
 {style="table-layout:auto"}
 
+>
+>Händler müssen die neueste Version der Live-Suche, Produktempfehlungen und Zahlungs-Services verwenden, um höchste Stabilität, Funktionalität und Support-Berechtigung zu gewährleisten.
+>Adobe unterstützt keine veralteten Versionen. Durch Upgrades wird sichergestellt, dass Sie von den neuesten Verbesserungen und Fehlerbehebungen profitieren.
+>Einzelheiten zu unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix für Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+
 #### Produkt Recommendations
 
 |     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit des Product Recommendations-Service | R |   |
+| Aktualisieren von Produktempfehlungsmodulen |   | R |
 
 {style="table-layout:auto"}
 
@@ -806,6 +812,7 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 |     | Adobe | Großhändler |
 | --- | --- | --- |
 | Verfügbarkeit des Live Search-Service | R |   |
+| Aktualisieren von Live Search-Modulen |   | R |
 
 {style="table-layout:auto"}
 
@@ -820,6 +827,15 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 | Zentrale AEM EDS-Implementierung (Textbaustein für Commerce) | R |   |
 | Benutzerdefinierte AEM EDS-Implementierung |  | R |
 | Jede andere benutzerdefinierte Storefront-Implementierung |  | R |
+
+{style="table-layout:auto"}
+
+#### Zahlungsdienste
+
+|     | Adobe | Großhändler |
+| --- | --- | --- |
+| Verfügbarkeit des Zahlungsdienstes | R |   |
+| Aktualisieren von Zahlungsmodulen |   | R |
 
 {style="table-layout:auto"}
 
