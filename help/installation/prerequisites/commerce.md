@@ -15,13 +15,13 @@ Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere eCom
 
 ## So erhalten Sie die Software
 
-Überprüfen Sie die Verfügbarkeit und Kompatibilität von von von Adobe erstellten Erweiterungen und Commerce-Services für Adobe Commerce und Magento Open Source auf unserer [Produktverfügbarkeitsseite](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Überprüfen Sie die Verfügbarkeit und Kompatibilität von von von Adobe erstellten Erweiterungen und Commerce-Services für Adobe Commerce und Magento Open Source auf unserer [Produktverfügbarkeitsseite](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
 
 >[!NOTE]
 >
 >Aufgrund von Richtlinienänderungen werden Adobe Commerce-Code-Basen jetzt ausschließlich über Composer verteilt. Verwenden Sie den Composer, um eine der aufgelisteten Adobe Commerce-Versionen herunterzuladen, da die Codebasis im Abschnitt „Downloads“ nicht mehr verfügbar ist.
 >
->Weitere Informationen finden Sie unter [Auf die Abrechnung kann nicht zugegriffen werden, und Code-Basis kann auf Adobe Commerce in der Cloud-Infrastruktur heruntergeladen werden](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Weitere Informationen finden Sie unter [Auf die Abrechnung kann nicht zugegriffen werden, und Code-Basis kann auf Adobe Commerce in der Cloud-Infrastruktur heruntergeladen werden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten bei der Installation von Adobe Commerce.
 
