@@ -8,7 +8,7 @@ ht-degree: 8%
 # Commerce-Funktionen
 
 <!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content: 
-https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
+https://github.com/AdobeDocs/commerce-operations.de-DE/blob/main/README.md#templates -->
 
 <table style="table-layout:auto">
   <tbody>

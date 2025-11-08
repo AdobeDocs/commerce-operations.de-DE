@@ -18,7 +18,7 @@ Adobe akzeptiert Anfragen von internen und externen Stakeholdern, einschließlic
 
 ## Wie erstelle ich eine Anfrage?
 
-**Interne Stakeholder** können Anfragen einreichen, indem sie eine Jira-Anfrage im COMDOX-Projekt öffnen. **Externe Stakeholder** können Anfragen senden, indem sie ein [GitHub-Problem](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) in diesem Repository öffnen.
+**Interne Stakeholder** können Anfragen einreichen, indem sie eine Jira-Anfrage im COMDOX-Projekt öffnen. **Externe Stakeholder** können Anfragen senden, indem sie ein [GitHub-Problem](https://github.com/AdobeDocs/commerce-operations.de-DE/issues/new/choose) in diesem Repository öffnen.
 
 Sie können die folgenden Arten von Anfragen senden:
 
@@ -29,7 +29,7 @@ Sie können die folgenden Arten von Anfragen senden:
 ## Wie sieht der Gesamtprozess aus?
 
 
-**Erstellen eines Jira-Tickets oder -Problems** - Interne Stakeholder erstellen ein Jira-Ticket im COMDOX-Projekt. Externe Stakeholder reichen ein GitHub-Problem ein. Geben Sie vollständige Details in das Jira- oder [GitHub-Problem](https://github.com/AdobeDocs/commerce-operations.en/issues/new/choose) ein, damit das Team den Kontext verstehen und die Anfrage priorisieren kann.
+**Erstellen eines Jira-Tickets oder -Problems** - Interne Stakeholder erstellen ein Jira-Ticket im COMDOX-Projekt. Externe Stakeholder reichen ein GitHub-Problem ein. Geben Sie vollständige Details in das Jira- oder [GitHub-Problem](https://github.com/AdobeDocs/commerce-operations.de-DE/issues/new/choose) ein, damit das Team den Kontext verstehen und die Anfrage priorisieren kann.
 
 **Das Adobe-Projektteam bewertet und priorisiert die Anfrage**—Das Team überwacht regelmäßig Anfragen, um die Priorität zu bestimmen und die angeforderten Änderungen zur Aufnahme in die Best Practices im Implementierungs-Playbook zu bewerten. Beispielsweise könnte das Team festlegen, dass die angeforderten Inhalte nicht zu einem neuen Thema mit Best Practices, sondern zu der vorhandenen Produktdokumentation auf Experience League oder der Adobe Developer-Site hinzugefügt werden sollen.
 

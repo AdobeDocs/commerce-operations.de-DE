@@ -614,7 +614,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td>
         Größere Aktualisierung
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">Pull-Anforderung</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.de-DE/pull/161">Pull-Anforderung</a></td>
     </tr>
   </tbody>
 </table>
