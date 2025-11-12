@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über alle verfügbaren Befehle, Argumente und Op
 mini-toc-levels: 1
 exl-id: f20d284d-bf77-4633-a274-a1568de76471
 recommendations: noDisplay, noCatalog
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: 0fa41a0a4a5d2b6b6a14c28101c5b7546a95fb35
 workflow-type: tm+mt
 source-wordcount: '24'
 ht-degree: 0%
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/reference/cli/uct.md}}
 
-<!-- Last updated from includes: 2025-10-17 22:10:38 -->
+<!-- Last updated from includes: 2025-11-10 15:04:05 -->
