@@ -3,9 +3,9 @@ title: Protokollierung aktivieren
 description: Erfahren Sie, wie Sie verschiedene Arten der Protokollierung in Adobe Commerce aktivieren und deaktivieren. Entdecken Sie Protokollierungskonfigurations- und -verwaltungsmethoden.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ Standardmäßig schreibt Commerce in das Debug-Protokoll (`<install_directory>/v
 
 Standardmäßig schreibt Commerce Datenbankaktivitätsprotokolle in die `<install-dir>/var/debug/db.log`.
 
+### Speicherort der Abfrageprotokollierung
+
+Wenn die Datenbankprotokollierung aktiviert ist, speichert Commerce Abfrageprotokolle am folgenden Speicherort:
+
+- **Abfrageprotokolldatei**: `<install-directory>/var/debug/db.log`
+- **Protokollordner**: `<install-directory>/var/debug/`
+
+Das Abfrageprotokoll enthält:
+- Von der Anwendung ausgeführte SQL-Abfragen
+- Ausführungszeiten der Abfrage
+- Abfrageparameter und Bindungen
+- Informationen zur Datenbankverbindung
+
+>[!NOTE]
+>
+>Die Abfrageprotokolldatei kann in Umgebungen mit hohem Traffic schnell groß werden. Überwachen Sie den Speicherplatz und erwägen Sie die Implementierung einer Protokollrotation oder eine regelmäßige Bereinigung der Abfrageprotokolldatei.
+
 ### So aktivieren Sie die Datenbankprotokollierung
 
 1. Verwenden Sie den `dev:query-log`-Befehl, um die Datenbankprotokollierung zu aktivieren oder zu deaktivieren.
@@ -71,6 +88,24 @@ Standardmäßig schreibt Commerce Datenbankaktivitätsprotokolle in die `<instal
    ```bash
    bin/magento cache:flush
    ```
+
+### So zeigen Sie Abfrageprotokolle an
+
+Sie können die Abfrageprotokolle mit Standardbefehlen zur Dateianzeige anzeigen:
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Cron-Protokollierung
 
