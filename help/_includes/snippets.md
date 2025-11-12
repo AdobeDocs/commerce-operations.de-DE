@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt ](/help/configuration/cli/config-cli.md#prerequisites).
+>Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt &#x200B;](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Sicherungsbefehle {#tip-backup-command}
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Die Funktion „Split Database[ wurde in ](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](/help/configuration/storage/revert-split-database.md).
+>Die Funktion „Split Database[&#x200B; wurde in &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
 
@@ -116,4 +116,4 @@ Nach den letzten CSP-/SRI-Änderungen werden static.min.js und mixins.min.js nic
 
 **Hotfix**:
 
-Ein Hotfix ist verfügbar. Weitere [ finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
+Ein Hotfix ist verfügbar. Weitere [&#x200B; finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
