@@ -3,9 +3,9 @@ title: Administratorkonto erstellen, bearbeiten oder entsperren
 description: Führen Sie diese Schritte aus, um das Administratorkonto Ihres Adobe Commerce Admin-Programms zu verwalten.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,12 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 Dabei definiert die folgende Tabelle Parameter und Werte:
 
 | -Name | Wert | Erforderlich? |
-|--- |--- |--- |
+|--- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
 | `--admin-firstname` | Vorname des Admin-Benutzers. | Ja |
 | `--admin-lastname` | Nachname des Administrator-Benutzers. | Ja |
 | `--admin-email` | E-Mail-Adresse des Administrator-Benutzers. | Ja |
 | `--admin-user` | Benutzername des Administrators. | Ja |
-| `--admin-password` | Administratorkennwort Das Kennwort muss mindestens 7 Zeichen lang sein und mindestens ein alphabetisches und mindestens ein numerisches Zeichen enthalten. <br><br>Wir empfehlen ein längeres, komplexeres Kennwort. Wenn die Kennwortzeichenfolge Sonderzeichen enthält, die wörtlich interpretiert werden müssen (z. B. umgekehrte Schrägstriche oder Leerzeichen), schließen Sie das Kennwort in einfache Anführungszeichen ein. | Ja |
+| `--admin-password` | Administratorkennwort Das Kennwort muss mindestens 12 Zeichen lang sein und mindestens ein alphabetisches und mindestens ein numerisches Zeichen enthalten. <br><br>Adobe empfiehlt, ein längeres, komplexeres Kennwort anzugeben. Wenn die Kennwortzeichenfolge Sonderzeichen enthält, die wörtlich interpretiert werden müssen (z. B. umgekehrte Schrägstriche oder Leerzeichen), schließen Sie das Kennwort in einfache Anführungszeichen ein. | Ja |
 | `--magento-init-params` | Fügen Sie zu einem beliebigen Befehl hinzu, um die Initialisierungsparameter der Anwendung anzupassen<br/><br/>Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | Nein |
 
 Anwendungsbeispiel:
