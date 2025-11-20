@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 828be0e395980ddd9fca3424dc08324c3fe87244
+source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
 workflow-type: tm+mt
-source-wordcount: '29260'
+source-wordcount: '29413'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,20 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.74 {#v1-1-74}
+
+* **ACSD-68636** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem der Name des Shopeigentümers nicht korrekt in den E-Mail-Kopfzeilen der Geschenkkarte angezeigt wird, wenn die Rechnung aus einem anderen Shop erstellt wurde.
+* **ACSD-68430** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.8) - Es wird ein Problem behoben, bei dem das Speichern einer Kunden- oder Kundenadresse fehlschlägt, wenn der Datensatz mehrere Attributoptionen enthält, die aus der Attributkonfiguration gelöscht wurden.
+* **ACSD-68499** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wird ein Problem behoben, bei dem die GraphQL-`updateCartItems`-Mutation eine falsche Erfolgsantwort zurückgibt, wenn Mengen aktualisiert werden, die die verfügbaren Lagerbestände überschreiten, was zu überhöhten Mengen und Gesamtwerten führt.
+* **ACSD-68810** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wird ein Problem behoben, bei dem eine Bestellung einem Kunden zugewiesen wird, der trotz der **[!UICONTROL Customer Account Sharing]** auf einer anderen Website erstellt wurde.
+* Aktualisierte Versionen: **ACSD-49737**, **ACSD-57003-V2**
+* Patches ersetzt: **ACSD-61969**
 
 ## v1.1.73 {#v1-1-73}
 
