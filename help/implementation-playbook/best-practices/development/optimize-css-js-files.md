@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie CSS- und JavaScript-Dateien (JS) für Adobe C
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 19f874130645fcabe3178a37ec6dedcf75b93afa
+source-git-commit: 5f4edc2e694c9bdbdffbe48b0e5d69907cbc0027
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -89,19 +89,9 @@ Sie können auch über die Befehlszeile die integrierte Bündelung (Basic Bundli
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-## Nicht kritische Kopfskripte zurückstellen
-
-Sie können nicht kritische JavaScripts, die im Head-Abschnitt geladen wurden, automatisch zurückstellen, indem Sie diese Einstellung aktivieren: [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
-
-Sie können dieses Flag auch über die Befehlszeile aktivieren:
-
-```bash
-php -f bin/magento config:set dev/js/defer_non_critical 1
-```
-
 ## Weitere Informationen
 
 - [Client-seitige Optimierungseinstellungen](../../../performance/configuration.md#client-side-optimization-settings)
-- [Benutzerhandbuch: Ressourcendateien optimieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Benutzerhandbuch: Ressourcendateien optimieren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Frontend-Entwicklerhandbuch: CSS-Zusammenführung, Minimierung und Site-Performance](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Erweiterte JavaScript-Pakete](../../../performance/advanced-js-bundling.md)
