@@ -25,8 +25,8 @@ Das _Configuration_-Handbuch enthält Referenzmaterial und begrenzte Anleitungen
 
 ## Commerce Admin-Konfiguration
 
-Es gibt entsprechende Themen im [Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) die Ihnen dabei helfen können, die Feldbeschreibungen für jede Konfigurationseinstellung in Commerce Admin zu verstehen.
+Es gibt entsprechende Themen im [Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/config/guide-overview) die Ihnen dabei helfen können, die Feldbeschreibungen für jede Konfigurationseinstellung in Commerce Admin zu verstehen.
 
 ## Cloud-Konfiguration
 
-[!DNL Commerce on cloud infrastructure] verwendet einen [Satz von Konfigurationsdateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) um die Funktionen und Services der Commerce-Anwendung in den gehosteten Umgebungen zu aktualisieren. Aufgrund der Einzigartigkeit der in Adobe Cloud gehosteten Umgebungen sollten Sie sich immer den [Cloud-Leitfaden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) für zusätzliche Konfigurationsanforderungen ansehen.
+[!DNL Commerce on cloud infrastructure] verwendet einen [Satz von Konfigurationsdateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=de) um die Funktionen und Services der Commerce-Anwendung in den gehosteten Umgebungen zu aktualisieren. Aufgrund der Einzigartigkeit der in Adobe Cloud gehosteten Umgebungen sollten Sie sich immer den [Cloud-Leitfaden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=de) für zusätzliche Konfigurationsanforderungen ansehen.
