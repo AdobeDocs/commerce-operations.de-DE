@@ -5,7 +5,7 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: d40de2f05147e6c58c15cd3cd59275cc91283162
 workflow-type: tm+mt
 source-wordcount: '1420'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Bei de
 
 Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce]-Umgebung in Betracht zu ziehen, z. B. GraphQL Mesh und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten zu bewahren, haben jedoch keine Auswirkungen auf die Commerce-Kernanwendung oder die zugrunde liegenden Datenbanktabellen. Mit diesem Ansatz stellen Sie Ihre Daten über eine API zur Verfügung. Anschließend fügen Sie Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mithilfe von GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erzeugen, wie in [Legacy-Daten](#legacy-data) beschrieben.
 
-Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=de){target="_blank"}.
+Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Ändern einer Kerntabelle oder Drittanbietertabelle
 
@@ -73,11 +73,11 @@ Adobe empfiehlt, diese Schritte auszuführen, wenn Sie eine Spalte zu einer Core
 
    Beispiel: `app/code/YourCompany/Customer`
 
-1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de){target="_blank"}.
+1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Erstellen Sie eine Datei mit dem Namen `db_schema.xml` im Ordner `etc` und nehmen Sie die entsprechenden Änderungen vor.
 
-   Generieren Sie ggf. eine `db_schema_whitelist.json`. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}Deklaratives Schema“.
+   Generieren Sie ggf. eine `db_schema_whitelist.json`. Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}Deklaratives Schema“.
 
 ### Potenzielle Auswirkungen
 

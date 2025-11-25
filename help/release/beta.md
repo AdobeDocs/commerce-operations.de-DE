@@ -2,7 +2,7 @@
 title: Beta-Versionen
 description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und wie Sie teilnehmen können.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: af4a347296cd7291077d0fea638d598767624d26
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
@@ -43,9 +43,9 @@ Um eine Einladung zum Beta-Programm anzufordern, senden Sie eine E-Mail an [comm
 
 ### Cloud Automation Patching Service (Private Beta)
 
-Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
+Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
 
-Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
+Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
 
 - Automatisierte Patch-Installation
 - Rollback-Wiederherstellung
@@ -60,7 +60,7 @@ Die Beta-Version umfasst die folgenden Funktionen:
 
 >[!NOTE]
 >
->Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [&#x200B; Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
+>Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [ Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
 
 Um an dieser Beta-Version teilzunehmen, füllen Sie das Anmeldeformular [Cloud Automation Patching Service - Beta aus](https://forms.office.com/r/3Wfxj5nPdB) aus.
 
@@ -84,7 +84,7 @@ Jede Adobe Commerce Foundation-Alpha- und -Beta-Version enthält alle Änderunge
 - GraphQL-Verbesserungen
 - Allgemeine Qualitätsfehler-Fehlerbehebungen
 - Gemeinschaftsbeiträge
-- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Namenskonvention und -zeitplan
 
@@ -104,7 +104,7 @@ Siehe [Veröffentlichungszeitplan](schedule.md) für die Liste der kommenden öf
 
 #### Freigabezugang
 
-Adobe Commerce Alpha- und Beta-Versionen werden auf die gleiche Weise wie alle anderen Adobe Commerce Patch-Versionen verteilt: als Composer-Metapakete auf `https://repo.magento.com`. Der Quell-Code ist auf &quot;[&quot; &#x200B;](https://github.com/magento/magento2).
+Adobe Commerce Alpha- und Beta-Versionen werden auf die gleiche Weise wie alle anderen Adobe Commerce Patch-Versionen verteilt: als Composer-Metapakete auf `https://repo.magento.com`. Der Quell-Code ist auf &quot;[&quot; ](https://github.com/magento/magento2).
 
 Siehe [Schnellstart für die Composer-Installation](../installation/composer.md) für weitere Details.
 
@@ -112,6 +112,6 @@ Siehe [Schnellstart für die Composer-Installation](../installation/composer.md)
 
 Adobe bietet keinen standardmäßigen Adobe-Support-Service für Alpha- und Beta-Versionen.
 
-Um Feedback zu Alpha- und Beta-Versionen zu senden, folgen Sie dem [Ablauf für regelmäßige Problemberichte](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) auf [GitHub](https://github.com/magento/magento2).
+Um Feedback zu Alpha- und Beta-Versionen zu senden, folgen Sie dem [Ablauf für regelmäßige Problemberichte](https://developer.adobe.com/commerce/contributor/guides/code-contributions) auf [GitHub](https://github.com/magento/magento2).
 
 Adobe überwacht alle wichtigen Probleme, die in Bezug auf die neueste Alpha- oder Beta-Version gemeldet werden, und priorisiert, dass diese vor dem GA-Veröffentlichungsdatum behoben werden müssen.

@@ -2,7 +2,7 @@
 title: Adobe Commerce deinstallieren oder neu installieren
 description: Führen Sie diese Schritte aus, um lokale Installationen von Adobe Commerce zu deinstallieren und erneut zu installieren.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -24,8 +24,8 @@ So aktualisieren Sie die Anwendung:
 
 Wie Sie die Anwendung über die Befehlszeile neu installieren, hängt von Ihrer Rolle ab:
 
-* Falls Sie die Software aus einem Archiv installiert haben oder „composer-create-project“ benutzt haben, lesen Sie [Installationsabhängigkeiten aktualisieren](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
-* Wenn Sie selbst Entwickler sind (d. h. bereits mit der Verwendung von `git clone` begonnen haben), finden Sie weitere Informationen unter [Aktualisieren von Installationsabhängigkeiten](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* Falls Sie die Software aus einem Archiv installiert haben oder „composer-create-project“ benutzt haben, lesen Sie [Installationsabhängigkeiten aktualisieren](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
+* Wenn Sie selbst Entwickler sind (d. h. bereits mit der Verwendung von `git clone` begonnen haben), finden Sie weitere Informationen unter [Aktualisieren von Installationsabhängigkeiten](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Deinstallieren der Anwendung
 

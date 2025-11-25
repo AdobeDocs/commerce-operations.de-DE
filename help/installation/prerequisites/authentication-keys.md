@@ -2,9 +2,9 @@
 title: Abrufen Ihrer Authentifizierungsschlüssel
 description: Führen Sie diese Schritte aus, um Anmeldeinformationen für den Zugriff auf Adobe Commerce Composer-Pakete auf repo.magento.com abzurufen.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Für die Zugriffsberechtigung auf Adobe Commerce-Pakete müssen Sie Schlüssel v
 
 >[!TIP]
 >
->Wenn Sie auf [Fehler](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=de) stoßen, sind Sie möglicherweise nicht berechtigt, auf das Paket zuzugreifen, oder die Zugriffsberechtigung ist aufgrund einer ausstehenden Rechnung in Ihrem Konto abgelaufen.
+>Wenn Sie auf [Fehler](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) stoßen oder den Abschnitt &quot;[!UICONTROL Access Keys]&quot; auf der Registerkarte „Marketplace“ nicht sehen, sind Sie möglicherweise nicht berechtigt, auf das Paket zuzugreifen, oder die Zugriffsberechtigung ist aufgrund einer ausstehenden Rechnung in Ihrem Konto abgelaufen.
 >
 >* Wenn Sie der Primäre Ansprechpartner für das Konto sind, stellen Sie sicher, dass im Konto keine ausstehende Rechnung aufgeführt ist.
->* Wenn die vom Primären Ansprechpartner bereitgestellten Schlüssel nicht funktionieren und keine ausstehenden Rechnungen für das Konto vorhanden sind, sollte sich der Primäre Ansprechpartner an den [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) wenden, um Unterstützung zu erhalten.
+>* Wenn die vom Primären Ansprechpartner bereitgestellten Schlüssel nicht funktionieren und keine ausstehenden Rechnungen für das Konto vorhanden sind, sollte sich der Primäre Ansprechpartner an den [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) wenden, um Unterstützung zu erhalten.
 
 So erstellen Sie Authentifizierungsschlüssel:
 
@@ -67,5 +67,5 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 Verwenden Sie Ihre Authentifizierungsschlüssel für:
 
 * [Abrufen des Metapakets (Integratoren, Packager)](../composer.md)
-* [Klonen Sie das GitHub-Repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) (nur für mitwirkende Entwickler)
+* [Klonen Sie das GitHub-Repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) (nur für mitwirkende Entwickler)
 * [Aktualisieren und Verwalten von Modulen](../../upgrade/modules/upgrade.md)

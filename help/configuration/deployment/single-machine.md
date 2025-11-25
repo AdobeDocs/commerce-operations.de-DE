@@ -3,7 +3,7 @@ title: Bereitstellung auf einem Computer
 description: Erfahren Sie, wie Sie Aktualisierungen für Commerce auf einem Produktionsserver mithilfe der Befehlszeile bereitstellen.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Dieses Thema enthält Anweisungen zum Bereitstellen von Aktualisierungen für Co
 >[!WARNING]
 >
 >Dieses Handbuch gilt nicht, wenn Sie `git clone` zur Installation von Commerce verwendet haben.
->&#x200B;>Entwicklerinnen und Entwickler, die an der [ mitwirken, sollten dieses Handbuch ][install], um ihre Commerce-Installation zu aktualisieren.
+>Entwicklerinnen und Entwickler, die an der [ mitwirken, sollten dieses Handbuch ][install], um ihre Commerce-Installation zu aktualisieren.
 
 ## Bereitstellungsschritte
 
@@ -93,4 +93,4 @@ Dieses Thema enthält Anweisungen zum Bereitstellen von Aktualisierungen für Co
 
 <!-- link definitions -->
 
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
+[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

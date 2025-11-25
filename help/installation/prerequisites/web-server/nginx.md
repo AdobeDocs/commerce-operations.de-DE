@@ -2,7 +2,7 @@
 title: Nginx
 description: Führen Sie diese Schritte aus, um den Nginx-Webserver für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '1110'
 ht-degree: 0%
@@ -85,11 +85,11 @@ Es gibt verschiedene Möglichkeiten, Adobe Commerce herunterzuladen:
 
 * [Abrufen des Composer-Metapakets](../../composer.md)
 
-* [Klonen Sie das Git-Repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Klonen Sie das Git-Repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 Dieses Beispiel zeigt eine Composer-basierte Installation über die Befehlszeile.
 
-1. Melden Sie [&#x200B; als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
+1. Melden Sie [ als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
 
 1. Wechseln Sie in das Verzeichnis des Webservers docroot oder in ein Verzeichnis, das Sie als virtuellen Host docroot konfiguriert haben. Für dieses Beispiel verwenden wir den Ubuntu-`/var/www/html`.
 
@@ -364,11 +364,11 @@ Es gibt verschiedene Möglichkeiten, die Adobe Commerce herunterzuladen, darunte
 
 * [Abrufen des Composer-Metapakets](../../composer.md)
 
-* [Klonen Sie das Git-Repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Klonen Sie das Git-Repository](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 Dieses Beispiel zeigt eine Composer-basierte Installation über die Befehlszeile.
 
-1. Melden Sie [&#x200B; als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
+1. Melden Sie [ als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
 
 1. Wechseln Sie in das Verzeichnis des Webservers docroot oder in ein Verzeichnis, das Sie als virtuellen Host docroot konfiguriert haben. Für dieses Beispiel verwenden wir den Ubuntu-`/var/www/html`.
 

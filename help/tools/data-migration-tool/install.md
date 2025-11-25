@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie  [!DNL Data Migration Tool]  installieren, um
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -47,10 +47,10 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-Wenn Sie sich derzeit in der `develop` Verzweigung befinden, müssen Sie zu einer [freigegebenen Verzweigung“ wechseln](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) bevor Sie fortfahren.
+Wenn Sie sich derzeit in der `develop` Verzweigung befinden, müssen Sie zu einer [freigegebenen Verzweigung“ wechseln](https://developer.adobe.com/commerce/contributor/guides/install/change-version) bevor Sie fortfahren.
 
-Wenn Sie die Adobe Commerce-Software noch nicht installiert haben, [&#x200B; Sie sie jetzt &#x200B;](../../installation/prerequisites/commerce.md).
-Wenn Sie das GitHub-Repository klonen, sollten Sie ein Release-Tag auschecken, wie in [(Mitwirkende) Klonen des GitHub-Repositorys &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+Wenn Sie die Adobe Commerce-Software noch nicht installiert haben, [ Sie sie jetzt ](../../installation/prerequisites/commerce.md).
+Wenn Sie das GitHub-Repository klonen, sollten Sie ein Release-Tag auschecken, wie in [(Mitwirkende) Klonen des GitHub-Repositorys ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository).
 
 ## Veröffentlichte Versionen von [!DNL Data Migration Tool] suchen
 

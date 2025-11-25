@@ -1,5 +1,5 @@
 ---
-source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -20,11 +20,11 @@ Die anfängliche Liste wird automatisch mit dem `bin/magento list`-Befehl in Ado
 
 ## Allgemein
 
-Verwenden Sie das [&#x200B; „CLI-Befehle hinzufügen](https://developer.adobe.com/commerce/php/development/cli-commands/) um einen benutzerdefinierten CLI-Befehl hinzuzufügen.
+Verwenden Sie das [ „CLI-Befehle hinzufügen](https://developer.adobe.com/commerce/php/development/cli-commands) um einen benutzerdefinierten CLI-Befehl hinzuzufügen.
 
 Sie können `bin/magento` CLI-Befehle über Tastaturbefehle anstelle des vollständigen Befehlsnamens aufrufen. Beispielsweise können Sie `bin/magento setup:upgrade` mithilfe von `bin/magento s:up` aufrufen, `bin/magento s:upg`. Unter [Verknüpfungssyntax](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) erfahren Sie, wie Sie Verknüpfungen mit beliebigen CLI-Befehlen verwenden.
 
-Diese Referenzdokumentation wird aus dem Programm-Quell-Code generiert. Um die Dokumentation zu ändern, sollten Sie eine Pull-Anfrage für den entsprechenden Befehl im entsprechenden [Codebase“-](https://github.com/magento) öffnen. Weitere Informationen [&#x200B; Sie unter &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/)Code-Beiträge“.
+Diese Referenzdokumentation wird aus dem Programm-Quell-Code generiert. Um die Dokumentation zu ändern, sollten Sie eine Pull-Anfrage für den entsprechenden Befehl im entsprechenden [Codebase“-](https://github.com/magento) öffnen. Weitere Informationen [ Sie unter ](https://developer.adobe.com/commerce/contributor/guides/code-contributions)Code-Beiträge“.
 
 ### Globale Optionen
 

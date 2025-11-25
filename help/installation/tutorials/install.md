@@ -2,7 +2,7 @@
 title: Installieren von Adobe Commerce
 description: Führen Sie die folgenden Schritte aus, um Adobe Commerce auf der von Ihnen verwalteten Infrastruktur zu installieren.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus:
 
-* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[&#x200B; beschriebenen Anforderungen &#x200B;](../system-requirements.md).
+* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[ beschriebenen Anforderungen ](../system-requirements.md).
 
-* Alle ([) Aufgaben &#x200B;](../prerequisites/overview.md).
+* Alle ([) Aufgaben ](../prerequisites/overview.md).
 
 * Führen Sie die ersten Installationsschritte aus. Siehe [Ihr Installations- oder Aktualisierungspfad](../overview.md).
 
 * Wechseln Sie nach der Anmeldung beim Anwendungsserver [zum Dateisystembesitzer](../prerequisites/file-system/overview.md).
 
-* Lesen Sie [&#x200B; Übersicht über „Erste Schritte mit der Befehlszeileninstallation](../composer.md).
+* Lesen Sie [ Übersicht über „Erste Schritte mit der Befehlszeileninstallation](../composer.md).
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Sie können die folgenden Befehle ausführen, um Werte für einige erforderliche
 
 >[!NOTE]
 >
->Wenn bei der Ausführung dieser Befehle ein Fehler angezeigt wird, stellen Sie sicher, dass Sie die Installationsabhängigkeiten aktualisiert haben, wie unter [Aktualisieren von Installationsabhängigkeiten](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/) beschrieben.
+>Wenn bei der Ausführung dieser Befehle ein Fehler angezeigt wird, stellen Sie sicher, dass Sie die Installationsabhängigkeiten aktualisiert haben, wie unter [Aktualisieren von Installationsabhängigkeiten](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) beschrieben.
 
 ## Installieren über die Befehlszeile
 

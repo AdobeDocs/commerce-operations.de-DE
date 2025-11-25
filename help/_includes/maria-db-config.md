@@ -1,5 +1,5 @@
 ---
-source-git-commit: d7926b9150137813b1161581bb1d7884a6fe11e9
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -10,7 +10,7 @@ ht-degree: 1%
 Die Neuindizierung auf MariaDB 10.4 und 10.6 dauert im Vergleich zu früheren MariaDB- oder MySQL-Versionen länger. Um die Neuindizierung zu beschleunigen, empfehlen wir die folgenden MariaDB-Konfigurationsparameter festzulegen:
 
 * [`optimizer_switch='rowid_filter=off'`](https://mariadb.com/kb/en/optimizer-switch/)
-* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/products/skysql/docs/reference/es/system-variables/optimizer_use_condition_selectivity/)
+* [`optimizer_use_condition_selectivity = 1`](https://mariadb.com/docs/server/server-management/variables-and-modes/server-system-variables#optimizer_use_condition_selectivity)
 
 Wenn nach dem Upgrade auf MariaDB 10.6 eine Leistungsbeeinträchtigung auftritt, die nicht mit einer Indizierung in Zusammenhang steht, sollten Sie die [`--query-cache-type`](https://mariadb.com/kb/en/server-system-variables/#query_cache_type) aktivieren. Beispiel: `--query-cache-type=ON`.
 
