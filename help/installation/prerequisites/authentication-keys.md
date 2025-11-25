@@ -17,10 +17,10 @@ Für die Zugriffsberechtigung auf Adobe Commerce-Pakete müssen Sie Schlüssel v
 
 >[!TIP]
 >
->Wenn Sie auf [Fehler](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) stoßen oder den Abschnitt &quot;[!UICONTROL Access Keys]&quot; auf der Registerkarte „Marketplace“ nicht sehen, sind Sie möglicherweise nicht berechtigt, auf das Paket zuzugreifen, oder die Zugriffsberechtigung ist aufgrund einer ausstehenden Rechnung in Ihrem Konto abgelaufen.
+>Wenn Sie auf [Fehler](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=de) stoßen oder den Abschnitt &quot;[!UICONTROL Access Keys]&quot; auf der Registerkarte „Marketplace“ nicht sehen, sind Sie möglicherweise nicht berechtigt, auf das Paket zuzugreifen, oder die Zugriffsberechtigung ist aufgrund einer ausstehenden Rechnung in Ihrem Konto abgelaufen.
 >
 >* Wenn Sie der Primäre Ansprechpartner für das Konto sind, stellen Sie sicher, dass im Konto keine ausstehende Rechnung aufgeführt ist.
->* Wenn die vom Primären Ansprechpartner bereitgestellten Schlüssel nicht funktionieren und keine ausstehenden Rechnungen für das Konto vorhanden sind, sollte sich der Primäre Ansprechpartner an den [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) wenden, um Unterstützung zu erhalten.
+>* Wenn die vom Primären Ansprechpartner bereitgestellten Schlüssel nicht funktionieren und keine ausstehenden Rechnungen für das Konto vorhanden sind, sollte sich der Primäre Ansprechpartner an den [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) wenden, um Unterstützung zu erhalten.
 
 So erstellen Sie Authentifizierungsschlüssel:
 

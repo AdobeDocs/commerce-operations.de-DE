@@ -15,7 +15,7 @@ Adobe Commerce unterstützt außerdem den Open-Source-Nachrichtenbroker ActiveMQ
 
 >[!NOTE]
 >
->ActiveMQ Artemis wurde in Adobe Commerce 2.4.6 und höheren Versionen eingeführt. Weitere Informationen zur Installation von ActiveMQ Artemis in Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Einrichten des ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)Service im *Handbuch zu Commerce in Cloud*.
+>ActiveMQ Artemis wurde in Adobe Commerce 2.4.6 und höheren Versionen eingeführt. Weitere Informationen zur Installation von ActiveMQ Artemis in Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Einrichten des ActiveMQ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/activemq)Service im *Handbuch zu Commerce in Cloud*.
 
 Nachrichtenwarteschlangen bieten einen asynchronen Kommunikationsmechanismus, bei dem sich Absender und Empfänger einer Nachricht nicht berühren. Sie müssen auch nicht gleichzeitig mit der Nachrichtenwarteschlange kommunizieren. Wenn ein Absender eine Nachricht in eine Warteschlange stellt, wird sie gespeichert, bis der Empfänger sie erhält.
 
