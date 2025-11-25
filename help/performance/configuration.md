@@ -24,7 +24,7 @@ Ein Indexer kann im **[!UICONTROL Update on Save]**- oder **[!UICONTROL Update o
 
 >[!TIP]
 >
->Die Neuindizierung auf MariaDB 10.4 und 10.6 dauert im Vergleich zu anderen MariaDB- oder [!DNL MySQL]-Versionen länger. Wir empfehlen, die standardmäßige MariaDB-Konfigurationseinstellung zu ändern, die unter [ beschrieben wird](../installation/prerequisites/database/mysql.md).
+>Die Neuindizierung auf MariaDB 10.4 und 10.6 dauert im Vergleich zu anderen MariaDB- oder [!DNL MySQL]-Versionen länger. Wir empfehlen, die standardmäßige MariaDB-Konfigurationseinstellung zu ändern, die unter [&#x200B; beschrieben wird](../installation/prerequisites/database/mysql.md).
 
 ## Caches
 
@@ -32,15 +32,15 @@ Wenn Sie Ihren Store in der Produktion starten, aktivieren Sie alle Caches auf d
 
 ## Asynchrone E-Mail-Benachrichtigungen
 
-Durch Aktivierung der Einstellung „Asynchrone E-Mail-Benachrichtigungen“ werden Prozesse, die E-Mail-Benachrichtigungen zur Checkout- und Bestellverarbeitung verarbeiten, in den Hintergrund verschoben. Um diese Funktion zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Weitere Informationen finden [ unter ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails) im _Admin_ Benutzerhandbuch.
+Durch Aktivierung der Einstellung „Asynchrone E-Mail-Benachrichtigungen“ werden Prozesse, die E-Mail-Benachrichtigungen zur Checkout- und Bestellverarbeitung verarbeiten, in den Hintergrund verschoben. Um diese Funktion zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Weitere Informationen finden [&#x200B; unter &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales-emails) im _Admin_ Benutzerhandbuch.
 
 ## Asynchrone Auftragsdatenverarbeitung
 
-Es kann vorkommen, dass intensive Verkäufe an einer Storefront gleichzeitig mit der intensiven Auftragsverarbeitung durch [!DNL Commerce] erfolgen. Sie können [!DNL Commerce] so konfigurieren, dass diese beiden Traffic-Muster auf Datenbankebene unterschieden werden, um Konflikte zwischen Lese- und Schreibvorgängen in den entsprechenden Tabellen zu vermeiden. Sie können Bestelldaten asynchron speichern und indizieren. Bestellungen werden temporär gespeichert und ohne Kollisionen stapelweise in das Order Management-Raster verschoben. Sie können diese Option unter **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]** aktivieren. Weitere Informationen finden [ unter „Geplante ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)&quot; im _Admin_ Benutzerhandbuch.
+Es kann vorkommen, dass intensive Verkäufe an einer Storefront gleichzeitig mit der intensiven Auftragsverarbeitung durch [!DNL Commerce] erfolgen. Sie können [!DNL Commerce] so konfigurieren, dass diese beiden Traffic-Muster auf Datenbankebene unterschieden werden, um Konflikte zwischen Lese- und Schreibvorgängen in den entsprechenden Tabellen zu vermeiden. Sie können Bestelldaten asynchron speichern und indizieren. Bestellungen werden temporär gespeichert und ohne Kollisionen stapelweise in das Order Management-Raster verschoben. Sie können diese Option unter **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]** aktivieren. Weitere Informationen finden [&#x200B; unter „Geplante &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations#enable-scheduled-grid-updates-and-reindexing)&quot; im _Admin_ Benutzerhandbuch.
 
 >[!WARNING]
 >
->Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ ](../configuration/cli/set-mode.md). [Adobe Commerce in der Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)Infrastruktur unterstützt den `Developer` nicht.
+>Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ &#x200B;](../configuration/cli/set-mode.md). [Adobe Commerce in der Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)Infrastruktur unterstützt den `Developer` nicht.
 
 ## Asynchrone Konfiguration speichern
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Zurückgestellte Aktienaktualisierung
 
-In Zeiten intensiver Verkäufe können [!DNL Commerce] Lageraktualisierungen im Zusammenhang mit Bestellungen aufschieben. Dies minimiert die Anzahl der Vorgänge und beschleunigt den Bestellvorgang. Diese Option ist jedoch riskant und kann nur verwendet werden, wenn Nachbestellungen im Geschäft aktiviert sind, da diese Option zu negativen Lagermengen führen kann. Diese Option kann zu erheblichen Leistungsverbesserungen bei Checkout-Flüssen für Geschäfte führen, die ihren Bestand bei Bedarf einfach nachfüllen können. Um verzögerte Stock-Updates auf Ihrer Site zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Weitere Informationen [ Sie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) _Adobe Commerce-Benutzerhandbuch_ unter Verwalten des Inventars.
+In Zeiten intensiver Verkäufe können [!DNL Commerce] Lageraktualisierungen im Zusammenhang mit Bestellungen aufschieben. Dies minimiert die Anzahl der Vorgänge und beschleunigt den Bestellvorgang. Diese Option ist jedoch riskant und kann nur verwendet werden, wenn Nachbestellungen im Geschäft aktiviert sind, da diese Option zu negativen Lagermengen führen kann. Diese Option kann zu erheblichen Leistungsverbesserungen bei Checkout-Flüssen für Geschäfte führen, die ihren Bestand bei Bedarf einfach nachfüllen können. Um verzögerte Stock-Updates auf Ihrer Site zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Weitere Informationen [&#x200B; Sie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) _Adobe Commerce-Benutzerhandbuch_ unter Verwalten des Inventars.
 
 >[!INFO]
 >
@@ -95,13 +95,13 @@ Um die Reaktionsfähigkeit Ihrer [!DNL Commerce]-Instanz zu verbessern, wechseln
 
 >[!INFO]
 >
->Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ ](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] on Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) unterstützt den `Developer` nicht.
+>Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ &#x200B;](../configuration/cli/set-mode.md). [Adobe [!DNL Commerce] on Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test) unterstützt den `Developer` nicht.
 
 Wenn Sie die Option &quot;**[!UICONTROL Enable [!DNL JavaScript] Bundling]**&quot; aktivieren, lassen Sie zu, dass Commerce alle JS-Ressourcen zu einem oder mehreren Bundles zusammenführt, die in Storefront-Seiten geladen werden. Die Bündelung von JS führt zu weniger Anfragen an den Server, was die Seitenleistung verbessert. Dies hilft dem Browser auch, JS-Ressourcen beim ersten Aufruf zwischenzuspeichern und sie für alle weiteren Suchvorgänge wiederzuverwenden. Diese Option bietet auch eine verzögerte Auswertung, da alle JS als Text geladen werden. Sie initiiert die Analyse und Auswertung des Codes erst, nachdem bestimmte Aktionen auf der Seite ausgelöst wurden. Diese Einstellung wird jedoch nicht für Stores empfohlen, in denen die Ladezeit der ersten Seite äußerst kritisch ist, da der gesamte JS-Inhalt beim ersten Aufruf geladen wird.
 
 >[!INFO]
 >
->Weitere [ zur Optimierung von CSS ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) JavaScript finden Sie unter „Optimieren von Ressourcendateien“.
+>Weitere [&#x200B; zur Optimierung von CSS &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) JavaScript finden Sie unter „Optimieren von Ressourcendateien“.
 
 ### Tipps zur Bündelung
 

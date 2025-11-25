@@ -146,7 +146,7 @@ Verfügbare Optionen für den `core:code:changes`:
 
 >[!NOTE]
 >
-> Es empfiehlt sich, benutzerdefinierten Code nicht in den Kern-Code aufzunehmen. Weitere Best Practices für Upgrades finden Sie [ Adobe Commerce 2.4 ](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) Upgrade-Handbuch .
+> Es empfiehlt sich, benutzerdefinierten Code nicht in den Kern-Code aufzunehmen. Weitere Best Practices für Upgrades finden Sie [&#x200B; Adobe Commerce 2.4 &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) Upgrade-Handbuch .
 
 ### Vanilla-Installation
 
@@ -156,7 +156,7 @@ Der Befehl `bin/uct core:code:changes` prüft, ob in Ihrem System eine Vanilla-I
 
 Sie können einen [!DNL Upgrade Compatibility Tool]-Befehl mit der Option `--vanilla-dir` ausführen, um das Adobe Commerce Vanilla-Installationsverzeichnis anzugeben.
 
-Weitere Informationen finden Sie [ Thema „Bereitstellen ](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) Vanilla-Instanz“ .
+Weitere Informationen finden Sie [&#x200B; Thema „Bereitstellen &#x200B;](https://developer.adobe.com/commerce/contributor/guides/code-contributions/#deploy-vanilla-magento-open-source-instance) Vanilla-Instanz“ .
 
 ## Verwenden des Befehls `refactor`
 

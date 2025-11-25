@@ -29,7 +29,7 @@ Adobe verwendet [Composer](https://getcomposer.org/) um Adobe Commerce-Komponent
 
 Bevor Sie fortfahren, müssen Sie Folgendes tun:
 
-- Alle [erforderlichen Aufgaben“ ](system-requirements.md).
+- Alle [erforderlichen Aufgaben“ &#x200B;](system-requirements.md).
 - [Composer installieren](https://getcomposer.org/download/).
 - Abrufen [Authentifizierungsschlüssel](prerequisites/authentication-keys.md) zum Adobe Commerce Composer-Repository.
 
@@ -232,4 +232,4 @@ Die folgenden Argumente gelten für alle Befehle. Diese Befehle können entweder
 
 >[!NOTE]
 >
->Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Benötigen Sie erweiterte Hilfe? Sehen Sie sich das [Erweiterte ](advanced.md)&quot; an.
+>Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Benötigen Sie erweiterte Hilfe? Sehen Sie sich das [Erweiterte &#x200B;](advanced.md)&quot; an.

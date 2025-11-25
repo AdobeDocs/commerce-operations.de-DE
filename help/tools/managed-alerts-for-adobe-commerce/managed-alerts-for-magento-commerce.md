@@ -18,7 +18,7 @@ Wir haben wichtige Dashboards und Warnhinweise eingerichtet, die Ihnen dabei hel
 
 >[!NOTE]
 >
->Wenn verwaltete Warnhinweise für die Adobe Commerce-Warnhinweisrichtlinie nicht verfügbar sind, kann dies darauf zurückzuführen sein, dass dieses Konto neu erstellt wurde oder [!DNL New Relic] vor kurzem konfiguriert wurde. Jeden Dienstag wird ein Prozess ausgeführt, um die Warnmeldungsrichtlinie zu diesen Konten hinzuzufügen. Die Warnmeldungsrichtlinie sollte Ihnen am Tag nach der Ausführung des nächsten Prozesses zur Verfügung stehen. Wenn die Richtlinie immer noch fehlt, [ Sie eine Adobe Commerce-Support-Anfrage ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) und geben Sie Ihre Projekt-ID an.
+>Wenn verwaltete Warnhinweise für die Adobe Commerce-Warnhinweisrichtlinie nicht verfügbar sind, kann dies darauf zurückzuführen sein, dass dieses Konto neu erstellt wurde oder [!DNL New Relic] vor kurzem konfiguriert wurde. Jeden Dienstag wird ein Prozess ausgeführt, um die Warnmeldungsrichtlinie zu diesen Konten hinzuzufügen. Die Warnmeldungsrichtlinie sollte Ihnen am Tag nach der Ausführung des nächsten Prozesses zur Verfügung stehen. Wenn die Richtlinie immer noch fehlt, [&#x200B; Sie eine Adobe Commerce-Support-Anfrage &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) und geben Sie Ihre Projekt-ID an.
 
 Unten in der Tabelle finden Sie Links zu den KB-Artikeln mit Schritten zur Fehlerbehebung bei diesen Warnhinweisen:
 
