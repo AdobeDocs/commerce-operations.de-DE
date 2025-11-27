@@ -2,7 +2,7 @@
 title: Schnellstart-On-Premise-Installation
 description: Erfahren Sie, wie Sie Adobe Commerce mithilfe von Composer in Ihrer eigenen Infrastruktur installieren. Erfahren Sie mehr über Schnellstartschritte und Konfigurationsanforderungen.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Adobe verwendet [Composer](https://getcomposer.org/) um Adobe Commerce-Komponent
 
 >[!NOTE]
 >
->Entwickler, die zu Magento Open Source beitragen, sollten die [Git-basierte](https://developer.adobe.com/commerce/contributor/guides/install) Installationsmethode verwenden.
+>Entwickler, die zu Magento Open Source beitragen, sollten die [Git-basierte](https://developer.adobe.com/commerce/contributor/guides/install/) Installationsmethode verwenden.
 
 ## Voraussetzungen
 
 Bevor Sie fortfahren, müssen Sie Folgendes tun:
 
-- Alle [erforderlichen Aufgaben“ &#x200B;](system-requirements.md).
+- Alle [erforderlichen Aufgaben“ ](system-requirements.md).
 - [Composer installieren](https://getcomposer.org/download/).
 - Abrufen [Authentifizierungsschlüssel](prerequisites/authentication-keys.md) zum Adobe Commerce Composer-Repository.
 
@@ -93,7 +93,7 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
 
    >[!NOTE]
    >
-   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
+   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
 
    Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 
@@ -232,4 +232,4 @@ Die folgenden Argumente gelten für alle Befehle. Diese Befehle können entweder
 
 >[!NOTE]
 >
->Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Benötigen Sie erweiterte Hilfe? Sehen Sie sich das [Erweiterte &#x200B;](advanced.md)&quot; an.
+>Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Benötigen Sie erweiterte Hilfe? Sehen Sie sich das [Erweiterte ](advanced.md)&quot; an.
