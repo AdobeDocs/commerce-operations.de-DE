@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a046d8870fe52676956d41497db4f35a4f37544
+source-git-commit: be2eac5ca64e7be5b2e129b315bf184713f41062
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,8 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 QPT v1.1.74 enthält die folgenden Patches:
 1. **ACSD-68636**: Es wurde ein Problem behoben, bei dem der Name des Shopeigentümers in E-Mail-Kopfzeilen von Geschenkkarten für Rechnungen, die aus einem anderen Shop generiert wurden, nicht korrekt angezeigt wurde.
 1. **ACSD-68430**: Es wurde ein Problem behoben, bei dem das Speichern eines Kunden oder einer Adresse fehlschlug, wenn die Daten gelöschte Attributoptionen aus der Attributkonfiguration enthalten.
-1. **ACSD-68499**: Es wurde ein Problem behoben, bei dem die GraphQL-`updateCartItems`-Mutation eine Erfolgsantwort zurückgibt, wenn Mengen aktualisiert wurden, die die verfügbaren Lagerbestände überschreiten, was zu überhöhten Mengen und Gesamtwerten führte.
+1. **ACSD-68499**: Die GraphQL-`updateCartItems`-Mutation gibt *Erfolg* für Mengen zurück, die über den verfügbaren Bestand hinausgehen.
+1. **ACSD-68810**: Es wurde ein Problem behoben, bei dem eine Bestellung einem neu erstellten Kunden auf einer anderen Website trotz der **[!UICONTROL Customer Account Sharing]**-Konfiguration zugewiesen wurde.
 1. **[ACSD-68810](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68810.md)**: Es wurde ein Problem behoben, bei dem eine Bestellung einem neu erstellten Kunden auf einer anderen Website trotz der **[!UICONTROL Customer Account Sharing]**-Konfiguration zugewiesen wurde.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
