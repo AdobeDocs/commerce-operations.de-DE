@@ -2,9 +2,9 @@
 title: Migration von RabbitMQ zu ActiveMQ
 description: Erfahren Sie, wie Sie den für lokale Installationen von Adobe Commerce verwendeten Nachrichtenwarteschlangen-Broker ersetzen.
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ActiveMQ (Apache ActiveMQ Artemis) ist ein leistungsstarker Multiprotokoll-Nachrichtenbroker, der eine Alternative zu RabbitMQ für die Verarbeitung von Nachrichtenwarteschlangen in Adobe Commerce bietet.
 
-Ab den Versionen 2.4.8-p3, 2.4.7-p8 und 2.4.6-p13 unterstützt Adobe Commerce ActiveMQ als Nachrichtenwarteschlangen-Broker. Dies bietet zusätzlichen Spielraum für lokale Installationen, die basierend auf ihren Infrastrukturanforderungen und ihrem Fachwissen zwischen RabbitMQ und ActiveMQ wählen können.
+Ab den Versionen 2.4.8-p3, 2.4.7-p8, 2.4.6-p13 und 2.4.5-p16 unterstützt Adobe Commerce ActiveMQ als Nachrichtenwarteschlangen-Broker. Dies bietet zusätzlichen Spielraum für lokale Installationen, die basierend auf ihren Infrastrukturanforderungen und ihrem Fachwissen zwischen RabbitMQ und ActiveMQ wählen können.
 
 ## Bevor Sie beginnen
 
@@ -168,7 +168,7 @@ Sie können RabbitMQ deinstallieren, wenn es nicht mehr benötigt wird.
 
 ### Schritt 8: Installieren und Konfigurieren von ActiveMQ in Adobe Commerce
 
-Informationen zum Durchführen von ActiveMQ-Installations- und Konfigurationsaufgaben, wie z. B. Konfigurieren des STOMP-Protokolls und Überprüfen der Verbindung, finden Sie [&#x200B; „Installations- und Konfigurationshandbuch](../../installation/prerequisites/activemq.md).
+Informationen zum Durchführen von ActiveMQ-Installations- und Konfigurationsaufgaben, wie z. B. Konfigurieren des STOMP-Protokolls und Überprüfen der Verbindung, finden Sie [ „Installations- und Konfigurationshandbuch](../../installation/prerequisites/activemq.md).
 
 ### Schritt 9: Cron-Aufträge neu installieren
 

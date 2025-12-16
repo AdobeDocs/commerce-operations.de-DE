@@ -2,7 +2,7 @@
 title: Übersicht über Nachrichtenwarteschlangen
 description: Erfahren Sie mehr über das Meldungswarteschlangen-Framework und seine Funktionsweise mit der Adobe Commerce-Anwendung.
 exl-id: 21e7bc3e-6265-4399-9d47-d3b9f03dfef6
-source-git-commit: 6f15a24e650a7138bae6d0b40f230e6970a943b0
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 Das Message Queue Framework (MQF) ist ein System, das einem Modul das Veröffentlichen von Nachrichten in Warteschlangen ermöglicht. Außerdem werden die [Verbraucher](consumers.md) definiert, die die Nachrichten asynchron erhalten. MQF unterstützt mehrere Messaging-Broker:
 
 - **[[!DNL RabbitMQ]](https://www.rabbitmq.com)** : Der primäre Messaging-Broker, der eine skalierbare Plattform für das Senden und Empfangen von Nachrichten bietet. Es enthält einen Mechanismus zum Speichern nicht zugestellter Nachrichten und basiert auf der Spezifikation Advanced Message Queuing Protocol (AMQP) 0.9.1 .
-- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - Ein alternativer Messaging-Broker, der das STOMP (Simple Text Oriented Messaging Protocol) für zuverlässiges und skalierbares Messaging verwendet. Einführung in Adobe Commerce 2.4.6 und neueren Versionen.
+- **[Apache ActiveMQ Artemis](https://activemq.apache.org/components/artemis/)** - Ein alternativer Messaging-Broker, der das STOMP (Simple Text Oriented Messaging Protocol) für zuverlässiges und skalierbares Messaging verwendet. Einführung in Adobe Commerce 2.4.5 und neueren Versionen.
 
 ## RabbitMQ (AMQP)
 
@@ -38,7 +38,7 @@ Als Alternative zu RabbitMQ unterstützt Adobe Commerce auch [Apache ActiveMQ Ar
 
 >[!NOTE]
 >
->ActiveMQ Artemis wurde in Adobe Commerce 2.4.6 und höheren Versionen eingeführt.
+>ActiveMQ Artemis wurde in Adobe Commerce 2.4.5 und höheren Versionen eingeführt.
 
 Das folgende Diagramm veranschaulicht das STOMP-Framework mit ActiveMQ Artemis:
 
