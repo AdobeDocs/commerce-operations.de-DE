@@ -35,7 +35,7 @@ Das folgende Beispiel zeigt die `crontab` für das Ausführen von Verbrauchern:
 >
 >Sie können ihn in den Konfigurationsoptionen Admin Stores > Einstellungen > Konfiguration > Erweitert > System > Cron für Gruppe: Verbraucher konfigurieren.
 >
->Weitere [ zur Verwendung von ](../cli/configure-cron-jobs.md) mit Commerce finden `cron` unter „Konfigurieren und Ausführen von“.
+>Weitere [&#x200B; zur Verwendung von &#x200B;](../cli/configure-cron-jobs.md) mit Commerce finden `cron` unter „Konfigurieren und Ausführen von“.
 
 Sie können auch einen Prozess-Manager wie [Supervisor](https://supervisord.readthedocs.io/en/latest/) verwenden, um den Status von Prozessen zu überwachen. Der Manager kann die Befehlszeile verwenden, um die Prozesse nach Bedarf neu zu starten.
 
@@ -78,7 +78,7 @@ Bearbeiten Sie die `/app/etc/env.php` Datei, um die Cron-Job-`consumers_runner` 
 
   >[!INFO]
   >
-  >Es wird nicht empfohlen, mehrere Verbraucher in einer von MySQL betriebenen Warteschlange auszuführen. Weitere Informationen [ Wechsel zu AMQP (RabbitMQ) oder STOMP (ActiveMQ Artemis) finden Sie unter ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers)Ändern der Nachrichtenwarteschlange von MySQL zu externen Brokern).
+  >Es wird nicht empfohlen, mehrere Verbraucher in einer von MySQL betriebenen Warteschlange auszuführen. Weitere Informationen [&#x200B; Wechsel zu AMQP (RabbitMQ) oder STOMP (ActiveMQ Artemis) finden Sie unter &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers)Ändern der Nachrichtenwarteschlange von MySQL zu externen Brokern).
 
   >[!INFO]
   >
