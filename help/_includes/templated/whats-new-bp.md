@@ -23,12 +23,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurden weitere Details zu "<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> von Konfigurationswerten“ </a>.</p>
+      <td><p>Es wurden weitere Details zu "<a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values"> von Konfigurationswerten“ </a>.</p>
 </td>
       <td>
         Best Practices
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">Pull-Anforderung</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.de-DE/pull/147">Pull-Anforderung</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Der <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> CLI-Befehl in den Anweisungen <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Konfigurieren des Valkey-Standardcachings</a> wurde aktualisiert, um den richtigen Wert für den <code class="language-plaintext highlighter-rouge">cache-backend</code> anzugeben.</p>
+      <td><p>Der <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> CLI-Befehl in den Anweisungen <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Konfigurieren des Valkey-Standardcachings</a> wurde aktualisiert, um den richtigen Wert für den <code class="language-plaintext highlighter-rouge">cache-backend</code> anzugeben.</p>
 </td>
       <td>
         Best Practices
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">Pull-Anforderung</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.de-DE/pull/159">Pull-Anforderung</a></td>
     </tr>
   </tbody>
 </table>
