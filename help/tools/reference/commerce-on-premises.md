@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über alle verfügbaren Befehle, Argumente und Op
 mini-toc-levels: 1
 exl-id: 06cd615b-94be-49d4-9bce-0a33ec9bfd5a
 recommendations: noDisplay, noCatalog
-source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
+source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
 workflow-type: tm+mt
 source-wordcount: '26'
 ht-degree: 0%
@@ -15,4 +15,4 @@ ht-degree: 0%
 
 {{$include /help/_includes/templated/reference/cli/commerce-on-premises.md}}
 
-<!-- Last updated from includes: 2025-11-26 10:46:19 -->
+<!-- Last updated from includes: 2025-11-26 11:03:35 -->
