@@ -67,7 +67,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#x200B; Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -96,7 +96,7 @@ Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabel
 >**HINWEIS:**
 >
 >- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
->- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version] (_jekyll/.ruby-version) für die erforderliche Version.
 
 Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
 
