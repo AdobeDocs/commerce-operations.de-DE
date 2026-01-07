@@ -1,7 +1,7 @@
 ---
-source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '866'
 ht-degree: 3%
 
 ---
@@ -43,13 +43,13 @@ Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
-Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de).
+Siehe das [Handbuch für Mitwirkende an Adobe-Dokumenten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe[Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe[Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
 
 Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repository eingeben, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -67,7 +67,7 @@ Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entw
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#x200B; Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=de)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -86,8 +86,8 @@ Bei einigen Themen verwenden wir Datendateien und Vorlagen, um veröffentlichte 
 Beispiele für vorlagenbasierte Inhalte sind unter anderem:
 
 - [CLI-Tools-Referenz](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=de)
-- [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de)
+- [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Vorlageninhalt generieren
 
@@ -96,7 +96,7 @@ Im Allgemeinen müssen die meisten Autoren nur eine Release-Version zu den Tabel
 >**HINWEIS:**
 >
 >- Für das Generieren von Vorlageninhalten muss an der Befehlszeile in einem Terminal gearbeitet werden.
->- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version] (_jekyll/.ruby-version) für die erforderliche Version.
+>- Ruby muss installiert sein, damit das Renderskript ausgeführt werden kann. Siehe [_jekyll/.ruby-version](_jekyll/.ruby-version) für die erforderliche Version.
 
 Nachfolgend finden Sie eine Beschreibung der Dateistruktur für vorlagenbasierte Inhalte:
 
@@ -109,8 +109,8 @@ So aktualisieren Sie Vorlageninhalte:
 
 1. Öffnen Sie in Ihrem Texteditor eine Datendatei im `/jekyll/_data`. Beispiel:
 
-   - [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=de): `/jekyll/_data/product-availability.yml`
-   - [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de): `/jekyll/_data/system-requirements.yml`
+   - [Produktverfügbarkeitstabellen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   - [Systemanforderungstabellen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. Verwenden Sie die vorhandene YAML-Struktur, um Einträge zu erstellen.
 
@@ -134,7 +134,7 @@ So aktualisieren Sie Vorlageninhalte:
    bundle exec rake render
    ```
 
-   >**HINWEIS** Sie müssen das Skript im `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie zuerst Ruby-Abhängigkeiten mit dem `bundle install` Befehl installieren. Die RAKE-Aufgaben werden vom `adobe-comdox-exl-rake-tasks` gem bereitgestellt, um die Wartung in allen Dokumentations-Repositorys von Adobe Commerce zu verbessern.
+   >**HINWEIS** Sie müssen das Skript im `_jekyll` ausführen. Wenn Sie das Skript zum ersten Mal ausführen, müssen Sie zuerst Ruby-Abhängigkeiten mit dem `bundle install` Befehl installieren. Kernaufgaben und -abhängigkeiten (Jekyll, Rake, Bildoptimierung) werden vom `adobe-comdox-exl-rake-tasks` gem bereitgestellt, um die Wartungsfreundlichkeit in allen Dokumentations-Repositorys von Adobe Commerce zu verbessern. Benutzerdefinierte Aufgaben, die für dieses Repository spezifisch sind, werden in der `Rakefile` implementiert.
 
 1. Navigieren Sie zurück zum `root`.
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,32 @@ Erstellt eine Azure-Regionszuordnung. Die Eingabedatendatei sollte in `_jekyll/t
 ```sh
 rake azure_regions
 ```
+
+### `get_released_versions`
+
+Ruft die letzten 10 veröffentlichten Versionen aus dem `magento/magento2`-Repository ab. Erfordert [ Installation und Authentifizierung von ](https://cli.github.com/)GitHub CLI“.
+
+**Nutzung:**
+
+```sh
+rake get_released_versions
+```
+
+**Ausgabe:** Erzeugt `tmp/core-release.txt` mit Namen und Daten von Release-Tags.
+
+### `first_merge_date`
+
+Ruft das Datum der ersten Zusammenführung mit einer angegebenen Verzweigung ab. Erfordert [ Installation und Authentifizierung von ](https://cli.github.com/)GitHub CLI“.
+
+**Nutzung:**
+
+```sh
+rake first_merge_date base=develop
+```
+
+**Argumente:**
+
+- `base` (erforderlich): Der Name der Zielverzweigung, auf die Zusammenführungen geprüft werden soll.
 
 ### `includes:maintain_relationships`
 
@@ -215,7 +241,8 @@ Hauptinhaltsdateien verwenden die folgende Syntax, um andere Dateien einzuschlie
 ## Voraussetzungen
 
 - Ruby und Bundler installiert.
-- Erforderliche Edelsteine, die in der Gemfile angegeben sind.
+- Erforderliche Edelsteine, die in der Gemfile angegeben sind (Kernabhängigkeiten werden von `adobe-comdox-exl-rake-tasks` bereitgestellt).
+- [GitHub-CLI](https://cli.github.com/) für die `get_released_versions` und `first_merge_date` Aufgaben.
 - Python, [PyGMT](https://www.pygmt.org/latest/install.html) und [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) für die `azure_regions`.
 
 ## Setup
