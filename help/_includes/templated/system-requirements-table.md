@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8b1a202fde89ab05626194aff010111577ef6993
+source-git-commit: eb4a574d8beafb1104f793b9e92a1b5a8485a6ca
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 46%
+source-wordcount: '1522'
+ht-degree: 45%
 
 ---
 # Systemanforderungen
@@ -24,13 +24,13 @@ ht-degree: 46%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
     </tr>
     <tr>
@@ -230,16 +230,16 @@ ht-degree: 46%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
     </tr>
     <tr>
@@ -489,31 +489,31 @@ ht-degree: 46%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,8
+          2,9; 2,8
       </td>
       <td>
-          2,7
+          2,9; 2,7
       </td>
       <td>
-          2,7
+          2,9; 2,7
       </td>
       <td>
-          2,7
+          2,9; 2,7
       </td>
       <td>
-          2,7
+          2,9; 2,7
       </td>
     </tr>
     <tr>
