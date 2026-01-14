@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fff49f8c9b0c1def976c14e72b4ae7ee08f823b9
+source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
 workflow-type: tm+mt
-source-wordcount: '29413'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.75 {#v1-1-75}
+
+* **ACSD-68289** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wird ein Problem behoben, bei dem die Volltextsuche jetzt übereinstimmende Produkte zurückgibt, wenn die Mindestbedingung für die Übereinstimmung für alle durchsuchbaren Felder gemeinsam erfüllt ist, anstatt dass die Bedingung durch ein einzelnes Feld erfüllt werden muss.
+* **ACSD-68359** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wird ein Problem behoben, bei dem die Auswahl eines Shops während des Checkouts mit [!UICONTROL Pick in Store] aufgrund langer URLs nicht mehr fehlschlägt, wenn sich viele Produkte im Warenkorb befinden. Zuvor wurde ein *414-Fehler ausgelöst* der durch zu lange URLs verursacht wurde, die während der Store-Auswahl generiert wurden, sodass Kundinnen und Kunden das Auschecken nicht abschließen konnten.
+* **ACSD-68451** (für Adobe Commerce, B2B >=1.5.2-p1 &lt;1.5.3) - Behebt ein Problem bei mehreren Websites, bei denen sich ein Unternehmensadministrator auf einer Website anmeldet, ein nicht verbundenes Unternehmen auf einer anderen Website erstellt, aber fälschlicherweise mit diesem nicht verbundenen Unternehmen verknüpft ist.
+* **ACSD-68490** (für Adobe Commerce >=2.4.6 &lt;2.4.7) - Behebt das Problem, dass die Schaltfläche [!UICONTROL Add New Attribute] für Administratoren mit eingeschränkter Zugriffsberechtigung während der konfigurierbaren Produkterstellung angezeigt wird.
+* **ACSD-68517** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebt einen Fehler bei der erneuten Übermittlung von Formularen auf Katalogseiten und Katalogsuchseiten.
+* **ACSD-68573** (für Adobe Commerce >=2.4.5 &lt;2.4.9) - Es wurde das Problem behoben, dass Kategorieberechtigungen nicht ordnungsgemäß auf Elemente der Kunden-Wunschliste angewendet wurden. Nach der Fehlerbehebung werden Elemente der Wunschliste sowohl im Web als auch in GraphQL ordnungsgemäß angezeigt und paginiert.
+* **ACSD-68615** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde das Problem behoben, bei dem die CLI für die Ausgleichszahlung für Lagerreservierungen eine Ausnahme anzeigte, wenn die verarbeitete Kombination eine fehlende Auftrags-ID hatte.
+* **ACSD-68793** (für Adobe Commerce, B2B >=1.5.1 &lt;1.5.3) - Es wurde ein Problem behoben, bei dem gültige Produkte fälschlicherweise zurückgewiesen wurden, wenn sie einem freigegebenen Katalog zugewiesen wurden.
+* **ACSD-68925** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem die Antworten für GraphQL-Anfragen jetzt mit den GraphQL over HTTP-Spezifikationen übereinstimmen. Ein 4XX-Antwort-Code wird zurückgegeben, wenn die Anfrage nicht geparst werden kann, nicht autorisiert ist oder auf ein allgemeines Problem stößt. Wenn die Anfrage geparst wird und verarbeitet werden kann, wird ein Antwort-Code von 200 zurückgegeben.
+* Aktualisierte Versionen: **MDVA-19640**, **ACSD-47910**, **ACSD-68040**, **ACSD-62965**
+* Patches ersetzt: **ACSD-62577**, **ACSD-68011**
 
 ## v1.1.74 {#v1-1-74}
 
