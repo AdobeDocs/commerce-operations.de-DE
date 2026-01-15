@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3103c03c7cde04d1fffd16254ff8969851305b47
+source-git-commit: 291262109cacaae5b4a749e50d1f7c8fa910b538
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.73 verfügbaren Patches behoben wurden.
 
 QPT v1.1.73 enthält die folgenden Patches:
+1. **ACSD-67171**: Es wurde ein Problem behoben, bei dem B2B-Benutzern eine Seite „Zugriff verweigert“ angezeigt wurde, wenn ihre Sitzung abgelaufen war oder beim Auschecken entfernt wurde.
+1. **ACSD-67908**: Es wurde ein Problem behoben, bei dem JS-Dateien in Setups mit mehreren Speichern nicht ordnungsgemäß zusammengeführt wurden.
+1. **[ACSD-68190](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)**: Es wurde ein Problem behoben, bei dem Rabatte nicht angewendet wurden, angewendete Rabatte in der GraphQL-Warenkorbansicht nicht korrekt angezeigt wurden und Nicht-Couponrabatte beim Entfernen eines Couponrabatts entfernt wurden.
 1. **ACSD-67908**: JavaScript-Dateien können in Setups mit mehreren Stores nicht korrekt zusammengeführt werden
 1. **ACSD-67171**: Abgelaufene [!DNL B2B]-Sitzung während des Auscheckens leitet zur Seite Zugriff verweigert anstelle der Anmeldung weiter
 1. **ACSD-68190**: Es wurde ein Problem behoben, bei dem Rabatte nicht angewendet wurden, angewendete Rabatte in der GraphQL-Warenkorbansicht nicht korrekt angezeigt wurden und Nicht-Couponrabatte beim Entfernen eines Couponrabatts entfernt wurden.
