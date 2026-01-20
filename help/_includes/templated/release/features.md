@@ -1,5 +1,5 @@
 ---
-source-git-commit: d1af1ffe584b18cbc6c664cab31283c13f36c25e
+source-git-commit: 65a58ff990b09e0bbe1e6a3f2246ccb5de2e7c13
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -7,8 +7,8 @@ ht-degree: 8%
 ---
 # Commerce-Funktionen
 
-<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content: 
-https://github.com/AdobeDocs/commerce-operations.de-DE/blob/main/README.md#templates -->
+<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content:
+https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
 
 <table style="table-layout:auto">
   <tbody>
@@ -21,7 +21,7 @@ https://github.com/AdobeDocs/commerce-operations.de-DE/blob/main/README.md#templ
       <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
-      <td>Live Search powered by Adobe Sensei (B2C und B2B)</td>
+      <td>Live Search mit Adobe AI (B2C und B2B)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -45,7 +45,7 @@ https://github.com/AdobeDocs/commerce-operations.de-DE/blob/main/README.md#templ
       <td>+</td>
     </tr>
     <tr>
-      <td>Produktempfehlungen mit Adobe Sensei (B2C und B2B)</td>
+      <td>Produktempfehlungen mit Adobe AI (B2C und B2B)</td>
       <td></td>
       <td></td>
       <td></td>
