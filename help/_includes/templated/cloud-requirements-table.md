@@ -1,8 +1,8 @@
 ---
-source-git-commit: eb4a574d8beafb1104f793b9e92a1b5a8485a6ca
+source-git-commit: 96cdbae2fd6754e88e7e781b972f72ca6593d505
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 56%
+source-wordcount: '726'
+ht-degree: 46%
 
 ---
 # Cloud-Anforderungstabelle
@@ -20,13 +20,13 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
     </tr>
     <tr>
@@ -130,16 +130,16 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
     </tr>
     <tr>
@@ -284,31 +284,31 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,8
+          2.9.3+
       </td>
       <td>
-          2,9; 2,7
+          2.9.3+
       </td>
       <td>
-          2,9; 2,7
+          2.9.3+
       </td>
       <td>
-          2,9; 2,7
+          2.9.3+
       </td>
       <td>
-          2,9; 2,7
+          2.9.3+
       </td>
     </tr>
     <tr>
@@ -608,46 +608,46 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
     </tr>
     <tr>
@@ -1084,52 +1084,52 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
     </tr>
     <tr>
@@ -1570,55 +1570,55 @@ ht-degree: 56%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,2
+          2.2.26+
       </td>
       <td>
-          2,1
+          2.2.26+
       </td>
       <td>
-          2,1
+          2.2.26+
       </td>
       <td>
-          2,1
+          2.2.26+
       </td>
     </tr>
     <tr>
