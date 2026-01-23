@@ -2,9 +2,9 @@
 title: config.php-Referenz
 description: Erfahren Sie mehr über config.php-Dateiwerte und Abschnitte für die Adobe Commerce-Konfiguration. Entdecken Sie Module, Bereiche, Systemeinstellungen und Best Practices für die Bereitstellung.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '156'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Enthält ein Array von Modulen und deren Status. Wenn das Modul aktiviert ist, i
 ]
 ```
 
-Weitere Informationen zu [Modulen].
+Weitere Informationen zu [Modulen](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
 
 ## Bereiche
 
@@ -82,7 +82,7 @@ Enthält ein Array von Bereichskonfigurationswerten. Sie weist die folgenden Unt
 ]
 ```
 
-Weitere Informationen zu [Commerce-Bereichen][scopes].
+Weitere Informationen zu [Commerce-Bereichen](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
 
 ## System
 
@@ -120,10 +120,5 @@ Enthält ein Array von Werten für die Design-Konfiguration.
 ]
 ```
 
-Weitere Informationen zu [Designs].
+Weitere Informationen zu [Designs](https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/).
 
-<!-- link definitions -->
-
-[Module]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings
-[Designs]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

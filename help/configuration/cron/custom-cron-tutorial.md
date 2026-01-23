@@ -2,16 +2,16 @@
 title: Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer benutzerdefinierten Cron-Gruppe (Tutorial)
 description: In diesem Schritt-für-Schritt-Tutorial für Adobe Commerce erfahren Sie, wie Sie benutzerdefinierte Cron-Aufträge erstellen. Erkunden Sie die Moduleinrichtung und die Cron-Gruppenkonfiguration.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # Konfigurieren eines benutzerdefinierten Cron-Auftrags
 
-Dieses Schritt-für-Schritt-Tutorial zeigt, wie Sie einen benutzerdefinierten Cron-Auftrag und optional eine Cron-Gruppe in einem Beispielmodul erstellen. Sie können ein Modul verwenden, das Sie bereits haben, oder Sie können ein Beispielmodul aus unserem [`magento2-samples` Repository verwenden][samples].
+Dieses Schritt-für-Schritt-Tutorial zeigt, wie Sie einen benutzerdefinierten Cron-Auftrag und optional eine Cron-Gruppe in einem Beispielmodul erstellen. Sie können ein Modul verwenden, das Sie bereits haben, oder Sie können ein Beispielmodul aus unserem [`magento2-samples` Repository verwenden](https://github.com/magento/magento2-samples).
 
 Das Ausführen des Cron-Vorgangs führt dazu, dass der `cron_schedule`-Tabelle eine Zeile mit dem Namen des Cron-Vorgangs `custom_cron` hinzugefügt wird.
 
@@ -21,7 +21,7 @@ In diesem Tutorial gehen wir von Folgendem aus:
 
 - Die Commerce-Anwendung wird in `/var/www/html/magento2` installiert
 - Benutzername und Kennwort für die Commerce-Datenbank sind beide `magento`
-- Sie führen alle Aktionen als [Dateisystemeigentümer“ &#x200B;](../../installation/prerequisites/file-system/overview.md)
+- Sie führen alle Aktionen als [Dateisystemeigentümer“ ](../../installation/prerequisites/file-system/overview.md)
 
 ## Schritt 1: Abrufen eines Beispielmoduls
 
@@ -33,13 +33,13 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
 
 1. Melden Sie sich bei Ihrem Commerce-Server als oder wechseln Sie zum [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie in einen Ordner, der sich nicht im Stammverzeichnis der Commerce-Anwendung befindet (z. B. den Basisordner).
-1. Klonen Sie das [`magento2-samples` Repository][samples].
+1. Klonen Sie das [`magento2-samples` Repository](https://github.com/magento/magento2-samples).
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Wenn der Befehl mit der `Permission denied (publickey).` fehlschlägt, müssen Sie [Ihren öffentlichen SSH-Schlüssel zu GitHub.com hinzufügen][git-ssh].
+   Wenn der Befehl mit der `Permission denied (publickey).` fehlschlägt, müssen Sie [Ihren öffentlichen SSH-Schlüssel zu GitHub.com hinzufügen](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 1. Erstellen Sie ein Verzeichnis, in das der Beispiel-Code kopiert werden soll:
 
@@ -303,7 +303,3 @@ So überprüfen Sie Ihre benutzerdefinierte Cron-Gruppe:
 
    ![Ihre benutzerdefinierte Cron-Gruppe](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples

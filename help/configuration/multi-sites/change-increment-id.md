@@ -2,9 +2,9 @@
 title: Inkrement-ID ändern
 description: Ändern der Inkrement-ID für eine Commerce-Datenbankentität.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Möglicherweise müssen Sie in folgenden Fällen die Inkrement-ID für neue DB-E
 
 >[!INFO]
 >
->Sie können das Problem mit dem Zahlungs-Gateway für PayPal auch beheben, indem Sie in den Zahlungseingangsvoreinstellungen von PayPal mehrere Zahlungen pro Rechnungs-ID zulassen. Siehe [PayPal-Gateway-Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=de) in _Wissensdatenbank_.
+>Sie können das Problem mit dem Zahlungs-Gateway für PayPal auch beheben, indem Sie in den Zahlungseingangsvoreinstellungen von PayPal mehrere Zahlungen pro Rechnungs-ID zulassen. Siehe [PayPal-Gateway-Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) in _Wissensdatenbank_.
 
 ## Vorausgesetzte Schritte
 
@@ -70,10 +70,5 @@ Die nächste Bestellung, die mit `ID=1` im Geschäft aufgegeben wird, hat die ID
 Bevor Sie die `ALTER TABLE` Abfrage in einer Produktionsumgebung von Adobe Commerce in der Cloud-Infrastruktur ausführen, empfehlen wir dringend die folgenden Schritte:
 
 - Testen des gesamten Verfahrens zur Änderung der Inkrement-ID in der Staging-Umgebung
-- [Erstellen eines DB-Backups], um die Produktions-DB bei einem Fehler wiederherzustellen
+- [Erstellen eines DB-Backups](https://support.magento.com/hc/en-us/articles/360003254334), um die Produktions-DB bei einem Fehler wiederherzustellen
 
-<!-- Link Definitions -->
-
-[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
-[Erstellen eines DB-Backups]: https://support.magento.com/hc/en-us/articles/360003254334
-[Beliebige unterstützte Version]

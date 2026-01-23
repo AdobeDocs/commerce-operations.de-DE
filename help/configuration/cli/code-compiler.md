@@ -2,7 +2,7 @@
 title: Code-Compiler
 description: Erfahren Sie, wie Sie den Adobe Commerce-Code-Compiler über die Befehlszeile ausführen. Erfahren Sie mehr über Kompilierungsprozesse und Optimierungstechniken.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Die Code-Kompilierung umfasst Folgendes (in keiner bestimmten Reihenfolge):
 - Erzeugung von Repository-Code (für APIs generierter Code)
 - Generieren von Service-Datenattributen (generierte Erweiterungsklassen für Datenobjekte)
 
-Codekompilierungsklassen finden Sie im Namespace [\Magento\Setup\Module\Di\App\Task\Operation][operation].
+Codekompilierungsklassen finden Sie im Namespace [\Magento\Setup\Module\Di\App\Task\Operation](https://github.com/magento/magento2/blob/2.4.8/setup/src/Magento/Setup/Module/Di/App/Task/Operation).
 
 So führen Sie den Einzelmandant-Compiler aus:
 
@@ -60,6 +60,3 @@ In einigen Fällen empfiehlt es sich, den Code vor der Installation der Commerce
 
 Informationen zum Kompilieren von Code ohne Datenbank finden Sie unter [Bereitstellen von statischen Ansichtsdateien ohne Installation von Magento](../cli/static-view-file-deployment.md).
 
-<!-- link definitions -->
-
-[operation]: https://github.com/magento/magento2/blob/2.4/setup/src/Magento/Setup/Module/Di/App/Task/Operation

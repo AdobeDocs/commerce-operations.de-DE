@@ -2,9 +2,9 @@
 title: Übersetzungswörterbücher und Sprachpakete
 description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete für Adobe Commerce erstellen. Hier erfahren Sie mehr über Lokalisierung und die Einrichtung mehrsprachiger Stores.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1441'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Mit Commerce Translations können Sie Ihren Store für mehrere Regionen und Mär
 - **Übersetzungswörterbücher** die eine praktische Möglichkeit darstellen, _einige) Wörter und Ausdrücke_ übersetzen, z. B. für ein benutzerdefiniertes Modul oder Design.
 - **Sprachpakete** mit denen Sie (_oder alle) Wörter und_ in der Commerce-Anwendung übersetzen können.
 
-Siehe [Übersetzungen - Übersicht].
+Siehe [Übersetzungen - Übersicht](https://developer.adobe.com/commerce/frontend-core/guide/translations/).
 
 ## Erstellen eines Übersetzungswörterbuchs
 
-Sie können ein [Übersetzungswörterbuch] erstellen, um vorhandene Zeichenfolgen anzupassen, Wörter und Phrasen in einem benutzerdefinierten Modul zu übersetzen, ein Design zu lokalisieren oder Sprachpakete zu erstellen.
+Sie können ein [Übersetzungswörterbuch](https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries) erstellen, um vorhandene Zeichenfolgen anzupassen, Wörter und Phrasen in einem benutzerdefinierten Modul zu übersetzen, ein Design zu lokalisieren oder Sprachpakete zu erstellen.
 
 Um mit der Übersetzung zu beginnen, verwenden Sie den Befehl , um eine CSV-Wörterbuchdatei mit einer Liste aller vorhandenen Sätze und Wörter zu erstellen.
 
@@ -35,7 +35,7 @@ So erstellen Sie das Wörterbuch und beginnen mit der Übersetzung:
 
 1. Sie können die Übersetzungswörterbücher in ein Sprachpaket packen und dieses dem Commerce Store-Administrator bereitstellen.
 
-1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen].
+1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Befehlsoptionen:
 
@@ -85,12 +85,12 @@ Beispiel für die Übersetzung eines Satzes:
 
 ## Erstellen eines Sprachpakets
 
-Im Gegensatz zu einem Übersetzungswörterbuch können Sie jedes oder alle Wörter und Sätze in der Commerce-Anwendung mithilfe eines Sprachpakets übersetzen. Sie können eine bestimmte Komponente - z. B. ein Modul oder ein Design - mithilfe eines Übersetzungswörterbuchs übersetzen. [Weitere Informationen zu Sprachpaketen].
+Im Gegensatz zu einem Übersetzungswörterbuch können Sie jedes oder alle Wörter und Sätze in der Commerce-Anwendung mithilfe eines Sprachpakets übersetzen. Sie können eine bestimmte Komponente - z. B. ein Modul oder ein Design - mithilfe eines Übersetzungswörterbuchs übersetzen. [Weitere Informationen zu Sprachpaketen](https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages).
 
 In diesem Abschnitt wird beschrieben, wie Sie ein Sprachpaket erstellen, das CSV-Dateien in Module und Designs schreibt. Um ein Sprachpaket zu erstellen, müssen Sie die in den folgenden Abschnitten beschriebenen Aufgaben ausführen:
 
 1. [Sammeln und Übersetzen von Wörtern und Wortgruppen](#generate-a-translation-dictionary). (Der `--magento` ist erforderlich.)
-1. [Führen Sie den Sprachpaketbefehl &#x200B;](#run-the-language-package-command).
+1. [Führen Sie den Sprachpaketbefehl ](#run-the-language-package-command).
 1. [Erstellen von Verzeichnissen und Dateien](#create-directories-and-files).
 1. (Optional) [Konfigurieren mehrerer Pakete für eine Sprache](#configure-multiple-packages-for-a-language).
 
@@ -107,7 +107,7 @@ In der folgenden Tabelle werden die Parameter und Werte für den Sprachpaketbefe
 | Parameter | Wert | Erforderlich? |
 |--- |--- |--- |
 | `<source>` | Absoluter Dateisystempfad und Dateiname einer CSV-Datei, die das kombinierte Wörterbuch und die Metadaten enthält, die für die Aufschlüsselung in ein Sprachpaket erforderlich sind.<br><br>Verwenden Sie [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict), um die CSV-Datei zu erstellen, und erstellen Sie dann das Sprachpaket, wie in [Erstellen von Verzeichnissen und Dateien](#m2devgde-xlate-files) beschrieben. | Ja |
-| `<locale>` | [ISO 639-1] (Sprache) und [ISO 3166] (Land) Kennung der Sprache, die als Dateiname für alle resultierenden CSV-Dateien verwendet wird. Beispiele: `de_DE`, `pt_PT`, `pt_BR`. | Ja |
+| `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (Sprache) und [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (Land) Kennung der Sprache, die als Dateiname für alle resultierenden CSV-Dateien verwendet wird. Beispiele: `de_DE`, `pt_PT`, `pt_BR`. | Ja |
 | `-m --mode` | Gibt an, ob bei Vorhandensein einer Zieldatei das vorhandene Sprachpaket ersetzt oder mit dem neuen Sprachpaket zusammengeführt werden soll. Beim Zusammenführen werden alle vorhandenen Sätze überschrieben und neue hinzugefügt.<br><br>Werte: zusammenführen oder ersetzen (Standard). | Nein |
 | `-d --allow-duplicates` | Schließen Sie diese Option ein, um Duplikate im Sprachpaket zuzulassen. Andernfalls schlägt der Befehl mit einem Fehler fehl, wenn dieselbe Phrase in mehreren Einträgen mit unterschiedlichen Übersetzungen auftritt. | Nein |
 
@@ -117,12 +117,12 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 - Erforderliche Lizenzdateien
 - `composer.json`
-- `registration.php`, [ das ] registriert
+- `registration.php`, [ das ](https://developer.adobe.com/commerce/php/development/build/component-registration/) registriert
 - [`language.xml`](#language-package-languagexml)-Metadatendatei
 
 >[!INFO]
 >
->Sie müssen den gesamten Pfad in Kleinbuchstaben eingeben. Siehe zum Beispiel [`de_de`].
+>Sie müssen den gesamten Pfad in Kleinbuchstaben eingeben. Siehe zum Beispiel [`de_de`](https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php).
 
 So erstellen Sie diese Dateien:
 
@@ -131,8 +131,8 @@ So erstellen Sie diese Dateien:
    Beispielsweise befinden sich Commerce-Sprachpakete in `app/i18n/magento`
 
 1. Erforderliche Lizenzdateien hinzufügen.
-1. Fügen Sie [`composer.json`] hinzu, die Abhängigkeiten für Ihr Sprachpaket angeben.
-1. Registrieren des Sprachpakets bei [`registration.php`]
+1. Fügen Sie [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/) hinzu, die Abhängigkeiten für Ihr Sprachpaket angeben.
+1. Registrieren des Sprachpakets bei [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)
 1. Fügen Sie `language.xml` Metadatendatei hinzu, wie im nächsten Abschnitt beschrieben.
 
 #### Sprachpaket language.xml
@@ -195,7 +195,7 @@ Wenn die Commerce-Anwendung ein Wort oder eine Phrase im `en_GB` nicht finden ka
 1. `<vendorname>/en_ca_package`
 1. `<vendorname>/en_us_package`
 
-Die Angabe aller Vererbungen zwischen den Sprachpaketen kann zur Erstellung von zirkulären Vererbungsketten führen. Verwenden Sie [Magento\Test\Integrity\App\Language\CircularDependencyTest] Test, um solche Ketten zu finden und zu reparieren.
+Die Angabe aller Vererbungen zwischen den Sprachpaketen kann zur Erstellung von zirkulären Vererbungsketten führen. Verwenden Sie [Magento\Test\Integrity\App\Language\CircularDependencyTest](https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php) Test, um solche Ketten zu finden und zu reparieren.
 
 ### Konfigurieren mehrerer Pakete für eine Sprache
 
@@ -312,16 +312,3 @@ Generieren Sie ähnlich wie im vorherigen Beispiel eine CSV-Datei, geben Sie jed
    </language>
    ```
 
-<!-- link definitions -->
-
-[Übersetzungen - Übersicht]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
-[Übersetzungswörterbuch]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[Konfigurieren der Übersetzungen]: https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize
-[Weitere Informationen zu Sprachpaketen]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
-[ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
-[ISO 3166]: https://www.iso.org/iso-3166-country-codes.html
-[Register]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[`de_de`]: https://github.com/magento/magento2/blob/2.4/app/i18n/Magento/de_DE/registration.php
-[`composer.json`]: https://developer.adobe.com/commerce/php/development/build/composer-integration/
-[`registration.php`]: https://developer.adobe.com/commerce/php/development/build/component-registration/
-[Magento\Test\Integrity\App\Language\CircularDependencyTest]: https://github.com/magento/magento2/blob/2.4/dev/tests/static/testsuite/Magento/Test/Integrity/App/Language/CircularDependencyTest.php

@@ -2,7 +2,7 @@
 title: Überblick über den Upgrade-Prozess
 description: Erfahren Sie, wie ein Upgrade Ihres Adobe Commerce-Projekts Ihre Storefront sicher und effizient hält. Entdecken Sie Best Practices für die Planung und Ausführung erfolgreicher Upgrades.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Die Aktualisierung Ihres Adobe Commerce-Projekts ist von entscheidender Bedeutung, um sicherzustellen, dass Ihr Geschäft sicher, PCI-kompatibel und mit maximaler Effizienz betrieben wird. Dieses Handbuch führt Sie durch die wichtigsten Aspekte bei der Vorbereitung auf ein Upgrade.
 
-Das Handbuch bietet einen Überblick über die typische Adobe Commerce-Upgrade-Journey und Best Practices, die auf dieser Journey befolgt werden sollten. Außerdem werden technische Details des Upgrade-Prozesses mit einem zeitnahen Beispiel und einer schrittweisen Anleitung für die Aktualisierung auf die neueste Version von Adobe Commerce beschrieben. Es ist wichtig, den Adobe Commerce-[&#x200B; (Veröffentlichungszeitplan) zu überprüfen &#x200B;](../release/schedule.md) frühzeitig mit der Vorbereitung auf Upgrades zu beginnen. Adobe veröffentlicht jährlich den Versionsplan, um den Planungsprozess für Händler zu erleichtern, und empfiehlt, jeden Patch-Versionszyklus zu aktualisieren. Um PCI-kompatibel zu bleiben, müssen Händler den neuesten Patch oder Sicherheits-Patch verwenden.
+Das Handbuch bietet einen Überblick über die typische Adobe Commerce-Upgrade-Journey und Best Practices, die auf dieser Journey befolgt werden sollten. Außerdem werden technische Details des Upgrade-Prozesses mit einem zeitnahen Beispiel und einer schrittweisen Anleitung für die Aktualisierung auf die neueste Version von Adobe Commerce beschrieben. Es ist wichtig, den Adobe Commerce-[ (Veröffentlichungszeitplan) zu überprüfen ](../release/schedule.md) frühzeitig mit der Vorbereitung auf Upgrades zu beginnen. Adobe veröffentlicht jährlich den Versionsplan, um den Planungsprozess für Händler zu erleichtern, und empfiehlt, jeden Patch-Versionszyklus zu aktualisieren. Um PCI-kompatibel zu bleiben, müssen Händler den neuesten Patch oder Sicherheits-Patch verwenden.
 
 ## Für wen ist dieser Leitfaden geeignet?
 
@@ -54,7 +54,7 @@ Die Gründe für das Verzögern oder Aufschieben von Plattformaktualisierungen l
 
 Es mag der Intuition widersprechen, aber die Durchführung regelmäßiger Plattformaktualisierungen erfordert weniger Gesamtaufwand als die Durchführung unregelmäßiger Aktualisierungen, da sich technische Schulden aus der Verzögerung angehäuft haben. Adobe hat kürzlich mit einem Partner zusammengearbeitet, der über einen Einzelhändler verfügt, der Upgrades früher selten und inkonsistent (jährlich oder länger) durchführte. Durch die Änderung der Vorgehensweise bei Upgrades und die Einhaltung eines von Adobe empfohlenen regulären Upgrade-Pfads innerhalb von 12 Monaten konnte der Partner dem Kunden vier Wochen an kumulierter Entwicklungszeit, Aufwand und damit verbundenen Kosten ersparen. Diese Kosten könnten dann in Initiativen umgelenkt werden, die das Unternehmenswachstum fördern.
 
-Wenn Aktualisierungen regelmäßig durchgeführt werden, erfolgt eine inkrementelle Aktualisierung, und der entsprechende Aktualisierungsaufwand spiegelt dies wider. Wenn Plattformaktualisierungen über einen längeren Zeitraum verschoben werden, können sie zu einem viel aufwändigeren Prozess werden. Außerdem können die Erweiterungen, die Sie vom [Adobe Commerce Marketplace](https://marketplace.magento.com/) und anderen Drittanbieterintegrationen verwenden, ebenfalls betroffen sein. Schließlich wird die Zeit für die Untersuchung, Planung und Durchführung eines verzögerten Upgrades verlängert, was zu vermeidbarem Aufwand und zusätzlichen Kosten führt.
+Wenn Aktualisierungen regelmäßig durchgeführt werden, erfolgt eine inkrementelle Aktualisierung, und der entsprechende Aktualisierungsaufwand spiegelt dies wider. Wenn Plattformaktualisierungen über einen längeren Zeitraum verschoben werden, können sie zu einem viel aufwändigeren Prozess werden. Außerdem können die Erweiterungen, die Sie vom [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) und anderen Drittanbieterintegrationen verwenden, ebenfalls betroffen sein. Schließlich wird die Zeit für die Untersuchung, Planung und Durchführung eines verzögerten Upgrades verlängert, was zu vermeidbarem Aufwand und zusätzlichen Kosten führt.
 
 Zu den allgemeinen Faktoren, die sich auf den Aufwand für die Aktualisierung Ihres Projekts auswirken, gehören unter anderem:
 

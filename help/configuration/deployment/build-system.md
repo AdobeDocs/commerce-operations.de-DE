@@ -3,9 +3,9 @@ title: System-Setup erstellen
 description: Erfahren Sie, wie Sie Commerce in einem Build-System bereitstellen.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,11 @@ So installieren Sie Composer:
    mv composer.phar /usr/local/bin/composer
    ```
 
-Weitere Installationsoptionen finden Sie unter [Composer-Installationsdokumentation][composer].
+Weitere Installationsoptionen finden Sie unter [Composer-Installationsdokumentation](https://getcomposer.org/download/).
 
 ### Installieren von PHP
 
-Installieren Sie PHP auf [CentOS] oder [Ubuntu].
+Installieren Sie PHP auf [CentOS](https://wiki.centos.org/HowTos/php7) oder [Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html).
 
 ### Einrichten des Build-Systems
 
@@ -124,9 +124,9 @@ So richten Sie das Build-System ein:
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Weitere Informationen finden Sie in [`.gitignore` &#x200B;](../reference/config-reference-gitignore.md).
+   Weitere Informationen finden Sie in [`.gitignore` ](../reference/config-reference-gitignore.md).
 
-1. Das Build-System sollte den [Standardmodus“ &#x200B;](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ &#x200B;](../bootstrap/application-modes.md#developer-mode):
+1. Das Build-System sollte den [Standardmodus“ ](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode):
 
    ```bash
    bin/magento deploy:mode:set <mode>
@@ -134,8 +134,3 @@ So richten Sie das Build-System ein:
 
    `<mode>` ist erforderlich. Es kann entweder `default` oder `developer` sein.
 
-<!-- Link Definitions -->
-
-[CentOS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[Ubuntu]: https://help.ubuntu.com/lts/serverguide/php.html

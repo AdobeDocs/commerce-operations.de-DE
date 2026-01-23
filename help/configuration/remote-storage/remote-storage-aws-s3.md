@@ -3,16 +3,16 @@ title: AWS S3-Bucket für Remote-Speicher konfigurieren
 description: Konfigurieren Sie Ihr Commerce-Projekt für die Verwendung des AWS S3-Speicher-Services für die Remote-Speicherung.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3690043019d70ad15332f757158937a7d5305043
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
 # AWS S3-Bucket für Remote-Speicher konfigurieren
 
-Der [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicher-Service, der branchenführende Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung bietet. Der AWS S3-Service verwendet Buckets (oder Container) für die Datenspeicherung. Für diese Konfiguration müssen Sie einen _privaten“_ erstellen. Informationen zu Adobe Commerce in Cloud-Infrastrukturen finden Sie unter [Konfigurieren von Remote-Speicher für Commerce in Cloud-Infrastrukturen](cloud-support.md).
+Der [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) ist ein Objektspeicher-Service, der branchenführende Skalierbarkeit, Datenverfügbarkeit, Sicherheit und Leistung bietet. Der AWS S3-Service verwendet Buckets (oder Container) für die Datenspeicherung. Für diese Konfiguration müssen Sie einen _privaten“_ erstellen. Informationen zu Adobe Commerce in Cloud-Infrastrukturen finden Sie unter [Konfigurieren von Remote-Speicher für Commerce in Cloud-Infrastrukturen](cloud-support.md).
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ Der [Amazon Simple Storage Service (Amazon S3)][AWS S3] ist ein Objektspeicher-S
 
 1. Melden Sie sich bei Ihrem Amazon S3-Dashboard an und erstellen Sie einen _privaten_ Bucket.
 
-1. Richten Sie [AWS IAM]-Rollen ein. Alternativ können Sie Zugriffs- und Geheimschlüssel generieren.
+1. Richten Sie [AWS IAM](https://aws.amazon.com/iam/)-Rollen ein. Alternativ können Sie Zugriffs- und Geheimschlüssel generieren.
 
 1. Deaktivieren Sie den standardmäßigen Datenbankspeicher.
 
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Authentifizierung
 
-Wenn Sie anstelle von [AWS IAM]-Rollen Zugriffs- und Geheimschlüssel verwenden, müssen Sie das [`ngx_aws_auth` Nginx-Modul ][ngx repo].
+Wenn Sie anstelle von [AWS IAM](https://aws.amazon.com/iam/)-Rollen Zugriffs- und Geheimschlüssel verwenden, müssen Sie das [`ngx_aws_auth` Nginx-Modul ](https://github.com/anomalizer/ngx_aws_auth).
 
 ### Berechtigungen
 
@@ -81,10 +81,5 @@ Die S3-Integration beruht auf der Möglichkeit, zwischengespeicherte Bilder im l
 
 ### Dateifunktionen
 
-Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
+Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter ](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
 
-<!-- link definitions -->
-
-[AWS S3]: https://aws.amazon.com/s3
-[AWS IAM]: https://aws.amazon.com/iam/
-[ngx repo]: https://github.com/anomalizer/ngx_aws_auth

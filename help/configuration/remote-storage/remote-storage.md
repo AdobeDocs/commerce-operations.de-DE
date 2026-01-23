@@ -3,7 +3,7 @@ title: Konfigurieren des Remote-Speichers
 description: Erfahren Sie, wie Sie das Remote-Speichermodul für die lokale Commerce-Anwendung konfigurieren.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Die Aktivierung von Remote-Speicher kann sich auf Ihre bestehende Entwicklungsum
 
 >[!INFO]
 >
->- Der Remote-Speicher ist nur für Commerce Version 2.4.2 und höher verfügbar. Siehe Versionshinweise zu [2.4.2](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Der Remote-Speicher ist nur für Commerce Version 2.4.2 und höher verfügbar. Siehe Versionshinweise zu [2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Das Remote-Speichermodul bietet _(begrenzte_ Unterstützung für Adobe Commerce in Cloud-Infrastrukturen. Adobe kann den Speicheradapterdienst eines Drittanbieters nicht vollständig beheben. Siehe [Konfigurieren von Remote-Speicher für Commerce auf Cloud-](cloud-support.md)) für Anleitungen zur Implementierung von Remote-Speicher für Cloud-Projekte.
 
@@ -91,8 +91,5 @@ Nachdem Sie den Remotespeicher für einen bestimmten Adapter aktiviert haben, k�
 
 >[!INFO]
 >
->Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=de) im _Benutzerhandbuch zu Commerce 2.4_.
+>Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) im _Benutzerhandbuch zu Commerce 2.4_.
 
-<!-- link definitions -->
-
-[import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html

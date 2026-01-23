@@ -2,7 +2,7 @@
 title: Profilerstellung aktivieren
 description: Erfahren Sie mehr darüber, wie Sie den MAGE Profiler für Ihre Analyse-Tools aktivieren.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -23,13 +23,13 @@ Mit der Commerce-Profilerstellung können Sie:
 
   Sie sollten besonders an der Liste der _nicht verwendeten Abhängigkeiten_ interessiert sein. Dabei handelt es sich um Objekte, die erstellt wurden, weil sie in einem Konstruktor angefordert, aber nie verwendet wurden (d. h. keine ihrer Methoden wurde aufgerufen). Daher werden Prozessorzeit und Arbeitsspeicher, die für die Erstellung dieser Abhängigkeiten aufgewendet werden, verschwendet.
 
-Commerce stellt die Basisfunktionen in [`Magento\Framework\Profiler`][profiler] bereit.
+Commerce stellt die Basisfunktionen in [`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php) bereit.
 
 Sie können den Profiler mithilfe einer MAGE_PROFILER-Variablen oder der Befehlszeile aktivieren und konfigurieren.
 
 ## MAGE_PROFILER festlegen
 
-Sie können den Wert von `MAGE_PROFILER` auf eine der unter „Festlegen des [&#x200B; von Bootstrap-Parametern“ beschriebenen Arten &#x200B;](../bootstrap/set-parameters.md).
+Sie können den Wert von `MAGE_PROFILER` auf eine der unter „Festlegen des [ von Bootstrap-Parametern“ beschriebenen Arten ](../bootstrap/set-parameters.md).
 
 `MAGE_PROFILER` unterstützt die folgenden Werte:
 
@@ -37,8 +37,8 @@ Sie können den Wert von `MAGE_PROFILER` auf eine der unter „Festlegen des [&#
 
   Sie können einen der folgenden Werte verwenden, um einen bestimmten Profiler zu aktivieren:
 
-   - `csvfile`, das [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile] verwendet
-   - Alle anderen Werte (außer `2`), einschließlich eines leeren Werts, für den [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html] verwendet wird
+   - `csvfile`, das [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php) verwendet
+   - Alle anderen Werte (außer `2`), einschließlich eines leeren Werts, für den [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php) verwendet wird
 
 - `2` zum Aktivieren von Abhängigkeitsdiagrammen.
 
@@ -81,8 +81,3 @@ Verwenden Sie die Variablenoption, um Abhängigkeitsdiagramme zu aktivieren.
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

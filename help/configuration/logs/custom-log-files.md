@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie benutzerdefinierte Protokolldateien in Adobe 
 feature: Configuration, Logs
 badge: label="Von Atwix beigetragen" type="Informative" url="https://www.atwix.com/" tooltip="ATWIX"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -17,11 +17,11 @@ Das `Magento\Framework\Logger`-Modul enthält die folgenden Handler-Klassen:
 
 | Klasse | Protokolldatei |
 | ----- | -------- |
-| [Magento\Framework\Logger\Handler\Base][base] | - |
-| [Magento\Framework\Logger\Handler\Debug][debug] | `/var/log/debug.log` |
-| [Magento\Framework\Logger\Handler\Exception][exception] | `/var/log/exception.log` |
-| [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
-| [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
+| [Magento\Framework\Logger\Handler\Base](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php) | - |
+| [Magento\Framework\Logger\Handler\Debug](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php) | `/var/log/debug.log` |
+| [Magento\Framework\Logger\Handler\Exception](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php) | `/var/log/exception.log` |
+| [Magento\Framework\Logger\Handler\Syslog](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php) | - |
+| [Magento\Framework\Logger\Handler\System](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php) | `/var/log/system.log` |
 
 Sie finden sie möglicherweise im `lib/internal/Magento/Framework/Logger/Handler`.
 
@@ -205,10 +205,3 @@ In diesem Beispiel wird gezeigt, wie mit einer benutzerdefinierten Logger-Handle
 
 Ausnahmemeldungen werden in der `/var/log/my_custom_logger/error.log`-Datei protokolliert.
 
-<!-- link definitions -->
-
-[base]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Base.php
-[debug]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Debug.php
-[exception]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Exception.php
-[syslog]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/Syslog.php
-[system]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Logger/Handler/System.php

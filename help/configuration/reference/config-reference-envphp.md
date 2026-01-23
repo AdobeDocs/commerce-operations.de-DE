@@ -2,7 +2,7 @@
 title: env.php-Referenz
 description: Erfahren Sie mehr über die Konfigurationswerte und -abschnitte der Datei env.php in Adobe Commerce. Erkunden Sie Umgebungseinstellungen und Konfigurationsoptionen.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Die `env.php`-Datei enthält die folgenden Abschnitte:
 | `resource` | Zuordnung des Ressourcennamens zu einer Verbindung |
 | `session` | Sitzungsspeicherdaten |
 | `system` | Deaktiviert das Feld für die Bearbeitung im Admin-Bereich |
-| `x-frame-options` | Einstellung für [x-frame-options][x-frame-options] |
+| `x-frame-options` | Einstellung für [x-frame-options](../security/xframe-options.md) |
 
 ## Backend
 
@@ -146,7 +146,7 @@ Commerce verwendet einen Verschlüsselungsschlüssel zum Schutz von Kennwörtern
 ]
 ```
 
-Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
+Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
 
 ## dB
 
@@ -193,7 +193,7 @@ Wenn `queue/default_connection` beispielsweise in `amqp` `env.php` ist, aber in 
 
 ## Verzeichnisse
 
-Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([&#x200B; Sicherheit](../../installation/tutorials/docroot.md).
+Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([ Sicherheit](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -211,7 +211,7 @@ Eine Liste der in diesem Knoten verfügbaren herunterladbaren Domains. Zusätzli
 ]
 ```
 
-Weitere Informationen zu &quot;[&#x200B; Domains](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Weitere Informationen zu &quot;[ Domains](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## installieren
 
@@ -252,7 +252,7 @@ In diesem Knoten sind Konfigurationen für die Nachrichtenwarteschlange verfügb
 ]
 ```
 
-Weitere Informationen über [Nachrichtenwarteschlange][message-queue].
+Weitere Informationen über [Nachrichtenwarteschlange](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
 ## Ressource
 
@@ -305,9 +305,6 @@ Mithilfe dieses Knotens sperrt Commerce die Konfigurationswerte in der `env.php`
 
 Weitere Informationen finden Sie unter [env-php-config-set](../cli/set-configuration-values.md).
 
-<!-- Link definitions -->
-
-[message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
 ## Variablen zur Dateikonfiguration hinzufügen

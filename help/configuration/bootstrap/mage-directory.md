@@ -2,7 +2,7 @@
 title: Anpassen von Basisordnerpfaden
 description: Verwenden Sie die Variable MAGE_DIRS , um ein Array absoluter Pfade festzulegen.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Mit der Umgebungsvariablen `MAGE_DIRS` können Sie benutzerdefinierte Basisordne
 
 ## MAGE_DIRS festlegen
 
-Geben Sie ein assoziatives Array an, in dem Schlüssel Konstanten aus [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] sind und Werte absolute Pfade von Verzeichnissen bzw. deren URL-Pfade sind.
+Geben Sie ein assoziatives Array an, in dem Schlüssel Konstanten aus [\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) sind und Werte absolute Pfade von Verzeichnissen bzw. deren URL-Pfade sind.
 
 Sie können `MAGE_DIRS` auf eine der folgenden Arten festlegen:
 
@@ -50,6 +50,3 @@ Sie können `MAGE_DIRS` auf eine der folgenden Arten festlegen:
 
 Im vorherigen Beispiel werden Pfade für `[cache]`- und `[media]`-Verzeichnisse auf `/mnt/nfs/cache` bzw. `/mnt/nfs/media` festgelegt.
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php

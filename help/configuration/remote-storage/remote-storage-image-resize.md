@@ -3,7 +3,7 @@ title: Konfigurieren der Bildgröße für den Remote-Speicher
 description: Optimieren Sie die Festplattenressourcen durch die Konfiguration der Server-seitigen Bildgröße.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Um mit der Konfiguration der Server-seitigen Bildgröße fortzufahren, müssen S
 
 **So aktivieren Sie Nginx zum Ändern der Bildgröße**:
 
-1. Installieren Sie das [Nginx-Bildfiltermodul][nginx-module].
+1. Installieren Sie das [Nginx-Bildfiltermodul](https://nginx.org/en/docs/http/ngx_http_image_filter_module.html).
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -73,6 +73,3 @@ Um mit der Konfiguration der Server-seitigen Bildgröße fortzufahren, müssen S
 
    - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 
-<!-- link definitions -->
-
-[nginx-module]: https://nginx.org/en/docs/http/ngx_http_image_filter_module.html

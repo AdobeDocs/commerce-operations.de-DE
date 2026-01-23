@@ -3,16 +3,16 @@ title: Konfigurieren und Verwenden von Lack
 description: Erfahren Sie, wie Sie das Zwischenspeichern von Lacken für Adobe Commerce konfigurieren und verwenden. Entdecken Sie Techniken zur HTTP-Beschleunigung, Dateispeicherung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # Lack konfigurieren
 
-[Varnish Cache] ist ein Open-Source-Webanwendungsbeschleuniger (auch als _HTTP-Beschleuniger“_ „Caching _HTTP Reverse Proxy_ bezeichnet). Varnish speichert (oder speichert) Dateien oder Fragmente von Dateien im Speicher, was Varnish in die Lage versetzt, die Antwortzeit und den Bandbreitenverbrauch bei zukünftigen, äquivalenten Anfragen zu reduzieren. Im Gegensatz zu Webservern wie Apache und Nginx wurde Varnish ausschließlich für die Verwendung mit dem HTTP-Protokoll entwickelt.
+[Varnish Cache](https://varnish-cache.org) ist ein Open-Source-Webanwendungsbeschleuniger (auch als _HTTP-Beschleuniger“_ „Caching _HTTP Reverse Proxy_ bezeichnet). Varnish speichert (oder speichert) Dateien oder Fragmente von Dateien im Speicher, was Varnish in die Lage versetzt, die Antwortzeit und den Bandbreitenverbrauch bei zukünftigen, äquivalenten Anfragen zu reduzieren. Im Gegensatz zu Webservern wie Apache und Nginx wurde Varnish ausschließlich für die Verwendung mit dem HTTP-Protokoll entwickelt.
 
 [Systemanforderungen](../../installation/system-requirements.md) listet die unterstützten Versionen von Varnish auf.
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Weitere Informationen zu Lack finden Sie unter:
 
-- [Das große Lackbild]
-- [Startoptionen lackieren]
-- [Lack- und Website-Performance]
+- [Das große Lackbild](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
+- [Startoptionen lackieren](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
+- [Lack- und Website-Performance](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
 
 ## Lacktopologie-Diagramm
 
@@ -61,7 +61,7 @@ Der Prozess lässt sich wie folgt zusammenfassen:
 
 Wir kennen die folgenden Probleme mit Lack:
 
-- [Lack unterstützt SSL nicht]
+- [Lack unterstützt SSL nicht](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   Verwenden Sie alternativ eine SSL-Terminierung oder einen SSL-Terminierungs-Proxy.
 
@@ -146,10 +146,3 @@ Der 304-Status-Code tritt auf, weil der Benutzer seinen lokalen Cache ungültig 
 
 Wenn sich der Inhalt auf dem Server ändert, lädt der Client das statische Asset mit einem HTTP-Status-Code 200 (OK) und einem neuen E-Tag herunter.
 
-<!-- Link Definitions -->
-
-[Das große Lackbild]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
-[Lackcache]: https://varnish-cache.org
-[Startoptionen für Lackierung]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
-[Lack- und Website-Performance]: https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance
-[Lack unterstützt kein SSL]: https://www.varnish-cache.org/docs/3.0/phk/ssl.html

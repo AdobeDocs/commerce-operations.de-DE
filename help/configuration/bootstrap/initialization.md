@@ -3,28 +3,28 @@ title: Anwendungsinitialisierung und Bootstrap
 description: Informationen zur Initialisierung und Bootstrap-Logik für das Commerce-Programm.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
 # Übersicht über Initialisierung und Bootstrap
 
-Um das Commerce-Programm auszuführen, werden die folgenden Aktionen in [pub/index.php implementiert][index]:
+Um das Commerce-Programm auszuführen, werden die folgenden Aktionen in [pub/index.php implementiert](https://github.com/magento/magento2/tree/2.4.8/pub/index.php):
 
-- Schließen Sie [app/bootstrap.php][bootinitial] ein, das wichtige Initialisierungsroutinen durchführt, z. B. die Fehlerbehandlung, die Initialisierung des Autoloaders, das Festlegen von Profiloptionen und das Festlegen der standardmäßigen Zeitzone.
-- Instanz von [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. --> erstellen
-- Erstellen Sie eine Commerce-Anwendungsinstanz: [\Magento\Framework\AppInterface][app-face]
+- Fügen Sie die Datei [app/bootstrap.php](https://github.com/magento/magento2/blob/2.4.8/app/bootstrap.php) für die in Ihrer Umgebung bereitgestellte Commerce-Version ein. Diese Datei führt wichtige Initialisierungsroutinen durch, wie die Fehlerbehandlung, die Initialisierung des Autoloaders, das Festlegen von Profiloptionen und das Festlegen der standardmäßigen Zeitzone.
+- Instanz von [\Magento\Framework\App\Bootstrap.php](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Bootstrap.php) <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. --> erstellen
+- Erstellen Sie eine Commerce-Anwendungsinstanz: [\Magento\Framework\AppInterface](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/AppInterface.php)
 - Commerce ausführen
 
 ## Bootstrap-Ausführungslogik
 
-[Das Bootstrap-Objekt][bootinitial] verwendet den folgenden Algorithmus, um die Commerce-Anwendung auszuführen:
+[Das Bootstrap-Objekt](https://github.com/magento/magento2/tree/2.4.8/app/bootstrap.php) verwendet den folgenden Algorithmus, um die Commerce-Anwendung auszuführen:
 
 1. Initialisiert den Fehler-Handler.
-1. Erstellt den [Objekt-Manager][object] und grundlegende freigegebene Dienste, die überall verwendet werden und von der Umgebung betroffen sind. Die Umgebungsparameter werden ordnungsgemäß in diese Objekte eingefügt.
+1. Erstellt den [Objekt-Manager](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/ObjectManager) und grundlegende freigegebene Dienste, die überall verwendet werden und von der Umgebung betroffen sind. Die Umgebungsparameter werden ordnungsgemäß in diese Objekte eingefügt.
 1. Stellt sicher, dass der Wartungsmodus _nicht_ aktiviert ist; andernfalls wird er beendet.
 1. Erklärt, dass die Commerce-Anwendung installiert ist, andernfalls wird beendet.
 1. Startet die Commerce-Anwendung.
@@ -71,14 +71,14 @@ Wir haben die folgenden Einstiegspunktanwendungen (d. h. von Commerce definierte
 
 ### HTTP-Einstiegspunkt
 
-[\Magento\Framework\App\Http][http] funktioniert wie folgt:
+[\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) funktioniert wie folgt:
 
 1. Bestimmt den [Anwendungsbereich](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
 1. Startet den Frontcontroller und das Routing-System, um eine Controller-Aktion zu finden und auszuführen.
 1. Verwendet ein HTTP-Antwortobjekt, um das von der Controller-Aktion erhaltene Ergebnis zurückzugeben.
 1. Fehlerbehandlung (in der folgenden Prioritätsreihenfolge):
 
-   1. Wenn Sie den [Entwicklermodus“ &#x200B;](../bootstrap/application-modes.md#developer-mode):
+   1. Wenn Sie den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode):
       - Wenn die Commerce-Anwendung nicht installiert ist, leiten Sie zum Setup-Assistenten weiter.
       - Wenn die Commerce-Anwendung installiert ist, zeigen Sie den HTTP-Status-Code 500 (Interner Server-Fehler) an.
    1. Wenn sich die Commerce-Anwendung im Wartungsmodus befindet, zeigen Sie eine benutzerfreundliche Landingpage „Service nicht verfügbar“ mit HTTP-Status-Code 503 (Service nicht verfügbar) an.
@@ -89,7 +89,7 @@ Wir haben die folgenden Einstiegspunktanwendungen (d. h. von Commerce definierte
 
 ### Einstiegspunkt für statische Ressourcen
 
-[\Magento\Framework\App\StaticResource][static-resource] ist ein Programm zum Abrufen statischer Ressourcen (z. B. CSS, JavaScript und Bilder). Sie verschiebt alle Aktionen mit einer statischen Ressource, bis die Ressource angefordert wird.
+[\Magento\Framework\App\StaticResource](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/StaticResource.php) ist ein Programm zum Abrufen statischer Ressourcen (z. B. CSS, JavaScript und Bilder). Sie verschiebt alle Aktionen mit einer statischen Ressource, bis die Ressource angefordert wird.
 
 >[!INFO]
 >
@@ -105,17 +105,7 @@ Wenn die Anfrage an den Einstiegspunkt weitergeleitet wird, analysiert die Comme
 
 ### Einstiegspunkt für Medienressourcen
 
-[Magento\MediaStorage\App\Media][media] ruft Medienressourcen (d. h. alle in den Medienspeicher hochgeladenen Dateien) aus der Datenbank ab. Er wird immer dann verwendet, wenn die Datenbank als Medienspeicher konfiguriert ist.
+[Magento\MediaStorage\App\Media](https://github.com/magento/magento2/tree/2.4.8/app/code/Magento/MediaStorage/App/Media.php) ruft Medienressourcen (d. h. alle in den Medienspeicher hochgeladenen Dateien) aus der Datenbank ab. Er wird immer dann verwendet, wenn die Datenbank als Medienspeicher konfiguriert ist.
 
 `\Magento\Core\App\Media` versucht, die Mediendatei im konfigurierten Datenbankspeicher zu finden, sie in das `pub/static` Verzeichnis zu schreiben und dann ihren Inhalt zurückzugeben. Bei einem Fehler wird ein HTTP-404-Status-Code (Nicht gefunden) in der Kopfzeile ohne Inhalt zurückgegeben.
 
-<!-- Link Definitions -->
-
-[app-face]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/AppInterface.php
-[bootinitial]: https://github.com/magento/magento2/tree/2.4/app/bootstrap.php
-[bootstrap]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Bootstrap.php
-[http]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/Http
-[index]: https://github.com/magento/magento2/tree/2.4/pub/index.php
-[media]: https://github.com/magento/magento2/tree/2.4/app/code/Magento/MediaStorage/App/Media.php
-[object]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/ObjectManager
-[static-resource]: https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/App/StaticResource.php

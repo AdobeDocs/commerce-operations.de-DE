@@ -2,9 +2,9 @@
 title: Festlegen des Werts von Bootstrap-Parametern
 description: Erfahren Sie, wie Sie Bootstrap-Parameter für das Commerce-Programm festlegen.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '559'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Beispielsweise können Sie mit der `MAGE_PROFILER`-Umgebungsvariablen einen Modu
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
-Legen Sie die Variable mithilfe eines Shell-spezifischen Befehls fest. Da Shell unterschiedliche Syntax haben, sollten Sie einen Verweis wie [unix.stackexchange.com][unix-stackx] heranziehen.
+Legen Sie die Variable mithilfe eines Shell-spezifischen Befehls fest. Da Shell unterschiedliche Syntax haben, sollten Sie einen Verweis wie [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables) heranziehen.
 
 Bash-Shell-Beispiel für CentOS:
 
@@ -57,7 +57,7 @@ In diesem Abschnitt wird beschrieben, wie Sie den Modus für Apache oder Nginx a
 
 ### Nginx-Einstellung
 
-Siehe die [Nginx-Beispielkonfiguration] auf _GitHub_.
+Siehe die [Nginx-Beispielkonfiguration](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16) auf _GitHub_.
 
 ### Apache .htaccess-Einstellung
 
@@ -72,7 +72,7 @@ Je nach Einstiegspunkt für das Commerce-Programm können Sie `.htaccess` an jed
 
 1. Öffnen Sie eine der zuvor genannten Dateien in einem Texteditor und fügen Sie die gewünschte Einstellung hinzu oder heben Sie die Auskommentierung auf.
 
-   Um beispielsweise einen „Modus[&#x200B; anzugeben, heben &#x200B;](application-modes.md) den Kommentar für Folgendes auf:
+   Um beispielsweise einen „Modus[ anzugeben, heben ](application-modes.md) den Kommentar für Folgendes auf:
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
@@ -92,7 +92,7 @@ Je nach Einstiegspunkt für das Commerce-Programm können Sie `.htaccess` an jed
 
 Der Apache-Webserver unterstützt das Festlegen des Anwendungsmodus mithilfe von `mod_env`-Anweisungen.
 
-Die Apache `mod_env`-Direktive unterscheidet sich geringfügig von [Apache-Version 2.2] und [Apache-Version 2.4].
+Die Apache `mod_env`-Direktive unterscheidet sich geringfügig von [Apache-Version 2.2](https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv) und [Apache-Version 2.4](https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv).
 
 Die folgenden Verfahren zeigen, wie Sie den Anwendungsmodus in einem virtuellen Apache-Host festlegen. Dies ist nicht die einzige Möglichkeit, `mod_env` Anweisungen zu verwenden. Weitere Informationen finden Sie in der Apache-Dokumentation .
 
@@ -166,9 +166,3 @@ Die folgenden Verfahren zeigen, wie Sie den Anwendungsmodus in einem virtuellen 
    - Ubuntu: `service apache2 restart`
    - CentOS: `service httpd restart`
 
-<!-- link definitions -->
-
-[Apache Version 2.2]: https://httpd.apache.org/docs/2.2/mod/mod_env.html#setenv
-[Apache-Version 2.4]: https://httpd.apache.org/docs/2.4/mod/mod_env.html#setenv
-[Nginx-Beispielkonfiguration]: https://github.com/magento/magento2/blob/2.4/nginx.conf.sample#L16
-[unix-stackx]: https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables
