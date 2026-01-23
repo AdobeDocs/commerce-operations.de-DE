@@ -78,7 +78,7 @@ Wir haben die folgenden Einstiegspunktanwendungen (d. h. von Commerce definierte
 1. Verwendet ein HTTP-Antwortobjekt, um das von der Controller-Aktion erhaltene Ergebnis zurückzugeben.
 1. Fehlerbehandlung (in der folgenden Prioritätsreihenfolge):
 
-   1. Wenn Sie den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode):
+   1. Wenn Sie den [Entwicklermodus“ &#x200B;](../bootstrap/application-modes.md#developer-mode):
       - Wenn die Commerce-Anwendung nicht installiert ist, leiten Sie zum Setup-Assistenten weiter.
       - Wenn die Commerce-Anwendung installiert ist, zeigen Sie den HTTP-Status-Code 500 (Interner Server-Fehler) an.
    1. Wenn sich die Commerce-Anwendung im Wartungsmodus befindet, zeigen Sie eine benutzerfreundliche Landingpage „Service nicht verfügbar“ mit HTTP-Status-Code 503 (Service nicht verfügbar) an.

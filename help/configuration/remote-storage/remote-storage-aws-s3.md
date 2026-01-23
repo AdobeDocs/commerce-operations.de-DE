@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Authentifizierung
 
-Wenn Sie anstelle von [AWS IAM](https://aws.amazon.com/iam/)-Rollen Zugriffs- und Geheimschlüssel verwenden, müssen Sie das [`ngx_aws_auth` Nginx-Modul ](https://github.com/anomalizer/ngx_aws_auth).
+Wenn Sie anstelle von [AWS IAM](https://aws.amazon.com/iam/)-Rollen Zugriffs- und Geheimschlüssel verwenden, müssen Sie das [`ngx_aws_auth` Nginx-Modul &#x200B;](https://github.com/anomalizer/ngx_aws_auth).
 
 ### Berechtigungen
 
@@ -81,5 +81,5 @@ Die S3-Integration beruht auf der Möglichkeit, zwischengespeicherte Bilder im l
 
 ### Dateifunktionen
 
-Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter ](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
+Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
 

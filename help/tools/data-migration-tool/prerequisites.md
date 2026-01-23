@@ -16,7 +16,7 @@ Bevor Sie mit der Migration beginnen, stellen Sie sicher, dass die folgenden Anf
 
 ## Magento 2-System
 
-* Richten Sie Ihr Magento 2-System so ein, dass es die [Systemanforderungen“ ](../../installation/system-requirements.md).
+* Richten Sie Ihr Magento 2-System so ein, dass es die [Systemanforderungen“ &#x200B;](../../installation/system-requirements.md).
 
   Verwenden Sie eine Topologie und ein Design, die mindestens Ihrem bestehenden Magento 1-System entsprechen.
 
@@ -28,7 +28,7 @@ Starten Sie keine Magento 2-Cron-Aufträge.
 
 ## Datenbank
 
-* Sichern oder [ Sie Ihre Magento 2](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)Datenbank nach der Installation so schnell wie möglich. Auf diese Weise können Sie den ursprünglichen Datenbankstatus wiederherstellen, wenn die Migration nicht erfolgreich war.
+* Sichern oder [&#x200B; Sie Ihre Magento 2](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html)Datenbank nach der Installation so schnell wie möglich. Auf diese Weise können Sie den ursprünglichen Datenbankstatus wiederherstellen, wenn die Migration nicht erfolgreich war.
 
 * Überprüfen Sie, ob der [!DNL Data Migration Tool] über Netzwerkzugriff verfügt, um die Magento 1- und Magento 2-Datenbanken zu verbinden.
 
@@ -44,6 +44,6 @@ Wenn die Binärprotokollierung für Ihre Magento 1-Datenbank aktiviert ist, lege
 
 Migrieren des Magento 1-Erweiterungs-Codes zu Magento 2.
 
-Um die neuesten Erweiterungsversionen zu finden, besuchen Sie [!DNL [Commerce Marketplace]](https://commercemarketplace.adobe.com//) oder wenden Sie sich an Ihren Erweiterungsanbieter.
+Um die neuesten Erweiterungsversionen zu finden, besuchen Sie [[!DNL [Commerce Marketplace]]](https://commercemarketplace.adobe.com//) oder wenden Sie sich an Ihren Erweiterungsanbieter.
 
-Sie können auch die [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) verwenden.
+Sie können auch die [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md) verwenden.

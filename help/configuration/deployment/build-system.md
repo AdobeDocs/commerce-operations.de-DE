@@ -124,9 +124,9 @@ So richten Sie das Build-System ein:
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Weitere Informationen finden Sie in [`.gitignore` ](../reference/config-reference-gitignore.md).
+   Weitere Informationen finden Sie in [`.gitignore` &#x200B;](../reference/config-reference-gitignore.md).
 
-1. Das Build-System sollte den [Standardmodus“ ](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode):
+1. Das Build-System sollte den [Standardmodus“ &#x200B;](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ &#x200B;](../bootstrap/application-modes.md#developer-mode):
 
    ```bash
    bin/magento deploy:mode:set <mode>

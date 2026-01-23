@@ -90,7 +90,7 @@ Im Gegensatz zu einem Übersetzungswörterbuch können Sie jedes oder alle Wört
 In diesem Abschnitt wird beschrieben, wie Sie ein Sprachpaket erstellen, das CSV-Dateien in Module und Designs schreibt. Um ein Sprachpaket zu erstellen, müssen Sie die in den folgenden Abschnitten beschriebenen Aufgaben ausführen:
 
 1. [Sammeln und Übersetzen von Wörtern und Wortgruppen](#generate-a-translation-dictionary). (Der `--magento` ist erforderlich.)
-1. [Führen Sie den Sprachpaketbefehl ](#run-the-language-package-command).
+1. [Führen Sie den Sprachpaketbefehl &#x200B;](#run-the-language-package-command).
 1. [Erstellen von Verzeichnissen und Dateien](#create-directories-and-files).
 1. (Optional) [Konfigurieren mehrerer Pakete für eine Sprache](#configure-multiple-packages-for-a-language).
 
@@ -117,7 +117,7 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 - Erforderliche Lizenzdateien
 - `composer.json`
-- `registration.php`, [ das ](https://developer.adobe.com/commerce/php/development/build/component-registration/) registriert
+- `registration.php`, [&#x200B; das &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-registration/) registriert
 - [`language.xml`](#language-package-languagexml)-Metadatendatei
 
 >[!INFO]
