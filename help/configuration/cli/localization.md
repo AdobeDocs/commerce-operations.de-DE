@@ -35,7 +35,7 @@ So erstellen Sie das Wörterbuch und beginnen mit der Übersetzung:
 
 1. Sie können die Übersetzungswörterbücher in ein Sprachpaket packen und dieses dem Commerce Store-Administrator bereitstellen.
 
-1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Befehlsoptionen:
 

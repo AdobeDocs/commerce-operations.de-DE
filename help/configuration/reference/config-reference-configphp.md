@@ -34,7 +34,7 @@ Enthält ein Array von Modulen und deren Status. Wenn das Modul aktiviert ist, i
 ]
 ```
 
-Weitere Informationen zu [Modulen](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
+Weitere Informationen zu [Modulen](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de).
 
 ## Bereiche
 
@@ -82,7 +82,7 @@ Enthält ein Array von Bereichskonfigurationswerten. Sie weist die folgenden Unt
 ]
 ```
 
-Weitere Informationen zu [Commerce-Bereichen](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
+Weitere Informationen zu [Commerce-Bereichen](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=de#scope-settings).
 
 ## System
 
