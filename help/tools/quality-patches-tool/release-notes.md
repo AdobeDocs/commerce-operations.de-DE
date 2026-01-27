@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
+source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
 workflow-type: tm+mt
-source-wordcount: '29786'
+source-wordcount: '30379'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.76 {#v1-1-76}
+
+* **ACSD-67091** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt den Fehler der maximalen Writeset-Größe, um die Bereinigung des Katalogregelproduktindex sicherzustellen, indem zwei Löschstrategien basierend auf dem Datenvolumen implementiert werden.
+* **ACSD-67370** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Behebt mehrere Probleme, bei denen falsche Preise für Bundle-Produkte auf PDP/PLP und der Warenkorbseite für Geschäfte mit mehreren Währungen angezeigt wurden.
+* **ACSD-68410** (für Adobe Commerce, B2B >=1.3.3 &lt;1.5.3) - Es wird ein Problem behoben, bei dem durch die Bestellung eines verhandelbaren Angebots fälschlicherweise zusätzliche Warenkorbpositionen zum Angebot hinzugefügt oder zusammengeführt werden. Produkte werden jetzt korrekt zum Warenkorb hinzugefügt, nachdem der letzte Schritt des verhandelbaren Angebots-Checkouts verlassen wurde.
+* **ACSD-69086** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass der Cron-Auftrag die Changelog-Tabellen nicht löscht, was bei der Verarbeitung großer Datenmengen zu Abstürzen des Galera-Clusters führt.
+* **ACSD-69115** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Behebt ein Problem, bei dem Warenkorbfehler dem Admin-Benutzer beim Verwalten des Warenkorbs für einen Kunden, der einer nicht standardmäßigen Website zugewiesen wurde, nicht angezeigt wurden.
+* **ACSD-69129** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7 || >=2.4.8 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem das Löschen der standardmäßigen Basis-Website und die Verwendung der sekundären Website als Standard zu einem Fehler führte, wenn versucht wurde, den Stufenpreis für die sekundäre Website über die REST-API zu aktualisieren.
+* **ACSD-69203** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem das Widget „Produktliste“ falsche Ergebnisse zurückgab, wenn mehrere Kategorien in der Kategoriebedingung aufgelistet waren.
+* **ACSD-69261** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem ein Warenkorbpreisregelcoupon, der für den einmaligen Gebrauch pro Kunde konfiguriert war, aufgrund einer falschen Handhabung des `times_used` in Szenarien mit Teilrechnung und Restmengenstornierung mehrfach wiederverwendet wurde.
+* **ACSD-69308** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem Katalogpreisregeln nicht anwendbar waren, wenn `special_price` nur auf Website-Ebene festgelegt wurde (nicht in „Alle Store-Ansichten„). Nach der Fehlerbehebung gelten die Katalogpreisregeln korrekt, indem zunächst der Standardspeicher der Website überprüft wird.
+* **ACSD-69319** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem Paketpreise nicht richtig indiziert wurden, wenn untergeordnete Produkte unter benutzerdefinierten Quellen vorrätig waren.
+* **ACSD-69325** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Es wurde ein Problem behoben, durch das durch Änderung des SKU-Falls das Produkt in der Storefront nicht vorrätig erschien.
+* **ACSD-69331** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem Ersteller von Inhalten in der Mediensammlung keine Ordner mit nur der Berechtigung `create_folder` erstellen konnten. Nach der Behebung können sie wie erwartet Ordner erstellen.
+* **ACSD-69333** (für Adobe Commerce >=2.4.7 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem SKU-Änderungen für Produkte mit einem aktiven geplanten Update zulässig waren. Nach der Behebung werden SKU-Änderungen während aktiver Aktualisierungen verboten. Das Speichern schlägt mit einem eindeutigen Fehler fehl und das Feld „Admin SKU“ ist deaktiviert. Dadurch werden MSI-Inventarinkonsistenzen verhindert, die durch SKU-Änderungen während Staging-Rollbacks verursacht werden.
+* **ACSD-69541** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem die Reduzierung der Produktmenge im Admin-Bereich auf weniger als die bereits im Warenkorb vorhandene Menge es unmöglich machte, die Produktmenge in diesem Warenkorb über GraphQL zu bearbeiten.
+* Aktualisierte Versionen: **ACSD-46541**, **ACSD-53750**, **ACSD-66404**
+* Patches ersetzt: **ACSD-66404**, **ACSD-68499**
 
 ## v1.1.75 {#v1-1-75}
 
