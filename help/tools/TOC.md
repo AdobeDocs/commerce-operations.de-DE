@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 9aa3bde355da7be23cb704c443d041e5da7cd080
+source-git-commit: 39dcd37b7ba092a9196930d383decda3c68ea4a1
 workflow-type: tm+mt
-source-wordcount: '9028'
+source-wordcount: '9032'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Quality Patches Tool {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+   - [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Nutzung](quality-patches-tool/usage.md)
    - [Versionshinweise](quality-patches-tool/release-notes.md)
    - Im Quality Patches Tool verfügbare Patches {#patches-available-in-qpt}
@@ -750,7 +750,7 @@ ht-degree: 0%
          - [ACSD-63090: Beim Löschen eines Produkts aus der Administratorliste wird der Warenkorb geleert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63090-deleting-product-from-admin-empties-the-shopping-cart.md)
          - [ACSD-48570: Problem mit dem Link zum Zurücksetzen des Admin-Kennworts beim Speichern des Codes in der URL wird behoben](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-48570-fixing-admin-reset-password-link-issue-with-store-card-in-url.md)
          - [ACSD-63299: Sonderpreis für ein konfigurierbares Produkt wird nicht auf der Storefront angezeigt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63299-special-price-for-a-configurable-product-doesnt-display-on-the-storefront.md)
-         - [ACSD-63325: Fehler „Syntaxfehler: Unerwarteter &lt; EOF >&quot; beim Senden einer leeren  [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
+         - [ACSD-63325: Fehler „Syntaxfehler: Unerwarteter &lt; EOF >&quot; beim Senden einer leeren  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: Durch Klicken auf das [!UICONTROL Delete] in [!UICONTROL Add to Order by SKU] wird die SKU nicht entfernt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: Beim Erstellen von Produkten mit der REST-API werden keine Standardwerte für Datums- und Uhrzeitfelder festgelegt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
          - [MDVA-39305-V3: Anmeldeproblem mit aktiviert [!DNL Google reCAPTCHA]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
@@ -841,7 +841,7 @@ ht-degree: 0%
          - [ACSD-66049: Nicht-englische Storefronts zeigen aufgrund der ICU-Bibliotheksversion falsche Preise an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66049-non-english-storefronts-display-incorrect-pricing-due-to-the-icu-library-version.md)
          - [ACSD-66441: Die mehrschichtige Navigation zeigt falsche Attributoptionen bei der Einrichtung mehrerer Stores an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66441-layered-navigation-displays-incorrect-attribute-in-multi-store-setup.md)
          - [AC-14985: Fehler beim Senden von SMTP-E-Mails mit TLS](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14985-error-when-sending-smtp-emails-using-tls.md)
-         - [ACSD-66434: [!UICONTROL Customer ID] fehlt in  [!DNL GraphQL] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
+         - [ACSD-66434: [!UICONTROL Customer ID] fehlt in  [!DNL GraphQL] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)
       - v1.1.68 {#v1-1-68}
          - [ACSD-66072: GraphQL kann verwandte Produkte aufgrund eines internen Server-Fehlers während der [!UICONTROL Related Products Rule]-Konfiguration nicht auf der Produktdetailseite zurückgeben](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66072-graphql-fails-to-return-related-products-due-to-server-error-in-related-product-rules.md)
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.68](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/overview.md)
@@ -929,6 +929,8 @@ ht-degree: 0%
          - [ACSD-68810: Bestellung, die einem Kunden zugewiesen wurde, der trotz Konfiguration der Kontofreigabe auf einer anderen Website erstellt wurde](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68810.md)
          - [ACSD-68430: Das Speichern eines Kunden oder einer Adresse schlägt fehl, wenn der Datensatz mehrere gelöschte Attributoptionen enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68430.md)
          - [ACSD-68636: Name des Geschäftsinhabers fehlt in den E-Mail-Kopfzeilen der Geschenkkarte, wenn die Rechnung in einem anderen Geschäft erstellt wird](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
+      - v1.1.75 {#v1-1-75}
+         - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
    - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
    - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
@@ -976,6 +978,6 @@ ht-degree: 0%
       - [Daten, die manuell migriert werden müssen](data-migration-tool/migrate-data/manual.md)
       - [Schritte nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
    - Ressourcen {#resources}
-      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=de)
+      - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
