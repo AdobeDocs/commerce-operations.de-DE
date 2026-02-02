@@ -26,7 +26,7 @@ Adobe Commerce folgt einem monatlichen Patch-Veröffentlichungszeitplan mit der 
 
 - **Isolierte Sicherheitskorrekturen** - Einzelne, nicht kumulative [Sicherheitskorrekturen](versioning-policy.md#isolated-patch) können monatlich veröffentlicht werden und Sicherheitskorrekturen für alle [unterstützten](lifecycle-policy.md)-Versionen enthalten (einschließlich regelmäßiger und erweiterter Unterstützung).
 
-- **Sicherheits**-Patches: [Sicherheits-Patches](versioning-policy.md#security-patch-release) werden jährlich (im Mai) für alle [unterstützten ](lifecycle-policy.md) veröffentlicht. Diese Patches enthalten alle zuvor veröffentlichten isolierten Sicherheitskorrekturen. Adobe veröffentlicht möglicherweise im November zusätzliche Sicherheits-Patches, dies ist jedoch nicht garantiert.
+- **Sicherheits**-Patches: [Sicherheits-Patches](versioning-policy.md#security-patch-release) werden jährlich (im Mai) für alle [unterstützten &#x200B;](lifecycle-policy.md) veröffentlicht. Diese Patches enthalten alle zuvor veröffentlichten isolierten Sicherheitskorrekturen. Adobe veröffentlicht möglicherweise im November zusätzliche Sicherheits-Patches, dies ist jedoch nicht garantiert.
 
 - **Patch** - Ein vollständiger [Patch](versioning-policy.md#patch-release) für die Adobe Commerce 2.4.x LTS-Version (3 Jahre Support) wird jährlich (Mai) veröffentlicht.
 
