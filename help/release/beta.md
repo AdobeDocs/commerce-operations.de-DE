@@ -2,9 +2,9 @@
 title: Beta-Versionen
 description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und wie Sie teilnehmen können.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: c5d43d79679a1036f207313464f2a43bc197a3b5
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, erh
 
 In den folgenden Abschnitten finden Sie eine Liste der aktiven Beta-Programme.
 
+### Datenbankspeicher für App Builder (Public Beta)
+
+[Datenbankspeicher für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) ist ein neuer verwalteter, dokumentartiger Datenspeicher, der in Adobe Developer App Builder integriert ist und Ihren Commerce-Apps persistenten, abfragbaren Speicher für strukturierte JSON-Daten bietet. Alle Kunden mit einer App Builder-Lizenz können diese Funktion bereitstellen.
+
 ### Semantische Suche: Intelligentere, kontextbezogene Einkaufserlebnisse (private Beta)
 
 Die semantische Suche ist eine E-Commerce-Suchtechnologie, die die *Bedeutung* hinter der Abfrage eines Käufers versteht, nicht nur die genauen Wörter. Im Gegensatz zur herkömmlichen schlüsselwortbasierten Suche, die häufig fehlschlägt, wenn Abfragen unbekannte oder falsch geschriebene Begriffe enthalten, interpretiert dieser KI-gestützte Ansatz die Absicht mithilfe der Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) und des Kontexts, um relevantere Ergebnisse zu liefern.
@@ -43,9 +47,9 @@ Um eine Einladung zum Beta-Programm anzufordern, senden Sie eine E-Mail an [comm
 
 ### Cloud Automation Patching Service (Private Beta)
 
-Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
+Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
 
-Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
+Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
 
 - Automatisierte Patch-Installation
 - Rollback-Wiederherstellung
@@ -60,7 +64,7 @@ Die Beta-Version umfasst die folgenden Funktionen:
 
 >[!NOTE]
 >
->Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [&#x200B; Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
+>Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [ Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
 
 Um an dieser Beta-Version teilzunehmen, füllen Sie das Anmeldeformular [Cloud Automation Patching Service - Beta aus](https://forms.office.com/r/3Wfxj5nPdB) aus.
 
@@ -84,7 +88,7 @@ Jede Adobe Commerce Foundation-Alpha- und -Beta-Version enthält alle Änderunge
 - GraphQL-Verbesserungen
 - Allgemeine Qualitätsfehler-Fehlerbehebungen
 - Gemeinschaftsbeiträge
-- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Namenskonvention und -zeitplan
 
@@ -104,7 +108,7 @@ Siehe [Veröffentlichungszeitplan](schedule.md) für die Liste der kommenden öf
 
 #### Freigabezugang
 
-Adobe Commerce Alpha- und Beta-Versionen werden auf die gleiche Weise wie alle anderen Adobe Commerce Patch-Versionen verteilt: als Composer-Metapakete auf `https://repo.magento.com`. Der Quell-Code ist auf &quot;[&quot; &#x200B;](https://github.com/magento/magento2).
+Adobe Commerce Alpha- und Beta-Versionen werden auf die gleiche Weise wie alle anderen Adobe Commerce Patch-Versionen verteilt: als Composer-Metapakete auf `https://repo.magento.com`. Der Quell-Code ist auf &quot;[&quot; ](https://github.com/magento/magento2).
 
 Siehe [Schnellstart für die Composer-Installation](../installation/composer.md) für weitere Details.
 
