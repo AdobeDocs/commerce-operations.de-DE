@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 291262109cacaae5b4a749e50d1f7c8fa910b538
+source-git-commit: ef05d55e98557cb02e7d2ffb3a5c54a36be666b8
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -26,5 +26,5 @@ QPT v1.1.73 enthält die folgenden Patches:
 1. **ACSD-68206**: Fehlerkorrektur - Der GraphQL-Anwendungsserver funktioniert jetzt, wenn die **[!UICONTROL Rate Limiting]**-Funktion mit installierter PHP-[!DNL Redis]-Erweiterung verwendet wird.
 1. **ACSD-68391**: Kategorienbezogene Berechtigungen werden in **[!UICONTROL Quick Order]** und **[!UICONTROL Requisition Lists]** nicht angewendet.
 1. **ACSD-68356**: [!DNL GraphQL] Warenkorbabfrage gibt einen falschen Rabattbetrag für virtuelle Angebote zurück.
-1. **ACSD-68400**: Die Anzahl der virtuellen Geschenkgutscheine spiegelt sich nicht genau in der **[!UICONTROL Inventory reservation table]** wider.
+1. **ACSD-68400**: Die Menge der virtuellen Geschenkkarte spiegelt sich nicht genau in der Inventarreservierungstabelle wider.
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
