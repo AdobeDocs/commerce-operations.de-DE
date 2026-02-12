@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: 4f4131b89abffbe707f084b45f9d492679138b00
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 0%
@@ -16,9 +16,10 @@ ht-degree: 0%
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.67 verfügbaren Patches behoben wurden.
 
 QPT v1.1.67 enthält die folgenden Patches:
+
 1. **AC-14985**: Fehler beim Senden von SMTP-E-Mails mit TLS.
 1. **AC-14984**: SSL-Verbindungsproblem mit php-amqplib/php-amqplib ^3.2.0.
-1. **[ACSD-65935](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted.md)**: `customerOrders` GraphQL-Abfrage hat beim Löschen eines Produkts einen internen Server-Fehler zurückgegeben.
+1. **ACSD-65935**: `customerOrders` GraphQL-Abfrage hat beim Löschen eines Produkts einen internen Server-Fehler zurückgegeben.
 1. **ACSD-66049**: Nicht-englische Storefronts zeigen aufgrund der ICU-Bibliotheksversion falsche Preise an.
 1. **ACSD-66084**: `row_total_incl_tax` gibt bei vollständig reduzierten Artikeln in der Reihenfolge-API fast null statt 0,00 zurück.
 1. **ACSD-66118**: Durch die Aktualisierung **[!UICONTROL Store View]** Codes werden **[!UICONTROL Design Configuration]** Einstellungen gelöscht, wenn der Konfigurations-Cache nicht aktualisiert wird.

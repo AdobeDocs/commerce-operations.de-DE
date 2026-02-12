@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,16 @@ ht-degree: 0%
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.69 verfügbaren Patches behoben wurden.
 
 QPT v1.1.69 enthält die folgenden Patches:
+
 1. **AC-15223**: Die Storefront-Seite zeigt zwischengespeicherte Inhalte an, nachdem der Store gewechselt wurde.
 1. **ACP2E-3731**: Produktexporte mit *[!UICONTROL Catalog, Search]* Sichtbarkeit schließen Datensätze aus anderen Store-Ansichten ein.
 1. **ACP2E-3767**: Die Option „Letztes Bundle“ wird nach dem Speichern eines Bundle-Produkts erneut angezeigt.
 1. **ACP2E-3964**: Konfigurierbare untergeordnete Produkte mit Video, das nicht über die REST-API aufgelistet ist.
 1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** darf nicht leer bleiben.
 1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** beim Auschecken mit mehreren Adressen nicht angewendet.
-1. **ACP2E-3977**: [!UICONTROL Cap Reward Points Balance At] Feld darf nicht leer bleiben.
-1. **ACP2E-4050**: Die Regeln zum Warenkorbpreis schlagen für den Mehrversandversand mit Bundle-Produkten und den kostenlosen Versand fehl.
 1. **ACSD-56226**: READ-Abfragen geben veraltete Daten zurück, wenn `synchronous_replication` aktiviert ist.
 1. **ACSD-57477**: Die Verarbeitung von Verkaufsregeln verlangsamt die Leistung bei Warenkorbanfragen.
-1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: Fehlender Join-Tabellenname verursacht SQL-Fehler in der Erweiterung des benutzerdefinierten Rastermoduls.
+1. **ACSD-58108**: Fehlender Join-Tabellenname verursacht SQL-Fehler in der Erweiterung des benutzerdefinierten Rastermoduls.
 1. **ACSD-65983**: Fehler tritt auf, wenn das gebündelte Produktangebot in Admin neu konfiguriert wird.
 1. **ACSD-66149**: Der IPN-Handler gibt 500 für nicht unterstützte Typen zurück.
 1. **ACSD-66153**: Die Seite gibt einen 500-Fehler aufgrund einer zwischengespeicherten falschen Layout-Struktur zurück.
