@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: Behebt einen Fehler bei der erneuten Übermittlung von Formularen auf Katalog- und Katalogsuchseiten</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: Behebt einen Fehler bei der erneuten Übermittlung von Formularen auf Katalog- und Katalogsuchseiten</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -53,7 +53,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Übersicht: Quality Patches Tool (QPT) v1.1.76</a>.</p>
+      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Übersicht: Quality Patches Tool (QPT) v1.1.76</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
