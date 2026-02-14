@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 6c107bbdddd733d4d2f8f5b710fceac664ad608f
+source-git-commit: f230c5fe7a2678f091dfff559c21bdb0d349b062
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.75 enthält die folgenden Patches:
 1. **ACSD-68289**: Es wird ein Problem behoben, bei dem die Volltextsuche jetzt übereinstimmende Produkte zurückgibt, wenn die Mindestbedingung für die Übereinstimmung für alle durchsuchbaren Felder gemeinsam erfüllt ist, anstatt dass die Bedingung für ein einzelnes Feld erfüllt sein muss.
-1. **ACSD-68359**: Es wurde ein Problem behoben, bei dem die Auswahl eines Shops während des Checkouts mit **[!UICONTROL Pick in Store]** aufgrund langer URLs nicht mehr fehlschlug, wenn sich viele Produkte im Warenkorb befinden. Zuvor wurde ein 414-Fehler ausgelöst, der durch zu lange URLs verursacht wurde, die während eines Store-Verkaufs generiert wurden.
+1. **ACSD-68359**: Behebt *414* Fehler bei der Auswahl von **[!UICONTROL Pick in Store]** mit großen Warenkörben.
 1. **ACSD-68451**: Es wird ein Problem bei mehreren Websites behoben, bei denen sich ein Unternehmensadministrator auf einer Website anmeldet, auf einer anderen Website ein nicht verbundenes Unternehmen erstellt, aber fälschlicherweise mit diesem nicht verbundenen Unternehmen verknüpft ist.
 1. **ACSD-68517**: Behebt einen Fehler bei der erneuten Übermittlung von Formularen auf **[!UICONTROL Catalog]**- und **[!UICONTROL Catalog Search]**.
 1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** Schaltfläche, die bei der konfigurierbaren Produkterstellung für Administratoren mit eingeschränkter Zugriffsberechtigung sichtbar ist.
