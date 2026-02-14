@@ -3,9 +3,9 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
+source-git-commit: 151dc8bbf046b1c269c34dcfc66718136b4b8b02
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: '30792'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,29 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.77 {#v1-1-77}
+
+* **ACSD-63687** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.7) - Behebt das Problem, dass falsche Preise angezeigt werden, da es nicht möglich ist, den Redis-Cache zu bereinigen.
+* **ACSD-68341** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Behebt das Problem, dass das X-Magento-Vary-Cookie beim Laden von PDP mehrmals gesetzt wird, wenn mehrere Kundensegmente im Store erstellt werden.
+* **ACSD-68537** (für Adobe Commerce >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, bei dem die Checkout-Leistung mit zunehmender Anzahl der Kundensegmente nachließ.
+* **ACSD-68664** (für Adobe Commerce >=2.4.6 &lt;2.4.9) - Es wurde das Problem behoben, dass die Vorschau des geplanten Updates fehlschlug, wenn versucht wurde, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen.
+* **ACSD-68759** (für Adobe Commerce und Magento Open Source >=2.4.4-p2 &lt;2.4.5 || >=2.4.5-p1 &lt;2.4.9) - Es wird das Problem behoben, bei dem das Erstellen eines Kundenkontos bei Verwendung des arabischen Gebietsschemas fehlschlägt und das Attribut Geburtsdatum (DOB) auf der Storefront angezeigt wird.
+* **ACSD-68892** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass zwischenspeicherbare Seiten nicht ordnungsgemäß gespeichert oder aus dem Fastly-Cache bereitgestellt werden, was zu inkonsistentem Caching-Verhalten und verminderter Leistung führt.
+* **ACSD-69016** (für Adobe Commerce >=2.4.7 &lt;2.4.9) - Behebt das Problem, dass der Sonderpreis nicht für Websites gilt, die in verschiedenen Zeitzonen erstellt wurden.
+* **ACSD-69020** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Es wird das Problem behoben, dass ein konfigurierbares Produkt automatisch in die PageBuilder-Produktkarusselllisten aufgenommen wird, wenn eines der untergeordneten Produkte die Filterbedingungen erfüllt.
+* **ACSD-69237** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wurde das Problem behoben, dass die Anzahl der Einträge, die über die cron-Aufträge sales_*_async_insert verarbeitet und eingefügt werden können, auf 100 pro Ausführung begrenzt ist.
+* **ACSD-69311** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Behebt das Problem mit der falschen Steuerberechnung in Gutschriften bei der Erstellung einer Teilerstattung aus einer Rechnung, wenn eine vorherige Gutschrift auf der Bestellansichtsseite erstellt wurde.
+* **ACSD-69351** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Behebt das Problem, dass Geschenkgutscheine und Ablaufdaten nicht entsprechend dem zugewiesenen Website-Umfang angezeigt werden.
+* **ACSD-69494** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt die Probleme bei asynchronen Rückerstattungsvorgängen, bei denen Rückerstattungsanfragen mit dem Parameter „is_online“ nicht korrekt verarbeitet werden.
+* Aktualisierte Versionen: **ACSD-67250**
+* Patches ersetzt: **ACSD-62629**, **ACSD-66157**
+* Veraltete Patches: **ACSD-66157**
 
 ## v1.1.76 {#v1-1-76}
 
