@@ -54,7 +54,7 @@ Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Bei de
 
 Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce]-Umgebung in Betracht zu ziehen, z. B. GraphQL Mesh und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten zu bewahren, haben jedoch keine Auswirkungen auf die Commerce-Kernanwendung oder die zugrunde liegenden Datenbanktabellen. Mit diesem Ansatz stellen Sie Ihre Daten über eine API zur Verfügung. Anschließend fügen Sie Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mithilfe von GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erzeugen, wie in [Legacy-Daten](#legacy-data) beschrieben.
 
-Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
+Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=de){target="_blank"}.
 
 ## Ändern einer Kerntabelle oder Drittanbietertabelle
 
@@ -73,7 +73,7 @@ Adobe empfiehlt, diese Schritte auszuführen, wenn Sie eine Spalte zu einer Core
 
    Beispiel: `app/code/YourCompany/Customer`
 
-1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
+1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de){target="_blank"}.
 
 1. Erstellen Sie eine Datei mit dem Namen `db_schema.xml` im Ordner `etc` und nehmen Sie die entsprechenden Änderungen vor.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Suchen nach großen MySQL-Tabellen
 
-Um die großen Tabellen zu identifizieren, stellen Sie eine Verbindung zur Datenbank her, wie im Artikel [Verbindung zur Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) beschrieben, und führen Sie den folgenden Befehl aus. Verwenden Sie `project_id` für die Produktionsumgebung. Verwenden Sie für Staging-Umgebungen `[project_id]_stg`, `[project_id]_stg2`.
+Um die großen Tabellen zu identifizieren, stellen Sie eine Verbindung zur Datenbank her, wie im Artikel [Verbindung zur Datenbank herstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) beschrieben, und führen Sie den folgenden Befehl aus. Verwenden Sie `project_id` für die Produktionsumgebung. Verwenden Sie für Staging-Umgebungen `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
