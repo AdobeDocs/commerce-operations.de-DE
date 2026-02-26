@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: d40de2f05147e6c58c15cd3cd59275cc91283162
+source-git-commit: a1357a85dc447c8a0f2d48ea4de1c6cf076a5de5
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Bei de
 
 Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce]-Umgebung in Betracht zu ziehen, z. B. GraphQL Mesh und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten zu bewahren, haben jedoch keine Auswirkungen auf die Commerce-Kernanwendung oder die zugrunde liegenden Datenbanktabellen. Mit diesem Ansatz stellen Sie Ihre Daten über eine API zur Verfügung. Anschließend fügen Sie Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mithilfe von GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erzeugen, wie in [Legacy-Daten](#legacy-data) beschrieben.
 
-Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=de){target="_blank"}.
+Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Ändern einer Kerntabelle oder Drittanbietertabelle
 
@@ -73,11 +73,11 @@ Adobe empfiehlt, diese Schritte auszuführen, wenn Sie eine Spalte zu einer Core
 
    Beispiel: `app/code/YourCompany/Customer`
 
-1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de){target="_blank"}.
+1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Erstellen Sie eine Datei mit dem Namen `db_schema.xml` im Ordner `etc` und nehmen Sie die entsprechenden Änderungen vor.
 
-   Generieren Sie ggf. eine `db_schema_whitelist.json`. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}Deklaratives Schema“.
+   Generieren Sie ggf. eine `db_schema_whitelist.json`. Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}Deklaratives Schema“.
 
 ### Potenzielle Auswirkungen
 
@@ -152,3 +152,18 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 +------------------------+
 10 rows in set (0.020 sec)
 ```
+
+## Suchen nach großen MySQL-Tabellen
+
+Um die großen Tabellen zu identifizieren, stellen Sie eine Verbindung zur Datenbank her, wie im Artikel [Verbindung zur Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) beschrieben, und führen Sie den folgenden Befehl aus. Verwenden Sie `project_id` für die Produktionsumgebung. Verwenden Sie für Staging-Umgebungen `[project_id]_stg`, `[project_id]_stg2`.
+
+```sql
+SELECT TABLE_NAME AS `Table`,
+  ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = "<project_id>"
+ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC
+LIMIT 10;
+```
+
+Dadurch werden die 10 größten Tabellen angezeigt. Erhöhen Sie die `LIMIT`, wenn weitere Tabellen angezeigt werden sollen. Ohne Beschränkung zeigt der Befehl alle vorhandenen Tabellen (über 100) an. Außerdem wird die Größe der einzelnen Tabellen angezeigt. Sie können die Liste überprüfen und festlegen, welche Tabellen Aufmerksamkeit auf der Grundlage ihrer Größe erfordern.
