@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: aeda6ddd9bac7e5f81329d9bd05ab8957ef2fb76
+source-git-commit: 27356acfca4b9e640478010579b0f419749930d3
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ QPT v1.1.76 enthält die folgenden Patches:
 1. **ACSD-69319**: Es wurde ein Problem behoben, bei dem Bundle-Preise nicht richtig indiziert wurden, wenn untergeordnete Produkte unter benutzerdefinierten Quellen vorrätig waren.
 1. **ACSD-69325**: Es wurde ein Problem behoben, durch das beim Ändern des SKU-Falls das Produkt in der Storefront nicht vorrätig angezeigt wird.
 1. **ACSD-69331**: Es wurde ein Problem behoben, bei dem Ersteller von Inhalten in der Mediensammlung keine Ordner mit nur der Berechtigung `create_folder` erstellen konnten. Nach der Behebung können sie wie erwartet Ordner erstellen.
-1. **ACSD-69333**: Es wurde ein Problem behoben, bei dem SKU-Änderungen für Produkte mit einer aktiven geplanten Aktualisierung zulässig waren. Nach der Behebung werden SKU-Änderungen während aktiver Aktualisierungen verboten. Das Speichern schlägt mit einem eindeutigen Fehler fehl und das Feld „Admin SKU“ ist deaktiviert. Dadurch wird MSI verhindert.
+1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: Es wurde ein Problem behoben, bei dem SKU-Änderungen für Produkte mit einer aktiven geplanten Aktualisierung zulässig waren. Nach der Behebung werden SKU-Änderungen während aktiver Aktualisierungen verboten. Das Speichern schlägt mit einem eindeutigen Fehler fehl und das Feld „Admin SKU“ ist deaktiviert. Dadurch werden MSI-Inventarinkonsistenzen verhindert, die durch SKU-Änderungen während Staging-Rollbacks verursacht werden.
 1. **ACSD-69541**: Es wurde ein Problem behoben, durch das bei einer Reduzierung der Produktmenge im Admin-Bereich auf einen Wert, der bereits im Warenkorb vorhanden ist, die Produktmenge in diesem Warenkorb nicht über GraphQL bearbeitet werden konnte.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
