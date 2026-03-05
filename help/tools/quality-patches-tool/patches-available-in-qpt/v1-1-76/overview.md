@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 65e615d2f679e88d51093a8ea28007dfe418d385
+source-git-commit: 3196580876eaa90e79d98f0cd14cbccc841d0524
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -21,7 +21,7 @@ QPT v1.1.76 enthält die folgenden Patches:
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: Es wird ein Problem behoben, bei dem durch die Platzierung einer Bestellung für ein verhandelbares Angebot fälschlicherweise zusätzliche Warenkorbzeilen zum Angebot hinzugefügt oder zusammengeführt werden. Produkte werden jetzt korrekt zum Warenkorb hinzugefügt, nachdem der letzte Schritt des verhandelbaren Angebots-Checkouts verlassen wurde.
 1. **ACSD-69086**: Es wurde ein Problem behoben, bei dem der Cron-Auftrag die Changelog-Tabellen nicht löschen konnte, was bei der Verarbeitung großer Datenmengen zu [!DNL Galera Cluster] Abstürzen führte.
 1. **ACSD-69115**: Es wurde ein Problem behoben, bei dem Warenkorbfehler dem Admin-Benutzer beim Verwalten des Warenkorbs für einen Kunden, der einer nicht standardmäßigen Website zugewiesen war, nicht angezeigt wurden.
-1. **ACSD-69129**: Es wurde ein Problem behoben, bei dem das Löschen der standardmäßigen Basis-Website und die Verwendung der sekundären Website als Standard zu einem Fehler führte, wenn versucht wurde, den Stufenpreis für die sekundäre Website über die [!DNL REST]-API zu aktualisieren.
+1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: Es wurde ein Problem behoben, bei dem das Löschen der standardmäßigen Basis-Website und die Verwendung der sekundären Website als Standard zu einem Fehler führte, wenn versucht wurde, den Stufenpreis für die sekundäre Website über die [!DNL REST]-API zu aktualisieren.
 1. **ACSD-69203**: Es wird ein Problem behoben, bei dem das **[!UICONTROL Products List]**-Widget falsche Ergebnisse zurückgibt, wenn mehrere Kategorien in der Kategoriebedingung aufgelistet wurden.
 1. **ACSD-69261**: Es wurde ein Problem behoben, bei dem ein Warenkorb-Preisregelcoupon, der für den einmaligen Gebrauch pro Kunde konfiguriert war, mehrmals wiederverwendet wurde, da das `times_used`-Attribut in Teilrechnungs- und Restmengen-Stornierungsszenarien falsch verarbeitet wurde.
 1. **ACSD-69308**: Es wurde ein Problem behoben, bei dem Katalogpreisregeln nicht anwendbar waren, wenn `special_price` nur auf Website-Ebene festgelegt wurde (nicht auf **[!UICONTROL All Store Views]**). Nach der Fehlerbehebung gelten die Katalogpreisregeln korrekt, indem zunächst der Standardspeicher der Website überprüft wird.
