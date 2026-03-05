@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: da3647e87926e35309a138a9d9aff4dbf44a5334
+source-git-commit: 0e76a5bbc2d44dc8c7d77cb764e9376e5c4aa69f
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.77 enthält die folgenden Patches:
 1. **ACSD-68537**: Die Checkout-Leistung verschlechtert sich mit vielen Kundensegmenten.
 1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: Die Vorschau des geplanten Updates enthält Fehler bei benutzerdefinierten Store-Domains.
 1. **ACSD-68759**: Fehler bei der Erstellung des Kundenkontos im arabischen Gebietsschema, wenn das Geburtsdatum angezeigt wird.
-1. **ACSD-68892**: Inkonsistentes [!DNL Fastly]-Caching für zwischenspeicherbare Seiten.
+1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Behebt ein inkonsistentes [!DNL Fastly]-Caching-Verhalten für zwischenspeicherbare Seiten.
 1. **ACSD-69016**: Sonderpreise gelten nicht für Websites mit unterschiedlichen Zeitzonen.
 1. **ACSD-69020**: Konfigurierbare Produkte werden in [!UICONTROL Page Builder] Karussells angezeigt, wenn untergeordnete Produkte mit Filtern übereinstimmen.
 1. **ACSD-69237**: `sales_*_async_insert` Cron-Aufträge verarbeiten nur 100 Einträge pro Durchgang.
