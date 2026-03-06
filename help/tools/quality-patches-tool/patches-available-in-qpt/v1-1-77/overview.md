@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0e76a5bbc2d44dc8c7d77cb764e9376e5c4aa69f
+source-git-commit: 7dd35627836160bf1e892ea920a21ddd107642ad
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ QPT v1.1.77 enthält die folgenden Patches:
 1. **ACSD-68759**: Fehler bei der Erstellung des Kundenkontos im arabischen Gebietsschema, wenn das Geburtsdatum angezeigt wird.
 1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: Behebt ein inkonsistentes [!DNL Fastly]-Caching-Verhalten für zwischenspeicherbare Seiten.
 1. **ACSD-69016**: Sonderpreise gelten nicht für Websites mit unterschiedlichen Zeitzonen.
-1. **ACSD-69020**: Konfigurierbare Produkte werden in [!UICONTROL Page Builder] Karussells angezeigt, wenn untergeordnete Produkte mit Filtern übereinstimmen.
+1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: Es wird ein Problem behoben, bei dem konfigurierbare Produkte in [!DNL Page Builder] Produktkarussells angezeigt werden, wenn die untergeordneten Produkte den Filterbedingungen entsprechen.
 1. **ACSD-69237**: `sales_*_async_insert` Cron-Aufträge verarbeiten nur 100 Einträge pro Durchgang.
 1. **ACSD-69311**: Korrigiert die falsche Steuerberechnung in Gutschriften nach Teilrückerstattungen von Rechnungen.
 1. **ACSD-69351**: Guthaben und Ablaufdaten der Geschenkkarten werden auf falschen Websites angezeigt.
