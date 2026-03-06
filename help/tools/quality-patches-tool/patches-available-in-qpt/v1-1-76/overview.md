@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 59ae7d5e05395f123ad139bea4e022b26d310f1f
+source-git-commit: 9d24eeeeedc02e2e086560b5f18baa4a1a61b972
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ QPT v1.1.76 enthält die folgenden Patches:
 1. **ACSD-69319**: Es wurde ein Problem behoben, bei dem Bundle-Preise nicht richtig indiziert wurden, wenn untergeordnete Produkte unter benutzerdefinierten Quellen vorrätig waren.
 1. **[ACSD-69325](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)**: Es wurde ein Problem behoben, durch das beim Ändern des SKU-Falls das Produkt in der Storefront nicht vorrätig angezeigt wird.
 1. **ACSD-69331**: Es wurde ein Problem behoben, bei dem Ersteller von Inhalten in der Mediensammlung keine Ordner mit nur der Berechtigung `create_folder` erstellen konnten. Nach der Behebung können sie wie erwartet Ordner erstellen.
+1. **[ACSD-69541](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)**: Es wurde ein Problem behoben, bei dem die Möglichkeit, die Produktmenge in dem Warenkorb über GraphQL zu bearbeiten, durch Reduzieren der Produktmenge im [!UICONTROL Admin] auf eine geringere als die vorherige Menge in einem Warenkorb unterbrochen wurde.
 1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: Es wurde ein Problem behoben, bei dem SKU-Änderungen für Produkte mit einer aktiven geplanten Aktualisierung zulässig waren. Nach der Behebung werden SKU-Änderungen während aktiver Aktualisierungen verboten. Das Speichern schlägt mit einem eindeutigen Fehler fehl und das Feld „Admin SKU“ ist deaktiviert. Dadurch werden MSI-Inventarinkonsistenzen verhindert, die durch SKU-Änderungen während Staging-Rollbacks verursacht werden.
-1. **ACSD-69541**: Es wurde ein Problem behoben, durch das bei einer Reduzierung der Produktmenge im Admin-Bereich auf einen Wert, der bereits im Warenkorb vorhanden ist, die Produktmenge in diesem Warenkorb nicht über GraphQL bearbeitet werden konnte.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
