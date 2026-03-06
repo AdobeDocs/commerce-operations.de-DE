@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3196580876eaa90e79d98f0cd14cbccc841d0524
+source-git-commit: 59ae7d5e05395f123ad139bea4e022b26d310f1f
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.76 enthält die folgenden Patches:
 1. **ACSD-69261**: Es wurde ein Problem behoben, bei dem ein Warenkorb-Preisregelcoupon, der für den einmaligen Gebrauch pro Kunde konfiguriert war, mehrmals wiederverwendet wurde, da das `times_used`-Attribut in Teilrechnungs- und Restmengen-Stornierungsszenarien falsch verarbeitet wurde.
 1. **ACSD-69308**: Es wurde ein Problem behoben, bei dem Katalogpreisregeln nicht anwendbar waren, wenn `special_price` nur auf Website-Ebene festgelegt wurde (nicht auf **[!UICONTROL All Store Views]**). Nach der Fehlerbehebung gelten die Katalogpreisregeln korrekt, indem zunächst der Standardspeicher der Website überprüft wird.
 1. **ACSD-69319**: Es wurde ein Problem behoben, bei dem Bundle-Preise nicht richtig indiziert wurden, wenn untergeordnete Produkte unter benutzerdefinierten Quellen vorrätig waren.
-1. **ACSD-69325**: Es wurde ein Problem behoben, durch das beim Ändern des SKU-Falls das Produkt in der Storefront nicht vorrätig angezeigt wird.
+1. **[ACSD-69325](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)**: Es wurde ein Problem behoben, durch das beim Ändern des SKU-Falls das Produkt in der Storefront nicht vorrätig angezeigt wird.
 1. **ACSD-69331**: Es wurde ein Problem behoben, bei dem Ersteller von Inhalten in der Mediensammlung keine Ordner mit nur der Berechtigung `create_folder` erstellen konnten. Nach der Behebung können sie wie erwartet Ordner erstellen.
 1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: Es wurde ein Problem behoben, bei dem SKU-Änderungen für Produkte mit einer aktiven geplanten Aktualisierung zulässig waren. Nach der Behebung werden SKU-Änderungen während aktiver Aktualisierungen verboten. Das Speichern schlägt mit einem eindeutigen Fehler fehl und das Feld „Admin SKU“ ist deaktiviert. Dadurch werden MSI-Inventarinkonsistenzen verhindert, die durch SKU-Änderungen während Staging-Rollbacks verursacht werden.
 1. **ACSD-69541**: Es wurde ein Problem behoben, durch das bei einer Reduzierung der Produktmenge im Admin-Bereich auf einen Wert, der bereits im Warenkorb vorhanden ist, die Produktmenge in diesem Warenkorb nicht über GraphQL bearbeitet werden konnte.
