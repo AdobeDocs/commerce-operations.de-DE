@@ -2,9 +2,11 @@
 title: Beta-Versionen
 description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und wie Sie teilnehmen können.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c5d43d79679a1036f207313464f2a43bc197a3b5
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
+badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
+source-git-commit: 6024fafd5cbe04455f29c4f5ae74fb4d7eda20d7
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -18,7 +20,8 @@ Adobe Commerce-Beta-Programme bieten Händlern die Möglichkeit, auf Vorabversio
 
 >[!IMPORTANT]
 >
->Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewährleistung jeglicher Art bereitgestellt. Adobe ist nicht verpflichtet, die Beta-Versionen zu pflegen, zu korrigieren, zu aktualisieren, zu ändern oder anderweitig zu unterstützen (über Adobe Support Services oder anderweitig). Kunden wird empfohlen, Vorsicht walten zu lassen und sich nicht auf die korrekte Funktionsweise oder Leistung der Beta-Versionen und/oder der zugehörigen Dokumentation oder Materialien zu verlassen. Funktionen und APIs in der Beta-Version können ohne Vorankündigung geändert werden. Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
+>**Haftungsausschluss**<br/>
+>Beta-Versionen enthalten Vorabversionsfunktionen und -code, der möglicherweise Mängel enthält und ohne Mängelgewähr und ohne Gewährleistung jeglicher Art bereitgestellt wird. Adobe hat das alleinige Ermessen, Beta-Versionen allgemein verfügbar zu machen. Adobe ist nicht verpflichtet, diese Beta-Versionen bis zu einem bestimmten Datum zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu unterstützen (über Adobe Support Services oder anderweitig) oder bereitzustellen. Sollte eine Beta-Version allgemein verfügbar werden, kann sie zusätzlichen Bedingungen unterliegen, einschließlich anwendbarer Gebühren. Beta-Versionen können ohne Vorankündigung geändert werden, einschließlich der Einstellung. Kunden wird empfohlen, Vorsicht walten zu lassen und sich nicht auf die unterbrechungsfreie oder fehlerfreie Funktion oder Leistung der Beta-Versionen zu verlassen.  Jede Nutzung der Beta-Versionen erfolgt daher ausschließlich auf eigene Gefahr des Kunden.
 
 ## Vorteile der Teilnahme
 
@@ -28,11 +31,59 @@ Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, erh
 
 In den folgenden Abschnitten finden Sie eine Liste der aktiven Beta-Programme.
 
+### Merchandising-Regeln global und pro Katalogansicht (öffentliche Beta)
+
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+
+Adobe Commerce Optimizer bietet die Möglichkeit, Merchandising-Regeln mit flexiblem Umfang zu definieren, sodass Händler Regeln entweder für alle Katalogansichten oder für eine bestimmte Katalogansicht anwenden können. Diese Funktion vereinfacht die Verwaltung von Merchandising-Regeln für Händler, die mehrere Storefronts, Marken oder Sprachen betreiben. Katalogansicht-spezifische Regeln ermöglichen es Händlern, Suchergebnisse und Merchandising-Logik für einzelne Kanäle anzupassen, wenn sie lokalisierte oder markenspezifische Erlebnisse benötigen. Wenn katalogansichtsspezifische Regeln vorhanden sind, überschreiben sie die globale Regel für diese Ansicht, bieten eine präzise Kontrolle bei gleichzeitiger Aufrechterhaltung einer effizienten Konfigurationsverwaltung.
+
+**Die wichtigsten Vorteile**
+
+- Definieren Sie Merchandising-Regeln global für alle Katalogansichten.
+- Überschreiben von Regeln für bestimmte Katalogansichten, wenn lokalisierte Erlebnisse erforderlich sind.
+- Verringern Sie die Konfigurationsduplizierung in Storefronts.
+- Verbesserte Skalierbarkeit für Commerce-Implementierungen mit mehreren Marken und mehreren Sprachen.
+
+Diese Funktion verbessert die Flexibilität beim Merchandising und die betriebliche Effizienz, sodass Händler relevantere Produkterlebnisse in großem Umfang bereitstellen können. Weitere Informationen finden Sie unter [Merchandising-Regeln](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+
+>[!NOTE]
+>
+>Beta-Teilnehmer müssen alle vorhandenen Merchandising-Regeln neu erstellen, um den neuen Umfang der Katalogansicht nutzen zu können.
+
+Um Ihr Feedback bei der Verwendung dieser Beta-Funktion zu geben, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
+### Produktempfehlungen global und pro Katalogansicht (öffentliche Beta)
+
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+
+Adobe Commerce Optimizer bietet eine verbesserte Kontrolle über die Konfiguration von Produktempfehlungen, sodass Händler Empfehlungseinheiten entweder global für alle Katalogansichten oder speziell für einzelne Katalogansichten definieren können.
+
+Diese Funktion vereinfacht die Empfehlungsverwaltung für Unternehmen, die mehrere Storefronts, Marken, Regionen oder Sprachen betreiben. Händler können eine Empfehlungseinheit einmal global erstellen. Diese wird für alle Katalogansichten gelten, wodurch konsistente Produkterkennungsstrategien über alle Kanäle hinweg sichergestellt werden. Gleichzeitig ermöglichen es Katalogansichts-spezifische Empfehlungseinheiten Händlern, Erlebnisse bei Bedarf für bestimmte Storefronts anzupassen.
+
+Interaktionsereignisse und Empfehlungsmetriken für Storefronts werden auf Katalogansichtsebene verfolgt, was genauere Einblicke in das Käuferverhalten in verschiedenen Storefronts bietet.
+
+**Die wichtigsten Vorteile**
+
+- Konfigurieren Sie Produktempfehlungseinheiten global für alle Katalogansichten.
+- Erstellen Sie katalogansichtsspezifische Empfehlungen für lokalisierte Storefront-Erlebnisse.
+- Reduzierung doppelter Konfigurationen für Storefronts mit mehreren Marken oder mehreren Sprachen.
+- Genauere Einblicke mit Metriken und Ereignissen, die von der Katalogansicht verfolgt werden.
+
+Diese Verbesserung hilft Händlern, relevantere Produkterkennungserlebnisse bereitzustellen und vereinfacht gleichzeitig das Management von Recommendations in komplexen Commerce-Umgebungen. Weitere Informationen finden Sie unter [Recommendations](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/recommendation-performance)
+
+>[!NOTE]
+>
+>Beta-Teilnehmer müssen alle vorhandenen Empfehlungseinheiten neu erstellen, um den neuen Katalogansichtsumfang nutzen zu können.
+
+Um Ihr Feedback bei der Verwendung dieser Beta-Funktion zu geben, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
 ### Datenbankspeicher für App Builder (Public Beta)
 
 [Datenbankspeicher für App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) ist ein neuer verwalteter, dokumentartiger Datenspeicher, der in Adobe Developer App Builder integriert ist und Ihren Commerce-Apps persistenten, abfragbaren Speicher für strukturierte JSON-Daten bietet. Alle Kunden mit einer App Builder-Lizenz können diese Funktion bereitstellen.
 
-### Semantische Suche: Intelligentere, kontextbezogene Einkaufserlebnisse (private Beta)
+### Semantische Suche: Intelligentere, kontextbezogene Einkaufserlebnisse (Private Beta)
+
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
 
 Die semantische Suche ist eine E-Commerce-Suchtechnologie, die die *Bedeutung* hinter der Abfrage eines Käufers versteht, nicht nur die genauen Wörter. Im Gegensatz zur herkömmlichen schlüsselwortbasierten Suche, die häufig fehlschlägt, wenn Abfragen unbekannte oder falsch geschriebene Begriffe enthalten, interpretiert dieser KI-gestützte Ansatz die Absicht mithilfe der Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) und des Kontexts, um relevantere Ergebnisse zu liefern.
 
@@ -47,9 +98,11 @@ Um eine Einladung zum Beta-Programm anzufordern, senden Sie eine E-Mail an [comm
 
 ### Cloud Automation Patching Service (Private Beta)
 
-Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
-Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
+Der [Cloud Automation Patching Service](../tools/caps-tool/intro.md) automatisiert das Anwenden isolierter Sicherheits-Patches auf Ihre [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)-Umgebungen.
+
+Im Oktober 2025 wird die Beta-Version des Cloud Automation Patching Service zum Dashboard des [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard) hinzugefügt. Dieser Service unterstützt Commerce-Projektadministratoren mit einem optimierten Patch-Workflow, der Folgendes umfasst:
 
 - Automatisierte Patch-Installation
 - Rollback-Wiederherstellung
@@ -64,22 +117,13 @@ Die Beta-Version umfasst die folgenden Funktionen:
 
 >[!NOTE]
 >
->Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [&#x200B; Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
+>Da der Cloud Automation-Patching-Service isolierte Sicherheits-Patches automatisch anwendet, benötigen Sie [ Rolle „Mitwirkender“ oder &quot;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access)&quot;, um sie verwenden zu können.
 
 Um an dieser Beta-Version teilzunehmen, füllen Sie das Anmeldeformular [Cloud Automation Patching Service - Beta aus](https://forms.office.com/r/3Wfxj5nPdB) aus.
 
-### IBM Sterling Order Management-Systemintegration (Private Beta)
-
-Mit diesem Integrationsbeschleuniger für IBM Sterling Order Management können Adobe Commerce-Kunden mit erweiterten Bestellverwaltungsfunktionen beginnen, die auf IBM Sterling OMS basieren. Mit dieser Integration erhalten Händler:
-
-- Echtzeit-Einblick in die Lagerbestände und genaue Liefertermine für Ihre Kunden.
-- Automatisierte Beschaffung für Bestellungen auf der Grundlage konfigurierbarer Regeln, sodass Sie Ihr Fulfillment-Netzwerk und Ihren Bestand optimieren können.
-- Eine einheitliche Ansicht von Bestellungen über verschiedene Kanäle hinweg von einem einzigen Dashboard aus, sodass Ihre Support-Teams außergewöhnlichen Service bieten und Ausnahmen schnell identifizieren und behandeln können.
-- Ein vorlagenbasierter Fluss für die Rückgabe-Verwaltung zur Vereinfachung der Rückgabe-Verwaltung.
-
-Um an dieser Beta teilzunehmen, senden Sie eine E-Mail-Anfrage an [sbieber@adobe.com](mailto:sbieber@adobe.com).
-
 ### Adobe Commerce Foundation (Public Alpha/Beta)
+
+[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
 
 Jede Adobe Commerce Foundation-Alpha- und -Beta-Version enthält alle Änderungen, die bis zum geplanten Veröffentlichungsdatum an Adobe Commerce Core Code bereitgestellt wurden, einschließlich, aber nicht beschränkt auf die folgenden Funktionsbereiche:
 
@@ -88,7 +132,7 @@ Jede Adobe Commerce Foundation-Alpha- und -Beta-Version enthält alle Änderunge
 - GraphQL-Verbesserungen
 - Allgemeine Qualitätsfehler-Fehlerbehebungen
 - Gemeinschaftsbeiträge
-- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/de/docs/commerce/user-guides/home)
+- Zur Unterstützung der Kompatibilität mit [Adobe Commerce-Services erforderliche Änderungen](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Namenskonvention und -zeitplan
 
@@ -108,7 +152,7 @@ Siehe [Veröffentlichungszeitplan](schedule.md) für die Liste der kommenden öf
 
 #### Freigabezugang
 
-Adobe Commerce Alpha- und Beta-Versionen werden auf die gleiche Weise wie alle anderen Adobe Commerce Patch-Versionen verteilt: als Composer-Metapakete auf `https://repo.magento.com`. Der Quell-Code ist auf &quot;[&quot; &#x200B;](https://github.com/magento/magento2).
+Adobe Commerce Alpha- und Beta-Versionen werden auf die gleiche Weise wie alle anderen Adobe Commerce Patch-Versionen verteilt: als Composer-Metapakete auf `https://repo.magento.com`. Der Quell-Code ist auf &quot;[&quot; ](https://github.com/magento/magento2).
 
 Siehe [Schnellstart für die Composer-Installation](../installation/composer.md) für weitere Details.
 
