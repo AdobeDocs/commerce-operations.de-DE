@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Die Katalogpreisregeln galten nicht, wenn die <code class="language-plaintext highlighter-rouge">special_price</code> nur auf Website-Ebene festgelegt wurde (nicht bei „Alle Store-Ansichten„). Nach der Fehlerbehebung gelten die Katalogpreisregeln korrekt, indem zunächst der Standardspeicher der Website überprüft </a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Die Katalogpreisregeln galten nicht, wenn die <code class="language-plaintext highlighter-rouge">special_price</code> nur auf Website-Ebene festgelegt wurde (nicht bei „Alle Store-Ansichten„). Nach der Fehlerbehebung gelten die Katalogpreisregeln korrekt, indem zunächst der Standardspeicher der Website überprüft </a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -31,7 +31,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.76 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541 wurde hinzugefügt: Durch Reduzieren der Produktmenge im Admin-Bereich auf einen Wert, der unter dem bereits in einem Warenkorb enthaltenen Wert liegt, wurde die Bearbeitung der Produktmenge in diesem Warenkorb über GraphQL</a> unmöglich.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.76 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541 wurde hinzugefügt: Durch Reduzieren der Produktmenge im Admin-Bereich auf einen Wert, der unter dem bereits in einem Warenkorb enthaltenen Wert liegt, wurde die Bearbeitung der Produktmenge in diesem Warenkorb über GraphQL</a> unmöglich.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -39,7 +39,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: Konfigurierbare Produkte werden in Page Builder-Karussells angezeigt, wenn untergeordnete Produkte mit Filtern übereinstimmen</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: Konfigurierbare Produkte werden in Page Builder-Karussells angezeigt, wenn untergeordnete Produkte mit Filtern übereinstimmen</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
