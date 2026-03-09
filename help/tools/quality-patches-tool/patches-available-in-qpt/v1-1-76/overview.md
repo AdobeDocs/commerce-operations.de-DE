@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b73f6e893a2d68029237407fa525e4d001960e9
+source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.76 verfügbaren Patches behoben wurden.
 
 QPT v1.1.76 enthält die folgenden Patches:
-1. **ACSD-67091**: Behebt den Fehler bei der maximalen Writeset-Größe, um die Bereinigung des Produktindexes der Katalogregel sicherzustellen, indem zwei Löschstrategien basierend auf dem Datenvolumen implementiert werden.
+1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)**: Behebt den Fehler bei der maximalen Writeset-Größe, um die Bereinigung des Produktindexes der Katalogregel sicherzustellen, indem zwei Löschstrategien basierend auf dem Datenvolumen implementiert werden.
 1. **ACSD-67370**: Behebt mehrere Probleme, bei denen falsche Preise für Bundle-Produkte auf PDP/PLP und der Warenkorbseite für Geschäfte mit mehreren Währungen angezeigt wurden.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: Es wird ein Problem behoben, bei dem durch die Platzierung einer Bestellung für ein verhandelbares Angebot fälschlicherweise zusätzliche Warenkorbzeilen zum Angebot hinzugefügt oder zusammengeführt werden. Produkte werden jetzt korrekt zum Warenkorb hinzugefügt, nachdem der letzte Schritt des verhandelbaren Angebots-Checkouts verlassen wurde.
 1. **ACSD-69086**: Es wurde ein Problem behoben, bei dem der Cron-Auftrag die Changelog-Tabellen nicht löschen konnte, was bei der Verarbeitung großer Datenmengen zu [!DNL Galera Cluster] Abstürzen führte.
