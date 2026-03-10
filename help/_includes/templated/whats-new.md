@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8da93e06da766532d496b6c288fa4724834c5051
+source-git-commit: d2475c7be287844dc2703cbb347bd347582ff377
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Die Katalogpreisregeln galten nicht, wenn die <code class="language-plaintext highlighter-rouge">special_price</code> nur auf Website-Ebene festgelegt wurde (nicht bei „Alle Store-Ansichten„). Nach der Fehlerbehebung gelten die Katalogpreisregeln korrekt, indem zunächst der Standardspeicher der Website überprüft </a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Die Katalogpreisregeln galten nicht, wenn die <code class="language-plaintext highlighter-rouge">special_price</code> nur auf Website-Ebene festgelegt wurde (nicht bei „Alle Store-Ansichten„). Nach der Fehlerbehebung gelten die Katalogpreisregeln korrekt, indem zunächst der Standardspeicher der Website überprüft </a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -31,7 +31,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.76 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541 wurde hinzugefügt: Durch Reduzieren der Produktmenge im Admin-Bereich auf einen Wert, der unter dem bereits in einem Warenkorb enthaltenen Wert liegt, wurde die Bearbeitung der Produktmenge in diesem Warenkorb über GraphQL</a> unmöglich.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.76 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541 wurde hinzugefügt: Durch Reduzieren der Produktmenge im Admin-Bereich auf einen Wert, der unter dem bereits in einem Warenkorb enthaltenen Wert liegt, wurde die Bearbeitung der Produktmenge in diesem Warenkorb über GraphQL</a> unmöglich.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -39,7 +39,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: Konfigurierbare Produkte werden in Page Builder-Karussells angezeigt, wenn untergeordnete Produkte mit Filtern übereinstimmen</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: Konfigurierbare Produkte werden in Page Builder-Karussells angezeigt, wenn untergeordnete Produkte mit Filtern übereinstimmen</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -47,7 +47,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5ce526100a22243b91f75b8a52690e529b64b152">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.76 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325">ACSD-69325: Durch Änderung des SKU-Falls erschien das Produkt auf der Storefront nicht mehr vorrätig</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.76 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325">ACSD-69325: Durch Änderung des SKU-Falls erschien das Produkt auf der Storefront nicht mehr vorrätig</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -55,7 +55,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bceda2e729082e0dc81f7eb81838ca5c5049342d">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p><a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta">Beta-Versionen wurden </a> zwei neue öffentliche Beta-Programme aktualisiert: Merchandising-Regeln global und pro Katalogansicht sowie Produktempfehlungen global und pro Katalogansicht.</p>
+      <td><p><a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">Beta-Versionen wurden </a> zwei neue öffentliche Beta-Programme aktualisiert: Merchandising-Regeln global und pro Katalogansicht sowie Produktempfehlungen global und pro Katalogansicht.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -77,7 +77,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129">ACSD-69129: Die Aktualisierung der REST-API-Stufe schlägt fehl, nachdem die Standard-Basis-Website gelöscht und die sekundäre Website als Standard verwendet wurde</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129">ACSD-69129: Die Aktualisierung der REST-API-Stufe schlägt fehl, nachdem die Standard-Basis-Website gelöscht und die sekundäre Website als Standard verwendet wurde</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -85,7 +85,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/06d33e9ed08e079365ac6ae6087e4bdf30bbf45e">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410">ACSD-68410: Der verhandelbare Devis-Checkout enthält unbeabsichtigte Artikel im Warenkorb</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410">ACSD-68410: Der verhandelbare Devis-Checkout enthält unbeabsichtigte Artikel im Warenkorb</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -93,7 +93,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/123a0b7c2335fd27d6c8fabbb8a6520af2ac0c76">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 für hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892">ACSD-68892: Inconsistent Fastly Caching Behavior for Caching-able Pages</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 für hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892">ACSD-68892: Inconsistent Fastly Caching Behavior for Caching-able Pages</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -115,7 +115,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.77-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687">ACSD-63687: Aufgrund von Problemen bei der Redis-Cache-Bereinigung werden falsche Preise angezeigt</a> wurde hinzugefügt.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.77-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-63687">ACSD-63687: Aufgrund von Problemen bei der Redis-Cache-Bereinigung werden falsche Preise angezeigt</a> wurde hinzugefügt.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -123,7 +123,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8a9b37a61119e7604461c83f135a282b15a93ef">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664">ACSD-68664: Die Vorschau für geplante Updates enthält Fehler in benutzerdefinierten Store-Domains</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664">ACSD-68664: Die Vorschau für geplante Updates enthält Fehler in benutzerdefinierten Store-Domains</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -145,7 +145,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333">ACSD-69333: SKU-Änderungen sind für Produkte mit einer aktiven geplanten Aktualisierung zulässig</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333">ACSD-69333: SKU-Änderungen sind für Produkte mit einer aktiven geplanten Aktualisierung zulässig</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -167,7 +167,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für das QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311">ACSD-69311: Falsche Steuerberechnung in Gutschriften nach Teilerstattungen aus Rechnungen</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für das QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311">ACSD-69311: Falsche Steuerberechnung in Gutschriften nach Teilerstattungen aus Rechnungen</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -175,7 +175,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c6d81e7aeb4e2b4d2d5a140e9bf7b8c8ba5f5deb">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494: Async-Erstattungsanfragen mit is_online führen keinen Trigger für Online-Erstattungen durch</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.77 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494">ACSD-69494: Async-Erstattungsanfragen mit is_online führen keinen Trigger für Online-Erstattungen durch</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -183,7 +183,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29a5f90122336bde78ed00e778b43b7c56549eef">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.77-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537: Die Checkout-Leistung verschlechtert sich mit vielen Kundensegmenten</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.77-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537">ACSD-68537: Die Checkout-Leistung verschlechtert sich mit vielen Kundensegmenten</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -205,7 +205,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.77-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341">ACSD-68341: Beim Laden von PDP werden mehrere X-Magento-Vary-Cookie-Aktualisierungen </a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.77-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341">ACSD-68341: Beim Laden von PDP werden mehrere X-Magento-Vary-Cookie-Aktualisierungen </a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -227,7 +227,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview">Übersicht: Quality Patches Tool (QPT) v1.1.77</a>.</p>
+      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/overview">Übersicht: Quality Patches Tool (QPT) v1.1.77</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -249,7 +249,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68359">ACSD-68359: Fehlerbehebungen 414 bei der Auswahl von Pick-in-Store mit großen Warenkörben</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68359">ACSD-68359: Fehlerbehebungen 414 bei der Auswahl von Pick-in-Store mit großen Warenkörben</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -271,7 +271,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: Behebt einen Fehler bei der erneuten Übermittlung von Formularen auf Katalog- und Katalogsuchseiten</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68517">ACSD-68517: Behebt einen Fehler bei der erneuten Übermittlung von Formularen auf Katalog- und Katalogsuchseiten</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -293,7 +293,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Der <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule">Patch-Veröffentlichungszeitplan“ wurde aktualisiert</a> um die aktuellen Veröffentlichungsrichtlinien und den Zeitplan klarzustellen.</p>
+      <td><p>Der <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">Patch-Veröffentlichungszeitplan“ wurde aktualisiert</a> um die aktuellen Veröffentlichungsrichtlinien und den Zeitplan klarzustellen.</p>
 </td>
       <td>
         Technisches Feedback
@@ -301,7 +301,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8ee6404271170b19ff27a3ab64711061505494b3">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Übersicht: Quality Patches Tool (QPT) v1.1.76</a>.</p>
+      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview">Übersicht: Quality Patches Tool (QPT) v1.1.76</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -323,7 +323,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68573">ACSD-68573: Kategorieberechtigungen wurden nicht ordnungsgemäß auf Elemente der Kunden-Wunschliste angewendet. Nach der Fehlerbehebung werden Wunschlistenelemente im Web und in GraphQL ordnungsgemäß angezeigt und paginiert</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68573">ACSD-68573: Kategorieberechtigungen wurden nicht ordnungsgemäß auf Elemente der Kunden-Wunschliste angewendet. Nach der Fehlerbehebung werden Wunschlistenelemente im Web und in GraphQL ordnungsgemäß angezeigt und paginiert</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -331,7 +331,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/19e5faea683395375efefe6fc57e0897392ef354">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68793">ACSD-68793: Gültige Produkte wurden fälschlicherweise zurückgewiesen, wenn sie einem freigegebenen Katalog zugewiesen wurden</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68793">ACSD-68793: Gültige Produkte wurden fälschlicherweise zurückgewiesen, wenn sie einem freigegebenen Katalog zugewiesen wurden</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -353,7 +353,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68925">ACSD-68925: Die Antworten für GraphQL-Anfragen sind jetzt mit den Spezifikationen für GraphQL über HTTP abgestimmt. Ein 4XX-Antwort-Code wird zurückgegeben, wenn die Anfrage nicht geparst werden kann, nicht autorisiert ist oder auf ein allgemeines Problem stößt. Wenn die Anfrage analysiert wird</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68925">ACSD-68925: Die Antworten für GraphQL-Anfragen sind jetzt mit den Spezifikationen für GraphQL über HTTP abgestimmt. Ein 4XX-Antwort-Code wird zurückgegeben, wenn die Anfrage nicht geparst werden kann, nicht autorisiert ist oder auf ein allgemeines Problem stößt. Wenn die Anfrage analysiert wird</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -361,7 +361,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/210a5038743bec986807d7dff5db31d74670461e">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289">ACSD-68289 hinzugefügt: Die Volltextsuche gibt jetzt übereinstimmende Produkte zurück, wenn die Mindestbedingung für die Übereinstimmung für alle durchsuchbaren Felder gemeinsam erfüllt ist, anstatt dass die Bedingung von einem einzelnen Feld erfüllt werden muss</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.75 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289">ACSD-68289 hinzugefügt: Die Volltextsuche gibt jetzt übereinstimmende Produkte zurück, wenn die Mindestbedingung für die Übereinstimmung für alle durchsuchbaren Felder gemeinsam erfüllt ist, anstatt dass die Bedingung von einem einzelnen Feld erfüllt werden muss</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -383,7 +383,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451">ACSD-68451 hinzugefügt: Es wird ein Problem für mehrere Websites behoben, bei denen sich ein Unternehmensadministrator auf einer Website anmeldet, ein nicht verbundenes Unternehmen auf einer anderen Website erstellt, aber fälschlicherweise mit diesem nicht verbundenen Unternehmen verknüpft ist</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68451">ACSD-68451 hinzugefügt: Es wird ein Problem für mehrere Websites behoben, bei denen sich ein Unternehmensadministrator auf einer Website anmeldet, ein nicht verbundenes Unternehmen auf einer anderen Website erstellt, aber fälschlicherweise mit diesem nicht verbundenen Unternehmen verknüpft ist</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -391,7 +391,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/74e1ed73b9574903f12fa27c2f1198a823c80651">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde Datenbankspeicher für App Builder (Public Beta) zu <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta">Beta-Versionen hinzugefügt</a>.</p>
+      <td><p>Es wurde Datenbankspeicher für App Builder (Public Beta) zu <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta">Beta-Versionen hinzugefügt</a>.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -413,7 +413,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615: Die CLI für die Ausgleichszahlung für Lagerreservierungen zeigte eine Ausnahme an, wenn die verarbeitete Kombination eine fehlende Auftrags-ID hatte</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.75 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615: Die CLI für die Ausgleichszahlung für Lagerreservierungen zeigte eine Ausnahme an, wenn die verarbeitete Kombination eine fehlende Auftrags-ID hatte</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -421,7 +421,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c73feb1bb1d8e11220482f5ea51fa4427ecee201">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.75-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490">ACSD-68490 wurde hinzugefügt: Die Schaltfläche „Neues Attribut hinzufügen“ ist für einen eingeschränkten Admin-Benutzer während der konfigurierbaren Produkterstellung sichtbar</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.75-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490">ACSD-68490 wurde hinzugefügt: Die Schaltfläche „Neues Attribut hinzufügen“ ist für einen eingeschränkten Admin-Benutzer während der konfigurierbaren Produkterstellung sichtbar</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -443,7 +443,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview">Übersicht: Quality Patches Tool (QPT) v1.1.75</a>.</p>
+      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview">Übersicht: Quality Patches Tool (QPT) v1.1.75</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -465,7 +465,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Der Veröffentlichungszeitplan für den <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule">Commerce-Patch</a> wurde aktualisiert, um die Versionspläne für 2026 widerzuspiegeln.</p>
+      <td><p>Der Veröffentlichungszeitplan für den <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule">Commerce-Patch</a> wurde aktualisiert, um die Versionspläne für 2026 widerzuspiegeln.</p>
 </td>
       <td>
         Technisches Feedback
@@ -495,7 +495,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d45a1ea4357f3f14c5d6133225f0d74dee84c9a9">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Aktualisierte Composer-Abhängigkeit in <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a>:<br />- Für Kernversionen 2.4.4-2.4.6 (Basis und Patches): aktualisiert auf v2.2.26.<br />- Für 2.4.7+ (Basis und Patches, einschließlich 2.4.8 und 2.4.9-Alpha-Versionen): aktualisiert auf v2.9.3.</p>
+      <td><p>Aktualisierte Composer-Abhängigkeit in <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a>:<br />- Für Kernversionen 2.4.4-2.4.6 (Basis und Patches): aktualisiert auf v2.2.26.<br />- Für 2.4.7+ (Basis und Patches, einschließlich 2.4.8 und 2.4.9-Alpha-Versionen): aktualisiert auf v2.9.3.</p>
 </td>
       <td>
         Technisch
@@ -517,7 +517,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-65935-Patch in der Version QPT 1.1.67 behoben wurde</a>.</p>
+      <td><p>Es wurde die <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted">detaillierte Beschreibung des Problems hinzugefügt, das durch den ACSD-65935-Patch in der Version QPT 1.1.67 behoben wurde</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -525,34 +525,12 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8921d17196230f97b6f940621e8236c5d85e1b9f">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.73 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190 hinzugefügt: Rabatte gelten nicht, angewendete Rabatte werden in der Antwort der GraphQL-Warenkorbansicht nicht korrekt angezeigt und Nicht-Couponrabatte werden beim Entfernen eines Couponrabatts entfernt</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.73 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190 hinzugefügt: Rabatte gelten nicht, angewendete Rabatte werden in der Antwort der GraphQL-Warenkorbansicht nicht korrekt angezeigt und Nicht-Couponrabatte werden beim Entfernen eines Couponrabatts entfernt</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/26980e4011b7f6d81b13df75c003019d23af8aab">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;9. Januar 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Composer 2.9 wurde als unterstützte Version für Adobe Commerce 2.4.9, 2.4.8 und 2.4.7 in der Dokumentation <a href="https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de">Systemanforderungen</a> hinzugefügt.</p>
-</td>
-      <td>
-        Technisch
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/018a833063a139a59906630b03d03dd827157bdf">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
