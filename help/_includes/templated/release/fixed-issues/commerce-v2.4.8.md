@@ -1971,7 +1971,7 @@ Das System hält sich jetzt an den Kodierungsstandard, indem es das verbotene `@
 
 _AC-8356 - [GitHub-Problem](https://github.com/magento/magento2/issues/37250) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37000)_
 
-#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[{composer,auth}.json]` unterbrochen.
+#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[&lbrace;composer,auth&rbrace;.json]` unterbrochen.
 
 Nach der Behebung eines Syntaxfehlers in editorconfig wendet das System jetzt einen Einzug mit vier Leerzeichen korrekt auf die Dateien composer und auth.json an. Aufgrund eines Leerzeichens in der EditorConfig-Syntax wurden diese Dateien zuvor falsch mit einem Einzug aus zwei Leerzeichen formatiert.
 
@@ -2127,7 +2127,7 @@ Das Problem wurde behoben, nachdem die Prüfung bei der Anforderung einer Produk
 
 _ACP2E-2653 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### GraphQL-Produktanruf, der den Preisfilter enthält `{from:"0"}` kein Ergebnis zurückgibt
+#### GraphQL-Produktanruf, der den Preisfilter enthält `&lbrace;from:"0"&rbrace;` kein Ergebnis zurückgibt
 
 Zuvor gab GraphQL-Produkte, die mit dem Filter nach Nullpreisen suchten, aufgrund einer ausgelösten Ausnahme überhaupt keine Ergebnisse zurück. Jetzt gibt die Suche die erwarteten Ergebnisse zurück.
 
