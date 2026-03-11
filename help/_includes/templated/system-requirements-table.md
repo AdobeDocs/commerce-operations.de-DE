@@ -1,7 +1,7 @@
 ---
-source-git-commit: f71d6fd6928c8b33fc777b1f3363deb8a5da6660
+source-git-commit: 238721782019cc510f4d9072db405f01bf0f25db
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1638'
 ht-degree: 41%
 
 ---
@@ -2101,7 +2101,7 @@ ht-degree: 41%
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          10,11
+          10,11; 10,6
       </td>
       <td>
           10,6
