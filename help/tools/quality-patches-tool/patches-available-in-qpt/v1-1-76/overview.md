@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f56050886f28692286c42102222dfb580e52aef1
+source-git-commit: d852c8dc40d061b878daf25aac0c7cf57628954c
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ QPT v1.1.76 enthält die folgenden Patches:
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: Es wird ein Problem behoben, bei dem durch die Platzierung einer Bestellung für ein verhandelbares Angebot fälschlicherweise zusätzliche Warenkorbzeilen zum Angebot hinzugefügt oder zusammengeführt werden. Produkte werden jetzt korrekt zum Warenkorb hinzugefügt, nachdem der letzte Schritt des verhandelbaren Angebots-Checkouts verlassen wurde.
 1. **ACSD-69086**: Es wurde ein Problem behoben, bei dem der Cron-Auftrag die Changelog-Tabellen nicht löschen konnte, was bei der Verarbeitung großer Datenmengen zu [!DNL Galera Cluster] Abstürzen führte.
 1. **ACSD-69115**: Es wurde ein Problem behoben, bei dem Warenkorbfehler dem Admin-Benutzer beim Verwalten des Warenkorbs für einen Kunden, der einer nicht standardmäßigen Website zugewiesen war, nicht angezeigt wurden.
+1. **[ACSD-69203](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203.md)**: Es wird ein Problem behoben, bei dem das **[!UICONTROL Products List]**-Widget falsche Ergebnisse zurückgibt, wenn mehrere Kategorien in der Kategoriebedingung aufgelistet wurden.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: Es wurde ein Problem behoben, bei dem das Löschen der standardmäßigen Basis-Website und die Verwendung der sekundären Website als Standard zu einem Fehler führte, wenn versucht wurde, den Stufenpreis für die sekundäre Website über die [!DNL REST]-API zu aktualisieren.
 1. **ACSD-69203**: Es wird ein Problem behoben, bei dem das **[!UICONTROL Products List]**-Widget falsche Ergebnisse zurückgibt, wenn mehrere Kategorien in der Kategoriebedingung aufgelistet wurden.
 1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: Es wurde ein Problem behoben, bei dem ein Warenkorb-Preisregelcoupon, der für den einmaligen Gebrauch pro Kunde konfiguriert war, mehrmals wiederverwendet wurde, da das `times_used`-Attribut in Teilrechnungs- und Restmengen-Stornierungsszenarien falsch verarbeitet wurde.
