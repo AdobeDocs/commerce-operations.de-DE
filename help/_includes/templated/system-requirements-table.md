@@ -1,7 +1,7 @@
 ---
-source-git-commit: 238721782019cc510f4d9072db405f01bf0f25db
+source-git-commit: 4e04522603b7ed03610ee624a8029a0643bf7c17
 workflow-type: tm+mt
-source-wordcount: '1638'
+source-wordcount: '1643'
 ht-degree: 41%
 
 ---
@@ -134,6 +134,24 @@ ht-degree: 41%
       </td>
       <td>
           2.9.3+
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
+      <td>
+          8
+      </td>
+      <td>
+          8
+      </td>
+      <td>
+          8
+      </td>
+      <td>
+          8
+      </td>
+      <td>
+          8,17
       </td>
     </tr>
     <tr>
