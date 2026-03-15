@@ -17,7 +17,7 @@ Es gibt einige Unterschiede in den Abhängigkeiten für Commerce in Cloud Manage
 
 >[!NOTE]
 >
->Die Systemanforderungen gelten nur für freigegebene Versionen von Adobe Commerce. Beta- oder Early-Access-Versionen sind nicht enthalten. Weitere [ zu den neuesten Versionen ](../release/release-notes/overview.md) Adobe Commerce finden Sie in den Versionshinweisen .
+>Die Systemanforderungen gelten nur für freigegebene Versionen von Adobe Commerce. Beta- oder Early-Access-Versionen sind nicht enthalten. Weitere [&#x200B; zu den neuesten Versionen &#x200B;](../release/release-notes/overview.md) Adobe Commerce finden Sie in den Versionshinweisen .
 
 Die folgenden Tabellen zeigen Versionen von Software-Abhängigkeiten von Drittanbietern, die Adobe mit bestimmten Adobe Commerce-Versionen getestet hat.
 
@@ -33,7 +33,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Die Services und Versionen werden in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Im Folgenden finden Sie die standardmäßige Service-Konfiguration für Commerce 2.4.6 in der Cloud-Infrastruktur:
+Die Services und Versionen werden in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). Im Folgenden finden Sie die standardmäßige Service-Konfiguration für Commerce 2.4.6 in der Cloud-Infrastruktur:
 
 ```yaml
 mysql:
