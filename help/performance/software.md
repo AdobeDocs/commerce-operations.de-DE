@@ -114,7 +114,7 @@ Das Hinzufügen weiterer Erweiterungen erhöht die Ladezeiten von Bibliotheken.
 
 >[!INFO]
 >
->`php-mcrypt` wurde aus PHP 7.2 entfernt und durch die [`sodium`-Bibliothek ersetzt](https://www.php.net/manual/en/book.sodium.php). Stellen Sie sicher[ dass ](https://www.php.net/manual/en/sodium.installation.php)Natrium) beim Upgrade von PHP ordnungsgemäß aktiviert ist.
+>`php-mcrypt` wurde aus PHP 7.2 entfernt und durch die [`sodium`-Bibliothek ersetzt](https://www.php.net/manual/en/book.sodium.php). Stellen Sie sicher[&#x200B; dass &#x200B;](https://www.php.net/manual/en/sodium.installation.php)Natrium) beim Upgrade von PHP ordnungsgemäß aktiviert ist.
 
 >[!INFO]
 >

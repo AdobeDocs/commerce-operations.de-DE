@@ -70,7 +70,7 @@ Auf der Registerkarte *Commerce On-Premises* in [Systemanforderungen](../system-
 
 ### MySQL
 
-Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie auf der ** Commerce On-Premise[ in ](../system-requirements.md)Systemanforderungen.
+Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie auf der ** Commerce On-Premise[&#x200B; in &#x200B;](../system-requirements.md)Systemanforderungen.
 
 ```bash
 mysql -u <database root user or database owner name> -p
