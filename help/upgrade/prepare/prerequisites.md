@@ -2,9 +2,9 @@
 title: Voraussetzungen abschließen
 description: Bereiten Sie Ihr Adobe Commerce-Projekt auf ein Upgrade vor, indem Sie die folgenden erforderlichen Schritte ausführen.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Nachdem Sie die Systemanforderungen überprüft haben, müssen Sie die folgenden
 
 Die [Systemanforderungen](../../installation/system-requirements.md) beschreiben genau, welche Versionen von Software von Drittanbietern mit Adobe Commerce-Versionen getestet wurden.
 
-Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihrer Umgebung aktualisiert haben. Siehe PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php) und [erforderlichen PHP-Einstellungen](../../installation/prerequisites/php-settings.md#php-settings).
+Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihrer Umgebung aktualisiert haben. Überprüfen Sie die [PHP Migration Appendices](https://www.php.net/manual/en/appendices.php) für Ihre PHP-Zielversion und die [erforderlichen PHP-Einstellungen](../../installation/prerequisites/php-settings.md#php-settings).
 
 >[!NOTE]
 >
->Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=de#supported-software-and-services).
+>Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Überprüfen, ob eine unterstützte Suchmaschine installiert ist
 
@@ -56,7 +56,7 @@ In den folgenden Abschnitten wird beschrieben, welche Aktionen Sie durchführen 
 Ab Version 2.4 ist MySQL keine unterstützte Katalogsuchmaschine mehr. Sie müssen Elasticsearch oder OpenSearch vor dem Upgrade installieren und konfigurieren. Verwenden Sie die folgenden Ressourcen, um Sie durch diesen Prozess zu führen:
 
 * [Installieren und Konfigurieren von Elasticsearch](../../configuration/search/overview-search.md)
-* [Installieren von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* [Installieren von Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)
 * Konfigurieren Sie [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) oder [Apache](../../installation/prerequisites/search-engine/configure-apache.md) für Ihre Suchmaschine.
 * [Konfigurieren von Commerce für die Verwendung von Elasticsearch](../../configuration/search/configure-search-engine.md) und Neuindizierung
 
@@ -99,7 +99,7 @@ Um MySQL von Version 8.0 ordnungsgemäß auf Version 8.4 zu aktualisieren, müss
    >
    >Wenn Sie den Wert von `restrict_fk_on_non_standard_key` nicht in `OFF` ändern, erhalten Sie beim Import den folgenden Fehler:
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Starten Sie den MySQL-Server neu.
@@ -124,9 +124,9 @@ Um MySQL von Version 8.0 ordnungsgemäß auf Version 8.4 zu aktualisieren, müss
 
 Sie müssen entweder Elasticsearch 7.6 oder höher oder OpenSearch 1.2 installieren und konfigurieren, bevor Sie ein Upgrade auf 2.4.0 durchführen. Adobe unterstützt nicht mehr Elasticsearch 2.x, 5.x und 6.x. [Suchmaschinenkonfiguration](../../configuration/search/configure-search-engine.md) im _Konfigurationshandbuch_ beschreibt die Aufgaben, die Sie nach dem Upgrade von Elasticsearch auf eine unterstützte Version ausführen müssen.
 
-Unter [Upgrade von Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) finden Sie vollständige Anweisungen zum Sichern Ihrer Daten, Erkennen potenzieller Migrationsprobleme und Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch kann ein vollständiger Cluster-Neustart erforderlich sein oder nicht.
+Unter [Upgrade von Elasticsearch](https://www.elastic.co/docs/deploy-manage/upgrade/deployment-or-cluster) finden Sie vollständige Anweisungen zum Sichern Ihrer Daten, Erkennen potenzieller Migrationsprobleme und Testen von Upgrades vor der Bereitstellung in der Produktion. Abhängig von Ihrer aktuellen Version von Elasticsearch kann ein vollständiger Cluster-Neustart erforderlich sein oder nicht.
 
-Elasticsearch erfordert Java Development Kit (JDK) 1.8 oder höher. Siehe [Installieren des Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk), um zu überprüfen, welche Version von JDK installiert ist.
+Elasticsearch erfordert Java Development Kit (JDK) 1.8 oder höher. Siehe [Installieren des Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit), um zu überprüfen, welche Version von JDK installiert ist.
 
 #### OpenSearch
 
@@ -140,7 +140,7 @@ OpenSearch ist eine Open-Source-Version von Elasticsearch 7.10.2, die auf die Li
 
 Sie können [von Elasticsearch zu OpenSearch migrieren](opensearch-migration.md) nur, wenn Sie ein Upgrade auf eine der oben aufgeführten Adobe Commerce-Versionen (oder höher) durchführen.
 
-OpenSearch erfordert JDK 1.8 oder höher. Siehe [Installieren des Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk), um zu überprüfen, welche Version von JDK installiert ist.
+OpenSearch erfordert JDK 1.8 oder höher. Siehe [Installieren des Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit), um zu überprüfen, welche Version von JDK installiert ist.
 
 [Suchmaschinenkonfiguration](../../configuration/search/configure-search-engine.md) beschreibt die Aufgaben, die nach einem Wechsel der Suchmaschine ausgeführt werden müssen.
 
@@ -150,9 +150,9 @@ Die Unterstützung für Elasticsearch 8.x wurde mit Adobe Commerce 2.4.6 eingef�
 
 >[!NOTE]
 >
->In der kommenden Version 2.4.8 sind diese Schritte nicht erforderlich, da das Elasticsearch 8-Modul standardmäßig enthalten ist und Sie es nicht separat installieren müssen.
+>Diese Schritte gelten nur für Adobe Commerce 2.4.6 und 2.4.7. Adobe Commerce 2.4.8 und höher unterstützt Elasticsearch nicht mehr. Verwenden Sie stattdessen OpenSearch.
 
-1. Aktualisieren Sie den Elasticsearch 7.x-Server auf 8.x, und stellen Sie sicher, dass ausgeführt wird. Siehe die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Aktualisieren Sie den Elasticsearch 7.x-Server auf 8.x, und stellen Sie sicher, dass ausgeführt wird. Siehe die [Elasticsearch-Dokumentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Aktivieren Sie das Feld `id_field_data` , indem Sie die folgende Konfiguration zu Ihrer `elasticsearch.yml` hinzufügen und den Elasticsearch 8.x-Service neu starten.
 
@@ -218,7 +218,7 @@ Die Unterstützung für Elasticsearch 8.x wurde mit Adobe Commerce 2.4.6 eingef�
 
 Wenn Sie versehentlich die Version von Elasticsearch auf Ihrem Server aktualisieren oder feststellen, dass Sie aus einem anderen Grund ein Downgrade durchführen müssen, müssen Sie auch Ihre Adobe Commerce-Projektabhängigkeiten aktualisieren. Zum Beispiel für ein Downgrade von Elasticsearch 8.x auf 7.x
 
-1. Führen Sie ein Downgrade des Elasticsearch 8.x-Servers auf 7.x durch und stellen Sie sicher, dass dieser ausgeführt wird. Siehe die [Elasticsearch-Dokumentation](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Führen Sie ein Downgrade des Elasticsearch 8.x-Servers auf 7.x durch und stellen Sie sicher, dass dieser ausgeführt wird. Siehe die [Elasticsearch-Dokumentation](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch).
 
 1. Aktualisieren Sie im Stammverzeichnis Ihres Adobe Commerce-Projekts Ihre Composer-Abhängigkeiten, um das `Magento_Elasticsearch8` und seine Composer-Abhängigkeiten zu entfernen und das `Magento_Elasticsearch7` zu installieren.
 
@@ -258,7 +258,7 @@ Sie müssen das Format aller Datenbanktabellen von `COMPACT` in `DYNAMIC` konver
 
 Das Festlegen des Grenzwerts für offene Dateien (ulimit) kann dazu beitragen, Fehler durch mehrere rekursive Aufrufe langer Abfragezeichenfolgen oder Probleme mit der Verwendung des `bin/magento setup:rollback`-Befehls zu vermeiden. Dieser Befehl unterscheidet sich für verschiedene UNIX-Shells. Einzelheiten zum Befehl `ulimit` sind in der jeweiligen Variante zu finden.
 
-Adobe empfiehlt, die geöffneten Dateien [ulimit](https://ss64.com/bash/ulimit.html) auf einen Wert von `65536` oder mehr festzulegen, Sie können jedoch bei Bedarf einen größeren Wert verwenden. Sie können ulimit auf der Befehlszeile festlegen oder es zu einer dauerhaften Einstellung für die Shell des Benutzers machen.
+Adobe empfiehlt, die geöffneten Dateien [ulimit](https://www.gnu.org/software/bash/manual/html_node/Bash-Builtins.html#index-ulimit) auf einen Wert von `65536` oder mehr festzulegen, Sie können jedoch bei Bedarf einen größeren Wert verwenden. Sie können ulimit auf der Befehlszeile festlegen oder es zu einer dauerhaften Einstellung für die Shell des Benutzers machen.
 
 So legen Sie ulimit über die Befehlszeile fest:
 
@@ -315,7 +315,7 @@ Um den Fehler anzuzeigen, klicken Sie **Systemmeldungen** oben im Fenster wie fo
 
 ![Systemnachrichten-Benachrichtigung](../../assets/upgrade-guide/system-messages.png)
 
-Weitere Informationen finden [&#x200B; unter „Konfigurieren &#x200B;](../../configuration/cli/configure-cron-jobs.md) Ausführen von cron“.
+Weitere Informationen finden [ unter „Konfigurieren ](../../configuration/cli/configure-cron-jobs.md) Ausführen von cron“.
 
 ## SET DATA_CONVERTER_BATCH_SIZE
 
@@ -358,7 +358,7 @@ So legen Sie die Umgebungsvariable fest:
 
 Aus Sicherheitsgründen erfordert Adobe Commerce bestimmte Berechtigungen für das Dateisystem. Berechtigungen unterscheiden sich von _[Inhaberschaft](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Die Eigentümerschaft bestimmt, wer Aktionen im Dateisystem durchführen kann. Berechtigungen bestimmen, was der Benutzer tun kann.
 
-Verzeichnisse im Dateisystem müssen von der Gruppe [Dateisystemeigentümer“ beschreibbar &#x200B;](../../installation/prerequisites/file-system/overview.md).
+Verzeichnisse im Dateisystem müssen von der Gruppe [Dateisystemeigentümer“ beschreibbar ](../../installation/prerequisites/file-system/overview.md).
 
 Um sicherzustellen, dass Ihre Dateisystemberechtigungen ordnungsgemäß festgelegt sind, melden Sie sich entweder beim Anwendungsserver an oder verwenden Sie die Dateimanager-Anwendung Ihres Hosting-Anbieters.
 
@@ -423,7 +423,7 @@ Weitere Informationen finden Sie unter [Dateisystemberechtigungen und -eigentüm
 
 ## Festlegen des `pub/` Ordnerstamms
 
-Weitere [&#x200B; finden Sie unter „Ändern des &#x200B;](../../installation/tutorials/docroot.md) zur Verbesserung der Sicherheit“.
+Weitere [ finden Sie unter „Ändern des ](../../installation/tutorials/docroot.md) zur Verbesserung der Sicherheit“.
 
 ## Installieren des Composer-Aktualisierungs-Plug-ins
 

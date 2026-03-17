@@ -2,9 +2,9 @@
 title: Voraussetzungen für die lokale Installation
 description: Erfahren Sie mehr über die Softwareabhängigkeiten, die für lokale Installationen von Adobe Commerce erforderlich sind.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Auf der Registerkarte *Commerce On-Premises* in [Systemanforderungen](../system-
 
 ### MySQL
 
-Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie auf der ** Commerce On-Premise[&#x200B; in &#x200B;](../system-requirements.md)Systemanforderungen.
+Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie auf der ** Commerce On-Premise[ in ](../system-requirements.md)Systemanforderungen.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -82,12 +82,12 @@ Beispiel:
 mysql -u magento -p
 ```
 
-Das folgende Ergebnis gibt die Version an, die Sie ausführen.
+In der Befehlsausgabe gibt die `Server version` die Version an, die Sie ausführen. Vergewissern Sie sich, dass es mit einer Version übereinstimmt, die für die Adobe Commerce-Version unterstützt wird, die Sie installieren.
 
 ```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
-Server version: 5.7.9 MySQL Community Server (GPL)
+Server version: <supported MySQL version> MySQL Community Server (GPL)
 
 Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
 

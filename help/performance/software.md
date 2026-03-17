@@ -3,9 +3,9 @@ title: Empfehlungen zur Software
 description: Erfahren Sie mehr über Softwareanforderungen und Empfehlungen für Adobe Commerce. Entdecken Sie unterstützte Versionen und Best Practices für die Konfiguration für die Produktion.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Für Produktionsinstanzen von [!DNL Commerce] benötigen wir die folgende Software:
 
 * [PHP](../installation/system-requirements.md)
-* Nginx und [PHP-FPM](https://php-fpm.org/)
+* Nginx und [PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
 * [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
 * [[!DNL Elasticsearch] oder OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Magento unterstützt PHP 7.3 und 7.4 vollständig. Es gibt mehrere Faktoren, die bei der Konfiguration von PHP zu berücksichtigen sind, um maximale Geschwindigkeit und Effizienz bei der Verarbeitung von Anfragen zu erhalten.
+Verwenden Sie eine PHP-Version, die von der Adobe Commerce-Version unterstützt wird, die Sie installieren, wie in den [Systemanforderungen](../installation/system-requirements.md) aufgeführt. Es gibt mehrere Faktoren, die bei der Konfiguration von PHP zu berücksichtigen sind, um maximale Geschwindigkeit und Effizienz bei der Verarbeitung von Anfragen zu erhalten.
 
 ### PHP-Erweiterungen
 
@@ -114,7 +114,7 @@ Das Hinzufügen weiterer Erweiterungen erhöht die Ladezeiten von Bibliotheken.
 
 >[!INFO]
 >
->`php-mcrypt` wurde aus PHP 7.2 entfernt und durch die [`sodium`-Bibliothek ersetzt](https://www.php.net/manual/en/book.sodium.php). Stellen Sie sicher[&#x200B; dass &#x200B;](https://www.php.net/manual/en/sodium.installation.php)Natrium) beim Upgrade von PHP ordnungsgemäß aktiviert ist.
+>`php-mcrypt` wurde aus PHP 7.2 entfernt und durch die [`sodium`-Bibliothek ersetzt](https://www.php.net/manual/en/book.sodium.php). Stellen Sie sicher[ dass ](https://www.php.net/manual/en/sodium.installation.php)Natrium) beim Upgrade von PHP ordnungsgemäß aktiviert ist.
 
 >[!INFO]
 >
@@ -141,7 +141,7 @@ realpath_cache_ttl=7200
 
 #### Byte-Code
 
-Um die maximale Geschwindigkeit von [!DNL Commerce] auf PHP 7 zu erreichen, müssen Sie das OpCache-Modul aktivieren und ordnungsgemäß konfigurieren. Diese Einstellungen werden für das Modul empfohlen:
+Um die maximale Geschwindigkeit aus dem [!DNL Commerce] zu entfernen, müssen Sie das OpCache-Modul aktivieren und ordnungsgemäß konfigurieren. Diese Einstellungen werden für das Modul empfohlen:
 
 ```text
 opcache.memory_consumption=512
@@ -182,17 +182,16 @@ Magento unterstützt die Nginx- und Apache-Webserver vollständig. [!DNL Commerc
 
 Sie sollten auch die Anzahl der Threads für die Verarbeitung von Eingabeanfragen konfigurieren, wie unten aufgeführt:
 
-| Webserver | Attributname | Speicherort | Verwandte Informationen |
+| Webserver | Attributname | Standort | Verwandte Informationen |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Optimieren von NGINX für Leistung](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache-Leistungsoptimierung](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Optimieren von NGINX für Leistung](https://www.f5.com/company/blog/nginx/tuning-nginx) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Apache MPM - Allgemeine Anweisungen](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
 Dieses Dokument enthält keine detaillierten [!DNL MySQL], da jeder Store und jede Umgebung unterschiedlich sind. Wir können jedoch einige allgemeine Empfehlungen geben.
 
-Es wurden viele Verbesserungen an [!DNL MySQL] 5.7.9 vorgenommen. Wir sind zuversichtlich, dass [!DNL MySQL] mit guten Standardeinstellungen verteilt wird. Die wichtigsten Einstellungen sind:
+Neuere [!DNL MySQL] enthalten viele Leistungsverbesserungen, und [!DNL MySQL] wird im Allgemeinen mit guten Standardeinstellungen verteilt. Die wichtigsten Einstellungen sind:
 
 | Parameter | Standard | Beschreibung |
 |--- | --- | ---|
@@ -207,7 +206,7 @@ Magento empfiehlt dringend, [!DNL Varnish] als Seiten-Cache-Server für Ihren St
 
 Installieren Sie [!DNL Varnish] auf einem separaten Server vor der Web-Stufe. Er sollte alle eingehenden Anfragen akzeptieren und zwischengespeicherte Seitenkopien bereitstellen. Damit [!DNL Varnish] effektiv mit gesicherten Seiten arbeiten können, kann ein SSL-Terminations-Proxy vor [!DNL Varnish] platziert werden. Hierfür kann Nginx verwendet werden.
 
-[!DNL Commerce] verteilt eine Beispielkonfigurationsdatei für [!DNL Varnish] (Versionen 4 und 5), die alle empfohlenen Leistungseinstellungen enthält. Zu den wichtigsten Leistungskriterien zählen:
+[!DNL Commerce] verteilt Beispielkonfigurationsdateien für unterstützte [!DNL Varnish], die alle empfohlenen Leistungseinstellungen enthalten. Zu den wichtigsten Leistungskriterien zählen:
 
 * **Backend-Konsistenzprüfung** fragt den [!DNL Commerce]-Server ab, ob er zeitnah reagiert.
 * **Gnadenmodus** ermöglicht es Ihnen, [!DNL Varnish] anzuweisen, ein Objekt über seine Time-to-Live (TTL)-Periode hinaus im Cache zu halten und diesen veralteten Inhalt bereitzustellen, wenn [!DNL Commerce] nicht in Ordnung ist oder noch kein neuer Inhalt abgerufen wurde.
@@ -221,7 +220,7 @@ Im Allgemeinen empfehlen wir, Ihre Assets (Bilder, JS, CSS usw.) in einem CDN zu
 
 Wenn für Ihre Site keine große Anzahl von Gebietsschemata bereitgestellt werden muss und sich Ihre Server in derselben Region wie die meisten Ihrer Kunden befinden, können Sie zu niedrigeren Kosten erhebliche Leistungsgewinne erzielen, indem Sie Ihre Assets in [!DNL Varnish] speichern, anstatt ein CDN zu verwenden.
 
-Um Ihre Assets in [!DNL Varnish] zu speichern, fügen Sie die folgenden VCL-Einträge in Ihrer von `default.vcl` für [!DNL Commerce] 5 generierten [!DNL Varnish] hinzu.
+Um Ihre Assets in [!DNL Varnish] zu speichern, fügen Sie die folgenden VCL-Einträge in Ihrer von `default.vcl` generierten [!DNL Commerce] hinzu.
 
 Fügen Sie am Ende der `if` für PURGE-Anfragen in der `vcl_recv`-Unterroutine Folgendes hinzu:
 

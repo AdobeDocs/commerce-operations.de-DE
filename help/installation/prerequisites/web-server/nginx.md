@@ -2,16 +2,16 @@
 title: Nginx
 description: Führen Sie diese Schritte aus, um den Nginx-Webserver für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1110'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
 
 # Nginx
 
-Adobe Commerce unterstützt Nginx 1.x (oder die [neueste Hauptversion](https://nginx.org/en/linux_packages.html#mainline)). Sie müssen auch die neueste Version von `php-fpm` installieren.
+Adobe Commerce unterstützt Nginx 1.x (oder die [neueste Hauptversion](https://nginx.org/en/linux_packages.html#mainline)). Sie müssen auch `php-fpm` für eine PHP-Version installieren, die von der Adobe Commerce-Version unterstützt wird, die Sie installieren.
 
 Die Installationsanweisungen hängen vom verwendeten Betriebssystem ab. Siehe [PHP](../php-settings.md) für weitere Informationen.
 
@@ -25,7 +25,7 @@ Im folgenden Abschnitt wird beschrieben, wie Sie Adobe Commerce 2.x mit nginx, P
 sudo apt -y install nginx
 ```
 
-Sie können auch [aus der Quelle erstellen](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+Sie können auch [aus der Quelle erstellen](https://nginx.org/en/docs/install.html)
 
 Nachdem wir die folgenden Abschnitte ausgeführt und die Anwendung installiert haben, verwenden wir eine Beispielkonfigurationsdatei zum [Konfigurieren von nginx](#configure-nginx).
 
@@ -38,21 +38,21 @@ So installieren und konfigurieren Sie `php-fpm`:
 1. Installieren von `php-fpm` und `php-cli`:
 
    ```bash
-   apt-get -y install php7.2-fpm php7.2-cli
+   apt-get -y install php<supported-php-version>-fpm php<supported-php-version>-cli
    ```
 
    >[!NOTE]
    >
-   >Dieser Befehl installiert die neueste verfügbare Version von PHP 7.2.X. Siehe [Systemanforderungen](../../system-requirements.md) für unterstützte PHP-Versionen.
+   >Ersetzen Sie `<supported-php-version>` durch eine PHP-Nebenversion, [ unter „Systemanforderungen](../../system-requirements.md) für die Adobe Commerce-Version aufgeführt ist, die Sie installieren. Verwenden Sie denselben Wert in den Dateipfaden, dem Service-Namen und dem Socket-Pfad in den folgenden Schritten.
 
 1. Öffnen Sie die `php.ini` Dateien in einem Editor:
 
    ```bash
-   vim /etc/php/7.2/fpm/php.ini
+   vim /etc/php/<supported-php-version>/fpm/php.ini
    ```
 
    ```bash
-   vim /etc/php/7.2/cli/php.ini
+   vim /etc/php/<supported-php-version>/cli/php.ini
    ```
 
 1. Bearbeiten Sie beide Dateien so, dass sie den folgenden Zeilen entsprechen:
@@ -72,7 +72,7 @@ So installieren und konfigurieren Sie `php-fpm`:
 1. Starten Sie den `php-fpm` neu:
 
    ```bash
-   systemctl restart php7.2-fpm
+   systemctl restart php<supported-php-version>-fpm
    ```
 
 ### Installieren und Konfigurieren von MySQL
@@ -89,7 +89,7 @@ Es gibt verschiedene Möglichkeiten, Adobe Commerce herunterzuladen:
 
 Dieses Beispiel zeigt eine Composer-basierte Installation über die Befehlszeile.
 
-1. Melden Sie [&#x200B; als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
+1. Melden Sie [ als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
 
 1. Wechseln Sie in das Verzeichnis des Webservers docroot oder in ein Verzeichnis, das Sie als virtuellen Host docroot konfiguriert haben. Für dieses Beispiel verwenden wir den Ubuntu-`/var/www/html`.
 
@@ -160,10 +160,14 @@ Dieses Beispiel zeigt eine Composer-basierte Installation über die Befehlszeile
    --currency=USD \
    --timezone=America/Chicago \
    --use-rewrites=1 \
-   --search-engine=elasticsearch7 \
-   --elasticsearch-host=es-host.example.com \
-   --elasticsearch-port=9200
+   --search-engine=<search-engine-value> \
+   --<search-engine-host-parameter>=search-host.example.com \
+   --<search-engine-port-parameter>=9200
    ```
+
+   >[!NOTE]
+   >
+   >Verwenden Sie den `--search-engine` und die entsprechenden Host-/Port-Optionen für die Adobe Commerce-Version, die Sie installieren. Bei Versionen vor 2.4.6 verwenden Sie `elasticsearch7` mit den `--elasticsearch-*` Optionen für Elasticsearch 7 oder OpenSearch. Verwenden Sie für Version 2.4.6 und höher den Suchmaschinenwert und die entsprechenden CLI-Optionen, die von dieser Version unterstützt werden.
 
 1. Wechseln Sie in den Entwicklermodus:
 
@@ -191,7 +195,7 @@ In diesen Anweisungen wird davon ausgegangen, dass Sie den Ubuntu-Standardspeich
 
    ```conf
    upstream fastcgi_backend {
-     server  unix:/run/php/php7.2-fpm.sock;
+     server  unix:/run/php/php<supported-php-version>-fpm.sock;
    }
    
    server {
@@ -266,10 +270,14 @@ Adobe Commerce benötigt mehrere [PHP](../php-settings.md)-Erweiterungen, um ord
 1. Installieren Sie `php-fpm`:
 
    ```bash
-   yum -y install php70w-fpm
+   yum -y install <supported-php-fpm-package>
    ```
 
 1. Öffnen Sie die `/etc/php.ini` in einem Editor.
+
+   >[!NOTE]
+   >
+   >Installieren Sie den Paketnamen, der `php-fpm` für eine PHP-Version bereitstellt, die von der Adobe Commerce-Version unterstützt wird, die Sie installieren. Paketnamen variieren je nach Repository und Betriebssystem.
 
 1. Entfernen Sie den Kommentar für die `cgi.fix_pathinfo` und ändern Sie den Wert in `0`.
 
@@ -368,7 +376,7 @@ Es gibt verschiedene Möglichkeiten, die Adobe Commerce herunterzuladen, darunte
 
 Dieses Beispiel zeigt eine Composer-basierte Installation über die Befehlszeile.
 
-1. Melden Sie [&#x200B; als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
+1. Melden Sie [ als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
 
 1. Wechseln Sie in das Verzeichnis des Webservers docroot oder in ein Verzeichnis, das Sie als virtuellen Host docroot konfiguriert haben. Für dieses Beispiel verwenden wir den Ubuntu-`/var/www/html`.
 

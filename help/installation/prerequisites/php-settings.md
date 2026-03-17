@@ -3,9 +3,9 @@ title: PHP-Einstellungen
 description: Führen Sie diese Schritte aus, um die erforderlichen PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In diesem Abschnitt wird beschrieben, wie Sie die erforderlichen PHP-Optionen fe
 
 >[!NOTE]
 >
->Die neueste Version von Adobe Commerce erfordert mindestens PHP 8.1. Siehe [Systemanforderungen](../system-requirements.md) für alle unterstützten Versionen von PHP.
+>Unterstützte PHP-Versionen variieren je nach Adobe Commerce-Version. Siehe [Systemanforderungen](../system-requirements.md) für die genauen PHP-Versionen, die von der Version unterstützt werden, die Sie installieren.
 
-Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=de) im _Handbuch zu Commerce_ Cloud-Infrastruktur.
+Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) im _Handbuch zu Commerce_ Cloud-Infrastruktur.
 
 ## PHP-Prozesssteuerung
 
@@ -36,10 +36,10 @@ php -v
 Wenn PHP installiert ist, wird eine Meldung ähnlich der folgenden angezeigt:
 
 ```
-PHP 8.1.2-1ubuntu2.14 (cli) (built: Aug 18 2023 11:41:11) (NTS)
+PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
-Zend Engine v4.1.2, Copyright (c) Zend Technologies
-    with Zend OPcache v8.1.2-1ubuntu2.14, Copyright (c), by Zend Technologies
+Zend Engine v<matching-version>, Copyright (c) Zend Technologies
+    with Zend OPcache v<matching-version>, Copyright (c), by Zend Technologies
 ```
 
 Wenn PHP nicht installiert ist (oder ein Upgrade benötigt), installieren Sie es, indem Sie die Anweisungen für Ihre Linux-Distribution befolgen.
@@ -65,7 +65,7 @@ So überprüfen Sie installierte Erweiterungen:
 
 >[!WARNING]
 >
->Wenn Sie PHP 7.4.20 verwenden, setzen Sie `pcre.jit=0` in Ihrer `php.ini`. Dies umgeht einen PHP-[, der &#x200B;](https://bugs.php.net/bug.php?id=81101) Laden von CSS verhindert.
+>Wenn Sie Probleme mit einer alten Umgebung beheben möchten, die von PHP [Bug 81101](https://bugs.php.net/bug.php?id=81101) betroffen ist, legen Sie `pcre.jit=0` in Ihrer `php.ini` fest, um das Problem zu umgehen, dass CSS nicht geladen wird.
 
 - Legen Sie die Systemzeitzone für PHP fest; andernfalls funktionieren Fehler wie die folgende Anzeige während der Installation und zeitbezogene Vorgänge wie cron möglicherweise nicht:
 
@@ -106,7 +106,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationsdateien finden, 
 
 ### Suchen `php.ini` Konfigurationsdatei
 
-Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei &#x200B;](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
+Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei ](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
 
 ![PHP-Informationsseite](../../assets/installation/config_phpini-webserver.png)
 
@@ -138,7 +138,7 @@ Verwenden Sie die folgenden Richtlinien, um sie zu finden:
   sudo find / -name 'opcache.ini'
   ```
 
-- nginx Webserver mit PHP-FPM: `/etc/php/8.1/fpm/php.ini`
+- nginx Webserver mit PHP-FPM: `/etc/php/<supported-php-version>/fpm/php.ini`
 
 Wenn Sie mehr als ein `opcache.ini` haben, ändern Sie alle.
 
@@ -190,7 +190,7 @@ So legen Sie `opcache.ini` fest:
 
    - `opcache.ini` (CentOS)
    - `php.ini` (Ubuntu)
-   - `/etc/php/8.1/fpm/php.ini` (nginx Webserver (CentOS oder Ubuntu))
+   - `/etc/php/<supported-php-version>/fpm/php.ini` (nginx Webserver (CentOS oder Ubuntu))
 
 1. Suchen Sie `opcache.save_comments` und heben Sie ggf. die Auskommentierung auf.
 1. Stellen Sie sicher, dass der Wert auf `1` gesetzt ist.
@@ -206,9 +206,9 @@ So legen Sie `opcache.ini` fest:
 In den folgenden Adobe Commerce-Support-Artikeln finden Sie Hilfe bei der Fehlerbehebung bei PHP-Problemen:
 
 - [PHP-Versionsfehler oder 404-Fehler beim Zugriff auf Adobe Commerce in einem Browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP-Einstellungsfehler](https://support.magento.com/hc/en-us/articles/360034599631-PHP-settings-errors)
-- [PHP mcrypt-Erweiterung nicht ordnungsgemäß installiert](https://support.magento.com/hc/en-us/articles/360034280132-PHP-mcrypt-extension-not-installed-properly-)
-- [Probleme bei der Prüfung der PHP-Version](https://support.magento.com/hc/en-us/articles/360033546411)
-- [Häufige schwerwiegende PHP-Fehler und -Lösungen](https://support.magento.com/hc/en-us/articles/360030568432)
+- [PHP-Einstellungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [PHP mcrypt-Erweiterung nicht ordnungsgemäß installiert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
+- [Probleme bei der Prüfung der PHP-Version](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Häufige schwerwiegende PHP-Fehler und -Lösungen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->
