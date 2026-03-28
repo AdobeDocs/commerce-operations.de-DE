@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Referenz zu allgemeinen und erweiterten Konfigurationspfaden
 
-In diesem Thema werden allgemeine und erweiterte Konfigurationspfade sowie _nicht_ [ und systemspezifische Werte](config-reference-sens.md) aufgeführt. Der [`magento app:config:dump` Befehl ](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte.
+In diesem Thema werden allgemeine und erweiterte Konfigurationspfade sowie _nicht_ [&#x200B; und systemspezifische Werte](config-reference-sens.md) aufgeführt. Der [`magento app:config:dump` Befehl &#x200B;](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte.
 
 Informationen dazu, wie Sie Konfigurationseinstellungen optional überschreiben oder vertrauliche Einstellungen festlegen können, finden Sie unter [Verwenden von Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen](override-config-settings.md#environment-variables).
 
