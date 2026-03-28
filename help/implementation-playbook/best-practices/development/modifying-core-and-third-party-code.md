@@ -1,11 +1,11 @@
 ---
 title: Best Practices für die Änderung von Kern- und PHP-Code von Drittanbietern
 description: Erfahren Sie, wie und wann Sie den Kern-Adobe Commerce und PHP-Code von Drittanbietern ändern.
-role: Developer, Architect
+role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%

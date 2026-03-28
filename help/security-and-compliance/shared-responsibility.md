@@ -2,7 +2,7 @@
 title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '2939'
 ht-degree: 0%
@@ -793,10 +793,11 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 
 {style="table-layout:auto"}
 
+>[!NOTE]
 >
 >Händler müssen die neueste Version der Live-Suche, Produktempfehlungen und Zahlungs-Services verwenden, um höchste Stabilität, Funktionalität und Support-Berechtigung zu gewährleisten.
 >Adobe unterstützt keine veralteten Versionen. Durch Upgrades wird sichergestellt, dass Sie von den neuesten Verbesserungen und Fehlerbehebungen profitieren.
->Einzelheiten zu unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix für Commerce Services](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability#commerce-services).
+>Einzelheiten zu unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix für Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
 
 #### Produkt Recommendations
 

@@ -4,13 +4,13 @@ description: Wenden Sie den Patch ACSD-66963 an, um das Adobe Commerce-Problem z
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0eede09026df98426cd3b6b1550be274c26d7e13
+exl-id: b62e48f5-a9d6-456a-97e7-96f740d8e927
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66963: `estimateTotals`-Mutation gibt für Rabatte auf virtuelle Produkte null zurück
 
@@ -28,7 +28,7 @@ Der Patch ACSD-66963 behebt das Problem, dass `estimateTotals` bei Rabatten *nul
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -81,59 +81,59 @@ Die `estimateTotals`-Mutation gibt *null* für Rabatte zurück, wenn ein Rabattc
 
 Rabattinformationen sind für Warenkörbe enthalten, die nur virtuelle Produkte enthalten.
 
-    &quot;
-    &lbrace;
-    „data“: &lbrace;
-    „estimatedTotals“: &lbrace;
-    „cart“: &lbrace;
-    „prices“: &lbrace;
-    „rabatte“: &lbrack;
-    &lbrace;
-    „amount“: &lbrace;
-    „value“: 100.5,
-    „currency“: „USD“
-    &rbrace;,
-    „label“: „Ein zweiter Rabattcode für Tests“,
-    „coupon“: &lbrace;
-    „code&rbrace;
-    &rbrace;0r0
-    &rbrace;
-    ,APPLIED_TO ITEM“&quot;
-    „ITEM“: 
-    null
-    &rbrace;Erweiterungen: 
-    
-     
-     
-    {} 
-     
-     
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": [
+                {
+                  "amount": {
+                    "value": 100.5,
+                    "currency": "USD"
+                  },
+                  "label": "A second discount code for testing",
+                  "coupon": {
+                    "code": "z3r0c00l"
+                  },
+                  "applied_to": "ITEM",
+                  "type": null
+                }
+              ]
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
 <u>Tatsächliche Ergebnisse</u>:
 
 Rabattinformationen werden für Warenkörbe mit nur virtuellen Produkten als *null* zurückgegeben.
 
-    &quot;
-    &lbrace;
-    „data“: &lbrace;
-    „estimatedTotals“: &lbrace;
-    „cart“: &lbrace;
-    „prices“: &lbrace;
-    „rabatte“: null
-    &rbrace;
-    &rbrace;
-    &rbrace;
-    &rbrace;,
-    „extensions“: {}
-    &rbrace;
-    &quot;
+```
+    {
+      "data": {
+        "estimateTotals": {
+          "cart": {
+            "prices": {
+              "discounts": null
+            }
+          }
+        }
+      },
+      "extensions": {}
+    }
+```
 
 ## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

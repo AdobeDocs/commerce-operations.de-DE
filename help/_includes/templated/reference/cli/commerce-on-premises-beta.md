@@ -1,7 +1,7 @@
 ---
-source-git-commit: a1a8e9192dbdccbc758be972612f8a8828202299
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '9398'
+source-wordcount: '9178'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Die anfängliche Liste wird automatisch mit dem `bin/magento list`-Befehl in Ado
 
 ## Allgemein
 
-Verwenden Sie das [&#x200B; „CLI-Befehle hinzufügen](https://developer.adobe.com/commerce/php/development/cli-commands/) um einen benutzerdefinierten CLI-Befehl hinzuzufügen.
+Verwenden Sie das [ „CLI-Befehle hinzufügen](https://developer.adobe.com/commerce/php/development/cli-commands/) um einen benutzerdefinierten CLI-Befehl hinzuzufügen.
 
 Sie können `bin/magento` CLI-Befehle über Tastaturbefehle anstelle des vollständigen Befehlsnamens aufrufen. Beispielsweise können Sie `bin/magento setup:upgrade` mithilfe von `bin/magento s:up` aufrufen, `bin/magento s:upg`. Unter [Verknüpfungssyntax](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) erfahren Sie, wie Sie Verknüpfungen mit beliebigen CLI-Befehlen verwenden.
 
@@ -409,7 +409,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2271,7 +2271,7 @@ Hinzufügen der IP-Adresse zur vorhandenen Liste
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2297,7 +2297,7 @@ Zulässige IP-Adressen (verwenden Sie „none“, um die Liste der zulässigen I
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2323,7 +2323,7 @@ Zulässige IP-Adressen (verwenden Sie „none“, um die Liste der zulässigen I
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2342,7 +2342,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2430,7 +2430,7 @@ Erzeugte statische Ansichtsdateien löschen. Erforderlich, wenn die Module stati
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2479,7 +2479,7 @@ Erzeugte statische Ansichtsdateien löschen. Erforderlich, wenn die Module stati
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2521,7 +2521,7 @@ Nur deaktivierte Module drucken
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -2593,7 +2593,7 @@ Erzeugte statische Ansichtsdateien löschen. Erforderlich, wenn die Module stati
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -3178,7 +3178,7 @@ Vollständige Datenbanksicherung durchführen
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -4084,7 +4084,7 @@ ID-Präfix für Schlüssel
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -4103,7 +4103,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -4231,7 +4231,7 @@ Max. zulässige Zeitverzögerungsunterdrückung (in Sekunden)
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -4288,7 +4288,7 @@ Checkout-Ressourcenname
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -4345,7 +4345,7 @@ Name der Vertriebsressource
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -4371,7 +4371,7 @@ Ermöglicht die Konvertierung alter Skripte (InstallSchema, UpgradeSchema) in da
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -4390,7 +4390,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -5548,7 +5548,7 @@ Die Magento-Installation wird im Trockenlaufmodus ausgeführt
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -5613,7 +5613,7 @@ Basisname der Datenbank-Backup-Datei in var/backups
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -5868,7 +5868,7 @@ Ob die Funktion „Sicherheitsschlüssel“ in den Admin-URLs und Formularen von
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -5887,7 +5887,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 
@@ -5939,7 +5939,7 @@ Die Magento-Installation wird im Trockenlaufmodus ausgeführt
 
 #### `--magento-init-params`
 
-Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: „MAGE_MODE=developer&amp;MAGE_DIRS[base][path]=/var/www/example.com&amp;MAGE_DIRS[cache][path]=/var/tmp/cache“
+Fügen Sie zu einem beliebigen Befehl hinzu, um Magento-Initialisierungsparameter anzupassen. Beispiel: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache`
 
 - Erfordert einen Wert
 

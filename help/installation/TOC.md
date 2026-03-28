@@ -2,10 +2,10 @@
 user-guide-title: Installationsanleitung
 user-guide-description: Erfahren Sie, wie Sie Adobe Commerce für lokale Bereitstellungen installieren.
 feature: Install
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 53f21e0588603ecf19d4d904a8926c978009d449
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 3%
+source-wordcount: '175'
+ht-degree: 4%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 3%
 - [Überblick](overview.md)
 - [Systemanforderungen](system-requirements.md)
 - Voraussetzungen {#prerequisites}
-   - [Übersicht](prerequisites/overview.md)
+   - [Überblick](prerequisites/overview.md)
    - Dateisystem {#file-system}
       - [Überblick](prerequisites/file-system/overview.md)
       - [Konfigurieren von Berechtigungen](prerequisites/file-system/configure-permissions.md)
    - Webserver {#web-server}
-      - [Nginx](prerequisites/web-server/nginx.md)
-      - [Apache](prerequisites/web-server/apache.md)
+      - [Installieren von Nginx](prerequisites/web-server/nginx.md)
+      - [Installieren von Apache](prerequisites/web-server/apache.md)
    - Datenbank-Server {#database-server}
       - [MySQL](prerequisites/database/mysql.md)
       - [Remoteverbindungen](prerequisites/database/mysql-remote.md)
@@ -32,7 +32,7 @@ ht-degree: 3%
       - [Konfigurieren von Apache](prerequisites/search-engine/configure-apache.md)
    - [PHP](prerequisites/php-settings.md)
    - Nachrichten-Broker {#message-brokers}
-      - [Kaninchen-MQ](prerequisites/rabbitmq.md)
+      - [Rabbit MQ](prerequisites/rabbitmq.md)
       - [Aktive MQ](prerequisites/activemq.md)
    - [Sicherheit](prerequisites/security.md)
    - [Authentifizierungsschlüssel](prerequisites/authentication-keys.md)
@@ -69,4 +69,4 @@ ht-degree: 3%
    - [Commerce deinstallieren oder neu installieren](tutorials/uninstall.md)
    - [Designs deinstallieren](tutorials/themes.md)
    - [Datenbankschema aktualisieren](tutorials/database-upgrade.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

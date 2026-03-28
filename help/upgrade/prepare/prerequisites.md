@@ -2,7 +2,7 @@
 title: Voraussetzungen abschließen
 description: Bereiten Sie Ihr Adobe Commerce-Projekt auf ein Upgrade vor, indem Sie die folgenden erforderlichen Schritte ausführen.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '1865'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihr
 
 >[!NOTE]
 >
->Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Überprüfen, ob eine unterstützte Suchmaschine installiert ist
 
@@ -102,6 +102,7 @@ Um MySQL von Version 8.0 ordnungsgemäß auf Version 8.4 zu aktualisieren, müss
    >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
+
 1. Starten Sie den MySQL-Server neu.
 1. Importieren Sie die gesicherten Daten in MySQL.
 1. Cache leeren:
@@ -315,7 +316,7 @@ Um den Fehler anzuzeigen, klicken Sie **Systemmeldungen** oben im Fenster wie fo
 
 ![Systemnachrichten-Benachrichtigung](../../assets/upgrade-guide/system-messages.png)
 
-Weitere Informationen finden [&#x200B; unter „Konfigurieren &#x200B;](../../configuration/cli/configure-cron-jobs.md) Ausführen von cron“.
+Weitere Informationen finden [ unter „Konfigurieren ](../../configuration/cli/configure-cron-jobs.md) Ausführen von cron“.
 
 ## SET DATA_CONVERTER_BATCH_SIZE
 
@@ -358,7 +359,7 @@ So legen Sie die Umgebungsvariable fest:
 
 Aus Sicherheitsgründen erfordert Adobe Commerce bestimmte Berechtigungen für das Dateisystem. Berechtigungen unterscheiden sich von _[Inhaberschaft](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Die Eigentümerschaft bestimmt, wer Aktionen im Dateisystem durchführen kann. Berechtigungen bestimmen, was der Benutzer tun kann.
 
-Verzeichnisse im Dateisystem müssen von der Gruppe [Dateisystemeigentümer“ beschreibbar &#x200B;](../../installation/prerequisites/file-system/overview.md).
+Verzeichnisse im Dateisystem müssen von der Gruppe [Dateisystemeigentümer“ beschreibbar ](../../installation/prerequisites/file-system/overview.md).
 
 Um sicherzustellen, dass Ihre Dateisystemberechtigungen ordnungsgemäß festgelegt sind, melden Sie sich entweder beim Anwendungsserver an oder verwenden Sie die Dateimanager-Anwendung Ihres Hosting-Anbieters.
 
@@ -423,7 +424,7 @@ Weitere Informationen finden Sie unter [Dateisystemberechtigungen und -eigentüm
 
 ## Festlegen des `pub/` Ordnerstamms
 
-Weitere [&#x200B; finden Sie unter „Ändern des &#x200B;](../../installation/tutorials/docroot.md) zur Verbesserung der Sicherheit“.
+Weitere [ finden Sie unter „Ändern des ](../../installation/tutorials/docroot.md) zur Verbesserung der Sicherheit“.
 
 ## Installieren des Composer-Aktualisierungs-Plug-ins
 

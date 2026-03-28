@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a22d08d6965c6abc288a1a171d25f4ff8bbd7ce
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '26969'
+source-wordcount: '26968'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Jetzt überprüfen die APIs die Eingabe ordnungsgemäß und geben einen 400-Fehl
 
 _AC-6419 - [GitHub-Problem](https://github.com/magento/magento2/issues/35934) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Interner Server-Fehler `/V1/order/&lbrace;orderId&rbrace;/ship` API-Endpunkt
+#### Interner Server-Fehler `/V1/order/{orderId}/ship` API-Endpunkt
 
 Das System behebt jetzt den internen Server-Fehler in `/V1/order/{orderId}/ship` API-Endpunkt und gibt einen 400-Fehler zurück, da die Anfrage fehlerhaft ist.
 
@@ -261,7 +261,7 @@ _AC-15074 - [GitHub-Problem](https://github.com/magento/magento2/issues/40036) -
 
 #### Storefront Kundenkonto-Register: E-Mail-Adressformat wird mit anderem Domain-Format konvertiert
 
-Dieser Fehler behob ein Problem, bei dem Kunden-E-Mails mit Sonderzeichen in der Domain (z. B. tec55241@adòbe.com) automatisch in das Punycode-Format (tec55241@xn--adbe-mqa.com) konvertiert wurden.
+Dieser Fehler behob ein Problem, bei dem Kunden-E-Mails mit Sonderzeichen in der Domain (z. B. òbe.com) automatisch in das Punycode-Format (tec55241@xn--adbe-mqa.com) konvertiert wurden.
 In Magento 2.4.9-alpha3 stellt die Korrektur sicher, dass diese E-Mail-IDs unverändert und gültig bleiben, sodass Versandfehler vermieden werden.
 
 _AC-15177 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/68a45d0a)_
@@ -818,7 +818,7 @@ _AC-14464 - [GitHub-Problem](https://github.com/magento/magento2/issues/39820) -
 
 #### [2.4.8] Es können keine Bestellungen aufgegeben werden, bei denen die Stadt Ziffern 0-9, ein kaufmännisches Und-Zeichen, einen Punkt oder Klammern im Stadtnamen hat
 
-Es wurde ein Problem behoben, bei dem der Checkout für Städtenamen mit Sonderzeichen wie fehlgeschlagen ist. , &amp; oder Klammern.
+Es wurde ein Problem behoben, bei dem der Checkout für Städtenamen mit Sonderzeichen wie , &amp; oder Klammern fehlschlug.
 Jetzt werden Bestellungen mit solchen Städtenamen erfolgreich ohne Validierungsfehler platziert.
 
 _AC-14495 - [GitHub-Problem](https://github.com/magento/magento2/issues/39854) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/b9f5d6f7)_
@@ -2351,7 +2351,7 @@ _AC-8949 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/3b5a
 
 #### Die GraphQL-Antwort für die Bestellplatzierung enthält nicht die Ausnahmemeldung
 
-Die vorherige Änderung, die Fehler in einem anderen Format zurückgab, wurde rückgängig gemacht. Jetzt werden potenzielle Fehler konsistent zurückgegeben, sodass das GraphQL-Schema nicht beschädigt wird. Dieser sollte als bekannter BIC hinzugefügt werden, genehmigt von PM hier: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Die vorherige Änderung, die Fehler in einem anderen Format zurückgab, wurde rückgängig gemacht. Jetzt werden potenzielle Fehler konsistent zurückgegeben, sodass das GraphQL-Schema nicht beschädigt wird. Dieser sollte als bekannter BIC hinzugefügt werden, genehmigt von PM hier: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2636,7 +2636,7 @@ _ACP2E-4233 - [GitHub-Code-](https://github.com/magento/magento2/commit/98f028ab
 
 #### [MSI] Fehlgeschlagene MFTF-Tests im Zusammenhang mit den neuesten Mainline-Änderungen.
 
-Bevor der Fehler behoben wurde, wurde die Rechnungsadresse der Gastkunden, die sich für In-Store-Abholung ohne Versandadresse entschieden, automatisch mit der Adresse des Geschäfts ausgefüllt, die nicht geändert werden konnte, was zu falschen Rechnungsdetails führte. In diesem Szenario kann die Rechnungsadresse nach der Fehlerbehebung bearbeitet werden, sodass die Gäste ihre eigenen Details eingeben können. Registrierte Benutzer sehen ihre gespeicherte Rechnungsadresse anstelle der des Stores.
+Bevor der Fehler behoben wurde, wurde die Rechnungsadresse von Gastkunden, die sich für In-Store-Abholung ohne Versandadresse entschieden, automatisch mit der Adresse des Geschäfts ausgefüllt, die nicht geändert werden konnte, was zu falschen Rechnungsdetails führte. In diesem Szenario kann die Rechnungsadresse nach der Fehlerbehebung bearbeitet werden, sodass die Gäste ihre eigenen Details eingeben können. Registrierte Benutzer sehen ihre gespeicherte Rechnungsadresse anstelle der des Shops.
 
 _ACP2E-4260 - [GitHub-Code-](https://github.com/magento/magento2/commit/ab891304) - [GitHub-Code-Beitrag](https://github.com/magento/inventory/commit/13e432a6)_
 
@@ -2833,7 +2833,7 @@ _ACP2E-4061 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/6
 
 #### Store-spezifischer Absender wird nicht für E-Mails von Geschenkkarten verwendet
 
-Wenn bisher eine E-Mail-Vorlage für eine Geschenkkarte gesendet wurde, nachdem eine Rechnung aus einem anderen Geschäft erstellt wurde, wurde der Name des Besitzers in den Admin-Konfigurationseinstellungen nicht in den E-Mail-Kopfzeilen angezeigt, wenn der Kunde die E-Mail erhalten hat. Nachdem diese Fehlerbehebung angewendet wurde, enthalten die E-Mail-Kopfzeilen jetzt die E-Mail-Informationen des entsprechenden Geschäftsinhabers.
+Wenn bisher eine E-Mail-Vorlage für eine Geschenkkarte gesendet wurde, nachdem eine Rechnung in einem anderen Geschäft erstellt wurde, wurde der Name des Besitzers in den Admin-Konfigurationseinstellungen nicht in den E-Mail-Kopfzeilen angezeigt, wenn der Kunde die E-Mail erhalten hat. Nachdem diese Fehlerbehebung angewendet wurde, enthalten die E-Mail-Kopfzeilen jetzt die E-Mail-Informationen des entsprechenden Geschäftsinhabers.
 
 _ACP2E-4310_
 
@@ -3255,7 +3255,7 @@ Die Funktion „Kundensegment“ enthält jetzt einen Caching-Mechanismus, um di
 
 _ACP2E-4299_
 
-#### [Cloud][experienceleague] Katalogpreisregel nicht angewendet
+#### `[Cloud][experienceleague]` Katalogpreisregel nicht angewendet
 
 Vor der Katalogpreisfixierung galten die Preisregeln nicht, wenn `special_price` nur auf Website-Ebene festgelegt wurde (nicht auf „Alle Store-Ansichten„). Nach der Korrektur gelten die Katalogpreisregeln jetzt korrekt, wenn `special_price` auf Website-Ebene festgelegt wird, indem zuerst der Standardspeicher der Website überprüft wird.
 
@@ -3487,7 +3487,7 @@ _ACP2E-4226_
 
 #### Navigieren zwischen Websites in der Vorschau für Zeitplanaktualisierung nicht möglich
 
-Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
+Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
 
 _ACP2E-4308 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0a3b7032)_
 

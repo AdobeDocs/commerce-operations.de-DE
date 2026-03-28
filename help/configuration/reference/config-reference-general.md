@@ -3,7 +3,7 @@ title: Referenz zu allgemeinen Konfigurationspfaden
 description: Erfahren Sie mehr über allgemeine und erweiterte Konfigurationspfade und -werte für Adobe Commerce. Erkunden Sie die System-, Sicherheits- und administrativen Konfigurationsoptionen.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Referenz zu allgemeinen und erweiterten Konfigurationspfaden
 
-In diesem Thema werden allgemeine und erweiterte Konfigurationspfade sowie _nicht_ [&#x200B; und systemspezifische Werte](config-reference-sens.md) aufgeführt. Der [`magento app:config:dump` Befehl &#x200B;](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte.
+In diesem Thema werden allgemeine und erweiterte Konfigurationspfade sowie _nicht_ [ und systemspezifische Werte](config-reference-sens.md) aufgeführt. Der [`magento app:config:dump` Befehl ](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte.
 
 Informationen dazu, wie Sie Konfigurationseinstellungen optional überschreiben oder vertrauliche Einstellungen festlegen können, finden Sie unter [Verwenden von Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen](override-config-settings.md#environment-variables).
 
@@ -30,8 +30,8 @@ Diese Konfigurationswerte sind in der Admin unter **Stores** > Einstellungen > *
 | Länder zulassen | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Postleitzahl ist optional für | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
 | Länder der Europäischen Union | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![sensitiv](/help/assets/configuration/cloud-sens.png) |
-| Top-Ziele | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Status ist erforderlich für | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Top-Ziele | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| Status ist erforderlich für | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Status auswählen, wenn dies für das Land optional ist | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Zeitzone | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Gebietsschema | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |

@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6752688390a8bea98b49d235515f094386d88bd4
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '3444'
 ht-degree: 0%
@@ -7,17 +7,13 @@ ht-degree: 0%
 ---
 # Magento Open Source-Pakete
 
-<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/open-source/composer_lock.json' file
- -->
+<!-- The 'packages' variable contains the 'packages' node of the '_data/codebase/open-source/composer_lock.json' file -->
 
-<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/open-source/composer_lock.json' file
- -->
+<!-- The 'packages-dev' variable contains the 'packages-dev' node of the '_data/codebase/open-source/composer_lock.json' file -->
 
-<!-- The 'product' variable contains data of the 'magento/product-community-edition' package
- -->
+<!-- The 'product' variable contains data of the 'magento/product-community-edition' package -->
 
-<!-- The edition variable contains `open-source` value from the _data/names.yml file
- -->
+<!-- The edition variable contains `open-source` value from the _data/names.yml file -->
 
 Magento Open Source verwendet Composer, um PHP-Pakete zu verwalten.
 
