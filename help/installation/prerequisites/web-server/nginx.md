@@ -2,7 +2,7 @@
 title: Installieren von Nginx für On-Premise-Bereitstellungen
 description: Erfahren Sie, wie Sie den Nginx-Webserver für lokale Adobe Commerce-Bereitstellungen installieren und konfigurieren. Richten Sie PHP-FPM und Ihren virtuellen Host ein.
 feature: Install, Configuration
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
 source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt
