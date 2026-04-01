@@ -29,7 +29,7 @@ sudo apt -y install nginx
 
 Sie können auch [Nginx aus der Quelle erstellen](https://www.armanism.com/blog/install-nginx-on-ubuntu).
 
-Nachdem Sie die folgenden Abschnitte ausgeführt und die Anwendung installiert haben, verwenden Sie die Beispielkonfigurationsdatei zum [ von Nginx](#configure-nginx). Diese empfohlene Konfiguration behält sowohl die Funktionalität als auch die Sicherheit des Commerce-Programms bei.
+Nachdem Sie die folgenden Abschnitte ausgeführt und die Anwendung installiert haben, verwenden Sie die Beispielkonfigurationsdatei zum [&#x200B; von Nginx](#configure-nginx). Diese empfohlene Konfiguration behält sowohl die Funktionalität als auch die Sicherheit des Commerce-Programms bei.
 
 ### Installieren und Konfigurieren von PHP-FPM
 
@@ -45,7 +45,7 @@ So installieren und konfigurieren Sie `php-fpm`:
 
    >[!NOTE]
    >
-   >Ersetzen Sie `<php-version>` durch die unterstützte PHP-Nebenversion, [ unter „Systemanforderungen](../../system-requirements.md) für die Adobe Commerce-Version aufgeführt ist, die Sie installieren. Verwenden Sie denselben Wert in den Dateipfaden, dem Service-Namen und dem Socket-Pfad in den folgenden Schritten.
+   >Ersetzen Sie `<php-version>` durch die unterstützte PHP-Nebenversion, [&#x200B; unter „Systemanforderungen](../../system-requirements.md) für die Adobe Commerce-Version aufgeführt ist, die Sie installieren. Verwenden Sie denselben Wert in den Dateipfaden, dem Service-Namen und dem Socket-Pfad in den folgenden Schritten.
 
 1. Öffnen Sie die `php.ini` Dateien in einem Editor:
 
@@ -91,7 +91,7 @@ Sie haben verschiedene Möglichkeiten, Adobe Commerce herunterzuladen:
 
 Dieses Beispiel zeigt eine Composer-basierte Installation über die Befehlszeile.
 
-1. Melden Sie [ als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
+1. Melden Sie [&#x200B; als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
 
 1. Wechseln Sie in das Verzeichnis des Webservers docroot oder in ein Verzeichnis, das Sie als virtuellen Host docroot konfiguriert haben. Für dieses Beispiel verwenden wir den Ubuntu-`/var/www/html`.
 
@@ -382,7 +382,7 @@ Sie haben verschiedene Möglichkeiten, Adobe Commerce herunterzuladen:
 
 Dieses Beispiel zeigt eine Composer-basierte Installation über die Befehlszeile.
 
-1. Melden Sie [ als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
+1. Melden Sie [&#x200B; als „Dateisystemeigentümer](../file-system/overview.md) bei Ihrem Anwendungs-Server an.
 
 1. Wechseln Sie in das Verzeichnis des Webservers docroot oder in ein Verzeichnis, das Sie als virtuellen Host docroot konfiguriert haben. Verwenden Sie für dieses Beispiel die CentOS-`/usr/share/nginx/html`.
 
