@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '25717'
+source-wordcount: '25765'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ jQuery/fileUploader-Bibliothek wurde entfernt, da sie in die Uppy-Bibliothek mig
 _AC-11911 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7cabfb46)_
 
 #### Hinzufügen der Kompatibilität mit MySQL 8.4 LTS für Magento CE
+
+Keine Beschreibung verfügbar.
 
 _AC-11995 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -67,13 +69,19 @@ _AC-12025 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/de4
 
 #### Hinzufügen der Kompatibilität mit MySQL 8.4 LTS für EE
 
+Keine Beschreibung verfügbar.
+
 _AC-12032 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Hinzufügen der Kompatibilität mit MySQL 8.4 LTS für B2B
 
+Keine Beschreibung verfügbar.
+
 _AC-12034 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Hinzufügen der Kompatibilität mit MySQL 8.4 LTS für Bundle-Erweiterungen
+
+Keine Beschreibung verfügbar.
 
 _AC-12074 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -85,6 +93,8 @@ _AC-12085 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/b34
 
 #### Abonnentenoptimierung - PhpUnit10
 
+Keine Beschreibung verfügbar.
+
 _AC-12165 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/90e25b6b)_
 
 #### Unterstützen Sie weitere Verbindungsversuche für Redis-Sitzung und kompatibel mit colinmollenhour/php-redis-session-abstract v2.0.0
@@ -94,6 +104,8 @@ Aktualisierte neueste Version von colinmollenhour/php-redis-session-abstract v2.
 _AC-12267 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/672a2e61)_
 
 #### Untersuchung der Fehler bei Automatisierungstests mit MySQL 8.4 LTS
+
+Keine Beschreibung verfügbar.
 
 _AC-12576 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/672a2e61)_
 
@@ -115,6 +127,8 @@ Gewährleistung der Kompatibilität und aktuellen Funktionalität. Zuvor konnte 
 _AC-12715 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/b34c0a75)_
 
 #### Untersuchen des Modultest-Fehlers aufgrund einer Aktualisierung des phpUnit-Patches während des Komponenten-Upgrades
+
+Keine Beschreibung verfügbar.
 
 _AC-12823 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/b34c0a75)_
 
@@ -299,6 +313,8 @@ _AC-10782 - [GitHub-Problem](https://github.com/magento/magento2/issues/38331) -
 
 #### Aktualisierung des Administratorkennworts.
 
+Keine Beschreibung verfügbar.
+
 _AC-10886 - [GitHub-Problem](https://github.com/magento/magento2/issues/38352) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### Mein Konto Hinzufügen der Adresse stürzt beim Speichern ab
@@ -387,6 +403,8 @@ _ACP2E-3038 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7
 ### Konto, Warenkorb und Checkout
 
 #### Benutzerdefiniertes Kundenadressenattribut „Auswählen“ wird nicht für neue Kundenadresse gerendert
+
+Keine Beschreibung verfügbar.
 
 _AC-2341 - [GitHub-Problem](https://github.com/magento/magento2/issues/34950)_
 
@@ -1482,6 +1500,8 @@ _AC-12283 - [GitHub-Problem](https://github.com/magento/magento2/issues/38845) -
 
 #### Die Widget-Kategoriestruktur wird nicht korrekt gerendert
 
+Keine Beschreibung verfügbar.
+
 _AC-12692 - [GitHub-Problem](https://github.com/magento/magento2/issues/39008) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/58e40ceb)_
 
 #### Die Meldung „Standardwert wird verwendet“ wird beim Ändern des Designs auf der Design-Konfigurationsseite nicht angezeigt
@@ -1878,7 +1898,7 @@ Das System hält sich jetzt an den Kodierungsstandard, indem es das verbotene `@
 
 _AC-8356 - [GitHub-Problem](https://github.com/magento/magento2/issues/37250) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37000)_
 
-#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[&lbrace;composer,auth&rbrace;.json]` unterbrochen.
+#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[{composer,auth}.json]` unterbrochen.
 
 Nach der Behebung eines Syntaxfehlers in editorconfig wendet das System jetzt einen Einzug mit vier Leerzeichen korrekt auf die Dateien composer und auth.json an. Aufgrund eines Leerzeichens in der EditorConfig-Syntax wurden diese Dateien zuvor falsch mit einem Einzug aus zwei Leerzeichen formatiert.
 
@@ -2022,7 +2042,7 @@ Das Problem wurde behoben, nachdem die Prüfung bei der Anforderung einer Produk
 
 _ACP2E-2653 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### GraphQL-Produktanruf, der den Preisfilter enthält `&lbrace;from:"0"&rbrace;` kein Ergebnis zurückgibt
+#### GraphQL-Produktanruf, der den Preisfilter enthält `{from:"0"}` kein Ergebnis zurückgibt
 
 Zuvor gab GraphQL-Produkte, die mit dem Filter nach Nullpreisen suchten, aufgrund einer ausgelösten Ausnahme überhaupt keine Ergebnisse zurück. Jetzt gibt die Suche die erwarteten Ergebnisse zurück.
 
@@ -2765,6 +2785,8 @@ _AC-11474 - [GitHub-Problem](https://github.com/magento/magento2/issues/38486) -
 
 #### Die Navigation in der Kategoriestruktur führt zu Fehlern in Redis: „Redis-Sitzung hat gleichzeitige Verbindungen überschritten“
 
+Keine Beschreibung verfügbar.
+
 _AC-12571 - [GitHub-Problem](https://github.com/magento/magento2/issues/38851) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0611e750)_
 
 #### CSP-Probleme in Kombination mit dev/css/use_css_critical_path
@@ -2891,6 +2913,8 @@ Das System zeigt jetzt den Preis einfacher Produkte korrekt an, wenn sie über d
 _AC-11810 - [GitHub-Problem](https://github.com/magento/magento2/issues/38603)_
 
 #### Penny-Rundungsfehler in Katalogregel
+
+Keine Beschreibung verfügbar.
 
 _AC-13855 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3072,6 +3096,8 @@ _AC-13053 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/3ea
 
 #### Magento/module-open-search ist von einer nicht vorhandenen OpenSearch-PHP-Verzweigung abhängig
 
+Keine Beschreibung verfügbar.
+
 _AC-13721 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/05dc0bbf)_
 
 #### Die Tabelle search_query hat bei großer Größe große Auswirkungen auf die Ladezeit des Frontends
@@ -3202,9 +3228,13 @@ _AC-13362 - [GitHub-Problem](https://github.com/magento/magento2/issues/31399) -
 
 #### MAGETWO-95118: Überprüfen des Verhaltens beim persistenten Warenkorb nach Ablauf der Sitzung
 
+Keine Beschreibung verfügbar.
+
 _AC-13478 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Beheben von statischen Tests, um die Verwendung durch Erweiterungen von 3D-Anbietern zu ermöglichen
+
+Keine Beschreibung verfügbar.
 
 _AC-13848 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3271,6 +3301,8 @@ Diese PR verbessert die Fehlermeldung, wenn eine Komponente bei Bedarf nicht gel
 _AC-13472 - [GitHub-Problem](https://github.com/magento/magento2/issues/36761) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/38971)_
 
 #### PHP 8.4 Veraltungsfehler, die Build-Fehler in 2.4-develop verursachen
+
+Keine Beschreibung verfügbar.
 
 _AC-14004 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1da9ba6f)_
 

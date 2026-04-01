@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '27921'
+source-wordcount: '27999'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,8 @@ _AC-10782 - [GitHub-Problem](https://github.com/magento/magento2/issues/38331) -
 
 #### Aktualisierung des Administratorkennworts.
 
+Keine Beschreibung verfügbar.
+
 _AC-10886 - [GitHub-Problem](https://github.com/magento/magento2/issues/38352) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### Mein Konto Hinzufügen der Adresse stürzt beim Speichern ab
@@ -171,6 +173,8 @@ Das System ermöglicht jetzt, dass die Felder „Als Kunden-Opt-in anmelden“ u
 _AC-13000 - [GitHub-Problem](https://github.com/magento/magento2/issues/32329) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/32359)_
 
 #### Die Startseite der Frontend-Benutzeroberfläche in der Dropdown-Liste meines Profils ist nicht vorhanden.(gelegentlich)
+
+Keine Beschreibung verfügbar.
 
 _AC-14299_
 
@@ -237,6 +241,8 @@ _ACP2E-3038 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7
 
 #### Benutzerdefiniertes Kundenadressenattribut „Auswählen“ wird nicht für neue Kundenadresse gerendert
 
+Keine Beschreibung verfügbar.
+
 _AC-2341 - [GitHub-Problem](https://github.com/magento/magento2/issues/34950)_
 
 ### Admin-Benutzeroberfläche
@@ -285,9 +291,13 @@ _AC-13529 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/6cf
 
 #### Wenn die maximale Anzahl von Anfragen zum Zurücksetzen des Passworts“ größer als 0 festgelegt ist, z. B.: 3 , werden Fehlermeldungen zum „Überschreiten des Grenzwerts“ gesendet, bevor das Limit erreicht wird, d. h. ab dem zweiten Mal
 
+Keine Beschreibung verfügbar.
+
 _AC-13767_
 
 #### Obwohl die maximale Anzahl von „Anfragen zum Zurücksetzen des Kennworts“ auf 0 ( deaktiviert) festgelegt ist, werden „Fehlermeldungen zum Überschreiten des Grenzwerts ab dem 2. Mal gesendet“
+
+Keine Beschreibung verfügbar.
 
 _AC-13768_
 
@@ -298,6 +308,8 @@ Frühere rote Sternchen wurden nicht für Telefonnummer angezeigt, aber  Telefo
 _AC-13850 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/c699c206)_
 
 #### In Admin Wenn wir versuchen, die Schaltfläche Bestellung neu anzuordnen ist nicht anklickbar. (gelegentlich)
+
+Keine Beschreibung verfügbar.
 
 _AC-14300_
 
@@ -605,6 +617,8 @@ _ACP2E-3187 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/e
 
 #### 2.4.8-beta102-Paket Enterprise Edition schlägt mit Anwendungsausnahmen fehl
 
+Keine Beschreibung verfügbar.
+
 _AC-13501_
 
 #### Produkte, die einem freigegebenen Katalog zugewiesen sind, werden bei der Ausführung eines partiellen Index nicht am Frontend angezeigt
@@ -684,6 +698,8 @@ _ACP2E-3391_
 
 #### Die Schaltfläche „Admin Express-Checkout“ ist deaktiviert.
 
+Keine Beschreibung verfügbar.
+
 _AC-14293_
 
 #### Pay via LPM
@@ -699,6 +715,8 @@ Das System ermöglicht jetzt Express-Zahlungsmethoden für konfigurierbare Produ
 _BUNDLE-3368_
 
 #### Fehler bei CVV-Überprüfung fehlgeschlagen
+
+Keine Beschreibung verfügbar.
 
 _BUNDLE-3369_
 
@@ -810,9 +828,13 @@ _AC-13302 - [GitHub-Problem](https://github.com/magento/magento2/issues/39292) -
 
 #### Geschenk-Registrierung Produkt wird nicht richtig angezeigt
 
+Keine Beschreibung verfügbar.
+
 _AC-13797_
 
 #### Geschenkregistrierung Produkt wird nicht richtig angezeigt
+
+Keine Beschreibung verfügbar.
 
 _AC-13841_
 
@@ -1531,6 +1553,8 @@ _AC-12283 - [GitHub-Problem](https://github.com/magento/magento2/issues/38845) -
 
 #### Die Widget-Kategoriestruktur wird nicht korrekt gerendert
 
+Keine Beschreibung verfügbar.
+
 _AC-12692 - [GitHub-Problem](https://github.com/magento/magento2/issues/39008) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/58e40ceb)_
 
 #### Die Meldung „Standardwert wird verwendet“ wird beim Ändern des Designs auf der Design-Konfigurationsseite nicht angezeigt
@@ -1909,6 +1933,8 @@ _AC-13149 - [GitHub-Problem](https://github.com/magento/magento2/issues/39219) -
 
 #### setup:upgrade schlägt mit MariaDB 11.4-Version aufgrund von Änderungen an Zeichensatz und Sortierung fehl
 
+Keine Beschreibung verfügbar.
+
 _AC-13247_
 
 #### [Problem] Entfernen Sie alle Marketing-GET-Parameter, um den Cache zu minimieren
@@ -1971,7 +1997,7 @@ Das System hält sich jetzt an den Kodierungsstandard, indem es das verbotene `@
 
 _AC-8356 - [GitHub-Problem](https://github.com/magento/magento2/issues/37250) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37000)_
 
-#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[&lbrace;composer,auth&rbrace;.json]` unterbrochen.
+#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[{composer,auth}.json]` unterbrochen.
 
 Nach der Behebung eines Syntaxfehlers in editorconfig wendet das System jetzt einen Einzug mit vier Leerzeichen korrekt auf die Dateien composer und auth.json an. Aufgrund eines Leerzeichens in der EditorConfig-Syntax wurden diese Dateien zuvor falsch mit einem Einzug aus zwei Leerzeichen formatiert.
 
@@ -2085,6 +2111,8 @@ _AC-7976 - [GitHub-Problem](https://github.com/magento/magento2/issues/36877) - 
 
 #### 2.4.8-beta1 EE-Berichte werden aufgrund der Magento-Ausnahme nicht generiert
 
+Keine Beschreibung verfügbar.
+
 _AC-13011_
 
 ### Framework, UI-Framework
@@ -2127,7 +2155,7 @@ Das Problem wurde behoben, nachdem die Prüfung bei der Anforderung einer Produk
 
 _ACP2E-2653 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### GraphQL-Produktanruf, der den Preisfilter enthält `&lbrace;from:"0"&rbrace;` kein Ergebnis zurückgibt
+#### GraphQL-Produktanruf, der den Preisfilter enthält `{from:"0"}` kein Ergebnis zurückgibt
 
 Zuvor gab GraphQL-Produkte, die mit dem Filter nach Nullpreisen suchten, aufgrund einer ausgelösten Ausnahme überhaupt keine Ergebnisse zurück. Jetzt gibt die Suche die erwarteten Ergebnisse zurück.
 
@@ -2662,13 +2690,19 @@ _ACP2E-3003 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/9
 
 #### [Braintree] Rückerstattung Online-Speicherung der Transaktion als transactionID-REFUND
 
+Keine Beschreibung verfügbar.
+
 _BUNDLE-3394_
 
 #### [Bestellungen ] Braintree + [CLOUD] Braintree (Kreditkarte) können nicht aufgeteilt werden
 
+Keine Beschreibung verfügbar.
+
 _BUNDLE-3421_
 
 #### [Braintree][Cloud]Das Braintree-SSL-Zertifikat läuft am 30. Juni ab
+
+Keine Beschreibung verfügbar.
 
 _BUNDLE-3422_
 
@@ -2981,6 +3015,8 @@ _AC-11474 - [GitHub-Problem](https://github.com/magento/magento2/issues/38486) -
 
 #### Die Navigation in der Kategoriestruktur führt zu Fehlern in Redis: „Redis-Sitzung hat gleichzeitige Verbindungen überschritten“
 
+Keine Beschreibung verfügbar.
+
 _AC-12571 - [GitHub-Problem](https://github.com/magento/magento2/issues/38851) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0611e750)_
 
 #### CSP-Probleme in Kombination mit dev/css/use_css_critical_path
@@ -3115,6 +3151,8 @@ Das System zeigt jetzt den Preis einfacher Produkte korrekt an, wenn sie über d
 _AC-11810 - [GitHub-Problem](https://github.com/magento/magento2/issues/38603)_
 
 #### Penny-Rundungsfehler in Katalogregel
+
+Keine Beschreibung verfügbar.
 
 _AC-13855 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3335,6 +3373,8 @@ _ACP2E-3383 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/2
 
 #### Die zweite Warenkorb-Preisregel wird nicht angewendet, wenn die erste Warenkorb-Regel bereits angewendet wurde
 
+Keine Beschreibung verfügbar.
+
 _AC-13751_
 
 ### Suche
@@ -3346,6 +3386,8 @@ Das System zeigt jetzt die Suchergebnisse auf der Seite Erweiterte Suche korrekt
 _AC-13053 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/3ea26621)_
 
 #### Magento/module-open-search ist von einer nicht vorhandenen OpenSearch-PHP-Verzweigung abhängig
+
+Keine Beschreibung verfügbar.
 
 _AC-13721 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/05dc0bbf)_
 
@@ -3396,6 +3438,8 @@ Stellen Sie sicher, dass UPS-Tarife an der Kasse und im Warenkorb sichtbar sind.
 _AC-11938 - [GitHub-Problem](https://github.com/magento/magento2/issues/38618) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/493e01f5)_
 
 #### UPS-REST-„Sandbox“- und „prod“-Setup-Anleitungsaktualisierungen in devDoc
+
+Keine Beschreibung verfügbar.
 
 _AC-12938_
 
@@ -3505,9 +3549,13 @@ _AC-13362 - [GitHub-Problem](https://github.com/magento/magento2/issues/31399) -
 
 #### MAGETWO-95118: Überprüfen des Verhaltens beim persistenten Warenkorb nach Ablauf der Sitzung
 
+Keine Beschreibung verfügbar.
+
 _AC-13478 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Integrationstests sind fehlgeschlagen Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission
+
+Keine Beschreibung verfügbar.
 
 _AC-13716_
 
@@ -3518,6 +3566,8 @@ Zuvor, wenn die Datenbank einen Datensatz über die Zielregel enthält, ohne das
 _AC-13722_
 
 #### Beheben von statischen Tests, um die Verwendung durch Erweiterungen von 3D-Anbietern zu ermöglichen
+
+Keine Beschreibung verfügbar.
 
 _AC-13848 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3584,6 +3634,8 @@ Diese PR verbessert die Fehlermeldung, wenn eine Komponente bei Bedarf nicht gel
 _AC-13472 - [GitHub-Problem](https://github.com/magento/magento2/issues/36761) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/38971)_
 
 #### PHP 8.4 Veraltungsfehler, die Build-Fehler in 2.4-develop verursachen
+
+Keine Beschreibung verfügbar.
 
 _AC-14004 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1da9ba6f)_
 

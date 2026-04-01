@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie CSS- und JavaScript-Dateien (JS) für Adobe C
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 5f4edc2e694c9bdbdffbe48b0e5d69907cbc0027
+source-git-commit: a08560eb307638a36fdc52224c41bdf2c5d47763
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Für eine reaktionsschnellere Commerce-Site optimieren Sie CSS- und JavaScript (JS)-Ressourcendateien und eliminieren Sie Render-Blocking-Ressourcen.
 
-- **Optimieren von CSS- und JS-Dateien** - Verringern Sie den Zeitaufwand für das Laden von CSS- und JavaScript (JS)-Dateien, indem Sie Adobe Commerce so konfigurieren, dass separate Dateien zusammengeführt, minimiert und zu einer einzigen Datei gebündelt werden.
+- **Optimieren von CSS- und JS-Dateien** - Verringern Sie den Zeitaufwand für das Laden von CSS- und JavaScript-Dateien (JS), indem Sie Adobe Commerce so konfigurieren, dass Dateien minimiert und gebündelt werden.
 - **Eliminieren von Render-Blocking-Ressourcen** - Erwägen Sie, wichtige JS- und CSS-Funktionen inline bereitzustellen und alle nicht kritischen JS-/CSS-Stile zurückzustellen. Eine Anleitung finden Sie unter [Beseitigen von Render-Blocker-Ressourcen](https://web.dev/render-blocking-resources/).
 
 ## Betroffene Produkte und Versionen
@@ -37,7 +37,7 @@ Führen Sie keine Dateien zusammen oder bündeln Sie sie, wenn Ihre Bereitstellu
 
 ### Verwenden von Admin
 
-Um die CSS-Zusammenführung oder -Minimierung zu aktivieren, navigieren Sie zu [!UICONTROL **Admin** > **Stores** > **Setting** > **Configuration** > **Advanced** > **Developer** > **CSS Settings**].
+Um die CSS-Zusammenführung oder -Minimierung zu aktivieren, navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL CSS Settings]**.
 
 ### Verwenden der Befehlszeile
 
@@ -63,9 +63,9 @@ So aktivieren Sie die CSS-Minimierung in Adobe Commerce in der Cloud-Infrastrukt
 
 ## Minimieren von JS-Dateien
 
-### Verwenden von Admin
+### Verwenden von [!UICONTROL Admin]
 
-Navigieren Sie in *Admin*-Seitenleiste zu **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**.
+Navigieren Sie in der [!UICONTROL Admin] Seitenleiste zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
 
 ### Verwenden der Befehlszeile
 
@@ -79,9 +79,13 @@ So aktivieren Sie die JS-Minimierung in Adobe Commerce auf der Cloud-Infrastrukt
 
 1. Übertragen Sie Änderungen in die `app/etc/config.php` und stellen Sie sie erneut bereit.
 
-## Zusammenführen und Bündeln von JS-Dateien
+## Bundle-JS-Dateien
 
-Sie können das Zusammenführen oder Bündeln in Commerce Admin aktivieren (Zusammenführen und Bündeln können nicht gleichzeitig aktiviert werden): [!UICONTROL **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**].
+Sie können die Bündelung im Commerce-[!UICONTROL Admin] aktivieren: **[!UICONTROL Stores]** > ***[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**.
+
+>[!NOTE]
+>
+>Zusammenführung und Bündelung können nicht gleichzeitig aktiviert werden.
 
 Sie können auch über die Befehlszeile die integrierte Bündelung (Basic Bundling) von Adobe Commerce aktivieren:
 
@@ -89,9 +93,18 @@ Sie können auch über die Befehlszeile die integrierte Bündelung (Basic Bundli
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## Zusammenführen von JS-Dateien (nicht empfohlen) {#merge-js-files}
+
+>[!WARNING]
+>
+>Es wird nicht empfohlen, **[!UICONTROL Merge JavaScript Files]** zu aktivieren. Diese Einstellung wurde nur für synchron geladene JavaScript im **[!UICONTROL HEAD]** Abschnitt der Seite entwickelt und kann dazu führen, dass Bundles und [!DNL RequireJS] nicht korrekt funktionieren. Sie wird nur aus Gründen der Abwärtskompatibilität beibehalten und bietet keinen Leistungsvorteil, wenn HTTP/2 aktiviert ist.
+>
+>Wenn Sie **[!UICONTROL Merge JavaScript Files]** aktiviert haben und Probleme auftreten, versuchen Sie, es zu deaktivieren, bevor Sie Patches anwenden. Siehe [ACSD-67908](../../../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md), wenn Sie die Zusammenführung nicht deaktivieren können.
+
 ## Weitere Informationen
 
 - [Client-seitige Optimierungseinstellungen](../../../performance/configuration.md#client-side-optimization-settings)
-- [Benutzerhandbuch: Ressourcendateien optimieren](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Tipps zur ](../../../performance/configuration.md#bundling-tips) in *Best Practices für die Konfiguration* - Bundle-Tools von Drittanbietern, HTTP/2 und Anleitungen zur veralteten JS- und CSS-Zusammenführung
+- [Benutzerhandbuch: Ressourcendateien optimieren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Frontend-Entwicklerhandbuch: CSS-Zusammenführung, Minimierung und Site-Performance](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Erweiterte JavaScript-Pakete](../../../performance/advanced-js-bundling.md)
