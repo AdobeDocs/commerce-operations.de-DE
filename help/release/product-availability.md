@@ -19,7 +19,7 @@ Unterstützte Versionen wurden von Adobe vollständig getestet. Unterstützung f
 
 >[!NOTE]
 >
->Die Adobe Commerce-Versionen unterstützen auch ([ Sicherheits-Patches](versions.md).
+>Die Adobe Commerce-Versionen unterstützen auch ([&#x200B; Sicherheits-Patches](versions.md).
 
 ## Von Adobe erstellte Erweiterungen
 
