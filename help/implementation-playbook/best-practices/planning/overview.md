@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices für die Implementierung in 
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Die folgenden Abschnitte enthalten Best Practice-Informationen für die Planungs
     <td>Beheben und verhindern Sie die fünf häufigsten Konfigurationsprobleme für Adobe Commerce Sites.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=de">Caching</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Caching</a></td>
     <td>Verwenden Sie die Cache-Management-Tools, um die Leistung Ihrer Site zu verbessern.</td>
   </tr>
   <tr>
@@ -76,15 +76,15 @@ Die folgenden Abschnitte enthalten Best Practice-Informationen für die Planungs
     <td colspan="2"><em>Service-Konfiguration</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=de">Schnell einrichten</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html">Schnell einrichten</a></td>
     <td>Konfigurieren Sie Fastly Services für Ihr Adobe Commerce in einem Cloud-Infrastrukturprojekt.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html?lang=de">Konfigurieren von Benachrichtigungskanälen für New Relic</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html">Konfigurieren von Benachrichtigungskanälen für New Relic</a></td>
     <td>Greifen Sie auf Ihr New Relic-Dashboard zu und analysieren Sie Daten aus Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt.</td>
   </tr>
   <tr>
-    <td><a href="redis-service-configuration.md">Konfigurieren von Redis</a></td>
+    <td><a href="redis-valkey-service-configuration.md">Konfigurieren von Redis/Valley</a></td>
     <td>Verbessern Sie die Caching-Leistung durch die Verwendung der erweiterten Redis-Cache-Implementierung für Adobe Commerce.</td>
   </tr>
   <tr>

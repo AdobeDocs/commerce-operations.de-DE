@@ -2,9 +2,9 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
+source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '161'
 ht-degree: 14%
 
 ---
@@ -27,8 +27,7 @@ ht-degree: 14%
       - [Reporting-Konfiguration](best-practices/planning/reporting-configuration.md)
       - [Datenbankkonfiguration für Cloud-Bereitstellungen&#x200B;](best-practices/planning/database-on-cloud.md)
       - [MySQL-Konfiguration](best-practices/planning/mysql-configuration.md)
-      - [Redis-Dienstkonfiguration](best-practices/planning/redis-service-configuration.md)
-      - [Valley-Service-Konfiguration](best-practices/planning/valkey-service-configuration.md)
+      - [Konfiguration des Redis/Valley-Dienstes](best-practices/planning/redis-valkey-service-configuration.md)
       - [OP-Cache-Speichergröße](best-practices/planning/opcache-memory-size.md)
       - [RealPath-Cachegröße](best-practices/planning/realpath-cache-size.md)
       - [Erweiterungen](best-practices/planning/extensions.md)
@@ -52,7 +51,7 @@ ht-degree: 14%
       - [Ändern des Kern- und Drittanbieter-Codes](best-practices/development/modifying-core-and-third-party-code.md)
    - Starten {#launch}
       - [Überblick](best-practices/launch/overview.md)
-      - [Konfigurieren von Web-Crawlern](best-practices/launch/robots-txt.md)
+      - [Web-Crawler konfigurieren](best-practices/launch/robots-txt.md)
       - [Sichern von Site und Infrastruktur](best-practices/launch/security-best-practices.md)
    - Wartung {#maintenance}
       - [Überblick](best-practices/maintenance/overview.md)
@@ -69,4 +68,4 @@ ht-degree: 14%
       - [Checkliste für die Aktualisierung](best-practices/maintenance/upgrade-checklist.md)
       - [Upgrade-Voraussetzungen für MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossar](glossary.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
