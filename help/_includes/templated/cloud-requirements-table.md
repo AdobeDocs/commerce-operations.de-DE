@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1f408f11955ef3c2bdb0ef9675b9dc6dbf78c0b7
+source-git-commit: d4759f2394d55d115e5da80c271152ee621a2683
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 47%
+source-wordcount: '786'
+ht-degree: 46%
 
 ---
 # Cloud-Anforderungstabelle
@@ -31,6 +31,12 @@ ht-degree: 47%
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
           11,4
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL New Relic]</span></td>
+      <td>
+          12.5.0+, 11.5.0.18+
       </td>
     </tr>
     <tr>
@@ -135,13 +141,13 @@ ht-degree: 47%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-          —
+          11.5.0.18+, 10.15.0.4+
       </td>
       <td>
-          —
+          11.5.0.18+, 10.15.0.4+
       </td>
       <td>
-          —
+          11.5.0.18+, 10.15.0.4+
       </td>
       <td>
           11.5.0.18+, 10.15.0.4+
@@ -362,13 +368,13 @@ ht-degree: 47%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-          —
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-          —
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
-          —
+          10.15.0.4+, 10.7.0.319+
       </td>
       <td>
           10.15.0.4+, 10.7.0.319+
@@ -762,13 +768,13 @@ ht-degree: 47%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-          —
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-          —
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
-          —
+          10.7.0.319+, 9.19.0.309+
       </td>
       <td>
           10.7.0.319+, 9.19.0.309+
@@ -1287,13 +1293,13 @@ ht-degree: 47%
     <tr>
       <td><span class="uicontrol">[!DNL New Relic]</span></td>
       <td>
-          —
+          9.19.0.309+
       </td>
       <td>
-          —
+          9.19.0.309+
       </td>
       <td>
-          —
+          9.19.0.309+
       </td>
       <td>
           9.19.0.309+
