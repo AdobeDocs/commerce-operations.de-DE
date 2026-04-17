@@ -8,9 +8,9 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: aedff83fe473691340f0f254e7c79ef7e632ac0d
+source-git-commit: 381d58d5fc9844aca88239e8e7ac39151dfc766c
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Verwenden Sie diese Empfehlungen, um Redis oder Valkey für das Caching und die 
 
 >[!NOTE]
 >
->Stellen Sie bei Commerce in Cloud-Infrastrukturumgebungen sicher, dass Sie die neueste Version des `ece-tools` verwenden. Falls nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=de). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des `composer show magento/ece-tools` CLI-Befehls überprüfen.
+>Stellen Sie bei Commerce in Cloud-Infrastrukturumgebungen sicher, dass Sie die neueste Version des `ece-tools` verwenden. Falls nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des `composer show magento/ece-tools` CLI-Befehls überprüfen.
 
 ## L2-Cache konfigurieren
 
@@ -48,7 +48,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie in [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) Konfigurationsreferenz im Handbuch _Commerce in der Cloud-Infrastruktur_.
+Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie in [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) Konfigurationsreferenz im Handbuch _Commerce in der Cloud-Infrastruktur_.
 
 Bei On-Premise-Installationen finden Sie weitere Informationen unter [Konfigurieren des Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)Seitencachings im _Konfigurationshandbuch_.
 
@@ -62,7 +62,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie in [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) Konfigurationsreferenz im Handbuch _Commerce in der Cloud-Infrastruktur_.
+Informationen zur Umgebungskonfiguration in der Cloud-Infrastruktur finden Sie in [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) Konfigurationsreferenz im Handbuch _Commerce in der Cloud-Infrastruktur_.
 
 Informationen zu On-Premise-Installationen finden Sie unter [Valkey konfigurieren](../../../configuration/cache/config-valkey.md) im _Konfigurationshandbuch_.
 
@@ -129,60 +129,6 @@ df -h /dev/shm
 
 Die Nutzung kann von Knoten zu Knoten variieren, sollte aber auf einen ähnlichen Wert konvergieren.
 
-## Benutzerdefinierte Ordner für den L2-Cache konfigurieren
-
-Bei der Optimierung der L2-Cache-Leistung können Sie die lokalen Cache-Dateien in einem benutzerdefinierten Hochleistungsverzeichnis speichern, z. B. auf einer RAM-Festplatte (`/dev/shm/`).
-
-Um anwendungsweite Konsistenz zu gewährleisten und fragmentierten Cache-Speicher zu verhindern, konfigurieren Sie sowohl die spezifischen L2-Backend-Optionen als auch die globale Verzeichnisregistrierung in der `app/etc/env.php`.
-
-**Best Practice:** Definieren Sie sowohl `local_backend_options['cache_dir']` als auch die globale `directories['cache']['path']`.
-
-- **`local_backend_options['cache_dir']`**: Leitet den Backend-Cache-Adapter (z. B. `Cm_Cache_Backend_File`) an, seine synchronisierten L2-Cache-Dateien am angegebenen Speicherort zu speichern.
-- **`directories['cache']['path']`**: Aktualisiert die Adobe Commerce `DirectoryList`-Registrierung und legt den benutzerdefinierten Pfad als endgültiges System-Cache-Verzeichnis für die gesamte Anwendung fest.
-
-### Vermeiden von Split-Cache-Verzeichnissen und GlusterFS-Segmentierungsfehlern
-
-Wenn Sie den benutzerdefinierten Pfad ausschließlich im `local_backend_options` definieren, funktioniert die L2-Cache-Engine ordnungsgemäß, aber die globale Anwendungsregistrierung erkennt `var/cache` weiterhin als standardmäßigen Cache-Speicherort.
-
-Diese Konfigurationsabweichung führt zu einem „Split-Brain“-Szenario, in dem Drittanbietererweiterungen oder zentrale Ausweichprozesse temporäre Dateien in das standardmäßige `var/cache` schreiben.
-
-**Kritische Auswirkungen auf Adobe Commerce Cloud:** Auf Pro-Architekturen wird das `var/`-Verzeichnis in einem freigegebenen verteilten Dateisystem gemountet. Das Erzwingen von Cache-E/A mit hoher Geschwindigkeit über diese Netzwerkbereitstellung überfordert den Client und ist ein primärer Trigger für **GlusterFS-Segmentierungsfehler und Cluster-weite Ausfälle**. Durch die Konfiguration beider Einstellungen wird sichergestellt, dass alle Cache-E/A-Vorgänge streng auf der lokalen, leistungsstarken Festplatte bleiben.
-
-### Konfigurationsbeispiel
-
-Um ein einzelnes, einheitliches Cache-Verzeichnis zu erzwingen, aktualisieren Sie Ihre `env.php`-Datei, um beide Konfigurationen einzuschließen:
-
-```php
-return [
-    // 1. Override the global directory registry
-    'directories' => [
-        'cache' => [
-            'path' => '/dev/shm/magento_cache'
-        ]
-    ],
-    // 2. Configure the L2 cache engine
-    'cache' => [
-        'frontend' => [
-            'default' => [
-                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
-                'backend_options' => [
-                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-                    'server' => '127.0.0.1',
-                    'port' => '6379',
-                    'database' => '1',
-                    // ... other redis configurations ...
-                    'local_backend' => 'Cm_Cache_Backend_File',
-                    'local_backend_options' => [
-                        'cache_dir' => '/dev/shm/magento_cache' 
-                    ]
-                ]
-            ]
-        ]
-    ],
-    // ...
-];
-```
-
 ## Slave-Verbindung aktivieren
 
 Aktivieren Sie die Slave-Verbindung in der `.magento.env.yaml`, damit Adobe Commerce eine zusätzliche schreibgeschützte Cache-Verbindung für Lesevorgänge verwenden kann, während der primäre Endpunkt weiterhin für Schreibvorgänge verwendet wird. Durch diese Konfiguration kann die Leselast auf dem primären Cache-Service reduziert und der Lesetraffic effektiver verteilt werden.
@@ -199,9 +145,9 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Informationen zur Umgebungskonfiguration für die Commerce Cloud-Infrastruktur finden Sie unter [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_use_slave_connection) im _Handbuch für Commerce in Cloud-Infrastruktur_.
+Informationen zur Umgebungskonfiguration für die Commerce Cloud-Infrastruktur finden Sie unter [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) im _Handbuch für Commerce in Cloud-Infrastruktur_.
 
-Konfigurieren Sie bei lokalen Adobe Commerce-Installationen die neue Redis-Cache-Implementierung mithilfe der `bin/magento setup`. Siehe [Verwenden von Redis für den &#x200B;](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)-Cache) im _Konfigurationshandbuch_.
+Konfigurieren Sie bei lokalen Adobe Commerce-Installationen die neue Redis-Cache-Implementierung mithilfe der `bin/magento setup`. Siehe [Verwenden von Redis für den ](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching)-Cache) im _Konfigurationshandbuch_.
 
 >[!TAB Valkey-Konfiguration]
 
@@ -213,7 +159,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Informationen zur Umgebungskonfiguration für die Commerce Cloud-Infrastruktur finden Sie unter [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#valkey_use_slave_connection) im _Handbuch für Commerce in Cloud-Infrastruktur_.
+Informationen zur Umgebungskonfiguration für die Commerce Cloud-Infrastruktur finden Sie unter [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) im _Handbuch für Commerce in Cloud-Infrastruktur_.
 
 Konfigurieren Sie bei lokalen Adobe Commerce-Installationen die neue Valkey-Cache-Implementierung mithilfe der `bin/magento setup`. Siehe [Konfigurieren von Valkey](../../../configuration/cache/config-valkey.md) im _Konfigurationshandbuch_.
 
@@ -359,7 +305,7 @@ stage:
 
 >[!NOTE]
 >
->Der `full_page`-Cache-Typ ist für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da sie &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>Der `full_page`-Cache-Typ ist für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da sie &quot;[&quot; ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Informationen zu On-Premise-Installationen finden Sie unter [Veraltete Cache](../../../configuration/cache/level-two-cache.md#stale-cache-options) im _Konfigurationshandbuch_.
 
@@ -368,7 +314,7 @@ Informationen zu On-Premise-Installationen finden Sie unter [Veraltete Cache](..
 >Die obige Konfiguration ermöglicht veralteten Cache im Frontend für den `default`-Cache, das veraltetes Cache-Verhalten auf alle Cache-Einträge anwendet, die dieses Frontend verwenden. Magento Core-Cache-Typen funktionieren in der Regel mit dieser Einstellung wie erwartet. Wenn Ihr Projekt jedoch benutzerdefinierten Code oder Erweiterungen enthält, die über die generische `\Magento\Framework\App\Cache`-API (z. B. `$this->cache->save()`) ohne dediziertes Cache-Frontend in den Cache schreiben, können diese Einträge während der Regenerierung auch veraltete Werte liefern.
 >
 >
->Wenn dies zu unerwartetem Verhalten in Ihren Anpassungen führt, lassen Sie den veralteten Cache im `default`-Frontend deaktiviert und aktivieren Sie ihn nur für ausgewählte Cache-Typen, wie es häufig [lokal) &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options).
+>Wenn dies zu unerwartetem Verhalten in Ihren Anpassungen führt, lassen Sie den veralteten Cache im `default`-Frontend deaktiviert und aktivieren Sie ihn nur für ausgewählte Cache-Typen, wie es häufig [lokal) ](../../../configuration/cache/level-two-cache.md#stale-cache-options).
 
 ### Veralteter Cache pro Cache-Typ einzeln aktivieren
 
@@ -544,7 +490,7 @@ Gehen Sie wie folgt vor, um eine dedizierte Instanz für Sitzungen bereitzustell
 
 1. Fordern Sie eine neue Redis-Instanz für Sitzungen in Produktions- und Staging-Umgebungen an.
 
-   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
+   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
 
    Dieses Update verursacht keine Ausfallzeiten, erfordert jedoch eine Bereitstellung, um den neuen Service zu aktivieren.
 
@@ -619,7 +565,7 @@ Gehen Sie wie folgt vor, um eine dedizierte Instanz für Sitzungen bereitzustell
 
 1. Fordern Sie eine neue Valley-Instanz an, die Sitzungen zu Produktions- und Staging-Umgebungen gewidmet ist.
 
-   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
+   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
 
    Dieses Update verursacht keine Ausfallzeiten, erfordert jedoch eine Bereitstellung, um den neuen Service zu aktivieren.
 
@@ -661,7 +607,7 @@ Gehen Sie wie folgt vor, um eine dedizierte Instanz für Sitzungen bereitzustell
 
 ## Cache-Komprimierung
 
-Wenn Sie mehr als 6 GB Redis- oder Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung aktivieren, um den von Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass diese Einstellung Client-seitige Leistung gegen Speichereinsparungen eintauscht. Wenn Sie über freie CPU-Kapazität verfügen, sollten Sie diese aktivieren. Siehe [Verwenden von Redis für &#x200B;](../../../configuration/cache/redis-session.md) oder [Verwenden von Valkey für &#x200B;](../../../configuration/cache/valkey-session.md) im _Konfigurationshandbuch_.
+Wenn Sie mehr als 6 GB Redis- oder Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung aktivieren, um den von Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass diese Einstellung Client-seitige Leistung gegen Speichereinsparungen eintauscht. Wenn Sie über freie CPU-Kapazität verfügen, sollten Sie diese aktivieren. Siehe [Verwenden von Redis für ](../../../configuration/cache/redis-session.md) oder [Verwenden von Valkey für ](../../../configuration/cache/valkey-session.md) im _Konfigurationshandbuch_.
 
 ```yaml
 stage:
@@ -679,7 +625,7 @@ stage:
 
 ## Asynchrone Freigabe aktivieren
 
-Um die `lazyfree` in Adobe Commerce auf der Cloud-Infrastruktur zu aktivieren, reichen Sie ein [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket)Ticket ein, in dem Sie darum bitten, die folgende Redis- oder Valkey-Konfiguration auf Ihre Umgebungen anzuwenden:
+Um die `lazyfree` in Adobe Commerce auf der Cloud-Infrastruktur zu aktivieren, reichen Sie ein [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)Ticket ein, in dem Sie darum bitten, die folgende Redis- oder Valkey-Konfiguration auf Ihre Umgebungen anzuwenden:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -701,7 +647,7 @@ Wenn `lazyfree` aktiviert ist, lädt Redis oder Valley die Speicherrückgewinnun
 
 ## Multithread-E/A aktivieren
 
-Um das Redis-I/O-Threading in Adobe Commerce in der Cloud-Infrastruktur zu aktivieren, senden Sie ein [Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) mit der unten stehenden Anfrage zur I/O-Threading-Konfiguration. Diese Konfiguration kann den Durchsatz verbessern, indem Socket-Lese- und -Schreibvorgänge sowie das Parsen von Befehlen vom Haupt-Thread ausgelagert werden, was zulasten einer höheren CPU-Nutzung geht. Validieren Sie unter Last und überwachen Sie Ihre Hosts.
+Um das Redis-I/O-Threading in Adobe Commerce in der Cloud-Infrastruktur zu aktivieren, senden Sie ein [Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) mit der unten stehenden Anfrage zur I/O-Threading-Konfiguration. Diese Konfiguration kann den Durchsatz verbessern, indem Socket-Lese- und -Schreibvorgänge sowie das Parsen von Befehlen vom Haupt-Thread ausgelagert werden, was zulasten einer höheren CPU-Nutzung geht. Validieren Sie unter Last und überwachen Sie Ihre Hosts.
 
 >[!BEGINTABS]
 
