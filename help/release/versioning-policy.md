@@ -2,9 +2,9 @@
 title: Release-Richtlinie
 description: Erfahren Sie mehr über die verschiedenen Typen von Adobe Commerce-Versionen.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
+source-git-commit: ef1f4b3199e7e1daa670e537b97175f58327aa12
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Beta-Versionen können Mängel enthalten und werden „wie besehen“ ohne Gewä
 
 ## Hotfix
 
-Hotfixes sind Patches, die wirkungsvolle Sicherheits- oder Qualitätskorrekturen enthalten, z. B. Fehlerbehebungen für Zero-Day-Sicherheitslücken, die viele Händler betreffen. Adobe veröffentlicht Hotfixes (nach Bedarf) für unterstützte Adobe Commerce-Versionen, wenn kritische Sicherheits- oder Qualitätsprobleme sie betreffen. Hotfixes werden im Abschnitt [Bekannte Probleme](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) der Wissensdatenbank veröffentlicht. Diese Fehlerbehebungen sind in der nächsten geplanten Patch-Version enthalten.
+Hotfixes sind Patches, die wirkungsvolle Sicherheits- oder Qualitätskorrekturen enthalten, z. B. Fehlerbehebungen für Zero-Day-Sicherheitslücken, die viele Händler betreffen. Adobe veröffentlicht Hotfixes (nach Bedarf) für unterstützte Adobe Commerce-Versionen, wenn kritische Sicherheits- oder Qualitätsprobleme sie betreffen. Hotfixes werden über das [Quality Patches Tool](../tools/quality-patches-tool/usage.md) bereitgestellt. Diese Fehlerbehebungen sind in der nächsten geplanten Patch-Version enthalten.
 
 >[!NOTE]
 >
@@ -71,20 +71,14 @@ Hotfixes sind Patches, die wirkungsvolle Sicherheits- oder Qualitätskorrekturen
 
 ## Einzelnes Patch
 
-Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmtes Problem. Diese Fehlerbehebungen werden auf die unterstützten Nebenversionen von Adobe Commerce angewendet. Adobe veröffentlicht individuelle Patches nach Bedarf für Adobe Commerce gemäß der [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmtes Problem. Diese Fehlerbehebungen werden auf die unterstützten Nebenversionen von Adobe Commerce angewendet. Adobe veröffentlicht individuelle Patches nach Bedarf für Adobe Commerce gemäß der [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Sie werden über das [Quality Patches Tool](../tools/quality-patches-tool/usage.md) bereitgestellt.
 
 >[!NOTE]
 >
 >Einzelne Patches enthalten keine rückwärts inkompatiblen Änderungen.
 
-## Isolierte Sicherheitskorrekturen
-
-Isolierte Patches sind nicht kumulative Sicherheitskorrekturen, die unabhängig von einem vollständigen Sicherheits-Patch veröffentlicht werden, um eine schnellere Implementierung zu ermöglichen. Jede einzelne Sicherheitskorrektur behandelt ein bestimmtes Sicherheitsproblem und ist entweder im neuesten oder im kommenden vollständigen Sicherheitspatch enthalten. Details zum Problem finden Sie im entsprechenden Sicherheitsbulletin, das auf einen Knowledgebase-Artikel (KB) verweist, der die Fehlerbehebungsdetails, die Anwendung der Fehlerbehebung und zusätzliche Informationen enthält.
-
-Im [Sicherheitscenter](https://helpx.adobe.com/de/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
-
 ## Benutzerdefinierter Patch
 
-von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern. Benutzerdefinierte Patches werden über das [Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage) bereitgestellt.
+von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern.
 
 <!-- Last updated from includes: 2025-10-09 22:53:22 -->
