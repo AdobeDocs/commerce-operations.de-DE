@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3e003e0cf2428a5e6ec45292fa19aaa2b9e9324d
+source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.78 enthält die folgenden Patches:
 1. **ACP2E-4416**: Es wurde das Problem behoben, dass Kundenbelohnungspunkte nicht initialisiert wurden, wenn sie in der Admin erstellt wurden.
-1. **ACP2E-4419**: Behebt das Problem, dass Geschenkkarten nach erfolgreicher Validierung von reCAPTCHA v2 („Ich bin kein Roboter„) in der Storefront beim Checkout nicht korrekt angewendet werden.
+1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: Behebt das Problem, dass Geschenkkarten nach erfolgreicher Validierung von reCAPTCHA v2 („Ich bin kein Roboter„) in der Storefront beim Checkout nicht korrekt angewendet werden.
 1. **ACP2E-4431**: Behebt das Problem, dass verwandte Produkte, die von den Zielregeln abgeglichen werden, während des Neuindizierungsprozesses gelöscht werden.
 1. **ACP2E-4448**: Es wird das Problem behoben, dass Konfigurationsänderungen, die während Redis-Ausfällen vorgenommen wurden, nach der Redis-Wiederherstellung nicht widergespiegelt werden, was dazu führt, dass veraltete Werte bestehen bleiben.
 1. **ACP2E-4452**: Behebt das Problem, dass Produktpreise auf der Schnellbestellseite Steuern enthalten, unabhängig von der Konfiguration der Steueranzeige.
