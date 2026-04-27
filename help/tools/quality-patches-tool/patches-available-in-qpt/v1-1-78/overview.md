@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
+source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -24,7 +24,7 @@ QPT v1.1.78 enthält die folgenden Patches:
 1. **ACP2E-4456**: Es wird ein Problem behoben, bei dem durch Stornieren einer Bestellung mit einer GraphQL-Mutation eine Bestellung, die vollständig mit Geschenkkarten bezahlt wurde, nicht in den Status „Geschlossen“ wechselt.
 1. **ACP2E-4507**: Es wurde das Problem behoben, dass die Kennwortoptionskonfiguration für Anfragen zum Zurücksetzen des Kundenkennworts, die durch GraphQL-Mutationen vorgenommen wurden, nicht angewendet wurde.
 1. **ACP2E-4513**: Behebt das Problem, dass abgelaufene CAPTCHA-Bilder nicht aus dem System gelöscht werden.
-1. **ACP2E-4522**: Fehlerkorrektur - In der Tabelle quote_coupons tritt jetzt kein Fehler mehr auf, wenn mehrere Anfragen zum Zusammenführen des Warenkorbs oder zum Speichern von Angeboten gleichzeitig ausgeführt werden.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: Fehlerkorrektur - In der Tabelle quote_coupons tritt jetzt kein Fehler mehr auf, wenn mehrere Anfragen zum Zusammenführen des Warenkorbs oder zum Speichern von Angeboten gleichzeitig ausgeführt werden.
 1. **ACP2E-4528**: Behebt das Problem der Stadtvalidierung in Kundenadressen, das jetzt einen Schrägstrich (/) zulässt und ungültige Zeichen wie !, &quot;, # und ? zurückweist.
 1. **ACP2E-4535**: Es wurde ein Problem behoben, bei dem das Senden des Formulars bei vergessenem Kennwort dazu führte, dass die Sitzung zerstört oder neu generiert wurde (PHPSESSID-Änderungen) und der Gastkorb gelöscht wurde.
 1. **ACP2E-4540**: Es wurde ein Problem behoben, bei dem die Fotorama-Bibliothek nicht korrekt geladen wurde, sodass nur das erste angehängte Bild sichtbar wurde.
