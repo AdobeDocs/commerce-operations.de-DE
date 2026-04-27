@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
+source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -29,7 +29,7 @@ QPT v1.1.78 enthält die folgenden Patches:
 1. **ACP2E-4535**: Es wurde ein Problem behoben, bei dem das Senden des Formulars bei vergessenem Kennwort dazu führte, dass die Sitzung zerstört oder neu generiert wurde (PHPSESSID-Änderungen) und der Gastkorb gelöscht wurde.
 1. **ACP2E-4540**: Es wurde ein Problem behoben, bei dem die Fotorama-Bibliothek nicht korrekt geladen wurde, sodass nur das erste angehängte Bild sichtbar wurde.
 1. **ACP2E-4555**: Behebt das Problem, dass moderne Telefonnummern &quot;.“ enthalten. oder &quot;/&quot; werden nicht ordnungsgemäß validiert.
-1. **ACP2E-4565**: Behebt das Problem, dass die Abfrage von Company GraphQL „Der aktuelle Kunde ist nicht autorisiert“ zurückgibt, wenn der Header X-Adobe-Company verwendet wird.
+1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: Behebt das Problem, dass die Abfrage von Company GraphQL „Der aktuelle Kunde ist nicht autorisiert“ zurückgibt, wenn der Header X-Adobe-Company verwendet wird.
 1. **ACP2E-4591**: Es wurde das Problem behoben, dass Kundensegmente, die auf der Bestellanzahl basieren, wie z. B. „Erstkäufer“, nicht aktualisiert haben, wenn Bestellungen über die REST-API aufgegeben wurden.
 1. **ACP2E-4609**: Es wird das Problem behoben, dass auf der Seite Meine Anführungszeichen keine Anführungszeichen anzeigt, wenn einige Anführungszeichen gelöschte Produkte enthalten.
 1. **ACP2E-4613**: Es wurde das Problem behoben, dass große Medienverzeichnisstrukturen zu langsamen gettree-Antworten führten, was zu verlängerten Ladezeiten der Verzeichnisstruktur der Media Gallery führte.
