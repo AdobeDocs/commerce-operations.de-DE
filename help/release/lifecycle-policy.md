@@ -2,9 +2,9 @@
 title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 3e7cef954a2be506c6f72e704710d16ed1d9b7a3
+source-git-commit: 3bf3c4261073ab649376bb5c7fb84ea591a09869
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '949'
 ht-degree: 2%
 
 ---
@@ -16,13 +16,13 @@ Um die Adobe Commerce-Lebenszyklusrichtlinie zu optimieren und die geschäftskri
 
 Während des dreijährigen Support-Fensters haben Kunden Zugriff auf:
 
-- **Qualitätskorrekturen**-Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) wenden. In der folgenden Tabelle wurden die Termine für das Ende der Software-Unterstützung für die Adobe Commerce-Versionen beschrieben.
+- **Qualitätskorrekturen**-Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenden. In der folgenden Tabelle wurden die Termine für das Ende der Software-Unterstützung für die Adobe Commerce-Versionen beschrieben.
 
 - **Sicherheitskorrekturen**-Adobe bietet Sicherheitskorrekturen durch kumulative Sicherheits-Patches und nicht kumulative [isolierte Sicherheits-Patch](versioning-policy.md#isolated-security-fixes)Dateien) für den dreijährigen Support-Zeitraum.
 
 - **Hotfixes**-Bei kritischen Sicherheitsproblemen wie z. B. Zero-Day-Sicherheitslücken bietet Adobe [Hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) für alle Kunden mit einer unterstützten Version, auch wenn sie nicht auf dem neuesten Patch oder der neuesten Sicherheits-Patch-Version sind. Beachten Sie, dass ein Hotfix nicht vollständig ist und nicht alle Sicherheitsprobleme behebt, die durch eine Aktualisierung auf die neueste Version behoben würden.
 
-Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [&#x200B; getesteten und unterstützten Technologien &#x200B;](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
+Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [ getesteten und unterstützten Technologien ](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
 
 ## Erweiterte Unterstützung
 
@@ -49,6 +49,10 @@ Adobe empfiehlt Kunden, so bald wie möglich ein Upgrade durchzuführen. Um jedo
 >- <sup>1</sup> Wenn Sie Adobe Commerce-Kunde sind, können Sie während des verlängerten Support-Zeitraums für ein weiteres Jahr Sicherheits- und Qualitätskorrekturen erhalten.
 >- Siehe [Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
+>[!IMPORTANT]
+>
+>PCI-Compliance kann nicht für Händler mit Version 2.4.6 garantiert werden, die weiterhin PHP 8.1 verwenden, das [Ende der Unterstützung im Jahr 2025) ](https://www.php.net/eol.php). Ebenso erreicht PHP 8.2 [Ende 2026), ](https://www.php.net/supported-versions.php) für Händler, die es auch 2027 verwenden, dasselbe PCI-Compliance-Risiko darstellt.
+
 ## Zusätzliche Sicherheitskorrekturen bei der Bereitstellung für Adobe Commerce 2.4.4 und 2.4.5
 
 Als einmalige Ausnahme bietet Adobe eine verlängerte Bereitstellungsdauer für Sicherheitskorrekturen für die Adobe Commerce-Versionen 2.4.4 und 2.4.5, um Kunden zusätzliche Zeit für die Migration auf Adobe Commerce as a Cloud Service oder das Upgrade auf eine unterstützte Versionslinie zu geben.
@@ -59,11 +63,11 @@ Beachten Sie während dieses Bereitstellungszeitraums für Sicherheitskorrekture
 
   Um eine isolierte Sicherheits-Patch-Datei anwenden zu können, müssen Kunden für ihre unterstützte Version die neueste Patch-Version verwenden (die neueste -p-Version), da isolierte Sicherheits-Fehlerbehebungen ausschließlich mit dieser Version getestet werden.
 
-- **Keine Qualitätskorrekturen oder technische Unterstützung**-Keine Fehlerbehebungen, Qualitätsaktualisierungen ([Quality Patches Tool](../tools/quality-patches-tool/usage.md)) oder technische Unterstützung ([Adobe Commerce Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) werden für die Versionen 2.4.4 oder 2.4.5 in diesem Zeitraum bereitgestellt.
+- **Keine Qualitätskorrekturen oder technische Unterstützung**-Keine Fehlerbehebungen, Qualitätsaktualisierungen ([Quality Patches Tool](../tools/quality-patches-tool/usage.md)) oder technische Unterstützung ([Adobe Commerce Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) werden für die Versionen 2.4.4 oder 2.4.5 in diesem Zeitraum bereitgestellt.
 
 - **PCI-Konformität ist nicht garantiert:**-Da 2.4.4 und 2.4.5 PHP-Versionen verwenden, die das Ende des Lebenszyklus erreicht haben, kann für Händler in diesen Versionen die PCI-Konformität nicht garantiert werden. Wenn Sie diese Versionen weiterhin ausführen, kann dies die PCI-Compliance gefährden.
 
-Um die vollständige Sicherheitsabdeckung aufrechtzuerhalten und die PCI-Compliance sicherzustellen, müssen Kunden so bald wie möglich ein Upgrade auf eine derzeit unterstützte Version von Adobe Commerce durchführen oder zu [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview) migrieren.
+Um die vollständige Sicherheitsabdeckung aufrechtzuerhalten und die PCI-Compliance sicherzustellen, müssen Kunden so bald wie möglich ein Upgrade auf eine derzeit unterstützte Version von Adobe Commerce durchführen oder zu [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) migrieren.
 
 | -Version | Allgemeine Verfügbarkeit | Ende der erweiterten Unterstützung | Ende der Bereitstellung von Sicherheitskorrekturen |
 |----------------------|----------------------|-------------------------|------------------------------------|
@@ -127,7 +131,7 @@ Die Support-Zeitleiste ordnet für jede Adobe Commerce-Release-Reihe die Support
     <td>Q4</td>
   </tr>
   <tr>
-    <td>2,4,4</td>
+    <td>2.4.4</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
@@ -135,7 +139,7 @@ Die Support-Zeitleiste ordnet für jede Adobe Commerce-Release-Reihe die Support
     <td colspan="10"></td>
   </tr>
   <tr>
-    <td>2,4,5</td>
+    <td>2.4.5</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
@@ -143,20 +147,20 @@ Die Support-Zeitleiste ordnet für jede Adobe Commerce-Release-Reihe die Support
     <td colspan="9"></td>
   </tr>
   <tr>
-    <td>2,4,6</td>
+    <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="15" style="background-color:#67ac68;"></td>
     <td colspan="4" style="background-color:#ffd700;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
-    <td>2,4,7</td>
+    <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="6"></td>
   </tr>
   <tr>
-    <td>2,4,8</td>
+    <td>2.4.8</td>
     <td colspan="13"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
