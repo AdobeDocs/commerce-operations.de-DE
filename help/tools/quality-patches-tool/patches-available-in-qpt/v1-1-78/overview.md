@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f0aa5266d54a205cba36d9015fe9ed5dca50b599
+source-git-commit: 55b1c830073eaa7bfacae9fb8e9190414d7a990c
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -27,7 +27,7 @@ QPT v1.1.78 enthält die folgenden Patches:
 1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: Fehlerkorrektur - In der Tabelle quote_coupons tritt jetzt kein Fehler mehr auf, wenn mehrere Anfragen zum Zusammenführen des Warenkorbs oder zum Speichern von Angeboten gleichzeitig ausgeführt werden.
 1. **ACP2E-4528**: Behebt das Problem der Stadtvalidierung in Kundenadressen, das jetzt einen Schrägstrich (/) zulässt und ungültige Zeichen wie !, &quot;, # und ? zurückweist.
 1. **ACP2E-4535**: Es wurde ein Problem behoben, bei dem das Senden des Formulars bei vergessenem Kennwort dazu führte, dass die Sitzung zerstört oder neu generiert wurde (PHPSESSID-Änderungen) und der Gastkorb gelöscht wurde.
-1. **ACP2E-4540**: Es wurde ein Problem behoben, bei dem die Fotorama-Bibliothek nicht korrekt geladen wurde, sodass nur das erste angehängte Bild sichtbar wurde.
+1. **[ACP2E-4540](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)**: Es wurde ein Problem behoben, bei dem die Fotorama-Bibliothek nicht korrekt geladen wurde, sodass nur das erste angehängte Bild sichtbar wurde.
 1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: Behebt das Problem, dass moderne Telefonnummern &quot;.“ enthalten. oder &quot;/&quot; werden nicht ordnungsgemäß validiert.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: Behebt das Problem, dass die Abfrage von Company GraphQL „Der aktuelle Kunde ist nicht autorisiert“ zurückgibt, wenn der Header X-Adobe-Company verwendet wird.
 1. **ACP2E-4591**: Es wurde das Problem behoben, dass Kundensegmente, die auf der Bestellanzahl basieren, wie z. B. „Erstkäufer“, nicht aktualisiert haben, wenn Bestellungen über die REST-API aufgegeben wurden.
