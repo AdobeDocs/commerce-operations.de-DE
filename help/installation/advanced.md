@@ -119,7 +119,7 @@ Die folgenden Optionen geben die Benutzerinformationen und Anmeldeinformationen 
 
 Sie können den Admin-Benutzer während oder nach der Installation erstellen. Wenn Sie den Benutzer während der Installation erstellen, sind alle Variablen mit Administratorberechtigungen erforderlich. Siehe [Beispiel für localhost-Installationen](#sample-localhost-installations).
 
-Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | -Name | Wert | Erforderlich? |
 |--- |--- |--- |

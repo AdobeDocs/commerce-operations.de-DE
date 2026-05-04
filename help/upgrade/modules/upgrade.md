@@ -47,7 +47,7 @@ So aktualisieren oder aktualisieren Sie ein Modul oder eine Erweiterung:
 
 ## Vom Anbieter gebündelte Erweiterungen (VBEs)
 
-Adobe hat alle [VBEs](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) in 2.4.4 entfernt. Anbieter unterstützen diese Erweiterungen weiterhin auf dem Adobe Commerce Marketplace.
+Adobe hat alle [VBEs](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/modules/upgrade) in 2.4.4 entfernt. Anbieter unterstützen diese Erweiterungen weiterhin auf dem Adobe Commerce Marketplace.
 
 Wenn Sie diese Erweiterungen weiterhin mit Adobe Commerce 2.4.4 und höher verwenden möchten, müssen Sie die entsprechenden Paketabhängigkeiten in Ihrer `composer.json`-Datei aktualisieren _vor_ einem Upgrade auf 2.4.4. Wenden Sie sich an den Anbieter, um den Paketnamen und die zu verwendende Version zu erhalten.
 

@@ -20,7 +20,7 @@ Zu den Erweiterungen gehören:
 - Designs (Ändern des Erscheinungsbilds Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Lokalisieren der Storefront und Admin)
 
-In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Sie können dieselbe Vorgehensweise verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie dazu die `composer.json`-Datei der Erweiterung und notieren Sie sich die Werte für `"name"` und `"version"`.
 

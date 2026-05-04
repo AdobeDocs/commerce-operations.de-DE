@@ -30,7 +30,7 @@ Die Aktivierung von Remote-Speicher kann sich auf Ihre bestehende Entwicklungsum
 
 >[!INFO]
 >
->- Der Remote-Speicher ist nur für Commerce Version 2.4.2 und höher verfügbar. Siehe Versionshinweise zu [2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Der Remote-Speicher ist nur für Commerce Version 2.4.2 und höher verfügbar. Siehe Versionshinweise zu [2.4.2](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Das Remote-Speichermodul bietet _(begrenzte_ Unterstützung für Adobe Commerce in Cloud-Infrastrukturen. Adobe kann den Speicheradapterdienst eines Drittanbieters nicht vollständig beheben. Siehe [Konfigurieren von Remote-Speicher für Commerce auf Cloud-](cloud-support.md)) für Anleitungen zur Implementierung von Remote-Speicher für Cloud-Projekte.
 
@@ -91,5 +91,5 @@ Nachdem Sie den Remotespeicher für einen bestimmten Adapter aktiviert haben, k�
 
 >[!INFO]
 >
->Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) im _Benutzerhandbuch zu Commerce 2.4_.
+>Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=de) im _Benutzerhandbuch zu Commerce 2.4_.
 

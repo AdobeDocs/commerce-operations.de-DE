@@ -19,7 +19,7 @@ In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie auswähl
 >In den Versionen 2.4.4 und 2.4.3-p2 gelten alle Felder mit der Beschriftung **Elasticsearch** auch für OpenSearch.
 >Mit der Einführung der Unterstützung für Elasticsearch 8.x in Version 2.4.6 wurden neue Bezeichnungen erstellt, um zwischen Elasticsearch- und OpenSearch-Konfigurationen zu unterscheiden.
 
-Weitere Informationen zum Konfigurieren Ihrer Suchmaschine finden Sie im [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
+Weitere Informationen zum Konfigurieren Ihrer Suchmaschine finden Sie im [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=de).
 
 ## Konfigurieren der Suchmaschine über den Administrator
 

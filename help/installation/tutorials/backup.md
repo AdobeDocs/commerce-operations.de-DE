@@ -23,7 +23,7 @@ Nach dem Sichern können Sie später [Rollback](#rollback).
 
 >[!TIP]
 >
->Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
+>Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
 
 ## Aktivieren von Backups
 
