@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
+source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,12 @@ QPT v1.1.78 enthält die folgenden Patches:
 1. **ACP2E-4416**: Es wurde das Problem behoben, dass Kundenbelohnungspunkte nicht initialisiert wurden, wenn sie in der Admin erstellt wurden.
 1. **ACP2E-4419**: Behebt das Problem, dass Geschenkkarten nach erfolgreicher Validierung von reCAPTCHA v2 („Ich bin kein Roboter„) in der Storefront beim Checkout nicht korrekt angewendet werden.
 1. **ACP2E-4431**: Behebt das Problem, dass verwandte Produkte, die von den Zielregeln abgeglichen werden, während des Neuindizierungsprozesses gelöscht werden.
+1. **ACP2E-4448**: Es wird das Problem behoben, dass Konfigurationsänderungen, die während Redis-Ausfällen vorgenommen wurden, nach der Redis-Wiederherstellung nicht widergespiegelt werden, was dazu führt, dass veraltete Werte bestehen bleiben.
+1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)**: Behebt das Problem, dass Produktpreise auf der [!UICONTROL Quick Order]-Seite Steuern enthalten, unabhängig von der Konfiguration der Steueranzeige.
+1. **ACP2E-4456**: Es wird ein Problem behoben, bei dem durch Stornieren einer Bestellung mit einer GraphQL-Mutation eine Bestellung, die vollständig mit Geschenkkarten bezahlt wurde, nicht in den Status „Geschlossen“ wechselt.
+1. **ACP2E-4507**: Es wurde das Problem behoben, dass die Kennwortoptionskonfiguration für Anfragen zum Zurücksetzen des Kundenkennworts, die durch GraphQL-Mutationen vorgenommen wurden, nicht angewendet wurde.
+1. **ACP2E-4513**: Behebt das Problem, dass abgelaufene CAPTCHA-Bilder nicht aus dem System gelöscht werden.
+1. **ACP2E-4522**: Fehlerkorrektur - In der Tabelle quote_coupons tritt jetzt kein Fehler mehr auf, wenn mehrere Anfragen zum Zusammenführen des Warenkorbs oder zum Speichern von Angeboten gleichzeitig ausgeführt werden.
 1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)**: Es wird das Problem behoben, dass Konfigurationsänderungen, die während Redis-Ausfällen vorgenommen wurden, nach der Redis-Wiederherstellung nicht widergespiegelt werden, was dazu führt, dass veraltete Werte bestehen bleiben.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)**: Es wurde das Problem behoben, dass Kundenbelohnungspunkte nicht initialisiert wurden, wenn sie in der Admin erstellt wurden.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)**: Behebt das Problem, dass [!UICONTROL Related Products], die von den Zielregeln abgeglichen werden, während des Neuindizierungsprozesses gelöscht werden.
