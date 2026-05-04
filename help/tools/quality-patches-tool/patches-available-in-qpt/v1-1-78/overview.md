@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
+source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.78 verfügbaren Patches behoben wurden.
 
 QPT v1.1.78 enthält die folgenden Patches:
+1. **ACP2E-4416**: Es wurde das Problem behoben, dass Kundenbelohnungspunkte nicht initialisiert wurden, wenn sie in der Admin erstellt wurden.
+1. **ACP2E-4419**: Behebt das Problem, dass Geschenkkarten nach erfolgreicher Validierung von reCAPTCHA v2 („Ich bin kein Roboter„) in der Storefront beim Checkout nicht korrekt angewendet werden.
+1. **ACP2E-4431**: Behebt das Problem, dass verwandte Produkte, die von den Zielregeln abgeglichen werden, während des Neuindizierungsprozesses gelöscht werden.
+1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)**: Es wird das Problem behoben, dass Konfigurationsänderungen, die während Redis-Ausfällen vorgenommen wurden, nach der Redis-Wiederherstellung nicht widergespiegelt werden, was dazu führt, dass veraltete Werte bestehen bleiben.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)**: Es wurde das Problem behoben, dass Kundenbelohnungspunkte nicht initialisiert wurden, wenn sie in der Admin erstellt wurden.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)**: Behebt das Problem, dass [!UICONTROL Related Products], die von den Zielregeln abgeglichen werden, während des Neuindizierungsprozesses gelöscht werden.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: Behebt das Problem, dass Geschenkkarten nach erfolgreicher Validierung von reCAPTCHA v2 („Ich bin kein Roboter„) in der Storefront beim Checkout nicht korrekt angewendet werden.
