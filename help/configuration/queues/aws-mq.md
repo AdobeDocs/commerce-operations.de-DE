@@ -1,10 +1,10 @@
 ---
 title: Einrichten der Amazon-Nachrichtenwarteschlange
-description: Erfahren Sie, wie Sie Commerce für die Verwendung des AWS MQ-Service konfigurieren.
+description: Erfahren Sie, wie Sie in env.php Adobe Commerce-Nachrichtenwarteschlangen für Amazon MQ konfigurieren, einschließlich SSL- und TLS-Anforderungen für Cloud-fähige AMQP-Verbindungen.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Dabei gilt:
 
 Führen Sie nach der Bearbeitung der `env.php`-Datei den folgenden Befehl aus, um die Einrichtung abzuschließen:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -82,7 +82,7 @@ So testen Sie den Nachrichtenversand von Commerce an [!DNL RabbitMQ]:
 
 1. Starten Sie den `async.operations.all` Nachrichtenwarteschlange-Verbraucher.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

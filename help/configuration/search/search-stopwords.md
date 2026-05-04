@@ -3,9 +3,9 @@ title: Konfigurieren von Suchbegriffen
 description: Erfahren Sie, wie Sie Stoppwörter für Adobe Commerce mithilfe von CSV-Dateien verwalten.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Die Standardlebensdauer für den Stoppwörter-Datei-Cache beträgt 15 Minuten.
 
    - Befehlszeile: Geben Sie als Eigentümer des Dateisystems den folgenden Befehl ein:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento cache:clean config
      ```
 
@@ -89,7 +89,7 @@ Die Standardlebensdauer für den Stoppwörter-Datei-Cache beträgt 15 Minuten.
 
    - Befehlszeile: Geben Sie als Eigentümer des Dateisystems den folgenden Befehl ein:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento magento cache:clean config
      ```
 

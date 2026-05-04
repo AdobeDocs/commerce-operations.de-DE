@@ -3,9 +3,9 @@ title: Cache-Leerung mit mehreren Lackinstanzen
 description: Erfahren Sie, wie das Löschen von Caches mit mehreren Varnish-Instanzen in Adobe Commerce funktioniert. Best Practices für Konfiguration und Verwaltung
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Das Parameterformat muss `<hostname or ip>:<listen port>` sein, wobei Sie `<list
 
 Beispiel:
 
-```bash
+```shell
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 

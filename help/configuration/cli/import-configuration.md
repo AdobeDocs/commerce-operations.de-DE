@@ -2,9 +2,9 @@
 title: Importieren von Daten aus Konfigurationsdateien
 description: Erfahren Sie, wie Sie Adobe Commerce-Konfigurationseinstellungen aus Konfigurationsdateien importieren. Entdecken Sie Pipeline-Bereitstellungs- und Datenbankimportprozesse.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Wenn Sie ein Produktionssystem mit dem Commerce 2.2 [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md) einrichten, müssen Sie _aus_ und `config.php` in die `env.php` importieren.
+Wenn Sie ein Produktionssystem mit dem Commerce 2.2 [Pipeline-Bereitstellungsmodell](../deployment/technical-details.md) einrichten, müssen Sie _aus `config.php` und `env.php` in die_ importieren.
 Zu diesen Einstellungen gehören Konfigurationspfade und -werte, Websites, Stores, Store-Ansichten und Designs.
 
 Nach dem Import von Websites, Stores, Store-Ansichten und Designs können Sie Produktattribute erstellen und sie auf Websites, Stores und Store-Ansichten im Produktionssystem anwenden.
@@ -26,7 +26,7 @@ Nach dem Import von Websites, Stores, Store-Ansichten und Designs können Sie Pr
 
 Führen Sie auf Ihrem Produktionssystem den folgenden Befehl aus, um Daten aus den Konfigurationsdateien (`config.php` und `env.php`) in die Datenbank zu importieren:
 
-```bash
+```shell
 bin/magento app:config:import [-n, --no-interaction]
 ```
 
@@ -36,7 +36,7 @@ Wenn Sie `bin/magento app:config:import` ohne die optionale Markierung eingeben,
 
 Wenn die Konfigurationsdatei beispielsweise eine neue Website und einen neuen Store enthält, wird die folgende Meldung angezeigt:
 
-```
+```text
 These Websites will be created: New Website
 These Groups will be created: New Store
 Do you want to continue [yes/no]?
@@ -46,14 +46,14 @@ Um den Import fortzusetzen, geben Sie `yes` ein.
 
 Wenn Bereitstellungskonfigurationsdateien einige zu importierende Daten enthalten, wird eine Meldung ähnlich der folgenden angezeigt:
 
-```
+```text
 Start import:
 Some information about importing
 ```
 
 Wenn Bereitstellungskonfigurationsdateien keine zu importierenden Daten enthalten, wird eine Meldung ähnlich der folgenden angezeigt:
 
-```
+```text
 Start import:
 Nothing to import
 ```

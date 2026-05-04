@@ -2,9 +2,9 @@
 title: Adobe Commerce deinstallieren oder neu installieren
 description: Führen Sie diese Schritte aus, um lokale Installationen von Adobe Commerce zu deinstallieren und erneut zu installieren.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ Bei der Deinstallation der Anwendung wird die Datenbank gelöscht und wiederherg
 
 Um die Anwendung zu deinstallieren, geben Sie den folgenden Befehl ein:
 
-```bash
+```shell
 bin/magento setup:uninstall
 ```
 
 Die folgende Meldung wird angezeigt, um eine erfolgreiche Deinstallation zu bestätigen:
 
-```
+```text
 [SUCCESS]: Magento uninstallation complete.
 ```
 
@@ -49,7 +49,7 @@ Standardmäßig löscht `bin/magento setup:upgrade` kompilierten Code und den Ca
 
 In einigen Situationen (insbesondere bei der Bereitstellung in der Produktion) sollten Sie jedoch den kompilierten Code möglicherweise nicht löschen, da dies einige Zeit in Anspruch nehmen kann. (Der Cache wird weiterhin geleert.) Um das Datenbankschema und die Daten zu aktualisieren *ohne* kompilierten Code zu löschen, geben Sie Folgendes ein:
 
-```bash
+```shell
 bin/magento setup:upgrade --keep-generated
 ```
 

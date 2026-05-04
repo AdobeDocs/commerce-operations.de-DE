@@ -2,9 +2,9 @@
 title: Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer benutzerdefinierten Cron-Gruppe (Tutorial)
 description: In diesem Schritt-für-Schritt-Tutorial für Adobe Commerce erfahren Sie, wie Sie benutzerdefinierte Cron-Aufträge erstellen. Erkunden Sie die Moduleinrichtung und die Cron-Gruppenkonfiguration.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In diesem Tutorial gehen wir von Folgendem aus:
 
 - Die Commerce-Anwendung wird in `/var/www/html/magento2` installiert
 - Benutzername und Kennwort für die Commerce-Datenbank sind beide `magento`
-- Sie führen alle Aktionen als [Dateisystemeigentümer“ &#x200B;](../../installation/prerequisites/file-system/overview.md)
+- Sie führen alle Aktionen als [Dateisystemeigentümer“ ](../../installation/prerequisites/file-system/overview.md)
 
 ## Schritt 1: Abrufen eines Beispielmoduls
 
@@ -35,7 +35,7 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
 1. Wechseln Sie in einen Ordner, der sich nicht im Stammverzeichnis der Commerce-Anwendung befindet (z. B. den Basisordner).
 1. Klonen Sie das [`magento2-samples` Repository](https://github.com/magento/magento2-samples).
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-samples.git
    ```
 
@@ -43,25 +43,25 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
 
 1. Erstellen Sie ein Verzeichnis, in das der Beispiel-Code kopiert werden soll:
 
-   ```bash
+   ```shell
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Kopieren Sie den Beispiel-Modul-Code:
 
-   ```bash
+   ```shell
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Überprüfen Sie, ob die Dateien ordnungsgemäß kopiert wurden:
 
-   ```bash
+   ```shell
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
    Sie sollten das folgende Ergebnis sehen:
 
-   ```
+   ```text
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -75,13 +75,13 @@ Wenn Sie bereits über ein Beispielmodul verfügen, können Sie es verwenden. Ü
 
 1. Aktualisieren Sie die Commerce-Datenbank und das -Schema:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Cache leeren:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -91,13 +91,13 @@ Bevor Sie fortfahren, überprüfen Sie, ob das Beispielmodul registriert und akt
 
 1. Führen Sie den folgenden Befehl aus:
 
-   ```bash
+   ```shell
    bin/magento module:status Magento_SampleMinimal
    ```
 
 1. Stellen Sie sicher, dass das Modul aktiviert ist.
 
-   ```
+   ```text
    Module is enabled
    ```
 
@@ -113,7 +113,7 @@ So erstellen Sie eine Klasse:
 
 1. Erstellen Sie ein Verzeichnis für die Klasse und wechseln Sie in dieses Verzeichnis:
 
-   ```bash
+   ```shell
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
@@ -181,13 +181,13 @@ Dabei ist `system/config/path` ein Systemkonfigurationspfad, der `etc/adminhtml/
 
 Kompilieren Sie den Code mit diesem Befehl:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 Bereinigen Sie den Cache mit diesem Befehl:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
@@ -199,7 +199,7 @@ Cron überprüfen:
 
 1. Commerce Cron-Aufträge ausführen:
 
-   ```bash
+   ```shell
    bin/magento cron:run
    ```
 
@@ -215,7 +215,7 @@ Cron überprüfen:
 
       Das Ergebnis sollte in etwa wie folgt aussehen:
 
-      ```
+      ```text
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -228,13 +228,13 @@ Cron überprüfen:
 
 1. (Optional) Überprüfen Sie, ob Meldungen in das Systemprotokoll von Commerce geschrieben werden:
 
-   ```bash
+   ```shell
    cat /var/www/html/magento2/var/log/system.log
    ```
 
    Es sollte mindestens ein Eintrag wie der folgende angezeigt werden:
 
-   ```
+   ```text
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
@@ -283,7 +283,7 @@ So überprüfen Sie Ihre benutzerdefinierte Cron-Gruppe:
 
 1. Ausführen von Commerce-Cron-Aufträgen für Ihre benutzerdefinierte Gruppe:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
@@ -291,7 +291,7 @@ So überprüfen Sie Ihre benutzerdefinierte Cron-Gruppe:
 
 1. Cache leeren:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 

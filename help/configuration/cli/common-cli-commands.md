@@ -2,9 +2,9 @@
 title: Allgemeine Befehle
 description: Erfahren Sie mehr über gängige Adobe Commerce-CLI-Befehle und deren Anwendungsbeispiele. Entdecken Sie wichtige Befehlszeilen-Tools für Entwicklung und Administration.
 exl-id: d35a1dd9-10b3-4364-b6f4-b1e259a04e3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ Im Folgenden werden einige der verfügbaren Befehle zusammengefasst.
 
 **So zeigen Sie eine vollständige Liste der Befehle an**:
 
-```bash
+```shell
 bin/magento list
 ```
 
 Beispiel für einen Hilfe-Befehl:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 
@@ -47,7 +47,7 @@ Befehle werden nur im Zusammenfassungsformular angezeigt. Klicken Sie auf den Li
 | [`magento sampledata:install`](../../installation/sample-data/overview.md) | Installiert optionale Beispieldaten, nachdem Sie die Commerce-Anwendung installiert haben.<br><br>Weitere Informationen zu Beispieldaten finden Sie unter [Optionale Beispieldaten](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Verwaltet Backend-Konfigurationen |
 | [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Erstellt/bearbeitet/entsperrt Admin-Benutzer. |
-| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Aktiviert/deaktiviert Hinweise auf Entwicklervorlagen. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug) | Aktiviert/deaktiviert Hinweise auf Entwicklervorlagen. |
 
 ## Häufige Argumente
 

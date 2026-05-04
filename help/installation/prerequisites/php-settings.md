@@ -3,9 +3,9 @@ title: PHP-Einstellungen
 description: Führen Sie diese Schritte aus, um die erforderlichen PHP-Erweiterungen zu installieren und die erforderlichen PHP-Einstellungen für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: e0c62575f71a6d212ba9dab33e38587950e3d783
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die erforderlichen PHP-Optionen fe
 >
 >Unterstützte PHP-Versionen variieren je nach Adobe Commerce-Version. Siehe [Systemanforderungen](../system-requirements.md) für die genauen PHP-Versionen, die von der Version unterstützt werden, die Sie installieren.
 
-Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings) im _Handbuch zu Commerce_ Cloud-Infrastruktur.
+Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) im _Handbuch zu Commerce_ Cloud-Infrastruktur.
 
 ## PHP-Prozesssteuerung
 
@@ -29,13 +29,13 @@ Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](http
 
 PHP ist auf den meisten Linux-Distributionen standardmäßig installiert. Dieses Thema setzt voraus, dass Sie PHP bereits installiert haben. Um zu überprüfen, ob PHP installiert ist, geben Sie Folgendes in die Befehlszeile ein:
 
-```bash
+```shell
 php -v
 ```
 
 Wenn PHP installiert ist, wird eine Meldung ähnlich der folgenden angezeigt:
 
-```
+```text
 PHP <supported-version> (cli) (built: <build-date>) (NTS)
 Copyright (c) The PHP Group
 Zend Engine v<matching-version>, Copyright (c) Zend Technologies
@@ -54,7 +54,7 @@ So überprüfen Sie installierte Erweiterungen:
 
 1. Installierte Module auflisten.
 
-   ```bash
+   ```shell
    php -m
    ```
 
@@ -69,7 +69,7 @@ So überprüfen Sie installierte Erweiterungen:
 
 - Legen Sie die Systemzeitzone für PHP fest; andernfalls funktionieren Fehler wie die folgende Anzeige während der Installation und zeitbezogene Vorgänge wie cron möglicherweise nicht:
 
-```
+```text
 PHP Warning:  date(): It is not safe to rely on the system's timezone settings. [more messages follow]
 ```
 
@@ -106,13 +106,13 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationsdateien finden, 
 
 ### Suchen `php.ini` Konfigurationsdatei
 
-Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei &#x200B;](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
+Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei ](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
 
 ![PHP-Informationsseite](../../assets/installation/config_phpini-webserver.png)
 
 Um die PHP-Befehlszeilenkonfiguration zu finden, geben Sie ein
 
-```bash
+```shell
 php --ini | grep "Loaded Configuration File"
 ```
 
@@ -134,7 +134,7 @@ Verwenden Sie die folgenden Richtlinien, um sie zu finden:
 
   Wenn nicht, verwenden Sie den folgenden Befehl, um sie zu finden:
 
-  ```bash
+  ```shell
   sudo find / -name 'opcache.ini'
   ```
 
@@ -206,9 +206,8 @@ So legen Sie `opcache.ini` fest:
 In den folgenden Adobe Commerce-Support-Artikeln finden Sie Hilfe bei der Fehlerbehebung bei PHP-Problemen:
 
 - [PHP-Versionsfehler oder 404-Fehler beim Zugriff auf Adobe Commerce in einem Browser](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [PHP-Einstellungsfehler](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [PHP mcrypt-Erweiterung nicht ordnungsgemäß installiert](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly)
-- [Probleme bei der Prüfung der PHP-Version](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [Häufige schwerwiegende PHP-Fehler und -Lösungen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [PHP-Einstellungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [Probleme bei der Prüfung der PHP-Version](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Häufige schwerwiegende PHP Fehler und Lösungen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2025-04-04 22:27:22 -->

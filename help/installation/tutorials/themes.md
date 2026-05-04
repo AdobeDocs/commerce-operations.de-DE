@@ -1,11 +1,11 @@
 ---
 title: Designs deinstallieren
-description: Gehen Sie wie folgt vor, um ein Adobe Commerce-Design zu deinstallieren.
+description: Erfahren Sie, wie Sie Adobe Commerce-Designs, einschließlich Composer-Paketen, Code-Entfernung und Backups, über die Befehlszeile deinstallieren, bevor Sie Änderungen vornehmen.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Bevor Sie diesen Befehl verwenden, müssen Sie den relativen Pfad zu Ihrem Desig
 
 Beispielsweise lautet der Pfad zum Luma-Design, das mit Adobe Commerce bereitgestellt wird, `frontend/Magento/luma`.
 
-Weitere Informationen zu Designs finden Sie unter [Design-Struktur](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+Weitere Informationen zu Designs finden Sie unter [Design-Struktur](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure).
 
 ## Überblick über die Deinstallation von Designs
 
@@ -27,13 +27,13 @@ Mit diesem Befehl werden *nur* Designs deinstalliert, die in `composer.json` ang
 * Aktualisieren der `parent` Knoteninformationen in `theme.xml` zum Entfernen von Verweisen auf das Design.
 * Entfernen des Design-Codes aus dem Dateisystem.
 
-  [Weitere Informationen zur Designvererbung](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Weitere Informationen zur Designvererbung](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance).
 
 ## Designs deinstallieren
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
 ```
 
@@ -68,20 +68,20 @@ Der Befehl führt die folgenden Aufgaben aus:
 
 Wenn Sie beispielsweise versuchen, ein Design zu deinstallieren, von dem ein anderes Design abhängig ist, wird die folgende Meldung angezeigt:
 
-```
+```text
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
 
 Eine Alternative besteht darin, beide Designs gleichzeitig zu deinstallieren, indem Sie die Code-Basis wie folgt sichern:
 
-```bash
+```shell
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
 ```
 
 Meldungen ähnlich der folgenden werden angezeigt:
 
-```
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

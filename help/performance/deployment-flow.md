@@ -3,9 +3,9 @@ title: Bereitstellungsfluss
 description: Erfahren Sie mehr über den Bereitstellungsprozess für Adobe Commerce-Produktionsumgebungen. Erfahren Sie mehr über die Schritte, die für maximale Leistung und Zuverlässigkeit erforderlich sind.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ Der [!DNL Commerce] Produktionsbereitstellungsfluss hilft einem Store, die maxim
 
 ## Installieren von Abhängigkeiten
 
-Die `composer.json`- und `composer.lock` verwalten [!DNL Commerce] Abhängigkeiten und installieren die entsprechende Version für jedes Paket. Sie müssen Abhängigkeiten vor [Injections-Anweisungen für die Vorverarbeitung](#preprocess-dependency-injection-instructions) installieren, wenn Sie den [Autoloader“ aktualisieren &#x200B;](#update-the-autoloader).
+Die `composer.json`- und `composer.lock` verwalten [!DNL Commerce] Abhängigkeiten und installieren die entsprechende Version für jedes Paket. Sie müssen Abhängigkeiten vor [Injections-Anweisungen für die Vorverarbeitung](#preprocess-dependency-injection-instructions) installieren, wenn Sie den [Autoloader“ aktualisieren ](#update-the-autoloader).
 
 So installieren Sie [!DNL Commerce]:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
@@ -35,7 +35,7 @@ Wenn Sie Anweisungen zur Injektion von Abhängigkeiten (Dependency Injection, DI
 
 So verarbeiten und kompilieren Sie ID-Anweisungen:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -49,25 +49,25 @@ So aktualisieren Sie den Autoloader:
 >
 >Die `-o` Option konvertiert PSR-0/4-Autoloading in Classmap, um einen schnelleren Autoloader zu erhalten. Die `--apcu` Option verwendet APCu, um gefundene/nicht gefundene Klassen zwischenzuspeichern.
 
-```bash
+```shell
 composer dump-autoload -o --apcu
 ```
 
 Wenn Sie den Autoloader aktualisieren möchten, müssen Sie die folgenden Befehle in der richtigen Reihenfolge ausführen:
 
-```bash
+```shell
 composer install --no-dev
 ```
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```bash
+```shell
 composer dump-autoload -o
 ```
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -87,7 +87,7 @@ Sie können eine Vielzahl von Optionen verwenden, um Bereitstellungsvorgänge au
 
 So stellen Sie statische Inhalte bereit:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy
 ```
 
@@ -105,7 +105,7 @@ Schließlich müssen Sie Ihren Store in den Produktionsmodus versetzen. Der Prod
 
 Sie können auch statische Inhalte bereitstellen, den Inhalt kompilieren und den Modus in einem CLI-Befehl festlegen:
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
@@ -117,4 +117,4 @@ Diese Schritte werden empfohlen, sind jedoch nicht obligatorisch. Sie können si
 
 * Indizieren Sie Daten neu, um zu vermeiden, dass die Indizes inkonsistente Daten enthalten.
 * Leeren Sie den Cache, um sicherzustellen, dass keine alten oder falschen Daten im Cache verbleiben.
-* Erwärmen Sie den Cache, der die beliebtesten oder wichtigsten Store-Seiten im Voraus aufruft, damit der Cache für sie generiert und gespeichert wird. Dieser Vorgang kann mit jedem Internet-Crawler oder manuell durchgeführt werden, wenn Sie einen kleinen Store haben.
+* Erwärmen Sie den Cache, der die beliebtesten oder wichtigsten Store-Seiten im Voraus aufruft, damit der Cache für sie generiert und gespeichert wird. Dieser Vorgang kann mit jeder Internet-Crawler oder manuell durchgeführt werden, wenn Sie einen kleinen Laden haben.

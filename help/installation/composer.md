@@ -2,9 +2,9 @@
 title: Schnellstart-On-Premise-Installation
 description: Erfahren Sie, wie Sie Adobe Commerce mithilfe von Composer in Ihrer eigenen Infrastruktur installieren. Erfahren Sie mehr über Schnellstartschritte und Konfigurationsanforderungen.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 0532977ff0aeb5d221b1901d73a374cadf95f83b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe verwendet [Composer](https://getcomposer.org/) um Adobe Commerce-Komponent
 
 Bevor Sie fortfahren, müssen Sie Folgendes tun:
 
-- Alle [erforderlichen Aufgaben“ &#x200B;](system-requirements.md).
+- Alle [erforderlichen Aufgaben“ ](system-requirements.md).
 - [Composer installieren](https://getcomposer.org/download/).
 - Abrufen [Authentifizierungsschlüssel](prerequisites/authentication-keys.md) zum Adobe Commerce Composer-Repository.
 
@@ -43,13 +43,13 @@ So wechseln Sie zum Dateisystembesitzer:
 
    Wenn Sie die Bash-Shell verwenden, können Sie die folgende Syntax verwenden, um zum Dateisystembesitzer zu wechseln und den Befehl gleichzeitig einzugeben:
 
-   ```bash
+   ```shell
    su <file system owner> -s /bin/bash -c <command>
    ```
 
    Wenn der Dateisystembesitzer keine Anmeldungen zulässt, können Sie Folgendes tun:
 
-   ```bash
+   ```shell
    sudo -u <file system owner>  <command>
    ```
 
@@ -59,7 +59,7 @@ So wechseln Sie zum Dateisystembesitzer:
 
    Beispiel-Bash-Shell für CentOS:
 
-   ```bash
+   ```shell
    export PATH=$PATH:/var/www/html/magento2/bin
    ```
 
@@ -79,13 +79,13 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
 
    **Magento Open Source**
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition <install-directory-name>
    ```
 
    **Adobe Commerce**
 
-   ```bash
+   ```shell
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
@@ -93,7 +93,7 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
 
    >[!NOTE]
    >
-   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
+   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
 
    Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 
@@ -103,7 +103,7 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
 
 Nebenversionen enthalten neue Funktionen, Qualitätskorrekturen und Sicherheitskorrekturen. Verwenden Sie Composer, um eine Nebenversion anzugeben. Um beispielsweise das Metapaket Adobe Commerce 2.4.6 anzugeben:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -111,7 +111,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Qualitäts-Patches enthalten hauptsächlich funktionale _und_ Sicherheitskorrekturen. Sie können jedoch manchmal auch neue, abwärtskompatible Funktionen enthalten. Verwenden Sie Composer, um einen Qualitäts-Patch herunterzuladen. Um beispielsweise das Metapaket Adobe Commerce 2.4.6 anzugeben:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
@@ -121,7 +121,7 @@ Sicherheits-Patches enthalten nur Sicherheitskorrekturen. Sie wurden entwickelt,
 
 Sicherheits-Patches verwenden die Composer-Namenskonvention `2.4.6-px`. Verwenden Sie Composer, um einen Patch anzugeben. So laden Sie beispielsweise das Adobe Commerce 2.4.6-p1-Metapaket herunter:
 
-```bash
+```shell
 composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
@@ -129,7 +129,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 Sie müssen vor der Installation von Adobe Commerce Lese- und Schreibberechtigungen für die Webservergruppe festlegen. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
 
-```bash
+```shell
 cd /var/www/html/<magento install directory>
 find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
 find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
@@ -143,7 +143,7 @@ Sie müssen die Befehlszeile verwenden, um Adobe Commerce zu installieren.
 
 In diesem Beispiel wird davon ausgegangen, dass der Installationsordner `magento2ee` heißt, sich der `db-host` auf demselben Computer befindet (`localhost`) und dass die `db-name`, `db-user` und `db-password` alle `magento` sind:
 
-```bash
+```shell
 bin/magento setup:install \
 --base-url=http://localhost/magento2ee \
 --db-host=localhost \
@@ -178,23 +178,23 @@ bin/magento setup:install \
 
 Um eine vollständige Liste der Befehle anzuzeigen, geben Sie Folgendes ein:
 
-```bash
+```shell
 bin/magento list
 ```
 
 Um Hilfe zu einem bestimmten Befehl zu erhalten, geben Sie Folgendes ein:
 
-```bash
+```shell
 bin/magento help <command>
 ```
 
 Beispiel:
 
-```bash
+```shell
 bin/magento help setup:install
 ```
 
-```bash
+```shell
 bin/magento help cache:enable
 ```
 
@@ -232,4 +232,4 @@ Die folgenden Argumente gelten für alle Befehle. Diese Befehle können entweder
 
 >[!NOTE]
 >
->Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Benötigen Sie erweiterte Hilfe? Sehen Sie sich das [Erweiterte &#x200B;](advanced.md)&quot; an.
+>Herzlichen Glückwunsch! Sie haben die Schnellinstallation abgeschlossen. Benötigen Sie erweiterte Hilfe? Sehen Sie sich das [Erweiterte ](advanced.md)&quot; an.

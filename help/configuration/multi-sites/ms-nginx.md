@@ -2,9 +2,9 @@
 title: Einrichten mehrerer Websites mit Nginx
 description: In diesem Tutorial können Sie mehrere Websites mit Nginx einrichten.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Wir gehen davon aus, dass
 
   Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie bei Ihrem Hosting-Anbieter.
 
-  Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema besprochenen Aufgaben abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de) im Handbuch zu _Commerce in Cloud-Infrastruktur_.
+  Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema besprochenen Aufgaben abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im Handbuch zu _Commerce in Cloud-Infrastruktur_.
 
 - Sie akzeptieren mehrere Domains in einer Virtual-Host-Datei oder verwenden einen Virtual-Host pro Website. Die Virtual-Host-Konfigurationsdateien befinden sich in `/etc/nginx/sites-available`.
 - Sie verwenden die von Commerce bereitgestellte `nginx.conf.sample` nur mit den Änderungen, die in diesem Tutorial erläutert werden.
@@ -83,13 +83,13 @@ Diese Konfiguration erweitert die [nginx-Konfiguration](../../installation/prere
 1. Speichern Sie Ihre Änderungen in den Dateien und beenden Sie den Texteditor.
 1. Überprüfen Sie die Server-Konfiguration:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Bei erfolgreicher Ausführung wird die folgende Meldung angezeigt:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -97,11 +97,11 @@ Diese Konfiguration erweitert die [nginx-Konfiguration](../../installation/prere
 
 1. Erstellen Sie eine symbolische Verknüpfung im `/etc/nginx/sites-enabled`:
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
@@ -141,13 +141,13 @@ Weitere Informationen zur Map-Direktive finden Sie unter [nginx-Dokumentation zu
 1. Speichern Sie Ihre Änderungen in den Dateien und beenden Sie den Texteditor.
 1. Überprüfen Sie die Server-Konfiguration:
 
-   ```bash
+   ```shell
    nginx -t
    ```
 
 1. Bei erfolgreicher Ausführung wird die folgende Meldung angezeigt:
 
-   ```
+   ```yaml
    nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
@@ -155,15 +155,15 @@ Weitere Informationen zur Map-Direktive finden Sie unter [nginx-Dokumentation zu
 
 1. Erstellen Sie symbolische Links im `/etc/nginx/sites-enabled`:
 
-   ```bash
+   ```shell
    cd /etc/nginx/sites-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/french.mysite.mg french.mysite.mg
    ```
 
-   ```bash
+   ```shell
    ln -s /etc/nginx/sites-available/german.mysite.mg german.mysite.mg
    ```
 
@@ -253,7 +253,7 @@ Sie müssen die Basis-URL für die `french` und die `german` Websites in Commerc
 
 Führen Sie den folgenden Befehl aus, um die `config`- und `full_page` zu bereinigen.
 
-```bash
+```shell
 bin/magento cache:clean config full_page
 ```
 
@@ -280,10 +280,10 @@ Sofern Sie kein DNS für die URLs Ihrer Stores eingerichtet haben, müssen Sie e
 >[!INFO]
 >
 >- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie bei Ihrem Hosting-Anbieter.
->- Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
+>- Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
 
 ### Fehlerbehebung
 
-- Wenn Ihre französischen und deutschen Websites 404 s zurückgeben, aber Ihr Administrator geladen wird, stellen Sie sicher, dass Sie [&#x200B; abgeschlossen haben (Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Wenn Ihre französischen und deutschen Websites 404 s zurückgeben, aber Ihr Administrator geladen wird, stellen Sie sicher, dass Sie [ abgeschlossen haben (Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Wenn alle URLs den Wert 404 zurückgeben, stellen Sie sicher, dass Sie Ihren Webserver neu gestartet haben.
 - Wenn der Administrator nicht ordnungsgemäß funktioniert, stellen Sie sicher, dass Sie die virtuellen Hosts ordnungsgemäß einrichten.

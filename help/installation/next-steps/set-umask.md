@@ -3,16 +3,16 @@ title: Maske festlegen (optional)
 description: Verbessern Sie den Sicherheitszustand Ihrer lokalen Adobe Commerce-Installation, indem Sie die Dateisystemberechtigungen einschränken.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
 # Maske festlegen (optional)
 
-Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Es empfiehlt sich jedoch, die Sicherheit zu erhöhen, insbesondere in der Produktion. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe einer „umask[&#x200B; weiter &#x200B;](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html) beschränken.
+Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Es empfiehlt sich jedoch, die Sicherheit zu erhöhen, insbesondere in der Produktion. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe einer „umask[ weiter ](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html) beschränken.
 
 Unsere Lösung besteht darin, es Ihnen zu ermöglichen, optional eine Datei mit dem Namen `magento_umask` in Ihrem Anwendungsstammverzeichnis zu erstellen, die die Berechtigungen für die Webservergruppe und alle anderen einschränkt.
 
@@ -26,23 +26,23 @@ Die Standardumaske (ohne angegebene `magento_umask`) ist `002`, was bedeutet:
 
 * 664 für Dateien, d. h. für den Benutzer schreibbar, für die Gruppe schreibbar und für alle anderen schreibgeschützt
 
-Häufig wird vorgeschlagen, in der `022`-Datei den Wert `magento_umask` zu verwenden. Das bedeutet:
+Häufig wird vorgeschlagen, in der `magento_umask`-Datei den Wert `022` zu verwenden. Das bedeutet:
 
 * 755 für Verzeichnisse: Vollständige Kontrolle für den Benutzer, und alle anderen können Verzeichnisse durchlaufen.
 * 644 für Dateien: Lese- und Schreibberechtigungen für den Benutzer und Schreibzugriff für alle anderen Benutzer.
 
 So legen `magento_umask` fest:
 
-1. Melden Sie sich als „Dateisystembesitzer“ über ein Befehlszeilen-Terminal [&#x200B; Ihrem Anwendungs-Server &#x200B;](../prerequisites/file-system/overview.md).
+1. Melden Sie sich als „Dateisystembesitzer“ über ein Befehlszeilen-Terminal [ Ihrem Anwendungs-Server ](../prerequisites/file-system/overview.md).
 1. Navigieren Sie zum Installationsverzeichnis der Anwendung:
 
-   ```bash
+   ```shell
    cd <Application install directory>
    ```
 
 1. Verwenden Sie den folgenden Befehl, um eine Datei mit dem Namen `magento_umask` zu erstellen und den `umask` Wert darin zu schreiben.
 
-   ```bash
+   ```shell
    echo <desired umask number> > magento_umask
    ```
 

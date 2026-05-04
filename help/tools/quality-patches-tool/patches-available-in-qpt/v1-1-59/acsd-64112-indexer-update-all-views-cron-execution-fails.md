@@ -5,9 +5,9 @@ feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
 type: Troubleshooting
-source-git-commit: 8124ce31fbe3a94638fba057419efa7f2a139b84
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Der Patch ACSD-64112 behebt das Problem, dass die `indexer_update_all_views` Cro
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -47,7 +47,7 @@ Die `indexer_update_all_views` Cron-Ausführung schlägt fehl, wenn `MAGE_INDEXE
 1. Führt eine vollständige Neuindizierung durch.
 1. Stellen Sie die folgenden Indexer auf **[!UICONTROL Update on Schedule]** ein:
 
-   ```
+   ```shell
    bin/magento indexer:set-mode schedule catalogpermissions_category catalogpermissions_product
    ```
 
@@ -55,7 +55,7 @@ Die `indexer_update_all_views` Cron-Ausführung schlägt fehl, wenn `MAGE_INDEXE
 1. Klicken Sie auf **[!UICONTROL Category Permissions]** und erstellen Sie eine **[!UICONTROL New Permission]** für eine bestehende Kundengruppe.
 1. Stellen Sie sicher, dass der `catalogpermissions_category` Indexer einen Rückstand aufweist. Führen Sie den folgenden Befehl aus, um dies zu überprüfen:
 
-   ```
+   ```shell
    bin/magento indexer:status
    ```
 
@@ -67,7 +67,7 @@ Die `indexer_update_all_views` Cron-Ausführung schlägt fehl, wenn `MAGE_INDEXE
 
 1. Cron-Auftrag ausführen:
 
-   ```
+   ```shell
    bin/magento cron:run
    ```
 
@@ -79,7 +79,7 @@ Der Cron-Auftrag sollte ohne Probleme ausgeführt werden.
 
 Der `indexer_update_all_views` Cron-Vorgang stößt auf den folgenden Fehler:
 
-```
+```text
 report.CRITICAL: PDOException: There is no active transaction in /home/vendor/magento/zend-db/library/Zend/Db/Adapter/Pdo/Abstract.php:326
 ```
 
@@ -88,7 +88,7 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Zusätzliche Schritte nach der Patch-Installation erforderlich
 
@@ -99,4 +99,4 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
 * [[!DNL Quality Patches Tool]: Ein Self-Service-Tool für hochwertige Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) im Tools-Handbuch.
-* [Neuindizierung im Parallelmodus](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) im Commerce-Konfigurationshandbuch.
+* [Neuindizierung im Parallelmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) im Commerce-Konfigurationshandbuch.

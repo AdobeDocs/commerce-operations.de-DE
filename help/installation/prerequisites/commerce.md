@@ -1,10 +1,10 @@
 ---
 title: Abrufen der Adobe Commerce-Software
-description: Erfahren Sie, wie Sie die Adobe Commerce-Software herunterladen.
+description: Erfahren Sie, wie Sie die Adobe Commerce-Software mit Composer erhalten, die Kompatibilität der Erweiterungen überprüfen und die richtige Distribution für die Installation auswählen.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere eCom
 
 ## So erhalten Sie die Software
 
-Überprüfen Sie die Verfügbarkeit und Kompatibilität von von von Adobe erstellten Erweiterungen und Commerce-Services für Adobe Commerce und Magento Open Source auf unserer [Produktverfügbarkeitsseite](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
+Überprüfen Sie die Verfügbarkeit und Kompatibilität von von von Adobe erstellten Erweiterungen und Commerce-Services für Adobe Commerce und Magento Open Source auf unserer [Produktverfügbarkeitsseite](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 >[!NOTE]
 >
 >Aufgrund von Richtlinienänderungen werden Adobe Commerce-Code-Basen jetzt ausschließlich über Composer verteilt. Verwenden Sie den Composer, um eine der aufgelisteten Adobe Commerce-Versionen herunterzuladen, da die Codebasis im Abschnitt „Downloads“ nicht mehr verfügbar ist.
 >
->Weitere Informationen finden Sie unter [Auf die Abrechnung kann nicht zugegriffen werden, und Codebase kann nicht in der Cloud-Infrastruktur von Adobe Commerce heruntergeladen werden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Weitere Informationen finden Sie unter [Auf die Abrechnung kann nicht zugegriffen werden, und Codebase kann nicht in der Cloud-Infrastruktur von Adobe Commerce heruntergeladen werden](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 In der folgenden Tabelle finden Sie Informationen zu den ersten Schritten bei der Installation von Adobe Commerce.
 
@@ -68,4 +68,4 @@ UNIX-Systeme benötigen `root` Berechtigungen, um Software wie einen Webserver, 
 
 Installieren *nicht* die Anwendung im Webserver-Stammverzeichnis als `root` Benutzer, da der Webserver möglicherweise nicht mit diesen Dateien interagieren kann.
 
-Sie benötigen `root` Berechtigungen, um den [Dateisystembesitzer“ &#x200B;](file-system/overview.md) erstellen und diesen Besitzer zur Gruppe des Webservers hinzuzufügen. Sie verwenden den Dateisystembesitzer, um `bin/magento` Befehle über die Befehlszeile auszuführen und Cron-Aufträge einzurichten, die Aufgaben für Sie planen.
+Sie benötigen `root` Berechtigungen, um den [Dateisystembesitzer“ ](file-system/overview.md) erstellen und diesen Besitzer zur Gruppe des Webservers hinzuzufügen. Sie verwenden den Dateisystembesitzer, um `bin/magento` Befehle über die Befehlszeile auszuführen und Cron-Aufträge einzurichten, die Aufgaben für Sie planen.

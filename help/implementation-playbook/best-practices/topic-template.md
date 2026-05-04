@@ -1,14 +1,14 @@
 ---
 title: Titel des Best Practices-Themas
-description: Erfahren Sie, wie Sie …
+description: Erfahren Sie, wie Sie diese Best Practices-Themenvorlage beim Erstellen neuer Adobe Commerce-Betriebsanleitungen für Experience League anwenden.
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 2%
+source-wordcount: '107'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 <!-- Example 1: -->
 
-[Alle unterstützten &#x200B;](../../release/versions.md) von:
+[Alle unterstützten ](../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

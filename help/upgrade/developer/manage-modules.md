@@ -3,9 +3,9 @@ title: Verwalten von Modulen und Erweiterungen (Entwickler)
 description: Verwalten Sie Adobe Commerce-Module und -Erweiterungen mithilfe der Befehlszeilenschnittstelle und des Package Managers „Composer“.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Mitwirkende Entwickelnde aktualisieren Module und Erweiterungen, indem sie ihre Versionen in der Adobe Commerce-`composer.json` angeben. Wenn Sie kein beitragender Entwickler sind, lesen Sie [Durchführen eines Upgrades](../implementation/perform-upgrade.md).
 
-Sie können der `require`-Datei entweder einen `composer.json` Abschnitt hinzufügen oder den `composer require` Befehl wie folgt verwenden:
+Sie können der `composer.json`-Datei entweder einen `require` Abschnitt hinzufügen oder den `composer require` Befehl wie folgt verwenden:
 
 {{$include /help/_includes/server-login.md}}
 
@@ -24,13 +24,13 @@ Sie haben die folgenden Optionen:
 
 Befehlsverwendung:
 
-```bash
+```shell
 composer show --all <vendor>/<name>
 ```
 
 Beispiel:
 
-```bash
+```shell
 composer show --all example/module
 ```
 
@@ -38,13 +38,13 @@ composer show --all example/module
 
 Befehlsverwendung:
 
-```bash
+```shell
 composer require <vendor>/<name>:<version>
 ```
 
 Beispiel:
 
-```bash
+```shell
 composer require example/module:1.0.0
 ```
 
@@ -67,7 +67,7 @@ Warten Sie, während Composer die Abhängigkeiten aktualisiert und das Modul ins
 
 1. Auflösen von Abhängigkeiten und Schreiben exakter Versionen in die `composer.lock`.
 
-   ```bash
+   ```shell
    composer update
    ```
 

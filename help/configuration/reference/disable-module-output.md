@@ -2,9 +2,9 @@
 title: Modulausgabe deaktivieren
 description: Erfahren Sie, wie Sie die Modulausgabe in Adobe Commerce deaktivieren, ohne Abhängigkeiten zu entfernen. Erfahren Sie mehr über Konfigurationsschritte und Anwendungsfälle.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Die Output-Deaktivierung wird in den folgenden Klassen durchgeführt:
 
 So deaktivieren Sie die Modulausgabe in der Pipeline-Bereitstellung oder einer anderen Bereitstellung mit mehreren Instanzen der Commerce-Anwendung:
 
-1. Bearbeiten Sie die `Backend` des `config.xml`.
+1. Bearbeiten Sie die `config.xml` des `Backend`.
 1. Exportieren der Konfigurationsänderungen
 
 ### Bearbeiten der `Backend`-`config.xml`
@@ -60,7 +60,7 @@ Aufgrund dieser Konfiguration können sich Kunden beispielsweise nicht mehr für
 
 Führen Sie den folgenden Befehl aus, um die Konfigurationsänderungen zu exportieren:
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -68,7 +68,7 @@ Die Ergebnisse werden in die `<Magento_install_dir>/app/etc/config.php` geschrie
 
 Löschen Sie anschließend den Cache, um die neue Einstellung zu aktivieren:
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 

@@ -2,9 +2,9 @@
 title: Erweitertes Setup
 description: Erfahren Sie, wie Sie das erweiterte Setup für Adobe Commerce einrichten. Hier finden Sie Schritt-für-Schritt-Anweisungen und Konfigurationsanforderungen.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Um diese Einstellung zu verwalten, bearbeiten Sie den `batchRowsCount` in der `d
 
 Sie können die Indexerleistung anpassen, indem Sie die Variablen für die Batch-Größe des Index anpassen. Dadurch wird gesteuert, wie viele Entitäten gleichzeitig vom Indexer verarbeitet werden. In einigen Situationen haben wir erhebliche Verringerungen bei der Indizierungszeit erlebt.
 
-Wenn Sie beispielsweise ein Profil ausführen, das dem B2B-Medium ähnelt, können Sie den in `batchRowsCount` `app/code/Magento/catalog/etc/di.xml` Konfigurationswert überschreiben und den Standardwert von `5000` bis `1000` überschreiben. Dadurch wird die gesamte Indizierungszeit bei einer standardmäßigen [!DNL MySQL]-Konfiguration von 4 auf 2 Stunden reduziert.
+Wenn Sie beispielsweise ein Profil ausführen, das dem B2B-Medium ähnelt, können Sie den in `app/code/Magento/catalog/etc/di.xml` `batchRowsCount` Konfigurationswert überschreiben und den Standardwert von `5000` bis `1000` überschreiben. Dadurch wird die gesamte Indizierungszeit bei einer standardmäßigen [!DNL MySQL]-Konfiguration von 4 auf 2 Stunden reduziert.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Adobe Commerce unterstützt Nachrichtenwarteschlangen, die über [!DNL RabbitMQ]
 
 >[!WARNING]
 >
->Die Funktion „Split Database[&#x200B; wurde in &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) 2.4.2 von Adobe Commerce als veraltet gekennzeichnet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](../configuration/storage/revert-split-database.md).
+>Die Funktion für die Aufspaltung der Datenbank ist seit Version 2.4.2 von Adobe Commerce veraltet. Siehe [Von einer geteilten Datenbank auf eine einzelne Datenbank zurücksetzen](../configuration/storage/revert-split-database.md).
 
 Mit Adobe Commerce können Sie skalierbaren Datenbankspeicher konfigurieren, um den Anforderungen eines wachsenden Unternehmens gerecht zu werden. Sie können drei separate Master-Datenbanken für bestimmte Domains einrichten:
 
@@ -68,13 +68,13 @@ Um zusätzliche Datenbanken zu konfigurieren, müssen Sie eine leere Datenbank e
 
 Für Checkout-Master-DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 Für OMS-Master-DB
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -86,7 +86,7 @@ Zusätzlich zu den Master-Datenbanken können Sie mit [!DNL Commerce] eine Reihe
 
 Sie können eine Slave-Datenbank hinzufügen, indem Sie den folgenden Befehl ausführen:
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 

@@ -2,7 +2,7 @@
 title: Datenbankschema und -daten aktualisieren
 description: Führen Sie diese Schritte aus, um Ihr Adobe Commerce-Datenbankschema zu aktualisieren.
 exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -27,14 +27,14 @@ Jedes Mal, wenn Sie eine Aktion ausführen, die dazu führt, dass sich das Daten
 
 1. Starten Sie das Upgrade:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Dabei ist `--keep-generated` ein optionales Argument, das nicht aktualisiert [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md). Dieses optionale Argument ist nur für *(*) erfahrene Systemintegratoren geeignet. Sie sollte *nur* im [Produktionsmodus) &#x200B;](../../configuration/bootstrap/application-modes.md#production-mode). Sie sollte *nicht* im [Entwicklermodus“ &#x200B;](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Dabei ist `--keep-generated` ein optionales Argument, das nicht aktualisiert [statische Ansichtsdateien](../../configuration/cli/static-view-file-deployment.md). Dieses optionale Argument ist nur für *(*) erfahrene Systemintegratoren geeignet. Sie sollte *nur* im [Produktionsmodus) ](../../configuration/bootstrap/application-modes.md#production-mode). Sie sollte *nicht* im [Entwicklermodus“ ](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Cache leeren:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```

@@ -2,9 +2,9 @@
 title: Konfigurieren von Redis mit AWS ElastiCache
 description: Erfahren Sie, wie Sie für auf EC2 gehostete Commerce-Instanzen AWS ElastiCache anstelle einer lokalen Redis-Instanz verwenden. Erfahren Sie mehr über Befehlszeileneinrichtung, Konfigurationsoptionen und Validierungstechniken.
 feature: Configuration, Cache
-source-git-commit: b66479ee1350d92c1d59212283222e5068c263a6
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Ab Commerce 2.4.3 können auf Amazon EC2 gehostete Instanzen einen AWS ElastiCac
    - Öffnen Sie eine SSH-Verbindung zu Ihrer EC2-Instanz
    - Installieren Sie auf der EC2-Instanz den Redis-Client:
 
-     ```bash
+     ```shell
      sudo apt-get install redis
      ```
 
@@ -35,7 +35,7 @@ Ab Commerce 2.4.3 können auf Amazon EC2 gehostete Instanzen einen AWS ElastiCac
    - Fügen Sie eine Eingangsregel zur ElastiCache-Cluster-Sicherheitsgruppe hinzu: Typ `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Stellen Sie eine Verbindung zur Redis-CLI her:
 
-     ```bash
+     ```shell
      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
      ```
 
@@ -47,19 +47,19 @@ Führen Sie `setup` Befehle aus, um die Redis-Endpunkte anzugeben.
 
 So konfigurieren Sie Commerce für Redis als Standard-Caching:
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
 So konfigurieren Sie das Caching von Commerce für Redis-Seiten:
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
 ```
 
 So konfigurieren Sie Commerce für die Verwendung von Redis für die Sitzungsspeicherung:
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -70,7 +70,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 1. Öffnen Sie eine SSH-Verbindung zur Commerce EC2-Instanz.
 1. Starten Sie den Redis-Monitor.
 
-   ```bash
+   ```shell
    redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
    ```
 

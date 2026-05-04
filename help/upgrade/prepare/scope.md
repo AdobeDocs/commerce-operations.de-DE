@@ -2,16 +2,16 @@
 title: Upgrade-Umfang verstehen
 description: Erfahren Sie mehr über abwärtsinkompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce-Module oder Erweiterungen von Drittanbietern auswirken können.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
 
 # Den Umfang der Aktualisierung verstehen
 
-Lesen Sie [Versionshinweise](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview) um den Umfang einer Version zu verstehen, einschließlich Verbesserungen, Fehlerbehebungen und bekannter Probleme, die sich auf Drittanbieter- und benutzerdefinierte Module auswirken können.
+Lesen Sie [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) um den Umfang einer Version zu verstehen, einschließlich Verbesserungen, Fehlerbehebungen und bekannter Probleme, die sich auf Drittanbieter- und benutzerdefinierte Module auswirken können.
 
 ## Abwärtsinkompatible Änderungen
 
@@ -26,7 +26,7 @@ Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher
 
 ## Benutzerdefinierte Module
 
-Alle benutzerdefinierten Module sollten mit der Zielversion abgeglichen werden, auf die Sie das Upgrade durchführen möchten. Dies ist der zeit- und ressourcenintensivste Prozess eines Upgrades. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtsinkompatiblen Änderungen suchen und neue Praktiken beachten, wie z. B. die Zerlegung von Controllern. Weitere Informationen hierzu finden Sie in den [&#x200B; zu &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview). Stellen Sie außerdem sicher, dass Sie die [Best Practices“ für &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/) Modulentwicklung befolgen.
+Alle benutzerdefinierten Module sollten mit der Zielversion abgeglichen werden, auf die Sie das Upgrade durchführen möchten. Dies ist der zeit- und ressourcenintensivste Prozess eines Upgrades. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtsinkompatiblen Änderungen suchen und neue Praktiken beachten, wie z. B. die Zerlegung von Controllern. Weitere Informationen hierzu finden Sie in den [ zu ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Stellen Sie außerdem sicher, dass Sie die [Best Practices“ für ](https://developer.adobe.com/commerce/php/best-practices/extensions/) Modulentwicklung befolgen.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -34,13 +34,13 @@ Der [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das Ihre Insta
 
 Die Verwendung dieses Tools reduziert den Aufwand, den Ihr Team betreiben muss, um den Umfang und die Auswirkungen eines Upgrades zu verstehen. Dies hilft Ihnen, gängige Code-Probleme beim Upgrade zu vermeiden, und bietet eine klare Anleitung zum Beheben identifizierter Probleme. Außerdem können Sie die wichtigsten Probleme priorisieren, die für ein erfolgreiches Upgrade erforderlich sind, sodass Sie beim Upgrade Zeit und Kosten sparen.
 
-Erste Schritte mit der [!DNL Upgrade Compatibility Tool] finden Sie in den folgenden Abschnitten. Weitere technische Details und erweiterte Anwendungsfälle finden Sie [!DNL Upgrade Compatibility Tool] [Handbuch](../upgrade-compatibility-tool/overview.md) .
+Erste Schritte mit der [!DNL Upgrade Compatibility Tool] finden Sie in den folgenden Abschnitten. Weitere technische Details und erweiterte Anwendungsfälle finden Sie [ [!DNL Upgrade Compatibility Tool]Handbuch](../upgrade-compatibility-tool/overview.md) .
 
 ### Tool herunterladen
 
 Verwenden Sie Composer, um das Tool herunterzuladen. Es erfordert PHP 7.3 oder höher, mindestens 2 GB RAM, Node.js (wenn Sie die GraphQL-Kompatibilität überprüfen) und eine Adobe Commerce-Lizenz.
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
@@ -48,7 +48,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 So analysieren Sie Ihre Instanz und prüfen sie auf Fehler, Warnungen und kritische Probleme:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c <coming version> 
 ```
 
@@ -58,7 +58,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 So identifizieren Sie die wichtigsten Probleme, die Ihr Team beheben muss:
 
-```bash
+```shell
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
 ```
 

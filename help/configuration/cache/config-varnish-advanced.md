@@ -3,9 +3,9 @@ title: Erweiterte Lackkonfiguration
 description: Erfahren Sie, wie Sie erweiterte Lackfunktionen für Adobe Commerce konfigurieren, einschließlich Konsistenzprüfungen, Anmut- und Sanktionsmodi. Entdecken Sie Techniken zur VCL-Optimierung.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Die `vcl_hit`-Unterroutine definiert, wie Varnish auf eine Anforderung von Objek
 
 ### Wenn das Commerce-Backend in Ordnung ist
 
-Wenn die Konsistenzprüfungen ergeben, dass das Commerce-Backend fehlerfrei ist, prüft Varnish, ob die Zeit in der Übergangsphase bleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, aber ein Händler kann den Wert über den Administrator festlegen, wie in [Konfigurieren von Commerce für die Verwendung von &#x200B;](configure-varnish-commerce.md)) beschrieben. Wenn die Übergangsphase nicht abgelaufen ist, liefert Varnish den veralteten Inhalt und aktualisiert das -Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das -Objekt synchron vom Commerce-Backend.
+Wenn die Konsistenzprüfungen ergeben, dass das Commerce-Backend fehlerfrei ist, prüft Varnish, ob die Zeit in der Übergangsphase bleibt. Die standardmäßige Übergangsphase beträgt 300 Sekunden, aber ein Händler kann den Wert über den Administrator festlegen, wie in [Konfigurieren von Commerce für die Verwendung von ](configure-varnish-commerce.md)) beschrieben. Wenn die Übergangsphase nicht abgelaufen ist, liefert Varnish den veralteten Inhalt und aktualisiert das -Objekt asynchron vom Commerce-Server. Wenn die Übergangsphase abgelaufen ist, stellt Varnish den veralteten Inhalt bereit und aktualisiert das -Objekt synchron vom Commerce-Backend.
 
 Die maximale Zeitspanne, die Varnish für die Bereitstellung eines veralteten Objekts verwendet, ist die Summe aus der Übergangsphase (standardmäßig 300 Sekunden) und dem TTL-Wert (standardmäßig 86400 Sekunden).
 
@@ -79,7 +79,7 @@ Statische Dateiversionen können auf allen Computern deaktiviert werden. Diese k
 
 Schließlich müssen sich alle Commerce-Instanzen im Produktionsmodus befinden. Bevor Varnish gestartet wird, löschen Sie den Cache auf jeder Instanz. Gehen Sie in der Admin zu **System** > Tools > **Cache-Verwaltung** und klicken Sie auf **Magento-Cache leeren**. Sie können auch den folgenden Befehl ausführen, um den Cache zu löschen:
 
-```bash
+```shell
 bin/magento cache:flush
 ```
 
@@ -92,7 +92,7 @@ Nach dem Neukompilieren können Sie das Modul Saint-Modus installieren. Führen 
 1. Beziehen Sie den Quell-Code aus [Varnish-Modulen](https://github.com/varnish/varnish-modules). Klonen Sie die Git-Version (Master-Version), da die Versionen 0.9.x einen Quellcodefehler enthalten.
 1. Erstellen Sie den Quell-Code mit AutoTools:
 
-   ```bash
+   ```shell
    sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
    ./bootstrap   # If running from git.
    ./configure

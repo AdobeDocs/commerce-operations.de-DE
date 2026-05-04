@@ -1,11 +1,11 @@
 ---
 title: Sicheres Cron PHP
-description: Beschränken Sie, wer die Datei „cron.php“ in einem Browser ausführen darf.
+description: Erfahren Sie, wie Sie den Browser-Zugriff auf pub/cron.php einschränken und geplante Adobe Commerce-Aufgaben vor nicht autorisierter oder böswilliger Cron-Ausführung schützen können.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Der Cron-Auftrag führt mehrere geplante Aufgaben aus und ist ein wichtiger Teil
 
 >[!INFO]
 >
->Weitere Informationen [&#x200B; Cron-Gruppen finden Sie &#x200B;](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) „Konfigurieren und Ausführen von Cron“.
+>Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) „Konfigurieren und Ausführen von Cron“.
 
 Sie können einen Cron-Auftrag wie folgt ausführen:
 
@@ -38,8 +38,8 @@ Sie können einen Cron-Auftrag wie folgt ausführen:
 
 In diesem Abschnitt wird beschrieben, wie Sie Cron mithilfe der HTTP-Standardauthentifizierung mit Apache schützen. Diese Anweisungen basieren auf Apache 2.2 mit CentOS 6. Weitere Informationen finden Sie in einer der folgenden Ressourcen:
 
-- [Tutorial zur Authentifizierung und Autorisierung bei Apache 2.2](https://httpd.apache.org/docs/2.2/howto/auth.html)
-- [Tutorial zur Authentifizierung und Autorisierung bei Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+- [Tutorial zur Apache 2.2-Authentifizierung und -Autorisierung](https://httpd.apache.org/docs/2.2/howto/auth.html)
+- [Tutorial zur Apache 2.4-Authentifizierung und -Autorisierung](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 ### Erstellen einer Kennwortdatei
 
@@ -47,11 +47,11 @@ Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle
 
 Geben Sie die folgenden Befehle als Benutzer mit `root` Berechtigungen ein:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
@@ -61,7 +61,7 @@ Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benu
 
 Um einen weiteren Benutzer zu Ihrer Kennwortdatei hinzuzufügen, geben Sie den folgenden Befehl als Benutzer mit `root` Berechtigungen ein:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
@@ -71,13 +71,13 @@ Sie können die Ausführung von Cron durch mehr als einen Benutzer ermöglichen,
 
 So fügen Sie einen weiteren Benutzer zu Ihrer Kennwortdatei hinzu:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
 Um eine autorisierte Gruppe zu erstellen, erstellen Sie eine Gruppendatei an einer beliebigen Stelle außerhalb des Stammverzeichnisses des Webservers. Die Gruppendatei gibt den Namen der Gruppe und der Benutzenden in der Gruppe an. In diesem Beispiel lautet der Gruppenname `MagentoCronGroup`.
 
-```bash
+```shell
 vim /usr/local/apache/password/group
 ```
 
@@ -163,7 +163,7 @@ Commerce bietet standardmäßig eine optimierte Beispiel-Nginx-Konfigurationsdat
 
 1.nginx neu starten:
 
-```bash
+```shell
 systemctl restart nginx
 ```
 
@@ -183,7 +183,7 @@ Die einfachste Möglichkeit, sicherzustellen, dass `pub/cron.php` sicher ist, be
 
    Beispiel:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 
@@ -311,4 +311,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->Sie müssen Cron zweimal ausführen: zuerst um Aufgaben zu finden, die ausgeführt werden sollen, und dann erneut, um die Aufgaben selbst auszuführen. Weitere Informationen [&#x200B; Cron-Gruppen finden Sie &#x200B;](../cli/configure-cron-jobs.md) „Konfigurieren und Ausführen von Cron“.
+>Sie müssen Cron zweimal ausführen: zuerst um Aufgaben zu finden, die ausgeführt werden sollen, und dann erneut, um die Aufgaben selbst auszuführen. Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md) „Konfigurieren und Ausführen von Cron“.

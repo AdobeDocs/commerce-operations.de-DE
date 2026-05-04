@@ -5,9 +5,9 @@ role: Admin, Developer
 feature: B2B
 type: Troubleshooting
 exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
-source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '425'
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-66311 wird das Problem behoben, dass das Unternehmensraster f
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -56,7 +56,7 @@ Das Firmen-Raster wird für Admin-Benutzer mit eingeschränktem Website-Zugriff 
 
    1. Führen Sie die folgende Abfrage aus, um die Verteilung zu überprüfen:
 
-      ```
+      ```sql
            SELECT website_id, COUNT(*) 
            FROM customer_entity 
            GROUP BY website_id; 
@@ -67,12 +67,12 @@ Das Firmen-Raster wird für Admin-Benutzer mit eingeschränktem Website-Zugriff 
       | Anzahl der Kunden | Anzahl der Unternehmen |
       |---------------------|---------------------|
       | 1 | 4.500 |
-      | 2 | ~1.000 |
+      | 2 | ~1,000 |
       | ~595 K | 1 |
 
    1. Führen Sie die folgende Abfrage aus, um die Verteilung zu überprüfen:
 
-      ```
+      ```sql
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
               SELECT company_id, COUNT(customer_id) AS customer_count
@@ -100,7 +100,7 @@ Das Laden der Seite dauert mehr als 14 Minuten.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

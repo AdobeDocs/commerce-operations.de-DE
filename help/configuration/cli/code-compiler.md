@@ -2,9 +2,9 @@
 title: Code-Compiler
 description: Erfahren Sie, wie Sie den Adobe Commerce-Code-Compiler über die Befehlszeile ausführen. Erfahren Sie mehr über Kompilierungsprozesse und Optimierungstechniken.
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Codekompilierungsklassen finden Sie im Namespace [\Magento\Setup\Module\Di\App\T
 
 So führen Sie den Einzelmandant-Compiler aus:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
-```
+```text
 Generated code and dependency injection configuration successfully.
 ```
 
@@ -40,7 +40,7 @@ In einigen Fällen empfiehlt es sich, den Code vor der Installation der Commerce
 
 1. Aktivieren Sie die Module.
 
-   ```bash
+   ```shell
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
@@ -50,11 +50,11 @@ In einigen Fällen empfiehlt es sich, den Code vor der Installation der Commerce
 
 1. Kompilieren Sie den Code.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
-   ```
+   ```text
    Generated code and dependency injection configuration successfully.
    ```
 

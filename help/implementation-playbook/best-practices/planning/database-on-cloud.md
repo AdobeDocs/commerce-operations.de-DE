@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Datenbank- und Anwendungseinstellungen konfig
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -53,15 +53,15 @@ Welche Suchmaschine Sie verwenden, hängt von der installierten Version von Adob
 
 Um festzustellen, welche Suchmaschine derzeit verwendet wird, führen Sie den folgenden Befehl aus:
 
-```bash
+```shell
 ./bin/magento config:show catalog/search/engine
 ```
 
 Konfigurationsanweisungen finden Sie im Entwicklerhandbuch für Adobe Commerce in Cloud Manager:
 
-- [Einrichten des OpenSearch-Service](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Einrichten des OpenSearch-Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Einrichten des Elasticsearch-Service](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Einrichten des Elasticsearch-Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Benutzerdefinierte Trigger vermeiden
 
@@ -72,18 +72,18 @@ Trigger werden verwendet, um Änderungen in Audit-Tabellen zu protokollieren. Au
 - Trigger werden als Code interpretiert und von MySQL nicht vorkompiliert. Durch das Anbinden an den Transaktionsbereich Ihrer Abfrage wird der Overhead für jede mit der Tabelle durchgeführte Abfrage einem Parser und Interpreter hinzugefügt.
 - Die Trigger nutzen denselben Transaktionsbereich wie die Originalabfragen. Während diese Abfragen um Tabellensperren konkurrieren, konkurrieren die Trigger unabhängig voneinander um Sperren in einer anderen Tabelle.
 
-Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger finden Sie unter [MySQL-Trigger &#x200B;](mysql-configuration.md#triggers).
+Weitere Informationen zu Alternativen zur Verwendung benutzerdefinierter Trigger finden Sie unter [MySQL-Trigger ](mysql-configuration.md#triggers).
 
 ## Upgrade von [!DNL ECE-Tools] auf Version 2002.0.21 oder höher {#ece-tools-version}
 
-Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-Tools auf Version 2002.0.21 oder höher. Anweisungen finden Sie unter [Aktualisieren `ece-tools` Version](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in unserer Entwicklerdokumentation.
+Um potenzielle Probleme mit Cron-Deadlocks zu vermeiden, aktualisieren Sie ECE-Tools auf Version 2002.0.21 oder höher. Anweisungen finden Sie unter [Aktualisieren `ece-tools` Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in unserer Entwicklerdokumentation.
 
 ## Indexermodus sicher wechseln
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Beim Wechsel des Indexers werden [!DNL data definition language] (DDL)-Anweisungen generiert, um Trigger zu erstellen, die zu Datenbanksperren führen können. Sie können dieses Problem verhindern, indem Sie Ihre Website in den Wartungsmodus versetzen und Cron-Aufträge deaktivieren, bevor Sie die Konfiguration ändern.
-Anweisungen finden Sie [Konfigurieren von &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=de#configure-indexers-1)) im *Adobe Commerce-Konfigurationshandbuch*.
+Anweisungen finden Sie [Konfigurieren von ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1)) im *Adobe Commerce-Konfigurationshandbuch*.
 
 ## DDL-Anweisungen nicht in Produktion ausführen
 
@@ -95,10 +95,10 @@ Wenn Sie eine DDL-Anweisung ausführen müssen, setzen Sie die Website in den Wa
 
 Aktivieren Sie die Auftragsarchivierung vom Administrator aus, um den Platz für Verkaufstabellen zu reduzieren, wenn Ihre Auftragsdaten wachsen. Die Archivierung spart MySQL Speicherplatz und verbessert die Checkout-Leistung.
 
-Siehe [Archivierung aktivieren](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=de) in der Dokumentation zu Adobe Commerce Merchant.
+Siehe [Archivierung aktivieren](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) in der Dokumentation zu Adobe Commerce Merchant.
 
 ## Weitere Informationen
 
-- [MySQL-Speicher-Engines](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
+- [MySQL Storage Engines](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Voraussetzungen für die Aktualisierung auf Adobe Commerce 2.3.5 für MariaDB](../maintenance/mariadb-upgrade.md)
 - [Best Practices zum Beheben von Problemen mit der Datenbankleistung](../maintenance/resolve-database-performance-issues.md)

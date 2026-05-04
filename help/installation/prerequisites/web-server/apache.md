@@ -2,11 +2,11 @@
 title: Installieren von Apache für On-Premise-Bereitstellungen
 description: Erfahren Sie, wie Sie Apache für lokale Adobe Commerce-Bereitstellungen installieren und konfigurieren. Aktivieren Sie erforderliche Module, Neuschreibungen und ".htaccess“-Einstellungen.
 feature: Install, Configuration
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Adobe unterstützt die Apache-Versionen, die in den [Systemanforderungen](../../
 
 Beginnen Sie mit dem Abschnitt, der Ihrer Umgebung entspricht:
 
-- Wenn Apache bereits installiert ist, beginnen Sie mit [Apache-Anforderungen &#x200B;](#review-apache-requirements).
+- Wenn Apache bereits installiert ist, beginnen Sie mit [Apache-Anforderungen ](#review-apache-requirements).
 - Wenn Sie Apache auf Ubuntu installieren oder aktualisieren müssen, gehen Sie zu [Apache auf Ubuntu installieren oder aktualisieren](#installing-or-upgrading-apache-on-ubuntu).
 - Wenn Sie Apache unter CentOS installieren müssen, navigieren Sie zu [Apache unter CentOS installieren](#installing-apache-on-centos).
 
@@ -48,7 +48,7 @@ Verwenden Sie diesen Abschnitt, um Apache-Neuschreibungen zu aktivieren und die 
 
 1. Aktivieren Sie das Apache Rewrite-Modul:
 
-   ```bash
+   ```shell
    a2enmod rewrite
    ```
 
@@ -68,11 +68,11 @@ Verwenden Sie diesen Abschnitt, um Apache-Neuschreibungen zu aktivieren und die 
 
    >[!NOTE]
    >
-   >Wenn Sie ein Upgrade von einer früheren Apache-Version durchgeführt haben, suchen Sie zunächst in `<Directory "/var/www/html">` nach einem vorhandenen `<Directory "/var/www">`- oder `000-default.conf`. Wenn Sie Adobe Commerce in einer anderen `docroot` installieren, aktualisieren Sie den entsprechenden `<Directory>` für diesen Pfad.
+   >Wenn Sie ein Upgrade von einer früheren Apache-Version durchgeführt haben, suchen Sie zunächst in `000-default.conf` nach einem vorhandenen `<Directory "/var/www/html">`- oder `<Directory "/var/www">`. Wenn Sie Adobe Commerce in einer anderen `docroot` installieren, aktualisieren Sie den entsprechenden `<Directory>` für diesen Pfad.
 
 1. Starten Sie Apache neu, um Ihre Änderungen anzuwenden:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -91,7 +91,7 @@ Adobe Commerce erfordert die Installation der folgenden Apache-Module:
 
 Um sicherzustellen, dass Apache installiert ist, und die aktuelle Version anzuzeigen, geben Sie Folgendes ein:
 
-```bash
+```shell
 apache2 -v
 ```
 
@@ -120,13 +120,13 @@ Wenn Sie Apache-Server-Neuschreibungen konfigurieren, müssen Sie den Typ der An
 
 1. Installieren Sie Apache, falls noch nicht geschehen:
 
-   ```bash
+   ```shell
    apt-get -y install apache2
    ```
 
 1. Überprüfen Sie die Installation:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
@@ -149,7 +149,7 @@ Wenn Apache bereits installiert ist und Sie eine Version verwenden, die älter a
 
 1. Paketinformationen aktualisieren:
 
-   ```bash
+   ```shell
    apt-get -y update
    ```
 
@@ -157,7 +157,7 @@ Wenn Apache bereits installiert ist und Sie eine Version verwenden, die älter a
 
 1. Installieren oder aktualisieren Sie Apache:
 
-   ```bash
+   ```shell
    apt-get install -y apache2
    ```
 
@@ -167,11 +167,11 @@ Wenn Apache bereits installiert ist und Sie eine Version verwenden, die älter a
 
 1. Überprüfen Sie die Installation:
 
-   ```bash
+   ```shell
    apache2 -v
    ```
 
-1. Vergewissern Sie sich, dass die installierte Version mit der Version übereinstimmt, die für Ihre Adobe Commerce-Version in [Systemanforderungen) unterstützt &#x200B;](../../system-requirements.md).
+1. Vergewissern Sie sich, dass die installierte Version mit der Version übereinstimmt, die für Ihre Adobe Commerce-Version in [Systemanforderungen) unterstützt ](../../system-requirements.md).
 
 1. Aktivieren [Umschreibungen und `.htaccess` für Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu).
 
@@ -179,7 +179,7 @@ Wenn Apache bereits installiert ist und Sie eine Version verwenden, die älter a
 
 1. Öffnen Sie die `/etc/apache2/sites-available/000-default.conf` zur Bearbeitung:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -206,17 +206,17 @@ Wenn Apache bereits installiert ist und Sie eine Version verwenden, die älter a
 
 1. Konfigurieren Sie Apache für die Verwendung des `mod_rewrite` Moduls:
 
-   ```bash
+   ```shell
    cd /etc/apache2/mods-enabled
    ```
 
-   ```bash
+   ```shell
    ln -s ../mods-available/rewrite.load
    ```
 
 1. Starten Sie Apache neu, um Änderungen anzuwenden:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
@@ -238,13 +238,13 @@ Wenn Sie Apache-Server-Neuschreibungen konfigurieren, müssen Sie den Typ der An
 
 1. Installieren Sie Apache, falls noch nicht geschehen.
 
-   ```bash
+   ```shell
    yum -y install httpd
    ```
 
 1. Überprüfen Sie die Installation:
 
-   ```bash
+   ```shell
    httpd -v
    ```
 
@@ -265,7 +265,7 @@ Wenn Sie Apache-Server-Neuschreibungen konfigurieren, müssen Sie den Typ der An
 
 1. Öffnen Sie die `/etc/httpd/conf/httpd.conf` zur Bearbeitung:
 
-   ```bash
+   ```shell
    vim /etc/httpd/conf/httpd.conf
    ```
 
@@ -296,7 +296,7 @@ Wenn Sie Apache-Server-Neuschreibungen konfigurieren, müssen Sie den Typ der An
 
 1. Um die Apache-Einstellungen anzuwenden, starten Sie Apache neu.
 
-   ```bash
+   ```shell
    systemctl restart httpd
    ```
 

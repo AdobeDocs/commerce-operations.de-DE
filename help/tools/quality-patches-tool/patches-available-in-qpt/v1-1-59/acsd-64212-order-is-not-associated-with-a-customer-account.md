@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-64212: Bestellung, die nicht mit einem Kundenkonto verknüpft ist, das nach  [!DNL GraphQL]  Bestellung über erstellt wurde'
-description: Adobe Commerce Wenden Sie den Patch ACSD-64212 an, um das Problem zu beheben, dass eine Bestellung nicht mit einem Kundenkonto verknüpft wird, das nach der Bestellung  [!DNL GraphQL]  erstellt wurde.
+description: Wenden Sie den Patch ACSD-64212 an, um das Problem zu beheben, dass eine Bestellung nicht mit einem Kundenkonto verknüpft wird, das nach der Bestellung  [!DNL GraphQL]  erstellt wurde.
 feature: GraphQL, Checkout, Customers
 role: Admin, Developer
 exl-id: be62e635-2a61-41ed-9c1d-b2c54ee01024
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.5 - 2.4.7-p3
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -39,7 +39,7 @@ Die Bestellung ist nicht mit einem Kundenkonto verknüpft, wenn das Konto nach d
 1. Platzieren Sie eine Gastbestellung im Frontend.
 1. Senden Sie die folgende Anfrage, um das Konto zu erstellen:
 
-```
+```graphql
 mutation CreateAccountAfterCheckout(
 $email: String!
 $firstname: String!
@@ -65,7 +65,7 @@ $is_subscribed: Boolean!
 }
 ```
 
-```
+```json
 {
   "email": "guest@example.com",
   "firstname": "first",
@@ -89,7 +89,7 @@ Kundenkonto wurde erstellt, aber die Gastbestellung ist nicht mit dem Kunden ver
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen

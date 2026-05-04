@@ -1,5 +1,5 @@
 ---
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 0%
@@ -12,30 +12,30 @@ ht-degree: 0%
 1. Melden Sie sich beim Build-System als Eigentümer des Dateisystems an.
 1. Wechseln Sie in das Stammverzeichnis der Anwendung.
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    ```
 
 1. Abrufen der Änderungen an `app/etc/config.php` aus der Quell-Code-Verwaltung.
 
-   ```bash
+   ```shell
    git pull mconfig m2.2_deploy
    ```
 
 1. Kompilieren Sie Code.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Generieren Sie nach dem Kompilieren des Codes statische Ansichtsdateien.
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy -f
    ```
 
 1. Überprüfen Sie die Änderungen in der Quell-Code-Verwaltung.
 
-   ```bash
+   ```shell
    git add -A && git commit -m "Updated files on build system" && git push mconfig m2.2_deploy
    ```

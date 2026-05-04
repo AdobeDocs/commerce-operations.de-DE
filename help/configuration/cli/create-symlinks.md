@@ -2,9 +2,9 @@
 title: Erstellen von Symlinks zu LESS-Dateien
 description: Erfahren Sie, wie Sie für die Adobe Commerce-Entwicklung Symlinks zu LESS-Dateien erstellen. Entdecken Sie die Verknüpfung von Stylesheets und die Optimierung von Entwicklungs-Workflows.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ So erstellen Sie Symlinks zu LESS-Dateien:
 
 Befehlsoptionen:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="..."] [--theme="..."] [file1] ... [fileN]
 ```
 
@@ -37,13 +37,13 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 
 Um beispielsweise LESS-Dateien für das Frontend-Design mit dem Namen `VendorName/themeName` im `en_US` Gebietsschema mithilfe einer CSS-Datei mit dem Namen `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css` zu erstellen, geben Sie den folgenden Befehl ein:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l
 ```
 
 Die folgenden Meldungen werden angezeigt, um den Erfolg zu bestätigen:
 
-```
+```text
 Processed Area: frontend, Locale: en_US, Theme: VendorName/themeName, File type: less.
 -> css/styles-l.less
 Successfully processed.
@@ -51,6 +51,6 @@ Successfully processed.
 
 So erstellen Sie LESS-Dateien für das Admin-HTML:
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy --locale="en_US" --area="adminhtml" --theme="Magento/backend" css/styles css/styles-old
 ```

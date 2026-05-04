@@ -1,16 +1,16 @@
 ---
 title: 'ACSD-65938: E-Mails zu Geschenkkarten werden auch dann gesendet, wenn die Rechnungserstellung fehlgeschlagen ist'
-description: Adobe Commerce Wenden Sie den Patch ACSD-65938 an, um das Problem zu beheben, dass E-Mails mit Geschenkgutscheinen gesendet wurden, bevor die Rechnung erfolgreich gespeichert und übergeben wurde, und um sicherzustellen, dass E-Mails nach dem ordnungsgemäßen Speichern der Rechnung ausgelöst werden.
+description: Wenden Sie den Patch ACSD-65938 an, um das Problem zu beheben, dass E-Mails mit Geschenkgutscheinen gesendet wurden, bevor die Rechnung erfolgreich gespeichert und übergeben wurde, und um sicherzustellen, dass E-Mails nach dem ordnungsgemäßen Speichern der Rechnung ausgelöst werden.
 feature: Orders, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: b688875cd0a7bfc07dba77254605e7055ae7cca4
+exl-id: a6e85c9a-cbf6-4b4a-927b-43ec2ce827fc
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65938: E-Mails zu Geschenkkarten werden auch dann gesendet, wenn die Rechnungserstellung fehlgeschlagen ist
 
@@ -28,7 +28,7 @@ Der Patch des ACSD-65938 behebt ein Problem, bei dem E-Mails mit Geschenkkarten 
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -44,7 +44,7 @@ Geschenkkarten-E-Mails wurden gesendet, bevor bestätigt wurde, dass die Rechnun
 6. Ändern Sie die `OrderRepository`, um eine Ausnahme während der Auftragserteilung zu simulieren.
 7. Senden Sie eine POST-Anfrage an `rest/default/V1/order/<ORDER_ID>/invoice` mit der folgenden Payload:
 
-   ```
+   ```json
    {
      "capture": true,
      "notify": true
@@ -65,7 +65,7 @@ Die E-Mail mit der Geschenkkarte wird gesendet, obwohl die Erstellung der Rechnu
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

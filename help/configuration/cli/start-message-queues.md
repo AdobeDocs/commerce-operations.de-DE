@@ -2,9 +2,9 @@
 title: Nachrichtenwarteschlangen-Verbraucher starten
 description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen-Verbraucher für asynchrone Vorgänge in Adobe Commerce starten. Erfahren Sie mehr über die Einrichtung von Verbraucherverwaltung und B2B-Funktionen.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ Sie müssen einen [Nachrichtenwarteschlangenbenutzer“ starten](../queues/consu
 
 So zeigen Sie eine Liste aller Verbraucher an:
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 So starten Sie Nachrichtenwarteschlangen-Verbraucher:
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
 Nachdem alle verfügbaren Nachrichten verarbeitet wurden, wird der Befehl beendet. Sie können den Befehl manuell oder mit einem Cron-Auftrag erneut ausführen. Sie können auch mehrere Instanzen des `magento queue:consumers:start`-Befehls ausführen, um große Nachrichtenwarteschlangen zu verarbeiten. Sie können beispielsweise `&` an den Befehl anhängen, um ihn im Hintergrund auszuführen, zu einer Eingabeaufforderung zurückzukehren und mit der Ausführung von Befehlen fortzufahren:
 
-```bash
+```shell
 bin/magento queue:consumers:start <consumer_name> &
 ```
 

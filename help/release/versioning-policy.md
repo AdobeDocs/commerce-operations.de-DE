@@ -1,10 +1,10 @@
 ---
 title: Release-Richtlinie
-description: Erfahren Sie mehr über die verschiedenen Typen von Adobe Commerce-Versionen.
+description: Erfahren Sie mehr über Adobe Commerce-Versionstypen, Marketing-Version versus Modulversionierung, Patch- und Sicherheitsversionen, Betas, Hotfixes und die allgemeine Versionsrichtlinie.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---

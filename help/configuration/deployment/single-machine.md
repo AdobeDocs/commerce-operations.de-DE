@@ -3,9 +3,9 @@ title: Bereitstellung auf einem Computer
 description: Erfahren Sie, wie Sie Aktualisierungen für Commerce auf einem Produktionsserver mithilfe der Befehlszeile bereitstellen.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '188'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Dieses Thema enthält Anweisungen zum Bereitstellen von Aktualisierungen für Co
 >[!WARNING]
 >
 >Dieses Handbuch gilt nicht, wenn Sie `git clone` zur Installation von Commerce verwendet haben.
->Entwicklerinnen und Entwickler, die an der [&#x200B; mitwirken, sollten dieses Handbuch &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies), um ihre Commerce-Installation zu aktualisieren.
+>Entwicklerinnen und Entwickler, die an der [ mitwirken, sollten dieses Handbuch ](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies), um ihre Commerce-Installation zu aktualisieren.
 
 ## Bereitstellungsschritte
 
@@ -30,19 +30,19 @@ Dieses Thema enthält Anweisungen zum Bereitstellen von Aktualisierungen für Co
 
 1. Wechseln Sie in das Commerce-Basisverzeichnis:
 
-   ```bash
+   ```shell
    cd <Commerce base directory>
    ```
 
 1. Aktivieren Sie den Wartungsmodus mithilfe des Befehls :
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Wenden Sie mithilfe des folgenden Befehlsmusters Aktualisierungen auf Commerce oder seine Komponenten an:
 
-   ```bash
+   ```shell
    composer require-commerce <package> <version> --no-update
    ```
 
@@ -57,37 +57,37 @@ Dieses Thema enthält Anweisungen zum Bereitstellen von Aktualisierungen für Co
 
 1. Komponenten mit Composer aktualisieren:
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Datenbankschema und Daten aktualisieren:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Kompilieren Sie den Code:
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Statischen Inhalt bereitstellen:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
 1. Cache leeren:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Wartungsmodus beenden:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 

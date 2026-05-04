@@ -2,9 +2,9 @@
 title: MySQL-Richtlinien
 description: Führen Sie diese Schritte aus, um MySQL und MariaDB für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,8 @@ Siehe [Systemanforderungen](../../system-requirements.md) für unterstützte Ver
 
 Adobe _empfiehlt dringend_ beim Einrichten der Datenbank den folgenden Standard zu beachten:
 
-* Adobe Commerce Trigger verwendet [MySQL-Datenbank-](https://dev.mysql.com/doc/refman/8.4/en/triggers.html), um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexermodus auf &quot;[&quot; &#x200B;](../../../configuration/cli/manage-indexers.md#configure-indexers) ist. Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce-Versionen einführen können.
-* Machen Sie sich mit [diesen potenziellen Einschränkungen von MySQL Trigger &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) vertraut, bevor Sie fortfahren.
+* Adobe Commerce verwendet [MySQL-Datenbank-](https://dev.mysql.com/doc/refman/8.4/en/triggers.html), um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexermodus auf &quot;[&quot; ](../../../configuration/cli/manage-indexers.md#configure-indexers) ist. Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce-Versionen einführen können.
+* Machen Sie sich mit [diesen potenziellen Einschränkungen von MySQL Trigger ](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) vertraut, bevor Sie fortfahren.
 * Um den Sicherheitszustand Ihrer Datenbank zu verbessern, aktivieren Sie den [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) SQL-Modus, um zu verhindern, dass ungültige Datenwerte gespeichert werden, was zu unerwünschten Datenbankinteraktionen führen könnte.
 * Adobe Commerce unterstützt _nicht_ die auf MySQL-Anweisungen basierende Replikation. Stellen Sie sicher _dass Sie_[zeilenbasierte Replikation](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html) verwenden.
 
@@ -79,7 +79,7 @@ Beschreibung von admin_user unter mysql 8.19
 
 Mit Ausnahme von _TINYINT(1)_ sollten alle ganzzahligen Auffüllungen (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) aus der `db_schema.xml`-Datei entfernt werden.
 
-https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature Weitere Informationen finden Sie unter [&#128279;](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature Weitere Informationen finden Sie unter [](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
 ### Standardverhalten von ORDER BY
 
@@ -106,13 +106,13 @@ Um MySQL ordnungsgemäß von Version 5.7 auf Version 8 zu aktualisieren, müssen
 Testen Sie alles und stellen Sie sicher, dass Ihr System erwartungsgemäß funktioniert.
 1. Wartungsmodus aktivieren:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Erstellen Sie eine Datenbanksicherung:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
@@ -120,13 +120,13 @@ Testen Sie alles und stellen Sie sicher, dass Ihr System erwartungsgemäß funkt
 1. Importieren Sie die gesicherten Daten in MySQL.
 1. Cache leeren:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Wartungsmodus deaktivieren:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -139,7 +139,7 @@ Konfigurieren einer MySQL-Datenbankinstanz:
 1. Melden Sie sich bei Ihrem Datenbank-Server als beliebiger Benutzer an.
 1. Wechseln Sie zu einer MySQL-Eingabeaufforderung:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -166,7 +166,7 @@ Konfigurieren einer MySQL-Datenbankinstanz:
 
 1. Überprüfen Sie die Datenbank:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

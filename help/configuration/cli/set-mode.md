@@ -2,9 +2,9 @@
 title: Einstellung des Betriebsmodus
 description: Erfahren Sie, wie Sie Adobe Commerce-Betriebsmodi zwischen Entwickler- und Produktionsmodus festlegen. Erfahren Sie mehr über Befehle zum Moduswechsel und die Auswirkungen auf die Sicherheit.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Der Produktionsmodus hat eine bessere Leistung, da statische Ansichtsdateien im 
 
 Wenn Sie in den Entwickler- oder Produktionsmodus wechseln, löschen wir den Inhalt der folgenden Verzeichnisse:
 
-```
+```text
 var/cache
 generated/metadata
 generated/code
@@ -44,17 +44,17 @@ Ausnahmen:
 
 ## Anzeigen des aktuellen Modus
 
-Die einfachste Möglichkeit, dies zu erreichen, besteht darin, diesen Befehl als [Dateisystembesitzer“ &#x200B;](../../installation/prerequisites/file-system/overview.md). Wenn Sie geteiltes Hosting haben, ist dies der Benutzer, den Ihr Anbieter Ihnen zur Anmeldung beim Server gibt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, diesen Befehl als [Dateisystembesitzer“ ](../../installation/prerequisites/file-system/overview.md). Wenn Sie geteiltes Hosting haben, ist dies der Benutzer, den Ihr Anbieter Ihnen zur Anmeldung beim Server gibt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
 Eine Meldung ähnlich der folgenden wird angezeigt:
 
-```
+```text
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -66,7 +66,7 @@ Dabei gilt:
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 ```
 
@@ -80,13 +80,13 @@ Es folgen Beispiele.
 
 ### In Produktionsmodus wechseln
 
-```bash
+```shell
 bin/magento deploy:mode:set production
 ```
 
 Meldungen ähnlich der folgenden werden angezeigt:
 
-```
+```text
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -131,31 +131,31 @@ Wenn Sie vom Produktions- in den Entwicklermodus wechseln, sollten Sie generiert
 
 1. Wenn Sie vom Produktionsmodus in den Entwicklermodus wechseln, löschen Sie die Inhalte der `generated/code`- und `generated/metadata`:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
    ```
 
 1. Einstellen des Modus:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
    Die folgende Meldung wird angezeigt:
 
-   ```
+   ```text
    Enabled developer mode.
    ```
 
 ### In Standardmodus wechseln
 
-```bash
+```shell
 bin/magento deploy:mode:set default
 ```
 
 Die folgende Meldung wird angezeigt:
 
-```
+```text
 Enabled default mode.
 ```
 

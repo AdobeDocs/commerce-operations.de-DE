@@ -3,9 +3,9 @@ title: Aktualisieren Sie die [!DNL Data Migration Tool]
 description: Erfahren Sie, wie Sie die  [!DNL Data Migration Tool]  aktualisieren, um Daten zwischen Magento 1 und Magento 2 zu übertragen.
 exl-id: c0d56d1d-b15b-437f-be72-74282dbe85c1
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Bevor Sie ein Upgrade des [!DNL Data Migration Tool] durchführen, müssen Sie:
 
 ### Aktualisieren der Magento-Software
 
-Falls noch nicht geschehen, [&#x200B; Sie die Magento-Software &#x200B;](../../upgrade/overview.md).
+Falls noch nicht geschehen, [ Sie die Magento-Software ](../../upgrade/overview.md).
 
 ### Sichern Sie das `vendor/magento/data-migration-tool`
 
@@ -34,7 +34,7 @@ Sichern Sie vor dem Upgrade des [!DNL Data Migration Tool] mindestens das `vendo
 
 Sie können auch die gesamte Magento-Codebasis und -Datenbank mit dem folgenden Befehl sichern:
 
-```bash
+```shell
 php <magento_root>/bin/magento setup:backup --code --db
 ```
 
@@ -47,7 +47,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 Die Versionen des [!DNL Data Migration Tool] und Ihrer Magento-Software müssen genau übereinstimmen. Für Magento 2.1.2 ist beispielsweise Version 2.1.2 des [!DNL Data Migration Tool] erforderlich.
 
-Weitere Informationen finden Sie [&#x200B; Thema  [!DNL Data Migration Tool]](install.md)Installieren):
+Weitere Informationen finden Sie [ Thema  [!DNL Data Migration Tool]](install.md)Installieren):
 
 * [Überprüfen](install.md#check-your-version) Sie Ihre Magento 2-Version.
 
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie [&#x200B; Thema  [!DNL Data Migration Tool]](in
 1. Wechseln Sie in das Stammverzeichnis der Anwendung.
 1. Geben Sie den folgenden Befehl ein:
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:<version>
    ```
 
@@ -69,7 +69,7 @@ Weitere Informationen finden Sie [&#x200B; Thema  [!DNL Data Migration Tool]](in
 
    Geben Sie beispielsweise für Version 2.1.2 Folgendes ein:
 
-   ```bash
+   ```shell
    composer require magento/data-migration-tool:2.1.2
    ```
 

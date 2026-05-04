@@ -2,9 +2,9 @@
 title: Wartungsmodus aktivieren oder deaktivieren
 description: Führen Sie diese Schritte aus, um anzupassen, was Kundinnen und Kunden sehen, wenn Ihre Adobe Commerce-Bereitstellung Wartungsarbeiten unterliegt.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,15 @@ Verwenden Sie den `magento maintenance` CLI-Befehl, um den Wartungsmodus zu akti
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:status
 ```
 
@@ -52,13 +52,13 @@ Der Befehl `bin/magento maintenance:status` zeigt den Status des Wartungsmodus a
 
 So aktivieren Sie beispielsweise den Wartungsmodus ohne IP-Adressausnahmen:
 
-```bash
+```shell
 bin/magento maintenance:enable
 ```
 
 So aktivieren Sie den Wartungsmodus für alle Clients außer 192.0.2.10 und 192.0.2.11:
 
-```bash
+```shell
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
@@ -69,7 +69,7 @@ Eine Möglichkeit, diese Prozesse zu finden, besteht darin, den `ps -ef | grep q
 
 Um die Liste der ausgenommenen IP-Adressen zu verwalten, können Sie entweder die Option `[--ip=<ip list>]` in den vorherigen Befehlen oder Folgendes verwenden:
 
-```bash
+```shell
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 

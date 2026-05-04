@@ -3,9 +3,9 @@ title: Redis für Standard-Cache verwenden
 description: Erfahren Sie, wie Sie Redis als Standard-Cache für Adobe Commerce konfigurieren. Erfahren Sie mehr über Befehlszeileneinrichtung, Konfigurationsoptionen und Validierungstechniken.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ee4a873a73e8fd747e7d4c8e157327fab1074cc9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Sie müssen [Redis](config-redis.md#install-redis) installieren, bevor Sie fortf
 
 Führen Sie den `setup:config:set` Befehl aus und geben Sie Parameter an, die spezifisch für das Redis-Standardcaching sind.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
 ```
 
@@ -47,7 +47,7 @@ Mit den folgenden Parametern:
 
 Das folgende Beispiel aktiviert die Redis-Standardzwischenspeicherung, legt den Host auf `127.0.0.1` fest und weist die Datenbanknummer auf 0 zu. Redis verwendet Standardwerte für alle anderen Parameter.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
@@ -55,7 +55,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 Um das Caching der Redis-Seite in Commerce zu konfigurieren, führen Sie den Befehl `setup:config:set` mit zusätzlichen Parametern aus.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
@@ -76,7 +76,7 @@ Mit den folgenden Parametern:
 
 Das folgende Beispiel aktiviert die Zwischenspeicherung der Redis-Seite, legt den Host auf `127.0.0.1` fest und weist die Datenbanknummer 1 zu. Alle anderen Parameter sind auf den Standardwert eingestellt.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
@@ -165,7 +165,7 @@ Diese Option ist standardmäßig deaktiviert, und Adobe empfiehlt, sie zu deakti
 
 **So aktivieren Sie die parallele Generierung**:
 
-```bash
+```shell
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
@@ -200,13 +200,13 @@ Um sicherzustellen, dass Redis und Commerce zusammenarbeiten, melden Sie sich be
 
 ### Redis-Monitorbefehl
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Beispielhafte Seitenzwischenspeicherungsausgabe:
 
-```
+```text
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
 1476826133.816293 [0 127.0.0.1:52367] "select" "0"
 1476826133.817461 [0 127.0.0.1:52367] "hget" "zc:k:ea6_GLOBAL__DICONFIG" "d"
@@ -231,7 +231,7 @@ Beispielhafte Seitenzwischenspeicherungsausgabe:
 
 ### Redigieren des Befehls
 
-```bash
+```shell
 redis-cli ping
 ```
 

@@ -3,9 +3,9 @@ title: Protokollierung aktivieren
 description: Erfahren Sie, wie Sie verschiedene Arten der Protokollierung in Adobe Commerce aktivieren und deaktivieren. Entdecken Sie Protokollierungskonfigurations- und -verwaltungsmethoden.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ Standardmäßig schreibt Commerce in das Debug-Protokoll (`<install_directory>/v
 
 1. Verwenden Sie den Befehl `setup:config:set` , um die Debug-Protokollierung für den aktuellen Modus zu aktivieren.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=true
    ```
 
 1. Leeren Sie den Cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -40,13 +40,13 @@ Standardmäßig schreibt Commerce in das Debug-Protokoll (`<install_directory>/v
 
 1. Verwenden Sie den Befehl `setup:config:set` , um die Debug-Protokollierung für den aktuellen Modus zu deaktivieren.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-debug-logging=false
    ```
 
 1. Leeren Sie den Cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -75,17 +75,17 @@ Das Abfrageprotokoll enthält:
 
 1. Verwenden Sie den `dev:query-log`-Befehl, um die Datenbankprotokollierung zu aktivieren oder zu deaktivieren.
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:enable
    ```
 
-   ```bash
+   ```shell
    bin/magento dev:query-log:disable
    ```
 
 1. Leeren Sie den Cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -93,7 +93,7 @@ Das Abfrageprotokoll enthält:
 
 Sie können die Abfrageprotokolle mit Standardbefehlen zur Dateianzeige anzeigen:
 
-```bash
+```shell
 # View the entire query log
 cat var/debug/db.log
 
@@ -127,13 +127,13 @@ Die Protokollierung in `syslog` ist standardmäßig deaktiviert.
 
 1. Ändern Sie mit dem Befehl `setup:config:set` den `dev/syslog/syslog_logging` Datenbankwert in `true`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=true
    ```
 
 1. Leeren Sie den Cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
@@ -141,12 +141,12 @@ Die Protokollierung in `syslog` ist standardmäßig deaktiviert.
 
 1. Ändern Sie mit dem Befehl `setup:config:set` den `dev/syslog/syslog_logging` Datenbankwert in `false`.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --enable-syslog-logging=false
    ```
 
 1. Leeren Sie den Cache.
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```

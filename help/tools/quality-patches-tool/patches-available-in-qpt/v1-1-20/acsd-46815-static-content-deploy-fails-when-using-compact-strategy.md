@@ -5,9 +5,9 @@ feature: Deploy, Page Content, SCD
 role: Admin
 exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-46815 wird das Problem behoben, dass die Bereitstellung stati
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -38,7 +38,7 @@ Die Bereitstellung statischer Inhalte schlägt bei der Bereitstellung mit einer 
 
 1. Stellen Sie den statischen Inhalt mit einer kompakten Strategie bereit, indem Sie den folgenden Befehl ausführen:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -f -s compact
 ```
 
@@ -48,14 +48,14 @@ Die Bereitstellung statischer Inhalte wird fehlerfrei abgeschlossen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Bereitstellung statischer Inhalte schlägt mit einer kompakten Strategie fehl. Während der Bereitstellung tritt der folgende Fehler auf: *Der Inhalt aus &quot;/app/pub/static/adminhtml/Magento/base/default/&quot;.Die Datei /node_modules/@spectrum-css/vars/dist/spectrum-global.css kann nicht gelesen werden.*
+Die Bereitstellung statischer Inhalte schlägt mit einer kompakten Strategie fehl. Während der Bereitstellung tritt der folgende Fehler auf: *Die Inhalte aus der Datei &quot;/app/pub/static/adminhtml/Magento/base/default/./node_modules/@spectrum-css/vars/dist/spectrum-global.css&quot; können nicht gelesen werden.*
 
 ## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

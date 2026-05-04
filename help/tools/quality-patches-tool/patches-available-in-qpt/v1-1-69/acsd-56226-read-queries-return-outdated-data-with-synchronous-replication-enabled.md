@@ -4,13 +4,13 @@ description: Wenden Sie den Patch ACSD-56226 an, um das Adobe Commerce-Problem z
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a45cef14b7b37f1112d2ef82adf29b09d63b8e2b
+exl-id: 5ad0e884-decb-4e09-b5b3-b38a9953a4b8
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-56226: READ-Abfragen geben veraltete Daten zurück, wenn `synchronous_replication` aktiviert ist
 
@@ -28,7 +28,7 @@ Der Patch ACSD-56226 behebt das Problem, dass READ-Abfragen veraltete Daten zur�
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -39,7 +39,7 @@ READ-Abfragen geben veraltete Daten zurück, wenn das `synchronous_replication`-
 1. Setzen Sie `MYSQL_USE_SLAVE_CONNECTION` in den *in Adobe Commerce auf Cloud-Infrastruktur auf* true“.
 1. Fügen Sie die folgende Konfiguration zu `.magento.env.yaml` hinzu, um `synchronous_replication` auf &quot;*&quot;*:
 
-   ```
+   ```text
    DATABASE_CONFIGURATION:
      _merge: true
      slave_connection:
@@ -62,7 +62,7 @@ Die Slave-Verbindung ist deaktiviert, wenn `synchronous_replication` auf &quot;*
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

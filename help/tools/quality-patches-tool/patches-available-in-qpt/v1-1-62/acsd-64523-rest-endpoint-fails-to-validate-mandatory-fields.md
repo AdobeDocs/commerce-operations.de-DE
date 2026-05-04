@@ -5,16 +5,16 @@ feature: REST, Products, Admin Workspace
 role: Admin, Developer
 exl-id: 21aecd6d-06e4-4f2b-904a-27487ba74968
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # ACSD-64523: REST-Endpunkt kann Pflichtfelder nicht validieren
 
-Mit dem Patch ACSD-64523 wird ein Problem behoben, bei dem der REST-Endpunkt [V1/import/csv] Pflichtfelder nicht validieren kann, sodass eine Produkterstellung ohne erforderliche Daten möglich ist. Um dies zu beheben, aktualisieren Sie die Autorisierungs-Kopfzeile. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 installiert ist. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
+Mit dem Patch ACSD-64523 wird ein Problem behoben, bei dem der REST-Endpunkt [V1/import/csv] Pflichtfelder nicht validieren kann, sodass eine Produkterstellung ohne erforderliche Daten möglich ist. Um dies zu beheben, aktualisieren Sie die Autorisierungs-Kopfzeile.Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62 installiert ist. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.8 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-64523 wird ein Problem behoben, bei dem der REST-Endpunkt [V1
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -38,7 +38,7 @@ Der REST-Endpunkt `[V1/import/csv]` kann Pflichtfelder nicht validieren, sodass 
 
 1. Führen Sie die folgende Payload aus (aktualisieren Sie die Autorisierungs-Kopfzeile):
 
-   ```
+   ```shell
    curl --location 'http://<domain>/rest/default/V1/import/json' \
    --header 'Content-Type: application/json' \
    --header 'Authorization: Bearer xxxxx' \
@@ -92,7 +92,7 @@ Das Produkt wurde erfolgreich gespeichert, ohne den Produktnamen anzugeben, der 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

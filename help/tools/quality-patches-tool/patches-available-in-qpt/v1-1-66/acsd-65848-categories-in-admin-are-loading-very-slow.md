@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0233db9b-86b1-4320-a566-7e7e207dab84
-source-git-commit: 1ccb4c1dda5141934e04509b27fdafbfdc436a15
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-65848 wird das Problem behoben, dass die Gesamtproduktzahl in
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -42,7 +42,7 @@ Bei der Ansicht/Bearbeitung der Admin-Kategorieseite treten beim Laden erheblich
    1. Öffnen Sie das `small.xml` und aktualisieren Sie es, um 2.500 Kategorien und 250.000 Produkte einzuschließen (entsprechend der Einrichtung des Händlers).
    1. Führen Sie den folgenden Befehl aus, um die Vorrichtungen zu erzeugen:
 
-      ```bash
+      ```shell
       bin/magento 
       setup:performance:generate-fixtures var/setup/performance-toolkit/profiles/ce/small.xml
       ```
@@ -62,7 +62,7 @@ Bei der Ansicht/Bearbeitung der Admin-Kategorieseite treten beim Laden erheblich
 1. Erstellen Sie im Admin-Bedienfeld eine tiefere Kategoriestruktur:
    * Verschieben Sie Kategorie 2 unter Kategorie 1, um sie tiefer im Baum zu verschachteln.
 1. Versuchen Sie, eine Kategorieseite im Admin-Bedienfeld mithilfe einer URL wie der folgenden zu öffnen:
-   ```/admin/catalog/category/edit/id/xx/```
+   `/admin/catalog/category/edit/id/xx/`
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -77,7 +77,7 @@ Das Öffnen von Kategorieseiten dauert mehr als eine Minute.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

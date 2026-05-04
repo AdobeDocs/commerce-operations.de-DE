@@ -2,7 +2,7 @@
 title: Entfernen oder Aktualisieren von Beispieldatenmodulen
 description: Führen Sie diese Schritte aus, um Beispieldatenmodule für Adobe Commerce zu verwalten.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -21,7 +21,7 @@ In diesem Thema wird Folgendes erläutert:
 
 Geben Sie den folgenden Befehl ein:
 
-```bash
+```shell
 bin/magento sampledata:remove
 ```
 
@@ -55,7 +55,7 @@ Mit diesem Befehl können Sie Beispieldaten aktualisieren, bevor Sie Adobe Comme
 
 Um Beispieldaten für die Aktualisierung vorzubereiten, geben Sie den folgenden Befehl ein:
 
-```bash
+```shell
 bin/magento sampledata:reset
 ```
 

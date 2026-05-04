@@ -5,9 +5,9 @@ feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Der Patch MDVA-39305-V3 behebt das Problem, dass sich registrierte Kunden nicht anmelden können, wenn [!DNL Google reCAPTCHA] aktiviert ist. Dieser Patch behebt auch das Problem, dass ein Formular gesendet werden kann, bevor [!DNL Google reCAPTCHA] vollständig geladen ist. Darüber hinaus wird der Fehler *Aufruf einer Memberfunktion isDisabled() auf null)*, wenn Blöcke an nicht standardmäßigen Speicherorten auf einer CMS-Seite verwendet werden.
 
-Dieser Patch wurde in der Version [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 hinzugefügt. In der Version QPT 1.1.58 wurde sie aktualisiert, um die neuen Adobe Commerce-Versionen 2.4.7 - 2.4.7-p4 einzuschließen. Die Patch-ID lautet MDVA-39305-V3. Beachten Sie, dass das Problem in den Adobe Commerce-Versionen 2.4.4, 2.4.5-p2 und 2.4.7 behoben wurde.
+Dieser Patch wurde in der Version [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48 hinzugefügt. In der Version QPT 1.1.58 wurde sie aktualisiert, um die neuen Adobe Commerce-Versionen 2.4.7 - 2.4.7-p4 einzuschließen. Die Patch-ID lautet MDVA-39305-V3. Beachten Sie, dass das Problem in den Adobe Commerce-Versionen 2.4.4, 2.4.5-p2 und 2.4.7 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -34,7 +34,7 @@ Dieser Patch wurde in der Version [Quality Patches Tool (QPT)](https://experienc
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Probleme
 
@@ -65,7 +65,7 @@ Es wird ein Fehler *Aufruf einer Memberfunktion isDisabled() auf null* ausgelös
 
 1. Erstellen Sie einen statischen Block mit folgendem Inhalt:
 
-   ```
+   ```text
    {{block class="Magento\Newsletter\Block\Subscribe" name="home.form.subscribe"
    template="Magento_Newsletter::subscribe.phtml"}}
    ```
@@ -86,7 +86,7 @@ Auf der Seite in der Storefront tritt ein 500-Fehler auf.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

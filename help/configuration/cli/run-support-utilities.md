@@ -2,9 +2,9 @@
 title: Ausführen der Support-Dienstprogramme
 description: Erfahren Sie, wie Sie Support-Dienstprogramme zur Fehlerbehebung in Ihrem Adobe Commerce-Projekt ausführen. Entdecken Sie integrierte Diagnose- und Support-Tools.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit den Adobe Commerce-Support-Dienstprogrammen (auch als [Datenerfassung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet) können Benutzende Informationen zur Fehlerbehebung in Ihrem System sammeln, die von unserem Support-Team verwendet werden können.
+Mit den Adobe Commerce-Support-Dienstprogrammen (auch als [Datenerfassung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector) bezeichnet) können Benutzende Informationen zur Fehlerbehebung in Ihrem System sammeln, die von unserem Support-Team verwendet werden können.
 
 Adobe Commerce verwendet diese Sicherungskopien, auch als &quot;_&quot; bezeichnet_, um Probleme zu analysieren, die Zugriff auf Ihren Code erfordern. Es folgt ein typisches Szenario:
 
@@ -42,7 +42,7 @@ Mit diesem Befehl wird Code gesichert und im `tar.gz` komprimiert.
 
 Befehlsoptionen:
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -54,7 +54,7 @@ Dabei gilt:
 
 So erstellen Sie beispielsweise eine Code-Sicherung mit dem Namen `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -68,7 +68,7 @@ Mit diesem Befehl wird die Commerce-Datenbank gesichert und im `tar.gz` komprimi
 
 Befehlsoptionen:
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -81,7 +81,7 @@ Dabei gilt:
 
 Sensible Daten umfassen Kundeninformationen aus den folgenden Datenbanktabellen:
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Stellen Sie nach Abschluss des Befehls die Datenbanksicherung für den Adobe Com
 
 Wir stellen Befehle bereit, die Pfade zu Dienstprogrammen anzeigen, die vom Data Collector und der Befehlszeile benötigt werden. Sie können diese Befehle beispielsweise verwenden, wenn Fehler wie die folgenden in der Admin oder in der Befehlszeile angezeigt werden:
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Führen Sie die folgenden Befehle in der angegebenen Reihenfolge aus, um die Pfa
 
 Es folgt ein Beispiel:
 
-```
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

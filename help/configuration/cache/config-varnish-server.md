@@ -3,9 +3,9 @@ title: Webserver konfigurieren
 description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung des Lackzwischenspeichers für Adobe Commerce konfigurieren. Erfahren Sie mehr über die Konfiguration und Einrichtung von Ports.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ So konfigurieren Sie Lack minimal:
 
 1. `default.vcl`:
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
@@ -97,13 +97,13 @@ So konfigurieren Sie Lack minimal:
 
 1. Lack neu starten:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
 Wenn Varnish nicht gestartet werden kann, versuchen Sie, es wie folgt über die Befehlszeile auszuführen:
 
-```bash
+```shell
 varnishd -d -f /etc/varnish/default.vcl
 ```
 
@@ -131,7 +131,7 @@ Wenn Varnish nicht als Service gestartet werden kann, starten Sie es wie folgt �
 
 1. Starten Sie die Lackierungs-CLI:
 
-   ```bash
+   ```shell
    varnishd -d -f /etc/varnish/default.vcl
    ```
 
@@ -141,7 +141,7 @@ Wenn Varnish nicht als Service gestartet werden kann, starten Sie es wie folgt �
 
    Die folgenden Meldungen werden angezeigt, um einen erfolgreichen Start zu bestätigen:
 
-   ```
+   ```text
    child (29805) Started
    200 0
    
@@ -153,13 +153,13 @@ Wenn Varnish nicht als Service gestartet werden kann, starten Sie es wie folgt �
 
 Melden Sie sich beim Lackierserver an und geben Sie den folgenden Befehl ein:
 
-```bash
+```shell
 netstat -tulpn
 ```
 
 Achten Sie insbesondere auf die folgende Ausgabe:
 
-```
+```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
 tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
@@ -178,7 +178,7 @@ Installieren Sie die Commerce-Software, falls noch nicht geschehen. Wenn Sie nac
 
 Mögliche Fehlermeldung bei der Installation von Commerce:
 
-```
+```text
 Error 503 Service Unavailable
 Service Unavailable
 XID: 303394517
@@ -209,7 +209,7 @@ Um Commerce für den Entwicklermodus festzulegen, verwenden Sie den [`magento de
 
 Stellen Sie sicher, dass Varnish ausgeführt wird, und geben Sie dann den folgenden Befehl auf dem Varnish-Server ein:
 
-```bash
+```shell
 varnishlog
 ```
 
@@ -217,7 +217,7 @@ Wechseln Sie in einem Webbrowser zu einer beliebigen Commerce-Seite.
 
 Im Eingabeaufforderungsfenster wird eine lange Liste von Antwort-Headern angezeigt. Suchen Sie nach Kopfzeilen wie den folgenden:
 
-```
+```text
 -   BereqHeader    X-Varnish: 3
 -   VCL_call       BACKEND_FETCH
 -   VCL_return     fetch
@@ -240,19 +240,19 @@ Es gibt mehrere Möglichkeiten, Antwort-Header zu betrachten, einschließlich de
 
 Im folgenden Beispiel wird `curl` verwendet. Sie können diesen Befehl von jedem Computer aus eingeben, der über HTTP auf den Commerce-Server zugreifen kann.
 
-```bash
+```shell
 curl -I -v --location-trusted '<your Commerce base URL>'
 ```
 
 Beispiel:
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Suchen Sie nach Kopfzeilen wie den folgenden:
 
-```
+```text
 Content-Type: text/html; charset=iso-8859-1
 X-Varnish: 15
 Age: 0

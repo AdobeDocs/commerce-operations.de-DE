@@ -3,9 +3,9 @@ title: Daten migrieren
 description: Erfahren Sie, wie Sie mit der Migration von Daten von Magento 1 zu Magento 2 mit dem [!DNL Data Migration Tool] beginnen.
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,16 @@ ht-degree: 0%
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich bei Ihrem Anwendungs-Server [als „Dateisystembesitzer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Anwendungs-Server [als „Dateisystembesitzer“ ](../../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie zum Installationsverzeichnis der Anwendung oder stellen Sie sicher, dass es zum `PATH` hinzugefügt wird.
 
-Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
 
 ## Ausführen des Datenmigrationsbefehls
 
 Um mit der Datenmigration zu beginnen, führen Sie Folgendes aus:
 
-```bash
+```shell
 bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -35,7 +35,7 @@ Dabei gilt:
 
 * `{<path to config.xml>}` ist der absolute Dateisystempfad zu `config.xml`. Dieses Argument ist erforderlich
 
-In diesem Schritt erstellt der [!DNL Data Migration Tool] zusätzliche Tabellen und Trigger für die Migrationstabellen in der Magento 1-Datenbank. Sie werden im Migrationsschritt [inkrementell/delta](delta.md) verwendet. Zusätzliche Tabellen enthalten Informationen zu geänderten Datensätzen nach der endgültigen Ausführung der Migration. Datenbanktabellen werden zum Ausfüllen dieser zusätzlichen Trigger Trigger verwendet. Wenn also ein neuer Vorgang für eine bestimmte Tabelle ausgeführt wird (ein Datensatz wird hinzugefügt/geändert/entfernt), speichern diese Datenbanktabellen Informationen über diesen Vorgang in der zusätzlichen Tabelle. Wenn wir einen Delta-Migrationsprozess ausführen, prüft der [!DNL Data Migration Tool] diese Tabellen auf die nicht verarbeiteten Datensätze und migriert die erforderlichen Inhalte in die Magento 2-Datenbank.
+In diesem Schritt erstellt der [!DNL Data Migration Tool] zusätzliche Tabellen und Trigger für die Migrationstabellen in der Magento 1-Datenbank. Sie werden im Migrationsschritt [inkrementell/delta](delta.md) verwendet. Zusätzliche Tabellen enthalten Informationen zu geänderten Datensätzen nach der endgültigen Ausführung der Migration. Datenbanktabellen werden zum Ausfüllen dieser zusätzlichen Trigger verwendet. Wenn also ein neuer Vorgang für eine bestimmte Tabelle ausgeführt wird (ein Datensatz wird hinzugefügt/geändert/entfernt), speichern diese Datenbanktabellen Informationen über diesen Vorgang in der zusätzlichen Tabelle. Wenn wir einen Delta-Migrationsprozess ausführen, prüft der [!DNL Data Migration Tool] diese Tabellen auf die nicht verarbeiteten Datensätze und migriert die erforderlichen Inhalte in die Magento 2-Datenbank.
 
 Jede neue Tabelle enthält:
 
@@ -105,7 +105,7 @@ Während der Ausführung meldet der [!DNL Data Migration Tool] möglicherweise I
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Weitere Informationen [&#x200B; Empfehlungen finden &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) im Abschnitt „Fehlerbehebung“ dieses Handbuchs.
+Weitere Informationen [ Empfehlungen finden ](https://support.magento.com/hc/en-us/articles/360033020451) im Abschnitt „Fehlerbehebung“ dieses Handbuchs.
 
 ## Nächster Migrationsschritt
 

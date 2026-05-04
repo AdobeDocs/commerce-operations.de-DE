@@ -2,7 +2,7 @@
 title: Ausführen von Modultests
 description: Erfahren Sie, wie Sie in der Adobe Commerce-Code-Basis definierte Modultests ausführen. Entdecken Sie Testbefehle, Ausführungsoptionen und Ergebnisberichte.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Bevor Sie diesen Befehl ausführen, muss _folgende_ zutreffen:
 
 - Das `Magento_Developer` muss aktiviert sein. Sie können ihn wie folgt aktivieren:
 
-  ```bash
+  ```shell
   bin/magento module:enable [--force] Magento_Developer
   ```
 
@@ -35,24 +35,24 @@ Um beispielsweise Integrationstests durchzuführen, sollten Sie `dev/tests/integ
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 Auflisten der verfügbaren Testtypen:
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 Musterrückgabe:
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 So führen Sie beispielsweise Integrationstests durch:
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

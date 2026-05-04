@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Best Practices für die Konfiguration priva
 role: Developer
 feature: Best Practices
 exl-id: a6d2f324-f9b9-4b2b-997f-36df02c37465
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 1%
+source-wordcount: '210'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Anstatt die Variable `_isScopePrivate` für private Inhalte zu verwenden, erstel
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -31,4 +31,4 @@ Websites mit privaten Inhaltsblöcken, die die `_isScopePrivate` Variablen entha
 ## Weitere Informationen
 
 - [Privater Inhalt](../../../performance/configuration.md#client-side-optimization-settings)
-- [AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=de)
+- [Zwischenspeicherbare und private Blöcke](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#cacheable-and-private-blocks) im _[!DNL Commerce PHP Extensions Guide]_

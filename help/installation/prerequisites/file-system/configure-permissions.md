@@ -2,9 +2,9 @@
 title: Konfigurieren von Dateieigentümerschaft und Berechtigungen
 description: Führen Sie die folgenden Schritte aus, um Dateisystemberechtigungen für lokale Installationen von Adobe Commerce zu konfigurieren.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -33,34 +33,34 @@ So legen Sie Berechtigungen vor der Installation der Anwendung fest:
 
 1. Wenn Sie Befehlszeilenzugriff haben, geben Sie die folgenden Befehle in der angegebenen Reihenfolge ein:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} +
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
    Um optional alle Befehle in einer Zeile einzugeben, geben Sie Folgendes ein, vorausgesetzt, die Anwendung ist in `/var/www/html/magento2` installiert:
 
-   ```bash
+   ```shell
    cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod u+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod u+w {} + && chmod u+x bin/magento
    ```
 
 1. Wenn Sie dies noch nicht getan haben, rufen Sie die Anwendung auf eine der folgenden Arten ab:
 
    * [Composer-Metapaket](../../composer.md)
-   * [Klonen Sie das Repository (nur beitragende Entwickler)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+   * [Klonen Sie das Repository (nur beitragende Entwickler).](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
-1. Nachdem Sie die Eigentümerschaft und Berechtigungen für das Dateisystem festgelegt haben, [&#x200B; Sie die Anwendung](../../advanced.md)
+1. Nachdem Sie die Eigentümerschaft und Berechtigungen für das Dateisystem festgelegt haben, [ Sie die Anwendung](../../advanced.md)
 
 >[!NOTE]
 >
@@ -97,13 +97,13 @@ In diesem Abschnitt wird beschrieben, wie Sie den Dateisystembesitzer erstellen.
 
 Um einen Benutzer unter CentOS oder Ubuntu zu erstellen, geben Sie den folgenden Befehl als Benutzer mit `root` ein:
 
-```bash
+```shell
 adduser <username>
 ```
 
 Um dem Benutzer ein Kennwort zu geben, geben Sie den folgenden Befehl als Benutzer mit `root` ein:
 
-```bash
+```shell
 passwd <username>
 ```
 
@@ -111,21 +111,21 @@ Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benu
 
 >[!WARNING]
 >
->Wenn Sie auf Ihrem Anwendungsserver keine `root` Berechtigungen haben, können Sie ein anderes lokales Benutzerkonto verwenden. Stellen Sie sicher, dass der Benutzer über ein sicheres Kennwort verfügt, und setzen Sie den Vorgang mit [Legen Sie den Dateisystembesitzer in die Webserver-Gruppe &#x200B;](#step-3-put-the-file-system-owner-in-the-web-servers-group).
+>Wenn Sie auf Ihrem Anwendungsserver keine `root` Berechtigungen haben, können Sie ein anderes lokales Benutzerkonto verwenden. Stellen Sie sicher, dass der Benutzer über ein sicheres Kennwort verfügt, und setzen Sie den Vorgang mit [Legen Sie den Dateisystembesitzer in die Webserver-Gruppe ](#step-3-put-the-file-system-owner-in-the-web-servers-group).
 
 Um beispielsweise einen Benutzer mit dem Namen `magento_user` zu erstellen und ihm ein Kennwort zuzuweisen, geben Sie Folgendes ein:
 
-```bash
+```shell
 sudo adduser magento_user
 ```
 
-```bash
+```shell
 sudo passwd magento_user
 ```
 
 >[!WARNING]
 >
->Da der Zweck der Erstellung dieses Benutzers darin besteht, zusätzliche Sicherheit zu bieten, stellen Sie sicher, dass Sie ein [starkes Kennwort“ &#x200B;](https://en.wikipedia.org/wiki/Password_strength).
+>Da der Zweck der Erstellung dieses Benutzers darin besteht, zusätzliche Sicherheit zu bieten, stellen Sie sicher, dass Sie ein [starkes Kennwort“ ](https://en.wikipedia.org/wiki/Password_strength).
 
 ### Suchen der Webserver-Benutzergruppe
 
@@ -133,13 +133,13 @@ So suchen Sie die Gruppe der Webserver-Benutzenden:
 
 * CentOS:
 
-  ```bash
+  ```shell
   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
   oder
 
-  ```bash
+  ```shell
   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
   ```
 
@@ -158,23 +158,23 @@ Um den Dateisystembesitzer in die primäre Gruppe des Webservers einzuordnen (un
 
 >[!NOTE]
 >
->Die `-a -G` sind wichtig, da sie `apache` oder `www-data` als *sekundäre* Gruppe zum Benutzerkonto hinzufügen, wodurch die (primäre *Gruppe des* beibehalten wird. Wenn Sie einem Benutzerkonto eine sekundäre Gruppe hinzufügen, [&#x200B; Sie (Dateieigentümerschaft und Berechtigungen &#x200B;](#set-ownership-and-permissions-for-two-users)) sicherstellen, dass Mitglieder einer freigegebenen Gruppe nur Zugriff auf bestimmte Dateien haben.
+>Die `-a -G` sind wichtig, da sie `apache` oder `www-data` als *sekundäre* Gruppe zum Benutzerkonto hinzufügen, wodurch die (primäre *Gruppe des* beibehalten wird. Wenn Sie einem Benutzerkonto eine sekundäre Gruppe hinzufügen, [ Sie (Dateieigentümerschaft und Berechtigungen ](#set-ownership-and-permissions-for-two-users)) sicherstellen, dass Mitglieder einer freigegebenen Gruppe nur Zugriff auf bestimmte Dateien haben.
 
 So fügen Sie beispielsweise die `magento_user` der `apache` primären Gruppe unter CentOS hinzu:
 
-```bash
+```shell
 sudo usermod -a -G apache magento_user
 ```
 
 Um zu bestätigen, dass Ihr Benutzer Mitglied der Webserver-Gruppe ist, geben Sie den folgenden Befehl ein:
 
-```bash
+```shell
 groups magento_user
 ```
 
 Das folgende Beispielergebnis zeigt die primäre (`magento`) und sekundäre (`apache`) Gruppe des Benutzers.
 
-```bash
+```shell
 magento_user : magento_user apache
 ```
 
@@ -192,7 +192,7 @@ Um die Aufgabe abzuschließen, starten Sie den Webserver neu:
 Wenn Sie dies noch nicht getan haben, rufen Sie die Software auf eine der folgenden Arten ab:
 
 * [Composer-Metapaket](../../composer.md)
-* [Klonen Sie das Repository (nur beitragende Entwickler)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
+* [Klonen Sie das Repository (nur beitragende Entwickler).](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Festlegen von Eigentümerschaft und Berechtigungen für die freigegebene Gruppe
 
@@ -201,35 +201,35 @@ So legen Sie die Eigentümerschaft und Berechtigungen vor der Installation der A
 1. Melden Sie sich bei Ihrem Anwendungs-Server als Eigentümer des Dateisystems an oder wechseln Sie zu diesem.
 1. Geben Sie die folgenden Befehle in der angegebenen Reihenfolge ein:
 
-   ```bash
+   ```shell
    cd <app_root>
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
-   ```bash
+   ```shell
    chown -R :<web server group> .
    ```
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
 Um optional alle Befehle in einer Zeile einzugeben, geben Sie Folgendes ein, vorausgesetzt, die Anwendung ist in `/var/www/html/magento2` installiert und der Name der Webserver-Gruppe ist `apache`:
 
-```bash
+```shell
 cd /var/www/html/magento2 && find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
 Falls die Dateisystemberechtigungen nicht ordnungsgemäß festgelegt sind und vom Dateisystembesitzer nicht geändert werden können, können Sie den Befehl als Benutzer mit `root` Berechtigungen eingeben:
 
-```bash
+```shell
 cd /var/www/html/magento2 && sudo find var generated vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && sudo find var generated vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && sudo chown -R :apache . && sudo chmod u+x bin/magento
 ```
 
@@ -242,6 +242,6 @@ Nachdem Sie die anderen Aufgaben in diesem Thema ausgeführt haben, geben Sie ei
 
 Beispiel:
 
-```bash
+```shell
 su magento_user
 ```

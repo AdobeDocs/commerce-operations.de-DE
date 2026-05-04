@@ -2,9 +2,9 @@
 title: Klonen von Beispieldaten zu Git-Repositorys
 description: Führen Sie diese Schritte aus, um Adobe Commerce-Beispieldaten zu installieren, indem Sie Git-Repositorys klonen.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Mitwirkende Entwickler können diese Methode zum Installieren von Beispieldaten 
 
 >[!WARNING]
 >
->Sie können Beispieldaten entweder mit der `develop` Verzweigung (aktueller) oder mit einer freigegebenen Verzweigung (z. B. `2.4` (stabiler)) verwenden. Es wird empfohlen, eine freigegebene Verzweigung zu verwenden, da sie stabiler ist. Wenn Sie Code zum Repository beitragen und den neuesten Code benötigen, verwenden Sie die `develop`. Unabhängig von der ausgewählten Verzweigung müssen Sie [&#x200B; entsprechende Verzweigung &#x200B;](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) Magento Open Source GitHub-Repositorys klonen. Beispielsweise können Beispieldaten für die `develop` Verzweigung (nur *)* der Magento Open Source-`develop` verwendet werden.
+>Sie können Beispieldaten entweder mit der `develop` Verzweigung (aktueller) oder mit einer freigegebenen Verzweigung (z. B. `2.4` (stabiler)) verwenden. Es wird empfohlen, eine freigegebene Verzweigung zu verwenden, da sie stabiler ist. Wenn Sie Code zum Repository beitragen und den neuesten Code benötigen, verwenden Sie die `develop`. Unabhängig von der ausgewählten Verzweigung müssen Sie [ entsprechende Verzweigung ](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) Magento Open Source GitHub-Repositorys klonen. Beispielsweise können Beispieldaten für die `develop` Verzweigung (nur *)* der Magento Open Source-`develop` verwendet werden.
 
 ## Klonen Sie das Beispieldaten-Repository.
 
@@ -51,7 +51,7 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem SSH-Protokoll:
 
    Es folgt ein Beispiel:
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-sample-data.git
    ```
 
@@ -59,9 +59,9 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem SSH-Protokoll:
 
    >[!NOTE]
    >
-   >Wenn der folgende Fehler angezeigt wird, stellen Sie sicher[&#x200B; dass Sie „Ihren SSH-Schlüssel &#x200B;](https://docs.github.com/articles/generating-ssh-keys/) GitHub freigegeben haben:<br>
+   >Wenn der folgende Fehler angezeigt wird, stellen Sie sicher[ dass Sie „Ihren SSH-Schlüssel ](https://docs.github.com/articles/generating-ssh-keys/) GitHub freigegeben haben:<br>
 
-   ```
+   ```text
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly
@@ -75,14 +75,14 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem SSH-Protokoll:
 
    Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldaten-Repositorys aus (vorausgesetzt, Sie benötigen die `2.4-develop` Verzweigung):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Ändern Sie in `<app_root>`.
 1. Geben Sie den folgenden Befehl ein, um symbolische Verknüpfungen zwischen den Dateien zu erstellen, die Sie geklont haben, damit die Beispieldaten ordnungsgemäß funktionieren:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
@@ -92,7 +92,7 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem SSH-Protokoll:
 
 1. Führen Sie den folgenden Befehl aus:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -116,7 +116,7 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem HTTPS-Protokoll:
 
    Es folgt ein Beispiel:
 
-   ```bash
+   ```shell
    git clone https://github.com/magento/magento2-sample-data.git
    ```
 
@@ -129,20 +129,20 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem HTTPS-Protokoll:
 
    Um die richtige Verzweigung auszuchecken, führen Sie den folgenden Befehl aus dem Stammverzeichnis des Beispieldaten-Repositorys aus (vorausgesetzt, Sie benötigen die `2.4-develop` Verzweigung):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Ändern Sie in `<magento_root>`.
 1. Geben Sie den folgenden Befehl ein, um symbolische Verknüpfungen zwischen den Dateien zu erstellen, die Sie geklont haben, damit die Beispieldaten ordnungsgemäß funktionieren:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
    Beispiel:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="/var/www/magento2"
    ```
 
@@ -151,9 +151,9 @@ So klonen Sie das GitHub-Repository der Beispieldaten mit dem HTTPS-Protokoll:
 
 >[!WARNING]
 >
->Adobe Commerce Wenn Sie Beispieldaten installieren (*), müssen* auch den folgenden Befehl ausführen, um die Datenbank und das Schema zu aktualisieren:
+>Wenn Sie Beispieldaten installieren (*), müssen* auch den folgenden Befehl ausführen, um die Datenbank und das Schema zu aktualisieren:
 >
->```bash
+>```shell
 ><magento_root>/bin/magento setup:upgrade
 >```
 
@@ -166,7 +166,7 @@ So legen Sie Dateisystemberechtigungen und die Eigentümerschaft für das Beispi
 1. Wechseln Sie zu Ihrem Beispieldatenklonverzeichnis.
 1. Legen Sie den Besitz fest:
 
-   ```bash
+   ```shell
    chown -R :<your web server group name> .
    ```
 
@@ -178,17 +178,17 @@ So legen Sie Dateisystemberechtigungen und die Eigentümerschaft für das Beispi
 
 1. Berechtigungen festlegen:
 
-   ```bash
+   ```shell
    find . -type d -exec chmod g+ws {} +
    ```
 
 1. Statische Dateien löschen:
 
-   ```bash
+   ```shell
    cd <your Magento Open Source install dir>
    ```
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* generated/*
    ```
 

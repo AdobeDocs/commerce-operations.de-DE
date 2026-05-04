@@ -3,9 +3,9 @@ title: Valley für Sitzungsspeicherung verwenden
 description: Erfahren Sie, wie Sie Valkey für die Sitzungsspeicherung in Adobe Commerce konfigurieren. Erfahren Sie mehr über Einrichtungsschritte, Konfigurationsoptionen und Methoden zur Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: 986ddb5c-8fc5-4210-8a41-a29e3a7625b7
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '915'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Adobe Commerce bietet Befehlszeilenoptionen zum Konfigurieren des Valkey-Sitzung
 
 Führen Sie den Befehl `setup:config:set` aus und geben Sie valley-spezifische Parameter an.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parameter_name>=<parameter_value>...
 ```
 
@@ -34,7 +34,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-<parame
 >
 >Ab **Adobe Commerce 2.4.9-alpha2** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen in der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -44,8 +44,8 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 | session-save-valkey-port | Port | Lauschender Port des Valley-Servers | 6379 |
 | session-save-valkey-password | Passwort | Gibt ein Kennwort an, wenn der Valley-Server eine Authentifizierung erfordert. | leer |
 | session-save-valkey-timeout | Zeitüberschreitung | Verbindungs-Timeout, in Sekunden. | 2,5 |
-| session-save-valkey-persistent-id | persistent_identifier | Eindeutige Zeichenfolge zum Aktivieren persistenter Verbindungen (z. B. SESS-DB0).<br>[Bekannte Probleme mit phpredis und php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
-| session-save-valkey-db | Datenbank | Eindeutige Valley-Datenbanknummer, die zum Schutz vor Datenverlust empfohlen wird.<br><br>**Wichtig**: Wenn Sie Valkey für mehr als einen Caching-Typ verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, `0` die standardmäßige Caching-Datenbanknummer, `1` die Seitencaching-Datenbanknummer und `2` die Sitzungsspeicher-Datenbanknummer zuzuweisen. | 0 |
+| session-save-valkey-persistent-id | persistent_identifier | Eindeutige Zeichenfolge zur Aktivierung persistenter Verbindungen (z. B. sess-db0).<br>[Bekannte Probleme mit phpredis und php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
+| session-save-valkey-db | Datenbank | Eindeutige Valkey-Datenbanknummer, die zum Schutz vor Datenverlust empfohlen wird.<br><br>**Wichtig**: Wenn Sie Valkey für mehr als einen Caching-Typ verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, `0` die standardmäßige Caching-Datenbanknummer, `1` die Seitencaching-Datenbanknummer und `2` die Sitzungsspeicher-Datenbanknummer zuzuweisen. | 0 |
 | session-save-value-compression-threshold | compression_threshold | Auf `0` setzen, um die Komprimierung zu deaktivieren (wird bei der `suhosin.session.encrypt = On` empfohlen). | 2048 |
 | session-save-valkey-compression-lib | compression_library | Optionen: gzip, lzf, lz4 oder snappy. | gzip |
 | session-save-valkey-log-level | log_level | Legen Sie eine der folgenden Einstellungen fest, die in der Reihenfolge von der letzten Ausführlichkeit bis zur letzten Ausführlichkeit aufgeführt sind:<ul><li>0 (Notfall: nur die schwerwiegendsten Fehler)<li>1 (Warnhinweis: sofortiges Handeln erforderlich)<li>2 (Kritisch: Anwendungskomponente nicht verfügbar)<li>3 (Fehler: Laufzeitfehler, nicht kritisch, aber zu überwachen)<li>4 (Warnung: zusätzliche Informationen, empfohlen)<li>5 (Hinweis: Normaler, aber signifikanter Zustand)<li>6 (INFO: Informationsnachrichten)<li>7 (Debugging: Die meisten Informationen nur für Entwicklung oder Tests)</ul> | 1 |
@@ -67,7 +67,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-<paramete
 
 Im folgenden Beispiel wird Valkey als Sitzungsdatenspeicher, der Host als `127.0.0.1`, die Protokollebene als `4` und die Datenbanknummer als `2` festgelegt. Alle anderen Parameter sind auf den Standardwert eingestellt.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=127.0.0.1 --session-save-valkey-log-level=4 --session-save-valkey-db=2
 ```
 
@@ -75,7 +75,7 @@ bin/magento setup:config:set --session-save=valkey --session-save-valkey-host=12
 >
 >Ab **Adobe Commerce 2.4.9** hat **Valkey** Redis im CLI-Tool aufgrund von Änderungen bei der Lizenzierung offiziell ersetzt. Valkey ist eine Abspaltung von Redis und verfügt über nahezu identische Funktionen. Für **Versionen 2.4.8 und früher** bleiben die zur Konfiguration von Valkey verwendeten CLI-Befehle die gleichen wie für Redis, wodurch eine nahtlose Abwärtskompatibilität gewährleistet und die Migration oder Unterstützung von zwei Umgebungen vereinfacht wird. Das folgende Beispiel zeigt den valley-spezifischen Befehl.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -119,13 +119,13 @@ Um sicherzustellen, dass Valkey und Commerce ordnungsgemäß zusammenarbeiten, m
 
 ### Valley-Überwachungsbefehl
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 Beispielausgabe für Sitzungsspeicher:
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -136,7 +136,7 @@ Beispielausgabe für Sitzungsspeicher:
 
 ### Valley-Ping-Befehl
 
-```bash
+```shell
 valkey-cli ping
 ```
 

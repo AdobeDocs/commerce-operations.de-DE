@@ -3,9 +3,9 @@ title: Konfigurieren des  [!DNL Data Migration Tool]
 description: Erfahren Sie mehr über die beiden Methoden zum Konfigurieren von  [!DNL Data Migration Tool] , um Daten zwischen Magento 1 und Magento 2 zu übertragen.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -96,17 +96,17 @@ Bevor Sie Daten migrieren, müssen Sie ein Magento 2 -Modul erstellen.
 
    Wenn Sie beispielsweise `Magento 1.9.3.6 Community Edition` nach `Magento 2 Open Source` migrieren:
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
 1. In der `config.xml` müssen Sie die Zugriffsdetails auf M1- und M2-Datenbanken und den Verschlüsselungsschlüssel festlegen.
 
-1. Wenn Ihr M1-Store benutzerdefinierte Änderungen enthält, sollten Sie den Rest Ihrer Konfigurationsdateien Ihren Magento 1-Store-Anpassungen zuordnen. Siehe [Arbeiten mit Konfigurations- und &#x200B;](#migration-config).
+1. Wenn Ihr M1-Store benutzerdefinierte Änderungen enthält, sollten Sie den Rest Ihrer Konfigurationsdateien Ihren Magento 1-Store-Anpassungen zuordnen. Siehe [Arbeiten mit Konfigurations- und ](#migration-config).
 
 ### Konfigurieren der Migration in `vendor` Ordner
 
@@ -118,13 +118,13 @@ So konfigurieren Sie die [!DNL Data Migration Tool] für die Migration:
 
 1. Wechseln Sie in das folgende Verzeichnis:
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Geben Sie den folgenden Befehl ein, um einen `config.xml` aus dem bereitgestellten Beispiel zu erstellen:
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 
@@ -152,7 +152,7 @@ So konfigurieren Sie die [!DNL Data Migration Tool] für die Migration:
    * Benutzerdefinierter Datenbank-Port: `port=<port>`
    * Tabellenpräfix: `<source_prefix>`, `<dest_prefix>`
 
-   Wenn beispielsweise der Benutzername Ihres Datenbankbesitzers mit dem Kennwort `root` `pass` ist und Sie das Präfix `magento1` in Ihrer Magento 1-Datenbank verwenden, verwenden Sie Folgendes in `config.xml`:
+   Wenn beispielsweise der Benutzername Ihres Datenbankbesitzers mit dem Kennwort `pass` `root` ist und Sie das Präfix `magento1` in Ihrer Magento 1-Datenbank verwenden, verwenden Sie Folgendes in `config.xml`:
 
    ```xml
    <source>
@@ -208,7 +208,7 @@ So verwenden Sie die Zuordnungsdateien:
 
 1. Aktualisieren Sie den Pfad zur neu kopierten Datei im `<options>` Knoten von `config.xml`. Der aktualisierte Pfad sollte einer der folgenden sein:
 
-   1. Absoluter Dateipfad, z. B. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Absoluter Dateipfad, e. G. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Magento/data-migration-tool-Modul Relativer Dateipfad: `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Stammbezogener Dateipfad von Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 

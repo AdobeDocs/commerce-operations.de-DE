@@ -2,9 +2,9 @@
 title: Profilerstellung aktivieren
 description: Erfahren Sie mehr darüber, wie Sie den MAGE Profiler für Ihre Analyse-Tools aktivieren.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Sie können den Profiler mithilfe einer MAGE_PROFILER-Variablen oder der Befehls
 
 ## MAGE_PROFILER festlegen
 
-Sie können den Wert von `MAGE_PROFILER` auf eine der unter „Festlegen des [&#x200B; von Bootstrap-Parametern“ beschriebenen Arten &#x200B;](../bootstrap/set-parameters.md).
+Sie können den Wert von `MAGE_PROFILER` auf eine der unter „Festlegen des [ von Bootstrap-Parametern“ beschriebenen Arten ](../bootstrap/set-parameters.md).
 
 `MAGE_PROFILER` unterstützt die folgenden Werte:
 
@@ -63,13 +63,13 @@ Verwenden Sie die Variablenoption, um Abhängigkeitsdiagramme zu aktivieren.
 
    So aktivieren Sie den Profiler mit dem Typ `html` und erstellen eine Flagdatei:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable html
    ```
 
    So aktivieren Sie den Profiler mit dem Typ `csvfile` und erstellen eine Flagdatei:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable csvfile
    ```
 
@@ -77,7 +77,7 @@ Verwenden Sie die Variablenoption, um Abhängigkeitsdiagramme zu aktivieren.
 
    So deaktivieren Sie den Profiler und entfernen die Flagdatei:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:disable
    ```
 

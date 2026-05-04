@@ -2,7 +2,7 @@
 title: Sprachpakete deinstallieren
 description: Führen Sie die folgenden Schritte aus, um ein Adobe Commerce-Sprachpaket zu deinstallieren.
 exl-id: 9901aa0b-af1a-4ae9-968f-ac8421060f57
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Sie können Sicherungskopien jederzeit mit dem Befehl [`magento setup:rollback`]
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento i18n:uninstall [-b|--backup-code] {language package name} ... {language package name}
 ```
 
@@ -35,20 +35,20 @@ Der Deinstallationsbefehl für Sprachpakete führt die folgenden Aufgaben aus:
 
 Wenn Sie beispielsweise versuchen, ein Sprachpaket zu deinstallieren, von dem ein anderes Sprachpaket abhängig ist, wird die folgende Meldung angezeigt:
 
-```
+```text
 Cannot uninstall vendorname/language-en_us because the following package(s) depend on it:
       vendorname/language-en_gb
 ```
 
 Eine Alternative besteht darin, beide Sprachpakete nach dem Sichern der Code-Basis zu deinstallieren:
 
-```bash
+```shell
 bin/magento i18n:uninstall vendorname/language-en_us vendorname/language-en_gb --backup-code
 ```
 
 Meldungen ähnlich der folgenden werden angezeigt:
 
-```
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

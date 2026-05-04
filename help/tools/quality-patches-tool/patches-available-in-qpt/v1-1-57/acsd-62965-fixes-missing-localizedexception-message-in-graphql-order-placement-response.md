@@ -5,9 +5,9 @@ feature: Orders, GraphQL
 role: Admin, Developer
 exl-id: cf9d1409-6fe3-4019-9207-df5f12a41505
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -38,22 +38,22 @@ Die GraphQL-Antwort für die Bestellplatzierung enthält keine `LocalizedExcepti
 
 1. Installieren Sie eine neue **[!DNL Adobe Commerce]**.
 1. Fügen Sie ein Produkt zum Warenkorb hinzu und fahren Sie mit dem Schritt Bestellplatzierung fort.
-1. Fügen Sie in `LocalizedException` eine `Magento\Framework\Exception\LocalizedException` zu `app/code/Magento/QuoteGraphQl/Model/Resolver/PlaceOrder.php` hinzu.
+1. Fügen Sie in `app/code/Magento/QuoteGraphQl/Model/Resolver/PlaceOrder.php` eine `LocalizedException` zu `Magento\Framework\Exception\LocalizedException` hinzu.
 1. Fügen Sie die Ausnahme nach der folgenden Zeile ein:
 
-   ```
+   ```shell
    $cart = $this->getCartForCheckout->execute($maskedCartId, $userId, $storeId);
    ```
 
    Fügen Sie die Ausnahme hinzu:
 
-   ```
+   ```text
    throw new LocalizedException(new Phrase("Test LocalizedException"));
    ```
 
 1. Ausführen der GraphQL-Anforderung „Bestellung aufgeben“:
 
-   ```
+   ```graphql
    mutation {
    placeOrder(input: {cart_id: "cart_id"}) {
        order {
@@ -67,7 +67,7 @@ Die GraphQL-Antwort für die Bestellplatzierung enthält keine `LocalizedExcepti
    1. Die Antwort enthält nicht die `LocalizedException`.
    1. Beispiel für die falsche Antwort:
 
-      ```
+      ```json
       {
       "data": {
           "placeOrder": {
@@ -90,7 +90,7 @@ Wenn ein `LocalizedException` auftritt, wird die Ausnahmemeldung nicht in die Gr
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

@@ -2,9 +2,9 @@
 title: Abhängigkeitsberichte
 description: Erfahren Sie, wie Sie Abhängigkeitsberichte erstellen, die Modul-, Zirkel- und Framework-Abhängigkeiten in Adobe Commerce zeigen. Entdecken Sie Analyse- und Reporting-Tools.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Eine Abhängigkeit in einem Kommentar ist auch eine Abhängigkeit.
 
 Befehlsoptionen:
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
@@ -51,7 +51,7 @@ Wenn kein Verzeichnis oder Dateiname als Argument übergeben wird, wird der folg
 
 Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispielmodulabhängigkeitsbericht:
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispielmodulabhängig
 
 Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispiel-Bericht zu zirkulären Abhängigkeiten:
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispiel-Bericht zu zi
 
 Im Folgenden finden Sie einen Teil der Ausgabe für einen Beispiel-Framework-Abhängigkeitsbericht:
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

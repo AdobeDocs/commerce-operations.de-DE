@@ -4,9 +4,9 @@ description: Erfahren Sie, wie MySQL-Trigger und Slave-Verbindungen die Leistung
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -47,8 +47,8 @@ Dieser zusätzliche Mehraufwand kann sich negativ auf die Site-Leistung auf der 
 Um Leistungsprobleme bei der Verwendung von Triggern zu vermeiden, befolgen Sie die folgenden Richtlinien:
 
 - Wenn Sie benutzerdefinierte Trigger haben, die einige Daten schreiben, wenn der Trigger ausgeführt wird, verschieben Sie diese Logik stattdessen so, dass sie direkt in die Audit-Tabellen schreibt. Durch Hinzufügen einer zusätzlichen Abfrage im Anwendungscode nach der Abfrage, für die Sie den Trigger erstellen möchten, können Sie dies beispielsweise tun.
-- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt in die Tabellen auf Anwendungsseite zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung nach vorhandenen Triggern in Ihrer &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [&#x200B; Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de&#submit-ticket).
+- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt in die Tabellen auf Anwendungsseite zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung nach vorhandenen Triggern in Ihrer ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
+- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [ Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?#submit-ticket).
 
 ## Slave-Verbindungen
 
@@ -62,7 +62,7 @@ Adobe Commerce auf Cloud-Infrastruktur, nur Pro-Architektur
 
 ### Konfiguration
 
-In der Adobe Commerce on Cloud-Infrastruktur können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung überschreiben, indem Sie die Variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#mysql_use_slave_connection) festlegen. Legen Sie diese Variable auf `true` fest, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
+In der Adobe Commerce on Cloud-Infrastruktur können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung überschreiben, indem Sie die Variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) festlegen. Legen Sie diese Variable auf `true` fest, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
 
 **So aktivieren Sie die MySQL-Slave-Verbindung**:
 
@@ -70,7 +70,7 @@ In der Adobe Commerce on Cloud-Infrastruktur können Sie die Standardkonfigurati
 
 1. Legen Sie in der `.magento.env.yaml`-Datei den `MYSQL_USE_SLAVE_CONNECTION` auf „true“ fest.
 
-   ```
+   ```yaml
    stage:
      deploy:
        MYSQL_USE_SLAVE_CONNECTION: true

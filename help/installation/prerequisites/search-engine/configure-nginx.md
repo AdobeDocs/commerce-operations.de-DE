@@ -3,9 +3,9 @@ title: Konfigurieren von Nginx für Ihre Suchmaschine
 description: Führen Sie diese Schritte aus, um eine Suchmaschine mit dem Nginx-Webserver für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [&#x200B; finden Sie unter „Migrieren von Elasticsearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [ finden Sie unter „Migrieren von Elasticsearch ](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
 
 In diesem Abschnitt wird beschrieben, wie Sie Nginx als *unsicheren*-Proxy konfigurieren, damit Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit nginx](#secure-communication-with-nginx) erläutert.
 
@@ -51,25 +51,25 @@ In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den nginx-Server 
 
 1. Nginx neu starten:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 
 1. Überprüfen Sie, ob der Proxy funktioniert, indem Sie den folgenden Befehl eingeben:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Wenn Ihr Proxy beispielsweise Port 8080 verwendet:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Meldungen ähnlich der folgenden werden angezeigt, um auf Erfolg hinzuweisen:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -88,7 +88,7 @@ Da nginx nativ die HTTP-Standardauthentifizierung unterstützt, empfehlen wir di
 Zusätzliche Ressourcen:
 
 * [Einrichten der Passwortauthentifizierung mit Nginx auf Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
-* [Einfache HTTP-Authentifizierung mit Nginx (howtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
+* [Einfache HTTP-Authentifizierung mit Nginx (HowToForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
 * [Nginx-Beispielkonfigurationen für Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 Weitere Informationen finden Sie in den folgenden Abschnitten:
@@ -106,7 +106,7 @@ So erstellen Sie ein Kennwort:
 
 1. Geben Sie den folgenden Befehl ein, um festzustellen, ob `htpasswd` bereits installiert ist:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -119,11 +119,11 @@ So erstellen Sie ein Kennwort:
 
 1. Erstellen Sie ein `/etc/nginx/passwd` Verzeichnis zum Speichern von Kennwörtern:
 
-   ```bash
+   ```shell
    mkdir -p /etc/nginx/passwd
    ```
 
-   ```bash
+   ```shell
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -133,7 +133,7 @@ So erstellen Sie ein Kennwort:
 
 1. *(optional).* Um einen weiteren Benutzer zu Ihrer Kennwortdatei hinzuzufügen, geben Sie denselben Befehl ohne die Option `-c` (Erstellen) ein:
 
-   ```bash
+   ```shell
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -188,7 +188,7 @@ In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den Suchmaschinen
 
 1. Geben Sie den folgenden Befehl ein, um ein Verzeichnis zu erstellen, in dem die Authentifizierungskonfiguration gespeichert wird:
 
-   ```bash
+   ```shell
    mkdir /etc/nginx/auth/
    ```
 
@@ -209,7 +209,7 @@ In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den Suchmaschinen
 1. Wenn Sie einen sicheren Proxy eingerichtet haben, löschen Sie `/etc/nginx/conf.d/magento_es_auth.conf`.
 1. Starten Sie nginx neu und fahren Sie mit dem nächsten Abschnitt fort:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 

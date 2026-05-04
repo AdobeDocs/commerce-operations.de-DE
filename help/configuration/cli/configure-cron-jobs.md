@@ -2,9 +2,9 @@
 title: Konfigurieren und Ausführen von Cron-Aufträgen
 description: Erfahren Sie, wie Sie Cron-Aufträge in Adobe Commerce konfigurieren und verwalten. Entdecken Sie Techniken zur Planung, Konfiguration und Fehlerbehebung.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ Die crontab von Commerce befindet sich in `#~ MAGENTO START` und `#~ MAGENTO END
 
 So erstellen Sie die crontab von Commerce:
 
-1. Melden Sie sich als „Dateisystembesitzer“ an [&#x200B; wechseln Sie zu diesem &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich als „Dateisystembesitzer“ an [ wechseln Sie zu diesem ](../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie den folgenden Befehl ein:
 
-   ```bash
+   ```shell
    bin/magento cron:install [--force]
    ```
 
@@ -74,13 +74,13 @@ Verwenden Sie `--force`, um eine vorhandene crontab neu zu schreiben.
 
 Um die crontab anzuzeigen, geben Sie den folgenden Befehl als Eigentümer des Dateisystems ein:
 
-```bash
+```shell
 crontab -l
 ```
 
 Es folgt ein Beispiel:
 
-```
+```shell
 #~ MAGENTO START c5f9e5ed71cceaabc4d4fd9b3e827a2b
 * * * * * /usr/bin/php /var/www/html/magento2/bin/magento cron:run 2>&1 | grep -v "Ran jobs by schedule" >> /var/www/html/magento2/var/log/magento.cron.log
 #~ MAGENTO END c5f9e5ed71cceaabc4d4fd9b3e827a2b
@@ -102,7 +102,7 @@ So entfernen Sie die crontab von Commerce:
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie den folgenden Befehl ein:
 
-   ```bash
+   ```shell
    bin/magento cron:remove
    ```
 
@@ -114,7 +114,7 @@ So entfernen Sie die crontab von Commerce:
 
 Befehlsoptionen:
 
-```bash
+```shell
 bin/magento cron:run [--group="<cron group name>"]
 ```
 
@@ -122,13 +122,13 @@ Dabei gibt `--group` die auszuführende Cron-Gruppe an (lassen Sie diese Option 
 
 Um den Cron-Indizierungsauftrag auszuführen, geben Sie Folgendes ein:
 
-```bash
+```shell
 bin/magento cron:run --group index
 ```
 
 Um den standardmäßigen Cron-Auftrag auszuführen, geben Sie Folgendes ein:
 
-```bash
+```shell
 bin/magento cron:run --group default
 ```
 

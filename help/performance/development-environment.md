@@ -2,9 +2,9 @@
 title: Empfehlungen für die Entwicklungsumgebung
 description: Erfahren Sie mehr über die Empfehlungen für Entwicklungsumgebungen in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Führen Sie im Entwicklungsmodus keine Befehle für die Kompilierung, Codegeneri
 
 * `setup:di:compile` generiert automatisch generierte Klassen und optimierte Konfigurationscaches.
 
-  ```bash
+  ```shell
   bin/magento setup:di:compile
   ```
 
@@ -35,7 +35,7 @@ Führen Sie im Entwicklungsmodus keine Befehle für die Kompilierung, Codegeneri
 
 * `setup:static-content:deploy` stellt statische Inhalte für einen Store bereit.
 
-  ```bash
+  ```shell
   bin/magento setup:static-content:deploy
   ```
 

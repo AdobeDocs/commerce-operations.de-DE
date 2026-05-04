@@ -2,9 +2,9 @@
 title: Technische Details
 description: Erfahren Sie mehr über die technischen Details der Pipeline-Bereitstellung, Konfigurationstypen und empfohlene Workflows.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,13 @@ Wie das Diagramm zeigt, werden die Konfigurationswerte in der folgenden Reihenfo
 
 Die freigegebene Konfiguration wird in `app/etc/config.php` gespeichert, das sich in der Quell-Code-Verwaltung befinden sollte.
 
-Legen Sie die freigegebene Konfiguration im Admin-System in Ihrer Entwicklungsumgebung (oder im Adobe Commerce-_-_) fest und schreiben Sie die Konfiguration mithilfe des `config.php`-Befehls in [`magento app:config:dump`](../cli/export-configuration.md).
+Legen Sie die freigegebene Konfiguration im Admin-System in Ihrer Entwicklungsumgebung (oder im Adobe Commerce-_-_) fest und schreiben Sie die Konfiguration mithilfe des [`magento app:config:dump`-Befehls in `config.php`](../cli/export-configuration.md).
 
 ### Verwalten der systemspezifischen Konfiguration
 
 Die systemspezifische Konfiguration wird in `app/etc/env.php` gespeichert, das _nicht_ der Quell-Code-Verwaltung sein sollte.
 
-Legen Sie die systemspezifische Konfiguration im Admin-System in Ihrem Entwicklungssystem (oder in Adobe Commerce für die Cloud-Infrastrukturintegration) fest und schreiben Sie die Konfiguration mithilfe des `env.php`-Befehls in [`magento app:config:dump`](../cli/export-configuration.md).
+Legen Sie die systemspezifische Konfiguration im Admin-System in Ihrem Entwicklungssystem (oder in Adobe Commerce für die Cloud-Infrastrukturintegration) fest und schreiben Sie die Konfiguration mithilfe des [`magento app:config:dump`-Befehls in `env.php`](../cli/export-configuration.md).
 
 Dieser Befehl schreibt auch vertrauliche Einstellungen in `env.php`.
 
@@ -117,7 +117,7 @@ Auf Ihrem Entwicklungssystem:
 
 1. Um generierten PHP-Code und statische Assets-Dateien während der Entwicklung zu entfernen, führen Sie die folgenden Befehle aus:
 
-   ```bash
+   ```shell
    rm -r var/view_preprocessed/*
    rm -r pub/static/*/*
    rm -r generated/*/*
@@ -287,10 +287,10 @@ Die systemspezifische Konfigurationseinstellung der Standard-E-Mail-Domain wird 
 
 Die PayPal-Einstellungen werden in keine der Dateien geschrieben, da der `bin/magento app:config:dump`-Befehl keine sensiblen Einstellungen schreibt. Sie müssen die PayPal-Einstellungen auf dem Produktionssystem mit den folgenden Befehlen festlegen:
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_username <username>
 ```
 
-```bash
+```shell
 bin/magento config:sensitive:set paypal/wpp/api_password <password>
 ```

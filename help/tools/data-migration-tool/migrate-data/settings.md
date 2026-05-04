@@ -3,7 +3,7 @@ title: Einstellungen für die Datenmigration
 description: Erfahren Sie, wie Sie mit der Migration von Einstellungen von Magento 1 zu Magento 2 mit dem  [!DNL Data Migration Tool] beginnen.
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Der `Settings` Modus migriert Stores, Websites und Systemkonfigurationen wie Ver
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich beim Anwendungs-Server als [Dateisystemeigentümer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Anwendungs-Server als [Dateisystemeigentümer“ ](../../../installation/prerequisites/file-system/overview.md).
 
 1. Wechseln Sie in das `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem `PATH` hinzugefügt wird.
 
@@ -25,13 +25,13 @@ Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzube
 >Stellen Sie sicher, dass Magento 2 im `default` bereitgestellt wird. Der Entwicklermodus kann zu Validierungsfehlern im Migrations-Tool führen.
 
 
-Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
 
 ## Ausführen des Befehls zur Einstellungsmigration
 
 Um mit der Migration von Einstellungen zu beginnen, führen Sie Folgendes aus:
 
-```bash
+```shell
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -58,7 +58,7 @@ Sie können die Systemkonfigurationen beim Migrieren von Einstellungen ignoriere
 
 1. Wechseln Sie in das folgende Verzeichnis:
 
-   ```bash
+   ```shell
    cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
@@ -72,7 +72,7 @@ Sie können die Systemkonfigurationen beim Migrieren von Einstellungen ignoriere
 
 1. Um eine `settings.xml` Datei aus dem bereitgestellten Beispiel zu erstellen, führen Sie Folgendes aus:
 
-   ```bash
+   ```shell
    cp settings.xml.dist settings.xml
    ```
 
@@ -80,7 +80,7 @@ Sie können die Systemkonfigurationen beim Migrieren von Einstellungen ignoriere
 
 1. Um den neuen Namen der Einstellungsdatei für die Zuordnung anzugeben, ändern Sie das `<settings_map_file>`-Tag in der `path/to/config.xml`.
 
-Weitere Informationen finden Sie [&#x200B; Abschnitt „Einstellungen Migrationsmodus](../technical-specification.md#settings-migration-mode) der [&#x200B; des Tools](../technical-specification.md).
+Weitere Informationen finden Sie [ Abschnitt „Einstellungen Migrationsmodus](../technical-specification.md#settings-migration-mode) der [ des Tools](../technical-specification.md).
 
 ## Nächster Migrationsschritt
 

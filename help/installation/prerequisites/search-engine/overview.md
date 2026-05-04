@@ -3,9 +3,9 @@ title: Voraussetzungen für Suchmaschinen
 description: Führen Sie diese Schritte aus, um unterstützte Suchmaschinensoftware für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Ab Adobe Commerce 2.4 müssen alle Installationen so konfiguriert sein, dass [El
 
 Sie müssen entweder Elasticsearch oder OpenSearch installieren und konfigurieren, bevor Sie Adobe Commerce 2.4.4 und höher installieren.
 
-Spezifische Versionsinformationen finden [&#x200B; in den &#x200B;](../../system-requirements.md)Systemanforderungen“.
+Spezifische Versionsinformationen finden [ in den ](../../system-requirements.md)Systemanforderungen“.
 
 ## Empfohlene Konfiguration
 
@@ -82,7 +82,7 @@ Sicherheitsbezogene Software (iptables, SELinux, AppArmor) kann standardmäßig 
 
 Informationen zum Einrichten von Regeln für die Kommunikation mit der Firewall oder SELinux aktiviert, finden Sie in den folgenden Ressourcen:
 
-* [iptables - Anleitung](https://help.ubuntu.com/community/IptablesHowTo)
+* [iptables - Anleitungen](https://help.ubuntu.com/community/IptablesHowTo)
 * [Bearbeiten von iptables-Regeln (Fedora-Projekt)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [Einführung in SELinux (CentOS.org)](https://www.centos.org)
 * [SELinux-Anleitungswiki (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
@@ -91,7 +91,7 @@ Informationen zum Einrichten von Regeln für die Kommunikation mit der Firewall 
 
 Um festzustellen, ob Java bereits installiert ist, geben Sie den folgenden Befehl ein:
 
-```bash
+```shell
 java -version
 ```
 
@@ -108,7 +108,7 @@ Siehe dieses [Tutorial zum digitalen Ozean](https://www.digitalocean.com/communi
 
 Stellen Sie sicher, dass Sie das JDK und *nicht* JRE installieren.
 
-```bash
+```shell
 yum -y install java-1.8.0-openjdk
 ```
 
@@ -120,11 +120,11 @@ yum -y install java-1.8.0-openjdk
 
 Um JDK 1.8 auf Ubuntu zu installieren, geben Sie die folgenden Befehle als Benutzer mit `root` ein:
 
-```bash
+```shell
 apt-get -y update
 ```
 
-```bash
+```shell
 apt-get install -y openjdk-8-jdk
 ```
 
@@ -132,28 +132,28 @@ Weitere Optionen finden Sie in der Dokumentation zu [Oracle](https://docs.oracle
 
 ### Installieren der Suchmaschine
 
-Elasticsearch Befolgen Sie [Installieren von &#x200B;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) oder [Installieren und Konfigurieren von OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) für Ihre plattformspezifischen Schritte.
+Befolgen Sie [Installieren von ](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) oder [Installieren und Konfigurieren von OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) für Ihre plattformspezifischen Schritte.
 
 Um zu überprüfen, ob Elasticsearch funktioniert, geben Sie den folgenden Befehl auf dem Server ein, auf dem es ausgeführt wird:
 
-```bash
+```shell
 curl -XGET '<host>:9200/_cat/health?v&pretty'
 ```
 
 Es wird eine Meldung ähnlich der folgenden angezeigt:
 
-```
+```text
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks
 1519701563 03:19:23  elasticsearch green           1         1      0   0    0    0        0             0
 ```
 
 Um zu überprüfen, ob OpenSearch funktioniert, geben Sie die folgenden Befehle ein:
 
-```bash
+```shell
 curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 ```
 
-```bash
+```shell
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
@@ -165,4 +165,4 @@ Elasticsearch erfordert JDK 1.8 oder höher. Unter [Installieren des Java Softwa
 
 ## Zusätzliche Ressourcen
 
-Weitere Informationen finden Sie in der Dokumentation zu [0](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)Elasticsearch[&#x200B; oder OpenSearch.](https://opensearch.org/docs/latest/)
+Weitere Informationen finden Sie in der Dokumentation zu ](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)0[Elasticsearch](https://opensearch.org/docs/latest/) oder OpenSearch.[

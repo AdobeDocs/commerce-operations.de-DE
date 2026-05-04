@@ -1,11 +1,11 @@
 ---
 title: System-Setup erstellen
-description: Erfahren Sie, wie Sie Commerce in einem Build-System bereitstellen.
+description: Erfahren Sie, wie Sie ein Build-System für die Adobe Commerce-Bereitstellung mit Quell-Code-Verwaltung, generierten Assets und statischen Inhaltsanforderungen einrichten.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ So installieren Sie Composer:
 
 1. Geben Sie die folgenden Befehle ein:
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | php
    ```
 
-   ```bash
+   ```shell
    mv composer.phar /usr/local/bin/composer
    ```
 
@@ -82,26 +82,26 @@ So richten Sie das Build-System ein:
 
    Wenn Sie Git verwenden, verwenden Sie den folgenden Befehl:
 
-   ```bash
+   ```shell
    git clone [-b <branch name>] <repository URL>
    ```
 
 1. Wechseln Sie zum Commerce-Stammverzeichnis und geben Sie Folgendes ein:
 
-   ```bash
+   ```shell
    composer install
    ```
 
 1. Warten Sie, bis die Abhängigkeiten aktualisiert werden.
 1. Legen Sie den Besitz fest:
 
-   ```bash
+   ```shell
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    Beispiel:
 
-   ```bash
+   ```shell
    chown -R commerce-username:apache .
    ```
 
@@ -120,15 +120,15 @@ So richten Sie das Build-System ein:
 1. Speichern Sie Ihre Änderungen in `.gitignore` und beenden Sie den Texteditor.
 1. Wenn Sie Git verwenden, verwenden Sie die folgenden Befehle, um die Änderung zu übernehmen:
 
-   ```bash
+   ```shell
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Weitere Informationen finden Sie in [`.gitignore` &#x200B;](../reference/config-reference-gitignore.md).
+   Weitere Informationen finden Sie in ](../reference/config-reference-gitignore.md) [`.gitignore`.
 
-1. Das Build-System sollte den [Standardmodus“ &#x200B;](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ &#x200B;](../bootstrap/application-modes.md#developer-mode):
+1. Das Build-System sollte den [Standardmodus“ ](../bootstrap/application-modes.md#default-mode) den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode):
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set <mode>
    ```
 

@@ -3,9 +3,9 @@ title: Verhindern von Clickjacking-Angriffen
 description: Verhindern Sie Clickjacking-Exploits, indem Sie die Kopfzeile „X-Frame-Options“ verwenden, um das Rendern der Seite zu steuern.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Um Ihre Einstellung zu überprüfen, zeigen Sie die HTTP-Kopfzeilen auf einer be
 
 Im folgenden Beispiel wird curl verwendet, das Sie auf jedem Computer ausführen können, der über das HTTP-Protokoll eine Verbindung zu Ihrem Commerce-Server herstellen kann.
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

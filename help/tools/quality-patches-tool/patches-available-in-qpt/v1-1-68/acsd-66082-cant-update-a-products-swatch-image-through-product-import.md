@@ -5,9 +5,9 @@ feature: Products, Data Import/Export, Media
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 0bfff90e-5f1f-4c87-8a99-efc5bb0d814b
-source-git-commit: e0d2e42b070591f3fefc0e9adb1bf5c1ba580fd9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-66082 wird das Problem behoben, dass es nicht möglich war, d
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -40,7 +40,7 @@ Beim Hochladen einer CSV-Datei mit dem `swatch_image` Feld `EMPTY_VALUE` zum Auf
 1. Laden Sie ein PNG-Bild mit dem Namen *testing.png* in `var/import/images/` hoch.
 1. Erstellen Sie eine CSV-Datei mit folgendem Inhalt:
 
-   ```
+   ```text
    sku,swatch_image,swatch_image_label
    ABC,testing.png,testing
    ```
@@ -51,7 +51,7 @@ Beim Hochladen einer CSV-Datei mit dem `swatch_image` Feld `EMPTY_VALUE` zum Auf
    * Klicken Sie auf **[!UICONTROL Choose File]** , um die im vorherigen Schritt erstellte CSV-Datei zum Importieren auszuwählen. Der Import ist erfolgreich und das Farbfeld wird hinzugefügt.
 1. Aktualisieren Sie die CSV-Datei mit dem folgenden Inhalt:
 
-   ```
+   ```text
    sku,swatch_image,swatch_image_label
    ABC,__EMPTY__VALUE__,__EMPTY__VALUE__
    ```
@@ -71,7 +71,7 @@ Der Importvorgang gibt einen Fehler aus.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

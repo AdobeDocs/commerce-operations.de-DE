@@ -1,11 +1,11 @@
 ---
 title: Datenbankreplikation
-description: Erfahren Sie mehr über die Vorteile der Konfiguration der Datenbankreplikation.
+description: Erfahren Sie mehr über die Vorteile der Datenbankreplikation für Adobe Commerce, einschließlich Sicherung, Analytics-Abladung und asynchrone MySQL-Slave-Konfiguration.
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---

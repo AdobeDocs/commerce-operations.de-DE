@@ -2,9 +2,9 @@
 title: Voraussetzungen für die lokale Installation
 description: Erfahren Sie mehr über die Softwareabhängigkeiten, die für lokale Installationen von Adobe Commerce erforderlich sind.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -27,21 +27,21 @@ Geben Sie die folgenden Befehle als Benutzer mit `root` Berechtigungen ein:
 
 * Ubuntu
 
-  ```bash
+  ```shell
   apt-get update
   ```
 
-  ```bash
+  ```shell
   apt-get upgrade
   ```
 
 * CentOS
 
-  ```bash
+  ```shell
   yum -y update
   ```
 
-  ```bash
+  ```shell
   yum -y upgrade
   ```
 
@@ -57,7 +57,7 @@ Ubuntu: `apache2 -v`
 
 Adobe Commerce unterstützt Apache Version 2.4, da das folgende Ergebnis anzeigt:
 
-```
+```text
 Server version: Apache/2.4.0 (Unix)
 Server built:   Jul 23 2017 14:17:29
 ```
@@ -70,21 +70,21 @@ Auf der Registerkarte *Commerce On-Premises* in [Systemanforderungen](../system-
 
 ### MySQL
 
-Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie auf der ** Commerce On-Premise[&#x200B; in &#x200B;](../system-requirements.md)Systemanforderungen.
+Vergewissern Sie sich, dass Sie über eine kompatible MySQL-Version für die Adobe Commerce-Version verfügen, die Sie installieren. Unterstützte Versionen finden Sie auf der ** Commerce On-Premise[ in ](../system-requirements.md)Systemanforderungen.
 
-```bash
+```shell
 mysql -u <database root user or database owner name> -p
 ```
 
 Beispiel:
 
-```bash
+```shell
 mysql -u magento -p
 ```
 
 In der Befehlsausgabe gibt die `Server version` die Version an, die Sie ausführen. Vergewissern Sie sich, dass es mit einer Version übereinstimmt, die für die Adobe Commerce-Version unterstützt wird, die Sie installieren.
 
-```
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 871
 Server version: <supported MySQL version> MySQL Community Server (GPL)
@@ -106,23 +106,23 @@ Informationen zum Installieren oder Aktualisieren von MySQL finden Sie unter [My
 
 So überprüfen Sie Ihre OpenSearch-Installation:
 
-```bash
+```shell
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
 So überprüfen Sie Ihre Elasticsearch-Installation:
 
-```bash
+```shell
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
 ```
 
 Beispiel:
 
-```bash
+```shell
 curl -XGET 'localhost:9200'
 ```
 
-```
+```json
 {
   "name" : "Z0S2B05",
   "cluster_name" : "elasticsearch_myname",

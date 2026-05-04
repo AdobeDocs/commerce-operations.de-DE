@@ -3,9 +3,9 @@ title: Änderungen migrieren
 description: Erfahren Sie, wie Sie mit dem nur Daten migrieren können, die sich seit Ihrer letzten Magento 1-Datenmigration geändert  [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -25,16 +25,16 @@ Das inkrementelle Migrations-Tool installiert deltalog-Tabellen (mit Präfix `m2
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich beim Anwendungsserver als [Dateisystemeigentümer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Anwendungsserver als [Dateisystemeigentümer“ ](../../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie in das `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem `PATH` hinzugefügt wird.
 
-Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
 
 ## Führen Sie den inkrementellen Migrationsbefehl aus
 
 Um mit der Migration inkrementeller Änderungen zu beginnen, führen Sie Folgendes aus:
 
-```bash
+```shell
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

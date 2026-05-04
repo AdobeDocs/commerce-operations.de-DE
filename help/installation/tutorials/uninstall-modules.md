@@ -1,10 +1,10 @@
 ---
 title: Module deinstallieren
-description: Führen Sie die folgenden Schritte aus, um ein Adobe Commerce-Modul zu deinstallieren.
+description: Erfahren Sie, wie Sie Adobe Commerce-Module deinstallieren, wobei Code, Schema und Daten optional entfernt werden können, und wann Module deaktiviert werden, anstatt sie zu deinstallieren.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Sie sollten ein Modul nur deinstallieren, wenn Sie sicher sind, dass Sie es nich
 
 >[!NOTE]
 >
->Dieser Befehl prüft, ob nur in der `composer.json` deklarierte Abhängigkeiten vorhanden sind. Wenn Sie ein Modul deinstallieren, das _nicht_ in der `composer.json` definiert ist, wird das Modul mit diesem Befehl deinstalliert, ohne auf Abhängigkeiten zu prüfen. Dieser Befehl entfernt _jedoch_ den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystem-Tools verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie Nicht-Composer[Module &#x200B;](manage-modules.md)deaktivieren).
+>Dieser Befehl prüft, ob nur in der `composer.json` deklarierte Abhängigkeiten vorhanden sind. Wenn Sie ein Modul deinstallieren, das _nicht_ in der `composer.json` definiert ist, wird das Modul mit diesem Befehl deinstalliert, ohne auf Abhängigkeiten zu prüfen. Dieser Befehl entfernt _jedoch_ den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystem-Tools verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie Nicht-Composer[Module ](manage-modules.md)deaktivieren).
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -67,7 +67,7 @@ Der Befehl zum Deinstallieren des Moduls führt die folgenden Aufgaben aus:
 
 Wenn Sie beispielsweise versuchen, ein Modul zu deinstallieren, von dem ein anderes Modul abhängig ist, wird die folgende Meldung angezeigt:
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,13 +75,13 @@ magento module:uninstall Magento_SampleMinimal
 
 Eine Alternative besteht darin, beide Module zu deinstallieren, nachdem das Moduldateisystem, die `pub/media`-Dateien und die Datenbanktabellen gesichert wurden _jedoch_ das Datenbankschema oder die Daten des Moduls entfernt wurden:
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 Meldungen ähnlich der folgenden werden angezeigt:
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -122,7 +122,7 @@ Disabling maintenance mode
 
 Verwenden Sie den folgenden Befehl, um die Code-Basis in den Zustand wiederherzustellen, in dem Sie sie gesichert haben:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -144,23 +144,23 @@ Dieser Befehl führt die folgenden Aufgaben aus:
 
    a. Überprüft, ob die Rollback-Zielspeicherorte beschreibbar sind (beachten Sie, dass die Ordner `pub/static` und `var` ignoriert werden).
 
-   b. Löscht alle Dateien und Verzeichnisse unter dem Installationsverzeichnis der Anwendung.
+   B. Löscht alle Dateien und Verzeichnisse unter dem Installationsverzeichnis der Anwendung.
 
-   c. Extrahiert die Archivdatei an die Zielspeicherorte.
+   C. Extrahiert die Archivdatei an die Zielspeicherorte.
 
 1. Wenn Sie eine Rollback-Datei für die Datenbank angeben:
 
    a. Löscht die gesamte Datenbank.
 
-   b. Stellt die Datenbank mithilfe der Datenbanksicherung wieder her.
+   B. Stellt die Datenbank mithilfe der Datenbanksicherung wieder her.
 
 1. Wenn Sie eine Medien-Rollback-Datei angeben:
 
    a. Überprüft, ob die Rollback-Zielspeicherorte beschreibbar sind.
 
-   b. Löscht alle Dateien und Ordner unter `pub/media`
+   B. Löscht alle Dateien und Ordner unter `pub/media`
 
-   c. Extrahiert die Archivdatei an die Zielspeicherorte.
+   C. Extrahiert die Archivdatei an die Zielspeicherorte.
 
 1. Entfernt den Speicher aus dem Wartungsmodus.
 
@@ -168,19 +168,19 @@ Um beispielsweise ein Code-Backup (d. h. ein Dateisystem-Backup) wiederherzustel
 
 * Zeigt eine Liste der Backups an:
 
-  ```bash
+  ```shell
   magento info:backups:list
   ```
 
 * Stellen Sie eine Dateisicherung mit dem Namen `1433876616_filesystem.tgz` wieder her:
 
-  ```bash
+  ```shell
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
   ```
 
   Meldungen ähnlich der folgenden werden angezeigt:
 
-  ```
+  ```text
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

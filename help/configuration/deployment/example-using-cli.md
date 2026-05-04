@@ -2,9 +2,9 @@
 title: Beispiel mit CLI-Befehlen
 description: Sehen Sie sich ein Beispiel für das Festlegen von freigegebenen, systemspezifischen und sensiblen Werten in Ihrem Entwicklungssystem mithilfe der Befehlszeile an.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Verwenden Sie die folgenden CLI-Befehle, um systemspezifische und vertrauliche K
 
 Verwenden Sie den folgenden Befehl, um die **Einstellung „Standard** E-Mail-Domain“ festzulegen, die sich im Standardbereich befindet:
 
-```bash
+```shell
 bin/magento config:set customer/create_account/email_domain <email domain>
 ```
 

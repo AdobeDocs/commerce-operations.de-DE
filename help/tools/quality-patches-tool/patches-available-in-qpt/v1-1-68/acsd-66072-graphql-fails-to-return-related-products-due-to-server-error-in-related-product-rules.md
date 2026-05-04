@@ -5,9 +5,9 @@ feature: GraphQL, Products
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a706a710-aed3-41a4-bc87-3150e9ba95f7
-source-git-commit: 8bb921704239d2b4622931a7814759bda5e9401f
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-66072 wird das Problem behoben, dass verwandte Produkte aufgr
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -54,14 +54,14 @@ Verwandte Produkte werden aufgrund eines internen Server-Fehlers bei der Konfigu
 
 1. Führen Sie die folgenden Magento-CLI-Befehle aus:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    bin/magento cache:clean
    ```
 
 1. Senden Sie eine POST-Anfrage an `../graphql` mit der folgenden Payload:
 
-   ```
+   ```graphql
    query getRelatedProductsForProductPage($urlKey: String!) 
    {
        products(filter: { url_key: { eq: $urlKey } }) 
@@ -172,7 +172,7 @@ Die Abfrage gibt das zugehörige Produkt zurück (`config1`).
 
 Die `var/log/exception.log` enthält:
 
-```
+```text
 report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/magento2ee/app/code/Magento/TargetRule/Model/ResourceModel/Index.php on line 557
 ```
 
@@ -181,7 +181,7 @@ report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

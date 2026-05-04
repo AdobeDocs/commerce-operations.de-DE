@@ -1,9 +1,9 @@
 ---
 title: Message Broker (ActiveMQ Artemis)
 description: Führen Sie diese Schritte aus, um Apache ActiveMQ Artemis Message Broker für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
-source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Adobe Commerce unterstützt außerdem den Open-Source-Nachrichtenbroker ActiveMQ
 
 >[!NOTE]
 >
->ActiveMQ Artemis wurde in Adobe Commerce 2.4.5 und höheren Versionen eingeführt. Weitere Informationen zur Installation von ActiveMQ Artemis in Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Einrichten des ActiveMQ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/activemq)Service im *Handbuch zu Commerce in Cloud*.
+>ActiveMQ Artemis wurde in Adobe Commerce 2.4.5 und höheren Versionen eingeführt. Weitere Informationen zur Installation von ActiveMQ Artemis in Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Einrichten des ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)Service im *Handbuch zu Commerce in Cloud*.
 
 Nachrichtenwarteschlangen bieten einen asynchronen Kommunikationsmechanismus, bei dem sich Absender und Empfänger einer Nachricht nicht berühren. Sie müssen auch nicht gleichzeitig mit der Nachrichtenwarteschlange kommunizieren. Wenn ein Absender eine Nachricht in eine Warteschlange stellt, wird sie gespeichert, bis der Empfänger sie erhält.
 
@@ -26,11 +26,11 @@ Das Meldungswarteschlangensystem muss vor der Installation von Adobe Commerce ei
 
 >[!NOTE]
 >
->Sie können MySQL, ActiveMQ oder [!DNL RabbitMQ] für die Verarbeitung von Nachrichtenwarteschlangen verwenden. Einzelheiten zum Einrichten des Meldungswarteschlangen-Systems finden Sie unter [Meldungswarteschlangen - Übersicht](https://developer.adobe.com/commerce/php/development/components/message-queues/). Wenn Sie die Bulk API mit Adobe Commerce verwenden, verwendet die Systemkonfiguration für die Nachrichtenwarteschlange standardmäßig [!DNL RabbitMQ] als Nachrichtenbroker. Weitere Informationen [&#x200B; Sie unter &#x200B;](../../configuration/cli/start-message-queues.md) starten.
+>Sie können MySQL, ActiveMQ oder [!DNL RabbitMQ] für die Verarbeitung von Nachrichtenwarteschlangen verwenden. Einzelheiten zum Einrichten des Meldungswarteschlangen-Systems finden Sie unter [Meldungswarteschlangen - Übersicht](https://developer.adobe.com/commerce/php/development/components/message-queues/). Wenn Sie die Bulk API mit Adobe Commerce verwenden, verwendet die Systemkonfiguration für die Nachrichtenwarteschlange standardmäßig [!DNL RabbitMQ] als Nachrichtenbroker. Weitere Informationen [ Sie unter ](../../configuration/cli/start-message-queues.md) starten.
 
 >[!TIP]
 >
->Überprüfen Sie vor der [&#x200B; immer die Download-Seite &#x200B;](https://activemq.apache.org/components/artemis/download/)Apache ActiveMQ Artemis) auf die neueste stabile Version. Die Beispiele in diesem Dokument verwenden Version 2.42.0, die die neueste stabile Version vom September 2025 war.
+>Überprüfen Sie vor der [ immer die Download-Seite ](https://activemq.apache.org/components/artemis/download/)Apache ActiveMQ Artemis) auf die neueste stabile Version. Die Beispiele in diesem Dokument verwenden Version 2.42.0, die die neueste stabile Version vom September 2025 war.
 
 
 ## Installieren von Apache ActiveMQ Artemis
@@ -51,7 +51,7 @@ Stellen Sie sicher, dass Docker auf Ihrem System installiert ist und ausgeführt
 
 1. Führen Sie ActiveMQ Artemis mit dem offiziellen Docker-Image aus:
 
-   ```bash
+   ```shell
    # Run with default configuration
    docker run --detach \
      --name artemis \
@@ -63,7 +63,7 @@ Stellen Sie sicher, dass Docker auf Ihrem System installiert ist und ausgeführt
 
 1. Mit benutzerdefinierten Anmeldeinformationen ausführen:
 
-   ```bash
+   ```shell
    # Run with custom username/password
    docker run --detach \
      --name artemis \
@@ -77,7 +77,7 @@ Stellen Sie sicher, dass Docker auf Ihrem System installiert ist und ausgeführt
 
 #### Docker-Verwaltungsbefehle
 
-```bash
+```shell
 # Check container status
 docker ps | grep artemis
 
@@ -115,7 +115,7 @@ Stellen Sie sicher, dass Java 17 oder höher installiert ist (erforderlich für 
 
 1. Herunterladen und Installieren der neuesten Version von der [Apache ActiveMQ Artemis-Website](https://activemq.apache.org/components/artemis/download/). Seit September 2025 ist die neueste stabile Version 2.42.0:
 
-   ```bash
+   ```shell
    sudo mkdir -p /opt/artemis
    cd /opt/artemis
    sudo curl -O https://downloads.apache.org/activemq/activemq-artemis/2.42.0/apache-artemis-2.42.0-bin.tar.gz
@@ -125,7 +125,7 @@ Stellen Sie sicher, dass Java 17 oder höher installiert ist (erforderlich für 
 
 1. Erstellen Sie den `artemis` Benutzer und legen Sie die Eigentümerschaft fest:
 
-   ```bash
+   ```shell
    # Create artemis user and set ownership
    sudo useradd -r -s /bin/false artemis 2>/dev/null || true
    sudo chown -R artemis:artemis /opt/artemis
@@ -133,14 +133,14 @@ Stellen Sie sicher, dass Java 17 oder höher installiert ist (erforderlich für 
 
 1. Erstellen Sie eine Broker-Instanz:
 
-   ```bash
+   ```shell
    sudo /opt/artemis/bin/artemis create /var/lib/artemis-instance --user artemis --password artemis --allow-anonymous
    sudo chown -R artemis:artemis /var/lib/artemis-instance
    ```
 
 1. Broker starten:
 
-   ```bash
+   ```shell
    # Start in foreground (for testing)
    sudo /var/lib/artemis-instance/bin/artemis run
    
@@ -195,7 +195,7 @@ Um SSL auf STOMP zu aktivieren, müssen Sie den `stomp-ssl` explizit hinzufügen
 
 Wenn Sie Adobe Commerce _nachdem_ installieren, fügen Sie während der Installation die folgenden Befehlszeilenparameter hinzu:
 
-```bash
+```shell
 --stomp-host="<hostname>" --stomp-port="61613" --stomp-user="<user_name>" --stomp-password="<password>"
 ```
 
@@ -232,7 +232,7 @@ Wenn Sie bereits eine Adobe Commerce-Instanz mit einer RabbitMQ (AMQP)-Konfigura
 
 Sie können die ActiveMQ-Konfigurationswerte auch mithilfe des `bin/magento setup:config:set`-Befehls festlegen (entfernen Sie die AMQP-Konfiguration, sofern sie in der `app/etc/env.php` vorhanden ist):
 
-```bash
+```shell
 bin/magento setup:config:set --stomp-host="activemq.example.com" --stomp-port="61613" --stomp-user="magento" --stomp-password="magento"
 ```
 
@@ -337,13 +337,13 @@ ActiveMQ Artemis bietet eine Web-basierte Verwaltungskonsole, auf die unter folg
 
 Testen der STOMP-Verbindung mit Telnet:
 
-```bash
+```shell
 telnet localhost 61613
 ```
 
 Es sollte eine Verbindung hergestellt sein. Testen mit einem STOMP-Befehl:
 
-```bash
+```shell
 # Test basic STOMP connection
 echo -e "CONNECT\nhost:localhost\n\n\x00" | telnet localhost 61613
 ```
@@ -352,5 +352,5 @@ Die erwartete Ausgabe sollte die hergestellte Verbindung und die STOMP-Protokoll
 
 ## Starten der Nachrichtenwarteschlangen-Verbraucher
 
-Nachdem Sie Adobe Commerce und ActiveMQ Artemis verbunden haben, müssen Sie die Nachrichtenwarteschlange für Verbraucher starten. Weitere [&#x200B; finden Sie unter &quot;](../../configuration/cli/start-message-queues.md) konfigurieren“.
+Nachdem Sie Adobe Commerce und ActiveMQ Artemis verbunden haben, müssen Sie die Nachrichtenwarteschlange für Verbraucher starten. Weitere [ finden Sie unter &quot;](../../configuration/cli/start-message-queues.md) konfigurieren“.
 

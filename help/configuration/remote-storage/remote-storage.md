@@ -3,9 +3,9 @@ title: Konfigurieren des Remote-Speichers
 description: Erfahren Sie, wie Sie das Remote-Speichermodul für die lokale Commerce-Anwendung konfigurieren.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Standardmäßig speichert die Adobe Commerce-Anwendung Mediendateien im selben D
 
 Sie können nicht gleichzeitig sowohl _- als auch_ aktivieren. Sie müssen den Datenbankspeicher deaktivieren, bevor Sie die Remote-Speicherung aktivieren.
 
-```bash
+```shell
 bin/magento config:set system/media_storage_configuration/media_database 0
 ```
 
@@ -30,7 +30,7 @@ Die Aktivierung von Remote-Speicher kann sich auf Ihre bestehende Entwicklungsum
 
 >[!INFO]
 >
->- Der Remote-Speicher ist nur für Commerce Version 2.4.2 und höher verfügbar. Siehe Versionshinweise zu [2.4.2](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- Der Remote-Speicher ist nur für Commerce Version 2.4.2 und höher verfügbar. Siehe Versionshinweise zu [2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- Das Remote-Speichermodul bietet _(begrenzte_ Unterstützung für Adobe Commerce in Cloud-Infrastrukturen. Adobe kann den Speicheradapterdienst eines Drittanbieters nicht vollständig beheben. Siehe [Konfigurieren von Remote-Speicher für Commerce auf Cloud-](cloud-support.md)) für Anleitungen zur Implementierung von Remote-Speicher für Cloud-Projekte.
 
@@ -67,13 +67,13 @@ Sie können während einer Adobe Commerce-Installation Remote-Speicher installie
 
 - Beispiel: Installieren von Commerce mit Remote-Speicher
 
-  ```bash
+  ```shell
   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
 - Beispiel: Aktivieren von Remote-Speicher auf vorhandenem Commerce
 
-  ```bash
+  ```shell
   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
   ```
 
@@ -85,11 +85,11 @@ Sie können während einer Adobe Commerce-Installation Remote-Speicher installie
 
 Nachdem Sie den Remotespeicher für einen bestimmten Adapter aktiviert haben, können Sie über die CLI vorhandene _media_-Dateien zum Remotespeicher migrieren.
 
-```bash
+```shell
 ./magento2ce/bin/magento remote-storage:sync
 ```
 
 >[!INFO]
 >
->Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=de) im _Benutzerhandbuch zu Commerce 2.4_.
+>Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) im _Benutzerhandbuch zu Commerce 2.4_.
 

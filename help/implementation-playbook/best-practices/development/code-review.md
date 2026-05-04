@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices zur Überprüfung von Code f
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1180'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Beachten Sie außerdem die folgenden Punkte bei der Implementierung von Code-Üb
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -116,7 +116,7 @@ Entwicklerinnen und Entwickler können die Automatisierung verwenden, um die ID-
 
 - ID-Kompilierung - Führen Sie die folgenden CLI-Befehle aus, um zu sehen, ob der Code ohne Probleme kompiliert werden kann.
 
-  ```bash
+  ```shell
   bin/magento module:disable -n -q --all || exit;
   bin/magento module:enable -n -q --all || exit;
   bin/magento cache:enable -n -q || exit;
@@ -133,26 +133,26 @@ Entwicklerinnen und Entwickler können die Automatisierung verwenden, um die ID-
 
 - Datenbankschema `whitelist.json` - Führen Sie den folgenden CLI-Befehl aus und überprüfen Sie, ob die `db_schema_whitelist.json` Datei hinzugefügt oder geändert wird.
 
-  ```bash
+  ```shell
   bin/magento setup:db-declaration:generate-whitelist --module-name[=MODULE-NAME]
   ```
 
 - Composer validate - Validieren Sie die `composer.json`-Datei, indem Sie den folgenden CLI-Befehl in dem Verzeichnis ausführen, das die `composer.json`-Datei enthält.
 
-  ```bash
+  ```shell
   composer validate
   ```
 
 - Coding Standard - Installieren und führen Sie das Coding Standard-Tool aus und führen Sie es für Ihr Modul aus. Die folgende Datei zeigt, wie Sie sie aktivieren, um sie überall auszuführen, indem Sie `mcs ./app/code/Vendor/Module/` eingeben.
 
-  ```bash
+  ```shell
   #!/usr/bin/env bash
   $HOME/web/magento/magento-coding-standard/vendor/bin/phpcs --standard=Magento2 "$@"
   ```
 
 - Schwebstoff
 
-  ```bash
+  ```shell
   ./vendor/bin/phpstan analyze app/code/Vendor/Module
   ```
 

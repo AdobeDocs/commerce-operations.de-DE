@@ -2,9 +2,9 @@
 title: Privacy JavaScript-Bibliothek
 description: Erfahren Sie, wie Sie mit benutzerdefinierten Tools auf von Adobe Commerce erfasste personenbezogene Kundendaten zugreifen und diese löschen können.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Diese Bibliothek bietet eine Reihe von Funktionen zum Erstellen von Datenschutza
 
 >[!NOTE]
 >
->Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=de) aktiviert ist, erfasst Commerce keine Verhaltensdaten, bis der Käufer einwilligt. Wenn [!UICONTROL **Cookie-Einschränkungsmodus**] deaktiviert ist, erfasst Commerce standardmäßig Verhaltensdaten.
+>Wenn [Cookie-Einschränkungsmodus](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) aktiviert ist, erfasst Commerce keine Verhaltensdaten, bis der Käufer einwilligt. Wenn [!UICONTROL **Cookie-Einschränkungsmodus**] deaktiviert ist, erfasst Commerce standardmäßig Verhaltensdaten.
 
 ## Installation
 
 Die Privacy JavaScript-Bibliothek ist unter dem folgenden CDN-Speicherort verfügbar: `commerce.adobe.net/magentoprivacy.js`
 
-Nachdem Sie die Datei haben, müssen Sie sie einem benutzerdefinierten Modul oder Design hinzufügen, das in Ihrer Adobe Commerce-Instanz installiert ist. Befolgen Sie die Anweisungen unter [Verwenden benutzerdefinierter JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom/), um diese Aufgabe durchzuführen.
+Nachdem Sie die Datei haben, müssen Sie sie einem benutzerdefinierten Modul oder Design hinzufügen, das in Ihrer Adobe Commerce-Instanz installiert ist. Befolgen Sie die Anweisungen unter [Verwenden benutzerdefinierter JavaScript](https://developer.adobe.com/commerce/frontend-core/javascript/custom), um diese Aufgabe durchzuführen.
 
 ### Initialisierung
 

@@ -5,9 +5,9 @@ feature: Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 984db32e-1a0d-4e0a-a83b-7fe909226ed3
-source-git-commit: e24b62305ef97c5fff13582b4bb68f622dffb6d3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Mit dem Patch ACSD-65913 wird das Problem behoben, dass [!DNL OpenSearch] eine `
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-[!DNL OpenSearch] löst beim Laden von Kategorien, in `illegal_argument_exception` alle Produkte denselben Preis hatten, einen *[aus] (Parameter darf nicht negativ sein*.
+[!DNL OpenSearch] löst beim Laden von Kategorien, in *[alle Produkte denselben Preis hatten, einen `illegal_argument_exception` aus] (Parameter darf nicht negativ sein*.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -65,7 +65,7 @@ Mit dem Patch ACSD-65913 wird das Problem behoben, dass [!DNL OpenSearch] eine `
 
 * Die `var/log/exception.log` enthält:
 
-  ```
+  ```text
   [2025-05-14T22:39:33.595272+00:00] report.CRITICAL: [!DNL OpenSearch]\Common\Exceptions\BadRequest400Exception: {"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"}],"type":"illegal_argument_exception","reason":"[from] parameter cannot be negative, found [-1]"},"status":400}
   ```
 
@@ -74,7 +74,7 @@ Mit dem Patch ACSD-65913 wird das Problem behoben, dass [!DNL OpenSearch] eine `
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

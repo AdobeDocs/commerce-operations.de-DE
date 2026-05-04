@@ -3,9 +3,9 @@ title: Aktuelle Suchmaschine wird nicht unterstützt
 description: Fehlerbehebung beim Adobe Commerce-Upgrade nach einem Fehler über eine nicht unterstützte Suchmaschine.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Die folgende Fehlermeldung weist darauf hin, dass die Adobe Commerce-Version, von der Sie ein Upgrade durchführen, für die Verwendung einer Katalogsuchmaschine konfiguriert ist, die in der Version, auf die Sie ein Upgrade durchführen, nicht unterstützt wird:
 
-```
+```text
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
@@ -25,7 +25,7 @@ Dieser Fehler bedeutet, dass eine der folgenden Bedingungen für die reduzierte 
 
 Verwenden Sie den folgenden Befehl, um die aktuelle Suchmaschine zu überprüfen:
 
-```bash
+```shell
 bin/magento config:show catalog/search/engine
 ```
 
@@ -35,11 +35,11 @@ Der Fehler tritt auf, wenn der zurückgegebene Wert `mysql`, `elasticsearch` ode
 >
 >Wenn Sie diesen Fehler erhalten haben, befindet sich Ihre Installation in einem inkonsistenten Zustand und Sie können nicht auf den Admin zugreifen. Es wird empfohlen, zur vorherigen Version zurückzukehren, während Sie diesen Fehler beheben. Führen Sie dazu einen der folgenden Befehle aus:
 >
->```bash
+>```shell
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->```bash
+>```shell
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

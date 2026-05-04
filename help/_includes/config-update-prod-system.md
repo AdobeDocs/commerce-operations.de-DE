@@ -1,5 +1,5 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -12,11 +12,11 @@ ht-degree: 0%
 1. Melden Sie sich beim Produktionssystem als Eigentümer des Dateisystems an.
 1. Wechseln Sie zum Anwendungsstamm und aktivieren Sie den Wartungsmodus.
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    ```
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -32,42 +32,42 @@ ht-degree: 0%
 
 1. Aktualisieren Sie die Konfiguration.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. `kill` Sie abschließend alle aktiven Verbraucherprozesse.
 
-   ```bash
+   ```shell
    kill <PID>
    ```
 
    Dabei ist `PID` die Prozess-ID, die abgebrochen werden soll, z. B.:
 
-   ```bash
+   ```shell
    kill 1234
    ```
 
 1. Code aus der Quellcodeverwaltung abrufen.
 
-   ```bash
+   ```shell
    git pull mconfig m2.2_deploy
    ```
 
 1. Aktualisieren Sie die Konfiguration.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. Reinigen Sie den Cache.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Wartungsmodus beenden
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```

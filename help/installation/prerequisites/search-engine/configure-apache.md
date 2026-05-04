@@ -3,9 +3,9 @@ title: Konfigurieren von Apache für Ihre Suchmaschine
 description: Führen Sie diese Schritte aus, um eine Suchmaschine mit dem Apache-Webserver für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '657'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [&#x200B; finden Sie unter „Migrieren von Elasticsearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [ finden Sie unter „Migrieren von Elasticsearch ](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
 
-In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ &#x200B;](#secure-communication-with-apache).
+In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ ](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
 
 1. Aktivieren Sie `mod_proxy` wie folgt:
 
-   ```bash
+   ```shell
    a2enmod proxy_http
    ```
 
@@ -54,25 +54,25 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
 
 1. Apache neu starten:
 
-   ```bash
+   ```shell
    service apache2 restart
    ```
 
 1. Überprüfen Sie, ob der Proxy funktioniert, indem Sie den folgenden Befehl eingeben:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Wenn Sie beispielsweise Elasticsearch verwenden und Ihr Proxy Port 8080 verwendet:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Meldungen ähnlich der folgenden werden angezeigt, um auf Erfolg hinzuweisen:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -86,7 +86,7 @@ In diesem Abschnitt wird beschrieben, wie Sie einen Proxy mit einem virtuellen H
 
 In diesem Abschnitt wird beschrieben, wie Sie die Kommunikation zwischen Apache und der Suchmaschine mithilfe der [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617)-Authentifizierung mit Apache sichern. Weitere Informationen zu Optionen finden Sie in einer der folgenden Ressourcen:
 
-* [Tutorial zur Authentifizierung und Autorisierung bei Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
+* [Tutorial zur Apache 2.4-Authentifizierung und -Autorisierung](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Siehe einen der folgenden Abschnitte:
 
@@ -103,7 +103,7 @@ Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle
 
 1. Geben Sie den folgenden Befehl ein, um festzustellen, ob `htpasswd` bereits installiert ist:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -118,11 +118,11 @@ Aus Sicherheitsgründen können Sie die Kennwortdatei an einer beliebigen Stelle
 
 Geben Sie die folgenden Befehle als Benutzer mit `root` Berechtigungen ein:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.<password file name> <username>
 ```
 
@@ -145,22 +145,22 @@ Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benu
 **Beispiel 1: cron**
 Für Cron müssen Sie die Authentifizierung nur für einen Benutzer einrichten. In diesem Beispiel verwenden wir den Webserver-Benutzer. Um eine Kennwortdatei für den Webserver-Benutzer zu erstellen, geben Sie die folgenden Befehle ein:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Beispiel 2: Elasticsearch**
 Sie müssen die Authentifizierung für zwei Benutzer einrichten: einen mit Zugriff auf nginx und einen mit Zugriff auf Elasticsearch. Um Kennwortdateien für diese Benutzer zu erstellen, geben Sie die folgenden Befehle ein:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
@@ -168,7 +168,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticse
 
 Um einen weiteren Benutzer zu Ihrer Kennwortdatei hinzuzufügen, geben Sie den folgenden Befehl als Benutzer mit `root` Berechtigungen ein:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/.htpasswd <username>
 ```
 

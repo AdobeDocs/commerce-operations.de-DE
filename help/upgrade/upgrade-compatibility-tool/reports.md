@@ -2,9 +2,9 @@
 title: '[!DNL Upgrade Compatibility Tool] Berichte'
 description: Führen Sie diese Schritte aus, um das  [!DNL Upgrade Compatibility Tool]  Ihrem Adobe Commerce-Projekt auszuführen.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,14 @@ Als Ergebnis der Analyse kann der [!DNL Upgrade Compatibility Tool] einen Berich
 
 Siehe folgendes Beispiel für eine Befehlszeilenschnittstelle eines Berichts:
 
-```
+```text
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
  * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
  * [ERROR][1328] Line 10: Implemented interface 'Magento\Framework\App\Action\HttpGetActionInterface' that is non API on version '2.4.4'
 ```
 
-Weitere Informationen zu den verschiedenen Fehlern[&#x200B; die dieser Bericht verursachen kann, finden Sie &#x200B;](../upgrade-compatibility-tool/error-messages.md) Thema „Fehlermeldungsreferenz“.
+Weitere Informationen zu den verschiedenen Fehlern[ die dieser Bericht verursachen kann, finden Sie ](../upgrade-compatibility-tool/error-messages.md) Thema „Fehlermeldungsreferenz“.
 
 Dieser Bericht enthält auch eine detaillierte Zusammenfassung, die Folgendes enthält:
 
@@ -43,7 +43,7 @@ Dieser Bericht enthält auch eine detaillierte Zusammenfassung, die Folgendes en
 
 Siehe folgendes Beispiel für eine Befehlszeilenschnittstelle:
 
-```
+```text
  ----------------------------- ----------------- 
   Current version               2.4.1            
   Target version                2.4.4            
@@ -68,7 +68,7 @@ Für jedes aufgetretene Problem enthält der Bericht detaillierte Informationen 
 
 So exportieren Sie diese `JSON` in einen anderen Ausgabeordner:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 ```
 
@@ -121,7 +121,7 @@ Wenn Sie für das `Modules with relative sizes and issues` andere Ergebnisse seh
 
 So exportieren Sie diesen HTML-Bericht in einen anderen Ausgabeordner:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 ```
 

@@ -3,9 +3,9 @@ title: Zugriffsberechtigungen für Dateisysteme
 description: Erfahren Sie, wie Sie den/die Verantwortlichen des Commerce-Anwendungsdateisystems für ein Entwicklungs- und Produktionssystem einrichten.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,19 @@ So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe de
 
 1. Wechseln Sie in den Produktionsmodus .
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Entfernen Sie Schreibberechtigungen für die folgenden Ordner.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. Machen Sie das Befehlszeilen-Tool ausführbar.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,7 +98,7 @@ So machen Sie Dateien und Verzeichnisse schreibbar, damit Sie Komponenten aktual
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie die folgenden Befehle ein:
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
@@ -139,7 +139,7 @@ Dateien in den folgenden Verzeichnissen müssen sowohl im Entwickler- als auch i
 - `pub/media`
 - `app/etc`
 
-Legen Sie das [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/)-Bit für Ordner fest, sodass Berechtigungen immer vom übergeordneten Ordner erben.
+Legen Sie das [`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits)-Bit für Ordner fest, sodass Berechtigungen immer vom übergeordneten Ordner erben.
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ So legen Sie `setgid` und Berechtigungen für den Entwicklermodus fest:
 1. Melden Sie sich bei Ihrem Commerce-Server als Dateisystembesitzer an oder wechseln Sie zu diesem.
 1. Geben Sie die folgenden Befehle in der angegebenen Reihenfolge ein:
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ So entfernen Sie Schreibberechtigungen für Dateien und Ordner aus der Gruppe de
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie als Verantwortlicher für das Dateisystem den folgenden Befehl ein, um in den Produktionsmodus zu wechseln:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Geben Sie den folgenden Befehl als Benutzer mit `root` ein:
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ So machen Sie Dateien und Verzeichnisse schreibbar, damit Sie Komponenten aktual
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie den folgenden Befehl ein:
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

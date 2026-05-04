@@ -3,9 +3,9 @@ title: Manuelles Konfigurieren von primären Datenbanken
 description: Siehe Anleitungen zum manuellen Konfigurieren der Split-Datenbanklösung.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1391'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe empfiehlt dringend, die aktuelle Datenbank und das aktuelle Dateisystem zu
 1. Melden Sie sich bei Ihrem Commerce-Server als oder wechseln Sie zum [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).
 1. Geben Sie die folgenden Befehle ein:
 
-   ```bash
+   ```shell
    magento setup:backup --code --media --db
    ```
 
@@ -70,7 +70,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkaufs- 
 1. Melden Sie sich bei Ihrem Datenbank-Server als beliebiger Benutzer an.
 1. Geben Sie den folgenden Befehl ein, um zu einer MySQL-Eingabeaufforderung zu gelangen:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -93,7 +93,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkaufs- 
 
    Angebotsdatenbank:
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
@@ -101,11 +101,11 @@ In diesem Abschnitt wird beschrieben, wie Sie Datenbankinstanzen für Verkaufs- 
    exit
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_quote -p
    ```
 
-   ```bash
+   ```shell
    mysql -u magento_sales -p
    ```
 
@@ -202,7 +202,7 @@ Ausführen des vorherigen Skripts:
 
 1. Melden Sie sich bei Ihrer MySQL-Datenbank als `root` oder Benutzer mit Administratorrechten an:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -235,25 +235,25 @@ Führen Sie die folgenden `mysqldump` Befehle einzeln über die Befehlszeile aus
 
 #### Script 1
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sales_bestsellers_aggregated_daily sales_bestsellers_aggregated_monthly sales_bestsellers_aggregated_yearly sales_creditmemo sales_creditmemo_comment sales_creditmemo_grid sales_creditmemo_item sales_invoice sales_invoice_comment sales_invoice_grid sales_invoice_item sales_invoiced_aggregated sales_invoiced_aggregated_order sales_order sales_order_address sales_order_aggregated_created sales_order_aggregated_updated sales_order_grid sales_order_item sales_order_payment sales_order_status sales_order_status_history sales_order_status_label sales_order_status_state sales_order_tax sales_order_tax_item sales_payment_transaction sales_refunded_aggregated sales_refunded_aggregated_order sales_sequence_meta sales_sequence_profile sales_shipment sales_shipment_comment sales_shipment_grid sales_shipment_item sales_shipment_track sales_shipping_aggregated sales_shipping_aggregated_order > /<path>/sales.sql
 ```
 
 #### Script 2
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_sales_creditmemo_grid_archive magento_sales_invoice_grid_archive magento_sales_order_grid_archive magento_sales_shipment_grid_archive > /<path>/salesarchive.sql
 ```
 
 #### Script 3
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_order magento_customercustomattributes_sales_flat_order_address > /<path>/customercustomattributes.sql
 ```
 
 #### Script 4
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> sequence_creditmemo_0 sequence_creditmemo_1 sequence_invoice_0 sequence_invoice_1 sequence_order_0 sequence_order_1 sequence_rma_item_0 sequence_rma_item_1 sequence_shipment_0 sequence_shipment_1 > /<path>/sequence.sql
 ```
 
@@ -263,11 +263,11 @@ Dieses Skript stellt Verkaufsdaten in Ihrer Angebotsdatenbank wieder her.
 
 #### NDB-Anforderung
 
-Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
+Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
 
 1. Konvertieren von Tabellen vom InnoDb- in den NDB-Typ in Dump-Dateien:
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -277,19 +277,19 @@ Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) &#x200B;](https://dev.mysql.com
 
 Führen Sie die folgenden Befehle aus:
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sales.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/sequence.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/salesarchive.sql
 ```
 
-```bash
+```shell
 mysql -u <root username> -p <your sales DB name> < /<path>/customercustomattributes.sql
 ```
 
@@ -330,7 +330,7 @@ Führen Sie das Skript wie folgt aus:
 
 1. Melden Sie sich bei Ihrer MySQL-Datenbank als Root- oder Admin-Benutzer an:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -351,17 +351,17 @@ In diesem Abschnitt wird beschrieben, wie Sie Angebotstabellen aus der Hauptdate
 
 Führen Sie den folgenden Befehl an einer Eingabeaufforderung aus:
 
-```bash
+```shell
 mysqldump -u <your database root username> -p <your main Commerce DB name> magento_customercustomattributes_sales_flat_quote magento_customercustomattributes_sales_flat_quote_address quote quote_address quote_address_item quote_item quote_item_option quote_payment quote_shipping_rate quote_id_mask > /<path>/quote.sql;
 ```
 
 ### NDB-Anforderung
 
-Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) &#x200B;](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
+Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) ](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html):
 
 1. Konvertieren von Tabellen vom InnoDb- in den NDB-Typ in Dump-Dateien:
 
-   ```bash
+   ```shell
    sed -ei 's/InnoDb/NDB/' <file name>.sql
    ```
 
@@ -369,7 +369,7 @@ Wenn Sie einen Cluster [Netzwerkdatenbank (NDB)) &#x200B;](https://dev.mysql.com
 
 ### Tabellen in der Angebotsdatenbank wiederherstellen
 
-```bash
+```shell
 mysql -u root -p magento_quote < /<path>/quote.sql
 ```
 
@@ -453,7 +453,7 @@ Führen Sie das Skript wie folgt aus:
 
 1. Melden Sie sich bei Ihrer MySQL-Datenbank als Root- oder Admin-Benutzer an:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -480,7 +480,7 @@ So aktualisieren Sie die Bereitstellungskonfiguration:
 1. Melden Sie sich bei Ihrem Commerce-Server als oder wechseln Sie zum [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).
 1. Sichern Sie Ihre Bereitstellungskonfiguration:
 
-   ```bash
+   ```shell
    cp <magento_root>/app/etc/env.php <magento_root>/app/etc/env.php.orig
    ```
 
@@ -559,10 +559,10 @@ So verwenden Sie diese Skripte:
 
    In diesem Thema wird der Name der Beispieldatenbank `magento`.
 
-1. Führen Sie jedes Skript wie `mysql>` über die `source <script name>` aus
+1. Führen Sie jedes Skript wie `source <script name>` über die `mysql>` aus
 1. Überprüfen Sie die Ausgabe.
 1. Kopieren Sie das Ergebnis jedes Skripts in ein anderes SQL-Skript und entfernen Sie die Pipe-Zeichen (`|`).
-1. Führen Sie jedes Skript wie `mysql>` über die `source <script name>` aus.
+1. Führen Sie jedes Skript wie `source <script name>` über die `mysql>` aus.
 
    Durch Ausführen dieses zweiten Skripts werden die Aktionen in der Hauptdatenbank von Commerce ausgeführt.
 

@@ -2,9 +2,9 @@
 title: Voraussetzungen abschließen
 description: Bereiten Sie Ihr Adobe Commerce-Projekt auf ein Upgrade vor, indem Sie die folgenden erforderlichen Schritte ausführen.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Stellen Sie sicher, dass Sie alle Systemanforderungen und Abhängigkeiten in Ihr
 
 >[!NOTE]
 >
->Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Für Adobe Commerce in Cloud Infrastructure Pro-Projekten müssen Sie ein [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)-Ticket erstellen, um Services in Staging- und Produktionsumgebungen zu installieren oder zu aktualisieren. Geben Sie die erforderlichen Service-Änderungen an und fügen Sie Ihre aktualisierten `.magento.app.yaml`- und `services.yaml`-Dateien sowie die PHP-Version in das Ticket ein. Es kann bis zu 48 Stunden dauern, bis das Cloud-Infrastruktur-Team Ihr Projekt aktualisiert. Siehe [Unterstützte Software und Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Überprüfen, ob eine unterstützte Suchmaschine installiert ist
 
@@ -77,20 +77,20 @@ Um MySQL von Version 8.0 ordnungsgemäß auf Version 8.4 zu aktualisieren, müss
 
 1. Wartungsmodus aktivieren:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Erstellen Sie eine Datenbanksicherung:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
 1. Aktualisieren Sie MySQL auf Version 8.4.
-1. Legen Sie `restrict_fk_on_non_standard_key` in `OFF` in der `[mysqld]` auf `my.cnf` fest.
+1. Legen Sie `restrict_fk_on_non_standard_key` in `[mysqld]` in der `my.cnf` auf `OFF` fest.
 
-   ```bash
+   ```shell
    [mysqld]
    restrict_fk_on_non_standard_key = OFF 
    ```
@@ -107,13 +107,13 @@ Um MySQL von Version 8.0 ordnungsgemäß auf Version 8.4 zu aktualisieren, müss
 1. Importieren Sie die gesicherten Daten in MySQL.
 1. Cache leeren:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Wartungsmodus deaktivieren:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -134,8 +134,8 @@ Elasticsearch erfordert Java Development Kit (JDK) 1.8 oder höher. Siehe [Insta
 OpenSearch ist eine Open-Source-Version von Elasticsearch 7.10.2, die auf die Lizenzänderung von Elasticsearch folgt. Mit den folgenden Versionen von Adobe Commerce wird Unterstützung für OpenSearch eingeführt:
 
 * 2.4.6 (OpenSearch verfügt über ein separates Modul und Einstellungen)
-* 2,4,5
-* 2,4,4
+* 2.4.5
+* 2.4.4
 * 2.4.3-p2
 * 2.3.7-p3
 
@@ -169,7 +169,7 @@ Die Unterstützung für Elasticsearch 8.x wurde mit Adobe Commerce 2.4.6 eingef�
 
 1. Aktualisieren Sie im Stammverzeichnis Ihres Adobe Commerce-Projekts Ihre Composer-Abhängigkeiten, um das `Magento_Elasticsearch7` zu entfernen und das `Magento_Elasticsearch8` zu installieren.
 
-   ```bash
+   ```shell
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
@@ -181,13 +181,13 @@ Die Unterstützung für Elasticsearch 8.x wurde mit Adobe Commerce 2.4.6 eingef�
 
    1. Zunächst benötigen Sie das Elasticsearch 8-Modul, ohne andere Abhängigkeiten zu aktualisieren:
 
-      ```bash
+      ```shell
       composer require magento/module-elasticsearch-8 --no-update
       ```
 
    1. Aktualisieren Sie dann das Elasticsearch 8-Modul und die `aws/aws-sdk-php`:
 
-      ```bash
+      ```shell
       composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
       ```
 
@@ -197,7 +197,7 @@ Die Unterstützung für Elasticsearch 8.x wurde mit Adobe Commerce 2.4.6 eingef�
 
 1. Aktualisieren Sie Ihre Projektkomponenten.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -205,13 +205,13 @@ Die Unterstützung für Elasticsearch 8.x wurde mit Adobe Commerce 2.4.6 eingef�
 
 1. Indizieren Sie den Katalogindex neu.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Löschen Sie alle Elemente aus den aktivierten Cache-Typen.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -223,13 +223,13 @@ Wenn Sie versehentlich die Version von Elasticsearch auf Ihrem Server aktualisie
 
 1. Aktualisieren Sie im Stammverzeichnis Ihres Adobe Commerce-Projekts Ihre Composer-Abhängigkeiten, um das `Magento_Elasticsearch8` und seine Composer-Abhängigkeiten zu entfernen und das `Magento_Elasticsearch7` zu installieren.
 
-   ```bash
+   ```shell
    composer remove magento/module-elasticsearch-8
    ```
 
 1. Aktualisieren Sie Ihre Projektkomponenten.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -237,13 +237,13 @@ Wenn Sie versehentlich die Version von Elasticsearch auf Ihrem Server aktualisie
 
 1. Indizieren Sie den Katalogindex neu.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Löschen Sie alle Elemente aus den aktivierten Cache-Typen.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -266,7 +266,7 @@ So legen Sie ulimit über die Befehlszeile fest:
 1. Wechseln Sie zum [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).
 1. Setzen Sie ulimit auf `65536`.
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -276,7 +276,7 @@ So legen Sie den Wert in Ihrer Bash-Shell fest:
 1. Öffnen Sie `/home/<username>/.bashrc` in einem Texteditor.
 1. Fügen Sie die folgende Zeile hinzu:
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -284,7 +284,7 @@ So legen Sie den Wert in Ihrer Bash-Shell fest:
 
 >[!IMPORTANT]
 >
->Es wird empfohlen, in der `pcre.recursion_limit`-Datei keinen Wert für die `php.ini`-Eigenschaft festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
+>Es wird empfohlen, in der `php.ini`-Datei keinen Wert für die `pcre.recursion_limit`-Eigenschaft festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
 
 ## Überprüfen, ob Cron-Aufträge ausgeführt werden
 
@@ -296,7 +296,7 @@ Um sicherzustellen, dass Ihr Cron-Auftrag ordnungsgemäß eingerichtet ist, übe
 >
 >Die crontab ist die Konfigurationsdatei, die für die Ausführung von Cron-Aufträgen zuständig ist.
 
-```bash
+```shell
 crontab -l
 ```
 
@@ -316,7 +316,7 @@ Um den Fehler anzuzeigen, klicken Sie **Systemmeldungen** oben im Fenster wie fo
 
 ![Systemnachrichten-Benachrichtigung](../../assets/upgrade-guide/system-messages.png)
 
-Weitere Informationen finden [&#x200B; unter „Konfigurieren &#x200B;](../../configuration/cli/configure-cron-jobs.md) Ausführen von cron“.
+Weitere Informationen finden [ unter „Konfigurieren ](../../configuration/cli/configure-cron-jobs.md) Ausführen von cron“.
 
 ## SET DATA_CONVERTER_BATCH_SIZE
 
@@ -341,7 +341,7 @@ So legen Sie die Umgebungsvariable fest:
 1. Wechseln Sie zum [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).
 1. Legen Sie die Variable fest:
 
-   ```bash
+   ```shell
    export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
@@ -351,7 +351,7 @@ So legen Sie die Umgebungsvariable fest:
 
 1. Nach Abschluss des Upgrades können Sie die Variable deaktivieren:
 
-   ```bash
+   ```shell
    unset DATA_CONVERTER_BATCH_SIZE
    ```
 
@@ -359,13 +359,13 @@ So legen Sie die Umgebungsvariable fest:
 
 Aus Sicherheitsgründen erfordert Adobe Commerce bestimmte Berechtigungen für das Dateisystem. Berechtigungen unterscheiden sich von _[Inhaberschaft](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. Die Eigentümerschaft bestimmt, wer Aktionen im Dateisystem durchführen kann. Berechtigungen bestimmen, was der Benutzer tun kann.
 
-Verzeichnisse im Dateisystem müssen von der Gruppe [Dateisystemeigentümer“ beschreibbar &#x200B;](../../installation/prerequisites/file-system/overview.md).
+Verzeichnisse im Dateisystem müssen von der Gruppe [Dateisystemeigentümer“ beschreibbar ](../../installation/prerequisites/file-system/overview.md).
 
 Um sicherzustellen, dass Ihre Dateisystemberechtigungen ordnungsgemäß festgelegt sind, melden Sie sich entweder beim Anwendungsserver an oder verwenden Sie die Dateimanager-Anwendung Ihres Hosting-Anbieters.
 
 Geben Sie beispielsweise den folgenden Befehl ein, wenn die Anwendung in `/var/www/html/magento2` installiert ist:
 
-```bash
+```shell
 ls -l /var/www/html/magento2
 ```
 
@@ -414,7 +414,7 @@ Eine Erläuterung der Beispielausgabe finden Sie im Folgenden:
 
 Um genauere Informationen zu erhalten, können Sie den folgenden Befehl eingeben:
 
-```bash
+```shell
 ls -la /var/www/html/magento2/pub
 ```
 
@@ -424,7 +424,7 @@ Weitere Informationen finden Sie unter [Dateisystemberechtigungen und -eigentüm
 
 ## Festlegen des `pub/` Ordnerstamms
 
-Weitere [&#x200B; finden Sie unter „Ändern des &#x200B;](../../installation/tutorials/docroot.md) zur Verbesserung der Sicherheit“.
+Weitere [ finden Sie unter „Ändern des ](../../installation/tutorials/docroot.md) zur Verbesserung der Sicherheit“.
 
 ## Installieren des Composer-Aktualisierungs-Plug-ins
 
@@ -436,13 +436,13 @@ So installieren Sie das Plug-in:
 
 1. Fügen Sie das Paket zu Ihrer `composer.json` hinzu.
 
-   ```bash
+   ```shell
    composer require magento/composer-root-update-plugin ~2.0 --no-update
    ```
 
 1. Aktualisieren Sie die Abhängigkeiten:
 
-   ```bash
+   ```shell
    composer update
    ```
 

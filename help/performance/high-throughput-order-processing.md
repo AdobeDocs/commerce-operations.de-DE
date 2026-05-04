@@ -3,9 +3,9 @@ title: Best Practices für die Checkout-Leistung
 description: Erfahren Sie mehr über die Best Practices für die Checkout-Leistung in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best Practices für die Checkout-Leistung
 
-Der [Checkout](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process)-Prozess in Adobe Commerce ist ein wichtiger Aspekt des Storefront-Erlebnisses. Sie stützt sich auf die integrierten Funktionen [Warenkorb](https://experienceleague.adobe.com/de/docs/commerce-admin/start/storefront/storefront#shopping-cart) und [Checkout](https://experienceleague.adobe.com/de/docs/commerce-admin/start/storefront/storefront#checkout-page).
+Der [Checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process)-Prozess in Adobe Commerce ist ein wichtiger Aspekt des Storefront-Erlebnisses. Sie stützt sich auf die integrierten Funktionen [Warenkorb](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) und [Checkout](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page).
 
 Leistung ist der Schlüssel für ein gutes Benutzererlebnis. Sie können die Checkout-Leistung optimieren, indem Sie die folgenden Optionen für die **Auftragsverarbeitung mit hohem Durchsatz** konfigurieren:
 
@@ -26,7 +26,7 @@ Die Konfigurationsoptionen „AsyncOrder“, „Deferred Total Calculation“ un
 
 >[!NOTE]
 >
->Verwenden Sie keinen benutzerdefinierten PHP-Code, um die integrierten Warenkorb- und Checkout-Funktionen anzupassen. Zusätzlich zu möglichen Leistungsproblemen kann die Verwendung von benutzerdefiniertem PHP-Code zu komplexen Upgrades und Wartungsproblemen führen. Diese Probleme erhöhen Ihre Gesamtbetriebskosten. Wenn eine PHP-basierte Warenkorb- und Checkout-Anpassung unvermeidbar ist, verwenden Sie nur [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/)-genehmigte Erweiterungen. Alle Marketplace-Erweiterungen unterliegen einer [umfassenden Überprüfung](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) um sicherzustellen, dass sie den Kodierungsstandards und Best Practices von Adobe Commerce entsprechen.
+>Verwenden Sie keinen benutzerdefinierten PHP-Code, um die integrierten Warenkorb- und Checkout-Funktionen anzupassen. Zusätzlich zu möglichen Leistungsproblemen kann die Verwendung von benutzerdefiniertem PHP-Code zu komplexen Upgrades und Wartungsproblemen führen. Diese Probleme erhöhen Ihre Gesamtbetriebskosten. Wenn eine PHP-basierte Warenkorb- und Checkout-Anpassung unvermeidbar ist, verwenden Sie nur [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/)-genehmigte Erweiterungen. Alle Marketplace-Erweiterungen unterliegen einer [umfassenden Überprüfung](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program) um sicherzustellen, dass sie den Kodierungsstandards und Best Practices von Adobe Commerce entsprechen.
 
 ## Asynchrone Auftragserteilung
 
@@ -43,7 +43,7 @@ Verwenden Sie die Befehlszeilenschnittstelle, um diese Funktionen zu aktivieren,
 
 Sie können AsyncOrder über die Befehlszeilenschnittstelle aktivieren:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 1
 ```
 
@@ -66,7 +66,7 @@ Siehe [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/mod
 
 Sie können AsyncOrder über die Befehlszeilenschnittstelle deaktivieren:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 0
 ```
 
@@ -132,7 +132,7 @@ Die Berechnung verzögerter Gesamtwerte ist **deaktiviert**. Verwenden Sie die B
 
 Sie können DeferredTotalCalculation über die Befehlszeilenschnittstelle aktivieren:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
@@ -149,7 +149,7 @@ Der Befehl `set` schreibt Folgendes in die `app/etc/env.php`:
 
 Sie können DeferredTotalCalculation mithilfe der Befehlszeilenschnittstelle deaktivieren:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
@@ -174,13 +174,13 @@ Die globale Einstellung _Inventar beim Laden des Warenkorbs aktivieren_ bestimmt
 
 Wenn diese Option deaktiviert ist, wird beim Hinzufügen eines Produkts zum Warenkorb keine Inventarprüfung durchgeführt. Wenn diese Bestandsprüfung übersprungen wird, können einige nicht vorrätige Szenarien andere Fehlertypen auslösen. Eine Bestandskontrolle _immer_ erfolgt beim Schritt der Bestellplatzierung, auch wenn diese deaktiviert ist.
 
-**Inventarprüfung beim Laden des Warenkorbs aktivieren** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** im Abschnitt Admin-Benutzeroberfläche `No`Stores **>** Konfiguration **>** Katalog **>** Inventar **>** Stock-Optionen **auf**. Siehe [Konfigurieren globaler &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/configuration/global-options) und [Kataloginventar](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/guide-overview) im _Benutzerhandbuch_.
+**Inventarprüfung beim Laden des Warenkorbs aktivieren** ist standardmäßig aktiviert (auf Ja gesetzt). Um die Bestandsprüfung beim Laden des Warenkorbs zu deaktivieren, legen Sie **[!UICONTROL Enable Inventory Check On Cart Load]** im Abschnitt Admin-Benutzeroberfläche **Stores** > **Konfiguration** > **Katalog** > **Inventar** > **Stock-Optionen** auf `No`. Siehe [Konfigurieren globaler ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) und [Kataloginventar](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) im _Benutzerhandbuch_.
 
 ## Lastausgleich
 
 Sie können dazu beitragen, die Last auf verschiedenen Knoten auszugleichen, indem Sie sekundäre Verbindungen für die MySQL-Datenbank und die Redis-Instanz aktivieren.
 
-Adobe Commerce kann mehrere Datenbanken oder Redis-Instanzen asynchron lesen. Wenn Sie Commerce in einer Cloud-Infrastruktur verwenden, können Sie die sekundären Verbindungen konfigurieren, indem Sie die Werte [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) und [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in der `.magento.env.yaml`-Datei bearbeiten. Da nur ein Knoten Lese-/Schreibdatenverkehr verarbeiten muss, führt das Festlegen der Variablen auf `true` zu einer sekundären Verbindung für schreibgeschützten Datenverkehr. Legen Sie die Werte auf `false` fest, um ein vorhandenes schreibgeschütztes Verbindungs-Array aus der `env.php` zu entfernen.
+Adobe Commerce kann mehrere Datenbanken oder Redis-Instanzen asynchron lesen. Wenn Sie Commerce in einer Cloud-Infrastruktur verwenden, können Sie die sekundären Verbindungen konfigurieren, indem Sie die Werte [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) und [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in der `.magento.env.yaml`-Datei bearbeiten. Da nur ein Knoten Lese-/Schreibdatenverkehr verarbeiten muss, führt das Festlegen der Variablen auf `true` zu einer sekundären Verbindung für schreibgeschützten Datenverkehr. Legen Sie die Werte auf `false` fest, um ein vorhandenes schreibgeschütztes Verbindungs-Array aus der `env.php` zu entfernen.
 
 Beispiel für die `.magento.env.yaml`:
 

@@ -3,9 +3,9 @@ title: Ändern des Stammverzeichnisses zur Verbesserung der Sicherheit
 description: Verhindern Sie nicht autorisierten browserbasierten Zugriff auf das lokale Dateisystem von Adobe Commerce.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -60,16 +60,16 @@ Um dieses Tutorial abzuschließen, benötigen Sie Zugriff auf eine funktionieren
 
 >[!NOTE]
 >
->Weitere Informationen finden [&#x200B; unter &#x200B;](../prerequisites/overview.md) und [Installationshandbuch](../overview.md).
+>Weitere Informationen finden [ unter ](../prerequisites/overview.md) und [Installationshandbuch](../overview.md).
 
-## &#x200B;1. Serverkonfiguration bearbeiten
+## &#x200B;1. Server-Konfiguration bearbeiten
 
 Name und Speicherort der virtuellen Host-Datei hängen davon ab, welche Apache-Version Sie ausführen. Dieses Beispiel zeigt den Namen und den Speicherort der virtuellen Host-Datei in Apache v2.4.
 
 1. Melden Sie sich beim Anwendungs-Server an.
 1. Bearbeiten der virtuellen Host-Datei:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,7 +92,7 @@ Name und Speicherort der virtuellen Host-Datei hängen davon ab, welche Apache-V
 
 1. Apache neu starten:
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
@@ -106,7 +106,7 @@ Wenn Sie bei der Installation der Anwendung einen Verzeichnisnamen an den Hostna
 
 1. Melden Sie sich bei der Datenbank an:
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -122,7 +122,7 @@ Wenn Sie bei der Installation der Anwendung einen Verzeichnisnamen an den Hostna
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## &#x200B;3. Aktualisieren Sie die Datei env.php
+## &#x200B;3. Aktualisieren der Datei env.php
 
 Hängen Sie den folgenden Knoten an die `env.php` an.
 
@@ -143,28 +143,28 @@ Der Wechsel zwischen den Modi ist ein wichtiger Schritt, um zu überprüfen, ob 
 1. Navigieren Sie zu Ihrem Installationsverzeichnis.
 1. Wechseln Sie in den `production`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Aktualisieren Sie Ihren Browser und stellen Sie sicher, dass die Storefront ordnungsgemäß angezeigt wird.
 1. Wechseln Sie in den `developer`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Aktualisieren Sie Ihren Browser und stellen Sie sicher, dass die Storefront ordnungsgemäß angezeigt wird.
 
-## &#x200B;5. Überprüfen Sie die Storefront
+## &#x200B;5. Überprüfen der Storefront
 
 Gehen Sie zur Storefront in einem Webbrowser, um zu überprüfen, ob alles funktioniert.
 

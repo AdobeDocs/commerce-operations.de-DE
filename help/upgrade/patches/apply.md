@@ -2,9 +2,9 @@
 title: Patches anwenden
 description: Erfahren Sie mehr über die Methoden zum Anwenden von Patches auf ein Adobe Commerce-Projekt.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Befehlszeile](../patches/apply.md#command-line)
 - [Komponist](../patches/apply.md#composer)
 
@@ -31,7 +31,7 @@ So wenden Sie einen benutzerdefinierten Patch mit dem Composer an:
 1. Öffnen Sie die Befehlszeilenanwendung und navigieren Sie zu Ihrem Projektverzeichnis.
 1. Fügen Sie das `cweagans/composer-patches`-Plug-in zur `composer.json` hinzu.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
@@ -57,13 +57,13 @@ So wenden Sie einen benutzerdefinierten Patch mit dem Composer an:
 
 1. Pflaster aufkleben. Verwenden Sie die Option `-v` nur, wenn Sie Debugging-Informationen anzeigen möchten.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. Aktualisieren Sie die `composer.lock`. Die Sperrdatei verfolgt, welche Patches auf jedes Composer-Paket in einem -Objekt angewendet wurden.
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -75,7 +75,7 @@ So wenden Sie Patches über die Befehlszeile an:
 1. Melden Sie sich beim Server als [Admin-Benutzer](../../configuration/cli/config-cli.md#prerequisites) an und stellen Sie sicher, dass sich die Datei im richtigen Verzeichnis befindet.
 1. Führen Sie in der Befehlszeilenschnittstelle die folgenden Befehle gemäß der Patch-Erweiterung aus:
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 

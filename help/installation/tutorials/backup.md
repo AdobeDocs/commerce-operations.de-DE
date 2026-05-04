@@ -2,9 +2,9 @@
 title: Sichern und Rollback von Dateisystem, Medien und Datenbank
 description: Führen Sie diese Schritte aus, um Ihre Adobe Commerce-Anwendung zu sichern und wiederherzustellen.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ Nach dem Sichern können Sie später [Rollback](#rollback).
 
 >[!TIP]
 >
->Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
+>Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
 
 ## Aktivieren von Backups
 
 Die Sicherungsfunktion ist standardmäßig deaktiviert. Geben Sie zum Aktivieren den folgenden CLI-Befehl ein:
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
->**Hinweis zu veralteten Versionen:**
->&#x200B;>Die Backup-Funktion ist seit 2.1.16, 2.2.7 und 2.3.0 veraltet. Wir empfehlen, zusätzliche Backup-Technologien und binäre Backup-Tools (wie Percona XtraBackup) zu untersuchen.
+>**Hinweis:**
+>Die Backup-Funktion ist seit 2.1.16, 2.2.7 und 2.3.0 veraltet. Wir empfehlen, zusätzliche Backup-Technologien und binäre Backup-Tools (wie Percona XtraBackup) zu untersuchen.
 
 ## Festlegen des Limits für geöffnete Dateien
 
@@ -54,7 +54,7 @@ Wechseln Sie, bevor Sie fortfahren, zum [Dateisystembesitzer](../prerequisites/f
 
 Befehl:
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -70,7 +70,7 @@ Um optional den Wert in der Bash-Shell des Benutzers festzulegen:
 1. Öffnen Sie `/home/<username>/.bashrc` in einem Texteditor.
 1. Fügen Sie die folgende Zeile hinzu:
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -78,13 +78,13 @@ Um optional den Wert in der Bash-Shell des Benutzers festzulegen:
 
 >[!WARNING]
 >
->Es wird empfohlen, in der [`pcre.recursion_limit`-Datei keinen Wert für &#x200B;](https://www.php.net/manual/en/pcre.configuration.php)`php.ini` festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
+>Es wird empfohlen, in der `php.ini`-Datei keinen Wert für [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) festzulegen, da dies zu unvollständigen Rollbacks ohne Fehlermeldung führen kann.
 
 ## Sichern
 
 Befehlsverwendung:
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -103,13 +103,13 @@ Der Befehl führt die folgenden Aufgaben aus:
 
 Um beispielsweise das Dateisystem und die Datenbank zu sichern,
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 Meldungen ähnlich der folgenden werden angezeigt:
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -128,7 +128,7 @@ In diesem Abschnitt wird beschrieben, wie Sie ein Backup wiederherstellen, das S
 
 Um den Namen Ihrer Backups zu finden, geben Sie Folgendes ein:
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -136,19 +136,19 @@ Die erste Zeichenfolge im Namen der Sicherungsdatei ist der Zeitstempel.
 
 Um zu einer vorherigen Sicherung zurückzukehren, geben Sie Folgendes ein:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 Um beispielsweise ein Medienbackup mit dem Namen `1440611839_filesystem_media.tgz` wiederherzustellen, geben Sie Folgendes ein
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 Meldungen ähnlich der folgenden werden angezeigt:
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

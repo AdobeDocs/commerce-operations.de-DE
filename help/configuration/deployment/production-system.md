@@ -2,9 +2,9 @@
 title: Einrichtung des Produktionssystems
 description: Erfahren Sie, wie Sie ein Produktionssystem für das Commerce-Programm einrichten.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Sie können ein Produktionssystem haben. Folgendes muss alle zutreffen:
    - `pub/media/wysiwyg` (und Unterverzeichnisse)
    - `pub/static` (und Unterverzeichnisse)
 
-- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus“ &#x200B;](../bootstrap/application-modes.md#production-mode)
+- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus“ ](../bootstrap/application-modes.md#production-mode)
 - Für sie sind der Besitz und die Berechtigungen des Dateisystems festgelegt, wie unter [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md) erläutert.
 
 ## Einrichten einer Produktionsmaschine
@@ -34,13 +34,13 @@ So richten Sie eine Produktionsmaschine ein:
 
    Erstellen Sie das Verzeichnis :
 
-   ```bash
+   ```shell
    mkdir -p ~/.ssh/.composer
    ```
 
    Erstellen Sie `auth.json` in diesem Verzeichnis.
 
-   `auth.json` müssen Ihre [Authentifizierungsschlüssel“ &#x200B;](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` müssen Ihre [Authentifizierungsschlüssel“ ](../../installation/prerequisites/authentication-keys.md).
 
    Es folgt ein Beispiel:
 
@@ -68,25 +68,25 @@ In diesem Abschnitt wird beschrieben, wie Sie mithilfe des `magento config:sensi
 
 So legen Sie vertrauliche Werte fest:
 
-1. Suchen Sie einen Wert, der mithilfe der [Referenz für vertrauliche Werte“ festgelegt &#x200B;](../reference/config-reference-sens.md) soll.
+1. Suchen Sie einen Wert, der mithilfe der [Referenz für vertrauliche Werte“ festgelegt ](../reference/config-reference-sens.md) soll.
 1. Notieren Sie den Konfigurationspfad für die Einstellung .
 1. Melden Sie sich beim Produktionssystem als Eigentümer an oder wechseln Sie zum Dateisystembesitzer.
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie den folgenden Befehl ein:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set {configuration path} {value}
    ```
 
    Um beispielsweise den Wert des YouTube-API-Schlüssels auf `1234` festzulegen, geben Sie Folgendes ein
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set catalog/product_video/youtube_api_key 1234
    ```
 
    Sie können einen oder mehrere Werte auch interaktiv wie folgt festlegen:
 
-   ```bash
+   ```shell
    bin/magento config:sensitive:set -i
    ```
 

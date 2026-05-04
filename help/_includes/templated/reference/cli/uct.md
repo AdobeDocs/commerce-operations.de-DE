@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0e125de563b4c50ae9e6a657873a3b02aed810fe
+source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Keine interaktiven Fragen stellen
 
 ## `_complete`
 
-```bash
+```shell
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
@@ -125,13 +125,13 @@ Veraltet
 
 ## `completion`
 
-```bash
+```shell
 bin/uct completion [--debug] [--] [<shell>]
 ```
 
 Dump des Shell-Fertigstellungsskripts
 
-```
+```text
 The completion command dumps the shell completion script required
 to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
@@ -180,13 +180,13 @@ Verfolgen Sie den Abschluss des Debug-Protokolls
 
 ## `help`
 
-```bash
+```shell
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 Anzeigen der Hilfe für einen Befehl
 
-```
+```text
 The help command displays help for a given command:
 
   ./uct/bin/uct help list
@@ -227,13 +227,13 @@ So geben Sie die Raw-Befehlshilfe aus
 
 ## `list`
 
-```bash
+```shell
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 Befehle auflisten
 
-```
+```text
 The list command lists all commands:
 
   ./uct/bin/uct list
@@ -285,7 +285,7 @@ So überspringen Sie die Beschreibung der Befehlsargumente
 
 ## `refactor`
 
-```bash
+```shell
 bin/uct refactor <path>
 ```
 
@@ -306,7 +306,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 ## `core:code:changes`
 
-```bash
+```shell
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
 
@@ -338,11 +338,11 @@ Pfad der Datei, in die die Ausgabe exportiert wird (JSON-Format)
 
 ## `dbschema:diff`
 
-```bash
+```shell
 bin/uct dbschema:diff <current-version> <target-version>
 ```
 
-Auflisten der Adobe Commerce DB-Schemaunterschiede zwischen zwei ausgewählten Versionen zulassen. Verfügbare Versionen: 2.3.0 | 2,3,1 | 2,3,2 | 2.3.2-p2 | 2,3,3 | 2.3.3-P1 | 2,3,4 | 2.3.4-p1 | 2.3.4-p2 | 2,3,5 | 2.3.5-p1 | 2.3.5-p2 | 2,3,6 | 2.3.6-p1 | 2,3,7 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2,4,0 | 2.4.0-P1 | 2,4,1 | 2.4.1-p1 | 2,4,2 | 2.4.2-p1 | 2.4.2-p2 | 2,4,3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2,4,4 | 2.4.4-p1 | 2,4,5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2,4,6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-Beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-Beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-Beta3 | 2,4,7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-P10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-P11 | 2.4.5-P10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-Beta1 | 2.4.4-P12 | 2.4.5-P11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-beta2 | 2.4.4-P13 | 2.4.5-P12 | 2.4.6-P10 | 2.4.7-p5 | 2,4,8 | 2.4.9-Alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-P12 | 2.4.5-P14 | 2.4.4-p15 | 2.4.9-Alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-P11 | 2.4.5-P13 | 2.4.4-P14 | 2.4.9-Alpha3 | 2.4.8-p3 | 2.4.7-p8 | 2.4.6-P13 | 2.4.5-P15 | 2.4.4-P16 | 2.4.9-Beta1 | 2.4.8-p4 | 2.4.7-P9 | 2.4.6-P14 | 2.4.5-P16 | 2.4.4-P17
+Auflisten der Adobe Commerce DB-Schemaunterschiede zwischen zwei ausgewählten Versionen zulassen. Verfügbare Versionen: 2.3.0 | 2.3.1 | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2.3.5-p1 | 2.3.5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7-p1 | 2.3.7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2.4.5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2.4.5-p2 | 2.4.5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2.4.5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.5-p7 | 2.4.4-p8 | 2.4.4-p9 | 2.4.5-p8 | 2.4.6-p6 | 2.4.7-p1 | 2.4.4-p10 | 2.4.5-p9 | 2.4.6-p7 | 2.4.7-p2 | 2.4.4-p11 | 2.4.5-p10 | 2.4.6-p8 | 2.4.7-p3 | 2.4.8-beta1 | 2.4.4-p12 | 2.4.5-p11 | 2.4.6-p9 | 2.4.7-p4 | 2.4.8-beta2 | 2.4.4-p13 | 2.4.5-p12 | 2.4.6-p10 | 2.4.7-p5 | 2.4.8 | 2.4.9-alpha2 | 2.4.8-p2 | 2.4.7-p7 | 2.4.6-p12 | 2.4.5-p1 2.4.4-p15 | 2.4.9-alpha1 | 2.4.8-p1 | 2.4.7-p6 | 2.4.6-p11 | 2.4.5-p13 | 2.4.4-p14 | 2.4.9-alpha3 | 2.4.8-p3 | 2.4.7-p8 | 2.4.6-p13 | 2.4.5-p15 | 2.4.4-p16 | 2.4.9-beta1 | 2.4.8-p4 | 2.4.7-p9 | 2.4.6-p14 | 2.4.5-p16 | 2.4.4-p17
 
 ### Argumente
 
@@ -366,7 +366,7 @@ Globale Optionen finden Sie unter [Globale Optionen](#global-options).
 
 ## `graphql:compare`
 
-```bash
+```shell
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
 
@@ -400,7 +400,7 @@ Pfad der Datei, in die die Ausgabe exportiert wird (JSON-Format)
 
 ## `upgrade:check`
 
-```bash
+```shell
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
 
@@ -426,7 +426,7 @@ Aktuelle Adobe Commerce-Version, Version der Adobe Commerce-Installation wird ve
 
 #### `--coming-version`, `-c`
 
-Adobe Commerce-Zielversion. Die neueste veröffentlichte stabile Version von Adobe Commerce wird verwendet, wenn sie weggelassen wird. Verfügbare Adobe Commerce-Versionen: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-P1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-P2 \| 2.3.5 \| 2.3.5-P1 \| 2.3.5-P2 \| 2.3.6 \| 2.3.6-P1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-P2 \| 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-P1 \| 2.4.1 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-P1 \| 2.4.3-P2 \| 2.4.3-P3 \| 2.4.4 \| 2.4.4-P1 \| 2.4.4-P2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-P7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-P10 \| 2.4.4-P11 \| 2.4.4-P12 \| 2.4.4-P13 \| 2.4.4-P14 \| 2.4.4-P15 \| 2.4.4-P16 \| 2.4.4-P17 \| 2.4.5 \| 2.4.5-P1 \| 2.4.5-P2 \| 2.4.5-P3 \| 2.4.5-P4 \| 2.4.5-p5 \| 2.4.5-P6 \| 2.4.5-P7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-P10 \| 2.4.5-P11 \| 2.4.5-P12 \| 2.4.5-P13 \| 2.4.5-P14 \| 2.4.5-P15 \| 2.4.5-P16 \| 2.4.6 \| 2.4.6-P1 \| 2.4.6-P2 \| 2.4.6-p3 \| 2.4.6-P4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-P7 \| 2.4.6-p8 \| 2.4.6-p9 \| 2.4.6-P10 \| 2.4.6-P11 \| 2.4.6-P12 \| 2.4.6-P13 \| 2.4.6-P14 \| 2.4.7-Beta1 \| 2.4.7-Beta2 \| 2.4.7-Beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-P2 \| 2.4.7-p3 \| 2.4.7-p4 \| 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-P7 \| 2.4.7-p8 \| 2.4.7-p9 \| 2.4.8-Beta1 \| 2.4.8-Beta2 \| 2.4.8 \| 2.4.8-P1 \| 2.4.8-P2 \| 2.4.8-p3 \| 2.4.8-P4 \| 2.4.9-Alpha1 \| 2.4.9-Alpha2 \| 2.4.9-Alpha3 \| 2.4.9-Beta1
+Adobe Commerce-Zielversion. Die neueste veröffentlichte stabile Version von Adobe Commerce wird verwendet, wenn sie weggelassen wird. Verfügbare Adobe Commerce-Versionen: 2.3.0 \| 2.3.1 \| 2.3.2 \| 2.3.2-p2 \| 2.3.3 \| 2.3.3-p1 \| 2.3.4 \| 2.3.4-p1 \| 2.3.4-p2 \| 2.3.5 \| 2.3.5-p1 \| 2.3.5-p2 \| 2.3.6 \| 2.3.6-p1 \| 2.3.7 \| 2.3.7-p1 \| 2.3.7-p2 2.3.7-p3 \| 2.3.7-p4 \| 2.4.0 \| 2.4.0-p1 \| 2.4.1 \| 2.4.1-p1 \| 2.4.2 \| 2.4.2-p1 \| 2.4.2-p2 \| 2.4.3 \| 2.4.3-p1 \| 2.4.3-p2 \| 2.4.3-p3 \| 2.4.4 \| 2.4.4-p1 \| 2.4.4-p2 \| 2.4.4-p3 \| 2.4.4-p4 \| 2.4.4-p5 \| 2.4.4-p6 \| 2.4.4-p7 \| 2.4.4-p8 \| 2.4.4-p9 \| 2.4.4-p10 \| 2.4.4-p11 \| 2.4.4-p12 \| 2.4.4-p13 \| 2.4.4-p14 \| 2.4.4-p15| \| 2.4.4-p16 \| 2.4.4-p17 \| 2.4.5 \| 2.4.5-p1 \| 2.4.5-p2 \| 2.4.5-p3 \| 2.4.5-p4 \| 2.4.5-p5 \| 2.4.5-p6 \| 2.4.5-p7 \| 2.4.5-p8 \| 2.4.5-p9 \| 2.4.5-p10 \| 2.4.5-p11| \| 2.4.5-p12 \| 2.4.5-p13 \| 2.4.5-p14 \| 2.4.5-p15 \| 2.4.5-p16 \| 2.4.6 \| 2.4.6-p1 \| 2.4.6-p2 \| 2.4.6-p3 \| 2.4.6-p4 \| 2.4.6-p5 \| 2.4.6-p6 \| 2.4.6-p7 \| 2.4.6-p8 2.4.6-p9 \| 2.4.6-p10 \| 2.4.6-p11 \| 2.4.6-p12 \| 2.4.6-p13 \| 2.4.6-p14 \| 2.4.7-beta1 \| 2.4.7-beta2 \| 2.4.7-beta3 \| 2.4.7 \| 2.4.7-p1 \| 2.4.7-p2 \| 2.4.7-p3 \| 2.4.7-p4 2.4.7-p5 \| 2.4.7-p6 \| 2.4.7-p7 \| 2.4.7-p8 \| 2.4.7-p9 \| 2.4.8-beta1 \| 2.4.8-beta2 \| 2.4.8 \| 2.4.8-p1 \| 2.4.8-p2 \| 2.4.8-p3 \| 2.4.8-p4 \| 2.4.9-alpha1 \| 2.4.9-alpha2 \| 2.4.9-alpha3 \| 2.4.9-Beta1
 
 - Akzeptiert einen Wert
 

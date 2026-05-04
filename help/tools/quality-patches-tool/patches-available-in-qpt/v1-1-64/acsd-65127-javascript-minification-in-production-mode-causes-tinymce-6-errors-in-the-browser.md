@@ -5,9 +5,9 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: c878d5a4-8059-4bfc-93a8-0a9606e866fc
 type: Troubleshooting
-source-git-commit: d98a8f60d2bcd818ae50d754bb96a2bf0becb810
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Der Patch ACSD-65127 behebt das Problem, dass durch die Aktivierung der JavaScri
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) . Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) . Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -38,7 +38,7 @@ Die Aktivierung der JavaScript-Minimierung im Produktionsmodus führte dazu, das
 
 1. Legen Sie die Konfiguration fest, indem Sie die folgenden Befehle ausführen:
 
-```
+```shell
 bin/magento config:set --lock-config dev/js/minify_files 1
 bin/magento config:set --lock-config dev/js/enable_js_bundling 1
 bin/magento config:set --lock-config dev/js/merge_files 1
@@ -50,7 +50,7 @@ bin/magento config:set --lock-config dev/js/merge_files 1
 
 1. Produktionsmodus aktivieren.
 
-```
+```shell
 bin/magento deploy:mode:set production
 ```
 
@@ -68,8 +68,8 @@ Keine JS-Fehler in der Browser-Konsole.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > &#x200B;](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > ](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen
 

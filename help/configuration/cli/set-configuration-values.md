@@ -2,9 +2,9 @@
 title: Festlegen von Konfigurationswerten
 description: Erfahren Sie, wie Sie in Adobe Commerce Konfigurationswerte festlegen und gesperrte Admin-Werte ändern. Erfahren Sie mehr über erweiterte Konfigurationsbefehle und -techniken.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Bereichscodes für Websites und Store-Ansichten werden in der Commerce-Datenbank
 
 1. Verbindung zur Commerce-Datenbank herstellen.
 
-   ```bash
+   ```shell
    mysql -u <Commerce database username> -p
    ```
 
@@ -98,7 +98,7 @@ Bereichscodes für Websites und Store-Ansichten werden in der Commerce-Datenbank
 
    Es folgt ein Beispielergebnis:
 
-   ```
+   ```ini
    [mysql]> SELECT * FROM store_website;
    +------------+-------+--------------+------------+------------------+------------+
    | website_id | code  | name         | sort_order | default_group_id | is_default |
@@ -117,13 +117,13 @@ Bereichscodes für Websites und Store-Ansichten werden in der Commerce-Datenbank
 
 **So legen Sie systemspezifische Konfigurationswerte**:
 
-```bash
+```shell
 bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [-lc | --lock-config] path value
 ```
 
 **So legen Sie vertrauliche Konfigurationswerte**:
 
-```bash
+```shell
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
@@ -161,19 +161,19 @@ Im Folgenden finden Sie einige Beispiele für das Festlegen einer Store-Basis-UR
 
 Legen Sie die Basis-URL für den Standardbereich fest:
 
-```bash
+```shell
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
 Legen Sie die Basis-URL für die `base`-Website fest:
 
-```bash
+```shell
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
 Festlegen der Basis-URL für die `test` Store-Ansicht:
 
-```bash
+```shell
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
 ```
 
@@ -181,7 +181,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 Wenn Sie die Option `--lock-env` wie folgt verwenden, speichert der Befehl den Konfigurationswert in `<Commerce base dir>/app/etc/env.php` und deaktiviert das Feld für die Bearbeitung dieses Werts in Admin.
 
-```bash
+```shell
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
@@ -193,7 +193,7 @@ Sie können die Option `--lock-env` verwenden, um Konfigurationswerte festzulege
 
 Wenn Sie die Option `--lock-config` wie folgt verwenden, wird der Konfigurationswert in `<Commerce base dir>/app/etc/config.php` gespeichert. Das Feld zum Bearbeiten dieses Werts im Admin-Bereich ist deaktiviert.
 
-```bash
+```shell
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
@@ -207,7 +207,7 @@ Sie können `--lock-config` verwenden, um Konfigurationswerte festzulegen, wenn 
 
 Befehlsoptionen:
 
-```bash
+```shell
 bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 ```
 
@@ -215,23 +215,23 @@ Hierbei gilt
 
 - `--scope` ist der Umfang der Konfiguration (Standard, Website, Store). Der Standardwert ist `default`
 - `--scope-code` ist der Konfigurations-Code des Umfangs (Website-Code oder Code für die Store-Ansicht)
-- `path` ist der Konfigurationspfad im Format „first_part/second_part/third_part/etc“ (_erforderlich_)
+- `path` ist der Konfigurationspfad im Format „first _part/second_ part/third_part/etc“ (_erforderlich_)
 
 >[!INFO]
 >
->Der Befehl `bin/magento config:show` zeigt die Werte aller [verschlüsselten Werte](../reference/config-reference-sens.md) als eine Reihe von Sternchen an: `**&#x200B;**&#x200B;**`.
+>Der Befehl `bin/magento config:show` zeigt die Werte aller [verschlüsselten Werte](../reference/config-reference-sens.md) als eine Reihe von Sternchen an: `******`.
 
 ### Beispiele
 
 **So zeigen Sie alle gespeicherten Konfigurationen**:
 
-```bash
+```shell
 bin/magento config:show
 ```
 
 Ergebnis:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 general/region/display_all - 1
 general/region/state_required - AT,BR,CA,CH,EE,ES,FI,LT,LV,RO,US
@@ -241,50 +241,50 @@ analytics/subscription/enabled - 1
 
 **So zeigen Sie alle gespeicherten Konfigurationen für die `base` Website an**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base
 ```
 
 Ergebnis:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
 
 **Anzeigen der Basis-URL für den Standardbereich**:
 
-```bash
+```shell
 bin/magento config:show web/unsecure/base_url
 ```
 
 Ergebnis:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 ```
 
 **So zeigen Sie die Basis-URL für die `base` Website an**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 ```
 
 Ergebnis:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
 **Anzeigen der Basis-URL für den `default` Store**:
 
-```bash
+```shell
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
 ```
 
 Ergebnis:
 
-```
+```text
 web/unsecure/base_url - http://example-for-store.com/
 ```
 

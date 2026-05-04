@@ -2,9 +2,9 @@
 title: Erweiterungen von Drittanbietern verwalten
 description: Führen Sie die folgenden Schritte aus, um Adobe Commerce Extensions zu installieren, zu aktivieren, zu aktualisieren und zu deinstallieren.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Erweiterungen von Drittanbietern verwalten
 
-Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional im [Commerce Marketplace oder &#x200B;](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystem verpacken und verteilen.
+Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional im [Commerce Marketplace oder ](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystem verpacken und verteilen.
 
 Zu den Erweiterungen gehören:
 
@@ -20,7 +20,7 @@ Zu den Erweiterungen gehören:
 - Designs (Ändern des Erscheinungsbilds Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Lokalisieren der Storefront und Admin)
 
-In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Sie können dieselbe Vorgehensweise verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie dazu die `composer.json`-Datei der Erweiterung und notieren Sie sich die Werte für `"name"` und `"version"`.
 
@@ -31,7 +31,7 @@ Vor der Installation sollten Sie Folgendes tun:
 1. Sichern Sie Ihre Datenbank.
 1. Wartungsmodus aktivieren:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -40,7 +40,7 @@ Um eine Erweiterung zu installieren, müssen Sie:
 1. Erhalten Sie eine Erweiterung vom Commerce Marketplace oder einem anderen Erweiterungsentwickler.
 1. Wenn Sie eine Erweiterung über die Commerce Marketplace installieren, stellen Sie sicher, dass das `repo.magento.com`-Repository in Ihrer `composer.json` vorhanden ist:
 
-   ```bash
+   ```shell
    "repositories": [
        {
            "type": "composer",
@@ -56,7 +56,7 @@ Um eine Erweiterung zu installieren, müssen Sie:
 
 ### Abrufen von Erweiterungsinformationen
 
-Wenn Sie den Namen und die Version der Erweiterung „Composer“ bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit &quot;[&#x200B; der `composer.json`-Datei“ &#x200B;](#update-composer-dependencies).
+Wenn Sie den Namen und die Version der Erweiterung „Composer“ bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit &quot;[ der `composer.json`-Datei“ ](#update-composer-dependencies).
 
 So rufen Sie den Namen und die Version der Erweiterung „Composer“ aus Commerce Marketplace ab:
 
@@ -84,21 +84,21 @@ Fügen Sie den Namen und die Version der Erweiterung zu Ihrer `composer.json` hi
 
 1. Navigieren Sie zu Ihrem Projektverzeichnis und aktualisieren Sie Ihre `composer.json`.
 
-   ```bash
+   ```shell
    composer require <component-name>:<version>
    ```
 
    Beispiel:
 
-   ```bash
+   ```shell
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Geben Sie [Authentifizierungsschlüssel“ &#x200B;](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername; Ihr privater Schlüssel ist Ihr Kennwort.
+1. Geben Sie [Authentifizierungsschlüssel“ ](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername; Ihr privater Schlüssel ist Ihr Kennwort.
 
 1. Warten Sie, bis Composer die Aktualisierung Ihrer Projektabhängigkeiten abgeschlossen hat, und stellen Sie sicher, dass keine Fehler vorhanden sind:
 
-   ```
+   ```text
    Updating dependencies (including require-dev)
    Package operations: 1 install, 0 updates, 0 removals
      - Installing j2t/module-payplug (2.0.2): Downloading (100%)
@@ -110,19 +110,19 @@ Fügen Sie den Namen und die Version der Erweiterung zu Ihrer `composer.json` hi
 
 Um sicherzustellen, dass die Erweiterung ordnungsgemäß installiert ist, führen Sie den folgenden Befehl aus:
 
-```bash
+```shell
 bin/magento module:status J2t_Payplug
 ```
 
 Standardmäßig ist die Erweiterung wahrscheinlich deaktiviert:
 
-```
+```text
 Module is disabled
 ```
 
 Der Name der Erweiterung hat das Format `<VendorName>_<ComponentName>`. Dies ist ein anderes Format als der Name des Komponisten. Verwenden Sie dieses Format, um die Erweiterung zu aktivieren. Wenn Sie sich bezüglich des Namens der Erweiterung nicht sicher sind, führen Sie Folgendes aus:
 
-```bash
+```shell
 bin/magento module:status
 ```
 
@@ -134,13 +134,13 @@ Einige Erweiterungen funktionieren nicht richtig, es sei denn, Sie löschen zuer
 
 1. Aktivieren Sie die Erweiterung und löschen Sie statische Ansichtsdateien:
 
-   ```bash
+   ```shell
    bin/magento module:enable J2t_Payplug --clear-static-content
    ```
 
    Es sollte folgende Ausgabe angezeigt werden:
 
-   ```
+   ```text
    The following modules have been enabled:
    - J2t_Payplug
    
@@ -152,31 +152,31 @@ Einige Erweiterungen funktionieren nicht richtig, es sei denn, Sie löschen zuer
 
 1. Registrieren Sie die Erweiterung:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Kompilieren Sie Ihr Projekt neu: Im Produktionsmodus erhalten Sie möglicherweise eine Nachricht mit dem Titel „Bitte führen Sie den Magento-Kompilierungsbefehl erneut aus“. Die Anwendung fordert Sie nicht auf, den Kompilierungsbefehl im Entwicklermodus auszuführen.
 
-   ```bash
+   ```shell
    bin/magento setup:di:compile
    ```
 
 1. Stellen Sie sicher, dass die Erweiterung aktiviert ist:
 
-   ```bash
+   ```shell
    bin/magento module:status J2t_Payplug
    ```
 
    Es sollte eine Ausgabe angezeigt werden, die bestätigt, dass die Erweiterung nicht mehr deaktiviert ist:
 
-   ```
+   ```text
    Module is enabled
    ```
 
 1. Cache leeren:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -198,27 +198,27 @@ So aktualisieren oder aktualisieren Sie ein Modul oder eine Erweiterung:
 
    Aktualisierung pro Modulname:
 
-   ```bash
+   ```shell
    composer update vendor/module-name
    ```
 
    Aktualisierung pro Version:
 
-   ```bash
+   ```shell
    composer require vendor/module-name ^x.x.x
    ```
 
 1. Führen Sie die folgenden Befehle aus, um den Cache zu aktualisieren, bereitzustellen und zu bereinigen.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade --keep-generated
    ```
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -240,13 +240,13 @@ Die folgenden Anweisungen enthalten allgemeine Informationen zur Deinstallation 
 
    - Entfernen Sie bei Composer-basierten Erweiterungen die Erweiterung aus Ihrer Adobe Commerce-`composer.json`.
 
-     ```bash
+     ```shell
      composer remove <component-name>
      ```
 
    - Bei nicht auf dem Composer basierenden Erweiterungen entfernen Sie die physischen Dateien aus dem Adobe Commerce-Projekt-Repository.
 
-     ```bash
+     ```shell
      rm -rf app/code/<vendor-name>/<component-name>
      ```
 

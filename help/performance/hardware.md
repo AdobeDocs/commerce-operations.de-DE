@@ -3,9 +3,9 @@ title: Hardware-Empfehlungen
 description: Erfahren Sie mehr über Hardwareempfehlungen für optimale Adobe Commerce-Leistung. Erfahren Sie mehr über CPU-, Speicher- und Speicheranforderungen für Produktionsbereitstellungen.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Commerce] Webknoten dienen allen Anforderungen, die nicht zwischengespeichert werden oder nicht über die Anwendung zwischengespeichert werden können. Ein CPU-Kern kann etwa zwei (manchmal bis zu vier) [!DNL Commerce] effektiv bereitstellen. Verwenden Sie die folgende Gleichung, um zu bestimmen, wie viele Web-Knoten/Kerne Sie benötigen, um alle eingehenden Anfragen zu verarbeiten, ohne sie in die Warteschlange zu stellen:
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 

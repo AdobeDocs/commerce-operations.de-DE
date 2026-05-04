@@ -2,9 +2,9 @@
 title: Optionale Software
 description: Erfahren Sie mehr über optionale Software, die Sie installieren können, um lokale Installationen von Adobe Commerce zu unterstützen.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Wenn Sie Adobe Commerce auf mehreren Hosts bereitstellen, ist NTP eine einfache 
 
 Geben Sie den folgenden Befehl ein, um NTP zu installieren:
 
-```bash
+```shell
 apt-get install ntp
 ```
 
@@ -37,7 +37,7 @@ Installieren und Konfigurieren von NTP:
 
 1. Geben Sie den folgenden Befehl ein, um die entsprechende NTP-Software zu finden:
 
-   ```bash
+   ```shell
    yum search ntp
    ```
 
@@ -45,13 +45,13 @@ Installieren und Konfigurieren von NTP:
 
 1. Installieren Sie das Paket .
 
-   ```bash
+   ```shell
    yum -y install ntp.x86_64
    ```
 
 1. Geben Sie den folgenden Befehl ein, damit NTP gestartet wird, wenn der Server gestartet wird.
 
-   ```bash
+   ```shell
    chkconfig ntpd on
    ```
 

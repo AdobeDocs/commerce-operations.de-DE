@@ -5,9 +5,9 @@ feature: B2B
 role: Admin, Developer
 exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACSD-63974 wird das Problem behoben, dass das Laden der **[!UICONT
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -41,7 +41,7 @@ Das Laden der Seite **[!UICONTROL Requisition List]** dauert lange, wenn viele E
 1. Generieren Sie über 2.000 Produkte, indem Sie `simple_products` Knoten in `setup/performance-toolkit/profiles/ce/small.xml` bearbeiten.
 1. Führen Sie den Befehl aus:
 
-   ```bash
+   ```shell
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 

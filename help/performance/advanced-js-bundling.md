@@ -2,9 +2,9 @@
 title: Erweiterte JavaScript-Pakete
 description: Erfahren Sie mehr über die erweiterte JavaScript-Bündelung in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Bei einer modularen Anwendung kann die Anzahl der Server-Anfragen bis in die Hun
 
 Commerce unterstützt Bundles, um die Anzahl der Server-Anfragen zu reduzieren. Die Bündelung ist standardmäßig deaktiviert. Sie können sie in **[!UICONTROL Stores]** > **Einstellungen** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]** oder über die Befehlszeile aktivieren.
 
-Unter [Tipps zum &#x200B;](configuration.md#bundling-tips)&quot; in *Best Practices für die Konfiguration* finden Sie Tools von Drittanbietern, HTTP/2 und Anleitungen zur veralteten JS- und CSS-Zusammenführung.
+Unter [Tipps zum ](configuration.md#bundling-tips)&quot; in *Best Practices für die Konfiguration* finden Sie Tools von Drittanbietern, HTTP/2 und Anleitungen zur veralteten JS- und CSS-Zusammenführung.
 
 ![Bundling](../assets/performance/images/bundlingImage.png)
 
@@ -32,7 +32,7 @@ Unter [Tipps zum &#x200B;](configuration.md#bundling-tips)&quot; in *Best Practi
 
 So aktivieren Sie die integrierte Bündelung über die Befehlszeile:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -53,13 +53,13 @@ Die Commerce-Bündelung reduziert die Anzahl der Verbindungen pro Seite, aber f�
 
 So aktivieren Sie die integrierte Zusammenführung über die Befehlszeile:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
 Dieser Befehl führt alle synchronen JavaScript-Dateien in einer Datei zusammen. Das Aktivieren der Zusammenführung ohne gleichzeitiges Aktivieren der Bündelung ist nicht nützlich, da Commerce [!DNL RequireJS] verwendet. Wenn Sie die Bündelung nicht aktivieren, führt Commerce nur [!DNL RequireJS] und dessen Konfiguration zusammen. Wenn Sie sowohl Bündelung als auch Zusammenführung aktivieren, erstellt Commerce eine einzige JavaScript-Datei:
 
-![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingDevWorld.png)
+![Zusammenführung realer ](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## Reale Render-Zeiten
 
@@ -73,7 +73,7 @@ Bei langsamer 3G-Konnektivität dauert es etwa 44 Sekunden, bis alle Bundles fü
 
 Dasselbe gilt für die Zusammenführung der Bundles in einer Datei. Benutzer konnten immer noch etwa 42 Sekunden auf das erste Laden der Seite warten, wie hier gezeigt:
 
-![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingRealWorld.png)
+![Zusammenführung realer ](../assets/performance/images/magentoMergingRealWorld.png)
 
 Mit einem fortschrittlicheren Ansatz für die JavaScript-Bündelung können wir diese Ladezeiten verbessern.
 
@@ -93,7 +93,7 @@ Eine saubere Commerce-Installation ermöglicht es, durch die Aufteilung von Bund
 
 Für die folgenden Schritte müssen Sie die folgenden Tools installieren und damit vertraut sein:
 
-- [nodejs](https://nodejs.org/en/download/)
+- [NodeJS](https://nodejs.org/en/download/)
 - [r.js](http://requirejs.org/docs/optimization.html#download)
 - [[!DNL PhantomJS]](https://phantomjs.org/) (optional)
 
@@ -107,7 +107,7 @@ Die vollständigen Versionen des in diesem Artikel verwendeten Beispiel-Codes fi
 
 ### Teil 1: Erstellen einer Bundling-Konfiguration
 
-#### 1\ Hinzufügen einer „build.js“-Datei
+#### 1\. Hinzufügen einer „build.js“-Datei
 
 Erstellen Sie eine `build.js` im Stammverzeichnis der Commerce. Diese Datei enthält die gesamte Build-Konfiguration für Ihre Bundles.
 
@@ -120,7 +120,7 @@ Erstellen Sie eine `build.js` im Stammverzeichnis der Commerce. Diese Datei enth
 
 Später werden wir die `optimize:` von_ `none` auf `uglify2` ändern, um die Bundle-Ausgabe zu minimieren. Vorerst können Sie es während der Entwicklung jedoch auf `none` setzen, um schnellere Builds sicherzustellen.
 
-#### 2\ Hinzufügen von [!DNL RequireJS], Shims, Pfaden und Zuordnungen
+#### 2\. Hinzufügen von [!DNL RequireJS], Shims, Pfaden und Zuordnungen
 
 Fügen Sie die folgenden [!DNL RequireJS] Build-Konfigurationsknoten, `deps`, `shim`, `paths` und `map`, zu Ihrer Build-Datei hinzu:
 
@@ -136,7 +136,7 @@ Fügen Sie die folgenden [!DNL RequireJS] Build-Konfigurationsknoten, `deps`, `s
 })
 ```
 
-#### 3\ Aggregieren der `requirejs-config.js` Instanzwerte
+#### 3\. Aggregieren der `requirejs-config.js` Instanzwerte
 
 In diesem Schritt müssen Sie alle `deps`, `shim`, `paths` und `map` Konfigurationsknoten aus der `requirejs-config.js`-Datei Ihres Stores in den entsprechenden Knoten in Ihrer `build.js`-Datei aggregieren. Öffnen Sie dazu die Registerkarte **[!UICONTROL Network]** im Bereich Entwickler-Tools Ihres Browsers und navigieren Sie zu einer beliebigen Seite in Ihrem Store, z. B. zur Homepage. Auf der Registerkarte „Netzwerk“ wird die Instanz der `requirejs-config.js`-Datei in Ihrem Store oben angezeigt, wie hier hervorgehoben:
 
@@ -156,7 +156,7 @@ Sie müssen den Pfad `mage/requirejs/text` im Konfigurationsknoten wie folgt in 
 })
 ```
 
-#### 4\ Modulknoten hinzufügen
+#### 4\. Modulknoten hinzufügen
 
 Fügen Sie am Ende der `build.js` die Module[] Array als Platzhalter für die Bundles hinzu, die Sie später für Ihre Storefront definieren werden.
 
@@ -174,7 +174,7 @@ Fügen Sie am Ende der `build.js` die Module[] Array als Platzhalter für die Bu
 })
 ```
 
-#### 5\ Abrufen [!DNL RequireJS] Datenabhängigkeiten
+#### 5\. Abrufen [!DNL RequireJS] Datenabhängigkeiten
 
 Sie können alle [!DNL RequireJS] Modulabhängigkeiten aus den Seitentypen Ihres Stores abrufen, indem Sie Folgendes verwenden:
 
@@ -219,7 +219,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-Representating-P
 
 Hier finden Sie beispielsweise vier Seiten aus dem Beispielspeicher mit dem Thema Luma, die die vier Seitentypen darstellen, die wir verwenden werden, um unsere vier Bundles (Homepage, Kategorie, Produkt, Warenkorb) zu erstellen:
 
-```
+```text
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -237,11 +237,11 @@ Object.keys(window.require.s.contexts._.defined)
 
 Dieser Befehl (der im [!DNL PhantomJS]-Skript verwendet wird) erstellt dieselbe Liste [!DNL RequireJS] Abhängigkeiten und zeigt sie in der Browser-Konsole an. Der Nachteil dieses Ansatzes besteht darin, dass Sie Ihre eigenen Textdateien vom Typ Paket/Seite erstellen müssen.
 
-#### 6\ Formatieren und Filtern der Ausgabe
+#### 6\. Formatieren und Filtern der Ausgabe
 
 Nachdem Sie die [!DNL RequireJS] Abhängigkeiten in Textdateien vom Typ Seite zusammengeführt haben, können Sie den folgenden Befehl in jeder Abhängigkeitsdatei vom Typ Seite verwenden, um die Kommas in Ihren Dateien durch Zeilenumbrüche zu ersetzen:
 
-```bash
+```shell
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -250,26 +250,26 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 Sie sollten auch alle Mixins für jede Datei entfernen, da Mixins Abhängigkeiten duplizieren. Verwenden Sie für jede Abhängigkeitsdatei den folgenden Befehl:
 
-```bash
+```shell
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 ...
 ```
 
-#### 7\ Identifizieren eindeutiger und allgemeiner Bundles
+#### 7\. Identifizieren eindeutiger und allgemeiner Bundles
 
 Ziel ist es, ein gemeinsames Paket von JavaScript-Dateien zu erstellen, die für alle Seiten benötigt werden. Auf diese Weise muss der Browser nur das gemeinsame Bundle mit einem oder mehreren bestimmten Seitentypen laden.
 
 Öffnen Sie ein Terminal im Commerce-Stammverzeichnis und verwenden Sie den folgenden Befehl, um zu überprüfen, ob Sie Abhängigkeiten haben, die Sie in separate Bundles aufteilen können:
 
-```bash
+```shell
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
 Dieser Befehl führt die in den `bundle/*.txt` Dateien gefundenen Abhängigkeiten zusammen und sortiert sie.  Die Ausgabe zeigt auch die Anzahl der Dateien an, die jede Abhängigkeit enthalten:
 
-```
+```text
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -292,7 +292,7 @@ Unsere Ausgabe zeigt nur drei Seitentypen (Homepage, Kategorie und Produkt), was
 
 Dies zeigt uns, dass wir die Seitenladegeschwindigkeiten unseres Stores wahrscheinlich verbessern können, indem wir unsere Abhängigkeiten in verschiedene Bundles aufteilen, sobald wir wissen, welche Seitentypen welche Abhängigkeiten benötigen.
 
-#### 8\ Erstellen einer Verteilungsdatei für Abhängigkeiten
+#### 8\. Erstellen einer Verteilungsdatei für Abhängigkeiten
 
 Um herauszufinden, welche Seitentypen welche Abhängigkeiten benötigen, erstellen Sie eine neue Datei im Commerce-Stammverzeichnis mit dem Namen `deps-map.sh` und kopieren Sie sie in den folgenden Code:
 
@@ -318,13 +318,13 @@ Sie finden das Skript auch unter [https://www.unix.com/shell-programming-and-scr
 
 Öffnen Sie ein Terminal im Stammverzeichnis der Commerce und führen Sie die Datei aus:
 
-```bash
+```shell
 bash deps-map.sh
 ```
 
 Die Ausgabe dieses Skripts, das auf unsere drei Beispielseitentypen angewendet wird, sollte in etwa so aussehen (aber viel länger):
 
-```
+```text
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -340,7 +340,7 @@ bundle/category.txt/bundle/homepage.txt/bundle/product.txt --> knockoutjs/knocko
 
 Dies ist ausreichend, um eine Bundles-Konfiguration zu erstellen.
 
-#### 9\ Erstellen von Bundles in der Datei build.js
+#### 9\. Erstellen von Bundles in der Datei build.js
 
 Öffnen Sie die `build.js` Konfigurationsdatei und fügen Sie Ihre Bundles zum `modules` hinzu. Jedes Bundle sollte die folgenden Eigenschaften definieren:
 
@@ -391,7 +391,7 @@ Die folgenden Schritte beschreiben den grundlegenden Prozess zum Generieren effi
 
 Führen Sie vor dem Generieren von Bundles den statischen Bereitstellungsbefehl aus:
 
-```bash
+```shell
 php -f bin/magento setup:static-content:deploy -f -a frontend
 ```
 
@@ -408,21 +408,21 @@ Um Bundles für alle Store-Designs und Gebietsschemata zu generieren, wiederhole
 
 Zunächst müssen Sie den statischen Inhalt aus dem Zielverzeichnis in ein temporäres Verzeichnis verschieben, da [!DNL RequireJS] den gesamten Inhalt innerhalb des Zielverzeichnisses ersetzt.
 
-```bash
+```shell
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
 ```
 
 Beispiel:
 
-```bash
+```shell
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### &#x200B;3. Ausführen von r.js Optimizer
+#### &#x200B;3. Ausführen von „r.js“-Optimizer
 
 Führen Sie dann r.js Optimizer für die `build.js`-Datei aus dem Stammverzeichnis von Commerce aus. Die Pfade zu allen Verzeichnissen und Dateien sind relativ zum Arbeitsverzeichnis.
 
-```bash
+```shell
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -430,11 +430,11 @@ Dieser Befehl erzeugt Bundles in einem `bundles` Unterverzeichnis des Zielverzei
 
 Die Auflistung des Inhalts des neuen Bundle-Verzeichnisses könnte wie folgt aussehen:
 
-```bash
+```shell
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```
+```text
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
@@ -447,7 +447,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 
 #### &#x200B;4. Konfigurieren von [!DNL RequireJS] für die Verwendung von Bundles
 
-Um [!DNL RequireJS] zur Verwendung Ihrer Bundles zu erhalten, fügen Sie der `onModuleBundleComplete`-Datei nach dem `modules`-Knoten einen `build.js`-Callback hinzu:
+Um [!DNL RequireJS] zur Verwendung Ihrer Bundles zu erhalten, fügen Sie der `build.js`-Datei nach dem `modules`-Knoten einen `onModuleBundleComplete`-Callback hinzu:
 
 ```javascript
 [
@@ -481,11 +481,11 @@ require.config({});
 }
 ```
 
-#### &#x200B;5. Erneutes Ausführen des Bereitstellungsbefehls
+#### &#x200B;5. Bereitstellungsbefehl erneut ausführen
 
 Führen Sie den folgenden Befehl aus, um bereitzustellen:
 
-```bash
+```shell
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -512,7 +512,7 @@ Beachten Sie, dass der Browser nach dem Laden der Seite verschiedene Abhängigke
 
 Die Seitenladezeit für eine leere Homepage ist jetzt doppelt so schnell wie mit der nativen Commerce-Bündelung. Aber wir können es noch besser machen.
 
-#### &#x200B;7. Optimieren der Bundles
+#### &#x200B;7. Bundles optimieren
 
 Selbst wenn die Dateien im Gzip-Format komprimiert werden, sind die JavaScript-Dateien immer noch groß. Minimieren Sie sie mit [!DNL RequireJS], das einen Verzerrer verwendet, um JavaScript zu einem guten Ergebnis zu minimieren.
 

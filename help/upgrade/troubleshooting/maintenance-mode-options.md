@@ -2,7 +2,7 @@
 title: Wartungsmodusoptionen für das Upgrade
 description: Erstellen Sie eine benutzerdefinierte Wartungsmodusseite, die Ihre Kunden in Ihrer Adobe Commerce-Storefront sehen, während Sie ein Upgrade ausführen.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -68,11 +68,11 @@ So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
    - Gesamten Traffic zur Wartungsseite umleiten
    - Zulassungsliste bestimmter IPs, damit ein Administrator die Magento-Software aktualisieren kann.
 
-   Auf die Zulassungsliste setzen Im folgenden Beispiel wird 192.0.2.110.
+   Im folgenden Beispiel wird 192.0.2.110.
 
    Fügen Sie am Ende Ihrer Apache-Konfigurationsdatei Folgendes hinzu:
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,7 +90,7 @@ So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 
 1. Geben Sie den folgenden Befehl ein:
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -107,7 +107,7 @@ So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 1. Verwenden Sie einen Texteditor, um die nginx-Konfigurationsdatei zu öffnen, die Ihren Serverblock enthält.
 1. Fügen Sie dem Serverblock Folgendes hinzu (`server` wird nur der Übersichtlichkeit halber angezeigt; fügen Sie keinen zweiten Serverblock hinzu).
 
-   Auf die Zulassungsliste setzen Mit der folgenden IP-Adresse werden 192.0.2.110 und 192.0.2.115 auf einem System geändert, auf dem Magento in `/var/www/html/magento2` installiert ist:
+   Mit der folgenden IP-Adresse werden 192.0.2.110 und 192.0.2.115 auf einem System geändert, auf dem Magento in `/var/www/html/magento2` installiert ist:
 
    ```conf
    server {
@@ -144,13 +144,13 @@ So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 
 1. Geben Sie den folgenden Befehl ein:
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. Laden Sie die nginx-Konfiguration neu:
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -159,6 +159,6 @@ So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 1. Löschen oder benennen Sie `maintenance.enable` nach Abschluss des Upgrades um
 1. Laden Sie die nginx-Konfiguration neu:
 
-   ```bash
+   ```shell
    service nginx reload
    ```

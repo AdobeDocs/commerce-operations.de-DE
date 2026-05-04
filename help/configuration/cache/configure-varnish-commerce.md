@@ -3,9 +3,9 @@ title: Lacke für Commerce konfigurieren
 description: Erfahren Sie, wie Sie Lack speziell für Adobe Commerce-Programme konfigurieren. Erfahren Sie mehr über Aktualisierungen der Konfigurationsdateien und Verwaltungsverfahren.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ So konfigurieren Sie Commerce für die Verwendung von „Varnish“:
 
 Sie können Varnish auch über die Befehlszeile aktivieren, anstatt sich beim Admin anzumelden, indem Sie das Befehlszeilen-Tool C verwenden:
 
-```bash
+```shell
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
@@ -50,15 +50,15 @@ So exportieren Sie eine Lackkonfigurationsdatei vom Administrator:
 
 1. Sichern Sie Ihr vorhandenes `default.vcl`. Benennen Sie dann die soeben exportierte `varnish.vcl`-Datei in `default.vcl` um. Kopieren Sie dann die Datei in das `/etc/varnish/`.
 
-   ```bash
+   ```shell
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
    ```
 
-   ```bash
+   ```shell
    mv <download_directory>/varnish.vcl default.vcl
    ```
 
-   ```bash
+   ```shell
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
@@ -76,11 +76,11 @@ So exportieren Sie eine Lackkonfigurationsdatei vom Administrator:
 
 1. Starten Sie Lack und Ihren Webserver neu:
 
-   ```bash
+   ```shell
    service varnish restart
    ```
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 

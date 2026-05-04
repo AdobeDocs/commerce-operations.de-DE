@@ -2,9 +2,9 @@
 title: Festlegen des Werts von Bootstrap-Parametern
 description: Erfahren Sie, wie Sie Bootstrap-Parameter für das Commerce-Programm festlegen.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Sie können Bootstrap-Variablen als systemweite Umgebungsvariablen angeben, wodu
 
 Beispielsweise können Sie mit der `MAGE_PROFILER`-Umgebungsvariablen einen Modus wie folgt angeben:
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -43,7 +43,7 @@ Legen Sie die Variable mithilfe eines Shell-spezifischen Befehls fest. Da Shell 
 
 Bash-Shell-Beispiel für CentOS:
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -72,7 +72,7 @@ Je nach Einstiegspunkt für das Commerce-Programm können Sie `.htaccess` an jed
 
 1. Öffnen Sie eine der zuvor genannten Dateien in einem Texteditor und fügen Sie die gewünschte Einstellung hinzu oder heben Sie die Auskommentierung auf.
 
-   Um beispielsweise einen „Modus[&#x200B; anzugeben, heben &#x200B;](application-modes.md) den Kommentar für Folgendes auf:
+   Um beispielsweise einen „Modus[ anzugeben, heben ](application-modes.md) den Kommentar für Folgendes auf:
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug
@@ -80,7 +80,7 @@ Je nach Einstiegspunkt für das Commerce-Programm können Sie `.htaccess` an jed
 
 1. Legen Sie den Wert von `MAGE_PROFILER` auf einen der folgenden Werte fest:
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -124,13 +124,13 @@ Die folgenden Verfahren zeigen, wie Sie den Anwendungsmodus in einem virtuellen 
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 1. Aktivieren Sie Ihren virtuellen Host, falls noch nicht geschehen:
 
-   ```bash
+   ```shell
    a2ensite <virtual host config file name>
    ```
 
    Beispiel:
 
-   ```bash
+   ```shell
    a2ensite my.magento.conf
    ```
 

@@ -1,11 +1,11 @@
 ---
 title: Benutzerdefinierte Protokollierung
-description: Erfahren Sie, wie Sie Fehler mithilfe der benutzerdefinierten Protokollierung untersuchen können.
+description: Erfahren Sie, wie Sie Fehler mithilfe benutzerdefinierter dateibasierter Protokollierung in Adobe Commerce untersuchen können, einschließlich der Einhaltung von PSR-3 und Überlegungen zur zentralisierten Protokollierung.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---

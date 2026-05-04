@@ -1,11 +1,11 @@
 ---
 title: Kennworthashing
-description: Erfahren Sie mehr über Passwort-Hashing-Strategien und -Implementierung.
+description: Erfahren Sie mehr über Passwort-Hashing in Adobe Commerce, unterstützte Algorithmen wie Argon2 und SHA256 und darüber, wie ältere Hashes aktualisiert werden, ohne dass Passwörter geändert werden.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
@@ -61,4 +61,4 @@ Da Commerce alle verwendeten Passwort-Hash-Versionen zusammen mit dem Passwort-H
 
 ## Implementierung
 
-Die `\Magento\Framework\Encryption\Encryptor`-Klasse ist für die Erzeugung und Verifizierung von Passwort-Hashs verantwortlich. Der Befehl [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) aktualisiert einen Kunden-Passwort-Hash auf den neuesten Hash-Algorithmus.
+Die `\Magento\Framework\Encryption\Encryptor`-Klasse ist für die Erzeugung und Verifizierung von Passwort-Hashs verantwortlich. Der Befehl [`bin/magento customer:hash:upgrade`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#customerhashupgrade) aktualisiert einen Kunden-Passwort-Hash auf den neuesten Hash-Algorithmus.

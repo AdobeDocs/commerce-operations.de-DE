@@ -2,7 +2,7 @@
 title: Datenbankstatus überprüfen
 description: Führen Sie diese Schritte aus, um den Status Ihrer Adobe Commerce-Datenbank zu überprüfen.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Bevor Sie diesen Befehl ausführen, müssen Sie [die Bereitstellungskonfiguratio
 
 , um den Status der Datenbank zu überprüfen.
 
-```bash
+```shell
 bin/magento setup:db:status
 ```
 
@@ -25,7 +25,7 @@ Dieser Befehl hat keine Argumente oder Optionen.
 
 Beispielausgabe folgt:
 
-```
+```text
 All modules are up to date.
 ```
 

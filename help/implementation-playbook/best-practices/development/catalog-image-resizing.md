@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie vor einem Produktionsstart Ihrer Adobe Commer
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Die Größe aller Katalogbilder sollte geändert werden, bevor ein Geschäft in 
 
 Verwenden Sie den CLI-Standardbefehl, um die Größe aller Bilder zu ändern:
 
-```bash
+```shell
 bin/magento catalog:images:resize
 ```
 
@@ -41,19 +41,19 @@ Die asynchrone Größenanpassung von Bildern wurde in Adobe Commerce 2.4 eingef�
 
 1. Stellen Sie sicher, dass die Warteschlangen-Handler ausgeführt werden:
 
-   ```bash
+   ```shell
    pgrep -fl media.storage.catalog.image.resize
    ```
 
 1. Füllen Sie die Warteschlange mit allen Bildgrößenanforderungen:
 
-   ```bash
+   ```shell
    bin/magento catalog:images:resize --async
    ```
 
 1. Beenden Sie den Prozess, nachdem die Größe aller Bilder geändert wurde:
 
-   ```bash
+   ```shell
    pkill -f media.storage.catalog.image.resize
    ```
 
@@ -77,7 +77,7 @@ Bei diesem Ansatz werden 100.000 Bilder in weniger als 8 Stunden skaliert, währ
 
 >[!TAB sed]
 
-```bash
+```shell
 cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
@@ -86,13 +86,13 @@ find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type
 
 Der Nachteil von `siege` besteht darin, dass alle URLs 10-mal aufgerufen werden, wenn die gleichzeitige Nutzung auf 10 gesetzt ist.
 
-```bash
+```shell
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
 ```
 
 >[!TAB cURL]
 
-```bash
+```shell
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
@@ -102,7 +102,7 @@ Das `-P` Argument bestimmt die Anzahl der Threads.
 
 Der Einzeiler für das `find/curl` Beispiel, falls Sie `curl` von demselben Computer ausführen können, auf dem sich die Bilder befinden:
 
-```bash
+```shell
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
@@ -110,11 +110,11 @@ Ersetzen Sie erneut `www.example.com` durch die Domain Ihrer Website und legen S
 
 >[!ENDTABS]
 
-Die Ausgabe gibt eine Liste aller Produktbilder im Store zurück. Sie können die Bilder (mit `siege` oder einem anderen Crawler) mit allen Servern und Prozessorkernen durchsuchen, die Ihnen zur Verfügung stehen, und den Cache mit einer deutlich höheren Geschwindigkeit als andere Ansätze verändern.
+Die Ausgabe gibt eine Liste aller Produktbilder im Store zurück. Sie können die Bilder (mit `siege` oder anderen Crawler) mit allen verfügbaren Servern und Prozessorkernen crawlen und den Cache mit einer deutlich höheren Geschwindigkeit zu generieren als andere Ansätze.
 
 Beim Besuch einer Bild-Cache-URL werden alle Bildgrößen im Hintergrund generiert, sofern sie noch nicht vorhanden sind. Außerdem werden Dateien übersprungen, deren Größe bereits geändert wurde.
 
 >[!NOTE]
 >
->- Adobe Commerce in Cloud-Infrastrukturprojekten kann die Größenanpassung des Produktbilds auf den Fastly-Service auslagern. Siehe [Tiefenbildoptimierung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=de#deep-image-optimization) im _Cloud-Handbuch_.
->- Wenn Sie das Remote-Speichermodul verwenden, können Sie auch versuchen, die Größe des Bildes auf nginx zu ändern. Siehe [Konfigurieren der Bildgröße für den Remote](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=de) im _Konfigurationshandbuch_.
+>- Adobe Commerce in Cloud-Infrastrukturprojekten kann die Größenanpassung des Produktbilds auf den Fastly-Service auslagern. Siehe [Tiefenbildoptimierung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html#deep-image-optimization) im _Cloud-Handbuch_.
+>- Wenn Sie das Remote-Speichermodul verwenden, können Sie auch versuchen, die Größe des Bildes auf nginx zu ändern. Siehe [Konfigurieren der Bildgröße für den Remote](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) im _Konfigurationshandbuch_.

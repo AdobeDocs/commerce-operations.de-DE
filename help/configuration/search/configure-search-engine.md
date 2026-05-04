@@ -3,9 +3,9 @@ title: Konfiguration von Suchmaschinen
 description: Konfigurieren Sie eine Suchmaschine für lokale Bereitstellungen von Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ In diesem Abschnitt werden die Mindesteinstellungen erläutert, die Sie auswähl
 >[!TIP]
 >
 >In den Versionen 2.4.4 und 2.4.3-p2 gelten alle Felder mit der Beschriftung **Elasticsearch** auch für OpenSearch.
->&#x200B;>Mit der Einführung der Unterstützung für Elasticsearch 8.x in Version 2.4.6 wurden neue Bezeichnungen erstellt, um zwischen Elasticsearch- und OpenSearch-Konfigurationen zu unterscheiden.
+>Mit der Einführung der Unterstützung für Elasticsearch 8.x in Version 2.4.6 wurden neue Bezeichnungen erstellt, um zwischen Elasticsearch- und OpenSearch-Konfigurationen zu unterscheiden.
 
-Weitere Informationen zum Konfigurieren Ihrer Suchmaschine finden Sie im [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=de).
+Weitere Informationen zum Konfigurieren Ihrer Suchmaschine finden Sie im [Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Konfigurieren der Suchmaschine über den Administrator
 
@@ -37,7 +37,7 @@ So konfigurieren Sie Ihr System für die Verwendung von Elasticsearch oder OpenS
 
    | Option | Beschreibung |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Geben Sie den vollqualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce auf Cloud-Infrastruktur: Nutzen Sie diesen Wert aus Ihrem Integrationssystem. |
+   | **[!UICONTROL Server Hostname]** | Geben Sie den vollqualifizierten Hostnamen oder die IP-Adresse des Computers ein, auf dem Elasticsearch oder OpenSearch ausgeführt wird.<br>Adobe Commerce in der Cloud-Infrastruktur: Dieser Wert kann von Ihrem Integrationssystem abgerufen werden. |
    | **[!UICONTROL Server Port]** | Geben Sie den Webserver-Proxy-Port ein. Der Standardwert ist 9200<br>Adobe Commerce in der Cloud-Infrastruktur: Sie erhalten diesen Wert von Ihrem Integrationssystem. |
    | **[!UICONTROL Index Prefix]** | Geben Sie das Suchmaschinenindex-Präfix ein. Wenn Sie eine Instanz für mehr als eine Commerce-Installation (Staging- und Produktionsumgebungen) verwenden, müssen Sie für jede Installation ein eindeutiges Präfix angeben. Andernfalls können Sie das Standardpräfix magento2 verwenden. |
    | **[!UICONTROL Enable HTTP Auth]** | Klicken Sie nur dann auf **[!UICONTROL Yes]** , wenn Sie die Authentifizierung für Ihren Suchmaschinenserver aktiviert haben. Wenn ja, geben Sie einen Benutzernamen und ein Kennwort in die angegebenen Felder ein. |
@@ -69,13 +69,13 @@ Wenn ja, versuchen Sie Folgendes:
 
   Verwenden Sie beispielsweise den folgenden Befehl, um zu überprüfen, ob Ihre Suchmaschine auf ihrem Standard-Port ausgeführt wird:
 
-  ```bash
+  ```shell
   netstat -an | grep 9200
   ```
 
   Wenn es auf Port 9200 ausgeführt wird, wird es ähnlich wie folgt angezeigt:
 
-  ```
+  ```text
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
@@ -100,13 +100,13 @@ So indizieren Sie eine Neuindizierung über die Befehlszeile:
 
    Geben Sie den folgenden Befehl ein, um nur den Katalogsuchindex neu zu indizieren:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
    Geben Sie den folgenden Befehl ein, um alle Indexer neu zu indizieren:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    ```
 
@@ -114,4 +114,4 @@ So indizieren Sie eine Neuindizierung über die Befehlszeile:
 
    >[!INFO]
    >
-   >Im Gegensatz zum Cache werden Indexer durch einen Cron-Auftrag aktualisiert. Stellen Sie sicher[&#x200B; dass „cron](../cli/configure-cron-jobs.md) aktiviert ist, bevor Sie mit der Nutzung Ihrer Suchmaschine beginnen.
+   >Im Gegensatz zum Cache werden Indexer durch einen Cron-Auftrag aktualisiert. Stellen Sie sicher[ dass „cron](../cli/configure-cron-jobs.md) aktiviert ist, bevor Sie mit der Nutzung Ihrer Suchmaschine beginnen.

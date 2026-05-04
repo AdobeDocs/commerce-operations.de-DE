@@ -2,9 +2,9 @@
 title: Befehlszeilen-Tool
 description: Erfahren Sie, wie Sie das Adobe Commerce-Befehlszeilen-Tool für Installations- und Konfigurationsaufgaben verwenden. CLI-Befehle und administrative Funktionen
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Weitere Vorteile:
 - Die CLI ist erweiterbar, sodass sich Drittanbieter-Entwickler damit „verbinden“ können. Dies hat den zusätzlichen Vorteil, dass die Lernkurve der Benutzer eliminiert wird.
 - Befehle für deaktivierte Module werden nicht angezeigt.
 
-In diesem Abschnitt wird die Konfiguration der Adobe Commerce-Software mithilfe der CLI beschrieben. Informationen zur Installation von Commerce finden [&#x200B; unter &quot;](../../installation/overview.md)&quot; im _Installationshandbuch_.
+In diesem Abschnitt wird die Konfiguration der Adobe Commerce-Software mithilfe der CLI beschrieben. Informationen zur Installation von Commerce finden [ unter &quot;](../../installation/overview.md)&quot; im _Installationshandbuch_.
 
 ## Voraussetzungen
 
@@ -42,13 +42,13 @@ Bevor Sie mit der Verwendung der CLI beginnen, stellen Sie Folgendes sicher:
 
 Verwenden Sie für die Bash-Shell die folgende Syntax, um zum Dateisystembesitzer zu wechseln und gleichzeitig den Befehl einzugeben:
 
-```bash
+```shell
 su <file system owner> -s /bin/bash -c <command>
 ```
 
 Wenn der Dateisystembesitzer keine Anmeldungen zulässt, können Sie Folgendes verwenden:
 
-```bash
+```shell
 sudo -u <file system owner> <command>
 ```
 
@@ -58,7 +58,7 @@ Fügen Sie `<magento_root>/bin` zu Ihrem `PATH` hinzu.
 
 Beispiel-Bash-Shell für CentOS:
 
-```bash
+```shell
 export PATH=$PATH:/var/www/html/magento2/bin
 ```
 

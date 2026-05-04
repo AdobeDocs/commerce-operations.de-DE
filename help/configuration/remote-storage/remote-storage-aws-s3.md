@@ -3,9 +3,9 @@ title: AWS S3-Bucket für Remote-Speicher konfigurieren
 description: Konfigurieren Sie Ihr Commerce-Projekt für die Verwendung des AWS S3-Speicher-Services für die Remote-Speicherung.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ Der [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) ist e
 
 1. Deaktivieren Sie den standardmäßigen Datenbankspeicher.
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
 1. Konfigurieren Sie Commerce für die Verwendung des privaten Buckets. Siehe [Remote-Speicheroptionen](remote-storage.md#remote-storage-options) für eine vollständige Liste der Parameter.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
 1. Synchronisieren von Mediendateien mit dem Remote-Speicher.
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Authentifizierung
 
-Wenn Sie anstelle von [AWS IAM](https://aws.amazon.com/iam/)-Rollen Zugriffs- und Geheimschlüssel verwenden, müssen Sie das [`ngx_aws_auth` Nginx-Modul &#x200B;](https://github.com/anomalizer/ngx_aws_auth).
+Wenn Sie anstelle von [AWS IAM](https://aws.amazon.com/iam/)-Rollen Zugriffs- und Geheimschlüssel verwenden, müssen Sie das [`ngx_aws_auth` Nginx-Modul ](https://github.com/anomalizer/ngx_aws_auth).
 
 ### Berechtigungen
 
@@ -81,5 +81,5 @@ Die S3-Integration beruht auf der Möglichkeit, zwischengespeicherte Bilder im l
 
 ### Dateifunktionen
 
-Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter &#x200B;](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
+Es wird dringend empfohlen, bei der Codierung oder Erweiterungsentwicklung [!DNL Commerce] Dateiadaptermethoden zu verwenden, unabhängig vom Dateispeichertyp. Wenn Sie S3 für die Speicherung verwenden, verwenden Sie keine nativen PHP-Datei-I/O-Vorgänge wie `copy`, `rename` oder `file_put_contents`, da sich S3-Dateien nicht im Dateisystem befinden. Code[Beispiele finden Sie unter ](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18)DriverInterface.php).
 

@@ -4,10 +4,10 @@ description: Erfahren Sie mehr über Best Practices für die Implementierung der
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 2%
+source-wordcount: '363'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +26,7 @@ Die Entwicklungsphase umfasst die folgenden Aktivitäten:
 
 >[!TIP]
 >
->Allgemeine Best [&#x200B; finden Sie &#x200B;](general.md) allgemeinen Empfehlungen zur Gesamtverwaltung des Entwicklungsprozesses.
+>Allgemeine Best [ finden Sie ](general.md) allgemeinen Empfehlungen zur Gesamtverwaltung des Entwicklungsprozesses.
 
 Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entwicklungsphase.
 
@@ -42,7 +42,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds und Bereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=de){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsphase von Adobe Commerce in Cloud-Infrastrukturprojekten |
+| [Builds und Bereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsphase von Adobe Commerce in Cloud-Infrastrukturprojekten |
 | Debugging | Systematisches und effektives Debugging des Adobe Commerce-Frameworks |
 | [Statische Inhaltsbereitstellung](static-content-deployment.md) | Vermeiden Sie Probleme mit statischen Inhalten, die nicht in Ihrer Storefront angezeigt werden |
 | [Fehlerbehebung](troubleshooting.md) | Beheben häufiger Adobe Commerce-Implementierungsprobleme |
@@ -65,7 +65,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Design-Entwicklung](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Beschreibt Entwicklungsmuster, die dazu beitragen, die Kompatibilität zwischen Ihrem Design, zukünftigen Versionen von Adobe Commerce und benutzerdefinierten Erweiterungen sicherzustellen |
+| [Design-Entwicklung](https://developer.adobe.com/commerce/frontend-core/guide/best-practices){target="_blank"} | Beschreibt Entwicklungsmuster, die dazu beitragen, die Kompatibilität zwischen Ihrem Design, zukünftigen Versionen von Adobe Commerce und benutzerdefinierten Erweiterungen sicherzustellen |
 
 ## PHP-Entwicklung
 

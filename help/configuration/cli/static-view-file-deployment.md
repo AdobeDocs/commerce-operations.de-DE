@@ -2,9 +2,9 @@
 title: Statische Ansichtsdateien bereitstellen
 description: Erfahren Sie, wie Sie statische Ansichtsdateien im Adobe Commerce-Dateisystem im Produktionsmodus bereitstellen. Entdecken Sie Bereitstellungsbefehle und Optimierungstechniken.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für den [Produktionsmodus) &#x200B;](../bootstrap/application-modes.md#production-mode) ist.
+Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für den [Produktionsmodus) ](../bootstrap/application-modes.md#production-mode) ist.
 
 Der Begriff _statische Ansichtsdatei_ bezieht sich auf Folgendes:
 
@@ -31,11 +31,11 @@ Sie müssen statische Ansichtsdateien manuell unter Verwendung des in diesem The
 
 >[!WARNING]
 >
->_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layout-Elemente usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie haben verschiedene Möglichkeiten, generierte statische Ansichtsdateien zu bereinigen. Weitere Informationen finden [&#x200B; unter „Bereinigen des Cache für statische &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache)&quot;.
+>_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layout-Elemente usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie haben verschiedene Möglichkeiten, generierte statische Ansichtsdateien zu bereinigen. Weitere Informationen finden [ unter „Bereinigen des Cache für statische ](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache)&quot;.
 
 **Bereitstellen von statischen Ansichtsdateien**:
 
-1. Melden Sie sich beim Commerce-Server an oder [&#x200B; Sie zum Dateisystembesitzer &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Commerce-Server an oder [ Sie zum Dateisystembesitzer ](../../installation/prerequisites/file-system/overview.md).
 1. Löschen Sie den Inhalt von `<magento_root>/pub/static` mit Ausnahme der `.htaccess`. Diese Datei nicht löschen.
 1. Führen Sie das Bereitstellungs-Tool für statische Ansichtsdateien `<magento_root>/bin/magento setup:static-content:deploy` aus.
 
@@ -45,7 +45,7 @@ Sie müssen statische Ansichtsdateien manuell unter Verwendung des in diesem The
 
    Befehlsoptionen:
 
-   ```bash
+   ```shell
    bin/magento setup:static-content:deploy [<languages>] [-t|--theme[="<theme>"]] [--exclude-theme[="<theme>"]] [-l|--language[="<language>"]] [--exclude-language[="<language>"]] [-a|--area[="<area>"]] [--exclude-area[="<area>"]] [-j|--jobs[="<number>"]]  [--no-javascript] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [-f|--force]
    ```
 
@@ -53,7 +53,7 @@ In der folgenden Tabelle werden die Parameter und Werte dieses Befehls erläuter
 
 | Option | Beschreibung | Erforderlich? |
 | ------ | ----------- | --------- |
-| `<languages>` | Durch Leerzeichen getrennte Liste von [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php)-Sprachcodes, für die statische Ansichtsdateien ausgegeben werden sollen. (Der Standardwert lautet `en_US`.)<br>Finden Sie die Liste, indem Sie ausführen: `bin/magento info:language:list` | Nein |
+| `<languages>` | Durch Leerzeichen getrennte Liste von [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php)-Sprachcodes, für die statische Ansichtsdateien ausgegeben werden sollen. (Der Standardwert lautet `en_US`.)<br>Suchen der Liste durch Ausführen von: `bin/magento info:language:list` | Nein |
 | `--language (-l)` | Generieren Sie Dateien nur für die angegebenen Sprachen. Die Standardeinstellung ohne angegebene Option besteht darin, Dateien für alle ISO-639-Sprachcodes zu generieren. Sie können den Namen jeweils eines Sprach-Codes angeben. Der Standardwert ist **all**.<br>Beispiel: `--language en_US --language es_ES` | Nein |
 | `--exclude-language` | Generieren von Dateien für die angegebenen Sprachcodes. Wenn keine Option angegeben ist, wird standardmäßig nichts ausgeschlossen. Sie können den Namen eines Sprach-Codes oder eine kommagetrennte Liste von Sprach-Codes angeben. Der Standardwert ist **none**. | Nein |
 | `--theme <theme>` | Designs, für die statische Inhalte bereitgestellt werden sollen. Der Standardwert ist **all**.<br>Beispiel: `--theme Magento/blank --theme Magento/luma` | Nein |
@@ -87,13 +87,13 @@ Im Folgenden finden Sie einige Beispielbefehle.
 
 Mit dem folgenden Befehl werden statische Inhalte für die US-amerikanische Sprache (`en_US`) bereitgestellt, das mit Commerce bereitgestellte Luma-Design ausgeschlossen und HTML-Dateien nicht minimiert.
 
-```bash
+```shell
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify
 ```
 
 Beispielausgabe:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -112,13 +112,13 @@ Successful: 1993 files; errors: 0
 
 Der folgende Befehl stellt nur JavaScript mit vier Aufträgen mit einer standardmäßigen Bereitstellungsstrategie bereit:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s standard --no-misc --no-html --no-fonts --no-images --no-less --no-css -j 4
 ```
 
 Der folgende Befehl stellt nur CSS und LESS mit drei Aufträgen und einer schnellen Bereitstellungsstrategie bereit:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts --no-images --no-javascript -j 3
 ```
 
@@ -126,13 +126,13 @@ bin/magento setup:static-content:deploy -s quick --no-misc --no-html --no-fonts 
 
 Der folgende Befehl generiert statische Ansichtsdateien für alle Sprachen, nur für den Frontend-Bereich und nur für das Commerce Luma-Design, ohne Schriftarten zu generieren:
 
-```bash
+```shell
 bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magento/luma
 ```
 
 Beispielausgabe:
 
-```
+```text
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -162,7 +162,7 @@ Gehen Sie dazu wie folgt vor:
 
 **Problem**: Beim Ausführen des Bereitstellungs-Tools für statische Ansichtsdateien wird der folgende Fehler angezeigt:
 
-```
+```text
 ERROR: You need to install the Commerce application before running this utility.
 ```
 
@@ -171,7 +171,7 @@ ERROR: You need to install the Commerce application before running this utility.
 Führen Sie dazu folgende Schritte aus:
 
 1. Installieren Sie die Commerce-Software über [Befehlszeile](../../installation/composer.md).
-1. Melden Sie sich beim Anwendungsserver als Eigentümer des Dateisystems an oder [wechseln Sie &#x200B;](../../installation/prerequisites/file-system/overview.md) zu diesem.
+1. Melden Sie sich beim Anwendungsserver als Eigentümer des Dateisystems an oder [wechseln Sie ](../../installation/prerequisites/file-system/overview.md) zu diesem.
 1. Löschen Sie den Inhalt `<app_root>/pub/static` Verzeichnisses mit Ausnahme der `.htaccess`. Diese Datei nicht löschen.
 1. Statische Ansichtsdateien bereitstellen: `bin/magento setup:static-content:deploy`
 

@@ -2,9 +2,9 @@
 title: Verwalten der Indexer
 description: Erfahren Sie, wie Sie Adobe Commerce-Indexer mithilfe von Befehlszeilen-Tools anzeigen und verwalten können. Entdecken Sie Indexerbefehle, Statusprüfungen und Neuindizierungsverfahren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1025'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder Produktempfehlungen verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/de/docs/commerce/price-indexer/price-indexing) zu verwenden.
+> Adobe Commerce-Händler, die die Live-Suche, den Katalog-Service oder Produktempfehlungen verwenden, haben die Möglichkeit, eine [SaaS-basierte Preisindizierung](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing) zu verwenden.
 
 ## Anzeigen des Indexerstatus
 
@@ -89,7 +89,7 @@ Verwenden Sie diesen Befehl, um alle oder ausgewählte Indexer nur einmal neu zu
 
 >[!INFO]
 >
->Dieser Befehl indiziert nur einmal neu. Um Indexer auf dem neuesten Stand zu halten, müssen Sie einen [Cron-Auftrag“ &#x200B;](../cli/configure-cron-jobs.md).
+>Dieser Befehl indiziert nur einmal neu. Um Indexer auf dem neuesten Stand zu halten, müssen Sie einen [Cron-Auftrag“ ](../cli/configure-cron-jobs.md).
 
 Befehlsoptionen:
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 und höher**: Der [!DNL Customer Grid] Indexer unterstützt sowohl [!UICONTROL Update on Save]- als auch [!UICONTROL Update by Schedule] Modi und [!UICONTROL Update by Schedule] standardmäßig.
 >
->Siehe [Best Practices für die Indexerkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) im _Implementierungs-Playbook_.
+>Siehe [Best Practices für die Indexerkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) im _Implementierungs-Playbook_.
 
 >[!INFO]
 >
->Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) ein. Dadurch wird sichergestellt, dass keine Datenbanksperren auftreten.
+>Bevor Sie den Indexermodus wechseln, stellen Sie Ihre Website auf [Wartungsmodus](../../installation/tutorials/maintenance-mode.md) und [Deaktivieren von Cron-Aufträgen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) ein. Dadurch wird sichergestellt, dass keine Datenbanksperren auftreten.
 
 So legen Sie die Indexerkonfiguration fest:
 
@@ -295,7 +295,7 @@ bin/magento indexer:set-mode schedule catalog_category_product catalog_product_c
 
 Beispielergebnis:
 
-```
+```text
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
@@ -327,7 +327,7 @@ bin/magento indexer:set-status suspended catalog_category_product catalog_produc
 
 Beispielergebnis:
 
-```
+```text
 Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
 Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
 ```

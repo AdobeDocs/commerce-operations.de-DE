@@ -4,10 +4,11 @@ description: Wenden Sie den Patch ACSD-67039 an, um das Adobe Commerce-Problem z
 feature: Customers, Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 231555e071ebc5edb36182f6b8d4f60acee4f61e
+exl-id: e5995e28-b6b5-4955-a52a-895842c6b6e8
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 0%
+source-wordcount: '394'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +28,7 @@ Mit dem Patch ACSD-67039 wird das Problem behoben, dass aufgrund der Validierung
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -42,7 +43,7 @@ Die Kodierung diakritischer Zeichen führt bei `rp_token` zu Validierungsfehlern
    *D337B914E91FF703B1E94BA4156AADF0*
 1. Legen Sie die folgenden Werte für jeden Kunden unter der `customer_entity`-Tabelle in der Datenbank fest:
 *`rp_token` = *INCR4869*
-*`rp_token_created_at` = *2021-04-29 20:06:14*
+*`rp_token_created_at` =* 2021-04-29 20:06:14*
 1. Navigieren Sie im Admin-Bedienfeld zu **[!UICONTROL Customers]** > **[!UICONTROL All Customers]**.
 1. Bearbeiten Sie den Kunden, für den Sie die oben genannten Werte aktualisiert haben.
 1. Klicken Sie auf **[!UICONTROL Save Customer]** oder **[!UICONTROL Save and Continue Edit]**.
@@ -56,7 +57,7 @@ Die Kundenwerte wurden erfolgreich gespeichert.
 Der Kundendatensatz wird nicht gespeichert und der Administrator sieht die Fehlermeldung „Beim Speichern des Kunden ist *Fehler aufgetreten.*
 Die `system.log` enthält den folgenden Fehler:
 
-```
+```text
 report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete multibyte character in input string in /vendor/magento/module-eav/Model/Attribute/Data/Text.php on line 190
 ```
 
@@ -64,8 +65,8 @@ report.CRITICAL: Exception message: Notice: iconv(): Detected an incomplete mult
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > &#x200B;](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > ](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen
 

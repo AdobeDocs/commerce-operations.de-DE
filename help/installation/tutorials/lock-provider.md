@@ -2,9 +2,9 @@
 title: Konfigurieren des Sperranbieters
 description: Führen Sie diese Schritte aus, um zu verhindern, dass doppelte Cron-Aufträge und Cron-Gruppen in Ihrer Adobe Commerce-Bereitstellung ausgeführt werden.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Konfigurieren Sie einen Sperranbieter, um den Start doppelter Cron-Aufträge und
 
 Adobe Commerce verwendet die -Datenbank, um Sperren standardmäßig zu speichern. Wenn Sie mehrere Knoten auf Ihren Servern haben, empfehlen wir die Verwendung von ZooKeeper als Sperranbieter.
 
-Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Befehlsverwendung
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 
@@ -38,7 +38,7 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | -Name | Wert | Erforderlich? |
 |--- |--- |--- |
-| `--lock-provider` | Anbieternamen sperren: `db`, `zookeeper` oder `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
+| `--lock-provider` | Name des Sperranbieters: `db`, `zookeeper` oder `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
 | `--lock-db-prefix` | Das spezifische DB-Präfix, um Sperrkonflikte bei Verwendung des `db`-Anbieters zu vermeiden.<br><br>Der Standardwert: `NULL` | Nein |
 | `--lock-zookeeper-host` | Host und Port für die Verbindung mit dem ZooKeeper-Cluster bei Verwendung des `zookeeper`.<br><br>Beispiel: `127.0.0.1:2181` | Ja, wenn Sie `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | Der Pfad, in dem ZooKeeper Sperren speichert.<br><br>Der Standardpfad lautet: `/magento/locks` | Nein |

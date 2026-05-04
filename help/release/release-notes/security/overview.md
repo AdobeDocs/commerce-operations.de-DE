@@ -1,10 +1,10 @@
 ---
 title: Versionshinweise zum Sicherheits-Patch
-description: Lesen Sie die Versionshinweise für Adobe Commerce-Sicherheits-Patches.
+description: Lesen Sie die Versionshinweise für Adobe Commerce-Sicherheits-Patches für unterstützte Versionen, einschließlich Sicherheitsverbesserungen, Fehlerbehebungen und dem, was jede Patch-Version enthält.
 exl-id: a3d78211-41ff-4df2-ad29-21465c096027
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '40'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---
