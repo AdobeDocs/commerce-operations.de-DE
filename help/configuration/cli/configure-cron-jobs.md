@@ -57,7 +57,7 @@ Die crontab von Commerce befindet sich in `#~ MAGENTO START` und `#~ MAGENTO END
 
 So erstellen Sie die crontab von Commerce:
 
-1. Melden Sie sich als „Dateisystembesitzer“ an [ wechseln Sie zu diesem ](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich als „Dateisystembesitzer“ an [&#x200B; wechseln Sie zu diesem &#x200B;](../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.
 1. Geben Sie den folgenden Befehl ein:
 

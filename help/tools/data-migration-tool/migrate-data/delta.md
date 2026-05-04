@@ -25,10 +25,10 @@ Das inkrementelle Migrations-Tool installiert deltalog-Tabellen (mit Präfix `m2
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich beim Anwendungsserver als [Dateisystemeigentümer“ ](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Anwendungsserver als [Dateisystemeigentümer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie in das `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem `PATH` hinzugefügt wird.
 
-Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
 
 ## Führen Sie den inkrementellen Migrationsbefehl aus
 

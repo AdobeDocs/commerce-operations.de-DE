@@ -16,7 +16,7 @@ Bevor Sie diesen Befehl ausführen, müssen Sie [die Bereitstellungskonfiguratio
 
 ## Admin-URI anzeigen
 
-In diesem Abschnitt wird die Verwendung der Befehlszeile zum Anzeigen der Admin-URI (Uniform Resource Identifier[ beschrieben](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2).
+In diesem Abschnitt wird die Verwendung der Befehlszeile zum Anzeigen der Admin-URI (Uniform Resource Identifier[&#x200B; beschrieben](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2).
 
 Befehlsoptionen:
 

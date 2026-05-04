@@ -13,15 +13,15 @@ ht-degree: 0%
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus:
 
-* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[ beschriebenen Anforderungen ](../system-requirements.md).
+* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[&#x200B; beschriebenen Anforderungen &#x200B;](../system-requirements.md).
 
-* Alle ([) Aufgaben ](../prerequisites/overview.md).
+* Alle ([) Aufgaben &#x200B;](../prerequisites/overview.md).
 
 * Führen Sie die ersten Installationsschritte aus. Siehe [Ihr Installations- oder Aktualisierungspfad](../overview.md).
 
 * Wechseln Sie nach der Anmeldung beim Anwendungsserver [zum Dateisystembesitzer](../prerequisites/file-system/overview.md).
 
-* Lesen Sie [ Übersicht über „Erste Schritte mit der Befehlszeileninstallation](../composer.md).
+* Lesen Sie [&#x200B; Übersicht über „Erste Schritte mit der Befehlszeileninstallation](../composer.md).
 
 >[!NOTE]
 >

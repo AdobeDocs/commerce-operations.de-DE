@@ -19,7 +19,7 @@ Adobe unterstützt die Apache-Versionen, die in den [Systemanforderungen](../../
 
 Beginnen Sie mit dem Abschnitt, der Ihrer Umgebung entspricht:
 
-- Wenn Apache bereits installiert ist, beginnen Sie mit [Apache-Anforderungen ](#review-apache-requirements).
+- Wenn Apache bereits installiert ist, beginnen Sie mit [Apache-Anforderungen &#x200B;](#review-apache-requirements).
 - Wenn Sie Apache auf Ubuntu installieren oder aktualisieren müssen, gehen Sie zu [Apache auf Ubuntu installieren oder aktualisieren](#installing-or-upgrading-apache-on-ubuntu).
 - Wenn Sie Apache unter CentOS installieren müssen, navigieren Sie zu [Apache unter CentOS installieren](#installing-apache-on-centos).
 
@@ -171,7 +171,7 @@ Wenn Apache bereits installiert ist und Sie eine Version verwenden, die älter a
    apache2 -v
    ```
 
-1. Vergewissern Sie sich, dass die installierte Version mit der Version übereinstimmt, die für Ihre Adobe Commerce-Version in [Systemanforderungen) unterstützt ](../../system-requirements.md).
+1. Vergewissern Sie sich, dass die installierte Version mit der Version übereinstimmt, die für Ihre Adobe Commerce-Version in [Systemanforderungen) unterstützt &#x200B;](../../system-requirements.md).
 
 1. Aktivieren [Umschreibungen und `.htaccess` für Ubuntu](#enable-rewrites-and-htaccess-for-ubuntu).
 

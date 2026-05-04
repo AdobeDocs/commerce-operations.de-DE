@@ -24,7 +24,7 @@ Bei einer modularen Anwendung kann die Anzahl der Server-Anfragen bis in die Hun
 
 Commerce unterstützt Bundles, um die Anzahl der Server-Anfragen zu reduzieren. Die Bündelung ist standardmäßig deaktiviert. Sie können sie in **[!UICONTROL Stores]** > **Einstellungen** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]** oder über die Befehlszeile aktivieren.
 
-Unter [Tipps zum ](configuration.md#bundling-tips)&quot; in *Best Practices für die Konfiguration* finden Sie Tools von Drittanbietern, HTTP/2 und Anleitungen zur veralteten JS- und CSS-Zusammenführung.
+Unter [Tipps zum &#x200B;](configuration.md#bundling-tips)&quot; in *Best Practices für die Konfiguration* finden Sie Tools von Drittanbietern, HTTP/2 und Anleitungen zur veralteten JS- und CSS-Zusammenführung.
 
 ![Bundling](../assets/performance/images/bundlingImage.png)
 
@@ -59,7 +59,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 Dieser Befehl führt alle synchronen JavaScript-Dateien in einer Datei zusammen. Das Aktivieren der Zusammenführung ohne gleichzeitiges Aktivieren der Bündelung ist nicht nützlich, da Commerce [!DNL RequireJS] verwendet. Wenn Sie die Bündelung nicht aktivieren, führt Commerce nur [!DNL RequireJS] und dessen Konfiguration zusammen. Wenn Sie sowohl Bündelung als auch Zusammenführung aktivieren, erstellt Commerce eine einzige JavaScript-Datei:
 
-![Zusammenführung realer ](../assets/performance/images/magentoMergingDevWorld.png)
+![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## Reale Render-Zeiten
 
@@ -73,7 +73,7 @@ Bei langsamer 3G-Konnektivität dauert es etwa 44 Sekunden, bis alle Bundles fü
 
 Dasselbe gilt für die Zusammenführung der Bundles in einer Datei. Benutzer konnten immer noch etwa 42 Sekunden auf das erste Laden der Seite warten, wie hier gezeigt:
 
-![Zusammenführung realer ](../assets/performance/images/magentoMergingRealWorld.png)
+![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingRealWorld.png)
 
 Mit einem fortschrittlicheren Ansatz für die JavaScript-Bündelung können wir diese Ladezeiten verbessern.
 

@@ -72,7 +72,7 @@ Je nach Einstiegspunkt für das Commerce-Programm können Sie `.htaccess` an jed
 
 1. Öffnen Sie eine der zuvor genannten Dateien in einem Texteditor und fügen Sie die gewünschte Einstellung hinzu oder heben Sie die Auskommentierung auf.
 
-   Um beispielsweise einen „Modus[ anzugeben, heben ](application-modes.md) den Kommentar für Folgendes auf:
+   Um beispielsweise einen „Modus[&#x200B; anzugeben, heben &#x200B;](application-modes.md) den Kommentar für Folgendes auf:
 
    ```conf
    #   SetEnv MAGE_PROFILER firebug

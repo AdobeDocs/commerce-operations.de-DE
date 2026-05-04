@@ -38,7 +38,7 @@ Beachten Sie außerdem die folgenden Punkte bei der Implementierung von Code-Üb
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

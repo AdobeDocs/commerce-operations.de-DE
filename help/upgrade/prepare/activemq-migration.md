@@ -168,7 +168,7 @@ Sie können RabbitMQ deinstallieren, wenn es nicht mehr benötigt wird.
 
 ### Schritt 8: Installieren und Konfigurieren von ActiveMQ in Adobe Commerce
 
-Informationen zum Durchführen von ActiveMQ-Installations- und Konfigurationsaufgaben, wie z. B. Konfigurieren des STOMP-Protokolls und Überprüfen der Verbindung, finden Sie [ „Installations- und Konfigurationshandbuch](../../installation/prerequisites/activemq.md).
+Informationen zum Durchführen von ActiveMQ-Installations- und Konfigurationsaufgaben, wie z. B. Konfigurieren des STOMP-Protokolls und Überprüfen der Verbindung, finden Sie [&#x200B; „Installations- und Konfigurationshandbuch](../../installation/prerequisites/activemq.md).
 
 ### Schritt 9: Cron-Aufträge neu installieren
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Erweiterungen von Drittanbietern verwalten
 
-Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional im [Commerce Marketplace oder ](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystem verpacken und verteilen.
+Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional im [Commerce Marketplace oder &#x200B;](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystem verpacken und verteilen.
 
 Zu den Erweiterungen gehören:
 
@@ -56,7 +56,7 @@ Um eine Erweiterung zu installieren, müssen Sie:
 
 ### Abrufen von Erweiterungsinformationen
 
-Wenn Sie den Namen und die Version der Erweiterung „Composer“ bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit &quot;[ der `composer.json`-Datei“ ](#update-composer-dependencies).
+Wenn Sie den Namen und die Version der Erweiterung „Composer“ bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit &quot;[&#x200B; der `composer.json`-Datei“ &#x200B;](#update-composer-dependencies).
 
 So rufen Sie den Namen und die Version der Erweiterung „Composer“ aus Commerce Marketplace ab:
 
@@ -94,7 +94,7 @@ Fügen Sie den Namen und die Version der Erweiterung zu Ihrer `composer.json` hi
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Geben Sie [Authentifizierungsschlüssel“ ](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername; Ihr privater Schlüssel ist Ihr Kennwort.
+1. Geben Sie [Authentifizierungsschlüssel“ &#x200B;](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername; Ihr privater Schlüssel ist Ihr Kennwort.
 
 1. Warten Sie, bis Composer die Aktualisierung Ihrer Projektabhängigkeiten abgeschlossen hat, und stellen Sie sicher, dass keine Fehler vorhanden sind:
 

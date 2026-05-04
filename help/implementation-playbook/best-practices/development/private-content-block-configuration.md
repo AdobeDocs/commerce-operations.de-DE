@@ -19,7 +19,7 @@ Anstatt die Variable `_isScopePrivate` für private Inhalte zu verwenden, erstel
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

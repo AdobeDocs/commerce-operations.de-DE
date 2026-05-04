@@ -39,7 +39,7 @@ Ein Benutzer mit eingeschränkter Administratorberechtigung kann keine [!UICONTR
 1. Erstellen Sie eine zusätzliche Website-, Store- und Store-Ansicht.
 1. Fügen Sie ein Produkt zum 2. Store hinzu und fügen Sie dann eine Überprüfung hinzu.
 1. Erstellen Sie einen eingeschränkten Admin-Benutzer mit Zugriff nur auf den zweiten Store.
-1. Melden Sie sich als eingeschränkter Admin-Benutzer an, gehen Sie dann zu **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** und setzen Sie den **Status** auf *Genehmigt* oder *Ausstehend*.
+1. Melden Sie sich als eingeschränkter Admin-Benutzer an, gehen Sie dann zu **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** und setzen Sie den **Status** auf *Genehmigt* oder *Ausstehend*.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -65,7 +65,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

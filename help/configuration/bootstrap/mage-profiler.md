@@ -29,7 +29,7 @@ Sie können den Profiler mithilfe einer MAGE_PROFILER-Variablen oder der Befehls
 
 ## MAGE_PROFILER festlegen
 
-Sie können den Wert von `MAGE_PROFILER` auf eine der unter „Festlegen des [ von Bootstrap-Parametern“ beschriebenen Arten ](../bootstrap/set-parameters.md).
+Sie können den Wert von `MAGE_PROFILER` auf eine der unter „Festlegen des [&#x200B; von Bootstrap-Parametern“ beschriebenen Arten &#x200B;](../bootstrap/set-parameters.md).
 
 `MAGE_PROFILER` unterstützt die folgenden Werte:
 
