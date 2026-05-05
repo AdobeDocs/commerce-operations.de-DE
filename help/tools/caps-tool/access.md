@@ -3,9 +3,9 @@ title: Wie greife ich auf zu [!DNL Cloud Automation Patching Service (CAPS)]
 description: Erfahren Sie, wie Sie auf zugreifen und verwenden können [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
 hidefromtoc: true
-source-git-commit: ca388bd78affd4def19a5539d8529f2563d35e8c
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '276'
 ht-degree: 1%
 
 ---

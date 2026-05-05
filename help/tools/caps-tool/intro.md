@@ -3,9 +3,9 @@ title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Erfahren Sie mehr über [!DNL Cloud Automation Patching Service (CAPS)], seine Verwendung, den Zugriff darauf und über Best Practices für automatisiertes Patchen
 hide: true
 hidefromtoc: true
-source-git-commit: 4bb2d597e93379dbe81bae100ccc0b94b39acf26
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Dieses Handbuch richtet sich an Händler und Partner von Adobe Commerce Cloud, d
 
 Erfahren Sie mehr über den Adobe Cloud Automated Patching Service und wie dieses Tool Benutzenden hilft, Sicherheits-Patches schnell zu finden und anzuwenden. Im folgenden Video wird beschrieben, wie Sie über das SWAT-Dashboard darauf zugreifen, Ihr Projekt und Ihre Umgebung auswählen und Patches mit einem Klick anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476256/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Häufige Anwendungsfälle
 

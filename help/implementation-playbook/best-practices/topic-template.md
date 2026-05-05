@@ -5,7 +5,7 @@ role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: f6f690af56df3de737a9f72c2e727b1752bc94b3
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Template instruction: Add details for the product and versions where the best pr
 
 <!-- Example 1: -->
 
-[Alle unterstützten &#x200B;](../../release/versions.md) von:
+[Alle unterstützten ](../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
