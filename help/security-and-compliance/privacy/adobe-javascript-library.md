@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Der Konstruktor akzeptiert während der Instanziierung ein Konfigurationsobjekt mit Parametern.
-Eine Liste [ Konfigurationsparameter finden Sie in der ](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)offiziellen Bibliotheksdokumentation).
+Eine Liste [&#x200B; Konfigurationsparameter finden Sie in der &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)offiziellen Bibliotheksdokumentation).
