@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 88d68b8ad28dfe044808a304d947bde4f5dfb054
+source-git-commit: fcc363df787b5d2f35e8109481d0f9d94c6da9e7
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,11 @@ QPT v1.1.78 enthält die folgenden Patches:
 1. **ACP2E-4540**: Es wurde ein Problem behoben, bei dem die Fotorama-Bibliothek nicht korrekt geladen wurde, sodass nur das erste angehängte Bild sichtbar wurde.
 1. **ACP2E-4555**: Behebt das Problem, dass moderne Telefonnummern &quot;.“ enthalten. oder &quot;/&quot; werden nicht ordnungsgemäß validiert.
 1. **ACP2E-4565**: Behebt das Problem, dass die Abfrage von Company GraphQL „Der aktuelle Kunde ist nicht autorisiert“ zurückgibt, wenn der Header X-Adobe-Company verwendet wird.
-1. **ACP2E-4591**: Es wurde das Problem behoben, dass Kundensegmente, die auf der Bestellanzahl basieren, wie z. B. „Erstkäufer“, nicht aktualisiert haben, wenn Bestellungen über die REST-API aufgegeben wurden.
+1. **[ACP2E-4591](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)**: Es wurde das Problem behoben, dass Kundensegmente, die auf der Bestellanzahl basieren, wie z. B. „Erstkäufer“, nicht aktualisiert haben, wenn Bestellungen über die REST-API aufgegeben wurden.
 1. **[ACP2E-4540](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)**: Behebt das Problem, dass die Fotorama-Bibliothek nicht korrekt geladen wurde, sodass nur das erste angehängte Bild sichtbar wird.
 1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: Behebt das Problem, dass moderne Telefonnummern &quot;.“ enthalten. oder &quot;/&quot; werden nicht ordnungsgemäß validiert.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: Behebt das Problem, dass die Abfrage von Company GraphQL „Der aktuelle Kunde ist nicht autorisiert“ zurückgibt, wenn der Header X-Adobe-Company verwendet wird.
-1. **ACP2E-4591**: Es wurde das Problem behoben, dass Kundensegmente, die auf der Bestellanzahl basieren, wie z. B. „Erstkäufer“, nicht aktualisiert haben, wenn Bestellungen über die REST-API aufgegeben wurden.
 1. **[ACP2E-4609](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)**: Es wird das Problem behoben, dass auf der Seite Meine Anführungszeichen keine Anführungszeichen anzeigt, wenn einige Anführungszeichen gelöschte Produkte enthalten.
-1. **ACP2E-4591**: Es wird das Problem behoben, dass Kundensegmente, die auf der Bestellanzahl basieren, wie z. B. „Erstkäufer“, nicht aktualisiert haben, wenn Bestellungen über die REST-API aufgegeben wurden.
 1. **ACP2E-4609**: Es wird das Problem behoben, dass auf der Seite Meine Anführungszeichen keine Anführungszeichen anzeigt, wenn einige Anführungszeichen gelöschte Produkte enthalten.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: Es wurde das Problem behoben, dass große Medienverzeichnisstrukturen zu langsamen gettree-Antworten führten, was zu verlängerten Ladezeiten für die **[!UICONTROL Media Gallery]** Verzeichnisstruktur führte.
 1. **ACP2E-4628**: Es wird das Problem behoben, dass der Import von Kunden mit E-Mail-Adressen in Großbuchstaben zu dem Fehler „Nicht definierter Array-Schlüssel“ führt, wenn die Kontofreigabe auf „Global“ festgelegt ist.
