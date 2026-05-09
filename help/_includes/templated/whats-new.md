@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665: Untergeordnete Produkte von konfigurierbaren Produkten mit Videos in den Produktgalerien werden nicht angezeigt, wenn sie über die REST-API angefordert werden</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665">ACP2E-4665: Untergeordnete Produkte von konfigurierbaren Produkten mit Videos in den Produktgalerien werden nicht angezeigt, wenn sie über die REST-API angefordert werden</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -45,7 +45,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613: Große Medienverzeichnisstrukturen verlangsamen gettree-Antworten und verzögern das Laden des Verzeichnisbaums der Media Gallery</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613">ACP2E-4613: Große Medienverzeichnisstrukturen verlangsamen gettree-Antworten und verzögern das Laden des Verzeichnisbaums der Media Gallery</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -67,7 +67,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.78 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535: Durch Senden des Formulars „Kennwort vergessen“ wird die Sitzung zerstört oder neu generiert (PHPSESSID-Änderungen) und der Gastkorb wird gelöscht</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.78 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535">ACP2E-4535: Durch Senden des Formulars „Kennwort vergessen“ wird die Sitzung zerstört oder neu generiert (PHPSESSID-Änderungen) und der Gastkorb wird gelöscht</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -75,7 +75,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/953e231d2161d84e2444fa46ac95b93dbba28241">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507: Die Konfiguration von Kennwortoptionen gilt nicht für Anfragen zum Zurücksetzen von Kundenkennwörtern, die durch GraphQL-Mutationen vorgenommen wurden</a> wurde hinzugefügt.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507">ACP2E-4507: Die Konfiguration von Kennwortoptionen gilt nicht für Anfragen zum Zurücksetzen von Kundenkennwörtern, die durch GraphQL-Mutationen vorgenommen wurden</a> wurde hinzugefügt.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -83,7 +83,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b657f2e50d48c9179d1c6b3559ee7e6ee99b306d">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609: Die Seite Meine Anführungszeichen zeigt keine Anführungszeichen an, wenn einige Anführungszeichen gelöschte Produkte enthalten</a>.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609">ACP2E-4609: Die Seite Meine Anführungszeichen zeigt keine Anführungszeichen an, wenn einige Anführungszeichen gelöschte Produkte enthalten</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -91,7 +91,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/670dacfa2bdc211eb9f4ed6788144ba6c1dac678">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.78 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431: Verwandte Produkte, die von Zielregeln abgeglichen werden, werden während des Neuindizierungsprozesses gelöscht</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.78 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431">ACP2E-4431: Verwandte Produkte, die von Zielregeln abgeglichen werden, werden während des Neuindizierungsprozesses gelöscht</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -99,7 +99,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f9424da66669c54eb0a794555ea7df66625f6c71">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416 wurde hinzugefügt: Kundenprämienpunkte werden nicht initialisiert, wenn sie in der Admin erstellt </a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416">ACP2E-4416 wurde hinzugefügt: Kundenprämienpunkte werden nicht initialisiert, wenn sie in der Admin erstellt </a>.</p>
 </td>
       <td>
         Neues Thema, qpt
