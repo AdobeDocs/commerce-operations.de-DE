@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fcc363df787b5d2f35e8109481d0f9d94c6da9e7
+source-git-commit: 24a6d3e2da8666278b0f491e3caaf6b2509c31d8
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,9 @@ QPT v1.1.78 enthält die folgenden Patches:
 1. **ACP2E-4609**: Es wird das Problem behoben, dass auf der Seite Meine Anführungszeichen keine Anführungszeichen anzeigt, wenn einige Anführungszeichen gelöschte Produkte enthalten.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: Es wurde das Problem behoben, dass große Medienverzeichnisstrukturen zu langsamen gettree-Antworten führten, was zu verlängerten Ladezeiten für die **[!UICONTROL Media Gallery]** Verzeichnisstruktur führte.
 1. **ACP2E-4628**: Es wird das Problem behoben, dass der Import von Kunden mit E-Mail-Adressen in Großbuchstaben zu dem Fehler „Nicht definierter Array-Schlüssel“ führt, wenn die Kontofreigabe auf „Global“ festgelegt ist.
+1. **ACP2E-4665**: Es wird das Problem behoben, dass untergeordnete Produkte von konfigurierbaren Produkten, die Videos in den Produktgalerien enthalten, nicht aufgelistet werden, wenn sie über die REST-API angefordert werden.
+1. **ACP2E-4732**: Es wurde ein Problem behoben, bei dem die partielle Indizierung für Kunden mit einer großen Anzahl von Aktualisierungen angehalten wurde, wenn die Spalte version_id in der Changelog-Tabelle den Höchstwert erreichte.
+1. **[ACP2E-4763](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)**: Es wurde ein Problem behoben, bei dem die Abfrage &quot;GraphQL customerOrders“ überhöhte Werte für „original_price_include_tax“ und „original_row_total_include_tax“ zurückgibt, wenn Katalogpreise auf „Einschließlich Steuer“ festgelegt wurden, da die Steuer zweimal angewendet wurde.
 1. **[ACP2E-4732](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4732.md)**: Es wurde ein Problem behoben, bei dem die partielle Indizierung für Kunden mit einer großen Anzahl von Aktualisierungen angehalten wurde, wenn die Spalte version_id in der Changelog-Tabelle den Höchstwert erreichte.
 1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)**: Es wird das Problem behoben, dass untergeordnete Produkte von konfigurierbaren Produkten, die Videos in den Produktgalerien enthalten, nicht aufgelistet werden, wenn sie über die REST-API angefordert werden.
 1. **ACP2E-4665**: Es wird das Problem behoben, dass untergeordnete Produkte von konfigurierbaren Produkten, die Videos in den Produktgalerien enthalten, nicht aufgelistet werden, wenn sie über die REST-API angefordert werden.
