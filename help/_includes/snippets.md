@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt ](/help/configuration/cli/config-cli.md#prerequisites).
+>Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt &#x200B;](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Sicherungsbefehle {#tip-backup-command}
 
@@ -136,4 +136,4 @@ Nach den letzten CSP-/SRI-Änderungen werden static.min.js und mixins.min.js nic
 
 **Hotfix**:
 
-Ein Hotfix ist verfügbar. Weitere [ finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
+Ein Hotfix ist verfügbar. Weitere [&#x200B; finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
