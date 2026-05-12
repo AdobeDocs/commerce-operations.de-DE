@@ -17,7 +17,7 @@ Es gibt einige Unterschiede in den Abhängigkeiten für Commerce in Cloud Manage
 
 >[!NOTE]
 >
->Die Systemanforderungstabellen enthalten die spezifischen Adobe Commerce-Versionen, einschließlich aller explizit gekennzeichneten Beta- oder Early-Access-Versionen. Weitere Informationen [ die neuesten veröffentlichten Versionen ](../release/release-notes/overview.md) Adobe Commerce finden Sie in den Versionshinweisen .
+>Die Systemanforderungstabellen enthalten die spezifischen Adobe Commerce-Versionen, einschließlich aller explizit gekennzeichneten Beta- oder Early-Access-Versionen. Weitere Informationen [&#x200B; die neuesten veröffentlichten Versionen &#x200B;](../release/release-notes/overview.md) Adobe Commerce finden Sie in den Versionshinweisen .
 >
 >Nicht übereinstimmende Dienstversionen in Bezug auf Ihre Commerce-Version können ein Verhalten zur Folge haben, das in unterstützten Umgebungen nicht reproduzierbar ist. In diesen Fällen kann der Support verlangen, dass Sie die Umgebung an einer unterstützten Konfiguration ausrichten (z. B. die Service-Version aktualisieren oder herunterstufen), bevor wir das gemeldete Verhalten untersuchen, beheben oder validieren können. Sobald die Versionen aufeinander abgestimmt sind, kann der Support mit der Untersuchung fortfahren.
 
@@ -33,7 +33,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!TAB Commerce On-Premises]

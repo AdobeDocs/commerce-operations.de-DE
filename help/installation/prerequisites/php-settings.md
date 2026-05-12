@@ -106,7 +106,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationsdateien finden, 
 
 ### Suchen `php.ini` Konfigurationsdatei
 
-Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei ](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
+Um die Webserver-Konfiguration zu finden, führen Sie eine [`phpinfo.php`-Datei &#x200B;](optional-software.md#create-phpinfophp) Ihrem Webbrowser aus und suchen Sie wie folgt nach der `Loaded Configuration File`:
 
 ![PHP-Informationsseite](../../assets/installation/config_phpini-webserver.png)
 
