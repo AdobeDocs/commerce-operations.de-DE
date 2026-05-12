@@ -1,9 +1,9 @@
 ---
 title: Veröffentlichte Versionen
-description: Learn when specific versions of Adobe Commerce were released.
+description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce veröffentlicht wurden.
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
-source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
+source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -12,20 +12,20 @@ ht-degree: 0%
 
 # Veröffentlichte Versionen
 
-This page lists released versions of Adobe Commerce. It contains release dates for every minor, patch, and security release and dates for the end of **_regular_** support. It does not list dates for the end of **_extended_** support.
+Auf dieser Seite sind die veröffentlichten Versionen von Adobe Commerce aufgeführt. Es enthält Veröffentlichungstermine für alle Nebenversionen, Patches und Sicherheits-Versionen sowie Termine für das Ende des **_regulären_** Supports. Es werden keine Daten für das Ende der (erweiterten **_Unterstützung_**.
 
 >[!BEGINSHADEBOX]
 
-Adobe offers a one-year support extension at no additional cost for Adobe Commerce customers on versions 2.4.4 and 2.4.5. The [lifecycle policy](lifecycle-policy.md) lists dates for the end of extended support for those versions.
+Adobe bietet eine einjährige Support-Verlängerung ohne zusätzliche Kosten für Adobe Commerce-Kunden unter den Versionen 2.4.4 und 2.4.5. Die [Lebenszyklusrichtlinie](lifecycle-policy.md) listet Datumsangaben für das Ende der erweiterten Unterstützung für diese Versionen auf.
 
 >[!ENDSHADEBOX]
 
 >[!NOTE]
 >
->- Adobe recommends installing or upgrading Adobe Commerce to the latest security patch available for each release.
->- For other security updates, see [Security Updates for Magento / Adobe Commerce](https://helpx.adobe.com/de/security/products/magento.html).
->- For pricing, see [Adobe Commerce pricing](https://business.adobe.com/de/products/magento/pricing.html).
+>- Adobe empfiehlt, Adobe Commerce auf den neuesten für jede Version verfügbaren Sicherheits-Patch zu installieren oder zu aktualisieren.
+>- Informationen zu anderen Sicherheitsupdates finden Sie unter [Sicherheitsupdates für Magento/Adobe Commerce](https://helpx.adobe.com/security/products/magento.html).
+>- Informationen zu den Preisen finden Sie unter [Adobe Commerce-Preise](https://business.adobe.com/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
-<!-- Last updated from includes: 2026-04-20 02:12:24 -->
+<!-- Last updated from includes: 2026-05-12 12:57:59 -->
