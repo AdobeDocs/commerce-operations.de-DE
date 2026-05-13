@@ -73,7 +73,7 @@ Jetzt überprüfen die APIs die Eingabe ordnungsgemäß und geben einen 400-Fehl
 
 _AC-6419 - [GitHub-Problem](https://github.com/magento/magento2/issues/35934) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Interner Server-Fehler `/V1/order/{orderId}/ship` API-Endpunkt
+#### Interner Server-Fehler `/V1/order/&lbrace;orderId&rbrace;/ship` API-Endpunkt
 
 Das System behebt jetzt den internen Server-Fehler in `/V1/order/{orderId}/ship` API-Endpunkt und gibt einen 400-Fehler zurück, da die Anfrage fehlerhaft ist.
 
@@ -1474,7 +1474,7 @@ Es wurde ein Problem behoben, bei dem der Indexer für Katalogregeln zu viel Spe
 
 _ACP2E-4303 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### Der Vorschau-Link für ] geplante Updates von [CMS leitet zur Wartungsseite weiter
+#### Der Vorschau-Link für &rbrack; geplante Updates von &lbrack;CMS leitet zur Wartungsseite weiter
 
 Vorschau des geplanten Updates des Links zur Startseite mit konfigurierbaren Produkten zeigt die Liste der Produkte korrekt an. Zuvor wurden Benutzer zur Wartungsseite umgeleitet
 

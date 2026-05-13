@@ -56,7 +56,7 @@ Dabei gilt:
 
 >[!TIP]
 >
->**Moderne Symfony-Cache-Implementierung (2.4.9+):** Ab Commerce 2.4.9 können Sie mit der modernen Symfony-Cache-Implementierung vereinfachte Backend-Typen wie `redis`, `valkey` oder `file` verwenden. Siehe [Verwenden von Redis für ](redis-pg-cache.md)-Cache und [Verwenden von Valkey für ](valkey-pg-cache.md)-Cache) für Details.
+>**Moderne Symfony-Cache-Implementierung (2.4.9+):** Ab Commerce 2.4.9 können Sie mit der modernen Symfony-Cache-Implementierung vereinfachte Backend-Typen wie `redis`, `valkey` oder `file` verwenden. Siehe [Verwenden von Redis für &#x200B;](redis-pg-cache.md)-Cache und [Verwenden von Valkey für &#x200B;](valkey-pg-cache.md)-Cache) für Details.
 
 ### Schritt 2: Konfigurieren der Frontend- und Backend-Optionen
 
