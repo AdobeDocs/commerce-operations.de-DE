@@ -2,9 +2,9 @@
 user-guide-title: Konfigurationshandbuch
 user-guide-description: Konfigurieren Sie die Funktionen und Services Ihrer Adobe Commerce-Anwendung.
 feature: Configuration
-source-git-commit: d86b9eb07a9da6dc93234f8a02103c543bbead68
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -34,28 +34,28 @@ ht-degree: 1%
       + [Verwenden von Umgebungsvariablen](deployment/example-environment-variables.md)
 + Cache {#cache}
    + [Übersicht über Caching](cache/caching-overview.md)
-   + [Cache-Typen](cache/cache-types.md)
-   + [Cache-Optionen](cache/cache-options.md)
-   + [L2-Cache](cache/level-two-cache.md)
+   + [Cache-Frontends konfigurieren](cache/cache-types.md)
+   + [Cache-Backend-Optionen](cache/cache-options.md)
+   + [L2-Cache-Konfiguration](cache/level-two-cache.md)
    + Redis {#redis}
-      + [Konfigurieren von Redis](cache/config-redis.md)
-      + [Redis für Standard-Cache verwenden](cache/redis-pg-cache.md)
-      + [Redis für Sitzungsspeicher verwenden](cache/redis-session.md)
-      + [Konfigurieren von ElastiCache für EC2-Instanzen](cache/redis-elasticache-for-ec2.md)
+      + [Installieren und Einrichten von Redis](cache/config-redis.md)
+      + [Konfigurieren von Redis für Standard- und Seiten-Cache](cache/redis-pg-cache.md)
+      + [Konfigurieren von Redis für den Sitzungsspeicher](cache/redis-session.md)
+      + [Konfigurieren von Redis mit AWS ElastiCache](cache/redis-elasticache-for-ec2.md)
    + Tal {#valkey}
-      + [Konfigurieren von Valley](cache/config-valkey.md)
-      + [Valley für Standard-Cache verwenden](cache/valkey-pg-cache.md)
-      + [Valley für Sitzungsspeicherung verwenden](cache/valkey-session.md)
+      + [Installieren und Einrichten von Valley](cache/config-valkey.md)
+      + [Konfigurieren von Valley für Standard- und Seitencache](cache/valkey-pg-cache.md)
+      + [Konfigurieren von Valley für Sitzungsspeicher](cache/valkey-session.md)
    + lackieren {#varnish}
       + [Lackübersicht](cache/config-varnish.md)
       + [Lack installieren](cache/config-varnish-install.md)
-   + [Webserver](cache/config-varnish-server.md)
-   + [Konfigurieren des Commerce-Programms](cache/configure-varnish-commerce.md)
-   + [Erweiterte Lackkonfiguration](cache/config-varnish-advanced.md)
-   + [Cache-Leerung](cache/use-varnish-cache.md)
-   + [Cache-Löschen mehrerer Lackinstanzen](cache/use-multiple-varnish-cache.md)
-   + [Konfiguration der Lackierung überprüfen](cache/config-varnish-final.md)
-   + [ESI-Block Lack](cache/use-varnish-esi.md)
+      + [Webserver konfigurieren](cache/config-varnish-server.md)
+      + [Konfigurieren des Commerce-Programms](cache/configure-varnish-commerce.md)
+      + [Erweiterte Lackkonfiguration](cache/config-varnish-advanced.md)
+      + [Konfiguration der Lackierung überprüfen](cache/config-varnish-final.md)
+      + [Cache-Löschen mit Lack](cache/use-varnish-cache.md)
+      + [Cache-Leerung mit mehreren Lackinstanzen](cache/use-multiple-varnish-cache.md)
+      + [ESI-Block Lack](cache/use-varnish-esi.md)
    + [Cache für statische Inhalte](cache/static-content-signing.md)
 + Befehlszeile {#cli}
    + [Befehlszeilen-Tool](cli/config-cli.md)
@@ -151,4 +151,4 @@ ht-degree: 1%
       + [Geteilte Datenbank überprüfen](storage/multi-master-verify.md)
       + [Datenbankreplikation](storage/multi-master-replication.md)
       + [Auf einzelne Datenbank zurücksetzen](storage/revert-split-database.md)
-+ [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
++ [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

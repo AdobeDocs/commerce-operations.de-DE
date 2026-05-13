@@ -1,7 +1,7 @@
 ---
-source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
+source-git-commit: 44f5debe62afeb55d301a769ca8a3af957e5b6fd
 workflow-type: tm+mt
-source-wordcount: '5029'
+source-wordcount: '5164'
 ht-degree: 0%
 
 ---
@@ -19,19 +19,20 @@ Adobe Commerce verwendet Composer, um PHP-Pakete zu verwalten.
 
 Die `composer.json`-Datei deklariert die Liste der Pakete, während die `composer.lock`-Datei eine vollständige Liste der Pakete speichert (eine Vollversion jedes Pakets und seiner Abhängigkeiten), die zum Erstellen einer Installation von Adobe Commerce verwendet werden.
 
-Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und behandelt die erforderlichen Pakete in Adobe Commerce 2.4.8.
+Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und behandelt die erforderlichen Pakete in Adobe Commerce 2.4.9.
 
 ## Abhängigkeiten
 
-`magento/product-enterprise-edition 2.4.8` weist die folgenden Abhängigkeiten auf:
+`magento/product-enterprise-edition 2.4.9` weist die folgenden Abhängigkeiten auf:
 
-- adobe-commerce/extensions-metapackage: 2.0.1
+- adobe-commerce/adobe-ims-metapackage: ~2.2.4
+- adobe-commerce/extensions-metapackage: ^2.0.3
 - colinmollenhour/cache-backend-file: ^1.4
 - colinmollenhour/cache-backend-redis: ^1.16
 - Colinmollenhour/Credits: ^1,15
 - colinmollenhour/php-redis-session-abstract: ^2.0
-- Komponist/Komponist: ^2.0, !=2.2.16
-- duoSecurity/duo_api_php: ^1.1
+- Komponist/Komponist: ^2.2
+- duoSecurity/duo_api_php: ^1.2
 - duoSecurity/duo_universal_php: ^1.0
 - elasticsearch/elasticsearch: ^8.15
 - ext-bcmMath: *
@@ -54,181 +55,187 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 - ext-zip: *
 - ezyang/htmlPurifier: ^4.17
 - guzzlehttp/guzzle: ^7.5
-- laminas/laminas-captcha: ^2.18
+- laminas/laminas-captcha: ^2.20
 - Laminas/Laminas-Code: ^4.13
-- laminas/laminas-di: ^3.15
+- laminas/laminas-di: ^3.16
 - Laminas/Laminas-Escaper: ^2.13
 - laminas/laminas-eventManager: ^3.11
-- lamellen/lamellen-Vorschub: ^2.22
+- Laminas/Laminas-Feed: ^2.26
 - laminas/laminas-filter: ^2.33
-- laminas/laminas-http: ^2.15
+- laminas/laminas-http: ^2.23
 - Laminas/Laminas-I18N: ^2.17
-- laminas/laminas-modulemanager: ^2.11
-- Laminas/Laminas-MVC: ^3.6
-- laminas/laminas-permissions-acl: ^2.10
+- laminas/laminas-modulemanager: ^2.19
+- laminas/laminas-permissions-acl: ^2.18
+- laminas/laminas-server: ^2.19
 - laminas/laminas-serviceManager: ^3.16
-- laminas/laminas-soap: ^2.10
+- laminas/laminas-soap: ^2.15
 - laminas/laminas-stdlib: ^3.11
-- laminas/laminas-uri: ^2.9
+- laminas/laminas-uri: ^2.14
 - laminas/laminas-validator: ^2.23
+- laminas/laminas-view: ^2.43
 - Liga/FlySystem: ^3.0
 - League/Flysystem-AWS-S3-V3: ^3.0
 - lib-libxml: *
-- Magento/Composer: ^1.10.1-beta1
+- Magento/Composer: ^1.10.2-beta4
 - magento/composer-dependency-version-audit-plugin: ^0.1
-- magento/framework-Foreign-key: 100.4.7
+- magento/framework-Foreign-key: 100.4.8
 - Magento/Magento-Composer-Installer: >=0.4.0
-- Magento/Magento-ZF-DB: ^3.21
-- Magento/Magento2-EE-Base: 2.4.8
-- [magento/module-admin-gws](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws): 100.4.8
-- [magento/module-admin-gws-configurable-product](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-configurable-product): 100.4.5
-- [magento/module-admin-gws-staging](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-staging): 100.4.5
-- [magento/module-advanced-catalog](https://developer.adobe.com/commerce/php/module-reference/module-advanced-catalog): 100.4.5
-- [magento/module-advanced-checkout](https://developer.adobe.com/commerce/php/module-reference/module-advanced-checkout): 100.4.8
-- [magento/module-advanced-rule](https://developer.adobe.com/commerce/php/module-reference/module-advanced-rule): 100.4.5
-- [magento/module-advanced-sales-rule](https://developer.adobe.com/commerce/php/module-reference/module-advanced-sales-rule): 100.4.5
-- [magento/module-application-server](https://developer.adobe.com/commerce/php/module-reference/module-application-server): 100.4.1
-- [magento/module-application-server-new-relic](https://developer.adobe.com/commerce/php/module-reference/module-application-server-new-relic): 100.4.1
-- [magento/module-application-server-performance-monitor](https://developer.adobe.com/commerce/php/module-reference/module-application-server-performance-monitor): 100.4.1
-- [magento/module-application-server-state-monitor](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor): 100.4.1
-- [magento/module-application-server-state-monitor-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor-graph-ql): 100.4.1
-- [magento/module-async-order](https://developer.adobe.com/commerce/php/module-reference/module-async-order): 100.4.4
-- [magento/module-async-order-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-async-order-graph-ql): 100.4.3
-- [magento/module-aws-s3-customer-custom-attributes](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-customer-custom-attributes): 100.4.5
-- [magento/module-aws-s3-gift-card-import-export](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-gift-card-import-export): 100.4.5
-- [magento/module-aws-s3-scheduled-import-export](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-scheduled-import-export): 100.4.5
-- [magento/module-banner](https://developer.adobe.com/commerce/php/module-reference/module-banner): 101.2.8
-- [magento/module-banner-customer-segment](https://developer.adobe.com/commerce/php/module-reference/module-banner-customer-segment): 100.4.6
-- [magento/module-banner-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-banner-graph-ql): 100.4.4
-- [magento/module-banner-staging](https://developer.adobe.com/commerce/php/module-reference/module-banner-staging): 100.4.2
-- [magento/module-bundle-import-export-staging](https://developer.adobe.com/commerce/php/module-reference/module-bundle-import-export-staging): 100.4.5
-- [magento/module-bundle-staging](https://developer.adobe.com/commerce/php/module-reference/module-bundle-staging): 100.4.8
-- [magento/module-catalog-event](https://developer.adobe.com/commerce/php/module-reference/module-catalog-event): 101.1.7
-- [magento/module-catalog-import-export-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-import-export-staging): 100.4.5
-- [magento/module-catalog-inventory-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-inventory-staging): 100.4.6
-- [magento/module-catalog-permissions](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions): 100.4.8
-- [magento/module-catalog-permissions-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions-graph-ql): 100.4.6
-- [magento/module-catalog-rule-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-rule-staging): 100.4.8
-- [magento/module-catalog-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging): 100.4.8
-- [magento/module-catalog-staging-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging-graph-ql): 100.4.7
-- [magento/module-catalog-url-rewrite-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-url-rewrite-staging): 100.4.7
-- [magento/module-checkout-address-search](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search): 100.4.7
-- [magento/module-checkout-address-search-gift-registry](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search-gift-registry): 100.4.4
-- [magento/module-checkout-staging](https://developer.adobe.com/commerce/php/module-reference/module-checkout-staging): 100.4.7
-- [magento/module-cms-staging](https://developer.adobe.com/commerce/php/module-reference/module-cms-staging): 100.4.8
-- [magento/module-configurable-product-staging](https://developer.adobe.com/commerce/php/module-reference/module-configurable-product-staging): 100.4.7
-- [magento/module-custom-attribute-management](https://developer.adobe.com/commerce/php/module-reference/module-custom-attribute-management): 100.4.7
-- [magento/module-customer-balance](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance): 100.4.8
-- [magento/module-customer-balance-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance-graph-ql): 100.4.5
-- [magento/module-customer-custom-attributes](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes): 100.4.8
-- [magento/module-customer-custom-attributes-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes-graph-ql): 100.4.1
-- [magento/module-customer-finance](https://developer.adobe.com/commerce/php/module-reference/module-customer-finance): 100.4.5
-- [magento/module-customer-segment](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment): 102.1.8
-- [magento/module-customer-segment-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment-graph-ql): 100.4.1
-- [magento/module-deferred-total-calculate](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating): 100.4.3
-- [magento/module-downloadable-staging](https://developer.adobe.com/commerce/php/module-reference/module-downloadable-staging): 100.4.7
-- [magento/module-elasticsearch-catalog-permissions](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions): 100.4.4
-- [magento/module-elasticsearch-catalog-permissions-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions-graph-ql): 100.4.3
-- [magento/module-enterprise](https://developer.adobe.com/commerce/php/module-reference/module-enterprise): 100.4.6
-- [magento/module-gift-card](https://developer.adobe.com/commerce/php/module-reference/module-gift-card): 101.3.8
-- [magento/module-gift-card-account](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account): 101.2.8
-- [magento/module-gift-card-account-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account-graph-ql): 100.4.6
-- [magento/module-gift-card-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-graph-ql): 100.4.8
-- [magento/module-gift-card-import-export](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-import-export): 100.4.5
-- [magento/module-gift-card-staging](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-staging): 100.4.5
-- [magento/module-gift-message-staging](https://developer.adobe.com/commerce/php/module-reference/module-gift-message-staging): 100.4.5
-- [magento/module-gift-registry](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry): 101.2.8
-- [magento/module-gift-registry-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry-graph-ql): 100.4.4
-- [magento/module-gift-wrapping](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping): 101.2.7
-- [magento/module-gift-wrapping-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-graph-ql): 100.4.5
-- [magento/module-gift-wrapping-staging](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-staging): 100.4.5
-- [magento/module-google-optimizer-staging](https://developer.adobe.com/commerce/php/module-reference/module-google-optimizer-staging): 100.4.5
-- [magento/module-google-tag-manager](https://developer.adobe.com/commerce/php/module-reference/module-google-tag-manager): 100.4.8
-- [magento/module-grouped-product-staging](https://developer.adobe.com/commerce/php/module-reference/module-grouped-product-staging): 100.4.6
-- [magento/module-import-csv](https://developer.adobe.com/commerce/php/module-reference/module-import-csv): 100.4.2
-- [magento/module-import-csv-api](https://developer.adobe.com/commerce/php/module-reference/module-import-csv-api): 100.4.2
-- [magento/module-import-json](https://developer.adobe.com/commerce/php/module-reference/module-import-json): 100.4.1
-- [magento/module-import-json-api](https://developer.adobe.com/commerce/php/module-reference/module-import-json-api): 100.4.1
-- [magento/module-invite](https://developer.adobe.com/commerce/php/module-reference/module-invitation): 100.4.7
-- [magento/module-layered-navigation-staging](https://developer.adobe.com/commerce/php/module-reference/module-layered-navigation-staging): 100.4.5
-- [magento/module-logging](https://developer.adobe.com/commerce/php/module-reference/module-logging): 101.2.8
-- [magento/module-login-as-customer-logging](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-logging): 100.4.8
-- [magento/module-login-as-customer-website-restriction](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-website-restriction): 100.4.6
-- [magento/module-media-content-catalog-staging](https://developer.adobe.com/commerce/php/module-reference/module-media-content-catalog-staging): 100.4.5
-- [magento/module-msrp-staging](https://developer.adobe.com/commerce/php/module-reference/module-msrp-staging): 100.4.6
-- [magento/module-multicoupon](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon): 100.4.1
-- [magento/module-multicoupon-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-graph-ql): 100.4.1
-- [magento/module-multicoupon-ui](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-ui): 100.4.1
-- [magento/module-multiple-wishlist](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist): 100.4.8
-- [magento/module-multiple-wishlist-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist-graph-ql): 100.4.4
-- [magento/module-payment-staging](https://developer.adobe.com/commerce/php/module-reference/module-payment-staging): 100.4.5
-- [magento/module-persistent-history](https://developer.adobe.com/commerce/php/module-reference/module-persistent-history): 100.4.5
-- [magento/module-price-permissions](https://developer.adobe.com/commerce/php/module-reference/module-price-permissions): 100.4.4
-- [magento/module-product-video-staging](https://developer.adobe.com/commerce/php/module-reference/module-product-video-staging): 100.4.5
-- [magento/module-promotion-permissions](https://developer.adobe.com/commerce/php/module-reference/module-promotion-permissions): 100.4.5
-- [magento/module-quote-commerce-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-quote-commerce-graph-ql): 100.4.1
-- [magento/module-quote-gift-card-options](https://developer.adobe.com/commerce/php/module-reference/module-quote-gift-card-options): 100.4.5
-- [magento/module-quote-staging](https://developer.adobe.com/commerce/php/module-reference/module-quote-staging): 100.4.5
-- [magento/module-reminder](https://developer.adobe.com/commerce/php/module-reference/module-reminder): 101.2.7
-- [magento/module-remote-storage-commerce](https://developer.adobe.com/commerce/php/module-reference/module-remote-storage-commerce): 100.4.4
-- [magento/module-resource-connections](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections): 100.4.5
-- [magento/module-review-staging](https://developer.adobe.com/commerce/php/module-reference/module-review-staging): 100.4.5
-- [magento/module-reward](https://developer.adobe.com/commerce/php/module-reference/module-reward): 101.2.8
-- [magento/module-reward-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-reward-graph-ql): 100.4.7
-- [magento/module-reward-staging](https://developer.adobe.com/commerce/php/module-reference/module-reward-staging): 100.4.5
-- [magento/module-rma](https://developer.adobe.com/commerce/php/module-reference/module-rma): 101.2.8
-- [magento/module-rma-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-rma-graph-ql): 100.4.7
-- [magento/module-rma-staging](https://developer.adobe.com/commerce/php/module-reference/module-rma-staging): 100.4.5
-- [magento/module-sales-archive](https://developer.adobe.com/commerce/php/module-reference/module-sales-archive): 101.0.6
-- [magento/module-sales-rule-staging](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule-staging): 100.4.7
-- [magento/module-scalable-checkout](https://developer.adobe.com/commerce/php/module-reference/module-scalable-checkout): 100.4.7
-- [magento/module-scalable-inventory](https://developer.adobe.com/commerce/php/module-reference/module-scalable-inventory): 100.4.6
-- [magento/module-scalable-oms](https://developer.adobe.com/commerce/php/module-reference/module-scalable-oms): 100.4.6
-- [magento/module-scheduled-import-export](https://developer.adobe.com/commerce/php/module-reference/module-scheduled-import-export): 101.2.8
-- [magento/module-search-staging](https://developer.adobe.com/commerce/php/module-reference/module-search-staging): 100.4.6
-- [magento/module-staging](https://developer.adobe.com/commerce/php/module-reference/module-staging): 101.2.8
-- [magento/module-staging-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-staging-graph-ql): 100.4.5
-- [magento/module-support](https://developer.adobe.com/commerce/php/module-reference/module-support): 101.2.7
-- [magento/module-swat](https://developer.adobe.com/commerce/php/module-reference/module-swat): 100.4.6
-- [magento/module-target-rule](https://developer.adobe.com/commerce/php/module-reference/module-target-rule): 101.2.8
-- [magento/module-target-rule-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-target-rule-graph-ql): 100.4.5
-- [magento/module-versions-cms](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms): 101.2.8
-- [magento/module-versions-cms-page-cache](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-page-cache): 100.4.4
-- [magento/module-versions-cms-url-rewrite](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite): 100.4.6
-- [magento/module-versions-cms-url-rewrite-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite-graph-ql): 100.4.4
-- [Magento/module-visual-merchandiser](https://developer.adobe.com/commerce/php/module-reference/module-visual-merchandiser): 100.4.8
-- [magento/module-webapi-rest-gws](https://developer.adobe.com/commerce/php/module-reference/module-webapi-rest-gws): 100.4.0
-- [magento/module-website-restriction](https://developer.adobe.com/commerce/php/module-reference/module-website-restriction): 100.4.7
-- [magento/module-weee-staging](https://developer.adobe.com/commerce/php/module-reference/module-weee-staging): 100.4.5
-- [magento/module-wishlist-gift-card](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card): 100.4.4
-- [magento/module-wishlist-gift-card-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card-graph-ql): 100.4.4
-- Magento/Page-Builder-Commerce: 1.7.5
-- Magento/Product-Community-Edition: 2.4.8
-- magento/security-package-ee: 1.0.3
-- magento/theme-adminhtml-spectrum: 100.4.3
+- Magento/Magento2-EE-Base: 2.4.9
+- [magento/module-admin-gws](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws): 100.4.9
+- [magento/module-admin-gws-configurable-product](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-configurable-product): 100.4.6
+- [magento/module-admin-gws-staging](https://developer.adobe.com/commerce/php/module-reference/module-admin-gws-staging): 100.4.6
+- [magento/module-advanced-catalog](https://developer.adobe.com/commerce/php/module-reference/module-advanced-catalog): 100.4.6
+- [magento/module-advanced-checkout](https://developer.adobe.com/commerce/php/module-reference/module-advanced-checkout): 100.4.9
+- [magento/module-advanced-rule](https://developer.adobe.com/commerce/php/module-reference/module-advanced-rule): 100.4.6
+- [magento/module-advanced-sales-rule](https://developer.adobe.com/commerce/php/module-reference/module-advanced-sales-rule): 100.4.6
+- [magento/module-application-server](https://developer.adobe.com/commerce/php/module-reference/module-application-server): 100.4.2
+- [magento/module-application-server-new-relic](https://developer.adobe.com/commerce/php/module-reference/module-application-server-new-relic): 100.4.2
+- [magento/module-application-server-performance-monitor](https://developer.adobe.com/commerce/php/module-reference/module-application-server-performance-monitor): 100.4.2
+- [magento/module-application-server-state-monitor](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor): 100.4.2
+- [magento/module-application-server-state-monitor-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-application-server-state-monitor-graph-ql): 100.4.2
+- [magento/module-async-order](https://developer.adobe.com/commerce/php/module-reference/module-async-order): 100.4.5
+- [magento/module-async-order-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-async-order-graph-ql): 100.4.4
+- [magento/module-aws-s3-customer-custom-attributes](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-customer-custom-attributes): 100.4.6
+- [magento/module-aws-s3-gift-card-import-export](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-gift-card-import-export): 100.4.6
+- [magento/module-aws-s3-scheduled-import-export](https://developer.adobe.com/commerce/php/module-reference/module-aws-s3-scheduled-import-export): 100.4.6
+- [magento/module-banner](https://developer.adobe.com/commerce/php/module-reference/module-banner): 101.2.9
+- [magento/module-banner-customer-segment](https://developer.adobe.com/commerce/php/module-reference/module-banner-customer-segment): 100.4.7
+- [magento/module-banner-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-banner-graph-ql): 100.4.5
+- [magento/module-banner-staging](https://developer.adobe.com/commerce/php/module-reference/module-banner-staging): 100.4.3
+- [magento/module-bundle-import-export-staging](https://developer.adobe.com/commerce/php/module-reference/module-bundle-import-export-staging): 100.4.6
+- [magento/module-bundle-staging](https://developer.adobe.com/commerce/php/module-reference/module-bundle-staging): 100.4.9
+- [magento/module-catalog-event](https://developer.adobe.com/commerce/php/module-reference/module-catalog-event): 101.1.8
+- [magento/module-catalog-import-export-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-import-export-staging): 100.4.6
+- [magento/module-catalog-inventory-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-inventory-staging): 100.4.7
+- [magento/module-catalog-permissions](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions): 100.4.9
+- [magento/module-catalog-permissions-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-catalog-permissions-graph-ql): 100.4.7
+- [magento/module-catalog-rule-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-rule-staging): 100.4.9
+- [magento/module-catalog-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging): 100.4.9
+- [magento/module-catalog-staging-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-catalog-staging-graph-ql): 100.4.8
+- [magento/module-catalog-url-rewrite-staging](https://developer.adobe.com/commerce/php/module-reference/module-catalog-url-rewrite-staging): 100.4.8
+- [magento/module-checkout-address-search](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search): 100.4.8
+- [magento/module-checkout-address-search-gift-registry](https://developer.adobe.com/commerce/php/module-reference/module-checkout-address-search-gift-registry): 100.4.5
+- [magento/module-checkout-staging](https://developer.adobe.com/commerce/php/module-reference/module-checkout-staging): 100.4.8
+- [magento/module-cms-staging](https://developer.adobe.com/commerce/php/module-reference/module-cms-staging): 100.4.9
+- [magento/module-configurable-product-staging](https://developer.adobe.com/commerce/php/module-reference/module-configurable-product-staging): 100.4.8
+- [magento/module-custom-attribute-management](https://developer.adobe.com/commerce/php/module-reference/module-custom-attribute-management): 100.4.8
+- [magento/module-customer-balance](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance): 100.4.9
+- [magento/module-customer-balance-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-customer-balance-graph-ql): 100.4.6
+- [magento/module-customer-custom-attributes](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes): 100.4.9
+- [magento/module-customer-custom-attributes-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-customer-custom-attributes-graph-ql): 100.4.2
+- [magento/module-customer-finance](https://developer.adobe.com/commerce/php/module-reference/module-customer-finance): 100.4.6
+- [magento/module-customer-segment](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment): 102.1.9
+- [magento/module-customer-segment-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-customer-segment-graph-ql): 100.4.2
+- [magento/module-deferred-total-calculate](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating): 100.4.4
+- [magento/module-downloadable-staging](https://developer.adobe.com/commerce/php/module-reference/module-downloadable-staging): 100.4.8
+- [magento/module-elasticsearch-catalog-permissions](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions): 100.4.5
+- [magento/module-elasticsearch-catalog-permissions-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch-catalog-permissions-graph-ql): 100.4.4
+- [magento/module-enterprise](https://developer.adobe.com/commerce/php/module-reference/module-enterprise): 100.4.7
+- [magento/module-gift-card](https://developer.adobe.com/commerce/php/module-reference/module-gift-card): 101.3.9
+- [magento/module-gift-card-account](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account): 101.2.9
+- [magento/module-gift-card-account-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-account-graph-ql): 100.4.7
+- [magento/module-gift-card-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-graph-ql): 100.4.9
+- [magento/module-gift-card-import-export](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-import-export): 100.4.6
+- [magento/module-gift-card-staging](https://developer.adobe.com/commerce/php/module-reference/module-gift-card-staging): 100.4.6
+- [magento/module-gift-message-staging](https://developer.adobe.com/commerce/php/module-reference/module-gift-message-staging): 100.4.6
+- [magento/module-gift-registry](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry): 101.2.9
+- [magento/module-gift-registry-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-registry-graph-ql): 100.4.5
+- [magento/module-gift-wrapping](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping): 101.2.8
+- [magento/module-gift-wrapping-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-graph-ql): 100.4.6
+- [magento/module-gift-wrapping-staging](https://developer.adobe.com/commerce/php/module-reference/module-gift-wrapping-staging): 100.4.6
+- [magento/module-google-optimizer-staging](https://developer.adobe.com/commerce/php/module-reference/module-google-optimizer-staging): 100.4.6
+- [magento/module-google-tag-manager](https://developer.adobe.com/commerce/php/module-reference/module-google-tag-manager): 100.4.9
+- [magento/module-grouped-product-staging](https://developer.adobe.com/commerce/php/module-reference/module-grouped-product-staging): 100.4.7
+- [magento/module-import-csv](https://developer.adobe.com/commerce/php/module-reference/module-import-csv): 100.4.3
+- [magento/module-import-csv-api](https://developer.adobe.com/commerce/php/module-reference/module-import-csv-api): 100.4.3
+- [magento/module-import-json](https://developer.adobe.com/commerce/php/module-reference/module-import-json): 100.4.2
+- [magento/module-import-json-api](https://developer.adobe.com/commerce/php/module-reference/module-import-json-api): 100.4.2
+- [magento/module-invite](https://developer.adobe.com/commerce/php/module-reference/module-invitation): 100.4.8
+- [magento/module-layered-navigation-staging](https://developer.adobe.com/commerce/php/module-reference/module-layered-navigation-staging): 100.4.6
+- [magento/module-logging](https://developer.adobe.com/commerce/php/module-reference/module-logging): 101.2.9
+- [magento/module-login-as-customer-logging](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-logging): 100.4.9
+- [magento/module-login-as-customer-website-restriction](https://developer.adobe.com/commerce/php/module-reference/module-login-as-customer-website-restriction): 100.4.7
+- [magento/module-media-content-catalog-staging](https://developer.adobe.com/commerce/php/module-reference/module-media-content-catalog-staging): 100.4.6
+- [magento/module-msrp-staging](https://developer.adobe.com/commerce/php/module-reference/module-msrp-staging): 100.4.7
+- [magento/module-multicoupon](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon): 100.4.2
+- [magento/module-multicoupon-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-graph-ql): 100.4.2
+- [magento/module-multicoupon-ui](https://developer.adobe.com/commerce/php/module-reference/module-multicoupon-ui): 100.4.2
+- [magento/module-multiple-wishlist](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist): 100.4.9
+- [magento/module-multiple-wishlist-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-multiple-wishlist-graph-ql): 100.4.5
+- [magento/module-payment-staging](https://developer.adobe.com/commerce/php/module-reference/module-payment-staging): 100.4.6
+- [magento/module-persistent-history](https://developer.adobe.com/commerce/php/module-reference/module-persistent-history): 100.4.6
+- [magento/module-price-permissions](https://developer.adobe.com/commerce/php/module-reference/module-price-permissions): 100.4.5
+- [magento/module-product-video-staging](https://developer.adobe.com/commerce/php/module-reference/module-product-video-staging): 100.4.6
+- [magento/module-promotion-permissions](https://developer.adobe.com/commerce/php/module-reference/module-promotion-permissions): 100.4.6
+- [magento/module-quote-gift-card-options](https://developer.adobe.com/commerce/php/module-reference/module-quote-gift-card-options): 100.4.6
+- [magento/module-quote-staging](https://developer.adobe.com/commerce/php/module-reference/module-quote-staging): 100.4.6
+- [magento/module-reminder](https://developer.adobe.com/commerce/php/module-reference/module-reminder): 101.2.8
+- [magento/module-remote-storage-commerce](https://developer.adobe.com/commerce/php/module-reference/module-remote-storage-commerce): 100.4.5
+- [magento/module-resource-connections](https://developer.adobe.com/commerce/php/module-reference/module-resource-connections): 100.4.6
+- [magento/module-review-staging](https://developer.adobe.com/commerce/php/module-reference/module-review-staging): 100.4.6
+- [magento/module-reward](https://developer.adobe.com/commerce/php/module-reference/module-reward): 101.2.9
+- [magento/module-reward-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-reward-graph-ql): 100.4.8
+- [magento/module-reward-staging](https://developer.adobe.com/commerce/php/module-reference/module-reward-staging): 100.4.6
+- [magento/module-rma](https://developer.adobe.com/commerce/php/module-reference/module-rma): 101.2.9
+- [magento/module-rma-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-rma-graph-ql): 100.4.8
+- [magento/module-rma-staging](https://developer.adobe.com/commerce/php/module-reference/module-rma-staging): 100.4.6
+- [magento/module-sales-archive](https://developer.adobe.com/commerce/php/module-reference/module-sales-archive): 101.0.7
+- [magento/module-sales-rule-staging](https://developer.adobe.com/commerce/php/module-reference/module-sales-rule-staging): 100.4.8
+- [magento/module-scalable-checkout](https://developer.adobe.com/commerce/php/module-reference/module-scalable-checkout): 100.4.8
+- [magento/module-scalable-inventory](https://developer.adobe.com/commerce/php/module-reference/module-scalable-inventory): 100.4.7
+- [magento/module-scalable-oms](https://developer.adobe.com/commerce/php/module-reference/module-scalable-oms): 100.4.7
+- [magento/module-scheduled-import-export](https://developer.adobe.com/commerce/php/module-reference/module-scheduled-import-export): 101.2.9
+- [magento/module-search-staging](https://developer.adobe.com/commerce/php/module-reference/module-search-staging): 100.4.7
+- [magento/module-social-login](https://developer.adobe.com/commerce/php/module-reference/module-social-login): 100.4.0
+- [magento/module-social-login-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-social-login-graph-ql): 100.4.0
+- [magento/module-staging](https://developer.adobe.com/commerce/php/module-reference/module-staging): 101.2.9
+- [magento/module-staging-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-staging-graph-ql): 100.4.6
+- [magento/module-support](https://developer.adobe.com/commerce/php/module-reference/module-support): 101.2.8
+- [magento/module-swat](https://developer.adobe.com/commerce/php/module-reference/module-swat): 100.4.7
+- [magento/module-target-rule](https://developer.adobe.com/commerce/php/module-reference/module-target-rule): 101.2.9
+- [magento/module-target-rule-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-target-rule-graph-ql): 100.4.6
+- [magento/module-versions-cms](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms): 101.2.9
+- [magento/module-versions-cms-page-cache](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-page-cache): 100.4.5
+- [magento/module-versions-cms-url-rewrite](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite): 100.4.7
+- [magento/module-versions-cms-url-rewrite-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-versions-cms-url-rewrite-graph-ql): 100.4.5
+- [Magento/module-visual-merchandiser](https://developer.adobe.com/commerce/php/module-reference/module-visual-merchandiser): 100.4.9
+- [magento/module-webapi-rest-gws](https://developer.adobe.com/commerce/php/module-reference/module-webapi-rest-gws): 100.4.1
+- [magento/module-website-restriction](https://developer.adobe.com/commerce/php/module-reference/module-website-restriction): 100.4.8
+- [magento/module-weee-staging](https://developer.adobe.com/commerce/php/module-reference/module-weee-staging): 100.4.6
+- [magento/module-wishlist-gift-card](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card): 100.4.5
+- [magento/module-wishlist-gift-card-graph-ql](https://developer.adobe.com/commerce/php/module-reference/module-wishlist-gift-card-graph-ql): 100.4.5
+- Magento/Page-Builder-Commerce: 1.7.6
+- Magento/Product-Community-Edition: 2.4.9
+- magento/security-package-ee: 1.0.4
+- magento/theme-adminhtml-spectrum: 100.4.4
 - Magento/Zend-Cache: ^1.16
 - Magento/Zend-DB: ^1.16
 - Magento/Zend-PDF: ^1.16
 - monolog/monolog: ^3.6
 - opensearch-project/opensearch-php: ^2.3
-- Pelago/Demogrifier: ^7.0
-- PHP: ~8.2.0||~8.3.0||~8.4.0
+- Pelago/Demogrifier: ^8.1
+- PHP: ~8.3.0||~8.4.0||~8.5.0
 - php-amqplib/php-amqplib: ^3.2
+- php-db/phpdb: ^0.4
 - phpseclib/mcrypt_compat: ^2.0
 - phpseclib/phpseclib: ^3.0
+- predis/predis: ^2.0
 - PSR/Log: ^2 || ^3
 - Ramsey/UUID: ^4.2
-- symfony/console: ^6.4
-- symfony/intl: ^6.4
-- symfony/mailer: ^6.4
-- symfony/mime: ^6.4
-- symfony/process: ^6.4
-- symfony/string: ^6.4
+- spomky-labs/aes-key-wrap: ^7.0
+- stomp-php/stomp-php: ^5.1
+- symfony/cache: ^7.4
+- symfony/console: ^7.4
+- symfony/intl: ^7.4
+- symfony/mailer: ^7.4
+- symfony/mime: ^7.4
+- symfony/process: ^7.4
+- symfony/string: ^7.4
 - TEDIVM/JShrink: ^1.4
 - tubalmartin/cssmin: ^4.1
-- Web-Token/JWT-Framework: ^3.4
+- Web-Token/JWT-Framework: ^4.0
 - WebOnyx/GraphQL-PHP: ^15.0
-- wikimedia/less.php: ^5.0
+- wikimedia/less.php: ^5.5
 
 ## Drittanbieterlizenzen
 
@@ -287,6 +294,13 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/giggsey/libphonenumber-for-php">giggsey/libphonenumber-for-php</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Eine Bibliothek zum Parsen, Formatieren, Speichern und Validieren internationaler Telefonnummern, ein PHP-Port der libphonenumber von Google.</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/opentelemetry-php/api">open-telemetry/api</a>
     </td>
     <td>Bibliothek</td>
@@ -305,6 +319,13 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
     </td>
     <td>Metapaket</td>
     <td>Braintree Magento</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/stomp-php/stomp-php">stomp-php/stomp-php</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>stomp-Unterstützung für PHP</td>
   </tr>
   <tr>
     <td>
@@ -385,7 +406,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/firebase/php-jwt">Firebase/php-jwt</a>
+      <a href="https://github.com/googleapis/php-jwt">Firebase/php-jwt</a>
     </td>
     <td>Bibliothek</td>
     <td>Eine einfache Bibliothek zum Codieren und Decodieren von JSON Web Tokens (JWT) in PHP. Sollte der aktuellen Spezifikation entsprechen.</td>
@@ -483,13 +504,6 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-mvc">LAMINAS/LAMINAS-MVC</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Die ereignisgesteuerte MVC-Schicht von Laminas, einschließlich MVC-Anwendungen, Controller und Plug-ins</td>
-  </tr>
-  <tr>
-    <td>
       <a href="https://github.com/laminas/laminas-permissions-acl">laminas/laminas-permissions-acl</a>
     </td>
     <td>Bibliothek</td>
@@ -501,13 +515,6 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
     </td>
     <td>Bibliothek</td>
     <td>OOP-Wrapper für den ReCaptcha-Webservice</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/laminas/laminas-router">laminas/laminas-router</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Flexibles Routing-System für HTTP- und Konsolenanwendungen</td>
   </tr>
   <tr>
     <td>
@@ -595,6 +602,13 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/php-db/phpdb">php-db/phpdb</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Implementierungen von Datenbankabstraktionsebenen, SQL-Abstraktionen, Ergebnissatzabstraktionen sowie RowDataGateway- und TableDataGateway-Implementierungen</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/phpfui/recaptcha">phpfui/reCAPTCHA</a>
     </td>
     <td>Bibliothek</td>
@@ -634,27 +648,6 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
     </td>
     <td>Magento-module</td>
     <td>Zend_Cache-Backend mit Redis mit voller Unterstützung für Tags.</td>
-  </tr>
-  </tbody>
-</table>
-
-### ISC
-
-<table>
-  <thead>
-    <tr>
-      <th>-Name</th>
-      <th>Typ</th>
-      <th>Beschreibung</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      <a href="https://github.com/paragonie/sodium_compat">Paragonie/Natrium_compat</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Reine PHP-Implementierung von libnati; verwendet die PHP-Erweiterung, falls vorhanden</td>
   </tr>
   </tbody>
 </table>
@@ -711,6 +704,13 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
     </td>
     <td>Bibliothek</td>
     <td>Arithmetische Bibliothek mit beliebiger Genauigkeit</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/brick/phonenumber">Stein/Telefonnummer</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Telefonnummernbibliothek</td>
   </tr>
   <tr>
     <td>
@@ -840,6 +840,13 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/giggsey/Locale">giggsey/locale</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Für libphonenumber-for-php benötigte Gebietsschema-Funktionen</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/guzzle/guzzle">guzzlehttp/guzzle</a>
     </td>
     <td>Bibliothek</td>
@@ -952,14 +959,14 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/CssXPath">phpgt/cssxpath</a>
+      <a href="https://github.com/phpgt/CssXPath">phpgt/cssxpath</a>
     </td>
     <td>Bibliothek</td>
     <td>Konvertieren von CSS-Selektoren in XPath-Abfragen.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/PhpGt/Dom">phpgt/dom</a>
+      <a href="https://github.com/phpgt/Dom">phpgt/dom</a>
     </td>
     <td>Bibliothek</td>
     <td>Moderne DOM-API.</td>
@@ -984,6 +991,13 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
     </td>
     <td>Bibliothek</td>
     <td>PHP Secure Communications Library - Pure-PHP-Implementierungen von RSA, AES, SSH2, SFTP, X.509 etc.</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/predis/predis">predis/predis</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Ein flexibler und funktionsreicher Redis/Valley Client für PHP.</td>
   </tr>
   <tr>
     <td>
@@ -1120,6 +1134,20 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
+      <a href="https://github.com/symfony/cache">symfony/cache</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Bietet erweiterte Implementierungen von PSR-6, PSR-16 (und Tags)</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/cache-contracts">symfony/cache-Contracts</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Allgemeine Abstraktionen im Zusammenhang mit der Zwischenspeicherung</td>
+  </tr>
+  <tr>
+    <td>
       <a href="https://github.com/symfony/config">symfony/config</a>
     </td>
     <td>Bibliothek</td>
@@ -1187,13 +1215,6 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
     </td>
     <td>Bibliothek</td>
     <td>Findet Dateien und Verzeichnisse über eine intuitive, flüssige Oberfläche</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/symfony/http-client">symfony/http-client</a>
-    </td>
-    <td>Bibliothek</td>
-    <td>Bietet leistungsstarke Methoden zum synchronen oder asynchronen Abrufen von HTTP-Ressourcen</td>
   </tr>
   <tr>
     <td>
@@ -1302,10 +1323,17 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/polyfill-php83">symfony/polyfill-php83</a>
+      <a href="https://github.com/symfony/polyfill-php84">symfony/polyfill-php84</a>
     </td>
     <td>Bibliothek</td>
-    <td>Symfony Polyfill unterstützt einige PHP 8.3+ Funktionen zu niedrigeren PHP-Versionen</td>
+    <td>Symfony Polyfill unterstützt einige PHP 8.4+ Funktionen in niedrigeren PHP-Versionen</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/symfony/polyfill-php85">symfony/polyfill-php85</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>Symfony Polyfill unterstützt einige PHP 8.5+ Funktionen in niedrigeren PHP-Versionen</td>
   </tr>
   <tr>
     <td>
@@ -1348,6 +1376,13 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
     </td>
     <td>Bibliothek</td>
     <td>Lädt YAML-Dateien und gibt deren Speicherinhalt aus</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/thecodingmachine/safe">TheCodingMachine/Safe</a>
+    </td>
+    <td>Bibliothek</td>
+    <td>PHP-Kernfunktionen, die Ausnahmen auslösen, anstatt bei einem Fehler FALSE zurückzugeben</td>
   </tr>
   <tr>
     <td>

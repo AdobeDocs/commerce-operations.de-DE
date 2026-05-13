@@ -2,7 +2,7 @@
 title: Aktualisieren einer Git-basierten Installation
 description: Aktualisieren Sie eine Adobe Commerce-Installation, die Sie aus einem Git-Repository geklont haben.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%
@@ -55,4 +55,4 @@ So aktualisieren Sie, wenn Sie Entwickler sind:
    bin/magento cache:clean
    ```
 
-<!-- Last updated from includes: 2022-09-08 16:00:49 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

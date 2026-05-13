@@ -2,7 +2,7 @@
 title: Technische Details
 description: Erfahren Sie mehr über die technischen Details der Pipeline-Bereitstellung, Konfigurationstypen und empfohlene Workflows.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 In diesem Abschnitt werden technische Implementierungsdetails zur Pipeline-Bereitstellung in Commerce 2.2 und höher erläutert. Die Verbesserungen lassen sich in folgende Bereiche unterteilen:
 
 - [Konfigurationsverwaltung](#configuration-management)
-- [Änderungen in der Admin](#changes-in-the-admin)
+- [Änderungen in der Admin](#the-commerce-admin)
 - [Installieren und Entfernen von Cron](#install-and-remove-cron)
 
-In diesem Thema wird auch der [empfohlene Workflow](#recommended-workflow) für die Pipeline-Bereitstellung erläutert und einige Beispiele bereitgestellt, die Ihnen dabei helfen, die Funktionsweise zu verstehen.
+In diesem Thema wird auch der [empfohlene Workflow](#recommended-pipeline-deployment-workflow) für die Pipeline-Bereitstellung erläutert und einige Beispiele bereitgestellt, die Ihnen dabei helfen, die Funktionsweise zu verstehen.
 
 Bevor Sie beginnen, lesen Sie die [Voraussetzungen für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md).
 
@@ -60,7 +60,7 @@ Sie können die vertrauliche Konfiguration auf eine der folgenden Arten verwalte
 ### Konfigurationseinstellungen im Administrator gesperrt
 
 Alle Konfigurationseinstellungen in `config.php` oder `env.php` sind im Administrator gesperrt, d. h. diese Einstellungen können im Administrator nicht geändert werden.
-Verwenden Sie den Befehl [`magento config:set` oder `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set), um die Einstellungen in den `config.php`- oder `env.php`-Dateien zu ändern.
+Verwenden Sie den Befehl [`magento config:set` oder `magento config:set --lock`](../cli/set-configuration-values.md#set-values), um die Einstellungen in den `config.php`- oder `env.php`-Dateien zu ändern.
 
 ## Der Commerce-Administrator
 

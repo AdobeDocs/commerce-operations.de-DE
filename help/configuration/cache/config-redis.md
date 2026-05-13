@@ -1,18 +1,18 @@
 ---
-title: Konfigurieren von Redis
-description: Erfahren Sie, wie Sie die Redis-Zwischenspeicherung für die Leistungsoptimierung von Adobe Commerce konfigurieren. Entdecken Sie Funktionen, Einrichtungsschritte und Best Practices für die Konfiguration.
+title: Installieren und Einrichten von Redis
+description: Erfahren Sie, wie Sie Redis für Caching und Sitzungsspeicher mit Adobe Commerce installieren und konfigurieren. Entdecken Sie Optionen zur Optimierung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
 
-# Konfigurieren von Redis
+# Installieren und Einrichten von Redis
 
-Zu den Redis-Funktionen gehören:
+Redis ist ein In-Memory-Datenspeicher, der als Cache-Backend und zur Sitzungsspeicherung verwendet werden kann. Zu den wichtigsten Funktionen gehören:
 
 - PHP-Sitzungsspeicher
 - Tag-basierte Cache-Bereinigung ohne `foreach` Schleifen
@@ -22,9 +22,9 @@ Zu den Redis-Funktionen gehören:
 
 Die Installation und Konfiguration der Redis-Software sprengt den Rahmen dieses Handbuchs. Anzeige von Ressourcen wie:
 
-- [Redis-Seite herunterladen](https://redis.io/download)
+- [Redis herunterladen Seite](https://redis.io/download)
 - [Redis-Schnellstart](https://redis.io/docs/latest/)
-- [DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
+- [Digitaler Ozean](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 - [Redis-Dokumentationsseite](https://redis.io/docs)
 
 ## Einrichten der Redis-Konfiguration

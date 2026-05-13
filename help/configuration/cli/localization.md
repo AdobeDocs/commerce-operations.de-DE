@@ -2,7 +2,7 @@
 title: Übersetzungswörterbücher und Sprachpakete
 description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete für Adobe Commerce erstellen. Hier erfahren Sie mehr über Lokalisierung und die Einrichtung mehrsprachiger Stores.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ So erstellen Sie das Wörterbuch und beginnen mit der Übersetzung:
 
 1. Sie können die Übersetzungswörterbücher in ein Sprachpaket packen und dieses dem Commerce Store-Administrator bereitstellen.
 
-1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Befehlsoptionen:
 
@@ -90,7 +90,7 @@ Im Gegensatz zu einem Übersetzungswörterbuch können Sie jedes oder alle Wört
 In diesem Abschnitt wird beschrieben, wie Sie ein Sprachpaket erstellen, das CSV-Dateien in Module und Designs schreibt. Um ein Sprachpaket zu erstellen, müssen Sie die in den folgenden Abschnitten beschriebenen Aufgaben ausführen:
 
 1. [Sammeln und Übersetzen von Wörtern und Wortgruppen](#generate-a-translation-dictionary). (Der `--magento` ist erforderlich.)
-1. [Führen Sie den Sprachpaketbefehl &#x200B;](#run-the-language-package-command).
+1. [Führen Sie den Sprachpaketbefehl ](#run-the-language-package-command).
 1. [Erstellen von Verzeichnissen und Dateien](#create-directories-and-files).
 1. (Optional) [Konfigurieren mehrerer Pakete für eine Sprache](#configure-multiple-packages-for-a-language).
 
@@ -106,7 +106,7 @@ In der folgenden Tabelle werden die Parameter und Werte für den Sprachpaketbefe
 
 | Parameter | Wert | Erforderlich? |
 |--- |--- |--- |
-| `<source>` | Absoluter Dateisystempfad und Dateiname einer CSV-Datei, die das kombinierte Wörterbuch und die Metadaten enthält, die für die Aufschlüsselung in ein Sprachpaket erforderlich sind.<br><br>Verwenden Sie [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict), um die CSV-Datei zu erstellen, und erstellen Sie dann das Sprachpaket, wie in [Erstellen von Verzeichnissen und Dateien](#m2devgde-xlate-files) beschrieben. | Ja |
+| `<source>` | Absoluter Dateisystempfad und Dateiname einer CSV-Datei, die das kombinierte Wörterbuch und die Metadaten enthält, die für die Aufschlüsselung in ein Sprachpaket erforderlich sind.<br><br>Verwenden Sie [`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary), um die CSV-Datei zu erstellen, und erstellen Sie dann das Sprachpaket, wie in [Erstellen von Verzeichnissen und Dateien](#create-directories-and-files) beschrieben. | Ja |
 | `<locale>` | [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (Sprache) und [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (Land) Kennung der Sprache, die als Dateiname für alle resultierenden CSV-Dateien verwendet wird. Beispiele: `de_DE`, `pt_PT`, `pt_BR`. | Ja |
 | `-m --mode` | Gibt an, ob bei Vorhandensein einer Zieldatei das vorhandene Sprachpaket ersetzt oder mit dem neuen Sprachpaket zusammengeführt werden soll. Beim Zusammenführen werden alle vorhandenen Phrasen überschrieben und neue hinzugefügt.<br><br>Werte: Zusammenführen oder Ersetzen (Standard). | Nein |
 | `-d --allow-duplicates` | Schließen Sie diese Option ein, um Duplikate im Sprachpaket zuzulassen. Andernfalls schlägt der Befehl mit einem Fehler fehl, wenn dieselbe Phrase in mehreren Einträgen mit unterschiedlichen Übersetzungen auftritt. | Nein |
@@ -117,7 +117,7 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 - Erforderliche Lizenzdateien
 - `composer.json`
-- `registration.php`, [&#x200B; das &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-registration/) registriert
+- `registration.php`, [ das ](https://developer.adobe.com/commerce/php/development/build/component-registration/) registriert
 - [`language.xml`](#language-package-languagexml)-Metadatendatei
 
 >[!INFO]

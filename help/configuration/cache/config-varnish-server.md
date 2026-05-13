@@ -1,16 +1,16 @@
 ---
-title: Webserver konfigurieren
+title: Konfigurieren des Webservers für das Zwischenspeichern von Lacken
 description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung des Lackzwischenspeichers für Adobe Commerce konfigurieren. Erfahren Sie mehr über die Konfiguration und Einrichtung von Ports.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Konfigurieren des Webservers
+# Konfigurieren des Webservers für das Zwischenspeichern von Lacken
 
 Konfigurieren Sie Ihren Webserver so, dass er an einem anderen Port als dem Standard-Port 80 lauscht, da Varnish direkt auf eingehende HTTP-Anfragen reagiert, nicht auf den Webserver.
 

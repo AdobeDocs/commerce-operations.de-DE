@@ -1,50 +1,62 @@
 ---
-title: Konfigurieren des Caching
-description: Erfahren Sie mehr über Caching-Mechanismen und Konfigurationsoptionen für Adobe Commerce-Programme. Entdecken Sie Alternativen zum standardmäßigen Dateisystem-Caching.
+title: Caching-Übersicht und Konfigurationsoptionen
+description: Erfahren Sie mehr über das Caching in Adobe Commerce, einschließlich Backend-Speicher, Frontend-Konfiguration und Vollseiten-Caching mit Varnish, Redis, Valkey und L2-Cache.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
-# Konfigurieren des Caching
+# Caching-Übersicht und Konfigurationsoptionen
 
-[!DNL Commerce] können Sie Alternativen zum standardmäßigen Dateisystem-Caching konfigurieren. In diesem Handbuch werden einige dieser Alternativen erläutert, nämlich
+Adobe Commerce stützt sich auf eine mehrschichtige Caching-Architektur, um die Datenbanklast zu reduzieren, redundante Verarbeitung zu minimieren und die Seitenbereitstellung zu beschleunigen. Auf Anwendungsebene verwaltet Commerce mehr als ein Dutzend [Cache-Typen](../cli/manage-cache.md#clean-and-flush-cache-types) wie Konfiguration, Layout, Block-HTML und Sammlungen, von denen Sie jede an ein dediziertes Speicher-Backend wie [Redis](config-redis.md) oder [Valkey](config-valkey.md) weiterleiten können. Für das Caching ganzer Seiten empfiehlt Adobe dringend [Varnish](config-varnish.md), einen HTTP-Beschleuniger, der zwischengespeicherte Seiten direkt aus dem Speicher bereitstellt. Zusätzliche Ebenen wie [L2-Caching](level-two-cache.md) und [statisches Content-Signing](static-content-signing.md) verbessern die Leistung bei Bereitstellungen mit mehreren Knoten und hohem Traffic weiter.
 
-- Richten Sie die folgenden Cache-Mechanismen in der [!DNL Commerce] ein:
+In diesem Handbuch wird erläutert, wie die einzelnen Caching-Ebenen funktionieren und wie Sie Frontends, Backends und erweiterte Optionen entsprechend Ihren Bereitstellungsanforderungen konfigurieren.
 
-   - [Datenbank](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
-   - [Redis](config-redis.md)
-   - Dateisystem (Standard): Es ist keine Konfiguration erforderlich, um das standardmäßige Dateisystem-Caching zu verwenden.
+## Caching von Frontends
 
-- Richten Sie den [Varnish](config-varnish.md) ein, ohne die [!DNL Commerce]-Konfiguration zu ändern.
+Ein Cache-Frontend ist eine Schnittstelle zwischen Commerce und dem Cache-Speicher-Backend. Sie können mehrere Frontends mit jeweils unterschiedlichen Backend-Einstellungen definieren und dann jedem Frontend [Cache-Typen](../cli/manage-cache.md#clean-and-flush-cache-types) zuweisen.  Konfigurationsdetails finden Sie unter [Konfigurieren von Cache-Frontends](cache-types.md).
+
+## Caching von Backends
+
+Ein Cache-Backend ist der zugrunde liegende Speichermechanismus für zwischengespeicherte Daten. Commerce bietet ein standardmäßiges Dateisystem-Backend, aber Sie können auch andere Backends wie Redis oder Valkey konfigurieren, um die Leistung und Skalierbarkeit zu verbessern. Einzelheiten zu den verfügbaren Optionen finden Sie unter [Cache-Backend-Optionen](cache-options.md).
+
+## Vollständige Seitenzwischenspeicherung mit Lack
+
+[Varnish Cache](config-varnish.md) ist ein HTTP-Beschleuniger, der vollständige Seiten im Speicher zwischenspeichert. Adobe empfiehlt dringend Varnish für Produktionsumgebungen, da es deutlich schneller ist als der integrierte Vollseiten-Cache.
+
+>[!NOTE]
+>
+>Varnish fungiert als Reverse-Proxy vor Ihrem Webserver und erfordert keine Änderungen an der Commerce-Cache-Backend-Konfiguration.
+
+## L2-Caching (auf zwei Ebenen)
+
+[L2-Cache](level-two-cache.md) speichert Cache-Daten lokal auf jedem Web-Knoten, während ein Remote-Cache (Redis oder Valkey) als Datenquelle verwendet wird. Dadurch wird der Netzwerkverkehr zwischen Ihren Web-Knoten und dem Remote-Cache reduziert, was die Leistung für Sites mit hohem Traffic verbessert.
+
+## Zwischenspeicherung statischer Inhalte
+
+[Statische Inhaltssignierung](static-content-signing.md) Invalidiert den Browser-Cache für statische Ressourcen (CSS, JavaScript, Bilder), indem eine Bereitstellungsversion in Datei-URLs eingebettet wird.
 
 ## Caching-Terminologie
 
 [!DNL Commerce] verwendet die folgende Caching-Terminologie:
 
-- **Frontend** - Ähnlich wie eine Schnittstelle oder ein Gateway zum Zwischenspeichern, implementiert von [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Cache-Typen** - Kann einer der mit [!DNL Commerce] bereitgestellten Typen sein oder Sie können [eigene erstellen](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
-- **Backend** - Gibt Details zum [Cache-Speicher](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) an, implementiert durch [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
-- **Backend mit zwei Ebenen** - Speichert Cache-Einträge in zwei Backends: einem schnelleren und einem langsameren.
-
-  >[!INFO]
-  >
-  >Die Konfiguration des Backend-Cache auf zwei Ebenen sprengt den Rahmen dieses Handbuchs.
+- **Frontend** - Eine Schnittstelle oder ein Gateway zum Zwischenspeichern, implementiert von [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
+- **Cache-Typen** - Einer der integrierten Typen, die mit [!DNL Commerce] (z. B. `config`, `layout`, `block_html`, `full_page`) oder einem [benutzerdefinierten Typ](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/) bereitgestellt werden.
+- **Backend** - Gibt die Details des [Cache-Speichers](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html) an, implementiert durch [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend).
+- **Zwei-Ebenen-Backend** - Speichert Cache-Einträge in zwei Backends: einem lokalen (schnellen) Cache und einem Remote-Cache (gemeinsam genutzt). Siehe [L2-Cache-Konfiguration](level-two-cache.md).
 
 ## Konfigurationsoptionen
 
-- Ändern des bereitgestellten `default`-Cache-Frontends—
+Die Cache-Konfiguration wird in zwei Dateien gespeichert:
 
-  Sie ändern nur die `<magento_root>/app/etc/di.xml`, die Konfiguration der globalen Injektion von Abhängigkeiten der Commerce-Anwendung.
+- `<magento_root>/app/etc/di.xml` - Die Konfiguration der globalen Injektion von Abhängigkeiten. Ändern Sie diese Datei, um das bereitgestellte `default`-Cache-Frontend zu ändern.
+- `<magento_root>/app/etc/env.php` - Umgebungsspezifische Konfiguration. Ändern Sie diese Datei, um benutzerdefinierte Cache-Frontends zu konfigurieren. Diese Datei überschreibt die entsprechende Konfiguration in `di.xml`.
 
-- Konfigurieren Ihres eigenen benutzerdefinierten Cache-Frontends -
+Details zur Frontend-zu-Typ-Zuordnung und zur Cache-Konfigurationssyntax finden Sie unter:
 
-  Sie ändern nur die `<magento_root>/app/etc/env.php`, da sie die entsprechende Konfiguration in der `di.xml` überschreibt.
-
->[!TIP]
->
->Der Lack erfordert keine Änderungen an der [!DNL Commerce]. Siehe [Konfigurieren und Verwenden von &#x200B;](config-varnish.md).
+- [Cache-Frontends konfigurieren](cache-types.md) — Ein Cache-Frontend mit bestimmten Cache-Typen verknüpfen
+- [Cache-Backend-Optionen](cache-options.md) — Referenz zur Backend-Option

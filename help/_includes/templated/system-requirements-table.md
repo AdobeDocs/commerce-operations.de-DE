@@ -1,21 +1,17 @@
 ---
-source-git-commit: 4e04522603b7ed03610ee624a8029a0643bf7c17
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '1643'
-ht-degree: 41%
+source-wordcount: '332'
+ht-degree: 38%
 
 ---
 # Systemanforderungen
 
->[!NOTE]
->
->Die Versionen 2.4.4 und 2.4.5 unterstützen nur MySQL 8.0.0 bis 8.0.28.
-
 <table style="table-layout:auto">
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
-      <th>2.4.9-Beta1</th>
+      <th>2.4.9</th>
     </tr>
   </thead>
   <tbody>
@@ -34,19 +30,25 @@ ht-degree: 41%
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          11,4
+          11.8, 12.3<sup>1</sup>
+      </td>
+    </tr>
+    <tr>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
+      <td>
+          8.4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8,5; 8,4
+          8.5
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4,1
+          4.2
       </td>
     </tr>
     <tr>
@@ -58,25 +60,25 @@ ht-degree: 41%
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-          8
+          9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7,7
+          8
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1,28
+          1.28
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
-          8.0.MySQL_Aurora.3.11.1 oder neueste Version
+          8.0.mysql_aurora.3.12 oder neueste verfügbare Version
       </td>
     </tr>
     <tr>
@@ -110,25 +112,13 @@ ht-degree: 41%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.8-P5 (aktuelle)</th>
       <th>2.4.8-p4</th>
-      <th>2.4.8-p3</th>
-      <th>2.4.8-p2</th>
-      <th>2.4.8-p1</th>
-      <th>2,4,8</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
       <td>
           2.9.3+
       </td>
@@ -144,15 +134,6 @@ ht-degree: 41%
       <td>
           8
       </td>
-      <td>
-          8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          8,17
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
@@ -162,86 +143,41 @@ ht-degree: 41%
       <td>
           3
       </td>
-      <td>
-          3
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          11,4
+          11.4, 11.8
       </td>
       <td>
-          11,4
-      </td>
-      <td>
-          11,4
-      </td>
-      <td>
-          11,4
-      </td>
-      <td>
-          11,4
+          11.4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          8,4
+          8.4
       </td>
       <td>
-          8,4
-      </td>
-      <td>
-          8,4
-      </td>
-      <td>
-          8,4
-      </td>
-      <td>
-          8,4
+          8.4
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8,4; 8,3
+          8.4, 8.3
       </td>
       <td>
-          8,4; 8,3
-      </td>
-      <td>
-          8,4; 8,3
-      </td>
-      <td>
-          8,4; 8,3
-      </td>
-      <td>
-          8,4; 8,3
+          8.4, 8.3
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4,1
+          4.2
       </td>
       <td>
-          4,1
-      </td>
-      <td>
-          4,1
-      </td>
-      <td>
-          4,1
-      </td>
-      <td>
-          4,1
+          4.1
       </td>
     </tr>
     <tr>
@@ -252,29 +188,11 @@ ht-degree: 41%
       <td>
           2
       </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-          8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          8
+          8.1
       </td>
       <td>
           8
@@ -283,86 +201,32 @@ ht-degree: 41%
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7,7
+          8
       </td>
       <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,6
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
+          7.7
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1,28
+          1.28
       </td>
       <td>
-          1,28
-      </td>
-      <td>
-          1,28
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
+          1.28
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
+          8.0.mysql_aurora.3.12 oder neueste verfügbare Version
+      </td>
+      <td>
           8.0.MySQL_Aurora.3.11.1 oder neueste Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.08 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.08 oder neueste verfügbare Version
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
       <td>
           ✔️
       </td>
@@ -378,15 +242,6 @@ ht-degree: 41%
       <td>
           3.13 oder neueste verfügbare Version
       </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
@@ -394,16 +249,7 @@ ht-degree: 41%
           ElastiCache 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
       <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert)
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert)
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert)
+          ElastiCache 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
     </tr>
     <tr>
@@ -412,16 +258,7 @@ ht-degree: 41%
           3.1 oder neueste verfügbare Version
       </td>
       <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
+          3.1 oder neueste verfügbare Version
       </td>
     </tr>
   </tbody>
@@ -431,16 +268,8 @@ ht-degree: 41%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.7-P10 (aktuelle)</th>
       <th>2.4.7-P9</th>
-      <th>2.4.7-p8</th>
-      <th>2.4.7-p7</th>
-      <th>2.4.7-p6</th>
-      <th>2.4.7-p5</th>
-      <th>2.4.7-p4</th>
-      <th>2.4.7-p3</th>
-      <th>2.4.7-p2</th>
-      <th>2.4.7-p1</th>
-      <th>2,4,7</th>
     </tr>
   </thead>
   <tbody>
@@ -452,227 +281,59 @@ ht-degree: 41%
       <td>
           2.9.3+
       </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
-      <td>
-          2.9.3+
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          7,17/8
+          8
       </td>
       <td>
-          7,17/8
-      </td>
-      <td>
-          7,17; 8
-      </td>
-      <td>
-          7,17; 8
-      </td>
-      <td>
-          7,17,8,17
-      </td>
-      <td>
-          8,16
-      </td>
-      <td>
-          8,11
-      </td>
-      <td>
-          8,11
-      </td>
-      <td>
-          8,11
-      </td>
-      <td>
-          8,11
+          7.17/8
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2.19, 3
       </td>
       <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
+          2.19
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          10,11
+          10.11, 11.8
       </td>
       <td>
-          10,11
-      </td>
-      <td>
-          10,11
-      </td>
-      <td>
-          10,11
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
+          10.11
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          8,0
+          --
       </td>
       <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
+          8.0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8,3; 8,2
+          8.3, 8.2
       </td>
       <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
-      </td>
-      <td>
-          8,3; 8,2
+          8.3, 8.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4,1
+          4.2
       </td>
       <td>
-          4,1
-      </td>
-      <td>
-          4,1
-      </td>
-      <td>
-          4,1; 3,13
-      </td>
-      <td>
-          4,1; 3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
+          4.1
       </td>
     </tr>
     <tr>
@@ -683,255 +344,54 @@ ht-degree: 41%
       <td>
           2
       </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          7,2
+          --
       </td>
       <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
+          7.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-          8
+          8.1
       </td>
       <td>
           8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7,7
+          8
       </td>
       <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
+          7.7
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1,28
+          1.28
       </td>
       <td>
-          1,28
-      </td>
-      <td>
-          1,28
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
+          1.28
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
+          8.0.mysql_aurora.3.12 oder neueste verfügbare Version
+      </td>
+      <td>
           8.0.MySQL_Aurora.3.11.1 oder neueste Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.08 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.08 oder neueste verfügbare Version
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
       <td>
           ✔️
       </td>
@@ -947,30 +407,6 @@ ht-degree: 41%
       <td>
           3.13 oder neueste verfügbare Version
       </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3.11.20
-      </td>
-      <td>
-          3.11.20
-      </td>
-      <td>
-          3.11.20
-      </td>
-      <td>
-          3.11.20
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
@@ -978,31 +414,7 @@ ht-degree: 41%
           ElastiCache 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
       <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert)
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert)
-      </td>
-      <td>
-          Redis 7.0
-      </td>
-      <td>
-          Redis 7.0
-      </td>
-      <td>
-          Redis 7.0
-      </td>
-      <td>
-          Redis 7.0
-      </td>
-      <td>
-          Redis 7.0
+          ElastiCache 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
     </tr>
     <tr>
@@ -1011,31 +423,7 @@ ht-degree: 41%
           3.1 oder neueste verfügbare Version
       </td>
       <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.17 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2,11
-      </td>
-      <td>
-          2,11
-      </td>
-      <td>
-          2,11
-      </td>
-      <td>
-          2,11
-      </td>
-      <td>
-          2,11
+          3.1 oder neueste verfügbare Version
       </td>
     </tr>
   </tbody>
@@ -1045,21 +433,8 @@ ht-degree: 41%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.6-P15 (aktuelle)</th>
       <th>2.4.6-P14</th>
-      <th>2.4.6-P13</th>
-      <th>2.4.6-P12</th>
-      <th>2.4.6-P11</th>
-      <th>2.4.6-P10</th>
-      <th>2.4.6-p9</th>
-      <th>2.4.6-p8</th>
-      <th>2.4.6-p7</th>
-      <th>2.4.6-p6</th>
-      <th>2.4.6-p5</th>
-      <th>2.4.6-p4</th>
-      <th>2.4.6-p3</th>
-      <th>2.4.6-p2</th>
-      <th>2.4.6-p1</th>
-      <th>2,4,6</th>
     </tr>
   </thead>
   <tbody>
@@ -1071,332 +446,59 @@ ht-degree: 41%
       <td>
           2.2.26+
       </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          7,17
+          --
       </td>
       <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17; 8,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          8,11; 7,17
-      </td>
-      <td>
-          8,11; 7,17
-      </td>
-      <td>
-          8,11; 7,17
-      </td>
-      <td>
-          8,11; 7,17
-      </td>
-      <td>
-          8,11; 7,17
-      </td>
-      <td>
-          8,5; 7,17
-      </td>
-      <td>
-          8,5; 7,17
-      </td>
-      <td>
-          8,5; 7,17
-      </td>
-      <td>
-          8,4; 7,17
+          7.17
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2.19, 3
       </td>
       <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,12
-      </td>
-      <td>
-          2,5
-      </td>
-      <td>
-          2,5
-      </td>
-      <td>
-          2,5
-      </td>
-      <td>
-          2,5
-      </td>
-      <td>
-          2,5
+          2.19
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          10,11
+          10.11
       </td>
       <td>
-          10,11
-      </td>
-      <td>
-          10,11
-      </td>
-      <td>
-          10,11
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
+          10.11
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          8,0
+          --
       </td>
       <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
+          8.0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8,2; 8,1
+          8.2, 8.1
       </td>
       <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
-      </td>
-      <td>
-          8,2; 8,1
+          8.2, 8.1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4,1
+          4.2
       </td>
       <td>
-          4,1
-      </td>
-      <td>
-          4,1
-      </td>
-      <td>
-          4,1; 3,13
-      </td>
-      <td>
-          4,1; 3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,12
-      </td>
-      <td>
-          3,12, 3,11, 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,11; 3,9
+          4.1
       </td>
     </tr>
     <tr>
@@ -1407,375 +509,54 @@ ht-degree: 41%
       <td>
           2
       </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          7,2
+          --
       </td>
       <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2; 7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
+          7.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-          8
+          8.1
       </td>
       <td>
           8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7,7
+          8
       </td>
       <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,1
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
+          7.7
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1,28
+          1.28
       </td>
       <td>
-          1,28
-      </td>
-      <td>
-          1,28
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
+          1.28
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
+          8.0.mysql_aurora.3.12 oder neueste verfügbare Version
+      </td>
+      <td>
           8.0.MySQL_Aurora.3.11.1 oder neueste Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.08 oder neueste verfügbare Version
-      </td>
-      <td>
-          8.0.mysql_aurora.3.08 oder neueste verfügbare Version
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
       <td>
           ✔️
       </td>
@@ -1790,45 +571,6 @@ ht-degree: 41%
       </td>
       <td>
           3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
-      </td>
-      <td>
-          3.9.16
       </td>
     </tr>
     <tr>
@@ -1837,46 +579,7 @@ ht-degree: 41%
           ElastiCache 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
       <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert)
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert)
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
-      </td>
-      <td>
-          Redis 6.2
+          ElastiCache 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
       </td>
     </tr>
     <tr>
@@ -1885,46 +588,7 @@ ht-degree: 41%
           3.1 oder neueste verfügbare Version
       </td>
       <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
+          3.1 oder neueste verfügbare Version
       </td>
     </tr>
   </tbody>
@@ -1934,23 +598,8 @@ ht-degree: 41%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.5-P17 (aktuelle)</th>
       <th>2.4.5-P16</th>
-      <th>2.4.5-P15</th>
-      <th>2.4.5-P14</th>
-      <th>2.4.5-P13</th>
-      <th>2.4.5-P12</th>
-      <th>2.4.5-P11</th>
-      <th>2.4.5-P10</th>
-      <th>2.4.5-p9</th>
-      <th>2.4.5-p8</th>
-      <th>2.4.5-p7</th>
-      <th>2.4.5-p6</th>
-      <th>2.4.5-p5</th>
-      <th>2.4.5-p4</th>
-      <th>2.4.5-p3</th>
-      <th>2.4.5-p2</th>
-      <th>2.4.5-p1</th>
-      <th>2,4,5</th>
     </tr>
   </thead>
   <tbody>
@@ -1962,374 +611,59 @@ ht-degree: 41%
       <td>
           2.2.26+
       </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          7,17
+          --
       </td>
       <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
+          7.17
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2.19
       </td>
       <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          1.3.20
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
+          2.19
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          10,11; 10,6
+          10.11
       </td>
       <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6; 10,5
-      </td>
-      <td>
-          10,5; 10,4
-      </td>
-      <td>
-          10,5; 10,4
-      </td>
-      <td>
-          10,5; 10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
+          10.11, 10.6
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          8,0
+          --
       </td>
       <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
+          8.0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8,1
+          8.1
       </td>
       <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
+          8.1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4,1
+          4.2
       </td>
       <td>
-          4,1
-      </td>
-      <td>
-          4,1
-      </td>
-      <td>
-          4,1; 3,13
-      </td>
-      <td>
-          4,1; 3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,12; 3,11
-      </td>
-      <td>
-          3,12, 3,11, 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,11; 3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
+          4.1
       </td>
     </tr>
     <tr>
@@ -2338,646 +672,43 @@ ht-degree: 41%
           2
       </td>
       <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+          2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          7,2
+          --
       </td>
       <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2; 7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
+          7.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Valkey]</span></td>
       <td>
-          8
+          8.1
       </td>
       <td>
           8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          8
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7,7
+          8
       </td>
       <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,1
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
+          7.7
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1,28
+          1.28
       </td>
       <td>
-          1,28
-      </td>
-      <td>
-          1,28
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          8.0.mysql_aurora.3.09 oder neueste verfügbare Version
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          3.13 oder neueste verfügbare Version
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3,13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          ElastiCache Version 7.1 für Redis OSS (erweitert). Valkey 8 ist verfügbar.
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          7,9
-      </td>
-      <td>
-          —
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          2.19 oder neueste verfügbare Version
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          —
+          1.28
       </td>
     </tr>
   </tbody>
@@ -2987,24 +718,8 @@ ht-degree: 41%
   <thead>
     <tr>
       <th>Software-Abhängigkeiten</th>
+      <th>2.4.4-P18 (aktuelle)</th>
       <th>2.4.4-P17</th>
-      <th>2.4.4-P16</th>
-      <th>2.4.4-p15</th>
-      <th>2.4.4-P14</th>
-      <th>2.4.4-P13</th>
-      <th>2.4.4-P12</th>
-      <th>2.4.4-P11</th>
-      <th>2.4.4-P10</th>
-      <th>2.4.4-p9</th>
-      <th>2.4.4-p8</th>
-      <th>2.4.4-p7</th>
-      <th>2.4.4-p6</th>
-      <th>2.4.4-p5</th>
-      <th>2.4.4-p4</th>
-      <th>2.4.4-p3</th>
-      <th>2.4.4-p2</th>
-      <th>2.4.4-p1</th>
-      <th>2,4,4</th>
     </tr>
   </thead>
   <tbody>
@@ -3016,965 +731,86 @@ ht-degree: 41%
       <td>
           2.2.26+
       </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
-      <td>
-          2.2.26+
-      </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          7,17
+          --
       </td>
       <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,17
-      </td>
-      <td>
-          7,16
-      </td>
-      <td>
-          7,16
-      </td>
-      <td>
-          7,16
+          7.17
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
-          2,19
+          2.19
       </td>
       <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          2,19
-      </td>
-      <td>
-          1.3.20
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,3
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
+          2.19
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          10,6
+          10.6
       </td>
       <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6
-      </td>
-      <td>
-          10,6; 10,5
-      </td>
-      <td>
-          10,5; 10,4
-      </td>
-      <td>
-          10,5; 10,4
-      </td>
-      <td>
-          10,5; 10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
-      </td>
-      <td>
-          10,4
+          10.6
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          8,0
+          --
       </td>
       <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
+          8.0
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-          8,1
+          8.1
       </td>
       <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
-      </td>
-      <td>
-          8,1
+          8.1
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          3,9
+          3.9
       </td>
       <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
-      </td>
-      <td>
-          3,9
+          3.9
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          7,2
+          7.2
       </td>
       <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2
-      </td>
-      <td>
-          7,2; 7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
-      </td>
-      <td>
-          6,2
+          7.2
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
-          7,7
+          7.7
       </td>
       <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,7
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,6
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,5
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,3
-      </td>
-      <td>
-          7,1
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-      <td>
-          7,0
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL Apache]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
-      </td>
-      <td>
-          2,4
+          7.7
       </td>
     </tr>
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1,28
+          1.28
       </td>
       <td>
-          1,28
-      </td>
-      <td>
-          1,28
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,26
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-      <td>
-          1,22
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          8,0
-      </td>
-      <td>
-          5,7
-      </td>
-      <td>
-          5,7
-      </td>
-      <td>
-          5,7
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-      <td>
-          ✔️
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.9.13
-      </td>
-      <td>
-          3.8.11
-      </td>
-      <td>
-          3.8.11
-      </td>
-      <td>
-          3.8.11
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-      <td>
-          Redis 6
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          7,9
-      </td>
-      <td>
-          7,9
-      </td>
-      <td>
-          7,9
-      </td>
-    </tr>
-    <tr>
-      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          1,2
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
-      </td>
-      <td>
-          —
+          1.28
       </td>
     </tr>
   </tbody>

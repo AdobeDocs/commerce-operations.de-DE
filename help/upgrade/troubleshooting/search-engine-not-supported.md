@@ -3,7 +3,7 @@ title: Aktuelle Suchmaschine wird nicht unterstützt
 description: Fehlerbehebung beim Adobe Commerce-Upgrade nach einem Fehler über eine nicht unterstützte Suchmaschine.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Sie müssen die folgenden Aufgaben ausführen, bevor Sie ein Upgrade auf 2.4 dur
 
    >[!NOTE]
    >
-   >Elasticsearch erfordert JDK 1.8 oder höher. Siehe [Installieren des Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk), um zu überprüfen, welche Version von JDK installiert ist.
+   >Elasticsearch erfordert JDK 1.8 oder höher. Siehe [Installieren des Java Software Development Kit (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit), um zu überprüfen, welche Version von JDK installiert ist.
 
 1. [Elasticsearch konfigurieren](../../configuration/search/configure-search-engine.md) und neu indizieren.
 

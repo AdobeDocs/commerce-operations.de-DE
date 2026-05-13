@@ -3,14 +3,14 @@ title: Konfigurieren und Verwenden von Lack
 description: Erfahren Sie, wie Sie das Zwischenspeichern von Lacken für Adobe Commerce konfigurieren und verwenden. Entdecken Sie Techniken zur HTTP-Beschleunigung, Dateispeicherung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
-# Lack konfigurieren
+# Konfigurieren und Verwenden von Lack
 
 [Varnish Cache](https://www.varnish.org/) ist ein Open-Source-Webanwendungsbeschleuniger (auch als _HTTP-Beschleuniger“_ „Caching _HTTP Reverse Proxy_ bezeichnet). Varnish speichert (oder speichert) Dateien oder Fragmente von Dateien im Speicher, was Varnish in die Lage versetzt, die Antwortzeit und den Bandbreitenverbrauch bei zukünftigen, äquivalenten Anfragen zu reduzieren. Im Gegensatz zu Webservern wie Apache und Nginx wurde Varnish ausschließlich für die Verwendung mit dem HTTP-Protokoll entwickelt.
 

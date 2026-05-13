@@ -1,16 +1,16 @@
 ---
-title: Redis für Sitzungsspeicher verwenden
-description: Erfahren Sie, wie Sie Redis für die Sitzungsspeicherung in Adobe Commerce konfigurieren. Erfahren Sie mehr über die Einrichtung der Befehlszeile, Konfigurationsoptionen und Methoden zur Leistungsoptimierung.
+title: Konfigurieren von Redis für den Sitzungsspeicher
+description: Erfahren Sie, wie Sie Redis für die Sitzungsspeicherung in Adobe Commerce konfigurieren. Erfahren Sie mehr über die Einrichtung von CLI, Sitzungsparameter und Techniken zur Verbindungsprüfung.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '835'
 ht-degree: 1%
 
 ---
 
-# Redis für Sitzungsspeicher verwenden
+# Konfigurieren von Redis für den Sitzungsspeicher
 
 >[!IMPORTANT]
 >

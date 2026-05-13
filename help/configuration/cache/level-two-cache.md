@@ -1,31 +1,38 @@
 ---
-title: L2-Cache-Konfiguration
-description: Erfahren Sie, wie Sie den L2-Cache für die Leistungsoptimierung von Adobe Commerce konfigurieren. Erfahren Sie mehr über Einrichtungsschritte und Techniken zur Reduzierung des Netzwerk-Traffics.
+title: L2-Cache-Konfiguration zur Leistungsoptimierung
+description: Erfahren Sie, wie Sie den L2-Cache in Adobe Commerce konfigurieren, um den Netzwerk-Traffic zu reduzieren und die Leistung zu verbessern. Entdecken Sie die Implementierungsoptionen von Legacy und Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
 
-# L2-Cache-Konfiguration
+# L2-Cache-Konfiguration zur Leistungsoptimierung
 
-Die Zwischenspeicherung ermöglicht eine Verringerung des Netzwerk-Traffics zwischen dem Remote-Cache-Speicher und der Commerce-Anwendung. Eine standardmäßige Commerce-Instanz überträgt etwa 300 KB pro Anfrage, und der Traffic kann in einigen Situationen schnell auf über ~1.000 Anfragen wachsen.
+L2-Caching (auf zwei Ebenen) reduziert den Netzwerk-Traffic zwischen dem Remote-Cache-Speicher (Redis oder Valkey) und der Commerce-Anwendung, indem eine lokale Cache-Ebene auf jedem Web-Knoten hinzugefügt wird. Eine standardmäßige Commerce-Instanz überträgt etwa 300 KB pro Anfrage, und der Traffic kann in einigen Situationen schnell auf über 1.000 Anfragen wachsen.
 
-Um die Netzwerkbandbreite von Redis zu reduzieren, speichern Sie die Cache-Daten lokal auf jedem Web-Knoten und verwenden Sie den Remote-Cache für zwei Zwecke:
+Beim L2-Caching speichert jeder Web-Knoten häufig aufgerufene Daten lokal und verwendet den Remote-Cache für zwei Zwecke:
 
-- Überprüfen Sie die Version der Cache-Daten und stellen Sie sicher, dass der neueste Cache lokal gespeichert wird
-- Neuesten Cache vom Remote-Computer auf den lokalen Computer übertragen
+- Überprüfen der Cache-Datenversion, um sicherzustellen, dass der neueste Cache lokal gespeichert wird
+- Übertragen aktualisierter Cache-Daten vom Remote-Speicher auf den lokalen Computer
 
-Commerce speichert die Hash-Datenversion in Redis, wobei das Suffix &quot;:hash&quot; an den regulären Schlüssel angehängt wird. Wenn ein veralteter lokaler Cache vorhanden ist, werden die Daten mit einem Cache-Adapter auf den lokalen Computer übertragen.
+Commerce speichert die Hash-Datenversion im Remote-Cache, wobei das Suffix `:hash` an den regulären Schlüssel angehängt wird. Wenn der lokale Cache veraltet ist, werden die Daten über einen Cache-Adapter vom Remote-Computer abgerufen.
+
+Es stehen zwei L2-Cache-Implementierungen zur Verfügung:
+
+| Implementierung | Version | Beschreibung |
+| -------------- | ------- | ----------- |
+| [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend-basierter Zwei-Ebenen-Cache mit `Cm_Cache_Backend_File` für lokalen Speicher |
+| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-basiertes L2 mit PSR-6-Konformität und verbesserter Leistung |
 
 >[!INFO]
 >
->Für Adobe Commerce in Cloud-Infrastrukturen können Sie [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) für die L2-Cache-Konfiguration verwenden.
+>Für Adobe Commerce in Cloud-Infrastrukturen können Sie [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) für die L2-Cache-Konfiguration verwenden.
 
-## Konfigurationsbeispiel
+## Konfiguration des alten L2-Cache (RemoteSynchronizedCache)
 
 Verwenden Sie das folgende Beispiel, um den vorhandenen Cache-Abschnitt in der `app/etc/env.php`-Datei zu ändern oder zu ersetzen.
 
@@ -76,11 +83,13 @@ Adobe empfiehlt die Verwendung der [`cache preload`](redis-pg-cache.md#redis-pre
 
 ## Veraltete Cache-Optionen
 
-Ab [!DNL Commerce] 2.4 kann die `use_stale_cache` in bestimmten Fällen die Leistung verbessern.
+Ab Commerce 2.4 kann die `use_stale_cache`-Option in bestimmten Fällen die Leistung verbessern, indem zuvor zwischengespeicherte Daten bereitgestellt werden, während in einem parallelen Prozess neue Cache-Daten generiert werden.
 
-Im Allgemeinen ist der Kompromiss mit dem Warten auf Sperren von der Leistungsseite aus akzeptabel, aber je mehr Sperren oder Cache der Händler hat, desto mehr Zeit wird damit verbracht, auf Sperren zu warten. In einigen Szenarien können Sie eine **Anzahl von Schlüsseln** \* **Lookup-Timeout** für den Prozess warten. In einigen seltenen Fällen kann der Händler Hunderte von Schlüsseln im `Block/Config`-Cache haben, sodass selbst ein kleines Lookup-Timeout für eine Sperre Sekunden kosten kann.
+Im Allgemeinen ist der Kompromiss mit Sperrwartung aus Sicht der Leistung akzeptabel. Je mehr Blöcke oder Cache-Einträge vorhanden sind, desto länger dauert die Sperrwartung. In einigen Szenarien kann die Wartezeit für den Prozess bis zu **die Anzahl der Schlüssel** x **Lookup-**) betragen. In seltenen Fällen kann ein Händler Hunderte von Schlüsseln im `Block/Config`-Cache haben, sodass selbst eine kleine Zeitüberschreitung bei der Suche nach einer Sperre Sekunden kosten kann.
 
-Veralteter Cache funktioniert nur mit einem L2-Cache. Mit einem veralteten Cache können Sie einen veralteten Cache senden, während ein neuer in einem parallelen Prozess generiert wird. Um veralteten Cache zu aktivieren, fügen Sie `'use_stale_cache' => true` zur oberen Konfiguration des L2-Cache hinzu.
+>[!IMPORTANT]
+>
+>Veralteter Cache funktioniert nur mit L2-Cache. Um sie zu aktivieren, fügen Sie `'use_stale_cache' => true` zur Konfiguration der obersten Ebene des L2-Cache-Frontends hinzu.
 
 Adobe empfiehlt, die Option `use_stale_cache` nur für Cache-Typen zu aktivieren, die am meisten davon profitieren, darunter:
 
@@ -155,3 +164,156 @@ Der folgende Code zeigt eine Beispielkonfiguration:
     ],
 ],
 ```
+
+## Moderne Symfony L2-Cache-Implementierung
+
+[!BADGE 2.4.9-beta]{type=Negative tooltip="Nur in 2.4.9-Beta verfügbar."}
+
+Ab Commerce 2.4.9 können Sie die L2-Cache-basierte Implementierung von Symfony (`symfony_l2`-Backend) verwenden, die eine moderne, PSR-6-konforme Caching-Implementierung mit erheblichen Leistungsverbesserungen gegenüber herkömmlichen `RemoteSynchronizedCache` bietet.
+
+### Vorteile des Symfony L2-Cache
+
+- **Moderne Architektur**: Basierend auf Symfony-Cache-Komponenten (PSR-6-kompatibel)
+- **Better Performance**: Native Unterstützung für Igbinary-Serialisierung, Gzip-Komprimierung und Lua-Skripte
+- **Persistente Verbindungen**: Reduziert den Verbindungsaufwand für Redis oder Valkey beim Verbindungspooling
+- **Schlüssel vorladen**: Unterstützt das Vorausfüllen von Cache-Schlüsseln für kritische Daten
+- **Unterstützung für veralteten Cache**: Vollständige Kompatibilität mit der `use_stale_cache` Option
+- **Vereinfachte Konfiguration**: Cleaner Backend-Typnamen (`redis`, `valkey`, `file`)
+
+### Konfigurationsbeispiel mit Symfony L2-Cache
+
+Verwenden Sie den vereinfachten `symfony_l2`-Backend-Typ für den L2-Cache:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend' => 'symfony_l2',
+            'backend_options' => [
+                // L2 (Remote): Redis with Symfony Cache
+                'remote_backend' => 'redis',
+                'remote_backend_options' => [
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'password' => '',
+                    'serializer' => 'igbinary',
+                    'compression_lib' => 'gzip',
+                    'persistent_id' => 'magento_l2_default',
+                    'timeout' => '2.5',
+                    'read_timeout' => '2.0',
+                    'use_lua' => '1',
+                    'preload_keys' => [
+                        'prefix_EAV_ENTITY_TYPES:hash',
+                        'prefix_GLOBAL_PLUGIN_LIST:hash',
+                        'prefix_DB_IS_UP_TO_DATE:hash',
+                        'prefix_SYSTEM_DEFAULT:hash',
+                    ],
+                ],
+                // L1 (Local): File cache
+                'local_backend' => 'file',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/magento_l1'
+                ],
+                'cleanup_percentage' => 90,
+            ],
+        ]
+    ],
+    'type' => [
+        'default' => ['frontend' => 'default'],
+    ],
+],
+```
+
+### Symfony L2-Cache mit veraltetem Cache
+
+Konfigurieren von separaten Frontends für die Unterstützung veralteter Caches:
+
+```php
+'cache' => [
+    'frontend' => [
+        // Default frontend: NO stale cache
+        'default' => [
+            'backend' => 'symfony_l2',
+            'backend_options' => [
+                'remote_backend' => 'redis',
+                'remote_backend_options' => [
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'serializer' => 'igbinary',
+                    'compression_lib' => 'gzip',
+                    'persistent_id' => 'magento_l2_default',
+                ],
+                'local_backend' => 'file',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/magento_l1'
+                ],
+            ],
+        ],
+        // Stale cache enabled frontend
+        'stale_cache_enabled' => [
+            'backend' => 'symfony_l2',
+            'backend_options' => [
+                'remote_backend' => 'redis',
+                'remote_backend_options' => [
+                    'server' => 'localhost',
+                    'database' => '0',
+                    'port' => '6379',
+                    'serializer' => 'igbinary',
+                    'compression_lib' => 'gzip',
+                    'persistent_id' => 'magento_l2_stale',
+                ],
+                'local_backend' => 'file',
+                'local_backend_options' => [
+                    'cache_dir' => '/dev/shm/magento_l1_stale'
+                ],
+                'use_stale_cache' => true,
+            ],
+        ]
+    ],
+    'type' => [
+        'default' => ['frontend' => 'default'],
+        'layout' => ['frontend' => 'stale_cache_enabled'],
+        'block_html' => ['frontend' => 'stale_cache_enabled'],
+        'reflection' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration' => ['frontend' => 'stale_cache_enabled'],
+        'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+        'full_page' => ['frontend' => 'stale_cache_enabled'],
+        'translate' => ['frontend' => 'stale_cache_enabled'],
+    ],
+],
+```
+
+### Backend-Optionen für Symfony L2-Cache
+
+| Option | Typ | Standard | Beschreibung |
+|--------|------|---------|-------------------------------------------------------------------|
+| `remote_backend` | Zeichenfolge | `'redis'` | Remote-Backend-Typ: `redis`, `valkey` oder `file` |
+| `remote_backend_options` | Array | `[]` | Konfiguration des Remote-Backends (siehe die Redis/Valley-Dokumentation) |
+| `local_backend` | Zeichenfolge | `'file'` | Lokaler Backend-Typ: `file` oder `apcu` |
+| `local_backend_options` | Array | `[]` | Lokale Backend-Konfiguration |
+| `cleanup_percentage` | Ganzzahl | `90` | Schwellenwert für die L1-Cache-Bereinigung (1-100) |
+| `use_stale_cache` | Boolesch | `false` | Veralteten Cache für hohe Verfügbarkeit aktivieren |
+
+### Talstütze
+
+Das `symfony_l2`-Backend unterstützt auch Valkey als Remote-Backend:
+
+```php
+'backend_options' => [
+    'remote_backend' => 'valkey',  // Use Valkey instead of Redis
+    'remote_backend_options' => [
+        'server' => 'localhost',
+        'database' => '0',
+        'port' => '6379',
+        'serializer' => 'igbinary',
+        'compression_lib' => 'gzip',
+    ],
+    // ... rest of configuration
+]
+```
+
+Detaillierte Konfigurationsoptionen finden Sie unter:
+- [Redis-Cache-Konfiguration mit Symfony Cache](redis-pg-cache.md)
+- [Valley-Cache-Konfiguration mit Symfony Cache](valkey-pg-cache.md)

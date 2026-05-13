@@ -1,18 +1,18 @@
 ---
-title: Konfigurieren von Valley
-description: Erfahren Sie, wie Sie das Valkey-Caching für die Leistungsoptimierung von Adobe Commerce konfigurieren. Entdecken Sie Funktionen, Einrichtungsschritte und Best Practices für die Konfiguration.
+title: Installieren und Einrichten von Valley
+description: Erfahren Sie, wie Sie Valkey für das Caching und die Sitzungsspeicherung mit Adobe Commerce installieren und konfigurieren. Entdecken Sie Optionen zur Optimierung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
-# Konfigurieren von Valley
+# Installieren und Einrichten von Valley
 
-Zu den wichtigsten Funktionen von Valley gehören:
+Valley ist ein Open-Source-Redis-kompatibler In-Memory-Datenspeicher, der als Cache-Backend und für die Sitzungsspeicherung verwendet werden kann. Zu den wichtigsten Funktionen gehören:
 
 - PHP-Sitzungsspeicher
 - Tag-basierte Cache-Bereinigung ohne `foreach` Schleifen
@@ -22,9 +22,9 @@ Zu den wichtigsten Funktionen von Valley gehören:
 
 Informationen zum Installieren und Konfigurieren der Valley-Software finden Sie in den folgenden Ressourcen:
 
-- [Valkey-Seite herunterladen](https://valkey.io/download/)
-- [Valkey-Schnellstart](https://valkey.io/topics/quickstart/)
-- [Valkey-Dokumentationsseite](https://valkey.io/docs)
+- [Valley-Seite herunterladen](https://valkey.io/download/){target="_blank"}
+- [Valley-Schnellstart](https://valkey.io/topics/quickstart/){target="_blank"}
+- [Valley-Dokumentationsseite](https://valkey.io/docs){target="_blank"}
 
 ## Einrichten der Valley-Konfiguration
 

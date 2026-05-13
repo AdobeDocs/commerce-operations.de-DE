@@ -2,9 +2,9 @@
 title: Beispiel für die Verwendung von Umgebungsvariablen
 description: Sehen Sie sich ein Beispiel für das Festlegen von freigegebenen, systemspezifischen und sensiblen Werten in Ihrem Entwicklungssystem mithilfe von Umgebungsvariablen an.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Um die sensiblen und systemspezifischen Einstellungen mithilfe von Umgebungsvari
 
   Wenn Sie die Anweisungen in Schritt 1 befolgt haben, ist der Bereich für „E-Mails senden an“ global (d. h. der Standardkonfigurationsbereich) und der Bereich für die Standard-E-Mail-Domain ist „website“.
 
-  Sie müssen den Code der Website kennen, um den Konfigurationswert der Standard-E-Mail-Domain festzulegen. Weitere Informationen [&#x200B; Auffinden finden Sie unter „Verwenden von Umgebungsvariablen zum Überschreiben &#x200B;](../reference/override-config-settings.md#environment-variables) Konfigurationseinstellungen“.
+  Sie müssen den Code der Website kennen, um den Konfigurationswert der Standard-E-Mail-Domain festzulegen. Weitere Informationen [ Auffinden finden Sie unter „Verwenden von Umgebungsvariablen zum Überschreiben ](../reference/override-config-settings.md#environment-variables) Konfigurationseinstellungen“.
 
 - Konfigurationspfad für jede Einstellung
 
@@ -198,4 +198,4 @@ In diesem Abschnitt wird beschrieben, wie Sie die Konfigurationseinstellungen in
 
    ![Überprüfen Sie die Einstellungen im Produktionssystem](../../assets/configuration/split-default-domain.png)
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

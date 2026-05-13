@@ -1,16 +1,16 @@
 ---
-title: Cache für statische Inhalte
-description: Erfahren Sie mehr über das Signieren im Cache für statische Inhalte und die Leistungsoptimierung in Adobe Commerce. Erfahren Sie, wie Sie Caching-Funktionen aktivieren, deaktivieren und konfigurieren.
+title: Statische Inhaltssignierung und Browser-Cache-Invalidierung
+description: Erfahren Sie, wie das Signieren statischer Inhalte in Adobe Commerce funktioniert, um den Browser-Cache für statische Ressourcen ungültig zu machen. Erfahren Sie, wie Sie diese Funktion aktivieren und konfigurieren.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# Cache für statische Inhalte
+# Unterschreiben statischer Inhalte und Invalidierung des Browser-Caches
 
 Um die Leistung zu verbessern, legt Commerce die `Expires` für statische Ressourcen wie Bilder, JavaScript und CSS fest.
 Wenn Sie den `Expires`-Header für eine statische Ressource festlegen, legt der Browser fest, dass die Ressource unter dieser URL zwischengespeichert und die zwischengespeicherte Version bereitgestellt werden soll, bis sie abläuft.
@@ -35,9 +35,9 @@ Dadurch wird die URL der statischen Dateien geändert und der Browser gezwungen,
 
 Commerce aktiviert diese Funktion standardmäßig, und Adobe empfiehlt, diese Funktion aktiviert zu lassen, um Probleme im Zusammenhang mit Browsern zu vermeiden, die alte statische Ressourcen bereitstellen.
 
-Die Konfiguration für das Signieren statischer Inhalte finden Sie unter [**[!UICONTROL Stores]**> Einstellungen > Konfiguration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+Die Konfiguration für das Signieren statischer Inhalte finden Sie unter [**[!UICONTROL Stores]**> Einstellungen > Konfiguration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **Nur On-Premises**: Diese Konfiguration ist verfügbar, wenn sich Ihre Site **nicht** im [Produktionsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#production-mode).
+- **Nur On-Premises**: Diese Konfiguration ist verfügbar, wenn sich Ihre Site **nicht** im [Produktionsmodus](../bootstrap/application-modes.md#production-mode).
 - **Cloud**: Diese Konfiguration ist ausgeblendet, da der Produktionsmodus streng durchgesetzt wird. Daher müssen Sie die Befehlszeile wie unten dargestellt verwenden.
 
 ![Statische Dateieinstellungen](../../assets/configuration/static-files-settings.png)

@@ -1,5 +1,5 @@
 ---
-source-git-commit: ba444c5f74cdeec86c842014d02775faf16b2f50
+source-git-commit: 44f5debe62afeb55d301a769ca8a3af957e5b6fd
 workflow-type: tm+mt
 source-wordcount: '9'
 ht-degree: 0%
@@ -26,6 +26,7 @@ Adobe Commerce erfordert:
 - `ext-openssl`
 - `ext-pcre`
 - `ext-pdo_mysql`
+- `ext-reflection`
 - `ext-simplexml`
 - `ext-soap`
 - `ext-sockets`
@@ -57,6 +58,7 @@ Magento Open Source erfordert:
 - `ext-openssl`
 - `ext-pcre`
 - `ext-pdo_mysql`
+- `ext-reflection`
 - `ext-simplexml`
 - `ext-soap`
 - `ext-sockets`

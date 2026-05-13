@@ -3,7 +3,7 @@ title: Konfigurieren von Apache für Ihre Suchmaschine
 description: Führen Sie diese Schritte aus, um eine Suchmaschine mit dem Apache-Webserver für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [&#x200B; finden Sie unter „Migrieren von Elasticsearch &#x200B;](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
+>OpenSearch-Unterstützung wurde in 2.4.4 hinzugefügt. OpenSearch ist eine kompatible Abspaltung von Elasticsearch. Weitere [ finden Sie unter „Migrieren von Elasticsearch ](../../../upgrade/prepare/opensearch-migration.md) OpenSearch“.
 
-In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ &#x200B;](#secure-communication-with-apache).
+In diesem Abschnitt wird beschrieben, wie Sie Apache als *unsicheren* Proxy konfigurieren, sodass Adobe Commerce eine auf diesem Server ausgeführte Suchmaschine verwenden kann. In diesem Abschnitt wird nicht beschrieben, wie Sie die HTTP-Standardauthentifizierung einrichten. Dies wird unter [Sichere Kommunikation mit Apache“ ](#secure-communication-with-apache).
 
 >[!NOTE]
 >
@@ -211,4 +211,4 @@ In diesem Abschnitt wird beschrieben, wie Sie angeben, wer auf den Apache-Server
 
 {{$include /help/_includes/verify-secure-communication.md}}
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

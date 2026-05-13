@@ -2,7 +2,7 @@
 title: Einstellung des Betriebsmodus
 description: Erfahren Sie, wie Sie Adobe Commerce-Betriebsmodi zwischen Entwickler- und Produktionsmodus festlegen. Erfahren Sie mehr über Befehle zum Moduswechsel und die Auswirkungen auf die Sicherheit.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Ausnahmen:
 
 ## Anzeigen des aktuellen Modus
 
-Die einfachste Möglichkeit, dies zu erreichen, besteht darin, diesen Befehl als [Dateisystembesitzer“ &#x200B;](../../installation/prerequisites/file-system/overview.md). Wenn Sie geteiltes Hosting haben, ist dies der Benutzer, den Ihr Anbieter Ihnen zur Anmeldung beim Server gibt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
+Die einfachste Möglichkeit, dies zu erreichen, besteht darin, diesen Befehl als [Dateisystembesitzer“ ](../../installation/prerequisites/file-system/overview.md). Wenn Sie geteiltes Hosting haben, ist dies der Benutzer, den Ihr Anbieter Ihnen zur Anmeldung beim Server gibt. Wenn Sie über einen privaten Server verfügen, handelt es sich normalerweise um ein lokales Benutzerkonto auf dem Commerce-Server.
 
 Befehlsverwendung:
 
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### CLI-Befehle von überall aus ausführen
 
-[CLI-Befehle von überall aus ausführen](../cli/config-cli.md#config-install-cli-first).
+[CLI-Befehle von überall aus ausführen](../cli/config-cli.md#prerequisites).
 
 Wenn Sie `<Commerce-install-directory>/bin` nicht zu Ihrem `PATH` hinzugefügt haben, können Sie einen Fehler erwarten, wenn Sie den Befehl allein ausführen.

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 779571c234e6fc620321d91cf8fd5f9ed28b869e
+source-git-commit: b1cfa656e3393bd47fb2c1557ff75db3ec6c6a67
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
@@ -17,5 +17,5 @@ Diese Sicherheits-Patch-Versionshinweise erfassen Aktualisierungen, um die Siche
 
 Weitere Informationen zu Sicherheits-Patch-Versionen:
 
-* [Überblick über Adobe Commerce Security-Patch-Versionen](/help/release/release-notes/security/overview.md#about-adobe-commerce-security-patch-releases)
-* Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patch-Versionen finden Sie in der [So rufen Sie Sicherheits-Patches ab und wenden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in der _Adobe Commerce Knowledgebase_.
+* [Überblick über Adobe Commerce Security-Patch-Versionen](/help/release/release-notes/security/overview.md#about-security-patch-releases)
+* Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patch-Versionen finden Sie in der [So rufen Sie Sicherheits-Patches ab und wenden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in der _Adobe Commerce Knowledgebase_.
