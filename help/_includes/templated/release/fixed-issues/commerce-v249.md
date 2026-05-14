@@ -1,7 +1,7 @@
 ---
-source-git-commit: d70c7f4ea201e0073588f879d19a29ea11962244
+source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
 workflow-type: tm+mt
-source-wordcount: '36744'
+source-wordcount: '36741'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Jetzt überprüfen die APIs die Eingabe ordnungsgemäß und geben einen 400-Fehl
 
 _AC-6419 - [GitHub-Problem](https://github.com/magento/magento2/issues/35934) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Interner Server-Fehler `/V1/order/&lbrace;orderId&rbrace;/ship` API-Endpunkt
+#### Interner Server-Fehler `/V1/order/{orderId}/ship` API-Endpunkt
 
 Das System behebt jetzt den internen Server-Fehler in `/V1/order/{orderId}/ship` API-Endpunkt und gibt einen 400-Fehler zurück, da die Anfrage fehlerhaft ist.
 
@@ -707,7 +707,7 @@ _ACP2E-4675 - [GitHub-Code-](https://github.com/magento/magento2/commit/c58a8ad0
 
 #### [Cloud] Bildpfade sind bei der zweiten Bearbeitung in PageBuilder absolut
 
-Es wurde ein Problem behoben, bei dem Text-Inline-Bearbeitung in Page Builder nach der erneuten Bearbeitung eines Bildes absolute Medienbild-URLs speichern konnte, anstatt die Portable {{media url=...}}-Direktive beizubehalten.
+Es wurde ein Problem behoben, bei dem Text-Inline-Bearbeitung in Page Builder nach der erneuten Bearbeitung eines Bildes absolute Medienbild-URLs speichern konnte, anstatt die Portable `{{media url=...}}`-Direktive beizubehalten.
 
 _ACP2E-4698 - [GitHub-Code-Beitrag](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
 
@@ -1700,7 +1700,7 @@ Es wurde ein Problem behoben, bei dem der Indexer für Katalogregeln zu viel Spe
 
 _ACP2E-4303 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### Der Vorschau-Link für &rbrack; geplante Updates von &lbrack;CMS leitet zur Wartungsseite weiter
+#### Der Vorschau-Link für ] geplante Updates von [CMS leitet zur Wartungsseite weiter
 
 Vorschau des geplanten Updates des Links zur Startseite mit konfigurierbaren Produkten zeigt die Liste der Produkte korrekt an. Zuvor wurden Benutzer zur Wartungsseite umgeleitet
 
@@ -2077,7 +2077,7 @@ In 2.4.9-alpha3 blockiert die Validierung jetzt korrekt das Speichern von Kundin
 
 _AC-13535 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/68a45d0a)_
 
-#### [Admin][Customer] Zurücksetzen des Kennworts auf Kundenadministrator schlägt fehl
+#### `[Admin][Customer]` Zurücksetzen des Kennworts auf dem Kundenadministrator schlägt fehl
 
 Es wurde ein Problem behoben, bei dem das Zurücksetzen des Kennworts eines Kunden über das Admin-Bedienfeld einen Systemfehler und einen Seitenabsturz verursachte. Das Zurücksetzen des Kennworts funktioniert jetzt ordnungsgemäß und sendet den Link zum Zurücksetzen ohne Fehler, auch in Edge-Fällen, in denen Änderungen am Speicher vorgenommen wurden.
 
@@ -3609,7 +3609,7 @@ Vor der Behebung waren die Cache-Schlüssel für Remote-Speicher-Metadaten nicht
 
 _ACP2E-4345 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0a3b7032)_
 
-#### [CLOUD][CLOUD] [Mainline] sales_clean_quotes getSize() Engpass
+#### `[CLOUD][B2B]` `[Mainline]` Sales_clean_quotes getSize() Engpass
 
 Verbessern Sie die Leistung des Cron-Auftrags sales_clean_quotes .
 
@@ -4167,7 +4167,7 @@ _ACP2E-4226_
 
 #### Navigieren zwischen Websites in der Vorschau für Zeitplanaktualisierung nicht möglich
 
-Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
+Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
 
 _ACP2E-4308 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0a3b7032)_
 
