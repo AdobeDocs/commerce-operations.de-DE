@@ -1,8 +1,8 @@
 ---
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+source-git-commit: 951b3852c0942205b63ee01089c8cb40adfb0614
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 74%
+source-wordcount: '163'
+ht-degree: 71%
 
 ---
 # Cloud-Anforderungstabelle
@@ -240,7 +240,7 @@ ht-degree: 74%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.2
@@ -342,7 +342,7 @@ ht-degree: 74%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.2
@@ -444,7 +444,7 @@ ht-degree: 74%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.2

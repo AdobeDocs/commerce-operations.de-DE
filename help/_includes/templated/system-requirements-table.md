@@ -1,8 +1,8 @@
 ---
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+source-git-commit: 951b3852c0942205b63ee01089c8cb40adfb0614
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 38%
+source-wordcount: '352'
+ht-degree: 36%
 
 ---
 # Systemanforderungen
@@ -312,7 +312,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           8.0
@@ -348,7 +348,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.2
@@ -450,7 +450,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.17
@@ -477,7 +477,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           8.0
@@ -513,7 +513,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.2
@@ -615,7 +615,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.17
@@ -642,7 +642,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           8.0
@@ -678,7 +678,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.2
@@ -735,7 +735,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           7.17
@@ -762,7 +762,7 @@ ht-degree: 38%
     <tr>
       <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
-          --
+          Nicht unterstützt
       </td>
       <td>
           8.0
