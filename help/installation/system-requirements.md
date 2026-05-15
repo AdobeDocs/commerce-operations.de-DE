@@ -18,7 +18,7 @@ Es gibt einige Unterschiede in den Abhängigkeiten für Commerce in Cloud Manage
 >[!IMPORTANT]
 >
 >In der Tabelle mit den Systemanforderungen sind die Adobe Commerce-Versionen aufgeführt, für die sie gelten, einschließlich Versionen mit der Bezeichnung Beta oder früher Zugriff.
->Die [ veröffentlichten Commerce-Versionen finden ](../release/release-notes/overview.md) in den Versionshinweisen .
+>Die [&#x200B; veröffentlichten Commerce-Versionen finden &#x200B;](../release/release-notes/overview.md) in den Versionshinweisen .
 >
 >Wenn Ihre Service-Versionen nicht mit der unterstützten Konfiguration für Ihre Commerce-Version übereinstimmen, kann sich das Verhalten von dem unterscheiden, was Adobe beim Testen reproduzieren kann. Der Adobe-Support bittet Sie möglicherweise, Ihre Umgebung an einer unterstützten Konfiguration auszurichten, bevor Sie das gemeldete Verhalten untersuchen, beheben oder validieren. Nachdem Sie Ihre Umgebung angepasst haben, kann der Adobe-Support die Untersuchung fortsetzen.
 
@@ -38,7 +38,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!TAB Commerce On-Premises]
@@ -85,7 +85,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!TAB Commerce On-Premises]

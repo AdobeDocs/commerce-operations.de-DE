@@ -106,7 +106,7 @@ So lesen Sie die Tabelle:
    - Der gesamte Variablenname lautet immer „ALL CAPS“
    - Variablenname mit `CONFIG__` beginnen (beachten Sie zwei Unterstriche)
    - Sie finden den `<STORE_VIEW_CODE>` oder `<WEBSITE_CODE>` Teil eines Variablennamens entweder in der Admin- oder in der Commerce-Datenbank, wie in den folgenden Abschnitten angegeben.
-   - Sie finden `<SYSTEM__VARIABLE__NAME>` wie in [2: Festlegen von globalen, Website- oder Store-Ansichtsvariablen“ ](#step-2-set-global-website-or-store-view-variables).
+   - Sie finden `<SYSTEM__VARIABLE__NAME>` wie in [2: Festlegen von globalen, Website- oder Store-Ansichtsvariablen“ &#x200B;](#step-2-set-global-website-or-store-view-variables).
 
 ### Suchen nach einer Website oder einem Store-Ansichtsbereich im Admin-Bereich
 
@@ -224,7 +224,7 @@ So suchen Sie den Variablennamen für das Versandland:
 
 1. Bestimmen Sie den Umfang.
 
-   Suchen Sie den Bereich in [Datenbank](#find-a-website-or-store-view-scope-in-the-database) wie in Schritt 1: Suchen der Website- oder Store-Ansichtsbereichswert beschrieben. (Sie können den Wert auch im Admin-Bereich finden, wie in der Tabelle [ Schritt 2: Festlegen der Variablen für globale Ansicht, Website- oder Store-Ansicht gezeigt](#step-2-set-global-website-or-store-view-variables).
+   Suchen Sie den Bereich in [Datenbank](#find-a-website-or-store-view-scope-in-the-database) wie in Schritt 1: Suchen der Website- oder Store-Ansichtsbereichswert beschrieben. (Sie können den Wert auch im Admin-Bereich finden, wie in der Tabelle [&#x200B; Schritt 2: Festlegen der Variablen für globale Ansicht, Website- oder Store-Ansicht gezeigt](#step-2-set-global-website-or-store-view-variables).
 
    Der Umfang kann beispielsweise `CONFIG__WEBSITES__DEFAULT` sein.
 
