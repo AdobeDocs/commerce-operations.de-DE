@@ -20,7 +20,7 @@ Die anfängliche Liste wird automatisch mit dem `bin/magento list`-Befehl in Ado
 
 ## Allgemein
 
-Verwenden Sie das [&#x200B; „CLI-Befehle hinzufügen](https://developer.adobe.com/commerce/php/development/cli-commands/) um einen benutzerdefinierten CLI-Befehl hinzuzufügen.
+Verwenden Sie das [ „CLI-Befehle hinzufügen](https://developer.adobe.com/commerce/php/development/cli-commands/) um einen benutzerdefinierten CLI-Befehl hinzuzufügen.
 
 Sie können `bin/magento` CLI-Befehle über Tastaturbefehle anstelle des vollständigen Befehlsnamens aufrufen. Beispielsweise können Sie `bin/magento setup:upgrade` mithilfe von `bin/magento s:up` aufrufen, `bin/magento s:upg`. Unter [Verknüpfungssyntax](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) erfahren Sie, wie Sie Verknüpfungen mit beliebigen CLI-Befehlen verwenden.
 

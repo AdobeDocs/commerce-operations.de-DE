@@ -83,4 +83,4 @@ Stellen Sie sicher, dass das `<magento_root>/var/page_cache` leer ist:
 
 >[!TIP]
 >
->Wenn Sie auf 503-Fehler (Backend-Abruf fehlgeschlagen) stoßen, finden Sie weitere Informationen unter [Fehlerbehebung für 503-Fehler (Dienst nicht verfügbar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=de) im _Adobe Commerce-Hilfezentrum_.
+>Wenn Sie auf 503-Fehler (Backend-Abruf fehlgeschlagen) stoßen, finden Sie weitere Informationen unter [Fehlerbehebung für 503-Fehler (Dienst nicht verfügbar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) im _Adobe Commerce-Hilfezentrum_.
