@@ -17,7 +17,7 @@ Sie können den Wert der _any_-Konfigurationseinstellung mithilfe von Umgebungsv
 
 >[!TIP]
 >
->Sehen Sie sich das Thema [Umgebungen konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=de) im Handbuch zu _Commerce in Cloud-Infrastrukturen an_.
+>Sehen Sie sich das Thema [Umgebungen konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) im Handbuch zu _Commerce in Cloud-Infrastrukturen an_.
 
 ## Umgebungsvariablen
 
@@ -62,8 +62,8 @@ Das allgemeine Format der Variablennamen der Systemeinstellungen ist wie folgt:
   Weitere Informationen zu Bereichen finden Sie unter:
 
    - [Schritt 1: Suchen des Wertes der Website- oder Store-Ansicht](#step-1-find-the-website-or-store-view-scope-value)
-   - [Commerce-Benutzerhandbuch zum Thema Umfang](https://experienceleague.adobe.com/de/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Kurzreferenz zum Umfang](https://experienceleague.adobe.com/de/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [Commerce-Benutzerhandbuch zum Thema Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Kurzreferenz zum Umfang](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` ist der Konfigurationspfad, bei dem `/` durch doppelte Unterstriche ersetzt werden. Weitere Informationen finden Sie [Schritt 2: Festlegen von Systemvariablen](#step-2-set-global-website-or-store-view-variables).
 
@@ -106,7 +106,7 @@ So lesen Sie die Tabelle:
    - Der gesamte Variablenname lautet immer „ALL CAPS“
    - Variablenname mit `CONFIG__` beginnen (beachten Sie zwei Unterstriche)
    - Sie finden den `<STORE_VIEW_CODE>` oder `<WEBSITE_CODE>` Teil eines Variablennamens entweder in der Admin- oder in der Commerce-Datenbank, wie in den folgenden Abschnitten angegeben.
-   - Sie finden `<SYSTEM__VARIABLE__NAME>` wie in [2: Festlegen von globalen, Website- oder Store-Ansichtsvariablen“ &#x200B;](#step-2-set-global-website-or-store-view-variables).
+   - Sie finden `<SYSTEM__VARIABLE__NAME>` wie in [2: Festlegen von globalen, Website- oder Store-Ansichtsvariablen“ ](#step-2-set-global-website-or-store-view-variables).
 
 ### Suchen nach einer Website oder einem Store-Ansichtsbereich im Admin-Bereich
 
@@ -224,7 +224,7 @@ So suchen Sie den Variablennamen für das Versandland:
 
 1. Bestimmen Sie den Umfang.
 
-   Suchen Sie den Bereich in [Datenbank](#find-a-website-or-store-view-scope-in-the-database) wie in Schritt 1: Suchen der Website- oder Store-Ansichtsbereichswert beschrieben. (Sie können den Wert auch im Admin-Bereich finden, wie in der Tabelle [&#x200B; Schritt 2: Festlegen der Variablen für globale Ansicht, Website- oder Store-Ansicht gezeigt](#step-2-set-global-website-or-store-view-variables).
+   Suchen Sie den Bereich in [Datenbank](#find-a-website-or-store-view-scope-in-the-database) wie in Schritt 1: Suchen der Website- oder Store-Ansichtsbereichswert beschrieben. (Sie können den Wert auch im Admin-Bereich finden, wie in der Tabelle [ Schritt 2: Festlegen der Variablen für globale Ansicht, Website- oder Store-Ansicht gezeigt](#step-2-set-global-website-or-store-view-variables).
 
    Der Umfang kann beispielsweise `CONFIG__WEBSITES__DEFAULT` sein.
 
@@ -253,6 +253,6 @@ Ein Beispiel mit einer schrittweisen Anleitung finden Sie unter [Festlegen von K
 >
 >- Um Werte zu verwenden, die Sie im `$_ENV`-Array festgelegt haben, müssen Sie `variables_order = "EGPCS"` (Environment, Get, Post, Cookie, and Server) in Ihrer `php.ini`-Datei festlegen. Weitere Informationen finden Sie unter [PHP-Dokumentation](https://www.php.net/manual/en/ini.core.php).
 >
->- Wenn Sie für Adobe Commerce in der Cloud-Infrastruktur versuchen, Konfigurationseinstellungen mithilfe der [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=de#configure-the-project) zu überschreiben, müssen Sie dem Variablennamen `env:` voranstellen. Beispiel:
+>- Wenn Sie für Adobe Commerce in der Cloud-Infrastruktur versuchen, Konfigurationseinstellungen mithilfe der [Project Web Interface](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project) zu überschreiben, müssen Sie dem Variablennamen `env:` voranstellen. Beispiel:
 >
 >![Beispiel für eine Umgebungsvariable](../../assets/configuration/cloud-console-envvariable.png)
