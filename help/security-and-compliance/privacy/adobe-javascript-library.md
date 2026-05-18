@@ -14,7 +14,7 @@ ht-degree: 0%
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-Die [Adobe Privacy JavaScript Library](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) ist eine Reihe von Tools, die Ihnen bei der Erstellung eines Prozesses für den Zugriff auf und das Löschen privater Daten helfen.
+Die [Adobe Privacy JavaScript Library](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=de) ist eine Reihe von Tools, die Ihnen bei der Erstellung eines Prozesses für den Zugriff auf und das Löschen privater Daten helfen.
 
 Adobe Commerce-Datenverfolgungsdienste können private Informationen speichern, die für Datenschutzbestimmungen wie die [Datenschutz-Grundverordnung (DSGVO)](gdpr.md) und den California Consumer Privacy Act ([) gelten](ccpa.md).
 
@@ -42,7 +42,7 @@ Die Adobe Privacy JS Library bietet verschiedene Funktionen zum Verwalten von Id
 `retrieveThenRemoveIdentities()`
 : Diese Funktion ähnelt `removeIdentities()` insofern, als sie ein Array von Identitäten abruft und aus dem Browser entfernt.
 
-Weitere Informationen und Beispiele zur Verwendung dieser Funktionen finden Sie unter [Offizielle Bibliotheksdokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
+Weitere Informationen und Beispiele zur Verwendung dieser Funktionen finden Sie unter [Offizielle Bibliotheksdokumentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=de).
 
 ### Initialisierung
 
@@ -53,4 +53,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 Der Konstruktor akzeptiert während der Instanziierung ein Konfigurationsobjekt mit Parametern.
-Eine Liste [&#x200B; Konfigurationsparameter finden Sie in der &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html)offiziellen Bibliotheksdokumentation).
+Eine Liste [&#x200B; Konfigurationsparameter finden Sie in der &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=de)offiziellen Bibliotheksdokumentation).
