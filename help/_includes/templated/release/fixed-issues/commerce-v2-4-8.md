@@ -2700,7 +2700,7 @@ Keine Beschreibung verfügbar.
 
 _BUNDLE-3421_
 
-#### [Braintree][Cloud]Das Braintree-SSL-Zertifikat läuft am 30. Juni ab
+#### [Braintree] [Cloud]Das Braintree-SSL-Zertifikat läuft am 30. Juni ab
 
 Keine Beschreibung verfügbar.
 
