@@ -33,7 +33,7 @@ Thank you for taking the time to report this issue!
 GitHub Issues in this repo should relate to this project's codebase.
 
 Before submitting this issue, please make sure you are complying with our Code of Conduct:
-https://github.com/AdobeDocs/commerce-operations.en/blob/main/code-of-conduct.md
+https://github.com/AdobeDocs/commerce-operations.de-DE/blob/main/code-of-conduct.md
 
 Issues that do not comply with our Code of Conduct or do not contain enough information may be closed at the maintainers' discretion.
 
