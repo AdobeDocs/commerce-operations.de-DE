@@ -3,9 +3,9 @@ title: Übersicht über Wartung und Support
 description: Pflegen und unterstützen Sie Ihre neu gestartete Adobe Commerce-Implementierung ordnungsgemäß.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Der Wissenstransfer erfolgt im Laufe des gesamten Projekts, und parallel zur Ber
 
 Das folgende Diagramm zeigt die Phasen und Aktivitäten, die in ein erfolgreiches Übergangsergebnis eingeschlossen wären:
 
-![Diagramm mit den Phasen des Übergangsprozesses](../../assets/playbooks/transition-diagram.svg)
+![Diagramm mit den Phasen des Übergangsprozesses](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ Das folgende Diagramm zeigt die Phasen und Aktivitäten, die in ein erfolgreiche
 Die Ermittlung des richtigen Support-Modells für Ihr Unternehmen zur weiteren Verbesserung und Optimierung Ihrer Plattform - und der Commerce-Praxis als Ganzes - ist ein wichtiger Schritt zur Aufrechterhaltung der harten Arbeit, die während des Implementierungsprozesses geleistet wurde. Mit einem umfassenden fortlaufenden Support-Plan kann Ihre Commerce-Site mit den Erwartungen Ihrer Kunden Schritt halten und Sie können Ihre Ziele weiterhin erreichen.
 
 Bei der Bereitstellung von Adobe Commerce ist es wichtig, darüber nachzudenken, was in Ihre Wartungs- und Support-Strategie aufgenommen werden soll.
-Die Adobe Commerce-Lizenz beinhaltet Support durch Experten. Weitere Informationen zu Expert-Support und Adobe-Support-Plänen finden Sie unter [Adobe-Support-Pläne](https://business.adobe.com/de/customers/consulting-services/premier-support.html).
+Die Adobe Commerce-Lizenz beinhaltet Support durch Experten. Weitere Informationen zu Expert-Support und Adobe-Support-Plänen finden Sie unter [Adobe-Support-Pläne](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Zusätzlich zu den Adobe-Support-Plänen gibt es alte Magento-Support-Bedingungen. Um zu verstehen, welche Support-Services für Sie gelten, sehen Sie in Ihrem Vertrag nach, welche Support-Vereinbarung Sie haben, oder wenden Sie sich an Ihr Adobe-Account-Team.

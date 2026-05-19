@@ -2,9 +2,9 @@
 title: Referenz zu personenbezogenen Daten von Kunden (Version 2.x)
 description: Erfahren Sie mehr über Datenflussdiagramme und Datenbankentitätszuordnungen für personenbezogene Kundeninformationen in Adobe Commerce 2.x.
 exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Ein Benutzer kann bei der Registrierung für ein Konto, während der Kasse und b
 
 Adobe Commerce lädt Kundeninformationen, wenn sich der Kunde anmeldet und mehrere verschiedene Seiten aufruft oder auscheckt.
 
-![Frontend-Datenzugriffspunkte](../../assets/security-compliance/frontend-data-access-points.svg)
+![Frontend-Datenzugriffspunkte](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Backend-Dateneinstiegspunkte
 
@@ -46,7 +46,7 @@ Ein Händler kann beim Erstellen eines Kunden oder einer Bestellung über den Ad
 
 Adobe Commerce lädt Kundeninformationen, wenn ein Händler mehrere Rastertypen anzeigt, auf ein Raster klickt, um detaillierte Informationen anzuzeigen, und verschiedene andere Aufgaben ausführt.
 
-![Backend-Datenzugriffspunkte](../../assets/security-compliance/backend-data-access-points.svg)
+![Backend-Datenzugriffspunkte](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Datenbankentitäten
 
