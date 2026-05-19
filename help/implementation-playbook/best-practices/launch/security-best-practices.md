@@ -3,9 +3,9 @@ title: Sichern der Commerce-Site und -Infrastruktur
 description: Aufrechterhaltung der Sicherheit durch Implementierung von Best Practices für die Sicherheit beim Einrichten, Konfigurieren und Aktualisieren von Adobe Commerce-Installationen.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe betrachtet die folgenden Empfehlungen für alle Kunden als besonders wicht
 
 ![Checkliste](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Aktivieren Sie die Zwei-Faktor-Authentifizierung für Ihren Administrator und alle SSH-Verbindungen**
 
-- [Sicherheit für Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=de)
+- [Sicherheit für Commerce Admin](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
 - [Sichere SSH-Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=de) (Cloud-Infrastruktur)
 
@@ -111,7 +111,7 @@ Als Teil eines Disaster Recovery-Plans empfiehlt Adobe Kunden dringend, [ihre Ad
 
 - [Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=de#backup-and-disaster-recovery)
 
-- [Store-Konfigurationsverwaltung für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=de)
+- [Speicherkonfigurationsverwaltung für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=de)
 
 **Adobe Commerce lokal bereitgestellt**
 
@@ -145,7 +145,7 @@ Bei den häufigsten Angriffen wird bösartiger Code in die absolute Kopf- oder F
 
 Client-seitige Kreditkartenabtaster sind eine Art von Malware, die Code in Inhalte von Händlerwebseiten einbettet, die im Browser eines Benutzers ausgeführt werden können, wie in der folgenden Abbildung dargestellt.
 
-![Datenfluss für Malware-Angriffe auf E-Commerce-Sites](../../../assets/playbooks/malware-data-flow.svg)
+![Datenfluss für Malware-Angriffe auf E-Commerce-Sites](../../../assets/playbooks/malware-data-flow.png)
 
 Nach dem Eintreten bestimmter Aktionen, z. B. wenn ein Benutzer ein Formular sendet oder einen Feldwert ändert, serialisiert der Skimmer die Daten und sendet sie an Drittanbieter-Endpunkte. Bei diesen Endpunkten handelt es sich normalerweise um andere kompromittierte Websites, die als Relais dienen, um die Daten an das endgültige Ziel zu senden.
 

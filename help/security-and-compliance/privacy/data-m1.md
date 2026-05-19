@@ -2,9 +2,9 @@
 title: Referenz zu personenbezogenen Daten von Kunden (Version 1.x)
 description: Erfahren Sie mehr über Datenfluss- und Datenbankentitätszuordnungen für personenbezogene Kundeninformationen in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Ein Benutzer kann bei der Registrierung für ein Konto, während der Kasse und b
 
 Commerce lädt Kundeninformationen, wenn sich der Kunde anmeldet und mehrere verschiedene Seiten aufruft oder auscheckt.
 
-![Frontend-Datenzugriffspunkte](../../assets/security-compliance/frontend-data-access-points.svg)
+![Frontend-Datenzugriffspunkte](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Backend-Dateneinstiegspunkte
 
@@ -46,7 +46,7 @@ Ein Händler kann Kunden-, Adressen- und Zahlungsinformationen vom Administrator
 
 Commerce lädt Kundeninformationen, wenn ein Händler mehrere Rastertypen anzeigt, auf ein Raster klickt, um detaillierte Informationen anzuzeigen, und verschiedene andere Aufgaben ausführt.
 
-![Backend-Datenzugriffspunkte](../../assets/security-compliance/backend-data-access-points.svg)
+![Backend-Datenzugriffspunkte](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Datenbankentitäten
 

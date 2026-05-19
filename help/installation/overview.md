@@ -1,11 +1,11 @@
 ---
 title: Übersicht über die lokale Installation
-description: Erfahren Sie mehr über den lokalen Installationsprozess für Adobe Commerce. Erfahren Sie mehr über Server-Anforderungen, Einrichtungsschritte und Best Practices für die Bereitstellung.
+description: Erfahren Sie mehr über den lokalen Installationsprozess von Adobe Commerce. Erfahren Sie mehr über Server-Anforderungen, Einrichtungsschritte und Best Practices für die Bereitstellung.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +43,7 @@ Sie haben die volle Kontrolle über Ihre Umgebung, was eine bessere Anpassung un
 
 Die folgende Abbildung zeigt die wichtigsten Schritte bei der Installation von Adobe Commerce für On-Premise-Umgebungen:
 
-![Funktionsweise der Installation](../assets/installation/on-premises-install.drawio.svg)
+![Funktionsweise der Installation](../assets/installation/on-premises-install.png)
 
 ### Einrichten der Serverumgebung
 
