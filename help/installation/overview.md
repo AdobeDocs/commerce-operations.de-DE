@@ -57,11 +57,11 @@ Generieren Sie neue [Authentifizierungsschlüssel](prerequisites/authentication-
 
 Laden Sie mithilfe von [Composer](prerequisites/commerce.md) (empfohlen) herunter oder klonen Sie es von GitHub für Entwicklungsbeiträge.
 
-Wenn Sie einen Beitrag zur Magento Open Source-Codebasis leisten oder das Programm anpassen möchten, [ Sie das GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)Repository (klonen). Diese Methode erfordert Vertrautheit mit GitHub und Composer.
+Wenn Sie einen Beitrag zur Magento Open Source-Codebasis leisten oder das Programm anpassen möchten, [&#x200B; Sie das GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)Repository (klonen). Diese Methode erfordert Vertrautheit mit GitHub und Composer.
 
 ### Installieren des Programms
 
-Führen Sie den Installationsbefehl mit Ihrer spezifischen Konfiguration aus. Vollständige Beispiele finden Sie [ &quot;](composer.md)&quot;.
+Führen Sie den Installationsbefehl mit Ihrer spezifischen Konfiguration aus. Vollständige Beispiele finden Sie [&#x200B; &quot;](composer.md)&quot;.
 
 >[!NOTE]
 >
