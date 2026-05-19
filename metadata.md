@@ -11,7 +11,8 @@ mini-toc-levels: 2
 product: magento
 role: Admin, Developer
 solution: Commerce
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
 usetq: true
 solution-title: Commerce
 topic: Administration, Commerce, Development
