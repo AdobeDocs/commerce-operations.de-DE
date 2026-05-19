@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: bf7216db7919b3f62e66cd7c27c0db023b2b6441
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
-source-wordcount: '9953'
+source-wordcount: '9942'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 0%
    - [Warnhinweise](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
 - KAPPEN {#caps-tool}
-   - [Einführung](caps-tool/intro.md)
-   - [Zugriff](caps-tool/access.md)
-   - [Workflow](caps-tool/workflow.md)
-   - [Best Practices](caps-tool/best-practices.md)
-   - [Fehlerbehebung](caps-tool/troubleshooting.md)
+   - {hide-from-toc}[Einführung](caps-tool/intro.md)
+   - {hide-from-toc}[Zugriff](caps-tool/access.md)
+   - {hide-from-toc}[Workflow](caps-tool/workflow.md)
+   - {hide-from-toc}[Best Practices](caps-tool/best-practices.md)
+   - {hide-from-toc}[Fehlerbehebung](caps-tool/troubleshooting.md)
 - Verwaltete Warnhinweise in Adobe Commerce {#managed-alerts-for-adobe-commerce}
    - [Verwaltete Warnhinweise zu kritischen Warnhinweisen auf Adobe Commerce [!DNL Redis] Arbeitsspeicher](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
    - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis bezüglich Festplatte](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)

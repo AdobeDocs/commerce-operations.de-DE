@@ -2,9 +2,9 @@
 user-guide-title: Sicherheit und Compliance
 user-guide-description: Erfahren Sie mehr über die Einhaltung von Vorschriften und die Verantwortlichkeiten der Händler für die Aufrechterhaltung eines sicheren Adobe Commerce-Projekts.
 feature: Security
-source-git-commit: 28b94fe2fd4f976ad48fa9c59e7e1559db8ba35e
+source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: '60'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 - Datenschutzbestimmungen {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [DSGVO](privacy/gdpr.md)
-   - [Adobe Privacy JavaScript Library](privacy/adobe-javascript-library.md)
+   - {hide-from-toc}[Adobe Privacy JavaScript Library](privacy/adobe-javascript-library.md)
    - [Privacy JavaScript-Bibliothek](privacy/javascript-library.md)
 - Verweis {#reference}
    - [Persönliche Kundeninformationen (Version 2.x)](privacy/data-m2.md)

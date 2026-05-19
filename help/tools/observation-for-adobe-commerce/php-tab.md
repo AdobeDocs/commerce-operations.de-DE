@@ -86,7 +86,7 @@ Der **[!UICONTROL Database Errors]** zeigt Datenbankfehler im ausgewählten Zeit
 * &#39;%rollback%&#39;) als &#39;rollback&#39;
 * &#39;%Foreign key constraint failed for table%&#39;) as &#39;Foreign_key_constraint&#39;
 * &#39;%ERROR_CODE: 1114%&#39;) als &#39;sql_1114_full&#39;
-* &#39;%CRITICAL: SQLSTATE[HY000][2006] MySQL Server wurde entfernt%&#39;) als &#39;sql_gone&#39;
+* &#39;%CRITICAL: SQLSTATE[HY000] [2006] MySQL Server wurde entfernt%&#39;) als &#39;sql_gone&#39;
 * &#39;%SQLSTATE[HY000] [1040] Zu viele Verbindungen%&#39;) als &#39;sql_1040&#39;
 * &#39;%CRITICAL: SQLSTATE[HY000] [2002]%&#39;) als &#39;sql_2002&#39;
 * &#39;%SQLSTATE[08S01]:%&#39;) als &#39;sql_1047&#39;
