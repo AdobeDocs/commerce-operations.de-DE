@@ -13,11 +13,12 @@ role: Admin, Developer
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+usetq: true
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
-source-git-commit: 7cc8aed1a128e22fc588e9c8fb8ff6fa4a4b75b1
+source-git-commit: 1c6e6ee398f55823cbbcd7aa8a69507f769a15d2
 workflow-type: tm+mt
 source-wordcount: 176
 ht-degree: 0%
