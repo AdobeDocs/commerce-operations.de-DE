@@ -22,7 +22,7 @@ Während des dreijährigen Support-Fensters haben Kunden Zugriff auf:
 
 - **Hotfixes**-Bei kritischen Sicherheitsproblemen wie z. B. Zero-Day-Sicherheitslücken bietet Adobe [Hotfixes](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) für alle Kunden mit einer unterstützten Version, auch wenn sie nicht auf dem neuesten Patch oder der neuesten Sicherheits-Patch-Version sind. Beachten Sie, dass ein Hotfix nicht vollständig ist und nicht alle Sicherheitsprobleme behebt, die durch eine Aktualisierung auf die neueste Version behoben würden.
 
-Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [ getesteten und unterstützten Technologien ](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
+Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [&#x200B; getesteten und unterstützten Technologien &#x200B;](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
 
 ## Erweiterte Unterstützung
 
@@ -51,7 +51,7 @@ Adobe empfiehlt Kunden, so bald wie möglich ein Upgrade durchzuführen. Um jedo
 
 >[!IMPORTANT]
 >
->PCI-Compliance kann nicht für Händler mit Version 2.4.6 garantiert werden, die weiterhin PHP 8.1 verwenden, das [Ende der Unterstützung im Jahr 2025) ](https://www.php.net/eol.php). Ebenso erreicht PHP 8.2 [Ende 2026), ](https://www.php.net/supported-versions.php) für Händler, die es auch 2027 verwenden, dasselbe PCI-Compliance-Risiko darstellt.
+>PCI-Compliance kann nicht für Händler mit Version 2.4.6 garantiert werden, die weiterhin PHP 8.1 verwenden, das [Ende der Unterstützung im Jahr 2025) &#x200B;](https://www.php.net/eol.php). Ebenso erreicht PHP 8.2 [Ende 2026), &#x200B;](https://www.php.net/supported-versions.php) für Händler, die es auch 2027 verwenden, dasselbe PCI-Compliance-Risiko darstellt.
 
 ## Zusätzliche Sicherheitskorrekturen bei der Bereitstellung für Adobe Commerce 2.4.4 und 2.4.5
 
