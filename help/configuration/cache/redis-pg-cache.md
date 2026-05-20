@@ -3,9 +3,9 @@ title: Konfigurieren von Redis für Standard- und Seitencache
 description: Erfahren Sie, wie Sie Redis als Standard- und Seiten-Cache-Backend für Adobe Commerce konfigurieren. Entdecken Sie CLI-Befehle, env.php-Einstellungen und die Verbindungsüberprüfung.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,19 @@ Mit den folgenden Parametern:
 | `cache-backend-redis-port` | Port | Redis-Server-Listener-Port | `6379` |
 | `cache-backend-redis-db` | Datenbank | Erforderlich, wenn Sie Redis sowohl für den Standard- als auch für den Vollseiten-Cache verwenden. Geben Sie die Datenbanknummer eines der Caches an; der andere Cache verwendet standardmäßig 0.<br><br>**Wichtig**: Wenn Sie Redis für mehr als einen Caching-Typ verwenden, müssen die Datenbanknummern unterschiedlich sein. Es wird empfohlen, die standardmäßige Caching-Datenbanknummer 0, die Seitencaching-Datenbanknummer 1 und die Sitzungsspeicher-Datenbanknummer 2 zuzuweisen. | `0` |
 | `cache-backend-redis-password` | Passwort | Die Konfiguration eines Redis-Kennworts ermöglicht eine der integrierten Sicherheitsfunktionen: den `auth`-Befehl, für den sich Clients authentifizieren müssen, um auf die Datenbank zuzugreifen. Das Passwort wird direkt in der Redis-Konfigurationsdatei konfiguriert: `/etc/redis/redis.conf` | |
-| `cache-backend-redis-use-lua` | use_lua | Aktivieren oder Deaktivieren von LUA. <br><br>**Lua**: Lua ermöglicht die Ausführung eines Teils der Anwendungslogik in Redis, verbessert die Leistung und stellt die Datenkonsistenz durch atomare Ausführung sicher. | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Aktivieren oder deaktivieren Sie LUA für die Speicherbereinigung. <br><br>**Lua**: Lua ermöglicht die Ausführung eines Teils der Anwendungslogik in Redis, verbessert die Leistung und stellt die Datenkonsistenz durch atomare Ausführung sicher. | `1` |
+| `cache-backend-redis-use-lua` | use_lua | Aktivieren oder deaktivieren Sie Lua-Skripte für alle Redis-Vorgänge. <br><br>**Standard: unter `0` halten.** Der Lua-Modus ist standardmäßig deaktiviert, um bekannte Leistungs-Regressionen und GraphQL-Cache-Fehler zu verhindern, die durch die gebündelte Redis-Bibliothek (1.17.x) eingeführt wurden, wenn Lua aktiviert wurde. | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Aktivieren oder deaktivieren Sie Lua-Skripte für die Speicherbereinigung (den `backend_clean_cache` Cron-Auftrag). <br><br>**Standard: unter `1` halten.** Absichtlich aktiviert, um die atomare Tag-Set-Bereinigung während des GC sicherzustellen. Ohne sie kann eine Race-Bedingung auftreten, wenn der `backend_clean_cache` Cron gleichzeitig mit einem Cache-Speichervorgang ausgeführt wird, sodass Cache-Einträge ohne entsprechenden Eintrag im Cache-Tag-Index verbleiben. Dies führt dazu, dass die Tag-basierte Invalidierung im Hintergrund fehlschlägt. So kann z. B. die Aktualisierung eines Produktpreises den Produkt-Cache nicht invalidieren, sondern erfordert eine vollständige Cache-Leerung. | `1` |
+
+### LUA-Modus
+
+Wenn dieser Modus aktiviert ist, bündelt er mehrere Redis-Vorgänge (Cache-Schreibvorgänge, Tag-Updates, Garbage Collection) in einem einzigen atomaren Skript, das Server-seitig über `EVALSHA` ausgeführt wird. Dadurch wird verhindert, dass gleichzeitige Anfragen verschachtelt werden, z. B. indem sichergestellt wird, dass ein Cache-Eintrag und seine Tag-Zugehörigkeit zusammen geschrieben werden.
+
+>[!WARNING]
+>
+>Ändern Sie die Standardwerte für `use_lua` und `use_lua_on_gc` nicht, ohne die Auswirkungen für Ihre Adobe Commerce-Version zu verstehen:
+>
+>- **`use_lua`**: Die Aktivierung dieser Funktion auf Adobe Commerce 2.4.7 oder 2.4.8 (Bibliothek `colinmollenhour/cache-backend-redis` 1.17.1) kann zu Cache-Beschädigungen und Problemen mit GraphQL-Cache-Fehlern führen.
+>- **`use_lua_on_gc`**: Wenn Sie dies auf Adobe Commerce 2.4.8 deaktivieren, wird der atomare Schutz während der automatischen Bereinigung entfernt. Dies kann dazu führen, dass die Tag-basierte Cache-Invalidierung im Hintergrund fehlschlägt, was eine vollständige Cache-Leerung erforderlich macht, um dies wiederherzustellen.
 
 ## Beispielbefehl (Standard-Cache)
 
