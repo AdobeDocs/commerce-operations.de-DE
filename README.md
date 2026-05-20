@@ -1,5 +1,5 @@
 ---
-source-git-commit: 3bee7acf020881743923dabc1d93b6001324bb4d
+source-git-commit: c040c9a3f184f0a39f778e7f0f2417dcbfbfeba1
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wi
 
 ### Wesentliche Veränderungen durch Adobe Mitarbeiter
 
-Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
+Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs` verwenden.
 
 ## Tools und Einrichtung
 
@@ -82,4 +82,3 @@ Dieses Repository verwendet RAKE-Aufgaben, die vom `adobe-comdox-exl-rake-tasks`
 cd _jekyll
 bundle exec rake --tasks
 ```
-
