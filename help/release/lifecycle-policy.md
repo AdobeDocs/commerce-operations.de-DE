@@ -26,7 +26,7 @@ Adobe Commerce definiert drei Support-Ebenen für Versionsinformationen. In den 
 
 Der standardmäßige dreijährige Support-Zeitraum ab dem Datum der allgemeinen Verfügbarkeit. Der reguläre Support umfasst Qualitätskorrekturen, Sicherheits-Patches und vollständigen Adobe Commerce-Support auf Abruf.
 
-- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenden.
+- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenden.
 
 - **Sicherheitskorrekturen** - Adobe bietet Sicherheitskorrekturen durch kumulative Sicherheits-Patches und nicht kumulative [isolierte Sicherheits-Patch-Dateien](versioning-policy.md#isolated-security-patch-file) für den dreijährigen Support-Zeitraum.
 
@@ -218,7 +218,7 @@ Die folgenden PHP-Versionen, die von älteren Commerce-Versionen verwendet werde
 
 ### PCI-Compliance-Hinweis
 
-PCI-Compliance liegt in der Verantwortung des Händlers, zu bewerten. Adobe empfiehlt den Händlern dringend, sich mit ihrem qualifizierten Sicherheitsexperten in Verbindung zu setzen und so bald wie möglich den Umstieg auf eine unterstützte Commerce-Version und eine unterstützte PHP-Version zu priorisieren. Informationen zu den Zeitplänen für die PHP-Unterstützung [ Sie unter ](https://www.php.net/supported-versions.php)PHP-unterstützte Versionen[ und „PHP End of Life](https://www.php.net/eol.php).
+PCI-Compliance liegt in der Verantwortung des Händlers, zu bewerten. Adobe empfiehlt den Händlern dringend, sich mit ihrem qualifizierten Sicherheitsexperten in Verbindung zu setzen und so bald wie möglich den Umstieg auf eine unterstützte Commerce-Version und eine unterstützte PHP-Version zu priorisieren. Informationen zu den Zeitplänen für die PHP-Unterstützung [&#x200B; Sie unter &#x200B;](https://www.php.net/supported-versions.php)PHP-unterstützte Versionen[&#x200B; und „PHP End of Life](https://www.php.net/eol.php).
 
 ## Upgrade- und Migrationsoptionen
 
