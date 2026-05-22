@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36741'
+source-wordcount: '36655'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Behobene Probleme in Version 2.4.9
 
-Es wurden 667 Probleme im Adobe Commerce 2.4.9-Kerncode behoben. Nachfolgend werden einige der in dieser Version enthaltenen behobenen Probleme beschrieben.
+Es wurden 666 Probleme im Adobe Commerce 2.4.9-Kerncode behoben. Nachfolgend werden einige der in dieser Version enthaltenen behobenen Probleme beschrieben.
 
 ### APIs
 
@@ -73,7 +73,7 @@ Jetzt überprüfen die APIs die Eingabe ordnungsgemäß und geben einen 400-Fehl
 
 _AC-6419 - [GitHub-Problem](https://github.com/magento/magento2/issues/35934) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Interner Server-Fehler `/V1/order/&lbrace;orderId&rbrace;/ship` API-Endpunkt
+#### Interner Server-Fehler `/V1/order/{orderId}/ship` API-Endpunkt
 
 Das System behebt jetzt den internen Server-Fehler in `/V1/order/{orderId}/ship` API-Endpunkt und gibt einen 400-Fehler zurück, da die Anfrage fehlerhaft ist.
 
@@ -1700,7 +1700,7 @@ Es wurde ein Problem behoben, bei dem der Indexer für Katalogregeln zu viel Spe
 
 _ACP2E-4303 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### Der Vorschau-Link für &rbrack; geplante Updates von &lbrack;CMS leitet zur Wartungsseite weiter
+#### Der Vorschau-Link für ] geplante Updates von [CMS leitet zur Wartungsseite weiter
 
 Vorschau des geplanten Updates des Links zur Startseite mit konfigurierbaren Produkten zeigt die Liste der Produkte korrekt an. Zuvor wurden Benutzer zur Wartungsseite umgeleitet
 
@@ -2095,7 +2095,7 @@ _AC-15336 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/68a
 
 #### Kompilieren des Codes eines deaktivierten Moduls
 
-Diese Pull-Anforderung löscht deaktivierte Module vor der Code-Kompilierung.
+Das Verhalten von `setup:di:compile` wurde geändert, sodass für deaktivierte Module kein Code mehr kompiliert wird.
 
 _AC-10933 - [GitHub-Problem](https://github.com/magento/magento2/issues/38241) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/39723)_
 
@@ -2214,15 +2214,6 @@ Zuvor führte das Erreichen des Maximalwerts für die Spalte version_id in der �
 14424
 
 _AC-14424 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8 verwendet Entwicklungspakete, die nicht der semantischen Versionierung folgen
-
-Magento 2.4.8 erfordert dev-Versionen von pdepend/pdepend und phpmd/phpmd (3.x-dev) für die PHP 8.4-Kompatibilität.
-Diese Entwicklungsversionen stehen im Konflikt mit Drittanbieter-Tools, die SemVer-kompatible Pakete erwarten, und verhindern einige Upgrades.
-Eine temporäre Problemumgehung besteht darin, die Dev-Versionen in composer.json zu alias (z. B. „3.x-dev as 3.99.0„), um Kompatibilität zu ermöglichen und gleichzeitig die semantische Versionierung zu erfüllen.
-Dies stellt die Unterstützung von PHP 8.4 sicher und vermeidet Konflikte, bis stabile Versionen verfügbar werden.
-
-_AC-14519 - [GitHub-Problem](https://github.com/magento/magento2/issues/39796)_
 
 #### Nach dem Herunterladen des Versand-Labels können wir einen Versandbetrag sehen, der nicht mit dem Versand- und Handhabungspreis übereinstimmte.
 
@@ -4167,7 +4158,7 @@ _ACP2E-4226_
 
 #### Navigieren zwischen Websites in der Vorschau für Zeitplanaktualisierung nicht möglich
 
-Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
+Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
 
 _ACP2E-4308 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0a3b7032)_
 
