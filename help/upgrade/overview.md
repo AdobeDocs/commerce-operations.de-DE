@@ -1,11 +1,11 @@
 ---
 title: Überblick über den Upgrade-Prozess
-description: Erfahren Sie, wie ein Upgrade Ihres Adobe Commerce-Projekts Ihre Storefront sicher und effizient hält. Entdecken Sie Best Practices für die Planung und Ausführung erfolgreicher Upgrades.
+description: Erfahren Sie, wie Sie durch Upgrades Ihres Adobe Commerce-Projekts die Sicherheit und Effizienz von Storefronts gewährleisten. Erfahren Sie mehr über Best Practices für die Planung und Durchführung erfolgreicher Upgrades.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '930'
+ht-degree: 2%
 
 ---
 

@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über  [!DNL Upgrade Compatibility Tool]  und wie
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Das folgende Diagramm zeigt die möglichen Workflows beim Ausführen der [!DNL U
 
 In diesem Video erfahren Sie mehr über die [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3409509?quality=12&captions=ger)
+>[!VIDEO](https://video.tv.adobe.com/v/3409509?captions=ger&quality=12)
 
 ## Helfen Sie, die [!DNL Upgrade Compatibility Tool] zu verbessern
 

@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über den California Consumer Privacy Act (CCPA),
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
