@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über den California Consumer Privacy Act (CCPA),
 exl-id: 5df0e745-fb2c-438e-aedd-17fb72be1350
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Der CCPA räumt den Verbrauchern die folgenden neuen Rechte ein:
 
 ## CCPA-Konformität
 
-Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte Anstrengungen. Wir ermutigen Händler, ein funktionsübergreifendes Team zusammenzustellen und den im CCPA-[&#x200B; beschriebenen Fahrplan zu befolgen](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=de) um ihr Unternehmen in Einklang mit der Verordnung zu bringen. Als Entwickler werden Sie möglicherweise als Stakeholder eingeladen, wobei der Schwerpunkt auf den Schritten 2 bis 5 des Prozesses liegt. Weitere Informationen finden Sie [&#x200B; „CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=de)Kompatibilitätshandbuch“.
+Die Entwicklung und Umsetzung eines CCPA-Compliance-Plans erfordert koordinierte Anstrengungen. Wir ermutigen Händler, ein funktionsübergreifendes Team zusammenzustellen und den im CCPA-[ beschriebenen Fahrplan zu befolgen](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) um ihr Unternehmen in Einklang mit der Verordnung zu bringen. Als Entwickler werden Sie möglicherweise als Stakeholder eingeladen, wobei der Schwerpunkt auf den Schritten 2 bis 5 des Prozesses liegt. Weitere Informationen finden Sie [ „CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html)Kompatibilitätshandbuch“.
 
 1. Zusammenstellen eines funktionsübergreifenden Teams zur Einhaltung der CCPA-Richtlinien.
 
