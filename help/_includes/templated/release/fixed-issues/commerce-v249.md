@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36741'
+source-wordcount: '36655'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Behobene Probleme in Version 2.4.9
 
-Es wurden 667 Probleme im Adobe Commerce 2.4.9-Kerncode behoben. Nachfolgend werden einige der in dieser Version enthaltenen behobenen Probleme beschrieben.
+Es wurden 666 Probleme im Adobe Commerce 2.4.9-Kerncode behoben. Nachfolgend werden einige der in dieser Version enthaltenen behobenen Probleme beschrieben.
 
 ### APIs
 
@@ -2095,7 +2095,7 @@ _AC-15336 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/68a
 
 #### Kompilieren des Codes eines deaktivierten Moduls
 
-Diese Pull-Anforderung löscht deaktivierte Module vor der Code-Kompilierung.
+Das Verhalten von `setup:di:compile` wurde geändert, sodass für deaktivierte Module kein Code mehr kompiliert wird.
 
 _AC-10933 - [GitHub-Problem](https://github.com/magento/magento2/issues/38241) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/39723)_
 
@@ -2214,15 +2214,6 @@ Zuvor führte das Erreichen des Maximalwerts für die Spalte version_id in der �
 14424
 
 _AC-14424 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8 verwendet Entwicklungspakete, die nicht der semantischen Versionierung folgen
-
-Magento 2.4.8 erfordert dev-Versionen von pdepend/pdepend und phpmd/phpmd (3.x-dev) für die PHP 8.4-Kompatibilität.
-Diese Entwicklungsversionen stehen im Konflikt mit Drittanbieter-Tools, die SemVer-kompatible Pakete erwarten, und verhindern einige Upgrades.
-Eine temporäre Problemumgehung besteht darin, die Dev-Versionen in composer.json zu alias (z. B. „3.x-dev as 3.99.0„), um Kompatibilität zu ermöglichen und gleichzeitig die semantische Versionierung zu erfüllen.
-Dies stellt die Unterstützung von PHP 8.4 sicher und vermeidet Konflikte, bis stabile Versionen verfügbar werden.
-
-_AC-14519 - [GitHub-Problem](https://github.com/magento/magento2/issues/39796)_
 
 #### Nach dem Herunterladen des Versand-Labels können wir einen Versandbetrag sehen, der nicht mit dem Versand- und Handhabungspreis übereinstimmte.
 

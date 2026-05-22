@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
+source-git-commit: d90419967a22835efff29ff609caea342a86a438
 workflow-type: tm+mt
-source-wordcount: '2623'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;22. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Versionshinweise zu Adobe Commerce 2.4.9</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Versionshinweise zu Magento Open Source 2.4.9</a> wurden aktualisiert: Es wurde die AC-10933 <code class="language-plaintext highlighter-rouge">setup:di:compile</code>-Fehlerbehebung erläutert, die abgebrochene Fehlerbehebung AC-14519 entfernt und die Anzahl der behobenen Probleme angepasst.<br /><em>Credits: <a href="https://github.com/hostep">hostep</a></em></p>
+</td>
+      <td>
+        Feedback, technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: Der Befehl bin/magento setup:db:status erkennt den JSON-Datentyp nicht</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9aad978f42697f74ebd7c8f401e45b4780bd5038">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;20. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion mit Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3fe9730b1954a07d9ef4a405ee75fcde9511e09d">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy">Software-Lebenszyklusrichtlinie</a> mit den Erzwingungsterminen für die Aktualisierung der Cloud-Version, Definitionen für den Support-Zeitraum (einschließlich des Übergangszeitraums für reine Sicherheit), einer erweiterten Tabelle zum Ende der Unterstützung für 2.4.4-2.4.9, PHP-PCI-Leitlinien und Pfaden für die Migration zu Adobe Commerce as a Cloud Service oder die Aktualisierung auf PaaS.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;13. Mai 2026
 
@@ -69,7 +129,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12093993f31c321afc75da6f2c661b4a9e6fd711">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/packages/adobe-commerce">Packages</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">erforderliche PHP-Erweiterungen</a> für Version 2.4.9.<br />Aktualisierte Versionshinweise zum Sicherheits-Patch (2.4.4, 2.4.5, 2.4.6, 2.4.7, 2.4.8), um auf <a href="https://helpx.adobe.com/security/products/magento/apsb26-49.html">Adobe-Sicherheitsbulletin APSB26-49</a> zu verweisen und die Kompatibilitätshighlights für neue Plattformen für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8 Patches</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7 Patches</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6 Patches</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5 Patches</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4 Patches</a>.<br />Die <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Versionshinweise zu Adobe Commerce 2.4.9</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Versionshinweise zu Magento Open Source 2.4.9</a> wurden mit Daten zu allgemeinen, behobenen Problemen aktualisiert und enthalten Pfade, die mit der Version 2.4.9 abgestimmt sind (und Behobene Problemquellen aus der Beta-Version ersetzen).<br />Aktualisierte Hervorhebungsabschnitte für die Versionshinweise zu <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Versionshinweise zu Magento Open Source 2.4.9</a> für GA.<br />Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> für 2.4.9, aktuelle Sicherheits-Patch-Zeilen sowie lokale und Cloud-Abhängigkeitstabellen.<br />Aktualisierung der <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/uct">UCT CLI-Referenz</a> auf Version 3.0.27.<br />Aktualisierte Cache-Konfigurationsdokumentation für Commerce 2.4.9 Symfony Cache-Unterstützung:<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">Verwenden von Redis für den Standard-Cache</a> — Registerkarteninhalt für Zend- und Symfony-Cache-Implementierungen mit Leistungsoptimierungen hinzugefügt.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">Verwenden von Valkey für den Standard-Cache</a> — Inhalt mit Registerkarten für Zend- und Symfony-Cache-Implementierungen mit Leistungsoptimierungen hinzugefügt.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2-Cache</a> — Moderne moderne Symfony L2 Cache-Implementierung (<code class="language-plaintext highlighter-rouge">symfony_l2</code>-Backend) mit stale-Cache-Unterstützung () mit veraltet.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/cache-options">Cache-Optionen</a> — Es wurden Implementierungsoptionen zum Vergleichen von Zend-basierten und Symfony Cache-Backends hinzugefügt.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/cache-types">Cache-Typen</a> Es wurden Verweise auf moderne Symfony Cache-Backend-Typen hinzugefügt.</p>
+      <td><p>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/packages/adobe-commerce">Packages</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises">bin/magento</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/php-settings#verify-installed-extensions">erforderliche PHP-Erweiterungen</a> für Version 2.4.9.<br />Aktualisierte Versionshinweise zum Sicherheits-Patch (2.4.4, 2.4.5, 2.4.6, 2.4.7, 2.4.8), um auf <a href="https://helpx.adobe.com/de/security/products/magento/apsb26-49.html">Adobe-Sicherheitsbulletin APSB26-49</a> zu verweisen und die Kompatibilitätshighlights für neue Plattformen für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-8-patches">2.4.8 Patches</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7 Patches</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6 Patches</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5 Patches</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4 Patches</a>.<br />Die <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Versionshinweise zu Adobe Commerce 2.4.9</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Versionshinweise zu Magento Open Source 2.4.9</a> wurden mit Daten zu allgemeinen, behobenen Problemen aktualisiert und enthalten Pfade, die mit der Version 2.4.9 abgestimmt sind (und Behobene Problemquellen aus der Beta-Version ersetzen).<br />Aktualisierte Hervorhebungsabschnitte für die Versionshinweise zu <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">Adobe Commerce 2.4.9</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/magento-open-source/2-4-9">Versionshinweise zu Magento Open Source 2.4.9</a> für GA.<br />Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> für 2.4.9, aktuelle Sicherheits-Patch-Zeilen sowie lokale und Cloud-Abhängigkeitstabellen.<br />Aktualisierung der <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/uct">UCT CLI-Referenz</a> auf Version 3.0.27.<br />Aktualisierte Cache-Konfigurationsdokumentation für Commerce 2.4.9 Symfony Cache-Unterstützung:<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/redis-pg-cache">Verwenden von Redis für den Standard-Cache</a> — Registerkarteninhalt für Zend- und Symfony-Cache-Implementierungen mit Leistungsoptimierungen hinzugefügt.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache">Verwenden von Valkey für den Standard-Cache</a> — Inhalt mit Registerkarten für Zend- und Symfony-Cache-Implementierungen mit Leistungsoptimierungen hinzugefügt.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2-Cache</a> — Moderne moderne Symfony L2 Cache-Implementierung (<code class="language-plaintext highlighter-rouge">symfony_l2</code>-Backend) mit stale-Cache-Unterstützung () mit veraltet.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/cache-options">Cache-Optionen</a> — Es wurden Implementierungsoptionen zum Vergleichen von Zend-basierten und Symfony Cache-Backends hinzugefügt.<br />- <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/cache-types">Cache-Typen</a> Es wurden Verweise auf moderne Symfony Cache-Backend-Typen hinzugefügt.</p>
 </td>
       <td>
         Größere Aktualisierung
@@ -497,72 +557,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Technisches Feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;19. März 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69319">ACSD-69319: Die Paketpreise wurden nicht richtig indiziert, wenn untergeordnete Produkte unter benutzerdefinierten Quellen vorrätig waren</a> hinzugefügt.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7646d46e37385cf0a2bfbee6de82410ca54629a1">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;18. März 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.76-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69086">ACSD-69086: Installation schlägt auf MariaDB 10.11 aufgrund einer nicht unterstützten Datenbankversionsprüfung fehl</a> wurde hinzugefügt.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/016d24d990492d009677c218b253ae88c21634e6">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;17. März 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.76 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69331">ACSD-69331 hinzugefügt: Inhaltsersteller in der Mediensammlung konnten keine Ordner mit nur der Berechtigung <code class="language-plaintext highlighter-rouge">create_folder</code> erstellen. Nach der Behebung können sie wie erwartet Ordner erstellen</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/40a14de0a67a0c373dcbb497f1893a98322435b3">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
