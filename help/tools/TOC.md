@@ -2,7 +2,7 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
+source-git-commit: 091df8b7f71edd862cbee9583fb379e29adbb8f2
 workflow-type: tm+mt
 source-wordcount: '9978'
 ht-degree: 0%
@@ -700,7 +700,7 @@ ht-degree: 0%
          - [ACSD-58471: Dynamische Inhalte können nicht auf der Produktdetailseite geladen werden, wenn Katalogpreisregeln geplant sind](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: Doppelte Gutschriften von gleichzeitigen Erstattungsanträgen über [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: Eingeschränkter Administrator kann abgebrochene Warenkörbe nicht im Kundenkonto für die zugehörige Website anzeigen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
-         - [ACSD-62793: Datetime-Attribute in Exporten ohne Zeitkomponente. Wenn diese Option aktiviert [!UICONTROL Fields Enclosure], werden außerdem Attributwerte in doppelte Anführungszeichen gesetzt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793-datetime-attributes-exports-missing-time-component-and-fields-enclosure-enabled-attribute-values-enclosed-within-double-quotes.md)
+         - [ACSD-62793: Datetime-Attribute in Exporten ohne Zeitkomponente. Wenn diese Option aktiviert [!UICONTROL Fields Enclosure], werden außerdem Attributwerte in doppelte Anführungszeichen gesetzt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62793.md)
          - [ACSD-60344: Bei Verwendung von [!UICONTROL Purchase Order] mit automatischer Validierung doppelte Bestellbestätigungs-E-Mails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332: Die GraphQL-Abfrage zur Produktliste ist auf 10.000 Produkte beschränkt und  [!DNL Live Search]  die aktuelle Seite auf 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
          - [ACSD-62591: Design wechselt nicht richtig, wenn es konfiguriert [!UICONTROL User Agent Rules]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
