@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin
 exl-id: f30a9554-cacf-4406-b6b4-a43d680597bc
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ QPT v1.1.15 enthält die folgenden Patches:
 1. **MDVA-40961**: Es wird ein Problem behoben, bei dem ein zusätzlicher Artikel nicht zum Warenkorb hinzugefügt werden kann, wenn die Mindestmenge des Artikels bereits im Warenkorb ist.
 1. **MDVA-43718**: Fehlerbehebungen *Der Benutzer ist nicht berechtigt, auf %resources zuzugreifen.* Fehler, der beim Zugriff auf einen freigegebenen Katalog über eine benutzerdefinierte Integration angezeigt wird.
 1. **MDVA-44533**: Es wird das Problem behoben, bei dem der Rabatt fälschlicherweise auf ein untergeordnetes Bundle-Produkt angewendet wird.
-1. **MDVA-44660**: Es wurde das Problem behoben, dass der Grave Accent Character ``` ` ``` nicht für den Vor- und Nachnamen eines Kunden verwendet werden konnte.
+1. **MDVA-44660**: Es wurde ein Problem behoben, bei dem das Zeichen für einen gravierenden Akzent (\`) nicht für den Vor- und Nachnamen eines Kunden verwendet werden konnte.
 1. **MDVA-44887**: Behebt den Fehler *Nicht erfasste SyntaxError: Unerwarteter Token &#39;const* im Admin-Bedienfeld.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
