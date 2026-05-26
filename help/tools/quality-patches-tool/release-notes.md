@@ -3,7 +3,7 @@ title: Versionshinweise
 description: Erfahren Sie mehr über die für Adobe Commerce verfügbaren Patches und die von ihnen gelösten Probleme.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 5b81bd7baa4b00a9100c3e01a20a2b0189b85f92
+source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
 workflow-type: tm+mt
 source-wordcount: '30379'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 ## v1.1.74 {#v1-1-74}
 
-* **ACSD-68636** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem der Name des Shopeigentümers nicht korrekt in den E-Mail-Kopfzeilen der Geschenkkarte angezeigt wird, wenn die Rechnung aus einem anderen Shop erstellt wurde.
+* **ACSD-68636** (für Adobe Commerce >=2.4.4 &lt;2.4.9) - Behebt ein Problem, bei dem der Name des Ladenbesitzers in den E-Mail-Kopfzeilen der Geschenkkarte nicht korrekt angezeigt wird, wenn die Rechnung aus einem anderen Geschäft erstellt wird.
 * **ACSD-68430** (für Adobe Commerce und Magento Open Source >=2.4.6 &lt;2.4.8) - Es wird ein Problem behoben, bei dem das Speichern einer Kunden- oder Kundenadresse fehlschlägt, wenn der Datensatz mehrere Attributoptionen enthält, die aus der Attributkonfiguration gelöscht wurden.
 * **ACSD-68499** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.9) - Es wird ein Problem behoben, bei dem die GraphQL `updateCartItems`-Mutation eine falsche Erfolgsantwort zurückgibt, wenn Mengen aktualisiert werden, die die verfügbaren Lagerbestände überschreiten, was zu überhöhten Mengen und Gesamtwerten führt.
 * **ACSD-68810** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde ein Problem behoben, bei dem eine Bestellung einem Kunden zugewiesen wurde, der auf einer anderen Website trotz der **[!UICONTROL Customer Account Sharing]**-Konfiguration erstellt wurde.
@@ -745,7 +745,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-51792** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.6) - Behebt das Problem, dass eine Seite nicht das Impression-Ereignis hat, wenn [!DNL Google Tag Manager] 4 aktiviert ist.
 * **ACSD-51471** (für Adobe Commerce >=2.4.3 &lt;2.4.7) - Es wird das Problem behoben, dass ein Admin-Benutzer kein geplantes Update für ein gebündeltes Produkt speichern kann, das ein einfaches Produkt verwendet, das selbst ein geplantes Update hat.
 * **ACSD-51700** (für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.7) - Behebt den Fehler, der beim Wechseln der Store-Ansichten auf einer herunterladbaren Produktbearbeitungsseite in Admin passiert.
-* **ACSD-51120** (für Adobe Commerce >=2.3.7 &lt;2.4.3) - Es wird das Problem behoben, dass der Cache für GraphQL GET-Anfragen für CMS-Seiten mit CMS-Blöcken, die über ein Staging-Update aktualisiert werden, nicht gelöscht wird.
+* **ACSD-51120** (für Adobe Commerce >=2.3.7 &lt;2.4.3) - Es wird das Problem behoben, dass der Cache für GraphQL-GET-Anfragen für CMS-Seiten mit CMS-Blöcken, die über ein Staging-Update aktualisiert werden, nicht gelöscht wird.
 * **ACSD-51240** (für Adobe Commerce >=2.4.4 &lt;2.4.6) - Behebt das Problem, dass die hochgeladene Datei fehlt, wenn die Registrierung über das Unternehmensregistrierungsformular erfolgt.
 * **ACSD-51907** (für Adobe Commerce >=2.4.2 &lt;2.4.3) - Behebt das Problem, dass ein Benutzer mit eingeschränktem Administratorzugriff keine Gutschrift mit einer Offline-Rückerstattung erstellen kann.
 * **ACSD-52148** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.4) - Behebt das Problem, dass die [!DNL Google V3 reCAPTCHA] Admin-Anmeldung gelegentlich fehlschlägt.
@@ -991,7 +991,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **MDVA-40961** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.4*) - Behebt das Problem, dass ein zusätzlicher Artikel nicht zum Warenkorb hinzugefügt werden kann, wenn die Mindestmenge des Artikels bereits im Warenkorb ist.
 * **MDVA-44887** (*für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.5*) - Behebt den Fehler *Nicht erfasste SyntaxError: Unerwartetes Token &#39;const&#39;* im Admin-Bedienfeld.
 * **MDVA-43718** (*für Adobe Commerce und Magento Open Source >=2.3.0 &lt;2.4.5*) - Fehlerbehebungen *Der Benutzer ist nicht berechtigt, auf %resources zuzugreifen.* Fehler, der beim Zugriff auf einen freigegebenen Katalog über eine benutzerdefinierte Integration angezeigt wird.
-* **MDVA-44660** (*für Adobe Commerce und Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Es wurde das Problem behoben, bei dem das Zeichen ``` ` ``` mit gravierendem Akzent nicht für den Vor- und Nachnamen eines Kunden verwendet werden konnte.
+* **MDVA-44660** (*für Adobe Commerce und Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Es wurde das Problem behoben, bei dem das Zeichen für einen gravierenden Akzent (\`) nicht für den Vor- und Nachnamen eines Kunden verwendet werden konnte.
 * **MDVA-40896** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.4*) - Behebt den Fehler *Fehler: TypeError: Argument 3 wurde an Magento übergeben* in der asynchronen Produkt-Bulk-API.
 * **MDVA-38559** (*für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.3*) - Behebt den */V1/customers/search API*-Fehler für Kunden mit mehr als einem Abonnement.
 * **MDVA-44533** (*für Adobe Commerce und Magento Open Source >=2.3.1 &lt;2.4.4*) - Behebt das Problem, dass der Rabatt fälschlicherweise auf ein untergeordnetes Bundle-Produkt angewendet wird.
@@ -1373,7 +1373,7 @@ Kleinere Fehlerbehebungen für Patch-Versionen
 * **MDVA-31242** (*für Adobe Commerce >=2.3.0 &lt;2.4.1 mit B2B-Erweiterung*) - Behebt das Problem, dass im Credit Memo Grid ein falsches Währungszeichen angezeigt wird.
 * **MDVA-31295** (*für Adobe Commerce >=2.3.0 &lt;2.4.2*) - Es wurde das Problem behoben, bei dem Belohnungspunkte nicht berechnet wurden, wenn eine Teilbestellung abgeschlossen und Artikel besteuert wurden.
 * **MDVA-30112** (*für Adobe Commerce >=2.3.4 &lt;2.4.2*) - Behebt das Problem, dass Adobe Commerce Bestellungen mit dem Status *Ausstehend* als Inkonsistenzen betrachtet, wenn die Anzahl der Bestellungen den *Bunch-Size*-Wert überschreitet.
-* **MDVA-31150** (*für Adobe Commerce >=2.3.0 &lt;2.4.2*) - Behebt das Problem, dass die Guthaben auf Geschäfts-, Kredit- und Geschenkkarten vom GET Invoice REST-API-Aufruf nicht zurückgegeben werden, wenn die Rechnung durch einen REST-API-Aufruf gebucht wurde und die Bestellung teilweise von Geschäfts-, Kredit- und Geschenkkartenkonten bezahlt wurde.
+* **MDVA-31150** (*für Adobe Commerce >=2.3.0 &lt;2.4.2*) - Behebt das Problem, dass die Guthaben auf Geschäfts-, Kredit- und Geschenkkarten nicht vom GET Invoice Rest API-Aufruf zurückgegeben werden, wenn die Rechnung durch einen REST API-Aufruf gebucht wurde und die Bestellung teilweise von Geschäfts-, Kredit- und Geschenkkartenkonten bezahlt wurde.
 * **MDVA-30963** (*für Adobe Commerce >=2.3.2 &lt;2.4.2*) - Es wird das Problem behoben, bei dem die Filterergebnisse von Produkten so eingestellt wurden, dass sie nur Werte enthalten, die für den Bereich *Alle* im Admin-Bereich festgelegt wurden und Produkte mit Werten enthalten, die auf der Store-Ansichtsebene überschrieben wurden.
 * **MDVA-29954** (*für Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || 2.4.2 mit B2B-Erweiterung*) - Es wurde das Problem behoben, bei dem *Neue Unternehmensregistrierungsanfrage* und *Sie wurden mit einem Unternehmen verknüpft* E-Mails von der falschen Adresse gesendet wurden.
 * **MDVA-28357** (*für Adobe Commerce >=2.3.2 &lt;2.3.6 || >=2.4.0 &lt;2.4.1*) - Ersetzt den Standard-Analyzer durch einen benutzerdefinierten Analyzer mit einem Keyword-Tokenizer für das SKU-Feld im [!DNL ElasticSearch], damit Platzhaltersuchabfragen mit SKUs funktionieren, die einen Bindestrich (“-„) enthalten.

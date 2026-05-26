@@ -2,7 +2,7 @@
 title: Verwalten der Indexer
 description: Erfahren Sie, wie Sie Adobe Commerce-Indexer mithilfe von Befehlszeilen-Tools anzeigen und verwalten können. Entdecken Sie Indexerbefehle, Statusprüfungen und Neuindizierungsverfahren.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
+source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
@@ -188,7 +188,7 @@ Befehlsoptionen:
 bin/magento indexer:reset [indexer]
 ```
 
-Dabei ist ```[indexer]``` eine durch Leerzeichen getrennte Liste von Indexern. `[indexer]` auslassen, um alle Indexer ungültig zu machen.
+Dabei ist `[indexer]` eine durch Leerzeichen getrennte Liste von Indexern. `[indexer]` auslassen, um alle Indexer ungültig zu machen.
 
 Beispielergebnis:
 
