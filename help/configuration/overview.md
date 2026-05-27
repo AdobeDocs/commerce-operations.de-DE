@@ -1,11 +1,11 @@
 ---
 title: Konfigurationshandbuch - Übersicht
-description: Erfahren Sie mehr über konfigurierbare Funktionen und Services für Ihr Adobe Commerce-Programm. Hier erfahren Sie, wie Sie Bereitstellung, Caching, Sicherheit und andere wichtige Einstellungen verwalten.
+description: Erfahren Sie mehr über konfigurierbare Funktionen und Dienste für Ihre Adobe Commerce-Anwendung. Erfahren Sie, wie Sie Bereitstellung, Caching, Sicherheit und andere kritische Einstellungen verwalten.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 0%
+source-wordcount: '180'
+ht-degree: 12%
 
 ---
 

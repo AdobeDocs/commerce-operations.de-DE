@@ -7,7 +7,7 @@ feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
 source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Ein Tool, das Sie für Belastungstests verwenden können, ist GTmetrix. Die Bela
 Erfahren Sie mehr über die Vorbereitung von Commerce-Projekten für Zeiträume mit hohem Traffic:
 
 - [Holiday Readiness](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=de)
-- [Holiday Shopping Analysis](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=de)
-- [Überspannungskapazität erhöht](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=de)
+- [Analyse des Weihnachtseinkaufs](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=de)
+- [Stoßkapazitätserhöhung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=de)
 
 ### Belastungstests
 
@@ -96,7 +96,7 @@ Weitere Informationen zum Konfigurieren und Optimieren von MySQL:
 - [Best Practices für die Datenbankkonfiguration](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de)
 - [Langsame Replikation für Galera DB-Replikation](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=de)
 - [Allgemeine MySQL-Richtlinien](/help/installation/prerequisites/database/mysql.md)
-- [Zwischenspeicherung von MySQL-Abfragen](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=de)
+- [MySQL-Abfrage-Caching](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=de)
 
 ## Cron-Aufträge effektiv verwalten: Leistung und Timing
 

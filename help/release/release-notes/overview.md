@@ -4,8 +4,8 @@ description: Erfahren Sie, wo Sie Informationen zu bestimmten Versionen von Adob
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
 source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 3%
+source-wordcount: '454'
+ht-degree: 2%
 
 ---
 

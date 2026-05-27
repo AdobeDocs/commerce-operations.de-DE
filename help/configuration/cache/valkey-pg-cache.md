@@ -399,7 +399,7 @@ php -m | grep redis
 
 | Bedienung | Predis | Phredis | Verbesserung |
 |-----------|--------|----------|-------------|
-| GET zwischenspeichern | 1-5 ms | 0,5 - 2 ms | 2- bis 3-mal schneller |
+| Cache-GET | 1-5 ms | 0,5 - 2 ms | 2- bis 3-mal schneller |
 | Cache-SET | 2-6 ms | 0,8 - 2,5 ms | 2- bis 3-mal schneller |
 | Tag-Vorgänge | 10-30 ms | 3-10 ms | 3- bis 4-mal schneller |
 
