@@ -43,26 +43,26 @@ GraphQL gibt konfigurierbare untergeordnete Produkte zurück, selbst wenn sie au
 
 <pre>
   <code class="language-graphql">
-{
-  products(filter: { sku: { eq: "cp1" } }) {
-    items {
+&lbrace;
+  products(filter: { sku: { eq: "cp1" } }) &lbrace;
+    items &lbrace;
       __typename
       name
       sku
-      ... on ConfigurableProduct {
-        variants {
-          product {
+      ... on ConfigurableProduct &lbrace;
+        variants &lbrace;
+          product &lbrace;
             __typename
             name
             sku
             color
             stock_status
-          }
-        }
-      }
-    }
-  }
-}
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -86,6 +86,6 @@ Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patche
 Weitere Informationen zu Qualitäts-Patches für Adobe Commerce finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
