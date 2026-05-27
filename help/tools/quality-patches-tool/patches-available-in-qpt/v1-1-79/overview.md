@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8283039b88ea574e929684482fbcd534b5d949c0
+source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ QPT v1.1.79 enthält die folgenden Patches:
 1. **ACP2E-4411**: Behebt das Problem, dass der falsche Preis für ein Bundle-Produkt auf der Warenkorbseite und im Mini-Warenkorb für Geschäfte mit mehreren Währungen angezeigt wird.
 1. **[ACP2E-4475](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)**: Fehlerkorrektur - Auf der Produktlistenseite werden nicht vorrätige Bundle-Produkte fälschlicherweise nach Preis gefiltert und sortiert, wenn die Option [!UICONTROL Display Out of Stock Products] aktiviert ist.
 1. **ACP2E-4110**: Behebt das Problem, dass Bundle-Produkte mit einem Sonderpreis falsche Beträge auf PDP und PLP in einer nicht standardmäßigen Währung angezeigt haben.
+1. **[AC-10698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)**: Es wird ein Problem behoben, bei dem das System die Währung auf der Ebene aller Bestellungen sendete, anstatt sie einzelnen Bestellungen zuzuordnen.
+1. **AC-10737**: Es wird ein Problem behoben, bei dem der `bin/magento setup:db:status`-Befehl den JSON-Datentyp nicht erkennt.
 1. **[ACP2E-4411](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)**: Behebt das Problem, dass der falsche Preis für ein Bundle-Produkt auf der Warenkorbseite und im Mini-Warenkorb für Geschäfte mit mehreren Währungen angezeigt wird.
 1. **ACP2E-4475**: Fehlerkorrektur - Auf der Produktlistenseite werden nicht vorrätige Bundle-Produkte fälschlicherweise nach Preis gefiltert und sortiert, wenn die Option **[!UICONTROL Display Out of Stock Products]** aktiviert ist.
 1. **[ACP2E-4110](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)**: Behebt das Problem, dass Bundle-Produkte mit einem **[!UICONTROL Special Price]** falsche Beträge in der PDP und dem PLP in einer nicht standardmäßigen Währung anzeigen.
