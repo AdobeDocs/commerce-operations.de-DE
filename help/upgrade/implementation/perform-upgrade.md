@@ -19,10 +19,10 @@ Sie können _On-Premise_-Bereitstellungen der Adobe Commerce-Anwendung über die
 
 >[!NOTE]
 >
->- Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Commerce-Version aktualisieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=de) im Cloud-Handbuch.
+>- Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Commerce-Version aktualisieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) im Cloud-Handbuch.
 >- Verwenden Sie diese Methode nicht zum Upgrade, wenn Sie das GitHub-Repository geklont haben. Siehe [Upgrade einer Git-basierten Installation](../developer/git-installs.md).
 
-Die folgenden Anweisungen zeigen Ihnen, wie Sie mit dem Composer Package Manager ein Upgrade durchführen. Mit Adobe Commerce 2.4.2 wurde Unterstützung für Composer 2 eingeführt. Wenn Sie versuchen, von &lt;2.4.1 auf eine Version zu aktualisieren, die mit Composer 2 kompatibel ist (z. B. 2.4.2), müssen Sie zunächst Composer 1 _aktualisieren, bevor Sie_ Composer 2 für >2.4.2-Upgrades aktualisieren. Außerdem muss eine (unterstützte[&#x200B; Version von PHP &#x200B;](../../installation/system-requirements.md) werden.
+Die folgenden Anweisungen zeigen Ihnen, wie Sie mit dem Composer Package Manager ein Upgrade durchführen. Mit Adobe Commerce 2.4.2 wurde Unterstützung für Composer 2 eingeführt. Wenn Sie versuchen, von &lt;2.4.1 auf eine Version zu aktualisieren, die mit Composer 2 kompatibel ist (z. B. 2.4.2), müssen Sie zunächst Composer 1 _aktualisieren, bevor Sie_ Composer 2 für >2.4.2-Upgrades aktualisieren. Außerdem muss eine (unterstützte[ Version von PHP ](../../installation/system-requirements.md) werden.
 
 >[!WARNING]
 >
@@ -49,7 +49,7 @@ Sie müssen die [Upgrade-Voraussetzungen](../prepare/prerequisites.md) abschlie�
    bin/magento maintenance:enable
    ```
 
-   Siehe [Aktivieren oder Deaktivieren des &#x200B;](../../installation/tutorials/maintenance-mode.md)) für zusätzliche Optionen. Optional können Sie eine [benutzerdefinierte Wartungsmodusseite“ &#x200B;](../troubleshooting/maintenance-mode-options.md).
+   Siehe [Aktivieren oder Deaktivieren des ](../../installation/tutorials/maintenance-mode.md)) für zusätzliche Optionen. Optional können Sie eine [benutzerdefinierte Wartungsmodusseite“ ](../troubleshooting/maintenance-mode-options.md).
 
 1. Das Starten des Upgrade-Prozesses während der Ausführung asynchroner Prozesse, z. B. der Nachrichtenwarteschlange für Verbraucher, kann zu Datenbeschädigungen führen. Um Datenbeschädigungen zu verhindern, deaktivieren Sie alle Cron-Aufträge.
 
