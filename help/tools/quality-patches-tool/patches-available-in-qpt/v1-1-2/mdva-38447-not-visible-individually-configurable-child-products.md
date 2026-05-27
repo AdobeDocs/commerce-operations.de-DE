@@ -7,7 +7,7 @@ exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ B2B-Module müssen installiert werden.
       page_size
     &rbrace;
     items &lbrace;
-      -Name
+      name
       SKU
     &rbrace;
   &rbrace;
@@ -73,7 +73,7 @@ B2B-Module müssen installiert werden.
 
 Variablen:
 
-<pre>{„filter“:{„user_group“:{„eq“:“"}},„search“:„config-100“,„sort“:{},„pageSize“:200,„currentPage“:1}
+<pre>{„filter“:{„user_group“:{„eq“:“""}},„search“:„config-100“,„sort“:{},„pageSize“:200,„currentPage“:1}
 </pre>
 
 <u>Erwartete Ergebnisse</u>:
@@ -96,6 +96,6 @@ Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patche
 Weitere Informationen zu Qualitäts-Patches für Adobe Commerce finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch [!DNL Quality Patches Tool] Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de).
