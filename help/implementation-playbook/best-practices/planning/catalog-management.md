@@ -100,7 +100,7 @@ Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
 #### Konfiguration des Attributsatzes überprüfen
 
-1. [Verbindung zur Website-Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Verbindung zur Website-Datenbank herstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Ermitteln der Anzahl der Attributsätze mit MySQL
 
@@ -179,7 +179,7 @@ Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Konfiguration des Storefront-Katalogs, um die Option &quot;**Produkte pro Seite zulassen“** deaktivieren.
 
-Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Paginierungssteuerelemente für die Produktliste, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Konfigurieren von Paginierungssteuerelementen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Paginierungssteuerelemente für die Produktliste, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Konfigurieren von Paginierungssteuerelementen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=de#configure-the-pagination-controls).
 
 ## Produkt-SKU-Beschränkungen
 
