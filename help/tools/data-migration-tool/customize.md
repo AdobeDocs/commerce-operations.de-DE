@@ -5,7 +5,7 @@ exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
 source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Im Folgenden finden Sie ein Beispiel für die Verwendung sowohl von Zuordnungsre
 
 ### Erweitern der Zuordnung in anderen Schritten
 
-Andere Schritte unterstützen die Zuordnung, z. B. [&#x200B; Schritt „EAV](technical-specification.md#eav-step) und der Schritt „Kundenattribute“. Mit diesen Schritten wird eine vordefinierte Liste von Magento-Tabellen migriert. Angenommen, die Erweiterung „GreatBlog“ enthält ein zusätzliches Feld in der `eav_attribute` und der Name wurde in Magento 2 geändert. Da die Tabelle vom [EAV-Schritt](technical-specification.md#eav-step) verarbeitet wird, sollten Zuordnungsregeln für die `map-eav.xml` geschrieben werden. Die `map.xml`- und `map-eav.xml` verwenden dasselbe `map.xsd`, sodass die Zuordnungsregeln gleich bleiben.
+Andere Schritte unterstützen die Zuordnung, z. B. [ Schritt „EAV](technical-specification.md#eav-step) und der Schritt „Kundenattribute“. Mit diesen Schritten wird eine vordefinierte Liste von Magento-Tabellen migriert. Angenommen, die Erweiterung „GreatBlog“ enthält ein zusätzliches Feld in der `eav_attribute` und der Name wurde in Magento 2 geändert. Da die Tabelle vom [EAV-Schritt](technical-specification.md#eav-step) verarbeitet wird, sollten Zuordnungsregeln für die `map-eav.xml` geschrieben werden. Die `map.xml`- und `map-eav.xml` verwenden dasselbe `map.xsd`, sodass die Zuordnungsregeln gleich bleiben.
 
 ## Wesentliche Änderungen des Datenformats und der Datenstruktur
 
@@ -164,7 +164,7 @@ Die Schritte können vier Arten von Klassen umfassen:
 
 >[!NOTE]
 >
->Weitere Informationen finden [&#x200B; unter &#x200B;](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [&#128279;](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
+>Weitere Informationen finden [ unter ](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
 
 
 Innerhalb dieser Klassen können komplexe SQL-Abfragen zusammengestellt werden, um Daten abzurufen und zu migrieren. Außerdem sollten diese Tabellen im [Map-Schritt“ „ignoriert“ werden](technical-specification.md#map-step) da alle vorhandenen Tabellen gescannt werden und versucht wird, die Daten zu migrieren, sofern sie sich nicht im `<ignore>`-Tag der `map.xml`-Datei befinden.
