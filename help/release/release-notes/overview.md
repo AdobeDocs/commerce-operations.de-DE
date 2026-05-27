@@ -17,7 +17,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
 >[!TIP]
 >
 >- Wenn Sie neu bei Adobe Commerce sind, lesen Sie die Themen [Unternehmensarchitektur](../../implementation-playbook/architecture/enterprise-blueprint.md) und [Über Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about), um sich zu orientieren.
->- Informationen zu Upgrades finden Sie unter [Empfohlene ](../../upgrade/resources/recommended-reading.md).
+>- Informationen zu Upgrades finden Sie unter [Empfohlene &#x200B;](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>
