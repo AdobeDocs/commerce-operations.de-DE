@@ -7,7 +7,7 @@ exl-id: 7f88a28b-f166-4c5b-8d69-239c57cc4001
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ QPT v1.1.24 enthält die folgenden Patches:
 1. **ACSD-47004**: Es wird das Problem behoben, dass keine MwSt. auf eine Rechnungsadresse ohne MwSt.-Kennung angewendet wird.
 1. **ACSD-47079**: Es wird das Problem behoben, dass der Lagerstatus von zusammengesetzten Produkten (Bundle, Gruppiert und Konfigurierbar) nicht aktualisiert wird, wenn sich der Lagerstatus von Unterprodukten über REST API POST /rest/V1/inventory/source-items ändert.
 1. **ACSD-47137**: Verbessert die Ladegeschwindigkeit der Bildergalerie, wenn der Pub/Media-Ordner sehr groß ist.
-1. **ACSD-47336**: Fehlerbehebungen (*ist schiefgelaufen.* beim Verwerfen von Benachrichtigungen in Commerce Admin.
+1. **ACSD-47336**: Fehlerbehebungen *Etwas ist schiefgelaufen.* Fehler beim Verwerfen von Benachrichtigungen in Commerce Admin.
 1. **ACSD-47559**: Es wird ein Problem behoben, bei dem der Bereich E-Mail-Vorlagenvorschau nicht vollständig sichtbar ist.
 1. **ACSD-47803**: Es wird das Problem behoben, bei dem nicht vorrätige konfigurierbare Produktmuster als verfügbar angezeigt werden.
 1. **ACSD-47920**: Es wurde ein Problem behoben, bei dem Bestellungen über die REST-API als Gastbenutzer platziert werden können, selbst wenn die Option *Gast-Checkout zulassen* deaktiviert ist.

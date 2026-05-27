@@ -4,7 +4,7 @@ description: Erfahren Sie, wann Adobe die Veröffentlichung neuer Patches und Si
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '410'
 ht-degree: 4%
 
 ---
