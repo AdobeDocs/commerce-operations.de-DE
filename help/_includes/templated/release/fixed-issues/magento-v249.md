@@ -1474,7 +1474,7 @@ Es wurde ein Problem behoben, bei dem der Indexer für Katalogregeln zu viel Spe
 
 _ACP2E-4303 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### Der Vorschau-Link für ] geplante Updates von [CMS leitet zur Wartungsseite weiter
+#### Der Vorschau-Link für &rbrack; geplante Updates von &lbrack;CMS leitet zur Wartungsseite weiter
 
 Vorschau des geplanten Updates des Links zur Startseite mit konfigurierbaren Produkten zeigt die Liste der Produkte korrekt an. Zuvor wurden Benutzer zur Wartungsseite umgeleitet
 

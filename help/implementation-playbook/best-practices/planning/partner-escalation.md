@@ -17,7 +17,7 @@ Im Folgenden finden Sie Tipps, wie Sie sich mit einem Adobe Account Team auf ein
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 * Adobe Commerce auf Cloud-Infrastruktur
 * Adobe Commerce On-Premises
