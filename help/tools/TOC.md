@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
+source-git-commit: 8283039b88ea574e929684482fbcd534b5d949c0
 workflow-type: tm+mt
-source-wordcount: '10033'
+source-wordcount: '10048'
 ht-degree: 0%
 
 ---
@@ -994,6 +994,7 @@ ht-degree: 0%
          - [ACP2E-4419: Geschenkkarten werden nach erfolgreicher reCAPTCHA v2-Validierung in der Storefront nicht korrekt an der Kasse angewendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4475: Bestellung oder Filterung nach Preis funktioniert nicht für nicht vorrätige Bundle-Produkte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411: Die Produktpreise des Pakets zeigen falsche Steuer- und Währungswerte zwischen der Produktdetailseite und dem Warenkorb in einer Einrichtung mit mehreren Währungen an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
          - [ACP2E-4110: Produktpreise mit einem **[!UICONTROL Special Price]** unterscheiden sich zwischen PDP/PLP und Warenkorb in einer nicht standardmäßigen Währung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603: Katalogberechtigungen - Produktneuindizierung hinterlässt veraltete Berechtigungsindexzeilen und MySQL-Deadlock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
