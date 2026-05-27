@@ -5,14 +5,14 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
 
 # Referenz zu allgemeinen und erweiterten Konfigurationspfaden
 
-In diesem Thema werden allgemeine und erweiterte Konfigurationspfade sowie _nicht_ [&#x200B; und systemspezifische Werte](config-reference-sens.md) aufgeführt. Der [`magento app:config:dump` Befehl &#x200B;](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte.
+In diesem Thema werden allgemeine und erweiterte Konfigurationspfade sowie _nicht_ [ und systemspezifische Werte](config-reference-sens.md) aufgeführt. Der [`magento app:config:dump` Befehl ](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte.
 
 Informationen dazu, wie Sie Konfigurationseinstellungen optional überschreiben oder vertrauliche Einstellungen festlegen können, finden Sie unter [Verwenden von Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen](override-config-settings.md#environment-variables).
 
@@ -99,7 +99,7 @@ Diese Konfigurationswerte sind in der Admin-Liste unter **Stores** > Einstellung
 | Standardanzeigewährung | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zulässige Währungen | `currency/options/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Yahoo Finance Exchange | `TBD` | |
-| Fixer.io | `TBD` | |
+| fixer.io | `TBD` | |
 | WebServices | `TBD` | |
 | Verbindungs-Timeout in Sekunden | `currency/yahoofinance/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verbindungs-Timeout in Sekunden | `currency/fixerio/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

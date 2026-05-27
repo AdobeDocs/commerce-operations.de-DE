@@ -18,7 +18,7 @@ Es gibt einige Unterschiede in den Abhängigkeiten für Commerce in Cloud Manage
 >[!IMPORTANT]
 >
 >In der Tabelle mit den Systemanforderungen sind die Adobe Commerce-Versionen aufgeführt, für die sie gelten, einschließlich Versionen mit der Bezeichnung Beta oder früher Zugriff.
->Die [&#x200B; veröffentlichten Commerce-Versionen finden &#x200B;](../release/release-notes/overview.md) in den Versionshinweisen .
+>Die [ veröffentlichten Commerce-Versionen finden ](../release/release-notes/overview.md) in den Versionshinweisen .
 >
 >Wenn Ihre Service-Versionen nicht mit der unterstützten Konfiguration für Ihre Commerce-Version übereinstimmen, kann sich das Verhalten von dem unterscheiden, was Adobe beim Testen reproduzieren kann. Der Adobe-Support bittet Sie möglicherweise, Ihre Umgebung an einer unterstützten Konfiguration auszurichten, bevor Sie das gemeldete Verhalten untersuchen, beheben oder validieren. Nachdem Sie Ihre Umgebung angepasst haben, kann der Adobe-Support die Untersuchung fortsetzen.
 
@@ -38,8 +38,8 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!TAB Commerce On-Premises]
 
@@ -85,8 +85,8 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!TAB Commerce On-Premises]
 
@@ -116,7 +116,7 @@ empfohlen, ihre Suchinfrastruktur auf eine kompatible OpenSearch-Version zu migr
 
 Es gibt bestimmte PHP-Konfigurationseinstellungen, wie zum Beispiel die `memory_limit`, die Ihnen helfen können, gängige Probleme bei der Verwendung von Adobe Commerce zu vermeiden. Siehe [Erforderliche PHP-](prerequisites/php-settings.md).
 
-Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings) im *Handbuch zu Commerce* Cloud-Infrastruktur.
+Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) im *Handbuch zu Commerce* Cloud-Infrastruktur.
 
 ### PHP-OP-Cache
 
@@ -144,7 +144,7 @@ Die [PHP-Installationsanweisungen](prerequisites/php-settings.md) enthalten eine
 
 >[!TIP]
 >
->Informationen zu PHP-Erweiterungen in der Cloud-Infrastruktur finden Sie unter [Aktivieren von PHP-Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) im _Handbuch zu Commerce in_.
+>Informationen zu PHP-Erweiterungen in der Cloud-Infrastruktur finden Sie unter [Aktivieren von PHP-Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) im _Handbuch zu Commerce in_.
 
 >[!BEGINTABS]
 
@@ -183,11 +183,11 @@ Storefront und Admin:
 
 ### Mail-Server
 
-Mail Transfer Agent (MTA) oder SMTP-Server. Commerce in der Cloud-Infrastruktur verwendet den [SendGrid-E-Mail-Service](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/sendgrid).
+Mail Transfer Agent (MTA) oder SMTP-Server. Commerce in der Cloud-Infrastruktur verwendet den [SendGrid-E-Mail-Service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Arbeitsspeicher
 
-Für das Upgrade der Anwendungen und Erweiterungen, die Sie über die Commerce Marketplace und andere Quellen erhalten, können bis zu 2 GB RAM erforderlich sein. Wenn Sie ein System mit weniger als 2 GB RAM verwenden, erstellen Sie eine [Auslagerungsdatei](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Andernfalls schlägt das Upgrade möglicherweise fehl.
+Für das Upgrade der Anwendungen und Erweiterungen, die Sie über die Commerce Marketplace und andere Quellen erhalten, können bis zu 2 GB RAM erforderlich sein. Wenn Sie ein System mit weniger als 2 GB RAM verwenden, erstellen Sie eine [Auslagerungsdatei](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Andernfalls schlägt das Upgrade möglicherweise fehl.
 
 ### Betriebssysteme (Linux x86-64)
 
@@ -213,16 +213,16 @@ Adobe Commerce erfordert für einige Vorgänge die folgenden Systemtools:
 - Selbstsignierte SSL-Zertifikate werden nicht unterstützt.
 - Transport Layer Security (TLS)-Anforderung - PayPal und `repo.magento.com` erfordern beide TLS 1.2 oder höher.
 
-Informationen zu Commerce in Cloud-Infrastrukturen finden Sie unter [Fastly-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)) im Handbuch *Commerce in Cloud-*.
+Informationen zu Commerce in Cloud-Infrastrukturen finden Sie unter [Fastly-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)) im Handbuch *Commerce in Cloud-*.
 
 ### xdebug
 
 Verwenden Sie für Adobe Commerce [php_xdebug 2.5.x](https://xdebug.org/download) oder höher (nur Entwicklungsumgebungen; kann die Leistung beeinträchtigen).
 
-Informationen zu Adobe Commerce on Cloud finden Sie [Konfigurieren von Xdebug](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/test/debug) im Handbuch *Commerce on Cloud Infrastructure*.
+Informationen zu Adobe Commerce on Cloud finden Sie [Konfigurieren von Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!NOTE]
 >
->Es gibt ein bekanntes Problem mit `xdebug`, das sich auf Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder den Admin nach der Installation auswirken kann. Siehe [Bekanntes Problem, das `xdebug` Installation betrifft](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in der _Commerce Support Knowledge Base_.
+>Es gibt ein bekanntes Problem mit `xdebug`, das sich auf Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder den Admin nach der Installation auswirken kann. Siehe [Bekanntes Problem, das `xdebug` Installation betrifft](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in der _Commerce Support Knowledge Base_.
 
 <!-- Last updated from includes: 2026-05-13 16:20:40 -->

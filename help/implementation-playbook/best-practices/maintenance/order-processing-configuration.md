@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Da das Bestellvolumen auf Ihren Commerce-Sites zunimmt, können Sie die Checkout
 
 - **[!UICONTROL Asynchronous indexing]** - Aktivieren Sie diese Option, um Datenbanksperren und eine verlangsamte Verarbeitung zu verhindern, die auftreten können, wenn eine große Anzahl von Bestellungen gleichzeitig aufgegeben wird.
 - **[!UICONTROL Asynchronous email notifications]** - Aktivieren Sie diese Option, um die Kaufleistung zu beschleunigen, indem Sie E-Mail-Benachrichtigungen zur Kasse und Bestellabwicklung in festgelegten Intervallen senden, anstatt sie sofort zu senden.
-- **[!UICONTROL Enable Archiving]** - Aktivieren Sie diese Option, um die Leistung von Bestellungen, Rechnungen, Lieferungen und Gutschriften zu verbessern und Ihren Arbeitsbereich frei von unnötigen Informationen zu halten, sodass Sie sich auf Ihr aktuelles Geschäft konzentrieren können. Siehe [Aktivieren der Archivierung](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+- **[!UICONTROL Enable Archiving]** - Aktivieren Sie diese Option, um die Leistung von Bestellungen, Rechnungen, Lieferungen und Gutschriften zu verbessern und Ihren Arbeitsbereich frei von unnötigen Informationen zu halten, sodass Sie sich auf Ihr aktuelles Geschäft konzentrieren können. Siehe [Aktivieren der Archivierung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -38,7 +38,7 @@ Die Schritte zum Aktivieren der asynchronen Ordnungsverarbeitung hängen vom Ber
 
 - Aktivieren Sie bei lokalen Adobe Commerce-Sites im Standard- oder Produktionsmodus die asynchrone Indizierung, indem Sie die Konfiguration der Rastereinstellungen in der Admin Console aktualisieren.
 
-  Siehe [Aktivieren geplanter Rasteraktualisierungen und -neuindizierungen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=de#enable-scheduled-grid-updates-and-reindexing)
+  Siehe [Aktivieren geplanter Rasteraktualisierungen und -neuindizierungen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >

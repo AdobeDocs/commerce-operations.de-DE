@@ -1,7 +1,7 @@
 ---
 source-git-commit: c71367c553dce66c146540389461f36eaa529bfc
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,6 @@ Diese Version umfasst die folgenden Highlights:
 
 >[!BEGINSHADEBOX]
 
-Die Fehlerbehebung für CVE-2025-47110 ist auch als isolierter Patch verfügbar. Weitere Informationen finden [&#x200B; im Artikel &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)Wissensdatenbank“.
+Die Fehlerbehebung für CVE-2025-47110 ist auch als isolierter Patch verfügbar. Weitere Informationen finden [ im Artikel ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50)Wissensdatenbank“.
 
 >[!ENDSHADEBOX]

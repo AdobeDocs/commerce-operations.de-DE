@@ -5,7 +5,7 @@ feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
 source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4570'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 In diesem Thema werden Konfigurationspfade für systemspezifische und vertrauliche Einstellungen aufgelistet:
 
-- Mit dem [`magento app:config:dump` Befehl &#x200B;](../cli/export-configuration.md) systemspezifische Einstellungen in die systemspezifische Konfigurationsdatei `app/etc/env.php` geschrieben, die sich _in_ Versionsverwaltung befinden sollte. Außerdem wird die freigegebene Konfiguration für alle Commerce-Instanzen in `app/etc/config.php` geschrieben. Diese Datei _sollte_ in der Quell-Code-Verwaltung sein.
+- Mit dem [`magento app:config:dump` Befehl ](../cli/export-configuration.md) systemspezifische Einstellungen in die systemspezifische Konfigurationsdatei `app/etc/env.php` geschrieben, die sich _in_ Versionsverwaltung befinden sollte. Außerdem wird die freigegebene Konfiguration für alle Commerce-Instanzen in `app/etc/config.php` geschrieben. Diese Datei _sollte_ in der Quell-Code-Verwaltung sein.
 - Der Befehl [`magento config:sensitive:set`](../cli/set-configuration-values.md) schreibt vertrauliche Einstellungen in `app/etc/env.php`.
 
   Sie können vertrauliche Werte auch mithilfe von Konfigurationsvariablen festlegen, wie unter [Verwenden von Umgebungsvariablen zum Überschreiben der Konfigurationseinstellungen](../reference/override-config-settings.md#environment-variables) beschrieben.
