@@ -6,7 +6,7 @@ badge: label="Ein Beitrag von David Lambauer" type="Informative" url="https://gi
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Ein `<field>`-Tag kann die folgenden Werte für das `type=""` haben:
 | `select` | Normales Dropdown-Menü, erfordert möglicherweise ein benutzerdefiniertes `source_model`. Wird auch für `Yes/No` Auswahlen verwendet. Ein Beispiel finden Sie unter `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` . |
 | `multiselect` | Wie `select`, aber mehrere Optionen sind gültig. |
 | `button` | Eine Schaltfläche, die ein sofortiges Ereignis Trigger. Erfordert ein benutzerdefiniertes Frontend-Modell, um den Schaltflächentext und die Aktion zu definieren. Ein Beispiel finden Sie unter `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` . |
-| `obscure` | Ein Textfeld mit dem Wert verschlüsselt und als `**&#x200B;**` angezeigt. Wenn Sie den Typ mithilfe von „Element überprüfen“ im Browser ändern, wird der Wert nicht angezeigt. |
+| `obscure` | Ein Textfeld mit dem Wert verschlüsselt und als `****` angezeigt. Wenn Sie den Typ mithilfe von „Element überprüfen“ im Browser ändern, wird der Wert nicht angezeigt. |
 | `password` | Wie `obscure`, mit der Ausnahme, dass der ausgeblendete Wert nicht verschlüsselt ist, und das erzwungene Ändern des Typs mit „Element überprüfen“ im Browser zeigt den Wert nicht an. |
 | `file` | Ermöglicht das Hochladen einer Datei zur Verarbeitung. |
 | `label` | Zeigt eine Beschriftung anstelle eines bearbeitbaren Felds an. Verwenden Sie diesen Typ, wenn ein Feld nur für bestimmte Bereiche bearbeitbar ist, z. B. nur auf Store-Ansichtsebene. |
@@ -398,12 +398,12 @@ Die folgenden Validierungsregeln sind verfügbar:
 | `validate-alphanum-with-spaces` | Ermöglicht die Verwendung von Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Leerzeichen. |
 | `validate-clean-url` | Ermöglicht eine gültige URL. Beispiel: `https://www.example.com` oder `www.example.com`. |
 | `validate-currency-dollar` | Ermöglicht einen gültigen (Dollar-)Betrag. Beispiel: 100,00 $. |
-| `validate-data` | Ermöglicht die Verwendung von Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Unterstrichen (\_).<br>Das erste Zeichen muss ein Buchstabe sein.<br>(Ausdruck muss übereinstimmen: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Meldung bei Validierungsfehlern: „Verwenden Sie nur Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Unterstriche (\_) in diesem Feld. Das erste Zeichen sollte ein Buchstabe sein.“ |
+| `validate-data` | Ermöglicht die Verwendung von Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Unterstrichen (\_).<br>Das erste Zeichen muss ein Buchstabe sein.<br>(Muss mit Ausdruck übereinstimmen: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Meldung zu Validierungsfehlern: „Verwenden Sie nur Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Unterstriche (\_) in diesem Feld. Das erste Zeichen sollte ein Buchstabe sein.“ |
 | `validate-date-au` | Erzwingt das folgende Datumsformat: TT/MM/JJJJ. Zum Beispiel 17/03/2006 für den 17. März 2006. |
 | `validate-email` | Ermöglicht eine gültige E-Mail-Adresse. Beispiel: johndoe@domain.com. |
 | `validate-emailSender` | Ermöglicht eine gültige E-Mail-Adresse. Beispiel: johndoe@domain.com. |
 | `validate-fax` | Ermöglicht eine gültige Faxnummer. Beispiel: 123-456-7890. |
-| `validate-no-empty` | Lässt einen leeren Wert nicht zu (gleichwertige Validierung wie `requried-entry`).<br>Validierungsfehlermeldung: „Leerer Wert.“ |
+| `validate-no-empty` | Lässt einen leeren Wert nicht zu (gleichwertige Validierung wie `requried-entry`).<br>Validierungsfehlermeldung: „Leerer Wert“. |
 | `validate-no-html-tags` | Die Verwendung von HTML-Tags ist nicht zulässig. |
 | `validate-password` | Lässt 6 oder mehr Zeichen zu. Führende und nachfolgende Leerzeichen werden ignoriert. |
 | `validate-phoneLax` | Ermöglicht eine gültige Telefonnummer. Zum Beispiel (123) 456-7890 oder 123-456-7890. |
