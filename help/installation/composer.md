@@ -93,7 +93,7 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
 
    >[!NOTE]
    >
-   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
+   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
 
    Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 
