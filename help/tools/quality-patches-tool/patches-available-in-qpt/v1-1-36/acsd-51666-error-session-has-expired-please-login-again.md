@@ -1,20 +1,20 @@
 ---
 title: 'ACSD-51666: Fehler „Die Sitzung ist abgelaufen, bitte melden Sie sich erneut an.“ Nach der Anmeldung'
-description: Wenden Sie den Patch ACSD-51666 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler „Die Sitzung ist abgelaufen“ auftritt. Melden Sie sich erneut an.* Tritt nach dem Anmeldeversuch auf.
+description: Wenden Sie den Patch ACSD-51666 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler „Die Sitzung ist abgelaufen, bitte melden Sie sich erneut an.“ nach dem Anmeldeversuch auftritt.
 feature: Customers
 role: Admin, Developer
 exl-id: 8968b314-6625-45fa-9733-20560cca7089
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
 
-# ACSD-51666: Fehler *Die Sitzung ist abgelaufen, bitte erneut anmelden.* nach der Anmeldung
+# ACSD-51666: Fehler *Die Sitzung ist abgelaufen, bitte erneut anmelden.* Nach der Anmeldung
 
-Der Patch ACSD-51666 behebt das Problem, dass der Fehler *Die Sitzung ist abgelaufen, bitte melden Sie sich erneut an.* tritt nach dem Anmeldeversuch auf. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.36 installiert ist. Die Patch-ID ist ACSD-51666. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
+Der Patch von ACSD-51666 behebt das Problem, dass der Fehler *Die Sitzung ist abgelaufen, bitte melden Sie sich erneut an.* Tritt nach dem Anmeldeversuch auf. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.36 installiert ist. Die Patch-ID ist ACSD-51666. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -32,7 +32,7 @@ Der Patch ACSD-51666 behebt das Problem, dass der Fehler *Die Sitzung ist abgela
 
 ## Problem
 
-Sie erhalten die Fehlermeldung *Die Sitzung ist abgelaufen, melden Sie sich erneut an.* beim Versuch, sich mit dem neuen Kennwort von einem Gerät aus anzumelden, nachdem das Kennwort auf einem anderen Gerät zurückgesetzt wurde. Dies geschieht nur, wenn auf der von einem benutzerdefinierten Modul hinzugefügten Seite eine zusätzliche Ajax-Anfrage vorhanden ist.
+Sie erhalten die Fehlermeldung *Die Sitzung ist abgelaufen, melden Sie sich erneut an.* Beim Versuch, sich mit dem neuen Kennwort von einem Gerät aus anzumelden, nachdem das Kennwort auf einem anderen Gerät zurückgesetzt wurde. Dies geschieht nur, wenn auf der von einem benutzerdefinierten Modul hinzugefügten Seite eine zusätzliche Ajax-Anfrage vorhanden ist.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -49,7 +49,7 @@ Sie können sich beim ersten Versuch erfolgreich anmelden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Sie sehen die *Die Sitzung ist abgelaufen, melden Sie sich erneut an.*.
+* Sie sehen die *Die Sitzung ist abgelaufen, bitte melden Sie sich erneut an.* Fehler.
 * Sie sind nicht eingeloggt und werden nicht auf die Homepage weitergeleitet.
 * Ihr zweiter Anmeldeversuch ist erfolgreich.
 

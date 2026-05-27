@@ -7,7 +7,7 @@ exl-id: 61f8a517-1a50-4d51-b576-38ae29a7ca32
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.13 enthält die folgenden Patches:
 1. **MDVA-42046**: Es wird das Problem behoben, bei dem einem Produktattribut mit einem Datumseingabefeld beim Aktualisieren eines Produkts ein falscher Wert zugewiesen wird.
 1. **MDVA-42283**: Es wird ein Problem behoben, bei dem das Datums-/Uhrzeitformat im Administratorauftragsraster für das französische Gebietsschema ungültig ist.
 1. **MDVA-42969**: Es wird das Problem behoben, dass die Regel Zugehöriges Produkt nur funktioniert, wenn das Kundensegment auf &quot;*&quot;* ist.
-1. **MDVA-43451**: Es wurde das Problem behoben, bei dem der Fehler *Der angeforderte Speicher wurde nicht gefunden. Überprüfen Sie den Store und versuchen Sie es erneut.* wird beim Konfigurieren eines freigegebenen Katalogs für eine bestimmte Website angezeigt.
+1. **MDVA-43451**: Es wurde das Problem behoben, bei dem der Fehler *Der angeforderte Speicher wurde nicht gefunden. Überprüfen Sie den Store und versuchen Sie es erneut.* Wird beim Konfigurieren eines freigegebenen Katalogs für eine bestimmte Website angezeigt.
 1. **MDVA-43491**: Es wird das Problem behoben, dass die Basisbildbeschriftung beim Importieren von Produkten für eine Website mit mehreren Geschäften nicht aktualisiert wird.
 1. **MDVA-43601**: Behebt das Problem mit fehlenden Triggern nach vollständiger Neuindizierung.
 1. **MDVA-43824**: Es wird das Problem behoben, bei dem beim Stornieren von Bestellungen mit einem Rabatt ein Fehler auftritt.

@@ -7,7 +7,7 @@ exl-id: cff5b9e6-56ee-4df2-961a-6d90ec83c0c2
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Zwei wichtige Probleme wirken sich auf die [!UICONTROL Gift Registry] in Adobe C
 1. Erstellen Sie zwei Produkte: Produkt A und Produkt B.
 1. Erstellen Sie zwei Kunden: Kunde A und Kunde B.
 1. Melden Sie sich als Kunde A an und erstellen Sie ein neues [!UICONTROL Gift Registry].
-1. Navigieren Sie zur Produktseite von Produkt A und fügen Sie sie zum [!UICONTROL Wishlist] hinzu. Öffnen Sie die [!UICONTROL Wishlist Page] und verschieben Sie Produkt A mithilfe von [!UICONTROL Gift Registry] in die [!UICONTROL Add to Gift Registry].
+1. Navigieren Sie zur Produktseite von Produkt A und fügen Sie sie zum [!UICONTROL Wishlist] hinzu. Öffnen Sie die [!UICONTROL Wishlist Page] und verschieben Sie Produkt A mithilfe von [!UICONTROL Add to Gift Registry] in die [!UICONTROL Gift Registry].
 1. Melden Sie sich als Kunde B an, erstellen Sie ein neues [!UICONTROL Gift Registry] und fügen Sie Produkt B hinzu.
 1. Geben Sie als Kunde B die [!UICONTROL Gift Registry] per E-Mail frei: **[!UICONTROL My Account]> [!UICONTROL Gift Registry] >[!UICONTROL Share]**.
 1. Melden Sie sich als Kunde B ab.

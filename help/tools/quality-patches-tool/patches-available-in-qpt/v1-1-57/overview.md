@@ -7,7 +7,7 @@ exl-id: 3e252a71-f35f-4046-9353-169060451ffe
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ QPT v1.1.57 enthält die folgenden Patches:
 1. **ACSD-62635**: Es wird das Problem behoben, dass Produkte, die zu mehreren Stores gehören, in der [!DNL GraphQL]-Produktabfrage nicht korrekt angezeigt werden.
 1. **ACSD-62671**: Es wird ein Problem behoben, bei dem die [!DNL GraphQL] beim ersten Versuch keine aktuellen Adressinformationen zurückgibt.
 1. **ACSD-62689**: Es wird das Problem behoben, dass Kundinnen und Kunden nach Tiefe 4 keine Kategorien in [!UICONTROL Related Product Rules] und [!UICONTROL Widgets] hinzufügen können.
-1. **ACSD-62708**: Es wurde ein Problem behoben, bei dem die Schriftgröße [!DNL TinyMCE] 7-Editors in der Admin nach der Anwendung der Korrektur von [!UICONTROL pt] als [!UICONTROL px] und nicht [!UICONTROL ACP2E-3430] angezeigt wurde. Jetzt können Sie die Schriftgröße auch in [!UICONTROL px] anstelle von [!UICONTROL pt] festlegen.
+1. **ACSD-62708**: Es wurde ein Problem behoben, bei dem die Schriftgröße [!DNL TinyMCE] 7-Editors in der Admin nach der Anwendung der Korrektur von [!UICONTROL ACP2E-3430] als [!UICONTROL pt] und nicht [!UICONTROL px] angezeigt wurde. Jetzt können Sie die Schriftgröße auch in [!UICONTROL px] anstelle von [!UICONTROL pt] festlegen.
 1. **ACSD-62758**: Es wird das Problem behoben, dass Produktvideos auf der Seite mit den [!UICONTROL Configurable Product] nicht korrekt gerendert werden, wenn die URL ausgewählte Optionen enthält.
 1. **ACSD-62951**: Es wird ein Problem behoben, bei dem die [!UICONTROL Credit Memo]-E-Mail gesendet wird, ohne Elemente und Gesamtwerte einzubeziehen.
 1. **ACSD-62965**: Es wird ein Problem behoben, bei dem *Meldung „LocalizedException* nicht in der [!DNL GraphQL response] enthalten ist.

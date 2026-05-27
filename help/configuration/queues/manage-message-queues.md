@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen über die Befehlsze
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Das folgende Beispiel zeigt die `crontab` für das Ausführen von Verbrauchern:
 >
 >Sie können ihn in den Konfigurationsoptionen Admin Stores > Einstellungen > Konfiguration > Erweitert > System > Cron für Gruppe: Verbraucher konfigurieren.
 >
->Weitere [&#x200B; zur Verwendung von &#x200B;](../cli/configure-cron-jobs.md) mit Commerce finden `cron` unter „Konfigurieren und Ausführen von“.
+>Weitere [&#x200B; zur Verwendung von `cron` mit Commerce finden &#x200B;](../cli/configure-cron-jobs.md) unter „Konfigurieren und Ausführen von“.
 
 Sie können auch einen Prozess-Manager wie [Supervisor](https://supervisord.readthedocs.io/en/latest/) verwenden, um den Status von Prozessen zu überwachen. Der Manager kann die Befehlszeile verwenden, um die Prozesse nach Bedarf neu zu starten.
 
