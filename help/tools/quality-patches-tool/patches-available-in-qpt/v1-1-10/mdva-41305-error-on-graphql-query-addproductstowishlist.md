@@ -42,11 +42,11 @@ Wenn Benutzende von GraphQL konfigurierbare Produkte (mit/ohne Konfiguration) zu
 
    <pre>
     <code class="language-graphql">
-    mutation {
-      generateCustomerToken(email: "", password: "") {
+    mutation &lbrace;
+      generateCustomerToken(email: "", password: "") &lbrace;
         token
-      }
-     }
+      &rbrace;
+     &rbrace;
      </code>
      </pre>
 
@@ -55,84 +55,84 @@ Wenn Benutzende von GraphQL konfigurierbare Produkte (mit/ohne Konfiguration) zu
 
 <pre>
 <code class="language-graphql">
-mutation {
+mutation &lbrace;
  addProductsToWishlist(
    wishlistId: 1
-   wishlistItems: [
-     {
+   wishlistItems: &lbrack;
+     &lbrace;
        sku: "conf2"
-       selected_options: [
+       selected_options: &lbrack;
             "Y29uZmlndXJhYmxlLzkzLzUw"
-       ]
+       &rbrack;
        quantity: 1
-       entered_options: [
-         {
+       entered_options: &lbrack;
+         &lbrace;
            uid: "Y3VzdG9tLW9wdGlvbi8x"
            value: "test"
-         }
-       ]
-     }
-    ]
-  ) {
-    wishlist {
+         &rbrace;
+       &rbrack;
+     &rbrace;
+    &rbrack;
+  ) &lbrace;
+    wishlist &lbrace;
       id
       items_count
-      items_v2 (currentPage: 1, pageSize: 8 ) {
-        items {
+      items_v2 (currentPage: 1, pageSize: 8 ) &lbrace;
+        items &lbrace;
          id
          quantity
-         ... on ConfigurableWishlistItem  {
+         ... on ConfigurableWishlistItem  &lbrace;
            child_sku
-           customizable_options {
+           customizable_options &lbrace;
              customizable_option_uid
-           }
-         }
-         product {
+           &rbrace;
+         &rbrace;
+         product &lbrace;
            uid
            name
            sku
            options_container
-           ... on CustomizableProductInterface {
-             options {
+           ... on CustomizableProductInterface &lbrace;
+             options &lbrace;
               title
               required
               sort_order
               option_id
-              ... on CustomizableFieldOption {
-                value {
+              ... on CustomizableFieldOption &lbrace;
+                value &lbrace;
                   uid
                   sku
                   price
                   price_type
                   max_characters
-                }
-              }
-            }
-          }
-          price_range {
-            minimum_price {
-              regular_price {
+                &rbrace;
+              &rbrace;
+            &rbrace;
+          &rbrace;
+          price_range &lbrace;
+            minimum_price &lbrace;
+              regular_price &lbrace;
                 currency
                 value
-              }
-            }
-            maximum_price {
-               regular_price {
+              &rbrace;
+            &rbrace;
+            maximum_price &lbrace;
+               regular_price &lbrace;
                  currency
                  value
-               }
-             }
-           }
-         }
-       }
-     }
-   }
-  user_errors {
+               &rbrace;
+             &rbrace;
+           &rbrace;
+         &rbrace;
+       &rbrace;
+     &rbrace;
+   &rbrace;
+  user_errors &lbrace;
     code
     message
-   }
- }
-}
+   &rbrace;
+ &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -156,6 +156,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

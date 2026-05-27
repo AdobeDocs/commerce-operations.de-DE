@@ -26,7 +26,7 @@ Adobe Commerce-Patch-Versionen werden auf der Grundlage der folgenden Richtlinie
 
 - **Isolierte Sicherheits-Patch** Datei: Einzelne, nicht kumulative [Sicherheits-Patch-Dateien](versioning-policy.md#isolated-security-patch-file) werden unabhängig voneinander veröffentlicht, um eine schnellere Behebung zu ermöglichen, und werden in den nächsten vollständigen Sicherheits-Patch integriert. Um eine isolierte Sicherheits-Patch-Datei anwenden zu können, müssen Kunden für ihre unterstützte Version die neueste Patch-Version verwenden (die neueste -p-Version), da isolierte Sicherheits-Fehlerbehebungen ausschließlich mit dieser Version getestet werden.
 
-- **Sicherheits-Patches** - [Sicherheits-Patches](versioning-policy.md#security-patch-release) werden jährlich für alle [unterstützten ](lifecycle-policy.md) veröffentlicht. Diese Patches enthalten alle zuvor veröffentlichten Sicherheits-, Compliance- und Qualitäts-Hotfixes.  Adobe veröffentlicht möglicherweise zusätzliche Sicherheits-Patches, dies ist jedoch nicht garantiert.
+- **Sicherheits-Patches** - [Sicherheits-Patches](versioning-policy.md#security-patch-release) werden jährlich für alle [unterstützten &#x200B;](lifecycle-policy.md) veröffentlicht. Diese Patches enthalten alle zuvor veröffentlichten Sicherheits-, Compliance- und Qualitäts-Hotfixes.  Adobe veröffentlicht möglicherweise zusätzliche Sicherheits-Patches, dies ist jedoch nicht garantiert.
 
 - **Patch** - Ein vollständiger [Patch](versioning-policy.md#patch-release) für die Adobe Commerce 2.4.x LTS-Version (3 Jahre Support) wird jährlich (Mai) veröffentlicht.
 

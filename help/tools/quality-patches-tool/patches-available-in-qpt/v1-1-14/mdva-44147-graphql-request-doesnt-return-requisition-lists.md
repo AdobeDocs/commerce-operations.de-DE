@@ -42,14 +42,14 @@ Der Patch MDVA-44147 behebt das Problem, dass [!DNL GraphQL] Anfrage nicht [!UIC
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       generateCustomerToken(
         email: "test@gmail.com"
         password: "xxxxxxxx"
-        ) {
+        ) &lbrace;
           token
-        }
-      }
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -59,33 +59,33 @@ Der Patch MDVA-44147 behebt das Problem, dass [!DNL GraphQL] Anfrage nicht [!UIC
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20
-          ) {
-            items {
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -93,37 +93,37 @@ Der Patch MDVA-44147 behebt das Problem, dass [!DNL GraphQL] Anfrage nicht [!UIC
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "customer": {
-          "requisition_lists": {
-            "items": [
-            {
+    &lbrace;
+      "data": &lbrace;
+        "customer": &lbrace;
+          "requisition_lists": &lbrace;
+            "items": &lbrack;
+            &lbrace;
               "uid": "MQ==",
               "name": "Name",
               "description": "Description",
-              "items": {
-                "items": [
-                {
+              "items": &lbrace;
+                "items": &lbrack;
+                &lbrace;
                   "uid": "MQ==",
-                  "product": {
+                  "product": &lbrace;
                     "uid": "MQ==",
                     "name": "Simple 01",
                     "sku": "s00001",
                     "__typename": "SimpleProduct"
-                    },
+                    &rbrace;,
                     "quantity": 1
-                  }
-                  ],
+                  &rbrace;
+                  &rbrack;,
                   "total_pages": 1
-                }
-              }
-              ],
+                &rbrace;
+              &rbrace;
+              &rbrack;,
               "total_count": 1
-            }
-          }
-        }
-      }
+            &rbrace;
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -131,38 +131,38 @@ Der Patch MDVA-44147 behebt das Problem, dass [!DNL GraphQL] Anfrage nicht [!UIC
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20,
-          filter: {
-            uids: {
+          filter: &lbrace;
+            uids: &lbrace;
               eq: "MQ=="
-            }
-          }
-          ) {
-            items {
+            &rbrace;
+          &rbrace;
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -185,7 +185,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 Weitere Informationen zum [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist, indem Sie die  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) im [!DNL Quality Patches Tool] Handbuch verwenden.
 
 Weitere Informationen zu anderen in der [!DNL QPT] verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].
