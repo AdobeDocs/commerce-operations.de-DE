@@ -7,7 +7,7 @@ exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Der Lagerstatus von zusammengesetzten Produkten (gebündelt, gruppiert und konfi
 <u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie ein konfigurierbares, gebündeltes und gruppiertes Produkt mit jeweils einem einfachen untergeordneten Produkt.
-1. Legen Sie jeden einfachen untergeordneten Produktstatus mithilfe des **[!UICONTROL Out of Stock]**-API-Aufrufs auf `source-items` fest.
+1. Legen Sie jeden einfachen untergeordneten Produktstatus mithilfe des `source-items`-API-Aufrufs auf **[!UICONTROL Out of Stock]** fest.
 1. Überprüfen Sie jetzt den Lagerstatus des übergeordneten Produkts.
 
 <u>Erwartete Ergebnisse</u>:

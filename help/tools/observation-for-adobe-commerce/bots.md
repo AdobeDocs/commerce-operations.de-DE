@@ -5,7 +5,7 @@ exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1944'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Auf dieser Registerkarte finden Sie Informationen, die erklären, wie Sie festst
 
 ## Allgemeine Übersicht über [!DNL bots]:
 
-* Ein [!DNL bot] ist eine Software, die sich wiederholende automatisierte Aufgaben ausführt. Mit künstlicher Intelligenz und der Evolution des maschinellen Lernens verändern sich die Aufgaben, Methoden und Interaktionen von [!DNL bots]. Es gibt *gute* [!DNL bots], die Websites nutzen, indem sie durchsuchen und zu Internet-Suchmaschinen hinzufügen. Dies führt dazu, dass Internetnutzer durch Suchmaschinenergebnisse zur Website geleitet werden. Ein *Gut*-[!DNL bot] respektiert in der Regel die Grenzen, die dem [!DNL bot] durch eine `robots.txt`-Datei oder Einstellungen in einer Suchmaschinenkonsole zugewiesen werden. Grenzen können den Zugriff auf die Site oder Teile der Site einschränken.
+* Ein [!DNL bot] ist eine Software, die sich wiederholende automatisierte Aufgaben ausführt. Mit künstlicher Intelligenz und der Evolution des maschinellen Lernens verändern sich die Aufgaben, Methoden und Interaktionen von [!DNL bots]. Es gibt *gute* [!DNL bots], die Websites nutzen, indem sie crawlen und zu Internet-Suchmaschinen hinzugefügt. Dies führt dazu, dass Internetnutzer durch Suchmaschinenergebnisse zur Website geleitet werden. Ein *Gut*-[!DNL bot] respektiert in der Regel die Grenzen, die dem [!DNL bot] durch eine `robots.txt`-Datei oder Einstellungen in einer Suchmaschinenkonsole zugewiesen werden. Grenzen können den Zugriff auf die Site oder Teile der Site einschränken.
 * Böswillige [!DNL bots] ignorieren die `robots.txt`-Datei oder sie können eine gute [!DNL bot] über das Feld „Benutzeragenten anfragen“ der HTTP-Anfragedaten spoofen. Einige Dinge, die böswillige [!DNL bots] tun:
    * Laden Sie eine Site, um berechtigten Benutzern den Zugriff auf die Site zu verweigern.
    * Inhalte ohne Genehmigung abfangen und wiederverwenden.
