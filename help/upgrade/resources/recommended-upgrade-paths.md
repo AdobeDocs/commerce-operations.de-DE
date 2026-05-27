@@ -4,7 +4,7 @@ description: Lesen Sie die Empfehlungen für die Planung Ihres Adobe Commerce-Up
 exl-id: f776b000-0085-4b77-860f-623837c3c902
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
