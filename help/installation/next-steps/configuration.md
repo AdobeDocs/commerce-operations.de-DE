@@ -5,7 +5,7 @@ feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Weitere Informationen finden Sie in den folgenden Abschnitten:
 
 * [Vorgehensweise: Das Tutorial zum Drehen von Protokollen mit zehn Beispielen](https://www.thegeekstuff.com/2010/07/logrotate-examples)
 * [Stapelaustausch](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` man page](https://linuxconfig.org/logrotate-8-manual-page)
+* [Manpage `logrotate`](https://linuxconfig.org/logrotate-8-manual-page)
 
 >[!AVAILABILITY]
 >
