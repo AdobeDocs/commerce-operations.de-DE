@@ -27,7 +27,7 @@ Weitere Informationen zu cron, einschließlich der Entfernung eines crontab und 
 Nach der Installation empfehlen wir Folgendes:
 
 * Stellen Sie sicher, dass Ihr Dateieigentümerstatus und Ihre Berechtigungen [ordnungsgemäß](../prerequisites/file-system/configure-permissions.md)
-* Es wird dringend empfohlen[ den standardmäßigen Admin-URI ](../tutorials/admin-uri.md)`admin` zu ändern
+* Es wird dringend empfohlen[&#x200B; den standardmäßigen Admin-URI &#x200B;](../tutorials/admin-uri.md)`admin` zu ändern
 * Stellen Sie sicher, dass der [`X-Frame-Option` HTTP](../../configuration/security/xframe-options.md)Header ordnungsgemäß festgelegt ist.
 * Treffen Sie Vorkehrungen gegen Cross-Site-Scripting (XSS), indem Sie [Ihre Vorlagen schützen](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
