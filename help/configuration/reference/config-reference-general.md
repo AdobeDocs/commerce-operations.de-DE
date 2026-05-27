@@ -5,7 +5,7 @@ feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
 source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Diese Konfigurationswerte sind in der Admin-Liste unter **Stores** > Einstellung
 | Standardanzeigewährung | `currency/options/default` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Zulässige Währungen | `currency/options/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Yahoo Finance Exchange | `TBD` | |
-| Fixer.io | `TBD` | |
+| fixer.io | `TBD` | |
 | WebServices | `TBD` | |
 | Verbindungs-Timeout in Sekunden | `currency/yahoofinance/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Verbindungs-Timeout in Sekunden | `currency/fixerio/timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
