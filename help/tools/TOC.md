@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
+source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
 workflow-type: tm+mt
-source-wordcount: '10059'
+source-wordcount: '10074'
 ht-degree: 0%
 
 ---
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: Beim Laden von PDP werden mehrere X-Magento-Vary-Cookie-Aktualisierungen vorgenommen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - v1.1.78 {#v1-1-78}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4528: Die Ortsvalidierung der Kundenadresse verarbeitet Schrägstriche (/) und ungültige Zeichen wie !, &quot;, # und ?](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628: Importieren von Kundinnen und Kunden mit E-Mail-Adressen in Großbuchstaben: Trigger mit einem nicht definierten Array-Schlüsselfehler, wenn die Kontofreigabe auf „global“ festgelegt ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989: Das Ändern einer Spalte mit einem Fremdschlüssel über ein deklaratives Schema verursacht Fehler in [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
          - [ACP2E-4763: Die Abfrage &quot;GraphQL customerOrders“ gibt überhöhte original_price_include_tax- und original_row_total_include_tax-Steuern zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)

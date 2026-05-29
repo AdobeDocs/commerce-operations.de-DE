@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Module mithilfe von Konfigurationstypen in Ad
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---

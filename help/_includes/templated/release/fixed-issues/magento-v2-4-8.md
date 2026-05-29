@@ -1,7 +1,7 @@
 ---
 source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '25765'
+source-wordcount: '29235'
 ht-degree: 0%
 
 ---
@@ -454,7 +454,7 @@ _AC-13529 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/6cf
 
 #### Für das Feld Obligatorische Telefonnummer ist kein rotes Sternchen vorhanden.
 
-Frühere rote Sternchen wurden nicht für Telefonnummer angezeigt, aber  Telefonnummer war obligatorisch. Was nun ein festes rotes Sternchen ist, kann auf der Telefonnummer als Pflichtfeld gesehen werden.
+Früher wurde für die Telefonnummer kein rotes Sternchen angezeigt, aber die Telefonnummer war obligatorisch. Was nun ein festes rotes Sternchen ist, kann auf der Telefonnummer als Pflichtfeld gesehen werden.
 
 _AC-13850 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/c699c206)_
 
@@ -514,7 +514,7 @@ _ACP2E-2978 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/3
 
 #### Export von mehr als 200 Bestellungen nicht möglich
 
-Die Server-Beschränkungen für die Anfragegröße zuvor gesendeter ausgewählter IDs wurden vernachlässigt, indem die HTTP-Anfrage von GET in POST geändert wurde, um das Problem zu beheben. Aufgrund der Serverbeschränkungen für die GET-Anfragengröße trat zuvor das Problem auf.
+Die Server-Beschränkungen für die Anfragegröße zuvor gesendeter ausgewählter IDs wurden vernachlässigt, indem die HTTP-Anfrage von GET in POST geändert wurde, um das Problem zu beheben. Zuvor trat aufgrund der Server-Einschränkungen für die Größe der GET-Anfrage das Problem auf.
 
 _ACP2E-3033 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/93d50f8d)_
 
@@ -538,7 +538,7 @@ _ACP2E-3149 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/8
 
 #### Für bestimmte zulässige Länder ist kein Kabeljau verfügbar
 
-Jetzt ist Cash-on-Delivery für bestimmte zulässige Länder verfügbar, wann immer es erforderlich ist, und   AC-3216 funktioniert erwartungsgemäß.
+Jetzt ist Cash on delivery für bestimmte zulässige Länder verfügbar, wenn es erforderlich ist und AC-3216 wie erwartet funktioniert.
 
 _ACP2E-3171 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/6f4805f8)_
 
@@ -646,7 +646,7 @@ _ACP2E-3169 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/b
 
 ### Admin-Benutzeroberfläche, Versand
 
-#### Die Anzahl der Couponcodes wird in der   Die Spalte „Verwendete Zeit“ auf der Registerkarte „Gutscheincodes verwalten“, wenn eine Bestellung mit Mehrfachversand aufgegeben wird.
+#### Die Anzahl der Gutscheincodes wird nicht in der Spalte „Verwendete Zeit“ auf der Registerkarte „Gutscheincodes verwalten“ aktualisiert, wenn eine Bestellung mit Mehrfachversand aufgegeben wird.
 
 Zuvor wurde bei einer Bestellung mit mehreren Versandvorgängen die Anzahl der Gutscheincodes nicht in der Spalte „Verwendete Zeit“ auf der Registerkarte „Gutscheincodes verwalten“ aktualisiert. Jetzt wird die richtige Anzahl sowohl in der „Verwendeten Zeit“ angezeigt, die die gewünschten Werte bei Multi-Versand widerspiegelt.
 
@@ -1898,7 +1898,7 @@ Das System hält sich jetzt an den Kodierungsstandard, indem es das verbotene `@
 
 _AC-8356 - [GitHub-Problem](https://github.com/magento/magento2/issues/37250) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/37000)_
 
-#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[&lbrace;composer,auth&rbrace;.json]` unterbrochen.
+#### Durch Leerzeichen in der EditorConfig-Syntax wird die Regel für `[{composer,auth}.json]` unterbrochen.
 
 Nach der Behebung eines Syntaxfehlers in editorconfig wendet das System jetzt einen Einzug mit vier Leerzeichen korrekt auf die Dateien composer und auth.json an. Aufgrund eines Leerzeichens in der EditorConfig-Syntax wurden diese Dateien zuvor falsch mit einem Einzug aus zwei Leerzeichen formatiert.
 
@@ -2042,7 +2042,7 @@ Das Problem wurde behoben, nachdem die Prüfung bei der Anforderung einer Produk
 
 _ACP2E-2653 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### GraphQL-Produktanruf, der den Preisfilter enthält `&lbrace;from:"0"&rbrace;` kein Ergebnis zurückgibt
+#### GraphQL-Produktanruf, der den Preisfilter enthält `{from:"0"}` kein Ergebnis zurückgibt
 
 Zuvor gab GraphQL-Produkte, die mit dem Filter nach Nullpreisen suchten, aufgrund einer ausgelösten Ausnahme überhaupt keine Ergebnisse zurück. Jetzt gibt die Suche die erwarteten Ergebnisse zurück.
 
@@ -2165,7 +2165,7 @@ Das Problem mit dem Feld original_row_total wurde behoben, das falsche Werte zur
 
 _LYNX-488_
 
-#### Die Miniaturansicht des gruppierten Produkts sollte gemäß der Konfiguration angezeigt werden     .
+#### Die gruppierte Produktminiatur sollte gemäß der Konfiguration angezeigt werden.
 
 Das Problem wurde behoben, um sicherzustellen, dass die gruppierte Produktminiatur gemäß den Konfigurationseinstellungen angezeigt wird
 
@@ -2994,7 +2994,7 @@ Es wurde ein Problem mit dem Rabatt auf Warenkorbregeln behoben, wenn der Rabatt
 
 _ACP2E-3332 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### Warenkorbregeln „Fester Rabatt auf den gesamten Warenkorb“  Aktion wendet Rabatte falsch an
+#### Warenkorbregeln „Fester Rabatt auf den gesamten Warenkorb“ Aktion wendet Rabatte falsch an
 
 Couponcodes werden bei Verwendung der Auftragserstellung im Admin-Bereich unabhängig von Groß- oder Kleinschreibung ordnungsgemäß validiert. Zuvor wurde der Couponcode nicht validiert, wenn er nicht mit der exakten Groß-/Kleinschreibung des konfigurierten Warenkorb-Regel-Codes übereinstimmte.
 
