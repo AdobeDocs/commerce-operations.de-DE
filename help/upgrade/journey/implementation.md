@@ -35,7 +35,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
   >[!TIP]
   >
-  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
+  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [&#128279;](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
 
 - Aktualisieren von Diensten zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzustellen, welche Services Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zur Spalte _Upgrade auf“ hinzugefügt_ soll.
 
@@ -64,7 +64,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
 - **Composer-Pakete und -Abhängigkeiten in „composer.json“, die eine Aktualisierung erfordern.**
 
-Darüber hinaus können Partner an [Adobe Commerce-Betaversionen teilnehmen ](../../release/beta.md) Vorabversionschancen nutzen, um frühzeitig Zugriff auf den Code einer kommenden Version zu erhalten. Wenn Entwickler frühzeitig Zugriff auf den Code erhalten, haben sie genügend Zeit, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorabversionen zwei Wochen im Voraus.
+Darüber hinaus können Partner an [Adobe Commerce-Betaversionen teilnehmen &#x200B;](../../release/beta.md) Vorabversionschancen nutzen, um frühzeitig Zugriff auf den Code einer kommenden Version zu erhalten. Wenn Entwickler frühzeitig Zugriff auf den Code erhalten, haben sie genügend Zeit, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorabversionen zwei Wochen im Voraus.
 
 ## Entwicklung und Qualitätssicherung
 
