@@ -31,7 +31,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: Der Befehl Bin/magento erkennt <code>setup:db:status</code> JSON-Datentyp nicht</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: Der Befehl Bin/magento erkennt <code>setup:db:status</code> JSON-Datentyp nicht</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -53,7 +53,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion mit Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM</a> hinzugefügt.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion mit Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM</a> hinzugefügt.</p>
 </td>
       <td>
         Neues Thema, qpt
