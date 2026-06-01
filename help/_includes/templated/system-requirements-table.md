@@ -1,5 +1,5 @@
 ---
-source-git-commit: 7e5c9d7f4bbd1f47ef9ef10dc21e2b0f1cfac356
+source-git-commit: 86faae28aa65f46e54a4f842c53acfda12542b86
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 39%
@@ -210,7 +210,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -375,7 +375,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -540,7 +540,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -705,7 +705,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -807,7 +807,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
