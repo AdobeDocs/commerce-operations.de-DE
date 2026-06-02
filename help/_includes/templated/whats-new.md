@@ -1,7 +1,7 @@
 ---
-source-git-commit: 75c28c839ee5e6405550df0149ef4196f7e15a1c
+source-git-commit: eca5c109548e0d92435b3dca90a905ef2efaa504
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '3357'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,188 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;1. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: Abgelaufene CAPTCHA-Bilder werden nicht aus dem System entfernt</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/86d06d83592f40bd181b30158cb9d83a2e963b07">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531">ACP2E-4531: Die CMS-Hierarchie aktualisiert keine hierarchische URL, wenn der URL-Schlüssel der untergeordneten Seite geändert wird</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: Zirkuläre Kategorieabhängigkeit vom Speichern einer Kategorie mit veralteten Daten in einer doppelten Browser-Registerkarte</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bc87b7024550f49756be23108030fe7bdd571855">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Die unterstützte Nginx-Version für On-Premise-Adobe Commerce wurde in den <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen“ von 1.28 auf 1.30 </a> die neuesten Patch-Versionen 2.4.8 auf 2.4.4 aktualisiert. Adobe Commerce auf Cloud-Infrastruktur verwendet weiterhin Nginx 1.28.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e407df8cff6711d69f0dea5bceff031123e1bee6">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Die MariaDB- und Nginx-Versionen in <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> für die On-Premise-Registerkarte für Version 2.4.9 wurden aktualisiert.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96653313a98e9fe2e12b26236e0a985049ec523">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;29. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: Die Preisregeln für kostenlose Warenkorbverpackungen werden für Bundle-Produkte mit Festpreis-Artikeln nicht separat zurückgesetzt</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8aec766f7377e1ed5a08987a433e676794fc2a59">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Aktualisierte Versionen von Systemabhängigkeiten im <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/journey/implementation">Upgrade-Analysehandbuch</a>.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dd93d4c8f52d0852f0459e234d66fda2063b6bee">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;28. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.78 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528 hinzugefügt: Bei der Überprüfung der Kundenadresse werden Schrägstriche (/) und ungültige Zeichen wie !, ", # und ?</a> falsch verarbeitet.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd24cd0182fc191f64733c2bac361404f9f9a08">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;27. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411">ACP2E-4411: Bundle-Produktpreise zeigen falsche Steuer- und Währungswerte zwischen der Produktdetailseite und dem Warenkorb in einer Einrichtung mit mehreren Währungen an</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29ef4059b5ca8b48c628c396771659a39413573e">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110">ACP2E-4110 wurde hinzugefügt: Bundle-Produktpreise mit einem Sonderpreis unterscheiden sich zwischen PDP/PLP und Warenkorb in einer nicht standardmäßigen Währung</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0133d7598293f529b285737c6ef51613dc5bd826">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475: Bestellung oder Filterung nach Preis funktioniert nicht für nicht vorrätige Paketprodukte</a> wurde hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2728ac1f484659b1db69b537640e3a5da8f965a7">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603: Katalogberechtigungen - Produktneuindizierung hinterlässt veraltete Berechtigungsindexzeilen und MySQL-Deadlock</a> wurde hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8f56414b758832c77e7f2f93009df527f506c5b">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698: Transaktionspreise und -summen werden nicht an Google Tag gesendet</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21979ca7c9dd21a871c22271603bcd09b9dfd29a">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;23. Mai 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Fehlerkorrekturen für Tippfehler und URL-Fehlerbehebungen des QPT 1.1.30 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability">B2B-2598: Fügt Caching-Funktionen für storeConfig-, Währungs-, Länder-, availableStores-GraphQL-Abfragen </a>.</p>
+</td>
+      <td>
+        QPT
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07202bf339331adb7b4103cdd123b0a194b72bf4">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;22. Mai 2026
 
@@ -31,7 +213,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: Der Befehl Bin/magento erkennt <code>setup:db:status</code> JSON-Datentyp nicht</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: Der Befehl Bin/magento erkennt <code>setup:db:status</code> JSON-Datentyp nicht</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -53,7 +235,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion mit Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM</a> hinzugefügt.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion mit Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM</a> hinzugefügt.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -527,36 +709,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Technisches Feedback
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;1. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Der <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule">2026 Adobe Commerce-</a> wurde mit den neuesten Versionsinformationen aktualisiert.</p>
-</td>
-      <td>
-        Versionshinweise
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f32d342cbdc3e962fede45de828d836c242bc9a">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Best Practices für die Redis- und Valkey-Konfiguration</a> wurden aktualisiert und die entsprechenden Konfigurationsanleitungen bereitgestellt.</p>
-</td>
-      <td>
-        Technisches Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">verpflichten</a></td>
     </tr>
   </tbody>
 </table>

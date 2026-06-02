@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
+source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
 workflow-type: tm+mt
-source-wordcount: '10074'
+source-wordcount: '10121'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: Fehler beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 3 GTM-Tags werden nicht ausgelöst, wenn Google Analytics 4 GTM nicht konfiguriert ist](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: Admin-Benutzer kann geplante Aktualisierungen für gebündeltes Produkt nicht speichern](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: Der Cache für GraphQL GET-Anfragen wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL-GET-Anfragen: Der Cache wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: Fehler beim Wechseln der Store-Ansichten auf der herunterladbaren Produktbearbeitungsseite](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: Der Bestellartikelstatus wurde fälschlicherweise auf [!UICONTROL Ordered] gesetzt, wenn der Produktbestand 0 beträgt](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: Katalogseite kann nicht nach benutzerdefiniertem Attribut des Typs Dropdown sortiert werden](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: Beim Laden von PDP werden mehrere X-Magento-Vary-Cookie-Aktualisierungen vorgenommen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - v1.1.78 {#v1-1-78}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4513: Abgelaufene CAPTCHA-Bilder werden nicht aus dem System entfernt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
          - [ACP2E-4528: Die Ortsvalidierung der Kundenadresse verarbeitet Schrägstriche (/) und ungültige Zeichen wie !, &quot;, # und ?](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628: Importieren von Kundinnen und Kunden mit E-Mail-Adressen in Großbuchstaben: Trigger mit einem nicht definierten Array-Schlüsselfehler, wenn die Kontofreigabe auf „global“ festgelegt ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989: Das Ändern einer Spalte mit einem Fremdschlüssel über ein deklaratives Schema verursacht Fehler in [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
@@ -995,6 +996,8 @@ ht-degree: 0%
          - [ACP2E-4419: Geschenkkarten werden nach erfolgreicher reCAPTCHA v2-Validierung in der Storefront nicht korrekt an der Kasse angewendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4505: Zirkuläre Kategorieabhängigkeit vom Speichern einer Kategorie mit veralteten Daten in einer doppelten Browser-Registerkarte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+         - [ACP2E-4720: Die Preisregeln für kostenlose Warenkörbe werden nicht für Bundle-Produkte mit Festpreis zurückgesetzt, die separat versendet werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698: Transaktionspreise und -summen werden nicht an Google Tag gesendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
          - [ACP2E-4475: Bestellung oder Filterung nach Preis funktioniert nicht für nicht vorrätige Bundle-Produkte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411: Die Produktpreise des Pakets zeigen falsche Steuer- und Währungswerte zwischen der Produktdetailseite und dem Warenkorb in einer Einrichtung mit mehreren Währungen an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)

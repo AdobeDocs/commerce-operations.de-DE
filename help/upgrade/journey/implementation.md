@@ -2,9 +2,9 @@
 title: Upgrade-Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Upgrade-Implementierung für Adobe Commerce-Projekte.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '856'
 ht-degree: 1%
 
 ---
@@ -42,13 +42,13 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
   | Service | Aktuelle Version | Aktualisieren auf | Notizen |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP | 7,4 | 8,1 |                                                          |
-  | Redis | 6,0 | 6,2 |                                                          |
-  | [!DNL RabbitMQ] | 3,8 | 3,9 | Wird derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
-  | MariaDB (Cloud) | 10,4 | 10,6 |                                                          |
-  | MySQL | 8,0 | -/-/ |                                                          |
-  | Komponist | 1,9,2 | 2,2 |                                                          |
-  | Elasticsearch | 7,10 | 7,17 |                                                          |
+  | PHP | 7,4 | 8.5 |                                                          |
+  | Tal | 8.0 | 9 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 4.3 | Wird derzeit nicht verwendet, aber wir sollten erwägen, es zu verwenden |
+  | MariaDB (Cloud) | 10,4 | 12.3 |                                                          |
+  | MySQL | 8,0 | Nicht zutreffend |                                                          |
+  | Komponist | 1.9.2 | 2.9 |                                                          |
+  | OpenSearch | 1 | 3 |                                                          |
 
 - **Erweiterungen und Drittanbietermodule** - Verwenden Sie diese Tabellenvorlage, um den Status Ihrer Erweiterungen und Anpassungen zu verstehen, damit Sie strategische Entscheidungen treffen und Aktionen definieren können. Dies ist eine Möglichkeit, alle Erweiterungen zu ersetzen, die in Adobe Commerce nativ sein könnten, um die Komplexität Ihres Projekts zu minimieren. Verwenden Sie den Befehl `bin/magento module:status` , um eine Liste der Module und Erweiterungen anzuzeigen.
 

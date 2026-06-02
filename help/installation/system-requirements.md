@@ -2,9 +2,9 @@
 title: Systemanforderungen
 description: Erfahren Sie mehr über Softwareabhängigkeiten und Systemanforderungen für Adobe Commerce. Informationen zur Kompatibilität mit Ihrer Bereitstellungsumgebung finden Sie unter Getestete Konfigurationen .
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: f5d0b6943b1b5ca41967c61842b73734ed41f26f
+source-git-commit: dc0a70a11f332dabf8f09e528c355f2bcb7910bc
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Es gibt einige Unterschiede in den Abhängigkeiten für Commerce in Cloud Manage
 >[!IMPORTANT]
 >
 >In der Tabelle mit den Systemanforderungen sind die Adobe Commerce-Versionen aufgeführt, für die sie gelten, einschließlich Versionen mit der Bezeichnung Beta oder früher Zugriff.
->Die [&#x200B; veröffentlichten Commerce-Versionen finden &#x200B;](../release/release-notes/overview.md) in den Versionshinweisen .
+>In den [Versionshinweisen](../release/release-notes/overview.md) finden Sie die neuesten veröffentlichten Commerce-Versionen.
 >
 >Wenn Ihre Service-Versionen nicht mit der unterstützten Konfiguration für Ihre Commerce-Version übereinstimmen, kann sich das Verhalten von dem unterscheiden, was Adobe beim Testen reproduzieren kann. Der Adobe-Support bittet Sie möglicherweise, Ihre Umgebung an einer unterstützten Konfiguration auszurichten, bevor Sie das gemeldete Verhalten untersuchen, beheben oder validieren. Nachdem Sie Ihre Umgebung angepasst haben, kann der Adobe-Support die Untersuchung fortsetzen.
 
@@ -38,8 +38,11 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
+**<sup>1</sup>Kompatibilität zwischen MariaDB 12.3 und Adobe Commerce 2.4.9**
+Die Kompatibilität zwischen MariaDB 12.3 und Adobe Commerce 2.4.9 wird nach der offiziellen Version von MariaDB 12.3, die im Zeitraum Mai-Juni erwartet wird, bestätigt.
+
 Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
+Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce in Cloud-*.
 
 >[!TAB Commerce On-Premises]
 
@@ -63,10 +66,6 @@ empfohlen, ihre Suchinfrastruktur auf eine kompatible OpenSearch-Version zu migr
 
 >[!ENDTABS]
 
->[!AVAILABILITY]
->
-><sup>1</sup> Die Kompatibilität zwischen MariaDB 12.3 und Adobe Commerce 2.4.9 wird nach der offiziellen Version von MariaDB 12.3, die im Zeitraum Mai-Juni erwartet wird, bestätigt.
-
 ## Systemanforderungen für frühere Versionen von Commerce
 
 In den folgenden Tabellen sind die Systemanforderungen für Adobe Commerce-Versionen aufgeführt, einschließlich der Anforderungen an die erweiterte Unterstützung. Diese Tabellen dienen nur zu Referenzzwecken. Adobe rät davon ab, nicht unterstützte Versionen von Softwareabhängigkeiten zu verwenden. Der Support erfordert, dass Sie Ihre Umgebung an einer unterstützten Konfiguration ausrichten, bevor wir gemeldetes Verhalten untersuchen, beheben oder validieren können.
@@ -86,7 +85,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
+Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce in Cloud-*.
 
 >[!TAB Commerce On-Premises]
 
@@ -225,4 +224,4 @@ Informationen zu Adobe Commerce on Cloud finden Sie [Konfigurieren von Xdebug](h
 >
 >Es gibt ein bekanntes Problem mit `xdebug`, das sich auf Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder den Admin nach der Installation auswirken kann. Siehe [Bekanntes Problem, das `xdebug` Installation betrifft](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in der _Commerce Support Knowledge Base_.
 
-<!-- Last updated from includes: 2026-05-13 16:20:40 -->
+<!-- Last updated from includes: 2026-06-01 11:19:57 -->
