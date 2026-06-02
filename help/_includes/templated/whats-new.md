@@ -1,7 +1,7 @@
 ---
-source-git-commit: eca5c109548e0d92435b3dca90a905ef2efaa504
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '3357'
+source-wordcount: '3282'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: Abgelaufene CAPTCHA-Bilder werden nicht aus dem System entfernt</a> hinzugefügt.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: Abgelaufene CAPTCHA-Bilder werden nicht aus dem System entfernt</a> hinzugefügt.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -39,7 +39,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: Zirkuläre Kategorieabhängigkeit vom Speichern einer Kategorie mit veralteten Daten in einer doppelten Browser-Registerkarte</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.79 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: Zirkuläre Kategorieabhängigkeit vom Speichern einer Kategorie mit veralteten Daten in einer doppelten Browser-Registerkarte</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -77,7 +77,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: Die Preisregeln für kostenlose Warenkorbverpackungen werden für Bundle-Produkte mit Festpreis-Artikeln nicht separat zurückgesetzt</a>.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: Die Preisregeln für kostenlose Warenkorbverpackungen werden für Bundle-Produkte mit Festpreis-Artikeln nicht separat zurückgesetzt</a>.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -265,7 +265,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Die Kompatibilität von Valkey LTS mit Version 8.1 in den <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5-Sicherheits-Patch-Versionen</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6-Sicherheits-Patch-Versionen</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8-Sicherheits-Patch-Versionen</a> wurde korrigiert, sodass die Cache-Backend-Anleitung mit den unterstützten Valkey on Adobe Commerce on Cloud Infrastructure-Anleitungen übereinstimmt.<br /><em>Behebt das Problem <a href="https://github.com/AdobeDocs/commerce-operations.de-DE/issues/177">#177</a>.</em></p>
+      <td><p>Die Kompatibilität von Valkey LTS mit Version 8.1 in den <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5-Sicherheits-Patch-Versionen</a>, <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6-Sicherheits-Patch-Versionen</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8-Sicherheits-Patch-Versionen</a> wurde korrigiert, sodass die Cache-Backend-Anleitung mit den unterstützten Valkey on Adobe Commerce on Cloud Infrastructure-Anleitungen übereinstimmt.<br /><em>Behebt das Problem <a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
 </td>
       <td>
         Technische Informationen, Feedback, Versionshinweise
@@ -687,28 +687,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Größere Aktualisierung
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;3. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurden Anweisungen zum ordnungsgemäßen Überschreiben der standardmäßigen L2-Cache-Verzeichnisse von Adobe Commerce hinzugefügt, <code>env.php</code> sicherzustellen, dass die Cache-Dateien am vorgesehenen Speicherort gespeichert werden und Fehler bei der Aufspaltung von Cache-Verzeichnissen und der GlusterFS-Segmentierung verhindert werden. Siehe die aktualisierte Anleitung in <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Best Practices für die Konfiguration von Redis- und Valkey-Services</a>.</p>
-</td>
-      <td>
-        Technisches Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
