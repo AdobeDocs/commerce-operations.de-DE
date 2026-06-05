@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
+source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
 workflow-type: tm+mt
-source-wordcount: '10121'
+source-wordcount: '10131'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: Fehler beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 3 GTM-Tags werden nicht ausgelöst, wenn Google Analytics 4 GTM nicht konfiguriert ist](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: Admin-Benutzer kann geplante Aktualisierungen für gebündeltes Produkt nicht speichern](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: GraphQL-GET-Anfragen: Der Cache wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: Der Cache für GraphQL GET-Anfragen wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: Fehler beim Wechseln der Store-Ansichten auf der herunterladbaren Produktbearbeitungsseite](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: Der Bestellartikelstatus wurde fälschlicherweise auf [!UICONTROL Ordered] gesetzt, wenn der Produktbestand 0 beträgt](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: Katalogseite kann nicht nach benutzerdefiniertem Attribut des Typs Dropdown sortiert werden](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419: Geschenkkarten werden nach erfolgreicher reCAPTCHA v2-Validierung in der Storefront nicht korrekt an der Kasse angewendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4402: Inkrementeller Indexer der Target-Regel wählt keine deaktivierten Produkte aus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505: Zirkuläre Kategorieabhängigkeit vom Speichern einer Kategorie mit veralteten Daten in einer doppelten Browser-Registerkarte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720: Die Preisregeln für kostenlose Warenkörbe werden nicht für Bundle-Produkte mit Festpreis zurückgesetzt, die separat versendet werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698: Transaktionspreise und -summen werden nicht an Google Tag gesendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
