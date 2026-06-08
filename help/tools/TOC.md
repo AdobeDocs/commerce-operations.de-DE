@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 9de5006ef5231f1009e3b6b44a365e151d56e998
+source-git-commit: bbe7d69e0cf7a1cdfdbf6ed60b853ace38ae227a
 workflow-type: tm+mt
-source-wordcount: '10131'
+source-wordcount: '10146'
 ht-degree: 0%
 
 ---
@@ -996,6 +996,7 @@ ht-degree: 0%
          - [ACP2E-4419: Geschenkkarten werden nach erfolgreicher reCAPTCHA v2-Validierung in der Storefront nicht korrekt an der Kasse angewendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - v1.1.79 {#v1-1-79}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4706: Der Target-Regel-Indexer-Cron wählt keine Produkte aus, die nur im Bereich der Store-Ansicht aktiviert sind](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
          - [ACP2E-4402: Inkrementeller Indexer der Target-Regel wählt keine deaktivierten Produkte aus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
          - [ACP2E-4505: Zirkuläre Kategorieabhängigkeit vom Speichern einer Kategorie mit veralteten Daten in einer doppelten Browser-Registerkarte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
          - [ACP2E-4720: Die Preisregeln für kostenlose Warenkörbe werden nicht für Bundle-Produkte mit Festpreis zurückgesetzt, die separat versendet werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
