@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und w
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: cc99a5518bc5f21b93f83f9afb354242547d6a3c
+source-git-commit: 3411fb1d4c89bd4dd576f58b98dcf19ddafa00bf
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
@@ -93,21 +93,6 @@ Das Merchandising für Adobe Commerce Optimizer-Kategorien hilft Händlern bei d
 Weitere Informationen finden Sie unter [Kategorie-Merchandising](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add).
 
 Um Ihr Feedback bei der Verwendung dieser Beta-Funktion zu geben, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Semantische Suche: Intelligentere, kontextbezogene Einkaufserlebnisse (Private Beta)
-
-[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
-
-Die semantische Suche ist eine E-Commerce-Suchtechnologie, die die *Bedeutung* hinter der Abfrage eines Käufers versteht, nicht nur die genauen Wörter. Im Gegensatz zur herkömmlichen schlüsselwortbasierten Suche, die häufig fehlschlägt, wenn Abfragen unbekannte oder falsch geschriebene Begriffe enthalten, interpretiert dieser KI-gestützte Ansatz die Absicht mithilfe der Verarbeitung natürlicher Sprache (Natural Language Processing, NLP) und des Kontexts, um relevantere Ergebnisse zu liefern.
-
-Diese Technologie behebt eine wichtige Einschränkung der herkömmlichen Suche: Seiten ohne Ergebnis, die auftreten, wenn Käufer Wörter verwenden, die nicht im Katalog vorhanden sind. Mithilfe von KI-gestützten Techniken werden Benutzerabfragen und Produktdaten einem gemeinsamen semantischen Raum zugeordnet. Beispielsweise erkennt das System, dass „Laufschuhe“ und „Jogging-Sneaker“ sich auf denselben Produkttyp beziehen und Folgendes ermöglichen:
-
-- Synonymerkennung
-- Kontextuelle Relevanz
-- Intelligente Handhabung von vagen, falsch geschriebenen oder zusammengesetzten Abfragen
-- Verstehen natürlicher, konversativer Sprache
-
-Um eine Einladung zum Beta-Programm anzufordern, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). Das Adobe-Team wird mit den nächsten Schritten und Eignungsanforderungen antworten.
 
 ### Cloud Automation Patching Service (Private Beta)
 
