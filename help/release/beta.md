@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und w
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 3411fb1d4c89bd4dd576f58b98dcf19ddafa00bf
+source-git-commit: 300ed6b9123701244042abccf70ff774ac05b0fa
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,25 @@ Das Merchandising für Adobe Commerce Optimizer-Kategorien hilft Händlern bei d
 - Bereichsregeln nach Katalogansicht, wenn das Setup mehrere Katalogansichten verwendet.
 
 Weitere Informationen finden Sie unter [Kategorie-Merchandising](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add).
+
+Um Ihr Feedback bei der Verwendung dieser Beta-Funktion zu geben, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
+### Preisfilter für Empfehlungen (Public Beta) {#recommendation-price-filters-public-beta}
+
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+
+[!DNL Adobe Commerce Optimizer] fügt **Preisfilter** zu Produktempfehlungen hinzu, damit Sie empfohlene Produkte basierend auf dem Preis ein- oder ausschließen können, wenn Sie eine Empfehlungseinheit erstellen oder bearbeiten. Die Filter verwenden den **endgültigen berechneten Preis** des &quot;**Preisbuchs“ des jeweiligen Produkts,** Rabatte und Sonderangebote aus diesem Preisbuch (nicht nur Listenpreis). Preisregeln verfeinern die Kandidatenmenge; sie sehen keine Neubewertung von Produkten vor.
+
+Sie können **statische** Bereiche mit festen Mindest- und Höchstwerten in der Basiswährung Ihres Geschäfts oder **dynamische** Regeln auf Produktdetailseiten definieren, die empfohlene Produkte mit dem **aktuell angezeigten Produkt** vergleichen, indem Sie Operatoren wie kleiner oder gleich, größer oder gleich oder innerhalb eines Wert- oder Prozentbereichs des Ankerpreises verwenden. Dynamische Filter sind für SKU-bezogene Empfehlungstypen verfügbar, die im Produktkontext ausgeführt werden (z. B *„Anzeigen dieser, Anzeigen dieser* und *Ähnliche*).
+
+**Die wichtigsten Vorteile**
+
+- Ein- oder Ausschließen von Empfehlungskandidaten anhand des Preises mithilfe von Ein- und Ausschlussregeln im Schritt **Produkte**.
+- Verwenden Sie statische Preisbänder für feste Merchandising-Ziele (z. B. budgetfreundliche Add-ons oder Premium-Upsells).
+- Verwenden Sie dynamische Preisregeln auf der Produktdetailseite, um Alternativen innerhalb einer vergleichbaren Preisspanne relativ zum angezeigten Produkt anzuzeigen.
+- Passen Sie die Filterung an den Preis an, den Käufer sehen. Dies ist derselbe Endpreis aus dem aktiven Preisbuch, der für die Filterung und Anzeige verwendet wird.
+
+Weitere Informationen finden Sie unter [Empfehlungsfilter — Preis](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/recommendations/filters#price) im Handbuch für Händler und [Produktempfehlungen einrichten](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=de) im Dropdown-Handbuch für Storefronts.
 
 Um Ihr Feedback bei der Verwendung dieser Beta-Funktion zu geben, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
