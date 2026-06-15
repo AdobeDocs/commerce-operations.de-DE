@@ -1,7 +1,7 @@
 ---
-source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
+source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;12. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Übersicht: Quality Patches Tool (QPT) v1.1.80</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Das Programm „Suchabgleich und Rangfolge (Private Beta)“ wurde zu <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta-Versionen</a> hinzugefügt, einschließlich des Modells „Ebenenübereinstimmung“, der Interaktion mit Gewichtungen und Merchandising-Regeln und Einladungsanweisungen.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;8. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.79-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706: Der Target-Regel-Indexer cron wählt keine Produkte aus, die nur im Bereich der Store-Ansicht aktiviert sind</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;5. Juni 2026
 
@@ -701,36 +753,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Technisches Update, umfangreiches Update
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;8. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> mit von New Relic (APM) unterstützten Versionen für Commerce on Cloud by.</p>
-</td>
-      <td>
-        Technisches Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f82d05cf0f7d2749b313ef5f7e89e1e36248bf30">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta">Beta-Versionen wurden </a> ein Kategorie-Merchandising-Programm (Public Beta) für SaaS-Projekte aktualisiert, einschließlich Links zu <a href="https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add">Kategorie-Merchandising</a> und zugehörigen Merchandising-Regelthemen.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
