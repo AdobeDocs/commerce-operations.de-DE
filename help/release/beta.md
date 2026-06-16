@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und w
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 41e4aa725848fd7fa4910eaea09a802326fa3995
+source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
 workflow-type: tm+mt
-source-wordcount: '1451'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,6 @@ In den folgenden Abschnitten finden Sie eine Liste der aktiven Beta-Programme.
 
 ### Abgleich und Rangfolge suchen (Private Beta)
 
-[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
-
-[!BADGE Nur PaaS]{type=Informative url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."}
-
 Adobe verbessert die Sortierung der Suchergebnisse für [!DNL Live Search] nach [!DNL Adobe Commerce] und [!DNL Adobe Commerce Optimizer] durch die Produktsuche. Die Aktualisierung priorisiert **exakte und Beinahe-Phrasenübereinstimmung**, dann Übereinstimmungen, wobei **alle Abfragebegriffe im selben durchsuchbaren Attribut erscheinen** und schließlich **feldübergreifende** Übereinstimmungen (einschließlich des Verhaltens, das Vorschläge mit automatischer Vervollständigung unterstützt). Mit diesem mehrschichtigen Modell können Abfragen mit hohem Intent die relevantesten Produkte zuerst aufdecken und gleichzeitig nützliche Alternativen zurückgeben.
 
 Dasselbe Relevanzmodell interagiert mit **Suchgewichten**, **Intelligent Ranking**, **Synonymen** und **Merchandising-Regeln** (Pin, Boost, Bury). Deutsche Storefronts können **Dekompoundierung** für zusammengesetzte Wörter mit demselben allgemeinen Priorisierungsansatz verwenden.
@@ -48,7 +44,7 @@ Dasselbe Relevanzmodell interagiert mit **Suchgewichten**, **Intelligent Ranking
 - Klarere Erwartungen an die Kombination von Gewichtungen, intelligentem Ranking und manuellen Regeln zur Abfragezeit.
 - Anleitungen für die Validierung von Abfragen mit hohem Wert und für Optimierungsregeln nach der Änderung.
 
-Erfahren Sie mehr über Suchabgleich und Rangfolgestrategie in [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/search-relevance-matching) und [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/search-relevance-matching).
+Erfahren Sie mehr über Suchabgleich und Rangfolgestrategie in [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching) und [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching).
 
 Um eine Einladung zu dieser privaten Beta-Version anzufordern, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). Das Adobe-Team wird mit den nächsten Schritten und Eignungsanforderungen antworten.
 
