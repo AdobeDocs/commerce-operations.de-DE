@@ -31,7 +31,7 @@ Die folgende Tabelle zeigt die Versionsunterstützung für jede Erweiterung rela
 
 ## Commerce Services
 
-[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) sind eine Suite von in Adobe gehosteten Funktionen, die in Verbindung mit Ihrer Commerce-Instanz zuverlässige Funktionen und schnelle Antwortzeiten bieten.
+[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de) sind eine Suite von in Adobe gehosteten Funktionen, die in Verbindung mit Ihrer Commerce-Instanz zuverlässige Funktionen und schnelle Antwortzeiten bieten.
 
 Es wird empfohlen, dass Händler die neueste Version eines Service verwenden, um die höchste Stabilität und Funktionalität zu gewährleisten. In der Dokumentation wird die aktuell veröffentlichte Version beschrieben.
 
