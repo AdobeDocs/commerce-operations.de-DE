@@ -1,5 +1,5 @@
 ---
-source-git-commit: 86faae28aa65f46e54a4f842c53acfda12542b86
+source-git-commit: 34c1e3ed0ed46fc17bf4492036a8f43658b24bda
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 39%
@@ -18,7 +18,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
     </tr>
     <tr>
@@ -120,7 +120,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
       <td>
           2.9.3+
@@ -276,7 +276,7 @@ ht-degree: 39%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
       <td>
           2.9.3+
