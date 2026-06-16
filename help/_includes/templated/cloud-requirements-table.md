@@ -1,8 +1,8 @@
 ---
-source-git-commit: 951b3852c0942205b63ee01089c8cb40adfb0614
+source-git-commit: 34c1e3ed0ed46fc17bf4492036a8f43658b24bda
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 71%
+source-wordcount: '165'
+ht-degree: 70%
 
 ---
 # Cloud-Anforderungstabelle
@@ -18,7 +18,7 @@ ht-degree: 71%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
     </tr>
     <tr>
@@ -84,7 +84,7 @@ ht-degree: 71%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
       <td>
           2.9.3+
@@ -177,7 +177,7 @@ ht-degree: 71%
     <tr>
       <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
-          2.9.3+
+          2.10
       </td>
       <td>
           2.9.3+
