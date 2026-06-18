@@ -1,8 +1,8 @@
 ---
 title: Richtlinie zur Durchsetzung des Cloud-Versions-Upgrades
 description: Erfahren Sie mehr über die Durchsetzung von Versionsaktualisierungen für Adobe Commerce in Cloud - warum Adobe Upgrades, Erzwingungstermine, Stilllegungen und erforderliche Maßnahmen erzwingt. Übergangsbestimmungen und Migrationspfade finden Sie in der Lebenszyklusrichtlinie .
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
