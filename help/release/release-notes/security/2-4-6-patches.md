@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >Adobe Commerce on Cloud-Kunden müssen Plattformabhängigkeiten für unterstützte Versionen beibehalten. Siehe [Platform-Abhängigkeiten](../../lifecycle-policy.md#platform-dependencies) in der Lebenszyklusrichtlinie.
 >
->Adobe Commerce 2.4.6 wird bis [30. **2027](../../lifecycle-policy.md#extended-support) unterstützt,** gefolgt von einem [Übergangszeitraum, ](../../lifecycle-policy.md#security-only-transitional-period) bis **31. Mai 2028**. Diese Bestimmungen stehen nur Kunden von Adobe Commerce zur Verfügung. Sie erweitern die Unterstützung für Drittanbieterabhängigkeiten wie MySQL nicht.
+>Adobe Commerce 2.4.6 wird bis [30. **2027](../../lifecycle-policy.md#extended-support) unterstützt,** gefolgt von einem [Übergangszeitraum, &#x200B;](../../lifecycle-policy.md#security-only-transitional-period) bis **31. Mai 2028**. Diese Bestimmungen stehen nur Kunden von Adobe Commerce zur Verfügung. Sie erweitern die Unterstützung für Drittanbieterabhängigkeiten wie MySQL nicht.
 >
->Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [ [!DNL Adobe Commerce as a Cloud Service] ](../../version-upgrade-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [ Tabelle ](../../lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
+>Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [&#x200B; [!DNL Adobe Commerce as a Cloud Service] &#x200B;](../../version-upgrade-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [&#x200B; Tabelle &#x200B;](../../lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
 
 ## 2.4.6-P15
 
@@ -274,7 +274,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ### Hotfix für CVE-2022-31160 anwenden
 
-`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
+`jQuery-UI` Bibliotheksversion 1.13.1 weist eine bekannte Sicherheitslücke (CVE-2022-31160) auf, die mehrere Versionen von Adobe Commerce und Magento Open Source betrifft. Diese Bibliothek ist eine Abhängigkeit von Adobe Commerce und Magento Open Source 2.4.4, 2.4.5 und 2.4.6. Händler, die betroffene Bereitstellungen ausführen, sollten den Patch anwenden, der im Artikel [jQuery UI Security Vulnerability CVE-2022-31160 Fix for 2.4.4, 2.4.5 und 2.4.6 &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html).
 
 ### Highlights
 
@@ -324,6 +324,6 @@ Plattform-Upgrades für diese Version verbessern die Einhaltung der neuesten Bes
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  Dieses Problem kann behoben werden, indem manuelle Abhängigkeiten für das B2B-Sicherheitspaket mit einem &quot;[&quot;-Tag ](https://getcomposer.org/doc/04-schema.md#package-links) werden. Weitere Informationen finden Sie in den [B2B-Versionshinweisen](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
+  Dieses Problem kann behoben werden, indem manuelle Abhängigkeiten für das B2B-Sicherheitspaket mit einem &quot;[&quot;-Tag &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links) werden. Weitere Informationen finden Sie in den [B2B-Versionshinweisen](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

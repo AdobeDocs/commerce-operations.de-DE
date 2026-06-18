@@ -41,7 +41,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 **<sup>1</sup>Kompatibilität zwischen MariaDB 12.3 und Adobe Commerce 2.4.9**
 Die Kompatibilität zwischen MariaDB 12.3 und Adobe Commerce 2.4.9 wird nach der offiziellen Version von MariaDB 12.3, die im Zeitraum Mai-Juni erwartet wird, bestätigt.
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce in Cloud-*.
 
 >[!TAB Commerce On-Premises]
@@ -74,9 +74,9 @@ In den folgenden Tabellen sind die Systemanforderungen für Adobe Commerce-Versi
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 wird bis [30. **2027](../release/lifecycle-policy.md#extended-support) unterstützt,** gefolgt von einem [Übergangszeitraum, ](../release/lifecycle-policy.md#security-only-transitional-period) bis **31. Mai 2028**. Diese Bestimmungen stehen nur Kunden von Adobe Commerce zur Verfügung. Sie erweitern die Unterstützung für Drittanbieterabhängigkeiten wie MySQL nicht.
+>Adobe Commerce 2.4.6 wird bis [30. **2027](../release/lifecycle-policy.md#extended-support) unterstützt,** gefolgt von einem [Übergangszeitraum, &#x200B;](../release/lifecycle-policy.md#security-only-transitional-period) bis **31. Mai 2028**. Diese Bestimmungen stehen nur Kunden von Adobe Commerce zur Verfügung. Sie erweitern die Unterstützung für Drittanbieterabhängigkeiten wie MySQL nicht.
 >
->Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [ [!DNL Adobe Commerce as a Cloud Service] ](../release/version-upgrade-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [ Tabelle ](../release/lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
+>Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [&#x200B; [!DNL Adobe Commerce as a Cloud Service] &#x200B;](../release/version-upgrade-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [&#x200B; Tabelle &#x200B;](../release/lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
 >
 >Die Tabelle wird reduziert, um die Länge dieses Artikels zu minimieren. Wählen Sie die Kopfzeile aus, um sie zu erweitern.
 
@@ -90,7 +90,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce in Cloud-*.
 
 >[!TAB Commerce On-Premises]
