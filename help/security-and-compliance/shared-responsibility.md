@@ -31,7 +31,7 @@ Händler sind für Folgendes verantwortlich:
 * Sichere Anwendungsentwicklung
 * Einholung der PCI-Zertifizierung, falls vom Zahlungsverarbeiter des Händlers angefordert
 * Reaktion auf Sicherheitsvorfälle
-* Pflegen aller Drittanbieterabhängigkeiten, Plattformdienste und Adobe Commerce Services-Erweiterungen für Versionen, die aktiv unterstützt werden. Adobe bietet keine Sicherheitsunterstützung oder Hilfe für Bereitstellungen, auf denen nicht unterstützte Abhängigkeitsversionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
+* Pflegen aller Drittanbieterabhängigkeiten, Plattformdienste und Adobe Commerce Services-Erweiterungen für Versionen, die aktiv unterstützt werden. Adobe bietet keine Sicherheitsunterstützung oder Hilfe für Bereitstellungen, auf denen nicht unterstützte Abhängigkeitsversionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Der Händler ist für die Befolgung der Best Practices für die Sicherheit seine
    * Adobe Commerce Services-Erweiterungen
    * Alle Erweiterungen und benutzerdefinierten Integrationen von Drittanbietern
 
-  Adobe bietet keine Unterstützung für Bereitstellungen, auf denen nicht unterstützte Versionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
+  Adobe bietet keine Unterstützung für Bereitstellungen, auf denen nicht unterstützte Versionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
 
 ## Zuständigkeiten des Cloud-Service-Anbieters
 
