@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin
 exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
 type: Troubleshooting
-source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dieser Artikel bietet einen Überblick über das Quality Patches Tool (QPT) und 
 * Adobe Commerce On-Premise, alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 * Adobe Commerce auf Cloud-Infrastruktur, alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
-## Was sind Quality Patches Tool?
+## Was ist das Quality Patches Tool?
 
 Das [Quality Patches Tool](https://github.com/magento/quality-patches) (QPT) sind einzelne Patches, die von Adobe und der Magento Open Source-Community entwickelt wurden.
 
@@ -39,11 +39,11 @@ Das Tool soll Ihnen die Möglichkeit geben, selbst Patches für Probleme zu erst
 
 >[!NOTE]
 >
->QPT ist nur für qualitativ hochwertige Patches. Sicherheits-Patches sind im [Magento Security Center](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview) verfügbar.
+>QPT ist nur für qualitativ hochwertige Patches. Sicherheits-Patches sind im [Magento Security Center](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) verfügbar.
 
 ## Im Quality Patches Tool verfügbare Patches
 
-Eine Liste der verfügbaren Patches finden Sie [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) in unserer Entwicklerdokumentation.
+Eine Liste der verfügbaren Patches finden Sie [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.
 
 ## Installieren und Verwenden des Quality Patches Tools
 
@@ -51,13 +51,13 @@ Die Installations- und Verwendungsbefehle für Adobe Commerce On-Premise und Ado
 
 ### Installieren und Verwenden von QPT für Adobe Commerce On-Premise
 
-Weitere Informationen [&#x200B; Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches finden Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage)Software-Update-Handbuch > Patching“ in unserer Entwicklerdokumentation.
+Weitere Informationen [ Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches finden Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)Software-Update-Handbuch > Patching“ in unserer Entwicklerdokumentation.
 
 ### Installieren und Verwenden von QPT für Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [&#x200B; Cloud-Infrastruktur finden Sie unter „Cloud &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) für Adobe Commerce Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
+Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [ Cloud-Infrastruktur finden Sie unter „Cloud ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) für Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/release-notes) in unserer Entwicklerdokumentation.
-* [Anwenden von Composer-Patches, die von Adobe bereitgestellt werden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) in der Support-Wissensdatenbank.
+* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) in unserer Entwicklerdokumentation.
+* [Anwenden von Composer-Patches, die von Adobe bereitgestellt werden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) in der Support-Wissensdatenbank.

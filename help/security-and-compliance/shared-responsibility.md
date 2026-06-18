@@ -2,9 +2,9 @@
 title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4e5477a247b272dc17863a84bd3b9a55bf36d688
+source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3253'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,14 @@ Händler sind für Folgendes verantwortlich:
 * Sichere Anwendungsentwicklung
 * Einholung der PCI-Zertifizierung, falls vom Zahlungsverarbeiter des Händlers angefordert
 * Reaktion auf Sicherheitsvorfälle
-* Pflegen aller Drittanbieterabhängigkeiten, Plattformdienste und Adobe Commerce Services-Erweiterungen für Versionen, die aktiv unterstützt werden. Adobe bietet keine Sicherheitsunterstützung oder Hilfe für Bereitstellungen, auf denen nicht unterstützte Abhängigkeitsversionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
+* Pflegen aller Drittanbieterabhängigkeiten, Plattformdienste und Adobe Commerce Services-Erweiterungen für Versionen, die aktiv unterstützt werden. Adobe bietet keine Sicherheitsunterstützung oder Hilfe für Bereitstellungen, auf denen nicht unterstützte Abhängigkeitsversionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
+
+>[!NOTE]
+>
+>Siehe auch:
+>
+>* [Software-Lebenszyklusrichtlinie](../release/lifecycle-policy.md) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
+>* [Richtlinie zur Durchsetzung des Cloud-](../release/version-upgrade-enforcement-policy.md)-Upgrades - Erzwingungstermine und erforderliche Aktionen
 
 {{supported-versions-only}}
 
@@ -96,7 +103,7 @@ Der Händler ist für die Befolgung der Best Practices für die Sicherheit seine
    * Adobe Commerce Services-Erweiterungen
    * Alle Erweiterungen und benutzerdefinierten Integrationen von Drittanbietern
 
-  Adobe bietet keine Unterstützung für Bereitstellungen, auf denen nicht unterstützte Versionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
+  Adobe bietet keine Unterstützung für Bereitstellungen, auf denen nicht unterstützte Versionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
 
 ## Zuständigkeiten des Cloud-Service-Anbieters
 
@@ -813,8 +820,6 @@ Händler sind für die Synchronisierung von Daten zwischen Umgebungen verantwort
 | Konfigurieren der MBI-Datensynchronisation mit Adobe Commerce Cloud Pro<br>(Adobe Commerce Cloud-Datenbankkonfiguration) | R |   |
 
 {style="table-layout:auto"}
-
-{{supported-versions-only}}
 
 #### Produkt Recommendations
 

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,9 @@ Sicherheits-Patch-Versionen können auch Compliance-bezogene Änderungen enthalt
 
 Jede Sicherheits-Patch-Version basiert auf der vorherigen vollständigen Patch-Version. Es enthält Qualitäts- und Sicherheitskorrekturen aus früheren Patch-Versionen sowie Sicherheitskorrekturen, die zwischen der vorherigen vollständigen Patch-Version und der Sicherheits-Patch-Version erstellt wurden.
 
-Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [So rufen Sie Sicherheits-Patches ab und wenden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in der _Adobe Commerce Knowledgebase_.
+Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [So rufen Sie Sicherheits-Patches ab und wenden](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in der _Adobe Commerce Knowledgebase_.
 
->[!NOTE]
->
->Sicherheits-Patches mit erweiterter Unterstützung sind nur für Kunden von Adobe Commerce verfügbar und nicht für die Code-Basis von Magento Open Source. Siehe [Erweiterte Unterstützung](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Isolierte Sicherheits-Patch-Datei
 
@@ -29,5 +27,5 @@ Isolierte Sicherheits-Patch-Dateien sind nicht kumulative, eigenständige Patch-
 
 Um eine isolierte Sicherheits-Patch-Datei anwenden zu können, müssen Kunden für ihre unterstützte Version die neueste Patch-Version verwenden (die neueste -p-Version), da isolierte Sicherheits-Patch-Dateien ausschließlich mit dieser Version getestet werden.
 
-Im [Sicherheitscenter](https://helpx.adobe.com/de/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
+Im [Sicherheitscenter](https://helpx.adobe.com/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
 
