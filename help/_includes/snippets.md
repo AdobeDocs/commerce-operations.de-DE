@@ -1,7 +1,7 @@
 ---
-source-git-commit: d22f1c660ba2b6bdc507fa8ba728e0a4269bef8d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 >
 >Adobe unterstützt nur Bereitstellungen, auf denen unterstützte Versionen aller Abhängigkeiten und Services ausgeführt werden. Dies gilt für:
 >
->* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de).
+>* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 >* **Commerce Services-Erweiterungen** (einschließlich, aber nicht beschränkt auf Live Search, Produktempfehlungen und Zahlungs-Services) - nur die neueste veröffentlichte Version wird unterstützt.
 >* **Benutzerdefinierte Erweiterungen und Integrationen von Drittanbietern** - Händler sind dafür verantwortlich sicherzustellen, dass diese auf vom Anbieter unterstützten Versionen bleiben.
 >
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 ## Sicherheits-Patches für erweiterte Unterstützung {#extended-support}
 
->[!NOTE]
->
->Erweiterte Support-Sicherheits-Patches für 2.4.5 sind nur für Adobe Commerce-Kunden verfügbar. Diese Patches sind für die Magento Open Source-Code-Basis nicht verfügbar. Siehe [Erweiterte Unterstützung](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Nur Commerce {#commerce-only}
 

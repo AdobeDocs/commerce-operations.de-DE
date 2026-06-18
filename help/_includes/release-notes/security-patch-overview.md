@@ -1,7 +1,7 @@
 ---
-source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,7 @@ Jede Sicherheits-Patch-Version basiert auf der vorherigen vollständigen Patch-V
 
 Anweisungen zum Herunterladen und Anwenden von Sicherheits-Patches finden Sie unter [So rufen Sie Sicherheits-Patches ab und wenden](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) in der _Adobe Commerce Knowledgebase_.
 
->[!NOTE]
->
->Sicherheits-Patches mit erweiterter Unterstützung sind nur für Kunden von Adobe Commerce verfügbar und nicht für die Code-Basis von Magento Open Source. Siehe [Erweiterte Unterstützung](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Isolierte Sicherheits-Patch-Datei
 

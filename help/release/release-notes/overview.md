@@ -2,9 +2,9 @@
 title: Versionshinweise zu Adobe Commerce
 description: Erfahren Sie, wo Sie Informationen zu bestimmten Versionen von Adobe Commerce finden.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '462'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,8 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Abwärtsinkompatible Änderungen</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Sicherheitspatches</a></li>
+            <li><a href="../../lifecycle-policy.md">Lebenszyklusrichtlinie für Software</a></li>
+            <li><a href="../../version-upgrade-enforcement-policy.md">Durchsetzungsrichtlinie für die Cloud-Versionsaktualisierung</a></li>
             <li><a href="https://helpx.adobe.com/de/security/products/magento.html">Adobe-Sicherheitsbulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=de">B2B für Adobe Commerce</a></li>
           </ul>
@@ -52,7 +54,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
             <li><a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Experience Platform-Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=de">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=de">Zahlungsdienste</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=de">Produkt Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Produkt Recommendations</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de">Services-Connector</a></li>
           </ul>
         </td>

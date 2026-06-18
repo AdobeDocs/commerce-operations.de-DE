@@ -3,7 +3,7 @@ title: Referenzarchitektur für Unternehmen
 description: Erfahren Sie, wie Sie Adobe Commerce mithilfe der neuesten zusammensetzbaren Commerce-Technologie von Adobe implementieren.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 0d0922b23bfe9152ef7f8b942b0e839a189e5abf
+source-git-commit: dc4747d96e6f226e90ed95c93512c3e879d408ab
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Commerce wurde entwickelt, um die Unternehmensanforderungen an Leistung, Skalier
 
 Das folgende Architekturdiagramm veranschaulicht den Datenfluss zwischen Adobe Commerce und allen Adobe Experience Cloud-Lösungen.
 
-![Architekturdiagramm, das zeigt, wie Adobe Commerce eine Verbindung zu Experience Cloud-Lösungen herstellt](../../assets/playbooks/commerce-architecture-v3.png){width="800" zoomable="yes"}
+![Architekturdiagramm, das zeigt, wie Adobe Commerce eine Verbindung zu Experience Cloud-Lösungen herstellt](../../assets/playbooks/commerce-architecture.png){width="800" zoomable="yes"}
 
 >[!NOTE]
 >
