@@ -4,10 +4,10 @@ user-guide-description: Zugreifen auf alle Versionsinformationen für Adobe Comm
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: c8fa72ef4b5bb6f9a2d82e4e9840f683afb8ca54
+source-git-commit: 34c15beb4ddf0f6624295b0ec835de013dd36315
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 34%
+source-wordcount: '101'
+ht-degree: 32%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 34%
 - [Beta-Versionen](beta.md)
 - Planung und Richtlinien {#planning}
    - [Lebenszyklusrichtlinie](lifecycle-policy.md)
+   - [Durchsetzungsrichtlinie für das Versions-Upgrade](version-upgrade-enforcement-policy.md)
    - [Versionierungsrichtlinie](versioning-policy.md)
    - [Veröffentlichungszeitplan](schedule.md)
 - [Funktionen nach Version](features.md)
@@ -61,4 +62,4 @@ ht-degree: 34%
 - Packages {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
