@@ -1,7 +1,7 @@
 ---
-source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
+source-git-commit: 4b59c6bdce39314fd188c8c811c4d9e3f46d6067
 workflow-type: tm+mt
-source-wordcount: '3441'
+source-wordcount: '3538'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,80 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;18. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy">Software-Lebenszyklusrichtlinie</a> mit den Erzwingungsterminen für die Aktualisierung der Cloud-Version, Definitionen für den Support-Zeitraum (einschließlich des Übergangszeitraums für reine Sicherheit), einer erweiterten Tabelle zum Ende der Unterstützung für 2.4.4-2.4.9, PHP-PCI-Leitlinien und Pfaden für die Migration zu Adobe Commerce as a Cloud Service oder die Aktualisierung auf PaaS.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;16. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Aktualisierung der Composer-Version auf 2.10 in den <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> für Cloud und On-Premise für Adobe Commerce 2.4.9, 2.4.8 und 2.4.7.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;15. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die Tabelle <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability#commerce-services">Produktverfügbarkeit</a> wurde mit der neuesten Payment Services-Version 2.15.0 aktualisiert.</p>
+</td>
+      <td>
+        Wichtige Updates, Versionshinweise
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a47aff5b5ae138748584cb5dbd646ca7b69e294a">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Die <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Commerce-Systemanforderungen</a> wurden aktualisiert, um klarzustellen, dass die Commerce on Cloud-Vorlage jetzt eine Standarddienstkonfiguration bereitstellt, die mit der neuesten Commerce-Version für jede Versionszeile kompatibel ist.</p>
+</td>
+      <td>
+        Feedback, technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;12. Juni 2026
 
@@ -729,30 +803,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Neues Thema, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f14416d89140ee75ec437a42fbebae804282b72">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;20. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><ul>
-  <li>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy">Lebenszyklusrichtlinie</a> mit überarbeiteter Tabelle zum Ende der Unterstützung, erweitertem Support-Umfang und einem neuen Abschnitt über zusätzliche Sicherheitskorrekturen für die Bereitstellung von 2.4.4 und 2.4.5.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/versioning-policy">Versionierungsrichtlinie</a> und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule">Veröffentlichungszeitplan</a> für isolierte Sicherheitskorrekturen und Voraussetzungen für Hotfixes/die Bereitstellung einzelner Patches über das Quality Patches Tool; verschobene Details zu isolierten Sicherheitskorrekturen in der Übersicht über freigegebene Sicherheits-Patches enthalten.<br />- Der Veröffentlichungskalender für 2026 wurde aktualisiert, um dem aktuellen Zeitplan zu entsprechen.</li>
-</ul>
-</td>
-      <td>
-        Technisches Update, umfangreiches Update
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
