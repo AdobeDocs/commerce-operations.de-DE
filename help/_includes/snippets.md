@@ -13,7 +13,7 @@ ht-degree: 0%
 >
 >Adobe unterstützt nur Bereitstellungen, auf denen unterstützte Versionen aller Abhängigkeiten und Services ausgeführt werden. Dies gilt für:
 >
->* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de).
 >* **Commerce Services-Erweiterungen** (einschließlich, aber nicht beschränkt auf Live Search, Produktempfehlungen und Zahlungs-Services) - nur die neueste veröffentlichte Version wird unterstützt.
 >* **Benutzerdefinierte Erweiterungen und Integrationen von Drittanbietern** - Händler sind dafür verantwortlich sicherzustellen, dass diese auf vom Anbieter unterstützten Versionen bleiben.
 >

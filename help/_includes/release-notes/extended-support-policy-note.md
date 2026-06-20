@@ -16,4 +16,4 @@ ht-degree: 0%
 >Siehe auch:
 >
 >- [Software-Lebenszyklusrichtlinie](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
->- [Richtlinie zur Durchsetzung des Cloud-](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy)-Upgrades - Erzwingungstermine und erforderliche Aktionen
+>- [Richtlinie zur Durchsetzung des Cloud-](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy)-Upgrades - Erzwingungstermine und erforderliche Aktionen
