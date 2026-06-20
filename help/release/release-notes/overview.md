@@ -54,7 +54,7 @@ In der folgenden Tabelle finden Sie Versionshinweise und wichtige Informationen 
             <li><a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Experience Platform-Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=de">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=de">Zahlungsdienste</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Produkt Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=de">Produkt Recommendations</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=de">Services-Connector</a></li>
           </ul>
         </td>
