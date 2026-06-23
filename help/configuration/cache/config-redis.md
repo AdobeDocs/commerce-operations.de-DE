@@ -3,9 +3,24 @@ title: Installieren und Einrichten von Redis
 description: Erfahren Sie, wie Sie Redis für Caching und Sitzungsspeicher mit Adobe Commerce installieren und konfigurieren. Entdecken Sie Optionen zur Optimierung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+autotag-review: '2026-06-22T20:26:29.348Z'
+TQID: 'https://experienceleague.adobe.com/N61AAy4ihSIlhEjdvpji2XVOdZuHWhytp9zgoAU41K4'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: 456
 ht-degree: 0%
 
 ---
@@ -17,6 +32,8 @@ Redis ist ein In-Memory-Datenspeicher, der als Cache-Backend und zur Sitzungsspe
 - PHP-Sitzungsspeicher
 - Tag-basierte Cache-Bereinigung ohne `foreach` Schleifen
 - Speicherung auf der Festplatte und Master/Slave-Replikation
+
+{{cloud-cache-config}}
 
 ## Installieren von Redis
 

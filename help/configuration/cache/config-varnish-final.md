@@ -3,9 +3,22 @@ title: Überprüfen der Lackkonfiguration
 description: Erfahren Sie, wie Sie Ihre Lackkonfiguration mit Adobe Commerce abschließend überprüfen können. Entdecken Sie Testschritte und Techniken zur Fehlerbehebung.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: 379
 ht-degree: 0%
 
 ---
@@ -13,6 +26,8 @@ ht-degree: 0%
 # Konfiguration der Lackierung überprüfen {#final-verification}
 
 Nachdem Sie nun die von Commerce für Sie generierte `default.vcl` verwendet haben, können Sie einige abschließende Überprüfungen durchführen, um sicherzustellen, dass „Lack“ funktioniert.
+
+{{varnish-config-cloud}}
 
 ## HTTP-Antwortkopfzeilen überprüfen
 

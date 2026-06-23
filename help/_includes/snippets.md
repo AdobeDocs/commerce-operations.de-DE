@@ -1,11 +1,23 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
 # Snippets
+
+## Konfigurationshinweise für Commerce on Cloud Cache mit Referenz {#cloud-cache-config}
+
+>[!NOTE]
+>
+>Informationen zu Adobe Commerce in Cloud-Projekten finden Sie [Best Practices für die Konfiguration von Redis und Valkey](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) unter Cache-Konfigurationsanweisungen.
+
+## Konfigurationshinweis für Commerce on Cloud Varnish mit Referenz {#varnish-config-cloud}
+
+>[!NOTE]
+>
+>Wenn Ihr Commerce-Projekt in der Cloud bereitgestellt wird, verwendet die Vollseiten-Zwischenspeicherung [Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly) statt Varnish. Die Themen in diesem Abschnitt gelten nur für On-Premise-Installationen.
 
 ## Unterstützung der Adobe-Service-Version {#supported-versions-only}
 
@@ -103,7 +115,7 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 >[!IMPORTANT]
 >
->Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+>Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
 
 ## Sicherheits-Patch-Backports Oktober 2025 {#oct-2025-backports}
 
