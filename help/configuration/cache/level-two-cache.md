@@ -3,7 +3,7 @@ title: L2-Cache-Konfiguration zur Leistungsoptimierung
 description: Erfahren Sie, wie Sie den L2-Cache in Adobe Commerce konfigurieren, um den Netzwerk-Traffic zu reduzieren und die Leistung zu verbessern. Entdecken Sie die Implementierungsoptionen von Legacy und Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -47,7 +47,7 @@ Es stehen zwei L2-Cache-Implementierungen zur Verfügung:
 
 >[!NOTE]
 >
->Konfigurieren Sie für Adobe Commerce in der Cloud den L2-Cache, indem Sie die Variable [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) oder [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in `.magento.env.yaml` festlegen. Konfigurationsbeispiele finden Sie [Konfigurieren des L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)Cache).
+>Konfigurieren Sie für Adobe Commerce in der Cloud den L2-Cache, indem Sie die Variable [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) oder [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in `.magento.env.yaml` festlegen. Konfigurationsbeispiele finden Sie [Konfigurieren des L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)Cache).
 
 ## Konfiguration des alten L2-Cache (RemoteSynchronizedCache)
 

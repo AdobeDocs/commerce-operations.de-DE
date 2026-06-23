@@ -3,7 +3,7 @@ title: Statische Inhaltssignierung und Browser-Cache-Invalidierung
 description: Erfahren Sie, wie das Signieren statischer Inhalte in Adobe Commerce funktioniert, um den Browser-Cache für statische Ressourcen ungültig zu machen. Erfahren Sie, wie Sie diese Funktion aktivieren und konfigurieren.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in der Cloud und lokale Projekte."
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in der Cloud und lokale Projekte."
 autotag-review: '2026-06-22T21:48:08.334Z'
 TQID: 'https://experienceleague.adobe.com/vagWBVnjIS7tjnwVE5Dk56VDmPtbPgjsNVLBHSlOc-s'
 product_v2:
@@ -51,7 +51,7 @@ Dadurch wird die URL der statischen Dateien geändert und der Browser gezwungen,
 
 Commerce aktiviert diese Funktion standardmäßig, und Adobe empfiehlt, diese Funktion aktiviert zu lassen, um Probleme im Zusammenhang mit Browsern zu vermeiden, die alte statische Ressourcen bereitstellen.
 
-Die Konfiguration für das Signieren statischer Inhalte finden Sie unter [**[!UICONTROL Stores]**> Einstellungen > Konfiguration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+Die Konfiguration für das Signieren statischer Inhalte finden Sie unter [**[!UICONTROL Stores]**> Einstellungen > Konfiguration >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
 - **Nur On-Premises**: Diese Konfiguration ist verfügbar, wenn sich Ihre Site **nicht** im [Produktionsmodus](../bootstrap/application-modes.md#production-mode).
 - **Cloud**: Diese Konfiguration ist ausgeblendet, da der Produktionsmodus streng durchgesetzt wird. Daher müssen Sie die Befehlszeile wie unten dargestellt verwenden.

@@ -3,7 +3,7 @@ title: Überprüfen der Lackkonfiguration
 description: Erfahren Sie, wie Sie Ihre Lackkonfiguration mit Adobe Commerce abschließend überprüfen können. Entdecken Sie Testschritte und Techniken zur Fehlerbehebung.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -98,4 +98,4 @@ Stellen Sie sicher, dass das `<magento_root>/var/page_cache` leer ist:
 
 >[!TIP]
 >
->Wenn Sie auf 503-Fehler (Backend-Abruf fehlgeschlagen) stoßen, finden Sie weitere Informationen unter [Fehlerbehebung für 503-Fehler (Dienst nicht verfügbar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) im _Adobe Commerce-Hilfezentrum_.
+>Wenn Sie auf 503-Fehler (Backend-Abruf fehlgeschlagen) stoßen, finden Sie weitere Informationen unter [Fehlerbehebung für 503-Fehler (Dienst nicht verfügbar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=de) im _Adobe Commerce-Hilfezentrum_.

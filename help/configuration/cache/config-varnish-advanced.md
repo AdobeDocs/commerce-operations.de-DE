@@ -3,7 +3,7 @@ title: Erweiterte Lackkonfiguration
 description: Erfahren Sie, wie Sie erweiterte Lackfunktionen für Adobe Commerce konfigurieren, einschließlich Konsistenzprüfungen, Anmut- und Sanktionsmodi. Entdecken Sie Techniken zur VCL-Optimierung.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047

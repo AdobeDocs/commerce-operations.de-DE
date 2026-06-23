@@ -11,13 +11,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Informationen zu Adobe Commerce in Cloud-Projekten finden Sie [Best Practices für die Konfiguration von Redis und Valkey](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) unter Cache-Konfigurationsanweisungen.
+>Informationen zu Adobe Commerce in Cloud-Projekten finden Sie [Best Practices für die Konfiguration von Redis und Valkey](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) unter Cache-Konfigurationsanweisungen.
 
 ## Konfigurationshinweis für Commerce on Cloud Varnish mit Referenz {#varnish-config-cloud}
 
 >[!NOTE]
 >
->Wenn Ihr Commerce-Projekt in der Cloud bereitgestellt wird, verwendet die Vollseiten-Zwischenspeicherung [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) statt Varnish. Die Themen in diesem Abschnitt gelten nur für On-Premise-Installationen.
+>Wenn Ihr Commerce-Projekt in der Cloud bereitgestellt wird, verwendet die Vollseiten-Zwischenspeicherung [Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly) statt Varnish. Die Themen in diesem Abschnitt gelten nur für On-Premise-Installationen.
 
 ## Unterstützung der Adobe-Service-Version {#supported-versions-only}
 
@@ -25,13 +25,13 @@ ht-degree: 0%
 >
 >Adobe unterstützt nur Bereitstellungen, auf denen unterstützte Versionen aller Abhängigkeiten und Services ausgeführt werden. Dies gilt für:
 >
->* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
+>* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de).
 >* **Commerce Services-Erweiterungen** (einschließlich, aber nicht beschränkt auf Live Search, Produktempfehlungen und Zahlungs-Services) - nur die neueste veröffentlichte Version wird unterstützt.
 >* **Benutzerdefinierte Erweiterungen und Integrationen von Drittanbietern** - Händler sind dafür verantwortlich sicherzustellen, dass diese auf vom Anbieter unterstützten Versionen bleiben.
 >
 >Das Ausführen nicht unterstützter Versionen kann Sicherheitslücken in Ihrem Store hervorrufen, und Adobe kann keine Sicherheits-Patches für Abhängigkeiten bereitstellen, die nicht mehr von ihren Anbietern gepflegt werden.
 >
->Eine vollständige Liste der unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+>Eine vollständige Liste der unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
 
 ## Sicherheits-Patches für erweiterte Unterstützung {#extended-support}
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes).
 
 ## Nur Adobe Commerce {#ee-only}
 
@@ -129,7 +129,7 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 * **Unterstützung für das Apache ActiveMQ Artemis STOMP-Protokoll wurde hinzugefügt**
 
-  Unterstützung für ActiveMQ Artemis Open-Source-Nachrichtenbroker durch das Simple Text Oriented Messaging Protocol (STOMP) wurde hinzugefügt. Es bietet ein zuverlässiges und skalierbares Messaging-System, das Flexibilität für STOMP-basierte Integrationen bietet. Siehe [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) im *Commerce-Konfigurationshandbuch*.
+  Unterstützung für ActiveMQ Artemis Open-Source-Nachrichtenbroker durch das Simple Text Oriented Messaging Protocol (STOMP) wurde hinzugefügt. Es bietet ein zuverlässiges und skalierbares Messaging-System, das Flexibilität für STOMP-basierte Integrationen bietet. Siehe [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) im *Commerce-Konfigurationshandbuch*.
 
 ## Die Checkout-Seite kann static.min.js und mixins.min.js nicht laden. {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -146,7 +146,7 @@ Nach den letzten CSP-/SRI-Änderungen werden static.min.js und mixins.min.js nic
 
 **Hotfix**:
 
-Ein Hotfix ist verfügbar. Weitere [&#x200B; finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
+Ein Hotfix ist verfügbar. Weitere [&#x200B; finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
 
 ## Valkey Redis CLI-Hinweis {#valkey-redis-cli-note}
 

@@ -8,7 +8,7 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-badgePaas: label="Commerce in Cloud Manager" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten."
+badgePaas: label="Commerce in Cloud Manager" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten."
 source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
 source-wordcount: '2010'
@@ -31,13 +31,13 @@ Verwenden Sie diese Empfehlungen, um Redis- oder Valkey-Caching und -Sitzungen f
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Sie die neueste Version des `ece-tools` verwenden. Falls nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des `composer show magento/ece-tools` CLI-Befehls überprüfen.
+>Stellen Sie sicher, dass Sie die neueste Version des `ece-tools` verwenden. Falls nicht, [aktualisieren Sie auf die neueste Version](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=de). Sie können die in Ihrer lokalen Umgebung installierte Version mithilfe des `composer show magento/ece-tools` CLI-Befehls überprüfen.
 
 ## L2-Cache konfigurieren
 
 Konfigurieren Sie den L2-Cache, indem Sie die Bereitstellungsvariable `REDIS_BACKEND` oder `VALKEY_BACKEND` in der Konfigurationsdatei `.magento.env.yaml` festlegen.
 
-Implementierungsdetails, Konfigurationsbeispiele und bereitstellungsspezifische Anleitungen finden Sie unter [L2-Cache-Konfiguration zur Leistungsoptimierung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/level-two-cache).
+Implementierungsdetails, Konfigurationsbeispiele und bereitstellungsspezifische Anleitungen finden Sie unter [L2-Cache-Konfiguration zur Leistungsoptimierung](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache).
 
 >[!BEGINTABS]
 
@@ -51,7 +51,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Weitere Informationen zur Umgebungskonfiguration finden Sie unter [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
+Weitere Informationen zur Umgebungskonfiguration finden Sie unter [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 
 >[!TAB Valkey-Konfiguration]
 
@@ -63,7 +63,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Details zur Umgebungskonfiguration finden Sie unter [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) von Konfigurationsvariablen im Handbuch _Commerce on Cloud Infrastructure_.
+Details zur Umgebungskonfiguration finden Sie unter [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) von Konfigurationsvariablen im Handbuch _Commerce on Cloud Infrastructure_.
 
 >[!ENDTABS]
 
@@ -144,7 +144,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Details zur Konfiguration von Umgebungsvariablen finden Sie unter [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) im _Handbuch zu Commerce in Cloud Infrastructure_.
+Details zur Konfiguration von Umgebungsvariablen finden Sie unter [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_use_slave_connection) im _Handbuch zu Commerce in Cloud Infrastructure_.
 
 >[!TAB Valkey-Konfiguration]
 
@@ -156,7 +156,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Details zur Konfiguration von Umgebungsvariablen finden Sie unter [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) im _Handbuch zu Commerce in Cloud Infrastructure_.
+Details zur Konfiguration von Umgebungsvariablen finden Sie unter [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#valkey_use_slave_connection) im _Handbuch zu Commerce in Cloud Infrastructure_.
 
 >[!ENDTABS]
 
@@ -296,7 +296,7 @@ stage:
 
 >[!NOTE]
 >
->Der `full_page`-Cache-Typ ist für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da sie &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>Der `full_page`-Cache-Typ ist für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da sie &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 >[!WARNING]
 >
@@ -479,7 +479,7 @@ Gehen Sie wie folgt vor, um eine dedizierte Instanz für Sitzungen bereitzustell
 
 1. Fordern Sie eine neue Redis-Instanz für Sitzungen in Produktions- und Staging-Umgebungen an.
 
-   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
+   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
 
    Dieses Update verursacht keine Ausfallzeiten, erfordert jedoch eine Bereitstellung, um den neuen Service zu aktivieren.
 
@@ -554,7 +554,7 @@ Gehen Sie wie folgt vor, um eine dedizierte Instanz für Sitzungen bereitzustell
 
 1. Fordern Sie eine neue Valley-Instanz an, die Sitzungen zu Produktions- und Staging-Umgebungen gewidmet ist.
 
-   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
+   Senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket). Schließen Sie die aktualisierten `.magento/services.yaml` und `.magento.app.yaml` Konfigurationsdateien ein.
 
    Dieses Update verursacht keine Ausfallzeiten, erfordert jedoch eine Bereitstellung, um den neuen Service zu aktivieren.
 
@@ -614,7 +614,7 @@ stage:
 
 ## Asynchrone Freigabe aktivieren
 
-Um die `lazyfree` in Adobe Commerce auf der Cloud-Infrastruktur zu aktivieren, reichen Sie ein [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)Ticket ein, in dem Sie darum bitten, die folgende Redis- oder Valkey-Konfiguration auf Ihre Umgebungen anzuwenden:
+Um die `lazyfree` in Adobe Commerce auf der Cloud-Infrastruktur zu aktivieren, reichen Sie ein [Adobe Commerce-Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket)Ticket ein, in dem Sie darum bitten, die folgende Redis- oder Valkey-Konfiguration auf Ihre Umgebungen anzuwenden:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -636,7 +636,7 @@ Wenn `lazyfree` aktiviert ist, lädt Redis oder Valley die Speicherrückgewinnun
 
 ## Multithread-E/A aktivieren
 
-Um das Redis-I/O-Threading in Adobe Commerce in der Cloud-Infrastruktur zu aktivieren, senden Sie ein [Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) mit der unten stehenden Anfrage zur I/O-Threading-Konfiguration. Diese Konfiguration kann den Durchsatz verbessern, indem Socket-Lese- und -Schreibvorgänge sowie das Parsen von Befehlen vom Haupt-Thread ausgelagert werden, was zulasten einer höheren CPU-Nutzung geht. Validieren Sie unter Last und überwachen Sie Ihre Hosts.
+Um das Redis-I/O-Threading in Adobe Commerce in der Cloud-Infrastruktur zu aktivieren, senden Sie ein [Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) mit der unten stehenden Anfrage zur I/O-Threading-Konfiguration. Diese Konfiguration kann den Durchsatz verbessern, indem Socket-Lese- und -Schreibvorgänge sowie das Parsen von Befehlen vom Haupt-Thread ausgelagert werden, was zulasten einer höheren CPU-Nutzung geht. Validieren Sie unter Last und überwachen Sie Ihre Hosts.
 
 >[!BEGINTABS]
 
@@ -985,6 +985,6 @@ stage:
 
 Siehe die folgenden verwandten Themen:
 
-- [Einrichten des Redis-Service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/redis)
-- [Variablen bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
+- [Einrichten des Redis-Service](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/redis)
+- [Variablen bereitstellen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy)
 

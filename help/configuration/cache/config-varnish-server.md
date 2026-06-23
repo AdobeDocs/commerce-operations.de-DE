@@ -3,7 +3,7 @@ title: Konfigurieren von nginx für das Zwischenspeichern von Lacken
 description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung des Lackzwischenspeichers für Adobe Commerce konfigurieren. Erfahren Sie mehr über die Konfiguration und Einrichtung von Ports.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 autotag-review: '2026-06-22T21:49:41.837Z'
 TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
 product_v2:

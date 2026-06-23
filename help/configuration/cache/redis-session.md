@@ -3,7 +3,7 @@ title: Konfigurieren von Redis für den Sitzungsspeicher
 description: Erfahren Sie, wie Sie Redis für die Sitzungsspeicherung in Adobe Commerce konfigurieren. Erfahren Sie mehr über die Einrichtung von CLI, Sitzungsparameter und Techniken zur Verbindungsprüfung.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 autotag-review: '2026-06-22T21:56:59.687Z'
 TQID: 'https://experienceleague.adobe.com/deiikp11GlXtMJFkhT7DhgguCYFkplQgr2fYm8MMN7I'
 product_v2:
