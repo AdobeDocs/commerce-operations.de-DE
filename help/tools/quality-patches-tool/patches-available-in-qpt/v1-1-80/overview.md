@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3eff1670dd536175d4905d386027674431831ae8
+source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
 workflow-type: tm+mt
-source-wordcount: 409
+source-wordcount: 410
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ QPT v1.1.80 enthält die folgenden Patches:
 1. **ACP2E-4488**: Es wird das Problem behoben, dass das Speichern oder Bearbeiten von Produkten in [!UICONTROL Admin] für Produkte mit großen Attributsätzen langsam ist.
 1. **ACP2E-4493**: Es wurde ein Problem behoben, bei dem das Raster „Kundenauftragsarchiv“ einen falschen Bestellstatus anzeigt, wenn die asynchrone Indizierung aktiviert ist.
 1. **ACP2E-4496**: Behebt das Problem, dass der Analytics-Cron-Auftrag während der Ausführung zu Leistungseinbußen führt, was zu einer verbesserten Gesamtsystemleistung führt.
-1. **ACP2E-4533**: Behebt das Problem, dass Platzhalterbilder nicht in die Storefront geladen werden, wenn ein Store-Code in der URL enthalten ist.
+1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: Es wird das Problem behoben, dass Platzhalterbilder nicht in die Storefront geladen werden, wenn ein Store-Code in der URL enthalten ist.
 1. **ACP2E-4552**: Behebt das Problem, dass der Unternehmensstatus in der GraphQL-Antwort nicht zurückgegeben wird.
 1. **ACP2E-4610**: Behebt das Problem, dass der `sales_clean_quotes` Cron-Auftrag Leistungsprobleme aufweist.
 1. **ACP2E-4615**: Behebt das Problem, dass Online-Bestellrückerstattungen fehlschlagen, indem ein PayPal-Fehler angezeigt wird, *PayPal-Gateway lehnt die Anfrage ab. Interner Fehler.*.
