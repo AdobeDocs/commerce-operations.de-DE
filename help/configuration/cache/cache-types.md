@@ -3,11 +3,19 @@ title: Cache-Frontends konfigurieren
 description: Erfahren Sie, wie Sie Cache-Frontends definieren und sie mit Cache-Typen in Adobe Commerce verknüpfen. Erfahren Sie mehr über die Konfigurationssyntax für env.php und di.xml.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-product_v2: id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: ae31702797c8754a719e5a5eb39a3924e723c87a
 workflow-type: tm+mt
 source-wordcount: 454
@@ -63,7 +71,7 @@ Dabei gilt:
 
 >[!TIP]
 >
->**Moderne Symfony-Cache-Implementierung (2.4.9+):** Ab Commerce 2.4.9 können Sie mit der modernen Symfony-Cache-Implementierung vereinfachte Backend-Typen wie `redis`, `valkey` oder `file` verwenden. Siehe [Verwenden von Redis für ](redis-pg-cache.md)-Cache und [Verwenden von Valkey für ](valkey-pg-cache.md)-Cache) für Details.
+>**Moderne Symfony-Cache-Implementierung (2.4.9+):** Ab Commerce 2.4.9 können Sie mit der modernen Symfony-Cache-Implementierung vereinfachte Backend-Typen wie `redis`, `valkey` oder `file` verwenden. Siehe [Verwenden von Redis für &#x200B;](redis-pg-cache.md)-Cache und [Verwenden von Valkey für &#x200B;](valkey-pg-cache.md)-Cache) für Details.
 
 ### Schritt 2: Konfigurieren der Frontend- und Backend-Optionen
 
