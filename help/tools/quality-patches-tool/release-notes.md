@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
+source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
 workflow-type: tm+mt
-source-wordcount: 30977
+source-wordcount: 31335
 ht-degree: 0%
 
 ---
@@ -30,6 +30,21 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.81 {#v1-1-81}
+
+* **ACP2E-4300** (für Adobe Commerce >=2.4.5 &lt;2.4.9) - Es wird das Problem behoben, dass beim Ändern einer Kundengruppe in der Admin keine Katalogberechtigungen für die Storefront aktualisiert werden, sodass der Katalog und der Warenkorb veraltete Berechtigungen widerspiegeln.
+* **ACP2E-4401** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass die Vorschau des geplanten Updates des Startseiten-Links mit konfigurierbaren Produkten zur Wartungsseite umleitet, anstatt die Produktliste anzuzeigen.
+* **ACP2E-4395** (für Adobe Commerce >=2.4.5 &lt;2.4.9) - Behebt das Problem, dass bei der Erstellung von Gift Card-API-Produkten kein Fehler angezeigt wird, wenn keine Beträge für den globalen Umfang angegeben sind.
+* **ACP2E-4468** (für Adobe Commerce >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass Admin-Benutzer mit Berechtigungen für den Umfang von Websites Bannerinhalte nicht bearbeiten konnten.
+* **ACP2E-4630** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Behebt das Problem, dass lange Produktnamen mit benutzerdefinierten Optionen nach Seitenumbrüchen benachbarte Spalten oder Artikel in mehrseitigen Rechnungs-, Versand-, Gutschriften- und Rückgabe-PDFs überschneiden, sodass Zeileneinträge unlesbar werden.
+* **ACP2E-4680** (für Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Es wird das Problem behoben, dass nicht verkaufbare oder gelöschte Produkte aus abgeschlossenen verhandelbaren Angeboten verschwinden.
+* **ACP2E-4709** (für Adobe Commerce >=2.4.7 &lt;2.4.9) - Behebt das Problem, dass CMS-Seiten bei Verwendung von Page Builder nicht gespeichert werden.
+* **ACP2E-4786** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass beim Exportieren von Produkten Dateien nicht geschrieben werden können, wenn der AWS S3-Remote-Speicher konfiguriert ist, da im Speichertreiber eine falsche Pfadauflösung vorgenommen wurde.
+* **ACP2E-4801** (für Adobe Commerce, B2B >=1.4.2 &lt;1.5.3) - Es wird das Problem behoben, dass die Aktualisierung der Bundle-Produktoptionsmengen über die Schaltfläche Konfigurieren in einem verhandelbaren Angebot vom Administrator nicht angewendet wird und Änderungen verworfen werden.
+* **ACP2E-4815** (für Adobe Commerce und Magento Open Source >=2.4.6-p15 &lt;2.4.7 || >=2.4.7-p1 &lt;2.4.9) - Behebt mehrere GraphQL-Probleme, die zu PHP-Ausnahmefehlern in Protokollen, korrekter Zuordnung von Bestellungen mit Kundenkonten, die nach der Bestellung über GraphQL erstellt wurden, und Ausrichtung von Antworten mit GraphQL über HTTP-Spezifikationen führten.
+* Aktualisierte Versionen: **ACSD-64212**, **ACSD-64523**, **ACSD-67347**
+* Ersetzte Patches: **ACSD-67941**, **ACSD-64212**, **ACSD-68925**
 
 ## v1.1.80 {#v1-1-80}
 
