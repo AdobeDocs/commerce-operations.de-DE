@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 7e0a7479cd988b678c95b0ee9ec4c5371d0a62d9
+source-git-commit: bcdc7ec2789358b58f137d622ddbf250acf28c2c
 workflow-type: tm+mt
-source-wordcount: '10150'
+source-wordcount: '10160'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion als Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [Die Validierung der ACP2E-4156: [!DNL REST] API-Versandadresse ignoriert die Konfiguration des Admin-Attributs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
    - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
    - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
