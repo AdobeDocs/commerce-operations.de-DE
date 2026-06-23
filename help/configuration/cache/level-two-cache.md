@@ -3,9 +3,16 @@ title: L2-Cache-Konfiguration zur Leistungsoptimierung
 description: Erfahren Sie, wie Sie den L2-Cache in Adobe Commerce konfigurieren, um den Netzwerk-Traffic zu reduzieren und die Leistung zu verbessern. Entdecken Sie die Implementierungsoptionen von Legacy und Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: 738
 ht-degree: 0%
 
 ---
@@ -28,9 +35,9 @@ Es stehen zwei L2-Cache-Implementierungen zur Verfügung:
 | [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend-basierter Zwei-Ebenen-Cache mit `Cm_Cache_Backend_File` für lokalen Speicher |
 | [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-basiertes L2 mit PSR-6-Konformität und verbesserter Leistung |
 
->[!INFO]
+>[!NOTE]
 >
->Für Adobe Commerce in Cloud-Infrastrukturen können Sie [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) für die L2-Cache-Konfiguration verwenden.
+>Konfigurieren Sie für Adobe Commerce in der Cloud den L2-Cache, indem Sie die Variable [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) oder [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in `.magento.env.yaml` festlegen. Konfigurationsbeispiele finden Sie [Konfigurieren des L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)Cache).
 
 ## Konfiguration des alten L2-Cache (RemoteSynchronizedCache)
 
@@ -166,8 +173,6 @@ Der folgende Code zeigt eine Beispielkonfiguration:
 ```
 
 ## Moderne Symfony L2-Cache-Implementierung
-
-[!BADGE 2.4.9-beta]{type=Negative tooltip="Nur in 2.4.9-Beta verfügbar."}
 
 Ab Commerce 2.4.9 können Sie die L2-Cache-basierte Implementierung von Symfony (`symfony_l2`-Backend) verwenden, die eine moderne, PSR-6-konforme Caching-Implementierung mit erheblichen Leistungsverbesserungen gegenüber herkömmlichen `RemoteSynchronizedCache` bietet.
 

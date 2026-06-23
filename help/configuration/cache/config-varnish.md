@@ -3,16 +3,23 @@ title: Konfigurieren und Verwenden von Lack
 description: Erfahren Sie, wie Sie das Zwischenspeichern von Lacken für Adobe Commerce konfigurieren und verwenden. Entdecken Sie Techniken zur HTTP-Beschleunigung, Dateispeicherung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:50:49.341Z'
+TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: 1077
 ht-degree: 0%
 
 ---
 
 # Konfigurieren und Verwenden von Lack
 
-[Varnish Cache](https://www.varnish.org/) ist ein Open-Source-Webanwendungsbeschleuniger (auch als _HTTP-Beschleuniger“_ „Caching _HTTP Reverse Proxy_ bezeichnet). Varnish speichert (oder speichert) Dateien oder Fragmente von Dateien im Speicher, was Varnish in die Lage versetzt, die Antwortzeit und den Bandbreitenverbrauch bei zukünftigen, äquivalenten Anfragen zu reduzieren. Im Gegensatz zu Webservern wie Apache und Nginx wurde Varnish ausschließlich für die Verwendung mit dem HTTP-Protokoll entwickelt.
+[Varnish Cache](https://www.varnish.org/) ist ein Open-Source-Webanwendungsbeschleuniger (auch als _HTTP-Beschleuniger“_ „Caching _HTTP Reverse Proxy_ bezeichnet). Varnish speichert (oder speichert) Dateien oder Fragmente von Dateien im Speicher, was Varnish in die Lage versetzt, die Antwortzeit und den Bandbreitenverbrauch bei zukünftigen, äquivalenten Anfragen zu reduzieren. Im Gegensatz zu Webservern wie nginx wurde Varnish ausschließlich für die Verwendung mit dem HTTP-Protokoll entwickelt.
 
 [Systemanforderungen](../../installation/system-requirements.md) listet die unterstützten Versionen von Varnish auf.
 
@@ -53,9 +60,7 @@ Der Prozess lässt sich wie folgt zusammenfassen:
 
 >[!NOTE]
 >
->- Sofern nicht anders angegeben, müssen Sie alle in diesem Thema besprochenen Befehle als Benutzer mit `root` eingeben.
->
->- Dieses Thema wurde für Varnish unter CentOS und Apache 2.4 geschrieben. Wenn Sie Varnish in einer anderen Umgebung einrichten, können einige Befehle unterschiedlich sein. Weitere Informationen finden Sie in der Lackdokumentation .
+>Sofern nicht anders angegeben, müssen Sie alle in diesem Thema besprochenen Befehle als Benutzer mit `root` eingeben.
 
 ## Bekannte Probleme
 
@@ -88,11 +93,10 @@ Wir kennen die folgenden Probleme mit Lack:
 
 ## Übersicht über das Zwischenspeichern von Lacken
 
-Das Zwischenspeichern von Lacken funktioniert mit Commerce mit:
+In einer typischen nginx-basierten Bereitstellung akzeptiert Varnish eingehenden HTTP-Traffic an Port 80 und leitet Anfragen an nginx an einen Backend-Port wie 8080 weiter. Adobe Commerce stellt `nginx.conf.sample` für den Ursprungs-Webserver bereit und generiert die Varnish-`default.vcl` vom Administrator.
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) aus dem Magento 2 GitHub-Repository
-- `.htaccess` verteilte Konfigurationsdatei für Apache in Commerce
-- `default.vcl` Konfiguration für mit dem [Admin](../cache/configure-varnish-commerce.md) generierten Lack
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) mit Adobe Commerce bereitgestellt
+- `default.vcl` generiert aus dem [Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
@@ -114,7 +118,7 @@ In diesem Abschnitt wird ein Browser-Inspektor verwendet, um zu zeigen, wie Asse
 
 Die folgende Abbildung zeigt ein Beispiel mit einem Browser-Inspektor:
 
-![Wenn zum ersten Mal eine Anfrage für ein zwischenspeicherbares Objekt gestellt wird, stellt Varnish es dem Browser bereit](../../assets/configuration/varnish-apache-first-visit.png)
+![Wenn zum ersten Mal eine Anfrage für ein zwischenspeicherbares Objekt gestellt wird, stellt Varnish es dem Browser bereit](../../assets/configuration/varnish-webserver-first-visit.png)
 
 Das vorherige Beispiel zeigt eine Anfrage für die Storefront-Hauptseite (`m2_ce_my`). CSS- und JavaScript-Assets werden im Client-Browser zwischengespeichert.
 
@@ -126,7 +130,7 @@ Das vorherige Beispiel zeigt eine Anfrage für die Storefront-Hauptseite (`m2_ce
 
 Wenn derselbe Browser dieselbe Seite erneut anfordert, werden diese Assets aus dem lokalen Browser-Cache bereitgestellt, wie in der folgenden Abbildung dargestellt.
 
-![Wenn dasselbe Objekt das nächste Mal angefordert wird, werden Assets aus dem lokalen Browsercache geladen](../../assets/configuration/varnish-apache-second-visit.png)
+![Wenn dasselbe Objekt das nächste Mal angefordert wird, werden Assets aus dem lokalen Browsercache geladen](../../assets/configuration/varnish-webserver-second-visit.png)
 
 Beachten Sie den Unterschied in der Antwortzeit zwischen der ersten und der zweiten Anfrage. Auch hier weisen statische Assets einen Antwort-Code von 200 (OK) auf, da sie zum ersten Mal aus dem lokalen Cache bereitgestellt werden.
 

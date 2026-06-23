@@ -1,56 +1,85 @@
 ---
-title: Konfigurieren des Webservers für das Zwischenspeichern von Lacken
+title: Konfigurieren von nginx für das Zwischenspeichern von Lacken
 description: Erfahren Sie, wie Sie Ihren Webserver für die Verwendung des Lackzwischenspeichers für Adobe Commerce konfigurieren. Erfahren Sie mehr über die Konfiguration und Einrichtung von Ports.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+autotag-review: '2026-06-22T21:49:41.837Z'
+TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: c8faa589c9e9d1dbc01863d90aad5f91b11c0140
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 806
 ht-degree: 0%
 
 ---
 
-# Konfigurieren des Webservers für das Zwischenspeichern von Lacken
+# Konfigurieren von nginx für das Zwischenspeichern von Lacken {#configure-web-server-for-varnish-caching}
 
-Konfigurieren Sie Ihren Webserver so, dass er an einem anderen Port als dem Standard-Port 80 lauscht, da Varnish direkt auf eingehende HTTP-Anfragen reagiert, nicht auf den Webserver.
+Wenn Varnish als Vollseiten-Cache vor Adobe Commerce verwendet wird, überwacht Varnish normalerweise den öffentlichen HTTP-Port und leitet Anfragen an nginx an einen nicht standardmäßigen Backend-Port wie 8080 weiter. Aktualisieren Sie die Nginx-Site-Konfiguration für Ihren Commerce-Ursprungs-Server, um den Backend-Port zu überwachen, den Varnish verwenden wird.
+
+{{varnish-config-cloud}}
 
 In den folgenden Abschnitten wird Port 8080 als Beispiel verwendet.
 
-**So ändern Sie den Apache 2.4-Lauschanschluss**:
+**Ändern Sie den Nginx-Lauschanschluss für den Commerce-Ursprungsserver**:
 
-1. Öffnen Sie `/etc/httpd/conf/httpd.conf` in einem Texteditor.
-1. Suchen Sie die `Listen`.
-1. Ändern Sie den Wert des Listen-Ports in `8080`. (Sie können einen beliebigen verfügbaren Listen-Port verwenden.)
-1. Speichern Sie Ihre Änderungen in `httpd.conf` und beenden Sie den Texteditor.
+1. Öffnen Sie die Nginx-Site-Konfiguration für Ihren Adobe Commerce-Ursprungsserver in einem Texteditor.
+
+Der Speicherort hängt von Ihrem Betriebssystem und dem nginx-Layout ab. Zum Beispiel verwendet Ubuntu oft eine Datei unter `/etc/nginx/sites-available/`.
+
+1. Ändern Sie im `server` für die Commerce-Site die `listen`-Direktive vom öffentlichen HTTP-Port auf den Backend-Port, den Varnish verwendet, um nginx zu erreichen.
+
+   Ändern Sie beispielsweise
+
+   ```conf
+   server {
+       listen 80;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+   in:
+
+   ```conf
+   server {
+       listen 8080;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+1. Speichern Sie die Datei.
+
+1. Überprüfen Sie die nginx-Konfiguration:
+
+   ```shell
+   nginx -t
+   ```
+
+1. Nginx neu starten:
+
+   ```shell
+   systemctl restart nginx
+   ```
 
 ## Ändern der Konfiguration des Lacksystems
 
-So ändern Sie die Konfiguration des Lacksystems:
+Nachdem Sie nginx so aktualisiert haben, dass es auf dem Backend-Port lauscht, konfigurieren Sie Varnish so, dass Anfragen an diesen Host und Port weitergeleitet werden. Beispiel:
 
-1. Wenn Sie ein Benutzer mit `root` Berechtigungen sind, öffnen Sie Ihre Vanish-Konfigurationsdatei in einem Texteditor:
-
-   - CentOS 6: `/etc/sysconfig/varnish`
-   - CentOS 7: `/etc/varnish/varnish.params`
-   - Debian: `/etc/default/varnish`
-   - Ubuntu: `/etc/default/varnish`
-
-1. Stellen Sie den Lacklauschanschluss auf 80:
-
-   ```conf
-   VARNISH_LISTEN_PORT=80
-   ```
-
-   Stellen Sie bei Varnish 4.x sicher, dass DAEMON_OPTS den richtigen Listening-Port für den `-a`-Parameter enthält (auch wenn VARNISH_LISTEN_PORT auf den richtigen Wert gesetzt ist):
-
-   ```conf
-   DAEMON_OPTS="-a :80 \
-      -T localhost:6082 \
-      -f /etc/varnish/default.vcl \
-      -S /etc/varnish/secret \
-      -s malloc,256m"
-   ```
-
-1. Speichern Sie Ihre Änderungen in der Varnish-Konfigurationsdatei und beenden Sie den Texteditor.
+```conf
+backend default {
+    .host = "192.0.2.55";
+    .port = "8080";
+}
+```
 
 ### Standard-VCL ändern
 
@@ -80,7 +109,7 @@ So konfigurieren Sie Lack minimal:
 
 1. Ersetzen Sie den Wert von `.port` durch den Überwachungs-Port des Webservers (in diesem Beispiel 8080).
 
-   Beispiel: Apache wird auf Host 192.0.2.55 installiert und Apache überwacht Port 8080:
+   Beispiel: nginx ist auf Host 192.0.2.55 installiert und lauscht auf Port 8080:
 
    ```conf
    backend default {
@@ -91,7 +120,7 @@ So konfigurieren Sie Lack minimal:
 
    >[!INFO]
    >
-   >Wenn Varnish und Apache auf demselben Host ausgeführt werden, empfiehlt Adobe, eine IP-Adresse oder einen Hostnamen und nicht `localhost` zu verwenden.
+   >Wenn Varnish und nginx auf demselben Host ausgeführt werden, empfiehlt Adobe, eine IP-Adresse oder einen Hostnamen und nicht `localhost` zu verwenden.
 
 1. Speichern Sie Ihre Änderungen in `default.vcl` und beenden Sie den Texteditor.
 
@@ -162,11 +191,11 @@ Achten Sie insbesondere auf die folgende Ausgabe:
 ```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
-tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
+tcp        0      0 :::8080                     :::*                        LISTEN      26822/nginx
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-Oben sehen Sie Varnish, das auf Port 80 und Apache, das auf Port 8080 läuft.
+Oben sehen Sie Lack mit Port 80 und nginx mit Port 8080.
 
 Wenn die Ausgabe für `varnishd` nicht angezeigt wird, stellen Sie sicher, dass „Varnish“ ausgeführt wird.
 

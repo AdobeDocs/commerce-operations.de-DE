@@ -2,9 +2,16 @@
 title: Konfigurieren von Redis mit AWS ElastiCache
 description: Erfahren Sie, wie Sie AWS ElastiCache als Redis-Backend für Adobe Commerce auf EC2 verwenden. Hier finden Sie Informationen zu Einrichtung, Konfiguration und Validierung über die Befehlszeile.
 feature: Configuration, Cache
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:54:39.355Z'
+TQID: 'https://experienceleague.adobe.com/p4-Pyc3yWwokyFOAyAjN3r1Ic26brx83bPf-GZQNSN8'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: fbb1d92d5f8537e6f1436cd985af120114883df6
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: 289
 ht-degree: 0%
 
 ---
@@ -16,7 +23,7 @@ Ab Commerce 2.4.3 können auf Amazon EC2 gehostete Instanzen einen AWS ElastiCac
 
 >[!WARNING]
 >
->Dieser Abschnitt gilt nur für Commerce-Instanzen, die auf Amazon EC2-VPCs ausgeführt werden. Dies funktioniert nicht für lokale Installationen.
+>Dieser Abschnitt gilt nur für Commerce-Instanzen, die auf Amazon EC2-VPCs ausgeführt werden.
 
 ## Voraussetzungen
 
