@@ -58,7 +58,7 @@ Die nachstehende Tabelle enthält Versionshinweise und wichtige Informationen f�
       <td><strong>Services für Adobe Commerce</strong>
         <p>Erfahren Sie mehr über die neuesten Verbesserungen der innovativen Commerce-Merchandising-Services.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=de">Audience Activation</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=de">Katalog-Service</a></li>
             <li><a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Experience Platform-Connector</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=de">Live Search</a></li>
@@ -84,7 +84,7 @@ Die nachstehende Tabelle enthält Versionshinweise und wichtige Informationen f�
         <p>Erfahren Sie mehr über die neuesten Verbesserungen der Storefront-Technologie, mit der Sie einzigartige Erlebnisse für Ihre Kunden erstellen können.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=de">Adobe Commerce-Storefront</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=de">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>
