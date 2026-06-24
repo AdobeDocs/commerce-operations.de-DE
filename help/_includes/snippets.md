@@ -115,7 +115,7 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 >[!IMPORTANT]
 >
->Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+>Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
 
 ## Sicherheits-Patch-Backports Oktober 2025 {#oct-2025-backports}
 
