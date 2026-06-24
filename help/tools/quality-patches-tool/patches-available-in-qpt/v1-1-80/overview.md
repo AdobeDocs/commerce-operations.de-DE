@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
+source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 465
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ QPT v1.1.80 enthält die folgenden Patches:
 1. **ACP2E-4615**: Behebt das Problem, dass Online-Bestellrückerstattungen fehlschlagen, indem ein PayPal-Fehler angezeigt wird, *PayPal-Gateway lehnt die Anfrage ab. Interner Fehler.*.
 1. **ACP2E-4626**: Es wird das Problem behoben, dass einige Storefront-JavaScript-Dateien zweimal angefordert und ausgeführt wurden, was zu zeitweiligen doppelten Ladevorgängen und instabilem Verhalten führt.
 1. **ACP2E-4653**: Es wird das Problem behoben, dass der **[!UICONTROL Cart Price Rule]** Bedingungsattributbereich für **[!UICONTROL Category (Parent Only)]** und **[!UICONTROL Category (Children Only)]** beim Abrufen oder Aktualisieren von Regeln über die REST-API nicht offen gelegt wird.
+1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: Es wird das Problem behoben, dass das Attribut „Gewichtung“ auf der Produktseite der Storefront nur einen unformatierten numerischen Wert im Abschnitt &quot;**[!UICONTROL Additional Information]**&quot; oder &quot;**[!UICONTROL More Information]**&quot; ohne die konfigurierte Maßeinheit (lbs oder kgs) anzeigt.
+1. **ACP2E-4156**: Es wird das Problem behoben, dass die Validierung von Versandadressen in der REST-API nicht der in der [!UICONTROL Admin] definierten Attributkonfiguration entspricht.
 1. **ACP2E-4808**: Es wird das Problem behoben, dass das Attribut „Gewichtung“ auf der Produktseite der Storefront nur einen unformatierten numerischen Wert im Abschnitt &quot;**[!UICONTROL Additional Information]**&quot; oder &quot;**[!UICONTROL More Information]**&quot; ohne die konfigurierte Maßeinheit (lbs oder kgs) anzeigt.
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**: Es wird das Problem behoben, dass die Validierung von Versandadressen in der [!DNL REST]-API nicht der in Admin definierten Attributkonfiguration entspricht.
 1. **ACP2E-4813**: Behebt das Problem, dass USPS Versandmethoden an der Kasse nicht verfügbar sind und Versandschätzungen für bestimmte Produkte falsch sind, einschließlich Bestellungen, die in mehrere Pakete aufgeteilt sind.
