@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
+source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
 workflow-type: tm+mt
-source-wordcount: '10185'
+source-wordcount: '10200'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: Produkte mit Beschreibungen, die länger als 65.536 Zeichen sind, können nicht importiert werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: Der Wert „updated_at“ in der Antwort der GET /carts/Search REST-API stimmt nicht mit dem Wert in [!UICONTROL Admin Panel] für [!UICONTROL Negotiable Quotes] überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: Der Wert updated_at in der Antwort der GET /carts/Search REST-API stimmt nicht mit dem Wert in [!UICONTROL Admin Panel] für [!UICONTROL Negotiable Quotes] überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383: Fehler bei der Anmeldung als Kunde mit zwei Unternehmensadministratorkonten in derselben Sitzung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064: Doppelte Einträge, die bei geplanten Aktualisierungen in Umgebungen mit tief verschachtelten Kategorien erstellt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946: Warenkorbaktualisierung zeigt doppelte Fehlerbanner an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion als Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4472: Null-Zitat, das mit der Anmeldung als Kundenfluss erstellt wurde](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808: Produktgewichtsanzeigen ohne Maßeinheit auf Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: Platzhalterbilder werden nicht in die Storefront geladen, wenn die URL Store-Code enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [Die Validierung der ACP2E-4156: [!DNL REST] API-Versandadresse ignoriert die Konfiguration des Admin-Attributs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
