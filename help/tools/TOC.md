@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 9a970dd17c8ce444df4af965b0e3340dde05450f
+source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
 workflow-type: tm+mt
-source-wordcount: '10226'
+source-wordcount: '10235'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion als Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4552: GraphQL-Antwort gibt den Unternehmensstatus nicht zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496: Analytics-Cron-Auftrag verschlechtert Leistung während der Ausführung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
          - [ACP2E-4488: Langsames Speichern/Bearbeiten von Admin-Produkten für große Attributsätze](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
          - [ACP2E-4653: Bedingungen für den Kategoriebereich der Warenkorbpreise fehlen in  [!DNL REST] API](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
