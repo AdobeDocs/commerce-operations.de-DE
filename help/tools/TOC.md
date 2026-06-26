@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: efdf109d1637bf48f32b7730b4f54c6f060b6e54
+source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
 workflow-type: tm+mt
-source-wordcount: '10270'
+source-wordcount: '10293'
 ht-degree: 0%
 
 ---
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: Produkte mit Beschreibungen, die länger als 65.536 Zeichen sind, können nicht importiert werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: Der Wert „updated_at“ in der Antwort der GET /carts/Search REST-API stimmt nicht mit dem Wert in [!UICONTROL Admin Panel] für [!UICONTROL Negotiable Quotes] überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: Der Wert updated_at in der Antwort der GET /carts/Search REST-API stimmt nicht mit dem Wert in [!UICONTROL Admin Panel] für [!UICONTROL Negotiable Quotes] überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383: Fehler bei der Anmeldung als Kunde mit zwei Unternehmensadministratorkonten in derselben Sitzung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064: Doppelte Einträge, die bei geplanten Aktualisierungen in Umgebungen mit tief verschachtelten Kategorien erstellt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946: Warenkorbaktualisierung zeigt doppelte Fehlerbanner an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -1009,6 +1009,8 @@ ht-degree: 0%
          - [ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion als Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACSD-53502: **[!UICONTROL Add to Cart]** schlägt gelegentlich auf iOS  [!DNL Safari]  aufgrund einer New Relic-Skriptrekursion fehl](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
+         - [ACP2E-4813: USPS Versandmethoden nicht verfügbar oder falsch für Mehrpaketbestellungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
          - [ACP2E-4615: Rückerstattung von Online-Bestellungen bei PayPal schlägt mit einem Fehler fehl *PayPal-Gateway lehnt die Anfrage ab. Interner Fehler.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
          - [ACP2E-4610: Langsame Ausführung von `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md2` Cron](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
          - [ACP2E-4626: Laden von Storefront-JavaScript-Dateien zweimal, was doppeltes Laden verursacht und instabiles Verhalten verursacht](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
