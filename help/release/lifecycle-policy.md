@@ -3,9 +3,9 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
+source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -170,6 +170,10 @@ Die Support-Zeitleiste ordnet für jede Adobe Commerce-Release-Reihe die Support
 Um auf einer unterstützten Commerce-Version zu bleiben, sind auch unterstützte Plattformabhängigkeiten erforderlich. Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern - wie MariaDB, OpenSearch, Redis, Valkey, RabbitMQ und andere -, die möglicherweise das Ende des Lebenszyklus erreichen, während Sie die dreijährige oder verlängerte Support-Periode für Adobe Commerce durchlaufen. Siehe [Sicherheitsmodell und Betriebsmodell mit geteilter Verantwortung](../security-and-compliance/shared-responsibility.md) für Details.
 
 Sie sind für die Pflege aller Drittanbieterabhängigkeiten und Plattformdienste für Versionen verantwortlich, die aktiv unterstützt werden. Unter [Systemanforderungen](../installation/system-requirements.md) finden Sie eine vollständige Liste der getesteten und unterstützten Technologien von Drittanbietern.
+
+>[!IMPORTANT]
+>
+>Das Ausführen nicht unterstützter Abhängigkeitsversionen kann zu einer Sicherheitslücke in Ihrer Cloud-Instanz führen, die Adobe nicht beheben kann. In solchen Fällen behält sich Adobe das Recht vor, ein Upgrade der betroffenen Software-Abhängigkeiten zu erzwingen oder die Instanz zu beenden, wenn ein Upgrade nicht möglich ist - unabhängig von Ihrem Adobe Commerce-Versionssupportstatus.
 
 ## PHP End of Life und PCI-Compliance
 
