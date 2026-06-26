@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: efdf109d1637bf48f32b7730b4f54c6f060b6e54
 workflow-type: tm+mt
-source-wordcount: '10248'
+source-wordcount: '10270'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: Fehler beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 3 GTM-Tags werden nicht ausgelöst, wenn Google Analytics 4 GTM nicht konfiguriert ist](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: Admin-Benutzer kann geplante Aktualisierungen für gebündeltes Produkt nicht speichern](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: Der Cache für GraphQL GET-Anfragen wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL-GET-Anfragen: Der Cache wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: Fehler beim Wechseln der Store-Ansichten auf der herunterladbaren Produktbearbeitungsseite](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: Der Bestellartikelstatus wurde fälschlicherweise auf [!UICONTROL Ordered] gesetzt, wenn der Produktbestand 0 beträgt](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: Katalogseite kann nicht nach benutzerdefiniertem Attribut des Typs Dropdown sortiert werden](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -1009,6 +1009,8 @@ ht-degree: 0%
          - [ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion als Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4615: Rückerstattung von Online-Bestellungen bei PayPal schlägt mit einem Fehler fehl *PayPal-Gateway lehnt die Anfrage ab. Interner Fehler.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
+         - [ACP2E-4610: Langsame Ausführung von `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md2` Cron](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
          - [ACP2E-4626: Laden von Storefront-JavaScript-Dateien zweimal, was doppeltes Laden verursacht und instabiles Verhalten verursacht](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
          - [ACP2E-4552: GraphQL-Antwort gibt den Unternehmensstatus nicht zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496: Analytics-Cron-Auftrag verschlechtert Leistung während der Ausführung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)

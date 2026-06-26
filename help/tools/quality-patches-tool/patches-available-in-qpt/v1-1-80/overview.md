@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: efdf109d1637bf48f32b7730b4f54c6f060b6e54
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 568
 ht-degree: 0%
 
 ---
@@ -34,11 +34,13 @@ QPT v1.1.80 enthält die folgenden Patches:
 1. **ACP2E-4493**: Es wurde ein Problem behoben, bei dem das Raster „Kundenauftragsarchiv“ einen falschen Bestellstatus anzeigt, wenn die asynchrone Indizierung aktiviert ist.
 1. **ACP2E-4496**: Behebt das Problem, dass der Analytics-Cron-Auftrag während der Ausführung zu Leistungseinbußen führt, was zu einer verbesserten Gesamtsystemleistung führt.
 1. **ACP2E-4533**: Behebt das Problem, dass Platzhalterbilder nicht in die Storefront geladen werden, wenn ein Store-Code in der URL enthalten ist.
+1. **ACP2E-4552**: Behebt das Problem, dass der Unternehmensstatus in der GraphQL-Antwort nicht zurückgegeben wird.
+1. **[ACP2E-4610](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)**: Behebt das Problem, dass der `sales_clean_quotes` Cron-Auftrag Leistungsprobleme aufweist.
 1. **[ACP2E-4552](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)**: Behebt das Problem, dass der Unternehmensstatus in der GraphQL-Antwort nicht zurückgegeben wird.
 1. **[ACP2E-4496](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)**: Behebt das Problem, dass der Analytics-Cron-Auftrag während der Ausführung zu Leistungseinbußen führt, was zu einer verbesserten Gesamtsystemleistung führt.
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: Es wird das Problem behoben, dass Platzhalterbilder nicht in die Storefront geladen werden, wenn ein Store-Code in der URL enthalten ist.
 1. **ACP2E-4610**: Behebt das Problem, dass der `sales_clean_quotes` Cron-Auftrag Leistungsprobleme aufweist.
-1. **ACP2E-4615**: Behebt das Problem, dass Online-Bestellrückerstattungen fehlschlagen, indem ein PayPal-Fehler angezeigt wird, *PayPal-Gateway lehnt die Anfrage ab. Interner Fehler.*.
+1. **[ACP2E-4615](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)**: Behebt das Problem, dass die Rückerstattung von Online-Bestellungen mit einem PayPal-Fehler fehlschlägt, der besagt, dass *PayPal-Gateway die Anfrage ablehnt. Interner Fehler.*.
 1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: Es wird das Problem behoben, dass einige Storefront-JavaScript-Dateien zweimal angefordert und ausgeführt wurden, was zu zeitweiligen doppelten Ladevorgängen und instabilem Verhalten führt.
 1. **ACP2E-4653**: Es wird das Problem behoben, dass der **[!UICONTROL Cart Price Rule]** Bedingungsattributbereich für **[!UICONTROL Category (Parent Only)]** und **[!UICONTROL Category (Children Only)]** beim Abrufen oder Aktualisieren von Regeln über die REST-API nicht offen gelegt wird.
 1. **ACP2E-4808**: Es wird das Problem behoben, dass das Attribut „Gewichtung“ auf der Produktseite der Storefront nur einen unformatierten numerischen Wert im Abschnitt &quot;**[!UICONTROL Additional Information]**&quot; oder &quot;**[!UICONTROL More Information]**&quot; ohne die konfigurierte Maßeinheit (lbs oder kgs) anzeigt.
