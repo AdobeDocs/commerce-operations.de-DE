@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b59c6bdce39314fd188c8c811c4d9e3f46d6067
+source-git-commit: d0924a41a4ea7813699eaefadb024881862ff7b4
 workflow-type: tm+mt
-source-wordcount: '3538'
+source-wordcount: '4004'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,174 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;26. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.80-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: Online-Bestellrückerstattungen bei PayPal schlagen mit dem Fehler fehl „PayPal-Gateway lehnt die Anfrage ab. Interner Fehler.“</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/056f30558d8d9f3e218f589e2819ec5d8d6274e3">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502">ACSD-53502: „Zum Warenkorb hinzufügen schlägt in iOS Safari aufgrund einer New Relic-Skriptrekursion zeitweise fehl</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/95cfe4554c4501fa9526e0c8b0c039cf99228207">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626">ACP2E-4626: Laden von Storefront-JavaScript-Dateien zweimal, was zu doppeltem Laden und instabilem Verhalten führt</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.80-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813: USPS Versandmethoden nicht verfügbar oder falsch für Mehrpaketbestellungen</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: Langsame Ausführung von sales_clean_quotes cron</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a7e34f7858dd74cf1c4702dfc877a793094ad042">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;25. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.80-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488">ACP2E-4488: Langsames Speichern/Bearbeiten von Admin-Produkten für große Attributsätze</a> wurde hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac57acc5c527f1c7cc7dbd3198f23e75f08fe207">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496">ACP2E-4496: Analytics Cron-Auftrag verschlechtert die Leistung während der Ausführung</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0b7826459c116ef03a34f0a01e5db235294c3cb1">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552">ACP2E-4552: GraphQL-Antwort gibt nicht den Unternehmensstatus zurück</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6988b8b17bd1f2161e8fd8c7dd128a75c0023de8">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;24. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung des QPT 1.1.80 Fix für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808">ACP2E-4808: Produktgewichtsanzeigen ohne Maßeinheit auf Storefront</a> wurde hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/538221930434b21b92d587fd889e556564a0a45c">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472">ACP2E-4472: Null-Zitat, das mit dem Fluss „Als Kunde anmelden“ erstellt wurde</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49b49560901525aa9e635eb0ea6542339270cabf">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.80-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653">ACP2E-4653: Warenkorb-Preis-Regel-Kategoriebereichsbedingungen hinzugefügt, die in der REST-API fehlen</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f6f4ed205def1cc5f9932857d75222015683fd08">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;23. Juni 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Klarstellung des Umfangs von Cloud- und On-Premise-Services zu Cache-Konfigurationsthemen im <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/caching-overview">Konfigurationshandbuch</a> und aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Best Practices für die Konfiguration von Redis- und Valkey-Services</a> für Commerce in Cloud-Bereitstellungen.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5d8876789a01e0e27cedfb67e0dd8b3dbc4543f7">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156">ACP2E-4156: Die Validierung der REST-API-Versandadresse ignoriert die Admin-Attributkonfiguration</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/897bbc5b6624dfe17deac6ca878669a5245c34ea">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.80 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533">ACP2E-4533: Platzhalterbilder werden nicht in die Storefront geladen, wenn die URL Store-Code enthält</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;18. Juni 2026
 
@@ -735,74 +903,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Neues Thema, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bfab19dc07ecc1c314c530d053b82e3408478c41">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;27. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.78 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522">ACP2E-4522 hinzugefügt: Zeitweise auftretende Fehler mit doppelten Schlüsseln treten in der Tabelle quote_coupons auf, wenn mehrere Anfragen zum Zusammenführen des Warenkorbs oder zum Speichern von Angeboten gleichzeitig ausgeführt werden</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/13abccbeb79cdb3377dcea9528ffcb13b491a8d8">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.78 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565">ACP2E-4565 wurde hinzugefügt: Die Abfrage von Company GraphQL gibt „Der aktuelle Kunde ist nicht autorisiert“ zurück, wenn der Header X-Adobe-Company verwendet wird</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0ee08b94a3b56febff5d2126af71d2b964846f7a">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.78 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419">ACP2E-4419: Geschenkkarten werden nach erfolgreicher reCAPTCHA v2-Validierung in der Storefront beim Checkout nicht korrekt </a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7c7052efdd8b10be705959c854064eaed484d796">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.78-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555">ACP2E-4555: Telefonnummern, die Punkte oder Schrägstriche enthalten, werden nicht ordnungsgemäß validiert</a> hinzugefügt.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee63f4566c476877588dde5ff002ac105f2e4764">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;23. April 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview">Übersicht: Quality Patches Tool (QPT) v1.1.78</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f14416d89140ee75ec437a42fbebae804282b72">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
