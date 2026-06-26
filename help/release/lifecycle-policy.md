@@ -3,9 +3,9 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 5846c83cd31e3d253a5ae0b0064b860e5c7af286
+source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1376'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 Um die Adobe Commerce-Lebenszyklusrichtlinie zu optimieren und die geschäftskritischen Anforderungen von Kunden zu unterstützen, bietet Adobe für jede Version ein dreijähriges Standard-Support-Fenster ab dem Datum der allgemeinen Verfügbarkeit und veröffentlicht in diesem Zeitraum Qualitätskorrekturen. Daten und Einzelheiten zum Ende des Software-Supports für jede Version finden Sie in der Tabelle [Ende des Software-Supports](#end-of-software-support).
 
-Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [&#x200B; getesteten und unterstützten Technologien &#x200B;](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
+Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [ getesteten und unterstützten Technologien ](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
 
 ## Standard-Support
 
 Der standardmäßige dreijährige Support-Zeitraum ab dem Datum der allgemeinen Verfügbarkeit. Der Standard-Support umfasst Qualitätskorrekturen, Sicherheits-Patches und vollständigen Adobe Commerce-Support auf Abruf.
 
-- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) wenden.
+- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenden.
 
 - **Sicherheitskorrekturen** - Adobe bietet Sicherheitskorrekturen durch kumulative Sicherheits-Patches und nicht kumulative [isolierte Sicherheits-Patch-Dateien](versioning-policy.md#isolated-security-patch-file) für den dreijährigen Support-Zeitraum.
 
@@ -171,6 +171,10 @@ Um auf einer unterstützten Commerce-Version zu bleiben, sind auch unterstützte
 
 Sie sind für die Pflege aller Drittanbieterabhängigkeiten und Plattformdienste für Versionen verantwortlich, die aktiv unterstützt werden. Unter [Systemanforderungen](../installation/system-requirements.md) finden Sie eine vollständige Liste der getesteten und unterstützten Technologien von Drittanbietern.
 
+>[!IMPORTANT]
+>
+>Das Ausführen nicht unterstützter Abhängigkeitsversionen kann zu einer Sicherheitslücke in Ihrer Cloud-Instanz führen, die Adobe nicht beheben kann. In solchen Fällen behält sich Adobe das Recht vor, ein Upgrade der betroffenen Software-Abhängigkeiten zu erzwingen oder die Instanz zu beenden, wenn ein Upgrade nicht möglich ist - unabhängig von Ihrem Adobe Commerce-Versionssupportstatus.
+
 ## PHP End of Life und PCI-Compliance
 
 Sie sind dafür verantwortlich, den Support-Status der in Ihren Umgebungen verwendeten PHP-Versionen zu überwachen.
@@ -186,7 +190,7 @@ Die folgenden PHP-Versionen, die von älteren Commerce-Versionen verwendet werde
 
 >[!IMPORTANT]
 >
->**PCI-Compliance-Hinweis** Die Bewertung der PCI-Compliance liegt in der Verantwortung des Händlers. Adobe empfiehlt den Händlern dringend, sich mit ihrem qualifizierten Sicherheitsexperten in Verbindung zu setzen und so bald wie möglich den Umstieg auf eine unterstützte Commerce-Version und eine unterstützte PHP-Version zu priorisieren. Informationen zu den Zeitplänen für die PHP-Unterstützung [&#x200B; Sie unter &#x200B;](https://www.php.net/supported-versions.php)PHP-unterstützte Versionen[&#x200B; und „PHP End of Life](https://www.php.net/eol.php).
+>**PCI-Compliance-Hinweis** Die Bewertung der PCI-Compliance liegt in der Verantwortung des Händlers. Adobe empfiehlt den Händlern dringend, sich mit ihrem qualifizierten Sicherheitsexperten in Verbindung zu setzen und so bald wie möglich den Umstieg auf eine unterstützte Commerce-Version und eine unterstützte PHP-Version zu priorisieren. Informationen zu den Zeitplänen für die PHP-Unterstützung [ Sie unter ](https://www.php.net/supported-versions.php)PHP-unterstützte Versionen[ und „PHP End of Life](https://www.php.net/eol.php).
 
 ## Upgrade- und Migrationsoptionen
 
@@ -201,7 +205,7 @@ Wenn Sie eine Version verwenden, die das Ende des Support-Zeitraums naht oder ü
 - Sie erhalten Zugriff auf die neuesten Funktionen von Adobe: KI-gestütztes Merchandising, zusammensetzbare Storefront-Architektur und native Adobe Experience Cloud-Integrationen.
 - Sie können wiederkehrende Upgrade-Zyklen vermeiden.
 
-Wenden Sie sich an Ihr Adobe-Account-Team, um eine Migrationsbewertung durchzuführen. Siehe [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview) für eine Produktübersicht.
+Wenden Sie sich an Ihr Adobe-Account-Team, um eine Migrationsbewertung durchzuführen. Siehe [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) für eine Produktübersicht.
 
 ### Alternativpfad: Upgrade auf eine unterstützte Adobe Commerce-On-Cloud- oder -On-Premise-Version
 
