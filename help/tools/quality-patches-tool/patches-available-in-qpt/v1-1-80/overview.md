@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +34,9 @@ QPT v1.1.80 enthält die folgenden Patches:
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: Es wird das Problem behoben, dass Platzhalterbilder nicht in die Storefront geladen werden, wenn ein Store-Code in der URL enthalten ist.
 1. **ACP2E-4610**: Behebt das Problem, dass der `sales_clean_quotes` Cron-Auftrag Leistungsprobleme aufweist.
 1. **ACP2E-4615**: Behebt das Problem, dass Online-Bestellrückerstattungen fehlschlagen, indem ein PayPal-Fehler angezeigt wird, *PayPal-Gateway lehnt die Anfrage ab. Interner Fehler.*.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: Es wird das Problem behoben, dass einige Storefront-JavaScript-Dateien zweimal angefordert und ausgeführt wurden, was zu zeitweiligen doppelten Ladevorgängen und instabilem Verhalten führt.
+1. **ACP2E-4653**: Es wird das Problem behoben, dass der **[!UICONTROL Cart Price Rule]** Bedingungsattributbereich für **[!UICONTROL Category (Parent Only)]** und **[!UICONTROL Category (Children Only)]** beim Abrufen oder Aktualisieren von Regeln über die REST-API nicht offen gelegt wird.
+1. **ACP2E-4808**: Es wird das Problem behoben, dass das Attribut „Gewichtung“ auf der Produktseite der Storefront nur einen unformatierten numerischen Wert im Abschnitt &quot;**[!UICONTROL Additional Information]**&quot; oder &quot;**[!UICONTROL More Information]**&quot; ohne die konfigurierte Maßeinheit (lbs oder kgs) anzeigt.
 1. **ACP2E-4626**: Es wird das Problem behoben, dass einige Storefront-JavaScript-Dateien zweimal angefordert und ausgeführt wurden, was zu zeitweiligen doppelten Ladevorgängen und instabilem Verhalten führt.
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: Es wird das Problem behoben, dass der Attributbereich der Warenkorbpreisregel für **[!UICONTROL Category (Parent Only)]** und **[!UICONTROL Category (Children Only)]** beim Abrufen oder Aktualisieren von Regeln über die [!DNL REST]-API nicht offen gelegt wird.
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: Es wird das Problem behoben, dass das Attribut „Gewichtung“ auf der Produktseite der Storefront nur einen unformatierten numerischen Wert im Abschnitt &quot;**[!UICONTROL Additional Information]**&quot; oder &quot;**[!UICONTROL More Information]**&quot; ohne die konfigurierte Maßeinheit (lbs oder kgs) anzeigt.
