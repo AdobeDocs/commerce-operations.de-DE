@@ -44,7 +44,7 @@ Dasselbe Relevanzmodell interagiert mit **Suchgewichten**, **Intelligent Ranking
 - Klarere Erwartungen an die Kombination von Gewichtungen, intelligentem Ranking und manuellen Regeln zur Abfragezeit.
 - Anleitungen für die Validierung von Abfragen mit hohem Wert und für Optimierungsregeln nach der Änderung.
 
-Erfahren Sie mehr über Suchabgleich und Rangfolgestrategie in [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/search-relevance-matching) und [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching).
+Erfahren Sie mehr über Suchabgleich und Rangfolgestrategie in [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/de/docs/commerce/optimizer/manage-results/search-relevance-matching) und [Live Search (PaaS)](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching).
 
 Um eine Einladung zu dieser privaten Beta-Version anzufordern, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). Das Adobe-Team wird mit den nächsten Schritten und Eignungsanforderungen antworten.
 
