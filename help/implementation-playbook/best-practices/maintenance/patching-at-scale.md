@@ -7,7 +7,7 @@ badge: label="Beiträge von Tony Evers, Sr. Technical Architect, Adobe" type="In
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
 source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ So erstellen Sie das `centralized-patcher` Komponentenpaket:
    ```
 
 
-Das Attribut `quality-patches` im vorherigen Codebeispiel enthält als Beispiel zwei Patches aus [vollständigen &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)).  Diese Qualitäts-Patches werden mit dem Befehl `centralized-patcher` auf jedem Projekt installiert, für das das `vendor/bin/magento-patches apply`-Paket erforderlich ist.
+Das Attribut `quality-patches` im vorherigen Codebeispiel enthält als Beispiel zwei Patches aus [vollständigen &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)).  Diese Qualitäts-Patches werden mit dem Befehl `vendor/bin/magento-patches apply` auf jedem Projekt installiert, für das das `centralized-patcher`-Paket erforderlich ist.
 
 Zu Testzwecken können Sie einen Beispiel-Patch erstellen (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -371,6 +371,6 @@ Auf diese Weise können Sie alle Ihre Patches für alle Ihre Installationen zent
 ## Code-Beispiele
 
 - [Zentralisierte Patches in Magento Open Source](https://github.com/AntonEvers/centralized-patches-on-magento-open-source)
-- [Zentralisierte Patches in Adobe Commerce auf Cloud-Infrastruktur](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
-- [Centralized Patcher Composer-Plug-in](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
+- [Zentralisierte Patches in Adobe Commerce auf Cloud-Infrastrukturen](https://github.com/AntonEvers/centralized-patches-on-adobe-commerce-cloud)
+- [Plug-in für Central Patcher Composer](https://github.com/AntonEvers/centralized-patcher-composer-plugin)
 - [Zentralisierte Patcher-Komponente](https://github.com/AntonEvers/centralized-patcher)
