@@ -21,11 +21,11 @@ Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversati
 
 >[!NOTE]
 >
->Eine ausführliche Beschreibung der technischen Schritte für ein erfolgreiches Upgrade finden Sie unter [Voraussetzungen für ein Upgrade ](../../../upgrade/prepare/prerequisites.md) in unserer Benutzerdokumentation.
+>Eine ausführliche Beschreibung der technischen Schritte für ein erfolgreiches Upgrade finden Sie unter [Voraussetzungen für ein Upgrade &#x200B;](../../../upgrade/prepare/prerequisites.md) in unserer Benutzerdokumentation.
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -46,7 +46,7 @@ Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversati
 
 ## Budget und Timing
 
-▢ Planen Sie das nächste Upgrade mithilfe [ Adobe Commerce-](../../../release/schedule.md) und bereiten Sie es vorab vor.
+▢ Planen Sie das nächste Upgrade mithilfe [&#x200B; Adobe Commerce-](../../../release/schedule.md) und bereiten Sie es vorab vor.
 
 ▢ Besprechen Sie, welche Version Sie basierend auf den erwarteten Anforderungen (vollständig oder nur zur Sicherheit) übernehmen möchten.
 
@@ -60,14 +60,14 @@ Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversati
 
 Early Access-Aktivitäten ▢
 
-- Partner ist an [Beta ](../../../release/beta.md)
+- Partner ist an [Beta &#x200B;](../../../release/beta.md)
 - Überprüfung der Beta-Versionshinweise.
 
 ▢ vereinbaren Budget, Zeitplan und Umfang.
 
 ▢ Ausführen des [Upgrade-Kompatibilitätstools](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ sollten das Upgrade verwenden, um Probleme zu beheben, die vom [Site Wide Analysis Tool“ ](../../../tools/site-wide-analysis-tool/intro.md) werden.
+▢ sollten das Upgrade verwenden, um Probleme zu beheben, die vom [Site Wide Analysis Tool“ &#x200B;](../../../tools/site-wide-analysis-tool/intro.md) werden.
 
 ▢ Dokumentabhängigkeiten und alle erforderlichen technischen Änderungen am Stack, wie z. B. PHP- oder Elastic Search-Versionen.
 
