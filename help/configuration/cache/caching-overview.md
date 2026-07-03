@@ -40,7 +40,7 @@ Ein Cache-Backend ist der zugrunde liegende Speichermechanismus für zwischenges
 
 ## Vollständige Seitenzwischenspeicherung mit Lack
 
-[Varnish Cache](config-varnish.md) ist ein HTTP-Beschleuniger, der vollständige Seiten im Speicher zwischenspeichert. Für lokale Produktionsumgebungen empfiehlt Adobe dringend Varnish , da es deutlich schneller ist als der integrierte Vollseiten-Cache. Commerce in Cloud-Umgebungen verwenden [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) für das Caching ganzer Seiten anstelle von „Varnish“.
+[Varnish Cache](config-varnish.md) ist ein HTTP-Beschleuniger, der vollständige Seiten im Speicher zwischenspeichert. Für lokale Produktionsumgebungen empfiehlt Adobe dringend Varnish , da es deutlich schneller ist als der integrierte Vollseiten-Cache. Commerce in Cloud-Umgebungen verwenden [Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly) für das Caching ganzer Seiten anstelle von „Varnish“.
 
 >[!NOTE]
 >
