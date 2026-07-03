@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 7f3767864abdc38fcc0978f174f16632190112cf
 workflow-type: tm+mt
-source-wordcount: 738
+source-wordcount: 764
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Es stehen zwei L2-Cache-Implementierungen zur Verfügung:
 
 >[!NOTE]
 >
->Konfigurieren Sie für Adobe Commerce in der Cloud den L2-Cache, indem Sie die Variable [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) oder [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in `.magento.env.yaml` festlegen. Konfigurationsbeispiele finden Sie [Konfigurieren des L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)Cache).
+>Konfigurieren Sie für Adobe Commerce on Cloud den L2-Cache, indem Sie die Variable [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) oder [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in `.magento.env.yaml` festlegen. Konfigurationsbeispiele finden Sie [Konfigurieren des L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)Cache).
 
 ## Konfiguration des alten L2-Cache (RemoteSynchronizedCache)
 
@@ -185,6 +185,10 @@ Der folgende Code zeigt eine Beispielkonfiguration:
 ## Moderne Symfony L2-Cache-Implementierung
 
 Ab Commerce 2.4.9 können Sie die L2-Cache-basierte Implementierung von Symfony (`symfony_l2`-Backend) verwenden, die eine moderne, PSR-6-konforme Caching-Implementierung mit erheblichen Leistungsverbesserungen gegenüber herkömmlichen `RemoteSynchronizedCache` bietet.
+
+>[!NOTE]
+>
+>Diese Funktion ist derzeit nur für Kunden von Adobe Commerce On Premises 2.4.9 verfügbar. und wird im Juli 2026 für Adobe Commerce On Cloud aktiviert.“
 
 ### Vorteile des Symfony L2-Cache
 

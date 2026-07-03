@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ In diesem Handbuch wird erläutert, wie die einzelnen Caching-Ebenen funktionier
 
 ## Caching von Frontends
 
-Ein Cache-Frontend ist eine Schnittstelle zwischen Commerce und dem Cache-Speicher-Backend. Sie können mehrere Frontends mit jeweils unterschiedlichen Backend-Einstellungen definieren und dann jedem Frontend [Cache-Typen](../cli/manage-cache.md#clean-and-flush-cache-types) zuweisen.  Konfigurationsdetails finden Sie unter [Konfigurieren von Cache-Frontends](cache-types.md).
+Ein Cache-Frontend ist eine Schnittstelle zwischen Commerce und dem Cache-Speicher-Backend. Sie können mehrere Frontends mit jeweils unterschiedlichen Backend-Einstellungen definieren und dann jedem Frontend [Cache-Typen](../cli/manage-cache.md#clean-and-flush-cache-types) zuweisen. Konfigurationsdetails finden Sie unter [Konfigurieren von Cache-Frontends und -Typen](cache-types.md).
 
 ## Caching von Backends
 
@@ -74,7 +74,7 @@ Für die Zuordnung von Frontend zu Typ und die Cache-Konfigurationssyntax:
 
 Weitere Informationen finden Sie unter:
 
-- [Cache-Frontends konfigurieren](cache-types.md) - Ein Cache-Frontend mit bestimmten Cache-Typen verknüpfen
+- [Cache-Frontends und -Typen konfigurieren](cache-types.md) - Ein Cache-Frontend mit bestimmten Cache-Typen verknüpfen
 - [Cache-Backend-Optionen](cache-options.md) - Referenz zur Backend-Option
 
 **Adobe Commerce in Cloud** - Konfigurieren Sie das Caching mit `CACHE_CONFIGURATION` in `.magento.env.yaml`. Siehe [Best Practices für die Konfiguration von Redis- und Valkey-Services](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).

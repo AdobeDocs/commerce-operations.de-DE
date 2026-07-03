@@ -1,7 +1,7 @@
 ---
-source-git-commit: f08c48c7e39c506a71bf9e13d0adc06315013d69
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Informationen zu Adobe Commerce in Cloud-Projekten finden Sie [Best Practices für die Konfiguration von Redis und Valkey](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) unter Cache-Konfigurationsanweisungen.
+>Informationen zu Adobe Commerce in Cloud-Projekten finden Sie [Best Practices für die Konfiguration von Redis und Valkey](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) unter Cache-Konfigurationsanweisungen. Redis-Cache wird nicht unterstützt für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und über die 2.4.8-p5-Release-Zeilen. Verwenden Sie Valley für die Cache-Konfiguration, bei der Redis nicht unterstützt wird. Siehe [Systemanforderungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements) für unterstützte Cache-Services nach Version.
 
 ## Konfigurationshinweis für Commerce on Cloud Varnish mit Referenz {#varnish-config-cloud}
 
