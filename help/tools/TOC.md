@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
-source-wordcount: '10316'
+source-wordcount: '10330'
 ht-degree: 0%
 
 ---
@@ -1009,7 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Erneutes Speichern einer Zahlungsautorisierungstransaktion als Selbstverweis auf parent_id und Trigger einer Endlosschleife/OOM](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - v1.1.80 {#v1-1-80}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
-         - [ACP2E-4239: Admin-Raster-Datumsfilter geben keine Ergebnisse zurück, da Zeitzonen nicht übereinstimmen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
+         - [ACP2E-4493: Das Raster „Kundenauftragsarchiv“ zeigt bei aktivierter asynchroner Indizierung einen falschen Bestellstatus an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md) - [ACP2E-4239: Admin-Raster-Datumsfilter geben keine Ergebnisse aufgrund von nicht übereinstimmender Zeitzone zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)
          - [ACP2E-4481: Verkaufbarkeit des Bundles nach Stornierung der Bestellung falsch neu berechnet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)
          - [ACSD-53502: **[!UICONTROL Add to Cart]** schlägt gelegentlich auf iOS  [!DNL Safari]  aufgrund einer New Relic-Skriptrekursion fehl](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813: USPS Versandmethoden nicht verfügbar oder falsch für Mehrpaketbestellungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
