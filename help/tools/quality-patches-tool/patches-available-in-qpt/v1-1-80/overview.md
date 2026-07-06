@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
 source-wordcount: 593
 ht-degree: 0%
@@ -27,11 +22,11 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.80 enthält die folgenden Patches:
 
+1. **[ACP2E-4493](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)**: Es wurde ein Problem behoben, bei dem das Raster „Kundenauftragsarchiv“ einen falschen Bestellstatus anzeigt, wenn die asynchrone Indizierung aktiviert ist.
 1. **[ACP2E-4239](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)**: Es wird das Problem behoben, dass Admin-Rasterfilter unter Verwendung von Datumsattributen keine Ergebnisse zurückgeben, da die Zeitzone zwischen dem ausgewählten Datum, den gespeicherten [!DNL UTC]-Werten und der konfigurierten Speicherzeitzone nicht übereinstimmt.
 1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: Es wurde ein Problem behoben, bei dem die Verkaufsfähigkeit von Bundle-Produkten nach einer Auftragsstornierung falsch neu berechnet wurde.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: Es wird das Problem behoben, dass während des **[!UICONTROL Login as Customer]**-Flusses ein Nullanführungseintrag in der `quote`-Datenbanktabelle erstellt wird.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: Es wird das Problem behoben, dass das Speichern oder Bearbeiten von Produkten in Admin bei Produkten mit großen Attributsätzen langsam ist.
-1. **ACP2E-4493**: Es wurde ein Problem behoben, bei dem das Raster „Kundenauftragsarchiv“ einen falschen Bestellstatus anzeigt, wenn die asynchrone Indizierung aktiviert ist.
 1. **ACP2E-4496**: Behebt das Problem, dass der Analytics-Cron-Auftrag während der Ausführung zu Leistungseinbußen führt, was zu einer verbesserten Gesamtsystemleistung führt.
 1. **ACP2E-4533**: Behebt das Problem, dass Platzhalterbilder nicht in die Storefront geladen werden, wenn ein Store-Code in der URL enthalten ist.
 1. **ACP2E-4552**: Behebt das Problem, dass der Unternehmensstatus in der GraphQL-Antwort nicht zurückgegeben wird.
