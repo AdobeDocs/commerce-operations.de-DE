@@ -5,16 +5,12 @@ exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
 autotag-review: '2026-05-29T17:40:45.034Z'
 TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: f1cae5b4ad3d75dbc7f83b7687a4614f678263cd
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 09557adb586946f1a7c4f94cb7675dc2aa83551d
 workflow-type: tm+mt
-source-wordcount: 31335
+source-wordcount: 31872
 ht-degree: 0%
 
 ---
@@ -25,15 +21,36 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.82 {#v1-1-82}
+
+* **ACP2E-4194** (für Adobe Commerce und Magento Open Source >=2.4.7-p10 &lt;2.4.8 || >=2.4.8-p5 &lt;2.4.9) - Behebt das Problem, dass GraphQL-Antworten falsche HTTP-Status-Codes für ungültige, nicht autorisierte oder falsch formatierte Anfragen zurückgeben.
+* **ACP2E-4547** (für Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Behebt das Problem, dass ein Admin-Benutzer „Produkte nach SKU hinzufügen“ in Admin nicht verwenden kann, um Produkte aus dem Standardkatalog einem verhandelbaren Angebot für ein Unternehmen hinzuzufügen, das einer Kundengruppe zugewiesen ist, die nicht mit einem freigegebenen Katalog verknüpft ist.
+* **ACP2E-4593** (für Adobe Commerce >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass die für Website-Einschränkungen angezeigte CMS-Seite auf sekundären Websites in Bereitstellungen mit mehreren Websites falsch sein kann.
+* **ACP2E-4682** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Es wird das Problem behoben, dass beim Besuch einer Storefront-Seite, die den Zitatstatus `isActive` überprüft, bei jedem Laden der Seite leere Zitatdatensätze erstellt.
+* **ACP2E-4695** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass der Katalogregel-Indexer zu viel Speicher verbraucht und nicht abgeschlossen werden kann, was zu Instabilität und Speicherfehlern führt.
+* **ACP2E-4698** (für Adobe Commerce und Magento Open Source >=2.4.7-p9 &lt;2.4.8 || >=2.4.8-p4 &lt;2.4.9) - Es wurde das Problem behoben, dass durch die erneute Bearbeitung eines Bildes in Page Builder-Textinhalten eine absolute Medien-URL gespeichert werden kann, anstatt eine portable Medienanweisung beizubehalten.
+* **ACP2E-4748** (für Adobe Commerce >=2.4.7 &lt;2.4.9) - Behebt das Problem, dass der Ablauf von Belohnungspunkten in Geschäften mit einem großen Belohnungspunktverlauf langsam verarbeitet werden kann, was zu Verzögerungen bei ablaufenden Belohnungspunkten führt.
+* **ACP2E-4797** (für Adobe Commerce >=2.4.8 &lt;2.4.9) - Es wird das Problem behoben, dass die Eingabe von 4-Byte-Unicode-Zeichen in den WYSIWYG-Editor oder Page Builder-Inhalt in der Admin fälschlicherweise blockiert wird, selbst wenn die Datenbank für die Unterstützung von UTF8MB4 konfiguriert ist.
+* **ACP2E-4799** (für Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Behebt das Problem, bei dem die GraphQL-Abfrage `requisition_lists` einen „total_count“-Wert zurückgibt, der nur die Anzahl der Elemente auf der aktuellen Seite anstelle der Gesamtzahl der Anforderungslisten widerspiegelt, die den Abfragekriterien entsprechen.
+* **ACP2E-4805** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass Checkout-API-Anfragen für konfigurierbare Produkte mit vielen untergeordneten Produkten erheblich langsamer werden können, wenn das erste verkaufbare untergeordnete Produkt spät in der Liste angezeigt wird.
+* **ACP2E-4840** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, bei dem der in der GraphQL-Abfrage „Produkte“ angeforderte Mengenwert null zurückgibt.
+* **ACP2E-4870** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass E-Mail-Benachrichtigungen zu Produktansichten die E-Mail-Einstellungen der Store-Ansicht ignorieren.
+* **ACP2E-4875** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Fehlerkorrektur - Beim Anzeigen von Kundenkonten mit großen Adressbüchern im Admin können sich Admin-Benutzer unerwartet abmelden.
+* **ACP2E-4894** (für Adobe Commerce >=2.4.7 &lt;2.4.9) - Behebt das Problem, dass neue Aufträge verzögert in den Auftragsverwaltungsrastern von Admin angezeigt werden, wenn die asynchrone Indizierung für Stores mit hohem Volumen aktiviert ist.
+* **ACP2E-4981** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass in Page Builder-Produktkarussells Produkte in einer falschen Kategorieposition angezeigt werden und konfigurierbare Produkte einbezogen werden, wenn übereinstimmende untergeordnete Produkte einzeln sichtbar sind.
+* Aktualisierte Versionen: **ACSD-45255**, **ACSD-50849**
+* Ersetzte Patches: **ACSD-49970-V3**, **ACSD-50260-V2**, **ACSD-54966**, **ACSD-63325**, **ACSD-64212**, **ACSD-66865**, **ACSD-69237**
+* Veraltete Patches: **ACP2E-4815**
+
 ## v1.1.81 {#v1-1-81}
 
-* **ACP2E-4300** (für Adobe Commerce >=2.4.5 &lt;2.4.9) - Es wird das Problem behoben, dass beim Ändern einer Kundengruppe in der Admin keine Katalogberechtigungen für die Storefront aktualisiert werden, sodass der Katalog und der Warenkorb veraltete Berechtigungen widerspiegeln.
+* **ACP2E-4300** (für Adobe Commerce >=2.4.5 &lt;2.4.9) - Es wird das Problem behoben, dass beim Ändern einer Kundengruppe in der Admin keine Katalogberechtigungen für die Storefront aktualisiert werden, wodurch der Katalog und der Warenkorb veraltete Berechtigungen widerspiegeln.
 * **ACP2E-4401** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass die Vorschau des geplanten Updates des Startseiten-Links mit konfigurierbaren Produkten zur Wartungsseite umleitet, anstatt die Produktliste anzuzeigen.
 * **ACP2E-4395** (für Adobe Commerce >=2.4.5 &lt;2.4.9) - Behebt das Problem, dass bei der Erstellung von Gift Card-API-Produkten kein Fehler angezeigt wird, wenn keine Beträge für den globalen Umfang angegeben sind.
 * **ACP2E-4468** (für Adobe Commerce >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass Admin-Benutzer mit Berechtigungen für den Umfang von Websites Bannerinhalte nicht bearbeiten konnten.
@@ -64,7 +81,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACP2E-4156** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass die Validierung von Versandadressen in der REST-API nicht der in Admin definierten Attributkonfiguration entspricht.
 * **ACP2E-4813** (für Adobe Commerce und Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Behebt das Problem, dass USPS Versandmethoden an der Kasse nicht verfügbar sind und Versandschätzungen für bestimmte Produkte, einschließlich Bestellungen, die in mehrere Pakete aufgeteilt sind, falsch sind.
 * **ACSD-53502** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.6) - Es wurde das Problem behoben, bei dem „Zum Warenkorb hinzufügen“ aufgrund rekursiver Aufrufe des New Relic-Überwachungsskripts zeitweise in der Storefront in iOS Safari fehlschlägt, was zu Seitenneuladungen führt.
-* Aktualisierte Versionen: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51358**, **ACSD-54106**, **ACSD-51291**, **ACSD-**,ACSD-50815 **, ACSD-53636**, ACSD-**, ACSD-55100**, ACSD-**, 58008** ACSD-**, 61133** ACSD-**, 63286** ACSD-**, 67941** ACSD-**, ACSD-402, 64546**&#x200B;**64118** **65822** **57477** **58108** **66149** **66404** **67250** **67686** **68925** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** ACP2E-4505,,,
+* Aktualisierte Versionen: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51358**, **ACSD-54106**, **ACSD-51291**, **ACSD-**,ACSD-50815 **, ACSD-53636**, ACSD-**, ACSD-55100**, ACSD-**, 58008** ACSD-**, 61133** ACSD-**, 63286** ACSD-**, 67941** ACSD-**, ACSD-402, 64546****64118** **65822** **57477** **58108** **66149** **66404** **67250** **67686** **68925** **** **** **** **** ACP2E-4505,,,
 * Patches ersetzt: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -108,7 +125,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACP2E-4732** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde ein Problem behoben, bei dem die partielle Indizierung für Kunden mit einer großen Anzahl von Aktualisierungen angehalten wurde, wenn die Spalte version_id in der Changelog-Tabelle ihren Höchstwert erreichte.
 * **ACP2E-4763** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass die Abfrage &quot;GraphQL customerOrders“ überhöhte Werte für „original_price_include_tax“ und „original_row_total_include_tax“ zurückgibt, wenn Katalogpreise auf „Inklusive Steuer“ gesetzt wurden, da die Steuer zweimal angewendet wurde.
 * **ACSD-60989** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wird das Problem behoben, dass das Ändern einer Spalte mit einem Fremdschlüssel über ein deklaratives Schema zu Fehlern in MariaDB führt.
-* Aktualisierte Versionen: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-**, 55031 **ACSD-55628**, **ACSD-**, 51819 **ACSD-54965-V2,** ACSD-**56546** **61756** **68040** **62708** **63283** **64732** **65775** **66965** **&#x200B;**,
+* Aktualisierte Versionen: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-**, 55031 **ACSD-55628**, **ACSD-**, 51819 **ACSD-54965-V2,** ACSD-**56546** **61756** **68040** **62708** **63283** **64732** **65775** **66965** ****,
 * Patches ersetzt: **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
@@ -424,7 +441,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-63242** (für Adobe Commerce und Magento Open Source >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Behebt das Problem der verlangsamten Importe beim Hinzufügen von Katalogprodukten mit mehr als 10.000 Einträgen.
 * **ACSD-63062** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Es wird das Problem behoben, dass falsche Warenkorbabzinsberechnungen auftreten, wenn mehrere überlappende Regeln angewendet werden.
 * **ACSD-62979** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebt das Problem, dass die Verwendung des falschen [!UICONTROL Store ID] in der [!DNL GraphQL]-Kopfzeile einen schwerwiegenden Speicherfehler verursacht.
-* **ACSD-62971** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, bei dem der Import von Lagerquellen mit nicht numerischen Werten in der Spalte **&#x200B;**&#x200B;dazu führte, dass **quantity** auf *0* gesetzt wurde.
+* **ACSD-62971** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, bei dem der Import von Lagerquellen mit nicht numerischen Werten in der Spalte **** dazu führte, dass **quantity** auf *0* gesetzt wurde.
 * **ACSD-62872** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Behebt das Problem der eindeutigen Attributvalidierung, bei dem Zeitplanaktualisierungen falsch validiert werden.
 * **ACSD-62755** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Behebt das Problem, bei dem [!DNL TinyMCE] 7 Schriftgröße und Schriftart in den Editor-Initialisierungseinstellungen speziell hinzugefügt werden müssen.
 * **ACSD-62670** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Behebt das Problem, bei dem der [!UICONTROL Products Ordered]-Bericht in [!DNL CSV] exportiert wird und [!DNL XML] einen Fehler zurückgibt.
@@ -435,8 +452,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-61805** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass Produkte in der Storefront nicht vorrätig sind, nachdem der Auftragsstatus über den [!DNL REST API] aktualisiert wurde.
 * **ACSD-60811** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Es wurde das Problem behoben, dass das Aktualisieren des Bestellstatus mit einem benutzerdefinierten Wert oder Kommentar nur möglich ist, wenn der aktuelle Status entweder *Verarbeitung läuft* oder *Betrug*.
 * **ACSD-62952** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass das [!UICONTROL Gift Registry]-Datum in der Storefront falsch angezeigt wird.
-* **ACSD-55339** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass ein Produkt [!DNL SKU], das mit „0“ (null) beginnt, die „0“ entfernt, sodass das Angebot nicht aktualisiert wird.
-**
+* **ACSD-55339** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass ein Produkt [!DNL SKU], das mit „0“ (null) beginnt, die „0“ entfernt, sodass das Angebot nicht aktualisiert wird.**
 * Aktualisierte Patches: **ACSD-59514**
 * Aktualisierte Versionen: **ACSD-60816**
 * Patches ersetzt: **ACSD-59967**
