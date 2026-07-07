@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Fehlermeldungen, die bei Verwendung von  [!
 exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4151'
 ht-degree: 4%
 
 ---
@@ -194,7 +194,7 @@ Fehler mit benutzerdefiniertem Code werden ausgelöst, wenn benutzerdefinierter 
 | 5088 | Optionale Parameter nach den erforderlichen | Erforderliche Parameter nach optionalen Parametern verschieben. |
 | 5089 | Sichtbarkeit der Methode `final private` gefunden | Ändern Sie die Sichtbarkeit der Methode von `final private` in nur `private`. |
 | 5090 | Die magische Methode `__set_state` ist nicht als `static` definiert | Die magische Methode `__set_state` muss als `static` definiert werden. |
-| 5091 | Klasse mit `__toString()` Methode erbt nicht von `Stringable` Schnittstelle | Fügen Sie mit `Stringable` Methode `__toString()` Schnittstelle zur Klasse hinzu. |
+| 5091 | Klasse mit `__toString()` Methode erbt nicht von `Stringable` Schnittstelle | Fügen Sie mit `__toString()` Methode `Stringable` Schnittstelle zur Klasse hinzu. |
 | 5092 | `is_resource()` Methode, die für Funktionen verwendet wird, die jetzt Object zurückgeben | Ändern Sie `is_resource()` in `instanceof` -Objekt. |
 | 6001 | `jQuery.andSelf()` entfernt | `jQuery.addBack()` verwenden. |
 | 6002 | jQuery `$.bind` und `$.unbind` sind veraltet | Verwenden Sie stattdessen `$.on` und `$.off`. |
