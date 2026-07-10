@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-10T16:37:59.584Z'
 TQID: 'https://experienceleague.adobe.com/M-ltaMCaVfRfc3vrobfkBCte-P4K2CELj7r3bD-cfxA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: f73ca9edd0af3cfb0975eb4b13eabc78c20c340e
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: aeb532d2e065787e1b23781a50808031e5a5d4ce
 workflow-type: tm+mt
-source-wordcount: 304
+source-wordcount: 271
 ht-degree: 0%
 
 ---
@@ -36,6 +31,5 @@ QPT v1.1.81 enthält die folgenden Patches:
 1. **ACP2E-4709**: Es wurde ein Problem behoben, bei dem CMS-Seiten bei Verwendung von Page Builder nicht gespeichert wurden.
 1. **ACP2E-4786**: Fehlerkorrektur - Beim Exportieren von Produkten können Dateien nicht geschrieben werden, wenn der Remote-Speicher AWS S3 konfiguriert ist, da der Speichertreiber eine falsche Pfadauflösung aufweist.
 1. **ACP2E-4801**: Es wird das Problem behoben, dass die Aktualisierung der Produktoptionsmengen des Pakets über die Schaltfläche &quot;[!UICONTROL Configure]&quot; in einem verhandelbaren Angebot aus der [!UICONTROL Admin] nicht angewendet wird und Änderungen verworfen werden.
-1. **ACP2E-4815**: Behebt mehrere GraphQL-Probleme, die PHP-Ausnahmen in Protokollen verursacht haben, korrigiert die Zuordnung von Bestellungen zu Kundenkonten, die nach der Bestellung über GraphQL erstellt wurden, und stimmt die Antworten mit GraphQL über HTTP-Spezifikationen ab.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
