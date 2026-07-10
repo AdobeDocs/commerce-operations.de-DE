@@ -1,0 +1,36 @@
+---
+title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.81'
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.81  [!DNL Quality Patches Tool]  Patches behoben wurden.
+feature: Tools and External Services
+role: Admin, Developer
+type: Troubleshooting
+autotag-review: '2026-07-10T16:37:59.584Z'
+TQID: 'https://experienceleague.adobe.com/M-ltaMCaVfRfc3vrobfkBCte-P4K2CELj7r3bD-cfxA'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: f73ca9edd0af3cfb0975eb4b13eabc78c20c340e
+workflow-type: tm+mt
+source-wordcount: 304
+ht-degree: 0%
+
+---
+
+# Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.81
+
+Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.81 verfügbaren Patches behoben wurden.
+
+QPT v1.1.81 enthält die folgenden Patches:
+
+1. **ACP2E-4300**: Es wird ein Problem behoben, bei dem das Ändern einer Kundengruppe in der [!UICONTROL Admin] keine Katalogberechtigungen für die Storefront aktualisiert, sodass der Katalog und der Warenkorb veraltete Berechtigungen widerspiegeln.
+1. **ACP2E-4401**: Es wird das Problem behoben, dass der [!UICONTROL Scheduled Update Preview] des Links der Startseite mit konfigurierbaren Produkten zur Wartungsseite umleitet, anstatt die Produktliste anzuzeigen.
+1. **ACP2E-4395**: Bei der Erstellung von Giftcard-API-Produkten wird jetzt ein Fehler angezeigt, wenn für den globalen Umfang keine Beträge angegeben wurden.
+1. **ACP2E-4468**: Behebt das Problem, dass [!UICONTROL Admin] Benutzer mit Berechtigungen für den Website-Umfang Bannerinhalte nicht bearbeiten können.
+1. **ACP2E-4630**: Es wird das Problem behoben, dass lange Produktnamen mit benutzerdefinierten Optionen nach Seitenumbrüchen benachbarte Spalten oder Artikel in mehrseitigen Rechnungs-, Versand-, Gutschriften- und Rückgabe-PDFs überschneiden, wodurch Zeileneinträge unlesbar werden.
+1. **ACP2E-4680**: Es wird das Problem behoben, dass nicht verkaufbare oder gelöschte Produkte aus endgültigen verhandelbaren Angeboten verschwinden.
+1. **ACP2E-4709**: Es wurde ein Problem behoben, bei dem CMS-Seiten bei Verwendung von Page Builder nicht gespeichert wurden.
+1. **ACP2E-4786**: Fehlerkorrektur - Beim Exportieren von Produkten können Dateien nicht geschrieben werden, wenn der Remote-Speicher AWS S3 konfiguriert ist, da der Speichertreiber eine falsche Pfadauflösung aufweist.
+1. **ACP2E-4801**: Es wird das Problem behoben, dass die Aktualisierung der Produktoptionsmengen des Pakets über die Schaltfläche &quot;[!UICONTROL Configure]&quot; in einem verhandelbaren Angebot aus der [!UICONTROL Admin] nicht angewendet wird und Änderungen verworfen werden.
+1. **ACP2E-4815**: Behebt mehrere GraphQL-Probleme, die PHP-Ausnahmen in Protokollen verursacht haben, korrigiert die Zuordnung von Bestellungen zu Kundenkonten, die nach der Bestellung über GraphQL erstellt wurden, und stimmt die Antworten mit GraphQL über HTTP-Spezifikationen ab.
+
+Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
