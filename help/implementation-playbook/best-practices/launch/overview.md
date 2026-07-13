@@ -5,7 +5,7 @@ exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
 feature: Best Practices
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '180'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Die folgenden Abschnitte enthalten Best Practice-Informationen für die Launch-P
 | [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnieren von Adobe-Sicherheitsbenachrichtigungen. |
 | [Sichern Sie Ihre Commerce-Site und -Infrastruktur](security-best-practices.md) | Abhärten des Sicherheitszustands von Commerce-Installationen, um die Commerce-Storefront, den Admin, die Infrastruktur und die Daten vor unbefugtem Zugriff und Cyberangriffen zu schützen. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=de) | Konfigurieren Sie Google reCAPTCHA für Administratorzugriff und verschiedene Storefront-Aktionen, die von registrierten Kunden initiiert werden. |
-| [Konfigurieren von Web-Crawlern](robots-txt.md) | Übergeben Sie Anweisungen zu Ihrer Adobe Commerce-Site an Web-Crawler. |
+| [Konfigurieren von Web-Crawler](robots-txt.md) | Übergeben Sie Anweisungen zu Ihrer Adobe Commerce-Site an Web-Crawler. |
 | [Sicherheitskonfiguration überprüfen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=de) | Überprüfen Sie Checklisten-Elemente, bevor Sie eine Adobe Commerce auf einer Cloud-Infrastruktur-Site starten. |
 
 ## Leistungsüberwachung

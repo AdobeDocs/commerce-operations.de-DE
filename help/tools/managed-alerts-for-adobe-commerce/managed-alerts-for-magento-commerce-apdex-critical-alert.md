@@ -6,14 +6,14 @@ role: Admin
 exl-id: 00e29611-fd4b-45c8-a1e0-56fc3cbe90e0
 source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
 
 # Verwaltete Warnhinweise für Adobe Commerce: [!DNL Apdex] Warnhinweis
 
-Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie in [!DNL Apdex] einen [!DNL New Relic] Warnhinweis für Adobe Commerce erhalten. Der [!DNL Apdex] Wert misst die Zufriedenheit der Benutzer mit der Reaktionszeit von Web-Anwendungen und -Services. Sofortiges Handeln ist erforderlich, um das Problem zu beheben. Je nach ausgewähltem Benachrichtigungskanal für Warnhinweise sieht der Warnhinweis etwa wie folgt aus.
+Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie in [!DNL New Relic] einen [!DNL Apdex] Warnhinweis für Adobe Commerce erhalten. Der [!DNL Apdex] Wert misst die Zufriedenheit der Benutzer mit der Reaktionszeit von Web-Anwendungen und -Services. Sofortiges Handeln ist erforderlich, um das Problem zu beheben. Je nach ausgewähltem Benachrichtigungskanal für Warnhinweise sieht der Warnhinweis etwa wie folgt aus.
 
 ![Kritischer APDEX-Warnhinweis](../../assets/managed-alerts/apdex-critical-magento-managed.png){width="500"}
 
