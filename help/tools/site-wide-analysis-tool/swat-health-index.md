@@ -3,7 +3,7 @@ title: SWAT-Gesundheitsindex-Bewertungen und -Empfehlungen
 description: Erfahren Sie, was der Site-Wide Analysis Tool Health Index für Ihre Adobe Commerce-Site bedeutet. Erfahren Sie, wie Sie Bewertungen interpretieren und Empfehlungen effektiv verwenden können.
 source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---

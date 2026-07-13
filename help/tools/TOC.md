@@ -2,9 +2,9 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
+source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
 workflow-type: tm+mt
-source-wordcount: '10330'
+source-wordcount: '10334'
 ht-degree: 0%
 
 ---
@@ -423,7 +423,7 @@ ht-degree: 0%
          - [ACSD-50512: Fehler beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50512-error-when-updating-the-start-date-for-a-downloadable-product-staging-update.md)
          - [ACSD-50895: Google Analytics 3 GTM-Tags werden nicht ausgelöst, wenn Google Analytics 4 GTM nicht konfiguriert ist](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-50895-google-analytics-3-gtm-tags-are-not-fired-if-google-analytics-4-gtm-is-not-configured.md)
          - [ACSD-51471: Admin-Benutzer kann geplante Aktualisierungen für gebündeltes Produkt nicht speichern](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51471-admin-user-cannot-save-scheduled-update-for-bundled-product.md)
-         - [ACSD-51120: Der Cache für GraphQL GET-Anfragen wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
+         - [ACSD-51120: GraphQL-GET-Anfragen: Der Cache wurde für CMS-Seiten mit CMS-Blöcken nicht gelöscht](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51120-graphql-get-requests-cache-not-cleared-for-cms-pages.md)
          - [ACSD-51700: Fehler beim Wechseln der Store-Ansichten auf der herunterladbaren Produktbearbeitungsseite](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51700-downloadable-product-error-when-switching-storeviews.md)
          - [ACSD-51735: Der Bestellartikelstatus wurde fälschlicherweise auf [!UICONTROL Ordered] gesetzt, wenn der Produktbestand 0 beträgt](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51735-order-item-status-incorrectly-set.md)
          - [ACSD-51497: Katalogseite kann nicht nach benutzerdefiniertem Attribut des Typs Dropdown sortiert werden](quality-patches-tool/patches-available-in-qpt/v1-1-33/acsd-51497-cannot-sort-catalog-page-by-custom-attribute-of-dropdown-type.md)
@@ -900,7 +900,7 @@ ht-degree: 0%
          - [ACSD-67459: Produkte mit Beschreibungen, die länger als 65.536 Zeichen sind, können nicht importiert werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
       - v1.1.72 {#v1-1-72}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.72](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/overview.md)
-         - [ACSD-67424: Der Wert updated_at in der Antwort der GET /carts/Search REST-API stimmt nicht mit dem Wert in [!UICONTROL Admin Panel] für [!UICONTROL Negotiable Quotes] überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
+         - [ACSD-67424: Der Wert „updated_at“ in der Antwort der GET /carts/Search REST-API stimmt nicht mit dem Wert in [!UICONTROL Admin Panel] für [!UICONTROL Negotiable Quotes] überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67424.md)
          - [ACSD-67383: Fehler bei der Anmeldung als Kunde mit zwei Unternehmensadministratorkonten in derselben Sitzung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67383.md)
          - [ACSD-68064: Doppelte Einträge, die bei geplanten Aktualisierungen in Umgebungen mit tief verschachtelten Kategorien erstellt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-68064.md)
          - [ACSD-67946: Warenkorbaktualisierung zeigt doppelte Fehlerbanner an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67946.md)
@@ -1024,6 +1024,8 @@ ht-degree: 0%
          - [ACP2E-4808: Produktgewichtsanzeigen ohne Maßeinheit auf Storefront](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: Platzhalterbilder werden nicht in die Storefront geladen, wenn die URL Store-Code enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [Die Validierung der ACP2E-4156: [!DNL REST] API-Versandadresse ignoriert die Konfiguration des Admin-Attributs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
+      - v1.1.81 {#v1-1-81}
+         - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
    - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
    - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
