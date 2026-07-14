@@ -2,9 +2,11 @@
 user-guide-title: Tools
 user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie mit Adobe Commerce verwenden können, ihre Verwendungszwecke, den Installationsprozess und wie Sie Zugriff erhalten.
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: 6a72cf3e1d68d92675ac73c8c361414a340fd20b
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10343'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [Erweiterungen](site-wide-analysis-tool/extensions.md)
    - [Warnhinweise](site-wide-analysis-tool/alerts.md)
    - [Patches](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [Einführung](commerce-version-tool/intro.md)
+   - [Erstellen eines Patch-Statusberichts](commerce-version-tool/generate-report.md)
+   - [Fehlerbehebung](commerce-version-tool/troubleshooting.md)
+   - [Versionshinweise](commerce-version-tool/release-notes.md)
 - KAPPEN {#caps-tool}
    - {hide-from-toc}[Einführung](caps-tool/intro.md)
    - {hide-from-toc}[Zugriff](caps-tool/access.md)
