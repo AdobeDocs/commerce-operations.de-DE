@@ -23,7 +23,7 @@ Diese Best Practices basieren auf jahrelanger Erfahrung in der Entwicklung und B
 
 ## Textkonventionen
 
-Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS“, „DARF NICHT“, „SOLLTE NICHT“, „SOLLTE NICHT“, „EMPFOHLEN“, „MAI“ und „OPTIONAL“ in diesem Thema sind wie in [RFC 2119“ ](https://datatracker.ietf.org/doc/html/rfc2119).
+Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS“, „DARF NICHT“, „SOLLTE NICHT“, „SOLLTE NICHT“, „EMPFOHLEN“, „MAI“ und „OPTIONAL“ in diesem Thema sind wie in [RFC 2119“ &#x200B;](https://datatracker.ietf.org/doc/html/rfc2119).
 
 ## Prozess
 
@@ -43,13 +43,13 @@ Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS�
 ## Umgebung
 
 1. Alle Entwickler SOLLTEN dieselbe IDE verwenden. PhpStorm ist die empfohlene IDE für die Adobe Commerce-Entwicklung.
-1. Alle Entwickler SOLLTEN mit demselben Technologie-Stack entwickeln und testen, der auf den (zukünftigen) Produktions-Servern verwendet wird. Die Versionen der Software in diesem Technologie-Stack MÜSSEN mit der Haupt- und Nebenversion der auf den Produktions-Servern installierten Software übereinstimmen. Weitere [ zum typischen Technologie](../../../installation/system-requirements.md)Stack für Adobe Commerce finden Sie unter „Systemanforderungen“.
+1. Alle Entwickler SOLLTEN mit demselben Technologie-Stack entwickeln und testen, der auf den (zukünftigen) Produktions-Servern verwendet wird. Die Versionen der Software in diesem Technologie-Stack MÜSSEN mit der Haupt- und Nebenversion der auf den Produktions-Servern installierten Software übereinstimmen. Weitere [&#x200B; zum typischen Technologie](../../../installation/system-requirements.md)Stack für Adobe Commerce finden Sie unter „Systemanforderungen“.
 1. Der Systemadministrator oder technische Architekt kann dem Team eine zentral gepflegte lokale Entwicklungsumgebung zur Verfügung stellen, um gleiche und aktuelle lokale Umgebungen zu gewährleisten und zu fördern.
 1. Entwickler und QA-Techniker MÜSSEN Zugriff auf die Befehlszeile, die Datenbank und die Protokolldateien der QS-Umgebung haben. Dies erfordert MÖGLICHERWEISE eine VPN-Verbindung.
 
 ## Versionierung
 
-Modulversionen MÜSSEN dem Standard [Semantic Versioning 2.0.0“ ](https://semver.org/).
+Modulversionen MÜSSEN dem Standard [Semantic Versioning 2.0.0“ &#x200B;](https://semver.org/).
 Abhängigkeiten von der Adobe Commerce-Codebasis SOLLTEN den [Richtlinien für Modulversionsabhängigkeiten](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) entsprechen.
 
 ## REVISIONSKONTROLLE
