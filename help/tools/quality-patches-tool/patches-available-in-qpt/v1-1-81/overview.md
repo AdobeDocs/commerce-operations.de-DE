@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
+source-git-commit: 3f7c0db0da082e2cc83bb18d943c3e50aa99d2dc
 workflow-type: tm+mt
-source-wordcount: 272
+source-wordcount: 273
 ht-degree: 0%
 
 ---
@@ -35,6 +35,6 @@ QPT v1.1.81 enthält die folgenden Patches:
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: Es wird das Problem behoben, dass nicht verkaufbare oder gelöschte Produkte aus endgültigen verhandelbaren Angeboten verschwinden.
 1. **ACP2E-4709**: Es wurde ein Problem behoben, bei dem CMS-Seiten bei Verwendung von Page Builder nicht gespeichert wurden.
 1. **ACP2E-4786**: Fehlerkorrektur - Beim Exportieren von Produkten können Dateien nicht geschrieben werden, wenn der Remote-Speicher AWS S3 konfiguriert ist, da der Speichertreiber eine falsche Pfadauflösung aufweist.
-1. **ACP2E-4801**: Es wird das Problem behoben, dass die Aktualisierung der Produktoptionsmengen des Pakets über die Schaltfläche &quot;[!UICONTROL Configure]&quot; in einem verhandelbaren Angebot aus der [!UICONTROL Admin] nicht angewendet wird und Änderungen verworfen werden.
+1. **[ACP2E-4801](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)**: Es wird das Problem behoben, dass die Aktualisierung der Produktoptionsmengen des Pakets über die Schaltfläche &quot;**[!UICONTROL Configure]**&quot; in einem verhandelbaren Angebot vom Administrator nicht angewendet wird und Änderungen verworfen werden.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
