@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 3f7c0db0da082e2cc83bb18d943c3e50aa99d2dc
+source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
 workflow-type: tm+mt
-source-wordcount: '10396'
+source-wordcount: '10408'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
          - [Die Validierung der ACP2E-4156: [!DNL REST] API-Versandadresse ignoriert die Konfiguration des Admin-Attributs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4786: Produktexport schlägt fehl, wenn der Remote-Speicher AWS S3 konfiguriert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
          - [ACP2E-4801: Die Mengen der Bundle-Produktoptionen werden nicht aktualisiert, wenn ein verhandelbares Angebot in Admin neu konfiguriert wird](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
          - [ACP2E-4630: Lange Produktnamen überschneiden sich nach Seitenumbrüchen mit angrenzenden Spalten in mehrseitigen Verkaufs-PDFs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
          - [ACP2E-4680: Nicht absetzbare Produkte verschwinden aus abgeschlossenen verhandelbaren Notierungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)

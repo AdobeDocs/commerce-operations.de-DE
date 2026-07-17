@@ -3,9 +3,9 @@ title: Die Registerkarte [!UICONTROL Summary]
 description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL Summary]" von [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 5a0455b61824cb1946e29dba3ff7bfd9d225b110
+source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
 workflow-type: tm+mt
-source-wordcount: '2494'
+source-wordcount: '2636'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ Die [!UICONTROL Summary] Registerkarte von [!DNL Observation for Adobe Commerce]
 ![Transaktionsübersicht](../../assets/tools/transaction-overview.jpg)
 
 ### Was ist eine Transaktion?
+
+[Was ist eine Transaktion?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20often,when%20the%20response%20is%20sent)
 
 &quot;[!DNL New Relic] wird eine Transaktion als eine logische Arbeitseinheit in einer Softwareanwendung definiert. Insbesondere bezieht er sich auf die Funktionsaufrufe und Methodenaufrufe, aus denen diese Arbeitseinheit besteht. Häufig handelt es sich um eine Web-Transaktion. Dies stellt eine Aktivität dar, die stattfindet, wenn das Programm eine Web-Anfrage erhält, bis zum Zeitpunkt des Versands der Antwort.“
 
@@ -115,7 +117,7 @@ Der **[!UICONTROL Deployment State]** Rahmen facettiert bestimmte Bereitstellung
 * &#39;%Set Flag: .static_content_deploy%&#39;) als &#39;SCD&#39;
 * &#39;%NOTICE: Generate-Befehl abgeschlossen%&#39;) als &#39;gen_compl&#39;
 * &#39;%NOTICE: Bereitstellung abgeschlossen%&#39;) als &#39;deploy_compl&#39;
-* &#39;%NOTICE: Nach der Bereitstellung wird gestartet.%&#39;) als &#39;start_pdeploy&#39; angegeben
+* &#39;%NOTICE: Post-deploy.%&#39;) als &#39;start_deploy&#39; gestartet
 * &#39;%NOTICE: Post-deploy is complete%&#39;) as &#39;pdeploy&#39;
 * &#39;%deploy-complete%&#39;) als &#39;CL_deploy_compl&#39;
 
@@ -184,7 +186,7 @@ Der **[!UICONTROL Nginx access by node]** zeigt die Anzahl der `access.log` nach
 * &#39;%members = 2/3 (verbunden/insgesamt)%&#39;) als &#39;2of3&#39;
 * &#39;%members = 2/2%&#39;) als &#39;2of2&#39; * &#39;%members = 1/2%&#39;) als &#39;1of2&#39; * &#39;%members = 1/3%&#39;) als &#39;1of3&#39;
 * &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
-* &#39;%\[Hinweis\] /usr/sbin/mysqld (mysqld 10.%&#39;) als &#39;SQL_RESTART&#39;
+* &#39;%\[Hinweis\] /usr/sbin/mysqld (mysqld 10.%&#39;) als &#39;sql_restart&#39;
 * &#39;%Quorum: Kein Knoten mit vollständigem Status:%&#39;) als &#39;no_node_count&#39;
 * %WSREP: Mitglied 0%) als &#39;mem_0&#39;
 * &#39;%WSREP: Mitglied 1.0%&#39;) als &#39;mem_1&#39;
@@ -295,7 +297,7 @@ Der **[!UICONTROL PHP errors]** zeigt die Anzahl der PHP-Fehler mit Workern im a
 **PHP-Fehler und -Meldungen:**
 
 * &#39;%WORKER_CONNECTIONS&#39; sind nicht genug%&#39;) als &#39;Worker&#39;
-* &#39;%PHP Schwerwiegender Fehler: Zulässige Speichergröße!%&#39;) als &#39;mem_size&#39; angegeben
+* &#39;%PHP Schwerwiegender Fehler: Zulässige Speichergröße!%&#39;) als &#39;mem_size&#39;
 * &#39;%bei Signal 11 (SIGSEGV)%&#39; als &#39;sig_11&#39; beendet
 * &#39;%beendet am Signal 7 (SIGBUS)%&#39;) als &#39;sig_7&#39;
 * &#39;%PM.START_SERVERS%&#39; erhöhen) als &#39;PMSTART_SERV&#39;
