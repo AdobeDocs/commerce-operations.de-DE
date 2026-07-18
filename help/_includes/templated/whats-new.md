@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5629025bd6a2fd492ac368e2680a70f9cc256339
+source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2772'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,96 @@ ht-degree: 0%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;16. Juli 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der QPT 1.1.81-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801: Die Mengen der Bundle-Produktoptionen werden nicht aktualisiert, wenn ein verhandelbares Angebot in Admin neu konfiguriert </a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.81 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786: Produktexport schlägt fehl, wenn der AWS S3-Remote-Speicher konfiguriert ist</a>.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7ca2e40743aa512b0bc785e486d3e7d1c6dbefc">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;15. Juli 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.81 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630: Lange Produktnamen überschneiden sich nach Seitenumbrüchen mit angrenzenden Spalten in mehrseitigen Verkaufs-PDFs</a> wurde hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5581e6f7a507bb83a3fc0fd7229239137b15acd7">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;14. Juli 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.81-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300: Storefront-Katalogberechtigungen werden nach der Änderung der Admin-Kundengruppe nicht aktualisiert</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Es wurde eine detaillierte Beschreibung der QPT-1.1.81-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680: Nicht verkaufbare Produkte verschwinden aus endgültigen verhandelbaren Angeboten</a> hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">verpflichten</a></td>
+    </tr>
+    <tr>
+      <td><p>Die Dokumentation zum <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/commerce-version-tool/intro">Commerce-Versions-Tool</a> mit Verfügbarkeits-, Berichterstellungs-, JSON- und CSV-Ausgabe, Fehlerbehebung und Versionshinweisen für die monatliche Berichterstellung zum Adobe Commerce-Sicherheits-Patch-Status wurde hinzugefügt.</p>
+</td>
+      <td>
+        Neues Thema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;10. Juli 2026
 
