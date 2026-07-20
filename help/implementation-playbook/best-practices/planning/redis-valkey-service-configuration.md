@@ -328,14 +328,14 @@ stage:
 
 >[!NOTE]
 >
->Der `full_page`-Cache-Typ ist für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da sie &quot;[&quot; ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>Der `full_page`-Cache-Typ ist für Adobe Commerce in Cloud-Infrastrukturprojekten nicht relevant, da sie &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 >[!WARNING]
 >
 >Die obige Konfiguration ermöglicht veralteten Cache im Frontend für den `default`-Cache, das veraltetes Cache-Verhalten auf alle Cache-Einträge anwendet, die dieses Frontend verwenden. Magento Core-Cache-Typen funktionieren in der Regel mit dieser Einstellung wie erwartet. Wenn Ihr Projekt jedoch benutzerdefinierten Code oder Erweiterungen enthält, die über die generische `\Magento\Framework\App\Cache`-API (z. B. `$this->cache->save()`) ohne dediziertes Cache-Frontend in den Cache schreiben, können diese Einträge während der Regenerierung auch veraltete Werte liefern.
 >
 >
->Wenn dies zu unerwartetem Verhalten in Ihren Anpassungen führt, lassen Sie den veralteten Cache im `default`-Frontend deaktiviert und aktivieren Sie ihn nur für ausgewählte Cache-Typen, wie es häufig [lokal) ](../../../configuration/cache/level-two-cache.md#stale-cache-options).
+>Wenn dies zu unerwartetem Verhalten in Ihren Anpassungen führt, lassen Sie den veralteten Cache im `default`-Frontend deaktiviert und aktivieren Sie ihn nur für ausgewählte Cache-Typen, wie es häufig [lokal) &#x200B;](../../../configuration/cache/level-two-cache.md#stale-cache-options).
 
 ### Veralteter Cache pro Cache-Typ einzeln aktivieren
 
@@ -629,7 +629,7 @@ Gehen Sie wie folgt vor, um eine dedizierte Instanz für Sitzungen bereitzustell
 
 ## Cache-Komprimierung
 
-Wenn Sie mehr als 6 GB Redis- oder Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung aktivieren, um den von Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass diese Einstellung Client-seitige Leistung gegen Speichereinsparungen eintauscht. Wenn Sie über freie CPU-Kapazität verfügen, sollten Sie diese aktivieren. Siehe [Verwenden von Redis für ](../../../configuration/cache/redis-session.md) oder [Verwenden von Valkey für ](../../../configuration/cache/valkey-session.md) im _Konfigurationshandbuch_.
+Wenn Sie mehr als 6 GB Redis- oder Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung aktivieren, um den von Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass diese Einstellung Client-seitige Leistung gegen Speichereinsparungen eintauscht. Wenn Sie über freie CPU-Kapazität verfügen, sollten Sie diese aktivieren. Siehe [Verwenden von Redis für &#x200B;](../../../configuration/cache/redis-session.md) oder [Verwenden von Valkey für &#x200B;](../../../configuration/cache/valkey-session.md) im _Konfigurationshandbuch_.
 
 ```yaml
 stage:
