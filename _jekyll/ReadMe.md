@@ -33,7 +33,7 @@ bundle exec rake whatsnew_bp since="jul 4"
 
 ### `get_released_versions`
 
-Ruft die letzten 10 veröffentlichten Versionen aus dem `magento/magento2`-Repository ab. Erfordert [ Installation und Authentifizierung von ](https://cli.github.com/)GitHub CLI“.
+Ruft die letzten 10 veröffentlichten Versionen aus dem `magento/magento2`-Repository ab. Erfordert [&#x200B; Installation und Authentifizierung von &#x200B;](https://cli.github.com/)GitHub CLI“.
 
 **Nutzung:**
 
@@ -45,7 +45,7 @@ bundle exec rake get_released_versions
 
 ### `first_merge_date`
 
-Ruft das Datum der ersten Zusammenführung mit einer angegebenen Verzweigung ab. Erfordert [ Installation und Authentifizierung von ](https://cli.github.com/)GitHub CLI“.
+Ruft das Datum der ersten Zusammenführung mit einer angegebenen Verzweigung ab. Erfordert [&#x200B; Installation und Authentifizierung von &#x200B;](https://cli.github.com/)GitHub CLI“.
 
 **Nutzung:**
 
