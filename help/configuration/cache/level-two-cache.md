@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: efeccc00d057a7e7115f1b156c3d9202ab476ded
+source-git-commit: d92082d5311d8cfccc1299d0014c238cbaf102e3
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 826
 ht-degree: 0%
 
 ---
@@ -45,13 +45,17 @@ Es stehen zwei L2-Cache-Implementierungen zur Verfügung:
 | [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend-basierter Zwei-Ebenen-Cache mit `Cm_Cache_Backend_File` für lokalen Speicher |
 | [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-basiertes L2 mit PSR-6-Konformität und verbesserter Leistung |
 
->[!NOTE]
->
->Konfigurieren Sie für Adobe Commerce on Cloud den L2-Cache, indem Sie die Variable [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend) oder [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) in `.magento.env.yaml` festlegen. Konfigurationsbeispiele finden Sie [Konfigurieren des L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)Cache).
-
 ## Konfiguration des alten L2-Cache (RemoteSynchronizedCache)
 
-Verwenden Sie das folgende Beispiel, um den vorhandenen Cache-Abschnitt in der `app/etc/env.php`-Datei zu ändern oder zu ersetzen.
+>[!NOTE]
+>
+>Die Konfigurationsanweisungen für den alten L2-Cache gelten für ältere Versionen von Adobe Commerce. Wenn Sie Adobe Commerce Version 2.4.9 oder höher verwenden, empfiehlt Adobe die Verwendung von [Symfony 2 für L2-Cache](#modern-symfony-l2-cache-implementation).
+
+Die Anweisungen zur Cache-Konfiguration hängen von Ihrem Bereitstellungstyp ab:
+
+- **Für Adobe Commerce in Cloud** konfigurieren Sie den L2-Cache, indem Sie die Variable &quot;[`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#redis_backend)&quot; oder &quot;[`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) deploy“ in `.magento.env.yaml` festlegen. Konfigurationsbeispiele finden Sie [Konfigurieren des L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache)Cache).
+
+- **Für lokale Adobe Commerce-Versionen, die Redis unterstützen** verwenden Sie das folgende Beispiel, um den vorhandenen Cache-Abschnitt in der `app/etc/env.php`-Datei zu ändern oder zu ersetzen.
 
 ```php
 'cache' => [
@@ -81,20 +85,20 @@ Verwenden Sie das folgende Beispiel, um den vorhandenen Cache-Abschnitt in der `
     'type' => [
         'default' => ['frontend' => 'default'],
     ],
-],
+]
 ```
 
 Dabei gilt:
 
 - `backend` ist die L2-Cache-Implementierung.
 - `backend_options` ist die L2-Cache-Konfiguration.
-   - `remote_backend` ist die Remote-Cache-Implementierung: Redis oder MySQL.
-   - `remote_backend_options` ist die Remote-Cache-Konfiguration.
-   - `local_backend` ist die lokale Cache-Implementierung: `Cm_Cache_Backend_File`
-   - `local_backend_options` ist die lokale Cache-Konfiguration.
-   - `cache_dir` ist eine Datei-Cache-spezifische Option für das Verzeichnis, in dem der lokale Cache gespeichert ist.
+  - `remote_backend` ist die Remote-Cache-Implementierung: Redis oder MySQL.
+  - `remote_backend_options` ist die Remote-Cache-Konfiguration.
+  - `local_backend` ist die lokale Cache-Implementierung: `Cm_Cache_Backend_File`
+  - `local_backend_options` ist die lokale Cache-Konfiguration.
+  - `cache_dir` ist eine Datei-Cache-spezifische Option für das Verzeichnis, in dem der lokale Cache gespeichert ist.
 
-Adobe empfiehlt die Verwendung von Redis für das Remote-Caching (`\Magento\Framework\Cache\Backend\Redis`) und `Cm_Cache_Backend_File` für das lokale Caching von Daten im gemeinsamen Speicher mit: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Für Adobe Commerce empfiehlt Adobe die Verwendung von Redis für das Remote-Caching (`\Magento\Framework\Cache\Backend\Redis`) und `Cm_Cache_Backend_File` für das lokale Caching von Daten im gemeinsamen Speicher mit: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
 Adobe empfiehlt die Verwendung der [`cache preload`](redis-pg-cache.md#redis-preload-feature)-Funktion, da sie den Druck auf Redis drastisch verringert. Vergessen Sie nicht, das Suffix &quot;:hash&quot; für Vorabladeschlüssel hinzuzufügen.
 
@@ -184,11 +188,11 @@ Der folgende Code zeigt eine Beispielkonfiguration:
 
 ## Moderne Symfony L2-Cache-Implementierung
 
-Ab Commerce 2.4.9 können Sie die L2-Cache-basierte Implementierung von Symfony (`symfony_l2`-Backend) verwenden, die eine moderne, PSR-6-konforme Caching-Implementierung mit erheblichen Leistungsverbesserungen gegenüber herkömmlichen `RemoteSynchronizedCache` bietet.
+Verwenden Sie in Commerce ab Version 2.4.9 die Symfony Cache-basierte L2-Cache-Implementierung (`symfony_l2`-Backend) anstelle des alten L2-Cache.  Der Symfony L2-Cache bietet eine moderne, PSR-6-konforme Caching-Implementierung mit deutlichen Leistungsverbesserungen gegenüber herkömmlichen `RemoteSynchronizedCache`.
 
 >[!NOTE]
 >
->Diese Funktion ist derzeit nur für Kunden von Adobe Commerce On Premise 2.4.9 verfügbar. Sie wird im Juli 2026 für Adobe Commerce on Cloud aktiviert.
+>Für Adobe Commerce on Cloud verwaltet das ECE-Tools-Paket (`ece-tools`) diese Konfiguration automatisch. `app/etc/env.php` nicht direkt bearbeiten - manuelle Änderungen werden durch die Bereitstellung überschrieben. Informationen zur Cloud-Konfiguration finden Sie [Konfigurieren des Symfony L2-Cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache).
 
 ### Vorteile des Symfony L2-Cache
 

@@ -18,7 +18,7 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
 workflow-type: tm+mt
 source-wordcount: 309
 ht-degree: 0%
@@ -31,6 +31,10 @@ ht-degree: 0%
 
 Die Commerce-Anwendung verwendet ein Cache-Frontend und ein Backend auf niedriger Ebene, um Zugriff auf den Cache-Speicher zu gewähren. Commerce unterstützt verschiedene Caching-Backends und -Strategien, die jeweils für verschiedene Anwendungsfälle geeignet sind. Auf dieser Seite werden die verfügbaren Backends und deren Unterschiede beschrieben.
 
+>[!NOTE]
+>
+>[Varnish](config-varnish.md) verarbeitet das Caching ganzer Seiten auf HTTP-Ebene und verwendet nicht das Cache-Backend auf niedriger Ebene.
+
 ## Backend-Cache-Optionen
 
 In der folgenden Tabelle sind die verfügbaren Backend-Caches zusammengefasst:
@@ -42,9 +46,9 @@ In der folgenden Tabelle sind die verfügbaren Backend-Caches zusammengefasst:
 | [Valkey](config-valkey.md) | Open-Source, Redis-kompatible Alternative. | [Valkey für Standardcache verwenden](valkey-pg-cache.md) |
 | [Datenbank](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Datenbankgestütztes Caching. | [Erstellen benutzerdefinierter Cache-Engines](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (Entwicklerdokumentation für Adobe) |
 
->[!NOTE]
+>[!IMPORTANT]
 >
->[Varnish](config-varnish.md) verarbeitet das Caching ganzer Seiten auf HTTP-Ebene und verwendet nicht das Cache-Backend auf niedriger Ebene.
+>{{redis-cache-support}}
 
 ## Implementierungsansätze
 

@@ -9,9 +9,10 @@ feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce in Cloud Manager" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten."
-source-git-commit: e8e8471313a4e9f7a595b1222d7a246bce63f097
+nudge: true
+source-git-commit: 78f8259a686402045614210efe6488c5cf5cc6bd
 workflow-type: tm+mt
-source-wordcount: '2311'
+source-wordcount: '2337'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,6 @@ Konfigurieren Sie für Adobe Commerce 2.4.9 und neuere Versionen als 2.4.8-p4, 2
 
 Implementierungsdetails, Konfigurationsbeispiele und bereitstellungsspezifische Anleitungen finden Sie unter [L2-Cache-Konfiguration zur Leistungsoptimierung](../../../configuration/cache/level-two-cache.md).
 
-
 >[!IMPORTANT]
 >
 >Redis-Cache wird für Adobe Commerce 2.4.9 oder für Patch-Versionen nach 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 und 2.4.8-p4 nicht unterstützt. Verwenden Sie Valley für die Cache-Konfiguration, bei der Redis nicht unterstützt wird. Siehe [Systemanforderungen](../../../installation/system-requirements.md) für unterstützte Cache-Services nach Version.
@@ -50,7 +50,7 @@ Implementierungsdetails, Konfigurationsbeispiele und bereitstellungsspezifische 
 
 >[!TAB Valkey-Konfiguration]
 
-Verwenden Sie für Valley Folgendes:
+Verwenden Sie für Valley mit der alten Cache-Implementierung:
 
 ```yaml
 stage:
@@ -58,7 +58,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Details zur Umgebungskonfiguration finden Sie unter [`VALKEY_BACKEND`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) von Konfigurationsvariablen im Handbuch _Commerce on Cloud Infrastructure_.
+Für Valkey mit der modernen Symfony L2-Cache-Implementierung siehe [Konfigurieren des Symfony L2-Cache](#configure-symfony-l2-cache).
 
 >[!TAB Redis-Konfiguration]
 
@@ -76,92 +76,29 @@ Weitere Informationen zur Umgebungskonfiguration finden Sie unter [`REDIS_BACKEN
 
 ### Konfigurieren [!DNL Symfony] L2-Cache
 
-Adobe Commerce 2.4.9 und höher unterstützt das `symfony_l2`-Cache-Backend. Konfigurieren Sie in Adobe Commerce auf der Cloud-Infrastruktur dieses Backend nur, nachdem Ihr Projekt eine `ece-tools`-Version verwendet hat, die `symfony_l2` in `.magento.env.yaml` unterstützt.
-
-Das `symfony_l2`-Backend ist die Cache-Implementierung, die Adobe Commerce verwendet, um das L1- und L2-Cache-Verhalten zu verwalten. Redis oder Valley als Remote-Cache-Service wird nicht ersetzt. Konfigurieren Sie für Adobe Commerce 2.4.9 `symfony_l2` mit Valkey als Remote-Backend.
+Adobe Commerce 2.4.9 und höher unterstützt das `symfony_l2`-Cache-Backend. Das `symfony_l2`-Backend ist die Cache-Implementierung, die Adobe Commerce verwendet, um das L1- und L2-Cache-Verhalten zu verwalten. Redis oder Valley als Remote-Cache-Service wird nicht ersetzt.
 
 >[!IMPORTANT]
 >
->Konfigurieren Sie `symfony_l2` nicht manuell in `app/etc/env.php` as a persistente Konfiguration für Adobe Commerce in Cloud-Infrastrukturen, bis `ece-tools` Unterstützung für Ihr Projekt verfügbar ist. Die Bereitstellung kann manuelle `env.php` überschreiben. Wenn `ece-tools` nicht `symfony_l2` gilt, kann Commerce auf den dateibasierten Cache zurückgreifen. Dieser Fallback kann die Festplatten-E/A erhöhen, den Overhead bei der Dateisystemreplikation in Umgebungen mit mehreren Knoten erhöhen und die Leistung beeinträchtigen.
+>Konfigurieren Sie `symfony_l2` nicht manuell in `app/etc/env.php` als persistente Konfiguration für Adobe Commerce in der Cloud-Infrastruktur. Die Bereitstellung kann manuelle `env.php` überschreiben. Wenn `ece-tools` nicht `symfony_l2` gilt, kann Commerce auf den dateibasierten Cache zurückgreifen. Dieser Fallback kann die Festplatten-E/A erhöhen, den Overhead bei der Dateisystemreplikation in Umgebungen mit mehreren Knoten erhöhen und die Leistung beeinträchtigen.
 
-Wenn `ece-tools` Unterstützung verfügbar ist, setzen Sie die Variable Valkey Backend auf `symfony_l2` und definieren Sie die L2-Backend-Optionen in `CACHE_CONFIGURATION`.
+Um `symfony_l2` Cache für Adobe Commerce 2.4.9 zu verwenden, führen Sie die folgenden Schritte aus:
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 1
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-```
+- Stellen Sie sicher, dass das Cloud-Projekt das [ECE-Tools-Paket v2002.1.12](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) oder höher verwendet.
 
-Um veralteten Cache für ausgewählte Cache-Typen mit `symfony_l2` zu aktivieren, definieren Sie ein zweites Frontend mit `use_stale_cache: true` und ordnen Sie dann die ausgewählten Cache-Typen diesem Frontend zu. Verwenden Sie für jedes Frontend unterschiedliche lokale Cache-Verzeichnisse und persistente IDs.
+- Legen Sie die Bereitstellungsvariable in der `.magento.env.yaml` fest: `VALKEY_BACKEND`=`symfony_l2`.
 
-```yaml
-stage:
-  deploy:
-    VALKEY_BACKEND: symfony_l2
-    CACHE_CONFIGURATION:
-      _merge: true
-      frontend:
-        default:
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_default
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1
-        stale_cache_enabled:
-          backend: symfony_l2
-          backend_options:
-            remote_backend: valkey
-            remote_backend_options:
-              server: localhost
-              database: 0
-              port: 6370
-              serializer: igbinary
-              compression_lib: gzip
-              persistent_id: magento_l2_stale
-            local_backend: file
-            local_backend_options:
-              cache_dir: /dev/shm/magento_l1_stale
-            use_stale_cache: true
-      type:
-        default:
-          frontend: default
-        layout:
-          frontend: stale_cache_enabled
-        block_html:
-          frontend: stale_cache_enabled
-        reflection:
-          frontend: stale_cache_enabled
-        config_integration:
-          frontend: stale_cache_enabled
-        config_integration_api:
-          frontend: stale_cache_enabled
-        translate:
-          frontend: stale_cache_enabled
-```
+  ```yaml
+  stage:
+    deploy:
+      VALKEY_BACKEND: symfony_l2
+  ```
 
+Wenn Sie die `VALKEY_BACKEND` Bereitstellungsvariable auf `symfony_l2` setzen, wird automatisch die vollständige L2-Cache-Konfiguration aus Ihren Valkey-Service-Verbindungsdetails erstellt, einschließlich eines `default`-Frontends und eines `stale_cache_enabled`-Frontends, mit zwischenspeicherbaren Typen wie `layout`, `block_html`, `full_page` und `translate`, die bereits dem veralteten Frontend zugeordnet sind. Sie müssen keine `CACHE_CONFIGURATION` definieren, um `symfony_l2` zu verwenden.
+
+>[!CAUTION]
+>
+>Überschreiben Sie beim Aktualisieren der `.magento.env.yaml`-Konfiguration nicht `server` oder `port`, es sei denn, Sie verweisen absichtlich auf einen anderen Cache-Endpunkt als den Valkey-Service Ihres Projekts. Das ECE-Tool-Paket leitet diese Werte automatisch von Ihrer Valley-Service-Beziehung ab. Das Überschreiben mit einem falschen Wert führt dazu, dass die Bereitstellung mit einem Cache-Verbindungsfehler fehlschlägt.
 
 ### L2-Cache-Speicherdimensionierung für Adobe Commerce Cloud
 
@@ -170,7 +107,8 @@ Der L2-Cache nutzt ein [temporäres Dateisystem](https://en.wikipedia.org/wiki/T
 Passen Sie die maximale L2-Cache-Speichernutzung an Ihre Projektanforderungen an. Verwenden Sie eine der folgenden Methoden:
 
 - Erstellen Sie ein Support-Ticket, um die Größe der `/dev/shm`-Bereitstellung anzupassen. Für dieses Szenario empfiehlt Adobe, die `/dev/shm`-Bereitstellungsgröße auf 15 GB festzulegen.
-- Passen Sie die `cleanup_percentage` Eigenschaft auf Anwendungsebene an, um die Speicherauslastung zu begrenzen und den für andere Services verfügbaren freien Speicher zu nutzen.Sie können die Konfiguration in der Bereitstellungskonfiguration unter der Cache-Konfigurationsgruppe `cache/frontend/default/backend_options/cleanup_percentage` anpassen.
+- Passen Sie die `cleanup_percentage` Eigenschaft auf Anwendungsebene an, um die Speicherauslastung zu begrenzen und den für andere Services verfügbaren freien Speicher zu nutzen.
+Sie können die Konfiguration in der Bereitstellungskonfiguration unter der Cache-Konfigurationsgruppe `cache/frontend/default/backend_options/cleanup_percentage` anpassen.
 
 >[!NOTE]
 >
