@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ Wir freuen uns über Beiträge von der Community sowie von Adobe-Mitarbeitern vo
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md) den [.NET Foundation-Verhaltenskodex &#x200B;](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md) den [.NET Foundation-Verhaltenskodex ](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
 
 ## Über Ihre Beiträge zu Adobe-Inhalten
 
@@ -21,7 +21,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 ### Geringfügige Änderungen
 
-Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe[&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)Dokumenten .
+Wenn Sie kleinere Aktualisierungen beitragen möchten, besuchen Sie den Artikel und klicken Sie auf den Feedback-Bereich unten im Artikel, klicken Sie auf **Detaillierte Feedback-Optionen** und dann auf **Bearbeiten vorschlagen**, um zur Markdown-Quelldatei auf GitHub zu gelangen. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden für Beitragende zu Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)Dokumenten .[
 
 Kleinere Korrekturen oder Erläuterungen, die Sie zur Dokumentation und zu Code-Beispielen in diesem Repository eingeben, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -31,13 +31,13 @@ Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wi
 
 ### Wesentliche Veränderungen durch Adobe Mitarbeiter
 
-Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs` verwenden.
+Wenn Sie technischer Redakteur/technische Redakteurin, Programm-Manager oder Entwickler(in) des Produkt-Teams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs` verwenden.
 
 ## Tools und Einrichtung
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#128279;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) Dokumenten .
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) Dokumenten .[
 
 ## Verwenden von Markdown zum Formatieren des Themas
 
@@ -76,11 +76,14 @@ Detaillierte Setup-Anweisungen, Fehlerbehebung und Konfiguration finden Sie unte
 
 ## Verfügbare Rake-Aufgaben
 
-Dieses Repository verwendet RAKE-Aufgaben, die vom `adobe-comdox-exl-rake-tasks`-Gem bereitgestellt werden. Um alle verfügbaren Aufgaben anzuzeigen, führen Sie Folgendes aus:
+Dieses Repository verwendet RAKE-Aufgaben, die vom bereitgestellt werden.
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Um alle verfügbaren Aufgaben anzuzeigen, führen Sie Folgendes aus:
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+Für repo-spezifische Aufgaben umfassen die Beziehungen Dateiformat und Setup .
+Einzelheiten siehe [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md).
