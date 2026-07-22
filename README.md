@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Wenn Sie Teil der Adobe-Community sind und einen neuen Artikel erstellen oder wi
 
 ### Wesentliche Veränderungen durch Adobe Mitarbeiter
 
-Wenn Sie technischer Redakteur/technische Redakteurin, Programmmanager oder Entwickler(in) des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs` verwenden.
+Wenn Sie technischer Redakteur/technische Redakteurin, Programm-Manager oder Entwickler(in) des Produkt-Teams für eine Adobe Experience Cloud-Lösung sind und es Ihre Aufgabe ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://github.com/Adobe-Enterprise-Docs` verwenden.
 
 ## Tools und Einrichtung
 
@@ -76,11 +76,14 @@ Detaillierte Setup-Anweisungen, Fehlerbehebung und Konfiguration finden Sie unte
 
 ## Verfügbare Rake-Aufgaben
 
-Dieses Repository verwendet RAKE-Aufgaben, die vom `adobe-comdox-exl-rake-tasks`-Gem bereitgestellt werden. Um alle verfügbaren Aufgaben anzuzeigen, führen Sie Folgendes aus:
+Dieses Repository verwendet RAKE-Aufgaben, die vom bereitgestellt werden.
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Um alle verfügbaren Aufgaben anzuzeigen, führen Sie Folgendes aus:
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+Für repo-spezifische Aufgaben umfassen die Beziehungen Dateiformat und Setup .
+Einzelheiten siehe [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md).
