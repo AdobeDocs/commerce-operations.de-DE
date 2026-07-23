@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: db5e09759abee078ed36e097b397f2dacbc2fef7
+source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
 workflow-type: tm+mt
-source-wordcount: '10433'
+source-wordcount: '10465'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
       - [Die Validierung der ACP2E-4156: [!DNL REST] API-Versandadresse ignoriert die Konfiguration des Admin-Attributs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
     - v1.1.81 {#v1-1-81}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+      - [ACP2E-4395: Geschenkkartenprodukte können über API ohne Betrag im globalen Umfang erstellt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)
       - [ACP2E-4401: [!UICONTROL Scheduled Update Preview] der [!UICONTROL Home Page] mit konfigurierbaren Produkten leitet zur [!UICONTROL maintenance page] weiter](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)
       - [ACP2E-4468: Admin-Benutzer mit Websitebereich können keine dynamischen Blöcke in Page Builder speichern](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)
       - [ACP2E-4786: Produktexport schlägt fehl, wenn der Remote-Speicher AWS S3 konfiguriert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
@@ -1040,6 +1041,7 @@ ht-degree: 0%
       - [ACP2E-4630: Lange Produktnamen überschneiden sich nach Seitenumbrüchen mit angrenzenden Spalten in mehrseitigen Verkaufs-PDFs](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
       - [ACP2E-4680: Nicht absetzbare Produkte verschwinden aus abgeschlossenen verhandelbaren Notierungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300: Katalogberechtigungen für Storefront werden nach Änderung der Admin-Kundengruppe nicht aktualisiert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
+      - [ACP2E-4709: CMS-Seiten werden in Page Builder nicht gespeichert, wenn die Seitenhierarchie doppelte Anführungszeichen enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
   - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
   - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 34c1e3ed0ed46fc17bf4492036a8f43658b24bda
+source-git-commit: 7c944faaf6f9769ee6aba1e811aa93a5263f13cf
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 70%
+source-wordcount: '162'
+ht-degree: 71%
 
 ---
 # Cloud-Anforderungstabelle
@@ -30,7 +30,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          11.8, 12.3<sup>1</sup>
+          12.3
       </td>
     </tr>
     <tr>
@@ -48,7 +48,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
     </tr>
     <tr>
@@ -66,7 +66,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
     </tr>
   </tbody>
@@ -129,7 +129,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -156,7 +156,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -222,7 +222,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -258,7 +258,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -324,7 +324,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -360,7 +360,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -426,7 +426,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
-          4.2
+          4.3
       </td>
       <td>
           4.1
@@ -462,7 +462,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28
@@ -537,7 +537,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
-          1.28
+          1.30
       </td>
       <td>
           1.28

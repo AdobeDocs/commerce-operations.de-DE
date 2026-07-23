@@ -2,9 +2,9 @@
 title: Systemanforderungen
 description: Erfahren Sie mehr über Softwareabhängigkeiten und Systemanforderungen für Adobe Commerce. Informationen zur Kompatibilität mit Ihrer Bereitstellungsumgebung finden Sie unter Getestete Konfigurationen .
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+source-git-commit: 7c944faaf6f9769ee6aba1e811aa93a5263f13cf
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,6 @@ In den folgenden Tabellen sind die Systemanforderungen für die neueste Version 
 Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt eine Standardkonfiguration für Services bereit, die mit der neuesten Commerce-Version für jede Release-Zeile kompatibel sind.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
-
-**<sup>1</sup>Kompatibilität zwischen MariaDB 12.3 und Adobe Commerce 2.4.9**
-Die Kompatibilität zwischen MariaDB 12.3 und Adobe Commerce 2.4.9 wird nach der offiziellen Version von MariaDB 12.3, die im Zeitraum Mai-Juni erwartet wird, bestätigt.
 
 Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce in Cloud-*.
@@ -131,8 +128,8 @@ Adobe empfiehlt aus Leistungsgründen zu überprüfen, ob [PHP OPcache](https://
 
 - **Bei Adobe Commerce in Cloud** Infrastrukturbereitstellungen wird die `opcache`-Erweiterung standardmäßig installiert.
 - **Für lokale Adobe Commerce-Bereitstellungen:**
-   - [Überprüfen Sie, ob die PHP OPcache-Erweiterung installiert ist](prerequisites/php-settings.md#verify-php-is-installed).
-   - Spezifische Anleitungen zu Leistungseinstellungen finden Sie in den Softwareempfehlungen für [PHP-Einstellungen](../performance/software.md#php-settings) im *Performance Best Practices*-Handbuch.
+  - [Überprüfen Sie, ob die PHP OPcache-Erweiterung installiert ist](prerequisites/php-settings.md#verify-php-is-installed).
+  - Spezifische Anleitungen zu Leistungseinstellungen finden Sie in den Softwareempfehlungen für [PHP-Einstellungen](../performance/software.md#php-settings) im *Performance Best Practices*-Handbuch.
 
 
 Wenn Sie OPcache separat installieren müssen, lesen Sie die [PHP OPcache-Dokumentation](https://www.php.net/manual/en/opcache.setup.php).
@@ -232,4 +229,4 @@ Informationen zu Adobe Commerce on Cloud finden Sie [Konfigurieren von Xdebug](h
 >
 >Es gibt ein bekanntes Problem mit `xdebug`, das sich auf Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder den Admin nach der Installation auswirken kann. Siehe [Bekanntes Problem, das `xdebug` Installation betrifft](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in der _Commerce Support Knowledge Base_.
 
-<!-- Last updated from includes: 2026-06-01 15:26:19 -->
+<!-- Last updated from includes: 2026-06-16 11:15:50 -->
