@@ -16,10 +16,10 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: d3c3e48c7627b932d1e46a7d2a99fa77b8b75b4c
 workflow-type: tm+mt
-source-wordcount: 507
-ht-degree: 1%
+source-wordcount: 486
+ht-degree: 0%
 
 ---
 
@@ -99,13 +99,14 @@ Sie können die Konfigurationsoptionen für Frontend- und Backend-Cache in `env.
 
 Dabei gilt:
 
-- `<frontend_type>` - Der Frontend-Cache-Typ auf niedriger Ebene. Geben Sie einen Klassennamen an, der mit `Zend\Cache\Core` kompatibel ist.Wenn ausgelassen, wird [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) verwendet.
+- `<frontend_type>` - Der Frontend-Cache-Typ auf niedriger Ebene. Geben Sie einen Klassennamen an, der mit `Zend\Cache\Core` kompatibel ist.
+Wenn ausgelassen, wird [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php) verwendet.
 
 - `<frontend_option>`, `<frontend_option_value>` - Name und Wert der Optionen, die das Commerce-Framework bei der Erstellung als assoziatives Array an den Frontend-Cache übergibt.
 
 - `<backend_type>` - Der Backend-Cache-Typ auf niedriger Ebene. Sie können Folgendes angeben:
-   - **Modern Symfony Cache (2.4.9+, empfohlen)**: Vereinfachte Namen wie `redis`, `valkey` oder `file`
-   - **Legacy (Zend-basiert)** Vollständiger Klassenname kompatibel mit `Zend_Cache_Backend`, die `Zend_Cache_Backend_Interface` implementiert
+  - **Modern Symfony Cache (2.4.9+, empfohlen)**: Vereinfachte Namen wie `valkey` oder `file`
+  - **Legacy (Zend-basiert)** Vollständiger Klassenname kompatibel mit `Zend_Cache_Backend`, die `Zend_Cache_Backend_Interface` implementiert
 
 - `<backend_option>`, `<backend_option_value>` - Name und Wert der Optionen, die das Commerce-Framework bei der Erstellung als assoziatives Array an den Backend-Cache übergibt.
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7c944faaf6f9769ee6aba1e811aa93a5263f13cf
+source-git-commit: 16216a50c7a0fea4979e0d69b19fbfdbc3444c06
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 71%
+source-wordcount: '164'
+ht-degree: 70%
 
 ---
 # Cloud-Anforderungstabelle
@@ -30,7 +30,7 @@ ht-degree: 71%
     <tr>
       <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
-          12.3
+          12.3 (empfohlen), 11.8
       </td>
     </tr>
     <tr>

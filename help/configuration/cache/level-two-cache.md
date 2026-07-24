@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d92082d5311d8cfccc1299d0014c238cbaf102e3
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 1166
 ht-degree: 0%
 
 ---
@@ -42,14 +42,14 @@ Es stehen zwei L2-Cache-Implementierungen zur Verfügung:
 
 | Implementierung | Version | Beschreibung |
 | -------------- | ------- | ----------- |
-| [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Zend-basierter Zwei-Ebenen-Cache mit `Cm_Cache_Backend_File` für lokalen Speicher |
-| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-basiertes L2 mit PSR-6-Konformität und verbesserter Leistung |
+| [Legacy (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | &lt;2.4.9 | Zend-basierter Zwei-Ebenen-Cache mit `Cm_Cache_Backend_File` für lokalen Speicher |
+| [Modern (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | Symfony Cache-basiertes L2 mit PSR-6-Konformität und verbesserter Leistung. Unterstützt nur Valley. |
 
 ## Konfiguration des alten L2-Cache (RemoteSynchronizedCache)
 
 >[!NOTE]
 >
->Die Konfigurationsanweisungen für den alten L2-Cache gelten für ältere Versionen von Adobe Commerce. Wenn Sie Adobe Commerce Version 2.4.9 oder höher verwenden, empfiehlt Adobe die Verwendung von [Symfony 2 für L2-Cache](#modern-symfony-l2-cache-implementation).
+>Die Konfigurationsanweisungen für den alten L2-Cache gelten für ältere Versionen von Adobe Commerce. Wenn Sie Adobe Commerce Version 2.4.9 oder höher verwenden, verwenden Sie Valkey mit [Symfony 2 für L2-Cache](#modern-symfony-l2-cache-implementation).
 
 Die Anweisungen zur Cache-Konfiguration hängen von Ihrem Bereitstellungstyp ab:
 
@@ -188,20 +188,26 @@ Der folgende Code zeigt eine Beispielkonfiguration:
 
 ## Moderne Symfony L2-Cache-Implementierung
 
-Verwenden Sie in Commerce ab Version 2.4.9 die Symfony Cache-basierte L2-Cache-Implementierung (`symfony_l2`-Backend) anstelle des alten L2-Cache.  Der Symfony L2-Cache bietet eine moderne, PSR-6-konforme Caching-Implementierung mit deutlichen Leistungsverbesserungen gegenüber herkömmlichen `RemoteSynchronizedCache`.
+Verwenden Sie in Commerce ab Version 2.4.9 die Symfony Cache-basierte L2-Cache-Implementierung (`symfony_l2`-Backend) anstelle des alten L2-Cache. Der Symfony L2-Cache bietet eine moderne, PSR-6-konforme Caching-Implementierung mit deutlichen Leistungsverbesserungen gegenüber herkömmlichen `RemoteSynchronizedCache`.
 
 >[!NOTE]
 >
 >Für Adobe Commerce on Cloud verwaltet das ECE-Tools-Paket (`ece-tools`) diese Konfiguration automatisch. `app/etc/env.php` nicht direkt bearbeiten - manuelle Änderungen werden durch die Bereitstellung überschrieben. Informationen zur Cloud-Konfiguration finden Sie [Konfigurieren des Symfony L2-Cache](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache).
 
+>[!IMPORTANT]
+>
+>{{redis-cache-support}}
+>
+>Da `symfony_l2` nur in Adobe Commerce 2.4.9 und höher verfügbar ist, konfigurieren Sie es mit Valkey als Remote-Backend. Redis ist kein offiziell unterstütztes Remote-Backend für `symfony_l2`. Siehe [Systemanforderungen](../../installation/system-requirements.md) für unterstützte Cache-Services nach Version.
+
 ### Vorteile des Symfony L2-Cache
 
 - **Moderne Architektur**: Basierend auf Symfony-Cache-Komponenten (PSR-6-kompatibel)
 - **Better Performance**: Native Unterstützung für Igbinary-Serialisierung, Gzip-Komprimierung und Lua-Skripte
-- **Persistente Verbindungen**: Reduziert den Verbindungsaufwand für Redis oder Valkey beim Verbindungspooling
+- **Persistente Verbindungen**: Reduziert den Verbindungsaufwand im Valley durch Verbindungspools
 - **Schlüssel vorladen**: Unterstützt das Vorausfüllen von Cache-Schlüsseln für kritische Daten
 - **Unterstützung für veralteten Cache**: Vollständige Kompatibilität mit der `use_stale_cache` Option
-- **Vereinfachte Konfiguration**: Cleaner Backend-Typnamen (`redis`, `valkey`, `file`)
+- **Vereinfachte Konfiguration**: Cleaner Backend-Typnamen (`valkey`, `file`)
 
 ### Konfigurationsbeispiel mit Symfony L2-Cache
 
@@ -213,8 +219,8 @@ Verwenden Sie den vereinfachten `symfony_l2`-Backend-Typ für den L2-Cache:
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                // L2 (Remote): Redis with Symfony Cache
-                'remote_backend' => 'redis',
+                // L2 (Remote): Valkey with Symfony Cache
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -259,7 +265,7 @@ Konfigurieren von separaten Frontends für die Unterstützung veralteter Caches:
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -278,7 +284,7 @@ Konfigurieren von separaten Frontends für die Unterstützung veralteter Caches:
         'stale_cache_enabled' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -312,31 +318,48 @@ Konfigurieren von separaten Frontends für die Unterstützung veralteter Caches:
 
 | Option | Typ | Standard | Beschreibung |
 |--------|------|---------|-------------------------------------------------------------------|
-| `remote_backend` | Zeichenfolge | `'redis'` | Remote-Backend-Typ: `redis`, `valkey` oder `file` |
-| `remote_backend_options` | Array | `[]` | Konfiguration des Remote-Backends (siehe die Redis/Valley-Dokumentation) |
+| `remote_backend` | Zeichenfolge | `'valkey'` | Remote-Backend-Typ: `valkey` oder `file`. Verwenden Sie `valkey` für den L2-Cache. |
+| `remote_backend_options` | Array | `[]` | Remote-Backend-Konfiguration (siehe Valley-Dokumentation) |
 | `local_backend` | Zeichenfolge | `'file'` | Lokaler Backend-Typ: `file` oder `apcu` |
 | `local_backend_options` | Array | `[]` | Lokale Backend-Konfiguration |
-| `cleanup_percentage` | Ganzzahl | `90` | Schwellenwert für die L1-Cache-Bereinigung (1-100) |
+| `cleanup_percentage` | Ganzzahl | `95` | Schwellenwert für die L1-Cache-Bereinigung (1-100) |
 | `use_stale_cache` | Boolesch | `false` | Veralteten Cache für hohe Verfügbarkeit aktivieren |
 
-### Talstütze
+>[!NOTE]
+>
+>Die `remote_backend`-Option akzeptiert außerdem den Wert `redis`. Redis ist jedoch kein offiziell unterstützter Cache-Service für Adobe Commerce 2.4.9 und höher. Adobe empfiehlt, `symfony_l2` nur mit `valkey` zu konfigurieren. Siehe [Systemanforderungen](../../installation/system-requirements.md) für unterstützte Cache-Services nach Version.
 
-Das `symfony_l2`-Backend unterstützt auch Valkey als Remote-Backend:
+### Verbesserte Symfony L2-Cache-Leistung und Zuverlässigkeit
 
-```php
-'backend_options' => [
-    'remote_backend' => 'valkey',  // Use Valkey instead of Redis
-    'remote_backend_options' => [
-        'server' => 'localhost',
-        'database' => '0',
-        'port' => '6379',
-        'serializer' => 'igbinary',
-        'compression_lib' => 'gzip',
-    ],
-    // ... rest of configuration
-]
-```
+>[!NOTE]
+>
+>Diese Verbesserungen gelten für Adobe Commerce 2.4.9-Bereitstellungen mit `symfony_l2` und sind mit dem Patch ACP2E-5132 verfügbar. Unter [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) finden Sie die neuesten Patch-Versionshinweise.
+
+#### Optimierter Symfony L2-Cache-Tag-Speicher
+
+Optimiertes Symfony L2-Cache-Verhalten für Valkey-gestützte Bereitstellungen durch Eliminierung redundanter Dateisystem-Tag-Index-Schreibvorgänge. Cache-Tags werden jetzt ausschließlich in Valkey gespeichert, wodurch das Symfony L2-Cache-Verhalten an der Legacy-Cache-Implementierung ausgerichtet wird. Dies reduziert unnötige Datenträger-E/A, verbessert die Cache-Schreibleistung und verhindert das Wachstum des `var/cache/symfony/tags/`.
+
+#### Verbessertes dateibasiertes Cache-Verhalten
+
+Bei Bereitstellungen mit dem dateibasierten Cache (ohne Valley) wird der lokale Tag-Index weiterhin gepflegt, um die Cache-Invalidierung zu unterstützen. Der Tag-Index wird jetzt in den konfigurierten `cache_dir` anstelle des zuvor hartcodierten `var/cache`-Speicherorts geschrieben, was eine konsistente Cache-Verzeichnisverwendung gewährleistet und die Unterstützung für benutzerdefinierte Cache-Konfigurationen verbessert.
+
+#### Verbesserte Cache-Invalidierung
+
+Bei der Cache-Invalidierung werden jetzt TTL-basierte Regenerierungssperren mit ordnungsgemäßer L1-Tag-Bereinigung verwendet, wodurch veraltete Cache-Einträge, die nach der Tag-Invalidierung zuvor bestehen blieben, vermieden werden.
+
+#### Komprimierung standardmäßig aktiviert
+
+Die Redis/Valkey-Komprimierung (`compress_data`) ist jetzt standardmäßig für den Symfony L2-Cache aktiviert, wodurch der Speicherverbrauch und der Netzwerkverkehr reduziert werden und das Standardverhalten der alten Cache-Implementierung angepasst wird.
+
+#### Auswirkung
+
+- Beseitigt redundante Dateisystem-Tag-Indexschreibvorgänge für Valkey-unterstützte Symfony L2-Cache-Bereitstellungen.
+- Verringert Festplatten-E/A und verbessert die Cache-Schreibleistung.
+- Verhindert unnötiges Wachstum des `var/cache/symfony/tags/`.
+- Stellt sicher, dass dateibasierte Cache-Bereitstellungen konsistent den konfigurierten `cache_dir` verwenden, während das Verhalten bei der Cache-Invalidierung erhalten bleibt.
+- Beseitigt veraltete Cache-Einträge über TTL-basierte Regenerierungssperren und eine ordnungsgemäße L1-Tag-Bereinigung.
+- Reduziert den Speicherverbrauch und den Netzwerk-Traffic, wenn `compress_data` standardmäßig aktiviert ist.
 
 Detaillierte Konfigurationsoptionen finden Sie unter:
-- [Redis-Cache-Konfiguration mit Symfony Cache](redis-pg-cache.md)
 - [Valley-Cache-Konfiguration mit Symfony Cache](valkey-pg-cache.md)
+
