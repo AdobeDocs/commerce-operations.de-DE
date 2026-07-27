@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
+source-git-commit: 5dec405e9f116622903e9b0e2fbbd255ca28a8e8
 workflow-type: tm+mt
-source-wordcount: '10465'
+source-wordcount: '10469'
 ht-degree: 0%
 
 ---
@@ -1042,6 +1042,8 @@ ht-degree: 0%
       - [ACP2E-4680: Nicht absetzbare Produkte verschwinden aus abgeschlossenen verhandelbaren Notierungen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300: Katalogberechtigungen für Storefront werden nach Änderung der Admin-Kundengruppe nicht aktualisiert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
       - [ACP2E-4709: CMS-Seiten werden in Page Builder nicht gespeichert, wenn die Seitenhierarchie doppelte Anführungszeichen enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
+    - v1.1.82 {#v1-1-82}
+      - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
   - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
   - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
