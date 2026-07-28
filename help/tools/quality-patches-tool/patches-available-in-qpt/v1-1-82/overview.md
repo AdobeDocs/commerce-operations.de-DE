@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 6b7e2463ee1f743fb5e8451a7f9832309aa68ab0
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 4358eb2865fbd8a66716ffc6b7a7b133a7e10e5d
 workflow-type: tm+mt
 source-wordcount: 485
 ht-degree: 0%
@@ -34,7 +29,7 @@ QPT v1.1.82 enthält die folgenden Patches:
 1. **ACP2E-4682**: Es wird ein Problem behoben, dass beim Besuch einer Storefront-Seite, die den Angebotsstatus überprüft, `isActive` bei jedem Laden der Seite leere Anführungszeichen erstellt.
 1. **ACP2E-4695**: Behebt das Problem, dass der Katalogregel-Indexer zu viel Speicher verbraucht und nicht abgeschlossen werden kann, was zu Instabilität und Speicherfehlern führt.
 1. **ACP2E-4698**: Es wird das Problem behoben, dass bei der erneuten Bearbeitung eines Bildes in Page Builder-Textinhalten eine absolute Medien-URL gespeichert wird, anstatt eine portable Medienanweisung beizubehalten.
-1. **ACP2E-4748**: Behebt das Problem, dass der Ablauf von Belohnungspunkten in Geschäften mit einem großen Belohnungspunktverlauf langsam verarbeitet wird, was zu Verzögerungen bei ablaufenden Belohnungspunkten führt.
+1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: Behebt das Problem, dass der Ablauf von Belohnungspunkten in Geschäften mit einem großen Belohnungspunktverlauf langsam abläuft, was zu Verzögerungen bei ablaufenden Belohnungspunkten führt.
 1. **ACP2E-4797**: Es wird ein Problem behoben, bei dem die Eingabe von 4-Byte-Unicode-Zeichen in den WYSIWYG-Editor oder Page Builder-Inhalt in der Admin fälschlicherweise blockiert wird, selbst wenn die Datenbank für die Unterstützung von `utf8mb4` konfiguriert ist.
 1. **ACP2E-4799**: Es wird ein Problem behoben, bei dem die `requisition_lists` GraphQL-Abfrage einen `total_count` zurückgibt, der nur die Anzahl der Elemente auf der aktuellen Seite anstelle der Gesamtzahl der Anforderungslisten widerspiegelt, die den Abfragekriterien entsprechen.
 1. **ACP2E-4805**: Es wird das Problem behoben, dass Checkout-API-Anfragen für konfigurierbare Produkte mit vielen untergeordneten Produkten erheblich langsamer werden, wenn das erste verkaufbare untergeordnete Produkt spät in der Liste angezeigt wird.
