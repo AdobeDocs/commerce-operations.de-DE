@@ -2,7 +2,8 @@
 title: Systemanforderungen
 description: Erfahren Sie mehr über Softwareabhängigkeiten und Systemanforderungen für Adobe Commerce. Informationen zur Kompatibilität mit Ihrer Bereitstellungsumgebung finden Sie unter Getestete Konfigurationen .
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+last-update: 2026-07-23T00:00:00Z
+source-git-commit: 6da5a8645b46807eed654f6958f19f10d0095945
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
