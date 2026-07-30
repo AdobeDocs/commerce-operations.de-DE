@@ -5,7 +5,7 @@ exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
 source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '428'
 ht-degree: 2%
 
 ---
@@ -82,4 +82,4 @@ Die folgenden Abschnitte enthalten Best Practice-Informationen für die Wartungs
 |-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | [Patchen in großem Maßstab](patching-at-scale.md) | Erfahren Sie, wie zentralisiertes Patchen für Adobe Commerce Ihnen bei der Verwaltung von Unternehmensprojekten helfen kann. |
 | [Aktualisieren von Services und Komponenten auf die neueste Version&#x200B;](update-services.md) | Halten Sie Ihren Adobe Commerce im Cloud-Infrastrukturtechnologie-Stack auf dem neuesten Stand. |
-| [Checkliste für das Upgrade von Adobe Commerce&#x200B;](upgrade-checklist.md) | Erstellen und verwenden Sie eine Checkliste für das Upgrade, um Ihre Adobe Commerce-Upgrade-Strategie zu planen. |
+| [Checkliste für das Upgrade von &#x200B;](upgrade-checklist.md) | Erstellen und verwenden Sie eine Checkliste für das Upgrade, um Ihre Adobe Commerce-Upgrade-Strategie zu planen. |

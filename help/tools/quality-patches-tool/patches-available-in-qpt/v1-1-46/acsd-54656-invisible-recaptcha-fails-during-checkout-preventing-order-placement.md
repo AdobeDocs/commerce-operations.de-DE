@@ -7,7 +7,7 @@ exl-id: 08850189-2e1b-4132-8d63-ce447b1f1211
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Unsichtbare [!DNL reCAPTCHA] funktionieren beim Checkout nicht richtig, was die 
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Aktivieren Sie auf der [!DNL reCAPTCHA]-Seite jede Art von [!UICONTROL Checkout] für Geschenkkarten.
+1. Aktivieren Sie auf der [!UICONTROL Checkout]-Seite jede Art von [!DNL reCAPTCHA] für Geschenkkarten.
 1. Fügen Sie das Produkt zum Warenkorb hinzu und gehen Sie zur Seite **[!UICONTROL Checkout]** .
 1. Erweitern Sie das Geschenkgutscheinformular und füllen Sie einen gültigen Geschenkgutschein aus.
 1. Klicken Sie auf **[!UICONTROL See balance and apply]** Schaltfläche.

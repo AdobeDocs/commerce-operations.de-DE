@@ -7,7 +7,7 @@ exl-id: 8e7dd72e-c21e-46cf-8e2b-9dccedfd8b04
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Benutzerdefinierte Kundenattribute werden beim Hinzufügen oder Bearbeiten von B
 1. Melden Sie sich bei der Storefront als Unternehmensadministrator an.
 1. Navigieren Sie zu **[!UICONTROL Customer Account]** > **[!UICONTROL Company Structure]** oder **[!UICONTROL Customer Account]** > **[!UICONTROL Company Users]**.
 1. Klicken Sie auf **[!UICONTROL Add New User]**.
-1. Klicken Sie für das Attribut **[!UICONTROL Upload]** custom_upload *auf* .
+1. Klicken Sie für das Attribut *custom_upload* auf **[!UICONTROL Upload]** .
 1. Klicken Sie **[!UICONTROL Select file]** für das Attribut *image_attachment* .
 
 <u>Erwartete Ergebnisse</u>:

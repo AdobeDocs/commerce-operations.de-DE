@@ -7,7 +7,7 @@ exl-id: eae9a6ad-0999-4581-b3c0-7667ee7beb54
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Google reCAPTCHA v3 Invisible funktioniert nicht beim Checkout und die Bestellun
 
 <u>Schritte zur Reproduktion</u>
 
-1. Konfigurieren Sie die **[!UICONTROL reCAPTCHA v3 Invisible]** über die **[!UICONTROL Store]** **[!UICONTROL Configuration]** > **[!UICONTROL Security]** > .
+1. Konfigurieren Sie die **[!UICONTROL reCAPTCHA v3 Invisible]** über die **[!UICONTROL Security]** **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > .
 1. Aktivieren Sie **[!UICONTROL reCAPTCHA v3 Invisible]** für den Checkout/die Bestellung auf der Registerkarte **[!UICONTROL Storefront]** .
 1. Versuchen Sie, eine Bestellung mit der [!UICONTROL Check/Money order] Zahlungsmethode aufzunehmen.
 

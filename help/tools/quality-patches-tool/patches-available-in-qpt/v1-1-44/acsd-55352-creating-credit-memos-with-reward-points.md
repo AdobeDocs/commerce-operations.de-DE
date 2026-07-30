@@ -7,7 +7,7 @@ exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ Nachdem Sie eine teilweise Gutschrift mit Belohnungspunkten für Kunden erstellt
 2. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
 3. Fügen Sie zwei Tarife hinzu:
    * *[!UICONTROL First]*:
-      * *[!UICONTROL Direction]* = *Punkte auf Währung*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Punkte auf Währung*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
    * *[!UICONTROL Second]*:
-      * *[!UICONTROL Direction]* = *Währung zu Punkten*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Währung zu Punkten*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
 4. Erstellen Sie ein einfaches Produkt zum Preis von *$100* und mit *Qty* : *100*.
 5. Erstellen Sie einen Kunden aus der Storefront.
 6. Gehen Sie erneut zum Backend: **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > *100* und speichern Sie den Kunden.

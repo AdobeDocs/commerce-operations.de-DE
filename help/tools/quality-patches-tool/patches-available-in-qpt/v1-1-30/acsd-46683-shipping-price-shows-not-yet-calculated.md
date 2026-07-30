@@ -7,7 +7,7 @@ exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -49,20 +49,20 @@ Adobe Commerce Inventory management (MSI)-Module sind installiert.
    * Priorität = 1
    * Bedingungen: Zwischensumme ist gleich oder größer als *$75*
    * Aktionen:
-      * Auf Versandbetrag anwenden = Ja
-      * Nachfolgende Regeln verwerfen = Nein
-      * Kostenloser Versand = Für Lieferungen mit passenden Artikeln
+     * Auf Versandbetrag anwenden = Ja
+     * Nachfolgende Regeln verwerfen = Nein
+     * Kostenloser Versand = Für Lieferungen mit passenden Artikeln
 1. Erstellen Sie eine weitere Warenkorb-Preisregel:
    * Name = *35off*
    * Priorität = 0
    * Coupon = spezifischer Coupon
    * Couponcode = 35off
    * Aktionen:
-      * Anwenden = Prozentsatz des Produktpreisrabatts
-      * Rabattbetrag = 35
-      * Auf Versandbetrag anwenden = Nein
-      * Nachfolgende Regeln verwerfen = Ja
-      * Kostenloser Versand = Nein
+     * Anwenden = Prozentsatz des Produktpreisrabatts
+     * Rabattbetrag = 35
+     * Auf Versandbetrag anwenden = Nein
+     * Nachfolgende Regeln verwerfen = Ja
+     * Kostenloser Versand = Nein
 1. Öffnen Sie die Storefront und fügen Sie drei Produkte zum Warenkorb hinzu, sodass die Zwischensumme 75 USD überschreitet.
 1. Zur Kasse als Gast.
 1. Wählen Sie im Schritt Versand die Option **$0 - Kostenloser** aus und fahren Sie mit dem Schritt Zahlung fort.

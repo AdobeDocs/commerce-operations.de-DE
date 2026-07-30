@@ -3,8 +3,8 @@ user-guide-title: Versionsinformationen
 user-guide-description: Zugreifen auf alle Versionsinformationen für Adobe Commerce-Patches und -Services an einem Ort.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-nudge: true
-source-git-commit: ba745eae9c3e31fec40d317b0e35a8d0ff37971a
+color: blue
+source-git-commit: ae0435a965214ce3165bd4aa1317a4d4df87cefc
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 30%
@@ -54,7 +54,7 @@ ht-degree: 30%
 - [Beta-Versionen](beta.md)
 - Planung und Richtlinien {#planning}
   - [Lebenszyklusrichtlinie](lifecycle-policy.md)
-  - {hide-from-toc}[Richtlinie zur Sicherheitsdurchsetzung:Required Maßnahmen und Fristen](security-enforcement-policy.md)
+  - [Sicherheitsrichtlinie: Erforderliche Aktionen und Fristen](security-enforcement-policy.md)
   - [Durchsetzungsrichtlinie für das Versions-Upgrade](version-upgrade-enforcement-policy.md)
   - [Versionierungsrichtlinie](versioning-policy.md)
   - [Veröffentlichungszeitplan](schedule.md)

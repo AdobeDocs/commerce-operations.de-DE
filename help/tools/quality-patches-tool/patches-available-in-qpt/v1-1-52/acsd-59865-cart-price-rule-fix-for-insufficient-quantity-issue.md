@@ -7,7 +7,7 @@ exl-id: 5838a740-018d-44c2-8135-54426ea08627
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ Der [!UICONTROL Cart Price Rule] kann zuvor angewendete Regeln aufgrund einer un
    * Wählen Sie alle *Websites* und *Kundengruppen*
    * **[!UICONTROL Priority]** = *0*
    * Gehen Sie zum Abschnitt **[!UICONTROL Actions]**:
-      * **[!UICONTROL Apply]** = *Prozent des Produktpreisrabatts*
-      * **[!UICONTROL Discount amount]** = *10*
-      * **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
-      * Setzen Sie **[!UICONTROL Discard subsequent rules]** auf *Nein*
+     * **[!UICONTROL Apply]** = *Prozent des Produktpreisrabatts*
+     * **[!UICONTROL Discount amount]** = *10*
+     * **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * **[!UICONTROL Discount Qty Step (Buy X)]** = *0*
+     * Setzen Sie **[!UICONTROL Discard subsequent rules]** auf *Nein*
 1. Löschen Sie den Cache.
 1. Gehen Sie zur Storefront, fügen Sie einen Artikel zum Warenkorb hinzu und fahren Sie mit *Checkout/Warenkorb* fort.
 1. Überprüfen Sie, ob der *10%* Rabatt auf Ihren Warenkorb angewendet wird.
@@ -55,10 +55,10 @@ Der [!UICONTROL Cart Price Rule] kann zuvor angewendete Regeln aufgrund einer un
    * Alle **[!UICONTROL Websites]** und **[!UICONTROL Customer Groups]** auswählen
    * **[!UICONTROL Priority]** = *2*
    * Navigieren Sie zum Abschnitt **[!UICONTROL Actions]** :
-      * **[!UICONTROL Apply]** = *Prozent des Produktpreisrabatts*
-      * **[!UICONTROL Discount amount]** = *20*
-      * **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
-      * **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
+     * **[!UICONTROL Apply]** = *Prozent des Produktpreisrabatts*
+     * **[!UICONTROL Discount amount]** = *20*
+     * **[!UICONTROL Maximum Qty Discount is Applied To]** = *100*
+     * **[!UICONTROL Discount Qty Step (Buy X)]** = *3*
 1. Löschen Sie den Cache.
 1. Geh wieder zurück in die Storefront.
 1. Aktualisieren Sie den Warenkorb, um die Regeln zu aktualisieren. Stellen Sie sicher, dass der *10%* Rabatt nicht mehr angewendet wird.

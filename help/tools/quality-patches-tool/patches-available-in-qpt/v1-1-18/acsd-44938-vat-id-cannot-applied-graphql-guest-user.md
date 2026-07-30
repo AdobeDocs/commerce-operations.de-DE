@@ -7,7 +7,7 @@ exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Mit dem Patch ACSD-44938 wird das Problem behoben, dass die `VAT_ID` in einer [!
 <u>Schritte zur Reproduktion</u>:
 
 1. Befolgen Sie die Schritte, die im [[!DNL GraphQL] Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in unserer Entwicklerdokumentation erwähnt werden, um einen Gästekarton zu erstellen.
-1. Versuchen Sie, mithilfe von `VAT_ID` [!DNL GraphQL] für den Gastbenutzer anzuwenden.
+1. Versuchen Sie, mithilfe von [!DNL GraphQL] `VAT_ID` für den Gastbenutzer anzuwenden.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -59,6 +59,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zum [!DNL Quality Patches Tool] finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch [!DNL Quality Patches Tool] Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im [!DNL Quality Patches Tool].

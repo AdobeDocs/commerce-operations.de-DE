@@ -7,7 +7,7 @@ type: Troubleshooting
 exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
 source-git-commit: dc5df9e918adffe8d6901478a676d9da36b33bcc
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Der unter der Option **[!UICONTROL Pick In Store]** ausgew채hlte Store wird gel�
 1. Konfigurieren Sie einen g체ltigen [!DNL Google]-API-Schl체ssel f체r [!UICONTROL Google Distance Provider], indem Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Google Distance Provider]** navigieren.
 1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Sources]** > **[!UICONTROL Add New Source]** , um eine neue Quelle mit den folgenden Details hinzuzuf체gen:
 
-   * **[!UICONTROL Latitude]**: *,917344*
+   * **[!UICONTROL Latitude]**: *41.917344*
    * **[!UICONTROL Longitude]**: *-88.102569*
    * **[!UICONTROL Use as Pickup Location]**: *Ja*
    * **[!UICONTROL Country]**: *Vereinigte Staaten*
