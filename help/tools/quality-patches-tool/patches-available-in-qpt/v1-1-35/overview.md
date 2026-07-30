@@ -7,7 +7,7 @@ exl-id: 5ffbade4-c95e-4b59-9262-1b141614c753
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ QPT v1.1.35 enthält die folgenden Patches:
 1. **ACSD-52041**: Es wurde das Problem behoben, dass die Fehlermeldung *[ERROR] 5 Sekunden lang gerendert [!DNL Page Builder], ohne Sperren zu*. wird [!DNL Chrome] Browser angezeigt, wenn mit [!DNL Page Builder] bearbeitete Inhalte gespeichert werden.
 1. **ACSD-52095**: Es wurde ein Problem behoben, bei dem der `manage_stock` in der CSV-Datei nach dem Produktexport fälschlicherweise auf 0 gesetzt wurde.
 1. **ACSD-51358**: Es wird ein Problem behoben, durch das das Entfernen einer geplanten Aktualisierung ohne Enddatum dazu führt, dass andere geplante Aktualisierungen für dieselbe Entität entfernt werden.
-1. Trigger **ACSD-48070**: Es wurde ein Problem behoben, bei dem das Bearbeiten eines geplanten Updates zu einer Ausnahme führte.
+1. **ACSD-48070**: Es wurde ein Problem behoben, bei dem das Bearbeiten eines geplanten Updates zu einer Ausnahme führte.
 1. **ACSD-51890**: Es wird das Problem behoben, dass die [!UICONTROL Submit review]-Schaltfläche mehrmals ohne [!DNL Google] reCAPTCHA v3-Validierung angeklickt werden kann.
 1. **ACSD-51984**: Es wird das Problem behoben, dass deaktivierte *Standardwerte und nicht standardmäßige Produktfeldwerte verwenden* für die zweite Website-, Store- und Store-Ansicht nicht gespeichert werden.
 1. **ACSD-52398**: Behebt den Fehler *Die angeforderte Menge ist nicht verfügbar* der auftritt, wenn versucht wird, die Menge eines gebündelten Produkts im Warenkorb in der Storefront zu aktualisieren.

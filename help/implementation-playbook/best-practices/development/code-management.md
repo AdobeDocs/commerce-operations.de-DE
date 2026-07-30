@@ -6,7 +6,7 @@ role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
 source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Dieses Thema soll Ihnen bei der Entscheidung helfen, ob Sie Git oder Composer ve
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
