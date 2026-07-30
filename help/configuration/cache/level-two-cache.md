@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
+source-git-commit: 7fdc2a2c19eccf36940d9b4545b443eabbab4220
 workflow-type: tm+mt
-source-wordcount: 1221
+source-wordcount: 1378
 ht-degree: 0%
 
 ---
@@ -335,6 +335,8 @@ Konfigurieren von separaten Frontends für die Unterstützung veralteter Caches:
 >
 >Diese Verbesserungen gelten für Adobe Commerce 2.4.9-Bereitstellungen mit `symfony_l2` und sind mit dem Patch ACP2E-5132 verfügbar. Unter [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) finden Sie die neuesten Patch-Versionshinweise.
 
+Die neuesten Aktualisierungen verbessern die Skalierbarkeit des Symfony L2-Cache, reduzieren unnötige Dateisystem-E/A und verbessern die Cache-Konsistenz und -Zuverlässigkeit.
+
 #### Optimierter Symfony L2-Cache-Tag-Speicher
 
 Optimiertes Symfony L2-Cache-Verhalten für Valkey-gestützte Bereitstellungen durch Eliminierung redundanter Dateisystem-Tag-Index-Schreibvorgänge. Cache-Tags werden jetzt ausschließlich in Valkey gespeichert, wodurch das Symfony L2-Cache-Verhalten an der Legacy-Cache-Implementierung ausgerichtet wird. Dies reduziert unnötige Datenträger-E/A, verbessert die Cache-Schreibleistung und verhindert das Wachstum des `var/cache/symfony/tags/`.
@@ -343,22 +345,30 @@ Optimiertes Symfony L2-Cache-Verhalten für Valkey-gestützte Bereitstellungen d
 
 Bei Bereitstellungen mit dem dateibasierten Cache (ohne Valley) wird der lokale Tag-Index weiterhin gepflegt, um die Cache-Invalidierung zu unterstützen. Der Tag-Index wird jetzt in den konfigurierten `cache_dir` anstelle des zuvor hartcodierten `var/cache`-Speicherorts geschrieben, was eine konsistente Cache-Verzeichnisverwendung gewährleistet und die Unterstützung für benutzerdefinierte Cache-Konfigurationen verbessert.
 
-#### Verbesserte Cache-Invalidierung
+#### Feste veraltete Tag-Mitgliedschaften nach dem erneuten Taggen
 
-Bei der Cache-Invalidierung werden jetzt TTL-basierte Regenerierungssperren mit ordnungsgemäßer L1-Tag-Bereinigung verwendet, wodurch veraltete Cache-Einträge, die nach der Tag-Invalidierung zuvor bestehen blieben, vermieden werden.
+Wenn Sie einen Cache-Eintrag erneut taggen, ist er möglicherweise mit Tags verknüpft, zu denen er nicht mehr gehört. Veraltete Tag-Mitgliedschaften werden jetzt beim erneuten Taggen gelöscht, sodass Cache-Einträge nur durch die ihnen derzeit zugewiesenen Tags ungültig gemacht werden.
 
-#### Komprimierung standardmäßig aktiviert
+#### Fehlerkorrektur - Redundantes Remote-Schreiben wird bei unverändertem Speichern behoben
 
-Die Redis/Valkey-Komprimierung (`compress_data`) ist jetzt standardmäßig für den Symfony L2-Cache aktiviert, wodurch der Speicherverbrauch und der Netzwerkverkehr reduziert werden und das Standardverhalten der alten Cache-Implementierung angepasst wird.
+Beim Speichern eines Cache-Eintrags mit unverändertem Inhalt wird weiterhin ein Schreiben in das Remote-Backend (Valley) ausgelöst. Das Speichern wird jetzt übersprungen, wenn der Inhalt unverändert bleibt, wodurch unnötige Remote-Schreibvorgänge reduziert werden.
+
+#### Feste L1-Größenbasierte Entfernung (cleanup_percentage)
+
+Der `cleanup_percentage` Schwellenwert, der für die L1-größenbasierte Entfernung verwendet wurde, enthielt nicht konsistent Trigger-Bereinigung. Die L1-Cache-Entfernung berücksichtigt jetzt korrekt die konfigurierten `cleanup_percentage`.
+
+#### Regenerierungssperre für veralteten Cache hinzugefügt
+
+Wenn `use_stale_cache` aktiviert ist und die Remote-Kopie eines Eintrags vorübergehend nicht verfügbar ist, erhält jetzt nur ein Prozess eine kurzlebige Sperre, um diesen Eintrag neu zu generieren. Andere gleichzeitige Anfragen für denselben Eintrag bedienen weiterhin den vorhandenen lokalen Wert, anstatt ihn selbst zu regenerieren, was die Anzahl der Regenerierungsstempel und die redundante Backend-Last reduziert.
 
 #### Auswirkung
 
-- Beseitigt redundante Dateisystem-Tag-Indexschreibvorgänge für Valkey-unterstützte Symfony L2-Cache-Bereitstellungen.
-- Verringert Festplatten-E/A und verbessert die Cache-Schreibleistung.
-- Verhindert unnötiges Wachstum des `var/cache/symfony/tags/`.
-- Stellt sicher, dass dateibasierte Cache-Bereitstellungen konsistent den konfigurierten `cache_dir` verwenden, während das Verhalten bei der Cache-Invalidierung erhalten bleibt.
-- Beseitigt veraltete Cache-Einträge über TTL-basierte Regenerierungssperren und eine ordnungsgemäße L1-Tag-Bereinigung.
-- Reduziert den Speicherverbrauch und den Netzwerk-Traffic, wenn `compress_data` standardmäßig aktiviert ist.
+- Beseitigt redundante Dateisystem-Tag-Indexschreibvorgänge für Valkey-unterstützte Symfony L2-Cache-Bereitstellungen, reduziert den Festplatten-E/A und verhindert unnötiges Wachstum des `var/cache/symfony/tags/`.
+- Stellt sicher, dass dateibasierte Cache-Bereitstellungen konsistent die konfigurierten `cache_dir` für den lokalen Tag-Index verwenden, während das Verhalten bei der Cache-Invalidierung erhalten bleibt.
+- Verhindert die falsche Cache-Invalidierung, die durch veraltete Tag-Mitgliedschaften verursacht wird, die nach dem Retagging zurückbleiben.
+- Reduziert unnötige Remote-Schreibvorgänge für unveränderte Cache-Speichervorgänge und verringert so die Netzwerk- und Backend-Last.
+- Stellt sicher, dass Trigger mit L1-Cache-Entfernung zuverlässig den konfigurierten `cleanup_percentage` erreichen.
+- Reduziert die Anzahl von Regenerierungsstempeln für `use_stale_cache` Einträge, indem ein einzelner Regenerator pro Schlüssel ausgewählt wird, anstatt dass jede gleichzeitige Anforderung ihn neu erstellt.
 
 Detaillierte Konfigurationsoptionen finden Sie unter:
 - [Valley-Cache-Konfiguration mit Symfony Cache](valkey-pg-cache.md)

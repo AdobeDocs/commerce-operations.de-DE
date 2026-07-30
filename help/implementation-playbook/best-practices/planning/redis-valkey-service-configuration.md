@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce in Cloud Manager" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten."
 nudge: true
-source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Wenn Sie die `VALKEY_BACKEND` Bereitstellungsvariable auf `symfony_l2` setzen, w
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 umfasst Verbesserungen am Symfony L2-Cache, einschließlich Cache-Tag-Speicherung, Invalidierung und Komprimierung, mit Patch ACP2E-5132, wodurch Datenträger-E/A reduziert, veraltete Cache-Einträge vermieden und Speicher- und Netzwerk-Overhead reduziert werden. Siehe [Verbesserte Leistung und Zuverlässigkeit des Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md)Cache im _Adobe Commerce-Konfigurationshandbuch_. Patch ACP2E-5132 Patch ist in Cloud Patches enthalten und wird automatisch über die ECE-Tools angewendet.
+>Patch ACP2E-5132 für Adobe Commerce 2.4.9 verbessert die Leistung und Zuverlässigkeit des Symfony L2-Cache - optimierte Tag-Speicherung, eine veraltete Cache-Regenerierungssperre und Fehlerbehebungen für veraltete Tag-Mitgliedschaften nach Retagging, redundante Remote-Schreibvorgänge bei unveränderten Speichervorgängen und L1-größenbasierte Entfernung (`cleanup_percentage`). Dadurch werden Datenträger-E/A und Backend-Last reduziert und gleichzeitig die Cache-Konsistenz verbessert. Siehe [Verbesserte Leistung und Zuverlässigkeit des Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability)Cache im _Adobe Commerce-Konfigurationshandbuch_.
+>
+>Der Patch ist im Paket [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) enthalten (eine Abhängigkeit von `ece-tools`) und wird automatisch während der Bereitstellung angewendet, wenn Sie auf die neueste `ece-tools` aktualisieren. Aktualisieren Sie auf die neueste Version von `ece-tools`, um den Patch zu erhalten.
 
 #### Anpassen der Konfiguration des Symfony L2-Cache
 
