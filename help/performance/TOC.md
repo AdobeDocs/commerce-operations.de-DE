@@ -25,4 +25,4 @@ ht-degree: 1%
   - [Erweitertes Setup](advanced-setup.md)
   - [Advanced [!DNL JavaScript] bundling](advanced-js-bundling.md)
   - [GraphQL-Anwendungsserver](application-server.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
