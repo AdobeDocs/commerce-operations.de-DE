@@ -2,9 +2,10 @@
 title: Beispiel mit einer freigegebenen Konfiguration
 description: Sehen Sie sich ein Beispiel für das Ändern von Einstellungen in einem Entwicklungssystem mit einer freigegebenen Konfigurationsdatei an.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---

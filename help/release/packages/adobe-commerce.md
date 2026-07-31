@@ -2,7 +2,8 @@
 title: Adobe Commerce-Pakete
 description: Erfahren Sie mehr über alle Abhängigkeiten und Drittlizenzen, die in Adobe Commerce verwendet werden.
 exl-id: b5571640-9726-4ec3-af5b-d10085f89838
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '18'
 ht-degree: 0%

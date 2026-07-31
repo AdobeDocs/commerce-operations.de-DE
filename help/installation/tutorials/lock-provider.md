@@ -2,7 +2,8 @@
 title: Konfigurieren des Sperranbieters
 description: Führen Sie diese Schritte aus, um zu verhindern, dass doppelte Cron-Aufträge und Cron-Gruppen in Ihrer Adobe Commerce-Bereitstellung ausgeführt werden.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Konfigurieren Sie einen Sperranbieter, um den Start doppelter Cron-Aufträge und
 
 Adobe Commerce verwendet die -Datenbank, um Sperren standardmäßig zu speichern. Wenn Sie mehrere Knoten auf Ihren Servern haben, empfehlen wir die Verwendung von ZooKeeper als Sperranbieter.
 
-Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Befehlsverwendung
 
@@ -36,7 +37,7 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 ### Parameterbeschreibungen
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--lock-provider` | Name des Sperranbieters: `db`, `zookeeper` oder `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
 | `--lock-db-prefix` | Das spezifische DB-Präfix, um Sperrkonflikte bei Verwendung des `db`-Anbieters zu vermeiden.<br><br>Der Standardwert: `NULL` | Nein |

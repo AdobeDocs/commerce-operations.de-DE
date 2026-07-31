@@ -4,7 +4,8 @@ description: Erfahren Sie mehr über alle verfügbaren Befehle, Argumente und Op
 mini-toc-levels: 1
 exl-id: 06cd615b-94be-49d4-9bce-0a33ec9bfd5a
 recommendations: noDisplay, noCatalog
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '29'
 ht-degree: 0%
