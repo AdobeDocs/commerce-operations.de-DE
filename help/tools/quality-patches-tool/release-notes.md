@@ -12,9 +12,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 09557adb586946f1a7c4f94cb7675dc2aa83551d
+source-git-commit: 7e9ebf390ec8fa458b3f55dcc5bd17b962702900
 workflow-type: tm+mt
-source-wordcount: 31872
+source-wordcount: 31874
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 ## v1.1.82 {#v1-1-82}
 
 * **ACP2E-4194** (für Adobe Commerce und Magento Open Source >=2.4.7-p10 &lt;2.4.8 || >=2.4.8-p5 &lt;2.4.9) - Behebt das Problem, dass GraphQL-Antworten falsche HTTP-Status-Codes für ungültige, nicht autorisierte oder falsch formatierte Anfragen zurückgeben.
-* **ACP2E-4547** (für Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Behebt das Problem, dass ein Admin-Benutzer „Produkte nach SKU hinzufügen“ in Admin nicht verwenden kann, um Produkte aus dem Standardkatalog einem verhandelbaren Angebot für ein Unternehmen hinzuzufügen, das einer Kundengruppe zugewiesen ist, die nicht mit einem freigegebenen Katalog verknüpft ist.
+* **ACP2E-4547** (für Adobe Commerce, B2B >=1.5.0 &lt;1.5.3) - Behebt das Problem, dass ein Admin-Benutzer „Produkte nach SKU hinzufügen“ in Admin nicht verwenden kann, um Produkte aus dem Standardkatalog einer Bestellung für eine Firma hinzuzufügen, die einer Kundengruppe zugewiesen ist, die nicht mit einem freigegebenen Katalog verknüpft ist.
 * **ACP2E-4593** (für Adobe Commerce >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass die für Website-Einschränkungen angezeigte CMS-Seite auf sekundären Websites in Bereitstellungen mit mehreren Websites falsch sein kann.
 * **ACP2E-4682** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Es wird das Problem behoben, dass beim Besuch einer Storefront-Seite, die den Zitatstatus `isActive` überprüft, bei jedem Laden der Seite leere Zitatdatensätze erstellt.
 * **ACP2E-4695** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass der Katalogregel-Indexer zu viel Speicher verbraucht und nicht abgeschlossen werden kann, was zu Instabilität und Speicherfehlern führt.
@@ -456,7 +456,8 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-61805** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, dass Produkte in der Storefront nicht vorrätig sind, nachdem der Auftragsstatus über den [!DNL REST API] aktualisiert wurde.
 * **ACSD-60811** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Es wurde das Problem behoben, dass das Aktualisieren des Bestellstatus mit einem benutzerdefinierten Wert oder Kommentar nur möglich ist, wenn der aktuelle Status entweder *Verarbeitung läuft* oder *Betrug*.
 * **ACSD-62952** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass das [!UICONTROL Gift Registry]-Datum in der Storefront falsch angezeigt wird.
-* **ACSD-55339** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass ein Produkt [!DNL SKU], das mit „0“ (null) beginnt, die „0“ entfernt, sodass das Angebot nicht aktualisiert wird.**
+* **ACSD-55339** (für Adobe Commerce >=2.4.4 &lt;2.4.8) - Behebt das Problem, dass ein Produkt [!DNL SKU], das mit „0“ (null) beginnt, die „0“ entfernt, sodass das Angebot nicht aktualisiert wird.
+**
 * Aktualisierte Patches: **ACSD-59514**
 * Aktualisierte Versionen: **ACSD-60816**
 * Patches ersetzt: **ACSD-59967**
@@ -976,7 +977,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 ## v1.1.22 {#v1-1-22}
 
 * **ACSD-47444** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.3) - Behebt den _Versuch, beim Wert vom Typ bool auf den Array-Offset zuzugreifen_ Fehler beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte in PHP 7.4.
-* **ACSD-47332** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebt das Problem, dass cron mit einem Fehler fehlschlägt, der nur gemeldet wird, wenn zwischen 00:00 und 00% UTC :59 wird.
+* **ACSD-47332** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Behebt das Problem, dass cron mit einem Fehler fehlschlägt, der nur gemeldet wird, wenn zwischen 00:00 und 00:59 UTC ausgeführt wird.
 * **ACSD-47280** (für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.6) - Es wurde das Problem behoben, dass das Deaktivieren der Funktion für freigegebene Kataloge in einem bestimmten Bereich nicht ordnungsgemäß funktioniert.
 * **ACSD-47106** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.6) - Es wurde das Problem behoben, dass ein Wert auf einer Unternehmenserstellungsseite nicht in einem neuen benutzerdefinierten Attribut gespeichert werden kann.
 * Aktualisierter Patch: ACSD-45143.
@@ -1457,7 +1458,7 @@ Kleinere Fehlerbehebungen für Patch-Versionen
 * **MDVA-30782** (*für Adobe Commerce >=2.3.5 &lt;2.4.2*) - Behebt das Problem, dass der dynamische Block unabhängig von der Warenkorbregel angezeigt wird.
 * **MDVA-31021** (*für Adobe Commerce >=2.3.0 &lt;2.4.2*) - Behebt das Problem, dass in `module-catalog-import-export/Model/Import/Product/Option.php` Leistungsprobleme auftritt. Wenn `catalog_product_option` Tabelle mehr als ~100.000 Datensätze enthält, dauert die Validierung einer neuen CSV mit einem einzelnen Produkt weniger als 10 Sekunden.
 * **MDVA-31007** (*für Adobe Commerce >=2.4.0 &lt;2.4.1*) - Behebt das Problem, dass benutzerdefinierte Adressattribute auf der Seite mit den Bestelldetails im Bereich Mein Konto und im Backend nicht korrekt angezeigt werden.
-* **MDVA-29389** (*für Adobe Commerce >=2.3.0 &lt;2.4.2*) - Behebt das Problem mit Advanced Reporting, wo der `analytics_collect_data` cronjob sagt: *Port muss innerhalb des Host-Parameters konfiguriert werden (wie localhost:3306)*.
+* **MDVA-29389** (*für Adobe Commerce >=2.3.0 &lt;2.4.2*) - Behebt das Problem mit Advanced Reporting, bei dem der `analytics_collect_data` cronjob sagt: *Port muss innerhalb des Host-Parameters konfiguriert werden (z. B. localhost:3306)*.
 * **MDVA-31343** (*für Adobe Commerce >=2.3.4 &lt;2.3.6*) - Behebt das Problem mit der entfernten Hauptteilklasse `page-layout-category-full-width`, wenn eine Kategorie geplant ist.
 * **MDVA-30945** (*für Adobe Commerce >=2.3.0 &lt;2.4.2*) - Es wurde ein Problem behoben, bei dem beim Aktualisieren des Warenkorbs `Call to a member function getValue() on null in module-configurable-product CartItemProcessor.php` die Fehlermeldung „Schwerwiegender Fehler“ angezeigt wurde.
 
