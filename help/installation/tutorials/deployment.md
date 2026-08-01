@@ -3,9 +3,10 @@ title: Erstellen oder Aktualisieren der Bereitstellungskonfiguration
 description: Führen Sie diese Schritte aus, um Ihre Adobe Commerce-Bereitstellungskonfiguration zu verwalten.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---

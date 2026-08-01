@@ -2,7 +2,8 @@
 title: Konfigurieren des Stores
 description: Erfahren Sie, wie Sie Ihren Adobe Commerce-Store nach der Bereitstellungskonfiguration und Datenbankschema-Einrichtung über die Befehlszeile konfigurieren, einschließlich sicherer Installationsoptionen.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -30,7 +31,7 @@ bin/magento setup:store-config:set [--<parameter_name>=<value>, ...]
 
 Dabei definiert die folgende Tabelle Parameter und Werte:
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--base-url` | Basis-URL für den Zugriff auf Ihren Admin und Ihre Storefront in einem der folgenden Formate:<br><br>- `http[s]://<host or ip>/<your install dir>/`.<br><br>**Hinweis:** Das Schema (`http://` oder `https://`) und ein nachfolgender Schrägstrich sind beide erforderlich. `<your install dir>` ist der docroot-relative Pfad, in dem die Anwendung installiert werden soll. Je nachdem, wie Sie Ihren Webserver und die virtuellen Hosts einrichten, kann der Pfad Magento2 oder leer sein.<br><br>Um auf die Anwendung auf localhost zuzugreifen, können Sie `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` verwenden, die eine Basis-URL darstellt, die durch eine Virtual-Host-Einstellung oder eine Virtualisierungsumgebung wie Docker definiert wird. Wenn Sie beispielsweise einen virtuellen Host mit dem Host-Namen commerce.example.com einrichten, können Sie die Anwendung mit `--base-url={{base_url}}` installieren und mit einer URL wie `http://commerce.example.com/admin` auf den Admin zugreifen. | Nein |
 | `--language` | Sprach-Code zur Verwendung in der Admin- und Storefront.<br><br> (Wenn Sie dies noch nicht getan haben, können Sie die Liste der Sprachcodes anzeigen, indem Sie `magento info:language:list` aus dem `bin` eingeben.) | Nein |

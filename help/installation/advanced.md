@@ -2,7 +2,8 @@
 title: Erweiterte lokale Installation
 description: Erfahren Sie mehr über erweiterte Installationsszenarien für lokale Adobe Commerce-Bereitstellungen. Erfahren Sie mehr über komplexe Konfigurationen und benutzerdefinierte Einrichtungsoptionen.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 0%
@@ -121,7 +122,7 @@ Sie können den Admin-Benutzer während oder nach der Installation erstellen. We
 
 Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--admin-firstname` | Vorname des Admin-Benutzers. | Ja |
 | `--admin-lastname` | Nachname des Administrator-Benutzers. | Ja |
@@ -131,7 +132,7 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 
 **Site- und Datenbankkonfigurationsoptionen:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--base-url` | Basis-URL für den Zugriff auf Ihren Admin und Ihre Storefront in einem der folgenden Formate:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Hinweis:** Das Schema (http:// oder https://) und ein Schrägstrich sind beide erforderlich.<br><br>`<your install dir>` ist der docroot-bezogene Pfad, in dem die Adobe Commerce-Software installiert werden soll. Je nachdem, wie Sie Ihren Webserver und die virtuellen Hosts einrichten, kann der Pfad Magento2 oder leer sein.<br><br>Verwenden Sie für den Zugriff auf Adobe Commerce oder MagenAdobe Commerce entweder `http://127.0.0.1/<your install dir>/` oder `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}`, die eine Basis-URL darstellt, die durch eine Virtual-Host-Einstellung oder eine Virtualisierungsumgebung wie Docker definiert ist. Wenn Sie beispielsweise einen virtuellen Host mit dem Host-Namen `magento.example.com` einrichten, können Sie die Software mit `--base-url={{base_url}}` installieren und mit einer URL wie `http://magento.example.com/admin` auf den Admin zugreifen. | Ja |
 | `--backend-frontname` | URI (Uniform Resource Identifier) für den Zugriff auf den Administrator. Sie können diesen Parameter auslassen, damit die Anwendung einen zufälligen URI mit dem folgenden Muster generiert <code>admin_jkhgdfq</code>.<br><br>Aus Sicherheitsgründen wird ein zufälliger URI empfohlen. Ein zufälliger URI ist für Hacker oder bösartige Software schwieriger auszunutzen.<br><br>Der URI wird am Ende der Installation angezeigt. Sie können ihn jederzeit mithilfe des Befehls `bin/magento info:adminuri` anzeigen.<br><br>Wenn Sie einen Wert eingeben möchten, empfehlen wir, kein gängiges Wort wie „admin“ oder „backend“ zu verwenden. Der Admin-URI kann nur alphanumerische Werte und den Unterstrich (`_`) enthalten. | Nein |
@@ -159,7 +160,7 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 
 **Konfigurationsoptionen für Suchmaschinen:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--search-engine` | Die Version von Elasticsearch oder OpenSearch, die als Suchmaschine verwendet werden soll. Der Standardwert lautet `elasticsearch7`. Elasticsearch 5 ist veraltet und wird nicht empfohlen. | Nein |
 | `--elasticsearch-host` | Der Hostname oder die IP-Adresse, unter der Elasticsearch ausgeführt wird. Der Standardwert lautet `localhost`. | Nein |
@@ -179,7 +180,7 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 
 **[!DNL RabbitMQ]Konfigurationsoptionen:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--amqp-host` | Verwenden Sie die `--amqp` nur, wenn Sie bereits eine Installation von [!DNL RabbitMQ] eingerichtet haben. Weitere Informationen zum Installieren und Konfigurieren [!DNL RabbitMQ] Installation finden Sie unter [!DNL RabbitMQ].<br><br>Der Hostname, auf dem [!DNL RabbitMQ] installiert ist. | Nein |
 | `--amqp-port` | Der Port, über den eine Verbindung zu [!DNL RabbitMQ] hergestellt wird. Der Standardwert lautet 5672. | Nein |
@@ -195,7 +196,7 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 >
 >ActiveMQ Artemis wurde in Adobe Commerce 2.4.5 und höheren Versionen eingeführt.
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--stomp-host` | Verwenden Sie die `--stomp` nur, wenn Sie bereits eine Installation von ActiveMQ Artemis eingerichtet haben. Weitere Informationen zum Installieren und Konfigurieren von ActiveMQ Artemis finden Sie unter ActiveMQ Artemis-Installation <br><br>Der Hostname, auf dem ActiveMQ Artemis installiert ist. | Nein |
 | `--stomp-port` | Der Port, der für die Verbindung mit ActiveMQ Artemis verwendet werden soll. Der Standardwert lautet 61613. | Nein |
@@ -206,7 +207,7 @@ Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installatio
 
 **Konfigurationsoptionen sperren:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--lock-provider` | Anbieternamen sperren.<br><br>Verfügbare Sperranbieter: `db`, `zookeeper`, `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
 | `--lock-db-prefix` | Das spezifische DB-Präfix, um Sperrkonflikte bei der Verwendung `db` Sperranbieters zu vermeiden.<br><br>Der Standardwert: `NULL` | Nein |
@@ -246,9 +247,9 @@ Im folgenden Beispiel wird Adobe Commerce mit den folgenden Optionen installiert
 
 * Der Administrator verfügt über die folgenden Eigenschaften:
 
-   * Vor- und Nachnamen sind `Magento User`
-   * Benutzername ist `admin` und das Kennwort `admin123`
-   * E-Mail-Adresse ist `user@example.com`
+  * Vor- und Nachnamen sind `Magento User`
+  * Benutzername ist `admin` und das Kennwort `admin123`
+  * E-Mail-Adresse ist `user@example.com`
 
 * Die Standardsprache ist `en_US` (Englisch (USA))
 * Die Standardwährung ist US-Dollar
@@ -314,9 +315,9 @@ Im folgenden Beispiel wird Adobe Commerce mit den folgenden Optionen installiert
 
 * Der Administrator verfügt über die folgenden Eigenschaften:
 
-   * Vor- und Nachnamen sind `Magento User`
-   * Benutzername ist `admin` und das Kennwort `admin123`
-   * E-Mail-Adresse ist `user@example.com`
+  * Vor- und Nachnamen sind `Magento User`
+  * Benutzername ist `admin` und das Kennwort `admin123`
+  * E-Mail-Adresse ist `user@example.com`
 
 * Die Standardsprache ist `en_US` (Englisch (USA))
 * Die Standardwährung ist US-Dollar

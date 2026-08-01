@@ -3,7 +3,8 @@ title: Konfigurieren von Apache für Ihre Suchmaschine
 description: Führen Sie diese Schritte aus, um eine Suchmaschine mit dem Apache-Webserver für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
@@ -130,11 +131,11 @@ Hierbei gilt
 
 * `<username>` können sein:
 
-   * Einrichten von cron: der Webserver-Benutzer oder ein anderer Benutzer.
+  * Einrichten von cron: der Webserver-Benutzer oder ein anderer Benutzer.
 
   In diesem Beispiel verwenden wir den Webserver-Benutzer, aber die Auswahl des Benutzers liegt bei Ihnen.
 
-   * Einrichten von Elasticsearch: Der Benutzer heißt in diesem Beispiel `magento_elasticsearch`
+  * Einrichten von Elasticsearch: Der Benutzer heißt in diesem Beispiel `magento_elasticsearch`
 
 * `<password file name>` muss eine ausgeblendete Datei sein (beginnt mit `.`) und sollte den Namen des Benutzers widerspiegeln. Einzelheiten finden Sie in den Beispielen weiter unten in diesem Abschnitt.
 

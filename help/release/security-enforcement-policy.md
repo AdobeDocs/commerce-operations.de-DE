@@ -23,9 +23,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Nur Adobe Commerce in Cloud" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Version 2.4.4 - 2.4.9"
 nudge: true
-source-git-commit: 7512d5cd3fa1917c87b53e25ca69a3dc3c813727
+source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
 workflow-type: tm+mt
-source-wordcount: 1985
+source-wordcount: 1981
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Wenn Sie Ihre E-Commerce-Storefront weiterhin mit nicht unterstützter Software 
 
 ### Aktion 1: Aktualisieren von Softwareabhängigkeiten von Drittanbietern
 
-Abhängig von der -Software müssen alle nicht unterstützten Softwareabhängigkeiten um die in der folgenden Tabelle freigegebenen Timelines aktualisiert werden. Sie können Ihre Umgebungen in der [Cloud-Konsole](https://console.adobecommerce.com/) anzeigen und die ausgeführten Abhängigkeitsversionen mithilfe dieser [&#x200B; überprüfen](#check-software-dependency-versions). Softwareabhängigkeits-Upgrades gelten für alle Adobe Commerce on Cloud-Versionen 2.4.4 bis 2.4.9.
+Abhängig von der -Software müssen alle nicht unterstützten Softwareabhängigkeiten um die in der folgenden Tabelle freigegebenen Timelines aktualisiert werden. Sie können Ihre Umgebungen in der [Cloud-Konsole](https://console.adobecommerce.com/) anzeigen und die ausgeführten Abhängigkeitsversionen mithilfe dieser [&#x200B; überprüfen](#how-to-check-the-versions-you-are-running). Softwareabhängigkeits-Upgrades gelten für alle Adobe Commerce on Cloud-Versionen 2.4.4 bis 2.4.9.
 
 | Abhängigkeit | Version | Muss aktualisiert werden auf | Erzwingungsdatum |
 | --- | --- | --- | --- |
@@ -136,7 +136,7 @@ Abhängig von der -Software müssen alle nicht unterstützten Softwareabhängigk
 
 Adobe unterstützt Sie beim direkten Upgrade dieser Softwareabhängigkeiten.
 
-* **Erste Schritte:** Öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) mit den Umgebungen, die Sie aktualisieren müssen, und den zugehörigen Abhängigkeiten. Öffnen Sie Ihr Ticket mindestens 30 Tage vor dem Erzwingungsdatum, damit unser Team die Arbeit planen kann.
+* **Erste Schritte:** Öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) mit den Umgebungen, die Sie aktualisieren müssen, und den zugehörigen Abhängigkeiten. Öffnen Sie Ihr Ticket mindestens 30 Tage vor dem Erzwingungsdatum, damit unser Team die Arbeit planen kann.
 
 * **Ausfallzeit:** Adobe wird das erwartete Fenster bei der Planung mit Ihnen bestätigen.
 
@@ -187,7 +187,7 @@ Adobe bietet Tools und Support, um Ihren Übergang so reibungslos wie möglich z
 
 * **Upgrade-Kompatibilitätsbericht:** Adobe bietet einen detaillierten Bericht, der genau aufzeigt, was für ein Upgrade auf Adobe Commerce Version 2.4.9 erforderlich ist, einschließlich Zeit und Kostenumfang. [Generieren Sie Ihren Upgrade-Kompatibilitätsbericht](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Software-Abhängigkeits-Upgrade:** Da Sie die Softwareabhängigkeiten nicht direkt aktualisieren können, [öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket){target="_blank"}, damit Adobe das Upgrade für Sie übernimmt. Weitere Informationen finden Sie unter [Konfigurieren von Services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
+* **Software-Abhängigkeits-Upgrade:** Da Sie die Softwareabhängigkeiten nicht direkt aktualisieren können, [öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"}, damit Adobe das Upgrade für Sie übernimmt. Weitere Informationen finden Sie unter [Konfigurieren von Services](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/configuration/overview){target="_blank"}.
 
 **Wenn Sie sich für die Migration zu Adobe Commerce as a Cloud Service entscheiden**
 

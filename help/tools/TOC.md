@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
+source-git-commit: 989662bcb4c1a3cc50cffae1d706501409898c64
 workflow-type: tm+mt
-source-wordcount: '10538'
+source-wordcount: '10533'
 ht-degree: 0%
 
 ---
@@ -1051,7 +1051,6 @@ ht-degree: 0%
   - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
   - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)
-  - [Adobe Commerce Beta (On-Premise)](reference/commerce-on-premises-beta.md)
   - [Upgrade-Kompatibilitätstool](reference/uct.md)
 - Beobachtung für Adobe Commerce {#observation-for-adobe-commerce}
   - [Einführung](observation-for-adobe-commerce/intro.md)

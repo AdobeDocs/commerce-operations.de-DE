@@ -2,7 +2,8 @@
 title: Konfigurieren von Nachrichtenkonsumenten
 description: Führen Sie die folgenden Schritte aus, um das Verhalten der Nachrichtenwarteschlange-Verbraucher von Adobe Commerce zu konfigurieren.
 exl-id: df292301-f4bd-49df-a241-7467c35bf1d8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%

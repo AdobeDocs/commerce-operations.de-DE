@@ -2,9 +2,10 @@
 title: Installieren von Adobe Commerce
 description: Führen Sie die folgenden Schritte aus, um Adobe Commerce auf der von Ihnen verwalteten Infrastruktur zu installieren.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '2281'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -79,7 +80,7 @@ Die folgenden Optionen geben die Benutzerinformationen und Anmeldeinformationen 
 
 In Adobe Commerce Version 2.2.8 und höher können Sie den Admin-Benutzer während oder nach der Installation erstellen. Wenn Sie den Benutzer während der Installation erstellen, sind alle Variablen mit Administratorberechtigungen erforderlich. Siehe [Beispiel für localhost-Installationen](#sample-localhost-installations).
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--admin-firstname` | Vorname des Admin-Benutzers. | Ja |
 | `--admin-lastname` | Nachname des Administrator-Benutzers. | Ja |
@@ -89,11 +90,11 @@ In Adobe Commerce Version 2.2.8 und höher können Sie den Admin-Benutzer währe
 
 **Site- und Datenbankkonfigurationsoptionen:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--base-url` | Basis-URL für den Zugriff auf Ihren Admin und Ihre Storefront in einem der folgenden Formate:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Hinweis:** Das Schema (http:// oder https://) und ein Schrägstrich sind beide erforderlich.<br><br>`<your install dir>` ist der Basisverzeichnis-Pfad, in dem die Anwendung installiert werden soll. Je nachdem, wie Sie Ihren Webserver und die virtuellen Hosts einrichten, kann der Pfad Magento2 oder leer sein.<br><br>Für den Zugriff auf die Anwendung auf localhost können Sie entweder `http://127.0.0.1/<your install dir>/` oder `http://127.0.0.1/<your install dir>/`.<br><br>- verwenden, `{{base_url}}` eine Basis-URL darstellt, die durch eine Virtual-Host-Einstellung oder eine Virtualisierungsumgebung wie Docker definiert wird. Wenn Sie beispielsweise einen virtuellen Host mit dem Host-Namen commerce.example.com einrichten, können Sie die Anwendung mit `--base-url={{base_url}}` installieren und mit einer URL wie `http://commerce.example.com/admin` auf den Admin zugreifen. | Ja |
 | `--backend-frontname` | URI (Uniform Resource Identifier) für den Zugriff auf den Administrator. Sie können diesen Parameter auslassen, damit die Anwendung einen zufälligen URI mit dem folgenden Muster generiert <code>admin_jkhgdfq</code>.<br><br>Aus Sicherheitsgründen wird ein zufälliger URI empfohlen. Ein zufälliger URI ist für Hacker oder bösartige Software schwieriger auszunutzen.<br><br>Der URI wird am Ende der Installation angezeigt. Sie können ihn jederzeit mithilfe des Befehls `magento info:adminuri` anzeigen.<br><br>Wenn Sie einen Wert eingeben möchten, empfehlen wir, kein gängiges Wort wie „admin“ oder „backend“ zu verwenden. Der Admin-URI kann nur alphanumerische Werte und den Unterstrich (`_`) enthalten. | Nein |
-| `--db-host` | Verwenden Sie eine der folgenden Optionen:<br><br>- Der voll qualifizierte Hostname oder die IP-Adresse des Datenbankservers.<br><br>- `localhost` (Standard) oder `127.0.0.1`, wenn sich Ihr Datenbankserver auf demselben Host wie Ihr Webserver befindet.localhost bedeutet, dass die MySQL-Client-Bibliothek UNIX-Sockets verwendet, um eine Verbindung zur Datenbank herzustellen. `127.0.0.1` verwendet die Client-Bibliothek das TCP-Protokoll. Weitere Informationen zu Sockets finden Sie in der [PHP PDO_MYSQL-Dokumentation](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Hinweis:** Sie können optional den Datenbank-Server-Port in seinem Hostnamen wie www.example.com angeben:9000 | Ja |
+| `--db-host` | Verwenden Sie eine der folgenden Optionen:<br><br>- Der voll qualifizierte Hostname oder die IP-Adresse des Datenbankservers.<br><br>- `localhost` (Standard) oder `127.0.0.1`, wenn sich Ihr Datenbankserver auf demselben Host wie Ihr Webserver befindet.localhost bedeutet, dass die MySQL-Client-Bibliothek UNIX-Sockets verwendet, um eine Verbindung zur Datenbank herzustellen. `127.0.0.1` verwendet die Client-Bibliothek das TCP-Protokoll. Weitere Informationen zu Sockets finden Sie in der [PHP PDO_MYSQL-Dokumentation](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Hinweis:** Sie können optional den Datenbank-Server-Port in seinem Hostnamen wie www.example.com:9000 angeben | Ja |
 | `--db-name` | Name der Datenbankinstanz, in der die Datenbanktabellen installiert werden sollen.<br><br>Der Standardwert ist `magento2`. | Ja |
 | `--db-user` | Benutzername des Inhabers der Datenbankinstanz.<br><br>Der Standardwert ist `root`. | Ja |
 | `--db-password` | Kennwort des Besitzers der Datenbankinstanz. | Ja |
@@ -121,7 +122,7 @@ In Adobe Commerce Version 2.2.8 und höher können Sie den Admin-Benutzer währe
 
 **Konfigurationsoptionen für Suchmaschinen:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--search-engine` | Die Version der Suchmaschine. Mögliche Werte sind `elasticsearch7`, `elasticsearch6` und `elasticsearch5`. Der Standardwert lautet `elasticsearch7`. Wenn Sie OpenSearch als Suchmaschine installiert haben, geben Sie den Wert `elasticsearch7` an. Elasticsearch 5 ist veraltet und wird nicht empfohlen. | Nein |
 | `--elasticsearch-host` | Der Host-Name oder die IP-Adresse, auf dem/der die Suchmaschine läuft. Der Standardwert lautet `localhost`. | Nein |
@@ -134,7 +135,7 @@ In Adobe Commerce Version 2.2.8 und höher können Sie den Admin-Benutzer währe
 
 **[!DNL RabbitMQ]Konfigurationsoptionen:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--amqp-host` | Verwenden Sie die `--amqp` nur, wenn Sie bereits eine Installation von [!DNL RabbitMQ] eingerichtet haben. Weitere Informationen zum Installieren und Konfigurieren [!DNL RabbitMQ] Installation finden Sie unter [!DNL RabbitMQ].<br><br>Der Hostname, auf dem [!DNL RabbitMQ] installiert ist. | Nein |
 | `--amqp-port` | Der Port, über den eine Verbindung zu [!DNL RabbitMQ] hergestellt wird. Der Standardwert lautet 5672. | Nein |
@@ -150,7 +151,7 @@ In Adobe Commerce Version 2.2.8 und höher können Sie den Admin-Benutzer währe
 >
 >ActiveMQ Artemis wurde in Adobe Commerce 2.4.5 und höheren Versionen eingeführt.
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--stomp-host` | Verwenden Sie die `--stomp` nur, wenn Sie bereits eine Installation von ActiveMQ Artemis eingerichtet haben. Weitere Informationen zum Installieren und Konfigurieren von ActiveMQ Artemis finden Sie unter ActiveMQ Artemis-Installation <br><br>Der Hostname, auf dem ActiveMQ Artemis installiert ist. | Nein |
 | `--stomp-port` | Der Port, der für die Verbindung mit ActiveMQ Artemis verwendet werden soll. Der Standardwert lautet 61613. | Nein |
@@ -161,7 +162,7 @@ In Adobe Commerce Version 2.2.8 und höher können Sie den Admin-Benutzer währe
 
 **Remote-Speicheroptionen:**
 
-| -Name | Beschreibung | Erforderlich? |
+| Name | Beschreibung | Erforderlich? |
 |--- |--- |--- |
 | `remote-storage-driver` | Adaptername<br>Mögliche Werte:<br>**file**: Deaktiviert den Remotespeicher und verwendet das lokale Dateisystem <br>**aws-s3**: Verwenden Sie den [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) | Nein |
 | `remote-storage-bucket` | Objektspeicher- oder Container-Name | Nein |
@@ -172,7 +173,7 @@ In Adobe Commerce Version 2.2.8 und höher können Sie den Admin-Benutzer währe
 
 **Konfigurationsoptionen sperren:**
 
-| -Name | Wert | Erforderlich? |
+| Name | Wert | Erforderlich? |
 |--- |--- |--- |
 | `--lock-provider` | Anbieternamen sperren.<br><br>Verfügbare Sperranbieter: `db`, `zookeeper`, `file`.<br><br>Der standardmäßige Sperranbieter: `db` | Nein |
 | `--lock-db-prefix` | Das spezifische DB-Präfix, um Sperrkonflikte bei der Verwendung `db` Sperranbieters zu vermeiden.<br><br>Der Standardwert: `NULL` | Nein |
@@ -212,9 +213,9 @@ Im folgenden Beispiel wird die Anwendung mit den folgenden Optionen installiert:
 
 * Der Administrator verfügt über die folgenden Eigenschaften:
 
-   * Vor- und Nachnamen sind `Commerce User`
-   * Benutzername ist `admin` und das Kennwort `admin123`
-   * E-Mail-Adresse ist `user@example.com`
+  * Vor- und Nachnamen sind `Commerce User`
+  * Benutzername ist `admin` und das Kennwort `admin123`
+  * E-Mail-Adresse ist `user@example.com`
 
 * Die Standardsprache ist `en_US` (Englisch (USA))
 * Die Standardwährung ist US-Dollar
@@ -280,9 +281,9 @@ Im folgenden Beispiel wird die Anwendung mit den folgenden Optionen installiert:
 
 * Der Administrator verfügt über die folgenden Eigenschaften:
 
-   * Vor- und Nachnamen sind `Commerce User`
-   * Benutzername ist `admin` und das Kennwort `admin123`
-   * E-Mail-Adresse ist `user@example.com`
+  * Vor- und Nachnamen sind `Commerce User`
+  * Benutzername ist `admin` und das Kennwort `admin123`
+  * E-Mail-Adresse ist `user@example.com`
 
 * Die Standardsprache ist `en_US` (Englisch (USA))
 * Die Standardwährung ist US-Dollar
