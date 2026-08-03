@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Nur Adobe Commerce in Cloud" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Version 2.4.4 - 2.4.9"
-nudge: true
-source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
+color: blue
+source-git-commit: 7cd1bf694234196313373dea6620bdf67e08e82c
 workflow-type: tm+mt
-source-wordcount: 1981
+source-wordcount: 2017
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Finden Sie unten Ihre Adobe Commerce on Cloud-Version, um zu sehen, was für Sie
 | 2.4.8 oder 2.4.9 | Erforderlich bis zum 30. Oktober 2026 oder 31. Mai 2027, je nach Software. | Derzeit nicht erforderlich |
 
 **Tabelle 1: Erforderliche Maßnahmen und Fristen nach Version**
+
+Wenn Sie eine Fristverlängerung benötigen, wenden Sie sich an Ihr Account-Team oder an den [Adobe-Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 ## Wer muss nicht handeln?
 
