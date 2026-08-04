@@ -1,12 +1,25 @@
 ---
 title: 'Sicherheit und Compliance: Erforderliche Maßnahmen und Fristen'
 description: Erfahren Sie mehr über die Durchsetzung der Sicherheit für nicht unterstützte Adobe Commerce in Bezug auf Cloud-Versionen und Softwareabhängigkeiten, einschließlich Fristen, erforderlicher Maßnahmen und Risiken.
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-subfeature_v2: id: f2261633-201d-46c5-8a66-999e70527a83
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: f2261633-201d-46c5-8a66-999e70527a83
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Nur Adobe Commerce in Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Versionen 2.4.4 bis 2.4.9"
 color: blue
 source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
@@ -165,7 +178,7 @@ Wenn eine Umgebung nach der Traffic-Aussetzung weiterhin nicht konform ist, kann
 
 **Wenn Sie sich für die Migration zu [!DNL Adobe Commerce as a Cloud Service] entscheiden:**
 
-Adobe bietet Tools, die die Kosten und den Zeitaufwand für die Migration auf [!DNL Adobe Commerce as a Cloud Service] reduzieren. Sie stehen Ihnen kostenlos zur Verfügung. Diese Tools gelten nur für die Migration. Sie werden nicht für Adobe Commerce on Cloud-Versions-Upgrades verwendet. Das vollständige Migrationshandbuch, einschließlich [ Migrationspfade und -phasen, finden Sie ](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview) „Migrationsübersicht“.
+Adobe bietet Tools, die die Kosten und den Zeitaufwand für die Migration auf [!DNL Adobe Commerce as a Cloud Service] reduzieren. Sie stehen Ihnen kostenlos zur Verfügung. Diese Tools gelten nur für die Migration. Sie werden nicht für Adobe Commerce on Cloud-Versions-Upgrades verwendet. Das vollständige Migrationshandbuch, einschließlich [&#x200B; Migrationspfade und -phasen, finden Sie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview) „Migrationsübersicht“.
 
 * **Migrationsbewertung:** Bewertung der Migrationskomplexität Ihrer Anpassungen. Siehe [Übersicht über das Migrationsbewertungs-Tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment).
 
