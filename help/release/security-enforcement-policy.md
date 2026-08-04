@@ -20,7 +20,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-badgePaas: label="Nur Adobe Commerce in Cloud" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Versionen 2.4.4 bis 2.4.9"
+badgePaas: label="Nur Adobe Commerce in Cloud" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Versionen 2.4.4 bis 2.4.9"
 color: blue
 source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
 workflow-type: tm+mt
@@ -58,7 +58,7 @@ Damit Ihre E-Commerce-Umgebung sicher und konform bleibt, müssen alle Kunden in
 
 1. Eine sichere und unterstützte Version von Adobe Commerce on Cloud Service
 
-Befolgen Sie die folgenden Richtlinien, um zu überprüfen, ob Sie Maßnahmen ergreifen müssen, um Ihre Adobe Commerce in Cloud-Umgebungen zu schützen. Bei Umgebungen, die die Sicherheitsanforderungen nicht innerhalb der in Tabelle 1 unten angegebenen Fristen erfüllen, wird der eingehende Traffic ausgesetzt, wodurch die Storefront offline geschaltet wird. Wenn Sie Bedenken hinsichtlich der Fristverlängerung haben und eine kurze Verlängerung benötigen, wenden Sie sich an Ihr Account-Team oder den Adobe [Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+Befolgen Sie die folgenden Richtlinien, um zu überprüfen, ob Sie Maßnahmen ergreifen müssen, um Ihre Adobe Commerce in Cloud-Umgebungen zu schützen. Bei Umgebungen, die die Sicherheitsanforderungen nicht innerhalb der in Tabelle 1 unten angegebenen Fristen erfüllen, wird der eingehende Traffic ausgesetzt, wodurch die Storefront offline geschaltet wird. Wenn Sie Bedenken hinsichtlich der Fristverlängerung haben und eine kurze Verlängerung benötigen, wenden Sie sich an Ihr Account-Team oder den Adobe [Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
 
 **Tabelle 1: Sicherheitsanforderungen und -fristen**
 
@@ -76,11 +76,11 @@ Stellen Sie sicher, dass in Ihrer Umgebung vom Anbieter unterstützte Versionen 
 
 #### Schritt 1: Überprüfen Sie die Abhängigkeitsversionen der Software von Drittanbietern
 
-1. Melden Sie sich bei der [Cloud-Konsole](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/cloud-console) an.
+1. Melden Sie sich bei der [Cloud-Konsole](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/start/cloud-console) an.
 2. Öffnen Sie das entsprechende Projekt und wählen Sie dann die Umgebung aus, die Sie überprüfen möchten.
 3. Überprüfen Sie die Service-Konfiguration für diese Umgebung in der `.magento/services.yaml`-Datei, in der die unterstützten Service-Namen und -Versionen definiert sind, die von Adobe Commerce in Cloud Manager verwendet werden.
 
-Detaillierte Anweisungen finden Sie unter [Konfigurieren von Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
+Detaillierte Anweisungen finden Sie unter [Konfigurieren von Services](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
 Alle nicht unterstützten Softwareabhängigkeiten müssen auf die Versionen aktualisiert werden, die durch die Timelines in Tabelle 2 unten beschrieben sind.
 
@@ -101,7 +101,7 @@ Alle nicht unterstützten Softwareabhängigkeiten müssen auf die Versionen aktu
 
 Adobe unterstützt Sie beim direkten Upgrade dieser Softwareabhängigkeiten.
 
-* **Erste Schritte:** Öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) in dem Sie die Umgebungen, die Sie aktualisieren müssen, und die zugehörigen Abhängigkeiten auflisten. Öffnen Sie Ihr Ticket mindestens 30 Tage vor dem Erzwingungsdatum, damit Adobe die Arbeit planen kann.
+* **Erste Schritte:** Öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) in dem Sie die Umgebungen, die Sie aktualisieren müssen, und die zugehörigen Abhängigkeiten auflisten. Öffnen Sie Ihr Ticket mindestens 30 Tage vor dem Erzwingungsdatum, damit Adobe die Arbeit planen kann.
 
 * **Ausfallzeit:** Adobe bestätigt beim Planen das erwartete Zeitfenster.
 
@@ -126,7 +126,7 @@ Wenn Sie Erweiterungen von Drittanbietern verwenden, sollten Sie sich bei Ihren 
 
 1. Wenn die Version im Admin-Bedienfeld ausgeblendet ist:
 
-   * Stellen Sie eine Verbindung zur [Remote-Umgebung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections#connect-to-a-remote-environment) her.
+   * Stellen Sie eine Verbindung zur [Remote-Umgebung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections#connect-to-a-remote-environment) her.
    * Verwenden Sie das [-Tool von Adobe Commerce](../configuration/cli/config-cli.md) um die Version zu überprüfen.
 
      ```shell
@@ -139,8 +139,8 @@ Wenn Sie Erweiterungen von Drittanbietern verwenden, sollten Sie sich bei Ihren 
 
 | Aktuelle Version von Adobe Commerce in Cloud Manager | Erforderliche Aktion | Deadline |
 |---|---|---|
-| Version 2.4.4 oder 2.4.5 | Führen Sie ein Upgrade auf Adobe Commerce auf Cloud-Version 2.4.9 durch (oder auf die neueste Version) oder migrieren Sie auf [!DNL Adobe Commerce as a Cloud Service].<br>Grund: v2.4.4 und 2.4.5 erhalten bis zum 31. Mai 2027 nur begrenzte, isolierte Sicherheitskorrekturen für das Kernprogramm. Dazu gehören keine Qualitätskorrekturen, Kompatibilitätsunterstützung für Anwendungsabhängigkeiten (z. B. PHP) oder Plattformabhängigkeits-Updates. Siehe Adobe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | &#x200B;1. Juni 2027 |
-| Version 2.4.6 oder 2.4.7 | Aktualisieren Sie auf Adobe Commerce auf Cloud-Version 2.4.9 (oder die neueste Version) oder migrieren Sie auf [!DNL Adobe Commerce as a Cloud Service].<br>Grund: Version 2.4.6 wird bis zum 30. August 2027 erweitert unterstützt und erhält nur begrenzte, isolierte Sicherheitskorrekturen für die Kernanwendung bis zum 31. Mai 2028. Version 2.4.7 wird bis zum 31. Mai 2027 standardmäßig unterstützt und bis zum 31. Mai 2028 erweitert. Siehe Adobe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy). | &#x200B;1. Juni 2028 |
+| Version 2.4.4 oder 2.4.5 | Führen Sie ein Upgrade auf Adobe Commerce auf Cloud-Version 2.4.9 durch (oder auf die neueste Version) oder migrieren Sie auf [!DNL Adobe Commerce as a Cloud Service].<br>Grund: v2.4.4 und 2.4.5 erhalten bis zum 31. Mai 2027 nur begrenzte, isolierte Sicherheitskorrekturen für das Kernprogramm. Dazu gehören keine Qualitätskorrekturen, Kompatibilitätsunterstützung für Anwendungsabhängigkeiten (z. B. PHP) oder Plattformabhängigkeits-Updates. Siehe Adobe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy). | &#x200B;1. Juni 2027 |
+| Version 2.4.6 oder 2.4.7 | Aktualisieren Sie auf Adobe Commerce auf Cloud-Version 2.4.9 (oder die neueste Version) oder migrieren Sie auf [!DNL Adobe Commerce as a Cloud Service].<br>Grund: Version 2.4.6 wird bis zum 30. August 2027 erweitert unterstützt und erhält nur begrenzte, isolierte Sicherheitskorrekturen für die Kernanwendung bis zum 31. Mai 2028. Version 2.4.7 wird bis zum 31. Mai 2027 standardmäßig unterstützt und bis zum 31. Mai 2028 erweitert. Siehe Adobe [Lebenszyklusrichtlinie](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy). | &#x200B;1. Juni 2028 |
 | Version 2.4.8 oder 2.4.9 | Es ist keine Aktion zum Aktualisieren der Adobe Commerce auf der Cloud-Version erforderlich. Die Fristen für die Abhängigkeit von Software von Drittanbietern in Aktion 1 gelten weiterhin.<br>Grund: Es wurde keine Frist festgelegt. | Derzeit nicht erforderlich |
 
 #### Schritt 2: Bestimmen des Upgrade- oder Migrationspfads
@@ -156,7 +156,7 @@ Verwenden Sie die folgende Tabelle, um Ihre Optionen zu vergleichen, um den best
 
 | | Adobe Commerce auf Cloud-Version 2.4.9 | [!DNL Adobe Commerce as a Cloud Service] |
 |---|---|---|
-| **Was ist es** | Die neueste Adobe Commerce-Version mit vollständiger Sicherheitsabdeckung, Qualitätskorrekturen und Plattformabhängigkeits-Updates. | Adobes vollständig verwaltete Commerce-Plattform, die für kontinuierliche Innovation ohne den Upgrade-Overhead entwickelt wurde. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview). |
+| **Was ist es** | Die neueste Adobe Commerce-Version mit vollständiger Sicherheitsabdeckung, Qualitätskorrekturen und Plattformabhängigkeits-Updates. | Adobes vollständig verwaltete Commerce-Plattform, die für kontinuierliche Innovation ohne den Upgrade-Overhead entwickelt wurde. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview). |
 | **Am besten für Sie, wenn** | Sie möchten weiterhin Ihre eigene Infrastruktur, Upgrades und Patches verwalten. | Sie möchten die Upgrade-Zyklen endgültig hinter sich lassen, Ihre Gesamtbetriebskosten senken und die neuesten Funktionen von Adobe ohne zusätzlichen Aufwand automatisch nutzen. |
 | **Hauptvorteil** | Erfüllt die Sicherheitsanforderungen und behält gleichzeitig Ihr bestehendes Setup bei. | Eine blitzschnelle Storefront mit Edge-Bereitstellung, ein hochgradig skalierbarer Katalog, native Digital-Asset-Verwaltung und integrierte generative KI - alles auf einer von Adobe verwalteten Infrastruktur. |
 
@@ -174,19 +174,19 @@ Wenn eine Umgebung nach der Traffic-Aussetzung weiterhin nicht konform ist, kann
 
 * **Upgrade-Kompatibilitätsbericht:** Adobe bietet einen detaillierten Bericht, der genau aufzeigt, was Ihr Upgrade auf Adobe Commerce Version 2.4.9 erfordert, einschließlich des Kostenumfangs. [Generieren Sie Ihren Upgrade-Kompatibilitätsbericht](https://supportinsights.adobe.com/commerce/tab/main).
 
-* **Software-Abhängigkeits-Upgrade:** Da Sie die Softwareabhängigkeiten nicht direkt aktualisieren können, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case), damit Adobe das Upgrade für Sie übernimmt. Weitere Informationen finden Sie unter [Konfigurieren von Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
+* **Software-Abhängigkeits-Upgrade:** Da Sie die Softwareabhängigkeiten nicht direkt aktualisieren können, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case), damit Adobe das Upgrade für Sie übernimmt. Weitere Informationen finden Sie unter [Konfigurieren von Services](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
 **Wenn Sie sich für die Migration zu [!DNL Adobe Commerce as a Cloud Service] entscheiden:**
 
-Adobe bietet Tools, die die Kosten und den Zeitaufwand für die Migration auf [!DNL Adobe Commerce as a Cloud Service] reduzieren. Sie stehen Ihnen kostenlos zur Verfügung. Diese Tools gelten nur für die Migration. Sie werden nicht für Adobe Commerce on Cloud-Versions-Upgrades verwendet. Das vollständige Migrationshandbuch, einschließlich [&#x200B; Migrationspfade und -phasen, finden Sie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/overview) „Migrationsübersicht“.
+Adobe bietet Tools, die die Kosten und den Zeitaufwand für die Migration auf [!DNL Adobe Commerce as a Cloud Service] reduzieren. Sie stehen Ihnen kostenlos zur Verfügung. Diese Tools gelten nur für die Migration. Sie werden nicht für Adobe Commerce on Cloud-Versions-Upgrades verwendet. Das vollständige Migrationshandbuch, einschließlich [&#x200B; Migrationspfade und -phasen, finden Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/migration/overview) „Migrationsübersicht“.
 
-* **Migrationsbewertung:** Bewertung der Migrationskomplexität Ihrer Anpassungen. Siehe [Übersicht über das Migrationsbewertungs-Tool](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/assessment).
+* **Migrationsbewertung:** Bewertung der Migrationskomplexität Ihrer Anpassungen. Siehe [Übersicht über das Migrationsbewertungs-Tool](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/migration/migration-tools/assessment).
 
-* **Datenmigration:** Das Tool [Massenmigration und inkrementelle Datenmigration](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool) verschiebt Ihre Daten in Ihre neue [!DNL Adobe Commerce as a Cloud Service].
+* **Datenmigration:** Das Tool [Massenmigration und inkrementelle Datenmigration](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool) verschiebt Ihre Daten in Ihre neue [!DNL Adobe Commerce as a Cloud Service].
 
 * **KI-gestützte Migrations- und Entwicklungs-Tools:** Adobe Developer App Builder und Commerce Storefront powered by Edge Delivery Services beschleunigen die Modernisierung von Storefronts und die Neuplattform von Erweiterungen.
 
-Bei Fragen wenden Sie sich an Ihr Account-Team oder kontaktieren Sie [Support Services](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
+Bei Fragen wenden Sie sich an Ihr Account-Team oder kontaktieren Sie [Support Services](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 >[!MORELIKETHIS]
 >
