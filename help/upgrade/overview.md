@@ -2,9 +2,9 @@
 title: Überblick über den Upgrade-Prozess
 description: Erfahren Sie, wie Sie durch Upgrades Ihres Adobe Commerce-Projekts die Sicherheit und Effizienz von Storefronts gewährleisten. Erfahren Sie mehr über Best Practices für die Planung und Durchführung erfolgreicher Upgrades.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Die Aktualisierung Ihres Adobe Commerce-Projekts ist von entscheidender Bedeutung, um sicherzustellen, dass Ihr Geschäft sicher, PCI-kompatibel und mit maximaler Effizienz betrieben wird. Dieses Handbuch führt Sie durch die wichtigsten Aspekte bei der Vorbereitung auf ein Upgrade.
 
-Das Handbuch bietet einen Überblick über die typische Adobe Commerce-Upgrade-Journey und Best Practices, die auf dieser Journey befolgt werden sollten. Außerdem werden technische Details des Upgrade-Prozesses mit einem zeitnahen Beispiel und einer schrittweisen Anleitung für die Aktualisierung auf die neueste Version von Adobe Commerce beschrieben. Es ist wichtig, den Adobe Commerce-[&#x200B; (Veröffentlichungszeitplan) zu überprüfen &#x200B;](../release/schedule.md) frühzeitig mit der Vorbereitung auf Upgrades zu beginnen. Adobe veröffentlicht jährlich den Versionsplan, um den Planungsprozess für Händler zu erleichtern, und empfiehlt, jeden Patch-Versionszyklus zu aktualisieren. Um PCI-kompatibel zu bleiben, müssen Händler den neuesten Patch oder Sicherheits-Patch verwenden.
+Das Handbuch bietet einen Überblick über die typische Adobe Commerce-Upgrade-Journey und Best Practices, die auf dieser Journey befolgt werden sollten. Außerdem werden technische Details des Upgrade-Prozesses mit einem zeitnahen Beispiel und einer schrittweisen Anleitung für die Aktualisierung auf die neueste Version von Adobe Commerce beschrieben. Es ist wichtig, den Adobe Commerce-[ (Veröffentlichungszeitplan) zu überprüfen ](../release/schedule.md) frühzeitig mit der Vorbereitung auf Upgrades zu beginnen. Adobe veröffentlicht jährlich den Versionsplan, um den Planungsprozess für Händler zu erleichtern, und empfiehlt, jeden Patch-Versionszyklus zu aktualisieren. Um PCI-kompatibel zu bleiben, müssen Händler den neuesten Patch oder Sicherheits-Patch verwenden.
 
 ## Für wen ist dieser Leitfaden geeignet?
 
@@ -43,6 +43,8 @@ Sicherheit ist einer der Hauptgründe für Upgrades, da 83 % der Sicherheitsvorf
 
 - **Patch-Versionen** - Umfasst Fehlerbehebungen für Sicherheit, Leistung, Qualität und hohe Priorität.
 - **Sicherheits-Patch**-Versionen: Umfassen Sie Fehlerbehebungen und Verbesserungen, um Ihre Site sicher und einfacher zu implementieren.
+
+Wenn Sie Adobe Commerce in der Cloud-Version 2.4.4 bis 2.4.9 verwenden, finden Sie im [Hinweis zu Sicherheit und Compliance](../release/security-enforcement-policy.md) die erforderlichen Maßnahmen und Fristen, um Ihre Umgebung sicher und konform zu halten.
 
 ### Leistung
 
