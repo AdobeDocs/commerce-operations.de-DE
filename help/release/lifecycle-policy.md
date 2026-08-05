@@ -3,9 +3,9 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
+source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Adobe Commerce-Lebenszyklusrichtlinie
 
-Um die Adobe Commerce-Lebenszyklusrichtlinie zu optimieren und die geschäftskritischen Anforderungen von Kunden zu unterstützen, bietet Adobe für jede Version ein dreijähriges Standard-Support-Fenster ab dem Datum der allgemeinen Verfügbarkeit und veröffentlicht in diesem Zeitraum Qualitätskorrekturen. Daten und Einzelheiten zum Ende des Software-Supports für jede Version finden Sie in der Tabelle [Ende des Software-Supports](#end-of-software-support).
+Um die Adobe Commerce-Lebenszyklusrichtlinie zu optimieren und die geschäftskritischen Anforderungen von Kunden zu unterstützen, bietet Adobe für jede Version ein dreijähriges Standard-Support-Fenster ab dem Datum der allgemeinen Verfügbarkeit und veröffentlicht in diesem Zeitraum Qualitätskorrekturen. Daten und Details zum Ende des Software-Supports für jede Version finden Sie in der Tabelle [Ende der Support-](#end-of-support-dates)&quot;.
 
 Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [&#x200B; getesteten und unterstützten Technologien &#x200B;](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
 
@@ -33,15 +33,15 @@ Adobe empfiehlt Kunden, so bald wie möglich ein Upgrade durchzuführen. Um jedo
 
 >[!NOTE]
 >
->Adobe führt eine Richtlinie zur erzwungenen Versionsaktualisierung für Adobe Commerce in der Cloud ein. Ab **1. Juni 2027** Adobe keine Cloud-Umgebungen mehr, in denen nicht unterstützte Commerce-Versionen ausgeführt werden, und behält sich das Recht vor, diese stillzulegen. Wenn Sie in der Cloud ausführen, müssen Sie zu einer unterstützten Adobe Commerce-Version wechseln oder vor dem Veröffentlichungsdatum [Ende der erweiterten Unterstützung](lifecycle-policy.md#end-of-support-dates) für Ihre Veröffentlichungszeile zu [!DNL Adobe Commerce as a Cloud Service] migrieren. Unter [Richtlinie zur Durchsetzung des Cloud-](version-upgrade-enforcement-policy.md)-Upgrades) finden Sie Erzwingungsdaten, betroffene Versionen und was passiert, wenn Sie auf einer nicht unterstützten Version bleiben.
+>Adobe führt eine Richtlinie zur erzwungenen Versionsaktualisierung für Adobe Commerce on Cloud ein, um allen Kunden zu helfen, auf einer sicheren, unterstützten Plattform zu bleiben. Ab **1. Juni 2027** Adobe keine Cloud-Umgebungen mehr, in denen nicht unterstützte Commerce-Versionen ausgeführt werden, und behält sich das Recht vor, diese stillzulegen. Wenn Sie in der Cloud ausführen, müssen Sie zu einer unterstützten Adobe Commerce-Version wechseln oder vor dem Veröffentlichungsdatum [Ende der erweiterten Unterstützung](lifecycle-policy.md#end-of-support-dates) für Ihre Veröffentlichungszeile zu [!DNL Adobe Commerce as a Cloud Service] migrieren. Wenn Sie Version 2.4.4 bis 2.4.9 verwenden, finden Sie in der [Sicherheits- und Compliance-](security-enforcement-policy.md)) die spezifischen Aktionen und Fristen, die für Ihre Umgebung gelten.
 
 ## Übergangszeitraum nur für Sicherheitsleistungen
 
-Ein einmaliger, zeitlich begrenzter Übergangszeitraum steht nur für die Versionen 2.4.4, 2.4.5 und 2.4.6 zur Verfügung, deren verlängerte Unterstützung 2025 oder 2026 endete. Die Übergangszeit, in der nur die Sicherheit verfügbar ist, bietet nur begrenzte, isolierte Sicherheitskorrekturen. Adobe Commerce-Qualitätskorrekturen werden nicht bereitgestellt. Dieser Zeitraum entspricht weder der Standard- noch der verlängerten Unterstützung und wird nicht weiter verlängert. Behandeln Sie sie als Migrationszeitraum, nicht als langfristige Support-Stufe.
+Ein einmaliger, zeitlich begrenzter Übergangszeitraum steht nur für die Versionen 2.4.4, 2.4.5 und 2.4.6 zur Verfügung, deren verlängerte Unterstützung 2025 oder 2026 endete. Der Übergangszeitraum auf Sicherheitsniveau bietet nur begrenzte, isolierte Sicherheitskorrekturen (keine Qualitätskorrekturen).
 
 >[!IMPORTANT]
 >
->Die Übergangszeit, die ausschließlich für die Sicherheit gilt, ist eine einmalige Ausnahme. Sie wird nicht über die veröffentlichten Daten hinaus verlängert. Behandeln Sie den Zeitraum „Nur Sicherheit“ als Migrationszeit, nicht als langfristige Support-Stufe.
+>Die Übergangszeit, die ausschließlich für die Sicherheit gilt, ist eine einmalige Ausnahme. Sie wird nicht über die veröffentlichten Daten hinaus verlängert. Behandeln Sie den Zeitraum „Nur Sicherheit“ als Migrationszeit, nicht als langfristige Support-Stufe. Wenden Sie sich an Ihr Konto-Team, wenn Sie Hilfe bei der Erstellung eines Migrationsplans benötigen.
 
 ## Ende der Support-Termine
 
@@ -173,7 +173,7 @@ Sie sind für die Pflege aller Drittanbieterabhängigkeiten und Plattformdienste
 
 >[!IMPORTANT]
 >
->Das Ausführen nicht unterstützter Abhängigkeitsversionen kann zu einer Sicherheitslücke in Ihrer Cloud-Instanz führen, die Adobe nicht beheben kann. In solchen Fällen behält sich Adobe das Recht vor, ein Upgrade der betroffenen Software-Abhängigkeiten zu erzwingen oder die Instanz zu beenden, wenn ein Upgrade nicht möglich ist - unabhängig von Ihrem Adobe Commerce-Versionssupportstatus.
+>Das Ausführen nicht unterstützter Abhängigkeitsversionen kann zu einer Sicherheitslücke in Ihrer Cloud-Instanz führen, die Adobe nicht beheben kann. In solchen Fällen behält sich Adobe das Recht vor, ein Upgrade der betroffenen Software-Abhängigkeiten zu erzwingen oder die Instanz zu beenden, wenn ein Upgrade nicht möglich ist - unabhängig von Ihrem Adobe Commerce-Versionssupportstatus. Informationen [&#x200B; Planung dieser Upgrades und den Support](security-enforcement-policy.md) der Ihnen während des gesamten Prozesses zur Verfügung steht, finden Sie in den Sicherheits- und Compliance-Informationen .
 
 ## PHP End of Life und PCI-Compliance
 

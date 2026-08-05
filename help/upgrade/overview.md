@@ -2,9 +2,9 @@
 title: Überblick über den Upgrade-Prozess
 description: Erfahren Sie, wie Sie durch Upgrades Ihres Adobe Commerce-Projekts die Sicherheit und Effizienz von Storefronts gewährleisten. Erfahren Sie mehr über Best Practices für die Planung und Durchführung erfolgreicher Upgrades.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '960'
 ht-degree: 2%
 
 ---
@@ -43,6 +43,8 @@ Sicherheit ist einer der Hauptgründe für Upgrades, da 83 % der Sicherheitsvorf
 
 - **Patch-Versionen** - Umfasst Fehlerbehebungen für Sicherheit, Leistung, Qualität und hohe Priorität.
 - **Sicherheits-Patch**-Versionen: Umfassen Sie Fehlerbehebungen und Verbesserungen, um Ihre Site sicher und einfacher zu implementieren.
+
+Wenn Sie Adobe Commerce in der Cloud-Version 2.4.4 bis 2.4.9 verwenden, finden Sie im [Hinweis zu Sicherheit und Compliance](../release/security-enforcement-policy.md) die erforderlichen Maßnahmen und Fristen, um Ihre Umgebung sicher und konform zu halten.
 
 ### Leistung
 

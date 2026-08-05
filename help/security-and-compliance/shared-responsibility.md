@@ -2,9 +2,9 @@
 title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3270'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ Händler sind für Folgendes verantwortlich:
 >
 >* [Software-Lebenszyklusrichtlinie](../release/lifecycle-policy.md) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
 >* [Richtlinie zur Durchsetzung des Cloud-](../release/version-upgrade-enforcement-policy.md)-Upgrades - Erzwingungstermine und erforderliche Aktionen
+>* [Sicherheits- und Compliance](../release/security-enforcement-policy.md) - Erforderliche Aktionen und Fristen für Adobe Commerce in Cloud-Versionen 2.4.4 bis 2.4.9
 
 {{supported-versions-only}}
 
@@ -99,9 +100,9 @@ Der Händler ist für die Befolgung der Best Practices für die Sicherheit seine
 * Gewährleistung der Sicherheit aller Systeme oder Netzwerke, die der Händler mit der Adobe Commerce on Cloud Infrastructure-Anwendung verbindet
 * Alle Plattformdienste, Abhängigkeiten von Drittanbietern und Adobe Commerce Services-Erweiterungen auf Versionen verwaltet werden, die aktiv von ihren jeweiligen Anbietern oder von Adobe unterstützt werden. Dazu gehören:
 
-   * Infrastruktur-Services wie Datenbank, Cache, Suche, PHP-Laufzeit und Webserver
-   * Adobe Commerce Services-Erweiterungen
-   * Alle Erweiterungen und benutzerdefinierten Integrationen von Drittanbietern
+  * Infrastruktur-Services wie Datenbank, Cache, Suche, PHP-Laufzeit und Webserver
+  * Adobe Commerce Services-Erweiterungen
+  * Alle Erweiterungen und benutzerdefinierten Integrationen von Drittanbietern
 
   Adobe bietet keine Unterstützung für Bereitstellungen, auf denen nicht unterstützte Versionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) und die [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability) für unterstützte Versionen.
 
