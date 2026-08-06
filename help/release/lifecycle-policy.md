@@ -3,9 +3,9 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
+source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1469'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Adobe empfiehlt Kunden, so bald wie möglich ein Upgrade durchzuführen. Um jedo
 
 >[!NOTE]
 >
->Adobe führt eine Richtlinie zur erzwungenen Versionsaktualisierung für Adobe Commerce on Cloud ein, um allen Kunden zu helfen, auf einer sicheren, unterstützten Plattform zu bleiben. Ab **1. Juni 2027** Adobe keine Cloud-Umgebungen mehr, in denen nicht unterstützte Commerce-Versionen ausgeführt werden, und behält sich das Recht vor, diese stillzulegen. Wenn Sie in der Cloud ausführen, müssen Sie zu einer unterstützten Adobe Commerce-Version wechseln oder vor dem Veröffentlichungsdatum [Ende der erweiterten Unterstützung](lifecycle-policy.md#end-of-support-dates) für Ihre Veröffentlichungszeile zu [!DNL Adobe Commerce as a Cloud Service] migrieren. Wenn Sie Version 2.4.4 bis 2.4.9 verwenden, finden Sie in der [Sicherheits- und Compliance-](security-enforcement-policy.md)) die spezifischen Aktionen und Fristen, die für Ihre Umgebung gelten.
+>Adobe führt eine Richtlinie zur erzwungenen Versionsaktualisierung für Adobe Commerce on Cloud ein, um allen Kunden zu helfen, auf einer sicheren, unterstützten Plattform zu bleiben. Ab **1. Juni 2027** Adobe keine Cloud-Umgebungen mehr, in denen nicht unterstützte Commerce-Versionen ausgeführt werden, und ist gezwungen, geeignete Maßnahmen zu ergreifen, um die Sicherheit der Adobe Commerce-Plattform und ihrer Kunden zu gewährleisten. Dazu gehört auch die Einstellung des Traffics auf die betroffene Infrastruktur. Infolgedessen wird Ihre E-Commerce-Storefront offline gehen. Wenn Sie in der Cloud ausführen, müssen Sie zu einer unterstützten Adobe Commerce-Version wechseln oder vor dem Veröffentlichungsdatum [Ende der erweiterten Unterstützung](lifecycle-policy.md#end-of-support-dates) für Ihre Veröffentlichungszeile zu [!DNL Adobe Commerce as a Cloud Service] migrieren. Wenn Sie Version 2.4.4 bis 2.4.9 verwenden, finden Sie in der [Sicherheits- und Compliance-](security-enforcement-policy.md)) die spezifischen Aktionen und Fristen, die für Ihre Umgebung gelten.
 
 ## Übergangszeitraum nur für Sicherheitsleistungen
 
@@ -173,7 +173,9 @@ Sie sind für die Pflege aller Drittanbieterabhängigkeiten und Plattformdienste
 
 >[!IMPORTANT]
 >
->Das Ausführen nicht unterstützter Abhängigkeitsversionen kann zu einer Sicherheitslücke in Ihrer Cloud-Instanz führen, die Adobe nicht beheben kann. In solchen Fällen behält sich Adobe das Recht vor, ein Upgrade der betroffenen Software-Abhängigkeiten zu erzwingen oder die Instanz zu beenden, wenn ein Upgrade nicht möglich ist - unabhängig von Ihrem Adobe Commerce-Versionssupportstatus. Informationen [&#x200B; Planung dieser Upgrades und den Support](security-enforcement-policy.md) der Ihnen während des gesamten Prozesses zur Verfügung steht, finden Sie in den Sicherheits- und Compliance-Informationen .
+>Das Ausführen nicht unterstützter Abhängigkeitsversionen kann zu einer Sicherheitslücke in Ihrer Cloud-Instanz führen, die Adobe nicht beheben kann. In solchen Fällen ist Adobe gezwungen, geeignete Maßnahmen zu ergreifen, um die Sicherheit der Adobe Commerce-Plattform und ihrer Kunden zu gewährleisten. Dazu gehört auch die Einstellung des Traffics auf die betroffene Infrastruktur. Infolgedessen wird Ihre E-Commerce-Storefront offline gehen.
+>
+>Wenn eine Umgebung nach der Traffic-Aussetzung weiterhin nicht konform ist, kann Adobe Cloud-Services beenden und den Stilllegungsprozess starten. Als Ergebnis der Stilllegung werden alle Daten und Assets in der gehosteten E-Commerce-Umgebung, einschließlich aller Instanzen, Umgebungen und Zweige, dauerhaft gelöscht und können nicht wiederhergestellt werden. Informationen [&#x200B; Zeitplan für diese Upgrades und den Support, der Ihnen während &#x200B;](security-enforcement-policy.md) gesamten Prozesses zur Verfügung steht, finden Sie unter „Erforderliche Aktionen und Fristen für die Sicherung von Commerce-Umgebungen“.
 
 ## PHP End of Life und PCI-Compliance
 

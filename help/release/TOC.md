@@ -4,10 +4,10 @@ user-guide-description: Zugreifen auf alle Versionsinformationen für Adobe Comm
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 5900d3352e25623cb8096e8d51b707e3d5d84006
+source-git-commit: 5e0e4b0dc59aa2d8bd08d2d4af1176d14577f063
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 31%
+source-wordcount: '109'
+ht-degree: 30%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 31%
 - [Beta-Versionen](beta.md)
 - Planung und Richtlinien {#planning}
   - [Lebenszyklusrichtlinie](lifecycle-policy.md)
-  - [Sicherheits- und Compliance-Hinweis](security-enforcement-policy.md)
+  - [Erforderliche Maßnahmen und Fristen zur Sicherung von Commerce-Umgebungen](security-enforcement-policy.md)
   - [Durchsetzungsrichtlinie für das Versions-Upgrade](version-upgrade-enforcement-policy.md)
   - [Versionierungsrichtlinie](versioning-policy.md)
   - [Veröffentlichungszeitplan](schedule.md)
