@@ -3,7 +3,7 @@ title: Release-Richtlinie
 description: Erfahren Sie mehr über Adobe Commerce-Versionstypen, Marketing-Version versus Modulversionierung, Patch- und Sicherheitsversionen, Betas, Hotfixes und die allgemeine Versionsrichtlinie.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
 last-update: 2026-06-18T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -83,4 +83,3 @@ Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmte
 von Nicht-Adobe-Mitarbeitern erstellt wurden, um ein Problem zu beheben oder den Adobe Commerce-Code aus verschiedenen Gründen zu ändern.
 
 <!-- Last updated from includes: 2026-06-16 17:36:23 -->
-

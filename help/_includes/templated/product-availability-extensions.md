@@ -1,8 +1,8 @@
 ---
-source-git-commit: 287be6576d85b403982a50d462b41ace79f697da
+source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 0%
+source-wordcount: '249'
+ht-degree: 17%
 
 ---
 # Produktverfügbarkeit der von Adobe erstellten Erweiterungen
@@ -12,22 +12,22 @@ ht-degree: 0%
   <thead>
     <tr>
       <th>Adobe Commerce-Versionen</th>
-      <th>2,4,8</th>
-      <th>2,4,7</th>
-      <th>2,4,6</th>
-      <th>2,4,5</th>
-      <th>2,4,4</th>
+      <th>2.4.8</th>
+      <th>2.4.7</th>
+      <th>2.4.6</th>
+      <th>2.4.5</th>
+      <th>2.4.4</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
       <tr>
           <td>Adobe I/O Events für Adobe Commerce</td>
-          <td>1,8+</td>
-          <td>1,5+</td>
-          <td>1,5+</td>
-          <td>1,5+</td>
-          <td>1,5+</td>
+          <td>1.8+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
+          <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Composer</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Versionshinweise</a><br/>
@@ -47,7 +47,7 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>Adobe Commerce-Webhooks</td>
-          <td>1,5+</td>
+          <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
           <td>1.2+</td>
@@ -83,11 +83,11 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>B2B</td>
-          <td>1,5,2</td>
-          <td>1,5+<br /> 1,4+</td>
-          <td>1,5+<br /> 1,4+<br /> 1,3,5+</td>
-          <td>1,3,4</td>
-          <td>1,3,3</td>
+          <td>1.5.3</td>
+          <td>1.5.3</td>
+          <td>1.5.2<br /> 1.4.2</td>
+          <td>1.3.4</td>
+          <td>1.3.3</td>
           <td>
               <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/install">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
@@ -95,11 +95,11 @@ ht-degree: 0%
       </tr>
       <tr>
           <td>Datenverbindung</td>
-          <td>3,4,0</td>
-          <td>3,4,0</td>
-          <td>3,4,0</td>
-          <td>3,4,0</td>
-          <td>3,4,0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
+          <td>3.4.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
@@ -109,9 +109,9 @@ ht-degree: 0%
           <td>Page Builder</td>
           <td>-</td>
           <td>-</td>
-          <td>1,7,3</td>
-          <td>1,7,2</td>
-          <td>1,7,1</td>
+          <td>1.7.3</td>
+          <td>1.7.2</td>
+          <td>1.7.1</td>
           <td>
               <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/guide-overview">Benutzerhandbuch</a><br/>
               <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/page-builder/release-notes">Versionshinweise</a><br/>
