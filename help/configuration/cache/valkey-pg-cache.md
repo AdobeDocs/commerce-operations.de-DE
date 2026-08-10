@@ -50,19 +50,19 @@ Commerce bietet Befehlszeilenoptionen zum Konfigurieren der Valley-Standardeinst
 >[!TAB Zend Cache (2.4.8 und früher)]
 
 - **Zend Cache (2.4.8 und früher)** — Legacy Valkey Backend für Commerce 2.4.8 und früher:
-   - **Legacy Valkey Backend** - Verwendet den vollständigen Klassenpfad (`Magento\Framework\Cache\Backend\Valkey`)
-   - **Schlüssel vorladen** - Unterstützt das Vorabladen häufig verwendeter Cache-Schlüssel
-   - **Lua-Skripte** - Lua für die Speicherbereinigung
-   - **Komprimierung** - Unterstützt die Datenkomprimierung
+  - **Legacy Valkey Backend** - Verwendet den vollständigen Klassenpfad (`Magento\Framework\Cache\Backend\Valkey`)
+  - **Schlüssel vorladen** - Unterstützt das Vorabladen häufig verwendeter Cache-Schlüssel
+  - **Lua-Skripte** - Lua für die Speicherbereinigung
+  - **Komprimierung** - Unterstützt die Datenkomprimierung
 
 >[!TAB Symfony-Cache (2.4.9+)]
 
 - **Symfony Cache (2.4.9+)** - Ab Commerce 2.4.9 bietet Symfony Cache eine moderne, PSR-6-konforme Caching-Implementierung für Valkey mit erheblichen Leistungsverbesserungen:
-   - **Automatische Valkey-**: Bündelt mehrere Vorgänge in einzelnen Anfragen und reduziert so die Latenz
-   - **PSR-6 TagAwareAdapter** - Effiziente Tag-basierte Cache-Invalidierung mit atomischen Vorgängen
-   - **Igbinary-Serialisierung** - Die binäre Serialisierung reduziert die Größe des Cache-Eintrags um 45 % und verbessert die Geschwindigkeit um 5-10 %
-   - **Verbesserte persistente Verbindungen** - Stabileres Verbindungspooling mit besserer Handhabung von Gabelprozessen
-   - **Optimierte Lua-Skripte** - Server-seitige Ausführung in Kombination mit Pipelining für maximale Effizienz
+  - **Automatische Valkey-**: Bündelt mehrere Vorgänge in einzelnen Anfragen und reduziert so die Latenz
+  - **PSR-6 TagAwareAdapter** - Effiziente Tag-basierte Cache-Invalidierung mit atomischen Vorgängen
+  - **Igbinary-Serialisierung** - Die binäre Serialisierung reduziert die Größe des Cache-Eintrags um 45 % und verbessert die Geschwindigkeit um 5-10 %
+  - **Verbesserte persistente Verbindungen** - Stabileres Verbindungspooling mit besserer Handhabung von Gabelprozessen
+  - **Optimierte Lua-Skripte** - Server-seitige Ausführung in Kombination mit Pipelining für maximale Effizienz
 
 >[!ENDTABS]
 
