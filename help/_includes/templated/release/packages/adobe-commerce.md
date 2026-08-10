@@ -244,7 +244,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -265,7 +265,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -342,7 +342,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -377,7 +377,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -636,7 +636,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -657,7 +657,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -685,7 +685,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -1406,7 +1406,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -1462,7 +1462,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -1476,7 +1476,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -1497,7 +1497,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
@@ -1511,7 +1511,7 @@ Die folgende Referenzdokumentation wird aus der `composer.lock` generiert und be
 <table>
   <thead>
     <tr>
-      <th>-Name</th>
+      <th>Name</th>
       <th>Typ</th>
       <th>Beschreibung</th>
     </tr>
