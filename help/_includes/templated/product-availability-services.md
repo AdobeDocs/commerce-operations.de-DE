@@ -31,8 +31,8 @@ ht-degree: 17%
           <td>3.5.0</td>
           <td>3.5.0</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Übersicht</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/de/docs/commerce/catalog-service/guide-overview">Übersicht</a><br/>
+              <a href="https://experienceleague.adobe.com/de/docs/commerce/catalog-service/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -45,7 +45,7 @@ ht-degree: 17%
           <td>4.7.2</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/de/docs/commerce/live-search/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -58,7 +58,7 @@ ht-degree: 17%
           <td>2.15.0 (PHP 8.4)</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/de/docs/commerce/payment-services/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -71,7 +71,7 @@ ht-degree: 17%
           <td>6.7.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
   </tbody>
