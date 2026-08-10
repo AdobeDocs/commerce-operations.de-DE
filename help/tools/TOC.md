@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 989662bcb4c1a3cc50cffae1d706501409898c64
+source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
 workflow-type: tm+mt
-source-wordcount: '10533'
+source-wordcount: '10549'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709: CMS-Seiten werden in Page Builder nicht gespeichert, wenn die Seitenhierarchie doppelte Anführungszeichen enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4593: Falsche Website-Einschränkung CMS-Seite auf sekundärer Website in Storefronts mit mehreren Websites bereitgestellt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
       - [ACP2E-4547: Der Administrator kann einem Angebot kein Standardkatalogprodukt hinzufügen, wenn es nicht dem freigegebenen Katalog des Benutzers zugewiesen ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805: Checkout-Anfragen werden für konfigurierbare Produkte langsamer, wenn das erste verkaufbare untergeordnete Element später in der Liste angezeigt wird](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748: Ablauf von Belohnungspunkten läuft langsam in Geschäften mit einem großen Belohnungspunktverlauf](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
