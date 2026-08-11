@@ -13,10 +13,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+source-git-commit: 6b3a77ca95f7de23f044e531f1639c1aee1bbcef
 workflow-type: tm+mt
-source-wordcount: 180
-ht-degree: 2%
+source-wordcount: 236
+ht-degree: 1%
 
 ---
 
@@ -24,10 +24,22 @@ ht-degree: 2%
 
 In diesen Versionshinweisen werden Aktualisierungen für [!DNL Commerce Version Tool] ([!DNL CVT]) beschrieben.
 
-## Version 1.0.0 — Juni 2026 {#version-1-0-0}
+Unterstützung wird für die neueste Version bereitgestellt. Versionshinweise für ältere Versionen werden als Referenz bereitgestellt.
+Zu den Aktualisierungen gehören:
+
+![Neu](../../assets/new.svg) Neue Funktionen
+![Fehlerbehebung](../../assets/fix.svg) Fehlerbehebungen und Verbesserungen
+![Bug](../../assets/bug.svg) Bekannte Probleme
+
+## Version 1.0.2 — August 2026 {#version-1-0-2}
 
 ### Neue Funktionen
 
+![Neu](../../assets/new.svg) **Composer `replace`-Unterstützung** - Es wurde Unterstützung für Installationen hinzugefügt, die Kernmodule durch Composer-`replace` entfernen, mit verbesserter Patch-Erkennungsgenauigkeit für diese Module. <!-- ACSEC-527 -->
+
+## Version 1.0.0 — Juni 2026 {#version-1-0-0}
+
+![Neu](../../assets/new.svg) Zu den Aktualisierungen gehören:
 - **Patch-Statusberichte** - Gibt an, welche monatlichen Adobe Commerce-Sicherheits-Patches angewendet werden, fehlen oder für eine Adobe Commerce-Installation nicht klassifiziert werden konnten.
 - **CVE-Schutzstatus** - Ordnet Patch-Ergebnisse den Werten für den jeweiligen CVE-Schutzstatus zu: `PROTECTED`, `VULNERABLE`, `UNKNOWN` und `NOT_APPLICABLE`.
 - **Unterstützung mehrerer Komponenten** - Erkennt installierte Adobe Commerce-Komponenten aus `composer.lock`, einschließlich Adobe Commerce Business-to-Business (B2B), Adobe Commerce Page Builder, Adobe Commerce Inventory und anderen Komponenten, die in der Patch-Registrierungsdatei dargestellt werden.
