@@ -3,7 +3,7 @@ title: Betriebshandbücher - Home
 description: Erfahren Sie mehr über die Systemverwaltung und Betriebskonzepte von Adobe Commerce. Umfassende Handbücher zur Planung, Konfiguration und Wartung Ihrer Commerce-Bereitstellung durchsuchen.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 last-update: 2026-08-07T00:00:00Z
-source-git-commit: a5120adab9f624677447889722359951e775c3f3
+source-git-commit: 59432a000c5664c5136f10265745effad23343a9
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -103,4 +103,4 @@ Verwenden Sie diese folgende Sammlung von Handbüchern, um mehr über Systemverw
 
 {{$include /help/_includes/templated/whats-new.md}}
 
-<!-- Last updated from includes: 2026-08-07 13:09:43 -->
+<!-- Last updated from includes: 2026-08-07 20:57:19 -->

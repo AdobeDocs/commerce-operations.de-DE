@@ -3,7 +3,7 @@ title: Produktverfügbarkeit
 description: Erfahren Sie, welche Adobe Commerce-Funktionen derzeit unterstützt werden, und überprüfen Sie deren Kompatibilität mit bestimmten Adobe Commerce-Versionen.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 last-update: 2026-08-06T00:00:00Z
-source-git-commit: a5120adab9f624677447889722359951e775c3f3
+source-git-commit: 59432a000c5664c5136f10265745effad23343a9
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Unterstützte Versionen wurden von Adobe vollständig getestet. Unterstützung f
 
 >[!NOTE]
 >
->Die Adobe Commerce-Versionen unterstützen auch ([&#x200B; Sicherheits-Patches](versions.md).
+>Die Adobe Commerce-Versionen unterstützen auch ([ Sicherheits-Patches](versions.md).
 
 ## Von Adobe erstellte Erweiterungen
 
@@ -32,7 +32,7 @@ Die folgende Tabelle zeigt die Versionsunterstützung für jede Erweiterung rela
 
 ## Commerce Services
 
-[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=de) sind eine Suite von in Adobe gehosteten Funktionen, die in Verbindung mit Ihrer Commerce-Instanz zuverlässige Funktionen und schnelle Antwortzeiten bieten.
+[Commerce Services](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) sind eine Suite von in Adobe gehosteten Funktionen, die in Verbindung mit Ihrer Commerce-Instanz zuverlässige Funktionen und schnelle Antwortzeiten bieten.
 
 Es wird empfohlen, dass Händler die neueste Version eines Service verwenden, um die höchste Stabilität und Funktionalität zu gewährleisten. In der Dokumentation wird die aktuell veröffentlichte Version beschrieben.
 
@@ -45,4 +45,4 @@ Die folgende Tabelle zeigt die Versionsunterstützung für jeden Service im Verh
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-08-07 13:08:01 -->
+<!-- Last updated from includes: 2026-08-10 14:35:30 -->
