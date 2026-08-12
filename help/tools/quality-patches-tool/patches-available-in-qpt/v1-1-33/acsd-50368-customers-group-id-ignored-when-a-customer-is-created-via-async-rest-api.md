@@ -5,7 +5,7 @@ feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b7fb574a6ed5848afde35bcea7917c64352e24c6
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -53,7 +53,7 @@ bin/magento setup:upgrade --keep-generated
 
    ```shell
    curl --location 'https://site.test/rest/default/async/V1/customers' \
-   --header 'Authorization: Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEsInV0eXBpZCI6MiwiaWF0IjoxNjc5NDMzNzcxLCJleHAiOjE2Nzk0MzczNzF9.xau6KyILrkdCY_8K8aMlH4TmqcCXdH4Zcst_CLhdxYY' \
+   --header 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
    --header 'Content-Type: application/json' \
    --header 'Cookie: PHPSESSID=844fltmqq1g15qe4ju3l00tiai' \
    --data-raw '{
@@ -86,7 +86,7 @@ bin/magento setup:upgrade --keep-generated
 
    ```shell
    curl --location 'https://site.test/rest/default/V1/bulk/b101ddcb-b7fd-4208-a2a6-2e84c9e61bcd/detailed-status' \
-   --header 'Authorization: Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEsInV0eXBpZCI6MiwiaWF0IjoxNjc5NDMzNzcxLCJleHAiOjE2Nzk0MzczNzF9.xau6KyILrkdCY_8K8aMlH4TmqcCXdH4Zcst_CLhdxYY' \
+   --header 'Authorization: Bearer <YOUR_ACCESS_TOKEN>' \
    --header 'Cookie: PHPSESSID=844fltmqq1g15qe4ju3l00tiai
    ```
 
