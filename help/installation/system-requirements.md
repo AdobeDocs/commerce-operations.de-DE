@@ -19,7 +19,7 @@ Es gibt einige Unterschiede in den Abhängigkeiten für Commerce in Cloud Manage
 >[!IMPORTANT]
 >
 >In der Tabelle mit den Systemanforderungen sind die Adobe Commerce-Versionen aufgeführt, für die sie gelten, einschließlich Versionen mit der Bezeichnung Beta oder früher Zugriff.
->Die [ veröffentlichten Commerce-Versionen finden ](../release/release-notes/overview.md) in den Versionshinweisen .
+>Die [&#x200B; veröffentlichten Commerce-Versionen finden &#x200B;](../release/release-notes/overview.md) in den Versionshinweisen .
 >
 >Wenn Ihre Service-Versionen nicht mit der unterstützten Konfiguration für Ihre Commerce-Version übereinstimmen, kann sich das Verhalten von dem unterscheiden, was Adobe beim Testen reproduzieren kann. Der Adobe-Support bittet Sie möglicherweise, Ihre Umgebung an einer unterstützten Konfiguration auszurichten, bevor Sie das gemeldete Verhalten untersuchen, beheben oder validieren. Nachdem Sie Ihre Umgebung angepasst haben, kann der Adobe-Support die Untersuchung fortsetzen.
 
@@ -39,7 +39,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!TAB Commerce On-Premises]
@@ -72,9 +72,9 @@ In den folgenden Tabellen sind die Systemanforderungen für Adobe Commerce-Versi
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.6 wird bis [30. **2027](../release/lifecycle-policy.md#extended-support) unterstützt,** gefolgt von einem [Übergangszeitraum, ](../release/lifecycle-policy.md#security-only-transitional-period) bis **31. Mai 2028**. Diese Bestimmungen stehen nur Kunden von Adobe Commerce zur Verfügung. Sie erweitern die Unterstützung für Drittanbieterabhängigkeiten wie MySQL nicht.
+>Adobe Commerce 2.4.6 wird bis [30. **2027](../release/lifecycle-policy.md#extended-support) unterstützt,** gefolgt von einem [Übergangszeitraum, &#x200B;](../release/lifecycle-policy.md#security-only-transitional-period) bis **31. Mai 2028**. Diese Bestimmungen stehen nur Kunden von Adobe Commerce zur Verfügung. Sie erweitern die Unterstützung für Drittanbieterabhängigkeiten wie MySQL nicht.
 >
->Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [ [!DNL Adobe Commerce as a Cloud Service] ](../release/version-upgrade-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [ Tabelle ](../release/lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
+>Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [&#x200B; [!DNL Adobe Commerce as a Cloud Service] &#x200B;](../release/version-upgrade-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [&#x200B; Tabelle &#x200B;](../release/lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
 >
 >Die Tabelle wird reduziert, um die Länge dieses Artikels zu minimieren. Wählen Sie die Kopfzeile aus, um sie zu erweitern.
 
@@ -88,7 +88,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) ](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
+Für die Standardkonfiguration werden die Services und Versionen in [der `services.yaml`-Datei) &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Weitere Informationen finden Sie unter [Services konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!TAB Commerce On-Premises]
