@@ -6,15 +6,10 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
 workflow-type: tm+mt
 source-wordcount: 488
 ht-degree: 0%
@@ -41,7 +36,7 @@ QPT v1.1.82 enthält die folgenden Patches:
 1. **ACP2E-4840**: Es wird das Problem behoben, bei dem der in der `products` GraphQL-Abfrage angeforderte Mengenwert &quot;*&quot;*.
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: Behebt das Problem, dass E-Mail-Benachrichtigungen zu Produktanzeigen die E-Mail-Einstellungen der Store-Ansicht ignorieren.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: Es wurde ein Problem behoben, durch das beim Anzeigen von Kundenkonten mit großen Adressbüchern im Admin unerwartet Admin-Benutzer abgemeldet wurden.
-1. **ACP2E-4894**: Es wird das Problem behoben, dass neue Bestellungen verzögert in den Auftragsverwaltungsrastern von Admin angezeigt werden, wenn **[!UICONTROL Asynchronous Indexing]** in Stores mit hohem Volumen aktiviert ist.
+1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: Es wird das Problem behoben, dass neue Bestellungen verzögert in den Auftragsverwaltungsrastern von Admin angezeigt werden, wenn **[!UICONTROL Asynchronous Indexing]** in Stores mit hohem Volumen aktiviert ist.
 1. **ACP2E-4981**: Behebt das Problem, dass in Page Builder-Produktkarussells Produkte in einer Reihenfolge angezeigt werden, die nicht der in der Admin festgelegten Position entspricht, und konfigurierbare Produkte einbezogen werden, wenn übereinstimmende untergeordnete Produkte einzeln sichtbar sind.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
