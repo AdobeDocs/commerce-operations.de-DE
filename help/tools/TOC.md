@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e8b1a5c1161eab0a0e76e1cca6a4b8b528124b45
+source-git-commit: 2864bda142df307248f5e29524eaf42441538f5b
 workflow-type: tm+mt
-source-wordcount: '10616'
+source-wordcount: '10632'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709: CMS-Seiten werden in Page Builder nicht gespeichert, wenn die Seitenhierarchie doppelte Anführungszeichen enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4698: Page Builder-Text-Inline-Bearbeitung speichert absolute Medien-URLs anstelle der portablen Direktive](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
       - [ACP2E-4894: Neue Bestellungen werden mit einer Verzögerung im Admin-Bestellungsraster angezeigt, wenn die asynchrone Indizierung aktiviert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)
       - [ACP2E-4870: Warn-E-Mails von Produkten ignorieren die E-Mail-Einstellungen der Store-Ansicht](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
       - [ACP2E-4799: Abfrage-Anforderungslisten von GraphQL geben falsche total_count mit Paginierung zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)

@@ -4,7 +4,7 @@ description: Erfahren Sie, wann bestimmte Versionen von Adobe Commerce veröffen
 recommendations: noCatalog
 exl-id: 9b03900c-39ba-4757-ab7e-8bc832277192
 last-update: 2026-06-02T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+source-git-commit: 90f54aef167dd29ec6bdc0639cf3eb6c5d7244ce
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Veröffentlichte Versionen
 
-Auf dieser Seite sind die veröffentlichten Versionen von Adobe Commerce aufgeführt. Es enthält Veröffentlichungstermine für alle Nebenversionen, Patches und Sicherheits-Versionen sowie Termine für das Ende des **_regulären_** Supports. Es werden keine Daten für das Ende der (erweiterten **_Unterstützung_**.
+Auf dieser Seite sind die veröffentlichten Versionen von Adobe Commerce aufgeführt. Es enthält Veröffentlichungstermine für alle Nebenversionen, Patches und Sicherheitsversionen sowie Termine für das Ende des **_regulären_** Supports. Es werden keine Daten für das Ende der (erweiterten **_Unterstützung_**.
 
 >[!BEGINSHADEBOX]
 
@@ -29,4 +29,4 @@ Adobe bietet eine einjährige Support-Verlängerung ohne zusätzliche Kosten fü
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
-<!-- Last updated from includes: 2026-06-02 11:13:39 -->
+<!-- Last updated from includes: 2026-08-12 14:19:05 -->

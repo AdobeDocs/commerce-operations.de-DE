@@ -1,7 +1,7 @@
 ---
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 420e4af6778d3f493e9ad4fcc4ae175446d31243
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2131'
 ht-degree: 3%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 3%
 
 ## 2.4.9
 
-Die reguläre Unterstützung für die Version 2.4.9 endet im Mai 2029.
+Die reguläre Unterstützung für die Version 2.4.9 endet am 31. Mai 2029.
 
 <table>
   <thead>
@@ -30,7 +30,7 @@ Die reguläre Unterstützung für die Version 2.4.9 endet im Mai 2029.
 
 ## 2.4.8
 
-Die reguläre Unterstützung für die Version 2.4.8 endet am 11. April 2028.
+Die reguläre Unterstützung für die Version 2.4.8 endet am 31. Mai 2028.
 
 <table>
   <thead>
@@ -81,7 +81,8 @@ Die reguläre Unterstützung für die Version 2.4.8 endet am 11. April 2028.
 
 ## 2.4.7
 
-Die reguläre Unterstützung für die Version 2.4.7 endet am 9. April 2027.
+Die reguläre Unterstützung für die Version 2.4.7 endet am 31. Mai 2027.
+Die erweiterte Unterstützung für die Version 2.4.7 endet am 31. Mai 2028.
 
 <table>
   <thead>
@@ -162,7 +163,9 @@ Die reguläre Unterstützung für die Version 2.4.7 endet am 9. April 2027.
 
 ## 2.4.6
 
-Die reguläre Unterstützung für die Version 2.4.6 endet am 11. August 2026.
+Die reguläre Unterstützung für die Version 2.4.6 endete am 11. August 2026.
+Die erweiterte Unterstützung für die Version 2.4.6 endet am 31. August 2027.
+Die Bereitstellung zusätzlicher Sicherheitskorrekturen für die Version 2.4.6 endet am 31. Mai 2028.
 
 <table>
   <thead>
@@ -274,8 +277,8 @@ Die reguläre Unterstützung für die Version 2.4.6 endet am 11. August 2026.
 ## 2.4.5
 
 Die reguläre Unterstützung für die Version 2.4.5 endete am 12. August 2025.
-Die erweiterte Unterstützung für die Version 2.4.5 endet am 11. August 2026.
-Die Bereitstellung zusätzlicher Sicherheitskorrekturen für die Version 2.4.5 endet im Mai 2027.
+Die erweiterte Unterstützung für die Version 2.4.5 endete am 11. August 2026.
+Die Bereitstellung zusätzlicher Sicherheitskorrekturen für die Version 2.4.5 endet am 31. Mai 2027.
 
 <table>
   <thead>
@@ -400,7 +403,7 @@ Die Bereitstellung zusätzlicher Sicherheitskorrekturen für die Version 2.4.5 e
 
 Die reguläre Unterstützung für die Version 2.4.4 endete am 12. April 2025.
 Die erweiterte Unterstützung für die Version 2.4.4 endete am 14. April 2026.
-Die Bereitstellung zusätzlicher Sicherheitskorrekturen für die Version 2.4.4 endet im Mai 2027.
+Die Bereitstellung zusätzlicher Sicherheitskorrekturen für die Version 2.4.4 endet am 31. Mai 2027.
 
 <table>
   <thead>

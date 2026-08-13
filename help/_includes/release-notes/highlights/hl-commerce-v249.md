@@ -1,7 +1,7 @@
 ---
-source-git-commit: b829cf3685457f9f9ad3dfca2d294b6167accb82
+source-git-commit: 332c042213d3ee25cc5d60c35570a41543e24bfc
 workflow-type: tm+mt
-source-wordcount: '3479'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -276,17 +276,17 @@ _AC-16533_
 
 #### PHP 8.5-Kompatibilität
 
-Adobe Commerce 2.4.9 unterstützt jetzt PHP 8.5 und PHP 8.4, sodass Sie Ihren Store mit den neuesten sicheren und konformen PHP-Versionen ausführen können. Alle Kernfunktionen, gebündelten Erweiterungen (einschließlich Page Builder, B2B, Braintree und mehr) und Adobe SaaS-Services sind mit PHP 8.5 kompatibel.
+Adobe Commerce 2.4.9 unterstützt jetzt PHP 8.5, sodass Sie Ihren Store mit den neuesten sicheren und konformen PHP-Versionen ausführen können. Alle Kernfunktionen, gebündelten Erweiterungen (einschließlich Page Builder, B2B, Braintree und mehr) und Adobe SaaS-Services sind mit PHP 8.5 kompatibel.
 
-- PHP 8.5 und 8.4 werden vollständig unterstützt.
-- PHP 8.3 ist nur für Upgrade-Zwecke erlaubt (nicht für die Produktion empfohlen).
+- PHP 8.5 wird vollständig unterstützt.
+- PHP 8.4 ist nur für Upgrade-Zwecke erlaubt (nicht für die Produktion empfohlen).
 - Gewährleistet PCI-Compliance und ist zukunftssicher für Ihre Adobe Commerce-Installation.
 
 _AC-15615_
 
 #### PHP 8.2-Unterstützung entfernt
 
-Ab Adobe Commerce 2.4.9 wird PHP 8.2 nicht mehr unterstützt. Die Plattform zielt nun auf PHP 8.3 und höher ab, mit Kern-Code, Abhängigkeiten und Tools, die aktualisiert wurden, um sauber und zuverlässig auf PHP 8.4 und 8.5 laufen zu können.
+Ab Adobe Commerce 2.4.9 werden PHP 8.2 und PHP 8.3 nicht mehr unterstützt. Die Plattform ist nun auf PHP 8.4 und höher ausgerichtet, mit Kern-Code, Abhängigkeiten und Tools, die aktualisiert wurden, um sauber und zuverlässig auf 8.5 laufen zu können.
 
 _AC-15758_
 
@@ -428,12 +428,12 @@ Wichtige Verbesserungen:
 - Authentifizierungs-Upgrade: Verwendet OAuth 2.0 für sicheren API-Zugriff.
 - Verbessertes Datenformat: Verwendet JSON anstelle von XML für eine sauberere, effizientere Kommunikation.
 - Neue Administratorfelder:
-   - Gateway-REST-URL (basierend auf Modus: Entwicklung oder Live)
-   - Client-ID und Geheimnis
-   - Kontotyp, Kontonummer
-   - CRID, MID, Mailer-Identifizierungscode
-   - AES/ITN für internationale Sendungen
-   - REST-spezifische zulässige Versandmethoden
+  - Gateway-REST-URL (basierend auf Modus: Entwicklung oder Live)
+  - Client-ID und Geheimnis
+  - Kontotyp, Kontonummer
+  - CRID, MID, Mailer-Identifizierungscode
+  - AES/ITN für internationale Sendungen
+  - REST-spezifische zulässige Versandmethoden
 
 Diese Migration stellt sicher, dass Adobe Commerce weiterhin die USPS-Standards erfüllt, die Systemzuverlässigkeit verbessert und die Versandintegrationen für Händler zukunftssicher macht.
 

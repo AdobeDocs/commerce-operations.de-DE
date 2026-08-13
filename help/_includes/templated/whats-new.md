@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
+source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -627,36 +627,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Feedback, technisch
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aaa05baf7a213a2f949e2eadbf72bc13e1ed247a">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;12. Juni 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Übersicht: Quality Patches Tool (QPT) v1.1.80</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Das Programm „Suchabgleich und Rangfolge (Private Beta)“ wurde zu <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">Beta-Versionen</a> hinzugefügt, einschließlich des Modells „Ebenenübereinstimmung“, der Interaktion mit Gewichtungen und Merchandising-Regeln und Einladungsanweisungen.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
