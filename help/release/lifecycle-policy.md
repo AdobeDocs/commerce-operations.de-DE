@@ -3,7 +3,7 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
+source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 1%
@@ -52,8 +52,8 @@ Die folgende Tabelle zeigt den vollständigen Lebenszyklus für jede Adobe Comme
 | Adobe Commerce 2.4.9 | &#x200B;12. Mai 2026 | &#x200B;31. Mai 2029 | TBD | Nicht zutreffend | TBD |
 | Adobe Commerce 2.4.8 | &#x200B;8. April 2025 | &#x200B;31. Mai 2028 | TBD | Nicht zutreffend | TBD |
 | Adobe Commerce 2.4.7 | &#x200B;9. April 2024 | &#x200B;31. Mai 2027 | &#x200B;31. Mai 2028 | Nicht zutreffend | &#x200B;1. Juni 2028 |
-| Adobe Commerce 2.4.6 | &#x200B;14. März 2023 | &#x200B;11. August 2026 | &#x200B;30. August 2027 | &#x200B;31. Mai 2028 | &#x200B;1. Juni 2028 |
-| Adobe Commerce 2.4.5 | &#x200B;9. August 2022 | &#x200B;12. August 2025 | &#x200B;12. August 2026 | &#x200B;31. Mai 2027 | &#x200B;1. Juni 2027 |
+| Adobe Commerce 2.4.6 | &#x200B;14. März 2023 | &#x200B;11. August 2026 | &#x200B;31. August 2027 | &#x200B;31. Mai 2028 | &#x200B;1. Juni 2028 |
+| Adobe Commerce 2.4.5 | &#x200B;9. August 2022 | &#x200B;12. August 2025 | &#x200B;11. August 2026 | &#x200B;31. Mai 2027 | &#x200B;1. Juni 2027 |
 | Adobe Commerce 2.4.4 | &#x200B;12. April 2022 | &#x200B;12. April 2025 | &#x200B;14. April 2026 | &#x200B;31. Mai 2027 | &#x200B;1. Juni 2027 |
 
 {style="table-layout:auto"}
