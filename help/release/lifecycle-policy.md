@@ -3,9 +3,10 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
+last-update: 2026-08-13T00:00:00Z
+source-git-commit: dd6d284c1761248515bae5324a90e330b6aabf9b
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1350'
 ht-degree: 1%
 
 ---
@@ -15,13 +16,13 @@ ht-degree: 1%
 
 Um die Adobe Commerce-Lebenszyklusrichtlinie zu optimieren und die geschäftskritischen Anforderungen von Kunden zu unterstützen, bietet Adobe für jede Version ein dreijähriges Standard-Support-Fenster ab dem Datum der allgemeinen Verfügbarkeit und veröffentlicht in diesem Zeitraum Qualitätskorrekturen. Daten und Details zum Ende des Software-Supports für jede Version finden Sie in der Tabelle [Ende der Support-](#end-of-support-dates)&quot;.
 
-Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [&#x200B; getesteten und unterstützten Technologien &#x200B;](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
+Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Software-Abhängigkeiten von Drittanbietern (wie PHP und MySQL), die das Ende des Lebenszyklus erreichen können, während sich Kunden in der dreijährigen oder verlängerten Support-Periode für Adobe Commerce befinden. Eine vollständige Liste [ getesteten und unterstützten Technologien ](../installation/system-requirements.md) Drittanbietern finden Sie unter „Systemanforderungen“.
 
 ## Standard-Support
 
 Der standardmäßige dreijährige Support-Zeitraum ab dem Datum der allgemeinen Verfügbarkeit. Der Standard-Support umfasst Qualitätskorrekturen, Sicherheits-Patches und vollständigen Adobe Commerce-Support auf Abruf.
 
-- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) wenden.
+- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) wenden.
 
 - **Sicherheitskorrekturen** - Adobe bietet Sicherheitskorrekturen durch kumulative Sicherheits-Patches und nicht kumulative [isolierte Sicherheits-Patch-Dateien](versioning-policy.md#isolated-security-patch-file) für den dreijährigen Support-Zeitraum.
 
@@ -47,16 +48,7 @@ Ein einmaliger, zeitlich begrenzter Übergangszeitraum steht nur für die Versio
 
 Die folgende Tabelle zeigt den vollständigen Lebenszyklus für jede Adobe Commerce-Version, einschließlich der Erzwingungstermine für die Aktualisierung der neuen Version für Adobe Commerce in Cloud-Umgebungen.
 
-| -Version | Allgemeine Verfügbarkeit | Ende der Standardunterstützung | Ende der erweiterten Unterstützung | Ende des reinen Sicherheitszeitraums | [Erzwingungsdatum für das Versions-Upgrade (nur Cloud)](version-upgrade-enforcement-policy.md) |
-| --------- | ---------------------- | ------------------------ | ------------------------- |-----------------------------| ----------------------------------------------- |
-| Adobe Commerce 2.4.9 | &#x200B;12. Mai 2026 | &#x200B;31. Mai 2029 | TBD | Nicht zutreffend | TBD |
-| Adobe Commerce 2.4.8 | &#x200B;8. April 2025 | &#x200B;31. Mai 2028 | TBD | Nicht zutreffend | TBD |
-| Adobe Commerce 2.4.7 | &#x200B;9. April 2024 | &#x200B;31. Mai 2027 | &#x200B;31. Mai 2028 | Nicht zutreffend | &#x200B;1. Juni 2028 |
-| Adobe Commerce 2.4.6 | &#x200B;14. März 2023 | &#x200B;11. August 2026 | &#x200B;31. August 2027 | &#x200B;31. Mai 2028 | &#x200B;1. Juni 2028 |
-| Adobe Commerce 2.4.5 | &#x200B;9. August 2022 | &#x200B;12. August 2025 | &#x200B;11. August 2026 | &#x200B;31. Mai 2027 | &#x200B;1. Juni 2027 |
-| Adobe Commerce 2.4.4 | &#x200B;12. April 2022 | &#x200B;12. April 2025 | &#x200B;14. April 2026 | &#x200B;31. Mai 2027 | &#x200B;1. Juni 2027 |
-
-{style="table-layout:auto"}
+{{$include /help/_includes/templated/release/end-of-support-dates.md}}
 
 ## Support-Zeitleiste
 
@@ -175,7 +167,7 @@ Sie sind für die Pflege aller Drittanbieterabhängigkeiten und Plattformdienste
 >
 >Das Ausführen nicht unterstützter Abhängigkeitsversionen kann zu einer Sicherheitslücke in Ihrer Cloud-Instanz führen, die Adobe nicht beheben kann. In solchen Fällen ist Adobe gezwungen, geeignete Maßnahmen zu ergreifen, um die Sicherheit der Adobe Commerce-Plattform und ihrer Kunden zu gewährleisten. Dazu gehört auch die Einstellung des Traffics auf die betroffene Infrastruktur. Infolgedessen wird Ihre E-Commerce-Storefront offline gehen.
 >
->Wenn eine Umgebung nach der Traffic-Aussetzung weiterhin nicht konform ist, kann Adobe Cloud-Services beenden und den Stilllegungsprozess starten. Als Ergebnis der Stilllegung werden alle Daten und Assets in der gehosteten E-Commerce-Umgebung, einschließlich aller Instanzen, Umgebungen und Zweige, dauerhaft gelöscht und können nicht wiederhergestellt werden. Informationen [&#x200B; Zeitplan für diese Upgrades und den Support, der Ihnen während &#x200B;](security-enforcement-policy.md) gesamten Prozesses zur Verfügung steht, finden Sie unter „Erforderliche Aktionen und Fristen für die Sicherung von Commerce-Umgebungen“.
+>Wenn eine Umgebung nach der Traffic-Aussetzung weiterhin nicht konform ist, kann Adobe Cloud-Services beenden und den Stilllegungsprozess starten. Als Ergebnis der Stilllegung werden alle Daten und Assets in der gehosteten E-Commerce-Umgebung, einschließlich aller Instanzen, Umgebungen und Zweige, dauerhaft gelöscht und können nicht wiederhergestellt werden. Informationen [ Zeitplan für diese Upgrades und den Support, der Ihnen während ](security-enforcement-policy.md) gesamten Prozesses zur Verfügung steht, finden Sie unter „Erforderliche Aktionen und Fristen für die Sicherung von Commerce-Umgebungen“.
 
 ## PHP End of Life und PCI-Compliance
 
@@ -192,7 +184,7 @@ Die folgenden PHP-Versionen, die von älteren Commerce-Versionen verwendet werde
 
 >[!IMPORTANT]
 >
->**PCI-Compliance-Hinweis** Die Bewertung der PCI-Compliance liegt in der Verantwortung des Händlers. Adobe empfiehlt den Händlern dringend, sich mit ihrem qualifizierten Sicherheitsexperten in Verbindung zu setzen und so bald wie möglich den Umstieg auf eine unterstützte Commerce-Version und eine unterstützte PHP-Version zu priorisieren. Informationen zu den Zeitplänen für die PHP-Unterstützung [&#x200B; Sie unter &#x200B;](https://www.php.net/supported-versions.php)PHP-unterstützte Versionen[&#x200B; und „PHP End of Life](https://www.php.net/eol.php).
+>**PCI-Compliance-Hinweis** Die Bewertung der PCI-Compliance liegt in der Verantwortung des Händlers. Adobe empfiehlt den Händlern dringend, sich mit ihrem qualifizierten Sicherheitsexperten in Verbindung zu setzen und so bald wie möglich den Umstieg auf eine unterstützte Commerce-Version und eine unterstützte PHP-Version zu priorisieren. Informationen zu den Zeitplänen für die PHP-Unterstützung [ Sie unter ](https://www.php.net/supported-versions.php)PHP-unterstützte Versionen[ und „PHP End of Life](https://www.php.net/eol.php).
 
 ## Upgrade- und Migrationsoptionen
 
@@ -207,7 +199,7 @@ Wenn Sie eine Version verwenden, die das Ende des Support-Zeitraums naht oder ü
 - Sie erhalten Zugriff auf die neuesten Funktionen von Adobe: KI-gestütztes Merchandising, zusammensetzbare Storefront-Architektur und native Adobe Experience Cloud-Integrationen.
 - Sie können wiederkehrende Upgrade-Zyklen vermeiden.
 
-Wenden Sie sich an Ihr Adobe-Account-Team, um eine Migrationsbewertung durchzuführen. Siehe [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/de/docs/commerce/cloud-service/overview) für eine Produktübersicht.
+Wenden Sie sich an Ihr Adobe-Account-Team, um eine Migrationsbewertung durchzuführen. Siehe [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) für eine Produktübersicht.
 
 ### Alternativpfad: Upgrade auf eine unterstützte Adobe Commerce-On-Cloud- oder -On-Premise-Version
 
