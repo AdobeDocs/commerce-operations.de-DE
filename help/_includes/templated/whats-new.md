@@ -1,7 +1,7 @@
 ---
-source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
+source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -757,50 +757,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Neues Thema, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;18. Juni 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy">Software-Lebenszyklusrichtlinie</a> mit den Erzwingungsterminen für die Aktualisierung der Cloud-Version, Definitionen für den Support-Zeitraum (einschließlich des Übergangszeitraums für reine Sicherheit), einer erweiterten Tabelle zum Ende der Unterstützung für 2.4.4-2.4.9, PHP-PCI-Leitlinien und Pfaden für die Migration zu Adobe Commerce as a Cloud Service oder die Aktualisierung auf PaaS.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;16. Juni 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aktualisierung der Composer-Version auf 2.10 in den <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> für Cloud und On-Premise für Adobe Commerce 2.4.9, 2.4.8 und 2.4.7.</p>
-</td>
-      <td>
-        Technisch
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
