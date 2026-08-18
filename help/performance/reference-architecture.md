@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Referenzarchitektur in Adobe Commerce. 
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---

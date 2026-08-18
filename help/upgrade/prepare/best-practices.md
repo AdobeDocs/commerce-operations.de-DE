@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Der Aufwand für das Upgrade Ihrer Adobe Commerce-Instanz hängt von folgenden F
 
 - **Wie haben Sie Ihre Site erstellt?** Der Umfang der benutzerdefinierten Arbeit und die Anzahl der installierten Module von Drittanbietern wirken sich stark auf die Komplexität eines Upgrades aus. Die Qualität der benutzerdefinierten Arbeiten und Module kann bestimmen, ob ein Upgrade reibungslos verläuft.
 
-- **Werden mehrere Versionen übersprungen?** das Überspringen von Versionen macht das nächste Upgrade komplexer, das Upgrade von nachfolgenden Versionen macht den Prozess einfacher und billiger.
+- **Überspringen Sie mehrere Versionen?** Das Überspringen von Versionen macht das nächste Upgrade komplexer, das Upgrade von nachfolgenden Versionen macht den Prozess einfacher und billiger.
 
 - **Welche Art von Upgrade nehmen Sie vor?** Ein Upgrade auf eine Nebenversion (beispielsweise von 2.3.x auf 2.4.0) ist umfangreicher als ein Upgrade zwischen Patch-Versionen (beispielsweise von 2.4.2 auf 2.4.3). Sicherheitsupdates sind am einfachsten zu implementieren.
 
@@ -43,7 +43,7 @@ Wenn Ihr Projekt live ist, empfehlen wir Ihnen, eine Prüfung durchzuführen, um
 Von dem Moment an, in dem Sie mit der Arbeit an einem Projekt beginnen, sollten Sie überlegen, wie sich Ihre aktuellen Arbeiten auf zukünftige Upgrades auswirken werden. Befolgen Sie immer die Best Practices für die Adobe Commerce-Entwicklung, wie hier beschrieben:
 
 - [Best Practices für die Entwicklung](https://developer.adobe.com/commerce/php/best-practices/)
-- [Kodierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/)
+- [Codierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Beginnen Sie mit der Übernahme der Adobe Commerce-Erweiterbarkeitsplattform, falls noch nicht geschehen. Die Plattform ermöglicht die effiziente Anpassung von Prozessen, die Integration von Systemen und die Bereitstellung neuer Funktionen bei gleichzeitiger Beibehaltung der SaaS-ähnlichen Aktualisierbarkeit. Zu den Merkmalen gehören:
 

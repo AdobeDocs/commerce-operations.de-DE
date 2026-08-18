@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -28,12 +28,12 @@ Adobe Managed Services bietet wichtige Vorteile gegenüber lokalen und nicht ver
 - **Erweiterte Service-Level-Targets (SLTs)** - Schnellere Antwortzeiten als bei der standardmäßigen Adobe Commerce-Unterstützung.
 - **Verbesserte Service Level Agreements (SLAs)** - 99,9 % Anwendungs-Level, mit dem reguläre Kunden von Adobe Commerce auf Cloud-Infrastrukturen die 99,99 %-Infrastruktur-Level erreichen.
 - **Designated Cloud Expertise** - Managed Services stellt seinen Kunden einen Designated Customer Success Engineer (CSE) zur Verfügung, der als Anwendungs- und Cloud-Infrastrukturexperte dient. Der CSE arbeitet mit Kunden und deren Partnern zusammen und bietet ihnen Best Practices und Anleitungen zur Beschleunigung der Markteinführungszeit, darunter:
-   - Anleitung und Support während des Onboarding-Prozesses
-   - Bereitstellung und Platform-Setup verwalten
-   - Beratung zu Architekturgrundsätzen für Integrationen und Anpassungen
-   - Management von Vorfällen und Business Continuity fördern
-   - Unterstützung bei Ereignissen durch Planung, Ausführung und Überwachung
-   - Cloud-Support und -Know-how (proaktive Optimierung, Reporting und Best Practices)
+  - Anleitung und Support während des Onboarding-Prozesses
+  - Bereitstellung und Platform-Setup verwalten
+  - Beratung zu Architekturgrundsätzen für Integrationen und Anpassungen
+  - Management von Vorfällen und Business Continuity fördern
+  - Unterstützung bei Ereignissen durch Planung, Ausführung und Überwachung
+  - Cloud-Support und -Know-how (proaktive Optimierung, Reporting und Best Practices)
 
 In der folgenden Tabelle finden Sie einen detaillierteren Vergleich der wichtigsten Vorteile von Managed Services:
 
@@ -388,7 +388,7 @@ Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Stagin
 
 Der Adobe-Sicherheitsstapel für Managed Services baut die Sicherheit in auf allen Ebenen auf und verwendet Automatisierung und Konsistenz, um menschliches Versagen zu reduzieren. Entwicklungs- und Operations-Teams übernehmen automatisch Sicherheitskontrollen aus verschiedenen Ebenen des Stacks.
 
-Plattformpartner wie Amazon Web Services und Microsoft Azure gewährleisten eine maximale Sicherheitsabdeckung bei der Anwendung der Plattformanpassungen, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Überprüfung und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter {[}Adobe Commerce-Sicherheit.](https://business.adobe.com/de/products/magento/secure-ecommerce.html)
+Plattformpartner wie Amazon Web Services und Microsoft Azure gewährleisten eine maximale Sicherheitsabdeckung bei der Anwendung der Plattformanpassungen, während das Managed Services-Team von Adobe zentrale Sicherheitsdienste wie Compliance, Protokollierung, Authentifizierung, Überprüfung und Überwachung sowie Serversicherheit und sichere Anwendungskonfiguration bereitstellt. Weitere Informationen finden Sie unter {[&#128279;](https://business.adobe.com/de/products/magento/secure-ecommerce.html)}Adobe Commerce-Sicherheit.
 
 Die folgende Abbildung zeigt den Sicherheitstechnologie-Stack von Adobe Managed Services:
 
@@ -437,7 +437,7 @@ Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Stagin
     <td>Upgrade der Infrastruktur<br />[MariaDB, Redis, Open Search und Rabbit MQ] (Staging und Produktion)</td>
     <td></td>
     <td></td>
-    <td>Besitzer<br />CSE koordiniert Aktualisierungen des Infrastruktur-Service.<br />CSE plant eine Konferenzveranstaltung für Upgrades.<br />CSE unterstützt die Datenmigration von der Produktion zum Staging.</td>
+    <td>Besitzer<br />CSE koordiniert Aktualisierungen des Infrastruktur-Service.<br />CSE plant Konferenzveranstaltungen für Upgrades.<br />CSE unterstützt bei der Datenmigration von der Produktion zum Staging.</td>
   </tr>
   <tr>
     <td>Aktualisieren der Commerce-Code-Basis und Anpassungen; Neukompilierung und Umgestaltung des Codes</td>
@@ -456,7 +456,7 @@ Adobe bietet eine Reihe von Services rund um Bereitstellung, Entwicklung, Stagin
     <td>Ausführen von Leistungs- und Sicherheitstests</td>
     <td>Mitwirkender</td>
     <td>Besitzer</td>
-    <td>Contributor<br />CSE unterstützt Lasttests, indem die Leistung von Anwendungen und Infrastrukturen überwacht wird.<br />CSE unterstützt Sie bei der Konfiguration des Commerce Security Scan Tools.</td>
+    <td>Contributor<br />CSE unterstützt Lasttests, indem die Leistung der Anwendung und der Infrastruktur überwacht wird.<br />CSE unterstützt bei der Konfiguration des Commerce Security Scan Tools.</td>
   </tr>
   <tr>
     <td>Benutzerakzeptanztests beim Staging</td>
