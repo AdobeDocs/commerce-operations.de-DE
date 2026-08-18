@@ -172,7 +172,7 @@ Wenn Option 1 Ihr Problem nicht behebt, fahren Sie mit Option 2 fort.
 
 **Ursache:** Ein temporäres Problem hat [!DNL CAPS] daran gehindert, eine Verbindung zu GitHub herzustellen
 
-**Lösung:** Warten Sie einige Minuten und wiederholen Sie den Vorgang. Wenn der Fehler weiterhin auftritt, wenden Sie sich an den [Adobe Commerce Cloud-Support](https://experienceleague.adobe.com/home#support)
+**Lösung:** Warten Sie einige Minuten und wiederholen Sie den Vorgang. Wenn der Fehler weiterhin auftritt, wenden Sie sich an den [Adobe Commerce Cloud-Support](https://experienceleague.adobe.com/home?lang=de#support)
 
 #### „Umgebung wurde nicht innerhalb der maximalen Wartezeit erstellt“ (mit GitHub verbundenes Projekt)
 
@@ -180,7 +180,7 @@ Wenn Option 1 Ihr Problem nicht behebt, fahren Sie mit Option 2 fort.
 
 **Ursache:** Bei der GitHub-Integration des Projekts ist die Option &quot;`fetch-branches`&quot; deaktiviert, sodass die temporären Verzweigungen [!DNL CAPS] Push-Benachrichtigungen nicht synchronisiert werden und die Integrationsumgebung nie erstellt wird.
 
-**Lösung:** Aktivieren Sie die Option [`fetch-branches` der Integration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) und wiederholen Sie dann den Vorgang. Siehe [Einrichten der GitHub-Integration für [!DNL CAPS]](github-integration.md).
+**Lösung:** Aktivieren Sie die Option [`fetch-branches` der Integration](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) und wiederholen Sie dann den Vorgang. Siehe [Einrichten der GitHub-Integration für [!DNL CAPS]](github-integration.md).
 
 ### Fehler bei Ressourcen und Kontingenten
 
@@ -243,8 +243,8 @@ Ausführlichere technische Informationen:
 
 ### Verwandte Themen
 
-* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce-Installationshandbuch](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview)
+* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce-Installationshandbuch](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview)
 * [Einführung von CAPS](intro.md)
 * [Zugriff](access.md)
 * [Workflow-Übersicht](workflow.md)
