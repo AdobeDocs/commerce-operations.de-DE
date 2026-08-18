@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über die Bedeutung von Dateisystemberechtigungen
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Es gibt zwei Arten von Dateisystembesitzern:
 
   Privates Hosting ist nützlich, wenn Sie einen Anwendungsserver verwalten. Jeder Benutzer hat eine bestimmte Verantwortung:
 
-   - Der _Webserver-Benutzer_ führt die Admin- und Storefront aus.
+  - Der _Webserver-Benutzer_ führt die Admin- und Storefront aus.
 
-   - Der _Befehlszeilenbenutzer_ führt Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
+  - Der _Befehlszeilenbenutzer_ führt Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
 
-  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe“ zu verwenden &#x200B;](configure-permissions.md#set-ownership-and-permissions-for-two-users) eine [`umask`](#restrict-access-with-a-umask) festzulegen.
+  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe“ zu verwenden ](configure-permissions.md#set-ownership-and-permissions-for-two-users) eine [`umask`](#restrict-access-with-a-umask) festzulegen.
 
 ### Beschränken des Zugriffs mit einer Maske
 
@@ -59,7 +59,7 @@ Bei Verwendung der verschiedenen Adobe Commerce-Anwendungsmodi werden unterschie
 - Entwickler
 - Produktion
 
-Siehe [Über &#x200B;](../../../configuration/bootstrap/application-modes.md)) im _Konfigurationshandbuch_.
+Siehe [Über ](../../../configuration/bootstrap/application-modes.md)) im _Konfigurationshandbuch_.
 
 Weitere Informationen zu Berechtigungsempfehlungen finden Sie unter [Zugriffsberechtigungen für Dateisysteme](../../../configuration/deployment/file-system-permissions.md) im _Konfigurationshandbuch_.
 

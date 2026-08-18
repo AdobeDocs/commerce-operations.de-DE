@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Der Aufwand für das Upgrade Ihrer Adobe Commerce-Instanz hängt von folgenden F
 
 - **Wie haben Sie Ihre Site erstellt?** Der Umfang der benutzerdefinierten Arbeit und die Anzahl der installierten Module von Drittanbietern wirken sich stark auf die Komplexität eines Upgrades aus. Die Qualität der benutzerdefinierten Arbeiten und Module kann bestimmen, ob ein Upgrade reibungslos verläuft.
 
-- **Werden mehrere Versionen übersprungen?** das Überspringen von Versionen macht das nächste Upgrade komplexer, das Upgrade von nachfolgenden Versionen macht den Prozess einfacher und billiger.
+- **Überspringen Sie mehrere Versionen?** Das Überspringen von Versionen macht das nächste Upgrade komplexer, das Upgrade von nachfolgenden Versionen macht den Prozess einfacher und billiger.
 
 - **Welche Art von Upgrade nehmen Sie vor?** Ein Upgrade auf eine Nebenversion (beispielsweise von 2.3.x auf 2.4.0) ist umfangreicher als ein Upgrade zwischen Patch-Versionen (beispielsweise von 2.4.2 auf 2.4.3). Sicherheitsupdates sind am einfachsten zu implementieren.
 
@@ -43,7 +43,7 @@ Wenn Ihr Projekt live ist, empfehlen wir Ihnen, eine Prüfung durchzuführen, um
 Von dem Moment an, in dem Sie mit der Arbeit an einem Projekt beginnen, sollten Sie überlegen, wie sich Ihre aktuellen Arbeiten auf zukünftige Upgrades auswirken werden. Befolgen Sie immer die Best Practices für die Adobe Commerce-Entwicklung, wie hier beschrieben:
 
 - [Best Practices für die Entwicklung](https://developer.adobe.com/commerce/php/best-practices/)
-- [Kodierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/)
+- [Codierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Beginnen Sie mit der Übernahme der Adobe Commerce-Erweiterbarkeitsplattform, falls noch nicht geschehen. Die Plattform ermöglicht die effiziente Anpassung von Prozessen, die Integration von Systemen und die Bereitstellung neuer Funktionen bei gleichzeitiger Beibehaltung der SaaS-ähnlichen Aktualisierbarkeit. Zu den Merkmalen gehören:
 
@@ -57,11 +57,11 @@ Beginnen Sie mit der Übernahme der Adobe Commerce-Erweiterbarkeitsplattform, fa
 
 Da wir die Funktionen von Adobe Commerce kontinuierlich erweitern, ist es wichtig, dass Sie mit der neuesten verfügbaren Version entwickeln und in Ihren Projektplänen eine Upgrade-Strategie definieren. Auf diese Weise bleiben Sie sicher, konform und auf dem neuesten Stand der neuesten Verbesserungen, mit denen Sie Ihre Umsätze schneller steigern, effektiver arbeiten und Ihren Mitbewerbern jetzt und in Zukunft einen Schritt voraus sein können.
 
-Um Upgrades planen und budgetieren zu können, sollten Sie unseren [Veröffentlichungszeitplan](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) überwachen. Planen Sie Upgrade-Aufgaben im Rückstand Ihres Teams im Voraus. Ziel ist es, diese Arbeit mit GA abzuschließen.
+Um Upgrades planen und budgetieren zu können, sollten Sie unseren [Veröffentlichungszeitplan](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) überwachen. Planen Sie Upgrade-Aufgaben im Rückstand Ihres Teams im Voraus. Ziel ist es, diese Arbeit mit GA abzuschließen.
 
 - Verwenden Sie die Vorabversion , um mehr über jede neue Version zu erfahren. Eine Vorabversion ist ein allgemeiner Verfügbarkeits-Code, der Adobe Commerce-Händlern und allen Partnern zwei Wochen vor der allgemeinen Verfügbarkeit zur Verfügung steht. Wenn Sie über mehrere Stores verfügen, verwenden Sie die Vorabversion in Ihrem Basis-Store und überprüfen Sie, ob Ihre benutzerdefinierten Module und Designs damit kompatibel sind.
 
-- Lesen Sie die [Checkliste für den Upgrade](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist), um Adobe Commerce bei der Planung des Upgrades zu unterstützen.
+- Lesen Sie die [Checkliste für den Upgrade](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist), um Adobe Commerce bei der Planung des Upgrades zu unterstützen.
 
 - Planen Sie Upgrades Anfang des Jahres ein. Für jedes Upgrade müssen ein Budget und Ressourcen reserviert werden. Beachten Sie, dass der Upgrade-Aufwand von Projekt zu Projekt erheblich variieren kann. Nutzen Sie Ihre Erfahrungen und Kenntnisse, um einen Plan so genau wie möglich zu machen.
 
@@ -73,7 +73,7 @@ Upgrades sollten regelmäßig und mit einem vordefinierten Budget durchgeführt 
 
 Bewerten Sie die für das Upgrade erforderlichen Arbeiten:
 
-- Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview) um den Umfang und die Auswirkungen der neuen Version zu verstehen.
+- Lesen Sie die [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) um den Umfang und die Auswirkungen der neuen Version zu verstehen.
 
 - Verwenden Sie den [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md), um potenzielle Probleme zu identifizieren, die in Ihrem benutzerdefinierten Code behoben werden müssen, bevor Sie versuchen, auf eine neuere Version zu aktualisieren.
 
@@ -81,7 +81,7 @@ Bewerten Sie die für das Upgrade erforderlichen Arbeiten:
 
 ### Tests nach einem Upgrade
 
-Beim Testen handelt es sich um die Phase eines Upgrades, die die meiste Zeit in Anspruch nimmt. Daher sollte dieser Prozess so weit wie möglich automatisiert werden. Sie können von der Verwendung der wichtigsten Test-Tools profitieren. Weitere Informationen finden [&#x200B; im &#x200B;](https://developer.adobe.com/commerce/testing/guide/) „Anwendungstestleitfaden“.
+Beim Testen handelt es sich um die Phase eines Upgrades, die die meiste Zeit in Anspruch nimmt. Daher sollte dieser Prozess so weit wie möglich automatisiert werden. Sie können von der Verwendung der wichtigsten Test-Tools profitieren. Weitere Informationen finden [ im ](https://developer.adobe.com/commerce/testing/guide/) „Anwendungstestleitfaden“.
 
 Verwenden Sie eine Staging-Umgebung, um Ihr Upgrade zu testen und zu validieren, bevor Sie zur Produktion wechseln.
 

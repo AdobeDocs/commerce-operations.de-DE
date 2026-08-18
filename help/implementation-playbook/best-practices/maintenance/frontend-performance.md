@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Diese Tools verwenden verschiedene Metriken, um leistungsstarke Einblicke und Em
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -37,5 +37,5 @@ So überprüfen Sie die Frontend-Leistung Ihres Website-Stores:
 ## Weitere Informationen
 
 - [Indexverwaltung für Admin-Benutzer](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Indexverwaltung über die CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=de)
+- [Indexverwaltung über die CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Übersicht über die Indizierung für Entwickler](https://developer.adobe.com/commerce/php/development/components/indexing/)
