@@ -2,9 +2,9 @@
 title: Handbuch zu Best Practices für [!DNL Cloud Automation Patching Service (CAPS)]
 description: Best Practices für die  [!DNL Cloud Automation Patching Service (CAPS)]  und sichere Verwendung
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -22,23 +22,23 @@ Die Befolgung von Best Practices ist für erfolgreiche und sichere Patch-Vorgän
 Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemäß vorbereitet ist:
 
 * **Adobe Commerce Cloud-Konto**
-   * Aktives Adobe Commerce Cloud-Abonnement
-   * Gültige Adobe Commerce-Lizenz
-   * Repository-Zugriffsberechtigungen konfiguriert
-   * Projekt- und Umgebungsberechtigungen
+  * Aktives Adobe Commerce Cloud-Abonnement
+  * Gültige Adobe Commerce-Lizenz
+  * Repository-Zugriffsberechtigungen konfiguriert
+  * Projekt- und Umgebungsberechtigungen
 
 * **Umgebungsressourcen**
-   * Verfügbare Umgebungssteckplätze für temporäre Tests
-   * Ausreichende Speicher-, CPU- und Speicherressourcen
-   * Netzwerkzugriff auf Adobe-Repositorys
-   * Stabile übergeordnete Umgebung für die Synchronisierung
+  * Verfügbare Umgebungssteckplätze für temporäre Tests
+  * Ausreichende Speicher-, CPU- und Speicherressourcen
+  * Netzwerkzugriff auf Adobe-Repositorys
+  * Stabile übergeordnete Umgebung für die Synchronisierung
 
 * **Vorbereitung der Produktionsumgebung** (für Produktions-Patching)
-   * Wartungsmodus kann aktiviert werden
-   * Cron-Aufträge können deaktiviert werden
-   * Verfahren für Wartungsfenster eingerichtet
-   * Dokumentierte Rollback-Verfahren
-   * Kommunikationsplan für Stakeholder fertig
+  * Wartungsmodus kann aktiviert werden
+  * Cron-Aufträge können deaktiviert werden
+  * Verfahren für Wartungsfenster eingerichtet
+  * Dokumentierte Rollback-Verfahren
+  * Kommunikationsplan für Stakeholder fertig
 
 ## Best Practices für Patches
 
@@ -49,29 +49,29 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 **Wählen Sie den richtigen Zeitpunkt für die Patch-Anwendung:**
 
 * **Zeiträume mit geringem Traffic**
-   * Planen von Patches außerhalb der Spitzenzeiten
-   * Vermeiden Sie das Anwenden von Patches bei Ereignissen mit hohem Traffic
-   * Planen Sie mögliche Ausfallzeiten während der Validierung ein.
+  * Planen von Patches außerhalb der Spitzenzeiten
+  * Vermeiden Sie das Anwenden von Patches bei Ereignissen mit hohem Traffic
+  * Planen Sie mögliche Ausfallzeiten während der Validierung ein.
 
 * **Überlegungen zur Produktionsumgebung**
-   * **Wartungsfenster** - Planen von Produktions-Patches während geplanter Wartungsfenster
-   * **Kundenkommunikation**: Kunden über den Wartungsmodus und erwartete Ausfallzeiten informieren
-   * **Team-**: Stellen Sie sicher, dass alle Team-Mitglieder den Wartungsplan kennen.
-   * **Rollback-Vorbereitung** - Teammitglieder für sofortiges Rollback verfügbar haben, falls erforderlich
+  * **Wartungsfenster** - Planen von Produktions-Patches während geplanter Wartungsfenster
+  * **Kundenkommunikation**: Kunden über den Wartungsmodus und erwartete Ausfallzeiten informieren
+  * **Team-**: Stellen Sie sicher, dass alle Team-Mitglieder den Wartungsplan kennen.
+  * **Rollback-Vorbereitung** - Teammitglieder für sofortiges Rollback verfügbar haben, falls erforderlich
 
 ### Überwachung und Validierung
 
 **Bei Patch-Vorgängen:**
 
 * **Überwachen des Fortschritts**
-   * Überwachen des Betriebsstatus in Echtzeit
-   * Achten Sie auf etwaige Warnungen oder Fehler
-   * Unterbrechen Sie den Vorgang nach dem Start nicht
+  * Überwachen des Betriebsstatus in Echtzeit
+  * Achten Sie auf etwaige Warnungen oder Fehler
+  * Unterbrechen Sie den Vorgang nach dem Start nicht
 
 * **Ergebnisse validieren**
-   * Testen der kritischen Funktionalität nach erfolgreicher Anwendung
-   * Überprüfen Sie die Leistungsmetriken auf mögliche Beeinträchtigungen.
-   * Überprüfen, ob die Sicherheitsmaßnahmen intakt bleiben
+  * Testen der kritischen Funktionalität nach erfolgreicher Anwendung
+  * Überprüfen Sie die Leistungsmetriken auf mögliche Beeinträchtigungen.
+  * Überprüfen, ob die Sicherheitsmaßnahmen intakt bleiben
 
 ## Best Practices für Post-Patch
 
@@ -82,19 +82,19 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 **Nach erfolgreicher Patch-Anwendung:**
 
 * **Funktionstests**
-   * Testen aller wichtigen Geschäftsprozesse
-   * Checkout- und Zahlungsflüsse überprüfen
-   * Überprüfen der Funktionalität des Admin-Bedienfelds
+  * Testen aller wichtigen Geschäftsprozesse
+  * Checkout- und Zahlungsflüsse überprüfen
+  * Überprüfen der Funktionalität des Admin-Bedienfelds
 
 * **Leistungsüberwachung**
-   * Überwachen der Seitenladezeiten
-   * Überprüfen der Datenbankleistung
-   * Auf Ressourcennutzungsspitzen achten
+  * Überwachen der Seitenladezeiten
+  * Überprüfen der Datenbankleistung
+  * Auf Ressourcennutzungsspitzen achten
 
 * **Sicherheitsüberprüfung**
-   * Überprüfen, ob die Sicherheitsfunktionen funktionieren
-   * Auf neue Sicherheitslücken prüfen
-   * Testauthentifizierung und -autorisierung
+  * Überprüfen, ob die Sicherheitsfunktionen funktionieren
+  * Auf neue Sicherheitslücken prüfen
+  * Testauthentifizierung und -autorisierung
 
 ## Best Practices für die Produktionsumgebung
 
@@ -105,39 +105,39 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 **Patches sollten immer vor der Produktionsbereitstellung getestet werden:**
 
 * **Einrichtung der Testumgebung**
-   * Verwenden von Staging- oder Integrationsumgebungen für Tests
-   * Sicherstellen, dass die Testumgebung die Produktionskonfiguration widerspiegelt
-   * Testen Sie nach Möglichkeit mit produktionsähnlichen Daten
+  * Verwenden von Staging- oder Integrationsumgebungen für Tests
+  * Sicherstellen, dass die Testumgebung die Produktionskonfiguration widerspiegelt
+  * Testen Sie nach Möglichkeit mit produktionsähnlichen Daten
 
 * **Umfassende Tests**
-   * Testen aller wichtigen Geschäftsprozesse
-   * Checkout- und Zahlungsflüsse überprüfen
-   * Überprüfen der Funktionalität des Admin-Bedienfelds
-   * Testen von benutzerdefinierten Integrationen
+  * Testen aller wichtigen Geschäftsprozesse
+  * Checkout- und Zahlungsflüsse überprüfen
+  * Überprüfen der Funktionalität des Admin-Bedienfelds
+  * Testen von benutzerdefinierten Integrationen
 
 * **Leistungstests**
-   * Auswirkungen von Patches auf die Leistung überwachen
-   * Überprüfen auf Leistungseinbußen
-   * Überprüfen, ob die Ressourcennutzung akzeptabel bleibt
+  * Auswirkungen von Patches auf die Leistung überwachen
+  * Überprüfen auf Leistungseinbußen
+  * Überprüfen, ob die Ressourcennutzung akzeptabel bleibt
 
 ### Risikominderung
 
 **Risiken beim Produktions-Patching minimieren:**
 
 * **Kommunikationsplan**
-   * Kunden über Wartungsfenster benachrichtigen
-   * Halten Sie die Interessenträger über die Fortschritte auf dem Laufenden
-   * Eskalationsverfahren bereit halten
+  * Kunden über Wartungsfenster benachrichtigen
+  * Halten Sie die Interessenträger über die Fortschritte auf dem Laufenden
+  * Eskalationsverfahren bereit halten
 
 * **Rollback-Strategie**
-   * Wissen, wie Patches bei Bedarf schnell zurückgesetzt werden können
-   * Teammitglieder für sofortige Reaktion verfügbar haben
-   * Verfahren zum Zurücksetzen von Dokumenten
+  * Wissen, wie Patches bei Bedarf schnell zurückgesetzt werden können
+  * Teammitglieder für sofortige Reaktion verfügbar haben
+  * Verfahren zum Zurücksetzen von Dokumenten
 
 * **Überwachung und Warnhinweise**
-   * Einrichten der Überwachung für Probleme nach dem Patch
-   * Benachrichtigung bei kritischen Fehlern
-   * Leistungsmetriken genau überwachen
+  * Einrichten der Überwachung für Probleme nach dem Patch
+  * Benachrichtigung bei kritischen Fehlern
+  * Leistungsmetriken genau überwachen
 
 ## Zusammenfassung der wichtigsten Best Practices
 
@@ -156,5 +156,6 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 
 * [Einführung von CAPS](intro.md)
 * [Zugriff](access.md)
-* [Workflow](workflow.md)
+* [Workflow-Übersicht](workflow.md)
+* [GitHub-Integration](github-integration.md)
 * [Fehlerbehebung](troubleshooting.md)

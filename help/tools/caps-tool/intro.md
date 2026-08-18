@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Erfahren Sie mehr über [!DNL Cloud Automation Patching Service (CAPS)], seine Verwendung, den Zugriff darauf und über Best Practices für automatisiertes Patchen
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,32 @@ Dieses Handbuch richtet sich an Händler und Partner von Adobe Commerce Cloud, d
 ## [!DNL CAPS] Themen
 
 * **[Zugriff](access.md)**
-* **[Workflow](workflow.md)**
+* **[Workflow-Übersicht](workflow.md)**
+* **[GitHub-Integration](github-integration.md)**
 * **[Best Practices](best-practices.md)**
 * **[Fehlerbehebung](troubleshooting.md)**
 
 ## Tool-Übersicht
 
 * **Benutzeroberfläche**
-   * Verfügbarkeit von Echtzeit-Patches und Statusanzeige für bestimmte Projekt- und Umgebungskombinationen
-   * Umfassende Informationen zum Patch-Status, die den Fortschritt, Fehler und andere relevante Meldungen anzeigen
-   * [!UICONTROL Patch Management Dashboard] für:
-      * Anzeigen verfügbarer Patches
-      * Anwenden von Patches mit einem Klick
-      * Wiederherstellen zuvor angewendeter Patches
-      * Überwachen des Status und der Ergebnisse des Patch-Vorgangs
+  * Verfügbarkeit von Echtzeit-Patches und Statusanzeige für bestimmte Projekt- und Umgebungskombinationen
+  * Umfassende Informationen zum Patch-Status, die den Fortschritt, Fehler und andere relevante Meldungen anzeigen
+  * [!UICONTROL Patch Management Dashboard] für:
+    * Anzeigen verfügbarer Patches
+    * Anwenden von Patches mit einem Klick
+    * Wiederherstellen zuvor angewendeter Patches
+    * Überwachen des Status und der Ergebnisse des Patch-Vorgangs
 
 * **Automatisierter Patch-Service mit strukturiertem Workflow**
-   * **Vorprüfung** - Validiert die Patch-Kompatibilität und die Bereitschaft für die Umgebung
-   * **Patchen** - Wendet Patches in Integrationsumgebungen automatisch an oder setzt sie zurück
-   * **Validierung**: Führt Konsistenzprüfungen durch und stellt sicher, dass kritische Funktionen nicht betroffen sind
+  * **Vorprüfung** - Validiert die Patch-Kompatibilität und die Bereitschaft für die Umgebung
+  * **Patchen** - Wendet Patches in Integrationsumgebungen automatisch an oder setzt sie zurück
+  * **Validierung**: Führt Konsistenzprüfungen durch und stellt sicher, dass kritische Funktionen nicht betroffen sind
 
 * **Sicherheitsfunktionen**
-   * Erstellt temporäre Integrationsumgebungen für Tests
-   * Validiert die Patch-Kompatibilität vor der Anwendung
-   * Bietet automatisches Rollback bei Validierungsfehlern
-   * Wendet Patches auf den `m2-hotfixes` Ordner an und entfernt diese während der Wiederherstellung automatisch
+  * Erstellt temporäre Integrationsumgebungen für Tests
+  * Validiert die Patch-Kompatibilität vor der Anwendung
+  * Behält Ihre Zielumgebung unverändert, bis der Patch die Validierung in der temporären Umgebung besteht
+  * Wendet Patches auf den `m2-hotfixes` Ordner an und entfernt diese während der Wiederherstellung automatisch
 
 ## Integrationen mit Adobe Commerce Cloud
 
@@ -52,7 +53,7 @@ Dieses Handbuch richtet sich an Händler und Partner von Adobe Commerce Cloud, d
 
 Erfahren Sie mehr über den Adobe Cloud Automated Patching Service und wie dieses Tool Benutzenden hilft, Sicherheits-Patches schnell zu finden und anzuwenden. Im folgenden Video wird beschrieben, wie Sie über das SWAT-Dashboard darauf zugreifen, Ihr Projekt und Ihre Umgebung auswählen und Patches mit einem Klick anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476256/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Häufige Anwendungsfälle
 

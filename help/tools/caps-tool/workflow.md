@@ -1,27 +1,27 @@
 ---
-title: Funktionsweise  [!DNL Cloud Automation Patching Service (CAPS)]  Workflows
+title: Workflow-Übersicht [!DNL Cloud Automation Patching Service (CAPS)]
 description: Erfahren Sie mehr über  [!DNL Cloud Automation Patching Service (CAPS)]  Workflow-Prozess, einschließlich Terminologie, Workflow-Phasen und Vorgänge für die automatisierte Patch-Verwaltung.
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# Funktionsweise des [!DNL Cloud Automation Patching Service (CAPS)]-Workflows
+# Workflow-Übersicht [!DNL Cloud Automation Patching Service (CAPS)]
 
 Dieses Thema bietet einen allgemeinen Überblick darüber, wie Patch-Vorgänge mithilfe von [!DNL CAPS (Cloud Automation Patching Service)] funktionieren.
 
 ## Terminologie
 
 * **Vorgänge** - die wichtigsten von [!DNL CAPS] durchgeführten Aktionen:
-   * Übernehmen
-   * Zurück zur letzten Version
+  * Übernehmen
+  * Zurück zur letzten Version
 * **Phasen** - die drei Phasen des Workflows:
-   * Vorprüfung
-   * Flicken
-   * Validierung
+  * Vorprüfung
+  * Flicken
+  * Validierung
 * **Umgebung** - die Adobe Commerce-Cloud-Umgebung, in der Patches angewendet werden.
 
 ## Vorgänge
@@ -53,10 +53,10 @@ Die Vorprüfungsphase überprüft, ob der Patch sicher auf Ihre Umgebung angewen
 **Was passiert:**
 
 * **Sicherungen der Produktionsumgebung** (nur Produktionsumgebungen):
-   * Prüft, ob der Speicher im Wartungsmodus ist
-   * Überprüft, ob Cron-Aufträge deaktiviert sind
-   * Blockiert das Patchen, wenn die Bedingungen nicht erfüllt sind
-   * Zeigt ein Bestätigungsdialogfeld an, wenn Bedingungen erfüllt sind
+  * Prüft, ob der Speicher im Wartungsmodus ist
+  * Überprüft, ob Cron-Aufträge deaktiviert sind
+  * Blockiert das Patchen, wenn die Bedingungen nicht erfüllt sind
+  * Zeigt ein Bestätigungsdialogfeld an, wenn Bedingungen erfüllt sind
 * **Patch-Validierung** - Überprüft, ob die Patch-Datei gültig und kompatibel ist
 * **Umgebungsbewertung** - Überprüft die Bereitschaft und Ressourcen der Umgebung
 * **Konflikterkennung** - Identifiziert potenzielle Konflikte mit vorhandenem Code
@@ -92,6 +92,10 @@ Dieser Ansatz bietet:
 **Git-Vorgänge** - Änderungen werden übertragen und in den Zweig der Integrationsumgebung übertragen
 
 **Umgebungsaktivierung** - Die Integrationsumgebung wird aktiviert, um den gepatchten Code bereitzustellen
+
+>[!NOTE]
+>
+>Wenn Ihr Projekt ein externes GitHub-Repository verwendet, verarbeitet [!DNL CAPS] die Authentifizierung automatisch mit der [[!DNL CAPS] GitHub-App](github-integration.md). Es sind keine zusätzlichen Anmeldeinformationen erforderlich.
 
 #### Schritt 2c: Zurück zur Zielumgebung
 
@@ -159,5 +163,6 @@ Wenn eine der Bedingungen nicht erfüllt ist, wird die Patch-Anwendung blockiert
 
 * [Einführung von CAPS](intro.md)
 * [Zugriff](access.md)
+* [GitHub-Integration](github-integration.md)
 * [Best Practices](best-practices.md)
 * [Fehlerbehebung](troubleshooting.md)
