@@ -2,9 +2,10 @@
 user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
-source-git-commit: 28ca422543728123edcaa41dedca6e3cc53536b6
+nudge: true
+source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '170'
 ht-degree: 14%
 
 ---
@@ -14,58 +15,58 @@ ht-degree: 14%
 
 - [Überblick](overview.md)
 - Architektur und Integrationen {#architecture}
-   - [Unternehmensreferenz](architecture/enterprise-blueprint.md)
+  - [Unternehmensreferenz](architecture/enterprise-blueprint.md)
 - Wartung und Support {#maintenance}
-   - [Überblick](maintenance/overview.md)
-   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+  - [Überblick](maintenance/overview.md)
+  - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best Practices {#best-practices}
-   - [Überblick](best-practices/phases.md)
-   - Planung {#planning}
-      - [Überblick](best-practices/planning/overview.md)
-      - [Katalogverwaltung](best-practices/planning/catalog-management.md)
-      - [Konfiguration von Sites, Stores und Store-Ansicht](best-practices/planning/sites-stores-store-views.md)
-      - [Reporting-Konfiguration](best-practices/planning/reporting-configuration.md)
-      - [Datenbankkonfiguration für Cloud-Bereitstellungen&#x200B;](best-practices/planning/database-on-cloud.md)
-      - [MySQL-Konfiguration](best-practices/planning/mysql-configuration.md)
-      - [Konfiguration des Redis/Valley-Dienstes](best-practices/planning/redis-valkey-service-configuration.md)
-      - [OP-Cache-Speichergröße](best-practices/planning/opcache-memory-size.md)
-      - [RealPath-Cachegröße](best-practices/planning/realpath-cache-size.md)
-      - [Erweiterungen](best-practices/planning/extensions.md)
-      - [Partner-Eskalationen](best-practices/planning/partner-escalation.md)
-      - [Zahlungsverarbeitung](best-practices/planning/payment-processing-storage.md)
-   - Entwicklung {#development}
-      - [Überblick](best-practices/development/overview.md)
-      - [Allgemeine Best Practices](best-practices/development/general.md)
-      - [Code-Management](best-practices/development/code-management.md)
-      - [Code-Überprüfung](best-practices/development/code-review.md)
-      - [Debugging](best-practices/development/debugging.md)
-      - [Ausnahmebehandlung](best-practices/development/exception-handling.md)
-      - [Git-Verzweigung](best-practices/development/git-branching.md)
-      - [Ändern der Größe von Katalogbildern](best-practices/development/catalog-image-resizing.md)
-      - [Bildoptimierung](best-practices/development/image-optimization.md)
-      - [Fehlerbehebung](best-practices/development/troubleshooting.md)
-      - [Optimieren von CSS- und JS-Dateien](best-practices/development/optimize-css-js-files.md)
-      - [Private Inhaltsbausteine](best-practices/development/private-content-block-configuration.md)
-      - [Statische Inhaltsbereitstellung](best-practices/development/static-content-deployment.md)
-      - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [Ändern des Kern- und Drittanbieter-Codes](best-practices/development/modifying-core-and-third-party-code.md)
-   - Starten {#launch}
-      - [Überblick](best-practices/launch/overview.md)
-      - [Web-Crawler konfigurieren](best-practices/launch/robots-txt.md)
-      - [Sichern von Site und Infrastruktur](best-practices/launch/security-best-practices.md)
-   - Wartung {#maintenance}
-      - [Überblick](best-practices/maintenance/overview.md)
-      - [Unterstützung nach der Markteinführung](best-practices/maintenance/post-launch.md)
-      - [Audit der Frontend-Leistung](best-practices/maintenance/frontend-performance.md)
-      - [Optimieren der Backend-Leistung](best-practices/maintenance/backend-performance.md)
-      - [Indexerkonfiguration](best-practices/maintenance/indexer-configuration.md)
-      - [Skaliertes Patchen](best-practices/maintenance/patching-at-scale.md)
-      - [Auftragsabwicklung](best-practices/maintenance/order-processing-configuration.md)
-      - [Beheben von Leistungsproblemen der Datenbank](best-practices/maintenance/resolve-database-performance-issues.md)
-      - [Reaktion auf Sicherheitsvorfälle](best-practices/maintenance/respond-to-security-incident.md)
-      - [Planen von Admin-Updates auf Produktions-Sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
-      - [Dienste aktualisieren](best-practices/maintenance/update-services.md)
-      - [Checkliste für die Aktualisierung](best-practices/maintenance/upgrade-checklist.md)
-      - [Upgrade-Voraussetzungen für MariaDB](best-practices/maintenance/mariadb-upgrade.md)
+  - [Überblick](best-practices/phases.md)
+  - Planung {#planning}
+    - [Überblick](best-practices/planning/overview.md)
+    - [Katalogverwaltung](best-practices/planning/catalog-management.md)
+    - [Konfiguration von Sites, Stores und Store-Ansicht](best-practices/planning/sites-stores-store-views.md)
+    - [Reporting-Konfiguration](best-practices/planning/reporting-configuration.md)
+    - [Datenbankkonfiguration für Cloud-Bereitstellungen&#x200B;](best-practices/planning/database-on-cloud.md)
+    - [MySQL-Konfiguration](best-practices/planning/mysql-configuration.md)
+    - [Konfiguration des Redis/Valley-Dienstes](best-practices/planning/redis-valkey-service-configuration.md)
+    - [OP-Cache-Speichergröße](best-practices/planning/opcache-memory-size.md)
+    - [RealPath-Cachegröße](best-practices/planning/realpath-cache-size.md)
+    - [Erweiterungen](best-practices/planning/extensions.md)
+    - [Partner-Eskalationen](best-practices/planning/partner-escalation.md)
+    - [Zahlungsverarbeitung](best-practices/planning/payment-processing-storage.md)
+  - Entwicklung {#development}
+    - [Überblick](best-practices/development/overview.md)
+    - [Allgemeine Best Practices](best-practices/development/general.md)
+    - [Code-Management](best-practices/development/code-management.md)
+    - [Code-Überprüfung](best-practices/development/code-review.md)
+    - [Debugging](best-practices/development/debugging.md)
+    - [Ausnahmebehandlung](best-practices/development/exception-handling.md)
+    - [Git-Verzweigung](best-practices/development/git-branching.md)
+    - [Ändern der Größe von Katalogbildern](best-practices/development/catalog-image-resizing.md)
+    - [Bildoptimierung](best-practices/development/image-optimization.md)
+    - [Fehlerbehebung](best-practices/development/troubleshooting.md)
+    - [Optimieren von CSS- und JS-Dateien](best-practices/development/optimize-css-js-files.md)
+    - [Private Inhaltsbausteine](best-practices/development/private-content-block-configuration.md)
+    - [Statische Inhaltsbereitstellung](best-practices/development/static-content-deployment.md)
+    - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
+    - [Ändern des Kern- und Drittanbieter-Codes](best-practices/development/modifying-core-and-third-party-code.md)
+  - Starten {#launch}
+    - [Überblick](best-practices/launch/overview.md)
+    - [Web-Crawler konfigurieren](best-practices/launch/robots-txt.md)
+    - [Sichern von Site und Infrastruktur](best-practices/launch/security-best-practices.md)
+  - Wartung {#maintenance}
+    - [Überblick](best-practices/maintenance/overview.md)
+    - [Unterstützung nach der Markteinführung](best-practices/maintenance/post-launch.md)
+    - [Audit der Frontend-Leistung](best-practices/maintenance/frontend-performance.md)
+    - [Optimieren der Backend-Leistung](best-practices/maintenance/backend-performance.md)
+    - [Indexerkonfiguration](best-practices/maintenance/indexer-configuration.md)
+    - [Skaliertes Patchen](best-practices/maintenance/patching-at-scale.md)
+    - [Auftragsabwicklung](best-practices/maintenance/order-processing-configuration.md)
+    - [Beheben von Leistungsproblemen der Datenbank](best-practices/maintenance/resolve-database-performance-issues.md)
+    - [Reaktion auf Sicherheitsvorfälle](best-practices/maintenance/respond-to-security-incident.md)
+    - [Planen von Admin-Updates auf Produktions-Sites](best-practices/maintenance/scheduling-admin-updates-in-production.md)
+    - [Dienste aktualisieren](best-practices/maintenance/update-services.md)
+    - [Checkliste für die Aktualisierung](best-practices/maintenance/upgrade-checklist.md)
+    - [Upgrade-Voraussetzungen für MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glossar](glossary.md)
-- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)
+- [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
