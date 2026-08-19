@@ -23,6 +23,6 @@ Die Themen im Abschnitt Sicherheit des Konfigurationshandbuchs sind nicht umfass
 
 Mehrere sicherheitsbezogene Themen, die gleichzeitig im Konfigurationshandbuch enthalten waren, befinden sich nun in den folgenden Handbüchern:
 
-- [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) im _Erweiterungshandbuch_.
+- [Google reCAPTCHA](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) im _Erweiterungshandbuch_.
 - [Zwei-Faktor-Authentifizierung](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication) im _Erweiterungshandbuch_.
 - [Einhaltung der Datenschutz-Grundverordnung (DSGVO](/help/security-and-compliance/privacy/gdpr.md) im _„Security and Compliance Guide_.

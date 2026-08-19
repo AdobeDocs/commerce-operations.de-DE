@@ -40,7 +40,7 @@ Jede Entwicklungsphase sollte über eine entsprechende Verzweigung in Git verfü
 
 >[!TIP]
 >
->Adobe Commerce in Cloud-Infrastrukturprojekten enthalten spezifische Verzweigungen, die verschiedenen Umgebungen entsprechen. Siehe [Pro-Projekt](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) und [Starter-Projekt](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) im _Cloud-Handbuch_.
+>Adobe Commerce in Cloud-Infrastrukturprojekten enthalten spezifische Verzweigungen, die verschiedenen Umgebungen entsprechen. Siehe [Pro-Projekt](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) und [Starter-Projekt](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) im _Cloud-Handbuch_.
 
 ## Verzweigungsstrategien
 

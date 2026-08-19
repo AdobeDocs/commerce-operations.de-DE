@@ -32,9 +32,9 @@ Optimieren und komprimieren Sie Bilder vor dem Hochladen auf Ihre Commerce-Sites
 
 ## Schnelle Bildoptimierung aktivieren und konfigurieren
 
-Nachdem Sie den Fastly-Service für Ihr Adobe Commerce-Cloud-Projekt eingerichtet haben, finden Sie unter [Fastly-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization)) Anweisungen zum Aktivieren und Konfigurieren der Bildoptimierung.
+Nachdem Sie den Fastly-Service für Ihr Adobe Commerce-Cloud-Projekt eingerichtet haben, finden Sie unter [Fastly-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization)) Anweisungen zum Aktivieren und Konfigurieren der Bildoptimierung.
 
 ## Weitere Informationen
 
-- [Schnell einrichten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)
+- [Schnell einrichten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)
 - [Schlecht optimierte Bilder können zu Leistungsproblemen führen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow)

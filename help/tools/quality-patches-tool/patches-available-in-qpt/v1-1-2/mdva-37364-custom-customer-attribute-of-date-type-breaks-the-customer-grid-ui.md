@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37364: Benutzerdefiniertes Kundenattribut des Datentyps unterbricht die Rasterbenutzeroberfläche'
-description: Der Patch MDVA-37364 löst das Problem, dass das benutzerdefinierte Kundenattribut vom Datentyp die Benutzeroberfläche des Kundenrasters beschädigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37364. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
+description: Der Patch MDVA-37364 löst das Problem, dass das benutzerdefinierte Kundenattribut vom Datentyp die Benutzeroberfläche des Kundenrasters beschädigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37364. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
 feature: Attributes, Cache
 role: Developer
 exl-id: 5bd64004-06c4-49fd-8e56-e2c44008ca82
@@ -61,7 +61,7 @@ Die Admin-Benutzeroberfläche für Kundenraster ist fehlerhaft.
 Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

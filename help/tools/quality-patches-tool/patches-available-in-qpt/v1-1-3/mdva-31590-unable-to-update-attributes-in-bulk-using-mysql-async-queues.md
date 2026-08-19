@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-31590: Attribute können nicht stapelweise über asynchrone MySQL-Warteschlangen aktualisiert werden'
-description: Der Patch MDVA-31590 löst das Problem, dass die Benutzer Attribute nicht stapelweise über asynchrone MySQL-Warteschlangen aktualisieren können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-31590. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
+description: Der Patch MDVA-31590 löst das Problem, dass die Benutzer Attribute nicht stapelweise über asynchrone MySQL-Warteschlangen aktualisieren können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-31590. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
 feature: Attributes, Services
 role: Admin
 exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
@@ -71,7 +71,7 @@ Benutzer können Attribute nicht stapelweise mithilfe von MySQL asynchron aktual
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

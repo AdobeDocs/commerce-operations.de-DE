@@ -3,7 +3,7 @@ title: Cache-Löschen mit Lack
 description: Erfahren Sie, wie das Löschen von Caches mit dem Web-Caching-Beschleuniger von Varnish für Adobe Commerce funktioniert. Entdecken Sie Methoden zur Cache-Verwaltung und -Optimierung.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 autotag-review: '2026-06-22T22:18:33.462Z'
 TQID: 'https://experienceleague.adobe.com/ePhbVWjx-hX99p8OKiKqzT-w2KZu-XjS1XieuStKqc4'
 product_v2:

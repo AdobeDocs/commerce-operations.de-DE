@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37115: Auf der Produktseite wird „Nur noch 0“ angezeigt'
-description: Der MDVA-37115 Patch löst das Problem, dass der unnötige *Nur 0 verbleibende* Hinweis auf der konfigurierbaren Produktseite angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37115. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+description: Der MDVA-37115 Patch löst das Problem, dass der unnötige *Nur 0 verbleibende* Hinweis auf der konfigurierbaren Produktseite angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37115. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 feature: Configuration, Products, Orders
 role: Admin
 exl-id: ba94b2fd-6a7d-4194-afd8-798854431b57
@@ -57,7 +57,7 @@ Auf *Produktseite wird* Hinweis „Nur noch 0“ angezeigt.
 Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

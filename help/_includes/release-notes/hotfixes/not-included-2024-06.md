@@ -25,22 +25,22 @@ Option 1:
 
    * [2.4.4-p9](/help/release/release-notes/security/2-4-4-patches.md#adobe-commerce-244-p9)
 
-1. Wenden Sie den [Hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) an, der am 17. Juli 2024 veröffentlicht wurde.
+1. Wenden Sie den [Hotfix](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27136) an, der am 17. Juli 2024 veröffentlicht wurde.
 
-1. [Drehen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) Verschlüsselungsschlüssel.
+1. [Drehen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) Verschlüsselungsschlüssel.
 
 Option 2:
 
-1. Aufkleben [isolierten Pflasters](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136).
+1. Aufkleben [isolierten Pflasters](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27136).
 
-1. [Drehen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) Verschlüsselungsschlüssel.
+1. [Drehen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) Verschlüsselungsschlüssel.
 
 **Für Kunden, die bereits einen Sicherheits-Patch vom 11. Juni 2024 oder einen isolierten Patch vom 28. Juni 2024 angewendet haben:**
 
-1. Wenden Sie den [Hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) an, der am 17. Juli 2024 veröffentlicht wurde.
+1. Wenden Sie den [Hotfix](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27136) an, der am 17. Juli 2024 veröffentlicht wurde.
 
-1. [Drehen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) Verschlüsselungsschlüssel.
+1. [Drehen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) Verschlüsselungsschlüssel.
 
 **Für Kunden, die bereits 1) einen Sicherheits-Patch vom 11. Juni 2024 oder 2) einen isolierten Patch vom 28. Juni 2024 angewendet haben, und 3) rotierten ihre Verschlüsselungsschlüssel:**
  
-1. Wenden Sie den [Hotfix](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) an, der am 17. Juli 2024 veröffentlicht wurde.
+1. Wenden Sie den [Hotfix](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27136) an, der am 17. Juli 2024 veröffentlicht wurde.

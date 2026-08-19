@@ -43,7 +43,7 @@ Das Tool soll Ihnen die Möglichkeit geben, selbst Patches für Probleme zu erst
 
 ## Im Quality Patches Tool verfügbare Patches
 
-Eine Liste der verfügbaren Patches finden Sie [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.
+Eine Liste der verfügbaren Patches finden Sie [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) in unserer Entwicklerdokumentation.
 
 ## Installieren und Verwenden des Quality Patches Tools
 
@@ -55,9 +55,9 @@ Weitere Informationen [&#x200B; Installation und Verwendung von QPT zum Anwenden
 
 ### Installieren und Verwenden von QPT für Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [&#x200B; Cloud-Infrastruktur finden Sie unter „Cloud &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) für Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
+Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [&#x200B; Cloud-Infrastruktur finden Sie unter „Cloud &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) für Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 * [Versionshinweise zum Quality Patches Tool](/help/tools/quality-patches-tool/release-notes.md) in unserer Entwicklerdokumentation.
-* [Anwenden von Composer-Patches, die von Adobe bereitgestellt werden](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in der Support-Wissensdatenbank.
+* [Anwenden von Composer-Patches, die von Adobe bereitgestellt werden](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in der Support-Wissensdatenbank.

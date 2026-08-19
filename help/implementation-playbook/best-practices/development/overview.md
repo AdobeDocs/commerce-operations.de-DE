@@ -42,7 +42,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds und Bereitstellung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsphase von Adobe Commerce in Cloud-Infrastrukturprojekten |
+| [Builds und Bereitstellung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsphase von Adobe Commerce in Cloud-Infrastrukturprojekten |
 | Debugging | Systematisches und effektives Debugging des Adobe Commerce-Frameworks |
 | [Statische Inhaltsbereitstellung](static-content-deployment.md) | Vermeiden Sie Probleme mit statischen Inhalten, die nicht in Ihrer Storefront angezeigt werden |
 | [Fehlerbehebung](troubleshooting.md) | Beheben häufiger Adobe Commerce-Implementierungsprobleme |

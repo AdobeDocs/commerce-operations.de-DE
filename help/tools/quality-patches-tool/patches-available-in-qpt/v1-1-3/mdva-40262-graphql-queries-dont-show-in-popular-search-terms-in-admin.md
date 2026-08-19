@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40262: GraphQL-Abfragen werden in gängigen Suchbegriffen in Admin nicht angezeigt'
-description: Der Adobe Commerce-Qualitäts-Patch von MDVA-40262 behebt das Problem, dass GraphQL-Suchanfragen in gängigen Suchbegriffen im Admin-Bereich nicht angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40262. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+description: Der Adobe Commerce-Qualitäts-Patch von MDVA-40262 behebt das Problem, dass GraphQL-Suchanfragen in gängigen Suchbegriffen im Admin-Bereich nicht angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40262. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: Admin Workspace, GraphQL, Search
 role: Admin
 exl-id: 9442ac86-e632-4ab3-8cb3-d29487a1ecbe

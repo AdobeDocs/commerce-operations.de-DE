@@ -132,7 +132,7 @@ Diese Version umfasst die folgenden Highlights:
 
 >[!BEGINSHADEBOX]
 
-Die Fehlerbehebungen für CVE-2025-47110 und VULN-31547 sind auch als isolierter Patch verfügbar. Weitere Informationen finden [&#x200B; im Artikel &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181)Wissensdatenbank“.
+Die Fehlerbehebungen für CVE-2025-47110 und VULN-31547 sind auch als isolierter Patch verfügbar. Weitere Informationen finden [&#x200B; im Artikel &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27181)Wissensdatenbank“.
 
 >[!ENDSHADEBOX]
 

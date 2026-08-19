@@ -91,5 +91,5 @@ Nachdem Sie den Remotespeicher für einen bestimmten Adapter aktiviert haben, k�
 
 >[!INFO]
 >
->Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) im _Benutzerhandbuch zu Commerce 2.4_.
+>Mit dem Befehl „sync“ werden nur Dateien im `pub/media`-Verzeichnis migriert _nicht_ Import/Export-Dateien im `var`-Verzeichnis. Siehe [Geplanter Import/Export](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=de) im _Benutzerhandbuch zu Commerce 2.4_.
 
