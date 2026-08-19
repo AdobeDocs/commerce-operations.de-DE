@@ -76,4 +76,4 @@ Händler und Partner, die mehr Einblick in ihre Adobe Commerce-Websites erhalten
 
 In diesem Video erfahren Sie mehr über die [!DNL Site-Wide Analysis Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3411355?captions=ger&quality=12)
