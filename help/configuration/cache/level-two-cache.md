@@ -3,7 +3,7 @@ title: L2-Cache-Konfiguration zur Leistungsoptimierung
 description: Erfahren Sie, wie Sie den L2-Cache in Adobe Commerce konfigurieren, um den Netzwerk-Traffic zu reduzieren und die Leistung zu verbessern. Entdecken Sie die Implementierungsoptionen von Legacy und Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Verwenden Sie das folgende Beispiel, um separate Frontends für `symfony_l2` Unt
 
 >[!NOTE]
 >
->Diese Verbesserungen gelten für Adobe Commerce 2.4.9-Bereitstellungen mit `symfony_l2` und sind im Patch ACP2E-5132 verfügbar. Wenden Sie diesen Patch für lokale Adobe Commerce-Installationen mithilfe des Quality Patches Tool (QPT) an. Für Adobe Commerce on Cloud wird dieser Patch automatisch über [Cloud-Patches für Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) bereitgestellt.
+>Diese Verbesserungen gelten für Adobe Commerce 2.4.9-Bereitstellungen mit `symfony_l2` und sind im Patch ACP2E-5132 verfügbar. Wenden Sie diesen Patch für lokale Adobe Commerce-Installationen mithilfe des Quality Patches Tool (QPT) an. Für Adobe Commerce on Cloud wird dieser Patch automatisch über [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) bereitgestellt.
 
 Die neuesten Aktualisierungen verbessern die Skalierbarkeit des Symfony L2-Cache, reduzieren unnötige Dateisystem-E/A und verbessern die Cache-Konsistenz und -Zuverlässigkeit.
 

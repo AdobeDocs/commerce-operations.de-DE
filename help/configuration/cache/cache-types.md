@@ -39,7 +39,7 @@ Einen Überblick über die Commerce-Caching-Architektur finden Sie unter [Übers
 
 >[!NOTE]
 >
->Verwenden Sie für Adobe Commerce in der Cloud[Infrastruktur die Cloud-Bereitstellungskonfiguration &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) im Cloud-Handbuch beschrieben. `app/etc/env.php` nicht direkt bearbeiten. Bereitstellungs-Tools generieren diese Datei und können manuelle Änderungen überschreiben.
+>Verwenden Sie für Adobe Commerce in der Cloud[Infrastruktur die Cloud-Bereitstellungskonfiguration &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) im Cloud-Handbuch beschrieben. `app/etc/env.php` nicht direkt bearbeiten. Bereitstellungs-Tools generieren diese Datei und können manuelle Änderungen überschreiben.
 
 ## Standard-Frontend verwenden
 

@@ -56,7 +56,7 @@ Sie können verschiedenen Frontends verschiedene Cache-Typen zuweisen, wenn sepa
 Die vollständige HTTP-Seitenzwischenspeicherung speichert vollständige Antworten auf der HTTP- oder CDN-Ebene. Für Produktionsbereitstellungen:
 
 - **Adobe Commerce On-Premises** - Adobe empfiehlt [Varnish](config-varnish.md) für das Caching ganzer Seiten. Varnish fungiert als Reverse-Proxy vor dem Webserver.
-- **Adobe Commerce in der Cloud** Infrastruktur verwendet [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} für die Edge- und Vollseiten-Caching-Ebene. Die Cloud-Infrastruktur verwendet keinen separat verwalteten Lackdienst.
+- **Adobe Commerce in der Cloud** Infrastruktur verwendet [Fastly](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} für die Edge- und Vollseiten-Caching-Ebene. Die Cloud-Infrastruktur verwendet keinen separat verwalteten Lackdienst.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Die folgenden Konfigurationsaufgaben variieren je nach Bereitstellungstyp.
 | Aufgabe | On-Premises | Cloud-Infrastruktur |
 | --- | --- | --- |
 | Anwendungs-Cache-Backends | [Cache-Backend-Optionen und Speicherreferenz](cache-options.md) | [Best Practices für die Konfiguration des Valkey- und Redis-Service](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| HTTP-Caching ganzer Seiten | [Lack konfigurieren](config-varnish.md) | [Fastly Services - Übersicht](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| HTTP-Caching ganzer Seiten | [Lack konfigurieren](config-varnish.md) | [Fastly Services - Übersicht](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 Die folgenden Aufgaben gelten für alle Bereitstellungstypen:
 
