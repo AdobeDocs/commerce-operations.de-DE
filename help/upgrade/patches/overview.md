@@ -62,7 +62,7 @@ Es gibt viele Möglichkeiten, benutzerdefinierte Patch-Dateien zu erstellen. Das
 So erstellen Sie einen benutzerdefinierten Patch:
 
 1. Erstellen Sie ein `patches/composer` in Ihrem lokalen Projekt.
-1. Identifizieren Sie die für den Patch zu verwendende GitHub-Commit- oder Pull-Anfrage. In diesem Beispiel wird der [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)-Commit verwendet, der mit dem GitHub-Problem [ verknüpft #6474](https://github.com/magento/magento2/issues/6474).
+1. Identifizieren Sie die für den Patch zu verwendende GitHub-Commit- oder Pull-Anfrage. In diesem Beispiel wird der [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)-Commit verwendet, der mit dem GitHub-Problem [&#x200B; verknüpft #6474](https://github.com/magento/magento2/issues/6474).
 1. Hängen Sie die `.patch` oder die `.diff` Erweiterungen an die Commit-URL an. Verwenden Sie `.diff` für eine kleinere Dateigröße. Beispiel: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. Speichern Sie die Seite als Datei im `patches/composer`. Beispiel: `github-issue-6474.diff`.
 1. Bearbeiten Sie die Datei und entfernen Sie `app/code/<VENDOR>/<PACKAGE>` aus allen Pfaden, sodass sie relativ zum `vendor/<VENDOR>/<PACKAGE>` sind.

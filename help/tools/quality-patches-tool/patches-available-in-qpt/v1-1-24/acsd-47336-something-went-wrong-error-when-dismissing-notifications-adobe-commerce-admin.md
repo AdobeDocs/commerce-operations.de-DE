@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336: _[!UICONTROL Something went wrong]_beim Verwerfen von Benachrichtigungen in Adobe Commerce Admin
+# ACSD-47336: _[!UICONTROL Something went wrong]_&#x200B;beim Verwerfen von Benachrichtigungen in Adobe Commerce Admin
 
-Mit dem Patch „ACSD-47336“ wird das Problem behoben, dass beim Verwerfen von Benachrichtigungen in der [!DNL Commerce] Admin der _[!UICONTROL Something went wrong]_Fehler angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24 installiert ist. Die Patch-ID ist ACSD-47336. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
+Mit dem Patch „ACSD-47336“ wird das Problem behoben, dass beim Verwerfen von Benachrichtigungen in der [!DNL Commerce] Admin der _[!UICONTROL Something went wrong]_&#x200B;Fehler angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24 installiert ist. Die Patch-ID ist ACSD-47336. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -32,7 +32,7 @@ Mit dem Patch „ACSD-47336“ wird das Problem behoben, dass beim Verwerfen von
 
 ## Problem
 
-Der/die Benutzende sieht _[!UICONTROL Something went wrong]_Fehler, wenn er/sie die Benachrichtigungen im [!DNL Commerce] Admin verwirft.
+Der/die Benutzende sieht _[!UICONTROL Something went wrong]_&#x200B;Fehler, wenn er/sie die Benachrichtigungen im [!DNL Commerce] Admin verwirft.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -42,11 +42,11 @@ Der/die Benutzende sieht _[!UICONTROL Something went wrong]_Fehler, wenn er/sie 
 
 <u>Erwartete Ergebnisse</u>:
 
-Der _[!UICONTROL Something went wrong]_sollte beim Löschen der abgeschlossenen Aufgaben nicht angezeigt werden.
+Der _[!UICONTROL Something went wrong]_&#x200B;sollte beim Löschen der abgeschlossenen Aufgaben nicht angezeigt werden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der _[!UICONTROL Something went wrong]_wird angezeigt.
+Der _[!UICONTROL Something went wrong]_&#x200B;wird angezeigt.
 
 ## Patch anwenden
 
@@ -59,7 +59,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

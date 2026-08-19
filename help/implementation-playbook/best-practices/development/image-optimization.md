@@ -17,7 +17,7 @@ Verbessern Sie bei Adobe Commerce in Cloud-Infrastrukturbereitstellungen die Rea
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 Adobe Commerce auf Cloud-Infrastruktur
 

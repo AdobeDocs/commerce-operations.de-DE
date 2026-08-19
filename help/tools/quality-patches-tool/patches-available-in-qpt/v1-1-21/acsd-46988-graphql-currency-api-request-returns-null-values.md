@@ -41,19 +41,19 @@ Die GraphQL-Währungs-API-Anfrage gibt für eine benutzerdefinierte Währung Nul
 
 <pre>
 <code class="language-graphql">
-{
-    currency {
+&lbrace;
+    currency &lbrace;
         base_currency_code
         base_currency_symbol
         default_display_currency_code
         default_display_currency_symbol
         available_currency_codes
-        exchange_rates {
+        exchange_rates &lbrace;
             currency_to
             rate
-        }
-    }
-}
+        &rbrace;
+    &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -88,6 +88,6 @@ Für Cloud-Benutzer:
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Handbuch Quality Patches Tool .

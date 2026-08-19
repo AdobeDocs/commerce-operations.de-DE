@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47444: _[!UICONTROL Trying to access array offset on value of type bool]_Fehler beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte in PHP 7.4
+# ACSD-47444: _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;Fehler beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte in PHP 7.4
 
-Der Patch ACSD-47444 löst das Problem, dass _[!UICONTROL Trying to access array offset on value of type bool]_Fehler beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte in PHP 7.4 auftritt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.22 installiert ist.
+Der Patch ACSD-47444 löst das Problem, dass _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;Fehler beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte in PHP 7.4 auftritt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.22 installiert ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,7 +30,7 @@ Der Patch ACSD-47444 löst das Problem, dass _[!UICONTROL Trying to access array
 
 ## Problem
 
-Es tritt folgender Fehler auf: _[!UICONTROL Trying to access array offset on value of type bool]_beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte, unter PHP 7.4.
+Es tritt folgender Fehler auf: _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;beim Zugriff auf bestimmte nicht vorhandene Kategoriepfade für bekannte Produkte, unter PHP 7.4.
 
 <u>Voraussetzungen</u>:
 
@@ -63,7 +63,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

@@ -15,7 +15,7 @@ Diese Version umfasst die folgenden Highlights:
 
 * **Behebung für [CVE-2025-24434](https://nvd.nist.gov/vuln/detail/CVE-2025-24434)** - Behebt eine Autorisierungslücke.
 
-  Diese Fehlerbehebung ist auch als isolierter Patch verfügbar. Weitere Informationen finden Sie [ „Knowledge](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)Base-Artikel“<!-- AC-12755 -->
+  Diese Fehlerbehebung ist auch als isolierter Patch verfügbar. Weitere Informationen finden Sie [&#x200B; „Knowledge](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)Base-Artikel“<!-- AC-12755 -->
 
 * **TinyMCE-**: Die TinyMCE-Abhängigkeit wurde von Version 7 auf 6.8.5 heruntergestuft, um Probleme mit der Lizenzkompatibilität zu beheben.
 

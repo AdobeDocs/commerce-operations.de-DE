@@ -22,7 +22,7 @@ Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt`- und
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -107,7 +107,7 @@ Schritte zum Bearbeiten der `robots.txt` und Entfernen aller Einträge im Admini
 
 >[!TIP]
 >
->Wenn Sie Hilfe benötigen, [ Sie ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+>Wenn Sie Hilfe benötigen, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Weitere Informationen
 

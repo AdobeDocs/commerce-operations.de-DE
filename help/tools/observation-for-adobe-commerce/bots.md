@@ -68,7 +68,7 @@ Wenn es während der Instabilität oder des Ausfalls einer Website eine Spitze v
 
 ## [!UICONTROL Table - IPs that do not identify as bots]
 
-![Tabelle - IPs, die sich während des ausgewählten Zeitraums nicht als Bots mit HTTP-Statusfehlern identifizieren Wie blockiere ich Bot-Traffic auf Fastly-Ebene ODER verwalte Bots über die Datei robots.txt Best Practices für Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
+![Tabelle - IPs, die sich während des ausgewählten Zeitraums nicht als Bots mit HTTP-Statusfehlern identifizieren Wie blockiere ich Bot-Traffic auf Fastly-Ebene ODER verwalte Bots über die Datei robots.txt Best Practices für Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
 Die **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** Tabelle zeigt IP-Anfragen mit Nicht-200-HTTP-Status-Codes an, die sich NICHT selbst als im Feld „Benutzeragenten für Anfragen“ [!DNL bots] identifizieren. Bei diesen IP-Adressen kann es sich um bösartige IP-Adressen handeln, insbesondere wenn die Anzahl für den ausgewählten Zeitraum hoch ist.
 
@@ -82,7 +82,7 @@ Wenn IP-Adressen eine hohe Fehlerhäufigkeit erzeugen, fragen Sie, was sie tun? 
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![Zeigen Sie die 5XX-Statusverteilung über IP-Adressen (die 200 wichtigsten Adressen) an. So blockieren Sie Bot-Traffic auf Fastly-Ebene ODER verwalten Sie Bots über Ihre Datei robots.txt Best Practices für Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![Zeigen Sie die 5XX-Statusverteilung über IP-Adressen (die 200 wichtigsten Adressen) an. So blockieren Sie Bot-Traffic auf Fastly-Ebene ODER verwalten Sie Bots über Ihre Datei robots.txt Best Practices für Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
 Der **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** Rahmen ist leistungsstark. Es werden die IP-Adressen angezeigt, die während des ausgewählten Zeitraums 5XX-HTTP-Status-Codes aufweisen. Wenn eine IP-Adresse eine große Anzahl von Anfragen stellt und die Website so stark betroffen ist, dass sie den Traffic nicht mehr verarbeiten kann, weisen die IP-Adressen mit der höchsten Anfragehäufigkeit normalerweise die höchste Fehlerquote auf. 5XX-HTTP-Status-Codes zeigen normalerweise eine Website an, die Schwierigkeiten hat, auf Anfragen zu reagieren.
 

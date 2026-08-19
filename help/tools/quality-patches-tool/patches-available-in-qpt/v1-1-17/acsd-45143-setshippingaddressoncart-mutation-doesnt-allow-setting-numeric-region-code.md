@@ -40,9 +40,9 @@ Die setShippingAddressesOnCart-Mutation lässt das Festlegen des numerischen Reg
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -50,12 +50,12 @@ Die setShippingAddressesOnCart-Mutation lässt das Festlegen des numerischen Reg
 
    <pre>
     <code class="language-graphql">
-    mutation ($cartId: String!) {
+    mutation ($cartId: String!) &lbrace;
       setShippingAddressesOnCart(
-        input: {
+        input: &lbrace;
           cart_id: $cartId
-          shipping_addresses: {
-            address: {
+          shipping_addresses: &lbrace;
+            address: &lbrace;
               firstname: "Tomek"
               lastname: "Nowak"
               company: "Company Name"
@@ -66,31 +66,31 @@ Die setShippingAddressesOnCart-Mutation lässt das Festlegen des numerischen Reg
               country_code: "FR"
               telephone: "123-456-0000"
               save_in_address_book: false
-            }
-          }
-        }
-        ) {
-          cart {
-            shipping_addresses {
+            &rbrace;
+          &rbrace;
+        &rbrace;
+        ) &lbrace;
+          cart &lbrace;
+            shipping_addresses &lbrace;
               firstname
               lastname
               company
               street
               city
-              region {
+              region &lbrace;
                 code
                 label
-              }
+              &rbrace;
               postcode
               telephone
-              country {
+              country &lbrace;
                 code
                 label
-              }
-            }
-          }
-        }
-      }
+              &rbrace;
+            &rbrace;
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -108,35 +108,35 @@ Der Regions-Code wird in 47 geändert.
 
 <pre>
 <code class="language-graphql">
-{
-  "data": {
-    "setShippingAddressesOnCart": {
-      "cart": {
-        "shipping_addresses": [
-        {
+&lbrace;
+  "data": &lbrace;
+    "setShippingAddressesOnCart": &lbrace;
+      "cart": &lbrace;
+        "shipping_addresses": &lbrack;
+        &lbrace;
           "firstname": "Tomek",
           "lastname": "Nowak",
           "company": "Company Name",
-          "street": [
+          "street": &lbrack;
           "234 Rue de Rivoli"
-          ],
+          &rbrack;,
           "city": "Lille",
-          "region": {
+          "region": &lbrace;
             "code": "47",
             "label": "Lot-et-Garonne"
-            },
+            &rbrace;,
             "postcode": "59800",
             "telephone": "123-456-0000",
-            "country": {
+            "country": &lbrace;
               "code": "FR",
               "label": "FR"
-            }
-          }
-        ]
-      }
-    }
-  }
-}
+            &rbrace;
+          &rbrace;
+        &rbrack;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -152,6 +152,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

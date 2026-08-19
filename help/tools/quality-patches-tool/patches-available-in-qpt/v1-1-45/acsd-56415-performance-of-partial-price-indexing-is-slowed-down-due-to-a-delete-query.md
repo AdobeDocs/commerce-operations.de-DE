@@ -41,15 +41,15 @@ Die Leistung von [!UICONTROL Partial Price Indexing] wird aufgrund einer `DELETE
 1. Erstellen Sie *10 Kundengruppen*.
 1. Führen Sie die folgende Abfrage aus, um Produkte zur `_cl`-Tabelle hinzuzufügen:
 
-   ``
+   &grave;&grave;
     insert into catalog_product_price_cl (entity_id) select entity_id from catalog_product_entity
- ``
+ &grave;&grave;
 
 1. Führen Sie den folgenden Befehl aus, um den partiellen Preisindizierungsprozess Trigger:
 
-   ``
+   &grave;&grave;
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
- ``
+ &grave;&grave;
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -63,7 +63,7 @@ Die SQL-Abfrage DELETE `main_table` FROM `catalog_product_index_price` wird sehr
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > ](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > &#x200B;](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
 * Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen

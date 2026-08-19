@@ -12,11 +12,20 @@ badgePaas: label="Commerce in Cloud Manager" type="Informative" url="https://exp
 nudge: true
 autotag-review: '2026-08-18T23:34:12.845Z'
 TQID: 'https://experienceleague.adobe.com/kYuQylZb2r7ElWP1oRJbyIt9jsZMhoO9yFpBMDlf1tw'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: 3304
@@ -264,7 +273,7 @@ Gehen Sie wie folgt vor, um eine dedizierte Instanz für Sitzungen bereitzustell
 
 ## Cache-Komprimierung
 
-Wenn Sie mehr als 6 GB Redis- oder Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung aktivieren, um den von Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass diese Einstellung Client-seitige Leistung gegen Speichereinsparungen eintauscht. Wenn Sie über freie CPU-Kapazität verfügen, sollten Sie diese aktivieren. Siehe [Verwenden von Redis für ](/help/configuration/cache/redis-session.md) oder [Verwenden von Valkey für ](/help/configuration/cache/valkey-session.md) im _Konfigurationshandbuch_.
+Wenn Sie mehr als 6 GB Redis- oder Valkey-`maxmemory` verwenden, können Sie die Cache-Komprimierung aktivieren, um den von Schlüsseln belegten Speicherplatz zu reduzieren. Beachten Sie, dass diese Einstellung Client-seitige Leistung gegen Speichereinsparungen eintauscht. Wenn Sie über freie CPU-Kapazität verfügen, sollten Sie diese aktivieren. Siehe [Verwenden von Redis für &#x200B;](/help/configuration/cache/redis-session.md) oder [Verwenden von Valkey für &#x200B;](/help/configuration/cache/valkey-session.md) im _Konfigurationshandbuch_.
 
 ```yaml
 stage:
@@ -598,7 +607,7 @@ Adobe Commerce 2.4.9 und höher unterstützt das `symfony_l2`-Cache-Backend. Das
 
 Um `symfony_l2` Cache für Adobe Commerce 2.4.9 zu verwenden, führen Sie die folgenden Schritte aus:
 
-- Stellen Sie sicher, dass das Cloud-Projekt [`ece-tools` Paket v2002.2.12 ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) höher verwendet.
+- Stellen Sie sicher, dass das Cloud-Projekt [`ece-tools` Paket v2002.2.12 &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) höher verwendet.
 
 - Legen Sie die Bereitstellungsvariable in der `.magento.env.yaml` fest: `VALKEY_BACKEND`=`symfony_l2`.
 
