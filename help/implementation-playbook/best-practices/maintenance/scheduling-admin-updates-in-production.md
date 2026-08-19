@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Best Practices für die Planung wichtiger U
 role: Admin, User
 feature: Best Practices
 exl-id: 41c0cb87-3371-48a7-9913-264f3eea8d8d
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 1%
@@ -24,14 +24,14 @@ Kritische Aktionen führen zu Vorgängen zur Cache-Invalidierung und -Neuindizie
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
 
 ## Weitere Informationen
 
-- [Best Practices für das Caching](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
-- [Privater Inhalt: Invalidierung privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
+- [Best Practices für das Caching](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Privater Inhalt: Invalidierung privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content#invalidate-private-content)
 - [Hardware-Empfehlungen: Caches](../../../performance/hardware.md#caches)
 - [Erweitertes Setup: Einrichten von Redis](../../../performance/advanced-setup.md#set-up-redis)

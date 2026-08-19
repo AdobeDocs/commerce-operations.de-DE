@@ -4,9 +4,9 @@ description: Beschreibt, wie Leistungseinbußen durch bestimmte Einstellungen de
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 6c0a9268cb3a3b2e76f4a389846e8407f0893b4f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Mindestens **2 GB** Speicher für das [OPcache PHP-Modul](https://www.php.net/ma
 ## Weitere Informationen
 
 * [Best Practices für die Leistung - PHP-Einstellungen](../../../performance/software.md#php-settings)
-* [PHP-Optionen konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/configure-app-yaml)
+* [PHP-Optionen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/configure-app-yaml)
 * [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](database-on-cloud.md)
 * [Häufigste Datenbankprobleme in Adobe Commerce in der Cloud-Infrastruktur](../maintenance/resolve-database-performance-issues.md)
 * [Indexer „Update on Schedule“ optimieren die Leistung von Adobe Commerce](../maintenance/indexer-configuration.md)

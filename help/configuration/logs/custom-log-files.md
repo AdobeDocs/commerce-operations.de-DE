@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie benutzerdefinierte Protokolldateien in Adobe 
 feature: Configuration, Logs
 badge: label="Von Atwix beigetragen" type="Informative" url="https://www.atwix.com/" tooltip="ATWIX"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -32,9 +32,9 @@ Sie können einen der folgenden Ansätze für die Anmeldung bei einer benutzerde
 
 ## Einrichten einer benutzerdefinierten Protokolldatei im `di.xml`
 
-In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) verwendet werden, um `debug` Meldungen in einer benutzerdefinierten Protokolldatei anstelle eines `/var/log/debug.log` zu protokollieren.
+In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) verwendet werden, um `debug` Meldungen in einer benutzerdefinierten Protokolldatei anstelle eines `/var/log/debug.log` zu protokollieren.
 
-1. Definieren Sie in der `di.xml` Ihres Moduls eine benutzerdefinierte Protokolldatei als [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. Definieren Sie in der `di.xml` Ihres Moduls eine benutzerdefinierte Protokolldatei als [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
 
    Der `name` Wert von `Magento\Payment\Model\Method\MyCustomDebug` muss eindeutig sein.
 
-1. Definieren Sie den Handler in einem anderen [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) mit einem eindeutigen `name`:
+1. Definieren Sie den Handler in einem anderen [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) mit einem eindeutigen `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ In diesem Beispiel wird gezeigt, wie [virtuelle Typen](https://developer.adobe.c
    </virtualType>
    ```
 
-1. Fügen Sie den `MyCustomLogger` [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in das `Magento\Payment\Model\Method\Logger` ein:
+1. Fügen Sie den `MyCustomLogger` [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) in das `Magento\Payment\Model\Method\Logger` ein:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ In diesem Beispiel wird gezeigt, wie mit einer benutzerdefinierten Logger-Handle
    }
    ```
 
-1. Definieren Sie den Handler für diese Klasse als [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) in der `di.xml` des Moduls.
+1. Definieren Sie den Handler für diese Klasse als [virtuellen Typ](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) in der `di.xml` des Moduls.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">

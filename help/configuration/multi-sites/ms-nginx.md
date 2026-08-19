@@ -2,9 +2,9 @@
 title: Einrichten mehrerer Websites mit Nginx
 description: In diesem Tutorial können Sie mehrere Websites mit Nginx einrichten.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,16 @@ Wir gehen davon aus, dass
 
   Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie bei Ihrem Hosting-Anbieter.
 
-  Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema besprochenen Aufgaben abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de) im Handbuch zu _Commerce in Cloud-Infrastruktur_.
+  Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Nachdem Sie die in diesem Thema besprochenen Aufgaben abgeschlossen haben, finden Sie weitere Informationen unter [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) im Handbuch zu _Commerce in Cloud-Infrastruktur_.
 
 - Sie akzeptieren mehrere Domains in einer Virtual-Host-Datei oder verwenden einen Virtual-Host pro Website. Die Virtual-Host-Konfigurationsdateien befinden sich in `/etc/nginx/sites-available`.
 - Sie verwenden die von Commerce bereitgestellte `nginx.conf.sample` nur mit den Änderungen, die in diesem Tutorial erläutert werden.
 - Die Commerce-Software ist in `/var/www/html/magento2` installiert.
 - Neben der Standardeinstellung gibt es zwei weitere Websites:
 
-   - `french.mysite.mg` mit Website-Code-`french` und Store-Ansicht-Code-`fr`
-   - `german.mysite.mg` mit Website-Code-`german` und Store-Ansicht-Code-`de`
-   - `mysite.mg` ist die standardmäßige Website- und Store-Ansicht
+  - `french.mysite.mg` mit Website-Code-`french` und Store-Ansicht-Code-`fr`
+  - `german.mysite.mg` mit Website-Code-`german` und Store-Ansicht-Code-`de`
+  - `mysite.mg` ist die standardmäßige Website- und Store-Ansicht
 
 >[!TIP]
 >
@@ -40,8 +40,8 @@ Im Folgenden finden Sie eine Roadmap für die Einrichtung mehrerer Websites mit 
 
    - `$MAGE_RUN_TYPE` kann entweder `store` oder `website` sein:
 
-      - Verwenden Sie `website` , um Ihre Website in Ihre Storefront zu laden.
-      - Verwenden Sie `store`, um eine beliebige Store-Ansicht in Ihre Storefront zu laden.
+     - Verwenden Sie `website` , um Ihre Website in Ihre Storefront zu laden.
+     - Verwenden Sie `store`, um eine beliebige Store-Ansicht in Ihre Storefront zu laden.
 
    - `$MAGE_RUN_CODE` ist der eindeutige Website- oder Store-Ansichts-Code, der `$MAGE_RUN_TYPE` entspricht.
 
@@ -280,10 +280,10 @@ Sofern Sie kein DNS für die URLs Ihrer Stores eingerichtet haben, müssen Sie e
 >[!INFO]
 >
 >- Möglicherweise sind zusätzliche Aufgaben erforderlich, um mehrere Websites in einer gehosteten Umgebung bereitzustellen. Weitere Informationen erhalten Sie bei Ihrem Hosting-Anbieter.
->- Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
+>- Zum Einrichten von Adobe Commerce in der Cloud-Infrastruktur sind zusätzliche Aufgaben erforderlich. Siehe [Einrichten mehrerer Cloud-Websites oder -Stores](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) im Handbuch zu _Commerce in der Cloud-Infrastruktur_.
 
 ### Fehlerbehebung
 
-- Wenn Ihre französischen und deutschen Websites 404 s zurückgeben, aber Ihr Administrator geladen wird, stellen Sie sicher, dass Sie [&#x200B; abgeschlossen haben (Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Wenn Ihre französischen und deutschen Websites 404 s zurückgeben, aber Ihr Administrator geladen wird, stellen Sie sicher, dass Sie [ abgeschlossen haben (Schritt 6: Hinzufügen des Store-Codes zur Basis-URL](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Wenn alle URLs den Wert 404 zurückgeben, stellen Sie sicher, dass Sie Ihren Webserver neu gestartet haben.
 - Wenn der Administrator nicht ordnungsgemäß funktioniert, stellen Sie sicher, dass Sie die virtuellen Hosts ordnungsgemäß einrichten.

@@ -2,7 +2,7 @@
 title: Sichern und Rollback von Dateisystem, Medien und Datenbank
 description: Führen Sie diese Schritte aus, um Ihre Adobe Commerce-Anwendung zu sichern und wiederherzustellen.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Nach dem Sichern können Sie später [Rollback](#rollback).
 
 >[!TIP]
 >
->Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
+>Informationen zu Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Snapshots und Backup](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) im _Cloud-Handbuch_.
 
 ## Aktivieren von Backups
 

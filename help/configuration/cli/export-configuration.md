@@ -2,7 +2,7 @@
 title: Konfigurationseinstellungen exportieren
 description: Erfahren Sie, wie Sie Adobe Commerce-Konfigurationseinstellungen mithilfe des Konfigurations-Dump in Dateien exportieren. Entdecken Sie Pipeline-Bereitstellung und Konfigurationsverwaltung.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
@@ -30,14 +30,14 @@ Infolge der Ausführung des Befehls werden die folgenden Konfigurationsdateien a
 - `app/etc/config.php`
 
   Dies ist die freigegebene Konfigurationsdatei für alle Commerce-Instanzen.
-Fügen Sie dies in Ihre Quellcodeverwaltung ein, damit es von den Entwicklungs-, Build- und Produktionssystemen gemeinsam verwendet werden kann.
+  Fügen Sie dies in Ihre Quellcodeverwaltung ein, damit es von den Entwicklungs-, Build- und Produktionssystemen gemeinsam verwendet werden kann.
 
   Siehe [config.php-Referenz](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
   Dies ist die umgebungsspezifische Konfigurationsdatei.
-Es enthält sensible und systemspezifische Einstellungen für einzelne Umgebungen.
+  Es enthält sensible und systemspezifische Einstellungen für einzelne Umgebungen.
 
   Fügen _diese_ nicht in die Quell-Code-Verwaltung ein
 
@@ -47,6 +47,6 @@ Es enthält sensible und systemspezifische Einstellungen für einzelne Umgebunge
 
 Verwenden Sie den Befehl [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values), um die sensiblen Einstellungen festzulegen, die in `env.php` geschrieben werden.
 
-Konfigurationswerte werden entweder als sensibel oder systemspezifisch angegeben, indem in der [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) des Moduls auf [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) verwiesen wird.
+Konfigurationswerte werden entweder als sensibel oder systemspezifisch angegeben, indem in der [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings#how-to-specify-values-as-sensitive-or-system-specific) des Moduls auf [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) verwiesen wird.
 
 Wenn Sie bei Verwendung von `config_types` zusätzliche Systemeinstellungen exportieren möchten, sollten Sie den Befehl [`bin/magento config:set`](set-configuration-values.md#set-values) verwenden.

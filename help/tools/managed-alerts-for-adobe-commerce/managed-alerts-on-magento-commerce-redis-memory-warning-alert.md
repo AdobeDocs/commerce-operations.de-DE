@@ -4,16 +4,16 @@ description: Dieser Artikel enthält Schritte zur Fehlerbehebung für den Fall, 
 feature: Categories, Marketing Tools, Observability, Services, Support, Tools and External Services, Variables
 role: Admin
 exl-id: f71b5e83-fb6c-4183-87c7-f41cbdf4c684
-source-git-commit: 882bc7a8747f38a7721d2e61befc4e2acef2d998
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
 
 # Verwaltete Warnhinweise auf Adobe Commerce: Warnhinweis bezüglich [!DNL Redis] Arbeitsspeichers
 
-Dieser Artikel enthält Schritte zur Fehlerbehebung für den Fall, dass Sie in [!DNL Redis] einen [!DNL New Relic] Warnhinweis für Adobe Commerce erhalten. Sofortiges Handeln ist erforderlich, um das Problem zu lösen. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal wie folgt aus:
+Dieser Artikel enthält Schritte zur Fehlerbehebung für den Fall, dass Sie in [!DNL New Relic] einen [!DNL Redis] Warnhinweis für Adobe Commerce erhalten. Sofortiges Handeln ist erforderlich, um das Problem zu lösen. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal wie folgt aus:
 
 ![new_relic_redis_memory_warning.png](../../assets/managed-alerts/new_relic_redis_memory_warning.png)
 
@@ -28,8 +28,8 @@ Sie erhalten einen Warnhinweis in [!DNL New Relic], wenn Sie sich für [Verwalte
 **<u>Do!</u>**
 
 * Es wird empfohlen, alle geplanten Bereitstellungen abzubrechen, bis dieser Warnhinweis gelöscht wird.
-* Wenn Ihre Site nicht mehr reagiert oder nicht mehr reagiert, setzen Sie Ihre Site sofort in den Wartungsmodus. Anweisungen hierzu finden Sie [Aktivieren oder Deaktivieren des &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode)) im Commerce-Installationshandbuch.
-* Fügen Sie Ihre IP-Adresse der Liste der von der Steuer befreiten IP-Adressen hinzu, um sicherzustellen, dass Sie weiterhin zur Fehlerbehebung auf Ihre Website zugreifen können. Anweisungen hierzu finden Sie unter [Verwalten der Liste von ausgenommenen IP](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses)Adressen) im Commerce-Installationshandbuch.
+* Wenn Ihre Site nicht mehr reagiert oder nicht mehr reagiert, setzen Sie Ihre Site sofort in den Wartungsmodus. Anweisungen hierzu finden Sie [Aktivieren oder Deaktivieren des ](/help/installation/tutorials/maintenance-mode.md)) im Commerce-Installationshandbuch.
+* Fügen Sie Ihre IP-Adresse der Liste der von der Steuer befreiten IP-Adressen hinzu, um sicherzustellen, dass Sie weiterhin zur Fehlerbehebung auf Ihre Website zugreifen können. Anweisungen hierzu finden Sie unter [Verwalten der Liste von ausgenommenen IP](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses)Adressen) im Commerce-Installationshandbuch.
 
 **<u>Tu&#39;s nicht!</u>**
 
@@ -42,14 +42,14 @@ Sie erhalten einen Warnhinweis in [!DNL New Relic], wenn Sie sich für [Verwalte
 
 Führen Sie diese Schritte aus, um die Ursache zu identifizieren und zu beheben.
 
-1. Überprüfen Sie, ob [!DNL Redis] verwendete Speicher zunimmt oder abnimmt, indem Sie zur Seite [one.newrelic.com](https://login.newrelic.com/login) > **Infrastruktur** > **Services von Drittanbietern** wechseln und das [!DNL Redis]-Dashboard auswählen. Wenn er stabil ist oder zunimmt, [&#x200B; Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case), um den Cluster vergrößern zu lassen, oder erhöhen Sie das `maxmemory` auf die nächste Ebene.
+1. Überprüfen Sie, ob [!DNL Redis] verwendete Speicher zunimmt oder abnimmt, indem Sie zur Seite [one.newrelic.com](https://login.newrelic.com/login) > **Infrastruktur** > **Services von Drittanbietern** wechseln und das [!DNL Redis]-Dashboard auswählen. Wenn er stabil ist oder zunimmt, [ Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case), um den Cluster vergrößern zu lassen, oder erhöhen Sie das `maxmemory` auf die nächste Ebene.
 1. Wenn Sie die Ursache für den erhöhten [!DNL Redis]-Speicherverbrauch nicht identifizieren können, überprüfen Sie die neuesten Trends, um Probleme mit aktuellen Code-Bereitstellungen oder Konfigurationsänderungen (z. B. neue Kundengruppen und große Änderungen am Katalog) zu identifizieren. Es wird empfohlen, die letzten sieben Tage der Aktivität auf Korrelationen in Code-Bereitstellungen oder -Änderungen zu überprüfen.
 1. Überprüfen Sie, ob sich Drittanbietererweiterungen falsch verhalten:
    * Versuchen Sie, eine Korrelation mit den kürzlich installierten Erweiterungen von Drittanbietern und dem Zeitpunkt, zu dem das Problem begann, zu finden.
    * Überprüfen Sie Erweiterungen, die sich möglicherweise auf den Adobe Commerce-Cache auswirken und dazu führen können, dass der Cache schnell wächst. Dies betrifft beispielsweise benutzerdefinierte Layout-Blöcke, das Überschreiben der Cache-Funktionalität und das Speichern großer Datenmengen im Cache.
-1. Wenn Ihnen die obigen Schritte nicht dabei helfen, die Ursache des Problems zu identifizieren oder zu beheben, sollten Sie den L2-Cache aktivieren, um den Netzwerk-Traffic zwischen der App und [!DNL Redis] zu reduzieren. Allgemeine Informationen zum L2-Cache finden Sie unter [L2-Caching in der Adobe Commerce-Anwendung](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache) im Commerce-Konfigurationshandbuch. Um den L2-Cache für die Cloud-Infrastruktur zu aktivieren, versuchen Sie Folgendes:
+1. Wenn Ihnen die obigen Schritte nicht dabei helfen, die Ursache des Problems zu identifizieren oder zu beheben, sollten Sie den L2-Cache aktivieren, um den Netzwerk-Traffic zwischen der App und [!DNL Redis] zu reduzieren. Allgemeine Informationen zum L2-Cache finden Sie unter [L2-Caching in der Adobe Commerce-Anwendung](/help/configuration/cache/level-two-cache.md) im Commerce-Konfigurationshandbuch. Um den L2-Cache für die Cloud-Infrastruktur zu aktivieren, versuchen Sie Folgendes:
    * Aktualisieren Sie die ECE-Tools, wenn diese unter Version 2002.1.2 liegen.
-   * Konfigurieren Sie den L2-Cache mithilfe [Variable REDIS\_BACKEND verwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) und aktualisieren Sie `.magento.env.yaml` Datei:
+   * Konfigurieren Sie den L2-Cache mithilfe [Variable REDIS\_BACKEND verwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) und aktualisieren Sie `.magento.env.yaml` Datei:
 
    ```yaml
    stage:

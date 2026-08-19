@@ -2,9 +2,9 @@
 title: env.php-Referenz
 description: Erfahren Sie mehr über die Konfigurationswerte und -abschnitte der Datei env.php in Adobe Commerce. Erkunden Sie Umgebungseinstellungen und Konfigurationsoptionen.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Die `env.php`-Datei enthält die folgenden Abschnitte:
 
-| -Name | Beschreibung |
+| Name | Beschreibung |
 |-------------------------------|-----------------------------------------------------------------|
 | `backend` | Einstellungen für den Admin-Bereich |
 | `cache` | Konfigurieren der Redix-Seite und des Standard-Caches |
@@ -112,11 +112,11 @@ Geben Sie an, ob Verbraucher weiterhin Nachrichten abfragen sollen, wenn die Anz
 
 Die folgenden Optionen sind verfügbar:
 
-- `1` - Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis der in der `max_messages` angegebene `env.php` erreicht ist, bevor sie die TCP-Verbindung schließen und den Verbraucherprozess beenden. Wenn die Warteschlange geleert wird, bevor der `max_messages` erreicht wird, wartet der Verbraucher, bis weitere Nachrichten eingehen.
+- `1` - Verbraucher verarbeiten weiterhin Nachrichten aus der Nachrichtenwarteschlange, bis der in der `env.php` angegebene `max_messages` erreicht ist, bevor sie die TCP-Verbindung schließen und den Verbraucherprozess beenden. Wenn die Warteschlange geleert wird, bevor der `max_messages` erreicht wird, wartet der Verbraucher, bis weitere Nachrichten eingehen.
 
   Wir empfehlen diese Einstellung für große Händler, da ein konstanter Nachrichtenfluss erwartet wird und Verzögerungen bei der Verarbeitung unerwünscht sind.
 
-- `0` - Verbraucher verarbeiten verfügbare Nachrichten in der Warteschlange, schließen die TCP-Verbindung und beenden sie. Verbraucher warten nicht auf den Eintritt zusätzlicher Nachrichten in die Warteschlange, selbst wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als der in der `max_messages` angegebene `env.php`. Dadurch können Probleme mit Cron-Aufträgen vermieden werden, die durch lange Verzögerungen bei der Verarbeitung der Nachrichtenwarteschlange verursacht werden.
+- `0` - Verbraucher verarbeiten verfügbare Nachrichten in der Warteschlange, schließen die TCP-Verbindung und beenden sie. Verbraucher warten nicht auf den Eintritt zusätzlicher Nachrichten in die Warteschlange, selbst wenn die Anzahl der verarbeiteten Nachrichten kleiner ist als der in der `env.php` angegebene `max_messages`. Dadurch können Probleme mit Cron-Aufträgen vermieden werden, die durch lange Verzögerungen bei der Verarbeitung der Nachrichtenwarteschlange verursacht werden.
 
   Wir empfehlen diese Einstellung kleineren Händlern, die keinen konstanten Nachrichtenfluss erwarten und lieber Computing-Ressourcen sparen möchten, im Gegenzug für kleinere Verarbeitungsverzögerungen, wenn tagelang keine Nachrichten verfügbar sein könnten.
 
@@ -146,7 +146,7 @@ Commerce verwendet einen Verschlüsselungsschlüssel zum Schutz von Kennwörtern
 ]
 ```
 
-Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
+Weitere Informationen zu [Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) finden Sie im _Commerce-Benutzerhandbuch_.
 
 ## dB
 
@@ -189,11 +189,11 @@ Für STOMP (ActiveMQ Artemis):
 ```
 
 Wenn `queue/default_connection` in der `env.php` angegeben ist, wird diese Verbindung für alle Meldungswarteschlangen im System verwendet, es sei denn, eine bestimmte Verbindung ist in einer `queue_topology.xml`-, `queue_publisher.xml`- oder `queue_consumer.xml` definiert.
-Wenn `queue/default_connection` beispielsweise in `amqp` `env.php` ist, aber in den XML-Dateien der Warteschlangenkonfiguration eines Moduls eine `db` angegeben ist, verwendet das Modul MySQL als Nachrichtenbroker.
+Wenn `queue/default_connection` beispielsweise in `env.php` `amqp` ist, aber in den XML-Dateien der Warteschlangenkonfiguration eines Moduls eine `db` angegeben ist, verwendet das Modul MySQL als Nachrichtenbroker.
 
 ## Verzeichnisse
 
-Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([&#x200B; Sicherheit](../../installation/tutorials/docroot.md).
+Optionale Verzeichniszuordnungsoptionen, die festgelegt werden müssen, wenn der Webserver so konfiguriert ist, dass er die Commerce-App aus dem `/pub` bereitstellt ([ Sicherheit](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -211,7 +211,7 @@ Eine Liste der in diesem Knoten verfügbaren herunterladbaren Domains. Zusätzli
 ]
 ```
 
-Weitere Informationen zu &quot;[&#x200B; Domains](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Weitere Informationen zu &quot;[ Domains](/help/tools/reference/commerce-on-premises.md#downloadabledomainsadd).
 
 ## installieren
 

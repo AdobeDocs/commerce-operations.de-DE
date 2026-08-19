@@ -3,9 +3,9 @@ title: Implementierungs-Wartungsphase
 description: Erfahren Sie mehr über Best Practices für die Implementierung in der Wartungsphase von Adobe Commerce-Projekten.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ Die folgenden Abschnitte enthalten Best Practice-Informationen für die Wartungs
 | [Audit der Frontend-Leistung](frontend-performance.md) | Identifizieren und beheben Sie Probleme, die sich negativ auf die Site-Leistung auswirken, indem Sie Web-Leistungs-Tools verwenden. |
 | [bereit, eingestellt, gewartet](https://business.adobe.com/blog/basics/ready-set-maintain) | Tipps für die Pflege Ihrer Adobe Commerce-Sites zur Maximierung des Geschäftswerts und der Betriebszeit. |
 | [Verwenden Sie die [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Hier erhalten Sie wichtige Einblicke in Ihre Adobe Commerce-Site. |
-| [Überwachen der Leistung, des Festplattenspeichers und der Protokolle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=de) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
+| [Überwachen der Leistung, des Festplattenspeichers und der Protokolle](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
 | [Reaktion auf Sicherheitsvorfälle](respond-to-security-incident.md) | Verwenden Sie New Relic, um wichtige Leistungseinblicke zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site zu überwachen. |
 
 ### Aktualisierungen
