@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
 workflow-type: tm+mt
-source-wordcount: '10658'
+source-wordcount: '10661'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ ht-degree: 0%
 - KAPPEN {#caps-tool}
   - {hide-from-toc}[Einführung](caps-tool/intro.md)
   - {hide-from-toc}[Zugriff](caps-tool/access.md)
-  - {hide-from-toc}[Workflow](caps-tool/workflow.md)
+  - {hide-from-toc}[Workflow-Übersicht](caps-tool/workflow.md)
+  - {hide-from-toc}[GitHub-Integration](caps-tool/github-integration.md)
   - {hide-from-toc}[Best Practices](caps-tool/best-practices.md)
   - {hide-from-toc}[Fehlerbehebung](caps-tool/troubleshooting.md)
 - Verwaltete Warnhinweise in Adobe Commerce {#managed-alerts-for-adobe-commerce}
