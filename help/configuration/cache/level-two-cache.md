@@ -5,11 +5,21 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7ebadd26eee51aa2c2f3dfe8a8a2ed3dc20657b9
 workflow-type: tm+mt
 source-wordcount: 1725
@@ -211,13 +221,13 @@ Wenn Sie ein Upgrade einer lokalen Installation vom alten `RemoteSynchronizedCac
 
 - **Komprimierung erfordert ein explizites Flag.** Wenn Sie `compression_lib` allein festlegen, wird die Komprimierung unter `symfony_l2` nicht aktiviert. Siehe [Backend-Optionen für Symfony L2-Cache](#backend-options-for-symfony-l2-cache) für die erforderliche `compress_data`.
 
-- **Veralteter Cache ist bei manuell konfigurierten On-Premise-Bereitstellungen nicht standardmäßig aktiviert.** `use_stale_cache` ist standardmäßig unter `symfony_l2` auf `false` gesetzt (siehe Tabelle [Backend-Optionen](#backend-options-for-symfony-l2-cache)). Wenn Ihre alte Konfiguration das `stale_cache_enabled`-Frontend verwendet, müssen Sie es explizit mit dem Muster im [Symfony L2-Cache mit veraltetem Cache) ](#symfony-l2-cache-with-stale-cache).
+- **Veralteter Cache ist bei manuell konfigurierten On-Premise-Bereitstellungen nicht standardmäßig aktiviert.** `use_stale_cache` ist standardmäßig unter `symfony_l2` auf `false` gesetzt (siehe Tabelle [Backend-Optionen](#backend-options-for-symfony-l2-cache)). Wenn Ihre alte Konfiguration das `stale_cache_enabled`-Frontend verwendet, müssen Sie es explizit mit dem Muster im [Symfony L2-Cache mit veraltetem Cache) &#x200B;](#symfony-l2-cache-with-stale-cache).
 
 >[!NOTE]
 >
 >In Adobe Commerce in Cloud-Umgebungen, in denen die Variable &quot;`VALKEY_BACKEND: symfony_l2`-Bereitstellung“ festgelegt ist, wird die vollständige L2-Konfiguration, einschließlich des `stale_cache_enabled` Frontend, automatisch von `ece-tools` generiert. Siehe [Konfigurieren des Symfony L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)Cache für Cloud-spezifisches Verhalten.
 
-- **Redis ist kein unterstütztes Remote-Backend für `symfony_l2`.** Migrieren Sie im Rahmen dieser Änderung nach Valley. Siehe [Einrichten von ](config-valkey.md).
+- **Redis ist kein unterstütztes Remote-Backend für `symfony_l2`.** Migrieren Sie im Rahmen dieser Änderung nach Valley. Siehe [Einrichten von &#x200B;](config-valkey.md).
 
 ### Konfigurationsbeispiel mit Symfony L2-Cache
 
@@ -343,7 +353,7 @@ Verwenden Sie das folgende Beispiel, um separate Frontends für `symfony_l2` Unt
 
 >[!NOTE]
 >
->- Die `remote_backend`-Option akzeptiert ebenfalls den Wert `redis`, Redis wird jedoch nicht offiziell unterstützt (siehe den obigen Hinweis unter &quot;[ Symfony L2-Cache-Implementierung](#modern-symfony-l2-cache-implementation)).
+>- Die `remote_backend`-Option akzeptiert ebenfalls den Wert `redis`, Redis wird jedoch nicht offiziell unterstützt (siehe den obigen Hinweis unter &quot;[&#x200B; Symfony L2-Cache-Implementierung](#modern-symfony-l2-cache-implementation)).
 >
 >- `frontend_options.write_control`, das in der Legacy-`RemoteSynchronizedCache` verwendet wird, gilt nicht für `symfony_l2`.
 
