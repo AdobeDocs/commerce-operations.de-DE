@@ -38,16 +38,16 @@ Die Schaltfläche **[!UICONTROL Continue to Checkout]** ist auch dann ausgegraut
 
 1. Gehen Sie zu Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** und stellen Sie Folgendes ein:
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
-   * 
-     [!UICONTROL Minimum Amount]: *2*
+   * &#x200B;
+     [!UICONTROL Minimum Amount]&#x200B;: *2*
 
 1. Erstellen Sie eine [!UICONTROL Cart Price Rule].
    * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
      * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-     * 
-       [!UICONTROL Discount Amount]: *92*
+     * &#x200B;
+       [!UICONTROL Discount Amount]&#x200B;: *92*
      * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Erstellen Sie ein Produkt zum Preis von 25 $.
 1. Fügen Sie das Produkt zum Warenkorb hinzu.
@@ -75,7 +75,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

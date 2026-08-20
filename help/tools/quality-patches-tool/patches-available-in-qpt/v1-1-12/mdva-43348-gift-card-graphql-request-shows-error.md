@@ -42,12 +42,12 @@ Die GraphQL-Anfrage für Geschenkkarten zeigt einen Fehler an, wenn die Option f
 
 <pre>
 <code class="language-graphql">
-query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
-  products(filter: { url_key: { eq: $urlKey } }) {
-    items {
+query getProductOptionsForProductPage_bypassFastly($urlKey: String!) &lbrace;
+  products(filter: { url_key: { eq: $urlKey } }) &lbrace;
+    items &lbrace;
       id
       url_key
-      ... on GiftCardProduct {
+      ... on GiftCardProduct &lbrace;
         allow_open_amount
         open_amount_min
         open_amount_max
@@ -56,15 +56,15 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
         lifetime
         allow_message
         message_max_length
-        gift_card_options {
+        gift_card_options &lbrace;
           uid
           title
           required
-        }
-      }
-    }
-  }
-}
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -78,118 +78,118 @@ Der folgende Fehler tritt bei der Anfrage für Geschenkkartendaten auf:
 
 <pre>
 <code class="language-graphql">
-{
-  "errors": [
-    {
+&lbrace;
+  "errors": &lbrack;
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         0,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         1,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         2,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         3,
         "uid"
-      ]
-    },
-    {
+      &rbrack;
+    &rbrace;,
+    &lbrace;
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": {
+      "extensions": &lbrace;
         "category": "internal"
-      },
-      "locations": [
-        {
+      &rbrace;,
+      "locations": &lbrack;
+        &lbrace;
           "line": 16,
           "column": 1
-        }
-      ],
-      "path": [
+        &rbrace;
+      &rbrack;,
+      "path": &lbrack;
         "products",
         "items",
         0,
         "gift_card_options",
         4,
         "uid"
-      ]
-    }
-  ],
-  "data": {
-    "products": {
-      "items": [
-        {
+      &rbrack;
+    &rbrace;
+  &rbrack;,
+  "data": &lbrace;
+    "products": &lbrace;
+      "items": &lbrack;
+        &lbrace;
           "id": 2,
           "url_key": "gitf-card",
           "allow_open_amount": false,
@@ -200,18 +200,18 @@ Der folgende Fehler tritt bei der Anfrage für Geschenkkartendaten auf:
           "lifetime": 0,
           "allow_message": true,
           "message_max_length": 255,
-          "gift_card_options": [
+          "gift_card_options": &lbrack;
             null,
             null,
             null,
             null,
             null
-          ]
-        }
-      ]
-    }
-  }
-}
+          &rbrack;
+        &rbrace;
+      &rbrack;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -227,6 +227,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

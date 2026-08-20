@@ -89,7 +89,7 @@ Verwenden Sie diesen Befehl, um alle oder ausgewählte Indexer nur einmal neu zu
 
 >[!INFO]
 >
->Dieser Befehl indiziert nur einmal neu. Um Indexer auf dem neuesten Stand zu halten, müssen Sie einen [Cron-Auftrag“ ](../cli/configure-cron-jobs.md).
+>Dieser Befehl indiziert nur einmal neu. Um Indexer auf dem neuesten Stand zu halten, müssen Sie einen [Cron-Auftrag“ &#x200B;](../cli/configure-cron-jobs.md).
 
 Befehlsoptionen:
 

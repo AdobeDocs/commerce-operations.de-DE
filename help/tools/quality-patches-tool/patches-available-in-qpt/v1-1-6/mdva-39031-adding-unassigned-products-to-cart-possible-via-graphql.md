@@ -42,9 +42,9 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -52,9 +52,9 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -62,27 +62,27 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       addProductsToCart(
           cartId: "XHrUN2nJ37OqDByhtL0VC8OxYsEZs41c"
-          cartItems: [
-            {
+          cartItems: &lbrack;
+            &lbrace;
               quantity: 1
               sku: "p1"
-            }
-          ]
-        ) {
-          cart {
-           items {
-            product {
+            &rbrace;
+          &rbrack;
+        ) &lbrace;
+          cart &lbrace;
+           items &lbrace;
+            product &lbrace;
               name
               sku
-            }
+            &rbrace;
             quantity
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -90,9 +90,9 @@ Das Hinzufügen eines Produkts zum Warenkorb über GraphQL ist auch dann möglic
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -116,6 +116,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

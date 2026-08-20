@@ -47,16 +47,16 @@ Die Instanz darf nur mit den Beispieldaten sauber sein.
 1. Fügen **unter „Verwandte Produkte** die beiden Reisetaschen (ID 7 und 13) hinzu.
 1. Senden einer **POST**-Anfrage:
 
-<pre>{
-  products(filter: {sku: {eq: „24-MB01“}}, sort: {name: ASC}) {
-    items {
-      related_products {
+<pre>&lbrace;
+  products(filter: {sku: {eq: „24-MB01“}&#x200B;}, sort: {name: ASC}) &lbrace;
+    items &lbrace;
+      related_products &lbrace;
         UID
         name
-      }
-    }
-  }
-}</pre>
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -66,7 +66,7 @@ In der GraphQL-Antwort werden verwandte Produkte angezeigt.
 
 Benutzende erhalten die folgende Fehlermeldung:
 
-<pre>Der Rückgabewert von Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben {„Exception“:“[Objekt] (GraphQL\\Error\\Error(Code: 0): Der Rückgabewert von Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben </pre>
+<pre>Der Rückgabewert von Magento\CatalogPermissionsGraphQl\Model\Store\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben &lbrace;„Exception“:“[Objekt] (GraphQL\\Error\\Error(Code: 0): Der Rückgabewert von Magento\\CatalogPermissionsGraphQl\\Model\\Store\\StoreProcessor::getStoreId() muss vom Typ int sein, null zurückgegeben </pre>
 
 ## Patch anwenden
 
@@ -80,6 +80,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].
