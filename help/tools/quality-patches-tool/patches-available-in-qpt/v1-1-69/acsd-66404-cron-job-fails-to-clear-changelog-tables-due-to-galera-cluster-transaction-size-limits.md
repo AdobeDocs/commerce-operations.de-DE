@@ -4,13 +4,13 @@ description: Wenden Sie den Patch ACSD-66404 an, um das Adobe Commerce-Problem z
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 42bd5934782ca65b891a36f61102083356c92e59
+exl-id: d7ad3b11-aee6-4a26-8892-369fbfe6932e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66404: Cron-Auftrag kann Änderungsprotokolltabellen aufgrund [!DNL Galera Cluster] Transaktionsgrößenbeschränkungen nicht löschen
 
@@ -53,7 +53,7 @@ Der `indexer_clean_all_changelogs` Cron-Auftrag führt eine Changelog-Bereinigun
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > &#x200B;](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen
 

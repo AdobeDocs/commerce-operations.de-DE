@@ -1,7 +1,7 @@
 ---
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ ht-degree: 0%
 >
 >Siehe auch:
 >
->- [Software-Lebenszyklusrichtlinie](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
->- [Richtlinie zur Durchsetzung des Cloud-](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy)-Upgrades - Erzwingungstermine und erforderliche Aktionen
+>- [Software-Lebenszyklusrichtlinie](/help/release/lifecycle-policy.md) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
+>- [Richtlinie zur Durchsetzung des Cloud-](/help/release/version-upgrade-enforcement-policy.md)-Upgrades - Erzwingungstermine und erforderliche Aktionen

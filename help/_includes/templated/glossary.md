@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3948c3c59a53a023edc16698fcb9ec6150cbca21
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '6818'
+source-wordcount: '6806'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ _Substantiv_
 
 ADMIN-Variablen sind Projektumgebungsvariablen, mit denen die Konfigurationseinstellungen für das Admin-Benutzerkonto für den Zugriff auf die Admin-Benutzeroberfläche außer Kraft gesetzt werden können.
 
-Weitere Informationen: &quot;[-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=de)
+Weitere Informationen: &quot;[-Variablen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-admin)
 
 _Attribute :_
 
@@ -136,7 +136,7 @@ Benutzerdefinierte Attribute sind ein Typ des Attributs „Entity-Attribute-Valu
 
 Bei Integrationen wie Google Shopping Ads Channel und Amazon Sales Channel ordnen Sie Commerce-Attribute den Attributen im Drittanbieter zu, um Produkte richtig anzuzeigen und zu verkaufen, Anzeigen anzuzeigen.
 
-Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Attribute :_
 
@@ -261,7 +261,7 @@ _Substantiv_
 Massenvorgänge sind Aktionen, die in großem Umfang durchgeführt werden.
 Beispiele für Massenvorgänge sind der Import oder Export von Artikeln, Preisänderungen in großem Maßstab und die Zuweisung von Produkten zu einem Lager.
 
-Weitere Informationen: [DevDocs-Massenvorgänge](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+Weitere Informationen: [DevDocs-Massenvorgänge](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations)
 
 _Attribute :_
 
@@ -448,7 +448,7 @@ _Substantiv_
 
 Cloud-Variablen sind Umgebungsvariablen, die für Adobe Commerce in der Cloud-Infrastruktur spezifisch sind und das **`MAGENTO_CLOUD`** Präfix verwenden.
 
-Weitere Informationen: [Cloud-Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=de)
+Weitere Informationen: [Cloud-Variablen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud)
 
 _Attribute :_
 
@@ -619,7 +619,7 @@ _Substantiv_
 
 Ein Bereitstellungsschlüssel ist Ihr öffentlicher SSH-Schlüssel für das Projekt und ermöglicht schreibgeschützten oder (falls aktiviert) Lese-/Schreibzugriff auf ein Git-Repository.
 
-Weitere Informationen: [Sichere Verbindungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de)
+Weitere Informationen: [Sichere Verbindungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections)
 
 _Attribute :_
 
@@ -688,7 +688,7 @@ _Substantiv_
 
 Eine Reihe von Skripten und Tools, die zur Verwaltung und Bereitstellung des Commerce-Programms entwickelt wurden. Dieses Paket vereinfacht viele Adobe Commerce-Prozesse in der Cloud-Infrastruktur, einschließlich der Bereitstellung in einer Docker-Umgebung, der Verwaltung von Zuordnungen, der Überprüfung der Projektkonfiguration und der Anwendung von Adobe-Patches.
 
-Weitere Informationen: [ece-tools-Paket](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=de)
+Weitere Informationen: [ece-tools-Paket](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/package-overview)
 
 _Attribute :_
 
@@ -716,7 +716,7 @@ Speichert die Entitäts-ID, den Attributnamen und den Wert als Triple, sodass je
 Bei der Kodierung kann die Anzahl der Attribute, die zur Beschreibung von Entitäten verwendet werden können, umfassend skaliert werden. Die Anzahl, die für eine bestimmte Entität gilt, wird jedoch minimiert.
 Dieses Datenmodell ist flexibel, kann aber langsam sein.
 
-Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Weitere Informationen: [EAV und extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes)
 
 _Attribute :_
 
@@ -752,7 +752,7 @@ _Substantiv_
 
 Erweitern Sie die Funktionalität und verwenden Sie häufig komplexere Datentypen als benutzerdefinierte Attribute. Diese Attribute werden nicht auf der Benutzeroberfläche angezeigt.
 
-Weitere Informationen: [Hinzufügen von Erweiterungsattributen zur Entität](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+Weitere Informationen: [Hinzufügen von Erweiterungsattributen zur Entität](https://developer.adobe.com/commerce/php/development/components/add-attributes)
 
 _Attribute :_
 
@@ -1087,7 +1087,7 @@ _Substantiv_
 
 Origin Cloaking ist eine Sicherheitsfunktion, mit der Adobe Commerce in der Cloud-Infrastruktur jeden Nicht-Fastly-Traffic blockieren kann, um DDoS-Angriffe zu verhindern, die an die Cloud-Infrastruktur (Herkunft) gesendet werden.
 
-Weitere Informationen: [Fastly Origin Cloaking](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=de)
+Weitere Informationen: [Fastly Origin Cloaking](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly)
 
 _Attribute :_
 
@@ -1391,7 +1391,7 @@ _Attribute :_
 
 _Substantiv_
 
-Eine Adobe Commerce-Mandanten-ID ist eine eindeutige Kennung für Ihre spezifische Adobe Commerce-Instanz in der Adobe Experience Cloud.
+Eine Adobe Commerce-Mandanten-ID ist eine eindeutige Kennung für Ihre spezifische Adobe Commerce-Instanz in Adobe Experience Cloud,
 wird verwendet, um Daten zu routen und sicherzustellen, dass die Ressourcen korrekt mit dem Namespace versehen sind, insbesondere für Integrationen und APIs. Sie finden die Mandanten-ID
 in den Zugriffs-URLs für Ihre Commerce-Instanz oder über die Commerce Cloud Manager-Instanzdetails.
 

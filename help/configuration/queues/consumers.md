@@ -2,7 +2,7 @@
 title: Nachrichtenwarteschlangen-Verbraucher
 description: Erfahren Sie mehr über die Verbraucher von Adobe Commerce-Nachrichtenwarteschlangen, einschließlich der damit verbundenen Funktionen und Systemkonfigurationseinstellungen.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Die folgende Tabelle identifiziert alle Nachrichtenwarteschlangen-Verbraucher, b
 | Verbraucher und Beschreibung | Adobe Commerce | Adobe Commerce mit B2B | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| Erstellt Nachrichten für jede einzelne Aufgabe eines [Massenvorgangs](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/) wie z. B. den Import oder Export von Artikeln, Preisänderungen im großen Maßstab und die Zuweisung von Produkten zu einem Lager. Erforderlich, wenn die Option [**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) in den Admin-Systemkonfigurationseinstellungen auf **[!UICONTROL Run asynchronously]**&#x200B;gesetzt ist. |                |                         |                     |
+| Erstellt Nachrichten für jede einzelne Aufgabe eines [Massenvorgangs](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations) wie z. B. den Import oder Export von Artikeln, Preisänderungen im großen Maßstab und die Zuweisung von Produkten zu einem Lager. Erforderlich, wenn die Option [**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/de/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) in den Admin-Systemkonfigurationseinstellungen auf **[!UICONTROL Run asynchronously]**&#x200B;gesetzt ist. |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
 | Asynchron generiert Coupons im Hintergrund. Erforderlich für die Verwendung der [Batch Coupon Generation](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=de#method-2%3A-generate-a-batch-of-coupons)-Funktion. |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
@@ -52,7 +52,7 @@ Die folgende Tabelle identifiziert alle Nachrichtenwarteschlangen-Verbraucher, b
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | Aktualisiert Preise für verhandelbare Angebote. Erforderlich, wenn die Option [**[!UICONTROL Quotes]**](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/quotes/quotes) in den Konfigurationseinstellungen des Admin-Systems aktiviert ist. |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| Verarbeitet asynchron [Bestellungen](https://developer.adobe.com/commerce/php/module-reference/module-async-order/), die Bestellungen als empfangen markieren, platziert sie in der Nachrichtenwarteschlange und verarbeitet sie als „first-in-first-out“. wurde als [Best Practice](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) für die Verbesserung der Anzahl der Bestellungen betrachtet, die verarbeitet werden können, da Kunden nicht auf den Abschluss von Backend-Prozessen warten müssen, bevor sie eine Erfolgsmeldung sehen. |                |                         |                     |
+| Verarbeitet asynchron [Bestellungen](https://developer.adobe.com/commerce/php/module-reference/module-async-order), die Bestellungen als empfangen markieren, platziert sie in der Nachrichtenwarteschlange und verarbeitet sie als „first-in-first-out“. wurde als [Best Practice](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) für die Verbesserung der Anzahl der Bestellungen betrachtet, die verarbeitet werden können, da Kunden nicht auf den Abschluss von Backend-Prozessen warten müssen, bevor sie eine Erfolgsmeldung sehen. |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
 | Schreibt Änderungen an Produktattributen asynchron in die Datenbank, nachdem der Administrator verwendet wurde, um [Aktualisierungen vorzunehmen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html?lang=de). |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |

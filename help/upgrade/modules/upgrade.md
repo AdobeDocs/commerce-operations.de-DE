@@ -2,9 +2,9 @@
 title: Upgrade von Modulen und Erweiterungen
 description: Verwenden Sie die Befehlszeilenschnittstelle und den Composer, um Adobe Commerce-Module und -Erweiterungen zu aktualisieren.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ So aktualisieren oder aktualisieren Sie ein Modul oder eine Erweiterung:
 
 ## Vom Anbieter gebündelte Erweiterungen (VBEs)
 
-Adobe hat alle [VBEs](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/modules/upgrade) in 2.4.4 entfernt. Anbieter unterstützen diese Erweiterungen weiterhin auf dem Adobe Commerce Marketplace.
+Adobe hat alle [VBEs](/help/upgrade/modules/upgrade.md) in 2.4.4 entfernt. Anbieter unterstützen diese Erweiterungen weiterhin auf dem Adobe Commerce Marketplace.
 
 Wenn Sie diese Erweiterungen weiterhin mit Adobe Commerce 2.4.4 und höher verwenden möchten, müssen Sie die entsprechenden Paketabhängigkeiten in Ihrer `composer.json`-Datei aktualisieren _vor_ einem Upgrade auf 2.4.4. Wenden Sie sich an den Anbieter, um den Paketnamen und die zu verwendende Version zu erhalten.
 

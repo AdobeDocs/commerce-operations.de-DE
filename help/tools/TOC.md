@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '10661'
+source-wordcount: '10678'
 ht-degree: 0%
 
 ---
@@ -1007,6 +1007,7 @@ ht-degree: 0%
       - [ACP2E-4706: Der Target-Regel-Indexer-Cron wählt keine Produkte aus, die nur im Bereich der Store-Ansicht aktiviert sind](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706.md)
       - [ACP2E-4402: Inkrementeller Indexer der Target-Regel wählt keine deaktivierten Produkte aus](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4402.md)
       - [ACP2E-4505: Zirkuläre Kategorieabhängigkeit vom Speichern einer Kategorie mit veralteten Daten in einer doppelten Browser-Registerkarte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+      - [ACP2E-4531: Die CMS-Hierarchie aktualisiert die hierarchische URL nicht, wenn sich der URL-Schlüssel der untergeordneten Seite ändert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531.md)
       - [ACP2E-4720: Die Preisregeln für kostenlose Warenkörbe werden nicht für Bundle-Produkte mit Festpreis zurückgesetzt, die separat versendet werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
       - [AC-10698: Transaktionspreise und -summen werden nicht an Google Tag gesendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
       - [ACP2E-4475: Bestellung oder Filterung nach Preis funktioniert nicht für nicht vorrätige Bundle-Produkte](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
@@ -1105,6 +1106,6 @@ ht-degree: 0%
     - [Daten, die manuell migriert werden müssen](data-migration-tool/migrate-data/manual.md)
     - [Schritte nach der Datenmigration](data-migration-tool/migrate-data/post-migration.md)
   - Ressourcen {#resources}
-    - [Fehlerbehebung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=de)
+    - [Fehlerbehebung](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Zurück zu den Betriebshandbüchern](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=de)

@@ -2,9 +2,9 @@
 title: '[!DNL Site-Wide Analysis Tool]'
 description: Erfahren Sie mehr über  [!DNL Site-Wide Analysis] -Tool, seine Verwendungszwecke, den Installationsprozess und den Zugriff darauf
 exl-id: 32774040-d322-43d6-9c26-c340a0ab58a9
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -34,20 +34,20 @@ Weitere Informationen finden [&#x200B; in &#x200B;](https://www.youtube.com/watc
 ## Tool-Übersicht
 
 - **Dashboard**
-   - Zeigt den Gesamtzustand Ihres Systems mit Benachrichtigungen zu erkannten Problemen und spezifischen Empfehlungen nach Priorität.<br>
-Sie enthält auch ein Verlaufsdiagramm, in dem die Veränderungen des Zustands Ihrer Website im Laufe der Zeit dargestellt werden.
-   - Zeigt die **[!UICONTROL Security Center Widget]**, die Links zu den folgenden Ressourcen bereitstellt:
-      - [Tech [!DNL Stack] Version Compliance mit [!DNL end of life (EOL)]](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements)
-      - [Adobe-Sicherheitsbulletin](https://helpx.adobe.com/de/security/security-bulletin.html)
-      - [Empfehlungen der [!DNL Security Scan Tool]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan)
-      - [[!DNL Site-Wide Analysis Tool] Best Practice-Sicherheitsempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations)
+  - Zeigt den Gesamtzustand Ihres Systems mit Benachrichtigungen zu erkannten Problemen und spezifischen Empfehlungen nach Priorität.<br>
+    Sie enthält auch ein Verlaufsdiagramm, in dem die Veränderungen des Zustands Ihrer Website im Laufe der Zeit dargestellt werden.
+  - Zeigt die **[!UICONTROL Security Center Widget]**, die Links zu den folgenden Ressourcen bereitstellt:
+    - [Tech [!DNL Stack] Version Compliance mit [!DNL end of life (EOL)]](/help/installation/system-requirements.md)
+    - [Adobe-Sicherheitsbulletin](https://helpx.adobe.com/de/security/security-bulletin.html)
+    - [Empfehlungen der [!DNL Security Scan Tool]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan)
+    - [[!DNL Site-Wide Analysis Tool] Best Practice-Sicherheitsempfehlungen](/help/tools/site-wide-analysis-tool/recommendations.md)
 
 - **Informationen**: Enthält Kontaktinformationen für den Kunden und eine Zusammenfassung aktueller Tickets sowie detaillierte Informationen zu jedem installierten Adobe Commerce-Produkt.
 
 - **Recommendations** - Bietet einen [SWAT Health Index-Wert](swat-health-index.md) zum Nachverfolgen der Site-Konsistenz und listet Empfehlungen auf, die auf Best Practices basieren, um auf Ihrer Site erkannte Probleme zu beheben:
-   - Für Änderungen, die eine Aktualisierung der Infrastruktur erfordern, senden Sie eine Support-Anfrage.
-   - Nehmen Sie die Änderungen, für die ein Programm-Update erforderlich ist, selbst vor.
-   - Wenden Sie sich bei Änderungen, die ein manuelles Eingreifen erfordern, wie [Code-Bereitstellung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), an Ihren Systemadministrator oder Ihre Entwickler.
+  - Für Änderungen, die eine Aktualisierung der Infrastruktur erfordern, senden Sie eine Support-Anfrage.
+  - Nehmen Sie die Änderungen, für die ein Programm-Update erforderlich ist, selbst vor.
+  - Wenden Sie sich bei Änderungen, die ein manuelles Eingreifen erfordern, wie [Code-Bereitstellung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), an Ihren Systemadministrator oder Ihre Entwickler.
 
 - **Ausnahmen** - Listet Fehler auf, die von der Anwendung ausgelöst wurden und durch abnormale Bedingungen ohne einen Fehler-Handler verursacht wurden.
 
@@ -60,13 +60,13 @@ Sie enthält auch ein Verlaufsdiagramm, in dem die Veränderungen des Zustands I
 Sehen Sie sich wichtige Erkenntnisse über Ihre Website an einem Ort an. [!DNL Site-Wide Analysis Tool] erhalten Sie direkten Zugriff auf und Informationen von den [!UICONTROL Security Center Widget], [!DNL Upgrade Compatibility Tool] und [!DNL Managed Alerts].
 
 - **[!UICONTROL Security Center Widget]** : Zeigt Sicherheitserkenntnisse für Ihre Site an.<br>
-Die Sicherheitsinformationen umfassen [Tech- [!DNL Stack] -Compliance mit  [!DNL end of life (EOL)]](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements), [Adobe Security Bulletin](https://helpx.adobe.com/de/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool]  Best Practice-Sicherheitsempfehlungen](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/recommendations).
+Die Sicherheitsinformationen umfassen [Tech- [!DNL Stack] -Compliance mit  [!DNL end of life (EOL)]](/help/installation/system-requirements.md), [Adobe Security Bulletin](https://helpx.adobe.com/de/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool]  Best Practice-Sicherheitsempfehlungen](/help/tools/site-wide-analysis-tool/recommendations.md).
 
   Die [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) bietet Kunden von Adobe Commerce und Magento Open-Source Echtzeiteinblicke in den Sicherheitszustand ihres Stores, indem sie proaktiv Malware erkennen und sie benachrichtigen, wenn ihr Store gefährdet ist.
 
 - **[[!DNL Upgrade Compatibility Tool]](../../upgrade/upgrade-compatibility-tool/overview.md)** - Überprüft Ihre Adobe Commerce-Instanz anhand der Upgrade-Version und kennzeichnet vor dem Upgrade kritische Probleme, Fehler und Warnungen, die behoben werden müssen. Die Behebung dieser Probleme optimiert den Upgrade-Prozess.“
 
-- **[[!DNL Managed Alerts]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)** - Überwachen Sie Schlüsselmetriken (CPU, Anwendungsleistung, Festplatte, Arbeitsspeicher und Datenbankzustand) und stellen Sie klare Schritte zur Fehlerbehebung bereit, damit Händler Probleme bewältigen und Ausfallzeiten vermeiden können.
+- **[[!DNL Managed Alerts]](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)** - Überwachen Sie Schlüsselmetriken (CPU, Anwendungsleistung, Festplatte, Arbeitsspeicher und Datenbankzustand) und stellen Sie klare Schritte zur Fehlerbehebung bereit, damit Händler Probleme bewältigen und Ausfallzeiten vermeiden können.
 
 ## Für wen ist dieser Leitfaden geeignet?
 

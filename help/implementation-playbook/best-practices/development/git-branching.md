@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über verschiedene Verzweigungsstrategien für di
 feature: Best Practices
 role: Developer
 exl-id: 7d7736e8-7023-4315-9965-71866b0be5c3
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Jede Entwicklungsphase sollte über eine entsprechende Verzweigung in Git verfü
 
 >[!TIP]
 >
->Adobe Commerce in Cloud-Infrastrukturprojekten enthalten spezifische Verzweigungen, die verschiedenen Umgebungen entsprechen. Siehe [Pro-Projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=de) und [Starter-Projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=de) im _Cloud-Handbuch_.
+>Adobe Commerce in Cloud-Infrastrukturprojekten enthalten spezifische Verzweigungen, die verschiedenen Umgebungen entsprechen. Siehe [Pro-Projekt](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) und [Starter-Projekt](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) im _Cloud-Handbuch_.
 
 ## Verzweigungsstrategien
 
@@ -50,7 +50,7 @@ Weitere Informationen finden Sie in den folgenden externen Ressourcen:
 
 - [Verzweigungs-Workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 - [Verteilte Workflows](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
-- [Muster für die Verwaltung von Quell-Code-Verzweigungen](https://martinfowler.com/articles/branching-patterns.html)
+- [Muster für die Verwaltung von Quellcodezweigen](https://martinfowler.com/articles/branching-patterns.html)
 - [Ein erfolgreiches Git-Verzweigungsmodell](https://nvie.com/posts/a-successful-git-branching-model/)
 - [GitHub-Fluss](https://docs.github.com/en/get-started/quickstart/github-flow)
 - [GitLab-Fluss](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)

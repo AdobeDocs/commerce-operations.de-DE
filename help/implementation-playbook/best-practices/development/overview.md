@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices für die Implementierung der
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Die folgenden Abschnitte enthalten Informationen zu Best Practices für die Entw
 
 | Best Practice | Beschreibung |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Builds und Bereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=de){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsphase von Adobe Commerce in Cloud-Infrastrukturprojekten |
+| [Builds und Bereitstellung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices){target="_blank"} | Beschreibt Best Practices für die Build- und Bereitstellungsphase von Adobe Commerce in Cloud-Infrastrukturprojekten |
 | Debugging | Systematisches und effektives Debugging des Adobe Commerce-Frameworks |
 | [Statische Inhaltsbereitstellung](static-content-deployment.md) | Vermeiden Sie Probleme mit statischen Inhalten, die nicht in Ihrer Storefront angezeigt werden |
 | [Fehlerbehebung](troubleshooting.md) | Beheben häufiger Adobe Commerce-Implementierungsprobleme |

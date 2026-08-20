@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Nachdem Sie Varnish für die Verwendung mit Commerce installiert und konfigurier
 
   Zum Beispiel alles, was Sie im Admin-Bereich in tun:
 
-   - **STORES** > **Settings** > **Configuration** > GENERAL > **General**
-   - **STORES** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **Währungseinstellungen**
-   - **STORES** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **E-Mail-Adressen speichern**
+  - **STORES** > **Settings** > **Configuration** > GENERAL > **General**
+  - **STORES** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **Währungseinstellungen**
+  - **STORES** > **Einstellungen** > **Konfiguration** > ALLGEMEIN > **E-Mail-Adressen speichern**
 
   Wenn Commerce eine solche Änderung erkennt, werden Sie in einer Meldung darüber informiert, dass Sie den Cache aktualisieren müssen.
 
@@ -61,7 +61,7 @@ Nachdem Sie Varnish für die Verwendung mit Commerce installiert und konfigurier
 
 ## Konfigurieren von Commerce zum Löschen von Lack
 
-Commerce löscht Varnish-Hosts, nachdem Sie Varnish-Hosts mit dem Befehl [`magento setup:config:set`](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset) konfiguriert haben.
+Commerce löscht Varnish-Hosts, nachdem Sie Varnish-Hosts mit dem Befehl [`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset) konfiguriert haben.
 
 Sie können den optionalen Parameter `--http-cache-hosts` verwenden, um eine kommagetrennte Liste von Lack-Hosts und Listener-Ports anzugeben. Konfigurieren Sie alle Lack-Hosts, unabhängig davon, ob Sie einen oder mehrere haben. (Hosts dürfen nicht durch Leerzeichen getrennt werden.)
 

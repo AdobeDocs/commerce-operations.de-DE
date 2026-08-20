@@ -1,20 +1,20 @@
 ---
-title: Best Practices für die Konfiguration von Web-Crawlern
-description: Erfahren Sie, wie Sie mithilfe der Dateien „robots.txt“ und „sitemap.xml“ Anweisungen zu Ihrer Adobe Commerce-Site an Web-Crawler übergeben.
+title: Best Practices für die Konfiguration von Web-Crawler
+description: Erfahren Sie, wie Sie mithilfe der Crawler-Dateien „robots.txt“ und „sitemap.xml“ Anweisungen zu Ihrer Adobe Commerce-Site an Web-Benutzer weitergeben.
 role: Developer
 feature: Best Practices
 exl-id: f3a81bab-a47a-46ad-b334-920df98c87ab
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 
-# Best Practices für die Konfiguration von Web-Crawlern
+# Best Practices für die Konfiguration von Web-Crawler
 
-Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt`- und `sitemap.xml` in Adobe Commerce, einschließlich Konfiguration und Sicherheit. Diese Dateien weisen Web-Crawler (normalerweise Suchmaschinenroboter) an, Seiten auf einer Website zu durchsuchen. Die Konfiguration dieser Dateien kann die Leistung der Site und die Suchmaschinenoptimierung verbessern.
+Dieser Artikel enthält Best Practices für die Verwendung von `robots.txt`- und `sitemap.xml` in Adobe Commerce, einschließlich Konfiguration und Sicherheit. Diese Dateien weisen Web-Crawler (normalerweise Suchmaschinenroboter) an, wie Seiten auf einer Website crawlen werden. Die Konfiguration dieser Dateien kann die Leistung der Site und die Suchmaschinenoptimierung verbessern.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Ein standardmäßiges Adobe Commerce-Projekt enthält eine Hierarchie mit einer 
 
 Befolgen Sie diese Best Practices beim Konfigurieren der `robots.txt`- und `sitemap.xml` für Storefronts mit einer Website:
 
-- Stellen Sie sicher, dass Ihr Projekt [`ece-tools`](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package) Version 2002.0.12 oder höher verwendet.
+- Stellen Sie sicher, dass Ihr Projekt [`ece-tools`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package) Version 2002.0.12 oder höher verwendet.
 - Verwenden Sie das Admin-Programm, um der `robots.txt` Inhalte hinzuzufügen.
 
   >[!TIP]
@@ -64,20 +64,20 @@ Befolgen Sie diese Best Practices beim Konfigurieren der `robots.txt`- und `site
 
 >[!INFO]
 >
->Siehe [Hinzufügen von Sitemaps und Suchmaschinenrobotern](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) für detaillierte Anweisungen.
+>Siehe [Hinzufügen von Sitemaps und Suchmaschinenrobotern](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/robots-sitemap) für detaillierte Anweisungen.
 
 
 ### Storefronts mit mehreren Sites
 
-Mit einer einzigen Implementierung von Adobe Commerce in der Cloud-Infrastruktur können Sie mehrere Stores einrichten und ausführen. Siehe [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites).
+Mit einer einzigen Implementierung von Adobe Commerce in der Cloud-Infrastruktur können Sie mehrere Stores einrichten und ausführen. Siehe [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites).
 
 Die gleichen Best Practices für die Konfiguration der `robots.txt`- und `sitemap.xml`-Dateien für [Storefronts mit einer Site](#single-site-storefronts) gelten für Storefronts mit mehreren Sites, mit zwei wichtigen Unterschieden:
 
 - Stellen Sie sicher, dass die `robots.txt`- und `sitemap.xml`-Dateinamen die Namen der entsprechenden Sites enthalten. Beispiel:
-   - `domaineone_robots.txt`
-   - `domaintwo_robots.txt`
-   - `domainone_sitemap.xml`
-   - `domaintwo_sitemap.xml`
+  - `domaineone_robots.txt`
+  - `domaintwo_robots.txt`
+  - `domainone_sitemap.xml`
+  - `domaintwo_sitemap.xml`
 
 - Verwenden Sie ein leicht geändertes benutzerdefiniertes Fastly-VCL-Fragment, um für beide Dateien in Ihren Sites vom Stammverzeichnis Ihrer Sites zum `pub/media`-Speicherort umzuleiten:
 
@@ -107,11 +107,11 @@ Schritte zum Bearbeiten der `robots.txt` und Entfernen aller Einträge im Admini
 
 >[!TIP]
 >
->Wenn Sie Hilfe benötigen, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
+>Wenn Sie Hilfe benötigen, [&#x200B; Sie ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Weitere Informationen
 
-- [Grundlegendes zu Websites, Stores und Store-Ansichten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Grundlegendes zu Websites, Stores und Store-Ansichten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
 - [Hinzufügen von Websites](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [Verwenden Sie Fastly, um bösartigen Traffic für Ihre Adobe Commerce-Sites zu blockieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
-- [robots.txt gibt einen 404-Fehler in Adobe Commerce auf Cloud Infrastructure 2.3.x aus](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html?lang=de)
+- [Verwenden Sie Fastly, um bösartigen Traffic für Ihre Adobe Commerce-Sites zu blockieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking)
+- [robots.txt gibt einen 404-Fehler in Adobe Commerce auf Cloud Infrastructure 2.3.x aus](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26885)

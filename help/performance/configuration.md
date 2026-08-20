@@ -3,9 +3,9 @@ title: Best Practices für die Konfiguration
 description: Erfahren Sie mehr über Best Practices für die Konfiguration zur Optimierung der Adobe Commerce-Leistung. Entdecken Sie Einstellungen und Tools zur Verbesserung der Reaktionszeit und des Durchsatzes.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1518'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Es kann vorkommen, dass intensive Verkäufe in einer Storefront gleichzeitig mit
 
 >[!WARNING]
 >
->Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ &#x200B;](../configuration/cli/set-mode.md). [Adobe Commerce in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)Infrastruktur unterstützt den `Developer` nicht.
+>Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ &#x200B;](../configuration/cli/set-mode.md). [Adobe Commerce in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test)Infrastruktur unterstützt den `Developer` nicht.
 
 ## Asynchrone Konfiguration speichern
 
@@ -69,7 +69,7 @@ bin/magento queue:consumers:start saveConfigProcessor --max-messages=1
 
 ## Zurückgestellte Aktienaktualisierung
 
-In Zeiten intensiver Verkäufe kann Commerce Lageraktualisierungen im Zusammenhang mit Bestellungen aufschieben. Dies minimiert die Anzahl der Vorgänge und beschleunigt den Bestellvorgang. Diese Option ist jedoch riskant und kann nur verwendet werden, wenn Nachbestellungen im Geschäft aktiviert sind, da diese Option zu negativen Lagermengen führen kann. Diese Option kann zu erheblichen Leistungsverbesserungen bei Checkout-Flüssen für Geschäfte führen, die ihren Bestand bei Bedarf einfach nachfüllen können. Um verzögerte Stock-Updates auf Ihrer Site zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Weitere Informationen [&#x200B; Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud) _Adobe Commerce-Benutzerhandbuch_ unter Verwalten des Inventars.
+In Zeiten intensiver Verkäufe kann Commerce Lageraktualisierungen im Zusammenhang mit Bestellungen aufschieben. Dies minimiert die Anzahl der Vorgänge und beschleunigt den Bestellvorgang. Diese Option ist jedoch riskant und kann nur verwendet werden, wenn Nachbestellungen im Geschäft aktiviert sind, da diese Option zu negativen Lagermengen führen kann. Diese Option kann zu erheblichen Leistungsverbesserungen bei Checkout-Flüssen für Geschäfte führen, die ihren Bestand bei Bedarf einfach nachfüllen können. Um verzögerte Stock-Updates auf Ihrer Site zu aktivieren, gehen Sie zu **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Inventory] > [!UICONTROL Product Stock Options] >[!UICONTROL Use Deferred Stock Update]**. Weitere Informationen [&#x200B; Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud) _Adobe Commerce-Benutzerhandbuch_ unter Verwalten des Inventars.
 
 >[!INFO]
 >
@@ -95,19 +95,19 @@ Um die Reaktionsfähigkeit Ihrer [!DNL Commerce]-Instanz zu verbessern, wechseln
 
 >[!INFO]
 >
->Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ &#x200B;](../configuration/cli/set-mode.md). [Adobe Commerce in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-test)Infrastruktur unterstützt den `Developer` nicht.
+>Die Registerkarte &quot;**[!UICONTROL Developer]**&quot; und die Optionen sind nur im [Entwicklermodus“ &#x200B;](../configuration/cli/set-mode.md). [Adobe Commerce in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-test)Infrastruktur unterstützt den `Developer` nicht.
 
 Wenn Sie die Option &quot;**[!UICONTROL Enable [!DNL JavaScript] Bundling]**&quot; aktivieren, lassen Sie zu, dass Commerce alle JS-Ressourcen zu einem oder mehreren Bundles zusammenführt, die in Storefront-Seiten geladen werden. Die Bündelung von JS führt zu weniger Anfragen an den Server, was die Seitenleistung verbessert. Dies hilft dem Browser auch, JS-Ressourcen beim ersten Aufruf zwischenzuspeichern und sie für alle weiteren Suchvorgänge wiederzuverwenden. Diese Option bietet auch eine verzögerte Auswertung, da alle JS als Text geladen werden. Sie initiiert die Analyse und Auswertung des Codes erst, nachdem bestimmte Aktionen auf der Seite ausgelöst wurden. Diese Einstellung wird jedoch nicht für Stores empfohlen, in denen die Ladezeit der ersten Seite äußerst kritisch ist, da der gesamte JS-Inhalt beim ersten Aufruf geladen wird.
 
 >[!INFO]
 >
->Weitere [&#x200B; zur Optimierung von CSS &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/optimize-css-js-files) JavaScript finden Sie unter „Optimieren von Ressourcendateien“.
+>Weitere [&#x200B; zur Optimierung von CSS &#x200B;](/help/implementation-playbook/best-practices/development/optimize-css-js-files.md) JavaScript finden Sie unter „Optimieren von Ressourcendateien“.
 
 ### Tipps zur Bündelung {#bundling-tips}
 
 * Es wird empfohlen, Tools von Drittanbietern für die Minimierung und Bündelung zu verwenden (z. B. [.js](https://requirejs.org/)). Die integrierten Commerce-Mechanismen sind nicht optimal und werden als Ausweichalternativen bereitgestellt.
 * Die Aktivierung des HTTP/2-Protokolls kann eine gute Alternative zur Verwendung des JS-Bundles sein. Das Protokoll bietet viele der gleichen Vorteile. Sie ist in Adobe Commerce standardmäßig für Cloud-Infrastrukturprojekte aktiviert.
-* Es wird nicht empfohlen, veraltete Einstellungen wie das Zusammenführen von JS- und CSS-Dateien zu verwenden, da sie nur für synchron geladene JS im Abschnitt &quot;HEAD&quot; der Seite entwickelt wurden. Die Verwendung dieser Technik kann zu einer fehlerhaften Bündelung führen und erfordert, dass die JS-Logik nicht korrekt funktioniert.
+* Es wird nicht empfohlen, veraltete Einstellungen wie das Zusammenführen von JS- und CSS-Dateien zu verwenden, da sie nur für synchron geladene JS im HEAD-Abschnitt der Seite entwickelt wurden. Die Verwendung dieser Technik kann zu einer fehlerhaften Bündelung führen und erfordert, dass die JS-Logik nicht korrekt funktioniert.
 
 ## Validierung von Kundensegmenten
 

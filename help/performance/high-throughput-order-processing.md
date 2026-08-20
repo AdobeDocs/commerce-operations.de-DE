@@ -3,7 +3,7 @@ title: Best Practices für die Checkout-Leistung
 description: Erfahren Sie mehr über die Best Practices für die Checkout-Leistung in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1299'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Der Befehl `set` schreibt Folgendes in die `app/etc/env.php`:
    ]
 ```
 
-Siehe [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/) im _Modul-Referenzhandbuch_.
+Siehe [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order) im _Modul-Referenzhandbuch_.
 
 **So deaktivieren Sie AsyncOrder**:
 
@@ -162,7 +162,7 @@ Der Befehl `set` schreibt Folgendes in die `app/etc/env.php`:
    ]
 ```
 
-Siehe [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/) im _Modul-Referenzhandbuch_.
+Siehe [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating) im _Modul-Referenzhandbuch_.
 
 ### feste Produktsteuer
 
@@ -180,7 +180,7 @@ Wenn diese Option deaktiviert ist, wird beim Hinzufügen eines Produkts zum Ware
 
 Sie können dazu beitragen, die Last auf verschiedenen Knoten auszugleichen, indem Sie sekundäre Verbindungen für die MySQL-Datenbank und die Redis-Instanz aktivieren.
 
-Adobe Commerce kann mehrere Datenbanken oder Redis-Instanzen asynchron lesen. Wenn Sie Commerce in einer Cloud-Infrastruktur verwenden, können Sie die sekundären Verbindungen konfigurieren, indem Sie die Werte [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) und [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in der `.magento.env.yaml`-Datei bearbeiten. Da nur ein Knoten Lese-/Schreibdatenverkehr verarbeiten muss, führt das Festlegen der Variablen auf `true` zu einer sekundären Verbindung für schreibgeschützten Datenverkehr. Legen Sie die Werte auf `false` fest, um ein vorhandenes schreibgeschütztes Verbindungs-Array aus der `env.php` zu entfernen.
+Adobe Commerce kann mehrere Datenbanken oder Redis-Instanzen asynchron lesen. Wenn Sie Commerce in einer Cloud-Infrastruktur verwenden, können Sie die sekundären Verbindungen konfigurieren, indem Sie die Werte [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) und [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) in der `.magento.env.yaml`-Datei bearbeiten. Da nur ein Knoten Lese-/Schreibdatenverkehr verarbeiten muss, führt das Festlegen der Variablen auf `true` zu einer sekundären Verbindung für schreibgeschützten Datenverkehr. Legen Sie die Werte auf `false` fest, um ein vorhandenes schreibgeschütztes Verbindungs-Array aus der `env.php` zu entfernen.
 
 Beispiel für die `.magento.env.yaml`:
 

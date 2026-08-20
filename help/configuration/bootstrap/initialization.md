@@ -3,9 +3,9 @@ title: Anwendungsinitialisierung und Bootstrap
 description: Informationen zur Initialisierung und Bootstrap-Logik für das Commerce-Programm.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Wir haben die folgenden Einstiegspunktanwendungen (d. h. von Commerce definierte
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) funktioniert wie folgt:
 
-1. Bestimmt den [Anwendungsbereich](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. Bestimmt den [Anwendungsbereich](https://developer.adobe.com/commerce/php/architecture/modules/areas).
 1. Startet den Frontcontroller und das Routing-System, um eine Controller-Aktion zu finden und auszuführen.
 1. Verwendet ein HTTP-Antwortobjekt, um das von der Controller-Aktion erhaltene Ergebnis zurückzugeben.
 1. Fehlerbehandlung (in der folgenden Prioritätsreihenfolge):

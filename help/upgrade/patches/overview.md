@@ -2,9 +2,9 @@
 title: Funktionsweise von Patches
 description: Erfahren Sie mehr über die verschiedenen Arten von Patches für Adobe Commerce und wie sie funktionieren.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ Sie können Patches mit einer der folgenden Methoden anwenden:
 
 >[!NOTE]
 >
->Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im _Handbuch zu Commerce in Cloud_.
+>Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im _Handbuch zu Commerce in Cloud_.

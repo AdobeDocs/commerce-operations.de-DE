@@ -2,9 +2,9 @@
 title: Wie greife ich auf zu [!DNL Site-Wide Analysis Tool]
 description: Erfahren Sie, wie Sie über Ihr Adobe Commerce-Admin-Bedienfeld auf das Dashboard des Site-Wide Analysis Tool zugreifen können. Entdecken Sie Benutzerberechtigungen und Rollenanforderungen.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: d75d8fe87b5bf5cf5cd1d5a15371a456b82f18db
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Gehen Sie für die benutzerdefinierte Rolle, die Zugriff [!DNL Site-Wide Analysi
 
 >[!NOTE]
 >
->Wenn Sie sich vergewissert haben, dass das Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] verfügt und der/die Benutzende beim Versuch, über die [!UICONTROL Admin] auf das Tool zuzugreifen, die Fehlermeldung 403 erhält, könnte für Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Das [!DNL Site-Wide Analysis Tool]-Dashboard wird NICHT unterstützt, wenn die HTTP-Authentifizierung aktiviert ist. Weitere Informationen zur Lösung dieses Problems finden Sie in unserem [Support-Artikel](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Wenn Sie sich vergewissert haben, dass das Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] verfügt und der/die Benutzende beim Versuch, über die [!UICONTROL Admin] auf das Tool zuzugreifen, die Fehlermeldung 403 erhält, könnte für Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Das [!DNL Site-Wide Analysis Tool]-Dashboard wird NICHT unterstützt, wenn die HTTP-Authentifizierung aktiviert ist. Weitere Informationen zur Lösung dieses Problems finden Sie in unserem [Support-Artikel](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Schritt 2: [!DNL Site-Wide Analysis Tool]
 

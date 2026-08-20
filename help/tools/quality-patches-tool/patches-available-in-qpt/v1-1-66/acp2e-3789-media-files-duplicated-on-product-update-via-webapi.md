@@ -5,9 +5,9 @@ feature: Catalog Management, Media, REST, Products, Cache
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1eaa8ed0-fde6-47c4-9339-8f5e7bce7b19
-source-git-commit: f82dcd6c76ba3512e59275c26815b6bb89e53733
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Mit dem Patch ACP2E-3789 wird das Problem behoben, dass Produktaktualisierungen 
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -38,7 +38,7 @@ Wenn Sie ein Produkt über die Web-API mit einer Medien-ID aktualisieren, dupliz
 
 1. Erstellen Sie ein Produkt und fügen Sie ein Bild hinzu.
 1. Rufen Sie Produktdetails mithilfe der REST-API unter `base_url/rest/V1/products/<sku>` ab.
-1. Führen Sie eine PUT-Anfrage aus, um das Produkt zu aktualisieren, wobei der `media_gallery_entrie` unverändert bleibt (gleicher Bildname und Datei).
+1. Führen Sie eine PUT-Anfrage durch, um das Produkt zu aktualisieren, wobei der `media_gallery_entrie` unverändert bleibt (gleicher Bildname und Datei).
 1. Überprüfen Sie das `pub/media/catalog/product/xx/yy` vor und nach dem Update.
 
 <u>Erwartete Ergebnisse</u>:
@@ -54,7 +54,7 @@ Das Bild wird mit einem neuen Namen (z. B. wb04-blue-1.jpg) dupliziert, was eine
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
