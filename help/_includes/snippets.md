@@ -1,7 +1,7 @@
 ---
-source-git-commit: d8197ca0e1028cb50fae0415843c80ac68e49566
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Informationen zu Adobe Commerce in Cloud-Projekten finden Sie [Best Practices für die Konfiguration von Redis und Valkey](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) unter Cache-Konfigurationsanweisungen.
+>Informationen zu Adobe Commerce in Cloud-Projekten finden Sie [Best Practices für die Konfiguration von Redis und Valkey](/help/implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) unter Cache-Konfigurationsanweisungen.
 
 ## Redis-Cache-Unterstützung {#redis-cache-support}
 
@@ -21,7 +21,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 >[!NOTE]
 >
->Wenn Ihr Commerce-Projekt in der Cloud bereitgestellt wird, verwendet die Vollseiten-Zwischenspeicherung [Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly) statt Varnish. Die Themen in diesem Abschnitt gelten nur für On-Premise-Installationen.
+>Wenn Ihr Commerce-Projekt in der Cloud bereitgestellt wird, verwendet die Vollseiten-Zwischenspeicherung [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) statt Varnish. Die Themen in diesem Abschnitt gelten nur für On-Premise-Installationen.
 
 ## Unterstützung der Adobe-Service-Version {#supported-versions-only}
 
@@ -29,13 +29,13 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 >
 >Adobe unterstützt nur Bereitstellungen, auf denen unterstützte Versionen aller Abhängigkeiten und Services ausgeführt werden. Dies gilt für:
 >
->* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de).
+>* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 >* **Commerce Services-Erweiterungen** (einschließlich, aber nicht beschränkt auf Live Search, Produktempfehlungen und Zahlungs-Services) - nur die neueste veröffentlichte Version wird unterstützt.
 >* **Benutzerdefinierte Erweiterungen und Integrationen von Drittanbietern** - Händler sind dafür verantwortlich sicherzustellen, dass diese auf vom Anbieter unterstützten Versionen bleiben.
 >
 >Das Ausführen nicht unterstützter Versionen kann Sicherheitslücken in Ihrem Store hervorrufen, und Adobe kann keine Sicherheits-Patches für Abhängigkeiten bereitstellen, die nicht mehr von ihren Anbietern gepflegt werden.
 >
->Eine vollständige Liste der unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
+>Eine vollständige Liste der unterstützten Versionen finden Sie in der [Produktverfügbarkeitsmatrix](/help/release/product-availability.md).
 
 ## Sicherheits-Patches für erweiterte Unterstützung {#extended-support}
 
@@ -53,7 +53,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 >[!WARNING]
 >
->Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt &#x200B;](/help/configuration/cli/config-cli.md#prerequisites).
+>Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt ](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Sicherungsbefehle {#tip-backup-command}
 
@@ -65,7 +65,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 >[!NOTE]
 >
->Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes).
+>Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Nur Adobe Commerce {#ee-only}
 
@@ -85,7 +85,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 >[!NOTE]
 >
->Adobe Commerce-Versionen können abwärtsinkompatible Änderungen (BICs) enthalten. Informationen zu abwärtsinkompatiblen Änderungen finden Sie unter [BIC-Referenz](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Die wichtigsten abwärtsinkompatiblen Probleme werden in [BIC-Highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/) beschrieben. Nicht alle Versionen enthalten wichtige BICs.
+>Adobe Commerce-Versionen können abwärtsinkompatible Änderungen (BICs) enthalten. Informationen zu abwärtsinkompatiblen Änderungen finden Sie unter [BIC-Referenz](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference). Die wichtigsten abwärtsinkompatiblen Probleme werden in [BIC-Highlights](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/) beschrieben. Nicht alle Versionen enthalten wichtige BICs.
 
 ## Alpha-Haftungsausschluss {#alpha}
 
@@ -119,7 +119,7 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 >[!IMPORTANT]
 >
->Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+>Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
 
 ## Sicherheits-Patch-Backports Oktober 2025 {#oct-2025-backports}
 
@@ -133,7 +133,7 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 * **Unterstützung für das Apache ActiveMQ Artemis STOMP-Protokoll wurde hinzugefügt**
 
-  Unterstützung für ActiveMQ Artemis Open-Source-Nachrichtenbroker durch das Simple Text Oriented Messaging Protocol (STOMP) wurde hinzugefügt. Es bietet ein zuverlässiges und skalierbares Messaging-System, das Flexibilität für STOMP-basierte Integrationen bietet. Siehe [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) im *Commerce-Konfigurationshandbuch*.
+  Unterstützung für ActiveMQ Artemis Open-Source-Nachrichtenbroker durch das Simple Text Oriented Messaging Protocol (STOMP) wurde hinzugefügt. Es bietet ein zuverlässiges und skalierbares Messaging-System, das Flexibilität für STOMP-basierte Integrationen bietet. Siehe [Apache ActiveMQ Artemis](/help/configuration/queues/message-queue-framework.md#apache-activemq-artemis-stomp) im *Commerce-Konfigurationshandbuch*.
 
 ## Die Checkout-Seite kann static.min.js und mixins.min.js nicht laden. {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -150,7 +150,7 @@ Nach den letzten CSP-/SRI-Änderungen werden static.min.js und mixins.min.js nic
 
 **Hotfix**:
 
-Ein Hotfix ist verfügbar. Weitere [&#x200B; finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
+Ein Hotfix ist verfügbar. Weitere [ finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
 
 ## Valkey Redis CLI-Hinweis {#valkey-redis-cli-note}
 

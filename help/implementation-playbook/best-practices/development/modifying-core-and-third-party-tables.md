@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Eine weitere damit zusammenhängende Option, um die Daten außerhalb von Commerc
 
 Sie können beispielsweise alte Bestellungen aus einer externen Datenbank `stitch`, z. B. aus der alten Site von Magento 1, die eingestellt wurde. Zeigen Sie sie dann mithilfe von GraphQL Mesh als Teil des Auftragsverlaufs des Kunden an. Diese alten Bestellungen können mit den Bestellungen aus Ihrer aktuellen [!DNL Adobe Commerce] kombiniert werden.
 
-Weitere Informationen zur Verwendung von API Mesh mit GraphQL finden Sie unter [Was ist API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) und [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+Weitere Informationen zur Verwendung von API Mesh mit GraphQL finden Sie unter [Was ist API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) und [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migrieren von alten Daten mit Erweiterungsattributen
 
-Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in [!DNL Adobe Commerce] gespeichert werden müssen, empfiehlt Adobe die Verwendung von [Erweiterungsattributen](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
+Wenn Sie feststellen, dass ältere Daten migriert werden müssen oder dass neue Daten in [!DNL Adobe Commerce] gespeichert werden müssen, empfiehlt Adobe die Verwendung von [Erweiterungsattributen](https://developer.adobe.com/commerce/php/development/components/add-attributes){target="_blank"}. Die Verwendung von Erweiterungsattributen zum Speichern zusätzlicher Daten bietet die folgenden Vorteile:
 
 - Sie können die beizubehaltenden Daten und die Datenbankstruktur steuern, um sicherzustellen, dass die Daten mit dem richtigen Spaltentyp und den richtigen Indizes gespeichert werden.
 - Die meisten Entitäten in [!DNL Adobe Commerce] unterstützen die Verwendung von Erweiterungsattributen.
@@ -54,7 +54,7 @@ Zwei Beispiele für Speicherorte sind Datenbanktabellen und [!DNL Redis]. Bei de
 
 Als Entwickler ist es wichtig, immer die Verwendung von Tools außerhalb Ihrer [!DNL Adobe Commerce]-Umgebung in Betracht zu ziehen, z. B. GraphQL Mesh und Adobe App Builder. Diese Tools können Ihnen dabei helfen, den Zugriff auf die Daten zu bewahren, haben jedoch keine Auswirkungen auf die Commerce-Kernanwendung oder die zugrunde liegenden Datenbanktabellen. Mit diesem Ansatz stellen Sie Ihre Daten über eine API zur Verfügung. Anschließend fügen Sie Ihrer App Builder-Konfiguration eine Datenquelle hinzu. Mithilfe von GraphQL Mesh können Sie diese Datenquellen kombinieren und eine einzige Antwort erzeugen, wie in [Legacy-Daten](#legacy-data) beschrieben.
 
-Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=de){target="_blank"}.
+Weitere Informationen zu GraphQL Mesh finden Sie unter [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Weitere Informationen zu Adobe App Builder finden Sie unter [Einführung in App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Ändern einer Kerntabelle oder Drittanbietertabelle
 
@@ -73,11 +73,11 @@ Adobe empfiehlt, diese Schritte auszuführen, wenn Sie eine Spalte zu einer Core
 
    Beispiel: `app/code/YourCompany/Customer`
 
-1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de){target="_blank"}.
+1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Erstellen Sie eine Datei mit dem Namen `db_schema.xml` im Ordner `etc` und nehmen Sie die entsprechenden Änderungen vor.
 
-   Generieren Sie ggf. eine `db_schema_whitelist.json`. Weitere Informationen finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"}Deklaratives Schema“.
+   Generieren Sie ggf. eine `db_schema_whitelist.json`. Weitere Informationen finden [ unter ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"}Deklaratives Schema“.
 
 ### Potenzielle Auswirkungen
 
@@ -97,19 +97,19 @@ Einige Kerntabellen verfügen über eine `additional_data`, die JSON-kodierte Da
 
 - Vorteile der Verwendung des `additional_data` Felds
 
-   - Es sind keine zusätzlichen Felder erforderlich, wodurch die Anzahl der Spalten minimal bleibt. Dies ist im Verkaufsablauf hilfreich, bei dem bereits viele Tabellen beteiligt sind. Es ist am besten, diesem ohnehin komplizierten Prozess keine zusätzliche Komplexität zu verleihen. Diese Methode eignet sich für viele Anwendungsfälle, aber nicht für alle.
+  - Es sind keine zusätzlichen Felder erforderlich, wodurch die Anzahl der Spalten minimal bleibt. Dies ist im Verkaufsablauf hilfreich, bei dem bereits viele Tabellen beteiligt sind. Es ist am besten, diesem ohnehin komplizierten Prozess keine zusätzliche Komplexität zu verleihen. Diese Methode eignet sich für viele Anwendungsfälle, aber nicht für alle.
 
 - Nachteile
 
-   - Diese Methode eignet sich nur zum Speichern schreibgeschützter Daten. Dieses Problem tritt auf, weil der Code nicht serialisiert werden muss, um das -Objekt zu ändern und zu erstellen und Abhängigkeiten oder Datenbankbeziehungen hinzuzufügen.
+  - Diese Methode eignet sich nur zum Speichern schreibgeschützter Daten. Dieses Problem tritt auf, weil der Code nicht serialisiert werden muss, um das -Objekt zu ändern und zu erstellen und Abhängigkeiten oder Datenbankbeziehungen hinzuzufügen.
 
-   - Es ist schwierig, Datenbankoperationen zu verwenden, um nach diesen Feldern zu suchen. Die Suche mit dieser Methode ist langsam.
+  - Es ist schwierig, Datenbankoperationen zu verwenden, um nach diesen Feldern zu suchen. Die Suche mit dieser Methode ist langsam.
 
-   - Beim Speichern von Daten in der Spalte `additional_data` müssen Sie besonders vorsichtig sein, um zu vermeiden, dass Serialisierungs- oder Rückserialisierungsvorgänge ausgelöst werden, die den Code beschädigen könnten, indem sie ungültige JSON-Dateien erstellen oder während der Laufzeit Lesefehler verursachen.
+  - Beim Speichern von Daten in der Spalte `additional_data` müssen Sie besonders vorsichtig sein, um zu vermeiden, dass Serialisierungs- oder Rückserialisierungsvorgänge ausgelöst werden, die den Code beschädigen könnten, indem sie ungültige JSON-Dateien erstellen oder während der Laufzeit Lesefehler verursachen.
 
-   - Diese Felder müssen im Code klar deklariert sein, damit Entwickler sie leicht finden können.
+  - Diese Felder müssen im Code klar deklariert sein, damit Entwickler sie leicht finden können.
 
-   - Andere Probleme, die auftreten können und sehr schwer zu diagnostizieren sind. Wenn Sie beispielsweise bei einigen nativen PHP-Funktionen keine [!DNL Adobe Commerce] Wrapper-Methoden verwenden, die von der Kernanwendung bereitgestellt werden, kann das Endergebnis der umgewandelten Daten vom erwarteten Format abweichen. Verwenden Sie immer die Wrapper-Funktionen, um Konsistenz und Vorhersehbarkeit der zu speichernden oder abgerufenen Daten sicherzustellen.
+  - Andere Probleme, die auftreten können und sehr schwer zu diagnostizieren sind. Wenn Sie beispielsweise bei einigen nativen PHP-Funktionen keine [!DNL Adobe Commerce] Wrapper-Methoden verwenden, die von der Kernanwendung bereitgestellt werden, kann das Endergebnis der umgewandelten Daten vom erwarteten Format abweichen. Verwenden Sie immer die Wrapper-Funktionen, um Konsistenz und Vorhersehbarkeit der zu speichernden oder abgerufenen Daten sicherzustellen.
 
 Im Folgenden finden Sie Beispiele für Tabellen mit der Spalte und der Struktur für die `additional_data` Spalte.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Suchen nach großen MySQL-Tabellen
 
-Um die großen Tabellen zu identifizieren, stellen Sie eine Verbindung zur Datenbank her, wie im Artikel [Verbindung zur Datenbank herstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) beschrieben, und führen Sie den folgenden Befehl aus. Verwenden Sie `project_id` für die Produktionsumgebung. Verwenden Sie für Staging-Umgebungen `[project_id]_stg`, `[project_id]_stg2`.
+Um die großen Tabellen zu identifizieren, stellen Sie eine Verbindung zur Datenbank her, wie im Artikel [Verbindung zur Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) beschrieben, und führen Sie den folgenden Befehl aus. Verwenden Sie `project_id` für die Produktionsumgebung. Verwenden Sie für Staging-Umgebungen `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

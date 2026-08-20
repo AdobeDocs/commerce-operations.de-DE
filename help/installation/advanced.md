@@ -2,10 +2,10 @@
 title: Erweiterte lokale Installation
 description: Erfahren Sie mehr über erweiterte Installationsszenarien für lokale Adobe Commerce-Bereitstellungen. Erfahren Sie mehr über komplexe Konfigurationen und benutzerdefinierte Einrichtungsoptionen.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Das Installationsprogramm kann bei Bedarf mehrmals ausgeführt werden. So haben 
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus:
 
-* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[&#x200B; beschriebenen Anforderungen &#x200B;](system-requirements.md).
+* Stellen Sie sicher, dass Ihr System die unter (Systemanforderungen[ beschriebenen Anforderungen ](system-requirements.md).
 
-* Alle ([) Aufgaben &#x200B;](prerequisites/overview.md).
+* Alle ([) Aufgaben ](prerequisites/overview.md).
 
 * Führen Sie die ersten Installationsschritte aus. Siehe [Ihr Installations- oder Aktualisierungspfad](overview.md).
 
@@ -120,7 +120,7 @@ Die folgenden Optionen geben die Benutzerinformationen und Anmeldeinformationen 
 
 Sie können den Admin-Benutzer während oder nach der Installation erstellen. Wenn Sie den Benutzer während der Installation erstellen, sind alle Variablen mit Administratorberechtigungen erforderlich. Siehe [Beispiel für localhost-Installationen](#sample-localhost-installations).
 
-Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Die folgenden Tabellen enthalten viele, aber nicht alle verfügbaren Installationsparameter. Eine vollständige Liste finden Sie in [Referenz zu Befehlszeilen-Tools](/help/tools/reference/commerce-on-premises.md).
 
 | Name | Wert | Erforderlich? |
 |--- |--- |--- |

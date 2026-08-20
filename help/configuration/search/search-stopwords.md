@@ -3,7 +3,7 @@ title: Konfigurieren von Suchbegriffen
 description: Erfahren Sie, wie Sie Stoppwörter für Adobe Commerce mithilfe von CSV-Dateien verwalten.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 0%
@@ -126,7 +126,7 @@ Der Speicherort hängt von der Installation der Commerce-Software ab. Wenn Sie d
 
 ## So ändern Sie das Verzeichnis in Ihrem Modul
 
-1. [Erstellen eines Moduls](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [Erstellen eines Moduls](https://developer.adobe.com/commerce/php/development/build/component-file-structure)
 1. Fügen Sie in Ihrem Modul `etc/di.xml` Anweisungen hinzu:
 
    ```xml

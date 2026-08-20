@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Empfehlungen zum Konfigurieren von Limits f
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Um eine optimale Leistung zu erzielen, verwenden Sie die folgenden Richtlinien, 
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -47,7 +47,7 @@ Die Konfiguration einer großen Anzahl von Kategorien kann die Leistung beeintr�
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -70,7 +70,7 @@ Die Konfiguration zu vieler Produktattribute oder Produktattributoptionen kann d
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -100,7 +100,7 @@ Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
 #### Konfiguration des Attributsatzes überprüfen
 
-1. [Verbindung zur Website-Datenbank herstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Verbindung zur Website-Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Ermitteln der Anzahl der Attributsätze mit MySQL
 
@@ -138,7 +138,7 @@ Die Konfiguration zu vieler Produktoptionen pro Produkt kann die Leistung beeint
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -170,7 +170,7 @@ Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -179,7 +179,7 @@ Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Konfiguration des Storefront-Katalogs, um die Option &quot;**Produkte pro Seite zulassen“** deaktivieren.
 
-Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Paginierungssteuerelemente für die Produktliste, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Konfigurieren von Paginierungssteuerelementen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=de#configure-the-pagination-controls).
+Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Paginierungssteuerelemente für die Produktliste, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Konfigurieren von Paginierungssteuerelementen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Produkt-SKU-Beschränkungen
 
@@ -187,7 +187,7 @@ Die Konfiguration zu vieler Produkt-SKUs kann die Leistung beeinträchtigen, ind
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -197,12 +197,12 @@ Die Konfiguration zu vieler Produkt-SKUs kann die Leistung beeinträchtigen, ind
 Verwenden Sie die folgenden Strategien, um die Anzahl der Produkte (SKUs) zu reduzieren:
 
 - Multiplikatoren minimieren—
-   - Die Konsolidierung von Websites reduziert den Multiplikator.
-   - Verwenden Sie alternative Produktfunktionen für benutzerdefinierte Preise, um freigegebene Katalog- und Kundengruppen-Multiplikatoren zu ersetzen.
-   - Sowohl Kundengruppen als auch freigegebene Kataloge fungieren als Multiplikatoren für die Anzahl der effektiven SKUs in einem Geschäft.
+  - Die Konsolidierung von Websites reduziert den Multiplikator.
+  - Verwenden Sie alternative Produktfunktionen für benutzerdefinierte Preise, um freigegebene Katalog- und Kundengruppen-Multiplikatoren zu ersetzen.
+  - Sowohl Kundengruppen als auch freigegebene Kataloge fungieren als Multiplikatoren für die Anzahl der effektiven SKUs in einem Geschäft.
 - Katalog neu strukturieren—
-   - Reduzieren Sie die Anzahl der Produkte, die Kategorien zugewiesen sind.
-   - Verringern Sie die Anzahl der SKUs, indem Sie die Anzahl der Websites, Kundengruppen, freigegebenen Kataloge, die Anzahl der Produkte oder die Anzahl der konfigurierbaren Produktoptionen verringern.
+  - Reduzieren Sie die Anzahl der Produkte, die Kategorien zugewiesen sind.
+  - Verringern Sie die Anzahl der SKUs, indem Sie die Anzahl der Websites, Kundengruppen, freigegebenen Kataloge, die Anzahl der Produkte oder die Anzahl der konfigurierbaren Produktoptionen verringern.
 - Stellen Sie mehr Produktvarianten bereit, indem Sie benutzerdefinierte Optionen verwenden, anstatt separate Produkte zu erstellen.
 - Unter Berücksichtigung der Tatsache, dass eine effektive SKU eine Reihe potenzieller Permutationen von Preisen enthalten könnte, da Preise für jedes Geschäft oder jede Kundengruppe unterschiedlich angegeben werden können.
 - Deaktivieren oder entfernen Sie nicht verwendete Systemkomponenten wie Module. Siehe [Module deinstallieren](../../../installation/tutorials/uninstall-modules.md).
@@ -214,7 +214,7 @@ Die Konfiguration zu vieler Varianten pro Produkt kann die Leistung beeinträcht
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -241,15 +241,15 @@ Eine Überschreitung der empfohlenen Anzahl von Produktvarianten kann sich auf f
 Befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in einem Warenkorb zu konfigurieren:
 
 - **Verkaufsregeln (Regeln für den Warenkorbpreis)**
-   - Verwalten und Entfernen nicht verwendeter Regeln.
-   - Fügen Sie strenge Regelbedingungen (wie Attribut- oder Kategoriefilter) für eine effiziente Zuordnung hinzu.
+  - Verwalten und Entfernen nicht verwendeter Regeln.
+  - Fügen Sie strenge Regelbedingungen (wie Attribut- oder Kategoriefilter) für eine effiziente Zuordnung hinzu.
 - **Coupons**
-   - Entfernen Sie nicht verwendete und abgelaufene Gutscheine.
-   - Generieren Sie nur die Anzahl der Coupons, die zur Erfüllung der Kampagnenanforderungen erforderlich sind.
+  - Entfernen Sie nicht verwendete und abgelaufene Gutscheine.
+  - Generieren Sie nur die Anzahl der Coupons, die zur Erfüllung der Kampagnenanforderungen erforderlich sind.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

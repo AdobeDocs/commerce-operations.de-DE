@@ -2,9 +2,9 @@
 title: Jahresplanung für Upgrades
 description: Tipps zum Erstellen eines jährlichen Aktualisierungsplans für Ihr Adobe Commerce-Projekt.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Viele Unternehmen arbeiten mit jährlichen Budgets und Roadmaps. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über den Zustand Ihrer Plattform, Ihre Ausrichtung und Ihre Upgrade-Strategie für das Jahr sprechen und auch darüber, wie sie zu den allgemeinen Zielen und KPIs (Key Performance Indicators) des Unternehmens passt.
 
-Nach dem [Veröffentlichungszeitplan](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/schedule) müssen Sie Budget- und Versionsfenster für Upgrades zuweisen, um Feiertage, Firmenschließungen und Spitzenzeiten zu vermeiden. Indem Sie den Adobe-Veröffentlichungszeitplan verstehen und durch die [Versionshinweise) immer auf dem Laufenden bleiben, welche Änderungen und Verbesserungen Teil jeder Version &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/release/notes/overview), können Sie Ihr Jahr besser planen.
+Nach dem [Veröffentlichungszeitplan](/help/release/schedule.md) müssen Sie Budget- und Versionsfenster für Upgrades zuweisen, um Feiertage, Firmenschließungen und Spitzenzeiten zu vermeiden. Indem Sie den Adobe-Veröffentlichungszeitplan verstehen und durch die [Versionshinweise) immer auf dem Laufenden bleiben, welche Änderungen und Verbesserungen Teil jeder Version ](/help/release/release-notes/overview.md), können Sie Ihr Jahr besser planen.
 
 Bei der Planung sollten Sie sich folgende Fragen stellen:
 
