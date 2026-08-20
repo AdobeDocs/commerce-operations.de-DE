@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40537: Beim Erstellen der Store-Ansicht wird ein Fehler ausgegeben, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.'
-description: Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
+description: Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 feature: CMS
 role: Admin
 exl-id: 10c3d935-dbc9-4033-85a1-041b8af74d78
@@ -90,7 +90,7 @@ Exception message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplica
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
@@ -99,4 +99,4 @@ Weitere Informationen zum Quality Patches Tool finden Sie unter:
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
 * [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de).

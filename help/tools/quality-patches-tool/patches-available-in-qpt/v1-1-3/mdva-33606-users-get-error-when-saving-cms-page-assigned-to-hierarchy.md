@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-33606: Beim Speichern einer CMS-Seite, die einer Hierarchie zugewiesen ist, wird eine Fehlermeldung angezeigt'
-description: Mit dem Patch MDVA-33606 wird das Problem behoben, dass beim Speichern einer CMS-Seite, die der Hierarchiestruktur zugewiesen ist, der Fehler *Eindeutige Einschränkungsverletzung gefunden* angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-33606. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+description: Mit dem Patch MDVA-33606 wird das Problem behoben, dass beim Speichern einer CMS-Seite, die der Hierarchiestruktur zugewiesen ist, der Fehler *Eindeutige Einschränkungsverletzung gefunden* angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-33606. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 feature: CMS
 role: Admin
 exl-id: 19aaa13f-7ee6-49bc-b1d9-c288dc93b951
@@ -64,7 +64,7 @@ Es wird folgender Fehler angezeigt: *Eindeutige Einschränkungsverletzung gefund
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

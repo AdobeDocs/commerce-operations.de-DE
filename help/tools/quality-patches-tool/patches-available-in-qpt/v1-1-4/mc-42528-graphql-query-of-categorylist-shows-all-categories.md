@@ -1,6 +1,6 @@
 ---
 title: 'MC-42528: GraphQL-Abfrage der categoryList zeigt alle Kategorien an'
-description: Der Patch MC-42528 löst das Problem, dass die GraphQL-Abfrage von „categoryList“ sowohl zugewiesene als auch nicht zugewiesene Kategorien zurückgibt, wenn die Navigationskategorie einer bestimmten Kategorie auf „Ablehnen“ eingestellt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MC-42528. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+description: Der Patch MC-42528 löst das Problem, dass die GraphQL-Abfrage von „categoryList“ sowohl zugewiesene als auch nicht zugewiesene Kategorien zurückgibt, wenn die Navigationskategorie einer bestimmten Kategorie auf „Ablehnen“ eingestellt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MC-42528. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin
 exl-id: 0611a7ff-9d55-4d95-9d4e-9ce1d9096bb6
@@ -56,7 +56,7 @@ In der Antwort werden alle Kategorien angezeigt, unabhängig von den Browserbere
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

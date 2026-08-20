@@ -29,7 +29,7 @@ Hierbei gilt
 
 >[!NOTE]
 >
->Module können nicht direkt in Cloud-Projekten aktiviert oder deaktiviert werden. Sie müssen diese Befehle lokal ausführen und dann Änderungen für eine Umgebung an die `app/etc/config.php`-Datei pushen. Siehe [Pro-Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
+>Module können nicht direkt in Cloud-Projekten aktiviert oder deaktiviert werden. Sie müssen diese Befehle lokal ausführen und dann Änderungen für eine Umgebung an die `app/etc/config.php`-Datei pushen. Siehe [Pro-Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
 
 ## Modul aktivieren, deaktivieren
 

@@ -27,7 +27,7 @@ Konfigurieren Sie einen Sperranbieter, um den Start doppelter Cron-Aufträge und
 
 Adobe Commerce verwendet die -Datenbank, um Sperren standardmäßig zu speichern. Wenn Sie mehrere Knoten auf Ihren Servern haben, empfehlen wir die Verwendung von ZooKeeper als Sperranbieter.
 
-Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud).
+Wenn Sie Adobe Commerce in der Cloud-Infrastruktur ausführen, müssen Sie keine Sperranbietereinstellungen konfigurieren. Die Anwendung konfiguriert den Dateisperranbieter für Pro-Projekte während des Bereitstellungsprozesses. Siehe [Cloud-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud).
 
 ### Befehlsverwendung
 

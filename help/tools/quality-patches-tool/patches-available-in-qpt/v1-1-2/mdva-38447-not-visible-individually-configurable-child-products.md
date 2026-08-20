@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-38447: Konfigurierbare untergeordnete Produkte, die einzeln nicht sichtbar sind, werden in der GraphQL-Antwort und in der langsamen MySQL-Abfrage zurückgegeben'
-description: Der Patch für MDVA-38447 Adobe Commerce behebt das Problem, dass in der GraphQL-Antwort konfigurierbare untergeordnete Produkte mit der Meldung „Nicht einzeln sichtbar“ zurückgegeben werden und die langsame MySQL-Abfrage für GraphQL-Produkte mit dem Kategoriefilter läuft. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-38447. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+description: Der Patch für MDVA-38447 Adobe Commerce behebt das Problem, dass in der GraphQL-Antwort konfigurierbare untergeordnete Produkte mit der Meldung „Nicht einzeln sichtbar“ zurückgegeben werden und die langsame MySQL-Abfrage für GraphQL-Produkte mit dem Kategoriefilter läuft. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-38447. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
 exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
@@ -89,7 +89,7 @@ Produkte mit der Einstellung „Sichtbarkeit nicht einzeln sichtbar“ werden al
 Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
@@ -98,4 +98,4 @@ Weitere Informationen zu Qualitäts-Patches für Adobe Commerce finden Sie unter
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
 * [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de).

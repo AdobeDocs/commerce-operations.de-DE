@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-26005: Kategorie kann in der Baumstruktur nicht für Warenkorb-Preisregelbedingungen ausgewählt werden.'
-description: Der Patch MDVA-26005 löst das Problem, dass Benutzende keine Kategorie in der Kategoriestruktur für Warenkorbpreisregelbedingungen auswählen können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-26005. Beachten Sie, dass das Problem in Adobe Commerce 2.3.6 behoben wurde.
+description: Der Patch MDVA-26005 löst das Problem, dass Benutzende keine Kategorie in der Kategoriestruktur für Warenkorbpreisregelbedingungen auswählen können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-26005. Beachten Sie, dass das Problem in Adobe Commerce 2.3.6 behoben wurde.
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 exl-id: 02d9eef4-89f0-48be-8bb9-c62bbdad76a5
@@ -53,7 +53,7 @@ Es kann keine Kategorie aufgrund eines JS-Fehlers ausgewählt werden.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

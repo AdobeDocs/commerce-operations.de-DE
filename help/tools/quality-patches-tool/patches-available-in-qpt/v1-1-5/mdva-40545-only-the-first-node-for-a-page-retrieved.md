@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40545: Nur der erste Knoten für eine Seite wird abgerufen'
-description: Mit dem Patch MDVA-40545 wird das Problem behoben, dass nur der erste Knoten für eine Seite abgerufen wird, selbst wenn für dieselbe Seite mehr als ein Knoten vorhanden ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-40545. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+description: Mit dem Patch MDVA-40545 wird das Problem behoben, dass nur der erste Knoten für eine Seite abgerufen wird, selbst wenn für dieselbe Seite mehr als ein Knoten vorhanden ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-40545. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: CMS, Cache
 role: Admin
 exl-id: f87344e9-5a63-4c38-af2b-1500ef053dec
@@ -55,7 +55,7 @@ Breadcrumbs und Links im zweiten Untermenü sind mit dem ersten Untermenü ident
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
