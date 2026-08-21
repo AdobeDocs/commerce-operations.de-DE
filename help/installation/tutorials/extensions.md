@@ -2,7 +2,7 @@
 title: Erweiterungen von Drittanbietern verwalten
 description: Führen Sie die folgenden Schritte aus, um Adobe Commerce Extensions zu installieren, zu aktivieren, zu aktualisieren und zu deinstallieren.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Zu den Erweiterungen gehören:
 - Designs (Ändern des Erscheinungsbilds Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Lokalisieren der Storefront und Admin)
 
-In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions).
 
 Sie können dieselbe Vorgehensweise verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie dazu die `composer.json`-Datei der Erweiterung und notieren Sie sich die Werte für `"name"` und `"version"`.
 

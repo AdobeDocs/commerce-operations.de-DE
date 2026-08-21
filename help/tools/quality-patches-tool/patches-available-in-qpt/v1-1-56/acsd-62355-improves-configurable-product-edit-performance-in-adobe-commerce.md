@@ -5,9 +5,9 @@ feature: Admin Workspace
 role: Admin, Developer
 exl-id: cd934aa9-901a-4f03-ab83-716131e6bd85
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
@@ -56,8 +56,8 @@ Das Laden der konfigurierbaren Produktbearbeitungsseite dauert lange, wenn das k
 
 1. Erstellen Sie ein konfigurierbares Produkt, das die neu erstellten Attribute verwendet:
    * Fügen Sie ein untergeordnetes Produkt mit der folgenden Konfiguration hinzu:
-      * Verwenden Sie die letzte Option aus Attribut 1 und die erste Option aus Attribute 2 bis 9.
-      * Dies führt zu einem konfigurierbaren Produkt und einem untergeordneten Produkt.
+     * Verwenden Sie die letzte Option aus Attribut 1 und die erste Option aus Attribute 2 bis 9.
+     * Dies führt zu einem konfigurierbaren Produkt und einem untergeordneten Produkt.
 1. Wechseln Sie zur Registerkarte **[!UICONTROL Configurations]** des konfigurierbaren Produkts.
 1. Klicken Sie auf Manuell **[!UICONTROL Add Products]** und beginnen Sie mit dem Hinzufügen der zuvor erstellten einfachen Produkte einzeln.
 1. Speichern Sie die Änderungen nach jedem Hinzufügen.
@@ -77,7 +77,7 @@ Das Bearbeiten des konfigurierbaren Produkts dauert lange, bis es geladen wird, 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

@@ -2,7 +2,7 @@
 title: Schnellstart-On-Premise-Installation
 description: Erfahren Sie, wie Sie Adobe Commerce mithilfe von Composer in Ihrer eigenen Infrastruktur installieren. Erfahren Sie mehr über Schnellstartschritte und Konfigurationsanforderungen.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
@@ -93,7 +93,7 @@ So rufen Sie das Adobe Commerce-Metapaket ab:
 
    >[!NOTE]
    >
-   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
+   > Wenn Sie eine Composer `[auth.json](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/authentication-keys)`-Datei oder Umgebungsvariable verwenden, die mit Ihren Commerce-Authentifizierungsschlüsseln konfiguriert wurde, werden Sie nicht aufgefordert, Authentifizierungsschlüssel einzugeben.
 
    Wenn Fehler wie `Could not find package...` oder `...no matching package found` auftreten, stellen Sie sicher, dass der Befehl keine Tippfehler enthält. Wenn weiterhin Fehler auftreten, sind Sie möglicherweise nicht berechtigt, Adobe Commerce herunterzuladen. Wenden Sie sich an den [Adobe Commerce](https://support.magento.com/hc/en-us)Support, um Hilfe zu erhalten.
 

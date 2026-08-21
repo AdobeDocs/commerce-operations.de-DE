@@ -2,9 +2,9 @@
 title: Upgrade-Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Upgrade-Implementierung für Adobe Commerce-Projekte.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 3c54a3c429a3dadc826bffcb91f99a5a3a31b42c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -29,9 +29,9 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
 - **[!DNL Upgrade Compatibility Tool]Ergebnisse**: Dieses Tool macht jedes Upgrade schneller und einfacher, indem Ihr aktueller Code mit dem Code der Zielversion verglichen wird und ein Bericht über alle Probleme erstellt wird, die behoben werden müssen. Siehe die [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Zu den wichtigsten Details des Berichts gehören:
 
-   - Aktuelle installierte Version
-   - Zielversion aktualisieren
-   - Anzahl und Details der gefundenen kritischen Fehler
+  - Aktuelle installierte Version
+  - Zielversion aktualisieren
+  - Anzahl und Details der gefundenen kritischen Fehler
 
   >[!TIP]
   >
@@ -88,4 +88,4 @@ Besprechen Sie abschließend mit Ihrem Team die gewonnenen Erkenntnisse und Fall
 
 Überprüfen Sie nach dem Start Ihrer Site Ihre Analysedaten, die Google-Suchkonsole und andere Ressourcen, um sicherzustellen, dass es keine unerwarteten Probleme gibt und alles erwartungsgemäß funktioniert.
 
-Es ist immer empfehlenswert, die Leistung mit gut konzipierten Überwachungs-Tools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Achten Sie daher darauf, eines auszuwählen, das gut zu Ihrer Organisation passt. Wir empfehlen, dass Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, Services wie [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=de) zur Überwachung der Site-Leistung nutzen.
+Es ist immer empfehlenswert, die Leistung mit gut konzipierten Überwachungs-Tools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Achten Sie daher darauf, eines auszuwählen, das gut zu Ihrer Organisation passt. Wir empfehlen, dass Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, Services wie [New Relic](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) zur Überwachung der Site-Leistung nutzen.

@@ -2,9 +2,9 @@
 title: Abrufen der Adobe Commerce-Software
 description: Erfahren Sie, wie Sie die Adobe Commerce-Software mit Composer erhalten, die Kompatibilität der Erweiterungen überprüfen und die richtige Distribution für die Installation auswählen.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere eCom
 
 ## So erhalten Sie die Software
 
-Überprüfen Sie die Verfügbarkeit und Kompatibilität von von von Adobe erstellten Erweiterungen und Commerce-Services für Adobe Commerce und Magento Open Source auf unserer [Produktverfügbarkeitsseite](https://experienceleague.adobe.com/de/docs/commerce-operations/release/product-availability).
+Überprüfen Sie die Verfügbarkeit und Kompatibilität von von von Adobe erstellten Erweiterungen und Commerce-Services für Adobe Commerce und Magento Open Source auf unserer [Produktverfügbarkeitsseite](/help/release/product-availability.md).
 
 >[!NOTE]
 >

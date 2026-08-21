@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Datenbankprobleme beheben, die die Leistung a
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Sie können MySQL verwenden, um lang laufende Abfragen für jedes Adobe Commerce
 Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie das Percona Toolkit zur Analyse von Abfragen verwenden.
 
 1. Führen Sie den `pt-query-digest --type=slowlog`-Befehl für MySQL-Protokolle mit langsamen Abfragen aus.
-   * Den Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) in unserer Entwicklerdokumentation.
+   * Den Speicherort der langsamen Abfrageprotokolle finden Sie unter **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs) in unserer Entwicklerdokumentation.
    * Weitere Informationen finden [&#x200B; in der Dokumentation zu Percona Toolkit > pt-query](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest)digest.
 1. Führen Sie basierend auf den gefundenen Problemen Schritte aus, um die Abfrage zu beheben, damit sie schneller ausgeführt wird.
 
@@ -66,7 +66,7 @@ Vermeiden Sie diese Probleme, indem Sie einen Primärschlüssel für alle Tabell
 
    Wenn Sie den Knoten hinzufügen, ersetzen Sie die Variablen `referenceID` und `column name` durch Ihre benutzerdefinierten Werte.
 
-Weitere Informationen finden Sie unter [Konfigurieren eines deklarativen Schemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie unter [Konfigurieren eines deklarativen Schemas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) in unserer Entwicklerdokumentation.
 
 ## Identifizieren und Entfernen doppelter Indizes
 

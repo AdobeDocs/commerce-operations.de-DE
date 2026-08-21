@@ -3,9 +3,9 @@ title: Die Registerkarte [!UICONTROL Summary]
 description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL Summary]" von [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2636'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Die **[!UICONTROL Alerts during timeframe]** zeigt alle Warnhinweise an, einschl
 
 ![Nutzung von CPU](../../assets/tools/cpu-usage.jpg)
 
-Wenn der **[!UICONTROL CPU Usage]** leer ist, bedeutet dies, dass die Infrastrukturanwendung von [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn sich Ihre Site auf Pro befindet, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de), um [!DNL New Relic Infrastructure] für Ihre Site zu aktivieren.
+Wenn der **[!UICONTROL CPU Usage]** leer ist, bedeutet dies, dass die Infrastrukturanwendung von [!DNL New Relic] nicht aktiviert ist. Wenn sich Ihre Site auf Starter befindet, werden diese Informationen nicht angezeigt. Wenn sich Ihre Site auf Pro befindet, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um [!DNL New Relic Infrastructure] für Ihre Site zu aktivieren.
 
 ## [!UICONTROL Average Response Time]
 

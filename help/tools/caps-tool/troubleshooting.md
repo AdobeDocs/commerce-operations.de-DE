@@ -2,9 +2,9 @@
 title: Handbuch zur Fehlerbehebung [!DNL Cloud Automation Patching Service (CAPS)]
 description: Beheben häufiger Probleme und Fehlermeldungen in [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -243,8 +243,8 @@ Ausführlichere technische Informationen:
 
 ### Verwandte Themen
 
-* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce-Installationshandbuch](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview)
+* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
+* [Adobe Commerce-Installationshandbuch](/help/installation/overview.md)
 * [Einführung von CAPS](intro.md)
 * [Zugriff](access.md)
 * [Workflow-Übersicht](workflow.md)

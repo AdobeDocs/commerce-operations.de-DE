@@ -5,9 +5,9 @@ feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting
 exl-id: ecfdff54-99e0-4dbe-a0bb-80f60aafc7b6
-source-git-commit: 468c780f355c99cf06d557e530e81c414a01961e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Der **[!UICONTROL Design Configuration]** wird gelöscht. Das Design wird auf de
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
