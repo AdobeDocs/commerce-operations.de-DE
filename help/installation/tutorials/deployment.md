@@ -3,10 +3,10 @@ title: Erstellen oder Aktualisieren der Bereitstellungskonfiguration
 description: Führen Sie diese Schritte aus, um Ihre Adobe Commerce-Bereitstellungskonfiguration zu verwalten.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ In der folgenden Tabelle werden die Bedeutungen von Installationsparametern und 
 | `--db-user` | Benutzername des Inhabers der Datenbankinstanz.<br><br>Der Standardwert ist `root`. | Nein |
 | `--db-password` | Kennwort des Besitzers der Datenbankinstanz. | Nein |
 | `--db-prefix` | Verwenden Sie diese Option nur, wenn Sie die Datenbanktabellen in einer Datenbankinstanz installieren, in der bereits Adobe Commerce-Tabellen vorhanden sind.<br><br>Verwenden Sie in diesem Fall ein Präfix, um die Tabellen für diese Installation zu identifizieren. Bei einigen Kunden wird mehr als eine Adobe Commerce-Instanz auf einem Server ausgeführt, wobei alle Tabellen in derselben Datenbank vorhanden sind.<br><br>Das Präfix darf maximal fünf Zeichen lang sein. Sie muss mit einem Buchstaben beginnen und darf nur Buchstaben, Zahlen und Unterstriche enthalten.<br><br>Mit dieser Option können diese Kunden den Datenbankserver für mehr als eine Adobe Commerce-Installation freigeben. | Nein |
-| `--session-save` | Verwenden Sie eine der folgenden Möglichkeiten:<br><br>- `db`, um Sitzungsdaten in der [Datenbank](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) zu speichern. Wählen Sie Datenbankspeicher, wenn Sie eine geclusterte Datenbank haben. Andernfalls gibt es möglicherweise keinen großen Vorteil gegenüber dateibasiertem Speicher.<br><br>- `files` Sie Sitzungsdaten im Dateisystem speichern. Die dateibasierte Sitzungsspeicherung ist geeignet, es sei denn, der Dateisystemzugriff ist langsam, Sie haben eine geclusterte Datenbank oder Sie möchten Sitzungsdaten in Redis speichern.<br><br>- `redis` Sitzungsdaten in [Verwenden Sie Redis für die Sitzungsspeicherung](../../configuration/cache/config-redis.md). Wenn Sie Redis für das Standard- oder Seiten-Caching verwenden, muss Redis bereits installiert sein. | Nein |
+| `--session-save` | Verwenden Sie eine der folgenden Möglichkeiten:<br><br>- `db`, um Sitzungsdaten in der [Datenbank](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching) zu speichern. Wählen Sie Datenbankspeicher, wenn Sie eine geclusterte Datenbank haben. Andernfalls gibt es möglicherweise keinen großen Vorteil gegenüber dateibasiertem Speicher.<br><br>- `files` Sie Sitzungsdaten im Dateisystem speichern. Die dateibasierte Sitzungsspeicherung ist geeignet, es sei denn, der Dateisystemzugriff ist langsam, Sie haben eine geclusterte Datenbank oder Sie möchten Sitzungsdaten in Redis speichern.<br><br>- `redis` Sitzungsdaten in [Verwenden Sie Redis für die Sitzungsspeicherung](../../configuration/cache/config-redis.md). Wenn Sie Redis für das Standard- oder Seiten-Caching verwenden, muss Redis bereits installiert sein. | Nein |
 | `--key` | Wenn Sie über einen verfügen, geben Sie einen Schlüssel zum Verschlüsseln [sensibler Daten](#sensitive-data) in der Datenbank an. Wenn Sie noch keinen haben, generiert das Programm einen für Sie. | Nein |
 | `--db-init-statements` | Erweiterter MySQL-Konfigurationsparameter. Verwendet Anweisungen zur Datenbankinitialisierung, die beim Herstellen einer Verbindung mit der MySQL-Datenbank ausgeführt werden.<br><br>Der Standardwert ist `SET NAMES utf8;`.<br><br>Sehen Sie sich eine Referenz ähnlich [diese](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) an, bevor Sie Werte festlegen. | Nein |
 | `--http-cache-hosts` | Liste der HTTP-Cache-Gateway-Hosts, an die Bereinigungsanfragen gesendet werden sollen, durch Kommata getrennt (Zum Beispiel Server lackieren.) Verwenden Sie diesen Parameter, um den Host oder die Hosts anzugeben, die in derselben Anfrage bereinigt werden sollen. (Es spielt keine Rolle, ob Sie nur einen oder mehrere Hosts haben.)<br><br>Format muss `<hostname or ip>:<listen port>` sein, wobei Sie `<listen port>` auslassen können, wenn es Port 80 ist. Beispiel: `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. Trennen Sie Hosts nicht durch Leerzeichen. | Nein |

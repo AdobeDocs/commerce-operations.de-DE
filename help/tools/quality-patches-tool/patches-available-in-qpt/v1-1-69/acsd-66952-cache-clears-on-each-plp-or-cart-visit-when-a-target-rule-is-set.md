@@ -5,9 +5,9 @@ feature: Shopping Cart, Cache, Price Rules
 role: Admin, Developer
 type: Troubleshooting
 exl-id: abff5761-bcf1-4cfc-b5d9-6a7e1ca907e7
-source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Cache-Tags werden ungültig gemacht.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > &#x200B;](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen
 

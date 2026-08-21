@@ -4,13 +4,13 @@ description: Wenden Sie den ACSD-67264-Patch an, um das Adobe Commerce-Bundle un
 feature: Page Content, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b6794366ba552d86cdfc6a3d6f699c307fcd8f6
+exl-id: 783271ba-176c-4542-8dd8-82bc029ea453
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67264: Layout von Bundles und herunterladbaren Produktseiten ist auf allen Geräten inkonsistent
 
@@ -54,7 +54,7 @@ Die Bundle-Produkt-PDP wird mit zufälligen Leerzeichen gerendert.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > &#x200B;](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool]
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur
 
 ## Verwandtes Lesen
 

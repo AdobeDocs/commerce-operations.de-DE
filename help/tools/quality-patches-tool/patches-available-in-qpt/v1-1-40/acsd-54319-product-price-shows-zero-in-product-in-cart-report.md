@@ -5,16 +5,16 @@ feature: Reporting, Products
 role: Admin, Developer
 exl-id: 10052d32-99f8-4b45-9fe9-a4c45bcaaa44
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
 # ACSD-54319: Produktpreis zeigt Null *[!UICONTROL Products in Carts]* Bericht an
 
-Mit dem Patch ACSD-54319 wird das Problem behoben, dass der Produktpreis in *[!UICONTROL Products in Carts]* Bericht null anzeigt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.40 installiert ist. Die Patch-ID ist ACSD-54319. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
+Mit dem Patch ACSD-54319 wird das Problem behoben, dass der Produktpreis in *[!UICONTROL Products in Carts]* Bericht null anzeigt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.40 installiert ist. Die Patch-ID ist ACSD-54319. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -36,7 +36,7 @@ Der Produktpreis wird in *[!UICONTROL Products in Carts]* Bericht mit null angeg
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Legen Sie **[!UICONTROL Catalog Price Scope]** unter **[!UICONTROL Website]** > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Price]** auf **[!UICONTROL Catalog Price Scope]** fest.
+1. Legen Sie **[!UICONTROL Catalog Price Scope]** unter **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Price]** > **[!UICONTROL Catalog Price Scope]** auf **[!UICONTROL Website]** fest.
 1. Erstellen Sie eine zweite Website unter **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**.
 1. Erstellen Sie ein Produkt über **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 1. Dieses Produkt nur der zweiten Website zuweisen.
@@ -57,13 +57,13 @@ Der Produktpreis ist in *[!UICONTROL Products in Carts]* Berichtsraster gleich n
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

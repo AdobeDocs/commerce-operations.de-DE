@@ -5,16 +5,16 @@ feature: Customers, B2B
 role: Admin, Developer
 exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # ACSD-59930: Verbessert die Leistung der Unternehmensflüsse
 
-Mit dem Patch ACSD-59930 *wird das Problem behoben, dass im Admin* Bedienfeld der Fehler „Zeitüberschreitung“ angezeigt wird, wenn ein Unternehmen mit einem Administrator erstellt, gespeichert oder gelöscht wird, dessen Adressbuch *1000+* Adressen enthält. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.53 installiert ist. Die Patch-ID ist ACSD-59930. Dieses Problem wird voraussichtlich in Adobe Commerce B2B-1.5.0 behoben.
+Mit dem Patch ACSD-59930 *wird das Problem behoben, dass im Admin* Bedienfeld der Fehler „Zeitüberschreitung“ angezeigt wird, wenn ein Unternehmen mit einem Administrator erstellt, gespeichert oder gelöscht wird, dessen Adressbuch *1000+* Adressen enthält. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53 installiert ist. Die Patch-ID ist ACSD-59930. Dieses Problem wird voraussichtlich in Adobe Commerce B2B-1.5.0 behoben.
 
 ## Betroffene Produkte und Versionen
 
@@ -57,13 +57,13 @@ Ein Zeitüberschreitungsfehler wird angezeigt.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

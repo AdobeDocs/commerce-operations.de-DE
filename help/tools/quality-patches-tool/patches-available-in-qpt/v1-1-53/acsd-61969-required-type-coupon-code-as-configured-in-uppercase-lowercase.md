@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: 4bdf797b-2570-49f8-8e03-952b49ed1d18
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Sie müssen den Gutscheincode bei der Anwendung über das Backend genauso in Gro
 
 1. Erstellen Sie eine *[!UICONTROL Cart Price Rule]* mit einem bestimmten Coupon *TEST*. Achten Sie darauf, dass der Gutscheincode großgeschrieben ist.
 1. Erstellen Sie eine Bestellung in der Admin Console.
-1. Fügen Sie *Feld* den *[!UICONTROL Apply Coupon Code]* „Test“ hinzu und klicken Sie auf den Pfeil neben dem Feld, um den Coupon anzuwenden.
+1. Fügen Sie *Feld *[!UICONTROL Apply Coupon Code]*&#x200B;den* „Test“ hinzu und klicken Sie auf den Pfeil neben dem Feld, um den Coupon anzuwenden.
 1. Beobachten Sie das Ergebnis.
 
 <u>Erwartete Ergebnisse</u>:
@@ -56,7 +56,7 @@ Der Coupon wird nicht angewendet. Der folgende Fehler wird angezeigt:
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

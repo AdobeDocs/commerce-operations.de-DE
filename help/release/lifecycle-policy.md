@@ -3,10 +3,10 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-17T00:00:00Z
-source-git-commit: 7ba189685721799de047bc8d0e7108fa512f7120
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1353'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Adobe bietet keine Sicherheits- und Qualitätskorrekturen für Services und Soft
 
 Der standardmäßige dreijährige Support-Zeitraum ab dem Datum der allgemeinen Verfügbarkeit. Der Standard-Support umfasst Qualitätskorrekturen, Sicherheits-Patches und vollständigen Adobe Commerce-Support auf Abruf.
 
-- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) wenden.
+- **Qualitätskorrekturen** - Kunden können auf Qualitätskorrekturen zugreifen, indem sie sich an den [Adobe Commerce Support &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) oder über die Self-Service-[[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) wenden.
 
 - **Sicherheitskorrekturen** - Adobe bietet Sicherheitskorrekturen durch kumulative Sicherheits-Patches und nicht kumulative [isolierte Sicherheits-Patch-Dateien](versioning-policy.md#isolated-security-patch-file) für den dreijährigen Support-Zeitraum.
 

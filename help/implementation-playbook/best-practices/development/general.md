@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über allgemeine Best Practices für die Entwickl
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: 68dc4635df9fc411925fe0d48a578edece8895dc
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS�
 ## Versionierung
 
 Modulversionen MÜSSEN dem Standard [Semantic Versioning 2.0.0“ &#x200B;](https://semver.org/).
-Abhängigkeiten von der Adobe Commerce-Codebasis SOLLTEN den [Richtlinien für Modulversionsabhängigkeiten](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) entsprechen.
+Abhängigkeiten von der Adobe Commerce-Codebasis SOLLTEN den [Richtlinien für Modulversionsabhängigkeiten](https://developer.adobe.com/commerce/php/development/versioning/dependencies) entsprechen.
 
 ## REVISIONSKONTROLLE
 
@@ -58,7 +58,7 @@ Commits MÜSSEN von aussagekräftigen Commit-Nachrichten begleitet werden.
 
 ## Sicherheit
 
-1. [Nicht sichere Funktionen](https://developer.adobe.com/commerce/php/development/security/non-secure-functions/) SOLLTEN NICHT verwendet werden.
-1. [XSS-Präventionsstrategien](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/) SOLLTEN angewendet werden.
-1. [Inhaltssicherheitsrichtlinien](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) SOLLTEN angewendet werden.
+1. [Nicht sichere Funktionen](https://developer.adobe.com/commerce/php/development/security/non-secure-functions) SOLLTEN NICHT verwendet werden.
+1. [XSS-Präventionsstrategien](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting) SOLLTEN angewendet werden.
+1. [Inhaltssicherheitsrichtlinien](https://developer.adobe.com/commerce/php/development/security/content-security-policies) SOLLTEN angewendet werden.
 1. Neue Adobe Commerce-Instanzen SOLLTEN mit der neuesten Sicherheitsversion einer Version bereitgestellt werden, die das Datum des „Endes der Sicherheitskorrekturen“ noch nicht erreicht hat. Siehe [Adobe Commerce-Software-Lebenszyklusrichtlinie](../../../release/lifecycle-policy.md).

@@ -5,16 +5,16 @@ feature: Admin Workspace, Gift, Orders
 role: Admin
 exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
 # ACSD-48044: Durch mehrere Geschenkgutscheine wird verhindert, dass Bestellungen aufgegeben werden
 
-Mit dem Patch ACSD-48044 wird das Problem behoben, dass das Anwenden mehrerer Geschenkkarten auf eine Bestellung mit Mehrfachversand verhindert, dass Bestellungen aufgegeben werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.25 installiert ist. Die Patch-ID ist ACSD-48044. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
+Mit dem Patch ACSD-48044 wird das Problem behoben, dass das Anwenden mehrerer Geschenkkarten auf eine Bestellung mit Mehrfachversand verhindert, dass Bestellungen aufgegeben werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.25 installiert ist. Die Patch-ID ist ACSD-48044. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -63,30 +63,30 @@ Wenn Sie mehrere Geschenkgutscheine auf eine Bestellung mit mehreren Versandarte
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Beträge der Geschenkkarte werden mit dem Fehler &quot;*korrigieren Sie den Geschenkkartencode.“ gemischt.* bei der Bestellung.
+Die Beträge der Geschenkkarte werden mit dem Fehler *Bitte korrigieren Sie den Geschenkkartencode“* bei Auftragserteilung.
 
 * Erstes Produkt:
 
-   * Geschenkkarte entfernen (00GXM6SUGBLW) - $15.00
-   * Geschenkkarte entfernen (02KB8M0H0GRD) - $0.00
+  * Geschenkkarte entfernen (00GXM6SUGBLW) - $15.00
+  * Geschenkkarte entfernen (02KB8M0H0GRD) - $0.00
 
 * Zweites Produkt:
 
-   * Geschenkkarte entfernen (00GXM6SUGBLW) - $25.00
-   * Geschenkkarte entfernen (02KB8M0H0GRD) - $35.00
+  * Geschenkkarte entfernen (00GXM6SUGBLW) - $25.00
+  * Geschenkkarte entfernen (02KB8M0H0GRD) - $35.00
 
 ## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 

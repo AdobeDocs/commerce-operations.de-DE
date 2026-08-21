@@ -5,9 +5,9 @@ feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -46,12 +46,12 @@ Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tool
 
    * Öffentlicher freigegebener Katalog:
 
-      * Weisen Sie alle Kategorien dem öffentlichen Katalog zu.
+     * Weisen Sie alle Kategorien dem öffentlichen Katalog zu.
 
    * Privater freigegebener Katalog:
 
-      * Weisen Sie nur die `Gear` Kategorie und ihre untergeordneten Kategorien dem privaten Katalog zu.
-      * Weisen Sie den privaten Katalog einer Testfirma zu.
+     * Weisen Sie nur die `Gear` Kategorie und ihre untergeordneten Kategorien dem privaten Katalog zu.
+     * Weisen Sie den privaten Katalog einer Testfirma zu.
 
 1. Einen Unternehmensbenutzer erstellen:
 
@@ -102,7 +102,7 @@ Die Antwort aus der `categories` Abfrage zeigt keine Kategorien an.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen

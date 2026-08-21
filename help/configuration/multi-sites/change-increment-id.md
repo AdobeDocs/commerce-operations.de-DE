@@ -2,9 +2,9 @@
 title: Inkrement-ID ändern
 description: Erfahren Sie, wie Sie die Inkrement-IDs für Bestellungen, Rechnungen, Gutschriften und andere Commerce-Datenbankentitäten mithilfe von SQL ändern können, wenn Sie Sites zusammenführen oder wiederherstellen.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Möglicherweise müssen Sie in folgenden Fällen die Inkrement-ID für neue DB-E
 
 >[!INFO]
 >
->Sie können das Problem mit dem Zahlungs-Gateway für PayPal auch beheben, indem Sie in den Zahlungseingangsvoreinstellungen von PayPal mehrere Zahlungen pro Rechnungs-ID zulassen. Siehe [PayPal-Gateway-Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=de) in _Wissensdatenbank_.
+>Sie können das Problem mit dem Zahlungs-Gateway für PayPal auch beheben, indem Sie in den Zahlungseingangsvoreinstellungen von PayPal mehrere Zahlungen pro Rechnungs-ID zulassen. Siehe [PayPal-Gateway-Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26838) in _Wissensdatenbank_.
 
 ## Vorausgesetzte Schritte
 

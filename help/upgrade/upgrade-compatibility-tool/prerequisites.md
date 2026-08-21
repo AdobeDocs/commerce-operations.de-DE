@@ -2,9 +2,9 @@
 title: '[!DNL Upgrade Compatibility Tool]'
 description: Vergewissern Sie sich, dass Ihr System die erforderlichen Anforderungen erfüllt [!DNL Upgrade Compatibility Tool]  um das in einer Befehlszeilenschnittstelle für Ihr Adobe Commerce-Projekt auszuführen.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -80,4 +80,4 @@ Die [!DNL Upgrade Compatibility Tool] muss Zugriff auf den Quell-Code der Adobe 
 
 Wenn Sie das [!DNL Upgrade Compatibility Tool] für eine Adobe Commerce-Instanz mit großen Modulen und Dateien ausführen, benötigt das Tool möglicherweise eine hohe RAM-Menge (mindestens 2 GB).
 
-Führen Sie die [!DNL Upgrade Compatibility Tool] über die [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=de) für [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=de){target=_blank} aus.
+Führen Sie die [!DNL Upgrade Compatibility Tool] über die [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=de) für [Adobe Commerce in Cloud-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/overview){target=_blank} aus.

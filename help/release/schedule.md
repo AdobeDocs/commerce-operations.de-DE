@@ -2,9 +2,9 @@
 title: Patch-Veröffentlichungszeitplan
 description: Erfahren Sie, wann Adobe die Veröffentlichung neuer Patches und Sicherheitsfehlerbehebungen für Adobe Commerce plant.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -51,4 +51,4 @@ Adobe benachrichtigt Kunden über neue Patch-Versionen über die folgenden Kanä
 
 >[!NOTE]
 >
-> Die Veröffentlichungstermine für alle Minor-, Patch- und Sicherheits-Versionen sowie das Ende des regulären Supports finden Sie unter [Veröffentlichte Versionen](https://experienceleague.adobe.com/de/docs/commerce-operations/release/versions).
+> Die Veröffentlichungstermine für alle Minor-, Patch- und Sicherheits-Versionen sowie das Ende des regulären Supports finden Sie unter [Veröffentlichte Versionen](/help/release/versions.md).

@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über Best Practices für die Konfiguration von S
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -41,5 +41,5 @@ Websites und Stores sind Multiplikatoren für Katalogdaten, sodass sich eine gro
 
 ## Weitere Informationen
 
-- [Grundlegendes zu Websites, Stores und Store-Ansichten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Grundlegendes zu Websites, Stores und Store-Ansichten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Einrichten mehrerer Websites oder Stores](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

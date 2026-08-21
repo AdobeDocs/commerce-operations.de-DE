@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 badge: label="Beiträge von Tony Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Beiträge von Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Da es viele verschiedene Arten von Patches und viele Möglichkeiten gibt, sie an
 
 1. **Sicherheits** Patches sind Teil der statischen Code-Basis einer Adobe Commerce-Version.
 1. **Composer Patches** durch `composer install` und `composer update` Plugins wie [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Alle **erforderlichen Patches** im Paket [Cloud-Patches für Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=de) enthalten.
+1. Alle **erforderlichen Patches** im Paket [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) enthalten.
 1. Ausgewählte **Qualitäts-Patches** in der [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md) enthalten.
 1. **Benutzerdefinierte Patches** und Adobe Commerce-Support-Patches im `/m2-hotfixes`-Verzeichnis in alphabetischer Reihenfolge nach Patch-Namen.
 
@@ -61,13 +61,13 @@ Zusammenfassend lässt sich sagen, dass Sie für dieses zentralisierte Patch-Bei
 
 - **Komponentenpaket:** `centralized-patcher`
 
-   - Definiert die Liste der zu installierenden Qualitäts-Patches und -`m2-hotfixes`
-   - Erfordert das `centralized-patcher-composer-plugin`-Paket, das den Befehl `vendor/bin/magento-patches apply` nach `composer install` Vorgängen ausführt
+  - Definiert die Liste der zu installierenden Qualitäts-Patches und -`m2-hotfixes`
+  - Erfordert das `centralized-patcher-composer-plugin`-Paket, das den Befehl `vendor/bin/magento-patches apply` nach `composer install` Vorgängen ausführt
 
 - **Plug-in-Paket:** `centralized-patcher-composer-plugin`
 
-   - Definiert eine `CentralizedPatcher` PHP-Klasse, die die Quality Patches-Liste aus dem `centralized-patcher` liest
-   - Führt den Befehl `vendor/bin/magento-patches apply` aus, um die Liste der Qualitäts-Patches nach `composer install` zu installieren
+  - Definiert eine `CentralizedPatcher` PHP-Klasse, die die Quality Patches-Liste aus dem `centralized-patcher` liest
+  - Führt den Befehl `vendor/bin/magento-patches apply` aus, um die Liste der Qualitäts-Patches nach `composer install` zu installieren
 
 ### `centralized-patcher`
 
@@ -365,7 +365,7 @@ Wie bei Adobe Commerce in der Cloud-Infrastruktur wird in diesem Artikel davon a
 
 Auf diese Weise können Sie alle Ihre Patches für alle Ihre Installationen zentral verwalten und die Sicherheit und Stabilität Ihrer Adobe Commerce-Stores besser gewährleisten. Verwenden Sie die folgenden Methoden, um den Patch-Status zu überprüfen:
 
-- [Cloud-Infrastrukturprojekte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de#view-available-patches-and-status)
+- [Cloud-Infrastrukturprojekte](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [On-Premise-Projekte](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Code-Beispiele

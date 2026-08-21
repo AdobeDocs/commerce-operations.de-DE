@@ -3,7 +3,7 @@ title: Bereitstellungsübersicht
 description: Informationen zu Bereitstellungsstrategien für das Commerce-Programm.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Wir verwenden die folgenden Begriffe, um die an der Bereitstellung beteiligten S
 
 - **Staging-**: _Optional_. Optional können Sie ein Staging-System einrichten, das für das abschließende Testen des gesamten integrierten Codes verwendet wird, einschließlich Benutzerakzeptanztests (UAT). Richten Sie ein Staging-System auf die gleiche Weise ein wie ein Produktionssystem. Mit Ausnahme der Tatsache, dass die Staging-Umgebung nicht Ihr Live-Store ist und keine Bestellungen von Kunden verarbeitet, ist sie identisch mit der Produktion.
 
-- **Produktionssystem** - Ihr Live-Store. Hier sollten Sie minimale direkte Konfigurationsänderungen vornehmen und erst recht nichts, was nicht auf einer Staging-Instanz getestet wurde. Nehmen Sie nach Möglichkeit Konfigurationsänderungen mit [Daten-Patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) vor, die auf einer Staging-/Entwicklungsinstanz getestet wurden.
+- **Produktionssystem** - Ihr Live-Store. Hier sollten Sie minimale direkte Konfigurationsänderungen vornehmen und erst recht nichts, was nicht auf einer Staging-Instanz getestet wurde. Nehmen Sie nach Möglichkeit Konfigurationsänderungen mit [Daten-Patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) vor, die auf einer Staging-/Entwicklungsinstanz getestet wurden.
 
 ## Andere Bereitstellungsmethoden
 

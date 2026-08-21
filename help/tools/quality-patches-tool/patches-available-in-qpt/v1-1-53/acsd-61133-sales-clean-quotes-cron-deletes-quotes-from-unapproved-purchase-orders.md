@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-61133: &grave;sales_clean_quotes&grave; cron löscht Angebote aus nicht genehmigten Bestellungen'
+title: 'ACSD-61133: `sales_clean_quotes` cron löscht Angebote aus nicht genehmigten Bestellungen'
 description: Wenden Sie den Patch ACSD-61133 an, um das Adobe Commerce-Problem zu beheben, bei dem „sales_clean_quotes“ cron Angebote aus nicht genehmigten Bestellungen löscht.
 feature: B2B, Purchase Orders
 role: Admin, Developer
 exl-id: 06979d4b-08ea-40fe-a211-3d950c9afb47
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Die Bestellung wird nicht aufgegeben und ein Fehler wird in der Storefront angez
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

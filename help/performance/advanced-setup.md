@@ -2,7 +2,7 @@
 title: Erweitertes Setup
 description: Erfahren Sie, wie Sie das erweiterte Setup für Adobe Commerce einrichten. Hier finden Sie Schritt-für-Schritt-Anweisungen und Konfigurationsanforderungen.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Wenn Sie beispielsweise ein Profil ausführen, das dem B2B-Medium ähnelt, könn
 
 Eine große Anzahl von Produkt-SKUs, Websites, Kundengruppen oder freigegebenen Katalogen wirkt sich auf die Laufzeit der Indizierungen für Produktpreise und Katalogregeln aus. Dies liegt daran, dass standardmäßig alle Websites allen Kundengruppen (freigegebenen Katalogen) zugewiesen sind.
 
-Um die Indexierungszeit zu verkürzen, können Sie [bestimmte Websites aus Kundengruppen (freigegebene Kataloge) ausschließen](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+Um die Indexierungszeit zu verkürzen, können Sie [bestimmte Websites aus Kundengruppen (freigegebene Kataloge) ausschließen](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites).
 
 ## Einrichten von Redis
 
@@ -92,7 +92,7 @@ bin/magento setup:db-schema:add-slave
 
 Mit diesem Befehl werden Konfigurationsänderungen durchgeführt, die Replikation wird jedoch nicht selbst konfiguriert. Dies sollte manuell geschehen.
 
-Nach dem Aufteilen der Master-Datenbank und dem Einrichten der Slave-Datenbanken regelt [!DNL Commerce] automatisch die Verbindungen zu einer bestimmten Datenbank, wobei Entscheidungen auf der Grundlage der Art der Anfrage (POST, PUT, GET usw.) und der Datenressource getroffen werden. Wenn [!DNL Commerce] oder seine Erweiterungen Schreibvorgänge für eine GET-Anfrage durchführen, wechselt das System automatisch die Verbindung vom Slave zur Master-Datenbank. Dies funktioniert genauso wie bei Master-Datenbanken: Sobald Sie mit einer Checkout-bezogenen Tabelle arbeiten, leitet das System alle Abfragen an eine bestimmte Datenbank weiter. In der Zwischenzeit werden alle Katalogabfragen an die Hauptdatenbank gesendet.
+Nach dem Aufteilen der Master-Datenbank und dem Einrichten der Slave-Datenbanken regelt [!DNL Commerce] automatisch die Verbindungen zu einer bestimmten Datenbank und trifft Entscheidungen basierend auf der Art der Anfrage (POST, PUT, GET, etc.) und der Datenressource. Wenn [!DNL Commerce] oder seine Erweiterungen Schreibvorgänge für eine GET-Anfrage durchführen, schaltet das System die Verbindung automatisch vom Slave zur Master-Datenbank um. Dies funktioniert genauso wie bei Master-Datenbanken: Sobald Sie mit einer Checkout-bezogenen Tabelle arbeiten, leitet das System alle Abfragen an eine bestimmte Datenbank weiter. In der Zwischenzeit werden alle Katalogabfragen an die Hauptdatenbank gesendet.
 
 Weitere Informationen zur Konfiguration und den Vorteilen mehrerer Master/Slave-Konfigurationen finden Sie unter
 [Split-Datenbankleistungslösung](../configuration/storage/multi-master.md).

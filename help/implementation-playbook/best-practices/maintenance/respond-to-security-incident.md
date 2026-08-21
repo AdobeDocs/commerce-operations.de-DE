@@ -3,9 +3,9 @@ title: Reagieren auf einen Sicherheitsvorfall
 description: Handhabung von Sicherheitsvorfällen durch Befolgen von Best Practices, um auf Sicherheitsprobleme zu reagieren und diese zu beheben, die die Verfügbarkeit und Leistung der Site beeinträchtigen.
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -46,18 +46,18 @@ Im unglücklichen Fall einer Kompromisslösung für die Site gibt es einige wich
 - Wenden Sie Ihren Systemintegrator und das entsprechende Sicherheitspersonal an, um Untersuchungen und Korrekturmaßnahmen durchzuführen.
 
 - Bestimmen Sie den Umfang des Angriffs:
-   - Wurde auf Kreditkarteninformationen zugegriffen?
-   - Welche Informationen wurden gestohlen?
-   - Wie viel Zeit ist seit dem Kompromiss verstrichen?
-   - Wurden die Informationen verschlüsselt?
+  - Wurde auf Kreditkarteninformationen zugegriffen?
+  - Welche Informationen wurden gestohlen?
+  - Wie viel Zeit ist seit dem Kompromiss verstrichen?
+  - Wurden die Informationen verschlüsselt?
 
 - Versuchen Sie, den Angriffsvektor zu finden, um festzustellen, wann und wie die Site kompromittiert wurde, indem Sie die Server-Protokolldateien und Dateiänderungen überprüfen.
 
-   - Unter bestimmten Umständen kann es ratsam sein, alles zu löschen und neu zu installieren oder im Falle des virtuellen Hosting eine neue Instanz zu erstellen. Malware könnte an einem unerwarteten Ort versteckt sein, nur darauf wartend, sich selbst wiederherzustellen.
+  - Unter bestimmten Umständen kann es ratsam sein, alles zu löschen und neu zu installieren oder im Falle des virtuellen Hosting eine neue Instanz zu erstellen. Malware könnte an einem unerwarteten Ort versteckt sein, nur darauf wartend, sich selbst wiederherzustellen.
 
-   - Entfernen Sie alle unnötigen Dateien. Installieren Sie dann die erforderlichen Dateien aus einer bekannten, sauberen Quelle neu. Sie können beispielsweise eine Neuinstallation anhand der Dateien aus Ihrem Versionskontrollsystem oder aus den Originalverteilungsdateien aus Adobe durchführen.
+  - Entfernen Sie alle unnötigen Dateien. Installieren Sie dann die erforderlichen Dateien aus einer bekannten, sauberen Quelle neu. Sie können beispielsweise eine Neuinstallation anhand der Dateien aus Ihrem Versionskontrollsystem oder aus den Originalverteilungsdateien aus Adobe durchführen.
 
-   - Alle Anmeldedaten zurücksetzen, einschließlich Datenbank, Dateizugriff, Zahlungs- und Versandintegrationen, Webservices und Admin-Anmeldung. Setzen Sie außerdem alle Integrations- und API-Schlüssel und -Konten zurück, die möglicherweise zum Angriff auf das System verwendet werden.
+  - Alle Anmeldedaten zurücksetzen, einschließlich Datenbank, Dateizugriff, Zahlungs- und Versandintegrationen, Webservices und Admin-Anmeldung. Setzen Sie außerdem alle Integrations- und API-Schlüssel und -Konten zurück, die möglicherweise zum Angriff auf das System verwendet werden.
 
 ## Analysieren eines Vorfalls
 
@@ -73,13 +73,13 @@ Der erste Schritt der Incident-Analyse besteht darin, so schnell wie möglich so
 
   Verwenden Sie die **Sicherheit** im Tool, um einen klaren Überblick über potenzielle Sicherheitsprobleme zu erhalten und so die Grundursachen zu identifizieren und die optimale Leistung von Sites sicherzustellen.
 
-- Analysieren von Protokollen mit [New Relic-Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=de)
+- Analysieren von Protokollen mit [New Relic-Protokollen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
 
-  Adobe Commerce in Cloud Infrastructure Pro-Projekten umfassen den [Service &quot;New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=de)Protokolle“. Der Service ist so vorkonfiguriert, dass er alle Protokolldaten aus Ihren Staging- und Produktionsumgebungen aggregiert, um sie in einem zentralen Protokollverwaltungs-Dashboard anzuzeigen, in dem Sie aggregierte Daten suchen und visualisieren können.
+  Adobe Commerce in Cloud Infrastructure Pro-Projekten umfassen den [Service &quot;New Relic](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management)Protokolle“. Der Service ist so vorkonfiguriert, dass er alle Protokolldaten aus Ihren Staging- und Produktionsumgebungen aggregiert, um sie in einem zentralen Protokollverwaltungs-Dashboard anzuzeigen, in dem Sie aggregierte Daten suchen und visualisieren können.
 
   Für andere Commerce-Projekte können Sie den Dienst [New Relic Logs](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) einrichten und verwenden, um die folgenden Aufgaben auszuführen:
-   - Verwenden Sie [New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)Abfragen, um aggregierte Protokolldaten zu suchen.
-   - Visualisieren von Protokolldaten über die New Relic-Protokollanwendung
+  - Verwenden Sie [New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs)Abfragen, um aggregierte Protokolldaten zu suchen.
+  - Visualisieren von Protokolldaten über die New Relic-Protokollanwendung
 
 ## Audit-Konten, Code und Datenbank
 
@@ -93,9 +93,9 @@ Die Site nach dem Vorfall weiterhin genau überwachen, da viele Sites innerhalb 
 
 - [Überprüfen der Admin-Sicherheitseinstellungen](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=de) Überprüfen Sie, ob die Admin-Sicherheitseinstellungen den Best Practices für die Sicherheit entsprechen.
 
-- [Überprüfen von Benutzerkonten für Adobe Commerce in Cloud-Infrastrukturprojekten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de) - Entfernen Sie alte, nicht verwendete oder verdächtige Konten und rotieren Sie Kennwörter für alle Cloud-Projekt-Admin-Benutzer. Stellen Sie sicher, dass die Sicherheitseinstellungen des Kontos korrekt konfiguriert sind.
+- [Überprüfen von Benutzerkonten für Adobe Commerce in Cloud-Infrastrukturprojekten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access) - Entfernen Sie alte, nicht verwendete oder verdächtige Konten und rotieren Sie Kennwörter für alle Cloud-Projekt-Admin-Benutzer. Stellen Sie sicher, dass die Sicherheitseinstellungen des Kontos korrekt konfiguriert sind.
 
-- [Audit von SSH-Schlüsseln](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de) für Adobe Commerce in der Cloud-Infrastruktur - Überprüfen, Löschen und Drehen von SSH-Schlüsseln.
+- [Audit von SSH-Schlüsseln](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/secure-connections) für Adobe Commerce in der Cloud-Infrastruktur - Überprüfen, Löschen und Drehen von SSH-Schlüsseln.
 
 ### Prüfcode
 

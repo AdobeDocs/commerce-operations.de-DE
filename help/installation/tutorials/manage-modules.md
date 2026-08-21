@@ -2,9 +2,9 @@
 title: Module aktivieren oder deaktivieren
 description: Erfahren Sie, wie Sie den Status von Adobe Commerce-Modulen über die Befehlszeile mithilfe des Modulstatus und der zugehörigen Optionen aktivieren, deaktivieren und überprüfen.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Hierbei gilt
 
 >[!NOTE]
 >
->Module können nicht direkt in Cloud-Projekten aktiviert oder deaktiviert werden. Sie müssen diese Befehle lokal ausführen und dann Änderungen für eine Umgebung an die `app/etc/config.php`-Datei pushen. Siehe [Pro-Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=de#deployment-workflow).
+>Module können nicht direkt in Cloud-Projekten aktiviert oder deaktiviert werden. Sie müssen diese Befehle lokal ausführen und dann Änderungen für eine Umgebung an die `app/etc/config.php`-Datei pushen. Siehe [Pro-Projekt-Workflow: Bereitstellungs-Workflow](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
 
 ## Modul aktivieren, deaktivieren
 

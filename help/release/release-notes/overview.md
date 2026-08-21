@@ -2,7 +2,7 @@
 title: Versionshinweise zu Adobe Commerce
 description: Erfahren Sie, wo Sie Informationen zu bestimmten Versionen von Adobe Commerce finden.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 2%
@@ -40,18 +40,18 @@ Die nachstehende Tabelle enthält Versionshinweise und wichtige Informationen f�
             <li><a href="../lifecycle-policy.md">Lebenszyklusrichtlinie für Software</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">Durchsetzungsrichtlinie für die Cloud-Versionsaktualisierung</a></li>
             <li><a href="../security-enforcement-policy.md">Sicherheits- und Compliance-Hinweis</a></li>
-            <li><a href="https://helpx.adobe.com/de/security/products/magento.html">Adobe-Sicherheitsbulletin</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe-Sicherheitsbulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=de">B2B für Adobe Commerce</a></li>
           </ul>
         </td>
       <td><strong>Adobe Commerce auf Cloud-Infrastruktur</strong>
         <p>Erfahren Sie mehr über die neuesten Verbesserungen der Cloud Suite für Adobe Commerce-Pakete, die für die Bereitstellung und Verwaltung von Adobe Commerce-Installationen und -Upgrades auf der Cloud-Plattform entwickelt wurden.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Abwärtsinkompatible Änderungen</a></li>
-            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Cloud-Patches für Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker für Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Cloud-Komponenten für Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ECE-Tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">Abwärtsinkompatible Änderungen</a></li>
+            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Cloud-Patches für Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker für Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Cloud-Komponenten für Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ECE-Tools</a></li>
           </ul>
       </td>
     </tr>
