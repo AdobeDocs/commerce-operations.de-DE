@@ -2,7 +2,7 @@
 title: Übersetzungswörterbücher und Sprachpakete
 description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete für Adobe Commerce erstellen. Hier erfahren Sie mehr über Lokalisierung und die Einrichtung mehrsprachiger Stores.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ So erstellen Sie das Wörterbuch und beginnen mit der Übersetzung:
 
 1. Sie können die Übersetzungswörterbücher in ein Sprachpaket packen und dieses dem Commerce Store-Administrator bereitstellen.
 
-1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Befehlsoptionen:
 
@@ -90,7 +90,7 @@ Im Gegensatz zu einem Übersetzungswörterbuch können Sie jedes oder alle Wört
 In diesem Abschnitt wird beschrieben, wie Sie ein Sprachpaket erstellen, das CSV-Dateien in Module und Designs schreibt. Um ein Sprachpaket zu erstellen, müssen Sie die in den folgenden Abschnitten beschriebenen Aufgaben ausführen:
 
 1. [Sammeln und Übersetzen von Wörtern und Wortgruppen](#generate-a-translation-dictionary). (Der `--magento` ist erforderlich.)
-1. [Führen Sie den Sprachpaketbefehl &#x200B;](#run-the-language-package-command).
+1. [Führen Sie den Sprachpaketbefehl ](#run-the-language-package-command).
 1. [Erstellen von Verzeichnissen und Dateien](#create-directories-and-files).
 1. (Optional) [Konfigurieren mehrerer Pakete für eine Sprache](#configure-multiple-packages-for-a-language).
 
@@ -117,7 +117,7 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 - Erforderliche Lizenzdateien
 - `composer.json`
-- `registration.php`, [&#x200B; das &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-registration/) registriert
+- `registration.php`, [ das ](https://developer.adobe.com/commerce/php/development/build/component-registration) registriert
 - [`language.xml`](#language-package-languagexml)-Metadatendatei
 
 >[!INFO]
@@ -131,8 +131,8 @@ So erstellen Sie diese Dateien:
    Beispielsweise befinden sich Commerce-Sprachpakete in `app/i18n/magento`
 
 1. Erforderliche Lizenzdateien hinzufügen.
-1. Fügen Sie [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration/) hinzu, die Abhängigkeiten für Ihr Sprachpaket angeben.
-1. Registrieren des Sprachpakets bei [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration/)
+1. Fügen Sie [`composer.json`](https://developer.adobe.com/commerce/php/development/build/composer-integration) hinzu, die Abhängigkeiten für Ihr Sprachpaket angeben.
+1. Registrieren des Sprachpakets bei [`registration.php`](https://developer.adobe.com/commerce/php/development/build/component-registration)
 1. Fügen Sie `language.xml` Metadatendatei hinzu, wie im nächsten Abschnitt beschrieben.
 
 #### Sprachpaket language.xml

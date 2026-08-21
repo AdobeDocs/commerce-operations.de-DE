@@ -3,9 +3,9 @@ title: Konfigurationsdateien für die Bereitstellung
 description: Erfahren Sie, wie Konfigurationsdateien für die Bereitstellung von Adobe Commerce-Anwendungen funktionieren. Lernen Sie die Best Practices für die gemeinsame und systemspezifische Konfigurationsverwaltung kennen.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Die `config.php`-Datei enthält eine Liste der installierten Module. Adobe Comme
 Beispiele:
 
 - Komponenten deinstallieren: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Überprüfen des Status von Komponenten: [`bin/magento module:status`](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Überprüfen des Status von Komponenten: [`bin/magento module:status`](/help/tools/reference/commerce-on-premises.md#modulestatus)
 - Aktivieren oder Deaktivieren von Komponenten: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_

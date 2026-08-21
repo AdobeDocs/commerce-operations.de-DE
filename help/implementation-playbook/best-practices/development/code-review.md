@@ -4,7 +4,7 @@ description: Erfahren Sie mehr über Best Practices zur Überprüfung von Code f
 feature: Best Practices
 role: Developer
 exl-id: 1ef78bce-2e69-4c95-a26e-1bf7196ce546
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Beachten Sie außerdem die folgenden Punkte bei der Implementierung von Code-Üb
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -49,7 +49,7 @@ Beachten Sie außerdem die folgenden Punkte bei der Implementierung von Code-Üb
 
 Der Stil kann automatisch durch Ausführen der PhpStorm-Inspektion getestet werden (siehe unten).
 
-Stellen Sie sicher, [PHPMD und PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection/) zu konfigurieren und das [Coding Standard](https://github.com/magento/magento-coding-standard)-Tool über die CLI (auch unten) auszuführen. Es gibt einige Überschneidungen, aber beide verfügen auch über eindeutige Tests.
+Stellen Sie sicher, [PHPMD und PHPCS](https://developer.adobe.com/commerce/php/best-practices/phpstorm/code-inspection) zu konfigurieren und das [Coding Standard](https://github.com/magento/magento-coding-standard)-Tool über die CLI (auch unten) auszuführen. Es gibt einige Überschneidungen, aber beide verfügen auch über eindeutige Tests.
 
 ### Konvention und Struktur
 

@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit dem Quality Patches Tool Patches für Ado
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) stellt individuelle Patches bereit, die von Adobe und der Magento Open Source-Community entwickelt wurden. Damit können Sie allgemeine Informationen zu allen einzelnen Patches, die für die installierte Version von Adobe Commerce verfügbar sind, anwenden, zurücksetzen und anzeigen. Sie können Patches auf Adobe Commerce-Projekte anwenden, unabhängig davon, wer den Patch entwickelt hat. Sie können beispielsweise einen von der Community entwickelten Patch auf Adobe Commerce-Projekte anwenden.
 
-In diesem [technischen Video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=de) erfahren Sie, wie Sie das Quality Patches Tool für Adobe Commerce verwenden.
+In diesem [technischen Video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html) erfahren Sie, wie Sie das Quality Patches Tool für Adobe Commerce verwenden.
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](#apply-individual-patches)Projekte finden Sie unter „Anwenden einzelner Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](#apply-individual-patches)Projekte finden Sie unter „Anwenden einzelner Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!WARNING]
 >
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5.
 Die Statustabelle enthält:
 
 - **Typ**:
-   - `Optional` - Alle Patches aus dem [!DNL Quality Patches Tool] und dem Paket [Handbuch für Commerce in Cloud-Infrastruktur > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) sind für Adobe Commerce-Installationen optional.
-   - `Deprecated` - Adobe hat den einzelnen Patch eingestellt. Wenn Sie das Pflaster aufgeklebt haben, empfehlen wir, es rückgängig zu machen. Der Wiederherstellungsvorgang entfernt auch den Patch aus der Statustabelle.
+  - `Optional` - Alle Patches aus dem [!DNL Quality Patches Tool] und dem Paket [Handbuch für Commerce in Cloud-Infrastruktur > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) sind für Adobe Commerce-Installationen optional.
+  - `Deprecated` - Adobe hat den einzelnen Patch eingestellt. Wenn Sie das Pflaster aufgeklebt haben, empfehlen wir, es rückgängig zu machen. Der Wiederherstellungsvorgang entfernt auch den Patch aus der Statustabelle.
 
 - **Status**:
-   - `Applied` - Das Patch wurde angewendet.
-   - `Not applied` - Das Patch wurde nicht angewendet.
-   - `N/A` - Der Status des Patches kann aufgrund von Konflikten nicht definiert werden.
+  - `Applied` - Das Patch wurde angewendet.
+  - `Not applied` - Das Patch wurde nicht angewendet.
+  - `N/A` - Der Status des Patches kann aufgrund von Konflikten nicht definiert werden.
 
 - **Details**:
-   - `Affected components` - Die Liste der betroffenen Module.
-   - `Required patches` - Die Liste der Patches, die angewendet werden müssen, damit ein angegebenes Patch ordnungsgemäß funktioniert (Abhängigkeiten).
-   - `Recommended replacement` - Das Patch, das als Ersatz für einen veralteten Patch empfohlen wird.
+  - `Affected components` - Die Liste der betroffenen Module.
+  - `Required patches` - Die Liste der Patches, die angewendet werden müssen, damit ein angegebenes Patch ordnungsgemäß funktioniert (Abhängigkeiten).
+  - `Recommended replacement` - Das Patch, das als Ersatz für einen veralteten Patch empfohlen wird.
 
 >[!INFO]
 >
@@ -83,7 +83,7 @@ Die Statustabelle enthält:
 
 >[!WARNING]
 >
->Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=de).
+>Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Um einen einzelnen Patch anzuwenden, führen Sie den folgenden Befehl aus, wobei `MAGETWO-XXXX` die in der Statustabelle angegebene Patch-ID ist:
 
@@ -111,7 +111,7 @@ Sie müssen den Cache nach dem Anwenden von Patches bereinigen, um Änderungen i
 
 >[!WARNING]
 >
->Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=de).
+>Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Um einen einzelnen Patch wiederherzustellen, führen Sie den folgenden Befehl aus, wobei `MAGETWO-XXXX` die in der Statustabelle angegebene Patch-ID ist:
 
@@ -167,7 +167,7 @@ So wenden Sie Patches erneut an:
    composer update magento/quality-patches.
    ```
 
-1. Öffnen Sie die Liste der zuvor angewendeten Patches, die unter [Anwenden einzelner Patches“ empfohlen &#x200B;](#apply-individual-patches).
+1. Öffnen Sie die Liste der zuvor angewendeten Patches, die unter [Anwenden einzelner Patches“ empfohlen ](#apply-individual-patches).
 
 1. Patches anwenden:
 

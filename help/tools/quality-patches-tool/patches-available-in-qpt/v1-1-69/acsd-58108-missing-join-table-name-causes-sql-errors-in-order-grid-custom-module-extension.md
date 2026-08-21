@@ -4,13 +4,13 @@ description: Wenden Sie den Patch ACSD-58108 an, um das Adobe Commerce-Problem z
 feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 26009fee51fb81e2517ad09319bac1190d127564
+exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58108: SQL-Fehler treten aufgrund eines fehlenden Join-Tabellennamen im Reihenfolgen-Raster in der benutzerdefinierten Modulerweiterung auf
 
@@ -28,7 +28,7 @@ Der Patch ACSD-58108 behebt das Problem, dass ein fehlender Join-Tabellenname in
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -36,12 +36,12 @@ Der fehlende Join-Tabellenname in der ursprünglichen Abruftabelle führt zu SQL
 
 <u>Schritte zur Reproduktion</u>:
 
-&#x200B;01. Installieren Sie eine 2.4-develop-Instanz.
-&#x200B;02. Erstellen Sie eine neue Bestellung.
-&#x200B;03. Installieren Sie ein benutzerdefiniertes Modul mit einer SQL-Erweiterung.
-&#x200B;04. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-&#x200B;05. Wenden Sie den **[!UICONTROL Purchase Date]** an und warten Sie auf das Ergebnis.
-&#x200B;06. **[!UICONTROL Product SKU]** anwenden.
+01. Installieren Sie eine 2.4-develop-Instanz.
+02. Erstellen Sie eine neue Bestellung.
+03. Installieren Sie ein benutzerdefiniertes Modul mit einer SQL-Erweiterung.
+04. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+05. Wenden Sie den **[!UICONTROL Purchase Date]** an und warten Sie auf das Ergebnis.
+06. **[!UICONTROL Product SKU]** anwenden.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -56,7 +56,7 @@ Beim Anwenden von Filtern im Ordnungsraster tritt ein Fehler auf.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
