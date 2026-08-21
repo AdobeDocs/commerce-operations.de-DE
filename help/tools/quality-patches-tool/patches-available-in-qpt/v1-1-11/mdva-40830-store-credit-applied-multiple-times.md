@@ -44,30 +44,30 @@ Das Store-Guthaben wird bei der Auftragserteilung mehrmals angewendet.
 
 <pre>
 <code class="language-graphql">
-mutation {
+mutation &lbrace;
   applyStoreCreditToCart(
     input: { cart_id: "%cartId%" }
-  ) {
-    cart {
-      prices {
-        grand_total {
+  ) &lbrace;
+    cart &lbrace;
+      prices &lbrace;
+        grand_total &lbrace;
           currency
           value
-        }
-      }
-      applied_store_credit {
-        applied_balance {
+        &rbrace;
+      &rbrace;
+      applied_store_credit &lbrace;
+        applied_balance &lbrace;
           currency
           value
-        }
-        current_balance {
+        &rbrace;
+        current_balance &lbrace;
           currency
           value
-        }
-      }
-    }
-  }
-}
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
@@ -91,6 +91,6 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
 * [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) in der Support-Wissensdatenbank.
-* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
+* [Überprüfen Sie im [!DNL Quality Patches Tool]-Handbuch, ob für Ihr Adobe Commerce-Problem ein Patch &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
 Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

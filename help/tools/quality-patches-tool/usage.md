@@ -19,7 +19,7 @@ In diesem [technischen Video](https://experienceleague.adobe.com/docs/commerce-l
 
 >[!INFO]
 >
->Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](#apply-individual-patches)Projekte finden Sie unter „Anwenden einzelner Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](#apply-individual-patches)Projekte finden Sie unter „Anwenden einzelner Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!WARNING]
 >
@@ -167,7 +167,7 @@ So wenden Sie Patches erneut an:
    composer update magento/quality-patches.
    ```
 
-1. Öffnen Sie die Liste der zuvor angewendeten Patches, die unter [Anwenden einzelner Patches“ empfohlen ](#apply-individual-patches).
+1. Öffnen Sie die Liste der zuvor angewendeten Patches, die unter [Anwenden einzelner Patches“ empfohlen &#x200B;](#apply-individual-patches).
 
 1. Patches anwenden:
 

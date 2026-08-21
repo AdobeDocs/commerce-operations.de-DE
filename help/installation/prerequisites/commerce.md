@@ -68,4 +68,4 @@ UNIX-Systeme benötigen `root` Berechtigungen, um Software wie einen Webserver, 
 
 Installieren *nicht* die Anwendung im Webserver-Stammverzeichnis als `root` Benutzer, da der Webserver möglicherweise nicht mit diesen Dateien interagieren kann.
 
-Sie benötigen `root` Berechtigungen, um den [Dateisystembesitzer“ ](file-system/overview.md) erstellen und diesen Besitzer zur Gruppe des Webservers hinzuzufügen. Sie verwenden den Dateisystembesitzer, um `bin/magento` Befehle über die Befehlszeile auszuführen und Cron-Aufträge einzurichten, die Aufgaben für Sie planen.
+Sie benötigen `root` Berechtigungen, um den [Dateisystembesitzer“ &#x200B;](file-system/overview.md) erstellen und diesen Besitzer zur Gruppe des Webservers hinzuzufügen. Sie verwenden den Dateisystembesitzer, um `bin/magento` Befehle über die Befehlszeile auszuführen und Cron-Aufträge einzurichten, die Aufgaben für Sie planen.

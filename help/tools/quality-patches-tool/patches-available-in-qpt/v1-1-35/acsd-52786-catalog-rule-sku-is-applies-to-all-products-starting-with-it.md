@@ -39,7 +39,7 @@ Die Katalogregelbedingung *[!UICONTROL SKU is]* gilt für alle Produkte, die mit
 1. Erstellen Sie zwei Produkte, eines mit SKU „24“ und eines mit SKU „24-MB01“.
 1. Navigieren Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL Catalog Price Rule]** > **[!UICONTROL Add New Rule]**.
 1. Wenden Sie die folgende Bedingung an:
-   * *[!UICONTROL If ** ALLE **dieser Bedingungen sind** TRUE **]*: *[!UICONTROL SKU is 24]*
+   * *[!UICONTROL If **&#x200B; ALLE &#x200B;** dieser Bedingungen sind **&#x200B; TRUE &#x200B;**]*: *[!UICONTROL SKU is 24]*
 1. Legen Sie einen beliebigen Rabattbetrag in Aktionen fest.
 1. Klicken Sie auf **[!UICONTROL Save and Apply]**.
 1. Cache leeren.
@@ -64,7 +64,7 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) der Support-Wissensdatenbank.
 * [Überprüfen Sie, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) mithilfe von im [!UICONTROL Quality Patches Tool].
 
 
