@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Der Patch von ACSD-50368 ist teilweise veraltet, da dieses Problem durch den obligatorischen Sicherheitspatch (APSB25-08[&#x200B; für Versionen über 2.4.4 &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149) wird.
+>Der Patch von ACSD-50368 ist teilweise veraltet, da dieses Problem durch den obligatorischen Sicherheitspatch (APSB25-08[&#x200B; für Versionen über 2.4.4 &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27149) wird.
 
 Mit dem Patch ACSD-50368 wird das Problem behoben, dass group_id des Kunden ignoriert wird, wenn ein Kunde über die Async REST-API oder die Async Bulk REST-API erstellt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.33 installiert ist. Die Patch-ID ist ACSD-50368. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
@@ -126,7 +126,7 @@ Für den neuen Kunden wird group_id auf default 1 gesetzt.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
