@@ -37,4 +37,4 @@ Nachdem Sie den Fastly-Service für Ihr Adobe Commerce-Cloud-Projekt eingerichte
 ## Weitere Informationen
 
 - [Schnell einrichten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)
-- [Schlecht optimierte Bilder können zu Leistungsproblemen führen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow)
+- [Schlecht optimierte Bilder können zu Leistungsproblemen führen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow)
