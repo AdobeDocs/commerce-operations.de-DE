@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
+source-git-commit: 9f9c38163d91b655bf44cac81875dab59ee2c77d
 workflow-type: tm+mt
-source-wordcount: '2690'
-ht-degree: 1%
+source-wordcount: '2845'
+ht-degree: 0%
 
 ---
 # Neue Vorlage
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;19. August 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Die Dokumentation zur Zwischenspeicherung in Commerce wurde aktualisiert mit klareren On-Premise- vs. Cloud-Anleitungen und neuen Migrationsanleitungen für die Umstellung mit Symfony L2-Cache auf Valkey:<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/caching-overview">Übersicht über Zwischenspeicher und Konfigurationsoptionen</a>.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/cache-types">Konfigurieren von Cache-Frontends und -Typen</a>.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/cache-options">Cache-Backend-Optionen und Speicherreferenz</a>.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/level-two-cache">L2-Cache-Konfiguration zur Leistungsoptimierung</a> mit Anleitungen für die Migration von <code>RemoteSynchronizedCache</code> zu Symfony L2-Cache.<br />- Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration"></a> Best Practices für Valkey und Redis mit Cloud-spezifischen Migrationsschritten zu Symfony L2-Cache.</p>
+</td>
+      <td>
+        Größere Aktualisierung
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3a840b544de95a4bb17ef49d0325b16d461aecaa">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;14. August 2026
 
