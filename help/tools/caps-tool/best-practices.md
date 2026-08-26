@@ -28,7 +28,7 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
   * Projekt- und Umgebungsberechtigungen
 
 * **Umgebungsressourcen**
-  * Das Projekt kann eine zusätzliche aktive Integrationsumgebung für den Patch-Vorgang erstellen. Informationen zu den Beschränkungen für aktive Umgebungen finden [ unter „Verzweigungen mit der Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)Konsole verwalten.
+  * Das Projekt kann eine zusätzliche aktive Integrationsumgebung für den Patch-Vorgang erstellen. Informationen zu den Beschränkungen für aktive Umgebungen finden [&#x200B; unter „Verzweigungen mit der Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)Konsole verwalten.
   * Ausreichende Speicher-, CPU- und Speicherressourcen
   * Netzwerkzugriff auf Adobe-Repositorys
   * Stabile übergeordnete Umgebung für die Synchronisierung
