@@ -52,7 +52,7 @@ Dieses Handbuch richtet sich an Händler und Partner von Adobe Commerce Cloud, d
 
 Erfahren Sie mehr über [!DNL Adobe Commerce Patching Automation] und wie dieses Tool Benutzern hilft, Sicherheits-Patches schnell zu finden und anzuwenden. Im folgenden Video wird beschrieben, wie Sie über das Dashboard des Site-Wide Analysis Tool (SWAT) darauf zugreifen, Ihr Projekt und Ihre Umgebung auswählen und Patches mit einem Klick anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476256/?captions=ger&learn=on&enablevpops)
 
 ## Häufige Anwendungsfälle
 
