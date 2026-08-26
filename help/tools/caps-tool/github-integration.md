@@ -17,7 +17,7 @@ Wenn Ihr Adobe Commerce Cloud-Projekt mit einem GitHub-Repository verbunden ist,
 ## Voraussetzungen
 
 * Aktives Adobe Commerce Cloud-Abonnement
-* Eine [GitHub](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)Integration, die bereits für Ihr Adobe Commerce Cloud-Projekt konfiguriert ist und bei der die [`fetch-branches` aktiviert ist](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] erstellt und pusht temporäre Verzweigungen der Integrationsumgebung, sodass Patch-Vorgänge die Umgebung nicht erstellen, wenn diese Option deaktiviert ist.
+* Eine [GitHub](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github)Integration, die bereits für Ihr Adobe Commerce Cloud-Projekt konfiguriert ist und bei der die [`fetch-branches` aktiviert ist](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] erstellt und pusht temporäre Verzweigungen der Integrationsumgebung, sodass Patch-Vorgänge die Umgebung nicht erstellen, wenn diese Option deaktiviert ist.
 * Ein auf [!DNL github.com] gehostetes Repository. GitHub-Integrationen, die mit einer benutzerdefinierten Domain konfiguriert sind, werden nicht unterstützt.
 * Inhaber- oder Administratorzugriff auf die GitHub-Organisation oder das GitHub-Repository
 

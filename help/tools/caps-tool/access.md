@@ -35,7 +35,7 @@ Wenn in der [!DNL Patching Automation] Benutzeroberfläche keine Projekte angeze
 
 ## Zugriff auf [!DNL Patching Automation]
 
-[!DNL Patching Automation] ist als Registerkarte im [!DNL Site-Wide Analysis Tool]-Dashboard verfügbar. Sie können über Ihr Admin-Bedienfeld darauf zugreifen, indem Sie in der Admin-**zu** Berichte **>** Systemeinblicke **>** Site-Wide Analysis Tool wechseln. Unter [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) finden Sie Informationen zu Voraussetzungen und Berechtigungseinstellungen.
+[!DNL Patching Automation] ist als Registerkarte im [!DNL Site-Wide Analysis Tool]-Dashboard verfügbar. Sie können über Ihr Admin-Bedienfeld darauf zugreifen, indem Sie in der Admin-**zu** Berichte **>** Systemeinblicke **>** Site-Wide Analysis Tool wechseln. Unter [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access) finden Sie Informationen zu Voraussetzungen und Berechtigungseinstellungen.
 
 Sobald Sie sich im Dashboard befinden:
 
