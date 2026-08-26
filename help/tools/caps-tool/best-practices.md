@@ -1,19 +1,19 @@
 ---
-title: Handbuch zu Best Practices für [!DNL Cloud Automation Patching Service (CAPS)]
-description: Best Practices für die  [!DNL Cloud Automation Patching Service (CAPS)]  und sichere Verwendung
+title: Handbuch zu Best Practices für [!DNL Adobe Commerce Patching Automation]
+description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Patching Automation]  verwenden, um Patches sicher zu planen, zu validieren und anzuwenden und so das Bereitstellungsrisiko und Service-Unterbrechungen zu minimieren.
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# Handbuch zu Best Practices für [!DNL Cloud Automation Patching Service (CAPS)]
+# Handbuch zu Best Practices für [!DNL Adobe Commerce Patching Automation]
 
-Die Befolgung von Best Practices ist für erfolgreiche und sichere Patch-Vorgänge mit [!DNL Cloud Automation Patching Service] ([!DNL CAPS]) unerlässlich. Dieses Handbuch enthält umfassende Best Practices für effektive Patch-Vorgänge, Umgebungs-Management und hervorragende Betriebsabläufe.
+Die Befolgung von Best Practices ist für erfolgreiche und sichere Patch-Vorgänge mit [!DNL Adobe Commerce Patching Automation] unerlässlich. Dieses Handbuch enthält umfassende Best Practices für effektive Patch-Vorgänge, Umgebungs-Management und hervorragende Betriebsabläufe.
 
-## Best Practices für die Vorabinstallation von Patches
+## Best Practices für die Vorabbearbeitung von Patches
 
 ### Vorbereitung der Umgebung
 
@@ -24,21 +24,21 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 * **Adobe Commerce Cloud-Konto**
   * Aktives Adobe Commerce Cloud-Abonnement
   * Gültige Adobe Commerce-Lizenz
-  * Repository-Zugriffsberechtigungen konfiguriert
+  * [Composer-Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) für den Zugriff auf das Adobe Commerce-Repository konfiguriert
   * Projekt- und Umgebungsberechtigungen
 
 * **Umgebungsressourcen**
-  * Verfügbare Umgebungssteckplätze für temporäre Tests
+  * Das Projekt kann eine zusätzliche aktive Integrationsumgebung für den Patch-Vorgang erstellen. Informationen zu den Beschränkungen für aktive Umgebungen finden [ unter „Verzweigungen mit der Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)Konsole verwalten.
   * Ausreichende Speicher-, CPU- und Speicherressourcen
   * Netzwerkzugriff auf Adobe-Repositorys
   * Stabile übergeordnete Umgebung für die Synchronisierung
 
 * **Vorbereitung der Produktionsumgebung** (für Produktions-Patching)
-  * Wartungsmodus kann aktiviert werden
-  * Cron-Aufträge können deaktiviert werden
-  * Verfahren für Wartungsfenster eingerichtet
-  * Dokumentierte Rollback-Verfahren
-  * Kommunikationsplan für Stakeholder fertig
+  * Wartungsmodus aktivieren
+  * Cron-Aufträge deaktivieren
+  * Einrichten von Verfahren für Wartungsfenster
+  * Verfahren zum Zurücksetzen von Dokumenten
+  * Erstellung eines Kommunikationsplans für Stakeholder
 
 ## Best Practices für Patches
 
@@ -141,7 +141,7 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 
 ## Zusammenfassung der wichtigsten Best Practices
 
-### Wichtige Best Practices für [!DNL CAPS] Erfolg
+### Wichtige Best Practices für [!DNL Patching Automation] Erfolg
 
 * Immer in der Vorproduktion testen, bevor Patches auf Produktionsumgebungen angewendet werden
 * Wartungsmodus aktivieren und Cron-Aufträge für Produktions-Patch-Vorgänge deaktivieren
@@ -154,7 +154,7 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 
 ## Verwandte Themen
 
-* [Einführung von CAPS](intro.md)
+* [Einführung in die Patch-Automatisierung](intro.md)
 * [Zugriff](access.md)
 * [Workflow-Übersicht](workflow.md)
 * [GitHub-Integration](github-integration.md)
