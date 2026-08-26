@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
 workflow-type: tm+mt
 source-wordcount: 703
 ht-degree: 0%
@@ -44,9 +44,9 @@ QPT v1.1.82 enthält die folgenden Patches:
 1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: Es wird das Problem behoben, dass durch das erneute Bearbeiten eines Bildes in Page Builder-Textinhalten eine absolute Medien-URL gespeichert werden kann, anstatt eine portable Medienanweisung beizubehalten.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: Es wird ein Problem behoben, bei dem die Eingabe von 4-Byte-Unicode-Zeichen in den WYSIWYG-Editor oder Page Builder-Inhalt in der Admin fälschlicherweise blockiert wird, selbst wenn die Datenbank für die Unterstützung von utf8mb4 konfiguriert ist.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: Behebt das Problem, dass der Ablauf von Belohnungspunkten in Geschäften mit einem großen Belohnungspunktverlauf langsam abläuft, was zu Verzögerungen bei ablaufenden Belohnungspunkten führt.
+1. **[ACP2E-4840](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)**: Es wird das Problem behoben, bei dem der in der `products` GraphQL-Abfrage angeforderte Mengenwert null zurückgibt.
 1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: Es wird ein Problem behoben, bei dem die `requisition_lists GraphQL` Abfrage einen `total_count` zurückgibt, der nur die Anzahl der Elemente auf der aktuellen Seite anstelle der Gesamtzahl der Anforderungslisten widerspiegelt, die den Abfragekriterien entsprechen.
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**: Es wird das Problem behoben, dass Checkout-API-Anfragen für konfigurierbare Produkte mit vielen untergeordneten Produkten erheblich langsamer werden, wenn das erste verkaufbare untergeordnete Produkt spät in der Liste angezeigt wird.
-1. **ACP2E-4840**: Es wird das Problem behoben, bei dem der in der `products` GraphQL-Abfrage angeforderte Mengenwert &quot;*&quot;*.
 1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: Behebt das Problem, dass E-Mail-Benachrichtigungen zu Produktanzeigen die E-Mail-Einstellungen der Store-Ansicht ignorieren.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: Es wurde ein Problem behoben, durch das beim Anzeigen von Kundenkonten mit großen Adressbüchern im Admin unerwartet Admin-Benutzer abgemeldet wurden.
 1. **[ACP2E-4894](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4894.md)**: Es wird das Problem behoben, dass neue Bestellungen verzögert in den Auftragsverwaltungsrastern von Admin angezeigt werden, wenn **[!UICONTROL Asynchronous Indexing]** in Stores mit hohem Volumen aktiviert ist.

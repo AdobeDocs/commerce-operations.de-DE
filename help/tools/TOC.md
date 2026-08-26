@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10695'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   - [Erstellen eines Patch-Statusberichts](commerce-version-tool/generate-report.md)
   - [Fehlerbehebung](commerce-version-tool/troubleshooting.md)
   - [Versionshinweise](commerce-version-tool/release-notes.md)
-- KAPPEN {#caps-tool}
+- Automatisierung des Patching {#caps-tool}
   - {hide-from-toc}[Einführung](caps-tool/intro.md)
   - {hide-from-toc}[Zugriff](caps-tool/access.md)
   - {hide-from-toc}[Workflow-Übersicht](caps-tool/workflow.md)
@@ -1046,6 +1046,7 @@ ht-degree: 0%
       - [ACP2E-4709: CMS-Seiten werden in Page Builder nicht gespeichert, wenn die Seitenhierarchie doppelte Anführungszeichen enthält](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - v1.1.82 {#v1-1-82}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4840: Abfrage von GraphQL-Produkten gibt Null-Mengen für vorrätige Produkte in benutzerdefinierten Lagerbeständen zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)
       - [ACP2E-4695: Fehler wegen unzureichendem Arbeitsspeicher durch Katalogregel-Indexer aufgrund übermäßiger Speichernutzung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
       - [ACP2E-4194: GraphQL-Anfragen mit unbekannten Filternamen verursachen PHP-Ausnahmeprotokolle](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698: Page Builder-Text-Inline-Bearbeitung speichert absolute Medien-URLs anstelle der portablen Direktive](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)
