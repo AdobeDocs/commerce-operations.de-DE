@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9d4cd97d654a4837068876bb539559979a4a10e8
+source-git-commit: 5d8a71ce87b4a3e2fff956b9fbb52c60c4b6df57
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 24%
@@ -37,7 +37,7 @@ ht-degree: 24%
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>4.7.2</td>
+          <td>4.7.3</td>
           <td>4.7.2</td>
           <td>4.7.2</td>
           <td>4.7.2</td>
