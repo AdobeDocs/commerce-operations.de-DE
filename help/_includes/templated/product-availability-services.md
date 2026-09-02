@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5d8a71ce87b4a3e2fff956b9fbb52c60c4b6df57
+source-git-commit: 7c7431efa9d808c4d5839dea7fa1ee3bfc629696
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 24%
@@ -24,7 +24,7 @@ ht-degree: 24%
   <tbody>
       <tr>
           <td>Katalog-Service</td>
-          <td>3.5.0</td>
+          <td>3.6.0</td>
           <td>3.5.0</td>
           <td>3.5.0</td>
           <td>3.5.0</td>
