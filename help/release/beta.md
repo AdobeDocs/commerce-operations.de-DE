@@ -4,9 +4,9 @@ description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und w
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,23 @@ Wenn Sie frühzeitig auf von Adobe entwickelte Funktionen zugreifen können, erh
 ## Aktuelle Beta-Programme
 
 In den folgenden Abschnitten finden Sie eine Liste der aktiven Beta-Programme.
+
+### Attribut-Ranking (öffentliche Beta) {#attribute-ranking-public-beta}
+
+[!BADGE nur SaaS]{type=Positive url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."}
+
+[!DNL Adobe Commerce Optimizer] Merchandising-Regeln unterstützen jetzt **Attribut-Ranking**, das eine Aktion **Boost**, **Bury** oder **Hide** automatisch auf Produkte anwendet, die einer oder mehreren Attributbedingungen entsprechen, z. B. Marke, Kategorie oder Hersteller, ohne dass eine einzelne SKU ausgewählt werden muss. Das Attribut-Ranking wird im Regeleditor neben dem intelligenten Ranking und dem manuellen Ranking angezeigt. Verwenden Sie sie mit **Alle Produktlisten**, **Kategorieregeln** und **Suchregeln**.
+
+**Die wichtigsten Vorteile**
+
+- Skalieren Sie das Merchandising über große Kataloge, indem Sie Attributwerte anstelle von einzelnen SKUs als Zielgruppe verwenden.
+- Mit einer einzigen Regel kann jedes passende Produkt erhöht, vergraben oder ausgeblendet werden, z. B. das Bewerben einer ganzen Marke oder das Unterdrücken einer eingestellten Farbe.
+- Kombinieren Sie Attributbedingungen mit intelligenter Rangfolge: Übereinstimmende Produkte haben Priorität und nicht übereinstimmende Produkte werden weiterhin nach Ihrer Rangfolgestrategie sortiert.
+- Legen Sie die Verstärkungs- oder Bury-Stärke pro Bedingung fest, um genau abzustimmen, wie stark die Regel übereinstimmende Produkte beeinflusst.
+
+Weitere Informationen finden Sie unter [Attributrangfolge](https://experienceleague.adobe.com/de/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) im Handbuch für Merchandising-Regeln.
+
+Um Feedback zu dieser Beta-Funktion zu geben, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Abgleich und Rangfolge suchen (Private Beta)
 
