@@ -1,5 +1,5 @@
 ---
-source-git-commit: 7c7431efa9d808c4d5839dea7fa1ee3bfc629696
+source-git-commit: c1cc45ae36dd0c0e74c027b80fa9d70c98687561
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 24%
@@ -63,7 +63,7 @@ ht-degree: 24%
       </tr>
       <tr>
           <td>Produkt Recommendations</td>
-          <td>6.7.0</td>
+          <td>6.8.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>
           <td>6.7.0</td>
