@@ -7,7 +7,7 @@ exl-id: 31812668-1d24-4da6-992f-981c259e00da
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 QPT v1.1.33 enthält die folgenden Patches:
 
 1. **ACSD-50478**: Behebt den Befehl zum Zurücksetzen der Datenbank für einen Fall, dass der DB-Dump Trigger und einen SQL-Trennzeichen-Befehl enthält.
-1. **ACSD-50512**: Behebt den Fehler: *Der herunterladbare Link ist nicht mit dem Produkt verbunden. Überprüfen Sie den Link und versuchen Sie es erneut.* beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update.
+1. **ACSD-50512**: Behebt den Fehler: *Der herunterladbare Link ist nicht mit dem Produkt verbunden. Überprüfen Sie den Link und versuchen Sie es erneut.*  Dies geschieht beim Aktualisieren des Startdatums für ein herunterladbares Produkt-Staging-Update.
 1. **ACSD-50949**: Es wird ein Problem behoben, bei dem der Preisfilter in [!UICONTROL Advanced Search] keine ordnungsgemäßen Ergebnisse zurückgibt, wenn er zusammen mit dem SKU-Filter verwendet wird.
 1. **ACSD-51645**: Behebt den Fehler, der beim Speichern einer neuen [!UICONTROL Cart Price Rule] ausgelöst wird, wenn die `Magento_OfflineShipping` deaktiviert ist.
 1. **ACSD-50895**: Es wird das Problem behoben, dass [!DNL Google Analytics] 3 GTM-Tags nicht ausgelöst werden, wenn [!DNL Google Analytics] 4 GTM nicht konfiguriert ist.
@@ -31,7 +31,7 @@ QPT v1.1.33 enthält die folgenden Patches:
 1. **ACSD-51792**: Es wird das Problem behoben, dass eine Seite das Impression-Ereignis nicht hat, wenn [!DNL Google Tag Manager] 4 aktiviert ist.
 1. **ACSD-51471**: Es wird ein Problem behoben, bei dem ein Admin-Benutzer keine geplante Aktualisierung für ein gebündeltes Produkt speichern kann, das ein einfaches Produkt verwendet, das selbst eine geplante Aktualisierung aufweist.
 1. **ACSD-51700**: Behebt den Fehler, der beim Wechsel der Store-Ansichten auf einer herunterladbaren Produktbearbeitungsseite in Admin auftritt.
-1. **ACSD-51120**: Es wurde ein Problem behoben, bei dem der Cache für GraphQL GET-Anfragen für CMS-Seiten mit CMS-Blöcken, die über ein Staging-Update aktualisiert wurden, nicht gelöscht wurde.
+1. **ACSD-51120**: Es wird ein Problem behoben, bei dem der Cache für GraphQL-GET-Anfragen für CMS-Seiten mit CMS-Blöcken, die über ein Staging-Update aktualisiert werden, nicht gelöscht wird.
 1. **ACSD-51240**: Es wird ein Problem behoben, bei dem die hochgeladene Datei fehlt, wenn die Registrierung über das Unternehmensregistrierungsformular erfolgt.
 1. **ACSD-51907**: Es wurde ein Problem behoben, durch das ein Benutzer mit eingeschränkter Administratorberechtigung keine Gutschrift mit einer Offline-Rückerstattung erstellen konnte.
 1. **ACSD-52148**: Es wird ein Problem behoben, bei dem die [!UICONTROL Google V3 reCAPTCHA Admin]-Anmeldung gelegentlich fehlschlägt.
