@@ -1,7 +1,7 @@
 ---
 title: Workflow-Übersicht [!DNL Adobe Commerce Patching Automation]
 description: Erfahren Sie mehr über  [!DNL Adobe Commerce Patching Automation]  Workflow-Prozess, einschließlich Terminologie, Workflow-Phasen und Vorgänge für die automatisierte Patch-Verwaltung.
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Dieser Ansatz bietet:
 
 **Kein Daten-Cloning** - Die Integrationsumgebung erhält keine Kopie der Daten der Zielumgebung (Datenbank, Medien oder anderer gespeicherter Inhalt). Nur die Code-Basis wird zum Anwenden und Überprüfen des Patches verwendet
 
-**Ressourcenanforderungen** - Die gesamte Speicherkapazität Ihres Cloud-Projekts ist in Ihrem Vertrag definiert. (Überprüfen Sie dies über Ihre Kontoseite oder `magento-cloud subscription:info`). Die Festplattenzuordnung jeder Umgebung wird separat über die `disk`-Eigenschaft in `.magento.app.yaml`/`.magento/services.yaml` konfiguriert. Weitere [&#x200B; finden Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) von Festplattenspeicher . Wenn ein Patch-Vorgang aufgrund von Speicherbeschränkungen fehlschlägt, überprüfen Sie die Festplattenauslastung (`magento-cloud db:size`/`magento-cloud mount:size`) Ihrer Integrationsumgebung in Bezug auf die konfigurierte Zuordnung.
+**Ressourcenanforderungen** - Die gesamte Speicherkapazität Ihres Cloud-Projekts ist in Ihrem Vertrag definiert. (Überprüfen Sie dies über Ihre Kontoseite oder `magento-cloud subscription:info`). Die Festplattenzuordnung jeder Umgebung wird separat über die `disk`-Eigenschaft in `.magento.app.yaml`/`.magento/services.yaml` konfiguriert. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) von Festplattenspeicher . Wenn ein Patch-Vorgang aufgrund von Speicherbeschränkungen fehlschlägt, überprüfen Sie die Festplattenauslastung (`magento-cloud db:size`/`magento-cloud mount:size`) Ihrer Integrationsumgebung in Bezug auf die konfigurierte Zuordnung.
 
 #### Schritt 2b: Patchen der Anwendung in der Integrationsumgebung
 
@@ -89,11 +89,11 @@ Dieser Ansatz bietet:
 
 **Dateiverwaltung** - Patch-Dateien werden im `m2-hotfixes` Ordner abgelegt
 
-**Git-Vorgänge** - Änderungen werden übertragen und in den Zweig der Integrationsumgebung übertragen
+**Git-Vorgänge** - Änderungen werden übernommen und an den Zweig der Integrationsumgebung gepusht
 
 **Umgebungsaktivierung** - Die Integrationsumgebung wird aktiviert, um den gepatchten Code bereitzustellen
 
-**Konsistenzprüfung** - Nach der Aktivierung bestätigt [!DNL Patching Automation] Folgendes, bevor mit der Zusammenführung fortgefahren wird: Die Integrationsumgebung wurde erfolgreich bereitgestellt, ist in Ordnung, die Anwendung wird gestartet und die Datenbank- und Cache-Verbindungen sind erreichbar.
+**Konsistenzprüfung** - Nach der Aktivierung bestätigt [!DNL Patching Automation] Folgendes, bevor mit der Zusammenführung fortgefahren wird: Die Integrationsumgebung wurde erfolgreich bereitgestellt und ist fehlerfrei, die Anwendung wird gestartet und die Datenbank- und Cache-Verbindungen sind erreichbar.
 
 >[!NOTE]
 >
@@ -101,17 +101,17 @@ Dieser Ansatz bietet:
 
 #### Schritt 2c: Zurück zur Zielumgebung
 
-**Synchronisierungsprüfung**: Vor dem Zusammenführen bestätigt der Service, dass die Integrationsumgebung weiterhin aktiv, mit der Zielumgebung synchronisiert und in Ordnung ist. Wenn das Ziel während des Patches geändert wurde, wird der Vorgang hier angehalten, anstatt zusammengeführt zu werden
+**Synchronisierungsprüfung** - Vor dem Zusammenführen bestätigt der Service, dass die Integrationsumgebung weiterhin aktiv, mit der Zielumgebung synchronisiert und in Ordnung ist. Wenn das Ziel während des Patches geändert wurde, wird der Vorgang hier angehalten, anstatt zusammengeführt zu werden
 
 **Umgebungs-Checkout** - Der Service überprüft Ihre Zielumgebung lokal
 
 **Zusammenführungsvorgang** - Der Zweig der Integrationsumgebung wird mit der Zielumgebung zusammengeführt
 
-**Konfliktbehandlung** - Wenn ein Zusammenführungskonflikt auftritt, schlägt der Vorgang fehl und wird als Fehler gemeldet. Er wird nicht automatisch aufgelöst.
+**Konfliktbehandlung** - Wenn ein Zusammenführungskonflikt auftritt, schlägt der Vorgang fehl und wird als Fehler gemeldet. Er wird nicht automatisch aufgelöst
 
 **Bereitstellung** - Die zusammengeführten Änderungen werden in Ihrer Zielumgebung bereitgestellt
 
-**Überprüfung** Der Service überprüft, ob die Zusammenführung erfolgreich war und die Umgebungen synchronisiert sind
+**Verification** - Der Service überprüft, ob die Zusammenführung erfolgreich war und die Umgebungen synchronisiert sind
 
 ### Lebenszyklus der Integrationsumgebung
 

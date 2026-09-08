@@ -1,9 +1,9 @@
 ---
 title: Handbuch zur Fehlerbehebung [!DNL Adobe Commerce Patching Automation]
 description: Beheben häufiger Probleme und Fehlermeldungen in [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Wenn Sie [!DNL Patching Automation] für Patch-Vorgänge verwenden, können Fehl
 
 ### Dauer von Patch-Vorgängen
 
-Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie lange Patch-Vorgänge dauern sollten. Je nach Größe und Komplexität der Umgebung kann dies jedoch länger dauern:
+Für die meisten Umgebungen wird in der folgenden Zeitleiste die Dauer von Patch-Vorgängen beschrieben. Je nach Größe und Komplexität der Umgebung kann dies jedoch länger dauern:
 
 * **Vorab-Bearbeitung:** 2-5 Minuten
 * **Patchen:** 5-15 Minuten
@@ -56,7 +56,7 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie la
 
 >[!NOTE]
 >
->Unten finden Sie nicht alle möglichen Fehler. Ein nicht aufgeführter Fehler während der Vorprüfung wird als allgemeiner „Fehler während der Vorprüfung“ angezeigt; ein nicht aufgeführter Fehler während der Validierung wird als allgemeiner „Fehler während der Nachbearbeitung“ angezeigt - wenden Sie sich in beiden Fällen mit dem genauen Fehlertext an den Support. Beim Patchen wird bei einem unerwarteten Fehler die zugrunde liegende rohe Fehlermeldung direkt anstelle eines allgemeinen Fallbacks angezeigt.
+>Unten finden Sie nicht alle möglichen Fehler. Nicht aufgelistete Fehler bei der Vorprüfung oder Validierung werden als allgemeine Fehler angezeigt. Wenden Sie sich mit dem genauen Fehlertext an den Support. Beim Patchen wird bei einem unerwarteten Fehler die zugrunde liegende rohe Fehlermeldung direkt anstelle eines allgemeinen Fallbacks angezeigt.
 
 ### Fehler bei der Umgebungsbereitschaft
 
@@ -113,7 +113,7 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie la
 
 **Lösungen:**
 
-* Warten Sie einige Minuten und überprüfen Sie erneut den Umgebungsstatus. Dieses Problem wird häufig von selbst behoben
+* Warten Sie einige Minuten und überprüfen Sie erneut den Umgebungsstatus. Dieses Problem wird häufig automatisch behoben
 * Wenn die Umgebungen nach einigen Minuten immer noch nicht übereinstimmen, wenden Sie sich an den Adobe-Support.
 
 #### „Patch-Auftrag kann nicht in der Produktionsumgebung erstellt werden, wenn Cron aktiviert und der Wartungsmodus deaktiviert ist. Bitte aktivieren Sie den Wartungsmodus und deaktivieren Sie Cron-Aufträge, bevor Sie Patches anwenden.“
@@ -131,7 +131,7 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie la
 
 >[!IMPORTANT]
 >
-> [!DNL Patching Automation] aktiviert nicht automatisch den Wartungsmodus oder deaktiviert Cron-Aufträge - diese müssen extern von Ihnen erledigt werden
+> [!DNL Patching Automation] aktiviert nicht automatisch den Wartungsmodus oder deaktiviert Cron-Aufträge. Führen Sie diese Schritte manuell aus.
 
 #### „Der Patch-Vorgang wurde abgeschlossen, aber die Konsistenzprüfung der Umgebung ist fehlgeschlagen. Dies weist auf potenzielle Probleme bei der Bereitstellung hin. Bitte den Umgebungsstatus überprüfen und erwägen, die Änderung rückgängig zu machen.“
 
@@ -141,11 +141,11 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie la
 
 **Lösungen:**
 
-* Testen Sie die Storefront und kritische Checkout- und Admin-Workflows, um zu überprüfen, ob Kunden tatsächlich betroffen sind
+* Testen der Storefront und der kritischen Checkout- und Admin-Workflows, um zu bestätigen, ob Kunden betroffen sind
 * Überprüfen Sie in der Cloud-Konsole den Umgebungsstatus und die Anwendungs- und Bereitstellungsprotokolle im Projekt-(**)** Feed. Suchen Sie nach Fehlern im Zusammenhang mit Patch-Vorgängen oder der Bereitstellung.
-* Trigger : Manuelle erneute Bereitstellung, um festzustellen, ob der Fehler bei der Konsistenzprüfung durch eine vorübergehende Bereitstellung oder ein Infrastrukturproblem verursacht wurde.
-* Wenn das Problem weiterhin besteht, stellen Sie das Patch wieder her. Wenn der Patch von [!DNL Patching Automation] verwaltet wird und der Vorgang verfügbar ist, wählen Sie [!UICONTROL Revert] aus. Wenn es sich bei dem Patch um einen benutzerdefinierten Patch im `m2-hotfixes` handelt, löschen Sie die Patch-Datei aus dem Projekt-Repository. Bestätigen Sie die Änderung, übertragen Sie sie und stellen Sie sie dann erneut bereit.
-* Wenn das Problem weiterhin besteht, wenden Sie sich an den Adobe-Support. Fügen Sie in Ihre Support-Anfrage die folgenden Informationen ein: Support-Projekt-ID, Umgebungs-ID und genau diese Nachricht: Der letzte Vorgang wurde nicht sauber abgeschlossen, sodass der Support den Status der Umgebung möglicherweise bestätigen muss.
+* Trigger : Eine manuelle Neubereitstellung, um festzustellen, ob ein vorübergehendes Bereitstellungs- oder Infrastrukturproblem die Fehlerursache der Konsistenzprüfung war.
+* Wenn das Problem weiterhin besteht, stellen Sie das Patch wieder her. Wenn [!DNL Patching Automation] den Patch verwaltet und der Vorgang verfügbar ist, wählen Sie [!UICONTROL Revert] aus. Wenn es sich bei dem Patch um einen benutzerdefinierten Patch im `m2-hotfixes` handelt, löschen Sie die Patch-Datei aus dem Projekt-Repository. Bestätigen Sie die Änderung, übertragen Sie sie und stellen Sie sie dann erneut bereit.
+* Wenn das Problem weiterhin besteht, wenden Sie sich an den Adobe-Support. Fügen Sie in Ihre Support-Anfrage die folgenden Informationen ein: Support-Projekt-ID, Umgebungs-ID und genau diese Nachricht: Der letzte Vorgang wurde nicht ordnungsgemäß abgeschlossen. Daher muss der Status der Umgebung durch den Support bestätigt werden.
 
 ### Authentifizierungs- und Zugriffsfehler
 
@@ -178,7 +178,7 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie la
 
 **Ursache:** Ein temporäres Problem hat verhindert, dass der Service eine Verbindung zu GitHub herstellt
 
-**Lösung:** Warten Sie einige Minuten und wiederholen Sie den Vorgang. Wenn der Fehler weiterhin auftritt, wenden Sie sich an den [Adobe Commerce Cloud-Support](https://experienceleague.adobe.com/home?lang=de#support)
+**Lösung:** Warten Sie einige Minuten und wiederholen Sie den Vorgang. Wenn der Fehler weiterhin auftritt, wenden Sie sich an den [Adobe Commerce Cloud-Support](https://experienceleague.adobe.com/home#support)
 
 #### „Umgebung wurde nicht innerhalb der maximalen Wartezeit erstellt“ (mit GitHub verbundenes Projekt)
 
@@ -186,7 +186,7 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie la
 
 **Ursache:** Die `fetch-branches` Option ist für die GitHub-Integration des Projekts deaktiviert. Daher werden die vom Service übertragenen temporären Verzweigungen nicht synchronisiert, und die Integrationsumgebung wird nie erstellt.
 
-**Lösung:** Aktivieren Sie die Option [`fetch-branches` der Integration](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) und wiederholen Sie dann den Vorgang. Siehe [Einrichten der GitHub-Integration für [!DNL Patching Automation]](github-integration.md).
+**Lösung:** Aktivieren Sie die Option [`fetch-branches` der Integration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) und wiederholen Sie dann den Vorgang. Siehe [Einrichten der GitHub-Integration für [!DNL Patching Automation]](github-integration.md).
 
 ### Fehler bei der Umgebungsaktivierung
 
@@ -198,18 +198,16 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste beschrieben, wie la
 
 **Wenn in den Details die Composer- oder Adobe Commerce-Pakete erwähnt werden:**
 
-* Melden Sie sich bei [https://account.magento.com/](https://account.magento.com/) an (oder bitten Sie Ihren Kontoinhaber, dies zu tun) und bestätigen Sie, dass Ihr Konto Zugriff auf die Commerce Enterprise-Code-Basis hat.
-* Überprüfen Sie, ob das Composer-Schlüsselpaar aus öffentlichem/privatem Schlüssel Ihres Projekts korrekt ist - siehe [Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Melden Sie sich bei [https://account.magento.com/](https://account.magento.com/) an (oder bitten Sie Ihren Kontoinhaber, dies zu tun) und bestätigen Sie, dass Ihr Konto Zugriff auf die Commerce Enterprise-Code-Basis hat.
-* Stellen Sie sicher, dass die öffentlichen und privaten Composer-Authentifizierungsschlüssel Ihres Projekts korrekt sind. Siehe [Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Vergewissern Sie sich, dass das in der Fehlermeldung benannte Paket für Ihre Commerce-Version verfügbar ist. Siehe [Adobe Commerce-Pakete](https://experienceleague.adobe.com/de/docs/commerce-operations/release/packages/adobe-commerce).
+* Melden Sie sich bei [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) an (oder bitten Sie Ihren Kontoinhaber, dies zu tun) und bestätigen Sie, dass Ihr Konto Zugriff auf die Commerce Enterprise-Code-Basis hat.
+* Stellen Sie sicher, dass die öffentlichen und privaten Composer-Authentifizierungsschlüssel Ihres Projekts korrekt sind. Siehe [Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Vergewissern Sie sich, dass das in der Fehlermeldung benannte Paket für Ihre Commerce-Version verfügbar ist. Siehe [Adobe Commerce-Pakete](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Wenn in den Details Umgebungssteckplätze oder Ressourcen erwähnt werden:**
 
-* Öffnen Sie in der Cloud-Konsole die Projektübersicht und überprüfen Sie die Umgebungen und ihre Status. Nicht verwendete Integrationsumgebungen deaktivieren oder löschen: Wählen Sie die Umgebung aus. Navigieren Sie zu **[!UICONTROL Settings]>[!UICONTROL General]**. Setzen Sie den Umgebungsstatus auf Inaktiv.
+* Öffnen Sie in der Cloud-Konsole die Projektübersicht und überprüfen Sie die Umgebungen und ihre Status. Nicht verwendete Integrationsumgebungen deaktivieren oder löschen: Wählen Sie die Umgebung aus. Navigieren Sie zu **[!UICONTROL Settings]>[!UICONTROL General]**. Um die Umgebung zu deaktivieren, setzen Sie den Status auf Inaktiv .
 
   Alternativ können Sie die CLI verwenden: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
-* Stellen Sie sicher, dass Ihr Projekt über ausreichende Ressourcen verfügt, z. B. Speicherplatz.
+* Stellen Sie sicher, dass das Projekt über ausreichende Ressourcen verfügt, z. B. Speicherplatz.
 * Stellen Sie sicher, dass die übergeordnete Umgebung zum Zeitpunkt des Vorgangs stabil ist (keine aktive Bereitstellung).
 * Wenden Sie sich an den Adobe-Support, wenn Sie Ihr Umgebungslimit erhöhen müssen.
 
@@ -248,7 +246,7 @@ Ausführlichere technische Informationen:
 
 ### Verwandte Themen
 
-* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
+* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce-Installationshandbuch](/help/installation/overview.md)
 * [Einführung in die Patch-Automatisierung](intro.md)
 * [Zugriff](access.md)
