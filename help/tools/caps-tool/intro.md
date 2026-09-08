@@ -1,8 +1,7 @@
 ---
 title: '[!DNL Adobe Commerce Patching Automation]'
 description: Erfahren Sie mehr über [!DNL Adobe Commerce Patching Automation], seine Verwendung, den Zugriff darauf und über Best Practices für automatisiertes Patchen
-hide: true
-source-git-commit: f70924d6f0d1777104c59f3f9e776360308abceb
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -52,7 +51,7 @@ Dieses Handbuch richtet sich an Händler und Partner von Adobe Commerce Cloud, d
 
 Erfahren Sie mehr über [!DNL Adobe Commerce Patching Automation] und wie dieses Tool Benutzern hilft, Sicherheits-Patches schnell zu finden und anzuwenden. Im folgenden Video wird beschrieben, wie Sie über das Dashboard des Site-Wide Analysis Tool (SWAT) darauf zugreifen, Ihr Projekt und Ihre Umgebung auswählen und Patches mit einem Klick anwenden können.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476256/?captions=ger&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
 
 ## Häufige Anwendungsfälle
 

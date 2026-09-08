@@ -1,8 +1,7 @@
 ---
 title: Wie greife ich auf zu [!DNL Adobe Commerce Patching Automation]
 description: Erfahren Sie, wie Sie auf zugreifen und verwenden können [!DNL Adobe Commerce Patching Automation]
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 1%
@@ -35,7 +34,7 @@ Wenn in der [!DNL Patching Automation] Benutzeroberfläche keine Projekte angeze
 
 ## Zugriff auf [!DNL Patching Automation]
 
-[!DNL Patching Automation] ist als Registerkarte im [!DNL Site-Wide Analysis Tool]-Dashboard verfügbar. Sie können über Ihr Admin-Bedienfeld darauf zugreifen, indem Sie in der Admin-**zu** Berichte **>** Systemeinblicke **>** Site-Wide Analysis Tool wechseln. Unter [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access) finden Sie Informationen zu Voraussetzungen und Berechtigungseinstellungen.
+[!DNL Patching Automation] ist als Registerkarte im [!DNL Site-Wide Analysis Tool]-Dashboard verfügbar. Sie können über Ihr Admin-Bedienfeld darauf zugreifen, indem Sie in der Admin-**zu** Berichte **>** Systemeinblicke **>** Site-Wide Analysis Tool wechseln. Unter [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) finden Sie Informationen zu Voraussetzungen und Berechtigungseinstellungen.
 
 Sobald Sie sich im Dashboard befinden:
 

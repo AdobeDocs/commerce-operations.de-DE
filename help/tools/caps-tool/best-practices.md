@@ -1,8 +1,7 @@
 ---
 title: Handbuch zu Best Practices für [!DNL Adobe Commerce Patching Automation]
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Patching Automation]  verwenden, um Patches sicher zu planen, zu validieren und anzuwenden und so das Bereitstellungsrisiko und Service-Unterbrechungen zu minimieren.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -24,11 +23,11 @@ Bevor Sie Patches anwenden, stellen Sie sicher, dass Ihre Umgebung ordnungsgemä
 * **Adobe Commerce Cloud-Konto**
   * Aktives Adobe Commerce Cloud-Abonnement
   * Gültige Adobe Commerce-Lizenz
-  * [Composer-Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/authentication-keys) für den Zugriff auf das Adobe Commerce-Repository konfiguriert
+  * [Composer-Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) für den Zugriff auf das Adobe Commerce-Repository konfiguriert
   * Projekt- und Umgebungsberechtigungen
 
 * **Umgebungsressourcen**
-  * Das Projekt kann eine zusätzliche aktive Integrationsumgebung für den Patch-Vorgang erstellen. Informationen zu den Beschränkungen für aktive Umgebungen finden [&#x200B; unter „Verzweigungen mit der Cloud](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/console-branches)Konsole verwalten.
+  * Das Projekt kann eine zusätzliche aktive Integrationsumgebung für den Patch-Vorgang erstellen. Informationen zu den Beschränkungen für aktive Umgebungen finden [ unter „Verzweigungen mit der Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches)Konsole verwalten.
   * Ausreichende Speicher-, CPU- und Speicherressourcen
   * Netzwerkzugriff auf Adobe-Repositorys
   * Stabile übergeordnete Umgebung für die Synchronisierung
