@@ -7,7 +7,7 @@ exl-id: ce2ee50b-246a-43b7-b520-d7a42749e0ee
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,6 @@ QPT v1.1.36 enthält die folgenden Patches:
 1. **ACSD-52736**: Es wird das Problem behoben, bei dem ein [!UICONTROL Cart Price Rule], der Anforderungen für konfigurierbare Produktmengen enthält, nicht wie erwartet funktioniert.
 1. **ACSD-47875**: Es wurde ein Problem behoben, bei dem Admin-Benutzende ein Produkt nicht aus dem Admin zu einem Warenkorb hinzufügen können, um einen bestimmten Bereich der Store-Ansicht mit der Bestandsverwaltung anzuzeigen.
 1. **ACSD-53176**: Es wird das Problem behoben, dass *[!UICONTROL Related Product Rule]* mit *[!UICONTROL is one of]* Bedingung nicht mit Produkten übereinstimmen.
-1. **ACSD-51666**: Behebt den Fehler: *Die Sitzung ist abgelaufen, bitte erneut anmelden.*, die nach dem Anmeldeversuch eines Kunden eintreten.
+1. **ACSD-51666**: Behebt den Fehler: *Die Sitzung ist abgelaufen, bitte melden Sie sich erneut an.* Dies geschieht, nachdem ein Kunde versucht, sich anzumelden.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
