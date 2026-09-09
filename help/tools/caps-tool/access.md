@@ -1,10 +1,9 @@
 ---
 title: Wie greife ich auf zu [!DNL Adobe Commerce Patching Automation]
 description: Erfahren Sie, wie Sie auf zugreifen und verwenden können [!DNL Adobe Commerce Patching Automation]
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -26,7 +25,7 @@ ht-degree: 1%
 Wenn in der [!DNL Patching Automation] Benutzeroberfläche keine Projekte angezeigt werden, fordern Sie den Zugriff von der entsprechenden Person an:
 
 * Kontaktieren Sie den Kontoinhaber oder Projektadministrator des Projekts.
-* Sie erhalten über die Cloud-Konsole die entsprechende Rolle.
+* Sie können Ihnen über die Cloud-Konsole die entsprechende Rolle zuweisen
 * Sobald Sie Zugriff erhalten haben, können Sie sich bei der Cloud-Konsole anmelden, um den Service zu verwenden
 
 >[!NOTE]
@@ -35,7 +34,7 @@ Wenn in der [!DNL Patching Automation] Benutzeroberfläche keine Projekte angeze
 
 ## Zugriff auf [!DNL Patching Automation]
 
-[!DNL Patching Automation] ist als Registerkarte im [!DNL Site-Wide Analysis Tool]-Dashboard verfügbar. Sie können über Ihr Admin-Bedienfeld darauf zugreifen, indem Sie in der Admin-**zu** Berichte **>** Systemeinblicke **>** Site-Wide Analysis Tool wechseln. Unter [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access) finden Sie Informationen zu Voraussetzungen und Berechtigungseinstellungen.
+[!DNL Patching Automation] ist als Registerkarte im [!DNL Site-Wide Analysis Tool]-Dashboard verfügbar. Sie können darauf über Ihr Admin-Bedienfeld zugreifen, indem Sie in der Admin **Seitenleiste zu** > **Systemeinblicke** > **Site-Wide Analysis Tool** wechseln. Unter [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access) finden Sie Informationen zu Voraussetzungen und Berechtigungseinstellungen.
 
 Sobald Sie sich im Dashboard befinden:
 

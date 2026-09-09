@@ -4,7 +4,7 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '10695'
 ht-degree: 0%
@@ -34,12 +34,12 @@ ht-degree: 0%
   - [Fehlerbehebung](commerce-version-tool/troubleshooting.md)
   - [Versionshinweise](commerce-version-tool/release-notes.md)
 - Automatisierung des Patching {#caps-tool}
-  - {hide-from-toc}[Einführung](caps-tool/intro.md)
-  - {hide-from-toc}[Zugriff](caps-tool/access.md)
-  - {hide-from-toc}[Workflow-Übersicht](caps-tool/workflow.md)
-  - {hide-from-toc}[GitHub-Integration](caps-tool/github-integration.md)
-  - {hide-from-toc}[Best Practices](caps-tool/best-practices.md)
-  - {hide-from-toc}[Fehlerbehebung](caps-tool/troubleshooting.md)
+  - [Einführung](caps-tool/intro.md)
+  - [Zugriff](caps-tool/access.md)
+  - [Workflow-Übersicht](caps-tool/workflow.md)
+  - [GitHub-Integration](caps-tool/github-integration.md)
+  - [Best Practices](caps-tool/best-practices.md)
+  - [Fehlerbehebung](caps-tool/troubleshooting.md)
 - Verwaltete Warnhinweise in Adobe Commerce {#managed-alerts-for-adobe-commerce}
   - [Verwaltete Warnhinweise zu kritischen Warnhinweisen auf Adobe Commerce [!DNL Redis] Arbeitsspeicher](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
   - [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis bezüglich Festplatte](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)

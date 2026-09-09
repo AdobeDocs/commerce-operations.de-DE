@@ -1,8 +1,7 @@
 ---
 title: Workflow-Übersicht [!DNL Adobe Commerce Patching Automation]
 description: Erfahren Sie mehr über  [!DNL Adobe Commerce Patching Automation]  Workflow-Prozess, einschließlich Terminologie, Workflow-Phasen und Vorgänge für die automatisierte Patch-Verwaltung.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -90,11 +89,11 @@ Dieser Ansatz bietet:
 
 **Dateiverwaltung** - Patch-Dateien werden im `m2-hotfixes` Ordner abgelegt
 
-**Git-Vorgänge** - Änderungen werden übertragen und in den Zweig der Integrationsumgebung übertragen
+**Git-Vorgänge** - Änderungen werden übernommen und an den Zweig der Integrationsumgebung gepusht
 
 **Umgebungsaktivierung** - Die Integrationsumgebung wird aktiviert, um den gepatchten Code bereitzustellen
 
-**Konsistenzprüfung** - Nach der Aktivierung bestätigt [!DNL Patching Automation] Folgendes, bevor mit der Zusammenführung fortgefahren wird: Die Integrationsumgebung wurde erfolgreich bereitgestellt, ist in Ordnung, die Anwendung wird gestartet und die Datenbank- und Cache-Verbindungen sind erreichbar.
+**Konsistenzprüfung** - Nach der Aktivierung bestätigt [!DNL Patching Automation] Folgendes, bevor mit der Zusammenführung fortgefahren wird: Die Integrationsumgebung wurde erfolgreich bereitgestellt und ist fehlerfrei, die Anwendung wird gestartet und die Datenbank- und Cache-Verbindungen sind erreichbar.
 
 >[!NOTE]
 >
@@ -102,17 +101,17 @@ Dieser Ansatz bietet:
 
 #### Schritt 2c: Zurück zur Zielumgebung
 
-**Synchronisierungsprüfung**: Vor dem Zusammenführen bestätigt der Service, dass die Integrationsumgebung weiterhin aktiv, mit der Zielumgebung synchronisiert und in Ordnung ist. Wenn das Ziel während des Patches geändert wurde, wird der Vorgang hier angehalten, anstatt zusammengeführt zu werden
+**Synchronisierungsprüfung** - Vor dem Zusammenführen bestätigt der Service, dass die Integrationsumgebung weiterhin aktiv, mit der Zielumgebung synchronisiert und in Ordnung ist. Wenn das Ziel während des Patches geändert wurde, wird der Vorgang hier angehalten, anstatt zusammengeführt zu werden
 
 **Umgebungs-Checkout** - Der Service überprüft Ihre Zielumgebung lokal
 
 **Zusammenführungsvorgang** - Der Zweig der Integrationsumgebung wird mit der Zielumgebung zusammengeführt
 
-**Konfliktbehandlung** - Wenn ein Zusammenführungskonflikt auftritt, schlägt der Vorgang fehl und wird als Fehler gemeldet. Er wird nicht automatisch aufgelöst.
+**Konfliktbehandlung** - Wenn ein Zusammenführungskonflikt auftritt, schlägt der Vorgang fehl und wird als Fehler gemeldet. Er wird nicht automatisch aufgelöst
 
 **Bereitstellung** - Die zusammengeführten Änderungen werden in Ihrer Zielumgebung bereitgestellt
 
-**Überprüfung** Der Service überprüft, ob die Zusammenführung erfolgreich war und die Umgebungen synchronisiert sind
+**Verification** - Der Service überprüft, ob die Zusammenführung erfolgreich war und die Umgebungen synchronisiert sind
 
 ### Lebenszyklus der Integrationsumgebung
 

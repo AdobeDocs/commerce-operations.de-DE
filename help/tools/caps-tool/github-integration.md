@@ -1,10 +1,9 @@
 ---
 title: Einrichten der GitHub-Integration für [!DNL Adobe Commerce Patching Automation]
 description: Erfahren Sie, wie Sie die GitHub [!DNL Adobe Commerce Patching Automation] App installieren, um Patch-Vorgänge für mit GitHub verbundene Adobe Commerce Cloud-Projekte zu aktivieren.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: bc614967131d4458e004a06baa94bbe9261c4cee
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -12,7 +11,7 @@ ht-degree: 0%
 
 # Einrichten der GitHub-Integration für [!DNL Patching Automation]
 
-Wenn Ihr Adobe Commerce Cloud-Projekt mit einem GitHub-Repository verbunden ist, müssen Sie die [!DNL Patching Automation] GitHub-App installieren, bevor Sie den Service zum Anwenden oder Zurücksetzen von Patches verwenden können. Die App gewährt dem Service den Zugriff, den er benötigt, um Änderungen an Ihrem Repository in Ihrem Namen vorzunehmen.
+Wenn Ihr Adobe Commerce Cloud-Projekt mit einem GitHub-Repository verbunden ist, müssen Sie die [!DNL Patching Automation] GitHub-App installieren, bevor Sie den Service zum Anwenden oder Zurücksetzen von Patches verwenden können. Die App gewährt dem Service den Zugriff, den er benötigt, um Änderungen an Ihrem Repository vorzunehmen.
 
 ## Voraussetzungen
 
@@ -39,7 +38,7 @@ Die [!DNL Patching Automation] Benutzeroberfläche zeigt den aktuellen Status Ih
 
 * **[!UICONTROL Refresh]**/**[!UICONTROL Refresh status]** - Überprüft den Verbindungsstatus erneut, ohne Änderungen vorzunehmen.
 * **[!UICONTROL Reinstall]** - Wird angezeigt, wenn die Installation nicht mehr gültig ist (z. B. wenn sie ausgesetzt wurde oder das mit Ihrem Cloud-Projekt verbundene Repository geändert wurde). Startet denselben Installationsablauf wie oben beschrieben.
-* **[!UICONTROL Unlink GitHub App]** - Entfernt die gespeicherte Verbindung von [!DNL Patching Automation] mit der GitHub-App. Dadurch wird **App** aus Ihrem GitHub-Repository deinstalliert - siehe den Abschnitt „Deinstallieren“ unten, um den Zugriff vollständig zu entfernen.
+* **[!UICONTROL Unlink GitHub App]** - Entfernt die gespeicherte Verbindung von [!DNL Patching Automation] mit der GitHub-App. Mit dieser Aktion wird **App nicht** Ihrem GitHub-Repository deinstalliert. Informationen zum vollständigen Entfernen des Zugriffs finden Sie unten im Abschnitt „Deinstallieren“.
 
 ## Deinstallieren der [!DNL Patching Automation] GitHub-App
 
@@ -53,7 +52,7 @@ Wenn der Dienst nicht mehr auf Ihr Repository zugreifen soll:
 
 >[!WARNING]
 >
->Wenn beim Deinstallieren der GitHub-App noch Anwenden- oder Zurücksetzen-Vorgänge ausgeführt werden, können diese Vorgänge fehlschlagen. Nach der Deinstallation der App können Benutzende auch keine neuen Vorgänge starten, da die Aktionsschaltflächen inaktiv werden.
+>Wenn beim Deinstallieren der GitHub-App noch Anwenden- oder Zurücksetzen-Vorgänge ausgeführt werden, können diese Vorgänge fehlschlagen. Nach der Deinstallation der App können Benutzende keine neuen Vorgänge starten, da die Aktionsschaltflächen inaktiv werden.
 
 ## Verwandte Themen
 

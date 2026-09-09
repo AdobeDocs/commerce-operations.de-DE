@@ -1,8 +1,7 @@
 ---
 title: Handbuch zu Best Practices für [!DNL Adobe Commerce Patching Automation]
 description: Erfahren Sie, wie Sie  [!DNL Adobe Commerce Patching Automation]  verwenden, um Patches sicher zu planen, zu validieren und anzuwenden und so das Bereitstellungsrisiko und Service-Unterbrechungen zu minimieren.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
