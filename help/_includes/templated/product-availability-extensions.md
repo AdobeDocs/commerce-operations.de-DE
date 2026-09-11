@@ -1,5 +1,5 @@
 ---
-source-git-commit: c1cc45ae36dd0c0e74c027b80fa9d70c98687561
+source-git-commit: 6f547fe6438782791d693234eb72fd9204c1c2a4
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 20%
@@ -70,8 +70,8 @@ ht-degree: 20%
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-commerce">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-commerce">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -84,7 +84,7 @@ ht-degree: 20%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -96,13 +96,13 @@ ht-degree: 20%
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/install">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
           <td>Datenverbindung</td>
-          <td>3.6.0</td>
+          <td>3.6.1</td>
           <td>3.6.0</td>
           <td>3.6.0</td>
           <td>3.6.0</td>
@@ -110,7 +110,7 @@ ht-degree: 20%
           <td>3.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
   </tbody>
