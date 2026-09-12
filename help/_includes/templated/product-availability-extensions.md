@@ -1,5 +1,5 @@
 ---
-source-git-commit: c1cc45ae36dd0c0e74c027b80fa9d70c98687561
+source-git-commit: 6f547fe6438782791d693234eb72fd9204c1c2a4
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 20%
@@ -102,7 +102,7 @@ ht-degree: 20%
       </tr>
       <tr>
           <td>Datenverbindung</td>
-          <td>3.6.0</td>
+          <td>3.6.1</td>
           <td>3.6.0</td>
           <td>3.6.0</td>
           <td>3.6.0</td>

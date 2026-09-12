@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
+source-git-commit: 526e20111bfbdf299b18c39879ccbffc1550b22a
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 1%
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;8. September 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adobe Commerce Patching Automation ist jetzt allgemein verfügbar. Weitere Informationen finden <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/caps-tool/intro"> in </a> Dokumentation .</p>
+</td>
+      <td>
+        Größere Aktualisierung, neues Thema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;26. August 2026
 
@@ -545,28 +567,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Neues Thema
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;10. Juli 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">Übersicht: Quality Patches Tool (QPT) v1.1.81</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
