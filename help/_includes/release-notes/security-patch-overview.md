@@ -27,5 +27,5 @@ Isolierte Sicherheits-Patch-Dateien sind nicht kumulative, eigenständige Patch-
 
 Um eine isolierte Sicherheits-Patch-Datei anwenden zu können, müssen Kunden für ihre unterstützte Version die neueste Patch-Version verwenden (die neueste -p-Version), da isolierte Sicherheits-Patch-Dateien ausschließlich mit dieser Version getestet werden.
 
-Im [Sicherheitscenter](https://helpx.adobe.com/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
+Im [Sicherheitscenter](https://helpx.adobe.com/de/security/products/magento.html) finden Sie die neuesten Sicherheitsupdates für Adobe Commerce.
 
