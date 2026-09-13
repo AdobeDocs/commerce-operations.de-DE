@@ -40,7 +40,7 @@ Die nachstehende Tabelle enthält Versionshinweise und wichtige Informationen f�
             <li><a href="../lifecycle-policy.md">Lebenszyklusrichtlinie für Software</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">Durchsetzungsrichtlinie für die Cloud-Versionsaktualisierung</a></li>
             <li><a href="../security-enforcement-policy.md">Sicherheits- und Compliance-Hinweis</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe-Sicherheitsbulletin</a></li>
+            <li><a href="https://helpx.adobe.com/de/security/products/magento.html">Adobe-Sicherheitsbulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=de">B2B für Adobe Commerce</a></li>
           </ul>
         </td>

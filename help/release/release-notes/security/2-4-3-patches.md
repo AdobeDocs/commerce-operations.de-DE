@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Die Adobe Commerce-Version 2.4.3-p3 bietet Sicherheitskorrekturen für Sicherheitslücken, die in früheren Versionen von 2.4.3 identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-38](https://helpx.adobe.com/de/security/products/magento/apsb22-38.html).
 
 ### Wenden Sie AC-3022.patch an, um DHL weiterhin als Versandunternehmen anzubieten
 
@@ -36,7 +36,7 @@ DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in nahe
 
 Die Adobe Commerce-Version 2.4.3-p2 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  Die Patch-Version behebt auch die Sicherheitsanfälligkeit, die von `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` und `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` behoben wurde.
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB22-13](https://helpx.adobe.com/de/security/products/magento/apsb22-13.html).  Die Patch-Version behebt auch die Sicherheitsanfälligkeit, die von `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` und `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch` behoben wurde.
 
 
 ### Wenden Sie AC-3022.patch an, um DHL weiterhin als Versandunternehmen anzubieten
@@ -65,7 +65,7 @@ DHL hat die Schemaversion 6.2 eingeführt und wird die Schemaversion 6.0 in nahe
 Die Adobe Commerce-Sicherheitsversion 2.4.3-p1 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in der vorherigen Version (Adobe Commerce 2.4.3 und Magento Open Source 2.4.3) identifiziert wurden. Diese Version enthält auch Sicherheitsverbesserungen, die die Einhaltung der neuesten Best Practices für die Sicherheit verbessern.
 
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). Die Patch-Version enthält auch Fehlerbehebungen für die vom Hersteller [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=de), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) und [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) entwickelten Erweiterungen.
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB21-86](https://helpx.adobe.com/de/security/products/magento/apsb21-86.html). Die Patch-Version enthält auch Fehlerbehebungen für die vom Hersteller [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=de), [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html) und [Vertex](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html) entwickelten Erweiterungen.
 
 ### Wenden Sie AC-3022.patch an, um DHL weiterhin als Versandunternehmen anzubieten
 
