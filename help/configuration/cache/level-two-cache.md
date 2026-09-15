@@ -219,7 +219,7 @@ Verwenden Sie in Commerce ab Version 2.4.9 die Symfony L2-Cache-Implementierung 
 >
 >Konfigurieren Sie für diese Versionen Valley.
 >
->Wenn Sie `symfony_l2` für das L2-Caching unter Adobe Commerce 2.4.9 oder höher konfigurieren, müssen Sie Valkey für den Remote-Cache-Service verwenden. Siehe [Einrichten von ](config-valkey.md).
+>Wenn Sie `symfony_l2` für das L2-Caching unter Adobe Commerce 2.4.9 oder höher konfigurieren, müssen Sie Valkey für den Remote-Cache-Service verwenden. Siehe [Einrichten von &#x200B;](config-valkey.md).
 
 ### Migration von RemoteSynchronizedCache zu Symfony L2
 
@@ -231,13 +231,13 @@ Wenn Sie ein Upgrade einer On-Premise-Installation vom `RemoteSynchronizedCache`
 
 - **Komprimierung erfordert ein explizites Flag.** Wenn Sie `compression_lib` allein festlegen, wird die Komprimierung unter `symfony_l2` nicht aktiviert. Siehe [Backend-Optionen für Symfony L2-Cache](#backend-options-for-symfony-l2-cache) für die erforderliche `compress_data`.
 
-- **Bei manuell konfigurierten lokalen Bereitstellungen ist veralteter Cache nicht standardmäßig aktiviert.** `use_stale_cache` ist standardmäßig unter `symfony_l2` auf `false` gesetzt (siehe Tabelle [Backend-Optionen](#backend-options-for-symfony-l2-cache)). Wenn Ihre `RemoteSynchronizedCache`-Konfiguration das `stale_cache_enabled`-Frontend verwendet, müssen Sie es explizit mit dem Muster im [Symfony L2-Cache mit veraltetem Cache) ](#symfony-l2-cache-with-stale-cache).
+- **Bei manuell konfigurierten lokalen Bereitstellungen ist veralteter Cache nicht standardmäßig aktiviert.** `use_stale_cache` ist standardmäßig unter `symfony_l2` auf `false` gesetzt (siehe Tabelle [Backend-Optionen](#backend-options-for-symfony-l2-cache)). Wenn Ihre `RemoteSynchronizedCache`-Konfiguration das `stale_cache_enabled`-Frontend verwendet, müssen Sie es explizit mit dem Muster im [Symfony L2-Cache mit veraltetem Cache) &#x200B;](#symfony-l2-cache-with-stale-cache).
 
 >[!NOTE]
 >
 >In Adobe Commerce in Cloud-Umgebungen, in denen die Variable &quot;`VALKEY_BACKEND: symfony_l2`-Bereitstellung“ festgelegt ist, wird die vollständige L2-Konfiguration, einschließlich des `stale_cache_enabled` Frontend, automatisch von `ece-tools` generiert. Siehe [Konfigurieren des Symfony L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)Cache für Cloud-spezifisches Verhalten.
 
-- **Redis ist kein unterstütztes Remote-Backend für `symfony_l2`.** Migrieren Sie im Rahmen dieser Änderung nach Valley. Siehe [Einrichten von ](config-valkey.md).
+- **Redis ist kein unterstütztes Remote-Backend für `symfony_l2`.** Migrieren Sie im Rahmen dieser Änderung nach Valley. Siehe [Einrichten von &#x200B;](config-valkey.md).
 
 ### Konfigurationsbeispiel mit Symfony L2-Cache
 

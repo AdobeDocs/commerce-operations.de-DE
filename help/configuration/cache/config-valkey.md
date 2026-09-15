@@ -69,7 +69,7 @@ Richten Sie für die Cache-Instanz die -Instanz so ein, dass sie groß genug ist
 
 - Persistenz ist für die Cache-Instanz nicht erforderlich, da der Commerce-Cache wiederhergestellt werden kann.
 
-  Weitere Informationen finden [ im Handbuch ](https://valkey.io/docs/latest/develop/use/)Valkey Cache“.
+  Weitere Informationen finden [&#x200B; im Handbuch &#x200B;](https://valkey.io/docs/latest/develop/use/)Valkey Cache“.
 
 Zur Leistungsoptimierung können Sie die folgenden Einstellungen für das asynchrone Löschen aktivieren. Diese Einstellungen ändern das Verhalten von Valley nicht.
 

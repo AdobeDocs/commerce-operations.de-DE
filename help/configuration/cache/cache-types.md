@@ -45,7 +45,7 @@ Einen Überblick über die Commerce-Caching-Architektur finden Sie unter [Übers
 
 >[!NOTE]
 >
->Verwenden Sie für Adobe Commerce in der Cloud[Infrastruktur die Cloud-Bereitstellungskonfiguration ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) im Cloud-Handbuch beschrieben. `app/etc/env.php` nicht direkt bearbeiten. Bereitstellungs-Tools generieren diese Datei und können manuelle Änderungen überschreiben.
+>Verwenden Sie für Adobe Commerce in der Cloud[Infrastruktur die Cloud-Bereitstellungskonfiguration &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) im Cloud-Handbuch beschrieben. `app/etc/env.php` nicht direkt bearbeiten. Bereitstellungs-Tools generieren diese Datei und können manuelle Änderungen überschreiben.
 
 ## Standard-Frontend verwenden
 
@@ -53,7 +53,7 @@ Commerce bietet ein standardmäßiges Frontend, das von allen Cache-Typen verwen
 
 In den meisten Fällen ist es nicht erforderlich, ein benutzerdefiniertes Frontend zu definieren. Wenn alle Cache-Typen dieselben Backend- und Backend-Optionen verwenden können, verwenden Sie das Standard-Frontend und konfigurieren Sie sein Backend. Siehe [Cache-Backend](cache-options.md)Optionen) für die Backend-spezifische Konfiguration.
 
-Für Adobe Commerce-Versionen vor 2.4.9 verwendet das Standard-Frontend die veraltete Zend-basierte Cache-Implementierung. Das `Magento\Framework\Cache\Core` Frontend erweitert `Zend_Cache_Core`. Adobe Commerce 2.4.9 und höher verwenden die moderne Symfony-Implementierung. Eine versionsspezifische Anleitung finden [ unter ](cache-options.md)Cache-Backend-Optionen“.
+Für Adobe Commerce-Versionen vor 2.4.9 verwendet das Standard-Frontend die veraltete Zend-basierte Cache-Implementierung. Das `Magento\Framework\Cache\Core` Frontend erweitert `Zend_Cache_Core`. Adobe Commerce 2.4.9 und höher verwenden die moderne Symfony-Implementierung. Eine versionsspezifische Anleitung finden [&#x200B; unter &#x200B;](cache-options.md)Cache-Backend-Optionen“.
 
 ## Definieren eines benutzerdefinierten Frontends
 

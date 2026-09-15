@@ -127,7 +127,7 @@ Verwenden Sie den vollständigen Redis-Klassennamen nur für Versionen, in denen
 
 L2-Caching (auf zwei Ebenen) fügt eine lokale Cache-Ebene auf jedem Web-Knoten vor dem gemeinsam genutzten Remote-Cache-Speicher hinzu, wodurch der Netzwerk-Traffic zwischen Commerce und dem Remote-Cache reduziert wird. Implementierungsoptionen, Versionsunterstützung und Konfigurationsschritte finden Sie unter [L2-Cache-Konfiguration](level-two-cache.md).
 
-Konfigurieren Sie für Cloud-Projekte das L2-Caching mithilfe der Bereitstellungsvariablen, die unter &quot;[ bereitstellen“ beschrieben ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
+Konfigurieren Sie für Cloud-Projekte das L2-Caching mithilfe der Bereitstellungsvariablen, die unter &quot;[&#x200B; bereitstellen“ beschrieben &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy){target="_blank"}.
 
 - [Redis für Standard-Cache verwenden](redis-pg-cache.md)
 - [Valley für Standard-Cache verwenden](valkey-pg-cache.md)
