@@ -3,7 +3,7 @@ title: Installieren und Einrichten von Valley
 description: Erfahren Sie, wie Sie Valkey für das Caching und die Sitzungsspeicherung mit Adobe Commerce installieren und konfigurieren. Entdecken Sie Optionen zur Optimierung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 TQID: 'https://experienceleague.adobe.com/Ef4WREy0eq0ChsrI5-0FtrjMZWNjwr7l71Pm-RHD1GI'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677

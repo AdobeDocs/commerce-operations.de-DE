@@ -3,7 +3,7 @@ title: Installieren und Einrichten von Redis
 description: Erfahren Sie, wie Sie Redis für Caching und Sitzungsspeicher mit Adobe Commerce installieren und konfigurieren. Entdecken Sie Optionen zur Optimierung und Leistungsoptimierung.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 autotag-review: '2026-06-22T20:26:29.348Z'
 TQID: 'https://experienceleague.adobe.com/N61AAy4ihSIlhEjdvpji2XVOdZuHWhytp9zgoAU41K4'
 product_v2:

@@ -3,7 +3,7 @@ title: Konfigurieren von Redis für Standard- und Seitencache
 description: Erfahren Sie, wie Sie Redis als Standard- und Seiten-Cache-Backend für Adobe Commerce konfigurieren. Entdecken Sie CLI-Befehle, env.php-Einstellungen und die Verbindungsüberprüfung.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 autotag-review: '2026-06-22T21:55:53.227Z'
 TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
 product_v2:
