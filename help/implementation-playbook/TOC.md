@@ -3,20 +3,18 @@ user-guide-title: Implementierungs-Playbook
 user-guide-description: Erfahren Sie mehr über Strategien für die Planung und Implementierung einer erfolgreichen Adobe Commerce-Site.
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # Implementierungs-Playbook {#implementation-playbook}
 
 - [Überblick](overview.md)
 - Architektur und Integrationen {#architecture}
   - [Unternehmensreferenz](architecture/enterprise-blueprint.md)
-- Wartung und Support {#maintenance}
+- Wartung und Support {#maintenance-and-support}
   - [Überblick](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Best Practices {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [Private Inhaltsbausteine](best-practices/development/private-content-block-configuration.md)
     - [Statische Inhaltsbereitstellung](best-practices/development/static-content-deployment.md)
     - [Ändern von Datenbanktabellen](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [Ändern des Kern- und Drittanbieter-Codes](best-practices/development/modifying-core-and-third-party-code.md)
+    - [Ändern von Kern- und Drittanbieter-Code](best-practices/development/modifying-core-and-third-party-code.md)
   - Starten {#launch}
     - [Überblick](best-practices/launch/overview.md)
     - [Web-Crawler konfigurieren](best-practices/launch/robots-txt.md)
