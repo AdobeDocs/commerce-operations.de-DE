@@ -2,14 +2,12 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.6
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
-
 ---
-
 
 # Versionshinweise für Adobe Commerce 2.4.6-Sicherheits-Patches
 
@@ -31,7 +29,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 2.4.6 wird bis [30. **2027](../../lifecycle-policy.md#extended-support) unterstützt,** gefolgt von einem [Übergangszeitraum, &#x200B;](../../lifecycle-policy.md#security-only-transitional-period) bis **31. Mai 2028**. Diese Bestimmungen stehen nur Kunden von Adobe Commerce zur Verfügung. Sie erweitern die Unterstützung für Drittanbieterabhängigkeiten wie MySQL nicht.
 >
->Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [&#x200B; [!DNL Adobe Commerce as a Cloud Service] &#x200B;](../../version-upgrade-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [&#x200B; Tabelle &#x200B;](../../lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
+>Wenn Sie Adobe Commerce on Cloud ausführen, müssen Sie vor dem Erzwingungsdatum des **1. Juni 2028) ein Upgrade auf eine unterstützte Version** oder [&#x200B; [!DNL Adobe Commerce as a Cloud Service] &#x200B;](../../security-enforcement-policy.md). Vollständige Lebenszyklusdaten finden Sie in [&#x200B; Tabelle &#x200B;](../../lifecycle-policy.md#end-of-support-dates)Ende der Support-Daten“.
 
 ## 2.4.6-P15
 
@@ -61,9 +59,9 @@ Adobe Commerce 2.4.6 ist jetzt mit RabbitMQ 4.2 kompatibel, das das für Februar
 
 Die USPS-Versandintegration unterstützt jetzt zusätzlich zu den veralteten Web-Tools-APIs die modernisierten RESTful-USPS-APIs. Administratoren können in der Admin-Konfiguration auswählen, welche USPS-Integrations-API verwendet werden soll. Mit diesem Update wird die Einstellung der USPS Web Tools API vorbereitet.
 
-#### Magento-eigene Laminas MVC-Gabel
+#### Magento-eigene Laminas-MVC-Gabel
 
-Um die Einstellung der Laminas MVC zu erreichen, verwendet Adobe Commerce jetzt eine Magento-eigene Abspaltung von `laminas-mvc` (veröffentlicht als `magento/magento-zf-mvc`). Diese Abspaltung gewährleistet kontinuierliche Patches und langfristige Sicherheitskompatibilität für Adobe Commerce 2.4.6.
+Um die Einstellung des Laminas MVC zu erreichen, verwendet Adobe Commerce jetzt eine Magento-eigene Abspaltung von `laminas-mvc` (veröffentlicht als `magento/magento-zf-mvc`). Diese Abspaltung gewährleistet kontinuierliche Patches und langfristige Sicherheitskompatibilität für Adobe Commerce 2.4.6.
 
 ## 2.4.6-P14
 
@@ -275,7 +273,7 @@ Wenn das Prüfsummenproblem weiterhin besteht, entfernen Sie die `composer.lock`
 
 Die Adobe Commerce-Version 2.4.6-p2 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version bietet außerdem Sicherheitsverbesserungen, um die Einhaltung der neuesten Best Practices für die Sicherheit zu verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-42](https://helpx.adobe.com/de/security/products/magento/apsb23-42.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
 
 ### Hotfix für CVE-2022-31160 anwenden
 
@@ -293,7 +291,7 @@ Adobe Commerce 2.4.6-p2 schließt die Auflösung der Leistungsbeeinträchtigung 
 
 Die Adobe Commerce-Version 2.4.6-p1 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version umfasst auch Sicherheitsverbesserungen und Plattform-Upgrades, um die Einhaltung der neuesten Best Practices für die Sicherheit zu verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-35](https://helpx.adobe.com/de/security/products/magento/apsb23-35.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
 ### Hotfix für CVE-2022-31160 anwenden
 
@@ -331,4 +329,4 @@ Plattform-Upgrades für diese Version verbessern die Einhaltung der neuesten Bes
 
   Dieses Problem kann behoben werden, indem manuelle Abhängigkeiten für das B2B-Sicherheitspaket mit einem &quot;[&quot;-Tag &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links) werden. Weitere Informationen finden Sie in den [B2B-Versionshinweisen](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=de#known-issue).
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

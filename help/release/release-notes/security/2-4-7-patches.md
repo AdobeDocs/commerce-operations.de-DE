@@ -2,14 +2,12 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.7
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
-
 ---
-
 
 # Versionshinweise für Adobe Commerce 2.4.7-Sicherheits-Patches
 
@@ -59,9 +57,9 @@ Adobe Commerce 2.4.7 ist jetzt mit RabbitMQ 4.2 kompatibel, das das für Februar
 
 Die USPS-Versandintegration unterstützt jetzt zusätzlich zu den veralteten Web-Tools-APIs die modernisierten RESTful-USPS-APIs. Administratoren können in der Admin-Konfiguration auswählen, welche USPS-Integrations-API verwendet werden soll. Mit diesem Update wird die Einstellung der USPS Web Tools API vorbereitet.
 
-#### Magento-eigene Laminas MVC-Gabel
+#### Magento-eigene Laminas-MVC-Gabel
 
-Um die Einstellung der Laminas MVC zu erreichen, verwendet Adobe Commerce jetzt eine Magento-eigene Abspaltung von `laminas-mvc` (veröffentlicht als `magento/magento-zf-mvc`). Diese Abspaltung gewährleistet kontinuierliche Patches und langfristige Sicherheitskompatibilität für Adobe Commerce 2.4.7.
+Um die Einstellung des Laminas MVC zu erreichen, verwendet Adobe Commerce jetzt eine Magento-eigene Abspaltung von `laminas-mvc` (veröffentlicht als `magento/magento-zf-mvc`). Diese Abspaltung gewährleistet kontinuierliche Patches und langfristige Sicherheitskompatibilität für Adobe Commerce 2.4.7.
 
 ## 2.4.7-P9
 
@@ -225,4 +223,4 @@ Diese Version umfasst die folgenden Highlights:
 
 Adobe Commerce 2.4.7-p1 löst ein Problem, das im Rahmen der UPS-Integrationsmigration von der SOAP zur REST-API eingeführt wurde. Dieses Problem betraf Kunden, die außerhalb der USA versenden, und hinderte sie daran, die metrischen System-/SI-Messungen von Kilogramm und Zentimeter für Pakete zu verwenden, um Sendungen mit UPS zu erstellen. Weitere Informationen finden Sie [&#x200B; Knowledgebase-Artikel zur Migration der UPS-Versandmethodenintegration von SOAP &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27146) RESTful-API.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

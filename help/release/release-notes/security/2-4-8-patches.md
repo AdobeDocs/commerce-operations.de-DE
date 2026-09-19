@@ -2,14 +2,12 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.8
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 # Versionshinweise für Adobe Commerce 2.4.8-Sicherheits-Patches
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -46,9 +44,9 @@ Adobe Commerce 2.4.8 ist jetzt mit RabbitMQ 4.2 kompatibel, das das für Februar
 
 Die USPS-Versandintegration unterstützt jetzt zusätzlich zu den veralteten Web-Tools-APIs die modernisierten RESTful-USPS-APIs. Administratoren können in der Admin-Konfiguration auswählen, welche USPS-Integrations-API verwendet werden soll. Mit diesem Update wird die Einstellung der USPS Web Tools API vorbereitet.
 
-#### Magento-eigene Laminas MVC-Gabel
+#### Magento-eigene Laminas-MVC-Gabel
 
-Um die Einstellung der Laminas MVC zu erreichen, verwendet Adobe Commerce jetzt eine Magento-eigene Abspaltung von `laminas-mvc` (veröffentlicht als `magento/magento-zf-mvc`). Diese Abspaltung gewährleistet kontinuierliche Patches und langfristige Sicherheitskompatibilität für Adobe Commerce 2.4.8.
+Um die Einstellung des Laminas MVC zu erreichen, verwendet Adobe Commerce jetzt eine Magento-eigene Abspaltung von `laminas-mvc` (veröffentlicht als `magento/magento-zf-mvc`). Diese Abspaltung gewährleistet kontinuierliche Patches und langfristige Sicherheitskompatibilität für Adobe Commerce 2.4.8.
 
 ## 2.4.8-p4
 
@@ -136,4 +134,4 @@ Die Fehlerbehebungen für CVE-2025-47110 und VULN-31547 sind auch als isolierter
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

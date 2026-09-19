@@ -2,13 +2,11 @@
 title: Versionshinweise zu Adobe Commerce
 description: Erfahren Sie, wo Sie Informationen zu bestimmten Versionen von Adobe Commerce finden.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '492'
 ht-degree: 2%
-
 ---
-
 
 # Versionshinweise f체r Adobe Commerce
 
@@ -38,7 +36,6 @@ Die nachstehende Tabelle enth채lt Versionshinweise und wichtige Informationen f�
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Sicherheitspatches</a></li>
             <li><a href="../lifecycle-policy.md">Lebenszyklusrichtlinie f체r Software</a></li>
-            <li><a href="../version-upgrade-enforcement-policy.md">Durchsetzungsrichtlinie f체r die Cloud-Versionsaktualisierung</a></li>
             <li><a href="../security-enforcement-policy.md">Sicherheits- und Compliance-Hinweis</a></li>
             <li><a href="https://helpx.adobe.com/de/security/products/magento.html">Adobe-Sicherheitsbulletin</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=de">B2B f체r Adobe Commerce</a></li>

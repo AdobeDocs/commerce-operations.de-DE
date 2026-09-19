@@ -3,14 +3,12 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # Adobe Commerce-Lebenszyklusrichtlinie
 
@@ -206,3 +204,5 @@ Wenden Sie sich an Ihr Adobe-Account-Team, um eine Migrationsbewertung durchzuf�
 Wenn Sie nicht sofort nach [!DNL Adobe Commerce as a Cloud Service] migrieren können, können Sie auf die neueste unterstützte Version von Adobe Commerce on Cloud aktualisieren. Dadurch gelangen Sie zu einem vollständig unterstützten, modernen Infrastrukturstapel, während Ihr vorhandenes Commerce on Cloud-Bereitstellungsmodell beibehalten wird.
 
 Beachten Sie, dass durch diesen Pfad zukünftige Upgrade-Verpflichtungen nicht entfallen. Kunden mit Adobe Commerce in Cloud-Bereitstellungen müssen mit dem Upgrade fortfahren, wenn die Versionszeilen das Datum der Versionsaktualisierung erreichen.
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->
