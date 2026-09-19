@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # Erweiterte Support-Richtlinie - Hinweis
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >Siehe auch:
 >
 >- [Software-Lebenszyklusrichtlinie](/help/release/lifecycle-policy.md) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
->- [Richtlinie zur Durchsetzung des Cloud-](/help/release/version-upgrade-enforcement-policy.md)-Upgrades - Erzwingungstermine und erforderliche Aktionen
+>- [Erforderliche Maßnahmen und Fristen zur Sicherung von Commerce-Umgebungen](/help/release/security-enforcement-policy.md) — Erzwingungstermine und erforderliche Maßnahmen

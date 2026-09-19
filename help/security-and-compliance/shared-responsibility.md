@@ -2,13 +2,11 @@
 title: Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 description: Erfahren Sie mehr über die Sicherheitsaufgaben der einzelnen an Ihrem Adobe Commerce on Cloud-Infrastrukturprojekt beteiligten Parteien.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
 
 Adobe Commerce on Cloud Infrastructure ist ein PaaS-Angebot (Platform-as-a-Service), das auf einem Sicherheits- und Betriebsmodell basiert, das sich auf gemeinsame Verantwortung stützt. Adobe, der Händler, der Cloud Service Provider und der CDN-Provider (Content Delivery Network) teilen sich diese Verantwortlichkeiten. Jede Partei ist für die Sicherung und den Betrieb des Adobe Commerce-Programms und der auf der Cloud-Infrastruktur bereitgestellten händlerspezifischen Codes und Erweiterungen selbst verantwortlich.
@@ -31,14 +29,13 @@ Händler sind für Folgendes verantwortlich:
 * Sichere Anwendungsentwicklung
 * Einholung der PCI-Zertifizierung, falls vom Zahlungsverarbeiter des Händlers angefordert
 * Reaktion auf Sicherheitsvorfälle
-* Pflegen aller Drittanbieterabhängigkeiten, Plattformdienste und Adobe Commerce Services-Erweiterungen für Versionen, die aktiv unterstützt werden. Adobe bietet keine Sicherheitsunterstützung oder Hilfe für Bereitstellungen, auf denen nicht unterstützte Abhängigkeitsversionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) und die [Produktverfügbarkeitsmatrix](/help/release/product-availability.md) für unterstützte Versionen.
+* Pflegen aller Drittanbieterabhängigkeiten, Plattformdienste und Adobe Commerce Services-Erweiterungen für Versionen, die aktiv unterstützt werden. Adobe bietet keine Sicherheitsunterstützung oder Hilfe für Bereitstellungen, auf denen nicht unterstützte Abhängigkeitsversionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) und die [Produktverfügbarkeitsmatrix](/help/release/product-availability.md) für unterstützte Versionen.
 
 >[!NOTE]
 >
 >Siehe auch:
 >
 >* [Software-Lebenszyklusrichtlinie](../release/lifecycle-policy.md) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
->* [Richtlinie zur Durchsetzung des Cloud-](../release/version-upgrade-enforcement-policy.md)-Upgrades - Erzwingungstermine und erforderliche Aktionen
 >* [Sicherheits- und Compliance](../release/security-enforcement-policy.md) - Erforderliche Aktionen und Fristen für Adobe Commerce in Cloud-Versionen 2.4.4 bis 2.4.9
 
 {{supported-versions-only}}
@@ -104,7 +101,7 @@ Der Händler ist für die Befolgung der Best Practices für die Sicherheit seine
   * Adobe Commerce Services-Erweiterungen
   * Alle Erweiterungen und benutzerdefinierten Integrationen von Drittanbietern
 
-  Adobe bietet keine Unterstützung für Bereitstellungen, auf denen nicht unterstützte Versionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) und die [Produktverfügbarkeitsmatrix](/help/release/product-availability.md) für unterstützte Versionen.
+  Adobe bietet keine Unterstützung für Bereitstellungen, auf denen nicht unterstützte Versionen ausgeführt werden. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) und die [Produktverfügbarkeitsmatrix](/help/release/product-availability.md) für unterstützte Versionen.
 
 ## Zuständigkeiten des Cloud-Service-Anbieters
 
