@@ -3,8 +3,8 @@ title: Lebenszyklusrichtlinie für Software
 description: Erfahren Sie mehr über wichtige Daten für das Ende der Software-Unterstützung für Adobe Commerce-Versionen.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+last-update: 2026-09-18
+source-git-commit: 7e982102bc8c3b13a67a0ca4b0a8b21ada1a5825
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%

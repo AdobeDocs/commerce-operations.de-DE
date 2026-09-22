@@ -2,8 +2,8 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.6
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-08-19
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+last-update: 2026-09-18
+source-git-commit: 7e982102bc8c3b13a67a0ca4b0a8b21ada1a5825
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
@@ -291,7 +291,7 @@ Adobe Commerce 2.4.6-p2 schließt die Auflösung der Leistungsbeeinträchtigung 
 
 Die Adobe Commerce-Version 2.4.6-p1 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen identifiziert wurden. Diese Version umfasst auch Sicherheitsverbesserungen und Plattform-Upgrades, um die Einhaltung der neuesten Best Practices für die Sicherheit zu verbessern.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB23-35](https://helpx.adobe.com/de/security/products/magento/apsb23-35.html).
 
 ### Hotfix für CVE-2022-31160 anwenden
 
