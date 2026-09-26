@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1538'
 ht-degree: 1%
 ---
 # Neue Vorlage
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## Neue Funktionen
 
 Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+
+### &#x200B;18. September 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Es wurde <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/monthly-isolated-security-patches">Monthly Isolated Security Patching Policy</a> hinzugefügt, die erklärt, wie Adobe Commerce gezielte, isolierte CVE-Fehlerbehebungen am Patch-Dienstag zwischen den vollständigen Sicherheits-Patch-Versionen bereitstellt und wie sie angewendet und überprüft werden.</p>
+</td>
+      <td>
+        Neues Thema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### &#x200B;15. September 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Typ</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Der Leitfaden <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey-Service-</a> wurde korrigiert, um klarzustellen, dass die Bereitstellungsvariablen <code>VALKEY_BACKEND</code> und <code>REDIS_BACKEND</code> nicht bestimmen, welcher Cache-Service von Adobe Commerce tatsächlich verwendet wird, und dass <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> mit dem tatsächlich in der Umgebung verfügbaren Service übereinstimmen müssen.</p>
+</td>
+      <td>
+        Technisch
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6">verpflichten</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### &#x200B;8. September 2026
 
@@ -380,102 +424,6 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
         Neues Thema, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;27. Juli 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">Übersicht: Quality Patches Tool (QPT) v1.1.82</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;23. Juli 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Aktualisierte <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> mit Details zur MariaDB-Cloud-Versionsunterstützung für Adobe Commerce 2.4.9 (12.3 empfohlen, 11.8 unterstützt).</p>
-</td>
-      <td>
-        Technisch
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;22. Juli 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Das Thema <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements">Systemanforderungen</a> wurde mit der neuesten Version von Commerce on Cloud Service aktualisiert, einschließlich einer Aktualisierung von RabbitMQ 4.3 und bestätigter Kompatibilität mit MariaDB 12.3.</p>
-</td>
-      <td>
-        Größere Aktualisierung
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">verpflichten</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### &#x200B;21. Juli 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Beschreibung</th>
-      <th>Typ</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.81 wurde hinzugefügt <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: Vorschau der geplanten Aktualisierung der Startseite mit konfigurierbaren Produkten wird zur Wartungsseite weitergeleitet</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">verpflichten</a></td>
-    </tr>
-    <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.81 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468: Administratoren bzw. Benutzerinnen, die über eine Website verfügen, können keine dynamischen Blöcke in Page Builder speichern</a>.</p>
-</td>
-      <td>
-        Neues Thema, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">verpflichten</a></td>
     </tr>
   </tbody>
 </table>
