@@ -2,14 +2,12 @@
 title: Beispiel mit einer freigegebenen Konfiguration
 description: Sehen Sie sich ein Beispiel für das Ändern von Einstellungen in einem Entwicklungssystem mit einer freigegebenen Konfigurationsdatei an.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+source-git-commit: 2465ecf45a0990ac40c3ba8c243381ce5484adaa
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
-
 ---
-
 # Beispiel mit einer freigegebenen Konfiguration
 
 Dieses Beispiel zeigt, wie Sie die folgenden Einstellungen in Ihrem Entwicklungssystem ändern, die freigegebene Konfigurationsdatei `config.php` in Ihrem Build-System aktualisieren und dieselben Einstellungen in Ihrem Produktionssystem implementieren:
@@ -87,8 +85,8 @@ Der letzte Schritt im Prozess besteht darin, Ihr Produktionssystem über die Ver
 
    ![Konfigurationsoptionen können in Admin nicht bearbeitet werden](../../assets/configuration/split-deploy-not-editable.png)
 
->[!INFO]
->
->Um eine in Admin gesperrte Einstellung zu ändern, verwenden Sie den [`magento config:set --lock` Befehl](../cli/set-configuration-values.md).
+   >[!INFO]
+   >
+   >Um eine in Admin gesperrte Einstellung zu ändern, verwenden Sie den [`magento config:set --lock` Befehl](../cli/set-configuration-values.md).
 
 <!-- Last updated from includes: 2026-04-17 13:49:36 -->
