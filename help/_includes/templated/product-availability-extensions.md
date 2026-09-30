@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6bec5b1e84a8e4ab49bd78c40be972292fb83f1c
+source-git-commit: 887b0346ef77346074adb03c47e4f45ec9c22bab
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 20%
@@ -62,7 +62,7 @@ ht-degree: 20%
       </tr>
       <tr>
           <td>Adobe Experience Manager Assets-Integration für Commerce</td>
-          <td>1.4.4</td>
+          <td>1.4.7</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
