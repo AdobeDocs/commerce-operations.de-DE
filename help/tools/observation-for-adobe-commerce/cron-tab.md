@@ -1,15 +1,13 @@
 ---
-title: Die [!DNL Cron] Registerkarte
-description: Erfahren Sie mehr über  [!DNL Cron]  Registerkarte  [!DNL Observation for Adobe Commerce].
+title: Die Registerkarte [!DNL Cron]
+description: Erfahren Sie mehr über die Registerkarte [!DNL Cron] von [!DNL Observation for Adobe Commerce].
 exl-id: 66f5ffd6-4118-4534-b2d6-09c7a30e5e13
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '298'
 ht-degree: 0%
-
 ---
-
 # Die Registerkarte [!DNL Cron]
 
 Diese Registerkarte dient dazu, Probleme und Ursachen [!DNL cron] Probleme schnell zu isolieren.
