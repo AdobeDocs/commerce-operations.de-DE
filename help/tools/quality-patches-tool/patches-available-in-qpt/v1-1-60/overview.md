@@ -1,17 +1,15 @@
 ---
-title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.60'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.60  [!DNL Quality Patches Tool]  Patches behoben wurden.
+title: 'Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.60'
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.60 verfügbaren Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 31ae91ac-9632-49b3-9287-76cc70ec00de
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '190'
 ht-degree: 0%
-
 ---
-
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.60
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.60 verfügbaren Patches behoben wurden.
