@@ -1,5 +1,5 @@
 ---
-source-git-commit: 887b0346ef77346074adb03c47e4f45ec9c22bab
+source-git-commit: 3ee5eeec117fa5545e00c291b7059384d125ae66
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 20%
@@ -62,15 +62,15 @@ ht-degree: 20%
       </tr>
       <tr>
           <td>Adobe Experience Manager Assets-Integration für Commerce</td>
-          <td>1.4.7</td>
+          <td>1.4.9</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-commerce">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-commerce">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -83,7 +83,7 @@ ht-degree: 20%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -95,8 +95,8 @@ ht-degree: 20%
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/install">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -109,7 +109,7 @@ ht-degree: 20%
           <td>3.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
   </tbody>
