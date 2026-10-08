@@ -1,17 +1,15 @@
 ---
 title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.53'
-description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in Version 1.1.53  [!DNL Quality Patches Tool]  Patches behoben wurden.
+description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.53 verfügbaren Patches behoben wurden.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 4e7c8d45-dc0c-4182-8cd0-727b28294d58
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '243'
 ht-degree: 0%
-
 ---
-
 # Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.53
 
 Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool] (QPT) v1.1.53 verfügbaren Patches behoben wurden.
