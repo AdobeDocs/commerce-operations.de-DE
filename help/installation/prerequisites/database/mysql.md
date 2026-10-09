@@ -2,22 +2,31 @@
 title: MySQL-Richtlinien
 description: Führen Sie diese Schritte aus, um MySQL und MariaDB für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1179'
 ht-degree: 0%
-
 ---
-
 # Allgemeine MySQL-Richtlinien
 
 Siehe [Systemanforderungen](../../system-requirements.md) für unterstützte Versionen von MySQL.
 
 Adobe _empfiehlt dringend_ beim Einrichten der Datenbank den folgenden Standard zu beachten:
 
-* Adobe Commerce verwendet [MySQL-Datenbank-](https://dev.mysql.com/doc/refman/8.4/en/triggers.html), um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexermodus auf &quot;[&quot; &#x200B;](../../../configuration/cli/manage-indexers.md#configure-indexers) ist. Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce-Versionen einführen können.
-* Machen Sie sich mit [diesen potenziellen Einschränkungen von MySQL Trigger &#x200B;](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) vertraut, bevor Sie fortfahren.
+* Adobe Commerce verwendet [MySQL-Datenbank-](https://dev.mysql.com/doc/refman/8.4/en/triggers.html), um den Datenbankzugriff während der Neuindizierung zu verbessern. Diese werden erstellt, wenn der Indexermodus auf &quot;[&quot; ](../../../configuration/cli/manage-indexers.md#configure-indexers) ist. Das Programm unterstützt keine benutzerdefinierten Trigger in der Datenbank, da benutzerdefinierte Trigger Inkompatibilitäten mit zukünftigen Adobe Commerce-Versionen einführen können.
+* Machen Sie sich mit [diesen potenziellen Einschränkungen von MySQL Trigger ](https://dev.mysql.com/doc/refman/8.4/en/stored-program-restrictions.html) vertraut, bevor Sie fortfahren.
 * Um den Sicherheitszustand Ihrer Datenbank zu verbessern, aktivieren Sie den [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/8.4/en/sql-mode.html#sqlmode_strict_all_tables) SQL-Modus, um zu verhindern, dass ungültige Datenwerte gespeichert werden, was zu unerwünschten Datenbankinteraktionen führen könnte.
 * Adobe Commerce unterstützt _nicht_ die auf MySQL-Anweisungen basierende Replikation. Stellen Sie sicher _dass Sie_[zeilenbasierte Replikation](https://dev.mysql.com/doc/refman/8.4/en/replication-formats.html) verwenden.
 
@@ -80,7 +89,7 @@ Beschreibung von admin_user unter mysql 8.19
 
 Mit Ausnahme von _TINYINT(1)_ sollten alle ganzzahligen Auffüllungen (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) aus der `db_schema.xml`-Datei entfernt werden.
 
-https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature Weitere Informationen finden Sie unter [&#128279;](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
+https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature Weitere Informationen finden Sie unter [](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
 ### Standardverhalten von ORDER BY
 

@@ -2,14 +2,23 @@
 title: Konfigurieren des Stores
 description: Erfahren Sie, wie Sie Ihren Adobe Commerce-Store nach der Bereitstellungskonfiguration und Datenbankschema-Einrichtung über die Befehlszeile konfigurieren, einschließlich sicherer Installationsoptionen.
 exl-id: ab5e9c43-d914-4de9-98a9-b60d3984b23c
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren des Stores
 
 Bevor Sie diesen Befehl ausführen, müssen Sie Folgendes tun *oder* Sie müssen [die Anwendung installieren](../advanced.md):

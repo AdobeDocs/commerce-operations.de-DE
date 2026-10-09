@@ -3,7 +3,18 @@ title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.7
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
 last-update: 2026-08-19
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
@@ -29,7 +40,7 @@ ht-degree: 0%
 
 Die Adobe Commerce-Sicherheitsversion 2.4.7-p10 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB26-49](https://helpx.adobe.com/de/security/products/magento/apsb26-49.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
 
 {{b2b-patches}}
 
@@ -65,7 +76,7 @@ Um die Einstellung des Laminas MVC zu erreichen, verwendet Adobe Commerce jetzt 
 
 Die Sicherheitsversion 2.4.7-p9 von Adobe Commerce bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB26-05](https://helpx.adobe.com/de/security/products/magento/apsb26-05.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
 
 {{b2b-patches}}
 
@@ -85,7 +96,7 @@ Adobe Commerce 2.4.7 wurde aktualisiert, um Composer 2.9.x zu unterstützen und 
 
 Die Adobe Commerce-Sicherheitsversion 2.4.7-p8 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-94](https://helpx.adobe.com/de/security/products/magento/apsb25-94.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -105,7 +116,7 @@ Diese Version umfasst die folgenden Highlights:
 
 Die Adobe Commerce-Sicherheitsversion 2.4.7-p7 enthält Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-71](https://helpx.adobe.com/de/security/products/magento/apsb25-71.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -113,7 +124,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Version 2.4.7-p6 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/de/security/products/magento/apsb25-50.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -137,7 +148,7 @@ Diese Version umfasst die folgenden Highlights:
 
 Die Adobe Commerce-Sicherheitsversion 2.4.7-p5 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-26](https://helpx.adobe.com/de/security/products/magento/apsb25-26.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
@@ -147,7 +158,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 >[!BEGINSHADEBOX]
 
-Mit dieser Version wird auch die Unterstützung für die Adobe Commerce [HIPAA-fähige Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) eingeführt.
+Mit dieser Version wird auch die Unterstützung für die Adobe Commerce [HIPAA-fähige Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) eingeführt.
 
 >[!ENDSHADEBOX]
 
@@ -163,7 +174,7 @@ Darüber hinaus kann für die Versionen 2.4.7-p3, 2.4.7-p4 und 2.4.7-p5 die Brai
 
 Die Adobe Commerce-Version 2.4.7-p4 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-08](https://helpx.adobe.com/de/security/products/magento/apsb25-08.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
@@ -175,7 +186,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Sicherheitsversion 2.4.7-p3 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-73](https://helpx.adobe.com/de/security/products/magento/apsb24-73.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
@@ -191,7 +202,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Adobe Commerce-Version 2.4.7-p2 bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-61](https://helpx.adobe.com/de/security/products/magento/apsb24-61.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Highlights
 
@@ -205,7 +216,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Die Sicherheitsversion 2.4.7-p1 von Adobe Commerce bietet Sicherheitsfehlerbehebungen für Sicherheitslücken, die in früheren Versionen von 2.4.7 identifiziert wurden.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-40](https://helpx.adobe.com/de/security/products/magento/apsb24-40.html).
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Hotfix für CVE-2024-34102 anwenden
 
@@ -215,12 +226,12 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 Diese Version umfasst die folgenden Highlights:
 
-* **Aktualisieren [Einstellungen für einmaliges Kennwort (OTP)](https://experienceleague.adobe.com/de/docs/commerce-admin/config/security/2fa) für Google Authenticator**-Dieses Update ist erforderlich, um einen Fehler zu beheben, der durch eine [abwärtsinkompatible Änderung](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7 eingeführt wurde. Die Beschreibung des Felds **[!UICONTROL OTP Window]** bietet nun eine genaue Erklärung der Einstellung, und der Standardwert wurde von `1` in `29` geändert.
+* **Aktualisieren [Einstellungen für einmaliges Kennwort (OTP)](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) für Google Authenticator**-Dieses Update ist erforderlich, um einen Fehler zu beheben, der durch eine [abwärtsinkompatible Änderung](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) in 2.4.7 eingeführt wurde. Die Beschreibung des Felds **[!UICONTROL OTP Window]** bietet nun eine genaue Erklärung der Einstellung, und der Standardwert wurde von `1` in `29` geändert.
 
-* **B2B-Versionskompatibilität** - Zur Kompatibilität mit Commerce Version 2.4.7-p1 müssen Händler, die die Adobe Commerce B2B-Erweiterung haben, ein Upgrade auf [B2B Version 1.4.2-p1 durchführen](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+* **B2B-Versionskompatibilität** - Zur Kompatibilität mit Commerce Version 2.4.7-p1 müssen Händler, die die Adobe Commerce B2B-Erweiterung haben, ein Upgrade auf [B2B Version 1.4.2-p1 durchführen](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### In dieser Version enthaltene Hotfixes
 
-Adobe Commerce 2.4.7-p1 löst ein Problem, das im Rahmen der UPS-Integrationsmigration von der SOAP zur REST-API eingeführt wurde. Dieses Problem betraf Kunden, die außerhalb der USA versenden, und hinderte sie daran, die metrischen System-/SI-Messungen von Kilogramm und Zentimeter für Pakete zu verwenden, um Sendungen mit UPS zu erstellen. Weitere Informationen finden Sie [&#x200B; Knowledgebase-Artikel zur Migration der UPS-Versandmethodenintegration von SOAP &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27146) RESTful-API.
+Adobe Commerce 2.4.7-p1 löst ein Problem, das im Rahmen der UPS-Integrationsmigration von der SOAP zur REST-API eingeführt wurde. Dieses Problem betraf Kunden, die außerhalb der USA versenden, und hinderte sie daran, die metrischen System-/SI-Messungen von Kilogramm und Zentimeter für Pakete zu verwenden, um Sendungen mit UPS zu erstellen. Weitere Informationen finden Sie [ Knowledgebase-Artikel zur Migration der UPS-Versandmethodenintegration von SOAP ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27146) RESTful-API.
 
 <!-- Last updated from includes: 2026-08-19 13:47:15 -->
