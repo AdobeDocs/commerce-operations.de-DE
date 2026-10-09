@@ -2,13 +2,22 @@
 title: Erweiterte JavaScript-Pakete
 description: Erfahren Sie mehr über die erweiterte JavaScript-Bündelung in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2301'
 ht-degree: 0%
-
 ---
-
 # Erweiterte JavaScript-Pakete
 
 Beim Bündeln von JavaScript-Modulen für eine bessere Leistung geht es darum, zwei Dinge zu reduzieren:
@@ -48,7 +57,7 @@ Die Commerce-Bündelung reduziert die Anzahl der Verbindungen pro Seite, aber f�
 
 >[!NOTE]
 >
->Die Verwendung von **[!UICONTROL Merge JavaScript Files]** wird nicht empfohlen. Diese Einstellung wurde nur für synchron geladene JavaScript im HEAD-Abschnitt der Seite entwickelt und kann dazu führen, dass Bundle und [!DNL RequireJS] nicht korrekt funktionieren. Sie wird nur aus Gründen der Abwärtskompatibilität beibehalten und bietet keinen Leistungsvorteil, wenn HTTP/2 aktiviert ist.
+>Die Verwendung von **[!UICONTROL Merge JavaScript Files]** wird nicht empfohlen. Diese Einstellung wurde nur für synchron geladene JavaScript im HEAD-Abschnitt der Seite entwickelt und kann dazu führen, dass Bundles und [!DNL RequireJS] nicht korrekt funktionieren. Sie wird nur aus Gründen der Abwärtskompatibilität beibehalten und bietet keinen Leistungsvorteil, wenn HTTP/2 aktiviert ist.
 >Wenn Sie **[!UICONTROL Merge JavaScript Files]** aktiviert haben und Probleme auftreten, versuchen Sie, es zu deaktivieren, bevor Sie Patches anwenden. Siehe [ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md), wenn Sie die Zusammenführung nicht deaktivieren können.
 
 So aktivieren Sie die integrierte Zusammenführung über die Befehlszeile:

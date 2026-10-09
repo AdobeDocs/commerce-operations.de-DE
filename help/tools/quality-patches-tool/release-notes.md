@@ -16,7 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '33143'
 ht-degree: 0%
@@ -1107,7 +1109,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **MDVA-44887** (*für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.5*) - Behebt den Fehler *Nicht erfasste SyntaxError: Unerwartetes Token &#39;const&#39;* im Admin-Bedienfeld.
 * **MDVA-43718** (*für Adobe Commerce und Magento Open Source >=2.3.0 &lt;2.4.5*) - Fehlerbehebungen *Der Benutzer ist nicht berechtigt, auf %resources zuzugreifen.* Fehler, der beim Zugriff auf einen freigegebenen Katalog über eine benutzerdefinierte Integration angezeigt wird.
 * **MDVA-44660** (*für Adobe Commerce und Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Es wurde das Problem behoben, bei dem das Zeichen für einen gravierenden Akzent (\`) nicht für den Vor- und Nachnamen eines Kunden verwendet werden konnte.
-* **MDVA-40896** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.4*) - Behebt den Fehler *Fehler: TypeError: Argument 3 wurde an Magento übergeben* in der asynchronen Produkt-Bulk-API.
+* **MDVA-40896** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.4*) - Behebt den *Fehler: TypeError: Argument 3 wurde an Magento übergeben* Fehler in asynchroner Produkt-Bulk-API.
 * **MDVA-38559** (*für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.3*) - Behebt den */V1/customers/search API*-Fehler für Kunden mit mehr als einem Abonnement.
 * **MDVA-44533** (*für Adobe Commerce und Magento Open Source >=2.3.1 &lt;2.4.4*) - Behebt das Problem, dass der Rabatt fälschlicherweise auf ein untergeordnetes Bundle-Produkt angewendet wird.
 * Aktualisierte Patches: MDVA-41061, MDVA-42269.

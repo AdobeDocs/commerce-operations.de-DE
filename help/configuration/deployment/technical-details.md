@@ -2,13 +2,22 @@
 title: Technische Details
 description: Erfahren Sie mehr über die technischen Details der Pipeline-Bereitstellung, Konfigurationstypen und empfohlene Workflows.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # Technische Details
 
 In diesem Abschnitt werden technische Implementierungsdetails zur Pipeline-Bereitstellung in Commerce 2.2 und höher erläutert. Die Verbesserungen lassen sich in folgende Bereiche unterteilen:
@@ -69,16 +78,16 @@ Der Administrator zeigt im Produktionsmodus das folgende Verhalten:
 - Cache-Typen können in Admin nicht aktiviert oder deaktiviert werden
 - Entwicklereinstellungen sind nicht verfügbar (**Stores** > Einstellungen > **Konfiguration** > Erweitert > **Entwickler**), einschließlich:
 
-   - Minimieren von CSS, JavaScript und HTML
-   - Zusammenführen von CSS und JavaScript
-   - Server- oder Client-seitige LESS-Kompilierung
-   - Inline-Übersetzungen
-   - Wie bereits erwähnt, sind Konfigurationseinstellungen in `config.php` oder `env.php` gesperrt und können nicht in der Admin bearbeitet werden.
-   - Sie können das Admin-Gebietsschema nur in Sprachen ändern, die von bereitgestellten Designs verwendet werden
+  - Minimieren von CSS, JavaScript und HTML
+  - Zusammenführen von CSS und JavaScript
+  - Server- oder Client-seitige LESS-Kompilierung
+  - Inline-Übersetzungen
+  - Wie bereits erwähnt, sind Konfigurationseinstellungen in `config.php` oder `env.php` gesperrt und können nicht in der Admin bearbeitet werden.
+  - Sie können das Admin-Gebietsschema nur in Sprachen ändern, die von bereitgestellten Designs verwendet werden
 
-     Die folgende Abbildung zeigt ein Beispiel der Liste **Kontoeinstellung** > **Schnittstellengebietsschema** in der Admin-Liste, wobei nur zwei bereitgestellte Gebietsschemata angezeigt werden:
+    Die folgende Abbildung zeigt ein Beispiel der Liste **Kontoeinstellung** > **Schnittstellengebietsschema** in der Admin-Liste, wobei nur zwei bereitgestellte Gebietsschemata angezeigt werden:
 
-     ![Sie können das Admin-Gebietsschema nur in bereitgestellte Gebietsschemata ändern](../../assets/configuration/split-deploy-admin-locale.png)
+    ![Sie können das Admin-Gebietsschema nur in bereitgestellte Gebietsschemata ändern](../../assets/configuration/split-deploy-admin-locale.png)
 
 - Sie können die Gebietsschema-Konfigurationen für keinen Bereich mit der Admin ändern.
 

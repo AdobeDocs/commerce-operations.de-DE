@@ -3,13 +3,28 @@ title: Benutzerdefinierte Protokollierung
 description: Erfahren Sie, wie Sie Fehler mithilfe benutzerdefinierter dateibasierter Protokollierung in Adobe Commerce untersuchen können, einschließlich der Einhaltung von PSR-3 und Überlegungen zur zentralisierten Protokollierung.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # Übersicht über die benutzerdefinierte Protokollierung
 
 Protokolle bieten Einblick in Systemprozesse, z. B. Debugging-Informationen, die Ihnen dabei helfen zu verstehen, wann ein Fehler aufgetreten ist oder was zu dem Fehler geführt hat.

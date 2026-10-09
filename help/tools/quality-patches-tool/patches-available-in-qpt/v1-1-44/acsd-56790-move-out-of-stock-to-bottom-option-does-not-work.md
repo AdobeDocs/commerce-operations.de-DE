@@ -1,17 +1,34 @@
 ---
-title: 'ACSD-56790: Die Option **[!UICONTROL move out of stock to bottom]** funktioniert nicht beim Sortieren von Produkten in der  [!DNL Visual Merchandiser]'
+title: 'ACSD-56790: Die Option **[!UICONTROL move out of stock to bottom]** funktioniert nicht beim Sortieren von Produkten in der [!DNL Visual Merchandiser]'
 description: Wenden Sie den Patch ACSD-56790 an, um das Adobe Commerce-Problem zu beheben, bei dem die Option „Von Lager nach unten verschieben“ beim Sortieren von Produkten im Visual Merchandiser nicht funktioniert.
 feature: Products, Categories
 role: Admin, Developer
 exl-id: a5e5f208-793d-45a5-a000-f8ff1c31d049
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
-
 ---
-
 # ACSD-56790: **[!UICONTROL move out of stock to bottom]** Option funktioniert nicht beim Sortieren von Produkten in der [!DNL Visual Merchandiser]
 
 Mit dem Patch ACSD-56790 wird das Problem behoben, dass die Option Von Lager nach unten nicht funktioniert, wenn Produkte im [!DNL Visual Merchandiser] sortiert werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.44 installiert ist. Die Patch-ID ist ACSD-56790. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.

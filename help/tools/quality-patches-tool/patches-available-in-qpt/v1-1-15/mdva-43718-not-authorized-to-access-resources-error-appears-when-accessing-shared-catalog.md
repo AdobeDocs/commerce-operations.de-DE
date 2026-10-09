@@ -1,17 +1,27 @@
 ---
 title: 'MDVA-43718: Beim Zugriff auf den freigegebenen Katalog wird der Fehler „Verbraucher hat keine Zugriffsberechtigung auf Ressourcen“ angezeigt'
-description: Der Patch MDVA-43718 löst das Problem, dass der Fehler *Benutzer ist nicht berechtigt, auf %resources zuzugreifen.* angezeigt wird, wenn über eine benutzerdefinierte Integration auf einen freigegebenen Katalog zugegriffen wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-43718. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
+description: Der Patch MDVA-43718 löst das Problem, dass der Fehler *Benutzer ist nicht berechtigt, auf %resources zuzugreifen.* angezeigt wird, wenn über eine benutzerdefinierte Integration auf einen freigegebenen Katalog zugegriffen wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-43718. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: Catalog Management
 role: Admin
 exl-id: 2ced2177-aeff-4c36-8d34-6028539b66bd
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
-
 ---
-
 # MDVA-43718: Beim Zugriff auf den freigegebenen Katalog wird der Fehler „Verbraucher hat keine Zugriffsberechtigung auf Ressourcen“ angezeigt
 
 Der MDVA-43718 Patch löst das Problem, dass der Fehler *Privatkund ist nicht berechtigt, auf %resources zuzugreifen.* Wird beim Zugriff auf einen freigegebenen Katalog über eine benutzerdefinierte Integration angezeigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-43718. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
@@ -41,7 +51,7 @@ Beim Zugriff auf einen freigegebenen Katalog über eine benutzerdefinierte Integ
 
    * Magento_SharedCatalog::list
    * Magento_SharedCatalog::manage
-   * Magento_CATALOG::catalog
+   * Magento_Catalog::catalog
 
 1. Verwenden des Integrationszugriffs: `rest/default/V1/sharedCatalog/1`
 
@@ -63,7 +73,7 @@ Der folgende Fehler wird zurückgegeben:
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

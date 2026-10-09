@@ -5,13 +5,28 @@ feature: Admin Workspace, Orders
 role: Admin
 exl-id: 0ca607b4-5500-4d70-be5e-a3a2b62c6864
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
-
 ---
-
 # ACSD-49960: Die Filterung nach Datum funktioniert nicht für das Kundenauftragsraster
 
 Mit dem Patch ACSD-49960 wird das Problem behoben, dass das Filtern nach Datum für das Kundenauftragsraster nicht funktioniert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.29 installiert ist. Die Patch-ID ist ACSD-49960. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.

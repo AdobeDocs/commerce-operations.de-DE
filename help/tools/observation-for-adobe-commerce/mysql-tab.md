@@ -1,15 +1,29 @@
 ---
 title: Die Registerkarte [!UICONTROL MySQL]
-description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL MySQL]" von [!DNL Observation for Adobe Commerce].
+description: Erfahren Sie mehr über die Registerkarte [!UICONTROL MySQL] von [!DNL Observation for Adobe Commerce].
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1640'
 ht-degree: 0%
-
 ---
-
 # Die Registerkarte [!UICONTROL MySQL]
 
 ## [!UICONTROL MySQL% free storage by node]
@@ -59,7 +73,7 @@ Der **[!UICONTROL Galera log]** zeigt die Anzahl bestimmter Signale aus den MySQ
 * &#39;%members = 1/2%&#39;) als &#39;1of2&#39;
 * &#39;%members = 1/3%&#39;) als &#39;1of3&#39;
 * &#39;%members = 1/1%&#39;) als &#39;1of1&#39;
-* &#39;%\[Hinweis\] /usr/sbin/mysqld (mysqld 10.%&#39;) als &#39;SQL_RESTART&#39;
+* &#39;%\[Hinweis\] /usr/sbin/mysqld (mysqld 10.%&#39;) als&#39;sql_restart&#39;
 * &#39;%Quorum: Kein Knoten mit vollständigem Status:%&#39;) als &#39;no_node_count&#39;
 * %WSREP: Mitglied 0%) als &#39;mem_0&#39;
 * &#39;%WSREP: Mitglied 1.0%&#39;) als &#39;mem_1&#39;

@@ -2,13 +2,22 @@
 title: Abrufen der Adobe Commerce-Software
 description: Erfahren Sie, wie Sie die Adobe Commerce-Software mit Composer erhalten, die Kompatibilität der Erweiterungen überprüfen und die richtige Distribution für die Installation auswählen.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Abrufen der Adobe Commerce-Software
 
 Sie gehören zu den 240.000 Händlern weltweit, die ihr Vertrauen in unsere eCommerce-Software setzen. Wir haben einige Informationen gesammelt, um Ihnen bei den ersten Schritten mit Ihrer Installation zu helfen.

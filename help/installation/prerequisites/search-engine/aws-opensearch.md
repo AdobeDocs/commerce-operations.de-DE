@@ -3,13 +3,30 @@ title: AWS OpenSearch
 description: Führen Sie diese Schritte aus, um den AWS OpenSearch-Webservice für lokale Installationen von Adobe Commerce zu konfigurieren.
 feature: Install, Search
 exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '341'
 ht-degree: 0%
-
 ---
-
 # AWS OpenSearch
 
 Adobe Commerce 2.4.5 unterstützt die Verwendung von Amazon OpenSearch-Service-Clustern. Dieser Service ist der Nachfolger von Amazon Elasticsearch Service. In diesem Abschnitt wird beschrieben, wie Sie Commerce für die Verwendung von AWS OpenSearch konfigurieren und Daten von einer lokalen Elasticsearch- oder OpenSearch-Instanz zu einem AWS OpenSearch-Cluster migrieren.

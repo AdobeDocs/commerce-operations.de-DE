@@ -8,25 +8,39 @@ autotag-review: '2026-06-22T22:18:33.462Z'
 TQID: 'https://experienceleague.adobe.com/ePhbVWjx-hX99p8OKiKqzT-w2KZu-XjS1XieuStKqc4'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+    internal-label: Implementation
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 392
+source-wordcount: '392'
 ht-degree: 0%
-
 ---
-
 # Cache-Löschen mit Lack
 
 In diesem Abschnitt werden die Grundlagen der Verwendung von Varnish als Web-Caching-Beschleuniger für Adobe Commerce erläutert.
@@ -75,6 +89,6 @@ bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 
 Sie können dann Varnish-Hosts bereinigen, wenn Sie den Commerce-Cache (auch als *bezeichnet)* Admin aktualisieren oder die Befehlszeile verwenden.
 
-Um den Cache mithilfe der Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools **Cache-Verwaltung** und dann oben auf der Seite **Magento-** leeren). (Sie können auch einzelne Cache-Typen aktualisieren.)
+Um den Cache mithilfe der Admin zu aktualisieren, klicken Sie auf **[!UICONTROL SYSTEM]** > Tools **Cache-Verwaltung** und dann oben auf der Seite auf **Magento-** leeren. (Sie können auch einzelne Cache-Typen aktualisieren.)
 
 Um den Cache mithilfe der Befehlszeile zu aktualisieren, verwenden Sie normalerweise den [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types)-Befehl als [Dateisystembesitzer](../../installation/prerequisites/file-system/overview.md).

@@ -2,13 +2,22 @@
 title: Festlegen des Werts von Bootstrap-Parametern
 description: Erfahren Sie, wie Sie Bootstrap-Parameter für das Commerce-Programm festlegen.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 1%
-
 ---
-
 # Bootstrap-Parameter
 
 Dieses Thema zeigt, wie Sie die Werte der Bootstrap-Parameter von Commerce-Anwendungen festlegen. Siehe [Übersicht über Anwendungsinitialisierung und Bootstrapping](initialization.md).

@@ -1,25 +1,34 @@
 ---
-title: Konfigurieren des  [!DNL Data Migration Tool]
-description: Erfahren Sie mehr über die beiden Methoden zum Konfigurieren von  [!DNL Data Migration Tool] , um Daten zwischen Magento 1 und Magento 2 zu übertragen.
+title: Konfigurieren des [!DNL Data Migration Tool]
+description: Erfahren Sie mehr über die beiden Methoden zum Konfigurieren des [!DNL Data Migration Tool] für die Datenübertragung zwischen Magento 1 und Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren des [!DNL Data Migration Tool]
 
 Nach der Installation des [!DNL Data Migration Tool] enthält das folgende Verzeichnis Zuordnungs- und Konfigurationsdateien:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Konfiguration und Skripte für die Migration von Magento Open Source 1 zu Magento Open Source 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: Konfiguration und Skripte für die Migration von Magento Open Source 1 zu Magento Open Source 2
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Konfiguration und Skripte für die Migration von Magento Open Source 1 zu Adobe Commerce 2
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Konfiguration und Skripte für die Migration von Adobe Commerce 1 zu Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: Konfiguration und Skripte für die Migration von Magento Open Source 1 zu Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: Konfiguration und Skripte für die Migration von Adobe Commerce 1 zu Adobe Commerce 2
 
 Die vorherigen Verzeichnisse enthalten Unterverzeichnisse für jede unterstützte Version.
 
@@ -37,7 +46,7 @@ Wenn Sie die [!DNL Data Migration Tool] nur lokal ausführen möchten, können S
 
 Bevor Sie Daten migrieren, müssen Sie ein Magento 2 -Modul erstellen.
 
-1. Erstellen Sie ein Magento 2-Modul.
+1. Erstellen Sie ein Magento 2 -Modul.
 
    * `<your Magento 2 install dir>/app/code/Vendor/Migration/composer.json`
 
@@ -190,7 +199,7 @@ Beispiel:
 
 ## Arbeiten mit Konfigurations- und Zuordnungsdateien
 
-Der [!DNL Data Migration Tool] verwendet *Zuordnungsdateien*, um Ihnen eine benutzerdefinierte Datenbankzuordnung zwischen Ihren Magento 1- und Magento 2-Datenbanken zu ermöglichen, einschließlich:
+Der [!DNL Data Migration Tool] verwendet *Zuordnungsdateien*, um eine benutzerdefinierte Datenbankzuordnung zwischen Ihren Magento 1- und Magento 2-Datenbanken durchzuführen, einschließlich:
 
 * Ändern von Tabellennamen
 
@@ -200,7 +209,7 @@ Der [!DNL Data Migration Tool] verwendet *Zuordnungsdateien*, um Ihnen eine benu
 
 * Anpassen der Übertragung von Daten eines Felds in das Magento 2-Format
 
-Zuordnungsdateien für unterstützte Magento-Versionen befinden sich in Unterverzeichnissen von `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+Mapping-Dateien für unterstützte Magento-Versionen befinden sich in Unterverzeichnissen von `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 So verwenden Sie die Zuordnungsdateien:
 
@@ -210,7 +219,7 @@ So verwenden Sie die Zuordnungsdateien:
 
    1. Absoluter Dateipfad, e. G. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Magento/data-migration-tool-Modul Relativer Dateipfad: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Stammbezogener Dateipfad von Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Pfad der Magento-Stammdatei: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 Die `<Magento 2 dir>/vendor/magento/data-migration-tool/etc`- und `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>`-Verzeichnisse enthalten die folgenden Konfigurationsdateien:
 

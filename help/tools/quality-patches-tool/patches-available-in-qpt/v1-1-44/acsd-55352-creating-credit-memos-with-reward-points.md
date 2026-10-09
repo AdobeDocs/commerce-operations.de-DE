@@ -5,13 +5,27 @@ feature: Checkout, Orders
 role: Admin, Developer
 exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 1%
-
 ---
-
 # ACSD-55352: Erstellen von Gutschriften mit Belohnungspunkten
 
 Mit dem Patch des ACSD-55352 wird das Problem behoben, dass nach dem Erstellen einer teilweisen Gutschrift mit Belohnungspunkten für Kunden der Bestellstatus in &quot;*&quot;* und die Optionen für Gutschriften von der Admin-Bestellseite verschwinden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.44 installiert ist. Die Patch-ID ist ACSD-55352. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.

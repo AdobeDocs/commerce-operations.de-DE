@@ -5,13 +5,30 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 type: Troubleshooting
 exl-id: e5995e28-b6b5-4955-a52a-895842c6b6e8
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 1%
-
 ---
-
 # ACSD-67039: Kundendatensätze wurden aufgrund der Validierung `rp_token` Systemattributs nicht gespeichert
 
 Mit dem Patch ACSD-67039 wird das Problem behoben, dass aufgrund der Validierung des `rp_token` Systemattributs keine Kundendatensätze gespeichert wurden und die Diakritik-Validierung nur auf die resultierende Kunden-E-Mail angewendet wurde. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 installiert ist. Die Patch-ID ist ACSD-67039. Beachten Sie, dass dieses Problem in Adobe Commerce 2.4.7 behoben wurde.

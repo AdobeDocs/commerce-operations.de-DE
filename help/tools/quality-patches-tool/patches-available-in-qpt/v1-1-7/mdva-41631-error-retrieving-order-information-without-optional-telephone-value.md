@@ -1,17 +1,27 @@
 ---
 title: 'MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen Wert für „Telefon“'
-description: Mit dem Patch MDVA-41631 wird das Problem behoben, bei dem Benutzende einen Fehler beim Abrufen von Bestellinformationen erhalten, ohne dass ein optionaler Wert für „Telefon“ durch  [!DNL GraphQL]. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+description: Der Patch MDVA-41631 behebt das Problem, dass Benutzende einen Fehler beim Abrufen von Bestellinformationen erhalten, ohne dass der Wert „Telefon“ über [!DNL GraphQL] angegeben wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7 installiert ist. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: Orders
 role: Admin
 exl-id: e56cea59-ffc1-4520-85ca-136cda613884
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
-
 ---
-
 # MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen Wert für „Telefon“
 
 Der Patch MDVA-41631 behebt das Problem, dass Benutzende einen Fehler beim Abrufen von Bestellinformationen erhalten, ohne dass der Wert „Telefon“ über [!DNL GraphQL] angegeben wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.7 installiert ist. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.

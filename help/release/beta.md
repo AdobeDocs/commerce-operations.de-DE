@@ -4,19 +4,28 @@ description: Erfahren Sie mehr über die Beta-Versionen von Adobe Commerce und w
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce as a Cloud Service- und Adobe Commerce Optimizer-Projekte (von Adobe verwaltete SaaS-Infrastruktur)."
-source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 0%
-
 ---
-
 # Beta-Versionen von Adobe Commerce
 
 Beta-Programme für [Adobe Commerce-Produktlösungen](https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions) bieten Händlern die Möglichkeit, auf Vorabversionsfunktionen und -code zuzugreifen, Feedback zu geben und die Zukunft von Adobe Commerce zu gestalten. Es gibt zwei Arten von Beta-Programmen:
 
 - Öffentliche Beta: Allen Adobe Commerce-Kunden und -Partnern steht ein öffentliches Beta-Programm zur Verfügung
-- Private Beta: Ein privates Beta-Programm muss anhand von Kriterien genehmigt werden, um teilnehmen zu können
+- Private beta: Ein privates Beta-Programm muss anhand von Kriterien genehmigt werden, um teilnehmen zu können
 
 >[!IMPORTANT]
 >
@@ -48,7 +57,7 @@ Weitere Informationen finden Sie unter [Attributrangfolge](https://experiencelea
 
 Um Feedback zu dieser Beta-Funktion zu geben, senden Sie eine E-Mail an [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
-### Abgleich und Rangfolge suchen (Private Beta)
+### Abgleich und Rangfolge suchen (Private beta)
 
 Adobe verbessert die Sortierung der Suchergebnisse für [!DNL Live Search] nach [!DNL Adobe Commerce] und [!DNL Adobe Commerce Optimizer] durch die Produktsuche. Die Aktualisierung priorisiert **exakte und Beinahe-Phrasenübereinstimmung**, dann Übereinstimmungen, wobei **alle Abfragebegriffe im selben durchsuchbaren Attribut erscheinen** und schließlich **feldübergreifende** Übereinstimmungen (einschließlich des Verhaltens, das Vorschläge mit automatischer Vervollständigung unterstützt). Dieses mehrschichtige Modell hilft Abfragen mit hohem Intent dabei, die relevantesten Produkte zuerst anzuzeigen und gleichzeitig nützliche Alternativen zurückzugeben.
 

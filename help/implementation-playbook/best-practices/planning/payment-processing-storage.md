@@ -4,13 +4,23 @@ description: Erfahren Sie, wie Sie Zahlungsdetails in Adobe Commerce sicher vera
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
-
 ---
-
 # Best Practices für Zahlungsverarbeitung und Speicherung
 
 Eines der Schlüsselprinzipien für die Aufrechterhaltung der [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=de) ist eine Strategie zur ordnungsgemäßen Verarbeitung und Speicherung von Kreditkartenzahlungen.

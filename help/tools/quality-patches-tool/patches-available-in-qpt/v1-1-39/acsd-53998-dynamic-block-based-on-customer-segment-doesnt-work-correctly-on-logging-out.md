@@ -5,13 +5,32 @@ feature: Customers, Page Builder, Personalization
 role: Admin, Developer
 exl-id: aa7001c7-bb35-4e5c-8ac9-3ed84b75d7cd
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: ed510963-0b8c-4764-86f6-f3c7735bc334
+    internal-label: Page Builder
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
-
 ---
-
 # ACSD-53998: Dynamischer Block basierend auf Kundensegment funktioniert nach der Abmeldung nicht korrekt
 
 Mit dem Patch ACSD-53998 wird das Problem behoben, dass ein dynamischer Block, der auf einem Kundensegment basiert, nach der Abmeldung von einem Kundenkonto nicht korrekt funktioniert. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.39 installiert ist. Die Patch-ID ist ACSD-53998. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.

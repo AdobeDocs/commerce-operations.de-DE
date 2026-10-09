@@ -5,13 +5,30 @@ feature: Site Navigation, B2B
 role: Admin, Developer
 exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 48c59cc5-3c2e-5df1-8756-f5c139a28932
+    internal-label: Site Navigation
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
-
 ---
-
 # ACSD-61322: Produkte, die nicht [!UICONTROL Shared Catalogue] zugewiesen sind, sind in der XML-Sitemap enthalten
 
 Mit dem Patch ACSD-61322 wird das Problem behoben, dass Produkte/Kategorien, die nicht der [!UICONTROL Shared Catalog] für die Standardgruppe (Allgemein) zugewiesen sind, weiterhin in der XML-Sitemap enthalten sind. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.52 installiert ist. Die Patch-ID ist ACSD-61322. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.8 behoben.

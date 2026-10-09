@@ -1,17 +1,27 @@
 ---
 title: 'MDVA-37897: Falsche Umleitung beim Hinzufügen von Produkten aus „Zuletzt angezeigt“'
-description: Der Patch MDVA-37897 löst das Problem der falschen Umleitung, wenn Benutzende versuchen, Produkte mit Optionen aus dem Widget „Zuletzt angezeigt“ hinzuzufügen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-37897. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
+description: Der Patch MDVA-37897 löst das Problem der falschen Umleitung, wenn Benutzende versuchen, Produkte mit Optionen aus dem Widget „Zuletzt angezeigt“ hinzuzufügen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-37897. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
 feature: Products
 role: Admin
 exl-id: d4d1d735-38e4-455e-9045-a2443ce33851
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
-
 ---
-
 # MDVA-37897: Falsche Umleitung beim Hinzufügen von Produkten aus „Zuletzt angezeigt“
 
 Der Patch MDVA-37897 löst das Problem der falschen Umleitung, wenn Benutzende versuchen, Produkte mit Optionen aus dem Widget „Zuletzt angezeigt“ hinzuzufügen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-37897. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.

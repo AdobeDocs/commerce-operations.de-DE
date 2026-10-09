@@ -4,14 +4,24 @@ description: Erfahren Sie mehr über Best Practices für die Code-Verwaltung in 
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-last-update: 2024-11-25T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2024-11-25
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die Code-Verwaltung in Adobe Commerce
 
 Dieses Thema soll Ihnen bei der Entscheidung helfen, ob Sie Git oder Composer verwenden möchten, um benutzerdefinierten Code zu verteilen. Dabei sind die Versionsverwaltung, die Code-Komplexität und die Abhängigkeitsverwaltung zu berücksichtigen.

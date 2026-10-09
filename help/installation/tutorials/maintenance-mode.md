@@ -2,13 +2,22 @@
 title: Wartungsmodus aktivieren oder deaktivieren
 description: Führen Sie diese Schritte aus, um anzupassen, was Kundinnen und Kunden sehen, wenn Ihre Adobe Commerce-Bereitstellung Wartungsarbeiten unterliegt.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '547'
 ht-degree: 0%
-
 ---
-
 # Wartungsmodus aktivieren oder deaktivieren
 
 Das folgende Handbuch bezieht sich auf eine standardmäßige Wartungsmodusseite. Wenn Sie eine benutzerdefinierte Wartungsseite verwenden müssen, lesen Sie den Abschnitt [Erstellen der benutzerdefinierten Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md) .
@@ -86,7 +95,7 @@ Wenn Sie mehrere Stores mit jeweils anderem Layout und lokalisierten Inhalten ei
 
 Im folgenden Beispiel verwenden wir eine Fehlervorlagendatei vom Typ &quot;`503`&quot;, für die lokalisierte Inhalte erforderlich sind.
 
-Der Konstruktor der `Error_Processor` akzeptiert einen `skin` GET-Parameter, um das Layout zu ändern:
+Der Konstruktor der `Error_Processor`-Klasse akzeptiert einen `skin` GET-Parameter, um das Layout zu ändern:
 
 ```php
 if (isset($_GET['skin'])) {
@@ -96,7 +105,7 @@ if (isset($_GET['skin'])) {
 
 Dies kann auch zu einer Rewrite-Regel in der `.htaccess`-Datei hinzugefügt werden, die einen `skin` Parameter an die URL anhängt.
 
-### $_GET[&#39;] Parameter
+### $_GET[&#39;skin]Parameter
 
 So verwenden Sie den `skin`:
 

@@ -1,17 +1,29 @@
 ---
 title: 'MDVA-38799: Herunterladbare Produkte werden nach dem Erstellen eines Staging-Updates nicht gespeichert'
-description: Der Patch MDVA-38799 löst das Problem, dass herunterladbare Produkte nach der Erstellung eines Staging-Updates nicht gespeichert werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-38799. Beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
+description: Der Patch MDVA-38799 löst das Problem, dass herunterladbare Produkte nach der Erstellung eines Staging-Updates nicht gespeichert werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-38799. Beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
 feature: Products, Staging
 role: Admin
 exl-id: 0ae665a8-cda2-4340-91e7-5b9b969a6607
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
-
 ---
-
 # MDVA-38799: Herunterladbare Produkte werden nach dem Erstellen eines Staging-Updates nicht gespeichert
 
 Der Patch MDVA-38799 löst das Problem, dass herunterladbare Produkte nach der Erstellung eines Staging-Updates nicht gespeichert werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-38799. Beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
@@ -61,7 +73,7 @@ Sie erhalten die Fehlermeldung: *Das herunterladbare Beispiel bezieht sich nicht
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

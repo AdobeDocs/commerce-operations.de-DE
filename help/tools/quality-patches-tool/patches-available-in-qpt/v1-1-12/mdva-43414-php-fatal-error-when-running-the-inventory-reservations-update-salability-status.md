@@ -1,17 +1,29 @@
 ---
 title: 'MDVA-43414: Schwerwiegender PHP-Fehler beim Ausführen von „inventory.reservations.updateSalabilityStatus“'
-description: Der Patch MDVA-43414 löst den schwerwiegenden PHP-Fehler, der beim Ausführen der Warteschlange „inventory.reservations.updateSalabilityStatus“ auf numerischen SKUs auftritt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-43414. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
+description: Der Patch MDVA-43414 löst den schwerwiegenden PHP-Fehler, der beim Ausführen der Warteschlange „inventory.reservations.updateSalabilityStatus“ auf numerischen SKUs auftritt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-43414. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
 feature: Inventory, Orders
 role: Admin
 exl-id: 893a5665-ff1b-4862-a984-d9abf642fba3
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8dc0e58b-adf0-51bb-8db5-bb36e3e656fb
+    internal-label: Inventory
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
-
 ---
-
 # MDVA-43414: Schwerwiegender PHP-Fehler beim Ausführen von „inventory.reservations.updateSalabilityStatus“
 
 Der Patch MDVA-43414 löst den schwerwiegenden PHP-Fehler, der beim Ausführen der `inventory.reservations.updateSalabilityStatus` Queue Consumer auf numerischen SKUs auftritt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-43414. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
@@ -63,7 +75,7 @@ PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Magento\InventoryInde
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

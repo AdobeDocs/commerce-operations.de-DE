@@ -5,13 +5,27 @@ feature: Attributes, Customers
 role: Admin, Developer
 exl-id: 368af877-a3ec-431f-8f41-5d51354be571
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 76cfaac4-e563-56dd-8938-708bf8b84956
+    internal-label: Attributes
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
-
 ---
-
 # ACSD-45049: Die Einstellung des *[!UICONTROL Is required]* funktioniert nicht gemäß dem Website-Umfang in Admin
 
 Mit dem Patch ACSD-45049 wird das Problem behoben, dass die Einstellung des Kundenattributs *[!UICONTROL Is required]* gemäß dem Website-Umfang in Admin nicht ordnungsgemäß funktioniert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/usage.md) 1.1.50 installiert ist. Die Patch-ID ist ACSD-45049. Beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben wurde.

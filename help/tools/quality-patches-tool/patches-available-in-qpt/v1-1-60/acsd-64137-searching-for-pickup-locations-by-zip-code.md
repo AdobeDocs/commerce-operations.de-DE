@@ -5,13 +5,25 @@ feature: Shipping/Delivery
 role: Admin, Developer
 exl-id: 86c28b6d-6584-4caf-bd35-13e0c1bdcf1d
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # ACSD-64137: Die Suche nach Abholorten per Postleitzahl funktioniert bei der niederländischen Lokalisierung nicht richtig
 
 Der Patch ACSD-64137 behebt das Problem, dass die Suche nach Abholorten per Postleitzahl bei der niederländischen Lokalisierung nicht richtig funktioniert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 installiert ist. Die Patch-ID ist ACSD-64137. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.8 behoben.

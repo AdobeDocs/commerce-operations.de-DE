@@ -4,13 +4,27 @@ description: Erfahren Sie, wie Sie Apache für lokale Adobe Commerce-Bereitstell
 feature: Install, Configuration
 badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
-
 ---
-
 # Installieren von Apache für lokale Bereitstellungen {#apache}
 
 Dieses Handbuch führt Sie durch die Installation von lokalen Apache für Adobe Commerce-Bereitstellungen und die Konfiguration der Apache-Einstellungen, die für Commerce erforderlich sind. Es enthält gemeinsame Apache-Anforderungen und betriebssystemspezifische Verfahren für Ubuntu und CentOS. Adobe empfiehlt, die Konfigurationsanweisungen in diesem Handbuch zu befolgen, um sowohl die Funktionalität als auch die Sicherheit des Commerce-Programms zu wahren.
@@ -103,8 +117,8 @@ Server built: <build-date>
 ```
 
 - Wenn Apache *nicht installiert ist* lesen Sie:
-   - [Installieren oder Aktualisieren von Apache auf Ubuntu](#installing-or-upgrading-apache-on-ubuntu)
-   - [Installieren von Apache unter CentOS](#installing-apache-on-centos)
+  - [Installieren oder Aktualisieren von Apache auf Ubuntu](#installing-or-upgrading-apache-on-ubuntu)
+  - [Installieren von Apache unter CentOS](#installing-apache-on-centos)
 
 ## Installieren oder Aktualisieren von Apache auf Ubuntu {#installing-or-upgrading-apache-on-ubuntu}
 

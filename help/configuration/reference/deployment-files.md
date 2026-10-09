@@ -3,13 +3,27 @@ title: Konfigurationsdateien für die Bereitstellung
 description: Erfahren Sie, wie Konfigurationsdateien für die Bereitstellung von Adobe Commerce-Anwendungen funktionieren. Lernen Sie die Best Practices für die gemeinsame und systemspezifische Konfigurationsverwaltung kennen.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
-
 ---
-
 # Konfigurationsdateien für die Bereitstellung
 
 Adobe Commerce stellt Konfigurationsdateien bereit, mit denen Sie eine Komponente einfach anpassen und Konfigurationstypen erstellen können, um die Standardfunktionalität zu erweitern. Der Prozess der Bereitstellungskonfiguration besteht aus der freigegebenen und systemspezifischen Konfiguration für Ihre Installation. Die Commerce-Bereitstellungskonfiguration ist auf [`app/etc/config.php`](../reference/config-reference-configphp.md) und [`app/etc/env.php`](../reference/config-reference-envphp.md) aufgeteilt.

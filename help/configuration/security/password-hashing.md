@@ -3,13 +3,27 @@ title: Kennworthashing
 description: Erfahren Sie mehr über Passwort-Hashing in Adobe Commerce, unterstützte Algorithmen wie Argon2 und SHA256 und darüber, wie ältere Hashes aktualisiert werden, ohne dass Passwörter geändert werden.
 feature: Configuration, Security
 exl-id: 2865d041-950a-4d96-869c-b4b35f5c4120
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
-
 ---
-
 # Kennworthashing
 
 Derzeit verwendet Commerce eine eigene Strategie für das Hashing von Passwörtern, die auf verschiedenen nativen PHP-Hashing-Algorithmen basiert. Commerce unterstützt mehrere Algorithmen wie `MD5`, `SHA256` oder `Argon 2ID13`. Wenn die Erweiterung Sodium installiert ist (standardmäßig in PHP 7.3 installiert), dann wird `Argon 2ID13` als Standard-Hash-Algorithmus gewählt. Andernfalls ist `SHA256` der Standard. Commerce kann die native PHP-`password_hash` mit Argon 2i-Algorithmusunterstützung verwenden.

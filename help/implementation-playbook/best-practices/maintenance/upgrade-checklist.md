@@ -4,13 +4,23 @@ description: Erfahren Sie, wie Sie eine Upgrade-Checkliste erstellen und verwend
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # Best Practices für Checklisten-Upgrades
 
 Verwenden Sie diese Checkliste bei jährlichen und vierteljährlichen Konversationen mit Ihrem E-Commerce-Team. Viele Unternehmen arbeiten mit jährlichen Budgets und Roadmaps. Bei diesen jährlichen Diskussionen müssen Sie unbedingt über den Zustand, die Ausrichtung und die Upgrade-Strategie Ihrer Plattform für das Jahr sprechen und auch darüber, wie sie zu den allgemeinen Zielen und KPIs des Unternehmens passt. Stellen Sie bei vierteljährlichen Unterhaltungen sicher, dass der von Ihnen erstellte Jahresplan weiterhin an Ihrer aktuellen Situation oder Ihrem Pivot ausgerichtet ist, falls nicht. Diese Checkliste für den Upgrade-Plan soll Sie bei der Planung und Planung von Adobe Commerce-Upgrades unterstützen, um einen erfolgreichen Upgrade-Prozess während des Jahres sicherzustellen. Diese Checkliste ist für die folgenden Zielgruppen zur jährlichen Planung und vierteljährlichen Überprüfung vorgesehen:

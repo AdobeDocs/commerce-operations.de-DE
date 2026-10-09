@@ -2,13 +2,22 @@
 title: Überblick über den Upgrade-Prozess
 description: Erfahren Sie, wie Sie durch Upgrades Ihres Adobe Commerce-Projekts die Sicherheit und Effizienz von Storefronts gewährleisten. Erfahren Sie mehr über Best Practices für die Planung und Durchführung erfolgreicher Upgrades.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
-source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '960'
 ht-degree: 2%
-
 ---
-
 # Überblick über den Upgrade-Prozess
 
 Die Aktualisierung Ihres Adobe Commerce-Projekts ist von entscheidender Bedeutung, um sicherzustellen, dass Ihr Geschäft sicher, PCI-kompatibel und mit maximaler Effizienz betrieben wird. Dieses Handbuch führt Sie durch die wichtigsten Aspekte bei der Vorbereitung auf ein Upgrade.

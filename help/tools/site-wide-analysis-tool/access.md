@@ -1,14 +1,23 @@
 ---
-title: Wie greife ich auf zu [!DNL Site-Wide Analysis Tool]
+title: So greifen Sie auf [!DNL Site-Wide Analysis Tool] zu
 description: Erfahren Sie, wie Sie über Ihr Adobe Commerce-Admin-Bedienfeld auf das Dashboard des Site-Wide Analysis Tool zugreifen können. Entdecken Sie Benutzerberechtigungen und Rollenanforderungen.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
-
 ---
-
 # Zugreifen auf die [!DNL Site-Wide Analysis Tool]
 
 Sie können über die [!UICONTROL Admin Panel] Ihres Stores auf das [!DNL Site-Wide Analysis Tool]-Dashboard zugreifen.

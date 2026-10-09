@@ -5,13 +5,30 @@ feature: Customers, API Mesh
 role: Admin, Developer
 exl-id: 143cfc3e-0220-4950-8528-acf3bce686db
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: ce84ce08-883f-4337-ae83-6bb1855ca732
+    internal-label: API Mesh
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
-
 ---
-
 # ACSD-58054: API-Token-Generierung für inaktive Kunden
 
 Mit dem Patch ACSD-58054 wird das Problem behoben, dass es möglich ist, Kunden-Token für inaktive Kunden über die -API zu generieren. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.49 installiert ist. Die Patch-ID ist ACSD-58054. Beachten Sie, dass das Problem voraussichtlich in B2B 1.5.1 behoben wird.

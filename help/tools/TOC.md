@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 9e2d11d7a383434670c4cb45e3764ed2b8974e9c
+source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
 workflow-type: tm+mt
-source-wordcount: '10703'
+source-wordcount: '10740'
 ht-degree: 0%
 ---
 
@@ -806,7 +806,7 @@ ht-degree: 0%
       - [ACSD-64753: Vorgewählter Store in „Abholung im Store“ wird nicht aktualisiert, wenn sich die Versandadresse ändert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
     - v1.1.64 {#v1-1-64}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
-      - [ACSD-65684: Das Upgrade von Magento_Company in B2B 1.5.2 ist mit über 100.000 Datensätzen in Company_Structure sehr langsam](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
+      - [ACSD-65684: Das Upgrade von Magento_Company in B2B 1.5.2 ist langsam mit über 100.000 Datensätzen in company_structure](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65684-performance-issue-where-upgrading-the-magento-company-module-after-updating-to-b2b-1-5-2-took-an-excessively-long-time-when-processing-a-large-number-of-records-100-000.md)
       - [ACSD-65540: SQL-Fehler tritt aufgrund fehlender REGEXP_LIKE-Funktion in company_structure updates auf](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65540-sql-syntax-error-occurs-due-to-the-absence-of-the-regexp-like-function-when-updating-the-company-structure-table.md)
       - [ACSD-63139: Der Produktexport schlägt fehl, wenn Produktattribute Tausende von Optionswerten enthalten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-63139-product-export-fails-when-product-attributes-contain-thousands-of-option-values.md)
       - [ACSD-65100: Das Entfernen der [!UICONTROL Maximum Width]- und [!UICONTROL Maximum Height] in der [!UICONTROL Media Gallery Image Optimization] verursacht einen Fehler](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65100-removing-the-values-for-maximum-width-and-maximum-height-in-the-media-gallery-image-optimization-configuration-causes-an-error-during-the-image-optimization-process.md)
@@ -1060,6 +1060,9 @@ ht-degree: 0%
       - [ACP2E-4875: Admin-Benutzer haben sich beim Öffnen von Kundenkonten mit großen Adressbüchern abgemeldet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-5223: Katalog-Berechtigungsindex enthält Websites, die von Kundengruppen ausgeschlossen sind](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
+      - [ACP2E-5101: Adobe Commerce B2B-Installation schlägt fehl, wenn Indexer Update by Schedule verwenden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
+      - [AC-12854: Admin reorder verwendet die ursprüngliche Bestellnummer mit dem Suffix -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
   - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

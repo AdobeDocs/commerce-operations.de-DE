@@ -2,13 +2,22 @@
 title: Modulkonfigurationsdateien
 description: Erfahren Sie, wie Sie Module mithilfe von Konfigurationstypen in Adobe Commerce anpassen können. Best Practices für die Verwaltung von Konfigurationsdateien und die Modulanpassung.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
-
 ---
-
 # Überblick über die Modulkonfigurationsdateien
 
 Die Zuständigkeiten der `config.xml` Konfigurationsdatei, die in früheren Versionen von Commerce verwendet wurde, sind jetzt auf mehrere Dateien aufgeteilt, die sich in verschiedenen Modulverzeichnissen befinden. Die verschiedenen Konfigurationsdateien von Commerce werden nur bei Bedarf geladen, wenn ein Modul einen bestimmten Konfigurationstyp anfordert.
@@ -104,7 +113,7 @@ In der folgenden Tabelle sind die einzelnen Konfigurationstypen und das Commerce
 | `module.xml` | Definiert Modulkonfigurationsdaten und Soft-Abhängigkeiten | primär, global | [\Magento\Framework\Module\ModuleList\Loader](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Module/ModuleList/Loader.php) |
 | `mview.xml` | [MView-Konfiguration](https://developer.adobe.com/commerce/php/development/components/indexing/custom-indexer#mview-configuration) | primär, global | [\Magento\Framework\Mview\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Mview/Config/Data.php) |
 | `payment.xml` | Konfiguration des Zahlungsmoduls | primär, global | [\Magento\Payment\Model\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Payment/Model/Config.php) |
-| `persistent.xml` | Konfigurationsdatei für [&#128279;](https://developer.adobe.com/commerce/php/module-reference/module-persistent)Magento_Persistent | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
+| `persistent.xml` | [Magento_Persistent](https://developer.adobe.com/commerce/php/module-reference/module-persistent) Konfigurationsdatei | global | [\Magento\Persistent\Helper\Data](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Persistent/Helper/Data.php) |
 | `pdf.xml` | PDF-Einstellungen | global | [\Magento\Sales\Model\Order\Pdf\Config\Reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config/Reader.php) |
 | `product_options.xml` | Bietet eine Konfiguration der Produktoptionen | global | [\Magento\Catalog\Model\ProductOptions\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductOptions/Config.php) |
 | `product_types.xml` | Definiert den Produkttyp | global | [\Magento\Catalog\Model\ProductTypes\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Catalog/Model/ProductTypes/Config.php) |
@@ -128,7 +137,7 @@ In der folgenden Tabelle sind die einzelnen Konfigurationstypen und das Commerce
 
 ### Konfigurationsoberflächen
 
-Sie können mit Konfigurationsdateien über Schnittstellen unter [Magento\Framework\Config](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config) interagieren.
+Sie können mit Konfigurationsdateien über die Schnittstellen unter &quot;[\Framework\Config“ &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config).
 
 Sie können diese Schnittstellen verwenden, wenn Sie [einen Konfigurationstyp erstellen](../reference/config-create-types.md#create-configuration-types).
 

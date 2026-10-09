@@ -1,17 +1,29 @@
 ---
 title: 'ACSD-56741: Fehlerbehebung bei Datenbanksetup-Fehlern mit benutzerdefinierten MySQL-Triggern'
-description: Wenden Sie den Patch ACSD-56741 an, um das Adobe Commerce-Problem zu beheben, bei dem während „setup:upgrade“ eine Fehlermeldung „Zugriff auf Array-Offset mit dem Wert null“ angezeigt wird, da ein benutzerdefinierter MySQL-Trigger in der Datenbank nicht mit der Indizierung und  [!DNL MView] in Zusammenhang steht.
+description: Wenden Sie den Patch ACSD-56741 an, um das Adobe Commerce-Problem zu beheben, bei dem während „setup:upgrade“ eine Fehlermeldung „Zugriff auf Array-Offset mit dem Wert null“ angezeigt wird, da ein benutzerdefinierter MySQL-Trigger in der Datenbank nicht mit der Indizierung und [!DNL MView] in Verbindung steht.
 feature: Install
 role: Admin, Developer
 exl-id: 93a1c75f-8a45-49df-9fa4-6ba1234c822d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
-
 ---
-
 # ACSD-56741: Fehlerbehebung bei Datenbanksetup-Fehlern mit benutzerdefinierten MySQL-Triggern
 
 Der Patch ACSD-56741 behebt das Problem, dass *Fehlermeldung „Zugriff auf Array-Offset bei Wert vom Typ null“* der `setup:upgrade` angezeigt wird, da ein benutzerdefinierter MySQL-Trigger in der Datenbank nicht mit der Indizierung und [!DNL MView] in Zusammenhang steht. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.48 installiert ist. Die Patch-ID ist ACSD-56741. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.5.0 behoben wird

@@ -5,13 +5,27 @@ feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 2a2f1afe-8a48-4beb-b78d-a894b685717d
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
-
 ---
-
 # ACSD-62146: Die ausgewählte Rechnungsadresse verschwindet auf der Zahlungsseite der Kasse
 
 Der Patch ACSD-62146 behebt das Problem, dass die ausgewählte Rechnungsadresse auf der Zahlungsseite der Kasse verschwindet, wenn die Adresssuche aktiviert ist und die [!UICONTROL Number of Customer Addresses Limit] auf 1 gesetzt ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.68 installiert ist. Die Patch-ID ist ACSD-62146. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.9 behoben.

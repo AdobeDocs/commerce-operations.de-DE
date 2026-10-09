@@ -1,16 +1,47 @@
 ---
-title: Verwaltete Warnhinweise zu kritischen Warnhinweisen auf Adobe Commerce [!DNL Redis] Arbeitsspeicher
-description: Dieser Artikel enthält Schritte zur Fehlerbehebung für den Fall, dass Sie  [!DNL Redis]  wichtigen Warnhinweis für Adobe Commerce in erhalten [!DNL New Relic]. Sofortiges Handeln ist erforderlich, um das Problem zu lösen.
+title: 'Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis zu [!DNL Redis] Arbeitsspeicher'
+description: Dieser Artikel enthält Schritte zur Fehlerbehebung für den Fall, dass Sie in [!DNL New Relic] einen kritischen Warnhinweis zu [!DNL Redis] Arbeitsspeicher für Adobe Commerce erhalten. Sofortiges Handeln ist erforderlich, um das Problem zu lösen.
 feature: Cache, Categories, Observability, Services, Support, Tools and External Services, Variables
 role: Admin
 exl-id: 1233889e-8c02-4ad6-b12c-683010b7bf35
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '703'
 ht-degree: 0%
-
 ---
-
 # Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis zu [!DNL Redis] Arbeitsspeicher
 
 Dieser Artikel enthält Schritte zur Fehlerbehebung für den Fall, dass Sie in [!DNL New Relic] einen kritischen Warnhinweis zu [!DNL Redis] Arbeitsspeicher für Adobe Commerce erhalten. Sofortiges Handeln ist erforderlich, um das Problem zu lösen. Je nach ausgewähltem Benachrichtigungskanal für Warnhinweise sieht der Warnhinweis etwa wie folgt aus.

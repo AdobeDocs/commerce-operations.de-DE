@@ -2,14 +2,23 @@
 title: Konfigurieren des Sperranbieters
 description: Führen Sie diese Schritte aus, um zu verhindern, dass doppelte Cron-Aufträge und Cron-Gruppen in Ihrer Adobe Commerce-Bereitstellung ausgeführt werden.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren des Sperranbieters
 
 Bevor Sie diesen Befehl ausführen, müssen Sie Folgendes tun *oder* Sie müssen [die Anwendung installieren](../advanced.md):

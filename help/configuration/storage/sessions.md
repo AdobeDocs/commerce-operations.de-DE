@@ -3,13 +3,27 @@ title: Speicherort der Sitzung
 description: Erfahren Sie mehr über Sitzungsspeicherorte und Dateiverwaltung in Adobe Commerce. Entdecken Sie Speicherlogik- und Konfigurationsoptionen.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '279'
 ht-degree: 0%
-
 ---
-
 # Speicherort der Sitzung
 
 In diesem Thema wird beschrieben, wie Sie den Speicherort für Ihre Sitzungsdateien ermitteln. Das System verwendet die folgende Logik zum Speichern von Sitzungsdateien:
@@ -18,9 +32,9 @@ In diesem Thema wird beschrieben, wie Sie den Speicherort für Ihre Sitzungsdate
 - Wenn Sie Redis konfiguriert haben, werden Sitzungen auf dem Redis-Server gespeichert. Siehe [Verwenden von Redis für die Sitzungsspeicherung](../cache/redis-session.md).
 - Wenn Sie den standardmäßigen dateibasierten Sitzungsspeicher verwenden, speichern wir Sitzungen an den folgenden Speicherorten in der angegebenen Reihenfolge:
 
-   1. In [`env.php`](#example-in-envphp) definiertes Verzeichnis
-   1. In [`php.ini`](#example-in-phpini) definiertes Verzeichnis
-   1. `<magento_root>/var/session`
+  1. In [`env.php`](#example-in-envphp) definiertes Verzeichnis
+  1. In [`php.ini`](#example-in-phpini) definiertes Verzeichnis
+  1. `<magento_root>/var/session`
 
 ## Beispiel in `env.php`
 

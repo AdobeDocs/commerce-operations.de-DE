@@ -8,28 +8,44 @@ autotag-review: '2026-05-22T20:21:20.687Z'
 TQID: 'https://experienceleague.adobe.com/DQWkSrUHcUhOTn3fWdnRPVQUK6jRkPGCAnIKPRHkebQ'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
 subfeature_v2:
   - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 industry_v2:
   - id: aad1e361-483a-40cf-9a88-144325515074
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+    internal-label: Retail
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 422
+source-wordcount: '422'
 ht-degree: 0%
-
 ---
-
 # B2B-2598: Fügt `storeConfig`-, `currency`-, `country`-, `countries`- und `availableStores`-GraphQL-Abfragen Cache-Funktionen hinzu
 
 Der Patch B2B-2598 fügt `storeConfig`-, `currency`-, `country`-, `countries`- und `availableStores`-GraphQL-Abfragen Cache-Funktionen hinzu. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.30 installiert ist. Die Patch-ID ist B2B-2598. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7-beta1 behoben wird.

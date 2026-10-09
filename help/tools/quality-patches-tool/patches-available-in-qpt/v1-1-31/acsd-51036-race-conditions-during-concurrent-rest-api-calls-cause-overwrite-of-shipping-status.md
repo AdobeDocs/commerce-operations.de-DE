@@ -5,13 +5,30 @@ feature: REST, Orders, Shipping/Delivery
 role: Admin
 exl-id: 6150d072-05fe-4010-b31b-8ccde9cab656
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 04d3134c-2afb-5bd7-ac14-e19fa935e848
+    internal-label: Shipping/Delivery
+  - id: c4f010fa-1478-4300-a88d-706fbc036a7a
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e0ca0e7a-9738-48d1-b98b-615468ab4aaf
+    internal-label: REST API
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
-
 ---
-
 # ACSD-51036: Wettbewerbsbedingungen während gleichzeitiger REST-API-Aufrufe führen zu einer Überschreibungen des Versandstatus in der Tabelle mit den bestellten Artikeln
 
 Der Patch ACSD-51036 behebt das Problem, dass die Race-Bedingungen während gleichzeitiger REST-API-Aufrufe zu einer Überschreibungen des Versandstatus in der Tabelle mit den bestellten Artikeln führen. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.31 installiert ist. Die Patch-ID ist ACSD-51036. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.

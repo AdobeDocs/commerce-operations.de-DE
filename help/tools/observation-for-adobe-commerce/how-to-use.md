@@ -1,15 +1,29 @@
 ---
-title: Wie ist das Nerdlet  [!DNL Observation for Adobe Commerce] ?
-description: Erfahren Sie, wie Sie das - [!DNL Observation for Adobe Commerce]  verwenden.
+title: Wie ist das [!DNL Observation for Adobe Commerce] Nerdlet anzuwenden?
+description: Erfahren Sie, wie Sie das [!DNL Observation for Adobe Commerce] Nerdlet verwenden.
 exl-id: 3c368814-0786-4e8f-ac81-9a77cec94677
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '631'
 ht-degree: 0%
-
 ---
-
 # Wie ist das [!DNL Observation for Adobe Commerce] Nerdlet anzuwenden?
 
 ## Allgemeiner Ansatz für die Behandlung von Problemen
@@ -18,28 +32,28 @@ Status der Umgebungsressourcen überprüfen:
 
 * Untersuchen Sie den % der **[!UICONTROL Storage Free and MySQL % free storage by node]** Frames.
 
-   * Folgen Sie den Links in der Kopfzeile des Frames, wenn Sie wenig Speicher sehen.
+  * Folgen Sie den Links in der Kopfzeile des Frames, wenn Sie wenig Speicher sehen.
 
 * Untersuchen Sie den % der **[!UICONTROL free system memory and Swap memory free in bytes]** Frames.
 
-   * Wenn diese sehr geringe Speicherzustände aufweisen, können sie zu Problemen beitragen.
+  * Wenn diese sehr geringe Speicherzustände aufweisen, können sie zu Problemen beitragen.
 
 * Untersuchen Sie den **[!UICONTROL Alerts during the timeframe]**.
 
-   * Adobe Commerce auf Cloud-Infrastruktur bietet [!DNL Managed alerts]. Sie können auf den Link in der Kopfzeile klicken, um [!DNL Support Knowledge Base] Artikel anzuzeigen, die Ihnen helfen, Aktionen für bestimmte Warnhinweise zu bestimmen.
+  * Adobe Commerce auf Cloud-Infrastruktur bietet [!DNL Managed alerts]. Sie können auf den Link in der Kopfzeile klicken, um [!DNL Support Knowledge Base] Artikel anzuzeigen, die Ihnen helfen, Aktionen für bestimmte Warnhinweise zu bestimmen.
 
 * Untersuchen Sie den **[!UICONTROL CPU % by host]** Frame: Wenn er eine hohe CPU-Auslastung aufweist, überprüfen Sie den [!DNL Support Knowledge Base] in der Kopfzeile für den Frame. Stellen Sie außerdem sicher, dass während der Spitzenzeiten des Traffics keine Datenbank importiert/exportiert oder gesichert wird.
 
 * Überprüfen Sie den **[!UICONTROL Web Traffic volume compared to one week ago]**: Wenn der Traffic im selben Zeitraum viel höher ist als in der Vorwoche, kann er erklärt werden (z. B. Verkaufskampagne oder neue Produkte, die vermarktet wurden)?
-   * Wenn ein Anstieg des Traffics nicht erklärt werden kann, schauen Sie sich die durchschnittliche Antwortzeit (Millisekunden) für die Produktionsumgebung an. Trägt der höhere Traffic zu einer anderen Antwortzeit bei als normalerweise? Erweitern Sie den Zeitrahmen, um zu sehen, ob es sich um eine Anomalie handelt.
-   * Wirkt sich der Anstieg des Traffics auf Web-Transaktionen aus? Prüfen Sie den **[!UICONTROL Response Code]** auf Fehler. Wenn die Site nicht verfügbar ist, können Sie auf den `Site Down?` Link in der Frame-Kopfzeile klicken. Der Frame identifiziert alle auftretenden Fehler und ihre Häufigkeit.
-   * Hat jemand Änderungen an Ihrer Website bereitgestellt? Der **[!UICONTROL Deployment Log Entries]** gibt an, ob innerhalb des Problemzeitraums Bereitstellungen vorgenommen wurden. Wenn das Problem unmittelbar nach der Bereitstellung auftritt, kann es sein, dass Bereitstellungsaktivitäten der Site zusätzliche Last hinzufügen (Caches gelöscht, Services neu gestartet werden usw.).
-   * Ist eine Vergrößerung oder Verkleinerung eingetreten? Wenn Ihre Site vorübergehend aktualisiert wurde, wurde sie möglicherweise auf ihre ursprüngliche Cluster-Größe zurückgesetzt. Wenn eine Anfrage zur Erhöhung der Site-Kapazität gestellt wurde, kann eine Vergrößerung auftreten. Überprüfen Sie den **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]**. Dieser Frame erkennt manchmal einen Ausfall auf einem bestimmten Knoten. Wenn die Größe abnimmt, kann dies auf ein Problem mit einem oder mehreren Knoten hinweisen.
+  * Wenn ein Anstieg des Traffics nicht erklärt werden kann, schauen Sie sich die durchschnittliche Antwortzeit (Millisekunden) für die Produktionsumgebung an. Trägt der höhere Traffic zu einer anderen Antwortzeit bei als normalerweise? Erweitern Sie den Zeitrahmen, um zu sehen, ob es sich um eine Anomalie handelt.
+  * Wirkt sich der Anstieg des Traffics auf Web-Transaktionen aus? Prüfen Sie den **[!UICONTROL Response Code]** auf Fehler. Wenn die Site nicht verfügbar ist, können Sie auf den `Site Down?` Link in der Frame-Kopfzeile klicken. Der Frame identifiziert alle auftretenden Fehler und ihre Häufigkeit.
+  * Hat jemand Änderungen an Ihrer Website bereitgestellt? Der **[!UICONTROL Deployment Log Entries]** gibt an, ob innerhalb des Problemzeitraums Bereitstellungen vorgenommen wurden. Wenn das Problem unmittelbar nach der Bereitstellung auftritt, kann es sein, dass Bereitstellungsaktivitäten der Site zusätzliche Last hinzufügen (Caches gelöscht, Services neu gestartet werden usw.).
+  * Ist eine Vergrößerung oder Verkleinerung eingetreten? Wenn Ihre Site vorübergehend aktualisiert wurde, wurde sie möglicherweise auf ihre ursprüngliche Cluster-Größe zurückgesetzt. Wenn eine Anfrage zur Erhöhung der Site-Kapazität gestellt wurde, kann eine Vergrößerung auftreten. Überprüfen Sie den **[!UICONTROL Upsize/Downsize – vCPU view over the timeline]**. Dieser Frame erkennt manchmal einen Ausfall auf einem bestimmten Knoten. Wenn die Größe abnimmt, kann dies auf ein Problem mit einem oder mehreren Knoten hinweisen.
 
 * Auf der Registerkarte **[!UICONTROL IP Frequency]** wird die Anfragehäufigkeit anhand von IP-Adressen identifiziert, die an den Ursprungs-Servern gesendet werden (was bedeutet, dass die Anfrage nicht von [!DNL Fastly] 74 bedient werden konnte, da sie nicht zwischengespeichert wurde).
 
-   * Überprüfen Sie für alle [!DNL Fastly] Probleme den **[!UICONTROL Fastly Cache]** Frame und wählen Sie die Fehlerfacette aus, um den Prozentsatz der fehlerhaften Anfragen anzuzeigen. Sie können auf ein Backend-Problem hinweisen, wenn sie mit Nicht-Webladevorgängen übereinstimmen.
-   * Wenn die Last offenbar nicht auf Web-Traffic zurückzuführen ist, kann es zu Fehlern oder einer Anhäufung von Nicht-Web-Anfragen kommen, wie z. B. langsamen Abfragen oder [!DNL crons].
+  * Überprüfen Sie für alle [!DNL Fastly] Probleme den **[!UICONTROL Fastly Cache]** Frame und wählen Sie die Fehlerfacette aus, um den Prozentsatz der fehlerhaften Anfragen anzuzeigen. Sie können auf ein Backend-Problem hinweisen, wenn sie mit Nicht-Webladevorgängen übereinstimmen.
+  * Wenn die Last offenbar nicht auf Web-Traffic zurückzuführen ist, kann es zu Fehlern oder einer Anhäufung von Nicht-Web-Anfragen kommen, wie z. B. langsamen Abfragen oder [!DNL crons].
 
 * Überprüfen Sie den **[!UICONTROL Database Errors]** auf Fehler, die mit der Problem-/Problem-Zeitleiste übereinstimmen können.
 * Überprüfen Sie den **[!UICONTROL Database mysql-slow.log]**, um SQL-Anweisungen zu identifizieren, die auftreten. `INSERT`-, `UPDATE`- und `DELETE`-Befehle können eine Weile dauern, wenn die Abfrage nicht optimiert ist. Selbst `SELECT` Anweisungen können sehr ineffizient sein, wenn sie mit großen Tabellen verwendet werden.

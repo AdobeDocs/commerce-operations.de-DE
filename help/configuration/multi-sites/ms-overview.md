@@ -2,13 +2,22 @@
 title: Mehrere Websites oder Stores
 description: Erfahren Sie, wie Sie mehrere Websites starten oder Store-Ansichten mit verschiedenen Optionen, Domains und Inhalten implementieren können.
 exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # Mehrere Websites oder Stores
 
 Eine einzige Instanz der Adobe Commerce-Software ermöglicht es Ihnen, mehrere Websites zu starten oder Ansichten zu speichern, die unterschiedliche Attribute und Inhalte verwenden, z. B.:
@@ -43,8 +52,8 @@ Betrachten Sie die folgenden Begriffe:
 
 - `MAGE_RUN_TYPE` kann entweder `store` oder `website` sein
 
-   - Verwenden Sie `website` , um eine Website in Ihre Storefront zu laden.
-   - Verwenden Sie `store`, um eine beliebige Store-Ansicht in Ihre Storefront zu laden.
+  - Verwenden Sie `website` , um eine Website in Ihre Storefront zu laden.
+  - Verwenden Sie `store`, um eine beliebige Store-Ansicht in Ihre Storefront zu laden.
 
 - `MAGE_RUN_CODE` ist der eindeutige Website- oder Store-Ansichts-Code, der `MAGE_RUN_TYPE` entspricht
 

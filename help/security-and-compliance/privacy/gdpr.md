@@ -2,13 +2,22 @@
 title: Datenschutz-Grundverordnung (DSGVO)
 description: Erfahren Sie mehr über die Datenschutz-Grundverordnung (DSGVO), die den Datenschutz und die Privatsphäre aller Personen in der Europäischen Union und im Europäischen Wirtschaftsraum regelt.
 exl-id: 30e60601-f4f7-419e-b2dd-8c82c8a2ed33
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 0%
-
 ---
-
 # Datenschutz-Grundverordnung (DSGVO)
 
 >[!NOTE]
@@ -32,4 +41,4 @@ Technische Informationen finden Sie in den Datenflussdiagrammen und Datenbankent
 Weitere Informationen dazu, wie Adobe Commerce Händler bei der Einhaltung der DSGVO unterstützt, finden Sie unter:
 
 - [DSGVO-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=de)
-- [Adobe Commerce ist bereit für die DSGVO](https://business.adobe.com/de/privacy/general-data-protection-regulation.html)
+- [Adobe Commerce ist bereit für die DSGVO](https://business.adobe.com/privacy/general-data-protection-regulation.html)

@@ -2,13 +2,22 @@
 title: Wartungsmodusoptionen für das Upgrade
 description: Erstellen Sie eine benutzerdefinierte Wartungsmodusseite, die Ihre Kunden in Ihrer Adobe Commerce-Storefront sehen, während Sie ein Upgrade ausführen.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
-
 ---
-
 # Wartungsmodusoptionen für das Upgrade
 
 In diesem Abschnitt wird beschrieben, wie Sie eine benutzerdefinierte Wartungsseite erstellen, die Benutzern angezeigt wird, während Ihre Magento-Anwendung aktualisiert wird. Das Erstellen einer benutzerdefinierten Seite ist optional, wird jedoch empfohlen, da die Website während eines Teils des Upgrades zugänglich ist.
@@ -107,7 +116,7 @@ So leiten Sie Traffic auf eine benutzerdefinierte Wartungsseite um:
 1. Verwenden Sie einen Texteditor, um die nginx-Konfigurationsdatei zu öffnen, die Ihren Serverblock enthält.
 1. Fügen Sie dem Serverblock Folgendes hinzu (`server` wird nur der Übersichtlichkeit halber angezeigt; fügen Sie keinen zweiten Serverblock hinzu).
 
-   Mit der folgenden IP-Adresse werden 192.0.2.110 und 192.0.2.115 auf einem System geändert, auf dem Magento in `/var/www/html/magento2` installiert ist:
+   Die folgende Zulassungsliste 192.0.2.110 die IP-Adresse und 192.0.2.115 auf einem System, auf dem Magento in `/var/www/html/magento2` installiert ist:
 
    ```conf
    server {

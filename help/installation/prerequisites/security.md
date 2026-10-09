@@ -3,13 +3,27 @@ title: Sicherheit bei der Installation vor Ort
 description: Erfahren Sie, wie Sie den Sicherheitszustand Ihrer lokalen Adobe Commerce-Installation verbessern können.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
-
 ---
-
 # Sicherheit bei der Installation vor Ort
 
 [Security Enhanced Linux (SELinux)](https://selinuxproject.org/page/Main_Page) ermöglicht CentOS- und Ubuntu-Administratoren eine bessere Zugriffskontrolle über ihre Server. Wenn Sie SELinux verwenden *und* muss Apache eine Verbindung zu einem anderen Host herstellen, müssen Sie die in diesem Abschnitt beschriebenen Befehle ausführen.

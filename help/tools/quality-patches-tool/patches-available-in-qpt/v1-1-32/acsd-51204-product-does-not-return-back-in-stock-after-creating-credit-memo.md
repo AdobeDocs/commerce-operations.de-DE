@@ -5,13 +5,27 @@ feature: Orders, Products, Returns
 role: Admin
 exl-id: a4dba28c-c239-4812-8b3a-ce0493f9b1aa
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: ac07462c-732c-5c1c-947b-4ce533b4fcfb
+    internal-label: Returns
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%
-
 ---
-
 # ACSD-51204: Das Produkt wird nach der Erstellung der Gutschrift nicht wieder auf Lager zurückgegeben
 
 Mit dem Patch des ACSD-51204 wird das Problem behoben, dass das Produkt nach der Erstellung der Gutschrift nicht wieder auf Lager ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.32 installiert ist. Die Patch-ID ist ACSD-51204. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.

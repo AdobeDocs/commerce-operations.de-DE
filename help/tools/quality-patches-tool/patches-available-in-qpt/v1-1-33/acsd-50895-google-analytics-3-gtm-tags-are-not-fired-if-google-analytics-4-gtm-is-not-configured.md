@@ -1,16 +1,23 @@
 ---
-title: 'ACSD-50895: [!DNL Google Analytics] 3 GTM-Tags werden nicht ausgelöst, wenn  [!DNL Google Analytics] 4 GTM nicht konfiguriert ist'
-description: Wenden Sie den Patch ACSD-50895 an, um das Adobe Commerce-Problem zu beheben, dass  [!DNL Google Analytics] -3 GTM-Tags nicht ausgelöst werden, wenn  [!DNL Google Analytics] -4 GTM nicht konfiguriert ist.
+title: 'ACSD-50895: [!DNL Google Analytics] 3 GTM-Tags werden nicht ausgelöst, wenn [!DNL Google Analytics] 4 GTM nicht konfiguriert ist'
+description: Wenden Sie den Patch ACSD-50895 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL Google Analytics] 3 GTM-Tags nicht ausgelöst werden, wenn [!DNL Google Analytics] 4 GTM nicht konfiguriert ist.
 role: Admin
 exl-id: 871e2ca1-dc10-435c-9325-62f5b9b673ad
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '380'
 ht-degree: 0%
-
 ---
-
 # ACSD-50895: [!DNL Google Analytics] 3 GTM-Tags werden nicht ausgelöst, wenn [!DNL Google Analytics] 4 GTM nicht konfiguriert ist
 
 Der Patch ACSD-50895 behebt das Problem, dass [!DNL Google Analytics] 3 GTM-Tags nicht ausgelöst werden, wenn [!DNL Google Analytics] 4 GTM nicht konfiguriert ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.33 installiert ist. Die Patch-ID ist ACSD-50895. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.

@@ -2,13 +2,22 @@
 title: Empfehlungen für die Entwicklungsumgebung
 description: Erfahren Sie mehr über die Empfehlungen für Entwicklungsumgebungen in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
-
 ---
-
 # Empfehlungen für die Entwicklungsumgebung
 
 Diese Seite enthält Empfehlungen für Commerce-Entwicklungsumgebungen.
@@ -31,7 +40,7 @@ Führen Sie im Entwicklungsmodus keine Befehle für die Kompilierung, Codegeneri
   bin/magento setup:di:compile
   ```
 
-  Im Entwicklungsmodus führt Magento die Generierung bei Bedarf durch. Sie müssen sie nicht ausführen. Wenn Sie eine Signatur einer Klasse geändert haben und die automatisch generierte `factories/proxies/interceptors` neu generieren müssen, entfernen Sie diese Klassen oder den _generierten_ Ordner.
+  Im Entwicklungsmodus führt Magento die Generierung bei Bedarf durch; Sie müssen sie nicht ausführen. Wenn Sie eine Signatur einer Klasse geändert haben und die automatisch generierte `factories/proxies/interceptors` neu generieren müssen, entfernen Sie diese Klassen oder den _generierten_ Ordner.
 
 * `setup:static-content:deploy` stellt statische Inhalte für einen Store bereit.
 
@@ -39,7 +48,7 @@ Führen Sie im Entwicklungsmodus keine Befehle für die Kompilierung, Codegeneri
   bin/magento setup:static-content:deploy
   ```
 
-  Im Entwicklungsmodus führt Magento sie bei Bedarf aus. Sie müssen sie nicht ausführen.
+  Im Entwicklungsmodus führt Magento sie bei Bedarf aus, Sie müssen sie nicht ausführen.
 
 ## Normale Seitenladezeit auf einer virtuellen Maschine
 

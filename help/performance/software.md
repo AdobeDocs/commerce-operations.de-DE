@@ -3,13 +3,27 @@ title: Empfehlungen zur Software
 description: Erfahren Sie mehr über Softwareanforderungen und Empfehlungen für Adobe Commerce. Entdecken Sie unterstützte Versionen und Best Practices für die Konfiguration für die Produktion.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1488'
 ht-degree: 0%
-
 ---
-
 # Software-Empfehlungen
 
 Für Produktionsinstanzen von [!DNL Commerce] benötigen wir die folgende Software:
@@ -151,7 +165,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Berücksichtigen Sie bei der Feinabstimmung der Speicherzuweisung für Opcache die Größe der Code-Basis von Magento und aller Erweiterungen. Das Leistungsteam von Magento verwendet die Werte im vorherigen Beispiel zum Testen, da es im Opcache ausreichend Platz für die durchschnittliche Anzahl installierter Erweiterungen bietet.
+Berücksichtigen Sie bei der Feinabstimmung der Speicherzuweisung für Opcache die Größe der Code-Basis von Magento und all Ihre Erweiterungen. Das Leistungs-Team von Magento verwendet die Werte im vorherigen Beispiel zum Testen, da es im Opcache genügend Platz für die durchschnittliche Anzahl installierter Erweiterungen bietet.
 
 Wenn Sie einen Computer mit wenig Arbeitsspeicher haben und nicht viele Erweiterungen oder Anpassungen installiert sind, verwenden Sie die folgenden Einstellungen, um ein ähnliches Ergebnis zu erzielen:
 
@@ -220,7 +234,7 @@ Im Allgemeinen empfehlen wir, Ihre Assets (Bilder, JS, CSS usw.) in einem CDN zu
 
 Wenn für Ihre Site keine große Anzahl von Gebietsschemata bereitgestellt werden muss und sich Ihre Server in derselben Region wie die meisten Ihrer Kunden befinden, können Sie zu niedrigeren Kosten erhebliche Leistungsgewinne erzielen, indem Sie Ihre Assets in [!DNL Varnish] speichern, anstatt ein CDN zu verwenden.
 
-Um Ihre Assets in [!DNL Varnish] zu speichern, fügen Sie die folgenden VCL-Einträge in Ihrer von `default.vcl` generierten [!DNL Commerce] hinzu.
+Um Ihre Assets in [!DNL Varnish] zu speichern, fügen Sie die folgenden VCL-Einträge in Ihrer von [!DNL Commerce] generierten `default.vcl` hinzu.
 
 Fügen Sie am Ende der `if` für PURGE-Anfragen in der `vcl_recv`-Unterroutine Folgendes hinzu:
 

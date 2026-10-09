@@ -5,13 +5,23 @@ feature: Price Rules
 role: Admin
 exl-id: 668d5f16-18a9-4054-aa6e-1fb8fa211373
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a507b1ed-4937-53da-97ae-57d36bd5b9e0
+    internal-label: Price Rules
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
-
 ---
-
 # ACSD-52786: Katalogregel &quot;*[!UICONTROL SKU is]*&quot; gilt für alle Produkte, die mit der SKU beginnen
 
 Mit dem Patch „ACSD-52786“ wird das Problem behoben, dass die Katalogregelbedingung *[!UICONTROL SKU is]* für alle Produkte gilt, die mit der angegebenen SKU beginnen. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.35 installiert ist. Die Patch-ID ist ACSD-52786. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.

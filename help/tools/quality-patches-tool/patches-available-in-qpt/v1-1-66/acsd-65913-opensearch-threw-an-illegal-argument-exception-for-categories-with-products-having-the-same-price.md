@@ -1,17 +1,32 @@
 ---
-title: 'ACSD-65913: [!DNL OpenSearch] Löst eine Illegal_Argument_Exception für Kategorien aus, für die Produkte denselben Preis haben'
-description: Wenden Sie den Patch ACSD-65913 an, um das Adobe Commerce-Problem zu beheben, bei dem  [!DNL Opensearch] eine Illegal_Argument_Exception (“[from]-Parameter darf nicht negativ sein„) in den Kategorien auslöst, die alle Produkte mit demselben Preis enthalten.
+title: 'ACSD-65913: [!DNL OpenSearch] löst eine Illegal_Argument_Exception für Kategorien aus, die Produkte mit demselben Preis enthalten'
+description: Wenden Sie den Patch ACSD-65913 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL Opensearch] eine Illegal_Argument_Exception (“[from]-Parameter darf nicht negativ sein„) in den Kategorien auslöst, die alle Produkte mit demselben Preis enthalten.
 feature: Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 984db32e-1a0d-4e0a-a83b-7fe909226ed3
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # ACSD-65913: [!DNL OpenSearch] gibt eine `illegal_argument_exception` für Kategorien mit Produkten, die denselben Preis haben
 
 Mit dem Patch ACSD-65913 wird das Problem behoben, dass [!DNL OpenSearch] eine `illegal_argument_exception` für Kategorien mit Produkten desselben Preises ausgelöst haben. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66 installiert ist. Die Patch-ID ist ACSD-65913. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.9 behoben.
