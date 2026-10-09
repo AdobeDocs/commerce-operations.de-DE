@@ -4,13 +4,23 @@ description: Erfahren Sie mehr über allgemeine Best Practices für die Entwickl
 feature: Best Practices
 role: Developer
 exl-id: 35de9849-2d19-4bb6-b920-9ce3838bc8bc
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
-
 ---
-
 # Allgemeine Best Practices zur Entwicklung für Adobe Commerce
 
 In diesem Abschnitt werden die Grundlagen für einen reibungslosen Adobe Commerce-Entwicklungsprozess beschrieben. Es beschreibt grundlegende Prozesse, Kodierungsprinzipien und Anwendungsentwurfsprinzipien, die Entwicklerinnen und Entwicklern als Orientierungshilfe dienen.
@@ -23,7 +33,7 @@ Diese Best Practices basieren auf jahrelanger Erfahrung in der Entwicklung und B
 
 ## Textkonventionen
 
-Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS“, „DARF NICHT“, „SOLLTE NICHT“, „SOLLTE NICHT“, „EMPFOHLEN“, „MAI“ und „OPTIONAL“ in diesem Thema sind wie in [RFC 2119“ &#x200B;](https://datatracker.ietf.org/doc/html/rfc2119).
+Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS“, „DARF NICHT“, „SOLLTE NICHT“, „SOLLTE NICHT“, „EMPFOHLEN“, „MAI“ und „OPTIONAL“ in diesem Thema sind wie in [RFC 2119“ ](https://datatracker.ietf.org/doc/html/rfc2119).
 
 ## Prozess
 
@@ -43,13 +53,13 @@ Die Schlüsselwörter „MUSS“, „DARF NICHT“, „ERFORDERLICH“, „MUSS�
 ## Umgebung
 
 1. Alle Entwickler SOLLTEN dieselbe IDE verwenden. PhpStorm ist die empfohlene IDE für die Adobe Commerce-Entwicklung.
-1. Alle Entwickler SOLLTEN mit demselben Technologie-Stack entwickeln und testen, der auf den (zukünftigen) Produktions-Servern verwendet wird. Die Versionen der Software in diesem Technologie-Stack MÜSSEN mit der Haupt- und Nebenversion der auf den Produktions-Servern installierten Software übereinstimmen. Weitere [&#x200B; zum typischen Technologie](../../../installation/system-requirements.md)Stack für Adobe Commerce finden Sie unter „Systemanforderungen“.
+1. Alle Entwickler SOLLTEN mit demselben Technologie-Stack entwickeln und testen, der auf den (zukünftigen) Produktions-Servern verwendet wird. Die Versionen der Software in diesem Technologie-Stack MÜSSEN mit der Haupt- und Nebenversion der auf den Produktions-Servern installierten Software übereinstimmen. Weitere [ zum typischen Technologie](../../../installation/system-requirements.md)Stack für Adobe Commerce finden Sie unter „Systemanforderungen“.
 1. Der Systemadministrator oder technische Architekt kann dem Team eine zentral gepflegte lokale Entwicklungsumgebung zur Verfügung stellen, um gleiche und aktuelle lokale Umgebungen zu gewährleisten und zu fördern.
 1. Entwickler und QA-Techniker MÜSSEN Zugriff auf die Befehlszeile, die Datenbank und die Protokolldateien der QS-Umgebung haben. Dies erfordert MÖGLICHERWEISE eine VPN-Verbindung.
 
 ## Versionierung
 
-Modulversionen MÜSSEN dem Standard [Semantic Versioning 2.0.0“ &#x200B;](https://semver.org/).
+Modulversionen MÜSSEN dem Standard [Semantic Versioning 2.0.0“ ](https://semver.org/).
 Abhängigkeiten von der Adobe Commerce-Codebasis SOLLTEN den [Richtlinien für Modulversionsabhängigkeiten](https://developer.adobe.com/commerce/php/development/versioning/dependencies) entsprechen.
 
 ## REVISIONSKONTROLLE

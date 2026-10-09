@@ -1,23 +1,35 @@
 ---
 title: Erstellen eines Berichts zum Patch-Status
-description: Erfahren Sie, wie Sie mit  [!DNL Commerce Version Tool]  Patch-Statusberichte für Adobe Commerce im JSON- oder CSV-Format erstellen können.
+description: Erfahren Sie, wie Sie mit dem [!DNL Commerce Version Tool] Patch-Statusberichte für Adobe Commerce im JSON- oder CSV-Format erstellen können.
 TQID: 'https://experienceleague.adobe.com/-lC-20YMpbTM3tTZjbBO5zD5gb9n7cRah5Ycy8wQoyw'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: cb0391ae368b53a795535f3adb636628a339b963
+    internal-label: Security
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 590
+source-wordcount: '591'
 ht-degree: 2%
-
 ---
-
 # Erstellen eines Patch-Statusberichts
 
 Verwenden Sie [!DNL Commerce Version Tool] ([!DNL CVT]), um einen Patch-Statusbericht für eine Adobe Commerce-Installation zu generieren. Der Bericht identifiziert angewendete, fehlende und unbekannte monatliche Sicherheits-Patches und gibt standardmäßig JSON-Ausgaben zurück.

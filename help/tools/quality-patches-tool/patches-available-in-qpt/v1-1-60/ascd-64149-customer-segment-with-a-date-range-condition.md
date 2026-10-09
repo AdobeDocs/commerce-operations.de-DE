@@ -5,13 +5,30 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
-
 ---
-
 # ACSD-64149: Kundensegment mit einer [!UICONTROL Date range] Bedingung kann gespeichert werden, wenn nur ein Datum bearbeitet wird
 
 Mit dem Patch ACSD-64149 wird das Problem behoben, dass ein Kundensegment mit einer Bedingung für den Datumsbereich gespeichert werden kann, wenn nur eines der Daten bearbeitet wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60 installiert ist. Die Patch-ID ist ACSD-64149. Dieses Problem wird voraussichtlich in Adobe Commerce 2.4.8 behoben.
@@ -28,7 +45,7 @@ Mit dem Patch ACSD-64149 wird das Problem behoben, dass ein Kundensegment mit ei
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -59,7 +76,7 @@ Der **[!UICONTROL Date range]**-Selektor sollte beim Bearbeiten keine Zeit zum D
 <u>Tatsächliche Ergebnisse</u>:
 
 * Mit dem **[!UICONTROL Date range]**-Selektor wird dem Datum Zeit hinzugefügt:
-   * Ein Datum enthält nur das Datum, während das andere sowohl das Datum als auch die Uhrzeit enthält.
+  * Ein Datum enthält nur das Datum, während das andere sowohl das Datum als auch die Uhrzeit enthält.
 * Der folgende Fehler wird in den Protokollen angezeigt:
 
   ```yaml

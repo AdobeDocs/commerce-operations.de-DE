@@ -1,17 +1,30 @@
 ---
-title: 'MDVA-39305-V3: Anmeldeproblem mit aktiviert [!DNL Google reCAPTCHA]'
-description: Wenden Sie den MDVA-39305-V3-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem sich registrierte Kunden nicht anmelden können, wenn  [!DNL Google reCAPTCHA]  aktiviert ist. Dieser Patch behebt auch das Problem, dass ein Formular gesendet werden kann, bevor  [!DNL Google reCAPTCHA]  vollständig geladen ist. Außerdem wird der Fehler *Aufruf einer Memberfunktion isDisabled() auf null* behoben, wenn Blöcke an nicht standardmäßigen Stellen auf einer CMS-Seite verwendet werden.
+title: 'MDVA-39305-V3: Anmeldeproblem mit aktiviertem [!DNL Google reCAPTCHA]'
+description: Wenden Sie den MDVA-39305-V3-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem sich registrierte Kunden nicht anmelden können, wenn [!DNL Google reCAPTCHA] aktiviert ist. Dieser Patch behebt auch das Problem, dass ein Formular gesendet werden kann, bevor [!DNL Google reCAPTCHA] vollständig geladen ist. Außerdem wird der Fehler *Aufruf einer Memberfunktion isDisabled() auf null* behoben, wenn Blöcke an nicht standardmäßigen Stellen auf einer CMS-Seite verwendet werden.
 feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 0%
-
 ---
-
 # MDVA-39305-V3: Anmeldeproblem mit aktiviertem [!DNL Google reCAPTCHA]
 
 >[!NOTE]
@@ -86,7 +99,7 @@ Auf der Seite in der Storefront tritt ein 500-Fehler auf.
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 

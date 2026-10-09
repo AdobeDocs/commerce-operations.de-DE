@@ -2,13 +2,22 @@
 title: Erweiterte JavaScript-Pakete
 description: Erfahren Sie mehr über die erweiterte JavaScript-Bündelung in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2301'
 ht-degree: 0%
-
 ---
-
 # Erweiterte JavaScript-Pakete
 
 Beim Bündeln von JavaScript-Modulen für eine bessere Leistung geht es darum, zwei Dinge zu reduzieren:
@@ -24,7 +33,7 @@ Bei einer modularen Anwendung kann die Anzahl der Server-Anfragen bis in die Hun
 
 Commerce unterstützt Bundles, um die Anzahl der Server-Anfragen zu reduzieren. Die Bündelung ist standardmäßig deaktiviert. Sie können sie in **[!UICONTROL Stores]** > **Einstellungen** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]** oder über die Befehlszeile aktivieren.
 
-Unter [Tipps zum &#x200B;](configuration.md#bundling-tips)&quot; in *Best Practices für die Konfiguration* finden Sie Tools von Drittanbietern, HTTP/2 und Anleitungen zur veralteten JS- und CSS-Zusammenführung.
+Unter [Tipps zum ](configuration.md#bundling-tips)&quot; in *Best Practices für die Konfiguration* finden Sie Tools von Drittanbietern, HTTP/2 und Anleitungen zur veralteten JS- und CSS-Zusammenführung.
 
 ![Bundling](../assets/performance/images/bundlingImage.png)
 
@@ -48,7 +57,7 @@ Die Commerce-Bündelung reduziert die Anzahl der Verbindungen pro Seite, aber f�
 
 >[!NOTE]
 >
->Die Verwendung von **[!UICONTROL Merge JavaScript Files]** wird nicht empfohlen. Diese Einstellung wurde nur für synchron geladene JavaScript im HEAD-Abschnitt der Seite entwickelt und kann dazu führen, dass Bundle und [!DNL RequireJS] nicht korrekt funktionieren. Sie wird nur aus Gründen der Abwärtskompatibilität beibehalten und bietet keinen Leistungsvorteil, wenn HTTP/2 aktiviert ist.
+>Die Verwendung von **[!UICONTROL Merge JavaScript Files]** wird nicht empfohlen. Diese Einstellung wurde nur für synchron geladene JavaScript im HEAD-Abschnitt der Seite entwickelt und kann dazu führen, dass Bundles und [!DNL RequireJS] nicht korrekt funktionieren. Sie wird nur aus Gründen der Abwärtskompatibilität beibehalten und bietet keinen Leistungsvorteil, wenn HTTP/2 aktiviert ist.
 >Wenn Sie **[!UICONTROL Merge JavaScript Files]** aktiviert haben und Probleme auftreten, versuchen Sie, es zu deaktivieren, bevor Sie Patches anwenden. Siehe [ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md), wenn Sie die Zusammenführung nicht deaktivieren können.
 
 So aktivieren Sie die integrierte Zusammenführung über die Befehlszeile:
@@ -59,7 +68,7 @@ php -f bin/magento config:set dev/js/merge_files 1
 
 Dieser Befehl führt alle synchronen JavaScript-Dateien in einer Datei zusammen. Das Aktivieren der Zusammenführung ohne gleichzeitiges Aktivieren der Bündelung ist nicht nützlich, da Commerce [!DNL RequireJS] verwendet. Wenn Sie die Bündelung nicht aktivieren, führt Commerce nur [!DNL RequireJS] und dessen Konfiguration zusammen. Wenn Sie sowohl Bündelung als auch Zusammenführung aktivieren, erstellt Commerce eine einzige JavaScript-Datei:
 
-![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingDevWorld.png)
+![Zusammenführung realer ](../assets/performance/images/magentoMergingDevWorld.png)
 
 ## Reale Render-Zeiten
 
@@ -73,7 +82,7 @@ Bei langsamer 3G-Konnektivität dauert es etwa 44 Sekunden, bis alle Bundles fü
 
 Dasselbe gilt für die Zusammenführung der Bundles in einer Datei. Benutzer konnten immer noch etwa 42 Sekunden auf das erste Laden der Seite warten, wie hier gezeigt:
 
-![Zusammenführung realer &#x200B;](../assets/performance/images/magentoMergingRealWorld.png)
+![Zusammenführung realer ](../assets/performance/images/magentoMergingRealWorld.png)
 
 Mit einem fortschrittlicheren Ansatz für die JavaScript-Bündelung können wir diese Ladezeiten verbessern.
 

@@ -1,13 +1,22 @@
 ---
 title: Handbuch zur Fehlerbehebung [!DNL Adobe Commerce Patching Automation]
 description: Beheben häufiger Probleme und Fehlermeldungen in [!DNL Adobe Commerce Patching Automation]
-source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
-
 ---
-
 # Handbuch zur Fehlerbehebung [!DNL Adobe Commerce Patching Automation]
 
 Wenn Sie [!DNL Patching Automation] für Patch-Vorgänge verwenden, können Fehlermeldungen und Probleme auftreten, die eine erfolgreiche Patch-Anwendung oder eine Rückgängigmachung verhindern können. Dieses Handbuch bietet Lösungen für die häufigsten Probleme.
@@ -178,7 +187,7 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste die Dauer von Patch
 
 **Ursache:** Ein temporäres Problem hat verhindert, dass der Service eine Verbindung zu GitHub herstellt
 
-**Lösung:** Warten Sie einige Minuten und wiederholen Sie den Vorgang. Wenn der Fehler weiterhin auftritt, wenden Sie sich an den [Adobe Commerce Cloud-Support](https://experienceleague.adobe.com/home?lang=de#support)
+**Lösung:** Warten Sie einige Minuten und wiederholen Sie den Vorgang. Wenn der Fehler weiterhin auftritt, wenden Sie sich an den [Adobe Commerce Cloud-Support](https://experienceleague.adobe.com/home#support)
 
 #### „Umgebung wurde nicht innerhalb der maximalen Wartezeit erstellt“ (mit GitHub verbundenes Projekt)
 
@@ -186,7 +195,7 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste die Dauer von Patch
 
 **Ursache:** Die `fetch-branches` Option ist für die GitHub-Integration des Projekts deaktiviert. Daher werden die vom Service übertragenen temporären Verzweigungen nicht synchronisiert, und die Integrationsumgebung wird nie erstellt.
 
-**Lösung:** Aktivieren Sie die Option [`fetch-branches` der Integration](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) und wiederholen Sie dann den Vorgang. Siehe [Einrichten der GitHub-Integration für [!DNL Patching Automation]](github-integration.md).
+**Lösung:** Aktivieren Sie die Option [`fetch-branches` der Integration](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) und wiederholen Sie dann den Vorgang. Siehe [Einrichten der GitHub-Integration für [!DNL Patching Automation]](github-integration.md).
 
 ### Fehler bei der Umgebungsaktivierung
 
@@ -199,8 +208,8 @@ Für die meisten Umgebungen wird in der folgenden Zeitleiste die Dauer von Patch
 **Wenn in den Details die Composer- oder Adobe Commerce-Pakete erwähnt werden:**
 
 * Melden Sie sich bei [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) an (oder bitten Sie Ihren Kontoinhaber, dies zu tun) und bestätigen Sie, dass Ihr Konto Zugriff auf die Commerce Enterprise-Code-Basis hat.
-* Stellen Sie sicher, dass die öffentlichen und privaten Composer-Authentifizierungsschlüssel Ihres Projekts korrekt sind. Siehe [Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Vergewissern Sie sich, dass das in der Fehlermeldung benannte Paket für Ihre Commerce-Version verfügbar ist. Siehe [Adobe Commerce-Pakete](https://experienceleague.adobe.com/de/docs/commerce-operations/release/packages/adobe-commerce).
+* Stellen Sie sicher, dass die öffentlichen und privaten Composer-Authentifizierungsschlüssel Ihres Projekts korrekt sind. Siehe [Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Vergewissern Sie sich, dass das in der Fehlermeldung benannte Paket für Ihre Commerce-Version verfügbar ist. Siehe [Adobe Commerce-Pakete](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Wenn in den Details Umgebungssteckplätze oder Ressourcen erwähnt werden:**
 
@@ -246,7 +255,7 @@ Ausführlichere technische Informationen:
 
 ### Verwandte Themen
 
-* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/overview)
+* [Dokumentation zu Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Adobe Commerce-Installationshandbuch](/help/installation/overview.md)
 * [Einführung in die Patch-Automatisierung](intro.md)
 * [Zugriff](access.md)

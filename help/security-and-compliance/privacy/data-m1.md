@@ -2,13 +2,22 @@
 title: Referenz zu personenbezogenen Daten von Kunden (Version 1.x)
 description: Erfahren Sie mehr über Datenfluss- und Datenbankentitätszuordnungen für personenbezogene Kundeninformationen in Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
-
 ---
-
 # Referenz zu personenbezogenen Daten von Kunden (Version 1.x)
 
 >[!NOTE]
@@ -54,7 +63,7 @@ Magento 1 speichert Kundeninformationen in Kunden-, Verkaufs- und anderen Datenb
 
 ### Kundendaten
 
-Magento 1 speichert Kundeninformationen in den `customer_entity`- und `customer_address_entity`. Beide Tabellen verfügen über mehrere Referenztabellen, die benutzerdefinierte Kundenattribute enthalten können.
+Magento 1 speichert Kundeninformationen in den `customer_entity` und `customer_address_entity` Tabellen. Beide Tabellen verfügen über mehrere Referenztabellen, die benutzerdefinierte Kundenattribute enthalten können.
 
 #### `customer_entity` und Referenztabellen
 

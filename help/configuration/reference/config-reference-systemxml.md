@@ -4,13 +4,27 @@ description: Erfahren Sie, wie die Datei „system.xml“ die Konfiguration von 
 feature: Configuration, System
 badge: label="Ein Beitrag von David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2740'
+source-wordcount: '2751'
 ht-degree: 0%
-
 ---
-
 # System.Xml-Referenz
 
 Mit der `system.xml` können Sie die Commerce-Systemkonfiguration verwalten. Verwenden Sie dieses Thema als allgemeine Referenz für die `system.xml`. Die `system.xml` befindet sich unter `etc/adminhtml/system.xml` in einer bestimmten Commerce 2-Erweiterung.
@@ -392,8 +406,8 @@ Die folgenden Validierungsregeln sind verfügbar:
 | `phoneUK` | Ermöglicht eine Telefonnummer (GB). |
 | `phoneUS` | Ermöglicht eine Telefonnummer (US). |
 | `required-entry` | Lässt einen leeren Wert nicht zu (gleichwertige Validierung wie `validate-no-empty`).<br>Validierungsfehlermeldung: „Dies ist ein erforderliches Feld.“ |
-| `time` | Ermöglicht eine gültige Zeit im 24-Stunden-Format zwischen 00 :00 23 :59. Zum Beispiel `15`, `15:05` oder `15:05:48`. |
-| `time12h` | Ermöglicht eine gültige Zeit im 12-Stunden-Format zwischen 12 :00 und 23:59:59 Uhr. Beispiel: `3 am`, `11:30 pm`, `02:15:00 pm`. |
+| `time` | Ermöglicht eine gültige Zeit im 24-Stunden-Format zwischen 00:00 und 23:59 Uhr. Zum Beispiel `15`, `15:05` oder `15:05:48`. |
+| `time12h` | Ermöglicht eine gültige Zeit im 12-Stunden-Format, zwischen 12:00 und 23:59:59 Uhr. Beispiel: `3 am`, `11:30 pm`, `02:15:00 pm`. |
 | `validate-admin-password` | Ermöglicht 7 oder mehr Zeichen, sowohl numerische als auch alphabetische Zeichen. |
 | `validate-alphanum-with-spaces` | Ermöglicht die Verwendung von Buchstaben (a-z oder A-Z), Zahlen (0-9) oder Leerzeichen. |
 | `validate-clean-url` | Ermöglicht eine gültige URL. Beispiel: `https://www.example.com` oder `www.example.com`. |

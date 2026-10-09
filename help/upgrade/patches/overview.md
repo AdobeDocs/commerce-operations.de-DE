@@ -2,13 +2,22 @@
 title: Funktionsweise von Patches
 description: Erfahren Sie mehr über die verschiedenen Arten von Patches für Adobe Commerce und wie sie funktionieren.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 0%
-
 ---
-
 # Funktionsweise von Patches
 
 >[!WARNING]
@@ -43,7 +52,7 @@ Hotfixes finden Sie im [Sicherheitscenter](https://magento.com/security/patches)
 
 Einzelne Patches enthalten Korrekturen von geringer Qualität für ein bestimmtes Problem. Diese Fehlerbehebungen werden auf die zuletzt unterstützte Nebenversion angewendet (z. B. 2.4.x), könnten jedoch in der vorherigen unterstützten Nebenversion (z. B. 2.3.x) fehlen. Adobe veröffentlicht bei Bedarf einzelne Patches.
 
-Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um einzelne Patches anzuwenden.
+Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um einzelne Patches anzuwenden.
 
 >[!NOTE]
 >
@@ -62,7 +71,7 @@ Es gibt viele Möglichkeiten, benutzerdefinierte Patch-Dateien zu erstellen. Das
 So erstellen Sie einen benutzerdefinierten Patch:
 
 1. Erstellen Sie ein `patches/composer` in Ihrem lokalen Projekt.
-1. Identifizieren Sie die für den Patch zu verwendende GitHub-Commit- oder Pull-Anfrage. In diesem Beispiel wird der [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)-Commit verwendet, der mit dem GitHub-Problem [&#x200B; verknüpft #6474](https://github.com/magento/magento2/issues/6474).
+1. Identifizieren Sie die für den Patch zu verwendende GitHub-Commit- oder Pull-Anfrage. In diesem Beispiel wird der [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede)-Commit verwendet, der mit dem GitHub-Problem [ verknüpft #6474](https://github.com/magento/magento2/issues/6474).
 1. Hängen Sie die `.patch` oder die `.diff` Erweiterungen an die Commit-URL an. Verwenden Sie `.diff` für eine kleinere Dateigröße. Beispiel: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. Speichern Sie die Seite als Datei im `patches/composer`. Beispiel: `github-issue-6474.diff`.
 1. Bearbeiten Sie die Datei und entfernen Sie `app/code/<VENDOR>/<PACKAGE>` aus allen Pfaden, sodass sie relativ zum `vendor/<VENDOR>/<PACKAGE>` sind.
@@ -92,10 +101,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Sie können Patches mit einer der folgenden Methoden anwenden:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Befehlszeile](/help/upgrade/patches/apply.md#command-line)
 - [Komponist](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im _Handbuch zu Commerce in Cloud_.
+>Informationen zum Anwenden eines Patches auf ein Adobe Commerce in Cloud-Infrastrukturprojekt finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im _Handbuch zu Commerce in Cloud_.

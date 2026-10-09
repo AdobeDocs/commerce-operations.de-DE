@@ -5,13 +5,23 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1767'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die Änderung oder Außerkraftsetzung von PHP-Code von Kernkomponenten und Drittanbietern
 
 In diesem Dokument werden Best Practices beschrieben, wenn die Notwendigkeit besteht, die Funktionalität, das Ergebnis oder die Eingabe von Code zu ändern, den Sie nicht erstellt haben oder nicht direkt steuern. Mit anderen Worten, Kern-Code und Drittanbieter-Code. Dieses Dokument konzentriert sich in erster Linie auf Backend-PHP-Code.
@@ -104,7 +114,7 @@ Voreinstellungen sind eine gierige Möglichkeit, Code zu ändern und sollten nur
 
 ### Beobachter
 
-Ein Beobachter ist das Konzept eines Ereignis-Listeners, wie er in vielen Anwendungen, Plattformen, Bibliotheken und Programmiersprachen verwendet wird. Dieses Konzept ist nicht auf die Adobe Commerce-Plattform beschränkt. Beobachter werden seit den Tagen von Magento 1 in die Plattform integriert und gelten als Hauptentscheidung für die Änderung von Kern- und Drittanbieter-Code. 
+Ein Beobachter ist das Konzept eines Ereignis-Listeners, wie er in vielen Anwendungen, Plattformen, Bibliotheken und Programmiersprachen verwendet wird. Dieses Konzept ist nicht auf die Adobe Commerce-Plattform beschränkt. Beobachter werden seit den Tagen von Magento 1 in die Plattform gebacken und gelten als primäre Wahl, wie Kern-Code und Drittanbieter-Code zu ändern. 
 
 Die Kern-Code-Basis und alle Drittanbietermodule können ein Ereignis an einer ausgewählten Stelle im Code senden. Der Beobachter, der in einer `events.xml` deklariert ist und das gesendete Ereignis nach Namen überwacht, kann auf globaler Ebene arbeiten oder auf einen beliebigen Adobe Commerce-„Bereich“ beschränkt sein, z. B. `frontend`, `adminhtml`, `graphql`, `webapi_rest` und `crontab`.
 

@@ -3,13 +3,29 @@ title: Anwendungsinitialisierung und Bootstrap
 description: Informationen zur Initialisierung und Bootstrap-Logik für das Commerce-Programm.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
-
 ---
-
 # Übersicht über Initialisierung und Bootstrap
 
 Um das Commerce-Programm auszuführen, werden die folgenden Aktionen in [pub/index.php implementiert](https://github.com/magento/magento2/tree/2.4.8/pub/index.php):
@@ -78,7 +94,7 @@ Wir haben die folgenden Einstiegspunktanwendungen (d. h. von Commerce definierte
 1. Verwendet ein HTTP-Antwortobjekt, um das von der Controller-Aktion erhaltene Ergebnis zurückzugeben.
 1. Fehlerbehandlung (in der folgenden Prioritätsreihenfolge):
 
-   1. Wenn Sie den [Entwicklermodus“ &#x200B;](../bootstrap/application-modes.md#developer-mode):
+   1. Wenn Sie den [Entwicklermodus“ ](../bootstrap/application-modes.md#developer-mode):
       - Wenn die Commerce-Anwendung nicht installiert ist, leiten Sie zum Setup-Assistenten weiter.
       - Wenn die Commerce-Anwendung installiert ist, zeigen Sie den HTTP-Status-Code 500 (Interner Server-Fehler) an.
    1. Wenn sich die Commerce-Anwendung im Wartungsmodus befindet, zeigen Sie eine benutzerfreundliche Landingpage „Service nicht verfügbar“ mit HTTP-Status-Code 503 (Service nicht verfügbar) an.

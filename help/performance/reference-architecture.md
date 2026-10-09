@@ -2,18 +2,27 @@
 title: Referenzarchitektur
 description: Erfahren Sie mehr über die Referenzarchitektur in Adobe Commerce. Erfahren Sie mehr über Implementierungsanleitungen und Optimierungsstrategien.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # Referenzarchitektur
 
 In diesem Abschnitt wird eine allgemeine empfohlene Einrichtung für Adobe Commerce-Instanzen beschrieben, bei der einfache Server verwendet werden, die physisch in einem Rechenzentrum gehostet (nicht virtualisiert) werden, in dem Ressourcen nicht mit anderen Benutzern geteilt werden. Ihr Hosting-Anbieter, insbesondere wenn er auf Hochleistungs-Hosting in Commerce spezialisiert ist, empfiehlt möglicherweise ein anderes Setup, das für Ihre Anforderungen gleichermaßen oder effektiver ist.
 
-Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie unter [Starter-Architektur](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/starter-architecture).
+Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie unter [Starter-Architektur](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Referenzarchitekturdiagramm
 
@@ -64,7 +73,7 @@ Die folgenden Abschnitte enthalten Empfehlungen und Überlegungen zu jedem Absch
 
 ### Empfohlene [!DNL Varnish] Referenzarchitektur
 
-Magento unterstützt standardmäßig mehrere Engines zum Zwischenspeichern ganzer Seiten (File, Memcache, Redis, [!DNL Varnish]) sowie eine erweiterte Abdeckung durch Erweiterungen. [!DNL Varnish] ist die empfohlene vollständige Seiten-Cache-Engine.  [!DNL Commerce] unterstützt viele verschiedene [!DNL Varnish].
+Magento unterstützt standardmäßig mehrere Caching-Engines für vollständige Seiten (File, Memcache, Redis, [!DNL Varnish]) sowie eine erweiterte Abdeckung durch Erweiterungen. [!DNL Varnish] ist die empfohlene vollständige Seiten-Cache-Engine.  [!DNL Commerce] unterstützt viele verschiedene [!DNL Varnish].
 
 Für Websites, die keine hohe Verfügbarkeit erfordern, empfehlen wir die Verwendung einer einfachen [!DNL Varnish]-Einrichtung mit Nginx-SSL-Beendigung.
 

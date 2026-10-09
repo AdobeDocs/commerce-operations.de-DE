@@ -1,22 +1,31 @@
 ---
 title: Einstellungen für die Datenmigration
-description: Erfahren Sie, wie Sie mit der Migration von Einstellungen von Magento 1 zu Magento 2 mit dem  [!DNL Data Migration Tool] beginnen.
+description: Erfahren Sie, wie Sie mit der [!DNL Data Migration Tool] Einstellungen von Magento 1 zu Magento 2 migrieren.
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
-
 ---
-
 # Einstellungen für die Datenmigration
 
 Der `Settings` Modus migriert Stores, Websites und Systemkonfigurationen wie Versand-, Zahlungs- und Steuereinstellungen. Gemäß unserer Datenmigration [Reihenfolge](overview.md#migration-order) sollten Sie zuerst die Einstellungen migrieren.
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich beim Anwendungs-Server als [Dateisystemeigentümer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Anwendungs-Server als [Dateisystemeigentümer“ ](../../../installation/prerequisites/file-system/overview.md).
 
 1. Wechseln Sie in das `/bin` Verzeichnis oder stellen Sie sicher, dass es zu Ihrem `PATH` hinzugefügt wird.
 
@@ -25,7 +34,7 @@ Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzube
 >Stellen Sie sicher, dass Magento 2 im `default` bereitgestellt wird. Der Entwicklermodus kann zu Validierungsfehlern im Migrations-Tool führen.
 
 
-Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
 
 ## Ausführen des Befehls zur Einstellungsmigration
 
@@ -80,7 +89,7 @@ Sie können die Systemkonfigurationen beim Migrieren von Einstellungen ignoriere
 
 1. Um den neuen Namen der Einstellungsdatei für die Zuordnung anzugeben, ändern Sie das `<settings_map_file>`-Tag in der `path/to/config.xml`.
 
-Weitere Informationen finden Sie [&#x200B; Abschnitt „Einstellungen Migrationsmodus](../technical-specification.md#settings-migration-mode) der [&#x200B; des Tools](../technical-specification.md).
+Weitere Informationen finden Sie [ Abschnitt „Einstellungen Migrationsmodus](../technical-specification.md#settings-migration-mode) der [ des Tools](../technical-specification.md).
 
 ## Nächster Migrationsschritt
 

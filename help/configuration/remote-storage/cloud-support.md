@@ -3,20 +3,36 @@ title: Remote-Speicher für Commerce auf Cloud-Infrastruktur
 description: Siehe Anleitung zum Einrichten von Remote-Speicher für Adobe Commerce in der Cloud-Infrastruktur.
 feature: Configuration, Cloud, Storage
 exl-id: da352466-13f2-42e4-a589-3b0a89728467
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren des Remote-Speichers für Commerce in der Cloud-Infrastruktur
 
 Ab dem `ece-tools`-Paket 2002.1.5 können Sie eine Umgebungsvariable verwenden, um das Remote-Speichermodul zu aktivieren. Das Remote-Speichermodul bietet jedoch _begrenzte_ Unterstützung für Adobe Commerce in der Cloud-Infrastruktur. Adobe kann den Speicheradapterdienst eines Drittanbieters nicht vollständig beheben.
 
 ## Umgebungsvariable
 
-Die Variable `REMOTE_STORAGE` wird während der [Bereitstellungsphase](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/deploy/process) eines Cloud-Infrastrukturprojekts verwendet.
+Die Variable `REMOTE_STORAGE` wird während der [Bereitstellungsphase](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process) eines Cloud-Infrastrukturprojekts verwendet.
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +56,7 @@ stage:
 
 ### Festlegen einer Variablen mit Cloud CLI
 
-Legen Sie die `REMOTE_STORAGE`-Variable als [Variable auf Umgebungsebene) fest](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) sodass Dateien nicht zwischen Produktions-, Staging- und Integrationsumgebungen freigegeben werden. Das Festlegen der Variablen auf Umgebungsebene bietet die Flexibilität, nur den Remote-Speicher in ausgewählten Umgebungen zu verwenden, z. B. die Verwendung des Remote-Speichers in der Integrationsumgebung auszuschließen.
+Legen Sie die `REMOTE_STORAGE`-Variable als [Variable auf Umgebungsebene) fest](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels) sodass Dateien nicht zwischen Produktions-, Staging- und Integrationsumgebungen freigegeben werden. Das Festlegen der Variablen auf Umgebungsebene bietet die Flexibilität, nur den Remote-Speicher in ausgewählten Umgebungen zu verwenden, z. B. die Verwendung des Remote-Speichers in der Integrationsumgebung auszuschließen.
 
 **So fügen Sie die Remote-Speichervariable über die Cloud-CLI**:
 
@@ -89,7 +105,7 @@ Alternativ können Sie die Project-Web-Schnittstelle verwenden, um die Variable 
 
 ### Optionale Authentifizierung verwenden
 
-`key` und `secret` sind optional. Wenn Sie die Variable erstellen, können Sie die `key` und `secret` ausblenden, indem Sie die Option `sensitive` auswählen. Bei dieser Einstellung sind die Werte nicht in der Web-Oberfläche sichtbar. Siehe [Sichtbarkeit von Variablen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
+`key` und `secret` sind optional. Wenn Sie die Variable erstellen, können Sie die `key` und `secret` ausblenden, indem Sie die Option `sensitive` auswählen. Bei dieser Einstellung sind die Werte nicht in der Web-Oberfläche sichtbar. Siehe [Sichtbarkeit von Variablen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/variable-levels#visibility) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 
 Wenn Sie eine andere Authentifizierungsmethode verwenden möchten, lassen Sie die `key` und `secret` aus der JSON-Konfiguration weg. Konfigurieren Sie die alternative Authentifizierungsmethode und überprüfen Sie, ob der Server für den S3-Bucket autorisiert ist.
 
@@ -111,7 +127,7 @@ bin/magento remote-storage:sync
 
 Wenn Sie sich für die Verwendung der Remote-Speicherlösung mit einem Adobe Commerce in einem Cloud-Infrastrukturprojekt entscheiden, verwenden Sie die [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3)-Anleitung in der _Fastly_-Dokumentation, um sicherzustellen, dass Fastly Image Optimization mit AWS S3 funktioniert.
 
-Seien Sie mit Ihren [Fastly-Anmeldedaten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials) vorbereitet. Bei Pro-Projekten stellen Sie mit SSH eine Verbindung zu Ihrem Server her und erhalten die Fastly-Anmeldedaten aus der `/mnt/shared/fastly_tokens.txt`. Staging- und Produktionsumgebungen verfügen über eindeutige Anmeldeinformationen. Sie müssen die Anmeldeinformationen für jede Umgebung abrufen.
+Seien Sie mit Ihren [Fastly-Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration#get-fastly-credentials) vorbereitet. Bei Pro-Projekten stellen Sie mit SSH eine Verbindung zu Ihrem Server her und erhalten die Fastly-Anmeldedaten aus der `/mnt/shared/fastly_tokens.txt`. Staging- und Produktionsumgebungen verfügen über eindeutige Anmeldeinformationen. Sie müssen die Anmeldeinformationen für jede Umgebung abrufen.
 
 Fahren Sie mit den folgenden Aufgaben mit dem Einrichten des Remote-Speichers für Cloud-Projekte fort:
 

@@ -1,20 +1,29 @@
 ---
-title: Anpassen des  [!DNL Data Migration Tool]
-description: Erfahren Sie, wie Sie die  [!DNL Data Migration Tool] , um von Erweiterungen erstellte Daten zwischen Magento 1 und Magento 2 zu übertragen.
+title: Anpassen der [!DNL Data Migration Tool]
+description: Erfahren Sie, wie Sie die [!DNL Data Migration Tool] zur Übertragung von Daten anpassen, die von Erweiterungen zwischen Magento 1 und Magento 2 erstellt wurden.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '844'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren des [!DNL Data Migration Tool]
 
-Manchmal unterscheiden sich das Datenformat und die Struktur, die von [Erweiterungen](https://commercemarketplace.adobe.com//extensions.html) oder benutzerdefiniertem Code erstellt wurden, zwischen Magento 1 und Magento 2. Verwenden Sie Erweiterungspunkte innerhalb der [!DNL Data Migration Tool], um diese Daten zu migrieren. Wenn das Datenformat und die Datenstruktur identisch sind, kann das Tool die Daten automatisch ohne Benutzereingriff migrieren.
+Manchmal unterscheiden sich das Datenformat und die Struktur, die durch [Erweiterungen](https://commercemarketplace.adobe.com//extensions.html) oder benutzerdefinierten Code erstellt wurden, zwischen Magento 1 und Magento 2. Verwenden Sie Erweiterungspunkte innerhalb der [!DNL Data Migration Tool], um diese Daten zu migrieren. Wenn das Datenformat und die Datenstruktur identisch sind, kann das Tool die Daten automatisch ohne Benutzereingriff migrieren.
 
-Während der Migration scannt [Map Step](technical-specification.md#map-step) und vergleicht alle Magento 1- und Magento 2-Tabellen, einschließlich der von Extensions erstellten Tabellen. Wenn die Tabellen identisch sind, migriert das Tool die Daten automatisch. Wenn die Tabellen unterschiedlich sind, wird das Tool beendet und der Benutzer wird benachrichtigt.
+Während der Migration scannt [Map Step](technical-specification.md#map-step) und vergleicht alle Magento 1- und Magento 2-Tabellen, einschließlich der von Erweiterungen erstellten Tabellen. Wenn die Tabellen identisch sind, migriert das Tool die Daten automatisch. Wenn die Tabellen unterschiedlich sind, wird das Tool beendet und der Benutzer wird benachrichtigt.
 
 >[!NOTE]
 >
@@ -73,16 +82,16 @@ Im Folgenden finden Sie ein Beispiel für die Verwendung sowohl von Zuordnungsre
 
 - Migrieren Sie keine unnötigen Daten aus der `great_blog_index`.
 - Die Tabelle `great_blog_publication` wurde in Magento 2 in `great_blog_post` umbenannt, sodass Daten in die neue Tabelle migriert werden.
-   - Das `summary` wurde in `title` umbenannt, sodass Daten in das neue Feld migriert werden.
-   - Das `priority` wurde entfernt und existiert nicht mehr in Magento 2.
-   - Die Daten im Feld `body` haben das Format geändert und sollten vom benutzerdefinierten Handler verarbeitet werden: `\Migration\Handler\GreatBlog\NewFormat`.
+  - Das `summary` wurde in `title` umbenannt, sodass Daten in das neue Feld migriert werden.
+  - Das Feld `priority` wurde entfernt und existiert nicht mehr in Magento 2.
+  - Die Daten im Feld `body` haben das Format geändert und sollten vom benutzerdefinierten Handler verarbeitet werden: `\Migration\Handler\GreatBlog\NewFormat`.
 - Für die Erweiterung „GreatBlog“ in Magento 2 wurde eine neue Bewertungsfunktion entwickelt.
-   - Eine neue `great_blog_rating` wurde erstellt.
-   - Ein neues `great_blog_post.rating` wurde erstellt.
+  - Eine neue `great_blog_rating` wurde erstellt.
+  - Ein neues `great_blog_post.rating` wurde erstellt.
 
 ### Erweitern der Zuordnung in anderen Schritten
 
-Andere Schritte unterstützen die Zuordnung, z. B. [&#x200B; Schritt „EAV](technical-specification.md#eav-step) und der Schritt „Kundenattribute“. Mit diesen Schritten wird eine vordefinierte Liste von Magento-Tabellen migriert. Angenommen, die Erweiterung „GreatBlog“ enthält ein zusätzliches Feld in der `eav_attribute` und der Name wurde in Magento 2 geändert. Da die Tabelle vom [EAV-Schritt](technical-specification.md#eav-step) verarbeitet wird, sollten Zuordnungsregeln für die `map-eav.xml` geschrieben werden. Die `map.xml`- und `map-eav.xml` verwenden dasselbe `map.xsd`, sodass die Zuordnungsregeln gleich bleiben.
+Andere Schritte unterstützen die Zuordnung, z. B. [ Schritt „EAV](technical-specification.md#eav-step) und der Schritt „Kundenattribute“. Mit diesen Schritten wird eine vordefinierte Liste von Magento-Tabellen migriert. Angenommen, die Erweiterung „GreatBlog“ enthält ein zusätzliches Feld in der `eav_attribute` und der Name wurde in Magento 2 geändert. Da die Tabelle vom [EAV-Schritt](technical-specification.md#eav-step) verarbeitet wird, sollten Zuordnungsregeln für die `map-eav.xml` geschrieben werden. Die `map.xml`- und `map-eav.xml` verwenden dasselbe `map.xsd`, sodass die Zuordnungsregeln gleich bleiben.
 
 ## Wesentliche Änderungen des Datenformats und der Datenstruktur
 
@@ -98,7 +107,7 @@ Erstellen Sie für wichtige Änderungen am Datenformat und an der Struktur einen
 
 ### Erstellen eines benutzerdefinierten Schritts
 
-Nehmen wir an, dass die Erweiterung unter Verwendung des gleichen „GreatBlog“-Beispiels in Magento 1 über eine Tabelle verfügt, aber neu entworfen wurde, um zwei Tabellen in Magento 2 zu haben.
+Angenommen, die Erweiterung verfügt unter Verwendung des gleichen „GreatBlog“-Beispiels über eine Tabelle in Magento 1, wurde jedoch so umgestaltet, dass sie zwei Tabellen in Magento 2 enthält.
 
 In Magento 1 gab es nur eine `greatblog_post`:
 
@@ -122,7 +131,7 @@ In Magento 2 wurde eine neue Tabelle für Tags `greatblog_post_tags` eingeführt
 | sort_order | SMALLINT |
 ```
 
-Magento 2 `greatblog_post` sieht nun wie folgt aus:
+Die Magento 2 `greatblog_post` sieht nun wie folgt aus:
 
 ```text
 | Field     | Type     |
@@ -164,7 +173,7 @@ Die Schritte können vier Arten von Klassen umfassen:
 
 >[!NOTE]
 >
->Weitere Informationen finden [&#x200B; unter &#x200B;](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [&#128279;](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
+>Weitere Informationen finden [ unter ](technical-specification.md#configuration), [Schrittinterne](technical-specification.md#step-internals), [](technical-specification.md#step-stages) und [Ausführungsmodi](technical-specification.md#running-modes).
 
 
 Innerhalb dieser Klassen können komplexe SQL-Abfragen zusammengestellt werden, um Daten abzurufen und zu migrieren. Außerdem sollten diese Tabellen im [Map-Schritt“ „ignoriert“ werden](technical-specification.md#map-step) da alle vorhandenen Tabellen gescannt werden und versucht wird, die Daten zu migrieren, sofern sie sich nicht im `<ignore>`-Tag der `map.xml`-Datei befinden.
@@ -248,7 +257,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-Als Nächstes müssen Sie eine Klasse für die Verarbeitung und Speicherung von Daten in der Magento 2-`Vendor\Migration\Step\GreatBlog\Data` erstellen:
+Als Nächstes müssen Sie eine Klasse für die Verarbeitung und Speicherung von Daten in der Magento 2-Datenbank erstellen`Vendor\Migration\Step\GreatBlog\Data`:
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -406,11 +415,11 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-Nach der in den Beispielen angegebenen benutzerdefinierten Schrittimplementierung nimmt das System Daten aus der einzelnen Magento 1-Tabelle,
-Verarbeiten Sie sie mit `Vendor\Migration\Step\GreatBlog\Data` Klasse und speichern Sie die Daten in zwei Magento 2-Tabellen. Neue und geänderte Datensätze werden bei der Delta-Migration mithilfe der `Vendor\Migration\Step\GreatBlog\Delta`-Klasse bereitgestellt.
+Nach der in den Beispielen angegebenen Implementierung benutzerdefinierter Schritte nimmt das System Daten aus der einzelnen Magento 1-Tabelle,
+Verarbeiten Sie sie mit `Vendor\Migration\Step\GreatBlog\Data` -Klasse und speichern Sie die Daten in zwei Magento 2 -Tabellen. Neue und geänderte Datensätze werden bei der Delta-Migration mithilfe der `Vendor\Migration\Step\GreatBlog\Delta`-Klasse bereitgestellt.
 
 ## Verbotene Erweiterungsmethoden
 
-Da sich die [!DNL Data Migration Tool] und Magento 2 ständig weiterentwickeln, können sich bestehende Schritte und Handler ändern. Es wird dringend empfohlen, das Verhalten von Schritten wie [Map-Schritt](technical-specification.md#map-step), [URL-Rewrite-Schritt](technical-specification.md#url-rewrite-step) und Handlern nicht durch Erweitern ihrer Klassen zu überschreiben.
+Da sich der [!DNL Data Migration Tool] und Magento 2 ständig weiterentwickeln, können sich vorhandene Schritte und Handler ändern. Es wird dringend empfohlen, das Verhalten von Schritten wie [Map-Schritt](technical-specification.md#map-step), [URL-Rewrite-Schritt](technical-specification.md#url-rewrite-step) und Handlern nicht durch Erweitern ihrer Klassen zu überschreiben.
 
 Einige Schritte unterstützen keine Zuordnung und können nicht geändert werden, ohne den Code zu ändern. Sie können entweder einen zusätzlichen Schritt schreiben, der die Daten am Ende der Migration ändert, oder ein [GitHub-Problem](https://github.com/magento/data-migration-tool/issues) erstellen und einen neuen Erweiterungspunkt für den vorhandenen Schritt anfordern.

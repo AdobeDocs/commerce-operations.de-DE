@@ -2,13 +2,22 @@
 title: Konfigurieren von Dateieigentümerschaft und Berechtigungen
 description: Führen Sie die folgenden Schritte aus, um Dateisystemberechtigungen für lokale Installationen von Adobe Commerce zu konfigurieren.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
-
 ---
-
 # Konfigurieren von Dateieigentümerschaft und Berechtigungen
 
 In diesem Abschnitt wird beschrieben, wie Sie vor der Installation von Adobe Commerce Lese- und Schreibberechtigungen für die Webservergruppe festlegen. Dies ist erforderlich, damit die Befehlszeile Dateien in das Dateisystem schreiben kann.
@@ -60,7 +69,7 @@ So legen Sie Berechtigungen vor der Installation der Anwendung fest:
    * [Composer-Metapaket](../../composer.md)
    * [Klonen Sie das Repository (nur beitragende Entwickler).](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
-1. Nachdem Sie die Eigentümerschaft und Berechtigungen für das Dateisystem festgelegt haben, [&#x200B; Sie die Anwendung](../../advanced.md)
+1. Nachdem Sie die Eigentümerschaft und Berechtigungen für das Dateisystem festgelegt haben, [ Sie die Anwendung](../../advanced.md)
 
 >[!NOTE]
 >
@@ -111,7 +120,7 @@ Befolgen Sie die Anweisungen auf Ihrem Bildschirm, um ein Kennwort für den Benu
 
 >[!WARNING]
 >
->Wenn Sie auf Ihrem Anwendungsserver keine `root` Berechtigungen haben, können Sie ein anderes lokales Benutzerkonto verwenden. Stellen Sie sicher, dass der Benutzer über ein sicheres Kennwort verfügt, und setzen Sie den Vorgang mit [Legen Sie den Dateisystembesitzer in die Webserver-Gruppe &#x200B;](#put-the-file-system-owner-in-the-web-server-group).
+>Wenn Sie auf Ihrem Anwendungsserver keine `root` Berechtigungen haben, können Sie ein anderes lokales Benutzerkonto verwenden. Stellen Sie sicher, dass der Benutzer über ein sicheres Kennwort verfügt, und setzen Sie den Vorgang mit [Legen Sie den Dateisystembesitzer in die Webserver-Gruppe ](#put-the-file-system-owner-in-the-web-server-group).
 
 Um beispielsweise einen Benutzer mit dem Namen `magento_user` zu erstellen und ihm ein Kennwort zuzuweisen, geben Sie Folgendes ein:
 
@@ -125,7 +134,7 @@ sudo passwd magento_user
 
 >[!WARNING]
 >
->Da der Zweck der Erstellung dieses Benutzers darin besteht, zusätzliche Sicherheit zu bieten, stellen Sie sicher, dass Sie ein [starkes Kennwort“ &#x200B;](https://en.wikipedia.org/wiki/Password_strength).
+>Da der Zweck der Erstellung dieses Benutzers darin besteht, zusätzliche Sicherheit zu bieten, stellen Sie sicher, dass Sie ein [starkes Kennwort“ ](https://en.wikipedia.org/wiki/Password_strength).
 
 ### Suchen der Webserver-Benutzergruppe
 
@@ -158,7 +167,7 @@ Um den Dateisystembesitzer in die primäre Gruppe des Webservers einzuordnen (un
 
 >[!NOTE]
 >
->Die `-a -G` sind wichtig, da sie `apache` oder `www-data` als *sekundäre* Gruppe zum Benutzerkonto hinzufügen, wodurch die (primäre *Gruppe des* beibehalten wird. Wenn Sie einem Benutzerkonto eine sekundäre Gruppe hinzufügen, [&#x200B; Sie (Dateieigentümerschaft und Berechtigungen &#x200B;](#set-ownership-and-permissions-for-two-users)) sicherstellen, dass Mitglieder einer freigegebenen Gruppe nur Zugriff auf bestimmte Dateien haben.
+>Die `-a -G` sind wichtig, da sie `apache` oder `www-data` als *sekundäre* Gruppe zum Benutzerkonto hinzufügen, wodurch die (primäre *Gruppe des* beibehalten wird. Wenn Sie einem Benutzerkonto eine sekundäre Gruppe hinzufügen, [ Sie (Dateieigentümerschaft und Berechtigungen ](#set-ownership-and-permissions-for-two-users)) sicherstellen, dass Mitglieder einer freigegebenen Gruppe nur Zugriff auf bestimmte Dateien haben.
 
 So fügen Sie beispielsweise die `magento_user` der `apache` primären Gruppe unter CentOS hinzu:
 

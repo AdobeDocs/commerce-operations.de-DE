@@ -2,17 +2,26 @@
 title: Erweiterungen von Drittanbietern verwalten
 description: Führen Sie die folgenden Schritte aus, um Adobe Commerce Extensions zu installieren, zu aktivieren, zu aktualisieren und zu deinstallieren.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
-
 ---
-
 
 # Erweiterungen von Drittanbietern verwalten
 
-Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional im [Commerce Marketplace oder &#x200B;](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystem verpacken und verteilen.
+Code, der das Verhalten von Adobe Commerce erweitert oder anpasst, wird als Erweiterung bezeichnet. Sie können Erweiterungen optional im [Commerce Marketplace oder ](https://commercemarketplace.adobe.com/) anderen Erweiterungsverteilungssystem verpacken und verteilen.
 
 Zu den Erweiterungen gehören:
 
@@ -20,7 +29,7 @@ Zu den Erweiterungen gehören:
 - Designs (Ändern des Erscheinungsbilds Ihrer Storefront und Ihres Administrators)
 - Sprachpakete (Lokalisieren der Storefront und Admin)
 
-In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions).
+In diesem Abschnitt wird erläutert, wie Sie mit der Befehlszeilenschnittstelle Erweiterungen von Drittanbietern verwalten können, die Sie für lokale Projekte _Commerce Marketplace_. Informationen zu Cloud-Infrastrukturprojekten finden Sie unter [Erweiterungen verwalten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions).
 
 Sie können dieselbe Vorgehensweise verwenden, um die Erweiterung _any_ zu installieren. Sie benötigen lediglich den Namen und die Version des Composers der Erweiterung. Öffnen Sie dazu die `composer.json`-Datei der Erweiterung und notieren Sie sich die Werte für `"name"` und `"version"`.
 
@@ -56,7 +65,7 @@ Um eine Erweiterung zu installieren, müssen Sie:
 
 ### Abrufen von Erweiterungsinformationen
 
-Wenn Sie den Namen und die Version der Erweiterung „Composer“ bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit &quot;[&#x200B; der `composer.json`-Datei“ &#x200B;](#update-composer-dependencies).
+Wenn Sie den Namen und die Version der Erweiterung „Composer“ bereits kennen, überspringen Sie diesen Schritt und fahren Sie mit &quot;[ der `composer.json`-Datei“ ](#update-composer-dependencies).
 
 So rufen Sie den Namen und die Version der Erweiterung „Composer“ aus Commerce Marketplace ab:
 
@@ -94,7 +103,7 @@ Fügen Sie den Namen und die Version der Erweiterung zu Ihrer `composer.json` hi
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Geben Sie [Authentifizierungsschlüssel“ &#x200B;](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername; Ihr privater Schlüssel ist Ihr Kennwort.
+1. Geben Sie [Authentifizierungsschlüssel“ ](../prerequisites/authentication-keys.md). Ihr öffentlicher Schlüssel ist Ihr Benutzername; Ihr privater Schlüssel ist Ihr Kennwort.
 
 1. Warten Sie, bis Composer die Aktualisierung Ihrer Projektabhängigkeiten abgeschlossen hat, und stellen Sie sicher, dass keine Fehler vorhanden sind:
 

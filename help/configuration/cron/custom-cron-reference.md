@@ -2,13 +2,22 @@
 title: Benutzerdefinierter Cron-Auftrag und Cron-Gruppenreferenz
 description: Erfahren Sie, wie Sie Crons mithilfe von Crons-Gruppen und Crontabs in Adobe Commerce anpassen können. Erkunden Sie die Einrichtung benutzerdefinierter Module und die Konfiguration geplanter Aufgaben.
 exl-id: 16e342ff-aa94-4e31-8c75-dfea1ef02706
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '549'
 ht-degree: 0%
-
 ---
-
 # Anpassen der Cron-Referenz
 
 Dieses Thema hilft Ihnen beim Einrichten von crontabs und optional crongroups für benutzerdefinierte Module. Wenn Ihr benutzerdefiniertes Modul regelmäßig Aufgaben planen muss, müssen Sie für dieses Modul eine crontab einrichten. Eine _crontab_ ist eine Cron-Auftragskonfiguration.
@@ -149,4 +158,4 @@ Um den `visitor_clean` Cron-Auftrag zu deaktivieren, erstellen Sie ein benutzerd
 ...
 ```
 
-Jetzt wurde der `visitor_clean` Cron-Auftrag auf 00 % :00 30. Februar eingestellt - an dem Datum, das nie eintreten wird.
+Jetzt wurde der `visitor_clean` Cron-Auftrag so eingestellt, dass er am 30. Februar um 00:00 Uhr ausgeführt wird - an dem Datum, das nie eintreten wird.

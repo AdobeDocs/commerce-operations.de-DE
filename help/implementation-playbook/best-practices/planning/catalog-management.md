@@ -4,13 +4,25 @@ description: Erfahren Sie mehr über Empfehlungen zum Konfigurieren von Limits f
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die Katalogverwaltung
 
 Die hier beschriebenen Best Practices für die Katalogverwaltung decken eine Reihe von Problemen ab, darunter (aber nicht nur):
@@ -29,7 +41,7 @@ Um eine optimale Leistung zu erzielen, verwenden Sie die folgenden Richtlinien, 
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -47,7 +59,7 @@ Die Konfiguration einer großen Anzahl von Kategorien kann die Leistung beeintr�
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -70,7 +82,7 @@ Die Konfiguration zu vieler Produktattribute oder Produktattributoptionen kann d
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -100,7 +112,7 @@ Entfernen Sie nicht verwendete Produktattributsätze mit MySQL.
 
 #### Konfiguration des Attributsatzes überprüfen
 
-1. [Verbindung zur Website-Datenbank herstellen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Verbindung zur Website-Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Ermitteln der Anzahl der Attributsätze mit MySQL
 
@@ -138,7 +150,7 @@ Die Konfiguration zu vieler Produktoptionen pro Produkt kann die Leistung beeint
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -170,7 +182,7 @@ Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -179,7 +191,7 @@ Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 Wenn eine Kategorie zu viele Produkte enthält, aktualisieren Sie die Konfiguration des Storefront-Katalogs, um die Option &quot;**Produkte pro Seite zulassen“** deaktivieren.
 
-Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Paginierungssteuerelemente für die Produktliste, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Konfigurieren von Paginierungssteuerelementen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html?lang=de#configure-the-pagination-controls).
+Nachdem Sie diese Option deaktiviert haben, verwendet Adobe Commerce die Paginierungssteuerelemente für die Produktliste, um die Anzahl der Produkte zu verwalten, die in Storefront-Komponenten angezeigt werden. Anweisungen finden Sie unter [Konfigurieren von Paginierungssteuerelementen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Produkt-SKU-Beschränkungen
 
@@ -187,7 +199,7 @@ Die Konfiguration zu vieler Produkt-SKUs kann die Leistung beeinträchtigen, ind
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -214,7 +226,7 @@ Die Konfiguration zu vieler Varianten pro Produkt kann die Leistung beeinträcht
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -249,7 +261,7 @@ Befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in e
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

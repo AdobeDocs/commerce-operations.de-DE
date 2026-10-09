@@ -1,14 +1,23 @@
 ---
 title: Nachrichten-Broker (RabbitMQ)
-description: Führen Sie diese Schritte aus, um die erforderliche Message Broker-Software (z. B.  [!DNL RabbitMQ]) für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
+description: Führen Sie diese Schritte aus, um die erforderliche Message Broker-Software (z. B. [!DNL RabbitMQ]) für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
-
 ---
-
 # Nachrichten-Broker (RabbitMQ)
 
 Adobe Commerce verwendet den [!DNL RabbitMQ] Open-Source-Nachrichtenbroker. Es bietet ein zuverlässiges, hochverfügbares, skalierbares und tragbares Messaging-System.
@@ -22,7 +31,7 @@ Das Meldungswarteschlangensystem muss vor der Installation von Adobe Commerce ei
 
 >[!NOTE]
 >
->Sie können MySQL oder [!DNL RabbitMQ] für die Verarbeitung der Nachrichtenwarteschlange verwenden. Einzelheiten zum Einrichten des Meldungswarteschlangen-Systems finden Sie unter [Meldungswarteschlangen - Übersicht](https://developer.adobe.com/commerce/php/development/components/message-queues/). Wenn Sie die Bulk API mit Adobe Commerce verwenden, verwendet die Systemkonfiguration für die Nachrichtenwarteschlange standardmäßig [!DNL RabbitMQ] als Nachrichtenbroker. Weitere Informationen [&#x200B; Sie unter &#x200B;](../../configuration/cli/start-message-queues.md) starten.
+>Sie können MySQL oder [!DNL RabbitMQ] für die Verarbeitung der Nachrichtenwarteschlange verwenden. Einzelheiten zum Einrichten des Meldungswarteschlangen-Systems finden Sie unter [Meldungswarteschlangen - Übersicht](https://developer.adobe.com/commerce/php/development/components/message-queues/). Wenn Sie die Bulk API mit Adobe Commerce verwenden, verwendet die Systemkonfiguration für die Nachrichtenwarteschlange standardmäßig [!DNL RabbitMQ] als Nachrichtenbroker. Weitere Informationen [ Sie unter ](../../configuration/cli/start-message-queues.md) starten.
 
 ## Installieren von [!DNL RabbitMQ] auf Ubuntu
 
@@ -47,7 +56,7 @@ Siehe [Installieren auf Debian/Ubuntu](https://www.rabbitmq.com/install-debian.h
 
 [!DNL RabbitMQ] wurde mit der Programmiersprache Erlang geschrieben, die auf dem gleichen System wie [!DNL RabbitMQ] installiert werden muss.
 
-Weitere Informationen finden [&#x200B; unter &#x200B;](https://www.erlang-solutions.com/downloads/) Installation.
+Weitere Informationen finden [ unter ](https://www.erlang-solutions.com/downloads/) Installation.
 
 Siehe die [[!DNL RabbitMQ]/Erlang-Versionsmatrix](https://www.rabbitmq.com/which-erlang.html) um die richtige Version zu installieren.
 
@@ -57,7 +66,7 @@ Der [!DNL RabbitMQ]-Server ist in CentOS enthalten, aber die Version ist oft alt
 
 Die neueste unterstützte Version finden Sie auf der [!DNL RabbitMQ]-Installationsseite . Adobe Commerce 2.3 und 2.4 unterstützen [!DNL RabbitMQ] 3.8.x.
 
-Weitere Informationen finden [&#x200B; unter „Installieren unter RPM-](https://www.rabbitmq.com/install-rpm.html) Linux“.
+Weitere Informationen finden [ unter „Installieren unter RPM-](https://www.rabbitmq.com/install-rpm.html) Linux“.
 
 ## Konfigurieren von [!DNL RabbitMQ]
 
@@ -140,4 +149,4 @@ Um die Unterstützung für SSL zu konfigurieren, bearbeiten Sie die `ssl`- und `
 
 ## Starten der Nachrichtenwarteschlangen-Verbraucher
 
-Nachdem Sie Adobe Commerce und [!DNL RabbitMQ] verbunden haben, müssen Sie die Nachrichtenwarteschlangen-Verbraucher starten. Weitere [&#x200B; finden Sie unter &quot;](../../configuration/cli/start-message-queues.md) konfigurieren“.
+Nachdem Sie Adobe Commerce und [!DNL RabbitMQ] verbunden haben, müssen Sie die Nachrichtenwarteschlangen-Verbraucher starten. Weitere [ finden Sie unter &quot;](../../configuration/cli/start-message-queues.md) konfigurieren“.

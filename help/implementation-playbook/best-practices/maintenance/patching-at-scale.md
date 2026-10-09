@@ -5,16 +5,26 @@ role: Developer
 feature: Best Practices
 badge: label="Beiträge von Tony Evers, Sr. Technical Architect, Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Beiträge von Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die skalierte Verteilung von Adobe Commerce-Patches
 
-Wenn Sie mehrere Adobe Commerce-Installationen verwalten[&#x200B; kann &#x200B;](../../../upgrade/patches/apply.md)Patchen“ ein komplexer Prozess sein. _Zentralisiertes Patchen_ ist eine Best Practice für Unternehmen. Damit können Sie die richtigen Patches auf alle Ihre Adobe Commerce-Installationen anwenden. In diesem Abschnitt wird erläutert, wie Sie eine zentralisierte Patch-Verteilung für alle Adobe Commerce-Typen [Patches) &#x200B;](../../../upgrade/patches/overview.md).
+Wenn Sie mehrere Adobe Commerce-Installationen verwalten[ kann ](../../../upgrade/patches/apply.md)Patchen“ ein komplexer Prozess sein. _Zentralisiertes Patchen_ ist eine Best Practice für Unternehmen. Damit können Sie die richtigen Patches auf alle Ihre Adobe Commerce-Installationen anwenden. In diesem Abschnitt wird erläutert, wie Sie eine zentralisierte Patch-Verteilung für alle Adobe Commerce-Typen [Patches) ](../../../upgrade/patches/overview.md).
 
 >[!NOTE]
 >
@@ -22,7 +32,7 @@ Wenn Sie mehrere Adobe Commerce-Installationen verwalten[&#x200B; kann &#x200B;]
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -33,8 +43,8 @@ Da es viele verschiedene Arten von Patches und viele Möglichkeiten gibt, sie an
 
 1. **Sicherheits** Patches sind Teil der statischen Code-Basis einer Adobe Commerce-Version.
 1. **Composer Patches** durch `composer install` und `composer update` Plugins wie [cweagans/composer-patches](https://packagist.org/packages/cweagans/composer-patches).
-1. Alle **erforderlichen Patches** im Paket [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) enthalten.
-1. Ausgewählte **Qualitäts-Patches** in der [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md) enthalten.
+1. Alle **erforderlichen Patches** im Paket [Cloud-Patches für Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) enthalten.
+1. Ausgewählte **Qualitäts-Patches** in der [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md) enthalten.
 1. **Benutzerdefinierte Patches** und Adobe Commerce-Support-Patches im `/m2-hotfixes`-Verzeichnis in alphabetischer Reihenfolge nach Patch-Namen.
 
    >[!IMPORTANT]
@@ -148,7 +158,7 @@ So erstellen Sie das `centralized-patcher` Komponentenpaket:
    ```
 
 
-Das Attribut `quality-patches` im vorherigen Codebeispiel enthält als Beispiel zwei Patches aus [vollständigen &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)).  Diese Qualitäts-Patches werden mit dem Befehl `vendor/bin/magento-patches apply` auf jedem Projekt installiert, für das das `centralized-patcher`-Paket erforderlich ist.
+Das Attribut `quality-patches` im vorherigen Codebeispiel enthält als Beispiel zwei Patches aus [vollständigen ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)).  Diese Qualitäts-Patches werden mit dem Befehl `vendor/bin/magento-patches apply` auf jedem Projekt installiert, für das das `centralized-patcher`-Paket erforderlich ist.
 
 Zu Testzwecken können Sie einen Beispiel-Patch erstellen (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -365,7 +375,7 @@ Wie bei Adobe Commerce in der Cloud-Infrastruktur wird in diesem Artikel davon a
 
 Auf diese Weise können Sie alle Ihre Patches für alle Ihre Installationen zentral verwalten und die Sicherheit und Stabilität Ihrer Adobe Commerce-Stores besser gewährleisten. Verwenden Sie die folgenden Methoden, um den Patch-Status zu überprüfen:
 
-- [Cloud-Infrastrukturprojekte](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
+- [Cloud-Infrastrukturprojekte](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [On-Premise-Projekte](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Code-Beispiele

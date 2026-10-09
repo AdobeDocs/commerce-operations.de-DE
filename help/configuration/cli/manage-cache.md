@@ -2,13 +2,22 @@
 title: Cache verwalten
 description: Erfahren Sie, wie Sie Cache-Typen verwalten und den Cache-Status mithilfe von Adobe Commerce-CLI-Befehlen anzeigen. Entdecken Sie Methoden zur Cache-Verwaltung und -Optimierung.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # Cache verwalten
 
 {{file-system-owner}}
@@ -20,7 +29,7 @@ Sie können das Cache-Management-System von Adobe Commerce verwenden, um die Lei
 >[!NOTE]
 >
 >
->Commerce-Standortadministratoren können den Cache über das Tool Cache Management System von Admin aus verwalten. Siehe [Cache-Verwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management) im _Admin-_.
+>Commerce-Standortadministratoren können den Cache über das Tool Cache Management System von Admin aus verwalten. Siehe [Cache-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) im _Admin-_.
 
 
 ## Cache-Status anzeigen
@@ -59,7 +68,7 @@ Current status:
 
 >[!TIP]
 >
->Eine ausführliche Beschreibung der von Adobe Commerce unterstützten Standard-Cache-Typen finden Sie unter [Caches](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management#caches) im _Admin-_.
+>Eine ausführliche Beschreibung der von Adobe Commerce unterstützten Standard-Cache-Typen finden Sie unter [Caches](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) im _Admin-_.
 
 
 ## Cache-Typen aktivieren oder deaktivieren
@@ -68,7 +77,7 @@ Mit diesem Befehl können Sie alle oder nur die angegebenen Cache-Typen aktivier
 
 >[!INFO]
 >
->Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Zuvor müssen Sie `<magento_root>/app/etc/env.php` manuell vom [Dateisystembesitzer“ überschreibbar &#x200B;](../../installation/prerequisites/file-system/overview.md).
+>Ab Version 2.2 können Sie Cache-Typen nur über die Befehlszeile aktivieren oder deaktivieren, während Sie Commerce im Produktionsmodus ausführen. Wenn Sie Commerce im Entwicklermodus ausführen, können Sie Cache-Typen über die Befehlszeile oder manuell aktivieren oder deaktivieren. Zuvor müssen Sie `<magento_root>/app/etc/env.php` manuell vom [Dateisystembesitzer“ überschreibbar ](../../installation/prerequisites/file-system/overview.md).
 
 Sie können Cache-Typen (auch als __ oder _Aktualisieren_ bezeichnet) entweder über die Befehlszeile oder über Admin bereinigen.
 
@@ -112,7 +121,7 @@ Beispielergebnis:
 
 >[!INFO]
 >
->Ab Version 2.3.4 speichert Commerce alle EAV-Systemattribute im Zwischenspeicher, sobald sie abgerufen werden. Das Caching von EAV-Attributen auf diese Weise verbessert die Leistung, da es die Anzahl der INSERT/SELECT-Anfragen an die DB verringert. Es erhöht jedoch auch die Cache-Netzwerkgröße. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie den `bin/magento config:set dev/caching/cache_user_defined_attributes 1`-Befehl ausführen. Im Entwicklermodus können Sie dies auch von der Admin aus tun[&#x200B; &#x200B;](../bootstrap/application-modes.md) indem Sie **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Cache User Defined Attributes** auf **Ja** einstellen.
+>Ab Version 2.3.4 speichert Commerce alle EAV-Systemattribute im Zwischenspeicher, sobald sie abgerufen werden. Das Caching von EAV-Attributen auf diese Weise verbessert die Leistung, da es die Anzahl der INSERT/SELECT-Anfragen an die DB verringert. Es erhöht jedoch auch die Cache-Netzwerkgröße. Entwickler können benutzerdefinierte EAV-Attribute zwischenspeichern, indem sie den `bin/magento config:set dev/caching/cache_user_defined_attributes 1`-Befehl ausführen. Im Entwicklermodus können Sie dies auch von der Admin aus tun[ ](../bootstrap/application-modes.md) indem Sie **Stores** > Einstellungen **Konfiguration** > **Erweitert** > **Entwickler** > **Caching-Einstellungen** > **Cache User Defined Attributes** auf **Ja** einstellen.
 
 ## Cache-Typen bereinigen und leeren
 
@@ -173,4 +182,4 @@ Beispielergebnis:
 
 >[!TIP]
 >
->Sie können Cache-Typen auch in Admin bereinigen und leeren. Navigieren Sie **System** > **Tools** > **Cache-Verwaltung**. **Leeren des Cache** entspricht `bin/magento cache:flush`. **Leeren des Magento** Cache entspricht `bin/magento cache:clean`.
+>Sie können Cache-Typen auch in Admin bereinigen und leeren. Navigieren Sie **System** > **Tools** > **Cache-Verwaltung**. **Leeren des Cache** entspricht `bin/magento cache:flush`. **Magento-Cache leeren** entspricht `bin/magento cache:clean`.

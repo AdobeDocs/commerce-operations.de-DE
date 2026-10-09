@@ -2,13 +2,22 @@
 title: Einrichtung des Produktionssystems
 description: Erfahren Sie, wie Sie ein Produktionssystem für das Commerce-Programm einrichten.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
-
 ---
-
 # Einrichtung des Produktionssystems
 
 Sie können ein Produktionssystem haben. Folgendes muss alle zutreffen:
@@ -16,13 +25,13 @@ Sie können ein Produktionssystem haben. Folgendes muss alle zutreffen:
 - Der gesamte Commerce-Code befindet sich in der Quell-Code-Verwaltung im selben Repository wie die Entwicklungs- und Build-Systeme
 - Stellen Sie sicher, dass Folgendes in _Quell_ Code-Verwaltung enthalten ist:
 
-   - `app/etc/config.php`
-   - `generated` (und Unterverzeichnisse)
-   - `pub/media`
-   - `pub/media/wysiwyg` (und Unterverzeichnisse)
-   - `pub/static` (und Unterverzeichnisse)
+  - `app/etc/config.php`
+  - `generated` (und Unterverzeichnisse)
+  - `pub/media`
+  - `pub/media/wysiwyg` (und Unterverzeichnisse)
+  - `pub/static` (und Unterverzeichnisse)
 
-- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus“ &#x200B;](../bootstrap/application-modes.md#production-mode)
+- Commerce 2.2 oder höher muss installiert und für den [Produktionsmodus“ ](../bootstrap/application-modes.md#production-mode)
 - Für sie sind der Besitz und die Berechtigungen des Dateisystems festgelegt, wie unter [Voraussetzung für Ihre Entwicklungs-, Build- und Produktionssysteme](../deployment/prerequisites.md) erläutert.
 
 ## Einrichten einer Produktionsmaschine
@@ -40,7 +49,7 @@ So richten Sie eine Produktionsmaschine ein:
 
    Erstellen Sie `auth.json` in diesem Verzeichnis.
 
-   `auth.json` müssen Ihre [Authentifizierungsschlüssel“ &#x200B;](../../installation/prerequisites/authentication-keys.md).
+   `auth.json` müssen Ihre [Authentifizierungsschlüssel“ ](../../installation/prerequisites/authentication-keys.md).
 
    Es folgt ein Beispiel:
 
@@ -68,7 +77,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mithilfe des `magento config:sensi
 
 So legen Sie vertrauliche Werte fest:
 
-1. Suchen Sie einen Wert, der mithilfe der [Referenz für vertrauliche Werte“ festgelegt &#x200B;](../reference/config-reference-sens.md) soll.
+1. Suchen Sie einen Wert, der mithilfe der [Referenz für vertrauliche Werte“ festgelegt ](../reference/config-reference-sens.md) soll.
 1. Notieren Sie den Konfigurationspfad für die Einstellung .
 1. Melden Sie sich beim Produktionssystem als Eigentümer an oder wechseln Sie zum Dateisystembesitzer.
 1. Wechseln Sie in das Commerce-Installationsverzeichnis.

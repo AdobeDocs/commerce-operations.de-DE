@@ -4,13 +4,23 @@ description: Erfahren Sie, wie Sie Ihre Adobe Commerce im Cloud-Infrastrukturtec
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
-
 ---
-
 # Best Practices für Services aktualisieren
 
 Dieser Artikel enthält Empfehlungen dazu, wie Sie Ihre Adobe Commerce im Cloud-Infrastrukturtechnologie-Stack auf dem neuesten Stand halten können, und enthält Links zu hilfreichen Ressourcen.
@@ -23,9 +33,9 @@ Adobe Commerce auf Cloud-Infrastruktur 2.4.x und höher
 
 Aktualisieren Sie die von Adobe Commerce verwendeten Services und Komponenten, bevor sie das Ende ihres Lebenszyklus erreichen oder kurz davor sind. Dies hilft, mit der PCI-Compliance Schritt zu halten und Sicherheitslücken zu schließen.
 
-Kunden mit Starter-Plänen können Service-Upgrades selbst durchführen. Einzelheiten dazu finden [&#x200B; unter &quot;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) ändern“.
+Kunden mit Starter-Plänen können Service-Upgrades selbst durchführen. Einzelheiten dazu finden [ unter &quot;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) ändern“.
 
-Kunden mit Pro-Plänen können Services-Upgrades nur selbst in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242) bereitstellen. Für Service-Upgrades in der Produktion müssen Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um das Upgrade anzufordern.
+Kunden mit Pro-Plänen können Services-Upgrades nur selbst in ihrer [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) bereitstellen. Für Service-Upgrades in der Produktion müssen Sie [ein Support-Ticket einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) um das Upgrade anzufordern.
 
 >[!WARNING]
 >

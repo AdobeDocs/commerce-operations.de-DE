@@ -3,13 +3,27 @@ title: Sicheres Cron PHP
 description: Erfahren Sie, wie Sie den Browser-Zugriff auf pub/cron.php einschränken und geplante Adobe Commerce-Aufgaben vor nicht autorisierter oder böswilliger Cron-Ausführung schützen können.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '975'
 ht-degree: 1%
-
 ---
-
 # Sicheres Cron PHP
 
 In diesem Thema wird beschrieben, wie Sie `pub/cron.php` sichern, um zu verhindern, dass sie bei einem böswilligen Exploit verwendet wird. Wenn Sie Cron nicht schützen, kann jeder Benutzer Cron ausführen, um Ihre Commerce-Anwendung anzugreifen.
@@ -23,7 +37,7 @@ Der Cron-Auftrag führt mehrere geplante Aufgaben aus und ist ein wichtiger Teil
 
 >[!INFO]
 >
->Weitere Informationen [&#x200B; Cron-Gruppen finden Sie &#x200B;](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) „Konfigurieren und Ausführen von Cron“.
+>Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md#run-cron-from-the-command-line) „Konfigurieren und Ausführen von Cron“.
 
 Sie können einen Cron-Auftrag wie folgt ausführen:
 
@@ -311,4 +325,4 @@ https://magento.example.com/magento2/pub/cron.php?group=index
 
 >[!INFO]
 >
->Sie müssen Cron zweimal ausführen: zuerst um Aufgaben zu finden, die ausgeführt werden sollen, und dann erneut, um die Aufgaben selbst auszuführen. Weitere Informationen [&#x200B; Cron-Gruppen finden Sie &#x200B;](../cli/configure-cron-jobs.md) „Konfigurieren und Ausführen von Cron“.
+>Sie müssen Cron zweimal ausführen: zuerst um Aufgaben zu finden, die ausgeführt werden sollen, und dann erneut, um die Aufgaben selbst auszuführen. Weitere Informationen [ Cron-Gruppen finden Sie ](../cli/configure-cron-jobs.md) „Konfigurieren und Ausführen von Cron“.

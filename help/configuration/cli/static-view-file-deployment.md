@@ -2,18 +2,27 @@
 title: Statische Ansichtsdateien bereitstellen
 description: Erfahren Sie, wie Sie statische Ansichtsdateien im Adobe Commerce-Dateisystem im Produktionsmodus bereitstellen. Entdecken Sie Bereitstellungsbefehle und Optimierungstechniken.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 0%
-
 ---
-
 # Statische Ansichtsdateien bereitstellen
 
 {{file-system-owner}}
 
-Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für den [Produktionsmodus) &#x200B;](../bootstrap/application-modes.md#production-mode) ist.
+Mit dem Bereitstellungsbefehl für statische Ansichtsdateien können Sie statische Dateien in das Commerce-Dateisystem schreiben, wenn die Commerce-Software für den [Produktionsmodus) ](../bootstrap/application-modes.md#production-mode) ist.
 
 Der Begriff _statische Ansichtsdatei_ bezieht sich auf Folgendes:
 
@@ -31,11 +40,11 @@ Sie müssen statische Ansichtsdateien manuell unter Verwendung des in diesem The
 
 >[!WARNING]
 >
->_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layout-Elemente usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie haben verschiedene Möglichkeiten, generierte statische Ansichtsdateien zu bereinigen. Weitere Informationen finden [&#x200B; unter „Bereinigen des Cache für statische &#x200B;](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache)&quot;.
+>_Nur Entwicklermodus_: Wenn Sie ein neues Modul installieren oder aktivieren, werden möglicherweise neue JavaScript-, CSS-, Layout-Elemente usw. geladen. Um Probleme mit statischen Dateien zu vermeiden, müssen Sie die alten Dateien bereinigen, um sicherzustellen, dass Sie alle Änderungen für das neue Modul erhalten. Sie haben verschiedene Möglichkeiten, generierte statische Ansichtsdateien zu bereinigen. Weitere Informationen finden [ unter „Bereinigen des Cache für statische ](https://developer.adobe.com/commerce/frontend-core/guide/caching#clean-static-files-cache)&quot;.
 
 **Bereitstellen von statischen Ansichtsdateien**:
 
-1. Melden Sie sich beim Commerce-Server an oder [&#x200B; Sie zum Dateisystembesitzer &#x200B;](../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich beim Commerce-Server an oder [ Sie zum Dateisystembesitzer ](../../installation/prerequisites/file-system/overview.md).
 1. Löschen Sie den Inhalt von `<magento_root>/pub/static` mit Ausnahme der `.htaccess`. Diese Datei nicht löschen.
 1. Führen Sie das Bereitstellungs-Tool für statische Ansichtsdateien `<magento_root>/bin/magento setup:static-content:deploy` aus.
 
@@ -171,7 +180,7 @@ ERROR: You need to install the Commerce application before running this utility.
 Führen Sie dazu folgende Schritte aus:
 
 1. Installieren Sie die Commerce-Software über [Befehlszeile](../../installation/composer.md).
-1. Melden Sie sich beim Anwendungsserver als Eigentümer des Dateisystems an oder [wechseln Sie &#x200B;](../../installation/prerequisites/file-system/overview.md) zu diesem.
+1. Melden Sie sich beim Anwendungsserver als Eigentümer des Dateisystems an oder [wechseln Sie ](../../installation/prerequisites/file-system/overview.md) zu diesem.
 1. Löschen Sie den Inhalt `<app_root>/pub/static` Verzeichnisses mit Ausnahme der `.htaccess`. Diese Datei nicht löschen.
 1. Statische Ansichtsdateien bereitstellen: `bin/magento setup:static-content:deploy`
 

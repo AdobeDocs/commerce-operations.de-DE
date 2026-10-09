@@ -1,15 +1,24 @@
 ---
 title: '[!DNL Data Migration Tool] technische Spezifikation'
-description: Erfahren Sie mehr über die Implementierungsdetails von  [!DNL Data Migration Tool]  und wie Sie sie bei der Übertragung von Daten zwischen Magento 1 und Magento 2 erweitern können.
+description: Erfahren Sie mehr über die Implementierungsdetails der [!DNL Data Migration Tool] und wie Sie sie bei der Übertragung von Daten zwischen Magento 1 und Magento 2 erweitern können.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2114'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Migration Tool] technische Spezifikation
 
 In diesem Abschnitt werden [!DNL Data Migration Tool] Implementierungsdetails und die Erweiterung ihrer Funktionalität beschrieben.
@@ -20,7 +29,7 @@ Informationen zum Zugriff auf den [!DNL Data Migration Tool]-Quell-Code finden S
 
 ## Systemanforderungen
 
-Die [Systemanforderungen](../../installation/system-requirements.md) für die [!DNL Data Migration Tool] entsprechen denen für Magento 2.
+Die [Systemanforderungen](../../installation/system-requirements.md) für die [!DNL Data Migration Tool] sind dieselben wie für Magento 2.
 
 ## Interne Struktur
 
@@ -162,7 +171,7 @@ Die Konfigurationsdatei weist die folgende Struktur auf:
 
 * options - Liste der Parameter. Enthält sowohl obligatorische (map_file, settings_map_file, bulk_size) als auch optionale (custom_option, resource_adapter_class_name, prefix_source, prefix_dest, log_file) Parameter
 
-Option „Präfix ändern“, falls Magento mit Präfix in Datenbanktabellen installiert wurde Sie kann für Magento 1- und Magento 2-Datenbanken festgelegt werden. Verwenden Sie die Konfigurationsoptionen „source_prefix“ und „dest_prefix“ entsprechend.
+Ändern Sie die Option Präfix , falls Magento mit Präfix in Datenbanktabellen installiert wurde. Es kann für die Datenbanken Magento 1 und Magento 2 festgelegt werden. Verwenden Sie die Konfigurationsoptionen „source_prefix“ und „dest_prefix“ entsprechend.
 
 Auf die Konfigurationsdaten kann mit der `\Migration\Config`-Klasse zugegriffen werden.
 
@@ -171,10 +180,10 @@ Auf die Konfigurationsdaten kann mit der `\Migration\Config`-Klasse zugegriffen 
 | Dokument | Feld |
 |---|---|
 | `step` | Knoten der zweiten Ebene im Knoten Schritte . Die Beschreibung des relevanten Schritts muss im Attribut `title` angegeben werden. |
-| `integrity` | Gibt die PHP-Klasse an, die für die Integritätsprüfung verantwortlich ist. Vergleicht die Namen, Typen und anderen Informationen der Tabellenfelder, um die Kompatibilität zwischen Magento 1- und 2-Datenstrukturen zu überprüfen. |
-| `data` | Gibt die PHP-Klasse an, die für die Datenüberprüfung verantwortlich ist. Überträgt die Daten tabellarisch von Magento 1 nach Magento 2. |
+| `integrity` | Gibt die PHP-Klasse an, die für die Integritätsprüfung verantwortlich ist. Vergleicht die Namen, Typen und anderen Informationen der Tabellenfelder, um die Kompatibilität zwischen den Datenstrukturen von Magento 1 und 2 zu überprüfen. |
+| `data` | Gibt die PHP-Klasse an, die für die Datenüberprüfung verantwortlich ist. Überträgt die Daten Tabelle für Tabelle von Magento 1 an Magento 2. |
 | `volume` | Gibt die PHP-Klasse an, die für die Lautstärkeprüfung verantwortlich ist. Vergleicht die Anzahl der Datensätze zwischen Tabellen, um zu überprüfen, ob die Übertragung erfolgreich war. |
-| `delta` | Gibt die PHP-Klasse an, die für die Delta-Prüfung verantwortlich ist. Überträgt das Delta von Magento 1 nach der vollständigen Datenmigration an Magento 2. |
+| `delta` | Gibt die PHP-Klasse an, die für die Delta-Prüfung verantwortlich ist. Überträgt das Delta von Magento 1 zu Magento 2 nach der vollständigen Datenmigration. |
 
 ## Source-Datenbankinformationsattribute
 
@@ -182,9 +191,9 @@ Auf die Konfigurationsdaten kann mit der `\Migration\Config`-Klasse zugegriffen 
 |---|---|---|
 | `name` | Datenbankname des Magento 1-Servers. | Ja |
 | `host` | Host-IP-Adresse des Magento 1-Servers | Ja |
-| `port` | Port-Nummer des Magento 1-Servers. | Nein |
-| `user` | Benutzername des Magento 1-Datenbankservers. | Ja |
-| `password` | Kennwort für den Magento 1-Datenbankserver. | Ja |
+| `port` | Portnummer des Magento 1-Servers. | Nein |
+| `user` | Benutzername des Magento 1-Datenbank-Servers. | Ja |
+| `password` | Kennwort für den Magento 1-Datenbank-Server. | Ja |
 | `ssl_ca` | Pfad zur Datei der SSL-Zertifizierungsstelle. | Nein |
 | `ssl_cert` | Pfad zur SSL-Zertifikatdatei. | Nein |
 | `ssl_key` | Pfad zur SSL-Schlüsseldatei. | Nein |
@@ -195,8 +204,8 @@ Auf die Konfigurationsdaten kann mit der `\Migration\Config`-Klasse zugegriffen 
 |---|---|---|
 | `name` | Datenbankname des Magento 2-Servers. | Ja |
 | `host` | Host-IP-Adresse des Magento 2-Servers | Ja |
-| `port` | Port-Nummer des Magento 2-Servers | Nein |
-| `user` | Benutzername des Magento 2-Datenbankservers. | Ja |
+| `port` | Portnummer des Magento 2-Servers. | Nein |
+| `user` | Benutzername des Magento 2-Datenbank-Servers. | Ja |
 | `password` | Kennwort für den Magento 2-Datenbankserver. | Ja |
 | `ssl_ca` | Pfad zur Datei der SSL-Zertifizierungsstelle. | Nein |
 | `ssl_cert` | Pfad zur SSL-Zertifikatdatei. | Nein |
@@ -279,7 +288,7 @@ $this->progress->finish();
 
 ### Integritätsprüfung
 
-In jedem Schritt muss überprüft werden, ob die Struktur der Datenquelle (standardmäßig Magento 1) und die Struktur des Datenziels (Magento 2) kompatibel sind. Andernfalls wird ein Fehler mit Entitäten angezeigt, die nicht kompatibel sind. Wenn Felder unterschiedliche Datentypen haben (dasselbe Feld hat den Dezimaldatentyp in Magento 1 und eine Ganzzahl in Magento 2), wird eine Warnmeldung angezeigt (sofern sie nicht in der Zuordnungsdatei behandelt wurde).
+In jedem Schritt muss überprüft werden, ob die Struktur der Datenquelle (standardmäßig Magento 1) und die Struktur des Datenziels (Magento 2) kompatibel sind. Andernfalls wird ein Fehler mit Entitäten angezeigt, die nicht kompatibel sind. Wenn Felder unterschiedliche Datentypen haben (dasselbe Feld hat den Dezimaldatentyp in Magento 1 und eine Ganzzahl in Magento 2), wird eine Warnmeldung angezeigt (außer wenn sie in der Zuordnungsdatei behandelt wurde).
 
 ### Datenübertragung
 
@@ -335,11 +344,11 @@ Alle Speicherkonfigurationen behalten ihre Daten in der Tabelle core_config_data
 
 Unter dem Knoten `<key>` gibt es Regeln, die mit der Spalte „Pfad“ in der `core_config_data`-Tabelle funktionieren. `<ignore>` Regeln verhindern, dass das Tool einige Einstellungen überträgt. In diesem Knoten können Platzhalter verwendet werden. Alle anderen Einstellungen, die nicht im Knoten `<ignore>` aufgeführt sind, werden migriert. Wenn sich der Pfad zu einer Einstellung in Magento 2 geändert hat, sollte er `//key/rename` Knoten hinzugefügt werden, wobei der alte Pfad im Knoten und `//key/rename/path` neue Pfad im Knoten `//key/rename/to`.
 
-Unter dem Knoten `<value>` gibt es Regeln, die mit der Spalte „Wert“ in der `core_config_data`-Tabelle funktionieren. Diese Regeln zielen darauf ab, den Wert von Einstellungen durch Handler (Klassen, die `Migration\Handler\HandlerInterface` implementieren) umzuwandeln und für Magento 2 anzupassen.
+Unter dem Knoten `<value>` gibt es Regeln, die mit der Spalte „Wert“ in der `core_config_data`-Tabelle funktionieren. Diese Regeln zielen darauf ab, den Wert von Einstellungen durch Handler (Klassen, die `Migration\Handler\HandlerInterface` implementieren) zu transformieren und für Magento 2 anzupassen.
 
 ### Datenmigrationsmodus
 
-In diesem Modus werden die meisten Daten migriert. Vor der Datenmigration werden für jeden Schritt die Schritte zur Integritätsprüfung ausgeführt. Wenn die Integritätsprüfung erfolgreich war, installiert die [!DNL Data Migration Tool] Deltalogtabellen (mit Präfix `m2_cl_*`) und entsprechende Trigger in der Magento 1-Datenbank und führt die Datenmigrationsphase der folgenden Schritte aus. Wenn die Migration fehlerfrei abgeschlossen wird, prüft das Volume die Datenkonsistenz. Wenn Sie den Live Store migrieren, kann eine Warnmeldung angezeigt werden. Keine Sorge, die Delta-Migration übernimmt diese inkrementellen Daten. Die wertvollsten Migrationsschritte sind Zuordnung, URL-Umschreibung und EAV.
+In diesem Modus werden die meisten Daten migriert. Vor der Datenmigration werden für jeden Schritt die Schritte zur Integritätsprüfung ausgeführt. Wenn die Integritätsprüfung erfolgreich war, installiert die [!DNL Data Migration Tool] Deltalogtabellen (mit Präfix `m2_cl_*`) und entsprechende Trigger in der Magento 1-Datenbank und führt die Datenmigrationsphase von Schritten aus. Wenn die Migration fehlerfrei abgeschlossen wird, prüft das Volume die Datenkonsistenz. Wenn Sie den Live Store migrieren, kann eine Warnmeldung angezeigt werden. Keine Sorge, die Delta-Migration übernimmt diese inkrementellen Daten. Die wertvollsten Migrationsschritte sind Zuordnung, URL-Umschreibung und EAV.
 
 #### Schritt zuordnen
 
@@ -435,7 +444,7 @@ Um Dokumente mit ähnlichen Teilen (`document_name_1`, `document_name_2`) zu ign
 
 #### URL-Neuschreibungsschritt
 
-Dieser Schritt ist komplex, da in Magento 1 viele verschiedene Algorithmen entwickelt wurden, die nicht mit Magento 2 kompatibel sind. Für verschiedene Versionen von Magento 1 kann es verschiedene Algorithmen geben. Daher gibt es unter dem Ordner Step/UrlRewrite Klassen, die für einige bestimmte Versionen von Magento entwickelt wurden, und Migration\Step\UrlRewrite\Version191to2000 ist eine davon. Es kann URL-Umschreibungsdaten von Magento 1.9.1 an Magento 2 übertragen.
+Dieser Schritt ist komplex, da in Magento 1 viele verschiedene Algorithmen entwickelt wurden, die nicht mit Magento 2 kompatibel sind. Für verschiedene Versionen von Magento 1 kann es verschiedene Algorithmen geben. So gibt es unter dem Ordner Step/UrlRewrite Klassen, die für einige bestimmte Versionen von Magento entwickelt wurden, und Migration\Step\UrlRewrite\Version191to2000 ist eine davon. Es kann URL-Umschreibungsdaten von Magento 1.9.1 zu Magento 2 übertragen.
 
 #### EAV-Schritt
 
@@ -457,7 +466,7 @@ Nach der Hauptmigration konnten zusätzliche Daten zur Magento 1-Datenbank hinzu
 
 ## Datenquellen
 
-Um zu den Datenquellen von Magento 1 und Magento 2 zu gelangen und mit den zugehörigen Daten (Auswählen, Aktualisieren, Einfügen, Löschen) zu arbeiten, gibt es viele -Klassen im Ressourcenordner. Migration\ResourceModel\Source und Migration\ResourceModel\Destination sind Hauptklassen. In allen Migrationsschritten wird sie zum Arbeiten mit Daten verwendet. Diese Daten sind in Klassen wie Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure usw. enthalten.
+Um zu den Datenquellen von Magento 1 und Magento 2 zu gelangen und mit seinen Daten zu arbeiten (auswählen, aktualisieren, einfügen, löschen), gibt es viele Klassen im Ressourcenordner. Migration\ResourceModel\Source und Migration\ResourceModel\Destination sind Hauptklassen. In allen Migrationsschritten wird sie zum Arbeiten mit Daten verwendet. Diese Daten sind in Klassen wie Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure usw. enthalten.
 
 Im Folgenden finden Sie ein Klassendiagramm für diese Klassen:
 
@@ -465,7 +474,7 @@ Im Folgenden finden Sie ein Klassendiagramm für diese Klassen:
 
 ## Protokollierung
 
-Um die Ausgabe des Migrationsprozesses zu implementieren und alle möglichen Ebenen zu steuern, wird PSR-Logger angewendet, der in Magento verwendet wird. `\Migration\Logger\Logger` Klasse wurde implementiert, um Protokollierungsfunktionen bereitzustellen. Um den Logger zu verwenden, sollten Sie ihn über die Injektion der Konstruktorabhängigkeit einfügen.
+Um die Ausgabe des Migrationsprozesses zu implementieren und alle möglichen Ebenen zu steuern, wird PSR-Logger, der in Magento verwendet wird, angewendet. `\Migration\Logger\Logger` Klasse wurde implementiert, um Protokollierungsfunktionen bereitzustellen. Um den Logger zu verwenden, sollten Sie ihn über die Injektion der Konstruktorabhängigkeit einfügen.
 
 ```php
 class SomeClass

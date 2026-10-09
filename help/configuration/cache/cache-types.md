@@ -13,6 +13,11 @@ product_v2:
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -21,10 +26,12 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -45,7 +52,7 @@ Einen Überblick über die Commerce-Caching-Architektur finden Sie unter [Übers
 
 >[!NOTE]
 >
->Verwenden Sie für Adobe Commerce in der Cloud[Infrastruktur die Cloud-Bereitstellungskonfiguration &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) im Cloud-Handbuch beschrieben. `app/etc/env.php` nicht direkt bearbeiten. Bereitstellungs-Tools generieren diese Datei und können manuelle Änderungen überschreiben.
+>Verwenden Sie für Adobe Commerce in der Cloud[Infrastruktur die Cloud-Bereitstellungskonfiguration ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) im Cloud-Handbuch beschrieben. `app/etc/env.php` nicht direkt bearbeiten. Bereitstellungs-Tools generieren diese Datei und können manuelle Änderungen überschreiben.
 
 ## Standard-Frontend verwenden
 
@@ -53,7 +60,7 @@ Commerce bietet ein standardmäßiges Frontend, das von allen Cache-Typen verwen
 
 In den meisten Fällen ist es nicht erforderlich, ein benutzerdefiniertes Frontend zu definieren. Wenn alle Cache-Typen dieselben Backend- und Backend-Optionen verwenden können, verwenden Sie das Standard-Frontend und konfigurieren Sie sein Backend. Siehe [Cache-Backend](cache-options.md)Optionen) für die Backend-spezifische Konfiguration.
 
-Für Adobe Commerce-Versionen vor 2.4.9 verwendet das Standard-Frontend die veraltete Zend-basierte Cache-Implementierung. Das `Magento\Framework\Cache\Core` Frontend erweitert `Zend_Cache_Core`. Adobe Commerce 2.4.9 und höher verwenden die moderne Symfony-Implementierung. Eine versionsspezifische Anleitung finden [&#x200B; unter &#x200B;](cache-options.md)Cache-Backend-Optionen“.
+Für Adobe Commerce-Versionen vor 2.4.9 verwendet das Standard-Frontend die veraltete Zend-basierte Cache-Implementierung. Das `Magento\Framework\Cache\Core` Frontend erweitert `Zend_Cache_Core`. Adobe Commerce 2.4.9 und höher verwenden die moderne Symfony-Implementierung. Eine versionsspezifische Anleitung finden [ unter ](cache-options.md)Cache-Backend-Optionen“.
 
 ## Definieren eines benutzerdefinierten Frontends
 

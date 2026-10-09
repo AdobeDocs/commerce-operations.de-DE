@@ -2,13 +2,22 @@
 title: Verwalten von Nachrichtenwarteschlangen
 description: Erfahren Sie, wie Sie Nachrichtenwarteschlangen über die Befehlszeile für Adobe Commerce verwalten können.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
-
 ---
-
 # Verwalten von Nachrichtenwarteschlangen
 
 Sie können Nachrichtenwarteschlangen über die Befehlszeile mithilfe von Cron-Aufträgen oder einem externen Prozessmanager verwalten, um sicherzustellen, dass Verbraucher Nachrichten abrufen. Dies gilt für alle unterstützten Nachrichtenbroker, einschließlich RabbitMQ (AMQP), Apache ActiveMQ Artemis (STOMP) und MySQL-Adapter.
@@ -35,7 +44,7 @@ Das folgende Beispiel zeigt die `crontab` für das Ausführen von Verbrauchern:
 >
 >Sie können ihn in den Konfigurationsoptionen Admin Stores > Einstellungen > Konfiguration > Erweitert > System > Cron für Gruppe: Verbraucher konfigurieren.
 >
->Weitere [&#x200B; zur Verwendung von `cron` mit Commerce finden &#x200B;](../cli/configure-cron-jobs.md) unter „Konfigurieren und Ausführen von“.
+>Weitere [ zur Verwendung von `cron` mit Commerce finden ](../cli/configure-cron-jobs.md) unter „Konfigurieren und Ausführen von“.
 
 Sie können auch einen Prozess-Manager wie [Supervisor](https://supervisord.readthedocs.io/en/latest/) verwenden, um den Status von Prozessen zu überwachen. Der Manager kann die Befehlszeile verwenden, um die Prozesse nach Bedarf neu zu starten.
 
@@ -49,7 +58,7 @@ Sie können auch einen Prozess-Manager wie [Supervisor](https://supervisord.read
 
 >[!INFO]
 >
->Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) den `consumers_runner` Cron-Auftrag.
+>Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#cron_consumers_runner) den `consumers_runner` Cron-Auftrag.
 
 ### Spezifische Konfiguration
 
@@ -78,11 +87,11 @@ Bearbeiten Sie die `/app/etc/env.php` Datei, um die Cron-Job-`consumers_runner` 
 
   >[!INFO]
   >
-  >Es wird nicht empfohlen, mehrere Verbraucher in einer von MySQL betriebenen Warteschlange auszuführen. Weitere Informationen [&#x200B; Wechsel zu AMQP (RabbitMQ) oder STOMP (ActiveMQ Artemis) finden Sie unter &#x200B;](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers)Ändern der Nachrichtenwarteschlange von MySQL zu externen Brokern).
+  >Es wird nicht empfohlen, mehrere Verbraucher in einer von MySQL betriebenen Warteschlange auszuführen. Weitere Informationen [ Wechsel zu AMQP (RabbitMQ) oder STOMP (ActiveMQ Artemis) finden Sie unter ](https://developer.adobe.com/commerce/php/development/components/message-queues/#change-message-queue-from-mysql-to-external-brokers)Ändern der Nachrichtenwarteschlange von MySQL zu externen Brokern).
 
   >[!INFO]
   >
-  >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages), wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
+  >Wenn Ihr Adobe Commerce-Store auf der Cloud-Plattform gehostet wird, konfigurieren Sie mit dem [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#consumers_wait_for_max_messages), wie Verbraucher Nachrichten aus der Nachrichtenwarteschlange verarbeiten.
 
   >[!NOTE]
   >

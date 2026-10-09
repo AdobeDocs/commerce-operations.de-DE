@@ -3,13 +3,27 @@ title: Split-Datenbank zurücksetzen
 description: Kehren Sie von einer veralteten Split-Datenbankimplementierung zu einer einzelnen Datenbankimplementierung zurück.
 feature: Configuration, Storage
 exl-id: 2ece24e0-1f85-445a-8e22-fb10611403ff
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
-
 ---
-
 # Aus Split-Datenbank zurücksetzen
 
 {{ee-only}}
@@ -65,7 +79,7 @@ In diesem Beispiel melden wir uns bei allen drei Datenbanken an, die auf demselb
 
 ## Überprüfen der Arbeit
 
-Um sicherzustellen, dass Ihre Einzeldatenbankimplementierung ordnungsgemäß funktioniert, führen Sie die folgenden Aufgaben aus und überprüfen Sie mithilfe eines Datenbank-Tools wie „phpMyAdmin[, dass den `magento_main` Datenbanktabellen Daten hinzugefügt &#x200B;](../../installation/prerequisites/optional-software.md#phpmyadmin):
+Um sicherzustellen, dass Ihre Einzeldatenbankimplementierung ordnungsgemäß funktioniert, führen Sie die folgenden Aufgaben aus und überprüfen Sie mithilfe eines Datenbank-Tools wie „phpMyAdmin[, dass den `magento_main` Datenbanktabellen Daten hinzugefügt ](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Stellen Sie sicher, dass Fremdschlüssel wiederhergestellt wurden. Beispielsweise den `QUOTE_STORE_ID_STORE_STORE_ID` Schlüssel in der `quote` Datenbanktabelle.
 1. Überprüfen Sie, ob Kunden Bestellungen in der Storefront aufgeben können.

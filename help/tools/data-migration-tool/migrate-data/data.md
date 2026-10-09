@@ -1,23 +1,32 @@
 ---
 title: Daten migrieren
-description: Erfahren Sie, wie Sie mit der Migration von Daten von Magento 1 zu Magento 2 mit dem [!DNL Data Migration Tool] beginnen.
+description: Erfahren Sie, wie Sie mit dem [!DNL Data Migration Tool] mit der Migration von Daten von Magento 1 zu Magento 2 beginnen.
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
-
 ---
-
 # Daten migrieren
 
 Bevor Sie beginnen, führen Sie die folgenden Schritte aus, um Folgendes vorzubereiten:
 
-1. Melden Sie sich bei Ihrem Anwendungs-Server [als „Dateisystembesitzer“ &#x200B;](../../../installation/prerequisites/file-system/overview.md).
+1. Melden Sie sich bei Ihrem Anwendungs-Server [als „Dateisystembesitzer“ ](../../../installation/prerequisites/file-system/overview.md).
 1. Wechseln Sie zum Installationsverzeichnis der Anwendung oder stellen Sie sicher, dass es zum `PATH` hinzugefügt wird.
 
-Weitere Informationen finden Sie [&#x200B; Abschnitt &#x200B;](overview.md#first-steps) Schritte .
+Weitere Informationen finden Sie [ Abschnitt ](overview.md#first-steps) Schritte .
 
 ## Ausführen des Datenmigrationsbefehls
 
@@ -105,7 +114,7 @@ Während der Ausführung meldet der [!DNL Data Migration Tool] möglicherweise I
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Weitere Informationen [&#x200B; Empfehlungen finden &#x200B;](https://support.magento.com/hc/en-us/articles/360033020451) im Abschnitt „Fehlerbehebung“ dieses Handbuchs.
+Weitere Informationen [ Empfehlungen finden ](https://support.magento.com/hc/en-us/articles/360033020451) im Abschnitt „Fehlerbehebung“ dieses Handbuchs.
 
 ## Nächster Migrationsschritt
 

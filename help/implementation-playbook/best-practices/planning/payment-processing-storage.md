@@ -4,24 +4,34 @@ description: Erfahren Sie, wie Sie Zahlungsdetails in Adobe Commerce sicher vera
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
-
 ---
-
 # Best Practices für Zahlungsverarbeitung und Speicherung
 
-Eines der Schlüsselprinzipien für die Aufrechterhaltung der [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=de) ist eine Strategie zur ordnungsgemäßen Verarbeitung und Speicherung von Kreditkartenzahlungen.
+Eines der Schlüsselprinzipien für die Aufrechterhaltung der [PCI-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) ist eine Strategie zur ordnungsgemäßen Verarbeitung und Speicherung von Kreditkartenzahlungen.
 
-Das Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und könnte einen Verstoß gegen Ihre Verpflichtungen als Händler gemäß dem Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen zum Modell der gemeinsamen Verantwortung und den Richtlinien für Händlerpflichten finden Sie im Handbuch zum Modell der gemeinsamen Verantwortung von Adobe Commerce [&#128279;](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
+Das Speichern von Karteninhaberdaten in Adobe Commerce ist **streng verboten** und könnte einen Verstoß gegen Ihre Verpflichtungen als Händler gemäß dem Payment Card Industry Data Security Standard (PCI-DSS) darstellen. Weitere Informationen zum Modell der gemeinsamen Verantwortung und den Richtlinien für Händlerpflichten finden Sie im Handbuch zum Modell der gemeinsamen Verantwortung von Adobe Commerce [](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) im Adobe Trust Center.
 
 Befolgen Sie die folgenden Best Practices, um sicherzustellen, dass Sie Zahlungsinformationen auf Ihrer eCommerce-Site ordnungsgemäß verarbeiten. Weitere Anleitungen zu Best Practices für die Sicherheit finden Sie unter [Sichern Ihrer Site und Infrastruktur](../launch/security-best-practices.md).
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 * Adobe Commerce auf Cloud-Infrastruktur
 * Adobe Commerce On-Premises
@@ -53,4 +63,4 @@ Die empfohlene Methode zur Verarbeitung von Karteninhaberdaten besteht darin, di
 
 ## Weitere Informationen
 
-Wenn Sie nach empfohlenen Zahlungslösungen von Adobe suchen, sollten Sie [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=de) in Betracht ziehen.
+Wenn Sie nach empfohlenen Zahlungslösungen von Adobe suchen, sollten Sie [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html) in Betracht ziehen.

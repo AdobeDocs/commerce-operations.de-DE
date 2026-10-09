@@ -2,13 +2,22 @@
 title: Übersicht über die Content Security-Richtlinie
 description: Erfahren Sie, wie Sie den Sicherheitszustand Ihres Adobe Commerce Stores mithilfe einer Content Security-Richtlinie verbessern können.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
-
 ---
-
 # Übersicht über die Content Security-Richtlinie
 
 Eine Content Security Policy (CSP) kann zusätzliche Schutzebenen für Adobe Commerce-Installationen bieten, indem sie Cross-Site Scripting (XSS) und damit verbundene Dateninjektionsangriffe erkennt und abwehrt. Dieser häufige Angriffsvektor funktioniert durch Einschleusen von bösartigem Inhalt, der fälschlicherweise behauptet, von der Website zu stammen. Nachdem der schadhafte Inhalt geladen und ausgeführt wurde, kann er die unbefugte Übertragung von Daten auslösen.

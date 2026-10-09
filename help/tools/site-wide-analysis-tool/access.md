@@ -1,19 +1,28 @@
 ---
-title: Wie greife ich auf zu [!DNL Site-Wide Analysis Tool]
+title: So greifen Sie auf [!DNL Site-Wide Analysis Tool] zu
 description: Erfahren Sie, wie Sie über Ihr Adobe Commerce-Admin-Bedienfeld auf das Dashboard des Site-Wide Analysis Tool zugreifen können. Entdecken Sie Benutzerberechtigungen und Rollenanforderungen.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
-
 ---
-
 # Zugreifen auf die [!DNL Site-Wide Analysis Tool]
 
 Sie können über die [!UICONTROL Admin Panel] Ihres Stores auf das [!DNL Site-Wide Analysis Tool]-Dashboard zugreifen.
 
-Der [!DNL Site-Wide Analysis Tool]-Service ist im [Produktionsmodus](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/developer-tools#operation-modes) für [!UICONTROL Admin] Benutzer mit der Berechtigung zum Zugriff auf [Rollenressourcen](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles) verfügbar.
+Der [!DNL Site-Wide Analysis Tool]-Service ist im [Produktionsmodus](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) für [!UICONTROL Admin] Benutzer mit der Berechtigung zum Zugriff auf [Rollenressourcen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) verfügbar.
 
 >[!NOTE]
 >
@@ -31,7 +40,7 @@ Der [!DNL Site-Wide Analysis Tool]-Service ist im [Produktionsmodus](https://exp
 
 ### Schritt 1: Berechtigungen überprüfen
 
-Vergewissern Sie sich, dass das [!UICONTROL Admin] Benutzerkonto über die Berechtigung verfügt, über die [zugewiesene Benutzerrolle](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/user-accounts/permissions-user-roles) auf die [!DNL Site-Wide Analysis Tool] zuzugreifen.
+Vergewissern Sie sich, dass das [!UICONTROL Admin] Benutzerkonto über die Berechtigung verfügt, über die [zugewiesene Benutzerrolle](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) auf die [!DNL Site-Wide Analysis Tool] zuzugreifen.
 
 >[!IMPORTANT]
 >
@@ -50,7 +59,7 @@ Gehen Sie für die benutzerdefinierte Rolle, die Zugriff [!DNL Site-Wide Analysi
 
 >[!NOTE]
 >
->Wenn Sie sich vergewissert haben, dass das Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] verfügt und der/die Benutzende beim Versuch, über die [!UICONTROL Admin] auf das Tool zuzugreifen, die Fehlermeldung 403 erhält, könnte für Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Das [!DNL Site-Wide Analysis Tool]-Dashboard wird NICHT unterstützt, wenn die HTTP-Authentifizierung aktiviert ist. Weitere Informationen zur Lösung dieses Problems finden Sie in unserem [Support-Artikel](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26852).
+>Wenn Sie sich vergewissert haben, dass das Benutzerkonto über die Berechtigung zum Zugriff auf die [!DNL Site-Wide Analysis Tool] verfügt und der/die Benutzende beim Versuch, über die [!UICONTROL Admin] auf das Tool zuzugreifen, die Fehlermeldung 403 erhält, könnte für Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur die HTTP-Zugriffssteuerung aktiviert sein. Das [!DNL Site-Wide Analysis Tool]-Dashboard wird NICHT unterstützt, wenn die HTTP-Authentifizierung aktiviert ist. Weitere Informationen zur Lösung dieses Problems finden Sie in unserem [Support-Artikel](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Schritt 2: [!DNL Site-Wide Analysis Tool]
 

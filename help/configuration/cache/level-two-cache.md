@@ -3,7 +3,7 @@ title: L2-Cache-Konfiguration zur Leistungsoptimierung
 description: Erfahren Sie, wie Sie den L2-Cache lokal in Adobe Commerce konfigurieren, um den Netzwerk-Traffic zu reduzieren und die Leistung zu verbessern. Vergleichen Sie die alte RemoteSynchronizedCache-Implementierung mit der modernen Symfony L2-Implementierung.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -17,6 +17,11 @@ feature_v2:
     internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
     internal-label: Architecture
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -25,12 +30,14 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: ea07c4a7e42988b2ede3511273261fa7d560b652
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1686'
 ht-degree: 0%
@@ -219,7 +226,7 @@ Verwenden Sie in Commerce ab Version 2.4.9 die Symfony L2-Cache-Implementierung 
 >
 >Konfigurieren Sie für diese Versionen Valley.
 >
->Wenn Sie `symfony_l2` für das L2-Caching unter Adobe Commerce 2.4.9 oder höher konfigurieren, müssen Sie Valkey für den Remote-Cache-Service verwenden. Siehe [Einrichten von &#x200B;](config-valkey.md).
+>Wenn Sie `symfony_l2` für das L2-Caching unter Adobe Commerce 2.4.9 oder höher konfigurieren, müssen Sie Valkey für den Remote-Cache-Service verwenden. Siehe [Einrichten von ](config-valkey.md).
 
 ### Migration von RemoteSynchronizedCache zu Symfony L2
 
@@ -231,13 +238,13 @@ Wenn Sie ein Upgrade einer On-Premise-Installation vom `RemoteSynchronizedCache`
 
 - **Komprimierung erfordert ein explizites Flag.** Wenn Sie `compression_lib` allein festlegen, wird die Komprimierung unter `symfony_l2` nicht aktiviert. Siehe [Backend-Optionen für Symfony L2-Cache](#backend-options-for-symfony-l2-cache) für die erforderliche `compress_data`.
 
-- **Bei manuell konfigurierten lokalen Bereitstellungen ist veralteter Cache nicht standardmäßig aktiviert.** `use_stale_cache` ist standardmäßig unter `symfony_l2` auf `false` gesetzt (siehe Tabelle [Backend-Optionen](#backend-options-for-symfony-l2-cache)). Wenn Ihre `RemoteSynchronizedCache`-Konfiguration das `stale_cache_enabled`-Frontend verwendet, müssen Sie es explizit mit dem Muster im [Symfony L2-Cache mit veraltetem Cache) &#x200B;](#symfony-l2-cache-with-stale-cache).
+- **Bei manuell konfigurierten lokalen Bereitstellungen ist veralteter Cache nicht standardmäßig aktiviert.** `use_stale_cache` ist standardmäßig unter `symfony_l2` auf `false` gesetzt (siehe Tabelle [Backend-Optionen](#backend-options-for-symfony-l2-cache)). Wenn Ihre `RemoteSynchronizedCache`-Konfiguration das `stale_cache_enabled`-Frontend verwendet, müssen Sie es explizit mit dem Muster im [Symfony L2-Cache mit veraltetem Cache) ](#symfony-l2-cache-with-stale-cache).
 
 >[!NOTE]
 >
 >In Adobe Commerce in Cloud-Umgebungen, in denen die Variable &quot;`VALKEY_BACKEND: symfony_l2`-Bereitstellung“ festgelegt ist, wird die vollständige L2-Konfiguration, einschließlich des `stale_cache_enabled` Frontend, automatisch von `ece-tools` generiert. Siehe [Konfigurieren des Symfony L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache)Cache für Cloud-spezifisches Verhalten.
 
-- **Redis ist kein unterstütztes Remote-Backend für `symfony_l2`.** Migrieren Sie im Rahmen dieser Änderung nach Valley. Siehe [Einrichten von &#x200B;](config-valkey.md).
+- **Redis ist kein unterstütztes Remote-Backend für `symfony_l2`.** Migrieren Sie im Rahmen dieser Änderung nach Valley. Siehe [Einrichten von ](config-valkey.md).
 
 ### Konfigurationsbeispiel mit Symfony L2-Cache
 

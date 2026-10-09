@@ -1,14 +1,23 @@
 ---
 title: Überblick über die [!DNL Upgrade Compatibility Tool]
-description: Erfahren Sie mehr über  [!DNL Upgrade Compatibility Tool]  und wie Sie damit Ihr Adobe Commerce-Projekt unterstützen können.
+description: Erfahren Sie mehr über das [!DNL Upgrade Compatibility Tool] und wie es Ihnen bei Ihrem Adobe Commerce-Projekt helfen kann.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # Handbuch - Übersicht
 
 {{commerce-only}}
@@ -37,7 +46,7 @@ Das folgende Diagramm zeigt die möglichen Workflows beim Ausführen der [!DNL U
 
 In diesem Video erfahren Sie mehr über die [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3409509?captions=ger&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## Helfen Sie, die [!DNL Upgrade Compatibility Tool] zu verbessern
 
@@ -47,7 +56,7 @@ Um sich mit dem [!DNL Upgrade Compatibility Tool]-Team zu verbinden, kontaktiere
 
 Der [!DNL Upgrade Compatibility Tool] verwendet Regeln, die in unseren [Codierungsstandards](https://developer.adobe.com/commerce/php/coding-standards/) definiert sind, um sicherzustellen, dass Ihr Projekt den Best Practices von Adobe Commerce entspricht, und um Sie bei der Verbesserung und Erweiterung der [!DNL Upgrade Compatibility Tool] zu unterstützen.
 
-Weitere Informationen zu Beitragsstandards finden [&#x200B; unter &#x200B;](https://developer.adobe.com/commerce/php/coding-standards/contributing)Beitragen“.
+Weitere Informationen zu Beitragsstandards finden [ unter ](https://developer.adobe.com/commerce/php/coding-standards/contributing)Beitragen“.
 
 ## Ressourcen
 

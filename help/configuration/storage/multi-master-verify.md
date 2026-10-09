@@ -3,13 +3,22 @@ title: Geteilte Datenbank überprüfen
 description: Erfahren Sie, wie Sie überprüfen können, ob eine Commerce Split-Datenbankkonfiguration ordnungsgemäß funktioniert.
 recommendations: noCatalog
 exl-id: 36295240-6521-4f3e-9ea3-f35b73de672d
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
-
 ---
-
 # Geteilte Datenbank überprüfen
 
 {{ee-only}}
@@ -22,7 +31,7 @@ Nach der Konfiguration werden die Master-Datenbanken wie folgt konfiguriert:
 - Commerce-Angebotsdatenbank: 11 Tabellen
 - Commerce-Verkaufsdatenbank: 55 Tabellen
 
-Um sicherzustellen, dass Ihre aufgeteilten Datenbanken ordnungsgemäß funktionieren, führen Sie die folgenden Aufgaben aus und überprüfen Sie, ob Daten mit einem Datenbank-Tool wie „phpmyadmin[&#x200B; zu den Datenbanktabellen hinzugefügt &#x200B;](../../installation/prerequisites/optional-software.md#phpmyadmin):
+Um sicherzustellen, dass Ihre aufgeteilten Datenbanken ordnungsgemäß funktionieren, führen Sie die folgenden Aufgaben aus und überprüfen Sie, ob Daten mit einem Datenbank-Tool wie „phpmyadmin[ zu den Datenbanktabellen hinzugefügt ](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | Zu überprüfende Elemente | Vorgehensweise bei der Verifizierung |
 | -------------- | ------------- |

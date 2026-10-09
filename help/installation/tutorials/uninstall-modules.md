@@ -2,13 +2,22 @@
 title: Module deinstallieren
 description: Erfahren Sie, wie Sie Adobe Commerce-Module deinstallieren, wobei Code, Schema und Daten optional entfernt werden können, und wann Module deaktiviert werden, anstatt sie zu deinstallieren.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 0%
-
 ---
-
 # Module deinstallieren
 
 In diesem Abschnitt wird beschrieben, wie Sie ein oder mehrere Module deinstallieren. Während der Deinstallation können Sie optional den Code der Module, das Datenbankschema und die Datenbankdaten entfernen. Sie können zuerst Sicherungskopien erstellen, damit Sie die Daten später wiederherstellen können.
@@ -17,7 +26,7 @@ Sie sollten ein Modul nur deinstallieren, wenn Sie sicher sind, dass Sie es nich
 
 >[!NOTE]
 >
->Dieser Befehl prüft, ob nur in der `composer.json` deklarierte Abhängigkeiten vorhanden sind. Wenn Sie ein Modul deinstallieren, das _nicht_ in der `composer.json` definiert ist, wird das Modul mit diesem Befehl deinstalliert, ohne auf Abhängigkeiten zu prüfen. Dieser Befehl entfernt _jedoch_ den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystem-Tools verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie Nicht-Composer[Module &#x200B;](manage-modules.md)deaktivieren).
+>Dieser Befehl prüft, ob nur in der `composer.json` deklarierte Abhängigkeiten vorhanden sind. Wenn Sie ein Modul deinstallieren, das _nicht_ in der `composer.json` definiert ist, wird das Modul mit diesem Befehl deinstalliert, ohne auf Abhängigkeiten zu prüfen. Dieser Befehl entfernt _jedoch_ den Code des Moduls aus dem Dateisystem. Sie müssen Dateisystem-Tools verwenden, um den Code des Moduls zu entfernen (z. B. `rm -rf <path to module>`). Alternativ können Sie Nicht-Composer[Module ](manage-modules.md)deaktivieren).
 
 Befehlsverwendung:
 

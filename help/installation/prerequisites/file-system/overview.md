@@ -2,13 +2,22 @@
 title: Dateieigentum und -berechtigungen
 description: Erfahren Sie mehr über die Bedeutung von Dateisystemberechtigungen bei der Arbeit mit lokalen Installationen von Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
-
 ---
-
 # Dateieigentum und -berechtigungen
 
 Es ist wichtig, die Adobe Commerce-Installation in einer Entwicklungsumgebung zu sichern, um Probleme im Zusammenhang mit dem Zugriff unberechtigter Personen oder Prozesse auf Ihr System und dessen potenzielle Beschädigung zu verhindern. Verwenden Sie die folgenden Richtlinien für Dateisystemeigentum und -berechtigungen, um Ihre Installation zu schützen.
@@ -31,7 +40,7 @@ Es gibt zwei Arten von Dateisystembesitzern:
 
   - Der _Befehlszeilenbenutzer_ führt Cron-Aufträge und Befehlszeilen-Dienstprogramme aus.
 
-  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe“ zu verwenden &#x200B;](configure-permissions.md#set-ownership-and-permissions-for-two-users) eine [`umask`](#restrict-access-with-a-umask) festzulegen.
+  Beide Benutzer benötigen dieselben Berechtigungen für das Dateisystem. Daher ist es am besten, eine [freigegebene Gruppe“ zu verwenden ](configure-permissions.md#set-ownership-and-permissions-for-two-users) eine [`umask`](#restrict-access-with-a-umask) festzulegen.
 
 ### Beschränken des Zugriffs mit einer Maske
 
@@ -59,7 +68,7 @@ Bei Verwendung der verschiedenen Adobe Commerce-Anwendungsmodi werden unterschie
 - Entwickler
 - Produktion
 
-Siehe [Über &#x200B;](../../../configuration/bootstrap/application-modes.md)) im _Konfigurationshandbuch_.
+Siehe [Über ](../../../configuration/bootstrap/application-modes.md)) im _Konfigurationshandbuch_.
 
 Weitere Informationen zu Berechtigungsempfehlungen finden Sie unter [Zugriffsberechtigungen für Dateisysteme](../../../configuration/deployment/file-system-permissions.md) im _Konfigurationshandbuch_.
 

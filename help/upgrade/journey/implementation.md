@@ -2,13 +2,22 @@
 title: Upgrade-Implementierung
 description: Erfahren Sie mehr über die verschiedenen Phasen der Upgrade-Implementierung für Adobe Commerce-Projekte.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
-
 ---
-
 # Upgrade-Implementierung
 
 Die Upgrade-Implementierung umfasst fünf Phasen:
@@ -35,7 +44,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
   >[!TIP]
   >
-  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [&#128279;](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
+  >All diese Informationen (und mehr) sind im Dashboard des Site-Wide Analysis Tool [](../../tools/site-wide-analysis-tool/dashboard.md) verfügbar.
 
 - Aktualisieren von Diensten zur Unterstützung der Zielversion. Verwenden Sie die folgende Tabellenvorlage, um festzustellen, welche Services Sie aktualisieren müssen. Verwenden Sie die [Systemanforderungen](../../installation/system-requirements.md) um zu bestimmen, was zur Spalte _Upgrade auf“ hinzugefügt_ soll.
 
@@ -64,7 +73,7 @@ Im Folgenden finden Sie Elemente, die Sie in eine gründliche Analyse einbeziehe
 
 - **Composer-Pakete und -Abhängigkeiten in „composer.json“, die eine Aktualisierung erfordern.**
 
-Darüber hinaus können Partner an [Adobe Commerce-Betaversionen teilnehmen &#x200B;](../../release/beta.md) Vorabversionschancen nutzen, um frühzeitig Zugriff auf den Code einer kommenden Version zu erhalten. Wenn Entwickler frühzeitig Zugriff auf den Code erhalten, haben sie genügend Zeit, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorabversionen zwei Wochen im Voraus.
+Darüber hinaus können Partner an [Adobe Commerce-Betaversionen teilnehmen ](../../release/beta.md) Vorabversionschancen nutzen, um frühzeitig Zugriff auf den Code einer kommenden Version zu erhalten. Wenn Entwickler frühzeitig Zugriff auf den Code erhalten, haben sie genügend Zeit, um das Upgrade bis zum allgemeinen Verfügbarkeitsdatum abzuschließen. Beta-Code wird in der Regel fünf Wochen vor dem GA-Datum veröffentlicht und Vorabversionen zwei Wochen im Voraus.
 
 ## Entwicklung und Qualitätssicherung
 
@@ -88,4 +97,4 @@ Besprechen Sie abschließend mit Ihrem Team die gewonnenen Erkenntnisse und Fall
 
 Überprüfen Sie nach dem Start Ihrer Site Ihre Analysedaten, die Google-Suchkonsole und andere Ressourcen, um sicherzustellen, dass es keine unerwarteten Probleme gibt und alles erwartungsgemäß funktioniert.
 
-Es ist immer empfehlenswert, die Leistung mit gut konzipierten Überwachungs-Tools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Achten Sie daher darauf, eines auszuwählen, das gut zu Ihrer Organisation passt. Wir empfehlen, dass Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, Services wie [New Relic](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) zur Überwachung der Site-Leistung nutzen.
+Es ist immer empfehlenswert, die Leistung mit gut konzipierten Überwachungs-Tools im Auge zu behalten. Es gibt viele Tools und Möglichkeiten, die Leistung Ihrer Site zu überwachen. Achten Sie daher darauf, eines auszuwählen, das gut zu Ihrer Organisation passt. Wir empfehlen, dass Adobe Commerce-Kunden, die unser Cloud-Infrastrukturverwaltungssystem verwenden, Services wie [New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) zur Überwachung der Site-Leistung nutzen.

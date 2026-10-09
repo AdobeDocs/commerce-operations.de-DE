@@ -2,13 +2,22 @@
 title: Upgrade-Umfang verstehen
 description: Erfahren Sie mehr über abwärtsinkompatible Änderungen in einer Version, die sich auf benutzerdefinierte Adobe Commerce-Module oder Erweiterungen von Drittanbietern auswirken können.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
-
 ---
-
 # Den Umfang der Aktualisierung verstehen
 
 Lesen Sie [Versionshinweise](/help/release/release-notes/overview.md) um den Umfang einer Version zu verstehen, einschließlich Verbesserungen, Fehlerbehebungen und bekannter Probleme, die sich auf Drittanbieter- und benutzerdefinierte Module auswirken können.
@@ -26,7 +35,7 @@ Die neue Kompatibilitätsrichtlinie von Adobe Commerce Marketplace stellt sicher
 
 ## Benutzerdefinierte Module
 
-Alle benutzerdefinierten Module sollten mit der Zielversion abgeglichen werden, auf die Sie das Upgrade durchführen möchten. Dies ist der zeit- und ressourcenintensivste Prozess eines Upgrades. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtsinkompatiblen Änderungen suchen und neue Praktiken beachten, wie z. B. die Zerlegung von Controllern. Weitere Informationen hierzu finden Sie in den [&#x200B; zu &#x200B;](/help/release/release-notes/overview.md). Stellen Sie außerdem sicher, dass Sie die [Best Practices“ für &#x200B;](https://developer.adobe.com/commerce/php/best-practices/extensions/) Modulentwicklung befolgen.
+Alle benutzerdefinierten Module sollten mit der Zielversion abgeglichen werden, auf die Sie das Upgrade durchführen möchten. Dies ist der zeit- und ressourcenintensivste Prozess eines Upgrades. Bei der Bewertung Ihrer benutzerdefinierten Module müssen Sie nach abwärtsinkompatiblen Änderungen suchen und neue Praktiken beachten, wie z. B. die Zerlegung von Controllern. Weitere Informationen hierzu finden Sie in den [ zu ](/help/release/release-notes/overview.md). Stellen Sie außerdem sicher, dass Sie die [Best Practices“ für ](https://developer.adobe.com/commerce/php/best-practices/extensions/) Modulentwicklung befolgen.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -34,7 +43,7 @@ Der [!DNL Upgrade Compatibility Tool] ist ein Befehlszeilen-Tool, das Ihre Insta
 
 Die Verwendung dieses Tools reduziert den Aufwand, den Ihr Team betreiben muss, um den Umfang und die Auswirkungen eines Upgrades zu verstehen. Dies hilft Ihnen, gängige Code-Probleme beim Upgrade zu vermeiden, und bietet eine klare Anleitung zum Beheben identifizierter Probleme. Außerdem können Sie die wichtigsten Probleme priorisieren, die für ein erfolgreiches Upgrade erforderlich sind, sodass Sie beim Upgrade Zeit und Kosten sparen.
 
-Erste Schritte mit der [!DNL Upgrade Compatibility Tool] finden Sie in den folgenden Abschnitten. Weitere technische Details und erweiterte Anwendungsfälle finden Sie [&#x200B; [!DNL Upgrade Compatibility Tool]Handbuch](../upgrade-compatibility-tool/overview.md) .
+Erste Schritte mit der [!DNL Upgrade Compatibility Tool] finden Sie in den folgenden Abschnitten. Weitere technische Details und erweiterte Anwendungsfälle finden Sie [ [!DNL Upgrade Compatibility Tool]Handbuch](../upgrade-compatibility-tool/overview.md) .
 
 ### Tool herunterladen
 

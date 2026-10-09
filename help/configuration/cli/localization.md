@@ -2,13 +2,22 @@
 title: Übersetzungswörterbücher und Sprachpakete
 description: Erfahren Sie, wie Sie Übersetzungswörterbücher erstellen und Sprachpakete für Adobe Commerce erstellen. Hier erfahren Sie mehr über Lokalisierung und die Einrichtung mehrsprachiger Stores.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
-
 ---
-
 # Lokalisierung
 
 {{file-system-owner}}
@@ -35,7 +44,7 @@ So erstellen Sie das Wörterbuch und beginnen mit der Übersetzung:
 
 1. Sie können die Übersetzungswörterbücher in ein Sprachpaket packen und dieses dem Commerce Store-Administrator bereitstellen.
 
-1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. In der Admin Store-Verwaltung [konfiguriert die Übersetzungen](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Befehlsoptionen:
 
@@ -48,7 +57,7 @@ In der folgenden Tabelle werden Parameter und Werte erläutert:
 | Parameter | Wert | Erforderlich? |
 |--- |--- |--- |
 | `<path to directory to translate>` | Pfad zu einem Verzeichnis mit übersetzbarem Code, d. h. PHP-, PHTML- oder XML-Dateien mit zu übersetzenden Ausdrücken.<br><br>Das Tool beginnt mit der Suche unter dem eingegebenen Pfad und durchsucht alle darin enthaltenen Dateien und Unterverzeichnisse.<br><br>Verwenden Sie diesen Parameter nicht, wenn Sie `-m --magento` verwenden. | Ja (Wörterbücher), nein (Pakete). |
-| `-m --magento` | Wird benötigt, um ein Sprachpaket aus diesem Übersetzungswörterbuch zu erstellen. Durchsucht ggf. die Ordner, die bin/magento enthalten. Mit dieser Option werden jeder Zeile im Wörterbuch Designs oder Module hinzugefügt. <br><br>Es folgt ein Beispiel:<br><br>„Keine Elemente gefunden“,„Keine Elemente gefunden“,module,Magento_Wishlist | Nein |
+| `-m --magento` | Wird benötigt, um ein Sprachpaket aus diesem Übersetzungswörterbuch zu erstellen. Durchsucht ggf. die Ordner, die bin/magento enthalten. Diese Option fügt jeder Zeile des Wörterbuchs Designs oder Module hinzu.<br><br>Es folgt ein Beispiel:<br><br>„Keine Elemente gefunden“,„Keine Elemente gefunden“,module,Magento_Wishlist | Nein |
 | `-o --output="<path>"` | Gibt den absoluten Dateisystempfad und Dateinamen der zu erstellenden CSV-Datei des Übersetzungswörterbuchs an. Bei dem eingegebenen Wert wird zwischen Groß- und Kleinschreibung unterschieden. Der Name der CSV-Datei muss genau mit dem Gebietsschema-Namen übereinstimmen, einschließlich der Groß-/Kleinschreibung der Zeichen.<br><br>Wenn Sie diesen Parameter weglassen, wird die Ausgabe an stdout weitergeleitet. | Nein |
 
 >[!INFO]
@@ -90,7 +99,7 @@ Im Gegensatz zu einem Übersetzungswörterbuch können Sie jedes oder alle Wört
 In diesem Abschnitt wird beschrieben, wie Sie ein Sprachpaket erstellen, das CSV-Dateien in Module und Designs schreibt. Um ein Sprachpaket zu erstellen, müssen Sie die in den folgenden Abschnitten beschriebenen Aufgaben ausführen:
 
 1. [Sammeln und Übersetzen von Wörtern und Wortgruppen](#generate-a-translation-dictionary). (Der `--magento` ist erforderlich.)
-1. [Führen Sie den Sprachpaketbefehl &#x200B;](#run-the-language-package-command).
+1. [Führen Sie den Sprachpaketbefehl ](#run-the-language-package-command).
 1. [Erstellen von Verzeichnissen und Dateien](#create-directories-and-files).
 1. (Optional) [Konfigurieren mehrerer Pakete für eine Sprache](#configure-multiple-packages-for-a-language).
 
@@ -117,7 +126,7 @@ Sprachpakete befinden sich in einem Verzeichnis unter `app/i18n/<VendorName>` im
 
 - Erforderliche Lizenzdateien
 - `composer.json`
-- `registration.php`, [&#x200B; das &#x200B;](https://developer.adobe.com/commerce/php/development/build/component-registration) registriert
+- `registration.php`, [ das ](https://developer.adobe.com/commerce/php/development/build/component-registration) registriert
 - [`language.xml`](#language-package-languagexml)-Metadatendatei
 
 >[!INFO]

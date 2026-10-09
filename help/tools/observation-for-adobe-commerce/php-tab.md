@@ -1,15 +1,29 @@
 ---
 title: Die Registerkarte [!UICONTROL PHP]
-description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL PHP]" von [!DNL Observation for Adobe Commerce].
+description: Erfahren Sie mehr über die Registerkarte [!UICONTROL PHP] von [!DNL Observation for Adobe Commerce].
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '560'
 ht-degree: 0%
-
 ---
-
 # Die Registerkarte [!UICONTROL PHP]
 
 Die **PHP** Registerkarte zeigt Probleme mit PHP-Prozessen an, um eine tiefere Analyse von PHP-Problemen zu ermöglichen.
@@ -45,7 +59,7 @@ Der **[!UICONTROL PHP CPU Utilization]** zeigt die prozentuale Auslastung von PH
 Der **[!UICONTROL PHP Process states]** zeigt den PHP-Prozessstatus über den ausgewählten Zeitraum an. Es wird angezeigt, wenn PHP-Prozesse beendet und neu gestartet werden. Vorsicht vor beendeten PHP-Prozessen, die keine Neustarts anzeigen.
 
 * &#39;%NOTICE: Wird beendet …%&#39;) als &#39;php_term&#39;
-* &#39;% HINWEIS: Beenden, Tschüss!%&#39;) als &#39;php_exit&#39; angegeben
+* &#39;% NOTICE: exiting, bye-bye!%&#39;) as &#39;php_exit&#39;
 * &#39;% NOTICE: fpm wird ausgeführt, PID%&#39;) als &#39;fpm_start&#39;
 * &#39;%NOTICE: Bereit, Verbindungen als &#39;php_ready&#39; zu behandeln
 
@@ -56,7 +70,7 @@ Der **[!UICONTROL PHP Process states]** zeigt den PHP-Prozessstatus über den au
 Der **[!UICONTROL PHP Errors]** zeigt die Anzahl der PHP-Worker-Fehler im ausgewählten Zeitraum an. Zu den Fehlermeldungen, die analysiert und angezeigt werden, gehören:
 
 * &#39;%WORKER_CONNECTIONS&#39; sind nicht genug%&#39;) als &#39;Worker&#39;
-* &#39;%PHP Schwerwiegender Fehler: Zulässige Speichergröße!%&#39;) als &#39;mem_size&#39; angegeben
+* &#39;%PHP Schwerwiegender Fehler: Zulässige Speichergröße!%&#39;) als &#39;mem_size&#39;
 * &#39;%bei Signal 11 (SIGSEGV)%&#39; als &#39;sig_11&#39; beendet
 * &#39;%beendet am Signal 7 (SIGBUS)%&#39;) als &#39;sig_7&#39;
 * &#39;%PM.START_SERVERS%&#39; erhöhen) als &#39;PMSTART_SERV&#39;
@@ -86,7 +100,7 @@ Der **[!UICONTROL Database Errors]** zeigt Datenbankfehler im ausgewählten Zeit
 * &#39;%rollback%&#39;) als &#39;rollback&#39;
 * &#39;%Foreign key constraint failed for table%&#39;) as &#39;Foreign_key_constraint&#39;
 * &#39;%ERROR_CODE: 1114%&#39;) als &#39;sql_1114_full&#39;
-* &#39;%CRITICAL: SQLSTATE[HY000] [2006] MySQL Server wurde entfernt%&#39;) als &#39;sql_gone&#39;
+* &#39;%CRITICAL: SQLSTATE[HY000][2006] MySQL Server wurde entfernt%&#39;) als &#39;sql_gone&#39;
 * &#39;%SQLSTATE[HY000] [1040] Zu viele Verbindungen%&#39;) als &#39;sql_1040&#39;
 * &#39;%CRITICAL: SQLSTATE[HY000] [2002]%&#39;) als &#39;sql_2002&#39;
 * &#39;%SQLSTATE[08S01]:%&#39;) als &#39;sql_1047&#39;

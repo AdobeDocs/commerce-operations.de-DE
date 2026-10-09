@@ -2,13 +2,22 @@
 title: Anwendungsmodi
 description: Die Commerce-Anwendung kann je nach Bedarf in verschiedenen Modi ausgeführt werden. Eine detaillierte Liste der verfügbaren Anwendungsmodi anzeigen.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # Anwendungsmodi
 
 Sie können die Commerce-Anwendung in einem der folgenden _ausführen_:
@@ -20,13 +29,13 @@ Sie können die Commerce-Anwendung in einem der folgenden _ausführen_:
 | [Produktion](#production-mode) | Stellen Sie das Commerce-Programm bereit und führen Sie es in einem Produktionssystem aus. | Ja |
 | [Wartung](#maintenance-mode) | Verhindern Sie den Zugriff auf eine Site, während Sie Aktualisierungen und Konfigurationen durchführen. | Ja |
 
-Informationen [&#x200B; manuellen Ändern der Adobe Commerce](../cli/set-mode.md)Betriebsmodi finden Sie unter „Festlegen des Betriebsmodus“.
+Informationen [ manuellen Ändern der Adobe Commerce](../cli/set-mode.md)Betriebsmodi finden Sie unter „Festlegen des Betriebsmodus“.
 
 ## Cloud-Support
 
 Aufgrund des schreibgeschützten Dateisystems gibt es eine strikte Einschränkung bezüglich des Wechsels der Modi in Remote-Cloud-Umgebungen und es kann nicht durch den Adobe Commerce-Support überschrieben werden. Versuchen Sie nicht, den Modus zu ändern, indem Sie die `app/etc/env.php` ändern, da das `ece-tools` die Datei basierend auf mehreren Konfigurationsquellen überschreibt.
 
-Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während einer Bereitstellung automatisch _Wartungsmodus_ aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Andernfalls verbleibt die Anwendung im _Produktions_ Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
+Adobe Commerce in der Cloud-Infrastruktur führt die Anwendung während einer Bereitstellung automatisch _Wartungsmodus_ aus. Dadurch wird Ihre Site offline geschaltet, bis die Bereitstellung abgeschlossen ist. Andernfalls verbleibt die Anwendung im _Produktions_ Modus. Siehe [Bereitstellungsprozess](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 
 Wenn Sie Cloud Docker für Commerce als Entwicklungs-Tool verwenden, können Sie Ihr Cloud-Infrastrukturprojekt in einer Docker-Umgebung im _Entwicklermodus_ bereitstellen, die Leistung ist jedoch aufgrund zusätzlicher Dateisynchronisierungsvorgänge langsamer. Siehe [Bereitstellen der Docker-Umgebung](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) im Handbuch _Cloud Docker for Commerce_.
 
@@ -64,7 +73,7 @@ Im Entwicklermodus:
 
 Der _Produktionsmodus_ eignet sich am besten für die Bereitstellung der Commerce-Anwendung auf einem Produktionssystem. Nach der Optimierung der Serverumgebung, z. B. der Datenbank und des Webservers, sollten Sie das Bereitstellungs-Tool für [statische Ansichtsdateien](../cli/static-view-file-deployment.md) ausführen, um statische Ansichtsdateien in das `pub/static`-Verzeichnis zu schreiben. Dies verbessert die Leistung, indem alle erforderlichen statischen Dateien bei der Bereitstellung bereitgestellt werden, anstatt das Commerce-Programm zu zwingen, statische Dateien bei Bedarf während der Laufzeit dynamisch zu suchen und zu kopieren (materialisieren).
 
-Einige Felder, wie die Systemkonfigurationsabschnitte „Erweitert“ und „Entwickler“ in „Admin“, sind im Produktionsmodus nicht verfügbar. Beispielsweise können Sie _Cache-Typen_ der Admin-Klasse nicht aktivieren oder deaktivieren. Sie können Cache-Typen (nur _)_ der [Befehlszeile) aktivieren &#x200B;](../cli/manage-cache.md#enable-or-disable-cache-types) deaktivieren.
+Einige Felder, wie die Systemkonfigurationsabschnitte „Erweitert“ und „Entwickler“ in „Admin“, sind im Produktionsmodus nicht verfügbar. Beispielsweise können Sie _Cache-Typen_ der Admin-Klasse nicht aktivieren oder deaktivieren. Sie können Cache-Typen (nur _)_ der [Befehlszeile) aktivieren ](../cli/manage-cache.md#enable-or-disable-cache-types) deaktivieren.
 
 Im Produktionsmodus:
 
@@ -76,9 +85,9 @@ Im Produktionsmodus:
 
 Der _Wartungsmodus_ beschränkt oder verhindert den Zugriff auf eine Site während Verbesserungen, Aktualisierungen und Konfigurationsaufgaben. Standardmäßig leitet die Site Besucher zu einer standardmäßigen `Service Temporarily Unavailable` um.
 
-Sie können eine [benutzerdefinierte Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md) erstellen, den Wartungsmodus manuell aktivieren und deaktivieren und den Wartungsmodus so konfigurieren, dass Besucher von autorisierten IP-Adressen den Store normal anzeigen können. Siehe [Aktivieren und Deaktivieren des &#x200B;](../../installation/tutorials/maintenance-mode.md) im _Installationshandbuch_.
+Sie können eine [benutzerdefinierte Wartungsseite](../../upgrade/troubleshooting/maintenance-mode-options.md) erstellen, den Wartungsmodus manuell aktivieren und deaktivieren und den Wartungsmodus so konfigurieren, dass Besucher von autorisierten IP-Adressen den Store normal anzeigen können. Siehe [Aktivieren und Deaktivieren des ](../../installation/tutorials/maintenance-mode.md) im _Installationshandbuch_.
 
-Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Wenn die Bereitstellung erfolgreich abgeschlossen wurde, kehrt die Commerce-Anwendung zur Ausführung im Produktionsmodus zurück. Siehe [Bereitstellungs-Hooks](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
+Wenn Sie Commerce in der Cloud-Infrastruktur verwenden, wird die Commerce-Anwendung während der Bereitstellungsphase im Wartungsmodus ausgeführt. Wenn die Bereitstellung erfolgreich abgeschlossen wurde, kehrt die Commerce-Anwendung zur Ausführung im Produktionsmodus zurück. Siehe [Bereitstellungs-Hooks](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks) im Handbuch zu _Commerce in Cloud-Infrastrukturen_.
 
 Im Wartungsmodus:
 

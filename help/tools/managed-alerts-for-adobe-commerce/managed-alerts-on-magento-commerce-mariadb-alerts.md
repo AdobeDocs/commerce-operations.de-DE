@@ -1,16 +1,37 @@
 ---
 title: 'Verwaltete Warnhinweise in Adobe Commerce: MariaDB-Warnhinweise'
-description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie MariaDB-Warnhinweise für Adobe Commerce in [!DNL New Relic] erhalten. Die MariaDB-Warnhinweise überwachen eine hohe Abfragelast sowie übermäßige DML-Abfragen (Data Manipulation Language). Beides kann zu einem schlechteren Benutzererlebnis oder sogar zu Ausfallzeiten führen. Sie können zwei Arten von Warnhinweisen erhalten.
+description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie in [!DNL New Relic] MariaDB-Warnhinweise für Adobe Commerce erhalten. Die MariaDB-Warnhinweise überwachen eine hohe Abfragelast sowie übermäßige DML-Abfragen (Data Manipulation Language). Beides kann zu einem schlechteren Benutzererlebnis oder sogar zu Ausfallzeiten führen. Sie können zwei Arten von Warnhinweisen erhalten.
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
-
 ---
-
 # Verwaltete Warnhinweise in Adobe Commerce: MariaDB-Warnhinweise
 
 Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie in [!DNL New Relic] MariaDB-Warnhinweise für Adobe Commerce erhalten. Die MariaDB-Warnhinweise überwachen eine hohe Abfragelast sowie übermäßige DML-Abfragen (Data Manipulation Language). Beides kann zu einem schlechteren Benutzererlebnis oder sogar zu Ausfallzeiten führen. Sie können zwei Arten von Warnhinweisen erhalten:
@@ -29,7 +50,7 @@ Sie erhalten in [!DNL New Relic] einen verwalteten Warnhinweis, wenn Sie sich be
 **Do!**
 
 * Bricht jede geplante Bereitstellung ab, bis dieser Warnhinweis gelöscht wird.
-* Setzen Sie Ihre Site sofort in den Wartungsmodus, wenn Ihre Site nicht mehr reagiert oder überhaupt nicht mehr reagiert. Anweisungen hierzu finden Sie [Aktivieren oder Deaktivieren des &#x200B;](/help/installation/tutorials/maintenance-mode.md)) im Commerce-Installationshandbuch. Fügen Sie Ihre IP-Adresse der Liste der von der Steuer befreiten IP-Adressen hinzu, um sicherzustellen, dass Sie weiterhin zur Fehlerbehebung auf Ihre Website zugreifen können. Anweisungen hierzu finden Sie unter [Liste der ausgenommenen IP-Adressen verwalten](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses).
+* Setzen Sie Ihre Site sofort in den Wartungsmodus, wenn Ihre Site nicht mehr reagiert oder überhaupt nicht mehr reagiert. Anweisungen hierzu finden Sie [Aktivieren oder Deaktivieren des ](/help/installation/tutorials/maintenance-mode.md)) im Commerce-Installationshandbuch. Fügen Sie Ihre IP-Adresse der Liste der von der Steuer befreiten IP-Adressen hinzu, um sicherzustellen, dass Sie weiterhin zur Fehlerbehebung auf Ihre Website zugreifen können. Anweisungen hierzu finden Sie unter [Liste der ausgenommenen IP-Adressen verwalten](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses).
 * Beenden Sie alle Skripte, z. B. Importe, die die Ursache des Warnhinweises sein könnten, wenn die Site-Leistung beeinträchtigt ist.
 
 **Tu&#39;s nicht!**
@@ -44,16 +65,16 @@ Sie erhalten in [!DNL New Relic] einen verwalteten Warnhinweis, wenn Sie sich be
 
 Wenn Sie einen Warnhinweis „Kritische DML-Abfragen“ erhalten, beginnen Sie mit Schritt 1. Wenn Sie einen Warnhinweis zu DML-Abfragen erhalten, beginnen Sie mit Schritt 2.
 
-1. Überprüfen, ob ein Adobe Commerce-Support-Ticket vorhanden ist. Anweisungen hierzu finden Sie in unserer Wissensdatenbank [Support-Tickets &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Möglicherweise hat der Support einen Warnhinweis für einen [!DNL New Relic] Schwellenwert erhalten, ein Ticket erstellt und die Arbeit an dem Problem begonnen. Wenn kein Ticket vorhanden ist, erstellen Sie eines. Das Ticket sollte die folgenden Informationen enthalten:
+1. Überprüfen, ob ein Adobe Commerce-Support-Ticket vorhanden ist. Anweisungen hierzu finden Sie in unserer Wissensdatenbank [Support-Tickets ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Möglicherweise hat der Support einen Warnhinweis für einen [!DNL New Relic] Schwellenwert erhalten, ein Ticket erstellt und die Arbeit an dem Problem begonnen. Wenn kein Ticket vorhanden ist, erstellen Sie eines. Das Ticket sollte die folgenden Informationen enthalten:
    * Grund des Kontakts: Wählen Sie **[!UICONTROL New Relic MariaDB alert received]**.
    * Beschreibung des Warnhinweises
    * [[!DNL New Relic] Link zum Vorfall](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Dies ist in Ihren [Verwaltete Warnhinweise für Adobe Commerce](managed-alerts-for-magento-commerce.md) enthalten.
 1. Um die Ursache des Problems zu identifizieren, versuchen Sie, die XML-Abfragen zu identifizieren:
-   1. Überprüfen Sie Ihre Datenbankvorgänge anhand der Schritte auf der Seite „Datenbanken[&#x200B; von New Relic](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time).
+   1. Überprüfen Sie Ihre Datenbankvorgänge anhand der Schritte auf der Seite „Datenbanken[ von New Relic](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time).
    1. Sortieren Sie nach **[!UICONTROL CALL COUNT]** und dann nach **[!UICONTROL OPERATION]**. Überprüfen Sie `INSERT`, `DELETE` und `UPDATE` Vorgänge.
    1. Achten Sie auf hohe Durchschnitte.
    1. Durchklicken, um Aufrufe von Datenbankvorgängen zu finden. Dadurch werden Transaktionen identifiziert, die diese Abfrage nach Zeit verwenden.
    1. Suchen Sie nach Code-Optimierungen oder operativen Optimierungen:
       * Code-Optimierungen: Achten Sie auf die Optimierung von Abfragen mit Masseneinfügungen/Aktualisierungen, die Minimierung der Indexnutzung oder die Drosselung von Code.
       * Operative Optimierungen: Abladung ressourcenintensiver Datenänderungen zur Verringerung der Traffic-Zeiten.
-      * Zusätzliche Optimierungen: Stellen Sie sicher, dass Sie die neueste Version von ECE-Tools verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der Version &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) ECE-Tools im Handbuch Commerce on Cloud .
+      * Zusätzliche Optimierungen: Stellen Sie sicher, dass Sie die neueste Version von ECE-Tools verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der Version ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) ECE-Tools im Handbuch Commerce on Cloud .

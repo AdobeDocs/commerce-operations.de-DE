@@ -3,13 +3,32 @@ title: Bereitstellungsstrategien für statische Ansichtsdateien
 description: Erfahren Sie mehr über Bereitstellungsstrategien für statische Ansichtsdateien in Adobe Commerce-Programmen. Entdecken Sie optimale Bereitstellungsmethoden für verschiedene Anwendungsfälle.
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+subfeature_v2:
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '497'
 ht-degree: 0%
-
 ---
-
 # Bereitstellungsstrategien für statische Ansichtsdateien
 
 Beim Bereitstellen von statischen Ansichtsdateien können Sie eine der drei verfügbaren Strategien auswählen. Jeder dieser Schritte liefert optimale Bereitstellungsergebnisse für verschiedene Anwendungsfälle:

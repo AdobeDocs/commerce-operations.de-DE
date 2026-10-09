@@ -1,15 +1,29 @@
 ---
 title: Die Registerkarte [!UICONTROL bots]
-description: Erfahren Sie mehr über die Registerkarte "[!UICONTROL bots]" von [!DNL Observation for Adobe Commerce].
+description: Erfahren Sie mehr über die Registerkarte [!UICONTROL bots] von [!DNL Observation for Adobe Commerce].
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
-
 ---
-
 # Die Registerkarte [!UICONTROL bots]
 
 Auf dieser Registerkarte finden Sie Informationen, die erklären, wie Sie feststellen können, ob und welche [!DNL bots] Site-Probleme verursachen.
@@ -38,7 +52,7 @@ Auf dieser Registerkarte finden Sie Informationen, die erklären, wie Sie festst
 
 Der **[!UICONTROL Experimental Potential Malicious Bots frame]** Frame umfasst 12 separate, komplexe Abfragen. Es erkennt böswillige IP-Anfragensignaturen und aggregiert dann die Ergebnisse, summiert und sortiert sie nach Anzahl in absteigender Reihenfolge. Die Abfragen enthalten eine Vielzahl von Datensignaturen von CVE-Exploits und anderen böswilligen Anfragen. Auch wenn die Exploits durch Sicherheitskorrekturen/Patches blockiert werden und keine Bedrohung für die Site darstellen, muss die Anfrage dennoch von der Website verarbeitet werden. Die Anzahl der Anfragen kann in kurzer Zeit erheblich zunehmen. In diesem Frame werden nicht alle Anforderungen von der IP-Adresse angezeigt, sondern Anfragen mit Signalen, die darauf hinweisen, dass die Anfrage verdächtig war.
 
-Stellen Sie sicher, dass der Traffic verdächtig ist und nicht von einer [!DNL Content Distributed Network] (CDN)-Adresse stammt, die möglicherweise auch gültige Anfragen sendet. Wenn die Anfragen von einer CDN-IP-Adresse stammen, wenden Sie sich bitte an diesen Dienstleister, um Unterstützung bei der Blockierung des verdächtigen Traffics über das Netzwerk zu erhalten. Informationen zum Blockieren der Adresse oder der Anfrage-URL finden Sie unter [Blockieren von bösartigem Traffic für Adobe Commerce auf  [!DNL Fastly] -Ebene](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in der Wissensdatenbank für den Adobe Commerce-Support.
+Stellen Sie sicher, dass der Traffic verdächtig ist und nicht von einer [!DNL Content Distributed Network] (CDN)-Adresse stammt, die möglicherweise auch gültige Anfragen sendet. Wenn die Anfragen von einer CDN-IP-Adresse stammen, wenden Sie sich bitte an diesen Dienstleister, um Unterstützung bei der Blockierung des verdächtigen Traffics über das Netzwerk zu erhalten. Informationen zum Blockieren der Adresse oder der Anfrage-URL finden Sie unter [Blockieren von bösartigem Traffic für Adobe Commerce auf  [!DNL Fastly] -Ebene](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) in der Wissensdatenbank für den Adobe Commerce-Support.
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 
@@ -68,7 +82,7 @@ Wenn es während der Instabilität oder des Ausfalls einer Website eine Spitze v
 
 ## [!UICONTROL Table - IPs that do not identify as bots]
 
-![Tabelle - IPs, die sich während des ausgewählten Zeitraums nicht als Bots mit HTTP-Statusfehlern identifizieren Wie blockiere ich Bot-Traffic auf Fastly-Ebene ODER verwalte Bots über die Datei robots.txt Best Practices für Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
+![Tabelle - IPs, die sich während des ausgewählten Zeitraums nicht als Bots mit HTTP-Statusfehlern identifizieren Wie blockiere ich Bot-Traffic auf Fastly-Ebene ODER verwalte Bots über die Datei robots.txt Best Practices für Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
 Die **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** Tabelle zeigt IP-Anfragen mit Nicht-200-HTTP-Status-Codes an, die sich NICHT selbst als im Feld „Benutzeragenten für Anfragen“ [!DNL bots] identifizieren. Bei diesen IP-Adressen kann es sich um bösartige IP-Adressen handeln, insbesondere wenn die Anzahl für den ausgewählten Zeitraum hoch ist.
 
@@ -82,7 +96,7 @@ Wenn IP-Adressen eine hohe Fehlerhäufigkeit erzeugen, fragen Sie, was sie tun? 
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![Zeigen Sie die 5XX-Statusverteilung über IP-Adressen (die 200 wichtigsten Adressen) an. So blockieren Sie Bot-Traffic auf Fastly-Ebene ODER verwalten Sie Bots über Ihre Datei robots.txt Best Practices für Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![Zeigen Sie die 5XX-Statusverteilung über IP-Adressen (die 200 wichtigsten Adressen) an. So blockieren Sie Bot-Traffic auf Fastly-Ebene ODER verwalten Sie Bots über Ihre Datei robots.txt Best Practices für Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
 Der **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** Rahmen ist leistungsstark. Es werden die IP-Adressen angezeigt, die während des ausgewählten Zeitraums 5XX-HTTP-Status-Codes aufweisen. Wenn eine IP-Adresse eine große Anzahl von Anfragen stellt und die Website so stark betroffen ist, dass sie den Traffic nicht mehr verarbeiten kann, weisen die IP-Adressen mit der höchsten Anfragehäufigkeit normalerweise die höchste Fehlerquote auf. 5XX-HTTP-Status-Codes zeigen normalerweise eine Website an, die Schwierigkeiten hat, auf Anfragen zu reagieren.
 

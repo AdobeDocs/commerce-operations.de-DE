@@ -4,20 +4,32 @@ description: Verwalten und optimieren Sie die Site-Performance, indem Sie die Be
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 29168544e3a33b874b104f308bd53cb475ac2638
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '346'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die Indexerkonfiguration
 
 Um die Leistung der Site zu optimieren und aufrechtzuerhalten, überprüfen und aktualisieren Sie die Indexerkonfiguration mithilfe der in diesem Artikel beschriebenen Best Practices zur Leistung.
 
 ## Betroffene Produkte und Versionen
 
-[Alle unterstützten &#x200B;](../../../release/versions.md) von:
+[Alle unterstützten ](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -35,7 +47,7 @@ Einen großen Store mit mehreren Administratoren im Backend oder mit vielen Impo
 Um die Site-Performance zu maximieren, befolgen Sie die folgenden Best Practices für die Indizierung:
 
 - Überprüfen Sie die Indexkonfiguration.
-- Legen Sie die Indexer auf _[!UICONTROL Update on Schedule]_&#x200B;für große Websites und Websites mit häufigen Aktualisierungen und hohem Traffic fest. Siehe [Indexverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+- Legen Sie die Indexer auf _[!UICONTROL Update on Schedule]_für große Websites und Websites mit häufigen Aktualisierungen und hohem Traffic fest. Siehe [Indexverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Befolgen Sie [Best Practices zur Leistung](../../../performance/configuration.md) für die Verwaltung von Indizes.
 
 >[!IMPORTANT]
@@ -48,5 +60,5 @@ Um die Site-Performance zu maximieren, befolgen Sie die folgenden Best Practices
 ## Weitere Informationen
 
 - [Indexverwaltung für Admin-Benutzer](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Indexverwaltung mithilfe der Magento-CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=de)
+- [Indexverwaltung mit der Magento CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Übersicht über die Indizierung für Entwickler](https://developer.adobe.com/commerce/php/development/components/indexing/)

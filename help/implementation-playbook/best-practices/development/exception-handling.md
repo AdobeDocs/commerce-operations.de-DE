@@ -4,13 +4,23 @@ description: Erfahren Sie mehr über die empfohlenen Methoden zum Protokollieren
 feature: Best Practices
 role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
-source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die Ausnahmebehandlung
 
 Wenn eine Ausnahme nicht in die `exception.log` geschrieben wird, wobei das Ausnahmemodell als Kontext dient, wird sie in New Relic oder einem anderen PSR-3 Monolog-kompatiblen Protokollspeicher nicht korrekt erkannt und analysiert. Wenn Sie nur einen Teil der Ausnahme protokollieren (oder sie in der falschen Datei protokollieren), führt dies zu Fehlern in der Produktion, wenn Ausnahmen übersehen werden.
@@ -31,7 +41,7 @@ try {
 }
 ```
 
-Bei diesem Ansatz werden die `$e->getMessage` zur Protokollmeldung und das `$e` gemäß dem [PSR-3-Kontextstandard) automatisch im Kontext &#x200B;](https://www.php-fig.org/psr/psr-3/#13-context). Dies geschieht in `\Magento\Framework\Logger\Monolog::addRecord`.
+Bei diesem Ansatz werden die `$e->getMessage` zur Protokollmeldung und das `$e` gemäß dem [PSR-3-Kontextstandard) automatisch im Kontext ](https://www.php-fig.org/psr/psr-3/#13-context). Dies geschieht in `\Magento\Framework\Logger\Monolog::addRecord`.
 
 ### ![korrekt](../../../assets/yes.svg) Stummschaltung
 
@@ -88,7 +98,7 @@ Die folgenden Beispiele zeigen eine falsche Ausnahmebehandlung.
 
 ### ![falsch](../../../assets/no.svg) Logik vor der Protokollierung
 
-Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder einem schwerwiegenden Fehler führen. Dies verhindert, dass die Ausnahme protokolliert wird, und sollte durch [richtiges Beispiel“ &#x200B;](#logging-always-comes-first) werden.
+Die Logik vor der Protokollierung kann zu einer weiteren Ausnahme oder einem schwerwiegenden Fehler führen. Dies verhindert, dass die Ausnahme protokolliert wird, und sollte durch [richtiges Beispiel“ ](#logging-always-comes-first) werden.
 
 ```php
 try {
@@ -101,7 +111,7 @@ try {
 
 ### ![falsch](../../../assets/no.svg) Leere `catch`
 
-Leere `catch` können ein Zeichen für eine unbeabsichtigte Stummschaltung sein und sollten durch das richtige [&#x200B; ersetzt &#x200B;](#mute-signals).
+Leere `catch` können ein Zeichen für eine unbeabsichtigte Stummschaltung sein und sollten durch das richtige [ ersetzt ](#mute-signals).
 
 ```php
 try {
@@ -165,7 +175,7 @@ try {
 
 ### ![falsch](../../../assets/no.svg) Fehlende `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Das Auslassen der `phpcs:ignore`-Trigger ist ein Warnhinweis in PHPCS und sollte nicht Ihren CI übergeben. Dies sollte durch das richtige Beispiel ersetzt werden, das unter [Stummschaltungssignale“ &#x200B;](#mute-signals) ist.
+Das Auslassen der `phpcs:ignore`-Trigger ist ein Warnhinweis in PHPCS und sollte nicht Ihren CI übergeben. Dies sollte durch das richtige Beispiel ersetzt werden, das unter [Stummschaltungssignale“ ](#mute-signals) ist.
 
 ```php
 try {

@@ -2,13 +2,22 @@
 title: Übersicht über die lokale Installation
 description: Erfahren Sie mehr über den lokalen Installationsprozess von Adobe Commerce. Erfahren Sie mehr über Server-Anforderungen, Einrichtungsschritte und Best Practices für die Bereitstellung.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 3%
-
 ---
-
 
 # Übersicht über die lokale Installation
 
@@ -20,7 +29,7 @@ Die lokale Adobe Commerce-Software kann in etwa 30 bis 60 Minuten installiert we
 >
 >Sie sollten über technisches Zwischenwissen und Serverzugriff verfügen, um erfolgreich fortzufahren.
 
-Die Installation erstellt einen voll funktionsfähigen Adobe Commerce-Store mit einer [Storefront für Kunden](https://experienceleague.adobe.com/de/docs/commerce-admin/start/storefront/storefront) und einem [Admin-Panel](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/admin). Sie müssen Ihre Datenbank-Anmeldeinformationen, Domain-Informationen und Authentifizierungsschlüssel parat haben, bevor Sie den Prozess beginnen.
+Die Installation erstellt einen voll funktionsfähigen Adobe Commerce-Store mit einer [Storefront für Kunden](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) und einem [Admin-Panel](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Sie müssen Ihre Datenbank-Anmeldeinformationen, Domain-Informationen und Authentifizierungsschlüssel parat haben, bevor Sie den Prozess beginnen.
 
 ## Händlerpflichten
 
@@ -33,7 +42,7 @@ Mit Adobe Commerce On-Premise können Sie Ihre eigene Infrastruktur hosten und v
 Sie haben die volle Kontrolle über Ihre Umgebung, was eine bessere Anpassung und Flexibilität ermöglicht, aber Sie sind dafür verantwortlich, die Leistung, Sicherheit und Skalierbarkeit der Infrastruktur sicherzustellen. Sie sind beispielsweise für Folgendes verantwortlich:
 
 - Design, Implementierung, Konfiguration, Wartung, Fehlerbehebung und Leistungstests für alle Adobe Commerce On-Premise-Systeme.
-   - Server, Betriebssystem, Datenbanken, [!DNL PHP], Suche, Caching, vollständiger Seiten-Cache und Content Delivery Network. Häufige Themen können (aber nicht beschränkt auf) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] und alle verwendeten [!DNL CDN] sein.
+  - Server, Betriebssystem, Datenbanken, [!DNL PHP], Suche, Caching, vollständiger Seiten-Cache und Content Delivery Network. Häufige Themen können (aber nicht beschränkt auf) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] und alle verwendeten [!DNL CDN] sein.
 - Kapazitätsplanung, automatische Skalierung, Clustering, Backups, Disaster Recovery
 - Alle Produkt- und Kundendaten, Design, Konfiguration und Einrichtung, Anwendungs- und Datenbankpflege, Code-Bereitstellung, Versionsaktualisierungen und Patch-Anwendungen
 - Überwachung und Benachrichtigung per APM/Protokollierung/Benachrichtigung (z. B. [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
@@ -57,11 +66,11 @@ Generieren Sie neue [Authentifizierungsschlüssel](prerequisites/authentication-
 
 Laden Sie mithilfe von [Composer](prerequisites/commerce.md) (empfohlen) herunter oder klonen Sie es von GitHub für Entwicklungsbeiträge.
 
-Wenn Sie einen Beitrag zur Magento Open Source-Codebasis leisten oder das Programm anpassen möchten, [&#x200B; Sie das GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)Repository (klonen). Diese Methode erfordert Vertrautheit mit GitHub und Composer.
+Wenn Sie einen Beitrag zur Magento Open Source-Codebasis leisten oder das Programm anpassen möchten, [ Sie das GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)Repository (klonen). Diese Methode erfordert Vertrautheit mit GitHub und Composer.
 
 ### Installieren des Programms
 
-Führen Sie den Installationsbefehl mit Ihrer spezifischen Konfiguration aus. Vollständige Beispiele finden Sie [&#x200B; &quot;](composer.md)&quot;.
+Führen Sie den Installationsbefehl mit Ihrer spezifischen Konfiguration aus. Vollständige Beispiele finden Sie [ &quot;](composer.md)&quot;.
 
 >[!NOTE]
 >

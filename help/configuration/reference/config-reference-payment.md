@@ -3,18 +3,32 @@ title: Referenz zu Zahlungskonfigurationspfaden
 description: Erfahren Sie mehr über Zahlungskonfigurationspfade und Methodenwerte in Adobe Commerce Admin. Entdecken Sie Konfigurationsoptionen für PayPal, Kreditkarten und Payment Gateway.
 feature: Configuration, Payments
 exl-id: f3e356aa-7262-4d99-9ed4-d77cbd93708c
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '5835'
 ht-degree: 0%
-
 ---
-
 # Referenz zu Zahlungskonfigurationspfaden
 
 Diese Konfigurationswerte sind in der Admin unter **Stores** > Einstellungen > **Konfiguration** > **Verkauf** > **Zahlungsmethoden** verfügbar.
 
-Der [`magento app:config:dump` Befehl &#x200B;](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte. Informationen dazu, wie Sie Konfigurationseinstellungen optional überschreiben oder vertrauliche Einstellungen festlegen können, finden Sie unter [Verwenden von Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen](override-config-settings.md#environment-variables). In diesem Thema werden _Alt_ [sensible und systemspezifische Werte &#x200B;](config-reference-sens.md).
+Der [`magento app:config:dump` Befehl ](../cli/export-configuration.md) diese Werte in die freigegebene Konfigurationsdatei `app/etc/config.php`, die sich in der Versionsverwaltung befinden sollte. Informationen dazu, wie Sie Konfigurationseinstellungen optional überschreiben oder vertrauliche Einstellungen festlegen können, finden Sie unter [Verwenden von Umgebungsvariablen zum Überschreiben von Konfigurationseinstellungen](override-config-settings.md#environment-variables). In diesem Thema werden _Alt_ [sensible und systemspezifische Werte ](config-reference-sens.md).
 
 Die Einstellungen sind außerdem nach Zahlungsmethode geordnet.
 
@@ -104,7 +118,7 @@ Die Einstellungen sind außerdem nach Zahlungsmethode geordnet.
 
 ## Payments Pro Hosted Solution (Vereinigtes Königreich)
 
-Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Handelsland“ &#x200B;](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
+Diese Optionen sind nur verfügbar, wenn Sie das Vereinigte Königreich als [Handelsland“ ](../reference/config-reference-sens.md#payment-sensitive-and-system-specific-paths).
 
 | -Name | Konfigurationspfad | Commerce-Versionsunterstützung? |
 |--------------|--------------|--------------|

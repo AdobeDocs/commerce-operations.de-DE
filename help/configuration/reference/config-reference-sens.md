@@ -3,18 +3,32 @@ title: Sensible und systemspezifische Pfade
 description: Erfahren Sie mehr über vertrauliche und systemspezifische Konfigurationspfade für Adobe Commerce. Erkunden Sie die sichere Konfiguration und Verwaltung von Umgebungsvariablen.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '4570'
 ht-degree: 0%
-
 ---
-
 # Sensible und systemspezifische Einstellungen
 
 In diesem Thema werden Konfigurationspfade für systemspezifische und vertrauliche Einstellungen aufgelistet:
 
-- Mit dem [`magento app:config:dump` Befehl &#x200B;](../cli/export-configuration.md) systemspezifische Einstellungen in die systemspezifische Konfigurationsdatei `app/etc/env.php` geschrieben, die sich _in_ Versionsverwaltung befinden sollte. Außerdem wird die freigegebene Konfiguration für alle Commerce-Instanzen in `app/etc/config.php` geschrieben. Diese Datei _sollte_ in der Quell-Code-Verwaltung sein.
+- Mit dem [`magento app:config:dump` Befehl ](../cli/export-configuration.md) systemspezifische Einstellungen in die systemspezifische Konfigurationsdatei `app/etc/env.php` geschrieben, die sich _in_ Versionsverwaltung befinden sollte. Außerdem wird die freigegebene Konfiguration für alle Commerce-Instanzen in `app/etc/config.php` geschrieben. Diese Datei _sollte_ in der Quell-Code-Verwaltung sein.
 - Der Befehl [`magento config:sensitive:set`](../cli/set-configuration-values.md) schreibt vertrauliche Einstellungen in `app/etc/env.php`.
 
   Sie können vertrauliche Werte auch mithilfe von Konfigurationsvariablen festlegen, wie unter [Verwenden von Umgebungsvariablen zum Überschreiben der Konfigurationseinstellungen](../reference/override-config-settings.md#environment-variables) beschrieben.

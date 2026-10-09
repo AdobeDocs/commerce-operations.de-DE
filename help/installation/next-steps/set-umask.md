@@ -3,16 +3,30 @@ title: Maske festlegen (optional)
 description: Verbessern Sie den Sicherheitszustand Ihrer lokalen Adobe Commerce-Installation, indem Sie die Dateisystemberechtigungen einschränken.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
-
 ---
-
 # Maske festlegen (optional)
 
-Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Es empfiehlt sich jedoch, die Sicherheit zu erhöhen, insbesondere in der Produktion. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe einer „umask[&#x200B; weiter &#x200B;](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html) beschränken.
+Die Webserver-Gruppe muss über Schreibberechtigungen für bestimmte Ordner im Dateisystem verfügen. Es empfiehlt sich jedoch, die Sicherheit zu erhöhen, insbesondere in der Produktion. Wir bieten Ihnen die Flexibilität, diese Berechtigungen mithilfe einer „umask[ weiter ](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html) beschränken.
 
 Unsere Lösung besteht darin, es Ihnen zu ermöglichen, optional eine Datei mit dem Namen `magento_umask` in Ihrem Anwendungsstammverzeichnis zu erstellen, die die Berechtigungen für die Webservergruppe und alle anderen einschränkt.
 
@@ -33,7 +47,7 @@ Häufig wird vorgeschlagen, in der `magento_umask`-Datei den Wert `022` zu verwe
 
 So legen `magento_umask` fest:
 
-1. Melden Sie sich als „Dateisystembesitzer“ über ein Befehlszeilen-Terminal [&#x200B; Ihrem Anwendungs-Server &#x200B;](../prerequisites/file-system/overview.md).
+1. Melden Sie sich als „Dateisystembesitzer“ über ein Befehlszeilen-Terminal [ Ihrem Anwendungs-Server ](../prerequisites/file-system/overview.md).
 1. Navigieren Sie zum Installationsverzeichnis der Anwendung:
 
    ```shell

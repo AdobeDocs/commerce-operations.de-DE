@@ -2,13 +2,22 @@
 title: Konfigurationstypen
 description: Erfahren Sie, wie Sie Konfigurationstypen in Adobe Commerce erstellen und erweitern. Erfahren Sie mehr über die Konfiguration von Modulen und Anpassungstechniken.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '603'
 ht-degree: 0%
-
 ---
-
 # Konfigurationstypen
 
 ## Erweitern von Konfigurationstypen
@@ -48,7 +57,7 @@ So erstellen Sie einen Konfigurationstyp:
 1. Erstellen Sie Ihre XML-Datei.
 1. Definieren Sie Ihr Konfigurationsobjekt in Ihrem `di.xml`.
 
-   Das folgende Beispiel aus der Datei &quot;[.xml“ des Moduls &quot;Magento_Sales](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) veranschaulicht, wie ein Konfigurationsobjekt aussehen sollte.
+   Das folgende Beispiel aus der Datei &quot;[.xml“ des Moduls „Magento_Sales](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) veranschaulicht, wie ein Konfigurationsobjekt aussehen sollte.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -80,7 +89,7 @@ So erstellen Sie einen Konfigurationstyp:
    - Anschließend hängt der Knoten vom Typ „Virtueller `pdfConfigDataStorage`&quot; die Readerklasse an eine Instanz von [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php) an.
    - Und schließlich hängt der letzte Typknoten diesen virtuellen Konfigurationstyp an die Klasse [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) an, die zum tatsächlichen Einlesen von Werten aus diesen PDF[xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml)-Dateien verwendet wird.
 
-1. Definieren Sie einen Reader, indem Sie die Klasse {0[Magento\Framework\Config\Reader\Filesystem} erweitern und die folgenden Parameter neu schreiben:](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php)
+1. Definieren Sie einen Reader, indem Sie die Klasse {0](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php)Magento\Framework\Config\Reader\Filesystem} erweitern und die folgenden Parameter neu schreiben:[
 
    ```php
    $_idAttributes // Array of node attribute IDs.
@@ -115,7 +124,7 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->Wenn Sie Ihre eigene Version des Readers erstellen möchten, können Sie dies tun, indem Sie `\Magento\Framework\Config\ReaderInterface` implementieren. Siehe [Magento_Analytics-Konfigurationsleser](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>Wenn Sie Ihre eigene Version des Readers erstellen möchten, können Sie dies tun, indem Sie `\Magento\Framework\Config\ReaderInterface` implementieren. Siehe [Magento_Analytics config reader](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 Nachdem Sie Ihren Reader definiert haben, verwenden Sie ihn zum Erfassen, Zusammenführen, Validieren und Konvertieren der Konfigurationsdateien in eine interne Array-Darstellung.
 

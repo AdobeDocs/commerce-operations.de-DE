@@ -1,13 +1,22 @@
 ---
 title: Workflow-Übersicht [!DNL Adobe Commerce Patching Automation]
-description: Erfahren Sie mehr über  [!DNL Adobe Commerce Patching Automation]  Workflow-Prozess, einschließlich Terminologie, Workflow-Phasen und Vorgänge für die automatisierte Patch-Verwaltung.
-source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
+description: Erfahren Sie mehr über den [!DNL Adobe Commerce Patching Automation] Workflow-Prozess, einschließlich Terminologie, Workflow-Phasen und Vorgängen für die automatisierte Patch-Verwaltung.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1128'
 ht-degree: 0%
-
 ---
-
 # Workflow-Übersicht [!DNL Adobe Commerce Patching Automation]
 
 Dieses Thema bietet einen allgemeinen Überblick darüber, wie Patch-Vorgänge mithilfe von [!DNL Adobe Commerce Patching Automation] funktionieren.
@@ -81,7 +90,7 @@ Dieser Ansatz bietet:
 
 **Kein Daten-Cloning** - Die Integrationsumgebung erhält keine Kopie der Daten der Zielumgebung (Datenbank, Medien oder anderer gespeicherter Inhalt). Nur die Code-Basis wird zum Anwenden und Überprüfen des Patches verwendet
 
-**Ressourcenanforderungen** - Die gesamte Speicherkapazität Ihres Cloud-Projekts ist in Ihrem Vertrag definiert. (Überprüfen Sie dies über Ihre Kontoseite oder `magento-cloud subscription:info`). Die Festplattenzuordnung jeder Umgebung wird separat über die `disk`-Eigenschaft in `.magento.app.yaml`/`.magento/services.yaml` konfiguriert. Weitere [&#x200B; finden Sie unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) von Festplattenspeicher . Wenn ein Patch-Vorgang aufgrund von Speicherbeschränkungen fehlschlägt, überprüfen Sie die Festplattenauslastung (`magento-cloud db:size`/`magento-cloud mount:size`) Ihrer Integrationsumgebung in Bezug auf die konfigurierte Zuordnung.
+**Ressourcenanforderungen** - Die gesamte Speicherkapazität Ihres Cloud-Projekts ist in Ihrem Vertrag definiert. (Überprüfen Sie dies über Ihre Kontoseite oder `magento-cloud subscription:info`). Die Festplattenzuordnung jeder Umgebung wird separat über die `disk`-Eigenschaft in `.magento.app.yaml`/`.magento/services.yaml` konfiguriert. Weitere [ finden Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) von Festplattenspeicher . Wenn ein Patch-Vorgang aufgrund von Speicherbeschränkungen fehlschlägt, überprüfen Sie die Festplattenauslastung (`magento-cloud db:size`/`magento-cloud mount:size`) Ihrer Integrationsumgebung in Bezug auf die konfigurierte Zuordnung.
 
 #### Schritt 2b: Patchen der Anwendung in der Integrationsumgebung
 

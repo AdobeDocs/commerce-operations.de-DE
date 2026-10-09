@@ -4,13 +4,23 @@ description: Erfahren Sie, wie MySQL-Trigger und Slave-Verbindungen die Leistung
 role: Developer
 feature: Best Practices
 exl-id: 7c2f51fd-9333-4954-bd35-79c2de3cb2ff
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
-
 ---
-
 # Best Practices für die MySQL-Konfiguration
 
 >[!NOTE]
@@ -47,8 +57,8 @@ Dieser zusätzliche Mehraufwand kann sich negativ auf die Site-Leistung auf der 
 Um Leistungsprobleme bei der Verwendung von Triggern zu vermeiden, befolgen Sie die folgenden Richtlinien:
 
 - Wenn Sie benutzerdefinierte Trigger haben, die einige Daten schreiben, wenn der Trigger ausgeführt wird, verschieben Sie diese Logik stattdessen so, dass sie direkt in die Audit-Tabellen schreibt. Durch Hinzufügen einer zusätzlichen Abfrage im Anwendungscode nach der Abfrage, für die Sie den Trigger erstellen möchten, können Sie dies beispielsweise tun.
-- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt in die Tabellen auf Anwendungsseite zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung nach vorhandenen Triggern in Ihrer &#x200B;](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
-- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [&#x200B; Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+- Überprüfen Sie vorhandene benutzerdefinierte Trigger und erwägen Sie, sie zu entfernen und direkt in die Tabellen auf Anwendungsseite zu schreiben. Suchen Sie mithilfe der [`SHOW TRIGGERS` SQL-Anweisung nach vorhandenen Triggern in Ihrer ](https://dev.mysql.com/doc/refman/8.0/en/show-triggers.html).
+- Wenn Sie weitere Hilfe, Fragen oder Bedenken wünschen, [ Sie ein Adobe Commerce Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Slave-Verbindungen
 
@@ -62,7 +72,7 @@ Adobe Commerce auf Cloud-Infrastruktur, nur Pro-Architektur
 
 ### Konfiguration
 
-In der Adobe Commerce on Cloud-Infrastruktur können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung überschreiben, indem Sie die Variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) festlegen. Legen Sie diese Variable auf `true` fest, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
+In der Adobe Commerce on Cloud-Infrastruktur können Sie die Standardkonfiguration für die MYSQL-Slave-Verbindung überschreiben, indem Sie die Variable [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) festlegen. Legen Sie diese Variable auf `true` fest, um automatisch eine schreibgeschützte Verbindung zur Datenbank zu verwenden.
 
 **So aktivieren Sie die MySQL-Slave-Verbindung**:
 

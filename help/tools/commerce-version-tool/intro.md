@@ -1,25 +1,39 @@
 ---
 title: '[!DNL Commerce Version Tool]'
-description: Erfahren Sie mehr über  [!DNL Commerce Version Tool]  für Adobe Commerce und verwenden Sie den Status „Vendor/bin/patch-status“, um den monatlichen Sicherheits-Patch-Status zu überprüfen.
+description: Erfahren Sie mehr über die [!DNL Commerce Version Tool] für Adobe Commerce und überprüfen Sie mithilfe von Vendor/bin/patch-status den monatlichen Sicherheits-Patch-Status.
 TQID: 'https://experienceleague.adobe.com/9lDQtCrcCSIFjt3jUJkqCo-rMlIhhy3tPTtPyT4wt1Q'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+    internal-label: Reporting
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: eafe79321da03f4778dd9e1b290141ef082a5eaf
+    internal-label: Security
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: '587'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Version Tool]
 
 Die monatlichen Sicherheits-Patches für Adobe Commerce sind nicht kumulativ und müssen nacheinander angewendet werden. Die [!DNL Commerce Version Tool] ([!DNL CVT]) hilft Händlern bei der Überprüfung der Patch-Abdeckung, indem sie meldet, welche monatlichen Sicherheits-Patches installiert sind, welche Patches fehlen und gegen welche CVEs die Installation geschützt ist.

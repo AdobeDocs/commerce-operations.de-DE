@@ -1,13 +1,22 @@
 ---
 title: Message Broker (ActiveMQ Artemis)
 description: Führen Sie diese Schritte aus, um Apache ActiveMQ Artemis Message Broker für lokale Installationen von Adobe Commerce zu installieren und zu konfigurieren.
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '938'
 ht-degree: 0%
-
 ---
-
 # Message Broker (ActiveMQ Artemis)
 
 Adobe Commerce unterstützt außerdem den Open-Source-Nachrichtenbroker ActiveMQ Artemis über das Simple Text Oriented Messaging Protocol (STOMP). Es bietet ein zuverlässiges und skalierbares Messaging-System, das Flexibilität für STOMP-basierte Integrationen bietet.
@@ -15,7 +24,7 @@ Adobe Commerce unterstützt außerdem den Open-Source-Nachrichtenbroker ActiveMQ
 
 >[!NOTE]
 >
->ActiveMQ Artemis wurde in Adobe Commerce 2.4.5 und höheren Versionen eingeführt. Weitere Informationen zur Installation von ActiveMQ Artemis in Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Einrichten des ActiveMQ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/activemq)Service im *Handbuch zu Commerce in Cloud*.
+>ActiveMQ Artemis wurde in Adobe Commerce 2.4.5 und höheren Versionen eingeführt. Weitere Informationen zur Installation von ActiveMQ Artemis in Adobe Commerce in Cloud-Infrastrukturprojekten finden Sie unter [Einrichten des ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq)Service im *Handbuch zu Commerce in Cloud*.
 
 Nachrichtenwarteschlangen bieten einen asynchronen Kommunikationsmechanismus, bei dem sich Absender und Empfänger einer Nachricht nicht berühren. Sie müssen auch nicht gleichzeitig mit der Nachrichtenwarteschlange kommunizieren. Wenn ein Absender eine Nachricht in eine Warteschlange stellt, wird sie gespeichert, bis der Empfänger sie erhält.
 
@@ -26,11 +35,11 @@ Das Meldungswarteschlangensystem muss vor der Installation von Adobe Commerce ei
 
 >[!NOTE]
 >
->Sie können MySQL, ActiveMQ oder [!DNL RabbitMQ] für die Verarbeitung von Nachrichtenwarteschlangen verwenden. Einzelheiten zum Einrichten des Meldungswarteschlangen-Systems finden Sie unter [Meldungswarteschlangen - Übersicht](https://developer.adobe.com/commerce/php/development/components/message-queues/). Wenn Sie die Bulk API mit Adobe Commerce verwenden, verwendet die Systemkonfiguration für die Nachrichtenwarteschlange standardmäßig [!DNL RabbitMQ] als Nachrichtenbroker. Weitere Informationen [&#x200B; Sie unter &#x200B;](../../configuration/cli/start-message-queues.md) starten.
+>Sie können MySQL, ActiveMQ oder [!DNL RabbitMQ] für die Verarbeitung von Nachrichtenwarteschlangen verwenden. Einzelheiten zum Einrichten des Meldungswarteschlangen-Systems finden Sie unter [Meldungswarteschlangen - Übersicht](https://developer.adobe.com/commerce/php/development/components/message-queues/). Wenn Sie die Bulk API mit Adobe Commerce verwenden, verwendet die Systemkonfiguration für die Nachrichtenwarteschlange standardmäßig [!DNL RabbitMQ] als Nachrichtenbroker. Weitere Informationen [ Sie unter ](../../configuration/cli/start-message-queues.md) starten.
 
 >[!TIP]
 >
->Überprüfen Sie vor der [&#x200B; immer die Download-Seite &#x200B;](https://activemq.apache.org/components/artemis/download/)Apache ActiveMQ Artemis) auf die neueste stabile Version. Die Beispiele in diesem Dokument verwenden Version 2.42.0, die die neueste stabile Version vom September 2025 war.
+>Überprüfen Sie vor der [ immer die Download-Seite ](https://activemq.apache.org/components/artemis/download/)Apache ActiveMQ Artemis) auf die neueste stabile Version. Die Beispiele in diesem Dokument verwenden Version 2.42.0, die die neueste stabile Version vom September 2025 war.
 
 
 ## Installieren von Apache ActiveMQ Artemis
@@ -352,5 +361,5 @@ Die erwartete Ausgabe sollte die hergestellte Verbindung und die STOMP-Protokoll
 
 ## Starten der Nachrichtenwarteschlangen-Verbraucher
 
-Nachdem Sie Adobe Commerce und ActiveMQ Artemis verbunden haben, müssen Sie die Nachrichtenwarteschlange für Verbraucher starten. Weitere [&#x200B; finden Sie unter &quot;](../../configuration/cli/start-message-queues.md) konfigurieren“.
+Nachdem Sie Adobe Commerce und ActiveMQ Artemis verbunden haben, müssen Sie die Nachrichtenwarteschlange für Verbraucher starten. Weitere [ finden Sie unter &quot;](../../configuration/cli/start-message-queues.md) konfigurieren“.
 

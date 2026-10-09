@@ -4,7 +4,23 @@ description: Erfahren Sie, wie Sie mit dem Quality Patches Tool Patches für Ado
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 2b2ac06c54af242407ae4f3fbfb23180e6ec3ae8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -13,11 +29,11 @@ ht-degree: 0%
 
 Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) stellt individuelle Patches bereit, die von Adobe und der Magento Open Source-Community entwickelt wurden. Damit können Sie allgemeine Informationen zu allen einzelnen Patches, die für die installierte Version von Adobe Commerce verfügbar sind, anwenden, zurücksetzen und anzeigen. Sie können Patches auf Adobe Commerce-Projekte anwenden, unabhängig davon, wer den Patch entwickelt hat. Sie können beispielsweise einen von der Community entwickelten Patch auf Adobe Commerce-Projekte anwenden.
 
-In diesem [technischen Video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=de) erfahren Sie, wie Sie das Quality Patches Tool für Adobe Commerce verwenden.
+In diesem [technischen Video](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html) erfahren Sie, wie Sie das Quality Patches Tool für Adobe Commerce verwenden.
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](#apply-individual-patches)Projekte finden Sie unter „Anwenden einzelner Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](#apply-individual-patches)Projekte finden Sie unter „Anwenden einzelner Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!WARNING]
 >
@@ -60,7 +76,7 @@ Adobe Commerce 2.3.5.
 Die Statustabelle enthält:
 
 - **Typ**:
-  - `Optional` - Alle Patches aus dem [!DNL Quality Patches Tool] und dem Paket [Handbuch für Commerce in Cloud-Infrastruktur > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) sind für Adobe Commerce-Installationen optional.
+  - `Optional` - Alle Patches aus dem [!DNL Quality Patches Tool] und dem Paket [Handbuch für Commerce in Cloud-Infrastruktur > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) sind für Adobe Commerce-Installationen optional.
   - `Deprecated` - Adobe hat den einzelnen Patch eingestellt. Wenn Sie das Pflaster aufgeklebt haben, empfehlen wir, es rückgängig zu machen. Der Wiederherstellungsvorgang entfernt auch den Patch aus der Statustabelle.
 
 - **Status**:
@@ -81,7 +97,7 @@ Die Statustabelle enthält:
 
 >[!WARNING]
 >
->Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=de).
+>Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Um einen einzelnen Patch anzuwenden, führen Sie den folgenden Befehl aus, wobei `MAGETWO-XXXX` die in der Statustabelle angegebene Patch-ID ist:
 
@@ -109,7 +125,7 @@ Sie müssen den Cache nach dem Anwenden von Patches bereinigen, um Änderungen i
 
 >[!WARNING]
 >
->Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=de).
+>Es empfiehlt sich, alle Patches in einer Staging- oder Entwicklungsumgebung zu testen, bevor sie in der Produktion bereitgestellt werden. Es wird außerdem empfohlen, eine Sicherungskopie der Daten zu erstellen, bevor Sie ein Patch anwenden. Siehe [Sichern und Rollback des Dateisystems, der Medien und der Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Um einen einzelnen Patch wiederherzustellen, führen Sie den folgenden Befehl aus, wobei `MAGETWO-XXXX` die in der Statustabelle angegebene Patch-ID ist:
 
@@ -165,7 +181,7 @@ So wenden Sie Patches erneut an:
    composer update magento/quality-patches.
    ```
 
-1. Öffnen Sie die Liste der zuvor angewendeten Patches, die unter [Anwenden einzelner Patches“ empfohlen &#x200B;](#apply-individual-patches).
+1. Öffnen Sie die Liste der zuvor angewendeten Patches, die unter [Anwenden einzelner Patches“ empfohlen ](#apply-individual-patches).
 
 1. Patches anwenden:
 

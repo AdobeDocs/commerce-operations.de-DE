@@ -2,13 +2,22 @@
 title: Erweitertes Setup
 description: Erfahren Sie, wie Sie das erweiterte Setup für Adobe Commerce einrichten. Hier finden Sie Schritt-für-Schritt-Anweisungen und Konfigurationsanforderungen.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
-
 ---
-
 # Erweitertes Setup
 
 [!DNL Commerce] ist ein hochflexibles und skalierbares Produkt, das Lösungen für Händler jeder Größe enthält. Dieser Abschnitt enthält Best Practices und Empfehlungen zur Konfiguration von [!DNL Commerce] für die Arbeit mit großen Datenmengen, extremer Auslastung und anderen Unternehmensfällen.
@@ -42,7 +51,7 @@ Um die Indexierungszeit zu verkürzen, können Sie [bestimmte Websites aus Kunde
 
 Manchmal reicht eine Redis-Instanz nicht aus, um eingehende Anfragen zu bedienen. Es gibt mehrere Lösungen, die wir empfehlen können, um diese Situation zu beheben.
 
-Zunächst können Sie mit [!DNL Commerce] für jeden Cache-Typ einen separaten Cache-Speicher konfigurieren. Auf diese Weise können Sie so viele separate Redis-Instanzen installieren wie Cache-Typen, die in Magento registriert sind. Realistisch betrachtet empfiehlt es sich, Redis-Instanzen für die am häufigsten verwendeten Caches zu verwenden, z. B. für Konfiguration, Layout und Blöcke.
+Zunächst können Sie mit [!DNL Commerce] für jeden Cache-Typ einen separaten Cache-Speicher konfigurieren. Auf diese Weise können Sie so viele separate Redis-Instanzen installieren wie die Anzahl der Cache-Typen, die in Magento registriert sind. Realistisch betrachtet empfiehlt es sich, Redis-Instanzen für die am häufigsten verwendeten Caches zu verwenden, z. B. für Konfiguration, Layout und Blöcke.
 
 Eine andere Lösung kann darin bestehen, den Konfigurations-Cache auf dem Dateisystem zu platzieren und die anderen Caches auf den Redis-Server zu verschieben. Mit dieser Lösung benötigen Sie ein separates Tool zur zentralisierten Invalidierung des Konfigurations-Caches auf allen Ihren Web-Knoten.
 
@@ -99,7 +108,7 @@ Weitere Informationen zur Konfiguration und den Vorteilen mehrerer Master/Slave-
 
 ## Bereitstellen von Medieninhalten
 
-Magento bietet keine spezielle Integration zur Bereitstellung und Bereitstellung von Medieninhalten. In Magento können alle gängigen Ansätze zusammen verwendet werden.
+Magento bietet keine spezielle Integration zur Bereitstellung und Bereitstellung von Medieninhalten. Alle gängigen Ansätze können in Magento zusammen verwendet werden.
 
 Die einfachste Möglichkeit, Medieninhalte bereitzustellen, besteht darin, sie auf einem [!DNL Varnish]-Server bereitzustellen und zwischenzuspeichern. Bei diesem Ansatz wird entweder von einem freigegebenen Dateisystem zum Speichern von Medieninhalten oder einem dedizierten Server ausgegangen, der auf [!DNL Varnish] verweist.
 
