@@ -82,7 +82,7 @@ Die Migration zu Magento 2 umfasst vier Komponenten: Daten, Erweiterungen und be
 
 ### Daten
 
-Wir haben die [!DNL Data Migration Tool]**** Magento 2 entwickelt, damit Sie all Ihre Produkte, Kunden und Bestelldaten, Store-Konfigurationen, Werbeaktionen und mehr effizient zu Magento 2 übertragen können. Dieses Handbuch enthält Informationen zum -Tool und Best Practices für dessen Verwendung zur Migration Ihrer Daten.
+Wir haben die [!DNL Data Migration Tool]&#x200B;**&#x200B;** Magento 2 entwickelt, damit Sie all Ihre Produkte, Kunden und Bestelldaten, Store-Konfigurationen, Werbeaktionen und mehr effizient zu Magento 2 übertragen können. Dieses Handbuch enthält Informationen zum -Tool und Best Practices für dessen Verwendung zur Migration Ihrer Daten.
 
 ### Erweiterungen und benutzerdefinierter Code
 

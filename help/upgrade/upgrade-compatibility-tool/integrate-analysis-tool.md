@@ -40,7 +40,7 @@ Nach Abschluss des Scans werden die allgemeinen Ergebnisse im Widget angezeigt.
 
 ![UCT SWAT-Widget - Ergebnisse](../../assets/upgrade-guide/uct-swat-results.png)
 
-Klicken Sie auf **[!UICONTROL Download Report]** , um den [!DNL Upgrade Compatibility Tool] [HTML-Bericht abzurufen ](../upgrade-compatibility-tool/reports.md#html-report) die Details zu überprüfen.
+Klicken Sie auf **[!UICONTROL Download Report]** , um den [!DNL Upgrade Compatibility Tool] [HTML-Bericht abzurufen &#x200B;](../upgrade-compatibility-tool/reports.md#html-report) die Details zu überprüfen.
 
 
 >[!NOTE]

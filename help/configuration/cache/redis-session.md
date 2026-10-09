@@ -47,7 +47,7 @@ Commerce bietet jetzt Befehlszeilenoptionen zum Konfigurieren des Redis-Sitzungs
 
 >[!IMPORTANT]
 >
->Bevor Sie den Sitzungsspeicher konfigurieren können, müssen Sie &quot;[&quot; ](config-redis.md#install-redis).
+>Bevor Sie den Sitzungsspeicher konfigurieren können, müssen Sie &quot;[&quot; &#x200B;](config-redis.md#install-redis).
 
 Führen Sie den `setup:config:set` Befehl aus und geben Sie Redis-spezifische Parameter an.
 

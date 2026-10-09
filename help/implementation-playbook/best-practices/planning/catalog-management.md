@@ -41,7 +41,7 @@ Um eine optimale Leistung zu erzielen, verwenden Sie die folgenden Richtlinien, 
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -59,7 +59,7 @@ Die Konfiguration einer großen Anzahl von Kategorien kann die Leistung beeintr�
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -82,7 +82,7 @@ Die Konfiguration zu vieler Produktattribute oder Produktattributoptionen kann d
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -150,7 +150,7 @@ Die Konfiguration zu vieler Produktoptionen pro Produkt kann die Leistung beeint
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -182,7 +182,7 @@ Die Anzeige zu vieler Produkte pro Seite kann die Leistung beeinträchtigen.
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -199,7 +199,7 @@ Die Konfiguration zu vieler Produkt-SKUs kann die Leistung beeinträchtigen, ind
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -226,7 +226,7 @@ Die Konfiguration zu vieler Varianten pro Produkt kann die Leistung beeinträcht
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises
@@ -261,7 +261,7 @@ Befolgen Sie diese Best Practices, um Verkäufe und Promotions für Artikel in e
 
 ### Betroffene Produkte und Versionen
 
-[Alle unterstützten ](../../../release/versions.md) von:
+[Alle unterstützten &#x200B;](../../../release/versions.md) von:
 
 - Adobe Commerce auf Cloud-Infrastruktur
 - Adobe Commerce On-Premises

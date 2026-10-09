@@ -48,7 +48,7 @@ Commerce bietet Befehlszeilenoptionen zum Konfigurieren des Valkey-Sitzungsspeic
 
 >[!IMPORTANT]
 >
->Bevor Sie den Sitzungsspeicher konfigurieren können, müssen Sie &quot;[&quot; ](config-valkey.md#install-valkey).
+>Bevor Sie den Sitzungsspeicher konfigurieren können, müssen Sie &quot;[&quot; &#x200B;](config-valkey.md#install-valkey).
 
 ## Valley-Sitzungsspeicher konfigurieren
 

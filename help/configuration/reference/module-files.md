@@ -137,7 +137,7 @@ In der folgenden Tabelle sind die einzelnen Konfigurationstypen und das Commerce
 
 ### Konfigurationsoberflächen
 
-Sie können mit Konfigurationsdateien über die Schnittstellen unter &quot;[\Framework\Config“ ](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config).
+Sie können mit Konfigurationsdateien über die Schnittstellen unter &quot;[\Framework\Config“ &#x200B;](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Config).
 
 Sie können diese Schnittstellen verwenden, wenn Sie [einen Konfigurationstyp erstellen](../reference/config-create-types.md#create-configuration-types).
 
@@ -145,7 +145,7 @@ Sie können diese Schnittstellen verwenden, wenn Sie [einen Konfigurationstyp er
 
 - [Framework\Config\ConverterInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ConverterInterface.php), das den XML-Code in eine speicherinterne Array-Darstellung der Konfigurationen konvertiert.
 - [Framework\Config\DataInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/DataInterface.php), das die Konfigurationsdaten in einem bestimmten Umfang abruft.
-- [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php), das den Speicherort der Dateien angibt, die von [Magento\Framework\Config\ReaderInterface gelesen werden ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
+- [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php), das den Speicherort der Dateien angibt, die von [Magento\Framework\Config\ReaderInterface gelesen werden &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
 - [Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php), das die Konfigurationsdaten aus dem Speicher liest und den Speicher auswählt, aus dem er liest.
 
 Das heißt, das Dateisystem, die Datenbank und der andere Speicher führen die Konfigurationsdateien gemäß den Zusammenführungsregeln zusammen und validieren die Konfigurationsdateien mit den Validierungsschemata.

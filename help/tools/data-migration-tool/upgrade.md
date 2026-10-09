@@ -35,7 +35,7 @@ Bevor Sie ein Upgrade des [!DNL Data Migration Tool] durchführen, müssen Sie:
 
 ### Aktualisieren der Magento-Software
 
-Falls Sie dies noch nicht getan haben, [ Sie die Magento-Software ](../../upgrade/overview.md).
+Falls Sie dies noch nicht getan haben, [&#x200B; Sie die Magento-Software &#x200B;](../../upgrade/overview.md).
 
 ### Sichern Sie das `vendor/magento/data-migration-tool`
 
@@ -56,7 +56,7 @@ php <magento_root>/bin/magento setup:backup --code --db
 
 Die Versionen des [!DNL Data Migration Tool] und Ihrer Magento-Software müssen genau übereinstimmen. Magento 2.1.2 erfordert beispielsweise Version 2.1.2 des [!DNL Data Migration Tool].
 
-Weitere Informationen finden Sie [ Thema  [!DNL Data Migration Tool]](install.md)Installieren):
+Weitere Informationen finden Sie [&#x200B; Thema  [!DNL Data Migration Tool]](install.md)Installieren):
 
 * [Überprüfen](install.md#check-your-version) Ihre Magento 2-Version
 
