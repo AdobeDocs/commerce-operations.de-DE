@@ -2,7 +2,7 @@
 title: Installieren von Apache für On-Premise-Bereitstellungen
 description: Erfahren Sie, wie Sie Apache für lokale Adobe Commerce-Bereitstellungen installieren und konfigurieren. Aktivieren Sie erforderliche Module, Neuschreibungen und ".htaccess“-Einstellungen.
 feature: Install, Configuration
-badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
+badgePaas: label="On-Premises" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce On-Premise-Projekte."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40175: Optionsschaltflächen werden bei der Neuanordnung nicht angezeigt'
-description: Der Patch MDVA-40175 löst das Problem, dass die Optionsschaltflächen nicht angezeigt werden, wenn Benutzende versuchen, eine Neuanordnung vorzunehmen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-40175. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+description: Der Patch MDVA-40175 löst das Problem, dass die Optionsschaltflächen nicht angezeigt werden, wenn Benutzende versuchen, eine Neuanordnung vorzunehmen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-40175. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: e84ff581-13ba-4f9f-9247-519b0b54807a

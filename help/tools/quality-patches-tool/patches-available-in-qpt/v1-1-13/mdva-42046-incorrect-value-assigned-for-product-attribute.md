@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42046: Falscher Wert für Produktattribut zugewiesen'
-description: Der Patch MDVA-42046 behebt das Problem, dass beim Aktualisieren eines Produkts mit einem Datumseingabefeld für das Produktattribut ein falscher Wert zugewiesen wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-42046. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
+description: Der Patch MDVA-42046 behebt das Problem, dass beim Aktualisieren eines Produkts mit einem Datumseingabefeld für das Produktattribut ein falscher Wert zugewiesen wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-42046. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: Attributes, Products
 role: Admin
 exl-id: ff5903ff-70b3-4274-a8a1-450c2fde9750

@@ -74,7 +74,7 @@ Der **[!UICONTROL Swap memory free in bytes]** zeigt die Menge des ausgelagerten
 
 ![CPU Prozent nach Host](../../assets/tools/cpu-percent-by-host.jpg)
 
-Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** angezeigt. Sie sollten die Auswahl der produktionsfremden Umgebungen aufheben. Beachten Sie außerdem alle Instanzen, bei denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Weitere Tipps zur hohen CPU-Auslastung finden Sie unter [Leistungsprobleme mit New Relic auf Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+Das Aggregat aller Umgebungen und Knoten wird im **[!UICONTROL CPU % by host]** angezeigt. Sie sollten die Auswahl der produktionsfremden Umgebungen aufheben. Beachten Sie außerdem alle Instanzen, bei denen nicht alle Knoten für die Produktionsumgebung vorhanden sind. Weitere Tipps zur hohen CPU-Auslastung finden Sie unter [Leistungsprobleme mit New Relic auf Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=de).
 
 ## [!UICONTROL Alerts during timeframe]
 

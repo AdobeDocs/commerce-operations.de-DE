@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45257: GraphQL zeigt den Warenkorbabschlag nicht korrekt an'
-description: Der Patch ACSD-45257 behebt das Problem, dass GraphQL den Warenkorbabschlag nicht korrekt anzeigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID ist ACSD-45257. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
+description: Der Patch ACSD-45257 behebt das Problem, dass GraphQL den Warenkorbabschlag nicht korrekt anzeigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18 installiert ist. Die Patch-ID ist ACSD-45257. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
 exl-id: 3d546768-7f7e-4724-a6d7-c88ca6b67e8c

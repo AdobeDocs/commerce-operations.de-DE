@@ -54,7 +54,7 @@ Der Patch MDVA-44147 behebt das Problem, dass [!DNL GraphQL] Anfrage nicht [!UIC
 <u>Schritte zur Reproduktion</u>:
 
 1. Navigieren Sie zu **Store** > **Einstellungen** > **Konfiguration** > **Allgemein** > **B2B-Funktionen** und aktivieren Sie **[!UICONTROL Requisition List]**.
-1. Melden Sie sich als Kunde an und fügen Sie dem [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) ein Produkt hinzu.
+1. Melden Sie sich als Kunde an und fügen Sie dem [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/requisition-lists/requisition-lists) ein Produkt hinzu.
 1. Erstellen Sie eine [[!UICONTROL Customer Token]](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
 
    <pre>

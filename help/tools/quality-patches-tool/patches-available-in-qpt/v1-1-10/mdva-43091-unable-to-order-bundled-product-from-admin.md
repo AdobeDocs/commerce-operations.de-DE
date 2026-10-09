@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43091: Gebündeltes Produkt kann nicht vom Administrator bestellt werden'
-description: Der Patch MDVA-43091 löst das Problem, dass Benutzende gebündelte Produkte nicht über Commerce Admin bestellen können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-43091. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+description: Der Patch MDVA-43091 löst das Problem, dass Benutzende gebündelte Produkte nicht über Commerce Admin bestellen können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-43091. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: d2812f97-107c-4db9-93cc-7004344fcc95

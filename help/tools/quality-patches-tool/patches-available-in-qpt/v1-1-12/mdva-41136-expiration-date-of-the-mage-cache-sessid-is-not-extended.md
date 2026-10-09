@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41136: Ablaufdatum von image-cache-sessid wird nicht verlängert'
-description: Der Patch MDVA-41136 löst das Problem, dass das Ablaufdatum des Cookies „mage-cache-sessid“ nicht verlängert wird, was zu einer Bereinigung der Kundendaten führt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-41136. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
+description: Der Patch MDVA-41136 löst das Problem, dass das Ablaufdatum des Cookies „mage-cache-sessid“ nicht verlängert wird, was zu einer Bereinigung der Kundendaten führt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-41136. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: Cache
 role: Admin
 exl-id: f9fbbbdb-b440-4e94-a5b0-c03cdad9f010

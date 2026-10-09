@@ -83,7 +83,7 @@ Adobe empfiehlt, diese Schritte auszuführen, wenn Sie eine Spalte zu einer Core
 
    Beispiel: `app/code/YourCompany/Customer`
 
-1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
+1. Erstellen Sie die entsprechenden Dateien, um das Modul zu aktivieren (siehe [Erstellen eines Moduls](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=de){target="_blank"}.
 
 1. Erstellen Sie eine Datei mit dem Namen `db_schema.xml` im Ordner `etc` und nehmen Sie die entsprechenden Änderungen vor.
 
@@ -165,7 +165,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Suchen nach großen MySQL-Tabellen
 
-Um die großen Tabellen zu identifizieren, stellen Sie eine Verbindung zur Datenbank her, wie im Artikel [Verbindung zur Datenbank herstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) beschrieben, und führen Sie den folgenden Befehl aus. Verwenden Sie `project_id` für die Produktionsumgebung. Verwenden Sie für Staging-Umgebungen `[project_id]_stg`, `[project_id]_stg2`.
+Um die großen Tabellen zu identifizieren, stellen Sie eine Verbindung zur Datenbank her, wie im Artikel [Verbindung zur Datenbank herstellen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) beschrieben, und führen Sie den folgenden Befehl aus. Verwenden Sie `project_id` für die Produktionsumgebung. Verwenden Sie für Staging-Umgebungen `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,
