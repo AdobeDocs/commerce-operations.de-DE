@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37897: Falsche Umleitung beim Hinzufügen von Produkten aus „Zuletzt angezeigt“'
-description: Der Patch MDVA-37897 löst das Problem der falschen Umleitung, wenn Benutzende versuchen, Produkte mit Optionen aus dem Widget „Zuletzt angezeigt“ hinzuzufügen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-37897. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
+description: Der Patch MDVA-37897 löst das Problem der falschen Umleitung, wenn Benutzende versuchen, Produkte mit Optionen aus dem Widget „Zuletzt angezeigt“ hinzuzufügen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-37897. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
 feature: Products
 role: Admin
 exl-id: d4d1d735-38e4-455e-9045-a2443ce33851

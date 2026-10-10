@@ -31,7 +31,7 @@ ht-degree: 0%
 # Verwaltete Warnhinweise für Adobe Commerce
 
 
-Wir haben wichtige Dashboards und Warnhinweise eingerichtet, die Ihnen dabei helfen zu verstehen, wann Ihre Website kritische Speicher- und [!DNL Apdex] erreicht (Zufriedenheit der Benutzer mit der Reaktionszeit von Anwendungen und Services). Dies kann Ihnen helfen, Maßnahmen zu ergreifen, bevor Sie langsame Antwortzeiten oder einen Ausfall bemerken. Sie können die Warnungen mit den unten aufgeführten Artikeln beheben. Bevor Sie die Warnhinweise verwenden können, richten Sie zunächst Benachrichtigungskanäle ein. Siehe [[!DNL New Relic] Konfigurieren von Benachrichtigungskanälen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) im Handbuch zu Commerce in Cloud Cloud .
+Wir haben wichtige Dashboards und Warnhinweise eingerichtet, die Ihnen dabei helfen zu verstehen, wann Ihre Website kritische Speicher- und [!DNL Apdex] erreicht (Zufriedenheit der Benutzer mit der Reaktionszeit von Anwendungen und Services). Dies kann Ihnen helfen, Maßnahmen zu ergreifen, bevor Sie langsame Antwortzeiten oder einen Ausfall bemerken. Sie können die Warnungen mit den unten aufgeführten Artikeln beheben. Bevor Sie die Warnhinweise verwenden können, richten Sie zunächst Benachrichtigungskanäle ein. Siehe [[!DNL New Relic] Konfigurieren von Benachrichtigungskanälen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) im Handbuch zu Commerce in Cloud Cloud .
 
 >[!NOTE]
 >

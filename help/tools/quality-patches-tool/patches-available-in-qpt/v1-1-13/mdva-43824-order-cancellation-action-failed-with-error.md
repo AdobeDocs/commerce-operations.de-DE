@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43824: Fehler bei Aktion zum Stornieren der Bestellung: „Sie haben das Element nicht storniert“'
-description: 'Der Patch MDVA-43824 löst das Problem, dass die Aktion zum Stornieren der Bestellung mit folgendem Fehler fehlgeschlagen ist: * Sie haben den Artikel nicht storniert*. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43824. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.'
+description: 'Der Patch MDVA-43824 löst das Problem, dass die Aktion zum Stornieren der Bestellung mit folgendem Fehler fehlgeschlagen ist: * Sie haben den Artikel nicht storniert*. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43824. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.'
 feature: Orders
 role: Admin
 exl-id: 8c2d15a0-2f53-4583-bdf2-86746f61160f
@@ -71,7 +71,7 @@ Die Aktion des Auftragsstornierens ist mit dem folgenden Fehler fehlgeschlagen: 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
 * Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](/help/tools/quality-patches-tool/usage.md) im [!DNL Quality Patches Tool].
-* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
