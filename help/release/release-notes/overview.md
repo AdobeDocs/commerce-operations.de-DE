@@ -57,7 +57,7 @@ Die nachstehende Tabelle enthält Versionshinweise und wichtige Informationen f�
           <ul>
             <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/backward-incompatible-changes">Abwärtsinkompatible Änderungen</a></li>
             <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches">Cloud-Patches für Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker für Commerce</a></li>
+            <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-docker">Cloud Docker für Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-components">Cloud-Komponenten für Commerce</a></li>
             <li><a href="https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/ece-tools-package">ECE-Tools</a></li>
           </ul>

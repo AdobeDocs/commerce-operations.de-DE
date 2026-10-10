@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41350: Ausnahme, wenn Admin Produkte außerhalb ihres Zugriffs hinzufügt'
-description: Mit dem Patch MDVA-41350 wird das Problem behoben, dass ein Ausnahmefehler anstelle einer Benachrichtigung mit eingeschränktem Zugriff ausgelöst wird, wenn ein Administrator ein Produkt in der Reihenfolge nach SKU hinzufügt, auf das er keinen Zugriff hat. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 installiert ist. Die Patch-ID lautet MDVA-41350. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
+description: Mit dem Patch MDVA-41350 wird das Problem behoben, dass ein Ausnahmefehler anstelle einer Benachrichtigung mit eingeschränktem Zugriff ausgelöst wird, wenn ein Administrator ein Produkt in der Reihenfolge nach SKU hinzufügt, auf das er keinen Zugriff hat. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.11 installiert ist. Die Patch-ID lautet MDVA-41350. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 feature: Admin Workspace, Products
 role: Admin
 exl-id: 4dc5ee5c-bd93-42e1-9c63-93ffb8e5f21c
