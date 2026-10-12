@@ -2,12 +2,11 @@
 source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
-
+ht-degree: 1%
 ---
 # CLI-Optionen für Nachrichtenwarteschlangen-Verbraucher
 
-| -Name | Beschreibung | Wert | Erforderlich |
+| Name | Beschreibung | Wert | Erforderlich |
 |------|-------------|-------|----------|
 | `--consumers-wait-for-messages` | Legt fest, ob Verbraucher auf eine Nachricht aus der Warteschlange warten. | 1 - Ja, 0 - Nein | Nein |
 
