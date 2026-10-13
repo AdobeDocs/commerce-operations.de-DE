@@ -49,7 +49,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
 Die [`services.yaml`-Datei &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) die Standard-Services und -Versionen.
-Siehe [Konfigurieren von Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce* Cloud-Infrastruktur.
+Siehe [Konfigurieren von Services](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce* Cloud-Infrastruktur.
 
 >[!TAB Commerce On-Premises]
 
@@ -106,7 +106,7 @@ Die [Commerce on Cloud-Vorlage](https://github.com/magento/magento-cloud) stellt
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
 Die [`services.yaml`-Datei &#x200B;](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) die Standard-Services und -Versionen.
-Siehe [Konfigurieren von Services](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce* Cloud-Infrastruktur.
+Siehe [Konfigurieren von Services](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) im *Handbuch zu Commerce* Cloud-Infrastruktur.
 
 >[!TAB Commerce On-Premises]
 
@@ -132,7 +132,7 @@ Wenn Sie die lokalen Adobe Commerce-Versionen 2.4.6, 2.4.5 oder 2.4.4 ausführen
 
 Konfigurieren Sie PHP-Einstellungen wie `memory_limit`, um häufige Probleme bei der Verwendung von Adobe Commerce zu vermeiden. Siehe [Erforderliche PHP-](prerequisites/php-settings.md).
 
-Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) im *Handbuch zu Commerce* Cloud-Infrastruktur.
+Eine Anleitung zur Cloud-Konfiguration finden Sie unter [PHP-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings) im *Handbuch zu Commerce* Cloud-Infrastruktur.
 
 ### PHP-OP-Cache
 
@@ -160,7 +160,7 @@ Die [PHP-Installationsanweisungen](prerequisites/php-settings.md) enthalten eine
 
 >[!TIP]
 >
->Informationen zu PHP-Erweiterungen in der Cloud-Infrastruktur finden Sie unter [Aktivieren von PHP-Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) im _Handbuch zu Commerce in_.
+>Informationen zu PHP-Erweiterungen in der Cloud-Infrastruktur finden Sie unter [Aktivieren von PHP-Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) im _Handbuch zu Commerce in_.
 
 >[!BEGINTABS]
 
@@ -199,11 +199,11 @@ Adobe Commerce unterstützt die neuesten und vorherigen Hauptversionen der folge
 
 ### Mail-Server
 
-Mail Transfer Agent (MTA) oder SMTP-Server. Commerce in der Cloud-Infrastruktur verwendet den [SendGrid-E-Mail-Service](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
+Mail Transfer Agent (MTA) oder SMTP-Server. Commerce in der Cloud-Infrastruktur verwendet den [SendGrid-E-Mail-Service](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Arbeitsspeicher
 
-Das Upgrade von Anwendungen und Erweiterungen aus Commerce Marketplace und anderen Quellen kann bis zu 2 GB RAM erfordern. Wenn Ihr System weniger als 2 GB RAM hat, erstellen Sie eine [Auslagerungsdatei](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Ohne eine Auslagerungsdatei schlägt das Upgrade möglicherweise fehl.
+Das Upgrade von Anwendungen und Erweiterungen aus Commerce Marketplace und anderen Quellen kann bis zu 2 GB RAM erfordern. Wenn Ihr System weniger als 2 GB RAM hat, erstellen Sie eine [Auslagerungsdatei](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Ohne eine Auslagerungsdatei schlägt das Upgrade möglicherweise fehl.
 
 ### Betriebssysteme (Linux x86-64)
 
@@ -229,16 +229,16 @@ Adobe Commerce erfordert für einige Vorgänge die folgenden Systemtools:
 - Selbstsignierte SSL-Zertifikate werden nicht unterstützt.
 - Transport Layer Security (TLS)-Anforderung - PayPal und `repo.magento.com` erfordern beide TLS 1.2 oder höher.
 
-Informationen zu Commerce in Cloud-Infrastrukturen finden Sie unter [Fastly-](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)) im Handbuch *Commerce in Cloud-*.
+Informationen zu Commerce in Cloud-Infrastrukturen finden Sie unter [Fastly-](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration)) im Handbuch *Commerce in Cloud-*.
 
 ### xdebug
 
 Verwenden Sie nur für Adobe Commerce-Entwicklungsumgebungen [php_xdebug 2.5.x](https://xdebug.org/download) oder höher. Xdebug kann die Leistung beeinträchtigen.
 
-Informationen zu Adobe Commerce on Cloud finden Sie [Konfigurieren von Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) im Handbuch *Commerce on Cloud Infrastructure*.
+Informationen zu Adobe Commerce on Cloud finden Sie [Konfigurieren von Xdebug](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/test/debug) im Handbuch *Commerce on Cloud Infrastructure*.
 
 >[!NOTE]
 >
->Ein bekanntes Problem mit Xdebug kann Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder den Admin nach der Installation beeinträchtigen. Siehe [Bekanntes Problem, das `xdebug` Installation betrifft](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in der _Commerce Support Knowledge Base_.
+>Ein bekanntes Problem mit Xdebug kann Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder den Admin nach der Installation beeinträchtigen. Siehe [Bekanntes Problem, das `xdebug` Installation betrifft](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in der _Commerce Support Knowledge Base_.
 
 <!-- Last updated from includes: 2026-10-07 13:03:29 -->
