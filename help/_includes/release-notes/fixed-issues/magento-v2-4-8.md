@@ -1,9 +1,8 @@
 ---
-source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '29235'
+source-wordcount: '29236'
 ht-degree: 0%
-
 ---
 # Versionshinweise zu Magento Open Source (v2.4.8)
 
@@ -150,11 +149,11 @@ _ACP2E-2709 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/4
 
 #### Wenn eine neue Version von Adobe Commerce installiert wird, werden festgelegte Indexer im Status Bereit angezeigt
 
-Nach der Installation von Magento muss der Indexerstatus standardmäßig im Status *Bereit* stehen.
+Nach der Installation von Magento muss der Indexerstatus standardmäßig im *Bereit*-Status sein.
 
 _AC-11420 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/71432aeb)_
 
-#### Legen Sie in der bestehenden Magento-Installation bei der Installation des Indexermoduls eines Drittanbieters Indexer standardmäßig in der Zeitplanung für die Aktualisierung fest.
+#### Legen Sie in der vorhandenen Magento-Installation bei der Installation des Indexermoduls eines Drittanbieters Indexer standardmäßig in der Zeitplanung für die Aktualisierung fest.
 
 Alle neuen Indexer befinden sich standardmäßig im Modus [Nach Zeitplan aktualisieren]. Zuvor war der Standardmodus &quot;[ beim Speichern]. Dasselbe gilt auch für benutzerdefinierte Indexer.
 
@@ -198,7 +197,7 @@ TinyMCE 5 wurde auf TinyMCE 7.3.0 migriert, um eine unterstützte Version für A
 
 _AC-12825 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/edcd0dcc)_
 
-#### [2.4.8-beta1] TinyMCE 5 Migration zu TinyMCE 7 - Magento2-infra - Banned Words
+#### [2.4.8-beta1] TinyMCE 5 Migration zu TinyMCE 7 - Magento2-infra - verbotene Wörter
 
 TinyMCE 5 wurde auf TinyMCE 7.3.0 migriert, um eine unterstützte Version für Adobe Commerce zu werden. Zuvor verwendete das System 5.10.2, das veraltet war und Sicherheitslücken meldete
 
@@ -622,9 +621,9 @@ _ACP2E-3559 - [GitHub-Code-](https://github.com/magento/magento2/commit/344fce23
 
 ### Admin-Benutzeroberfläche, B2B
 
-#### B2B-Anmeldung als Kunden-Header hat weiterhin das Magento-Branding
+#### B2B-Anmeldung als Kunden-Header hat noch das Magento-Branding
 
-Zuvor wurde in der Kopfzeile der Storefront „You are now connected as &lt;customer name> on &lt;store name>&quot; (Sie sind jetzt als &lt;customer name> verbunden) mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
+Zuvor wurde in der Kopfzeile der Storefront „Sie sind jetzt als &lt;Kundenname> in &lt;Store-Name> verbunden“ mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
 
 _AC-13628 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -794,7 +793,7 @@ Das System lässt nun bei virtuellen Produkten die Lieferadresse und Versandmeth
 
 _AC-11641 - [GitHub-Problem](https://github.com/magento/magento2/issues/32781) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/32511)_
 
-#### Magento 2-Anmeldung beim Checkout mit vorhandenem Kunden geben Konsolenfehler im Firefox-Browser
+#### Magento 2 Melden Sie sich beim Checkout mit dem Fehler „Bestehender Kunde gibt Konsole“ im Firefox-Browser an.
 
 Das System ermöglicht es Benutzern jetzt, sich während des Checkout-Prozesses anzumelden, ohne dass im Firefox-Browser Konsolenfehler auftreten. Zuvor führte der Versuch, sich während des Checkouts als bestehender Kunde anzumelden, zu einem Konsolenfehler in Firefox.
 
@@ -818,7 +817,7 @@ Das System verarbeitet jetzt benutzerdefinierte Versandmethoden ohne Validierung
 
 _AC-11993 - [GitHub-Problem](https://github.com/magento/magento2/issues/38742) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1bafc571)_
 
-#### Die Gutscheincode-Funktion funktioniert auf der Kaufbestätigungsseite in Magento 2.4.7 nicht ordnungsgemäß
+#### Die Gutscheincode-Funktion funktioniert auf der Kaufbestätigungsseite auf Magento 2.4.7 nicht richtig
 
 Das System aktiviert jetzt das Eingabefeld für Rabattcode/Coupon auf der Checkout-Seite für virtuelle und herunterladbare Produkte, sodass Benutzer Rabattcodes wie erwartet anwenden können. Zuvor war die Eingabe des Rabattcodes/Coupons deaktiviert und der Text des Schaltflächentitels wurde als „Coupon abbrechen“ angezeigt, was Benutzer daran hinderte, Rabattcodes anzuwenden.
 
@@ -1452,7 +1451,7 @@ Nach der Fehlerbehebung kann eine Instanz der Klasse Magento\CatalogSearch\Model
 
 _ACP2E-3345 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1366ae5e)_
 
-#### [CLOUD] Problem mit Produkten ist nach dem Speichern in Magento Admin nicht in Frontend sichtbar
+#### [CLOUD] Problem mit Produkten ist nach dem Speichern in Magento Admin nicht im Frontend sichtbar
 
 Nach der Fehlerbehebung werden konfigurierbare Produkte, die untergeordnete Produkte mit langen Namen haben, in der Storefront nicht übersehen.
 
@@ -2369,7 +2368,7 @@ _ACP2E-3476 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/8
 
 ### Installieren und Verwalten
 
-#### Magento-Upgrade schlägt auf MariaDB 11.4 + 2.4.8-beta1 fehl
+#### Das Magento-Upgrade schlägt auf MariaDB 11.4 + 2.4.8-beta1 fehl
 
 Das Upgrade sollte fehlerfrei durchgeführt werden.
 
@@ -2765,7 +2764,7 @@ _LYNX-757_
 
 #### GraphQL-Aufrufe mit der OPTIONS-Methode geben den 500-Antwort-Code zurück, wenn das Adobe-Commerce/Storefront-Kompatibilitätspaket installiert ist
 
-Es wurde ein Problem behoben, bei dem GraphQL-Aufrufe mit der OPTIONS-Methode bei der Installation des Pakets „adobe-commerce/storefront-compatibility“ einen internen Server-Fehler 500 zurückgaben. Der Endpunkt gibt jetzt korrekt eine 200/204-Antwort wie erwartet zurück.
+Es wurde ein Problem behoben, bei dem GraphQL-Aufrufe mit der OPTIONS-Methode bei der Installation des Pakets adobe-commerce/storefront-compatibility einen internen Server-Fehler 500 zurückgaben. Der Endpunkt gibt jetzt korrekt eine 200/204-Antwort wie erwartet zurück.
 
 _LYNX-778_
 
@@ -2944,7 +2943,7 @@ Das System entfernt jetzt korrekt eine unbekannte referenzierte Variable in PHPD
 
 _AC-13173 - [GitHub-Problem](https://github.com/magento/magento2/issues/38961) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/38940)_
 
-#### [Problem] Fehlerkorrektur: Layout von fehlerhaften Bundles und herunterladbaren Produktseiten in Magento >= 2.4.7 behoben
+#### [Problem] Beschädigtes Layout von Bundles und herunterladbaren Produktseiten in Magento >= 2.4.7 wurde behoben
 
 Das Layout für Paket- und herunterladbare Produktseiten wurde korrigiert, um eine konsistente und korrekte Anzeige auf allen Geräten sicherzustellen. Zuvor traten auf diesen Seiten Layout-Probleme aufgrund einer Neuanordnung des Produktinfo-Medienblocks auf.
 

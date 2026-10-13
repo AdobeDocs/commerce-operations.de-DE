@@ -1,9 +1,8 @@
 ---
-source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '31311'
+source-wordcount: '31332'
 ht-degree: 0%
-
 ---
 # Behobene Probleme in Adobe Commerce (v2.4.8)
 
@@ -483,9 +482,9 @@ _ACP2E-3559 - [GitHub-Code-](https://github.com/magento/magento2/commit/344fce23
 
 ### Admin-Benutzeroberfläche, B2B
 
-#### B2B-Anmeldung als Kunden-Header hat weiterhin das Magento-Branding
+#### B2B-Anmeldung als Kunden-Header hat noch das Magento-Branding
 
-Zuvor wurde in der Kopfzeile der Storefront „You are now connected as &lt;customer name> on &lt;store name>&quot; (Sie sind jetzt als &lt;customer name> verbunden) mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
+Zuvor wurde in der Kopfzeile der Storefront „Sie sind jetzt als &lt;Kundenname> in &lt;Store-Name> verbunden“ mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
 
 _AC-13628 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/96dec499)_
 
@@ -778,7 +777,7 @@ Das System lässt nun bei virtuellen Produkten die Lieferadresse und Versandmeth
 
 _AC-11641 - [GitHub-Problem](https://github.com/magento/magento2/issues/32781) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/32511)_
 
-#### Magento 2-Anmeldung beim Checkout mit vorhandenem Kunden geben Konsolenfehler im Firefox-Browser
+#### Magento 2 Melden Sie sich beim Checkout mit dem Fehler „Bestehender Kunde gibt Konsole“ im Firefox-Browser an.
 
 Das System ermöglicht es Benutzern jetzt, sich während des Checkout-Prozesses anzumelden, ohne dass im Firefox-Browser Konsolenfehler auftreten. Zuvor führte der Versuch, sich während des Checkouts als bestehender Kunde anzumelden, zu einem Konsolenfehler in Firefox.
 
@@ -802,7 +801,7 @@ Das System verarbeitet jetzt benutzerdefinierte Versandmethoden ohne Validierung
 
 _AC-11993 - [GitHub-Problem](https://github.com/magento/magento2/issues/38742) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1bafc571)_
 
-#### Die Gutscheincode-Funktion funktioniert auf der Kaufbestätigungsseite in Magento 2.4.7 nicht ordnungsgemäß
+#### Die Gutscheincode-Funktion funktioniert auf der Kaufbestätigungsseite auf Magento 2.4.7 nicht richtig
 
 Das System aktiviert jetzt das Eingabefeld für Rabattcode/Coupon auf der Checkout-Seite für virtuelle und herunterladbare Produkte, sodass Benutzer Rabattcodes wie erwartet anwenden können. Zuvor war die Eingabe des Rabattcodes/Coupons deaktiviert und der Text des Schaltflächentitels wurde als „Coupon abbrechen“ angezeigt, was Benutzer daran hinderte, Rabattcodes anzuwenden.
 
@@ -1497,7 +1496,7 @@ Nach der Fehlerbehebung kann eine Instanz der Klasse Magento\CatalogSearch\Model
 
 _ACP2E-3345 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1366ae5e)_
 
-#### [CLOUD] Problem mit Produkten ist nach dem Speichern in Magento Admin nicht in Frontend sichtbar
+#### [CLOUD] Problem mit Produkten ist nach dem Speichern in Magento Admin nicht im Frontend sichtbar
 
 Nach der Fehlerbehebung werden konfigurierbare Produkte, die untergeordnete Produkte mit langen Namen haben, in der Storefront nicht übersehen.
 
@@ -2494,7 +2493,7 @@ _ACP2E-3476 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/8
 
 ### Installieren und Verwalten
 
-#### Magento-Upgrade schlägt auf MariaDB 11.4 + 2.4.8-beta1 fehl
+#### Das Magento-Upgrade schlägt auf MariaDB 11.4 + 2.4.8-beta1 fehl
 
 Das Upgrade sollte fehlerfrei durchgeführt werden.
 
@@ -2700,7 +2699,7 @@ Keine Beschreibung verfügbar.
 
 _BUNDLE-3421_
 
-#### [Braintree] [Cloud]Das Braintree-SSL-Zertifikat läuft am 30. Juni ab
+#### [Braintree]&#x200B;[Cloud]Das Braintree-SSL-Zertifikat läuft am 30. Juni ab
 
 Keine Beschreibung verfügbar.
 
@@ -2995,7 +2994,7 @@ _LYNX-758_
 
 #### GraphQL-Aufrufe mit der OPTIONS-Methode geben den 500-Antwort-Code zurück, wenn das Adobe-Commerce/Storefront-Kompatibilitätspaket installiert ist
 
-Es wurde ein Problem behoben, bei dem GraphQL-Aufrufe mit der OPTIONS-Methode bei der Installation des Pakets „adobe-commerce/storefront-compatibility“ einen internen Server-Fehler 500 zurückgaben. Der Endpunkt gibt jetzt korrekt eine 200/204-Antwort wie erwartet zurück.
+Es wurde ein Problem behoben, bei dem GraphQL-Aufrufe mit der OPTIONS-Methode bei der Installation des Pakets adobe-commerce/storefront-compatibility einen internen Server-Fehler 500 zurückgaben. Der Endpunkt gibt jetzt korrekt eine 200/204-Antwort wie erwartet zurück.
 
 _LYNX-778_
 
@@ -3182,7 +3181,7 @@ Das System entfernt jetzt korrekt eine unbekannte referenzierte Variable in PHPD
 
 _AC-13173 - [GitHub-Problem](https://github.com/magento/magento2/issues/38961) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/pull/38940)_
 
-#### [Problem] Fehlerkorrektur: Layout von fehlerhaften Bundles und herunterladbaren Produktseiten in Magento >= 2.4.7 behoben
+#### [Problem] Beschädigtes Layout von Bundles und herunterladbaren Produktseiten in Magento >= 2.4.7 wurde behoben
 
 Das Layout für Paket- und herunterladbare Produktseiten wurde korrigiert, um eine konsistente und korrekte Anzeige auf allen Geräten sicherzustellen. Zuvor traten auf diesen Seiten Layout-Probleme aufgrund einer Neuanordnung des Produktinfo-Medienblocks auf.
 
@@ -3256,7 +3255,7 @@ Es wurde ein Problem mit dem Rabatt auf Warenkorbregeln behoben, wenn der Rabatt
 
 _ACP2E-3332 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### [CLOUD] Beim Magento-Upgrade wurde zwischen Groß- und Kleinschreibung unterschieden
+#### Beim [CLOUD]-Upgrade wurde bei Coupons zwischen Groß- und Kleinschreibung unterschieden
 
 Vor der Fehlerbehebung mussten Sie den Gutscheincode genau so eingeben, wie er unter Berücksichtigung von Groß- oder Kleinbuchstaben konfiguriert wurde. Jetzt wird der Coupon im Backend validiert, unabhängig von der Code-Konfiguration in Groß- oder Kleinbuchstaben.
 
