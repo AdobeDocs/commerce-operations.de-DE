@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Behobene Probleme in Magento Open Source (v2.4.9)
 
@@ -669,9 +668,9 @@ _ACP2E-4698 - [GitHub-Code-Beitrag](https://github.com/magento/magento2-page-bui
 
 ### Admin-Benutzeroberfläche, B2B
 
-#### B2B-Anmeldung als Kunden-Header hat weiterhin das Magento-Branding
+#### B2B-Anmeldung als Kunden-Header hat noch das Magento-Branding
 
-Zuvor wurde in der Kopfzeile der Storefront „You are now connected as &lt;customer name> on &lt;store name>&quot; (Sie sind jetzt als &lt;customer name> verbunden) mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
+Zuvor wurde in der Kopfzeile der Storefront „Sie sind jetzt als &lt;Kundenname> in &lt;Store-Name> verbunden“ mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
 
 _AC-14361 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/fadcfa8b)_
 
@@ -1474,7 +1473,7 @@ Es wurde ein Problem behoben, bei dem der Indexer für Katalogregeln zu viel Spe
 
 _ACP2E-4303 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/c135fc3a)_
 
-#### Der Vorschau-Link für &rbrack; geplante Updates von &lbrack;CMS leitet zur Wartungsseite weiter
+#### Der Vorschau-Link für ] geplante Updates von [CMS leitet zur Wartungsseite weiter
 
 Vorschau des geplanten Updates des Links zur Startseite mit konfigurierbaren Produkten zeigt die Liste der Produkte korrekt an. Zuvor wurden Benutzer zur Wartungsseite umgeleitet
 
@@ -3648,7 +3647,7 @@ _ACP2E-4212 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/a
 
 #### Navigieren zwischen Websites in der Vorschau für Zeitplanaktualisierung nicht möglich
 
-Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
+Vor dieser Fehlerbehebung würde die Vorschau für geplante Updates fehlschlagen, wenn versucht wird, Inhalte für Stores mit benutzerdefinierten Domains in der Vorschau anzuzeigen. Nach dieser Fehlerbehebung können benutzerdefinierte Store-Domains wie vorliegend in der Vorschau angezeigt und innerhalb des Vorschau-IFrame navigiert werden. Die Fehlerbehebung gilt für Produkte, Kategorien, CMS-Seiten und CMS-Blöcke und unterstützt Navigationslinks mit `{{store url}}` Markup-Tags, wie in [Adobe Commerce-Variablen und Markup-Tags](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags) dokumentiert.
 
 _ACP2E-4308 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/0a3b7032)_
 
