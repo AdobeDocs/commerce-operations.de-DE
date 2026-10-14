@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '553'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -46,7 +46,7 @@ QPT v1.1.84 enthält die folgenden Patches:
 1. **ACP2E-5242**: Es wurde ein Problem behoben, bei dem beim Überprüfen der Produktverfügbarkeit beim Hinzufügen von Artikeln zum Warenkorb ein Fehler angezeigt wurde, der angibt, dass die Website nicht gefunden werden kann.
 1. **ACP2E-5263**: Es wird das Problem behoben, dass das Exportieren von Produkten in eine CSV-Datei gestoppt werden kann, bevor alle Produkte einbezogen werden, was zu einer unvollständigen Datei führt.
 1. **ACP2E-5034**: Es wird ein Problem behoben, bei dem die Gesamtsummen bei der Neuberechnung eines Angebots nach der Auswahl einer Versandmethode fälschlicherweise auf *null* zurückgesetzt werden. Außerdem werden Aktualisierungen der Produktoptionsmengen verworfen, die durch die **[!UICONTROL Configure]**-Aktion in der Admin vorgenommen wurden, und es werden keine korrekten Rabatte auf Artikelebene berücksichtigt, die auf dynamische Preispaketprodukte in Angebots-Zwischensummen angewendet werden.
-1. **ACP2E-4741**: Behebt das Problem, dass ein Produkt aus der Storefront verschwindet, nachdem ein mit ihm verknüpftes Produkt als [!UICONTROL Related Product], [!UICONTROL Up-Sell] oder Crosssell gespeichert wurde, während ein nicht standardmäßiger Bestand und eine Quelle verwendet werden.
+1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Behebt das Problem, dass ein Produkt aus der Storefront verschwindet, nachdem ein Produkt, das als verwandtes Produkt, Upsell oder Crosssell damit verknüpft ist, gespeichert wurde, während ein nicht standardmäßiger Bestand und eine nicht standardmäßige Quelle verwendet werden.
 1. **ACP2E-5079**: Es wird ein Problem behoben, durch das bei der Auswertung eines Kundensegments, das mehreren Websites zugewiesen wurde, übereinstimmende Kunden nur von der ersten Website zurückgibt, wenn Kundenkonten global freigegeben werden.
 1. **ACP2E-5127**: Es wird ein Problem behoben, bei dem das Bearbeiten eines Unternehmenskontos im Admin-Bedienfeld mit einem nicht standardmäßigen Gebietsschema dessen **[!UICONTROL Credit Limit]** auf &quot;*&quot;*.
 1. **AC-15494**: Es wird das Problem behoben, bei dem die Produktabfrage Produktnamen mit HTML-Escape-Sonderzeichen anstelle der Originalzeichen zurückgibt.
