@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a6c0c808ce57bf00b1ee0cfac6a17008df4d4e22
+source-git-commit: 2456f0e28fa24e23eb7692a905c708007a00bd96
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -54,4 +54,4 @@ Die folgende Tabelle zeigt die Versionsunterstützung für jeden Service im Verh
 
 {{$include /help/_includes/templated/product-availability-services.md}}
 
-<!-- Last updated from includes: 2026-10-07 07:57:15 -->
+<!-- Last updated from includes: 2026-10-12 21:19:44 -->
