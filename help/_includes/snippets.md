@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1188'
 ht-degree: 0%
-
 ---
 # Snippets
 
@@ -21,7 +20,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 >[!NOTE]
 >
->Wenn Ihr Commerce-Projekt in der Cloud bereitgestellt wird, verwendet die Vollseiten-Zwischenspeicherung [Fastly](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/fastly) statt Varnish. Die Themen in diesem Abschnitt gelten nur für On-Premise-Installationen.
+>Wenn Ihr Commerce-Projekt in der Cloud bereitgestellt wird, verwendet die Vollseiten-Zwischenspeicherung [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) statt Varnish. Die Themen in diesem Abschnitt gelten nur für On-Premise-Installationen.
 
 ## Unterstützung der Adobe-Service-Version {#supported-versions-only}
 
@@ -29,7 +28,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 >
 >Adobe unterstützt nur Bereitstellungen, auf denen unterstützte Versionen aller Abhängigkeiten und Services ausgeführt werden. Dies gilt für:
 >
->* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de).
+>* **Plattformdienste** (einschließlich, aber nicht beschränkt auf PHP, MariaDB/MySQL, Redis, Elasticsearch/OpenSearch, RabbitMQ und Nginx) — Händler müssen auf Versionen bleiben, die mit ihrer bereitgestellten Adobe Commerce-Version kompatibel sind. Siehe [Systemanforderungen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html).
 >* **Commerce Services-Erweiterungen** (einschließlich, aber nicht beschränkt auf Live Search, Produktempfehlungen und Zahlungs-Services) - nur die neueste veröffentlichte Version wird unterstützt.
 >* **Benutzerdefinierte Erweiterungen und Integrationen von Drittanbietern** - Händler sind dafür verantwortlich sicherzustellen, dass diese auf vom Anbieter unterstützten Versionen bleiben.
 >
@@ -39,7 +38,20 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 ## Sicherheits-Patches für erweiterte Unterstützung {#extended-support}
 
-{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
+>[!NOTE]
+>
+>**Erweiterter Support** Sicherheits-Patches sind nur für Adobe Commerce-Kunden verfügbar. Sie sind nicht für die Magento Open Source-Code-Basis verfügbar.
+>
+>**Adobe Commerce in Cloud (Versionshinweise 2.4.4-2.4.6)** — Führen Sie ein Upgrade auf eine unterstützte Version durch oder migrieren Sie vor dem Erzwingungsdatum des Versions-Upgrades zu [!DNL Adobe Commerce as a Cloud Service]. Übergangsbestimmungen zur Unterstützung ersetzen nicht die Durchsetzung von Cloud-Upgrades.
+>
+>Siehe auch:
+>
+>- [Software-Lebenszyklusrichtlinie](/help/release/lifecycle-policy.md) — Termine für das Ende der Unterstützung, erweiterter Support und Übergangsbestimmungen, die nur für Sicherheit gelten
+>- [Erforderliche Maßnahmen und Fristen zur Sicherung von Commerce-Umgebungen](/help/release/security-enforcement-policy.md) — Erzwingungstermine und erforderliche Maßnahmen
+
+## Adobe-Sicherheitsbulletin APSB26-49 {#security-bulletin-apsb26-49}
+
+Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB26-49](https://www.adobe.com/trust/security/products/commerce/apsb26-49.html).
 
 ## Nur Commerce {#commerce-only}
 
@@ -53,7 +65,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 >[!WARNING]
 >
->Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt &#x200B;](/help/configuration/cli/config-cli.md#prerequisites).
+>Alle Magento-CLI-Befehle müssen vom [Dateisystembesitzer“ ausgeführt ](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Sicherungsbefehle {#tip-backup-command}
 
@@ -65,7 +77,7 @@ Redis-Cache wird für Adobe Commerce 2.4.9 oder Patch-Versionen nach 2.4.5-p16, 
 
 >[!NOTE]
 >
->Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes).
+>Nach der Installation dieses Sicherheits-Patches müssen Adobe Commerce B2B-Händler auch auf die neueste kompatible Version des B2B-Sicherheits-Patches aktualisieren. Siehe [B2B-](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Nur Adobe Commerce {#ee-only}
 
@@ -119,7 +131,7 @@ Bevor Sie Indexer im parallelen Modus ausführen können, müssen Sie Process Co
 
 >[!IMPORTANT]
 >
->Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
+>Adobe unterstützt nicht die Anwendung offizieller, von Adobe bereitgestellter Patches mit dieser Methode. Verwenden Sie die folgende Methode auf eigene Gefahr. Verwenden Sie die [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, um offizielle Patches anzuwenden. Führen Sie immer umfassende Tests durch, bevor Sie einen benutzerdefinierten Patch bereitstellen.
 
 ## Sicherheits-Patch-Backports Oktober 2025 {#oct-2025-backports}
 
@@ -150,7 +162,7 @@ Nach den letzten CSP-/SRI-Änderungen werden static.min.js und mixins.min.js nic
 
 **Hotfix**:
 
-Ein Hotfix ist verfügbar. Weitere [&#x200B; finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
+Ein Hotfix ist verfügbar. Weitere [ finden Sie in der Wissensdatenbank unter Checkout schlägt fehl, wenn die JS](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997)Minimierung und -Bündelung aktiviert sind.
 
 ## Valkey Redis CLI-Hinweis {#valkey-redis-cli-note}
 
