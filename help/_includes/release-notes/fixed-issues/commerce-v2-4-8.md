@@ -1,7 +1,7 @@
 ---
 source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '31332'
+source-wordcount: '31312'
 ht-degree: 0%
 ---
 # Behobene Probleme in Adobe Commerce (v2.4.8)
@@ -801,7 +801,7 @@ Das System verarbeitet jetzt benutzerdefinierte Versandmethoden ohne Validierung
 
 _AC-11993 - [GitHub-Problem](https://github.com/magento/magento2/issues/38742) - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/1bafc571)_
 
-#### Die Gutscheincode-Funktion funktioniert auf der Kaufbestätigungsseite auf Magento 2.4.7 nicht richtig
+#### Die Gutscheincode-Funktion funktioniert auf der Kaufbestätigungsseite in Magento 2.4.7 nicht ordnungsgemäß
 
 Das System aktiviert jetzt das Eingabefeld für Rabattcode/Coupon auf der Checkout-Seite für virtuelle und herunterladbare Produkte, sodass Benutzer Rabattcodes wie erwartet anwenden können. Zuvor war die Eingabe des Rabattcodes/Coupons deaktiviert und der Text des Schaltflächentitels wurde als „Coupon abbrechen“ angezeigt, was Benutzer daran hinderte, Rabattcodes anzuwenden.
 
@@ -2493,7 +2493,7 @@ _ACP2E-3476 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/8
 
 ### Installieren und Verwalten
 
-#### Das Magento-Upgrade schlägt auf MariaDB 11.4 + 2.4.8-beta1 fehl
+#### Magento-Upgrade schlägt auf MariaDB 11.4 + 2.4.8-beta1 fehl
 
 Das Upgrade sollte fehlerfrei durchgeführt werden.
 
@@ -3255,7 +3255,7 @@ Es wurde ein Problem mit dem Rabatt auf Warenkorbregeln behoben, wenn der Rabatt
 
 _ACP2E-3332 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### Beim [CLOUD]-Upgrade wurde bei Coupons zwischen Groß- und Kleinschreibung unterschieden
+#### [CLOUD] Beim Magento-Upgrade wurde zwischen Groß- und Kleinschreibung unterschieden
 
 Vor der Fehlerbehebung mussten Sie den Gutscheincode genau so eingeben, wie er unter Berücksichtigung von Groß- oder Kleinbuchstaben konfiguriert wurde. Jetzt wird der Coupon im Backend validiert, unabhängig von der Code-Konfiguration in Groß- oder Kleinbuchstaben.
 
