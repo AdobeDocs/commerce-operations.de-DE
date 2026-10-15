@@ -35,9 +35,9 @@ level_v2:
     internal-label: Experienced
 badgePaas: label="Adobe Commerce nur auf Cloud 2.4.4 - 2.4.9" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Versionen 2.4.4 bis 2.4.9"
 nudge: true
-source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
+source-git-commit: 5cfbac0f93bc8f82c1af04057c0d9ac3b1f3abb4
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2181'
 ht-degree: 0%
 ---
 
@@ -74,7 +74,7 @@ Um Ihre E-Commerce-Umgebung sicher zu halten und Risiken zu minimieren, müssen 
 
 1. Eine sichere und unterstützte Version von Adobe Commerce on Cloud Service. Zu den vollständig unterstützten Versionen gehören 2.4.8, 2.4.9 oder die neueste verfügbare Version. Siehe die [Lebenszyklusrichtlinie](/help/release/lifecycle-policy.md).
 
-Befolgen Sie die folgenden Richtlinien, um zu überprüfen, ob Sie Maßnahmen ergreifen müssen, um Ihre Adobe Commerce in der Cloud-Umgebung zu schützen. Bei Umgebungen, die die Sicherheitsanforderungen nicht innerhalb der in Tabelle 1 unten angegebenen Fristen erfüllen, wird der eingehende Traffic ausgesetzt, wodurch die Storefront offline geschaltet wird. Wenn Sie Bedenken haben, die Frist einzuhalten, wenden Sie sich bitte so bald wie möglich an Ihr Account-Team oder [&#128279;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) Adobe-Support.
+Befolgen Sie die folgenden Richtlinien, um zu überprüfen, ob Sie Maßnahmen ergreifen müssen, um Ihre Adobe Commerce in der Cloud-Umgebung zu schützen. Umgebungen, die die Sicherheitsanforderungen nicht innerhalb der in Tabelle 1 unten angegebenen Fristen erfüllen, können den Admin-Zugriff aussetzen, während die Storefront online bleibt, und/oder eingehenden Traffic aussetzen, wodurch die Storefront offline geschaltet wird. Wenn Sie Bedenken haben, die Frist einzuhalten, wenden Sie sich bitte so bald wie möglich an Ihr Account-Team oder [&#128279;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) Adobe-Support.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ Die folgende Tabelle hilft Ihnen, Ihre Optionen zu vergleichen und den besten Pf
 
 Adobe unterstützt Sie weiterhin bei der Durchführung der erforderlichen Schritte, um eine unterstützte Version von Software von Drittanbietern einzuführen, auf die neueste Version von Adobe Commerce on Cloud zu aktualisieren oder zu Adobe Commerce as a Cloud Service zu migrieren.  Wenn Sie Bedenken hinsichtlich der Fristverlängerung haben und eine kurze Verlängerung benötigen, wenden Sie sich so bald wie möglich an Ihr Account-Team oder [&#128279;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) Adobe-Support.
 
-Wenn eine Umgebung die Sicherheitsanforderungen bis zu den oben genannten Erzwingungsdaten nicht erfüllt hat, ist Adobe gezwungen, geeignete Maßnahmen zu ergreifen, um die Sicherheit der Adobe Commerce-Plattform und ihrer Kunden zu gewährleisten. Dazu gehört auch, den Traffic an die betroffene Infrastruktur zu unterbrechen, sodass Ihre Commerce-Storefront offline geht.
+Wenn eine Umgebung die Sicherheitsanforderungen bis zu den oben genannten Erzwingungsdaten nicht erfüllt hat, ist Adobe gezwungen, geeignete Maßnahmen zu ergreifen, um die Sicherheit der Adobe Commerce-Plattform und ihrer Kunden zu gewährleisten. Dazu kann gehören, dass allen Benutzenden in der betroffenen Umgebung der Zugriff auf den Adobe Commerce-Admin verweigert wird, während die Storefront online bleibt, und/oder dass der Traffic auf die betroffene Infrastruktur unterbrochen wird, was dazu führt, dass Ihre Commerce Storefront offline geht.
 
 Wenn eine Umgebung nach der Traffic-Aussetzung weiterhin nicht konform ist, kann Adobe die Cloud-Services beenden und den Stilllegungsprozess starten. Als Ergebnis der Stilllegung werden alle Daten und Assets in der gehosteten Commerce-Umgebung, einschließlich aller Instanzen, Umgebungen und Zweige, dauerhaft gelöscht und können nicht wiederhergestellt werden.
 

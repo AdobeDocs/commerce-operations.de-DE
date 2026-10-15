@@ -3,7 +3,6 @@ source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '6806'
 ht-degree: 0%
-
 ---
 # Adobe Commerce-Glossar
 

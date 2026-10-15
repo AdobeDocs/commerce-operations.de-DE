@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
+source-git-commit: 0e4d8845da584cd8a58b49d1adf892df80155734
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '514'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -33,10 +33,10 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 QPT v1.1.83 enthält die folgenden Patches:
 
 1. **AC-17975**: Behebt mehrere Kompatibilitätsprobleme mit PHP 8.5, die sich auf Admin-Workflows, Checkout-Authentifizierung, CAPTCHA-Verarbeitung, Kategorieverwaltung, Konfigurationsseiten und Befehlszeilenvorgänge in bestimmten PHP-Umgebungen auswirken.
-1. **AC-18128**: Es wird das Problem behoben, bei dem von GraphQL zurückgegebene Bestelldaten und Bestellkommentar-Zeitstempel falsche Kalenderdaten in nicht englischen Gebietsschemaeinstellungen anzeigen.
-1. **AC-18096**: Es wird das Problem behoben, bei dem Datumsfelder in Sales GraphQL Datumsangaben in einem anderen Format als frühere Versionen zurückgeben, indem das Datumsformat von Schrägstrich (`/`) auf Strich (`-`) zurückgesetzt wird.
+1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: Es wird das Problem behoben, dass Datumsfelder in Sales GraphQL Datumsangaben in einem anderen Format als frühere Versionen zurückgeben, indem das Datumsformat von durch Schrägstrich (/) getrennt auf durch Bindestrich (-) getrennt zurückgesetzt wird.
+1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: Es wird das Problem behoben, bei dem von GraphQL zurückgegebene Bestelldaten und Bestellkommentar-Zeitstempel falsche Kalenderdaten in nicht englischen Gebietsschemaeinstellungen anzeigen können.
+1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: Es wurde das Problem behoben, dass ein Admin-Benutzer mit eingeschränkten Berechtigungen keine Kunden aus dem Raster Kunden löschen kann.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: Behebt das Problem, dass der Elementtyp der Anforderungsliste im GraphQL-Schema falsch geschrieben wurde. Das Feld „Ältere `items`&quot; und der `RequistionListItems` sind weiterhin verfügbar, werden aber nicht mehr unterstützt.
-1. **ACP2E-4838**: Es wurde das Problem behoben, dass ein Admin-Benutzer mit eingeschränkten Berechtigungen Kundinnen und Kunden nicht aus dem Kundenraster löschen kann.
 1. **ACP2E-4877**: Behebt das Problem, dass mit **[!UICONTROL Payment on Account]** aufgegebene Bestellungen nicht in Admin bearbeitet werden konnten, während sie den Status *Ausstehend* hatten.
 1. **ACP2E-4908**: Es wird das Problem behoben, dass große Kataloge zu übermäßiger Speichernutzung in Redis oder Valkey führen, da für jedes Produkt in jeder Shop-Ansicht separate Layout-Cache-Einträge erstellt wurden.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: Es wird ein Problem behoben, bei dem bei der Neuanordnung einer Bestellung im Administrator eine neue Bestellnummer mit einem `-1` Suffix erstellt wird, anstatt die nächste sequenzielle Bestellnummer zuzuweisen.

@@ -3,7 +3,6 @@ source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
 source-wordcount: '32815'
 ht-degree: 0%
-
 ---
 # Behobene Probleme in Magento Open Source (v2.4.9)
 
@@ -669,9 +668,9 @@ _ACP2E-4698 - [GitHub-Code-Beitrag](https://github.com/magento/magento2-page-bui
 
 ### Admin-Benutzeroberfläche, B2B
 
-#### B2B-Anmeldung als Kunden-Header hat weiterhin das Magento-Branding
+#### B2B-Anmeldung als Kunden-Header hat noch das Magento-Branding
 
-Zuvor wurde in der Kopfzeile der Storefront „You are now connected as &lt;customer name> on &lt;store name>&quot; (Sie sind jetzt als &lt;customer name> verbunden) mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
+Zuvor wurde in der Kopfzeile der Storefront „Sie sind jetzt als &lt;Kundenname> in &lt;Store-Name> verbunden“ mit Magento-Branding angezeigt. Was jetzt behoben ist und die Kopfzeile mit ADOBE-Branding angezeigt wird.
 
 _AC-14361 - [GitHub-Code-Beitrag](https://github.com/magento/magento2/commit/fadcfa8b)_
 

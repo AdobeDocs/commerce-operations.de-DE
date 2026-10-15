@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2160'
+source-wordcount: '2137'
 ht-degree: 0%
 ---
 
@@ -28,15 +28,15 @@ ht-degree: 0%
 
 ## 2.4.4-P18
 
-Adobe Commerce 2.4.4-p18 ist eine [erweiterte Support-Sicherheitsversion](../../lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
+Adobe Commerce 2.4.4-p18 ist eine [erweiterte Support-Sicherheitsversion](/help/release/lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
 
-Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB26-49](https://helpx.adobe.com/de/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
 ## 2.4.4-P17
 
-Adobe Commerce 2.4.4-p17 ist eine [erweiterte Support-Sicherheitsversion](../../lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
+Adobe Commerce 2.4.4-p17 ist eine [erweiterte Support-Sicherheitsversion](/help/release/lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB26-05](https://helpx.adobe.com/de/security/products/magento/apsb26-05.html).
 
@@ -44,7 +44,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ## 2.4.4-P16
 
-Adobe Commerce 2.4.4-p16 ist eine [erweiterte Support-Sicherheitsversion](../../lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
+Adobe Commerce 2.4.4-p16 ist eine [erweiterte Support-Sicherheitsversion](/help/release/lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-94](https://helpx.adobe.com/de/security/products/magento/apsb25-94.html).
 
@@ -62,7 +62,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ## 2.4.4-p15
 
-Adobe Commerce 2.4.4-p15 ist eine [erweiterte Support-Sicherheitsversion](../../lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
+Adobe Commerce 2.4.4-p15 ist eine [erweiterte Support-Sicherheitsversion](/help/release/lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-71](https://helpx.adobe.com/de/security/products/magento/apsb25-71.html).
 
@@ -70,7 +70,7 @@ Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Ado
 
 ## 2.4.4-P14
 
-Adobe Commerce 2.4.4-p14 ist eine [erweiterte Support-Sicherheitsversion](../../lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
+Adobe Commerce 2.4.4-p14 ist eine [erweiterte Support-Sicherheitsversion](/help/release/lifecycle-policy.md#security-only-transitional-period) die Fehlerkorrekturen für Sicherheitslücken bereitstellt, die in früheren Versionen von 2.4.4 identifiziert wurden. Sie ist nur für Kunden von Adobe Commerce verfügbar.
 
 Die neuesten Informationen zu den Sicherheitsfehlerbehebungen finden Sie im [Adobe-Sicherheitsbulletin APSB25-50](https://helpx.adobe.com/de/security/products/magento/apsb25-50.html).
 
