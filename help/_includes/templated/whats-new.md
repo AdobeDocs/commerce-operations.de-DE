@@ -22,7 +22,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
   </thead>
   <tbody>
     <tr>
-      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.83 für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015: Freigegebener Katalog entfernt Produktzuweisungen und Preise nach einem Sitzungslesefehler</a> hinzugefügt.</p>
+      <td><p>Es wurde eine detaillierte Beschreibung der Fehlerbehebung von QPT 1.1.83 für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015: Freigegebener Katalog entfernt Produktzuweisungen und Preise nach einem Sitzungslesefehler</a> hinzugefügt.</p>
 </td>
       <td>
         Neues Thema, qpt
@@ -30,7 +30,7 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">verpflichten</a></td>
     </tr>
     <tr>
-      <td><p>Eine detaillierte Beschreibung der QPT 1.1.83-Fehlerbehebung für <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: Parallele Add-to-Cart-Anfragen erstellen separate Artikel für dieselbe SKU</a> wurde hinzugefügt.</p>
+      <td><p>Eine detaillierte Beschreibung der QPT 1.1.83-Fehlerbehebung für <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: Parallele Add-to-Cart-Anfragen erstellen separate Artikel für dieselbe SKU</a> wurde hinzugefügt.</p>
 </td>
       <td>
         Neues Thema, qpt
