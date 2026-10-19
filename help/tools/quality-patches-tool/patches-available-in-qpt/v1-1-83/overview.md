@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
+source-git-commit: def92a94816f70e016dad85c428316672adcf452
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '515'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -45,7 +45,7 @@ QPT v1.1.83 enthält die folgenden Patches:
 1. **AC-11389**: Es wird das Problem behoben, bei dem Rabatte, Steuern und Bestellsummen in einigen Rundungsszenarien falsch berechnet werden.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: Es wird ein Problem behoben, durch das das Speichern eines freigegebenen Katalogs in der Admin unbeabsichtigt zugewiesene Produkte und Preise entfernen kann, wenn erforderliche Katalogdaten nicht verfügbar sind.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: Es wird das Problem behoben, dass die `POST /V1/products/tier-prices` REST-API-Anfrage vollständig fehlschlug, wenn keine SKU in der Payload vorhanden war, was verhinderte, dass gültige SKUs aktualisiert wurden.
-1. **AC-14940**: Es wurde ein Problem behoben, bei dem durch Klicken auf **[!UICONTROL Reset Password]** für ein Kundenkonto im Admin-Bereich in einigen Fällen im Zusammenhang mit dem Store die E-Mail zum Zurücksetzen des Kennworts nicht gesendet wurde.
+1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: Es wurde ein Problem behoben, bei dem durch Klicken auf [!UICONTROL Reset Password] für ein Kundenkonto im Administrator die E-Mail zum Zurücksetzen des Kennworts in einigen Fällen im Zusammenhang mit dem Store nicht gesendet wurde.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: Es wurde ein Problem behoben, bei dem die Installation des B2B-Moduls fehlgeschlagen ist, wenn Indexer auf **[!UICONTROL Update by Schedule]** gesetzt wurden.
 1. **ACP2E-5205**: Behebt das Problem, wenn das Laden von Kategorien viel Zeit in Anspruch nimmt oder eine Zeitüberschreitung verursacht, wenn eine große Anzahl von Kategorien und Produkten betroffen ist. Außerdem wird die Produktanzahl jetzt für jedes Kategorieblatt korrekt angezeigt.
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: Es wird ein Problem behoben, durch das beim gleichzeitigen Hinzufügen desselben Produkts zum Warenkorb in der Storefront separate Artikel im Warenkorb für dieselbe SKU erstellt werden, anstatt sie in einem einzigen Artikel zu kombinieren.
