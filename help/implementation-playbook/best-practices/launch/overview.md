@@ -38,7 +38,7 @@ Die folgenden Abschnitte enthalten Best Practice-Informationen für die Launch-P
 
 | Best Practice | Beschreibung |
 |------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Adobe Security Notification Service](https://www.adobe.com/subscription/adbeSecurityNotifications.html) | Abonnieren von Adobe-Sicherheitsbenachrichtigungen. |
+| [Adobe Security Notification Service](https://www.adobe.com/de/subscription/adbeSecurityNotifications.html) | Abonnieren von Adobe-Sicherheitsbenachrichtigungen. |
 | [Sichern Sie Ihre Commerce-Site und -Infrastruktur](security-best-practices.md) | Abhärten des Sicherheitszustands von Commerce-Installationen, um die Commerce-Storefront, den Admin, die Infrastruktur und die Daten vor unbefugtem Zugriff und Cyberangriffen zu schützen. |
 | [Google reCAPTCHA](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/captcha/security-google-recaptcha.html?lang=de) | Konfigurieren Sie Google reCAPTCHA für Administratorzugriff und verschiedene Storefront-Aktionen, die von registrierten Kunden initiiert werden. |
 | [Konfigurieren von Web-Crawler](robots-txt.md) | Übergeben Sie Anweisungen zu Ihrer Adobe Commerce-Site an Web-Crawler. |
