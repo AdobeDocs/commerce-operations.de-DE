@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '10898'
+source-wordcount: '10911'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: Admin-Benutzer haben sich beim Öffnen von Kundenkonten mit großen Adressbüchern abgemeldet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4977: Konfigurierbare Produktrechnung und Gutschriftsummen ohne feste Produktsteuer](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
       - [AC-11389: Die Bestellsummen variieren je nach Bestellung, wenn Produkte zum Warenkorb hinzugefügt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
       - [ACP2E-4877: Schaltfläche „Bearbeiten“ fehlt für ausstehende Zahlung bei Kontobestellungen in Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
       - [AC-14940: E-Mail zum Zurücksetzen des Kennworts wird nicht gesendet, nachdem die Store-Ansicht eines Kunden gelöscht wurde](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)

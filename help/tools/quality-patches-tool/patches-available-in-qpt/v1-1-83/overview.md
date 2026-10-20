@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '523'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -39,8 +39,8 @@ QPT v1.1.83 enthält die folgenden Patches:
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: Es wurde das Problem behoben, dass ein Admin-Benutzer mit eingeschränkten Berechtigungen keine Kunden aus dem Raster Kunden löschen kann.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: Behebt das Problem, dass der Elementtyp der Anforderungsliste im GraphQL-Schema falsch geschrieben wurde. Das Feld „Ältere `items`&quot; und der `RequistionListItems` sind weiterhin verfügbar, werden aber nicht mehr unterstützt.
 1. **ACP2E-4908**: Es wird das Problem behoben, dass große Kataloge zu übermäßiger Speichernutzung in Redis oder Valkey führen, da für jedes Produkt in jeder Shop-Ansicht separate Layout-Cache-Einträge erstellt wurden.
+1. **[ACP2E-4977](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)**: Behebt das Problem, dass die Gesamtsummen der Rechnungen und Gutschriften für konfigurierbare Produkte keine feste Produktsteuer (Fixed Product Tax, FPT) enthalten, was zu Gesamtsummen führt, die niedriger als die Bestellsumme sind.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: Es wird ein Problem behoben, bei dem bei der Neuanordnung einer Bestellung im Administrator eine neue Bestellnummer mit einem `-1` Suffix erstellt wird, anstatt die nächste sequenzielle Bestellnummer zuzuweisen.
-1. **ACP2E-4977**: Behebt das Problem, dass die Gesamtsummen der Rechnungen und Gutschriften für konfigurierbare Produkte keine **[!UICONTROL Fixed Product Tax]** (FPT) enthalten, was zu Gesamtsummen führt, die niedriger als die Bestellsumme sind.
 1. **AC-16530**: Es wird ein Problem behoben, bei dem der Warenkorb geplante Aktualisierungen der Katalogpreisregeln nicht einheitlich widerspiegelte.
 1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: Es wird das Problem behoben, bei dem Rabatte, Steuern und Bestellsummen in einigen Rundungsszenarien falsch berechnet werden.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: Es wird ein Problem behoben, durch das das Speichern eines freigegebenen Katalogs in der Admin unbeabsichtigt zugewiesene Produkte und Preise entfernen kann, wenn erforderliche Katalogdaten nicht verfügbar sind.
