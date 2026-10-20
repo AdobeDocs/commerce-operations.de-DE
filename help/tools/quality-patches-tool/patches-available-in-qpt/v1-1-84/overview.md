@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: e90d6a07d3f4deef685d64d9521fd6cd3165fbae
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
@@ -35,7 +35,7 @@ QPT v1.1.84 enthält die folgenden Patches:
 1. **ACP2E-4913**: Behebt das Problem, dass Versand- und Rechnungsvorgänge aufgrund eines Deadlocks fehlschlagen.
 1. **ACP2E-5005**: Behebt das Problem, dass die Menge einer Bundle-Produktoption in einem verhandelbaren Angebot auf ihren vorherigen Wert zurückgesetzt wird, wenn das Bundle-Produkt in der Admin neu konfiguriert und die Menge bearbeitet wird.
 1. **ACP2E-5009**: Es wird das Problem behoben, dass bei der Datenmigration von Magento Open Source zu Adobe Commerce geplante Designänderungen für Kategorien und geplante Produktaktualisierungen nicht korrekt migriert werden, sodass einige geplante Aktualisierungen während der Migration fehlen oder übersprungen werden und die Migrationsleistung verbessert **[!UICONTROL Special Price]**.
-1. **ACP2E-5017**: Es wird ein Problem behoben, bei dem die Abfrage einer Kundenrolle über GraphQL einen *Internen Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Es wird ein Problem behoben, bei dem die Abfrage der `role` über GraphQL einen *Internen Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
 1. **ACP2E-5027**: Behebt das Problem, dass Indexer in einer Schleife stecken bleiben und die Neuindizierung nicht abgeschlossen werden kann, wenn die Dateisperrung aktiviert ist.
 1. **ACP2E-5029**: Es wird ein Problem behoben, bei dem Änderungen an Katalogpreisregeln erst dann in **[!DNL Live Search]** angezeigt werden, wenn eine manuelle Resynchronisierung durchgeführt wurde.
 1. **ACP2E-5041**: Behebt das Problem, dass beim Speichern eines Produkts während eines geplanten Updates die Storefront nach dem Ende des Updates den regulären Preis anstelle des **[!UICONTROL Special Price]** anzeigt.
