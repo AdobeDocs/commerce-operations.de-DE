@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '558'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -32,15 +32,15 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.84 enthält die folgenden Patches:
 
-1. **ACP2E-4913**: Behebt das Problem, dass Versand- und Rechnungsvorgänge aufgrund eines Deadlocks fehlschlagen.
+1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: Behebt das Problem, dass die REST-API-Lieferung und Rechnungserstellung nach einem Datenbank-Deadlock dauerhaft fehlschlagen.
 1. **ACP2E-5005**: Behebt das Problem, dass die Menge einer Bundle-Produktoption in einem verhandelbaren Angebot auf ihren vorherigen Wert zurückgesetzt wird, wenn das Bundle-Produkt in der Admin neu konfiguriert und die Menge bearbeitet wird.
 1. **ACP2E-5009**: Es wird das Problem behoben, dass bei der Datenmigration von Magento Open Source zu Adobe Commerce geplante Designänderungen für Kategorien und geplante Produktaktualisierungen nicht korrekt migriert werden, sodass einige geplante Aktualisierungen während der Migration fehlen oder übersprungen werden und die Migrationsleistung verbessert **[!UICONTROL Special Price]**.
-1. **ACP2E-5017**: Es wird ein Problem behoben, bei dem die Abfrage einer Kundenrolle über GraphQL einen *Internen Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Es wird ein Problem behoben, bei dem die Abfrage der `role` über GraphQL einen *Internen Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
 1. **ACP2E-5027**: Behebt das Problem, dass Indexer in einer Schleife stecken bleiben und die Neuindizierung nicht abgeschlossen werden kann, wenn die Dateisperrung aktiviert ist.
 1. **ACP2E-5029**: Es wird ein Problem behoben, bei dem Änderungen an Katalogpreisregeln erst dann in **[!DNL Live Search]** angezeigt werden, wenn eine manuelle Resynchronisierung durchgeführt wurde.
 1. **ACP2E-5041**: Behebt das Problem, dass beim Speichern eines Produkts während eines geplanten Updates die Storefront nach dem Ende des Updates den regulären Preis anstelle des **[!UICONTROL Special Price]** anzeigt.
-1. **ACP2E-5059**: Es wird das Problem behoben, dass Kundinnen und Kunden doppelte Auftragsbestätigungs-E-Mails für dieselbe Bestellung erhalten.
-1. **ACP2E-5122**: Es wird das Problem behoben, dass behandelte Fehler von GraphQL-Anfragen für den Warenkorb fälschlicherweise in Ausnahmeprotokollen als Anwendungsfehler aufgezeichnet werden.
+1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: Es wird das Problem behoben, dass Kundinnen und Kunden doppelte Auftragsbestätigungs-E-Mails für dieselbe Bestellung erhalten.
+1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: Es wird das Problem behoben, dass behandelte Fehler von GraphQL-Anfragen für den Warenkorb fälschlicherweise in Ausnahmeprotokollen als Anwendungsfehler aufgezeichnet werden.
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: Es wird das Problem behoben, dass die GraphQL-`route`-Abfrage vollständige CMS-Seiteninhalte rendert, wenn nur Routing-Metadaten angefordert werden, was die Anzahl der Datenbankabfragen für CMS-Seiten erhöht, die Page Builder-Widgets enthalten.
 1. **ACP2E-5183**: Behebt das Problem, dass die Bereitstellung statischer Inhalte in PHP 8.5 beim Kompilieren einer `LESS`-Datei, die die `@magento_import`-Direktive verwendet, fehlschlägt.
 1. **ACP2E-5242**: Es wurde ein Problem behoben, bei dem beim Überprüfen der Produktverfügbarkeit beim Hinzufügen von Artikeln zum Warenkorb ein Fehler angezeigt wurde, der angibt, dass die Website nicht gefunden werden kann.
