@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
+source-git-commit: bbbc64cec77399dcff1a28326227858e7bf1f3a4
 workflow-type: tm+mt
-source-wordcount: '10961'
+source-wordcount: '10974'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854: Admin reorder verwendet die ursprüngliche Bestellnummer mit dem Suffix -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5079: Kundensegmente stimmen nur mit der ersten Website mit der globalen Kontofreigabe überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
       - [ACP2E-5059: Gleichzeitige Cron-Aufträge senden doppelte Bestätigungs-E-Mails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
       - [ACP2E-5122: Verarbeitete GraphQL-Warenkorbfehler werden fälschlicherweise in das Ausnahmeprotokoll geschrieben](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
       - [ACP2E-4913: REST-API-Versand und Rechnungserstellung werden nach einem Datenbank-Deadlock nicht erneut versucht](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
