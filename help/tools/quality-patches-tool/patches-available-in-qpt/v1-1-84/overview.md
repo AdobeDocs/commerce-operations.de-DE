@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 422a6e38f4e2298baa02090ee71d4f0fdfc95e3b
+source-git-commit: ea739d12f02672cf585925b90860bca3b44de02a
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -32,8 +32,8 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.84 enthält die folgenden Patches:
 
+1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: Behebt das Problem, dass die Menge einer Bundle-Produktoption in einem verhandelbaren Angebot auf ihren vorherigen Wert zurückgesetzt wird, wenn das Bundle-Produkt in der Admin neu konfiguriert und die Menge bearbeitet wird.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: Behebt das Problem, dass die REST-API-Lieferung und Rechnungserstellung nach einem Datenbank-Deadlock dauerhaft fehlschlagen.
-1. **ACP2E-5005**: Behebt das Problem, dass die Menge einer Bundle-Produktoption in einem verhandelbaren Angebot auf ihren vorherigen Wert zurückgesetzt wird, wenn das Bundle-Produkt in der Admin neu konfiguriert und die Menge bearbeitet wird.
 1. **ACP2E-5009**: Es wird das Problem behoben, dass bei der Datenmigration von Magento Open Source zu Adobe Commerce geplante Designänderungen für Kategorien und geplante Produktaktualisierungen nicht korrekt migriert werden, sodass einige geplante Aktualisierungen während der Migration fehlen oder übersprungen werden und die Migrationsleistung verbessert **[!UICONTROL Special Price]**.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Es wird ein Problem behoben, bei dem die Abfrage der `role` über GraphQL einen *Internen Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
 1. **ACP2E-5027**: Behebt das Problem, dass Indexer in einer Schleife stecken bleiben und die Neuindizierung nicht abgeschlossen werden kann, wenn die Dateisperrung aktiviert ist.
@@ -48,7 +48,6 @@ QPT v1.1.84 enthält die folgenden Patches:
 1. **ACP2E-5034**: Es wird ein Problem behoben, bei dem die Gesamtsummen bei der Neuberechnung eines Angebots nach der Auswahl einer Versandmethode fälschlicherweise auf *null* zurückgesetzt werden. Außerdem werden Aktualisierungen der Produktoptionsmengen verworfen, die durch die **[!UICONTROL Configure]**-Aktion in der Admin vorgenommen wurden, und es werden keine korrekten Rabatte auf Artikelebene berücksichtigt, die auf dynamische Preispaketprodukte in Angebots-Zwischensummen angewendet werden.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Behebt das Problem, dass ein Produkt aus der Storefront verschwindet, nachdem ein Produkt, das als verwandtes Produkt, Upsell oder Crosssell damit verknüpft ist, gespeichert wurde, während ein nicht standardmäßiger Bestand und eine nicht standardmäßige Quelle verwendet werden.
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: Es wird ein Problem behoben, bei dem beim Bearbeiten eines Unternehmenskontos in Admin mit einem nicht standardmäßigen Gebietsschema dessen **[!UICONTROL Credit Limit]** auf `0` zurückgesetzt wird.
-1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Behebt das Problem, dass ein Produkt aus der Storefront verschwindet, nachdem ein mit ihm verknüpftes Produkt als [!UICONTROL Related Product], [!UICONTROL Up-Sell] oder [!UICONTROL Cross-Sell] gespeichert wurde, während ein nicht standardmäßiger Stock und eine nicht standardmäßige Quelle verwendet werden.
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**: Es wird das Problem behoben, dass ein Kundensegment, das mehreren Websites zugewiesen ist, übereinstimmende Kunden nur von der ersten Website zurückgibt, wenn Kundenkonten global freigegeben werden.
 1. **AC-15494**: Es wird das Problem behoben, bei dem die Produktabfrage Produktnamen mit HTML-Escape-Sonderzeichen anstelle der Originalzeichen zurückgibt.
 
