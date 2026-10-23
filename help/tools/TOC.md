@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: bbbc64cec77399dcff1a28326227858e7bf1f3a4
+source-git-commit: 4ed8f5ee3aefe44d3139421a178ca6834a2815f6
 workflow-type: tm+mt
-source-wordcount: '10974'
+source-wordcount: '11012'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,9 @@ ht-degree: 0%
       - [AC-12854: Admin reorder verwendet die ursprüngliche Bestellnummer mit dem Suffix -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5009: Die Migration der Inhalts-Staging-Umgebung führt zu ungültigen Aktualisierungen und verlangsamt die Einrichtung:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
+      - [ACP2E-5005: Die Produktmengen des Pakets werden nicht in vom Administrator verhandelbaren Angeboten aktualisiert](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
+      - [ACP2E-5127: Beim Speichern eines Unternehmens mit einem nicht englischen Gebietsschema für Administratoren wird das Kreditlimit auf null zurückgesetzt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
       - [ACP2E-5079: Kundensegmente stimmen nur mit der ersten Website mit der globalen Kontofreigabe überein](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
       - [ACP2E-5059: Gleichzeitige Cron-Aufträge senden doppelte Bestätigungs-E-Mails](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
       - [ACP2E-5122: Verarbeitete GraphQL-Warenkorbfehler werden fälschlicherweise in das Ausnahmeprotokoll geschrieben](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
