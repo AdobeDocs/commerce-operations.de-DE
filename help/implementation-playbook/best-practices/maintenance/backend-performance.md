@@ -53,7 +53,7 @@ Ein Tool, das Sie für Belastungstests verwenden können, ist GTmetrix. Die Bela
 
 Erfahren Sie mehr über die Vorbereitung von Commerce-Projekten für Zeiträume mit hohem Traffic:
 
-- [Holiday Readiness](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [Holiday Readiness](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=de)
 - [Analyse des Weihnachtseinkaufs](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=de)
 - [Stoßkapazitätserhöhung](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 
