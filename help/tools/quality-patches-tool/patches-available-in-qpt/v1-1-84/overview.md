@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
+source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '567'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -36,7 +36,7 @@ QPT v1.1.84 enthält die folgenden Patches:
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: Behebt das Problem, dass die REST-API-Lieferung und Rechnungserstellung nach einem Datenbank-Deadlock dauerhaft fehlschlagen.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Es wird das Problem behoben, dass bei der Datenmigration von Magento Open Source zu Adobe Commerce geplante Designänderungen für Kategorien und geplante Produktaktualisierungen nicht korrekt migriert werden, sodass einige geplante Aktualisierungen während der Migration fehlen oder übersprungen werden und die Migrationsleistung verbessert **[!UICONTROL Special Price]**.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Es wird ein Problem behoben, bei dem die Abfrage der `role` über GraphQL einen *Internen Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
-1. **ACP2E-5027**: Behebt das Problem, dass Indexer in einer Schleife stecken bleiben und die Neuindizierung nicht abgeschlossen werden kann, wenn die Dateisperrung aktiviert ist.
+1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: Es wird ein Problem behoben, bei dem Indexer nie beendet werden, da sie weiterhin versuchen, ihre eigene Sperre zu erhalten, wenn die Anwendungssperre aktiviert ist und der Dateisperrenanbieter konfiguriert ist.
 1. **ACP2E-5029**: Es wird ein Problem behoben, bei dem Änderungen an Katalogpreisregeln erst dann in **[!DNL Live Search]** angezeigt werden, wenn eine manuelle Resynchronisierung durchgeführt wurde.
 1. **ACP2E-5041**: Behebt das Problem, dass beim Speichern eines Produkts während eines geplanten Updates die Storefront nach dem Ende des Updates den regulären Preis anstelle des **[!UICONTROL Special Price]** anzeigt.
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: Es wird das Problem behoben, dass Kundinnen und Kunden doppelte Auftragsbestätigungs-E-Mails für dieselbe Bestellung erhalten.

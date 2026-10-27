@@ -1,9 +1,8 @@
 ---
-source-git-commit: c1cc45ae36dd0c0e74c027b80fa9d70c98687561
+source-git-commit: 8dd21f824b65451a7f6468c9abd91fa8b13171a1
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 24%
-
 ---
 # Produktverfügbarkeit der Commerce Services
 
@@ -50,7 +49,7 @@ ht-degree: 24%
       </tr>
       <tr>
           <td>Zahlungsdienste</td>
-          <td>2.16.1</td>
+          <td>2.17.0</td>
           <td>2.16.1</td>
           <td>2.16.1</td>
           <td>2.16.1</td>
