@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 18665c27761a52d631bdb62f282a4153de3f9950
+source-git-commit: 04e36db108c59bd9be2431a5b1a9ee86891b6268
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '549'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -44,13 +44,11 @@ QPT v1.1.84 enthält die folgenden Patches:
 1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: Es wird das Problem behoben, dass die GraphQL-`route`-Abfrage vollständige CMS-Seiteninhalte rendert, wenn nur Routing-Metadaten angefordert werden, was die Datenbankabfragen für CMS-Seiten erhöht, die [!DNL Page Builder] Widgets enthalten.
 1. **ACP2E-5183**: Behebt das Problem, dass die Bereitstellung statischer Inhalte in PHP 8.5 beim Kompilieren einer `LESS`-Datei, die die `@magento_import`-Direktive verwendet, fehlschlägt.
 1. **[ACP2E-5242](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)**: Es wird ein Problem behoben, bei dem beim Überprüfen der Produktverfügbarkeit beim Hinzufügen von Artikeln zum Warenkorb ein Fehler angezeigt wird, der angibt, dass die Website nicht gefunden werden kann.
-1. **ACP2E-5263**: Es wird das Problem behoben, dass das Exportieren von Produkten in eine CSV-Datei gestoppt werden kann, bevor alle Produkte einbezogen werden, was zu einer unvollständigen Datei führt.
-1. **ACP2E-5242**: Es wurde ein Problem behoben, bei dem beim Überprüfen der Produktverfügbarkeit beim Hinzufügen von Artikeln zum Warenkorb ein Fehler angezeigt wurde, der angibt, dass die Website nicht gefunden werden kann.
 1. **[ACP2E-5263](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)**: Es wird das Problem behoben, dass das Exportieren von Produkten in eine CSV-Datei gestoppt werden kann, bevor alle Produkte einbezogen werden, was zu einer unvollständigen Datei führt.
 1. **ACP2E-5034**: Es wird ein Problem behoben, bei dem die Gesamtsummen bei der Neuberechnung eines Angebots nach der Auswahl einer Versandmethode fälschlicherweise auf *null* zurückgesetzt werden. Außerdem werden Aktualisierungen der Produktoptionsmengen verworfen, die durch die **[!UICONTROL Configure]**-Aktion in der Admin vorgenommen wurden, und es werden keine korrekten Rabatte auf Artikelebene berücksichtigt, die auf dynamische Preispaketprodukte in Angebots-Zwischensummen angewendet werden.
+1. **[AC-15494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)**: Es wird das Problem behoben, bei dem die Produktabfrage Produktnamen mit HTML-Escape-Sonderzeichen anstelle der Originalzeichen zurückgibt.
 1. **[ACP2E-4741](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)**: Behebt das Problem, dass ein Produkt aus der Storefront verschwindet, nachdem ein Produkt, das als verwandtes Produkt, Upsell oder Crosssell damit verknüpft ist, gespeichert wurde, während ein nicht standardmäßiger Bestand und eine nicht standardmäßige Quelle verwendet werden.
 1. **[ACP2E-5127](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)**: Es wird ein Problem behoben, bei dem beim Bearbeiten eines Unternehmenskontos in Admin mit einem nicht standardmäßigen Gebietsschema dessen **[!UICONTROL Credit Limit]** auf `0` zurückgesetzt wird.
 1. **[ACP2E-5079](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)**: Es wird ein Problem behoben, durch das bei der Auswertung eines Kundensegments, das mehreren Websites zugewiesen wurde, übereinstimmende Kunden nur von der ersten Website zurückgibt, wenn Kundenkonten global freigegeben werden.
-1. **AC-15494**: Es wird das Problem behoben, bei dem die Produktabfrage Produktnamen mit HTML-Escape-Sonderzeichen anstelle der Originalzeichen zurückgibt.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
