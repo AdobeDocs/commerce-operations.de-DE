@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d864a5fb8d9093a14575f017e7b66a19219d503f
+source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '525'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -32,7 +32,7 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.83 enthält die folgenden Patches:
 
-1. **AC-17975**: Behebt mehrere Kompatibilitätsprobleme mit PHP 8.5, die sich auf Admin-Workflows, Checkout-Authentifizierung, CAPTCHA-Verarbeitung, Kategorieverwaltung, Konfigurationsseiten und Befehlszeilenvorgänge in bestimmten PHP-Umgebungen auswirken.
+1. **[AC-17975](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)**: Es wurde ein Problem behoben, bei dem CLI-Befehle, Kategoriebearbeitung, Design-Konfiguration und die AJAX-Kundenanmeldung in Adobe Commerce 2.4.9 fehlschlugen, wenn PHP 8.5 verwendet wird.
 1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: Es wurde das Problem behoben, dass mit Zahlung auf Konto aufgegebene Bestellungen in Admin nicht bearbeitet werden konnten, während sie sich im Status *Ausstehend* befanden.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: Es wird das Problem behoben, dass Datumsfelder in Sales GraphQL Datumsangaben in einem anderen Format als frühere Versionen zurückgeben, indem das Datumsformat von durch Schrägstrich (/) getrennt auf durch Bindestrich (-) getrennt zurückgesetzt wird.
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: Es wird das Problem behoben, bei dem von GraphQL zurückgegebene Bestelldaten und Bestellkommentar-Zeitstempel falsche Kalenderdaten in nicht englischen Gebietsschemaeinstellungen anzeigen können.
