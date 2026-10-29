@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 889cab9f0f353242319e1feaa090e74819f53027
+source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.82
@@ -44,18 +44,10 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 QPT v1.1.82 enthält die folgenden Patches:
 
 1. **ACP2E-4815**: Behebt mehrere GraphQL-Probleme, die PHP-Ausnahmen in Protokollen verursacht haben, die korrekte Zuordnung von Bestellungen zu Kundenkonten, die nach der Bestellung über GraphQL erstellt wurden, und die Abstimmung von Antworten mit GraphQL über HTTP-Spezifikationen.
-1. **ACP2E-4194**: Behebt das Problem, dass GraphQL-Antworten falsche HTTP-Status-Codes für ungültige, nicht autorisierte oder falsch formatierte Anfragen zurückgeben.
-1. **ACP2E-4593**: Behebt das Problem, dass die für Website-Einschränkungen angezeigte CMS-Seite auf sekundären Websites in Bereitstellungen mit mehreren Websites falsch ist.
-1. **ACP2E-4682**: Es wird ein Problem behoben, dass beim Besuch einer Storefront-Seite, die den Angebotsstatus überprüft, `isActive` bei jedem Laden der Seite leere Anführungszeichen erstellt.
 1. **[ACP2E-4695](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)**: Behebt das Problem, dass der Katalogregel-Indexer zu viel Speicher verbraucht und nicht abgeschlossen werden kann, was zu Instabilität und Speicherfehlern führt.
 1. **[ACP2E-4194](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)**: Behebt das Problem, dass GraphQL-Antworten falsche HTTP-Status-Codes für ungültige, nicht autorisierte oder falsch formatierte Anfragen zurückgeben.
-1. **ACP2E-4547**: Es wird ein Problem behoben, bei dem ein Administrator bzw. eine Administratorin **[!UICONTROL Add Products by SKU]** im Admin nicht verwenden kann, um Produkte aus dem Standardkatalog einem verhandelbaren Angebot für ein Unternehmen hinzuzufügen, das einer Kundengruppe zugewiesen wurde, die nicht mit einem freigegebenen Katalog verknüpft ist.
-1. **ACP2E-4593**: Behebt das Problem, dass die für Website-Einschränkungen angezeigte CMS-Seite auf sekundären Websites in Bereitstellungen mit mehreren Websites falsch ist.
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: Es wird ein Problem behoben, bei dem ein Admin-Benutzer **[!UICONTROL Add Products By SKU]** im Admin-Bereich nicht verwenden kann, um Produkte aus dem Standardkatalog einer Bestellung für eine Firma hinzuzufügen, die einer Kundengruppe zugewiesen wurde, die nicht mit einem freigegebenen Katalog verknüpft ist.
-1. **ACP2E-4593**: Behebt das Problem, dass die für Website-Einschränkungen angezeigte CMS-Seite auf sekundären Websites in Bereitstellungen mit mehreren Websites falsch ist.
-1. **ACP2E-4682**: Es wird ein Problem behoben, dass beim Besuch einer Storefront-Seite, die den Angebotsstatus überprüft, `isActive` bei jedem Laden der Seite leere Anführungszeichen erstellt.
-1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**: Es wird ein Problem behoben, dass beim Besuch einer Storefront-Seite, die den Status „Angebot ist aktiv“ prüft, bei jedem Laden der Seite leere Anführungszeichen erstellt.
-1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: Es wird ein Problem behoben, bei dem ein Admin-Benutzer **[!UICONTROL Add Products By SKU]** im Admin-Bereich nicht verwenden kann, um Produkte aus dem Standardkatalog einer Bestellung für eine Firma hinzuzufügen, die einer Kundengruppe zugewiesen wurde, die nicht mit einem freigegebenen Katalog verknüpft ist.
+1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**: Es wird ein Problem behoben, dass beim Besuch einer Storefront-Seite, die den Angebotsstatus überprüft, `isActive` bei jedem Laden der Seite leere Angebotsdatensätze erstellt.
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: Es wird das Problem behoben, dass die für Website-Einschränkungen angezeigte CMS-Seite auf sekundären Websites in Bereitstellungen mit mehreren Websites falsch sein kann.
 1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: Es wird das Problem behoben, dass durch das erneute Bearbeiten eines Bildes in Page Builder-Textinhalten eine absolute Medien-URL gespeichert werden kann, anstatt eine portable Medienanweisung beizubehalten.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: Es wird ein Problem behoben, bei dem die Eingabe von 4-Byte-Unicode-Zeichen in den WYSIWYG-Editor oder Page Builder-Inhalt in der Admin fälschlicherweise blockiert wird, selbst wenn die Datenbank für die Unterstützung von utf8mb4 konfiguriert ist.

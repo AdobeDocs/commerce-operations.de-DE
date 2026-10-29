@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '270'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.81
@@ -46,9 +46,7 @@ QPT v1.1.81 enthält die folgenden Patches:
 
 1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**: Es wird das Problem behoben, dass der [!UICONTROL Scheduled Update Preview] des [!UICONTROL Home Page] Links mit konfigurierbaren Produkten zur [!UICONTROL maintenance page] umleitet, anstatt die Produktliste anzuzeigen.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: Es wird ein Problem behoben, bei dem das Ändern einer Kundengruppe in der Admin keine Katalogberechtigungen für die Storefront aktualisiert, sodass der Katalog und der Warenkorb veraltete Berechtigungen widerspiegeln.
-1. **ACP2E-4401**: Es wird das Problem behoben, dass der [!UICONTROL Scheduled Update Preview] des Links der Startseite mit konfigurierbaren Produkten zur Wartungsseite umleitet, anstatt die Produktliste anzuzeigen.
 1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**: Bei der Erstellung von Giftcard-API-Produkten wird jetzt ein Fehler angezeigt, wenn für den globalen Umfang keine Beträge angegeben wurden.
-1. **ACP2E-4468**: Behebt das Problem, dass [!UICONTROL Admin] Benutzer mit Berechtigungen für den Website-Umfang Bannerinhalte nicht bearbeiten können.
 1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: Es wird das Problem behoben, dass Admin-Benutzer mit Berechtigungen für den Umfang von Websites den Bannerinhalt nicht bearbeiten können.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: Es wird das Problem behoben, dass lange Produktnamen mit benutzerdefinierten Optionen nach Seitenumbrüchen benachbarte Spalten oder Artikel in mehrseitigen Rechnungs-, Versand-, Gutschriften- und Rückgabe-PDFs überschneiden, wodurch Zeileneinträge unlesbar werden.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: Es wird das Problem behoben, dass nicht verkaufbare oder gelöschte Produkte aus endgültigen verhandelbaren Angeboten verschwinden.
