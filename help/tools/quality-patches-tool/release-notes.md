@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -34,6 +34,23 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Es wird das Problem behoben, dass Attributbeschriftungen auf der Seite [!UICONTROL Compare Products] Übersetzungen aus einer anderen Store-Ansicht anstelle der aktuellen Store-Ansicht anzeigen.
+* **ACP2E-5075** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.10) - Behebt das Problem, dass eine Warenkorb-Preisregel mit einem festen Betrag und einer Kategoriebedingung fälschlicherweise einen Rabatt auf alle untergeordneten Elemente eines Dynamic-Price-Bundle-Produkts angewendet hat, wenn die Regel nur mit dem übergeordneten Bundle-Produkt übereinstimmt.
+* **ACP2E-5077** (für Adobe Commerce und Magento Open Source >=2.4.7-p7 &lt;2.4.10) - Behebt das Problem, dass gleichzeitige `customerCart` GraphQL-Abfragen oder `POST /V1/carts/mine REST`-Anfragen doppelte aktive Warenkörbe für Kunden erstellen, die noch keinen aktiven Warenkorb haben.
+* **ACP2E-5088** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.10) - Behebt das Problem, dass der beständige Warenkorb eines Kunden gelöscht wird, wenn seine Sitzung abläuft.
+* **ACP2E-3991** (für Adobe Commerce >=2.4.7 &lt;2.4.9) - Behebt das Problem, dass die Client-IP-Adresse nicht korrekt bestimmt wird.
+* **ACP2E-5092** (für Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Behebt das Problem, dass die Seite [!UICONTROL Company Profile] und die Admin [!UICONTROL Customer Edit]-Seite einen Fehler anzeigen, wenn eine Firmenadresse, die ohne Region gespeichert wurde, später eine Region zu ihrem Land hinzugefügt wird.
+* **ACP2E-5124** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Behebt das Problem, bei dem die Schaltfläche [!UICONTROL Import] in den Validierungsergebnissen weiterhin verfügbar ist, nachdem die Validierung fehlschlägt, wenn die [!UICONTROL Validation Strategy] auf *Bei Fehler beenden* festgelegt ist.
+* **AC-17456** (für Adobe Commerce und Magento Open Source >=2.4.9 &lt;2.4.10) - Es wurde ein Problem behoben, bei dem die Bearbeitung des *[!UICONTROL Global]* -Bereichs auf der [!UICONTROL Design Configuration] im Admin Panel einen *HTTP 500* -Fehler in PHP 8.4 und 8.5 zurückgab.
+* **ACP2E-5212** (für Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Es wurde das Problem behoben, dass [!UICONTROL Quick Order] Nicht-CSV-Dateien akzeptiert, die mit einer `.csv` umbenannt wurden.
+* **ACP2E-5300** (für Adobe Commerce und Magento Open Source >=2.4.9 &lt;2.4.10) - Es wird das Problem behoben, dass Keywords nach mehreren durch Leerzeichen oder Kommas getrennten Ordnernummern im Admin Panel [!UICONTROL Orders]-Raster keine übereinstimmenden Bestellungen zurückgeben.
+* **ACP2E-5354** (für Adobe Commerce, B2B >=1.5.3 &lt;1.5.4) - Es wird das Problem behoben, bei dem eine Aktualisierung eines Kunden über die REST-API dazu führt, dass ein mit einem Unternehmenskonto verknüpfter Kunde mehrmals im Admin [!UICONTROL Customers]-Raster angezeigt wird.
+* **ACP2E-5208** (für Adobe Commerce, B2B >=1.5.1 &lt;1.5.4) - Es wird das Problem behoben, dass der Abschnitt [!UICONTROL Requisition List] bei jeder Storefront-Seitennavigation neu geladen wird, selbst wenn keine Änderungen vorgenommen wurden.
+* Aktualisierte Versionen: **ACP2E-4894**
+* Patches ersetzt: **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
@@ -1109,7 +1126,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **MDVA-44887** (*für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.5*) - Behebt den Fehler *Nicht erfasste SyntaxError: Unerwartetes Token &#39;const&#39;* im Admin-Bedienfeld.
 * **MDVA-43718** (*für Adobe Commerce und Magento Open Source >=2.3.0 &lt;2.4.5*) - Fehlerbehebungen *Der Benutzer ist nicht berechtigt, auf %resources zuzugreifen.* Fehler, der beim Zugriff auf einen freigegebenen Katalog über eine benutzerdefinierte Integration angezeigt wird.
 * **MDVA-44660** (*für Adobe Commerce und Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Es wurde das Problem behoben, bei dem das Zeichen für einen gravierenden Akzent (\`) nicht für den Vor- und Nachnamen eines Kunden verwendet werden konnte.
-* **MDVA-40896** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.4*) - Behebt den *Fehler: TypeError: Argument 3 wurde an Magento übergeben* Fehler in asynchroner Produkt-Bulk-API.
+* **MDVA-40896** (*für Adobe Commerce und Magento Open Source >=2.4.3 &lt;2.4.4*) - Behebt den Fehler *Fehler: TypeError: Argument 3 wurde an Magento übergeben* in der asynchronen Produkt-Bulk-API.
 * **MDVA-38559** (*für Adobe Commerce und Magento Open Source >=2.4.0 &lt;2.4.3*) - Behebt den */V1/customers/search API*-Fehler für Kunden mit mehr als einem Abonnement.
 * **MDVA-44533** (*für Adobe Commerce und Magento Open Source >=2.3.1 &lt;2.4.4*) - Behebt das Problem, dass der Rabatt fälschlicherweise auf ein untergeordnetes Bundle-Produkt angewendet wird.
 * Aktualisierte Patches: MDVA-41061, MDVA-42269.
