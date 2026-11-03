@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
+source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
 workflow-type: tm+mt
-source-wordcount: '11091'
+source-wordcount: '11112'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: Admin-Benutzer haben sich beim Öffnen von Kundenkonten mit großen Adressbüchern abgemeldet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - v1.1.83 {#v1-1-83}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4908: Große Kataloge verursachen übermäßige Redis- oder Valkey-Speichernutzung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)
       - [AC-17975: Kompatibilitätsprobleme mit PHP 8.5 betreffen CLI-Befehle, Kategoriebearbeitung, Designkonfiguration und Kundenanmeldung](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
       - [AC-16530: Der Warenkorb zeigt nach einer geplanten Aktualisierung der Katalogpreisregel inkonsistente Preise an](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
       - [ACP2E-4977: Konfigurierbare Produktrechnung und Gutschriftsummen ohne feste Produktsteuer](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
@@ -1078,6 +1079,7 @@ ht-degree: 0%
       - [AC-12854: Admin reorder verwendet die ursprüngliche Bestellnummer mit dem Suffix -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5183: Statische Inhaltsbereitstellung schlägt auf PHP 8.5 mit `@magento_import` fehl](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494: Abfrage von GraphQL-Produkten gibt Produktnamen mit HTML-Escape-Zeichen zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242: GraphQL verwendet die Store-ID als Website-ID bei Anfragen zum Hinzufügen zum Warenkorb](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
       - [ACP2E-5027: Indexer werden nicht beendet, wenn die Anwendungssperre den Dateisperranbieter verwendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)

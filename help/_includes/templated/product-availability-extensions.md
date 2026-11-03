@@ -1,8 +1,8 @@
 ---
-source-git-commit: 0aa197a16770ea134d7e0dcf46bd79738340fdf7
+source-git-commit: 5fdb263426174cb95808b21ec3dc527367ba3b31
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 20%
+source-wordcount: '259'
+ht-degree: 18%
 ---
 # Produktverfügbarkeit der von Adobe erstellten Erweiterungen
 
@@ -62,7 +62,7 @@ ht-degree: 20%
       </tr>
       <tr>
           <td>Adobe Experience Manager Assets-Integration für Commerce</td>
-          <td>1.4.9</td>
+          <td>1.4.12</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>1.0.20+</td>
@@ -97,6 +97,19 @@ ht-degree: 20%
           <td>
               <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/install">Composer</a><br/>
               <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Kataloganreicherung</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>2.1.2</td>
+          <td>Nicht unterstützt</td>
+          <td>Nicht unterstützt</td>
+          <td>Nicht unterstützt</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
