@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 316b2f5efb35b6500a702ec1754a87da881ba961
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '195'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.73
@@ -36,8 +36,8 @@ QPT v1.1.73 enthält die folgenden Patches:
 1. **ACSD-67908**: Es wurde ein Problem behoben, bei dem JS-Dateien in Setups mit mehreren Speichern nicht ordnungsgemäß zusammengeführt wurden.
 1. **ACSD-68190**: Es wurde ein Problem behoben, bei dem Rabatte nicht angewendet wurden, angewendete Rabatte in der GraphQL-Warenkorbansicht nicht korrekt angezeigt wurden und Nicht-Couponrabatte beim Entfernen eines Couponrabatts entfernt wurden.
 1. **ACSD-68206**: Fehlerkorrektur - Der GraphQL-Anwendungsserver funktioniert jetzt, wenn die **[!UICONTROL Rate Limiting]**-Funktion mit installierter PHP-[!DNL Redis]-Erweiterung verwendet wird.
-1. **ACSD-68356**: [!DNL GraphQL] Warenkorbabfrage gibt einen falschen Rabattbetrag für virtuelle Angebote zurück.
-1. **ACSD-68391**: Kategorienbezogene Berechtigungen werden in **[!UICONTROL Quick Order]** und **[!UICONTROL Requisition Lists]** nicht angewendet.
-1. **ACSD-68400**: Die Anzahl der virtuellen Geschenkgutscheine spiegelt sich nicht genau in der **[!UICONTROL Inventory reservation table]** wider.
+1. **ACSD-68356**: Es wurde ein Problem behoben, bei dem eine Abfrage im [!DNL GraphQL] einen falschen Rabattbetrag für virtuelle Angebote zurückgab.
+1. **ACSD-68391**: Es wurde ein Problem behoben, bei dem kategoriebezogene Berechtigungen in **[!UICONTROL Quick Order]** und **[!UICONTROL Requisition Lists]** nicht korrekt angewendet wurden.
+1. **ACSD-68400**: Es wurde ein Problem behoben, bei dem die Menge der virtuellen Geschenkkarte nicht genau in der **[!UICONTROL Inventory reservation table]** wiedergegeben wurde.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
