@@ -1,17 +1,20 @@
 ---
-source-git-commit: f805a1d27c2237ed7f9885524d01c6bd0df1b85c
+source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '2082'
 ht-degree: 0%
 ---
 # Neue Vorlage
 
 ## Neue Funktionen
 
-Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Wir schließen alle kleineren Aktualisierungen, wie z. B. die Bearbeitung von Kopien, von dieser Liste aus.
+Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wurden. Geringfügige Aktualisierungen wie die Bearbeitung von Kopien sind von dieser Liste ausgeschlossen.
 
 | Beschreibung | Typ | Datum/Quelle |
 | --- | --- | --- |
+| Eine detaillierte Beschreibung der QPT 1.1.83-Fehlerbehebung für [ACP2E-5205: Große Kataloge verursachen langsames Laden von Kategorien und Zeitüberschreitungen in Admin](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205). | Neues Thema, qpt | [5. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/39e85100b07e742c5d21708af62fd1da3462226b) |
+| Es wurde eine detaillierte Beschreibung der QPT 1.1.83-Fehlerbehebung für [ACP2E-4908: Große Kataloge verursachen übermäßige Redis- oder Valkey-Speichernutzung](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908) hinzugefügt. | Neues Thema, qpt | [2. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/a0924456f529fcc4378c65e81eacfdd6711ae1ca) |
+| Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.84 für [ACP2E-5183: Statische Inhaltsbereitstellung schlägt in PHP 8.5 mit @magento_import fehl](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183) hinzugefügt. | Neues Thema, qpt | [2. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/3a5e0c4cc2f879416a8e8bc544cc709ef4db3c32) |
 | Eine detaillierte Beschreibung der QPT 1.1.83-Fehlerbehebung für [AC-16530: Der Warenkorb zeigt nach einer geplanten Aktualisierung der Katalogpreisregel inkonsistente Preise an](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530) wurde hinzugefügt. | Neues Thema, qpt | [29. Oktober 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981) |
 | Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.84 wurde hinzugefügt [AC-15494: Abfrage von GraphQL-Produkten gibt Produktnamen mit HTML-Escape-Zeichen zurück](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494). | Neues Thema, qpt | [28. Oktober 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945) |
 | Eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.84 wurde hinzugefügt [ACP2E-5242: GraphQL verwendet die Store-ID als Website-ID bei Anfragen zum Hinzufügen zum Warenkorb](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242). | Neues Thema, qpt | [27. Oktober 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8) |
@@ -47,4 +50,3 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
 | Hinzugefügt [Übersicht: Quality Patches Tool (QPT) v1.1.83](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview). | Neues Thema, qpt | [2. Oktober 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/266c8529352dac198568dca4676aebd88ce50fc1) |
 | Es wurde [Monthly Isolated Security Patching Policy](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/monthly-isolated-security-patches) hinzugefügt, die erklärt, wie Adobe Commerce gezielte, isolierte CVE-Fehlerbehebungen am Patch-Dienstag zwischen den vollständigen Sicherheits-Patch-Versionen bereitstellt und wie sie angewendet und überprüft werden. | Neues Thema | [18. September 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce) |
 | Der Leitfaden [Redis/Valkey-Service-](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) wurde korrigiert, um klarzustellen, dass die Bereitstellungsvariablen `VALKEY_BACKEND` und `REDIS_BACKEND` nicht bestimmen, welcher Cache-Service von Adobe Commerce tatsächlich verwendet wird, und dass `VALKEY_USE_SLAVE_CONNECTION`/`REDIS_USE_SLAVE_CONNECTION` mit dem tatsächlich in der Umgebung verfügbaren Service übereinstimmen müssen. | Technisch | [15. September 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6) |
-| Adobe Commerce Patching Automation ist jetzt allgemein verfügbar. Weitere Informationen finden [&#x200B; in &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/caps-tool/intro) Dokumentation . | Größere Aktualisierung, neues Thema | [8. September 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052) |
