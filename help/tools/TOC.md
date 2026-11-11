@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: ea5f12bca7e8a3969ffa775d6a675a224f08155f
+source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
 workflow-type: tm+mt
-source-wordcount: '11124'
+source-wordcount: '11153'
 ht-degree: 0%
 ---
 
@@ -1080,6 +1080,8 @@ ht-degree: 0%
       - [AC-12854: Admin reorder verwendet die ursprüngliche Bestellnummer mit dem Suffix -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5034: B2B-Artikelrabatte reduzieren keine Zwischensummen von dynamischen Preispaketen in verhandelbaren Angeboten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034.md)
+      - [ACP2E-5041: Beim Speichern eines veralteten Produktformulars läuft der Sonderpreis nach einer geplanten Aktualisierung ab](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)
       - [ACP2E-5183: Statische Inhaltsbereitstellung schlägt auf PHP 8.5 mit `@magento_import` fehl](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494: Abfrage von GraphQL-Produkten gibt Produktnamen mit HTML-Escape-Zeichen zurück](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242: GraphQL verwendet die Store-ID als Website-ID bei Anfragen zum Hinzufügen zum Warenkorb](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
