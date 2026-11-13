@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
+source-git-commit: b386ae4fb7b26db8498fb78d1a354c3267a862ca
 workflow-type: tm+mt
-source-wordcount: '33534'
+source-wordcount: '34321'
 ht-degree: 0%
 ---
 # Versionshinweise
@@ -29,11 +29,40 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 
 >[!INFO]
 >
->Anweisungen [&#x200B; Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
+>Anweisungen [ Anwenden von Patches auf Ihre Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches)Projekte finden Sie unter „Anwenden von Patches“. Siehe [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im Software-Update-Handbuch, um eine vollständige Liste der veröffentlichten Patches anzuzeigen.
 
 >[!INFO]
 >
 >Informationen zu den von der Community für Magento Open Source erstellten [!DNL quality patches] finden Sie in den [Versionshinweisen](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.86 {#v1-1-86}
+
+* **ACP2E-3094** (für Adobe Commerce >=2.4.5 &lt;2.4.8) - Es wurde das Problem behoben, dass das Anzeigen oder Bearbeiten [!UICONTROL Category Permissions] für eine Kategorie mit vielen Berechtigungen dazu führen konnte, dass der Browser nicht mehr reagierte.
+* **ACP2E-5046** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Es wird das Problem behoben, dass beim Aktualisieren der Seite beim Erstellen einer Bestellung in Admin dieselbe SKU mehrmals hinzugefügt wird.
+* **ACP2E-5050** (für Adobe Commerce >=2.4.6 &lt;2.4.10) - Es wurde das Problem behoben, dass beim Anzeigen oder Speichern einer RMA in Admin die RMA-Nummer im Bericht [!UICONTROL Action Logs] nicht angezeigt wurde.
+* **ACP2E-5057** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Behebt das Problem, dass GraphQL-Abfragen für Bundle-Produkte globale Bundle-Optionspreise anstelle website-spezifischer Preise zurückgeben, wenn [!UICONTROL Catalog Price Scope] auf *Website* gesetzt ist.
+* **ACP2E-5061** (für Adobe Commerce >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass eine Merchandising-Regel für Kategorien `AND` Bedingungen nicht mit einer Bedingung kombinieren kann, die einem von mehreren Werten entspricht.
+* **ACP2E-5071** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.10) - Es wird das Problem behoben, dass die Nachricht Nicht verfügbar auf Lager nicht immer auf der Produktseite angezeigt wird, wenn der Warenkorb des Käufers bereits die volle verfügbare Menge enthält.
+* **ACP2E-5094** (für Adobe Commerce und Magento Open Source >=2.4.6-p3 &lt;2.4.7 || >=2.4.8 &lt;2.4.10) - Behebt das Problem, dass das Laden von Seiten deutlich langsamer ist, wenn eine `MAGENTO_DC_*` Umgebungsvariable festgelegt ist.
+* **ACP2E-5118** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass die Page Builder-Vorschau nicht gerendert wird, wenn der [!UICONTROL Translations]-Cache deaktiviert ist.
+* **ACP2E-5134** (für Adobe Commerce >=2.4.6 &lt;2.4.10) - Behebt das Problem, dass beim Entfernen eines in einem Bundle enthaltenen Produkts aus der [!UICONTROL Shared Catalog] eines Unternehmens das Bundle-Produkt im Warenkorb verbleibt und einen Fehler im Warenkorb und während des Checkouts verursacht.
+* **ACP2E-5146** (für Adobe Commerce, B2B >=1.3.4 &lt;1.5.4) - Behebt das Problem, dass ein Admin-Benutzer, der auf bestimmte Websites beschränkt ist, keine Kunden löschen kann, wenn ein Kunde auf einer anderen Website dieselbe ID wie der Admin-Benutzer hat.
+* **ACP2E-5176** (für Adobe Commerce >=2.4.7 &lt;2.4.10) - Behebt das Problem, dass E-Commerce-Ereignisse an [!DNL Google Analytics] 4 gesendet werden, [!DNL Google Tag Manager] das [!DNL Universal Analytics]-Format verwenden und mehrere Checkout-Ereignisse auslassen.
+* **ACP2E-5185** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Es wurde ein Problem behoben, bei dem beim Verschieben einer Kategorie in der Kategoriestruktur der Fehler angezeigt wurde, *Beim Verschieben einer Kategorie ist ein Fehler aufgetreten* oder es dauerte mehrere Minuten, bis der Speicher viele URL-Neuschreibungen aufweist.
+* **ACP2E-4191** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.9) - Behebt das Problem, dass bestimmte REST-API-Anfragen in eine Endlosschleife geraten, wenn der Cache für EAV-Typen und -Attribute deaktiviert ist.
+* **ACP2E-4973** (für Adobe Commerce und Magento Open Source >=2.4.8-p1 &lt;2.4.9) - Es wird das Problem behoben, dass beim Wechsel von [!UICONTROL In-Store Delivery] zu einer anderen Versandmethode die zugehörige Speicheradresse nicht aus dem Warenkorb gelöscht wird.
+* **ACP2E-5221** (für Adobe Commerce, B2B >=1.5.3 &lt;1.5.4) - Es wurde das Problem behoben, dass der [!UICONTROL Catalog Product Permissions] Indexer erheblich länger dauert, wenn [!UICONTROL Quick Order] in Installationen mit vielen Stores und Kundengruppen aktiviert ist.
+* **ACP2E-5245** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass ein neu registrierter Kunde, der dieselbe Adresse für Versand und Rechnungsstellung bei seiner ersten Bestellung verwendet, diese Adresse während seines nächsten Checkouts zweimal aufgeführt sieht.
+* **ACP2E-5248** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass Admin-Benutzer ohne die Berechtigung [!UICONTROL Edit Product Status] beim Öffnen der [!UICONTROL Add Product]-Seite in PHP 8.5 den Fehler *null als Array-Offset* verwerfen sehen.
+* **ACP2E-5254** (für Adobe Commerce, B2B >=1.5.2 &lt;1.5.4) - Es wird das Problem behoben, dass Produkte, die zu einer Anforderungsliste hinzugefügt wurden, nicht angezeigt werden, wenn ein Kunde die Liste öffnet, bis der Cache geleert ist.
+* **ACP2E-5268** (für Adobe Commerce und Magento Open Source >=2.4.9 &lt;2.4.10) - Fehlerkorrektur - Das Erstellen eines konfigurierbaren Produkts schlägt fehl, wenn [!UICONTROL Enable Frontend Resize] auf *Nein* eingestellt ist.
+* **ACP2E-3752** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.9) - Fehlerkorrektur: Bei der Verarbeitung von Produktimporten wird der Fehler *Undefinierter Array-Schlüssel „apply_to“ ausgelöst,* viele Produktimportvorgänge erstellt werden.
+* **ACP2E-5280** (für Adobe Commerce >=2.4.9 &lt;2.4.10) - Behebt das Problem, dass Kunden bei aktiviertem [!UICONTROL Category Permissions] bei der Anmeldung auf einen Fehler stoßen.
+* **ACP2E-5295** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass die parallele Neuindizierung von Produktpreisen mit dem Fehler *Fehler im untergeordneten Prozess fehlschlägt,* nach dem [!UICONTROL Inventory] Indexer im selben Prozess ausgeführt wird.
+* **ACP2E-5298** (für Adobe Commerce >=2.4.5 &lt;2.4.10) - Behebt das Problem, dass Admin-Benutzer mit schreibgeschütztem Zugriff auf Warenkorbpreisregeln Gutscheincodes generieren oder löschen können.
+* **ACP2E-5333** (für Adobe Commerce >=2.4.5 &lt;2.4.10) - Es wird das Problem behoben, dass das Aktualisieren eines Kundensegments mit einer [!UICONTROL Total Number of Orders]-Bedingung, die den `is not`-Operator verwendet und einen Wert von mindestens einem verwendet, mit dem Fehler fehlschlägt, *Unbekannter Operator angegeben.*.
+* **ACP2E-5425** (für Adobe Commerce und Magento Open Source >=2.4.5 &lt;2.4.8) - Es wurde das Problem behoben, dass Kunden doppelte E-Mails zur Bestellbestätigung für dieselbe Bestellung erhalten.
+* Aktualisierte Versionen: **ACSD-63578**
 
 ## v1.1.85 {#v1-1-85}
 
@@ -153,7 +182,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACP2E-4156** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Behebt das Problem, dass die Validierung von Versandadressen in der REST-API nicht der in Admin definierten Attributkonfiguration entspricht.
 * **ACP2E-4813** (für Adobe Commerce und Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5) - Behebt das Problem, dass USPS Versandmethoden an der Kasse nicht verfügbar sind und Versandschätzungen für bestimmte Produkte, einschließlich Bestellungen, die in mehrere Pakete aufgeteilt sind, falsch sind.
 * **ACSD-53502** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.6) - Es wurde das Problem behoben, bei dem „Zum Warenkorb hinzufügen“ aufgrund rekursiver Aufrufe des New Relic-Überwachungsskripts zeitweise in der Storefront in iOS Safari fehlschlägt, was zu Seitenneuladungen führt.
-* Aktualisierte Versionen: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51358**, **ACSD-54106**, **ACSD-51291**, **ACSD-**,ACSD-50815 **, ACSD-53636**, ACSD-**, ACSD-55100**, ACSD-**, 58008** ACSD-**, 61133** ACSD-**, 63286** ACSD-**, 67941** ACSD-**, ACSD-402, 64546**&#x200B;**64118** **65822** **57477** **58108** **66149** **66404** **67250** **67686** **68925** **&#x200B;**&#x200B;**&#x200B;** **&#x200B;**&#x200B;**&#x200B;** ACP2E-4505,,,
+* Aktualisierte Versionen: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51358**, **ACSD-54106**, **ACSD-51291**, **ACSD-**,ACSD-50815 **, ACSD-53636**, ACSD-**, ACSD-55100**, ACSD-**, 58008** ACSD-**, 61133** ACSD-**, 63286** ACSD-**, 67941** ACSD-**, ACSD-402, 64546****64118** **65822** **57477** **58108** **66149** **66404** **67250** **67686** **68925** **** **** **** **** ACP2E-4505,,,
 * Patches ersetzt: **AC-15210**, **ACSD-58108**
 
 ## v1.1.79 {#v1-1-79}
@@ -197,7 +226,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACP2E-4732** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde ein Problem behoben, bei dem die partielle Indizierung für Kunden mit einer großen Anzahl von Aktualisierungen angehalten wurde, wenn die Spalte version_id in der Changelog-Tabelle ihren Höchstwert erreichte.
 * **ACP2E-4763** (für Adobe Commerce und Magento Open Source >=2.4.8 &lt;2.4.9) - Es wurde das Problem behoben, dass die Abfrage &quot;GraphQL customerOrders“ überhöhte Werte für „original_price_include_tax“ und „original_row_total_include_tax“ zurückgibt, wenn Katalogpreise auf „Inklusive Steuer“ gesetzt wurden, da die Steuer zweimal angewendet wurde.
 * **ACSD-60989** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wird das Problem behoben, dass das Ändern einer Spalte mit einem Fremdschlüssel über ein deklaratives Schema zu Fehlern in MariaDB führt.
-* Aktualisierte Versionen: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-**, 55031 **ACSD-55628**, **ACSD-**, 51819 **ACSD-54965-V2,** ACSD-**56546** **61756** **68040** **62708** **63283** **64732** **65775** **66965** **&#x200B;**,
+* Aktualisierte Versionen: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-**, 55031 **ACSD-55628**, **ACSD-**, 51819 **ACSD-54965-V2,** ACSD-**56546** **61756** **68040** **62708** **63283** **64732** **65775** **66965** ****,
 * Patches ersetzt: **ACSD-58446**, **ACSD-67904**
 
 ## v1.1.77 {#v1-1-77}
@@ -513,7 +542,7 @@ Die [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) st
 * **ACSD-63242** (für Adobe Commerce und Magento Open Source >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Behebt das Problem der verlangsamten Importe beim Hinzufügen von Katalogprodukten mit mehr als 10.000 Einträgen.
 * **ACSD-63062** (für Adobe Commerce und Magento Open Source >=2.4.7 &lt;2.4.8) - Es wird das Problem behoben, dass falsche Warenkorbabzinsberechnungen auftreten, wenn mehrere überlappende Regeln angewendet werden.
 * **ACSD-62979** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.7) - Behebt das Problem, dass die Verwendung des falschen [!UICONTROL Store ID] in der [!DNL GraphQL]-Kopfzeile einen schwerwiegenden Speicherfehler verursacht.
-* **ACSD-62971** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, bei dem der Import von Lagerquellen mit nicht numerischen Werten in der Spalte **&#x200B;**&#x200B;dazu führte, dass **quantity** auf *0* gesetzt wurde.
+* **ACSD-62971** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Es wurde das Problem behoben, bei dem der Import von Lagerquellen mit nicht numerischen Werten in der Spalte **** dazu führte, dass **quantity** auf *0* gesetzt wurde.
 * **ACSD-62872** (für Adobe Commerce und Magento Open Source >=2.4.4 &lt;2.4.8) - Behebt das Problem der eindeutigen Attributvalidierung, bei dem Zeitplanaktualisierungen falsch validiert werden.
 * **ACSD-62755** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Behebt das Problem, bei dem [!DNL TinyMCE] 7 Schriftgröße und Schriftart in den Editor-Initialisierungseinstellungen speziell hinzugefügt werden müssen.
 * **ACSD-62670** (für Adobe Commerce und Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8) - Behebt das Problem, bei dem der [!UICONTROL Products Ordered]-Bericht in [!DNL CSV] exportiert wird und [!DNL XML] einen Fehler zurückgibt.
