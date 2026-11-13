@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0d4ea484491d05b1eebc05090745a4f8472bdfd8
+source-git-commit: c430e6302297fbae6a7475fd43e7ac5a01e270e3
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 18%
@@ -23,7 +23,7 @@ ht-degree: 18%
   <tbody>
       <tr>
           <td>Adobe I/O Events für Adobe Commerce</td>
-          <td>1.23.0</td>
+          <td>1.24.0</td>
           <td>1.8+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -49,7 +49,7 @@ ht-degree: 18%
       </tr>
       <tr>
           <td>Adobe Commerce-Webhooks</td>
-          <td>1.20.0</td>
+          <td>1.21.0</td>
           <td>1.5+</td>
           <td>1.2+</td>
           <td>1.2+</td>
