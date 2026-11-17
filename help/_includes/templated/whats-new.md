@@ -1,7 +1,7 @@
 ---
-source-git-commit: 114e203ce1226139cf2d31b758329ccd8a00205c
+source-git-commit: 9e7338e0be69b83b92210b6299d92cc688681f8d
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2227'
 ht-degree: 0%
 ---
 # Neue Vorlage
@@ -12,6 +12,9 @@ Diese Seite enthält die Änderungen, die in den letzten 60 Tagen vorgenommen wu
 
 | Beschreibung | Typ | Datum/Quelle |
 | --- | --- | --- |
+| Veröffentlichte [Versionshinweise](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=de) für die Version 1.1.86 Quality Patches Tool (QPT). | QPT | [13. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/6a84f2ebcbbf8041bbe783b53eab5500a4b0acc2) |
+| Eine detaillierte Beschreibung der QPT 1.1.84-Fehlerbehebung für [ACP2E-5041: Speichern eines veralteten Produktformulars läuft nach einer geplanten Aktualisierung ab](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041). | Neues Thema, qpt | [11. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/d2b8ba35c866be25a0fbbebceeb9a7c68ba37293) |
+| Eine detaillierte Beschreibung der QPT 1.1.84-Fehlerbehebung für [ACP2E-5034: B2B-Artikelrabatte verringern keine Zwischensummen von dynamischen Preispaketen in verhandelbaren Angeboten](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5034). | Neues Thema, qpt | [11. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/974c6238c0e0008eaa36851449de97218bfca949) |
 | Eine detaillierte Beschreibung der QPT 1.1.83-Fehlerbehebung für [ACP2E-5205: Große Kataloge verursachen langsames Laden von Kategorien und Zeitüberschreitungen in Admin](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5205). | Neues Thema, qpt | [5. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/39e85100b07e742c5d21708af62fd1da3462226b) |
 | Es wurde eine detaillierte Beschreibung der QPT 1.1.83-Fehlerbehebung für [ACP2E-4908: Große Kataloge verursachen übermäßige Redis- oder Valkey-Speichernutzung](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908) hinzugefügt. | Neues Thema, qpt | [2. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/a0924456f529fcc4378c65e81eacfdd6711ae1ca) |
 | Es wurde eine detaillierte Beschreibung der Fehlerbehebung für QPT 1.1.84 für [ACP2E-5183: Statische Inhaltsbereitstellung schlägt in PHP 8.5 mit @magento_import fehl](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183) hinzugefügt. | Neues Thema, qpt | [2. November 2026](https://github.com/AdobeDocs/commerce-operations.en/commit/3a5e0c4cc2f879416a8e8bc544cc709ef4db3c32) |
