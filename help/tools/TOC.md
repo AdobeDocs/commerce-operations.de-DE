@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
+source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
 workflow-type: tm+mt
-source-wordcount: '11153'
+source-wordcount: '11157'
 ht-degree: 0%
 ---
 
@@ -1097,6 +1097,8 @@ ht-degree: 0%
       - [ACP2E-5017: Abfrage der GraphQL-Kundenrolle schlägt für Kunden ohne Unternehmen fehl](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: GraphQL-Routenabfrage rendert nicht angeforderten CMS-Seiteninhalt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741: Beim Speichern eines verknüpften Produkts wird ein anderes Produkt aus der Storefront mit benutzerdefiniertem Lager ausgeblendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
+    - v1.1.85 {#v1-1-85}
+      - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
   - [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referenz zu Befehlszeilen-Tools {#cli-reference}
   - [Adobe Commerce (lokal)](reference/commerce-on-premises.md)

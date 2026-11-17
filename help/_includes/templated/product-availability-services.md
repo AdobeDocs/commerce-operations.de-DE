@@ -1,5 +1,5 @@
 ---
-source-git-commit: 8dd21f824b65451a7f6468c9abd91fa8b13171a1
+source-git-commit: 99cce9bcfa7cb5866274bef9be95ebd2b5f0a9c8
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 24%
@@ -49,7 +49,7 @@ ht-degree: 24%
       </tr>
       <tr>
           <td>Zahlungsdienste</td>
-          <td>2.17.0</td>
+          <td>2.17.1</td>
           <td>2.16.1</td>
           <td>2.16.1</td>
           <td>2.16.1</td>

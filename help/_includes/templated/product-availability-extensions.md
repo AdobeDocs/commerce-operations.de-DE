@@ -1,5 +1,5 @@
 ---
-source-git-commit: c430e6302297fbae6a7475fd43e7ac5a01e270e3
+source-git-commit: 99cce9bcfa7cb5866274bef9be95ebd2b5f0a9c8
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 18%
@@ -36,7 +36,7 @@ ht-degree: 18%
       </tr>
       <tr>
           <td>Adobe Commerce Admin-Benutzeroberfläche SDK</td>
-          <td>5.1.0</td>
+          <td>5.2.0</td>
           <td>2.0+</td>
           <td>1.3+</td>
           <td>1.3+</td>
