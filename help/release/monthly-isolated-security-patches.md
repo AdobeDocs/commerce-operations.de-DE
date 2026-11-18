@@ -40,7 +40,7 @@ ht-degree: 0%
 ---
 # Monatliche Patching-Richtlinie für isolierte Sicherheit
 
-Um Kunden von Adobe Commerce dabei zu unterstützen, wichtige Sicherheitskorrekturen früher anzuwenden, stellt Adobe Commerce jetzt monatliche isolierte Sicherheits-Patches am Patch-Dienstag (dem zweiten Dienstag im Monat) bereit. Termine finden Sie im [Veröffentlichungszeitplan ](schedule.md) Adobe Commerce. Diese Patches sind für Adobe Commerce on Cloud, lokale Adobe Commerce- und Magento Open Source-Installationen verfügbar.
+Um Kunden von Adobe Commerce dabei zu unterstützen, wichtige Sicherheitskorrekturen früher anzuwenden, stellt Adobe Commerce jetzt monatliche isolierte Sicherheits-Patches am Patch-Dienstag (dem zweiten Dienstag im Monat) bereit. Termine finden Sie im [Veröffentlichungszeitplan &#x200B;](schedule.md) Adobe Commerce. Diese Patches sind für Adobe Commerce on Cloud, lokale Adobe Commerce- und Magento Open Source-Installationen verfügbar.
 
 Eine isolierte Sicherheits-Patch-Datei enthält nur den Code, der benötigt wird, um eine oder mehrere spezifische Sicherheitslücken zu beheben, und wird als eng gefasste Code-Diff-Datei bereitgestellt statt als vollständiges Composer-Paket. Da die Änderungen spezifisch für Sicherheitslücken sind, können sie schneller überprüft, getestet und angewendet werden als eine Sicherheits-Patch-Version, ohne dass die umfassendere Abhängigkeitsauflösung und Regressionstests ausgelöst werden, die für ein Sicherheits-Patch-Versionsupgrade erforderlich sind. Jede monatliche isolierte Sicherheits-Patch-Datei wird in die nächste vollständige Sicherheits-Patch-Version integriert, sodass Kunden alle veröffentlichten isolierten Patch-Dateien über die nächste Sicherheits-Patch-Version (`-pN`) erhalten können.
 
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um die monatliche isolierte Sicherheits-Patch-Datei anz
 
 1. **Bestätigen Sie Ihre Baseline-Version.**
 
-   Isolierte Patches werden nur gegen die neueste reine Sicherheits-`-p`-Version für Ihre Produktlinie getestet. Wenn Sie auf dieser Grundlinie zurückliegen, wenden Sie sie zuerst an. Anweisungen [ Festlegen einer Sicherheits-Patch-Version während ](../upgrade/implementation/perform-upgrade.md#example---security-patch) Upgrades finden Sie unter Beispiel für ein Sicherheits-Patch-Upgrade .
+   Isolierte Patches werden nur gegen die neueste reine Sicherheits-`-p`-Version für Ihre Produktlinie getestet. Wenn Sie auf dieser Grundlinie zurückliegen, wenden Sie sie zuerst an. Anweisungen [&#x200B; Festlegen einer Sicherheits-Patch-Version während &#x200B;](../upgrade/implementation/perform-upgrade.md#example---security-patch) Upgrades finden Sie unter Beispiel für ein Sicherheits-Patch-Upgrade .
 
 1. **Alle fehlenden Patches in der richtigen Reihenfolge anwenden.**
 

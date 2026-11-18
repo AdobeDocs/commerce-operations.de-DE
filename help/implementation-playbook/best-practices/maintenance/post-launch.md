@@ -122,7 +122,7 @@ Um die Fehlerprotokollierung in Adobe Commerce Cloud zu überwachen, bietet Adob
 
 Verwenden Sie die folgenden Verfahren, um Ihre Adobe Commerce-Installation aktuell und sicher zu halten:
 
-- **Adobe Commerce-Sicherheitswarnungen abonnieren**: Bleiben Sie über Sicherheitslücken auf dem Laufenden, indem Sie sich [ Benachrichtigungen von Adobe registrieren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security).
+- **Adobe Commerce-Sicherheitswarnungen abonnieren**: Bleiben Sie über Sicherheitslücken auf dem Laufenden, indem Sie sich [&#x200B; Benachrichtigungen von Adobe registrieren](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security).
 
 - **Versionshinweise überprüfen**: Überprüfen Sie regelmäßig [Versionshinweise für Sicherheits-Patches](/help/release/release-notes/security/overview.md), die mit &quot;-pN“ für Versionen getaggt sind (z. B. 2.3.5-p1) und kritische Fehlerbehebungen und Verbesserungen enthalten.
 
@@ -148,7 +148,7 @@ Gehen Sie wie folgt vor, um die PCI-Compliance in Adobe Commerce Cloud sicherzus
 
 - **Zugriff beschränken**: Beschränken Sie den Zugriff auf vertrauliche Zahlungsdaten. Informationen zu den Praktiken für die Konto- und Zugriffsverwaltung finden Sie unter [Regelmäßige Sicherheitsüberwachung](#regular-security-monitoring).
 
-- **Regelmäßige Sicherheitsüberprüfung**: Führen Sie regelmäßige PCI-ASV-Scans durch und [ Sie Ihre Umgebung ](/help/security-and-compliance/shared-responsibility.md), um potenzielle Schwachstellen zu beheben.
+- **Regelmäßige Sicherheitsüberprüfung**: Führen Sie regelmäßige PCI-ASV-Scans durch und [&#x200B; Sie Ihre Umgebung &#x200B;](/help/security-and-compliance/shared-responsibility.md), um potenzielle Schwachstellen zu beheben.
 
 >[!TIP]
 >
@@ -238,7 +238,7 @@ Gehen Sie wie folgt vor, um die PCI-Compliance in Adobe Commerce Cloud sicherzus
 
 >[!TIP]
 >
->Detaillierte Anleitungen finden Sie unter [Best Practices für die ](overview.md), [Personalisierung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization) und [Funktionsentwicklung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization).
+>Detaillierte Anleitungen finden Sie unter [Best Practices für die &#x200B;](overview.md), [Personalisierung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization) und [Funktionsentwicklung](https://business.adobe.com/blog/the-latest/adobe-commerce-continues-investment-in-composable-development-tools-and-ai-powered-personalization).
 
 ### Reporting und Analysen
 
