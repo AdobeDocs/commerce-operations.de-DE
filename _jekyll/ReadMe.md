@@ -10,9 +10,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 63e52c8451f368e2d2a36096fc11c7ead62ee94e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 
@@ -42,9 +42,69 @@ bundle exec rake whatsnew_bp
 bundle exec rake whatsnew_bp since="jul 4"
 ```
 
+### `whatsnew_consolidated`
+
+Fasst veröffentlichte Neue Tabellen aus den konfigurierten Commerce-Dokumentationsprojekten in `help/_includes/automated/whatsnew/consolidated.md` zusammen.
+
+```sh
+bundle exec rake whatsnew_consolidated
+```
+
+Konfigurieren Sie Projekte unter `whatsnew_consolidated.projects` in [`_config.yml`](_config.yml). Jeder Eintrag erfordert einen Repository-Namen, einen Projekttitel und eine absolute HTTP(S)-Website-URL:
+
+```yaml
+whatsnew_consolidated:
+  projects:
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce.en
+      title: Adobe Commerce
+      website: https://experienceleague.adobe.com/en/docs/commerce
+```
+
+Einträge in geänderte Abschnittsreihenfolge verschieben. Sie können Projekte von beiden Plattformen frei miteinander verzahnen. Repository-Namen, die mit enden`.en` verwenden den ExL-Quellpfad `help/_includes/templated/whats-new.md`. Alle anderen Repositorys verwenden `src/pages/_includes/templated/whats-new.md` den Quellpfad der DevSite.
+
+Die Aufgabe ruft öffentliche `main` aus der `AdobeDocs` GitHub-Organisation ab. Er zeigt jeden Projekttitel als Textüberschrift an und führt jede Tabelle mit einem Satz ein, der den Projekttitel mit der Dokumentations-Startseite verknüpft, die in `website` als Quelle für die neuen Aktualisierungen konfiguriert ist. Durchgehend werden `Description | Type | Date/source` Tabellenüberschriften verwendet. Nur für DevSite-Projekte werden mit Escape-Zeichen versehene `\<br/\>`-Tags `<br/>`. Andernfalls bleiben Textzeilen, Duplikate, Links und die Reihenfolge der Quellzeilen unverändert. Jede Quelle definiert ihren eigenen Zeitraum.
+
+Projekte mit einer erkannten Meldung, dass keine Aktualisierungen erfolgen, werden weggelassen. Wenn jedes Projekt keine Einträge hat, enthält die Einschließende eine allgemeine Nachricht, dass keine Aktualisierungen vorgenommen werden. Fehler beim Konfigurieren, Abrufen, Analysieren oder Schreiben schlagen bei der Aufgabe fehl, ohne dass ein vorhandenes Include ersetzt wird.
+
+Die Aufgabe plant keine Generierung oder Aktualisierung verbrauchender Seiten.
+
+Die fokussierte Test-Suite enthält Rake-Einstiegspunkttests, die die `_jekyll` Rakefile laden und durch den Bundler laufen. Installieren Sie zunächst Bundler und das `_jekyll`:
+
+```sh
+cd _jekyll && bundle install
+```
+
+Führen Sie dann die Tests aus dem Repository-Stamm aus:
+
+```sh
+ruby _jekyll/test/consolidated_whatsnew_test.rb
+```
+
+### `whatsnew_feedback`
+
+Erstellt `help/_includes/automated/whatsnew/consolidated-feedback.md` durch Filtern der vorhandenen lokalen `help/_includes/automated/whatsnew/consolidated.md`.
+
+```sh
+bundle exec rake whatsnew_feedback
+```
+
+Die Aufgabe stimmt `Feedback` als vollständiger, durch Kommas getrennter Typwert überein, wobei Groß- und Kleinschreibung und das umgebende Leerzeichen ignoriert werden. Kombinierte Typen wie `Feedback, technical` sind enthalten. Erwähnungen in Beschreibungen, Quelllinks oder Namen partieller Typen sind nicht qualifiziert.
+
+Übereinstimmende Zeilen, Duplikate, Projektüberschriften im Klartext, Quellsätze (falls vorhanden) und Projekt- und Zeilenreihenfolge bleiben unverändert. Projekte ohne übereinstimmende Einträge werden weggelassen. Wenn nichts übereinstimmt, enthält die Ausgabe insgesamt eine Nicht-Feedback-Nachricht.
+
+Die Eingabe muss bereits vorhanden sein. Führen Sie `bundle exec rake whatsnew_consolidated` separat aus, wenn Sie es aktualisieren möchten. Die Feedback-Aufgabe ruft keine Remote-Inhalte ab, liest die Projektkonfiguration und generiert keine Eingabe.
+
+Fehlende oder falsch formatierte Eingaben führen dazu, dass die Aufgabe fehlschlägt, ohne ein vorhandenes gefiltertes Include zu ersetzen. Die Eingabedatei wird nie geändert, und die gefilterte Ausgabe wird automatisch veröffentlicht.
+
 ### `get_released_versions`
 
-Ruft die letzten 10 veröffentlichten Versionen aus dem `magento/magento2`-Repository ab. Erfordert [&#x200B; Installation und Authentifizierung von &#x200B;](https://cli.github.com/)GitHub CLI“.
+Ruft die letzten 10 veröffentlichten Versionen aus dem `magento/magento2`-Repository ab. Erfordert [ Installation und Authentifizierung von ](https://cli.github.com/)GitHub CLI“.
 
 **Nutzung:**
 
@@ -56,7 +116,7 @@ bundle exec rake get_released_versions
 
 ### `first_merge_date`
 
-Ruft das Datum der ersten Zusammenführung mit einer angegebenen Verzweigung ab. Erfordert [&#x200B; Installation und Authentifizierung von &#x200B;](https://cli.github.com/)GitHub CLI“.
+Ruft das Datum der ersten Zusammenführung mit einer angegebenen Verzweigung ab. Erfordert [ Installation und Authentifizierung von ](https://cli.github.com/)GitHub CLI“.
 
 **Nutzung:**
 
