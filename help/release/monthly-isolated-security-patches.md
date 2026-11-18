@@ -78,7 +78,7 @@ Gehen Sie wie folgt vor, um die monatliche isolierte Sicherheits-Patch-Datei anz
 
    Neue monatliche, isolierte Patch-Dateien werden gemäß dem Veröffentlichungszeitplan bereitgestellt. Überprüfen Sie das entsprechende Sicherheitsbulletin für betroffene Komponenten und CVEs. Jedes Bulletin enthält Links zu Versionshinweisen mit schrittweisen Anweisungen zur Installation der isolierten Patch-Datei für diesen Monat.
 
-1. **Überprüfen Sie den Sicherheitsstatus Ihrer Commerce-Installation mithilfe des [Commerce-Versionstools](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).**
+1. **Überprüfen Sie den Sicherheitsstatus Ihrer Commerce-Installation mithilfe des [Commerce-Versionstools](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/commerce-version-tool/intro).**
 
    Das Tool meldet, welche monatlichen Patches derzeit installiert sind, welche fehlen und welchen CVEs die Installation weiterhin ausgesetzt ist. Dies bietet eine endgültige Einschätzung, welche Maßnahmen erforderlich sind, anstatt sich allein auf die Versionsnummer zu verlassen.
 
@@ -92,7 +92,7 @@ Gehen Sie wie folgt vor, um die monatliche isolierte Sicherheits-Patch-Datei anz
 
    >[!NOTE]
    >
-   >**Cloud-Kunden:** Überprüfen Sie zuerst Ihre installierten Cloud-Patches für [Version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Die Fehlerbehebung ist möglicherweise bereits enthalten und eine manuelle Anwendung kann zu einem Konflikt führen oder die Fehlerbehebung duplizieren.
+   >**Cloud-Kunden:** Überprüfen Sie zuerst Ihre installierten Cloud-Patches für [Version](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Die Fehlerbehebung ist möglicherweise bereits enthalten und eine manuelle Anwendung kann zu einem Konflikt führen oder die Fehlerbehebung duplizieren.
 
 1. **Dateien an die installierten Komponenten anpassen.**
 
@@ -106,7 +106,7 @@ Gehen Sie wie folgt vor, um die monatliche isolierte Sicherheits-Patch-Datei anz
 
    Validieren Sie in der Staging-Umgebung, bevor Sie zur Produktion weiterleiten, gemäß Ihrem normalen Änderungsprozess.
 
-Cloud-Kunden können auch die [Adobe Commerce Patching Automation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) verwenden, um Patches über das Admin-Bedienfeld anstelle der manuellen Git- und Composer-Schritte oben anzuwenden oder rückgängig zu machen.
+Cloud-Kunden können auch die [Adobe Commerce Patching Automation](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/caps-tool/intro) verwenden, um Patches über das Admin-Bedienfeld anstelle der manuellen Git- und Composer-Schritte oben anzuwenden oder rückgängig zu machen.
 
 ## Patch-Aktionen nach Bereitstellungstyp
 
@@ -131,7 +131,7 @@ Bei einer Installation mit mehreren Komponenten - CE, EE, B2B und Page Builder -
 
 ### Wie weiß ich, in welchem Sicherheitszustand sich meine Installation befindet, wenn Patches auf Patches aufgespielt sind?
 
-Mit der Veröffentlichung der monatlichen Sicherheits-Patches führte Adobe Commerce das [Commerce Version Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro) ein, ein eigenständiges Dienstprogramm, das meldet, welche Patches installiert sind oder fehlen und vor welchen CVEs Ihre Installation geschützt ist. Statt sich auf Versionsnummern zu verlassen, liest das Tool Patch-Metadaten und stellt maschinenlesbare Ausgaben für das Reporting und die kontinuierliche Integration (CI) bereit.
+Mit der Veröffentlichung der monatlichen Sicherheits-Patches führte Adobe Commerce das [Commerce Version Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/commerce-version-tool/intro) ein, ein eigenständiges Dienstprogramm, das meldet, welche Patches installiert sind oder fehlen und vor welchen CVEs Ihre Installation geschützt ist. Statt sich auf Versionsnummern zu verlassen, liest das Tool Patch-Metadaten und stellt maschinenlesbare Ausgaben für das Reporting und die kontinuierliche Integration (CI) bereit.
 
 ### Bedeutet dies, dass Adobe sich von kumulativen, versionierten Sicherheitsversionen zurückgezogen hat?
 
@@ -149,4 +149,4 @@ Anzahl Der Bereitstellungsmechanismus wirkt sich nicht auf das Sicherheitsergebn
 >* [Veröffentlichungsrichtlinie](versioning-policy.md)
 >* [Patch-Veröffentlichungszeitplan](schedule.md)
 >* [Commerce-Versionstool](../tools/commerce-version-tool/intro.md)
->* [Adobe-Sicherheitsbulletins und -beratungen](https://helpx.adobe.com/security/security-bulletin.html)
+>* [Adobe-Sicherheitsbulletins und -beratungen](https://helpx.adobe.com/de/security/security-bulletin.html)
