@@ -57,13 +57,13 @@ whatsnew_consolidated:
   projects:
     - repo: commerce-operations.en
       title: Adobe Commerce operational guides
-      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+      website: https://experienceleague.adobe.com/de/docs/commerce-operations/operational-guides/home
     - repo: commerce-webapi
       title: Adobe Commerce web APIs
       website: https://developer.adobe.com/commerce/webapi/
     - repo: commerce.en
       title: Adobe Commerce
-      website: https://experienceleague.adobe.com/en/docs/commerce
+      website: https://experienceleague.adobe.com/de/docs/commerce
 ```
 
 Einträge in geänderte Abschnittsreihenfolge verschieben. Sie können Projekte von beiden Plattformen frei miteinander verzahnen. Repository-Namen, die mit enden`.en` verwenden den ExL-Quellpfad `help/_includes/templated/whats-new.md`. Alle anderen Repositorys verwenden `src/pages/_includes/templated/whats-new.md` den Quellpfad der DevSite.
