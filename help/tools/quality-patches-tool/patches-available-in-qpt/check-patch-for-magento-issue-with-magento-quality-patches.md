@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '445'
 ht-degree: 0%
 ---
 # Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen
@@ -73,4 +73,4 @@ Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Z
 ## Verwandtes Lesen
 
 * [Versionshinweise zum Quality Patches Tool](/help/tools/quality-patches-tool/release-notes.md) in unserer Entwicklerdokumentation.
-* [Anwenden von Composer-Patches, die von Adobe bereitgestellt werden](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in der Support-Wissensdatenbank.
+* [Anwenden von Composer-Patches, die von Adobe bereitgestellt werden](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) im _Handbuch für Adobe-Support und -Tools_.

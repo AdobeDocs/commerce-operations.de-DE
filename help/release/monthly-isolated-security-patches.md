@@ -33,9 +33,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # Monatliche Patching-Richtlinie für isolierte Sicherheit
@@ -84,7 +84,7 @@ Gehen Sie wie folgt vor, um die monatliche isolierte Sicherheits-Patch-Datei anz
 
 1. **Bestätigen Sie Ihre Baseline-Version.**
 
-   Isolierte Patches werden nur gegen die neueste reine Sicherheits-`-p`-Version für Ihre Produktlinie getestet. Wenn Sie auf dieser Grundlinie zurückliegen, wenden Sie sie zuerst an.
+   Isolierte Patches werden nur gegen die neueste reine Sicherheits-`-p`-Version für Ihre Produktlinie getestet. Wenn Sie auf dieser Grundlinie zurückliegen, wenden Sie sie zuerst an. Anweisungen [&#x200B; Festlegen einer Sicherheits-Patch-Version während &#x200B;](../upgrade/implementation/perform-upgrade.md#example---security-patch) Upgrades finden Sie unter Beispiel für ein Sicherheits-Patch-Upgrade .
 
 1. **Alle fehlenden Patches in der richtigen Reihenfolge anwenden.**
 

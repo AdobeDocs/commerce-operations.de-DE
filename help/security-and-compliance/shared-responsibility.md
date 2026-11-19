@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # Gemeinsames Verantwortungs-, Sicherheits- und Betriebsmodell
@@ -85,7 +85,7 @@ Adobe stellt auch die Verfügbarkeit der Infrastruktur des Händlers sicher, wie
 Der Händler ist für die Befolgung der Best Practices für die Sicherheit seiner benutzerdefinierten Instanz der Adobe Commerce on Cloud Infrastructure-Lösung verantwortlich:
 
 * Hinzufügen der erforderlichen Konfigurationsdateien für Adobe Commerce in der Cloud-Infrastruktur zum Repository
-* Anwenden von Sicherheits- und anderen Patches auf die benutzerdefinierte Adobe Commerce on Cloud-Infrastrukturlösung unmittelbar nach ihrer Veröffentlichung durch Adobe
+* Anwenden von Sicherheits- und anderen Patches auf die benutzerdefinierte Adobe Commerce on Cloud-Infrastrukturlösung unmittelbar nach ihrer Veröffentlichung durch Adobe. Informationen zu einzelnen Sicherheits-Patch-Dateien finden Sie [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) im _Handbuch für Adobe-Support und -Tools_.
 * Anwenden von Sicherheits- und anderen Patches auf alle benutzerdefinierten Erweiterungen und den Code unmittelbar nach ihrer Veröffentlichung durch den Anbieter
 * Erstellen, Bereitstellen und Testen von benutzerdefinierten VCL-Lackdateien
 * Entwurf, Design, Installation, Integration und Sicherung der benutzerdefinierten Adobe Commerce on Cloud-Infrastrukturlösung, einschließlich aller benutzerdefinierten Erweiterungen und Code
@@ -979,4 +979,3 @@ Die Ereigniserfassung in der Storefront steigert die Qualität der Produktempfeh
 | Überwachen der vCPU-Auslastung anhand der Limits | R |   |
 
 {style="table-layout:auto"}
-

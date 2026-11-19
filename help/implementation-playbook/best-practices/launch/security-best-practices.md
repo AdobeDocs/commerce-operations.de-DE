@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2129'
 ht-degree: 0%
 ---
 # Sichern der Commerce-Site und -Infrastruktur
@@ -105,6 +105,7 @@ In den folgenden Ressourcen finden Sie Informationen zu verfügbaren Adobe Comme
 - [Sicherheits- und Compliance](../../../release/security-enforcement-policy.md)Hinweis (Adobe Commerce on Cloud-Versionen 2.4.4 bis 2.4.9)
 - [Aktualisierungshandbuch](../../../upgrade/overview.md)
 - [Anwenden von Patches](../../../upgrade/patches/overview.md)
+- Informationen zu einzelnen Sicherheits-Patch-Dateien finden Sie [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) im _Handbuch für Adobe-Support und -Tools_.
 
 >[!TIP]
 >
