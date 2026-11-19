@@ -22,7 +22,7 @@ Feedback-gesteuerte Änderungen befassen sich mit Vorschlägen oder Problemen, d
 
 Ihr Feedback hilft bei der Verbesserung der Dokumentation. Sie können auf folgende Weise einen Beitrag leisten:
 
-* Verwenden Sie in Experience League den Feedback-Bereich am Ende eines Themas, um dessen Nützlichkeit zu bewerten und einen Kommentar zu hinterlassen. Anweisungen zum Melden von Problemen und Vorschlagen von ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) finden Sie im Adobe-Handbuch für Mitwirkende an Dokumenten .[
+* Verwenden Sie in Experience League den Feedback-Bereich am Ende eines Themas, um dessen Nützlichkeit zu bewerten und einen Kommentar zu hinterlassen. Anweisungen zum Melden von Problemen und Vorschlagen von [&#128279;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) finden Sie im Adobe-Handbuch für Mitwirkende an Dokumenten .
 * Verwenden Sie in Adobe Developer das über das Thema verknüpfte öffentliche GitHub-Repository, um ein Dokumentationsproblem zu melden oder eine Bearbeitung vorzuschlagen.
 
 Schließen Sie die Themen-URL ein und beschreiben Sie, was unklar, fehlend oder falsch ist, damit das Dokumentations-Team Ihren Vorschlag verstehen kann.
