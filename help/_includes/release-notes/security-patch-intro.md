@@ -1,7 +1,7 @@
 ---
-source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
+source-git-commit: 1b4787319702489477756682d2dad0da86b28942
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '160'
 ht-degree: 0%
 ---
 # Einführung zu Sicherheits-Patches
@@ -18,4 +18,8 @@ Weitere Informationen zu Sicherheits-Patch-Versionen:
 
 * [Überblick über Adobe Commerce Security-Patch-Versionen](/help/release/release-notes/security/overview.md#about-security-patch-releases)
 * Anleitungen für das Upgrade auf eine Sicherheits-Patch-Version finden Sie im [Beispiel für ein Sicherheits-Patch-Upgrade](/help/upgrade/implementation/perform-upgrade.md#example---security-patch).
-* Informationen zum Anwenden einzelner Sicherheits-Patch-Dateien finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) im _Handbuch für Adobe-Support und -Tools_.
+* Informationen zum Anwenden einzelner Sicherheits-Patch-Dateien finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) im _Handbuch für Adobe-Support und -Tools_.
+
+>[!NOTE]
+>
+>Informationen zur Kompatibilität mit Abhängigkeiten von Drittanbietern finden Sie unter [Systemanforderungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
