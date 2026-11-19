@@ -5,7 +5,8 @@ TQID: 'https://experienceleague.adobe.com/ZPz09-WXfFBUHpCGlYefQbg60BrE0rhV2bYbw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
-source-git-commit: e95fc5795ff0ba97cfad210428444b0d6bcf6467
+last-update: 2026-11-18
+source-git-commit: cc7d3343d4a08e46235eb0c3ef42631907510a1b
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -13,15 +14,15 @@ ht-degree: 0%
 
 # Aktualisierungen der Dokumentation
 
-Auf dieser Seite finden Sie Aktualisierungen aus der technischen Dokumentation zu Adobe Commerce in [Experience League](https://experienceleague.adobe.com/de/docs/commerce) und [Adobe Developer](https://developer.adobe.com/commerce/docs/). Verwenden Sie diese Listen, um neue Themen, überarbeitete Anleitungen und Verbesserungen aufgrund von Leser-Feedback zu finden.
+Auf dieser Seite finden Sie Aktualisierungen aus der technischen Dokumentation zu Adobe Commerce in [Experience League](https://experienceleague.adobe.com/en/docs/commerce) und [Adobe Developer](https://developer.adobe.com/commerce/docs/). Verwenden Sie diese Listen, um neue Themen, überarbeitete Anleitungen und Verbesserungen aufgrund von Leser-Feedback zu finden.
 
-Feedback-gesteuerte Änderungen befassen sich mit Vorschlägen oder Problemen, die von Lesern vorgebracht werden, z. B. unklare Anweisungen, fehlende Details oder ungenaue Informationen. Beispielsweise führte das Feedback zu Korrekturen bezüglich der Unterstützung für gebündelte und gruppierte Produkte in der [Produktempfehlungsdokumentation](https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/boundaries-limits).
+Feedback-gesteuerte Änderungen befassen sich mit Vorschlägen oder Problemen, die von Lesern vorgebracht werden, z. B. unklare Anweisungen, fehlende Details oder ungenaue Informationen. Beispielsweise führte das Feedback zu Korrekturen bezüglich der Unterstützung für gebündelte und gruppierte Produkte in der [Produktempfehlungsdokumentation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits).
 
 ## Feedback geben
 
 Ihr Feedback hilft bei der Verbesserung der Dokumentation. Sie können auf folgende Weise einen Beitrag leisten:
 
-* Verwenden Sie in Experience League den Feedback-Bereich am Ende eines Themas, um dessen Nützlichkeit zu bewerten und einen Kommentar zu hinterlassen. Anweisungen zum Melden von Problemen und Vorschlagen von [&#128279;](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction) finden Sie im Adobe-Handbuch für Mitwirkende an Dokumenten .
+* Verwenden Sie in Experience League den Feedback-Bereich am Ende eines Themas, um dessen Nützlichkeit zu bewerten und einen Kommentar zu hinterlassen. Anweisungen zum Melden von Problemen und Vorschlagen von ](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) finden Sie im Adobe-Handbuch für Mitwirkende an Dokumenten .[
 * Verwenden Sie in Adobe Developer das über das Thema verknüpfte öffentliche GitHub-Repository, um ein Dokumentationsproblem zu melden oder eine Bearbeitung vorzuschlagen.
 
 Schließen Sie die Themen-URL ein und beschreiben Sie, was unklar, fehlend oder falsch ist, damit das Dokumentations-Team Ihren Vorschlag verstehen kann.
