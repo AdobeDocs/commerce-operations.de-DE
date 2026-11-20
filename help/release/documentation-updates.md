@@ -14,15 +14,15 @@ ht-degree: 0%
 
 # Aktualisierungen der Dokumentation
 
-Auf dieser Seite werden Aktualisierungen aus der technischen Dokumentation zu Adobe Commerce in [Adobe Experience League](https://experienceleague.adobe.com/en/docs/commerce) und [Adobe Developer](https://developer.adobe.com/commerce/docs/) aufgeführt. Verwenden Sie diese Listen, um neue Themen, überarbeitete Anleitungen und Verbesserungen aufgrund von Leser-Feedback zu finden.
+Auf dieser Seite werden Aktualisierungen aus der technischen Dokumentation zu Adobe Commerce in [Adobe Experience League](https://experienceleague.adobe.com/de/docs/commerce) und [Adobe Developer](https://developer.adobe.com/commerce/docs/) aufgeführt. Verwenden Sie diese Listen, um neue Themen, überarbeitete Anleitungen und Verbesserungen aufgrund von Leser-Feedback zu finden.
 
-Feedback-gesteuerte Änderungen befassen sich mit Vorschlägen oder Problemen, die von Lesern vorgebracht werden, z. B. unklare Anweisungen, fehlende Details oder ungenaue Informationen. Beispielsweise führte das Feedback zu Korrekturen bezüglich der Unterstützung für gebündelte und gruppierte Produkte in der [Produktempfehlungsdokumentation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits).
+Feedback-gesteuerte Änderungen befassen sich mit Vorschlägen oder Problemen, die von Lesern vorgebracht werden, z. B. unklare Anweisungen, fehlende Details oder ungenaue Informationen. Beispielsweise führte das Feedback zu Korrekturen bezüglich der Unterstützung für gebündelte und gruppierte Produkte in der [Produktempfehlungsdokumentation](https://experienceleague.adobe.com/de/docs/commerce/product-recommendations/boundaries-limits).
 
 ## Feedback geben
 
 Ihr Feedback hilft bei der Verbesserung der Dokumentation. Sie können auf folgende Weise einen Beitrag leisten:
 
-* Verwenden Sie in Adobe Experience League den Feedback-Bereich in der rechten Seitenleiste oder unten auf der Seite auf schmalen Bildschirmen. Klicken Sie auf die Schaltfläche mit den Daumen nach oben oder den Daumen nach unten, um das Thema zu bewerten und das optionale Kommentarfeld anzuzeigen. Um einen Kommentar zu hinterlassen, geben Sie Ihr Feedback ein und klicken Sie auf **[!UICONTROL Submit]**. Anweisungen zu Reporting-Problemen und Änderungsvorschlägen finden Sie im Leitfaden für Beitragende zu Adobe-Dokumenten [&#128279;](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) Adobe Experience League.
+* Verwenden Sie in Adobe Experience League den Feedback-Bereich in der rechten Seitenleiste oder unten auf der Seite auf schmalen Bildschirmen. Klicken Sie auf die Schaltfläche mit den Daumen nach oben oder den Daumen nach unten, um das Thema zu bewerten und das optionale Kommentarfeld anzuzeigen. Um einen Kommentar zu hinterlassen, geben Sie Ihr Feedback ein und klicken Sie auf **[!UICONTROL Submit]**. Anweisungen zu Reporting-Problemen und Änderungsvorschlägen finden Sie im Leitfaden für Beitragende zu Adobe-Dokumenten [&#128279;](https://experienceleague.adobe.com/de/docs/contributor/contributor-guide/introduction) Adobe Experience League.
 * Verwenden Sie in Adobe Developer das öffentliche GitHub-Repository, das mit dem Thema verknüpft ist, um ein Dokumentationsproblem zu melden oder eine Bearbeitung vorzuschlagen. Anweisungen finden [&#x200B; unter „Dokumentationsbeiträge &#x200B;](https://developer.adobe.com/commerce/contributor/guides/doc-contributions/) Adobe Developer&quot;.
 
 Schließen Sie die Themen-URL ein und beschreiben Sie, was unklar, fehlend oder falsch ist, damit das Dokumentations-Team Ihren Vorschlag verstehen kann.
