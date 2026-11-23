@@ -2,7 +2,7 @@
 title: Produktverfügbarkeit
 description: Erfahren Sie, welche Adobe Commerce-Funktionen derzeit unterstützt werden, und überprüfen Sie deren Kompatibilität mit bestimmten Adobe Commerce-Versionen.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-last-update: 2026-11-17
+last-update: 2026-11-20
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,7 +14,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: cc7d3343d4a08e46235eb0c3ef42631907510a1b
+source-git-commit: 0818c72b68b9275658e015a4f4322a6c7f7525b1
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%

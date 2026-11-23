@@ -2,7 +2,7 @@
 title: Versionshinweise zum Sicherheits-Patch für Adobe Commerce 2.4.8
 description: Erfahren Sie mehr über Fehlerbehebungen, Sicherheitsverbesserungen und andere sicherheitsbezogene Updates in den Sicherheits-Patch-Versionen für Adobe Commerce 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-11-18
+last-update: 2026-11-19
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: cc7d3343d4a08e46235eb0c3ef42631907510a1b
+source-git-commit: 0818c72b68b9275658e015a4f4322a6c7f7525b1
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '771'
 ht-degree: 0%
 ---
 # Versionshinweise für Adobe Commerce 2.4.8-Sicherheits-Patches

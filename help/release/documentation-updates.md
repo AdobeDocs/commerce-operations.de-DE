@@ -5,8 +5,8 @@ TQID: 'https://experienceleague.adobe.com/ZPz09-WXfFBUHpCGlYefQbg60BrE0rhV2bYbw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
-last-update: 2026-11-18
-source-git-commit: 3cce5564a443ac7017c907854158910c35916e46
+last-update: 2026-11-20
+source-git-commit: 0818c72b68b9275658e015a4f4322a6c7f7525b1
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
