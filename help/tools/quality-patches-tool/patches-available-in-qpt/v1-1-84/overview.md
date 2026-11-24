@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
+source-git-commit: fba29b291ef0f9319c560507cf5aa1608a05c481
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '659'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -35,10 +35,10 @@ QPT v1.1.84 enthält die folgenden Patches:
 1. **[ACP2E-5005](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)**: Behebt das Problem, dass die Menge einer Bundle-Produktoption in einem verhandelbaren Angebot auf ihren vorherigen Wert zurückgesetzt wird, wenn das Bundle-Produkt in der Admin neu konfiguriert und die Menge bearbeitet wird.
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: Behebt das Problem, dass Versand- und Rechnungsvorgänge aufgrund eines Deadlocks fehlschlagen.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Es wird das Problem behoben, dass bei der Datenmigration von Magento Open Source zu Adobe Commerce geplante Designänderungen für Kategorien und geplante Produktaktualisierungen nicht korrekt migriert werden, sodass einige geplante Aktualisierungen während der Migration fehlen oder übersprungen werden und die Migrationsleistung verbessert **[!UICONTROL Special Price]**.
-1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Es wird ein Problem behoben, bei dem die Abfrage der `role` über GraphQL einen *Internen Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
+1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Es wird ein Problem behoben, bei dem die Abfrage der `role` über GraphQL *Interner Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
 1. **[ACP2E-5029](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5029.md)**: Es wird ein Problem behoben, bei dem Änderungen an Katalogpreisregeln erst dann in **[!DNL Live Search]** angezeigt werden, wenn eine manuelle Resynchronisierung durchgeführt wurde.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: Behebt das Problem, dass Indexer in einer Schleife stecken bleiben und die Neuindizierung nicht abgeschlossen werden kann, wenn die Dateisperrung aktiviert ist.
-1. **ACP2E-5041**: Behebt das Problem, dass beim Speichern eines Produkts während eines geplanten Updates die Storefront nach dem Ende des Updates den regulären Preis anstelle des **[!UICONTROL Special Price]** anzeigt.
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**: Behebt das Problem, dass beim Speichern eines Produkts während eines geplanten Updates die Storefront nach dem Ende des Updates den regulären Preis anstelle des **[!UICONTROL Special Price]** anzeigt.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: Es wird das Problem behoben, dass bei der Datenmigration von Magento Open Source zu Adobe Commerce geplante Designänderungen für Kategorien und geplante Produktaktualisierungen nicht korrekt migriert werden, sodass einige geplante Aktualisierungen während der Migration fehlen oder übersprungen werden und die Migrationsleistung verbessert **[!UICONTROL Special Price]**.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: Es wird ein Problem behoben, bei dem die Abfrage der `role` über GraphQL *Interner Server-Fehler* zurückgibt, wenn der Kunde keinem Unternehmen zugewiesen ist.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: Behebt das Problem, dass Indexer in einer Schleife stecken bleiben und die Neuindizierung nicht abgeschlossen werden kann, wenn die Dateisperrung aktiviert ist.
