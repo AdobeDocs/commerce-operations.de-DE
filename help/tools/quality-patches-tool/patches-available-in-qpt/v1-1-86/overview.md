@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8070923142c6b28c5e34d47200d2f8995aae5dcb
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -23,8 +23,8 @@ QPT v1.1.86 enthält die folgenden Patches:
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: Es wird das Problem behoben, dass eine Merchandising-Regel einer Kategorie UND-Bedingungen nicht mit einer Bedingung kombinieren kann, die einem von mehreren Werten entspricht.
 1. **ACP2E-5071**: Es wird ein Problem behoben, bei dem die Nachricht Nicht verfügbar auf Lager nicht immer auf der Produktseite angezeigt wird, wenn der Warenkorb des Käufers bereits die volle verfügbare Menge enthält.
 1. **ACP2E-5094**: Es wird das Problem behoben, dass das Laden von Seiten erheblich langsamer ist, wenn eine `MAGENTO_DC_*` Umgebungsvariable festgelegt wird.
+1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**: Es wird ein Problem behoben, durch das das Entfernen eines in einem Paket enthaltenen Produkts aus dem freigegebenen Katalog eines Unternehmens das Bundle-Produkt im Warenkorb lässt und einen Fehler im Warenkorb und während des Checkouts verursacht.
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: Behebt das Problem, dass die [!DNL Page Builder]-Vorschau nicht gerendert wird, wenn der **[!UICONTROL Translations]**-Cache deaktiviert ist.
-1. **ACP2E-5134**: Es wird ein Problem behoben, bei dem das Entfernen eines Komponentenprodukts eines Pakets aus dem [!UICONTROL Shared Catalog] eines Unternehmens das Paketprodukt im Warenkorb verlässt, was zu einem Fehler im Warenkorb und während des Checkouts führt.
 1. **ACP2E-5146**: Es wird ein Problem behoben, bei dem ein Admin-Benutzer, der auf bestimmte Websites beschränkt ist, keine Kunden löschen kann, wenn ein Kunde auf einer anderen Website dieselbe ID wie der Admin-Benutzer hat.
 1. **ACP2E-5176**: Behebt das Problem, dass E-Commerce-Ereignisse, die an [!DNL Google Analytics 4] über gesendet werden, [!DNL Google Tag Manager] das [!DNL Universal Analytics]-Format verwenden und mehrere Checkout-Ereignisse auslassen.
 1. **ACP2E-5185**: Es wird ein Problem behoben, bei dem beim Verschieben einer Kategorie in der Kategoriestruktur der `There was a category move error` angezeigt wird oder es mehrere Minuten dauert, bis er abgeschlossen ist, wenn der Store viele URL-Neuschreibungen aufweist.
