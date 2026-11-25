@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '11234'
+source-wordcount: '11262'
 ht-degree: 0%
 ---
 
@@ -1102,6 +1102,8 @@ ht-degree: 0%
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - v1.1.86 {#v1-1-86}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5134: Das Entfernen eines gebündelten Produkts aus dem freigegebenen Katalog lässt das Bundle im Warenkorb und verursacht Fehler beim Checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
+      - [ACP2E-5118: Page Builder-Vorschau wird nicht gerendert, wenn der Übersetzungs-Cache deaktiviert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: Merchandising-Regel der Kategorie kann AND-Bedingungen nicht mit Bedingungen kombinieren, die mehreren Werten entsprechen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
       - [ACP2E-5046: Durch Aktualisieren der Seite beim Erstellen einer Bestellung in Admin wird dieselbe SKU mehrmals hinzugefügt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
       - [ACP2E-3094: Das Anzeigen oder Bearbeiten von Kategorieberechtigungen für Kategorien mit vielen Berechtigungen verursacht einen nicht reagierenden Browser](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
