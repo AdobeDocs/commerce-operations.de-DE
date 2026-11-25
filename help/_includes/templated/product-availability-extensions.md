@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8fb85fe5ae589f4ca3e82b2f3520c4eb7b2e55d8
+source-git-commit: c3c07635a41ffa8eb581e10c1d3de1fd58caa471
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 18%
+source-wordcount: '256'
+ht-degree: 19%
 ---
 # Produktverfügbarkeit der von Adobe erstellten Erweiterungen
 
@@ -69,8 +69,8 @@ ht-degree: 18%
           <td>1.0.20+</td>
           <td>1.0.20+</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/get-started/configure-commerce">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-commerce">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -83,7 +83,7 @@ ht-degree: 18%
           <td>1.0.0+</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-audiences.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -95,21 +95,21 @@ ht-degree: 18%
           <td>1.3.4</td>
           <td>1.3.3</td>
           <td>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/install">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/install">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
-          <td>Kataloganreicherung</td>
-          <td>2.1.2</td>
+          <td>KI-Produkterkennung</td>
+          <td>2.1.3</td>
           <td>2.1.2</td>
           <td>2.1.2</td>
           <td>Nicht unterstützt</td>
           <td>Nicht unterstützt</td>
           <td>Nicht unterstützt</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Composer</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/prerequisites">Composer</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/ai-product-discovery/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
       <tr>
@@ -122,7 +122,7 @@ ht-degree: 18%
           <td>3.6.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/de/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/release-notes">Versionshinweise</a><br/>
           </td>
       </tr>
   </tbody>
