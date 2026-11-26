@@ -4,9 +4,9 @@ user-guide-description: Erfahren Sie mehr über die verschiedenen Tools, die Sie
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741: Beim Speichern eines verknüpften Produkts wird ein anderes Produkt aus der Storefront mit benutzerdefiniertem Lager ausgeblendet](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - v1.1.85 {#v1-1-85}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991: Client-IP-Adresse wurde nicht korrekt ermittelt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929: Attributbeschriftungen auf der Seite Produkte vergleichen zeigen Übersetzungen aus einer anderen Shop-Ansicht anstelle der aktuellen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - v1.1.86 {#v1-1-86}
       - [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245: Neukunde verwendet dieselbe Adresse für Versand und Rechnungsstellung bei der ersten Bestellung und sieht die Adresse zweimal an der Kasse aufgeführt](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752: Beim Produktimport wird ein Fehler wegen eines nicht definierten Array-Schlüssels ausgegeben, wenn viele Importvorgänge ausgeführt werden](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973: Beim Wechsel von einem In-Store-Versand zu einer anderen Versandmethode wird die Speicheradresse nicht aus dem Warenkorb gelöscht](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134: Das Entfernen eines gebündelten Produkts aus dem freigegebenen Katalog lässt das Bundle im Warenkorb und verursacht Fehler beim Checkout](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118: Page Builder-Vorschau wird nicht gerendert, wenn der Übersetzungs-Cache deaktiviert ist](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: Merchandising-Regel der Kategorie kann AND-Bedingungen nicht mit Bedingungen kombinieren, die mehreren Werten entsprechen](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
