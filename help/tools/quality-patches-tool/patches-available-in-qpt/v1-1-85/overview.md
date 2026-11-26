@@ -49,9 +49,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d61208c23f1d1fe38664a838149ba51958eddac
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '353'
 ht-degree: 0%
 ---
 
@@ -61,11 +61,11 @@ Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die 
 
 QPT v1.1.85 enthält die folgenden Patches:
 
-1. **ACP2E-4929**: Es wird das Problem behoben, dass Attributbeschriftungen auf der **[!UICONTROL Compare Products]**-Seite Übersetzungen aus einer anderen Store-Ansicht anstelle der aktuellen Store-Ansicht anzeigen.
+1. **[ACP2E-4929](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)**: Es wird das Problem behoben, dass Attributbeschriftungen auf der Seite Produkte vergleichen Übersetzungen aus einer anderen Store-Ansicht anstelle der aktuellen Store-Ansicht anzeigen.
 1. **ACP2E-5075**: Behebt das Problem, dass eine Regel mit einem festen Betrag im Warenkorb mit einer Kategoriebedingung fälschlicherweise einen Rabatt auf alle untergeordneten Elemente eines Dynamischer-Preis-Bundle-Produkts angewendet hat, wenn die Regel nur mit dem übergeordneten Bundle-Produkt übereinstimmt.
 1. **ACP2E-5077**: Es wird das Problem behoben, dass gleichzeitige `customerCart` GraphQL-Abfragen oder `POST /V1/carts/mine` REST-Anfragen doppelte aktive Warenkörbe für Kunden erstellen, die noch keinen aktiven Warenkorb haben.
 1. **ACP2E-5088**: Behebt das Problem, dass der beständige Warenkorb eines Kunden gelöscht wird, wenn seine Sitzung abläuft.
-1. **ACP2E-3991**: Behebt das Problem, dass die Client-IP-Adresse nicht korrekt ermittelt wurde.
+1. **[ACP2E-3991](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)**: Behebt das Problem, dass die Client-IP-Adresse nicht korrekt ermittelt wurde.
 1. **ACP2E-5092**: Es wird ein Problem behoben, bei dem die Seite &quot;**[!UICONTROL Company Profile]**&quot; und die Seite „Admin-Kundenbearbeitung“ einen Fehler anzeigen, wenn einer Firmenadresse, die ohne eine Region gespeichert wurde, später eine Region zu ihrem Land hinzugefügt wurde.
 1. **ACP2E-5124**: Behebt das Problem, dass die Schaltfläche **[!UICONTROL Import]** in den Validierungsergebnissen weiterhin verfügbar ist, wenn die Validierung fehlschlägt, wenn die **[!UICONTROL Validation Strategy]** auf **[!UICONTROL Stop on Error]** gesetzt ist.
 1. **AC-17456**: Es wurde ein Problem behoben, bei dem die Bearbeitung des **[!UICONTROL Global]**-Bereichs auf der **[!UICONTROL Design Configuration]**-Seite im Admin-Bedienfeld einen *HTTP 500*-Fehler in PHP 8.4 und 8.5 zurückgab.
