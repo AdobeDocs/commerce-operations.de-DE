@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 22769f702de10db88f28a5d4218a4f4c5d91cf0a
+source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '692'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -26,8 +26,10 @@ QPT v1.1.86 enthält die folgenden Patches:
 1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**: Es wird ein Problem behoben, durch das das Entfernen eines in einem Paket enthaltenen Produkts aus dem freigegebenen Katalog eines Unternehmens das Bundle-Produkt im Warenkorb lässt und einen Fehler im Warenkorb und während des Checkouts verursacht.
 1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: Behebt das Problem, dass die [!DNL Page Builder]-Vorschau nicht gerendert wird, wenn der **[!UICONTROL Translations]**-Cache deaktiviert ist.
 1. **ACP2E-5146**: Es wird ein Problem behoben, bei dem ein Admin-Benutzer, der auf bestimmte Websites beschränkt ist, keine Kunden löschen kann, wenn ein Kunde auf einer anderen Website dieselbe ID wie der Admin-Benutzer hat.
-1. **ACP2E-5176**: Behebt das Problem, dass E-Commerce-Ereignisse, die an [!DNL Google Analytics 4] über gesendet werden, [!DNL Google Tag Manager] das [!DNL Universal Analytics]-Format verwenden und mehrere Checkout-Ereignisse auslassen.
+1. **[ACP2E-5176](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)**: Behebt das Problem, dass E-Commerce-Ereignisse, die über Google Tag Manager an Google Analytics 4 gesendet werden, das Universal Analytics-Format verwenden und mehrere Checkout-Ereignisse auslassen.
 1. **ACP2E-5185**: Es wird ein Problem behoben, bei dem beim Verschieben einer Kategorie in der Kategoriestruktur der `There was a category move error` angezeigt wird oder es mehrere Minuten dauert, bis er abgeschlossen ist, wenn der Store viele URL-Neuschreibungen aufweist.
+1. **[ACP2E-4191](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)**: Es wird das Problem behoben, dass bestimmte REST-API-Anfragen in eine Endlosschleife geraten, wenn der Cache für EAV-Typen und -Attribute deaktiviert ist.
+1. **ACP2E-4973**: Es wird das Problem behoben, dass beim Wechsel von **[!UICONTROL In-Store Delivery]** zu einer anderen Versandmethode die zugehörige Speicheradresse nicht aus dem Warenkorb gelöscht wird.
 1. **ACP2E-4191**: Behebt das Problem, dass bestimmte REST-API-Anfragen in eine Endlosschleife geraten, wenn der **[!UICONTROL EAV types and attributes]**-Cache deaktiviert ist.
 1. **[ACP2E-4973](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)**: Es wird ein Problem behoben, bei dem beim Wechsel von einem In-Store-Versand zu einer anderen Versandmethode die zugehörige Speicheradresse nicht aus dem Warenkorb gelöscht wird.
 1. **ACP2E-5221**: Behebt das Problem, dass der **[!UICONTROL Catalog Product Permissions]** Indexer erheblich länger dauert, wenn **[!UICONTROL Quick Order]** in Installationen mit vielen Stores und Kundengruppen aktiviert ist.
