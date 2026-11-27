@@ -4,7 +4,7 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 9e453ce98ac552d883469e20e65516be8ef02b4f
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -44,6 +44,6 @@ QPT v1.1.86 enthält die folgenden Patches:
 1. **ACP2E-5295**: Behebt das Problem, dass die parallele Neuindizierung von Produktpreisen mit dem Fehler `Fail in child process` fehlschlägt, wenn sie nach dem **[!UICONTROL Inventory]** Indexer im selben Prozess ausgeführt wird.
 1. **ACP2E-5298**: Es wird das Problem behoben, dass Admin-Benutzer mit schreibgeschütztem Zugriff auf Warenkorbpreisregeln Gutscheincodes generieren oder löschen können.
 1. **ACP2E-5333**: Es wird das Problem behoben, dass das Aktualisieren eines Kundensegments mit einer **[!UICONTROL Total Number of Orders]** Bedingung, die den **[!UICONTROL is not]** Operator verwendet, und einem Wert von einem oder mehreren mit der `Unknown operator specified` fehlschlägt.
-1. **ACP2E-5425**: Es wird das Problem behoben, dass Kundinnen und Kunden doppelte Auftragsbestätigungs-E-Mails für dieselbe Bestellung erhalten.
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)**: Es wird das Problem behoben, dass Kundinnen und Kunden doppelte Auftragsbestätigungs-E-Mails für dieselbe Bestellung erhalten.
 
 Navigieren Sie im Menü links zu einer bestimmten Patch-Seite.
