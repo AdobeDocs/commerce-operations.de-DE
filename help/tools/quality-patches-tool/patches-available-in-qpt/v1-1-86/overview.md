@@ -4,9 +4,9 @@ description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der P
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f8cefa66cb9be57ac6441be28ee0898dbc4810f7
+source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '742'
 ht-degree: 0%
 ---
 # Überblick: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -20,6 +20,8 @@ QPT v1.1.86 enthält die folgenden Patches:
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: Es wird das Problem behoben, dass das Anzeigen oder Bearbeiten von **[!UICONTROL Category Permissions]** für eine Kategorie mit vielen Berechtigungen dazu führen kann, dass der Browser nicht mehr reagiert.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: Es wird das Problem behoben, dass beim Anzeigen oder Speichern einer RMA in der Admin die RMA-Nummer nicht im **[!UICONTROL Action Logs]** angezeigt wird.
 1. **ACP2E-5057**: Es wird das Problem behoben, dass [!DNL GraphQL] Abfragen für Bundle-Produkte globale Bundle-Optionspreise anstelle webseitenspezifischer Preise zurückgeben, wenn **[!UICONTROL Catalog Price Scope]** auf **[!UICONTROL Website]** gesetzt ist.
+1. **ACP2E-5061**: Es wird das Problem behoben, dass eine Merchandising-Regel einer Kategorie `AND` Bedingungen nicht mit einer Bedingung kombinieren kann, die einem von mehreren Werten entspricht.
+1. **[ACP2E-5071](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)**: Es wird ein Problem behoben, bei dem die Nachricht Nicht verfügbar auf Lager nicht immer auf der Produktseite angezeigt wird, wenn der Warenkorb des Käufers bereits die volle verfügbare Menge enthält.
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: Es wird das Problem behoben, dass eine Merchandising-Regel einer Kategorie UND-Bedingungen nicht mit einer Bedingung kombinieren kann, die einem von mehreren Werten entspricht.
 1. **ACP2E-5071**: Es wird ein Problem behoben, bei dem die Nachricht Nicht verfügbar auf Lager nicht immer auf der Produktseite angezeigt wird, wenn der Warenkorb des Käufers bereits die volle verfügbare Menge enthält.
 1. **ACP2E-5094**: Es wird das Problem behoben, dass das Laden von Seiten erheblich langsamer ist, wenn eine `MAGENTO_DC_*` Umgebungsvariable festgelegt wird.
